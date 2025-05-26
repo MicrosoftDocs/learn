@@ -16,7 +16,7 @@ The first step is to create a project that contains your unit tests, and add it 
 
     :::image type="content" source="../media/6-add-xunit-project.png" alt-text="Screenshot of the Add New Project window. The xUnit Test Project template is selected." loc-scope="vs":::
 
-1. The **Configure your new project** window appears. In the **Project name** field, enter *WatchFunctionsTests*. Aside the **Location** field, select the browse icon, and then select the **WatchPortalFunction** folder.
+1. The **Configure your new project** window appears. In the **Project name** field, enter *WatchFunctionsTests*. Select the browse icon next to the **Location** field, and then select the **WatchPortalFunction** folder.
 
 1. Select **Next**. The **Additional information** window appears.
 
@@ -31,7 +31,7 @@ The first step is to create a project that contains your unit tests, and add it 
     :::image type="content" source="../media/6-nuget-install-aspnet-mvc.png" alt-text="Screenshot of the NuGet Package Manager window. The user is installing the Microsoft.AspNetCore.Mvc package." loc-scope="vs":::
 
     > [!NOTE]
-    > The test project will create a mock HTTP environment. The classes required for doing this are in the **Microsoft.AspNetCore.Mvc** package.
+    > The test project creates a mock HTTP environment. The classes required for doing so are in the **Microsoft.AspNetCore.Mvc** package.
 
 1. Wait while the package is installed. If the **Preview Changes** message box appears, select **OK**. In the **License Acceptance** message box, select **I Accept**.
 

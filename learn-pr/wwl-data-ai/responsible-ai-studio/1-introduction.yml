@@ -2,13 +2,11 @@
 uid: learn.wwl.responsible-ai-studio.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduce responsible generative AI.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/28/2024
+  ms.date: 05/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

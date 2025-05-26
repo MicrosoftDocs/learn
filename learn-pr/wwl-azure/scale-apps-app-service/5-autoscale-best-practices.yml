@@ -2,8 +2,6 @@
 uid: learn.wwl.scale-apps-app-service.autoscale-best-practices
 title: Explore autoscale best practices
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore autoscale best practices
   description: "Explore autoscale best practices"
   ms.date: 02/12/2025

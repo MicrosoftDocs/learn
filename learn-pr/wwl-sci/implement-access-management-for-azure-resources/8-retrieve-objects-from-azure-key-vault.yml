@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-access-management-for-azure-resources.retrieve-objects-from-azure-key-vault
 title: Retrieve objects from Azure Key Vault
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Retrieve objects from Azure Key Vault
   description: "Retrieve objects from Azure Key Vault"
   ms.date: 02/26/2025

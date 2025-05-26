@@ -1,12 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-azure-private-link.5-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge.
-  ms.date: 01/22/2024
+  ms.date: 04/17/2025
   author: asudbring
   ms.author: allensu
   ms.topic: unit
@@ -16,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Suppose a company wants clients in their Azure virtual network to have secure and nonpublic access to a particular Azure resource. Which of the following technologies should their IT staff add to their virtual network?"
+  - content: "Suppose a company wants to give clients in their Azure virtual network secure and nonpublic access to a particular Azure resource. Which of the following technologies should their IT staff add to their virtual network?"
     choices:
     - content: "Azure Service Endpoint"
       isCorrect: false

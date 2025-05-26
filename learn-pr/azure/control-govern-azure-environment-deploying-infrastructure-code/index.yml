@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Control and govern your Azure environment by deploying your infrastructure as code
   description: Learn how to enforce controls over your Azure changes and deployments, to ensure that your infrastructure is deployed through an approved process.
@@ -55,4 +53,4 @@ units:
 - learn.azure.control-govern-azure-environment-deploying-infrastructure-code.summary
 badge:
   uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code.badge
-
+

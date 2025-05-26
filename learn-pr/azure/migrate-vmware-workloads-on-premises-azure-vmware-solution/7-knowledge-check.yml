@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.knowledge-check
-title: Knowledge check 
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check.
   ms.date: 08/01/2024
-  author: amycolyer
-  ms.author: amycolyer
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.contributors: shkuehn-06182021, orthomas-08092023
   ms.custom: team=cloud_advocates

@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl.perform-basic-identity-access-tasks
+metadata:
+  title: Perform Basic Identity and Access Tasks
+  description: Learn to create and manage identity and access using Microsoft Entra ID. Explore the basics of creating users, groups, and how to control access with conditional access.
+  ms.date: 04/02/2025
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: learning-path
+title: Perform basic identity and access tasks
+prerequisites: |
+  -   Entry level knowledge of cloud computing.
+summary: |
+  Explore the entry level identity and access management tasks. Learn to create user, groups, and how control access with licenses, roles, and conditional access.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- administrator
+- identity-access-admin
+products:
+- entra
+subjects:
+- identity-access
+modules:
+- learn.wwl.create-configure-manage-identities
+- learn.wwl.explore-authentication-capabilities-of-azure-ad
+- learn.wwl.explore-access-management-capabilities-of-azure-ad
+- learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad
+- learn.wwl.get-started-identity-access-labs
+trophy:
+  uid: learn.wwl.perform-basic-identity-access-tasks.trophy

@@ -2,13 +2,11 @@
 uid: learn.wwl.build-data-pipeline-with-delta-live-tables.explore-delta-live-tables
 title: Explore Delta Live Tables
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Delta Live Tables
   description: "Explore Delta Live Tables"
   ms.date: 07/23/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 durationInMinutes: 5
 content: |

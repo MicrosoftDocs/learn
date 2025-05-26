@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.azure-stack-hub
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Stack Hub
   description: "Azure Stack Hub"
   ms.date: 08/05/2022
@@ -45,4 +43,4 @@ units:
 - learn.wwl.azure-stack-hub.summary
 badge:
   uid: learn.wwl.azure-stack-hub.badge
-
+

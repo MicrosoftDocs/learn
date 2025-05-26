@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-manage-azure-arc-enabled-sql-managed-instance
 title: Exercise - Manage an Azure Arc-enabled SQL Managed Instance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Manage an Azure Arc-enabled SQL Managed Instance
   description: Manage an Azure Arc-enabled SQL Managed Instance.
   ms.date: 08/06/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/exercise-manage-azure-arc-enabled-sql-managed-instance.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities.understand-workload-identities
 title: Understand workload identities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Understand workload identities
   description: Learn what workload identities are, how they're different from user accounts, and how they work.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-understand-workload-identities.md)]
-
+

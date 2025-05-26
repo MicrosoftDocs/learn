@@ -2,8 +2,6 @@
 uid: learn.wwl.create-configure-log-analytics-workspace.configure-access-log-analytics-workspace
 title: Configure access to Log Analytics workspaces
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure access to Log Analytics workspaces
   description: "Configure access to Log Analytics workspaces"
   ms.date: 10/25/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-configure-access-log-analytics-workspace.md)]
+  [!include[](includes/3-configure-access-log-analytics-workspace.md)]

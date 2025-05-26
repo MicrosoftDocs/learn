@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-mysql-architecture.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/10/2022
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "That's correct. The query optimizer uses statistics provided by the relevant storage engine to find the most efficient execution plan."
     - content: "The query optimizer estimates the cost of different execution plans, using statistics provided by the EXPLAIN utility statement."
       isCorrect: false
-      explanation: "That's incorrect. Explain displays the expected execution plan for a given query, it doesn't help the query optimizer to choose the most efficient execution plan."
+      explanation: "That's incorrect. Explain displays the expected execution plan for a given query, it doesn't help the query optimizer to choose the most efficient execution plan."

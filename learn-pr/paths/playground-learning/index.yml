@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl-azure.playground-learning
+metadata:
+  title: 'Playground tutorials'
+  description: "Learn PostgreSQL with Azure Playground. Explore our tutorials to focus on a specific topic, or discover a subject that interest you and delve deeper."
+  ms.date: 05/14/2025
+  author: milenak
+  ms.author: mpopovic
+  ms.topic: learning-path
+title: Playground tutorials
+prerequisites: |
+  -   None
+summary: |
+  Learn PostgreSQL with Azure Playground. Explore our tutorials to focus on a specific topic, or discover a subject that interest you and delve deeper.
+iconUrl: /learn/achievements/microsoft-learn-azure-database-for-postgresql.svg
+levels:
+- beginner
+roles:
+- database-administrator
+- developer
+products:
+- azure-database-postgresql
+subjects:
+- databases
+modules:
+- learn.wwl-azure.basic-sql-simple-select
+- learn.wwl-azure.basic-sql-where-clause-subqueries
+- learn.wwl-azure.basic-sql-limit-offset-order-by
+- learn.wwl-azure.basic-sql-joining-tables
+- learn.wwl-azure.basic-sql-aggregate-functions-grouping
+trophy:
+  uid: learn.wwl-azure.azure-pg-playground.trophy

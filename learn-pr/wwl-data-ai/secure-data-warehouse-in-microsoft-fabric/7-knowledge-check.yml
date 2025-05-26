@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 01/10/2025
   author: JulianePadrao
@@ -47,4 +45,4 @@ quiz:
       isCorrect: false
       explanation: Incorrect. There isn't a conflict. The DENY statement always supersedes the GRANT statement.
 
-
+

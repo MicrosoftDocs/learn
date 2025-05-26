@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-case-studies.2-scenario-1
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Scenario 1 - Architect global scale and secure access
   description: Scenario 1 - Architect global scale and secure access
   ms.date: 03/15/2023
@@ -112,4 +110,4 @@ quiz:
       - content: "SQL authentication: username and password."
         isCorrect: true
         explanation: "No option exists today for eliminating passwords for applications that use old drivers or SQL authentication and can't be modified."
-
+

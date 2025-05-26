@@ -2,13 +2,11 @@
 uid: learn.wwl.custom-name-entity-recognition.tag-your-data
 title: Label your data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 3-tag-your-data
   description: Label your data
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 2/21/2024
+  ms.date: 05/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

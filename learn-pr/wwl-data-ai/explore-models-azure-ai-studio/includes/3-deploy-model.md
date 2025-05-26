@@ -36,8 +36,6 @@ Now that you understand why you want to deploy a model, let's explore the deploy
 
 When you deploy a language model with Azure AI Foundry, you have several types available, which depend on the model you want to deploy.
 
-:::image type="content" source="../media/model-deployment.png" alt-text="Diagram of relationship between model types and deployment options.":::
-
 You can deploy:
 
 - [Azure OpenAI models](/azure/ai-services/openai/concepts/models?azure-portal=true) like GPT-3.5 and GPT-4 with Azure OpenAI service and Azure AI model inference.
@@ -46,7 +44,7 @@ You can deploy:
 
 The associated cost depends on the type of model you deploy, which deployment option you choose, and what you are doing with the model:
 
-| | Azure OpenAI Service | Azure AI model inference | Serverless compute | Managed compute |
+| | Azure OpenAI Service | Azure AI Foundry Models | Serverless compute | Managed compute |
 |---------------|----------------------|--------------------------|--------------------|-----------------|
 | **Supported models** | Azure OpenAI models | *Flagship* models (including Azure OpenAI models and Models-as-a-service models) | Models-as-a-service models | Open and custom models |
 | **Hosting service** | Azure OpenAI resource | Azure AI Services resource | AI Project resource | AI Project resource |

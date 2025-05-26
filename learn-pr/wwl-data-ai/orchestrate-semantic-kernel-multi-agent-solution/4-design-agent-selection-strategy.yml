@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-sk-multi-agent-solution.design-agent-selection-strategy
+title: Design an agent selection strategy
+metadata:
+  title: Design an agent selection strategy
+  description: Design a strategy that determines which agent should take the next turn.
+  ms.date: 3/18/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-design-agent-selection-strategy.md)]

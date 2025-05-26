@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/31/2024
   author: wwlpublish
@@ -81,4 +79,4 @@ quiz:
       explanation: "Incorrect. This is the purpose of configuring `Pipeline 1` with an Azure Container Apps deployment task."
     - content: "To enable `Pipeline 1` to deploy a container image from the container registry to the container app using a self-hosted agent pool."
       isCorrect: true
-      explanation: "Correct. Configuring `Pipeline 1` to use the self-hosted agent pool enables it to deploy a container image from the container registry to the container app."
+      explanation: "Correct. Configuring `Pipeline 1` to use the self-hosted agent pool enables it to deploy a container image from the container registry to the container app."

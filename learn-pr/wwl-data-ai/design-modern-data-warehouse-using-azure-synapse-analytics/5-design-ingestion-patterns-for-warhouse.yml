@@ -2,11 +2,9 @@
 uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.design-ingestion-patterns-for-warhouse
 title: Design ingestion patterns for a modern data warehouse
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design ingestion patterns for a modern data warehouse
   description: "Design ingestion patterns for a modern data warehouse"
-  ms.date: 07/30/2024
+  ms.date: 04/25/2025
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit

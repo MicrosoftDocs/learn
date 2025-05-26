@@ -2,8 +2,6 @@
 uid: learn.deploy-azure-private-5g-core.deploy-site
 title: Deploy site using Azure portal
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy site using Azure portal
   description: Describes how you can create a site using the Azure portal.
   ms.date: 06/24/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-deploy-site.md)]
+  [!include[](includes/5-deploy-site.md)]

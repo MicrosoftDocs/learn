@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-azure-load-testing.variables-load-testing
 title: 'Configure secrets and environment variables '
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure secrets and environment variables
   description: "Configure secrets and environment variables"
   ms.date: 02/04/2025

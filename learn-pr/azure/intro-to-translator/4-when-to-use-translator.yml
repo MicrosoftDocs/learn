@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-translator.when-to-use-translator
 title: When to use Translator
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to use Translator
   description: When to use Translator
   author: laujan
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!INCLUDE[](includes/4-when-to-use-translator.md)]
-
+

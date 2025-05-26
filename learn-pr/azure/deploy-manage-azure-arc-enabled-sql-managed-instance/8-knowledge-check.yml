@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Demonstrate how to deploy and manage an Azure Arc-enabled SQL Managed Instance.
   ms.date: 08/06/2024
   author: MikeRayMSFT
@@ -48,4 +46,4 @@ quiz:
       isCorrect: true
       explanation: 'Correct. Using an existing SQL Server License can provide a discount when configuring an Azure Arc-enabled SQL Managed Instance to use readable secondaries.'
       
-
+

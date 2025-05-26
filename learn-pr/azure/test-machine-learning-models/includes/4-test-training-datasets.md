@@ -1,4 +1,4 @@
-The data we use to train a model is often called a _training dataset_. We’ve already seen this in action. Frustratingly, when we use the model in the real world, after training we don’t know for certain how well our model will work. This uncertainty is because it’s possible that our training dataset is different to data in the real world.
+The data we use to train a model is often called a _training dataset_. We've already seen this in action. Frustratingly, when we use the model in the real world, we don't know for certain how well our model will work after training. This uncertainty is because it's possible that our training dataset is different to data in the real world.
 
 ## What is overfitting?
 
@@ -10,7 +10,7 @@ We can avoid overfitting several ways. The simplest way is to have a simpler mod
 
 ![Diagram showing a plot graph of dog height and rescues.](../media/4-overfitting-graph.png)
 
-Let’s say we collect information about only five dogs, though, and use that as our training dataset to fit a complex line. If we can do so, we can fit it very well:
+Let's say we collect information about only five dogs, though, and use that as our training dataset to fit a complex line. If we can do so, we can fit it very well:
 
 ![Diagram showing a complex line graph using only five dogs height and rescue information.](../media/4-overfitting-graph-2.png)
 
@@ -28,9 +28,9 @@ A complimentary way we can avoid overfitting is to stop training after the model
 
 A test dataset, also called a validation dataset, is a set of data similar to the training dataset. In fact, test datasets are usually created by taking a large dataset and splitting it. One portion is called the training dataset, and the other is called the test dataset.
 
-The job of the training dataset is to train the model; we’ve seen training already. The job of the test dataset is to check how well the model works; it doesn't contribute to training directly.
+The training dataset's job is to train the model; we've seen training already. The test dataset's job is to check how well the model works; it doesn't contribute to training directly.
 
-### OK, but what’s the point?
+### OK, but what's the point?
 
 The point of a test dataset is twofold.
 

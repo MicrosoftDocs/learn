@@ -1,0 +1,10 @@
+
+A structured rollout strategy ensures the successful adoption of Microsoft Dev Box across your organization. A phased approach allows IT or Platform Engineering teams to validate controlled access, security, performance, and gather feedback before broad deployment. 
+
+Taking a phased approach is one possible strategy you can adopt for the rollout of the service across your organization. The first phase involves onboarding early adopters across different departments or development teams. These users provide valuable insights on service access, compatibility, usability, and performance. Training, FAQs, and internal documentation should be distributed during this phase to help users understand the new environment.
+
+The second phase can expand access to all intended development teams and projects across the organization, leveraging the lessons learned from earlier phases. As all the development teams start using the service, the IT or Platform Engineering teams should continue to communicate with the development teams about regular updates on new features and best practices.
+
+To ensure developers are well supported, establish feedback and support mechanism during and after rollout. IT admins or Platform engineers can monitor usage through Microsoft Cost Management and Azure Monitor to ensure resources are efficiently used. Make sure that you are using the hibernation feature in the service to reduce your compute costs. Collecting feedback via surveys or meetings enables iterative improvements and encourages adoption.
+
+As the service is improving and new features are being added, you as part of the IT or Platform Engineering team can review the [Microsoft Dev Box roadmap](https://aka.ms/devbox/Roadmap) any time and also understand what has been recently released by accessing the [What’s New](https://aka.ms/devbox/whatsnew) blog post. You can provide any feedback about the service or request new features from Microsoft by using the [Dev Box customer feedback](https://aka.ms/devbox/feedback) site. 

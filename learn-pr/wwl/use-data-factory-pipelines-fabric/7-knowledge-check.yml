@@ -1,17 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-data-factory-pipelines-fabric.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/08/2024
-  author: wwlpublish
-  ms.author: shlindsay
+  ms.date: 05/23/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-  ms.custom:
-  - build-2023
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"

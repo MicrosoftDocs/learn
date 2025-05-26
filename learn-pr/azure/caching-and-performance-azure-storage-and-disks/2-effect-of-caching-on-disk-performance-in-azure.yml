@@ -2,8 +2,6 @@
 uid: learn.caching-and-performance-azure-storage-and-disks.2-effect-of-caching-on-disk-performance-in-azure
 title: Effect of caching on disk performance in Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Effect of caching on disk performance in Azure
   description: Effect of caching on disk performance in Azure
   ms.date: 12/28/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/2-effect-of-caching-on-disk-performance-in-azure.md)]
-
+

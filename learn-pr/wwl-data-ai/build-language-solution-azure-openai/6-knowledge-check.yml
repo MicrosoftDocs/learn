@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-language-solution-azure-openai.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Check your understanding of the content presented in this module.
   author: ivorb
   ms.author: berryivor
@@ -20,13 +18,13 @@ quiz:
     choices:  
     - content: "Chat, Embedding, and Completion"  
       isCorrect: false  
-      explanation: "Each call to the Azure OpenAI service requires a key, endpoint, and deployment name."  
+      explanation: "Each call to Azure OpenAI requires a key, endpoint, and deployment name."  
     - content: "Key, Endpoint, and Deployment name"  
       isCorrect: true  
-      explanation: "Each call to the Azure OpenAI service requires a key, endpoint, and deployment name."  
+      explanation: "Each call to Azure OpenAI requires a key, endpoint, and deployment name."  
     - content: "Summary, Deployment name, and Endpoint"  
       isCorrect: false  
-      explanation: "Each call to the Azure OpenAI service requires a key, endpoint, and deployment name."  
+      explanation: "Each call to Azure OpenAI requires a key, endpoint, and deployment name."  
   - content: "What are the three available endpoints for interacting with a deployed Azure OpenAI model?"  
     choices:  
     - content: "Completion, ChatCompletion, and Translation"  

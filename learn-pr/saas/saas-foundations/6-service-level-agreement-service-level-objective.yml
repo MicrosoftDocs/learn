@@ -2,8 +2,6 @@
 uid: learn.saas-foundations.sla-and-slo
 title: SLA and SLO
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: SLA and SLO
   description: Learn about definitions and differences between Service-Level Agreement (SLA) and Service-Level Objectives (SLO).
   ms.date: 05/28/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-service-level-agreement-service-level-objective.md)]
+  [!include[](includes/6-service-level-agreement-service-level-objective.md)]

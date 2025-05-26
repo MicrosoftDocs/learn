@@ -2,8 +2,6 @@
 uid: learn.azure.manage-changes-bicep-code-git.publish-repository-enable-collaboration
 title: Publish your repository to enable collaboration
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Publish your repository to enable collaboration
   description: Learn how to publish your Git repository to GitHub or Azure Repos.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/8-publish-repository-enable-collaboration.md)]
-
+

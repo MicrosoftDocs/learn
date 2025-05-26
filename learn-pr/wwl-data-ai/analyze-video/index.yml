@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-video
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Analyze video
   description: Analyze video
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 12/01/2023
+  ms.date: 04/30/2025
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
   ms.collection:

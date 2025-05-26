@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.use-docker-container-dev-env-vs-code.10-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: A set of questions to check the knowledge you've gained through this Learn module about Dev Containers in Visual Studio Code.
   ms.date: 04/28/2023
   author: bamurtaugh

@@ -1,12 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.evaluate-models-azure-ai-studio.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check to test your knowledge on evaluating models and applications."
-  ms.date: 11/28/2024
+  ms.date: 05/23/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
@@ -14,7 +12,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "You have a specific set of questions you want to ensure your chat application answers correctly. What is the best evaluation to verify that?"
+  - content: "Which evaluation technique can you use to apply your own judgement about the quality of responses to a set of specific prompts?"
     choices:
     - content: "Model benchmarks"
       isCorrect: false
@@ -22,29 +20,29 @@ quiz:
     - content: "Manual evaluations"
       isCorrect: true
       explanation: Correct. "
-    - content: "Machine learning metrics"
+    - content: "Automated evaluations"
       isCorrect: false
       explanation: "Incorrect. "
-  - content: "Which model benchmark quantifies the semantic similarity between a ground source and the generated response?"
+  - content: "Which evaluator compares generated responses to ground truth based on standard metrics?"
     choices:
-    - content: "GPT Similarity"
-      isCorrect: true
-      explanation: "Correct. "
     - content: "Coherence"
       isCorrect: false
       explanation: "Incorrect. "
-    - content: "Accuracy"
-      isCorrect: false
-      explanation: "Incorrect. "
-  - content: "You want to evaluate how well the generated text adheres to grammatical rules. Which type of evaluation would be best to use?"
-    choices:
-    - content: "Manual evaluations"
-      isCorrect: false
-      explanation: "Incorrect. "
-    - content: "Automated evaluations"
+    - content: "F1 Score"
       isCorrect: true
       explanation: "Correct. "
-    - content: "Risk and safety metrics"
+    - content: "Protected material"
+      isCorrect: false
+      explanation: "Incorrect. "
+  - content: "Which evaluator metric uses an AI model to judge the structure and logical flow of ideas in a response?"
+    choices:
+    - content: "Coherence"
+      isCorrect: true
+      explanation: "Correct. "
+    - content: "F1 Score"
+      isCorrect: false
+      explanation: "Incorrect. "
+    - content: "protected material"
       isCorrect: false
       explanation: "Incorrect. "
 

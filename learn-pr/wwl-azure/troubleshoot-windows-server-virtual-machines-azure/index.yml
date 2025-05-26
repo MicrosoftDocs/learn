@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot Windows Server Virtual Machines in Azure
   description: "Learn to troubleshoot configuration issues that affect connectivity to your Azure-hosted Windows Server virtual machines (VMs). Explore approaches to resolve issues with VM startup, extensions, performance, storage, and encryption."
   ms.date: 08/02/2024
@@ -49,4 +47,4 @@ units:
 - learn.wwl.troubleshoot-windows-server-virtual-machines-azure.knowledge-check
 - learn.wwl.troubleshoot-windows-server-virtual-machines-azure.summary
 badge:
-  uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure.badge
+  uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure.badge

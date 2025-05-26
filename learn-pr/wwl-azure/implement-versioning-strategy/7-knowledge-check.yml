@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-versioning-strategy.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/24/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. Feeds in Azure Artifacts have three different views by default. These views are Release, Prerelease, and Local."
     - content: "Local."
       isCorrect: false
-      explanation: "Incorrect. Feeds in Azure Artifacts have three different views by default. These views are Release, Prerelease, and Local."
+      explanation: "Incorrect. Feeds in Azure Artifacts have three different views by default. These views are Release, Prerelease, and Local."

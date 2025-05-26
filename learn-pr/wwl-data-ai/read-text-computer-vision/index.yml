@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.read-text-computer-vision
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Fundamentals of optical character recognition
   description: Use optical character recognition (OCR) to read text with Azure AI Vision.
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 03/05/2024
+  ms.date: 04/23/2025
   ms.service: azure
   ms.topic: module
   ms.collection:

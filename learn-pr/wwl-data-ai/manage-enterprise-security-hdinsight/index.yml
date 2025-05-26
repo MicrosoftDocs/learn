@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-enterprise-security-in-hdinsight
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage enterprise security in HDInsight
   description: "Learn how to manage enterprise security in HDInsight."
   ms.date: 04/07/2024
@@ -48,4 +46,4 @@ units:
 - learn.wwl.manage-enterprise-security-in-hdinsight.summary
 badge:
   uid: learn.wwl.manage-enterprise-security-in-hdinsight.badge
-
+

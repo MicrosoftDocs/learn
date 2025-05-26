@@ -2,8 +2,6 @@
 uid: learn.wwl.apply-prompt-engineering-azure-openai.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to Azure OpenAI prompt engineering.
   author: ivorb
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

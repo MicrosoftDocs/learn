@@ -1,14 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.ai-foundry-sdk.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 02/05/2025
+  ms.date: 05/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -28,9 +26,9 @@ quiz:
       explanation: "Incorrect. A ChatCompletionsClient object isn't a proxy for an Azure AI Foundry project."
   - content: "What value is needed to instantiate a AIProjectClient object?"
     choices:
-    - content: "The project connection string."
+    - content: "The project endpoint."
       isCorrect: true
-      explanation: "Correct. You need the project connection string to instantiate a AIProjectClient object."
+      explanation: "Correct. You need the project endpoint to instantiate a AIProjectClient object."
     - content: "The Azure OpenAI authorization key"
       isCorrect: false
       explanation: "Incorrect. You don't need the Azure OpenAI authorization key to instantiate a AIProjectClient object."

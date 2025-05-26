@@ -2,13 +2,11 @@
 uid: learn.azure.intro-to-form-recognizer.use-form-recognizer
 title: Use Azure AI Document Intelligence
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Azure AI Document Intelligence
   description: Use Azure AI Document Intelligence
   author: laujan
   ms.author: lajanuar
-  ms.date: 07/30/2024
+  ms.date: 04/29/2025
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot

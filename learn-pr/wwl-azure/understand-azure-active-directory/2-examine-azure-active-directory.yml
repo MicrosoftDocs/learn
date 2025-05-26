@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-azure-active-directory.examine-azure-active-directory
 title: Examine Microsoft Entra ID
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine Microsoft Entra ID
   description: "Examine Microsoft Entra ID"
   ms.date: 05/12/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-examine-azure-active-directory.md)]
-
+

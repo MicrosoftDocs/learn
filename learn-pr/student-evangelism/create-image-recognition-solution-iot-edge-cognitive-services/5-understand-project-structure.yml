@@ -2,8 +2,6 @@
 uid: learn.oxford.create-image-recognition-with-azure-iot-edge.understand-project-structure
 title: Understand the project structure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand the project structure
   description: In this section, we help the learner to how to create a classification model.
   ms.date: 07/10/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/5-understand-project-structure.md)]
-
+

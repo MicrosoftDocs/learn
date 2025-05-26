@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.use-apis-discover-museum-art.9-knowledge-check
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge.
   ms.date: 12/09/2020
   author: GitHubber17
   ms.author: chnoring 
   ms.topic: unit
   ms.custom: team=nextgen
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 2
 quiz:
   title: Check your knowledge

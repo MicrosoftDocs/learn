@@ -48,7 +48,7 @@ Windows PowerShell is an OS component, so it receives the same lifecycle support
 PowerShell is shipped, installed, and configured separately from Windows PowerShell. First released as PowerShell Core 6.0 in 2018, it was the first version that offered multi-platform support, extending its availability to macOS and Linux operating systems.
 
 > [!NOTE]
-> The latest version of PowerShell is PowerShell 7.2, available via Microsoft Update.
+> The latest version of PowerShell is PowerShell 7.5, available via Microsoft Update.
 
 PowerShell and Windows PowerShell are separately installed and you can run supported commands using either environment.
 

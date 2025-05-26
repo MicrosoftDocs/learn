@@ -2,8 +2,6 @@
 uid: learn.introduction-azure-firewall.1-introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to the Introduction to Azure Firewall module.
   ms.date: 01/23/2025
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
-
+

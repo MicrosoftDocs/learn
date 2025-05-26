@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.administer-fabric.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 10/02/2024
-  author: angierudduck
-  ms.author: anrudduc
+  ms.date: 05/09/2025
+  author: wwlpublish
+  ms.author: theresai
   ms.topic: unit
   ms.custom:
   - build-2023

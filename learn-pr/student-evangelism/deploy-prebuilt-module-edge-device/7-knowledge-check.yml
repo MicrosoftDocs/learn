@@ -1,17 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.deploy-prebuilt-module-edge-device.7-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: In this unit, we create interactive questions that validate if the learner has understood the learning objectives
-  ms.date: 11/27/2023
+  ms.date: 05/09/2025
   author: PatAltimore
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen
-durationInMinutes: 5 # dummy number at present
+durationInMinutes: 5
 content: |
 quiz:
   questions:

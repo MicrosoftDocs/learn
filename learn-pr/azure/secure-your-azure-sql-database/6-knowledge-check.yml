@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-your-azure-sql-database.6-knowledge-check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Test your knowledge 
-  ms.date: 11/07/2023
+  ms.date: 05/08/2025
   author: VanMSFT
   ms.author: vanto
   manager: jroth
   ms.topic: unit
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 5
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -26,7 +24,7 @@ quiz:
       isCorrect: false
     - content: A server-level virtual network rule
       isCorrect: true
-      explanation: A server-level virtual network rule will allow you to allow connectivity from specific Azure VNet subnets, and will block access from the internet. This is the most efficient manner to secure this configuration.
+      explanation: A server-level virtual network rule will allow you to allow connectivity from specific Azure VNet subnets and will block access from the internet. This is the most efficient manner to secure this configuration.
     - content: A database-level IP address rule
       isCorrect: false
       

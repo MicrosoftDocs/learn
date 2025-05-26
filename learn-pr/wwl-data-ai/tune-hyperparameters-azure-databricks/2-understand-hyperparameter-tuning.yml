@@ -2,8 +2,6 @@
 uid: learn.wwl.tune-hyperparameters-azure-databricks.understand-hyperparameter-tuning
 title: Understand hyperparameter tuning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand hyperparameter tuning
   description: "Understand hyperparameter tuning"
   ms.date: 03/27/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-understand-hyperparameter-tuning.md)]
+  [!include[](includes/2-understand-hyperparameter-tuning.md)]

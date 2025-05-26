@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.choose-compute-provisioning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Choose a compute provisioning solution for your application
   description: Discover the services and tools available to automate the deployment and configuration of your Azure infrastructure.
   ms.service: azure-virtual-machines
@@ -39,4 +37,4 @@ units:
 - learn.choose-compute-provisioning.6-summary
 badge:
   uid: learn.choose-compute-provisioning.badge
-
+

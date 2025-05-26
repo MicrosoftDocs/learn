@@ -2,8 +2,6 @@
 uid: learn.azure.get-started-azure-advisor.3-exercise-review-recommendations
 title: 'Exercise - Review your Advisor recommendations'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise - Review your Advisor recommendations'
   description: Learn how to review and evaluate your Azure Advisor recommendations.
   ms.date: 10/20/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-exercise-review-recommendations.md)]
+  [!include[](includes/3-exercise-review-recommendations.md)]

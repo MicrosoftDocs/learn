@@ -3,8 +3,6 @@ uid: learn.azure.export-data-with-azure-import-export.when-to-use-azure-import-e
 title: When to use Azure Import/Export
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to use Azure Import/Export
   description: When to use Azure Import/Export
   ms.date: 03/08/2023
@@ -42,4 +40,4 @@ quiz:
     - content: You're in a region where Data Box family isn't supported.
       isCorrect: true
       explanation: Data Box family is the recommended solution for handling very large import or export jobs when the organization is located in a region where it's supported. 
-
+

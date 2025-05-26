@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-processes-to-automate-application-analytics.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/06/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. When shortlisting a monitoring tool, you should seek the following advanced features: Synthetic Monitoring, Alert Management, Deployment Automation, Analytics."
     - content: "Analytics."
       isCorrect: false
-      explanation: "Incorrect. When shortlisting a monitoring tool, you should seek the following advanced features: Synthetic Monitoring, Alert Management, Deployment Automation, Analytics."
+      explanation: "Incorrect. When shortlisting a monitoring tool, you should seek the following advanced features: Synthetic Monitoring, Alert Management, Deployment Automation, Analytics."

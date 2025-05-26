@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure role management and access reviews by using Microsoft Entra ID governance
   description: "Configure role management and access reviews by using Microsoft Entra ID governance"
-  ms.date: 03/10/2025
+  ms.date: 04/11/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

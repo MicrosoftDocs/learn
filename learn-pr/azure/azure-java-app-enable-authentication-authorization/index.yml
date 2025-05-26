@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.azure-java-app-enable-authentication-authorization
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Sign in users with Microsoft Entra ID in a Java web app
   description: Learn how to authenticate users with Microsoft Entra ID and get authorized access to data in a Java web app using Microsoft Authentication Library.
@@ -52,4 +50,4 @@ units:
 - learn.azure.azure-java-app-enable-authentication-authorization.summary
 badge:
   uid: learn.azure.azure-java-app-enable-authentication-authorization.badge
-
+
