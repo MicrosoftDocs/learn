@@ -46,16 +46,16 @@ quiz:
 
   - content: "Which workflow command would set the debug message to **This is an error message**?"
     choices:
-    - content: "echo ::error::This is an error message"
+    - content: "echo::error::This is an error message"
       isCorrect: true
       explanation: "This syntax is correct for this workflow command."
     - content: "echo error=This is an error message"
       isCorrect: false
       explanation: "This syntax is incorrect for a workflow command."
-    - content: "echo ::error::message=This is an error message"
+    - content: "echo::error::message=This is an error message"
       isCorrect: false
       explanation: "This syntax is incorrect for a workflow command."
-    - content: "echo ::error::This is an error message::"
+    - content: "echo::error::This is an error message::"
       isCorrect: false
       explanation: "This syntax is incorrect for a workflow command."
 
