@@ -47713,6 +47713,11 @@
       "source_path": "learn-pr/wwl-data-ai/build-language-solution-azure-openai/1-introduction.md",
       "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-language-solution-azure-openai/6-knowledge-check.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
     }
   ]
 }
