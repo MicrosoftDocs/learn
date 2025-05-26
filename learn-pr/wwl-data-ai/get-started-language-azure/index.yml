@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-language-azure
+metadata:
+  title: Get started with natural language processing on Azure
+  description: "Get started with natural language processing on Azure"
+  ms.date: 05/22/2025
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: module
+  ms.collection: wwl-ai-copilot
+  ms.custom:
+  - N/A
+  ms.service: azure-ai-language
+  ai-usage: ai-assisted
+title: Get started with natural language processing on Azure
+summary: Explore Azure AI Language's natural language processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
+abstract: Learn how to use Azure AI Language for text analysis
+prerequisites: Ability to navigate the Azure portal
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- ai-services
+subjects:
+- natural-language-processing
+units:
+- learn.wwl.get-started-language-azure.introduction
+- learn.wwl.get-started-language-azure.azure-language
+- learn.wwl.get-started-language-azure.azure-text-analysis
+- learn.wwl.get-started-language-azure.more-language-capabilities
+- learn.wwl.get-started-language-azure.azure-translator
+- learn.wwl.get-started-language-azure.get-started-foundry
+- learn.wwl.get-started-language-azure.exercise
+- learn.wwl.get-started-language-azure.knowledge-check
+- learn.wwl.get-started-language-azure.summary
+badge:
+  uid: learn.wwl.get-started-language-azure.badge
