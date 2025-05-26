@@ -47688,6 +47688,11 @@
       "source_path": "learn-pr/wwl-data-ai/apply-prompt-engineering-azure-openai/2-understand-prompt-engineering.md",
       "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/apply-prompt-engineering-azure-openai/3-write-effective-prompts.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
     }
   ]
 }
