@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-code-features-using-github-copilot-tools.exercise-develop-code-features-github-copilot
+title: Exercise - Develop new code features using GitHub Copilot
+metadata:
+  title: Exercise - Develop new code features using GitHub Copilot
+  description: "Exercise - Develop new code features using GitHub Copilot."
+  ms.date: 05/26/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-develop-code-features-github-copilot.md)]
