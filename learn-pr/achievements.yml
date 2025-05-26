@@ -5735,3 +5735,8 @@ achievements:
   title: Make recommendations with Azure AI Personalizer
   summary: Learn how to use Azure AI Personalizer to empower your apps with smarter decision making through improved recommendations.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.apply-prompt-engineering-azure-openai.badge
+  type: badge
+  title: Apply prompt engineering with Azure OpenAI Service
+  summary: Prompt engineering in Azure OpenAI is a technique that involves designing prompts for natural language processing models. This process improves accuracy and relevancy in responses, optimizing the performance of the model.
+  iconUrl: /learn/achievements/generic-badge.svg
