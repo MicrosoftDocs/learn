@@ -5745,3 +5745,8 @@ achievements:
   title: Build natural language solutions with Azure OpenAI Service
   summary: This module provides engineers with the skills to begin building apps that integrate with the Azure OpenAI Service.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.generate-code-azure-openai.badge
+  type: badge
+  title: Generate code with Azure OpenAI Service
+  summary: This module shows engineers how to use the Azure OpenAI Service to generate and improve code.
+  iconUrl: /learn/achievements/generic-badge.svg
