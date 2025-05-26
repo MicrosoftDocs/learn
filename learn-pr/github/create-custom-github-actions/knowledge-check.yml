@@ -49,7 +49,7 @@ quiz:
     - content: "echo ::error::This is an error message"
       isCorrect: true
       explanation: "This syntax is correct for this workflow command."
-    - content: "echo error=This is an error message\""
+    - content: "echo error=This is an error message"
       isCorrect: false
       explanation: "This syntax is improper for a workflow command."
     - content: "echo ::error::message=This is an error message"
@@ -64,12 +64,12 @@ quiz:
     - content: "Dockerfile"
       isCorrect: false
       explanation: "Dockerfiles are used for Docker container actions, not composite actions."
-    - content: "`action.yml`"
+    - content: "action.yml"
       isCorrect: true
       explanation: "Composite actions are defined in an action.yml file, which specifies the inputs, outputs, and steps of the action."
-    - content: "`workflow.yml`"
+    - content: "workflow.yml"
       isCorrect: false
       explanation: "workflow.yml files define workflows, not actions."
-    - content: "`package.json`"
+    - content: "package.json"
       isCorrect: false
-      explanation: "`package.json` is used for JavaScript actions, not composite actions."
+      explanation: "package.json is used for JavaScript actions, not composite actions."
