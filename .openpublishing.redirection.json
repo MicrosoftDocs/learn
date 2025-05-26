@@ -47738,6 +47738,11 @@
       "source_path": "learn-pr/wwl-data-ai/generate-code-azure-openai/index.md",
       "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/generate-code-azure-openai/3-complete-code-assist-development.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
     }
   ]
 }
