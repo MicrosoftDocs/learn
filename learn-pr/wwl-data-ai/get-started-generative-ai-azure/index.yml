@@ -6,6 +6,7 @@ metadata:
   ms.date: 05/26/2025
   author: wwlpublish
   ms.author: sheryang
+  ms.service: azure-ai-services
   ms.topic: module
   ai-usage: ai-assisted
 title: Get started with generative AI on Azure
