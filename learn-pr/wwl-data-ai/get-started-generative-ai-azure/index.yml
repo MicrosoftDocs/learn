@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-generative-ai-azure
+metadata:
+  title: Get started with generative AI on Azure
+  description: "Get started with generative AI on Azure"
+  ms.date: 05/26/2025
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: module
+  ai-usage: ai-assisted
+title: Get started with generative AI on Azure
+summary: Get started with generative AI on Azure
+abstract: Get started with generative AI on Azure
+prerequisites: Ability to navigate the Azure portal
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- ai-services
+units:
+- learn.wwl.get-started-generative-ai-azure.introduction
+- learn.wwl.get-started-generative-ai-azure.generative-ai
+- learn.wwl.get-started-generative-ai-azure.tools-to-develop-solutions
+- learn.wwl.get-started-generative-ai-azure.model-catalog
+- learn.wwl.get-started-generative-ai-azure.foundry-capabilities
+- learn.wwl.get-started-generative-ai-azure.observability
+- learn.wwl.get-started-generative-ai-azure.exercise
+- learn.wwl.get-started-generative-ai-azure.knowledge-check
+- learn.wwl.get-started-generative-ai-azure.summary
+badge:
+  uid: learn.wwl.get-started-generative-ai-azure.badge

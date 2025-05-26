@@ -1,0 +1,16 @@
+uid: learn.wwl.get-started-generative-ai-azure.model-catalog
+title: Understand Azure AI Foundry's model catalog 
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Understand Azure AI Foundry's model catalog
+  description: Understand Azure AI Foundry's model catalog
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 05/26/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-model-catalog.md)]

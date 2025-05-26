@@ -1,6 +1,4 @@
-Today, importantly, developers do not need to train models from scratch. To build a generative AI application, you can use pre-trained models. Some language models are open-source and publicly available. Others are offered in proprietary catalogs. Different models exist today which mostly differ by the specific data they've been trained on, or by how they implement attention within their architectures. Language models power the 'app logic' component of the interaction between users and generative AI applications. 
-
-![Diagram of an application.](../media/application-logic-image.png)
+Today, importantly, developers do not need to train models from scratch. To build a generative AI application, you can use pre-trained models. Some language models are open-source and publicly available. Others are offered in proprietary catalogs. Different models exist today which mostly differ by the specific data they've been trained on, or by how they implement attention within their architectures. 
 
 ## Large and small language models
 In general, language models can be considered in two categories: *Large Language Models* (LLMs) and *Small Language models* (SLMs).
