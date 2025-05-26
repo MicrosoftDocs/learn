@@ -38,7 +38,6 @@ subjects:
 units:
 - learn.wwl.build-language-solution-azure-openai.use-openai-rest
 - learn.wwl.build-language-solution-azure-openai.use-openai-sdk
-- learn.wwl.build-language-solution-azure-openai.summary
 badge:
   uid: learn.wwl.build-language-solution-azure-openai.badge
 
