@@ -43,7 +43,6 @@ units:
 - learn.wwl.apply-prompt-engineering-azure-openai.understand-prompt-engineering
 - learn.wwl.apply-prompt-engineering-azure-openai.write-effective-prompts
 - learn.wwl.apply-prompt-engineering-azure-openai.provide-context-to-improve-accuracy
-- learn.wwl.apply-prompt-engineering-azure-openai.knowledge-check
 - learn.wwl.apply-prompt-engineering-azure-openai.summary
 badge:
   uid: learn.wwl.apply-prompt-engineering-azure-openai.badge
