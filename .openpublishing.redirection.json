@@ -47653,6 +47653,11 @@
       "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/6-use-inference-explainability.md",
       "redirect_url": "/credentials/certifications/azure-ai-engineer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/apply-prompt-engineering-azure-openai/index.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
     }
   ]
 }
