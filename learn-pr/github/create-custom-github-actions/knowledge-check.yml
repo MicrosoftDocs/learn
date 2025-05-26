@@ -51,13 +51,13 @@ quiz:
       explanation: "This syntax is correct for this workflow command."
     - content: "echo error=This is an error message"
       isCorrect: false
-      explanation: "This syntax is improper for a workflow command."
+      explanation: "This syntax is incorrect for a workflow command."
     - content: "echo ::error::message=This is an error message"
       isCorrect: false
-      explanation: "This syntax is improper for a workflow command."
+      explanation: "This syntax is incorrect for a workflow command."
     - content: "echo ::error::This is an error message::"
       isCorrect: false
-      explanation: "This syntax is improper for a workflow command."
+      explanation: "This syntax is incorrect for a workflow command."
 
   - content: "Which file is used to define a composite action?"
     choices:
