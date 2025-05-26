@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-language-azure
 metadata:
-  title: Get started with natural language processing in Azure
-  description: "Get started with natural language processing in Azure"
+  title: Get started with natural language processing on Azure
+  description: "Get started with natural language processing on Azure"
   ms.date: 05/22/2025
   author: wwlpublish
   ms.author: sheryang
@@ -11,8 +11,8 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure-ai-language
-  ai-usage: human-only
-title: Get started with natural language processing in Azure
+  ai-usage: ai-assisted
+title: Get started with natural language processing on Azure
 summary: Explore Azure AI Language's natural language processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
 abstract: Learn how to use Azure AI Language for text analysis
 prerequisites: Ability to navigate the Azure portal
