@@ -7,7 +7,7 @@ Generative AI applications are built with language models. These language models
 Generative AI often appears as chat-based assistants that are integrated into applications to help users find information and perform tasks efficiently. One example of such an application is [Microsoft Copilot](https://copilot.microsoft.com), an AI-powered productivity tool designed to enhance your work experience by providing real-time intelligence and assistance. 
 
 > [!NOTE]
-> Microsoft Copilot is a generative AI based assistant that is integrated into a wide range of Microsoft applications and user experiences. Business users can use Microsoft Copilot to boost their productivity and creativity with AI-generated content and automation of tasks. Developers can extend Microsoft Copilot by creating plug-ins that integrate Copilot into business processes and data, or even create copilot-like agents to build generative AI capabilities into apps and services. You can learn extensively about Microsoft Copilot [here](https://learn.microsoft.com/copilot/microsoft-365/).  
+> Microsoft Copilot is a generative AI based assistant that is integrated into a wide range of Microsoft applications and user experiences. Business users can use Microsoft Copilot to boost their productivity and creativity with AI-generated content and automation of tasks. Developers can extend Microsoft Copilot by creating plug-ins that integrate Copilot into business processes and data, or even create copilot-like agents to build generative AI capabilities into apps and services. You can learn extensively about Microsoft Copilot [here](/copilot/microsoft-365/).  
 
 ## Understand agents 
 
