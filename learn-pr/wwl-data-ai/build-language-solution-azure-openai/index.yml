@@ -36,7 +36,6 @@ products:
 subjects: 
   - cloud-computing
 units:
-- learn.wwl.build-language-solution-azure-openai.use-openai-rest
 - learn.wwl.build-language-solution-azure-openai.use-openai-sdk
 badge:
   uid: learn.wwl.build-language-solution-azure-openai.badge
