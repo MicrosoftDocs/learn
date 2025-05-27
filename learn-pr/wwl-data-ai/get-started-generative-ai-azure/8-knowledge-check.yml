@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-generative-ai-azure.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 05/26/2025
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following best describes the role of a generative AI agent?"
+    choices:
+    - content: "A chatbot that answers questions using pre-written responses"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "An application that can understand input, reason, and take actions autonomously."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "An application that monitors AI model performance"
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "Which of the following best describes the purpose of the Azure AI Foundry model catalog?"
+    choices:
+    - content: "It stores user-generated content for Copilot Studio projects."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "It exists so users can compare the cost of all Azure services in a subscription."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "It is a centralized hub for discovering, comparing, and deploying models for generative AI."
+      isCorrect: true
+      explanation: "Correct."
+  - content: "What is the purpose of fine-tuning in the context of generative AI?"
+    choices:
+    - content: "It's used to manage access, authentication, and data usage in AI models."
+      isCorrect: false
+      explanation: "This statement describes the role of security and governance controls, not fine-tuning."
+    - content: "It involves connecting a language model to an organization's proprietary database."
+      isCorrect: false
+      explanation: "This statement describes the function of Retrieval-Augmented Generation, not fine-tuning."
+    - content: "It involves further training a pretrained model on a task-specific dataset to make it more suitable for a particular application."
+      isCorrect: true 
+      explanation: "Fine-tuning allows the model to specialize and perform better at specific tasks that require domain-specific knowledge."
