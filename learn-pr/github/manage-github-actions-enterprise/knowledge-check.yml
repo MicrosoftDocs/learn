@@ -3,7 +3,7 @@ uid: learn.github.manage-github-actions-enterprise.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Check what you've learned.
+  description: Check what you learned.
   ms.date: 11/21/2024
   author: a-a-ron
   ms.author: aastewar
@@ -36,34 +36,34 @@ quiz:
           explanation: "Incorrect. You must add all proxy configurations to your runner before starting it."
         - content: "Add the IP address or IP address range of your runners at repository level."
           isCorrect: false
-          explanation: "Incorrect. This is managed at the organization level in IP allowlists."
+          explanation: "Incorrect. This action is managed at the organization level in IP allowlists."
 
     - content: "What are encrypted secrets?"
       choices:
         - content: "Authentication tokens you can generate in your account settings."
           isCorrect: false
-          explanation: "Incorrect. Those are personal access tokens (PATs)."
+          explanation: "Incorrect. This definition matches personal access tokens (PATs)."
         - content: "The equivalent of SSH keys in GitHub."
           isCorrect: false
           explanation: "Incorrect. SSH keys are separate and named accordingly."
         - content: "Encrypted environment variables for storing sensitive information."
           isCorrect: true
-          explanation: "Correct. They are secure and can be scoped by repo, org, or environment."
+          explanation: "Correct. You can securely scope them by repository, organization, or environment."
 
     - content: "Which credential type poses the greatest security risk if used in GitHub Actions?"
       choices:
         - content: "Repository deploy keys"
           isCorrect: false
-          explanation: "Incorrect. These are scoped and safer for single-repo use."
+          explanation: "Incorrect. These credentials are scoped and safer for single-repo use."
         - content: "Personal access token (classic)"
           isCorrect: true
-          explanation: "Correct. These have broad access, making them riskier."
+          explanation: "Correct. These credentials have broad access, making them riskier."
         - content: "GitHub App tokens"
           isCorrect: false
-          explanation: "Incorrect. These are more granular and preferred for security."
+          explanation: "Incorrect. These credentials are more granular and preferred for security."
         - content: "GITHUB_TOKEN"
           isCorrect: false
-          explanation: "Incorrect. It's scoped and automatically managed."
+          explanation: "Incorrect. It is scoped and managed automatically."
 
     - content: "Which feature enforces that tests pass before code can be merged?"
       choices:
@@ -87,10 +87,10 @@ quiz:
           explanation: "Incorrect. That describes GitHub Enterprise Server."
         - content: "Centralized user management with identity provider integration"
           isCorrect: true
-          explanation: "Correct. GHEC integrates with identity providers like SAML."
-        - content: "Must be installed by IT teams"
+          explanation: "Correct. GHEC integrates with identity providers using SAML (Security Assertion Markup Language)."
+        - content: "IT teams must install it."
           isCorrect: false
-          explanation: "Incorrect. GHEC is hosted and managed by GitHub."
+          explanation: "Incorrect. GitHub hosts and manages GHEC."
         - content: "Runs in a private cloud"
           isCorrect: false
           explanation: "Incorrect. GHEC runs on GitHub’s public cloud."
@@ -108,22 +108,22 @@ quiz:
           explanation: "Incorrect. They can be reused across repositories."
         - content: "Restricts workflows to internal users"
           isCorrect: false
-          explanation: "Incorrect. This is configurable, not default."
+          explanation: "Incorrect. This behaviour is configurable, not default."
 
     - content: "What is a benefit of using GitHub-hosted runners?"
       choices:
         - content: "Full control over hardware"
           isCorrect: false
-          explanation: "Incorrect. That’s for self-hosted runners."
+          explanation: "Incorrect. That benefit is for self-hosted runners."
         - content: "Internal network access"
           isCorrect: false
-          explanation: "Incorrect. GitHub-hosted runners do not have this."
+          explanation: "Incorrect. GitHub-hosted runners do not have this benefit."
         - content: "Automatic OS and package updates"
           isCorrect: true
           explanation: "Correct. GitHub maintains hosted runner environments."
         - content: "Install custom software"
           isCorrect: false
-          explanation: "Incorrect. That’s supported on self-hosted runners."
+          explanation: "Incorrect. That feature is supported on self-hosted runners."
 
     - content: "What is a best practice for managing encrypted secrets?"
       choices:
@@ -138,4 +138,4 @@ quiz:
           explanation: "Correct. This limits exposure."
         - content: "Store secrets in archived workflow logs"
           isCorrect: false
-          explanation: "Incorrect. That’s a security vulnerability."
+          explanation: "Incorrect. That approach is a security vulnerability."
