@@ -17,5 +17,5 @@ The company website supplies product images, videos, marketing literature, and c
 Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2277525)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/Secure-storage-for-Azure-Files-and-Azure-Blob-Storage/Instructions/Labs/LAB_02a_storage_public_website.html)
 

@@ -34,5 +34,5 @@ There are many benefits to using blob object replication. Consider the following
 
 ### Consider versioning when using object replication
 
-You can enable Blob storage versioning to automatically maintain previous versions of an object. When blob versioning is enabled, you can access earlier versions of a blob. This access lets you recover your modified or deleted data.
+You can enable [Blob versioning](/azure/storage/blobs/versioning-overview) to automatically maintain previous versions of an object. When blob versioning is enabled, you can access earlier versions of a blob. This access lets you recover your modified or deleted data.
 

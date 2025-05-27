@@ -36,5 +36,5 @@ In the Azure portal, you create lifecycle management policy rules for your Azure
 By designing policy rules to adjust storage tiers in respect to the age of data, you can design the least expensive storage options for your needs.
 
 > [!TIP]
-> Expand your knowledge in the [*Manage the Azure Blob storage lifecycle](/training/modules/manage-azure-blob-storage-lifecycle/) training module. 
+> Expand your knowledge in the [Manage the Azure Blob storage lifecycle](/training/modules/manage-azure-blob-storage-lifecycle/) training module. 
 
