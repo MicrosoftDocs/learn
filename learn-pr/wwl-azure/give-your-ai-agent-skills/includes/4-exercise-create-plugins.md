@@ -1,4 +1,4 @@
-Now you're ready to you apply what you learned about plugins in the Semantic Kernel SDK. You're provided a project with some basic starter code that you edit in the Azure Cloud Shell. In this exercies, you create plugin functions that can assist a user with booking a flight. Let's get started!
+Now you're ready to you apply what you learned about plugins in the Semantic Kernel SDK. You're provided a project with some basic starter code that you edit in the Azure Cloud Shell. In this exercise, you create plugin functions that can assist a user with booking a flight. Let's get started!
 
 Launch the exercise and follow the instructions.
 
