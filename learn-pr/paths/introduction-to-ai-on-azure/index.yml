@@ -2,7 +2,7 @@
 uid: learn.introduction-ai-azure
 metadata:
   title: "Introduction to AI on Azure"
-  description: Learn 
+  description: This course introduces core concepts related to artificial intelligence (AI), and the services in Microsoft Azure that can be used to create AI solutions. 
   brand: azure
   ms.date: 05/27/2025
   author: sherzyang
