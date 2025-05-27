@@ -2,11 +2,7 @@ Every data set has a unique lifecycle. Early in the lifecycle, users tend to acc
 
 Azure Blob Storage supports [lifecycle management](/azure/storage/blobs/lifecycle-management-policy-configure) for data sets. It offers a rich rule-based policy for GPv2 and Blob Storage accounts. You can use lifecycle policy rules to transition your data to the appropriate access tiers, and set expiration times for the end of a data set's lifecycle.
 
-### How to automatically manage Azure Blobs lifecycles | Azure Tips and Tricks
-
-#### <!-- Video -->
-
-<iframe width="854" height="480" src="https://www.youtube.com/embed/-3k0hhngt7o" title="How to automatically manage Azure Blobs lifecycles" allowfullscreen></iframe>
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ce48b339-bc3a-412a-bf97-fb8581084431]
 
 ### Things to know about lifecycle management
 
@@ -14,11 +10,9 @@ You can use Azure Blob Storage lifecycle management policy rules to accomplish s
 
 - Transition blobs to a cooler storage tier (Hot to Cool, Hot to Archive, Cool to Archive) to optimize for performance and cost.
 
-- Delete blobs at the end of their lifecycles.
+- Delete current versions of a blob, previous versions of a blob, or blob snapshots at the end of their lifecycles.
 
-- Define rule-based conditions to run once per day at the Azure storage account level.
-
-- Apply rule-based conditions to containers or a subset of blobs.
+- Apply rules to an entire storage account, to select containers, or to a subset of blobs using name prefixes or blob index tags as filters.
 
 #### Business scenario 
 
@@ -40,4 +34,7 @@ In the Azure portal, you create lifecycle management policy rules for your Azure
    - **Delete the blob**: The blob data is deleted.
 
 By designing policy rules to adjust storage tiers in respect to the age of data, you can design the least expensive storage options for your needs.
+
+> [!TIP]
+> Expand your knowledge in the [Manage the Azure Blob storage lifecycle](/training/modules/manage-azure-blob-storage-lifecycle/) training module. 
 
