@@ -16,6 +16,8 @@ The steps to get started using the Semantic Kernel SDK are:
 
 6. Add your key and endpoint to the kernel builder service.
 
+::: zone pivot="csharp"
+
     ```c#
     using Microsoft.SemanticKernel;
 
@@ -30,5 +32,32 @@ The steps to get started using the Semantic Kernel SDK are:
     // Build the kernel
     Kernel kernel = builder.Build();
     ```
+
+::: zone-end
+
+::: zone pivot="python"
+
+    ```python
+    from semantic_kernel import Kernel
+    from semantic_kernel.connectors.ai.open_ai import AzureChatCompletion
+    
+    # Populate values from your OpenAI deployment
+    model_id = ""
+    endpoint = ""
+    api_key = ""
+    
+    # Create a kernel and add Azure OpenAI chat completion
+    kernel = Kernel()
+    kernel.add_service(
+        AzureChatCompletion(
+            deployment_name=model_id,
+            endpoint=endpoint,
+            api_key=api_key
+        )
+    )
+    kernel.add_service(chatcompletion)
+    ```
+
+::: zone-end
 
 In the following exercises, you can practice setting up your own semantic kernel project.
