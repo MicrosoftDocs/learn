@@ -10,9 +10,9 @@ This step takes several minutes while GitHub creates and configures the codespac
 
 To use **Visual Studio Code**, clone the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative) repository to your local machine. Then:
 
-1. Install any [system requiements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
+1. Install any [system requirements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
 1. Make sure Docker is running.
-1. In a new Visual Studio Code window open the folder of the cloned repository.
+1. In a new Visual Studio Code window, open the folder of the cloned repository.
 1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
 1. Search: **>Dev Containers: Rebuild and Reopen in Container**.
 1. Select **eShopLite - dotnet-observability** from the drop down. Visual Studio Code creates your development container locally.

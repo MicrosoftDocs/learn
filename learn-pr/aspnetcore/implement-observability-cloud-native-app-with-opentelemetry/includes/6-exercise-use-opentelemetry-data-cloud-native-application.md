@@ -484,7 +484,7 @@ The last step is to add Application Insights to your app.
     using Azure.Monitor.OpenTelemetry.AspNetCore;
     ```
 
-1. Below `var otelBuilder = services.AddOpenTelemetry();`, add this code:
+1. After `var otelBuilder = services.AddOpenTelemetry();`, add this code:
 
     ```csharp
     if (!string.IsNullOrEmpty(configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]))
