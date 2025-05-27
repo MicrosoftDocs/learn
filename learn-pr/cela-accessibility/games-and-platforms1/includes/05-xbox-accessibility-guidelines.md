@@ -1,25 +1,25 @@
-You're now familiar with some of the foundational accessibility best practice concepts that can be broadly applied across gaming experiences. At this point, you likely need more detailed guidance.
+You're now familiar with some of the foundational accessibility best practice concepts that can be broadly applied across gaming experiences. At this point, you probably need more detailed guidance.
 
-For example, you know that the best practice principle of "customization" means providing players with options to adjust the size and color of text. You might have questions about the extent of size and color options you should provide in the context of your specific game. Detailed resources on accessibility best practices like the Xbox Accessibility Guidelines (XAGs) can be a valuable tool.
+For example, you know that the best practice principle of *customization* recommends providing players with options to adjust the size and color of text. You might have questions about the extent of size and color options to provide in the context of your specific game. Detailed resources on accessibility best practices, like the Xbox Accessibility Guidelines (XAG), can be a valuable tool.
 
-This unit provides an overview of the content within the XAGs. It also has general instructions on how to navigate this resource to find guidance related to the products and experiences you create.
+This unit provides an overview of the content in the XAG. It also has general instructions on how to navigate this resource to find guidance related to the products and experiences you create.
 
-## What are the Xbox Accessibility Guidelines?
+## What is the Xbox Accessibility Guidelines?
 
-The [Xbox Accessibility Guidelines](https://aka.ms/xags) are a set of game accessibility best practices that have been developed in partnership with industry experts and members of the Gaming & Disability Community. Microsoft initially released the XAGs in January 2020.
+The [Xbox Accessibility Guidelines](https://aka.ms/xags) is a set of game accessibility best practices that have been developed in partnership with industry experts and members of the gaming and disability community. Microsoft initially released the XAG in January 2020.
 
-:::image type="content" source="../media/xags-landing.png" alt-text="Screenshot that shows the Xbox Accessibility Guidelines V2.5 website shown in Microsoft Edge.":::
+:::image type="content" source="../media/xags-landing.png" alt-text="Screenshot that shows the Xbox Accessibility Guidelines V3.2 page.":::
 
-The XAGs are intended for the following audiences and use cases:
+The XAG is intended for the following audiences and use cases:
 
 - For designers to use as a catalyst for generating ideas
-- For developers to use as guardrails when they develop their games
-- For test teams to use as a checklist to validate the accessibility of their titles
+- For developers to use as guardrails when they develop games
+- For test teams to use as a checklist to validate the accessibility of their games
 
 > [!NOTE]
-> The XAGs aren't intended to function as a checklist to validate any type of compliance or legal requirements. Instead, they seek to ensure that the user experience in a game offers a base level of accessible support that makes games enjoyable and playable for as many players as possible.
+> The XAG isn't intended to function as a checklist to validate any type of compliance or legal requirements. Instead, it's intended to ensure that the user experience in a game offers a base level of accessible support that makes games enjoyable and playable for as many players as possible.
 
-The guidelines are separated into 23 individual sections that focus on specific aspects of inclusive game design. These sections include best practices for the following topics:
+The XAG is separated into 23 individual sections that focus on specific aspects of inclusive game design. These sections include best practices for the following topics:
 
 - [XAG 101: Text display](/gaming/accessibility/xbox-accessibility-guidelines/101)
 - [XAG 102: Contrast](/gaming/accessibility/xbox-accessibility-guidelines/102)
@@ -45,12 +45,12 @@ The guidelines are separated into 23 individual sections that focus on specific 
 - [XAG 122: Accessible customer support](/gaming/accessibility/xbox-accessibility-guidelines/122)
 - [XAG 123: Advanced best practices](/gaming/accessibility/xbox-accessibility-guidelines/123)
 
-The XAGs are updated about every six months. Before the update, feedback from developers and gamers is incorporated into existing XAGs or used to inform the creation of new XAGs.
+The XAG is updated about every six months. Before updates, feedback from developers and gamers is incorporated into existing guidelines or used to inform the creation of new guidelines.
 
 ## How can developers use the Xbox Accessibility Guidelines?
 
-To make the best use of the guidance provided in the XAGs, it's important to understand individual XAG components and how they can be used to help you go through the document.
+To make the best use of the guidance provided in the XAG, you need to understand individual XAG components and how you can use them.
 
-The following video introduces each XAG component and describes how developers can use the components to guide accessibility best practice implementation.
+The following video introduces each XAG component and describes how developers can use them to guide the implementation of accessibility best practices.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=38603cc0-f794-4cd0-aabe-8e836707f5f6]
