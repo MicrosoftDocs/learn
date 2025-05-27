@@ -14,7 +14,7 @@ To call a function and use the results in your prompt, use the {{namespace.funct
 
 You can also pass parameters to the function, either using variables or hardcoded values. For example, if `weather.getForecast` takes a city name as input, you can use the following examples:
 
-```txt
+```console
 The weather today in {{$city}} is {{weather.getForecast $city}}.
 The weather today in Barcelona is {{weather.getForecast "Barcelona"}}.
 ```
@@ -23,20 +23,44 @@ The weather today in Barcelona is {{weather.getForecast "Barcelona"}}.
 
 To run your prompt, you first need to create a `KernelFunction` object from the prompt using `kernel.CreateFunctionFromPrompt`. Then you can create a `KernelArguments` object containing any variables, and invoke your function using `InvokeAsync`. You can either call `InvokeAsync` on the kernel itself or on the `KernelFunction` object. Here's an example:
 
-```c#
-string city = "Rome";
-var prompt = "I'm visiting {{$city}}. What are some activities I should do today?";
+::: zone pivot="csharp"
 
-var activitiesFunction = kernel.CreateFunctionFromPrompt(prompt);
-var arguments = new KernelArguments { ["city"] = city };
+    ```c#
+    string city = "Rome";
+    var prompt = "I'm visiting {{$city}}. What are some activities I should do today?";
 
-// InvokeAsync on the KernelFunction object
-var result = await activitiesFunction.InvokeAsync(kernel, arguments);
-Console.WriteLine(result);
+    var activitiesFunction = kernel.CreateFunctionFromPrompt(prompt);
+    var arguments = new KernelArguments { ["city"] = city };
 
-// InvokeAsync on the kernel object
-result = await kernel.InvokeAsync(activitiesFunction, arguments);
-Console.WriteLine(result);
-```
+    // InvokeAsync on the KernelFunction object
+    var result = await activitiesFunction.InvokeAsync(kernel, arguments);
+    Console.WriteLine(result);
+
+    // InvokeAsync on the kernel object
+    result = await kernel.InvokeAsync(activitiesFunction, arguments);
+    Console.WriteLine(result);
+    ```
+
+::: zone-end
+
+::: zone pivot="python"
+
+    ```python
+    city = "Rome"
+    prompt = "I'm visiting {{$city}}. What are some activities I should do today?"
+
+    activities_function = kernel.create_function_from_prompt(prompt)
+    arguments = {"city": city}
+
+    # Invoke on the KernelFunction object
+    result = await activities_function.invoke_async(kernel, arguments)
+    print(result)
+
+    # Invoke on the kernel object
+    result = await kernel.invoke_async(activities_function, arguments)
+    print(result)
+    ```
+
+::: zone-end
 
 The Semantic Kernel prompt template language makes it easy to add AI-driven features to your apps using natural language. With support for variables, function calls, and parameters, you can create reusable and dynamic templates without complicated code. It’s a simple yet powerful way to build smarter, more adaptable applications.
