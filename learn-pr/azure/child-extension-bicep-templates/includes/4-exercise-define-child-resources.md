@@ -1,19 +1,19 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-You're starting to work on your R&D team's requests, and you decide to start by building an Azure Cosmos DB database for the toy drone's test data. In this exercise, you create the Azure Cosmos DB account and two child resources, one by using the `parent` property and the other as a nested resource.
+You're starting to work on your R&D team's requests. You decide to start by creating an Azure Cosmos DB database for the toy drone's test data. In this exercise, you create the Azure Cosmos DB account and two child resources. You create one child resource by using the `parent` property and the other as a nested resource.
 
 During the process, you:
 
 > [!div class="checklist"]
-> * Create a Bicep file that deploys a Cosmos DB account.
-> * Add a database and container, which are child resources of the Cosmos DB account.
+> * Create a Bicep file that deploys an Azure Cosmos DB account.
+> * Add a database and container, both of which are child resources of the Azure Cosmos DB account.
 > * Deploy the template and verify the deployment.
 
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
 ## Create a Bicep template that contains an Azure Cosmos DB account
 
-First, you create a new Bicep template with an Azure Cosmos DB account. To do so:
+First, you create a new Bicep template that contains an Azure Cosmos DB account. To do so:
 
 1. Open Visual Studio Code.
 
@@ -21,7 +21,7 @@ First, you create a new Bicep template with an Azure Cosmos DB account. To do so
 
 1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
 
-   You can either select **File** > **Save As** or press <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you saved the file. For example, you might want to create a *scripts* folder to save it in.
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Add the following content to the file. It's a good idea to enter it manually rather than copy and paste it. That way, you can see how the tooling helps you write your Bicep files.
 
