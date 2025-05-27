@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.implement-observability-cloud-native-app-with-opentelemetry
 metadata:
-  title: Implement observability in a .NET cloud-native application with OpenTelemetry
+  title: Implement Observability in a .NET Cloud-Native Application with OpenTelemetry
   description: "Learn about observability and how to implement it in a cloud-native application. Use OpenTelemetry packages to output logs, metrics, and tracing data and analyze the data in Application Insights and third-party applications."
-  ms.date: 12/20/2023
+  ms.date: 05/27/2025
   author: codemillmatt  
   ms.author: masoucou
   ms.topic: module-standard-task-based
