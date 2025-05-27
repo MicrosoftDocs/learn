@@ -1,9 +1,8 @@
-[Object replication](/azure/storage/blobs/object-replication-overview) copies blobs in a container asynchronously according to policy rules that you configure. During the replication process, the following contents are copied from the source container to the destination container:
-- The blob contents
-- The blob metadata and properties
-- Any versions of data associated with the blob
+[Object replication](/azure/storage/blobs/object-replication-overview) copies blobs in a container asynchronously according to policy rules that you configure. 
 
-The following illustration shows an example of asynchronous replication of blob containers between regions.
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b7e01208-33ae-4488-83a1-6a29ca6624d4]
+
+Replication includes the blob content, metadata properties, and versions. The following illustration shows an example of asynchronous replication of blob containers between regions.
 
 :::image type="content" source="../media/blob-object-replication-21fd3c07.png" alt-text="Diagram that shows asynchronous replication of blob containers between regions." border="false":::
 
@@ -11,7 +10,7 @@ The following illustration shows an example of asynchronous replication of blob 
 
 There are several considerations to keep in mind when planning your configuration for blob object replication.
 
-- Object replication requires that blob versioning is enabled on both the source and destination accounts.
+- Object replication requires that blob versioning is enabled on both the source and destination accounts. When blob versioning is enabled, you can access earlier versions of a blob. This access lets you recover your modified or deleted data.
 
 - Object replication doesn't support blob snapshots. Any snapshots on a blob in the source account aren't replicated to the destination account.
 
@@ -32,4 +31,8 @@ There are many benefits to using blob object replication. Consider the following
 - **Consider data distribution**. Optimize your configuration for data distribution. You can process or analyze data in a single location and then replicate only the results to other regions.
 
 - **Consider costs benefits**. Manage your configuration and optimize your storage policies. After your data is replicated, you can reduce costs by moving the data to the Archive tier by using lifecycle management policies.
+
+### Consider versioning when using object replication
+
+You can enable Blob storage versioning to automatically maintain previous versions of an object. When blob versioning is enabled, you can access earlier versions of a blob. This access lets you recover your modified or deleted data.
 
