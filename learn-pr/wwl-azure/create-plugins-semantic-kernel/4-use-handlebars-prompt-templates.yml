@@ -3,8 +3,8 @@ uid: learn.wwl.create-plugins-semantic-kernel.use-handlebars-prompt-templates
 title: Use Handlebars prompt templates
 metadata:
   title: Use Handlebars prompt templates
-  description: "Vision chat prompt template."
-  ms.date: 01/24/2025
+  description: "Use handlebars prompt template."
+  ms.date: 05/27/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-use-handlebars-prompt-templates.md)]
+  [!include[](includes/4-use-handlebars-prompt-templates.md)]

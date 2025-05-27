@@ -4,7 +4,7 @@ title: Store chat history
 metadata:
   title: Store chat history
   description: "Store chat history"
-  ms.date: 01/24/2025
+  ms.date: 05/27/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 8
 content: |
-  [!include[](includes/7-store-chat-history.md)]
+  [!include[](includes/5-store-chat-history.md)]
