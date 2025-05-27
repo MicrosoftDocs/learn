@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
+  zone_pivot_groups: dev-lang-csharp-python
 durationInMinutes: 8
 content: |
   [!include[](includes/3-configure-function-choices.md)]

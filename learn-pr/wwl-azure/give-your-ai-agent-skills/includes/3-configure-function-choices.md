@@ -8,86 +8,196 @@ Function advertising means providing specific functions to the AI model so it ca
 
 By using `AddFromType`, all of the functions from the specified classes are registered to the kernel. The AI model can then automatically choose from any of these functions based on the prompt.
 
-```c#
-using Microsoft.SemanticKernel;
+::: zone pivot="csharp"
 
-IKernelBuilder builder = Kernel.CreateBuilder();
-builder.AddOpenAIChatCompletion("<model-id>", "<api-key>");
-builder.Plugins.AddFromType<WeatherForecastUtils>();
-builder.Plugins.AddFromType<DateTimeUtils>();
+By registering your plugin classes with the kernel, all of their functions become available to the AI model. The model can then automatically choose from any of these functions based on the prompt. Use `AddFromType` to register all functions from a class as plugins.
 
-Kernel kernel = builder.Build();
+    ```csharp
+    using Microsoft.SemanticKernel;
 
-PromptExecutionSettings settings = new() { FunctionChoiceBehavior = FunctionChoiceBehavior.Auto() };
+    IKernelBuilder builder = Kernel.CreateBuilder();
+    builder.AddOpenAIChatCompletion("<model-id>", "<api-key>");
+    builder.Plugins.AddFromType<WeatherForecastUtils>();
+    builder.Plugins.AddFromType<DateTimeUtils>();
 
-await kernel.InvokePromptAsync("What is the likely color of the sky in Boston?", new(settings));
-```
+    Kernel kernel = builder.Build();
+
+    PromptExecutionSettings settings = new() { FunctionChoiceBehavior = FunctionChoiceBehavior.Auto() };
+
+    await kernel.InvokePromptAsync("What is the likely color of the sky in Boston?", new(settings));
+    ```
+
+::: zone-end
+
+::: zone pivot="python"
+
+By registering your plugin classes with the kernel, all of their functions become available to the AI model. The model can then automatically choose from any of these functions based on the prompt. In Python, use `add_plugin` to register your plugin classes and their functions.
+
+    ```python
+    import os
+    from semantic_kernel import Kernel
+    from semantic_kernel.connectors.ai.open_ai import AzureChatCompletion, OpenAIPromptExecutionSettings
+    from semantic_kernel.functions.kernel_function_decorator import kernel_function
+    from semantic_kernel.contents.chat_history import ChatHistory
+
+    class WeatherForecastUtils:
+        @kernel_function(name="GetWeatherForCity", description="Gets the weather for a given city.")
+        def get_weather_for_city(self, city: str) -> str:
+            return "Sunny"  # Stub for demo
+
+    class DateTimeUtils:
+        @kernel_function(name="GetCurrentUtcDateTime", description="Gets the current UTC date and time.")
+        def get_current_utc_date_time(self) -> str:
+            import datetime
+            return datetime.datetime.utcnow().isoformat()
+
+    deployment_name = os.getenv("DEPLOYMENT_NAME")
+    endpoint = os.getenv("PROJECT_ENDPOINT")
+    api_key = os.getenv("PROJECT_KEY")
+
+    kernel = Kernel()
+    chat_service = AzureChatCompletion(
+        deployment_name=deployment_name,
+        endpoint=endpoint,
+        api_key=api_key
+    )
+    kernel.add_service(chat_service, "chat_completion")
+    kernel.add_plugin(WeatherForecastUtils(), "WeatherForecastUtils")
+    kernel.add_plugin(DateTimeUtils(), "DateTimeUtils")
+
+    settings = OpenAIPromptExecutionSettings()
+    chat_history = ChatHistory()
+    chat_history.add_user_message("What is the likely color of the sky in Boston?")
+
+    result = chat_service.get_chat_message_content(
+        chat_history=chat_history,
+        kernel=kernel,
+        settings=settings
+    )
+    print(result)
+    ```
+
+::: zone-end
 
 ### Advertising Selected Functions
 
-Instead of making all functions available, you can explicitly select and advertise just the required ones using `Plugins.GetFunction`. This approach offers more control and limits the functions the model can use.
+Instead of making all functions available, you can explicitly select and advertise just the required ones. This approach offers more control and limits the functions the model can use.
 
-```c#
-KernelFunction getWeatherForCity = kernel.Plugins.GetFunction("WeatherForecastUtils", "GetWeatherForCity");
-KernelFunction getCurrentTime = kernel.Plugins.GetFunction("DateTimeUtils", "GetCurrentUtcDateTime");
+::: zone pivot="csharp"
 
-PromptExecutionSettings settings = new() { FunctionChoiceBehavior = FunctionChoiceBehavior.Auto(functions: [getWeatherForCity, getCurrentTime]) };
+Use `Plugins.GetFunction` to select specific functions to advertise to the model. You can then pass these to `FunctionChoiceBehavior.Auto(functions: ...)` in your settings.
 
-await kernel.InvokePromptAsync("What is the likely color of the sky in Boston?", new(settings));
-```
+    ```csharp
+    KernelFunction getWeatherForCity = kernel.Plugins.GetFunction("WeatherForecastUtils", "GetWeatherForCity");
+    KernelFunction getCurrentTime = kernel.Plugins.GetFunction("DateTimeUtils", "GetCurrentUtcDateTime");
+
+    PromptExecutionSettings settings = new() { FunctionChoiceBehavior = FunctionChoiceBehavior.Auto(functions: [getWeatherForCity, getCurrentTime]) };
+
+    await kernel.InvokePromptAsync("What is the likely color of the sky in Boston?", new(settings));
+    ```
+
+::: zone-end
+
+::: zone pivot="python"
+
+You control which functions are available by only registering the plugins you want the model to access. The SDK does not currently support restricting advertised functions directly in settings.
+
+    ```python
+    # As of SK 1.31, Python SDK does not support restricting advertised functions directly in settings.
+    # The closest approach is to only register the plugins you want available.
+
+    kernel = Kernel()
+    chat_service = AzureChatCompletion(
+        deployment_name=deployment_name,
+        endpoint=endpoint,
+        api_key=api_key
+    )
+    kernel.add_service(chat_service, "chat_completion")
+    kernel.add_plugin(WeatherForecastUtils(), "WeatherForecastUtils")
+    # Only add DateTimeUtils if you want it available:
+    # kernel.add_plugin(DateTimeUtils(), "DateTimeUtils")
+
+    settings = OpenAIPromptExecutionSettings()
+    chat_history = ChatHistory()
+    chat_history.add_user_message("What is the likely color of the sky in Boston?")
+
+    result = chat_service.get_chat_message_content(
+        chat_history=chat_history,
+        kernel=kernel,
+        settings=settings
+    )
+    print(result)
+    ```
+
+::: zone-end
 
 ### Disabling Function Calling
 
-You can prevent the AI model from invoking any functions By setting the `FunctionChoiceBehavior` to use an empty list of functions. Doing this forces the language model to process the prompt instead.
+You can prevent the AI model from invoking any functions, forcing it to rely solely on its language model capabilities to process the prompt.
 
-```c#
-PromptExecutionSettings settings = new() { FunctionChoiceBehavior = FunctionChoiceBehavior.Auto(functions: []) };
+::: zone pivot="csharp"
 
-await kernel.InvokePromptAsync("What is the likely color of the sky in Boston?", new(settings));
-```
+Set the `FunctionChoiceBehavior` to use an empty list of functions to disable function calling.
+
+    ```csharp
+    PromptExecutionSettings settings = new() { FunctionChoiceBehavior = FunctionChoiceBehavior.Auto(functions: []) };
+
+    await kernel.InvokePromptAsync("What is the likely color of the sky in Boston?", new(settings));
+    ```
+
+::: zone-end
+
+::: zone pivot="python"
+
+In Python, do not register any plugins with the kernel to disable function calling.
+
+    ```python
+    # In Python, you can disable function calling by not registering any plugins,
+    # or by using settings that prevent tool/function use if supported in your SDK version.
+    # As of SK 1.31, you can use the following pattern:
+
+    settings = OpenAIPromptExecutionSettings()  # No plugins registered, so no functions available
+
+    kernel = Kernel()
+    chat_service = AzureChatCompletion(
+        deployment_name=deployment_name,
+        endpoint=endpoint,
+        api_key=api_key
+    )
+    kernel.add_service(chat_service, "chat_completion")
+    # Do NOT add any plugins
+
+    chat_history = ChatHistory()
+    chat_history.add_user_message("What is the likely color of the sky in Boston?")
+
+    result = chat_service.get_chat_message_content(
+        chat_history=chat_history,
+        kernel=kernel,
+        settings=settings
+    )
+    print(result)
+    ```
+
+::: zone-end
 
 ## Using Function Choice Behaviors
 
-Function choice behaviors in the Semantic Kernel allow developers to configure how functions are advertised and selected for invocation by the AI model. 
+The Semantic Kernel SDK provides several ways to configure how functions are advertised and selected for invocation by the AI model:
 
-The `FunctionChoiceBehavior` class provides three static methods to configure these behaviors:
+- **Auto**: The model can choose from zero or more functions.
+- **Required**: The model is encouraged or required to choose at least one function.
+- **None**: The model cannot choose any functions.
 
-- **`Auto`**: The model can choose from zero or more functions.
-- **`Required`**: Forces the model to choose at least one function.
-- **`None`**: Prevents the model from choosing any functions.
+::: zone pivot="csharp"
 
+Use the `FunctionChoiceBehavior` class to configure these behaviors in C#.
 
-### Auto Behavior
+::: zone-end
 
-The `Auto` behavior allows the model to select zero or more functions. It’s useful for scenarios where the AI dynamically determines which functions to invoke.
+::: zone pivot="python"
 
-```c#
-PromptExecutionSettings settings = new() { FunctionChoiceBehavior = FunctionChoiceBehavior.Auto() };
+In Python, these behaviors are controlled by which plugins you register and, in some cases, by prompt engineering. The SDK does not currently provide direct equivalents for all C# behaviors.
 
-await kernel.InvokePromptAsync("What is the likely color of the sky in Boston?", new(settings));
-```
-
-### Required Behavior
-
-The `Required` behavior enforces the model to choose at least one function. This is helpful when specific functions must be invoked to get the necessary data.
-
-```c#
-KernelFunction getWeatherForCity = kernel.Plugins.GetFunction("WeatherForecastUtils", "GetWeatherForCity");
-
-PromptExecutionSettings settings = new() { FunctionChoiceBehavior = FunctionChoiceBehavior.Required(functions: [getWeatherForCity]) };
-
-await kernel.InvokePromptAsync("What is the likely color of the sky in Boston?", new(settings));
-```
-
-### None Behavior
-
-The `None` behavior prevents the model from choosing functions for invocation. Instead, it simulates function selection and provides insights into which functions would have been chosen.
-
-```c#
-PromptExecutionSettings settings = new() { FunctionChoiceBehavior = FunctionChoiceBehavior.None() };
-
-await kernel.InvokePromptAsync("Specify which provided functions are needed to determine the sky’s color in Boston.", new(settings));
-```
+::: zone-end
 
 Function choice behaviors provide developers with flexible options for controlling how functions are advertised and invoked by AI models. By understanding and leveraging these behaviors, you can fine-tune AI interactions to suit specific application requirements.
-
