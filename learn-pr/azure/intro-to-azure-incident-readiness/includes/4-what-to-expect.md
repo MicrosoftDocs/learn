@@ -1,4 +1,4 @@
-When we talk about an *incident*, we're specifically talking about an issue on our Microsoft Azure side. This is a platform-side issue that affects your services. During these rare but inevitable issues, our goal is to be as transparent as possible with you by providing regular updates direct from our engineers. We endeavor to inform the right people through the right channels and to share as much detail as possible. 
+When we talk about an *incident*, we're specifically talking about an issue on our Microsoft Azure side. An incident is a platform-side issue that affects your services. During these rare but inevitable issues, our goal is to be as transparent as possible with you by providing regular updates direct from our engineers. We endeavor to inform the right people through the right channels and to share as much detail as possible. 
 
 Although we generally don't share speculation or the inner workings of troubleshooting steps, we share everything that we know about the incident. There's no delay in messaging, even for detailed messaging, based on customer size or segment, partner status, or support plan. Microsoft partner organizations and even Microsoft account teams are notified at the same time and with the same updates as the affected customers that they represent.
 
@@ -6,11 +6,11 @@ Although we generally don't share speculation or the inner workings of troublesh
 
 1. **Review [Azure Service Health](https://www.aka.ms/ash-portal) within the Azure portal for the latest updates from our engineers**.
 
-    If you notice an issue and need to understand *is it us or is it Azure*, checking Azure Service Health in the portal should be the first step. Although you should be aware of this 'go-to-' place, you *shouldn't need to hunt for information* reactively, if you have *configured the relevant service health alerts* beforehand. During a known issue, these service health alerts trigger. They're notified using their chosen communications channel.
+    If you notice an issue and need to understand *is it us or is it Azure*, checking Azure Service Health in the portal should be the first step. Although you should be aware of this 'go-to-' place, if you *configured the relevant service health alerts* beforehand, you *shouldn't need to hunt for information* reactively. During a known issue, these service health alerts trigger. They're notified using their chosen communications channel.
 
     > [!NOTE]
     >
-    > As a reminder, setup [Service Health alert](/azure/service-health/alerts-activity-log-service-notifications-portal) for getting notified of portal communications with the channel of your choice, such as email, SMS, or webhook.
+    > Set up [Service Health alert](/azure/service-health/alerts-activity-log-service-notifications-portal) for getting notified of portal communications with the channel of your choice, such as email, SMS, or webhook.
 
 2. **If there are issues accessing Service Health or the portal itself, check the public [Azure Status page](https://status.azure.com/)**.
 
@@ -28,7 +28,7 @@ Although we generally don't share speculation or the inner workings of troublesh
 
     Only a few times in the history of Azure have there been technical issues that prevented posting incident updates on `azure.status.microsoft`. In these extraordinary circumstances, we post incident updates by using X at @AzureSupport.
 
-    Regardless of the issue, customers should feel free to reach out to @AzureSupport for any questions relating to potential issues they're seeing or with support questions. The @AzureSupport team generally responds in less than 5 minutes. We're very proud of that record! It's important to know that during known issues, for example, if there's an outage listed in Service Health, the incident is already being worked on by the right engineers. There's potentially not much that the @AzureSupport team can do to help, beyond directing customers to the official engineering updates of what's happening.
+    Regardless of the issue, customers should feel free to reach out to @AzureSupport for any questions relating to potential issues they're seeing or with support questions. The @AzureSupport team generally responds in less than 5 minutes. We're very proud of that record! During known issues, for example, if there's an outage listed in Service Health, the incident is already being worked on by the right engineers. There's potentially not much that the @AzureSupport team can do to help, beyond directing customers to the official engineering updates of what's happening.
 
 4. **If your impact/issues don't match the incident (or if these persist after mitigation) [contact support](https://www.aka.ms/AzurePortalSupportRequest)**.
 

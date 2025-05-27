@@ -2,7 +2,7 @@ We recognize the significance of effective communications during incidents and u
 
 - **Speed** - *Is it me or is it Azure?*
 
-    We want you to know it's *us*, not you as quickly as possible. This goal is our key objective. Our goal is to notify all impacted subscriptions and tenants within 15 minutes of an outage.
+    We want you to know it's *us*, not you as quickly as possible. This goal is our key objective. Our goal is to notify all affected subscriptions and tenants within 15 minutes of an outage.
 
     Due to the complexity of our platform, this approach can't be achieved with human beings alone. The fact is why we continue to invest in our [AIOps](https://azure.microsoft.com/blog/advancing-azure-service-quality-with-artificial-intelligence-aiops/) technology.
 
@@ -16,7 +16,7 @@ We recognize the significance of effective communications during incidents and u
 
 - **Parity** - *How can I standardize operations across services?*
 
-    We aim to standardize operations and achieve consistency across Azure services. This approach provides consistent experiences across our service health communication types. The approachharmonizes the Microsoft cloud ecosystem for a more seamless experience.
+    We aim to standardize operations and achieve consistency across Azure services. This approach provides consistent experiences across our service health communication types. The approach harmonizes the Microsoft cloud ecosystem for a more seamless experience.
 
 - **Transparency** - *What really happened?*
 

@@ -6,7 +6,7 @@ Remember, preparing for the unexpected ensures a smoother experience during unfo
 
 ## Learn more
 
-Here is some additional information that might be helpful:
+Here's some additional information that might be helpful:
 
 - [Introduction to Azure Service Health - Training](/training/modules/intro-to-azure-service-health/)
 

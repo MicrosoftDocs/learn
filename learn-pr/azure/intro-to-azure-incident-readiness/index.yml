@@ -10,7 +10,7 @@ metadata:
   ms.service: azure
 title: Introduction to Azure Incident Readiness
 summary: |
-  This Azure Incident Readiness module focuses on preparedness and proactive measures for managing Azure incidents. It provides guidance on getting notified and staying informed, building secure and resilient applications, understanding the incident process including information relating to our post incident reviews (PIRs), and when to engage support. Customers with support contracts receive information on building their Major Incident Response Plan with their Microsoft account team.
+  This Azure Incident Readiness module focuses on preparedness and proactive measures for managing Azure incidents. It provides guidance on getting notified and staying informed. Learn about building secure and resilient applications, understanding the incident process including information relating to our post incident reviews (PIRs), and when to engage support. Customers with support contracts receive information on building their Major Incident Response Plan with their Microsoft account team.
 abstract: |
   By the end of this module, you can expect to:
 

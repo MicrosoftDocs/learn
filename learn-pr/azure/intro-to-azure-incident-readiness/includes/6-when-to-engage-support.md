@@ -4,7 +4,7 @@ Whenever you notice an issue, the first step is to use the Azure Admin Portal to
 
 If there's an active incident and it matches the issue you're experiencing, you shouldn't open a support case. You can obtain all the latest information from service health about the incident and next action plan. You should engage support if the issue you're experiencing isn't already represented in Service Health. You should engage support if you read the updates from engineering but require support to respond to the incident, for example, to implement your failover plans. You can open a Support Case from the Admin Portal with a reference to the Service Health ID number for that Service Incident.
 
-If a you don't see any active incidents showing in the Service Health page **OR** the description of incidents showing don't match the issues they're experiencing, you should open a Support Case. In this event, there isn't any Service Health ID number to reference.
+If you don't see any active incidents showing in the Service Health page **OR** the description of incidents showing don't match the issues they're experiencing, you should open a Support Case. In this event, there isn't any Service Health ID number to reference.
 
 In either case, engineers are engaged in resolving the issue. When you open a support case, we inform your Customer Success Account Manager and Incident Manager, for Premier/Unified Support Customer, so that they can assist as needed. Keep checking the Service Health for updates throughout the life of the incident as new information including updates, changes. Solutions are all posted to the Service Health Dashboard.
 
@@ -20,7 +20,7 @@ In either case, engineers are engaged in resolving the issue. When you open a su
 1. **Support Case is logged**
 
     - Customer Service & Support (CSS) activated to troubleshoot the issue 
-    - Critical Situation Management and Escalation Team (CMET), Incident Manager (IM) and Customer Success Account Manager (CSAM) are notified (applicable to only Premier/Unified support customers)
+    - Critical Situation Management and Escalation Team (CMET), Incident Manager (IM), and Customer Success Account Manager (CSAM) are notified (applicable to only Premier/Unified support customers)
 
 1. **Engineering Teams engaged**
 

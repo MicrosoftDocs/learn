@@ -1,4 +1,4 @@
-To ensure preparedness and minimize the impact of incidents, it's essential to follow the proactive recommendations outlined in this unit. These actions help you understand our incident communication process, locate pertinent information, and configure notifications to receive timely updates. Evaluating the resilience of your applications and implementing recommended measures create more reliable workloads, which reduces the potential impact of an incident. Lastly, reviewing and implementing security best practices fortify your environment and mitigate risks.
+To ensure preparedness and minimize the impact of incidents, it's essential to follow the proactive recommendations outlined in this unit. These actions help you understand our incident communication process, locate pertinent information, and configure notifications to receive timely updates. Evaluating the resilience of your applications and implementing recommended measures create more reliable workloads, which reduces the potential impact of an incident. Reviewing and implementing security best practices fortify your environment and mitigate risks.
 
 ## To stay informed, mitigate impact, and protect your investment, we recommend the following five actions:
 
@@ -12,7 +12,7 @@ Here are some key features available in Azure Service Health to enhance your inc
 
 #### Resource Health pane (new experience covered)
 
-Located within the Service Health page of the Azure portal, Azure Resource Health helps to diagnose and resolve service problems that affect your Azure resources. Resources, such as virtual machines, web apps, or SQL databases, are assessed for their health based on signals from different Azure services. If a resource is identified as unhealthy, Resource Health conducts a detailed analysis to determine the cause of the problem. It also provides information on Microsoft's actions to resolve problems related to incidents and suggests steps you can take to address the issue.
+Located in the Service Health page of the Azure portal, Azure Resource Health helps to diagnose and resolve service problems that affect your Azure resources. Resources, such as virtual machines, web apps, or SQL databases, are assessed for their health based on signals from different Azure services. If a resource is identified as unhealthy, Resource Health conducts a detailed analysis to determine the cause of the problem. It also provides information on Microsoft's actions to resolve problems related to incidents and suggests steps you can take to address the issue.
 
 #### Services Issues pane (new experience covered)
 
@@ -105,7 +105,7 @@ When an alert is triggered, you can define the actions to be taken by using acti
 | Secure webhook | When you use a secure webhook action, you must use Microsoft Entra ID to secure the connection between your action group and your endpoint, which is a protected web API. See [Configure authentication for Secure webhook](/azure/azure-monitor/alerts/action-groups#configure-authentication-for-secure-webhook). Secure webhook doesn't support basic authentication. If you're using basic authentication, use the Webhook action. |
 | Webhook | If you use the webhook action, your target webhook endpoint must be able to process the various JSON payloads that different alert sources emit.<br>You can't pass security certificates through a webhook action. To use basic authentication, you must pass your credentials through the URI.<br>If the webhook endpoint expects a specific schema, for example, the Microsoft Teams schema, use the **Logic Apps** action type to manipulate the alert schema to meet the target webhook's expectations.<br>For information about the rules used for retrying webhook actions, see [Webhook](/azure/azure-monitor/alerts/action-groups#webhook). |
 
-Most service incidents affect a few subscriptions, so these incidents don't show up on places like `status.azure.com`. Service health alerts can be configured from the portal. If you want to automate creation, you can configure them byt using PowerShell or ARM templates.
+Most service incidents affect a few subscriptions, so these incidents don't show up on places like `status.azure.com`. Service health alerts can be configured from the portal. If you want to automate creation, you can configure them by using PowerShell or ARM templates.
 
 By configuring Service Health alerts and action groups effectively, you can ensure that you receive timely notifications and take appropriate actions to mitigate the impact of incidents on your Azure resources.
 
@@ -129,7 +129,7 @@ You can also create [resource health alerts programmatically](/azure/service-hea
 
 #### Scheduled events for virtual machines, avoiding impact
 
-[Scheduled events](/azure/virtual-machines/linux/scheduled-events) is another great tool. Both 'alerts' types above notify people or systems, but scheduled events notify the resources themselves. This approach can give your application time to prepare for virtual machine maintenance or one of our automated service healing events. It provides a signal about an imminent maintenance event, for example, an upcoming reboot, so that your application can know that and then act to limit disruption. Your application might drop itself out of the pool or otherwise degrade gracefully. Scheduled events are available for all Azure Virtual Machine types including PaaS and IaaS on both Windows and Linux.
+[Scheduled events](/azure/virtual-machines/linux/scheduled-events) is another great tool. Both alerts types decribed previously notify people or systems, but scheduled events notify the resources themselves. This approach can give your application time to prepare for virtual machine maintenance or one of our automated service healing events. It provides a signal about an imminent maintenance event, for example, an upcoming reboot, so that your application can know that and then act to limit disruption. Your application might drop itself out of the pool or otherwise degrade gracefully. Scheduled events are available for all Azure Virtual Machine types including PaaS and IaaS on both Windows and Linux.
 
 > [!NOTE]
 >
