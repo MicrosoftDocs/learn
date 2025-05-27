@@ -23,10 +23,12 @@ To complete the exercise, you need:
 
 * [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) for Visual Studio Code.
 
-* [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools#installing) version 4.x. 
+* Azure Functions Core Tools version 4.x. Run the following commands in a terminal to install Azure Functions Core Tools on your system. Visit [Azure Function Core Tools on GitHub](https://github.com/Azure/azure-functions-core-tools?tab=readme-ov-file#installing) for installation instructions on other platforms.
 
-> [!TIP]
-> If you have any issues running the function, uninstall any existing version of Azure Functions Core Tools on your system, and then reinstall.
+    ```
+    winget uninstall Microsoft.Azure.FunctionsCoreTools
+    winget install Microsoft.Azure.FunctionsCoreTools
+    ```
 
 ## Getting started
 
