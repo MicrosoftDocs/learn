@@ -6,7 +6,7 @@ metadata:
   description: Learn how to deploy child and extension resources, and refer to existing resources, within your Bicep code.
   ms.service: azure-resource-manager
   manager: jasongroce
-  ms.date: 01/31/2025
+  ms.date: 05/27/2025
   author: mumian
   ms.author: jgao
   ms.topic: module
@@ -56,4 +56,4 @@ units:
 - learn.azure.child-extension-bicep-templates.summary
 badge:
   uid: learn.azure.child-extension-bicep-templates.badge
-
+
