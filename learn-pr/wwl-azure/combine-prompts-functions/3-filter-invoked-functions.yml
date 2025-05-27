@@ -4,7 +4,7 @@ title: Filter invoked functions
 metadata:
   title: Filter invoked functions
   description: "Filter invoked functions"
-  ms.date: 01/27/2025
+  ms.date: 05/27/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-filter-invoked-functions.md)]
+  [!include[](includes/3-filter-invoked-functions.md)]
