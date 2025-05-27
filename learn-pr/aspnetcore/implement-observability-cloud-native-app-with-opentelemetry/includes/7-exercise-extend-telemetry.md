@@ -50,7 +50,7 @@ You want to have greater visibility of how a stock changes over time, so you cre
     This code adds the `ProductsMetrics` class to the dependency injection container.
 
 1. Select <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file.
-1. On the **EXPLORER** pane, in the *Products* folder, expand the *Endpoint* folder and then select **ProductEndpoints.cs**.
+1. On the **EXPLORER** pane, in the *Products* folder, expand the *Endpoint* folder, and then select **ProductEndpoints.cs**.
 1. Replace the existing stock update `MapPut` endpoint with this code:
 
       ```csharp
@@ -128,7 +128,7 @@ You now add the metric to OpenTelemetry so that it can be exported to your obser
 1. Open the **:::no-loc text="eShopLite":::** app in a browser at `http://localhost:32000`.
 1. Go to the **Products** page and change the stock amount on several products.
 1. Open the **Prometheus** dashboard at `http://localhost:9090`.
-1. In the search box, enter the`eshoplite_products_stock_change_total` metric and then select **Execute**.
+1. In the search box, enter the`eshoplite_products_stock_change_total` metric, and then select **Execute**.
 
     You should see it listed in a table.
 
