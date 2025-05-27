@@ -42,7 +42,7 @@ Every Azure resource has a unique resource ID. This ID includes information that
 
 Here's a visual representation of the same information:
 
-:::image type="content" source="../media/2-resource-id.png" alt-text="Resource ID for a storage account, split with key/value pair on a separate line." border="false":::
+:::image type="content" source="../media/2-resource-id.png" alt-text="Diagram that shows a resource ID for a storage account. Each component of the ID is presented on a separate line." border="false":::
 
 You can see that a resource ID contains information about the resource type and the specific resource you deployed. Here's a breakdown of this example resource ID into its components:
 
