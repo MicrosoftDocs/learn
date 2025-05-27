@@ -6,7 +6,7 @@ Azure AI Foundry provides a comprehensive and dynamic marketplace containing mod
 
 You can deploy the models from Azure AI Foundry model catalog to an endpoint without any extra training. If you want the model to be specialized in a task, or perform better on domain-specific knowledge, you can also choose to customize a foundation model.
 
-To choose the model that best fits your needs, you can test out different models in a *playground* setting and utilize *model leaderboards (preview)*. Model leaderboards provide a way to see what models are performing best in different criteria such as quality, cost, and throughput. You can also see graphical comparisions of models based on specific metrics.
+To choose the model that best fits your needs, you can test out different models in a *playground* setting and utilize *model leaderboards (preview)*. Model leaderboards provide a way to see what models are performing best in different criteria such as quality, cost, and throughput. You can also see graphical comparisons of models based on specific metrics.
 
 ![Screenshot of comparison of models in Azure AI Foundry portal.](../media/model-benchmarks-comparision.png)
 
