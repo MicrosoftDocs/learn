@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is not an intended purpose of the Xbox Accessibility Guidelines (XAGs)?"
+  - content: "Which of the following is not an intended purpose of the Xbox Accessibility Guidelines (XAGs)?"
     choices:
     - content: "Xbox Accessibility Guidelines are for designers to use as a catalyst for generating ideas for games."
       isCorrect: false

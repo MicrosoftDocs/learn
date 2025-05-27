@@ -1,10 +1,9 @@
-Another foundational accessibility concept is the presentation of important game information. Essential information from a game or platform should be presented to the player via multiple sensory channels, including vision, audio, and haptic (or touch).
+Another foundational accessibility concept is the presentation of important game information. Essential information from a game or platform should be presented to the player via multiple sensory channels, including vision, audio, and haptic (touch).
 
 In this unit, you're introduced to the principle of multiple sensory channels as it applies to:
 
 - Text-based information.
 - Visual and audio cues.
-- Notifications and status indicators.
 - Directional cues.
 
 ## What are multiple sensory channels?
@@ -15,11 +14,11 @@ The use of multiple sensory channels can help ensure that players who can't perc
 
 ## When should multiple sensory channels be used?
 
-In general, multiple sensory channels should be used to represent information critical to successful interactions. The following sections provide specific examples of these scenarios.
+In general, multiple sensory channels should be used to represent information that's critical to successful interactions. The following sections provide specific examples of these scenarios.
 
 ### Text-based information
 
-Games and platforms should provide players with an option to enable screen audio narration for all text-based elements in the UI. These elements include menu, chat, notification, in-game tutorial, and objective log text. This narration enables players with visual disabilities to access important information in a way that doesn't require text.
+Games and platforms should provide an option to enable screen audio narration for all text-based elements in the UI. These elements include menu, chat, notification, in-game tutorial, and objective log text. This narration enables players with visual disabilities to access important information in a way that doesn't require text.
 
 ### Visual and audio cues
 

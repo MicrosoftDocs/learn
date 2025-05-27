@@ -1,6 +1,6 @@
-**Support through multiple ways** is another important foundational accessibility concept. Providing players with multiple ways to complete a single task can support player success for many game scenarios and experiences.
+**Support through multiple means** is another important foundational accessibility concept. Providing players with multiple ways to complete a single task can support player success for many game scenarios and experiences.
 
-In this unit, you'll learn about accessibility best practice principles that are derived from the **multiple ways of task completion** concept.
+In this unit, you'll learn about accessibility best practice principles that are derived from the **multiple means of task completion** concept.
 
 ## Provide multiple ways to navigate menus
 
@@ -8,7 +8,7 @@ Complex menu trees can introduce inaccessible experiences for players. Navigatin
 
 ### Accelerator prompts
 
-One way to provide an alternate means of navigating through menu trees is by using onscreen shortcuts or accelerator prompts. For example, the following image from the Forza Horizon 4 start screen provides players with a prompt to select the **X** button to open the accessibility settings menu.
+One way to provide an alternative means of navigating through menu trees is by using onscreen shortcuts or accelerator prompts. For example, the following image from the Forza Horizon 4 start screen provides players with a prompt to select the **X** button to open the accessibility settings menu.
 
 :::image type="content" source="../media/forza-accelerator.png" alt-text="Screenshot that shows the start screen from Forza Horizon 4 with the option to select A to start the game and X to open the accessibility menu.":::
 
@@ -36,7 +36,7 @@ The complexity and speed of game combat situations can introduce inaccessible ex
 
 ### Long-range weapon options
 
-Some players might find close-combat scenarios inaccessible. These situations often require players to rapidly press controls to generate short-range attacks like swinging a sword or punching. When games provide alternative ways to inflict enemy damage, such as long-range weapons, players can slowly defeat enemies from afar.
+For some players, close-combat scenarios might be inaccessible. These situations often require players to rapidly press controls to generate short-range attacks like swinging a sword or punching. When games provide alternative ways to inflict enemy damage, such as long-range weapons, players can slowly defeat enemies from afar.
 
 The following image is from the game Minecraft Dungeons. In this game, players can defeat enemies face-to-face with their melee weapon. They can also choose to level up long-range weapons, like arrows and explosives, to defeat enemies from afar, and then take breaks when needed.
 

@@ -9,7 +9,6 @@ In this unit, you're introduced to some game and platform examples where the con
 - Game difficulty settings.
 - Notification and visual distraction settings.
 - Input controls and mapping.
-- Other mechanics and game elements.
 
 ## Customize visual elements
 
@@ -67,17 +66,17 @@ Allow players to customize aspects of their audio channel output. The following 
 
 ## Customize game difficulty
 
-Allow players to customize the difficulty of the game. Providing customization options for both overall difficulty and individual game mechanic difficulty are equally important. Examples of these two types of customization include the following areas.
+Allow players to customize the difficulty of the game. Providing customization options for both overall difficulty and individual game mechanic difficulty are equally important. Examples of these two types of customization are provided in the following sections.
 
 ### Overall game difficulty
 
-By enabling players to adjust overall game difficulty, you can support players who prefer to minimize challenge and enjoy the storyline. In the following image of the Outer Worlds **Select Difficulty** menu, players can choose between **Story**, **Normal**, **Hard**, and **Supernova**. Each difficulty level provides a description of what players can expect in terms of enemy health, damage, and other aspects of gameplay that contribute to difficulty.
+By enabling players to adjust overall game difficulty, you can support players who prefer to minimize challenge and enjoy the storyline. The following image shows the Outer Worlds **Select Difficulty** menu. Players can choose between **Story**, **Normal**, **Hard**, and **Supernova**. Each difficulty level provides a description of what players can expect in terms of enemy health, damage, and other aspects of gameplay that contribute to difficulty.
 
 :::image type="content" source="../media/difficulty.png" alt-text="Screenshot that shows the difficulty settings screen in The Outer Worlds. Story is selected, and there's a description of the selection affects gameplay.":::
 
 ### Difficulty of individual mechanics and components
 
-Individual game mechanics can also influence overall difficulty. In addition to overall game difficulty customization, players should be able to customize individual game mechanics that contribute to overall difficulty. This type of customization supports players who generally prefer a certain difficulty level but a specific mechanic or factor blocks their progress.
+Individual game mechanics can also influence overall difficulty. In addition to overall game difficulty, players should be able to customize individual game mechanics that contribute to overall difficulty. This type of customization supports players who generally prefer a certain difficulty level but for whom a specific mechanic or factor blocks their progress.
 
 The survival game Don't Starve, for example, imposes challenges related to gathering food and resources, protecting characters from dangerous weather, and staying safe from enemies. Players can customize:
 
@@ -93,7 +92,7 @@ Allow players to customize aspects of the experience that might cause distractio
 
 ### Notification customization
 
-Allow players to customize the amount of time notifications are shown and location in which they're shown. The following images show the Xbox preferences settings for notifications. Players can choose which types of notifications they want to receive onscreen alerts for, how long those alerts remain on their screen, and the area of the screen where they appear.
+Allow players to customize the amount of time notifications are shown and the location in which they're shown. The following images show the Xbox preferences settings for notifications. Players can choose which types of notifications they want to receive onscreen alerts for, how long those alerts remain on their screen, and the area of the screen where they appear.
 
 :::image type="content" source="../media/platform-notification-timing.png" alt-text="Screenshot that shows the Notification timing preferences screen on Xbox. The option Choose how long your banner notification pops up for is highlighted and 30 seconds is selected.":::
 
@@ -101,7 +100,7 @@ Allow players to customize the amount of time notifications are shown and locati
 
 ### Animated content
 
-Allow players to customize onscreen content that's moving, blinking, scrolling, or otherwise animated. This type of customization is important during game experiences in which players are required to read text onscreen but can become distracted or disoriented by background movement. The following video shows the Forza Horizon 5 accessibility settings menu. Players can enable and disable background movement while they navigate their menu settings.
+Allow players to customize onscreen content that's moving, blinking, scrolling, or otherwise animated. This type of customization is important during game experiences in which players are required to read text onscreen but can become distracted or disoriented by background movement. The following video capture shows the Forza Horizon 5 accessibility settings menu. Players can enable and disable background movement while they navigate their menu settings.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=f36d9825-08c1-42c5-a99b-4e6f17704d8d]
 
