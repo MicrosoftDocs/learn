@@ -43,14 +43,14 @@ class TaskManagementPlugin(KernelPlugin):
 
 ::: zone pivot="csharp"
 
-> [!INOTE]
+> [!NOTE]
 > In C#, plugin functions use attributes such as `[KernelFunction]` and `[Description]` to provide metadata for the Semantic Kernel. Chat history is managed using the `ChatHistory` class and its methods, such as `AddUserMessage`.
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-> [!INOTE]
+> [!NOTE]
 > In Python, plugin functions use decorators such as `@kernel_function` to provide metadata for the Semantic Kernel. Chat history is typically represented as a list of dictionaries, each with a `role` and `content` key.
 
 ::: zone-end
