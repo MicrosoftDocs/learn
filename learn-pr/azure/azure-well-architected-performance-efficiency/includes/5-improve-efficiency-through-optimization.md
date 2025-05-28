@@ -1,62 +1,67 @@
-| :::image type="icon" source="../media/goal.svg"::: Improve system efficiency within the defined performance targets to increase workload value. |
+| :::image type="icon" source="../media/goal.svg"::: Improve system efficiency within your defined performance targets to get more value out of your workload. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-The targets set during the initial phase are based on a reasonable level of user experience, considering various constraints. You should reassess and adjust targets to further enhance the experience. To further enhance the experience, it requires a clear understanding of how the system is used, how it has evolved, and how the platform or technology has changed over time. The cycle of monitoring, optimizing, testing, and deploying is a continuous process.
+The targets set during the initial phase are based on a reasonable level of user experience, given various constraints. But it's worth revisiting and adjusting those targets to make the experience even better. To do that, you need a clear picture of how the system's being used, how it's changed, and how the platform or technology has evolved. The cycle of monitoring, optimizing, testing, and deploying is an ongoing process.
 
-Efficiency optimization efforts allow a workload to work with lower resource consumption. They can cause the workload to be in an over-provisioned state with spare capacity. Use that capacity to improve reliability of the system. Eliminate capacity to improve the cost of the system. Or repurpose the capacity to support new product features on existing resources.
+When you optimize for efficiency, the workload can run by using fewer resources. That might leave you with extra capacity, which opens up a few options. You can use the capacity to make the system more reliable, reduce it to save on costs, or support new product features without needing more infrastructure.
 
-When the system gains efficiencies, take the opportunity to set and maintain new performance targets.
+When the system starts running more efficiently, it's a great time to set new performance targets and make sure you're keeping up with them.
 
 **Example scenario**
 
-Contoso’s HR engineering team supports custom integrations into the organization’s human resources information system (HRIS). These integrations include finance integrations for payroll, hiring statistics for government labor law reporting, and others. Most of the integrations are Azure Functions written in C# which are hosted in an Azure Arc-enabled Kubernetes cluster in the organization’s data center.  Most of the jobs have been running well, but due to a delay in processing, a few make the team anxious as sometimes critical data isn’t available when the HR director needs it. 
+Contoso's HR engineering team handles custom integrations to the company's HR information system. These integrations include finance for payroll, hiring data for government labor law reports, and a few others. Most of these integrations run as Azure functions written in C#, which are hosted on an Azure Arc-enabled Kubernetes cluster in the company's datacenter. Overall, the jobs run smoothly, but a few cause some stress for the team because delays in processing sometimes mean the HR director doesn't get important data on time.
 
 ## Prioritize performance optimizations
 
-**Allocate dedicated cycles for performance optimization to address nonfunctional requirements and optimizations in functional areas. Targets for this optimization are resources, code, data retention, database queries, and others.**
+**Set aside focused time to improve performance by tackling nonfunctional requirements and making improvements in functional areas. The main focus areas for this work include resource usage, code quality, data retention, and database queries.**
 
-By adopting this approach, you can build a culture of performance-driven optimization. You keep the team accountable for proactively monitoring performance patterns and also fine-tune the application.
+By going with this approach, you help create a culture that really values performance-focused improvements. It also keeps the team responsible for staying on top of performance trends and making sure the application keeps getting better.
 
 *Contoso's challenge*
 
-- The team is rather scrappy, and their backlog is long.  Most of the time they work in a "fire and forget" mindset when writing and deploying integrations; the integrations get written, deployed and then the team moves on to the next task.
-- The team has been called for critical incident support issues frequently due to senior leadership not having access to data in a timely manner.
-- The team is keenly aware that improvements need to be made, but haven't prioritized making the necessary changes.
+- The team is pretty scrappy, and their backlog is packed. Most of the time, they take a quick turnaround approach when building and launching integrations. They write the code, deploy it, and then jump straight into the next task.
+
+- The team has been pulled into critical incident support often because senior leadership can't always get the data they need on time.
+- Everyone on the team knows changes are needed, but they haven't made it a priority yet.
 
 *Applying the approach and outcomes*
 
-- The team now allocates 20% of every sprint for technical debt and other optimization activities. This is buying the engineering team time to prioritize and address critical areas and other areas where impact can be most meaningful.
-- By taking this approach the team is able to dedicate the necessary time to address the performance issues causing delays in processing data.
+- The team now sets aside 20% of every sprint to tackle technical debt and focus on other performance improvements. That's giving them the space to focus on critical areas and make progress where it'll really count.
+
+- By taking this approach the team is able to dedicate the time they need to fix the performance problems that have been slowing down data processing.
 
 ## Look for design improvements
 
-**Enhance the architecture with new design patterns and components, which can boost performance, in ways that you previously didn't consider because of limited time or budget.**
+**Improve the architecture by bringing in new design patterns and components that can boost performance, especially in ways that you didn't consider before because of tight timelines or budget limits.**
 
-New design and components can optimize the system, leading to better user experience and long-term cost efficiencies. For example, you can use caching or adding a content delivery network component.
+New design patterns and components can help fine-tune the system, which leads to a smoother user experience and saves money over time. For example, adding caching or bringing in a content delivery network can make a noticeable difference.
 
 *Contoso's challenge*
 
-- The team has used Azure Functions and trigger-based flows for several years and haven't dedicated time to evaluate alternatives to this approach.
+- The team has used Azure Functions and trigger-based flows for several years, and they haven't taken time to look into other options.
 
 *Applying the approach and outcomes*
 
-- The team looks into other ways to use Azure Functions, and finds that durable functions supports a fan-out model that can help them parallelize a particular payroll task.
-- The team incorporates this pattern into their design catalog for future design. It was also a good reminder to look at other ways of addressing performance inefficiencies than just code optimizations and data cleanup.
+- The team starts exploring other ways to use Azure Functions and finds that durable functions support a fan-out model, which can help them run a specific payroll task in parallel.
+
+- The team adds this pattern to their design catalog for future use. It's also a good reminder that improving performance isn't just about cleaning up code or data. Sometimes it's about rethinking the approach altogether.
 
 ## Analyze telemetry and trends
 
-**Use monitoring tools to analyze historical trends and to identify the flows and code implementation paths that would benefit the most from a performance optimization effort. We recommend application performance monitoring (APM) tools and profilers for this purpose. Additionally, identify operation hot paths and other potential bottlenecks in the system.**
+**Use monitoring tools to dig into historical trends and find which flows and code paths could really use a performance boost. Tools like application performance monitoring (APM) and profilers are great for this task. They help you find operation hot paths and other spots in the system that might be slowing things down.**
 
-When you identify the recurring problematic areas, the team can focus where gains are the highest.
+After you find the areas that keep causing trouble, the team can focus their energy where it'll make the biggest difference.
 
 *Contoso's challenge*
 
-- The team has instrumented all functions with Azure Application Insights.
-- They mostly use Application Insights for break-fix issues and for the logging sink.
-- Historically, their approach to targeting areas for improvements has been based on feedback coming from the senior leadership team.
+- The team has instrumented all functions with Application Insights.
+
+- They mostly use Application Insights for break-fix problems and for the logging sink.
+- Historically, they've relied on feedback from senior leadership to figure out where to focus improvement efforts.
 
 *Applying the approach and outcomes*
 
-- While the feedback is important, the team realizes that Application Insights does a fairly good job of detecting hotspots in the applications that it monitors.
-- The team begins taking advantage of this functionality and combined with knowing which flows are important, it’s turning into a valuable tool for the team’s 20% effort on technical improvements and efficiency.
-- Using Application Insights, the team is able to proactively identify a risky integration and handle it before a leadership team member experienced a problem.
+- While the feedback is important, the team notices that Application Insights actually does a pretty good job of finding hotspots in the apps that it watches.
+
+- The team starts making use of this feature, and since they already know which flows matter most, it's becoming a really useful part of their 20% time focused on technical improvements and efficiency.
+- Using Application Insights, the team was able to proactively identify a risky integration and handled it before a leadership team member ran into a problem.

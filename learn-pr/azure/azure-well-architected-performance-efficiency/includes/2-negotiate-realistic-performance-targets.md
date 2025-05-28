@@ -78,7 +78,7 @@ This kind of analysis helps you set a good performance baseline and gives you a 
 
 *Applying the approach and outcomes*
 
-- After going over the user flows with the business team, the architecture team now has clear, detailed targets written down for each one. They've broken the workload down in a way that reflects the full range of performance expectations for each flow, from an aspirational range to an unacceptable range.
+- After going over the user flows with the business team, the architecture team now has clear, detailed targets written down for each one. They've broken down the workload in a way that reflects the full range of performance expectations for each flow, from an aspirational range to an unacceptable range.
 
 - The architects are aiming for those aspirational targets in their design so the system has room to grow and support new features later on. At the same time, they're being mindful of cost and other nonfunctional requirements, so they're making some trade-offs where it makes sense.
 - With those targets locked in, the design is now complete. It's up to the implementation team to stick to those limits and speak up if they run into anything that makes the targets hard to reach with the current design.

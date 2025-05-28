@@ -3,7 +3,7 @@
 
 It's a good idea to stay ahead by keeping an eye on performance early. You should measure a baseline and have a rough idea of which parts of the system might cause trouble. You don't need to run a full performance test or dive into detailed optimization to do this. Just taking these early steps helps set you up for good performance management right from the start of the development lifecycle.
 
-Try to look at the system as a whole instead of focusing on individual parts. Now is not the time for fine-tuning. Getting too detailed with performance tweaks this early can lead to trade-offs in other areas. As you move further along, like when you begin user acceptance testing or get closer to production, you'll be able to identify which areas really need that extra optimization.
+Try to look at the system as a whole instead of focusing on individual parts. Now isn't the time for fine-tuning. Getting too detailed with performance tweaks this early can lead to trade-offs in other areas. As you move further along, like when you begin user acceptance testing or get closer to production, you'll be able to identify which areas really need that extra optimization.
 
 **Example scenario**
 
@@ -28,7 +28,7 @@ Rightsizing your resources means that you can handle changes in demand without o
 
 *Applying the approach and outcomes*
 
-- After comparing the different plans, the team opts for the Azure Spring Apps Standard plan, which provides a fully managed service for Spring Boot apps and is optimized for production traffic. With support for up to 500 instances per application, the Standard plan gives them plenty of compute capacity to cover their highest expected usage.
+- After the team compares the different plans, they opt for the Azure Spring Apps Standard plan, which provides a fully managed service for Spring Boot apps and is optimized for production traffic. With support for up to 500 instances per application, the Standard plan gives them plenty of compute capacity to cover their highest expected usage.
 
 - The service can be set up to scale out when demand goes up and scale back in when that extra compute capacity isn't needed.
 - The team looked at the Enterprise plan too, since it can scale up to 1,000 instances per application. But they decided that kind of capacity isn't necessary right now. They also feel confident that they don't need the level of support or the extra features that come with the Enterprise plan at this stage.

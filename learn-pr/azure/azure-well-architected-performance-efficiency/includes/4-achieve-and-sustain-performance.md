@@ -46,7 +46,7 @@ You want a clear view of how your system actually performs when it handles real-
 
 *Contoso's challenge*
 
-- During an event where they are using online ticket validation, the backend system is heavily used.
+- During an event where they're using online ticket validation, the back-end system is heavily used.
 
 - There's an application performance monitoring (APM) system in place, but it hasn't been used to monitor the health of production transactions.
 
