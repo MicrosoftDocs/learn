@@ -1,4 +1,4 @@
-In addition to writing test functions, Pytest allows you to use classes. As we already mentioned, there's no need for inheritance and the test classes follow a few simple rules. Using classes gives you more flexibility and reusability. As you see next, Pytest keeps out of the way and avoids forcing you to write tests in a certain way.
+In addition to writing test functions, Pytest allows you to use classes. As we already mentioned, there's no need for inheritance, and the test classes follow a few simple rules. Using classes gives you more flexibility and reusability. As you see next, Pytest keeps out of the way and avoids forcing you to write tests in a certain way.
 
 Just like functions, you can still write assertions using the `assert` statement.
 
@@ -39,7 +39,7 @@ class TestIsDone:
 ```
 
 > [!CAUTION]
-> The test methods are using the */tmp* path for a temporary test file because it's easier to use for the example. However, if you need to use temporary files, consider using a library like `tempfile` that can create (and remove) them safely for you. Not every system has a */tmp* directory and that location might not be temporary depending on the operating system.
+> The test methods use the */tmp* path for a temporary test file because it's easier to use for the example. However, if you need to use temporary files, consider using a library like `tempfile` that can create (and remove) them safely for you. Not every system has a */tmp* directory, and that location might not be temporary depending on the operating system.
 
 Running the tests with the `-v` flag to increase verbosity shows the tests passing:  
 
@@ -61,12 +61,12 @@ Although the tests are passing, they look repetitive and they're also leaving fi
 
 ## Helper methods
 
-In a test class, there are a few methods you can use to setup and teardown test execution. Pytest executes them automatically if they're defined. To use these methods, you should know that they have a specific order and behavior.
+In a test class, there are a few methods you can use to set up and tear down test execution. Pytest executes them automatically if they're defined. To use these methods, you should know that they have a specific order and behavior.
 
-- `setup`: Executes once before each test in a class
-- `teardown`: Executes once after each test in a class
-- `setup_class`: Executes once before all tests in a class
-- `teardown_class`: Executes once after all tests in a class
+- `setup`: Executes once before each test in a class.
+- `teardown`: Executes once after each test in a class.
+- `setup_class`: Executes once before all tests in a class.
+- `teardown_class`: Executes once after all tests in a class.
 
 When tests require similar (or identical) resources to work, it's useful to write setup methods. Ideally, a test shouldn't leave resources when it completes, so teardown methods can help in test cleanup in those situations.
 
@@ -122,7 +122,7 @@ class TestIsDone:
 
 ### Custom helper methods
 
-You can create custom helper methods in a class. These methods must not be prefixed with the name `test` and can't be named as the setup or cleanup methods. In the `TestIsDone` class, we could automate the creation of the temporary file in a custom helper. That custom helper method might look like this example:
+You can create custom helper methods in a class. These methods must not be prefixed with the name `test` and can't be named as the setup or cleanup methods. In the `TestIsDone` class, we could automate the creating the temporary file in a custom helper. That custom helper method might look like this example:
 
 ```python
     def write_tmp_file(self, content):
