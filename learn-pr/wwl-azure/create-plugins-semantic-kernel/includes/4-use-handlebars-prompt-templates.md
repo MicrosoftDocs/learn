@@ -85,8 +85,8 @@ handlebars_template = """
 
 In this example, there are two input objects:
 
-1. `request` - Contains the request the assistant should complete.
-1. `imageData` - Contains the base64 image data.
+- `request` - Contains the request the assistant should complete.
+- `imageData` - Contains the base64 image data.
 
 To use the prompt template, you need to create a `PromptTemplateConfig` object that contains the template and its format. Afterwards, you create a `KernelFunction` object from the template configuration and specify the Handlebars template factory. Here's an example:
 
