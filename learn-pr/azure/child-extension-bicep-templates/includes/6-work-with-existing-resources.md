@@ -10,7 +10,7 @@ Bicep provides the `existing` keyword for you to use in these situations.
 
 ## Refer to existing resources
 
-Within a Bicep file, you can define a resource that already exists. The declaration looks similar to a normal resource definition, but there are a few key differences. In the following example of an existing resource definition, the definition refers to a storage account named `toydesigndocs`. The storage account is in the same resource group that your Bicep template is deploying resources to.
+In a Bicep file, you can define a resource that already exists. The declaration looks similar to a normal resource definition, but there are a few key differences. In the following example of an existing resource definition, the definition refers to a storage account named `toydesigndocs`. The storage account is in the same resource group that your Bicep template is deploying resources to.
 
 ```bicep
 resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' existing = {
@@ -23,15 +23,15 @@ Let's look closely at what makes up this definition:
 - As you would with a normal resource, you include the `resource` keyword, a symbolic name, and the resource type and API version.
   
   > [!NOTE]
-  > Remember, the symbolic name is used only within this Bicep file. If you create this resource by using one Bicep file and refer to it by using the `existing` resource in a different Bicep file, the symbolic names don't have to match.
+  > Remember, the symbolic name is used only in the current Bicep file. If you create this resource by using one Bicep file and refer to it by using the `existing` resource in a different Bicep file, the symbolic names don't have to match.
 
-- The `existing` keyword indicates to Bicep that this resource definition is a reference to an already-created resource, and that Bicep shouldn't try to deploy it.
+- The `existing` keyword indicates to Bicep that the resource definition is a reference to a resource that's arleady created, and that Bicep shouldn't try to deploy it.
 - The `name` property is the Azure resource name of the storage account that was previously deployed.
-- You don't need to specify the `location`, `sku`, or `properties`, because the template doesn't deploy the resource. It merely references an existing resource. Think of it as a placeholder resource.
+- You don't need to specify the `location`, `sku`, or `properties` because the template doesn't deploy the resource. It just references an existing resource. Think of it as a placeholder resource.
 
 ### Refer to child resources
 
-You can refer to an existing child resource, too. Use the same kind of syntax that you used when you deployed a child resource. The following example shows how you can refer to an existing subnet, which is a child resource of a virtual network. The example uses a nested child resource, as shown here:
+You can also refer to an existing child resource. Use the same kind of syntax that you used when you deployed a child resource. The following example shows how you can refer to an existing subnet, which is a child resource of a virtual network. The example uses a nested child resource:
 
 :::code language="bicep" source="code/6-child-existing.bicep" highlight="4-6":::
 
@@ -45,17 +45,17 @@ output managementSubnetResourceId string = vnet::managementSubnet.id
 
 ### Refer to resources outside the resource group
 
-Often, you need to refer to resources in a different resource group. For example, if you have a virtual network in a centralized resource group, you might want to deploy a virtual machine into that virtual network in its own resource group. You can use the `scope` keyword to refer to existing resources in a different resource group. The following example shows how you could refer to a virtual network named `toy-design-vnet` within the `networking-rg` resource group:
+You often need to refer to resources in a different resource group. For example, if you have a virtual network in a centralized resource group, you might want to deploy a virtual machine into that virtual network in its own resource group. You can use the `scope` keyword to refer to existing resources in a different resource group. The following example shows how you can refer to a virtual network named `toy-design-vnet` in the `networking-rg` resource group:
 
 :::code language="bicep" source="code/6-resource-group-scope.bicep" highlight="2":::
 
 Notice that the `scope` uses the `resourceGroup()` keyword to refer to the resource group that contains the virtual network.
 
-You can even refer to resources within a different Azure subscription, as long as the subscription is within your Microsoft Entra tenant. If your networking team provisions the virtual network in a different subscription, the template could refer to it, as in this example:
+You can even refer to resources within a different Azure subscription, as long as the subscription is within your Microsoft Entra tenant. If your networking team provisions the virtual network in a different subscription, the template can refer to it as shown in this example:
 
 :::code language="bicep" source="code/6-subscription-scope.bicep" highlight="2":::
 
-Notice that the `scope` uses the `resourceGroup()` keyword to refer to the Azure subscription ID (`A123b4567c-1234-1a2b-2b1a-1234abc12345`) and resource group name that contains the virtual network.
+Notice that the `scope` uses the `resourceGroup()` keyword to refer to the Azure subscription ID (`aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e`) and resource group name that contains the virtual network.
 
 Now that you understand how to refer to existing resources, let's look at how you can use this capability in your templates.
 

@@ -21,7 +21,7 @@ First, you create a new Bicep template that contains an Azure Cosmos DB account.
 
 1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
 
-   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you saved the file. For example, you might want to create a *scripts* folder to save it in.
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you saved the file. For example, you might want to create a *templates* folder to save it in.
 
 1. Add the following content to the file. It's a good idea to enter it manually rather than copy and paste it. That way, you can see how the tooling helps you write your Bicep files.
 
@@ -79,7 +79,7 @@ Now you add another child resource. This time, you add it as a nested resource i
 
 ## Verify your Bicep file
 
-After you've completed all of the preceding changes, your _main.bicep_ file should look like this example:
+After you complete the preceding steps, your _main.bicep_ file should look like this example:
 
 :::code language="bicep" source="code/4-complete.bicep" :::
 
@@ -127,7 +127,7 @@ New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. In **Overview**, you can see that one deployment succeeded.
+1. In the **Overview** pane, you can see that one deployment succeeded.
 
     :::image type="content" source="../media/4-deployment-succeeded.png" alt-text="Screenshot of the Azure portal interface for the resource group overview, with the deployments section showing that one succeeded." border="true":::
 
