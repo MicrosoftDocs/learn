@@ -3,7 +3,7 @@ uid: learn.github.create-custom-github-actions.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Check what you've learned.
+  description: Check what you learned.
   ms.date: 01/30/2025
   author: a-a-ron
   ms.author: aastewar
@@ -28,31 +28,48 @@ quiz:
     - content: "Bash script"
       isCorrect: false
       explanation: "Bash scripts would either need to be run in Docker or as a parameter to a Run step."
+
   - content: "Which keywords are required for a valid `action.yml` file?"
     choices:
-    - content: "name, runs, composite"
+    - content: "`name`, `runs`, `composite`"
       isCorrect: false
       explanation: "Composite isn't a required keyword for a valid `action.yml` file."
-    - content: "name, runs, description"
+    - content: "`name`, `runs`, `description`"
       isCorrect: true
       explanation: "These are the three required keywords for a valid `action.yml` file."
-    - content: "name, description, branding"
+    - content: "`name`, `description`, `branding`"
       isCorrect: false
       explanation: "Branding isn't a required keyword for a valid `action.yml` file."
-    - content: "name, description, composite"
+    - content: "`name`, `description`, `composite`"
       isCorrect: false
       explanation: "Composite isn't a required keyword for a valid `action.yml` file."
+
   - content: "Which workflow command would set the debug message to **This is an error message**?"
     choices:
-    - content: echo "::error::This is an error message"
+    - content: "echo::error::This is an error message"
       isCorrect: true
       explanation: "This syntax is correct for this workflow command."
-    - content: echo "error=This is an error message"
+    - content: "echo error=This is an error message"
       isCorrect: false
-      explanation: "This syntax is improper for a workflow command."
-    - content: echo "::error::message=This is an error message"
+      explanation: "This syntax is incorrect for a workflow command."
+    - content: "echo::error::message=This is an error message"
       isCorrect: false
-      explanation: "This syntax is improper for a workflow command."
-    - content: echo "::error::This is an error message::"
+      explanation: "This syntax is incorrect for a workflow command."
+    - content: "echo::error::This is an error message::"
       isCorrect: false
-      explanation: "This syntax is improper for a workflow command."
+      explanation: "This syntax is incorrect for a workflow command."
+
+  - content: "Which file is used to define a composite action?"
+    choices:
+    - content: "Dockerfile"
+      isCorrect: false
+      explanation: "Dockerfiles are used for Docker container actions, not composite actions."
+    - content: "action.yml"
+      isCorrect: true
+      explanation: "Composite actions are defined in an action.yml file, which specifies the inputs, outputs, and steps of the action."
+    - content: "workflow.yml"
+      isCorrect: false
+      explanation: "workflow.yml files define workflows, not actions."
+    - content: "package.json"
+      isCorrect: false
+      explanation: "package.json is used for JavaScript actions, not composite actions."

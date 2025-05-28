@@ -68,7 +68,7 @@ In this task, you deploy a Microsoft Sentinel Data connector to detect Azure Act
 
 1. In the *Search* box, search for and select the **Azure Activity** Solution. On the **Azure Activity** details pane, select **Install**.
 
-1. Wait for the install to complete and them select **Manage**.
+1. Wait for the install to complete and then select **Manage**.
 
 1. In the *Search* box, search for and select the **Azure Activity** Data connector. 
 
@@ -89,7 +89,7 @@ In this task, you deploy a Microsoft Sentinel Data connector to detect Azure Act
 
 1. Select **Create** to finish.
 
-1. Once the deployment is complete, you'll see the **Connected** status (green bar) for the Azure Activity connector in the *Configuration/Data connectors* pane.
+1. Once the deployment is complete, you see the **Connected** status (green bar) for the Azure Activity connector in the *Configuration/Data connectors* pane.
 
 :::image type="content" source="../media/07-azure-sentinel-connector.png" alt-text="Screenshot of the Microsoft Sentinel connector" border="true" lightbox="../media/07-azure-sentinel-connector.png":::
 

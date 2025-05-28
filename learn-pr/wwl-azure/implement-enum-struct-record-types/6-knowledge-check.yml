@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Check what you've learned in this module."
-  ms.date: 04/01/2025
+  ms.date: 05/28/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -29,13 +29,13 @@ quiz:
       explanation: "Incorrect. Enums aren't designed for mathematical operations but for representing fixed sets of values."
   - content: "What keyword is used to define a struct in C#?"
     choices:
-    - content: "Struct"
+    - content: "struct"
       isCorrect: true
       explanation: "Correct. The 'struct' keyword is used to define a struct in C#. It allows creating a value type that encapsulates related data."
-    - content: "Class"
+    - content: "class"
       isCorrect: false
       explanation: "Incorrect. The 'class' keyword is used to define reference types, not value types like structs."
-    - content: "Interface"
+    - content: "interface"
       isCorrect: false
       explanation: "Incorrect. The 'interface' keyword is used to define contracts for classes or structs, not the struct itself."
   - content: "What is the primary advantage of using records in C# for data modeling?"

@@ -1,6 +1,6 @@
-A single function in Azure Functions doesn't do work until something tells it to execute. For example, we could create a function to send out a reminder text message to our customers before an appointment. If we don't tell the function when it should run, our customers will never receive a message.
+A single function in Azure Functions doesn't do work until something tells it to execute. For example, we could create a function to send out a reminder text message to our customers before an appointment. If we don't tell the function when it should run, our customers never receive a message.
 
-This unit describes triggers at a high level, explores the most common types of triggers, and uses bindings to connect a trigger to a function.
+This unit describes triggers at a high level, explores the most common types of triggers, and discusses using bindings to connect a trigger to a function.
 
 ## What is a trigger?
 
@@ -33,6 +33,6 @@ Unlike a trigger, a function can have multiple input bindings and output binding
 
 ## What is a function app?
 
-Azure Functions lets you group one or more functions into a single function app. All functions in a function app share the same resources, app settings, and deployments.  
+Azure Functions lets you group one or more functions into a single function app. All of the functions in a function app, share the same resources, app settings, and deployments.  
 
-In the next exercise, we'll run a function on a schedule using a Timer trigger.
+In the next exercise, we'll run a function on a schedule using a timer trigger.
