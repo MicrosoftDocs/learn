@@ -3,18 +3,14 @@ uid: learn.wwl.design-machine-learning-model-training-solution.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/28/2025
   author: wwlpublish
-  ms.author: madiepev
-  ms.date: 01/20/2025
+  ms.author: sheryang
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
-content: |
-  [!include[](includes/6-knowledge-check.md)]
+  ms.custom:
+  - N/A
+durationInMinutes: 1
 quiz:
   questions:
   - content: "What does automated machine learning in Azure Machine Learning enable you to do?"
