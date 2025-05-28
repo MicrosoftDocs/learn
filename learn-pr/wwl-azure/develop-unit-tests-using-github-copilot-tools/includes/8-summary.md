@@ -6,5 +6,7 @@ Additional Reading:
 
 1. [GitHub Copilot documentation](https://docs.github.com/copilot)
 1. [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview)
-1. [GitHub Copilot: Your AI pair programmer](https://copilot.github.com/)
+1. [GitHub Copilot in Visual Studio Code - FAQ](https://code.visualstudio.com/docs/copilot/faq)
+1. [GitHub Copilot in Visual Studio Code - Cheat Sheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
+1. [GitHub Copilot in Visual Studio Code - Workspace Context](https://code.visualstudio.com/docs/copilot/reference/workspace-context)
 1. [Testing with the C# Dev Kit](https://code.visualstudio.com/docs/csharp/testing)
