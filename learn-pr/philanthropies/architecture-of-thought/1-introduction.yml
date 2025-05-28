@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.architecture-of-thought.introduction
+title: Introduction
+metadata:
+  title: introduction
+  description: "In this unit, learners will explore the foundational concepts of AI-powered dialogue systems. They will learn how Azure OpenAI Studio supports the creation of chatbots and virtual assistants, focusing on dialogue architecture, conversational flows, and real-world applications. Keywords: Azure OpenAI Studio, dialogue systems, conversational AI, chatbot development, AI-powered assistants."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+ 
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

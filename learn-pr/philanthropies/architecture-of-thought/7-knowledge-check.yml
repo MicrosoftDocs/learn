@@ -1,0 +1,109 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.architecture-of-thought.knowledge-check
+
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check for the module."
+  ms.date: 3/20/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
+### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
+###
+### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
+###
+### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
+### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
+### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
+
+durationInMinutes: 1
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+### Question content requirements:
+###  - Write 5 questions
+###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
+###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
+###      Example: "What differentiates an action from a control action in a Logic App?"
+###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
+###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
+###      Example: "A financial company is building a system to let brokers trade financial instruments. The system must monitor market conditions, detect changes, and execute trades. It will need to handle a large volume of transactions quickly. The faster it completes trades, the more of an advantage the company will have over its competitors. Which requirement of this system would be difficult for Azure Logic Apps to satisfy?"
+###
+###########################################################################
+
+content: |
+quiz:
+    questions:
+    - content: "What is the primary purpose of using DALL·E in interactive storytelling?"
+      choices:
+      - content: "To generate character portraits based on descriptive text prompts"
+        isCorrect: true
+        explanation: "DALL·E transforms written character descriptions into visual portraits, helping storytellers visualize and develop their cast."
+      - content: "To create branching dialogue trees for NPCs"
+        isCorrect: false
+        explanation: "DALL·E is used for image generation—dialogue trees are created using language models like GPT."
+      - content: "To code decision logic in interactive games"
+        isCorrect: false
+        explanation: "Coding logic is not part of DALL·E's functionality—it is focused on visual generation."
+
+    - content: "How does Azure OpenAI assist with dialogue generation in storytelling?"
+      choices:
+      - content: "By using AI models to generate responsive, branching dialogue based on character traits and narrative context"
+        isCorrect: true
+        explanation: "Azure OpenAI's language models generate text-based dialogue that can vary based on character personalities and story flow."
+      - content: "By animating character portraits with real-time voice syncing"
+        isCorrect: false
+        explanation: "Azure OpenAI focuses on language, not animation or voice syncing."
+      - content: "By importing stock dialogue clips from a Microsoft media library"
+        isCorrect: false
+        explanation: "Azure OpenAI generates new, custom text—it doesn't use a stock media library."
+
+    - content: "What is a key benefit of using AI to generate dialogue trees?"
+      choices:
+      - content: "It enables faster creation of varied, character-driven conversations"
+        isCorrect: true
+        explanation: "AI speeds up the creation of multi-branch dialogues, while allowing characters to reflect distinct personalities and tones."
+      - content: "It eliminates the need for story structure or player choice"
+        isCorrect: false
+        explanation: "AI supports but does not replace narrative planning or interactivity design."
+      - content: "It automatically records and voices over all NPC dialogue"
+        isCorrect: false
+        explanation: "Voiceover is not handled by Azure OpenAI—it provides text, not audio."
+
+    - content: "Why is human oversight important when using AI-generated dialogue?"
+      choices:
+      - content: "To ensure tone, style, and narrative consistency align with the writer's vision"
+        isCorrect: true
+        explanation: "Human review helps shape AI output to match the world, emotion, and tone of the overall story."
+      - content: "Because AI tools require manual drawing input for each character"
+        isCorrect: false
+        explanation: "AI does not require manual drawing—DALL·E generates images from text."
+      - content: "To translate dialogue into different programming languages"
+        isCorrect: false
+        explanation: "Oversight is for narrative alignment, not code translation."
+
+    - content: "How can AI-generated dialogue improve player immersion?"
+      choices:
+      - content: "By enabling responsive conversations that reflect player decisions and character traits"
+        isCorrect: true
+        explanation: "AI can create dialogue paths that adjust to player behavior, increasing emotional depth and engagement."
+      - content: "By creating automated background music based on mood"
+        isCorrect: false
+        explanation: "AI-generated dialogue is focused on language, not audio scoring."
+      - content: "By writing entire game scripts with no user input"
+        isCorrect: false
+        explanation: "While AI can support scripting, storytelling requires ongoing human input and creativity."
