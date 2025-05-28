@@ -17,25 +17,14 @@ content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
-  - content: "Which compute would you recommend to train the model?"
+  - content: "What does automated machine learning in Azure Machine Learning enable you to do?"
     choices:
-    - content: "Spark cluster"
+    - content: "Automatically deploy new versions of a model as they're trained"
       isCorrect: false
-      explanation: "Incorrect. Since the data scientists aren't familiar with Spark, it's not the preferred solution right now."
-    - content: "CPU"
+      explanation: "Incorrect. Automated machine learning does not automatically deploy models."
+    - content: "Automatically provision Azure Machine Learning workspaces for new data scientists in an organization"
+      isCorrect: false
+      explanation: "Incorrect. Automated machine learning does not automate workspace provisioning."
+    - content: "Automatically run multiple training jobs using different algorithms and parameters to find the best model"
       isCorrect: true
-      explanation: "Correct. CPU compute is the best option for training the model. There can be a need for GPU or Spark when model training takes too long, but for now it's best to start with CPUs."
-    - content: "GPU"
-      isCorrect: false
-      explanation: "Incorrect. There's no indication yet that GPUs are needed to train the model, and using GPUs over CPUs now, only incurs unnecessary extra costs."
-  - content: "What type of predictions does the mobile application need to generate?"
-    choices:
-    - content: "Real-time predictions"
-      isCorrect: true
-      explanation: "Correct. There's a need for immediate predictions for individual patients."
-    - content: "Batch predictions"
-      isCorrect: false
-      explanation: "Incorrect. Batch predictions would take too long. We need immediate predictions."
-    - content: "Local predictions"
-      isCorrect: false
-      explanation: "Incorrect. There's a need for immediate predictions for individual patients so we need real-time predictions."
+      explanation: "Correct. Automated machine learning runs multiple training jobs, varying algorithms and parameters, to find the best model for your data."
