@@ -1,4 +1,4 @@
-To ensure preparedness and minimize the impact of incidents, it's essential to follow the proactive recommendations outlined in this unit. These actions help you understand our incident communication process, locate pertinent information, and configure notifications to receive timely updates. Evaluating the resilience of your applications and implementing recommended measures create more reliable workloads, which reduces the potential impact of an incident. Reviewing and implementing security best practices fortify your environment and mitigate risks.
+To ensure preparedness and minimize the impact of incidents, it's essential to follow the proactive recommendations outlined in this unit. These actions help you understand our incident communication process, locate pertinent information, and configure notifications to receive timely updates. Evaluating the resilience of your applications and implementing recommended measures create more reliable workloads, which reduce the potential impact of an incident. Reviewing and implementing security best practices fortify your environment and mitigate risks.
 
 ## To stay informed, mitigate impact, and protect your investment, we recommend the following five actions:
 
@@ -28,13 +28,13 @@ Key Features of the Services Issues pane:
 
 - **Links and Downloadable Explanations**: Generate a link for the issue to use in your problem management system. Download PDF or CSV files to share comprehensive explanations with stakeholders who don't have access to the Azure portal. You can request a Post Incident Review (PIR) for any issues that affected your resources, previously known as Root Cause Analyses (RCAs).
 
-#### Security Advisories pane
+#### Security advisories pane
 
 The Security advisories pane focuses on urgent security-related information affecting the health of your subscriptions and tenants. It provides insights into platform vulnerabilities, security incidents, and privacy breaches.
 
 :::image type="content" source="../media/azure-service-health-security-advisories.png" alt-text="Screenshot of Azure Service Health security advisories.":::
 
-Key Features of the Security Advisories Pane:
+Key Features of the Security advisories pane:
 
 - **Real-Time Security Insights**: Gain immediate visibility into Azure security incidents relevant to your subscriptions and tenants.
 
@@ -111,7 +111,7 @@ By configuring Service Health alerts and action groups effectively, you can ensu
 
 > [!NOTE]
 >
-> Looking for assistance in what to monitor and which alerts you should configure for what? Look no further than the [Azure Monitor Baseline Alerts](https://aka.ms/alz/monitor/repo) solution. It provides comprehensive guidance and code for implementing a baseline of platform alerts and service health alert by using policies and initiatives in Azure environments. It offers options for automated or manual deployment.
+> Looking for assistance in what to monitor and which alerts you should configure for what? Look no further than the [Azure Monitor Baseline Alerts](https://aka.ms/alz/monitor/repo) solution. It provides comprehensive guidance and code for implementing a baseline of platform alerts and service health alerts by using policies and initiatives in Azure environments. It offers options for automated or manual deployment.
 >
 > The solution includes predefined policies to automatically create alerts for all service health event types (service issue, planned maintenance, health advisories, & security advisories), action groups, and alert processing rules for various Azure resource types. While the focus is on monitoring Azure Landing Zones (ALZ) architected environments, it also offers guidance for brownfield customers who aren't currently aligned to the ALZ architecture brownfield.
 
@@ -129,7 +129,7 @@ You can also create [resource health alerts programmatically](/azure/service-hea
 
 #### Scheduled events for virtual machines, avoiding impact
 
-[Scheduled events](/azure/virtual-machines/linux/scheduled-events) is another great tool. Both alerts types decribed previously notify people or systems, but scheduled events notify the resources themselves. This approach can give your application time to prepare for virtual machine maintenance or one of our automated service healing events. It provides a signal about an imminent maintenance event, for example, an upcoming reboot, so that your application can know that and then act to limit disruption. Your application might drop itself out of the pool or otherwise degrade gracefully. Scheduled events are available for all Azure Virtual Machine types including PaaS and IaaS on both Windows and Linux.
+[Scheduled events](/azure/virtual-machines/linux/scheduled-events) is another great tool. Both alerts types described previously notify people or systems, but scheduled events notify the resources themselves. This approach can give your application time to prepare for virtual machine maintenance or one of our automated service healing events. It provides a signal about an imminent maintenance event, for example, an upcoming reboot, so that your application can know that and then act to limit disruption. Your application might drop itself out of the pool or otherwise degrade gracefully. Scheduled events are available for all Azure Virtual Machine types including PaaS and IaaS on both Windows and Linux.
 
 > [!NOTE]
 >
@@ -161,19 +161,19 @@ To complement your work with the WAF, consider implementing the following top re
 
 - Use the integrated [Reliability workbook](https://ms.portal.azure.com/#view/Microsoft_Azure_Expert/AdvisorMenuBlade/%7E/workbooks) in the Azure portal under the Azure Advisor page to assess the reliability posture of your applications, identify potential risks, and plan and implement improvements.
 
-- Enhance business continuity and disaster recovery (BCDR) by deploying your workloads and resources across multiple regions. Ror optimal cross-region deployment options, see the comprehensive list of [Azure region pairs](/azure/reliability/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies).
+- Enhance business continuity and disaster recovery (BCDR) by deploying your workloads and resources across multiple regions. For optimal cross-region deployment options, see the comprehensive list of [Azure region pairs](/azure/reliability/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies).
 
 - Maximize availability within a region by distributing workload/resource deployments across [Availability Zones](/azure/reliability/availability-zones-overview).
 
 - Consider using isolated virtual machine sizes in Azure for your business-critical workloads that require a high level of isolation. These sizes guarantee that your virtual machine is dedicated to a specific hardware type and operates independently. For more information, see [Virtual machine isolation in Azure](/azure/virtual-machines/isolation).
 
-- Consider using [Maintenance Configurations](/azure/virtual-machines/maintenance-configurations#scopes) to have better control and management over updates for your Azure virtual machines. This feature allows you to schedule and manage updates, which ensures minimal disruption to sensitive workloads that can't tolerate downtime during maintenance activities.
+- Consider using [Maintenance Configurations](/azure/virtual-machines/maintenance-configurations#scopes) to have better control and management over updates for your Azure virtual machines. This feature allows you to schedule and manage updates, which ensure minimal disruption to sensitive workloads that can't tolerate downtime during maintenance activities.
 
 - Enhance redundancy by implementing inter or intra-region redundancy. For guidance, see the example of a [Highly available zone-redundant web application](/azure/architecture/reference-architectures/app-service-web-app/zone-redundant).
 
 - Enhance the resilience of your applications by using [Azure Chaos Studio](https://azure.microsoft.com/products/chaos-studio/). With this tool, you can deliberately introduce controlled faults to your Azure applications. This tool allows you to assess their resilience and observe how they respond to various disruptions such as network latency, storage outages, expiring secrets, and datacenter failures.
 
-- Use the [Service Retirement workbook](/azure/advisor/advisor-how-to-plan-migration-workloads-service-retirement) available in the Azure portal under the Azure Advisor page. This integrated tool helps you stay informed about any service retirements that might affect your critical workloads, which enables you to effectively plan and execute necessary migrations.
+- Use the [Service Retirement workbook](/azure/advisor/advisor-how-to-plan-migration-workloads-service-retirement) available in the Azure portal under the Azure Advisor page. This integrated tool helps you stay informed about any service retirements that might affect your critical workloads, which enable you to effectively plan and execute necessary migrations.
 
 > [!NOTE]
 > Customers who have a Premier/Unified Support agreement can use the Customer Success team to strategize and implement a Well-Architected Framework assessment (WAF).
