@@ -47945,13 +47945,33 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-plan/index.md",
+      "redirect_url": "/training/paths/cloud-adoption-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-plan/1-introduction.md",
+      "redirect_url": "/training/paths/cloud-adoption-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-plan/2-customer-narrative.md",
+      "redirect_url": "/training/paths/cloud-adoption-framework/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/cloud-adoption-framework-plan/3-exercise-cloud-adoption-plan.md",
-      "redirect_url": "/training/modules/cloud-adoption-framework-plan/",
+      "redirect_url": "/training/paths/cloud-adoption-framework/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/cloud-adoption-framework-plan/5-exercise-integrate-assessment-data.md",
-      "redirect_url": "/training/modules/cloud-adoption-framework-plan/",
+      "redirect_url": "/training/paths/cloud-adoption-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-plan/6-summary.md",
+      "redirect_url": "/training/paths/cloud-adoption-framework/",
       "redirect_document_id": false
     }
   ]
