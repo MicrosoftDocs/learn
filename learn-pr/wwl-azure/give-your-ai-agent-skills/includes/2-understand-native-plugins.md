@@ -185,9 +185,9 @@ print("Assistant:", result)
 
 The output of this code would be similar to:
 
-    ```console
-    Assistant: The only critical task is "Fix login bug". The task is currently in the "To Do" status and its description is "Resolve the issue with login sessions timing out".
-    ```
+```console
+Assistant: The only critical task is "Fix login bug". The task is currently in the "To Do" status and its description is "Resolve the issue with login sessions timing out".
+```
 
 Notice that the results of the function are passed to the LLM and a generated response is returned. Automatic function invocation makes your application smarter and more user-friendly.
 
