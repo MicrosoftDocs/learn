@@ -25,7 +25,7 @@ Let's look closely at what makes up this definition:
   > [!NOTE]
   > Remember, the symbolic name is used only in the current Bicep file. If you create this resource by using one Bicep file and refer to it by using the `existing` resource in a different Bicep file, the symbolic names don't have to match.
 
-- The `existing` keyword indicates to Bicep that the resource definition is a reference to a resource that's arleady created, and that Bicep shouldn't try to deploy it.
+- The `existing` keyword indicates to Bicep that the resource definition is a reference to a resource that's already created, and that Bicep shouldn't try to deploy it.
 - The `name` property is the Azure resource name of the storage account that was previously deployed.
 - You don't need to specify the `location`, `sku`, or `properties` because the template doesn't deploy the resource. It just references an existing resource. Think of it as a placeholder resource.
 
@@ -61,7 +61,7 @@ Now that you understand how to refer to existing resources, let's look at how yo
 
 ## Add child and extension resources to an existing resource
 
-You can add a child resource to an already-created parent resource by using a combination of the `existing` keyword and the `parent` keyword. The following example template creates an Azure SQL database within a server that already exists:
+You can add a child resource to an existing parent resource by using a combination of the `existing` keyword and the `parent` keyword. The following example template creates an Azure SQL database in a server that already exists:
 
 :::code language="bicep" source="code/6-child-existing-deploy.bicep" highlight="1-3,6":::
 
@@ -71,12 +71,12 @@ If you need to deploy an extension resource to an existing resource, you can use
 
 ## Refer to an existing resource's properties
 
-Resources often need to refer to the properties of other resources. For example, if you deploy an application, it might need to know the keys or connection information for another resource. By using the `existing` keyword, you get access to the properties of the resource that you're referring to.
+Resources often need to refer to the properties of other resources. For example, if you deploy an application, it might need to know the keys or connection information for another resource. You can use the `existing` keyword to get access to the properties of the resource that you're referring to.
 
 > [!TIP]
-> It's a best practice to look up keys from other resources in this way instead of passing them around through outputs. You'll always get the most up-to-date data. Also, importantly, outputs are not designed to handle secure data such as keys.
+> It's a best practice to look up keys from other resources in this way instead of passing them around through outputs. You'll always get the most up-to-date data. Also, it's important to note that outputs aren't designed to handle secure data like keys.
 
-The way that you access the information about a resource depends on the type of information you're getting. If it's a property that isn't secure, you ordinarily use only the `properties` of the resource. The following example template deploys an Azure Functions application, and uses the access details (*instrumentation key*) for an Application Insights instance that was already created:
+The way that you access the information about a resource depends on the type of information you're getting. If it's a property that isn't secure, you ordinarily use only the `properties` of the resource. The following example template deploys an Azure Functions application and uses the access details (*instrumentation key*) for an existing Application Insights instance:
 
 :::code language="bicep" source="code/6-existing-properties.bicep" highlight="1-3,15":::
 
@@ -84,13 +84,13 @@ In this example, because the instrumentation key isn't considered sensitive data
 
 :::code language="bicep" source="code/6-existing-listkeys.bicep" highlight="1-3,15":::
 
-Notice that the `listKeys` function returns a `keys` array. The Bicep code retrieves the `value` property from the first item in the `keys` array. Each resource type has different information available from the `listKeys()` function. The Bicep extension for Visual Studio Code gives you hints to help you to understand the data that each resource's `listKeys()` function returns. The following screenshot shows the `listKeys()` function's output for a storage account:
+Notice that the `listKeys` function returns a `keys` array. The Bicep code retrieves the `value` property from the first item in the `keys` array. For each resource type, different information is available from the `listKeys()` function. The Bicep extension for Visual Studio Code gives you hints to help you to understand the data that each resource's `listKeys()` function returns. The following screenshot shows the `listKeys()` function's output for a storage account:
 
-:::image type="content" source="../media/6-code-hint-listkeys-storage.png" alt-text="Screenshot of the Bicep extension for Visual Studio Code. IntelliSense displays several the information returned by the listKeys function for a storage account." border="true":::
+:::image type="content" source="../media/6-code-hint-listkeys-storage.png" alt-text="Screenshot of the Bicep extension for Visual Studio Code. IntelliSense displays the information returned by the listKeys function for a storage account." border="true" lightbox="../media/6-code-hint-listkeys-storage.png":::
 
-Some resources support other functions, too. Visual Studio Code's IntelliSense lists the functions available for each resource. In the following screenshot, you can see that storage accounts provide functions named `listAccountSas()` and `listServiceSas()` in addition to `listKeys()`:
+Some resources also support other functions. Visual Studio Code IntelliSense lists the functions available for each resource. In the following screenshot, you can see that storage accounts provide functions named `listAccountSas()` and `listServiceSas()` in addition to `listKeys()`:
 
-:::image type="content" source="../media/6-code-hint-functions.png" alt-text="Screenshot of the Bicep extension for Visual Studio Code. IntelliSense displays several functions available for the storage account." border="true":::
+:::image type="content" source="../media/6-code-hint-functions.png" alt-text="Screenshot of the Bicep extension for Visual Studio Code. IntelliSense displays several functions available for a storage account." border="true" lightbox="../media/6-code-hint-functions.png":::
 
 > [!IMPORTANT]
 > The `listKeys()` function provides access to sensitive data about the resource. This means that the user or service principal that runs the deployment needs to have the appropriate level of permission on the resource. This is usually the *Contributor* built-in role, or a custom role that assigns the appropriate permission.
