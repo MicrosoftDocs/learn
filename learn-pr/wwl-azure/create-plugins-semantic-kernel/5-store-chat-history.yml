@@ -8,9 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
   ms.custom:
   - N/A
-  zone_pivot_groups: dev-lang-csharp-python
 durationInMinutes: 8
 content: |
   [!include[](includes/5-store-chat-history.md)]
