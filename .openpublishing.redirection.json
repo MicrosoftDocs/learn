@@ -47878,6 +47878,26 @@
       "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/7-summary.yml",
       "redirect_url": "/training/modules/give-your-ai-agent-skills/6-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-unit-tests-using-github-copilot-tools/3-exercise-create-method-unit-tests-github-copilot-inline-chat.md",
+      "redirect_url": "/training/modules/develop-unit-tests-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-unit-tests-using-github-copilot-tools/4-exercise-create-specific-unit-test-github-copilot-inline-chat.md",
+      "redirect_url": "/training/modules/develop-unit-tests-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/develop-unit-tests-using-github-copilot-tools/5-exercise-complete-create-unit-tests-challenge.md",
+      "redirect_url": "/training/modules/develop-unit-tests-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-unit-tests-using-github-copilot-tools/6-review-create-unit-tests-solution.md",
+      "redirect_url": "/training/modules/develop-unit-tests-using-github-copilot-tools/",
+      "redirect_document_id": false
     }
   ]
 }
