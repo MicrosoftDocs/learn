@@ -9,5 +9,4 @@ Additional Reading:
 1. [GitHub Copilot in Visual Studio Code - FAQ](https://code.visualstudio.com/docs/copilot/faq)
 1. [GitHub Copilot in Visual Studio Code - Cheat Sheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
 1. [GitHub Copilot in Visual Studio Code - Workspace Context](https://code.visualstudio.com/docs/copilot/reference/workspace-context)
-1. [C# Dev Kit documentation](https://code.visualstudio.com/docs/csharp/csharp-dev-kit)
 1. [Testing with the C# Dev Kit](https://code.visualstudio.com/docs/csharp/testing)

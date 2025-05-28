@@ -114,7 +114,7 @@ Open the Command Palette and select **.NET:New Project...** then select **xUnit 
 
 From the Terminal, you can run the following command:
 
-    ```plaintext
+    ```dotnetcli
     dotnet add [location of your test csproj file] reference [location of the csproj file for project to be tested]
     ```
 
@@ -128,7 +128,7 @@ Open the Command Palette and select **.NET:New Project...** then select **NUnit3
 
 From the Terminal, run the following command:
 
-    ```plaintext
+    ```dotnetcli
     dotnet add [location of your test csproj file] reference [location of the csproj file for project to be tested]
     ```
 
@@ -143,7 +143,7 @@ Open the Command Palette and select **.NET:New Project...** then select **MSTest
 
 From the Terminal, run the following command:
 
-    ```plaintext
+    ```dotnetcli
     dotnet add [location of your test csproj file] reference [location of the csproj file for project to be tested]
     ```
 
