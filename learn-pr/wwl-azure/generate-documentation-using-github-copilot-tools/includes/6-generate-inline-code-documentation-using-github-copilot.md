@@ -40,7 +40,7 @@ The Ask mode can be used to evaluate your code and suggest inline code documenta
 
 1. After you apply the suggested documentation to your code file, you can navigate through the updates to accept, reject, or modify individual suggestions.
 
-    ![Screenshot showing the Chat view in Ask mode suggesting inline documentation.](../media/chat-view-ask-mode-inline-docs-may-2025-editor-keep.png)
+    ![Screenshot showing inline documentation applied to the editor using the Ask mode.](../media/chat-view-ask-mode-inline-docs-may-2025-editor-keep.png)
 
     Use the up and down arrows on the bottom menu bar to navigate through the suggested updates.
 
@@ -132,7 +132,7 @@ The **Generate Docs** smart action suggests inline code documentation directly i
 
 1. Review the suggested inline code documentation in the editor.
 
-    ![Screenshot showing an inline chat session suggesting documentation.](../media/smart-action-generate-docs-may-2025-accept-updates.png)
+    ![Screenshot showing the code documentation suggested by the Generate Docs smart action.](../media/smart-action-generate-docs-may-2025-accept-updates.png)
 
 1. Use the **Accept** button accept the suggested update or **Close** to reject the update.
 
