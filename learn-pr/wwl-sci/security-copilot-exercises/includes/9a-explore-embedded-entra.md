@@ -73,7 +73,7 @@ You're an identity admin with Woodgrove. You believe there are some users at the
 
 #### Task: Using Security Copilot in Microsoft Entra to troubleshoot access
 
-You're an identity admin with Woodgrove. You're a member of the helpdesk, and just got a request to help a user with a sign in challenge. You have a user that is required to use phone-based MFA to access the site. However, they're working from a location that doesn't allow phones. You can use copilot to help investigate the user sign in attempt, and see if other worrisome attempts have happened recently. Then research how to quickly resolve the user sign in challenge. The user is Khamala Ervello.
+You're an identity admin with Woodgrove. You're a member of the helpdesk and have been asked to look into a trouble ticket that was submitted by a remote employee who often works at secure customer locations. The employee reports that they are unable to authenticate when working from a customer’s secure location that that doesn’t allow users to bring any external devices including mobile devices and laptops. As an identity admin, you know that the authentication process is set up to always use phone-based MFA, but you want to investigate the user's sign in attempts. Copilot can help investigate and research how to quickly resolve the user sign in challenge. The user is Khamala Ervello..
 
 1. Open the simulated environment by selecting this link: **[Microsoft Entra admin center](https://app.highlights.guide/start/c07ee752-8668-4ff3-a53f-202ff9a945ef?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 1. Select the **Security Copilot** button in the upper right of the screen.
@@ -153,7 +153,7 @@ You're an identity admin with Woodgrove. Your company has used many enterprise a
 1. Review the suggestions on how to mitigate any risks posed by the user.
 1. Close the **simulated environment** by exiting the browser.
 
-**Review**: In this simulation, you used Security Copilot to help you quickly identify unused applications and their owners. You were able to find the step-by-step instructions to remove them from your system. Additionally, you noticed one of the applications had an odd name and service principal. With this information, you were able to review the application owner’s usage and find some potential risky behavior.
+**Review**: In this simulation, you used Security Copilot to help you quickly identify unused applications and their owners. You were able to find the step-by-step instructions to remove them from your system. Additionally, you noticed that of the three applications with an owner, the one whose owner is listed as Braden Goudy (Corp) did not have an associated user ID. With this information, you were able to review the application owner’s usage and find some potential risky behavior.
 
 #### Task: Exploring Security Copilot in Microsoft Entra
 
@@ -161,7 +161,7 @@ You're an identity admin with Woodgrove. You have been advised that the user Rov
 
 1. Open the simulated environment by selecting this link: **[Microsoft Entra admin center](https://app.highlights.guide/start/fdc34222-f2a2-4eb6-a8d0-b1085754e463?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 1. In the upper right side of the screen select the **Security Copilot button**.
-1. Let’s start with a simple prompt like **Tell me about user Rovshan Hasanli?**.
+1. Let’s start with a simple prompt like **Tell me about user Rovshan Hasanli?**. Note that the prompt response shows the Account Enabled field is set to false, so the account is disabled.
 1. We need to find out information about the user from the **Audit Logs**. Use the prompt **Show me Microsoft Entra audit log events initiated by that user in the last week** to find more information.
 
    - Review the information about User Administrator role being assigned in PIM.
