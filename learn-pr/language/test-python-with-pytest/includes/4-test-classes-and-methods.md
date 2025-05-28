@@ -122,7 +122,7 @@ class TestIsDone:
 
 ### Custom helper methods
 
-You can create custom helper methods in a class. These methods must not be prefixed with the name `test` and can't be named as the setup or cleanup methods. In the `TestIsDone` class, we could automate the creating the temporary file in a custom helper. That custom helper method might look like this example:
+You can create custom helper methods in a class. These methods must not be prefixed with the name `test` and can't be named as the setup or cleanup methods. In the `TestIsDone` class, we could automate creating the temporary file in a custom helper. That custom helper method might look like this example:
 
 ```python
     def write_tmp_file(self, content):
