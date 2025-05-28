@@ -14,7 +14,7 @@ The team created a storage account to store all their product design documents, 
 
 ## What will you be doing?
 
-In this module, you learn about Azure resource types, and how child and extension resources are used throughout Azure. You create a Bicep template that deploys a set of Azure resources, and you use several features of Bicep, including:
+In this module, you learn about Azure resource types and how child and extension resources are used throughout Azure. You create a Bicep template that deploys a set of Azure resources, and you use several features of Bicep, including:
 
 - Child resource definitions, through nested resources and the `parent` property, and by constructing multipart resource names.
 - Extension resource definitions, by using the `scope` property.
