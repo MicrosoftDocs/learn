@@ -1,4 +1,4 @@
-Function advertising and function choice behavior allow developers to control how the AI model accesses and invokes external functions during execution. These let you tailor the AI's responses based on specific scenarios, such as integrating with APIs for real-time data, restricting functionality for privacy or security, or enhancing the relevance of responses by narrowing the available functions. By strategically managing these behaviors, developers can optimize their AI application's performance.
+Function advertising and function choice behavior allow developers to control how the AI model accesses and invokes external functions during execution. These Advertized Functions let you tailor the AI's responses based on specific scenarios, such as integrating with APIs for real-time data, restricting functionality for privacy or security, or enhancing the relevance of responses by narrowing the available functions. By strategically managing Function advertising behaviors, developers can optimize their AI application's performance.
 
 ## Function Advertising
 
@@ -31,7 +31,7 @@ By registering your plugin classes with the kernel, all of their functions becom
 
 ::: zone pivot="python"
 
-By registering your plugin classes with the kernel, all of their functions become available to the AI model. The model can then automatically choose from any of these functions based on the prompt. In Python, use `add_plugin` to register your plugin classes and their functions.
+When you register plugin classes with the kernel, all of their functions become available to the AI model. The model can then automatically choose from any of these functions based on the prompt. In Python, use `add_plugin` to register your plugin classes and their functions.
 
     ```python
     import os
@@ -100,7 +100,7 @@ Use `Plugins.GetFunction` to select specific functions to advertise to the model
 
 ::: zone pivot="python"
 
-You control which functions are available by only registering the plugins you want the model to access. The SDK does not currently support restricting advertised functions directly in settings.
+You control which functions are available by only registering the plugins you want the model to access. The SDK doesn't currently support restricting advertised functions directly in settings.
 
     ```python
     # As of SK 1.31, Python SDK does not support restricting advertised functions directly in settings.
@@ -149,7 +149,7 @@ Set the `FunctionChoiceBehavior` to use an empty list of functions to disable fu
 
 ::: zone pivot="python"
 
-In Python, do not register any plugins with the kernel to disable function calling.
+In Python, don't register any plugins with the kernel to disable function calling.
 
     ```python
     # In Python, you can disable function calling by not registering any plugins,
@@ -186,7 +186,7 @@ The Semantic Kernel SDK provides several ways to configure how functions are adv
 
 - **Auto**: The model can choose from zero or more functions.
 - **Required**: The model is encouraged or required to choose at least one function.
-- **None**: The model cannot choose any functions.
+- **None**: The model can't choose any functions.
 
 ::: zone pivot="csharp"
 
@@ -196,8 +196,8 @@ Use the `FunctionChoiceBehavior` class to configure these behaviors in C#.
 
 ::: zone pivot="python"
 
-In Python, these behaviors are controlled by which plugins you register and, in some cases, by prompt engineering. The SDK does not currently provide direct equivalents for all C# behaviors.
+In Python, these function behaviors are controlled by which plugins you register and, in some cases, by prompt engineering. The SDK doesn't currently provide direct equivalents for all C# behaviors.
 
 ::: zone-end
 
-Function choice behaviors provide developers with flexible options for controlling how functions are advertised and invoked by AI models. By understanding and leveraging these behaviors, you can fine-tune AI interactions to suit specific application requirements.
+Function choice behaviors provide developers with flexible options for controlling how functions are advertised and invoked by AI models. By understanding and using these behaviors, you can fine-tune AI interactions to suit specific application requirements.
