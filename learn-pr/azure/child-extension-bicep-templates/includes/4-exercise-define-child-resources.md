@@ -119,9 +119,8 @@ New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
 
-   1. Select your avatar in the upper-right corner of the page.
-
-   1. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+   1. Select your avatar in the upper-right corner of the page, and then select **Switch directory**. 
+   1. A list of directories appears. Select the **Switch** button next to Microsoft Learn Sandbox.
 
 1. On the home page, select **Resource groups**. The **Resource groups** pane appears.
 
@@ -135,7 +134,7 @@ New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 
     :::image type="content" source="../media/4-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
 
-1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's a Cosmos DB account, database, and container listed.
+1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand the list. In this case, there's a Cosmos DB account, database, and container listed.
 
     :::image type="content" source="../media/4-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with three Cosmos DB resources listed." border="true":::
 

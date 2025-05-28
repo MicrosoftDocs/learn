@@ -131,7 +131,7 @@ After you complete the preceding changes, your _main.bicep_ file should look lik
 
 :::code language="bicep" source="code/7-complete.bicep" :::
 
-If it doesn't, either copy the example or adjust your template to match the example.
+If it doesn't look the same, either copy the example or adjust your template to match the example.
 
 ## Deploy the template to Azure
 
