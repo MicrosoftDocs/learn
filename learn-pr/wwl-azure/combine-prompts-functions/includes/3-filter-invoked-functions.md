@@ -14,6 +14,8 @@ This filter runs every time a function is executed, whether it originates from a
 
 Here's an example of a function invocation filter that logs the invoked plugin function:
 
+::: zone pivot="csharp"
+
 ```c#
 public sealed class LoggingFilter(ILogger logger) : IFunctionInvocationFilter
 {
@@ -28,11 +30,39 @@ public sealed class LoggingFilter(ILogger logger) : IFunctionInvocationFilter
 }
 ```
 
+::: zone-end
+
+::: zone pivot="python"
+
+```python
+# Python example: Function invocation filter using a decorator
+
+from semantic_kernel.functions.kernel_function_decorator import kernel_function
+
+def logging_filter(func):
+    def wrapper(*args, **kwargs):
+        print(f"Invoking: {func.__qualname__}")
+        result = func(*args, **kwargs)
+        print(f"Executed: {func.__qualname__}")
+        return result
+    return wrapper
+
+class WeatherForecastUtils:
+    @kernel_function(name="GetWeatherForCity", description="Gets the weather for a given city.")
+    @logging_filter
+    def get_weather_for_city(self, city: str) -> str:
+        return "Sunny"
+```
+
+::: zone-end
+
 ### Prompt Render Filter
 
 Triggered during prompt rendering, this filter provides control over how prompts are formatted and submitted to AI. It's ideal for tasks like modifying prompts for sensitive information (e.g., PII redaction) or enabling semantic caching.
 
 Here's an example of a prompt render filter:
+
+::: zone pivot="csharp"
 
 ```c#
 public class SafePromptFilter : IPromptRenderFilter
@@ -47,11 +77,37 @@ public class SafePromptFilter : IPromptRenderFilter
 }
 ```
 
+::: zone-end
+
+::: zone pivot="python"
+
+```python
+# Python example: Prompt render filter using a decorator
+
+def safe_prompt_filter(render_func):
+    def wrapper(*args, **kwargs):
+        prompt = render_func(*args, **kwargs)
+        # Modify prompt before submission
+        return "Safe and sanitized prompt."
+    return wrapper
+
+@safe_prompt_filter
+def render_prompt(user_input):
+    return f"User prompt: {user_input}"
+
+# Example usage
+print(render_prompt("Sensitive information here"))
+```
+
+::: zone-end
+
 ### Auto Function Invocation Filter
 
 This filter is invoked only during the automatic function calling process. It can adjust or even terminate workflows based on intermediate results.
 
 Here's an example of a function invocation filter that terminates the function calling process:
+
+::: zone pivot="csharp"
 
 ```c#
 public sealed class EarlyTerminationFilter : IAutoFunctionInvocationFilter
@@ -69,26 +125,71 @@ public sealed class EarlyTerminationFilter : IAutoFunctionInvocationFilter
 }
 ```
 
+::: zone-end
+
+::: zone pivot="python"
+
+```python
+# Python example: Auto function invocation filter using a decorator
+
+def early_termination_filter(func):
+    def wrapper(*args, **kwargs):
+        result = func(*args, **kwargs)
+        # Simulate checking the result and terminating if needed
+        if result == "desired result":
+            print("Terminating workflow early.")
+            return result
+        return result
+    return wrapper
+
+@early_termination_filter
+def auto_function():
+    # Simulate function logic
+    return "desired result"
+
+# Example usage
+auto_function()
+```
+
+::: zone-end
+
 ### Integrate function filters
+
+::: zone pivot="csharp"
 
 To integrate any of the function filters, you can use the following methods:
 
 - **Dependency Injection**:
-    
-    Add the function to the KernelBuilder services:
 
-    ```c#
-    builder.Services.AddSingleton<IFunctionInvocationFilter, LoggingFilter>();
-    ```
+Add the function to the KernelBuilder services:
+
+```c#
+builder.Services.AddSingleton<IFunctionInvocationFilter, LoggingFilter>();
+```
 
 - **Kernel Properties**:
 
-    Add the function to the kernel's `FunctionInvocationFilters` list:
+Add the function to the kernel's `FunctionInvocationFilters` list:
 
-    ```c#
-    kernel.FunctionInvocationFilters.Add(new LoggingFilter(logger));
-    ```
+```c#
+kernel.FunctionInvocationFilters.Add(new LoggingFilter(logger));
+```
+
+::: zone-end
+
+::: zone pivot="python"
+
+To integrate filters in Python, apply decorators to your plugin methods or prompt rendering functions as shown above.  
+Register your plugin class with the kernel as usual:
+
+```python
+kernel.add_plugin(WeatherForecastUtils(), "WeatherForecastUtils")
+```
+
+The decorated methods will have the filter logic applied automatically.
+
+::: zone-end
 
 Always invoke the `next` delegate in your function filter to allow subsequent filters or the primary operation to execute. Skipping this step blocks the operation.
 
-By integrating these filters thoughtfully, you can enhance both the functionality and security of your Semantic Kernel implementations, aligning with best practices for responsible AI development.
+By integrating prompt render filters, you make your Semantic Kernel solutions safer and more reliable. Prompt filters let you sanitize prompts before they reach the AI. Auto-invocation filters let you control function execution, enabling early termination or custom logic based on results.
