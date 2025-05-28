@@ -8,20 +8,20 @@ For the Semantic Kernel to correctly route requests to your functions, the plugi
 
 To create a plugin function in C#, you add the following attributes to your function: `[KernelFunction]`, `[Description]`, and `[return: Description]` if there's data returned from the function. Here’s a minimal example:
 
-    ```csharp
-    using Microsoft.SemanticKernel;
+```csharp
+using Microsoft.SemanticKernel;
 
-    public class TaskManagementPlugin
+public class TaskManagementPlugin
+{
+    [KernelFunction("complete_task")]
+    [Description("Marks a task as completed by its ID.")]
+    [return: Description("The updated task, or null if not found.")]
+    public TaskModel? CompleteTask(int id)
     {
-        [KernelFunction("complete_task")]
-        [Description("Marks a task as completed by its ID.")]
-        [return: Description("The updated task, or null if not found.")]
-        public TaskModel? CompleteTask(int id)
-        {
-            // ...complete the task logic...
-        }
+        // ...complete the task logic...
     }
-    ```
+}
+```
 
 ::: zone-end
 
@@ -29,31 +29,31 @@ To create a plugin function in C#, you add the following attributes to your func
 
 To create a plugin function in Python, you use the `@kernel_function` decorator with a description parameter. The return type is specified in the function signature (for example, `-> dict | None`). Here’s a minimal example:
 
-    ```python
-    from semantic_kernel import kernel_function, KernelPlugin
+```python
+from semantic_kernel import kernel_function, KernelPlugin
 
-    class TaskManagementPlugin(KernelPlugin):
-        @kernel_function(name="complete_task", description="Marks a task as completed by its ID.")
-        def complete_task(self, id: int) -> dict | None:
-            # ...complete the task logic...
-            pass
-    ```
+class TaskManagementPlugin(KernelPlugin):
+    @kernel_function(name="complete_task", description="Marks a task as completed by its ID.")
+    def complete_task(self, id: int) -> dict | None:
+        # ...complete the task logic...
+        pass
+```
 
 ::: zone-end
 
+::: zone pivot="csharp"
+
 > [!INOTE]
->
-> ::: zone pivot="csharp"
->
 > In C#, plugin functions use attributes such as `[KernelFunction]` and `[Description]` to provide metadata for the Semantic Kernel. Chat history is managed using the `ChatHistory` class and its methods, such as `AddUserMessage`.
->
-> ::: zone-end
->
-> ::: zone pivot="python"
->
+
+::: zone-end
+
+::: zone pivot="python"
+
+> [!INOTE]
 > In Python, plugin functions use decorators such as `@kernel_function` to provide metadata for the Semantic Kernel. Chat history is typically represented as a list of dictionaries, each with a `role` and `content` key.
->
-> ::: zone-end
+
+::: zone-end
 
 In this example, only the essentials are shown: the function signature, attributes, and a placeholder for your logic.
 
@@ -61,27 +61,27 @@ To call your function, register the plugin and invoke the function as shown belo
 
 ::: zone pivot="csharp"
 
-    ```csharp
-    var kernel = new KernelBuilder().Build();
-    kernel.Plugins.AddFromType<TaskManagementPlugin>("TaskManagement");
+```csharp
+var kernel = new KernelBuilder().Build();
+kernel.Plugins.AddFromType<TaskManagementPlugin>("TaskManagement");
 
-    var arguments = new KernelArguments { ["id"] = 1 };
-    var updatedTask = await kernel.InvokeAsync("TaskManagement", "complete_task", arguments);
-    ```
+var arguments = new KernelArguments { ["id"] = 1 };
+var updatedTask = await kernel.InvokeAsync("TaskManagement", "complete_task", arguments);
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ```python
-    from semantic_kernel import Kernel
+```python
+from semantic_kernel import Kernel
 
-    kernel = Kernel()
-    kernel.add_plugin(TaskManagementPlugin(), "TaskManagement")
+kernel = Kernel()
+kernel.add_plugin(TaskManagementPlugin(), "TaskManagement")
 
-    arguments = {"id": 1}
-    updated_task = await kernel.invoke("TaskManagement.complete_task", arguments)
-    ```
+arguments = {"id": 1}
+updated_task = await kernel.invoke("TaskManagement.complete_task", arguments)
+```
 
 ::: zone-end
 
@@ -109,29 +109,29 @@ Suppose the `TaskManagementPlugin` contains a `GetCriticalTasks` function:
 
 ::: zone pivot="csharp"
 
-    ```csharp
-    [KernelFunction("get_critical_tasks")]
-    [Description("Gets a list of all tasks marked as 'Critical' priority.")]
-    [return: Description("A list of critical tasks.")]
-    public List<TaskModel> GetCriticalTasks()
-    {
-        // ...return critical tasks...
-    }
-    ```
+```csharp
+[KernelFunction("get_critical_tasks")]
+[Description("Gets a list of all tasks marked as 'Critical' priority.")]
+[return: Description("A list of critical tasks.")]
+public List<TaskModel> GetCriticalTasks()
+{
+    // ...return critical tasks...
+}
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ```python
-    from semantic_kernel import kernel_function, KernelPlugin
+```python
+from semantic_kernel import kernel_function, KernelPlugin
 
-    class TaskManagementPlugin(KernelPlugin):
-        @kernel_function(name="get_critical_tasks", description="Gets a list of all tasks marked as 'Critical' priority.")
-        def get_critical_tasks(self) -> list:
-            # ...return critical tasks...
-            pass
-    ```
+class TaskManagementPlugin(KernelPlugin):
+    @kernel_function(name="get_critical_tasks", description="Gets a list of all tasks marked as 'Critical' priority.")
+    def get_critical_tasks(self) -> list:
+        # ...return critical tasks...
+        pass
+```
 
 ::: zone-end
 
@@ -139,47 +139,47 @@ The user could trigger this function with a prompt to the LLM. For example:
 
 ::: zone pivot="csharp"
 
-    ```csharp
-    var kernel = new KernelBuilder().Build();
-    kernel.Plugins.AddFromType<TaskManagementPlugin>("TaskManagement");
+```csharp
+var kernel = new KernelBuilder().Build();
+kernel.Plugins.AddFromType<TaskManagementPlugin>("TaskManagement");
 
-    OpenAIPromptExecutionSettings settings = new()
-    {
-        FunctionChoiceBehavior = FunctionChoiceBehavior.Auto()
-    };
+OpenAIPromptExecutionSettings settings = new()
+{
+    FunctionChoiceBehavior = FunctionChoiceBehavior.Auto()
+};
 
-    var history = new ChatHistory();
-    history.AddUserMessage("What are all of the critical tasks?");
-    var chatCompletionService = kernel.GetRequiredService<IChatCompletionService>();
+var history = new ChatHistory();
+history.AddUserMessage("What are all of the critical tasks?");
+var chatCompletionService = kernel.GetRequiredService<IChatCompletionService>();
 
-    var result = await chatCompletionService.GetChatMessageContentAsync(
-       history,
-       executionSettings: settings,
-       kernel: kernel);
+var result = await chatCompletionService.GetChatMessageContentAsync(
+    history,
+    executionSettings: settings,
+    kernel: kernel);
 
-    Console.WriteLine("Assistant: " + result);
-    ```
+Console.WriteLine("Assistant: " + result);
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ```python
-    from semantic_kernel.connectors.ai.open_ai import OpenAIChatCompletionSettings
+```python
+from semantic_kernel.connectors.ai.open_ai import OpenAIChatCompletionSettings
 
-    settings = OpenAIChatCompletionSettings(function_call="auto")
+settings = OpenAIChatCompletionSettings(function_call="auto")
 
-    history = [{"role": "user", "content": "What are all of the critical tasks?"}]
-    chat_completion_service = kernel.get_service("chat_completion")
+history = [{"role": "user", "content": "What are all of the critical tasks?"}]
+chat_completion_service = kernel.get_service("chat_completion")
 
-    result = await chat_completion_service.get_chat_message_content(
-        history=history,
-        execution_settings=settings,
-        kernel=kernel
-    )
+result = await chat_completion_service.get_chat_message_content(
+    history=history,
+    execution_settings=settings,
+    kernel=kernel
+)
 
-    print("Assistant:", result)
-    ```
+print("Assistant:", result)
+```
 
 ::: zone-end
 
@@ -197,17 +197,17 @@ To enhance the LLM's ability to understand and utilize your plugin functions, co
 
 - **Use descriptive and concise function names**  
 
-  ::: zone pivot="csharp"
+::: zone pivot="csharp"
 
 Names that clearly convey the function's purpose will help the model understand when to call the function. Avoid abbreviations or acronyms. Use the `Description` attribute to provide context and instructions when necessary.
 
-  ::: zone-end
+::: zone-end
 
-  ::: zone pivot="python"
+::: zone pivot="python"
 
 Names that clearly convey the function's purpose will help the model understand when to call the function. Avoid abbreviations or acronyms. Use the `description` parameter in the `@kernel_function` decorator to provide context and instructions when necessary.
 
-  ::: zone-end
+::: zone-end
 
 - **Minimize function parameters**  
   Limit the number of function parameters and use primitive types whenever possible. This reduces token consumption and simplifies the function signature.

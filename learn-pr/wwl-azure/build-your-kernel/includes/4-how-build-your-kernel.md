@@ -18,45 +18,45 @@ The steps to get started using the Semantic Kernel SDK are:
 
 ::: zone pivot="csharp"
 
-    ```c#
-    using Microsoft.SemanticKernel;
+```c#
+using Microsoft.SemanticKernel;
 
-    // Populate values from your OpenAI deployment
-    var modelId = "";
-    var endpoint = "";
-    var apiKey = "";
+// Populate values from your OpenAI deployment
+var modelId = "";
+var endpoint = "";
+var apiKey = "";
 
-    // Create a kernel with Azure OpenAI chat completion
-    var builder = Kernel.CreateBuilder().AddAzureOpenAIChatCompletion(modelId, endpoint, apiKey);
+// Create a kernel with Azure OpenAI chat completion
+var builder = Kernel.CreateBuilder().AddAzureOpenAIChatCompletion(modelId, endpoint, apiKey);
 
-    // Build the kernel
-    Kernel kernel = builder.Build();
-    ```
+// Build the kernel
+Kernel kernel = builder.Build();
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ```python
-    from semantic_kernel import Kernel
-    from semantic_kernel.connectors.ai.open_ai import AzureChatCompletion
-    
-    # Populate values from your OpenAI deployment
-    model_id = ""
-    endpoint = ""
-    api_key = ""
-    
-    # Create a kernel and add Azure OpenAI chat completion
-    kernel = Kernel()
-    kernel.add_service(
-        AzureChatCompletion(
-            deployment_name=model_id,
-            endpoint=endpoint,
-            api_key=api_key
-        )
+```python
+from semantic_kernel import Kernel
+from semantic_kernel.connectors.ai.open_ai import AzureChatCompletion
+
+# Populate values from your OpenAI deployment
+model_id = ""
+endpoint = ""
+api_key = ""
+
+# Create a kernel and add Azure OpenAI chat completion
+kernel = Kernel()
+kernel.add_service(
+    AzureChatCompletion(
+        deployment_name=model_id,
+        endpoint=endpoint,
+        api_key=api_key
     )
-    kernel.add_service(chatcompletion)
-    ```
+)
+kernel.add_service(chatcompletion)
+```
 
 ::: zone-end
 

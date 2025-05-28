@@ -25,41 +25,41 @@ To run your prompt, you first need to create a `KernelFunction` object from the 
 
 ::: zone pivot="csharp"
 
-    ```c#
-    string city = "Rome";
-    var prompt = "I'm visiting {{$city}}. What are some activities I should do today?";
+```c#
+string city = "Rome";
+var prompt = "I'm visiting {{$city}}. What are some activities I should do today?";
 
-    var activitiesFunction = kernel.CreateFunctionFromPrompt(prompt);
-    var arguments = new KernelArguments { ["city"] = city };
+var activitiesFunction = kernel.CreateFunctionFromPrompt(prompt);
+var arguments = new KernelArguments { ["city"] = city };
 
-    // InvokeAsync on the KernelFunction object
-    var result = await activitiesFunction.InvokeAsync(kernel, arguments);
-    Console.WriteLine(result);
+// InvokeAsync on the KernelFunction object
+var result = await activitiesFunction.InvokeAsync(kernel, arguments);
+Console.WriteLine(result);
 
-    // InvokeAsync on the kernel object
-    result = await kernel.InvokeAsync(activitiesFunction, arguments);
-    Console.WriteLine(result);
-    ```
+// InvokeAsync on the kernel object
+result = await kernel.InvokeAsync(activitiesFunction, arguments);
+Console.WriteLine(result);
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ```python
-    city = "Rome"
-    prompt = "I'm visiting {{$city}}. What are some activities I should do today?"
+```python
+city = "Rome"
+prompt = "I'm visiting {{$city}}. What are some activities I should do today?"
 
-    activities_function = kernel.create_function_from_prompt(prompt)
-    arguments = {"city": city}
+activities_function = kernel.create_function_from_prompt(prompt)
+arguments = {"city": city}
 
-    # Invoke on the KernelFunction object
-    result = await activities_function.invoke_async(kernel, arguments)
-    print(result)
+# Invoke on the KernelFunction object
+result = await activities_function.invoke_async(kernel, arguments)
+print(result)
 
-    # Invoke on the kernel object
-    result = await kernel.invoke_async(activities_function, arguments)
-    print(result)
-    ```
+# Invoke on the kernel object
+result = await kernel.invoke_async(activities_function, arguments)
+print(result)
+```
 
 ::: zone-end
 

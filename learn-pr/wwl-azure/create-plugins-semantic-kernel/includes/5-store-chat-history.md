@@ -13,45 +13,45 @@ Before creating a `ChatHistory` object, you need to import the appropriate packa
 
 ::: zone pivot="csharp"
 
-    ```c#
-    // Import the chat completion namespace
-    using Microsoft.SemanticKernel.ChatCompletion;
+```c#
+// Import the chat completion namespace
+using Microsoft.SemanticKernel.ChatCompletion;
 
-    // Create a chat history object
-    ChatHistory chatHistory = [];
+// Create a chat history object
+ChatHistory chatHistory = [];
 
-    // Add role messages to the chat history
-    chatHistory.AddSystemMessage("You are a helpful assistant.");
-    chatHistory.AddUserMessage("What's available to order?");
-    chatHistory.AddAssistantMessage("We have pizza, pasta, and salad available to order. What would you like to order?");
-    chatHistory.AddUserMessage("I'd like to have the first option, please.");
+// Add role messages to the chat history
+chatHistory.AddSystemMessage("You are a helpful assistant.");
+chatHistory.AddUserMessage("What's available to order?");
+chatHistory.AddAssistantMessage("We have pizza, pasta, and salad available to order. What would you like to order?");
+chatHistory.AddUserMessage("I'd like to have the first option, please.");
 
-    for (int i = 0; i < chatHistory.Count; i++)
-    {
-        Console.WriteLine($"{chatHistory[i].Role}: {chatHistory[i]}");
-    }
-    ```
+for (int i = 0; i < chatHistory.Count; i++)
+{
+    Console.WriteLine($"{chatHistory[i].Role}: {chatHistory[i]}");
+}
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ```python
-    from semantic_kernel.contents.chat_history import ChatHistory
+```python
+from semantic_kernel.contents.chat_history import ChatHistory
 
-    # Create a chat history object
-    chat_history = ChatHistory()
+# Create a chat history object
+chat_history = ChatHistory()
 
-    # Add role messages to the chat history
-    chat_history.add_system_message("You are a helpful assistant.")
-    chat_history.add_user_message("What's available to order?")
-    chat_history.add_assistant_message("We have pizza, pasta, and salad available to order. What would you like to order?")
-    chat_history.add_user_message("I'd like to have the first option, please.")
+# Add role messages to the chat history
+chat_history.add_system_message("You are a helpful assistant.")
+chat_history.add_user_message("What's available to order?")
+chat_history.add_assistant_message("We have pizza, pasta, and salad available to order. What would you like to order?")
+chat_history.add_user_message("I'd like to have the first option, please.")
 
-    # Print chat history
-    for message in chat_history:
-        print(f"{message.role}: {message.content}")
-    ```
+# Print chat history
+for message in chat_history:
+    print(f"{message.role}: {message.content}")
+```
 
 ::: zone-end
 
@@ -67,55 +67,55 @@ You can also add more details to the chat history by creating a `ChatMessage` ob
 
 ::: zone pivot="csharp"
 
-    ```c#
-    // Add user message with an image
-    #pragma warning disable SKEXP0001 // AuthorName is subject to change and emits a warning
-    chatHistory.Add(
-        new() {
-            Role = AuthorRole.User,
-            AuthorName = "Laimonis Dumins",
-            Items = [
-                new TextContent { Text = "What available on this menu" },
-                new ImageContent { Uri = new Uri("https://example.com/menu.jpg") }
-            ]
-        }
-    );
-    ```
+```c#
+// Add user message with an image
+#pragma warning disable SKEXP0001 // AuthorName is subject to change and emits a warning
+chatHistory.Add(
+    new() {
+        Role = AuthorRole.User,
+        AuthorName = "Laimonis Dumins",
+        Items = [
+            new TextContent { Text = "What available on this menu" },
+            new ImageContent { Uri = new Uri("https://example.com/menu.jpg") }
+        ]
+    }
+);
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ```python
-    from semantic_kernel.contents.chat_history import ChatHistory
-    from semantic_kernel.contents.chat_message_content import ChatMessageContent, AuthorRole
-    from semantic_kernel.contents.text_content import TextContent
-    from semantic_kernel.contents.image_content import ImageContent
+```python
+from semantic_kernel.contents.chat_history import ChatHistory
+from semantic_kernel.contents.chat_message_content import ChatMessageContent, AuthorRole
+from semantic_kernel.contents.text_content import TextContent
+from semantic_kernel.contents.image_content import ImageContent
 
-    # Create a chat history object
-    chat_history = ChatHistory()
+# Create a chat history object
+chat_history = ChatHistory()
 
-    # Add a user message with author name, text, and image content
-    chat_history.add(
-        ChatMessageContent(
-            role=AuthorRole.USER,
-            author_name="Laimonis Dumins",
-            items=[
-                TextContent(text="What available on this menu"),
-                ImageContent(uri="https://example.com/menu.jpg")
-            ]
-        )
+# Add a user message with author name, text, and image content
+chat_history.add(
+    ChatMessageContent(
+        role=AuthorRole.USER,
+        author_name="Laimonis Dumins",
+        items=[
+            TextContent(text="What available on this menu"),
+            ImageContent(uri="https://example.com/menu.jpg")
+        ]
     )
+)
 
-    # Print the last message to verify
-    last_message = chat_history[-1]
-    print(f"{last_message.role} ({last_message.author_name}):")
-    for item in last_message.items:
-        if isinstance(item, TextContent):
-            print(f"  Text: {item.text}")
-        elif isinstance(item, ImageContent):
-            print(f"  Image: {item.uri}")
-    ```
+# Print the last message to verify
+last_message = chat_history[-1]
+print(f"{last_message.role} ({last_message.author_name}):")
+for item in last_message.items:
+    if isinstance(item, TextContent):
+        print(f"  Text: {item.text}")
+    elif isinstance(item, ImageContent):
+        print(f"  Image: {item.uri}")
+```
 
 ::: zone-end
 

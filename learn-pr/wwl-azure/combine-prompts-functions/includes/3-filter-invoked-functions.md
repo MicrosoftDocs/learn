@@ -16,43 +16,43 @@ Here's an example of a function invocation filter that logs the invoked plugin f
 
 ::: zone pivot="csharp"
 
-    ```c#
-    public sealed class LoggingFilter(ILogger logger) : IFunctionInvocationFilter
+```c#
+public sealed class LoggingFilter(ILogger logger) : IFunctionInvocationFilter
+{
+    public async Task OnFunctionInvocationAsync(FunctionInvocationContext context, Func<FunctionInvocationContext, Task> next)
     {
-        public async Task OnFunctionInvocationAsync(FunctionInvocationContext context, Func<FunctionInvocationContext, Task> next)
-        {
-            logger.LogInformation("Invoking: {PluginName}.{FunctionName}", context.Function.PluginName, context.Function.Name);
+        logger.LogInformation("Invoking: {PluginName}.{FunctionName}", context.Function.PluginName, context.Function.Name);
 
-            await next(context);
+        await next(context);
 
-            logger.LogInformation("Executed: {PluginName}.{FunctionName}", context.Function.PluginName, context.Function.Name);
-        }
+        logger.LogInformation("Executed: {PluginName}.{FunctionName}", context.Function.PluginName, context.Function.Name);
     }
-    ```
+}
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ````python
-    # Python example: Function invocation filter using a decorator
+```python
+# Python example: Function invocation filter using a decorator
 
-    from semantic_kernel.functions.kernel_function_decorator import kernel_function
+from semantic_kernel.functions.kernel_function_decorator import kernel_function
 
-    def logging_filter(func):
-        def wrapper(*args, **kwargs):
-            print(f"Invoking: {func.__qualname__}")
-            result = func(*args, **kwargs)
-            print(f"Executed: {func.__qualname__}")
-            return result
-        return wrapper
+def logging_filter(func):
+    def wrapper(*args, **kwargs):
+        print(f"Invoking: {func.__qualname__}")
+        result = func(*args, **kwargs)
+        print(f"Executed: {func.__qualname__}")
+        return result
+    return wrapper
 
-    class WeatherForecastUtils:
-        @kernel_function(name="GetWeatherForCity", description="Gets the weather for a given city.")
-        @logging_filter
-        def get_weather_for_city(self, city: str) -> str:
-            return "Sunny"
-    ````
+class WeatherForecastUtils:
+    @kernel_function(name="GetWeatherForCity", description="Gets the weather for a given city.")
+    @logging_filter
+    def get_weather_for_city(self, city: str) -> str:
+        return "Sunny"
+```
 
 ::: zone-end
 
@@ -64,40 +64,40 @@ Here's an example of a prompt render filter:
 
 ::: zone pivot="csharp"
 
-    ```c#
-    public class SafePromptFilter : IPromptRenderFilter
+```c#
+public class SafePromptFilter : IPromptRenderFilter
+{
+    public async Task OnPromptRenderAsync(PromptRenderContext context, Func<PromptRenderContext, Task> next)
     {
-        public async Task OnPromptRenderAsync(PromptRenderContext context, Func<PromptRenderContext, Task> next)
-        {
-            await next(context);
+        await next(context);
 
-            // Modify prompt before submission
-            context.RenderedPrompt = "Safe and sanitized prompt.";
-        }
+        // Modify prompt before submission
+        context.RenderedPrompt = "Safe and sanitized prompt.";
     }
-    ```
+}
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ````python
-    # Python example: Prompt render filter using a decorator
+```python
+# Python example: Prompt render filter using a decorator
 
-    def safe_prompt_filter(render_func):
-        def wrapper(*args, **kwargs):
-            prompt = render_func(*args, **kwargs)
-            # Modify prompt before submission
-            return "Safe and sanitized prompt."
-        return wrapper
+def safe_prompt_filter(render_func):
+    def wrapper(*args, **kwargs):
+        prompt = render_func(*args, **kwargs)
+        # Modify prompt before submission
+        return "Safe and sanitized prompt."
+    return wrapper
 
-    @safe_prompt_filter
-    def render_prompt(user_input):
-        return f"User prompt: {user_input}"
+@safe_prompt_filter
+def render_prompt(user_input):
+    return f"User prompt: {user_input}"
 
-    # Example usage
-    print(render_prompt("Sensitive information here"))
-    ````
+# Example usage
+print(render_prompt("Sensitive information here"))
+```
 
 ::: zone-end
 
@@ -109,47 +109,47 @@ Here's an example of a function invocation filter that terminates the function c
 
 ::: zone pivot="csharp"
 
-    ```c#
-    public sealed class EarlyTerminationFilter : IAutoFunctionInvocationFilter
+```c#
+public sealed class EarlyTerminationFilter : IAutoFunctionInvocationFilter
+{
+    public async Task OnAutoFunctionInvocationAsync(AutoFunctionInvocationContext context, Func<AutoFunctionInvocationContext, Task> next)
     {
-        public async Task OnAutoFunctionInvocationAsync(AutoFunctionInvocationContext context, Func<AutoFunctionInvocationContext, Task> next)
-        {
-            await next(context);
+        await next(context);
 
-            var result = context.Result.GetValue<string>();
-            if (result == "desired result")
-            {
-                context.Terminate = true;
-            }
+        var result = context.Result.GetValue<string>();
+        if (result == "desired result")
+        {
+            context.Terminate = true;
         }
     }
-    ```
+}
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ````python
-    # Python example: Auto function invocation filter using a decorator
+```python
+# Python example: Auto function invocation filter using a decorator
 
-    def early_termination_filter(func):
-        def wrapper(*args, **kwargs):
-            result = func(*args, **kwargs)
-            # Simulate checking the result and terminating if needed
-            if result == "desired result":
-                print("Terminating workflow early.")
-                return result
+def early_termination_filter(func):
+    def wrapper(*args, **kwargs):
+        result = func(*args, **kwargs)
+        # Simulate checking the result and terminating if needed
+        if result == "desired result":
+            print("Terminating workflow early.")
             return result
-        return wrapper
+        return result
+    return wrapper
 
-    @early_termination_filter
-    def auto_function():
-        # Simulate function logic
-        return "desired result"
+@early_termination_filter
+def auto_function():
+    # Simulate function logic
+    return "desired result"
 
-    # Example usage
-    auto_function()
-    ````
+# Example usage
+auto_function()
+```
 
 ::: zone-end
 
@@ -161,19 +161,19 @@ To integrate any of the function filters, you can use the following methods:
 
 - **Dependency Injection**:
 
-    Add the function to the KernelBuilder services:
+Add the function to the KernelBuilder services:
 
-    ```c#
-    builder.Services.AddSingleton<IFunctionInvocationFilter, LoggingFilter>();
-    ```
+```c#
+builder.Services.AddSingleton<IFunctionInvocationFilter, LoggingFilter>();
+```
 
 - **Kernel Properties**:
 
-    Add the function to the kernel's `FunctionInvocationFilters` list:
+Add the function to the kernel's `FunctionInvocationFilters` list:
 
-    ```c#
-    kernel.FunctionInvocationFilters.Add(new LoggingFilter(logger));
-    ```
+```c#
+kernel.FunctionInvocationFilters.Add(new LoggingFilter(logger));
+```
 
 ::: zone-end
 
@@ -182,9 +182,9 @@ To integrate any of the function filters, you can use the following methods:
 To integrate filters in Python, apply decorators to your plugin methods or prompt rendering functions as shown above.  
 Register your plugin class with the kernel as usual:
 
-    ```
-    kernel.add_plugin(WeatherForecastUtils(), "WeatherForecastUtils")
-    ```
+```python
+kernel.add_plugin(WeatherForecastUtils(), "WeatherForecastUtils")
+```
 
 The decorated methods will have the filter logic applied automatically.
 

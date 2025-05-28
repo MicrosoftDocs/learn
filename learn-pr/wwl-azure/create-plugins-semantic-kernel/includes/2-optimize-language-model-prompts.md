@@ -4,19 +4,19 @@ In the previous unit, you created the prompt as the input string:
 
 ::: zone pivot="csharp"
 
-    ```c#
-    string input = @"I'm a vegan in search of new recipes. I love spicy food! 
-    Can you give me a list of breakfast recipes that are vegan friendly?";
-    ```
+```c#
+string input = @"I'm a vegan in search of new recipes. I love spicy food! 
+Can you give me a list of breakfast recipes that are vegan friendly?";
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ```python
-    input = """I'm a vegan in search of new recipes. I love spicy food! 
-    Can you give me a list of breakfast recipes that are vegan friendly?"""
-    ```
+```python
+input = """I'm a vegan in search of new recipes. I love spicy food! 
+Can you give me a list of breakfast recipes that are vegan friendly?"""
+```
 
 ::: zone-end
 
@@ -36,29 +36,29 @@ Here's an example of a zero-shot prompt that tells the model to evaluate user in
 
 ::: zone pivot="csharp"
 
-    ```c#
-    string prompt = $"""
-    Instructions: What is the intent of this request?
-    If you don't know the intent, don't guess; instead respond with "Unknown".
-    Choices: SendEmail, SendMessage, CompleteTask, CreateDocument, Unknown.
-    User Input: {request}
-    Intent: 
-    """;
-    ```
+```c#
+string prompt = $"""
+Instructions: What is the intent of this request?
+If you don't know the intent, don't guess; instead respond with "Unknown".
+Choices: SendEmail, SendMessage, CompleteTask, CreateDocument, Unknown.
+User Input: {request}
+Intent: 
+""";
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ```python
-    prompt = f"""
-    Instructions: What is the intent of this request?
-    If you don't know the intent, don't guess; instead respond with "Unknown".
-    Choices: SendEmail, SendMessage, CompleteTask, CreateDocument, Unknown.
-    User Input: {request}
-    Intent: 
-    """
-    ```
+```python
+prompt = f"""
+Instructions: What is the intent of this request?
+If you don't know the intent, don't guess; instead respond with "Unknown".
+Choices: SendEmail, SendMessage, CompleteTask, CreateDocument, Unknown.
+User Input: {request}
+Intent: 
+"""
+```
 
 ::: zone-end
 
@@ -70,43 +70,43 @@ Here's an example of a few-shot prompt that tells the model to evaluate user inp
 
 ::: zone pivot="csharp"
 
-    ```c#
-    string prompt = $"""
-    Instructions: What is the intent of this request?
-    If you don't know the intent, don't guess; instead respond with "Unknown".
-    Choices: SendEmail, SendMessage, CompleteTask, CreateDocument, Unknown.
-    
-    User Input: Can you send a very quick approval to the marketing team?
-    Intent: SendMessage
-    
-    User Input: Can you send the full update to the marketing team?
-    Intent: SendEmail
-    
-    User Input: {request}
-    Intent:
-    """;
-    ```
+```c#
+string prompt = $"""
+Instructions: What is the intent of this request?
+If you don't know the intent, don't guess; instead respond with "Unknown".
+Choices: SendEmail, SendMessage, CompleteTask, CreateDocument, Unknown.
+
+User Input: Can you send a very quick approval to the marketing team?
+Intent: SendMessage
+
+User Input: Can you send the full update to the marketing team?
+Intent: SendEmail
+
+User Input: {request}
+Intent:
+""";
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ```python
-    prompt = f"""
-    Instructions: What is the intent of this request?
-    If you don't know the intent, don't guess; instead respond with "Unknown".
-    Choices: SendEmail, SendMessage, CompleteTask, CreateDocument, Unknown.
-    
-    User Input: Can you send a very quick approval to the marketing team?
-    Intent: SendMessage
-    
-    User Input: Can you send the full update to the marketing team?
-    Intent: SendEmail
-    
-    User Input: {request}
-    Intent:
-    """
-    ```
+```python
+prompt = f"""
+Instructions: What is the intent of this request?
+If you don't know the intent, don't guess; instead respond with "Unknown".
+Choices: SendEmail, SendMessage, CompleteTask, CreateDocument, Unknown.
+
+User Input: Can you send a very quick approval to the marketing team?
+Intent: SendMessage
+
+User Input: Can you send the full update to the marketing team?
+Intent: SendEmail
+
+User Input: {request}
+Intent:
+"""
+```
 
 ::: zone-end
 
@@ -118,21 +118,21 @@ Here's an example of a prompt that assigns a persona:
 
 ::: zone pivot="csharp"
 
-    ```c#
-    string prompt = $"""
-    You are a highly experienced software engineer. Explain the concept of asynchronous programming to a beginner.
-    """;
-    ```
+```c#
+string prompt = $"""
+You are a highly experienced software engineer. Explain the concept of asynchronous programming to a beginner.
+""";
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ```python
-    prompt = """
-    You are a highly experienced software engineer. Explain the concept of asynchronous programming to a beginner.
-    """
-    ```
+```python
+prompt = """
+You are a highly experienced software engineer. Explain the concept of asynchronous programming to a beginner.
+"""
+```
 
 ::: zone-end
 
@@ -144,23 +144,23 @@ Here's an example that instructs the model to describe the step-by-step reasonin
 
 ::: zone pivot="csharp"
 
-    ```c#
-    string prompt = $"""
-    A farmer has 150 apples and wants to sell them in baskets. Each basket can hold 12 apples. If any apples remain after filling as many baskets as possible, the farmer will eat them. How many apples will the farmer eat?
-    Instructions: Explain your reasoning step by step before providing the answer.
-    """;
-    ```
+```c#
+string prompt = $"""
+A farmer has 150 apples and wants to sell them in baskets. Each basket can hold 12 apples. If any apples remain after filling as many baskets as possible, the farmer will eat them. How many apples will the farmer eat?
+Instructions: Explain your reasoning step by step before providing the answer.
+""";
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ```python
-    prompt = """
-    A farmer has 150 apples and wants to sell them in baskets. Each basket can hold 12 apples. If any apples remain after filling as many baskets as possible, the farmer will eat them. How many apples will the farmer eat?
-    Instructions: Explain your reasoning step by step before providing the answer.
-    """
-    ```
+```python
+prompt = """
+A farmer has 150 apples and wants to sell them in baskets. Each basket can hold 12 apples. If any apples remain after filling as many baskets as possible, the farmer will eat them. How many apples will the farmer eat?
+Instructions: Explain your reasoning step by step before providing the answer.
+"""
+```
 
 ::: zone-end
 
@@ -168,39 +168,39 @@ Here's an example that describes the steps to complete to the model:
 
 ::: zone pivot="csharp"
 
-    ```c#
-    prompt = $"""
-    Instructions: A farmer has 150 apples and wants to sell them in baskets. Each basket can hold 12 apples. If any apples remain after filling as many baskets as possible, the farmer will eat them. How many apples will the farmer eat?
+```c#
+prompt = $"""
+Instructions: A farmer has 150 apples and wants to sell them in baskets. Each basket can hold 12 apples. If any apples remain after filling as many baskets as possible, the farmer will eat them. How many apples will the farmer eat?
 
-    First, calculate how many full baskets the farmer can make by dividing the total apples by the apples per basket:
-    1. 
+First, calculate how many full baskets the farmer can make by dividing the total apples by the apples per basket:
+1. 
 
-    Next, subtract the number of apples used in the baskets from the total number of apples to find the remainder: 
-    1.
+Next, subtract the number of apples used in the baskets from the total number of apples to find the remainder: 
+1.
 
-    "Finally, the farmer will eat the remaining apples:
-    1.
-    """;
-    ```
+"Finally, the farmer will eat the remaining apples:
+1.
+""";
+```
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ```python
-    prompt = """
-    Instructions: A farmer has 150 apples and wants to sell them in baskets. Each basket can hold 12 apples. If any apples remain after filling as many baskets as possible, the farmer will eat them. How many apples will the farmer eat?
+```python
+prompt = """
+Instructions: A farmer has 150 apples and wants to sell them in baskets. Each basket can hold 12 apples. If any apples remain after filling as many baskets as possible, the farmer will eat them. How many apples will the farmer eat?
 
-    First, calculate how many full baskets the farmer can make by dividing the total apples by the apples per basket:
-    1. 
+First, calculate how many full baskets the farmer can make by dividing the total apples by the apples per basket:
+1. 
 
-    Next, subtract the number of apples used in the baskets from the total number of apples to find the remainder: 
-    1.
+Next, subtract the number of apples used in the baskets from the total number of apples to find the remainder: 
+1.
 
-    Finally, the farmer will eat the remaining apples:
-    1.
-    """
-    ```
+Finally, the farmer will eat the remaining apples:
+1.
+"""
+```
 
 ::: zone-end
 
