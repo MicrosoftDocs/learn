@@ -6,72 +6,80 @@ GitHub Copilot provides two ways to generate code line completions:
 
 - **From code**: You can generate code line completions by starting a code line, or by pressing Enter after a completed code line. GitHub Copilot provides code completion suggestions based on the code you write.
 
-In this exercise, you use GitHub Copilot to generate code line completions in your Visual Studio Code environment.
+### Use GitHub Copilot to generate code line completions from a comment
 
-### Prepare a sample app in your Visual Studio Code environment
+GitHub Copilot generates code completion suggestions based on the comment and the existing context of your app.
 
-This module includes practice activities that use GitHub Copilot, GitHub Copilot Chat, and prepared code samples. The activities are designed for an environment that includes the following resources:
+You can use comments to describe code snippets, methods, data structures, and other code elements.
 
-- Visual Studio Code.
-- The C# Dev Kit extension for Visual Studio Code.
-- The GitHub Copilot and GitHub Copilot Chat extensions for Visual Studio Code. A GitHub account with an active subscription for GitHub Copilot is required.
-- Sample code projects created using C#.
+Suppose you have the following code snippet:
+
+```C#
+
+namespace ReportGenerator;
+
+class QuarterlyIncomeReport
+{
+    static void Main(string[] args)
+    {
+        // create a new instance of the class
+        QuarterlyIncomeReport report = new QuarterlyIncomeReport();
+
+        // call the GenerateSalesData method
+
+        // call the QuarterlySalesReport method
+        
+    }
+
+    public void QuarterlySalesReport()
+    {
+
+        Console.WriteLine("Quarterly Sales Report");
+    }
+}    
+
+```
+
+For example, the following comment could be used to create a data structure:
+
+```C#
+
+// public struct SalesData. Include the following fields: date sold, department name, product ID, quantity sold, unit price
+
+```
+
+GitHub Copilot generates one or more code completion suggestions based on your code comment and the code files that are open in the editor.
+
+![Screenshot showing the code completion for a comment that describes a data structure.](../media/code-line-completion-comment-data-structure.png)
+
+Notice the data types used to declare the fields of the data structure. GitHub Copilot selects data types and variable names based on your existing code and the code comment. GitHub Copilot tries to determine how the application uses variables and defines the data types accordingly.
+
+When GitHub Copilot generates more than one suggestion, you can cycle through the suggestions by selecting the left or right arrows (`>` or `<`) located to the left of the **Accept** button. This allows you to review and select the suggestion that best fits your needs.
+
+It's okay to accept a code completion suggestion that isn't an exact match for what you want. However, the changes required to "fix" the suggestion should be clear. In this case, some of the data types aren't what you want, but you can adjust them after accepting the suggested autocompletion.
+
+If none of the suggested options resemble what you need, there are two things you can try. To open a new editor tab containing a list of other suggestions, press the **Ctrl** + **Enter** keys. This hotkey combination opens a new tab containing up to 10 more suggestions. Each suggestion is followed by a button that you can use to accept the suggestion. The tab closes automatically after you accept a suggestion. Your other option is to press the **Esc** key to dismiss the suggestions and try again. You can adjust the code comment to provide more context for GitHub Copilot to work with.
 
 > [!NOTE]
-> If you have not already installed Visual Studio Code and the required extensions, complete those installations before continuing.
+> GitHub Copilot can occasionally propose a suggestion in stages. If this happens, you can press Enter to see additional stages of the suggestion after pressing the Tab key.
 
-To prepare for the exercises in this module, complete the following steps:
+To accept a suggested data structure, press the Tab key or select **Accept**.
 
-1. Open a new instance of Visual Studio Code, and then open the Chat view.
+To modify the field data types, update your code as follows:
 
-    You can open the Chat view by selecting **Open Chat** from the Visual Studio Code Command Center or using the **Ctrl+Alt+I** keyboard shortcut.
+```C#
+public struct SalesData
+{
+    public DateOnly dateSold;
+    public string departmentName;
+    public int productID;
+    public int quantitySold;
+    public double unitPrice;
+}
+```
 
-1. In the Chat view, enter the following prompt:
+Making quick adjustments to code completion suggestions helps to ensure that you're building the code you want. It's especially important to make corrections early in your development process when large portions of your codebase still need to be developed. Subsequent code completions are based on the code you've already written, so it's important to ensure that your code is as accurate as possible.
 
-    ```plaintext
-    @workspace /new console application named APL2007M3. Use C# LangVersion 12 and NET8.0. Only .cs and .csproj files. Enable ImplicitUsings and Nullable
-    ```
-
-1. In the Chat view, select **Create Workspace**.
-
-    GitHub Copilot uses your prompt to create the workspace for a new console application. The application uses `C#` and `.NET8.0`. The code project is named `APL2007M3`, and includes the `.cs` and `.csproj` files. The `APL2007M3.csproj` file specifies C# `LangVersion 12` and enables `ImplicitUsings` and `Nullable`.
-
-1. In the Select Folder dialog, navigate to your Desktop folder, select **Desktop**, and then select **Select as Parent Folder**.
-
-    You're prompted to select a parent folder for the new workspace. Selecting the Desktop folder is a good choice for this exercise. The Desktop folder is easy to find. Remember to clean up when you complete this training.
-
-1. When prompted to open the new project, select **Open**.
-
-1. In the Explorer view, select **Program.cs**.
-
-1. Replace the contents of the Program.cs file with the following code:
-
-    ```C#
-    namespace ReportGenerator
-    {
-        class QuarterlyIncomeReport
-        {
-            static void Main(string[] args)
-            {
-                // create a new instance of the class
-                QuarterlyIncomeReport report = new QuarterlyIncomeReport();
-
-                // call the GenerateSalesData method
-
-                // call the QuarterlySalesReport method
-                
-            }
-
-            public void QuarterlySalesReport()
-            {
-
-                Console.WriteLine("Quarterly Sales Report");
-            }
-        }    
-    }
-    ```
-
-Your setup requirements are complete and you're ready to begin the exercise.
 
 ### Use GitHub Copilot to generate code line completions from a comment
 
@@ -122,7 +130,7 @@ Use the following steps to complete this section of the exercise:
     }
     ```
 
-    Making quick adjustments to code completion suggestions helps to ensure that you're building the code you want. It's especially important to make corrections early in your development process when large portions of your codebase still need to be developed. Subsequent code completions will be based on the code you've already written, so it's important to ensure that your code is as accurate as possible.
+    Making quick adjustments to code completion suggestions helps to ensure that you're building the code you want. It's especially important to make corrections early in your development process when large portions of your codebase still need to be developed. Code completions are based on your existing code, so it's important to ensure that your code is as accurate as possible.
 
 1. Create two empty code lines below the `SalesData` data structure.
 
@@ -186,7 +194,7 @@ GitHub Copilot can generate code line completions based on the code you enter. Y
 - Enter a complete code line, press the **Enter** key, and then wait for GitHub Copilot to suggest an autocompletion for the next code line.
 
 > [!NOTE]
-> GitHub Copilot generates suggested code completions based on the code you enter and the context defined by the code within your app. The more code you have in your app, assuming it's good quality code, the more context GitHub Copilot has available. As the volume and quality of existing code increases, so does the quality and reliability of the code line completions suggested by GitHub Copilot. GitHub Copilot is very good at generating code line completions for common programming tasks and patterns, especially when a sequence of related components needs to be generated.
+> GitHub Copilot generates suggested code completions based on the code you enter and the context defined by the code within your app. The more code you have available in your app, the more context GitHub Copilot has when generating a response. GitHub Copilot can base responses on your existing code, so the quality of your code is important. As the volume and quality of existing code increases, so does the quality and reliability of the code line completions suggested by GitHub Copilot. GitHub Copilot is good at generating code line completions for common programming tasks and patterns, especially when a sequence of related components needs to be generated.
 
 In this portion of the exercise, you work on the `QuarterlySalesReport` method.
 
@@ -228,7 +236,7 @@ Use the following steps to complete this section of the exercise:
 
     The suggested code completion isn't what you wanted.
 
-    Although GitHub Copilot suggests a `foreach` loop that iterates through the `salesData`, there's no analysis or calculations inside the loop. Each of the suggested options include `Console.WriteLine` statements that you don't want or need.
+    Although GitHub Copilot suggests a `foreach` loop that iterates through the `salesData`, there's no analysis or calculations inside the loop. The suggested code includes `Console.WriteLine` statements that you don't want or need.
 
 1. Take a minute to consider why GitHub Copilot is suggesting `Console.WriteLine` statements.
 
@@ -306,9 +314,9 @@ Use the following steps to complete this section of the exercise:
 
     ```
 
-1. Notice that the `GetQuarter` method is used to determine the quarter based on the month of the sale.
+1. Notice that the `GetQuarter` method uses the sale's month to determine the sale's quarter.
 
-    This method isn't implemented in your code, but it's required in order for the code to build and run.
+    The `GetQuarter` method is created next.
 
 1. Create two blank code lines below the `QuarterlySalesReport` method.
 
@@ -502,6 +510,6 @@ Use the following steps to complete this section of the exercise:
 
     ```
 
-    There's still work required to complete the `QuarterlyIncomeReport` class. In the next unit, you use GitHub Copilot Chat to extend and update your app.
+## Summary
 
-In this exercise, you used GitHub Copilot to generate code line completions in your Visual Studio Code environment. You used code comments to generate a data structure and a method that generates test data. You also used code line completions to generate the code that processes sales data for a quarterly income report.
+Code line completions are a powerful feature of GitHub Copilot that can help you generate code quickly and efficiently. By using comments to describe the code you want to generate, you can create data structures, methods, and other code elements with minimal effort. Additionally, GitHub Copilot can generate code line completions based on the code you enter, allowing you to build complex applications with ease.
