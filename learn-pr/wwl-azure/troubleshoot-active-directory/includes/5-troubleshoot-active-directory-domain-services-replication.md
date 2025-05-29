@@ -116,7 +116,7 @@ The five operations master roles have the following distribution:
 
 - Each AD DS domain has one relative ID (RID) master, one infrastructure master, and one primary domain controller (PDC) emulator.
 
-The operations master perform the following functions:
+The operations master performs the following functions:
 
 - Domain naming master. This is the domain controller that you must contact when you add or remove a domain or make domain name changes. If the domain naming master is unavailable, you won't be able to add domains to the forest.
 

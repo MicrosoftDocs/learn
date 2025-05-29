@@ -7,6 +7,7 @@ Group Policy settings are presented as Group Policy Objects (GPOs) in AD DS user
 
 > [!NOTE]
 > By default, this is the domain controller that holds the primary domain controller (PDC) emulator operations master role. 
+
 ## What is Group Policy replication?
 
 Group Policy containers and Group Policy templates are both replicated between all domain controllers in a single domain in AD DS. But these two elements use different replication mechanisms:
@@ -31,6 +32,7 @@ There are a number of ways to perform an authoritative restore of SYSVOL. After 
 
 > [!TIP]
 > If you have the option to restore a system state backup (that is, you are restoring AD DS to the same hardware and operating system instance) then using `wbadmin –authsysvol` is simpler. 
+
 But if you need to perform a bare metal restore, then you need to edit the `msDFSR-Options` attribute.
 
 ### Perform an authoritative synchronization of DFSR-replicated SYSVOL
@@ -43,9 +45,9 @@ Use the following procedure to perform an authoritative synchronization of SYSVO
 
 1. Enable both of the following from the **View** menu:
 
-  - Advanced Features
+    - Advanced Features
 
-  - User, Contacts, Groups, and Computers as containers
+    - User, Contacts, Groups, and Computers as containers
 
 1. In your domain, expand **Domain Controllers**, expand the specific domain controller you restored, expand **DFSR-LocalSettings**, and then select **Domain System Volume**.
 
