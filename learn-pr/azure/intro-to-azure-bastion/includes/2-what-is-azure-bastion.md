@@ -4,7 +4,7 @@ It's vital to be able to securely administer and manage remote hosted VMs. To be
 
 Secure remote management is the ability to connect to a remote resource without exposing that resource to security risks. This type of connection can sometimes be challenging, especially if the resource is being accessed across the internet.
 
-When administrators connect to remote VMs, they typically use either RDP or SSH to achieve their administrative goals. The problem is, to connect to a hosted VM, you must connect to its public IP address. However, exposing the IP ports used by RDP and SSH (**3389** and **22**) to the internet is highly undesirable because it presents significant security risks.
+When administrators connect to remote VMs, they typically use either RDP or SSH to achieve their administrative goals. The problem is that to connect to a hosted VM, you must connect to its public IP address. However, exposing the IP ports used by RDP and SSH (**3389** and **22**) to the internet is highly undesirable because it presents significant security risks.
 
 ## Azure Bastion definition
 
