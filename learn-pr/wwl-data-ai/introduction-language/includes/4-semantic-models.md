@@ -1,6 +1,6 @@
 As the state of the art for NLP has advanced, the ability to train models that encapsulate the semantic relationship between tokens has led to the emergence of powerful deep learning language models. At the heart of these models is the encoding of language tokens as vectors (multi-valued arrays of numbers) known as *embeddings*.
 
-It can be useful to think of the elements in a token embedding vector as coordinates in multidimensional space, so that each token occupies a specific "location." The closer tokens are to one another along a particular dimension, the more semantically related they are. In other words, related words are grouped closer together. As a simple example, suppose the embeddings for our tokens consist of vectors with three elements, for example:
+Vectors represent lines in multidimensional space, describing direction and distance along multiple axes. Overall, the vector describes the direction and distance of the path from origin to end. Semantically similar tokens should result in vectors that have a similar orientation – in other words they point in the same direction. As a simple example, suppose the embeddings for our tokens consist of vectors with three elements, for example:
 
 ```
 - 4 ("dog"): [10.3.2]
@@ -10,11 +10,11 @@ It can be useful to think of the elements in a token embedding vector as coordin
 - 10 ("skateboard"): [3,3,1]
 ```
 
-We can plot the location of tokens based on these vectors in three-dimensional space, like this:
+In three-dimensional space, these vectors look like this:
 
-![A diagram of tokens plotted on a three-dimensional space.](../media/example-embeddings-graph.png)
+![A diagram of tokens plotted on a three-dimensional space.](../media/word-embeddings.png)
 
-The locations of the tokens in the embeddings space include some information about how closely the tokens are related to one another. For example, the token for `"dog"` is close to `"cat"` and also to `"bark"`. The tokens for `"cat"` and `"bark"` are close to `"meow"`. The token for `"skateboard"` is further away from the other tokens.
+The embedding vectors for "dog" and "puppy" describe a path along an almost identical direction, which is also fairly similar to the direction for "cat". The embedding vector for "skateboard" however describes journey in a very different direction.
 
 The language models we use in industry are based on these principles but have greater complexity. For example, the vectors used generally have many more dimensions. There are also multiple ways you can calculate appropriate embeddings for a given set of tokens. Different methods result in different predictions from natural language processing models.
 
