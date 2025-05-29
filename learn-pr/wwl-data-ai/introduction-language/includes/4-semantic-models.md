@@ -7,7 +7,7 @@ Vectors represent lines in multidimensional space, describing direction and dist
 - 5 ("bark"): [10,2,2]
 - 8 ("cat"): [10,3,1]
 - 9 ("meow"): [10,2,1]
-- 10 ("skateboard"): [3,3,1]
+- 10 ("skateboard"): [-3,3,2]
 ```
 
 In three-dimensional space, these vectors look like this:
