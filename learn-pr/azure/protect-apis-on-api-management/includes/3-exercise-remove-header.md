@@ -1,6 +1,6 @@
 Companies that publish web APIs often need to carefully control the HTTP headers that their APIs return, preferably without rewriting the API source code.
 
-The government has decided to share census data with its agencies through RESTful APIs. The critical requirements are that the data is shared securely and can be easily amended to facilitate quick integration. As lead developer, you need to create an API gateway. You use the gateway to publish a RESTful Census API that exposes an OpenAPI endpoint using modern security standards.
+The government decides to share census data with its agencies through RESTful APIs. The critical requirements are that the data is shared securely and can be easily amended to facilitate quick integration. As lead developer, you need to create an API gateway. You use the gateway to publish a RESTful Census API that exposes an OpenAPI endpoint using modern security standards.
 
 Here, you will:
 
@@ -14,7 +14,7 @@ Here, you will:
 
 ## Deploy the Census web API
 
-You've developed a .NET Core app that returns sensitive census information. The app includes Swashbuckle to generate OpenAPI documentation.
+You developed a .NET Core app that returns sensitive census information. The app includes Swashbuckle to generate OpenAPI documentation.
 
 To save time, let's start by running a script to host our RESTful API in Azure. The script performs the following steps:
 
@@ -64,11 +64,11 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
 
 The next step in this exercise is to create an API gateway in the Azure portal. In the next section, you'll use this gateway to publish your API:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/)
-.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Integration**, and then enter *API Management* in the **Search services and marketplace** search box. Select the **API Management** card in the results, and select **Create** to open the **Create API Management service** pane.
+1. In the left menu pane, select **Integration**, and then enter *API Management* in the **Search services and marketplace** search box. Select the **API Management** card in the results, and select **Create**. The **Create API Management service** pane appears.
  
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -79,19 +79,19 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
     | Resource group | Select a new or existing resource group. A resource group is a logical container that holds related resources for an Azure solution. |
     | **Instance details** |
     | Region | Select an available region. |
-    |Resource name | Enter `apim-CensusData<random number>`, replacing `random number` with your own series of numbers to ensure that the name is globally unique. |
+    |Resource name | Enter `apim-CensusData<random number>`. Replace `<random number>` with your own series of numbers so that the name is globally unique. |
     | Organization name | Enter `Government-Census`. The name of your organization for use in the developer portal and email notifications. (The developer portal and notifications aren't available in all service tiers.) |
     | Administrator email | The email address to receive all system notifications. |
     | **Pricing tier** |
     | Pricing tier | Select `Consumption (99.95% SLA)` from the dropdown list. |
     | | |
 
-    :::image type="content" source="../media/3-create-apim-gateway.png" alt-text="Screenshot of the completed settings on the Basics tab of the Create API Management service screen.":::
+    :::image type="content" source="../media/3-create-apim-gateway.png" alt-text="Screenshot of the completed settings on the Basics tab of the 'Create API Management service' screen.":::
 
     > [!NOTE]
     > The Consumption tier provides fast deployment for testing and has a pay-for-use pricing model. The overall API management experience is similar to the other pricing tiers.
 
-1. Select **Review + create**. After validation passes, select **Create**. Deployment may take several minutes. When the deployment has completed, you'll see the API Management instance listed in the Azure resources. Select **Go to resource** to view the pane for your API Management service.
+1. Select **Review + create**. After validation passes, select **Create**. Deployment can take several minutes. When the deployment completes, the API Management instance is listed in your Azure resources. Select **Go to resource** to view the pane for your API Management service.
 
 ## Import the API
 
@@ -106,13 +106,13 @@ Now, import the Census API into the API Management gateway:
    :::image type="content" source="../media/3-import-api.png" alt-text="Screenshot of the Create from OpenAPI specification dialog box with the swagger JSON URL entered.":::
 
    > [!NOTE]
-   > You will notice that, when you tab out of the box, some of the other fields are populated for you. This is because you have used OpenAPI which specifies most of the required connection details.
+   > Notice that when you tab out of the box, some of the other fields are populated for you. The OpenAPI specification fills in most of the required connection details.
 
 1. Leave the other settings at their defaults, and then select **Create**.
 
 ## Test the API
 
-Let's see what data is returned in from the API by default:
+Let's see what data is returned from the API by default:
 
 1. In the [Azure portal](https://portal.azure.com/) menu or from the **Home** page, select **All Resources**, and then select your API Management instance.
 
