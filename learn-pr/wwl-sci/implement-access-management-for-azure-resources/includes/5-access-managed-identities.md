@@ -4,16 +4,16 @@ Managed identities for Azure resources are a feature of Microsoft Entra ID. Each
 
 After you've enabled managed identity on an Azure resource, such as an Azure App Service application or Azure virtual machine, you might need to grant access to more resource. Let's say you want add access to a storage account to your managed identity.
 
-1.  Sign in to the Azure portal using an account associated with the Azure subscription under which you've configured the managed identity.
-2.  Navigate to the desired resource on which you want to modify access control. In this example, we're giving an Azure virtual machine access to a storage account, so we navigate to the storage account.
-3.  Select Access control (IAM).
-4.  Select Add &gt; Add role assignment to open the Add role assignment page.
+1. Sign in to the Azure portal using an account associated with the Azure subscription under which you've configured the managed identity.
+2. Navigate to the desired resource on which you want to modify access control. In this example, we're giving an Azure virtual machine access to a storage account, so we navigate to the storage account.
+3. Select Access control (IAM).
+4. Select Add &gt; Add role assignment to open the Add role assignment page.
     
-    :::image type="content" source="../media/managed-identity-role-assignment-60e02730-1c04c245.png" alt-text="Screenshot of the Azure portal in the storage account page, adding a new role to a managed identity.":::
+   :::image type="content" source="../media/managed-identity-role-assignment.png" alt-text="Screenshot of the Azure portal in the storage account page, adding a new role to a managed identity.":::
     
-5.  Pick the Owner, Contributor, or Reader based on the least privilege rules for your applications needs.
-6.  Select the managed identity you want assigned.
+5. Pick the Owner, Contributor, or Reader based on the least privilege rules for your applications needs.
+6. Select the managed identity you want assigned.
     
-    :::image type="content" source="../media/managed-identity-select-8adf45e1-7eaa59b5.png" alt-text="Screenshot of the Azure portal in the key vault page, choose the managed identity to grant role and access to.":::
+   :::image type="content" source="../media/managed-identity-select.png" alt-text="Screenshot of the Azure portal in the key vault page, choose the managed identity to grant role and access to.":::
     
-7.  Complete the assignment with the **Review + assign** option.
+7. Complete the assignment with the **Review + assign** option.
