@@ -139,4 +139,4 @@ deltastream.stop()
 ```
 
 > [!TIP]
-> For more information about using Delta tables for streaming data, see [Table streaming reads and writes](https://docs.delta.io/latest/delta-streaming.html?azure-portal=true) in the Delta Lake documentation.
+> For more information about using Delta tables for streaming data, see [Table streaming reads and writes](https://docs.delta.io/latest/delta-streaming.html&azure-portal=true) in the Delta Lake documentation.
