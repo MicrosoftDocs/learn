@@ -2,7 +2,7 @@ When Sentinel ingests data from the Data Connectors, the following table lists t
 
 | Table| Description|
 | :--- | :--- |
-| `AzureActivity`| Entries from the Azure Activity log that provides insight into any subscription-level or management group level events that have occurred in Azure.|
+| `AzureActivity`| Entries from the Azure Activity log that provides insight into any subscription-level or management group level events that occurred in Azure.|
 | `AzureDiagnostics`| Stores resource logs for Azure services that use Azure Diagnostics mode. Resource logs describe the internal operation of Azure resources.|
 | `AuditLogs`| Audit log for Microsoft Entra ID. Includes system activity information about user and group management, managed applications, and directory activities.|
 | `CommonSecurityLog`| Syslog messages using the Common Event Format (CEF).|
