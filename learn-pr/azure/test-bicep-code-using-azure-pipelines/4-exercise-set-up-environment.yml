@@ -4,7 +4,7 @@ title: Exercise - Set up your environment
 metadata:
   unitType: exercise
   title: Exercise - Set up your environment
-  description: Configure your environment to add tests to your Bicep deployment pipeline.
+  description: Configure your environment so you can add tests to your Bicep deployment pipeline.
   ms.date: 05/29/2025
   author: mumian
   ms.author: jgao
