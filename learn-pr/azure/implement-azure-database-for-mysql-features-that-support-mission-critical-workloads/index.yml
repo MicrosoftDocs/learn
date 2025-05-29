@@ -4,8 +4,8 @@ metadata:
   title: "Implement Azure Database for MySQL Flexible Server features that support mission-critical workloads"
   description: "Implement Azure Database for MySQL Flexible Server features that support mission-critical workloads"
   ms.date: 08/28/2024
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: module-intro-to-product
   ms.service: azure-database-mysql
@@ -43,4 +43,4 @@ units:
 - learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.knowledge-check
 - learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.summary
 badge:
-  uid: learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.badge
+  uid: learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.badge
