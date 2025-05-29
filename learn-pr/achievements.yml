@@ -5749,4 +5749,9 @@ achievements:
   type: badge
   title: Generate code with Azure OpenAI Service
   summary: This module shows engineers how to use the Azure OpenAI Service to generate and improve code.
-  iconUrl: /learn/achievements/generic-badge.svg
+  iconUrl: /learn/achievements/generic-badge.svgz
+- uid: learn.azure.cloud-adoption-framework-plan.badge
+  type: badge
+  title: Prepare for cloud adoption with a data-driven plan
+  summary: Adopting the cloud might depend on many moving parts. Starting with a sound plan built by experts creates clarity. Integrating data about your current environment and long-term objectives refines the plan to reflect realistic expectations and assignments.
+  iconUrl: /training/achievements/cloud-adoption-framework-plan.svg
