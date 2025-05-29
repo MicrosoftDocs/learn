@@ -6,7 +6,7 @@ The sales database is designed to simulate a typical sales environment for a com
 - Track which employee handled which order
 - Track which shipper was used for each order
 
-## Key tables in this Database
+## Key tables
 
 - customers: Stores customer details like names, addresses, and contact information
 - products: Contains product information, including names, prices, and categories
