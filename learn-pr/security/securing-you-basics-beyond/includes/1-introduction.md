@@ -7,9 +7,9 @@ Think about the internet as a neighborhood where you do common tasks such as ema
 - Automated downloads that install ransomware to keep you from using your computer until you pay (or until you restore from a backup).
 - Government-backed hackers who might be on a mission to steal intellectual property or destabilize governments.
 
-Most of your online activity probably doesn't directly expose you to crime. But the odds are good that you know someone who was a victim of some kind of computer-related crime, like computer viruses, malware, identity theft, or data breaches. If it hasn't happened to you and if you don't protect yourself, it's just a matter of time before you're directly affected. What can you do to keep yourself safe, without having to be a cybersecurity expert?
+Most of your online activity probably doesn't directly expose you to crime. But the odds are good that you know someone who was a victim of some kind of computer-related crime, like computer viruses, malware, identity theft, or data breaches. If you don't protect yourself, it's just a matter of time before you're directly affected. What can you do to keep yourself safe, without having to be a cybersecurity expert?
 
-Keeping your passwords, account information, and other sensitive data secure might be easier than you think. We show you techniques and tools that you can use to protect yourself from the most common threats.
+You might find that keeping your passwords, account information, and other sensitive data secure is easier than you think. We show you techniques and tools that you can use to protect yourself from the most common threats.
 
 ## Learning objectives
 
