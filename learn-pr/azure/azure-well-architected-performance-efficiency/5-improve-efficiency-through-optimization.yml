@@ -25,7 +25,7 @@ quiz:
     - content: "They added more developers to the team."
       isCorrect: false
       explanation: "Incorrect. In this case, the team needed to dedicate time to address performance problems, not add more developers to the team."
-    - content: "They stopped development of new functions"
+    - content: "They stopped development of new functions."
       isCorrect: false
       explanation: "Incorrect. Stopping the development of new functions would be a drastic and unnecessary measure."
   - content: "Which strategy helps improve the efficiency of your workload?"

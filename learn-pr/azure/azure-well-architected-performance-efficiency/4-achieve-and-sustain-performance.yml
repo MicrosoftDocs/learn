@@ -17,10 +17,10 @@ quiz:
 
   - content: "True or false: Performance testing during production isn't recommended."
     choices:
-    - content: "True."
+    - content: "True"
       isCorrect: false
       explanation: "Incorrect. You should test performance throughout the development lifecycle, including production."
-    - content: "False."
+    - content: "False"
       isCorrect: true
       explanation: "Correct. You should test performance throughout the development lifecycle, including production."
   - content: "Which aspects of your workload should you monitor to help ensure that you meet performance targets?"

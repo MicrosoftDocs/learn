@@ -16,12 +16,12 @@ quiz:
   questions:
   - content: "Why did Contoso's technical team need to research performance capabilities in Azure?"
     choices:
-    - content: "The team wanted to verify that the performance targets that they already negotiated were realistic."
+    - content: "The team wanted to verify that the pre-negotiated performance targets were realistic."
       isCorrect: false
       explanation: "Incorrect. The team needed this information to prepare for the negotiations."
-    - content: "They needed to deploy a proof of concept to test the performance of the platform."
+    - content: "They needed to deploy a POC to test the performance of the platform."
       isCorrect: false
-      explanation: "Incorrect. Before a proof of concept is designed, performance targets must be negotiated. The team needed this information to prepare for the negotiations."
+      explanation: "Incorrect. Before a POC is designed, performance targets must be negotiated. The team needed this information to prepare for the negotiations."
     - content: "The team was ready to deploy the workload to production."
       isCorrect: false
       explanation: "Incorrect. The team was preparing to negotiate performance targets with stakeholders and needed to understand this information before they began negotiations."
@@ -30,23 +30,23 @@ quiz:
       explanation: "Correct. It was crucial that the team was well prepared for negotiations. Understanding their platform's capabilities before they began negotiating helped them set realistic targets that are achievable."
   - content: "Which aspect should you cover in a performance target negotiation?"
     choices:
-    - content: "The performance targets for each Azure resource to be deployed."
+    - content: "The performance targets for each Azure resource to be deployed"
       isCorrect: false
       explanation: "Incorrect. At this stage in the process, you haven't yet defined which individual resources might be deployed, so you should keep a broad perspective."
-    - content: "The anticipated growth pattern of the workload."
+    - content: "The anticipated growth pattern of the workload"
       isCorrect: true
       explanation: "Correct. The anticipated growth pattern of the workload is an important factor to include when working on identifying performance targets."
-    - content: "The tolerable amount of downtime for the workload."
+    - content: "The tolerable amount of downtime for the workload"
       isCorrect: false
       explanation: "Incorrect. This is a reliability consideration, not a performance consideration. It's important to keep these two concepts separate."
-    - content: "The operations headcount required to support the workload."
+    - content: "The operations headcount required to support the workload"
       isCorrect: false
       explanation: "Incorrect. While workload costs are an important consideration, this isn't a performance consideration. It's important to keep these two concepts separate."
   - content: "True or false: Performance targets should be contextualized in terms of workload flows, not individual resources."
     choices:
-    - content: "True."
+    - content: "True"
       isCorrect: true
       explanation: "Correct. Identifying flows and their performance targets is a more effective way to ensure that critical functions of the workload are designed appropriately."
-    - content: "False."
+    - content: "False"
       isCorrect: false
       explanation: "Incorrect. Identifying flows and their performance targets is a more effective way to ensure that critical functions of the workload are designed appropriately."

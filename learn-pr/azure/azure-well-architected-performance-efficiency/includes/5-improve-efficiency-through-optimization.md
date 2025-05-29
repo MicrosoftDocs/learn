@@ -1,7 +1,7 @@
 | :::image type="icon" source="../media/goal.svg"::: Improve system efficiency within your defined performance targets to get more value out of your workload. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-The targets set during the initial phase are based on a reasonable level of user experience, given various constraints. But it's worth revisiting and adjusting those targets to make the experience even better. To do that, you need a clear picture of how the system's being used, how it's changed, and how the platform or technology has evolved. The cycle of monitoring, optimizing, testing, and deploying is an ongoing process.
+The targets set during the initial phase are based on a reasonable level of user experience, given various constraints. It's worth revisiting and adjusting those targets to make the experience even better. To do that, you need a clear picture of how the system's being used, how it's changed, and how the platform or technology has evolved. The cycle of monitoring, optimizing, testing, and deploying is an ongoing process.
 
 When you optimize for efficiency, the workload can run by using fewer resources. That might leave you with extra capacity, which opens up a few options. You can use the capacity to make the system more reliable, reduce it to save on costs, or support new product features without needing more infrastructure.
 
@@ -9,7 +9,7 @@ When the system starts running more efficiently, it's a great time to set new pe
 
 **Example scenario**
 
-Contoso's HR engineering team handles custom integrations to the company's HR information system. These integrations include finance for payroll, hiring data for government labor law reports, and a few others. Most of these integrations run as Azure functions written in C#, which are hosted on an Azure Arc-enabled Kubernetes cluster in the company's datacenter. Overall, the jobs run smoothly, but a few cause some stress for the team because delays in processing sometimes mean the HR director doesn't get important data on time.
+Contoso's HR engineering team handles custom integrations to the company's HR information system. These integrations include finance for payroll, hiring data for government labor law reports, and a few others. Most of these integrations run as Azure functions written in C#, which are hosted on an Azure Arc-enabled Kubernetes cluster in the company's datacenter. Overall, the jobs run smoothly, but a few cause some stress for the team because delays in processing sometimes mean that the HR director doesn't get important data on time.
 
 ## Prioritize performance optimizations
 

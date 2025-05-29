@@ -9,9 +9,9 @@ metadata:
   ms.topic: module
   ms.service: azure-waf
 title: 'Microsoft Azure Well-Architected Framework - Performance Efficiency'
-summary: Scaling your system to handle load, identifying network bottlenecks, and optimizing your storage performance are important to ensure your users have the best experience. Learn how to make your application perform at its best.
+summary: To give users the best experience, it's important to scale your system to handle load, identify any network slowdowns, and optimize your storage performance. The tasks help your application run at its best.
 abstract:  | 
-  By the end of this module, you'll be more familiar with the five principles of the Performance Efficiency pillar and learn three approaches for each principle. You'll learn how to:
+  By the end of this module, you'll be more familiar with the four principles of the Performance Efficiency pillar and learn three approaches for each principle. You'll learn how to:
   - Set realistic performance goals for your workload, based on what the business stakeholders and workload owners agree on.
   - Pick a design that suits your performance needs.
   - Run your workload in a way that continuously tracks its performance efficiency.

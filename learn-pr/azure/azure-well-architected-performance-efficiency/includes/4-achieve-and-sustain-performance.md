@@ -3,9 +3,9 @@
 
 Development isn't a one-time effort. It's an ongoing process. Expect changes in performance as features change. User patterns and profiles can change, and even optimizations made in other areas of the Azure Well-Architected Framework can have an impact. Any of these changes can put extra pressure on your workload resources, so it's important to monitor how everything performs as the system grows and changes.
 
-Safeguard the system from changes so that it doesn't slide back on performance targets. Build testing and monitoring right into the development process. Run performance tests in production by using real load, and also simulate that load with automated testing before you go live. In both cases, have monitoring in place so you can verify how everything holds up and catch any problems early.
+Safeguard the system from changes so that it doesn't slide back on performance targets. Build testing and monitoring right into the development process. Run performance tests in production by using real load, and simulate that load with automated testing before you go live. In both cases, have monitoring in place so you can verify how everything holds up and catch any problems early.
 
-As you move through the development lifecycle, run different types of tests at each stage. Early on, check the proof of concept (POC) to make sure the performance results aren't totally unexpected. As development moves forward, do some quick, manual tests to set performance benchmarks. In the build phase, start putting together automated performance tests that check latency, stress levels, load capacity, and any other traits outlined in the test plans.
+As you move through the development life cycle, run different types of tests at each stage. Early on, check the proof of concept (POC) to make sure the performance results aren't totally unexpected. As development moves forward, do some quick, manual tests to set performance benchmarks. In the build phase, start putting together automated performance tests that check latency, stress levels, load capacity, and any other traits outlined in the test plans.
 
 Monitoring needs to be part of the whole process, not just something you do on the side. It helps you see how the system and its resources are performing over time. That way, you can make adjustments to get the most out of them and keep everything running up to performance standards.
 
@@ -34,7 +34,7 @@ These checkpoints ensure that each step in the deployment process meets the righ
 
 *Applying the approach and outcomes*
 
-- The team has added automated performance tests to the build pipeline. By setting up strict “go or no-go” rules based on performance, they feel more confident that new features won't get released if they cause a performance regression.
+- The team has added automated performance tests to the build pipeline. By setting up strict "go or no-go" rules based on performance, they feel more confident that new features won't get released if they cause a performance regression.
 
 - It was a smart move for the team to set up that testing because it caught a bug in the latest build. The bug made the app try to connect to the internet to download an image, even when the scanner was in offline mode, which caused a timeout every time someone scanned a ticket. Thanks to the automated tests, the team found the problem early and fixed it before the new version went out.
 
@@ -75,7 +75,7 @@ Changing targets resets the performance model, and you don't waste time optimizi
 
 *Applying the approach and outcomes*
 
-- The team notices that as more customers come on board, the data lookup for online events is doing some pretty heavy scanning across the dataset for a lot of queries.
+- The team notices that as more customers come on board, the data lookup for online events is doing some heavy scanning across the dataset for a lot of queries.
 
-- Some query tuning has helped keep the growing usage from making things worse. Looking ahead, the team's planning to split different events into separate data partitions. This approach should cut down on how much scanning the queries have to do and help the workload keep scaling smoothly.
+- Some query tuning has helped keep the growing usage from making things worse. Looking ahead, the team plans to split different events into separate data partitions. This approach should cut down on how much scanning the queries have to do and help the workload keep scaling smoothly.
 - They also realize that there's room to scale better by clearing out ticketing data from older events. Since the ticket validation system doesn't need to search through past events, that data can be moved to a separate store just for reporting and historical lookups.
