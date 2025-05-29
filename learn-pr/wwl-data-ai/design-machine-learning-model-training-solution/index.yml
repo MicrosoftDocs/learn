@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.design-machine-learning-model-training-solution
 metadata:
-  title: Get started with machine learning on Azure
+  title: Get started with machine learning in Azure
   description: Design a machine learning model training solution with Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
@@ -10,7 +10,7 @@ metadata:
   ms.topic: module
   ms.collection:
     - wwl-ai-copilot
-title: Get started with machine learning on Azure
+title: Get started with machine learning in Azure
 summary: Learn how to design a model training solution for machine learning projects.
 abstract: |
   In this module, you learn how to:
