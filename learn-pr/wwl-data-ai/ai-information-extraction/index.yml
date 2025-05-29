@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.ai-information-extraction
 metadata:
-  title: Get started with AI-powered information extraction on Azure
+  title: Get started with AI-powered information extraction in Azure
   description: AI gives you the power to unlock insights from your data. In this module, you'll learn how to use Azure AI services to extract information from content.
   author: graememalcolm
   ms.author: gmalc
@@ -11,7 +11,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
-title: Get started with AI-powered information extraction on Azure
+title: Get started with AI-powered information extraction in Azure
 summary: AI gives you the power to unlock insights from your data. In this module, you'll learn how to use Azure AI services to extract information from content.
 abstract: |
   After completing this module, you'll be able to:
