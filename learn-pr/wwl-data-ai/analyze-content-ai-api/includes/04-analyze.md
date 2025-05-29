@@ -23,7 +23,7 @@ headers = {
         "Ocp-Apim-Subscription-Key": "<YOUR_API_KEY>",
         "Content-Type": "application/octet-stream"}
 
-url = f"{<YOUR_ENDPOINT>}/contentunderstanding/analyzers/{analyzer_name}:analyze?api-version=2024-12-01-preview"
+url = f"{<YOUR_ENDPOINT>}/contentunderstanding/analyzers/{analyzer_name}:analyze?api-version=2025-05-01-preview"
 
 response = requests.post(url, headers=headers, data=image_data)
 
@@ -32,7 +32,7 @@ response_json = response.json()
 id_value = response_json.get("id")
 
 # Use a GET request to check the status of the analysis operation
-result_url = f"{<YOUR_ENDPOINT>}/contentunderstanding/analyzers/{analyzer_name}/results/{id_value}?api-version=2024-12-01-preview"
+result_url = f"{<YOUR_ENDPOINT>}/contentunderstanding/analyzerResults/{id_value}?api-version=2025-05-01-preview"
 
 result_response = requests.get(result_url, headers=headers)
 
@@ -70,7 +70,7 @@ Here's the complete JSON response for the business card analysis:
     "status": "Succeeded",
     "result": {
         "analyzerId": "biz_card_analyser_2",
-        "apiVersion": "2024-12-01-preview",
+        "apiVersion": "2025-05-01-preview",
         "createdAt": "2025-05-16T03:51:46Z",
         "warnings": [],
         "contents": [

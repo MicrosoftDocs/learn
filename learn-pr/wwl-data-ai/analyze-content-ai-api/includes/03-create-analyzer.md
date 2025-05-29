@@ -7,7 +7,7 @@ Analyzers are based on schemas that define the fields you want to extract or gen
 ```json
 {
     "description": "Simple business card",
-    "scenario": "document",
+    "baseAnalyzerId": "prebuilt-documentAnalyzer",
     "config": {
         "returnDetails": true
     },
@@ -28,7 +28,7 @@ Analyzers are based on schemas that define the fields you want to extract or gen
 }
 ```
 
-This example schema for a *document* analysis scenario describes two fields that you would expect to find on a business card: *ContactName* and *EmailAddress*. Both fields are defined as string data types, and are expected to be *extracted* from a document (in other words, the string values are expected to exist in the document so they can be "read"; rather than being fields that can be *generated* by inferring information about the document).
+This example of a custom analyzer schema is based on the pre-built *document* analyzer, and describes two fields that you would expect to find on a business card: *ContactName* and *EmailAddress*. Both fields are defined as string data types, and are expected to be *extracted* from a document (in other words, the string values are expected to exist in the document so they can be "read"; rather than being fields that can be *generated* by inferring information about the document).
 
 > [!NOTE]
 > This example is deliberately simple, with the minimal information needed to create a working analyzer. In reality, the schema would likely include more fields of different types, and the analyzer definition would include more configuration settings. The JSON might even include a sample document. See the [Azure AI Content Understanding REST API documentation](/rest/api/contentunderstanding/content-analyzers/create-or-replace) for more details.
@@ -56,7 +56,7 @@ headers = {
     "Ocp-Apim-Subscription-Key": "<YOUR_API_KEY>",
     "Content-Type": "application/json"}
 
-url = f"{<YOUR_ENDPOINT>}/contentunderstanding/analyzers/{analyzer_name}?api-version=2024-12-01-preview"
+url = f"{<YOUR_ENDPOINT>}/contentunderstanding/analyzers/{analyzer_name}?api-version=2025-05-01-preview"
 
 response = requests.put(url, headers=headers, data=json.dumps(schema_json))
 
