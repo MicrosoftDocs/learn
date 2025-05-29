@@ -26,7 +26,7 @@ The first step to adding observability to the **:::no-loc text="eShopLite":::** 
 1. In the **Solution Explorer**, at the bottom of the **EXPLORER** pane, right-click the **eShopLite** solution, and then select **New Project**.
 1. In the **Select a template to create a new .NET project** dialog, select **Class Library (Common, Library)**.
 1. In the **Name** field, enter **Diagnostics**.
-1. In the **Project will be created in** dropdown, select **Default directory**.
+1. In the **Project will be created in** dropdown, ensure the file path directory is */workspaces/mslearn-dotnet-cloudnative/dotnet-observability/eShopLite/*.
 
 ### Add OpenTelemetry packages
 
