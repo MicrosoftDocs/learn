@@ -76,7 +76,7 @@ Resources often need to refer to the properties of other resources. For example,
 > [!TIP]
 > It's a best practice to look up keys from other resources in this way instead of passing them around through outputs. You'll always get the most up-to-date data. Also, it's important to note that outputs aren't designed to handle secure data like keys.
 
-The way that you access the information about a resource depends on the type of information you're getting. If it's a property that isn't secure, you ordinarily use only the `properties` of the resource. The following example template deploys an Azure Functions application and uses the access details (*instrumentation key*) for an existing Application Insights instance:
+The way that you access the information about a resource depends on the type of information you're getting. If it's a property that isn't considered sensitive, you ordinarily use only the `properties` of the resource. The following example template deploys an Azure Functions application and uses the access details (*instrumentation key*) for an existing Application Insights instance:
 
 :::code language="bicep" source="code/6-existing-properties.bicep" highlight="1-3,15":::
 

@@ -30,7 +30,7 @@ First, you create a new Bicep template that contains an Azure Cosmos DB account.
    > [!TIP]
    > Bicep is strict about where you put line breaks, so be sure to add line breaks only where shown here.
 
-   This Bicep template deploys an Azure Cosmos DB account that is the parent resource you build upon in the next section.
+   This Bicep template deploys an Azure Cosmos DB account that's the parent resource you build upon in the next section.
 
 1. Save the changes to the file.
 
@@ -83,7 +83,7 @@ After you complete the preceding steps, your _main.bicep_ file should look like 
 
 :::code language="bicep" source="code/4-complete.bicep" :::
 
-If it doesn't, either copy the example or adjust your template to match the example.
+If it doesn't look the same, either copy the example or adjust your template to match the example.
 
 ## Deploy the template to Azure
 
@@ -93,7 +93,7 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ### Deploy the template to Azure
 
-Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This operation can take a minute or two to complete, before you see a successful deployment.
+Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. It might take a minute or two before you see a successful deployment.
 
 ```azurecli
 az deployment group create --name main --template-file main.bicep
@@ -107,7 +107,7 @@ az deployment group create --name main --template-file main.bicep
 
 ### Deploy the template to Azure
 
-Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This operation can take a minute or two to complete, before you see a successful deployment.
+Deploy the template to Azure by using the following Azure PowerShell command in the terminal. It might take a minute or two before you see a successful deployment.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
@@ -120,7 +120,7 @@ New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
 
    1. Select your avatar in the upper-right corner of the page, and then select **Switch directory**. 
-   1. A list of directories appears. Select the **Switch** button next to Microsoft Learn Sandbox.
+   1. A list of directories appears. Select the **Switch** button next to **Microsoft Learn Sandbox**.
 
 1. On the home page, select **Resource groups**. The **Resource groups** pane appears.
 
@@ -138,4 +138,4 @@ New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 
     :::image type="content" source="../media/4-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with three Cosmos DB resources listed." border="true":::
 
-1. Leave the page open in your browser, so you can check on deployments again later.
+1. Leave the page open in your browser so you can check on deployments again later.

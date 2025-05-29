@@ -36,7 +36,7 @@ Notice that the example uses the `scope` property with the Azure Cosmos DB accou
 
 ## Extension resource IDs
 
-An ID for an extension resource is slightly different than IDs for other resources. It consists of its parent resource ID, the separator `/providers/`, and the extension resource ID.
+An ID for an extension resource is slightly different from IDs for other resources. It consists of its parent resource ID, the separator `/providers/`, and the extension resource ID.
 
 Say you deployed the previously mentioned Azure Cosmos DB account, and the account was named `toyrnd`. Here's what the lock's resource ID would look like:
 
