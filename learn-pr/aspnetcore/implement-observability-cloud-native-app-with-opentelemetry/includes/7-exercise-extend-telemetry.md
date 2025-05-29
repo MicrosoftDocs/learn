@@ -6,7 +6,7 @@ In this exercise, you add new metrics to apps and see how to view them in your o
 
 You want to have greater visibility of how a stock changes over time, so you create a custom metric.
 
-1. In Visual Studio Code, on the **EXPLORER** pane, right-click the *Products* folder and then select **New File**.
+1. On the **EXPLORER** pane, right-click the *Products* folder and then select **New File**.
 
 1. In the **File name** field, enter **ProductsMetrics.cs**.
 

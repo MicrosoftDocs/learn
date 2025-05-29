@@ -21,7 +21,7 @@ To use **Visual Studio Code**, clone the [https://github.com/MicrosoftDocs/mslea
 
 The first step to adding observability to the **:::no-loc text="eShopLite":::** app is to introduce a new diagnostic project to the solution. This project contains all the OpenTelemetry packages and configurations that you'll use to add observability to the app.
 
-1. In the Visual Studio Code command palette, enter **>.NET: Open Solution**.
+1. In the Codespace command palette, enter **>.NET: Open Solution**.
 1. Select **dotnet-observability/eShopLite/eShopLite.sln**.
 1. In the **Solution Explorer**, at the bottom of the **EXPLORER** pane, right-click the **eShopLite** solution, and then select **New Project**.
 1. In the **Select a template to create a new .NET project** dialog, select **Class Library (Common, Library)**.
@@ -32,7 +32,7 @@ The first step to adding observability to the **:::no-loc text="eShopLite":::** 
 
 Now add the OpenTelemetry packages to the new diagnostic project.
 
-1. By using the **TERMINAL** pane at the bottom of Visual Studio Code, go to the *Diagnostics* project folder:
+1. By using the **TERMINAL** pane at the bottom of Codespace, go to the *Diagnostics* project folder:
 
     ```bash
     cd dotnet-observability/eShopLite/Diagnostics
