@@ -31,7 +31,7 @@ Analyzers are based on schemas that define the fields you want to extract or gen
 This example schema for a *document* analysis scenario describes two fields that you would expect to find on a business card: *ContactName* and *EmailAddress*. Both fields are defined as string data types, and are expected to be *extracted* from a document (in other words, the string values are expected to exist in the document so they can be "read"; rather than being fields that can be *generated* by inferring information about the document).
 
 > [!NOTE]
-> This example is deliberately simple, with the minimal information needed to create a working analyzer. In reality, the schema would likely include more fields of different types, and the analyzer definition would include more configuration settings. The JSON might even include a sample document. See the [Azure AI Content Understanding REST API documentation](/rest/api/contentunderstanding/analyzers/create-or-replace) for more details.
+> This example is deliberately simple, with the minimal information needed to create a working analyzer. In reality, the schema would likely include more fields of different types, and the analyzer definition would include more configuration settings. The JSON might even include a sample document. See the [Azure AI Content Understanding REST API documentation](/rest/api/contentunderstanding/content-analyzers/create-or-replace) for more details.
 
 ## Using the REST API to create an analyzer
 
