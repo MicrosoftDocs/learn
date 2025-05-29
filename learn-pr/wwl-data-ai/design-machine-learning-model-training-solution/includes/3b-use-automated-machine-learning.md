@@ -1,4 +1,4 @@
-Let's see how we can get started with Azure Machine Learning in a user interface. You can use **Azure Machine Learning studio**, a browser-based portal for managing your machine learning resources and jobs, to access many types of machine learning capabilities. 
+You can use **Azure Machine Learning studio**, a browser-based portal for managing your machine learning resources and jobs, to access many types of machine learning capabilities. 
 
 In Azure Machine Learning studio, you can (among other things):
 
@@ -32,8 +32,8 @@ Which compute options best fit your needs is often a case of trial and error. Wh
 
 ## Azure Automated Machine Learning 
 
-When you use Azure Machine Learning's Automated Machine Learning capabilities, you are automatically assigned compute. **Azure Automated Machine Learning**, also referred to as automated ML or AutoML, is the process of automating the time-consuming, iterative tasks of machine learning model development.
+When you use Azure Machine Learning's Automated machine learning capabilities, you are automatically assigned compute. **Azure Automated machine learning** automates the time-consuming, iterative tasks of machine learning model development.
 
-In Azure Machine Learning Studio, you can use AutoML to design and run your automated ML training experiments with the same steps described in this module, without needing to write code. Azure AutoML provides a step-by-step wizard that helps you run machine learning training jobs. The automated training can be used for many machine learning tasks, including regression, time-series forecasting, classification, computer vision, and natural language processing tasks. Within AutoML, you have access to your own datasets. Your trained machine learning models can be deployed as services. 
+In Azure Machine Learning studio, you can use Automated machine learning to design and run your training experiments with the same steps described in this module, without needing to write code. Azure Automated machine learning provides a step-by-step wizard that helps you run machine learning training jobs. The automated training can be used for many machine learning tasks, including regression, time-series forecasting, classification, computer vision, and natural language processing tasks. Within AutoML, you have access to your own datasets. Your trained machine learning models can be deployed as services. 
 
 Next, let's look at model deployment options.

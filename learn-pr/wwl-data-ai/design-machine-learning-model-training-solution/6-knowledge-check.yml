@@ -10,10 +10,10 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 1
+durationInMinutes: 3
 quiz:
   questions:
-  - content: "What does automated machine learning in Azure Machine Learning enable you to do?"
+  - content: "What does Automated machine learning in Azure Machine Learning enable you to do?"
     choices:
     - content: "Automatically deploy new versions of a model as they're trained"
       isCorrect: false
@@ -24,3 +24,25 @@ quiz:
     - content: "Automatically run multiple training jobs using different algorithms and parameters to find the best model"
       isCorrect: true
       explanation: "Correct. Automated machine learning runs multiple training jobs, varying algorithms and parameters, to find the best model for your data."
+  - content: "Which of the following factors should you consider when choosing a service to train a machine learning model?"
+    choices:
+    - content: "The number of users in your organization."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "How much time you want to invest in model training."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "The approximate number of predictions the model needs to make in a month."
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "What is a key feature of Azure Machine Learning that supports end-to-end machine learning workflows?"
+    choices:
+    - content: "It provides ready-to-use models for image classification."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "It requires integration with Microsoft Fabric to deploy models."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: " It offers centralized dataset management and automated machine learning."
+      isCorrect: true
+      explanation: "Correct."

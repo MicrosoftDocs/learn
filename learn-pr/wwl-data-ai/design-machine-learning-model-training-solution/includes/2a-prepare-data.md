@@ -45,3 +45,5 @@ For example, to create a dataset you can use to train the forecasting model, you
 1. Extract data measurements as JSON objects from the IoT devices.
 1. Convert the JSON objects to a table.
 1. Transform the data to get the temperature per machine per minute.
+
+Next, let's explore the services we can use to train machine learning models.

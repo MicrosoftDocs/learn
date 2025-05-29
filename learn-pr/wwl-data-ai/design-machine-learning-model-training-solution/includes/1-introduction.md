@@ -15,3 +15,5 @@ In this module, you learn how to design an end-to-end machine learning solution 
 
 > [!Note]
 > The diagram is a simplified representation of the machine learning process. Typically, the process is iterative and continuous. For example, when monitoring the model you may decide to go back and retrain the model.
+
+Next, let's look at how we can get started on a machine learning solution by defining the problem.

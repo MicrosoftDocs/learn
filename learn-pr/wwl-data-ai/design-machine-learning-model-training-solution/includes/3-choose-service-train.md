@@ -36,4 +36,4 @@ Azure Machine Learning provides the following features and capabilities to suppo
 - Integration with common machine learning frameworks such as MLflow, which make it easier to manage model training, evaluation, and deployment at scale.
 - Built-in support for visualizing and evaluating metrics for responsible AI, including model explainability, fairness assessment, and others.
 
-
+Next, let's see how we can get started with Azure Machine Learning in a user interface.
