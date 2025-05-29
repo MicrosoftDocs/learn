@@ -6,4 +6,6 @@ Extra Reading:
 
 - [GitHub Copilot documentation](https://docs.github.com/copilot)
 - [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview)
-- [GitHub Copilot: Your AI pair programmer](https://copilot.github.com/)
+- [GitHub Copilot in Visual Studio Code - FAQ](https://code.visualstudio.com/docs/copilot/faq)
+- [GitHub Copilot in Visual Studio Code - Cheat Sheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
+- [GitHub Copilot in Visual Studio Code - Workspace Context](https://code.visualstudio.com/docs/copilot/reference/workspace-context)

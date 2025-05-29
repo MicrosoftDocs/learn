@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-code-improvements-using-github-copilot-tools.exercise-refactor-existing-code-github-copilot
+title: Exercise - Refactor existing code using GitHub Copilot
+metadata:
+  title: Exercise - Refactor existing code using GitHub Copilot
+  description: "Exercise - Refactor existing code using GitHub Copilot."
+  ms.date: 05/29/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 30
+content: |
+  [!include[](includes/8-exercise-refactor-existing-code-github-copilot.md)]
