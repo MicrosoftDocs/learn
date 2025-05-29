@@ -1,4 +1,4 @@
-In this exercise, you'll update the Bicep file you previously created so it uses a module for the Azure App Service resources. Modules help to keep the intention of the main file clearer. You can reuse the App Service module in other files if you choose to.
+In this exercise, you'll update the Bicep file you previously created so it uses a module for the Azure App Service resources. Modules help to keep the intention of the main file clearer. You can reuse the App Service module in other Bicep files if you choose to.
 
 During the process, you'll:
 
@@ -6,8 +6,8 @@ During the process, you'll:
 >
 > - Add a new module and move the App Service resources into it.
 > - Reference the module from the main Bicep file.
-> - Add an output for the App Service app's host name, and emit it from the module and file deployments.
-> - Test the deployment to ensure that the file is valid.
+> - Add an output for the App Service app's host name, and emit it from the module and Bicep file deployments.
+> - Test the deployment to ensure that the Bicep file is valid.
 
 ## Add a new module file
 
@@ -17,13 +17,13 @@ During the process, you'll:
 
    :::code language="bicep" source="code/8-app-service.bicep" range="1-28" :::
 
-   Notice that you've copied the parameters and variables from your _main.bicep_ file, because the _appService.bicep_ file needs to be self-contained.
+   Notice that you've copied the parameters and variables from your _main.bicep_ Bicep file since the _appService.bicep_ Bicep file needs to be self-contained.
 
 1. Save the changes to the file. Notice that Visual Studio Code doesn't show you any red squiggles to indicate warnings about missing variables, missing parameters, or invalid resources.
 
-### Add a reference to the module from the parent file
+### Add a reference to the module from the parent Bicep file
 
-Now that you have a complete module to deploy the App Service resources, you can refer to the module within the parent file. Because the module deploys the App Service resources, you can delete the associated resources and variables from the parent file.
+Now that you've a complete module to deploy the App Service resources, you can refer to the module within the parent Bicep file. Because the module deploys the App Service resources, you can delete the associated resources and variables from the parent file.
 
 1. In the _main.bicep_ file, delete the App Service resources and the `appServicePlanName` and `appServicePlanSkuName` variable definitions. Don't delete the App Service parameters, because you still need them. Also, don't delete the storage account parameters, variable, or resources.
 
@@ -31,7 +31,7 @@ Now that you have a complete module to deploy the App Service resources, you can
 
    :::code language="bicep" source="code/8-template.bicep" range="25-32" :::
 
-   Notice that you're specifying the parameters for your module by referencing the parameters in the parent file.
+   Notice that you're specifying the parameters for your module by referencing the parameters in the parent Bicep file.
 
 1. Save the changes to the file.
 
@@ -45,7 +45,7 @@ Now that you have a complete module to deploy the App Service resources, you can
 
 1. Save the changes to the file.
 
-   This output is declared within a Bicep file we'll use as a module, so it's going to be available only to the parent file. You also need to return the output to the person who deployed the file.
+   This output is declared within a Bicep file we'll use as a module, so it's going to be available only to the parent Bicep file. You also need to return the output to the person who deployed the file.
 
 1. Open the _main.bicep_ file and add the following code at the bottom of the file:
 
@@ -65,7 +65,7 @@ Your _appService.bicep_ file should look like this example:
 
 :::code language="bicep" source="code/8-app-service.bicep" :::
 
-If either file doesn't match, copy the example or adjust your file to match the example.
+If either Bicep file doesn't match, copy the example or adjust your file to match the example.
 
 ### Deploy the updated Bicep file
 

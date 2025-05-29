@@ -7,21 +7,21 @@ During the process, you'll:
 
 > [!div class="checklist"]
 >
-> - Update the file to include a `location` parameter.
-> - Update the file to include parameters and variables for the resource names.
+> - Update the Bicep file to include a `location` parameter.
+> - Update the Bicep file to include parameters and variables for the resource names.
 > - Use expressions to set default values for the parameters.
-> - Update the file to include variables for the SKU of each resource.
-> - Test the deployment to ensure that the file is valid.
+> - Update the Bicep file to include variables for the SKU of each resource.
+> - Test the deployment to ensure that the Bicep file is valid.
 
 ## Add the location and resource name parameters
 
-1. In the _main.bicep_ file in Visual Studio Code, add the following code to the top of the file:
+1. In the _main.bicep_ file in Visual Studio Code, add the following code to the top of the Bicep file:
 
    :::code language="bicep" source="code/6-template-1.bicep" range="1-5":::
 
-   The Bicep linter adds yellow squiggly lines underneath each parameter and variable name to indicate they're not used in the file. You'll fix this issue soon.
+   The Bicep linter adds yellow squiggly lines underneath each parameter and variable name to indicate they're not used in the Bicep file. You'll fix this issue soon.
 
-   Notice that you're using expressions that include string interpolation and the `uniqueString()` function to define default parameter values. Someone deploying this file can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
+   Notice that you're using expressions that include string interpolation and the `uniqueString()` function to define default parameter values. Someone deploying this Bicep file can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
    Also notice that you're using a variable for the Azure App Service plan name, but you're using parameters for the other names. Storage accounts and App Service apps need globally unique names, but App Service plan names need to be unique only within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
 

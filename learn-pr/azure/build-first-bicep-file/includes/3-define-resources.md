@@ -41,13 +41,13 @@ Let's look closely at some key parts of this resource definition:
 - You'll then set other details of the resource, such as its location, SKU (pricing tier), and kind. There are also properties you can define that are different for each resource type. Different API versions might introduce different properties, too. In this example, we're setting the storage account's access tier to `Hot`.
 
 > [!TIP]
-> Resource names often have rules you must follow, like maximum lengths, allowed characters, and uniqueness across all of Azure. The requirements for resource names are different for each Azure resource type. Be sure to understand the naming restrictions and requirements before you add them to your file.
+> Resource names often have rules you must follow, like maximum lengths, allowed characters, and uniqueness across all of Azure. The requirements for resource names are different for each Azure resource type. Be sure to understand the naming restrictions and requirements before you add them to your Bicep file.
 
 ## What happens when resources depend on each other?
 
 A Bicep file usually includes several resources. Often, you need a resource to depend on another resource. You might have to extract some information from one resource to be able to define another. If you're deploying a web application, you'll have to create the server infrastructure before you can add an application to it. These relationships are called _dependencies_.
 
-You'll need to deploy an App Service app for the file that will help launch the toy product, but to create an App Service app, you first need to create an App Service plan. The App Service plan represents the server-hosting resources, and it's declared like this example:
+You'll need to deploy an App Service app for the Bicep file that will help launch the toy product, but to create an App Service app, you first need to create an App Service plan. The App Service plan represents the server-hosting resources, and it's declared like this example:
 
 ```bicep
 resource appServicePlan 'Microsoft.Web/serverFarms@2023-12-01' = {
@@ -74,7 +74,7 @@ resource appServiceApp 'Microsoft.Web/sites@2023-12-01' = {
 }
 ```
 
-This file instructs Azure to host the app on the plan you created. Notice that the plan's definition includes the App Service plan's symbolic name on this line: `serverFarmId: appServicePlan.id`. This line means that Bicep will get the App Service plan's _resource ID_ using the `id` property. It's effectively saying: _this app's server-farm ID is the ID of the App Service plan defined earlier_.
+This Bicep file instructs Azure to host the app on the plan you created. Notice that the plan's definition includes the App Service plan's symbolic name on this line: `serverFarmId: appServicePlan.id`. This line means that Bicep will get the App Service plan's _resource ID_ using the `id` property. It's effectively saying: _this app's server-farm ID is the ID of the App Service plan defined earlier_.
 
 > [!TIP]
 > In Azure, a _resource ID_ is a unique identifier for each resource. The resource ID includes the Azure subscription ID, the resource group name, and the resource name, along with some other information.

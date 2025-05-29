@@ -12,11 +12,11 @@ metadata:
   ms.topic: module
   ms.devlang: bicep
 title: Build your first Bicep file
-summary: Define Azure resources within a Bicep file. Improve the consistency and reliability of your deployments, reduce the manual effort required, and scale your deployments across environments. Your file will be flexible and reusable by using parameters, variables, expressions, and modules.
+summary: Define Azure resources within a Bicep file. Improve the consistency and reliability of your deployments, reduce the manual effort required, and scale your deployments across environments. Your Bicep file will be flexible and reusable by using parameters, variables, expressions, and modules.
 abstract: |
   After completing this module, you'll be able to:
     - Create and deploy Azure resources by using Bicep.
-    - Add flexibility to your files by using parameters, variables, and expressions.
+    - Add flexibility to your Bicep files by using parameters, variables, and expressions.
     - Create and deploy a Bicep file that includes modules.
 prerequisites: |
   You should be familiar with:
