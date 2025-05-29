@@ -47973,6 +47973,46 @@
       "source_path": "learn-pr/azure/cloud-adoption-framework-plan/6-summary.md",
       "redirect_url": "/training/paths/cloud-adoption-framework/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/2-examine-github-copilot-code-improvement.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/3-exercise-improve-code-quality-github-copilot-chat.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/4-exercise-improve-reliability-performance-github-copilot-chat.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/5-exercise-improve-code-security-github-copilot-chat.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/6-exercise-complete-app-improvement-challenge.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/7-review-app-improvement-solution.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/8-knowledge-check.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/9-summary.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/10-summary",
+      "redirect_document_id": false
     }
   ]
 }
