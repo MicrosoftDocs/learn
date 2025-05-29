@@ -5,7 +5,7 @@ sandbox: true
 metadata:
   unitType: exercise
   title: Exercise - Add parameters and variables to your Bicep file
-  description: Learn how to build reusable files by using parameters to accept input, and variables to store and reuse values within the file.
+  description: Learn how to build reusable Bicep files by using parameters to accept input and variables to store and reuse values within the file.
   ms.date: 01/31/2025
   author: mumian
   ms.author: jgao
