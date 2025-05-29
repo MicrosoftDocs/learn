@@ -12,12 +12,12 @@ To meet these objectives, you'll:
 
 ## Get the Azure DevOps project
 
-Here, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module. You'll set it up by running a template that creates a project in Azure DevOps.
+In this section, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module. You'll set it up by running a template that creates a project in Azure DevOps.
 
-The modules in this learning path are part of a progression. For learning purposes, each module has an associated Azure DevOps project.
+The modules in this learning path are part of a progression. Each module has an associated Azure DevOps project.
 
 > [!TIP]
-> Even if you completed the previous module in the learning path, please follow these instructions to create a new project and ensure that you give it a new name.
+> Even if you completed the previous module in the learning path, follow these instructions to create a new project and ensure that you give it a new name.
 
 ### Run the template
 
@@ -25,22 +25,22 @@ Run a template that sets up your Azure DevOps organization.
 
 1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
-1. When prompted to **Enter the template number from the list of templates**, enter **41** for **Test your Bicep code by using Azure Pipelines**, then press **Enter**.
+1. When prompted to **Enter the template number from the list of templates**, enter **41** for **Test your Bicep code by using Azure Pipelines**, and then select **Enter**.
 
 1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) or use device login.
 
    > [!NOTE]
-   > If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). For this module, you can use **Full access**, but in a real-world situation, you should ensure you grant only the necessary scopes.
+   > If you set up a PAT, be sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). For this module, you can use **Full access**, but in a real-world situation, you should grant only the necessary scopes.
 
-1. Enter your Azure DevOps organization name, then press **Enter**.
+1. Enter your Azure DevOps organization name, and then select **Enter**.
 
-1. If prompted, enter your Azure DevOps PAT, then press **Enter**.
+1. If prompted, enter your Azure DevOps PAT, then select **Enter**.
 
-1. Enter a project name such as *toy-website-test*, then press **Enter**.
+1. Enter a project name such as *toy-website-test*, then select **Enter**.
 
-1. Once your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
+1. After your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
 
-### Fork the repository
+## Fork the repository
 
 If you haven't already, create a fork of the **mslearn-test-bicep-code-using-github-actions** repository.
 
@@ -54,31 +54,31 @@ If you haven't already, create a fork of the **mslearn-test-bicep-code-using-git
 
 1. Select **Repos** > **Files**.
 
-   :::image type="content" source="../media/4-repos-files.png" alt-text="Screenshot of Azure DevOps that shows the Repos menu, with Files highlighted.":::
+   :::image type="content" source="../media/4-repos-files.png" alt-text="Screenshot of Azure DevOps that shows the Repos menu. Files is highlighted.":::
 
 1. Select **Clone**.
 
-   :::image type="content" source="../media/4-clone.png" alt-text="Screenshot of Azure DevOps that shows the repository, with the Clone button highlighted.":::
+   :::image type="content" source="../media/4-clone.png" alt-text="Screenshot of Azure DevOps that shows the repository. The Clone button is highlighted." lightbox="../media/4-clone.png":::
 
-1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the displayed username and password to somewhere safe.
+1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the displayed username and password somewhere safe.
 
 1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
-    :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the button for cloning in Visual Studio Code highlighted.":::
+    :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings. The button for cloning in Visual Studio Code is highlighted.":::
 
-1. If a dialog box appears, prompting you to allow an extension to open the repository URI, select Open.
+1. If a dialog prompts you to allow an extension to open the repository URI, select **Open**.
 
-1. Create a folder to use for the repository, and then choose **Select Repository Location**.
+1. Create a folder to use for the repository, and then click **Select Repository Location**.
 
 1. You're using this repository for the first time, so you're prompted to sign in.
 
    - If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
 
-   - If you're using macOS, enter the Git username and password that you generated a few moments ago.
+   - If you're using macOS, enter the Git username and password that you generated a moment ago.
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
 
-   :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code that shows a prompt to open the cloned repository, with the Open button highlighted.":::
+   :::image type="content" source="../../includes/media/open-cloned-repo.png" alt-text="Screenshot of the Visual Studio Code prompt to open the cloned repository. The Open button is highlighted.":::
 
 [!include[](../../includes/azure-template-pipeline-sign-in.md)]
 
@@ -86,7 +86,7 @@ If you haven't already, create a fork of the **mslearn-test-bicep-code-using-git
 
 ::: zone pivot="cli"
 
-To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
+To create a resource group, run this Azure CLI command in the Visual Studio Code terminal:
 
 ```azurecli
 az group create --name ToyWebsiteTest --location westus3
@@ -110,31 +110,31 @@ Next, create a service connection in Azure Pipelines. This connection automatica
 
 1. In your browser, select **Project settings**.
 
-   :::image type="content" source="../../includes/media/azure-devops-project-settings.png" alt-text="Screenshot of Azure DevOps that shows the menu item for project settings highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-project-settings.png" alt-text="Screenshot of Azure DevOps. The menu item for project settings is highlighted.":::
 
 1. Select **Service connections** > **Create service connection**.
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows selections for creating a service connection.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection.png" alt-text="Screenshot of Azure DevOps that shows the steps for creating a service connection.":::
 
 1. Select **Azure Resource Manager** > **Next**.
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the Azure Resource Manager service connection type highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps. The Azure Resource Manager service connection type is selected.":::
 
 1. Select **Service principal (automatic)** > **Next**.
 
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps that shows the service principal option highlighted.":::
+   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps. The service principal option is selected.":::
 
 1. In the **Subscription** dropdown list, select your Azure subscription.
 
-   A pop-up window might appear, asking you to sign in to Azure. If it does, enter your credentials and sign in.
+   A pop-up window might prompt you to sign in to Azure. If it does, enter your credentials and sign in.
 
 1. In the **Resource group** dropdown list, select **ToyWebsiteTest**.
 
 1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
 
-   :::image type="content" source="../media/4-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the details completed for creating a service connection, with the Save button highlighted.":::
+   :::image type="content" source="../media/4-create-service-connection-principal-details.png" alt-text="Screenshot that shows the steps for creating a service connection.":::
 
    > [!TIP]
-   > For simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
+   > For the sake of simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
 
 1. Select **Save**.
