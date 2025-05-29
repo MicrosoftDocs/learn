@@ -26,7 +26,7 @@ modules:
 - learn.azure-databases.postgresql.basic-sql-simple-select
 - learn.azure-databases.postgresql.basic-sql-where-clause-subqueries
 - learn.azure-databases.postgresql.basic-sql-limit-offset-order-by
-- learn.azure-databases.postgresql.basic-sql-joining-tables
+- learn.azure-databases.postgresql.basic-sql-join-tables
 - learn.azure-databases.postgresql.basic-sql-aggregate-functions-grouping
 trophy:
   uid: learn.azure-databases.postgresql.azure-pg-playground.trophy

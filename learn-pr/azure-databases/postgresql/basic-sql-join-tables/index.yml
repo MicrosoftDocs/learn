@@ -170,4 +170,4 @@ units:
 - learn.azure-database.postgresql.basic-sql-join-tables.natural-and-full-join
 - learn.azure-database.postgresql.basic-sql-join-tables.summary
 badge:
-  uid: learn.azure-database.postgresql.basic-sql-joining-tables.badge
+  uid: learn.azure-database.postgresql.basic-sql-join-tables.badge
