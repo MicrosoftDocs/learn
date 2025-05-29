@@ -48013,6 +48013,36 @@
       "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/9-summary.md",
       "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/10-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/2-examine-explain-document-features-github-copilot.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/3-exercise-generate-explanations-using-github-copilot-chat.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/4-exercise-generate-project-documentation-using-github-copilot-chat.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/5-exercise-generate-code-documentation-using-github-copilot.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/6-exercise-complete-code-documentation-challenge.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/7-review-code-documentation-solution.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
     }
   ]
 }
