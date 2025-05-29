@@ -36,3 +36,14 @@ quiz:
     - content: " Word2Vec"
       isCorrect: false
       explanation: "Incorrect. Word2Vec is a technique for generating word embeddings, which are dense vector representations of words that capture semantic relationships between words. "
+  - content: "Which of the following best describes the role of embeddings in natural language processing (NLP)?"
+    choices:
+      - content: "They visualize text data in two-dimensional space for easier interpretation."
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "They summarize large text corpora into short, meaningful sentences." 
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "They convert language tokens into vectors that capture semantic relationships."
+        isCorrect: true
+        explanation: "Correct."
