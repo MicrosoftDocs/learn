@@ -4,7 +4,7 @@ title: Exercise - Remove header information
 metadata:
   title: Exercise - Remove header information
   description: In this exercise, you add a web API to Azure API Management and then use a policy to control the HTTP headers that the API returns.
-  ms.date: 08/10/2023
+  ms.date: 05/30/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit

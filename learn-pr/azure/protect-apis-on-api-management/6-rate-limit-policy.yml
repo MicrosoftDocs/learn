@@ -4,7 +4,7 @@ title: Throttle API requests
 metadata:
   title: Throttle API requests
   description: In this unit, you learn about throttling (rate limiting) policies and how to use them to prevent users from overusing resources.
-  ms.date: 08/11/2023
+  ms.date: 05/30/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit

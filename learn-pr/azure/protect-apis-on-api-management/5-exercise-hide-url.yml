@@ -4,7 +4,7 @@ title: Exercise - Mask URLs with a transformation policy
 metadata:
   title: Exercise - Mask URLs with a transformation policy
   description: In this module, you use a policy to hide the URL of the hosted URL to ensure that its location isn't passed to users.
-  ms.date: 08/10/2023
+  ms.date: 05/30/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit
