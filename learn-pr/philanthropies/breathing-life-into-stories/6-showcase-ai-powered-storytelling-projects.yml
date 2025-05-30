@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.breathing-life-into-stories.showcase-ai-powered-storytelling-projects
+title: Showcase AI-Powered Storytelling Projects
+metadata:
+  title: showcase-ai-powered-storytelling-projects
+  description: "Learn how to review, refine, and present your AI-enhanced interactive storytelling projects. Focus on polishing character portraits, dialogue trees, and narrative branches to ensure emotional and narrative cohesion before showcasing your work in an engaging format."
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-showcase-ai-powered-storytelling-projects.md)]

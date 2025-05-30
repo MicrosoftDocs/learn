@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.breathing-life-into-stories.create-emotionally-intelligent-dialogue-trees
+title: Create Emotionally Intelligent Dialogue Trees
+metadata:
+  title: create-emotionally-intelligent-dialogue-trees
+  description: "Learn how to generate branching dialogue trees with Azure OpenAI that reflect character traits, emotional nuance, and player-driven narrative choices. Understand techniques for refining conversational flow, testing for tone consistency, and embedding meaningful emotional reactions into AI-generated interactions."
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-create-emotionally-intelligent-dialogue-trees.md)]

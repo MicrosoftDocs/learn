@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.breathing-life-into-stories.character-visualization-with-azure-openai-and-dalle
+title: Character Visualization with Azure OpenAI and DALL·E
+metadata:
+  title: character-visualization-with-azure-openai-and-dalle
+  description: "Learn how to generate character portraits using Azure OpenAI's DALL·E. Understand how to craft prompts, influence visual style, and refine AI-generated images to match your story's tone and world-building needs."
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-character-visualization-with-azure-openai-and-dalle.md)]

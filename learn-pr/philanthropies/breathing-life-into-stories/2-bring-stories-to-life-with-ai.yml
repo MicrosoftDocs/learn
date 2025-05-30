@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.breathing-life-into-stories.bring-stories-to-life-with-ai
+title: Bring Stories to Life with AI
+metadata:
+  title: bring-stories-to-life-with-ai
+  description: "Explore how Azure OpenAI and DALL·E can accelerate interactive storytelling by generating character portraits, dynamic dialogue, and immersive world-building assets. Learn how AI tools enhance creativity, speed up prototyping, and bring narratives to life. Keywords: AI storytelling, Azure OpenAI, DALL·E, dialogue generation, interactive storytelling, character development, world-building."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-bring-stories-to-life-with-ai.md)]

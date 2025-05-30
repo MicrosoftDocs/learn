@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.breathing-life-into-stories.summary
+title: Summary
+metadata:
+  title: summary
+  description: "Review the key concepts and skills developed in creating interactive stories enhanced by Azure OpenAI and DALL·E. Reflect on techniques for generating character portraits, branching dialogue, and presenting cohesive, emotionally rich narratives."
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-summary.md)]
