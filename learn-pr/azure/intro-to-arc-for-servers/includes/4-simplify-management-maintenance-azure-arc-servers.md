@@ -2,7 +2,7 @@ Azure Arc also simplifies the process of centralizing and standardizing enterpri
 
 ## What are the security benefits of Microsoft Defender for Cloud in hybrid scenarios?
 
-To address the security challenges inherent to hybrid environment, such as high volatility and dependencies on external services, you need sophisticated tools that help assess your security posture and identify and remediate risks. Ideally, you want to deploy those tools with minimal effort. Microsoft Defender for Cloud can help you address these requirements.
+To address the security challenges inherent to hybrid environments—such as high volatility and dependencies on external services—you need sophisticated tools that help assess your security posture and identify and remediate risks. Ideally, you want to deploy those tools with minimal effort. Microsoft Defender for Cloud can help you address these requirements.
 
 Defender for Cloud is a cloud-based service for managing the security of your cloud and on-premises infrastructure and workloads. With Defender for Cloud capabilities, you can:
 
@@ -10,7 +10,7 @@ Defender for Cloud is a cloud-based service for managing the security of your cl
 - **Protect your environment**: Monitor for security threats to your cloud and on-premises servers with Defender for Cloud.
 - **Protect your data**: Identify suspicious activity against your servers, files, and databases including potential data breaches.
 
-Defender for Cloud relies on the Log Analytics agent to collect security-related events, application crash dumps, and operating system configuration settings. It continuously analyzes collected data, provides you with remediation recommendations, and generates security alerts in response to attempted and actual security breaches and exploits.
+Defender for Cloud relies on the Azure Monitor Agent to collect security-related events, application crash dumps, and operating system configuration settings. It continuously analyzes collected data, provides you with remediation recommendations, and generates security alerts in response to attempted and actual security breaches and exploits.
 
 > [!NOTE]
 > Azure Arc-enabled servers require Microsoft Defender for Cloud.
@@ -22,7 +22,7 @@ Microsoft Sentinel is a scalable, cloud-native, security information event manag
 Microsoft Sentinel is your birds-eye view across your multicloud and hybrid infrastructure, alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames. With Microsoft Sentinel, you can:
 
 - Collect data at cloud scale across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds.
-- Detect previously undetected threats, and minimize false positives using Microsoft's analytics and unparalleled threat intelligence.
+- Detect previously undetected threats and minimize false positives using Microsoft's analytics and unparalleled threat intelligence.
 - Investigate threats with artificial intelligence and hunt for suspicious activities at scale, tapping into years of cyber security work at Microsoft.
 - Respond to incidents rapidly with built-in orchestration and automation of common tasks.
 
@@ -34,7 +34,7 @@ More in-depth monitoring, alerting, log collection, and log analytics are availa
 
 - **Monitoring and metrics visualization**: Metrics are numerical values that represent the health status of monitored systems.
 - **Querying and analyzing logs**: Logs include activity, diagnostic, and telemetry. Their analysis provides deep insights into the state of monitored systems and helps facilitate troubleshooting.
-- **Alerting and remediation**: Alerts notify you of anomalous conditions. You can also configure them to automatically initiate a corrective action to remediate the issue that resulted in the alert. It's also possible to configure alerts to raise an incident or create a work item through integration between Azure Monitor and your internal IT Service Management platform.
+- **Alerting and remediation**: Alerts notify you of anomalous conditions. You can also configure them to automatically initiate a corrective action to remediate the issue that resulted in the alert. You can also configure alerts to raise an incident or create a work item through integration between Azure Monitor and your internal IT Service Management platform.
 
 You can store and analyze near real-time and historical data in a Log Analytics workspace. This requires installing the Log Analytics agent. For additional insight into interaction between servers and other systems in your environment, you can install the Dependency Agent. The same Log Analytics agent allows you to onboard your serves to other Azure services, such as Update Management, Change Tracking and Inventory, and Microsoft Defender for Cloud.
 
