@@ -25,7 +25,9 @@ Run a template that sets up your Azure DevOps organization.
 
 1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
-1. When prompted to **Enter the template number from the list of templates**, enter **41** for **Test your Bicep code by using Azure Pipelines**, and then select **Enter**.
+1. When you're asked whether you want to create a new template or use the demo generator, enter **1** and then select **Enter**.
+
+1. When prompted to **Enter the template number from the list of templates above**, enter **41** for **Test your Bicep code by using Azure Pipelines**, and then select **Enter**.
 
 1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) or use device login.
 
@@ -44,7 +46,7 @@ Run a template that sets up your Azure DevOps organization.
 
 If you haven't already, create a fork of the **mslearn-test-bicep-code-using-github-actions** repository.
 
-1. On GitHub, go to the [mslearn-tailspin-spacegame-web](https://github.com/MicrosoftDocs/mslearn-test-bicep-code-using-github-actions) repository.
+1. On GitHub, go to the [mslearn-test-bicep-code-using-github-actions](https://github.com/MicrosoftDocs/mslearn-test-bicep-code-using-github-actions) repository.
 
 1. Select **Fork** at the top-right of the screen.
 

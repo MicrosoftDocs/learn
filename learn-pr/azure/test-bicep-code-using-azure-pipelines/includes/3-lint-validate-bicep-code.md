@@ -6,11 +6,11 @@ A valid Bicep file is one that doesn't contain any syntax errors. Also, the defi
 
 Some of the checks are performed on your Bicep file in isolation, like the checks for syntax errors, for valid Azure resource definitions, and for code quality. These steps are part of a process called _linting_. To check for other problems, you need to request that the Azure Resource Manager service validates your template and takes your Azure environment into account.
 
-A valid Bicep template has a greater chance of successful deployment. You'll get feedback without deploying your Bicep template. Validation is a good practice because if you deploy a Bicep file that's not valid, Azure might deploy or change only a subset of the resources described in your template. The result might be that the state of your environment is inconsistent and might not behave the way you expect.
+A valid Bicep template has a better chance of successful deployment. You'll get feedback without deploying your Bicep template. Validation is a good practice because if you deploy a Bicep file that's not valid, Azure might deploy or change only a subset of the resources described in your template. The result might be that the state of your environment is inconsistent and might not behave the way you expect.
 
 ## Build and lint Bicep code
 
-When you deploy a Bicep file, the Bicep tooling first runs some basic validation steps. These steps are the same ones that run when you modify your file by using Visual Studio Code. They check that you used Bicep's language keywords correctly and that you defined your Azure resources according to the requirements for each resource type.
+When you deploy a Bicep file, the Bicep tooling first runs some basic validation steps. These steps are the same ones that run when you modify your file by using Visual Studio Code. They check that you used Bicep language keywords correctly and that you defined your Azure resources according to the requirements for each resource type.
 
 In addition, Bicep runs a _linter_ over your files. Linting is the process of checking your code against a set of recommendations. The Bicep linter reviews your file and verifies that you followed best practices for maintainability, correctness, flexibility, and extensibility.
 
@@ -74,7 +74,7 @@ Preflight validation requires communication with Azure, but it doesn't actually 
 
 :::image type="content" source="../media/3-stages-validate.png" alt-text="Diagram that shows a pipeline with lint and validate stages, each containing a single job. The validate stage communicates with Azure." border="false":::
 
-You can use the `AzureResourceManagerTemplateDeployment` task to submit a Bicep file for preflight validation and configure the `deploymentMode` to `Validation`:
+You can use the `AzureResourceManagerTemplateDeployment` task to submit a Bicep file for preflight validation. Configure the `deploymentMode` to `Validation`:
 
 :::code language="yaml" source="code/3-preflight.yml" range="14-24" highlight="9" :::
 

@@ -1,4 +1,4 @@
-Pipelines enable you to automate the steps in your deployment process. Your process might include several logical groups of jobs that you want to run. In this unit, you'll learn about pipeline stages and how you to them to add quality control processes to your Bicep deployments.
+Pipelines enable you to automate the steps in your deployment process. Your process might include several logical groups of jobs that you want to run. In this unit, you'll learn about pipeline stages and how to use them to add quality control processes to your Bicep deployments.
 
 ## What are pipeline stages?
 
