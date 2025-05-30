@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.philanthropies.forging-voices-from-data
+metadata:
+  title: Forging Voices from Data - Custom AI Training with Azure OpenAI Studio
+  description: "Explore how Azure OpenAI Studio enables the development of AI-powered dialogue systems. Learn the core architecture of conversational agents, the models behind them, and how to design basic chat interactions using Microsoft tools."
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: module-intro-to-product
+  ms.service: artificial-intelligence
+title: Forging Voices from Data - Custom AI Training with Azure OpenAI Studio
+
+summary: "Learn how to build, train, and customize AI-powered dialogue systems using Azure OpenAI Studio, applying techniques like fine-tuning, prompt engineering, personalization, and iterative testing to create scalable, human-like conversational agents."
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Set up an Azure OpenAI Studio environment and select appropriate models for dialogue systems.
+  - Train dialogue models using domain-specific datasets and prompt examples.
+  - Customize chatbot behavior, tone, and context handling for natural, multi-turn conversations.
+  - Use real-time testing and feedback loops to refine and improve dialogue performance.
+  - Deploy scalable, user-centered dialogue systems that align with organizational goals and user needs.
+
+prerequisites: |
+  - Familiarity with AI concepts, particularly natural language processing (NLP)
+  - Basic experience with cloud platforms and Azure tools (recommended)
+  - Introductory knowledge of conversational AI or chatbot development (helpful but not required)
+
+iconUrl: /learn/achievements/generic-badge.svg
+
+levels:
+  - beginner
+
+roles:
+  - data-engineer
+  - data-scientist
+  - developer 
+
+products:
+- ms-copilot
+- azure-openai
+
+subjects:
+  - artificial-intelligence
+
+units:
+- learn.philanthropies.forging-voices-from-data.introduction
+- learn.philanthropies.forging-voices-from-data.azure-openai-studio-for-dialogue-systems
+- learn.philanthropies.forging-voices-from-data.build-and-train-custom-ai-dialogue-models
+- learn.philanthropies.forging-voices-from-data.build-dialogue-systems-that-feel-human
+- learn.philanthropies.forging-voices-from-data.exercise
+- learn.philanthropies.forging-voices-from-data.knowledge-check
+- learn.philanthropies.forging-voices-from-data.summary
+
+badge:
+  uid: learn.philanthropies.forging-voices-from-data.badge

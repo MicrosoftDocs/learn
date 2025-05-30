@@ -1,0 +1,109 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.forging-voices-from-data.knowledge-check
+
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 3/20/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
+### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
+###
+### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
+###
+### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
+### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
+### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
+
+durationInMinutes: 10
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+### Question content requirements:
+###  - Write 5 questions
+###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
+###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
+###      Example: "What differentiates an action from a control action in a Logic App?"
+###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
+###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
+###      Example: "A financial company is building a system to let brokers trade financial instruments. The system must monitor market conditions, detect changes, and execute trades. It will need to handle a large volume of transactions quickly. The faster it completes trades, the more of an advantage the company will have over its competitors. Which requirement of this system would be difficult for Azure Logic Apps to satisfy?"
+###
+###########################################################################
+
+content: |
+quiz:
+    questions:
+    - content: "What is Azure OpenAI Studio primarily used for?"
+      choices:
+      - content: "To build, customize, and deploy AI-powered language models and dialogue systems"
+        isCorrect: true
+        explanation: "Azure OpenAI Studio provides tools for designing, testing, and refining AI-driven applications using models like GPT."
+      - content: "To design 3D characters for video games"
+        isCorrect: false
+        explanation: "Azure OpenAI Studio is focused on text-based AI, not 3D asset creation."
+      - content: "To manage web hosting and domain registration"
+        isCorrect: false
+        explanation: "Web hosting is unrelated to Azure OpenAI Studio's dialogue system capabilities."
+
+    - content: "What is one key benefit of using Azure for deploying AI-powered chatbots?"
+      choices:
+      - content: "It allows scalable deployments and seamless integration with other Microsoft services"
+        isCorrect: true
+        explanation: "Azure's infrastructure supports enterprise-scale deployments and offers integration with services like Power Automate and Cognitive Services."
+      - content: "It automatically animates characters during dialogue"
+        isCorrect: false
+        explanation: "Azure OpenAI Studio focuses on language models, not animation or motion graphics."
+      - content: "It writes legal contracts from PDF templates"
+        isCorrect: false
+        explanation: "While AI can generate text, legal contract automation is not the platform's core use case."
+
+    - content: "How can users tailor a dialogue model to a specific domain?"
+      choices:
+      - content: "By uploading custom training data such as FAQs, chat logs, or policy documents"
+        isCorrect: true
+        explanation: "Custom data helps fine-tune models so responses are aligned with specific topics, tone, or terminology."
+      - content: "By assigning the chatbot a random name and using default prompts"
+        isCorrect: false
+        explanation: "Personalization and performance come from tailored prompts and training—not randomization."
+      - content: "By selecting a visual theme in the Azure dashboard"
+        isCorrect: false
+        explanation: "Azure OpenAI Studio does not use visual themes—it focuses on natural language input and output."
+
+    - content: "Why is it important to customize system prompts when building a chatbot?"
+      choices:
+      - content: "To shape the assistant's tone, behavior, and response style"
+        isCorrect: true
+        explanation: "System prompts provide instruction to guide the model's personality and communication style."
+      - content: "To allow the model to design its own data sets"
+        isCorrect: false
+        explanation: "The model doesn't create training data on its own—it learns from what you provide."
+      - content: "To automatically translate dialogue into different languages"
+        isCorrect: false
+        explanation: "Prompt customization controls behavior—not translation, which would require additional services."
+
+    - content: "What does real-time testing in Azure OpenAI Studio allow you to do?"
+      choices:
+      - content: "Evaluate and refine chatbot responses before deployment"
+        isCorrect: true
+        explanation: "Real-time testing lets developers simulate interactions, identify gaps, and improve performance."
+      - content: "Create animated facial expressions for each message"
+        isCorrect: false
+        explanation: "Facial animation is not part of Azure OpenAI Studio's functionality."
+      - content: "Publish chatbots directly to the Apple App Store"
+        isCorrect: false
+        explanation: "Azure enables backend deployment—you'll need other platforms for app distribution."
