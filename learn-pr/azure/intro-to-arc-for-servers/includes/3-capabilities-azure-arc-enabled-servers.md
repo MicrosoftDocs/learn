@@ -72,7 +72,7 @@ Azure Update Manager allows you to:
 
 - Instantly check for updates or deploy security or critical updates to help secure your hybrid machines.
 - Enable periodic assessment to check for the latest updates available for your hybrid machines.
-- Use flexible patching options like customer-defined maintenance schedules and hot patching.
+- Use flexible patching options like customer-defined maintenance schedules and hotpatching.
 - Build custom reporting dashboards for reporting update status and configure alerts for certain conditions.
 - Oversee update compliance for all your hybrid machines.
 
