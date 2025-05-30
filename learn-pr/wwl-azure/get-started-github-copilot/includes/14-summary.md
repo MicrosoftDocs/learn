@@ -4,5 +4,7 @@ The main takeaways from this module are the functionalities and benefits of GitH
 
 Extra Reading:
 
-1. [GitHub Copilot documentation](https://docs.github.com/copilot)
-1. [Fundamentals of Responsible Generative AI](/training/modules/responsible-generative-ai/)
+-  [GitHub Copilot documentation](https://docs.github.com/copilot)
+-  [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview)
+-  [GitHub Copilot in Visual Studio Code - FAQ](https://code.visualstudio.com/docs/copilot/faq)
+-  [GitHub Copilot in Visual Studio Code - Settings](https://code.visualstudio.com/docs/copilot/reference/copilot-settings)

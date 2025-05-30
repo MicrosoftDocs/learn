@@ -5,13 +5,12 @@ Imagine you're a software developer at a tech startup. You're tasked with develo
 The topics covered in this module include:
 
 - Exploring AI Tools for Developers from GitHub, OpenAI, and Microsoft
-- Understanding GitHub Copilot: Features, Account Types, Tools, and Limitations
-- Installing GitHub Copilot Extensions for Visual Studio Code
-- Understanding and Managing Autocomplete Features of GitHub Copilot Extension
-- Understanding and Utilizing GitHub Copilot Chat for AI Assistance in Visual Studio Code
-- Configuring GitHub Copilot Extensions in Visual Studio Code
+- Understanding GitHub Copilot: Plans, Tools, Features, and Limitations
+- Setting up, configuring, and managing GitHub Copilot for Visual Studio Code
+- Understanding GitHub Copilot's code completion features
+- Understanding GitHub Copilot's AI-assistance features
 
 By the end of this module, you're able to describe how GitHub Copilot enhances your productivity, reduces errors, and makes your software development process more efficient.
 
 > [!IMPORTANT]
-> To complete this GitHub Copilot training, you must have an active subscription for GitHub Copilot in your personal GitHub account, or you need to be assigned to a subscription managed by an organization or enterprise.
+> To complete this GitHub Copilot training, you must have an active subscription for GitHub Copilot in your personal GitHub account (includes the GitHub Copilot Free plan), or you must be assigned to a subscription managed by an organization or enterprise. Module activities may include GitHub Copilot suggestions that match public code. If you're a member of an organization on GitHub Enterprise Cloud who has been assigned a GitHub Copilot subscription through your organization, the setting for suggestions matching public code may be inherited from your organization or enterprise. If your account blocks suggestions that match public code, module activities may not work as expected.
