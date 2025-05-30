@@ -21,10 +21,9 @@ abstract: |
   -   Describe core concepts of deep learning and Transformers
 prerequisites: |
   Before starting this module, you should have:
-
-  -   A basic knowledge of mathematics
-  -   Familiarity with Microsoft Azure and cloud computing
-iconUrl: /training/achievements/generic-badge.svg
+  - A basic knowledge of mathematics
+  - Familiarity with Microsoft Azure and cloud computing
+iconUrl: /training/achievements/fundamentals-of-machine-learning.svg
 levels:
 - beginner
 roles:
