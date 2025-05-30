@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.apply-budgeting-method.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is a part of the Apply a budgeting method to manage money effectively.
+  ms.date: 04/01/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

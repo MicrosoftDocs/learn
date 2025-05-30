@@ -4,11 +4,11 @@ You can swap deployment slots on your app's Deployment slots page and the Overvi
 
 To swap deployment slots:
 
-1. Go to your app's **Deployment slots** page and select **Swap**. The **Swap** dialog box shows settings in the selected source and target slots that will be changed.
+1. Go to your app's **Deployment slots** page and select **Swap**. The **Swap** dialog box shows settings in the selected source and target slots that are changed.
 
 1. Select the desired **Source** and **Target** slots. Usually, the target is the production slot. Also, select the **Source Changes** and **Target Changes** tabs and verify that the configuration changes are expected. When you're finished, you can swap the slots immediately by selecting **Swap**.
 
-    To see how your target slot would run with the new settings before the swap actually happens, don't select Swap, but follow the instructions in *Swap with preview* below.
+    To see how your target slot would run with the new settings before the swap actually happens, don't select Swap, but follow the instructions in *Swap with preview*.
 
 1. When you're finished, close the dialog box by selecting **Close**.
 
@@ -22,7 +22,7 @@ If you cancel the swap, App Service reapplies configuration elements to the sour
 
 To swap with preview:
 
-1. Follow the steps above in Swap deployment slots but select the **Perform swap with preview** checkbox. The dialog box shows you how the configuration in the source slot changes in phase 1, and how the source and target slot change in phase 2.
+1. Follow the steps in Swap deployment slots section, but select the **Perform swap with preview** checkbox. The dialog box shows you how the configuration in the source slot changes in phase 1, and how the source and target slot change in phase 2.
 
 1. When you're ready to start the swap, select **Start Swap**.
 
@@ -36,7 +36,7 @@ To swap with preview:
 
 ## Configure auto swap
 
-Auto swap streamlines Azure DevOps Services scenarios where you want to deploy your app continuously with zero cold starts and zero downtime for customers of the app. When auto swap is enabled from a slot into production, every time you push your code changes to that slot, App Service automatically swaps the app into production after it's warmed up in the source slot.
+Auto swap streamlines Azure DevOps Services scenarios where you want to deploy your app continuously with zero cold starts and zero downtime for customers of the app. When auto swap is enabled from a slot into production, every time you push your code changes to that slot, App Service automatically swaps the app into production after the source slot is warmed up.
 
 > [!NOTE]
 > Auto swap isn't currently supported in web apps on Linux and Web App for Containers.

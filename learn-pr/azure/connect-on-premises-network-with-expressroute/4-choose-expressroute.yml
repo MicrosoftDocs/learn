@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.connect-on-premises-network-with-expressroute.4-choose-expressroute
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to choose Azure ExpressRoute
   description: When to choose Azure ExpressRoute
   ms.date: 10/18/2023
@@ -42,4 +40,4 @@ quiz:
     - content: "An ExpressRoute connection."
       isCorrect: true
       explanation: "Correct."
-
+

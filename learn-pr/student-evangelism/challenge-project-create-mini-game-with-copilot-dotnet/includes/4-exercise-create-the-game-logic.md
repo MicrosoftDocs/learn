@@ -1,4 +1,4 @@
-You already have your Codespaces working with GitHub Copilot. In this challenge exercise, your goal is to develop the logic of the Python minigame with the help of GitHub Copilot based in the specifications bellow.
+You already have your Codespaces working with GitHub Copilot. In this challenge exercise, your goal is to develop the logic of the C# minigame with the help of GitHub Copilot based in the specifications bellow.
 
 ## Specification
 

@@ -18,7 +18,7 @@ Always remember that managed identities are assigned to an application. So, you 
 
 ### Managed identity in Azure portal for an App Service
 
-:::image type="content" source="../media/managed-identity-azure-portal-87c78e53.png" alt-text="Screenshot of the Azure portal in the App Services screen.  Add a user-assigned identity is highlighted.":::
+:::image type="content" source="../media/managed-identity-azure-portal-87c78e53-f57d812f.png" alt-text="Screenshot of the Azure portal in the App Services screen.  Add a user-assigned identity is highlighted.":::
 
 
 The basic steps, to create and add an identity to your app, are:
@@ -36,12 +36,14 @@ You can perform a similar action using script within the CLI, PowerShell, or wit
 az webapp identity assign --resource-group <group-name> --name <app-name> --identities <identity-name>
 
 
+
 ```
 
 Or using **PowerShell** with the AZ.ManagedServiceIdentity module installed
 
 ```
 Update-AzFunctionApp -Name <app-name> -ResourceGroupName <group-name> -IdentityType UserAssigned -IdentityId $userAssignedIdentity.Id
+
 
 
 ```
@@ -55,6 +57,7 @@ Or within a **template**
         "<RESOURCEID>": {}
     }
 }
+
 
 
 ```

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-tips-tricks-teach-az-104-microsoft-azure-administrator.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 04/01/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. By walking through the labs with the instructor first, students are able to solidify concepts when completing labs on their own."
     - content: "Azure Blog"
       isCorrect: false
-      explanation: "Incorrect. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. By walking through the labs with the instructor first, students are able to solidify concepts when completing labs on their own."
+      explanation: "Incorrect. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. By walking through the labs with the instructor first, students are able to solidify concepts when completing labs on their own."

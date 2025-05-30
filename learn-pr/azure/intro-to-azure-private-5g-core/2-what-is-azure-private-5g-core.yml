@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-private-5g-core.what-is-azure-private-5g-core
 title: What is Azure Private 5G Core?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure Private 5G Core?
   description: "Provides a high-level picture of Azure Private 5G Core."
   ms.date: 05/16/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-what-is-azure-private-5g-core.md)]
+  [!include[](includes/2-what-is-azure-private-5g-core.md)]

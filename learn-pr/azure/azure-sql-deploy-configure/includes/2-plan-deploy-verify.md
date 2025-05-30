@@ -29,13 +29,13 @@ The limits for Azure SQL Managed Instance and Azure SQL Database depend on your 
 
 Azure SQL Managed Instance and SQL Database are platform as a service (PaaS) offerings. Restricting these choices shouldn't inhibit your ability to fully use a SQL Server managed service.
 
-Within a General Purpose Azure SQL Database instance, your choice of provisioned or serverless compute also affects these limits. Before you deploy, review what's included in your planned deployment to ensure that you're starting out with what you need.
+In the General Purpose service tier for Azure SQL Database, your choice of provisioned or serverless compute also affects these limits. Before you deploy, review what's included in your planned deployment to ensure that you're starting out with what you need.
 
 Azure SQL resources have overall resource limits *per subscription* and *per region*. If you need to increase your limits, you can request a quota increase in the Azure portal.
 
 ## Deployment
 
-After you've completed your predeployment planning, it's time to put your plan into action. In this stage, you deploy Azure SQL by using the Azure portal or the command line, determine network configuration, and make an initial connection.  
+After you've completed your predeployment planning, it's time to put your plan into action. In this stage, you deploy your Azure SQL product by using the Azure portal or the command line, determine network configuration, and make an initial connection.  
 
 For Azure SQL Database and Azure SQL Managed Instance, there are essentially six panes in the Azure portal to fill in during a deployment.  
 
@@ -43,7 +43,7 @@ For Azure SQL Database and Azure SQL Managed Instance, there are essentially six
 
 ### Server
 
-When you create an Azure SQL managed instance, supplying the server name is the same as in SQL Server. For databases and elastic pools, an Azure SQL Database server is required. An Azure SQL Database server is a *logical* server that acts as a central administrative point for a single or pooled database. It includes logins, firewall rules, auditing rules, threat detection policies, and failover groups. You learn more about these elements later.
+When you deploy Azure SQL Managed Instance, supplying the server name is the same as with SQL Server. For Azure SQL Database, you must first create a *logical server* in Azure. The logical server acts as a central administrative point for a single or pooled database. It includes logins, firewall rules, auditing rules, threat detection policies, and failover groups. You learn more about these elements later.
 
 This logical server doesn't expose any instance-level access or features as with Azure SQL Managed Instance. For Azure SQL Database servers, the server name must be unique across all of Azure.  
 
@@ -93,7 +93,7 @@ Other options are available. Examples are character widths and UTF-8 encoding. Y
 
 When you deploy Azure SQL Database in the Azure portal, it prompts about whether you want to enable Microsoft Defender for Cloud in a free trial. Select **Start free trial**. After the free trial, Defender for Cloud is billed according to the Microsoft Defender for Cloud Standard Tier pricing.
 
-After you enable it, you get functionality related to identifying and mitigating potential database vulnerabilities and threat detection. You can learn more about these capabilities in this learning path's next security module.
+After you enable it, you get functionality related to identifying and mitigating potential database vulnerabilities and threat detection. 
 
 In Azure SQL Managed Instance, you can enable Microsoft Defender for Cloud on the instance after deployment.  
 
@@ -110,7 +110,7 @@ Although Azure takes care of the deployment for you, there are some deployment i
 
 ### Azure SQL Managed Instance
 
-Behind the scenes, Azure deploys a dedicated ring for Azure SQL Managed Instance (sometimes called a *virtual cluster*) for your service. This architecture helps to provide security and native virtual network support.
+Behind the scenes, Azure deploys a dedicated ring for Azure SQL Managed Instance (called a *virtual cluster*) for your service. This architecture helps to provide security and native virtual network support.
 
 Because of this architecture, deployment and scaling operations can take longer. For example, when you scale up or down, Azure deploys a new virtual cluster for you and then seeds it with your data. You can think of every instance as running on a single virtual machine.
 
@@ -118,15 +118,13 @@ Azure SQL Instance pools were introduced to help with the long deployment time. 
 
 ### Azure SQL Database
 
-Azure SQL Database is contained by a logical database server. In most cases, a dedicated SQL Server instance hosts the SQL database, but you don't have to worry about managing the instance.
+Azure SQL Database is contained by a logical server and gives you something to which to connect. It also lets you group and manage certain permissions and configurations together. Within each logical server is a logical primary database, which can provide instance-level diagnostics.
 
-The logical database server gives you something to which to connect. It also lets you group and manage certain permissions and configurations together. Within each logical database server is a logical primary database, which can provide instance-level diagnostics.
-
-### Azure SQL Database - Hyperscale
+#### The Hyperscale service tier
 
 The Hyperscale tier within Azure SQL Database, which isn't available in Azure SQL Managed Instance, has a unique architecture for Azure SQL. The Azure SQL team rearchitected Hyperscale for the cloud. This architecture includes a multilayer caching system that can help with both speed and scale. Scaling and other operations no longer become related to the size of data and can be completed in constant time, a matter of minutes. The use of remote storage also allows for snapshot backups.
 
-In a subsequent module of the Azure SQL fundamentals learning path, you learn more about the architecture and how it affects performance and availability. One consideration during the deployment phase is that after you move a database to the Hyperscale tier, you can't *go back* to the General Purpose or Business Critical tier.
+One consideration during the deployment phase is that after you move a database to the Hyperscale tier, you can't *go back* to the General Purpose or Business Critical tier.
 
 ### Resource governance
 
@@ -144,9 +142,9 @@ After you complete your deployment, it's time to verify that deployment. In this
 
 For Azure SQL Managed Instance and Azure SQL Database, the first thing you might do is check the status of the database or instance with the Azure portal or the Azure CLI. Next, you can review the deployment details and activity log to ensure that there are no failures or active issues.
 
-For Azure SQL Managed Instance, you then might check the error log, which is a common thing to do in SQL Server on-premises or in an Azure virtual machine. This capability isn't available in Azure SQL Database.  
+For Azure SQL Managed Instance, you then might check the error log, which is a common thing to do in SQL Server on-premises or on an Azure virtual machine. This capability isn't available in Azure SQL Database.  
 
-Finally, you'd likely confirm that your network is configured properly, obtain the server name, and connect in a tool like SQL Server Management Studio or Azure Data Studio. You can run the following queries to better understand what you've deployed and to verify that it was deployed correctly:  
+Finally, you'd likely confirm that your network is configured properly, obtain the server name, and connect in a tool like SQL Server Management Studio. You can run the following queries to better understand what you've deployed and to verify that it was deployed correctly:  
 
 ```sql
 SELECT @@VERSION
@@ -166,4 +164,4 @@ One query related to the OS process memory isn't supported in Azure SQL Database
 
 The last three queries are available only in Azure SQL Database and Azure SQL Managed Instance. The first, `sys.dm_user_db_resource_governance`, returns the configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool. You can get similar information for an Azure SQL Managed Instance with the second, `sys.dm_instance_resource_governance`. The third, `sys.dm_os_job_object`, returns a single row that describes the configuration of the job object that manages the SQL Server process and resource consumption statistics.
 
-The next two exercises go through all the details involved in deploying Azure SQL Database or Azure SQL Managed Instance. Use your Azure subscription to deploy Azure SQL Database. After deployment, you use various verification queries and prerun SQL notebooks in Azure Data Studio to compare SQL Database, SQL Managed Instance, and SQL Server 2019.  
+The next two exercises go through all the details involved in deploying Azure SQL Database or Azure SQL Managed Instance. Use your Azure subscription to deploy Azure SQL Database. After deployment, you use various verification queries to compare SQL Database, SQL Managed Instance, and SQL Server 2019.  

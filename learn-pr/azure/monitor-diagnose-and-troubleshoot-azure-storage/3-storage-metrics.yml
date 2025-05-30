@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.3-storage-metrics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot with storage metrics
   description: In this unit, we'll discuss how you can troubleshoot issues in a storage account by using storage metrics.
   ms.date: 12/21/2023
@@ -13,4 +11,4 @@ title: Troubleshoot with storage metrics
 durationInMinutes: 9
 content: |
   [!include[](includes/3-storage-metrics.md)]
-
+

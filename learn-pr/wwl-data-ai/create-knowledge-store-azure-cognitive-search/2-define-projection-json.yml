@@ -2,8 +2,6 @@
 uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search.define-projection-json
 title: Define projections
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Define projections
   description: Define projections
   author: ivorb
@@ -16,4 +14,4 @@ azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/2-define-projection-json.md)]
-
+

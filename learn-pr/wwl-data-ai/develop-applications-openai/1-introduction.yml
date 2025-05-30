@@ -3,10 +3,10 @@ uid: learn.wwl.develop-applications-openai.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Learn how to start using Azure OpenAI Service. This unit introduces possible use cases for Azure OpenAI Service.
+  description: Learn how to start using Azure OpenAI in Foundry Models. This unit introduces possible use cases for Azure OpenAI.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/26/2024
+  ms.date: 03/18/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

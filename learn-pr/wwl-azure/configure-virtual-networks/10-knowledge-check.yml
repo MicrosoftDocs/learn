@@ -1,12 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-virtual-networks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Knowledge check
+  hidden_question_numbers: ["EDD34630_34","EDD34630_46","EDD34630_63","EDD34630_79","EDD34630_83","EDD34630_87"]
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/08/2024
+  ms.date: 05/20/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -18,7 +20,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which of the following statements about Azure virtual networks is correct?"
+  - content: "Which of these statements about Azure virtual networks is correct?"
     choices:
     - content: "Each virtual network has only one subnet."
       isCorrect: false

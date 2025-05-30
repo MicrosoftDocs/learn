@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.develop-test-deploy-azure-functions-with-visual-studio.5-exercise-publish-azure-functions
-title: Exercise - Publish a simple Azure Function
+title: Exercise - Publish an Azure Function
 metadata:
-  title: Exercise - Publish a simple Azure Function
-  description: Exercise - Publish a simple Azure Function
-  ms.date: 03/01/2023
+  title: Exercise - Publish an Azure Function
+  description: Exercise - Publish an Azure Function
+  ms.date: 05/07/2025
   author: ggailey777
   ms.author: glenga
   manager: jmartens

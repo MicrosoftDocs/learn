@@ -11,7 +11,7 @@ You can revisit your bookmarked data at any time on the **Bookmarks** tab of the
 
 ## Create or add to incidents by using bookmarks
 
-You can use bookmarks to create a new incident or add bookmarked query results to existing incidents. The **Incident actions** button on the toolbar enables you to perform either of these tasks when a bookmark is selected.
+You can use bookmarks to create a new incident or add bookmarked query results to existing incidents. The **Incident actions** button on the *Hunt* toolbar enables you to perform either of these tasks when a bookmark is selected.
 
 :::image type="content" source="../media/4-incident-actions.png" alt-text="Screenshot of the drop-down menu for incident actions in Microsoft Sentinel." :::
 
@@ -19,7 +19,7 @@ Incidents that you create from bookmarks can be managed from the **Incidents** p
 
 ## Use the investigation graph to explore bookmarks
 
-You can investigate bookmarks in the same way that you'd investigate incidents in Microsoft Sentinel. From the **Hunting** page, select **Investigate** to open the investigation graph for the incident. The investigation graph is a visual tool that helps to identify entities involved in the attack and the relationships between those entities. If the incident involves multiple alerts over time, you can also review the alert timeline and correlations between alerts.
+You can investigate bookmarks in the same way that you'd investigate incidents in Microsoft Sentinel. From the **Hunting** page, select your *Hunt* with a *Bookmark* from the **Hunts (Preview)** tab. In the *Hunt* details pane select **Bookmarks** (or select any *Related incidents*), select a specific *Bookmark* and then select the **Investigate** button to open the investigation graph for the incident. The investigation graph is a visual tool that helps to identify entities involved in the attack and the relationships between those entities. If the incident involves multiple alerts over time, you can also review the alert timeline and correlations between alerts.
 
 :::image type="content" source="../media/4-investigation-graph.png" alt-text="Screenshot of the investigation graph page for a deleted virtual machine incident.":::
 

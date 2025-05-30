@@ -14,7 +14,7 @@ In this purchasing model, compute and storage resources are decoupled. It means 
 |------------|-------------|
 | General Purpose | This service tier is designed for less intensive operations, and offers budget oriented balanced compute and storage options. It provides both provisioned compute tier and serverless compute tier.
 |Business Critical | This service tier supports In-Memory OLTP, and built-in read-only replica. It also includes more memory per core, and uses local SSD storage, which is designed for performance-sensitive workloads. |
-| Hyperscale | Hyperscale introduces horizontal scaling features that use advanced techniques to add compute nodes as the data sizes grow. It is only supported on single SQL database. Hyperscale allows you to scale storage and compute resources significantly over the limits available for the General Purpose and Business Critical service tiers. |
+| Hyperscale | Hyperscale introduces horizontal scaling features that use advanced techniques to add compute nodes as the data sizes grow. It's only supported on single SQL database. Hyperscale allows you to scale storage and compute resources significantly over the limits available for the General Purpose and Business Critical service tiers. |
 
 ### DTU-based
 
@@ -34,15 +34,15 @@ You can use a proper [retry logic](/azure/azure-sql/database/troubleshoot-common
 
 ## Serverless compute tier
 
-Despite its name, the serverless compute tier does require you to have a server with your database. The serverless option can best be thought of as an autoscaling and auto-pause solution for SQL Database. It is effective for lowering the costs in development and testing environments. For example, you can set up a minimum and a maximum vCores configuration for your database, where it will scale dynamically based on your workload.
+Despite its name, the serverless compute tier does require you to have a server with your database. The serverless option can best be thought of as an autoscaling and autopause solution for SQL Database. It's effective for lowering the costs in development and testing environments. For example, you can set up a minimum and a maximum vCores configuration for your database, where it scales dynamically based on your workload.
 
-The auto-pause delay feature allows you to define the period of time the database will be inactive before it is automatically paused. The auto-pause delay feature can be set up from 1 hour to seven days. Alternatively, auto-pause delay feature can be disabled.
+The autopause delay feature allows you to define the period of time the database will be inactive before it's automatically paused. The autopause delay feature can be set up from 1 hour to seven days. Alternatively, autopause delay feature can be disabled.
 
 The resume operation is triggered when the next attempt to access the database occurs, and only storage charges are applicable when the database is paused.
 
 > [![Serverless SQL Database properties from Azure portal](../media/prepare-to-maintain-sql-databases-azure-02.png)](../media/../media/prepare-to-maintain-sql-databases-azure-02.png#lightbox)
 
-The image above shows where you can change the autoscaling and auto-pause properties for serverless compute tier.
+The image above shows where you can change the autoscaling and autopause properties for serverless compute tier.
 
 ## Deployment model
 
@@ -64,9 +64,9 @@ Elastic pools allow you to allocate storage and compute resources to a group of 
 
 Elastic pools provide a cost-effective solution for software as a service application model, since resources are shared between all databases. You can configure resources based either on the DTU-based purchasing model or the vCore-based purchasing model.
 
-Due to the nature of this feature, it is recommended to monitor your resources continually to identify concurrent performance spikes that could affect other databases part of the same elastic pool. Often, you may need to revisit your allocation strategy to make sure there's enough resource available for all databases sharing the same elastic pool.
+Due to the nature of this feature, it's recommended to monitor your resources continually to identify concurrent performance spikes that could affect other databases part of the same elastic pool. Often, you may need to revisit your allocation strategy to make sure there's enough resource available for all databases sharing the same elastic pool.
 
-Elastic pool is a good fit for multi-tenant architecture with low average utilization, where each tenant has its own copy of the database.
+Elastic pool is a good fit for multitenant architecture with low average utilization, where each tenant has its own copy of the database.
 
 ## Network options
 
@@ -78,7 +78,7 @@ Azure provides seamless backup and restore capabilities for SQL Database and SQL
 
 ### Continuous backup
 
-With SQL Database, you can increase administration efficiency by knowing that databases are backed up regularly, and that they are continuously copied to a read-access geo-redundant storage (RA-GRS).
+With SQL Database, you can increase administration efficiency by knowing that databases are backed up regularly, and that they're continuously copied to a read-access geo-redundant storage (RA-GRS).
 
 Full backups are performed every week, differential backups every 12 to 24 hours, and transaction log backups every 5 to 10 minutes.
 
@@ -97,7 +97,7 @@ The duration of a geo-restore operation can be affected by several underlying co
 
 You can configure a specific point in time retention policy for each database running on a SQL Database offering. SQL Database retention period can be set from 1 up to 35 days. In fact, if not specified, the default configuration is seven days.
 
-You can restore your databases to a specific point in time according to the retention defined, but PITR is only supported if you are restoring a database in the same server the backup was originated. You can use either Azure portal, Azure PowerShell, Azure CLI, or REST API to restore a SQL Database.
+You can restore your databases to a specific point in time according to the retention defined, but PITR is only supported if you're restoring a database in the same server the backup was originated. You can use either Azure portal, Azure PowerShell, Azure CLI, or REST API to restore a SQL Database.
 
 ### Long-term retention (LTR)
 
@@ -105,7 +105,7 @@ Long-term retention is useful for scenarios that require you to set the retentio
 
 > [![Long-term retention properties from Azure portal](../media/prepare-to-maintain-sql-databases-azure-03.png)](../media/../media/prepare-to-maintain-sql-databases-azure-03.png#lightbox)
 
-In the image above, you can configure long-term retention policies through Azure portal. Once the database is selected, a new panel will open on the right side of the screen, where you can override the default properties.
+In the image above, you can configure long-term retention policies through Azure portal. Once the database is selected, a new panel opens on the right side of the screen, where you can override the default properties.
 
 For more information about automated backups, see [Automated backups - Azure SQL Database & Azure SQL Managed Instance](/azure/azure-sql/database/automated-backups-overview?tabs=single-database).
 
@@ -126,7 +126,7 @@ All databases inherit configuration from their parent server, and you can easily
 
 ## Elastic query (preview)
 
-Elastic query allows you to run T-SQL queries that bridge multiple databases in SQL Database. This feature is particularly useful for applications using three- and four-part names that cannot be changed. It also increases portability as it allows for migration.
+Elastic query allows you to run T-SQL queries that bridge multiple databases in SQL Database. This feature is useful for applications using three- and four-part names that can't be changed. It also increases portability as it allows for migration.
 
 Elastic queries support the following partitioning strategies:
 
@@ -135,10 +135,7 @@ Elastic queries support the following partitioning strategies:
 | Vertical partitioning | Also called cross-database queries. The data is partitioned vertically between many databases. Schemas are different for each database. For example, you may have a database used for customer data, and a different one used for payment information. With the help of vertical partitioning, you can now run a cross-database query between both databases.
 |Horizontal Partitioning | Also called sharding. The data is partitioned horizontally to distribute rows across several scaled-out databases. In this topology, the schema remains the same among all sharding databases. It supports either single-tenant model or multiple tenant models. |
 
-> [!NOTE]
-> Azure SQL Managed Instance doesn't support elastic queries.
-
-## Elastic job (preview)
+## Elastic jobs
 
 The elastic job feature is the SQL Server Agent replacement for Azure SQL Database. To some extent, elastic job is equivalent to the Multi Server Administration feature available on an on-premises SQL Server instance.
 
@@ -147,19 +144,11 @@ You can execute T-SQL commands across several target deployments like SQL Databa
 > [!NOTE]
 > Azure SQL Managed Instance doesn't support elastic jobs.
 
-## SQL Data Sync
+## SQL Database in Fabric
 
-The Data Sync feature allows you to incrementally synchronize data across multiple databases running on SQL Database or on-premises SQL Server. Similarly, Data Sync is a good option if you need to offload intensive workloads in production with a separate database that can be used for analytics and/or ad hoc operations.
+SQL Database in Microsoft Fabric is a powerful and versatile solution designed to integrate seamlessly with the broader Microsoft ecosystem. It allows users to use the capabilities of SQL databases within the Microsoft Fabric environment, providing a unified platform for managing and analyzing data. This integration enables organizations to streamline their data workflows, enhance collaboration, and drive more informed decision-making processes.
 
-Data Sync is based on a hub topology, where you define one of the databases in the sync group to work as a hub database. The sync group can have multiple members, and you can only synchronize changes between the hub database and individual databases. Data Sync tracks changes using insert, update, and delete triggers through a historical table created on the user database.
+Moreover, SQL Database in Microsoft Fabric supports a wide range of use cases, from operational and transactional workloads to advanced analytics. This flexibility makes it an ideal choice for organizations looking to consolidate their data infrastructure and use the full potential of their data assets. With features like seamless integration with other Microsoft services, enhanced security, and scalability, SQL Database in Microsoft Fabric empowers users to build and deploy data-driven applications with ease.
 
-When you create a sync group, it will ask you to provide a database responsible to store the sync group metadata. The metadata location can be either a new database or an existing database as long it resides in the same region as your sync group.
+The **Databases** workload in Fabric is designed to address many aspects of operational SQL databases, enabling data engineers, analysts, and data scientists to work together to create and query data that is optimized for their specific needs.
 
-> [![New sync group page from Azure portal](../media/prepare-to-maintain-sql-databases-azure-04.png)](../media/../media/prepare-to-maintain-sql-databases-azure-04.png#lightbox)
-
-In the image above, you can specify sync group properties like the schedule synchronization, the conflict resolution option, and the use of a private link if needed.
-
-> [!NOTE]
-> Azure SQL Managed Instance doesn't support Data Sync feature.
-
- For more information about how to configure SQL Data Sync, see [Tutorial: Set up SQL Data Sync between databases in Azure SQL Database and SQL Server](/azure/azure-sql/database/sql-data-sync-sql-server-configure).

@@ -3,14 +3,11 @@ uid: learn.wwl.get-started-lakehouses
 metadata:
   title: Get started with lakehouses in Microsoft Fabric
   description: "Get started with lakehouses in Microsoft Fabric"
-  ms.date: 11/12/2024
+  ms.date: 03/19/2025
   author: angierudduck
   ms.author: anrudduc
   ms.topic: module-standard-task-based
-  ms.custom:
-  - build-2023
-  - build-2023-dataai
-  - build-2023-fabric
+  ms.collection: N/A
   ms.service: fabric
   ai-usage: human-only
 title: Get started with lakehouses in Microsoft Fabric
@@ -19,11 +16,14 @@ abstract: |
   In this module, you learn how to:
 
   -   Describe core features and capabilities of lakehouses in Microsoft Fabric.
+
   -   Create a lakehouse.
+
   -   Ingest data into files and tables in a lakehouse.
+
   -   Query lakehouse tables with SQL.
 prerequisites: Before starting this module, you should understand fundamental data storage and analytics concepts.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/get-started-lakehouses.svg
 levels:
 - intermediate
 roles:

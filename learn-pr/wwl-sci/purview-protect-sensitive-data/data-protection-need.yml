@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-protect-sensitive-data.data-protection-need
+title: The growing need for data protection
+metadata:
+  title: The growing need for data protection
+  description: "The growing need for data protection."
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/data-protection-need.md)]

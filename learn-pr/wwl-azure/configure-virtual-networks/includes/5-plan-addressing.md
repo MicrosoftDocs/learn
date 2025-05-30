@@ -1,10 +1,14 @@
+Let's begin with an overview of IP addressing. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5eed7999-56ce-4396-9e52-29390e9595d4]
+
 You can assign IP addresses to Azure resources to communicate with other Azure resources, your on-premises network, and the internet. There are two types of Azure IP addresses: _private_ and _public_.
 
 **Private IP addresses** enable communication within an Azure virtual network and your on-premises network. You create a private IP address for your resource when you use a VPN gateway or Azure ExpressRoute circuit to extend your network to Azure.
 
 **Public IP addresses** allow your resource to communicate with the internet. You can create a public IP address to connect with Azure public-facing services.
 
-The following illustration shows a virtual machine resource that has a private IP address and a public IP address.
+The next illustration shows a virtual machine resource that has a private IP address and a public IP address.
 
 :::image type="content" source="../media/ip-addressing-54476e47.png" alt-text="Illustration of a resource with a private IP address and a public IP address." border="false":::
 
@@ -23,3 +27,6 @@ Let's take a closer look at the characteristics of IP addresses.
    - TLS/SSL certificates linked to an IP address.
    - Firewall rules that allow or deny traffic by using IP address ranges.
    - Role-based virtual machines such as Domain Controllers and DNS servers.
+
+> [!TIP]
+> Extend your learning with the [Design an IP addressing schema for your Azure deployment](/training/modules/design-ip-addressing-for-azure/) training module. This module has a sandbox where you can try a practical exercise. 

@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-automation-devops.explore-runbook-gallery
 title: Explore runbook gallery
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore runbook gallery
   description: "Explore runbook gallery"
   ms.date: 05/23/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-explore-runbook-gallery.md)]
+  [!include[](includes/5-explore-runbook-gallery.md)]

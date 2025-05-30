@@ -1,6 +1,6 @@
 This unit outlines the basics of securing the data tier of an application using Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics. The described security strategy employs a layered, defense-in-depth approach, moving from the outside in, as illustrated in the picture below.
 
-:::image type="content" source="../media/security-layer-d6e3314b.png" alt-text="Diagram showing the layered defense in depth approach.":::
+:::image type="content" source="../media/security-layer-d6e3314b-be35f8ad-460355b5-d66616d4.png" alt-text="Diagram showing the layered defense in depth approach.":::
 
 
 ## Network security
@@ -57,7 +57,7 @@ As a best practice, create custom roles when needed. Add users to the role with 
 
 Row-Level Security enables customers to control access to rows in a database table based on the characteristics of the user executing a query (for example, group membership or execution context). Row-Level Security can also be used to implement custom Label-based security concepts.
 
-:::image type="content" source="../media/azure-database-0df938b4.png" alt-text="Digram showing how row level security Row-Level Security enables customers to control access to rows in a database table.":::
+:::image type="content" source="../media/azure-database-0df938b4-94ed8870-fb9d5c75-7ba1ef0b.png" alt-text="Digram showing how row level security Row-Level Security enables customers to control access to rows in a database table.":::
 
 
 ## Threat protection
@@ -72,7 +72,7 @@ SQL Database and SQL Managed Instance auditing tracks database activities and he
 
 Advanced Threat Protection is analyzing your logs to detect unusual behavior and potentially harmful attempts to access or exploit databases. Alerts are created for suspicious activities such as SQL injection, potential data infiltration, and brute force attacks or for anomalies in access patterns to catch privilege escalations and breached credentials use. Alerts are viewed from the Microsoft Defender for Cloud, where the details of the suspicious activities are provided and recommendations for further investigation given along with actions to mitigate the threat. Advanced Threat Protection can be enabled per server for an additional fee.
 
-:::image type="content" source="../media/azure-database-threat-protection-97ea832e.jpg" alt-text="Diagram showing how Advanced Threat Protection analyzes your logs to detect unusual behavior.":::
+:::image type="content" source="../media/azure-database-threat-protection-97ea832e-88a7bedf-489f132d-9a60c891.jpg" alt-text="Diagram showing how Advanced Threat Protection analyzes your logs to detect unusual behavior.":::
 
 
 ## Information protection and encryption
@@ -102,14 +102,14 @@ Bring Your Own Key (BYOK) support for Transparent Data Encryption (TDE) allows c
 
 ### Always Encrypted (Encryption-in-use)
 
-:::image type="content" source="../media/azure-database-encryption-in-use-a7ac95ab.png" alt-text="Diagram showing how Bring Your Own Key support for Transparent Data Encryption allows customers to take ownership of key management.":::
+:::image type="content" source="../media/azure-database-encryption-in-use-a7ac95ab-86f691fd-11779c12-21539e19.png" alt-text="Diagram showing how Bring Your Own Key support for Transparent Data Encryption allows customers to take ownership of key management.":::
 
 
 Always Encrypted is a feature designed to protect sensitive data stored in specific database columns from access (for example, credit card numbers, national/regional identification numbers, or data on a need to know basis). This includes database administrators or other privileged users who are authorized to access the database to perform management tasks, but have no business need to access the particular data in the encrypted columns. The data is always encrypted, which means the encrypted data is decrypted only for processing by client applications with access to the encryption key. The encryption key is never exposed to SQL Database or SQL Managed Instance and can be stored either in the Windows Certificate Store or in Azure Key Vault.
 
 ### Dynamic data masking
 
-:::image type="content" source="../media/azure-data-masking-cb789136.png" alt-text="Diagram showing how Always Encrypted is designed to protect sensitive data stored in specific database columns.":::
+:::image type="content" source="../media/azure-data-masking-cb789136-f5ec447f-75ac13cb-95dd7724.png" alt-text="Diagram showing how Always Encrypted is designed to protect sensitive data stored in specific database columns.":::
 
 
 Dynamic data masking limits sensitive data exposure by masking it to non-privileged users. Dynamic data masking automatically discovers potentially sensitive data in Azure SQL Database and SQL Managed Instance and provides actionable recommendations to mask these fields, with minimal impact to the application layer. It works by obfuscating the sensitive data in the result set of a query over designated database fields, while the data in the database is not changed.

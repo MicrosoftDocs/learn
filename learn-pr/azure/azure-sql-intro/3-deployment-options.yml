@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-intro.3-deployment-options
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Azure SQL deployment options
-  description: Learn about deployment options on the Azure SQL platform to meet your needs.
-  ms.date: 10/03/2024
+  title: Azure SQL products
+  description: Learn how the different products in the Azure SQL family meet your needs.
+  ms.date: 04/18/2025
   author: MashaMSFT
   ms.author: mathoma
   ms.topic: unit
-title: Azure SQL deployment options
-durationInMinutes: 10
+title: Azure SQL products
+durationInMinutes: 15
 content: |
   [!include[](includes/3-deployment-options.md)]
 quiz:

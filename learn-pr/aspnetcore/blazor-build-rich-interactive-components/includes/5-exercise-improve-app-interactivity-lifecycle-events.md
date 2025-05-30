@@ -1,7 +1,7 @@
 
-The pizza company has decided they'd like to sell a special family-sized pizza that's only available in one 24-inch size. The current pizza app has a size slider that doesn't support a single-sized pizza. You're asked to add the new family-size pizza and disable the size option for that pizza.
+The pizza company decided that they'd like to sell a special family-sized pizza that's only available in one 24-inch size. The current pizza app has a size slider that doesn't support a single-sized pizza. You're asked to add the new family-size pizza and disable the size option for that pizza.
 
-In this exercise, you change the pizza database to add the family-size pizza and change the pizza model to support the new pizza. To handle Blazor component lifecycle events, you make changes to the configure pizza dialog to handle the fixed-size case.
+In this exercise, you change the pizza database to add the family-size pizza and change the pizza model to support the new pizza. To handle Blazor component lifecycle events, you make changes to the dialog for configuring the pizza so that it handles the fixed-size case.
 
 ## Create the new family-size pizza
 
@@ -48,7 +48,7 @@ First, you add the new `FixedSize` capability to the pizza model, and create the
 1. In the app, select the new **Margherita Family Size** pizza.
 
    :::image type="content" source="../media/5-new-family-pizza.png" lightbox="../media/5-new-family-pizza.png" alt-text="Screenshot of the new family size pizza.":::
-   
+
 1. In the order form, notice that you can still change the pizza size.
 
 1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> or select **Run** > **Stop Debugging** to stop the app.
@@ -91,7 +91,7 @@ The `ConfigurePizzaDialog` component uses an HTML `range` element to allow the c
 
 1. Press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 
-1. Add the family-size pizza, and verify that the size slider is disabled because it's omitted from rendering.
+1. Add the family-size pizza, and verify that the size slider is disabled because it doesn't render.
 
     :::image type="content" source="../media/5-not-sizeable.png" lightbox="../media/5-not-sizeable.png" alt-text="Screenshot of the new family size pizza with the size range omitted from rendering.":::
 

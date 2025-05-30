@@ -2,8 +2,6 @@
 uid: learn.store-app-data-with-azure-blob-storage.4-create-storage-resources
 title: Exercise - Create Azure Storage resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create Azure Storage resources
   description: Exercise - Create Azure Storage resources
   ms.date: 10/29/2024
@@ -27,4 +25,4 @@ content: |
 #    resource:
 #      type: "Microsoft.Storage/storageAccounts"
 #      kind: "StorageV2"
-
+

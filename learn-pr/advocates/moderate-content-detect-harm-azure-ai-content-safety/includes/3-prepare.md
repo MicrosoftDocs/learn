@@ -6,7 +6,11 @@ The Content Safety Resource is an Azure AI service. This service consists of mac
 
 :::image type="content" source="../media/create-content-safety-resource.png" alt-text="A screenshot of the Create Content Safety screen. Displayed on the screen are fields for subscription, resource group, region, name, and pricing tier.":::
 
-1. Navigate to [aka.ms/acs-create](https://aka.ms/acs-create).
+1. Navigate to [portal.azure.com](https://portal.azure.com).
+1. Select **Create a resource**.
+1. In the search bar, enter **Azure AI Content Safety**.
+1. In the results, select **Azure AI Content Safety**.
+1. Select **Create**.
 1. Complete the following fields:
    - **Subscription**: Select your Azure subscription that has access to Azure OpenAI Service.
    - **Resource group**: Select or create a Resource group.

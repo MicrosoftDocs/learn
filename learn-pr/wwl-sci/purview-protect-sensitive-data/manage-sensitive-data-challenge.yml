@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-protect-sensitive-data.manage-sensitive-data-challenge
+title: The challenges of managing sensitive data
+metadata:
+  title: The challenges of managing sensitive data
+  description: "The challenges of managing sensitive data."
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/manage-sensitive-data-challenge.md)]

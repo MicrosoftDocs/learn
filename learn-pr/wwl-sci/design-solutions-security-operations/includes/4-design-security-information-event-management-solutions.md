@@ -58,7 +58,7 @@ Advantages to this strategy:
 
 Disadvantages to this strategy:
 
-- Running a query over a large number of workspaces is slow and can't scale above 100 workspaces. This means that you can create a central visualization and data analytics but it is slow if there are more than a few dozen workspaces. This situation is less acute if all workspaces are colocated on the same [dedicated cluster](/azure/azure-monitor/logs/logs-dedicated-clusters). See [here](/azure/azure-monitor/logs/cross-workspace-query) for more details on running queries across workspaces.
+- Running a query over a large number of workspaces is slow and can't scale above 100 workspaces. This means that you can create a central visualization and data analytics but it's slow if there are more than a few dozen workspaces. This situation is less acute if all workspaces are colocated on the same [dedicated cluster](/azure/azure-monitor/logs/logs-dedicated-clusters). See [here](/azure/azure-monitor/logs/cross-workspace-query) for more details on running queries across workspaces.
 - If customers aren't onboarded for Azure delegated resource management, service provider administrators must be provisioned in the customer directory. This requirement makes it more difficult for the service provider to manage many customer tenants at once.
 - When running a query on a workspace, the workspace admins might have visibility to the full text of the query via [query audit](/azure/azure-monitor/logs/query-audit).
 
@@ -85,5 +85,67 @@ There are several options to implement logs in a central location:
 - **Central workspace**: The service provider creates a workspace in its tenant and pulls data from the various workspaces using:
     - A script that uses the [Query API](/azure/azure-monitor/logs/api/overview) with the [logs ingestion API](/azure/azure-monitor/logs/logs-ingestion-api-overview) to send the data from the tenant workspaces to the central workspace.
     - [Azure Logic Apps](/azure/logic-apps/logic-apps-overview) to copy data to the central workspace.
-    - [Data export](/azure/azure-monitor/logs/logs-data-export) from the source workspace and re-ingestion to the central workspace. You can also create [summary rules](/azure/azure-monitor/logs/summary-rules) to export an aggregation of key data from the original workspaces into the central workspace.
+    - [Data export](/azure/azure-monitor/logs/logs-data-export) from the source workspace and reingestion to the central workspace. You can also create [summary rules](/azure/azure-monitor/logs/summary-rules) to export an aggregation of key data from the original workspaces into the central workspace.
 - **Power BI**: The tenant workspaces export data to Power BI by using the integration between the [Log Analytics workspace and Power BI](/azure/azure-monitor/logs/log-powerbi).
+
+## Manage access to workspaces
+
+The factors that determine which data you can access in a Log Analytics workspace are:
+
+- The settings on the workspace itself.
+- Your access permissions to resources that send data to the workspace.
+- The method used to access the workspace.
+
+The factors that define the data you can access are described in the following table.
+
+| Factor | Description  |
+|:-------------------------------------------------------|:--------------------------------------------------------|
+| Access mode | Method used to access the workspace. Defines the scope of the data available and the access control mode that's applied.
+| Access control mode | Setting on the workspace that defines whether permissions are applied at the workspace or resource level.  |
+| Azure role-based access control (RBAC)  | Permissions applied to individuals or groups of users for the workspace or resource sending data to the workspace. Defines what data you have access to. |
+| Table-level Azure RBAC | Optional permissions that define specific data types in the workspace that you can access.   |
+
+**Access mode**. The access mode refers to how you access a Log Analytics workspace and defines the data you can access during the current session. The mode is determined according to the scope you select in Log Analytics.
+
+There are two access modes:
+
+- Workspace-context: You can view all logs in the workspace for which you have permission. Queries in this mode are scoped to all data in tables that you have access to in the workspace. This access mode is used when logs are accessed with the workspace as the scope.
+
+- Resource-context: When you access the workspace for a particular resource, resource group, or subscription, such as when you select Logs from a resource menu in the Azure portal, you can view logs for only resources in all tables that you have access to. Queries in this mode are scoped to only data associated with that resource. This mode also enables granular Azure RBAC. Workspaces use a resource-context log model where every log record emitted by an Azure resource is automatically associated with this resource.
+
+**Access control mode**. The access control mode is a setting on each workspace that defines how permissions are determined for the workspace.
+
+- Require workspace permissions. This control mode doesn't allow granular Azure RBAC. To access the workspace, the user must be granted permissions to the workspace or to specific tables.
+
+- Use resource or workspace permissions. This control mode allows granular Azure RBAC.
+
+**Azure RBAC**. Access to a workspace is managed by using Azure RBAC. You grant access to the Log Analytics workspace by using Azure permissions. To learn more, see [Workspace permissions](/azure/azure-monitor/logs/manage-access?tabs=portal#workspace-permissions)
+
+**Table-level Azure RBAC**. Table-level access settings let you grant specific users or groups read-only permission to data in a table. Users with table-level read access can read data from the specified table in both the workspace and the resource context. To learn more, see [Manage table-level read access in a Log Analytics workspace](/azure/azure-monitor/logs/manage-table-access).
+
+#### Manage access to Microsoft Sentinel data by resource
+
+Typically, users who have access to a Log Analytics workspace enabled for Microsoft Sentinel also have access to all the workspace data, including security content. Administrators can use Azure roles to configure access to specific features in Microsoft Sentinel, depending on the access requirements in their team.
+
+However, you may have some users who need to access only specific data in your workspace, but shouldn't have access to the entire Microsoft Sentinel environment. For example, you may want to provide a nonsecurity operations (non-SOC) team with access to the Windows event data for the servers they own.
+
+In such cases, we recommend that you configure your role-based access control (RBAC) based on the resources that are allowed to your users, instead of providing them with access to the workspace or specific Microsoft Sentinel features. This method is also known as setting up **resource-context RBAC**.
+
+The following table highlights the scenarios where resource-context RBAC is most helpful. Note the differences in access requirements between SOC teams and non-SOC teams.
+
+| Requirement type |SOC team  |Non-SOC team  |
+|---------|---------|---------|
+|**Permissions**     | The entire workspace        |   Specific resources only      |
+|**Data access**     |  All data in the workspace       | Only data for resources that the team is authorized to access        |
+|**Experience**     |  The full Microsoft Sentinel experience, possibly limited by the [roles and permissions](/azure/sentinel/roles) assigned to the user       |  Log queries and Workbooks only       |
+
+The following image shows a simplified version of a workspace architecture where security and operations teams need access to different sets of data, and resource-context RBAC is used to provide the required permissions.
+
+:::image type="content" source="../media/resource-context-rbac-sample.png" lightbox="../media/resource-context-rbac-sample.png" alt-text="A diagram of a simplified version of a workspace architecture where security and operations teams need access to different sets of data, and resource-context RBAC is used to provide the required permissions.":::
+
+In this image:
+
+- The Log Analytics workspace enabled for Microsoft Sentinel is placed in a separate subscription to better isolate permissions from the subscription that the applications teams use to host their workloads.
+- The applications teams are granted access to their respective resource groups, where they can manage their resources.
+
+This separate subscription and resource-context RBAC allows these teams to view logs generated by any resources they have access to, even when the logs are stored in a workspace where they don't have direct access. The applications teams can access their logs via the Logs area of the Azure portal, to show logs for a specific resource, or via Azure Monitor, to show all of the logs they can access at the same time.

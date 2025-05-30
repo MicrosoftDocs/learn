@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-scale-azure-sql-databases-elastic-pools.manage-elastic-pools
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage SQL elastic pools performance and cost
   description: Learn how to manage Azure SQL elastic pools performance and cost.
   ms.date: 12/15/2023
@@ -17,4 +15,4 @@ title: Manage SQL elastic pools performance and cost
 durationInMinutes: 7
 content: |
   [!include[](includes/4-manage-elastic-pools.md)]
-
+

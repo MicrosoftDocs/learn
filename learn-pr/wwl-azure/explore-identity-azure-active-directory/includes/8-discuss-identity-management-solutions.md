@@ -8,7 +8,7 @@ Microsoft Entra ID, part of Microsoft Entra, offers a universal identity platfor
 
 ## Common Microsoft Entra ID terminology
 
-Microsoft Entra ID is a cloud-based identity and access management solution, with integrated security.  It has a simple flat architectural design, so ensure it is fast, reliable, scalable, and redundant. Microsoft Entra ID provides organizations with Identity as a Service (IDaaS) solutions that cater to all the apps across the cloud and on-premises.
+Microsoft Entra ID is a cloud-based identity and access management solution, with integrated security.  It has a simple flat architectural design, to ensure it is fast, reliable, scalable, and redundant. Microsoft Entra ID provides organizations with Identity as a Service (IDaaS) solutions that cater to all the apps across the cloud and on-premises.
 
 - **Identity** - An object that can get authenticated. An identity can be a user with a username and password. Identities also include applications or other servers that might require authentication through secret keys or certificates.
 - **Account** - An identity that has data associated with it. You can't have an account without an identity.
@@ -17,5 +17,7 @@ Microsoft Entra ID is a cloud-based identity and access management solution, wit
 - **Group** - A container of users or identities that can be assigned security privileges or restrictions.  Often used to control access to specific shared resource to a set of accounts instead of assigning individually.
 - **Azure subscription** - Used to pay for Azure cloud services. You can have many subscriptions and they're linked to a credit card.
 - **Microsoft Entra tenant/directory** - A dedicated and trusted instance of Microsoft Entra ID, a Tenant is automatically created when your organization signs up for a Microsoft cloud service subscription.
-  - More instances of Microsoft Entra ID can be created. Microsoft Entra ID is the underlying product providing the identity service. The term Tenant means a single instance of Microsoft Entra ID representing a single organization. The terms Tenant and Directory are often used interchangeably.
+
+   - More instances of Microsoft Entra ID can be created. Microsoft Entra ID is the underlying product providing the identity service. The term Tenant means a single instance of Microsoft Entra ID representing a single organization. The terms Tenant and Directory are often used interchangeably.
+
 - **Administrative Unit** - A portioned off piece of a Microsoft Entra tenant used to create and administrative boundary.

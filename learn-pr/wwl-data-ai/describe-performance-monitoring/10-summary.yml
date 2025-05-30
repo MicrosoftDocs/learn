@@ -2,16 +2,14 @@
 uid: learn.wwl.describe-performance-monitoring.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 09/26/2022
-  author: wwlpublish
+  ms.date: 03/19/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/10-summary.md)]
+  [!include[](includes/10-summary.md)]

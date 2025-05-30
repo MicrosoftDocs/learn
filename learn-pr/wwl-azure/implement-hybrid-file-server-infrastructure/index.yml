@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-hybrid-file-server-infrastructure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement a hybrid file server infrastructure
   description: Implement a hybrid file server infrastructure using Azure Files and Azure File Sync, and migrate SMB file servers to Azure.
   ms.date: 01/01/2025
@@ -62,4 +60,4 @@ units:
 - learn.wwl.implement-hybrid-file-server-infrastructure.summary
 badge:
   uid: learn.wwl.implement-hybrid-file-server-infrastructure.badge
-
+

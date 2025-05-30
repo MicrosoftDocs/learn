@@ -2,11 +2,9 @@
 uid: learn.execute-azure-function-with-triggers.9-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 09/25/2023
+  ms.date: 05/19/2025
   author: ggailey777
   ms.author: glenga
   ms.topic: unit
@@ -31,18 +29,18 @@ quiz:
       isCorrect: false
       explanation: "A hyphen specifies a range. For example, a 1-3 in the {month} field means select January, February, and March."
 
-  - content: 'Suppose your Azure Function has a blob trigger associated with it and you want it to execute only when *png* images are uploaded. Which of the following blob trigger *Path* values should you use?'
+  - content: 'Suppose your Azure Function has a blob trigger associated with it and you want it to execute only when PNG images are uploaded. Which of the following blob trigger *Path* values should you use?'
     choices:
-    - content: "samples-workitems/{name}"
+    - content: "`samples-workitems/{name}`"
       isCorrect: false
       explanation: "The Path tells the blob trigger where it should monitor for changes, and if there are any filters applied. Adding a file extension to the Path specifies that uploaded files must have that file extension in order for the trigger to invoke the function."
-    - content: "samples-workitems/{name}/png"
+    - content: "`samples-workitems/{name}/png`"
       isCorrect: false
       explanation: "The Path tells the blob trigger where it should monitor for changes, and if there are any filters applied. Adding a file extension to the Path specifies that uploaded files must have that file extension in order for the trigger to invoke the function."
-    - content: "samples-workitems/{name}?png"
+    - content: "`samples-workitems/{name}?png`"
       isCorrect: false
       explanation: "The Path tells the blob trigger where it should monitor for changes, and if there are any filters applied. Adding a file extension to the Path specifies that uploaded files must have that file extension in order for the trigger to invoke the function."
-    - content: "samples-workitems/{name}.png"
+    - content: "`samples-workitems/{name}.png`"
       isCorrect: true
       explanation: "The Path tells the blob trigger where it should monitor for changes, and if there are any filters applied. Adding a file extension to the Path specifies that uploaded files must have that file extension in order for the trigger to invoke the function."
 

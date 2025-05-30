@@ -1,15 +1,15 @@
-Cloud Backup for Virtual Machines is a vSphere plug-in for Azure VMware Solution (AVS) that provides backup and restore capabilities for Azure NetApp Files datastores.
+Cloud Backup for Virtual Machines is a vSphere plug-in for Azure VMware Solution that provides backup and restore capabilities for Azure NetApp Files datastores.
 
-To create a backup of an AVS datastore using Cloud Backup for Virtual Machines, you need the following resources:
+To create a backup of an Azure VMware Solution datastore using Cloud Backup for Virtual Machines, you need the following resources:
 
-- Access to an Azure subscription with an AVS private cloud.
-- An Azure NetApp Files volume deployed as an AVS datastore.
+- Access to an Azure subscription with an Azure VMware Solution private cloud.
+- An Azure NetApp Files volume deployed as an Azure VMware Solution datastore.
 - A service principal with the "contributor" role assigned.
 
 Use the following steps to configure your resources:
 
 1. Install Cloud Backup for Virtual Machines
-    1. From the Azure portal, navigate to your AVS private cloud.
+    1. From the Azure portal, navigate to your Azure VMware Solution private cloud.
     1. From the menu, select **Run**.
     1. From the Packages tab, expand `NetApp.CBS.AVS` then select `Install-NetAppCBSApplianceUsingDHCP`.
     1. Provide the required values then select **Run**.
@@ -26,7 +26,7 @@ Use the following steps to configure your resources:
 1. Configure a Backup Policy for Cloud Backup for Virtual Machines.
     1. Navigate to the VMware vSphere client. Select **Cloud Backup for Virtual Machines**.
     1. Select the **Policies** page then **+ Create** to initiate the wizard.
-    1. Specify settings for policy name, retention, and backup frequency
+    1. Specify settings for policy name, retention, and backup frequency.
     1. Select **Add** to save the policy.
 1. Configure a Resource Group for Cloud Backup for Virtual Machines to protect an Azure NetApp Files datastore or virtual machine within a datastore.
     1. Navigate to the VMware vSphere client. Select **Cloud Backup for Virtual Machines**.
@@ -43,4 +43,4 @@ Use the following steps to configure your resources:
     1. Select **Run Now** to start the backup.
     1. Select **OK** to initiate the backup.
 
-When you complete these steps, you create a backup of an AVS datastore using Cloud Backup for Virtual Machines.
+When you complete these steps, you create a backup of an Azure VMware Solution datastore using Cloud Backup for Virtual Machines.

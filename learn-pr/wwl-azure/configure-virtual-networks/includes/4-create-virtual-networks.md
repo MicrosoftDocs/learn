@@ -2,7 +2,7 @@ You can create new virtual networks at any time. You can also add virtual networ
 
 ### Things to know about creating virtual networks
 
-Review the following requirements for creating a virtual network.
+Review these requirements for creating a virtual network.
 
 - When you create a virtual network, you need to define the IP address space for the network.
 

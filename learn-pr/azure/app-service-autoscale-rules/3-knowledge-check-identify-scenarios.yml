@@ -2,8 +2,6 @@
 uid: learn.app-service-autoscale-rules.3-knowledge-check-identify-scenarios
 title: Knowledge check - Identify suitable scenarios for autoscaling
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check - Identify suitable scenarios for autoscaling
   description: Knowledge check - Identify suitable scenarios for autoscaling
   ms.date: 04/15/2024
@@ -52,4 +50,4 @@ quiz:
       explanation: "Incorrect. In this scenario, manual scaling is likely to be a better option because the increased demand is long-lived and can be predicted."
     - content: "Your organization is running a promotion and expects increased traffic to their website for the next couple of weeks. You want to ensure sufficient resources are available to handle the demand expected when the promotion starts."
       isCorrect: false
-      explanation: "Incorrect. You can scale up the system manually before the promotion starts, monitor the activity, and then scale back when the promotion finishes."
+      explanation: "Incorrect. You can scale up the system manually before the promotion starts, monitor the activity, and then scale back when the promotion finishes."

@@ -4,10 +4,10 @@ title: Design solutions for network posture management
 metadata:
   title: Design solutions for network posture management
   description: "SC-100 preparatory module on: design solutions for network posture management."
-  ms.date: 09/26/2024
+  ms.date: 03/06/2025
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/4-design-solutions-network-posture-management.md)]

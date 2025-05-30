@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.deploy-configure-active-directory-domain-services-domain-controllers
 title: Deploy and configure Active Directory Domain Services domain controllers in Azure VMs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy and configure Active Directory Domain Services domain controllers in Azure VMs
   description: "Deploy and configure Active Directory Domain Services domain controllers in Azure VMs"
   ms.date: 06/20/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/03-deploy-configure-active-directory-domain-services-domain-controllers.md)]
+  [!include[](includes/03-deploy-configure-active-directory-domain-services-domain-controllers.md)]

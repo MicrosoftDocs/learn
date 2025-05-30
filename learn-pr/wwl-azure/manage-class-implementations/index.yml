@@ -3,10 +3,13 @@ uid: learn.wwl.manage-class-implementations
 metadata:
   title: Manage Class Implementations
   description: "Learn how to implement classes using advanced techniques like static classes, partial classes, and object initializers that can improve the readability, maintainability, and organization of your code."
-  ms.date: 02/10/2025
+  ms.date: 02/12/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: dotnet-csharp
   ms.subservice: fundamentals
   ms.devlang: dotnet

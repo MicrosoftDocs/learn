@@ -1,22 +1,37 @@
-In this module, you configured the SDK for common scenarios that may come up with a developer team. You specifically; tuned the parallelism options, handled connection issues, configured the SDK to use with the emulator, and built a custom logger.
+In this module, you configured the Azure Cosmos DB SDK for common scenarios that may arise in development teams. Specifically, you learned how to tune client configuration for performance, handle connection issues, use the emulator for offline development, and enable detailed logging.
 
-Now that you have completed this module, you can:
+Now that you completed this module, you can:
 
-- Use the Azure Cosmos DB emulator with the SDK
-- Handle the most common connection errors with the SDK
-- Configure the parallelism options in the SDK client
-- Create a custom request handler to log HTTP request from the SDK
+- Use the Azure Cosmos DB Emulator with the SDK to test and develop applications offline
+- Handle common connection issues with the SDK across supported languages
+- Configure parallelism and performance options in the SDK client
+- Enable detailed logging to capture HTTP request and response diagnostics
 
 ## Learn more
 
 For more information about the topics discussed in this module, see:
 
 - [Install and use the Azure Cosmos DB Emulator for local development and testing][/azure/cosmos-db/local-emulator]
-- [Best practices for Azure Cosmos DB .NET SDK][/azure/cosmos-db/sql/best-practice-dotnet]
-- [Performance tips for Azure Cosmos DB and .NET][/azure/cosmos-db/sql/performance-tips-dotnet-sdk-v3-sql]
-- [Diagnose and troubleshoot issues when using Azure Cosmos DB .NET SDK][/azure/cosmos-db/sql/troubleshoot-dot-net-sdk]
+
+### .NET SDK links
+
+- [Best practices for Azure Cosmos DB .NET SDK][/azure/cosmos-db/nosql/best-practice-dotnet]
+- [Performance tips for Azure Cosmos DB and .NET][/azure/cosmos-db/nosql/performance-tips-dotnet-sdk-v3-sql]
+- [Diagnose and troubleshoot issues when using Azure Cosmos DB .NET SDK][/azure/cosmos-db/nosql/troubleshoot-dot-net-sdk]
+
+### Python SDK links
+
+- [Best practices for Azure Cosmos DB Python SDK][/azure/cosmos-db/nosql/best-practice-python]
+- [Performance tips for Azure Cosmos DB and Python][/azure/cosmos-db/nosql/performance-tips-python-sdk]
+
+### JavaScript SDK links
+
+- [Best practices for Azure Cosmos DB Node.js SDK][/azure/cosmos-db/nosql/best-practices-javascript]
 
 [/azure/cosmos-db/local-emulator]: /azure/cosmos-db/local-emulator
-[/azure/cosmos-db/sql/best-practice-dotnet]: /azure/cosmos-db/sql/best-practice-dotnet
-[/azure/cosmos-db/sql/performance-tips-dotnet-sdk-v3-sql]: /azure/cosmos-db/sql/performance-tips-dotnet-sdk-v3-sql
-[/azure/cosmos-db/sql/troubleshoot-dot-net-sdk]: /azure/cosmos-db/sql/troubleshoot-dot-net-sdk
+[/azure/cosmos-db/nosql/best-practice-dotnet]: /azure/cosmos-db/nosql/best-practice-dotnet
+[/azure/cosmos-db/nosql/performance-tips-dotnet-sdk-v3-sql]: /azure/cosmos-db/nosql/performance-tips-dotnet-sdk-v3-sql
+[/azure/cosmos-db/nosql/troubleshoot-dot-net-sdk]: /azure/cosmos-db/nosql/troubleshoot-dot-net-sdk
+[/azure/cosmos-db/nosql/best-practice-python]: /azure/cosmos-db/nosql/best-practice-python
+[/azure/cosmos-db/nosql/performance-tips-python-sdk]: /azure/cosmos-db/nosql/performance-tips-python-sdk
+[/azure/cosmos-db/nosql/best-practices-javascript]: /azure/cosmos-db/nosql/best-practices-javascript

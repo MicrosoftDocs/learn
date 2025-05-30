@@ -28,7 +28,7 @@ Let's look at a JSON ARM template definition to create a single database in SQL 
 
 ```json
 {
-  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2021-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "metadata": {
     "_generator": {
@@ -75,7 +75,7 @@ Let's look at a JSON ARM template definition to create a single database in SQL 
   "resources": [
     {
       "type": "Microsoft.Sql/servers",
-      "apiVersion": "2021-08-01-preview",
+      "apiVersion": "2022-02-01",
       "name": "[parameters('serverName')]",
       "location": "[parameters('location')]",
       "properties": {
@@ -85,7 +85,7 @@ Let's look at a JSON ARM template definition to create a single database in SQL 
     },
     {
       "type": "Microsoft.Sql/servers/databases",
-      "apiVersion": "2021-08-01-preview",
+      "apiVersion": "2022-02-01",
       "name": "[format('{0}/{1}', parameters('serverName'), parameters('sqlDBName'))]",
       "location": "[parameters('location')]",
       "sku": {
@@ -98,30 +98,34 @@ Let's look at a JSON ARM template definition to create a single database in SQL 
     }
   ]
 }
-
 ```
 
-As we can see above, a single database that has one of two purchasing models was defined. As part of creating a single database, you also specify the server to be responsible for managing it, and the region in which it should be placed within Azure.
+In this example, a single database is defined with one of two purchasing models. When creating the database, you also specify the server that manages it and the Azure region where it will be located.
 
-As we can see in the PowerShell example below, this file can be deployed from a URI:
+As shown in the following PowerShell example, this configuration can be deployed from a URI:
 
 ```PowerShell
 $projectName = Read-Host -Prompt "Enter a project name that is used for generating resource names"
-$location = Read-Host -Prompt "Enter an Azure location (i.e. centralus)"
+$location = Read-Host -Prompt "Enter an Azure location (e.g., centralus)"
 $adminUser = Read-Host -Prompt "Enter the SQL server administrator username"
 $adminPassword = Read-Host -Prompt "Enter the SQL server administrator password" -AsSecureString
 
 $resourceGroupName = "${projectName}rg"
 
+# Create a new resource group
 New-AzResourceGroup -Name $resourceGroupName -Location $location
+
+# Deploy resources using an ARM template
 New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateUri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.sql/sql-database/azuredeploy.json" -administratorLogin $adminUser -administratorLoginPassword $adminPassword
 ```
 
+This script prompts the user for a project name, Azure location, SQL server administrator username, and password. It then creates a new resource group in the specified location and deploys resources using an Azure Resource Manager (ARM) template from a provided URI. The ARM template sets up an SQL database with the given administrator credentials.
+
 ## Bicep
 
-Azure Bicep is a declarative language that allows you to deploy Azure resources. Bicep provides a first-class authoring experience that is concise, reliable and allow for code reuse, and it's commonly described as an Infrastructure-as-Code (IaC) tool.
+Azure Bicep is a declarative language designed for deploying Azure resources. It offers a concise, reliable authoring experience that supports code reuse, making it an excellent Infrastructure-as-Code (IaC) tool.
 
-Bicep isn't meant to be a general programming language. It's meant as a tool to allow you to create a file declaring Azure infrastructure resources and properties that can be used throughout the development lifecycle, allowing resource deployment in a consistent manner.
+Bicep isn't intended to be a general-purpose programming language. Instead, it's a specialized tool for creating files that declare Azure infrastructure resources and their properties. This approach ensures consistent resource deployment throughout the development lifecycle.
 
 ### Benefits
 
@@ -129,7 +133,7 @@ The following are some benefits of Bicep:
 
 - **Continuous full support –** Bicep provides support for all resource types and API versions for Azure services, which means that as soon as a resource provider introduces new resource types and API versions, you can use them in your Bicep file without waiting for a tool update.
 
-- **Simple syntax –** Compared to an equivalent JSON file, Bicep files will be more concise and easier to read.
+- **Simple syntax –** Compared to an equivalent JSON file, Bicep files are more concise and easier to read.
 
 - **Easy to use:** Bicep requires no previous knowledge of programming languages and is easy to write and understand.
 
@@ -139,7 +143,7 @@ The following examples show the difference between a Bicep file and the equivale
 
 ```json
 {
-  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2021-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
     "location": {
@@ -154,7 +158,7 @@ The following examples show the difference between a Bicep file and the equivale
   "resources": [
     {
       "type": "Microsoft.Storage/storageAccounts",
-      "apiVersion": "2021-06-01",
+      "apiVersion": "2022-09-01",
       "name": "[parameters('storageAccountName')]",
       "location": "[parameters('location')]",
       "sku": {
@@ -173,7 +177,7 @@ The following examples show the difference between a Bicep file and the equivale
 param location string = resourceGroup().location
 param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
 
-resource storageAccount 'Microsoft.Storage/storageAccounts@2021-06-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
   name: storageAccountName
   location: location
   sku: {
@@ -188,85 +192,13 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-06-01' = {
 
 ### Bicep vs. JSON
 
-Both Bicep and JSON can be used to deploy a database. As the example above shows, Bicep is a lot more concise and simpler to read.  Here's an example of a JSON file to deploy a database:
+Both Bicep and JSON can be used to deploy a database. Bicep is more concise and easier to read. Here’s an example of a JSON file for deploying a database:
 
-```json
-{
-  "type": "Microsoft.Sql/servers",
-  "apiVersion": "2021-11-01-preview",
-  "name": "string",
-  "location": "string",
-  "tags": {
-    "tagName1": "tagValue1",
-    "tagName2": "tagValue2"
-  },
-  "identity": {
-    "type": "string",
-    "userAssignedIdentities": {}
-  },
-  "properties": {
-    "administratorLogin": "string",
-    "administratorLoginPassword": "string",
-    "administrators": {
-      "administratorType": "ActiveDirectory",
-      "azureADOnlyAuthentication": "bool",
-      "login": "string",
-      "principalType": "string",
-      "sid": "string",
-      "tenantId": "string"
-    },
-    "federatedClientId": "string",
-    "keyId": "string",
-    "minimalTlsVersion": "string",
-    "primaryUserAssignedIdentityId": "string",
-    "publicNetworkAccess": "string",
-    "restrictOutboundNetworkAccess": "string",
-    "version": "string"
-  }
-}
-```
-
-Now, compare it to a Bicep file:
-
-```bicep
-resource symbolicname 'Microsoft.Sql/servers@2021-11-01-preview' = {
-  name: 'string'
-  location: 'string'
-  tags: {
-    tagName1: 'tagValue1'
-    tagName2: 'tagValue2'
-  }
-  identity: {
-    type: 'string'
-    userAssignedIdentities: {}
-  }
-  properties: {
-    administratorLogin: 'string'
-    administratorLoginPassword: 'string'
-    administrators: {
-      administratorType: 'ActiveDirectory'
-      azureADOnlyAuthentication: bool
-      login: 'string'
-      principalType: 'string'
-      sid: 'string'
-      tenantId: 'string'
-    }
-    federatedClientId: 'string'
-    keyId: 'string'
-    minimalTlsVersion: 'string'
-    primaryUserAssignedIdentityId: 'string'
-    publicNetworkAccess: 'string'
-    restrictOutboundNetworkAccess: 'string'
-    version: 'string'
-  }
-}
-```
-
-As you can see, the Bicep file is easier to read and use. You can also install the Bicep extension for Visual Studio Code to create your Bicep files, as the editor provides rich intellisense, and syntax validation.
+You can also install the Bicep extension for Visual Studio Code to create your Bicep files, as the editor provides rich intellisense, and syntax validation.
 
 ### Deploying an Azure SQL Database using Bicep with PowerShell
 
-You can easily create an Azure SQL Database using Bicep and PowerShell.  A single database has a defined set of compute, memory, IO, and storage resources using one of two purchasing models. When you create a single database, you also define a server to manage it and place it within Azure resource group in a specified region.  Below is the respective Bicep file.
+You can effortlessly create an Azure SQL Database using Bicep and PowerShell. A single database comes with a defined set of compute, memory, IO, and storage resources, available through one of two purchasing models. When setting up a single database, you also specify a server to manage it and place it within an Azure resource group in a chosen region. 
 
 The Bicep file used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/sql-database/). 
 
@@ -287,7 +219,7 @@ param administratorLogin string
 @secure()
 param administratorLoginPassword string
 
-resource sqlServer 'Microsoft.Sql/servers@2021-08-01-preview' = {
+resource sqlServer 'Microsoft.Sql/servers@2022-02-01' = {
   name: serverName
   location: location
   properties: {
@@ -296,7 +228,7 @@ resource sqlServer 'Microsoft.Sql/servers@2021-08-01-preview' = {
   }
 }
 
-resource sqlDB 'Microsoft.Sql/servers/databases@2021-08-01-preview' = {
+resource sqlDB 'Microsoft.Sql/servers/databases@2022-02-01' = {
   parent: sqlServer
   name: sqlDBName
   location: location
@@ -305,10 +237,9 @@ resource sqlDB 'Microsoft.Sql/servers/databases@2021-08-01-preview' = {
     tier: 'Standard'
   }
 }
-
 ```
 
-To deploy this file, save it as main.bicep on your local computer and run the following commands in PowerShell.
+To deploy this file, save it as `main.bicep` on your local computer and execute the following commands in PowerShell.
 
 ```Azure PowerShell
 New-AzResourceGroup -Name exampleRG -Location eastus
@@ -317,18 +248,10 @@ New-AzResourceGroupDeployment -ResourceGroupName exampleRG -TemplateFile ./main.
 
 ## Source control for templates
 
-ARM templates and Bicep files are an example of infrastructure as code. Since all hardware resources are abstracted behind a set of APIs, your entire infrastructure can just be another component of your application code. Just like application or database code, it's important to protect and version this code. In addition to the internal version in the template, your source control system should version your templates. 
+ARM templates and Bicep files exemplify infrastructure as code. With hardware resources abstracted behind APIs, your entire infrastructure becomes an integral part of your application code. Just like application or database code, it's crucial to protect and version this code. Besides the internal versioning within the template, your source control system should also version your templates.
 
-In most cases, the database administrator won't be writing their own template from scratch. You may either build them from the Azure portal or using a template from the [quickstart templates](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.sql/sql-database) that are provided by Microsoft on GitHub. 
+Typically, database administrators won't create templates from scratch. Instead, they can build them using the Azure portal or use templates from the [quickstart templates](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.sql/sql-database) provided by Microsoft on GitHub.
 
-The image below shows how to create a SQL Database from a template on GitHub.
+:::image type="content" source="../media/module-66-automation-final-02.png" alt-text="Screenshot showing the GitHub Azure Quickstart Template page.":::
 
-:::image type="content" source="../media/module-66-automation-final-02.png" alt-text="Screenshot of the GitHub Azure Quickstart Template page.":::
-
-Select **Deploy to Azure**, and you'll need to log into the Azure portal.
-
-:::image type="content" source="../media/module-66-automation-final-03.png" alt-text="Screenshot of the Create a SQL Server and database page on Azure based on the quickstart template.":::
-
-If you select **Edit template**, you'll see the JSON defining the template, which would allow you to change the values to meet your requirements.
-
-After providing the required parameters in the deployment screen, select **Review + create** to deploy your template.
+When you select "Deploy to Azure" on the GitHub page for SQL Database templates, it takes you to the Azure portal. The template loads up, and you just need to fill in a few details like resource group, location, and admin credentials. After that, select **Review + create** and then **Create** to start the deployment. The portal handles the rest and show you the status until it's done.

@@ -1,8 +1,8 @@
-The unfortunate reality is that the majority of startups fail. The good news is that in many cases, these common causes of failure are avoidable. As long as founders are aware of the most common startup pitfalls, they can take steps to mitigate situations before they worsen.
+The unfortunate reality is that most startups fail. The good news is that in many cases, these common causes of failure are avoidable. As long as founders are aware of the most common startup pitfalls, they can take steps to mitigate situations before they worsen.
 
-Bear in mind that your startup failing doesn't need to spell the end of your entrepreneurial career! Failing can be a great opportunity to learn what customers really want. Moreover, if the failure happens quickly and cheaply, you can pick yourself up and move onto another idea, applying the lessons you've learned from your first attempt.
+Bear in mind that your startup failing doesn't need to spell the end of your entrepreneurial career! Failing can be a great opportunity to learn what customers really want. Moreover, if the failure happens quickly and cheaply, you can pick yourself up and move onto another idea, applying the lessons you learned from your first attempt.
 
-In this unit, you'll learn about the most common causes of startup failure, and some of the relatively simple actions you can take (or avoid taking) in the early days to maximize the chances of your startup being successful.
+In this unit, you learn about the most common causes of startup failure, and some of the relatively simple actions you can take (or avoid taking) in the early days to maximize the chances of your startup being successful.
 
 At the end of this unit, you can work through a checklist to score your startup against the indicators of startup failure. This list helps you identify any issues that you might need to address.
 
@@ -12,7 +12,7 @@ By far the most common reason that startups fail is they build products that nob
 
 Without proven demand from customers, it's likely that you'll build either entirely the wrong product or a product that's not exactly what your target customer needs. This prevents you from creating a viable, scalable business.
 
-In another module, we'll discuss methods for validating your idea with customers before you spend significant amounts of time or money building your product. This is a vital step to confirm that customers will want your product and that it will solve a real problem for them.
+In another module, we discuss methods for validating your idea with customers before you spend significant amounts of time or money building your product. This is a vital step in confirming that customers want your product and that it solves a real problem for them.
 
 ## A derivative idea
 

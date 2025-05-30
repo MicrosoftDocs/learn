@@ -1,6 +1,6 @@
 In the previous unit, you implemented resiliency by adding failure-handling code using .NET native resilience extension. However, this change only applies to the service that you changed. Updating a large app with many services would be nontrivial.
 
-Instead of using *code-based* resiliency, this unit uses an approach called *infrastructure-based* resiliency that spans the entire app. You will:
+Instead of using *code-based* resiliency, this unit uses an approach called *infrastructure-based* resiliency that spans the entire app. You'll:
 
 * Redeploy the app without any resiliency into Kubernetes.
 * Deploy Linkerd in your Kubernetes cluster.
@@ -422,6 +422,6 @@ Linkerd follows a different approach to resiliency than what you saw with code-b
 
 For more information about Linkerd configuration, see the following resources:
 
-* [Configuring retries - Linkerd documentation](https://linkerd.io/2/tasks/configuring-retries)
-* [Configuring timeouts - Linkerd documentation](https://linkerd.io/2/tasks/configuring-timeouts)
+* [Configuring retries - Linkerd documentation](https://linkerd.io/2.12/tasks/configuring-retries/)
+* [Configuring timeouts - Linkerd documentation](https://linkerd.io/2.12/tasks/configuring-timeouts)
 * [How we designed retries in Linkerd 2.2 - Linkerd blog](https://linkerd.io/2019/02/22/how-we-designed-retries-in-linkerd-2-2)

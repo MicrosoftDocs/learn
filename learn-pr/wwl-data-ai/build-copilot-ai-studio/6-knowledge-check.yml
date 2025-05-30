@@ -1,14 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-copilot-ai-studio.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check to test your knowledge on grounding models with RAG.
   author: madiepev
   ms.author: madiepev
-  ms.date: 11/26/2024
+  ms.date: 05/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -26,27 +24,27 @@ quiz:
       explanation: Correct. Groundedness involves using a data source to *ground* prompts and ensure accurate, relevant responses."
     - content: "Using the lowest possible number of tokens in a prompt."
       isCorrect: false
-      explanation: "Incorrect. Groundedness does not minimize the number of tokens in a prompt."
+      explanation: "Incorrect. Groundedness doesn't minimize the number of tokens in a prompt."
   - content: "What pattern can you use to ground prompts?"
     choices:
     - content: "Metadata Optimized Prompt (MOP)."
       isCorrect: false
-      explanation: "Incorrect. There is no MOP pattern for grounding prompts."
+      explanation: "Incorrect. There's no MOP pattern for grounding prompts."
     - content: "Data Understanding Support Text (DUST)."
       isCorrect: false
-      explanation: "Incorrect. There is no DUST pattern for grounding prompts."
+      explanation: "Incorrect. There's no DUST pattern for grounding prompts."
     - content: "Retrieval Augmented Generation (RAG)."
       isCorrect: true
       explanation: "Correct. The RAG pattern is used to add grounding data to prompts."
-  - content: "Which tool enables you to retrieve grounding data in a prompt flow?"
+  - content: "How can you use the RAG pattern in a client app that uses the Azure OpenAI SDK?"
     choices:
-    - content: "Query tool."
+    - content: "Add text files containing the grounding data to the app folder."
       isCorrect: false
-      explanation: "Incorrect. There is no Query tool in Promot Flow."
-    - content: "Content Safety tool."
+      explanation: "Incorrect. You shouldn't include grounding data as text files in the app folder."
+    - content: "You don't need to do anything. Azure AI Foundry automatically grounds all prompts using Bing Search."
       isCorrect: false
-      explanation: "Incorrect. The Content Safety tool does not retrieve grounding data."
-    - content: "Index Lookup tool."
+      explanation: "Incorrect. Azure AI Foundry doesn't automatically ground all prompts using Bing Search."
+    - content: "Add index connection details to the OpenAI ChatClient configuration."
       isCorrect: true
-      explanation: "Correct. You can use the Index lookup tool to retrieve grounding data from an index in Prompt Flow."
+      explanation: "Correct. Adding index connection information to the client enables grounding of prompts."
 

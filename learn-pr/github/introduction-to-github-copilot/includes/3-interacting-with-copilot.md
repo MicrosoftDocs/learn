@@ -1,4 +1,4 @@
-This unit explores ways that you can maximize your interaction with GitHub Copilot in your development environment. By understanding the service's features and capabilities, you'll learn how to use it effectively.
+This unit explores ways that you can maximize your interaction with GitHub Copilot in your development environment. By understanding the service's features and capabilities, you learn how to use it effectively.
 
 The following sections describe the various ways to trigger and use GitHub Copilot, along with examples and shortcuts to help you get the most out of it.
 
@@ -24,7 +24,7 @@ def calculate_average(numbers):
 
 The command palette provides quick access to the various functions in Copilot, so you can perform complex tasks with only a few keystrokes.
 
-1. Open the command palette by selecting `Ctrl+Shift+P` (Windows or Linux) or `Cmd+Shift+P` (Mac).
+1. Open the command palette in Visual Studio Code by selecting `Ctrl+Shift+P` (Windows or Linux) or `Cmd+Shift+P` (Mac).
 1. Enter **Copilot** to see available commands.
 1. Select actions like **Explain This** or **Generate Unit Tests** to get assistance.
 
@@ -61,7 +61,23 @@ Inline chat enables context-specific conversations with Copilot directly within 
 1. Use the keyboard shortcut `Ctrl+I` (Windows or Linux) or `Cmd+I` (Mac) to open inline chat.
 1. Ask questions or request changes specific to that code location.
 
-Inline chat helps you focus on a particular section of your code and get targeted advice.
+Inline chat helps you focus on a specific section of your code and receive targeted advice. Additionally, you can utilize slash commands for more efficient interaction.
+
+Slash commands are shortcuts that allow you to quickly perform actions in Copilot. These commands provide a convenient way to interact with Copilot without needing to navigate through menus.
+
+Here are some common slash commands and their usage:
+
+- `/explain` - Provides an explanation of the selected code.
+- `/suggest` - Offers code suggestions based on the current context.
+- `/tests` - Generates unit tests for the selected function or class.
+- `/comment` - Converts comments into code snippets.
+
+To use a slash command, just type the command in your editor and press `Enter`. For example:
+
+```python
+# Select the function, use the shortcut to open the inline chat, and type: /explain
+def calculate_average(numbers):
+```
 
 ## Comments to code
 
@@ -76,7 +92,7 @@ def reverse_string(s):
 ```
 
 ```python
-// Function to reverse a string
+## Function to reverse a string
 def reverse_string(s):
     return s[::-1]
 ```

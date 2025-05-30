@@ -1,0 +1,1 @@
+This module is designed to help you understand the critical role screen readers play in enhancing accessibility for users with visual impairments. Whether you're a new student or early in your career, this module will provide you with the foundational knowledge needed to create inclusive digital experiences.

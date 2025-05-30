@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-azure-app-service.exercise-create-static-html-web-app-by-using-azure-cloud-shell
 title: 'Exercise: Create a static HTML web app by using Azure Cloud Shell'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Create a static HTML web app by using Azure Cloud Shell'
   description: "Exercise: Create a static HTML web app by using Azure Cloud Shell"
   ms.date: 02/10/2025

@@ -2,8 +2,6 @@
 uid: learn.wwl.security-monitoring-and-governance.understand-policies
 title: Understand policies
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand policies
   description: "Understand policies"
   ms.date: 05/13/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-understand-policies.md)]
+  [!include[](includes/6-understand-policies.md)]

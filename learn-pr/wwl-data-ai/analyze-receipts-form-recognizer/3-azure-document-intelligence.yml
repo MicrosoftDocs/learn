@@ -2,11 +2,9 @@
 uid: learn.wwl.analyze-receipts-form-recognizer.get-started
 title: Understand Azure AI Document Intelligence capabilities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand Azure AI Document Intelligence capabilities
   description: "Understand Azure AI Document Intelligence capabilities"
-  ms.date: 10/04/2024
+  ms.date: 4/23/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit

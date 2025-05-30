@@ -43,8 +43,7 @@ By default, Fusion detection is enabled in Microsoft Sentinel. Microsoft is cons
 
   - Microsoft Defender for IoT
 
-    - Microsoft Defender XDR
-
+  - Microsoft Defender XDR
 
   - Microsoft Defender for Cloud Apps
 
@@ -68,7 +67,7 @@ Some of the common attack detection scenarios that Fusion alerts identify includ
 
 - **Ransomware**. After a suspicious sign-in to a Microsoft Entra account, unusual user behavior used to encrypt data can trigger a ransomware execution alert.
 
-> [!Note]
+> [!NOTE]
 > For more information on the Fusion technology in Microsoft Sentinel, see [Advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion)
 
 ## Microsoft security
@@ -93,7 +92,7 @@ You can configure the following security solutions to pass their alerts to Micro
 
 - Microsoft Defender for Endpoint
 
-> [!Note]
+> [!NOTE]
 > Microsoft unifies security information and event management (SIEM) and extended detection and response (XDR) terminology across their security products.
 
 You can filter these alerts by severity and by specific text that is contained in the alert name.

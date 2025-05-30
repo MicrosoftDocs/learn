@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-configure-azure-developer-cli-templates.install-azure-developer-cli
 title: Install the Azure Developer CLI
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Install the Azure Developer CLI
   description: Get set up to work with the Azure Developer CLI
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-install-azure-developer-cli.md)]
-
+

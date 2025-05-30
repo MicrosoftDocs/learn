@@ -5,4 +5,3 @@ You looked into how to develop functions that support both HTTP triggers and que
 ## Further learning
 
 - [Custom handlers](/azure/azure-functions/functions-custom-handlers?azure-portal=true)
-- [Learn Go](/training/paths/go-first-steps/?azure-portal=true)

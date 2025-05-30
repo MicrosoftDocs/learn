@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-delta-lake-azure-synapse-analytics.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/11/2023
   author: wwlpublish
@@ -70,4 +68,4 @@ quiz:
       explanation: "Incorrect. A Delta Lake table can be a source or a sink."
     - content: "Either a source or a sink"
       isCorrect: true
-      explanation: "Correct. A Delta Lake table can be a source or a sink."
+      explanation: "Correct. A Delta Lake table can be a source or a sink."

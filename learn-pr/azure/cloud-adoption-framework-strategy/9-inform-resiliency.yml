@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-strategy.resiliency
+metadata:
+  title: Resiliency Considerations for Your Cloud Adoption Strategy
+  description: Learn about resiliency considerations so that you can design a strategy that minimizes the effect of disruptions and helps maintain business continuity.
+  ms.date: 03/14/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+title: Resiliency considerations for your cloud adoption strategy
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-inform-resiliency.md)]
+quiz:
+ title: Check your knowledge
+ questions: 
+ - content: What does the shared responsibility model define?
+   choices:
+   - content: The exclusive responsibilities of the cloud provider
+     isCorrect: false
+     explanation: Incorrect. The shared responsibility model defines the division of responsibilities between the cloud provider and its customers.
+   - content: The exclusive responsibilities of the customers
+     isCorrect: false
+     explanation: Incorrect. The shared responsibility model defines the division of responsibilities between the cloud provider and its customers.
+   - content: The division of responsibilities between the cloud provider and its customers
+     isCorrect: true
+     explanation: Correct. The shared responsibility model defines the division of responsibilities and establishes boundaries for what the provider and customer manage.
+   - content: The responsibilities of non-Microsoft vendors
+     isCorrect: false
+     explanation: Incorrect. The shared responsibility model defines the division of responsibilities between the cloud provider and its customers.

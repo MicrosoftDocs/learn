@@ -4,4 +4,4 @@ Today, innovation means keeping up to date with AI. AI breakthroughs are happeni
 
 In this context, automating two or three of your business processes isn't enough to keep your competitive edge. To stay relevant, organizations need to incorporate AI throughout the company. AI can power up every role and process in your business.
 
-This module prepares you to achieve meaningful AI adoption in sensible, strategical steps. Next, let’s look at some key factors that organizations need to consider as they evaluate and prioritize AI investments.
+This module prepares you to achieve meaningful AI adoption in sensible, strategical steps. So, let’s look at some key factors that organizations need to consider as they evaluate and prioritize AI investments.

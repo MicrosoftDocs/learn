@@ -1,10 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-data-warehouse.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  hidden_question_numbers: ["31D8967B_112","31D8967B_116","31D8967B_128","31D8967B_132"]
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 01/10/2025
+  ms.date: 5/15/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

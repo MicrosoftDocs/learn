@@ -2,8 +2,6 @@
 uid: learn.azure.share-bicep-modules-using-private-registries.publish-module-private-registry
 title: Publish a module to a private registry
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Publish a module to a private registry
   description: Learn how to create and control access to a private registry, and how to publish modules to the registry.
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-publish-module-private-registry.md)]
-
+

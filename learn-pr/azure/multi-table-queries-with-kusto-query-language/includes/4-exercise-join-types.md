@@ -1,6 +1,6 @@
 In this exercise, you learn how to use the `join` operator. Recall that the `join` operator merges the rows of two tables by matching values of the specified columns from each table. 
 
-Let's use the results of the `join` operator to answer questions about sales.
+Let's use the results of the `join` operator for answering questions about sales.
 
 ## Use the `join` operator
 
@@ -68,7 +68,7 @@ Your team then asks you to identify the countries/regions with the lowest revenu
 
 Your sales team wants to know the total sales by product category. When you start reviewing the available data, you realize that you need the *Products* table to get the list of product categories and the *SalesFact* table to get the sales data. You also realize that you want to count the sales for each category and list all product categories.
 
-Having analyzed the request, you choose to use the *rightouter* `join`, because it returns all sales records from the right table, enriched with matching data product category from the left table. You write your query by using the *Products* table as the left dimension table, matching data from the *SalesFact* facts table, and grouping the result by product category.
+After analyzing the request, you decide to use the *rightouter* `join`, because it returns all sales records from the right table, enriched with matching data product category from the left table. You write your query by using the *Products* table as the left dimension table, matching data from the *SalesFact* facts table, and grouping the result by product category.
 
 1. Run the following query.
 

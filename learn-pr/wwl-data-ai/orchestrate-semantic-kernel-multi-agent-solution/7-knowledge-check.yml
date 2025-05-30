@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-sk-multi-agent-solution.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This unit contains a knowledge check which can help learners reinforce their understanding of the material.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 03/14/2025
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Which statement best describes AgentGroupChat in the Semantic Kernel AgentChat framework?"  
+    choices:  
+      - content: "It only supports interactions between agents of the same type."  
+        isCorrect: false  
+        explanation: "Incorrect. AgentGroupChat allows agents of different types, such as ChatCompletionAgent and OpenAIAssistantAgent, to work together."  
+      - content: "It is an abstract class that must be subclassed to enable multi-agent interactions."  
+        isCorrect: false  
+        explanation: "Incorrect. AgentGroupChat is a concrete implementation of AgentChat, not an abstract class."  
+      - content: "It enables interaction between multiple agents and uses strategy-based approaches to manage conversation dynamics."  
+        isCorrect: true  
+        explanation: "Correct. AgentGroupChat allows multiple agents to collaborate using strategy-based conversation management."  
+  - content: "In an agent group chat, how does the Semantic Kernel Agent Framework select the right agent for a task?" 
+    choices:  
+      - content: "By random selection" 
+        isCorrect: false 
+        explanation: "Incorrect. Agent selection isn't random; it's based on analyzing user intent and routing according to specific rules."
+      - content: "Using the specified selection strategy" 
+        isCorrect: true 
+        explanation: "Correct. The framework uses the defined selection strategy to determin which agent should respond."
+      - content: "By the agent's physical location" 
+        isCorrect: false 
+        explanation: "Incorrect. Agent selection isn't based on physical location but on task relevance and expertise."
+  - content: "What is the role of the Termination Strategy in the Semantic Kernel Agent Framework?" 
+    choices:
+      - content: "It determines when a conversation or task should end" 
+        isCorrect: true 
+        explanation: "Correct. The Termination Strategy ensures conversations or tasks are properly concluded, preventing unnecessary messages or prolonged interactions."
+      - content: "It defines the flow of conversation" 
+        isCorrect: false 
+        explanation: "Incorrect. The flow of conversation is managed by the selection strategy, not the termination strategy."
+      - content: "It decides which agent takes the next turn" 
+        isCorrect: false 
+        explanation: "Incorrect. The next agent to respond is determined by the selection strategy, not the termination strategy."

@@ -2,8 +2,6 @@
 uid: learn.aks-cluster-upgrades-patches.what-are-aks-versions 
 title: What are Azure Kubernetes Service cluster versions? 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true 
   title: What are Azure Kubernetes Service cluster versions? 
   description: Understand the Kubernetes version release and deprecation process supported by Azure Kubernetes Service. 
   ms.date: 10/09/2023
@@ -49,4 +47,4 @@ quiz:
       explanation: "At any given time, AKS supports only the latest two Kubernetes patch versions of a Kubernetes minor version."
     - content: "3"
       isCorrect: false
-      explanation: "At any given time, AKS supports only the latest two Kubernetes patch versions of a Kubernetes minor version."
+      explanation: "At any given time, AKS supports only the latest two Kubernetes patch versions of a Kubernetes minor version."

@@ -2,8 +2,6 @@
 uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Introduction to managing multiple environments by using Bicep and Azure Pipelines.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

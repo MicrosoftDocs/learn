@@ -1,7 +1,18 @@
-Azure App Service supports two options for scaling out your web apps automatically:
+Azure App Service supports manual scaling, and two options for scaling out your web apps automatically:
 
-- Autoscaling with Azure autoscale. Autoscaling makes scaling decisions based on rules that you define.
-- Azure App Service automatic scaling. Automatic scaling makes scaling decisions for you based on the parameters that you select.
+* Autoscaling with Azure *autoscale*. Autoscaling makes scaling decisions based on rules that you define.
+* Azure App Service *automatic scaling*. Automatic scaling makes scaling decisions for you based on the parameters that you select.
+
+The following table highlights the differences between the two automatic scaling options:
+
+| **Factor** | **Autoscale** | **Automatic scaling** |
+|--|--|--|
+| Available pricing tiers | Standard and Up | Premium V2 (P1V2, P2V2, P3V2) and Premium V3 (P0V3, P1V3, P2V3, P3V3, P1MV3, P2MV3, P3MV3, P4MV3, P5MV3) pricing tiers |
+| Rule-based scaling | Yes | No, the platform manages the scale-out and in based on HTTP traffic. |
+| Schedule-based scaling | Yes | No |
+| Always ready instances | No, your web app runs on other instances available during the scale-out operation, based on threshold defined for autoscale rules. | Yes (minimum 1) |
+| Prewarmed instances | No | Yes (default 1) |
+| Per-app maximum | No | Yes |
 
 ## What is autoscaling?
 
@@ -17,15 +28,15 @@ Autoscaling responds to changes in the environment by adding or removing web ser
 
 ### Autoscaling rules
 
-Autoscaling makes its decisions based on rules that you define. A rule specifies the threshold for a metric, and triggers an autoscale event when this threshold is crossed. Autoscaling can also deallocate resources when the workload has diminished.
+Autoscaling makes its decisions based on rules that you define. A rule specifies the threshold for a metric, and triggers an autoscale event when this threshold is crossed. Autoscaling can also deallocate resources when the workload lessens.
 
-Define your autoscaling rules carefully. For example, a Denial of Service attack will likely result in a large-scale influx of incoming traffic. Trying to handle a surge in requests caused by a DoS attack would be fruitless and expensive. These requests aren't genuine, and should be discarded rather than processed. A better solution is to implement detection and filtering of requests that occur during such an attack before they reach your service.
+Define your autoscaling rules carefully. For example, a Denial of Service attack can result in a large-scale influx of incoming traffic. Trying to handle a surge in requests caused by a DoS attack would be fruitless and expensive. These requests aren't genuine, and should be discarded rather than processed. A better solution is to implement detection and filtering of requests that occur during such an attack before they reach your service.
 
 ### When should you consider autoscaling?
 
 Autoscaling provides elasticity for your services. For example, you might expect increased/reduced activity for a business app during holidays.
 
-Autoscaling improves availability and fault tolerance. It can help ensure that client requests to a service won't be denied because an instance is either not able to acknowledge the request in a timely manner, or because an overloaded instance has crashed.
+Autoscaling improves availability and fault tolerance. It can help ensure that client requests to a service aren't denied because an instance is either: not able to acknowledge the request in a timely manner; or because an instance has crashed.
 
 Autoscaling works by adding or removing web servers. If your web apps perform  resource-intensive processing as part of each request, then autoscaling might not be an effective approach. In these situations, manually scaling up may be necessary. For example, if a request sent to a web app involves performing complex processing over a large dataset, depending on the instance size, this single request could exhaust the processing and memory capacity of the instance.
 
@@ -35,9 +46,9 @@ The number of instances of a service is also a factor. You might expect to run o
 
 ## Azure App Service automatic scaling
 
-Automatic scaling is a new scale-out option that automatically handles scaling decisions for your web apps and App Service Plans. It's different from the pre-existing Azure autoscale, which lets you define scaling rules based on schedules and resources. With automatic scaling, you can adjust scaling settings to improve your app's performance and avoid cold start issues. The platform prewarms instances to act as a buffer when scaling out, ensuring smooth performance transitions. You're charged per second for every instance, including prewarmed instances.
+You enable automatic scaling for an App Service Plan and configure a range of instances for each of the web apps. As your web app starts receiving HTTP traffic, App Service monitors the load and adds instances. Resources may be shared when multiple web apps within an App Service Plan are required to scale out simultaneously.
 
-Here are a few scenarios where you should scale-out automatically:
+Here are a few scenarios where you should scale out automatically:
 
 - You don't want to set up autoscale rules based on resource metrics.
 - You want your web apps within the same App Service Plan to scale differently and independently of each other.

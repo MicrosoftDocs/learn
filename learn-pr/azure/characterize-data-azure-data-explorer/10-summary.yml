@@ -2,8 +2,6 @@
 uid: learn.azure.characterize-dataset-azure-data-explorer.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: "Summary of characterize an unfamiliar dataset using Azure Data Explorer."
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/10-summary.md)]
+  [!include[](includes/10-summary.md)]

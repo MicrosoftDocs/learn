@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-virtual-networks.azure-encryption
+title: 'Azure encryption '
+metadata:
+  title: Azure encryption
+  description: "Azure encryption"
+  ms.date: 03/25/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/10-azure-encryption.md)]

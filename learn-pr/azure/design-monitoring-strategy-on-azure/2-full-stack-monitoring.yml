@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.2-full-stack-monitoring
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Full-stack monitoring in Azure
   description: Introduction to full-stack monitoring in Azure
   ms.date: 01/22/2025
@@ -38,4 +36,4 @@ quiz:
     - content: Platform monitoring
       isCorrect: false
       explanation: As part of a full-stack monitoring solution, you can use Azure's built-in capabilities to monitor your Azure platform resources.
-      
+      

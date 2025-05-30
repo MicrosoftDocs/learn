@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-enterprise-security-in-hdinsight.implement-data-access-security
 title: Implement data access security
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement data access security
   description: "Implement data access security"
   ms.date: 04/07/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-implement-data-access-security.md)]
+  [!include[](includes/6-implement-data-access-security.md)]

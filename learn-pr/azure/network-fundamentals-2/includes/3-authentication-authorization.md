@@ -70,7 +70,7 @@ In Kerberos, principals get tickets that grant them service tickets from the KDC
 
 TLS and the older SSL are both protocols for encrypting information sent over the internet. Because the data is encrypted, attackers can't view what is sent through TLS/SSL.
 
-You'll often see a padlock icon on your browser when a site makes use of a secure connection. This symbol means the site is using a secure TLS/SSL session with the browser. TLS/SSL is also used for file transfers, voice-over-IP, and email.
+You'll often see a padlock icon on your browser when a site makes use of a secure connection. This symbol means the site is using a secure TLS/SSL session with the browser. TLS/SSL is also used for file transfers, voice over IP, and email.
 
 SSL is the predecessor of TLS, and is deprecated. We'll often find the two terms used interchangeably.  The protocols work as follows:
 
@@ -86,7 +86,7 @@ SSL is the predecessor of TLS, and is deprecated. We'll often find the two terms
 
 1. The client sends a "finished" message that's encrypted with the shared key.
 
-1. The server sends its own "finished" message that is encrypted with the shared key. From this point, the client and the server can continue to exchange messages that are encrypted with the shared encrypted key.
+1. The server sends its own "finished" message that's encrypted with the shared key. From this point, the client and the server can continue to exchange messages that are encrypted with the shared key.
 
 ## Network authorization
 

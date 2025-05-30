@@ -12,6 +12,10 @@ The vSphere Replication appliance provides the following components for the prot
 - A vSphere Replication management server that manages replications.
 - A vSphere Replication server that provides the core of the vSphere Replication infrastructure.
 
+> [!IMPORTANT] 
+
+> Try our VMware Site Recovery Manager click-through demo. This demo shows how an organization can confidently implement disaster recovery for on-premises VMware vSphere virtual machines (VMs) or Azure VMware Solution-based VMs. [Try now](https://regale.cloud/Microsoft/play/3245/vmware-site-recovery-manager-srm#/0/0)
+
 ## Install vSphere Replication appliance
 
 Use the following procedure to enable the add-on in Azure VMware Solution:

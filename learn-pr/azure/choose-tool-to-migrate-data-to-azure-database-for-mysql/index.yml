@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Choose a tool to migrate data to Azure Database for MySQL"
   description: "Choose a tool to migrate data to Azure Database for MySQL"
   ms.date: 08/28/2024
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: module-intro-to-product
   ms.service: azure-database-mysql

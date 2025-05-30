@@ -4,7 +4,7 @@ To provide context, let's consider a scenario: You're an Azure Administrator res
 
 In this module, you learn when to use Azure Container Instances instead of virtual machines. You also get an overview of features and use cases. 
 
-The goal of this module is to introduce you to Azure Container Instances.
+The goal of this module is to introduce you to AI-ready Azure Container Instances.
 
 ## Learning objectives
 

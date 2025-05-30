@@ -2,8 +2,6 @@
 uid: learn.continuous-validate-test-mission-critical-workloads.create-validation-pipelines
 title: Create a continuous validation pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a continuous validation pipeline
   description: Learn how to create an automated pipeline for continuous validation in Azure. Understand the advantages of automating validation tests.
   ms.date: 07/31/2024
@@ -38,4 +36,4 @@ quiz:
       explanation: "Incorrect. A failed load test can indicate problems introduced as part of a recent change, problems within the underlying platform, or the need to adjust a baseline or a threshold."
     - content: "Analyze the result and take action."
       isCorrect: true
-      explanation: "Correct. A failed load test can indicate problems introduced as part of a recent change, problems within the underlying platform, or the need to adjust a baseline or a threshold."
+      explanation: "Correct. A failed load test can indicate problems introduced as part of a recent change, problems within the underlying platform, or the need to adjust a baseline or a threshold."

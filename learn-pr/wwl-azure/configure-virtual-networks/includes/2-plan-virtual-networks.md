@@ -1,12 +1,10 @@
 A major incentive for adopting cloud solutions like Azure is to enable information technology departments to transition server resources to the cloud. Moving resources to the cloud can save money and simplify administrative operations. Relocating resources removes the need to maintain expensive datacenters with uninterruptible power supplies, generators, multiple fail-safes, or clustered database servers. For small and medium-sized companies, which might not have the expertise to maintain their own robust infrastructure, moving to the cloud is particularly appealing.
 
-After resources are moved to Azure, they require the same networking functionality as an on-premises deployment. In specific scenarios, the resources require some level of network isolation. Azure network services offer a range of components with functionalities and capabilities, as shown in the following image:
-
-:::image type="content" source="../media/network-components-66dff480.png" alt-text="Screenshot that shows the main components of Azure network services." border="false":::
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b8555734-4289-44e7-82f9-b61bd5fc9915]
 
 ### Things to know about Azure virtual networks
 
-You can implement Azure Virtual Network to create a virtual representation of your network in the cloud. Let's examine some characteristics of virtual networks in Azure.
+You can implement Azure Virtual Network to create a virtual representation of your network in the cloud. With some [planning](/azure/virtual-network/virtual-network-vnet-plan-design-arm), you can deploy virtual networks and connect the resources you need more effectively. Let's examine some characteristics of virtual networks in Azure.
 
 - An Azure virtual network is a logical isolation of the Azure cloud resources.
 
@@ -18,7 +16,7 @@ You can implement Azure Virtual Network to create a virtual representation of yo
 
 - You control the DNS server settings for virtual networks, and segmentation of the virtual network into subnets.
 
-The following illustration depicts a virtual network that has a subnet containing two virtual machines. The virtual network has connections to an on-premises infrastructure and a separate virtual network.
+The next illustration depicts a virtual network that has a subnet containing two virtual machines. The virtual network has connections to an on-premises infrastructure and a separate virtual network.
 
 :::image type="content" source="../media/virtual-networks-c016972b.png" alt-text="Diagram of a virtual network with a subnet of two virtual machines. The network connects to an on-premises infrastructure and separate virtual network." border="false":::
 

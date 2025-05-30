@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-strategy.security
+metadata:
+  title: Security Considerations for Your Cloud Adoption Strategy
+  description: Learn about security considerations so that you can design a strategy that protects your data and resources in the cloud.
+  ms.date: 03/14/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+title: Security considerations for your cloud adoption strategy
+durationInMinutes: 10
+content: |
+  [!include[](includes/10-inform-security.md)]
+quiz:
+ title: Check your knowledge
+ questions: 
+ - content: What is a key recommendation for managing security in the cloud?
+   choices:
+   - content: Disable continuous monitoring and logging to reduce operational overhead.
+     isCorrect: false
+     explanation: Incorrect. Continuous monitoring and logging are crucial for detecting and responding to security threats in real-time.
+   - content: Implement security measures only after a security breach has occurred.
+     isCorrect: false
+     explanation: Incorrect. Cloud security requires proactive measures to help prevent breaches and protect data.
+   - content: Engage stakeholders in security discussions early in the cloud adoption process.
+     isCorrect: true
+     explanation: Correct. Engage stakeholders early on to ensure that you have their support and ensure that you integrate all requirements into the security strategy to avoid future adjustments.
+   - content: Limit security training to the IT department and exclude other teams.
+     isCorrect: false
+     explanation: Incorrect. Cloud security requires organization-wide participation and awareness to be effective.

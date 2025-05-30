@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-implement-privileged-access.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/23/2023
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Correct. Permanently active roles are the normal roles assigned through Microsoft Entra ID and Azure resources while eligible roles can only be assigned in Privileged Identity Management."
     - content: "Transient roles."
       isCorrect: false
-      explanation: "Incorrect. Transient roles aren't a role assignment found in PIM."
+      explanation: "Incorrect. Transient roles aren't a role assignment found in PIM."

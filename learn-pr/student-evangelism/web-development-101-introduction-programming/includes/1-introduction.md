@@ -1,3 +1,0 @@
-Programming, often referred to as coding, is the process of creating instructions that computers, phones, and other electronic devices can follow. These instructions, or code, are written in a variety of languages that computers can understand. When you program, you're essentially having a conversation with the computer, telling it exactly what you want it to do.
-
-As a beginner, you might find the world of programming vast and a bit overwhelming. But don't worry, everyone starts somewhere. Programming is a skill that can be learned, and with practice and patience, you'll find yourself creating your own applications, solving problems, and even making games. It's a creative process that's as much about thinking and problem-solving as it is about writing code.

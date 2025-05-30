@@ -2,13 +2,11 @@
 uid: learn.azure.intro-to-arc-for-servers.simplify-management-maintenance-azure-arc-servers
 title: What are the security and monitoring capabilities of Azure Arc-enabled servers?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What are the security and monitoring capabilities of Azure Arc-enabled servers?
   description: What are the security and monitoring capabilities of Azure Arc-enabled servers?
   ms.date: 11/13/2023
-  author: johnmarco
-  ms.author: johnmarc
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: unit
   ms.custom: e2e-hybrid
 durationInMinutes: 10

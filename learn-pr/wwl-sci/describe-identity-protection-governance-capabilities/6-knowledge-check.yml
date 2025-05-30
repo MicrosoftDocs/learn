@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/02/2024
   author: wwlpublish
@@ -63,16 +61,4 @@ quiz:
     - content: "Entitlement management."
       isCorrect: false
       explanation: "Incorrect. Entitlement management is an Azure tool that automates access to the applications and data needed for someone to be productive in a particular project or role."
-
-  - content: An organization is adopting a multicloud strategy and struggling with managing access permissions. They want to implement least privilege access across their entire infrastructure. What should they do to ensure secure and compliant access to their expanding cloud estate?
-    choices:
-    - content: Rely solely on cloud providers' native access management models.
-      isCorrect: false
-      explanation: Incorrect. These models can be inconsistent and may not provide the level of control needed for a Zero Trust security strategy.
-    - content: Manually review and adjust permissions for each identity and resource on a regular basis.
-      isCorrect: false
-      explanation: Incorrect. This approach isn't scalable and doesn't provide comprehensive visibility or control over permissions.
-    - content: Implement a cloud infrastructure entitlement management (CIEM) product like Microsoft Entra Permissions Management that provides comprehensive visibility and control over permissions for any identity and any resource in Microsoft Azure, Amazon Web Services (AWS) and Google Cloud Platform (GCP).
-      isCorrect: true
-      explanation: Correct. This product helps organizations address the Zero Trust principle of least privilege access by detecting, automatically right-sizing (remediating), and continuously monitoring unused and excessive permissions.
 

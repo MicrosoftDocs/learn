@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-app-registration.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 12/18/2024
+  ms.date: 03/31/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
@@ -18,28 +18,28 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following directories is maintained by Microsoft and used to publish applications?"
+  - content: "Microsoft maintains which of the following directories and uses them to publish applications?"
     choices:
     - content: "SaaS directory"
       isCorrect: false
-      explanation: "Incorrect. Application publishers/vendors who integrate with Microsoft Entra ID are required to have a SaaS directory."
-    - content: "Single-sign-on app connected directory"
-      isCorrect: false
-      explanation: "Incorrect. Apps connected for single-sign-on are added by the user."
+      explanation: "Incorrect. Application publishers/vendors who integrate with Microsoft Entra ID are required to have an SaaS directory."
     - content: "App gallery directory"
       isCorrect: true
       explanation: "Correct. The two directories that Microsoft maintains are the App gallery directory and the Microsoft services directory."
+    - content: "Single-sign-on app connected directory"
+      isCorrect: false
+      explanation: "Incorrect. Apps connected for single-sign-on are added by the user."
   - content: "Which one of the following is a best practice for building multitenant apps?"
     choices:
     - content: "Follow the principle of least user access to ensure that your app only requests permissions it actually needs."
       isCorrect: true
-      explanation: "Correct. Provide appropriate names and descriptions for any permissions you expose as part of your app. This helps users and admins know what they're agreeing to when they attempt to use your app's APIs."
+      explanation: "Correct. Provide appropriate names and descriptions for any permissions you expose as part of your app. The description helps users and admins know what they're agreeing to when they attempt to use your app's APIs."
     - content: "Test your app in each tenant to ensure functionality."
       isCorrect: false
       explanation: "Incorrect. You should test your app in a tenant that has configured Conditional Access policies. Testing in every tenant isn't a best practice."
     - content: "Use names and descriptions that are only meaningful to your team."
       isCorrect: false
-      explanation: "Incorrect. Provide appropriate names and descriptions for any permissions you expose as part of your app. This helps users and admins know what they're agreeing to when they attempt to use your app's APIs."
+      explanation: "Incorrect. Provide appropriate names and descriptions for any permissions you expose as part of your app. The description helps users and admins know what they're agreeing to when they attempt to use your app's APIs."
   - content: "Which two ways do you declare app roles by using the Azure portal?"
     choices:
     - content: "Certificates and secrets."

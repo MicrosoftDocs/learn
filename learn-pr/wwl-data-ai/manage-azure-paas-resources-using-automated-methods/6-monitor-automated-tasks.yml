@@ -2,12 +2,10 @@
 uid: learn.wwl.manage-azure-paas-resources-using-automated-methods.monitor-automated-tasks
 title: Monitor automated tasks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor automated tasks
   description: "Monitor automated tasks"
-  ms.date: 06/10/2022
-  author: wwlpublish
+  ms.date: 02/27/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
   ms.custom:
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/6-monitor-automated-tasks.md)]
-
+

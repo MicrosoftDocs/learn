@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.apply-storage-concepts-to-windows-containers.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 02/13/2024
   author: vrapolinario
@@ -49,4 +47,4 @@ quiz:
           explanation: "Correct. AKS Files volumes backed by SMB or NFS file shares are mounted as ReadWriteMany and are available to multiple nodes concurrently."
         - content: "Azure Blob storage"
           isCorrect: false
-          explanation: "Incorrect. Azure Blob storage is a type of storage that works with large unstructured datasets. It's not a type of storage volume."
+          explanation: "Incorrect. Azure Blob storage is a type of storage that works with large unstructured datasets. It's not a type of storage volume."

@@ -1,4 +1,4 @@
-Before deploying Microsoft Sentinel, it's crucial to understand the workspace options.  The Microsoft Sentinel solution is installed in a Log Analytics Workspace, and most implementation considerations are focused on the Log Analytics Workspace creation.  The single most important option when creating a new Log Analytics Workspace is the region.  The region specifies the location where the log data will reside.
+Before deploying Microsoft Sentinel, it's crucial to understand the workspace options. The Microsoft Sentinel solution is installed in a Log Analytics Workspace, and most implementation considerations are focused on the Log Analytics Workspace creation. The single most important option when creating a new Log Analytics Workspace is the region. The region specifies the location where the log data resides.
 
 The three implementation options:
 
@@ -6,15 +6,15 @@ The three implementation options:
 
 - Single-Tenant with regional Microsoft Sentinel Workspaces
 
-- Multi-Tenant
+- Multiple tenants
 
 ## Single-tenant single workspace
 
-The single-tenant with a single Microsoft Sentinel workspace will be the central repository for logs across all resources within the same tenant.
+The single-tenant with a single Microsoft Sentinel workspace is the central repository for logs across all resources within the same tenant.
 
-This workspace receives logs from resources in other regions within the same tenant.  Because the log data (when collected) will travel across regions and stored in another region, this creates two possible concerns.  First, it can incur a bandwidth cost. Second, if there's a data governance requirement to keep data in a specific region, the single workspace option wouldn't be an implementation option.
+This workspace receives logs from resources in other regions within the same tenant. Because the log data (when collected) travels across regions and stored in another region, this creates two possible concerns.  First, it can incur a bandwidth cost. Second, if there's a data governance requirement to keep data in a specific region, the single workspace option wouldn't be an implementation option.
 
-:::image type="content" source="../media/single-tenant-workspace.png" alt-text="Diagram of a Single Tenant Sentinel Workspace.":::
+:::image type="content" source="../media/single-tenant-workspace.png" alt-text="Diagram of a Single Tenant Microsoft Sentinel Workspace.":::
 
 Single-Tenants with a single workspace trade-off include:
 
@@ -28,9 +28,9 @@ Single-Tenants with a single workspace trade-off include:
 
 ## Single-tenant with regional Microsoft Sentinel workspaces
 
-The single-tenant with regional Microsoft Sentinel workspaces will have multiple Sentinel workspaces requiring the creation and configuration of multiple Microsoft Sentinel and Log Analytics workspaces.
+The single-tenant with regional Microsoft Sentinel workspaces, have multiple Microsoft Sentinel workspaces requiring the creation and configuration of multiple Microsoft Sentinel and Log Analytics workspaces.
 
-:::image type="content" source="../media/single-tenant-regional-workspace.png" alt-text="Diagram of a Sentinel Single Tenant Regional Workspace.":::
+:::image type="content" source="../media/single-tenant-regional-workspace.png" alt-text="Diagram of a Microsoft Sentinel Single Tenant Regional Workspace.":::
 
 | Pros| Cons|
 | :--- | :--- |
@@ -49,13 +49,11 @@ TableName
 
 ```
 
-## Multi-tenant workspaces
+## Multiple tenant workspaces
 
-If you're required to manage a Microsoft Sentinel workspace, not in your tenant, you implement Multi-Tenant workspaces using Azure Lighthouse.  This security configuration grants you access to the tenants.  The tenant configuration within the tenant (regional or multi-regional) is the same consideration as before.
+If you're required to manage a Microsoft Sentinel workspace, not in your tenant, you implement Multiple tenant workspaces using Azure Lighthouse.  This security configuration grants you access to the tenants.  The tenant configuration within the tenant (regional or multi-regional) is the same consideration as before.
 
-:::image type="content" source="../media/multi-tenant-workspaces.png" alt-text="Diagram of Sentinel Multi-Tenant Workspaces.":::
-
-
+:::image type="content" source="../media/multi-tenant-workspaces.png" alt-text="Diagram of Microsoft Sentinel Multiple tenant Workspaces.":::
 
 ## Use the same log analytics workspace as Microsoft Defender for Cloud
 

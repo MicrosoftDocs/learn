@@ -2,8 +2,6 @@
 uid: learn.wwl.survey-components-of-azure-synapse-analytics.create-workspace
 title: Create Azure Synapse Analytics workspace
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create Azure Synapse Analytics workspace
   description: "Create Azure Synapse Analytics workspace"
   ms.date: 06/23/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-create-workspace.md)]
+  [!include[](includes/2-create-workspace.md)]

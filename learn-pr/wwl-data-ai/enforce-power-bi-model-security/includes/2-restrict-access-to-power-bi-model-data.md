@@ -12,7 +12,7 @@ You can also create and manage roles by using SQL Server Management Studio (SSMS
 
 To gain a better understanding of how RLS restricts access to data, watch the following animated image.
 
-![Animated diagram demonstrates how row-level security works for two users who each have access to specific country data.](../media/introduce-row-level-security.gif)
+![Animated diagram demonstrates how row-level security works for two users who each have access to specific country/region data.](../media/introduce-row-level-security.gif)
 
 ## Apply star schema design principles
 

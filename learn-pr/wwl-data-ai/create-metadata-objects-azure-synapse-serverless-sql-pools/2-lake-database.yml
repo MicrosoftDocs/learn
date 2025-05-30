@@ -2,11 +2,9 @@
 uid: learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.lake-database
 title: Understand lake database concepts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand lake database concepts
   description: "Understand lake database concepts"
-  ms.date: 07/25/2024
+  ms.date: 04/30/2025
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit

@@ -1,13 +1,12 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-java-azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Java on Azure
   description: In this module, you'll begin to discover the opportunities for Java developers on Azure.
   ms.date: 11/22/2024
-  author: SandraAhlgrimm
-  ms.author: sakriema
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: hangwan
   ms.topic: module
   ms.custom:
   - team=cloud_advocates
@@ -45,4 +44,4 @@ units:
 - learn.azure.intro-to-java-azure.8-summary
 badge:
   uid: learn.azure.intro-to-java-azure.badge
-
+

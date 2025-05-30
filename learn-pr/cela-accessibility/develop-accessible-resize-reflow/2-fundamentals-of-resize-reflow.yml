@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-accessible-resize-reflow.fundamentals-of-resize-reflow
+title: Fundamentals of resize and reflow
+metadata:
+  title: Fundamentals of Resize and Reflow
+  description: Learn about fundamentals of resize and reflow.
+  author: erzelman
+  ms.author: erzelman
+  ms.date: 02/12/2025
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-fundamentals-of-resize-reflow.md)]

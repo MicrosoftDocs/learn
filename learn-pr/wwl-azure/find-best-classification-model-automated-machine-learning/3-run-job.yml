@@ -2,8 +2,6 @@
 uid: learn.wwl.find-best-classification-model-automated-machine-learning.run-job
 title: Run an Automated Machine Learning experiment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Run an Automated Machine Learning experiment
   description: Learn how to configure and submit an automated machine learning experiment run with the Python SDK (v2) for Azure Machine Learning.
   author: wwlpublish
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/3-run-job.md)]
-
+

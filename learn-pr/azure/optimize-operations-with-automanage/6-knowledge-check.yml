@@ -1,14 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.optimize-operations-with-automanage.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module Assessment
   description: Knowledge check.
-  ms.date: 01/20/2025
-  author: johnmarco
-  ms.author: johnmarc
+  ms.date: 04/17/2025
+  author: robmcm
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 5
 quiz:
@@ -30,13 +28,13 @@ quiz:
     choices:
     - content: "Tell you the status of your virtual machines."
       isCorrect: false
-      explanation: "Incorrect. A configuration profile defines which Azure services and the settings for these services are applied to Automanage-enabled machines."
+      explanation: "Incorrect. A configuration profile defines which Azure services and settings for these services are applied to Automanage-enabled machines."
     - content: "Defines the services and settings applied to Automanage-enabled machines."
       isCorrect: true
-      explanation: "Correct! A configuration profile defines which Azure services and the settings for these services are applied to Automanage-enabled machines."
+      explanation: "Correct! A configuration profile defines which Azure services and settings for these services are applied to Automanage-enabled machines."
     - content: "Allows you to use Automanage on virtual machines hosted outside of Azure."
       isCorrect: false
-      explanation: "Incorrect. A configuration profile defines which Azure services and the settings for these services are applied to Automanage-enabled machines."
+      explanation: "Incorrect. A configuration profile defines which Azure services and settings for these services are applied to Automanage-enabled machines."
 
   - content: "In Azure Automanage, what does a machine status of Conformant mean?"
     choices:

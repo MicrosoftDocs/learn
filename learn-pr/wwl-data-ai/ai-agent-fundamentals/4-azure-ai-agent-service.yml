@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-agent-fundamentals.azure-ai-agent-service
+title: Azure AI Foundry Agent Service
+metadata:
+  title: Azure AI Foundry Agent Service
+  description: A high-level overview of Azure AI Foundry Agent Service.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 05/23/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-azure-ai-agent-service.md)]
+

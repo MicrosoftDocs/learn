@@ -10,13 +10,22 @@ The main takeaways from this module are:
 
 - IP addresses can provide public or private access to resources. 
 
+## Learn more with Copilot
+Copilot can assist you in designing Azure infrastructure solutions. Copilot can compare, recommend, explain, and research products and services where you need more information. Open a Microsoft Edge browser and choose Copilot (top right) or navigate to copilot.microsoft.com. Take a few minutes to try these prompts and extend your learning with Copilot.
+
+- Explain CIDR for a nontechnical audience. Provide examples.
+
+- What are the basic steps and considerations for creating a virtual network in Azure?
+
+- What types of Azure resources should be assigned a static IP address?
+
 ## Learn more with documentation
 
 - [What is Azure Virtual Network?](/azure/virtual-network/virtual-networks-overview). This article is your starting point to learn about virtual networks. 
 
 - [Public IP addresses](/azure/virtual-network/ip-services/public-ip-addresses). This article reviews the basics of when to use public IP addresses. 
 
-- [Private IP addresses](/azure/virtual-network/private-ip-addresses).  This article reviews the basics of when to use private IP addresses. 
+- [Private IP addresses](/azure/virtual-network/private-ip-addresses). This article reviews the basics of when to use private IP addresses. 
 
 ## Learn more with self-paced training
 

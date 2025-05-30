@@ -46,6 +46,9 @@ For scenarios where you need full container orchestration, including service dis
       --resource-group learn-deploy-aci-rg \
       --name mycontainer \
       --image mcr.microsoft.com/azuredocs/aci-helloworld \
+      --os-type Linux \
+      --cpu 1 \
+      --memory 1.5 \
       --ports 80 \
       --dns-name-label $DNS_NAME_LABEL \
       --location eastus

@@ -2,8 +2,6 @@
 uid: learn.aks-governance-azure-policy.azure-policy-integration-with-aks
 title: Azure Policy and how it integrates with Azure Kubernetes Services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Policy and how it integrates with Azure Kubernetes Services
   description: Introduction to Azure Policy and how Azure Policy integrates with Azure Kubernetes Services.
   ms.date: 04/22/2024
@@ -47,4 +45,4 @@ quiz:
           explanation: "Azure policy doesn't delete incompliant resources. It denies new incompliant pods."
         - content: "The pods are marked as incompliant in Azure policy."
           isCorrect: true
-          explanation: "Azure policy reports incompliant pods and denies new incompliant pods from being created."
+          explanation: "Azure policy reports incompliant pods and denies new incompliant pods from being created."

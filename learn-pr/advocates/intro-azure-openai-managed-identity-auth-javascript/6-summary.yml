@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: introduction-azure-openai-managed-identity-authentication-javascript.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This unit summarizes what you learned in the module.
+  ms.date: 02/10/2025
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

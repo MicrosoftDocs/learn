@@ -58,5 +58,5 @@ Configure your automation rule and playbook to use the following flow:
 
 The following screenshot shows the actions and conditions you would add in creating this sample playbook:
 
-[:::image type="content" source="https://learn.microsoft.com/azure/sentinel/media/tutorial-respond-threats-playbook/logic-app.png" alt-text="Screenshot of a Logic App showing this playbook's actions and conditions.":::
-](https://learn.microsoft.com/azure/sentinel/media/tutorial-respond-threats-playbook/logic-app.png#lightbox)
+[:::image type="content" source="/azure/sentinel/media/tutorial-respond-threats-playbook/logic-app.png" alt-text="Screenshot of a Logic App showing this playbook's actions and conditions.":::
+](/azure/sentinel/media/tutorial-respond-threats-playbook/logic-app.png#lightbox)

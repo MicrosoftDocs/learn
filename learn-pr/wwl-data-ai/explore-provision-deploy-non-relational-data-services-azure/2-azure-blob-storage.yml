@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.azure-blob-storage
 title: Explore Azure blob storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure blob storage
   description: "Explore Azure blob storage"
   ms.date: 09/17/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-azure-blob-storage.md)]
+  [!include[](includes/2-azure-blob-storage.md)]

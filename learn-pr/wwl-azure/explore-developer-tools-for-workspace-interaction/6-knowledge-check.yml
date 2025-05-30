@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-developer-tools-for-workspace-interaction.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 07/25/2024
   author: wwlpublish
@@ -34,4 +32,4 @@ quiz:
       explanation: "Incorrect. Though the Python SDK can be used, the Azure CLI provides more options to trigger and automate Azure Machine Learning jobs."
     - content: "The Azure CLI."
       isCorrect: true
-      explanation: "Correct. The Azure CLI is designed for automating tasks. By using YAML files to define how the model must be trained, the machine learning tasks are repeatable, consistent, and reliable."
+      explanation: "Correct. The Azure CLI is designed for automating tasks. By using YAML files to define how the model must be trained, the machine learning tasks are repeatable, consistent, and reliable."

@@ -3,7 +3,7 @@ When you create a function app in Azure, you must choose a hosting plan for your
 | Hosting option | Service | Availability | Container support |
 |--|--|--|--|
 | **[Consumption plan](/azure/azure-functions/consumption-plan)** | Azure Functions | Generally available (GA) | None |
-| **[Flex Consumption plan](/azure/azure-functions/flex-consumption-plan)** | Azure Functions | Preview | None |
+| **[Flex Consumption plan](/azure/azure-functions/flex-consumption-plan)** | Azure Functions | GA | None |
 | **[Premium plan](/azure/azure-functions/functions-premium-plan)** | Azure Functions | GA | Linux |
 | **[Dedicated plan](/azure/azure-functions/dedicated-plan)** | Azure Functions | GA | Linux |
 | **[Container Apps](/azure/azure-functions/functions-container-apps-hosting)** | Azure Container Apps | GA | Linux |
@@ -70,22 +70,22 @@ Consider hosting your functions on Container Apps in the following situations:
 * You want to avoid the overhead and complexity of managing Kubernetes clusters and dedicated compute.
 * You need the high-end processing power provided by dedicated CPU compute resources for your functions.
 
-## Function app timeout duration
+## Function app time-out duration
 
-The `functionTimeout` property in the *host.json* project file specifies the timeout duration for functions in a function app. This property applies specifically to function executions. After the trigger starts function execution, the function needs to return/respond within the timeout duration.
+The `functionTimeout` property in the *host.json* project file specifies the time-out duration for functions in a function app. This property applies specifically to function executions. After the trigger starts function execution, the function needs to return/respond within the time-out duration.
 
 The following table shows the default and maximum values (in minutes) for specific plans:
 
 | Plan | Default | Maximum<sup>1</sup> |
-| --- | --- | --- |
-| Consumption plan | 5 | 10 |
-| Flex Consumption plan | 30 | Unlimited<sup>3</sup> |
-| Premium plan | 30<sup>2</sup> | Unlimited<sup>3</sup> |
-| Dedicated plan | 30<sup>2</sup> | Unlimited<sup>3</sup> |
-| Container Apps | 30<sup>5</sup> | Unlimited<sup>3</sup> |
+|--|--|--|
+| **Flex Consumption plan** | 30 | Unbounded<sup>2</sup> |
+| **Premium plan** | 30<sup>4</sup> | Unbounded<sup>2</sup> |
+| **Dedicated plan** | 30<sup>4</sup> | Unbounded<sup>3</sup> |
+| **Container Apps** | 30 | Unbounded<sup>5</sup> |
+| **Consumption plan** | 5 | 10 |
 
-1.  Regardless of the function app timeout setting, 230 seconds is the maximum amount of time that an HTTP triggered function can take to respond to a request.
-1.  The default timeout for version 1.x of the Functions runtime is *unlimited*.
-1.  Guaranteed for up to 60 minutes. OS and runtime patching, vulnerability patching, and scale in behaviors can still cancel function executions.
-1.  In a Flex Consumption plan, the host doesn't enforce an execution time limit. However, there are currently no guarantees because the platform might need to terminate your instances during scale-in, deployments, or to apply updates.
-1.  When the minimum number of replicas is set to zero, the default timeout depends on the specific triggers used in the app.
+1. Regardless of the function app time-out setting, 230 seconds is the maximum amount of time that an HTTP triggered function can take to respond to a request. This is because of the default idle time-out of Azure Load Balancer. For longer processing times, consider using the [Durable Functions async pattern](/azure/azure-functions/durable/durable-functions-overview#async-http) or defer the actual work and return an immediate response.
+1. There's no maximum execution time-out duration enforced. However, the grace period given to a function execution is 60 minutes during scale in for the Flex Consumption and Premium plans, and a grace period of 10 minutes is given during platform updates.
+1. Requires the App Service plan be set to [Always On](/azure/azure-functions/dedicated-plan#always-on). A grace period of 10 minutes is given during platform updates.
+1. The default time-out for version 1.x of the Functions host runtime is *unbounded*.
+1. When the minimum number of replicas is set to zero, the default time-out depends on the specific triggers used in the app.

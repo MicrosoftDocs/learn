@@ -1,5 +1,4 @@
-:::image type="content" source="../media/custom-security-attributes-2ef80fb3-261f3377.png" alt-text="Screenshot of the Custom Security Attributes dialog. Create new security attributes of type String, Integer, or Boolean.":::
-
+:::image type="content" source="../media/custom-security-attributes.png" alt-text="Screenshot of the Custom Security Attributes dialog. Create new security attributes of type String, Integer, or Boolean.":::
 
 ## What is a custom security attribute?
 
@@ -7,17 +6,17 @@ Custom security attributes in Microsoft Entra ID are business-specific attribute
 
 ### Why use custom security attributes?
 
- -  Extend user profiles, such as add Employee Hire Date and Hourly Salary to all my employees.
- -  Ensure only administrators can see the Hourly Salary attribute in my employees' profiles.
- -  Categorize hundreds or thousands of applications to easily create a filterable inventory for auditing.
- -  Grant users access to the Azure Storage blobs belonging to a project.
+- Extend user profiles, such as add Employee Hire Date and Hourly Salary to all my employees.
+- Ensure only administrators can see the Hourly Salary attribute in my employees' profiles.
+- Categorize hundreds or thousands of applications to easily create a filterable inventory for auditing.
+- Grant users access to the Azure Storage blobs belonging to a project.
 
 ### What can I do with custom security attributes?
 
- -  Define business-specific information (attributes) for your tenant.
- -  Add a set of custom security attributes on users, applications, Microsoft Entra resources, or Azure resources.
- -  Manage Microsoft Entra objects using custom security attributes with queries and filters.
- -  Provide attribute governance so attributes determine who can get access.
+- Define business-specific information (attributes) for your tenant.
+- Add a set of custom security attributes on users, applications, Microsoft Entra resources, or Azure resources.
+- Manage Microsoft Entra objects using custom security attributes with queries and filters.
+- Provide attribute governance so attributes determine who can get access.
 
 ### Features of custom security attributes
 

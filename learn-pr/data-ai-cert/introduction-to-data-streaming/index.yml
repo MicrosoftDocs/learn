@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.data-ai.introduction-to-data-streaming
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Get started with Azure Stream Analytics
   description: "Get started with Azure Stream Analytics"
   ms.date: 12/08/2022
@@ -39,4 +37,4 @@ units:
 - learn.data-ai.introduction-to-data-streaming.knowledge-check
 - learn.data-ai.introduction-to-data-streaming.summary
 badge:
-  uid: learn.data-ai.introduction-to-data-streaming.badge
+  uid: learn.data-ai.introduction-to-data-streaming.badge

@@ -1,31 +1,31 @@
-## Lab scenario
+## Exercise scenario
 
-Your organization is migrating network infrastructure and virtual machines to Azure. As the Azure Administrator you need to:
+Your organization is migrating a web-based application to Azure. Your first task is to put in place the virtual networks and subnets. You also need to securely peer the virtual networks. You identify these requirements.
 
-+ Configure Azure virtual networks and subnets.
-+ Connect remotely to Azure virtual machines by using RDP.
-+ Verify virtual machines in the same virtual network can communicate. 
+- Two virtual networks are required, app-vnet and hub-vnet. The virtual networks simulate a hub and spoke network architecture.
+- The app-vnet hosts the application. The app-vnet virtual network requires two subnets. The frontend subnet hosts the web servers. The backend subnet hosts the database servers.
+- The hub-vnet only requires a subnet for the firewall.
+- The two virtual networks must be able to communicate with each other securely and privately through virtual network peering.
+- Both virtual networks should be in the same region.
 
 ## Architecture diagram
 
-:::image type="content" source="../media/create-network-architecture.png" alt-text="Diagram of the architecture as explained in the text." border="false":::
+:::image type="content" source="../media/create-network-architecture.png" alt-text="Diagram of the architecture as explained in the objectives." border="false":::
 
-## Objectives
+## Job skills
 
-+ **Task 1**: Create a virtual network.
-    + Create a virtual network, **vnet1**, with an IP address space of 10.1.0.0/16.
-    + Create a subnet, **default**, with an IP address space of 10.1.0.0/24.
-+ **Task 2**: Create two virtual machines.
-    + Create a virtual machine, **vm1**, in **vnet1** and allow inbound RDP.
-    + Create a second virtual machine, **vm2**, in **vnet1** and allow inbound RDP. 
-    + Ensure both virtual machines are deployed and running before continuing.
-+ **Task 3**: Test the virtual machine connections.
-    + Connect to **vm1** with RDP. 
-    + Connect to **vm2** with RDP. 
-    + Disable the public and private Windows Firewall on both virtual machines.
-    + Use Azure PowerShell to confirm **vm1** can ping **vm2**. 
+- Create a virtual network.
+- Create a subnet.
+- Configure virtual network peering.
 
 > [!NOTE]
-> Select the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
+> Estimated time: 30 minutes. 
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
-[![Screenshot of the simulation page.](../media/simulation-create-networks.png)](https://mslearn.cloudguides.com/en-us/guides/AZ-900%20Exam%20Guide%20-%20Azure%20Fundamentals%20Exercise%204?azure-portal=true)
+Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
+
+
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/Configure-secure-access-to-workloads-with-Azure-virtual-networking-services/Instructions/Labs/LAB_01_virtual_networks.html)
+
+
+

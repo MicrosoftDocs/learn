@@ -1,26 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.fundamentals-machine-learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Fundamentals of machine learning
-  description: Machine learning is the basis for most modern artificial intelligence solutions. A familiarity with the core concepts on which machine learning is based is an important foundation for understanding AI.
+  title: Introduction to machine learning concepts
+  description: "Machine learning is the basis for most modern artificial intelligence solutions. A familiarity with the core concepts on which machine learning is based is an important foundation for understanding AI."
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 09/20/2024
-  ms.service: azure-machine-learning
   ms.topic: module
-  ms.collection:
-    - wwl-ai-copilot
-title: Fundamentals of machine learning
+  ms.collection: wwl-ai-copilot
+  ms.custom:
+  - N/A
+  ms.service: azure-machine-learning
+title: Introduction to machine learning concepts
 summary: Machine learning is the basis for most modern artificial intelligence solutions. A familiarity with the core concepts on which machine learning is based is an important foundation for understanding AI.
 abstract: |
   After completing this module, you will be able to:
-  *   Describe core concepts of machine learning
-  *   Identify different types of machine learning
-  *   Describe considerations for training and evaluating machine learning models
-  *   Describe core concepts of deep learning
-  *   Use automated machine learning in Azure Machine Learning service
+  -   Describe core concepts of machine learning
+  -   Identify different types of machine learning
+  -   Describe considerations for training and evaluating machine learning models
+  -   Describe core concepts of deep learning and Transformers
 prerequisites: |
   Before starting this module, you should have:
   - A basic knowledge of mathematics
@@ -42,10 +40,8 @@ units:
 - learn.wwl.fundamentals-machine-learning.multiclass-classification
 - learn.wwl.fundamentals-machine-learning.clustering
 - learn.wwl.fundamentals-machine-learning.deep-learning
-- learn.wwl.fundamentals-machine-learning.azure-machine-learning
-- learn.wwl.fundamentals-machine-learning.exercise-auto-ml
+- learn.wwl.fundamentals-machine-learning.transformers
 - learn.wwl.fundamentals-machine-learning.knowledge-check
 - learn.wwl.fundamentals-machine-learning.summary
 badge:
   uid: learn.wwl.fundamentals-machine-learning.badge
-

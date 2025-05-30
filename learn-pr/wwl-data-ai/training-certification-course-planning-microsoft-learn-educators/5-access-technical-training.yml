@@ -2,8 +2,6 @@
 uid: learn.wwl.training-certification-course-planning-microsoft-learn-educators.access-technical-training
 title: Access technical training
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Access technical training
   description: "Access technical training"
   ms.date: 07/19/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-access-technical-training.md)]
+  [!include[](includes/5-access-technical-training.md)]

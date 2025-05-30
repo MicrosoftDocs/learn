@@ -1,12 +1,12 @@
 With the proliferation of devices of all shapes and sizes and the proliferation of bring-your-own-device (BYOD), IT professionals are faced with two somewhat opposing goals:
 
- -  Allow end users to be productive wherever and whenever and on any device
- -  Protect the organization's assets
+- Allow end users to be productive wherever and whenever and on any device
+- Protect the organization's assets
 
 To protect these assets, IT-staff needs to first manage the device identities. IT-staff can build on the device identity with tools like Microsoft Intune to ensure standards for security and compliance are met. Microsoft Entra ID enables single sign-on to devices, apps, and services from anywhere through these devices.
 
- -  Your users get access to your organization's assets they need.
- -  Your IT-staff gets the controls they need to secure your organization.
+- Your users get access to your organization's assets they need.
+- Your IT-staff gets the controls they need to secure your organization.
 
 ## Microsoft Entra registered devices
 
@@ -22,8 +22,7 @@ The goal of Microsoft Entra registered devices is to provide your users with sup
 | Device management              | Mobile Device Management (example: Microsoft Intune)                                               |
 | Key capabilities               | SSO to cloud resources, Conditional Access                                                         |
 
-:::image type="content" source="../media/azure-active-directory-registered-device-e0830f2c-c81224e6.png" alt-text="Diagram of Microsoft Entra registered devices. Shows a laptop and cell registered.":::
-
+:::image type="content" source="../media/azure-active-directory-registered-device.png" alt-text="Diagram of Microsoft Entra registered devices. Shows a laptop and cell registered.":::
 
 Microsoft Entra registered devices are signed in to using a local account like a Microsoft account on a Windows 10 device, but additionally have a Microsoft Entra account attached for access to organizational resources. Access to resources in the organization can be further limited based on that Microsoft Entra account and Conditional Access policies applied to the device identity.
 
@@ -62,23 +61,22 @@ Microsoft Entra joined devices can still maintain single sign-on access to on-pr
 
 Although Microsoft Entra join is primarily intended for organizations that do not have an on-premises Windows Server Active Directory infrastructure, you can certainly use it in scenarios where:
 
- -  You want to transition to cloud-based infrastructure using Microsoft Entra ID and MDM like Intune.
- -  You can’t use an on-premises domain join, for example, if you need to get mobile devices such as tablets and phones under control.
- -  Your users primarily need to access Microsoft 365 or other SaaS apps integrated with Microsoft Entra ID.
- -  You want to manage a group of users in Microsoft Entra ID instead of in Active Directory. This scenario can apply, for example, to seasonal workers, contractors, or students.
- -  You want to provide joining capabilities to workers in remote branch offices with limited on-premises infrastructure.
+- You want to transition to cloud-based infrastructure using Microsoft Entra ID and MDM like Intune.
+- You can’t use an on-premises domain join, for example, if you need to get mobile devices such as tablets and phones under control.
+- Your users primarily need to access Microsoft 365 or other SaaS apps integrated with Microsoft Entra ID.
+- You want to manage a group of users in Microsoft Entra ID instead of in Active Directory. This scenario can apply, for example, to seasonal workers, contractors, or students.
+- You want to provide joining capabilities to workers in remote branch offices with limited on-premises infrastructure.
 
 You can configure Microsoft Entra joined devices for all Windows 10 devices with the exception of Windows 10 Home.
 
 The goal of Microsoft Entra joined devices is to simplify:
 
- -  Windows deployments of work-owned devices
- -  Access to organizational apps and resources from any Windows device
- -  Cloud-based management of work-owned devices
- -  Users to sign in to their devices with their Microsoft Entra ID or synced Active Directory work or school accounts.
+- Windows deployments of work-owned devices
+- Access to organizational apps and resources from any Windows device
+- Cloud-based management of work-owned devices
+- Users to sign in to their devices with their Microsoft Entra ID or synced Active Directory work or school accounts.
 
-:::image type="content" source="../media/azure-active-directory-joined-device-9d2b59d5-ee10b0a7.png" alt-text="Diagram of Microsoft Entra joined devices connected to the cloud. A laptop registered to your cloud directory.":::
-
+:::image type="content" source="../media/azure-active-directory-joined-device.png" alt-text="Diagram of Microsoft Entra joined devices connected to the cloud. A laptop registered to your cloud directory.":::
 
 Microsoft Entra Join can be deployed by using a number of different methods.
 
@@ -86,8 +84,8 @@ Microsoft Entra Join can be deployed by using a number of different methods.
 
 For more than a decade, many organizations have used the domain join to their on-premises Active Directory to enable:
 
- -  IT departments to manage work-owned devices from a central location.
- -  Users to sign in to their devices with their Active Directory work or school accounts.
+- IT departments to manage work-owned devices from a central location.
+- Users to sign in to their devices with their Active Directory work or school accounts.
 
 Typically, organizations with an on-premises footprint rely on imaging methods to configure devices, and they often use **Configuration Manager** or **group policy (GP)** to manage them.
 
@@ -103,17 +101,16 @@ If your environment has an on-premises AD footprint and you also want benefit fr
 | Device management                 | Group Policy, Configuration Manager standalone or co-management with Microsoft Intune                                    |
 | Key capabilities                  | SSO to both cloud and on-premises resources, Conditional Access, Self-service Password Reset and Windows Hello PIN reset |
 
-:::image type="content" source="../media/azure-active-directory-hybrid-joined-device-83fd2bb7-631a565c.png" alt-text="Diagram of the process flow of Hybrid Microsoft Entra joined devices.  A laptop is registered to an on-premises active directory.":::
-
+:::image type="content" source="../media/azure-active-directory-hybrid-joined-device.png" alt-text="Diagram of the process flow of Hybrid Microsoft Entra joined devices.  A laptop is registered to an on-premises active directory.":::
 
 ### Scenarios for hybrid joined
 
 Use Microsoft Entra hybrid joined devices if:
 
- -  You have Win32 apps deployed to these devices that rely on Active Directory machine authentication.
- -  You want to continue to use Group Policy to manage device configuration.
- -  You want to continue to use existing imaging solutions to deploy and configure devices.
- -  You must support down-level Windows 7 and 8.1 devices in addition to Windows 10.
+- You have Win32 apps deployed to these devices that rely on Active Directory machine authentication.
+- You want to continue to use Group Policy to manage device configuration.
+- You want to continue to use existing imaging solutions to deploy and configure devices.
+- You must support down-level Windows 7 and 8.1 devices in addition to Windows 10.
 
 ## Device Writeback
 
