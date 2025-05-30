@@ -133,12 +133,12 @@ ChatGPT is intended for:
 
 ## GitHub Copilot tools
 
-GitHub provides a suite of AI-assisted programming tools, including GitHub Copilot and Copilot Chat. GitHub Copilot, powered by OpenAI's Codex, is an AI pair programmer that helps you write code faster and with less effort. Copilot works alongside you directly in your code editor, seamlessly integrating AI into your workflow. It provides intelligent code suggestions and completions based on the context of your code, helping you write code more efficiently and accurately. GitHub Copilot Chat is a chat interface that lets you interact with GitHub Copilot, to ask and receive answers to coding-related questions within GitHub.com and supported IDEs.
+GitHub provides a suite of AI-assisted programming tools, including GitHub Copilot and GitHub Copilot Chat. GitHub Copilot, powered by OpenAI's Codex, is an AI pair programmer that helps you write code faster and with less effort. Copilot works alongside you directly in your code editor, seamlessly integrating AI into your workflow. It provides intelligent code suggestions and completions based on the context of your code, helping you write code more efficiently and accurately. GitHub Copilot Chat is a chat interface that lets you interact with GitHub Copilot, to ask and receive answers to coding-related questions within GitHub.com and supported IDEs.
 
 General support features:
 
-- **Language Support**: Supports multiple programming languages and frameworks, adapting to the code you're working on.
-- **IDE Integration**: Works directly in your code editor, providing suggestions and completions as you write code.
+- **Language support**: Supports multiple programming languages and frameworks, adapting to the code you're working on.
+- **IDE integration**: Works directly in your code editor, providing suggestions and completions as you write code.
 
 GitHub Copilot's autocomplete features:
 
@@ -149,15 +149,15 @@ Copilot suggestions can help you write code faster and with fewer errors, improv
 
 GitHub Copilot Chat's AI assistance features:
 
-- **Chat Interface**: Provides a chat interface for interacting with GitHub Copilot, asking and receiving answers to coding-related questions.
-- **Code Explanation**: Provides explanations for selected code snippets, helping you understand syntax, programming concepts, test cases, debugging, and more, without requiring you to navigate documentation or search online forums.
-- **Documentation Generation**: Generates explanations or documentation for selected code or entire workspaces, helping you understand and document your codebase.
-- **Test Case Generation**: Helps in generating test cases for your code, saving time, and improving code quality.
+- **Chat interface**: Provides a chat interface for interacting with GitHub Copilot, asking and receiving answers to coding-related questions.
+- **Code explanation**: Provides explanations for selected code snippets, helping you understand syntax, programming concepts, test cases, debugging, and more, without requiring you to navigate documentation or search online forums.
+- **Documentation generation**: Generates explanations or documentation for selected code or entire workspaces, helping you understand and document your codebase.
+- **Test case generation**: Helps in generating test cases for your code, saving time, and improving code quality.
 - **Code fixes**: Provides suggestions for refactoring code and fixing common issues, improving code quality and maintainability.
 
 By using AI to assist with coding tasks, GitHub Copilot can help you focus on higher-level design and problem-solving, rather than getting bogged down in syntax and implementation details.
 
-GitHub Copilot and Copilot Chat are intended for:
+GitHub Copilot and GitHub Copilot Chat are intended for:
 
 - Developers who want to write code faster and with fewer errors.
 - Teams that want to improve code quality and consistency across projects.
