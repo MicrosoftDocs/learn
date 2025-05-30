@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Retrieve objects from Azure Key Vault
   description: "Retrieve objects from Azure Key Vault"
-  ms.date: 05/29/2025
+  ms.date: 05/30/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
