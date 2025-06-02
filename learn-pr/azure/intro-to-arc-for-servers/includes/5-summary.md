@@ -6,7 +6,7 @@ You also advise the CIO that Contoso could further apply Azure services such as 
 
 ## Additional reading
 
-You can learn more by visiting the following webpages:
+You can learn more by visiting the following links:
 
 - [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview)
 - [Azure Arc overview](/azure/azure-arc/overview)
