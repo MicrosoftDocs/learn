@@ -2,7 +2,7 @@
 [Azure Migrate and Modernize (formerly known as Azure Migration and Modernization program) and Azure Innovate](https://aka.ms/azureheroofferings) are two new offerings to help you simplify your journey to cloud. Both offerings provide proactive guidance and the right mix of expert help at every stage of your cloud journey.
 
 Azure Migrate and Modernize will help you migrate and modernize applications, infrastructure, and database to the cloud. Azure Innovate is a new offering designed to help you with your advanced innovation needs such as infusing AI into your apps and experiences, advanced analytics, and building custom cloud native application.
- 
+
 All customers can access curated resources and frameworks, help from advanced specialized partners and tools such as Azure Migrate, and Microsoft Cost Management, step-by-step technical guidance, low cost or no cost skilling.
 
 Here are some of the benefits available from Azure Migrate and Modernize and Azure Innovate:
@@ -15,9 +15,7 @@ Here are some of the benefits available from Azure Migrate and Modernize and Azu
 - **Partner funding for specialized partners** - An increased investment in partner ecosystem to increase both capacity and capability across the Azure portfolio to get the expert help as needed.
 - **Extensive coverage from migration to innovation** - Azure Migrate and Modernize and Azure Innovate helps you across a wide range of your cloud adoption needs which includes migrating or modernize Windows Server & SQL Server, Linux, Oracle, SAP, HPC, analytics AI and more.
 
-
 :::image type="content" source="../media/ammp-phases-2.png" alt-text="Diagram showing the Azure Migration and Modernization Program project phases.":::
-
 
 ## FastTrack for Azure
 
@@ -46,11 +44,9 @@ FastTrack for Azure can help with many solutions including:
 - Data analytics
 - Azure Virtual Desktop
 
-For a complete list of supported solutions, visit [azure.com/FastTrack](https://azure.microsoft.com/pricing/offers/azure-fasttrack/).
-
 ## Azure Expert managed service providers (MSPs)
 
-As production systems are migrated to Azure, operations become critical. Microsoft has built the [Azure Expert managed service providers (MSPs)](https://www.microsoft.com/azure/partners/azureexpertmsp?filters=all) program to ensure customers have a partner to meet their operational needs. You work with a trusted advisor that can offer repeatable, highly automated solutions to enable and support hyper-scale cloud implementations.
+As production systems are migrated to Azure, operations become critical. Microsoft has built the [Azure Expert managed service providers (MSPs)](/partner-center/membership/azure-expert-msp) program to ensure customers have a partner to meet their operational needs. You work with a trusted advisor that can offer repeatable, highly automated solutions to enable and support hyper-scale cloud implementations.
 
 ### MSP qualifications
 

@@ -88,6 +88,6 @@ This tool addresses your readiness across all dimensions of migration, from init
 
 ## Cloud economics
 
-Moving to the cloud is as much a business decision as a technical one. To support customers like Tailwind Traders, Microsoft has released the [Cloud economics](/solutions/cloud-economics/), where you can find technical and financial tips from Azure experts. These help you to understand your cloud investment with detailed financial analysis upfront.
+Moving to the cloud is as much a business decision as a technical one. To support customers like Tailwind Traders, Microsoft has released the [Cloud economics](https://origin.azureprod.microsoft.com/en-us/solutions/cloud-economics/), where you can find technical and financial tips from Azure experts. These help you to understand your cloud investment with detailed financial analysis upfront.
 
 Cloud economics can help get the most value for your cloud investment. These tips can help you understand how moving to the cloud shapes your company’s overall financial posture and KPIs, as well as new processes to ensure that budget and ROI control are met.
