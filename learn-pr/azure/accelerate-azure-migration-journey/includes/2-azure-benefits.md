@@ -15,7 +15,7 @@ Datacenters are expensive. The costs of real estate, power, servers, storage, ne
 
 :::image type="content" source="../media/optimize-it-spend.png" alt-text="Graph showing the difference between pay as you go Azure resources and reserved instance pricing.":::
 
-In a [Forrester study](https://azure.microsoft.com/resources/forrester-economic-impact-azure-iaas/?azure-portal=true), customers report a 25 percent increase in productivity of IT staff, $10M in savings from avoided hardware, software, and staff costs, and a 478 percent return on investments.
+In a Forrester study, customers report a 25 percent increase in productivity of IT staff, a 478 percent return on investments, and $10M in savings from avoided hardware, software, and staff costs.
 
 ### Pay less with Azure
 
@@ -99,7 +99,7 @@ Increase agility with best-in-class Azure infrastructure that scales to your bus
 
 Most Azure solutions can be manually scaled up or down, with many also allowing for autoscale. Autoscale is a built-in feature of [App Services](/azure/azure-monitor/autoscale/autoscale-overview?azure-portal=true), [Azure Kubernetes Services](/azure/aks/cluster-autoscaler?azure-portal=true), [Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview?azure-portal=true), and [Azure Cosmos DB](/azure/cosmos-db/provision-throughput-autoscale?azure-portal=true).
 
-Scaling helps applications perform their best when demand changes. Performance means different things for different applications. Some apps are CPU-bound, others memory-bound. For example, you could have a web app that handles millions of requests during the day and none at night. Autoscale can scale your service by any of these or by a custom metric you define. An Azure administrator can scale other services such as Azure Database or Azure SQL to increase the size or responsiveness.
+Scaling helps applications perform their best when demand changes. Performance means different things for different applications. Some apps are CPU-bound, while others are memory-bound. For example, you could have a web app that handles millions of requests during the day and none at night. Autoscale can scale your service by any of these or by a custom metric you define. An Azure administrator can scale other services such as Azure Database or Azure SQL to increase the size or responsiveness.
 
 ### Increase performance
 

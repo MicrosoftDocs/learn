@@ -18,7 +18,7 @@ For all workloads, the decision to migrate or modernize drives the solution that
 
 ## .NET and Java applications
 
-Custom applications are a common workload to migrate and modernize on Azure. In the case of .NET and Java applications, modernization is the most common approach, however, sometimes a migration is still necessary.
+Custom applications are a common workload to migrate and modernize on Azure. In the case of .NET and Java applications, modernization is the most common approach. However, sometimes a migration is still necessary.
 
 ### Migrate
 
@@ -28,21 +28,33 @@ When you migrate a .NET or Java application, it's more of a VM migration. In thi
 
 When you modernize an application, you use additional cloud provider services to optimize the cost, reliability, and performance. Your application can take advantage of PaaS products such as Azure App Service, Azure SQL Database Managed Instance, and containers. When looking to modernize, it almost always leads to at least updates to your application.
 
-For a .NET or Java web application, you can migrate to Azure App Services with minor changes to your codebase. The advantages of employing modernized services in this scenario include: lower cost and management, using your current application as-is or with some minor code or configuration changes, and connecting to new infrastructure services.
+For a .NET or Java web application, you can migrate to Azure App Services with minor changes to your codebase. The advantages of employing modernized services in this scenario include:
 
-If you take your modernization to the next level, you can redesign some parts of your applications. This is when you would transform it with a modular architecture. In this scenario, you modify or extend an existing application’s codebase to optimize it for a cloud platform and better scalability. Cloud provider services can be used directly as back-end services of modern apps, which are highly scalable and reliable. The advantages include: improving agility by applying innovative DevOps practices, bringing new Azure capabilities to existing apps, and cost-effectively meeting scalability requirements.
+- Lower cost and management.
+- Using your current application as-is or with some minor code or configuration changes.
+- Connecting to new infrastructure services.
 
-The final modernization scenario you can use for your applications is to completely rebuild them. The rebuild strategy revises the existing application by aggressively adopting PaaS or even SaaS architecture. The advantages of this strategy include: building new applications using cloud-native technologies, faster development if your existing application is slowing you down, and innovation opportunities that take advantage of advancements in technology like AI, blockchain, and IoT.
+If you take your modernization to the next level, you can redesign some parts of your applications. This is when you would transform it with a modular architecture. In this scenario, you modify or extend an existing application’s codebase to optimize it for a cloud platform and better scalability. Cloud provider services can be used directly as back-end services of modern apps, which are highly scalable and reliable. The advantages include:
+
+- Improving agility by applying innovative DevOps practices.
+- Bringing new Azure capabilities to existing apps.
+- Cost-effectively meeting scalability requirements.
+
+The final modernization scenario you can use for your applications is to completely rebuild them. The rebuild strategy revises the existing application by aggressively adopting PaaS or even SaaS architecture. The advantages of this strategy include:
+
+- Building new applications using cloud-native technologies.
+- Faster development if your existing application is slowing you down.
+- Innovation opportunities that take advantage of advancements in technology like AI, blockchain, and IoT.
 
 :::image type="content" source="../media/migrate-applications.png" alt-text="Diagram showing how to migrate .NET and Java applications.":::
 
-**Deep dive on migration and modernization scenarios:**
+**Deep dive on [migration and modernization scenarios](/azure/cloud-adoption-framework/adopt/migrate-or-modernize):**
 
-- Migrate an application to [Azure App Service](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-refactor-web-app-sql/?azure-portal=true) and SQL Database.
-- Migrate [SQL Server databases](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-sql-server-db-to-azure/?azure-portal=true) to Azure.
-- [Refactor](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-refactor-web-app-sql-managed-instance/?azure-portal=true) an on-premises application to run as an Azure App Service web app and a SQL managed instance.
-- [Rebuild a new version](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rebuild/?azure-portal=true) of an on-premises application in Azure.
-- Migrate an on-premises application with Azure VMs and [SQL Server Always On availability groups](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag/?azure-portal=true).
+- Migrate an application to Azure App Service and SQL Database.
+- Migrate SQL Server databases to Azure.
+- Refactor an on-premises application to run as an Azure App Service web app and a SQL managed instance.
+- Rebuild a new version of an on-premises application in Azure.
+- Migrate an on-premises application with Azure VMs and SQL Server Always On availability groups.
 
 ## SQL Server
 
@@ -62,11 +74,11 @@ Migrating to SQL Server Managed Instance is both a migration and a modernization
 
 You can also modernize your SQL Server by moving to an Azure SQL Database. Azure SQL provides you with most of the database-level features without the server-level features. Due to this, moving to Azure SQL is a little more of a modernization. Azure SQL Server also has elastic pools and automatic tuning. The move to Azure SQL is most common when you're also doing a modernization of your frontend application to a PaaS service such as Azure App Service.
 
-**Deep dive on migration scenarios:**
+**Deep dive on [migration scenarios](/azure/cloud-adoption-framework/migrate/scenarios):**
 
-- [Migrate a server](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm/?azure-portal=true) running an instance of SQL Server.
-- Migrate SQL with Azure VMs and [SQL Server Always On availability groups](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag/?azure-portal=true).
-- Migrate an on-premises SQL Server by migrating to Azure VMs and [Azure SQL Managed Instance](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance/?azure-portal=true).
+- Migrate a server running an instance of SQL Server.
+- Migrate SQL with Azure VMs and SQL Server Always On availability groups.
+- Migrate an on-premises SQL Server by migrating to Azure VMs and Azure SQL Managed Instance.
 - [Import a BACPAC File](/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database) to migrate a database to Azure SQL.
 
 ## Open-source databases
@@ -77,7 +89,7 @@ Azure has broad support for open-source databases. There's support for moving My
 
 ### Migrate
 
-To migrate a Linux or Windows server that hosts an open-source database to Azure, the experience is similar to migrating a Windows SQL Server. When you host these databases on a VM in Azure, they can be moved by using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and run just as they did in the datacenter, only now they're connected to a virtual network running in Azure.
+To migrate a Linux or Windows server that hosts an open-source database to Azure, the experience is similar to migrating a Windows SQL Server. When you host these databases on a VM in Azure, they can be moved by using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and run just as they did in the datacenter. Only now they're connected to a virtual network running in Azure.
 
 ### Modernize
 
@@ -95,14 +107,13 @@ Each database provides a fully managed PaaS offering with flexibility in the com
 - [Migrate MySQL to Azure Database for MySQL](/azure/mysql/migrate/mysql-on-premises-azure-db/01-mysql-migration-guide-intro)
 - [Migrate PostgreSQL to Azure Database for PostgreSQL](/azure/postgresql/howto-migrate-using-dump-and-restore)
 - [Migrate MariaDB to Azure Database for MariaDB](/azure/mariadb/howto-migrate-dump-restore)
-- Migrate on-premises Linux application to [Azure VMs](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-linux-vm/?azure-portal=true)
-- Migrate an on-premises Linux application to [Azure VMs and Azure Database for MySQL](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql/?azure-portal=true)
+- Migrate on-premises Linux application to [Azure VMs and Azure Database for MySQL](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-linux-vm/?azure-portal=true)
 
 ## Azure IaaS
 
 Azure has broad support for Linux and Windows virtual machines. Tailwind Traders can quickly move on-premises Linux distributions or versions of Windows to Azure. Migrating to Azure IaaS is the best approach when none of the other scenarios provide a method for migrating and modernizing your application. This can also be referred to as a lift-and-shift migration where the server is "lifted" out of your on-premises data center and "shifted" in Azure IaaS with minimal changes. To do this type of migration, [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) is the best way to migrate to Azure IaaS.
 
-With an Azure IaaS migration, there isn't a modernization path similar to the other services. However, modernization can be done with tools to support your IaaS environment. Modernization of IaaS could be doing things like using Azure Backup to back your VMs instead of an on-premises backup solution. Other modern services that can be used to improve an IaaS environment in Azure is Defender for Cloud for monitoring VMs or Microsoft Sentinel for a modern security information event management (SIEM) and security orchestration automated response (SOAR) service in Azure. Azure Advisor and Azure Policy can help by recommending ways to optimize an IaaS deployment as well as govern the services deployed to Azure.
+With an Azure IaaS migration, there isn't a modernization path similar to the other services. However, modernization can be done with tools to support your IaaS environment. Modernization of IaaS could be doing things like using Azure Backup to back your VMs instead of an on-premises backup solution. Other modern services that can be used to improve an IaaS environment in Azure is Defender for Cloud for monitoring VMs, or Microsoft Sentinel for a modern security information event management (SIEM) and security orchestration automated response (SOAR) service in Azure. Azure Advisor and Azure Policy can help by recommending ways to optimize an IaaS deployment as well as govern the services deployed to Azure.
 
 While an IaaS migration to Azure might not be modernizing the applications themselves, the other modern services can be used to provide a modernized toolset for managing your IaaS deployment.
 
@@ -124,7 +135,7 @@ Using [Azure VMware Solution](https://azure.microsoft.com/products/azure-vmware)
 
 :::image type="content" source="../media/migrate-modernize-vmware.png" alt-text="Diagram showing how to migrate VMware VMs to Azure.":::
 
-Tailwind Traders can use Azure VMware Solution to create a private cloud in Azure with native access to VMware vCenter and other tools that are supported by VMware for workload migration. Move to Azure seamlessly using VMware’s HCX technology and continue to manage your environment using the same VMware tools you already know: vSphere Client, NSX-T, Power CLI, or any popular DevOps toolchain.
+Tailwind Traders can use Azure VMware Solution to create a private cloud in Azure with native access to VMware vCenter and other tools that are supported by VMware for workload migration. Move to Azure seamlessly using VMware’s HCX technology and continue to manage your environment using the same VMware tools you already know like vSphere Client, NSX-T, Power CLI, or any popular DevOps toolchain.
 
 Once deployed to Azure VMware Solution, you can create vSphere VMs in the Azure portal via API calls or CLI, automate deployments, and enable single sign-on. Enhance your workloads with the full range of Azure compute, monitor, backup, database, IoT, and AI services.
 
@@ -173,7 +184,7 @@ Azure is a great choice for running DevTest workloads in the cloud. Tailwind Tra
 
 ### Migrate
 
-When your DevTest environment migrates to Azure, it runs on VMs in the cloud. The VMs can be moved by using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and run just as they did in the datacenter, only now they're connected to a virtual network running in Azure.
+When your DevTest environment migrates to Azure, it runs on VMs in the cloud. The VMs can be moved by using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and run just as they did in the datacenter. But now they're connected to a virtual network running in Azure.
 
 :::image type="content" source="../media/migrate-devtest.png" alt-text="Diagram showing how to migrate DevTest to Azure.":::
 
@@ -193,6 +204,6 @@ Migrate a dev/test environment to [Azure DevTest Labs](/azure/cloud-adoption-fra
 
 There are [discounted rates on Azure](https://azure.microsoft.com/pricing/dev-test?azure-portal=true) to support your ongoing development and testing:
 
-- No Microsoft software charges on VMs
-- Significant dev/test pricing discounts on various other Azure services
-- Access to Windows 10 VMs and Azure Virtual Desktop service
+- No Microsoft software charges on VMs.
+- Significant dev/test pricing discounts on various other Azure services.
+- Access to Windows 10 VMs and Azure Virtual Desktop service.
