@@ -17,7 +17,7 @@ quiz:
   questions:
   - content:  "What is the simplest method to identify an Azure Arc-enabled server's operating system?"
     choices:
-    - content: "Integrate the server with Azure Monitor and run an Azure Monitor Agent query."
+    - content: "Integrate the server with Azure Monitor and run a query."
       isCorrect: false
       explanation: "Incorrect. While it's possible to identify the required information, this identification would require extra administrative effort."
     - content: "Use Windows Admin Center to connect to each server."
