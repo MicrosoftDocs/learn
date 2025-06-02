@@ -18,11 +18,15 @@ The suggested autocompletion is displayed without colored syntax highlighting. T
 
 You can press the Esc key to dismiss a suggestion.
 
-The `addInt` example is a bit simplistic, so you may be wondering how GitHub Copilot does with something more complex. Suppose you want to create a method that accepts a list of numbers and returns the sum of the prime numbers contained in the list. You could name the method `addPrimeNumbersInNumericList`. When you start typing the method signature, GitHub Copilot generates the following suggestion for you.
+The `addInt` example is a bit simplistic, so you may be wondering how GitHub Copilot does with something more complex.
+
+Suppose you want to create a method that accepts a list of numbers and returns the sum of the prime numbers contained in the list. You could name the method `addPrimeNumbersInNumericList`. When you start typing the method signature, GitHub Copilot generates a suggestion for you. For example:
 
 ![Screenshot showing the autocompletion for a method that adds the prime numbers in a list.](../media/autocomplete-add-numeric-list.png)
 
-It's important to review suggestions before accepting them. This autocompletion looks good, so you accept the suggestion by pressing the Tab key.
+It's important to review suggestions before accepting them. This autocompletion looks good, so you could accept the suggestion by pressing the Tab key.
+
+Let's continue the scenario a bit further.
 
 Once the suggestion is merged into your code, you notice that the `isPrime` method is underlined in red. This is because the `isPrime` method doesn't exist in the code yet.
 

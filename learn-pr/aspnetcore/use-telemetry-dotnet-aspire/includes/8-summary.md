@@ -1,4 +1,4 @@
-With the .NET Aspire stack, it's easier than ever to create cloud-native applications consisting of microservices in .NET. .NET Aspire takes care of the heavy lifting for telemetry so that you can concentrate on diagnosing what's going on. The .NET Aspire dashboard shows a real-time view of the app's logs, metrics, and traces. In the exercise, you added your own log messages to the application.
+With the .NET Aspire stack, it's easier than ever to create cloud-native applications consisting of microservices in .NET. .NET Aspire takes care of the heavy lifting for telemetry so you can concentrate on diagnosing what's going on. The .NET Aspire dashboard shows a real-time view of the app's logs, metrics, and traces. In the exercise, you added your own log messages to the application.
 
 Now that you've completed the module, you can:
 

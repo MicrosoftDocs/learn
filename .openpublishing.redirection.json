@@ -48043,6 +48043,41 @@
       "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/7-review-code-documentation-solution.md",
       "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
       "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/3-examine-github-copilot-benefits.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/4-exercise-install-github-copilot-extensions-visual-studio-code.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/5-examine-autocomplete-features-github-copilot-extension.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/6-examine-ai-assistance-features-github-copilot-chat-extension.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/7-exercise-configure-github-copilot-extensions-visual-studio-code.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/8-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/13-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/9-summary.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/14-summary",
+      "redirect_document_id": false
     }
   ]
 }
