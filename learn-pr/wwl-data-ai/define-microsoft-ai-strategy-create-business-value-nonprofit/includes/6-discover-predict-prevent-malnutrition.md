@@ -8,17 +8,17 @@ Amref Health Africa is a nonprofit organization dedicated to creating lasting he
 
 ## The challenge
 
-Malnutrition is a significant issue in Kenya, affecting 18 percent of children under five, leading to impaired growth and development. The Kenyan Ministry of Health has collected extensive health data over the past decade, but transforming this data into actionable insights has been challenging due to its sheer volume. Manual data processing is nearly impossible, making it difficult to predict and address malnutrition effectively.
+Malnutrition is a significant issue in Kenya, affecting 18 percent of children under five, leading to impaired growth and development. The Kenyan Ministry of Health collected extensive health data over the past decade, but transforming this data into actionable insights has been challenging due to its sheer volume. Manual data processing is nearly impossible, making it difficult to predict and address malnutrition effectively.
 
 ## The solution
 
-The AI-based malnutrition forecasting model developed by the Microsoft AI for Good Lab and USC utilizes anonymized health data from the District Health Information System and other complementary data sources like satellite imagery. The model, built using Microsoft Azure, predicts malnutrition risks at sub-county levels and at one-, three-, and six-month intervals. This allows Amref and its partners to plan interventions, mobilize resources, and prevent malnutrition more effectively.
+The AI-based malnutrition forecasting model developed by the Microsoft AI for Good Lab and USC utilizes anonymized health data from the District Health Information System and other complementary data sources like satellite imagery. The model, built using Microsoft Azure, predicts malnutrition risks at subcounty levels and at one-, three-, and six-month intervals. This allows Amref and its partners to plan interventions, mobilize resources, and prevent malnutrition more effectively.
 
 > "AI helps us predict cases of malnutrition and channel resources to where they are truly needed. The future looks more bright because we’re using technology to save children." - _Herbert Basra, Monitoring and Evaluation Lead, Amref_
 
 ## The results
 
-The AI-powered tool enables Amref to act earlier and more precisely, improving health outcomes for children and mothers. By predicting malnutrition hotspots, Amref can strategically deploy resources and staff, preventing hunger before it sets in. The tool also allows for better program evaluation and design, helping Amref quantify their impact and refine their strategies. The success of this tool has led to plans for replicating the framework to address other health concerns and potentially expanding its use to other countries.
+The AI-powered tool enables Amref to act earlier and more precisely, improving health outcomes for children and mothers. By predicting malnutrition hotspots, Amref can strategically deploy resources and staff, preventing hunger before it sets in. The tool also allows for better program evaluation and design, helping Amref quantify their impact and refine their strategies. The success of this tool led to plans for replicating the framework to address other health concerns and potentially expanding its use to other countries.
 
 > “By using AI, we will always be ready to act.” - _Samuel Mburu, Head of Digital Transformation at Amref._
 

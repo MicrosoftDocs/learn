@@ -4,8 +4,6 @@ AI is transforming the nonprofit sector by offering innovative solutions to enha
 
 Let's take a  closer look at some top opportunities for AI-driven transformation in nonprofits.
 
-![Screenshot of four AI-driven opportunities.](../media/4-ai-value.jpg)
-
 ### Enrich staff experiences
 
 ![Screenshot of smiling staffers.](../media/4-enrich-staff-experiences.jpg)

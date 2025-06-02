@@ -1,13 +1,13 @@
 Limited staffing, rising demand for services, donor fatigue, and operational inefficiencies can stretch even the most dedicated nonprofit teams thin. These obstacles don’t just affect internal workflows—they directly impact the people and communities nonprofits serve.
 
-> ![Screenshot organizational challenges facing nonprofits.](../media/3-organizational-challenges.jpg)
+![Screenshot organizational challenges facing nonprofits.](../media/3-organizational-challenges.jpg)
 
 Challenges that affect effective service delivery include:
-- Increasingly complex financial environments
-- Staff capacity, skills, and retention
-- Manual and time-consuming proccesses
-- Tech disruptions
-- Decision-making inefficiency
+- Complex financial environments.
+- Staff capacity, skills, and retention.
+- Manual and time-consuming processes.
+- Tech disruptions.
+- Decision-making inefficiency.
 
 In addition to these internal pressures, nonprofits must also navigate broader global challenges such as economic uncertainty, demographic shifts, cybersecurity threats, and unequal access to technology. These factors compound the difficulty of sustaining impact and scaling services.
 
@@ -17,16 +17,16 @@ AI offers a powerful opportunity to help nonprofits overcome these barriers. Rat
 
 When thoughtfully applied, AI can unlock new capacity, resilience, and potential—ultimately allowing nonprofits to serve their constituents more effectively and sustainably.
 
-## AI objectives in the nonprofit sector
+## AI objectives in nonprofit
 
 The primary goal of AI initiatives in the nonprofits is to help address these challenges by integrating intelligent technologies and address specific challenges. This includes improving grant writing and fundraising, deepening donor engagement, and using data-driven insights to make smarter, faster decisions.
 
 To achieve these outcomes, nonprofits are applying AI across key functional areas to achieve specific objectives:
-- **Program delivery**. Improving service reach and effectiveness
-- **Fundraising and grant management**. Streamlining processes and identifying new opportunities
-- **Donor relations**. Personalizing engagement and strengthening relationships
-- **Volunteer management**. Optimizing recruitment, scheduling, and retention
-- **People development**. Supporting staff training and leadership growth
+- **Program delivery**. Improving service reach and effectiveness.
+- **Fundraising and grant management**. Streamlining processes and identifying new opportunities.
+- **Donor relations**. Personalizing engagement and strengthening relationships.
+- **Volunteer management**. Optimizing recruitment, scheduling, and retention.
+- **People development**. Supporting staff training and leadership growth.
 
 ![Screenshot of warehouse with volunteers packing boxes.](../media/3-volunteer.jpg)
 
@@ -46,14 +46,14 @@ Consider the following pillars of governing and securing AI:
 - **Security**. Measure and mitigate security and privacy risk.
 - **Forensics**. Investigate incidents and perform audits.
 - **Intent**. Understand user intent and productivity.
-- **Education**. Provide education adn policy enforcement. 
+- **Education**. Provide education and policy enforcement.
 
 ![Screenshot of end-to-end security for AI investments.](../media/4-security.jpg)
 
 You can learn more by reviewing [Security Program for Nonprofits](https://www.microsoft.com/nonprofits/data-security).
 
 >[!TIP]
->Take a moment to identify the goals and challenges specific to _your_ organization. To get started, you might consider what legacy or in-house apps AI might help optimize.
+>Take a moment to identify the goals and challenges specific to _your_ organization.
 > 
 >![Screenshot of people working and talking around a table.](../media/2-reflection.jpg)
 

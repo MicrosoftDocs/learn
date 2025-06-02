@@ -24,26 +24,26 @@ quiz:
       explanation: "Incorrect. AI supports strategic planning, it doesn't eliminate the need for it."
     - content: "AI is used to replace human decision-making in strategic planning."
       isCorrect: false
-      explanation: "Incorrect. While AI can provide valuable insights, it does not replace human decision-making in strategic planning."
+      explanation: "Incorrect. While AI can provide valuable insights, it doesn't replace human decision-making in strategic planning."
   - content: "What is the main goal for AI projects in the Nonprofit industry?"
     choices:
-    - content: "To replace human workers with AI technology"
+    - content: "To replace human workers with AI technology."
       isCorrect: false
-      explanation: "Incorrect. The goal is not to replace human workers, but to enhance the impact and efficiency of nonprofit organizations."
-    - content: "To enhance the impact and efficiency of nonprofit organizations"
+      explanation: "Incorrect. The goal isn't to replace human workers, but to enhance the impact and efficiency of nonprofit organizations."
+    - content: "To enhance the impact and efficiency of nonprofit organizations."
       isCorrect: true
       explanation: "Correct. The main goal is to use AI technology to enhance the impact and efficiency of nonprofit organizations."
-    - content: "To reduce the number of volunteers needed"
+    - content: "To reduce the number of volunteers needed."
       isCorrect: false
-      explanation: "Incorrect. The goal is not to reduce the number of volunteers, but to improve various aspects such as donor engagement and decision-making."
+      explanation: "Incorrect. The goal isn't to reduce the number of volunteers, but to improve various aspects such as donor engagement and decision-making."
   - content: "What are some of the opportunities for AI-driven transformation in the nonprofit sector?"
     choices:
-    - content: "Limit program delivery"
+    - content: "Limit program delivery."
       isCorrect: false
       explanation: "Incorrect. AI is used to expand program delivery, not limit it."
-    - content: "Enrich staff experiences, reinvent donor engagement, expand program delivery, and accelerate mission impact"
+    - content: "Enrich staff experiences, reinvent donor engagement, expand program delivery, and accelerate mission impact."
       isCorrect: true
       explanation: "Correct. These are the top opportunities for AI-driven transformation in the nonprofit sector."
-    - content: "Decrease staff experiences"
+    - content: "Decrease staff experiences."
       isCorrect: false
       explanation: "Incorrect. AI is used to enrich staff experiences, not decrease them."

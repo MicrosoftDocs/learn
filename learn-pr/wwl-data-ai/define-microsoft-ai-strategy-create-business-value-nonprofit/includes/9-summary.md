@@ -1,4 +1,4 @@
-In this module, you have learned about Microsoft's commitment to empowering nonprofits through its Tech for Social Impact initiative. The module also highlighted the value of AI for nonprofits, including mission alignment, strategic planning, operational efficiency, data privacy & security, and accelerated fundraising. It also discussed the challenges faced by nonprofits, such as economic pressures, demographic shifts, security attacks, and lack of technology access. The module further emphasized the role of AI in revolutionizing the nonprofit sector by improving efficiency and impact.
+In this module, you learned about Microsoft's commitment to empowering nonprofits through its Tech for Social Impact initiative. You considered the challenges faced by nonprofits, such as economic pressures, demographic shifts, security attacks, and lack of technology access. You explored the value of AI for nonprofits, including mission alignment, strategic planning, operational efficiency, data privacy & security, and accelerated fundraising.
 
 ## Resources and further learning
 
