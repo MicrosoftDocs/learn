@@ -22,6 +22,6 @@ The AI-powered tool enables Amref to act earlier and more precisely, improving h
 
 > “By using AI, we will always be ready to act.” - _Samuel Mburu, Head of Digital Transformation at Amref._
 
-To learn more, read [Amref Health Africa predicts and prevents malnutrition in Kenya with AI](https://www.microsoft.com/customers/story/18916-amref-health-africa-azure?msockid=28b8f1b4a48c60e10eaee4a3a52b61e6).
+To learn more, read [Amref Health Africa predicts and prevents malnutrition in Kenya with AI](https://www.microsoft.com/customers/story/18916-amref-health-africa-azure?azure-portal=true).
 
 Next, let’s explore how Microsoft AI transforms lives through access to essential surgery.

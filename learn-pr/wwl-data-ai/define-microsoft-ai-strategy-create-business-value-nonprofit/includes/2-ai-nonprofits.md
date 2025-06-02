@@ -24,7 +24,7 @@ The following table describes how these drivers collectively enable nonprofits t
 
 ## Microsoft Tech for Social Impact
 
-Microsoft Tech for Social Impact (TSI) is a global initiative that empowers nonprofits with technology to drive social good. It operates as a social investment model, reinvesting revenue into causes like affordable housing, job training, and tech donations. It also offers grants and discounts on Microsoft 365, Azure, Dynamics 365, and nonprofit-specific tools like Microsoft Cloud for Nonprofit. Learn more at the [Microsoft for Nonprofits](https://www.microsoft.com/nonprofits) website.
+Microsoft Tech for Social Impact (TSI) is a global initiative that empowers nonprofits with technology to drive social good. It operates as a social investment model, reinvesting revenue into causes like affordable housing, job training, and tech donations. It also offers grants and discounts on Microsoft 365, Azure, Dynamics 365, and nonprofit-specific tools like Microsoft Cloud for Nonprofit. Learn more at the [Microsoft for Nonprofits](https://www.microsoft.com/nonprofits?azure-portal=true) website.
 
 The Microsoft TSI Partner ecosystem provides further innovation and scale, helping nonprofits of all sizes with sector-by providing specific solutions and support for AI implementation and deployment. TSI offers [free digital skills training](https://www.microsoft.com/nonprofits/resources?azure-portal=true) to help nonprofits be successful with their technology.
 

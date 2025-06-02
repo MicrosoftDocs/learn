@@ -50,6 +50,6 @@ This is just the beginning of Operation Smile’s AI journey with Microsoft.
 
 > "Microsoft is an ideal collaborator for us because of its focus on Responsible AI. We are hyper-careful about how we use AI, ensuring it is always handled with the utmost respect for patients and ethics. Microsoft understands that." - _Sean Riordan, Associate Vice President of Information Technology at Operation Smile_
 
-To learn more, read [Operation Smile bridges the gap in access to care with Azure OpenAI and Fabric](https://www.microsoft.com/customers/story/19752-operation-smile-azure-ai-and-machine-learning?msockid=28b8f1b4a48c60e10eaee4a3a52b61e6).
+To learn more, read [Operation Smile bridges the gap in access to care with Azure OpenAI and Fabric](https://www.microsoft.com/customers/story/19752-operation-smile-azure-ai-and-machine-learning?azure-portal=true).
 
 Next, let’s check your knowledge.

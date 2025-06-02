@@ -50,7 +50,7 @@ Consider the following pillars of governing and securing AI:
 
 ![Screenshot of end-to-end security for AI investments.](../media/4-security.jpg)
 
-You can learn more by reviewing [Security Program for Nonprofits](https://www.microsoft.com/nonprofits/data-security).
+You can learn more by reviewing [Security Program for Nonprofits](https://www.microsoft.com/nonprofits/data-security?azure-portal=true).
 
 >[!TIP]
 >Take a moment to identify the goals and challenges specific to _your_ organization.

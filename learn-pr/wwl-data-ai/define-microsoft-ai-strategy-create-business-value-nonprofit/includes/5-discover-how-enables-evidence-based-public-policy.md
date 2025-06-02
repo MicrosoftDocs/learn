@@ -20,6 +20,6 @@ RTI International implemented Microsoft 365 Copilot to enhance productivity and 
 
 Ultimately, support from AI helps RTI staff do more of what moves the needle on global issues. "Copilot gives us more time to stay in a flow state while at work," Greenway says. Fewer interruptions and greater efficiencies, coupled with RTI staff members’ passion and dedication, help the nonprofit ask the large questions and carry out their mission.
 
-To learn more, read [Research nonprofit RTI International improves the human condition with Microsoft 365 Copilot](https://www.microsoft.com/customers/story/1802830664758543360-rti-international-microsoft-teams-nonprofit-en-united-states).
+To learn more, read [Research nonprofit RTI International improves the human condition with Microsoft 365 Copilot](https://www.microsoft.com/customers/story/1802830664758543360-rti-international-microsoft-teams-nonprofit-en-united-states?azure-portal=true).
 
 Next, let’s explore how Microsoft AI enables predicting and preventing malnutrition.
