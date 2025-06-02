@@ -54,7 +54,7 @@ If you haven't already, create a fork of the **mslearn-test-bicep-code-using-git
 
 ## Clone the repository
 
-1. Select **Repos** > **Files**.
+1. In Azure DevOps, select **Repos** > **Files**.
 
    :::image type="content" source="../media/4-repos-files.png" alt-text="Screenshot of Azure DevOps that shows the Repos menu. Files is highlighted.":::
 
@@ -62,7 +62,7 @@ If you haven't already, create a fork of the **mslearn-test-bicep-code-using-git
 
    :::image type="content" source="../media/4-clone.png" alt-text="Screenshot of Azure DevOps that shows the repository. The Clone button is highlighted." lightbox="../media/4-clone.png":::
 
-1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git credentials** and copy the displayed username and password somewhere safe.
+1. If you're using macOS, you need a special password to clone the Git repository. Select **Generate Git Credentials** and copy the displayed username and password somewhere safe.
 
 1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
@@ -110,7 +110,7 @@ New-AzResourceGroup -Name ToyWebsiteTest -Location westus3
 
 Next, create a service connection in Azure Pipelines. This connection automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy to the resource group.
 
-1. In your browser, select **Project settings**.
+1. In the project you created earlier, select **Project settings**.
 
    :::image type="content" source="../../includes/media/azure-devops-project-settings.png" alt-text="Screenshot of Azure DevOps. The menu item for project settings is highlighted.":::
 
@@ -122,9 +122,7 @@ Next, create a service connection in Azure Pipelines. This connection automatica
 
    :::image type="content" source="../../includes/media/azure-devops-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps. The Azure Resource Manager service connection type is selected.":::
 
-1. Select **Service principal (automatic)** > **Next**.
-
-   :::image type="content" source="../../includes/media/azure-devops-create-service-connection-principal-type.png" alt-text="Screenshot of Azure DevOps. The service principal option is selected.":::
+1. Select **App registration (automatic)**.
 
 1. In the **Subscription** dropdown list, select your Azure subscription.
 
