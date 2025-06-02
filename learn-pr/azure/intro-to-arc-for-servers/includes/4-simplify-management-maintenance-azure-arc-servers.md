@@ -41,11 +41,3 @@ You can store and analyze near real-time and historical data in a Log Analytics 
 ![Screenshot that depicts the Map tab on the Insights page for a VM in Azure. ContosoVM1 is displayed with details of open TCP ports. A VM summary is also displayed, detailing the VM's operating system, IP address, and links for Health, Machine properties, and Azure VM properties. Three buttons are displayed for access to Properties (selected), Log Events, Alerts, and Connections.](../media/4-insights-map.png)
 
 Once you install and configure the agent, servers will start forwarding telemetry to the Log Analytics workspace of your choice. You can subsequently display the collected data via Azure Monitor dashboards and analyze via Log Analytics queries. You can also implement metric or log-based rules that trigger alerts and autoremediation tasks.
-
-## What are the benefits of Log Analytics with Azure Arc-enabled servers?
-
-Azure Arc-enabled servers offers advantages when it comes to the onboarding process, because you can use VM extensions or Azure Policy to deploy the Log Analytics agent. This streamlines the deployment process, allows for centralized, at-scale management from any location via the Azure portal, and facilitates agent maintenance, considerably simplifying identifying and upgrading out-of-date agents.
-
-In addition, integration with Azure Resource Manager provides support for the resource context access to Log Analytics data. Resource context allows you to restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource. Because each Azure Arc-enabled server exists as an Azure resource, you can control access to its Log Analytics logs by relying on Azure role-based access control (Azure RBAC) permissions assigned to that resource.
-
-Choose the best response for each of the following questions.
