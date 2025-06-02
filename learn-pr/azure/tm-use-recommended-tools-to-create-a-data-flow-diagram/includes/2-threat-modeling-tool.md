@@ -1,5 +1,3 @@
-## Quick overview
-
 The Microsoft Threat Modeling Tool, recognized by the threat-modeling community, helps engineers create data-flow diagrams. It offers customizable templates and a threat-generation engine with threats and risk-reduction strategies.
 
 The default template is called *SDL TM Knowledge Base* and gives you a basic set of elements and threat-generation capabilities. All you need is a basic understanding of data-flow diagrams and STRIDE.
