@@ -69,9 +69,9 @@ The last part of this step executes commands used by Node.js projects. The `npm 
 
 To learn more about npm, check out the npm documentation:
 
-- [npm install](https://docs.npmjs.com/cli/install?azure-portal=true)
-- [npm run](https://docs.npmjs.com/cli/run-script?azure-portal=true)
-- [npm test](https://docs.npmjs.com/cli/test.html?azure-portal=true)
+- [npm install](https://docs.npmjs.com/cli/v11/commands/npm-install?azure-portal=true)
+- [npm run](https://docs.npmjs.com/cli/v11/commands/npm-run?azure-portal=true)
+- [npm test](https://docs.npmjs.com/cli/v11/commands/npm-test?azure-portal=true)
 
 Beyond individual npm commands, teams can benefit from reusable workflows to streamline and standardize repeated automation steps. By leveraging reusable workflows, you can reduce redundancy, improve maintainability, and ensure consistency across your CI/CD pipelines.
 
