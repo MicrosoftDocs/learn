@@ -10,7 +10,7 @@ Defender for Cloud is a cloud-based service for managing the security of your cl
 - **Protect your environment**: Monitor for security threats to your cloud and on-premises servers with Defender for Cloud.
 - **Protect your data**: Identify suspicious activity against your servers, files, and databases including potential data breaches.
 
-Defender for Cloud relies on the Azure Monitor Agent to collect security-related events, application crash dumps, and operating system configuration settings. It continuously analyzes collected data, provides you with remediation recommendations, and generates security alerts in response to attempted and actual security breaches and exploits.
+Defender for Cloud continuously analyzes collected data, provides you with remediation recommendations, and generates security alerts in response to attempted and actual security breaches and exploits.
 
 > [!NOTE]
 > Azure Arc-enabled servers require Microsoft Defender for Cloud.
