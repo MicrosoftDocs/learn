@@ -1,0 +1,26 @@
+### YamlMime:ModuleUnit
+uid: learn.winui-101.select-random-word
+
+title: Build Select the Random Word
+metadata:
+  title: Select the Random Word
+  description: "Embark on your Windows development journey with this beginner-friendly course designed to get you up and running quickly. Learn how to set up a professional development environment using Visual Studio, understand the fundamentals of the WinUI3, Windows App SDK and CommunityToolkit, and grasp essential concepts of the MVVM architectural pattern. Through practical, hands-on experience building a simple word-guessing game, you'll gain the confidence and skills needed to start creating your own Windows applications. This course is perfect for aspiring Windows developers looking to build a solid foundation in modern development using cutting-edge tools and best practices."
+  ms.date: 3/17/2025
+  author: chatasweetie
+  ms.author: jearleycha
+  ms.topic: unit
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from
+### the ms.service allowlist.
+###
+### If your content isn't about a product or service, you can omit the ms.service field.
+###
+### For the list of approved ms.service values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice.
+###
+### To request new values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-select-random-word.md)]

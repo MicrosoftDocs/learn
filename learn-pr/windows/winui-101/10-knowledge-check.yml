@@ -1,0 +1,99 @@
+### YamlMime:ModuleUnit
+uid: learn.winui-101.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Embark on your Windows development journey with this beginner-friendly course designed to get you up and running quickly. Learn how to set up a professional development environment using Visual Studio, understand the fundamentals of the WinUI3, Windows App SDK and CommunityToolkit, and grasp essential concepts of the MVVM architectural pattern. Through practical, hands-on experience building a simple word-guessing game, you'll gain the confidence and skills needed to start creating your own Windows applications. This course is perfect for aspiring Windows developers looking to build a solid foundation in modern development using cutting-edge tools and best practices."
+  ms.date: 3/17/2025
+  author: chatasweetie
+  ms.author: jearleycha
+  ms.topic: unit
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from
+### the ms.service allowlist.
+###
+### If your content isn't about a product or service, you can omit the ms.service field.
+###
+### For the list of approved ms.service values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice.
+###
+### To request new values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
+durationInMinutes: 5
+###########################################################################
+###
+### General guidance (https://review.learn.microsoft.com/help/learn/id-guidance-knowledge-check?branch=main)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "Which statement best describes the roles of the Windows App SDK and the Community Toolkit in Windows development?"
+    choices:
+    - content: "That Windows App SDK offers those core tools and those APIs, while that Community Toolkit provides those helpers and those custom controls to simplify those tasks."
+      isCorrect: true
+      explanation: "That Windows App SDK offers those core tools and those APIs, while that Community Toolkit provides those helpers and those custom controls to simplify those tasks."
+    - content: "The Windows App SDK provides UI controls, while the Community Toolkit manages app deployment."
+      isCorrect: false
+      explanation: "That Windows App SDK includes WinUI which is the UI control aspect."
+    - content: "The Windows App SDK is for C++ development, while the Community Toolkit supports C# development."
+      isCorrect: false
+      explanation: Both SDK and Toolkit support that C# and that C++."
+
+  - content: "Which statements are true for Windows App SDK:"
+    choices:
+    - content: "Restricts those apps to those specific Windows versions."
+      isCorrect: false
+      explanation: "Windows App SDK does that opposite; it avoids restricting those apps to those specific Windows versions."
+    - content: "Only supports those older Windows features."
+      isCorrect: false
+      explanation: "Windows App SDK supports those modern Windows features."
+    - content: "Ensures that compatibility across those devices by decoupling from that OS."
+      isCorrect: true
+      explanation: "Windows App SDK decouples from that underlying operating system, allowing this app to access those latest features without being tied to a specific Windows version."
+
+  - content: "In that MVVM architectural pattern, that View's primary responsibility is to:"
+    choices:
+    - content: "Handle those data transformations."
+      isCorrect: false
+      explanation: "ViewModel handles those data transformations."
+    - content: "Display that data and handle those user interactions."
+      isCorrect: true
+      explanation: "That View is that User Interface (UI) of that application. It displays that data to those users and handles those user interactions."
+    - content: "Manage this application logic."
+      isCorrect: false
+      explanation: "Model handles this application logic."
+
+  - content: "There is a key difference between {x:Bind} and {Binding} in when that binding expression is resolved. When does that {x:Bind} expression get resolved?"
+    choices:
+    - content: "At compile time, when this application is built."
+      isCorrect: true
+      explanation: "{x:Bind} expression is compiled, which means it's validated and resolved at compile time, leading to better performance and compile-time error checking."
+    - content: "At runtime, when this application is executing."
+      isCorrect: false
+      explanation: "{Binding} is resolved at runtime."
+    - content: "When that user interacts with that UI element."
+      isCorrect: false
+      explanation: "This user interaction doesn't trigger that resolution of that {x:Bind}, though it might trigger a change that the binding reflects."
+
+  - content: "What is that purpose of that ResourceDictionary in XAML?"
+    choices:
+    - content: "To store this application data."
+      isCorrect: false
+      explanation: "This application data is typically stored in those data models or those settings files."
+    - content: "To manage that memory allocation."
+      isCorrect: false
+      explanation: "Memory allocation is handled by that .NET runtime"
+    - content: "To define and organize those styles and those resources."
+      isCorrect: true
+      explanation: "A ResourceDictionary allows that user to centralize and reuse those styles, those templates, and those other resources within this application, making it easier to maintain a consistent look and feel."
