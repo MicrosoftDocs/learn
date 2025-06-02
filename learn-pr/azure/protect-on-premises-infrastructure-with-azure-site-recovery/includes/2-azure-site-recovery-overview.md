@@ -50,7 +50,7 @@ Several components must be set up to enable Azure Site Recovery:
 - **Credentials**: The credentials you use for Azure must have the **Virtual Machine Contributor** and **Site Recovery Contributor** roles to allow permission to modify both the virtual machine (VM) and the storage that Site Recovery is connected to.
 - **Configuration server**: An on-premises VMware server fulfills several roles during the failover and replication process. You obtain it from the Azure portal as an open virtual machine appliance (OVA) for easy deployment. The configuration server includes a:
   - **Process server**: This server acts as a gateway for the replication traffic. It caches, compresses, and encrypts the traffic before sending it over the WAN to Azure. The process server also installs the mobility service onto all the physical and virtual machines targeted for failover and replication.
-  - **Master target server**: This machine handles the replication process during a failback from Azure.
+  - **Main target server**: This machine handles the replication process during a failback from Azure.
 
 > [!IMPORTANT]
 > To fail back from Azure to an on-premises environment, VMware vCenter with a configuration server must be available even if you're only replicating physical machines to Azure. You can't fail back to physical servers.
