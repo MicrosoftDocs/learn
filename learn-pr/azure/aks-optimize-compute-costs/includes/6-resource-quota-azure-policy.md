@@ -1,4 +1,4 @@
-Azure Policy helps you to enforce standards and assess compliance at scale for your cloud environment. It's good practice for companies to implement business rules to define how employees are allowed to use company software, hardware, and other resources in the organization. Therefore, businesses use policies to enforce, review, and define access. A policy helps an organization meet governance and legal requirements, implement best practices, and establish organizational conventions.
+Azure Policy helps you enforce standards and assess compliance at scale for your cloud environment. It's good practice for companies to implement business rules to define how employees are allowed to use company software, hardware, and other resources in the organization. Therefore, businesses use policies to enforce, review, and define access. A policy helps an organization meet governance and legal requirements, implement best practices, and establish organizational conventions.
 
 Azure Kubernetes Service (AKS) allows you to orchestrate your cloud-native applications efficiently with policies. You realize that you need to enforce business rules to manage how the teams use AKS to ensure a cost-effective approach. You decide to use Azure Policy to apply this idea on your Azure-based cloud resources.
 
@@ -22,9 +22,9 @@ The *Open Policy Agent (OPA)* is an open-source, general-purpose policy engine t
 
 ## What is the OPA Gatekeeper?
 
-The *OPA Gatekeeper* is an open-source, validating, Kubernetes admission-controller webhook that enforces Custom Resource Definition (CRD)-based policies that follow the OPA syntax.
+The *OPA Gatekeeper* is an open-source, validating, Kubernetes admission controller webhook that enforces Custom Resource Definition (CRD)-based policies that follow the OPA syntax.
 
-The goal of the OPA Gatekeeper is to allow you to customize admission policies by using configuration instead of hard-coded policy rules for services. It also gives you a full view of your cluster to identify policy-violating resources.
+The OPA Gatekeeper's goal is to allow you to customize admission policies by using configuration instead of hard-coded policy rules for services. It also gives you a full view of your cluster to identify policy-violating resources.
 
 Use the OPA Gatekeeper to define organization-wide policies with rules:
 
@@ -80,7 +80,7 @@ There are a few steps to registering the Azure Policy Add-on for AKS feature. We
         --resource-group myResourceGroup
     ```
 
-    Activating the addon schedules workloads in two namespaces on your cluster. The first namespace is **kube-system**, which contains the `azure-policy` and `azure-policy-webhook`. The second namespace is **gatekeeper-system**, which contains the `gatekeeper-controller-manager`. These workloads are responsible for evaluating requests submitted to the AKS control plane. Based on your configured policies, your policy webhook can allow or deny requests.
+    Activating the add-on schedules workloads in two namespaces on your cluster. The first namespace is **kube-system**, which contains the `azure-policy` and `azure-policy-webhook`. The second namespace is **gatekeeper-system**, which contains the `gatekeeper-controller-manager`. These workloads are responsible for evaluating requests submitted to the AKS control plane. Based on your configured policies, your policy webhook can allow or deny requests.
 
 ## Assign a built-in policy definition
 
@@ -154,7 +154,7 @@ For example, for the resource-management policy, you can select **audit**, **den
 
 This table lists all the effects currently supported in policy definitions:
 
-| Effect | Description |
+| Effect | Description ||
 | --- | --- |
 | **Append** | Adds more fields to the requested resource |
 | **Audit** | Creates a warning event in the activity log |

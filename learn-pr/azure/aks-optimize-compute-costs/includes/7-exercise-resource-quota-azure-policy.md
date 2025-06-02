@@ -37,7 +37,7 @@ In this exercise, you'll enable Azure Policy for AKS on your cluster and add the
     az feature register --namespace Microsoft.ContainerService --name AKS-AzurePolicyAutoApprove
     ```
 
-1. Check that the registration was successful by querying the feature-list table. Use the `az feature list` command to run the query. The feature's registration can take several minutes to finish, so you have to check the result periodically.
+1. Check that the registration succeeded by querying the feature-list table. Use the `az feature list` command to run the query. The feature's registration can take several minutes to finish, so you have to check the result periodically.
 
     ```azurecli
     az feature list -o table --query "[?contains(name, 'Microsoft.ContainerService/AKS-AzurePolicyAutoApprove')].   {Name:name,State:properties.state}"
@@ -143,10 +143,10 @@ To configure the new Azure Policy, use the Policy service in the Azure portal.
     | Exclusions | Leave empty. |
     | **Basics** |
     | Policy definition | Select the ellipsis button. The **Available Definitions** pane appears. In the **Search** box, filter the selection by entering *CPU*. On the **Policy Definitions** tab, select the **Kubernetes cluster containers CPU and memory resource limits should not exceed the specified limits**, then select **Add**. |
+    | Version | Accept default. |
     | Assignment name | Accept default. |
     | Description | Leave empty. |
     | Policy enforcement | Make sure this option is set to **Enabled**. |
-    | Assigned by | Accept default. |
 
     Here's an example of the completed **Basics** tab:
 
@@ -161,7 +161,7 @@ To configure the new Azure Policy, use the Policy service in the Azure portal.
     | Max allowed CPU units | Set the value to **200m**. The policy matches this value to both the workload resource-request value and the workload limit value specified in the workload's manifest file. |
     | Max allowed memory bytes | Set the value to **256Mi**. The policy matches this value to both the workload resource-request value and the workload limit value specified in the workload's manifest file. |
 
-    Here's an example of the completed **Parameters** tab:
+    Leave all other values as default. Here's an example of the completed **Parameters** tab:
 
     :::image type="content" source="../media/7-complete-parameters-tab.png" alt-text="Screenshot that shows the information captured in the Parameters tab.":::
 
@@ -181,6 +181,8 @@ To configure the new Azure Policy, use the Policy service in the Azure portal.
 The final step is to test the new policy. Deploy your test workload with resource requests and limits that violate the new policy. If all goes correctly, the server returns an error stating denied by policy.
 
 1. Open Azure Cloud Shell and be sure to select the Bash version of Cloud Shell.
+
+1. At the top of the Cloud Shell window, select **Settings** > **Go to Classic version**.
 
 1. Create a manifest file for the Kubernetes deployment by using the integrated editor. Call the file `test-policy.yaml`:
 

@@ -2,7 +2,7 @@ Azure provides Azure Virtual Machine instances that offer scalability while redu
 
 Your company's drone-tracking solution is deployed on Azure Kubernetes Service (AKS) as many containerized applications and services. One of these services is a batch-processing service that schedules drone flight paths. With a sudden growth in your customer base, the batch-processing service gets inundated with requests and builds up a backlog of deliveries. This situation is causing delays and customer frustration.
 
-Automatically scaling the number of batch-processing service replicas provides for timely order processing. However, it also requires you to deploy more nodes to keep up with computing resource needs. Analyzing usage trends in Azure Monitor, you notice that these nodes are used only at specific times and not in a cost-effective way. The batch-processing service is stateless and doesn't save any client-session data. You realize that you can save money by:
+Automatically scaling the number of batch-processing service replicas provides for timely order processing. However, it also requires you to deploy more nodes to keep up with computing resource needs. Analyzing usage trends in Azure Monitor, you notice that these nodes are used only at specific times, and not in a cost-effective way. The batch-processing service is stateless and doesn't save any client-session data. You realize that you can save money by:
 
 - Using lower-cost node instances.
 - Automatically scaling the node count in the node pool that's configured for batch processing.
@@ -33,7 +33,7 @@ A spot virtual machine scale set is a virtual machine scale set that supports Az
 
 - **Deallocate**: The Deallocate policy functions exactly as described earlier.
 
-- **Delete**:  The Delete policy allows you to avoid the cost of disks and hitting quota limits. With the Delete eviction policy, evicted VMs are deleted together with their underlying disks. The scale set's autoscaling feature can now automatically try to compensate for VM eviction by creating new VMs. Although the creation of VMs isn't guaranteed, the evicted VMs don't count toward your vCPU quota or incur costs for underlying disks.  
+- **Delete**: The Delete policy allows you to avoid the cost of disks and hitting quota limits. With the Delete eviction policy, evicted VMs are deleted together with their underlying disks. The scale set's autoscaling feature can now automatically try to compensate for VM eviction by creating new VMs. Although the creation of VMs isn't guaranteed, the evicted VMs don't count toward your vCPU quota or incur costs for underlying disks.  
 
     A best practice is to use the autoscale feature only when you set the eviction policy to **Delete** on the scale set.
 
@@ -60,7 +60,7 @@ As the demand for nodes increases, the cluster autoscaler can scale the number o
 Before you decide to add a spot user node pool to your AKS cluster, consider the following limitations:
 
 - The underlying spot scale set is deployed only to a single fault domain and offers no high-availability guarantees.
-- The AKS cluster needs multiple node-pool support to be enabled.
+- The AKS cluster needs multiple-node-pool support to be enabled.
 - You can use spot node pools only as user node pools.
 - You can't upgrade spot node pools.
 - The creation of spot VMs isn't guaranteed. The creation of spot nodes depends on capacity and quota availability in the cluster's deployed Azure region.
@@ -78,7 +78,7 @@ You set several parameters for a new node pool to configure it as a spot node po
 
 ### Priority
 
-The `--priority` parameter is set to `Regular` by default for a new node pool. Set the value to `Spot` to indicate that the new pool you're creating is a spot node pool. This value can't be changed after creation.
+The `--priority` parameter is set to `Regular` by default for a new node pool. Set the value to `Spot` to indicate that the new pool you're creating is a spot node pool. You can't change this value after creation.
 
 ### Eviction policy
 
@@ -93,7 +93,7 @@ Spot node pools optimize costs by capping the maximum amount that you're willing
 You can set this value to any positive amount up to five decimal places, or set it to `-1`. Setting the `--spot-max-price` value to `-1` affects your node pool in the following ways:
 
 - Nodes aren't be evicted based on the node's price.
-- The cost for new nodes is based on the current price for spot nodes, or the price for a standard node, using whichever is lower.
+- The cost for new nodes is based on the current price for spot nodes or the price for a standard node; whichever is lower.
 
 For example, if you set the value to 0.98765, the maximum price for a node in USD is 0.98765 per hour. When the node's consumption exceeds this amount, it's evicted.
 
