@@ -92,7 +92,7 @@ Spot node pools optimize costs by capping the maximum amount that you're willing
 
 You can set this value to any positive amount up to five decimal places, or set it to `-1`. Setting the `--spot-max-price` value to `-1` affects your node pool in the following ways:
 
-- Nodes aren't be evicted based on the node's price.
+- Nodes aren't evicted based on the node's price.
 - The cost for new nodes is based on the current price for spot nodes or the price for a standard node; whichever is lower.
 
 For example, if you set the value to 0.98765, the maximum price for a node in USD is 0.98765 per hour. When the node's consumption exceeds this amount, it's evicted.
