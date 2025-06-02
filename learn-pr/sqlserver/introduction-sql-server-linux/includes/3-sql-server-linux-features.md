@@ -1,8 +1,8 @@
 To justify a SQL Server migration to budget holders, it helps to know what features of SQL Server can provide a competitive advantage for your systems.
 
-Suppose that, after researching what SQL Server on Linux is, you want to ensure that the current features available meet the Wide World Importers' requirements for existing and future data processing.
+After researching what SQL Server on Linux is, you want to ensure that the current available features meet the requirements of Wide World Importers for existing and future data processing.
 
-Here, you'll learn about the principal features of SQL Server on Linux.
+Here, you learn about the principal features of SQL Server on Linux.
 
 ## Performance
 
@@ -10,41 +10,70 @@ SQL Server on Linux supports the competing needs of fast transactional throughpu
 
 ### In-Memory Online Transaction Processing (OLTP)
 
-Combining memory-optimized tables and compiled stored procedures, Wide World Importers could see substantial performance gains on its transactional tables; for example, writing and reading session state for the e-commerce website.
+If they combined memory-optimized tables and compiled stored procedures, Wide World Importers could see substantial performance gains on its transactional tables; for example, writing and reading session state for the e-commerce website.
 
 ### Columnstore index
 
-SQL Server supports both row-data and compressed columnar data. Transactional tables can also have a columnstore index that's used instead of the row-store when writing analytical queries. The use of columnstore indexes would allow the current analytical suite to preserve transactional performance while also running real-time reporting queries over the operational data.
+SQL Server supports both row-data and compressed columnar data. Transactional tables can also use a columnstore index instead of the row-store index when writing analytical queries. The use of columnstore indexes would allow the current analytical suite to preserve transactional performance while also running real-time reporting queries over the operational data.
 
 ### Query Store
 
-Your DBA team completes a monthly performance tuning task to ensure the correct query plans are used. They monitor query performance and revert query plans where changes in execution plans have affected performance. The team also reports on the top 10 longest-running queries to the development lead and checks on any resource locks. The Query Store supports all these tasks, and you can enable it with Transact-SQL:
+Your DBA team completes a monthly performance tuning task to ensure the correct query plans are used. They monitor query performance and revert query plans where changes in execution plans were affecting performance. The team also reports on the top 10 longest-running queries to the development lead and checks on any resource locks. The Query Store supports all these tasks, and you can enable it with Transact-SQL:
 
 ```sql
-ALTER DATABASE <database name>
+ALTER DATABASE <database_name>
 SET QUERY_STORE (OPERATION_MODE = READ_WRITE);
 ```
 
-### Automatic Tuning and Intelligent Query Processing
+### Automatic tuning and intelligent query processing
 
 You can enable automatic plan choice correction after the Query Store is enabled. With Automatic Tuning enabled, SQL Server monitors query performance. If a new query plan does worse than the previous version, it can replace the new plan with the better performing previous version. The option is available at the database level with an `ALTER` statement:
 
 ```sql
-ALTER DATABASE <database name>
+ALTER DATABASE <database_name>
 SET AUTOMATIC_TUNING ( FORCE_LAST_GOOD_PLAN = ON );
 ```
 
-Intelligent Query Processing (IQP) is a set of features, many of which are new in SQL Server 2019, that automatically improve and optimize the performance of your workload. The IQP features include:
+Intelligent Query Processing (IQP) is a set of features, many of which are new in SQL Server 2022, that automatically improve and optimize the performance of your workload. The IQP features include:
 
-- **Adaptive Joins**: SQL Server dynamically selects a join type during runtime based on the actual number of input rows.
-- **Approximate Count Distinct**: SQL Server provides an approximate count of distinct results for big-data scenarios to run such queries with high performance and low memory load.
-- **Memory Grant Feedback**: If a query has operations that spill to disk, SQL Server can add more memory for subsequent operations. Similarly, if a query wastes more than half of the memory allocated to it, SQL Server can reduce the memory assigned to it.
-- **Table Variable Deferred Compilation**: SQL Server uses the actual cardinality of a table variable on its first compilation instead of a fixed guess.
+- **Adaptive Joins (Batch Mode)**: Adaptive joins dynamically select a join type during runtime based on actual input rows.
+
+- **Interleaved Execution**: Uses the actual cardinality of the multi-statement table valued function encountered on first compilation instead of a fixed guess.
+
+- **Memory grant feedback (Batch Mode)**: If a batch mode query has operations that spill to disk, add more memory for consecutive executions. If a query wastes > 50% of the memory allocated to it, reduce the memory grant size for consecutive executions.
+
+- **Approximate Count Distinct**: Provide approximate `COUNT DISTINCT` for big data scenarios with the benefit of high performance and a low memory footprint.
+
+- **Batch Mode on Rowstore**: Provide batch mode for CPU-bound relational DW workloads without requiring columnstore indexes.
+
+- **Memory grant feedback (Row Mode)**: If a row mode query has operations that spill to disk, add more memory for consecutive executions. If a query wastes > 50% of the memory allocated to it, reduce the memory grant size for consecutive executions.
+
+- **Scalar UDF Inlining**: Scalar UDFs are transformed into equivalent relational expressions that are "inlined" into the calling query, often resulting in significant performance gains.
+
+- **Table Variable Deferred Compilation**: Uses the actual cardinality of the table variable encountered on first compilation instead of a fixed guess.
+
+- **Approximate Percentile**: Quickly compute percentiles for a large dataset with acceptable rank-based error bounds to help make rapid decisions by using approximate percentile aggregate functions.
+
+- **Cardinality estimation (CE) feedback**: Automatically adjusts cardinality estimates for repeating queries to optimize workloads where inefficient CE assumptions cause poor query performance. CE feedback identifies and uses a model assumption that better fits a given query and data distribution to improve query execution plan quality.
+
+- **Degrees of Parallelism (DOP) feedback**: Automatically adjusts degree of parallelism for repeating queries to optimize for workloads where inefficient parallelism can cause performance issues. Requires Query Store to be enabled.
+
+- **Parameter Sensitivity Plan optimization**: Parameter Sensitive Plan optimization addresses the scenario where a single cached plan for a parameterized query isn't optimal for all possible incoming parameter values, for example nonuniform data distributions.
+
+- **Memory grant feedback (Percentile)**: Addresses existing limitations of memory grant feedback in a nonintrusive way by incorporating past query execution to refine feedback.
+
+- **Memory Grant feedback persistence**: Provides new functionality to persist memory grant feedback. Requires Query Store to be enabled for the database and in READ_WRITE mode.
+
+- **CE feedback persistence**: Requires Query Store to be enabled for the database and in `READ_WRITE` mode.
+
+- **DOP feedback persistence**: Requires Query Store to be enabled for the database and in `READ_WRITE` mode.
+
+- **Optimized plan forcing**: Reduces compilation overhead for repeating forced queries. For more information, see Optimized plan forcing with Query Store.
 
 IQP doesn't require you to rewrite any code or to change your database schema to take advantage of the best performance. All you have to do is upgrade a database to compatibility level 150 or later:
 
 ```sql
-ALTER DATABASE <database name> SET COMPATIBILITY_LEVEL = 150;
+ALTER DATABASE <database_name> SET COMPATIBILITY_LEVEL = 160;
 ```
 
 ## Security
@@ -58,7 +87,7 @@ SQL Server on Linux supports advanced security features such as Always Encrypted
   - You can query the encrypted data without first decrypting it.
   - The data is protected at rest, when it's moving into server memory, and when it's moving from the server to the trusted client app.
   - Encryption and decryption take place in the client driver, so that the process is transparent to client applications.
-  - Only trusted applications and owners of the data can access it. Application developers and database administrators don’t have access to the Column Encryption Key (CEK).
+  - Only trusted applications and owners of the data can access it. Application developers and database administrators don't have access to the Column Encryption Key (CEK).
 
 - **Auditing** tracks events that occur on the database engine and who executed those events. The audited events can be stored in event logs or audit files, and you can use them to investigate problems such as attacks and data breaches.
 
@@ -68,7 +97,7 @@ SQL Server on Linux supports advanced security features such as Always Encrypted
 
 - **Data Discovery and Classification** identifies, labels, and reports on the sensitive data in your databases, such as personal data. It's a tool within SQL Server Management Studio (SSMS) that makes it easier to comply with data privacy legislation and harden the databases that contain the most valuable data. Data Discovery and Classification is a service that is part of the Advanced Data Security (ADS) package.
 
-- **Vulnerability Assessment** identifies vulnerabilities in your databases. Once you're aware of the weaknesses that your server configuration and database designs may cause, you can mitigate them and prevent common attacks. Vulnerability Assessment is another ADS service.
+- **Vulnerability Assessment** identifies vulnerabilities in your databases. Once you're aware of the weaknesses that your server configuration and database designs might cause, you can mitigate them and prevent common attacks. Vulnerability Assessment is another ADS service.
 
 ## SQL Server Agent
 
@@ -87,7 +116,7 @@ sudo systemctl restart mssql-server
 
 ## High availability
 
-SQL Server has many ways to specify the level of fault tolerance that's acceptable. SQL Server on Linux supports Always On availability groups and Always On failover cluster instances. Both of these options require the **mssql-server-ha** package installed on each server. Linux supports clustering via **Pacemaker**, which is an equivalent to Windows Server Failover Clustering (WSCF), albeit not as tightly integrated into the host operating system.
+SQL Server has many ways to specify the level of fault tolerance that's acceptable. SQL Server on Linux supports Always On availability groups and Always On failover cluster instances. Both of these options require the `mssql-server-ha` package installed on each server. Linux supports clustering via **Pacemaker**, which is an equivalent to Windows Server Failover Clustering (WSCF), albeit not as tightly integrated into the host operating system.
 
 If there's more flexibility in what's acceptable for downtime, Log Shipping via SQL Agent can provide warm standbys, which you use to recover from server loss.
 
@@ -97,7 +126,7 @@ Another solution for SQL Server on Linux is its ability to run in containers orc
 
 ### PolyBase
 
-Many organizations have data in different systems. That might be because different teams had different requirements when they selected their system, because you merged with another company, or for some other historical reason. It has traditionally been difficult to integrate data across these system boundaries to answer questions for users.
+Many organizations have data in different systems. That might be because different teams had different requirements when they selected their system, because you merged with another company, or for some other historical reason. Traditionally, it's been difficult to integrate data across these system boundaries to answer questions for users.
 
 Suppose you have data in SQL Server that records sales for your product catalog, but the data that records how much it costs to make your products is in an SAP HANA database. You want to create a report that analyzes profit margins. You'll need information from both databases. In the past, you could:
 
@@ -109,7 +138,7 @@ Both these approaches are complex and can require significant development time t
 With PolyBase, you can create an external table in SQL Server. An external table is a connection to an external system and a dataset hosted there. Once created, clients can submit queries to the external table in exactly the same way they would to internal tables. `JOIN` queries can integrate data from external tables with internal tables. As you can see, PolyBase can remove the boundaries that different systems impose on your data and make it easier to do the analyses you need on your business data, regardless of its location.
 
 > [!NOTE]
-> On Linux operating systems, PolyBase is supported in SQL Server 2019 or later. To use it, you must install the **mssql-server-polybase** package, in addition to SQL Server 2019.
+> On Linux operating systems, PolyBase is supported in SQL Server 2019 and later versions. To use it, you must install the `mssql-server-polybase` package, in addition to SQL Server 2022.
 
 ### Machine Learning Services
 
@@ -118,7 +147,7 @@ In machine learning, large datasets are used to model the behavior of some compl
 SQL Server Machine Learning Services allows you to run these R and Python scripts against the data in your SQL Server databases. You can add the popular machine learning and data science frameworks, including PyTorch, TensorFlow, SciKit-Learn, and others.
 
 > [!NOTE]
-> > On Linux operating systems, SQL Server Machine Learning is supported in SQL Server 2019 or later. To use it, you must add extra packages. For example, if you want to use Python for all machine learning code, install the **mssql-mlservices-mlm-py-9.4.7** package. The equivalent package for R is **install mssql-mlservices-mlm-r-9.4.7**.
+> > On Linux operating systems, SQL Server Machine Learning is supported in SQL Server 2019 and later versions. To use it, you must add extra packages. For example, if you want to use Python for all machine learning code, install the `mssql-mlservices-mlm-py-9.4.7` package. The equivalent for R is to install the package `mssql-mlservices-mlm-r-9.4.7`.
 
 ### Graph support
 
@@ -126,7 +155,7 @@ SQL Server has native support for storing and querying graph-based data. SQL Ser
 
 ### Full-text search
 
-Full-text searches allow users to run queries against text data that respect linguist rules. For example, when you search for the word "run," a full-text search returns results that include forms of the word "run," such as "ran" and "running."
+Full-text searches allow users to run queries against text data that respect linguist rules. For example, when you search for the word `run`, a full-text search returns results that include forms of the word `run`, such as `ran` and `running`.
 
 This feature isn't installed by default. On Linux, you enable it by installing the `mssql-server-fts` package.
 

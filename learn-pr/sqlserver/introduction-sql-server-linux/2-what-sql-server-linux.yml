@@ -3,7 +3,7 @@ uid: learn-sqlserver.introduction-sql-server-linux.2-what-sql-server-linux
 title: What is SQL Server on Linux?
 metadata:
   title: What is SQL Server on Linux?
-  description: In this unit, you will learn why SQL Server has been released for running on Linux and why you might choose this platform.
+  description: In this unit, you learn why SQL Server was released for running on Linux and why you might choose this platform.
   ms.date: 04/25/2023
   author: rwestmsft
   ms.author: randolphwest
@@ -23,18 +23,18 @@ quiz:
       explanation: "This solution is possible, but requires significant database administrator time to create the ETL packages and populate the data warehouse."
     - content: "Install PolyBase on the SQL Server and add SAP HANA as an external data source. Create external data tables that connect to the tables in SAP HANA. Write the report against the SQL Server."
       isCorrect: true
-      explanation: "By using PolyBase data virtualization, you can present SAP HANA data in SQL Server as external tables. You can write reports that query both catalog data and sales data from SQL Server, even though the catalog is actually stored in SAP HANA. There's no need to develop custom code or ETL packages."
+      explanation: "By using PolyBase data virtualization, you can present SAP HANA data in SQL Server as external tables. You can write reports that query both catalog data and sales data from SQL Server, even though the catalog is stored in SAP HANA. There's no need to develop custom code or ETL packages."
     - content: "Write separate queries to obtain the data you need from SQL Server and SAP HANA, then write custom code that integrates the two datasets into a unified report."
       isCorrect: false
       explanation: "This solution is possible, but requires significant database administrator and developer time to create the custom integration code."
-  - content: "You have a mobile app written in Python that your sales team uses to record orders and view sales performance data. Recently, you migrated the database from a Windows server to an Ubuntu Linux server. What changes does this require in your app code?"
+  - content: "You have a mobile app written in Python that your sales team uses to record orders and view sales performance data. Recently, you migrated the database from a Windows server to an Ubuntu Linux server. What changes does this migration require in your app code?"
     choices:
     - content: "You must rewrite the app in a .NET Framework language, such as VB.NET or C#."
       isCorrect: false
-      explanation: "It's not necessary to use a .NET language in apps that call SQL Server. Any app code that queries SQL Server databases hosted on Windows can query SQL Server databases hosted on Linux, because the database engine is the same."
-    - content: "You must rewrite the app to ensure that it does not call any stored procedures."
+      explanation: "It's not necessary to use a .NET language in apps that call SQL Server. Any app code that queries SQL Server databases hosted on Windows can query SQL Server databases hosted on Linux, because the Database Engine is the same."
+    - content: "You must rewrite the app to ensure that it doesn't call any stored procedures."
       isCorrect: false
-      explanation: "You can call stored procedures in your app, regardless of whether it is hosted on Windows or Linux, because the database engine is the same."
+      explanation: "You can call stored procedures in your app, regardless of whether the app is hosted on Windows or Linux, because the Database Engine is the same."
     - content: "You don't need to make any changes to the app code."
       isCorrect: true
-      explanation: "The SQL Platform Abstraction Layer means that the database engine is exactly the same, whether SQL Server is running on Windows or on Linux. That means that developers don't have to make any code changes when you migrate a database server to another operating system, but only modify the connection string."
+      explanation: "The SQL platform abstraction layer (SQLPAL) means that the Database Engine is exactly the same, whether SQL Server is running on Windows or on Linux. That means that developers don't have to make any code changes when they migrate a database server to another operating system. They only need to modify the connection string."
