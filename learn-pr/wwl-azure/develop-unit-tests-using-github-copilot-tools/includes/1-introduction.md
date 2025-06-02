@@ -6,12 +6,19 @@ Imagine you're a software developer working on a large codebase. Your team is ta
 
 The topics covered in this module include:
 
-- Creating unit tests in Visual Studio Code using GitHub Copilot and GitHub Copilot Chat.
-- Creating specific unit tests for edge cases and boundary conditions using GitHub Copilot Chat.
-- Creating unit test projects and managing unit tests in Visual Studio Code.
-- Completing a "create unit tests" challenge and reviewing a possible solution.
+- Using GitHub Copilot and Visual Studio Code for unit testing.
+- Generate unit tests with GitHub Copilot's Generate Tests smart action.
+- Creating unit tests with GitHub Copilot Inline Chat.
+- Creating unit tests with GitHub Copilot Chat Modes.
+- Developing unit tests with GitHub Copilot in C#.
 
-By the end of this module, you're able to use GitHub Copilot and Visual Studio Code tools to efficiently create, manage, and run unit tests. Using GitHub Copilot improves the reliability of your codebase and saves valuable development time.
+After completing this module, you’ll be able to:
+
+- Explain how GitHub Copilot Chat supports various testing tasks, including unit, integration, and end-to-end tests.
+- Use the Generate Tests smart action to create unit tests for specific code blocks or entire files.
+- Leverage the Inline Chat feature to generate and refine unit tests directly within the code editor.
+- Utilize the Chat view modes—Ask, Edit, and Agent—to create, update, and automate unit test workflows.
+- Apply GitHub Copilot's capabilities to streamline the development of unit tests for a C# application in Visual Studio Code.
 
 > [!IMPORTANT]
 > To complete this GitHub Copilot training, you must have an active subscription for GitHub Copilot in your personal GitHub account (includes the GitHub Copilot Free plan), or you must be assigned to a subscription managed by an organization or enterprise. Module activities may include GitHub Copilot suggestions that match public code. If you're a member of an organization on GitHub Enterprise Cloud who has been assigned a GitHub Copilot subscription through your organization, the setting for suggestions matching public code may be inherited from your organization or enterprise. If your account blocks suggestions that match public code, module activities may not work as expected.

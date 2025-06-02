@@ -4,11 +4,11 @@ Imagine you're a software developer at a tech startup. You're tasked with develo
 
 The topics covered in this module include:
 
-- Exploring AI Tools for Developers from GitHub, OpenAI, and Microsoft
-- Understanding GitHub Copilot: Plans, Tools, Features, and Limitations
-- Setting up, configuring, and managing GitHub Copilot for Visual Studio Code
-- Understanding GitHub Copilot's code completion features
-- Understanding GitHub Copilot's AI-assistance features
+- Exploring AI tools for developers from GitHub, OpenAI, and Microsoft.
+- Examining GitHub Copilot plans, tools, features, and limitations.
+- Setting up, configuring, and managing GitHub Copilot for Visual Studio Code.
+- Examining GitHub Copilot's code completion features.
+- Examining GitHub Copilot's AI-assistance features.
 
 By the end of this module, you're able to describe how GitHub Copilot enhances your productivity, reduces errors, and makes your software development process more efficient.
 
