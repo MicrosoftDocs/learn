@@ -154,7 +154,7 @@ For example, for the resource-management policy, you can select **audit**, **den
 
 This table lists all the effects currently supported in policy definitions:
 
-| Effect | Description ||
+| Effect | Description |
 | --- | --- |
 | **Append** | Adds more fields to the requested resource |
 | **Audit** | Creates a warning event in the activity log |
