@@ -1,8 +1,8 @@
-It's time to put your newly acquired debugging knowledge into practice. It's your first day on the job, and it's time to put your .NET debugging skills to work by fixing a bug in the company's flagship product, a Fibonacci calculator.
+It's time to put your newly acquired debugging knowledge into practice. It's your first day on the job, and you want to put your .NET debugging skills to work by fixing a bug in the company's flagship product, a Fibonacci calculator.
 
 ## Create a sample .NET project for debugging
 
-To set up Visual Studio for .NET debugging, we'll first need a .NET project. Visual Studio provides plenty of starter templates that make creating a new project easy.
+To set up Visual Studio for .NET debugging, we first need a .NET project. Visual Studio provides plenty of starter templates that make creating a new project easy.
 
 1. In Visual Studio, select **File** > **New** > **Project**.
 
@@ -10,13 +10,13 @@ To set up Visual Studio for .NET debugging, we'll first need a .NET project. Vis
 
 1. Name the project *DotNetDebugging*, and choose the location where you'd like to save. Leave the other values at their defaults, then select **Next**.
 
-1. Click **Create** on the final screen.
+1. Select **Create** on the final screen.
 
-Visual Studio will create the Console project for us using the template we selected. Once the project loads, open **Program.cs** by selecting it.
+Visual Studio creates the Console project for us using the template we selected. Once the project loads, open **Program.cs** by selecting it.
 
 ## Add the Fibonacci program logic
 
-Our current project writes a "Hello World" message to the console, which doesn't give us much to debug. Instead, you'll use a short .NET program to compute the *N*<sup>th</sup> number of the Fibonacci sequence.
+Our current project writes a "Hello World" message to the console, which doesn't give us much to debug. Instead, let's use a short .NET program to compute the *N*<sup>th</sup> number of the Fibonacci sequence.
 
 The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 1, with every other following number being the sum of the two previous ones. The sequence continues as shown here:
 
@@ -24,7 +24,7 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
 0, 1, 1, 2, 3, 5, 8, 13, 21...
 ```
 
-The sample code below contains a bug, so let's use Visual Studio's debugging tools to diagnose and solve the issue.
+The following sample code contains a bug, so let's use Visual Studio's debugging tools to diagnose and solve the issue.
 
 1. Replace the contents of **Program.cs** with the following code:
 
@@ -34,6 +34,7 @@ Console.WriteLine(result);
 
 static int Fibonacci(int n)
 {
+    Console.WriteLine("The output is: ");
     int n1 = 0;
     int n2 = 1;
     int sum;
@@ -50,13 +51,13 @@ static int Fibonacci(int n)
 ```
 
 > [!NOTE]
-> This code contains an error, which we'll debug later in this module. We don't recommend that you use it in any mission-critical Fibonacci applications until we get that bug fixed.
+> This code contains an error that we debug later in this module. We don't recommend that you use it in any mission-critical Fibonacci applications until we get that bug fixed.
 
-2. Save the file with **Ctrl+S** for Windows and Linux. Select **Cmd+S** for Mac.
+1. Save the file with **Ctrl+S** for Windows and Linux. Select **Cmd+S** for Mac.
 
-1. Let's get a look at how the updated code works before we debug it. Run the program by pressing the green start button at the top of Visual Studio.
+1. Let's get a look at how the updated code works before we debug it. Run the program by pressing the green start button in the Visual Studio command bar.
 
-1. At the end of the debug console output, you'll see the program writes 3 to the console and then exits with code 0. Usually a program exit code of 0 indicates that the program ran and exited without crashing. However, there's a difference between crashing and returning the correct value. 
+1. At the end of the debug console output, you can see that the program writes 3 to the console and then exits with code 0. Usually a program exit code of 0 indicates that the program ran and exited without crashing. However, there's a difference between crashing and returning the correct value.
 
 :::image type="content" source="../media/visual-studio-output.png" alt-text="Terminal window with modified program output.":::
 
@@ -85,22 +86,22 @@ Now, take some time to inspect the different variables' values by using the **Lo
 - What is the value shown for the `n` parameter?
 - At the beginning of the function's execution, what are the values for the local variables `n1`, `n2`, and `sum`?
 
-1. Next, we'll advance into the `for` loop by using the **Step Over** debugger control.
+1. Next, we advance into the `for` loop by using the **Step Over** debugger control.
 
    :::image source="../media/visual-studio-stepover.png" alt-text="Screenshot of the Step over button.":::
 
-1. Continue advancing until you hit the first line inside of the `for` loop, on the line that reads:
+1. Continue advancing until you reach the first line inside of the `for` loop. The line that reads:
 
     ```csharp
     sum = n1 + n2;
     ```
 
 > [!NOTE]
-> You might have noticed that to move through the `for(...) {}` line requires multiple steps in commands. This situation occurs because there are multiple *statements* on this line. When you step, you move on to the next statement in your code. Usually, there's one statement per line. If that's not the case, you need multiple steps to move on to the next line.
+> You might notice that to move through the `for(...) {}` line requires multiple steps in commands. This situation occurs because there are multiple *statements* on this line. When you step, you move on to the next statement in your code. Usually, there's one statement per line. If that's not the case, you need multiple steps to move on to the next line.
 
 ## Think about the code
 
-An important part of debugging is to stop and take some informed guesses about what you think portions of the code (both functions and blocks, such as loops) are trying to do. It's okay if you're not sure, that's part of the debugging process. But being actively engaged in the debugging process will help you locate bugs a lot more quickly.
+An important part of debugging is to stop and take some informed guesses about what you think portions of the code (both functions and blocks, such as loops) are trying to do. It's okay if you're not sure, that's part of the debugging process. But being actively engaged in the debugging process helps you locate bugs a lot more quickly.
 
 Before we dig in further, let's remember that the Fibonacci sequence is a series of numbers that starts with the numbers 0 and 1, with every other following number being the sum of the two previous ones.
 
@@ -118,16 +119,16 @@ Fibonacci(5) = 5 (2 + 3)
 Understanding that definition and looking at this `for` loop, we can deduce that:
 
   1. The loop counts from 2 to `n` (the Fibonacci sequence number we're looking for).
-  1. If `n` is less than 2, the loop will never run. The `return` statement at the end of the function will return 0 if `n` is 0, and 1 if `n` is 1 or 2. These are the zero, first, and second values in the Fibonacci series, by definition.
-  1. The more interesting case is when `n` is greater than 2. In those cases, the current value is defined as the sum of the previous two values. So for this loop, `n1` and `n2` are the previous two values, and `sum` is the value for the current iteration. Because of that, each time we figure out the sum of the previous two values and set it to `sum`, we update our `n1` and `n2` values.
+  1. If `n` is less than 2, the loop never runs. The `return` statement at the end of the function returns 0 if `n` is 0, and 1 if `n` is 1 or 2. These values are the zero, first, and second values in the Fibonacci series, by definition.
+  1. The more interesting case is when `n` is greater than 2. In those cases, the current value is defined as the sum of the previous two values. So for this loop, `n1` and `n2` are the previous two values, and `sum` is the value for the current iteration. Because of this logic, each time we figure out the sum of the previous two values and set it to `sum`, we update our `n1` and `n2` values.
 
 Okay, we don't need to overthink it past that. We can lean on our debugger a bit. But it's worth thinking about the code to see if it does what we expect and be more informed when it doesn't.
   
 ## Locate the bug with breakpoints
 
-Stepping through your code can be helpful but tedious. Especially when you're working with loops or other code that's called repeatedly. Rather than stepping through the loop over and over, we can set a new breakpoint on the first line of the loop.
+Stepping through your code can be helpful but tedious. Especially when you're working with loops or other code which is called repeatedly. Rather than stepping through the loop over and over, we can set a new breakpoint on the first line of the loop.
 
-It's important to be strategic about where we put our breakpoints. We're especially interested in the value of `sum`, since it represents the current maximum Fibonacci value. Because of that, let's put our breakpoint on the line *after* `sum` is set.
+It's important to be strategic about where we put our breakpoints. We're especially interested in the value of `sum`, since it represents the current maximum Fibonacci value. So, let's put our breakpoint on the line *after* `sum` is set.
 
 1. Add a second breakpoint on line 14.
 
@@ -136,7 +137,7 @@ It's important to be strategic about where we put our breakpoints. We're especia
    > [!NOTE]
    > If you notice that you keep running your code and then stepping a line or two, you can easily update your breakpoints to more efficient lines.
 
-1. Now that we have a good breakpoint set in the loop, use the **Continue** debugger control to advance until the breakpoint is hit. Looking at our local variables, we see the following lines:
+1. Now that we have a good breakpoint set in the loop, select **Continue** in the debugger controls to advance until the breakpoint is hit. Looking at our local variables, we see the following lines:
 
     ```text
     n [int]: 5
@@ -151,7 +152,7 @@ It's important to be strategic about where we put our breakpoints. We're especia
 1. Select **Continue** to continue program flow until the next breakpoint is hit, which will be on the next pass through the loop.
 
     > [!NOTE]
-    > Don't be too worried about skipping over the bug when you use **Continue**. You should expect that you'll often debug through the code several times to find the issue. It's often faster to run through it a few times as opposed to being too cautious when you step through.
+    > Don't be too worried about skipping over the bug when you use **Continue**. You should expect that you might debug through the code several times to find the issue. It's often faster to run through it a few times as opposed to being too cautious when you step through.
 
     This time, we see the following values:
 
@@ -179,9 +180,9 @@ It's important to be strategic about where we put our breakpoints. We're especia
 
 1. At this point, you might start wondering if the code was correct all along and you imagined the bug! Let's keep with it for the last time through the loop. Select **Continue** one more time.
 
-    The program finished running and printed out 3! That is incorrect.
+    The program finished running and the output is 3! Our result is incorrect.
 
-    We now know that the code runs through the loop correctly until `i` equals 4, but then it exits out before computing the final value. We have narrowed down where the bug is.
+    We now know that the code runs through the loop correctly until `i` equals 4, but then it exits out before computing the final value. We narrowed down where the bug is.
 
 1. Let's set one more breakpoint on line 18, which reads:
 
@@ -189,13 +190,13 @@ It's important to be strategic about where we put our breakpoints. We're especia
     return n == 0 ? n1 : n2;
     ```
 
-    This breakpoint will let us inspect the program state before the function exits. We've already learned all we can expect to from our previous breakpoints on lines 1 and 13, so we can clear them.
+    This breakpoint lets us inspect the program state before the function exits. We already learned all we can expect to from our previous breakpoints on lines 1 and 13, so we can clear them.
 
-1. Remove our previous breakpoints on lines 1 and 13. Click the breakpoints in the margin next to the line numbers, or clear the breakpoint check boxes for lines 1 and 13 in the breakpoints pane in the lower left.
+1. Remove our previous breakpoints on lines 1 and 13. Select the breakpoints in the margin next to the line numbers, or clear the breakpoint check boxes for lines 1 and 13 in the breakpoints pane in the lower left.
 
     :::image source="../media/visual-studio-breakpoints-clear.png" alt-text="Screenshot showing the breakpoints listed in the breakpoints pane.":::
 
-    Now that we better understand what's going on and have set a breakpoint designed to catch our program in the act of misbehaving, we should be able to catch this bug!
+    Now that we better understand what's going on and set a breakpoint designed to catch our program in the act of misbehaving. Now we should be able to catch this bug!
 
 1. Start the debugger one last time.
 
@@ -210,13 +211,13 @@ It's important to be strategic about where we put our breakpoints. We're especia
 
     Based on this information, and our previous debug run, we can see that the loop exited when `i` was 4, not 5.
 
-    Let's look at the first line of the `for` loop a little closer.
+    Let's look at our `for` loop statement a little closer.
 
     ```csharp
     for (int i = 2; i < n; i++)
     ```
 
-    This will exit as soon as the top of the for loop sees `i` equals as `n`. That means that the loop code won't run for the case where `i` equals `n`. It seems like what we wanted was to run until `i <= n`, instead:
+    This logic causes the program to exit as soon as the top of the for loop sees `i` equal to `n`. That means that the loop code doesn't run for the case where `i` equals `n`. It seems like what we wanted was to run until `i <= n`, instead:
 
     ```csharp
     for (int i = 2; i <= n; i++)
@@ -230,6 +231,7 @@ It's important to be strategic about where we put our breakpoints. We're especia
 
     static int Fibonacci(int n)
     {
+        Console.WriteLine("The output is: ");
         int n1 = 0;
         int n2 = 1;
         int sum;
@@ -249,7 +251,7 @@ It's important to be strategic about where we put our breakpoints. We're especia
 
 1. Make the preceding change to line 11, and leave your breakpoint on line 18.
 
-1. Restart the debugger. This time, when we hit the breakpoint on line 18, we'll see the following values:
+1. Restart the debugger. This time, when we hit the breakpoint on line 18, we see the following values:
 
     ```text
     n [int]: 5
@@ -258,7 +260,7 @@ It's important to be strategic about where we put our breakpoints. We're especia
     sum [int]: 5
     ```
 
-    Hey! It looks like we got it! Great job, you've saved the day for *Fibonacci, Inc.*!
+    Hey! It looks like we got it! Great job, you saved the day for *Fibonacci, Inc.*!
 
 1. Select **Continue** just to make sure the program returns the correct value.
 
@@ -269,6 +271,6 @@ It's important to be strategic about where we put our breakpoints. We're especia
 
     And that returns the correct output.
 
-You did it! You've debugged some code you didn't write by using the .NET debugger in Visual Studio.
+You did it! You debugged some code you didn't write by using the .NET debugger in Visual Studio.
 
-In the next unit, you'll learn how to make the code you write easier to debug by using the logging and tracing features that are built into .NET.
+In the next unit, you learn how to make the code you write easier to debug by using the logging and tracing features that are built into .NET.

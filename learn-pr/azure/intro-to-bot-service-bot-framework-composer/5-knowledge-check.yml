@@ -3,9 +3,9 @@ uid: learn.azure.intro-to-bot-service-bot-framework-composer.5-knowledge-check
 title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Module assessment
+  title: Module Assessment
   description: Knowledge check
-  ms.date: 04/24/2024
+  ms.date: 04/15/2025
   author: jasonkellingtonwaypoint
   ms.author: robmcm
   ms.topic: unit
@@ -47,4 +47,4 @@ quiz:
     - content: "Cards"
       isCorrect: false
       explanation: "Incorrect. Cards provide rich text presentation including text, images, and video."
-
+

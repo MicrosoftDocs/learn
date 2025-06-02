@@ -4,13 +4,13 @@ title: Understand custom named entity recognition
 metadata:
   title: Understand custom named entity recognition
   description: Understand custom named entity recognition
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 2/21/2024
+  ms.date: 05/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/2-understand-custom-named.md)]
-
+

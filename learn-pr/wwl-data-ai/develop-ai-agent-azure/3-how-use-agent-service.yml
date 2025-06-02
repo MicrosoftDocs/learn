@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-ai-agent-azure.how-use-agent-service
-title: How to use Azure AI Agent Service
+title: How to use Azure AI Foundry Agent Service
 metadata:
-  title: How to use Azure AI Agent Service
-  description: This unit explores how to use Azure AI Agent Service. 
+  title: How to use Azure AI Foundry Agent Service
+  description: This unit explores how to use Azure AI Foundry Agent Service. 
   author: ivorb
   ms.author: berryivor
-  ms.date: 04/03/2025
+  ms.date: 05/23/2025
   ms.topic: unit
 durationInMinutes: 7
 content: |

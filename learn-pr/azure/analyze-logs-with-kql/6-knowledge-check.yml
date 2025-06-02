@@ -6,8 +6,8 @@ metadata:
   title: Module assessment
   description: "Knowledge check for the information presented in this module."
   ms.date: 02/11/2024
-  author: guywi-ms
-  ms.author: guywild
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 durationInMinutes: 2
 ###########################################################################
@@ -60,4 +60,4 @@ quiz:
     - content: "Add a column to the query results and populate the missing data manually."
       isCorrect: false
       explanation: "You cannot add data manually from the Log Analytics user interface."
-
+

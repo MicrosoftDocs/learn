@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-security-capabilities-of-azure-sentinel.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["67F3C680_2","67F3C680_22","67F3C680_30","67F3C680_34","67F3C680_59","67F3C680_75","67F3C680_79","67F3C680_83","67F3C680_100","67F3C680_112","67F3C680_124","67F3C680_136","67F3C680_140"]
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 08/06/2024

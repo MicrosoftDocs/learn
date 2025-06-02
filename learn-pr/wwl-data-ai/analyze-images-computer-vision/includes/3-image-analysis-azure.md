@@ -20,9 +20,7 @@ Azure AI Vision supports multiple image analysis capabilities, including:
 - Detection of thousands of common objects in images.
 - Tagging visual features in images
 
-These tasks, and more, can be performed in [**Azure AI Vision Studio**](https://portal.vision.cognitive.azure.com/gallery/featured?azure-portal=true).
-
-![Screenshot of Vision Studio.](../media/vision-studio.png)
+You can access and test Azure AI Vision capabilities in [**Azure AI Foundry**](https://ai.azure.com?azure-portal=true), a unified platform for enterprise AI operations, model builders, and application development. 
 
 ### Optical character recognition
 

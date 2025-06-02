@@ -6,7 +6,7 @@ Your company wanted to learn how to migrate its existing Spring Boot Java web ap
 
 1. Create a MySQL database, connect your Spring Boot web application, and test it locally.
 
-1. Verify that your application works successfully. 
+1. Verify that your application works successfully.
 
 1. Add Maven Plugin for Azure App Service to your project, and then configure it interactively.
 
@@ -35,10 +35,8 @@ This command might take a minute to run.
 
 For more information about Spring Data Java Database Connectivity (JDBC), see Spring's [reference documentation](https://spring.io/learn).
 
-For more information about Application Insights for monitoring, see [Azure Application Insights](/azure/developer/java/spring-framework/configure-spring-boot-java-applicationinsights/?azure-portal=true&WT.mc_id=java-10785-ropreddy).
-
 For more information about using Azure with Java, see [Azure for Java developers](/azure/developer/java/?WT.mc_id=java-10785-ropreddy&azure-portal=true) and [Working with Azure DevOps and Java](/azure/devops/pipelines/ecosystems/java?WT.mc_id=java-10785-ropreddy&azure-portal=true).
 
 For more information about comparing java options on Azure, see [Compare Java application hosting options on Azure](/azure/architecture/guide/technology-choices/service-for-java-comparison).
 
-For more information about creating MySQL servers, see [Create an Azure Database for MySQL server by using the Azure portal](/azure/mysql/quickstart-create-mysql-server-database-using-azure-portal/?WT.mc_id=java-10785-ropreddy&azure-portal=true).
+For more information about creating MySQL servers, see [Create an instance of Azure Database for MySQL with the Azure portal](/azure/mysql/flexible-server/quickstart-create-server-portal).

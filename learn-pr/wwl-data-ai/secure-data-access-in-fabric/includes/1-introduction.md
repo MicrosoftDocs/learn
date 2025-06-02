@@ -1,4 +1,4 @@
-Security in Microsoft Fabric is optimized for securing data for specific use cases. Different users need the ability to perform various actions in Fabric to fulfill their job responsibilities. Fabric facilitates this by allowing you to grant users access to specific data workloads through workspace and item permissions, compute permissions, and OneLake data access roles (Preview).
+Security in Microsoft Fabric is optimized for securing data for specific use cases. Different users need the ability to perform various actions in Fabric to fulfill their job responsibilities. Fabric facilitates this by allowing you to grant users access to specific data workloads through workspace and item permissions, compute permissions, and OneLake data access roles (preview).
 
 ## Secure data by use case
 

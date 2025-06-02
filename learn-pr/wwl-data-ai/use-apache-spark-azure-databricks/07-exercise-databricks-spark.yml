@@ -6,10 +6,10 @@ metadata:
   description: "Exercise - Use Spark in Azure Databricks"
   ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 45
 content: |
-  [!include[](includes/07-exercise-databricks-spark.md)]
+  [!include[](includes/07-exercise-databricks-spark.md)]

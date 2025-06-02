@@ -4,6 +4,7 @@ To use the Azure AI Vision service you must first create a resource for it in yo
 - **Azure AI services**: A general resource that includes Azure AI Vision along with many other Azure AI services such as Azure AI Language, Azure AI Speech, and others. Use this resource type if you plan to use multiple Azure AI services and want to simplify administration and development.
 
 Once you've created a resource, there are several ways to use Azure AI Vision's Read API: 
+- Azure AI Foundry
 - Vision Studio
 - REST API 
 - Software Development Kits (SDKs): Python, C#, JavaScript
