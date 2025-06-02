@@ -47,7 +47,7 @@ To ensure resiliency, there's a minimum of three separate zones in all enabled r
 
 ### Maintenance and Service Health alerts
 
-Azure has invested in improving zero-impact and low-impact update technologies including hot patching, live migration, and in-place migration. The Azure operations team deploys dozens of security and reliability patches to host infrastructure each year, many of which were implemented with no customer impact or downtime.
+Azure has invested in improving zero-impact and low-impact update technologies including hotpatches, live migration, and in-place migration. The Azure operations team deploys dozens of security and reliability patches to host infrastructure each year, many of which were implemented with no customer impact or downtime.
 
 ### Machine learning-driven failure prediction
 
@@ -81,7 +81,7 @@ Protect your workloads quickly with built-in controls and services in Azure acro
 
 #### Detect threats early with unique intelligence
 
-Identify new threats and respond quickly with services that are informed by real-time global cybersecurity intelligence delivered at cloud scale. These actionable insights are developed by analyzing vast sources including 18 billion Bing web pages, 400 billion emails, 1 billion Windows device updates, and 450 billion monthly authentications. Using machine learning, behavioral analytics, and application-based intelligence, Microsoft data scientists analyze the flood of data in the Microsoft Intelligent Security Graph. The resulting insights inform services in Azure and help you detect threats faster.
+Services informed by real-time global cybersecurity intelligence delivered at cloud scale help identify new threats and quick responses. These actionable insights are developed by analyzing vast sources including 18 billion Bing web pages, 400 billion emails, 1 billion Windows device updates, and 450 billion monthly authentications. Using machine learning, behavioral analytics, and application-based intelligence, Microsoft data scientists analyze the flood of data in the Microsoft Intelligent Security Graph. The resulting insights inform services in Azure and help you detect threats faster.
 
 ## Hybrid flexibility
 

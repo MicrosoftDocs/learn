@@ -54,4 +54,4 @@ When you see the Azure Expert MSP logo, this means Microsoft has validated that 
 
 - Microsoft Gold Cloud Platform Partner.
 - Pass an intensive audit performed by Microsoft.
-- Re-evaluated annually to ensure MSP continues to meet updated technology standards.
+- Reevaluated annually to ensure MSP continues to meet updated technology standards.

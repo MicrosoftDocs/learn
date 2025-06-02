@@ -16,7 +16,7 @@ As the solution architect on the Tailwind Traders team, you need to understand t
 
 ## Migration triggers
 
-Migration triggers are typically IT-oriented or based on timelines. The migration to the cloud is driven by the need to quickly reduce on-premises costs, stay secure, and simplify operations. These triggers include:
+Migration triggers are typically IT-oriented or based on timelines. The need to quickly reduce on-premises costs, stay secure, and simplify operations drives the migration to the cloud. These triggers include:
 
 - Datacenter contract expiration
 - Cash flow challenges and resource constraints
@@ -55,7 +55,7 @@ Moving to the cloud can help ensure security and resilience for business-critica
 
 - By moving core business applications to the cloud, you can minimize the number of disruptions and more easily maintain operations, which
 are often among the top concerns for organizations.
-- By taking advantage of native disaster recovery and high availability services, you can ensure that applications are not only resilient, but can also scale up or down to meet performance demands.
+- By taking advantage of native disaster recovery and high availability services, you can ensure that applications aren't only resilient, but can also scale up or down to meet performance demands.
 - Azure provides options for replicating key workloads across different regions, so their uptime is maximized. It also provides built-in recovery options so the risk of losing important apps or data is severely reduced, if not eliminated entirely.
 
 Azure was designed for business continuity and disaster recovery with solutions built into the regions (datacenters) and many services including:
@@ -113,7 +113,7 @@ The cloud presents new opportunities for innovation:
 
 ### Faster time to market
 
-Application modernization can help you develop and bring applications to market much faster. By using Azure, developers aren't constrained by the lead time to procure and build on-premises systems and databases. These extended lead times for infrastructure slowed down your development efforts in the past.
+Application modernization can help you develop and bring applications to market much faster. By using Azure, developers can build on-premises systems and databases without the lead time constraints of procurement and build processes. These extended lead times for infrastructure slowed down your development efforts in the past.
 
 - You can start up Azure App Service in a matter of minutes to start developing a website. Previously you might have had to create a new server, patch the servers, install Internet Information Services (IIS), and make any necessary configuration changes. Now you can start developing your application immediately rather than waiting for days to start.
 - Modernizing applications using serverless in Azure once again provides the ability to bring solutions and updates to the market with even less infrastructure. Leveraging services like Azure Kubernetes Services, Azure Functions, Azure Logic Apps, and Azure AI services, developers have many options for building applications.

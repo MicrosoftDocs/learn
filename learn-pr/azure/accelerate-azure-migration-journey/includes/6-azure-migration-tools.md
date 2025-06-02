@@ -84,7 +84,7 @@ The tool's output contains a readiness heatmap tool that helps to identify the a
 
 :::image type="content" source="../media/smart-tool.png" alt-text="Diagram showing the SMART Assessment Tool.":::
 
-This tool addresses your readiness across all dimensions of migration, from initial strategy to ongoing management. By answering a few questions you get a customized report that helps you plan and close gaps.
+This tool addresses your readiness across all dimensions of migration, from initial strategy to ongoing management. By answering a few questions, you get a customized report that helps you plan and close gaps.
 
 ## Cloud economics
 

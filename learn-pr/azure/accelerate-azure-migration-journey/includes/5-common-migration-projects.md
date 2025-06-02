@@ -64,7 +64,7 @@ Azure is the cloud that knows SQL Server best. There are many options for the mi
 
 ### SQL Server on a virtual machine
 
-A typical reason for migrating SQL to Azure is that a two-tier application is being moved, a Windows .NET front-end application connected to SQL Server running on VMs. These applications can be migrated by simply moving the servers by using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and hosting them using IaaS. They run just as they did in the datacenter, only now they're connected to a virtual network running in Azure.
+A typical reason for migrating SQL to Azure is that a two-tier application is being moved, a Windows .NET front-end application connected to SQL Server running on VMs. Using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true), you can move the servers to migrate and host them using IaaS. They run just as they did in the datacenter, only now they're connected to a virtual network running in Azure.
 
 ### Azure SQL Server Managed Instance
 
@@ -135,7 +135,7 @@ Using [Azure VMware Solution](https://azure.microsoft.com/products/azure-vmware)
 
 :::image type="content" source="../media/migrate-modernize-vmware.png" alt-text="Diagram showing how to migrate VMware VMs to Azure.":::
 
-Tailwind Traders can use Azure VMware Solution to create a private cloud in Azure with native access to VMware vCenter and other tools that are supported by VMware for workload migration. Move to Azure seamlessly using VMware’s HCX technology and continue to manage your environment using the same VMware tools you already know like vSphere Client, NSX-T, Power CLI, or any popular DevOps toolchain.
+Tailwind Traders can use Azure VMware Solution to create a private cloud in Azure with native access to VMware vCenter and other tools. VMware for workload migration supports these. Move to Azure seamlessly using VMware’s HCX technology and continue to manage your environment using the same VMware tools you already know like vSphere Client, NSX-T, Power CLI, or any popular DevOps toolchain.
 
 Once deployed to Azure VMware Solution, you can create vSphere VMs in the Azure portal via API calls or CLI, automate deployments, and enable single sign-on. Enhance your workloads with the full range of Azure compute, monitor, backup, database, IoT, and AI services.
 

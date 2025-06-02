@@ -127,7 +127,7 @@ Governance is a key factor to the long-term success of any effort. The speed to 
 
 [Azure Policy](/azure/governance/policy/overview?azure-portal=true) is an important tool when implementing the policies of your business. Azure Policy helps to enforce organizational standards and to assess compliance at-scale. Through its compliance dashboard, it provides an aggregated view to evaluate the overall state of the environment, with the ability to drill down to the per-resource and per-policy granularity. It also helps to bring your resources to compliance through bulk remediation for existing resources and automatic remediation for new resources.
 
-:::image type="content" source="../media/select-assignments.png" alt-text="Screenshot of the Azure Portal showing the Policy dashboard.":::
+:::image type="content" source="../media/select-assignments.png" alt-text="Screenshot of the Azure portal showing the Policy dashboard.":::
 
 ### Manage
 
