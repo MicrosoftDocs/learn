@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Azure Well-Architected Framework pillars
   description: Learn about the five pillars in the Azure Well-Architected Framework.
-  ms.date: 04/17/2023
+  ms.date: 05/15/2025
   author: PageWriter-MSFT
   ms.author: prwilk
   ms.topic: unit

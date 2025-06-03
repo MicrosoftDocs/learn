@@ -6,7 +6,7 @@ metadata:
   description: Check your knowledge.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 01/13/2025
+  ms.date: 05/15/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -17,7 +17,7 @@ quiz:
     choices:
     - content: "Chatbots that automatically translate between multiple spoken and written languages."
       isCorrect: false
-      explanation: "Incorrect. Azure AI Content Understanding is not designed to build translation chatbots."
+      explanation: "Incorrect. Azure AI Content Understanding isn't designed to build translation chatbots."
     - content: "Analyzers that extract information from documents, images, videos, and audio files."
       isCorrect: true
       explanation: "Correct. Azure AI Content Understanding is designed to build content analyzers."
@@ -28,22 +28,22 @@ quiz:
     choices:
     - content: "Microsoft Visual Studio."
       isCorrect: false
-      explanation: "Incorrect. While you could use the REST API from Visual Studio to create a Content Understanding analyzer, it is not the best tool for creating a project."
+      explanation: "Incorrect. While you could use the REST API from Visual Studio to create a Content Understanding analyzer, it isn't the best tool for creating a project."
     - content: "Azure Machine Learning studio."
       isCorrect: false
-      explanation: "Incorrect. Azure Machine learning studio is not a tool for working with Content Udnerstanding projects."
+      explanation: "Incorrect. Azure Machine Learning studio isn't a tool for working with Content Understanding projects."
     - content: "Azure AI Foundry portal."
       isCorrect: true
       explanation: "Correct. Azure AI Foundry portal provides a visual interface for creating Content Understanding projects."
-  - content: "After creating a Content Understanding project, what should you define for the information you want to extract from content?"
+  - content: "What should you define for the information you want to extract from content?"
     choices:
     - content: "A schema."
       isCorrect: true
       explanation: "Correct. A schema is used to define the information your analyzer will extract."
     - content: "An index."
       isCorrect: false
-      explanation: "Incorrect. You do not need to create an index for a Content Understanding analyzer."
+      explanation: "Incorrect. You don't need to create an index for a Content Understanding analyzer."
     - content: "A cluster."
       isCorrect: false
-      explanation: "Incorrect. You do not need to create a cluster to use Content Understanding."
-
+      explanation: "Incorrect. You don't need to create a cluster to use Content Understanding."
+

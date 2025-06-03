@@ -638,6 +638,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-language/3-semantic-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-language/4-text-analysis.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-machine-learning/10-exercise-auto-machine-learning.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/",
+      "redirect_document_id": false
+    },
+	  {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/6b-quality-responses.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+	  {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/7-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
       "redirect_document_id": false
@@ -47572,6 +47597,486 @@
     {
       "source_path": "learn-pr/azure/create-foundation-modern-apps/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/index.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/4-configure-behavior.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/3-configure-loop.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/2-create-ai-personalizer-resource.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/8-exercise.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/9-knowledge-check.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/10-summary.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/5-import-export-settings.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/1-introduction.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/7-run-evaluations.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/6-use-inference-explainability.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/apply-prompt-engineering-azure-openai/index.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/apply-prompt-engineering-azure-openai/5-exercise.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/apply-prompt-engineering-azure-openai/1-introduction.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/apply-prompt-engineering-azure-openai/6-knowledge-check.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/apply-prompt-engineering-azure-openai/4-provide-context-to-improve-accuracy.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/apply-prompt-engineering-azure-openai/7-summary.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/apply-prompt-engineering-azure-openai/2-understand-prompt-engineering.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/apply-prompt-engineering-azure-openai/3-write-effective-prompts.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-language-solution-azure-openai/index.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-language-solution-azure-openai/5-exercise.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-language-solution-azure-openai/2-integrate-azure-openai-into-app.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-language-solution-azure-openai/1-introduction.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-language-solution-azure-openai/6-knowledge-check.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-language-solution-azure-openai/7-summary.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-language-solution-azure-openai/3-use-openai-rest.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-language-solution-azure-openai/4-use-openai-sdk.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/generate-code-azure-openai/index.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/generate-code-azure-openai/3-complete-code-assist-development.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/generate-code-azure-openai/2-construct-code-natural-language.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/generate-code-azure-openai/5-exercise.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/generate-code-azure-openai/4-fix-bugs-improve-code.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/generate-code-azure-openai/1-introduction.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/generate-code-azure-openai/6-knowledge-check.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/generate-code-azure-openai/7-summary.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/build-your-kernel/5-exercise-create-your-endpoint.yml",
+      "redirect_url": "/training/modules/build-your-kernel/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/build-your-kernel/6-exercise-build-kernel-object.yml",
+      "redirect_url": "/training/modules/build-your-kernel/5-exercise-build-kernel-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/build-your-kernel/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/build-your-kernel/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/build-your-kernel/8-summary.yml",
+      "redirect_url": "/training/modules/build-your-kernel/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/combine-prompts-functions/3-exercise-apply-trust-filters.yml",
+      "redirect_url": "/training/modules/combine-prompts-functions/4-exercise-apply-function-filters",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/combine-prompts-functions/4-filter-invoked-functions.yml",
+      "redirect_url": "/training/modules/combine-prompts-functions/3-filter-invoked-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/combine-prompts-functions/5-exercise-add-filter-service-to-kernel.yml",
+      "redirect_url": "/training/modules/combine-prompts-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/combine-prompts-functions/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/combine-prompts-functions/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/combine-prompts-functions/7-summary.yml",
+      "redirect_url": "/training/modules/combine-prompts-functions/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-plugins-semantic-kernel/10-summary.yml",
+      "redirect_url": "/training/modules/create-plugins-semantic-kernel/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-plugins-semantic-kernel/4-exercise-use-semantic-kernel-prompt-templates.yml",
+      "redirect_url": "/training/modules/create-plugins-semantic-kernel/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-plugins-semantic-kernel/5-use-handlebars-prompt-templates.yml",
+      "redirect_url": "/training/modules/create-plugins-semantic-kernel/4-use-handlebars-prompt-templates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-plugins-semantic-kernel/6-exercise-use-handlebars-prompts-templates.yml",
+      "redirect_url": "/training/modules/create-plugins-semantic-kernel/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-plugins-semantic-kernel/7-store-chat-history.yml",
+      "redirect_url": "/training/modules/create-plugins-semantic-kernel/5-store-chat-history",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-plugins-semantic-kernel/8-exercise-store-chat-history.yml",
+      "redirect_url": "/training/modules/create-plugins-semantic-kernel/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-plugins-semantic-kernel/9-knowledge-check.yml",
+      "redirect_url": "/training/modules/create-plugins-semantic-kernel/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/3-exercise-create-native-plugins.yml",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/4-exercise-create-plugins",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/4-configure-function-choices.yml",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/3-configure-function-choices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/5-exercise-configure-available-functions.yml",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/7-summary.yml",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-unit-tests-using-github-copilot-tools/3-exercise-create-method-unit-tests-github-copilot-inline-chat.md",
+      "redirect_url": "/training/modules/develop-unit-tests-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-unit-tests-using-github-copilot-tools/4-exercise-create-specific-unit-test-github-copilot-inline-chat.md",
+      "redirect_url": "/training/modules/develop-unit-tests-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/develop-unit-tests-using-github-copilot-tools/5-exercise-complete-create-unit-tests-challenge.md",
+      "redirect_url": "/training/modules/develop-unit-tests-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-unit-tests-using-github-copilot-tools/6-review-create-unit-tests-solution.md",
+      "redirect_url": "/training/modules/develop-unit-tests-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-code-features-using-github-copilot-tools/10-exercise-convert-code-between-programming-languages.md",
+      "redirect_url": "/training/modules/develop-code-features-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-code-features-using-github-copilot-tools/11-knowledge-check.md",
+      "redirect_url": "/training/modules/develop-code-features-using-github-copilot-tools/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-code-features-using-github-copilot-tools/12-summary.md",
+      "redirect_url": "/training/modules/develop-code-features-using-github-copilot-tools/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-code-features-using-github-copilot-tools/4-exercise-create-code-copilot-autocompletions.md",
+      "redirect_url": "/training/modules/develop-code-features-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-code-features-using-github-copilot-tools/5-exercise-create-code-copilot-chat.md",
+      "redirect_url": "/training/modules/develop-code-features-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-code-features-using-github-copilot-tools/6-exercise-complete-create-new-code-challenge.md",
+      "redirect_url": "/training/modules/develop-code-features-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/develop-code-features-using-github-copilot-tools/7-review-create-new-code-solution.md",
+      "redirect_url": "/training/modules/develop-code-features-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/develop-code-features-using-github-copilot-tools/8-exercise-complete-code-logic-challenge.md",
+      "redirect_url": "/training/modules/develop-code-features-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/develop-code-features-using-github-copilot-tools/9-review-code-logic-solution.md",
+      "redirect_url": "/training/modules/develop-code-features-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-plan/index.md",
+      "redirect_url": "/training/paths/cloud-adoption-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-plan/1-introduction.md",
+      "redirect_url": "/training/paths/cloud-adoption-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-plan/2-customer-narrative.md",
+      "redirect_url": "/training/paths/cloud-adoption-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-plan/3-exercise-cloud-adoption-plan.md",
+      "redirect_url": "/training/paths/cloud-adoption-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-plan/5-exercise-integrate-assessment-data.md",
+      "redirect_url": "/training/paths/cloud-adoption-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-plan/6-summary.md",
+      "redirect_url": "/training/paths/cloud-adoption-framework/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/2-examine-github-copilot-code-improvement.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/3-exercise-improve-code-quality-github-copilot-chat.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/4-exercise-improve-reliability-performance-github-copilot-chat.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/5-exercise-improve-code-security-github-copilot-chat.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/6-exercise-complete-app-improvement-challenge.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/7-review-app-improvement-solution.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/8-knowledge-check.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/9-summary.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/10-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/2-examine-explain-document-features-github-copilot.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/3-exercise-generate-explanations-using-github-copilot-chat.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/4-exercise-generate-project-documentation-using-github-copilot-chat.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/5-exercise-generate-code-documentation-using-github-copilot.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/6-exercise-complete-code-documentation-challenge.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/7-review-code-documentation-solution.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/3-examine-github-copilot-benefits.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/4-exercise-install-github-copilot-extensions-visual-studio-code.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/5-examine-autocomplete-features-github-copilot-extension.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/6-examine-ai-assistance-features-github-copilot-chat-extension.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/7-exercise-configure-github-copilot-extensions-visual-studio-code.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/8-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/13-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/9-summary.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/14-summary",
       "redirect_document_id": false
     }
   ]

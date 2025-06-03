@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Introduction to the Microsoft Azure Well-Architected Framework
   description: Learn how using key principles throughout your cloud architecture can help you design and build a solid architectural foundation that you can continuously improve.
-  ms.date: 04/17/2023
+  ms.date: 05/15/2025
   author: PageWriter-MSFT
   ms.author: prwilk
   ms.topic: module

@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-blob-storage.determine-storage-pricing
 title: Determine Blob Storage pricing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Determine Blob Storage pricing
   description: "Determine Blob Storage pricing"
-  ms.date: 01/29/2025
+  ms.date: 05/27/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

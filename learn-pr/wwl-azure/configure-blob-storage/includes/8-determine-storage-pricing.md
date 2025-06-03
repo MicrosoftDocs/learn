@@ -1,10 +1,13 @@
-All Azure storage accounts use a pricing model for Azure Blob Storage tiers. Total cost of block blob storage depends on:
+Understanding your access patterns and correlating them with your durability and availability needs helps you to best manage your Azure Blob Storage costs. The primary tool for estimating these costs is the [Azure pricing calculator](/pricing/calculator). The pricing tool can calculate migration, monthly estimates, and future pricing estimates based on the workload-driven input that you specify. In general, the cost of block blob storage depends on:
 
 - Volume of data stored per month.
-
 - Quantity and types of operations performed, along with any data transfer costs.
-
 - Data redundancy option selected.
+
+You can use the Azure [Pricing Calculator0(/pricing/calculator) to estimate you storage costs.
+
+:::image type="content" source="../media/blob-pricing.png" alt-text="Screenshot of the Azure Pricing Calculator with storage highlighted." border="false":::
+
 
 ### Things to know about pricing for Blob Storage
 
@@ -21,4 +24,8 @@ Review the following billing considerations for an Azure storage account and Blo
 - **Outbound data transfer costs**. Outbound data transfers incur billing for bandwidth usage on a per-gigabyte basis. This billing is consistent with general-purpose Azure storage accounts.
 
 - **Changes to the storage tier**. If you change the account storage tier from Cool to Hot, you incur a charge equal to reading all the data existing in the storage account. Changing the account storage tier from Hot to Cool incurs a charge equal to writing all the data into the Cool tier (GPv2 accounts only).
+
+
+> [!TIP]
+> Read more about how to [*Optimize your cost with Azure Blob Storage*](/training/modules/optimize-your-cost-azure-blob-storage/). 
 

@@ -2,14 +2,18 @@
 uid: learn.wwl.troubleshoot-active-directory.troubleshoot-ad-ds-replication
 title: Troubleshoot AD DS replication
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot AD DS replication
   description: "Troubleshoot AD DS replication"
-  ms.date: 01/10/2025
+  ms.date: 05/29/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-troubleshoot-active-directory-domain-services-replication.md)]
+  [!include[](includes/5-troubleshoot-active-directory-domain-services-replication.md)]
