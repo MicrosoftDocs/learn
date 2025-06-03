@@ -13,7 +13,7 @@ The WMS solution is a .NET application that runs on Internet Information Service
 
 **Establish a cost baseline that includes the cost for technology, automation, acquisition, training, and change management. Your design should meet all the key requirements including return on investment (ROI) and still be flexible enough to grow with your needs.**
 
-A cost baseline helps you forecast expenses and find hidden costs. Keeping ROI in mind helps avoid overbuilding a system that ends up costing more than it's worth.
+A cost baseline helps you stay on budget by showing where the money’s going, including hidden costs that you might miss. Keeping ROI in mind helps avoid overbuilding a system that ends up costing more than it's worth.
 
 *Contoso's challenge*
 
@@ -34,7 +34,7 @@ A cost baseline helps you forecast expenses and find hidden costs. Keeping ROI i
 
 **Set up cost limits in your architecture to keep spending within a safe range, and ensure that your team follows those limits.**
 
-Enforcing limits helps avoid surprise charges and makes sure you only use what you actually budget for.
+Enforcing limits helps avoid surprise charges and ensures that you only use what you actually budget for.
 
 *Contoso's challenge*
 
@@ -61,9 +61,9 @@ You can also save costs by creating preproduction environments only when you nee
 
 *Contoso's challenge*
 
-- Contoso sets up all their environments, including development, test, preproduction, and production, the same way.
+- Contoso sets up all their environments, including development, test, preproduction, and production, the same way regardless of usage.
 
-- Even environments that sit idle most of the time arere using full-scale resources, driving up costs.
+- Even environments that sit idle most of the time are using full-scale resources, driving up costs.
 - They also don't have automation in place to turn environments on or off based on actual usage, which leads to a lot of waste.
 
 *Applying the approach and outcomes*

@@ -7,7 +7,7 @@ You don't always need to redesign or renegotiate to save money. Sometimes, you c
 
 Contoso's business intelligence (BI) team hosts a suite of GraphQL APIs  so that different departments can access data without touching the databases directly. Over time, they've added versioning and now run everything through a single Azure API Management gateway on the Consumption tier.
 
-Three AKS clusters are behind the API Management instances:
+Three Azure Kubernetes Service (AKS) clusters are behind the API Management instances:
   - One runs a Windows node pool for APIs written in .NET 4.5.
   
   - One Linux cluster for the APIs written in Java Spring. 
@@ -21,20 +21,20 @@ The BI team is a cost center in the business, so they're looking for ways to opt
 
 **Choose the right billing model based on how your workloads behave.**
 
-Not all workloads need the same pricing model. Some run all the time and benefit from fixed pricing or reserved instances. Others are used occasionally and are better suited for pay-as-you-go or consumption-based pricing. Matching the pricing model to the workload helps avoid paying for unused capacity and keeps costs aligned with actual usage.
+Not all workloads need the same pricing model. Some run all the time and benefit from fixed pricing or reserved instances. Others are used occasionally and are better suited for pay-as-you-go pricing. Matching the pricing model to the workload helps avoid paying for unused capacity and keeps costs aligned with actual usage.
 
 *Contoso's challenge*
 
-- Some APIs are used heavily and consistently, while others are only active during peak times like registration.
+- The team manages a suite of GraphQL APIs that serve different departments. Some APIs are used constantly, like daily reporting. Others only see traffic during specific business cycles, like quarterly planning or audit periods.
 
 - Everything runs on always-on infrastructure, even the low-traffic APIs.
 - They're using pay-as-you-go pricing across the board, even for workloads with predictable usage.
 
 *Applying the approach and outcomes*
 
-- The team identifies APIs with steady usage and moves them to fixed-price SKUs or reserved instances to lock in savings.
+- The team identifies APIs that have steady usage and moves them to fixed-price SKUs or reserved instances to lock in savings.
 
-- For APIs with bursty or seasonal traffic, they switch to consumption-based services like Azure Container Apps.
+- For APIs that have bursty or seasonal traffic, they switch to consumption-based services like Azure Container Apps.
 - They also evaluate whether some APIs can be consolidated or scaled down during off-hours.
 - These changes help them align costs with actual usage and avoid paying for idle resources.
 
@@ -46,17 +46,17 @@ Licensing can be a hidden cost driver. By using benefits like Azure Hybrid Benef
 
 *Contoso's challenge*
 
-- They're running Windows workloads on AKS without using Azure Hybrid Benefit.
+- The team manages several AKS clusters that support their GraphQL APIs. One of those clusters runs Windows workloads, but the team hasn’t looked closely at how those workloads are licensed. The setup has been stable, and since costs haven’t spiked, there hasn’t been much urgency to revisit it.
 
-- Preproduction environments are deployed in the same pricing tier and region as production.
-- They haven't coordinated with the licensing team, so they're missing out on potential discounts.
+- Their preproduction environments run in the same pricing tier and region as production. It’s convenient, but they’re starting to wonder if that’s the most efficient use of resources.
+- Licensing decisions have mostly been handled separately from infrastructure planning, so the team hasn’t had much visibility into whether they’re getting the best possible pricing.
 
 *Applying the approach and outcomes*
 
-- The team enables Azure Hybrid Benefit to use existing Windows Server licenses.
+- The team reviews their AKS clusters and realize that the Windows node pools could qualify for Azure Hybrid Benefit. By applying their existing Windows Server licenses, they can reduce compute costs without changing the workload.
 
-- They move dev and test environments to Dev/Test subscriptions and lower-cost regions.
-- They share their usage forecasts with the licensing team to help negotiate better enterprise agreements.
+- They also evaluate their environment structure and move development and test workloads into dev/test subscriptions. To save even more, they shift those environments to lower-cost regions, since they don’t need the same performance or availability as production.
+- They loop in the licensing team and share their usage forecasts. This collaboration helps procurement negotiate better enterprise agreements, unlocking extra savings.
 - These steps reduce licensing costs and help the organization get better deals overall.
 
 ## Combine infrastructure where it makes sense
@@ -67,7 +67,7 @@ When you pack more utility into fewer systems, you use less hardware and spend l
 
 *Contoso's challenge*
 
-- Contoso's team followed the Microsoft Azure Kubernetes Service (AKS) baseline architecture. They run three clusters that each have three system nodes, so nine nodes total.
+- Contoso's team followed the Microsoft AKS baseline architecture. They run three clusters that each have three system nodes, so nine nodes total.
 
 - They apply patches and updates to all clusters three times every month.
 

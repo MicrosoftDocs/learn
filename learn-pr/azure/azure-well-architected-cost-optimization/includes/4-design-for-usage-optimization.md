@@ -17,7 +17,7 @@ Some resource SKUs come with built-in features for performance, security, or rel
 
 *Contoso's challenge*
 
-- The durable function runs on a Standard App Service plan that was originally sized for a public website, but that site has since been retired.
+- The durable function runs on a Standard App Service plan that was originally sized for a public website, but that website has since been retired.
 
 - The team never re-evaluated the SKU, so they're still paying for features and capacity that they don't use.
 - They're unsure which features are actually needed for the integration workload.
@@ -32,9 +32,9 @@ Some resource SKUs come with built-in features for performance, security, or rel
 
 ## Use commitment-based discounts where it makes sense
 
-**Plan ahead to save more.**
+**Plan ahead to save more. If you know that you'll be using certain resources for a while, commit to them.**
 
-If you know you'll be using certain resources for a while, commit to them. Reserved instances and savings plans can lower costs significantly.
+Reserved instances and savings plans can lower costs significantly. Use commitment-based resources when you're building new features, setting up extra environments, or improving performance and reliability.
 
 *Contoso's challenge*
 
