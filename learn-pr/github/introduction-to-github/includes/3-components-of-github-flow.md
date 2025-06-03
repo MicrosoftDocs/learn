@@ -4,7 +4,7 @@ In this unit, we're reviewing the following components of the GitHub flow:
 - Commits
 - Pull Requests
 - The GitHub Flow
-- Git Flow
+- Git flow
 
 ## Components of GitHub Flow
 
@@ -70,7 +70,8 @@ Now that you’ve seen how branches, commits, and pull requests work, let’s wa
 
 The GitHub flow is a simple workflow that helps you safely make and share changes. It’s great for trying out ideas and collaborating with your team using branches, pull requests, and merges.
 
-Note: GitHub Flow is one of several popular workflows. Others include Git Flow and trunk-based development.
+> [!NOTE]
+> GitHub flow is one of several popular workflows. Others include Git flow and trunk-based development.
 
 Now that we know the basics of GitHub we can walk through the GitHub flow and its components.
 
@@ -81,16 +82,16 @@ Now that we know the basics of GitHub we can walk through the GitHub flow and it
 5. Finally, once you’re confident in your changes, get approval and merge the pull request into the main branch.
 6. After that, delete the branch to keep your repository clean and avoid using outdated branches.
 
-## Git Flow
+## Git flow
 
-:::image type="content" source="../media/2-git-flow-image.png" alt-text="Diagram illustrating the Git Flow workflow with parallel lanes for feature branches, develop, release branches, hotfixes, and master. It shows how features are merged into develop, release branches are created from develop, hotfixes are branched from master, and all changes are eventually merged back into master and develop with tagged versions.
+:::image type="content" source="../media/2-git-flow-image.png" alt-text="Diagram illustrating the Git flow workflow with parallel lanes for feature branches, develop, release branches, hotfixes, and master. It shows how features are merged into develop, release branches are created from develop, hotfixes are branched from master, and all changes are eventually merged back into master and develop with tagged versions.
 " border="false":::
 
-While GitHub Flow is a lightweight workflow designed for continuous delivery, **Git Flow** is a more structured branching model often used in release-driven environments. Git Flow has been around longer than GitHub Flow, and you may still see the term **`master`** used instead of **`main`** as the default branch.
+While GitHub Flow is a lightweight workflow designed for continuous delivery, **Git flow** is a more structured branching model often used in release-driven environments. Git flow has been around longer than GitHub Flow, and you may still see the term **`master`** used instead of **`main`** as the default branch.
 
-### Git Flow Branch Types
+### Git flow Branch Types
 
-Git Flow uses several long-lived and temporary branches:
+Git flow uses several long-lived and temporary branches:
 
 - **master**: Always reflects production-ready code.
 - **develop**: Contains the latest development work for the next release.
@@ -98,7 +99,7 @@ Git Flow uses several long-lived and temporary branches:
 - **release/***: Prepares a new production release from `develop`; allows final testing and minor bug fixes.
 - **hotfix/***: Used to quickly patch production issues; branched from `master`.
 
-### How the Git Flow Process Works
+### How the Git flow Process Works
 
 1. Developers create **feature branches** from `develop` to build new functionality.
 2. When it's time for a release, a **release branch** is created from `develop`. This isolates release preparation work so development can continue uninterrupted.
@@ -107,17 +108,17 @@ Git Flow uses several long-lived and temporary branches:
 5. The same release branch should be merged back into `develop` to keep it in sync.
 6. If a critical production bug arises, a **hotfix branch** is created from `master`. Once fixed, it’s merged into both `master` and `develop`.
 
-### When to Use Git Flow
+### When to Use Git flow
 
 - Best suited for projects with **scheduled or versioned releases**
 - Helpful if you maintain **multiple production versions** (e.g., long-term support branches)
 - Ideal for **slower, more structured development cycles** (e.g., enterprise or regulated environments)
 - Considered more "heavyweight" than GitHub Flow due to **additional branch management**
 
-Note: Git Flow assumes merge commits for integrating branches. Using rebase or squash merges can interfere with its branch structure and history tracking.
+Note: Git flow assumes merge commits for integrating branches. Using rebase or squash merges can interfere with its branch structure and history tracking.
 
-> For many teams using GitHub, GitHub Flow is simpler and faster. But if your team values predictability and needs more release planning, Git Flow may be a better fit.
+> For many teams using GitHub, GitHub Flow is simpler and faster. But if your team values predictability and needs more release planning, Git flow may be a better fit.
 
-Congratulations! You’ve just walked through the full GitHub Flow—and explored how Git Flow offers a structured alternative for release-driven projects.
+Congratulations! You’ve just walked through the full GitHub Flow—and explored how Git flow offers a structured alternative for release-driven projects.
 
 Let’s move onto the next section where we’ll cover the differences between issues and discussions.
