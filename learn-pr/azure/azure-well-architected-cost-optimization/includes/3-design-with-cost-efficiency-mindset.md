@@ -13,7 +13,7 @@ The WMS solution is a .NET application that runs on Internet Information Service
 
 **Establish a cost baseline that includes the cost for technology, automation, acquisition, training, and change management. Your design should meet all the key requirements including return on investment (ROI) and still be flexible enough to grow with your needs.**
 
-Keeping ROI in mind helps avoid overbuilding something that ends up costing more than it's worth.
+A cost baseline helps you forecast expenses and find hidden costs. Keeping ROI in mind helps avoid overbuilding a system that ends up costing more than it's worth.
 
 *Contoso's challenge*
 

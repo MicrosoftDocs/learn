@@ -59,8 +59,8 @@ Shutting down resources that you're not using and deleting data that you don't n
 
 - Over the past year, the team created several temporary environments for testing new features and running performance experiments. Many of these environments were never cleaned up.
 
-- They discovered multiple Event Hubs namespaces and Azure Cosmos DB containers that haven’t received any traffic in months but are still incurring storage and throughput costs.
-- Old baggage tracking data from previous airline partners is still stored in hot-access tiers, even though it’s no longer needed for operations or compliance.
+- They discovered multiple Event Hubs namespaces and Azure Cosmos DB containers that haven't received any traffic in months but are still incurring storage and throughput costs.
+- Old baggage tracking data from previous airline partners is still stored in hot-access tiers, even though it's no longer needed for operations or compliance.
 - The team lacks a regular process for identifying and removing unused resources, so clutter continues to build up unnoticed.
 
 *Applying the approach and outcomes*
