@@ -23,7 +23,7 @@ There are also benefits specific to Azure Arc-enabled servers, such as:
 
 ### What are VM extensions and how are they used with Azure Arc-enabled servers?
 
-VM extensions are lightweight software components that automate post-operating system deployment configuration and automation tasks. Traditionally, VM extensions were available only on Azure VMs, but now it's possible to use selected extensions on Azure Arc-enabled servers. The following table describes the extensions that you can add to Azure Arc-enabled servers running Windows Server or Linux operating system:
+VM extensions are lightweight software components that automate post-operating system deployment configuration and automation tasks. Traditionally, VM extensions were available only on Azure VMs, but now it's possible to use selected extensions on Azure Arc-enabled servers. The following table describes some of the extensions that you can add to Azure Arc-enabled servers running Windows Server or Linux operating system:
 
 | Extension | Additional information |
 | --- | --- |
