@@ -21,6 +21,9 @@ First, create an Azure storage account to store the application data. The storag
     echo $STORAGEACCT
     ```
 
+    > [!TIP]
+    > The *Sandbox resource group* field autopopulates after you activate the sandbox.
+
     Make a note of the value of the `$STORAGEACCT` variable if you need to re-create it in a later exercise.
 
     This step sets the replication policy of the storage account to RA-GRS, which enables the application to fail over to the secondary region if there's an outage.
