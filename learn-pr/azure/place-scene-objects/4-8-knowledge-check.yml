@@ -4,23 +4,23 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Three multiple-choice questions
-  ms.date: 11/26/2023
+  ms.date: 05/26/2025
   author: marlenaklein-msft
-  ms.author: marlenaklein
+  ms.author: lolab
   ms.topic: unit
 durationInMinutes: 3
 content: Choose the best response for each question. 
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Choose the correct description of Prefabs in Unity."
+    - content: "Choose the correct description of Prefabs in Unity:"
       choices:
         - content: "Prefabs are just a collection of objects used for organizational purposes."
           isCorrect: false
-          explanation: Parent objects can be used for organizational purposes.
+          explanation: You can use parent objects for organizational purposes.
         - content: "Prefabs are components provided by the Mixed Reality Toolkit to manipulate objects on scene."
           isCorrect: false
-          explanation: The Object Manipulator component can be used to manipulate objects on scene.
+          explanation: You can use the Object Manipulator component to manipulate objects on scene.
         - content: "Prefabs are reusable components used to propagate changes to all its instances at once."
           isCorrect: true
           explanation: Prefabs are a special type of component that allows fully configured GameObjects to be saved in the Project for reuse.
