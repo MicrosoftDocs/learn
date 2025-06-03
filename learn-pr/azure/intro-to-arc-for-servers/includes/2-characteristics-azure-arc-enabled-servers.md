@@ -43,28 +43,12 @@ Connecting the agent to your subscription creates an Azure Resource Manager obje
 
 The Connected Machine agent allows you to enhance management of Windows and Linux computers residing in on-premises datacenters or hosted by third party private and public cloud providers. Azure Arc-enabled servers support the installation of the Connected Machine agent on any physical server and virtual machine hosted outside of Azure. Supported environments include:
 
-- VMware
-- Azure Stack HCI
+- VMware (including Azure VMware Solution)
+- Azure Local
 - Other cloud environments
 
 Azure Arc-enabled servers does not support installing the agent on virtual machines running in Azure, or virtual machines running on Azure Stack Hub or Azure Stack Edge as they are already modeled as Azure VMs.
 
-The Azure Connected Machine agent supports the following operating systems:
-
-- Windows Server 2008 R2 SP1, 2012 R2, 2016, 2019, and 2022
-  - Both Desktop and Server Core experiences are supported
-  - Azure Editions are supported on Azure Stack HCI
-- Windows 10, 11 (see client operating system guidance)
-- Windows IoT Enterprise
-- Azure Stack HCI
-- CBL-Mariner 1.0, 2.0
-- Ubuntu 16.04, 18.04, 20.04, and 22.04 LTS
-- Debian 10 and 11
-- CentOS Linux 7 and 8
-- Rocky Linux 8
-- SUSE Linux Enterprise Server (SLES) 12 SP3-SP5 and 15
-- Red Hat Enterprise Linux (RHEL) 7, 8 and 9
-- Amazon Linux 2
-- Oracle Linux 7 and 8
+The Azure Connected Machine agent supports a wide range of Windows and Linux operating systems. x86-64 (64-bit) architecture is fully supported, while only some features are supported on Arm64. The Azure Connected Machine agent doesn't run on 32-bit architectures.
 
 Choose the best response for each of the following questions.
