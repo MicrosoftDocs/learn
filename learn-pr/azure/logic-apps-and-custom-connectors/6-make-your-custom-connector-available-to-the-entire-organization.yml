@@ -4,7 +4,7 @@ title: Share a custom connector
 metadata:
   title: Share a custom connector
   description: In this unit, you will learn how to publish your custom connector, both inside your organization and to the wider community.
-  ms.date: 05/02/2023
+  ms.date: 06/03/2025
   author: ecfan
   ms.author: estfan
   ms.topic: unit
@@ -37,4 +37,4 @@ quiz:
     - content: "No, you cannot apply for certification."
       isCorrect: false
       explanation: "Modify the API to use OAuth2, an API key, or basic authentication. Client certificate authentication is not supported."
-
+
