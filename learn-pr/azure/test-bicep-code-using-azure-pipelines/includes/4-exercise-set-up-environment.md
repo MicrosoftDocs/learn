@@ -130,7 +130,7 @@ Next, create a service connection in Azure Pipelines. This connection automatica
 
 1. In the **Resource group** dropdown list, select **ToyWebsiteTest**.
 
-1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
+1. In **Service Connection Name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
 
    :::image type="content" source="../media/4-create-service-connection-principal-details.png" alt-text="Screenshot that shows the steps for creating a service connection.":::
 

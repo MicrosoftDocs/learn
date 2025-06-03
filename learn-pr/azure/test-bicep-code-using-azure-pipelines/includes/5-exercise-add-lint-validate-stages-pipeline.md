@@ -76,7 +76,7 @@ By default, the Bicep linter provides a warning when it detects a problem in a f
 
 ## View the pipeline run
 
-1. In your browser, go to **Pipelines**.
+1. In Azure DevOps, go to **Pipelines**.
 
 1. Select the most recent run of your pipeline.
 
