@@ -28,7 +28,7 @@ After you create a repository with the correct permissions, you can make it a te
 
 ### What is repository forking?
 
-Forking is a way to create a personal copy of someone else's repository under your own GitHub account. When you fork a repository, you get your own version that you can freely modify without affecting the original project. This is a common workflow for contributing to open source or experimenting with changes safely.
+Forking is a way to create a personal copy of someone else's repository under your own GitHub account. When you fork a repository, you get your own version that you can freely modify without affecting the original project. This process is a common workflow for contributing to open source or experimenting with changes safely.
 
 You can also keep your fork up to date by pulling in changes from the original repository, often called the “upstream” repo.
 
@@ -59,7 +59,6 @@ To configure fork settings:
 **Tip:** If you disable forking for a private repository, no one (including organization members) will be able to fork it.
 
 To learn more, see the GitHub Docs article on [Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
-
 
 ## Ways Users Receive Repository Access
 
