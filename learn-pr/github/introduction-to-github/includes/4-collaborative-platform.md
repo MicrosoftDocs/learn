@@ -43,7 +43,7 @@ Discussions are for conversations that need to be accessible to everyone and are
 
 In this section we go over:
 
-- Enabling a discussion in your repository.
+- Enabling discussions in your repository.
 - Creating a new discussion and various discussion categories.
 
 Let’s review how to enable a discussion in your repository.
