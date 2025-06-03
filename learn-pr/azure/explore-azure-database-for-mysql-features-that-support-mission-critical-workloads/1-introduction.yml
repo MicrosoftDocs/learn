@@ -5,11 +5,11 @@ metadata:
   title: Introduction
   description: "In this module, you'll learn about Azure Database for MySQL - Flexible Server features that you can use to support your mission-critical workloads."
   ms.date: 08/27/2024
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

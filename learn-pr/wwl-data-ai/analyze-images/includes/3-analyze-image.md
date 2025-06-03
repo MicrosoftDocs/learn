@@ -24,9 +24,8 @@ client = ImageAnalysisClient(
 
 result = client.analyze(
     image_data=<IMAGE_DATA_BYTES>, # Binary data from your image file
-    visual_features=[VisualFeatures.CAPTION, VisualFeatures.READ],
+    visual_features=[VisualFeatures.CAPTION, VisualFeatures.TAGS],
     gender_neutral_caption=True,
-    language="en",
 )
 ```
 
@@ -58,7 +57,7 @@ ImageAnalysisClient client = new ImageAnalysisClient(
 
 ImageAnalysisResult result = client.Analyze(
     <IMAGE_DATA_BYTES>, // Binary data from your image file
-    VisualFeatures.Caption | VisualFeatures.Read,
+    VisualFeatures.Caption | VisualFeatures.Tags,
     new ImageAnalysisOptions { GenderNeutralCaption = true });
 ```
 
@@ -76,7 +75,7 @@ Available visual features are contained in the `VisualFeatures` enumeration:
 - VisualFeatures.People: Returns the bounding box for detected people
 - VisualFeatures.SmartCrops: Returns the bounding box of the specified aspect ratio for the area of interest
 - VisualFeatures.Read: Extracts readable text
-- 
+
 ::: zone-end
 
 Specifying the visual features you want analyzed in the image determines what information the response will contain. Most responses will contain a bounding box (if a location in the image is reasonable) or a confidence score (for features such as tags or captions).

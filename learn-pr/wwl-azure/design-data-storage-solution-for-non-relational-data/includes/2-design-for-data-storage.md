@@ -17,6 +17,8 @@ The following table describes three data types. Consider how these different typ
 
 Nonrelational data in Azure can be stored in several different data objects. We look at scenarios that implement four storage objects. As you review these options for Tailwind Traders, think about what types of nonrelational data are of most interest to your organization. Consider the storage objects that you might need to implement.
 
+:::image type="content" source="../media/storage-decision-tree.png" alt-text="Flowchart showing nonrelational storage choices." border="false":::
+
 - **Consider Azure Blob Storage**. Store vast amounts of unstructured data by using Azure Blob Storage. Blob stands for Binary Large Object. Blob Storage is often used for images and multimedia files.
 
 - **Consider Azure Files**. Provide fully managed file shares in the cloud with Azure Files. This storage data is accessible via the industry standard Server Message Block (SMB) protocol, Network File System (NFS) protocol, and the Azure Files REST API. 
@@ -24,3 +26,4 @@ Nonrelational data in Azure can be stored in several different data objects. We 
 - **Consider Azure managed disks**. Support Azure virtual machines by using Azure managed disks. These disks are block-level storage volumes managed by Azure. Managed disks perform like physical disks in an on-premises server, but in a virtual environment. 
 
 - **Consider Azure Queue Storage**. Use Azure Queue Storage to store large numbers of messages. Queue Storage is commonly used to create a backlog of work to process asynchronously. 
+

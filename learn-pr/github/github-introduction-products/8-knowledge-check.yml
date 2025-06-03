@@ -59,7 +59,7 @@ quiz:
     - content: "Check out branches with pull requests and view CI statuses."
       isCorrect: false
       explanation: "Incorrect. You can't do these actions on GitHub Mobile, but you can on GitHub Desktop."
-    - content: "Compare changed image.s"
+    - content: "Compare changed images."
       isCorrect: false
       explanation: "Incorrect. You can't do this action on GitHub Mobile, but you can on GitHub Desktop."
     - content: "Add and clone repositories."
@@ -68,14 +68,14 @@ quiz:
     - content: "Manage, triage, and clear notifications from github.com."
       isCorrect: true
       explanation: "Correct. On GitHub Mobile you can manage, triage, and clear notifications from github.com."
-  - content: "Which of the following is a feature unique to GitHub Enterprise Cloud (GHEC)?"
+  - content: "Which of these features is unique to GitHub Enterprise Cloud (GHEC)?"
     choices:
     - content: "Requires on-premises deployment and infrastructure management"
       isCorrect: false
-      explanation: "Incorrect. This describes GitHub Enterprise Server (GHES), not GHEC. GHEC is hosted and managed by GitHub in the cloud."
+      explanation: "Incorrect. This answer describes GitHub Enterprise Server (GHES), not GHEC. GHEC is hosted and managed by GitHub in the cloud."
     - content: "Provides centralized user management with identity provider integration"
       isCorrect: true
-      explanation: "GHEC supports centralized user management and integrates with identity providers using SAML (for SSO) and SCIM (for user provisioning), which is a key feature of cloud-hosted enterprise solutions."
+      explanation: "GHEC supports centralized user management and integrates with identity providers using SAML (for SSO) and SCIM (for user provisioning). A key feature of cloud-hosted enterprise solutions."
     - content: "Must be installed and maintained by the organization's IT team"
       isCorrect: false
       explanation: "Incorrect. GHEC is maintained by GitHub and requires no installation or infrastructure management by the organization."
@@ -103,7 +103,7 @@ quiz:
       explanation: "Incorrect. If you need a self-hosted runner to communicate with GitHub via a proxy server, you must add all proxy configurations to your runner before starting it."
     - content: "Add the IP address or IP address range of your runners at repository level."
       isCorrect: false
-      explanation: "Incorrect. If your organization has configured an IP allowlist, you must add the IP address or IP address range of your self-hosted runners to the IP allowlist. IP allowlists are found in an organization's Settings."
+      explanation: "Incorrect. If your organization configures an IP allowlist, you must add the IP address or IP address range of your self-hosted runners to the IP allowlist. IP allowlists are found in an organization's Settings."
   - content: "What are encrypted secrets?"
     choices:
     - content: "Encrypted secrets are authentication tokens you can generate in your account settings."

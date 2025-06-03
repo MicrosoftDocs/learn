@@ -6,8 +6,8 @@ metadata:
   title: Module assessment
   description: Knowledge Check for Develop applications with Azure Database for MySQL - Flexible Server module.
   ms.date: 08/27/2024
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
   ms.custom:
@@ -70,4 +70,4 @@ quiz:
     - content: "Business Critical"
       isCorrect: false
       explanation: "Try again. The Business Critical tier is designed for high-performance database workloads. It may not be a cost-effective option for simple websites or applications."
-
+

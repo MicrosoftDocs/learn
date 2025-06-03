@@ -5044,6 +5044,43 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-images/4-generate-smart-cropped-thumbnail.yml",
       "redirect_url": "/azure/ai-services/computer-vision/overview-image-analysis"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/2-identify-options-for-face-detection-analysis-identification.yml",
+      "redirect_url": "/training/modules/detect-analyze-recognize-faces/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/4-detect-faces-computer-vision-service.yml",
+      "redirect_url": "/training/modules/analyze-images/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/5-understand-capabilities-of-face-service.yml",
+      "redirect_url": "/training/modules/detect-analyze-recognize-faces/2-understand-capabilities-of-face-service"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/6-compare-match-detected-faces.yml",
+      "redirect_url": "/training/modules/detect-analyze-recognize-faces/4-compare-match-detected-faces"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/7-implement-facial-recognition.yml",
+      "redirect_url": "/training/modules/detect-analyze-recognize-faces/4-compare-match-detected-faces"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/3-understand-considerations-for-face-analysis.yml",
+      "redirect_url": "/training/modules/detect-analyze-recognize-faces/5-understand-considerations-for-face-analysis"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images/4-train-image-classifier.yml",
+      "redirect_url": "/training/modules/classify-images/4-use-trained-image-classifier"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images/4-consider-options-for-labeling-images.yml",
+      "redirect_url": "/training/modules/detect-objects-images/4-use-trained-detector"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/4-evaluation-flows.yml",
+      "redirect_url": "/azure/ai-foundry/concepts/prompt-flow"
     }
   ]
 }
+

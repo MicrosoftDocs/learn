@@ -1,4 +1,4 @@
-In this unit, we'll create an Azure Function app that's invoked every 20 seconds using a timer trigger.
+In this unit, we create an Azure Function app and a timer trigger that we use to invoke it every 20 seconds.
 
 ## Create an Azure Function App
 
@@ -62,12 +62,12 @@ Let's create a timer trigger in your function.
 
 ## Test the timer
 
-Now that we've configured the timer, it will invoke the function on the interval we defined.
+Now that the timer is configured, it invokes the function on the interval we defined.
 
 1. On the **TimerTrigger1** pane, in the taskbar at the top of the screen, select **Code + Test**. The **Code + Test** pane appears.
 
     > [!NOTE]
-    > Azure automatically provides a default name for a new trigger that you create. **TimerTrigger1** is default value that you can change when you create a new trigger.
+    > Azure automatically provides a default name for a new trigger that you create. **TimerTrigger1** is a default value that you can change when you create a new trigger.
 
 1. The **Logs** session pane opens at the bottom of the page. Select the **App Insight Logs** drop-down, and then select **Filesystem Logs**. Select **OK** when the **Switching to filesystem based logs...** message displays.
 

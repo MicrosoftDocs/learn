@@ -8,9 +8,9 @@ Azure SQL Database is a great service for the storage of relational data. There 
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
-- Control network access to your Azure SQL Database using firewall rules
-- Control user access to your Azure SQL Database using authentication and authorization
-- Protect your data in transit and at rest
-- Audit and monitor your Azure SQL Database for access violations
+- Control network access to your Azure SQL Database using firewall rules.
+- Control user access to your Azure SQL Database using authentication and authorization.
+- Protect your data in transit and at rest.
+- Audit and monitor your Azure SQL Database for access violations.

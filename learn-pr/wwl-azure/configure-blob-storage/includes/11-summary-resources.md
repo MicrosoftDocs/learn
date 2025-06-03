@@ -26,7 +26,4 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 
 - [Azure Blob Storage Lifecycle Management](/azure/storage/blobs/storage-lifecycle-management-concepts) - Blob storage lifecycle management allows you to automate the movement and deletion of data based on predefined rules. This article explains how to configure and manage lifecycle policies to optimize storage costs and improve data management. 
 
-## Learn more with optional hands-on exercises
-
-- [Optimize performance and costs by using Blob Storage tiers](/training/modules/optimize-archive-costs-blob-storage/).
 

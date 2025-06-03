@@ -21,7 +21,8 @@ Virtual network service endpoints enable you to limit network access to Azure se
  -  Confirm access to storage account.
 
 
-> [!NOTE]
+> [!IMPORTANT]
+> Estimated time: 35 minutes.
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.

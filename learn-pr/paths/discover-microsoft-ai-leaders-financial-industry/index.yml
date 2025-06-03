@@ -3,16 +3,17 @@ uid: learn.wwl.discover-microsoft-ai-leaders-financial-industry
 metadata:
   title: Discover Microsoft AI for leaders in finance
   description: In this learning path, FSI business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and finance use cases.
-  ms.date: 10/25/2023
+  ms.date: 05/09/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: learning-path
 title: Discover Microsoft AI for leaders in finance
 prerequisites: |
-  * Basic understanding of finance concepts.
+  -   Basic understanding of AI concepts.
+  -   Basic understanding of finance concepts.
 summary: |
   In this learning path, FSI business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and finance use cases.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/discover-microsoft-ai-leaders-financial-industry.svg
 levels:
 - beginner
 roles:
@@ -23,7 +24,6 @@ products:
 - azure-openai
 subjects:
 - artificial-intelligence
-- data-management
 modules:
 - learn.wwl.leverage-ai-tools
 - learn.wwl.create-business-value

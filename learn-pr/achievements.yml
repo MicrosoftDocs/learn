@@ -5710,3 +5710,48 @@ achievements:
   title: Develop for storage on CDNs
   summary: Learn how the Azure Content Delivery Network (CDN) functions, how to control cache behavior, and how to perform actions by using .NET.
   iconUrl: /training/achievements/cdn-develop-storage.svg
+- uid: learn.backup-restore-azure-sql.badge
+  type: badge
+  title: Back up and restore your Azure SQL database
+  summary: Protect the data in your Azure SQL database and recover from data loss or corruption with backup and restore.
+  iconUrl: /training/achievements/backup-restore-azure-sql.svg
+- uid: learn.azure.create-foundation-modern-apps.badge
+  type: badge
+  title: Architect modern applications using Azure SQL Database
+  summary: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
+  iconUrl: /training/achievements/create-foundation-modern-apps.svg
+- uid: learn-sqlserver.use-sql-server-query-tuning-assistant.badge
+  type: badge
+  title: Use the SQL Server Query Tuning Assistant
+  summary: Learn how the Query Tuning Assistant (QTA) works alongside the Query Store to compare query performance statistics and find queries that are regressing due to changing compatibility levels.
+  iconUrl: /training/achievements/sqlserver/using-the-sql-server-query-tuning-assistant.svg
+- uid: learn.azure-sql-replication.badge
+  type: badge
+  title: Data tracking and synchronization with Azure SQL Database
+  summary: "This module introduces you to several data tracking, loading, and streaming tools that you can use to track or synchronize data changes from your Azure SQL Database to other destinations. More specifically, we cover: change data capture (CDC) and change tracking."
+  iconUrl: /training/achievements/learn-azure-sql-replication.svg
+- uid: learn.make-recommendations-ai-personalizer.badge
+  type: badge
+  title: Make recommendations with Azure AI Personalizer
+  summary: Learn how to use Azure AI Personalizer to empower your apps with smarter decision making through improved recommendations.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.apply-prompt-engineering-azure-openai.badge
+  type: badge
+  title: Apply prompt engineering with Azure OpenAI Service
+  summary: Prompt engineering in Azure OpenAI is a technique that involves designing prompts for natural language processing models. This process improves accuracy and relevancy in responses, optimizing the performance of the model.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.build-language-solution-azure-openai.badge
+  type: badge
+  title: Build natural language solutions with Azure OpenAI Service
+  summary: This module provides engineers with the skills to begin building apps that integrate with the Azure OpenAI Service.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.generate-code-azure-openai.badge
+  type: badge
+  title: Generate code with Azure OpenAI Service
+  summary: This module shows engineers how to use the Azure OpenAI Service to generate and improve code.
+  iconUrl: /learn/achievements/generic-badge.svgz
+- uid: learn.azure.cloud-adoption-framework-plan.badge
+  type: badge
+  title: Prepare for cloud adoption with a data-driven plan
+  summary: Adopting the cloud might depend on many moving parts. Starting with a sound plan built by experts creates clarity. Integrating data about your current environment and long-term objectives refines the plan to reflect realistic expectations and assignments.
+  iconUrl: /training/achievements/cloud-adoption-framework-plan.svg

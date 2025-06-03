@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-computer-vision.exercise
+title: Exercise - Analyze images in Azure AI Foundry portal
+metadata:
+  title: Exercise - Analyze images in Azure AI Foundry portal
+  description: Exercise - Analyze images in Azure AI Foundry portal
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 05/12/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 25
+content: |
+  [!include[](includes/6-exercise.md)]
+
