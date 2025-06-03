@@ -35,7 +35,7 @@ To find conversations where you're mentioned:
 
 This makes it easy to keep track of discussions that require your input.
 
-### Filtering notifications
+### Filter notifications
 
 GitHub allows you to filter notifications using watch settings:
 
@@ -46,7 +46,7 @@ GitHub allows you to filter notifications using watch settings:
 
 You can manage watch settings by selecting **Watch** at the top of a repository page.
 
-### Configuring notification settings
+### Configure notification settings
 
 You can configure where you receive notifications:
 
