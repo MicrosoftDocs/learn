@@ -98,7 +98,7 @@ To star a repository:
 1. Visit the repository's main page.
 2. Select the ⭐ **Star** button in the top-right corner.
 
-You can view your starred repositories anytime by going to your GitHub profile and selecting the **Stars** tab.
+You can view your starred repositories anytime by visiting your GitHub profile and clicking the Stars tab. To keep things organized, you can also create separate lists to help you remember why you starred each repository.
 
 > \[!TIP]
 > Starred repos are also used by GitHub’s recommendation engine to suggest related content to you.
