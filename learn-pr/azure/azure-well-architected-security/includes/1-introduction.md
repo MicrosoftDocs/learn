@@ -16,13 +16,7 @@ To measure how secure your overall strategy is, start with these questions:
 - Do you understand how valuable your system is to an attacker and the impact if it's compromised?
 - Can the workload and operations quickly detect, respond to, and recover from disruptions?
 
-Incorporating the Microsoft Zero Trust model helps guide your system design and reduce security risks:
-
-- **Verify explicitly** so that only trusted users can do what they're supposed to, from places you expect. This practice helps stop attackers from pretending to be real users.
-
-- **Use least-privilege access** by giving people just the permissions they need, only for as long as they need them, and only to the things they need access to. This practice keeps attackers from misusing extra permissions that aren't necessary.
-
-- **Assume breach** by planning as if your defenses might fail. Add backup protections to reduce the impact if something goes wrong. This practice helps you stay ahead by thinking like an attacker.
+Incorporating the [Microsoft Zero Trust model](/security/zero-trust/zero-trust-overview) helps guide your system design and reduce security risks.
 
 The concepts described in this module aren't all-inclusive of security in a workload, but they represent the core principles and some of their key approaches. For a complete overview of the Well-Architected Framework pillars, check out the [Azure Well-Architected Framework](/azure/well-architected) as you start planning and designing your architecture.
 
