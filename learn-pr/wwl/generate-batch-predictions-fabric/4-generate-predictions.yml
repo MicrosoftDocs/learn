@@ -6,7 +6,7 @@ metadata:
   description: Apply a model in Microsoft Fabric to generate predictions. Save the new data to a Delta table for further processing.
   author: JulianePadrao
   ms.author: jupadrao
-  ms.date: 4/24/2025
+  ms.date: 5/9/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

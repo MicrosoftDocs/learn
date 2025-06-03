@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-computer-vision
+metadata:
+  title: Get started with computer vision in Azure
+  description: Azure AI Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios. Learn how to use the Azure AI Vision service to analyze images.
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 05/16/2025
+  ms.service: azure
+  ai-usage: ai-assisted
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+title: Get started with computer vision in Azure
+summary: Azure AI Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios.
+abstract: Learn how to use the Azure AI Vision service to analyze images.
+prerequisites: Ability to navigate the Azure portal
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- ai-services
+subjects:
+- classification-analysis
+units:
+- learn.wwl.get-started-computer-vision.introduction
+- learn.wwl.get-started-computer-vision.azure-ai-vision
+- learn.wwl.get-started-computer-vision.image-service
+- learn.wwl.get-started-computer-vision.face-service
+- learn.wwl.get-started-computer-vision.azure-ai-foundry
+- learn.wwl.get-started-computer-vision.exercise
+- learn.wwl.get-started-computer-vision.knowledge-check
+- learn.wwl.get-started-computer-vision.summary
+badge:
+  uid: learn.wwl.get-started-computer-vision.badge
+

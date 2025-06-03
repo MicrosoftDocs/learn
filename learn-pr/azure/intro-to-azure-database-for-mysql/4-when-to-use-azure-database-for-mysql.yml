@@ -6,11 +6,11 @@ metadata:
   title: When to use Azure Database for MySQL
   description: When to use Azure Database for MySQL
   ms.date: 08/21/2024
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/4-when-to-use-azure-database-for-mysql.md)]
-
+

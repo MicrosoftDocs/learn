@@ -4,11 +4,11 @@ title: Exercise - Improving classification models
 metadata:
   title: Exercise - Improving classification models
   description: Exercise about improving classification models in machine learning
-  ms.date: 07/20/2024
+  ms.date: 05/12/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 12
 sandbox: true
 notebook: notebooks/6-7-exercise-improve-classification.ipynb
-
+

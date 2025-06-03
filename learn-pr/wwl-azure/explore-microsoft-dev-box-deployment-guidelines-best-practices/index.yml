@@ -3,14 +3,17 @@ uid: learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices
 metadata:
   title: Explore Microsoft Dev Box deployment guidelines and best practices
   description: "This module describes the details and the best practices for deploying Microsoft Dev Box in your organization."
-  ms.date: 05/08/2025
+  ms.date: 05/12/2025
   author: wwlpublish
   ms.author: fkhan
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: dev-box
   ai-usage: human-only
 title: Explore Microsoft Dev Box deployment guidelines and best practices
-summary: In this module, you will learn about Microsoft Dev Box deployment guidelines and best practices for the service including the various phases of planning, architecture, deployment workflows, testing, and rollout strategy.
+summary: In this module, you'll learn to plan, deploy, and manage Microsoft Dev Box using manual or automated methods, covering prerequisites, architecture, security, and roll out—empowering IT admins and platform engineers to implement at scale.
 abstract: |
   By the end of this module, you'll be able to:
 
