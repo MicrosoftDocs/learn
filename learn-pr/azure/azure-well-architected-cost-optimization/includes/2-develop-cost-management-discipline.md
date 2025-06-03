@@ -26,8 +26,6 @@ A cost model gives you a clearer picture of what things might cost, like infrast
 - They combine rough estimates for infrastructure, team costs, and expected revenue to build a starting model.
 - This model helps them predict costs over time as usage increases and gives them a tool that they can keep refining as they make more decisions.
 
----
-
 ## Set a realistic budget
 
 **Make sure your budget covers everything that you have to include, like key features, support, training, and room to grow.**
@@ -46,15 +44,13 @@ After you set a budget, you can set spending limits and get alerts if you're abo
 - As the team refines their cost model, they come up with a confident budget that they can share with stakeholders.
 
 - This budget gives their architect a clear financial target to design around. As more is learned about the implementation and the operations necessary, the workload team expects to need to renegotiate budget a bit so they leave a small buffer.
-- The goal is to stay flexible, but stick to the budget as closely as possible.
-
----
+- The goal is to stay flexible but stick to the budget as closely as possible.
 
 ## Encourage open communication
 
-**Encourage upstream communication from architects to application owners.**
+**Share how design changes based on production insights could affect costs.**
 
-Cost-saving ideas often come from the ground up, and that feedback can be just as valuable as the numbers. You give your team more power when you use their ideas to shape designs and business decisions.
+When your organization makes budget adjustments, real-world learnings from production feedback are just as important as the numbers.
 
 *Contoso's challenge*
 

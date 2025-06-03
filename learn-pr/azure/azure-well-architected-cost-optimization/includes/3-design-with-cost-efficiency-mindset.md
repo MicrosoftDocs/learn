@@ -11,7 +11,7 @@ The WMS solution is a .NET application that runs on Internet Information Service
 
 ## Understand the full cost of your design
 
-**Make sure you look at the total cost of your design, not just the technology and automation, but also the acquisition, training, and changes needed to make it work. Your design should meet all the key requirements including return on investment (ROI) and still be flexible enough to grow with your needs.**
+**Establish a cost baseline that includes the cost for technology, automation, acquisition, training, and change management. Your design should meet all the key requirements including return on investment (ROI) and still be flexible enough to grow with your needs.**
 
 Keeping ROI in mind helps avoid overbuilding something that ends up costing more than it's worth.
 
@@ -30,30 +30,11 @@ Keeping ROI in mind helps avoid overbuilding something that ends up costing more
 
 - During the migration, the team plans to clean up some of the technical debt that makes sense to tackle now. That way, after everything's running on Azure, they'll be in a better spot to keep improving the platform while still keeping the ROI in mind when making those choices.
 
-## Refine the design
-
-**Fine-tune the design by focusing on services that save money, don't need extra investment, or won't affect how things work. Prioritize based on what suits your business model and the technology choices that provide the most value.**
-
-You might find cheaper options that let you scale up or down easily, or you might decide to use tools that you've already invested in. When prioritizing, think about what's critical for running the workload, what affects runtime and operations, and what helps the team work smarter.
-
-*Contoso's challenge*
-
-- The existing workload runs on a hyper-converged (HCI) appliance, and Contoso gets billed for compute, network, and storage. 
-
-- The workload has deployed the preproduction and production environments on Windows virtual machines.
-- They use GitHub Actions with self-hosted runners to run GitHub Actions jobs.
-
-*Applying the approach and outcomes*
-
-- After the team checks out several cloud-native options, they choose App Service for the web components. It supports Windows IIS apps with minimal changes and no major training needed.
-
-- They're sticking with GitHub Actions and self-hosted runners, but moving them to a virtual machine scale set that can scale down to zero nodes when idle.
-
 ## Design your architecture to support cost guardrails
 
-**Build your architecture in a way that helps keep costs under control. You can use platform tools, policies, design patterns, or automation to stay within budget.**
+**Set up cost limits in your architecture to keep spending within a safe range, and ensure that your team follows those limits.**
 
-Using governance policies or built-in design patterns can help avoid surprise charges or unapproved spending.
+Enforcing limits helps avoid surprise charges and makes sure you only use what you actually budget for.
 
 *Contoso's challenge*
 
@@ -69,3 +50,27 @@ Using governance policies or built-in design patterns can help avoid surprise ch
 - They plan to set scale limits for the App Service plans.
 - They plan to set up a deny policy to block certain expensive virtual machine SKUs from being used.
 - They plan to add automation to save on storage. Older or less-used data will automatically move to cheaper storage tiers like cold or archive. This kind of automation wasn't possible in their old HCI environment.
+
+## Optimize your deployment environments
+
+**Use different setups for each stage of development, and only run as many environments as you need. Production should be where most of your costs go.**
+
+You can save money by understanding that not all environments need to match production. Nonproduction environments can have different features, SKUs, instance counts, and even logging.
+
+You can also save costs by creating preproduction environments only when you need them, and shutting them down when you're done.
+
+*Contoso's challenge*
+
+- Contoso sets up all their environments, including development, test, preproduction, and production, the same way.
+
+- Even environments that sit idle most of the time arere using full-scale resources, driving up costs.
+- They also don't have automation in place to turn environments on or off based on actual usage, which leads to a lot of waste.
+
+*Applying the approach and outcomes*
+
+- Development moves to smaller, cheaper virtual machines that only run when needed.
+
+- Test environments are set to autoscale, but only during active testing times.
+- Preproduction setups are created on-demand by using templates and automatically shut down after use.
+- They add monitoring and automation to make sure environments only run when they're actually being used.
+- By rightsizing their environments and automating when they're active, Contoso cut cloud costs significantly, without sacrificing speed or quality in their software delivery.

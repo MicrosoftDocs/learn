@@ -9,13 +9,13 @@ Keep an eye on how changes affect your costs. Check in regularly to see if your 
 
 Contoso Air provides a baggage tracking solution for airlines. The workload is hosted in Azure and runs on Azure Kubernetes Service (AKS) with Azure Cosmos DB for its database and uses Azure Event Hubs for messaging. The workload is deployed in both the West US and East US regions.
 
-## Continuously evaluate and optimize your environment and support costs
+## Track and monitor your spending
 
 **Use a cost tracking system to regularly review how much you're spending on resources, data, and support. If you have underused resources, think about shutting them down, replacing them, or reworking them to be more efficient.**
 
-Reduce costs by using what you actually need. If resources are sitting idle or oversized, think about shrinking them, switching to cheaper options, or removing them altogether. Knowing how pricing works helps you make smarter decisions that match your cost model and avoid unexpected charges.
+Understanding where your money goes is the first step to controlling it. By tagging resources, classifying expenses, and setting up alerts, you can track spending across teams, services, and environments. 
 
-You might also be able to save some costs by evaluating the use of your support contracts with your technology suppliers and scaling them down.
+This visibility helps you catch unexpected charges early, support showback or chargeback models, and make smarter decisions about where to cut or invest.
 
 *Contoso's challenge*
 
@@ -31,11 +31,11 @@ You might also be able to save some costs by evaluating the use of your support 
 - The team optimizes their Azure costs by deleting the unused VMs and moving the old data to Archive storage. They begin working more closely with their cloud provider to make good use of their consulting services.
 - They add a recurring task to their backlog to regularly review and optimize their workload costs going forward.
 
-## Continuously tune your workload
+## Tune your workload continuously
 
 **Continuously adjust architecture design decisions, resources, code, and workflows based on ROI data.**
 
-Review your metrics, performance, billing, and feature usage regularly. You might find small tweaks that save money and make things run smoother.
+Cloud environments evolve, and so should your architecture. Review your metrics, performance, billing, and feature usage regularly. You might find small tweaks that save money and make things run smoother. Even small adjustments can add up to big savings over time.
 
 *Contoso's challenge*
 
@@ -49,24 +49,25 @@ Review your metrics, performance, billing, and feature usage regularly. You migh
 
 - They also notice that their compute platform now includes a new feature in their chosen SKU that replaces some of the authentication code. Using this feature means less code to maintain and test.
 
-## Optimize your deployment environments
+## Keep your cloud environment tidy
 
-**Use different setups for each stage of development, and only run as many environments as you need. Production should be where most of your costs go.**
+**Make it a habit to regularly check for unused resources or old data in your cloud setup and clean them out. Over time, these components that were once useful can stick around and quietly accrue costs. Keep your environment clean to help keep things efficient and save money.**
 
-You can save money by understanding that not all environments need to match production. Nonproduction environments can have different features, SKUs, instance counts, and even logging.
-
-You can also save costs by creating preproduction environments only when you need them, and shutting them down when you're done.
+Shutting down resources that you're not using and deleting data that you don't need frees up budget for more important work.
 
 *Contoso's challenge*
 
-- The workload team is spending more on preproduction than production, which might make sense in some cases, but it feels excessive for this workload.
+- Over the past year, the team created several temporary environments for testing new features and running performance experiments. Many of these environments were never cleaned up.
 
-- They've built preproduction to closely match production, which gives them confidence that things will behave the same.
+- They discovered multiple Event Hubs namespaces and Azure Cosmos DB containers that haven’t received any traffic in months but are still incurring storage and throughput costs.
+- Old baggage tracking data from previous airline partners is still stored in hot-access tiers, even though it’s no longer needed for operations or compliance.
+- The team lacks a regular process for identifying and removing unused resources, so clutter continues to build up unnoticed.
 
 *Applying the approach and outcomes*
 
-- After the team thinks it through, they decide it's worth taking on a little extra risk to save money by not making every environment exactly the same.
+- The team sets up a monthly cleanup routine that includes tagging resources with expiration dates and reviewing usage metrics to flag idle services.
 
-- The team decides to combine a few of the test environments into the same infrastructure and to shut down unused environments overnight.
-- The team also finds ways to do more early inner-loop development and testing on local developer workstations.
-- These small changes in how they build and test have freed up budget they can now use to invest in automation.
+- They decommission unused AKS node pools, delete inactive Event Hubs, and consolidate Azure Cosmos DB containers where possible.
+- For historical baggage data, they implement lifecycle policies to automatically archive or delete data based on age and access patterns.
+- They also review their resource SKUs and downgrade services that are over-provisioned.
+- These actions help them reduce unnecessary spend, improve operational efficiency, and keep their cloud environment clean and manageable.
