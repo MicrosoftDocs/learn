@@ -26,7 +26,7 @@ Wide World Importers has databases in Oracle and SAP HANA in addition to SQL Ser
 
 ## Shared codebase
 
-On both Linux and Windows, SQL Server uses the SQL Platform Abstraction Layer (SQLPAL), which allows SQL Server to run on all the supported operating systems. Therefore, developers can write applications using their favorite language (such as .NET, PHP, node.JS, Java, or Python) and expect the application to run the same way anywhere, whether they're using SQL Server running on Windows, Linux, Linux containers, Azure SQL Edge, or Azure SQL Database.
+On both Linux and Windows, SQL Server uses the SQL Platform Abstraction Layer (SQLPAL), which allows SQL Server to run on all the supported operating systems. Therefore, developers can write applications using their favorite language (such as .NET, PHP, node.JS, Java, or Python). They can also expect the application to run the same way anywhere, whether they're using SQL Server running on Windows, Linux, Linux containers, Azure SQL Edge, or Azure SQL Database.
 
 ## Containers
 

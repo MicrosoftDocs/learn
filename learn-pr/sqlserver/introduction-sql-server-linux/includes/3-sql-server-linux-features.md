@@ -80,7 +80,7 @@ ALTER DATABASE <database_name> SET COMPATIBILITY_LEVEL = 160;
 
 SQL Server on Linux supports advanced security features such as Always Encrypted, row-level security and dynamic data masking to protect data on disk, in memory, or in transit. These features are all supported in all editions, including Standard Edition:
 
-- **Transparent Data Encryption (TDE)** encrypts data-at-rest when it's stored in database files. The data is protected against malicious users both in the database and in backups.
+- **Transparent Data Encryption (TDE)** encrypts data-at-rest when the data is stored in database files. The data is protected against malicious users both in the database and in backups.
 
 - **Always Encrypted** ensures that only users who own data can view and process it. Users who manage data, like the database administrators, can't view it. If you use Always Encrypted:
 
@@ -97,7 +97,7 @@ SQL Server on Linux supports advanced security features such as Always Encrypted
 
 - **Data Discovery and Classification** identifies, labels, and reports on the sensitive data in your databases, such as personal data. It's a tool within SQL Server Management Studio (SSMS) that makes it easier to comply with data privacy legislation and harden the databases that contain the most valuable data. Data Discovery and Classification is a service that is part of the Advanced Data Security (ADS) package.
 
-- **Vulnerability Assessment** identifies vulnerabilities in your databases. Once you're aware of the weaknesses that your server configuration and database designs might cause, you can mitigate them and prevent common attacks. Vulnerability Assessment is another ADS service.
+- **Vulnerability Assessment** identifies vulnerabilities in your databases. Once you're aware of the weaknesses that your server configuration and database designs might cause, you can prevent common attacks by mitigating them. Vulnerability Assessment is another ADS service.
 
 ## SQL Server Agent
 
@@ -118,7 +118,7 @@ sudo systemctl restart mssql-server
 
 SQL Server has many ways to specify the level of fault tolerance that's acceptable. SQL Server on Linux supports Always On availability groups and Always On failover cluster instances. Both of these options require the `mssql-server-ha` package installed on each server. Linux supports clustering via **Pacemaker**, which is an equivalent to Windows Server Failover Clustering (WSCF), albeit not as tightly integrated into the host operating system.
 
-If there's more flexibility in what's acceptable for downtime, Log Shipping via SQL Agent can provide warm standbys, which you use to recover from server loss.
+If there's more flexibility in what's acceptable for downtime, Log Shipping via SQL Agent can provide a warm standby, which you use to recover from server loss.
 
 Another solution for SQL Server on Linux is its ability to run in containers orchestrated with tools such as Kubernetes. Orchestration tools ensure there's always a node running SQL Server. If that node fails, another instance is bootstrapped automatically. When more robust availability is required, an Always On availability group can be run in containers.
 
@@ -126,9 +126,9 @@ Another solution for SQL Server on Linux is its ability to run in containers orc
 
 ### PolyBase
 
-Many organizations have data in different systems. That might be because different teams had different requirements when they selected their system, because you merged with another company, or for some other historical reason. Traditionally, it's been difficult to integrate data across these system boundaries to answer questions for users.
+Many organizations have data in different systems. Perhaps, different teams had different requirements when they selected their system, or the company merged with another company, or for some other historical reason. Traditionally, it's difficult to integrate data across these system boundaries to answer questions for users.
 
-Suppose you have data in SQL Server that records sales for your product catalog, but the data that records how much it costs to make your products is in an SAP HANA database. You want to create a report that analyzes profit margins. You'll need information from both databases. In the past, you could:
+Suppose you have data in SQL Server that records sales for your product catalog, but the data that records how much it costs to make your products, is in an SAP HANA database. You want to create a report that analyzes profit margins, so you need information from both databases. In the past, you could:
 
 - Use an Extract, Transform, Load (ETL) package to migrate data from one database system to the other.
 - Query both databases and then write some custom code to join and integrate the results into a single report.
@@ -142,7 +142,7 @@ With PolyBase, you can create an external table in SQL Server. An external table
 
 ### Machine Learning Services
 
-In machine learning, large datasets are used to model the behavior of some complex system. When a model has been developed that accurately predicts the observed behavior of the system, it's used to predict how that system might behave in the future. Sophisticated libraries of code, often open-source, have been developed that can prepare your dataset, add features to it, train a model, evaluate the accuracy of the trained model, and deploy those models for other clients to call. These libraries are written in the R and Python languages.
+In machine learning, large datasets are used to model the behavior of some complex system. When a model is developed that accurately predicts the observed behavior of the system. The model is used to predict how that system might behave in the future. Sophisticated code libraries, often open-source, were developed in the R and Python languages. These libraries can prepare your dataset, add features to it, train a model, evaluate the accuracy of the trained model, and deploy those models for other clients to call.
 
 SQL Server Machine Learning Services allows you to run these R and Python scripts against the data in your SQL Server databases. You can add the popular machine learning and data science frameworks, including PyTorch, TensorFlow, SciKit-Learn, and others.
 
@@ -155,7 +155,7 @@ SQL Server has native support for storing and querying graph-based data. SQL Ser
 
 ### Full-text search
 
-Full-text searches allow users to run queries against text data that respect linguist rules. For example, when you search for the word `run`, a full-text search returns results that include forms of the word `run`, such as `ran` and `running`.
+Full-text searches allow users to run queries against text data that respect linguist rules. For example, when you search for the word `run`, a full-text search returns a result that includes forms of the word `run`, such as `ran` and `running`.
 
 This feature isn't installed by default. On Linux, you enable it by installing the `mssql-server-fts` package.
 

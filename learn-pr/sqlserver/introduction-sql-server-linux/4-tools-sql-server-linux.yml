@@ -3,7 +3,7 @@ uid: learn-sqlserver.introduction-sql-server-linux.4-tools-sql-server-linux
 title: Tools for SQL Server on Linux
 metadata:
   title: Tools for SQL Server on Linux
-  description: In this unit, you will learn about the tools and software packages that you need to administer SQL Server on Linux.
+  description: In this unit, you learn about the tools and software packages that you need to administer SQL Server on Linux.
   ms.date: 04/25/2023
   author: rwestmsft
   ms.author: randolphwest
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "To make sure that you're complying with legislation, you want to discover what Personally Identifiable Information you have in your database. Which tool should you be using?"
+  - content: "To make sure that you're complying with legislation, you want to discover what personal data you have in your database. Which tool should you be using?"
     choices:
     - content: "Azure Data Studio"
       isCorrect: false
@@ -29,12 +29,12 @@ quiz:
       explanation: "To discover specific data, use Data Discovery and Classification. This tool is only available in SSMS."
   - content: "Which command-line tool should be recommended if a user wants to write Transact-SQL in a rich multi-line editor with syntax highlighting?"
     choices:
-    - content: mssql-conf
+    - content: "mssql-conf"
       isCorrect: false
       explanation: "mssql-conf is used for configuring SQL Server on Linux. It has no ability to write Transact-SQL."
-    - content: mssql-cli
+    - content: "mssql-cli"
       isCorrect: true
       explanation: "mssql-cli provides Transact-SQL IntelliSense syntax highlighting, pretty formatting for query results, and a multi-line edit mode."
-    - content: mssql-tools
+    - content: "mssql-tools"
       isCorrect: false
       explanation: "mssql-tools is a package that makes bcp and sqlcmd available to Linux."
