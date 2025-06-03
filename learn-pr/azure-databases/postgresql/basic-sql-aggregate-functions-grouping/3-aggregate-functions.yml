@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-aggregate-functions-grouping.aggregate-functions
+uid: learn.azure-database.postgresql.basic-sql-aggregate-functions-grouping.aggregate-functions
 title: Aggregate Functions
 metadata:
   title: Aggregate Functions
   description: "This unit introduces key SQL aggregate functions such as COUNT, SUM, AVG, MIN, and MAX in the context of PostgreSQL. It explains how each function works through examples using the sales database, helping learners summarize and analyze data by calculating totals, averages, and identifying extreme values."
-  ms.date: 05/14/2025
+  ms.date: 05/23/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit

@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn.wwl-azure.basic-sql-limit-offset-order-by
+uid: learn.azure-databases.postgresql.basic-sql-limit-offset-order-by
 metadata:
   title: "Organizing data: Using LIMIT, OFFSET, and ORDER BY clauses"
   description: "Learn to control the size and order of query results in PostgreSQL with the LIMIT, OFFSET, and ORDER BY clauses. Master pagination, sorting, and optimizing performance with these essential SQL tools."
-  ms.date: 05/14/2025
+  ms.date: 05/23/2025
   author: mpopovic
   ms.author: mpopovic
   ms.topic: module-standard-task-based
@@ -162,10 +162,10 @@ products:
 subjects:
   - databases
 units:
-- learn.wwl-azure.basic-sql-limit-offset-order-by.introduction
-- learn.wwl-azure.basic-sql-limit-offset-order-by.sample-database-overview
-- learn.wwl-azure.basic-sql-limit-offset-order-by.order-by
-- learn.wwl-azure.basic-sql-limit-offset-order-by.limit-offset
-- learn.wwl-azure.basic-sql-limit-offset-order-by.summary
+- learn.azure-database.postgresql.basic-sql-limit-offset-order-by.introduction
+- learn.azure-database.postgresql.basic-sql-limit-offset-order-by.sample-database-overview
+- learn.azure-database.postgresql.basic-sql-limit-offset-order-by.order-by
+- learn.azure-database.postgresql.basic-sql-limit-offset-order-by.limit-offset
+- learn.azure-database.postgresql.basic-sql-limit-offset-order-by.summary
 badge:
-  uid: learn.wwl-azure.basic-sql-limit-offset-order-by.badge
+  uid: learn.azure-database.postgresql.basic-sql-limit-offset-order-by.badge
