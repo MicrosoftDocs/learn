@@ -4,7 +4,7 @@ title: SQL Server on Linux features
 metadata:
   title: SQL Server on Linux features
   description: In this unit, you learn the features of SQL Server, so that you can decide whether it supports a specific workload.
-  ms.date: 04/25/2023
+  ms.date: 06/03/2025
   author: rwestmsft
   ms.author: randolphwest
   manager: jroth
@@ -18,7 +18,7 @@ quiz:
   questions:
   - content: "What features does SQL Server on Linux provide to support business continuity?"
     choices:
-    - content: "Always On availability groups, Always On failover cluster instances, and Log shipping."
+    - content: "Always On availability groups, Always On failover cluster instances, and log shipping."
       isCorrect: true
       explanation: "These three features all support high availability and are key to providing business continuity."   
     - content: "Always Encrypted, row-level security, and dynamic data masking."
