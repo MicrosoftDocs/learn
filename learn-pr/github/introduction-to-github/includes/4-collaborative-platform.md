@@ -46,7 +46,7 @@ In this section we go over:
 - Enabling discussions in your repository.
 - Creating a new discussion and various discussion categories.
 
-Let’s review how to enable a discussion in your repository.
+Let’s review how to enable discussions in your repository.
 
 ### Enabling a discussion in your repository
 
