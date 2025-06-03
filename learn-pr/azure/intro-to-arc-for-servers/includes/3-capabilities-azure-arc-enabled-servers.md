@@ -19,7 +19,7 @@ A number of Azure Arc benefits are independent of the resource type, because the
 There are also benefits specific to Azure Arc-enabled servers, such as:
 
 - The ability to apply Azure Virtual Machine (VM) extensions to automate configuration of Azure and non-Azure Windows and Linux servers in a consistent manner.
-- The Support for Azure Policy guest configuration. Azure Policy supports auditing Azure Arc-enabled servers in the same way as their Azure-resident counterparts. This allows you to use the same approach to evaluate whether configurations of all servers in your environment comply with organizational standards.
+- Support for Azure Policy guest configuration. Azure Policy supports auditing Azure Arc-enabled servers in the same way as their Azure-resident counterparts. This allows you to use the same approach to evaluate whether configurations of all servers in your environment comply with organizational standards.
 
 ### What are VM extensions and how are they used with Azure Arc-enabled servers?
 
