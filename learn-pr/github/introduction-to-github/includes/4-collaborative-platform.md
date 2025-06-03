@@ -48,7 +48,7 @@ In this section we go over:
 
 Let’s review how to enable discussions in your repository.
 
-### Enabling a discussion in your repository
+### Enabling discussions in your repository
 
 Repository owners and people with Write access can enable GitHub Discussions for a community on their public and private repositories. The visibility of a discussion is inherited from the repository the discussion is created in.
 
