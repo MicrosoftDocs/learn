@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/12-azure-dedicated-hardware-security-module.md)]
+  [!include[](includes/10-azure-dedicated-hardware-security-module.md)]

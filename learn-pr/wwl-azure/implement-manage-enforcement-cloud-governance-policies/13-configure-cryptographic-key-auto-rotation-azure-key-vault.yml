@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/15-configure-cryptographic-key-auto-rotation-azure-key-vault.md)]
+  [!include[](includes/13-configure-cryptographic-key-auto-rotation-azure-key-vault.md)]

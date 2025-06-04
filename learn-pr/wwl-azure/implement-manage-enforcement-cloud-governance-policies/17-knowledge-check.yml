@@ -14,7 +14,7 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/19-knowledge-check.md)]
+  [!include[](includes/17-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:

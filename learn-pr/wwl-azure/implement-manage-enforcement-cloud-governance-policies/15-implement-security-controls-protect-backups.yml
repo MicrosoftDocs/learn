@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/17-implement-security-controls-protect-backups.md)]
+  [!include[](includes/15-implement-security-controls-protect-backups.md)]

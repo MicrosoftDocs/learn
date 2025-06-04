@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-deploy-secure-infrastructures.md)]
+  [!include[](includes/5-deploy-secure-infrastructures.md)]

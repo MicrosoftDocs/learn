@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/18-implement-security-controls-asset-management.md)]
+  [!include[](includes/16-implement-security-controls-asset-management.md)]

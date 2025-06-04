@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/11-create-key-vault-use-azure-portal.md)]
+  [!include[](includes/9-create-key-vault-use-azure-portal.md)]
