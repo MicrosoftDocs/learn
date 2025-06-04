@@ -71,7 +71,7 @@ If you haven't already, create a fork of the **mslearn-test-bicep-code-using-git
 
 1. If a dialog prompts you to allow an extension to open the repository URI, select **Open**.
 
-1. Create a folder to use for the repository, and then click **Select Repository Location**.
+1. Create a folder to use for the repository, and then click **Select as repository destination**.
 
 1. You're using this repository for the first time, so you're prompted to sign in.
 
