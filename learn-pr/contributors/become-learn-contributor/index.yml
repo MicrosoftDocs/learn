@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: $learn.become-learn-contributor
 metadata:
-  title: Become a Microsoft Learn contributor
-  description: Discover how to contribute to Microsoft Learn! Become a contributor by improving documentation content, posting in Microsoft Q&A, creating a Collection, and sharing Microsoft Learn resources.
-  ms.date: 10/4/2023
+  title: Become a Microsoft Learn Contributor
+  description: Discover how to contribute to Microsoft Learn! Help improve documentation content, post in Microsoft Q&A, create a Collection, and share Microsoft Learn resources.
+  ms.date: 06/03/2025
   author: sgaspari815
   ms.author: v-sgaspari
   ms.topic: module-standard-task-based
@@ -39,5 +39,4 @@ units:
 - learn.become-learn-contributor.knowledge-check
 - learn.become-learn-contributor.summary
 badge:
-  uid: |
-    learn.become-learn-contributor.badge
+  uid: learn.become-learn-contributor.badge
