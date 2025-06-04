@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.wwl.work-smarter-with-copilot-in-microsoft-fabric
+metadata:
+  title: Work smarter with Copilot in Microsoft Fabric
+  description: Explore how to work smarter with Copilot in Microsoft Fabric. Learn how to integrate, transform, store data, and create insightful reports using Copilot in Microsoft Fabric.
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: learning-path
+title: Work smarter with Copilot in Microsoft Fabric
+prerequisites: |
+  You should be familiar with basic data concepts and terminology, including data engineering, modeling, and analysis.
+summary: |
+  Explore how to work smarter with Copilot in Microsoft Fabric. Learn how to integrate, transform, store data, and create insightful reports using Copilot in Microsoft Fabric.
+iconUrl: /training/achievements/get-started-fabric.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+products:
+- fabric
+subjects:
+- data-analytics
+- data-engineering
+- data-integration
+- data-management
+- data-modeling
+- data-storage
+- data-visualization
+modules:
+- learn.wwl.introduction-to-copilot-fabric
+- learn.wwl.get-started-copilot-fabric-data-engineering
+- learn.wwl.get-started-copilot-fabric-data-warehouse
+- learn-bizapps.power-bi-copilot
+- learn.wwl.implement-fabric-data-agents
+- learn.wwl.manage-copilot-fabric
+trophy:
+  uid: learn.wwl.get-started-fabric.trophy
