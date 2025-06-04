@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-joining-tables.left-right-join
+uid: learn.azure-database.postgresql.basic-sql-join-tables.left-right-join
 title: LEFT and RIGHT JOIN
 metadata:
   title: LEFT and RIGHT JOIN

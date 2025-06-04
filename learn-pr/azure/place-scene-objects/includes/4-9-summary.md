@@ -1,6 +1,6 @@
 In this module, you learned how to position objects on the scene by using the Transform component, creating parent objects, organizing a set of game objects, and configuring solvers.
 
-There are pre-configured components and features in the Mixed Reality Toolkit that you can use to automate time-consuming tasks. Using these components can save time and help you reach your goal swiftly.
+There are preconfigured components and features in the Mixed Reality Toolkit you can use to automate time-consuming tasks. Using these components can save time and help you reach your goal swiftly.
 
 ## Next steps
 
@@ -13,4 +13,4 @@ You can complete your mixed reality experience by building the Unity project and
 
 ## Further reading
 
-* Learn more about different types of [Solvers](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver).
+* Learn more about different types of [Solvers](/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/solvers/solver).
