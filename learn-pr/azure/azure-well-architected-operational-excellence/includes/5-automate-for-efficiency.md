@@ -49,7 +49,7 @@ If you skip automation when designing your system, you're setting yourself up fo
 - As they work through each page, the team's making sure every field has a unique identifier so the test automation tools can find them easily. They're also following accessibility best practices, like using proper HTML tags, labels, and making sure all elements work with keyboard navigation. It's making the UI easier to use and test.
 - As the automated tests get built, they're added to the daily test suite, so every new build gets checked automatically. These checks help speed up releases to production, improve quality, and reduce development costs.
 
-## Automation should be well-architected
+## Ensure that automation is well-architected
 
 **Treat automation like a key part of your workload. It's not just a nice-to-have feature. Make sure it can scale as your workload grows. And since it's such a core piece, it should follow the same best practices as the rest of your system, like the five pillars of the Well-Architected Framework.**
 
