@@ -3,7 +3,7 @@ uid: learn.azure.move-azure-resources-to-another-resource-group.exercise-move-ve
 title: Exercise - Move and verify resources between Azure resource groups
 metadata:
   title: Exercise - Move and verify resources between Azure resource groups
-  description: Exercise - Move and verify resources between Azure resource groups
+  description: Exercise - Move and verify resources between Azure resource groups.
   ms.date: 10/18/2024
   author: mumian
   ms.author: jgao
@@ -11,4 +11,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/7-exercise-move-verify-resources.md)]
-
+
