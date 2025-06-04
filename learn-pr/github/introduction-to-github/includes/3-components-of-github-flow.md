@@ -66,7 +66,7 @@ Now that you’ve seen how branches, commits, and pull requests work, let’s wa
 
 ## The GitHub flow
 
-:::image type="content" source="../media/2-branching.png" alt-text="Screenshot showing a visual representation of the GitHub Flow in a linear format that includes a new branch, commits, pull request, and merging the changes back to main in that order." border="false":::
+:::image type="content" source="../media/2-branching.png" alt-text="Screenshot showing a visual representation of the GitHub flow in a linear format that includes a new branch, commits, pull request, and merging the changes back to main in that order." border="false":::
 
 The GitHub flow is a simple workflow that helps you safely make and share changes. It’s great for trying out ideas and collaborating with your team using branches, pull requests, and merges.
 
