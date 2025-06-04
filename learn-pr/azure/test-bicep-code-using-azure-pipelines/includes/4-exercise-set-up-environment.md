@@ -23,7 +23,7 @@ The modules in this learning path are part of a progression. Each module has an 
 
 Run a template that sets up your Azure DevOps organization.
 
-1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
+1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or another IDE.
 
 1. When you're asked whether you want to create a new template or use the demo generator, enter **1** and then select **Enter**.
 
@@ -36,9 +36,9 @@ Run a template that sets up your Azure DevOps organization.
 
 1. Enter your Azure DevOps organization name, and then select **Enter**.
 
-1. If prompted, enter your Azure DevOps PAT, then select **Enter**.
+1. If prompted, enter your Azure DevOps PAT, and then select **Enter**.
 
-1. Enter a project name such as *toy-website-test*, then select **Enter**.
+1. Enter a project name, such as **toy-website-test**, and then select **Enter**.
 
 1. After your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
 1. In Azure DevOps, [Create a self-hosted agent](/azure/devops/pipelines/agents/windows-agent) in the Default pool.
@@ -51,7 +51,7 @@ If you haven't already, create a fork of the **mslearn-test-bicep-code-using-git
 
 1. Select **Fork** at the top-right of the screen.
 
-1. Choose your GitHub account as the **Owner**, then select **Create fork**.
+1. Choose your GitHub account as the **Owner**, and then select **Create fork**.
 
 ## Clone the repository
 

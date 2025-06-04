@@ -6,13 +6,13 @@ _Stages_ help you to divide your pipeline into multiple logical blocks. Each sta
 
 :::image type="content" source="../media/2-stages.png" alt-text="Diagram that shows a pipeline with a stage containing one job. The job contains four steps." border="false":::
 
-You can use stages in your pipeline to mark a separation of concerns. For example, when you work with Bicep code, _validating_ the code is a separate concern from _deploying_ your Bicep file. When you use an automated pipeline, building and testing your code are often called _continuous integration_ (CI). Deploying code in an automated pipeline is often called _continuous deployment_ (CD).
+You can use stages in your pipeline to mark a separation of concerns. For example, when you work with Bicep code, validating the code is a separate concern from deploying your Bicep file. When you use an automated pipeline, building and testing your code are often called _continuous integration_ (CI). Deploying code in an automated pipeline is often called _continuous deployment_ (CD).
 
 During CI stages, you check the validity of the changes that have been made to your code. CI stages provide quality assurance. You can run them without affecting your live production environment.
 
 In many programming languages, code needs to be _built_ before someone can run it. When a Bicep file is deployed, it's converted, or _transpiled_, from Bicep to JSON. The tooling performs this process automatically. In most situations, you don't need to manually build Bicep code to JSON templates in your pipeline. We still use the term _continuous integration_ when we talk about Bicep code, though, because the other parts of CI still apply, such as validating your code.
 
-After your CI stages run successfully, you should have increased your confidence that the changes you made will also deploy successfully. During CD stages, you deploy your code to each of your environments. You usually start with test and other nonproduction environments and move through to production environments. In this module, you'll deploy to a single environment. In a future module, you'll learn how to extend your deployment pipeline to deploy to multiple environments, such as nonproduction and production environments.
+After your CI stages run successfully, you should have increased your confidence that the changes you made will also deploy successfully. During CD stages, you deploy your code to each of your environments. You usually start with test and other nonproduction environments and then continue to production environments. In this module, you'll deploy to a single environment. In a future module, you'll learn how to extend your deployment pipeline to deploy to multiple environments, such as nonproduction and production environments.
 
 Stages run in a sequence. You can control how and when each stage runs. For example, you can configure your CD stages to run only after your CI stages run successfully. Or you might have multiple CI stages that need to run in sequence, for example, to build your code and then test it. You might also include a _rollback_ stage that runs only if previous deployment stages fail.
 

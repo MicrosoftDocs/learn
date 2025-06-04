@@ -112,7 +112,7 @@ Now that you've identified the problem, you can fix it in your Bicep file.
 
 1. In Visual Studio Code, open the _main.bicep_ file in the _deploy_ folder.
 
-1. Notice that the Bicep linter has also detected that the `storageAccountNameParam` parameter isn't used. Visual Studio Code indicates the unused parameter with a wavy line. Normally, the line would be yellow to indicate a warning. But because you customized the _bicepconfig.json_ file, the linter treats the code as an error and displays the line in red. Here's the line:
+1. Notice that the Bicep linter has also detected that the `storageAccountNameParam` parameter isn't used. Visual Studio Code indicates the unused parameter with a wavy line. Normally, the line would be yellow to indicate a warning. But because you customized the _bicepconfig.json_ file, the linter treats the code as an error and displays the line in red. Here's the line of code:
 
    :::code language="bicep" source="code/5-template-1.bicep" range="15" :::
 
@@ -132,7 +132,7 @@ Now that you've identified the problem, you can fix it in your Bicep file.
 
 ## View the pipeline run again
 
-1. In your browser, go to your pipeline.
+1. In Azure DevOps, go to your pipeline.
 
 1. Select the most recent run.
 
@@ -182,7 +182,7 @@ You found another problem in the Bicep file. Here, you'll fix the problem.
 
 ## View the successful pipeline run
 
-1. In your browser, go to your pipeline.
+1. In Azure DevOps, go to your pipeline.
 
 1. Select the most recent run.
 

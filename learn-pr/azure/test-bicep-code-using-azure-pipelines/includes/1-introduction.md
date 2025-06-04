@@ -2,7 +2,7 @@ When you automate your Bicep deployments by using Azure Pipelines, you create a 
 
 In this module, you'll learn how to extend your pipeline to add validation, checks, and tests. By implementing verifications, you build confidence that your deployments meet your quality standards.
 
-## Example scenario
+## Module scenario
 
 Suppose you're the Azure administrator at a toy company. You're working with your website team to create a Bicep template that deploys and configures the Azure resources for your company's main website. You're also creating a pipeline to deploy the Bicep file automatically.
 

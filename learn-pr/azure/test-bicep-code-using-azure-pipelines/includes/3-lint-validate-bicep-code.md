@@ -2,7 +2,7 @@ Now that you know what pipeline stages are for, let's consider the first set of 
 
 ## What's a valid Bicep file?
 
-A valid Bicep file is one that doesn't contain any syntax errors. Also, the definitions for the Azure resources that you plan to deploy must be valid. And when the resources defined in the file are deployed, they stay within the quotas and limits that exist in your Azure subscription.
+A valid Bicep file is one that doesn't contain any syntax errors. Also, the definitions for the Azure resources that you plan to deploy must be valid. And when the resources defined in the file are deployed, they must stay within the quotas and limits that exist in your Azure subscription.
 
 Some of the checks are performed on your Bicep file in isolation, like the checks for syntax errors, for valid Azure resource definitions, and for code quality. These steps are part of a process called _linting_. To check for other problems, you need to request that the Azure Resource Manager service validates your template and takes your Azure environment into account.
 
@@ -20,9 +20,7 @@ A linter contains a predefined set of rules for each of these categories. Exampl
 - **String interpolation**. The linter checks if your file uses the `concat()` function instead of Bicep string interpolation. String interpolation makes your Bicep files more readable.
 - **Default values for secure parameters**. The linter warns you if you set default values for parameters that are marked with the `@secure()` decorator. A default value for a secure parameter is a bad practice because it gives the secure parameter a human-readable value, and people might not change it before deployment.
 
-The Bicep linter runs automatically when you use the Bicep tooling. Every time you build a Bicep file, the linter checks it against its best practices. Linting happens automatically when you deploy a Bicep file to Azure.
-
-But in a pipeline, you typically want to run the validation and linting steps before you deploy the file. You can configure Bicep to verify your file by manually building the Bicep file via the Bicep CLI:
+The Bicep linter runs automatically when you use the Bicep tooling. Every time you build a Bicep file, the linter checks it against its best practices. Linting happens automatically when you deploy a Bicep file to Azure. But in a pipeline, you typically want to run the validation and linting steps before you deploy the file. You can configure Bicep to verify your file by manually building the Bicep file via the Bicep CLI:
 
 ::: zone pivot="cli"
 
@@ -53,7 +51,7 @@ You can express this addition in your pipeline YAML file like this:
 
 ### Linter warnings and errors
 
-By default, the linter emits a warning when it discovers that a Bicep file has violated a rule. Warnings that the Bicep linter emits aren't treated as an error, so they won't stop the pipeline run or stop subsequent stages from running.
+By default, the linter emits a warning when it discovers that a Bicep file has violated a rule. Warnings that the Bicep linter emits aren't treated as errors, so they won't stop the pipeline run or stop subsequent stages from running.
 
 You can change this behavior by configuring Bicep to treat the linter rule violations as errors instead of warnings. You do this configuration by adding a _bicepconfig.json_ file to the folder that contains your Bicep file. You can decide which linter issues should be treated as errors and which should remain as warnings. You'll see how to update linter rules later in this module.
 

@@ -61,10 +61,10 @@ Checks and approvals are evaluated just before a pipeline stage begins. When Azu
 
 An approval is one type of check. When you configure an approval check, you assign one or more reviewers who need to approve the continuation of the pipeline.
 
-Azure Pipelines also provides other types of checks. For example, you can call an API to run custom logic, control the business hours during which a stage can run, and even query Azure Monitor to ensure that a deployment succeeded. Only approval checks are discussed in this module, but links are provided to more information about checks in the summary.
+Azure Pipelines also provides other types of checks. For example, you can call an API to run custom logic, control the business hours during which a stage can run, and even query Azure Monitor to ensure that a deployment succeeded. Only approval checks are discussed in this module, but the module summary includes links to more information about checks.
 
 > [!NOTE]
-> Agent pools and service connections can also have checks configured on them. You can also use a special step called a manual approval task. However, this module focuses on environments and the checks associated with them.
+> Agent pools and service connections can also have checks configured on them. You can also use a special step called a *manual approval task*. However, this module focuses on environments and the checks associated with them.
 
 After your pipeline begins and reaches a stage that requires an approval check, the pipeline run pauses. All reviewers who have been designated as approvers are sent a message in Azure DevOps and by email.
 

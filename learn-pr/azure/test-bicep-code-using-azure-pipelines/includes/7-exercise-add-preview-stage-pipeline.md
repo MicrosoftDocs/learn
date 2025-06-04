@@ -23,7 +23,7 @@ First, you'll add a new stage to your pipeline that runs the what-if operation.
 
 ## Add an environment
 
-1. In your browser, go to **Pipelines** > **Environments**.
+1. In Azure DevOps, go to **Pipelines** > **Environments**.
 
    :::image type="content" source="../media/7-environments.png" alt-text="Screenshot of the Azure DevOps interface that shows the Environments item on the Pipelines menu.":::
 
@@ -33,7 +33,7 @@ First, you'll add a new stage to your pipeline that runs the what-if operation.
 
 1. Enter **Website** as the environment name.
 
-   Leave the description blank. For **Resource**, select **None**.
+   Leave the description blank. In the **Resource** section, select **None**.
 
    > [!NOTE]
    > In Azure Pipelines, environments are used to enable deployment features. Some of these features apply only when you're deploying to Kubernetes or to virtual machines. In this module, you won't use these features and you can ignore them.
@@ -52,7 +52,7 @@ First, you'll add a new stage to your pipeline that runs the what-if operation.
 
    :::image type="content" source="../media/7-add-check-approval.png" alt-text="Screenshot of the Azure DevOps interface that shows the page for adding a check. The Approvals item is highlighted.":::
 
-1. In the **Approvers** box, type your own name and select yourself.
+1. In the **Approvers** box, enter your own name and select yourself.
 
 1. Expand the **Advanced** section by selecting the down arrow.
 
