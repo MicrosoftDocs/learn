@@ -24,6 +24,10 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
    > [!TIP]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML pipeline definition so that you can verify that your file matches.
 
+1. Replace the pool configuration on line 7 with this line:
+ 
+   :::code language="yaml" source="code/5-pipeline.yml" range="7" :::
+
 ## Add lint and validation stages to your pipeline
 
 1. Below the `stages:` line, add a lint stage:

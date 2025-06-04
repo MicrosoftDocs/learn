@@ -41,6 +41,7 @@ Run a template that sets up your Azure DevOps organization.
 1. Enter a project name such as *toy-website-test*, then select **Enter**.
 
 1. After your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
+1. In Azure DevOps, [Create a self-hosted agent](/azure/devops/pipelines/agents/windows-agent) in the Default pool.
 
 ## Fork the repository
 
