@@ -23,10 +23,15 @@ Foreign keys are a concept in relational databases, used to establish and enforc
 
 ## Sample Database Creation Script
 
+To create the sales database, insert the following script into a query, and run it.
+Select Refresh to ensure the Explorer panel is up to date.
+Note that this can take a minute.
+
 <details>
     <summary>Select to expand</summary>
 
 ```sql
+--DROP SCHEMA IF EXISTS sales CASCADE;
 CREATE SCHEMA sales;
 
 create table sales.categories (
