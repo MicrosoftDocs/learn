@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-key-vault-backup-restore
 title: Configure backup and recovery of certificates, secrets, and keys
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure backup and recovery of certificates, secrets, and keys
   description: "Configure backup and recovery of certificates, secrets, and keys"
-  ms.date: 02/07/2025
+  ms.date: 06/04/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
