@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-copilot-fabric-data-engineering
+metadata:
+  title: Get started with Copilot in Fabric for data engineering
+  description: Get started with Copilot in Fabric for data engineering.
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-assisted
+title: Get started with Copilot in Fabric for data engineering
+summary: "Unlock the power of data with Microsoft Fabric and Copilot from a data engineering perspective."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Use Copilot with Fabric Dataflow Gen2.
+    -	Use Copilot with Fabric Data Pipelines.
+    -	Use Copilot in Fabric Notebooks.
+prerequisites: |
+  You should be familiar with data analytics and engineering concepts and terminology.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-analyst
+  - data-engineer
+products: 
+  - fabric
+subjects:
+  - data-analytics
+  - data-engineering
+  - data-integration
+units:
+- learn.wwl.get-started-copilot-fabric-data-engineering.introduction
+- learn.wwl.get-started-copilot-fabric-data-engineering.dataflow-gen2
+- learn.wwl.get-started-copilot-fabric-data-engineering.data-pipelines
+- learn.wwl.get-started-copilot-fabric-data-engineering.notebooks
+- learn.wwl.get-started-copilot-fabric-data-engineering.knowledge-check
+- learn.wwl.get-started-copilot-fabric-data-engineering.summary
+badge: 
+  uid: learn.wwl.get-started-copilot-fabric-data-engineering.badge 

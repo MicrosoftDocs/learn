@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-copilot-fabric-data-engineering.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a primary benefit of using Copilot in Microsoft Fabric?"
+    choices:
+    - content: "It automates all data engineering tasks without user input."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Copilot assists but doesn't fully automate all tasks."
+    - content: "It replaces the need for any data engineering expertise."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. User expertise is still essential."
+    - content: "It helps users create, transform, and analyze data using natural language."
+      isCorrect: true
+      explanation: "That's correct. Copilot uses natural language to assist with data tasks."
+  - content: "Which feature of Dataflow Gen2 makes it easier for users to transform data?"
+    choices:
+    - content: "A command-line interface for scripting transformations."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Dataflow Gen2 uses a visual interface."
+    - content: "Manual editing of raw data files only."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Dataflow Gen2 provides more than manual editing."
+    - content: "A highly visual interface with Copilot integration for natural language prompts."
+      isCorrect: true
+      explanation: "That's correct. Dataflow Gen2 offers a visual interface and Copilot support."
+  - content: "When creating a data pipeline in Microsoft Fabric, what can Copilot help you do?"
+    choices:
+    - content: "Only monitor pipeline execution, not create, or configure activities."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Copilot can help create and configure activities."
+    - content: "Generate and configure pipeline activities using natural language prompts."
+      isCorrect: true
+      explanation: "That's correct. Copilot can generate and configure pipeline activities."
+    - content: "Delete all data in the workspace automatically."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Copilot doesn't delete all data automatically."
+  - content: "What is a key advantage of using Copilot in Fabric Notebooks?"
+    choices:
+    - content: "It only provides documentation, not code or analysis."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Copilot provides more than documentation."
+    - content: "It generates code and helps with data analysis using magic commands and chat."
+      isCorrect: true
+      explanation: "That's correct. Copilot assists with code generation and analysis in notebooks."
+    - content: "It restricts users to only one programming language."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Copilot supports multiple languages in notebooks."
