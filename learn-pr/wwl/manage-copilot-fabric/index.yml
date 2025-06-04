@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.manage-copilot-fabric
+metadata:
+  title: Manage Copilot in Fabric.
+  description: Manage to Copilot in Fabric.
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-assisted
+title: Manage Copilot in Fabric.
+summary: "Manage Copilot in Microsoft Fabric: empower your organization with AI-driven insights."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Understand Copilot in Microsoft Fabric.
+    -	Enable Copilot in Fabric.
+    -	Understand Copilot in Fabric Consumption.
+prerequisites: |
+  You should be familiar with data analytics and engineering concepts and terminology.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-analyst
+  - data-engineer
+products: 
+  - fabric
+subjects:
+  - data-analytics
+  - data-engineering
+  - data-integration
+units:
+- learn.wwl.manage-copilot-fabric.introduction
+- learn.wwl.manage-copilot-fabric.enable-copilot
+- learn.wwl.manage-copilot-fabric.understand-consumption
+- learn.wwl.manage-copilot-fabric.knowledge-check
+- learn.wwl.manage-copilot-fabric.summary
+badge: 
+  uid: learn.wwl.manage-copilot-fabric.badge 

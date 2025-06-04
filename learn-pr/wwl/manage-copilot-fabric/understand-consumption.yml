@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-copilot-fabric.understand-consumption
+title: Understand Copilot in Fabric consumption
+metadata:
+  title: Understand Copilot in Fabric consumption
+  description: "Understand Copilot in Fabric consumption"
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/understand-consumption.md)]
