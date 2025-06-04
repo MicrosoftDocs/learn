@@ -15,17 +15,17 @@ quiz:
 
   - content: "What type of Linux resources can Azure Arc help you manage?"
     choices:
-    - content: "Virtual resources."
+    - content: "Virtual resources only."
       isCorrect: false
-      explanation: "Incorrect. Azure Arc can be used to manage both physical and virtual Linux machines out of Azure."
-    - content: "Physical resources."
+      explanation: "Incorrect. Azure Arc can be used to manage both physical and virtual Linux machines hosted outside of Azure."
+    - content: "Physical resources online."
       isCorrect: false
-      explanation: "Incorrect. Azure Arc can be used to manage both physical and virtual Linux machines out of Azure."
+      explanation: "Incorrect. Azure Arc can be used to manage both physical and virtual Linux machines hosted outside of Azure."
     - content: "Both physical and virtual resources."
       isCorrect: true
-      explanation: "Correct! Azure Arc can be used to manage both physical and virtual Linux machines out of Azure."
+      explanation: "Correct! Azure Arc can be used to manage both physical and virtual Linux machines hosted outside of Azure."
 
-  - content: "Linux machines managed by Azure Arc have what Azure capabilities?"
+  - content: "Linux machines managed by Azure Arc can  what Azure capabilities?"
     choices:
     - content: "Linux machines on Azure Arc enjoy the same capabilities as native Azure Linux resources."
       isCorrect: true
@@ -37,27 +37,27 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Linux machines onboarded to Azure Arc enjoy the same capabilities as native Azure machines and are equally easy to manage."
 
-  - content: "What is required in order to use SSH for Linux machines connected to Azure Arc?"
+  - content: "What is required in order to connect a Linux machine to Azure Arc?"
     choices:
-    - content: "A public IP address."
+    - content: "A supported Ubuntu operating system."
       isCorrect: false
-      explanation: "Incorrect. You don't need to expose a public IP address to use SSH to access a Linux machine connected to Azure Arc."
-    - content: "The opening of another inbound port."
+      explanation: "Incorrect. Many Linux distributions are supported in addition to Ubuntu."
+    - content: "A new Azure tenant set up specifically for the connected machine."
       isCorrect: false
-      explanation: "Incorrect. You don't need to open any other inbound ports to use SSH to access a Linux machine connected to Azure Arc."
-    - content: "Installation of the SSH extension."
+      explanation: "Incorrect. You don't need a separate Azure tenant in order to connect a Linux machine to Azure Arc."
+    - content: "The Azure Arc Connected Machine agent must be deployed to the machine."
       isCorrect: true
-      explanation: "Correct! Once a Linux resource is fully Arc enabled, you need to install the SSH extension on your workstation and then run a command to enable the SSH connection."
+      explanation: "Correct! The Azure Arc Connected Machine agent must be deployed to a machine in order to connect it to Azure Arc."
 
-  - content: "What Azure tools can be used specifically to help you manage large numbers of Linux machines in Azure Arc?"
+  - content: "What Azure tools can be used to help you manage large numbers of Linux machines in Azure Arc?"
     choices:
-    - content: "Azure Policy and Azure Automanage."
+    - content: "Azure Policy and Azure Machine Configuration."
       isCorrect: true
-      explanation: "Correct! Once your Linux machines are onboarded to Azure Arc, you can use tools like Azure Policy and Azure Automanage to enforce standards and simplify ongoing management."
-    - content: "Microsoft Sentinel and Microsoft Defender."
+      explanation: "Correct! Once your Linux machines are onboarded to Azure Arc, you can use tools like Azure Policy and Azure Machine Configuration to enforce standards and simplify ongoing management."
+    - content: "Microsoft Sentinel and Microsoft Defender for Cloud."
       isCorrect: false
-      explanation: "Incorrect. Although Microsoft Sentinel and Microsoft Defender both work with Arc-enabled Linux machines, the tolls are designed for security enhancement."
-    - content: "Arc SSH and Microsoft Entra ID."
+      explanation: "Incorrect. Although Microsoft Sentinel and Microsoft Defender for Cloud both work with Arc-enabled Linux machines, these tools are designed for security enhancement."
+    - content: "SSH and Microsoft Entra ID."
       isCorrect: false
-      explanation: "Incorrect. Although Arc SSH and Microsoft Entra ID both work with Arc-enabled Linux machines, their primary purpose is security and connection related."
+      explanation: "Incorrect. Although SSH and Microsoft Entra ID both work with Arc-enabled Linux machines, they are used to connect and authenticate, not to manage machines directly."
 
