@@ -2,13 +2,13 @@ Copilot for Data Engineering and Data Science in Microsoft Fabric is an AI-power
 
 ## Key concepts
 
-1. **AI-assisted code generation**: Copilot generates code snippets tailored to tasks such as data loading, applying transformations, and saving Pandas/Spark dataframes inside notebooks. Use natural language to describe your data integration requirements, and Copilot will generate the necessary code and steps.
+- **AI-assisted code generation**: Copilot generates code snippets tailored to tasks such as data loading, applying transformations, and saving Pandas/Spark dataframes inside notebooks. Use natural language to describe your data integration requirements, and Copilot will generate the necessary code and steps.
 
-2. **Code explanation**: Provides explanations for existing code, helping you understand complex queries and tasks
+- **Code explanation**: Provides explanations for existing code, helping you understand complex queries and tasks
 
-3. **Visualization**: It can create visualizations based on your data, helping you to quickly understand trends and patterns.
+- **Visualization**: It can create visualizations based on your data, helping you to quickly understand trends and patterns.
 
-4. **Machine learning**: Copilot can assist in building and training machine learning models, providing code snippets and guidance throughout the process.
+- **Machine learning**: Copilot can assist in building and training machine learning models, providing code snippets and guidance throughout the process.
 
 Here's an example of how you can interact with Copilot in the Notebook:
 

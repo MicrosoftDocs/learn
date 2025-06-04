@@ -2,25 +2,20 @@ Copilot in Fabric for Data Warehouse is an AI-powered assistant designed to stre
 
 ## Key concepts
 
-1. **Natural language to SQL**  
-   Copilot enables you to generate T-SQL queries using natural language prompts. For example, you can ask Copilot to "Show all agents who sell properties in California," and it generates the corresponding SQL query.
+- **Natural language to SQL**: Copilot enables you to generate T-SQL queries using natural language prompts. For example, you can ask Copilot to "Show all agents who sell properties in California," and it generates the corresponding SQL query.
 
-2. **Code completion**  
-   Copilot enhances coding efficiency by providing AI-powered code completions. As you start writing T-SQL in the query editor, Copilot suggests completions to help you write queries faster. The **Tab** key accepts the code suggestion, or keeps typing to ignore the suggestion.
+- **Code completion**: Copilot enhances coding efficiency by providing AI-powered code completions. As you start writing T-SQL in the query editor, Copilot suggests completions to help you write queries faster. The **Tab** key accepts the code suggestion, or keeps typing to ignore the suggestion.
 
-3. **Quick actions**  
-   Copilot offers quick actions such as fixing errors in SQL queries or explaining the logic behind them. These actions help you debug and understand you queries more effectively.
+- **Quick actions**: Copilot offers quick actions such as fixing errors in SQL queries or explaining the logic behind them. These actions help you debug and understand you queries more effectively.
 
-4. **Intelligent insights**  
-   Copilot uses schema and metadata information, such as table and column names, primary keys, and foreign keys, to provide smart suggestions and insights. This ensures that the generated queries align with the structure of your data warehouse.
+- **Intelligent insights**: Copilot uses schema and metadata information, such as table and column names, primary keys, and foreign keys, to provide smart suggestions and insights. This ensures that the generated queries align with the structure of your data warehouse.
 
-5. **Schema-driven context**  
-   Copilot uses the schema of your data warehouse, including table and column names, to generate accurate queries. However, it doesn't access the actual data in the tables, ensuring data privacy.
+- **Schema-driven context**: Copilot uses the schema of your data warehouse, including table and column names, to generate accurate queries. However, it doesn't access the actual data in the tables, ensuring data privacy.
 
 Here's an example of how you can interact with Copilot in the Fabric Warehouse editor:
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of copilot in a Fabric Warehouse editor.](../media/copilot-datawarehouse.png)](../media/copilot-datawarehouse.png#lightbox)
+> [![Screenshot of copilot in a Fabric Warehouse editor.](../media/copilot-data-warehouse.png)](../media/copilot-data-warehouse.png#lightbox)
 
 ## Benefits
 

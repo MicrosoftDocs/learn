@@ -2,14 +2,11 @@ Copilot for Data Factory in Microsoft Fabric is an AI-powered assistant designed
 
 ## Copilot for Dataflow Gen2
 
-1. **Query generation**  
-   Copilot can create new queries or modify existing ones based on user input. It can also generate sample data or reference existing queries to streamline the data preparation process.
+- **Query generation**: Copilot can create new queries or modify existing ones based on user input. It can also generate sample data or reference existing queries to streamline the data preparation process.
 
-2. **Data transformation**  
-   Dataflow Gen2 allows you to define transformation steps for your data using natural language. Copilot generates the required Mashup code to perform these transformations, such as filtering, aggregating, or reshaping data.
+- **Data transformation**: Dataflow Gen2 allows you to define transformation steps for your data using natural language. Copilot generates the required Mashup code to perform these transformations, such as filtering, aggregating, or reshaping data.
 
-3. **Code explanation**  
-   For complex queries, Copilot explains the generated Mashup code, helping you understand the logic and purpose of each transformation step.
+- **Code explanation**: For complex queries, Copilot explains the generated Mashup code, helping you understand the logic and purpose of each transformation step.
 
 Here's an example of how you can interact with Copilot in the Dataflow Gen2 editor:
 
@@ -18,14 +15,11 @@ Here's an example of how you can interact with Copilot in the Dataflow Gen2 edit
 
 ## Copilot for Data Pipelines
 
-1. **Pipeline generation**  
-   Using natural language, you can describe your desired pipeline, and Copilot will generate the necessary Data Pipeline activities. This simplifies the creation of complex pipelines.
+- **Pipeline generation**: Using natural language, you can describe your desired pipeline, and Copilot will generate the necessary Data Pipeline activities. This simplifies the creation of complex pipelines.
 
-2. **Error troubleshooting**  
-   Copilot helps resolving pipeline issues by providing clear error explanations and actionable troubleshooting guidance. This ensures smoother workflows and reduces downtime.
+- **Error troubleshooting**: Copilot helps resolving pipeline issues by providing clear error explanations and actionable troubleshooting guidance. This ensures smoother workflows and reduces downtime.
 
-3. **Pipeline summarization**  
-   Copilot can summarize the content and relationships of activities within a pipeline, providing a clear overview of its structure and functionality.
+- **Pipeline summarization**: Copilot can summarize the content and relationships of activities within a pipeline, providing a clear overview of its structure and functionality.
 
 Here's an example of how you can interact with Copilot in the Data Factory pipeline editor:
 
