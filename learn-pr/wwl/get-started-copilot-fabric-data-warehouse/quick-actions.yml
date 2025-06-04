@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-copilot-fabric-data-warehouse.quick-actions
+title: Use Copilot quick actions in Fabric's Data Warehouse
+metadata:
+  title: Use Copilot quick actions in Fabric's Data Warehouse
+  description: "Use Copilot quick actions in Fabric's Data Warehouse"
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/quick-actions.md)]
