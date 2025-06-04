@@ -28,7 +28,7 @@ quiz:
     - content: "A finance employee who needs to create invoices for customers."  
       isCorrect: false
       explanation: "Incorrect. A finance employee doesn't have a legitimate need to access customer data."
-  - content: "True of false: Data classification is a process that you should perform only once."
+  - content: "True or false: Data classification is a process that you should perform only once."
     choices:
     - content: "True"
       isCorrect: false
