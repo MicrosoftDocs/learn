@@ -1,0 +1,64 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-fabric-data-agents.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a primary benefit of using Fabric Data Agents in an organization?"
+    choices:
+    - content: "They allow users to ask questions in plain English and receive context-rich answers from enterprise data."
+      isCorrect: true
+      explanation: "Correct. Fabric Data Agents make data insights accessible through natural language queries."
+    - content: "They require users to write complex SQL queries for every data request."
+      isCorrect: false
+      explanation: "Incorrect. Fabric Data Agents eliminate the need for technical query languages."
+    - content: "They only work with Power BI and don't support other data sources."
+      isCorrect: false
+      explanation: "Incorrect. Fabric Data Agents support multiple data sources."
+  - content: "Which of the following is NOT a supported integration for consuming a Fabric Data Agent?"
+    choices:
+    - content: "Microsoft Teams"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Teams is a supported integration."
+    - content: "Custom applications via API"
+      isCorrect: false
+      explanation: "Incorrect. Custom applications via API are supported."
+    - content: "Google Sheets"
+      isCorrect: true
+      explanation: "Correct. Google Sheets isn't listed as a supported integration."
+    - content: "Copilot Studio"
+      isCorrect: false
+      explanation: "Incorrect. Copilot Studio is a supported integration."
+  - content: "What is the purpose of providing example queries when configuring a Fabric Data Agent?"
+    choices:
+    - content: "To help the AI generate more precise responses by demonstrating expected outputs."
+      isCorrect: true
+      explanation: "Correct. Example queries guide the AI for better accuracy."
+    - content: "To restrict the agent to only answer those specific questions."
+      isCorrect: false
+      explanation: "Incorrect. Example queries are for guidance, not restriction."
+    - content: "To increase the number of data sources the agent can access."
+      isCorrect: false
+      explanation: "Incorrect. Example queries don't affect data source access."
+  - content: "When integrating Azure AI Foundry with Fabric Data Agents, what is required for secure data access?"
+    choices:
+    - content: "Users must have the Azure AI User RBAC role and read access to the agent and its data sources."
+      isCorrect: true
+      explanation: "Correct. These permissions are required for secure access."
+    - content: "Users only need access to the Azure portal."
+      isCorrect: false
+      explanation: "Incorrect. More specific permissions are required."
+    - content: "No permissions are needed if the agent is published."
+      isCorrect: false
+      explanation: "Incorrect. Permissions are always required for secure access."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-fabric-data-agents.end-to-end-scenario
+title: Implement an end-to-end Fabric data agent
+metadata:
+  title: Implement an end-to-end Fabric data agent
+  description: "Implement an end-to-end Fabric data agent"
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/end-to-end-scenario.md)]
