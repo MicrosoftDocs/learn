@@ -1,4 +1,4 @@
-This learn unit guides you through the process of creating, configuring, and consuming a Fabric data agent to enable conversational AI experiences for querying enterprise data.
+This Training unit guides you through the process of creating, configuring, and consuming a Fabric data agent to enable conversational AI experiences for querying enterprise data.
 
 > [!div class="mx-imgBorder"]
 > [![Diagram that shows an overview of data agent.](../media/data-agent-overview.png)](../media/data-agent-overview.png#lightbox)
