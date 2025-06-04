@@ -1,4 +1,4 @@
-As the lead developer at a picture-frame company, you've been asked to research Azure Logic Apps and the included connector types. Your goal is to connect from Azure Logic Apps to an in-house, custom-built Web API that estimates framing prices.
+As the lead developer at a picture frame company, you've been asked to research Azure Logic Apps and the included connector types. Your goal is to connect from Azure Logic Apps to an in-house, custom-built Web API that estimates framing prices.
 
 Let's get started by learning about Azure Logic Apps and this platform's ability to monitor events and carry out actions.
 

@@ -8,11 +8,11 @@ In this unit, we'll deploy our test API to the Azure sandbox activated for this 
 
 To save time, start by running a script to host our test API in Azure. The script performs the following steps:
 
-- Create an Azure App Service plan in the free tier
-- Create a Web API in Azure App Service and configure for Git deployment from a local repo
-- Set account-level deployment credentials for our app
-- Configure Git locally
-- Deploy our Web API to our App Service instance
+- Create an Azure App Service plan in the free tier.
+- Create a Web API in Azure App Service and configure for Git deployment from a local repo.
+- Set account-level deployment credentials for our app.
+- Configure Git locally.
+- Deploy our Web API to our App Service instance.
 
 1. In Cloud Shell, run the following `git clone` command to clone the repo that has our app's source and setup script from GitHub:
 

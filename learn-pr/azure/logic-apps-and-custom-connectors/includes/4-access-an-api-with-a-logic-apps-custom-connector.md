@@ -1,4 +1,4 @@
-As the lead developer for a print-framing company, you want to call an in-house, custom-built Web API from your workflow in Azure Logic Apps. The API calculates a price for a picture frame based on the dimensions of the frame. To access the API from your Azure Logic Apps workflow, you'll need to create your own connector.
+As the lead developer for a print framing company, you want to call an in-house, custom-built Web API from your workflow in Azure Logic Apps. The API calculates a price for a picture frame based on the dimensions of the frame. To access the API from your Azure Logic Apps workflow, you'll need to create your own connector.
 
 In this unit, you'll learn how to create and use custom connectors in an Azure Logic Apps workflow.
 
