@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-copilot-fabric.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a primary benefit of using Copilot for Fabric?"
+    choices:
+    - content: "It manages infrastructure without user input."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Copilot helps with workflows, not infrastructure management."
+    - content: "It automates complex data workflows and provides intelligent code suggestions."
+      isCorrect: true
+      explanation: "That’s correct. Copilot for Fabric streamlines workflows and offers intelligent suggestions."
+    - content: "It replaces all manual data entry with voice commands."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Copilot doesn't replace all manual data entry with voice commands."
+  - content: "How does Copilot for Data Factory assist users in creating dataflows?"
+    choices:
+    - content: "By automatically deploying data to production."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Copilot doesn't deploy data automatically."
+    - content: "By generating Mashup code and explaining transformation steps using natural language."
+      isCorrect: true
+      explanation: "That’s correct. Copilot generates and explains Mashup code for dataflows."
+    - content: "By removing all errors without user review."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Copilot provides guidance but doesn't remove all errors automatically."
+  - content: "Which feature is common to both Copilot for SQL Database and Copilot for Data Warehouse?"
+    choices:
+    - content: "Direct access to modify database schema."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Copilot doesn't modify database schema directly."
+    - content: "Natural language to SQL query generation."
+      isCorrect: true
+      explanation: "That’s correct. Both Copilot for SQL Database and Data Warehouse support natural language to SQL."
+    - content: "Automatic data deletion."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Copilot doesn't delete data automatically."
+  - content: "What is a key advantage of Fabric data agents?"
+    choices:
+    - content: "They require advanced coding skills to operate."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Fabric data agents are designed for accessibility, not advanced coding."
+    - content: "They allow users to interact with organizational data using natural language and enforce read-only access."
+      isCorrect: true
+      explanation: "That’s correct. Fabric data agents enable natural language interaction and maintain data security."
+    - content: "They provide unrestricted write access to all data sources."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Fabric data agents don't provide write access."

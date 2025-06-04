@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-copilot-fabric.copilot-for-sql-database
+title: Understand Copilot for SQL Database Workload
+metadata:
+  title: Understand Copilot for SQL Database Workload
+  description: "Understand Copilot for SQL Database Workload"
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/copilot-for-sql-database.md)]
