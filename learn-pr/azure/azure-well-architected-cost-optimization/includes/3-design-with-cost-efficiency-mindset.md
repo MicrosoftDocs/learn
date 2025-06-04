@@ -13,7 +13,7 @@ The WMS solution is a .NET application that runs on Internet Information Service
 
 **Establish a cost baseline that includes the cost for technology, automation, acquisition, training, and change management. Your design should meet all the key requirements including return on investment (ROI) and still be flexible enough to grow with your needs.**
 
-A cost baseline helps you stay on budget by showing where the money’s going, including hidden costs that you might miss. Keeping ROI in mind helps avoid overbuilding a system that ends up costing more than it's worth.
+A cost baseline helps you stay on budget by showing where the money's going, including hidden costs that you might miss. Keeping ROI in mind helps avoid overbuilding a system that ends up costing more than it's worth.
 
 *Contoso's challenge*
 
@@ -27,6 +27,8 @@ A cost baseline helps you stay on budget by showing where the money’s going, i
 - The team is excited about doing a significant redesign during the cloud move, but they know that they need to maintain the workload's ROI. So they must stick with tools that they already know and avoid major rewrites that require extra engineering team training.
 
 - The workload team takes a practical approach to designing the system. They want it to be cost-effective, meet expectations, and avoid overcomplicating things. To keep the ROI in check and make the migration smooth, they decide to go with an equivalent solution in the cloud, such as Azure App Service.
+
+- They establish a cost baseline that accounts for infrastructure, licensing, and operational costs, as well as less obvious factors like training for new platforms, rewriting legacy code, and managing change across teams. They gain a clearer picture of what's feasible within their budget, which confirms their decision of Azure App Service as the more familiar, lower-risk path.
 
 - During the migration, the team plans to clean up some of the technical debt that makes sense to tackle now. That way, after everything's running on Azure, they'll be in a better spot to keep improving the platform while still keeping the ROI in mind when making those choices.
 
