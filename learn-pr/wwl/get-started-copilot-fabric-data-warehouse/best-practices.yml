@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-copilot-fabric-data-warehouse.best-practices
+title: Review best practices using Copilot in Fabric's Data Warehouse
+metadata:
+  title: Review best practices using Copilot in Fabric's Data Warehouse
+  description: "Review best practices using Copilot in Fabric's Data Warehouse"
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/best-practices.md)]

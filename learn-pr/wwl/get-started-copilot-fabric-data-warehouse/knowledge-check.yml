@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-copilot-fabric-data-warehouse.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is one of the main benefits of using Copilot in Fabric Data Warehouse?"
+    choices:
+    - content: "It automatically deploys your data warehouse to production."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Copilot doesn't handle deployment."
+    - content: "It manages user permissions automatically."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Copilot doesn't manage permissions."
+    - content: "It generates T-SQL queries and provides intelligent code completions."
+      isCorrect: true
+      explanation: "That's correct. Copilot helps by generating T-SQL queries and providing code completions."
+  - content: "How can you guide Copilot to generate a specific SQL query in the editor?"
+    choices:
+    - content: "By changing the color theme of the editor."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. The color theme doesn't affect Copilot."
+    - content: "By writing comments in your query using -- to describe your intent."
+      isCorrect: true
+      explanation: "That's correct. Comments help Copilot understand what you want to generate."
+    - content: "By renaming your database tables."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Table names don't directly guide Copilot in this way."
+  - content: "What does the 'Explain' quick action do in the SQL query editor?"
+    choices:
+    - content: "It executes the query and explains the results."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. 'Explain' doesn't execute and explain the results."
+    - content: "It adds a summary and inline comments to describe the query's functionality."
+      isCorrect: true
+      explanation: "That's correct. 'Explain' provides summaries and comments for your query."
+    - content: "It deletes all comments from the query."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. 'Explain' adds comments, not removes them."
+  - content: "Which best practice improves Copilot's ability to generate accurate SQL queries?"
+    choices:
+    - content: "Writing prompts in multiple languages."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Prompts should be in English for best results."
+    - content: "Avoiding comments in your queries."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Comments actually help Copilot generate better queries."
+    - content: "Using descriptive table and column names in your data warehouse."
+      isCorrect: true
+      explanation: "That's correct. Descriptive names help Copilot understand your schema."
