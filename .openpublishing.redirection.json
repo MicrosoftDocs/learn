@@ -33218,6 +33218,26 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/azure-well-architected-operational-excellence/5-deploy-with-confidence.yml",
+      "redirect_url": "/training/modules/azure-well-architected-operational-excellence/5-automate-for-efficiency",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-well-architected-operational-excellence/6-automate-for-efficiency.yml",
+      "redirect_url": "/training/modules/azure-well-architected-operational-excellence/5-automate-for-efficiency",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/azure-well-architected-operational-excellence/7-adopt-safe-deployment-practices.yml",
+      "redirect_url": "/training/modules/azure-well-architected-operational-excellence/6-adopt-safe-deployment-practices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/azure-well-architected-operational-excellence/8-summary.yml",
+      "redirect_url": "/training/modules/azure-well-architected-operational-excellence/7-summary",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/index.md",
       "redirect_url": "/training/modules/create-azure-resource-manager-template-vs-code/",
       "redirect_document_id": false

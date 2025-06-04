@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/7-adopt-safe-deployment-practices.md)]
+  [!include[](includes/6-adopt-safe-deployment-practices.md)]
 quiz:
   title: Check your knowledge
   questions:

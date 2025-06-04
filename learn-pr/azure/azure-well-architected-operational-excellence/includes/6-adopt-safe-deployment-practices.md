@@ -1,9 +1,7 @@
 | :::image type="icon" source="../media/goal.svg"::: Put guardrails in place during the deployment process to reduce the impact of errors or unexpected conditions. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-During the development cycle, workload artifacts go through many changes as they get implemented and tested and as bugs are fixed.
-
-The deployment process must follow a standard operating procedure. Every change, whether it's code, configuration, or related components, should be deployed with the same level of care. The idea is to start using safe practices as early as possible so production is predictable. And if problems slip through to customers, you should be able to roll out a fix fast.
+Set up an automated, modular deployment process so everything rolls out the same way every time. When you apply safe practices early, like in testing, monitoring, and versioning, you build confidence in production and make it easier to recover if something goes wrong.
 
 **Example scenario**
 
@@ -11,13 +9,13 @@ Contoso Air has developed a web application that allows customer to book flights
 
 The app is fully deployed in Azure and is built on Azure App Service, Azure Cosmos DB, Azure Functions, Azure Logic Apps, and Azure Service Bus. 
 
-## Codify automated deployment standards
+## Deploy infrastructure through code
 
-**Standardize how changes get deployed by using automated deployment processes, like pipelines. All environments must use pipelines. Ensure that assets and their versions are clearly labeled by environment so they're easy to track and identify.**
+**Use infrastructure as code (IaC) to define the repeatable aspects of the supply chain that are production ready. Prefer declarative approaches over imperative methods.**
 
-Consistent deployment methods reduce problems caused by process errors and variance, so you can focus more on the actual workload. When everything's standardized, deployments become safer, more reliable, and repeatable.
+Declarative IaC tools are built to make automation and reuse easy. They let you shift infrastructure setup from individuals to tools, so actions get done the same way every time, with fewer mistakes.
 
-Classification makes it easy to view logs of previous deployments and find problems that came up. That information can help speed up recovery, whether you're rolling back or moving forward with a fix.
+Fewer technology options also reduce variance in tooling, make it easier to see configuration drift, and simplify maintenance. If you pick tools that match your team's existing skills, it's easier for everyone to get on board.
 
 *Contoso's challenge*
 
@@ -35,11 +33,11 @@ Classification makes it easy to view logs of previous deployments and find probl
 - Next, the team plans to fully automate rollbacks to make the process even smoother.
 - As a result of the new automation, deployments have been more reliable and predictable, and team morale has gone up too.
 
-## Deploy often
+## Deploy small, incremental updates at a regular cadence
 
-**Deploy small, incremental updates at a regular cadence.**
+**Divide work into small, manageable updates that can be developed and deployed frequently.**
 
-Doing this approach makes tasks and user stories easier to manage and helps avoid large problems if deployments fail.
+Smaller updates are easier to test and less risky. If an error occurs, it's easier to find and fix. Releasing several changes at once can cause bigger problems and make it harder to figure out what went wrong.
 
 *Contoso's challenge*
 
