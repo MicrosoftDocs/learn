@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-copilot-fabric.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which feature of Fabric Copilot allows users to interact with data using everyday language?"
+    choices:
+    - content: "Automated Code Generation"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Automated Code Generation is for creating code snippets."
+    - content: "Natural Language Querying"
+      isCorrect: true
+      explanation: "That's correct. Natural Language Querying lets users interact with data using everyday language."
+    - content: "Data Insights Automation"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Data Insights Automation is for identifying patterns and trends."
+  - content: "What is required for an organization to enable Copilot in Microsoft Fabric?"
+    choices:
+    - content: "A Power BI Pro license"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. A Power BI Pro license isn't sufficient."
+    - content: "A Fabric trial SKU"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Copilot isn't supported for trial SKUs."
+    - content: "A Fabric capacity of F2 or higher"
+      isCorrect: true
+      explanation: "That's correct. Copilot is enabled by default for F2 or higher capacities."
+  - content: "How is Copilot usage measured and billed in Microsoft Fabric?"
+    choices:
+    - content: "By the number of users accessing Copilot"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Billing isn't based on user count."
+    - content: "By the number of tokens processed in input and output"
+      isCorrect: true
+      explanation: "That's correct. Usage is measured by tokens in input and output."
+    - content: "By the number of reports generated"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Billing isn't based on reports generated."
+  - content: "What happens if Fabric Copilot capacity is exhausted?"
+    choices:
+    - content: "Only data processing is paused, but reporting continues"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. All operations are affected."
+    - content: "All operations will shut down until capacity is available again"
+      isCorrect: true
+      explanation: "That's correct. Operations stop when capacity is exhausted."
+    - content: "Copilot will continue to work but with limited features"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. All operations stop when capacity is exhausted."
