@@ -1,4 +1,4 @@
-As leaders and innovators in the AI space, Microsoft and GitHub are committed to ensuring that AI systems are developed and used in ways that are safe, trustworthy, and ethically sound.
+Microsoft and GitHub are leaders and innovators in the AI space. We're committed to ensuring that AI systems are developed and used in ways that are safe, trustworthy, and ethically sound.
 
 Six core principles guide our approach:
 
@@ -25,4 +25,4 @@ To recap, in this module, we covered:
 For more information on Responsible AI, check out these resources:
 
 - [Microsoft Responsible AI Transparency Report](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Responsible-AI-Transparency-Report-2024.pdf)
-- [Microsoft Learning Paths for AI](/training/paths/browse/?resource_type=learning%20path&subjects=artificial-intelligence)
+- [Responsible AI at Microsoft](https://www.microsoft.com/ai/responsible-ai)
