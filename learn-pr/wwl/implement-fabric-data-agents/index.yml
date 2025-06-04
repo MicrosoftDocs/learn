@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.implement-fabric-data-agents
+metadata:
+  title: Implement Fabric Data Agents
+  description: Implement Fabric Data Agents (chat with your data)
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-assisted
+title: Implement Fabric Data Agents (chat with your data)
+summary: "Empower your organization with Fabric data agents: transform data into actionable insights through conversational AI."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Understand Fabric data agent capabilities.
+    -	Implement an end-to-end Fabric data agent.
+    -	Integrate Fabric data agents with Azure AI Foundry.
+    - Use Fabric data agents within Power BI.
+prerequisites: |
+  You should be familiar with data analytics and engineering concepts and terminology.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-analyst
+  - data-engineer
+products: 
+  - fabric
+subjects:
+  - data-analytics
+  - data-engineering
+  - data-integration
+units:
+- learn.wwl.implement-fabric-data-agents.introduction
+- learn.wwl.implement-fabric-data-agents.data-agent-capabilities
+- learn.wwl.implement-fabric-data-agents.end-to-end-scenario
+- learn.wwl.implement-fabric-data-agents.azure-ai-foundry
+- learn.wwl.implement-fabric-data-agents.power-bi
+- learn.wwl.implement-fabric-data-agents.knowledge-check
+- learn.wwl.implement-fabric-data-agents.summary
+badge: 
+  uid: learn.wwl.implement-fabric-data-agents.badge 

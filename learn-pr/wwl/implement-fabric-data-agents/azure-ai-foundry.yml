@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-fabric-data-agents.azure-ai-foundry
+title: Integrate Fabric data agents with Azure AI Foundry
+metadata:
+  title: Integrate Fabric data agents with Azure AI Foundry
+  description: "Integrate Fabric data agents with Azure AI Foundry"
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/azure-ai-foundry.md)]
