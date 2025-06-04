@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-compliance-controls-for-sensitive-data.implement-azure-purview
-title: Implement Azure Purview
+title: Implement Microsoft Purview
 metadata:
-  title: Implement Azure Purview
-  description: "Implement Azure Purview"
+  title: Implement Microsoft Purview
+  description: "Implement Microsoft Purview"
   ms.date: 02/26/2025
   author: JulianePadrao
   ms.author: jupadrao
