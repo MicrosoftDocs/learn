@@ -80,7 +80,7 @@ ALTER DATABASE <database_name> SET COMPATIBILITY_LEVEL = 160;
 
 SQL Server on Linux supports advanced security features such as Always Encrypted, row-level security and dynamic data masking to protect data on disk, in memory, or in transit. These features are all supported in all editions, including Standard Edition:
 
-- **Transparent Data Encryption (TDE)** encrypts data-at-rest when the data is stored in database files. The data is protected against malicious users both in the database and in backups.
+- **Transparent Data Encryption (TDE)** encrypts data at rest, that is, when the data is stored in database files. The data is protected against malicious users both in the database and in backups.
 
 - **Always Encrypted** ensures that only users who own data can view and process it. Users who manage data, like the database administrators, can't view it. If you use Always Encrypted:
 
