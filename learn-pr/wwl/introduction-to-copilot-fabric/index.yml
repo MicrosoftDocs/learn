@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-to-copilot-fabric
+metadata:
+  title: Introduction to Copilot in Fabric
+  description: Introduction to Copilot in Fabric
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-assisted
+title: Introduction to Copilot in Fabric
+summary: "Transform data into insights with Microsoft Fabric and Copilot: a comprehensive overview."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Understand Copilot for Fabric Data Factory.
+    -	Understand Copilot for Data Engineering and Data Science.
+    -	Understand Copilot for Data Warehouse.
+    - Understand Copilot for Power BI.
+    - Understand Copilot for Real-Time Intelligence.
+    - Understand Copilot for SQL Database Workload.
+    - Understand Fabric data agents.
+prerequisites: |
+  You should be familiar with data analytics and engineering concepts and terminology.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - business-analyst
+  - data-analyst
+  - data-engineer
+  - data-scientist
+products: 
+  - fabric
+subjects:
+  - data-analytics
+units:
+- learn.wwl.introduction-to-copilot-fabric.introduction
+- learn.wwl.introduction-to-copilot-fabric.copilot-for-data-factory
+- learn.wwl.introduction-to-copilot-fabric.copilot-for-data-engineering-and-science
+- learn.wwl.introduction-to-copilot-fabric.copilot-for-data-warehouse
+- learn.wwl.introduction-to-copilot-fabric.copilot-for-power-bi
+- learn.wwl.introduction-to-copilot-fabric.copilot-for-real-time-intelligence
+- learn.wwl.introduction-to-copilot-fabric.copilot-for-sql-database
+- learn.wwl.introduction-to-copilot-fabric.data-agents
+- learn.wwl.introduction-to-copilot-fabric.knowledge-check
+- learn.wwl.introduction-to-copilot-fabric.summary
+badge: 
+  uid: learn.wwl.introduction-to-copilot-fabric.badge

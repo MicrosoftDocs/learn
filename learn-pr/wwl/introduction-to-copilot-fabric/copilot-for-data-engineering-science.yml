@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-copilot-fabric.copilot-for-data-engineering-and-science
+title: Understand Copilot for Data Engineering and Data Science
+metadata:
+  title: Understand Copilot for Data Engineering and Data Science
+  description: "Understand Copilot for Data Engineering and Data Science"
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/copilot-for-data-engineering-science.md)]
