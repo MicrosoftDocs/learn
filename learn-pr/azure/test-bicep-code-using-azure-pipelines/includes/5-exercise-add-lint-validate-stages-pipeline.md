@@ -188,6 +188,9 @@ You found another problem in the Bicep file. Here, you'll fix the problem.
 
    Wait until the pipeline run completes. Although Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh the page occasionally.
 
+   > [!note]
+   > If you get an error stating that you need to register the Microsoft.Insights resource provider, see [Resolve errors for resource provider registration](/azure/azure-resource-manager/troubleshooting/error-register-resource-provider?tabs=azure-cli).
+
 1. Notice that all three stages of the pipeline have finished successfully:
 
    :::image type="content" source="../media/5-pipeline-run-stages-success.png" alt-text="Screenshot of the pipeline run in Azure DevOps, with all three stages reporting success.":::

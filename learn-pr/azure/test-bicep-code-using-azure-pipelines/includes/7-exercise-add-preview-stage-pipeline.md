@@ -54,7 +54,7 @@ First, you'll add a new stage to your pipeline that runs the what-if operation.
 
 1. In the **Approvers** box, type your own name and select yourself.
 
-1. Select the arrow button next to **Advanced**.
+1. Expand the **Advanced** section by selecting the down arrow.
 
    Notice that, by default, approvers are allowed to approve the runs that they've triggered. Because you're the only person who will work with this pipeline, leave this checkbox selected.
 
@@ -92,7 +92,7 @@ Next, you'll configure the **Deploy** stage to run against the **Website** envir
 
 ## Run the pipeline and review the what-if outputs
 
-1. In your browser, go to your pipeline.
+1. In Azure DevOps, go to your pipeline.
 
 1. Select the most recent run of your pipeline.
 

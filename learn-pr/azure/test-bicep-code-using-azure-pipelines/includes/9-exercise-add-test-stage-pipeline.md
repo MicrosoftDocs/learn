@@ -93,7 +93,7 @@ You can now add a smoke test stage that runs your tests.
 
 ## Run the pipeline and review the test result
 
-1. In your browser, go to your pipeline.
+1. In Azure DevOps, go to your pipeline.
 
 1. Select the most recent run of your pipeline.
 
