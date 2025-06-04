@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-copilot-fabric-data-engineering.notebooks
+title: Use Copilot in Fabric notebooks
+metadata:
+  title: Use Copilot in Fabric Notebooks
+  description: "Use Copilot in Fabric notebooks"
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/notebooks.md)]

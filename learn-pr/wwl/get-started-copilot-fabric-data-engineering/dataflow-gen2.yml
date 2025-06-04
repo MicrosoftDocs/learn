@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-copilot-fabric-data-engineering.dataflow-gen2
+title: Use Copilot with Fabric dataflow gen2
+metadata:
+  title: Use Copilot with Fabric Dataflow Gen2
+  description: "Use Copilot with Fabric dataflow gen2"
+  ms.date: 06/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/dataflow-gen2.md)]
