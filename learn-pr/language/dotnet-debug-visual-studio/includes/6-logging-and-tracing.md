@@ -1,6 +1,6 @@
-﻿As you continue developing your application and it gets more complex, you'll want to apply additional debug diagnostics to your application.
+﻿As you continue developing your application and it gets more complex, you might need to apply more debug diagnostics to your application.
 
-Tracing is a way for you to monitor the execution of your application while it's running. You can add tracing and debugging instrumentation to your .NET application when you develop it. You can use that instrumentation while you're developing the application and after you've deployed it.
+Tracing is a way for you to monitor the execution of your application while it's running. You can add tracing and debugging instrumentation to your .NET application when you develop it. You can use that instrumentation while you're developing the application and after you deploy it.
 
 This simple technique is surprisingly powerful. It can be used in situations where you need more than a debugger:
 
@@ -12,24 +12,24 @@ This simple technique is surprisingly powerful. It can be used in situations whe
 
 ## Write information to output windows
 
-Up to this point, we've been using the console to display information to the application user. There are other types of applications that are built with .NET that have user interfaces, such as mobile, web, and desktop apps, and there's no visible console. In these applications, `System.Console` is used to log messages "behind the scenes." These messages might show up in an output window in Visual Studio or Visual Studio Code. They also might be output to a system log such as Android's `logcat`. As a result, you should take great consideration when you use `System.Console.WriteLine` in a non-console application.
+Up to this point, we've been using the console to display information to the application user. There are other types of applications built with .NET that have user interfaces and no visible console, such as mobile, web, and desktop apps. In these applications, `System.Console` is used to log messages "behind the scenes." These messages might show up in an output window in Visual Studio or Visual Studio Code. They also might be output to a system log such as Android's `logcat`. As a result, you should take great consideration when you use `System.Console.WriteLine` in a nonconsole application.
 
-This is where you can use `System.Diagnostics.Debug` and `System.Diagnostics.Trace` in addition to `System.Console`. Both `Debug` and `Trace` are part of `System.Diagnostics` and will only write to logs when an appropriate listener is attached.
+This situation is where you can use `System.Diagnostics.Debug` and `System.Diagnostics.Trace` in addition to `System.Console`. Both `Debug` and `Trace` are part of `System.Diagnostics` and only write to logs when an appropriate listener is attached.
 
 The choice of which print style API to use is up to you. The key differences are:
 
 - **System.Console**
   - Always enabled and always writes to the console.
   - Useful for information that your customer might need to see in the release.
-  - Because it's the simplest approach, it's often used for ad-hoc temporary debugging. This debug code is often never checked in to source control.
+  - Because it's the simplest approach, `System.Console` is often used for ad-hoc temporary debugging. This debug code is often never checked in to source control.
 - **System.Diagnostics.Trace**
   - Only enabled when `TRACE` is defined.
   - Writes to attached Listeners, by default, the DefaultTraceListener.
-  - Use this API when you create logs that will be enabled in most builds.
+  - Use this API when you create logs that you plan to enable in most builds.
 - **System.Diagnostics.Debug**
   - Only enabled when `DEBUG` is defined (when in debug mode).
   - Writes to an attached debugger.
-  - Use this API when you create logs that will be enabled only in debug builds.
+  - Use this API when you create logs that you plan to enable only in debug builds.
 
 ```csharp
 Console.WriteLine("This message is readable by the end user.")
@@ -37,7 +37,7 @@ Trace.WriteLine("This is a trace message when tracing the app.");
 Debug.WriteLine("This is a debug message just for developers.");
 ```
 
-When you design your tracing and debugging strategy, think about how you want the output to look. Multiple Write statements filled with unrelated information will create a log that's difficult to read. On the other hand, using WriteLine to put related statements on separate lines might make it difficult to distinguish what information belongs together. In general, use multiple Write statements when you want to combine information from multiple sources to create a single informative message. Use the WriteLine statement when you want to create a single complete message.
+When you design your tracing and debugging strategy, think about how you want the output to look. Multiple Write statements filled with unrelated information creates a log that's difficult to read. On the other hand, using WriteLine to put related statements on separate lines might make it difficult to distinguish what information belongs together. In general, use multiple Write statements when you want to combine information from multiple sources to create a single informative message. Use the WriteLine statement when you want to create a single complete message.
 
 ```csharp
 Debug.Write("Debug - ");
@@ -54,7 +54,7 @@ This is another full line.
 
 ## Define TRACE and DEBUG constants
 
-By default, when an application is running under debug, the `DEBUG` constant is defined. You can control this by adding a `DefineConstants` entry in the project file in a property group. Here's an example of turning on `TRACE` for both `Debug` and `Release` configurations in addition to `DEBUG` for `Debug` configurations.
+By default, when an application is running under debug, the `DEBUG` constant is defined. You can control this definition by adding a `DefineConstants` entry in the project file in a property group. Here's an example of turning on `TRACE` for both `Debug` and `Release` configurations in addition to `DEBUG` for `Debug` configurations.
 
 ```xml
 <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -65,7 +65,7 @@ By default, when an application is running under debug, the `DEBUG` constant is 
 </PropertyGroup>
 ```
 
-When you use `Trace` when not attached to the debugger, you'll need to configure a trace listener such as [dotnet-trace](/dotnet/core/diagnostics/dotnet-trace).
+If you use `Trace` when you're not attached to the debugger, you need to configure a trace listener such as [dotnet-trace](/dotnet/core/diagnostics/dotnet-trace).
 
 ## Conditional tracing
 
@@ -99,7 +99,7 @@ An assertion, or `Assert` statement, tests a condition, which you specify as an 
 
 You can use the `Assert` method from either `Debug` or `Trace`, which are in the `System.Diagnostics` namespace. `Debug` class methods aren't included in a release version of your program, so they don't increase the size or reduce the speed of your release code.
 
-Use the `System.Diagnostics.Debug.Assert` method freely to test conditions that should hold true if your code is correct. For example, suppose you've written an integer divide function. By the rules of mathematics, the divisor can never be zero. You might test this condition by using an assertion:
+Use the `System.Diagnostics.Debug.Assert` method freely to test conditions that should hold true if your code is correct. For example, suppose you wrote a function that divides integers. By the rules of mathematics, the divisor can never be zero. You might test this condition by using an assertion:
 
 ```csharp
 int IntegerDivide(int dividend, int divisor)
@@ -110,9 +110,9 @@ int IntegerDivide(int dividend, int divisor)
 }
 ```
 
-When you run this code under the debugger, the assertion statement is evaluated. But in the release version, the comparison isn't made, so there's no additional overhead.
+When you run this code under the debugger, the assertion statement is evaluated. But in the release version, the comparison isn't made, so there's no extra overhead.
 
 > [!NOTE]
 > When you use `System.Diagnostics.Debug.Assert`, make sure that any code inside `Assert` doesn't change the results of the program if Assert is removed. Otherwise, you might accidentally introduce a bug that only shows up in the release version of your program. Be especially careful about asserts that contain function or procedure calls.
 
-As you can see, using `Debug` and `Trace` from the `System.Diagnostics` namespace is a great way to provide additional context when you run and debug your application.
+As you can see, using `Debug` and `Trace` from the `System.Diagnostics` namespace is a great way to provide important context when you run and debug your application.

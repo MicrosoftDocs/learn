@@ -3,7 +3,7 @@ uid: learn.wwl.guided-project-develop-conditional-branching-looping
 metadata:
   title: Guided project - Develop conditional branching and looping structures in C#
   description: "Gain experience developing a console app that implements selection and iteration statements to achieve app specifications."
-  ms.date: 02/22/2024
+  ms.date: 05/20/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
@@ -11,17 +11,24 @@ metadata:
   - N/A
   ms.service: dotnet-csharp
   ms.devlang: csharp
+  ai-usage: human-only
 title: Guided project - Develop conditional branching and looping structures in C#
 summary: Gain experience developing a console app that implements selection and iteration statements to achieve app specifications.
 abstract: |
   In this module, you'll practice how to:
+
   -   Use Visual Studio Code to develop a C# console application that uses a combination of selection and iteration statements to implement logical workflows in accordance with supplied application data and user interactions.
+
   -   Evaluate the underlying conditions and make an informed decision when choosing between if-elseif-else and switch statements, and between foreach, for, while, and do iteration statements.
+
   -   Scope variables at an appropriate level within an application.
 prerequisites: |
   -   Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes
+
   -   Experience using C# code to evaluate conditional expressions and manage variable scope inside and outside of code blocks
+
   -   Experience using if-elseif-else and switch-case statements in C# to match a variable or expression against several possible outcomes
+
   -   Experience using foreach, for, do, and while statements in C# to loop through a block of code and access elements of array variables
 iconUrl: /training/achievements/guided-project-develop-conditional-branching-looping.svg
 levels:

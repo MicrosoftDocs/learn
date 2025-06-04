@@ -6,11 +6,11 @@ metadata:
   title: How Azure Database for MySQL works
   description: How Azure Database for MySQL works
   ms.date: 08/21/2024
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/3-how-azure-database-for-mysql-works.md)]
-
+

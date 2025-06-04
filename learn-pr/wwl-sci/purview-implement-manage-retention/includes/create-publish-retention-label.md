@@ -1,90 +1,66 @@
-Retention labels in Microsoft Purview allow you to specify how long items like documents or emails should be kept and when they should be deleted. This is important for meeting compliance requirements and managing organizational information efficiently.
+Retention labels in Microsoft Purview help you control how long to keep files and when to delete them. You can use them to meet regulatory requirements, manage risk, and improve how your organization handles information. Labels can be applied manually or automatically, and they're a key part of your data lifecycle strategy.
 
-## Understand File plan
+## Create a retention label
 
-File plan in Microsoft Purview Records Management enhances the creation and management of retention labels with advanced capabilities such as bulk actions and comprehensive overviews. It's designed for detailed management of records and non-record information across your organization.
+You can create a retention label either from the **Data Lifecycle Management** section or by using the **File plan** in **Records Management**. The main difference is that the file plan includes extra classification features like bulk actions, detailed overviews, and metadata tags (called descriptors). If you're managing just a few labels or don't need structured classification, you can create them directly in Data Lifecycle Management instead.
 
-### Key features of file plan
+### What is a file plan?
 
-- **Bulk creation and management**: Import and create multiple retention labels from a spreadsheet, allowing for efficient setup.
-- **Detailed overview**: View and manage detailed settings of all retention labels from a single interface.
-- **Enhanced descriptors**: Use file plan descriptors for extra categorization and organization of retention labels.
+A file plan is a structured way to manage retention labels across your organization. It gives you a centralized view of all your labels and lets you organize them by categories like department, function, or regulatory authority. File plans are especially helpful when you need to manage many labels or align your data governance practices with formal records management standards.
 
-### Access requirements
+## Steps to create a retention label using file plan
 
-Ensure you have the necessary permissions within the **Compliance Administrator** role group to create and manage retention labels. Alternative roles include **Retention Management** for active management and **View-Only Retention Management** for read-only access.
+1. Sign in to the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true) and select **Solutions** > **Records management** > **File plan**.
 
-## Create and publish retention labels
+1. Select **Create a label** and give it a name.
 
-There are some important steps to follow when you create and publish retention labels, from setting up the label to applying it across your organization's services like SharePoint or Exchange. Here's what you need to do:
+1. On the **Define file plan descriptors** page, you can tag the label with optional metadata like:
 
-### Steps to create a retention label using file plan
+   - **Business function or department**
+   - **Category**
+   - **Authority type**
+   - **Provision or citation**
 
-Creating retention labels involves defining retention or deletion periods and specifying conditions that trigger these actions. Here's how to create a label:
+   :::image type="content" source="../media/file-plan-descriptors.png" alt-text="Screenshot showing the Define file plan descriptors for this label page."::: with optional metadata like:
 
-1. Navigate to **File plan** in either the Microsoft Purview portal or Microsoft Purview compliance portal:
+1. Choose what happens to content with this label:
 
-   - **Microsoft Purview portal**: [Sign in to the Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true) > **Records management** card > **File plan**.
+   - Retain forever or for a specific time
+   - Retain then delete
+   - Just label for classification without retention or deletion
 
-        - If you don't see the **Records management** card, select **View all solutions** and find **Records management** under the **Risk & Compliance** section.
+1. If you selected retention, choose the length of time and what happens when that time ends.
 
-        :::image type="content" source="../media/purview-portal-records-management-card.png" alt-text="Screenshot showing the Records Management card in the Microsoft Purview portal.":::
+1. Review and finish your configuration.
 
-   - **Microsoft Purview compliance portal**: [Sign in to the Microsoft Purview compliance portal](https://compliance.microsoft.com/?azure-portal=true) > **Solutions** > **Records management** > **File plan**.
+## Publish a retention label
 
-1. Select **Create a label** to start the **Create retention label** configuration, and name your new retention label.
+To make your label available to users or apply it across your Microsoft 365 services, you need to publish it through a retention label policy.
 
-1. On the **Define file plan descriptors for this label** page:
+1. In the file plan, find your label and select the **Publish labels** icon (:::image type="icon" source="../media/publish-retention-label-icon.png":::).
 
-   - Review and categorize the retention label using predefined descriptors such as **Business function/department**, **Category**, **Authority type**, and **Provision/citation**.
+1. Choose whether the policy uses an adaptive or static scope.
 
-        :::image type="content" source="../media/file-plan-descriptors.png" alt-text="Screenshot showing the Define file plan descriptors for this label page.":::
+   - **Adaptive scope**: Uses dynamic membership based on user or site attributes. Make sure the scope already exists.
+   - **Static scope**: Lets you manually choose locations like Exchange mailboxes or SharePoint sites.
 
-   - Select or create descriptors:
+1. Select the specific services or locations where the label should be available.
 
-      - Select **Choose** to select appropriate descriptors that match the content management needs.
+1. Name your policy and finish setup.
 
-      - If needed, select **Create new** to add a custom descriptor, provide its details, and confirm.
+> [!NOTE]
+> Retention label policies can't be scoped using administrative units. If you need to scope retention settings by administrative unit, consider using a retention policy instead.
 
-   - Review and ensure your descriptors accurately reflect the label’s governance role within your organization.
+## When the label becomes available
 
-1. On the **Define label settings**, choose one of the configurations for managing your content over a specified period:
-
-   - **Retain items forever or for a specific period**: Retain items indefinitely or for a set time. After this time, retention settings can be deactivated.
-
-   - **Enforce actions over a specific period**: Retain items for a defined period. After this time, actions like automatic deletion or initiation of a disposition review are enforced.
-
-   - **Just label items**: Labels are used only for classification without enforcing any retention or deletion actions.
-
-1. If **Retain items forever or for a specific period** or **Enforce actions over a specific period** was selected in the previous step, **Define the retention period** and **Choose what happens after the period**.
-
-1. Review your settings and finish the **Create retention label** configuration.
-
-### Steps to publish the retention label
-
-After creating the label, you need to publish them through a retention label policy, which makes them available to users in your organization to classify and manage content.
-
-1. Return to **File plan** from either the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true) or [Microsoft Purview compliance portal](https://compliance.microsoft.com/?azure-portal=true).
-
-1. Select the retention label you'd like to publish and select the **Publish labels** icon (:::image type="icon" source="../media/publish-retention-label-icon.png":::) to start the configuration to publish your retention label.
-
-1. On the **Assign admin units** page, if your organization uses administrative units, assign the policy to specific units to restrict its application to designated users or departments.
-
-1. Select the scope type for your retention policy.
-
-1. On the **Choose where to publish labels** page select either **All locations** or **Let me choose specific locations**.
-
-1. Give your policy a unique name, and submit your changes to create your retention label policy and complete the configuration.
-
-## When retention labels become available to apply
-
-The visibility of retention labels can vary based on the service:
-
-- **SharePoint and OneDrive**: Labels usually appear within one day, but it can take up to seven days.
-- **Exchange**: Labels can take up to seven days to appear and require the mailbox to have at least 10 MB of data.
+Retention labels don't appear immediately and might take up to seven days to propagate across services:
 
 :::image type="content" source="../media/retention-labels-published-timings.png" alt-text="Diagram illustrating when retention label policies are available to apply.":::
 
-If labels don't appear as expected, verify the policy status and consider using PowerShell commands to troubleshoot or force policy distribution.
+- **SharePoint and OneDrive**: Usually visible within 24 hours but can take up to 7 days
 
-Retention labels are an important feature of Microsoft Purview, ensuring data is managed according to policies and regulations. Creating and publishing these labels helps strengthen your organization's data management strategy and ensures compliance across all digital content.
+- **Exchange**: Can take up to 7 days; the mailbox must have at least 10 MB of data
+
+If your labels don't appear, double-check that the policy is active. You can also use PowerShell to verify status or force distribution.
+
+Retention labels help ensure your organization's data is kept as long as needed and removes it when it's no longer needed. Whether you're managing content manually or automating retention across services, labels give you the control and visibility to manage data confidently.

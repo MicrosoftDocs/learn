@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check
-  ms.date: 11/01/2023
+  ms.date: 04/22/2025
   author: mbender-ms
   ms.author: mbender
   ms.topic: unit
@@ -56,4 +56,4 @@ quiz:
     - content: "S-key"
       isCorrect: false
       explanation: "An s-key is a GUID that defines an ExpressRoute circuit and provides the connectivity link between Microsoft, your connectivity provider, and your organization."
-
+

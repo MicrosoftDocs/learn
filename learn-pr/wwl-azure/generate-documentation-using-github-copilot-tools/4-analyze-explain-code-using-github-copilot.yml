@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-documentation-using-github-copilot-tools.analyze-explain-code-using-github-copilot
+title: Analyze and explain code using GitHub Copilot
+metadata:
+  title: Analyze and explain code using GitHub Copilot
+  description: "Analyze and explain code using GitHub Copilot"
+  ms.date: 06/02/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-analyze-explain-code-using-github-copilot.md)]

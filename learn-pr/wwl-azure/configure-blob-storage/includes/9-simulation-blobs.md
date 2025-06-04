@@ -1,25 +1,21 @@
-## Lab scenario
+## Exercise scenario
 
-Your organization is migrating storage to Azure. As the Azure Administrator you need to:
+The company website supplies product images, videos, marketing literature, and customer success stories. Customers are located worldwide and demand is rapidly expanding. The content is mission-critical and requires low latency load times. It’s important to keep track of the document versions and to quickly restore documents if they’re deleted.
 
-+ Organize content into storage accounts. 
-+ Upload and manage images. 
-+ Monitor and troubleshoot storage accounts. 
+## Job skills
 
-## Objectives
-
-+ **Task 1**: Create a storage account. 
-    + Create a storage account in your region with locally redundant storage. 
-    + Verify the storage account was created. 
-+ **Task 2**: Work with blob storage.
-    + Create a private blob container. 
-    + Upload a file to the container. 
-+ **Task 3**: Monitor the storage container.
-    + Review common storage problems and troubleshooting guides.
-    + Review insights for performance, availability, and capacity. 
+- Create a storage account with high availability.
+- Ensure the storage account has anonymous public access.
+- Create a blob storage container for the website documents.
+- Enable soft delete so files can be easily restored.
+- Enable blob versioning.
 
 > [!NOTE]
-> Click on the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
+> Estimated time: 30 minutes. 
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
-[![Screenshot of the simulation page.](../media/simulation-blob-storage.jpg)](https://mslearn.cloudguides.com/en-us/guides/AZ-900%20Exam%20Guide%20-%20Azure%20Fundamentals%20Exercise%205?azure-portal=true)
+Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
+
+
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/Secure-storage-for-Azure-Files-and-Azure-Blob-Storage/Instructions/Labs/LAB_02a_storage_public_website.html)
 

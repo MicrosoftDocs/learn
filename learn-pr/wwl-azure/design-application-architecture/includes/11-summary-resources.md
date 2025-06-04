@@ -1,4 +1,4 @@
-In this module, you learned how to evaluate and design an effective application architecture. You explored Azure solutions for exchanging messages, automating application deployment, and managing application configuration. You reviewed how to integrate Azure services with your applications by using APIs, and how to provide appropriate caching. You discovered how to use Azure services to create a scalable, efficient, event-driven solution.
+In this module, you learned how to evaluate and design an effective AI-ready application architecture. You explored Azure solutions for exchanging messages, automating application deployment, and managing application configuration. You reviewed how to integrate Azure services with your applications by using APIs, and how to provide appropriate caching. You discovered how to use Azure services to create a scalable, efficient, event-driven solution.
 
 ## Learn more with Copilot
 
@@ -12,7 +12,6 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - Compare and contrast the pros and cons of Azure Event Hubs and Azure Event Grid. Provide some examples. 
 
-- What is IoT? What Azure products are available? Describe and compare the different product options with usage cases.
 
 ## Learn more with Azure documentation
 
@@ -45,8 +44,6 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 - Explore [message queues and stream processing](/training/modules/cmu-message-queues-streams/).
 
 ## Learn more with optional hands-on exercises
-
-- Implement [message-based communication workflows with Azure Service Bus (sandbox)](/training/modules/implement-message-workflows-with-service-bus/).
 
 - Practice [creating an Azure Service Bus queue and topic (sandbox)](/training/modules/implement-message-workflows-with-service-bus/3-exercise-implement-a-service-bus-topic-and-queue).
 

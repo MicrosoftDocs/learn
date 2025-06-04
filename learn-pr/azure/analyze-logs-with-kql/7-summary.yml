@@ -6,9 +6,9 @@ metadata:
   title: Summary
   description: "Analyzing log data in Log Analytics using KQL lets you gain crucial insights and manage your IT environment effectively and proactively."
   ms.date: 02/11/2024
-  author: guywi-ms
-  ms.author: guywild
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/7-summary.md)]

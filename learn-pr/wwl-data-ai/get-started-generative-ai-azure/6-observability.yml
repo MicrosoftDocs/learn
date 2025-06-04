@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-generative-ai-azure.observability 
+title: Understand observability
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Understand observability
+  description: Understand the terminology and methodology for quality generative AI responses.
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 05/26/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-observability.md)]

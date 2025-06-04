@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-ai-landing-zones.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: Check your understanding of the module content.
+  ms.date: 05/01/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 3
+content: Choose the best response for each question. 
+quiz:
+  questions:
+    - content: "You are in the process of planning management boundaries for an AI application deployment. Which Azure landing zone design area aligns with this goal?"
+      choices:
+        - content: "Network topology and connectivity"
+          isCorrect: false
+          explanation: "This design area addresses appropriately planned network topology and connectivity. This ensures that deployed resources can communicate in a secure, reliable, and cost effective manner."
+        - content: "Resource organization"
+          isCorrect: true
+          explanation: "The resource organization design area determines the appropriate Azure management group and subscription hierarchy. Planning subscription hierarchy impacts governance, operations management, and adoption patterns. When considering this design area, you configure subscriptions as management boundaries that separate the platform and workload teams. This separation is also termed subscription democratization."
+        - content: "Platform automation and DevOps"
+          isCorrect: false
+          explanation: "This design element ensures that your organization uses the right alignment of tools and templates to deploy landing zones and supporting resources."
+    - content: "Which of the following is the responsibility of the workload team in an Azure AI application deployment using landing zones?"
+      choices:
+        - content: "Azure AI Foundry"
+          isCorrect: true
+          explanation: "Azure AI Foundry is the responsibility of the workload team. The workload team is responsible for the configuration, management, and deployment of the workload components, including all AI services that are used in this architecture."
+        - content: "Azure Firewall"
+          isCorrect: false
+          explanation: "Network infrastructure like Azure Firewall is the responsibility of the platform team."
+        - content: "Azure private DNS zones"
+          isCorrect: false
+          explanation: "Network infrastructure like Azure private DNS zones is the responsibility of the platform team."
+    - content: "Which of the following is the responsibility of the platform team in an Azure AI application deployment using landing zones?"
+      choices:
+        - content: "Azure Bastion"
+          isCorrect: true
+          explanation: "Azure Bastion is the responsibility of the platform team in an Azure AI application deployment using landing zones"
+        - content: "Azure Container Registry"
+          isCorrect: false
+          explanation: "Azure Container Registry is the responsibility of the workload team in an Azure AI application deployment using landing zones"
+        - content: "Azure App Service"
+          isCorrect: false
+          explanation: "Azure App Services is the responsibility of the workload team in an Azure AI application deployment using landing zones"

@@ -4,7 +4,7 @@ In this unit, you learn the importance of machine learning and AI technologies i
 
 Machine learning and AI are great assets for improving interaction with your customers and partners. Tailwind Traders is evaluating these application features as a way to enhance the user experience and increase business value.
 
-In addition to transforming its main e-commerce applications into a microservices architecture, the company wants to introduce new functionality to enhance customer experience. Currently, they have no staff with data-science skills. New staff will be hired in the future, but in the meantime, the company should identify quick wins that can help in improving the competitiveness of its web shop.
+In addition to transforming its main e-commerce applications into a microservices architecture, the company wants to introduce new functionality to enhance customer experience. Currently, they have no staff with data-science skills. New staff will be hired in the future, but in the meantime the company should identify quick wins that can help in improving the competitiveness of its web shop.
 
 Tailwind Traders is evaluating four possibilities:
 
@@ -23,11 +23,11 @@ Azure offers tools and services that can help organizations build machine learni
 
 ### Azure AI services
 
-[Azure AI services](/azure/ai-services/what-are-ai-services) contains prebuilt models that don't require machine-learning expertise to introduce AI functionality to an application. Azure AI services encompasses many areas, such as vision, speech, language, decision, and search. It's easy to use, so organizations can use the power of AI without extensive machine-learning skills.
+[Azure AI services](/azure/ai-services/what-are-ai-services) contains prebuilt models that don't require machine-learning expertise to introduce AI functionality to an application. Azure AI services encompass many areas, such as vision, speech, language, decision, and search. It's easy to use, so organizations can use the power of AI without extensive machine-learning skills.
 
 Tailwind Traders sees a high potential in Azure AI services, because its data-science department isn't fully operational. The company is evaluating these features to innovate the e-commerce application:
 
-- **Personalizer**: Organizations can use this feature to learn which users prefer which products, and to make fine-tuned, individual recommendations. Some customers prefer products with quick delivery, whereas other customers prefer products on sale. Personalizer uses a type of machine-learning algorithm called *reinforcement learning*, which doesn't require huge amounts of data to be trained. Tailwind Traders is interested in Personalizer, because it doesn't have this type of data yet.
+- **Personalizer**: Organizations can use this feature to learn which users prefer which products and to make fine-tuned, individual recommendations. Some customers prefer products with quick delivery, whereas other customers prefer products on sale. Personalizer uses a type of machine-learning algorithm called *reinforcement learning*, which doesn't require huge amounts of data to be trained. Tailwind Traders is interested in Personalizer because it doesn't have this type of data yet.
 - **Text Analytics**: Many users write product reviews. Organizations can analyze reviews to find customers who express negative sentiments. Focusing on these customers can reduce customer churn and increase loyalty.
 - **Translator**: Product reviews can be an effective sales tool, but they're useful only to customers who understand the language they're written in. Using real-time translation services would allow Tailwind Traders to show product reviews to any user regardless of their native language.
 
