@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-copilot-fabric
 metadata:
-  title: Manage Copilot in Fabric.
+  title: Manage Copilot in Fabric
   description: Manage to Copilot in Fabric.
   ms.date: 06/03/2025
   author: weslbo
@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: fabric
   ai-usage: ai-assisted
-title: Manage Copilot in Fabric.
+title: Manage Copilot in Fabric
 summary: "Manage Copilot in Microsoft Fabric: empower your organization with AI-driven insights."
 abstract: |
   By the end of this module, you'll be able to:
