@@ -71,7 +71,7 @@ You can now add a smoke test stage that runs your tests.
 
    This step takes the test results file that Pester creates and publishes it as pipeline test results. You'll see how the results are displayed soon.
 
-   Notice that the step definition includes `condition: always()`. This condition indicates to Azure Pipelines that it should always publish the test results, even if the preceding step fails. This condition is important because any failing test will cause the test step to fail, and normally the pipeline stops running after a failing step.
+   Notice that the step definition includes `condition: always()`. This condition indicates to Azure Pipelines that it should always publish the test results, even if the preceding step fails. This condition is important because any failed test will cause the test step to fail, and normally the pipeline stops running after a failed step.
 
 1. Save the file.
 
