@@ -72,7 +72,7 @@ operation GenerateRandomBit() : Result {
     Reset(q);
     
     // Return the result of the measurement.
-     return result;
+    return result;
 }
 ```
 
