@@ -13,15 +13,14 @@ The integration also **streamlines** the process of connecting AI agents to ente
 Before you begin, make sure that:
 
 - You have created and **published** a Fabric data agent endpoint.
-- Developers and end users have at least the Azure AI User **RBAC role** assigned.
+- Developers and end users in Azure AI Foundry have at least the Azure AI User **RBAC role** assigned.
 - Developers and end users have at least **read access** to both the Fabric data agent and its underlying data sources.
-- Both the Fabric Data Agent and the Azure AI Foundry Agent are deployed within the **same Azure tenant**.
 
 ## How to integrate Azure AI Foundry with Fabric Data Agents?
 
 ### 1. Create and publish a Fabric Data Agent
 
-Build your Fabric data agent and publish it to obtain an endpoint. This endpoint will be used to connect with the Azure AI Foundry Agent.
+Build your Fabric data agent and publish it to obtain an endpoint. This endpoint is used to connect with the Azure AI Foundry Agent.
 
 ### 2. Configure access and permissions
 
@@ -30,21 +29,25 @@ Ensure all users and developers have the necessary roles and permissions as outl
 ### 3. Update agent instructions
 
 In Azure AI Foundry, update your agent’s instructions to describe the Fabric data agent and the type of data it provides. For example:
-“For customer and product sales related data, please use the Fabric tool.”
+
+_“For customer and product sales related data, please use the Fabric tool.”_
 
 ### 4. Add the Fabric tool to your agent
 
 In the Azure AI Foundry portal, navigate to your agent’s setup screen.
 Under the “Knowledge” section, select “Add” and choose “Microsoft Fabric.”
+
+> [![Screenshot of selecting the add knowledge button in Azure AI Foundry agent.](../media/ai-foundry-agent-add-knowledge.png)](../media/ai-foundry-agent-add-knowledge.png#lightbox)
+
 Follow the prompts to add the Fabric tool. You can only add one Fabric tool per agent.
 
-### 5. Create or select a connection
+To connect, you’ll need the workspace-id and artifact-id from your published Fabric data agent endpoint (for example, `https://fabric.microsoft.com/groups/<workspace_id>/aiskills/<artifact-id>`).
 
-To connect, you’ll need the workspace-id and artifact-id from your published Fabric data agent endpoint (e.g., `https://<environment>.fabric.microsoft.com/groups/<workspace_id>/aiskills/<artifact-id>`).
+> [![Screenshot of creating a connection in Azure AI Foundry agent.](../media/ai-foundry-agent-create-connection.png)](../media/ai-foundry-agent-create-connection.png#lightbox)
 
-Add these values as a new connection, marking them as secret if required.
+Add these values as a new connection, marking them as secret if necessary.
 Once added, you can select from existing connections for future use.
 
-### 6. Test the integration
+### 5. Test the integration
 
-Once configured, test your agent by sending queries. The agent will determine when to leverage the Fabric data agent and generate responses based on the data the user is authorized to access.
+Once configured, test your agent by sending queries. Select **Try in playground** to test its performance. The agent determines when to leverage the Fabric data agent and generate responses based on the data the user is authorized to access.

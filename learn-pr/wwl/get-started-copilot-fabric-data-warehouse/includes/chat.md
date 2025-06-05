@@ -1,16 +1,17 @@
 The Copilot chat pane in Microsoft Fabric's Data Warehouse allows users to interact with Copilot using natural language. This feature enables you to ask questions about your data warehouse or general data warehousing concepts. Copilot can generate SQL queries, provide explanations, and even fix errors in your queries.
 
-## Key Capabilities
+## Key capabilities
 
 The Copilot chat pane offers several capabilities. It can convert natural language prompts into T-SQL queries, enabling seamless query generation. You can ask questions about data warehousing concepts and receive detailed answers. Additionally, Copilot provides natural language explanations for T-SQL code, helping users understand complex queries. It also helps resolving T-SQL errors by offering automated suggestions to fix issues.
 
-## How to Get Started
+## How to get started
 
 1. **Open a Warehouse**: Navigate to the Data Warehouse workload and open a warehouse.
 2. **Open a New SQL Query**: Start a new SQL query.
 3. **Access the Copilot Chat Pane**:
    - Select the **Copilot** button in the ribbon to open the chat pane.
    - The chat pane provides starter prompts to help you get familiar with Copilot.
+4. Enter the following prompt:
 
 > [!NOTE]
 > **Crafted instruction**:
@@ -35,7 +36,7 @@ If your query contains errors, you can ask Copilot to explain the query or fix i
 > [!div class="mx-imgBorder"]
 > [![Screenshot of the Fabric Warehouse Copilot Chat interface suggesting a fix.](../media/copilot-chat-fix.png)](../media/copilot-chat-fix.png#lightbox)
 
-## Advanced Use Cases with Commands
+## Advanced use cases with commands
 
 To perform specific tasks, use the following `/` commands at the start of your chat message:
 
