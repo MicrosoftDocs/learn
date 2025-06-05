@@ -1,4 +1,4 @@
-Azure Arc lets you manage physical and virtual Linux machines hosted outside of Azure, whether on your corporate network or on another cloud provider. Organizations like Contoso can manage their Linux resources with Azure, just as they do their Arc-enabled Windows machines. Linux machines onboarded to Azure Arc enjoy the same capabilities as native Azure machines, including standard Azure constructs such as Azure policy and applying tags.
+Azure Arc lets you manage physical and virtual Linux machines hosted outside of Azure, whether in your corporate network or hosted on another cloud provider. Organizations like Contoso can manage their Linux resources with Azure, just as they do their Arc-enabled Windows machines. Linux machines onboarded to Azure Arc can be managed just like native Azure machines, including the use of standard Azure constructs such as Azure policy and applying tags.
 
 To onboard a Linux machine to Azure Arc, you deploy the Azure Arc Connected Machine agent to the machine. Azure Arc provides multiple options for deploying the agent individually or at scale across multiple machines. Once the agent is installed and functioning properly, the machine appears as an Arc resource in the Azure portal, and you can manage it like any other Azure resource.
 
@@ -49,9 +49,9 @@ Microsoft Defender for Cloud is a cloud-native application protection platform (
 
 ### Microsoft Sentinel
 
-Microsoft Sentinel is a scalable, cloud-native security information and event management (SIEM) with built-in security orchestration, automation, and response (SOAR). Microsoft Sentinel delivers threat intelligence, providing a single solution for attack detection, proactive hunting, and threat response. It provides a birds-eye view across the enterprise. Microsoft Sentinel alleviates the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
+Microsoft Sentinel is a scalable, cloud-native security information and event management (SIEM) with built-in security orchestration, automation, and response (SOAR). Microsoft Sentinel delivers threat intelligence, providing a single solution for attack detection, proactive hunting, and threat response. By providing a birds-eye view across the enterprise, Microsoft Sentinel helps alleviate the stress of dealing with increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
 
-Microsoft Sentinel helps keep your environment secure by:
+Microsoft Sentinel can help keep your environment secure by:
 
 - Collecting data at cloud scale across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds.
 - Detecting previously undetected threats and minimize false positives using Microsoft's analytics and unparalleled threat intelligence.

@@ -25,19 +25,7 @@ quiz:
       isCorrect: true
       explanation: "Correct! Azure Arc can be used to manage both physical and virtual Linux machines hosted outside of Azure."
 
-  - content: "Linux machines managed by Azure Arc can  what Azure capabilities?"
-    choices:
-    - content: "Linux machines on Azure Arc enjoy the same capabilities as native Azure Linux resources."
-      isCorrect: true
-      explanation: "Correct! Linux machines onboarded to Azure Arc enjoy the same capabilities as native Azure machines."
-    - content: "A subset of Azure capabilities focused on security."
-      isCorrect: false
-      explanation: "Incorrect. Linux machines onboarded to Azure Arc enjoy the same capabilities as native Azure machines, including robust security capabilities."
-    - content: "Linux machines onboarded to Azure Arc have limitations that make them more difficult to manage than other Azure resources."
-      isCorrect: false
-      explanation: "Incorrect. Linux machines onboarded to Azure Arc enjoy the same capabilities as native Azure machines and are equally easy to manage."
-
-  - content: "What is required in order to connect a Linux machine to Azure Arc?"
+  - content: "Which of the following is required in order to onboard a Linux machine to Azure Arc?"
     choices:
     - content: "A supported Ubuntu operating system."
       isCorrect: false
@@ -48,6 +36,18 @@ quiz:
     - content: "The Azure Arc Connected Machine agent must be deployed to the machine."
       isCorrect: true
       explanation: "Correct! The Azure Arc Connected Machine agent must be deployed to a machine in order to connect it to Azure Arc."
+
+  - content: "Which of the following is required in order to use SSH for Linux machines connected to Azure Arc?"
+    choices:
+    - content: "Installation of the SSH extension."
+      isCorrect: true
+      explanation: "Correct! Linux machines onboarded to Azure Arc enjoy the same capabilities as native Azure machines."
+    - content: "An Azure Policy definition that allows SSH access."
+      isCorrect: false
+      explanation: "Incorrect. SSH access doesn't require you to use Azure Policy."
+    - content: "A public IP address."
+      isCorrect: false
+      explanation: "Incorrect. A public IP address isn't required to use SSH."
 
   - content: "What Azure tools can be used to help you manage large numbers of Linux machines in Azure Arc?"
     choices:
