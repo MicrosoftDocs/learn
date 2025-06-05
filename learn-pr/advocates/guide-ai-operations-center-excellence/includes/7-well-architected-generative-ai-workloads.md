@@ -20,11 +20,11 @@ Below are the core mechanisms that govern resource supply, cost, and performance
 - **Autoscaling:** expands or shrinks online endpoints and training clusters automatically as load changes, eliminating manual resizing and idle over-provisioning.
 - **Usage tracking and monitoring:** real-time tracking of key metrics such as tokens per second, queue depth, and response time. Metrics for comprehensive usage tracking and monitoring, including collecting metrics on resource consumption (CPU, GPU, memory, storage), workload performance (throughput, latency), and system health, to gain insights, identify trends, and detect potential issues. 
 
-## Generative AI Application Workload Lifecycle
+## Generative AI application workload lifecycle
 
 Generative AI workloads swing from near-idle to peak demand in minutes and must survive zone or region failures without manual intervention. Infrastructure therefore needs to: scale out horizontally on-demand, continue operating through hardware or network failures, and recover automatically after a regional outage. Robust Generative AI infrastructure must combine elasticity with fault-tolerant design for handling data growth, model evolution, and increasing user demand. The elements that follow set out the essential platform capabilities required to achieve that balance.
 
-- **Elastic scaling: adds or removes GPU nodes, inference pods, and storage shards based on queue depth or tokens-per-second. Horizontal elasticity keeps latency low without over-provisioning.**
-- **High availability: redundant instances sit in separate Availability Zones or regions and are fronted by global load-balancers that steer traffic to the healthiest endpoint. Health probes and automated fail-over remove single points of failure.**
-- **Fault tolerance & auto-healing: containers restart on crash, nodes are cordoned and recycled, and retry logic masks transient errors so users never notice.**
+- **Elastic scaling:** adds or removes GPU nodes, inference pods, and storage shards based on queue depth or tokens-per-second. Horizontal elasticity keeps latency low without over-provisioning.
+- **High availability:** redundant instances sit in separate Availability Zones or regions and are fronted by global load-balancers that steer traffic to the healthiest endpoint. Health probes and automated fail-over remove single points of failure.
+- **Fault tolerance & auto-healing:** containers restart on crash, nodes are cordoned and recycled, and retry logic masks transient errors so users never notice.
 - **Disaster recovery & geo-replication:** data (including vector indexes used by RAG pipelines) is synchronously copied to a paired region; run-books or automated workflows restore service within Recovery Point Objective (RPO)/Recovery Time Objective (RTO) targets.

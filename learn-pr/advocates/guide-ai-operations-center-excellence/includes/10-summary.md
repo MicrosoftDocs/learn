@@ -1,6 +1,6 @@
 In this module, you learned about how a generative AI Center of Excellence (CoE) can serve as the central point of advice and procedure for teams who need to manage the deployment and operations of generative AI workloads. The AI CoE helps emphasizes the importance of implementing GenAIOps processes, ensuring that AI workloads are well-architected, and the workloads adhere to compliance and security requirements. The CoE can advise on best practice for the organization's infrastructure management to ensure that generative AI workloads meet scalability and reliability requirements.
 
-## Learn More
+## Learn more
 
 - Microsoft's responsible AI practices: <https://aka.ms/RAITransparencyReport2024PDF>
 - Microsoft's Frontier governance framework: https://go.microsoft.com/fwlink/?linkid=2303737&clcid=0xc09

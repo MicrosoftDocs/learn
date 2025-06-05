@@ -26,7 +26,7 @@ The CoE should provide GenAIOps guidance on the following elements of workload o
 - Cost management processes
 - Monitoring and optimization processes
 
-![Diagram showing the relationships between DataOps, MLOps, GenAIOps, deployment and monitoring](../media/genaiops-processes.png)
+![Diagram showing the relationships between DataOps, MLOps, GenAIOps, deployment and monitoring.](../media/genaiops-processes.png)
 
 There should be bidirectional communication between the generative AI CoE and workload teams. 
 
