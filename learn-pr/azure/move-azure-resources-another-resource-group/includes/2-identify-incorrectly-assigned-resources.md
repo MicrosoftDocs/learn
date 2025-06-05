@@ -47,7 +47,7 @@ If you select a tag in the list, you get a list of all the resources associated 
 
 Tags have limitations:
 
-- Always check whether your Azure resource supports tags. For example, you can't set tags on generalized VMs.
+- You should always check whether your Azure resource supports tags. For example, you can't set tags on generalized VMs.
 - You can apply tags to resource groups, but resources don't automatically inherit tags from their resource group. If you want all the resources in a resource group to have a tag, you must apply them manually.
 - You can apply a maximum of 50 tags to a single resource or resource group in Azure.
 
