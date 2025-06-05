@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.workload-operations-generative-ai-center-excellence.infrastructure-management-processes
+title: Infrastructure management processes
+metadata:
+  title: Infrastructure management processes
+  description: Learn how to manage infrastructure for generative AI workloads.
+  ms.date: 06/04/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-infrastructure-management-processes.md)]
