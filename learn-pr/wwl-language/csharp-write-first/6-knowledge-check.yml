@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the primary job of the compiler?"
+  - content: "What is the primary job of the compiler?" 
     choices:
     - content: "The compiler primarily locates spelling mistakes in your code."
       isCorrect: false
