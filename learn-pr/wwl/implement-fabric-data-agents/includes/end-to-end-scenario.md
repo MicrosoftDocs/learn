@@ -103,7 +103,7 @@ The published data agent can be consumed in various platforms, including:
 
 These integrations enable conversational AI experiences, allowing users to query data in natural language and retrieve actionable insights.
 
-## Best pactices
+## Best practices
 
 **Use Clear Instructions**: Ensure that the instructions provided to the AI are clear and concise. This helps in generating accurate responses. If your AI resource consistently misinterprets certain words, acronyms, or terms, you can try to provide clear definitions in this section, to ensure that the AI understands and processes them correctly. This becomes especially useful for domain-specific terminology or unique business jargon.
 
