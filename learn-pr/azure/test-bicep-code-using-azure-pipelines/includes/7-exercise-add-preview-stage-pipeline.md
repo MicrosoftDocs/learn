@@ -70,7 +70,7 @@ Next, you'll configure the **Deploy** stage to run against the **Website** envir
 
    :::code language="yaml" source="code/7-pipeline.yml" range="61-82" :::
 
-   Notice that you defined a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't include this step, the deployment job won't be able to read your Bicep file. You could instead consider using _pipeline artifacts_ to send files between pipeline stages. The summary includes a link to more information about artifacts.
+   Notice that you defined a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't include this step, the deployment job won't be able to read your Bicep file. You could instead consider using _pipeline artifacts_ to send files between pipeline stages. The module summary includes a link to more information about artifacts.
 
 1. Save the file.
 
@@ -110,7 +110,7 @@ Next, you'll configure the **Deploy** stage to run against the **Website** envir
 
 1. Select the **Run what-if** step to inspect the changes that the what-if command reports on.
 
-1. Notice that the pipeline log provides what-if results that are similar to the following code:
+1. Notice that the pipeline log provides what-if results that are similar to the following output:
 
    :::code language="output" source="code/7-what-if-output.txt" :::
 

@@ -34,7 +34,7 @@ The test script that you created in the preceding steps requires a host name to 
 
 1. In the **Deploy** stage, update the deployment step to publish the outputs to a variable:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="71-82" highlight="12" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="71-82" highlight="11" :::
 
    Your deployment process still uses the same task as it did previously, but the outputs from the deployments are now stored in a pipeline variable named `deploymentOutputs`. The output variable is formatted as JSON.
 
