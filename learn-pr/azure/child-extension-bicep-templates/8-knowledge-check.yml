@@ -22,15 +22,15 @@ quiz:
     choices:
     - content: The SQL database resource might be in a different resource provider than its parent.
       isCorrect: false
-      explanation: Incorrect. Child resources always exist within the same resource provider as their parent. Extension resources might exist in different resource providers.
-    - content: You can use the `parent` property to tell Bicep about the relationship between the parent and child resources.
+      explanation: Incorrect. Child resources always exist in the same resource provider as their parent. Extension resources might exist in different resource providers.
+    - content: You can use the `parent` property to inform Bicep about the relationship between the parent and child resources.
       isCorrect: true
       explanation: Correct. In Bicep, you define child resources by using the `parent` property, by using nested resources, or by constructing a child resource name directly.
     - content: An Azure SQL logical server instance is an implicit resource.
       isCorrect: false
       explanation: Incorrect. You need to explicitly deploy a logical server instance. It's not an implicit resource.
   - content: |
-      You're asked to deploy an extension resource with the type: `Microsoft.Authorization/roleAssignments`.
+      You're asked to deploy an extension resource with the type `Microsoft.Authorization/roleAssignments`.
       Which of these approaches should you consider?
     choices:
     - content: Use the `scope` property on a resource definition.
@@ -44,13 +44,13 @@ quiz:
       explanation: Incorrect. You can define child resources by using a nested resource definition, but you can't define extension resources in this way.
   - content: Which of these statements is true?
     choices:
-    - content: Using the `existing` keyword on a resource declaration means that Bicep redeploys the resource.
+    - content: When you use the `existing` keyword on a resource declaration, Bicep redeploys the resource.
       isCorrect: false
       explanation: Incorrect. The `existing` keyword means that Bicep doesn't attempt to deploy the resource. Use the keyword to refer to the resource within your Bicep template.
-    - content: All resource definitions in a Bicep file need to have a SKU property set, even existing resources.
+    - content: All resource definitions in a Bicep file need to have an SKU property set, even existing resources.
       isCorrect: false
-      explanation: Incorrect. When you define a resource by using the `existing` keyword, you don't specify the SKU property or most other properties.
+      explanation: Incorrect. When you define a resource by using the `existing` keyword, you don't need to specify the SKU property or most other properties.
     - content: You can access the properties of existing resources by using the resource's symbolic name.
       isCorrect: true
       explanation: Correct. You can use an existing resource to access its properties, including secrets that the resource exposes.
-
+
