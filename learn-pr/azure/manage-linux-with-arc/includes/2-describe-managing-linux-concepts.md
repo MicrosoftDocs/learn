@@ -53,9 +53,9 @@ Microsoft Sentinel is a scalable, cloud-native security information and event ma
 
 Microsoft Sentinel can help keep your environment secure by:
 
-- Collecting data at cloud scale across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds.
-- Detecting previously undetected threats and minimize false positives using Microsoft's analytics and unparalleled threat intelligence.
-- Investigating threats with artificial intelligence and hunt for suspicious activities at scale, tapping into years of cyber security work at Microsoft.
+- Collecting data at cloud scale across all users, devices, applications, and infrastructure, including on-premises and across multiple clouds.
+- Detecting previously undetected threats and minimizing false positives using Microsoft's analytics and unparalleled threat intelligence.
+- Investigating threats with artificial intelligence and hunting for suspicious activities at scale.
 - Responding to incidents rapidly with built-in orchestration and automation of common tasks.
 
 Microsoft Sentinel comes with many connectors for Microsoft solutions, available out of the box and providing real-time integration.
