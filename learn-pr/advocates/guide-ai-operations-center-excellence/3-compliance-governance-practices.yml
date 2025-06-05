@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.workload-operations-generative-ai-center-excellence.compliance-governance-practices
+title: Compliance governance practices
+metadata:
+  title: Compliance governance practices
+  description: Discover how to implement compliance and governance practices for generative AI workloads.
+  ms.date: 06/04/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-compliance-governance-practices.md)]
