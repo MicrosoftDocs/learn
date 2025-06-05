@@ -10,15 +10,21 @@ Copilot in Power BI enables users to ask natural language questions and receive 
 
 ## Ways to Use Fabric Data Agents in Copilot
 
-### 1. Use Copilot search to find and invoke a Fabric Data Agent
+There are two ways you can use Fabric data agents with Power BI. Either, you use Copilot search to find and invoke a Fabric Data Agent, or, if you already know which data agent to use, you can manually add that data agent to the Copilot session.
+
+### Use Copilot search to find and invoke a Fabric Data Agent
 
 When you ask a question in Copilot, it automatically scans all items you have access to, such as Power BI semantic models, Power BI reports, and Fabric Data Agents. Based on your query, Copilot ranks and suggests the most relevant items. You can then choose from these suggestions to receive the most appropriate answer.
 
-### 2. Directly add a Fabric Data Agent
+> [![Screenshot of selecting a Fabric Data Agent in the Copilot search experience.](../media/power-bi-data-agent.png)](../media/power-bi-data-agent.png#lightbox)
+
+### Directly add a Fabric Data Agent
 
 If you already know which data agent you want to use, you can manually add it to your Copilot session. Start by selecting **Add items for better results**, then choose **Data agents** to open the OneLake catalog. 
 
 From there, select the desired data agent from the list. Once added, the data agent is attached to your question, and Copilot will use it for relevant follow-up questions. 
+
+> [![Screenshot of adding a Fabric Data Agent to the Copilot search experience.](../media/power-bi-add-data-agent.png)](../media/power-bi-add-data-agent.png#lightbox)
 
 If your question falls outside the scope of the attached data agent, you may need to indicate a topic change so Copilot can search across all available resources again.
 

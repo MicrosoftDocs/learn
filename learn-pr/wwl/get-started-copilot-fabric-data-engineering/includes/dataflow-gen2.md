@@ -63,16 +63,16 @@ In this section, you'll clean and transform the data using Copilot.
 
 1. Change the data types. It's important to ensure that the data types are set correctly for each field. Enter the following prompt in the Copilot pane:
 
-> [!NOTE]
-> **Crafted prompt**:
->
-> _Change the data types for the following fields:_
-> 
-> _- DateOfVisit and HourOfVisit to text_
-> 
-> _- PatientID, Age, SatisfactionScore to number_
-> 
-> _- Gender, Department to text_
+    > [!NOTE]
+    > **Crafted prompt**:
+    >
+    > _Change the data types for the following fields:_
+    > 
+    > _- DateOfVisit and HourOfVisit to text_
+    > 
+    > _- PatientID, Age, SatisfactionScore to number_
+    > 
+    > _- Gender, Department to text_
 
 Notice that the data types are changed in the query. We keep the DateOfVisit and HourOfVisit as text. Later, we'll merge them and convert them to DateTime data type.
 
@@ -81,21 +81,22 @@ Notice that the data types are changed in the query. We keep the DateOfVisit and
 
 2. Add a new field that takes the age and segments it into different age groups. Enter the following prompt in the Copilot pane:
    
-> [!NOTE]
-> **Crafted prompt**:
->
-> _Add a column AgeRange (type text) that transforms the Age field:_
-> _18-24: Young Adults_
-> 
-> _25-34: Early Career_
-> 
-> _35-44: Mid Career_
-> 
-> _45-54: Late Career_
-> 
-> _55-64: Pre-Retirement_
-> 
-> _65+: Retirees_
+    > [!NOTE]
+    > **Crafted prompt**:
+    >
+    > _Add a column AgeRange (type text) that transforms the Age field:_
+    >
+    > _18-24: Young Adults_
+    > 
+    > _25-34: Early Career_
+    > 
+    > _35-44: Mid Career_
+    > 
+    > _45-54: Late Career_
+    > 
+    > _55-64: Pre-Retirement_
+    > 
+    > _65+: Retirees_
 
 Notice the AgeRange column is added to the query.
 
@@ -104,24 +105,24 @@ Notice the AgeRange column is added to the query.
 
 3. Create a new field that combines the DateOfVisit and HourOfVisit fields. Enter the following prompt in the Copilot pane:
 
-> [!NOTE]
-> **Crafted prompt**:
->
-> _Create a new field that combines the text from DateOfVisit and HourOfVisit. The new field should be called VisitDateTime and should be of type DateTime_
+    > [!NOTE]
+    > **Crafted prompt**:
+    >
+    > _Create a new field that combines the text from DateOfVisit and HourOfVisit. The new field should be called VisitDateTime and should be of type DateTime_
 
 4. Remove the DateOfVisit and HourOfVisit fields as they are no longer needed. Then, sort the table by visit date. Enter the following prompt in the Copilot pane:
    
-> [!NOTE]
-> **Crafted prompt**:
->
-> _Remove the DateOfVisit and HourOfVisit fields. Sort by VisitDateTime descending._
+    > [!NOTE]
+    > **Crafted prompt**:
+    >
+    > _Remove the DateOfVisit and HourOfVisit fields. Sort by VisitDateTime descending._
 
-5. Remove the ENT department. Enter the following prompt in the Copilot pane:
+    5. Remove the ENT department. Enter the following prompt in the Copilot pane:
 
-> [!NOTE]
-> **Crafted prompt**:
->
-> _Remove ENT from the Departments_
+    > [!NOTE]
+    > **Crafted prompt**:
+    >
+    > _Remove ENT from the Departments_
 
 6. Rename the Query to SatisfactionScores.
 
@@ -136,10 +137,10 @@ For complex queries, Copilot explains the generated Mashup code, helping you und
 
 1. Enter the following prompt in the Copilot pane:
 
-> [!NOTE]
-> **Crafted prompt**:
->
-> _Describe this query_
+    > [!NOTE]
+    > **Crafted prompt**:
+    >
+    > _Describe this query_
 
 Notice the result is generated in the Copilot pane. Here's an example of the explanation:
 
