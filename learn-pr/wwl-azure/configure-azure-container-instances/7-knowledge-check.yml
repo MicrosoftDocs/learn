@@ -20,7 +20,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Why should you select virtual machines over containers for your configuration?"
+  - content: "Why should you select virtual machines over containers for your configuration?" 
     choices:
     - content: "Virtual machines run the user mode portion of an operating system and can be tailored to contain just the needed services for your app."
       isCorrect: false
