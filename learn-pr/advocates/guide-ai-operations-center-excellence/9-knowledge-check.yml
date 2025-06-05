@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.workload-operations-generative-ai-center-excellence.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: Check your understanding of the module.
+  ms.date: 06/04/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 3
+content: Choose the best response for each question.
+quiz:
+  questions:
+    - content: "What is the primary role of a generative AI Center of Excellence (CoE)?"
+      choices:
+        - content: "To manage the financial aspects of AI projects."
+          isCorrect: false
+          explanation: "While the CoE does promote financial efficiency through FinOps principles, its primary role isn't to manage the financial aspects of AI projects."
+        - content: "To provide strategic guidance, frameworks, and best practices for GenAIOps."
+          isCorrect: true
+          explanation: "The CoE's primary role is to provide strategic guidance, frameworks, and best practices for GenAIOps processes."
+        - content: "To develop AI models from scratch."
+          isCorrect: false
+          explanation: "The CoE doesn't focus on developing AI models from scratch; it provides support and guidance for managing AI workloads."
+    - content: "Which of the following is a key element of GenAIOps processes?"
+      choices:
+        - content: "Manual deployment of AI workloads."
+          isCorrect: false
+          explanation: "GenAIOps processes emphasize automated deployment mechanisms, not manual deployment."
+        - content: "Integration of security and compliance technologies."
+          isCorrect: true
+          explanation: "A key element of GenAIOps processes is the integration of security and compliance technologies."
+        - content: "Ignoring monitoring and metrics."
+          isCorrect: false
+          explanation: "Monitoring and metrics are essential components of GenAIOps processes to evaluate workload performance and relevance."
+    - content: "What does the CoE promote to ensure financial efficiency in generative AI workloads?"
+      choices:
+        - content: "Ignoring cost management processes."
+          isCorrect: false
+          explanation: "The CoE promotes cost management processes to ensure financial efficiency."
+        - content: "Implementing FinOps principles."
+          isCorrect: true
+          explanation: "The CoE promotes FinOps principles to monitor and optimize spending on generative AI workloads."
+        - content: "Reducing the number of AI models used."
+          isCorrect: false
+          explanation: "The CoE doesn't focus on reducing the number of AI models used; it focuses on optimizing the financial aspects of AI workloads."
