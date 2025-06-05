@@ -4,7 +4,7 @@ title: What are the main components of a Q# program?
 metadata:
   title: How are Q# programs structured?
   description: Learn the structure of a basic Q# program.
-  ms.date: 10/30/2024
+  ms.date: 06/05/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-qsharp-structure.md)]
-
+

@@ -4,7 +4,7 @@ title: Exercise Part 2 - Create a quantum random number generator
 metadata:
   title: Exercise - Create a quantum random number generator
   description: Write classical code to extend your random bit program to generate larger numbers.
-  ms.date: 10/30/2024
+  ms.date: 06/05/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   
@@ -12,4 +12,4 @@ metadata:
   show_latex: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-random-number-generator.md)]
+  [!include[](includes/4-random-number-generator.md)]

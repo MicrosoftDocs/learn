@@ -12,7 +12,7 @@ In this module, we covered a lot. Here are a few key concepts to keep in mind:
 
 ## Next steps
 
-The Quantum Development Kit includes a set of built-in Q# samples that you can use to learn more about Q# and quantum computing. To view the samples, open a blank Q# file in Visual Studio Code and type `sample`, then select the sample you want to view from the list of options. For example, you can find the Q# code we used in unit 2 by selecting *Random Bit sample*.
+The Quantum Development Kit includes a set of built-in Q# samples that you can use to learn more about Q# and quantum computing. To view the samples, open a blank Q# file in Visual Studio Code and type `sample`, then select the sample you want to view from the list of options. For example, you can find the Q# code we used in unit 2 by selecting the *Random Bits sample*.
 
 ## Learn more
 
