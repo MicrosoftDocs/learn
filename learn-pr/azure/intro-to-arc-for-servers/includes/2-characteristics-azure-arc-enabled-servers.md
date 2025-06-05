@@ -1,14 +1,16 @@
-The business technology landscape continuously evolves and becomes increasingly complex, with multiple applications running on different hardware across on-premises datacenters, multiple public and private clouds, and the edge. Managing these disparate environments at scale, enhancing security across an entire organization, and enabling developer agility and innovation are critical for businesses to succeed and thrive. Microsoft Azure provides tools and solutions that help customers like Contoso to innovate their hybrid environments in a secure manner and with a minimized management overhead. Azure Arc is an example of such solution. While it offers support for a range of different scenarios, most on-premises workloads still rely on physical or virtual servers running either Windows or Linux, so our focus will be on Azure Arc-enabled servers.
+The business technology landscape continuously evolves and becomes increasingly complex, with multiple applications running on different hardware across on-premises datacenters, public and private clouds, and the edge. For businesses like Contoso to succeed, they must be able to manage these disparate environments at scale, enhance security across their entire organization, and enable developer agility and innovation. Microsoft Azure provides tools and solutions that help customers innovate their hybrid environments in a secure manner and with a minimized management overhead. Azure Arc is one example, enabling organizations to manage resources hosted outside of Azure alongside native Azure resources. While Azure Arc offers support for different scenarios and resource types, most on-premises workloads still rely on physical or virtual servers running either Windows or Linux, so our focus will be on Azure Arc-enabled servers.
 
-Azure Arc consists of a set of technologies that simplify administrating complex, distributed, hybrid environments, such as the one you deal with as Contoso's IT Engineering team lead. It provides a centralized, multicloud, and on-premises governance and management platform. It facilitates adoption of automation, single-pane-of-glass monitoring, and comprehensive security, and promotes the cloud-first strategy regardless of where your resources are located. At the same time, Azure Arc still allows you to continue using traditional ITOps tools and practices as you transition to the DevOps model to fully benefit from cloud-native architectural and operational patterns.
+Azure Arc-enabled servers simplifies the process of administrating complex, distributed, hybrid environments, such as the one you deal with as Contoso's IT Engineering team lead. It provides a centralized, multicloud, and on-premises governance and management platform. It promotes a cloud-first strategy that enables automation, single-pane-of-glass monitoring, and comprehensive security, regardless of where your resources are located.
 
 In this unit, you'll learn about the characteristics of Azure Arc-enabled servers and how to enable Azure Arc.
 
 ## What are Azure Arc-enabled servers?
 
-Azure Arc relies on the Azure Arc Connected Machine agent, a locally installed agent, to establish a logical connection between the local resource and Azure. By establishing this connection, a non-Azure resource automatically becomes a hybrid Azure resource with its own identity represented by an Azure Resource Manager resource ID. Azure Resource Manager serves as the management interface that allows you to create, modify, and delete Azure resources.
+Azure Arc-enabled servers lets you manage Windows and Linux physical servers and virtual machines hosted outside of Azure, on your corporate network, or other cloud provider. Management of these machines through Azure Arc is designed to be consistent with how you manage native Azure virtual machines, using standard Azure constructs such as Azure Policy and applying tags.
 
-By connecting your machines to Azure with Azure Arc-enabled servers, you can use Azure Resource Manager to manage and monitor its configuration and operations. This facilitates a range of other scenarios that use Azure services to optimize security, monitoring, and governance.
+Azure Arc relies on the Azure Arc Connected Machine agent, a locally installed agent, to establish a logical connection between to Azure. By establishing this connection, a non-Azure resource automatically becomes a hybrid Azure resource, with its own identity represented by an Azure Resource Manager resource ID.
+
+After you onboard your machines to Azure Arc-enabled servers, you can use Azure to manage and monitor their configuration and operations. This facilitates a range of other scenarios that use Azure services to optimize security, monitoring, and governance.
 
 ![A screenshot of the Azure portal displaying the entry representing an Azure Arc-enabled Windows server.](../media/2-azure-arc-enabled-vm-portal.png)
 
@@ -17,24 +19,23 @@ By connecting your machines to Azure with Azure Arc-enabled servers, you can use
 The Azure Arc-enabled servers Connected Machine agent allows you to manage your Windows and Linux machines hosted outside of Azure on your corporate network or other cloud providers. The Azure Connected Machine agent package consists of three core components:
 
 - The Hybrid Instance Metadata service (HIMDS) manages the connection to Azure and the connected machine's Azure identity.
-- The Guest Configuration agent provides In-Guest Policy and Guest Configuration functionality, such as assessing whether the machine complies with required policies.
-- The Extension agent manages the install, uninstall, and upgrade of VM extensions, which are lightweight software components that automate post-operating system deployment configuration and automation tasks.
-
-Together, the Hybrid Instance Metadata service, Guest Configuration agent, and Extension agent constitute the Connected Machine Agent.
+- The Machine Configuration agent provides functionality such as assessing whether the machine complies with required policies and enforcing compliance.
+- The Extension Manager agent manages the install, uninstall, and upgrade of VM extensions, which are lightweight software components that enable post-operating system deployment configuration and automation tasks.
 
 ![A diagram outlining the core components of the Connected Machine agent.](../media/2-connected-machine-agent.png)
 
 ## What are the supported methods for onboarding machines to Azure Arc-enabled servers?
 
-With Azure Arc-enabled servers, the connection to Azure relies on the Connected Machine agent. You can install the agent on individual Windows or Linux servers manually or by running a script available from the Azure portal. This requires that you authenticate to your Azure subscription interactively for each installation. In enterprise environments, you'll likely perform installations at scale by using a script or PowerShell Desired State Configuration-based installation with authentication via a Microsoft Entra service principal. You can automate this service principal script by using the tooling of your choice, including Endpoint Configuration Manager, Group Policy, and Ansible. Effectively, to Arc-enable a server, you need:
+Effectively, to Arc-enable a server, you need:
 
-- A direct connection from the server to Azure
-- The Connected Machine agent installed on the server
 - An Azure subscription
+- The Connected Machine agent installed on the server, creating a connection to Azure
 
-Connecting the agent to your subscription creates an Azure Resource Manager object representing the server. From that point on, you can use the Azure portal, Azure command line tools, or REST API to manage the server. Additionally, you can onboard non-Azure machines connected to Azure Automation Update Management with a point-and-click experience in Azure portal. You can also onboard machines to Azure Arc directly from Windows Admin Center.
+You can install the agent on individual Windows or Linux servers manually, or by running a script available from the Azure portal. In enterprise environments, you'll likely want to perform installations at scale, deploying the agent to many machines simultaneously through a service principal. You can automate this deployment by using the tooling of your choice, including Microsoft Configuration Manager, Group Policy, and Ansible. Additional options let you automatically discover and onboard EC2 instances in your Amazon Web Services (AWS) accounts, or automatically onboard non-Azure machines that you manage through Azure Automation Update Management.
 
 ![Screenshot that depicts the multiple options to onboard to Azure Arc-enabled servers for single server, multiple servers, and update management](../media/2-multiple-gen-script.png)
+
+Once the agent is deployed and connected to your Azure subscription, an Azure Resource Manager object is created to represent each machine. From that point on, you can use the Azure portal, Azure command line tools, or REST API to manage the server.
 
 ## What are the supported environments and operating systems for the Connected Machine agent?
 
@@ -44,8 +45,8 @@ The Connected Machine agent allows you to enhance management of Windows and Linu
 - Azure Local
 - Other cloud environments
 
-Azure Arc-enabled servers does not support installing the agent on virtual machines running in Azure, or virtual machines running on Azure Stack Hub or Azure Stack Edge as they are already modeled as Azure VMs.
-
 The Azure Connected Machine agent supports a wide range of Windows and Linux operating systems. x86-64 (64-bit) architecture is fully supported, while only some features are supported on Arm64. The Azure Connected Machine agent doesn't run on 32-bit architectures.
+
+However, Azure Arc-enabled servers doesn't support installing the agent on virtual machines running in Azure, or virtual machines running on Azure Stack Hub or Azure Stack Edge, because they are already modeled as Azure VMs.
 
 Choose the best response for each of the following questions.
