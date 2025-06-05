@@ -18,7 +18,7 @@ abstract: |
   After completing this module, you'll be able to:
     - Explain resource types and resource IDs
     - Deploy child and extension resources
-    - Represent and use pre-existing resources in a Bicep template
+    - Represent and use preexisting resources in a Bicep template
 prerequisites: |
   You should be familiar with:
   - Creating and deploying basic Bicep templates.

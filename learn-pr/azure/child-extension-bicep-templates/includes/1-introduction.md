@@ -22,7 +22,7 @@ In this module, you learn about Azure resource types and how child and extension
 
 ## What's the main goal?
 
-By the end of this module, you'll be able to create Bicep templates that include child and extension resources. You'll also be able to create Bicep templates that refer to pre-existing Azure resources that were created of outside the template file.
+By the end of this module, you'll be able to create Bicep templates that include child and extension resources. You'll also be able to create Bicep templates that refer to preexisting Azure resources that were created outside of the template file.
 
 ## Prerequisites
 

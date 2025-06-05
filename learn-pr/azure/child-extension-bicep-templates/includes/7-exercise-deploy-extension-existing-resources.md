@@ -46,7 +46,7 @@ New-AzOperationalInsightsWorkspace `
 
 Your R&D team needs to log all requests to the Azure Cosmos DB account. You decide to use [Azure Monitor integration for Azure Cosmos DB](/azure/cosmos-db/cosmosdb-monitor-resource-logs) to collect the *DataPlaneRequests* log, which contains information about requests to Azure Cosmos DB.
 
-Now that you created your simulated pre-existing Log Analytics workspace, you can reference it from within your Bicep template as an existing resource. You can use it as the destination for the Azure Cosmos DB logs.
+Now that you created your simulated preexisting Log Analytics workspace, you can reference it from within your Bicep template as an existing resource. You can use it as the destination for the Azure Cosmos DB logs.
 
 To add diagnostics settings, use the following steps:
 
