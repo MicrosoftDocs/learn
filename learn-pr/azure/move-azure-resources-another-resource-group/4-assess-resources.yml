@@ -4,7 +4,7 @@ title: Assess resources that can move
 metadata:
   title: Assess resources that can move
   description: Assess resources that can move
-  ms.date: 10/18/2024
+  ms.date: 06/04/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -46,5 +46,5 @@ quiz:
       explanation: Your virtual machines have dependent resources without which they can't function properly. Make sure you move them together. 
     - content: You can move virtual machines, but you have to first make sure that you can remove any SSD disks before attempting to move them. 
       isCorrect: false
-      explanation: You can move virtual machines, regardless of whether the virtual machine has SSD or HDD disks attached. 
-
+      explanation: You can move virtual machines, regardless of whether the virtual machine has Solid-State Drive (SSD) or Hard Disk Drive (HDD) disks attached. 
+
