@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement and Manage Enforcement of Cloud Governance Policies
   description: "This module equips administrators with the skills to design, deploy, and oversee security governance in Azure, ensuring alignment with organizational policies and industry best practices."
-  ms.date: 06/04/2025
+  ms.date: 06/05/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module
