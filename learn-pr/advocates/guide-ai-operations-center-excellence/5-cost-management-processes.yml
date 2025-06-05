@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.workload-operations-generative-ai-center-excellence.cost-management-processes
+title: Cost management processes
+metadata:
+  title: Cost Management processes
+  description: Learn how to manage costs for generative AI workloads.
+  ms.date: 06/04/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-cost-management-processes.md)]
