@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-manage-enforcement-cloud-governance-policies.implement-security-controls-asset-management
 title: Implement security controls for asset management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement security controls for asset management
   description: "Implement security controls for asset management"
-  ms.date: 02/07/2025
+  ms.date: 06/05/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -12,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/18-implement-security-controls-asset-management.md)]
+  [!include[](includes/16-implement-security-controls-asset-management.md)]

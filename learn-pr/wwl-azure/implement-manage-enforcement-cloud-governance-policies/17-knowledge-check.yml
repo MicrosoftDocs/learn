@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-manage-enforcement-cloud-governance-policies.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/07/2025
+  ms.date: 06/05/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -12,7 +14,7 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/19-knowledge-check.md)]
+  [!include[](includes/17-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:

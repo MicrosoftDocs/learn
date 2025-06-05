@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.workload-operations-generative-ai-center-excellence.implement-genaiops-processes
+title: Implement GenAIOps processes
+metadata:
+  title: Implement GenAIOps processes
+  description: Learn about GenAIOps processes and how they can help organizations effectively deploy, manage, and maintain generative AI workloads.
+  ms.date: 06/04/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-implement-genaiops-processes.md)]

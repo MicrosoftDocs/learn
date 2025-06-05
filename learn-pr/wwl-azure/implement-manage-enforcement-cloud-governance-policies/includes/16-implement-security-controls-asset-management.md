@@ -189,7 +189,7 @@ Customer security stakeholders ([Learn more](/azure/cloud-adoption-framework/org
 
 Security principle: Ensure that only authorized software executes by creating an allowlist and block the unauthorized software from executing in your environment.<br>
 
-Azure guidance: Use Microsoft Defender for Cloud adaptive application controls to discover and generate an application allowlist. You can also use ASC adaptive application controls to ensure that only authorized software can executes, and all unauthorized software is blocked from executing on Azure Virtual Machines.
+Azure guidance: Use Microsoft Defender for Cloud adaptive application controls to discover and generate an application allowlist. You can also use ASC adaptive application controls to ensure that only authorized software can execute, and all unauthorized software is blocked from executing on Azure Virtual Machines.
 
 Use Azure Automation Change Tracking and Inventory to automate the collection of inventory information from your Windows and Linux VMs. Software name, version, publisher, and refresh time information are available from the Azure portal. To get the software installation date and other information, enable guest-level diagnostics and direct the Windows Event Logs to a Log Analytics workspace.
 
