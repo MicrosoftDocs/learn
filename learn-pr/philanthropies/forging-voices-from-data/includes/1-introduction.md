@@ -1,10 +1,6 @@
-## Session Overview
-
 In this session, learners will explore the full lifecycle of designing, customizing, and deploying AI-powered dialogue systems using **Azure OpenAI Studio**. Building on their foundational understanding of conversational AI, participants will learn how to select models, train them with custom data, and refine their outputs through real-time testing.  
 
 The session covers not only the technical steps involved in setting up a dialogue system but also the creative techniques that bring conversations to life—like personalization, tone control, and contextual memory. By the end, learners will have hands-on knowledge of how to create intelligent, human-like assistants that can scale across digital platforms.
-
----
 
 ## Scenario
 
@@ -18,9 +14,7 @@ Using **Azure OpenAI Studio**, you:
 
 With each iteration, you improve the assistant’s ability to serve students effectively.
 
----
-
-## What Will We Be Doing?
+## What will we be doing?
 
 We’ll walk through the end-to-end process of designing and training a dialogue model in **Azure OpenAI Studio**:
 
@@ -30,9 +24,8 @@ We’ll walk through the end-to-end process of designing and training a dialogue
 - **Customize**: What techniques can make dialogue feel more personal, human, and engaging?
 - **Deploy**: How do you test, evaluate, and improve your assistant across real-world scenarios?
 
----
 
-## What Is the Main Goal?
+## What is the main goal?
 
 By the end of this session, learners will be able to:
 - Build and train custom dialogue systems using **Azure OpenAI Studio**
