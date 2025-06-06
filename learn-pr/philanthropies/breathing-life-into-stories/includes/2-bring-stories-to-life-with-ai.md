@@ -8,51 +8,51 @@ DALL·E, also available through Azure, is an AI system that transforms text prom
 
 Together, these tools form a powerful AI-assisted creative workflow for interactive storytelling.
 
-## The Role of AI in Storytelling and World-Building
+## The role of AI in storytelling and world-building
 
 AI enhances storytelling by acting as a creative collaborator:
 
-- **Idea Expansion**  
+- **Idea expansion**  
   AI can suggest unexpected character traits, plot twists, or dialogue paths that spark new narrative directions.
 
-- **Rapid Visualization**  
+- **Rapid visualization**  
   AI-generated portraits help bring characters to life early in the process, supporting tone, costume design, and setting.
 
-- **Efficiency Boost**  
+- **Efficiency boost**  
   AI saves time in the ideation phase by generating story scaffolds, visual assets, or placeholder dialogue that can be revised and refined later.
 
 These capabilities help writers, designers, and game developers build more immersive, scalable stories.
 
-## AI-Generated Character Portraits
+## AI-Generated character portraits
 
 DALL·E generates images based on natural language prompts. By describing a character’s appearance, personality, and environment, creators can quickly generate visual portraits that match the tone and world of their story.
 
-### Key Concepts
+### Key concepts
 
-- **Interpretation of Prompts**  
+- **Interpretation of prompts**  
   The AI extracts key visual features from a description to create a character image (e.g., “a stern knight with a scar across his cheek, wearing emerald green armor”).
 
-- **Stylistic Control**  
+- **Stylistic control**  
   Creators can guide output by adding style instructions like “anime,” “oil painting,” or “pixel art.”
 
-- **Use Cases**  
+- **Use cases**  
   Portraits can be used for character sheets, in-game cutscenes, dialogue boxes, or pitch decks.
 
 While AI portraits may not replace hand-drawn art in every case, they provide a powerful tool for concepting and communicating visual ideas.
 
-## AI-Enhanced Dialogue Generation
+## AI-Enhanced dialogue generation
 
 Azure OpenAI’s language models can generate realistic, branching dialogue that responds to player input or story progression.
 
-### Benefits of AI Dialogue
+### Benefits of AI dialogue
 
-- **Speed and Variation**  
+- **Speed and variation**  
   AI can draft multiple versions of a line, letting creators explore different tones or responses.
 
-- **Player Immersion**  
+- **Player immersion**  
   More responsive, personalized dialogue increases emotional engagement.
 
-- **Character Depth**  
+- **Character depth**  
   AI-generated dialogue can reflect personality traits, backstory, or emotional nuance when guided with the right context.
 
 ### Examples
