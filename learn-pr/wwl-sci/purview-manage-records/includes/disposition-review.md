@@ -1,57 +1,64 @@
-When content reaches the end of its retention period, organizations need a process to decide what happens next. Should the item be permanently deleted, or is there a need to retain it longer for legal, regulatory, or business reasons? Disposition reviews help answer that question.
+When content reaches the end of its retention period, it doesn't always make sense to delete it automatically. Sometimes, content needs to be kept longer for legal, regulatory, or business reasons. Disposition reviews provide a way to evaluate content before it's permanently deleted.
 
 ## What is a disposition review?
 
-A disposition review provides a final checkpoint before content is deleted at the end of its retention period. This process is managed in the **Disposition** section under **Records Management** in the Microsoft Purview portal. From there, reviewers and administrators can view content ready for review and take action based on organizational policies.
+A disposition review lets designated reviewers examine items before deletion and decide what to do with them. This helps ensure content isn't deleted if it's still needed or subject to additional requirements.
 
-Reviewers are notified by email when items are ready for review. These notifications can be customized in multiple languages to support global teams. Reviewers also receive weekly reminder emails until they complete their assigned reviews.
+Reviews take place in the **Disposition** section of the **Records Management** solution in the Microsoft Purview portal. Reviewers are notified by email when items are ready for review and receive weekly reminders until the task is complete. Notifications can be customized for different languages if needed.
 
-## Prerequisites
+## What you need before getting started
 
-Before configuring or managing disposition reviews, ensure these prerequisites are met:
+Before you create or manage disposition reviews, make sure the following requirements are in place:
 
-- **Roles and permissions**: Users managing reviews must have the **Disposition Management** role, which is part of the **Records Management** role group. Global Administrators aren't assigned this role by default.
+- **Roles and permissions**: Reviewers need the **Disposition Management** role, which is part of the **Records Management** role group. Global Admins don't get this role by default.
 
-  For easier administration, consider creating a mail-enabled security group such as **Disposition Reviewers** and assigning the role to that group.
+- **Access to content**: To view files during review, users also need the **Content Explorer Content Viewer** role.
 
-- **Access to content**: Reviewers who need to see the contents of an item must also have the **Content Explorer Content Viewer** role. Without it, they still see the review task but aren't able to view the file.
+- **Reviewers must be mail-enabled security groups**: Add reviewers individually or by assigning them to mail-enabled security groups created in the Microsoft 365 admin center. Microsoft 365 groups aren't supported, and changes must be made using PowerShell.
 
-- **Reviewer groups**: Reviewers must be added individually or through **mail-enabled security groups** created in the Microsoft 365 admin center. Microsoft 365 groups aren't supported. Changes to these groups can't be made through the Microsoft Purview portal and must be done using PowerShell.
+- **Admin visibility**: To see all reviewable items, a records admin must be part of the designated mail-enabled security group listed in Records Management settings.
 
-- **Visibility for administrators**: To see all disposition items, a records management admin must be a member of the selected mail-enabled security group in the Records Management settings.
+- **Audit logging enabled**: Turn on audit logging at least a day before using disposition review so actions can be captured.
 
-- **Auditing enabled**: Turn on audit logging at least one day before conducting disposition reviews to ensure actions are properly captured.
+## Configure a label for disposition review
 
-## Configure a retention label for disposition review
+Disposition reviews are only supported with **retention labels**, not retention policies.
 
-Disposition reviews are only available with retention labels—not retention policies. During label configuration:
+To enable disposition review:
 
-1. Under **Choose what happens after the retention period**, select **Start a disposition review**.
+1. When creating or editing a retention label, under **Choose what happens after the retention period**, select **Start a disposition review**.
 
    :::image type="content" source="../media/disposition-review-option.png" alt-text="Screenshot showing the option to Start a disposition review." lightbox="../media/disposition-review-option.png":::
 
-1. Select **+ Create stages and assign reviewers**. You can add up to five review stages and define who is responsible for each stage.
+1. Select **+ Create stages and assign reviewers**. You can add up to five stages, each with its own group of reviewers.
 
-1. Optionally, define an automatic approval window (7–365 days). If reviewers don't take action within this timeframe, the item automatically advances to the next stage or is deleted if it's the final stage.
+1. Optionally, set an automatic approval window between 7–365 days. If no action is taken in that time, the item moves to the next stage or is deleted.
 
-1. For each stage, add up to 10 individual reviewers or mail-enabled security groups. Reviewers must have the **Disposition Management** role.
+1. Add reviewers using individual names or mail-enabled security groups. Each reviewer must have the **Disposition Management** role.
 
-1. You can rename stages and update reviewers, but you can't reorder or remove stages after the label is created.
+1. After label creation, you can rename stages and update reviewers—but you can't change the stage order or remove stages.
 
 ## Perform a disposition review
 
-Reviewers can access the **Disposition** section directly from the Microsoft Purview portal or through the email notification link.
+Reviewers can open the **Disposition** section in the Microsoft Purview portal or through email, but must be assigned the **Disposition Management** role in **Records Management** to take action on items.
 
 :::image type="content" source="../media/disposition-review-email.png" alt-text="Screenshot showing the email notification for a disposition review." lightbox="../media/disposition-review-email.png":::
 
-- **Access and visibility**: Administrators can see all pending and completed disposition items if they have been added to the designated mail-enabled security group in the Records Management settings. Reviewers only see items assigned to them.
+- **Review visibility**: Reviewers only see items assigned to them. Admins who need to see all items must be part of the designated review group.
 
-- **Available actions**: Reviewers can approve permanent deletion, apply a new retention label, extend retention, or assign more reviewers. Each action is auditable. The review pane includes tabs such as **Details** and **History** to help reviewers evaluate item metadata, location, and previous actions.
+- **Review actions**: Reviewers can:
+
+  - Approve deletion
+  - Extend retention
+  - Apply a different retention label
+  - Assign additional reviewers
+
+  All actions are captured in the audit log. The review panel shows item details and history to help reviewers make informed decisions.
 
   :::image type="content" source="../media/retention-disposition-options.png" alt-text="Screenshot showing the options available during disposition review." lightbox="../media/retention-disposition-options.png":::
 
-- **Mailbox size requirement**: For Exchange mailbox items to be eligible for disposition review, the mailbox must contain at least 10 MB of data.
+- **Exchange requirement**: To appear in a disposition review, an Exchange mailbox must have at least 10 MB of content.
 
-## Export review activity
+## Export disposition review activity
 
-To support compliance or internal reporting, disposition review data can be exported as a .csv file. This provides a record of actions taken and decisions made during the review process.
+You can export disposition review activity to a .csv file for compliance tracking or internal reporting. This provides a record of all actions taken during the review process.

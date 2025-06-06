@@ -1,64 +1,63 @@
-Navigating the complexities of information lifecycle management is critical for maintaining compliance and ensuring operational efficiency. With Microsoft Purview, organizations can effectively manage this lifecycle through the declaration of records and comprehensive disposition reviews.
+Some content needs more control than standard retention settings provide. Declaring content as a **record** or **regulatory record** adds restrictions that help your organization meet legal and regulatory requirements. Microsoft Purview lets you apply these classifications using retention labels.
 
-## Declaring items as records
+## What happens when content is declared as a record
 
-Declaring items as records involves assigning specific retention labels, categorizing content as either **records** or **regulatory records** based on the needed level of control and permanence. While standard retention labels manage retention timelines and actions, they don't classify content as records. However, labels that identify content as records or regulatory records enforce stricter rules to ensure compliance and safeguard the integrity of the information.
+When a retention label marks content as a record, it applies restrictions based on the level of control required. Standard retention labels manage how long to keep content and what happens when that time ends, but they don't restrict user actions. Record labels do.
 
-Use the table to understand the actions allowed or blocked depending on the type of retention label applied:
+There are two types of record labels:
 
-|Action |Retention label |Record - locked | Record - unlocked | Regulatory record |
-|:-----|:-----|:-----|:-----|:-----|
-|Edit contents|Allowed | **Blocked** | Allowed | **Blocked**|
-|Edit properties, including rename|Allowed |Allowed <sup>1</sup> | Allowed | **Blocked**|
-|Delete|Allowed <sup>2</sup> |**Blocked** |**Blocked**| **Blocked**|
-|Copy|Allowed |Allowed | Allowed| Allowed|
-|Move within container <sup>3</sup>|Allowed |Allowed | Allowed| Allowed|
-|Move across containers <sup>3</sup>|Allowed |Allowed if never unlocked | **Blocked** | **Blocked**|
-|Open/Read|Allowed |Allowed | Allowed| Allowed|
-|Change label|Allowed |Allowed - container admin only | **Blocked**| **Blocked** |
-|Remove label|Allowed |Allowed - container admin only | **Blocked**| **Blocked** |
+- **Record**: Applies restrictions like preventing deletion, with optional locking.
+- **Regulatory record**: Applies the strictest controls and can't be unlocked.
 
-<sup>1</sup> Editing properties for a locked record is allowed by default but can be blocked by a tenant setting.
+The table below shows what users can and can't do based on the label type:
 
-<sup>2</sup> Deleting labeled items can be blocked as a tenant setting.
+| Action  | Retention label | Record - locked | Record - unlocked | Regulatory record |
+|-----|-----|-----|-----|-----|
+| Edit contents | Allowed | **Blocked** | Allowed | **Blocked** |
+| Edit properties  | Allowed | Allowed<sup>1</sup> | Allowed | **Blocked** |
+| Delete | Allowed<sup>2</sup> | **Blocked** | **Blocked** | **Blocked** |
+| Copy | Allowed             | Allowed  | Allowed | Allowed |
+| Move within container<sup>3</sup>  | Allowed | Allowed| Allowed | Allowed |
+| Move across containers<sup>3</sup> | Allowed | Allowed if never unlocked | **Blocked** | **Blocked** |
+| Open/Read | Allowed | Allowed | Allowed | Allowed |
+| Change label | Allowed | Container admin only | **Blocked** | **Blocked** |
+| Remove label | Allowed | Container admin only | **Blocked** | **Blocked** |
 
-<sup>3</sup> Containers include locations like SharePoint sites and Exchange mailboxes.
+<sup>1</sup> Editing properties for a locked record is allowed by default, but this setting can be disabled. <sup>2</sup> Deletion can be blocked at the tenant level. <sup>3</sup> Containers include SharePoint sites and Exchange mailboxes.
 
-### Editing record properties
+### Edit record properties
 
-To manage the integrity and compliance of records marked by retention labels, consider adjusting your Microsoft Purview tenant settings:
+By default, users can still edit metadata on locked records. If you want to prevent this, you can change the tenant setting:
 
-**Editing record properties**: By default, properties of locked records can be edited, but this can be turned off to ensure records remain unchanged. To change this setting:
-
-1. Go to Microsoft Purview portal and select > **Settings** > **Records Management** > **Retention Labels**.
+1. In the Microsoft Purview portal, go to **Settings** > **Records Management** > **Retention Labels**.
 1. Turn off the setting for **Allow users to edit record properties**.
 
 ## Configure retention labels to declare records
 
-To enable the option to mark content as a regulatory record in the retention label wizard, run the PowerShell command `Set-RegulatoryComplianceUI`. This action is auditable and is logged as **Enabled regulatory record option for retention** labels in the audit log.
+To create a retention label that marks content as a regulatory record, you'll need to turn on the option in PowerShell first:
 
-1. [Connect to the Office 365 Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell?azure-portal=true).
-1. Execute the command:
+1. [Connect to the Microsoft Purview PowerShell module](/powershell/exchange/connect-to-scc-powershell?azure-portal=true).
+1. Run the following command:
 
    ```powershell
    Set-RegulatoryComplianceUI -Enabled $true
    ```
 
-This setting is applied immediately without confirmation.
+This setting is applied immediately and is logged in the audit log.
 
-After enabling the regulatory record option using the `Set-RegulatoryComplianceUI` PowerShell command, you can create retention labels in the **Records Management** solution within the Microsoft Purview portal. These labels can designate items as either records or regulatory records. While administrative units are supported in records management, they aren't applicable when publishing or auto-applying retention labels.
+After enabling this setting, you can create a label in **Records Management** that marks content as either a **record** or **regulatory record**. These labels appear only in Records Management if they're configured to declare records.
 
-   :::image type="content" source="../media/declare-records.png" alt-text="Screenshot showing how to create a retention label for a record or regulatory record.":::
+:::image type="content" source="../media/declare-records.png" alt-text="Screenshot showing how to create a retention label for a record or regulatory record.":::
 
-Using this retention label, you can now apply it to SharePoint or OneDrive documents and Exchange emails, as needed.
+Once created, these labels can be published or auto-applied to content in Exchange, SharePoint, or OneDrive.
 
-## Apply the configured retention label to content
+## Apply a record label to content
 
-Users can apply retention labels marking items as records or regulatory records:
+Users can apply record labels directly if they have permission to do so:
 
-- In Exchange, any user with write access to the mailbox.
-- In SharePoint and OneDrive, any user in the default Members group with Contribute permission level.
+- In Exchange: any user with write access to the mailbox.
+- In SharePoint and OneDrive: any user in the **Members** group with **Contribute** permissions.
 
-   :::image type="content" source="../media/retention-label-record.png" alt-text="Screenshot showing where to mark an item as a record in SharePoint and OneDrive." lightbox ="../media/retention-label-record.png":::
+  :::image type="content" source="../media/retention-label-record.png" alt-text="Screenshot showing where to mark an item as a record in SharePoint and OneDrive.":::
 
-Declaring content as records helps in enforcing legal holds and ensuring that critical information is preserved according to legal and organizational standards. It also aids in automating the retention and deletion processes, reducing the risk of human error.
+Applying record labels helps preserve important content and ensures that deletion controls follow organizational and regulatory policies. These settings reduce the risk of accidental changes and help maintain data integrity over time.

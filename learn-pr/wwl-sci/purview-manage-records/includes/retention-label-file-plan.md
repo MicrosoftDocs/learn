@@ -69,5 +69,6 @@ You can also delete labels that:
 - Aren't part of a published or auto-apply policy.
 - Don't declare items as regulatory records.
 - Haven't already been applied to content.
+- Isn't configured for event-based retention
 
 If a label can't be deleted because it has been applied, you see a link to **Content explorer** to identify where it's in use.
