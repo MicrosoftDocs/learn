@@ -4,46 +4,25 @@ Discussed previously was guidance to find components that can be isolated into d
 
 These components need to be managed and packaged. After that, they can be published to a feed, allowing others to consume the packages and use the components it contains.
 
-## Creating a feed
+## Create a feed
 
-The first step is to create a feed where the packages can be stored. In Azure Artifacts, you can create multiple feeds, which are always private.
+The first step is to create a feed where your packages will be stored. Azure Artifacts allows you to create multiple feeds as needed.
 
-During creation, you can specify the name, visibility and prepopulate the default public upstream sources for NuGet, npm, and Python packages.
+When creating a feed, you can specify the name, set the visibility, and choose whether to include packages from common public sources such as NuGet.org and npmjs.com.
 
 ## What are feeds in Azure Artifacts?
 
-Most package management systems provide endpoints where you can request packages to install in your applications. Those endpoints are called feeds.
+In Azure Artifacts, you can create multiple feeds within your projects. Feeds can be scoped to your project or made available across your entire organization.
 
-In Azure Artifacts, you can have multiple feeds in your projects, and you can make them available to only users authorized in your project or for your entire organization.
+Feeds can store packages of different types such as npm, NuGet, Maven, Python, Cargo, and Universal Packages. Each feed can include one or more upstream sources and has its own configurable security settings.
 
-Each feed can contain any packages, even mixed types, but it's recommended that you create one feed per type you want to support in your organization, this way, it's clear what the feed contains.
+Azure Artifacts enables developers to store, manage, and share their packages while maintaining access control. Developers can control how packages are shared, restricting access to specific users, teams, or organizations, or making packages publicly available.
+ 
+## Publish packages to a feed
 
-Each feed can contain one or more upstream and can manage its security.
+Azure Artifacts supports a wide range of package types and technologies. Each package manager has a different workflow for authenticating with Azure Artifacts and publishing packages to a feed.
 
-## Controlling access
-
-The Azure Artifacts feed you created is always private and not available publically.
-
-You need access to it by authenticating to Azure Artifacts with an account with access to Azure DevOps and a team project.
-
-By default, a feed will be available to all registered users in Azure DevOps.
-
-You can select it to be visible only to the team project where the feed is created.
-
-Whichever option is chosen, you can change the permissions for a feed from the settings dialog.
-
-## Push packages to a feed
-
-Once you've authenticated to Azure DevOps, you can pull and push packages to the package feed, provided you have permission to do so.
-
-Pushing packages is done with the tooling for the package manager. Each of the package managers and tooling has a different syntax for pushing.
-
-To manually push a NuGet package, you would use the `NuGet.exe` command-line tool. For a package called `MyDemoPackage,` the command would resemble:
-
-```Cmd
-nuget.exe push -Source {NuGet package source URL} -ApiKey YourKey YourPackage\YourPackage.nupkg
-
-```
+To find the right workflow for your technology, sign in to your Azure DevOps organization, navigate to **Artifacts**, then select **Connect to feed**. From the left panel, choose the package type you're working with and follow the **Project setup** instructions. See [Get started with Azure Artifacts](/azure/devops/artifacts/start-using-azure-artifacts#get-started) for more details.
 
 ## Updating packages
 

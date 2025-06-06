@@ -12,7 +12,7 @@ durationInMinutes: 3
 content: Choose the best response for each question.
 quiz:
   questions:
-    - content: "What is the primary role of a generative AI Center of Excellence (CoE)?"
+    - content: "What is the primary role of an AI Center of Excellence (CoE)?"
       choices:
         - content: "To manage the financial aspects of AI projects."
           isCorrect: false
@@ -34,14 +34,14 @@ quiz:
         - content: "Ignoring monitoring and metrics."
           isCorrect: false
           explanation: "Monitoring and metrics are essential components of GenAIOps processes to evaluate workload performance and relevance."
-    - content: "What does the CoE promote to ensure financial efficiency in generative AI workloads?"
+    - content: "What does the CoE promote to ensure financial efficiency in AI workloads?"
       choices:
         - content: "Ignoring cost management processes."
           isCorrect: false
           explanation: "The CoE promotes cost management processes to ensure financial efficiency."
         - content: "Implementing FinOps principles."
           isCorrect: true
-          explanation: "The CoE promotes FinOps principles to monitor and optimize spending on generative AI workloads."
+          explanation: "The CoE promotes FinOps principles to monitor and optimize spending on AI workloads."
         - content: "Reducing the number of AI models used."
           isCorrect: false
           explanation: "The CoE doesn't focus on reducing the number of AI models used; it focuses on optimizing the financial aspects of AI workloads."
