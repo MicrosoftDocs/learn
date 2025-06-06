@@ -134,6 +134,66 @@
             "source_path_from_root": "/learn-pr/advocates/create-java-webapp-to-app-service-linux/3-exercise-create-javaserver-faces-app.yml",
             "redirect_url": "/training/modules/create-java-webapp-to-app-service-linux/",
             "redirect_document_id": false
+             },
+                          {
+            "source_path_from_root": "/learn-pr/achievements/learn.azure.deploy-azure-resources-by-using-bicep-templates.badge.yml",
+            "redirect_url": "/training/achievements/learn.azure.deploy-azure-resources-by-using-bicep-files.badge",
+            "redirect_document_id": true
+             },
+                          {
+            "source_path_from_root": "/learn-pr/azure/build-first-bicep-template/1-introduction.yml",
+            "redirect_url": "/training/modules/build-first-bicep-file/1-introduction",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/build-first-bicep-template/2-what-bicep.yml",
+            "redirect_url": "/training/modules/build-first-bicep-file/2-what-bicep",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/build-first-bicep-template/3-define-resources.yml",
+            "redirect_url": "/training/modules/build-first-bicep-file/3-define-resources",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/build-first-bicep-template/4-exercise-define-resources-bicep-template.yml",
+            "redirect_url": "/training/modules/build-first-bicep-file/4-exercise-define-resources-bicep-template",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/build-first-bicep-template/5-add-flexibility-parameters-variables.yml",
+            "redirect_url": "/training/modules/build-first-bicep-file/5-add-flexibility-parameters-variables",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/build-first-bicep-template/6-exercise-add-parameters-variables-bicep-template.yml",
+            "redirect_url": "/training/modules/build-first-bicep-file/6-exercise-add-parameters-variables-bicep-template",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/build-first-bicep-template/7-group-related-resources-modules.yml",
+            "redirect_url": "/training/modules/build-first-bicep-file/7-group-related-resources-modules",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/build-first-bicep-template/8-exercise-refactor-template-modules.yml",
+            "redirect_url": "/training/modules/build-first-bicep-file/8-exercise-refactor-template-modules",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/build-first-bicep-template/9-knowledge-check.yml",
+            "redirect_url": "/training/modules/build-first-bicep-file/9-knowledge-check",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/build-first-bicep-template/10-summary.yml",
+            "redirect_url": "/training/modules/build-first-bicep-file/10-summary",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/build-first-bicep-template/index.yml",
+            "redirect_url": "/training/modules/build-first-bicep-file/index",
+            "redirect_document_id": false
              }
       ]
 }
