@@ -23,7 +23,7 @@ abstract: |
 prerequisites: |
   - Basic understanding of data management concepts.
   - Familiarity with the Microsoft Purview portal.
-iconUrl: /training/achievements/manage-records.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
