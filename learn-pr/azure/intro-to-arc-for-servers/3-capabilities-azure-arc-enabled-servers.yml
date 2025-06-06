@@ -31,7 +31,7 @@ quiz:
     - content: "Deploy the Custom Script Extension."
       isCorrect: false
       explanation: "Incorrect. This VM extension is used to download and run scripts on a server."
-    - content: "Use  Azure Update Manager."
+    - content: "Use Azure Update Manager."
       isCorrect: false
       explanation: "Incorrect.  Azure Update Manager manages and governs software updates for hybrid machines."
     - content: "Assign a policy that adds the tag when the servers are onboarded to Azure Arc."
