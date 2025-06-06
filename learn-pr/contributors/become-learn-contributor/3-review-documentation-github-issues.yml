@@ -5,8 +5,8 @@ metadata:
   title: Review Documentation using GitHub Issues
   description: This unit explains how to submit a GitHub issue to give feedback on Microsoft documentation articles.
   ms.date: 06/03/2025
-  author: sgaspari815
-  ms.author: v-sgaspari
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 4
 content: |
