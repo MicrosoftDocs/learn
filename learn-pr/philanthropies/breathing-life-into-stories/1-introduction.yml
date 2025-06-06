@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.philanthropies.breathing-life-into-stories.introduction
-title: introduction
+title: Introduction
 metadata:
   title: Introduction
   description: "In this unit, learners explore how Azure OpenAI and DALL·E can be used to create rich, interactive storytelling experiences."
