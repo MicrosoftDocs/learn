@@ -1,8 +1,4 @@
-## Bring Stories to Life with AI
-
 Artificial intelligence is reshaping how creators develop interactive narratives. From generating compelling characters to writing branching dialogue paths, AI tools offer new ways to speed up production, enhance creativity, and expand storytelling possibilities. In this lesson, learners explore the core capabilities of Azure OpenAI and DALL·E as they apply to world-building and character development.
-
----
 
 ## Introduction to Azure OpenAI and DALL·E
 
@@ -11,8 +7,6 @@ Azure OpenAI provides access to powerful language models like GPT-4, which can g
 DALL·E, also available through Azure, is an AI system that transforms text prompts into detailed images. It allows creators to visually conceptualize characters, settings, and objects by simply describing them. This makes it easier to prototype characters or align visual direction with a story’s tone and setting.
 
 Together, these tools form a powerful AI-assisted creative workflow for interactive storytelling.
-
----
 
 ## The Role of AI in Storytelling and World-Building
 
@@ -28,8 +22,6 @@ AI enhances storytelling by acting as a creative collaborator:
   AI saves time in the ideation phase by generating story scaffolds, visual assets, or placeholder dialogue that can be revised and refined later.
 
 These capabilities help writers, designers, and game developers build more immersive, scalable stories.
-
----
 
 ## AI-Generated Character Portraits
 
@@ -47,8 +39,6 @@ DALL·E generates images based on natural language prompts. By describing a char
   Portraits can be used for character sheets, in-game cutscenes, dialogue boxes, or pitch decks.
 
 While AI portraits may not replace hand-drawn art in every case, they provide a powerful tool for concepting and communicating visual ideas.
-
----
 
 ## AI-Enhanced Dialogue Generation
 
