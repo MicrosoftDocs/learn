@@ -2,8 +2,8 @@
 uid: learn.philanthropies.forging-voices-from-data.summary
 title: Summary
 metadata:
-  title: summary
-  description: "In this unit, learners will review the key skills developed for building, training, and refining AI-powered dialogue systems using Azure OpenAI Studio. They will summarize the creation process from account setup to prompt customization, and explore techniques for making conversations more human, coherent, and user-centric. Keywords: Azure OpenAI Studio, dialogue system development, AI chatbot fine-tuning, conversational AI, prompt engineering, personalized dialogue systems."
+  title: Summary
+  description: "In this unit, learners review the key skills developed for building, training, and refining AI-powered dialogue systems using Azure OpenAI Studio. They summarize the creation process from account setup to prompt customization, and explore techniques for making conversations more human, coherent, and user-centric. Keywords: Azure OpenAI Studio, dialogue system development, AI chatbot fine-tuning, conversational AI, prompt engineering, personalized dialogue systems."
 
   ms.date: 4/28/2025
   author: kprks
