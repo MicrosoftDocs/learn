@@ -12,11 +12,11 @@ Design a short interactive storytelling sequence that features AI-generated char
 
 1. **Develop a Character Concept**  
    - Write a short description of a fictional character (1–2 sentences). Include traits like age, appearance, mood, and setting.  
-     Example: *“A weary knight in her 40s with a scar over one eye, wearing silver armor and standing at a cliff’s edge under a stormy sky.”*
+     Example: *"A weary knight in her 40s with a scar over one eye, wearing silver armor and standing at a cliff’s edge under a stormy sky."*
 
 2. **Open Microsoft Designer**  
    - Input your character description as a prompt.  
-   - Refine the prompt by adding style direction (e.g., “in storybook illustration style” or “concept art style”).  
+   - Refine the prompt by adding style direction (for example, "in storybook illustration style" or "concept art style").  
    - Choose your favorite portrait from the generated options.
 
 3. **Download or Save the Image**  
@@ -26,10 +26,10 @@ Design a short interactive storytelling sequence that features AI-generated char
 
 1. **Open Azure OpenAI Studio (Chat Playground)**  
    - Set your system message to define the character’s role and tone.  
-     Example: *“You are a noble knight speaking with humility and wisdom, responding to a traveler who seeks your advice.”*
+     Example: *"You're a noble knight speaking with humility and wisdom, responding to a traveler who seeks your advice."*
 
 2. **Generate Dialogue Responses**  
-   - Provide user inputs that reflect branching paths (e.g., “Why did you become a knight?” or “Will you help me on my quest?”)  
+   - Provide user inputs that reflect branching paths (for example, "Why did you become a knight?" or "Will you help me on my quest?")  
    - Use the model to generate different responses based on emotion, player alignment, or prior choices.
 
 3. **Create a Simple Dialogue Tree**  
@@ -49,4 +49,4 @@ Design a short interactive storytelling sequence that features AI-generated char
    - Encourage viewers to explore different paths.
 
 **Expected Outcome:**  
-Learners will produce a short, interactive storytelling prototype that features an AI-generated character portrait and dialogue branches. This activity demonstrates how Microsoft tools can support world-building, character development, and non-linear narrative design in a seamless creative workflow.
+Learners produce a short, interactive storytelling prototype that features an AI-generated character portrait and dialogue branches. This activity demonstrates how Microsoft tools can support world-building, character development, and non-linear narrative design in a seamless creative workflow.
