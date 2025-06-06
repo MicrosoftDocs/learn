@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.workload-operations-generative-ai-center-excellence
+metadata:
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 06/04/2025
+  title: Guide AI workload operations with an AI Center of Excellence
+  description: How comprehensive operations guidance from an AI Center of Excellence can help an organization to effectively deploy, manage, and maintain AI workloads.
+  ms.topic: module
+  ms.collection: ce-advocates-ai-copilot
+  ms.service: artificial-intelligence
+title: Guide AI workload operations with an AI Center of Excellence
+summary: Learn how comprehensive operations guidance from an AI Center of Excellence can help an organization to effectively deploy, manage, and maintain AI workloads.
+abstract: |
+  In this module you learn how comprehensive guidance from an AI center of excellence can help an organization to effectively deploy, manage, and maintain AI workloads. Learn about how an AI CoE can help an organization:
+  -	Implement Generative AI Operations (GenAIOps) processes
+  -	Ensure AI workloads are well architected
+  -	Assess and monitor AI workloads
+  -	Deploy AI workloads
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Azure fundamentals
+  - Fundamental AI concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.workload-operations-generative-ai-center-excellence.implement-genaiops-processes
+- learn.workload-operations-generative-ai-center-excellence.security-methods-practices
+- learn.workload-operations-generative-ai-center-excellence.compliance-governance-practices
+- learn.workload-operations-generative-ai-center-excellence.infrastructure-management-processes
+- learn.workload-operations-generative-ai-center-excellence.cost-management-processes
+- learn.workload-operations-generative-ai-center-excellence.monitoring-and-optimization-practices
+- learn.workload-operations-generative-ai-center-excellence.well-architected-generative-ai-workloads
+- learn.workload-operations-generative-ai-center-excellence.deploy-generative-ai-workloads
+- learn.workload-operations-generative-ai-center-excellence.knowledge-check
+- learn.workload-operations-generative-ai-center-excellence.summary
+badge:
+  uid: learn.workload-operations-generative-ai-center-excellence-badge

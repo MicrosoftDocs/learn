@@ -47973,6 +47973,191 @@
       "source_path": "learn-pr/azure/cloud-adoption-framework-plan/6-summary.md",
       "redirect_url": "/training/paths/cloud-adoption-framework/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/2-examine-github-copilot-code-improvement.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/3-exercise-improve-code-quality-github-copilot-chat.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/4-exercise-improve-reliability-performance-github-copilot-chat.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/5-exercise-improve-code-security-github-copilot-chat.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/6-exercise-complete-app-improvement-challenge.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/7-review-app-improvement-solution.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/8-knowledge-check.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-code-improvements-using-github-copilot-tools/9-summary.md",
+      "redirect_url": "/training/modules/implement-code-improvements-using-github-copilot-tools/10-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/2-examine-explain-document-features-github-copilot.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/3-exercise-generate-explanations-using-github-copilot-chat.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/4-exercise-generate-project-documentation-using-github-copilot-chat.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/5-exercise-generate-code-documentation-using-github-copilot.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/6-exercise-complete-code-documentation-challenge.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/generate-documentation-using-github-copilot-tools/7-review-code-documentation-solution.md",
+      "redirect_url": "/training/modules/generate-documentation-using-github-copilot-tools/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/3-examine-github-copilot-benefits.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/4-exercise-install-github-copilot-extensions-visual-studio-code.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/5-examine-autocomplete-features-github-copilot-extension.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/6-examine-ai-assistance-features-github-copilot-chat-extension.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/7-exercise-configure-github-copilot-extensions-visual-studio-code.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/8-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/13-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/get-started-github-copilot/9-summary.md",
+      "redirect_url": "/training/modules/get-started-github-copilot/14-summary",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/10-azure-key-vault-authentication.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/8-azure-key-vault-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/11-create-key-vault-use-azure-portal.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/9-create-key-vault-use-azure-portal",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/12-azure-dedicated-hardware-security-module.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/10-azure-dedicated-hardware-security-module",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/13-configure-access-key-vault-azure-role-based-access-control.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/11-configure-access-key-vault-azure-role-based-access-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/14-azure-key-vault-keys-secrets-certificates.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/12-azure-key-vault-keys-secrets-certificates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/15-configure-cryptographic-key-auto-rotation-azure-key-vault.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/13-configure-cryptographic-key-auto-rotation-azure-key-vault",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/16-azure-key-vault-backup-restore.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/14-azure-key-vault-backup-restore",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/17-implement-security-controls-protect-backups.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/15-implement-security-controls-protect-backups",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/18-implement-security-controls-asset-management.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/16-implement-security-controls-asset-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/19-knowledge-check.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/17-knowledge-check",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/20-summary.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/18-summary",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/5-azure-blueprints.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/6-configure-azure-blueprints.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/7-deploy-secure-infrastructures.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/5-deploy-secure-infrastructures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/8-azure-key-vault.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/6-azure-key-vault",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/9-azure-key-vault-security.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/7-azure-key-vault-security",
+      "redirect_document_id": false
     }
   ]
 }

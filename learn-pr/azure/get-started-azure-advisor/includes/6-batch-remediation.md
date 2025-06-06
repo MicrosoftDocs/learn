@@ -33,7 +33,7 @@ After you select **Quick Fix (Preview)**, a new page opens that helps guide you 
 
 Just as you can apply Advisor recommendations to multiple resources at the same time, you can also choose to postpone or dismiss the recommendations in bulk as well.
 
-For this option, follow the same process for **Quick Fix** that we just discussed. However, instead of quickly fixing the resources you choose, select either **Postpone** or **Dismiss**.
+For this option, follow the same process for **Quick Fix** that we just discussed. However, instead of quickly fixing the resources you choose, select either **Postpone**, or **Dismiss**.
 
 :::image type="icon" source="../media/postpone.png" border="false"::: &nbsp; &nbsp; &nbsp; :::image type="icon" source="../media/dismiss.png" border="false":::
 

@@ -4,6 +4,8 @@ title: Module assessment
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
+  hidden_question_numbers: ["EDD34630_34","EDD34630_46","EDD34630_63","EDD34630_79","EDD34630_83","EDD34630_87"]
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 05/20/2025

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-simple-select.querying-columns-distinct
+uid: learn.azure-databases.postgresql.basic-sql-simple-select.querying-columns-distinct
 title: Simple SELECT
 metadata:
   title: Simple SELECT
   description: "This unit explains how to use the SQL SELECT statement in PostgreSQL to retrieve all or specific columns, and how to filter out duplicates using DISTINCT for efficient data queries."
-  ms.date: 05/14/2025
+  ms.date: 05/23/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit

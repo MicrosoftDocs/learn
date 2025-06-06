@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn.wwl-azure.basic-sql-simple-select
+uid: learn.azure-databases.postgresql.basic-sql-simple-select
 metadata:
   title: "Getting started: An introduction to SQL and reading data"
   description: "Learn how to use the SQL SELECT statement in PostgreSQL to retrieve, filter, and format data with specific columns, DISTINCT, and expressions."
-  ms.date: 05/14/2025
+  ms.date: 05/23/2025
   author: mpopovic
   ms.author: mpopovic
   ms.topic: module-standard-task-based
@@ -162,10 +162,10 @@ products:
 subjects:
   - databases
 units:
-- learn.wwl-azure.basic-sql-simple-select.introduction
-- learn.wwl-azure.basic-sql-simple-select.sample-database-overview
-- learn.wwl-azure.basic-sql-simple-select.querying-columns-distinct
-- learn.wwl-azure.basic-sql-simple-select.concatenation-calculated-columns
-- learn.wwl-azure.basic-sql-simple-select.summary
+- learn.azure-databases.postgresql.basic-sql-simple-select.introduction
+- learn.azure-databases.postgresql.basic-sql-simple-select.sample-database-overview
+- learn.azure-databases.postgresql.basic-sql-simple-select.querying-columns-distinct
+- learn.azure-databases.postgresql.basic-sql-simple-select.concatenation-calculated-columns
+- learn.azure-databases.postgresql.basic-sql-simple-select.summary
 badge:
-  uid: learn.wwl-azure.basic-sql-simple-select.badge
+  uid: learn.azure-databases.postgresql.basic-sql-simple-select.badge
