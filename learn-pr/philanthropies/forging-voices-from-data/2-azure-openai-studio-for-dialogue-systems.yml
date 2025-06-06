@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.philanthropies.forging-voices-from-data.azure-openai-studio-for-dialogue-systems
-title: Azure OpenAI Studio for Dialogue Systems
+title: Azure OpenAI Studio for dialogue systems
 metadata:
-  title: azure-openai-studio-for-dialogue-systems
-  description: "In this unit, learners will explore the features and capabilities of Azure OpenAI Studio, including model selection, custom training, real-time testing, and multi-channel deployment. They will learn how the platform supports scalable, secure development of AI-powered dialogue systems across industries. Keywords: Azure OpenAI Studio, dialogue system development, GPT-4, Codex, real-time AI testing, multi-channel deployment."
+  title: Azure OpenAI Studio for Dialogue Systems
+  description: "In this unit, learners explore the features and capabilities of Azure OpenAI Studio, including model selection, custom training, real-time testing, and multi-channel deployment. They learn how the platform supports scalable, secure development of AI-powered dialogue systems across industries. Keywords: Azure OpenAI Studio, dialogue system development, GPT-4, Codex, real-time AI testing, multi-channel deployment."
 
   ms.date: 4/28/2025
   author: kprks
