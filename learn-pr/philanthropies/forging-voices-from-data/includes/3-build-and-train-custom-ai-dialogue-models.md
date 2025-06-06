@@ -1,4 +1,4 @@
-Creating a custom dialogue system is about more than just picking a model — it’s about careful setup, thoughtful training, and ongoing improvement. In this lesson, you’ll walk through **five essential steps** for building and fine-tuning a functional AI-powered assistant using Azure OpenAI Studio. Each step builds technical skill while helping you shape AI behavior for your unique use case.
+Creating a custom dialogue system is about more than just picking a model — it’s about careful setup, thoughtful training, and ongoing improvement. In this lesson, you walk through **five essential steps** for building and fine-tuning a functional AI-powered assistant using Azure OpenAI Studio. Each step builds technical skill while helping you shape AI behavior for your unique use case.
 
 ## Step 1: Set up your Azure OpenAI Studio account
 
@@ -24,13 +24,13 @@ With your setup complete, it’s time to build.
   This dashboard gives you access to models, playgrounds, deployments, and prompt configurations.
 
 2. **Start a new project**  
-  Create a new deployment and select the right model (e.g., GPT-3 for general tasks or GPT-4 for more advanced dialogue).
+  Create a new deployment and select the right model (for example, GPT-3 for general tasks or GPT-4 for more advanced dialogue).
 
 3. **Define your model’s purpose**  
   Clarify the assistant’s role:  
   Will it help users schedule meetings? Answer policy questions? Act as a digital concierge?
 
-**Why it matters:** A clear scope will help you design focused data inputs and prompt strategies.
+**Why it matters:** A clear scope helps you design focused data inputs and prompt strategies.
 
 ## Step 3: Train the model with custom data
 
@@ -53,7 +53,7 @@ Shape your assistant’s tone, style, and personality.
 
 1. **Set a system prompt**  
   Provide instructions that guide all responses, like:  
-  *“You are a friendly assistant who helps answer questions about university admissions.”*
+  *"You are a friendly assistant who helps answer questions about university admissions."*
 
 2. **Manage context and memory**  
   Configure how the model handles follow-up questions. Use prompt chaining or summarized context to simulate conversation memory.
@@ -78,4 +78,4 @@ Great dialogue systems are built through continuous refinement.
 
 **Why it matters:** Iteration is the key to long-term performance and reliability.
 
-By following these five steps, you’ll move from **concept to custom-built AI assistant** — shaping not just what your system can do, but how well it connects with the people who use it.
+By following these five steps, you move from **concept to custom-built AI assistant** — shaping not just what your system can do, but how well it connects with the people who use it.
