@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.workload-operations-generative-ai-center-excellence.well-architected-generative-ai-workloads
-title: Well architected generative AI workloads
+title: Well architected AI workloads
 metadata:
-  title: Well architected generative AI workloads
-  description: This module covers the principles and practices for architecting generative AI workloads that are robust, scalable, and aligned with best practices.
+  title: Well architected AI workloads
+  description: This module covers the principles and practices for architecting AI workloads that are robust, scalable, and aligned with best practices.
   ms.date: 06/04/2025
   author: Orin-Thomas
   ms.author: orthomas
