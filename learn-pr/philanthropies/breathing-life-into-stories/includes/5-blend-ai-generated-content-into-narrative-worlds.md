@@ -1,4 +1,4 @@
-## Blending AI-Generated Content into Narrative Worlds
+## Blend AI-Generated Content into Narrative Worlds
 
 AI-generated characters and dialogue offer powerful storytelling tools, but to create a cohesive experience, they must be integrated thoughtfully into the overall narrative. This lesson explores how to align AI-generated portraits and dialogue trees with manually written content, world-building, and player progression, ensuring that the result feels intentional, immersive, and emotionally resonant.
 
