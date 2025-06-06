@@ -1,8 +1,4 @@
-## Blend AI-Generated Content into Narrative Worlds
-
 AI-generated characters and dialogue offer powerful storytelling tools, but to create a cohesive experience, they must be integrated thoughtfully into the overall narrative. This lesson explores how to align AI-generated portraits and dialogue trees with manually written content, world-building, and player progression, ensuring that the result feels intentional, immersive, and emotionally resonant.
-
----
 
 ## Seamless Integration of Portraits and Dialogue
 
@@ -32,8 +28,6 @@ When introducing AI-generated assets into an interactive story, placement and ti
 
 When done well, AI-generated dialogue becomes a tool for both world-building and narrative pacing.
 
----
-
 ## Maintaining Consistency Across AI and Human Content
 
 To avoid jarring transitions, AI-generated content should match the tone, structure, and themes of manually written material.
@@ -50,8 +44,6 @@ To avoid jarring transitions, AI-generated content should match the tone, struct
   Compare them with your existing scenes to spot inconsistencies in tone, pacing, or logic.
 
 Consistency creates a seamless experience that keeps players immersed in the story world.
-
----
 
 ## Balancing AI and Human Creativity
 
