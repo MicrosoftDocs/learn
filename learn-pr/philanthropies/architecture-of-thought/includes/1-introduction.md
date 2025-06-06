@@ -1,5 +1,3 @@
-## Session Overview
-
 In this session, learners explore the foundational concepts and real-world applications of AI-powered dialogue systems. With a focus on Azure OpenAI Studio, participants dive into how intelligent agents like chatbots and virtual assistants are built, customized, and deployed to support natural, effective conversations. The session introduces key components of dialogue architecture and shows how AI models automate support, streamline communication, and provide engaging user experiences across industries. Through guided exploration and collaborative activities, learners begin crafting their own dialogue-driven applications using Microsoft tools, setting the stage for deeper hands-on development in later modules.
 
 ## Scenario
