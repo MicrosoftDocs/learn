@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.philanthropies.forging-voices-from-data.build-and-train-custom-ai-dialogue-models
-title: Build and Train Custom AI Dialogue Models
+title: Build and train custom AI dialogue models
 metadata:
-  title: build-and-train-custom-ai-dialogue-models
-  description: "In this unit, learners will walk through the process of building and training AI-powered dialogue models using Azure OpenAI Studio. Topics include setting up an environment, creating deployments, fine-tuning models with custom data, personalizing AI behavior, and iterative testing. Keywords: Azure OpenAI Studio, dialogue model creation, AI fine-tuning, chatbot development, prompt engineering, custom AI systems."
+  title: Build and Train Custom AI Dialogue Models
+  description: "In this unit, learners walk through the process of building and training AI-powered dialogue models using Azure OpenAI Studio. Topics include setting up an environment, creating deployments, fine-tuning models with custom data, personalizing AI behavior, and iterative testing. Keywords: Azure OpenAI Studio, dialogue model creation, AI fine-tuning, chatbot development, prompt engineering, custom AI systems."
 
   ms.date: 4/28/2025
   author: kprks
