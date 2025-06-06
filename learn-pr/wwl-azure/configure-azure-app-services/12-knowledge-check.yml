@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/20/2025
+  ms.date: 06/05/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -36,7 +36,7 @@ quiz:
       explanation: "Incorrect. Continuous deployment is the process of moving software from test into production."
     - content: "Application logging"
       isCorrect: false
-      explanation: "Incorrect. Enabling application logging provides authentication and authorization traces."
+      explanation: "Incorrect. Enabling application logging provides authentication and authorization trace logs."
     - content: "Azure Application Insights"
       isCorrect: true
       explanation: "Correct. Application Insights meets all the requirements. The product can also determine which web pages perform best."

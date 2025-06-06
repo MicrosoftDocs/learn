@@ -12,9 +12,9 @@ ms.author: jgao
     Connect-AzAccount
     ```
 
-   A browser opens so that you can sign in to your Azure account. The browser might be opened in the background.  
+   A browser opens so that you can sign in to your Azure account. The browser might open in the background.  
 
-1. After you've signed in to Azure, the terminal displays a list of the subscriptions associated with this account. If you've activated the sandbox, a subscription named *Concierge Subscription* is displayed. Select it for the rest of the exercise.
+1. After you sign in to Azure, the terminal displays a list of the subscriptions associated with this account. If you activated the sandbox, a subscription named *Concierge Subscription* is displayed. Select it for the rest of the exercise.
 
     If you've used more than one sandbox recently, the terminal might display more than one instance of *Concierge Subscription*. In this case, use the next two steps to set one as the default subscription. 
 
