@@ -4,7 +4,7 @@ Understanding your access patterns and correlating them with your durability and
 - Quantity and types of operations performed, along with any data transfer costs.
 - Data redundancy option selected.
 
-You can use the Azure [Pricing Calculator0(/pricing/calculator) to estimate you storage costs.
+You can use the Azure Pricing Calculator to estimate you storage costs.
 
 :::image type="content" source="../media/blob-pricing.png" alt-text="Screenshot of the Azure Pricing Calculator with storage highlighted." border="false":::
 
