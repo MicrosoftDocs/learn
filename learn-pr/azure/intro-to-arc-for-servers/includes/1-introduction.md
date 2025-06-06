@@ -4,7 +4,7 @@ Let's consider a hypothetical customer scenario. Contoso is a medium-sized finan
 
 In addition, Contoso's IT team has some on-premises server workloads running on legacy infrastructure, which is reaching end of life. Contoso wants to explore migrating these workloads to the cloud, and is considering several different cloud providers. However, Contoso's Chief Information Officer (CIO) is that a multicloud strategy might further exacerbate operational complexity and management overhead that Contoso's IT is trying to minimize.
 
-Contoso's CIO wants to identify technologies that promise to bridge the gap between the administrative model of on-premises and multicloud services, regardless of the server operating system and the hardware or virtualization platform. While attending a recent confernece, the CIO learned about the hybrid capabilities of Azure Arc and asked you, the IT Engineering team lead, to evaluate the extent to which Azure Arc-enabled servers can help with building a consistent, unified management model.
+Contoso's CIO wants to identify technologies that promise to bridge the gap between the administrative model of on-premises and multicloud services, regardless of the server operating system and the hardware or virtualization platform. While attending a recent conference, the CIO learned about the hybrid capabilities of Azure Arc and asked you, the IT Engineering team lead, to evaluate the extent to which Azure Arc-enabled servers can help with building a consistent, unified management model.
 
 ## Learning objectives
 

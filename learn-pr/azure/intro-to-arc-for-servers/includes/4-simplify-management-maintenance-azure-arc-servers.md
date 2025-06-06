@@ -14,7 +14,7 @@ Defender for Cloud continuously analyzes collected data, provides you with remed
 
 ## What are the security benefits of Microsoft Sentinel in hybrid scenarios?
 
-Microsoft Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution. Microsoft Sentinel delivers intelligent security analytics and threat intelligence, providing a single solution for alert detection, threat visibility, proactive hunting, and threat response. y providing a birds-eye view across the enterprise, Microsoft Sentinel helps alleviate the stress of dealing with increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
+Microsoft Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution. Microsoft Sentinel delivers intelligent security analytics and threat intelligence, providing a single solution for alert detection, threat visibility, proactive hunting, and threat response. By providing a birds-eye view across the enterprise, Microsoft Sentinel helps alleviate the stress of dealing with increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
 
 With Microsoft Sentinel, you can:
 

@@ -28,7 +28,7 @@ quiz:
       explanation: "Correct. In each of the Azure Arc-enabled scenarios, Azure Arc uses the locally installed Connected Machine agents to establish a logical connection between the local resource and Azure."
   - content: "Which of these do you need in order to onboard an on-premises machine to Azure Arc?"
     choices:
-    - content: "Azure Automation Update Management congfigured to manage the on-premises machine."
+    - content: "Azure Automation Update Management configured to manage the on-premises machine."
       isCorrect: false
       explanation: "Incorrect. While you can enable automatic onboarding of machines managed through Automation Update Management, there are other ways to onboard a machine that don't require this."
     - content: "An Azure virtual machine that uses the same operating system as the on-premises machine."
