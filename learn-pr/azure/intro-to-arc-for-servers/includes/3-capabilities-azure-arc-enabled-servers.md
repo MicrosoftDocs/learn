@@ -9,12 +9,14 @@ Connecting your non-Azure Windows and Linux servers to Azure through Azure Arc p
 - A consolidated view of both Azure and Azure Arc-enabled resources via the Azure portal, Azure Command Line Interface (CLI), Azure PowerShell, or REST API.
 - Direct access from the Azure portal to many of the management features of Azure Arc-enabled servers:
 
-  - Role-based access control (RBAC) to control which users in your organization can access and manage servers
-  - Azure Policy guest configuration to audit operating system and software configuration
-  - A Microsoft Entra system-assigned managed identity for apps running on the server to use when authenticating to other Azure services
-  - VM extensions to deploy software agents and run scripts on your servers
+  - Azure Policy guest configuration to audit operating system and software configuration.
+  - A Microsoft Entra system-assigned managed identity for apps running on the server to use when authenticating to other Azure services.
+  - VM extensions to deploy software agents and run scripts on your servers.
+  - Role-based access control (RBAC) to control which users in your organization can access and manage servers.
 
-![Screenshot of the Access control (IAM) page in the Azure portal for the selected VM: ContosoVM1. The details pane displays a number of tabs: Check access (selected), Role assignments, Deny assignments, Classic administrators, and Roles.](../media/3-access-control.png)
+For example, you can view a server's **Access control (IAM)** settings in the Azure portal. In this pane, you can view and manage who has access to the server and what permissions they have.
+
+![Screenshot of the Access control (IAM) page in the Azure portal for the selected VM, ContosoVM1.](../media/3-access-control.png)
 
 ### What are VM extensions and how are they used with Azure Arc-enabled servers?
 

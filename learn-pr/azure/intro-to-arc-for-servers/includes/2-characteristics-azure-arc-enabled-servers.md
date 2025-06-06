@@ -12,7 +12,7 @@ Azure Arc relies on the Azure Arc Connected Machine agent, a locally installed a
 
 After you onboard your machines to Azure Arc-enabled servers, you can use Azure to manage and monitor their configuration and operations. This facilitates a range of other scenarios that use Azure services to optimize security, monitoring, and governance.
 
-![A screenshot of the Azure portal displaying the entry representing an Azure Arc-enabled Windows server.](../media/2-azure-arc-enabled-vm-portal.png)
+:::image type="content" source="../media/2-azure-arc-enabled-vm-portal.png" alt-text="A screenshot of the Azure portal displaying the entry representing an Azure Arc-enabled Windows server.":::
 
 ## What is the Connected Machine agent?
 
