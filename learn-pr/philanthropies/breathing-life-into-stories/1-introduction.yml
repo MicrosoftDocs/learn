@@ -3,8 +3,7 @@ uid: learn.philanthropies.breathing-life-into-stories.introduction
 title: introduction
 metadata:
   title: Introduction
-  description: "In this unit, learners will explore how Azure OpenAI and DALL·E can be used to create rich, interactive storytelling experiences. They will learn to generate character portraits, design branching dialogue trees, and integrate AI-generated assets into immersive narratives. Keywords: AI storytelling, interactive storytelling, Azure OpenAI, DALL·E, character creation, dialogue trees."
-
+  description: "In this unit, learners explore how Azure OpenAI and DALL·E can be used to create rich, interactive storytelling experiences."
   ms.date: 4/28/2025
   author: kprks
   ms.author: v-kperkes
