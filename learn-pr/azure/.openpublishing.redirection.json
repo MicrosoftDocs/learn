@@ -135,12 +135,12 @@
             "redirect_url": "/training/modules/create-java-webapp-to-app-service-linux/",
             "redirect_document_id": false
              },
-                          {
+            {
             "source_path_from_root": "/learn-pr/achievements/learn.azure.deploy-azure-resources-by-using-bicep-templates.badge.yml",
             "redirect_url": "/training/achievements/learn.azure.deploy-azure-resources-by-using-bicep-files.badge",
-            "redirect_document_id": true
+            "redirect_document_id": false
              },
-                          {
+            {
             "source_path_from_root": "/learn-pr/azure/build-first-bicep-template/1-introduction.yml",
             "redirect_url": "/training/modules/build-first-bicep-file/1-introduction",
             "redirect_document_id": false
