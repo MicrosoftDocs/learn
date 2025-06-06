@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.philanthropies.breathing-life-into-stories.exercise
-title: Create an AI-Powered Interactive Story Demo
+title: Create an AI-powered interactive story demo
 metadata:
-  title: exercise
+  title: Create an AI-powered Interactive Story Demo
   description: "Build a short interactive storytelling experience using Microsoft Designer for character portrait generation and Azure OpenAI Studio for branching dialogue. Learn to combine AI tools to create a dynamic, visually driven story demo."
   ms.date: 4/28/2025
   author: kprks
