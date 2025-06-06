@@ -1,8 +1,4 @@
-## Character Visualization with Azure OpenAI and DALL·E
-
 In interactive storytelling, strong visuals help bring characters to life and reinforce the tone of the story world. DALL·E, integrated through Azure OpenAI, enables creators to generate custom character portraits using descriptive text prompts. This lesson guides learners through writing effective prompts, refining generated images, and aligning portraits with the narrative style of their story.
-
----
 
 ## Input Character Descriptions into DALL·E for Visual Representation
 
@@ -26,8 +22,6 @@ To begin generating visuals, you’ll write a character prompt that includes phy
 
 The more specific your prompt, the more relevant and story-aligned your result will be.
 
----
-
 ## How Style, Theme, and Detail Affect the Image
 
 The tone and theme of your prompt directly influence the result. Small changes can significantly shift the visual outcome.
@@ -39,8 +33,6 @@ The tone and theme of your prompt directly influence the result. Small changes c
 
 Experimenting with tone, lighting, and visual references allows you to match the image to your world.
 
----
-
 ## Generating and Reviewing Portraits in DALL·E
 
 Once your prompt is crafted:
@@ -50,8 +42,6 @@ Once your prompt is crafted:
 3. Review each image, focusing on alignment with your character’s role, mood, and world.
 
 Don’t expect perfection on the first try—DALL·E is a creative collaborator. Slight prompt adjustments can dramatically improve outcomes.
-
----
 
 ## Refining AI-Generated Images to Match the Story Aesthetic
 
@@ -67,8 +57,6 @@ To ensure consistency across your cast of characters or narrative setting, you m
 
 - **Feature Matching**  
   If needed, regenerate portraits with matching visual traits (e.g., family resemblance, shared armor design, house insignias).
-
----
 
 ### Enhancing with Additional Tools
 
