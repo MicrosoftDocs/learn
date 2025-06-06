@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.purview-implement-manage-retention.disposition-review
+uid: learn.wwl.purview-manage-records.disposition-review
 title: Conduct disposition reviews
 metadata:
   title: Conduct disposition reviews
   description: "Conduct disposition reviews."
-  ms.date: 05/20/2025
+  ms.date: 06/09/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
