@@ -1,8 +1,4 @@
-## Showcase AI-Powered Storytelling Projects
-
 After generating characters, dialogue trees, and interactive branches with AI, the final step is to polish your content and prepare it for presentation. This lesson focuses on how to review and refine your AI-generated assets to ensure narrative cohesion and emotional impact, then present them in an engaging, user-ready format.
-
----
 
 ## Review and Polish All AI-Generated Elements
 
@@ -32,8 +28,6 @@ Make final adjustments to wording, structure, or visuals to enhance clarity, ton
 
 Refinement ensures your story feels polished, cohesive, and intentional.
 
----
-
 ## Presentation Techniques for Interactive Storytelling
 
 Once your story is ready, the next step is showcasing it in a way that engages your audience and highlights the AI-enhanced elements.
@@ -53,8 +47,6 @@ Once your story is ready, the next step is showcasing it in a way that engages y
   Use pacing, music, and transitions to amplify emotional beats and character moments.
 
 A well-prepared presentation not only demonstrates technical achievement but also brings your audience into the emotional core of your story.
-
----
 
 ## Final Takeaway
 
