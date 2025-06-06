@@ -2,8 +2,8 @@
 uid: learn.philanthropies.forging-voices-from-data.introduction
 title: Introduction
 metadata:
-  title: introduction
-  description: "In this unit, learners will explore the full lifecycle of designing, customizing, and deploying AI-powered dialogue systems using Azure OpenAI Studio. They will learn to select models, fine-tune them with custom data, personalize tone, and refine outputs through real-time testing. Keywords: Azure OpenAI Studio, dialogue systems, GPT-4, custom AI assistants, AI fine-tuning."
+  title: Introduction
+  description: "In this unit, learners explore the full lifecycle of designing, customizing, and deploying AI-powered dialogue systems using Azure OpenAI Studio. They learn to select models, fine-tune them with custom data, personalize tone, and refine outputs through real-time testing. Keywords: Azure OpenAI Studio, dialogue systems, GPT-4, custom AI assistants, AI fine-tuning."
 
   ms.date: 4/28/2025
   author: kprks
