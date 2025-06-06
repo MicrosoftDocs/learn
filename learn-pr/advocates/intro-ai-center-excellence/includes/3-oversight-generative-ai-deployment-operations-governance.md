@@ -18,7 +18,7 @@ Responsible AI governance bodies need sufficient financial resources, human capi
 
 The AI CoE should be an integral part of the governance model, strengthening responsible AI through its practices. This includes skilling, development, deployment, monitoring strategies, and data management frameworks.
 
-The CoE plays a critical role in providing AI-specific data standards and best practices while collaborating with specialized teams responsible for broader data governance and architecture. Additionally, AI systems often handle sensitive and regulated data, requiring organizations to comply with standards like GDPR, HIPAA, and CCPA. Implementing robust data security, privacy, and responsible AI practices help mitigate risks while fostering trust in AI-driven decisions.
+The CoE plays a critical role in providing AI-specific data standards and best practices while collaborating with specialized teams responsible for broader data governance and architecture. Additionally, AI systems often handle sensitive and regulated data, requiring organizations to comply with standards like HIPAA, and CCPA. Implementing robust data security, privacy, and responsible AI practices help mitigate risks while fostering trust in AI-driven decisions.
 
 ## Cost management
 
