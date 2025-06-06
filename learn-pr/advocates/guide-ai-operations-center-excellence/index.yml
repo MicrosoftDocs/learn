@@ -4,15 +4,15 @@ metadata:
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 06/04/2025
-  title: Guide AI workload operations with a Generative AI Center of Excellence
-  description: How comprehensive operations guidance from a Generative AI Center of Excellence can help an organization to effectively deploy, manage, and maintain generative AI workloads.
+  title: Guide AI workload operations with an AI Center of Excellence
+  description: How comprehensive operations guidance from an AI Center of Excellence can help an organization to effectively deploy, manage, and maintain AI workloads.
   ms.topic: module
   ms.collection: ce-advocates-ai-copilot
   ms.service: artificial-intelligence
-title: Guide AI workload operations with a generative AI Center of Excellence
-summary: Learn how comprehensive operations guidance from a Generative AI Center of Excellence can help an organization to effectively deploy, manage, and maintain generative AI workloads.
+title: Guide AI workload operations with an AI Center of Excellence
+summary: Learn how comprehensive operations guidance from an AI Center of Excellence can help an organization to effectively deploy, manage, and maintain AI workloads.
 abstract: |
-  In this module you learn how comprehensive guidance from a generative AI center of excellence can help an organization to effectively deploy, manage, and maintain generative AI workloads. Learn about how a generative AI CoE can help an organization:
+  In this module you learn how comprehensive guidance from an AI center of excellence can help an organization to effectively deploy, manage, and maintain AI workloads. Learn about how an AI CoE can help an organization:
   -	Implement Generative AI Operations (GenAIOps) processes
   -	Ensure AI workloads are well architected
   -	Assess and monitor AI workloads
@@ -20,7 +20,6 @@ abstract: |
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
   - Azure fundamentals
-  - Generative AI fundamentals
   - Fundamental AI concepts
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
