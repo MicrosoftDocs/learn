@@ -1,8 +1,3 @@
-### Hands-On Activity: Create an AI-Powered Interactive Story Demo  
-**Time:** 30–45 min  
-
----
-
 **Objective:**  
 Design a short interactive storytelling sequence that features AI-generated character portraits and dynamic dialogue using Microsoft Designer and Azure OpenAI Studio. This activity guides learners through the process of bringing a character to life visually and narratively, then connecting dialogue branches to interactive story choices.
 
