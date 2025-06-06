@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.philanthropies.forging-voices-from-data.exercise
-title: Train and Customize a Dialogue Model in Azure OpenAI Studio
+title: Train and customize a dialogue model in Azure OpenAI Studio
 metadata:
-  title: exercise
-  description: "In this unit, learners will practice enhancing a chatbot by uploading a custom dataset, configuring system prompts for tone, and simulating conversational memory using Azure OpenAI Studio. They will test and refine the model's responses to create a more domain-specific and engaging AI assistant. Keywords: Azure OpenAI Studio, chatbot customization, prompt engineering, fine-tuning AI models, dialogue memory simulation."
+  title: Exercise: Train and Customize a Dialogue Model in Azure OpenAI Studio
+  description: "In this unit, learners practice enhancing a chatbot by uploading a custom dataset, configure system prompts for tone, and simulate conversational memory using Azure OpenAI Studio. They test and refine the model's responses to create a more domain-specific and engaging AI assistant. Keywords: Azure OpenAI Studio, chatbot customization, prompt engineering, fine-tuning AI models, dialogue memory simulation."
 
   ms.date: 4/28/2025
   author: kprks
