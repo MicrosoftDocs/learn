@@ -1,6 +1,6 @@
-The integration of Artificial Intelligence and AI into businesses has led to the  emergence of new specialized roles essential for leveraging AI technologies effectively. Just as organizations once required specialized roles to navigate and master digital transformation, they now need dedicated leaders to drive the adoption, integration, and governance of AI. Part of a AI CoE's responsibilities are to determine whether new roles are required within the organization and the scope of those roles. 
+The integration of Artificial Intelligence and AI into businesses has led to the  emergence of new specialized roles essential for leveraging AI technologies effectively. Just as organizations once required specialized roles to navigate and master digital transformation, they now need dedicated leaders to drive the adoption, integration, and governance of AI. Part of an AI CoE's responsibilities are to determine whether new roles are required within the organization and the scope of those roles. 
 
-A AI CoE should spend time determining the appropriate scope and responsibilities of the roles that will be required for an organization's AI adoption to be successful. Some roles that a AI CoE may consider include:
+An AI CoE should spend time determining the appropriate scope and responsibilities of the roles that will be required for an organization's AI adoption to be successful. Some roles that an AI CoE may consider include:
 
 ## Chief Artificial Intelligence Officer (CAIO)
 

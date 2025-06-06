@@ -2,13 +2,13 @@ Infrastructure management is a critical component of adopting any IT solution. P
 
 ## Specifying AI best practices
 
-When implementing a AI CoE, you can ensure that the AI CoE is required to determine what best AI adoption practices will be followed prior to those solutions are deployed in the organization's infrastructure environment. A properly constituted AI CoE can also determine appropriate oversight mechanisms for the deployment and operation of the solution. Not only can oversight mechanisms and the implementation of best practices instituted from AI workload conception optimize costs, but they can also help ensure that a AI deployment complies with the regulatory requirements relevant to the organization. 
+When implementing an AI CoE, you can ensure that the AI CoE is required to determine what best AI adoption practices will be followed prior to those solutions are deployed in the organization's infrastructure environment. A properly constituted AI CoE can also determine appropriate oversight mechanisms for the deployment and operation of the solution. Not only can oversight mechanisms and the implementation of best practices instituted from AI workload conception optimize costs, but they can also help ensure that an AI deployment complies with the regulatory requirements relevant to the organization. 
 
 ## Security
 
 As organizations integrate AI into their workflows, they must account for risks related to data protection, model security, compliance, adversarial attacks, and responsible AI governance. Security isn't a standalone function, but an essential component of every AI deployment.
 
-While each AI solution incorporates security in different ways, a AI CoE plays an important role in setting guidelines and supporting teams in secure AI implementation. Rather than replacing dedicated security teams, the CoE needs to be in close and constant collaboration with them, to help embed security considerations into AI-related processes and align them with organizational security policies.
+While each AI solution incorporates security in different ways, an AI CoE plays an important role in setting guidelines and supporting teams in secure AI implementation. Rather than replacing dedicated security teams, the CoE needs to be in close and constant collaboration with them, to help embed security considerations into AI-related processes and align them with organizational security policies.
 
 ## Determining governance requirements
 
@@ -26,7 +26,7 @@ Managing the financial impact of AI systems requires a structured approach to op
 
 This practice establishes processes and tools to monitor, forecast, and optimize spending, ensuring that resources are efficiently allocated to maximize ROI. A key consideration in cost efficiency is determining whether to develop custom AI solutions or leverage off-the-shelf alternatives. Organizations must assess factors such as cost integration, complexity, and adaptability to make informed investment decisions.
 
-A AI CoE can contribute to cost efficiency by promoting FinOps principles, driving collaboration between finance, engineering, and business teams to ensure that financial considerations are integrated into every stage of AI solution development and deployment.
+An AI CoE can contribute to cost efficiency by promoting FinOps principles, driving collaboration between finance, engineering, and business teams to ensure that financial considerations are integrated into every stage of AI solution development and deployment.
 
 ## Monitoring and optimization
 

@@ -12,18 +12,18 @@ durationInMinutes: 3
 content: Choose the best response for each question.
 quiz:
   questions:
-    - content: "What is a primary responsibility of a AI Center of Excellence?"
+    - content: "What is a primary responsibility of an AI Center of Excellence?"
       choices:
         - content: "Developing custom LLM models for all organizational needs."
           isCorrect: false
-          explanation: "While the CoE may provide guidance on AI development, developing custom LLMs isn't a primary responsibility. A AI CoE can focus on execution responsibilities like developing models or serve as a guiding body."
+          explanation: "While the CoE may provide guidance on AI development, developing custom LLMs isn't a primary responsibility. an AI CoE can focus on execution responsibilities like developing models or serve as a guiding body."
         - content: "Aligning AI initiatives with organizational and business priorities."
           isCorrect: true
           explanation: "One of the key responsibilities of an AI CoE, is aligning AI initiatives with organizational and business priorities."
         - content: "Replacing existing security teams with AI specialists."
           isCorrect: false
           explanation: "The CoE should work 'in close and constant collaboration' with security teams rather than replacing them."
-    - content: "Which of the following best describes how a AI CoE approaches cost management?"
+    - content: "Which of the following best describes how an AI CoE approaches cost management?"
       choices:
         - content: "By focusing exclusively on using open-source models to minimize expenses."
           isCorrect: false

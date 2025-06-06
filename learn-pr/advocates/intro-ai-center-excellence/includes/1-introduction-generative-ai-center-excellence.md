@@ -1,10 +1,10 @@
-A AI CoE is a collection of people and resources that help an organization adopt AI. It helps define an organization's strategy, determining and establishing an organization's best practices for AI, and acts as an organization's AI adoption knowledge and skilling hub.
+An AI CoE is a collection of people and resources that help an organization adopt AI. It helps define an organization's strategy, determining and establishing an organization's best practices for AI, and acts as an organization's AI adoption knowledge and skilling hub.
 
-## What are the functions of a AI CoE?
+## What are the functions of an AI CoE?
 
-A AI CoE typically focuses on setting direction, defining strategies, providing support, establishing metrics, and monitoring the impact of AI initiatives. A AI CoE provides an organization with a central location and set of people that have the knowledge, skills, and capabilities to effectively leverage AI. When properly implemented, a AI CoE holds the authority and influence within an organization needed to drive adoption of AI solutions. 
+An AI CoE typically focuses on setting direction, defining strategies, providing support, establishing metrics, and monitoring the impact of AI initiatives. An AI CoE provides an organization with a central location and set of people that have the knowledge, skills, and capabilities to effectively leverage AI. When properly implemented, an AI CoE holds the authority and influence within an organization needed to drive adoption of AI solutions. 
 
-A AI CoE assists an organization with:
+An AI CoE assists an organization with:
 
 - Determining business use cases for AI applications.
 - Organizational AI readiness and driving adoption.
@@ -13,9 +13,9 @@ A AI CoE assists an organization with:
 - Ensuring that AI workloads are governed responsibly and are compliant.
 - Ensuring that AI workloads meet operations and security best practices.
 
-## Tailoring a AI CoE to your organization's needs
+## Tailoring an AI CoE to your organization's needs
 
-When designing and implementing a AI CoE, consider the following questions:
+When designing and implementing an AI CoE, consider the following questions:
 
 - Should the AI CoE concentrate on technical and operational aspects, on strategy and business alignment, or adopt an integrated approach?
 - Should the CoE focus on execution responsibilities like developing LLM models or serve as a guiding body, setting principles and frameworks?

@@ -1,10 +1,10 @@
 IT projects suffer from many risks including scope creep, missing completion deadlines, and the project exceeding allocated budget. Projects that are planned out and which include best practices from the beginning are more likely to achieve their goals, be deployed within the projected timeframe, and remain within projected costs than those projects that take a more exploratory approach. A properly constituted AI CoE helps an organization minimize the chance that AI projects are unsuccessful and that the projects meet organizational aspirations.
 
-A AI CoE can influence all of an organization's AI projects with the aim of all of those projects being successful and driving value for the business.
+an AI CoE can influence all of an organization's AI projects with the aim of all of those projects being successful and driving value for the business.
 
 ## Estimates of business value
 
-A strong reason for organizations to consider adopting a AI CoE is that the structured approach that a properly functioning AI CoE brings helps an organization reap the strongest benefits from AI adoption.
+A strong reason for organizations to consider adopting an AI CoE is that the structured approach that a properly functioning AI CoE brings helps an organization reap the strongest benefits from AI adoption.
 
 When implemented correctly, an AI center of excellence ensures the right people are involved at the right time. Key responsibilities of the AI CoE include: 
 
@@ -17,14 +17,14 @@ When implemented correctly, an AI center of excellence ensures the right people 
 
 ![Diagram showing the process through which technical and domain experts can collaborate in AI lifecycle.](../media/technical-domain-expert-collaboration.png)
 
-A AI CoE is able to identify use cases and ensure the "organizational fit." Domain experts (from business or specific functions) play a crucial role in identifying relevant use cases, determining the necessary data, and evaluating the model's effectiveness, especially considering the unique challenges of AI like delusions or model variability. The CoE is able to ensure that use cases must align with the organization's overarching strategy and its ability to deliver on that strategy.
+An AI CoE is able to identify use cases and ensure the "organizational fit." Domain experts (from business or specific functions) play a crucial role in identifying relevant use cases, determining the necessary data, and evaluating the model's effectiveness, especially considering the unique challenges of AI like delusions or model variability. The CoE is able to ensure that use cases must align with the organization's overarching strategy and its ability to deliver on that strategy.
 
 ## Realistic estimates of outcomes
 
-A AI CoE can also ensure that an assessment is performed of how realistic the goals of a AI project are before a line of code has been deployed, rather than determining that the goals weren't realistic only after the project fails to meet expectations. Implementing AI in an organization requires a clear approach to measure its performance, adoption, and impact. 
+An AI CoE can also ensure that an assessment is performed of how realistic the goals of an AI project are before a line of code has been deployed, rather than determining that the goals weren't realistic only after the project fails to meet expectations. Implementing AI in an organization requires a clear approach to measure its performance, adoption, and impact. 
 
-Without actionable metrics, it's challenging to evaluate progress, identify improvement areas, or manage complexity. A solid strategy depends on well-defined metrics to assess performance and ensure initiatives provide value. A AI CoE can be responsible for tracking these metrics to ensure that organizational objectives are achieved.
+Without actionable metrics, it's challenging to evaluate progress, identify improvement areas, or manage complexity. A solid strategy depends on well-defined metrics to assess performance and ensure initiatives provide value. an AI CoE can be responsible for tracking these metrics to ensure that organizational objectives are achieved.
 
 Beyond business outcomes, it's crucial to track how effectively AI is being adopted within the organization. Metrics like user engagement, frequency of usage, and integration with existing workflows can reveal valuable insights into the user experience and identify areas for improvement. 
 
-Transparent performance metrics developed by a AI CoE based on organizational expectations also increase organizational confidence in AI by demonstrating its real-world impact. Establishing clear links between AI performance and business outcomes strengthens stakeholder trust and reduces adoption barriers in future AI projects.
+Transparent performance metrics developed by an AI CoE based on organizational expectations also increase organizational confidence in AI by demonstrating its real-world impact. Establishing clear links between AI performance and business outcomes strengthens stakeholder trust and reduces adoption barriers in future AI projects.
