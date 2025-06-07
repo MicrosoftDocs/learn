@@ -2,7 +2,7 @@
 uid: learn.manage-linux-with-arc
 metadata:
   title: Manage Linux with Arc
-  description: Learn how to use Azure Arc with Linux systems, including SSH and Ansible.
+  description: Learn how to use Azure Arc with Linux systems.
   manager: rayoflores
   ms.date: 06/04/2025
   author: JnHs
@@ -10,7 +10,7 @@ metadata:
   ms.topic: module
   ms.service: azure-arc
 title: Manage Linux with Arc
-summary: In this module, you discover how to manage Linux machines and systems using Azure Arc, SSH, and Ansible. 
+summary: In this module, you discover how to manage Linux machines and systems using Azure Arc-enabled servers. 
 abstract: |
   By the end of this module, you're able to:
     - Describe how Azure Arc works with Linux machines.
