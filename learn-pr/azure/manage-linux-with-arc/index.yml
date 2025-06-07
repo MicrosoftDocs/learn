@@ -13,9 +13,9 @@ title: Manage Linux with Arc
 summary: In this module, you discover how to manage Linux machines and systems using Azure Arc, SSH, and Ansible. 
 abstract: |
   By the end of this module, you're able to:
-    - Describe how to use Azure Arc to manage Linux machines.
-    - Describe how to use SSH with Azure Arc to manage Linux systems.
-    - Describe the options for managing large numbers of Linux systems with Azure Arc and Ansible.
+    - Describe how Azure Arc works with Linux machines.
+    - Describe how to use SSH with Linux machines connected to Azure Arc.
+    - Describe how Azure Arc can help manage Linux systems at scale.
 prerequisites: |
   - Basic understanding of Azure Arc.
   - Basic understanding of Linux server management. 
