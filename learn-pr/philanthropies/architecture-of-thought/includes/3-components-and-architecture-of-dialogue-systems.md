@@ -5,7 +5,7 @@ AI-powered dialogue systems use a structured architecture designed to understand
 The user interface is the access point where users interact with a dialogue system. It can appear as a text-based chatbot or a voice-based virtual assistant.
 
 - **Text-based interfaces** – Appear in messaging apps, websites, and customer support chatbots.
-- **Voice-based interfaces** – Appear in virtual assistants like Alexa or Cortana, allowing spoken input and output.
+- **Voice-based interfaces** – Appear in virtual assistants like Cortana, allowing spoken input and output.
 
 A well-designed UI improves usability, sets expectations for user engagement, and helps guide the conversation's flow.
 
