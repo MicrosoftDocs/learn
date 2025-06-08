@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.forging-voices-from-data.build-dialogue-systems-that-feel-human
+title: Build dialogue systems that feel human
+metadata:
+  title: Build Dialogue Systems That Feel Human
+  description: "In this unit, learners explore advanced techniques for making dialogue systems more human-centered and engaging. Topics include maintaining conversational context, personalizing interactions, incorporating emotional nuance, and using feedback loops to refine user experience. Keywords: AI dialogue systems, personalization, conversational AI, emotional intelligence, context retention, Azure OpenAI Studio."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-build-dialogue-systems-that-feel-human.md)]
