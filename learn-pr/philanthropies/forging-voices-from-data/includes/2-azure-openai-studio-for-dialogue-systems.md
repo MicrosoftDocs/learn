@@ -38,7 +38,7 @@ Azure OpenAI Studio offers powerful tools to tailor models to your project and a
 - Launch chatbots on websites, mobile apps, Microsoft Teams, or social media.
 - Build once, deploy across all platforms for a consistent experience.
 
-## Real-Time Testing and Feedback
+## Real-time testing and feedback
 
 Azure OpenAI Studio makes it simple to test your system as you build.
 

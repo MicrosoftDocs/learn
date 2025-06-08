@@ -1,4 +1,3 @@
-## Summary
 
 In this module, learners explored how to build, train, and refine custom AI-powered dialogue systems using Azure OpenAI Studio.
 
