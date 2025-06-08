@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.architecture-of-thought.components-and-architecture-of-dialogue-systems
+title: Components and architecture of dialogue systems
+metadata:
+  title: Components and Architecture of Dialogue Systems
+  description: "In this unit, learners explore the core components that make up an AI-powered dialogue system, including user interfaces, natural language processing engines, dialogue management, knowledge bases, and response generation. They learn how each layer works together to create natural, intelligent conversations. Keywords: dialogue system architecture, AI conversation design, NLP, dialogue management, response generation."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-components-and-architecture-of-dialogue-systems.md)]

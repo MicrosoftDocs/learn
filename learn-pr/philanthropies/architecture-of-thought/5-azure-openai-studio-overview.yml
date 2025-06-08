@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.architecture-of-thought.azure-openai-studio-overview
+title: Azure OpenAI Studio overview
+metadata:
+  title: Azure OpenAI Studio Overview
+  description: "In this unit, learners explore Azure OpenAI Studio, a cloud-based platform for building, testing, and deploying AI-powered applications using models like GPT-3 and GPT-4. They learn how the platform supports prompt engineering, secure deployments, and scalable integration into real-world applications. Keywords: Azure OpenAI Studio, GPT-3, GPT-4, AI application development, AI prompt engineering."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-azure-openai-studio-overview.md)]
