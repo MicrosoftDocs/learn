@@ -19,13 +19,13 @@ AI-powered dialogue systems appear across industries to improve customer experie
 
 ### Customer support chatbots
 
-- Companies like Microsoft, Amazon, and major banks use chatbots to handle large volumes of routine inquiries.
+- Companies like Microsoft use chatbots to handle large volumes of routine inquiries.
 - These bots provide quick answers to common questions (e.g., order status, password resets).
 - They escalate complex cases to human agents when necessary.
 
 ### Virtual assistants
 
-- Devices like Amazon Alexa, Apple Siri, and Microsoft Cortana use voice-based dialogue systems to interact with users.
+- Devices like Microsoft Cortana use voice-based dialogue systems to interact with users.
 - They perform tasks like setting reminders, controlling smart home devices, or playing music based on voice commands.
 - They learn from user preferences over time to deliver more personalized responses.
 
