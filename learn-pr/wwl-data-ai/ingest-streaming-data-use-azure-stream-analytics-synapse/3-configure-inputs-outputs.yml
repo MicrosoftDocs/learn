@@ -6,8 +6,8 @@ metadata:
   description: "Configure inputs and outputs"
   ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jamesh
   ms.topic: unit
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-configure-inputs-outputs.md)]
+  [!include[](includes/3-configure-inputs-outputs.md)]

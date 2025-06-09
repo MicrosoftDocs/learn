@@ -2,9 +2,13 @@
 uid: learn.wwl.configure-azure-container-instances.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  hidden_question_numbers: ["B16F4466_132","B16F4466_140"]
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 12/20/2024
+  ms.date: 05/21/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -16,7 +20,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Why should you select virtual machines over containers for your configuration?"
+  - content: "Why should you select virtual machines over containers for your configuration?" 
     choices:
     - content: "Virtual machines run the user mode portion of an operating system and can be tailored to contain just the needed services for your app."
       isCorrect: false
@@ -45,7 +49,7 @@ quiz:
       explanation: "Correct. Azure Container Apps is a container management solution that simplifies deployment and provides orchestration."
     - content: "Container groups"
       isCorrect: false
-      explanation: "Incorrect. Container groups are not a container management solution."
+      explanation: "Incorrect. Container groups aren't a container management solution."
     - content: "Container Instances"
       isCorrect: false
       explanation: "Incorrect. Azure Container Instances doesn't provide orchestration."

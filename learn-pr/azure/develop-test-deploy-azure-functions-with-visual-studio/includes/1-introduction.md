@@ -24,4 +24,4 @@ In this module, you will:
 - Experience developing solutions in Visual Studio or a similar integrated development environment
 
 > [!IMPORTANT]
-> The exercises in this module require a local installation of Visual Studio 2022 (hereafter referred to as Visual Studio) in a Windows environment.
+> The exercises in this module require a local installation of Visual Studio 2022 in a Windows environment.

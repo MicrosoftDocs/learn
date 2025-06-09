@@ -1,15 +1,21 @@
-If your company is using Microsoft Entra ID or Okta as your IdP for your enterprise in GitHub's cloud, you can use team synchronization to manage team membership within each organization through IdP groups. With team synchronization enabled, changes made in an IdP group are automatically reflected on GitHub. This feature reduces the need for manual updates and custom scripts. You can centrally manage users' identities, allowing authorization, review, and revocation of permissions. 
+If your company uses Microsoft Entra ID or Okta as your identity provider (IdP), you can manage GitHub team membership through **team synchronization**. When enabled, team sync automatically reflects changes in IdP groups on GitHub—reducing the need for manual updates or custom scripts. This centralized approach simplifies onboarding, permissions management, and access revocation.
 
-When you synchronize a GitHub team with an IdP group, changes to the IdP group are reflected on GitHub automatically, reducing the need for manual updates and custom scripts. You can use an IdP with team synchronization to manage administrative tasks such as onboarding new members, granting new permissions for movements within an organization, and removing member access to the organization.
+| Feature               | Description                                                                 |
+|-----------------------|-----------------------------------------------------------------------------|
+| Sync Users            | Keep GitHub `Teams` aligned with IdP (for example, Active Directory) group membership |
+| Sync on New Team      | Automatically populate teams at creation                                    |
+| Custom Team Mapping   | Use `syncmap.yml` to define custom mappings between team slugs and group names |
+| Dynamic Config        | Use a `settings` file to derive sync settings from your directory structure  |
 
-Managing a team via your service provider allows you to save time and resources that you'd otherwise spend duplicating in GitHub the information about your team that's already captured in your IdP. The Administrator of your IdP will need to enable SAML SSO and SCIM to implement team synchronization.
+## Team Synchronization Use Cases
 
-| Features               | Description                                                  |
-| ---------------------- | ------------------------------------------------------------ |
-| Sync Users             | Add or remove users from `Teams` in GitHub to keep in sync with Active Directory groups |
-| Sync on new team       | Synchronize users when a new team is created                 |
-| Custom team/group maps | The team `slug` and group name will be matched automatically, unless you define a custom mapping with `syncmap.yml` |
-| Dynamic Config         | Utilize a `settings` file to derive Active Directory and GitHub settings |
+Team sync is ideal for enterprises looking to streamline membership management within GitHub organizations. Admins can map GitHub teams to IdP groups and manage memberships automatically. This is useful for:
+
+- Onboarding new employees
+- Adjusting access as users move between teams
+- Removing users who leave the organization
+
+> ⚠️ To use team sync, your IdP admin must enable **SAML SSO** and **SCIM**.
 
 ## Enterprise Managed Users and GitHub Enterprise Server
 
@@ -32,44 +38,98 @@ You can manage EMU-based organization and team membership using groups in your I
 
 For organizations with requirements around self-hosting or specific regional regulations, **GitHub Enterprise Server (GHE.com)** offers an on-premises solution that allows you to maintain full control of your GitHub environment.
 
-For more details, see [Getting started with GitHub Enterprise Cloud](https://docs.github.com/get-started/onboarding/getting-started-with-github-enterprise-cloud) and [About GitHub Enterprise Server](https://docs.github.com/en/enterprise-server@latest/get-started/learning-about-github/about-github-enterprise-server).
+For more details, see [Getting started with GitHub Enterprise Cloud](https://docs.github.com/get-started/onboarding/getting-started-with-github-enterprise-cloud) and [About GitHub Enterprise Server](https://docs.github.com/en/enterprise-server@latest).
 
+## Team Synchronization vs. SCIM for GHES 
 
-Randy
+In GitHub Enterprise Server (GHES), managing user access and team memberships can be achieved through various methods, including team synchronization and System for Cross-domain Identity Management (SCIM). Understanding these methods is essential for effective administration.
 
-## Usage limits
+### Team Sync in GHES
 
-When using the team synchronization feature, there are specific usage limits you need to know about. Exceeding these limits can lead to unexpected performance, and might cause synchronization failures.
+Team synchronization allows you to link GitHub teams with groups in your Identity Provider (IdP). This integration ensures that any changes in the IdP group—such as adding or removing members—are automatically reflected in the corresponding GitHub team. This approach streamlines team management by centralizing user access control within the IdP.
 
-- Maximum number of members in a GitHub team: 5,000
-- Maximum number of members in a GitHub organization: 10,000
-- Maximum number of teams in a GitHub organization: 1,500
+However, it's important to note that team synchronization isn't a user provisioning service and doesn't invite non-members to join organizations in most cases. Therefore, a user will only be successfully added to a team if they're already an organization member.
 
-## Enable team synchronization
+Consider the following scenario to understand how team synchronization works in practice:
 
-With team synchronization, you can use your IdP to manage administrative tasks like onboarding new members, granting new permissions in your organization, and removing member access. When you synchronize a GitHub team with an IdP group, changes made to the IdP group are reflected on GitHub automatically, reducing the need for manual updates and custom scripts. The steps to enable team synchronization depend on the IdP you use.
+- When Azure AD group "DevOps Engineers" maps to GitHub team "DevOps"
+- When Alice is added to the IdP group → automatically added to the GitHub team
+- When she leaves the group → automatically removed from the team
 
-You can enable and use team synchronization, but only with the following supported IdPs:
+> [!NOTE]
+> Team Sync in GHES doesn’t provision accounts. Users must already be GitHub organization members.
 
-- Microsoft Entra ID
-- Okta
+### Team Sync Configuration
 
-The steps to enable team synchronization depend on the IdP you want to use. There are prerequisites to enable team synchronization that apply to each IdP. To enable team synchronization with your IdP, you must obtain administrative access or work with your IdP administrator to configure the IdP integration and groups. After you enable team synchronization, team maintainers and organization owners can connect a team to an IdP group on GitHub or through the API.
+1. Enable Security Assertion Markup Language(SAML) Single Sign-On(SSO) and SCIM in your IdP.
+2. Map GitHub teams to IdP groups via GitHub UI or API.
+3. Changes in group membership sync automatically to GitHub.
 
-**Microsoft Entra ID**: The GitHub System Admin for the GitHub organization needs to identify and work with the Microsoft Entra Administrator to configure Team Synchronization. On the Microsoft Entra ID side, the service is called *automatic user account provisioning*. To enable team synchronization for Microsoft Entra ID, the installation needs the following permissions:
+Supported IdPs:
+- **Microsoft Entra ID**: Requires permissions for profile reading and directory access.
+- **Okta**: Requires SAML SSO, SCIM, tenant URL, and Single Sign-on for Web Systems(SSWS) token with read-only admin access.
 
-- Read all users’ full profiles
-- Sign in and read user profiles
-- Read directory data
+### Disable Team Sync
 
-**Okta**: To enable team synchronization for Okta, you or your IdP administrator must:
+To disable:
 
-- Enable SAML SSO and SCIM for your organization using Okta.
-- Provide the tenant URL for your Okta instance.
-- Generate a valid SSWS token with read-only admin permissions for your Okta installation as a service user.
-
-## Disable team synchronization
-
-When you disable team synchronization, any team members who were assigned to a GitHub team through the IdP group are removed from the team and may lose access to your organization's repositories. You can disable this feature through the organization settings by selecting **Your organization** and selecting **Settings**. Next, select **Authentication security** and choose **Disable team synchronization**.
+1. Navigate to **Settings** > **Organization security**
+2. Click **Disable team synchronization**
 
 :::image type="content" source="../media/disable-team-synchronization.png" alt-text="Screenshot of the organization setting to disable team synchronization." :::
+
+> [!NOTE]
+> Disabling sync removes users from teams if they were added via IdP mapping.
+
+### SCIM in GHES
+SCIM is an open standard protocol designed to automate the exchange of user identity information between identity domains and IT systems. In the context of GHES, SCIM enables administrators to provision, update, and deprovision user accounts directly through the GitHub API. This means you can create, update, and delete user accounts, and sync group information to map GitHub team memberships.
+
+SCIM is useful for managing user lifecycles at scale, ensuring that user data remains consistent across systems.
+
+Consider the following scenario to understand how SCIM works in practice:
+- Okta SCIM integration provisions GitHub users automatically
+- Bob is added to Okta → GitHub account is provisioned
+- Bob changes roles → access and teams update
+- Bob leaves → account is deprovisioned
+
+**Key Benefit:** Full automation for account lifecycle management.
+
+## Team Sync vs. Group SCIM
+
+GitHub supports two primary identity integration approaches:
+
+- **Team Sync**: Focused on syncing group membership to GitHub teams
+- **Group SCIM**: Focused on full lifecycle management of users and groups
+
+### Differences Between Team Sync and Group SCIM
+
+| Feature                  | Team Sync                                     | Group SCIM                                   |
+|--------------------------|-----------------------------------------------|----------------------------------------------|
+| Focus                    | Team-level mapping                            | User and group provisioning                  |
+| Setup                    | Manual group-to-team mapping                  | Automated via IdP SCIM config                |
+| Automation Level         | Syncs group membership only                   | Full lifecycle automation                    |
+| Ideal Use Case           | GitHub Teams management                       | Large orgs with high user turnover           |
+| Deprovisioning           | Manual or IdP-group dependent                 | Fully automated                              |
+| Identity Model           | Classic                                       | Managed Users                                |
+
+
+## Choosing the Right Approach
+The choice between Team Sync and Group SCIM depends on your organization’s needs, size, and existing identity management infrastructure:
+
+| Use Case                          | Recommended Solution |
+|----------------------------------|----------------------|
+| Manage repository access by teams| Team Sync            |
+| Automate user lifecycle          | Group SCIM           |
+| Need full IdP-based governance   | Group SCIM           |
+| GitHub Teams is core to workflow| Team Sync            |
+
+
+## Usage Limits
+
+When using team synchronization, observe these limits:
+
+- Max members per team: **5,000**
+- Max members per organization: **10,000**
+- Max teams per organization: **1,500**
+
+Exceeding these may result in performance issues or sync failures.

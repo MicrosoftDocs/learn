@@ -6,22 +6,17 @@ In this exercise, you create an ExpressRoute circuit using the Azure portal and 
 
 :::image type="content" source="../media/5-exercise-provision-expressroute-circuit.png" alt-text="Diagram of ExpressRoute circuit layout for exercise.":::
 
-## Objectives
+## Job skills
 
- -  **Task 1**: Create and provision an ExpressRoute circuit
- -  **Task 2**: Retrieve your Service key
- -  **Task 3**: Deprovisioning an ExpressRoute circuit
-
-
-> [!NOTE]
-> Click on the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
-
-> [!NOTE]
-> You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+ - Create and provision an ExpressRoute circuit.
+ - Identify your provisioning Service Key.
+ - Deprovisioning an ExpressRoute circuit.
 
 
+> [!IMPORTANT]
+> Estimated time: 15 minutes.
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
-[![Screenshot of the simulation page.](../media/simulation-expressroute-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Provision%20an%20ExpressRoute%20circuit)
+Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 
-> [!NOTE]
-> You can view the [Provision an ExpressRoute circuit](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M03-Unit%205%20Provision%20an%20ExpressRoute%20circuit.html) instructions directly. 
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M03-Unit%205%20Provision%20an%20ExpressRoute%20circuit.html)

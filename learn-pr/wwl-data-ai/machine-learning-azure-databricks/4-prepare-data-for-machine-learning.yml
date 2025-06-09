@@ -4,13 +4,13 @@ title: Prepare data for machine learning
 metadata:
   title: Prepare data for machine learning
   description: Prepare data for machine learning
-  author: wwlpublish
-  ms.author: madiepev
-  ms.date: 08/26/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 4/24/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/4-prepare-data-for-machine-learning.md)]
-
+

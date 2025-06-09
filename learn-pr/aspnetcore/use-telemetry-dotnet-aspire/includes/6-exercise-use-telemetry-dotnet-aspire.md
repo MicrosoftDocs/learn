@@ -97,7 +97,7 @@ Install the .NET Aspire workload using the .NET CLI:
     You should see the details of the .NET Aspire workload.
 
     ```console
-	Installed Workload Id      Manifest Version      Installation Source
+    Installed Workload Id      Manifest Version      Installation Source
     ---------------------------------------------------------------------------------------------
     aspire                     8.0.0/8.0.100         SDK 8.0.300-preview.24203, VS 17.10.34902.84
 
@@ -121,7 +121,7 @@ We can use compile time source generation to create performant logging code auto
 
 1. Open Visual Studio and select **Open a project or solution**.
 1. Browse to the folder where you cloned the starter project. Open the **start** folder, select **eShop.aspiretelemetry.sln**, and then select **Open**.
-1. In **Solution Explorer**, expand **WebApp > Services** and then double-click _CatalogService.cs_.
+1. In **Solution Explorer**, expand **WebApp > Services** and double-click _CatalogService.cs_.
 1. Locate the following line of code, which declares the `CatalogService` class:
 
     ```csharp
@@ -161,19 +161,19 @@ We can use compile time source generation to create performant logging code auto
     LogGetBrands(uri, logger);
     ```
 
-1. To save your changes press <kbd>CTRL + S</kbd> or select **File > Save All**.
+1. To save your changes, press <kbd>CTRL + S</kbd> or select **File > Save All**.
 
 ## Test the instrumentation
 
 Now, we test the compile time source generation logging:
 
-1. In Visual Studio, to start the app in debugging mode, press <kbd>F5</kbd>, or select **Debug > Start Debugging**. 
+1. In Visual Studio, to start the app in debugging mode, press <kbd>F5</kbd> or select **Debug > Start Debugging**.
 1. If the **Start Docker Desktop** message appears, select **Yes**. The app starts and displays the .NET Aspire dashboard in a browser tab.
 1. To make some requests, locate the **webapp** project in the **Resources** list and then select one of its entries in the **Endpoints** column:
 
     :::image type="content" source="../media/aspire-dashboard-open-webapp.png" lightbox="../media/aspire-dashboard-open-webapp.png" alt-text="Screenshot showing the .NET Aspire dashboard and the location of the webapp's endpoint links.":::
 
-1. A new browser tab appears and displays the Northern Mountains homepage. The brands list is included on the left-hand side. Switch back to the .NET Aspire dashboard and on the left-hand menu, select **Structured**.
+1. A new browser tab appears and displays the Northern Mountains homepage. The brands list is included on the left-hand side. Switch back to the .NET Aspire dashboard and select **Structured** on the left-hand menu.
 1. In the **Filter** textbox, type **Getting brands**. The page displays your logged event:
 
     :::image type="content" source="../media/structured-logs-compile-time-event.png" lightbox="../media/structured-logs-compile-time-event.png" alt-text="Screenshot showing filtered events in the .NET Aspire dashboard.":::

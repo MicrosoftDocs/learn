@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 12/01/2023
+  ms.date: 04/30/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -38,4 +38,4 @@ quiz:
     - content: "Embed the Azure Video Indexer widgets in a custom web site that has all the brand images stored for reference."
       isCorrect: false
       explanation: "That's incorrect. You can both detect known brands, and well as include new brands you want to detect by providing information about it."
-
+

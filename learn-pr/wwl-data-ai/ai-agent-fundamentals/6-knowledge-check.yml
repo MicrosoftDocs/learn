@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Test your knowledge of AI agents.
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 04/03/2025
+  ms.date: 05/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -27,16 +27,16 @@ quiz:
       explanation: "Incorrect. An AI agent isn't a marketplace for off-the-shelf AI software components."
   - content: "Which AI agent development service offers a choice of generative AI models from multiple vendors in the Azure AI Foundry model catalog?"
     choices:
-    - content: "Azure AI Agent Service"
+    - content: "Azure AI Foundry Agent Service"
       isCorrect: true
-      explanation: "Correct. Azure AI Agent Service supports many models from the Azure AI Foundry model catalog."
+      explanation: "Correct. Azure AI Foundry Agent Service supports many models from the Azure AI Foundry model catalog."
     - content: "OpenAI Assistants API"
       isCorrect: false
       explanation: "Incorrect. OpenAI Assistants API is restricted to OpenAI models."
     - content: "Microsoft 365 Copilot Chat"
       isCorrect: false
       explanation: "Incorrect. Microsoft 365 Copilot Chat doesn't offer a selection of models for agent development."
-  - content: "Whet element of an Azure AI Agent Service agent enables it to *ground* prompts with contextual data?"
+  - content: "What element of an Foundry Agent Service agent enables it to *ground* prompts with contextual data?"
     choices:
     - content: "Model"
       isCorrect: false

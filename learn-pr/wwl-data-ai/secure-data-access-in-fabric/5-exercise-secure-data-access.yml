@@ -4,10 +4,10 @@ title: 'Exercise: Secure data access in Microsoft Fabric'
 metadata:
   title: 'Exercise: Secure data access in Microsoft Fabric'
   description: "Learn how to secure data access in Microsoft Fabric."
-  ms.date: 10/18/2024
+  ms.date: 05/06/2025
   author: wwlpublish
   ms.author: theresai
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/5-exercise-secure-data-access.md)]
+  [!include[](includes/5-exercise-secure-data-access.md)]

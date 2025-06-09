@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Explore Azure Traffic Manager
   description: "Explore Azure Traffic Manager"
-  ms.date: 04/07/2025
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -22,7 +22,7 @@ quiz:
     choices:
     - content: "Layer 3"
       isCorrect: false
-      explanation: "Incorrect. Traffic Manager works at the application level, Layer 7 ."
+      explanation: "Incorrect. Traffic Manager works at the application level, Layer 7."
     - content: "Layer 4"
       isCorrect: false
       explanation: "Incorrect. Traffic Manager works at the application level, Layer-7."

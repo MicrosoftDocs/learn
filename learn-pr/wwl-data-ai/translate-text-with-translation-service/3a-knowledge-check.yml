@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 09/13/2024
+  ms.date: 04/23/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
@@ -46,4 +46,4 @@ quiz:
       explanation: "Correct. Azure AI Speech can translate audio from one language into audio in another language."
     - content: "Speech-to-text"
       isCorrect: false
-      explanation: "Incorrect. Azure AI Speech does have speech-to-text capabilities, but you will want to use another capability."
+      explanation: "Incorrect. Azure AI Speech does have speech-to-text capabilities, but you will want to use another capability."

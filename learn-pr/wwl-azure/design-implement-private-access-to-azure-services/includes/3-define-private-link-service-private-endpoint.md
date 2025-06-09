@@ -1,4 +1,5 @@
 
+
 ## Scenario
 
 Your organization has an Azure virtual network, and you want to connect to a PaaS resource such as an Azure SQL database. When you create such resources, you normally specify a public endpoint as the connectivity method.
@@ -13,7 +14,7 @@ The concern here's that your Azure SQL database is exposed to the internet throu
 
 ## Overview of Azure Private Endpoint and Azure Private Link
 
-This video summarizes Private Link and Private Link. 
+This video summarizes Private Endpoints and Private Links. 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=512163b5-e468-4e20-ab1c-d82d4420951e]
 

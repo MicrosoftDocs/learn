@@ -6,10 +6,10 @@ metadata:
   description: "Get to know Spark"
   ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/02-understand-spark.md)]
+  [!include[](includes/02-understand-spark.md)]

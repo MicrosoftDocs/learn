@@ -4,7 +4,7 @@ title: Exercise - Use question answering with Language Studio
 metadata:
   title: Exercise - Use question answering with Language Studio
   description: "Exercise - Use question answering with Language Studio"
-  ms.date: 09/27/2024
+  ms.date: 4/23/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 20
 content: |
-  [!include[](includes/4-exercise.md)]
+  [!include[](includes/4-exercise.md)]
