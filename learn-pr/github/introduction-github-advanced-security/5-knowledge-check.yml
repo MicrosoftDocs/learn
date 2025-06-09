@@ -86,7 +86,7 @@ quiz:
         explanation: "Incorrect. GitHub's dependency graph does not track feature usage."
   - content: "How does Push Protection help secure your codebase?"
     choices:
-      - content: "It runs unit tests before code is committed."
+      - content: "It will block commits when checks aren't passing"
         isCorrect: false
         explanation: "Incorrect. This describes CI testing, not Push Protection."
       - content: "It blocks pushes that contain detected secrets before they reach the repository."
