@@ -4,12 +4,12 @@ title: Secure SMB traffic
 metadata:
   title: Secure SMB traffic
   description: "Secure SMB traffic"
-  ms.date: 06/01/2022
+  ms.date: 06/09/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/6-secure-smb-traffic.md)]

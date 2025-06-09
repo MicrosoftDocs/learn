@@ -4,12 +4,12 @@ title: Configure Privileged Access Workstations
 metadata:
   title: Configure Privileged Access Workstations
   description: "Configure Privileged Access Workstations"
-  ms.date: 06/01/2022
+  ms.date: 06/09/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/3-configure-privileged-access-workstations.md)]
