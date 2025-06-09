@@ -3,7 +3,7 @@ In this unit we'll be covering:
 -	Secret scanning
 -	Code scanning
 -	Dependabot
--	Creating a More Secure Software Development Life Cycle with Key Features
+-	Creating a More Secure Software Development Life Cycle with key Features
 
 Let’s start with a quick review of GHAS.
 
