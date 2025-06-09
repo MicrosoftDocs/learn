@@ -8,7 +8,7 @@ In this unit, you learn how to:
 - Set the name, description, and README of your Project.
 - Add issues and pull requests to your Project.
 
-## Creating an organization-level Project
+## Creating an organization-owned Project
 
 First, you want to lay the foundation by creating a new Project. Creating is relatively quick and simple.
 
@@ -26,7 +26,10 @@ First, you want to lay the foundation by creating a new Project. Creating is rel
 
 You just created a Project!
 
-You can also create a personal Project by selecting your profile photo and navigating to **Your projects**. Once you're on your Projects page, select the green button titled **New project**.
+> [!TIP]
+> You can also create a personal Project by selecting your profile photo and navigating to **Your projects**, then clicking **New project**.  
+> Additionally, Projects can be created directly from a repository—this links the repository to the Project automatically, though the Project itself is still created at the organization level and can be linked to other repositories or projects in the future.
+
 
 ## Set your Project's name, description, and README
 

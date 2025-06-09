@@ -52,7 +52,11 @@ Learn more about [Understanding the search syntax](https://docs.github.com/enter
 
 ## Using Milestones
 
-Milestones let you group issues and pull requests into shared goals, like a sprint, a product release, or a project phase.
+Milestones let you group issues and pull requests into shared goals, like a sprint, a product release, or a project phase. They help teams track progress and keep everyone aligned.
+
+- Milestones can be ordered (just like projects), making it easy to set priorities and visualize which milestones are most important.
+- Progress towards each milestone is tracked automatically—GitHub shows how many issues or PRs are complete and how many remain.
+- Milestones are especially useful for tracking work that goes into separate releases or phases.
 
 ### Create a milestone
 
@@ -68,7 +72,7 @@ Milestones let you group issues and pull requests into shared goals, like a spri
 2. In the right sidebar, select Milestone.
 3. Choose from the list of available milestones.
 
-When you view a milestone, GitHub shows how many issues/PRs are complete and how many remain—making it a helpful planning and tracking tool.
+You can also add milestones as a column to your GitHub Projects layout or display a milestone as a card on a GitHub Projects board. This helps visualize and manage your team’s progress directly from your project planning board.
 
 > You can filter by milestone in GitHub Projects or with advanced search queries like:
 >
@@ -155,6 +159,21 @@ When writing a comment on an issue or pull request, you can insert a saved reply
 4. Modify the text if needed, then click Comment.
 
 Saved replies save time and help ensure consistency when responding across your project.
+
+Here’s an updated version that includes guidance on **issue templates**—explaining what they are, how they differ from saved replies, and why they’re usually better for collecting structured information up front.
+
+## Issue Templates
+
+While saved replies are useful for common responses, **issue templates** are a better way to make sure contributors provide all the necessary information when creating new issues.
+
+* **Issue templates** prompt users to fill in specific fields or answer certain questions up front, reducing back-and-forth and ensuring you have the details you need from the start.
+* Templates help maintainers avoid “lost data” by collecting structured information before an issue is even submitted.
+
+**Tip:**
+To set up issue templates, go to your repository’s **Settings** > **Issues** > **Set up templates**. You can create templates for bug reports, feature requests, or anything else your project needs.
+
+> **Best practice:**
+> Use issue templates to capture required details and reduce missing or incomplete information. Use saved replies for routine responses and instructions after issues or pull requests are submitted.
 
 ## Adding assignees
 
