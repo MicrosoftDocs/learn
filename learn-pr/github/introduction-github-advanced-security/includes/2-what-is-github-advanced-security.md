@@ -34,7 +34,7 @@ Secret scanning includes:
 - Push protection proactively prevents secret leaks by scanning code on commit and blocking a push if a secret is present.
 - The ability to easily view alerts and remediate them without ever having to leave GitHub. 
 
-In a secure software development life cycle, Secret scanning helps teams detect and fix exposed secrets early—reducing the risk of data breaches and preserving confidentiality throughout development.
+In a secure software development life cycle, secret scanning detects exposed secrets, allowing teams to revoke or rotate them as early as possible—often before they can be used for malicious purposes, reducing the risk of data breaches and preserving confidentiality throughout development.
 
 Next, let’s review code scanning. 
 
