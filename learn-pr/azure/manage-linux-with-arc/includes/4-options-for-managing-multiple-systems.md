@@ -1,6 +1,5 @@
 Azure Arc provides a wide range of capabilities for managing a large number of Linux systems. You can onboard your Linux machines at scale using automation tools such as Ansible. Once your Linux systems are onboarded to Azure Arc, you can use Azure services to work with them more efficiently at scale. For example, you can use Azure Policy to help enforce standards and compliance, and use Azure Machine Configuration to configure settings for your Linux VMs. To build and operate IT automation at scale, allowing you to create, share, and manage automation across your organization, you can use options such as the Ansible Automation Platform.
 
-
 ## Azure Policy
 
 Azure Policy can help you enforce organizational standards and access the compliance of all your Linux machines. Through its compliance dashboard, Azure Policy provides an aggregated view of your Linux environment, allowing you to evaluate its overall state. Azure Policy also helps to bring your Linux resources to compliance through bulk remediation for existing resources and automatic remediation for new resources.
