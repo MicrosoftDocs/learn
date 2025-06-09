@@ -175,7 +175,7 @@ To set up issue templates, go to your repository’s **Settings** > **Issues** >
 > **Best practice:**
 > Use issue templates to capture required details and reduce missing or incomplete information. Use saved replies for routine responses and instructions after issues or pull requests are submitted.
 
-## Adding assignees
+## Adding assignees 
 
 You can assign one or more people to an issue or pull request to show who’s responsible for working on it.
 
