@@ -26,7 +26,7 @@ Incorporating security into your software development process may seem like a da
 
 :::image type="content" source="../media/2-security-scanning.png" alt-text="Image of a lock with the GitHub Octocat in the middle of it representing Security Scanning.":::
 
-Secret scanning is a crucial security feature within GitHub Advanced Security (GHAS) designed to identify and mitigate the inadvertent exposure of sensitive information, such as API keys and tokens within the source code. 
+Secret scanning is a critical GitHub security feature that identifies and helps prevent the accidental exposure of sensitive information, such as API keys and tokens, within your source code. Secret scanning is available for all public repositories for free, and can also be enabled for private repositories with a GitHub Advanced Security (GHAS) license. 
 
 This helps prevent unauthorized access and protects confidential data. Secret scanning operates by searching for predefined patterns and signatures indicative of sensitive information, ensuring that potential security risks are promptly addressed. By default, secret scanning looks for highly accurate patterns that have been provided by a GitHub Partner.  However, custom patterns can be created for other use cases.
 
