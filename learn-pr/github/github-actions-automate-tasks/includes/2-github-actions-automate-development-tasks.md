@@ -176,6 +176,11 @@ When creating workflows in GitHub Actions, you can reference actions from variou
        uses: actions/checkout@v3
    ```
 
+> [!IMPORTANT]
+> **For better security, use a full commit SHA when referencing actions—not just a tag like `@v3`.**  
+> This makes sure your workflow always uses the exact same code, even if the action is updated or changed later.  
+> Example: `uses: actions/checkout@c2c1744e079e0dd11c8e0af4a96064ca4f6a2e9e`
+
 3. **The same repository as your workflow file**  
    You can reference actions stored in the same repository as your workflow file. This is useful for custom actions that are specific to your project. To reference such actions, use a relative path to the action's directory. For example:
    ```yml
