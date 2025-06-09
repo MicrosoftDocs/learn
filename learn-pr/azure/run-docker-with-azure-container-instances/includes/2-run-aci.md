@@ -29,8 +29,6 @@ For scenarios where you need full container orchestration, including service dis
     az group create --name learn-deploy-aci-rg --location eastus
     ```
 
-    Create a container by providing a name, a Docker image, and an Azure resource group to the `az container create` command. You can optionally expose the container to the Internet by specifying a DNS name label. In this example, deploy a container that hosts a small web app. You can also select the location to place the image; we use the **East US** region, but you can change it to a location close to you.
-
 1. Provide a DNS name to expose your container to the Internet. Your DNS name must be unique. For learning purposes, run this command from Cloud Shell to create a Bash variable that holds a unique name:
 
     ```azurecli
