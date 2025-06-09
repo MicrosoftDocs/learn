@@ -60,7 +60,7 @@ Dependabot includes:
 
 Dependabot works closely with the Dependency Graph to determine which dependencies are in use and cross-reference them against the GitHub Advisory Database to detect vulnerabilities.
 
-With GitHub Advanced Security, Dependabot’s functionality is extended to include Dependency Review, allowing you to preview any vulnerable packages being introduced in a pull request before merging.
+With GitHub Advanced Security, Dependabot’s capabilities are enhanced by Dependency Review, enabling you to preview any vulnerable packages introduced in a pull request and prevent the addition of insecure dependencies before merging.
 
 ### Where to enable Secret scanning, Code scanning, and Dependabot alerts
 
