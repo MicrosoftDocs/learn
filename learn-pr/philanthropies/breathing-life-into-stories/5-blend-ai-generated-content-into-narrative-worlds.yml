@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.breathing-life-into-stories.blend-ai-generated-content-into-narrative-worlds
+title: Blend AI-generated content into narrative worlds
+metadata:
+  title: Blend AI-Generated Content into Narrative Worlds
+  description: "Learn how to seamlessly integrate AI-generated character portraits and dialogue into interactive storytelling projects. Explore best practices for maintaining consistency, balancing AI and human creativity, and ensuring narrative immersion."
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-blend-ai-generated-content-into-narrative-worlds.md)]
