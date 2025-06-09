@@ -28,9 +28,9 @@ quiz:
       explanation: "This answer is incorrect. Secret scanning is automatically enabled with default settings on public repositories. You can't change secret scanning settings on a public repository no matter what permissions you have on the repository."
   - content: "Where can you configure the recipients of secret scanning alerts?"
     choices:
-    - content: "In the Code security and analysis settings of a repository"
+    - content: "In the Advanced Security settings of a repository"
       isCorrect: true
-      explanation: "Correct! You can configure the recipients of secret scanning alerts in the Access to alerts section of repository Code security and analysis settings."
+      explanation: "Correct! You can configure the recipients of secret scanning alerts in the Access to alerts section of repository Advanced Security settings."
     - content: "In the Manage Access settings of a repository"
       isCorrect: false
       explanation: "This answer is incorrect. The Manage Access settings of a repository enable you to manage user permissions over the repository."
