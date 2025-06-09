@@ -25,13 +25,13 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | Workspace Name  | Provide a unique name for the Microsoft Sentinel Workspace such as `<yourName>-sentinel`, where *\<yourName>* represents the workspace name that you chose in the previous task. |
     | Location | Accept the default value of **[resourceGroup().location]**. |
     | Simplevm Name | Accept the default value of **simple-vm**. |
-    | Simplevm Windows OS Version | Accept the default value of **2016-Datacenter**. |
+    | Simplevm Windows OS Version | Accept the default value of **2022-Datacenter**. |
 
 1. Select the **Review + create**. When validation passes, select **Create**.
 
     :::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the Custom Deployment page." border="true":::
 
-    > [!Note]
+    > [!NOTE]
     > Wait for the deployment to complete. The deployment should take less than five minutes.
 
 ## Task 2: Check the resources created
