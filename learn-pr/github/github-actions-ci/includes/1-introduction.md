@@ -1,21 +1,7 @@
-GitHub Actions can be used to implement *continuous integration* (CI) for code that is maintained in GitHub repositories. CI is the practice of using automation to build and test software every time a developer commits changes to version control. CI helps teams discover issues early in the development process and fix them quickly.
+*Continuous integration (CI)* is the process of using automation to build and test software each time a developer commits changes to version control in a code base. CI helps teams discover issues early in the development process and fix them quickly. You can use GitHub Actions to implement CI for code that you maintain in a GitHub repository. 
 
-Suppose you want to set up a CI pipeline for your team. The team is developing a website to improve the experience customers have when they contact product support. A number of features are under development and you want to make sure the team can build and test them easily so that each one can be quickly added to the website. Because the code for the project is stored in a GitHub repository, you decide to use GitHub Actions for your CI project.
+Suppose you want to set up a CI pipeline for your team of developers. The team is creating a website to improve the experience your customers have when they contact product support. Multiple features are under development. You want to make sure that the team can build and test all features easily so that each feature is quickly added to the website when it's ready. Because the code for the project is stored in a GitHub repository, you decide to use GitHub Actions for your CI project.
 
-In this module, you learn how to implement continuous integration using GitHub Actions and workflows in your GitHub repositories.
+In this module, you learn how to implement CI by using GitHub Actions and workflows in a GitHub repository. You build and test a Node.js project by using GitHub Actions and a workflow template. You customize your workflow by using GitHub Actions, and then you debug a failed test by using the GitHub Actions log.
 
-## Learning objectives
-
-In this module, you:
-
-- Build and test a Node.js project by using GitHub Actions and a templated workflow.
-- Debug a failed test using the GitHub Actions Log.
-- Customize your workflow with GitHub Actions.
-
-## Prerequisites
-
-- A GitHub account
-- The ability to navigate and edit files in GitHub
-  - For more information about GitHub, see [Introduction to GitHub](https://github.com/githublearn/introduction-to-github).
-- Basic familiarity with GitHub Actions and workflows
-  - If you're unfamiliar with GitHub Actions or workflows, check out [Automate development tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/)
+To complete the module, you need basic familiarity with GitHub Actions and workflows. If you're unfamiliar with GitHub Actions or workflows, first check out [Automate development tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/).
