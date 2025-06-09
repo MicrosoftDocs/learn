@@ -140,6 +140,7 @@ Gists are a feature of GitHub that allows users to share code snippets, notes, o
 
 5. **Markdown Support**:
    - Gists support Markdown formatting, which means you can include rich text, headings, links, and even images alongside your code. This is particularly useful for adding context or explanations to your snippets.
+   - Code blocks are automatically rendered with syntax highlighting, making your snippets easy to read.
 
 6. **Collaboration**:
    - While gists are typically used for individual snippets, they can also be shared and collaborated on by multiple users. Forking and commenting on gists enable lightweight collaboration.
@@ -150,6 +151,10 @@ Gists are a feature of GitHub that allows users to share code snippets, notes, o
 - Creating templates for commonly used code patterns.
 - Sharing error logs or debugging information with others.
 - Embedding code snippets in blogs, forums, or documentation.
+
+[!IMPORTANT]
+> **Never include secrets, passwords, API keys, or sensitive data in gists—even in scripts or config files.**  
+> Gists (including secret gists) can be accessed by anyone with the link, so always double-check your content before sharing.
 
 #### Limitations of Gists:
 - Gists are not entirely private, even if marked as secret. Anyone with the URL can access them, so they should not be used for sensitive or confidential information.
