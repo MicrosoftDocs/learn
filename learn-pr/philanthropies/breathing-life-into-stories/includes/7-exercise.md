@@ -48,5 +48,5 @@ Design a short interactive storytelling sequence that features AI-generated char
    - Link each choice to a slide or card showing the corresponding AI-generated response.  
    - Encourage viewers to explore different paths.
 
-## Expected outcome:
+## Expected outcome
 Learners produce a short, interactive storytelling prototype that features an AI-generated character portrait and dialogue branches. This activity demonstrates how Microsoft tools can support world-building, character development, and non-linear narrative design in a seamless creative workflow.
