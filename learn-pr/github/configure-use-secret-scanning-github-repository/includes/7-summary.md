@@ -12,7 +12,7 @@ GitHub will alert you when secrets are detected so the appropriate actions can b
 
 For private repositories, the secret scanning configuration options also enable you to exclude specific files from scans, choose the people to notify of alerts, and create custom patterns for the secrets in your project that aren't automatically detected by GitHub.
 
-In addition to secret scanning, GitHub Advanced Security offers other features to improve your software security posture:
+Alongside secret scanning, GitHub Advanced Security offers other features to improve your software security posture:
 
 - **Dependency Graph:** Understand how your project depends on open-source libraries and get notified when vulnerable packages are detected.
 - **Dependabot Security Updates:** Automatically open pull requests that fix vulnerabilities in your dependencies.
