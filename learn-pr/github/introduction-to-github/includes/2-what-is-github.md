@@ -153,8 +153,8 @@ Gists are a feature of GitHub that allows users to share code snippets, notes, o
 - Embedding code snippets in blogs, forums, or documentation.
 
 [!IMPORTANT]
-> **Never include secrets, passwords, API keys, or sensitive data in gists—even in scripts or config files.**  
-> Gists (including secret gists) can be accessed by anyone with the link, so always double-check your content before sharing.
+> **Never use gists to store sensitive or confidential data, such as passwords, secrets, or API keys—even in scripts or config files.**  
+> Gists are not fully private: even secret gists can be accessed by anyone with the link. Always review your content carefully before sharing.
 
 #### Limitations of Gists:
 - Gists are not entirely private, even if marked as secret. Anyone with the URL can access them, so they should not be used for sensitive or confidential information.
