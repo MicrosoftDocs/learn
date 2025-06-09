@@ -7,7 +7,7 @@ In the previous unit, you explored the different ways that users can authenticat
 
 ## Repository permission levels
 
-You can customize access to a given repository by assigning permissions. There are five repository-level permissions:
+You can customize access to each repository by assigning specific permission levels. There are five standard repository-level permissions:
 
 - **Read**: Recommended for non-code contributors who want to view or discuss your project. This level is good for anyone that needs to view the content within the repository but doesn't need to actually make contributions or changes.
 - **Triage**: Recommended for contributors who need to proactively manage issues and pull requests without write access. This level could be good for some project managers who manage tracking issues but don't make any changes.
@@ -15,16 +15,9 @@ You can customize access to a given repository by assigning permissions. There a
 - **Maintain**: Recommended for project managers who need to manage the repository without access to sensitive or destructive actions.
 - **Admin**: Recommended for people who need full access to the project, including sensitive and destructive actions like managing security or deleting a repository. These people are repository owners and administrators.
 
-You can give organization members, outside collaborators, and teams different levels of access to repositories owned by an organization. Each permission level progressively increases access to a repository's content and settings. Choose the level that best fits each person or team's role in your project without giving more access to the project than necessary.
+You can assign different permission levels to organization members, outside collaborators, and teams for repositories owned by your organization. Each permission level increases access to the repository’s content and settings. Always choose the minimum level of access required for each person or team’s responsibilities.
 
-After you create a repository with the correct permissions, you can make it a template so that anyone who has access to the repository can generate a new repository that has the same directory structure and files as your default branch. To make a template:
-
-1. On GitHub.com, go to the main page of the repository.
-1. Under the repository name, select **Settings**. If you can't see the **Settings** tab, open the dropdown menu, and then select **Settings**.
-
-    :::image type="content" source="../media/repository-actions-settings.png" alt-text="Screenshot showing where to locate the settings button in your GitHub repository.":::
-
-1. Select **Template repository**.
+Administrators can also create custom roles in GitHub Enterprise, extending one of these base roles with additional permissions as needed.
 
 ### What is repository forking?
 
