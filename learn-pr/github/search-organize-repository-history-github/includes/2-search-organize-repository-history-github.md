@@ -68,7 +68,7 @@ Milestones let you group issues and pull requests into shared goals, like a spri
 2. In the right sidebar, select Milestone.
 3. Choose from the list of available milestones.
 
-When you view a milestone, GitHub shows how many issues/PRs are complete and how many remain—making it a helpful planning and tracking tool.
+When you view a milestone, GitHub shows how many issues/PRs are complete and how many remain. This makes it a helpful lightweight planning and tracking tool. For more advanced project management, use GitHub Projects.
 
 > You can filter by milestone in GitHub Projects or with advanced search queries like:
 >
