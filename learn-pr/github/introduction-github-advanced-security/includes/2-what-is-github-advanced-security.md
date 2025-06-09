@@ -44,7 +44,7 @@ Next, let’s review code scanning.
 
 Code scanning is an integral feature of GHAS that analyzes source code for security vulnerabilities and coding errors. It employs static analysis techniques to identify potential issues such as SQL injection, cross-site scripting, and buffer overflows. By providing automated feedback directly within the pull request workflow, code scanning enables developers to address vulnerabilities early in the development process.
 
-Code scanning improves code quality and helps minimize security threats by identifying and addressing issues before they reach production 
+Code scanning improves code quality and helps minimize security threats by identifying and addressing issues early in the development lifecycle. Because scanning rules are continuously updated, code scanning can also detect vulnerabilities that may already exist in production.
 
 ### Dependabot
 
