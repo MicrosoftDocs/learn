@@ -72,11 +72,7 @@ Milestones let you group issues and pull requests into shared goals, like a spri
 2. In the right sidebar, select Milestone.
 3. Choose from the list of available milestones.
 
-<<<<<<< HEAD
 You can also add milestones as a column to your GitHub Projects layout or display a milestone as a card on a GitHub Projects board. This helps visualize and manage your team’s progress directly from your project planning board.
-=======
-When you view a milestone, GitHub shows how many issues/PRs are complete and how many remain. This makes it a helpful lightweight planning and tracking tool. For more advanced project management, use GitHub Projects.
->>>>>>> 819b32c64b747d600d06081b99b95d322816026f
 
 > You can filter by milestone in GitHub Projects or with advanced search queries like:
 >

@@ -60,7 +60,7 @@ A README file communicates expectations for your project and helps you manage co
 - Include references to the projects on which you depend. These references are a good way to promote the work of others.
 - Use Markdown to guide readers through properly formatted content.
 
-If you put your README file in your repository's root directory, or in the hidden `.github` or `docs` directory, GitHub recognizes and automatically surfaces your README to repository visitors. If a repository contains more than one README file, then the file shown is chosen from locations in the following order: 
+If you put your README.md file in your repository's root directory, or in the hidden `.github` or `docs` directory, GitHub recognizes and automatically surfaces your README to repository visitors. If a repository contains more than one README file, then the file shown is chosen from locations in the following order: 
 1. The `.github` directory  
 2. The repository's root directory  
 3. The `docs` directory  
