@@ -47,7 +47,7 @@ This setting is applied immediately and is logged in the audit log.
 
 After enabling this setting, you can create a label in **Records Management** that marks content as either a **record** or **regulatory record**. These labels appear only in Records Management if they're configured to declare records.
 
-:::image type="content" source="../media/declare-records.png" alt-text="Screenshot showing how to create a retention label for a record or regulatory record.":::
+:::image type="content" source="../media/declare-record/declare-records.png" alt-text="Screenshot showing how to create a retention label for a record or regulatory record." lightbox="../media/declare-record/declare-records.png":::
 
 Once created, these labels can be published or auto-applied to content in Exchange, SharePoint, or OneDrive.
 
@@ -58,6 +58,6 @@ Users can apply record labels directly if they have permission to do so:
 - In Exchange: any user with write access to the mailbox.
 - In SharePoint and OneDrive: any user in the **Members** group with **Contribute** permissions.
 
-  :::image type="content" source="../media/retention-label-record.png" alt-text="Screenshot showing where to mark an item as a record in SharePoint and OneDrive.":::
+  :::image type="content" source="../media/declare-record/retention-label-record.png" alt-text="Screenshot showing where to mark an item as a record in SharePoint and OneDrive." lightbox="../media/declare-record/retention-label-record.png":::
 
 Applying record labels helps preserve important content and ensures that deletion controls follow organizational and regulatory policies. These settings reduce the risk of accidental changes and help maintain data integrity over time.
