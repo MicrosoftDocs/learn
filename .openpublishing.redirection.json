@@ -48350,6 +48350,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/7-exercise-reorder-returned-data-sort-operator.md",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/write-first-query-kusto-query-language/8-challenge.md",
       "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
