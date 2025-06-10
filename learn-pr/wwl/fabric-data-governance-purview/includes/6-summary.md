@@ -1,4 +1,4 @@
-At the healthcare provider you work for, your use of Microsoft Fabric ensures compliant and robust governance. However, in this module, you've seen the extra features Microsoft Purview adds and how they ease the task of data governance for data engineers. The Purview Data Catalog, information protection, data loss prevention, and audit functionality can save you administration time and strengthen protection.
+In this module, you explored how Microsoft Purview enhances the built-in governance capabilities of Microsoft Fabric to streamline data governance. With tools like the Purview Unified Catalog, information protection, data loss prevention, and auditing, you can gain comprehensive visibility into your organization’s data, safeguard it throughout its lifecycle, manage regulatory and risk requirements, and establish end-to-end governance.
 
 ## Learn more
 
