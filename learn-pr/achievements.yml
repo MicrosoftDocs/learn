@@ -5755,3 +5755,13 @@ achievements:
   title: Prepare for cloud adoption with a data-driven plan
   summary: Adopting the cloud might depend on many moving parts. Starting with a sound plan built by experts creates clarity. Integrating data about your current environment and long-term objectives refines the plan to reflect realistic expectations and assignments.
   iconUrl: /training/achievements/cloud-adoption-framework-plan.svg
+- uid: learn.azure.create-content-delivery-network-azure-cdn-blob-services.badge
+  type: badge
+  title: Create a Content Delivery Network for your Website with Azure CDN and Blob Services
+  summary: You learned how to publish static web content using an Azure Content Delivery Network (CDN) and Azure Blob Services.
+  iconUrl: /training/achievements/create-cdn-static-resources-blob-storage.svg
+- uid: learn.design-a-hybrid-network-architecture.badge
+  type: badge
+  title: Design a hybrid network architecture on Azure
+  summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
+  iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
