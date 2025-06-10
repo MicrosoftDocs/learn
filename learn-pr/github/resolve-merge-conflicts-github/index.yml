@@ -11,10 +11,10 @@ metadata:
 title: "Settle competing commits by using merge conflict resolution on GitHub"
 summary: Learn to settle overlapping commits across branches by using merge conflict resolution.
 abstract: |
-  In this module, you will:
-  - Understand how merging happens and what causes merge conflicts
-  - Resolve simple and complex merge conflicts with ease
-  - Share best practices to reduce merge conflicts with your team
+  In this module, you'll:
+  - Understand how merging happens and what causes merge conflicts.
+  - Resolve simple and complex merge conflicts with ease.
+  - Share best practices to reduce merge conflicts with your team.
 prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub
