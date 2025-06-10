@@ -15,7 +15,7 @@ Write queries in Kusto Query Language (KQL) to first enrich data by combining mu
 
 ## Prerequisites
 
-- Ability to write [novice](../../write-first-query-kusto-query-language/index.yml) and [intermediate](../../gain-insights-data-kusto-query-language/index.yml) level Kusto queries
+- Ability to write [intermediate](../../gain-insights-data-kusto-query-language/index.yml) level Kusto queries
 - Familiarity with the `let` statement, the `summarize` operator, and aggregation functions
 
 ## What is the main goal?
