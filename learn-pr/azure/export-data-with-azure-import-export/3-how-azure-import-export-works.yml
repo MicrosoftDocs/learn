@@ -6,9 +6,8 @@ metadata:
   title: How Azure Import/Export works
   description: How Azure Import/Export works
   ms.date: 03/08/2023
-  author: alkohli
-  ms.author: alkohli
-  manager: femila
+  author: stevenmatthew
+  ms.author: shaas
   ms.topic: unit
 
 durationInMinutes: 5
@@ -40,4 +39,4 @@ quiz:
     - content: You haven't provided the correct password for your Azure account.
       isCorrect: false
       explanation: You don't use your Azure account password to access the data on the disks. 
-
+

@@ -2,12 +2,12 @@ The datacenter industry is growing faster than ever. Datacenters are massive bui
 >[!div class="mx-imgBorder"]
 >[![Screenshot of a bar chart showing the projected growth in the datacenter industry from 2023 to 2034, highlighting the rapid expansion and increasing investment in data storage and internet services.](../media/data-center-market-size.png)](../media/data-center-market-size.png#lightbox)
 
-**Graph Source: Data Center Market Size To Hit Around USD 364.62 Bn by 2034**
+**Graph Source: Data Center Market Size To Hit Around USD 364.62 billion by 2034**
 
 ## How large is the datacenter market?
 
 - In 2023, the global datacenter market was worth about $123.6 billion. To put that into perspective, that's more than the entire economy of some countries!
-- By 2030, experts predict the datacenter market will more than double in size to $354 billion. This is happening because more people are using the internet, and more companies need to store and process tons of data.
+- By 2034, experts predict the datacenter market will nearly triple in size to $364 billion. This is happening because more people are using the internet, and more companies need to store and process tons of data.
 
 ## What's driving the growth of datacenters?
 
