@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.github.merge-conflict-resolution-github
 metadata:
-  title: "Settle competing commits by using merge conflict resolution on GitHub"
+  title: "Settle Competing Commits by Using Merge Conflict Resolution on GitHub"
   description: Learn to settle overlapping commits across branches by using merge conflict resolution.
-  ms.date: 12/04/2023
+  ms.date: 06/10/2025
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module
