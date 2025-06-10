@@ -43,7 +43,6 @@ subjects:
 - big-data
 modules:
 - learn.azure.explore-fundamentals-kql
-- learn.write-first-query-kusto-query-language
 - learn.azure.gain-insights-data-kql
 - learn.multi-table-queries-with-kusto-query-language
 trophy:
