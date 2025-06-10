@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.workload-operations-generative-ai-center-excellence.monitoring-and-optimization-practices
+title: Monitoring and optimization practices
+metadata:
+  title: Monitoring and optimization practices
+  description: Understand how to monitor and optimize AI workloads.
+  ms.date: 06/04/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-monitoring-and-optimization-practices.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-github-copilot.compare-github-copilot-plans
+title: Compare GitHub Copilot plans
+metadata:
+  title: Compare GitHub Copilot plans
+  description: "Compare GitHub Copilot plans"
+  ms.date: 06/02/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  - ai-learning-hub
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-compare-github-copilot-plans.md)]

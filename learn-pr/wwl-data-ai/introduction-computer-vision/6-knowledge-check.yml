@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-computer-vision.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 5/20/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Computer vision is based on the manipulation and analysis of what kinds of values in an image?"
+    choices:
+    - content: "Timestamps in photograph metadata"
+      isCorrect: false
+      explanation: "Incorrect. Timestamps in the image metadata do not enable computer vision."
+    - content: "Pixels"
+      isCorrect: true
+      explanation: "Correct. Pixels are numeric values that represent shade intensity for points in the image."
+    - content: "Image file names"
+      isCorrect: false
+      explanation: "Incorrect. While file names might offer some clues as the image subject, they do not inherently enable computer vision."
+  - content: "What is the primary role of filters in a convolutional neural network (CNN) used for image classification?"
+    choices:
+    - content: "To apply visual effects to enhance image appearance."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "To extract numeric features from images for use in a neural network."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "To compress image size for faster processing."
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "What is the primary function of a multi-modal model in computer vision?"
+    choices:
+    - content: "To generate random captions for unlabeled images."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "To replace CNNs entirely in all vision tasks."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "To combine image features with natural language embeddings for richer understanding."
+      isCorrect: true
+      explanation: "Correct."    

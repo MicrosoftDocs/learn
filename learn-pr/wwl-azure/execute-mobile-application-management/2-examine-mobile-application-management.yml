@@ -4,10 +4,12 @@ title: Examine mobile application management
 metadata:
   title: Examine mobile application management
   description: "Examine mobile application management"
-  ms.date: 07/18/2023
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/2-examine-mobile-application-management.md)]

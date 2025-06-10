@@ -1,4 +1,6 @@
-A public IP address resource can be associated with virtual machine network interfaces, internet-facing load balancers, VPN gateways, and application gateways. You can associate your resource with both dynamic and static public IP addresses.
+A [public IP address](/azure/virtual-network/ip-services/public-ip-addresses) resource can be associated with virtual machine network interfaces, internet-facing load balancers, VPN gateways, and application gateways. You can associate your resource with both dynamic and static public IP addresses.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8124baac-6dbd-4bc3-97b1-3693b3b465c0]
 
 ### Things to consider when associating public IP addresses
 
