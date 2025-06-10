@@ -27,6 +27,7 @@ subjects:
 - compliance
 modules:
 - learn.wwl.purview-implement-manage-retention
+- learn.wwl.purview-manage-records
 - learn.wwl.purview-ediscovery-understand
 - learn.wwl.purview-ediscovery-create-case
 - learn.wwl.purview-ediscovery-manage-data-sources-holds
