@@ -8,9 +8,9 @@ Secret scanning is enabled by default on all public repositories and can be enab
 - Titles, descriptions, and comments in pull requests
 - Titles, descriptions, and comments in GitHub Discussions
 
-GitHub will alert you when secrets are detected so the appropriate actions can be taken to secure your code according to the type of secret that was committed. And with push protection enabled, secret leaks can be prevented by blocking commits that contain known secrets. 
+GitHub will alert you when secrets are detected so the appropriate actions can be taken to secure your code according to the type of secret that was committed. And with push protection enabled, secret leaks can be prevented by blocking commits that contain known secrets.
 
-For private repositories, the secret scanning configuration options also enable you to exclude specific files from scans, choose the people to notify of alerts, and create custom patterns for the secrets in your project that aren't automatically detected by GitHub.
+For private repositories, the secret scanning configuration options also enable you to exclude specific files from scans, choose the people to notify of alerts, and create custom patterns for the secrets in your project not automatically detected by GitHub.
 
 With secret scanning in GitHub, you can be aware of exposed secrets and respond accordingly to protect your assets.
 

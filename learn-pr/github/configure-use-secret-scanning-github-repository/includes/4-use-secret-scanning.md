@@ -55,7 +55,7 @@ Follow these steps to create a custom pattern for a private repository:
 
 ### For an organization
 
-Follow the steps below to create a custom pattern for an organization:
+Follow the steps listed to create a custom pattern for an organization:
 
 1. In your organization, navigate to **Settings > Advanced Security > Global Settings**.
 1. Under **Custom patterns**, select **New pattern**.
