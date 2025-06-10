@@ -48158,6 +48158,86 @@
       "source_path": "learn-pr/wwl-azure/implement-manage-enforcement-cloud-governance-policies/9-azure-key-vault-security.md",
       "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/7-azure-key-vault-security",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-cdn-static-resources-blob-storage/1b-exercise-deploy-a-website.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-cdn-static-resources-blob-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-cdn-static-resources-blob-storage/2-create-a-cdn.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-cdn-static-resources-blob-storage/3-exercise-use-cdn-serve-static-site.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-cdn-static-resources-blob-storage/4-exercise-update-static-site-republish-cdn.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-cdn-static-resources-blob-storage/5-customize-manage-cdn-behavior.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-cdn-static-resources-blob-storage/6-exercise-customize-manage-cdn-behavior.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-cdn-static-resources-blob-storage/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-cdn-static-resources-blob-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-a-hybrid-network-architecture/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/hybrid-connectivity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-a-hybrid-network-architecture/2-on-premises-integration-on-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/hybrid-connectivity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-a-hybrid-network-architecture/3-expressroute-for-hybrid-networks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/hybrid-connectivity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-a-hybrid-network-architecture/4-working-with-hybrid-networks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/hybrid-connectivity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-a-hybrid-network-architecture/5-choosing-hybrid-architecture.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/hybrid-connectivity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-a-hybrid-network-architecture/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/hybrid-connectivity/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-a-hybrid-network-architecture/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/networking/hybrid-connectivity/",
+      "redirect_document_id": false
     }
   ]
 }
