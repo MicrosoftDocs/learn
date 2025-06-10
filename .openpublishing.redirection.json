@@ -48315,57 +48315,57 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/azure/write-first-query-kusto-query-language/index.md",
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/index.md",
       "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/azure/write-first-query-kusto-query-language/1-introduction.md",
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/1-introduction.md",
       "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/azure/write-first-query-kusto-query-language/2-understand-basic-structure-kusto-query-language.md",
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/2-understand-basic-structure-kusto-query-language.md",
       "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/azure/write-first-query-kusto-query-language/3-exercise-connect-to-resources.md",
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/3-exercise-connect-to-resources.md",
       "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/azure/write-first-query-kusto-query-language/4-exercise-return-number-rows-take-operator.md",
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/4-exercise-return-number-rows-take-operator.md",
       "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/azure/write-first-query-kusto-query-language/5-exercise-select-columns-project-operator.md",
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/5-exercise-select-columns-project-operator.md",
       "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/azure/write-first-query-kusto-query-language/6-exercise-filter-data-where-operator.md",
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/6-exercise-filter-data-where-operator.md",
       "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/azure/write-first-query-kusto-query-language/8-challenge.md",
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/8-challenge.md",
       "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/azure/write-first-query-kusto-query-language/9-solution.md",
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/9-solution.md",
       "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/azure/write-first-query-kusto-query-language/10-knowledge-check.md",
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/10-knowledge-check.md",
       "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
-      "source_path": "/learn-pr/azure/write-first-query-kusto-query-language/11-summary.md",
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/11-summary.md",
       "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     }
