@@ -5,6 +5,11 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.write-first-query-kusto-query-language.badge
+  type: badge
+  title: Write your first query with Kusto Query Language
+  summary: Learn how to write simple queries in Kusto Query Language (KQL) by using the operators take, project, count, where, and sort. 
+  iconUrl: /training/achievements/write-first-query-kusto-query-language.svg 
 - uid: learn.send-crop-weather-alerts.badge
   type: badge
   title: Use Twilio and Azure Maps to receive text message weather alerts 
