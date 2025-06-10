@@ -10,7 +10,7 @@ Although we generally don't share speculation or the inner workings of troublesh
 
     > [!NOTE]
     >
-    > Set up [Service Health alert](/azure/service-health/alerts-activity-log-service-notifications-portal) for getting notified of portal communications with the channel of your choice, such as email, SMS, or webhook.
+    > Set up [Service Health alerts](/azure/service-health/alerts-activity-log-service-notifications-portal) for getting notified of portal communications with the channel of your choice, such as email, SMS, or webhook.
 
 2. **If there are issues accessing Service Health or the portal itself, check the public [Azure Status page](https://status.azure.com/)**.
 

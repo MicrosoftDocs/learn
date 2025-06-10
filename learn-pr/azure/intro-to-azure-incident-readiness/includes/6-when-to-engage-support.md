@@ -1,6 +1,6 @@
-## Major incident process
-
 Whenever you notice an issue, the first step is to use the Azure Admin Portal to check the Service Health page to see if there's an active Service Incident for your subscriptions. This approach applies whether it's something your internal monitoring picked up or your users report.
+
+## Major incident process
 
 If there's an active incident and it matches the issue you're experiencing, you shouldn't open a support case. You can obtain all the latest information from service health about the incident and next action plan. You should engage support if the issue you're experiencing isn't already represented in Service Health. You should engage support if you read the updates from engineering but require support to respond to the incident, for example, to implement your failover plans. You can open a Support Case from the Admin Portal with a reference to the Service Health ID number for that Service Incident.
 

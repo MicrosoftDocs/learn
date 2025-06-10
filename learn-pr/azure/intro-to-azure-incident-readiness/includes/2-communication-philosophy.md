@@ -4,7 +4,7 @@ We recognize the significance of effective communications during incidents and u
 
     We want you to know it's *us*, not you as quickly as possible. This goal is our key objective. Our goal is to notify all affected subscriptions and tenants within 15 minutes of an outage.
 
-    Due to the complexity of our platform, this approach can't be achieved with human beings alone. The fact is why we continue to invest in our [AIOps](https://azure.microsoft.com/blog/advancing-azure-service-quality-with-artificial-intelligence-aiops/) technology.
+    Due to the complexity of our platform, this approach can't be achieved with human beings alone. That fact is why we continue to invest in our [AIOps](https://azure.microsoft.com/blog/advancing-azure-service-quality-with-artificial-intelligence-aiops/) technology.
 
 - **Accuracy** - *Which of my resources are impacted?*
 

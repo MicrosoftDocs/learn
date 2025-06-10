@@ -1,4 +1,4 @@
-To ensure preparedness and minimize the impact of incidents, it's essential to follow the proactive recommendations outlined in this unit. These actions help you understand our incident communication process, locate pertinent information, and configure notifications to receive timely updates. Evaluating the resilience of your applications and implementing recommended measures create more reliable workloads, which reduce the potential impact of an incident. Reviewing and implementing security best practices fortify your environment and mitigate risks.
+To ensure preparedness and minimize the impact of incidents, it's essential to follow the proactive recommendations outlined in this unit. These actions help you understand our incident communication process, locate pertinent information, and configure notifications to receive timely updates. Evaluating the resilience of your applications and implementing recommended measures creates more reliable workloads, which reduce the potential impact of an incident. Reviewing and implementing security best practices fortifies your environment and mitigate risks.
 
 ## To stay informed, mitigate impact, and protect your investment, we recommend the following five actions:
 
@@ -123,7 +123,7 @@ There's a key distinction between 'service health' alerts and 'resource health' 
 
 You can configure resource health alerts from the Resource Health pane in the Service Health page of the Azure portal.
 
-:::image type="content" source="../media/azure-service-health-resource-health.png" alt-text="Screenshot of the Azure Service Health resource health.":::
+:::image type="content" source="../media/azure-service-health-resource-health.png" alt-text="Screenshot of the Azure Service Health resource health." lightbox="../media/azure-service-health-resource-health.png":::
 
 You can also create [resource health alerts programmatically](/azure/service-health/resource-health-alert-arm-template-guide) using Azure Resource Manager templates and Azure PowerShell. Creating resource health alerts programmatically allows you to create and customize alerts in bulk.
 
