@@ -37,7 +37,7 @@ In this exercise, you'll enable Azure Policy for AKS on your cluster and add the
     az feature register --namespace Microsoft.ContainerService --name AKS-AzurePolicyAutoApprove
     ```
 
-1. Check that the registration was successful by querying the feature-list table. Use the `az feature list` command to run the query. The feature's registration can take several minutes to finish, so you have to check the result periodically.
+1. Check that the registration succeeded by querying the feature-list table. Use the `az feature list` command to run the query. The feature's registration can take several minutes to finish, so you have to check the result periodically.
 
     ```azurecli
     az feature list -o table --query "[?contains(name, 'Microsoft.ContainerService/AKS-AzurePolicyAutoApprove')].   {Name:name,State:properties.state}"
@@ -143,10 +143,10 @@ To configure the new Azure Policy, use the Policy service in the Azure portal.
     | Exclusions | Leave empty. |
     | **Basics** |
     | Policy definition | Select the ellipsis button. The **Available Definitions** pane appears. In the **Search** box, filter the selection by entering *CPU*. On the **Policy Definitions** tab, select the **Kubernetes cluster containers CPU and memory resource limits should not exceed the specified limits**, then select **Add**. |
+    | Version | Accept default. |
     | Assignment name | Accept default. |
     | Description | Leave empty. |
     | Policy enforcement | Make sure this option is set to **Enabled**. |
-    | Assigned by | Accept default. |
 
     Here's an example of the completed **Basics** tab:
 
@@ -161,7 +161,7 @@ To configure the new Azure Policy, use the Policy service in the Azure portal.
     | Max allowed CPU units | Set the value to **200m**. The policy matches this value to both the workload resource-request value and the workload limit value specified in the workload's manifest file. |
     | Max allowed memory bytes | Set the value to **256Mi**. The policy matches this value to both the workload resource-request value and the workload limit value specified in the workload's manifest file. |
 
-    Here's an example of the completed **Parameters** tab:
+    Leave all other values as default. Here's an example of the completed **Parameters** tab:
 
     :::image type="content" source="../media/7-complete-parameters-tab.png" alt-text="Screenshot that shows the information captured in the Parameters tab.":::
 
@@ -182,6 +182,8 @@ The final step is to test the new policy. Deploy your test workload with resourc
 
 1. Open Azure Cloud Shell and be sure to select the Bash version of Cloud Shell.
 
+1. At the top of the Cloud Shell window, select **Settings** > **Go to Classic version**.
+
 1. Create a manifest file for the Kubernetes deployment by using the integrated editor. Call the file `test-policy.yaml`:
 
     ```bash
@@ -189,7 +191,7 @@ The final step is to test the new policy. Deploy your test workload with resourc
     ```
 
     > [!TIP]
-    > Cloud Shell includes an [integrated file editor](/azure/cloud-shell/using-cloud-shell-editor). Cloud Shell editor supports features such as language highlighting, the command palette, and a file explorer. For simple file creation and editing, start the editor by running `code .` in Cloud Shell terminal. This action opens the editor with your active working directory set in the terminal. To open your manifest file directly for quick editing, run `code test-policy.yaml`. Ths command opens the editor without the file explorer.
+    > Cloud Shell includes an [integrated file editor](/azure/cloud-shell/using-cloud-shell-editor). Cloud Shell editor supports features such as language highlighting, the command palette, and a file explorer. For simple file creation and editing, start the editor by running `code .` in Cloud Shell terminal. This action opens the editor with your active working directory set in the terminal. To open your manifest file directly for quick editing, run `code test-policy.yaml`. This command opens the editor without the file explorer.
 
 1. Paste the following text into the file:
 
