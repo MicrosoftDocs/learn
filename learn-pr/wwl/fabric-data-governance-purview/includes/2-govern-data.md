@@ -1,4 +1,4 @@
-Microsoft Fabric includes a set of governance and compliance capabilities. Some governance capabilities are built in to Fabric and others require using Microsoft Purview. 
+Microsoft Fabric includes a set of governance and compliance capabilities that may be sufficient for the needs of some organizations. Additional governance capabilities may be accessed in Microsoft Purview.
 
 If you work at a health care company, for example, you would have specific data governance needs because of regulatory requirements. In this unit, we'll explore Fabric's governance features so you can assess if they meet your requirements.  
 
@@ -6,7 +6,7 @@ If you work at a health care company, for example, you would have specific data 
 
 [![A diagram showing the architecture of Microsoft Fabric in a simplified form.](../media/fabric-architecture.png)](../media/fabric-architecture.png)
 
-Fabric is Microsoft's end-to-end analytics and data platform. The platform can store, move, process, ingest, transform, and analyze your data regardless of its size and current format. Once you have data in the location and format you need it, advanced business intelligence features can analyze it and generate insights to support your decision making.
+Fabric is Microsoft's end-to-end analytics and data platform. The platform can store, move, process, ingest, transform, and analyze your data regardless of its size and current format. Once you have data in the location and format you need it, advanced business intelligence features can be used to analyze data, and generate insights to support your decision making.
 
 ### OneLake
 
@@ -14,22 +14,22 @@ In Fabric, all information is stored in a data lake, which can hold both structu
 
 ## What is data governance?
 
-The data your organization possesses and processes is often business-critical and highly sensitive. Sensitive data must be: held securely, easily available, and processed in compliance with legislation in all the locations you operate within.
+The data an organization works with is often business-critical and highly sensitive. Sensitive data must be: held securely, easily available, and processed in compliance with legislation in all the locations you operate within.
 
 Data governance is the practice of managing data to ensure the quality, consistency, security, and usability of data. It involves setting up a framework that includes roles, responsibilities, processes, policies, and standards that are used to manage data throughout its lifecycle.
 
 A data governance program usually includes:
 
-- **Auditing**: Recording where data originates from and who modifies it
-- **Evaluation**: Assessing the usefulness and accuracy of your data
-- **Documentation**: Describing the nature of your data to people who might use it
-- **Management**: Removing inaccurate data, responding to access requests, ensuring compliance with data legislation
-- **Protection**: Securing data against unauthorized access, ransomware, and other attacks
+- **Auditing**: Recording where data originates from and who modifies it.
+- **Evaluation**: Assessing the usefulness and accuracy of your data.
+- **Documentation**: Describing the nature of your data to people who might use it.
+- **Management**: Removing inaccurate data, responding to access requests, ensuring compliance with data legislation.
+- **Protection**: Securing data against unauthorized access, ransomware, and other attacks.
 
-Well governed data is trustworthy and easily available to the right people.
+Well governed data is trustworthy and easily available to the people who need to access it.
 
 > [!TIP]
-> In large organizations, there are often sets of data that are stored and managed independently in different business groups. These sets of data are called data silos and they can make it difficult to implement data governance because of different standards and policies across an organization. Removing silos by integrating data while maintains security is a vital component of data governance.
+> In large organizations, there are often sets of data that are stored and managed independently in different business groups. These sets of data are called data silos and they can make it difficult to implement data governance because of different standards and policies across an organization. Removing silos by integrating data while maintaining security is a vital component of data governance.
 
 Implementing data governance can lead to benefits such as:
 
@@ -40,7 +40,7 @@ Implementing data governance can lead to benefits such as:
 
 ## Data governance features in Microsoft Fabric
 
-Many data governance tasks are included with your Microsoft Fabric license, without an additional license from Microsoft Purview. Let's examine some of the capabilities that are available:
+Many data governance tasks are included with your Microsoft Fabric license, without an purchasing an additional license from Microsoft Purview. Let's examine some of the native data governance capabilities that are available in Fabric:
 
 ### Managing the data estate
 

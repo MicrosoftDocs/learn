@@ -2,7 +2,7 @@ When you need data governance features beyond those built into Microsoft Fabric,
 
 In the last unit, we reviewed the built-in governance features of Microsoft Fabric. Let's assume you work for a health care provider and new regulations mean you need stricter governance for data stored in Microsoft Fabric. Now, you want to investigate what features a Microsoft Purview license includes that can help you comply with new regulations.
 
-In this unit, you'll learn what capabilities a Microsoft Purview license adds to the built-in data governance and compliance capabilities available in Microsoft Fabric.
+In this unit, you'll learn what capabilities Microsoft Purview adds to the built-in data governance and compliance capabilities available in Microsoft Fabric.
 
 ## What is Microsoft Purview?
 
@@ -20,7 +20,7 @@ Microsoft Purview enables you to discover, manage, and protect Fabric data using
 
 In the Purview Unified Catalog, you can inventory of all your data assets, their metadata, and their lineage so you can understand the topography of your data estate. You can search for and browse datasets, and view metadata, data lineage, classification, and sensitivity labels. The Unified Catalog promotes collaboration because users can annotate datasets with tags to improve discoverability.
 
-Suppose you work at a health care provider and regulations require you to control who can access patient records. In the Data Catalog, users and administrators can:
+Suppose you work at a health care provider and regulations require you to control who can access patient records. In the Unified Catalog, users and administrators can:
 
 - Discover where patient records are held by searching for keywords.
 - Label documents and items as patient records to differentiate them from other, less sensitive information.
@@ -40,7 +40,7 @@ If, for example, you worked as a data steward at a health care provider, you cou
 
 DLP helps protect sensitive information with policies that automatically detect, monitor, and control the sharing or movement of sensitive data. Administrators can customize rules to block, restrict, or alert when sensitive data is transferred to prevent accidental or malicious data leaks.
 
-If, for example, you work at a health care provider, you need to ensure that users don't share patient records with external parties, either accidentally or maliciously. DLP can prevent such transfers on information labeled as patient records.
+If you worked at a health care provider, you would need to ensure that users don't share patient records with external parties, either accidentally or maliciously. DLP can prevent such transfers on information labeled as patient records.
 
 ### Microsoft Purview Audit
 

@@ -3,6 +3,5 @@ In this module, you explored how Microsoft Purview enhances the built-in governa
 ## Learn more
 
 - [Microsoft Purview documentation](/purview/)
-- [Microsoft Fabric get started documentation](/fabric/get-started/)
 - [Microsoft Fabric governance documentation](/fabric/governance/)
 - [Use Microsoft Purview to govern Microsoft Fabric](/fabric/governance/microsoft-purview-fabric)
