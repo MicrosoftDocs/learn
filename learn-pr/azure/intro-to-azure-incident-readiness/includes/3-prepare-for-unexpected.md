@@ -1,4 +1,5 @@
-To ensure preparedness and minimize the impact of incidents, it's essential to follow the proactive recommendations outlined in this unit. These actions help you understand our incident communication process, locate pertinent information, and configure notifications to receive timely updates. Evaluating the resilience of your applications and implementing recommended measures creates more reliable workloads, which reduce the potential impact of an incident. Reviewing and implementing security best practices fortifies your environment and mitigate risks.
+To ensure preparedness and minimize the impact of incidents, it's essential to follow the proactive recommendations outlined in this unit. These actions help you understand our incident communication process, locate pertinent information, and configure notifications to receive timely updates. Evaluating the resilience of your applications and implementing recommended measures creates more reliable workloads, which reduces the potential impact of an incident. Reviewing and implementing security best practices fortifies your environment and mitigates risks.
+
 
 ## To stay informed, mitigate impact, and protect your investment, we recommend the following five actions:
 
