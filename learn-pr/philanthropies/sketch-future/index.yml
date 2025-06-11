@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.philanthropies.sketch-future
+metadata:
+  title: Sketch the Future - AI Concept Art with Microsoft Copilot and Designer
+  description: "Explore how Microsoft Copilot and Designer can support pre-production planning for animated projects, from generating structured animation roadmaps to creating visual concept frames and style guides."
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: module-intro-to-product
+  ms.service: artificial-intelligence
+title: Sketch the future - AI concept art with Microsoft Copilot and Designer
+
+summary: "Characterize how Microsoft Copilot and Designer can streamline the early stages of animation project planning by generating story structures, visual style guides, and concept frames."
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe how AI tools like Copilot and Designer enhance animation pre-production workflows.
+  - Generate structured animation roadmaps using Microsoft Copilot.
+  - Create visual concept frames and cohesive style guides using Microsoft Designer.
+
+prerequisites: |
+  - Basic familiarity with digital creative tools
+  - Interest or experience in animation, visual storytelling, or digital media
+
+iconUrl: /learn/achievements/generic-badge.svg
+
+levels:
+  - beginner
+
+roles:
+  - student
+  - maker
+  - k-12-educator
+
+products:
+- ms-copilot
+
+subjects:
+  - artificial-intelligence
+
+units:
+- learn.philanthropies.sketch-future.introduction
+- learn.philanthropies.sketch-future.microsoft-copilot-animation-production
+- learn.philanthropies.sketch-future.create-detailed-animation-roadmaps-microsoft-copilot
+- learn.philanthropies.sketch-future.generated-animation-roadmaps
+- learn.philanthropies.sketch-future.microsoft-designer-animation-concept-design
+- learn.philanthropies.sketch-future.generate-concept-frames-use-designer
+- learn.philanthropies.sketch-future.define-refine-style-guides-microsoft-designer
+- learn.philanthropies.sketch-future.exercise
+- learn.philanthropies.sketch-future.knowledge-check
+- learn.philanthropies.sketch-future.summary
+
+badge:
+  uid: learn.philanthropies.sketch-future.badge

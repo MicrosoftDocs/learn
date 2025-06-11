@@ -1,0 +1,79 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.sketch-future.knowledge-check
+
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge check for module."
+  ms.date: 3/20/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+
+  
+  
+durationInMinutes: 1
+
+
+content: |
+quiz:
+  questions:
+  - content: "What is the primary role of Microsoft Copilot during the pre-production phase of an animation project?"
+    choices:
+    - content: "To generate structured storyboards, asset lists, and planning documents based on text prompts"
+      isCorrect: true
+      explanation: "Copilot helps organize the creative process by building detailed animation roadmaps that include scenes, transitions, and asset needs."
+    - content: "To create final rendered animations automatically"
+      isCorrect: false
+      explanation: "Copilot supports planning and concept development, not rendering, or final animation."
+    - content: "To replace the role of an animation director"
+      isCorrect: false
+      explanation: "Copilot is a tool to support, not replace, creative leadership in animation production."
+
+  - content: "Which of the following options best describes how Microsoft Designer is used in animation concept development?"
+    choices:
+    - content: "Designer generates concept art and style frames from descriptive prompts to visualize key scenes"
+      isCorrect: true
+      explanation: "Designer turns written ideas into visuals, helping artists and directors visualize settings, characters, and tones early in the process."
+    - content: "Designer edits final video files to improve pacing"
+      isCorrect: false
+      explanation: "Designer is a visual generation tool used during concept development, not for editing video."
+    - content: "Designer writes scripts and dialogue for animation sequences"
+      isCorrect: false
+      explanation: "Copilot supports script writing best, not Designer."
+
+  - content: "How can AI-generated concept frames support the animation team?"
+    choices:
+    - content: "They act as visual references that communicate mood, composition, and style early in production"
+      isCorrect: true
+      explanation: "Concept frames help align the team creatively before production starts by providing a shared visual direction."
+    - content: "They serve as final animation assets ready for export"
+      isCorrect: false
+      explanation: "Concept frames are part of the planning process—not the final animation product."
+    - content: "They remove the need for traditional visual design skills"
+      isCorrect: false
+      explanation: "AI tools enhance visual planning but don't eliminate the need for human creative input and refinement."
+
+  - content: "What's an effective way to refine AI-generated visuals in Microsoft Designer?"
+    choices:
+    - content: "Experiment with different styles, moods, and compositions by updating the prompt"
+      isCorrect: true
+      explanation: "Refining your prompt and testing alternatives helps align the visual results with your creative goals."
+    - content: "Use only the first result without reviewing alternatives"
+      isCorrect: false
+      explanation: "Reviewing and adjusting results leads to stronger, more intentional design outcomes."
+    - content: "Ignore style consistency across concept frames"
+      isCorrect: false
+      explanation: "Maintaining a cohesive style across frames is important for visual storytelling and tone setting."
+
+  - content: "Why are style guides important in an animation project?"
+    choices:
+    - content: "They ensure consistent visual direction across characters, scenes, and environments"
+      isCorrect: true
+      explanation: "Style guides define the aesthetic of the project, helping teams maintain a unified look and feel throughout the animation."
+    - content: "They contain finalized rendered video sequences"
+      isCorrect: false
+      explanation: "Style guides contain visual references, not finished animations."
+    - content: "They eliminate the need for storyboard or concept development"
+      isCorrect: false
+      explanation: "Style guides support the visual development process but don't replace storyboards or planning tools."

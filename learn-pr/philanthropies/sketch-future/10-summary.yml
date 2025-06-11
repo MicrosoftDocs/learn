@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.sketch-future.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "In this unit, learners review how Microsoft Copilot and Designer support the pre-production and visual development stages of animation.  Keywords: Microsoft Copilot, Microsoft Designer, AI-assisted pre-production, animation visual development, animation concept planning."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-summary.md)]
