@@ -48463,6 +48463,46 @@
       "source_path": "learn-pr/azure/react-to-state-changes-using-event-grid/7-summary.md",
       "redirect_url": "/training/paths/architect-messaging-serverless/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-case-studies/index.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-relational-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-case-studies/1-introduction.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-relational-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-case-studies/2-scenario-1.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-relational-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-case-studies/3-solution-1.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-relational-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-case-studies/4-scenario-2.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-relational-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-case-studies/5-solution-2.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-relational-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-case-studies/6-cloud-opportunities.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-relational-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-case-studies/7-summary.md",
+      "redirect_url": "/training/paths/azure-data-fundamentals-explore-relational-data/",
+      "redirect_document_id": false
     }
 ]
 }
