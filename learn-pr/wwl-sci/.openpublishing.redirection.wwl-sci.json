@@ -371,6 +371,21 @@
         "source_path_from_root": "/learn-pr/wwl-sci/connect-threat-indicators-to-azure-sentinel/7-summary-resources.yml",
         "redirect_url": "https://learn.microsoft.com/training/modules/connect-threat-indicators-to-azure-sentinel/9-summary-resources/",
         "redirect_document_id": false
-      }
+      },
+    {
+      "source_path": "learn-pr/wwl-azure/purview-implement-manage-retention/auto-apply-retention-label.md",
+      "redirect_url": "/training/modules/purview-manage-records/auto-apply-retention-label",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/purview-implement-manage-retention/declare-record.md",
+      "redirect_url": "/training/modules/purview-manage-records/declare-record",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/purview-implement-manage-retention/disposition-review.md",
+      "redirect_url": "/training/modules/purview-manage-records/disposition-review",
+      "redirect_document_id": false
+    }
     ]
 }
