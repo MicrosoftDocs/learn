@@ -5,8 +5,8 @@ metadata:
   title: Understand Windows Autopilot
   description: Learn how Windows Autopilot simplifies enrolling devices in Intune.
   ms.date: 06/10/2025
-  author: Erikre
-  ms.author: erikre
+  author: Nwhite
+  ms.author: nwhite
   ms.topic: unit
 durationInMinutes: 2
 content: |

@@ -7,7 +7,7 @@ The diagram shows that:
 - Software updates are continuous and frequent.
 - Most companies allow use of personal mobile devices in the workplace.
 - Most employees use mobile apps for work-related activities.
-- Cybersecurity is a growing concern,
+- Cybersecurity is a growing concern.
 - Device management failures and data breaches are costly.
 
 This workplace evolution leads to the following changes in information technology (IT) practices:
@@ -64,6 +64,7 @@ You might know and already be using services and tools like Microsoft Intune, Mi
 ## Learning objectives
 
 In this module, you learn about:
+
 - The products, services, and capabilities that make up Microsoft Intune.
 - How Intune and Microsoft Configuration Manager can help protect your organization's endpoints.
 - What Microsoft Intune can do for you and your organization.
