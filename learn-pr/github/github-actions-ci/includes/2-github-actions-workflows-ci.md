@@ -57,15 +57,15 @@ jobs:
     - run: npm test
 ```
 
-Notice the `on` attribute. This workflow is triggered on a push to the repository and when a pull request is made against the main branch.
+As shown in the `on` attribute, this example workflow runs in response to either a push to the repository or when a pull request is created against the main branch.
 
-There's one `job` in this workflow. Let's review what it does.
+This workflow runs one job, indicated by the `job` attribute.
 
-The `runs-on` attribute specifies that, for the operating system, the workflow runs on `ubuntu-latest`. The `node-version:` attribute specifies that there are three builds, one each for Node.js version 14.x, 16.x, and 18.x. We describe the `matrix` portion in depth later when we customize the workflow.
+The `runs-on` attribute specifies that, for the operating system, the workflow runs on `ubuntu-latest`. The `node-version` attribute specifies that there are three builds, one each for Node.js version 14.x, 16.x, and 18.x. The `matrix` portion is described in depth later in the module.
 
-The `steps` in the job use the GitHub Actions [actions/checkout@v3](https://github.com/actions/checkout?azure-portal=true) action to get the code from your repository into the virtual machine, and the [actions/setup-node@v3](https://github.com/actions/setup-node?azure-portal=true) action to set up the correct version of Node.js. You specify that you want to test three versions of Node.js by using the `${{ matrix.node-version }}` attribute. This attribute references the matrix that you defined earlier. The `cache` attribute specifies a package manager for caching in the default directory.
+The steps in the job use the GitHub Actions [actions/checkout@v3](https://github.com/actions/checkout?azure-portal=true) action to get the code from your repository into the VM and [actions/setup-node@v3](https://github.com/actions/setup-node?azure-portal=true) to set up the correct version of Node.js. You specify that you want to test three versions of Node.js by using the `${{ matrix.node-version }}` attribute. This attribute references the matrix that you defined earlier. The `cache` attribute specifies a package manager for caching in the default directory.
 
-The last part of this step executes commands used by Node.js projects. The `npm ci` command installs dependencies from the *package-lock.json* file, `npm run build --if-present` runs a build script if it exists, and `npm test` runs the testing framework. Notice that this template includes both the build and test steps in the same job.
+The last part of this step executes commands used by Node.js projects. The `npm ci` command installs dependencies from the `package-lock.json` file. `npm run build --if-present` runs a build script if it exists. `npm test` runs the testing framework. This template includes both build and test steps in the same job.
 
 To learn more about npm, check out the npm documentation:
 
@@ -73,64 +73,66 @@ To learn more about npm, check out the npm documentation:
 - [npm run](https://docs.npmjs.com/cli/v11/commands/npm-run?azure-portal=true)
 - [npm test](https://docs.npmjs.com/cli/v11/commands/npm-test?azure-portal=true)
 
-Beyond individual npm commands, teams can benefit from reusable workflows to streamline and standardize repeated automation steps. By leveraging reusable workflows, you can reduce redundancy, improve maintainability, and ensure consistency across your CI/CD pipelines.
+Beyond individual npm commands, teams can benefit from reusable workflows to streamline and standardize repeated automation steps. By using reusable workflows, you can reduce redundancy, improve maintainability, and ensure consistency across your CI/CD pipelines.
 
 <!-- InfoMagnus Starts -->
 <!-- INFOMAGNUS UPDATES for sub OD 1.5.9. Source Material: https://docs.github.com/en/actions/sharing-automations/reusing-workflows -->
 ## Avoid duplication by using reusable workflows
 
-As teams scale and projects grow, it's common to see the same steps, such as code checkout, dependency installation, testing, and deployment—repeated across multiple workflow files. This kind of duplication not only clutters your codebase but also increases maintenance time when changes are needed. Reusable workflows solve this problem by allowing you to define automation logic once and call it from other workflows.
+As teams scale and projects grow, it's common to see the same steps, such as code checkout, dependency installation, testing, and deployment, repeated across multiple workflow files. This kind of duplication not only clutters your codebase but also increases maintenance time when changes are needed. Reusable workflows solve this problem by allowing you to define automation logic once and call it from other workflows.
 
-Reusable workflows are special GitHub Actions workflows that can be called by other workflows, much like functions in programming. You create them to share repeated logic like build steps, testing procedures, or deployment strategies. Once created, you can reference them from any other workflow in the same repository or even across different repositories.
+Reusable workflows are special GitHub Actions workflows that other workflows can call, much like functions in programming. You create them to share repeated logic like build steps, testing procedures, or deployment strategies. After you create them, you can reference them from any other workflow in the same repository or even in different repositories.
 
-:::image type="content" source="../media/reusable-workflow.png" alt-text="Diagram illustrating the concept of reusable workflows in GitHub Actions, showing how a central workflow can be referenced by multiple repositories or workflows." border="true":::
+:::image type="content" source="../media/reusable-workflow.png" alt-text="Diagram that shows the concept of reusable workflows in GitHub Actions. Multiple repositories or workflows can reference a central workflow." border="false":::
 
 ### Why use them?
 
 - Consistency: Teams can follow the same automation standards across all projects.
 - Efficiency: Instead of copying and pasting steps, you just point to a reusable workflow.
-- Ease of Updates: When a process changes (e.g., a new test step), you update it in one place, and all workflows using it benefit automatically.
-- Scalability: Ideal for platform or DevOps teams managing multiple services.
+- Ease of updates: When a process changes, such as by adding a test step, you update it in one place. Then all workflows that use the workflow benefit automatically.
+- Scalability: It's ideal for platform or DevOps teams that manage multiple services.
 
-Let's explore how to use reusable workflows to improve your projects.
+Next, explore how to use reusable workflows to improve your projects.
 
 ### Implement reusable workflows
 
-To utilize reusable workflows:
+To use reusable workflows:
 
-- Create a reusable workflow in your repo’s folder. This file will include the automation steps you want to share—like testing, building, or deploying.
-- You must explicitly enable a workflow to be reusable by configuring it with the workflow_call event.
-- In your main workflows (caller workflows), you then reference this reusable file and provide any required inputs or secrets.
+1. In your repository folder, create a reusable workflow. This file includes the automation steps you want to share, like testing, building, or deploying.
+1. Explicitly enable a workflow to be reusable by configuring it with the `workflow_call` event.
+1. In your main workflows (caller workflows), reference this reusable file and provide any required inputs or secrets.
 
 To illustrate the advantages of reusable workflows, consider the following real-world scenario.
 
-### Real-world example
+### Example
 
-Imagine your organization has 10 microservices and all of them need the same steps to:
+Imagine that your organization has 10 microservices. All of them need the same steps to:
 
 - Run tests
 - Lint code
 - Deploy to a specific environment
 
-Without reusable workflows, every repo contains duplicated logic. With reusable workflows, you:
+Without reusable workflows, every repo contains duplicated logic.
 
-- Define the process once in a central file (e.g., ci-standard.yml)
-- Call this file from every service’s own workflow, passing in variables like environment or app name
+If you use reusable workflows:
 
-Now, if a new security step or tool is added (like scanning for vulnerabilities), you only need to add it once in the reusable workflow. All 10 services will immediately use the updated process without modifying each one.
+- You define the process once in a central file (for example, in `ci-standard.yml`).
+- You call this file from every service’s own workflow, passing in variables like environment or the application name.
+
+If a new security step or tool is added (like scanning for vulnerabilities), you add it only once in the reusable workflow. All 10 microservices immediately begin to use the updated process. You don't have to modify the 10 microservices.
 
 By understanding how reusable workflows function and their benefits, you can adopt best practices to maximize their effectiveness and ensure seamless integration into your CI/CD pipelines.
 
 ### Best practices
 
 - Centralize your reusable workflows in one repository if you plan to share them across teams.
-- Use branches or tags to version your workflows (e.g., use @v1), so changes won’t break everything unexpectedly.
-- Document inputs and secrets clearly—reusable workflows often rely on inputs and secrets, and teams need to know what to supply.
-- Combine with composite actions if you only need to reuse a few steps, not a full workflow.
+- Use branches or tags to version your workflows (for example, use `@v1`), so changes can’t break everything unexpectedly.
+- Document inputs and secrets clearly. Reusable workflows often rely on inputs and secrets, and teams need to know what to supply.
+- Combine with composite actions if you need to reuse only a few steps, and not a full workflow.
 
 ### Summary
 
-Reusable workflows are a powerful way to enforce consistency, reduce duplication, and scale DevOps practices in any engineering team. Whether you're managing a monorepo, microservices, or open-source libraries, reusable workflows can simplify automation, making CI/CD faster, cleaner, and easier to manage.
+Reusable workflows are a powerful way to enforce consistency, reduce duplication, and scale DevOps practices in any engineering team. Whether you're managing a single repository, microservices, or open-source libraries, reusable workflows can simplify automation, so your CI/CD is faster, cleaner, and easier for you to manage.
 
 <!-- INFOMAGNUS UPDATES for sub OD 2.1.1, 2.1.2, 2.1.3, and 2.1.4 go here. Source Material: Infomagnus team to find source material and cite it.
 https://docs.github.com/en/actions/writing-workflows/about-workflows , https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs , https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/triggering-a-workflow , https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflows/viewing-workflow-run-history , https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/troubleshooting-workflows/about-troubleshooting-workflows -->
@@ -146,14 +148,14 @@ Understanding what triggered a GitHub Actions workflow, whether it was a push to
 A workflow trigger is an event that causes a workflow to start. GitHub supports various types of triggers, including:
 
 - `push` or `pull_request` (based on code changes)
-- `workflow_dispatch` (manual trigger)
-- schedule (cron jobs)
+- `workflow_dispatch` (a manual trigger)
+- Schedule (cron jobs)
 - `repository_dispatch` (external systems)
-- Issue, discussion, and PR events (e.g., issues.opened, pull_request.closed)
+- Issue, discussion, and pull request events (for example, `issues.opened`, `pull_request.closed`)
 
-### Where to identify the trigger event?
+### Identify the trigger event
 
-You can identify a trigger event in multiple ways:  
+You can identify a workflow trigger event in multiple ways:  
 
 - From the GitHub Actions UI:
 
@@ -244,7 +246,7 @@ The workflow configuration file identifies the following information about the w
 
    To determine what the workflow does, see the `jobs` and `steps` sections of the workflow.
 
-   For example::
+   For example:
 
    ```yml
    jobs:
@@ -340,10 +342,10 @@ The following table describes common workflow failure scenarios:
 
 1. Expand each job and step.
 
-    The run summary page displays jobs as they are defined in the workflow file, such as build or test.
+    The run summary page displays jobs as they're defined in the workflow file, such as build or test.
 
     1. Select a job to expand it.
-    1. Inside the job, expand individual steps, such as "Install dependencies" or "Run tests".
+    1. Inside the job, expand individual steps, such as "Install dependencies" or "Run tests."
 
 1. View log output.
 
@@ -414,7 +416,7 @@ https://docs.github.com/en/actions/writing-workflows/about-workflows -->
 
 ## What are artifacts?
 
-When a workflow produces something other than a log entry, the product is called an *artifact*. For example, the Node.js build produces a Docker container that can be deployed. The container is an artifact that you can upload to storage by using the [actions/upload-artifact](https://github.com/actions/upload-artifact?azure-portal=true) action. You can later downloaded the artifact from storage by using [actions/download-artifact](https://github.com/actions/download-artifact?azure-portal=true).
+When a workflow produces something other than a log entry, the product is called an *artifact*. For example, the Node.js build produces a Docker container that can be deployed. The container is an artifact that you can upload to storage by using the [actions/upload-artifact](https://github.com/actions/upload-artifact?azure-portal=true) action. You can later download the artifact from storage by using [actions/download-artifact](https://github.com/actions/download-artifact?azure-portal=true).
 
 Storing an artifact preserves it between jobs. Each job uses a fresh instance of a virtual machine (VM), so you can't reuse the artifact by saving it on the VM. If you need your artifact in a different job, you can upload the artifact to storage in one job, and download it for the other job.
 
@@ -458,7 +460,7 @@ steps:
         path: public
 ```
 
-For more information about using artifacts in workflows, see [Storing workflow data as artifacts](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/storing-workflow-data-as-artifacts).
+For more information about using artifacts in workflows, see [Storing workflow data as artifacts](https://docs.github.com/enterprise-cloud@latest/actions/using-workflows/storing-workflow-data-as-artifacts).
 
 ## Automate reviews in GitHub using workflows
 
