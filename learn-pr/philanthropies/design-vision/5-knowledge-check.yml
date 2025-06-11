@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.design-vision.knowledge-check
+
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge check for the Module."
+  ms.date: 3/20/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 15
+
+content: |
+quiz:
+  questions:
+  - content: "What's one of the main benefits of using AI tools like Microsoft Designer in storyboarding?"
+    choices:
+    - content: "AI speeds up the visualization process by generating concept images from text prompts"
+      isCorrect: true
+      explanation: "Microsoft Designer helps in quickly generating visuals based on descriptive prompts, allowing creators to visualize their scenes more efficiently. "
+    - content: "AI completely replaces the need for human creativity"
+      isCorrect: false
+      explanation: "AI doesn't replace human input but enhances and streamlines the creative process."
+    - content: "AI creates finalized storyboards without any human input"
+      isCorrect: false
+      explanation: "Human creativity is still essential to refining and selecting the best images."
+  - content: "How does Copilot help in script writing for a music video?"
+    choices:
+    - content: "It generates initial script ideas, structures narratives, and refines descriptions based on user input"
+      isCorrect: true
+      explanation: "Copilot serves as a tool to aid the script writing process by offering structured outlines, scene breakdowns, and refined descriptions. "
+    - content: "It automatically creates a fully finished script without needing revisions"
+      isCorrect: false
+      explanation: "The generated script isn't final—it requires human input for revisions and personalization."
+    - content: "It replaces the need for collaboration among team members"
+      isCorrect: false
+      explanation: "Copilot supports collaboration by allowing team members to provide feedback and make adjustments."
+  - content: "What should you do to ensure effective AI-generated images when using Microsoft Designer for storyboarding?"
+    choices:
+    - content: "Use detailed and specific prompts to describe scenes clearly"
+      isCorrect: true
+      explanation: "The quality of AI-generated visuals depends on the clarity and specificity of the prompts. "
+    - content: "Avoid making adjustments to the generated visuals"
+      isCorrect: false
+      explanation: "Refinements and adjustments help make the storyboarding process more effective."
+    - content: "Only use one-word prompts to keep the AI from overcomplicating the image"
+      isCorrect: false
+      explanation: "Providing detailed descriptions, including mood, lighting, and style, ensures that the output aligns with the creative vision."
+  - content: "Which of the following option is NOT a recommended way to refine AI-generated scripts in Copilot?"
+    choices:
+    - content: "Completely relying on AI's first draft without any human input"
+      isCorrect: true
+      explanation: "While Copilot provides structured ideas, it requires human creativity to fine-tune scene descriptions, dialogue, and pacing. "
+    - content: "Asking for alternative versions of scenes"
+      isCorrect: false
+      explanation: "AI-generated scripts should always be refined and adjusted to better align with the director's vision."
+    - content: "Using AI-generated content as a starting point for further creative development"
+      isCorrect: false
+      explanation: "The best approach is to use AI's output as a foundation while iterating on it collaboratively."
+  - content: "How does AI support collaboration in the preproduction process?"
+    choices:
+    - content: "By allowing multiple team members to provide input on scripts and storyboards"
+      isCorrect: true
+      explanation: "AI tools like Copilot and Microsoft Designer facilitate collaboration by generating initial concepts that multiple team members can adjust and refine."
+    - content: "By replacing the need for human collaboration altogether"
+      isCorrect: false
+      explanation: "AI doesn't replace human collaboration but strengthens it by providing a structured starting point for creative discussions."
+    - content: "By finalizing all creative decisions without discussion"
+      isCorrect: false
+      explanation: "AI tools open opportunities for directors, script writers, and visual artists to contribute and improve the final product"

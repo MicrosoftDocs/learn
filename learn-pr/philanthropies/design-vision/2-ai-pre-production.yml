@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.design-vision.ai-pre-production
+title: AI in preproduction
+metadata:
+  title: AI in Preproduction
+  description: "Artificial intelligence is revolutionizing creative industries by enhancing preproduction processes in music video production, including concept generation, storyboarding, and script writing. Using AI tools like Microsoft Designer and Copilot, creators can streamline planning, improve collaboration, boost creativity, and make professional-quality visuals more accessible and cost-effective."
+  ms.date: 3/20/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-ai-pre-production.md)]

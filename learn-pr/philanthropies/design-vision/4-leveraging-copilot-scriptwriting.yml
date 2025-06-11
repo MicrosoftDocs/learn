@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.design-vision.leveraging-copilot-scriptwriting
+
+title: Using Copilot for script writing
+metadata:
+  title: Using Copilot for Script Writing
+  description: "In this unit, learners explore how Microsoft Copilot streamlines music video script writing by generating structured outlines, refining dialogue, and enhancing collaboration. Learners discover how to use AI to develop clear, visually compelling scripts and integrate narrative flow with visual planning. Keywords: AI script writing, music video preproduction, Microsoft Copilot, collaborative storytelling, AI-assisted creative workflows."
+  ms.date: 3/20/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-leveraging-copilot-scriptwriting.md)]
