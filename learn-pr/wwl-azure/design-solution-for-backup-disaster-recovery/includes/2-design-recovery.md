@@ -10,7 +10,9 @@ Reliable apps are:
 
 To achieve the desired resilience and high availability, you must first define your requirements.
 
->[!NOTE]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0e7913e2-993b-4b46-9683-ca3866b56d7f]
+
+> [!NOTE]
 >This module will use the term resiliency as the ability of a system to gracefully handle and recover from failures, both inadvertent and malicious.
 
  
