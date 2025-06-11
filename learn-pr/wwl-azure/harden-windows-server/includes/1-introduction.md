@@ -1,4 +1,4 @@
-An integral part of securing your Windows Server environment is making sure the servers and client computers are configured in as secure a manner as possible, also known as “hardening” those computers. In this module, you will learn about a variety of tools that you can use to harden your servers and devices.
+An integral part of securing your Windows Server environment is making sure the servers and client computers are configured in as secure a manner as possible, also known as "hardening" those computers. In this module, you'll learn about various tools that you can use to harden your servers and devices.
 
 ## Learning objectives
 
@@ -12,7 +12,7 @@ In this module, you will:
 
 - Describe how to use the Microsoft Security Compliance Toolkit to harden servers
 
-- Secure SMB traffic using SMB encryption
+- Secure Server Message Block (SMB) traffic using SMB encryption
 
 ## Prerequisites
 
