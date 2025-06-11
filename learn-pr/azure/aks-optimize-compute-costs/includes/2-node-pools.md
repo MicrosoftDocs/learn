@@ -16,7 +16,7 @@ A node pool describes a group of nodes with the same configuration in an AKS clu
 
 ### System node pools
 
-System node pools host critical system pods that make up your cluster's control plane. A system node pool allows the use of Linux only as the node OS and runs only Linux-based workloads. Nodes in a system node pool are reserved for system workloads and normally not used to run custom workloads. Every AKS cluster must contain at least one system node pool with at least one node, and you must define the underlying VM sizes for nodes.
+System node pools host critical system pods that make up your cluster's control plane. A system node pool only allows Linux as the node OS and runs only Linux-based workloads. Nodes in a system node pool are reserved for system workloads and normally not used to run custom workloads. Every AKS cluster must contain at least one system node pool with at least one node, and you must define the underlying VM sizes for nodes.
 
 ### User node pools
 

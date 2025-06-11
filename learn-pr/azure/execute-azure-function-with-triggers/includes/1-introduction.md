@@ -1,6 +1,6 @@
-Imagine a scenario where a busy hair salon has a recurring problem: customers commonly miss their appointments. Appointments are reserved time slots, so if a customer misses an appointment, the salon loses money. To fix this problem, the salon reaches out to you, a software developer. To improve the situation, you decide to send two types of reminder text messages, one that's sent as soon as the appointment is scheduled or changed, and a text message sent each morning to each customer who has an appointment that day.
+Imagine a scenario where a busy hair salon has a recurring problem: customers commonly miss their appointments. Appointments are reserved time slots, so if a customer misses an appointment, the salon loses money. To fix this problem, the salon reaches out to you, a software developer. To improve the situation, you decide to send two types of reminder text messages. One message is sent as soon as the appointment is scheduled or changed. Another text message is sent each morning to each customer who has an appointment that day.
 
-You need to create a service that can be easily scheduled, updated, and scaled. You decide to solve this problem using Azure Functions. You already know how to implement the logic to send a text message. Now you need to learn how to send the message at a specific time or when a specific event occurs. Luckily, Azure Functions supports a feature called _triggers_. Triggers are used to invoke your function code in Azure.
+You need to create a service that can be easily scheduled, updated, and scaled. You decide to solve this problem using Azure Functions. You already know how to implement the logic to send a text message. Now you need to learn how to send the message at a specific time or when a specific event occurs. Luckily, Azure Functions supports a feature called *triggers*. Triggers are used to invoke your function code in Azure.
 
 ## Learning objectives
 
@@ -13,7 +13,7 @@ In this module, you will:
 
 ## Supported languages
 
-This module uses the Azure portal to create and test your function code. Functions supports in-portal development for the following languages:
+This module uses the Azure portal to create and test your function code. Azure Functions supports in-portal development for the following languages:
 
 - C# Script (.csx)
 - JavaScript (Node.js v3)

@@ -1,6 +1,3 @@
->[!div class="mx-imgBorder"]
->[![Screenshot of a large-scale datacenter complex showcasing its strategic location with access to essential resources and infrastructure.](../media/aerial-view-of-datacenter-complex.jpg)](../media/aerial-view-of-datacenter-complex.jpg#lightbox)
-
 Have you ever wondered why datacenters are located in specific areas and not others? For instance, why aren't there major datacenters in places like the middle of the Australian Outback or the vast, open plains of central Mongolia?
 
 One of the primary reasons is that while these areas may offer plenty of available land, they often lack critical datacenter resources like reliable power, stable telecommunications networks, or cooling options. Additionally, harsh climates and remote locations can make it challenging to maintain and operate a datacenter effectively.
@@ -8,6 +5,11 @@ One of the primary reasons is that while these areas may offer plenty of availab
 To add to this, the design of the datacenter itself plays a key role. Wherever it's located, it needs to make the best use of space, allow for future growth, and provide strong support for IT infrastructure.
 
 By carefully selecting the right location and designing the facility thoughtfully, datacenters can deliver reliable performance, maintain uptime, and scale as needed while minimizing risks and keeping costs manageable.
+
+
+>[!div class="mx-imgBorder"]
+>[![Screenshot of a large-scale datacenter complex showcasing its strategic location with access to essential resources and infrastructure.](../media/aerial-view-of-datacenter-complex.jpg)](../media/aerial-view-of-datacenter-complex.jpg#lightbox)
+
 
 ## Key factors in site selection
 

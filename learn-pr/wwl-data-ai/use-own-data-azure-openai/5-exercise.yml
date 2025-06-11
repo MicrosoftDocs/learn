@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-own-data-azure-openai.exercise
-title: Exercise - Add your data for RAG with Azure OpenAI Service
+title: Exercise - Add your data for RAG with Azure OpenAI
 metadata:
-  title: Exercise - Add your data for RAG with Azure OpenAI Service
-  description: Complete a hands-on exercise to learn how to use your own data with Azure OpenAI services.
+  title: Exercise - Add your data for RAG with Azure OpenAI
+  description: Complete a hands-on exercise to learn how to use your own data with Azure OpenAI models.
   author: ivorb
   ms.author: berryivor
   ms.date: 03/18/2025
@@ -13,4 +13,4 @@ metadata:
 durationInMinutes: 25
 content: |
   [!include[](includes/5-exercise.md)]
-
+

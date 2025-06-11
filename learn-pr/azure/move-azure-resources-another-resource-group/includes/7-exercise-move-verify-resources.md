@@ -16,7 +16,7 @@ First you create the development resource group where you want to move your reso
     |---|---|
     | **Project details** |
     | Subscription | From the dropdown list, select your account's subscription  |
-    | Resource group | Enter *devgroup* |
+    | Resource group | Enter *development-learn-rg* |
     | **Resource details** |
     | Region | Accept the default value |
 
@@ -29,13 +29,13 @@ First you create the development resource group where you want to move your reso
     | Name | environment |
     | Value | development  |
 
-1. Select **Review + create**. After validation passes, select **Create**.
-
     ![Screenshot that shows how to assign a tag when you create a resource group.](../media/7-exercise-set-tags-on-rg.png)
+
+1. Select **Review + create**. After validation passes, select **Create**.
 
 ## Move development resources to the new group
 
-Now that a *devgroup* resource group is created, you can move your development resources into it.
+Now that a *development-learn-rg* resource group is created, you can move your development resources into it.
 
 1. At the top of the Azure portal, search for and select **Tags**. The **Tags** pane appears.
 
@@ -49,7 +49,7 @@ Now that a *devgroup* resource group is created, you can move your development r
 
     The **Move resources** pane appears.
 
-1. On the **Source + target** tab, under **Target**, for the **Resource group**, from the dropdown list, select **devgroup**.
+1. On the **Source + target** tab, under **Target**, for the **Resource group**, from the dropdown list, select **development-learn-rg**.
 
 1. Select **Next**. On the **Resources to move** tab, the resources are validated as to whether they can be moved. The validation might take a few minutes.
 
@@ -57,17 +57,17 @@ Now that a *devgroup* resource group is created, you can move your development r
 
 1. On the **Review** tab, check the disclaimer box, and then select **Move**.
 
-    The move might take a few minutes. Wait for the "Moving resources complete" notification that confirms your resource is scucessfuly moved. The notification appears in the top-right hand section of the portal.
+    The move might take a few minutes. Wait for the "Moving resources complete" notification that confirms your resource is successfully moved. The notification appears in the top-right hand section of the portal.
 
 1. Repeat this process again to move the other storage account.
 
-To confirm that your move operations are successful:
+To confirm that your move operations were successful:
 
 1. On the Azure portal home page, under **Azure services**, select **Resource groups**. The **Resource groups** pane appears.
 
-1. Select **devgroup**. The *devgroup* Resource group pane appears.
+1. Select **development-learn-rg**. The *development-learn-rg* Resource group pane appears.
 
-    Notice that the development resources are now moved to the *devgroup* resource group.
+    Notice that the development resources are now moved to the *development-learn-rg* resource group.
 
     ![Screenshot that shows resources moved.](../media/7-exercise-resources-moved.png)
 

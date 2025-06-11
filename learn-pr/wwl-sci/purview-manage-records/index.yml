@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.purview-manage-records
+metadata:
+  title: Manage records and disposition with Microsoft Purview
+  description: "Manage records and disposition with Microsoft Purview."
+  ms.date: 06/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  ai-usage: ai-assisted
+  hidden: false
+title: Manage records and disposition with Microsoft Purview
+summary: Microsoft Purview supports retention and records management by providing tools to plan and apply retention labels, organize and classify labels through a file plan, automate labeling, declare items as records, and conduct disposition reviews before content is permanently deleted.
+abstract: |
+  After completing this module, you'll be able to:
+  - Plan retention and disposition strategies using labels
+  - Organize and manage labels with the file plan
+  - Automate label application using policy conditions
+  - Declare content as records or regulatory records
+  - Configure and manage disposition reviews
+prerequisites: |
+  - Basic knowledge of data retention and compliance concepts
+  - Familiarity with navigating the Microsoft Purview portal
+  - Understanding of how retention labels are used in Microsoft 365
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+units:
+- learn.wwl.purview-manage-records.introduction
+- learn.wwl.purview-manage-records.plan-retention-disposition
+- learn.wwl.purview-manage-records.retention-label-file-plan
+- learn.wwl.purview-manage-records.auto-apply-retention-label
+- learn.wwl.purview-manage-records.declare-record
+- learn.wwl.purview-manage-records.disposition-review
+- learn.wwl.purview-manage-records.principles-retention
+- learn.wwl.purview-manage-records.knowledge-check
+- learn.wwl.purview-manage-records.summary
+badge:
+  uid: learn.wwl.purview-manage-records.badge

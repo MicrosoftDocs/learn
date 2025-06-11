@@ -54,3 +54,31 @@ quiz:
     - content: "Opening an issue"
       isCorrect: false
       explanation: "Event triggers use Git references, and opening an issue produces a Git reference."
+  - content: "What are the two types of manual events that can trigger a GitHub Actions workflow?"
+    choices:
+    - content: "workflow_run and push_manual"
+      isCorrect: false
+      explanation: "workflow_run is an event that triggers when another workflow completes, not a manual event. repository_run is not a valid GitHub Actions event."
+    - content: "workflow_dispatch and repository_dispatch"
+      isCorrect: true
+      explanation: "GitHub Actions supports these two manual event triggers: workflow_dispatch allows manual triggering from the GitHub UI or API with customizable input parameters, and repository_dispatch enables workflows to be triggered by external systems via POST requests to the GitHub API."
+    - content: "manual_run and external_trigger"
+      isCorrect: false
+      explanation: "Neither manual_run nor external_trigger are valid GitHub Actions event types."
+    - content: "workflow_trigger and repository_webhook"
+      isCorrect: false
+      explanation: "workflow_trigger doesn't exist in GitHub Actions. While repository_webhook sounds similar to webhooks, the correct term for the external API-triggered event is repository_dispatch."
+  - content: "What is the primary benefit of using GitHub's larger hosted runners?"
+    choices:
+    - content: "They provide additional CPU and memory resources for running resource-intensive jobs."
+      isCorrect: true
+      explanation: "Larger runners offer increased CPU and memory, allowing you to run workflows that require more resources than standard runners provide."
+    - content: "GitHub's larger runners are available at no additional cost beyond standard runners."
+      isCorrect: false
+      explanation: "Larger runners incur additional costs based on their usage, unlike standard runners which may be included in your plan."
+    - content: "Larger runners come with completely different pre-installed tools compared to standard runners."
+      isCorrect: false
+      explanation: "These larger runners maintain compatibility with existing workflows by including the same preinstalled tools as standard `ubuntu-latest` runners."
+    - content: "Repository-level policies cannot be configured to control access to larger runners."
+      isCorrect: false
+      explanation: "To control access to larger runners, you can configure repository or organization-level policies, helping you manage costs and access effectively."

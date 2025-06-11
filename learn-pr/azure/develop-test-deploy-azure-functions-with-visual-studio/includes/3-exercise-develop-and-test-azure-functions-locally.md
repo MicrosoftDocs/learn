@@ -5,7 +5,7 @@ In the luxury watch online website scenario, there's a requirement for a functio
 In this exercise, you implement and test a version of this function locally using Visual Studio.
 
 > [!NOTE]
-> Before starting this exercise, make sure you have VS 2022 installed, along with the Web & Cloud workload extensions **ASP.NET and web development** and **Azure development**.
+> Before starting this exercise, make sure you have Visual Studio 2022 installed, along with the Web & Cloud workload extensions **ASP.NET and web development** and **Azure development**.
 
 ## Create an Azure Function App
 

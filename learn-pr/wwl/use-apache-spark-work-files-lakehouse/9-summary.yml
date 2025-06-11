@@ -4,14 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 04/16/2025
-  author: wwlpublish
+  ms.date: 05/22/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
-  ms.custom:
-  - build-2023
-  - build-2023-dataai
-  - build-2023-fabric
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]

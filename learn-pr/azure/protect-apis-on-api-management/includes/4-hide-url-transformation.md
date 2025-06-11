@@ -1,4 +1,4 @@
-Organizations may need to adjust the information that an API publishes at short notice. For example, to comply with a change of legislation or address a new security threat.
+Organizations might need to adjust the information that an API publishes at short notice. For example, to comply with a change of legislation or address a new security threat.
 
 The Census API example exposes details about the URL from which the API is being called. This information could allow a malicious user to attempt to access the census data by bypassing the API Management gateway and exposing a less secure endpoint. As lead developer, you want to mask these URLs within the response body of the API.
 
@@ -15,7 +15,7 @@ These links are based on the Census API endpoints and need to be masked to show 
 To achieve this configuration, create a transformation policy.
 
 > [!NOTE]
-> It's best practice to secure the backend API using one of the available mechanisms in API Management. For example, configure it to require a client certificate, and then configure API Management to supply that certificate. In this configuration, no one can call the backend API directly and circumvent your API Management gateway because they don't have a certificate that's recognized by the backend.
+> It's best practice to secure the backend API using one of the available mechanisms in API Management. For example, configure it to require a client certificate, and then configure API Management to supply that certificate. In this configuration, no one can call the backend API directly and circumvent your API Management gateway, because they don't have a certificate recognized by the backend.
 
 ## Transformation policy
 

@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-ai-fundamentals
 metadata:
-  title: Fundamental AI Concepts
+  title: Introduction to AI concepts
   description: "Curious about artificial intelligence? Want to understand what all the buzz is about? This module introduces you to the world of AI."
   ms.date: 02/24/2025
   author: wwlpublish
@@ -12,7 +12,7 @@ metadata:
   - N/A
   ms.service: azure
   ai-usage: ai-assisted
-title: Fundamental AI Concepts
+title: Introduction to AI concepts
 summary: Curious about artificial intelligence? Want to understand what all the buzz is about? This module introduces you to the world of AI.
 abstract: In this module, you'll learn about the kinds of solutions AI can make possible and considerations for responsible AI practices.
 prerequisites: None
@@ -38,4 +38,4 @@ units:
 - learn.wwl.get-started-ai-fundamentals.knowledge-check
 - learn.wwl.get-started-ai-fundamentals.summary
 badge:
-  uid: learn.wwl.get-started-ai-fundamentals.badge
+  uid: learn.wwl.get-started-ai-fundamentals.badge

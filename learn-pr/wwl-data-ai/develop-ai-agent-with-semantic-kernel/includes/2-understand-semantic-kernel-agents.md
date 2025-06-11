@@ -22,9 +22,9 @@ The Agent Framework within Semantic Kernel helps streamline the creation of agen
 
 ### What is an Azure AI Agent?
 
-The `AzureAIAgent` class provides a seamless way to build and interact with AI agents using the Azure AI Agent Service. It abstracts the complexity of managing AI agents by offering a more structured and intuitive interface within the Semantic Kernel Agent Framework. Key benefits include:
+The `AzureAIAgent` class provides a seamless way to build and interact with AI agents using the Foundry Agent Service. It abstracts the complexity of managing AI agents by offering a more structured and intuitive interface within the Semantic Kernel Agent Framework. Key benefits include:
 
-- Simplified agent creation – The AzureAIAgent class allows developers to define AI agents with minimal configuration, leveraging the power of Azure AI Agent Service without managing the underlying infrastructure.
+- Simplified agent creation – The AzureAIAgent class allows developers to define AI agents with minimal configuration, leveraging the power of Foundry Agent Service without managing the underlying infrastructure.
 
 - Automatic tool invocation – The agent can automatically call and execute tools, integrating seamlessly with Azure AI Search, Bing, Azure Functions, and more.
 
@@ -32,7 +32,7 @@ The `AzureAIAgent` class provides a seamless way to build and interact with AI a
 
 - Secure enterprise integration – Enables secure and compliant AI agent development with keyless authentication and customizable storage options.
 
-By using the `AzureAIAgent` class, developers can take full advantage of Azure AI Agent Service while taking advantage of the features offered by the Semantic Kernel SDK. This allows for robust AI-driven workflows that scale efficiently across enterprise applications.
+By using the `AzureAIAgent` class, developers can take full advantage of Foundry Agent Service while taking advantage of the features offered by the Semantic Kernel SDK. This allows for robust AI-driven workflows that scale efficiently across enterprise applications.
 
 ### Agent framework core concepts
 
