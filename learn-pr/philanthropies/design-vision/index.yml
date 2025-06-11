@@ -43,9 +43,9 @@ subjects:
 
 units:
 - learn.philanthropies.design-vision.introduction
-- learn.philanthropies.design-vision.ai-pre-production
-- learn.philanthropies.design-vision.using-microsoft-designer-copilot-storyboarding
-- learn.philanthropies.design-vision.leveraging-copilot-scriptwriting
+- learn.philanthropies.design-vision.production
+- learn.philanthropies.design-vision.use-microsoft-designer-copilot-storyboard
+- learn.philanthropies.design-vision.leverage-copilot-scriptwrit
 - learn.philanthropies.design-vision.knowledge-check
 - learn.philanthropies.design-vision.exercise
 - learn.philanthropies.design-vision.summary

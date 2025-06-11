@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.design-vision.leveraging-copilot-scriptwriting
+uid: learn.philanthropies.design-vision.leverage-copilot-scriptwrit
 
 title: Using Copilot for script writing
 metadata:
@@ -12,4 +12,4 @@ metadata:
   
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-leveraging-copilot-scriptwriting.md)]
+  [!include[](includes/4-leverage-copilot-scriptwrit.md)]

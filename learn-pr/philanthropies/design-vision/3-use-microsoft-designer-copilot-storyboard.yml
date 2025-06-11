@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.design-vision.using-microsoft-designer-copilot-storyboarding
+uid: learn.philanthropies.design-vision.use-microsoft-designer-copilot-storyboard
 
 title: Using Microsoft Designer and Copilot for storyboarding
 metadata:
@@ -12,4 +12,4 @@ metadata:
   
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-using-microsoft-designer-copilot-storyboarding.md)]
+  [!include[](includes/3-use-microsoft-designer-copilot-storyboard.md)]
