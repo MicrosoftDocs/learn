@@ -1,16 +1,12 @@
 To govern Microsoft Fabric items using Microsoft Purview, you first need to establish a connection between Fabric and Purview. Once connected, the Microsoft Purview hub becomes available within Fabric, offering in-depth analysis and insights into your Fabric items. The Purview Hub acts as a gateway between Fabric and Purview.
 
-Suppose you work for a healthcare provider, and you have licensed Purview. Now, you want to connect Purview to Fabric and explore the reports on Fabric data that Purview generates in the Microsoft Purview Hub.
+Imagine you're part of a healthcare organization that has recently adopted Microsoft Purview. Now, you're ready to connect it to Fabric and explore the insights Purview provides on your Fabric data in the Microsoft Purview Hub.  
 
 In this unit, you'll explore the Purview hub.
 
 ## Connect Purview to Fabric
 
-The steps you must complete connecting Purview to Fabric depend on whether Fabric and Purview are in the same or different tenants.
-
-### Connect Purview to Fabric in the same tenant
-
-The stages to complete are:
+The stages you must complete to connect Purview to Fabric are:
 
 1. In Purview, register your Fabric tenant as a data source from the **Data Map** icon in the left navigation pane:
 
@@ -23,15 +19,9 @@ The stages to complete are:
 4. Create a scan in Purview that uses the Fabric data source.
 
 > [!NOTE]
-> Instead of using a managed identity to authenticate Purview with Fabric, you can use a service principal or delegated authentication. For details on configuring authentication from Purview to Fabric in the same tenant, see [Connect to your Microsoft Fabric tenant in the same tenant as Microsoft Purview](/purview/register-scan-fabric-tenant?context=%2Ffabric%2Fgovernance%2Fcontext%2Fcontext-purview&tabs=Scenario1#configure-credentials-for-scans-in-microsoft-purview)
-
-### Connect Purview to Fabric in a different tenant
-
-If Microsoft Fabric is in a different tenant from Purview, all the same functionality is supported, except that Purview's live view isn't available for Fabric items.
-
-When you register the Fabric tenant in Purview, the system can't identify it automatically, so you must obtain and manually enter the tenant ID.
-
-Finally, you can't use a managed identity for authentication in cross-tenant connections. Instead, use a service principal or delegated authentication.
+> To configure authentication to Fabric from Purview, see 
+>- [Connect to your Microsoft Fabric tenant in the same tenant as Microsoft Purview](/purview/register-scan-fabric-tenant?tabs=Scenario1)
+> - [Connect to your Microsoft Fabric tenant from Microsoft Purview in a different tenant](/purview/register-scan-fabric-tenant-cross-tenant?tabs=Scenario1)
 
 ## What is the Microsoft Purview hub in Microsoft Fabric?
 
@@ -74,8 +64,6 @@ The endorsements page helps you monitor endorsed items (promoted, certified, and
 * Monitor your endorsed items: You can filter items by their endorsement status: promoted, certified, and master data.
 
 The side pane shows you insights based on your selections in the report.
-
-Select the help button at the bottom of the navigation pane for guidance about using the page.
 
 # [Domains](#tab/domains)
 

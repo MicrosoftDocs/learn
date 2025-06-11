@@ -1,6 +1,6 @@
 When you need data governance features beyond those built into Microsoft Fabric, Microsoft Purview provides comprehensive data governance capabilities.
 
-In the last unit, we reviewed the built-in governance features of Microsoft Fabric. Let's assume you work for a health care provider and new regulations mean you need stricter governance for data stored in Microsoft Fabric. Now, you want to investigate what features a Microsoft Purview license includes that can help you comply with new regulations.
+In the last unit, we reviewed the built-in governance features of Microsoft Fabric. Let's assume you work for a health care provider and new regulations mean you need stricter governance for data stored in Microsoft Fabric. Now, you want to investigate what features Microsoft Purview includes that can help you comply with new regulations.
 
 In this unit, you'll learn what capabilities Microsoft Purview adds to the built-in data governance and compliance capabilities available in Microsoft Fabric.
 
@@ -10,13 +10,20 @@ Microsoft Purview is a set of solutions that you can use to govern, protect, and
 
 Purview also supports data security and risk and compliance management with features that monitor regulatory adherence and assess data vulnerabilities. It integrates with other Microsoft services and third-party tools. By streamlining data access controls, enforcing policies, and delivering insights into data lineage, Purview can help you maintain data integrity, comply with regulations, and use data effectively for strategic decision-making.
 
+The Purview solutions can be accessed via the Microsoft Purview Portal.
+
 ![A diagram showing Microsoft Purview pillars.](../media/purview-areas.png)
 
-## What does Purview add to Fabric data governance?
+## What are some of the Purview tools?
 
-Microsoft Purview enables you to discover, manage, and protect Fabric data using Purview tools. Purview can be configured to scan your Fabric item and present data governance findings in the Purview Hub located in Fabric or in Purview itself. To unlock the following capabilities, register your Fabric tenant in Microsoft Purview.
+Microsoft Purview enables you to discover, manage, and protect Fabric data using Purview tools. Purview can be configured to scan your Fabric item and present data governance findings in the Purview Hub located in Fabric or in Purview itself. To unlock the following capabilities, register your Fabric tenant in Microsoft Purview. 
+
+### Microsoft Purview Data Map
+Data Map can be used to scan all of your data assets, to capture metadata about them and to identify sensitive data. It captures metadata about data in existing analytics, software-as-a-service, and operational systems in hybrid, on-premise and multi-cloud environments. There is a built in scanning and classification system that keeps the Data Map updated.
 
 ### Microsoft Purview Unified Catalog
+
+The Purview Unified Catalog is a searchable catalog of your scanned data where you curate, grant access to and improve the health of your data.  
 
 In the Purview Unified Catalog, you can inventory of all your data assets, their metadata, and their lineage so you can understand the topography of your data estate. You can search for and browse datasets, and view metadata, data lineage, classification, and sensitivity labels. The Unified Catalog promotes collaboration because users can annotate datasets with tags to improve discoverability.
 
@@ -51,3 +58,4 @@ Thorough auditing is an important protection for the policies you have applied f
 ## Learn more
 
 - [Use Microsoft Purview to govern Microsoft Fabric](/fabric/governance/microsoft-purview-fabric)
+- [Learn about Microsoft Purview](/purview/purview)
