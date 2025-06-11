@@ -1,6 +1,6 @@
 To govern Microsoft Fabric items using Microsoft Purview, you first need to establish a connection between Fabric and Purview. Once connected, the Microsoft Purview hub becomes available within Fabric, offering in-depth analysis and insights into your Fabric items. The Purview Hub acts as a gateway between Fabric and Purview.
 
-Imagine you're part of a healthcare organization that has recently adopted Microsoft Purview. Now, you're ready to connect it to Fabric and explore the insights Purview provides on your Fabric data in the Microsoft Purview Hub.  
+Imagine you're part of a healthcare organization that recently adopted Microsoft Purview. Now, you're ready to connect it to Fabric and explore the insights Purview provides on your Fabric data in the Microsoft Purview Hub.  
 
 In this unit, you'll explore the Purview hub.
 

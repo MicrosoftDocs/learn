@@ -19,11 +19,11 @@ The Purview solutions can be accessed via the Microsoft Purview Portal.
 Microsoft Purview enables you to discover, manage, and protect Fabric data using Purview tools. Purview can be configured to scan your Fabric item and present data governance findings in the Purview Hub located in Fabric or in Purview itself. To unlock the following capabilities, register your Fabric tenant in Microsoft Purview. 
 
 ### Microsoft Purview Data Map
-Data Map can be used to scan all of your data assets, to capture metadata about them and to identify sensitive data. It captures metadata about data in existing analytics, software-as-a-service, and operational systems in hybrid, on-premise and multi-cloud environments. There is a built in scanning and classification system that keeps the Data Map updated.
+Data Map can be used to scan all of your data assets, to capture metadata about them and to identify sensitive data. It captures metadata about data in existing analytics, software-as-a-service, and operational systems in hybrid, on-premise, and multicloud environments. There's a built-in scanning and classification system that keeps the Data Map updated.
 
 ### Microsoft Purview Unified Catalog
 
-The Purview Unified Catalog is a searchable catalog of your scanned data where you curate, grant access to and improve the health of your data.  
+The Purview Unified Catalog is a searchable catalog of your scanned data where you curate, grant access to and, improve the health of your data.  
 
 In the Purview Unified Catalog, you can inventory of all your data assets, their metadata, and their lineage so you can understand the topography of your data estate. You can search for and browse datasets, and view metadata, data lineage, classification, and sensitivity labels. The Unified Catalog promotes collaboration because users can annotate datasets with tags to improve discoverability.
 
@@ -53,7 +53,7 @@ If you worked at a health care provider, you would need to ensure that users don
 
 Auditing solutions in Purview are used to search for activities performed in Microsoft services by users and admins. User activities such as creating files or accessing Fabric items are automatically logged and appear in the Purview audit log.
 
-Thorough auditing is an important protection for the policies you have applied for patient records. For example, if a malicious administrator changes DLP policies so that they can copy a patient record to a USB device, this change is recorded and can be identified during later investigations.
+Thorough auditing is an important protection for the policies you apply to patient records. For example, if a malicious administrator changes DLP policies so that they can copy a patient record to a USB device, this change is recorded and can be identified during later investigations.
 
 ## Learn more
 

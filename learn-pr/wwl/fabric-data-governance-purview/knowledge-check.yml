@@ -30,18 +30,18 @@ quiz:
       explanation: "Correct. This report is in the Purview Hub."
     - content: "Audit report."
       isCorrect: false
-      explanation: "Incorrect. This is not the name of a report in the Purview Hub."
+      explanation: "Incorrect. This isn't the name of a report in the Purview Hub."
     - content: "Workspace items report"
       isCorrect: false
-      explanation: "Incorrect. This is not the name of a report in the Purview Hub."
+      explanation: "Incorrect. This isn't the name of a report in the Purview Hub."
   - content: "Which feature does Microsoft Purview add to Microsoft Fabric for data governance?"
     choices:
     - content: "Real-time data processing capabilities."
       isCorrect: false
-      explanation: "Incorrect. Real-time data processing is not a feature of Microsoft Purview."
+      explanation: "Incorrect. Real-time data processing isn't a feature of Microsoft Purview."
     - content: "Enhanced data visualization tools."
       isCorrect: false
-      explanation: "Incorrect. Data visualization is not a focus of Microsoft Purview."
+      explanation: "Incorrect. Data visualization isn't a focus of Microsoft Purview."
     - content: "Centralized data cataloging and compliance monitoring."
       isCorrect: true
       explanation: "Correct. Microsoft Purview provides centralized cataloging and compliance features for data governance."

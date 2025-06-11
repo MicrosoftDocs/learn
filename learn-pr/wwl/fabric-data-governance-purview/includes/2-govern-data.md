@@ -1,6 +1,6 @@
-Microsoft Fabric includes a set of governance and compliance capabilities that may be sufficient for the needs of some organizations. Additional governance capabilities may be accessed in Microsoft Purview.
+Microsoft Fabric includes a set of governance and compliance capabilities that might be sufficient for the needs of some organizations. Other governance capabilities can be accessed in Microsoft Purview.
 
-If, for example, you work at a health care company, you have have specific data governance needs because of regulatory requirements. In this unit, we'll explore Fabric's governance features so you can assess if they meet your requirements.  
+If, for example, you work at a health care company, you have specific data governance needs because of regulatory requirements. In this unit, we'll explore Fabric's governance features so you can assess if they meet your requirements.  
 
 ## What is Microsoft Fabric?
 
