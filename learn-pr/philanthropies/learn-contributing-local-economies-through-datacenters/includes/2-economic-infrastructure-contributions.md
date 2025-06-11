@@ -4,81 +4,37 @@ As societies and economies become more digitized, the demand for digital infrast
 
 The datacenter sector represents a significant evolution of the Information and Communication Technology (ICT) and broader technology sectors. For example, the computing industry in Ireland supported more than 90,000 jobs in 2020, with these jobs growing at more than twice the rate of overall jobs growth and being among the best-paying jobs in Ireland. Datacenter development in Ireland and other countries reflects the growing complexity and scale of technological needs in our increasingly digital world.
 
-## Examples include
+## Economic growth
 
-- **Economic growth:**
+Datacenters contribute to economic growth through:
 
   - Direct employment opportunities for IT specialists, engineers, and operational staff. 
-
   - Indirect employment in sectors like design, construction, logistics, and maintenance, particularly during construction and setup phases. 
+  - Development of new "cloud regions" and cloud infrastructure. This leads to large opportunities for new employment both directly within the delivery and management the infrastructure, and indirectly across the ICT and digital sectors enabling organizations to apply the latest technologies to develop new products, solutions, tools and platforms. 
+  - Significant investments into local economies resulting from datacenter construction and operations and creation of new opportunities to grow local supply chains. 
+  - Development of the ICT sector into increased demand for goods and services that benefit local businesses.
 
-  - Development of new "cloud regions" and cloud infrastructure leads to large opportunities for new employment both directly within the delivery and management of this infrastructure but also indirectly across the ICT and digital sectors enabling organizations to apply the latest technologies to develop new products, solutions, tools and platforms. 
+## Job creation
 
-  - Datacenter construction and operations bring significant investments into local economies and create new opportunities to grow local supply chains. 
+Datacenters require highly skilled professionals such as roles in IT, engineering, and maintenance. It generates specialized roles that significantly contribute to the workforce, offering high-value employment opportunities that support the growing infrastructure.
 
-  - Datacenters are examples of the development of the ICT sector into Increased demand for goods and services benefits local businesses.
+**Example**: Microsoft Datacenters in Washington
 
-- **Job creation:**
+- Current Employment: 417 employees
+- Construction Work Hours: Approximately 5.4 million work hours
+- Projected Employment by 2026: 673 full-time employees and contractors
+- Direct employment opportunities: Campus management, people management, learning and development, IT operations, mechanical engineers, electrical engineers, security contractors, building maintenance, and critical environments. 
+- Indirect job creation in:
 
-  - Datacenters generate specialized roles that significantly contribute to the workforce, offering high-value employment opportunities that support the growing infrastructure.
+  - Construction (electricians, plumbers, pipe fitters, carpenters, structural iron and steel workers, concrete workers and earth movers), logistics, and service industries
+  - Secondary economic benefits surpassing lower-wage industries
 
-  - Datacenters require highly skilled professionals such as roles in IT, engineering, and maintenance.
+Many datacenter developers will support initiatives to support pathways into these roles throughout the datacenter lifecycle for the communities they're located particularly in construction and operations.
 
-  - **Example**: Microsoft Datacenters in Washington
+- **Example**: Microsoft's Datacenter Academy
 
-    - Current Employment: 417 employees
-
-    - Construction Work Hours: Approximately 5.4 million work hours
-
-    - Projected Employment by 2026: 673 full-time employees and contractors
-
-    - Direct Employment Opportunities
-
-      - Campus management 
-
-      - People management 
-
-      - Learning and development 
-
-      - IT operations 
-
-      - Mechanical engineers 
-
-      - Electrical engineers 
-
-      - Security contractors 
-
-      - Building maintenance 
-
-      - Critical environments 
-
-    - Indirect Job Creation
-
-      - Construction, logistics, and service industries
-
-      - Secondary economic benefits surpassing lower-wage industries
-
-    - Construction Jobs
-
-      - Electricians 
-
-      - Plumbers and pipe fitters 
-
-      - Carpenters 
-
-      - Structural iron and steel workers 
-
-      - Concrete workers 
-
-      - Earth movers
-
-  - Many datacenter developers will support initiatives to support pathways into these roles throughout the datacenter lifecycle for the communities they're located particularly in construction and operations.
-
-    - **Example**: Microsoft's Datacenter Academy
-
-      - This addresses the skilled labor gap by training local students, ensuring communities are equipped to benefit from high-value job opportunities in the datacenter industry. 
-
-      - The aim is to create a landscape where the community has the flexibility to grow in different directions.
+  - This addresses the skilled labor gap by training local students, ensuring communities are equipped to benefit from high-value job opportunities in the datacenter industry. 
+  - The aim is to create a landscape where the community has the flexibility to grow in different directions.
 
 ## Supporting development of local infrastructure
 
@@ -100,4 +56,4 @@ Better connectivity and internet access for residents, businesses, and schools i
 
   - This initiative aims to bring broadband access to rural and underserved communities in the United States. 
 
-  - By partnering with local internet service providers and applying datacenter infrastructure, the initiative has successfully expanded high speed internet access, benefiting residents, businesses, and schools.
+  - This inititave partners with local internet service providers and applies the datacenter infrastructure to successfully expand high speed internet access, benefiting residents, businesses, and schools.

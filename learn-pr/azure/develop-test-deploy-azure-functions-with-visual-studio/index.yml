@@ -3,20 +3,20 @@ uid: learn.develop-test-deploy-azure-functions-with-visual-studio
 metadata:
   title: Develop, test, and deploy an Azure Function with Visual Studio
   description: Use Visual Studio together with a test framework to create, deploy, and test an Azure Function.
-  ms.date: 03/01/2023
+  ms.date: 05/07/2025
   author: ggailey777
   ms.author: glenga
   manager: mijacobs
   ms.topic: module-standard-task-based
   ms.service: visual-studio-windows
 title: Develop, test, and deploy an Azure Function with Visual Studio
-summary: Create test and deploy Azure Functions using Visual studio and how to manage Azure Function code.
+summary: Create, test, and deploy Azure Functions using Visual Studio and manage Azure Functions code.
 abstract: |
   In this module, you will:
-  - Develop an Azure Function in Visual Studio
-  - Test and debug an Azure Function in Visual Studio
-  -	Deploy an Azure Functions directly from Visual Studio to Azure
-  - Manage Azure Function code
+  - Create an in-process function app in Visual Studio 2022.
+  - Test and debug an Azure Function in Visual Studio.
+  -	Deploy a functions project directly from Visual Studio to Azure.
+  - Manage Azure Functions code.
 prerequisites: |
   - Basic knowledge of Azure Functions
   - Experience developing solutions in Visual Studio or a similar integrated development environment

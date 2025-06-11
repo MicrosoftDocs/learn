@@ -4,8 +4,8 @@ metadata:
   title: "Introduction to analyzing costs and creating budgets with Microsoft Cost Management"
   description: "Learn how to use cost analysis to understand how your costs accrue each month."
   ms.date: 10/22/2024
-  author: bandersmsft
-  ms.author: banders
+  author: tonyafehr
+  ms.author: tfehr
   ms.topic: module
   ms.service: cost-management-billing
   ms.subservice: cost-management

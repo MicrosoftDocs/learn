@@ -11,5 +11,5 @@ Use the Azure portal to delete the **mslearn-scale** resource group from your su
 
 ## Learn more
 
-- [Azure App Service plan overview](/azure/app-service/overview-hosting-plans)
+- [What are Azure App Service plans?](/azure/app-service/overview-hosting-plans)
 - [Scale up an app in Azure](/azure/app-service/web-sites-scale)

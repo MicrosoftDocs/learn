@@ -3,8 +3,8 @@
 
 Before we dive into the primary zones on the datacenter floor plan, it's important we define two commonly used terms in datacenter design and space allocation: grey space and white space.
 
-- White space: Refers to the areas in a datacenter that are dedicated to IT equipment, such as servers, racks, storage devices, and networking equipment. This is the space where customers (or the datacenter operator) can install their hardware.
-- Grey space: Refers to areas within a datacenter that are non-IT space but still play a crucial role in supporting the IT infrastructure. These spaces are generally used for supporting systems like power distribution, cooling, backup systems, and other operational equipment.
+- **White space:** Refers to the areas in a datacenter that are dedicated to IT equipment, such as servers, racks, storage devices, and networking equipment. This is the space where customers (or the datacenter operator) can install their hardware.
+- **Grey space:** Refers to areas within a datacenter that are non-IT space but still play a crucial role in supporting the IT infrastructure. These spaces are generally used for supporting systems like power distribution, cooling, backup systems, and other operational equipment.
 
 When thinking about these zones, it's also important to keep in mind topologies within a datacenter. Datacenter topologies refer to how the IT systems and infrastructure are organized to ensure smooth, reliable, and scalable operations. Think of it as the blueprint for how everything works together in a datacenter.  
 

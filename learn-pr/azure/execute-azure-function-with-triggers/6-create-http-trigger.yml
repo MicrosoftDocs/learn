@@ -4,7 +4,7 @@ title: Exercise - Create an HTTP trigger
 metadata:
   title: Exercise - Create an HTTP trigger and run an Azure Function with an HTTP request
   description: Create an HTTP trigger
-  ms.date: 09/25/2023
+  ms.date: 05/19/2025
   author: ggailey777
   ms.author: glenga
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/6-create-http-trigger.md)]
-
+

@@ -13,7 +13,7 @@ When hosted in the Azure Functions service, identity-based connections use a man
 
 ## Grant permission to the identity
 
-Identities must have permissions to perform the intended actions. This is typically done by assigning a role in Azure role-based access control or specifying the identity in an access policy, depending on the service to which you're connecting. 
+Identities must have permissions to perform the intended actions. This is typically done by assigning a role in Azure role-based access control, or specifying the identity in an access policy depending on the service to which you're connecting. 
 
 > [!IMPORTANT]
-> Some permissions might be exposed by the target service that aren't necessary for all contexts. Where possible, adhere to the **principle of least privilege**, granting the identity only required privileges.
+> The target service might expose some permissions that aren't necessary for all contexts. Where possible, adhere to the **principle of least privilege**, granting the identity only required privileges.
