@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.polish-vision.summary
+
+title: Summary
+metadata:
+  title: Summary
+  description: "Summarize how Microsoft Clipchamp, Designer, and Copilot streamline post-production tasks like editing, visual enhancement, and final video refinement for music videos."
+  ms.date: 4/25/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-summary.md)]

@@ -1,0 +1,5 @@
+In this unit, you learn how to bring your music video to a polished, professional finish using AI-powered postproduction tools. Building on your teaser project from earlier sessions, you use advanced features in **Microsoft Clipchamp**, **Designer**, and **Copilot** to improve your visuals, sound, and storytelling.
+
+You start by reviewing your video and picking out areas to improve—like timing, color consistency, and text overlays. In **Clipchamp**, you apply AI tools for color correction, sync your clips to the beat, and add smooth, cinematic transitions. With **Designer**, you create custom graphics like lower-thirds, animated titles, and end cards that match your video's tone and message. Then, **Copilot** helps you make final changes with smart feedback and real-time suggestions. It helps you fix pacing, try out new effects, and fine-tune your final cut.
+
+By the end of this session, you create a complete, AI-enhanced music video that shows your creative ideas and looks professional. This unit shows how AI tools not only make editing easier, but also help you tell your story more clearly—making high-quality video production easier for everyone.
