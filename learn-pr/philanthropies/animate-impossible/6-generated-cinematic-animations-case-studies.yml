@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.animate-impossible.ai-generated-cinematic-animations-case-studies
+uid: learn.philanthropies.animate-impossible.generated-cinematic-animations-case-studies
 title: AI-Generated cinematic animations - case studies with Sora
 metadata:
   title: AI-Generated Cinematic Animations - Case Studies with Sora
@@ -11,4 +11,4 @@ metadata:
   
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-ai-generated-cinematic-animations-case-studies.md)]
+  [!include[](includes/6-generated-cinematic-animations-case-studies.md)]

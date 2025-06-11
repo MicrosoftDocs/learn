@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.animate-impossible.2d-animation-concept-visualization-using-ai
+uid: learn.philanthropies.animate-impossible.animation-concept-visualization
 title: 2D animation concept visualization using AI
 metadata:
   title: 2D Animation Concept Visualization Using AI
@@ -12,4 +12,4 @@ metadata:
   
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-2d-animation-concept-visualization-using-ai.md)]
+  [!include[](includes/5-animation-concept-visualization.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.animate-impossible.sora-motion-simulation-ai-generated-video
+uid: learn.philanthropies.animate-impossible.motion-simulation-generated-video
 title: Sora and motion simulation in AI-generated video
 metadata:
   title: Sora and Motion Simulation in AI-Generated Video
@@ -12,4 +12,4 @@ metadata:
   
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-sora-motion-simulation-ai-generated-video.md)]
+  [!include[](includes/3-motion-simulation-generated-video.md)]

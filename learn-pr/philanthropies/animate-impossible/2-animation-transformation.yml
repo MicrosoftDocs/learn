@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.animate-impossible.sora-animation-transformation
+uid: learn.philanthropies.animate-impossible.animation-transformation
 title: Sora for animation transformation
 metadata:
   title: Sora for Animation Transformation
@@ -12,4 +12,4 @@ metadata:
   
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-sora-animation-transformation.md)]
+  [!include[](includes/2-animation-transformation.md)]

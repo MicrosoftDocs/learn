@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.animate-impossible.ai-enhanced-animations-transformation
+uid: learn.philanthropies.animate-impossible.enhanced-animations-transformation
 title: AI-Enhanced animations before and after transformation
 metadata:
   title: AI-Enhanced Animations Before and After Transformation
@@ -12,4 +12,4 @@ metadata:
   
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-ai-enhanced-animations-transformation.md)]
+  [!include[](includes/4-enhanced-animations-transformation.md)]
