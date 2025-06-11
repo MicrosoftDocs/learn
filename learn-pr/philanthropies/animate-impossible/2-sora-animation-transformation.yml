@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.animate-the-impossible.sora-animation-transformation
+title: Sora for animation transformation
+metadata:
+  title: Sora for Animation Transformation
+  description: "In this unit, learners discover how Sora enhances animation workflows by generating motion, interpolating frames, and refining animation quality. Learners explore how AI tools reduce manual effort while improving fluidity and creative expression in animated projects. Keywords: Sora, AI animation tools, frame interpolation, motion generation, animation refinement."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-sora-animation-transformation.md)]

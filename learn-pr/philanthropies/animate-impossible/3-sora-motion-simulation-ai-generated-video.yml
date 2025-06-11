@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.animate-the-impossible.sora-motion-simulation-ai-generated-video
+title: Sora and motion simulation in AI-generated video
+metadata:
+  title: Sora and Motion Simulation in AI-Generated Video
+  description: "In this unit, learners explore how Sora can simulate cinematic motion from text and image prompts. Learners use Sora to generate fluid, AI-driven video sequences, and experiment with storytelling through motion-rich content. Keywords: motion simulation, cinematic AI video, Sora, text-to-video, visual storytelling."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-sora-motion-simulation-ai-generated-video.md)]

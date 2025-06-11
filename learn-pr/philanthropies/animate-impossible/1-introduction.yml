@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.animate-the-impossible.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "In this unit, learners explore how Microsoft Sora enhances traditional animation workflows by smoothing motion, generating frame interpolation, and simulating 3D depth from 2D assets. Learners explore how AI tools accelerate animation quality improvements and storytelling impact. Keywords: Microsoft Sora, AI animation enhancement, frame interpolation, 2D to 3D animation, animation post-production."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+ 
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]
