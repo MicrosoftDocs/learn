@@ -40,11 +40,11 @@ subjects:
 
 units:
 - learn.philanthropies.animate-impossible.introduction
-- learn.philanthropies.animate-impossible.sora-animation-transformation
-- learn.philanthropies.animate-impossible.sora-motion-simulation-ai-generated-video
-- learn.philanthropies.animate-impossible.ai-enhanced-animations-transformation
-- learn.philanthropies.animate-impossible.2d-animation-concept-visualization-using-ai
-- learn.philanthropies.animate-impossible.ai-generated-cinematic-animations-case-studies
+- learn.philanthropies.animate-impossible.animation-transformation
+- learn.philanthropies.animate-impossible.motion-simulation-generated-video
+- learn.philanthropies.animate-impossible.enhanced-animations-transformation
+- learn.philanthropies.animate-impossible.animation-concept-visualization
+- learn.philanthropies.animate-impossible.generated-cinematic-animations-case-studies
 - learn.philanthropies.animate-impossible.exercise
 - learn.philanthropies.animate-impossible.knowledge-check
 - learn.philanthropies.animate-impossible.summary
