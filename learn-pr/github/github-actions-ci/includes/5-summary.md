@@ -10,11 +10,9 @@ You can now:
   - Test against multiple targets.
   - Add labels to your pull requests.
 
-## Next step
+To continue your journey with GitHub Actions, *check out the next module in the learning path*. You can expand on what you learned here and use GitHub Actions for continuous delivery and implementing infrastructure as code.
 
-To continue your journey with GitHub Actions, check out the next module on this learning path. You can expand on what you learned here and use GitHub Actions for continuous delivery and implementing infrastructure as code.
-
-## Learn more
+## Related content
 
 Here are some links to more information on the subjects described in this module:
 
