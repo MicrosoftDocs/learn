@@ -48373,6 +48373,56 @@
       "source_path": "learn-pr/azure/write-first-query-kusto-query-language/11-summary.md",
       "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/index.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/1-introduction.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/2-multi-table-queries.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/3-exercise-connect-to-resources.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/4-exercise-join-types.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/5-exercise-lookup.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/6-exercise-union.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/7-exercise-materialize.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/8-knowledge-check.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/9-summary.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
     }
   ]
 }

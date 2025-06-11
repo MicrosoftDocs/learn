@@ -5,6 +5,11 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.multi-table-queries-with-kusto-query-language.badge
+  type: badge
+  title: Write multi-table queries by using Kusto Query Language
+  summary: Write advanced queries in Kusto Query Language and gain deeper insights by combining data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, and `materialize`, and the new aggregation functions `arg_min` and `arg_max`. Also, learn how to communicate these results visually in charts.
+  iconUrl: /training/achievements/multi-table-queries-with-kusto-query-language.svg
 - uid: learn.write-first-query-kusto-query-language.badge
   type: badge
   title: Write your first query with Kusto Query Language
