@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.build-vision.using-microsoft-copilot-for-content-creation
+title: Using Microsoft Copilot for content creation
+metadata:
+  title: Using Microsoft Copilot for Content Creation
+  description: "Use Microsoft Copilot, Clipchamp, and Designer to automate tasks, enhance visuals, and streamline the creative process in media production. Keywords: AI media production, Microsoft Copilot, Clipchamp, Microsoft Designer, AI video editing, AI creative workflows."
+  ms.date: 3/20/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-using-microsoft-copilot-for-content-creation.md)]

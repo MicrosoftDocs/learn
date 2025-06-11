@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.philanthropies.build-vision
+metadata:
+  title: Build the Vision - Visual Content Creation with Copilot, Designer & Clipchamp
+  description: "Evaluate how Microsoft Copilot, Designer, and Clipchamp streamline image generation, video editing, and media enhancement tasks for music video production."
+  ms.date: 4/25/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: module-intro-to-product
+  ms.service: artificial-intelligence
+
+title: Build the vision - visual content creation with Copilot, Designer & Clipchamp
+
+summary: "Characterize the types of (visual creation and editing tasks) that (Microsoft Copilot, Designer, and Clipchamp) can (streamline for music video production). Describe the function of (image generation, video editing, scene enhancement, and creative refinement) that (accelerate visual production workflows and media asset polishing)."
+
+abstract: |
+  By the end of this module, you can:
+  - Evaluate whether Microsoft Copilot, Designer, and Clipchamp are appropriate to streamline visual creation and editing workflows for music video projects.
+  - Describe how image generation, video editing, and AI-powered media enhancement features help accelerate production and elevate creative outputs.
+
+prerequisites: |
+  - Familiarity with Digital Tools and Creative Software
+  - Basic Understanding of Music Video Storyboarding and Pre-Production
+
+iconUrl: /learn/achievements/generic-badge.svg
+
+levels:
+  - beginner
+
+roles:
+  - student
+  - maker
+  - k-12-educator
+  - business-user
+  - higher-ed-educator
+
+products:
+  - ms-copilot
+  - ai-services
+
+subjects:
+  - artificial-intelligence
+
+units:
+- learn.philanthropies.build-vision.introduction
+- learn.philanthropies.build-vision.ai-media-production
+- learn.philanthropies.build-vision.using-microsoft-copilot-content-creation
+- learn.philanthropies.build-vision.enhancing-videos-clipchamp
+- learn.philanthropies.build-vision.microsoft-designer-music-video-production
+- learn.philanthropies.build-vision.integrating-ai-bring-creative-concepts-life
+- learn.philanthropies.build-vision.knowledge-check
+- learn.philanthropies.build-vision.exercise
+- learn.philanthropies.build-vision.summary
+
+badge:
+  uid: learn.philanthropies.build-vision.badge

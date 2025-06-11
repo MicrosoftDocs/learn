@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.build-vision.enhancing-videos-with-clipchamp
+
+title: Enhancing videos with Clipchamp
+metadata:
+  title: Enhancing Videos with Clipchamp
+  description: "Use Clipchamp's AI-powered tools to automate video editing, enhance scene transitions, and improve audio-visual quality for professional media production. Keywords: Clipchamp, AI video editing, auto composition, intelligent scene recognition, AI media production, video enhancement."
+  ms.date: 3/20/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-enhancing-videos-with-clipchamp.md)]
