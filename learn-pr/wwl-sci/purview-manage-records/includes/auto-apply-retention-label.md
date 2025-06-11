@@ -2,7 +2,7 @@ Automatic retention helps your organization manage content consistently and redu
 
 ## What is automatic retention?
 
-Automatic retention uses conditions like sensitive information types, keywords, or trainable classifiers to identify content and apply the appropriate retention label. This reduces the need for user training and improves the consistency of retention across Microsoft 365 services. Once a label is applied automatically, it can't be removed or replaced by another auto-apply policy.
+Automatic retention uses conditions like sensitive information types, keywords, or trainable classifiers to identify content and apply the appropriate retention label. This reduces the need for user training and improves the consistency of retention across Microsoft 365 services. Once a label is applied, either manually or automatically, it can't be removed or replaced by another auto-apply policy.
 
 Benefits include:
 
@@ -20,7 +20,7 @@ Simulation mode helps you:
 - Adjust your policy before it's active
 - Scale the policy gradually by starting with smaller scopes
 
-Simulation results are visible for up to seven days. Policies using trainable classifiers can't use simulation mode.
+Simulation results are visible for up to seven days. It's available for policies using sensitive information types or keywords, but not for those using trainable classifiers.
 
 ## Before you begin
 
