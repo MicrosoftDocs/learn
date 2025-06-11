@@ -23,7 +23,7 @@ The table below shows what users can and can't do based on the label type:
 | Change label | Allowed | Container admin only | **Blocked** | **Blocked** |
 | Remove label | Allowed | Container admin only | **Blocked** | **Blocked** |
 
-<sup>1</sup> Editing properties for a locked record is allowed by default, but this setting can be disabled. <sup>2</sup> Deletion can be blocked at the tenant level. <sup>3</sup> Containers include SharePoint sites and Exchange mailboxes.
+<sup>1</sup> Editing properties for a locked record is allowed by default, but this setting can be disabled. <br><sup>2</sup> Deletion can be blocked at the tenant level. <br><sup>3</sup> Containers include SharePoint sites and Exchange mailboxes.
 
 ### Edit record properties
 
