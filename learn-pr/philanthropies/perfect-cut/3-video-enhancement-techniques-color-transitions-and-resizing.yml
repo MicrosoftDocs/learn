@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.perfect-cut.video-enhancement-techniques-color-transitions-resizing
+title: Video enhancement techniques - color, transitions, and resizing
+metadata:
+  title: Video Enhancement Techniques - Color, Transitions, and Resizing
+  description: "In this unit, learners use Microsoft Clipchamp to enhance animation sequences through AI-powered color correction, automated transitions, and intelligent resizing for multiple formats. They refine animations to achieve a polished, platform-ready final product. Keywords: Microsoft Clipchamp, AI video editing, color correction, video resizing, animation post-production."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-video-enhancement-techniques-color-transitions-resizing.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.perfect-cut.final-animation-review-export
+title: Final Animation Review and Export
+metadata:
+  title: Final Animation Review and Export
+  description: "In this unit, learners finalize their animation projects by reviewing playback quality, optimizing export settings, and reflecting on how AI-enhanced tools streamlined their creative workflows. Learners prepare polished animations ready for sharing across multiple platforms. Keywords: animation final review, video export, Microsoft Clipchamp, AI-enhanced workflow, animation publishing."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-final-animation-review-export.md)]

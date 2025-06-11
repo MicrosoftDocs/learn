@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.perfect-cut.video-editing-enhancement-microsoft-clipchamp
+title: Video editing and enhancement with Microsoft Clipchamp
+metadata:
+  title: Video Editing and Enhancement with Microsoft Clipchamp
+  description: "In this unit, learners explore how Microsoft Clipchamp supports animation post-production with AI-powered editing tools. Learners use features like color grading, autotransitions, intelligent resizing, and audio enhancement to polish and finalize animated projects. Keywords: Microsoft Clipchamp, AI video editing, animation post-production, color grading, scene transitions."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-video-editing-enhancement-microsoft-clipchamp.md)]
