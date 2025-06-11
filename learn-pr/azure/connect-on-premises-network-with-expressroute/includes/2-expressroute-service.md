@@ -21,7 +21,7 @@ ExpressRoute provides Layer 3 (address-level) connectivity between your on-premi
 
 ### Built-in redundancy
 
-Each connectivity provider uses redundant devices to ensure that connections established with Microsoft are highly available. You can configure multiple circuits to complement this feature. All redundant connections are configured with Layer 3 connectivity to meet SLAs.
+Each connectivity provider uses redundant devices to ensure that connections established with Microsoft are highly available. You can configure multiple circuits to complement this feature. All redundant connections are configured with Layer 3 connectivity to meet service level agreements (SLAs).
 
 ### Connectivity to Microsoft cloud services
 
@@ -68,4 +68,4 @@ With any-to-any connections, all WAN providers offer Layer 3 connectivity. For e
 
 ## Security considerations
 
-With ExpressRoute, your data doesn’t travel over the public internet, so it's not exposed to the potential risks associated with internet communications. ExpressRoute is a private connection from your on-premises infrastructure to your Azure infrastructure. However, even if you have an ExpressRoute connection, certain requests are still sent over the public internet. Including, DNS queries, certificate revocation list checking, and Azure Content Delivery Network requests.
+With ExpressRoute, your data doesn’t travel over the public internet, so it isn't exposed to the potential risks associated with internet communications. ExpressRoute is a private connection from your on-premises infrastructure to your Azure infrastructure. However, even if you have an ExpressRoute connection, certain requests are still sent over the public internet. Including, Domain Name System (DNS) queries, certificate revocation list checking, and Azure Content Delivery Network requests.
