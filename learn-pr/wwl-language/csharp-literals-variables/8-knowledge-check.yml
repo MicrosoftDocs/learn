@@ -3,10 +3,10 @@ uid: learn.languages.csharp-literals-variables.knowledge-check
 title: Module assessment
 metadata:
   hidden_question_numbers: ["7EA2E379_10","7EA2E379_38","7EA2E379_51","7EA2E379_55","7EA2E379_100","7EA2E379_104","7EA2E379_108","7EA2E379_112","7EA2E379_116","7EA2E379_120","7EA2E379_88","7EA2E379_92","7EA2E379_96"]
-  ai_generated_module_assessment: true
+  ai_generated_module_assessment: false
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 01/17/2025
+  ms.date: 06/11/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
