@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.ha-application-storage-with-grs.5-exercise-deploy-ha-application
 metadata:
-  title: Exercise - Deploy a highly available application
+  title: Exercise - Deploy a Highly Available Application
   description: In this unit, you learn how to deploy and test a highly available application.
-  ms.date: 10/21/2024
+  ms.date: 06/02/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
 title: Exercise - Deploy a highly available application
+interactive: bash
 azureSandbox: true
 durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-deploy-ha-application.md)]
-
+

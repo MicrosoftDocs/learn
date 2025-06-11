@@ -5,8 +5,8 @@ metadata:
   title: Manage and monitor Azure savings plan for compute
   description: Manage and monitor Azure savings plan for compute.
   ms.date: 11/14/2024
-  author: bandersmsft
-  ms.author: banders
+  author: tonyafehr
+  ms.author: tfehr
   ms.reviewer: onwokolo
   ms.topic: unit
   ms.custom:
