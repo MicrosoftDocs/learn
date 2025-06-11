@@ -16,7 +16,7 @@ This workplace evolution leads to the following changes in information technolog
 - Shared devices such as retail point of sale devices and ruggedized devices are more common.
 - Specialized devices such as digital interactive whiteboards, conference room devices, and holographic wearable computers are more common.
 - Devices that were corporate-owned can now belong to users or the corporation.
-- Legacy apps on the corporate network are now joined by cloud-managed and software-as-a-service (SaaS) apps.
+- Cloud-managed and software-as-a-service (SaaS) apps join Legacy apps on the corporate network.
 - IT admins are moving from manual, reactive processes toward automated, proactive processes.
 - Instead of providing high-touch support environments, organizations now provide self-service solutions.
 
