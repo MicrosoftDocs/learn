@@ -48548,6 +48548,51 @@
       "source_path": "learn-pr/azure/secure-your-azure-sql-database/7-summary.md",
       "redirect_url": "/training/paths/secure-your-cloud-data/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-performance-enhancements/index.md",
+      "redirect_url": "/training/paths/get-started-querying-with-transact-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-performance-enhancements/1-introduction.md",
+      "redirect_url": "/training/paths/get-started-querying-with-transact-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-performance-enhancements/2-memory-feedback.md",
+      "redirect_url": "/training/paths/get-started-querying-with-transact-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-performance-enhancements/3-memory-feedback-exercise.md",
+      "redirect_url": "/training/paths/get-started-querying-with-transact-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-performance-enhancements/4-parameter-sensitive-plan.md",
+      "redirect_url": "/training/paths/get-started-querying-with-transact-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-performance-enhancements/5-parameter-sensitive-plan-exercise.md",
+      "redirect_url": "/training/paths/get-started-querying-with-transact-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-performance-enhancements/6-degree-of-parallelism.md",
+      "redirect_url": "/training/paths/get-started-querying-with-transact-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-performance-enhancements/7-degree-of-parallelism-exercise.md",
+      "redirect_url": "/training/paths/get-started-querying-with-transact-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-performance-enhancements/8-summary.md",
+      "redirect_url": "/training/paths/get-started-querying-with-transact-sql/",
+      "redirect_document_id": false
     }
 ]
 }
