@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.philanthropies.animate-the-impossible
+uid: learn.philanthropies.animate-impossible
 metadata:
   title: Animate the Impossible - 2D/3D Motion Techniques with Sora
   description: "Explore how Sora enables AI-powered enhancements to traditional 2D animation workflows, including motion smoothing, frame interpolation, and 2D-to-3D transformation techniques."
@@ -39,15 +39,15 @@ subjects:
   - artificial-intelligence
 
 units:
-- learn.philanthropies.animate-the-impossible.introduction
-- learn.philanthropies.animate-the-impossible.sora-animation-transformation
-- learn.philanthropies.animate-the-impossible.sora-motion-simulation-ai-generated-video
-- learn.philanthropies.animate-the-impossible.ai-enhanced-animations-transformation
-- learn.philanthropies.animate-the-impossible.2d-animation-concept-visualization-using-ai
-- learn.philanthropies.animate-the-impossible.ai-generated-cinematic-animations-case-studies
-- learn.philanthropies.animate-the-impossible.exercise
-- learn.philanthropies.animate-the-impossible.knowledge-check
-- learn.philanthropies.animate-the-impossible.summary
+- learn.philanthropies.animate-impossible.introduction
+- learn.philanthropies.animate-impossible.sora-animation-transformation
+- learn.philanthropies.animate-impossible.sora-motion-simulation-ai-generated-video
+- learn.philanthropies.animate-impossible.ai-enhanced-animations-transformation
+- learn.philanthropies.animate-impossible.2d-animation-concept-visualization-using-ai
+- learn.philanthropies.animate-impossible.ai-generated-cinematic-animations-case-studies
+- learn.philanthropies.animate-impossible.exercise
+- learn.philanthropies.animate-impossible.knowledge-check
+- learn.philanthropies.animate-impossible.summary
 
 badge:
-  uid: learn.philanthropies.animate-the-impossible.badge
+  uid: learn.philanthropies.animate-impossible.badge
