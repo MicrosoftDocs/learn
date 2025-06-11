@@ -2,7 +2,7 @@
 uid: learn.languages.csharp-write-first.knowledge-check
 title: Module assessment
 metadata:
-  hidden_question_numbers: ["79301B93_14","79301B93_26","79301B93_47","79301B93_128"]
+  hidden_question_numbers: ["6B3CA1CB_14","6B3CA1CB_26","6B3CA1CB_108","6B3CA1CB_120","6B3CA1CB_124","6B3CA1CB_128","6B3CA1CB_88","6B3CA1CB_96"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the primary job of the compiler?"
+  - content: "What is the primary job of the compiler?" 
     choices:
     - content: "The compiler primarily locates spelling mistakes in your code."
       isCorrect: false

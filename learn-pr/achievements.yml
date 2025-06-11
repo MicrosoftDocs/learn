@@ -5,6 +5,26 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.react-to-state-changes-using-event-grid.badge
+  type: badge
+  title: React to state changes in your Azure services by using Event Grid
+  summary: Build a serverless application architecture, automate your operations, and integrate applications by handling Azure events with Event Grid.
+  iconUrl: /training/achievements/react-to-state-changes-using-event-grid.svg
+- uid: learn.azure-sql-case-studies.badge
+  type: badge
+  title: Putting it all together with Azure SQL
+  summary: In this learning path, you've deployed and configured a secure, performant, and highly available solution by using Azure SQL. There are many elements in a single solution. In this module, you'll learn how to take the business scenario and determine the best resources and processes to satisfy requirements while considering the constraints within the scenario. You'll also learn what else you should consider with Azure SQL and opportunities in the cloud.
+  iconUrl: /training/achievements/azure-sql-case-studies.svg
+- uid: learn.multi-table-queries-with-kusto-query-language.badge
+  type: badge
+  title: Write multi-table queries by using Kusto Query Language
+  summary: Write advanced queries in Kusto Query Language and gain deeper insights by combining data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, and `materialize`, and the new aggregation functions `arg_min` and `arg_max`. Also, learn how to communicate these results visually in charts.
+  iconUrl: /training/achievements/multi-table-queries-with-kusto-query-language.svg
+- uid: learn.write-first-query-kusto-query-language.badge
+  type: badge
+  title: Write your first query with Kusto Query Language
+  summary: Learn how to write simple queries in Kusto Query Language (KQL) by using the operators take, project, count, where, and sort. 
+  iconUrl: /training/achievements/write-first-query-kusto-query-language.svg 
 - uid: learn.send-crop-weather-alerts.badge
   type: badge
   title: Use Twilio and Azure Maps to receive text message weather alerts 
@@ -5735,3 +5755,33 @@ achievements:
   title: Make recommendations with Azure AI Personalizer
   summary: Learn how to use Azure AI Personalizer to empower your apps with smarter decision making through improved recommendations.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.apply-prompt-engineering-azure-openai.badge
+  type: badge
+  title: Apply prompt engineering with Azure OpenAI Service
+  summary: Prompt engineering in Azure OpenAI is a technique that involves designing prompts for natural language processing models. This process improves accuracy and relevancy in responses, optimizing the performance of the model.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.build-language-solution-azure-openai.badge
+  type: badge
+  title: Build natural language solutions with Azure OpenAI Service
+  summary: This module provides engineers with the skills to begin building apps that integrate with the Azure OpenAI Service.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.generate-code-azure-openai.badge
+  type: badge
+  title: Generate code with Azure OpenAI Service
+  summary: This module shows engineers how to use the Azure OpenAI Service to generate and improve code.
+  iconUrl: /learn/achievements/generic-badge.svgz
+- uid: learn.azure.cloud-adoption-framework-plan.badge
+  type: badge
+  title: Prepare for cloud adoption with a data-driven plan
+  summary: Adopting the cloud might depend on many moving parts. Starting with a sound plan built by experts creates clarity. Integrating data about your current environment and long-term objectives refines the plan to reflect realistic expectations and assignments.
+  iconUrl: /training/achievements/cloud-adoption-framework-plan.svg
+- uid: learn.azure.create-content-delivery-network-azure-cdn-blob-services.badge
+  type: badge
+  title: Create a Content Delivery Network for your Website with Azure CDN and Blob Services
+  summary: You learned how to publish static web content using an Azure Content Delivery Network (CDN) and Azure Blob Services.
+  iconUrl: /training/achievements/create-cdn-static-resources-blob-storage.svg
+- uid: learn.design-a-hybrid-network-architecture.badge
+  type: badge
+  title: Design a hybrid network architecture on Azure
+  summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
+  iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg

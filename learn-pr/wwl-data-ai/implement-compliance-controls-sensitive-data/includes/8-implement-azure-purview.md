@@ -8,11 +8,11 @@ Microsoft Purview automates data discovery by providing data scanning and classi
 
 ## Supported capabilities
 
-Understanding the location and movement of sensitive data across the entire data domain is one of the main features of Azure Purview for Azure SQL Database.
+Understanding the location and movement of sensitive data across the entire data domain is one of the main features of Microsoft Purview for Azure SQL Database.
 
 ### Create a unified map of data across the entire data domain
 
-Azure Purview helps you lay the foundation for effective data management, including the following capabilities:
+Microsoft Purview helps you lay the foundation for effective data management, including the following capabilities:
 
 - Automate and manage hybrid resource metadata.
 - Classify data using integrated and custom classifications and information protection sensitivity labels.
@@ -40,7 +40,7 @@ Microsoft Purview provides a comprehensive view of your data management operatio
 - Receive status updates on the number of scans that passed, failed, or canceled.
 - Get key insights to add or redistribute glossary terms for better search results.
 
-:::image type="content" source="../media/dp-3300-module-33-lab-42.png" alt-text="Screenshot of the Azure Purview classification insights page showing different classification charts.":::
+:::image type="content" source="../media/dp-3300-module-33-lab-42.png" alt-text="Screenshot of the Microsoft Purview classification insights page showing different classification charts.":::
 
 ## Requirements
 
@@ -84,9 +84,9 @@ To scan your data source, you need to configure an authentication method in the 
 >[!NOTE]
 >If you're using a self-hosted integration runtime to connect to your resource, system-assigned and user-assigned managed identities won't work. You need to use service principal authentication or SQL authentication.
 
-## Register and scan SQL Database using Azure Purview
+## Register and scan SQL Database using Microsoft Purview
 
-This section enables you to register the Azure SQL Database data source and set up a scan. 
+This section enables you to register the Azure SQL Database data source and set up a scan.
 
 ### Register the data source
 
@@ -155,19 +155,19 @@ To scope and run the scan, follow these steps:
 
 1. You can then select the classification rules to be included in the scan rule, and then select **Create**.
  
-    :::image type="content" source="../media/dp-3300-module-33-lab-60.png" alt-text="Screenshot of the scan rule set classification rules for Azure Purview.":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-60.png" alt-text="Screenshot of the scan rule set classification rules for Microsoft Purview.":::
  
 1. The **Select a scan rule set** page will the scan rule set you've created. 
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-61.png" alt-text="Screenshot of the scan rule set selection for Azure Purview.":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-61.png" alt-text="Screenshot of the scan rule set selection for Microsoft Purview.":::
 
 1. On the **Set a scan trigger** page, configure your scan trigger. Select **Continue**.
  
-    :::image type="content" source="../media/dp-3300-module-33-lab-62.png" alt-text="Screenshot of the scan trigger option for Azure Purview.":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-62.png" alt-text="Screenshot of the scan trigger option for Microsoft Purview.":::
 
 1. Review your scan, and then select **Save and run**.
  
-    :::image type="content" source="../media/dp-3300-module-33-lab-63.png" alt-text="Screenshot of review scan page for Azure Purview.":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-63.png" alt-text="Screenshot of review scan page for Microsoft Purview.":::
 
 ## Data lineage
 

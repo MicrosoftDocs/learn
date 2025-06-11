@@ -53,7 +53,7 @@ Simplifying the example sentence, you can provide the following input to an RNN:
 
 :::image type="content" source="../media/vincent-tokenized.png" alt-text="Diagram showing the sentence tokenized to present the most important words in a sentence as individual tokens.":::
 
-The RNN takes each token as an input, processes it, and update the hidden state with a memory of that token. When the next token is processed as new input, the hidden state from the previous step is updated.
+The RNN takes each token as an input, processes it, and updates the hidden state with a memory of that token. When the next token is processed as new input, the hidden state from the previous step is updated.
 
 Finally, the last token is presented as input to the model, namely the `[MASK]` token. Indicating that there's information missing and the model needs to predict its value. The RNN then uses the hidden state to predict that the output should be something like `Starry Night`
 
