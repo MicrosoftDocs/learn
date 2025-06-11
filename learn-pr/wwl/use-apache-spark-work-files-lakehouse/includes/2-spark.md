@@ -22,9 +22,9 @@ Microsoft Fabric provides a *starter pool* in each workspace, enabling Spark job
 Additionally, you can create custom Spark pools with specific node configurations that support your particular data processing needs.
 
 > [!NOTE]
-> The ability to customize Spark pool settings can be disabled by Fabric administrators at the Fabric Capacity level. For more information, see **[Capacity administration settings for Data Engineering and Data Science](/fabric/data-engineering/capacity-settings-overview)** in the Fabric documentation.
+> The ability to customize Spark pool settings can be disabled by Fabric administrators at the Fabric Capacity level. For more information, see **[Capacity administration settings for Data Engineering and Data Science](/fabric/data-engineering/capacity-settings-overview?azure-portal=true)** in the Fabric documentation.
 
-You can manage settings for the starter pool and create new Spark pools in the **Data Engineering/Science** section of the workspace settings.
+You can manage settings for the starter pool and create new Spark pools in the **Admin portal** section of the workspace settings, under **Capacity settings**, then **Data Engineering/Science Settings.**
 
 ![Screenshot of the Spark settings page in Microsoft Fabric.](../media/spark-settings.png)
 
@@ -37,7 +37,7 @@ Specific configuration settings for Spark pools include:
 If you create one or more custom Spark pools in a workspace, you can set one of them (or the starter pool) as the default pool to be used if a specific pool is not specified for a given Spark job.
 
 > [!TIP]
-> For more information about managing Spark pools in Microsoft Fabric, see **[Configuring starter pools in Microsoft Fabric](/fabric/data-engineering/configure-starter-pools)** and **[How to create custom Spark pools in Microsoft Fabric](/fabric/data-engineering/create-custom-spark-pools)** in the Microsoft Fabric documentation.
+> For more information about managing Spark pools in Microsoft Fabric, see **[Configuring starter pools in Microsoft Fabric](/fabric/data-engineering/configure-starter-pools?azure-portal=true)** and **[How to create custom Spark pools in Microsoft Fabric](/fabric/data-engineering/create-custom-spark-pools?azure-portal=true)** in the Microsoft Fabric documentation.
 
 ## Runtimes and environments
 
@@ -50,7 +50,7 @@ In some cases, organizations may need to define multiple *environments* to suppo
 Microsoft Fabric supports multiple Spark runtimes, and will continue to add support for new runtimes as they are released. You can use the workspace settings interface to specify the Spark runtime that is used by default environment when a Spark pool is started.
 
 > [!TIP]
-> For more information about Spark runtimes in Microsoft Fabric, see **[Apache Spark Runtimes in Fabric](/fabric/data-engineering/runtime)** in the Microsoft Fabric documentation.
+> For more information about Spark runtimes in Microsoft Fabric, see **[Apache Spark Runtimes in Fabric](/fabric/data-engineering/runtime?azure-portal=true)** in the Microsoft Fabric documentation.
 
 ### Environments in Microsoft Fabric
 
@@ -71,7 +71,7 @@ When creating an environment, you can:
 After creating at least one custom environment, you can specify it as the default environment in the workspace settings.
 
 > [!TIP]
-> For more information about using custom environments in Microsoft Fabric, see **[Create, configure, and use an environment in Microsoft Fabric](/fabric/data-engineering/create-and-use-environment)** in the Microsoft Fabric documentation.
+> For more information about using custom environments in Microsoft Fabric, see **[Create, configure, and use an environment in Microsoft Fabric](/fabric/data-engineering/create-and-use-environment=azure-portal=true)** in the Microsoft Fabric documentation.
 
 ## Additional Spark configuration options
 
@@ -99,7 +99,7 @@ To enable the native execution engine for a specific script or notebook, you can
 ```
 
 > [!TIP]
-> For more information about the native execution engine, see **[Native execution engine for Fabric Spark](/fabric/data-engineering/native-execution-engine-overview)** in the Microsoft Fabric documentation.
+> For more information about the native execution engine, see **[Native execution engine for Fabric Spark](/fabric/data-engineering/native-execution-engine-overview?azure-portal=true)** in the Microsoft Fabric documentation.
 
 ### High concurrency mode
 
@@ -108,7 +108,7 @@ When you run Spark code in Microsoft Fabric, a Spark session is initiated. You c
 To enable high concurrency mode, use the **Data Engineering/Science** section of the workspace settings interface.
 
 > [!TIP]
-> For more information about high concurrency mode, see **[High concurrency mode in Apache Spark for Fabric](/fabric/data-engineering/high-concurrency-overview)** in the Microsoft Fabric documentation.
+> For more information about high concurrency mode, see **[High concurrency mode in Apache Spark for Fabric](/fabric/data-engineering/high-concurrency-overview?azure-portal=true)** in the Microsoft Fabric documentation.
 
 ### Automatic MLFlow logging
 
@@ -119,5 +119,5 @@ MLFlow is an open source library that is used in data science workloads to manag
 Administrators can manage Spark settings at a Fabric capacity level, enabling them to restrict and override Spark settings in workspaces within an organization.
 
 > [!TIP]
-> For more information about managing Spark configuration at the Fabric capacity level, see **[Configure and manage data engineering and data science settings for Fabric capacities](/fabric/data-engineering/capacity-settings-management)** in the Microsoft Fabric documentation.
+> For more information about managing Spark configuration at the Fabric capacity level, see **[Configure and manage data engineering and data science settings for Fabric capacities](/fabric/data-engineering/capacity-settings-management?azure-portal-true)** in the Microsoft Fabric documentation.
 

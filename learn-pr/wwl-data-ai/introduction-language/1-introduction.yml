@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-language.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 5/23/2025
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check about configuring language models."
-  ms.date: 03/26/2025
+  ms.date: 05/23/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
@@ -42,7 +42,7 @@ quiz:
     - content: "Only managed compute"
       isCorrect: false
       explanation: "Incorrect. Managed compute is charged per-minute."
-    - content: "Either Azure OpenAI or Azure AI Model Inferencing Service"
+    - content: "Either Azure OpenAI or Azure AI Foundry Models"
       isCorrect: true
       explanation: "Correct. You can deploy OpenAI models to either Azure OpenAI service or Azure AI Model Inferencing Service."
 

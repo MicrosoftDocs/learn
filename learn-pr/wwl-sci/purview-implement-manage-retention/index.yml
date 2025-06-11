@@ -3,7 +3,7 @@ uid: learn.wwl.purview-implement-manage-retention
 metadata:
   title: Implement and manage retention with Microsoft Purview
   description: "Implement and manage retention with Microsoft Purview."
-  ms.date: 05/19/2025
+  ms.date: 06/10/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -18,8 +18,6 @@ abstract: |
   - Configure retention policies.
   - Create, publish, and automate retention labels.
   - Implement event-based retention.
-  - Configure adaptive and static scopes.
-  - Declare items as records and manage them through disposition reviews.
 prerequisites: |
   - Basic understanding of data management concepts.
   - Familiarity with the Microsoft Purview portal.
@@ -41,9 +39,6 @@ units:
 - learn.wwl.purview-implement-manage-retention.create-publish-retention-label
 - learn.wwl.purview-implement-manage-retention.apply-retention-labels
 - learn.wwl.purview-implement-manage-retention.configure-event-based-retention
-- learn.wwl.purview-implement-manage-retention.auto-apply-retention-label
-- learn.wwl.purview-implement-manage-retention.declare-record
-- learn.wwl.purview-implement-manage-retention.disposition-review
 - learn.wwl.purview-implement-manage-retention.knowledge-check
 - learn.wwl.purview-implement-manage-retention.summary
 badge:
