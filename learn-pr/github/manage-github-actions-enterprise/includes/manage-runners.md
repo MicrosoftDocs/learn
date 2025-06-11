@@ -1,4 +1,4 @@
-In this section, you'll explore the different tools and strategies available to you in GitHub Enterprise Cloud and GitHub Enterprise Server to manage the use of GitHub Actions runners in your enterprise.
+In this section, you explore the different tools and strategies available to you in GitHub Enterprise Cloud and GitHub Enterprise Server to manage the use of GitHub Actions runners in your enterprise.
 
 ## Choose an appropriate runner for your workload
 
@@ -20,13 +20,13 @@ The following table compares GitHub-hosted runners versus self-hosted runners. U
 
 ## Manage runners for the enterprise
 
-Managing runners for the enterprise involves configuring and securing both GitHub-hosted and self-hosted runners to ensure efficient and secure CI/CD workflows. This includes setting up IP allowlists to control access, enhancing security by restricting runner access to specific IP addresses, and ensuring compliance with organizational policies. Proper configuration of IP allowlists for both GitHub-hosted and self-hosted runners is crucial for maintaining secure and reliable interactions between internal applications and GitHub Actions runners. Regular updates and reviews of these configurations are necessary to adapt to changes in IP address ranges and maintain optimal security.
+Managing runners for the enterprise involves configuring and securing both GitHub-hosted and self-hosted runners to ensure efficient and secure CI/CD workflows. This management includes setting up IP allowlists to control access, enhancing security by restricting runner access to specific IP addresses, and ensuring compliance with organizational policies. Proper configuration of IP allowlists for both GitHub-hosted and self-hosted runners is crucial for maintaining secure and reliable interactions between internal applications and GitHub Actions runners. Regular updates and reviews of these configurations are necessary to adapt to changes in IP address ranges and maintain optimal security.
 
 ### Configuring IP allowlists on GitHub-hosted and self-hosted runners
 
-Configuring IP allowlists helps control access to runners by restricting them to specific IP addresses. This enhances security by preventing unauthorized access but may require additional network configurations.
+Configuring IP allowlists helps control access to runners by restricting them to specific IP addresses. This configuration enhances security by preventing unauthorized access but might require further network configurations.
 
-| **This guide provides a detailed explanation of how** | **Self-hosted runners**                                                                 |
+| **GitHub-hosted runners** | **Self-hosted runners**                                                                 |
 |-------------------------------------------------------|------------------------------------------------------------------------------------------|
 | GitHub-hosted runners use dynamic IP addresses, making it difficult to configure precise IP allowlists. | Use static or controlled IPs, allowing precise IP allowlisting or IP-based access control.                         |
 | Organizations must allow GitHub’s published IP ranges. | Can be placed behind firewalls or VPNs for added security.                              |
@@ -35,44 +35,49 @@ Configuring IP allowlists helps control access to runners by restricting them to
 
 #### Allowed IP list
 
-An **allowed IP list** is a security feature that restricts access to services or resources based on predefined IP addresses. By configuring an IP allowlist, organizations can:
+An **allowed IP list** is a security feature that restricts access to services or resources based on predefined IP addresses. When organizations configure an IP allowlist, they can:
 
 - **Enhance security:** Prevent unauthorized access by allowing only trusted IP addresses.
 - **Control network Traffic:** Restrict inbound and outbound requests to known and verified IPs.
 - **Improve compliance:** Ensure regulatory compliance by limiting access to authorized networks.
 
-| **This guide provides a detailed explanation of how**                                        | **Self-hosted runners**                                                                 |
+| **GitHub-hosted runners** | **Self-hosted runners**                                                                 |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | Organizations must allow GitHub's published IP ranges, which change periodically.            | Admins can define specific IP addresses that are allowed to access the runners.          |
 | GitHub-hosted runners can be configured via GitHub’s security settings.                      | Self-hosted runners work well with firewalls, VPNs, or cloud security groups.            |
-
 
 ### Configuring IP allowlists for internal applications to interact with GitHub-Hosted Runners
 
 To configure IP allowlists for internal applications and systems to interact with GitHub-hosted runners, you can refer to the following official GitHub documentation:
 
 #### 1. Understand GitHub's IP address ranges
-GitHub-hosted runners operate within specific IP address ranges. To ensure your internal applications can communicate with these runners, you need to allow these IP ranges through your firewall. GitHub provides a meta API endpoint https://api.github.com/meta that lists all current IP address ranges used by GitHub services, including those for Actions runners. Regularly updating your allowlists based on this information is essential, as IP ranges can change.
+
+GitHub-hosted runners operate within specific IP address ranges. To ensure your internal applications can communicate with these runners, you need to allow these IP ranges through your firewall. GitHub provides a meta API endpoint https://api.github.com/meta that lists all current IP address ranges used by GitHub services, including IP ranges for Actions runners. Regularly updating your allowlists based on this information is essential, as IP ranges can change.
 
 #### 2. Configure your firewall
 
 ##### a. Obtain GitHub's IP ranges:
+
 - Use the meta API endpoint to retrieve the latest IP address ranges used by GitHub Actions runners.
 
 ##### b. Update firewall rules:
-- Add rules to your firewall to permit inbound and outbound traffic to and from these IP ranges. This ensures that your internal systems can interact with GitHub-hosted runners without connectivity issues.
+
+- Add rules to your firewall to permit inbound and outbound traffic to and from these IP ranges. This configuration ensures that your internal systems can interact with GitHub-hosted runners without connectivity issues.
 
 #### 3. Consider using self-hosted runners
-If maintaining an IP allowlist for GitHub-hosted runners is challenging due to frequent changes in IP ranges, consider setting up self-hosted runners within your network. This approach allows you to have more control over the runner environment and network configurations. However, be aware that using self-hosted runners requires additional maintenance and infrastructure management.
+
+If maintaining an IP allowlist for GitHub-hosted runners is challenging due to frequent changes in IP ranges, consider setting up self-hosted runners within your network. This approach allows you to have more control over the runner environment and network configurations. However, using self-hosted runners requires more maintenance and infrastructure management.
 
 :::image type="content" source="../media/github-self-hosted-runners.png" alt-text="Screenshot of an empty runners screen.":::
 
 #### 4. Regularly review and update allowlists
+
 Since GitHub's IP address ranges can change, it's crucial to periodically review and update your firewall's IP allowlists. Automating this process by scripting the retrieval of IP ranges from GitHub's meta API can help ensure your allowlists remain current without manual intervention.
 
 ### Effects and potential abuse vectors of enabling self-hosted runners on public repositories  
 
 #### Effects of enabling self-hosted runners  
+
 1. **Customization & performance optimization**  
    - Self-hosted runners allow control over hardware, installed software, and environment settings.  
    - Workflows can be optimized for performance by using dedicated, high-performance machines.  
@@ -82,13 +87,14 @@ Since GitHub's IP address ranges can change, it's crucial to periodically review
 
 3. **State persistence**  
    - Self-hosted runners do **not** reset between jobs like GitHub-hosted runners.  
-   - This allows **caching dependencies**, reusing large datasets, and maintaining persistent states.  
+   - Allows **caching dependencies**, reusing large datasets, and maintaining persistent states.  
 
 4. **Security & maintenance responsibility**  
    - **Security patches, dependency updates, and system monitoring** become the runner owner's responsibility.  
    - Misconfigurations could expose the runner to external threats.  
 
 #### Potential abuse vectors of self-hosted runners  
+
 Enabling self-hosted runners on public repositories introduces significant security risks. Since **anyone** can trigger workflows by submitting a pull request, attackers can exploit this feature in various ways:
 
 1. **Arbitrary Code Execution (RCE) by malicious actors**  
@@ -96,7 +102,7 @@ Enabling self-hosted runners on public repositories introduces significant secur
    - If the runner has **elevated privileges**, the attacker gains **full system access**.  
 
 2. **Cryptocurrency mining & resource exploitation**  
-   - Attackers may abuse self-hosted runners to mine cryptocurrency, causing **unexpected high CPU and GPU usage**.  
+   - Attackers can abuse self-hosted runners to mine cryptocurrency, causing **unexpected high CPU and GPU usage**.  
    - This increases **operational costs** and **reduces availability** for legitimate workflows.  
 
 3. **Data exfiltration & credential theft**  
@@ -105,18 +111,19 @@ Enabling self-hosted runners on public repositories introduces significant secur
 
 4. **Denial of Service (DoS) attacks**  
    - Attackers can flood the repository with numerous pull requests to overload self-hosted runners.  
-   - If runners are on shared infrastructure, other critical workflows may be disrupted.  
+   - If runners are on shared infrastructure, other critical workflows might be disrupted.  
 
 5. **Lateral movement & network exploitation**  
    - If the self-hosted runner is inside a **corporate network**, an attacker could **pivot** into internal systems.  
-   - This could lead to **data breaches**, **ransomware attacks**, or **persistent access** to private resources.  
+   - Could lead to **data breaches**, **ransomware attacks**, or **persistent access** to private resources.  
 
 #### Mitigation strategies  
+
 To reduce security risks, follow these best practices:
 
 - Restrict self-hosted runners to **private repositories only**
 - Require **workflow approval** for pull requests from external contributors
-- Run self-hosted runners in a **secure, isolated environment** (e.g., containers, virtual machines)
+- Run self-hosted runners in a **secure, isolated environment** (for example, containers, virtual machines)
 - Use **firewalls and network rules** to block unauthorized access
 - Limit access to **sensitive secrets** and store credentials securely
 - **Monitor and log** runner activity to detect anomalies
@@ -124,6 +131,7 @@ To reduce security risks, follow these best practices:
 ### Selecting appropriate runners to support workloads  
 
 #### Understanding GitHub runners  
+
 GitHub Actions supports two types of runners:  
 
 1. **GitHub-hosted runners**  
@@ -159,23 +167,28 @@ The following table compares GitHub-hosted runners versus self-hosted runners. U
 
 
 #### Choosing the right operating system for runners
+
 ##### 1. Linux runners (default)  
+
 - Best for most workloads  
 - Fast, cost-effective, and widely supported  
 - Used in **CI/CD, scripting, Docker, and automation**  
 Example: `ubuntu-latest`, `ubuntu-22.04`  
 
 ##### 2. Windows runners 
+
 - Needed for **.NET, Windows-based software, and GUI apps**  
 - Supports **PowerShell, Windows-specific dependencies**  
 Example: `windows-latest`, `windows-2022`  
 
 ##### 3. macOS runners
-- Required for **iOS, macOS, Xcode, and Apple-specific builds**  
+
+- macOS runners are required for **iOS, macOS, Xcode, and Apple-specific builds**  
 - Supports **Swift, Objective-C, and macOS applications**  
 Example: `macos-latest`, `macos-13`  
 
 #### Best practices for Selecting Runners
+
 - Use **GitHub-hosted runners** for general workflows and automation.  
 - Use **self-hosted runners** for **custom environments, large workloads, or security-sensitive applications**.  
 - Choose **Linux runners** for most workloads due to performance and cost efficiency.  
@@ -186,7 +199,7 @@ Example: `macos-latest`, `macos-13`
 
 GitHub Actions supports two types of runners for executing workflows:  
 
-1. **GitHub-hosted runners** – Managed by GitHub, automatically provisioned, and pre-configured with common development tools.  
+1. **GitHub-hosted runners** – Managed by GitHub, automatically provisioned, and preconfigured with common development tools.  
 2. **Self-hosted runners** – Managed by the user, allowing complete control over the environment, resources, and configurations.  
 
 This section highlights the key differences between GitHub-hosted and self-hosted runners.
@@ -196,9 +209,9 @@ This section highlights the key differences between GitHub-hosted and self-hoste
 | Feature | GitHub-hosted runner | Self-hosted runner |
 |---------|----------------------|--------------------|
 | **Setup & maintenance** | No setup required; GitHub manages everything | User must install, configure, and maintain |
-| **Scalability** | Auto-scales dynamically | Must manually provision additional runners |
+| **Scalability** | Autoscales dynamically | Must manually provision added runners |
 | **Security** | High security; fresh virtual environment for each job | Requires manual security hardening |
-| **Customization** | Limited; pre-installed tools only | Fully customizable; user can install any dependencies |
+| **Customization** | Limited; preinstalled tools only | Fully customizable; user can install any dependencies |
 | **Performance** | Standardized compute resources | Can use high-performance hardware |
 | **State persistence** | Resets after every job | Can persist data between jobs |
 | **Cost** | Free for public repos; limited free usage for private repos | No GitHub costs, but requires infrastructure investment |
@@ -208,30 +221,36 @@ This section highlights the key differences between GitHub-hosted and self-hoste
 #### Key differences & considerations 
 
 ##### 1. Setup & maintenance 
+
 - **GitHub-hosted runners** require **zero setup**; users can start running workflows immediately.  
 - **Self-hosted runners** need **manual installation, configuration, updates, and security management**.  
 
 ##### 2. Security risks
+
 - GitHub-hosted runners **run in isolated virtual machines** that reset after each job, minimizing attack surfaces.  
 - Self-hosted runners **persist across jobs**, meaning a compromised runner can be exploited across multiple workflow runs.  
 
 ##### 3. Performance & cost considerations
-- GitHub-hosted runners **provide a standard environment** but have **usage limits** (e.g., free minutes per month for private repositories).  
-- Self-hosted runners **allow better performance tuning** (e.g., running on high-end servers) but require **infrastructure and maintenance costs**.  
+
+- GitHub-hosted runners **provide a standard environment** but have **usage limits** (for example, free minutes per month for private repositories).  
+- Self-hosted runners **allow better performance tuning** (for example, running on high-end servers) but require **infrastructure and maintenance costs**.  
 
 ##### 4. Networking & access
-- GitHub-hosted runners **cannot access private/internal resources** without additional configurations.  
+
+- GitHub-hosted runners **cannot access private/internal resources** without further configurations.  
 - Self-hosted runners **can access internal systems**, making them ideal for **private repositories, internal tools, and on-premises deployments**.  
 
 #### When to use each runner?
 
 **Use GitHub-hosted runners if:**  
+
 - You need a **quick and easy setup** without infrastructure management.  
-- Your workflow **doesn’t require custom dependencies** beyond the pre-installed tools.  
+- Your workflow **doesn’t require custom dependencies** beyond the preinstalled tools.  
 - You're working on an **open-source or public repository** with **free hosted runner minutes**.  
 
 **Use Self-hosted runners if:**  
+
 - Your workflow requires **specific dependencies, configurations, or persistent states**.  
-- You need to **access private network resources** (e.g., on-premises databases, internal services).  
+- You need to **access private network resources** (for example, on-premises databases, internal services).  
 - You require **higher performance machines** for **large-scale CI/CD pipelines**.  
 

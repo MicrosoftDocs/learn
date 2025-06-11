@@ -69,7 +69,7 @@ The next step after data classification is ensuring that each data category is p
 - **Data auditing**: Many regulatory compliance standards demand evidence of data protection mechanisms by documenting who has done certain operations and accessed certain data. As described in [Auditing for Azure SQL Database and Azure Synapse Analytics](/azure/azure-sql/database/auditing-overview?azure-portal=true), data auditing in Azure contemplates three aspects of auditing:
   - *Retain* an audit trail of selected events, where you can define categories of data actions to be audited.
   - *Report* on database activity, optionally with preconfigured reports and dashboards to get started quickly.
-  - *Analyze* reports to uncover suspicious events, unusual activity, and trends
+  - *Analyze* reports to uncover suspicious events, unusual activity, and trends.
 
 ## Growth mindset
 

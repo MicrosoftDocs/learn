@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check.
-  ms.date: 01/31/2024
+  ms.date: 05/15/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
@@ -37,7 +37,7 @@ quiz:
         - content: Connection draining
           isCorrect: false
           explanation: Incorrect. Connection draining allows you to deregister an instance in a back-end pool so that it doesn't receive any new traffic. It doesn't detect whether an instance in the back-end pool is unresponsive.          
-    - content: You have a back-end pool made up of eight Azure IaaS virtual machines. You need to install a new framework on each of these virtual machines. You don't want the virtual machine to participate in the back-end pool while you do this maintenance operation. You want to stop new connections from occurring on the VM that you're doing maintenance on, and you also want to allow any existing connections that are present to complete naturally. Which of the following Azure Application Gateway features can you use to accomplish this goal?
+    - content: You have a back-end pool made up of eight Azure IaaS virtual machines. You need to install a new framework on each of these virtual machines. You don't want the virtual machine to participate in the back-end pool while you do this maintenance operation. You want to stop new connections from occurring on the virtual machine that you're doing maintenance on. You also want to allow any existing connections that are present to complete naturally. Which of the following Azure Application Gateway features can you use to accomplish this goal?
       choices:
         - content: Session affinity
           isCorrect: false
@@ -48,4 +48,4 @@ quiz:
         - content: Health probes
           isCorrect: false
           explanation: Incorrect. Health probes allow the application gateway to determine which hosts in the back-end pool are no longer responding.
-          
+          

@@ -3,7 +3,7 @@ uid: learn.secure-your-azure-sql-database.6-knowledge-check
 metadata:
   title: Module assessment
   description: Test your knowledge 
-  ms.date: 11/07/2023
+  ms.date: 05/08/2025
   author: VanMSFT
   ms.author: vanto
   manager: jroth
@@ -24,7 +24,7 @@ quiz:
       isCorrect: false
     - content: A server-level virtual network rule
       isCorrect: true
-      explanation: A server-level virtual network rule will allow you to allow connectivity from specific Azure VNet subnets, and will block access from the internet. This is the most efficient manner to secure this configuration.
+      explanation: A server-level virtual network rule will allow you to allow connectivity from specific Azure VNet subnets and will block access from the internet. This is the most efficient manner to secure this configuration.
     - content: A database-level IP address rule
       isCorrect: false
       
@@ -58,4 +58,4 @@ quiz:
       isCorrect: true
       explanation: Azure SQL Database enforces encryption (SSL/TLS) at all times for all connections.
     - content: "No"
-      isCorrect: false
+      isCorrect: false

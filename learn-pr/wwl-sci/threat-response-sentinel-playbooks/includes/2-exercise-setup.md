@@ -24,7 +24,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | Workspace name | Provide a unique name for the Microsoft Sentinel workspace such as `<yourName>-Sentinel`, where *\<yourName>* represents the workspace name that you chose in the previous task. |
     | Location | Accept the default value of **[resourceGroup().location]**. |
     | Simplevm Name | Accept the default value of **simple-vm**.|
-    | Simplevm Windows OS Version | Accept the default value of **2016-Datacenter**.|
+    | Simplevm Windows OS Version | Accept the default value of **2022-Datacenter**.|
 
     :::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the custom deployment inputs for a Microsoft template." border="true":::
 
@@ -57,7 +57,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | `vnet1` |Virtual network|Virtual network for the VM. |
 
 > [!NOTE]
-> The resources deployed and configuration steps completed in this exercise are required in the next exercise. If you intended completing the next exercise do not delete the resources from this exercise.
+> The resources deployed and configuration steps completed in this exercise are required in the next exercise. If you intended to complete the next exercise, don't delete the resources from this exercise.
 
 ## Task 3: Configure Microsoft Sentinel Connectors
 
@@ -87,7 +87,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 1. Select the **Review + Create** button to review the configuration, and then select **Create**.
 
     > [!NOTE]
-    > The connector for Azure Activity uses policy assignments, you need to have role permissions that allow you to create policy assignments. And, it typically take 15 minutes to display a status of **Connected**. While the connector deploys, you can continue performing the rest of the steps in this unit and subsequent units in this module.
+    > The connector for Azure Activity uses policy assignments. You need to have role permissions that allow you to create policy assignments. And, it typically takes 15 minutes to display a status of **Connected**. While the connector deploys, you can continue performing the rest of the steps in this unit and subsequent units in this module.
 
     :::image type="content" source="../media/06-azure-activity-content-hub-solution.png" alt-text="Screenshot that displays the Microsoft Sentinel Azure Activity Content Hub solution." border="true":::
 

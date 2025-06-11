@@ -3,12 +3,12 @@ uid: learn.protect-apis-on-api-management.6-rate-limit-policy
 title: Throttle API requests
 metadata:
   title: Throttle API requests
-  description: In this unit, you'll learn about throttling (rate limiting) policies and how to use them to prevent users from overusing resources.
-  ms.date: 08/11/2023
+  description: In this unit, you learn about throttling (rate limiting) policies and how to use them to prevent users from overusing resources.
+  ms.date: 05/30/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/6-rate-limit-policy.md)]
-
+

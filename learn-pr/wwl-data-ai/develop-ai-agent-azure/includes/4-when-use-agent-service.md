@@ -1,19 +1,19 @@
 Previous solutions to achieve an agent-like experience took hundreds of lines of code to do things like referencing grounding data or connecting to a custom function. The Agent Service now simplifies all of that, supporting client-side function calling with just a few lines of code and connections to Azure Functions or an OpenAPI defined tool.
 
 > [!NOTE]
-> Azure AI Agent Service offers several advantages to building agents, but isn't always the right solution for your use case. For example, if you're trying to build an integration with Microsoft 365 you might choose the Copilot Studio agent builder and if you're trying to orchestrate multiple agents, you might choose the Semantic Kernel Agents Framework.
+> Foundry Agent Service offers several advantages to building agents, but isn't always the right solution for your use case. For example, if you're trying to build an integration with Microsoft 365 you might choose the Copilot Studio agent builder and if you're trying to orchestrate multiple agents, you might choose the Semantic Kernel Agents Framework.
 > 
 > This [Fundamentals of AI Agents](/training/modules/ai-agent-fundamentals/3-agent-development) unit explores more of the options for building agents.
 
 ## Developing apps that use agents
 
-Azure AI Agent Service provides several SDKs and a REST API for you to integrate agents into your app using your preferred programming language. The exercise later in this module focuses on Python, but the overall pattern is the same for REST or other language SDKs.
+Foundry Agent Service provides several SDKs and a REST API for you to integrate agents into your app using your preferred programming language. The exercise later in this module focuses on Python, but the overall pattern is the same for REST or other language SDKs.
 
 ![Diagram of a code pattern for agent integration.](../media/ai-agent-code-pattern.png)
 
 The diagram shows the following high-level steps that you must implement in your code:
 
-1. Connect to the *AI Foundry project* for your agent, using the project connection string and Entra ID authentication.
+1. Connect to the *AI Foundry project* for your agent, using the project endpoint and Entra ID authentication.
 2. Get a reference to an existing agent that you created in the Azure AI Foundry portal, or create a new one specifying:
     - The *model deployment* in the project that the agent should use to interpret and respond to prompts.
     - *Instructions* that determine the functionality and behavior of the agent.
@@ -56,10 +56,8 @@ Knowledge tools enhance the context or knowledge of your agent. Available tools 
 Action tools perform an action or run a function. Available tools include:
 
 - **Code Interpreter**: A sandbox for model-generated Python code that can access and process uploaded files.
-- **Function**: Call your custom function code – you must provide function definitions and implementations.
+- **Custom function**: Call your custom function code – you must provide function definitions and implementations.
 - **Azure Function**: Call code in serverless Azure Functions.
 - **OpenAPI Spec**: Call external APIs based on the OpenAPI 3.0 spec.
 
 By connecting built-in and custom tools, you can allow your agent to perform countless tasks on your behalf.
-
-

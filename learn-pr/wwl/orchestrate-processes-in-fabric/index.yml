@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.orchestrate-processes-in-fabric
+metadata:
+  title: Orchestrate processes in Microsoft Fabric
+  description: "This training takes a look at choosing between the use of a pipeline or notebook and different orchestration patterns in Microsoft Fabric."
+  ms.date: 11/14/2024
+  author: jamesh
+  ms.author: jamesh
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - DP-700
+  ms.service: fabric
+title: Orchestrate processes in Microsoft Fabric
+summary: This training takes a look at choosing between the use of a pipeline or notebook and different orchestration patterns in Microsoft Fabric.
+abstract: |
+  In this module, you learn how to:
+  - Choose between the use of a pipeline or notebook.
+  - Describe the differences between schedules and event-based triggers.
+  - Implement some dynamic practices in notebooks.
+prerequisites: |
+  Before starting this module, you should be familiar with Microsoft Fabric.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- data-analyst
+products:
+- fabric
+subjects:
+- data-engineering
+units:
+- learn.wwl.orchestrate-processes-in-fabric.introduction
+- learn.wwl.orchestrate-processes-in-fabric.choose-between-pipeline-notebook
+- learn.wwl.orchestrate-processes-in-fabric.design-schedules-and-event-based-triggers
+- learn.wwl.orchestrate-processes-in-fabric.exercise-implement-dynamic-patterns-to-notebooks
+- learn.wwl.orchestrate-processes-in-fabric.knowledge-check
+- learn.wwl.orchestrate-processes-in-fabric.summary
+badge:
+  uid: learn.wwl.orchestrate-processes-in-fabric.badge

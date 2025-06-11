@@ -33,6 +33,7 @@ roles:
 products:
 - azure
 units:
+- learn.philanthropies.learn-about-datacenter-design.introduction
 - learn.philanthropies.learn-about-datacenter-design.site-selection-design
 - learn.philanthropies.learn-about-datacenter-design.subsea-cables
 - learn.philanthropies.learn-about-datacenter-design.datacenter-layout-design

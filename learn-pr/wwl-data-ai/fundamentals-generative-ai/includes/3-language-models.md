@@ -33,7 +33,7 @@ Vectors represent lines in multidimensional space, describing direction and dist
 
 :::image type="content" source="../media/word-embeddings.png" alt-text="A screenshot showing a simple example of word embeddings.":::
  
-The elements of the tokens in the embeddings space each represent some semantic attribute of the token, so that semantically similar tokens should result in vectors that have a similar orientation – in other words they point in the same direction. a technique called cosine similarity is used to determine if two vectors have similar directions (regardless of distance), and therefore represent semantically linked words. For example, the embedding vectors for "dog" and "puppy" describe a path along an almost identical direction, which is also fairly similar to the direction for "cat". The embedding vector for "skateboard" however describes journey in a very different direction.
+The elements of the tokens in the embeddings space each represent some semantic attribute of the token, so that semantically similar tokens should result in vectors that have a similar orientation – in other words they point in the same direction. A technique called cosine similarity is used to determine if two vectors have similar directions (regardless of distance), and therefore represent semantically linked words. For example, the embedding vectors for "dog" and "puppy" describe a path along an almost identical direction, which is also fairly similar to the direction for "cat". The embedding vector for "skateboard" however describes journey in a very different direction.
 
 ## Architectural developments 
 
@@ -53,7 +53,7 @@ Simplifying the example sentence, you can provide the following input to an RNN:
 
 :::image type="content" source="../media/vincent-tokenized.png" alt-text="Diagram showing the sentence tokenized to present the most important words in a sentence as individual tokens.":::
 
-The RNN takes each token as an input, process it, and update the hidden state with a memory of that token. When the next token is processed as new input, the hidden state from the previous step is updated.
+The RNN takes each token as an input, processes it, and updates the hidden state with a memory of that token. When the next token is processed as new input, the hidden state from the previous step is updated.
 
 Finally, the last token is presented as input to the model, namely the `[MASK]` token. Indicating that there's information missing and the model needs to predict its value. The RNN then uses the hidden state to predict that the output should be something like `Starry Night`
 

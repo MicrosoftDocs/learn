@@ -35,8 +35,9 @@ Here are the least privileged roles required for this deployment
 
 | **Microsoft Entra role**                   | **Description**                                                                                           |
 | ------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
-| User Administrator or Global Administrator | To implement combined registration experience.                                                            |
+| User Administrator                         | To implement combined registration experience.                                                            |
 | Authentication Administrator               | To implement and manage authentication methods.                                                           |
+| Authentication Policy Administrator        | To implement and manage the Authentication methods policy                                                 |
 | User                                       | To configure Authenticator app on device, or to enroll security key device for web or Windows 10 sign-in. |
 
 As part of this deployment plan, we recommend that passwordless authentication be enabled for all privileged accounts.

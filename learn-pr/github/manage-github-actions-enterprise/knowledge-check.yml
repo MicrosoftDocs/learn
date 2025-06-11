@@ -3,7 +3,7 @@ uid: learn.github.manage-github-actions-enterprise.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Check what you've learned.
+  description: Check what you learned.
   ms.date: 11/21/2024
   author: a-a-ron
   ms.author: aastewar
@@ -14,21 +14,6 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which of the following is a feature unique to GitHub Enterprise Cloud (GHEC)?"
-      choices:
-        - content: "Requires on-premises deployment and infrastructure management"
-          isCorrect: false
-          explanation: "Incorrect. This describes GitHub Enterprise Server (GHES), not GHEC. GHEC is hosted and managed by GitHub in the cloud."
-        - content: "Provides centralized user management with identity provider integration"
-          isCorrect: true
-          explanation: "GHEC supports centralized user management and integrates with identity providers using SAML (for SSO) and SCIM (for user provisioning), which is a key feature of cloud-hosted enterprise solutions."
-        - content: "Must be installed and maintained by the organization's IT team"
-          isCorrect: false
-          explanation: "Incorrect. GHEC is maintained by GitHub and requires no installation or infrastructure management by the organization."
-        - content: "Operates entirely within a private cloud environment"
-          isCorrect: false
-          explanation: "Incorrect. GHEC operates in GitHub’s public cloud infrastructure, not a private cloud."
-
     - content: "What actions can you take at enterprise level to manage the use of GitHub Actions in your enterprise instance?"
       choices:
         - content: "Create workflow templates"
@@ -48,65 +33,109 @@ quiz:
           explanation: "Correct. Custom labels can be used when you need to run jobs on runners that have specific capabilities."
         - content: "Add proxy configurations to your runners after they start."
           isCorrect: false
-          explanation: "Incorrect. If you need a self-hosted runner to communicate with GitHub via a proxy server, you must add all proxy configurations to your runner before starting it."
+          explanation: "Incorrect. You must add all proxy configurations to your runner before starting it."
         - content: "Add the IP address or IP address range of your runners at repository level."
           isCorrect: false
-          explanation: "Incorrect. If your organization has configured an IP allowlist, you must add the IP address or IP address range of your self-hosted runners to the IP allowlist. IP allowlists are found in an organization's Settings."
+          explanation: "Incorrect. This action is managed at the organization level in IP allowlists."
 
     - content: "What are encrypted secrets?"
       choices:
-        - content: "Encrypted secrets are authentication tokens you can generate in your account settings."
+        - content: "Authentication tokens you can generate in your account settings."
           isCorrect: false
-          explanation: "Incorrect. The authentication tokens you can create in your account settings are personal access tokens (PATs)."
-        - content: "Encrypted secrets are the equivalent of SSH keys in GitHub."
+          explanation: "Incorrect. This definition matches personal access tokens (PATs)."
+        - content: "The equivalent of SSH keys in GitHub."
           isCorrect: false
-          explanation: "Incorrect. SSH keys are also called SSH keys in GitHub."
-        - content: "Encrypted secrets are encrypted environment variables you can create to store sensitive information."
+          explanation: "Incorrect. SSH keys are separate and named accordingly."
+        - content: "Encrypted environment variables for storing sensitive information."
           isCorrect: true
-          explanation: "Correct. Once created, encrypted secrets become available for use in your workflows and actions at the level at which they were created (organization or repository)."
+          explanation: "Correct. You can securely scope them by repository, organization, or environment."
 
-    - content: What is a key benefit of using **reusable workflows** in GitHub Actions?
+    - content: "Which credential type poses the greatest security risk if used in GitHub Actions?"
       choices:
-        - content: Prevents any external contributors from running workflows
+        - content: "Repository deploy keys"
           isCorrect: false
-          explanation: Reusable workflows improve standardization, but they do not automatically block external contributors. Security settings must be configured separately.
-        - content: Reduces redundancy and maintenance overhead
+          explanation: "Incorrect. These credentials are scoped and safer for single-repo use."
+        - content: "Personal access token (classic)"
           isCorrect: true
-          explanation: Reusable workflows help avoid repetitive configuration across multiple repositories, reducing maintenance effort.
-        - content: Can only be used in the same repository where they are defined
+          explanation: "Correct. These credentials have broad access, making them riskier."
+        - content: "GitHub App tokens"
           isCorrect: false
-          explanation: Reusable workflows can be referenced from a different repository, allowing broader reuse.
-        - content: Automatically restricts all workflows to internal users
+          explanation: "Incorrect. These credentials are more granular and preferred for security."
+        - content: "GITHUB_TOKEN"
           isCorrect: false
-          explanation: GitHub does not enforce internal-only workflow execution unless explicitly configured.
+          explanation: "Incorrect. It is scoped and managed automatically."
 
-    - content: What is a primary benefit of using **GitHub-hosted runners** instead of self-hosted runners?
+    - content: "Which feature enforces that tests pass before code can be merged?"
       choices:
-        - content: Full control over hardware and software configuration
+        - content: "Organization secrets"
           isCorrect: false
-          explanation: Full control is a feature of self-hosted runners.
-        - content: Ability to access internal/private networks
-          isCorrect: false
-          explanation: GitHub-hosted runners do not have direct access to internal networks.
-        - content: Automatic updates for the OS and preinstalled packages
+          explanation: "Incorrect. They handle credentials, not enforcement of tests."
+        - content: "Repository rule sets"
           isCorrect: true
-          explanation: GitHub-hosted runners are automatically updated by GitHub, including OS patches and preinstalled tools.
-        - content: Custom installation of non-standard software
+          explanation: "Correct. Rule sets can enforce status checks before merges."
+        - content: "Workflow templates"
           isCorrect: false
-          explanation: Custom installation is supported with self-hosted runners, not GitHub-hosted ones.
+          explanation: "Incorrect. These aid reuse, not enforcement."
+        - content: "Runner groups"
+          isCorrect: false
+          explanation: "Incorrect. They help manage runners, not enforce rules."
 
-    - content: What is the best practice when managing **encrypted secrets** in GitHub Actions?
+    - content: "Which of the following is unique to GitHub Enterprise Cloud (GHEC)?"
       choices:
-        - content: Print secrets in workflow logs to assist with debugging
+        - content: "Requires on-premises infrastructure"
           isCorrect: false
-          explanation: Secrets should never be exposed in logs.
-        - content: Use the same secret across all repositories for consistency
-          isCorrect: false
-          explanation: Sharing the same secret increases security risk and violates the principle of least privilege.
-        - content: Limit access by defining secrets at the lowest necessary level
+          explanation: "Incorrect. That describes GitHub Enterprise Server."
+        - content: "Centralized user management with identity provider integration"
           isCorrect: true
-          explanation: Scoping secrets appropriately minimizes exposure and enhances security.
-        - content: Store secrets in the GitHub Actions log archive
+          explanation: "Correct. GHEC integrates with identity providers using SAML (Security Assertion Markup Language)."
+        - content: "IT teams must install it."
           isCorrect: false
-          explanation: Storing secrets in logs is unsafe and not a recommended practice.
+          explanation: "Incorrect. GitHub hosts and manages GHEC."
+        - content: "Runs in a private cloud"
+          isCorrect: false
+          explanation: "Incorrect. GHEC runs on GitHub’s public cloud."
 
+    - content: "What is a key benefit of using reusable workflows?"
+      choices:
+        - content: "Blocks external contributors automatically"
+          isCorrect: false
+          explanation: "Incorrect. Security must be separately configured."
+        - content: "Reduces redundancy and maintenance overhead"
+          isCorrect: true
+          explanation: "Correct. Reusable workflows simplify workflow reuse."
+        - content: "Only usable in the same repository"
+          isCorrect: false
+          explanation: "Incorrect. They can be reused across repositories."
+        - content: "Restricts workflows to internal users"
+          isCorrect: false
+          explanation: "Incorrect. This behaviour is configurable, not default."
+
+    - content: "What is a benefit of using GitHub-hosted runners?"
+      choices:
+        - content: "Full control over hardware"
+          isCorrect: false
+          explanation: "Incorrect. That benefit is for self-hosted runners."
+        - content: "Internal network access"
+          isCorrect: false
+          explanation: "Incorrect. GitHub-hosted runners do not have this benefit."
+        - content: "Automatic OS and package updates"
+          isCorrect: true
+          explanation: "Correct. GitHub maintains hosted runner environments."
+        - content: "Install custom software"
+          isCorrect: false
+          explanation: "Incorrect. That feature is supported on self-hosted runners."
+
+    - content: "What is a best practice for managing encrypted secrets?"
+      choices:
+        - content: "Print them in logs for debugging"
+          isCorrect: false
+          explanation: "Incorrect. Never expose secrets in logs."
+        - content: "Reuse the same secret across all repos"
+          isCorrect: false
+          explanation: "Incorrect. This increases risk."
+        - content: "Scope secrets to the lowest level needed"
+          isCorrect: true
+          explanation: "Correct. This limits exposure."
+        - content: "Store secrets in archived workflow logs"
+          isCorrect: false
+          explanation: "Incorrect. That approach is a security vulnerability."

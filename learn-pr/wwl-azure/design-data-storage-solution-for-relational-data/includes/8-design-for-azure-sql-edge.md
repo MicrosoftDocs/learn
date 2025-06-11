@@ -45,10 +45,10 @@ Ensuring protection for Azure SQL Edge deployments involves four steps:
 
 Azure SQL Edge as two deployment options:
 
-- **Connected deployment**: For connected deployment, Azure SQL Edge is available on the Azure Marketplace and can be deployed as a module for Azure IoT Edge. 
+- **Connected deployment**: For connected deployment, Azure SQL Edge is available on the Microsoft Azure Marketplace and can be deployed as a module for Azure IoT Edge. 
 
 - **Disconnected deployment**: Disconnected deployment is accomplished through Azure SQL Edge container images. The images can be pulled from docker hub and deployed either as a standalone docker container or on a Kubernetes cluster.
 
-> [!IMPORTANT] 
-> Azure SQL Edge is optimized for IoT use cases and workloads. SQL Server and SQL Database, in contrast, are built for mission-critical, data-management solutions, and line-of-business (LOB) apps.
+> [!TIP] 
+> If you're interested in learning more, watch the [What is Azure SQL Edge](/azure/azure-sql-edge/overview) video from Channel 9. 
 

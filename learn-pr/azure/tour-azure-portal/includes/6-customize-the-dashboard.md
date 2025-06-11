@@ -1,4 +1,4 @@
-Let's look at how to create and modify dashboards in the Azure portal. In this unit, you learn about creating and using dashboards. In the next unit, you'll try out the things you've learned.
+Let's look at how to create and modify dashboards in the Azure portal. In this unit, you learn about creating and using dashboards. In the next unit, you'll try out the things you learned.
 
 ## What is a dashboard?
 
@@ -22,7 +22,7 @@ The controls at the top of the dashboard let you create, upload, edit, export, a
 
 ## Select dashboard
 
-At the top of the toolbar on the far left, next to the dashboard's name, is the dashboard selection drop-down control. Selecting this control lets you choose from dashboards that you have already defined for your account. This control makes it simple for you to switch between multiple dashboards for different purposes.
+At the top of the toolbar on the far left, next to the dashboard's name, is the dashboard selection drop-down control. Selecting this control lets you choose from dashboards that you already defined for your account. This control makes it simple for you to switch between multiple dashboards for different purposes.
 
 Dashboards that you create are initially private; that is, only you can see them. To make a dashboard available across your enterprise, you need to share it. We explore that option later.
 
@@ -30,13 +30,13 @@ Dashboards that you create are initially private; that is, only you can see them
 
 To create a new dashboard, select **Create**. If you select **Custom**, the dashboard workspace appears with no tiles present. You can then add, remove, and adjust tiles however you like, and give your dashboard a name. When you're finished customizing the dashboard, select **Save** to save and switch to that dashboard.
 
-You can also select **Upload** to upload a dashboard JSON file you've customized, rather than creating the dashboard in the portal.
+You can also select **Upload** to upload a dashboard JSON file you customized, rather than creating the dashboard in the portal.
 
 ## Export
 
 To download your current dashboard as a JSON file, select **Export**, then select **Download**. You can then customize the file and upload it, or have someone else upload that file to the Azure portal to use as their dashboard.
 
-You can also select **Export**, then select **Print** to print a copy of current your dashboard.
+You can also select **Export**, then select **Print** to print a copy of your current dashboard.
 
 ## Edit a dashboard using the portal
 
@@ -51,7 +51,7 @@ On the right-hand side, you find the **Tile Gallery**, showing many different ti
 To add a tile to your dashboard, select the tile from the list and then drag it to the work area. You can then move each tile, resize it, or customize the data that it displays.
 
 > [!TIP]
-> You can also take elements from a resource page and pin them to your dashboard. When using a service, look for the **Pin** icon. When you select it, you'll see a **Pin to dashboard** pane which allows you to select a dashboard (or create a new one) for a tile containing details for that service.
+> You can also take elements from a resource page and pin them to your dashboard. When using a service, look for the **Pin** icon. When you select it, you see a **Pin to dashboard** pane which allows you to select a dashboard (or create a new one) for a tile containing details for that service.
 
 In edit mode, the dashboard work area is divided into squares. Each tile must occupy at least one square, and tiles snap to the nearest largest set of tile dividers. Any overlapping tiles are moved out of the way.
 
@@ -75,7 +75,7 @@ For multi-national/regional or transcontinental companies, you could add several
 
 ### Accepting your edits
 
-You can select **Preview** to see your proposed edits. When you have arranged the tiles as you want them, select **Save**.
+You can select **Preview** to see your proposed edits. When the tiles are arranged as you want them, select **Save**.
 
 ## Share or unshare a dashboard
 
@@ -85,7 +85,7 @@ As with any other Azure resource, you need to specify a new resource group (or u
 
 :::image type="content" source="../media/6-share-dashboards-default.png" alt-text="Screenshot of the Sharing + access control pane before a dashboard is shared.":::
 
-After you've shared the dashboard, you'll see a **Manage sharing** link at the top of the dashboard, instead of **Share**. From here, you can unshare the dashboard, or select **Access control** to specify who can view and edit the dashboard.
+After you share the dashboard, you'll see a **Manage sharing** link at the top of the dashboard, instead of **Share**. From here, you can unshare the dashboard, or select **Access control** to specify who can view and edit the dashboard.
 
 ## Clone a dashboard
 
@@ -95,6 +95,6 @@ Cloning is an easy way to create dashboards before sharing them. For example, if
 
 ## Delete a dashboard
 
-Deleting a dashboard removes it from your list of available dashboards. You're prompted to confirm that you want to delete the dashboard, but there's no way to recover a dashboard that has been deleted.
+Deleting a dashboard removes it from your list of available dashboards. You're prompted to confirm that you want to delete the dashboard, but there's no way to recover a deleted dashboard.
 
 Now, let's try out some of these options by creating a new dashboard.
