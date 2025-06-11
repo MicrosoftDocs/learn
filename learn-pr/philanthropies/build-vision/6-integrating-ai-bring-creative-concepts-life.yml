@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.build-vision.integrating-ai-to-bring-creative-concepts-to-life
+uid: learn.philanthropies.build-vision.integrating-ai-bring-creative-concepts-life
 
 title: Integrating AI to bring creative concepts to life
 metadata:
@@ -12,5 +12,5 @@ metadata:
   
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-integrating-ai-to-bring-creative-concepts-to-life.md)]
+  [!include[](includes/6-integrating-ai-bring-creative-concepts-life.md)]
 

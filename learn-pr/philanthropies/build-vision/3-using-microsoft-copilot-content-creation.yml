@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.build-vision.using-microsoft-copilot-for-content-creation
+uid: learn.philanthropies.build-vision.using-microsoft-copilot-content-creation
 title: Using Microsoft Copilot for content creation
 metadata:
   title: Using Microsoft Copilot for Content Creation
@@ -11,4 +11,4 @@ metadata:
   
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-using-microsoft-copilot-for-content-creation.md)]
+  [!include[](includes/3-using-microsoft-copilot-content-creation.md)]

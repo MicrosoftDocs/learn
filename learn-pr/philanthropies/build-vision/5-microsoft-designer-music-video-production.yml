@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.build-vision.microsoft-designer-for-music-video-production
+uid: learn.philanthropies.build-vision.microsoft-designer-music-video-production
 
 
 title: Microsoft Designer for music video production
@@ -13,4 +13,4 @@ metadata:
   
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-microsoft-designer-for-music-video-production.md)]
+  [!include[](includes/5-microsoft-designer-music-video-production.md)]

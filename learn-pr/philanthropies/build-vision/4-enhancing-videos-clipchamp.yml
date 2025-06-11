@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.build-vision.enhancing-videos-with-clipchamp
+uid: learn.philanthropies.build-vision.enhancing-videos-clipchamp
 
 title: Enhancing videos with Clipchamp
 metadata:
@@ -12,4 +12,4 @@ metadata:
   
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-enhancing-videos-with-clipchamp.md)]
+  [!include[](includes/4-enhancing-videos-clipchamp.md)]

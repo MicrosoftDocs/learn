@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.build-vision.ai-in-media-production
+uid: learn.philanthropies.build-vision.ai-media-production
 title: AI in media production
 metadata:
   title: AI in Media Production
@@ -11,4 +11,4 @@ metadata:
   
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-ai-in-media-production.md)]
+  [!include[](includes/2-ai-media-production.md)]
