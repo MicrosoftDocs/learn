@@ -48238,6 +48238,191 @@
       "source_path": "learn-pr/azure/design-a-hybrid-network-architecture/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/networking/hybrid-connectivity/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-security-controls-identity-access/38-microsoft-entra-permissions-management.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-security-controls-identity-access/39-enable-microsoft-entra-permissions-management-organization.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-security-controls-identity-access/40-zero-trust-security.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/38-zero-trust-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-security-controls-identity-access/41-microsoft-entra-privileged-identity-management.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/39-microsoft-entra-privileged-identity-management",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/manage-security-controls-identity-access/42-configure-privileged-identity-management.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/40-configure-privileged-identity-management",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/manage-security-controls-identity-access/43-microsoft-entra-id-governance.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/41-microsoft-entra-id-governance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-security-controls-identity-access/44-identity-lifecycle-management.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/42-identity-lifecycle-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-security-controls-identity-access/45-lifecycle-workflows.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/43-lifecycle-workflows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-security-controls-identity-access/46-entitlement-management.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/44-entitlement-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-security-controls-identity-access/47-delegation-roles-entitlement-management.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/45-delegation-roles-entitlement-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-security-controls-identity-access/48-access-reviews.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/46-access-reviews",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-security-controls-identity-access/49-configure-role-management-access-reviews-microsoft-entra-id-governance.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/47-configure-role-management-access-reviews-microsoft-entra-id-governance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-security-controls-identity-access/50-conditional-access.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-security-controls-identity-access/51-knowledge-check.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/50-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/manage-security-controls-identity-access/52-summary.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/51-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/index.md",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/1-introduction.md",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/2-understand-basic-structure-kusto-query-language.md",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/3-exercise-connect-to-resources.md",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/4-exercise-return-number-rows-take-operator.md",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/5-exercise-select-columns-project-operator.md",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/6-exercise-filter-data-where-operator.md",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/7-exercise-reorder-returned-data-sort-operator.md",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/8-challenge.md",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/9-solution.md",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/10-knowledge-check.md",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/write-first-query-kusto-query-language/11-summary.md",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/index.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/1-introduction.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/2-multi-table-queries.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/3-exercise-connect-to-resources.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/4-exercise-join-types.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/5-exercise-lookup.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/6-exercise-union.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/7-exercise-materialize.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/8-knowledge-check.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/9-summary.md",
+      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_document_id": false
     }
   ]
 }
