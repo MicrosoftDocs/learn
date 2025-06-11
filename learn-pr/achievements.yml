@@ -5,6 +5,11 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.react-to-state-changes-using-event-grid.badge
+  type: badge
+  title: React to state changes in your Azure services by using Event Grid
+  summary: Build a serverless application architecture, automate your operations, and integrate applications by handling Azure events with Event Grid.
+  iconUrl: /training/achievements/react-to-state-changes-using-event-grid.svg
 - uid: learn.azure-sql-case-studies.badge
   type: badge
   title: Putting it all together with Azure SQL

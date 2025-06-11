@@ -48424,7 +48424,47 @@
       "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
       "redirect_document_id": false
     },
-        {
+    {
+      "source_path": "learn-pr/azure/react-to-state-changes-using-event-grid/index.md",
+      "redirect_url": "/training/paths/architect-messaging-serverless/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/react-to-state-changes-using-event-grid/1-introduction.md",
+      "redirect_url": "/training/paths/architect-messaging-serverless/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/react-to-state-changes-using-event-grid/2-respond-using-event-grid.md",
+      "redirect_url": "/training/paths/architect-messaging-serverless/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/react-to-state-changes-using-event-grid/3-exercise-trigger-logic-app.md",
+      "redirect_url": "/training/paths/architect-messaging-serverless/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/react-to-state-changes-using-event-grid/4-build-logic-respond-event.md",
+      "redirect_url": "/training/paths/architect-messaging-serverless/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/react-to-state-changes-using-event-grid/5-exercise-email-vm-change.md",
+      "redirect_url": "/training/paths/architect-messaging-serverless/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/react-to-state-changes-using-event-grid/6-knowledge-check.md",
+      "redirect_url": "/training/paths/architect-messaging-serverless/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/react-to-state-changes-using-event-grid/7-summary.md",
+      "redirect_url": "/training/paths/architect-messaging-serverless/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/azure-sql-case-studies/index.md",
       "redirect_url": "/training/paths/azure-data-fundamentals-explore-relational-data/",
       "redirect_document_id": false
@@ -48464,5 +48504,5 @@
       "redirect_url": "/training/paths/azure-data-fundamentals-explore-relational-data/",
       "redirect_document_id": false
     }
-  ]
+]
 }
