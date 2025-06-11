@@ -9,7 +9,7 @@ You can create a resource [several ways](/azure/developer/intro/azure-developer-
 
 ## How to use the Azure portal to create an Azure AI services resource 
 
-To create an Azure AI services resource, sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) with Contributor access and select **Create a resource**. To create a multi-services resource search for *Azure AI services* in the marketplace. 
+To create an Azure AI services resource, sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). To create a multi-services resource search for *Azure AI services* in the marketplace. 
 
 ![Screenshot of Azure AI services in the Azure portal marketplace.](../media/azure-ai-services-marketplace.png)
 

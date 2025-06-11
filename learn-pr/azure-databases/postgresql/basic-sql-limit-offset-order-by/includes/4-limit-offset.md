@@ -7,7 +7,8 @@ The `LIMIT` clause allows you to specify the maximum number of rows to return, p
 ## Limiting the number of rows returned
 
 ```sql
-SELECT product_name, price FROM sales.products
+SELECT product_name, price 
+FROM sales.products
 LIMIT 10;
 ```
 
@@ -17,7 +18,8 @@ The `LIMIT` clause in SQL is a powerful tool for controlling the number of recor
 ## Using OFFSET to skip rows
 
 ```sql
-SELECT * FROM sales.products
+SELECT * 
+FROM sales.products
 LIMIT 10 OFFSET 20;
 ```
 

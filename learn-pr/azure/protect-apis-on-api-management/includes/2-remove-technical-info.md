@@ -1,8 +1,8 @@
 Any organization that publishes an API needs to make sure that users can access it securely and that malicious users can't successfully attack it.
 
-Governments store much personal data regarding citizens. Census data reveals a lot about each citizen, and their life. This data could be exploited to harm people. It is imperative that any data exposed through API endpoints are secured through modern standards.
+Governments store much personal data regarding citizens. Census data reveals a lot about each citizen, and their life. This data could be exploited to harm people. It's imperative that any data exposed through API endpoints are secured through modern standards.
 
-As the lead developer, you'll look at how to set up a secured API gateway, which will protect the census data from unauthorized access. It will also help protect the endpoints from denial-of-service attacks.
+As the lead developer, you look at how to set up a secured API gateway, which protects the census data from unauthorized access. It also helps protect the endpoints from denial-of-service attacks.
 
 ## Azure API Management
 
@@ -24,8 +24,8 @@ In the Census API example, it's important that you remove the following header:
 
 ## API Management setup
 
-To set up API Management, you will perform the following tasks:
+To set up API Management, perform the following tasks:
 
-- **Create an API Management gateway**. In this step, you create the API Management resource in the Azure portal. You also assign properties to the gateway, such as an FQDN and a pricing tier.
+- **Create an API Management gateway**. In this step, you create the API Management resource in the Azure portal. You also assign properties to the gateway, such as a fully qualified domain name (FQDN) and a pricing tier.
 - **Register an existing web API with the gateway**. In this step, you add the web API to the gateway. The API already has its own Azure app service host but you must add it to API Management in order to use policies and other API Management tools.
-- **Remove a header from the response**. In this step, you will apply a policy that removes an insecure header from all responses.
+- **Remove a header from the response**. In this step, you apply a policy that removes an insecure header from all responses.

@@ -2,9 +2,9 @@ In the previous unit, you learned that a debugger helps you control your program
 
 Let's start by learning how to use the Visual Studio debugger with .NET.
 
-## Getting Started with the Visual Studio Debugger
+## Getting started with the Visual Studio Debugger
 
-Launch the application with the debugger attached using the **Start** button at the top of Visual Studio, which now includes our project name. Once the app is running, more debugging tools and features become available.
+Use the **Start** button (the solid green triangle) in the Visual Studio command bar to launch the application with the debugger attached. Notice that the command bar now includes our project name. Once the app is running, more debugging tools and features become available.
 
 :::image source="../media/visual-studio-debugging-controls.png" alt-text="Screenshot of Visual Studio debugging controls.":::
 
@@ -15,21 +15,19 @@ Launch the application with the debugger attached using the **Start** button at 
 
 ### Controlling execution
 
-Once the app is running, the debugging controls appear next to the **Start** button you clicked to launch the app.
+Once the app is running, the debugging controls appear next to the **Start** button that you clicked to launch the app.
 
 :::image source="../media/visual-studio-steps.png" alt-text="Screenshot of Visual Studio debugger execution controls.":::
 
-The controls are numbered as follows:
-
 - **1) Continue or pause execution**. If execution is paused on a breakpoint, select this button to continue until the next breakpoint is hit. If your program is running, the button switches to a pause button that you can use to pause execution.
-- **2) Hot reload controls**. This new feature of Visual Studio 2022 allows you to make changes and refresh our code without restarting the app.
+- **2) Hot reload controls**. This feature, introduced in Visual Studio 2022, allows you to make changes and refresh your code without restarting the app.
 - **3) Stop**. This button stops the running application, which also detaches the debugger.
 - **4) Restart**. Stops and relaunches the app with the debugger attached.
 - **5) Step into**. If the next statement is a function call, move down into the first code statement of this function (same as the `step` command).
 - **6) Step over**. If the next statement is a function call, execute the code, but move on immediately to the next line of code in the current function.
 - **7) Step out**. If you're inside a function, execute the remaining code of this function and jump back to the statement after the initial function call (same as the `out` command).
 
-Breakpoints are one of the core features of debugging and integrate with these controls, so let's explore them in more detail.
+Breakpoints are one of the core features of debugging and they integrate with these controls, so let's explore them in more detail.
 
 ## Breakpoints
 
@@ -39,13 +37,13 @@ You can add a breakpoint in Visual Studio by clicking to the left side of the li
 
 :::image source="../media/visual-studio-breakpoint.png" alt-text="Screenshot of a breakpoint added in the Visual Studio editor window.":::
 
-If you right-click to add a breakpoint or on an existing breakpoint, you can also select **Add Conditional Breakpoint**. This special type of breakpoint allows you to define a *condition* or criteria for when the breakpoint is triggered. This menu also allows you to select **only Enable when following breakpoint is hit option** to create a chainable breakpoints execution, among other actions.
+If you right-click to add a breakpoint, or right-click on an existing breakpoint, you can also select **Add Conditional Breakpoint**. This special type of breakpoint allows you to define a *condition* or criteria for when the breakpoint is triggered. This menu also allows you to select the **Only Enable when the following breakpoint is hit** option to create a chainable breakpoints execution, among other actions.
 
 :::image source="../media/visual-studio-breakpoint-conditional.png" alt-text="Screenshot of setting a conditional breakpoint in Visual Studio.":::
 
-You can also use a Temporary breakpoint if you want to break the code just one time. You can apply Temporary breakpoints by right-clicking in the breakpoint column and selecting **Insert temporary breakpoint**. The Temporary breakpoints will be removed after they're hit the first time.
+You can also use a *temporary breakpoint* if you want to break the code just one time. You can apply temporary breakpoints by right-clicking in the breakpoint column and selecting **Insert Temporary Breakpoint**. The Temporary breakpoints will be removed after they're hit the first time.
 
-You can also add Tracepoints by right-clicking in the breakpoint column. Tracepoints allow you to log information to the Output window under configurable conditions without modifying or stopping your code execution.  
+You can also add *tracepoints* by right-clicking in the breakpoint column and selecting **Insert Tracepoint**. Tracepoints allow you to log information to the Output window under configurable conditions without modifying or stopping your code execution.  
 
 Finally, in the **Breakpoints** window (**Debug** > **Windows** > **Breakpoints**), you can see and toggle all the breakpoints you placed in your code. You can also toggle options to break on caught or uncaught exceptions. You can use the **Breakpoints** panel to examine your program state and trace back the source of an exception by using the **Call stack** when one occurs.
 
@@ -53,19 +51,19 @@ Finally, in the **Breakpoints** window (**Debug** > **Windows** > **Breakpoints*
 
 ## Visual Studio debugging tools
 
-After you've set up your breakpoints and started your app, new information windows and controls appear on the screen.
+After you set up your breakpoints and start your app, new information windows and controls appear on the screen.
 
 :::image source="../media/visual-studio-controls.png" alt-text="Screenshot of Visual Studio debugger overview.":::
 
-1. Debugger launch controls
-1. Current breakpoint and execution line
-1. Watch window to monitor variable values
-1. Breakpoints window to view all breakpoints
+1. Debugger launch controls.
+1. The current breakpoint and execution line.
+1. **Watch window** for monitoring variable values.
+1. **Breakpoints window** for viewing all breakpoints.
 
 You can also access other helpful debugging windows by selecting **Debug** > **Windows** along the top navigation bar. For example, commonly used tools include:
 
-1. **Call Stack window**: Allows you to view which methods have been called.
-2. **Immediate window**: Allows you to write and expressions while debugging.
+1. **Call Stack window**: Allows you to view which methods were called.
+2. **Immediate window**: Allows you to write and evaluate expressions while debugging.
 3. **Autos window**: Automatically adds watches to variables in the current context.
 4. **Output window**: Shows the output of logging statements or code that writes to the console.
 
@@ -84,17 +82,17 @@ When you analyze the cause of a program defect, you can watch the state of your 
 
 Most of these windows also allow you to double-click the value of a variable and change its value while debugging.
 
-The **Watch** windows are useful for tracking variables during the execution of your code. You can right-click a variable in your editor and select **Add to watch**. That variable  now displays in the watch window and updates automatically as your app executes.
+The **Watch** window is useful for tracking variables during the execution of your code. You can right-click a variable in your editor and select **Add to watch**. That variable now displays in the watch window and updates automatically as your app executes.
 
 You can also right-click variables in the **Autos** or **Locals** windows to add a watch.
 
-Another productive way to view and analyze the variable information during debugging is using DataTips. When you pause at the breakpoint, hover over any variable in the current scope. A DataTip appears, showing the name and current value of the variable properties. By hovering over a function parameter or a variable directly in the editor window, you can also peek at its value.
+Another productive way to view and analyze the variable information during debugging is by using *DataTips*. When you pause at the breakpoint, hover over any variable in the current scope. A DataTip appears, showing the name and current value of the variable properties. By hovering over a function parameter or a variable directly in the editor window, you can also peek at its value.
 
 ### Call stack
 
 Every time your program enters a function, an entry is added to the call stack. When your application becomes complex and functions are called within other functions many times, the call stack represents the trail of those calls.
 
-It's useful to find the source of an exception. If you have an unexpected crash in your program, you often see something in the console like the following example:
+It's useful for finding the source of an exception. If you have an unexpected crash in your program, you often see something in the console like the following example:
 
 ```text
 Unhandled exception. System.IndexOutOfRangeException: Index was outside the bounds of the array.
@@ -104,11 +102,11 @@ Unhandled exception. System.IndexOutOfRangeException: Index was outside the boun
 
 The group of `at [...]` lines under the error message is called a *stack trace*. The stack trace gives the name and origin of every function that was called before ending up with the exception. However, it can be a bit difficult to decipher, because it also includes internal functions from the .NET runtime.
 
-The Visual Studio **Call stack** window comes in handy here. It filters out unwanted information to show you only the relevant functions from your own code by default. You then can unwind this call stack to find out where the exception originated from.
+The Visual Studio **Call stack** window comes in handy here. It filters out unwanted information to show you only the relevant functions from your own code by default. You  can then unwind this call stack to find out where the exception originated from.
 
 :::image source="../media/visual-studio-callstack.png" alt-text="Screenshot of the Call Stack window.":::
 
-In the next unit, you'll walk through an exercise using the debugger to fix the bug in the Fibonacci code we saw previously.
+In the next unit, you walk through an exercise using the debugger to fix the bug in the Fibonacci code we saw previously.
 
 ### Specify debugger settings
 

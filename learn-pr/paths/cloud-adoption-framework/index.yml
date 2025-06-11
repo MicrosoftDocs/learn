@@ -39,7 +39,6 @@ subjects:
 - cloud-computing
 modules:
 - learn.cloud-adoption-framework-strategy
-- learn.azure.cloud-adoption-framework-plan
 - learn.azure.cloud-adoption-framework-ready
 - learn.cloud-adoption-framework-migrate
 - learn.azure.cloud-adoption-framework-govern
