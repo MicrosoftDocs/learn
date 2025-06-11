@@ -32,7 +32,7 @@ There are some good reasons why raising money from investors might not be a good
 
 First, you might not need external capital. If you can self-fund your company or generate customer revenue early enough, bootstrapping your startup can be the best path to take.
 
-You also might not want to start a high-growth company and swing for the fences. Taking external capital from an investor brings with it a set of expectations. As we'll discuss later, most investors are interested only in backing companies that can experience massive growth and generate a large financial return. It makes sense to want to start a company that grows at a more modest pace. Such companies often provide founders with an ongoing source of income and allow them to be in control of their own work-life balance.
+You also might not want to start a high-growth company and swing for the fences. Taking external capital from an investor brings with it a set of expectations. As we discuss later, most investors are interested only in backing companies that can experience massive growth and generate a large financial return. It makes sense to want to start a company that grows at a more modest pace. Such companies often provide founders with an ongoing source of income and allow them to be in control of their own work-life balance.
 
 When you raise external capital, you're giving up some control over your company because you're no longer the sole owner. The company goes from being *my company* to *our company*.
 
@@ -42,11 +42,11 @@ A worksheet like the Founder Alignment Exercise is a useful input to help you de
 
 ## Control and dilution
 
-When you raise money from an investor, they'll want some input on how you run the company. They need this information to protect their investment and ensure that they're able to contribute positively to the company's growth.
+When you raise money from an investor, they want some input on how you run the company. They need this information to protect their investment and ensure that they're able to contribute positively to the company's growth.
 
 Their input might take the form of a seat on your board of directors or a board observer position, or it might take place informally through regular meetings with the founders. It can also involve giving the investor voting and veto rights on key strategic decisions. Usually, a separate class of shares is issued to investors with these rights attached.
 
-A good investor isn't interested in running your company, they just want to maximize its chance of success. Unless something goes terribly wrong, you and your cofounders will still be in charge of the company, making all the day-to-day decisions.
+A good investor isn't interested in running your company. They just want to maximize its chance of success. Unless something goes terribly wrong, you and your cofounders will still be in charge of the company, making all the day-to-day decisions.
 
 Nevertheless, many founders grapple with the question of giving up some control of their company.
 
@@ -66,7 +66,7 @@ The terminology used to describe each of these funding rounds varies considerabl
 
 |Funding round|Typical company stage|Typical source of capital|
 |---|---|---|
-|Friends and family|Idea, concept design, prototype or minimal viable product (MVP)|People you know who want to support you as an entrepreneur and who might not want or expect a large financial return|
+|Friends and family|Idea, concept design, prototype, or minimal viable product (MVP)|People you know who want to support you as an entrepreneur and who might not want or expect a large financial return|
 |Seed|MVP or product in market<br><br>Evidence of problem-solution fit<br><br>Early traction in the form of product usage and ideally some revenue|Angel investors<br><br>Seed-stage venture capital (VC) funds|
 |Series A|Established market<br><br>Evidence of product-market fit<br><br>Growth in revenue limited by capital rather than by demand|VC funds|
 |Series B, C, D, E|Expansion to other products, markets, and geographies|VC funds, private equity firms|
@@ -88,7 +88,7 @@ The riskier an investment, the higher the rate of return an investor should expe
 
 Generally speaking, at the low end of the risk-return spectrum are investments such as government bonds. Property and listed stocks are in the middle. Startups are at the top.
 
-It's estimated that more than [90 percent of all startups fail](https://www.investopedia.com/articles/personal-finance/040915/how-many-startups-fail-and-why.asp?azure-portal=true) and around [70 percent of seed-funded startups fail](https://www.alleywatch.com/2018/06/tracking-startup-progress-through-matriculation/?azure-portal=true), so a seed-stage investor who invests in 10 startups can only expect three of those startups to succeed.
+It's estimated that more than [90 percent of all startups fail](https://www.investopedia.com/articles/personal-finance/040915/how-many-startups-fail-and-why.asp?azure-portal=true) and around [70 percent of seed-funded startups fail](https://www.alleywatch.com/2018/06/tracking-startup-progress-through-matriculation/?azure-portal=true). So a seed-stage investor who invests in 10 startups can only expect three of those startups to succeed.
 
 Experienced investors have no problem with accepting risk, but only if they can see the potential for a large return to compensate them for all the investments that didn't make it.
 
