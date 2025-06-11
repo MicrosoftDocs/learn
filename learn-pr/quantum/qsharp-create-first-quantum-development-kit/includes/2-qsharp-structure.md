@@ -1,11 +1,11 @@
 
 Before you start writing quantum programs, it's important to understand the structure and components of a Q# program.
 
-In this unit, you'll review the main components of a Q# program.
+In this unit, you review the main components of a Q# program.
 
 ## The `Main` operation
 
-Every Q# program must contain at least one operation, which is usually the `Main` operation. The `Main` operation is the entry point of your program. By default, the Q# compiler starts executing a program from the `Main()` operation. Optionally, you can use the `@EntryPoint()` attribute to specify any operation in the program as the point of execution. 
+Every Q# program must contain at least one operation, which is usually the `Main` operation. The `Main` operation is the entry point of your program. By default, the Q# compiler starts executing a program from the `Main()` operation. Optionally, you can use the `@EntryPoint()` attribute to specify any operation in the program as the point of execution.
 
 For example, the following code defines an entry point operation, `MeasureOneQubit`:
 
@@ -39,7 +39,7 @@ operation MeasureOneQubit() : Result {
 
 ## Quantum libraries
 
-The Q# libraries contain functions and operations that you can use in quantum programs. When you call a function or operation from a library, you use the `import` directive and specify the library's namespace. For example, to use the `Message` function from the `Microsoft.Quantum.Intrinsic` namespace in the Standard quantum library, you do the following:
+The Q# libraries contain functions and operations that you can use in quantum programs. When you call a function or operation from a library, you use the `import` directive and specify the library's namespace. For example, to use the `Message` function from the `Microsoft.Quantum.Intrinsic` namespace in the Standard quantum library, you use the following code:
 
 ```qsharp
 // imports all functions and operations from Microsoft.Quantum.Intrinsic 
@@ -79,10 +79,9 @@ To implement a measurement in the computational basis $\lbrace\ket{0},\ket{1}\rb
 
 ## Resetting qubits
 
-In Q#, qubits must be in the $\ket{0}$ state by the time they are released. When you have finished using a qubit, you use the `Reset` operation to reset the qubit to the $\ket{0}$.
+In Q#, qubits must be in the $\ket{0}$ state by the time they're released. When you finish using a qubit, you use the `Reset` operation to reset the qubit to the $\ket{0}$ state.
 
 ```qsharp
     // Reset the qubit so it can be safely released.
     Reset(qubit);
 ```
-
