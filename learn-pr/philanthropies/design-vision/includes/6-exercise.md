@@ -26,8 +26,8 @@ Use Microsoft Copilot and Microsoft Designer to brainstorm a music video concept
 1. **Prompt Copilot to create a music video concept**  
    - Example prompt:  
      *"Generate a music video concept and brief script outline for a song about [your selected themes]. Include 5–7 key scenes with descriptions."*
-
-   ![Figure 1](/learn-pr/philanthropies/design-the-vision/media/module-1-exercise-figure-3.png "Screenshot of example Copilot prompt")
+   
+   :::image type="content" source="../media/module-1-exercise-figure-3.png" alt-text="Screenshot of example Copilot prompt.":::
 
 1. **Review and refine the script outline**  
    - Adjust the concept or script structure to better match your creative vision and the song's tone.
@@ -45,8 +45,8 @@ Use Microsoft Copilot and Microsoft Designer to brainstorm a music video concept
 
 1. **Select the best visuals**  
    - Choose the images that best capture the tone and details of your script outline.
-
-   ![Figure 3](/learn-pr/philanthropies/design-the-vision/media/module-1-exercise-figure-2.png "Screenshot of designer results")
+   
+   :::image type="content" source="../media/module-1-exercise-figure-2.png" alt-text="Screenshot of designer results.":::
 
 ## Part 4: Share and reflect
 

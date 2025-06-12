@@ -14,7 +14,7 @@ By using Copilot, creators move from concept to polished script quickly, ensurin
 
 ## Demonstration: generating and refining scripts with Copilot
 
-### 1. Generate an initial script idea
+### Generate an initial script idea
 
 To begin, open Copilot and enter a structured prompt based on your music video concept. For example:
 
@@ -27,7 +27,7 @@ Copilot produces an initial script outline, such as:
 **Climax:** They step through the door and find themself standing in front of a mirror. They touch the reflection, which shatters into a burst of light.  
 **Closing scene:** The light fades, revealing them standing confidently in a new landscape, symbolizing transformation and self-acceptance.
 
-### 2. Refine the script for clarity and impact
+### Refine the script for clarity and impact
 
 Once Copilot generates a draft, refine it by asking for specific improvements. Try prompts like:
 
@@ -46,7 +46,7 @@ Through iterative refinements, Copilot helps fine-tune the script to align with 
 
 Script writing is rarely a solo effort, especially in music video production. Copilot enhances collaboration by helping multiple contributors refine and adjust the script together.
 
-### 1. Real-time edits and suggestions
+### Real-time edits and suggestions
 
 Team members interact with the AI, request alternative versions of scenes, adjust dialogue, or modify pacing. For example, a director might ask:
 
@@ -55,32 +55,32 @@ Team members interact with the AI, request alternative versions of scenes, adjus
 
 Copilot provides multiple suggestions, giving the team flexibility in decision-making.
 
-### 2. Version control and iteration
+### Version control and iteration
 
 As changes are made, Copilot tracks different versions of the script. This version history lets teams compare drafts and revert when needed, keeping creative options open.
 
-### 3. Seamless integration with visual storyboarding
+### Seamless integration with visual storyboarding
 
 Since script writing and storyboarding go hand in hand, Copilot's script integrates directly with **Microsoft Designer**. Once finalized, the script guides AI-generated storyboard visuals, ensuring narrative and visual alignment.
 
 ## Tips for effective AI-assisted script writing
 
-### 1. Provide clear and detailed prompts
+### Provide clear and detailed prompts
 
 The more specific your input, the better the AI's output. Instead of saying "Write a music video script about love," try "Create a poetic music video script for a song about rekindling lost love, set in a futuristic city."
 
-### 2. Use AI as a starting point, not the final draft
+### Use AI as a starting point, not the final draft
 
 AI-generated scripts serve as a foundation. Always refine and personalize the content so it aligns with the artist's vision and storytelling style.
 
-### 3. Focus on emotion and visual storytelling
+### Focus on emotion and visual storytelling
 
 Music videos rely heavily on imagery. Make sure scene descriptions create strong, evocative visuals that complement the song's tone and message.
 
-### 4. Involve team members in the process
+### Involve team members in the process
 
 Share script drafts early and invite collaboration. Directors, cinematographers, and editors offer insights that strengthen storytelling and execution.
 
-### 5. Iterate and experiment
+### Iterate and experiment
 
 AI tools make revisions quick and easy. Try out multiple variations before settling on a final script—exploration often leads to unexpected creative breakthroughs.

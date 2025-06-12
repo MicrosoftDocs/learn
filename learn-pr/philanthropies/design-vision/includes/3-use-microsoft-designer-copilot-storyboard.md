@@ -10,7 +10,7 @@ Storyboarding is a crucial step in the preproduction process of a music video. I
 
 Let's take a look at how to create a storyboard using a step-by-step approach.
 
-### 1. Define your vision and key scenes
+### Define your vision and key scenes
 
 Before using AI tools, identify the key moments in your music video. Ask yourself:
 
@@ -20,7 +20,7 @@ Before using AI tools, identify the key moments in your music video. Ask yoursel
 
 For example, if your video tells a story of lost love in a dreamy, surreal landscape, you might include scenes like a foggy forest, a character walking through a neon-lit city, or a time-lapse of the sun setting.
 
-### 2. Generate scene descriptions with Copilot
+### Generate scene descriptions with Copilot
 
 Once you have a rough idea of your key scenes, use Copilot to help refine your storyboard structure. Open Copilot and enter a prompt like:
 
@@ -36,7 +36,7 @@ Copilot generates a structured breakdown, such as:
 
 Adjust the outline as needed, adding or removing elements based on your creative vision.
 
-### 3. Create storyboard images with Microsoft Designer
+### Create storyboard images with Microsoft Designer
 
 Now that you have a structured outline, create visual representations of each scene. Open Microsoft Designer and follow these steps:
 
@@ -52,25 +52,25 @@ Now that you have a structured outline, create visual representations of each sc
 
 ## Tips for effective storyboarding
 
-### 1. Keep it visually consistent
+### Keep it visually consistent
 
 A storyboard should maintain a coherent visual style. Make sure the AI-generated images have a consistent color palette, lighting, and framing to create a unified look.
 
-### 2. Use annotations for clarity
+### Use annotations for clarity
 
 Alongside each image, add brief notes about camera movements, transitions, or scene details. For example:
 
 - *"Slow zoom into character's face to emphasize emotion."*  
 - *"Quick cut to cityscape to symbolize a shift in reality."*
 
-### 3. Focus on key moments, not every frame
+### Focus on key moments, not every frame
 
 You don't need an image for every second of the video. Highlight the most important visual beats that convey the narrative and tone.
 
-### 4. Iterate and refine
+### Iterate and refine
 
 AI tools are powerful, but they may not deliver perfect results on the first try. Experiment with different prompts and make adjustments until your storyboard matches your vision.
 
-### 5. Collaborate with your team
+### Collaborate with your team
 
 Share your AI-generated storyboard with the project team—directors, cinematographers, and editors—to gather feedback and refine the concept before production begins.
