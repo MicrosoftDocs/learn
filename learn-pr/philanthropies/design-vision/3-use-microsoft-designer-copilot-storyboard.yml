@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.design-vision.use-microsoft-designer-copilot-storyboard
+
+title: Using Microsoft Designer and Copilot for storyboarding
+metadata:
+  title: Using Microsoft Designer and Copilot for Storyboarding
+  description: "In this unit, learners explore how AI tools like Microsoft Designer and Copilot streamline the storyboarding process for music video production. Learners explore how to generate structured storyboard outlines, create high-quality visuals from text prompts, and refine their creative vision through AI-driven design. Keywords: AI, Copilot, Designer"
+  ms.date: 3/20/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-use-microsoft-designer-copilot-storyboard.md)]

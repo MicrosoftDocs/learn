@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.philanthropies.design-vision
+metadata:
+  title: Design the Vision - Storyboard with Copilot & Designer
+  description: "Evaluate how Microsoft Designer and Copilot support creative planning, storyboarding, and script writing tasks for music video preproduction."
+  ms.date: 3/20/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: module-intro-to-product
+  ms.service: artificial-intelligence
+  
+  
+title: Design the vision - storyboard with Copilot & Designer
+
+summary: "Characterize the types of (preproduction planning tasks) that (Microsoft Designer and Copilot) can (streamline for music video production). Describe the function of (storyboarding, script writing, visual generation, and collaborative editing) that (accelerate concept development and prepare polished project assets)."
+
+abstract: |
+  By the end of this module, you can:
+  - Evaluate whether Microsoft Designer and Copilot are appropriate to streamline preproduction tasks for music video creation.
+  - Describe how storyboarding, script writing, and collaborative editing features of Microsoft Designer and Copilot accelerate creative planning and visual development.
+
+
+prerequisites: |
+  - Familiarity with Digital Tools and Creative Software
+  - Basic Understanding of Music Video Production
+  
+
+iconUrl: /learn/achievements/generic-badge.svg
+
+levels:
+  - beginner
+
+roles:
+  - student
+  - maker
+  - k-12-educator
+
+products:
+- ms-copilot
+
+subjects:
+  - artificial-intelligence
+
+units:
+- learn.philanthropies.design-vision.introduction
+- learn.philanthropies.design-vision.production
+- learn.philanthropies.design-vision.use-microsoft-designer-copilot-storyboard
+- learn.philanthropies.design-vision.leverage-copilot
+- learn.philanthropies.design-vision.knowledge-check
+- learn.philanthropies.design-vision.exercise
+- learn.philanthropies.design-vision.summary
+badge:
+  uid: learn.philanthropies.design-vision.badge
