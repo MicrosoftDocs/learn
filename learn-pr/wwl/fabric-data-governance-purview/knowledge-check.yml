@@ -14,24 +14,24 @@ quiz:
   questions:
   - content: "You're considering whether to add Microsoft Purview to your Microsoft Fabric environment for its extra governance features. Which of the following features is only available in Purview?"
     choices:
-    - content: "Data Loss Prevention (DLP)"
+    - content: "Data Loss Prevention (DLP)."
       isCorrect: true
       explanation: "Correct. DLP policies aren't available in Microsoft Fabric until you add Purview to your subscriptions."
-    - content: "Sensitivity tags"
+    - content: "Sensitivity tags."
       isCorrect: false
       explanation: "Incorrect. You can use tags to label items in Microsoft Fabric without Purview."
-    - content: "Capacities"
+    - content: "Capacities."
       isCorrect: false
       explanation: "Incorrect. You can use capacities to limit compute resource usage in Fabric without Purview."
   - content: "Which of the following reports are included in the Purview Hub?"
     choices:
-    - content: "Sensitivity label report"
+    - content: "Sensitivity label report."
       isCorrect: true
       explanation: "Correct. This report is in the Purview Hub."
     - content: "Audit report."
       isCorrect: false
       explanation: "Incorrect. This isn't the name of a report in the Purview Hub."
-    - content: "Workspace items report"
+    - content: "Workspace items report."
       isCorrect: false
       explanation: "Incorrect. This isn't the name of a report in the Purview Hub."
   - content: "Which feature does Microsoft Purview add to Microsoft Fabric for data governance?"
