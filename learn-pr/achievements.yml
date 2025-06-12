@@ -5795,3 +5795,8 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.machine-learning.machine-learning-with-r.trophy
+  type: trophy
+  title: Create machine learning models with R and tidymodels
+  summary: Learn how to explore and analyze data by using R. Get an introduction to regression models, classification models, and clustering models by using tidymodels and R.
+  iconUrl: /training/achievements/machine-learning/machine-learning-with-r.svg
