@@ -1,67 +1,50 @@
-Microsoft Fabric includes some basic governance features that might be sufficient for the needs of some organizations. 
+Microsoft Fabric includes a set of governance and compliance capabilities that might be sufficient for the needs of some organizations. Other governance capabilities can be accessed in Microsoft Purview.
 
-In your health care provider, you have precise data governance needs because legislation in some of your territories is very strict but you don't want to incur unnecessary expense. You want to assess the data governance features in Microsoft Fabric to find out if it covers your requirements on its own.
-
-In this unit, let's explore Fabric's governance features.
+If, for example, you work at a health care company, you have specific data governance needs because of regulatory requirements. In this unit, we'll explore Fabric's governance features so you can assess if they meet your requirements.  
 
 ## What is Microsoft Fabric?
 
-[![A diagram showing the architecture of Microsoft Fabric in a simplified form.](../media/fabric-architecture-1.png)](../media/fabric-architecture-1.png)
+[![A diagram showing the architecture of Microsoft Fabric in a simplified form.](../media/fabric-architecture.png)](../media/fabric-architecture.png)
 
-Fabric is Microsoft's end-to-end analytics and data platform. The Software-as-a-Service (SaaS) platform can store, move, process, ingest, transform, and analyze your data regardless of its size and current format. Because Fabric seamlessly integrates your data, you no longer need to interface solutions from different vendors using diverse protocols. Once you have data in the location and format you need it, advanced business intelligence features can analyze it and generate insights to support your decision making. All Fabric features and tools are supported with AI integration, which accelerates your productivity.
-
-> [!NOTE]
-> Microsoft Fabric includes features previously available separately in Power BI, Azure Synapse Analytics, and Azure Data Factory along with new capabilities.
-
-### Fabric experiences
-
-Fabric includes diverse experiences to address all your data manipulation and analysis needs:
-
-- **Data Factory**: Use this experience to ingest, prepare, and transform data from many different sources through diverse data connectors.
-- **Synapse Data Engineering**: This experience is a Spark platform that you can use to collect, store, process, and analyze vast volumes of data through scheduled jobs and notebooks.
-- **Synapse Data Warehouse**: Use this experience to separate compute from storage and scale each independently. Data is stored in Data Lake format and demonstrates industry-leading SQL performance.
-- **Synapse Data Science**: Use this experience to train, deploy, and use machine learning models.
-- **Real-Time Intelligence**: This experience is a complete solution for event-driven data, such as device telemetry, data logs, and streaming data.
-- **Power BI**: Use this experience to visualize, investigate, and discover trends hidden in your data. You can share Power BI reports to support the best decision making.
-- **Data Activator**: Use this experience to specify actions, such as emails and workflows, that launch when specific conditions are met in your data. You can create these actions without writing code.
+Fabric is Microsoft's end-to-end analytics and data platform. The platform can store, move, process, ingest, transform, and analyze your data regardless of its size and current format. Once you have data in the location and format you need it, advanced business intelligence features can be used to analyze data, and generate insights to support your decision making.
 
 ### OneLake
 
-In Fabric, all information is stored in a data lake, which can hold both structured and unstructured data. Microsoft's implementation of the data lake is called OneLake and is built on Azure Data Lake Storage (ADLS) generation 2. This single underlying storage mechanism helps to eliminate silos and reduce costs while ensuring that policies and security are applied universally.
+In Fabric, all information is stored in a data lake, which can hold both structured and unstructured data. Microsoft's implementation of the data lake is called OneLake and is built on Azure Data Lake Storage (ADLS) generation 2. With all data residing in OneLake, there's a single copy of data that doesn't need to be moved or duplicated. This single underlying storage mechanism helps ensure that policies and security controls are applied universally.
 
 ## What is data governance?
 
-The data your organization possesses and processes is often business-critical and highly sensitive. It's vital to most companies that data is held securely, easily available, and processed in compliance with legislation in all the territories you operate in.
+The data that an organization works with is often business-critical and highly sensitive. Sensitive data must be: held securely, easily available, and processed in compliance with legislation in all the locations where an organization operates.
 
-Data governance is a term that describes the policies and practices you use to ensure the quality, consistency, security, and usability of your data. The discipline encompasses a range of activities and responsibilities that manage data effectively throughout its lifecycle.
+Data governance is the practice of managing data to ensure the quality, consistency, security, and usability of data. It involves setting up a framework that includes roles, responsibilities, processes, policies, and standards that are used to manage data throughout its lifecycle.
 
 A data governance program usually includes:
 
-- **Auditing**: Recording where data originates from and who modifies it
-- **Evaluation**: Assessing the usefulness and accuracy of your data
-- **Documentation**: Describing the nature of your data to people who might use it
-- **Management**: Removing inaccurate data, responding to access requests, ensuring compliance with data legislation
-- **Protection**: Securing data against unauthorized access, ransomware, and other attacks
+- **Auditing**: Recording where data originates and who modifies it.
+- **Evaluation**: Assessing the usefulness and accuracy of data.
+- **Documentation**: Providing clear descriptions of data to support informed use.
+- **Management**: Correcting inaccurate data, fulfilling access requests, and maintaining compliance with data legislation.
+- **Protection**: Securing data from unauthorized access, ransomware threats, and other malicious attacks.
 
-Well governed data is trustworthy and easily available to the right people.
+Well-governed data is reliable and readily accessible to those who need it.
 
 > [!TIP]
-> Large organizations also often have data that is divided into silos. Historic systems and databases, possessed by separate units within your business, impose barriers for security purposes that hinder access. In these cases, the integration of data and the removal of data silos, in such a way that security is maintained, is a vital component of data governance.
+> In large organizations, data is often stored and managed separately across different business units, creating what are known as data silos. These silos can hinder effective data governance due to inconsistent standards and policies across teams. Breaking down these silos by integrating data—while preserving security and compliance—is essential for establishing a unified and governed data environment.
 
-A solid data governance regimen can realize benefits for your company such as:
+Implementing data governance can lead to benefits such as:
 
-- A single source of truth that reduces confusion and supports good decision making.
-- Higher quality data that reflects the world it measures more precisely.
+- A single source of truth that reduces confusion and supports decision making.
+- Improved data quality.
 - Faster compliance with access requests.
-- Reduced costs for data storage and management.
+- Reduced data storage and management costs.
 
 ## Data governance features in Microsoft Fabric
 
-You can perform many data governance tasks in Fabric, straight off the shelf and without an additional subscription to Microsoft Purview. Let's examine some of the capabilities that are available:
+Many data governance tasks can be performed using your Microsoft Fabric license, without the need for an additional Microsoft Purview license. Let’s explore some of the built-in data governance capabilities available directly within Fabric.
 
 ### Managing the data estate
 
-Your organization's data estate is its entire collection of data assets. Large data estates take administrative time to maintain and manage. Fabric can help this task with these tools:
+Your organization’s data estate encompasses all its data assets. Managing a large data estate can be complex and resource-intensive. Microsoft Fabric simplifies managing your data estate with these tools:
 
 - **The Fabric Admin portal**: control tenant settings, capacities, domains, and other objects, typically reserved for administrators.
 - **Tenants, domains, and workspaces**: logical containers that you can use to control access to data and capabilities. Fabric administrators, for example, should have access to all settings in the tenant whereas team level data controllers might only have control of settings on their domain or workspace.
@@ -72,7 +55,7 @@ Your organization's data estate is its entire collection of data assets. Large d
 
 ### Securing and protecting data
 
-Secure data is protected against unauthorized access and destructive attacks. It's also compliant with data storage regulations applicable in your region. Fabric includes the following helpful tools:
+Secure data is safeguarded from unauthorized access and malicious attacks. It's also compliant with data storage regulations applicable in your region. Fabric includes the following tools to secure and protect data:
 
 - **Data tags**: Use tags to identity the sensitivity of data and apply data retentions and protection policies.
 - **Workspace roles**: Use roles to define the users who are authorized to access the data in a workspace.
@@ -81,7 +64,7 @@ Secure data is protected against unauthorized access and destructive attacks. It
 
 ### Encouraging data discovery and use
 
-Data is only helpful if users can locate and analyze it. These features of Fabric can encourage data use:
+Data only becomes valuable when users can find and analyze it. These Microsoft Fabric features help promote data discovery and encourage meaningful use:
 
 - **OneLake data hub**: This tool makes it easy for users to find and explore the data in your estate.
 - **Endorsement**: Users endorse a Fabric item to identity it as of high quality. Endorsements help other users to trust the data that the item contains.
@@ -89,10 +72,11 @@ Data is only helpful if users can locate and analyze it. These features of Fabri
 
 ### Monitoring data usage
 
-Fabric enables users to monitor how information is used:
+Fabric helps users track how data is being used through built-in monitoring tools:
 
-- **Monitoring hub**: This hub shows what happened to Fabric items. You only see activities for the Fabric items that you have the permission to view.
-- **Capacity Metrics**: Use the Capacity Metrics app to monitor usage and consumption.
+- **Monitoring Hub:** Provides a centralized view of Microsoft Fabric activities. Users can only see activity related to Fabric items they have permission to access.
+
+- **Capacity Metrics App:** Offers insights into Fabric usage and resource consumption, helping teams manage capacity effectively.
 
 ## Learn more
 

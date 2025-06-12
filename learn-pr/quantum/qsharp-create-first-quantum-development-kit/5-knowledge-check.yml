@@ -7,7 +7,7 @@ metadata:
   author: azure-quantum-content
   ms.author: quantumdocwriters
   
-  ms.date: 10/30/2024
+  ms.date: 06/09/2025
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 7
@@ -25,16 +25,16 @@ quiz:
       explanation: "The quantum random number generator doesn't use the CPU's clock to generate random numbers. A classical pseudo-random number generator would do that."
     - content: "The quantum random number generator creates one qubit, measures it, and the result of the measurement is a random decimal number."
       isCorrect: false
-      explanation: "The result of the measurement of a qubit is a random bit, not a random decimal number. This isn't the logic behind the random number generator that you built in this module."
+      explanation: "The result of the measurement of a qubit is a random bit, not a random decimal number. This answer doesn't describe the logic behind the random number generator that you built in this module."
     - content: "The quantum random number generator creates a bit string from the repetition of measurements of a qubit in superposition. Then, it takes the bit string and converts it to a decimal number."
       isCorrect: true
-      explanation: "This is the logic behind the random number generator that you built in this module."
+      explanation: "This statement describes the logic behind the random number generator that you built in this module."
 
   - content: 'Which of the following structures are required for a Q# program to run successfully?'
     choices:
     - content: 'To run successfully, a Q# program must have a function.'
       isCorrect: false
-      explanation: "A function is not required in a Q# program."
+      explanation: "A function isn't required in a Q# program."
     - content: "To run successfully, a Q# program must have an entry point, which is the `Main` operation."
       isCorrect: true
       explanation: "Every Q# program must have an entry point, which is the `Main` operation, so the Q# compiler knows where to start the program."
@@ -52,4 +52,4 @@ quiz:
       explanation: "You first allocate a qubit using `use` and then apply `A` to the qubit allocated using `A(q);`."
     - content: "You allocate a qubit using `use q = Qubit();` and then apply `A` to `q` using `A[q];`."
       isCorrect: false
-      explanation: "To apply an operation to a qubit, you must use parentheses, `A(q);`."
+      explanation: "To apply an operation to a qubit, you must use parentheses, `A(q);`."
