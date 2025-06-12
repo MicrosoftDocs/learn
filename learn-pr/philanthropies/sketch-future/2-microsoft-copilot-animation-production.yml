@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.sketch-future.microsoft-copilot-animation-production
+title: Microsoft Copilot for animation preproduction
+metadata:
+  title: Microsoft Copilot for Animation Preproduction
+  description: "In this unit, learners explore how Microsoft Copilot supports the preproduction phase of animation projects. Learners explore how Copilot enhances creative planning by generating story structures, proposing visual styles, and organizing production workflows. Keywords: Microsoft Copilot, animation planning, AI-assisted storyboarding, pre-production workflows, creative collaboration."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-microsoft-copilot-animation-production.md)]
