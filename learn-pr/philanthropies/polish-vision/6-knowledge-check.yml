@@ -97,7 +97,7 @@ quiz:
     - content: "Use visual enhancements that align with the tone and style of the music."
       isCorrect: true
       explanation: "Visual elements should support the emotional tone and aesthetic of the music video."
-    - content: "Create cariety using different styles in each scene."
+    - content: "Create variety using different styles in each scene."
       isCorrect: false
       explanation: "Consistency is important to maintain a cohesive visual identity."
     - content: "Only use visuals generated in earlier modules."

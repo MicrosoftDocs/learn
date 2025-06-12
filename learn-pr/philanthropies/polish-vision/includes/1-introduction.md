@@ -2,7 +2,7 @@ In this session, we explore how AI tools can level up your music video during po
 
 ## Scenario
 
-Now that your teaser is approved and production is done, it's time to bring everything together. You upload your clips into Clipchamp. Next you use Clipchamps AI tools to find the best takes, add smooth transitions, and match the pace of the video with the beat of the song. You adjust the color, clean up background noise, and layer in subtle effects that make the video look and feel more professional.
+Now that your teaser is approved and production is done, it's time to bring everything together. You upload your clips into Clipchamp. Next you use Clipchamp's AI tools to find the best takes, add smooth transitions, and match the pace of the video with the beat of the song. You adjust the color, clean up background noise, and layer in subtle effects that make the video look and feel more professional.
 
 To make the visuals even stronger, you open Microsoft Designer to create extra touches—like animated lyrics and scene titles—that boost the mood and message. You add these graphics into Clipchamp to give the final video a polished, intentional feel.
 

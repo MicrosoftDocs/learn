@@ -1,7 +1,5 @@
 Once your music video assets are ready, the next step is to pull everything together in the edit. **Microsoft Clipchamp** is a browser-based video editor powered by AI. It's built to make editing fast, easy to learn, and flexible for your creative needs. Whether you're just starting out or already have experience, Clipchamp's tools help you clean up footage, sync it to music, and give your video a polished, professional look.
 
-## Edit with Microsoft Clipchamp
-
 Earlier, you used Clipchamp to create a short teaser video. You brought in visuals from **Microsoft Designer**, used **Copilot** to suggest transitions, and synced clips to your music. Now, you build on those skills to create a full-length video with more advanced tools and AI features.
 
 ### Step-by-step: editing your music video

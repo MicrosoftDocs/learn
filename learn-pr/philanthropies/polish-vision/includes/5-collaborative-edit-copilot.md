@@ -1,7 +1,5 @@
 While Microsoft Copilot is great for coming up with ideas and building content, it really shines when you're working with a team. In postproduction, collaboration is key—whether you're working with an artist, a director, or a small crew. Copilot helps with teamwork by giving smart suggestions, generating new options, and guiding creative choices in real time during editing.
 
-## Collaborative editing with Microsoft Copilot
-
 ### How Copilot helps teams edit together
 
 Copilot isn't just for solo projects—it's built to support feedback, discussion, and shared creativity. Here's how it helps teams during postproduction:

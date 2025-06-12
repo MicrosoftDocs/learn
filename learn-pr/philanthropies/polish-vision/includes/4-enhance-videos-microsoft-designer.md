@@ -1,7 +1,5 @@
 While Microsoft Designer is great for creating storyboards and concept art, it also plays a big role in postproduction. At this stage, you use Designer not just to show your idea—but to shape the **visual identity** of your final music video. Whether you're adding overlays, custom backgrounds, or graphics for promotion, Designer gives you tools to create a consistent, cinematic look that ties everything together.
 
-## Enhance videos with Microsoft Designer
-
 In the last module, you used Designer to build the visuals for your storyboard and teaser. Now, you expand on those designs and create new ones that add more style, detail, and personality to your finished video.
 
 ### Ways to use Designer for visual touches
