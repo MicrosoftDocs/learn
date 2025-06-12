@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.polish-vision.exercise
+
+title: Exercise - Final music video polish & enhancement
+metadata:
+  title: Exercise - Final Music Video Polish & Enhancement
+  description: "Apply advanced AI post-production techniques using Microsoft Clipchamp, Designer, and Copilot to enhance, refine, and finalize a music video teaser."
+  ms.date: 4/25/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-exercise.md)]
