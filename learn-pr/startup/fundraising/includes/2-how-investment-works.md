@@ -211,7 +211,6 @@ A $5 million return might sound like a phenomenal outcome. That's $4 million mor
 If we know Melanie needs to make a $5 million portfolio return, and so far nine companies have returned only $800,000, we know that company 10 needs to generate a return of $4.2 million.
 
 That's a return of $4.2 million on an investment of $100,000, or a 42-time return on Melanie's investment.
-
 Melanie's portfolio would now look like the following table:
 
 |Investee|Amount invested|Investor return on exit|
