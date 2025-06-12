@@ -19,4 +19,4 @@ We explore how AI supports the early stages of animation planning and apply Micr
 
 ## What is the main goal?
 
-The goal of this session is to help learners use AI tools like **Copilot** and **Designer** to improve the early planning stages of animation. Participants build storyboards, concept frames, and visual style guides that lay the foundation for a professional animation project—
+The goal of this session is to help learners use AI tools like **Copilot** and **Designer** to improve the early planning stages of animation. Participants build storyboards, concept frames, and visual style guides that lay the foundation for a professional animation project.
