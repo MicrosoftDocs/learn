@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.build-vision.integrating-ai-bring-creative-concepts-life
+
+title: Integrating AI to bring creative concepts to life
+metadata:
+  title: Integrating AI to Bring Creative Concepts to Life
+  description: "Combine Microsoft Copilot, Clipchamp, and Designer to streamline music video production, from concept development to visual enhancement and editing. Keywords: Copilot, Clipchamp, Microsoft Designer, AI music video production, creative workflow integration, AI storytelling."
+  ms.date: 3/20/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-integrating-ai-bring-creative-concepts-life.md)]
+
