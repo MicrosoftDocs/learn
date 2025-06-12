@@ -5,8 +5,8 @@ metadata:
   title: Learn about cloud attach
   description: Learn about steps to cloud attach your on-premises devices and implement co-management by using Microsoft Intune and Microsoft Endpoint Configuration Manager.
   ms.date: 06/10/2025
-  author: Nwhite
-  ms.author: nwhite
+  author: nwhite
+  ms.author: nicholasswhite
   ms.topic: unit
 durationInMinutes: 3
 content: |

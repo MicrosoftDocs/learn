@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Microsoft Intune - Summary.
   ms.date: 06/10/2025
-  author: Nwhite
-  ms.author: nwhite
+  author: nwhite
+  ms.author: nicholasswhite
   ms.topic: unit
 durationInMinutes: 2
 content: |
