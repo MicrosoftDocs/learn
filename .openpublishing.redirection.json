@@ -1,6 +1,46 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/6-availability-enhancements.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/5-scalability.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/4-security-enhancements.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/3-exercise-ledger.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/2-ledger.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/enable-reliable-messaging-for-big-data-apps-using-event-hubs/7-summary",
       "redirect_document_id": false
