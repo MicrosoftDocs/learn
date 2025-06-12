@@ -48633,6 +48633,56 @@
       "source_path": "learn-pr/sqlserver/sql-server-2022-performance-enhancements/8-summary.md",
       "redirect_url": "/training/paths/get-started-querying-with-transact-sql/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/2-machine-learning-process.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/3a-upload-images.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/3b-train-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/3-build-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/4-understand-results-test.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/5-deploy-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
 ]
 }
