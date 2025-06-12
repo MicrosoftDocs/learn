@@ -19,7 +19,7 @@ The Purview solutions can be accessed via the Microsoft Purview Portal.
 Microsoft Purview enables you to discover, manage, and protect Fabric data using Purview tools. Purview can be configured to scan your Fabric item and present data governance findings in the Purview Hub located in Fabric or in Purview itself. To unlock the following capabilities, register your Fabric tenant in Microsoft Purview. 
 
 ### Microsoft Purview Data Map
-Data Map can be used to scan all of your data assets, to capture metadata about them and to identify sensitive data. It captures metadata about data in existing analytics, software-as-a-service, and operational systems in hybrid, on-premise, and multicloud environments. There's a built-in scanning and classification system that keeps the Data Map updated.
+Data Map can be used to scan all of your data assets, to capture metadata about them and to identify sensitive data. It captures metadata about data in existing analytics, software-as-a-service, and operational systems in hybrid, on-premises, and multicloud environments. There's a built-in scanning and classification system that keeps the Data Map updated.
 
 ### Microsoft Purview Unified Catalog
 
