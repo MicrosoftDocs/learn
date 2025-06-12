@@ -4,8 +4,7 @@ trigger:
     include:
     - main
 
-pool:
-  vmImage: ubuntu-latest
+pool: Dafault
 
 variables:
   - name: deploymentDefaultLocation
