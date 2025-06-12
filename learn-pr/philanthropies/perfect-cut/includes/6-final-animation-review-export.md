@@ -12,7 +12,8 @@ Before exporting your animation:
 
 Use **Clipchamp's preview window** and test playback at different speeds to catch subtle errors.
 
-> **Tip:** Ask for peer or instructor feedback—it often reveals details you might miss.
+> ![Tip] 
+> Ask for peer or instructor feedback—it often reveals details you might miss.
 
 ## Step 2: Optimize export settings
 

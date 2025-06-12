@@ -15,7 +15,8 @@ In Clipchamp:
 1. Upload all assets to your media library  
 1. Drag and drop your components onto the timeline to begin constructing the animation  
 
-> **Tip:** Organize the timeline into scenes or sections to simplify editing and revisions.
+> ![Tip]
+> Organize the timeline into scenes or sections to simplify editing and revisions.
 
 ## Step 2: Apply effects and overlays
 
