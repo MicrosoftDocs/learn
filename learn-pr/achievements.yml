@@ -5795,3 +5795,13 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.machine-learning.introduction-regression-models.badge
+  type: badge
+  title: Introduction to regression models by using R and tidymodels
+  summary: Get an introduction to regression models. In machine learning, the goal of regression is to create a model that can predict a numeric, quantifiable value.
+  iconUrl: /training/achievements/machine-learning/introduction-regression-models.svg
+- uid: learn.machine-learning.introduction-classification-models.badge
+  type: badge
+  title: Introduction to classification models by using R and tidymodels
+  summary: Classification is a form of machine learning in which you train a classification model to predict which category an item belongs to. In this module, you learn how to use the R programming language and tidymodels framework to train classification models.
+  iconUrl: /training/achievements/machine-learning/introduction-classification-models.svg
