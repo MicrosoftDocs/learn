@@ -49,21 +49,21 @@ Use OpenAI's **Sora** to transform a static 2D image into a cinematic video sequ
    - Drag frames on the timeline to set their exact duration and position.  
 
 1. **Customize settings**  
-   - Choose your video resolution, aspect ratio, visual variations, and total time duration.  
-   - Once satisfied, click **Create** to generate your cinematic video.  
+   1. Choose your video resolution, aspect ratio, visual variations, and total time duration.  
+   1. Once satisfied, click **Create** to generate your cinematic video.  
 
    :::image type="content" source="../media/module-2-exercise-figure-6.png" alt-text="Screenshot of how to customize settings.":::  
 
 1. **Wait for processing**  
-    - Your video will be added to the rendering queue.  
-    - When complete, a notification appears in the top-right corner.  
+    1. Your video will be added to the rendering queue.  
+    1. When complete, a notification appears in the top-right corner.  
 
     :::image type="content" source="../media/module-2-exercise-figure-7.png" alt-text="Screenshot of processing video.":::
 
 1. **View and celebrate your creation**  
-    - Play the video to review your animated scene.  
-    - You've successfully brought your 2D image to life with cinematic motion.  
+    1. Play the video to review your animated scene.  
+    1. You've successfully brought your 2D image to life with cinematic motion.  
 
 1. **Download your video**  
-    - Click the **Download** button at the top of the screen.  
-    - Choose whether to download it as a **video** or **GIF**.
+    1. Click the **Download** button at the top of the screen.  
+    1. Choose whether to download it as a **video** or **GIF**.
