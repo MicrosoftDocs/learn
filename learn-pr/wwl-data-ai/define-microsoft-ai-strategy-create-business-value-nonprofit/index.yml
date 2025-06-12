@@ -3,7 +3,7 @@ uid: learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit
 metadata:
   title: Define a Microsoft AI strategy to create business value in nonprofit
   description: "Discover AI use cases and scenarios for nonprofit organizations. Get familiar with Microsoft AI tools and services for nonprofit. Learn from real success stories."
-  ms.date: 06/11/2025
+  ms.date: 06/12/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module-intro-to-product
@@ -17,7 +17,7 @@ abstract: |
   -   Identify AI use cases for nonprofit&nbsp;organizations.
 
   -   Identify Microsoft AI technologies that can support nonprofit&nbsp;use cases.
-prerequisites: None
+prerequisites: '-   None'
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
