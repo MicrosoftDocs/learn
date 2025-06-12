@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.perfect-cut.integrate-ai-generated-assets-final-animations
+title: Integrate AI-generated assets into final animations
+metadata:
+  title: Integrate AI-Generated Assets into Final Animations
+  description: "In this unit, learners explore how to integrate AI-generated assets like characters, backgrounds, and motion effects into a unified final animation using Microsoft Clipchamp. Learners discover strategies to blend AI elements seamlessly and enhance storytelling impact. Keywords: AI-generated assets, Microsoft Clipchamp, animation post-production, visual storytelling, animation asset integration."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-integrate-ai-generated-assets-final-animations.md)]
