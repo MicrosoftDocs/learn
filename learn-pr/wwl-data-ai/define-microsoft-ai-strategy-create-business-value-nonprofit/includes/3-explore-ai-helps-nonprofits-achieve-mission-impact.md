@@ -1,4 +1,4 @@
-Limited staffing, rising demand for services, donor fatigue, and operational inefficiencies can stretch even the most dedicated nonprofit teams thin. These obstacles don’t just affect internal workflows—they directly impact the people and communities nonprofits serve.
+Limited staffing, rising demand for services, donor fatigue, and operational inefficiencies can stretch even the most dedicated nonprofit teams thin. These obstacles don’t just affect internal workflows—they directly impact the people and communities the nonprofits serve.
 
 ![Screenshot organizational challenges facing nonprofits.](../media/3-organizational-challenges.jpg)
 
@@ -15,6 +15,8 @@ In addition to these internal pressures, nonprofits must also navigate broader g
 
 AI offers a powerful opportunity to help nonprofits overcome these barriers. Rather than replacing the human touch that defines nonprofit work, AI enhances it. By automating routine tasks, surfacing insights from data, and enabling more personalized engagement, AI empowers nonprofits to do more with less. AI helps leaders make informed decisions faster, tailor outreach to supporters, and streamline operations so that more energy can be focused on mission-critical work.
 
+![Screenshot of warehouse with volunteers packing boxes.](../media/3-volunteer.jpg)
+
 When thoughtfully applied, AI can unlock new capacity, resilience, and potential—ultimately allowing nonprofits to serve their constituents more effectively and sustainably.
 
 ## AI objectives in nonprofit
@@ -27,8 +29,6 @@ To achieve these outcomes, nonprofits are applying AI across key functional area
 - **Donor relations**. Personalizing engagement and strengthening relationships.
 - **Volunteer management**. Optimizing recruitment, scheduling, and retention.
 - **People development**. Supporting staff training and leadership growth.
-
-![Screenshot of warehouse with volunteers packing boxes.](../media/3-volunteer.jpg)
 
 This is where AI can be a transformative ally. Rather than replacing the human touch that defines nonprofit work, AI enhances it.
 

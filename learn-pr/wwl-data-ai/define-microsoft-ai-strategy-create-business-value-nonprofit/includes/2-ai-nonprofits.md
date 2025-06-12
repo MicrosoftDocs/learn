@@ -17,10 +17,10 @@ The following table describes how these drivers collectively enable nonprofits t
 
 | - | Drivers | Description |
 |--------|--------|--------|
-| ![Screenshot of enrich staff experiences icon.](../media/2-staff-experiences.jpg) | **Enrich staff experiences**     | Empower nonprofit staff to transform their daily work through digital tools and AI, improving efficiency across fundraising, program delivery, HR, and finance.                                                                        |
-| ![Screenshot of impactful programs icon.](../media/2-impactful-programs.jpg) | **Deliver impactful programs**    | Use technology to enhance program delivery, monitoring, and evaluation, ensuring alignment and measurable outcomes for staff and participants.                                               |
-| ![Screenshot of engage supporters icon.](../media/2-engage-supporters.jpg) | **Engage supporters & funders**| Expand and deepen relationships with supporters and funders by streamlining funding and marketing strategies to reach a broader audience.                                                             |
-| ![Screenshot of transform operation icon.](../media/2-transform-operation.jpg) | **Transform operations**| Modernize operations and financial processes with AI and automation to shift focus from back-office tasks to mission-driven program delivery. |
+| :::image type="icon" source="../media/2-staff-experiences.jpg"::: | **Enrich staff experiences**     | Empower nonprofit staff to transform their daily work through digital tools and AI, improving efficiency across fundraising, program delivery, HR, and finance. |
+| :::image type="icon" source="../media/2-impactful-programs.jpg"::: | **Deliver impactful programs**    | Use technology to enhance program delivery, monitoring, and evaluation, ensuring alignment and measurable outcomes for staff and participants.                                               |
+| :::image type="icon" source="../media/2-engage-supporters.jpg"::: | **Engage supporters and funders**| Expand and deepen relationships with supporters and funders by streamlining funding and marketing strategies to reach a broader audience. |
+| :::image type="icon" source="../media/2-transform-operation.jpg"::: | **Transform operations**| Modernize operations and financial processes with AI and automation to shift focus from back-office tasks to mission-driven program delivery. |
 
 ## Microsoft Tech for Social Impact
 
@@ -28,7 +28,7 @@ Microsoft Tech for Social Impact (TSI) is a global initiative that empowers nonp
 
 The Microsoft TSI Partner ecosystem provides further innovation and scale, helping nonprofits of all sizes with sector-by providing specific solutions and support for AI implementation and deployment. TSI offers [free digital skills training](https://www.microsoft.com/nonprofits/resources?azure-portal=true) to help nonprofits be successful with their technology.
 
-![Screenshot of the tech for social impact business model.](../media/2-tech-social-impact.jpg)
+:::image type="content" source="../media/0-tech-social-impact.jpg" alt-text="Screenshot of the tech for social impact business model." lightbox="../media/02-copilot-open-screen.png":::
 
 In the following video, see how Microsoft partners to support nonprofit organizations.
 

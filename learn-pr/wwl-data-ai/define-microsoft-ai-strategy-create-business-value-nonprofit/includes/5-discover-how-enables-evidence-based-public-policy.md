@@ -4,7 +4,7 @@ Nonprofit organizations can use Microsoft 365 Copilot to enhance productivity an
 
 RTI International is an independent, nonprofit research institute dedicated to improving the human condition. RTI's work in social and laboratory sciences, engineering, and international development helps clients inform public policy and ground practice in evidence.
 
-![Screenshot of a woman working in an RTI lab.](../media/5-RTI.jpg)
+![Screenshot of a woman working in an RTI lab.](../media/5-rti-lab.jpg)
 
 ## The challenge
 

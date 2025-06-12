@@ -12,7 +12,7 @@ Malnutrition is a significant issue in Kenya, affecting 18 percent of children u
 
 ## The solution
 
-The AI-based malnutrition forecasting model developed by the Microsoft AI for Good Lab and USC utilizes anonymized health data from the District Health Information System and other complementary data sources like satellite imagery. The model, built using Microsoft Azure, predicts malnutrition risks at subcounty levels and at one-, three-, and six-month intervals. This allows Amref and its partners to plan interventions, mobilize resources, and prevent malnutrition more effectively.
+The AI-based malnutrition forecasting model developed by the Microsoft AI for Good Lab and USC utilizes anonymized health data from the District Health Information System and other complementary data sources like satellite imagery. The model, built using Microsoft Azure, predicts malnutrition risks at subcounty levels and at one, three, and six-month intervals. This allows Amref and its partners to plan interventions, mobilize resources, and prevent malnutrition more effectively.
 
 > "AI helps us predict cases of malnutrition and channel resources to where they are truly needed. The future looks more bright because we’re using technology to save children." - _Herbert Basra, Monitoring and Evaluation Lead, Amref_
 

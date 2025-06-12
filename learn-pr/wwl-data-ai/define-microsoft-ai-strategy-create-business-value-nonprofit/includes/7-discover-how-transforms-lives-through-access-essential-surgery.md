@@ -32,7 +32,7 @@ The project was architected and deployed in less than two months, showcasing the
 
 ## The results
 
-Translation errors are down by 90%, repeated medical events are down by 15%, report generation is happening up to 95% quicker, and patients are getting the help they need faster with AI-powered visual assessments.
+Translation errors are down by 90 percent, repeated medical events are down by 15 percent, report generation is happening up to 95 percent quicker, and patients are getting the help they need faster with AI-powered visual assessments.
 
 > "Creating access to care relies on real-time data, which enables us to better understand patients, their needs, and the challenges they face. Insights from Microsoft Azure OpenAI Service allow us to deliver more effective care and create a lasting impact in communities." - _Sean Riordan, Associate Vice President of Information Technology at Operation Smile_
 
@@ -42,7 +42,7 @@ Operation Smile can already see the impact of these tools on its processes, and 
 
 ![Screenshot of a woman and child consulting with a doctor.](../media/7-smile.jpg)
 
-Using Power Apps for data collection, Operation Smile already reduced translation errors by about 90%. The organization sees a 15% decrease in recurring medical issues, because the organization can now quickly identify and address problems with greater precision. The digitalization of forms and the use of Azure AI reduced the time required for completing reports from four to five hours to just 15 to 20 minutes.
+Using Power Apps for data collection, Operation Smile already reduced translation errors by about 90 percent. The organization sees a 15 percent decrease in recurring medical issues, because the organization can now quickly identify and address problems with greater precision. The digitalization of forms and the use of Azure AI reduced the time required for completing reports from four to five hours to just 15 to 20 minutes.
 
 > “Our Azure AI solutions have significantly reduced the time required to do many tasks, giving staff more time to focus on supporting medical professionals, patients, and families." - _Dr. Bryan Zimmerman, Vice President of Medical Quality at Operation Smile_
 
