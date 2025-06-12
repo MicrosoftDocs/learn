@@ -16,36 +16,36 @@ Use AI tools to improve and finalize your music video teaser from earlier sessio
 
 1. Watch your music video teaser from Session 2.
 1. Make a simple plan for what to improve. Look for:
-  - 2–3 spots that could use color changes or visual upgrades  
-  - Any timing that feels off  
-  - Transitions that could be smoother  
-  - Places to add text or custom visuals
+   - 2–3 spots that could use color changes or visual upgrades  
+   - Any timing that feels off  
+   - Transitions that could be smoother  
+   - Places to add text or custom visuals
 
 ### Part 2: Edit with Clipchamp
 
 1. Open your project in **Clipchamp**.
 
 1. Use **AI color tools**:
-  - Try auto color grading to keep your video looking consistent  
-  - Use filters to match the song's mood  
+   - Try auto color grading to keep your video looking consistent  
+   - Use filters to match the song's mood  
 
 1. Fix **audio timing**:
-  - Use beat detection to sync visuals to the music  
-  - Adjust clips to make the rhythm and emotions feel right  
+   - Use beat detection to sync visuals to the music  
+   - Adjust clips to make the rhythm and emotions feel right  
 
 1. Add **better transitions**:
-  - Replace basic cuts with AI-suggested transitions  
-  - Choose ones that support the story and tone of your video  
+   - Replace basic cuts with AI-suggested transitions  
+   - Choose ones that support the story and tone of your video  
 
 ### Part 3: Design custom graphics
 
 1. Open **Microsoft Designer**.
 
 1. Create at least **two** of the following:
-  - A lower-third text (like the artist name or song title)  
-  - An end card or outro with credits or release info  
-  - A graphic overlay for your favorite shot  
-  - An animated title or logo  
+   - A lower-third text (like the artist name or song title)  
+   - An end card or outro with credits or release info  
+   - A graphic overlay for your favorite shot  
+   - An animated title or logo  
 
 1. Use a prompt like:  
    "Design a clean lower-third graphic for a music video called '[your song title].' It should match the [genre] style and use colors that fit with the video's look."
