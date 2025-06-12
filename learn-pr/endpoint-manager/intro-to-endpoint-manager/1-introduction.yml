@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Learn why you need to protect your organization's endpoints by using Microsoft Intune. 
   ms.date: 06/10/2025
-  author: nwhite
-  ms.author: nicholasswhite
+  author: nicholasswhite
+  ms.author: nwhite
   ms.topic: unit
 durationInMinutes: 4
 content: |
