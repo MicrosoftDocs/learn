@@ -14,7 +14,7 @@ quiz:
   questions:
   - content: "If you're pitching an early-stage investor, the most important thing to demonstrate is:"
     choices:
-    - content: "That you've researched the investor and know that your startup is a fit for their investment mandate."
+    - content: "That you researched the investor and know that your startup is a fit for their investment mandate."
       isCorrect: false
       explanation: "Incorrect. Making sure your startup is a good fit for an investor is important, but it's not the only option."
     - content: "That you're focusing 100 percent of your time on your startup."
@@ -23,9 +23,9 @@ quiz:
     - content: "That you have evidence of product-market fit in the form of customer traction or revenue."
       isCorrect: false
       explanation: "Incorrect. Showing that you have customer traction or revenue is important, but it's not the only option."
-    - content: "That you've identified growth levers you can use to generate traction, revenue, and profit."
+    - content: "That you identified growth levers you can use to generate traction, revenue, and profit."
       isCorrect: false
-      explanation: "Incorrect. Showing that you've identified growth levers is important, but it's not the only option."
+      explanation: "Incorrect. Showing that you identified growth levers is important, but it's not the only option."
     - content: "All of the above."
       isCorrect: true
       explanation: "Correct. When you pitch an early-stage investor, you need to ensure your startup is a good fit for the investor. You also need to provide evidence of your commitment, product-market fit, and growth levers."
@@ -49,13 +49,13 @@ quiz:
     choices:
     - content: "Friends and family."
       isCorrect: true
-      explanation: "Correct. Friends and family often provide initial funding for startups. When you only have an idea and haven't yet made a product, friends and family are generally the only investors who provide funding."
+      explanation: "Correct. Friends and family often provide initial funding for startups. When you only have an idea and haven't made a product yet, friends and family are generally the only investors who provide funding."
     - content: "Angel investors."
       isCorrect: false
-      explanation: "Incorrect. Generally, angel investors consider investing only after a startup has launched an MVP or product and generated early traction in the form of product usage and revenue."
+      explanation: "Incorrect. Generally, angel investors consider investing only after a startup launches an MVP or product, and generates early traction in the form of product usage and revenue."
     - content: "VC funds."
       isCorrect: false
-      explanation: "Incorrect. Generally, VC funds consider investing only after a startup has launched a product, generated early traction, and can demonstrate product-market fit."
+      explanation: "Incorrect. Generally, VC funds consider investing only after a startup launches a product, generates early traction, and can demonstrate product-market fit."
     - content: "The stock market."
       isCorrect: false
       explanation: "Incorrect. Investors put money into the stock market. The stock market isn't a source of funding for startups."
@@ -77,4 +77,4 @@ quiz:
     - content: "All of the above."
       isCorrect: true
       explanation: "Correct. Due diligence covers employment contracts, previous investments, disputes, and loans, among other topics."
-
+
