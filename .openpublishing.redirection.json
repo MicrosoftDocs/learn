@@ -48633,6 +48633,51 @@
       "source_path": "learn-pr/sqlserver/sql-server-2022-performance-enhancements/8-summary.md",
       "redirect_url": "/training/paths/get-started-querying-with-transact-sql/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/2-what-is-clustering.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/3-exercise-train-evaluate-clustering-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/4-evaluate-different-types-clustering.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/5-exercise-train-evaluate-advanced-clustering-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/7-challenge-clustering.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
 ]
 }

@@ -5795,3 +5795,8 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.machine-learning.introduction-clustering-models.badge
+  type: badge
+  title: Introduction to clustering models by using R and tidymodels
+  summary: Get an introduction to clustering models. Clustering is the process of grouping objects with similar objects.
+  iconUrl: /training/achievements/machine-learning/introduction-clustering-models.svg
