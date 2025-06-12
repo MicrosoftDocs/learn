@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.animate-impossible.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "In this unit, learners reflect on how AI tools like Sora transform traditional 2D animation workflows. Keywords: Sora, AI animation enhancement, frame interpolation, 2D-to-3D transformation, animation storytelling."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+  
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-summary.md)]

@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.philanthropies.animate-impossible
+metadata:
+  title: Animate the Impossible - 2D/3D Motion Techniques with Sora
+  description: "Explore how Sora enables AI-powered enhancements to traditional 2D animation workflows, including motion smoothing, frame interpolation, and 2D-to-3D transformation techniques."
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: module-intro-to-product
+  ms.service: artificial-intelligence
+title: Animate the impossible - 2D/3D motion techniques with Sora
+
+summary: "Examine how AI tools like Sora can transform 2D animated assets by adding depth, motion smoothing, and dynamic camera effects for more immersive storytelling."
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain how Sora enhances 2D animation workflows with frame interpolation and depth simulation.
+  - Apply AI techniques to smooth animation sequences and create pseudo-3D visual effects.
+  - Compare the before-and-after impact of AI enhancements on animation quality.
+
+prerequisites: |
+  - Completion of the Concept Design and Planning module (recommended)
+  - Basic understanding of animation principles
+
+iconUrl: /learn/achievements/generic-badge.svg
+
+levels:
+  - beginner
+
+roles:
+  - student
+  - maker
+  - k-12-educator
+
+products:
+- ms-copilot
+
+subjects:
+  - artificial-intelligence
+
+units:
+- learn.philanthropies.animate-impossible.introduction
+- learn.philanthropies.animate-impossible.animation-transformation
+- learn.philanthropies.animate-impossible.motion-simulation-generated-video
+- learn.philanthropies.animate-impossible.enhanced-animations-transformation
+- learn.philanthropies.animate-impossible.animation-concept-visualization
+- learn.philanthropies.animate-impossible.generated-cinematic-animations-case-studies
+- learn.philanthropies.animate-impossible.exercise
+- learn.philanthropies.animate-impossible.knowledge-check
+- learn.philanthropies.animate-impossible.summary
+
+badge:
+  uid: learn.philanthropies.animate-impossible.badge

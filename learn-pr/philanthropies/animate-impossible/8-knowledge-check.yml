@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.animate-impossible.knowledge-check
+
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge check for Module."
+  ms.date: 3/20/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+
+durationInMinutes: 10
+
+quiz:
+  questions:
+  - content: "What is Sora primarily used for in animation workflows?"
+    choices:
+    - content: "Generating cinematic video from text or images"
+      isCorrect: true
+      explanation: "Sora is designed to turn static visuals or text prompts into cinematic sequences, adding motion, and depth using AI."
+    - content: "Editing keyframes in traditional animation software"
+      isCorrect: false
+      explanation: "Sora doesn't use traditional animation timelines or keyframes."
+    - content: "Writing scripts for animated dialogue scenes"
+      isCorrect: false
+      explanation: "Sora focuses on visual animation and motion, not script writing, or dialogue."
+
+  - content: "How does Sora simulate motion in static images?"
+    choices:
+    - content: "By applying camera effects, lighting shifts, and parallax layering"
+      isCorrect: true
+      explanation: "Sora adds simulated movement by using depth layering, visual effects, and cinematic camera techniques."
+    - content: "By redrawing frames using vector paths"
+      isCorrect: false
+      explanation: "Sora doesn't animate by redrawing frames—it simulates motion using AI algorithms."
+    - content: "By exporting to traditional animation tools like Blender"
+      isCorrect: false
+      explanation: "Sora is used as a standalone tool and does not require export to Blender for its core functions."
+
+  - content: "Which input types does Sora support for generating animations?"
+    choices:
+    - content: "Text prompts and still images"
+      isCorrect: true
+      explanation: "Sora can generate video from both descriptive text and static image inputs."
+    - content: "Live-stream footage"
+      isCorrect: false
+      explanation: "Sora isn't used for processing live-stream video; it's optimized for pregenerated content."
+    - content: "3D models only"
+      isCorrect: false
+      explanation: "Sora doesn't require or use 3D models—it enhances 2D content with pseudo-3D effects."
+
+  - content: "Why are parallax and depth simulation important in 2D animations?"
+    choices:
+    - content: "They make flat scenes feel more immersive and dynamic"
+      isCorrect: true
+      explanation: "Parallax and depth create a sense of 3D movement from 2D elements, improving visual engagement."
+    - content: "They're used to create audio effects for voiceovers"
+      isCorrect: false
+      explanation: "Depth simulation applies to visuals, not audio design."
+    - content: "They replace the need for storyboard development"
+      isCorrect: false
+      explanation: "Storyboarding is still an important phase and not replaced by depth effects."
+
+  - content: "What does a before-and-after comparison with Sora typically show?"
+    choices:
+    - content: "How AI adds cinematic quality like motion, lighting, and realism"
+      isCorrect: true
+      explanation: "Before-and-after comparisons highlight how Sora transforms static inputs into visually rich sequences."
+    - content: "How dialogue trees are developed from concept art"
+      isCorrect: false
+      explanation: "Sora doesn't create dialogue trees—it focuses on visual storytelling."
+    - content: "How to animate using frame-by-frame drawing"
+      isCorrect: false
+      explanation: "Sora uses AI-based simulation, not manual frame-by-frame animation."
