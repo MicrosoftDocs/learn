@@ -55,4 +55,4 @@ You can use the following flowchart for other questions to ask as you plan for u
 
 
 > [!TIP]
-> Continue learning about Azure Functions in the [Introduction to Azure Logic Apps](/training/modules/intro-to-logic-apps/) module.
+> Continue learning about Azure Logic Apps in the [Introduction to Azure Logic Apps](/training/modules/intro-to-logic-apps/) module.
