@@ -154,7 +154,7 @@ Let's explore this concept further by working through a hypothetical angel inves
 
 ## Scenario: An angel investor's perspective
 
-Melanie is an angel investor. She decides to make seed-stage investments in 10 companies with an average investment of $100,000 in each company. These investments will take place over a period of a few years.
+Melanie is an angel investor. She decides to make seed-stage investments in 10 companies with an average investment of USD100 thousand in each company. These investments will take place over a period of a few years.
 
 Melanie doesn't know which of the companies she backs will ultimately be successful, but realizes that each company she invests in must have a chance at being hugely successful. She makes her investments with this idea in mind.
 
@@ -184,7 +184,7 @@ Similarly, out of every 10 investments, on average two make a small positive ret
 
 If we now look at Melanie's investment portfolio, we can populate nine of the 10 investment outcomes. Five failed, which generated zero return. Two generated a one-time return, and two more generated a two-time and a four-time return.
 
-We can see that Melanie's portfolio return from these nine investments is $800,000.
+We can see that Melanie's portfolio return from these nine investments is USD800 thousand.
 
 |Investee|Amount invested|Investor return on exit|
 |---|---|---|
@@ -204,13 +204,13 @@ The table tells us that company number 10 must be the one that makes Melanie's i
 
 How well does company number 10 need to do? We can estimate this amount by working backwards from an expected portfolio rate of return. We noted earlier that seed-stage investors look for at least a 30 percent annual rate of return across their startup investment portfolio.
 
-If Melanie invests $1 million and holds these investments for seven years, she needs to realize a $5 million return on her $1 million invested. A simple [internal rate of return (IRR)](https://www.investopedia.com/terms/i/irr.asp?azure-portal=true) calculation confirms this return.
+If Melanie invests USD1 million and holds these investments for seven years, she needs to realize a USD5 million return on her USD1 million invested. A simple [internal rate of return (IRR)](https://www.investopedia.com/terms/i/irr.asp?azure-portal=true) calculation confirms this return.
 
-A $5 million return might sound like a phenomenal outcome. That's $4 million more than Melanie invested. But remember that she's investing in risky startups and could've made a much safer return by investing in lower-risk assets.
+A USD5 million return might sound like a phenomenal outcome. That's USD4 million more than Melanie invested. But remember that she's investing in risky startups and could've made a much safer return by investing in lower-risk assets.
 
-If we know Melanie needs to make a $5 million portfolio return, and so far nine companies have returned only $800,000, we know that company 10 needs to generate a return of $4.2 million.
+If we know Melanie needs to make a USD5 million portfolio return, and so far nine companies have returned only USD800 thousand, we know that company 10 needs to generate a return of USD4.2 million.
 
-That's a return of $4.2 million on an investment of $100,000, or a 42-time return on Melanie's investment.
+That's a return of USD4.2 million on an investment of USD100 thousand, or a 42-time return on Melanie's investment.
 Melanie's portfolio would now look like the following table:
 
 |Investee|Amount invested|Investor return on exit|
@@ -229,9 +229,9 @@ Melanie's portfolio would now look like the following table:
 
 Some startup founders might think that a 42-time return sounds egregious, but it's perfectly rational. If Melanie invests in 10 companies, and she doesn't know which of them will be successful, *every single company she invests in must be capable of generating something like a 42-time return*.
 
-Let's consider what this scenario looks like from the company's point of view. An investor return of $4.2 million doesn't represent the value of the entire company. If we assume that Melanie invested in the seed round, and the company then raised money from other investors, her shareholding will have been diluted. It might have gone from 10 percent at the seed round to 2 percent on exit.
+Let's consider what this scenario looks like from the company's point of view. An investor return of USD4.2 million doesn't represent the value of the entire company. If we assume that Melanie invested in the seed round, and the company then raised money from other investors, her shareholding will have been diluted. It might have gone from 10 percent at the seed round to 2 percent on exit.
 
-If 2 percent of the company is worth $4.2 million, the entire company must be worth $210 million on exit.
+If 2 percent of the company is worth USD4.2 million, the entire company must be worth USD210 million on exit.
 
 As a startup founder, if you're aiming to raise money from investors, you need to see a realistic path to achieve the sort of growth and scale described here for company 10.
 
