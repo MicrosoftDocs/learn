@@ -5795,3 +5795,13 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.language.react-work-with-components-and-data.badge
+  type: badge
+  title: Working with data and properties in React components
+  summary: The goal of React components is to create reusable blocks of code and UI. To support reusability, you can pass data into components through the use of properties. We will see how to add properties to a component, and work with complex data types such as arrays.
+  iconUrl: /training/achievements/react/react-components-data.svg
+- uid: learn.language.react-states-events.badge
+  type: badge
+  title: React state and events
+  summary: Applications typically involve data that will be changed by user interactions. These changes are often managed through some form of state and events. In this module, we explore the concepts of state and events. We also look at the tools React provides for management.
+  iconUrl: /training/achievements/react/react-state-events.svg
