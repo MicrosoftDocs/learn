@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement Azure Blob Storage
   description: "Implement Azure Blob Storage"
-  ms.date: 06/06/2025
+  ms.date: 06/13/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
