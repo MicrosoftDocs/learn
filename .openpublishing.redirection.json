@@ -48633,6 +48633,66 @@
       "source_path": "learn-pr/sqlserver/sql-server-2022-performance-enhancements/8-summary.md",
       "redirect_url": "/training/paths/get-started-querying-with-transact-sql/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/2-set-up-project.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/3-configure-unity-for-toolkit.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/4-create-player-button.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/5-add-button-ui.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/6-create-player-stats-card.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/7-add-stats-card-ui.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/8-configure-button-pressed-events.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/9-add-players-to-scene.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
 ]
 }

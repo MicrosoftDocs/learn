@@ -5795,3 +5795,8 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.sports-machine-learning.use-mixed-reality-toolkit.badge
+  type: badge
+  title: Create a mixed reality basketball player lineup with the Mixed Reality Toolkit
+  summary: "Use C#, Visual Studio, Unity, and the Mixed Reality Toolkit to create an interactive virtual reality experience compatible with the HoloLens. Inspired by *Space Jam: A New Legacy*, you create an experience for coaches and fans to learn more about the Tune Squad."
+  iconUrl: /training/achievements/student-evangelism/create-mixed-reality-basketball-lineup-mixed-reality-toolkit.svg
