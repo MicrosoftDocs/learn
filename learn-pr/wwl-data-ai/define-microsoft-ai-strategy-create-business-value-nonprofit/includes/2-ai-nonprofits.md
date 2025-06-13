@@ -28,7 +28,7 @@ Microsoft Tech for Social Impact (TSI) is a global initiative that empowers nonp
 
 The Microsoft TSI Partner ecosystem provides further innovation and scale, helping nonprofits of all sizes with sector-by providing specific solutions and support for AI implementation and deployment. TSI offers [free digital skills training](https://www.microsoft.com/nonprofits/resources?azure-portal=true) to help nonprofits be successful with their technology.
 
-:::image type="content" source="../media/2-tech-social-impact.jpg" alt-text="Screenshot of the tech for social impact business model." lightbox="../media/2-tech-social-impact.png":::
+:::image type="content" source="../media/2-tech-social-impact.jpg" alt-text="Screenshot of the tech for social impact business model." lightbox="../media/2-tech-social-impact.jpg":::
 
 In the following video, see how Microsoft partners to support nonprofit organizations.
 
