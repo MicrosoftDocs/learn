@@ -5795,3 +5795,13 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.optimize-basketball-games-with-machine-learning.trophy
+  type: trophy
+  title: "Use basketball stats to optimize game play with Visual Studio Code, inspired by SPACE JAM: A NEW LEGACY"
+  summary: "Inspired by the new film _Space Jam: A New Legacy_, this learning path shows basketball fans how an understanding of data science and coding can support their passions, create opportunities, and even open doors to possible careers. Develop skills in Visual Studio Code, Azure, GitHub, JavaScript, and Python, to gain insights into how individual moments throughout a player's history can lead to a critical game decision in the finals."
+  iconUrl: /training/achievements/student-evangelism/optimize-basketball-games-with-machine-learning.svg
+- uid: learn.sports-machine-learning.mixed-reality-for-sports-fans.badge
+  type: badge
+  title: Prepare to bring the basketball court into a Mixed Reality space
+  summary: "Discover the fundamentals of Mixed Reality and prepare the resources you need to create an interactive experience for basketball fans and coaches inspired by *Space Jam: A New Legacy*."
+  iconUrl: /training/achievements/mixed-reality-for-sports-fans.svg
