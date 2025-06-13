@@ -18,7 +18,7 @@ The AI-based malnutrition forecasting model developed by the Microsoft AI for Go
 
 ## The results
 
-The AI-powered tool enables Amref to act earlier and more precisely, improving health outcomes for children and mothers. By predicting malnutrition hotspots, Amref can strategically deploy resources and staff, preventing hunger before it sets in. The tool also allows for better program evaluation and design, helping Amref quantify their impact and refine their strategies. The success of this tool led to plans for replicating the framework to address other health concerns and potentially expanding its use to other countries.
+The AI-powered tool enables Amref to act earlier and more precisely, improving health outcomes for children and mothers. By predicting malnutrition hotspots, Amref can strategically deploy resources and staff, preventing hunger before it sets in. The tool also allows for better program evaluation and design, helping Amref quantify their impact and refine their strategies. The success of this tool led to plans for replicating the framework to address other health concerns and potentially expanding its use to other regions.
 
 > “By using AI, we will always be ready to act.” - _Samuel Mburu, Head of Digital Transformation at Amref_
 
