@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Module assessment"
-  ms.date: 06/12/2025
+  ms.date: 06/13/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -25,7 +25,7 @@ quiz:
     - content: "AI is used to replace human decision-making in strategic planning."
       isCorrect: false
       explanation: "Incorrect. While AI can provide valuable insights, it doesn't replace human decision-making in strategic planning."
-  - content: "What is the main goal for AI projects in the Nonprofit industry?"
+  - content: "What is the main goal for AI projects in the nonprofit industry?"
     choices:
     - content: "To replace human workers with AI technology."
       isCorrect: false
