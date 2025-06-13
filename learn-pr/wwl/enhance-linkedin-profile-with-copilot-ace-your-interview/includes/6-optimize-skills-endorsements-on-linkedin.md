@@ -1,8 +1,5 @@
 Your Skills & Endorsements section is a valuable tool for highlighting your expertise, credibility, and industry relevance. As a student building your LinkedIn profile, focus on selecting meaningful skills and actively engaging with your network to present yourself in a professional and impactful way.
 
-:::image type="content" source="../media/professional-brand-11.jpeg" alt-text=" An AI generated image shows a professional handshake between two individuals in a business setting, surrounded by applauding colleagues. It signifies a successful agreement or partnership.":::
-Figure: 1-11 Building your personal professional brand online.
-
 ## Why are skills & endorsements important?
 
 | **Benefit** | **Why It Matters** |

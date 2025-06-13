@@ -10,6 +10,3 @@ As you move forward:
 - Stay active in your field by learning, networking, and showcasing your expertise.
 
 Your professional identity is constantly evolving, and LinkedIn is a powerful tool for shaping your career path. Keep updating, engaging, and refining your presence, and you'll be well-positioned for exciting opportunities ahead.
-
-:::image type="content" source="../media/celebrate-win-15.jpeg" alt-text="An AI generated image showing a person in a suit with a red tie celebrating during a job interview, while another person holds a clipboard labeled JOB INTERVIEW.":::
-Figure: 1-15 Celebrating the win!

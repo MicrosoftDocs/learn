@@ -1,8 +1,5 @@
 Preparing for job interviews is an essential skill that helps boost confidence, refine communication, and enhance career success. In this module, you'll learn effective strategies to present yourself professionally, answer questions with clarity, and leave a lasting impression on employers—setting yourself up for greater job opportunities.
 
-:::image type="content" source="../media/mastering-interviews-13.jpeg" alt-text="AI generated image of two professionals in business attire seated at a table in a modern office, engaged in a discussion with documents and pens. The setting suggests an interview or meeting.":::
-Figure: 1-13 Mastering your job interviews.
-
 ## Preparing for your interview
 
 The key to a successful interview is preparation. Employers look for candidates who demonstrate confidence, enthusiasm, and a strong understanding of the role they're applying for. Researching the company, practicing common questions, and structuring your responses effectively ensures you communicate your strengths clearly and reduce nervousness—helping you appear as a capable and thoughtful candidate.

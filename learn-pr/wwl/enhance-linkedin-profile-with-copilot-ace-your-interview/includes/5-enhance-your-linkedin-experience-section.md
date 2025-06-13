@@ -4,9 +4,6 @@ Even if you're just starting out and don't have extensive work history, there ar
 
 By focusing on learning, growth, and impactful contributions, you can build a LinkedIn profile that sets you up for success.
 
-:::image type="content" source="../media/build-linkedin-profile-8.jpeg" alt-text="The AI generated image depicts a group collaborating around a table with documents, charts, and colorful graphs.":::
-Figure: 1-08 Building a compelling LinkedIn profile.
-
 ## Creating a narrative of growth and achievements
 
 Your LinkedIn Experience section should go beyond listing responsibilities—it should tell a story of development. Employers and recruiters want to see how each role helped you gain skills, solve problems, or collaborate with others.

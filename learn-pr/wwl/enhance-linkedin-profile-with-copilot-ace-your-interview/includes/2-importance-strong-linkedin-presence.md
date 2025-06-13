@@ -26,9 +26,7 @@ Microsoft Copilot is an AI-powered assistant designed to help you navigate chall
 
 ### New to Copilot? Get started here
 
-If you haven't used Microsoft Copilot before and need additional guidance, explore the Get Started with Microsoft Copilot module on Microsoft Learn: Get started with Microsoft Copilot
-
-[https://learn.microsoft.com/training/modules/get-started-with-copilot/](/training/modules/get-started-with-copilot/)
+If you haven't used Microsoft Copilot before and need additional guidance, explore the Get Started with Microsoft Copilot module on Microsoft Learn: [Get started with Microsoft Copilot](/training/modules/get-started-with-copilot/)
 
 :::image type="content" source="../media/copilot-chat-2.png" alt-text="Screenshot of Microsoft Copilot interface with a chat box for queries, real-time responses, and navigation options for different platforms.":::
 Figure: 1-02 Microsoft Copilot Chat.
