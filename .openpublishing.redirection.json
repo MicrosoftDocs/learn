@@ -48633,6 +48633,61 @@
       "source_path": "learn-pr/sqlserver/sql-server-2022-performance-enhancements/8-summary.md",
       "redirect_url": "/training/paths/get-started-querying-with-transact-sql/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/2-what-is-model-builder.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/3-choose-scenario-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/4-train-model-builder.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/5-exercise-train-model-builder.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/6-consume-model-builder.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/7-exercise-consume-model-builder.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/knowledge-check-model-builder.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/knowledge-check-scenario-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
 ]
 }
