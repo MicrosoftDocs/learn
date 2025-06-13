@@ -3,9 +3,9 @@ uid: learn.startups.name-brand
 metadata:
   title: Naming and branding
   description: Learn how to choose a good name for your startup and create a strong brand.
-  ms.date: 06/05/2024
-  author: ryanmesches
-  ms.author: vahughes
+  ms.date: 06/13/2025
+  author: vaquresh
+  ms.author: vaquresh
   ms.topic: module
   ms.service: azure
   ms.collection: learn-startups
@@ -39,4 +39,4 @@ units:
 - learn.startups.name-brand.summary
 badge:
   uid: learn.startups.name-brand.badge
-
+
