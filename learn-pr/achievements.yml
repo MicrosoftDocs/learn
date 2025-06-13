@@ -5795,3 +5795,13 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.badge
+  type: badge
+  title: Create a web app that uses data to make decisions on the basketball court
+  summary: "Use JavaScript, Azure, GitHub, and Visual Studio Code to write a web app that helps the Tune Squad coach make data-based decisions on the basketball court, inspired by SPACE JAM: A NEW LEGACY."
+  iconUrl: /training/achievements/student-evangelism/optimize-basketball-player-rest-breaks.svg
+- uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.badge
+  type: badge
+  title: Predict basketball player efficiency ratings by using machine learning and Visual Studio Code
+  summary: "By using anonymized data from real and animated basketball players in the upcoming film *Space Jam: A New Legacy*, create a machine learning model to cleanse data to be used during games. Also explore bimodal data distributions by using Python in Visual Studio Code."
+  iconUrl: /training/achievements/student-evangelism/predict-basketball-player-efficiency-ratings.svg
