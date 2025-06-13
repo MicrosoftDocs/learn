@@ -1,4 +1,4 @@
-Learn how Amref Health Africa, a global health nonprofit, is using Azure AI to predict and prevent malnutrition in Kenya. This initiative involves collaboration with the Kenyan Ministry of Health, the University of Southern California (USC), and the Microsoft AI for Good Lab to develop an AI-powered tool that forecasts malnutrition hotspots and informs proactive interventions.
+Learn how Amref Health Africa, a global health nonprofit organization, is using Azure AI to predict and prevent malnutrition in Kenya. This initiative involves collaboration with the Kenyan Ministry of Health, the University of Southern California (USC), and the Microsoft AI for Good Lab to develop an AI-powered tool that forecasts malnutrition hotspots and informs proactive interventions.
 
 ## The organization
 

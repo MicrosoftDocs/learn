@@ -2,7 +2,7 @@ AI is transforming the nonprofit sector by offering innovative solutions to enha
 
 ## AI-driven transformation
 
-Let's take a  closer look at some top opportunities for AI-driven transformation in nonprofits.
+Let's take a  closer look at some top opportunities for AI-driven transformation in nonprofit organizations.
 
 ### Enrich staff experiences
 
@@ -20,7 +20,7 @@ By harnessing the power of innovative technology, nonprofits can design and deli
 
 ![Screenshot a smiling woman holding a windmill prototype.](../media/4-donor-engagement.jpg)
 
-Building strong relationships with supporters and funders is at the heart of every successful nonprofit. By using innovative technology and strategic approaches, your organization can create meaningful connections that inspire continued support and amplify your mission’s impact. Our solutions help streamline fundraising, enhance donor communications, and deliver personalized engagement, making it easier to reach individuals, corporations, foundations, and institutions eager to make a difference.
+Building strong relationships with supporters and funders is at the heart of every successful nonprofit. By using innovative technology and strategic approaches, your organization can create meaningful connections that inspire continued support and amplify your mission’s impact. Our solutions help streamline fundraising, enhance donor communications, and deliver personalized engagement. These solutions make it easier to reach individuals, corporations, foundations, and institutions eager to make a difference.
 
 With data-driven insights and automated outreach tools, your nonprofit can grow its network, foster loyalty, and maximize contributions. Engaging storytelling and transparent reporting allow you to demonstrate the tangible results of every gift, further motivating constituents and funders to invest in your work. By transforming the way you connect, you not only secure essential resources but also build a vibrant community of advocates committed to lasting change.
 

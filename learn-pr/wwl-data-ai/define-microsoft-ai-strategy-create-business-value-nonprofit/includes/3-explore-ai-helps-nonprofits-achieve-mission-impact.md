@@ -19,7 +19,7 @@ AI offers a powerful opportunity to help nonprofits overcome these barriers. Rat
 
 When thoughtfully applied, AI can unlock new capacity, resilience, and potential—ultimately allowing nonprofits to serve their constituents more effectively and sustainably.
 
-## AI objectives in nonprofit
+## AI objectives in nonprofit organizations
 
 The primary goal of AI initiatives in the nonprofits is to help address these challenges by integrating intelligent technologies and address specific challenges. This includes improving grant writing and fundraising, deepening donor engagement, and using data-driven insights to make smarter, faster decisions.
 
@@ -38,7 +38,7 @@ This infographic illustrates how AI can address key pain points across three vit
 
 ## Security and privacy
 
-Ensuring the privacy, security, and ethical use of AI is vital for nonprofits. Microsoft provides robust security and governance solutions to help you maintain compliance and protect your data. By prioritizing data security, you can build confidence among your supporters and beneficiaries, demonstrating your commitment to ethical and responsible data management.
+Ensuring the privacy, security, and ethical use of AI is vital for nonprofit organizations. Microsoft provides robust security and governance solutions to help you maintain compliance and protect your data. By prioritizing data security, you can build confidence among your supporters and beneficiaries, demonstrating your commitment to ethical and responsible data management.
 
 Consider the following pillars of governing and securing AI:
 

@@ -9,7 +9,7 @@ AI helps nonprofits by improving fundraising, streamlining operations, and enhan
 
 ## AI-enabled sustainable growth
 
-There are several key drivers of AI value for nonprofits.
+There are several key drivers of AI value for nonprofit organizations.
 
 ![Screenshot of top four drivers of AI value for nonprofits.](../media/2-ai-value.jpg)
 

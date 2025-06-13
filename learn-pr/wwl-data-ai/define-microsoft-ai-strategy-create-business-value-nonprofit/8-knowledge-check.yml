@@ -14,12 +14,12 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the role of AI in strategic planning for nonprofits?"
+  - content: "What is the role of AI in strategic planning for nonprofit organizations?"
     choices:
     - content: "AI supports strategic goals by analyzing data to identify trends, optimize resources, and predict outcomes, boosting donor engagement and developing growth plans."
       isCorrect: true
       explanation: "Correct. AI aids in strategic planning by providing data-driven insights to optimize resources and predict outcomes."
-    - content: "AI is used to eliminate the need for strategic planning in nonprofits."
+    - content: "AI is used to eliminate the need for strategic planning in nonprofit organizations."
       isCorrect: false
       explanation: "Incorrect. AI supports strategic planning, it doesn't eliminate the need for it."
     - content: "AI is used to replace human decision-making in strategic planning."
