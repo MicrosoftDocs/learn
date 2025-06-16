@@ -48643,6 +48643,16 @@
       "source_path": "learn-pr/wwl-language/csharp-readable-code/6-solution.md",
       "redirect_url": "/training/modules/csharp-readable-code/6-review-solution-code-readability-challenge",
       "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-arrays/4-challenge.md",
+      "redirect_url": "/training/modules/csharp-arrays/4-exercise-challenge-nested-iteration",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-arrays/5-solution.md",
+      "redirect_url": "/training/modules/csharp-arrays/5-review-solution-nested-iteration-challenge",
+      "redirect_document_id": false
   }
 ]
 }
