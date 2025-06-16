@@ -249,7 +249,7 @@ What if we need to exit the iteration statement prematurely based on some condit
 
 ### Loop through each element of an array
 
-A common usage for the `for` statement is to iterate through an array of elements, especially if you need some control over the manner in which the iteration happens. While the `foreach` iterates through every element of the array, the `for` statement can be tweaked to provide more customization.
+A common usage for the `for` statement is to iterate through an array of elements, especially if you need some control over the manner in which the iteration happens. While the `foreach` iterates through every element of the array, the `for` statement can be tweaked to provide more customizations.
 
 1. Use the Visual Studio Code Editor to update your code as follows:
 
