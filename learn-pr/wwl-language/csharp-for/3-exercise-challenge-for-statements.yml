@@ -4,10 +4,12 @@ title: Exercise - Complete a challenge activity using for and if statements
 metadata:
   title: Exercise - Complete a challenge activity using for and if statements
   description: "Exercise - Complete a challenge activity using for and if statements"
-  ms.date: 02/22/2024
+  ms.date: 06/16/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-challenge.md)]
+  [!include[](includes/3-exercise-challenge-for-statements.md)]
