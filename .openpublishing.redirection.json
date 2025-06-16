@@ -48673,6 +48673,16 @@
       "source_path": "learn-pr/wwl-language/csharp-call-methods/6-solution.md",
       "redirect_url": "/training/modules/csharp-call-methods/6-review-solution-for-call-method-challenge",
       "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-if-elseif-else/4-challenge.md",
+      "redirect_url": "/training/modules/csharp-if-elseif-else/4-exercise-challenge-apply-business-rules",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-if-elseif-else/5-solution.md",
+      "redirect_url": "/training/modules/csharp-if-elseif-else/5-review-solution-apply-business-rules-challenge",
+      "redirect_document_id": false
   }
 ]
 }
