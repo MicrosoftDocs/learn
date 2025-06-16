@@ -3,7 +3,7 @@
 
 Whether you realized it or not, you've been calling C# methods ever since your first "Hello, World!" application. That application uses the `WriteLine()` method of the `Console` class to display the "Hello, World!" message.
 
-However, not all classes and methods are implemented the same way. This unit covers some of the most common variants that you'll need to understand when using methods from the .NET Class Library. More importantly, you'll learn how to find and use the documentation to better understand more about each method.
+However, not all classes and methods are implemented as the same way. This unit covers some of the most common variants that you'll need to understand when using methods from the .NET Class Library. More importantly, you'll learn how to find and use the documentation to better understand more about each method.
 
 ## How to call methods in the .NET Class Library
 
@@ -140,7 +140,7 @@ A single class can support both stateful and stateless methods. However, when yo
 
 ## Creating an instance of a class
 
-An instance of a class is called an *object*. To create a new instance of a class, you use the `new` operator. Consider the following line of code that creates a new instance of the `Random` class to create a new object called `dice`:
+An instance of a class is called as an *object*. To create a new instance of a class, you use the `new` operator. Consider the following line of code that creates a new instance of the `Random` class to create a new object called `dice`:
 
 ```c#
 Random dice = new Random();
@@ -221,4 +221,4 @@ Try accessing the `Random.Next()` method directly and see what happens.
 - When calling a stateless method, you don't need to create a new instance of its class first.
 - When calling a stateful method, you need to create an instance of the class, and access the method on the object.
 - Use the `new` operator to create a new instance of a class.
-- An instance of a class is called an *object*.
+- An instance of a class is called as an *object*.
