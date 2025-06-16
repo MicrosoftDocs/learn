@@ -258,7 +258,7 @@ In this task, you'll develop an `if-elseif-else` structure that can be used to a
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
-1. In the Visual Studio Code EXPLORER panel, right-click **Starter**, and then select **Open in Integrated Terminal**.
+1. In the Visual Studio Code EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
 1. At the Terminal command prompt, type **dotnet build** and then press Enter.
 
@@ -532,7 +532,7 @@ In this task, you'll run the application to verify that your code logic is worki
 
 1. Ensure that you've saved your changes to the Program.cs file.
 
-1. In the Visual Studio Code EXPLORER panel, right-click **Starter**, and then select **Open in Integrated Terminal**.
+1. In the Visual Studio Code EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
 1. At the Terminal command prompt, type **dotnet build** and then press Enter.
 
@@ -610,7 +610,7 @@ In this task, you'll run the application to verify that your code logic is worki
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
-1. In the Visual Studio Code EXPLORER panel, right-click **Starter**, and then select **Open in Integrated Terminal**.
+1. In the Visual Studio Code EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
 1. At the Terminal command prompt, type **dotnet build** and then press Enter.
 

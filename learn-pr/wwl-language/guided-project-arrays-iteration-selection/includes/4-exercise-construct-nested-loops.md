@@ -76,7 +76,7 @@ In this task, you'll create a student names array and a `foreach` loop that iter
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
-1. In the Visual Studio Code EXPLORER panel, right-click **Starter**, and then select **Open in Integrated Terminal**.
+1. In the Visual Studio Code EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
     > [!IMPORTANT]
     > The Terminal command prompt must be displaying the folder path for your Program.cs file.
@@ -257,7 +257,7 @@ In this task, you'll relocate the code that calculates and reports Sophia's scor
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
-1. In the Visual Studio Code EXPLORER panel, right-click **Starter**, and then select **Open in Integrated Terminal**.
+1. In the Visual Studio Code EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
     > [!IMPORTANT]
     > The Terminal command prompt must be displaying the folder path for your Program.cs file.
@@ -314,7 +314,7 @@ In this task, you'll update the code that performs student score calculations us
     ```
 
     > [!NOTE]
-    > You could continue to use `name` to track the name of the current student as you iterate through the names array, but using `currentName` will make it easier to understand your code logic as you build out your application in the upcoming steps.
+    > You could continue to use `name` to track the name of the current student as you iterate through the names array, but using `currentStudent` will make it easier to understand your code logic as you build out your application in the upcoming steps.
 
 1. To substitute `currentStudent` for `name` in the `if` statement that evaluates whether `name` is equal to Sophia, update your code as follows:
 
@@ -574,7 +574,7 @@ In this task, you'll run the application to verify that your code logic is worki
 
 1. Ensure that you've saved your changes to the Program.cs file.
 
-1. In the Visual Studio Code EXPLORER panel, right-click **Starter**, and then select **Open in Integrated Terminal**.
+1. In the Visual Studio Code EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
 1. At the Terminal command prompt, type **dotnet build** and then press Enter.
 

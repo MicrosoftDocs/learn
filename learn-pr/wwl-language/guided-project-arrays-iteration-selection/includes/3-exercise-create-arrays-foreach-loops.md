@@ -1,6 +1,6 @@
 In this exercise, you'll review the Starter project code and then begin updating the application. Your first coding task will be creating the arrays that hold student exam scores. Once your application data is available in arrays, you'll begin working on a `foreach` loop that can be used to sum student grades. The detailed tasks that you'll complete during this exercise are:
 
-1. Code review: review the contents of the Program.cs file. 
+1. Code review: review the contents of the Program.cs file.
 
 1. Arrays: Create the arrays that store each student's assignment scores.
 
@@ -21,11 +21,11 @@ In this task, you'll review the code that's provided as a Starter project for th
 
     The Prepare unit (the previous unit in this module) includes a Setup section for this Guided project module. The Setup section describes the process for downloading your initial code and opening the project folder Visual Studio Code. If necessary, go back and follow the Setup instructions.
 
-1. In the Visual Studio Code EXPLORER panel, expand the **Starter** folder, then select **Program.cs**.
+1. In the Visual Studio Code EXPLORER view, expand the **Starter** folder, then select **Program.cs**.
 
-    When you select the Program.cs file, the file contents will open in the main Editor area to the right of the EXPLORER panel.
+    When you select the Program.cs file, the file contents will open in the main Editor area to the right of the EXPLORER view.
 
-    If the EXPLORER panel isn't open, you can open it using the Activity Bar on the far-left side of the Visual Studio Code window. The EXPLORER button is the topmost icon on the Activity Bar.
+    If the EXPLORER view isn't open, you can open it using the Activity Bar on the far-left side of the Visual Studio Code window. The EXPLORER button is the topmost icon on the Activity Bar.
 
 1. Take a few minutes to review the code in the Program.cs file.
 
@@ -121,7 +121,7 @@ In this task, you'll review the code that's provided as a Starter project for th
 
     The `Console.ReadLine()` statement will pause the application so that the application user can review the output.
 
-1. In the Visual Studio Code EXPLORER panel, right-click **Starter**, and then select **Open in Integrated Terminal**.
+1. In the Visual Studio Code EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
     You will be using the TERMINAL panel to run .NET Command Line Interface (CLI) commands, such as `dotnet build` and `dotnet run`. The `dotnet build` command will compile your code and display error and warning messages related to your code syntax.
 
@@ -391,7 +391,7 @@ In this task, you'll run the application to verify that your code logic is worki
 
 1. Ensure that you've saved your changes to the Program.cs file.
 
-1. In the Visual Studio Code EXPLORER panel, right-click **Starter**, and then select **Open in Integrated Terminal**.
+1. In the Visual Studio Code EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
     You will be using the Terminal panel to enter .NET CLI commands that build and run your applications.
 
