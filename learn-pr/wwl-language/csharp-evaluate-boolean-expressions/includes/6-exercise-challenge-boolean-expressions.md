@@ -1,8 +1,8 @@
-Code challenges will reinforce what you've learned and help you gain some confidence before continuing on.
+Code challenges reinforce what you've learned and help you gain some confidence before continuing on.
 
 ## Decision logic challenge
 
-In this challenge, you'll implement decision logic based on a series of business rules. The business rules specify the access that will be granted to users based on their role-based permissions and their career level. Code branches will display a different message to the user depending on their permissions and level.
+In this challenge, you implement decision logic based on a series of business rules. The business rules specify the access that is granted to users based on their role-based permissions and their career level. Code branches display a different message to the user depending on their permissions and level.
 
 ### Initialize permission and level values
 
@@ -30,12 +30,12 @@ In this challenge, you'll implement decision logic based on a series of business
     Your application will be using a combination of `permission` and `level` to apply/evaluate the business rules in this challenge scenario. The full list of conditions for business rules is specified in the next step. Your completed solution must use `permission` and `level`.
 
     > [!TIP]
-    > To sufficiently test all of the combinations for `permission` and `level` that are described in the business rules below, you will need to assign additional values to these variables and run the application multiple times.
+    > To sufficiently test all of the combinations for `permission` and `level` that are described in the business rules below, you'll need to assign additional values to these variables and run the application multiple times.
 
 ### Implement business rules
 
 > [!IMPORTANT]
-> You will need to use the `Contains()` helper method to determine whether the value assigned to the `permission` string contains one of the permission values specified by the "business rules". For example, the expression `permission.Contains("Admin")` will return `true` when using the initial data values specified in the code above.
+> You'll need to use the `Contains()` helper method to determine whether the value assigned to the `permission` string contains one of the permission values specified by the "business rules". For example, the expression `permission.Contains("Admin")` will return `true` when using the initial data values specified in the code above.
 
 Here are the **Business Rules** that your solution must satisfy:
 
@@ -63,7 +63,7 @@ Here are the **Business Rules** that your solution must satisfy:
     You do not have sufficient privileges.
     ```
 
-- If the user is not an Admin or a Manager, output the message:
+- If the user isn't an Admin or a Manager, output the message:
 
     ```Output
     You do not have sufficient privileges.

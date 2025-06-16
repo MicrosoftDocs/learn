@@ -2,7 +2,7 @@ Code challenges will reinforce what you've learned and help you gain some confid
 
 ## Conditional operator challenge
 
-In this challenge, you'll implement a conditional operator to simulate a "coin flip". The resulting decision logic will display either `heads` or `tails`.
+In this challenge, you'll implement a conditional operator to simulate a "coin flip." The resulting decision logic will display either `heads` or `tails`.
 
 ## Code challenge: write code to display the result of a coin flip
 
