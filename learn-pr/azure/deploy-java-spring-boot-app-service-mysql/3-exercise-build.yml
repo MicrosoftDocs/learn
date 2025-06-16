@@ -9,8 +9,9 @@ metadata:
   ms.author: ropreddy
   ms.topic: unit
   ms.custom:
-    - team=cloud_advocates
+    - sfi-ropc-blocked
     - devx-track-extended-java
+    - team=cloud_advocates
   ms.contributors: ropreddy-11202020
 durationInMinutes: 10
 content: |

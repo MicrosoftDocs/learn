@@ -1,4 +1,4 @@
-In this exercise, you'll add a string array to hold the student names, and then implement a nested `foreach` structure that iterates through the student names in an outer loop and student scores in the inner loop. You'll begin by constructing the `studentNames` array and a `foreach` loop that iterates through the array elements. Next, you'll move the code that's used to calculate Sophia's grades into the code block of the "names" loop. Finally, you'll implement the code logic that uses the student's name to access their scores array, calculate their average score, and write their grade to the console. The detailed tasks that you'll complete during this exercise are:
+In this exercise, you add a string array to hold the student names, and then implement a nested `foreach` structure that iterates through the student names in an outer loop and student scores in the inner loop. You begin by constructing the `studentNames` array and a `foreach` loop that iterates through the array elements. Next, you move the code that's used to calculate Sophia's grades into the code block of the "names" loop. Finally, you implement the code logic that uses the student's name to access their scores array, calculate their average score, and write their grade to the console. The detailed tasks that you complete during this exercise are:
 
 1. Create names array: Create a student names array.
 
@@ -76,14 +76,14 @@ In this task, you'll create a student names array and a `foreach` loop that iter
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
-1. In the Visual Studio Code EXPLORER panel, right-click **Starter**, and then select **Open in Integrated Terminal**.
+1. In the Visual Studio Code EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
     > [!IMPORTANT]
     > The Terminal command prompt must be displaying the folder path for your Program.cs file.
 
 1. At the Terminal command prompt, type **dotnet build** and then press Enter.
 
-    The `dotnet build` command instructs the compiler to build the application. If any errors are detected, they will be reported.
+    The `dotnet build` command instructs the compiler to build the application. If any errors are detected, they'll be reported.
 
 1. If you see Error or Warning messages, you need to fix them before continuing.
 
@@ -185,7 +185,7 @@ In this task, you'll relocate the code that calculates and reports Sophia's scor
     Console.ReadLine();
     ```
 
-    Notice that at this point, your code will calculate and report Sophia's score regardless of the `name` of the current student. You will address that shortly.
+    Notice that at this point, your code will calculate and report Sophia's score regardless of the `name` of the current student. You'll address that shortly.
 
 1. Delete the following code:
 
@@ -257,14 +257,14 @@ In this task, you'll relocate the code that calculates and reports Sophia's scor
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
-1. In the Visual Studio Code EXPLORER panel, right-click **Starter**, and then select **Open in Integrated Terminal**.
+1. In the Visual Studio Code EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
     > [!IMPORTANT]
     > The Terminal command prompt must be displaying the folder path for your Program.cs file.
 
 1. At the Terminal command prompt, type **dotnet build** and then press Enter.
 
-    The `dotnet build` command instructs the compiler to build the application. If any errors are detected, they will be reported.
+    The `dotnet build` command instructs the compiler to build the application. If any errors are detected, they'll be reported.
 
 1. If you see Error or Warning messages, you need to fix them before continuing.
 
@@ -314,7 +314,7 @@ In this task, you'll update the code that performs student score calculations us
     ```
 
     > [!NOTE]
-    > You could continue to use `name` to track the name of the current student as you iterate through the names array, but using `currentName` will make it easier to understand your code logic as you build out your application in the upcoming steps.
+    > You could continue to use `name` to track the name of the current student as you iterate through the names array, but using `currentStudent` will make it easier to understand your code logic as you build out your application in the upcoming steps.
 
 1. To substitute `currentStudent` for `name` in the `if` statement that evaluates whether `name` is equal to Sophia, update your code as follows:
 
@@ -503,7 +503,7 @@ In this task, you'll update the code that performs student score calculations us
     Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t?");
     ```
 
-    Notice that this code has replaced the letter grade assignment with a "?". You will work on automating the assignment of letter grades in the next exercise.
+    Notice that this code has replaced the letter grade assignment with a "?". You'll work on automating the assignment of letter grades in the next exercise.
 
 1. Move the `Console.WriteLine` statement that's used to write the column labels of your score report to the location just above the outer `foreach` loop.
 
@@ -574,7 +574,7 @@ In this task, you'll run the application to verify that your code logic is worki
 
 1. Ensure that you've saved your changes to the Program.cs file.
 
-1. In the Visual Studio Code EXPLORER panel, right-click **Starter**, and then select **Open in Integrated Terminal**.
+1. In the Visual Studio Code EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
 1. At the Terminal command prompt, type **dotnet build** and then press Enter.
 
@@ -598,4 +598,4 @@ In this task, you'll run the application to verify that your code logic is worki
 
 1. Close the Terminal panel.
 
-Congratulations, your application has come a long way from where you started out. You are making efficient use of arrays and `foreach` iterations, and you've integrated an `if` statement that enables your code to select the correct scores array.
+Congratulations, your application has come a long way from where you started out. You're making efficient use of arrays and `foreach` iterations, and you've integrated an `if` statement that enables your code to select the correct scores array.
