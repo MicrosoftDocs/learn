@@ -5795,3 +5795,13 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.start-career-in-tech.trophy
+  type: trophy
+  title: Start in tech as an intern
+  summary: A great way to start in tech is by landing a position as an intern. But how do you that? To get there, you need to consider things like, crafting a resume and passing an intern interview. Once an intern, you want to make sure that position turns into a full-time position in tech.
+  iconUrl: /training/achievements/start-career-in-tech.svg
+- uid: learn.career-get-noticed.badge
+  type: badge
+  title: How to get noticed
+  summary: Getting noticed by prospective employers is the first step toward landing a job in tech. This module offers plenty of helpful tips and strategies.
+  iconUrl: /training/achievements/student-evangelism/career-get-noticed.svg

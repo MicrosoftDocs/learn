@@ -48703,6 +48703,56 @@
       "source_path": "learn-pr/wwl-language/csharp-evaluate-boolean-expressions/7-solution-2.md",
       "redirect_url": "/training/modules/csharp-evaluate-boolean-expressions/7-review-solution-boolean-expressions-challenge",
       "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/paths/start-career-in-tech/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/2-networking.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/3-exercise-attend-events.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/4-resume-writing.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/5-resume-building.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/6-exercise-resume-building.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
   }
 ]
 }
