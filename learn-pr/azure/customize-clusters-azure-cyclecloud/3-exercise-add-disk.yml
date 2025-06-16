@@ -9,6 +9,7 @@ metadata:
   author: anhoward
   ms.author: anhoward
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise-add-disk.md)]

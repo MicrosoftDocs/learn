@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to enhancing your LinkedIn profile with Microsoft Copilot and acing your interview
+  ms.date: 05/09/2025
+  author: andrewbettany
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
