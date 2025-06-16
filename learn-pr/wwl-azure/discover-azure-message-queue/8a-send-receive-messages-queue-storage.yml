@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.discover-azure-message-queue.send-receive-messages-queue-storage
-title: Exercise - Send and receive messages from Azure Service Bus
+title: Exercise - Send and receive messages from Azure Queue storage
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Exercise - Send and receive messages from Azure Service Bus
-  description: "Exercise - Send and receive messages from Azure Service Bus"
+  title: Exercise - Send and receive messages from Azure Queue storage
+  description: "Exercise - Send and receive messages from Azure Queue storage"
   ms.date: 06/16/2025
   author: wwlpublish
   ms.author: jeffko
