@@ -1,4 +1,4 @@
-In this exercise, you'll review the Starter project code and then begin updating the application. Your first coding task will be creating the arrays that hold student exam scores. Once your application data is available in arrays, you'll begin working on a `foreach` loop that can be used to sum student grades. The detailed tasks that you'll complete during this exercise are:
+In this exercise, you review the Starter project code and then begin updating the application. Your first coding task is creating the arrays that hold student exam scores. Once your application data is available in arrays, you begin working on a `foreach` loop that can be used to sum student grades. The detailed tasks that you complete during this exercise are:
 
 1. Code review: review the contents of the Program.cs file.
 
@@ -15,7 +15,7 @@ In this exercise, you'll review the Starter project code and then begin updating
 
 ## Review the contents of the Program.cs file
 
-In this task, you'll review the code that's provided as a Starter project for this module. The Program.cs file contains the initial version of the student grading application that you'll be updating.  
+In this task, you review the code that's provided as a Starter project for this module. The Program.cs file contains the initial version of the student grading application that you are updating.  
 
 1. Ensure that you have the **GuidedProject** folder open in Visual Studio Code.
 
@@ -23,7 +23,7 @@ In this task, you'll review the code that's provided as a Starter project for th
 
 1. In the Visual Studio Code EXPLORER view, expand the **Starter** folder, then select **Program.cs**.
 
-    When you select the Program.cs file, the file contents will open in the main Editor area to the right of the EXPLORER view.
+    When you select the Program.cs file, the file contents open in the main Editor area to the right of the EXPLORER view.
 
     If the EXPLORER view isn't open, you can open it using the Activity Bar on the far-left side of the Visual Studio Code window. The EXPLORER button is the topmost icon on the Activity Bar.
 
@@ -119,14 +119,14 @@ In this task, you'll review the code that's provided as a Starter project for th
 
     This section prints the formatted output in accordance with the teacher's guidelines. The first line is a header line with column titles, followed by the names and scores for each student.
 
-    The `Console.ReadLine()` statement will pause the application so that the application user can review the output.
+    The `Console.ReadLine()` statement pauses the application so that the application user can review the output.
 
 1. In the Visual Studio Code EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
 
-    You will be using the TERMINAL panel to run .NET Command Line Interface (CLI) commands, such as `dotnet build` and `dotnet run`. The `dotnet build` command will compile your code and display error and warning messages related to your code syntax.
+    You are using the TERMINAL panel to run .NET Command Line Interface (CLI) commands, such as `dotnet build` and `dotnet run`. The `dotnet build` command compiles your code and display error and warning messages related to your code syntax.
 
     > [!IMPORTANT]
-    > Ensure that terminal command prompt is open to the root of your project workspace. In this case, the root of your project workspace is the Starter folder, where your Starter.csproj and Program.cs files are located. When you run .NET CLI commands in the terminal, the commands will try to perform actions using the current folder location. If you try to run the `dotnet build` or `dotnet run` commands from a folder location that does not contain your files, the commands will generate error messages.
+    > Ensure that terminal command prompt is open to the root of your project workspace. In this case, the root of your project workspace is the Starter folder, where your Starter.csproj and Program.cs files are located. When you run .NET CLI commands in the terminal, the commands try to perform actions using the current folder location. If you try to run the `dotnet build` or `dotnet run` commands from a folder location that does not contain your files, the commands generate error messages.
 
 1. At the TERMINAL command prompt, to build your project code, enter the following command: `dotnet build`  
 
@@ -146,7 +146,7 @@ In this task, you'll review the code that's provided as a Starter project for th
 
 1. At the Terminal command prompt, type **dotnet run** and then press Enter.
 
-    The `dotnet run` command will instruct the compiler to build your application and then, as long as there were no build errors, it will run your compiled code.
+    The `dotnet run` command instructs the compiler to build your application and then, as long as there were no build errors, it runs your compiled code.
 
     > [!IMPORTANT]
     > The Starter project targets .NET 8 (in the Starter.csproj file). If you don't have .NET 8 installed, the `dotnet run` command will generate an error. You can either install the .NET 8 SDK (recommended), or you can change the target framework in the Starter.csproj file to align with the version of .NET that you have installed in your environment.
