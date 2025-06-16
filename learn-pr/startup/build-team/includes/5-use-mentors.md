@@ -58,7 +58,7 @@ Finally, there are opportunities to engage experienced founders and others in a 
 There are many ways to tap into high-quality mentoring. The best way to find good mentors depends on the maturity of your local startup ecosystem. Here are some practical tips that are likely to be helpful no matter where you're located:
 
 - Engage with your local startup community via networking events, pitch competitions, hackathons, and mentor-matching events.
-- Seek out and participate in structured startup programs, such as accelerators, only if they are led by mentors with extensive startup experience.
+- Seek out and participate in structured startup programs, such as accelerators, only if mentors with extensive startup experience are leading them.
 - Connect with other founders, ask them who they've found to be good mentors, and ask for introductions.
 - Search online for people who have built successful companies that have some similarities to yours (sector focus, customer persona, or business model). Reach out to them directly.
 - Utilize the mentor network that's part of the Microsoft for Startups Founders Hub. (You'll learn more about that later in this unit.)
