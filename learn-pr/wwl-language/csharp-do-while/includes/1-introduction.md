@@ -16,7 +16,7 @@ In this module, you will:
 - Write code that uses the `while` statement to iterate through a code block.
 - Use the `continue` statement to step directly to the Boolean evaluation.
 
-## Prerequisites:
+## Prerequisites
 
 - Experience using the `if` statement
 - Experience using `foreach` and `for` iteration statements. 
