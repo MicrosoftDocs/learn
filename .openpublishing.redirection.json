@@ -48683,6 +48683,26 @@
       "source_path": "learn-pr/wwl-language/csharp-if-elseif-else/5-solution.md",
       "redirect_url": "/training/modules/csharp-if-elseif-else/5-review-solution-apply-business-rules-challenge",
       "redirect_document_id": false
+  },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-evaluate-boolean-expressions/4-challenge-1.md",
+      "redirect_url": "/training/modules/csharp-evaluate-boolean-expressions/4-exercise-challenge-conditional-operators",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-evaluate-boolean-expressions/5-solution-1.md",
+      "redirect_url": "/training/modules/csharp-evaluate-boolean-expressions/5-review-solution-conditional-operators-challenge",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-evaluate-boolean-expressions/6-challenge-2.md",
+      "redirect_url": "/training/modules/csharp-evaluate-boolean-expressions/6-exercise-challenge-boolean-expressions",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-evaluate-boolean-expressions/7-solution-2.md",
+      "redirect_url": "/training/modules/csharp-evaluate-boolean-expressions/7-review-solution-boolean-expressions-challenge",
+      "redirect_document_id": false
   }
 ]
 }
