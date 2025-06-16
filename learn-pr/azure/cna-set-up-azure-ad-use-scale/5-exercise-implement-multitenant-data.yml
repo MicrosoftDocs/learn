@@ -9,9 +9,10 @@ metadata:
   ms.author: robmcm
   ms.topic: unit
   ms.custom:
-    - sfi-ga-nochange
-    - devx-track-js
+    - sfi-ropc-nochange
     - devx-track-azurecli
+    - devx-track-js
+    - sfi-ga-nochange
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-implement-multitenant-data.md)]

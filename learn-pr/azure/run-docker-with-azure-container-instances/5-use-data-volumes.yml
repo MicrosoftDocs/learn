@@ -8,6 +8,7 @@ metadata:
   ms.author: tomcassidy
   ms.topic: unit
   ms.custom:
+    - sfi-ropc-nochange
     - devx-track-azurecli
 title: Exercise - Use data volumes
 durationInMinutes: 10

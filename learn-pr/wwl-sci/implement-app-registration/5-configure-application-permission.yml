@@ -11,8 +11,9 @@ metadata:
   ms.author: roberts
   ms.topic: unit
   ms.custom:
-    - sfi-ga-nochange
+    - sfi-ropc-nochange
     - N/A
+    - sfi-ga-nochange
 durationInMinutes: 1
 content: |
   [!include[](includes/5-configure-application-permission.md)]
