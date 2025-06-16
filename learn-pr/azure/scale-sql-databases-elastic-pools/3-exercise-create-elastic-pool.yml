@@ -9,8 +9,9 @@ metadata:
   manager: jroth
   ms.topic: unit
   ms.custom:
-    - build-2023
+    - sfi-ropc-nochange
     - build-2023-dataai
+    - build-2023
 title: Exercise - Create a SQL elastic pool
 interactive: bash
 azureSandbox: true

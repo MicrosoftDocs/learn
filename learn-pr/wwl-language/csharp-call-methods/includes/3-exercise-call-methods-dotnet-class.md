@@ -1,6 +1,9 @@
+
+
+
 Whether you realized it or not, you've been calling C# methods ever since your first "Hello, World!" application. That application uses the `WriteLine()` method of the `Console` class to display the "Hello, World!" message.
 
-However, not all classes and methods are implemented the same way. This unit covers some of the most common variants that you'll need to understand when using methods from the .NET Class Library. More importantly, you'll learn how to find and use the documentation to better understand more about each method.
+However, not all classes and methods are implemented as the same way. This unit covers some of the most common variants that you'll need to understand when using methods from the .NET Class Library. More importantly, you'll learn how to find and use the documentation to better understand more about each method.
 
 ## How to call methods in the .NET Class Library
 
@@ -31,7 +34,7 @@ This module includes coding activities that guide you through the process of bui
 
 1. On the Visual Studio Code **File** menu, select **Open Folder**.
 
-1. In the **Open Folder** dialog, navigate to the **Windows Desktop** folder.
+1. In the **Open Folder** dialog, navigate to the Windows Desktop folder.
 
     If you have a different folder location where you keep code projects, you can use that folder location instead. For this training, the important thing is to have a location that’s easy to locate and remember.
 
@@ -43,22 +46,32 @@ This module includes coding activities that guide you through the process of bui
 
     Notice that a command prompt in the Terminal panel displays the folder path for the current folder. For example:  
 
-    ```dos
+    ```PowerShell
     C:\Users\someuser\Desktop>
     ```
 
     > [!NOTE]
-    > If you are working on your own PC rather than in a sandbox or hosted environment and you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip past the next step, which is used to create a console app in the TestProject folder.
+    > If you are working on your own PC rather than in a sandbox or hosted environment and you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip over the next step, which is used to create a console app in the TestProject folder.
 
-1. At the Terminal command prompt, to create a new console application in a specified folder, type **dotnet new console -o ./CsharpProjects/TestProject** and then press Enter.
+1. At the Terminal command prompt, to create a new console application in a specified folder, enter the following prompt:
+
+    ```dotnetcli
+    dotnet new console -o ./CsharpProjects/TestProject
+    ```
 
     This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the CsharpProjects and TestProject folders for you, and uses TestProject as the name of your `.csproj` file.
 
-1. In the EXPLORER panel, expand the **CsharpProjects** folder.
+    If a message is displayed telling you that the files already exist, continue with the next steps. You'll reuse the existing project files.
 
-    You should see the TestProject folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj.
+1. In the EXPLORER view, expand the **CsharpProjects** folder.
 
-1. In the EXPLORER panel, to view your code file in the Editor panel, select **Program.cs**.
+    You should see the **TestProject** folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj.
+
+1. On the Visual Studio Code **File** menu, select **Open Folder**.
+
+1. In the **Open Folder** dialog, select the **CsharpProjects** folder, and then select **Select Folder**.
+
+1. In the EXPLORER view, expand the TestProject folder, and then select **Program.cs**.
 
 1. Delete the existing code lines.
 
@@ -84,17 +97,19 @@ This module includes coding activities that guide you through the process of bui
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
-1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+1. In the EXPLORER view, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
     Notice that the Terminal panel includes a command prompt that displays a folder path. For example:  
 
-    `C:\Users\someuser\Desktop\CsharpProjects\TestProject>`
+    ```powershell
+    C:\Users\someuser\Desktop\CsharpProjects\TestProject>
+    ```
 
-    When you use the Terminal to run .NET CLI commands, this folder location is where the commands run. Ensure that your code folder matches the folder path displayed in the command prompt before you build or run your code.
+    When you use the Terminal to run .NET CLI commands, commands run from the displayed folder location. Ensure that your code folder matches the folder path displayed in the command prompt before you build or run your code.
   
 1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
 
-    Notice that a number from 1 to 6 is displayed in the console output (the number of dots on the dice). If you run the code enough times, you will eventually see each of the numbers displayed.
+    Notice that a number from 1 to 6 is displayed in the console output (the number of dots on the dice). If you run the code enough times, you'll see each of the numbers 1-6 displayed.
 
 1. Take a minute to examine the syntax used to access the `Next()` and `WriteLine()` methods.  
 
@@ -125,7 +140,7 @@ A single class can support both stateful and stateless methods. However, when yo
 
 ## Creating an instance of a class
 
-An instance of a class is called an *object*. To create a new instance of a class, you use the `new` operator. Consider the following line of code that creates a new instance of the `Random` class to create a new object called `dice`:
+An instance of a class is called as an *object*. To create a new instance of a class, you use the `new` operator. Consider the following line of code that creates a new instance of the `Random` class to create a new object called `dice`:
 
 ```c#
 Random dice = new Random();
@@ -206,4 +221,4 @@ Try accessing the `Random.Next()` method directly and see what happens.
 - When calling a stateless method, you don't need to create a new instance of its class first.
 - When calling a stateful method, you need to create an instance of the class, and access the method on the object.
 - Use the `new` operator to create a new instance of a class.
-- An instance of a class is called an *object*.
+- An instance of a class is called as an *object*.
