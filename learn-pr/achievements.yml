@@ -5795,3 +5795,8 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.student-evangelism.use-apis-discover-museum-art.badge
+  type: badge
+  title: Explore the art world by using RESTful APIs
+  summary: Learn about how to build a basic API, how to query APIs, and authentication strategies in Python and JavaScript while discovering unique art by using museum APIs.
+  iconUrl: /training/achievements/use-apis-discover-museum-art.svg
