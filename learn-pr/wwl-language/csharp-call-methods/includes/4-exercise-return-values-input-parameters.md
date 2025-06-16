@@ -1,3 +1,6 @@
+
+
+
 In the previous unit, you used a "roll dice" coding scenario to illustrate the difference between stateful (instance) and stateless (static) methods. That same scenario can help you to understand other important concepts about calling methods. For example:
 
 - handling the return value of a method.
@@ -96,7 +99,7 @@ The following exercise calls the `Random.Next()` method to generate random integ
 
     1. Use the Open Folder dialog to navigate to, and then open, the **CsharpProjects** folder.
 
-    1. In the Visual Studio Code EXPLORER panel, select **Program.cs**.
+    1. In the Visual Studio Code EXPLORER view, select **Program.cs**.
 
     1. On the Visual Studio Code **Selection** menu, select **Select All**, and then press the Delete key.
 
@@ -116,7 +119,7 @@ The following exercise calls the `Random.Next()` method to generate random integ
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
-1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+1. In the EXPLORER view, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
     Ensure that folder path displayed in the command prompt points to the folder containing your Program.cs file.
   
