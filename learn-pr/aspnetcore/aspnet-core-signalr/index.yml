@@ -3,7 +3,7 @@ uid: learn.aspnet-core-signalr
 metadata:
   moduleType: introduction
   title: Introduction to ASP.NET Core SignalR
-  description: In this introductory module, you'll learn what ASP.NET Core SignalR is, how it works, and when to use it.
+  description: In this introductory module, you learn what ASP.NET Core SignalR is, how it works, and when to use it.
   ms.date: 10/25/2023
   author: IEvangelist
   ms.author: dapine
@@ -12,9 +12,9 @@ metadata:
   ms.service: aspnet-core
   ms.subservice: aspnetcore-signalr
 title: Introduction to ASP.NET Core SignalR
-summary: In this introductory module, you'll learn what ASP.NET Core SignalR is, how it works, and when to use it.
+summary: In this introductory module, you learn what ASP.NET Core SignalR is, how it works, and when to use it.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   - Understand the terminology that's specific to ASP.NET Core SignalR.
   - Know what ASP.NET Core SignalR is and how it works.
   - Determine when it's an appropriate solution for implementing real-time web functionality.
