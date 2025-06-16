@@ -4,7 +4,7 @@ title: Exercise - Call the methods of a .NET Class
 metadata:
   title: Exercise - Call the methods of a .NET Class
   description: "Exercise - Call the methods of a .NET Class"
-  ms.date: 10/25/2024
+  ms.date: 06/16/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -12,7 +12,7 @@ metadata:
   - N/A
 durationInMinutes: 12
 content: |
-  [!include[](includes/3-call-methods.md)]
+  [!include[](includes/3-exercise-call-methods-dotnet-class.md)]
 quiz:
   title: "Check your knowledge"
   questions:
