@@ -41,7 +41,7 @@ quiz:
     - content: "Contractors' availability might change if they have other projects competing for their time."
       isCorrect: false
       explanation: "Incorrect. Having workers who are available when you need them is advantageous. But it's not the only option."
-    - content: "All of the above."
+    - content: "All of these options."
       isCorrect: true
       explanation: "Correct. There are many advantages of hiring an employee instead of a contractor. You can give employees an incentive to stay. You can be their sole employer. They're also generally available when you need them and committed to long-term value creation."
 
@@ -89,7 +89,7 @@ quiz:
     - content: "Improve attraction and retention of employees for whom a diverse workplace is an important consideration."
       isCorrect: false
       explanation: "Incorrect. Being able to attract and retain employees is an advantage of building a diverse team. But it's not the only option."
-    - content: "All of the above."
+    - content: "All of these options."
       isCorrect: true
       explanation: "Correct. Building a diverse team has many advantages. Tapping into a highly skilled, underutilized talent pool is one example. Other examples include making better decisions, building better products, and more easily retaining employees."
 
