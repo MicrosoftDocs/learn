@@ -17,15 +17,15 @@ summary: Learn how to add branching logic that matches one variable or expressio
 abstract: |
   After you complete this module, you'll be able to:
 
-  -   Use the switch-case construct to match a variable or expression against several possible outcomes
+  -   Use the switch-case construct to match a variable or expression against several possible outcomes.
 
-  -   Convert code that uses an if-elseif-else construct into a switch-case construct
+  -   Convert code that uses an if-elseif-else construct into a switch-case construct.
 prerequisites: |
-  -   Experience creating simple C# applications that include console I/O and access the methods of .NET classes such as String and Random
+  -   Experience creating simple C# applications that include console I/O and access the methods of .NET classes such as String and Random.
 
-  -   Experience using Visual Studio Code to develop, build, and run C# console applications that implement arrays, if-elseif-else statements, and foreach statements
+  -   Experience using Visual Studio Code to develop, build, and run C# console applications that implement arrays, if-elseif-else statements, and foreach statements.
 
-  -   Experience using C# code to evaluate conditional expressions and manage variable scope inside and outside of code blocks
+  -   Experience using C# code to evaluate conditional expressions and manage variable scope inside and outside of code blocks.
 iconUrl: /training/achievements/csharp-switch-case.svg
 levels:
 - beginner

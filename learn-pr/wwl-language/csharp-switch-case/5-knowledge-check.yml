@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "It's used to specify the condition for the switch statement."
       isCorrect: false
-      explanation: "Incorrect. The default case is not used to specify the condition for the switch statement."
+      explanation: "Incorrect. The default case isn't used to specify the condition for the switch statement."
     - content: "It's used to end the switch statement."
       isCorrect: false
       explanation: "Incorrect. The default case doesn't end the switch statement."
