@@ -17,7 +17,7 @@ To complete the exercise, you need:
 
 ## Get started
 
-Select the **Launch Exercise** button, it opens the exercise instructions in a new browser window. When you're finished with the exercise, return here to:
+Select the **Launch Exercise** button to open the exercise instructions in a new browser window. When you're finished with the exercise, return here to:
 
 > [!div class="checklist"]
 > * Complete the module
