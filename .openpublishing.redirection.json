@@ -1,5 +1,40 @@
 {
-  "redirections": [
+  "redirections": [ 
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.analyze-infrastructure-with-azure-monitor-logs.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path_from_root": "/learn-pr/azure/analyze-infrastructure-with-azure-monitor-logs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/analyze-infrastructure-with-azure-monitor-logs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/analyze-infrastructure-with-azure-monitor-logs/2-features-azure-monitor-log.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/analyze-infrastructure-with-azure-monitor-logs/3-create-log-queries.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/analyze-infrastructure-with-azure-monitor-logs/4-exercise-create-log-queries.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/analyze-infrastructure-with-azure-monitor-logs/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
+      "redirect_document_id": false
+    },
     {
       "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",

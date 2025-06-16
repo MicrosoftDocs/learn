@@ -43,7 +43,6 @@ modules:
 - learn.control-and-organize-with-resource-manager
 - learn.azure-well-architected-performance-efficiency
 - learn.azure-well-architected-operational-excellence
-- learn.analyze-infrastructure-with-azure-monitor-logs
 # - learn.capture-page-load-times-application-insights
 # - learn.instrument-web-app-code-with-application-insights
 - learn.cmu-cloud-admin.cmu-monitor-cloud-resources
