@@ -15,7 +15,7 @@ You might have been thinking that the value returned by an expression would be a
 
 Boolean expressions are important because your code can use these expressions to decide which block of code to execute.
 
-There are many different types of operators that you can use within a Boolean expression. For example, the `if` statement above uses the equality operator `==` to check whether a string variable is assigned a particular value. The operator that you choose will depend on the available code paths, the conditions associated with the paths, and the underlying application logic.
+There are many different types of operators that you can use within a Boolean expression. For example, the `if` statement above uses the equality operator `==` to check whether a string variable is assigned to a particular value. The operator that you choose will depend on the available code paths, the conditions associated with the paths, and the underlying application logic.
 
 ## Evaluating equality and inequality
 

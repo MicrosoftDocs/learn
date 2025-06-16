@@ -15,7 +15,7 @@ In this module, you will:
 - Use the negation operator to test for the opposite of a given condition.
 - Use the conditional operator to perform an inline evaluation.
 
-## Prerequisites:
+## Prerequisites
 
 - Experience with basic coding tasks such as instantiating variables, using various data types, and sending output to a console window.
 - Experience using the `if-elseif-else` construct.
