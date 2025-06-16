@@ -60,6 +60,6 @@ Use the following steps to complete this challenge.
     ```
 
 > [!TIP]
-> Here's a hint: As you loop through each element in your array, you'll need an `if` statement. The `if` statement will need to use a method on the string class to determine if a string starts with a specific letter. If you're not sure how to use an `if` statement, please see the module "Add decision logic to your code using the if-elseif-else statement in C#".
+> Here's a hint: As you loop through each element in your array, you need an `if` statement. The `if` statement needs to use a method on the string class to determine if a string starts with a specific letter. If you're not sure how to use an `if` statement, please see the module "Add decision logic to your code using the if-elseif-else statement in C#".
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.
