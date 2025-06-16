@@ -33,42 +33,52 @@ This module includes hands-on activities that guide you through the process of b
 
 1. Open Visual Studio Code.
 
-   You can use the Windows Start menu (or equivalent resource for another OS) to open Visual Studio Code.
+    You can use the Windows Start menu (or equivalent resource for another OS) to open Visual Studio Code.
 
 1. On the Visual Studio Code **File** menu, select **Open Folder**.
 
 1. In the **Open Folder** dialog, navigate to the Windows Desktop folder.
 
-   If you have a different folder location where you keep code projects, you can use that folder location instead. For this training, the important thing is to have a location that’s easy to locate and remember.
+    If you have a different folder location where you keep code projects, you can use that folder location instead. For this training, the important thing is to have a location that’s easy to locate and remember.
 
 1. In the **Open Folder** dialog, select **Select Folder**.
 
-   If you see a security dialog asking if you trust the authors, select **Yes**.
+    If you see a security dialog asking if you trust the authors, select **Yes**.
 
 1. On the Visual Studio Code **Terminal** menu, select **New Terminal**.
-   
-   Notice that a command prompt in the Terminal panel displays the folder path for the current folder. For example:  
 
-   ```dos   
-   C:\Users\someuser\Desktop>   
-   ```
+    Notice that a command prompt in the Terminal panel displays the folder path for the current folder. For example:  
 
-   > [!NOTE]
-   > If you are working on your own PC rather than in a sandbox or hosted environment and you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip over the next step, which is used to create a console app in the TestProject folder.
+    ```PowerShell
+    C:\Users\someuser\Desktop>
+    ```
 
-1. At the Terminal command prompt, to create a new console application in a specified folder, type **dotnet new console -o ./CsharpProjects/TestProject** and then press Enter.
+    > [!NOTE]
+    > If you are working on your own PC rather than in a sandbox or hosted environment and you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip over the next step, which is used to create a console app in the TestProject folder.
 
-   This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the CsharpProjects and TestProject folders for you, and uses TestProject as the name of your `.csproj` file.
+1. At the Terminal command prompt, to create a new console application in a specified folder, enter the following prompt:
 
-1. In the EXPLORER panel, expand the **CsharpProjects** folder.
+    ```dotnetcli
+    dotnet new console -o ./CsharpProjects/TestProject
+    ```
 
-   You should see the TestProject folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj.
+    This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the CsharpProjects and TestProject folders for you, and uses TestProject as the name of your `.csproj` file.
 
-1. In the EXPLORER panel, to view your code file in the Editor panel, select **Program.cs**.
+    If a message is displayed telling you that the files already exist, continue with the next steps. You'll reuse the existing project files.
+
+1. In the EXPLORER view, expand the **CsharpProjects** folder.
+
+    You should see the **TestProject** folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj.
+
+1. On the Visual Studio Code **File** menu, select **Open Folder**.
+
+1. In the **Open Folder** dialog, select the **CsharpProjects** folder, and then select **Select Folder**.
+
+1. In the EXPLORER view, expand the TestProject folder, and then select **Program.cs**.
 
 1. Delete the existing code lines.
 
-   You'll be using this C# console project to create, build, and run code samples during this module.
+    You'll be using this C# console project to create, build, and run code samples during this module.
 
 1. Close the Terminal panel.
 
