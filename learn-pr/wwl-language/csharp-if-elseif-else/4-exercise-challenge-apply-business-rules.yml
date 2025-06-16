@@ -4,7 +4,7 @@ title: Exercise - Complete a challenge activity to apply business rules
 metadata:
   title: Exercise - Complete a challenge activity to apply business rules
   description: "Exercise - Complete a challenge activity to apply business rules"
-  ms.date: 11/15/2024
+  ms.date: 06/16/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 12
 content: |
-  [!include[](includes/4-challenge.md)]
+  [!include[](includes/4-exercise-challenge-apply-business-rules.md)]
