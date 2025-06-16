@@ -20,12 +20,11 @@ To complete the exercise you need:
 
 ## Get started
 
-Select the **Launch Exercise** button, it opens the exercise instructions in a new browser window. When you're finished with the exercise, return here for:
+Select the **Launch Exercise** button to open the exercise instructions in a new browser window. When you're finished with the exercise, return here to:
 
 > [!div class="checklist"]
-> * A quick assessment 
-> * A summary of what you've learned
-> * A badge for completing this module
+> * Complete the module
+> * Earn a badge for completing this module
 
 <br/>
 

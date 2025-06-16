@@ -19,7 +19,7 @@ The following table describes the types of endpoints and errors for which retry 
 > [!IMPORTANT]
 > If Dead-Letter isn't configured for an endpoint, events are dropped when the above errors happen. Consider configuring Dead-Letter if you don't want these kinds of events to be dropped.
 
-If the error returned by the subscribed endpoint isn't among the previous list, Event Grid waits 30 seconds for a response after delivering a message. After 30 seconds, if the endpoint fails to responded, the message is queued for retry. Event Grid uses an exponential backoff retry policy for event delivery. 
+If the error returned by the subscribed endpoint isn't among the previous list, Event Grid waits 30 seconds for a response after delivering a message. After 30 seconds, if the endpoint fails to respond, the message is queued for retry. Event Grid uses an exponential backoff retry policy for event delivery. 
 
 If the endpoint responds within 3 minutes, Event Grid attempts to remove the event from the retry queue on a best effort basis but duplicates might still be received. Event Grid adds a small randomization to all retry steps and might opportunistically skip certain retries if an endpoint is consistently unhealthy, down for a long period, or appears to be overwhelmed.
 
