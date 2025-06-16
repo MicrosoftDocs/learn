@@ -4,9 +4,9 @@ The `do-while` and `while` statements allow us to control the flow of code execu
 
 Suppose you want to accept and process user input. You want to continue accepting and processing input until the user presses the `q` key for "quit". You can use the `do-while` and the `while` statements to keep iterating through the logic to accept user input and process it until the user is ready to stop.
 
-In this module, you'll use the `do-while` statement and the `while` statement to iterate through code block. You'll understand when to choose one over the other. You'll use the `continue` statement to skip processing the remainder of code in the code block and go directly to the Boolean evaluation of the `while` statement.
+In this module, you use the `do-while` statement and the `while` statement to iterate through code block. You understand when to choose one over the other. You use the `continue` statement to skip processing the remainder of code in the code block and go directly to the Boolean evaluation of the `while` statement.
 
-By the end of this module, you will be able to confidently use the `do-while` and `while` statements to add looping logic to your application.
+By the end of this module, you are able to confidently use the `do-while` and `while` statements to add looping logic to your application.
 
 ## Learning objectives
 
