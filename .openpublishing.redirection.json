@@ -48633,6 +48633,16 @@
       "source_path": "learn-pr/sqlserver/sql-server-2022-performance-enhancements/8-summary.md",
       "redirect_url": "/training/paths/get-started-querying-with-transact-sql/",
       "redirect_document_id": false
-    }
+    },
+     {
+      "source_path": "learn-pr/wwl-language/csharp-readable-code/5-challenge.md",
+      "redirect_url": "/training/modules/csharp-readable-code/5-exercise-challenge-improve-code-readability",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-readable-code/6-solution.md",
+      "redirect_url": "/training/modules/csharp-readable-code/6-review-solution-code-readability-challenge",
+      "redirect_document_id": false
+  }
 ]
 }
