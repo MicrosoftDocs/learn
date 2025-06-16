@@ -12,7 +12,7 @@ In short, you need to use the teacher's updated grading report specification to:
 By the end of this module, you'll have an updated version of the Student Grading application that's able to calculate and report student grades in accordance with the teacher's updated requirements.
 
 > [!NOTE]
-> This is a challenge project module where you’ll complete an end-to-end project from a specification. This module is intended to be a test of your skills; there’s little guidance and no step-by-step instructions .
+> This is a challenge project module where you’ll complete an end-to-end project from a specification. This module is intended to be a test of your skills; there’s little guidance and no step-by-step instructions.
 
 ## Learning Objectives
 
