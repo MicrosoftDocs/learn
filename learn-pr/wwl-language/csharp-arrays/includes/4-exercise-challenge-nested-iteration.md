@@ -18,7 +18,7 @@ Use the following steps to complete this challenge.
 
     1. Use the Open Folder dialog to navigate to, and then open, the **CsharpProjects** folder.
 
-    1. In the Visual Studio Code EXPLORER panel, select **Program.cs**.
+    1. In the Visual Studio Code EXPLORER view, select **Program.cs**.
 
     1. On the Visual Studio Code **Selection** menu, select **Select All**, and then press the Delete key.
 
