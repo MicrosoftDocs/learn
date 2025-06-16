@@ -30,7 +30,7 @@ Use the following steps to complete this section of the exercise:
 
 Having one of the latest supported versions of the .NET SDK installed is recommended. Although .NET 6 and 7 are also supported, .NET 8 (long term support) and .NET 9 (short term support) include improvements that you may find helpful.
 
-Visual Studio Code and the C# Dev Kit help you to install the .NET SDK.
+Visual Studio Code and the C# Dev Kit helps you to install the .NET SDK.
 
 > [!NOTE]
 > The C# training series that's available on Microsoft Learn was developed using .NET 8, and is compatible with .NET 8 and later versions. Ensure that you have either .NET 8 or .NET 9 installed if you plan on completing this training.
