@@ -18,7 +18,7 @@ quiz:
   questions:
   - content: "Which of the following lines of code is a valid use of the conditional operator?"
     choices:
-    - content: "`int bonus = amount >= 100? 10 : 5;`"
+    - content: "`int bonus = amount >= 100? 10: 5;`"
       isCorrect: true
       explanation: "Correct! This code line shows the correct syntax for a conditional operator `?:`."
     - content: "`int bonus = amount >= 100: 10? 5;`"
