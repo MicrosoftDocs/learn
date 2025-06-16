@@ -1,7 +1,7 @@
 Event Grid provides durable delivery. It tries to deliver each event at least once for each matching subscription immediately. If a subscriber's endpoint doesn't acknowledge receipt of an event or if there's a failure, Event Grid retries delivery based on a fixed retry schedule and retry policy. By default, Event Grid delivers one event at a time to the subscriber, and the payload is an array with a single event.
 
 > [!NOTE]
-> Event Grid doesn't guarantee order for event delivery, so subscribers may receive them out of order.
+> Event Grid doesn't guarantee order for event delivery, so subscribers might receive them out of order.
 
 ## Retry schedule
 
@@ -17,9 +17,9 @@ The following table describes the types of endpoints and errors for which retry 
 | Webhook | 400 (Bad request), 413 (Request entity is too large), 401 (Unauthorized) |
 
 > [!IMPORTANT]
-> If Dead-Letter isn't configured for an endpoint, events will be dropped when the above errors happen. Consider configuring Dead-Letter if you don't want these kinds of events to be dropped.
+> If Dead-Letter isn't configured for an endpoint, events are dropped when the above errors happen. Consider configuring Dead-Letter if you don't want these kinds of events to be dropped.
 
-If the error returned by the subscribed endpoint isn't among the previous list, Event Grid waits 30 seconds for a response after delivering a message. After 30 seconds, if the endpoint hasn’t responded, the message is queued for retry. Event Grid uses an exponential backoff retry policy for event delivery. 
+If the error returned by the subscribed endpoint isn't among the previous list, Event Grid waits 30 seconds for a response after delivering a message. After 30 seconds, if the endpoint fails to responded, the message is queued for retry. Event Grid uses an exponential backoff retry policy for event delivery. 
 
 If the endpoint responds within 3 minutes, Event Grid attempts to remove the event from the retry queue on a best effort basis but duplicates might still be received. Event Grid adds a small randomization to all retry steps and might opportunistically skip certain retries if an endpoint is consistently unhealthy, down for a long period, or appears to be overwhelmed.
 
@@ -80,3 +80,4 @@ Event subscriptions allow you to set up HTTP headers that are included in delive
 * Relay Hybrid Connections
 
 Before setting the dead-letter location, you must have a storage account with a container. You provide the endpoint for this container when creating the event subscription. 
+

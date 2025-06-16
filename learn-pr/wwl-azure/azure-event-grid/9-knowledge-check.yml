@@ -2,37 +2,16 @@
 uid: learn.wwl.azure-event-grid.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 07/17/2024
+  ms.date: 06/16/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 3
-quiz:
-  title: "Check your knowledge"
-  questions:
-  - content: "Which of the following event schema properties requires a value?"
-    choices:
-    - content: "Topic"
-      isCorrect: false
-      explanation: "Incorrect. Event Grid will provide this value."
-    - content: "Data"
-      isCorrect: false
-      explanation: "Incorrect. A value isn't required in this property."
-    - content: "Subject"
-      isCorrect: true
-      explanation: "Correct. The subject property specifies the publisher-defined path to the event subject and is required."
-  - content: "Which of the following Event Grid built-in roles is appropriate for managing Event Grid resources?"
-    choices:
-    - content: "Event Grid Contributor"
-      isCorrect: true
-      explanation: "Correct. The Event Grid Contributor role has permissions to manage resources."
-    - content: "Event Grid Subscription Contributor"
-      isCorrect: false
-      explanation: "Incorrect. The Event Grid Subscription Contributor role has permissions to manage subscription operations."
-    - content: "Event Grid Data Sender"
-      isCorrect: false
-      explanation: "Incorrect. The Event Grid Data Sender role has permissions to send events to topics."
+content: |
+  [!include[](includes/9-knowledge-check.md)]
