@@ -1,8 +1,8 @@
-In this exercise, you create and configure Azure Service Bus resources, then build a .NET app to send and receive messages using the **Azure.Messaging.ServiceBus** SDK. You learn how to provision a Service Bus namespace and queue, assign permissions, and interact with messages programmatically. 
+In this exercise, you create and configure Azure Queue Storage resources, then build a .NET app to send and receive messages using the **Azure.Storage.Queues** SDK. You learn how to provision storage resources, manage queue messages, and clean up your environment when finished.  
 
 Tasks performed in this exercise:
 
-* Create Azure Service Bus resources
+* Create Azure Queue storage resources
 * Assign a role to your Microsoft Entra user name
 * Create a .NET console app to send and receive messages
 * Clean up resources
@@ -25,6 +25,6 @@ Select the **Launch Exercise** button, it opens the exercise instructions in a n
 
 <br/>
 
-<a href="https://go.microsoft.com/fwlink/?linkid=2324911" target="_blank">
+<a href="https://go.microsoft.com/fwlink/?linkid=2325008" target="_blank">
     <img src="../media/launch-exercise.png" alt="Button to launch exercise.">
 </a>

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.discover-azure-message-queue.exercise-send-receive-message-from-service-bus-queue-by-using-net
+uid: learn.wwl.discover-azure-message-queue.send-receive-messages-queue-storage
 title: Exercise - Send and receive messages from Azure Service Bus
 metadata:
   adobe-target: true
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 30
 content: |
-  [!include[](includes/6-send-receive-messages-service-bus.md)]
+  [!include[](includes/8a-send-receive-messages-queue-storage.md)]
