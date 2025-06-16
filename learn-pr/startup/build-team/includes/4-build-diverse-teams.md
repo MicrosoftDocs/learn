@@ -60,7 +60,7 @@ Here are some of the ways in which startups can benefit from [building teams tha
 - Enhanced team decision-making
 - Stronger corporate practices in social responsibility
 - Better reputation and goodwill in the community in which the company operates
-- Higher sales conversion rates (Research has shown that [consumers are more likely to purchase a product if they perceive the company to be diverse or inclusive](https://www.thinkwithgoogle.com/future-of-marketing/management-and-culture/diversity-and-inclusion/thought-leadership-marketing-diversity-inclusion/?azure-portal=true))
+- Higher sales conversion rates
 - Better understanding of diverse customer groups, reaching product/market fit faster
 - More authentic communication with diverse customer groups
 - Ease of recruiting candidates from diverse backgrounds
@@ -75,12 +75,12 @@ Attracting and retaining diverse candidates requires creating a work environment
 
 How you go about building a diverse team depends on where you're starting from. As a rule, what you start with scales. If your founding team lacks diversity by the time it has around 12 people, that level of diversity is likely to remain static as the company grows. That tendency is largely due to the influence of unconscious bias in hiring decisions. A company that has a homogenous founding team whose networks lack diversity will need to take deliberate steps to broaden its reach and overcome unconscious bias in hiring.
 
-On the other hand, if you have a high level of diversity by the time you reach 12 people, there's a much better chance that you'll be able to attract and retain a diverse workforce as the company grows. And it will take only a modest amount of extra effort.
+On the other hand, if you have a high level of diversity by the time you reach 12 people, there's a much better chance that you'll be able to attract and retain a diverse workforce as the company grows. It will take only a modest amount of extra effort.
 
 Here are some practical tips for inclusive hiring, based on lessons from founders who have successfully built diverse teams:
 
 - Understand the makeup of your existing team and acknowledge any lack of diversity from the outset.
-- Consider taking [unconscious bias training](https://www.microsoft.com/en-us/diversity/beyond-microsoft/default.aspx?azure-portal=true). It might reveal biases that you or your cofounders weren't aware of and help you to overcome them as you grow the team.
+- Consider taking [unconscious bias training](https://www.microsoft.com/diversity/beyond-microsoft/default.aspx?azure-portal=true). It might reveal biases that you or your cofounders weren't aware of and help you to overcome them as you grow the team.
 - Develop a strategy for inclusive hiring and publish it on your website. Avoid *diversity theater* and ensure that your hiring decisions match what you say in your strategy.
 - Review all your communications, including website, social media, and email campaigns. Reflect on whether they represent the diversity that you're seeking to achieve within your company.
 - If your team is still small, consider enlisting a group of peers from diverse backgrounds to sanity check your diversity plans, communications, work environment, and hiring processes.

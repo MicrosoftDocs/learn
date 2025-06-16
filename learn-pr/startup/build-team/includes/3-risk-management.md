@@ -47,11 +47,11 @@ The main benefits of founder vesting are:
 
 Founder vesting has two components:
 
-- **Cliff**. A cliff is typically a one-year period from the date of incorporation in which none of the founders have any vested shares. At the end of the year, assuming that each founder has remained involved, 25 percent of their shares will vest.
+- **Cliff**: A cliff is typically a one-year period from the date of incorporation in which none of the founders have any vested shares. At the end of the year, assuming each founder has remained involved, 25 percent of their shares will vest.
 
   If a founder departs within the first year, they forfeit all of their shareholding. This makes sense on the basis that in most startups, not much value is created in the first year.
 
-- **Monthly vesting**. The remaining 75 percent of each founder's shareholding is vested in equal installments over the following three years.
+- **Monthly vesting**: The remaining 75 percent of each founder's shareholding is vested in equal installments over the following three years.
 
 :::image type="content" source="../media/learning-path-percentage-vested.png" alt-text="Line chart that shows how the percentage vested changes over time. After the percentage remains at zero for a year, it jumps and then steadily climbs.":::
 
