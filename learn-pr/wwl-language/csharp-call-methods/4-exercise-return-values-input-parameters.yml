@@ -4,7 +4,7 @@ title: Exercise - Return values and parameters of methods
 metadata:
   title: Exercise - Return values and parameters of methods
   description: "Exercise - Return values and parameters of methods"
-  ms.date: 10/25/2024
+  ms.date: 06/16/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -12,7 +12,7 @@ metadata:
   - N/A
 durationInMinutes: 18
 content: |
-  [!include[](includes/4-return-values-input-parameters.md)]
+  [!include[](includes/4-exercise-return-values-input-parameters.md)]
 quiz:
   title: "Check your knowledge"
   questions:
