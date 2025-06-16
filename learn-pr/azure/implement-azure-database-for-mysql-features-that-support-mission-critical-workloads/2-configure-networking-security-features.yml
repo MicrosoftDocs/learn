@@ -9,6 +9,7 @@ metadata:
   ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
+  ms.custom: sfi-ropc-blocked
 durationInMinutes: 8
 content: |
   [!include[](includes/2-configure-networking-security-features.md)]

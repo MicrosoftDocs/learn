@@ -1,3 +1,6 @@
+
+
+
 In the previous unit, you used a "roll dice" coding scenario to illustrate the difference between stateful (instance) and stateless (static) methods. That same scenario can help you to understand other important concepts about calling methods. For example:
 
 - handling the return value of a method.
@@ -37,7 +40,7 @@ However, ignoring the return value would be pointless. The reason you're calling
 When you call a method, you can pass in values that the method will use to complete its task. These values are called **arguments**. The method uses the arguments to assign values to the **parameters** that are defined in the method's signature. A method can require one or more parameters to accomplish its task, or none at all.
 
 > [!NOTE]
-> Often times, the terms 'parameter' and 'argument' are used interchangeably. However, 'parameter' refers to the variable that's being used inside the method. An 'argument' is the value that's passed when the method is called.
+> Oftentimes, the terms 'parameter' and 'argument' are used interchangeably. However, 'parameter' refers to the variable that's being used inside the method. An 'argument' is the value that's passed when the method is called.
 
 Most methods are designed to accept one or more parameters. The parameters can be used to configure how the method performs its work, or they might be operated on directly. For example, the `Random.Next()` method uses parameters to configure the upper and lower boundaries of the return value. However, the `Console.WriteLine()` uses the parameter directly by printing the value to the console.
 
@@ -58,7 +61,7 @@ The first code line creates an instance of the `Random` class named `dice`. The 
 The arguments passed to a method must be the same data type as the corresponding parameters defined by the method. If you attempt to pass an incorrectly typed argument to a method, the C# compiler will catch your mistake and force you to update your calling statement before your code will compile and run. Type checking is one way that C# and .NET use to prevent end-users from experiencing errors at runtime.
 
 > [!NOTE]
-> Although parameters are often used, not all methods require parameters to complete their task. For example, the `Console` class includes a `Console.Clear()` method that doesn't use parameters. Since this method is used to clear any information displayed in the console, it doesn't need parameters to complete it's task.
+> Although parameters are often used, not all methods require parameters to complete their task. For example, the `Console` class includes a `Console.Clear()` method that doesn't use parameters. Since this method is used to clear any information displayed in the console, it doesn't need parameters to complete its task.
 
 ## Overloaded methods
 
@@ -96,7 +99,7 @@ The following exercise calls the `Random.Next()` method to generate random integ
 
     1. Use the Open Folder dialog to navigate to, and then open, the **CsharpProjects** folder.
 
-    1. In the Visual Studio Code EXPLORER panel, select **Program.cs**.
+    1. In the Visual Studio Code EXPLORER view, select **Program.cs**.
 
     1. On the Visual Studio Code **Selection** menu, select **Select All**, and then press the Delete key.
 
@@ -116,7 +119,7 @@ The following exercise calls the `Random.Next()` method to generate random integ
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
-1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+1. In the EXPLORER view, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
     Ensure that folder path displayed in the command prompt points to the folder containing your Program.cs file.
   

@@ -8,7 +8,9 @@ metadata:
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: unit
-  ms.custom: devx-track-dotnet
+  ms.custom:
+    - sfi-ropc-nochange
+    - devx-track-dotnet
 durationInMinutes: 4
 content: |
   [!include[](includes/3-broken-access-control.md)]
