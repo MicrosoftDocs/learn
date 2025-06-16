@@ -23,13 +23,13 @@ abstract: |
 
   -   Scope variables at an appropriate level within an application.
 prerequisites: |
-  -   Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes
+  -   Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
 
-  -   Experience using C# code to evaluate conditional expressions and manage variable scope inside and outside of code blocks
+  -   Experience using C# code to evaluate conditional expressions and manage variable scope inside and outside of code blocks.
 
-  -   Experience using if-elseif-else and switch-case statements in C# to match a variable or expression against several possible outcomes
+  -   Experience using if-elseif-else and switch-case statements in C# to match a variable or expression against several possible outcomes.
 
-  -   Experience using foreach, for, do, and while statements in C# to loop through a block of code and access elements of array variables
+  -   Experience using foreach, for, do, and while statements in C# to loop through a block of code and access elements of array variables.
 iconUrl: /training/achievements/7-challenge-project-develop-branching-and-looping-structures-in-csharp.svg
 levels:
 - beginner
