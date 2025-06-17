@@ -50,7 +50,7 @@ quiz:
       isCorrect: false
       explanation: Both SDK and Toolkit support that C# and that C++."
 
-  - content: "Which statements are true for Windows App SDK:"
+  - content: "Which statements are true for Windows App SDK?"
     choices:
     - content: "Restricts those apps to those specific Windows versions."
       isCorrect: false

@@ -1,5 +1,3 @@
-# Add Alphabet Buttons 
-
 In this section, you build a grid displaying all the letters of the alphabet as buttons. Instead of manually creating each button, you use an approach that generates them automatically. This method streamlines your code and makes this code more maintainable and adaptable to future changes. You first build a custom datatype, `GameLetter`, to represent the idea of a Letter. When the user selects a letter, letter is no longer available to the user for that game. Then, you learn how to use data binding to connect your UI elements directly to your ViewModel, ensuring that your interface always reflects the current state of the game.
 
 In the `MainPage.xaml` file, there's currently a single button representing the letter "A." Instead of typing a button for each letter in the alphabet, like this example:
@@ -13,21 +11,21 @@ In the `MainPage.xaml` file, there's currently a single button representing the 
 
 You can generate buttons dynamically. Ideally, the letters of the game know if they have been guessed already. Having an object that contains information about the letter and if this letter is available to the user is ideal. Then there's an array of letters that you can iterate over to create each button.
 
-:::image type="content" source="../media/5-add-alphabet-buttons/mvvm-gameletter.png" alt-text="Screenshot of project":::
+:::image type="content" source="../media/5-add-alphabet-buttons/mvvm-gameletter.png" alt-text="Screenshot of project.":::
 
 ## Model
 
 This section, you build the custom datatype, `GameLetter` that has two properties.
 
 1. In the Solution Explorer, **Right click** your **Model folder** > **Add** > **Class**
-1. Name the file **GameLetter.cs**
-1. Add to the imports:
+2. Name the file **GameLetter.cs**
+3. Add to the imports:
 
 ```csharp
 using CommunityToolkit.Mvvm.ComponentModel;
 ```
 
-1. Replace the `internal class GameLetter{}` with:
+4. Replace the `internal class GameLetter{}` with:
 
 ```csharp
 public partial class GameLetter : ObservableObject
@@ -51,15 +49,15 @@ The `GameLetter` class is designed to represent a single letter in the game and 
 
 The ViewModel creates the array of GameLetter objects from A to Z. It also handles when the user selects a letter as a guess; at that point it updates the View.
 
-1. In the Solution Explorer, open **MainViewModel.cs**
-1. Add **Letter** Property under `WordDisplay`:
+5. In the Solution Explorer, open **MainViewModel.cs**
+6. Add **Letter** Property under `WordDisplay`:
 
 ```csharp
 [ObservableProperty]
  public partial List<GameLetter> Letters { get; set; }
 ```
 
-1. Add the creation of the letters to the top of the `MainViewModel`‘s Constructor
+7. Add the creation of the letters to the top of the `MainViewModel`‘s Constructor
 
 ```csharp
 Letters = new List<GameLetter>();
@@ -70,7 +68,7 @@ for (char letter = 'A'; letter <= 'Z'; letter++)
 
 ```
 
-1. Add a **Command Handler Function** under `// Command executed when a letter is guessed`:
+8. Add a **Command Handler Function** under `// Command executed when a letter is guessed`:
 
 ```csharp
 [RelayCommand]
@@ -82,7 +80,7 @@ public void OnLetterGuessed(char LetterValue)
 }
 ```
 
-1. Replace the `UpdateProperties` to:
+9. Replace the `UpdateProperties` to:
 
 ```csharp
 private void UpdateProperties(char LetterValue = '\0')
@@ -175,7 +173,7 @@ public partial class MainViewModel : ObservableObject
 
 The Letters array of GameLetter objects uses the `ObservableProperty` attribute. By making the Letters array observable, and the UI updates automatically when these values change. In the MainViewModel's Constructor, the actual content of the Letters array is created and ready for the View to use.
 
-The `OnLetterGuessed` methods use the `RelayCommand` which automatically turns it into a command that can be bound to UI elements, specifically the Letter buttons that are created in the View. The `RelayCommand` allows the ViewModel to handle user interactions cleanly, without requiring event handlers in the code-behind. When the letter button is clicked, this action triggers this command, executing the `OnLetterGuessed` method.
+The `OnLetterGuessed` methods use the `RelayCommand`, which automatically turns it into a command that can be bound to UI elements, specifically the Letter buttons that are created in the View. The `RelayCommand` allows the ViewModel to handle user interactions cleanly, without requiring event handlers in the code-behind. When the letter button is clicked, this action triggers this command, executing the `OnLetterGuessed` method.
 
 The new UpdateProperties function now handles the case where it receives a Letter. When it does, it sets the `IsAvailable` property of that GameLetter to `False`, disabling the button.
 
@@ -183,15 +181,15 @@ The new UpdateProperties function now handles the case where it receives a Lette
 
 To create buttons dynamically, you use a [Control](/windows/apps/design/controls/). In Windows app development, controls are the UI elements that display content and enable user interaction. There are over 45 controls, ranging from simple elements like buttons and text boxes to more advanced data presentation controls like the `GridView` and `ListView`. These controls adhere to the Fluent Design System principles, ensuring your app looks modern, scales well across different devices and screen sizes, and provides a consistent user experience.
 
-1. In the Solution Explorer, open the **GamePage.xaml** file
-1. Locate the **Page** element
-1. At the end of **Page** element, add a new `x:Name` property:
+10. In the Solution Explorer, open the **GamePage.xaml** file
+11. Locate the **Page** element
+12. At the end of **Page** element, add a new `x:Name` property:
 
 ```xaml
 x:Name="ThisPage"  
 ```
 
-1. **Delete** the Alphabet Buttons’ Grid
+13. **Delete** the Alphabet Buttons’ Grid
 
 ```xaml
 <!-- Alphabet Buttons -->
@@ -200,7 +198,7 @@ x:Name="ThisPage"
 </Grid>
 ```
 
-1. **Replace** it with Grid View code:
+14. **Replace** it with Grid View code:
 
 ```xaml
 <GridView x:Name="AlphabetButtonsGridView" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,50,10,10" 
@@ -223,7 +221,7 @@ x:Name="ThisPage"
 </GridView>
 ```
 
-This `GridView` control creates a grid of buttons that are created with dynamic data provided for [ItemsSource](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.itemscontrol.itemssource?view=windows-app-sdk-1.7&preserve-view=true); the `ViewModel.Letters`. The GridView uses an `ItemsWrapGrid` to arrange items, wrapping them after every 5 columns. Each item created is a button, defined by a [DataTemplate](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.datatemplate?view=windows-app-sdk-1.7&preserve-view=true) with the `Datatype` being the `GameLetter` that you created. Each button contains a [Command](/windows/apps/design/controls/commanding) which manages the clicking.
+This `GridView` control creates a grid of buttons that are created with dynamic data provided for [ItemsSource](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.itemscontrol.itemssource?view=windows-app-sdk-1.7&preserve-view=true); the `ViewModel.Letters`. The GridView uses an `ItemsWrapGrid` to arrange items, wrapping them after every five columns. Each item created is a button, defined by a [DataTemplate](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.datatemplate?view=windows-app-sdk-1.7&preserve-view=true) with the `Datatype` being the `GameLetter` that you created. Each button contains a [Command](/windows/apps/design/controls/commanding), which manages the clicking.
 
 - `<Button>`: Creates a button for each item.
 - `Content="{x: Character}"`: Sets the GameLetter’s Character, displaying the letter.
@@ -244,11 +242,11 @@ The above code uses both `x:bind` and `binding.` The code uses Binding for the C
 
 Now you can Run app in Debug mode by doing the following step:
 
-1. On the title bar, **click** on **Debug**, click on **Start Debugging** OR on your keyboard press **F5** key
+15. On the title bar, **click** on **Debug**, click on **Start Debugging** OR on your keyboard press **F5** key
 
 The app should be playable with alphabet buttons.
 
-:::image type="content" source="../media/5-add-alphabet-buttons/alphabet-buttons.png" alt-text="Screenshot of the game alphabet buttons":::
+:::image type="content" source="../media/5-add-alphabet-buttons/alphabet-buttons.png" alt-text="Screenshot of the game alphabet buttons.":::
 
 Great!
 

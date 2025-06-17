@@ -1,13 +1,11 @@
-# Game Play
-
 With the foundation of the app built, this section will be on building out most of the game play to allow the next section to be focused on other key Window development areas.
 
 ## Model
 
 You'll copy/paste most the game logic. You can either copy/paste the whole Game class with the code below or you can copy/paste the new pieces:
 
-1. In the Solution Explorer, open the Game.cs file
-1. Update the Game class:
+1. In the Solution Explorer, open the `Game.cs` file
+2. Update the Game class:
 
 <details>
   <summary>Replace the whole Game class</summary>
@@ -128,10 +126,12 @@ class Game
 ```
 </details>
 
-<details>
-  <summary> Or add each section:</summary>
+or
 
-1. Under  `// Messages for winning and losing the game` add:
+<details>
+  <summary> Add each section:</summary>
+
+3. Under  `// Messages for winning and losing the game` add:
 
 ```csharp
 private readonly string[] _winningMessages = {
@@ -149,7 +149,7 @@ private readonly string[] _losingMessages = {
 
 ```
 
-1. Under `// Properties for the current game state` add:
+4. Under `// Properties for the current game state` add:
 ```csharp
 private const int MaxIncorrectGuesses = 6;
 public int IncorrectGuesses { get; private set; }
@@ -161,7 +161,7 @@ public string MessageContent { get; private set; }
 
 ```
 
-1. At the end of` StartNewGame()` add:
+5. At the end of` StartNewGame()` add:
 
 ```csharp
 IncorrectGuesses = 0;
@@ -169,7 +169,7 @@ GameEnd = false;
 GameWon = false;
 ```
 
-1. Under `// Plays the game by guessing a letter and checking` add:
+6. Under `// Plays the game by guessing a letter and checking` add:
 ```csharp
 public void PlayGame(char letter)
 {
@@ -244,6 +244,7 @@ The `Game` class encapsulates the core logic for the word-guessing game. It star
 You'll copy/paste most the ViewModel logic. You can either copy/paste the whole `MainViewModel` class with the code below or you can copy/paste the new pieces:
 
 1. In the Solution Explorer, open the MainViewModel.cs file
+2. Update the MainViewModel class:
 
 <details>
   <summary>Replace the whole MainViewModel class</summary>
@@ -367,10 +368,12 @@ public partial class MainViewModel : ObservableObject
 ```
 </details>
 
-<details>
-  <summary> Or add each section:</summary>
+or
 
-1. Add properties under ` // Properties bound to the UI`:
+<details>
+  <summary> Add each section:</summary>
+
+3. Add properties under ` // Properties bound to the UI`:
 
 ```csharp
 [ObservableProperty]
@@ -388,12 +391,12 @@ public partial string MessageContent { get; set; }
 public partial string PopUpToDisplay { get; set; }
 ```
 
-1. add to the top of `MainViewModel()`:
+4. add to the top of `MainViewModel()`:
 ```csharp
 PopUpToDisplay = "false";
 ```
 
-1. Update `OnLetterGuessed` the to be:
+5. Update `OnLetterGuessed` the to be:
 
 ```csharp
 [RelayCommand]
@@ -412,7 +415,7 @@ public void OnLetterGuessed(char LetterValue)
 
 ```
 
-1. Under `// Ends the game, disables letters, and shows the end game message` add:
+6. Under `// Ends the game, disables letters, and shows the end game message` add:
 
 ```csharp
 private void EndGame()
@@ -441,14 +444,14 @@ private void ShowEndGameMessage()
 }
 ```
 
-1. To the end of `UpdateProperties()` add:
+7. To the end of `UpdateProperties()` add:
 
 ```csharp
 IncorrectGuesses = _game.IncorrectGuesses;
 GuessesLeft = _game.GuessesLeft;
 ```
 
-1. Under  `// Enables or disables the letter buttons` add:
+8. Under  `// Enables or disables the letter buttons` add:
 
 ```csharp
 private void SetLettersIsEnabled(bool status)
@@ -468,6 +471,7 @@ The `MainViewModel` class plays a central role in the MVVM architecture of the w
 You'll copy/paste two sections of the View XAML. You can either copy/paste the whole Grid with the code below or you can copy/paste the new pieces:
 
 1. In the Solution Explorer, open the GamePage.xaml file
+2. Update the GamePage.xaml:
 
 
 <details>
@@ -541,10 +545,12 @@ You'll copy/paste two sections of the View XAML. You can either copy/paste the w
 
 </details>
 
-<details>
-  <summary> Or add each section:</summary>
+Or 
 
-1. In `Guesses Left Display section`, replace hardcoded “6” with `"{x:Bind ViewModel.GuessesLeft, Mode=OneWay}"`
+<details>
+  <summary> Add each section:</summary>
+
+3. In `Guesses Left Display section`, replace hardcoded “6” with `"{x:Bind ViewModel.GuessesLeft, Mode=OneWay}"`
 ```xaml
 <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">
     <TextBlock Text="Guesses Left: " FontSize="20"/>
@@ -552,7 +558,7 @@ You'll copy/paste two sections of the View XAML. You can either copy/paste the w
 </StackPanel>
 ```
 
-1. Under `<!-- Popup for message -->` add:
+4. Under `<!-- Popup for message -->` add:
 
 ```xaml
 <Grid x:Name="Output" Style="{StaticResource GridStyle}">
@@ -573,10 +579,10 @@ This XAML code defines the UI for the word-guessing game, with two key interacti
 
 Now you can Run app in Debug mode by doing the following step:
 
-1. On the title bar, **click** on **Debug**, click on **Start Debugging** OR on your keyboard press **F5** key
+5. On the title bar, **click** on **Debug**, click on **Start Debugging** OR on your keyboard press **F5** key
 
 The app should be playable with the winning/losing message appearing on the top left.
 
-:::image type="content" source="../media/6-game-play/game-play.png" alt-text="Screenshot of the game with the lossing message on the top left":::
+:::image type="content" source="../media/6-game-play/game-play.png" alt-text="Screenshot of the game with the losing message on the top left.":::
 
 In this section, you built the core game logic and the ViewModel that drives the user interface. This Game class manages the game state, while the MainViewModel class connects the game to the UI, updating the display and handling player input. These code additions provide the foundation for the word-guessing game.

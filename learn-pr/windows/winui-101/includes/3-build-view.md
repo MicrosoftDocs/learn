@@ -1,5 +1,3 @@
-# Building the View
-
 In this section, you create the structure of the View (User interface) for a SnowPal game. You begin by setting up the MainWindow and adding the game UI structure. By the end of this section, you have a basic, nonfunctional UI for the SnowPal game, which serves as the foundation for adding interactivity and game logic in subsequent steps.
 
 **XAML (Extensible Application Markup Language)** files define the user interface (UI) of the application. They use an XML-based syntax to describe the layout, appearance, and behavior of UI elements. XAML elements are often nested to establish hierarchical relationships. For example, a simple XAML for a button might look like this:
@@ -34,7 +32,7 @@ public partial class MainWindow : Window
 
 The current app only contains `MainWindow.xaml` files. You can think of the MainWindow.xaml files as a picture frame of your project, this window is the container. You’ll display pictures (the Page) within your frame (Window). For this project, it has two views a StartPage and a GamePage.
 
-:::image type="content" source="../media/3-build-view/windows-pages.png" alt-text="Image of Window as a frame and Two pages labeled StartPage & GamePage":::
+:::image type="content" source="../media/3-build-view/windows-pages.png" alt-text="Diagram of the Window as a frame and Two pages labeled StartPage & GamePage.":::
 
 > [!NOTE]
 > You can use the MainWindow file to build an app, similar to the blank project that comes with the WinUI template. However, the Window element in XAML for WinUI has limitations compared to the Window element used in other Windows frameworks. Many resources and features aren't accessible when relying solely on the Window element in WinUI. For this reason, it's recommended to use Pages or Grids to structure your application instead.
@@ -46,10 +44,10 @@ The current app only contains `MainWindow.xaml` files. You can think of the Main
 > [!Tip]
 > Search | Code Search: You can locate files by using the Code Search, you can access it by going to the top bar under search or use the keyboard shortcut Ctrl + T. Enter the file name, in this case would be MainWindow.xaml, and it opens the file.
 
-:::image type="content" source="../media/3-build-view/code-search.png" alt-text="Screenshot of Visual Stuido's Search":::
+:::image type="content" source="../media/3-build-view/code-search.png" alt-text="Screenshot of Visual Studio's Search.":::
 
-1. Delete `<StackPanel>` and `<Button>` elements
-1. Add `<Frame x:Name="MainFrame" />`
+2. Delete `<StackPanel>` and `<Button>` elements
+3. Add `<Frame x:Name="MainFrame" />`
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -68,9 +66,9 @@ The current app only contains `MainWindow.xaml` files. You can think of the Main
 </Window>
 ```
 
-1. In the Solution Explorer, open `MainWindow.xaml.cs` by double clicking it
-    1. If `MainWindow.xaml.cs` isn't visible, **click** the arrow to the right of `MainWindow.xaml` to show `MainWindow.xaml.cs`
-1. Add to the imports, located at the top of the file:
+4. In the Solution Explorer, open `MainWindow.xaml.cs` by double clicking it
+    - If `MainWindow.xaml.cs` isn't visible, **click** the arrow to the right of `MainWindow.xaml` to show `MainWindow.xaml.cs`
+5. Add to the imports, located at the top of the file:
 
 ```csharp
 using SnowPal.Pages;
@@ -79,8 +77,8 @@ using SnowPal.Pages;
 > [!NOTE]
 > Visual Studio display errors because you're actively developing. If you see error, you can ignore until the end of the section or when you're asked to run the app.
 
-1. Delete `myButton_Click` function.
-1. In the MainWindow constructor function, under the `InitializeComponent();`, add to the `MainFrame.Navigate(typeof(GamePage));`
+6. Delete `myButton_Click` function.
+7. In the MainWindow constructor function, under the `InitializeComponent();`, add to the `MainFrame.Navigate(typeof(GamePage));`
 
 Your code should look like the following code:
 
@@ -104,22 +102,22 @@ Now the MainWindow constructor is responsible for navigating the Frame control n
 
 Next to create the GamePage:
 
-1. In the Solution Explorer, **Right Click** your new **Pages Folder** > **Add** > **New Item....**  
+8. In the Solution Explorer, **Right Click** your new **Pages Folder** > **Add** > **New Item....**  
 
-:::image type="content" source="../media/3-build-view/add-new-page.png" alt-text="Screenshot of Visual Studios adding a page":::
+:::image type="content" source="../media/3-build-view/add-new-page.png" alt-text="Screenshot of Visual Studios adding a page.":::
 
-1. In the **Add New Item** dialog, select **WinUI** in the template list on the left-side of the window.
-1. Select the **Blank Page (WinUI 3)** template.
-1. Name the file **GamePage.xaml**
+9. In the **Add New Item** dialog, select **WinUI** in the template list on the left-side of the window.
+10. Select the **Blank Page (WinUI 3)** template.
+11. Name the file **GamePage.xaml**
 
-:::image type="content" source="../media/3-build-view/save-gamepage.png" alt-text="Screenshot of Visual Studios saving the game page":::
+:::image type="content" source="../media/3-build-view/save-gamepage.png" alt-text="Screenshot of Visual Studios saving the game page.":::
 
-1. **Click Add**
+12. **Click Add**
 
-These steps creates both `GamePage.xaml` & `GamePage.xaml.cs`.
+These steps create both `GamePage.xaml` & `GamePage.xaml.cs`.
 
-1. If `GamePage.xaml` doesn’t auto open, In the Solution Explorer, open GamePage.xaml by double clicking it
-1. Replace the `Grid` elements with the following Grid:
+13. If `GamePage.xaml` doesn’t auto open, In the Solution Explorer, open GamePage.xaml by double clicking it
+14. Replace the `Grid` elements with the following Grid:
 
 ```xml
 <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -161,19 +159,19 @@ These steps creates both `GamePage.xaml` & `GamePage.xaml.cs`.
 
 Now you can run the app in Debug mode by doing the following steps:
 
-1. On the title bar, **Click** on **Debug**, **Click** on **Start Debugging** OR on your keyboard press **F5** key
+15. On the title bar, **Click** on **Debug**, **Click** on **Start Debugging** OR on your keyboard press **F5** key
 
 You should see something like this:
 
-:::image type="content" source="../media/3-build-view/screenshot-app.png" alt-text="Screenshot of Visual Studio's Search":::
+:::image type="content" source="../media/3-build-view/screenshot-app.png" alt-text="Screenshot of Visual Studio's Search.":::
 
-1. Close the app
+16. Close the app
 
 Great! Let’s walk through the XAML code. Remember that XAML elements are often nested within one another to establish hierarchical relationships.
 
 Below is a visual of the structure:
 
-:::image type="content" source="../media/3-build-view/visual-view-structure.png" alt-text="Diagram laying out the structure of the grid":::
+:::image type="content" source="../media/3-build-view/visual-view-structure.png" alt-text="Diagram laying out the structure of the grid.":::
 
 ```xaml
 <Grid... > The Grid is a layout panel that arranges its children in a grid of rows and columns. It's a flexible layout control.

@@ -1,11 +1,9 @@
-# Style
-
 WinUI applications benefit from using styles and resource dictionaries to create consistent and maintainable user interfaces. This section explores how to implement these features effectively.
 
 Styles define the visual appearance of controls. You can apply styles in two ways:
 
 1. Inline: Directly on a specific control
-1. As a reusable resource: Stored in a resource dictionary
+2. As a reusable resource: Stored in a resource dictionary
 
 For example, here's a TextBlock with inline styling:
 
@@ -69,19 +67,19 @@ The example code above can look like this with Resource dictionary:
 
 Create the Resource Dictionary file called Styles:
 
-1. In the Solution Explorer **Right click** on the **project** > **Add** > **New Item....**  
+3. In the Solution Explorer **Right click** on the **project** > **Add** > **New Item....**  
 
-:::image type="content" source="../media/7-style/add-new-item.png" alt-text="Screenshot of Visual Studio adding a new item":::
+:::image type="content" source="../media/7-style/add-new-item.png" alt-text="Screenshot of Visual Studio adding a new item.":::
 
-1. In the **Add New Item** dialog, select **WinUI**in the template list on the left-side of the window.
+4. In the **Add New Item** dialog, select **WinUI**in the template list on the left-side of the window.
 
-1. Select the **Resource Dictionary (WinUI 3)**
+5. Select the **Resource Dictionary (WinUI 3)**
 
-:::image type="content" source="../media/7-style/add-style-file.png" alt-text="Screenshot of Visual Studio adding a Resource Dictionary":::
+:::image type="content" source="../media/7-style/add-style-file.png" alt-text="Screenshot of Visual Studio adding a Resource Dictionary.":::
 
-1. Name the file **Styles.xaml**
-1. **Click Add**
-1. **Replace** the code with:
+6. Name the file **Styles.xaml**
+7. **Click Add**
+8. **Replace** the code with:
 
 ```xaml
 <ResourceDictionary
@@ -215,16 +213,17 @@ Create the Resource Dictionary file called Styles:
 </ResourceDictionary>
 ```
 
-Note: The Style.xaml contains styling for elements that will be added later in the module.
+> [!NOTE]
+> The Style.xaml contains styling for elements that will be added later in the module.
 
 The `x:Key` attribute is used to uniquely identify each style within the resource dictionary, allowing developers to reference and apply these styles to specific controls in the application. For example, `x:Key="MyButtonStyle1"` assigns a name to a button style, making it accessible via `{StaticResource MyButtonStyle1}`in the UI XAML. The `TargetType`attribute specifies the type of control the style applies to, such as Button, ensuring that the style settings are relevant to the intended control.
 
-For situations where you want to use similar styles but with a slight variation, you can use inheritance. For example, in this code example, we have a `BaseTextBlock` which contains all the styling for the TextBlocks. But for a Word Display element, the text should be larger font and centered. So, the `LargerTextBlock` can use the `BasedOn` property with `BaseTextBlock` to inherit all of its styles but uses the larger font and is centered. This style-management approach features reuse and inheritance. These features simplify the process and reduce duplication of styles. This simplification technique leads to consistent controls, while also permitting customization for specific needs.
+For situations where you want to use similar styles but with a slight variation, you can use inheritance. For example, in this code example, we have a `BaseTextBlock`, which contains all the styling for the TextBlocks. But for a Word Display element, the text should be larger font and centered. So, the `LargerTextBlock` can use the `BasedOn` property with `BaseTextBlock` to inherit all of its styles but uses the larger font and is centered. This style-management approach features reuse and inheritance. These features simplify the process and reduce duplication of styles. This simplification technique leads to consistent controls, while also permitting customization for specific needs.
 
 Add `Styles` Resource Dictionary to `App.xaml`:
 
-1. In the Solution Explorer open `App.xaml`
-1. Under ` <!-- Other merged dictionaries here -->` add:
+9. In the Solution Explorer open `App.xaml`
+10. Under ` <!-- Other merged dictionaries here -->` add:
 
 ```xaml
 <ResourceDictionary Source="Styles.xaml"/>
@@ -234,8 +233,8 @@ This makes the resources in styles.xaml available throughout your entire applica
 
 Use the Styles in Your UI:
 
-1. In the Solution Explorer open `GamePage.xaml`
-1. Replace the grid with the following code:
+11. In the Solution Explorer open `GamePage.xaml`
+12. Replace the grid with the following code:
 
 ```xaml
 
@@ -307,10 +306,10 @@ The code applies various predefined styles to different UI elements, such as Tex
 
 Now you can Run app in Debug mode by doing the following steps:
 
-1. On the title bar, **click** on **Debug**, **click** on **Start Debugging** OR on your keyboard press **F5** key
+13. On the title bar, **click** on **Debug**, **click** on **Start Debugging** OR on your keyboard press **F5** key
 
 You should see something like this:
 
-:::image type="content" source="../media/7-style/game-with-style.png" alt-text="Screenshot of game with styles added":::
+:::image type="content" source="../media/7-style/game-with-style.png" alt-text="Screenshot of game with styles added.":::
 
 By using styles and resource dictionaries in your WinUI applications, you create more maintainable and visually consistent user interfaces. These powerful tools separate design from structure, allowing for centralized management of styles and easy updates across your entire app. As you continue to develop with WinUI, remember that effective use of styles and resource dictionaries is a key practice for creating professional, scalable applications.

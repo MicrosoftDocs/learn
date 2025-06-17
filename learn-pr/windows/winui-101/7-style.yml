@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.winui-101.style
 
-title: Add Styles
+title: Add styles
 metadata:
   title: Add Style
   description: "Embark on your Windows development journey with this beginner-friendly course designed to get you up and running quickly. Learn how to set up a professional development environment using Visual Studio, understand the fundamentals of the WinUI3, Windows App SDK and CommunityToolkit, and grasp essential concepts of the MVVM architectural pattern. Through practical, hands-on experience building a simple word-guessing game, you'll gain the confidence and skills needed to start creating your own Windows applications. This course is perfect for aspiring Windows developers looking to build a solid foundation in modern development using cutting-edge tools and best practices."

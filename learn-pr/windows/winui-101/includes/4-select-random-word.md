@@ -1,5 +1,3 @@
-# Select the Random Word
-
 Now that we have the base structure of our UI, we can start building out the different sections of game play. We begin by having the game select a random word from an array and create a version of the word with dashes for the user to see. We'll update the hardcoded `"_ _ _ _ _ "` in our `GamePage.xaml` (Word Display Area section) to be dynamic and update after each letter guess using data binding.
 
 Data binding connects UI elements to data sources, enabling seamless synchronization between the user interface and underlying data. In WinUI 3, Windows App SDK, and the Community Toolkit, there are two primary ways to do data binding:
@@ -19,7 +17,7 @@ Data binding connects UI elements to data sources, enabling seamless synchroniza
 
 We use both in this course.
 
-:::image type="content" source="../media/4-select-random-word/mvvm-worddisplay.png" alt-text="Diagram demonstrating how WordDisplay that the View uses comes from WordDisplay in the ViewModel which comes from CurrentWord from the Model":::
+:::image type="content" source="../media/4-select-random-word/mvvm-worddisplay.png" alt-text="Diagram demonstrating how WordDisplay that the View uses comes from WordDisplay in the ViewModel, which comes from CurrentWord from the Model.":::
 
 You'll create a `Games.cs` file that contains a list of words and will randomly choose a word for that particular game call `CurrentWord`. You'll create a `MainViewModel.cs` file as the ViewModel and will use access the `CurrentWord` from the `Games.cs` but will reference it as `WordDisplay`. The MainViewModel transforms the word into the empty character spaces (that is,  `_ _ _ _`) With data binding, when `WordDisplay` changes in the MainViewModel, it'll automatically get reflected in the View (`GamePage.xaml`).
 
@@ -29,11 +27,11 @@ First, create the Game.cs file to contain the game logic:
 
 1. In the Solution Explorer, **Right click** the **Models** Folder > **Add** > **Class**
 
-:::image type="content" source="../media/4-select-random-word/create-a-class.png" alt-text="Screenshot of Visual Studio creating a class":::
+:::image type="content" source="../media/4-select-random-word/create-a-class.png" alt-text="Screenshot of Visual Studio creating a class.":::
 
-1. Name the folder **Game.cs**
-1. **Click Add**
-1. Replace `internal class Game{}` with:
+2. Name the folder **Game.cs**
+3. **Click Add**
+4. Replace `internal class Game{}` with:
 
 ```csharp
 public class Game
@@ -94,20 +92,20 @@ This code provides a basic structure for the word-guessing game. Below a breakdo
 
 ## ViewModel
 
-1. In the Solution Explorer, **Right Click** the **SnowPal project** > **Add** > **Class**
+5. In the Solution Explorer, **Right Click** the **SnowPal project** > **Add** > **Class**
 
-:::image type="content" source="../media/4-select-random-word/create-class-project.png" alt-text="Screenshot of Visual Studio creating a class for a project":::
+:::image type="content" source="../media/4-select-random-word/create-class-project.png" alt-text="Screenshot of Visual Studio creating a class for a project.":::
 
-1. Name the folder **MainViewModel.cs**
-1. **Click Add**
-1. Add the following imports:
+6. Name the folder **MainViewModel.cs**
+7. **Click Add**
+8. Add the following imports:
 
 ```csharp
 using CommunityToolkit.Mvvm.ComponentModel;
 using SnowPal.Models;
 ```
 
-1. Replace the `internal class MainViewModel {}` with:
+9. Replace the `internal class MainViewModel {}` with:
 
 ```csharp
 public partial class MainViewModel : ObservableObject
@@ -226,8 +224,8 @@ public partial class MainViewModel : INotifyPropertyChanged
 
 ## View
 
-1. In Solution Explorer, open **GamePage.xaml.cs**
-1. Add **ViewModel** property above the public **GamePage Class**:
+10. In Solution Explorer, open **GamePage.xaml.cs**
+11. Add **ViewModel** property above the public **GamePage Class**:
 
 ```csharp
 namespace SnowPal.Pages
@@ -246,16 +244,16 @@ namespace SnowPal.Pages
 
 This code ensures that the GamePage has access to the MainViewModel.
 
-1. In Solution Explorer, **open GamePage.xaml**
-1. **Locate** `xmlns:local="using:SnowPal.Views"` in the Page’s element
-1. **Replace** it with:
+12. In Solution Explorer, **open GamePage.xaml**
+13. **Locate** `xmlns:local="using:SnowPal.Views"` in the Page’s element
+14. **Replace** it with:
 
 ```xaml
 xmlns:local="using:SnowPal.Models"
 ```
 
-1. **Locate** `Word Display Area` comment
-1. In the `TextBlock` below, replace the value of the `Text` property of `"_ _ _ _ _"` with:
+15. **Locate** `Word Display Area` comment
+16. In the `TextBlock` below, replace the value of the `Text` property of `"_ _ _ _ _"` with:
 
 ```xaml
 "{x:Bind ViewModel.WordDisplay, Mode=OneWay}"
@@ -265,34 +263,34 @@ The `{x:Bind}` markup extension used here offers a performance advantage over tr
 
 Now you can Run app in Debug mode by doing the following steps:
 
-1. On the title bar, **Click** on **Debug** > **Start Debugging** OR on your keyboard press **F5** key
+17. On the title bar, **Click** on **Debug** > **Start Debugging** OR on your keyboard press **F5** key
 
-:::image type="content" source="../media/3-build-view/screenshot-app.png" alt-text="Screenshot of Visual Studio's Search":::
+:::image type="content" source="../media/3-build-view/screenshot-app.png" alt-text="Screenshot of Visual Studio's Search.":::
 
 ## Debugging
 
 It's difficult to tell if the code worked since it looks similar to before. To see the randomly selected word during debugging:
 
-1. In Solution Explorer, open **Game.cs**
-1. **Add** to the imports:
+18. In Solution Explorer, open **Game.cs**
+19. **Add** to the imports:
 
 ```csharp
 using System.Diagnostics;
 ```
 
-1. At the bottom of the `StartNewGame` function add:
+20. At the bottom of the `StartNewGame` function add:
 
 ```csharp
 Debug.WriteLine("Current Word: " + CurrentWord);
 ```
 
-1. On the title bar, **Click** on **Debug** > **Start Debugging** OR on your keyboard press **F5** key
-1. **Locate the Output window** which typically appear at the bottom of the Visual Studio IDE, or do one of the following:
+21. On the title bar, **Click** on **Debug** > **Start Debugging** OR on your keyboard press **F5** key
+22. **Locate the Output window** which typically appear at the bottom of the Visual Studio IDE, or do one of the following:
     1. From the Menu: Go to **Debug** > **Windows** > **Output**.
     1. Keyboard Shortcut: Press `Ctrl + Alt + O` (that's a letter 'O', not zero).
     1. Search Visual Studio: Use the Visual Studio search bar `(Ctrl+Q)` and type **"Output"** and select the "Output" window from the results.
 
-:::image type="content" source="../media/4-select-random-word/output.png" alt-text="Screenshot of project":::
+:::image type="content" source="../media/4-select-random-word/output.png" alt-text="Screenshot of project.":::
 
 `Debug.WriteLine("Current Word: " + CurrentWord);` prints the value of the `CurrentWord` variable to the Output window in Visual Studio during debugging Adding this debug line allows you to verify which word was randomly selected at the start of each new game. This helps with debugging and ensures that the game logic is working as expected.
 
