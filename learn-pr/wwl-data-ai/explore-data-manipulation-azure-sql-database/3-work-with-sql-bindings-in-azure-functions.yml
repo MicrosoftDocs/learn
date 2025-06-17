@@ -8,6 +8,7 @@ metadata:
   author: jupadrao
   ms.author: jupadrao
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 durationInMinutes: 7
 content: |
   [!include[](includes/3-work-with-sql-bindings-in-azure-functions.md)]

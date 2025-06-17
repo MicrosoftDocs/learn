@@ -29,7 +29,6 @@ modules:
 - learn.azure.intro-to-azure-monitor
 - learn.design-monitoring-strategy-on-azure
 - learn.wwl.monitor-app-performance
-- learn.analyze-infrastructure-with-azure-monitor-logs
 - learn.visualize-data-workbooks
 - learn.incident-response-with-alerting-on-azure
 
