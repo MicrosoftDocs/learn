@@ -1,5 +1,80 @@
 {
-  "redirections": [
+  "redirections": [ 
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.analyze-infrastructure-with-azure-monitor-logs.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path_from_root": "/learn-pr/azure/analyze-infrastructure-with-azure-monitor-logs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/analyze-infrastructure-with-azure-monitor-logs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/analyze-infrastructure-with-azure-monitor-logs/2-features-azure-monitor-log.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/analyze-infrastructure-with-azure-monitor-logs/3-create-log-queries.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/analyze-infrastructure-with-azure-monitor-logs/4-exercise-create-log-queries.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/analyze-infrastructure-with-azure-monitor-logs/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/6-availability-enhancements.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/5-scalability.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/4-security-enhancements.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/3-exercise-ledger.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/2-ledger.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/sql-server-2022-security-scalability-availability/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver17",
+      "redirect_document_id": false
+    },
     {
       "source_path_from_root": "/learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/enable-reliable-messaging-for-big-data-apps-using-event-hubs/7-summary",
@@ -48376,52 +48451,52 @@
     },
     {
       "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/index.md",
-      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/1-introduction.md",
-      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/2-multi-table-queries.md",
-      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/3-exercise-connect-to-resources.md",
-      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/4-exercise-join-types.md",
-      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/5-exercise-lookup.md",
-      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/6-exercise-union.md",
-      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/7-exercise-materialize.md",
-      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/8-knowledge-check.md",
-      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/multi-table-queries-with-kusto-query-language/9-summary.md",
-      "redirect_url": "/training/paths/multi-table-queries-with-kusto-query-language/",
+      "redirect_url": "/training/paths/analyze-monitoring-data-with-kql/",
       "redirect_document_id": false
     },
     {
@@ -48593,6 +48668,106 @@
       "source_path": "learn-pr/sqlserver/sql-server-2022-performance-enhancements/8-summary.md",
       "redirect_url": "/training/paths/get-started-querying-with-transact-sql/",
       "redirect_document_id": false
-    }
+    },
+     {
+      "source_path": "learn-pr/wwl-language/csharp-readable-code/5-challenge.md",
+      "redirect_url": "/training/modules/csharp-readable-code/5-exercise-challenge-improve-code-readability",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-readable-code/6-solution.md",
+      "redirect_url": "/training/modules/csharp-readable-code/6-review-solution-code-readability-challenge",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-arrays/4-challenge.md",
+      "redirect_url": "/training/modules/csharp-arrays/4-exercise-challenge-nested-iteration",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-arrays/5-solution.md",
+      "redirect_url": "/training/modules/csharp-arrays/5-review-solution-nested-iteration-challenge",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-call-methods/3-call-methods.md",
+      "redirect_url": "/training/modules/csharp-call-methods/3-exercise-call-methods-dotnet-class",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-call-methods/4-return-values-input-parameters.md",
+      "redirect_url": "/training/modules/csharp-call-methods/4-exercise-return-values-input-parameters",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-call-methods/5-challenge.md",
+      "redirect_url": "/training/modules/csharp-call-methods/5-exercise-challenge-call-method",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-call-methods/6-solution.md",
+      "redirect_url": "/training/modules/csharp-call-methods/6-review-solution-for-call-method-challenge",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-if-elseif-else/4-challenge.md",
+      "redirect_url": "/training/modules/csharp-if-elseif-else/4-exercise-challenge-apply-business-rules",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-if-elseif-else/5-solution.md",
+      "redirect_url": "/training/modules/csharp-if-elseif-else/5-review-solution-apply-business-rules-challenge",
+      "redirect_document_id": false
+  },
+    {
+      "source_path": "learn-pr/wwl-language/csharp-evaluate-boolean-expressions/4-challenge-1.md",
+      "redirect_url": "/training/modules/csharp-evaluate-boolean-expressions/4-exercise-challenge-conditional-operators",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-evaluate-boolean-expressions/5-solution-1.md",
+      "redirect_url": "/training/modules/csharp-evaluate-boolean-expressions/5-review-solution-conditional-operators-challenge",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-evaluate-boolean-expressions/6-challenge-2.md",
+      "redirect_url": "/training/modules/csharp-evaluate-boolean-expressions/6-exercise-challenge-boolean-expressions",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-evaluate-boolean-expressions/7-solution-2.md",
+      "redirect_url": "/training/modules/csharp-evaluate-boolean-expressions/7-review-solution-boolean-expressions-challenge",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-switch-case/3-challenge.md",
+      "redirect_url": "/training/modules/csharp-switch-case/3-exercise-challenge-switch-statements",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-switch-case/4-solution.md",
+      "redirect_url": "/training/modules/csharp-switch-case/4-review-solution-switch-statements-challenge",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-for/3-challenge.md",
+      "redirect_url": "/training/modules/csharp-for/3-exercise-challenge-for-statements",
+      "redirect_document_id": false
+  }, 
+  {
+      "source_path": "learn-pr/wwl-language/csharp-for/4-solution.md",
+      "redirect_url": "/training/modules/csharp-for/4-review-solution-for-statements-challenge",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-do-while/3-challenge.md",
+      "redirect_url": "/training/modules/csharp-do-while/3-exercise-challenge-do-while-statements",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-do-while/4-solution.md",
+      "redirect_url": "/training/modules/csharp-do-while/4-review-solution-do-while-statements-challenge",
+      "redirect_document_id": false
+  }
 ]
 }

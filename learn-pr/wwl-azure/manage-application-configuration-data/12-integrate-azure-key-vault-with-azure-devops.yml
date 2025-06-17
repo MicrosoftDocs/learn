@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
+  ms.custom: sfi-ga-nochange
 durationInMinutes: 40
 content: |
   [!include[](includes/12-integrate-azure-key-vault-with-azure-devops.md)]
