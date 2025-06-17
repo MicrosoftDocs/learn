@@ -23,7 +23,7 @@ Ensure security organizations are granted Security Reader permissions in your Az
 
 GCP guidance: Use Google Cloud Asset Inventory to provide inventory services based on a time series database. This database keeps a five-week history of GCP asset metadata. The Cloud Asset Inventory export service allows you to export all asset metadata at a certain timestamp or export event change history during a timeframe.
 
-Additionally, Google Cloud Security Command Center supports a different naming convention. Assets are an organization’s Google Cloud resources. The IAM roles for Security Command Center can be granted at the organization, folder, or project level. Your ability to view, create, or update findings, assets, and security sources depends on the level for which you are granted access.
+Additionally, Google Cloud Security Command Center supports a different naming convention. Assets are an organization’s Google Cloud resources. The IAM roles for Security Command Center can be granted at the organization, folder, or project level. Your ability to view, create, or update findings, assets, and security sources depends on the level for which you're granted access.
 
 GCP implementation and additional context:
 
@@ -110,7 +110,7 @@ Security principle: Ensure security attributes or configurations of the assets a
 
 Azure guidance: Establish or update security policies/process that address asset lifecycle management processes for potentially high impact modifications. These modifications include changes to identity providers and access, data sensitivity level, network configuration, and administrative privilege assignment.
 
-Identify and remove Azure resources when they are no longer needed.
+Identify and remove Azure resources when they're no longer needed.
 
 Azure implementation and additional context:
 
@@ -118,7 +118,7 @@ Azure implementation and additional context:
 
 AWS guidance: Establish or update security policies/process that address asset lifecycle management processes for potentially high impact modifications. These modifications include changes to identity providers and access, data sensitivity level, network configuration, and administrative privilege assignment.
 
-Identify and remove AWS resources when they are no longer needed.
+Identify and remove AWS resources when they're no longer needed.
 
 AWS implementation and additional context:
 
@@ -151,7 +151,7 @@ Security principle: Limit users' access to asset management features, to avoid a
 
 Azure guidance: Azure Resource Manager is the deployment and management service for Azure. It provides a management layer that enables you to create, update, and delete resources (assets) in Azure. Use Azure AD Conditional Access to limit users' ability to interact with Azure Resource Manager by configuring "Block access" for the "Microsoft Azure Management" App.
 
-Use Azure Role-based Access Control (Azure RBAC) to assign roles to identities to control their permissions and access to Azure resources. For example, a user with only the 'Reader' Azure RBAC role can view all resources, but is not allowed to make any changes.
+Use Azure Role-based Access Control (Azure RBAC) to assign roles to identities to control their permissions and access to Azure resources. For example, a user with only the 'Reader' Azure RBAC role can view all resources, but isn't allowed to make any changes.
 
 Use Resource Locks to prevent either deletions or modifications to resources. Resource Locks may also be administered through Azure Blueprints.
 
@@ -233,7 +233,7 @@ Azure guidance: Use multifactor authentication and Azure RBAC to secure the crit
 
 For Azure Backup supported resources, backup data is automatically encrypted using Azure platform-managed keys with 256-bit AES encryption. You can also choose to encrypt the backups using a customer managed key. In this case, ensure the customer-managed key in the Azure Key Vault is also in the backup scope. If you use a customer-managed key, use soft delete and purge protection in Azure Key Vault to protect keys from accidental or malicious deletion. For on-premises backups using Azure Backup, encryption-at-rest is provided using the passphrase you provide.
 
-Safeguard backup data from accidental or malicious deletion, such as ransomware attacks/attempts to encrypt or tamper backup data. For Azure Backup supported resources, enable soft delete to ensure recovery of items with no data loss for up to 14 days after an unauthorized deletion, and enable multifactor authentication using a PIN generated in the Azure portal. Also enable geo-redundant storage or cross-region restoration to ensure backup data is restorable when there is a disaster in primary region. You can also enable Zone-redundant Storage (ZRS) to ensure backups are restorable during zonal failures.
+Safeguard backup data from accidental or malicious deletion, such as ransomware attacks/attempts to encrypt or tamper backup data. For Azure Backup supported resources, enable soft delete to ensure recovery of items with no data loss for up to 14 days after an unauthorized deletion, and enable multifactor authentication using a PIN generated in the Azure portal. Also enable geo-redundant storage or cross-region restoration to ensure backup data is restorable when there's a disaster in primary region. You can also enable Zone-redundant Storage (ZRS) to ensure backups are restorable during zonal failures.
 
 > [!NOTE]
 > If you use a resource's native backup feature or backup services other than Azure Backup, refer to the Microsoft Cloud Security Benchmark (and service baselines) to implement the above controls.
@@ -339,7 +339,7 @@ Customer security stakeholders ([Learn more](/azure/cloud-adoption-framework/org
 | ------------------------- | --------------------------- | ------------------------ |
 | 3.10                      | SC-8                        | 3.5, 3.6, 4.1            |
 
-Security principle: Protect the data in transit against 'out of band' attacks (such as traffic capture) using encryption to ensure that attackers cannot easily read or modify the data.
+Security principle: Protect the data in transit against 'out of band' attacks (such as traffic capture) using encryption to ensure that attackers can't easily read or modify the data.
 
 Set the network boundary and service scope where data in transit encryption is mandatory inside and outside of the network. While this is optional for traffic on private networks, this is critical for traffic on external and public networks.<br>
 
@@ -397,11 +397,11 @@ Customer security stakeholders ([Learn more](/azure/cloud-adoption-framework/org
 | ------------------------- | --------------------------- | ------------------------ |
 | N/A                       | IA-5, SC-12, SC-28          | 3.6                      |
 
-Security principle: Document and implement an enterprise cryptographic key management standard, processes, and procedures to control your key lifecycle. When there is a need to use customer-managed key in the services, use a secured key vault service for key generation, distribution, and storage. Rotate and revoke your keys based on the defined schedule and when there is a key retirement or compromise.
+Security principle: Document and implement an enterprise cryptographic key management standard, processes, and procedures to control your key lifecycle. When there's a need to use customer-managed key in the services, use a secured key vault service for key generation, distribution, and storage. Rotate and revoke your keys based on the defined schedule and when there's a key retirement or compromise.
 
-Azure guidance: Use Azure Key Vault to create and control your encryption keys life cycle, including key generation, distribution, and storage. Rotate and revoke your keys in Azure Key Vault and your service based on the defined schedule and when there is a key retirement or compromise. Require a certain cryptographic type and minimum key size when generating keys.
+Azure guidance: Use Azure Key Vault to create and control your encryption keys life cycle, including key generation, distribution, and storage. Rotate and revoke your keys in Azure Key Vault and your service based on the defined schedule and when there's a key retirement or compromise. Require a certain cryptographic type and minimum key size when generating keys.
 
-When there is a need to use customer-managed key (CMK) in the workload services or applications, ensure you follow the best practices:
+When there's a need to use customer-managed key (CMK) in the workload services or applications, ensure you follow the best practices:
 
  -  Use a key hierarchy to generate a separate data encryption key (DEK) with your key encryption key (KEK) in your key vault.
  -  Ensure keys are registered with Azure Key Vault and implemented via key IDs in each service or application.
@@ -423,9 +423,9 @@ Azure implementation and additional context:
  -  [Azure data encryption at rest Key Hierarchy](/azure/security/fundamentals/encryption-atrest#key-hierarchy)
  -  [BYOK (Bring Your Own Key) specification](/azure/key-vault/keys/byok-specification)
 
-AWS guidance: Use AWS Key Management Service (KMS) to create and control your encryption keys life cycle, including key generation, distribution, and storage. Rotate and revoke your keys in KMS and your service based on the defined schedule and when there is a key retirement or compromise.
+AWS guidance: Use AWS Key Management Service (KMS) to create and control your encryption keys life cycle, including key generation, distribution, and storage. Rotate and revoke your keys in KMS and your service based on the defined schedule and when there's a key retirement or compromise.
 
-When there is a need to use customer-managed customer master key in the workload services or applications, ensure you follow the best practices:
+When there's a need to use customer-managed customer master key in the workload services or applications, ensure you follow the best practices:
 
  -  Use a key hierarchy to generate a separate data encryption key (DEK) with your key encryption key (KEK) in your KMS.
  -  Ensure keys are registered with KMS and implement via IAM policies in each service or application.
@@ -451,7 +451,7 @@ AWS implementation and additional context:
  -  [Secure transfer of keys into to CloudHSM](https://aws.amazon.com/premiumsupport/knowledge-center/cloudhsm-import-keys-openssl/)
  -  [Creating a custom key store backed by CloudHSM](https://docs.aws.amazon.com/kms/latest/developerguide/key-store-concepts.html)
 
-GCP guidance: Use Cloud Key Management Service (Cloud KMS) to create and manage encryption key lifecycles in compatible Google Cloud services and in your workload applications. Rotate and revoke your keys in Cloud KMS and your service based on the defined schedule and when there is a key retirement or compromise.
+GCP guidance: Use Cloud Key Management Service (Cloud KMS) to create and manage encryption key lifecycles in compatible Google Cloud services and in your workload applications. Rotate and revoke your keys in Cloud KMS and your service based on the defined schedule and when there's a key retirement or compromise.
 
 Use Google’s Cloud HSM service to provide hardware-backed keys to Cloud KMS (Key Management Service) It gives you ability to manage and use your own cryptographic keys while being protected by fully managed Hardware Security Modules (HSM).
 
@@ -479,7 +479,7 @@ Security principle: Document and implement an enterprise certificate management 
 
 Ensure certificates used by the critical services in your organization are inventoried, tracked, monitored, and renewed timely using automated mechanism to avoid service disruption.<br>
 
-Azure guidance: Use Azure Key Vault to create and control the certificate lifecycle, including the creation/import, rotation, revocation, storage, and purge of the certificate. Ensure the certificate generation follows the defined standard without using any insecure properties, such as insufficient key size, overly long validity period, insecure cryptography and so on. Setup automatic rotation of the certificate in Azure Key Vault and supported Azure services based on the defined schedule and when a certificate expires. If automatic rotation is not supported in the frontend application, use a manual rotation in Azure Key Vault.
+Azure guidance: Use Azure Key Vault to create and control the certificate lifecycle, including the creation/import, rotation, revocation, storage, and purge of the certificate. Ensure the certificate generation follows the defined standard without using any insecure properties, such as insufficient key size, overly long validity period, insecure cryptography and so on. Setup automatic rotation of the certificate in Azure Key Vault and supported Azure services based on the defined schedule and when a certificate expires. If automatic rotation isn't supported in the frontend application, use a manual rotation in Azure Key Vault.
 
 Avoid using a self-signed certificate and wildcard certificate in your critical services due to the limited security assurance. Instead, you can create public signed certificates in Azure Key Vault. The following Certificate Authorities (CAs) are the partnered providers that are currently integrated with Azure Key Vault.
 
@@ -494,7 +494,7 @@ Azure implementation and additional context:
  -  [Get started with Key Vault certificates](/azure/key-vault/certificates/certificate-scenarios)
  -  [Certificate Access Control in Azure Key Vault](/azure/key-vault/certificates/certificate-access-control)
 
-AWS guidance: Use AWS Certificate Manager (ACM) to create and control the certificate lifecycle, including creation/import, rotation, revocation, storage, and purge of the certificate. Ensure the certificate generation follows the defined standard without using any insecure properties, such as insufficient key size, overly long validity period, insecure cryptography and so on. Setup automatic rotation of the certificate in ACM and supported AWS services based on the defined schedule and when a certificate expires. If automatic rotation is not supported in the frontend application, use manual rotation in ACM. In the meantime, you should always track your certificate renewal status to ensure the certificate validity.
+AWS guidance: Use AWS Certificate Manager (ACM) to create and control the certificate lifecycle, including creation/import, rotation, revocation, storage, and purge of the certificate. Ensure the certificate generation follows the defined standard without using any insecure properties, such as insufficient key size, overly long validity period, insecure cryptography and so on. Setup automatic rotation of the certificate in ACM and supported AWS services based on the defined schedule and when a certificate expires. If automatic rotation isn't supported in the frontend application, use manual rotation in ACM. In the meantime, you should always track your certificate renewal status to ensure the certificate validity.
 
 Avoid using a self-signed certificate and wildcard certificate in your critical services due to the limited security assurance. Instead, create public-signed certificates (signed by the Amazon Certificate Authority) in ACM and deploy it programmatically in services such as CloudFront, Load Balancers, API Gateway etc. You also can use ACM to establish your private certificate authority (CA) to sign the private certificates.
 
@@ -505,7 +505,7 @@ AWS implementation and additional context:
 
  -  [AWS Certificate Manager - Check a certificate's renewal status](https://docs.aws.amazon.com/acm/latest/userguide/check-certificate-renewal-status.html)
 
-GCP guidance: Use Google Cloud Certificate Manager to create and control the certificate lifecycle, including creation/import, rotation, revocation, storage, and purge of the certificate. Ensure the certificate generation follows the defined standard without using any insecure properties, such as insufficient key size, overly long validity period, insecure cryptography and so on. Setup automatic rotation of the certificate in Certificate Manager and supported GCP services based on the defined schedule and when a certificate expires. If automatic rotation is not supported in the frontend application, use manual rotation in Certificate Manager. In the meantime, you should always track your certificate renewal status to ensure the certificate validity.
+GCP guidance: Use Google Cloud Certificate Manager to create and control the certificate lifecycle, including creation/import, rotation, revocation, storage, and purge of the certificate. Ensure the certificate generation follows the defined standard without using any insecure properties, such as insufficient key size, overly long validity period, insecure cryptography and so on. Setup automatic rotation of the certificate in Certificate Manager and supported GCP services based on the defined schedule and when a certificate expires. If automatic rotation isn't supported in the frontend application, use manual rotation in Certificate Manager. In the meantime, you should always track your certificate renewal status to ensure the certificate validity.
 
 Avoid using a self-signed certificate and wildcard certificate in your critical services due to the limited security assurance. Instead, you can create signed public certificates in Certificate Manager and deploy it programmatically in services such as Load Balancer and Cloud DNS etc. You also can use Certificate Authority Service to establish your private certificate authority (CA) to sign the private certificates.
 
@@ -532,14 +532,14 @@ Security principle: Ensure the security of the key vault service used for the cr
 
 Azure guidance: Secure your cryptographic keys and certificates by hardening your Azure Key Vault service through the following controls:
 
- -  Implement access control using RBAC policies in Azure Key Vault Managed HSM at the key level to ensure the least privilege and separation of duties principles are followed. For example, ensure separation of duties are in place for users who manage encryption keys so they do not have the ability to access encrypted data, and vice versa. For Azure Key Vault Standard and Premium, create unique vaults for different applications to ensure the least privilege and separation of duties principles are followed.
+ -  Implement access control using RBAC policies in Azure Key Vault Managed HSM at the key level to ensure the least privilege and separation of duties principles are followed. For example, ensure separation of duties are in place for users who manage encryption keys so they don't have the ability to access encrypted data, and vice versa. For Azure Key Vault Standard and Premium, create unique vaults for different applications to ensure the least privilege and separation of duties principles are followed.
  -  Turn on Azure Key Vault logging to ensure critical management plane and data plane activities are logged.
  -  Secure the Azure Key Vault using Private Link and Azure Firewall to ensure minimal exposure of the service
  -  Use managed identity to access keys stored in Azure Key Vault in your workload applications.
- -  When purging data, ensure your keys are not deleted before the actual data, backups and archives are purged.
+ -  When purging data, ensure your keys aren't deleted before the actual data, backups and archives are purged.
  -  Backup your keys and certificates using Azure Key Vault. Enable soft delete and purge protection to avoid accidental deletion of keys. When keys need to be deleted, consider disabling keys instead of deleting them to avoid accidental deletion of keys and cryptographic erasure of data.
  -  For bring your own key (BYOK) use cases, generate keys in an on-premises HSM and import them to maximize the lifetime and portability of the keys.
- -  Never store keys in plaintext format outside of the Azure Key Vault. Keys in all key vault services are not exportable by default.
+ -  Never store keys in plaintext format outside of the Azure Key Vault. Keys in all key vault services aren't exportable by default.
  -  Use HSM-backed key types (RSA-HSM) in Azure Key Vault Premium and Azure Managed HSM for the hardware protection and the strongest FIPS levels.
 
 Enable Microsoft Defender for Key Vault for Azure-native, advanced threat protection for Azure Key Vault, providing an additional layer of security intelligence.
@@ -553,11 +553,11 @@ Azure implementation and additional context:
 
 AWS guidance: For cryptographic keys security, secure your keys by hardening your AWS Key Management Service (KMS) service through the following controls:
 
- -  Implement access control using key policies (key-level access control) in conjunction with IAM policies (identity-based access control) to ensure the least privilege and separation of duties principles are followed. For example, ensure separation of duties are in place for users who manage encryption keys so they do not have the ability to access encrypted data, and vice versa.
+ -  Implement access control using key policies (key-level access control) in conjunction with IAM policies (identity-based access control) to ensure the least privilege and separation of duties principles are followed. For example, ensure separation of duties are in place for users who manage encryption keys so they don't have the ability to access encrypted data, and vice versa.
  -  Use detective controls such as CloudTrails to log and track the usage of keys in KMS and alert you on critical actions.
  -  Never store keys in plaintext format outside of KMS.
  -  When keys need to be deleted, consider disabling keys in KMS instead of deleting them to avoid accidental deletion of keys and cryptographic erasure of data.
- -  When purging data, ensure your keys are not deleted before the actual data, backups and archives are purged.
+ -  When purging data, ensure your keys aren't deleted before the actual data, backups and archives are purged.
  -  For bring your own key (BYOK) uses cases, generate keys in an on-premise HSM and import them to maximize the lifetime and portability of the keys.
 
 For certificates security, secure your certificates by hardening your AWS Certificate Manager (ACM) service through the following controls:
@@ -573,7 +573,7 @@ AWS implementation and additional context:
 
 GCP guidance: For cryptographic keys security, secure your keys by hardening your Key Management Service through the following controls:
 
- -  Implement access control using IAM roles to ensure the least privilege and separation of duties principles are followed. For example, ensure separation of duties are in place for users who manage encryption keys so they do not have the ability to access encrypted data, and vice versa.
+ -  Implement access control using IAM roles to ensure the least privilege and separation of duties principles are followed. For example, ensure separation of duties are in place for users who manage encryption keys so they don't have the ability to access encrypted data, and vice versa.
  -  Create a separate key ring for each project which allows you to easily manage and control access to the keys following least privilege best practice. It also makes it easier to audit who has access to which keys at when.
  -  Enable automatic rotation of keys to ensure keys are regularly updated and refreshed. This helps to protect against potential security threats such as brute force attacks or malicious actors attempting to gain access to sensitive information.
  -  Setup up an audit log sink to track all the activities that occur within you GCP KMS environment.
@@ -814,7 +814,7 @@ Security principle: Ensure that application developers securely handle credentia
 > [!NOTE]
 > This is often governed and enforced through a secure software development lifecycle (SDLC) and DevOps security process.<br>
 
-Azure guidance: When using a managed identity is not an option, ensure that secrets and credentials are stored in secure locations such as Azure Key Vault, instead of embedding them into the code and configuration files.
+Azure guidance: When using a managed identity isn't an option, ensure that secrets and credentials are stored in secure locations such as Azure Key Vault, instead of embedding them into the code and configuration files.
 
 If you use Azure DevOps and GitHub for your code management platform:
 
@@ -824,14 +824,14 @@ If you use Azure DevOps and GitHub for your code management platform:
 Clients such as Azure Functions, Azure Apps services, and VMs can use managed identities to access Azure Key Vault securely. See Data Protection controls related to the use of Azure Key Vault for secrets management.
 
 > [!NOTE]
-> Azure Key Vault provides automatic rotation for supported services. For secrets that cannot be automatically rotated, ensure they are manually rotated periodically and purged when no longer in use.
+> Azure Key Vault provides automatic rotation for supported services. For secrets that can't be automatically rotated, ensure they're manually rotated periodically and purged when no longer in use.
 
 Azure implementation and additional context:
 
  -  [How to setup Credential Scanner](https://secdevtools.azurewebsites.net/helpcredscan.html)
  -  [GitHub secret scanning](https://docs.github.com/github/administering-a-repository/about-secret-scanning)
 
-AWS guidance: When using an IAM role for application access is not an option, ensure that secrets and credentials are stored in secure locations such as AWS Secret Manager or Systems Manager Parameter Store, instead of embedding them into the code and configuration files.
+AWS guidance: When using an IAM role for application access isn't an option, ensure that secrets and credentials are stored in secure locations such as AWS Secret Manager or Systems Manager Parameter Store, instead of embedding them into the code and configuration files.
 
 Use CodeGuru Reviewer for static code analysis which can detect the secrets hard-coded in your source code.
 
@@ -841,7 +841,7 @@ If you use the Azure DevOps and GitHub for your code management platform:
  -  For GitHub, use the native secret scanning feature to identify credentials or other forms of secrets within the code.
 
 > [!NOTE]
-> Secrets Manager provides automatic secrets rotation for supported services. For secrets that cannot be automatically rotated, ensure they are manually rotated periodically and purged when no longer in use.
+> Secrets Manager provides automatic secrets rotation for supported services. For secrets that cannot be automatically rotated, ensure they're manually rotated periodically and purged when no longer in use.
 
 AWS implementation and additional context:
 
@@ -849,7 +849,7 @@ AWS implementation and additional context:
  -  [AWS Secrets Manager integrated services](https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrating.html)
  -  [CodeGuru Reviewer Secrets Detection](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)
 
-GCP guidance: When using a Google-managed service account for application access is not an option, ensure that secrets and credentials are stored in secure locations such as Google Cloud's Secret Manager instead of embedding them into the code and configuration files.
+GCP guidance: When using a Google-managed service account for application access isn't an option, ensure that secrets and credentials are stored in secure locations such as Google Cloud's Secret Manager instead of embedding them into the code and configuration files.
 
 Use the Google Cloud Code extension on IDEs (Integrated development environment) such as Visual Studio Code to integrate secrets managed by Secret Manager into your code.
 
@@ -883,7 +883,7 @@ Incident Response covers controls in incident response life cycle - preparation,
 
 Security principle: Ensure the security operation team can query and use diverse data sources as they investigate potential incidents, to build a full view of what happened. Diverse logs should be collected to track the activities of a potential attacker across the kill chain to avoid blind spots. You should also ensure insights and learnings are captured for other analysts and for future historical reference.
 
-Use the cloud native SIEM and incident management solution if your organization does not have an existing solution to aggregate security logs and alerts information. Correlate incident data based on the data sourced from different sources to facility the incident investigations.
+Use the cloud native SIEM and incident management solution if your organization doesn't have an existing solution to aggregate security logs and alerts information. Correlate incident data based on the data sourced from different sources to facility the incident investigations.
 
 Azure guidance: Ensure your security operations team can query and use diverse data sources that are collected from the in-scope services and systems. In addition, it sources can also include:
 
@@ -897,7 +897,7 @@ Azure guidance: Ensure your security operations team can query and use diverse d
 Microsoft Sentinel provides extensive data analytics across virtually any log source and a case management portal to manage the full lifecycle of incidents. Intelligence information during an investigation can be associated with an incident for tracking and reporting purposes.
 
 > [!NOTE]
-> When incident related data is captured for investigation, ensure there is adequate security in place to protect the data from unauthorized alteration, such as disabling logging or removing logs, which can be performed by the attackers during an in-flight data breach activity.
+> When incident related data is captured for investigation, ensure there's adequate security in place to protect the data from unauthorized alteration, such as disabling logging or removing logs, which can be performed by the attackers during an in-flight data breach activity.
 
 Azure implementation and additional context:
 
@@ -918,7 +918,7 @@ AWS guidance: The data sources for investigation are the centralized logging sou
 If you aggregate your SIEM related data into Microsoft Sentinel, it provides extensive data analytics across virtually any log source and a case management portal to manage the full lifecycle of incidents. Intelligence information during an investigation can be associated with an incident for tracking and reporting purposes.
 
 > [!NOTE]
-> When incident related data is captured for investigation, ensure there is adequate security in place to protect the data from unauthorized alteration, such as disabling logging or removing logs, which can be performed by the attackers during an in-flight data breach activity.
+> When incident related data is captured for investigation, ensure there's adequate security in place to protect the data from unauthorized alteration, such as disabling logging or removing logs, which can be performed by the attackers during an in-flight data breach activity.
 
 AWS implementation and additional context:
 
@@ -938,7 +938,7 @@ GCP guidance: The data sources for investigation are the centralized logging sou
 If you aggregate your SIEM related data into Microsoft Sentinel, it provides extensive data analytics across virtually any log source and a case management portal to manage the full lifecycle of incidents. Intelligence information during an investigation can be associated with an incident for tracking and reporting purposes.
 
 > [!NOTE]
-> When incident related data is captured for investigation, ensure there is adequate security in place to protect the data from unauthorized alteration, such as disabling logging or removing logs, which can be performed by the attackers during an in-flight data breach activity.
+> When incident related data is captured for investigation, ensure there's adequate security in place to protect the data from unauthorized alteration, such as disabling logging or removing logs, which can be performed by the attackers during an in-flight data breach activity.
 
 GCP implementation and additional context:
 
@@ -1074,7 +1074,7 @@ Azure guidance: Enable logging capability for resources at the different tiers, 
 Be mindful about different types of logs for security, audit, and other operational logs at the management/control plane and data plane tiers. There are three types of the logs available at the Azure platform:
 
  -  Azure resource log: Logging of operations that are performed within an Azure resource (the data plane). For example, getting a secret from a key vault or making a request to a database. The content of resource logs varies by the Azure service and resource type.
- -  Azure activity log: Logging of operations on each Azure resource at the subscription layer, from the outside (the management plane). You can use the Activity Log to determine what, who, and when for any write operations (PUT, POST, DELETE) taken on the resources in your subscription. There is a single Activity log for each Azure subscription.
+ -  Azure activity log: Logging of operations on each Azure resource at the subscription layer, from the outside (the management plane). You can use the Activity Log to determine what, who, and when for any write operations (PUT, POST, DELETE) taken on the resources in your subscription. There's a single Activity log for each Azure subscription.
  -  Microsoft Entra ID logs: Logs of the history of sign-in activity and audit trail of changes made in the Microsoft Entra ID for a particular tenant.
 
 You can also use Microsoft Defender for Cloud and Azure Policy to enable resource logs and log data collecting on Azure resources.
@@ -1107,7 +1107,7 @@ GCP guidance: Enable logging capability for resources at the different tiers, su
 Be mindful about different types of logs for security, audit, and other operational logs at the management/control plane and data plane tiers. Operations Suite Cloud Logging service collect and aggregate all kind of log events from resource tiers. Four categories of logs are supported in Cloud Logging:
 
  -  Platform logs - logs written by your Google Cloud services.
- -  Component logs - similar to platform logs, but they are logs generated by Google-provided software components that run on your systems.
+ -  Component logs - similar to platform logs, but they're logs generated by Google-provided software components that run on your systems.
  -  Security logs - mainly audit logs that record administrative activities and accesses within your resources.
  -  User-written - logs written by custom applications and services
  -  Multicloud logs and Hybrid-cloud logs - logs from other cloud providers like Microsoft Azure and logs from on-premises infrastructure.
@@ -1180,7 +1180,7 @@ Security principle: Centralize logging storage and analysis to enable correlatio
 
 Use Cloud native SIEM if you don't have an existing SIEM solution for CSPs. Or aggregate logs/alerts into your existing SIEM.<br>
 
-Azure guidance: Ensure that you are integrating Azure activity logs into a centralized Log Analytics workspace. Use Azure Monitor to query and perform analytics and create alert rules using the logs aggregated from Azure services, endpoint devices, network resources, and other security systems.
+Azure guidance: Ensure that you're integrating Azure activity logs into a centralized Log Analytics workspace. Use Azure Monitor to query and perform analytics and create alert rules using the logs aggregated from Azure services, endpoint devices, network resources, and other security systems.
 
 In addition, enable and onboard data to Microsoft Sentinel which provides security information event management (SIEM) and security orchestration automated response (SOAR) capabilities.
 
@@ -1189,7 +1189,7 @@ Azure implementation and additional context:
  -  [How to collect platform logs and metrics with Azure Monitor](/azure/azure-monitor/platform/diagnostic-settings)
  -  [How to onboard Azure Sentinel](/azure/sentinel/quickstart-onboard)
 
-AWS guidance: Ensure that you are integrating your AWS logs into a centralized resource for storage and analysis. Use CloudWatch to query and perform analytics, and to create alert rules using the logs aggregated from AWS services, services, endpoint devices, network resources, and other security systems.
+AWS guidance: Ensure that you're integrating your AWS logs into a centralized resource for storage and analysis. Use CloudWatch to query and perform analytics, and to create alert rules using the logs aggregated from AWS services, services, endpoint devices, network resources, and other security systems.
 
 In addition, you can aggregate the logs in a S3 storage bucket and onboard the log data to Microsoft Sentinel which provides security information event management (SIEM) and security orchestration automated response (SOAR) capabilities.
 
@@ -1197,12 +1197,12 @@ AWS implementation and additional context:
 
  -  [Connect Microsoft Sentinel to Amazon Web Services to ingest AWS service log data](/azure/sentinel/connect-aws?tabs=s3)
 
-GCP guidance: Ensure that you are integrating your GCP logs into a centralized resource (such as Operations Suite Cloud Logging bucket) for storage and analysis. Cloud Logging supports most of the Google Cloud native service logging as well as the third-party applications and on-premise applications. You can use Cloud Logging for query and perform analytics, and to create alert rules using the logs aggregated from GCP services, services, endpoint devices, network resources, and other security systems.
+GCP guidance: Ensure that you're integrating your GCP logs into a centralized resource (such as Operations Suite Cloud Logging bucket) for storage and analysis. Cloud Logging supports most of the Google Cloud native service logging as well as the third-party applications and on-premise applications. You can use Cloud Logging for query and perform analytics, and to create alert rules using the logs aggregated from GCP services, services, endpoint devices, network resources, and other security systems.
 
 Use Cloud native SIEM if you don’t have an existing SIEM solution for CSP’s, or aggregate logs/alerts into your existing SIEM.
 
 > [!NOTE]
-> Google provides two log query frontend, Logs Explorer and Log Analytics for query, view, and analyze logs. For troubleshooting and exploring of log data, it is recommended to use Logs Explorer. To generate insights and trends, it is recommended to use Log Analytics.
+> Google provides two log query frontend, Logs Explorer and Log Analytics for query, view, and analyze logs. For troubleshooting and exploring of log data, it's recommended to use Logs Explorer. To generate insights and trends, it's recommended to use Log Analytics.
 
 GCP implementation and additional context:
 
@@ -1277,7 +1277,7 @@ Posture and Vulnerability Management focuses on controls for assessing and impro
 | ------------------------- | --------------------------- | ------------------------ |
 | 4.1                       | CM-2, CM-6                  | 2.2                      |
 
-Security principle: Continuously monitor and alert when there is a deviation from the defined configuration baseline in your compute resources. Enforce the desired configuration according to the baseline configuration by denying the non-compliant configuration or deploying a configuration in compute resources.
+Security principle: Continuously monitor and alert when there's a deviation from the defined configuration baseline in your compute resources. Enforce the desired configuration according to the baseline configuration by denying the non-compliant configuration or deploying a configuration in compute resources.
 
 Azure guidance: Use Microsoft Defender for Cloud and Azure Automanage Machine Configuration (formerly called Azure Policy Guest Configuration) to regularly assess and remediate configuration deviations on your Azure compute resources, including VMs, containers, and others. In addition, you can use Azure Resource Manager templates, custom operating system images, or Azure Automation State Configuration to maintain the security configuration of the operating system. Microsoft VM templates in conjunction with Azure Automation State Configuration can assist in meeting and maintaining security requirements. Use Change Tracking and Inventory in Azure Automation to track changes in virtual machines hosted in Azure, on-premises, and other cloud environments to help you pinpoint operational and environmental issues with software managed by the Distribution Package Manager. Install the Guest Attestation agent on virtual machines to monitor for boot integrity on confidential virtual machines.
 
@@ -1345,7 +1345,7 @@ Azure guidance: Follow recommendations from Microsoft Defender for Cloud for per
 
 Export scan results at consistent intervals and compare the results with previous scans to verify that vulnerabilities have been remediated. When using vulnerability management recommendations suggested by Microsoft Defender for Cloud, you can pivot into the selected scan solution's portal to view historical scan data.
 
-When conducting remote scans, do not use a single, perpetual, administrative account. Consider implementing JIT (Just In Time) provisioning methodology for the scan account. Credentials for the scan account should be protected, monitored, and used only for vulnerability scanning.
+When conducting remote scans, don't use a single, perpetual, administrative account. Consider implementing JIT (Just In Time) provisioning methodology for the scan account. Credentials for the scan account should be protected, monitored, and used only for vulnerability scanning.
 
 > [!NOTE]
 > Microsoft Defender services (including Defender for servers, containers, App Service, Database, and DNS) embed certain vulnerability assessment capabilities. The alerts generated from Azure Defender services should be monitored and reviewed together with the result from Microsoft Defender for Cloud vulnerability scanning tool.
@@ -1364,9 +1364,9 @@ AWS guidance: Use Amazon Inspector to scan your Amazon EC2 instances and contain
 
 Refer to control ES-1, "Use Endpoint Detection and Response (EDR)", to onboard your AWS account into Microsoft Defender for Cloud and deploy Microsoft Defender for servers (with Microsoft Defender for Endpoint integrated) in your EC2 instances. Microsoft Defender for servers provides a native threat and vulnerability management capability for your VMs. The vulnerability scanning result will be consolidated in the Microsoft Defender for Cloud dashboard.
 
-Track the status of vulnerability findings to ensure they are properly remediated or suppressed if they're considered false positive.
+Track the status of vulnerability findings to ensure they're properly remediated or suppressed if they're considered false positive.
 
-When conducting remote scans, do not use a single, perpetual, administrative account. Consider implementing a temporary provisioning methodology for the scan account. Credentials for the scan account should be protected, monitored, and used only for vulnerability scanning.
+When conducting remote scans, don't use a single, perpetual, administrative account. Consider implementing a temporary provisioning methodology for the scan account. Credentials for the scan account should be protected, monitored, and used only for vulnerability scanning.
 
 AWS implementation and additional context:
 
