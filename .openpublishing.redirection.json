@@ -1,6 +1,46 @@
 {
   "redirections": [ 
     {
+      "source_path_from_root": "/learn-pr/azure/configure-security-policies-to-manage-data/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/configure-security-policies-to-manage-data/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/configure-security-policies-to-manage-data/2-configure-data-classification.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/configure-security-policies-to-manage-data/3-exercise-classify-sql-database.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/configure-security-policies-to-manage-data/4-configure-data-retention.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/configure-security-policies-to-manage-data/5-configure-data-sovereignty.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/configure-security-policies-to-manage-data/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.azure-security.configure-security-policies-to-manage-data.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql",
+      "redirect_document_id": false
+    }, 
+    {
       "source_path_from_root": "/learn-pr/achievements/learn.analyze-infrastructure-with-azure-monitor-logs.badge.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
       "redirect_document_id": false
