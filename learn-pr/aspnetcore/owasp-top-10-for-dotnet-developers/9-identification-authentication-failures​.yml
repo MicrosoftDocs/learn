@@ -20,7 +20,7 @@ quiz:
     - content: "Find the authors of the change with git blame and ask them to fix it when they have some spare time."
       isCorrect: false
       explanation: "Chances are that whoever checked in the commit might no longer be part of your team or even the same company."
-    - content: "Change the password for the username referenced in connection string. Open a pull request with hardcoded connection string now being obtained from Azure KeyVault."
+    - content: "Change the password for the username referenced in the connection string. Open a pull request with the hardcoded connection string now being obtained from Azure KeyVault."
       isCorrect: true
       explanation: "Secret rotation is a good practice. Azure KeyVault is the go-to service for storing secrets, certificates, and keys and in most secure fashion. Avoid blame games."
     - content: "The connection string is only referenced in Git and code. No one can access it because only the web app is available to the public, so nothing needs to be done."

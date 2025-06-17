@@ -18,12 +18,12 @@ quiz:
   questions:
   - content: "How should the DevOps team maintain and review a list of third-party components used in the system for security vulnerabilities?"
     choices:
-    - content: "An Excel spreadsheet with Software Bill of Materials should be part of the design phase and any new green field project."
+    - content: "An Excel spreadsheet with Software Bill of Materials (SBOM) should be part of the design phase and any new green field project."
       isCorrect: false
       explanation: "SBOM is recommended, but you can apply it at any stage of the project in a more automated fashion."
-    - content: "Favor automated tools at any stage of the product lifecycle to track and monitor your dependencies."
+    - content: "By favoring automated tools at any stage of the product lifecycle for tracking and monitoring dependencies."
       isCorrect: true
       explanation: "Correct. The maintenance effort required to keep a list of dependencies up to date combined with their vulnerability checks can quickly become unmanageable."
-    - content: "There's no risk associated with third-party purchased and OSS components."
+    - content: "There's no risk associated with third-party purchased and Operational support system (OSS) components."
       isCorrect: false
-      explanation: "Even if your software makes the best effort in staying secure, an insecure or flow dependency may introduce security vulnerability in your system."
+      explanation: "Even if your software makes the best effort in staying secure, an insecure or flow dependency might introduce security vulnerability in your system."

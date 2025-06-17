@@ -1,5 +1,4 @@
-
-As application complexity increases, so does the effort of making it secure. Modern applications (in contrast with single-project monolith legacy applications) have many dependencies, including external libraries, services for hosting, building, and releasing, to name a few. None of these services are simple "plug and play" affairs. Developers need to understand them and know how to configure and implement the flows and processes securely in their own code.
+As application complexity increases, so does the effort of making it secure. Modern applications, in contrast with single-project monolith legacy applications, have many dependencies. Including, external libraries, services for hosting, building, and releasing, to name a few. None of these services are simple "plug and play" affairs. Developers need to understand them and know how to configure and implement the flows and processes securely in their own code.
 
 :::row:::
    :::column span="2":::
@@ -14,7 +13,7 @@ As application complexity increases, so does the effort of making it secure. Mod
    :::column-end:::
 :::row-end:::
 
-Although security is everyone’s job, it's important to remember that not everyone needs to be a security expert nor strive to become a proficient penetration tester. However, ensuring everyone understands the attacker's perspective, their goals, and the art of the possible will help capture the attention of everyone and raise the collective knowledge bar.
+Although security is everyone’s job, it's important to remember that not everyone needs to be a security expert nor strive to become a proficient penetration tester. However, ensuring everyone understands the attacker's perspective, their goals, and the art of the possible, helps capture the attention of everyone and raise the collective knowledge bar.
 
 ### What is OWASP?
 
