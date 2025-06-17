@@ -1,57 +1,57 @@
 {
   "redirections": [ 
     {
-      "source_path_from_root": "learn-pr/azure/characterize-data-azure-data-explorer/index.yml",
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
     },  
     {
-      "source_path_from_root": "learn-pr/azure/characterize-data-azure-data-explorer/1-introduction.yml",
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
     },  
     {
-      "source_path_from_root": "learn-pr/azure/characterize-data-azure-data-explorer/2-exercise-connect-to-resources.yml",
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/2-exercise-connect-to-resources.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
     },  
     {
-      "source_path_from_root": "learn-pr/azure/characterize-data-azure-data-explorer/3-characterize-data.yml",
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/3-characterize-data.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
     },  
     {
-      "source_path_from_root": "learn-pr/azure/characterize-data-azure-data-explorer/4-exercise-inventory-data.yml",
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/4-exercise-inventory-data.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
     },  
     {
-      "source_path_from_root": "learn-pr/azure/characterize-data-azure-data-explorer/5-explore-data-structure-queries.yml",
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/5-explore-data-structure-queries.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
     },  
     {
-      "source_path_from_root": "learn-pr/azure/characterize-data-azure-data-explorer/6-exercise-queries-explore.yml",
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/6-exercise-queries-explore.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
     },  
     {
-      "source_path_from_root": "learn-pr/azure/characterize-data-azure-data-explorer/7-exercise-query-trends.yml",
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/7-exercise-query-trends.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
     },  
     {
-      "source_path_from_root": "learn-pr/azure/characterize-data-azure-data-explorer/8-exercise-share-query.yml",
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/8-exercise-share-query.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
     },  
     {
-      "source_path_from_root": "learn-pr/azure/characterize-data-azure-data-explorer/9-knowledge-check.yml",
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/9-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
     },  
     {
-      "source_path_from_root": "learn-pr/azure/characterize-data-azure-data-explorer/10-summary.yml",
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/10-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
     },
