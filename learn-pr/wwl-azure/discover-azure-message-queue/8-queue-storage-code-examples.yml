@@ -2,15 +2,16 @@
 uid: learn.wwl.discover-azure-message-queue.create-manage-azure-queue-storage-queues-messages-by-using-net
 title: Create and manage Azure Queue Storage and messages by using .NET
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and manage Azure Queue Storage and messages by using .NET
   description: "Create and manage Azure Queue Storage and messages by using .NET"
-  ms.date: 07/18/2024
+  ms.date: 06/16/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
   ms.custom:
-    - sfi-ropc-nochange
-    - N/A
+  - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/8-queue-storage-code-examples.md)]
+  [!include[](includes/8-queue-storage-code-examples.md)]
