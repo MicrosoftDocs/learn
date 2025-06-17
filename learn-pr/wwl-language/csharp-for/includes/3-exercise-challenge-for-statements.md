@@ -1,4 +1,4 @@
-Code challenges will reinforce what you've learned and help you gain some confidence before continuing on.
+Code challenges reinforce what you've learned and help you gain some confidence before continuing on.
 
 ## FizzBuzz challenge
 
@@ -28,7 +28,7 @@ Here are the FizzBuzz rules that you need to implement in your code project:
 1. Write the code that implements each rule.
 
     > [!IMPORTANT]
-    > You will need to understand how to use the `%` remainder operator to determine if a number is divisible by another number evenly. We covered this in the module "Perform basic operations on numbers in C#".
+    > You need to understand how to use the `%` remainder operator to determine if a number is divisible by another number evenly. We covered this in the module "Perform basic operations on numbers in C#".
 
 1. Run your application and verify that your output meets the requirements.
 
