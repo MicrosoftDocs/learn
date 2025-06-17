@@ -48758,6 +48758,16 @@
       "source_path": "learn-pr/wwl-language/csharp-for/4-solution.md",
       "redirect_url": "/training/modules/csharp-for/4-review-solution-for-statements-challenge",
       "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-do-while/3-challenge.md",
+      "redirect_url": "/training/modules/csharp-do-while/3-exercise-challenge-do-while-statements",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-do-while/4-solution.md",
+      "redirect_url": "/training/modules/csharp-do-while/4-review-solution-do-while-statements-challenge",
+      "redirect_document_id": false
   }
 ]
 }
