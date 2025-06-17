@@ -13,9 +13,10 @@ metadata:
   ms.reviewer: maghan
   ms.topic: unit
   ms.custom:
-    - build-2023
-    - build-2023-dataai
+    - sfi-ropc-nochange
     - devx-track-azurecli
+    - build-2023-dataai
+    - build-2023
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-app-service-mysql.md)]
