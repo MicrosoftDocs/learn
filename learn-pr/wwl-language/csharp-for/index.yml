@@ -3,7 +3,7 @@ uid: learn.languages.csharp-for
 metadata:
   title: Iterate Through a Code Block using for Statement in C#
   description: "Use the for iteration statement to loop a pre-set number of times and control the iteration process."
-  ms.date: 06/16/2025
+  ms.date: 06/17/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
