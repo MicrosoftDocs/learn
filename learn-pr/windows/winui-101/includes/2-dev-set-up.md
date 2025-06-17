@@ -101,7 +101,7 @@ The Community Toolkit.Mvvm uses features that are ahead of the standard C# langu
 23. **Locate** the first `PropertyGroup` element in the file
 24. **Add** `<LangVersion>preview</LangVersion>`
 
-:::image type="content" source="../media/2-dev-set-up/language-version.png" alt-text="Screenshot of file with added LangVersion element":::
+:::image type="content" source="../media/2-dev-set-up/language-version.png" alt-text="Screenshot of file with added LangVersion element.":::
 
 25. **Save and Close** the file
 
