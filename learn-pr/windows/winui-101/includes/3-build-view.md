@@ -163,7 +163,7 @@ Now you can run the app in Debug mode by doing the following steps:
 
 You should see something like this:
 
-:::image type="content" source="../media/3-build-view/screenshot-app.png" alt-text="Screenshot of Visual Studio's Search.":::
+:::image type="content" source="../media/3-build-view/screenshot-app.png" alt-text="Screenshot of Game.":::
 
 16. Close the app
 
