@@ -68,7 +68,7 @@ Customer security stakeholders ([Learn more](/azure/cloud-adoption-framework/org
 
 | **CIS Controls v8 ID(s)** | **NIST SP 800-53 r4 ID(s)** | **PCI-DSS ID(s) v3.2.1** |
 | ------------------------- | --------------------------- | ------------------------ |
-| 2.5, 2.6 , 2.7, 4.8       | CM-8, PM-5                  | 6.3                      |
+| 2.5, 2.6, 2.7, 4.8       | CM-8, PM-5                  | 6.3                      |
 
 Security principle: Ensure that only approved cloud services can be used, by auditing and restricting which services users can provision in the environment.
 
@@ -229,11 +229,11 @@ Backup and Recovery covers controls to ensure that data and configuration backup
 
 Security principle: Ensure backup data and operations are protected from data exfiltration, data compromise, ransomware/malware and malicious insiders. The security controls that should be applied include user and network access control, data encryption at-rest and in-transit.
 
-Azure guidance: Use multi-factor authentication and Azure RBAC to secure the critical Azure Backup operations (such as delete, change retention, updates to backup config). For Azure Backup supported resources, use Azure RBAC to segregate duties and enable fine grained access, and create private endpoints within your Azure Virtual Network to securely backup and restore data from your Recovery Services vaults.
+Azure guidance: Use multifactor authentication and Azure RBAC to secure the critical Azure Backup operations (such as delete, change retention, updates to backup config). For Azure Backup supported resources, use Azure RBAC to segregate duties and enable fine grained access, and create private endpoints within your Azure Virtual Network to securely backup and restore data from your Recovery Services vaults.
 
 For Azure Backup supported resources, backup data is automatically encrypted using Azure platform-managed keys with 256-bit AES encryption. You can also choose to encrypt the backups using a customer managed key. In this case, ensure the customer-managed key in the Azure Key Vault is also in the backup scope. If you use a customer-managed key, use soft delete and purge protection in Azure Key Vault to protect keys from accidental or malicious deletion. For on-premises backups using Azure Backup, encryption-at-rest is provided using the passphrase you provide.
 
-Safeguard backup data from accidental or malicious deletion, such as ransomware attacks/attempts to encrypt or tamper backup data. For Azure Backup supported resources, enable soft delete to ensure recovery of items with no data loss for up to 14 days after an unauthorized deletion, and enable multi-factor authentication using a PIN generated in the Azure portal. Also enable geo-redundant storage or cross-region restoration to ensure backup data is restorable when there is a disaster in primary region. You can also enable Zone-redundant Storage (ZRS) to ensure backups are restorable during zonal failures.
+Safeguard backup data from accidental or malicious deletion, such as ransomware attacks/attempts to encrypt or tamper backup data. For Azure Backup supported resources, enable soft delete to ensure recovery of items with no data loss for up to 14 days after an unauthorized deletion, and enable multifactor authentication using a PIN generated in the Azure portal. Also enable geo-redundant storage or cross-region restoration to ensure backup data is restorable when there is a disaster in primary region. You can also enable Zone-redundant Storage (ZRS) to ensure backups are restorable during zonal failures.
 
 > [!NOTE]
 > If you use a resource's native backup feature or backup services other than Azure Backup, refer to the Microsoft Cloud Security Benchmark (and service baselines) to implement the above controls.
@@ -247,7 +247,7 @@ Azure implementation and additional context:
 
 AWS guidance: Use AWS IAM access control to secure AWS Backup. This includes securing the AWS Backup service access and backup and restore points. Example controls include:
 
- -  Use multi-factor authentication (MFA) for critical operations such as deletion of a backup/restore point.
+ -  Use multifactor authentication (MFA) for critical operations such as deletion of a backup/restore point.
  -  Use Secure Sockets Layer (SSL)/Transport Layer Security (TLS) to communicate with AWS resources.
  -  Use AWS KMS in conjunction with AWS Backup to encrypt the backup data either using customer-managed CMK or an AWS-managed CMK associated with the AWS Backup service.
  -  Use AWS Backup Vault Lock for immutable storage of critical data.
@@ -537,7 +537,7 @@ Azure guidance: Secure your cryptographic keys and certificates by hardening you
  -  Secure the Azure Key Vault using Private Link and Azure Firewall to ensure minimal exposure of the service
  -  Use managed identity to access keys stored in Azure Key Vault in your workload applications.
  -  When purging data, ensure your keys are not deleted before the actual data, backups and archives are purged.
- -  Backup your keys and certificates using Azure Key Vault. Enable soft delete and purge protection to avoid accidental deletion of keys.When keys need to be deleted, consider disabling keys instead of deleting them to avoid accidental deletion of keys and cryptographic erasure of data.
+ -  Backup your keys and certificates using Azure Key Vault. Enable soft delete and purge protection to avoid accidental deletion of keys. When keys need to be deleted, consider disabling keys instead of deleting them to avoid accidental deletion of keys and cryptographic erasure of data.
  -  For bring your own key (BYOK) use cases, generate keys in an on-premises HSM and import them to maximize the lifetime and portability of the keys.
  -  Never store keys in plaintext format outside of the Azure Key Vault. Keys in all key vault services are not exportable by default.
  -  Use HSM-backed key types (RSA-HSM) in Azure Key Vault Premium and Azure Managed HSM for the hardware protection and the strongest FIPS levels.
@@ -582,7 +582,7 @@ For certificates security, secure your certificates by hardening your GCP Certif
 
  -  Implement access control using resource-level policies in conjunction with IAM policies (identity-based access control) to ensure the least privilege and separation of duties principles are followed. For example, ensure separation of duties is in place for user accounts: user accounts who generate certificates are separate from the user accounts who only require read-only access to certificates.
  -  Use detective controls such as Cloud Audit Logs to log and track the usage of the certificates in Certificate Manager, and alert you on critical actions.
- -  Secret Manager also support storage of TLS certificate. You need to follow the similar security practice to implement the security controls in Secret Manager.
+ -  Secret Manager also supports storage of TLS certificate. You need to follow the similar security practice to implement the security controls in Secret Manager.
 
 GCP implementation and additional context:
 
@@ -652,7 +652,7 @@ Security principle: Use anti-malware solutions (also known as endpoint protectio
 
 Azure guidance: Microsoft Defender for Cloud can automatically identify the use of a number of popular anti-malware solutions for your virtual machines and on-premises machines with Azure Arc configured and report the endpoint protection running status and make recommendations.
 
-Microsoft Defender Antivirus is the default anti-malware solution for Windows server 2016 and above. For Windows server 2012 R2, use Microsoft Antimalware extension to enable SCEP (System Center Endpoint Protection). For Linux VMs, use Microsoft Defender for Endpoint on Linux for the endpoint protection feature.
+Microsoft Defender Antivirus is the default anti-malware solution for Windows server 2016 and above. For Windows server 2012 R2, use Microsoft anti-malware extension to enable SCEP (System Center Endpoint Protection). For Linux VMs, use Microsoft Defender for Endpoint on Linux for the endpoint protection feature.
 
 For both Windows and Linux, you can use Microsoft Defender for Cloud to discover and assess the health status of the anti-malware solution.
 
@@ -662,11 +662,11 @@ For both Windows and Linux, you can use Microsoft Defender for Cloud to discover
 Azure implementation and additional context:
 
  -  [Supported endpoint protection solutions](/azure/security-center/security-center-services?tabs=features-windows#supported-endpoint-protection-solutions-)
- -  [How to configure Microsoft Antimalware for Cloud Services and virtual machines](/azure/security/fundamentals/antimalware)
+ -  [How to configure Microsoft anti-malware for Cloud Services and virtual machines](/azure/security/fundamentals/antimalware)
 
 AWS guidance: Onboard your AWS account into Microsoft Defender for Cloud to allow Microsoft Defender for Cloud to automatically identify the use some popular anti-malware solutions for EC2 instances with Azure Arc configured and report the endpoint protection running status and make recommendations.
 
-Deploy Microsoft Defender Antivirus which is the default anti-malware solution for Windows server 2016 and above. For EC2 instances running Windows server 2012 R2, use Microsoft Antimalware extension to enable SCEP (System Center Endpoint Protection). For EC2 instances running Linux, use Microsoft Defender for Endpoint on Linux for the endpoint protection feature.
+Deploy Microsoft Defender Antivirus which is the default anti-malware solution for Windows server 2016 and above. For EC2 instances running Windows server 2012 R2, use Microsoft anti-malware extension to enable SCEP (System Center Endpoint Protection). For EC2 instances running Linux, use Microsoft Defender for Endpoint on Linux for the endpoint protection feature.
 
 For both Windows and Linux, you can use Microsoft Defender for Cloud to discover and assess the health status of the anti-malware solution.
 
@@ -681,7 +681,7 @@ AWS implementation and additional context:
 
 GCP guidance: Onboard your GCP projects into Microsoft Defender for Cloud to allow Microsoft Defender for Cloud to automatically identify the use of popular anti-malware solutions for virtual machine instances with Azure Arc configured and report the endpoint protection status and make recommendations.
 
-Deploy Microsoft Defender Antivirus which is the default anti-malware solution for Windows server 2016 and above. For virtual machine instances running Windows server 2012 R2, use Microsoft Antimalware extension to enable SCEP (System Center Endpoint Protection). For virtual machine instances running Linux, use Microsoft Defender for Endpoint on Linux for the endpoint protection feature.
+Deploy Microsoft Defender Antivirus which is the default anti-malware solution for Windows server 2016 and above. For virtual machine instances running Windows server 2012 R2, use Microsoft anti-malware extension to enable SCEP (System Center Endpoint Protection). For virtual machine instances running Linux, use Microsoft Defender for Endpoint on Linux for the endpoint protection feature.
 
 For both Windows and Linux, you can use Microsoft Defender for Cloud to discover and assess the health status of the anti-malware solution.
 
@@ -708,16 +708,16 @@ Customer security stakeholders ([Learn more](/azure/cloud-adoption-framework/org
 
 Security principle: Ensure anti-malware signatures are updated rapidly and consistently for the anti-malware solution.
 
-Azure guidance: Follow recommendations in Microsoft Defender for Cloud to keep all endpoints up to date with the latest signatures. Microsoft Antimalware (for Windows) and Microsoft Defender for Endpoint (for Linux) will automatically install the latest signatures and engine updates by default.
+Azure guidance: Follow recommendations in Microsoft Defender for Cloud to keep all endpoints up to date with the latest signatures. Microsoft anti-malware (for Windows) and Microsoft Defender for Endpoint (for Linux) will automatically install the latest signatures and engine updates by default.
 
 For third-party solutions, ensure the signatures are updated in the third-party anti-malware solution.
 
 Azure implementation and additional context:
 
- -  [How to deploy Microsoft Antimalware for Cloud Services and virtual machine](/azure/security/fundamentals/antimalware)
+ -  [How to deploy Microsoft anti-malware for Cloud Services and virtual machine](/azure/security/fundamentals/antimalware)
  -  [Endpoint protection assessment and recommendations in Microsoft Defender for Cloud](/azure/security-center/security-center-endpoint-protection)
 
-AWS guidance: With your AWS account onboarded into Microsoft Defender for Cloud, follow recommendations in Microsoft Defender for Cloud to keep all endpoints up to date with the latest signatures. Microsoft Antimalware (for Windows) and Microsoft Defender for Endpoint (for Linux) will automatically install the latest signatures and engine updates by default.
+AWS guidance: With your AWS account onboarded into Microsoft Defender for Cloud, follow recommendations in Microsoft Defender for Cloud to keep all endpoints up to date with the latest signatures. Microsoft anti-malware (for Windows) and Microsoft Defender for Endpoint (for Linux) will automatically install the latest signatures and engine updates by default.
 
 For third-party solutions, ensure the signatures are updated in the third-party anti-malware solution.
 
@@ -725,7 +725,7 @@ AWS implementation and additional context:
 
  -  [Connect your AWS accounts to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings)
 
-GCP guidance: With your GCP projects onboarded into Microsoft Defender for Cloud, follow recommendations in Microsoft Defender for Cloud to keep all EDR solutions up to date with the latest signatures. Microsoft Antimalware (for Windows) and Microsoft Defender for Endpoint (for Linux) will automatically install the latest signatures and engine updates by default.
+GCP guidance: With your GCP projects onboarded into Microsoft Defender for Cloud, follow recommendations in Microsoft Defender for Cloud to keep all EDR solutions up to date with the latest signatures. Microsoft anti-malware (for Windows) and Microsoft Defender for Endpoint (for Linux) will automatically install the latest signatures and engine updates by default.
 
 For third-party solutions, ensure the signatures are updated in the third-party anti-malware solution.
 
@@ -851,7 +851,7 @@ AWS implementation and additional context:
 
 GCP guidance: When using a Google-managed service account for application access is not an option, ensure that secrets and credentials are stored in secure locations such as Google Cloud's Secret Manager instead of embedding them into the code and configuration files.
 
-Use the Google Cloud Code extension on IDE's (Integrated development environment) such as Visual Studio Code to integrate secrets managed by Secret Manager into your code.
+Use the Google Cloud Code extension on IDEs (Integrated development environment) such as Visual Studio Code to integrate secrets managed by Secret Manager into your code.
 
 If you use the Azure DevOps or GitHub for your code management platform:
 
@@ -1018,7 +1018,7 @@ Azure implementation and additional context:
  -  [Create custom analytics rules to detect threats](/azure/sentinel/tutorial-detect-threats-custom)
  -  [Threat indicators for cyber threat intelligence in Microsoft Sentinel](/azure/architecture/example-scenario/data/sentinel-threat-intelligence)
 
-AWS guidance: Use Amazon GuardDuty for threat detection which analyzes and processes the following data sources: VPC Flow Logs, AWS CloudTrail management event logs, CloudTrail S3 data event logs, EKS audit logs, and DNS logs. GuardDuty is capable of reporting on security issues such as privilege escalation, exposed credential usage , or communication with malicious IP addresses, or domains.
+AWS guidance: Use Amazon GuardDuty for threat detection which analyzes and processes the following data sources: VPC Flow Logs, AWS CloudTrail management event logs, CloudTrail S3 data event logs, EKS audit logs, and DNS logs. GuardDuty is capable of reporting on security issues such as privilege escalation, exposed credential usage, or communication with malicious IP addresses, or domains.
 
 Configure AWS Config to check rules in SecurityHub for compliance monitoring such as configuration drift, and create findings when needed.
 
@@ -1083,7 +1083,7 @@ Azure implementation and additional context:
 
  -  [Understand logging and different log types in Azure](/azure/azure-monitor/platform/platform-logs-overview)
  -  [Understand Microsoft Defender for Cloud data collection](/azure/security-center/security-center-enable-data-collection)
- -  [Enable and configure antimalware monitoring](/azure/security/fundamentals/antimalware#enable-and-configure-antimalware-monitoring-using-powershell-cmdlets)
+ -  [Enable and configure anti-malware monitoring](/azure/security/fundamentals/antimalware#enable-and-configure-antimalware-monitoring-using-powershell-cmdlets)
  -  [Operating systems and application logs inside in your compute resources](/azure/azure-monitor/data-sources#operating-system-guest)
 
 AWS guidance: Use AWS CloudTrail logging for management events (control plane operations) and data events (data plane operations) and monitor these trails with CloudWatch for automated actions.
@@ -1152,7 +1152,7 @@ AWS implementation and additional context:
 
 GCP guidance: Most of the network activities logs are available through the VPC Flow Logs which records a sample of network flows send from and received by resources, including instances used as Google Compute VMs, Kubernetes Engine nodes. These logs can be used for network monitoring, forensics, real-time security analysis, and expense optimization.
 
-You can view flow logs in Cloud Logging, and export logs to the destination that Cloud Logging export supports. Flow logs are aggregated by connection from Compute Engine VM’s and exported in real time. By subscribing to Pub/Sub, you can analyze flow logs using real-time streaming APIs.
+You can view flow logs in Cloud Logging, and export logs to the destination that Cloud Logging export supports. Flow logs are aggregated by connection from Compute Engine VMs and exported in real time. By subscribing to Pub/Sub, you can analyze flow logs using real-time streaming APIs.
 
 > [!NOTE]
 > You can also use Packet Mirroring clones the traffic of specified instances in your Virtual Private Cloud (VPC) network and forwards it for examination. Packet Mirroring captures all traffic and packet data, including payloads and headers.
@@ -1178,7 +1178,7 @@ Customer security stakeholders ([Learn more](/azure/cloud-adoption-framework/org
 
 Security principle: Centralize logging storage and analysis to enable correlation across log data. For each log source, ensure that you have assigned a data owner, access guidance, storage location, what tools are used to process and access the data, and data retention requirements.
 
-Use Cloud native SIEM if you don't have an existing SIEM solution for CSPs. or aggregate logs/alerts into your existing SIEM.<br>
+Use Cloud native SIEM if you don't have an existing SIEM solution for CSPs. Or aggregate logs/alerts into your existing SIEM.<br>
 
 Azure guidance: Ensure that you are integrating Azure activity logs into a centralized Log Analytics workspace. Use Azure Monitor to query and perform analytics and create alert rules using the logs aggregated from Azure services, endpoint devices, network resources, and other security systems.
 
@@ -1202,7 +1202,7 @@ GCP guidance: Ensure that you are integrating your GCP logs into a centralized r
 Use Cloud native SIEM if you don’t have an existing SIEM solution for CSP’s, or aggregate logs/alerts into your existing SIEM.
 
 > [!NOTE]
-> Google provide two log query frontend, Logs Explorer and Log Analytics for query, view, and analyze logs. For troubleshooting and exploring of log data, it is recommended to use Logs Explorer. To generate insights and trends, it is recommended to use Log Analytics.
+> Google provides two log query frontend, Logs Explorer and Log Analytics for query, view, and analyze logs. For troubleshooting and exploring of log data, it is recommended to use Logs Explorer. To generate insights and trends, it is recommended to use Log Analytics.
 
 GCP implementation and additional context:
 
@@ -1409,7 +1409,7 @@ AWS implementation and additional context:
  -  [AWS Systems Manager - Patch Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html)
  -  [Update Management overview](/azure/automation/update-management/overview)
 
-GCP guidance: Use Google Cloud VM Manager OS patch management or a third-party solution to ensure that the most recent security updates are installed on your Windows and Linux VM’s. For Windows VM’s ensure Windows Update has been enabled and set to update automatically.
+GCP guidance: Use Google Cloud VM Manager OS patch management or a third-party solution to ensure that the most recent security updates are installed on your Windows and Linux VMs. For Windows VMs ensure Windows Update has been enabled and set to update automatically.
 
 For third-party software, use a third-party patch management solution or Microsoft System Center Updates Publisher for configuration management.
 
