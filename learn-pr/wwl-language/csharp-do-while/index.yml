@@ -3,7 +3,7 @@ uid: learn.languages.csharp-do-while
 metadata:
   title: Add Looping Logic to your Code using the do-while and while Statements in C#
   description: "Use the do-while and while statements to iterate as long as a Boolean expression evaluates to true."
-  ms.date: 06/16/2025
+  ms.date: 06/17/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
