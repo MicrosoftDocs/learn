@@ -151,3 +151,10 @@ This method involves disabling the legacy LAPS policy and simultaneously applyin
 ### Side-by-side coexistence
 
 For a more gradual rollout, both legacy and Windows LAPS can run concurrently, each managing a different local account. This allows time to validate the new setup before retiring the legacy configuration. While this approach adds flexibility, the long-term goal should still be full migration to Windows LAPS.
+
+This video shows you how to use Windows Local Administrator Password Solution, or LAPS, to configure and manage the credentials of local administrator accounts of domain joined computers.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6706e445-0232-434a-a7ee-f6aa5095662d]
+
+
+
