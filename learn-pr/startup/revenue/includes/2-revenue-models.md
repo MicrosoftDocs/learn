@@ -26,7 +26,7 @@ The following are the 10 most common models that tech startups use.
 
 **Description**: Customers pay based on the frequency or volume at which they use or consume your product.
 
-**Ideal for**: Infrastructure businesses that provide services that users can't afford to own, but need to access; examples are Azure or Twilio.
+**Ideal for**: Infrastructure businesses that provide services that users can't afford to own but need to access; examples are Azure or Twilio.
 
 **Practical considerations**:
 
@@ -54,7 +54,7 @@ The following are the 10 most common models that tech startups use.
 
 **Description**: Make sales by directly contacting potential customers (outbound sales) or enabling customers to contact you directly (inbound sales).
 
-**Ideal for**: High-value products or services. Enterprise customers where relationships are crucial, or sales require interaction with multiple decision-makers and influencers over time; an example is SAP.
+**Ideal for**: High-value products or services. Enterprise customers where relationships are crucial or sales requiring interaction with multiple decision-makers and influencers over time; an example is SAP.
 
 **Practical considerations**:
 
@@ -153,4 +153,4 @@ The following are the 10 most common models that tech startups use.
 
 ## Task: Evaluate a revenue model
 
-Select the revenue model that you believe makes most sense for your startup. Write a list of pros and cons for how this revenue model would work in your startup. Ask yourself what assumptions need to hold true for this revenue model to work. Consider how you can test those assumptions with customers, either through customer interviews or by running experiments.
+Select the revenue model that you believe makes the most sense for your startup. Write a list of pros and cons for how this revenue model would work in your startup. Ask yourself what assumptions need to hold true for this revenue model to work. Consider how you can test those assumptions with customers, either through customer interviews or by running experiments.
