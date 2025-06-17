@@ -8,6 +8,7 @@ metadata:
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 durationInMinutes: 4
 content: |
   [!include[](includes/2-ensure-parameter-variable-types.md)]
