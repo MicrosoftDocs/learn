@@ -48738,6 +48738,16 @@
       "source_path": "learn-pr/wwl-language/csharp-evaluate-boolean-expressions/7-solution-2.md",
       "redirect_url": "/training/modules/csharp-evaluate-boolean-expressions/7-review-solution-boolean-expressions-challenge",
       "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-switch-case/3-challenge.md",
+      "redirect_url": "/training/modules/csharp-switch-case/3-exercise-challenge-switch-statements",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/wwl-language/csharp-switch-case/4-solution.md",
+      "redirect_url": "/training/modules/csharp-switch-case/4-review-solution-switch-statements-challenge",
+      "redirect_document_id": false
   }
 ]
 }
