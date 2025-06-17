@@ -5795,3 +5795,13 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.student-evangelism.self-regulation-work-strategically.badge
+  type: badge
+  title: Use self-regulation to work strategically
+  summary: In this module, you'll learn about using self-regulation to respond effectively to challenges. You'll also use goal-orientation theory to diagnose what motivates you to learn.
+  iconUrl: /training/achievements/tech-resilience/self-regulation.svg
+- uid: learn.student-evangelism.grow-cognitive-flexibility.badge
+  type: badge
+  title: Grow your cognitive flexibility
+  summary: In this module, you'll learn about the importance of cognitive flexibility in the field of technology. You'll learn about the benefits of stepping back and expanding your outlook and using feedback effectively. Finally, you'll learn how to reorient and persist in challenging situations.
+  iconUrl: /training/achievements/tech-resilience/grow-cognitive-flexibility.svg
