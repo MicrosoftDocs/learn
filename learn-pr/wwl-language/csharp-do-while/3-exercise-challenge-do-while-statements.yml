@@ -4,7 +4,7 @@ title: Exercise - Complete a challenge activity using do and while iteration sta
 metadata:
   title: Exercise - Complete a challenge activity using do and while iteration statements
   description: "Exercise - Complete a challenge activity using do and while iteration statements"
-  ms.date: 06/10/2024
+  ms.date: 06/17/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-challenge.md)]
+  [!include[](includes/3-exercise-challenge-do-while-statements.md)]
