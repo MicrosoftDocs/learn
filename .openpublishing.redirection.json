@@ -36,6 +36,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/achievements/learn.azure-security.configure-security-policies-to-manage-data.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql",
+      "redirect_document_id": false
+    }, 
+    {
       "source_path_from_root": "/learn-pr/achievements/learn.analyze-infrastructure-with-azure-monitor-logs.badge.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
       "redirect_document_id": false
