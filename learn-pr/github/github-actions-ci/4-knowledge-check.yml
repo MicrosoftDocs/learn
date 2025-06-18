@@ -15,68 +15,68 @@ quiz:
   title: Check your knowledge
   questions:
   - content: "What action do you use to save artifacts from a GitHub Actions workflow?"
-      choices:
-      - content: "`actions/upload-artifact`"
-        isCorrect: true
-        explanation: "Use the `actions/upload-artifact` action to save an artifact."
-      - content: "`actions/checkout@v3`"
-        isCorrect: false
-        explanation: "Use the `actions/upload-artifact` action to save an artifact. The `actions/checkout@v3` action copies the code from your repository to a virtual machine."
-      - content: "`actions/download-artifact`"
-        isCorrect: false
-        explanation: "Use the `actions/upload-artifact` action to save an artifact. Use the `actions/download-artifact` action to download a saved artifact."
+    choices:
+    - content: "`actions/upload-artifact`"
+      isCorrect: true
+      explanation: "Use the `actions/upload-artifact` action to save an artifact."
+    - content: "`actions/checkout@v3`"
+      isCorrect: false
+      explanation: "Use the `actions/upload-artifact` action to save an artifact. The `actions/checkout@v3` action copies the code from your repository to a virtual machine."
+    - content: "`actions/download-artifact`"
+      isCorrect: false
+      explanation: "Use the `actions/upload-artifact` action to save an artifact. Use the `actions/download-artifact` action to download a saved artifact."
   - content: "Which of the following options is a way that you *can't* use GitHub Actions workflows?"
-      choices:
-      - content: "Automatically run test suites on each push."
-        isCorrect: false
-        explanation: "You can use GitHub Actions workflows to do all these tasks except to *upload secrets*. You don't want your secret in plain text in a workflow file."
-      - content: "Kick off a review process."
-        isCorrect: false
-        explanation: "You can use GitHub Actions workflows to do all these tasks except to *upload secrets*. You don't want your secret in plain text in a workflow file."
-      - content: "Automate common repetitive tasks, such as welcoming new contributors to a repository."
-        isCorrect: false
-        explanation: "You can use GitHub Actions workflows to do all these tasks except to *upload secrets*. You don't want your secret in plain text in a workflow file."
-      - content: "Upload a new secret to GitHub Secrets."
-        isCorrect: true
-        explanation: "Don't use GitHub Actions workflows to upload secrets. You don't want your secret in plain text in a workflow file."
+    choices:
+    - content: "Automatically run test suites on each push."
+      isCorrect: false
+      explanation: "You can use GitHub Actions workflows to do all these tasks except to *upload secrets*. You don't want your secret in plain text in a workflow file."
+    - content: "Kick off a review process."
+      isCorrect: false
+      explanation: "You can use GitHub Actions workflows to do all these tasks except to *upload secrets*. You don't want your secret in plain text in a workflow file."
+    - content: "Automate common repetitive tasks, such as welcoming new contributors to a repository."
+      isCorrect: false
+      explanation: "You can use GitHub Actions workflows to do all these tasks except to *upload secrets*. You don't want your secret in plain text in a workflow file."
+    - content: "Upload a new secret to GitHub Secrets."
+      isCorrect: true
+      explanation: "Don't use GitHub Actions workflows to upload secrets. You don't want your secret in plain text in a workflow file."
   - content: "Which action would you use to access a repository's code from the virtual machine provided by GitHub Actions?"
-      choices:
-      - content: "`actions/upload-artifact`"
-        isCorrect: false
-        explanation: "The `actions/upload-artifact` action saves an artifact."
-      - content: "`actions/checkout`"
-        isCorrect: true
-        explanation: "The `actions/checkout` action accesses a repository's code from the virtual machine provided by GitHub Actions."
-      - content: "`npm install`"
-        isCorrect: false
-        explanation: "The `npm install` command installs a package and its dependencies."
-      - content: "`actions/setup-node`"
-        isCorrect: false
-        explanation: "The `actions/setup-node` action sets up the correct version of Node.js."     
+    choices:
+    - content: "`actions/upload-artifact`"
+      isCorrect: false
+      explanation: "The `actions/upload-artifact` action saves an artifact."
+    - content: "`actions/checkout`"
+      isCorrect: true
+      explanation: "The `actions/checkout` action accesses a repository's code from the virtual machine provided by GitHub Actions."
+    - content: "`npm install`"
+      isCorrect: false
+      explanation: "The `npm install` command installs a package and its dependencies."
+    - content: "`actions/setup-node`"
+      isCorrect: false
+      explanation: "The `actions/setup-node` action sets up the correct version of Node.js."     
   - content: "How many builds does the following matrix produce? `os: [ubuntu-latest, windows-latest] node-version: [14.x, 16.x, 18.x]`" 
-      choices:
-      - content: "Six"
-        isCorrect: true
-        explanation: "Each operating system is paired with each version of Node.js for a total of six builds."
-      - content: "Three"
-        isCorrect: false
-        explanation: "Each operating system is paired with each version of Node.js for a total of six builds."
-      - content: "Five"
-        isCorrect: false
-        explanation: "Each operating system is paired with each version of Node.js for a total of six builds."
+    choices:
+    - content: "Six"
+      isCorrect: true
+      explanation: "Each operating system is paired with each version of Node.js for a total of six builds."
+    - content: "Three"
+      isCorrect: false
+      explanation: "Each operating system is paired with each version of Node.js for a total of six builds."
+    - content: "Five"
+      isCorrect: false
+      explanation: "Each operating system is paired with each version of Node.js for a total of six builds."
   - content: "How can you pass data between jobs in a GitHub Actions workflow?"
-      choices:
-      - content: "By using the `needs` keyword."
-        isCorrect: false
-        explanation: "The `needs` keyword specifies the order in which jobs run, but it doesn't pass data between jobs."
-      - content: "By using the `outputs` keyword."
-        isCorrect: true
-        explanation: "You can use the `outputs` keyword to pass data between jobs in a GitHub Actions workflow."
-      - content: "By using the `env` keyword."
-        isCorrect: false
-        explanation: "The `env` keyword sets environment variables for a job, but it doesn't pass data between jobs."
-      - content: "By using the `secrets` keyword."
-        isCorrect: false
-        explanation: "You can use the `secrets` keyword to access secrets in a job, but it doesn't pass data between jobs."
+    choices:
+    - content: "By using the `needs` keyword."
+      isCorrect: false
+      explanation: "The `needs` keyword specifies the order in which jobs run, but it doesn't pass data between jobs."
+    - content: "By using the `outputs` keyword."
+      isCorrect: true
+      explanation: "You can use the `outputs` keyword to pass data between jobs in a GitHub Actions workflow."
+    - content: "By using the `env` keyword."
+      isCorrect: false
+      explanation: "The `env` keyword sets environment variables for a job, but it doesn't pass data between jobs."
+    - content: "By using the `secrets` keyword."
+      isCorrect: false
+      explanation: "You can use the `secrets` keyword to access secrets in a job, but it doesn't pass data between jobs."
      
    
