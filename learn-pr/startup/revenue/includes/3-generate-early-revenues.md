@@ -46,7 +46,7 @@ Here are other common attributes of early adopters:
 - They're willing to take the risk of trying and paying for a new and unproven product. They'll persist even if it's imperfect.
 - They relish the opportunity to try new products before anyone else.
 - They're happy to give you candid feedback and genuinely want you to succeed.
-- They're likely to have experimented with alternatives. They might've created makeshift solutions themselves, such as a spreadsheet or a database.
+- They're likely to have experimented with alternatives. They might have created makeshift solutions themselves, such as a spreadsheet or a database.
 
 > [!TIP]
 > When you conduct customer interviews, ask whether the person will try your product before it launches and give you some feedback. If they say yes, you can tag them as a potential early adopter.
@@ -105,4 +105,4 @@ Here are some tips to help founders overcome a lack of sales experience:
 - To make a sale directly with a customer, you have to ask them for money. If you find this question uncomfortable, recognize it as early as possible. Sales coaching or discussions with other founders who have a strong sales background can help you overcome your reluctance.
 - Be prepared to hear "no" a lot. Be willing to persist with sales calls even if you get a low conversion rate. You shouldn't think of not closing a sale as a failure. It's an opportunity to learn which types of customers are high-quality versus low-quality prospects. It's also a chance to better express your proposition and overcome common objections.
 - Learn about sales pipelines. Create a basic pipeline by using one of the many free or low-cost sales and CRM tools available.
-- Automate and document sales processes and gather any required collateral. Then, when you do start to build a sales team, those employees can quickly get up to speed and be effective
+- Automate and document sales processes and gather any required collateral. Then, when you do start to build a sales team, those employees can quickly get up to speed and be effective.
