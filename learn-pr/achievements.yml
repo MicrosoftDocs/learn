@@ -5,6 +5,16 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.visualize-data-workbooks.badge
+  type: badge
+  title: Visualize data combined from multiple data sources by using Azure Monitor Workbooks
+  summary: Use Azure Workbooks to query data from multiple data sources and use visualizations such as graphs, charts, and grids to build visual reports for data analysis and reporting.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure-security.configure-security-policies-to-manage-data.badge
+  type: badge
+  title: Configure security policies to manage data
+  summary: Learn how to configure security policies to manage data. 
+  iconUrl: /training/achievements/configure-security-policies-to-manage-data.svg
 - uid: learn.sql-server-2022-performance-enhancements.badge
   type: badge
   title: Understand the built-in query intelligence enhancements of SQL Server 2022
@@ -5805,3 +5815,18 @@ achievements:
   title: Introduction to classification models by using R and tidymodels
   summary: Classification is a form of machine learning in which you train a classification model to predict which category an item belongs to. In this module, you learn how to use the R programming language and tidymodels framework to train classification models.
   iconUrl: /training/achievements/machine-learning/introduction-classification-models.svg
+- uid: learn.machine-learning.machine-learning-with-r.trophy
+  type: trophy
+  title: Create machine learning models with R and tidymodels
+  summary: Learn how to explore and analyze data by using R. Get an introduction to regression models, classification models, and clustering models by using tidymodels and R.
+  iconUrl: /training/achievements/machine-learning/machine-learning-with-r.svg
+- uid: learn.machine-learning.explore-analyze-data-r.badge
+  type: badge
+  title: Explore and analyze data with R
+  summary: In this module, you explore, analyze, and visualize data by using the R programming language.
+  iconUrl: /training/achievements/machine-learning/explore-analyze-data-r.svg
+- uid: learn.advocates.cv-classify-bird-species.badge
+  type: badge
+  title: Classify endangered bird species with Custom Vision
+  summary: As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitat. Your work often involves surveying, recording, and reporting on bird activity. You want to build a machine learning model that will identify a bird in an image by species, to help with gathering data. In this module, you use Azure AI Custom Vision to create a model to identify species of birds!
+  iconUrl: /training/achievements/advocates/cv-classify-bird-species.svg

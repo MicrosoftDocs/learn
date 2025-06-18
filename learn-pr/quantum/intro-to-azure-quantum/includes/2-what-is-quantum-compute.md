@@ -11,7 +11,7 @@ There are many ways to understand why quantum systems are hard to simulate. The 
 
 ### Quantum computing grows exponentially
 
-Consider a system of quantum particles, for example electrons. There are $40$ possible positions or locations for the electrons. The system therefore might be in any of $2^{40}$ configurations, since each location can either have or not have an electron. To store the quantum state of the electrons in a conventional computer memory would require in excess of $130$ GB of memory! If the electrons were allowed to one extra location, so that they could be in any of $41$ positions, there would be twice as many configurations at $2^{41}$, which in turn would require more than $260$ GB of memory to store the quantum state.
+Consider a system of quantum particles, for example electrons. There are $40$ possible positions or locations for the electrons. The system therefore might be in any of $2^{40}$ configurations, since each location can either have or not have an electron. Storing the quantum state of the electrons in a conventional computer memory would require in excess of $130$ GB of memory! If the electrons were allowed in one extra location, so that they could be in any of $41$ positions, there would be twice as many configurations at $2^{41}$. That system would require more than $260$ GB of memory to store the quantum state.
 
 This game of increasing the number of locations can't be played indefinitely. If you want to store the state conventionally, you would quickly exceed the memory capacities of the world's most powerful machines. At a few hundred electrons, the memory required to store the system exceeds the number of particles in the universe; thus there's no hope with our conventional computers to ever simulate their quantum dynamics.
 
@@ -21,7 +21,7 @@ The observation of this exponential growth led to ask a powerful question: is it
 
 In 1985, David Deutsch showed that a quantum computer could efficiently simulate the behavior of any physical system. This discovery was the first indication that quantum computers could be used to solve problems that are intractable on classical computers.
 
-In 1994, Peter Shor discovered a quantum algorithm for factoring integers that runs exponentially faster than the best known classical algorithm. Solving factoring makes possible the ability to break many of our public key cryptosystems underlying the security of e-commerce today, including RSA and Elliptic Curve Cryptography. This discovery sparked a huge interest in quantum computing and led to the development of quantum algorithms for many other problems.
+In 1994, Peter Shor discovered a quantum algorithm for factoring integers that runs exponentially faster than the best known classical algorithm. Solving factoring makes possible the ability to break many of our public key cryptosystems underlying the security of e-commerce today, including Rivest–Shamir–Adleman (RSA) and Elliptic Curve Cryptography. This discovery sparked a huge interest in quantum computing and led to the development of quantum algorithms for many other problems.
 
 Since that time, fast and efficient quantum computer algorithms were developed for many of our hard classical tasks: simulating physical systems in chemistry, physics, and materials science, searching an unordered database, solving systems of linear equations, and machine learning.
 
@@ -35,7 +35,7 @@ In quantum computing, the information is encoded in the superposition of the sta
 
 ## How to build a quantum computer
 
-A quantum computer is a computer that takes advantage of quantum mechanical phenomena.  Quantum computers use quantum states of matter to store and compute information. They can "program" quantum interference to do things faster or better than classical computers.
+A quantum computer is a computer that takes advantage of quantum mechanical phenomena. Quantum computers use quantum states of matter to store and compute information. They can "program" quantum interference to do things faster or better than classical computers.
 
 When building a quantum computer, we need to think about how to create the qubits and how to store them. We also need to think about how to manipulate them and how to read the results of our computations.
 
@@ -48,7 +48,7 @@ A good quantum computer should have these five features:
 1. **Scalable:** It can have many qubits.
 1. **Initializable:** It can set the qubits to a specific state (usually the $0$ state).
 1. **Resilient:** It can keep the qubits in superposition state for a long time.
-1. **Universal:** A quantum computer doesn't need to perform every possible operation, only a set of operations called *universal set*. A set of universal quantum operations is such that any other operation can be decomposed into a sequence of them.
+1. **Universal:** A quantum computer doesn't need to perform every possible operation, only a set of operations called the *universal set*. A set of universal quantum operations is such that any other operation can be decomposed into a sequence of them.
 1. **Reliable:** It can measure the qubits accurately.
 
 These five criteria are often known as the Di Vincenzo criteria for quantum computation.

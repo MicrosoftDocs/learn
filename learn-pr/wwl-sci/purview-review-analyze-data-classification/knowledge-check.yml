@@ -50,7 +50,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect: Microsoft Purview Audit provides detailed event logs but isn't designed for monitoring classification trends."
 
-  - content: "A security administrator wants to analyze how users are applying sensitivity labels and whether labeled data is being downgraded or removed. They need to drill down into specific files and locations. Which Microsoft Purview tool should they use?"
+  - content: "A security administrator wants to review the current sensitivity label assignments on files and emails across the organization. They need to examine specific files and locations to see which items have labels applied or are unlabeled. Which Microsoft Purview tool should they use?"
     choices:
     - content: "Activity Explorer"
       isCorrect: false
@@ -58,9 +58,9 @@ quiz:
     - content: "Data Explorer"
       isCorrect: true
       explanation: "Correct: Data Explorer allows security teams to investigate labeled content, track label changes, and analyze classification patterns."
-    - content: "Microsoft Purview Insider Risk Management"
+    - content: "Microsoft Purview Audit"
       isCorrect: false
-      explanation: "Incorrect: Insider Risk Management identifies risky user behavior but doesn't focus on tracking label usage."
+      explanation: "Incorrect: Audit records when sensitivity labels are applied or changed but doesn't provide a view of the current label assignments across files and locations."
 
   - content: "Your organization's security team wants to proactively detect unusual data activity, such as large-scale downloads of sensitive files. They want an AI-powered tool that can analyze patterns and surface potential risks. Which feature should they use?"
     choices:
