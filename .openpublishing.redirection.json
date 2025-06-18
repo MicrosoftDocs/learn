@@ -48708,6 +48708,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/2-machine-learning-process.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/3a-upload-images.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/3b-train-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/3-build-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/4-understand-results-test.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/5-deploy-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/cv-classify-bird-species/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-language/csharp-readable-code/5-challenge.md",
       "redirect_url": "/training/modules/csharp-readable-code/5-exercise-challenge-improve-code-readability",
       "redirect_document_id": false
@@ -48850,6 +48900,221 @@
     {
       "source_path": "learn-pr/azure/visualize-data-workbooks/1-introduction.md",
       "redirect_url": "/azure-monitor/visualize/workbooks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/machine-learning-with-r/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/explore-analyze-data-with-r/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/explore-analyze-data-with-r/2-exploratory-data-analysis.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/explore-analyze-data-with-r/3-exercise-transform-data-with-dplyr.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/explore-analyze-data-with-r/4-visualize-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/explore-analyze-data-with-r/5-exercise-visualize-data-with-ggplot2.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/explore-analyze-data-with-r/6-examine-real-world-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/explore-analyze-data-with-r/7-exercise-examine-real-world-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/explore-analyze-data-with-r/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/explore-analyze-data-with-r/9-challenge-data-exploration.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/explore-analyze-data-with-r/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/explore-analyze-data-with-r/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+        },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-regression-models/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-regression-models/2-what-is-regression.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-regression-models/3-exercise-train-evaluate-regression-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-regression-models/4-discover-new-regression-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-regression-models/5-exercise-experiment-powerful-regression-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-regression-models/6-improve-models-with-hyperparameters.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-regression-models/7-exercise-optimize-save-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-regression-models/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-regression-models/9-challenge-regression.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-regression-models/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-regression-models/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-classification-models/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-classification-models/2-what-is-classification.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-classification-models/3-exercise-train-evaluate-binary-classification-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-classification-models/4-evaluate-classification-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-classification-models/5-exercise-perform-classification-alternative-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-classification-models/6-create-multiclass-classification-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-classification-models/7-exercise-train-evaluate-multiclass-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-classification-models/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-classification-models/9-challenge-classification.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-classification-models/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-classification-models/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/2-what-is-clustering.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/3-exercise-train-evaluate-clustering-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/4-evaluate-different-types-clustering.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/5-exercise-train-evaluate-advanced-clustering-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/7-challenge-clustering.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/introduction-clustering-models/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
     }
   ]
