@@ -95,7 +95,7 @@ When using Windows LAPS to manage a device password, the device must have permis
 For example, to allow computers in the Sydney OU with expired passwords to update their passwords by using LAPS, use the following command:
 
 ```powershell
-Set- LapsADComputerSelfPermission -Identity "Sydney"
+Set-LapsADComputerSelfPermission -Identity "Sydney"
 
 ```
 
