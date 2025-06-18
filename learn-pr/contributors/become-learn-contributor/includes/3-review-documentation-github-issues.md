@@ -4,7 +4,7 @@ An Issue in GitHub is a tool that enables technology users, engineers, and other
 
 ## Why review content in GitHub?
 
-Providing content reviews on GitHub is a direct way to contribute to a topic you’re passionate or knowledgeable about. This means you can add your ideas as you’re exploring a topic on Microsoft documentation.  Contributing your insights to the pool of knowledge helps improve Microsoft product experiences for millions of other users. Your feedback advances content for other Microsoft Learn visitors who rely on Microsoft products and their supporting content.
+Providing content reviews on GitHub is a direct way to contribute to a topic you’re passionate or knowledgeable about. This means you can add your ideas as you’re exploring a topic on Microsoft documentation. Contributing your insights to the pool of knowledge helps improve Microsoft product experiences for millions of other users. Your feedback advances content for other Microsoft Learn visitors who rely on Microsoft products and their supporting content.
 
 In most cases, submitting GitHub feedback enables you to send your ideas to the team in charge of the product’s content set. This collaboration pathway between content teams and product users allows feedback to be shared and discussed directly in GitHub. 
 
@@ -12,31 +12,22 @@ Contributing to documentation content can provide professional benefits to you a
 
 ## How to give feedback on content
 
-Recall that many documentation articles on Microsoft Learn are stored in GitHub repositories. Many GitHub repositories have GitHub issues enabled. When enabled, you can find the option to submit feedback for *this page* at the bottom of an article on learn.microsoft.com. 
+Recall that many documentation articles on Microsoft Learn are stored in GitHub repositories. Many GitHub repositories have GitHub issues enabled. When enabled, you can find the option to submit feedback for *this page* at the bottom of an article on `learn.microsoft.com`. 
 
 :::image type="content" source="../media/feedback-options-github-issue.png" alt-text="Screenshot of the feedback options at the bottom of a documentation article.":::
 
-To create and submit an issue, you need a GitHub account. Here’s how to submit an issue in GitHub from a Microsoft Learn article:
+Here’s how to submit an issue in GitHub from a Microsoft Learn article:
 
-1. Sign in to your GitHub account. 
 1. Navigate to the Microsoft Learn documentation article on which you’d like to give feedback. 
-1. At the bottom of the article, find the heading labeled **Feedback**. Here, you see a box labeled **This page**. 
 
-    - To give feedback on the article itself, select **This page**. This takes you to a blank Issues form on GitHub where you can begin filling out your comments. You’ll choose this option now.
-    - If you’d like to review other GitHub issues submitted on the topic, select **View all page feedback**. Anyone can read other GitHub issues in a public repo, but if you have a GitHub account, you can comment on the issues as well.  
-    - Selecting **This product** allows you to provide feedback on the product itself. We won’t go into detail on this option for now so we can focus on providing feedback on the documentation itself. 
-1. After you’ve selected **This page**, you’ll be prompted to sign in to your GitHub account if you haven’t already. Then, a blank Issues feedback form appears in GitHub. 
-1. Enter a title for your feedback that briefly summarizes your input. 
-1. In the text box below, describe your feedback and provide any necessary context. Use the toolbar to format your description, such as adding a quote, list, or mention.  
-1. When you’re finished, select **Submit new issue**.
+1. At the bottom of the article, find the heading labeled **Feedback**. Next to the question **Was this page helpful?**, there are buttons for **Yes** and **No**. Select a button to indicate whether the article was helpful. This opens a form where you can fill out your comments.
+
+1. Select the reason for your feedback.
+
+1. In the following text box, describe your feedback and provide any necessary context.
+
+1. When you’re finished, select **Submit**.
 
 :::image type="content" source="../media/github-issues-form.png" alt-text="Screenshot of a blank GitHub issues form to submit feedback on a documentation article.":::
 
-### Track Issues 
-
-The article’s author or other content owners will be notified when you submit your Issue. You can track comments on the issue by checking your GitHub notifications or returning to the repository and checking the **Issues** tab. 
-
-You can explore, review, and comment on other issues that have been submitted for that repo in the **Issues** tab as well. 
-
-:::image type="content" source="../media/github-issues-tab.png" alt-text="Screenshot of the GitHub issues tab in a GitHub repo.":::
-
+The article’s author or other content owners are notified when you submit your Issue. 

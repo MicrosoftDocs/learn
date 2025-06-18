@@ -6,3 +6,4 @@ After completing this module, you'll be able to:
 * Explain how Event Grid delivers events and how it handles errors. 
 * Implement authentication and authorization.
 * Route custom events to web endpoint by using Azure CLI.
+
