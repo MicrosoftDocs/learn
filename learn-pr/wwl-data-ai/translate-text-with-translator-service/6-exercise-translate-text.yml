@@ -11,8 +11,6 @@ metadata:
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 30
-labId: 152401
-labModal: true
 content: |
   [!include[](includes/6-exercise-translate-text.md)]
 
