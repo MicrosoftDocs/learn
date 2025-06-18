@@ -5,6 +5,11 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.visualize-data-workbooks.badge
+  type: badge
+  title: Visualize data combined from multiple data sources by using Azure Monitor Workbooks
+  summary: Use Azure Workbooks to query data from multiple data sources and use visualizations such as graphs, charts, and grids to build visual reports for data analysis and reporting.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.azure-security.configure-security-policies-to-manage-data.badge
   type: badge
   title: Configure security policies to manage data
