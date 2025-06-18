@@ -350,11 +350,11 @@ GET /repos/{owner}/{repo}/actions/runs/{run_id}/logs
 
 ## Identify when to use an installation token from a GitHub app
 
-After your GitHub App is installed on an account, you can authenticate it as an app installation by using the `installation access token` for REST and GraphQL API requests. This step allows the app to access resources owned by the installation, assuming that the app was granted the required repository access and permissions. REST or GraphQL API requests made by an app installation are attributed to the app.
+When your GitHub app is installed on an account, you can authenticate it as an app installation by using the `installation access token` for REST and GraphQL API requests. This step allows the app to access resources owned by the installation, assuming that the app was granted the required repository access and permissions. REST or GraphQL API requests made by an app installation are attributed to the app.
 
 In the following example, you replace `INSTALLATION_ACCESS_TOKEN` with the installation access token:
 
-```
+```bash
 curl --request GET \
 --url "https://api.github.com/meta" \
 --header "Accept: application/vnd.github+json" \
@@ -366,6 +366,6 @@ You can also use an installation access token to authenticate for HTTP-based Git
 
 You replace `TOKEN` in the example with the installation access token:
 
-```
+```bash
 git clone https://x-access-token:TOKEN@github.com/owner/repo.git
 ```
