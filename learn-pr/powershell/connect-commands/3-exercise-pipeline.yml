@@ -4,8 +4,8 @@ title: Exercise - Construct a pipeline
 metadata:
   title: Exercise - Construct a pipeline
   description: In this exercise, you construct a pipeline  by using multiple cmdlets.
-  author: softchris
-  ms.author: chnoring
+  author: sdwheeler
+  ms.author: sewhee
   ms.date: 12/09/2022
   ms.topic: unit
   ms.custom: team=nextgen

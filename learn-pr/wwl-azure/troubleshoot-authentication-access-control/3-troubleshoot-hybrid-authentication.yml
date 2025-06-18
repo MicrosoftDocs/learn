@@ -8,6 +8,7 @@ metadata:
   author: mistoyanwork
   ms.author: mistoyan
   ms.topic: unit
+  ms.custom: sfi-ga-blocked
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

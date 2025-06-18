@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom: sfi-ga-nochange
 durationInMinutes: 7
 content: |
   [!include[](includes/9-create-manage-emergency-access-accounts.md)]
