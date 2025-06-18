@@ -27,7 +27,7 @@ When you use one of these providers, the sign-in endpoint is available for user 
 
 The authentication and authorization middleware component is a feature of the platform that runs as a sidecar container on each replica in your application. When enabled, every incoming HTTP request passes through the security layer before being handled by your application.
 
-:::image type="content" source="../media/container-apps-authorization-architecture.png" alt-text="Diagram showing requests being intercepted by a sidecar container interacting with identity providers before allowing traffic to the app container.":::
+:::image type="content" source="../media/container-apps-authorization-architecture.png" alt-text="Diagram showing requests being intercepted by a sidecar container interacting with identity providers, before allowing traffic to the app container.":::
 
 The platform middleware handles several things for your app:
 
@@ -44,4 +44,5 @@ The authentication flow is the same for all providers, but differs depending on 
 * **Without provider SDK** (server-directed flow or server flow): The application delegates federated sign-in to Container Apps. Delegation is typically the case with browser apps, which presents the provider's sign-in page to the user.
 
 * **With provider SDK** (client-directed flow or client flow): The application signs users in to the provider manually and then submits the authentication token to Container Apps for validation. This approach is typical for browser-less apps that don't present the provider's sign-in page to the user. An example is a native mobile app that signs users in using the provider's SDK.
+
 
