@@ -5,7 +5,7 @@ To implement this process, you learn how to:
 - Create a workflow from a template.
 - Avoid duplication by using reusable workflows.
 - Identify the event that triggered a workflow.
-- Understand GitHub Actions workflow logs.
+- Use GitHub Actions workflow logs.
 - Test against multiple targets.
 - Separate build and test jobs.
 - Save and access build artifacts.
@@ -82,7 +82,7 @@ A team of developers can benefit from using reusable workflows to streamline and
 
 As teams scale and projects grow, it's common to see the same steps repeated across multiple workflow files. These steps might include code checkout, dependency installation, testing, and deployment. This kind of duplication not only clutters your code base but also increases maintenance time when code changes are required. Reusable workflows solve this problem by allowing you to define automation logic once, and then call the logic from other workflows.
 
-Reusable workflows are special GitHub Actions workflows that other workflows can call, much like functions in programming. You create them to share repeated logic like build steps, testing procedures, or deployment strategies. After you create a reusable workflow, you can reference it from any other workflow in the same repository or even in different repositories.
+Reusable workflows are special GitHub Actions workflows that other workflows can call, similar to functions in programming. You create them to share repeated logic like build steps, testing procedures, or deployment strategies. After you create a reusable workflow, you can reference it from any other workflow in the same repository or even in different repositories.
 
 :::image type="content" source="../media/reusable-workflow.png" alt-text="Diagram that shows the concept of reusable workflows in GitHub Actions. Multiple repositories or workflows can reference a central workflow." border="false":::
 
@@ -115,7 +115,7 @@ Imagine that your organization has 10 microservices. All 10 microservices need t
 - Lint code
 - Deploy to a specific environment
 
-Without reusable workflows, every repo contains duplicated logic that list the repeated steps in each workflow..
+Without reusable workflows, every repo contains duplicated logic that list the repeated steps in each workflow.
 
 If you use reusable workflows:
 
