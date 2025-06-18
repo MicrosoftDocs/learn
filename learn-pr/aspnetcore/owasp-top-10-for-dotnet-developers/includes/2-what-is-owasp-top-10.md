@@ -21,7 +21,7 @@ The [Open Web Application Security Project (OWASP)](https://owasp.org/) is a glo
 
 OWASP periodically releases a list of 10 categories of application-security vulnerabilities. Each category covers different areas of application and information security. Their mission is to make software security visible so that individuals and organizations can make informed decisions.
 
-The list is curated and ordered by the severity of reported vulnerabilities, industry suggested guidelines, and attack probability.
+The list is curated and ordered according to the severity of reported vulnerabilities, industry suggested guidelines, and attack probability.
 
 ### OWASP Top 10
 

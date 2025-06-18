@@ -4,7 +4,7 @@ title: Broken access control
 metadata:
   title: Broken access control
   description: "OWASP Top 10 for .NET Developers. Broken Access Control."
-  ms.date: 05/31/2024
+  ms.date: 06/18/2025
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: unit
@@ -30,7 +30,6 @@ quiz:
     - content: "Be the only go-to report your organization would need to stay secured."
       isCorrect: false
       explanation: "Incorrect. There are many security reports beyond OWASP, with SANS CWE Top 25 being one of them."
-
   - content: "What is Broken Access Control?"  
     choices:
     - content: "A vulnerability that allows an attacker to access restricted information."
