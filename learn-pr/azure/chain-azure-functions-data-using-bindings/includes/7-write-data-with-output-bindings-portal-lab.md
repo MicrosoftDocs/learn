@@ -6,14 +6,14 @@ In this scenario, we receive requests to add bookmarks to our collection. The re
 
 If the key that was passed to us isn't found, we add the new bookmark to our database. We could stop there, but let's do a little more.
 
-Notice another step in the flowchart? So far, we didn't do much with the data that we received in terms of processing. We move what we receive into a database. However, in a real solution, we'd probably process the data in some fashion. We can do all the processing in the same function, but in this exercise, we show a pattern that offloads further processing to another component or piece of business logic.
+Notice another step in the flowchart? So far, we didn't do much with the data that we received in terms of processing. We move what we receive into a database. However, in a real solution, we'd probably process the data in some fashion. We can do all the processing in the same function. However, in this exercise we show a pattern that offloads further processing to another component or piece of business logic.
 
-What might be a good example of offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming. So rather than wait for the result, we hand the task off to a function and let it complete this task asynchronously.
+What might be a good example of offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming. So rather than wait for the result, we hand the task off to a function, and let it complete this task asynchronously.
 
 Just as Azure Functions supports input bindings for various integration sources, it also has a set of templates for output bindings to make it easy for you to write data to data sources. Output bindings are also configured in the *function.json* file. As you see in this exercise, we can configure our function to work with multiple data sources and services.
 
 > [!IMPORTANT]
-> This exercise builds on the sandbox resources and resources that you created in previous units; specifically, the Azure Cosmos DB database, bookmarks, and input bindings. If you haven't completed the exercises in previous units, you will not be able to complete this exercise.
+> This exercise builds on the sandbox resources and resources that you created in previous units; specifically, the Azure Cosmos DB database, bookmarks, and input bindings. If you haven't completed the exercises in previous units, you'll not be able to complete this exercise.
 
 ## Create an HTTP-triggered function
 
@@ -23,7 +23,7 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. Select **Create** on the **Functions** tab. The **Create function** pane appears.
 
-1. Under the **Select a template** section, select **HTTP trigger**, then select **Next**. Accept the defaults on the **Template details** tab and select **Create**. The Overview pane for the **HttpTrigger3** function appears.
+1. Under the **Select a template** section, select **HTTP trigger**, and then select **Next**. Accept the defaults on the **Template details** tab and select **Create**. The Overview pane for the **HttpTrigger3** function appears.
 
 ## Add an Azure Cosmos DB input binding
 
@@ -54,7 +54,7 @@ Let's add another Azure Cosmos DB input binding.
     | **Partition key** | `{id}` | Again, add `{id}` to use the correct binding expression and accept the parameter that is passed in the query string. |
     | **SQL Query (optional)** | *Leave blank* | We're only retrieving one item at a time based on the ID. So, filtering with the Document setting is better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = /id`). That query would indeed return an item, but it would return it in an items collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
 
-    Like the input binding that we created in the previous exercise, we want to look up a bookmark with a specific ID, so we tied the **Document ID** that our function receives in the query string to the binding, which is known as the *binding expression*. The function trigger is an HTTP request that uses a query string to specify the ID to look up. The binding returns either 0 (not found) or 1 (found) documents.
+    Like the input binding that we created in the previous exercise, we want to look up a bookmark with a specific ID. So we tied the **Document ID** that our function receives in the query string to the binding, which is known as the *binding expression*. The function trigger is an HTTP request that uses a query string to specify the ID to look up. The binding returns either 0 (not found) or 1 (found) documents.
 
 1. Select **Add** to save the input binding configuration.
 
@@ -66,7 +66,7 @@ We now have an Azure Cosmos DB input binding. Let's add an output binding so we 
 
 1. Under **Binding Type**, from the dropdown list, select **Azure Cosmos DB**.
 
-1. The **Cosmos DB account connection** setting should be prepopulated with the connection you created earlier. If not, expand the dropdown list and select the connection you defined for HttpTrigger3 input binding.
+1. The **Cosmos DB account connection** setting should be prepopulated with the connection you created earlier. If not, expand the dropdown list, and select the connection you defined for HttpTrigger3 input binding.
 
 1. Enter the following values for the remaining settings for the output binding.
 
@@ -87,7 +87,7 @@ Azure Queue storage is a service for storing messages that can be accessed from 
 
 :::image type="content" source="../media/7-q-logical-small.png" alt-text="Illustration showing a storage queue with a function pushing and another function popping messages.":::
 
-In this example, you see that a function named **add-bookmark** adds messages to a queue, and another named **gen-qr-code** pops messages from the same queue, and processes the request. Because we write, or *push*, messages to the queue from **add-bookmark**, we add a new output binding to your solution. 
+In this example, you see that a function named **add-bookmark** adds messages to a queue, and another named **gen-qr-code** pops messages from the same queue and processes the request. Because we write, or *push*, messages to the queue from **add-bookmark**, we add a new output binding to your solution.
 
 Let's create the binding through the portal.
 
@@ -105,7 +105,7 @@ Next, we set up a storage account connection, where our queue is hosted.
 
    The **Storage account connection** setting is populated with the name of a connection.
 
-Although we could keep the default values, let's change some settings to lend more meaning to the remaining properties. 
+Although we could keep the default values, let's change some settings to lend more meaning to the remaining properties.
 
 1. Complete the settings in the **Create Output** pane, by replacing the following old values with the new values:
 
@@ -122,26 +122,26 @@ We now have all our bindings set up. It's time to use them in our function.
 
 ::: zone pivot="javascript"
 
-1. To open the **index.js** file in the code editor, select your function, **HttpTrigger3**.
+1. To open the **index.js** file in the code editor, select your function **HttpTrigger3**.
 
 1. In the menu, select **Code + Test**. The **Code + Test** pane appears for your function.
 
-1. Replace all the code in the *index.js* file with the code from the following snippet, and then in the command bar, select **Save**.
+1. Replace all the code in the *index.js* file with the code from the following snippet. Then in the command bar, select **Save**.
 
    [!code-javascript[](../code/add-bookmark.js)]
 
 Let's break down what this code does:
 
-* Because this function changes our data, we expect the HTTP request to be a POST, and the bookmark data to be part of the request body.
+* Because this function changes our data, we expect the HTTP request to be a POST and the bookmark data to be part of the request body.
 * Our Azure Cosmos DB input binding attempts to retrieve a document, or bookmark, by using the `id` that we receive. If it finds an entry, the `bookmark` object is set. The `if(bookmark)` condition checks to see whether an entry was found.
 * Adding to the database is as simple as setting the `context.bindings.newbookmark` binding parameter to the new bookmark entry, which we created as a JSON string.
 * Posting a message to our queue is as simple as setting the `context.bindings.newmessage` parameter.
 
 > [!NOTE]
 > The only task you performed was to create a queue binding. You never created the queue explicitly. You are witnessing the power of bindings! As the following notification declares, the queue is automatically created for you if it doesn't exist.
-> 
+>
 > :::image type="content" source="../media/7-q-auto-create-small.png" alt-text="Screenshot showing message that the queue will be auto-created.":::.
-> 
+>
 
 1. Select **function.json** from the dropdown list in your **`<functionapp> \ HttpTrigger3 \`** path and make the following changes:
 
@@ -244,14 +244,14 @@ So, that's it. Let's see our work in action in the next section.
 
 Let's break down what this code does:
 
-* Because this function changes our data, we expect the HTTP request to be a POST, and the bookmark data to be part of the request body.
+* Because this function changes our data, we expect the HTTP request to be a POST and the bookmark data to be part of the request body.
 * Our Azure Cosmos DB input binding attempts to retrieve a document, or bookmark, by using the `id` in the request. If it finds an entry, the `bookmark` object is set. The `if ($bookmark)` condition checks to see whether an entry was found.
 * Adding to the database is as simple as calling `Push-OutputBinding` with the name of the Cosmos DB output binding (`newbookmark`) and the value of the `$newBookmark` object.
 * Posting a message to our queue is as simple as calling `Push-OutputBinding` with the name of the queue output binding (`newmessage`) and the value of the `$newBookmark` object.
 
 > [!NOTE]
 > The only task you performed was to create a queue binding. You never created the queue explicitly. You are witnessing the power of bindings! As the following notification declares, the queue is automatically created for you if it doesn't exist.
-> 
+>
 > :::image type="content" source="../media/7-q-auto-create-small.png" alt-text="Screenshot showing UI tool tip that the queue will be auto-created." border="false":::
 
 So, that's it. Let's see our work in action in the next section.
@@ -262,7 +262,7 @@ So, that's it. Let's see our work in action in the next section.
 
 Now that we have multiple output bindings, testing becomes a little trickier. In previous units, we were content to test by sending an HTTP request with a query string, but we want to perform an HTTP post this time. We also need to check to see whether messages are making it into a queue.
 
-1. In command bar of the **Code + Test** pane for your **HttpTrigger3** function, select **Test/Run**. A new pane appears, with the Input tab open, as shown in this image:
+1. In the command bar of the **Code + Test** pane for your **HttpTrigger3** function, select **Test/Run**. A new pane appears, with the Input tab open, as shown in this image:
 
     :::image type="content" source="../media/7-test-panel-open-small.png" alt-text="Screenshot showing the test/run pane.":::
 
@@ -279,7 +279,7 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
 
 1. Select **Run**.
 
-1. The programmatic progress shows in the **Logs** pane. When completed, verify that the **Output** tab displays "Bookmark already exists." in the **HTTP response content** setting.
+1. The programmatic progress shows in the **Logs** pane. When completed, verify that the **Output** tab displays *Bookmark already exists.* in the **HTTP response content** setting.
 
     :::image type="content" source="../media/7-test-exists-small.png" alt-text="Screenshot of output tab showing bookmark already exists response.":::
 
@@ -298,17 +298,17 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
 
 1. Select **Run**.
 
-1. Verify that the **Output** tab displays "bookmark added!" in the **HTTP response content**, as shown in the following screenshot.
+1. Verify that the **Output** tab displays *bookmark added!* in the **HTTP response content**, as shown in the following screenshot.
 
     :::image type="content" source="../media/7-test-success-small.png" alt-text="Screenshot of output tab showing bookmark added response.":::
 
-Congratulations! Your function works as designed! But, what about the queue operation we added to the code? Well, let's go see whether something was written to a queue.
+Congratulations, your function works as designed! But what about the queue operation we added to the code? Well, let's go see whether something was written to a queue.
 
 ### Verify that a message is written to the queue
 
 Azure Queue Storage queues are hosted in a storage account. You configured the storage account when you created the output binding.
 
-1. In the Azure portal global search bar, enter **storage accounts**, and then in the results list, select **Storage accounts**. The **Storage accounts** pane appears.
+1. In the Azure portal global search bar, enter **storage accounts**. Then in the results list, select **Storage accounts**. The **Storage accounts** pane appears.
 
     :::image type="content" source="../media/7-search-storage-accounts-small.png" alt-text="Screenshot showing search results for Storage Account search." lightbox="../media/7-search-storage-accounts.png":::
 
@@ -324,6 +324,6 @@ Azure Queue Storage queues are hosted in a storage account. You configured the s
 
     In this example, the message was given a unique ID, and the **Message text** column displays your bookmark in JSON format. There's no message for the Azure `docs` bookmark that you tried to add because it already existed in the database.
 
-1. You can test the function further by changing the request body in the test pane with new id/url sets, and running the function. Watch this queue to see more messages arrive. You can also look at the database to verify that new entries are added.
+1. You can test the function further by changing the request body in the test pane with new id/url sets and running the function. Watch this queue to see more messages arrive. You can also look at the database to verify that new entries are added.
 
-In this exercise, we expanded your knowledge of bindings to output bindings, and writing data to your Azure Cosmos DB. We added an output binding to post messages to an Azure queue. This example demonstrates the true power of bindings to help you shape and move data from incoming sources to various destinations. We didn't have to write any database code or manage connection strings ourselves. Instead, we configured bindings declaratively, and let the platform take care of securing connections, scaling our function, and scaling our connections.
+In this exercise, we expanded your knowledge of bindings to output bindings and writing data to your Azure Cosmos DB. We added an output binding to post messages to an Azure queue. This example demonstrates the true power of bindings to help you shape and move data from incoming sources to various destinations. We didn't have to write any database code or manage connection strings ourselves. Instead, we configured bindings declaratively and let the platform take care of securing connections, scaling our function, and scaling our connections.

@@ -44,7 +44,7 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Select **Go to resource** to go to the database account in the portal. The **Quick start** pane for your Azure Cosmos DB account appears.
 
-Next, we add a container and then add a database to the Azure Cosmos DB account.
+Next, we add a container, and then add a database to the Azure Cosmos DB account.
 
 ### Add a container
 
@@ -71,11 +71,11 @@ Let's use the Data Explorer tool to create a database and container.
 
     When complete, the Data Explorer displays **func-io-learn-db** in **DATA** under **NOSQL API**.
 
-1. Select **func-io-learn-db** to expand it. Notice that your **func-io-learn-db** database contains several child members, including Scale and Bookmarks. 
+1. Select **func-io-learn-db** to expand it. Notice that your **func-io-learn-db** database contains several child members, including Scale and Bookmarks.
 
 1. Expand the **Bookmarks** container. Notice that several child members already prepopulate it.
 
-In the next task, you add some data, also known as items, to your Bookmarks container.
+In the next task, you add some data (also known as items) to your Bookmarks container.
 
 ### Add test data
 
@@ -144,7 +144,7 @@ Your **Bookmarks** container has five items. In this scenario, if a request arri
 
 ## Create your function
 
-1. Go to the function app that you created in the preceding unit. In the resource menu, select **Home**, and in the **Recent resources** section, you should see your function app (**Type** equals **Function App**). Select your function app. The **Function App** pane appears.
+1. Go to the function app that you created in the preceding unit. In the resource menu, select **Home**. In the **Recent resources** section, you should see your function app (**Type** equals **Function App**). Select your function app, and the **Function App** pane appears.
 
 1. In the **Functions** tab on the **Overview** page, you should have one function, **HttpTrigger1**.
 
@@ -152,7 +152,7 @@ Your **Bookmarks** container has five items. In this scenario, if a request arri
 
 1. In the **Select a template** section, select **HTTP trigger**, then select **Next**.
 
-1. Accept all default settings and select **Create** to create your function.
+1. Accept all default settings, and select **Create** to create your function.
 
    The Overview pane for the **HttpTrigger2** function appears.
 
@@ -197,7 +197,7 @@ To read data from the database, you need to define an input binding. As you see 
     | **Collection Name** | `Bookmarks` | The collection we read the data from. This setting was defined. |
     | **Document ID** | `id` | Add the Document ID that we defined when we created the _Bookmarks_ Azure Cosmos DB container. |
     | **Partition key** | `/id` | Add the partition key that you defined when you created the _Bookmarks_ Azure Cosmos DB collection. The key entered here (specified in input binding format `<key>`) must match the one in the collection. |
-    | **SQL Query (optional)** | _Leave blank_ | You're only retrieving one document at a time based on the ID. So, filtering with the Document ID setting is a better than using a SQL Query in this instance. You could craft a SQL Query to return one entry (`SELECT * from b where b.ID = id`). That query would indeed return a document, but it would return it in a document collection. Your code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
+    | **SQL Query (optional)** | _Leave blank_ | You're only retrieving one document at a time based on the ID. So, filtering with the Document ID setting is better than using a SQL Query in this instance. You could craft a SQL Query to return one entry (`SELECT * from b where b.ID = id`). That query would indeed return a document, but it would return it in a document collection. Your code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
 
     To clarify why we're using these settings, we want to look up a bookmark with a specific ID, so we tied the **Document ID** that our function receives in the query string to the input binding. This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding returns either 0 (not found) or 1 (found) documents.
 
@@ -402,7 +402,7 @@ Let's examine what this code is doing.
     }
     ```
 
-1. Replace `&id=docs` with `&id=missing`, press <kbd>Enter</kbd>, and observe the response. We defined five bookmarks, and created a meaningful error response if the requested bookmark doesn't exist.
+1. Replace `&id=docs` with `&id=missing`, press <kbd>Enter</kbd>, and observe the response. We defined five bookmarks and created a meaningful error response if the requested bookmark doesn't exist.
 
 In this unit, you created your first input binding manually to read from an Azure Cosmos DB database. The amount of code you wrote to search our database and read data was minimal, thanks to bindings. You did most of your work configuring the binding declaratively, and the platform took care of the rest.
 
