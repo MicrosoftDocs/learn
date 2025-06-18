@@ -2,7 +2,7 @@ This exercise checks your knowledge about how to create, customize, and test a c
 
 ## Get started
 
-When you select the following **Start the exercise on GitHub**_** button, you go to a public GitHub template repository. That repository prompts you to complete a series of small challenges.
+When you select the following **Start the exercise on GitHub** button, you go to a public GitHub template repository. In the repository, you complete a series of small challenges.
 
 Before you start the exercise, complete these tasks:
 
