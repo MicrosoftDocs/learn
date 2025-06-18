@@ -48808,6 +48808,66 @@
       "source_path": "learn-pr/wwl-language/csharp-do-while/4-solution.md",
       "redirect_url": "/training/modules/csharp-do-while/4-review-solution-do-while-statements-challenge",
       "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/azure/monitor-authentication-methods/create-azure-ad-workbook.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-create-azure-ad-workbook.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-integrate-logs-with-log-analytics.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-use-logs-get-status-information.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-write-kql-queries.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/azure/monitor-authentication-methods/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/azure/monitor-authentication-methods/integrate-logs-with-log-analytics.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/azure/monitor-authentication-methods/introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/azure/monitor-authentication-methods/knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/azure/monitor-authentication-methods/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/azure/monitor-authentication-methods/use-logs-get-status-information.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/azure/monitor-authentication-methods/write-kql-queries.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
   }
 ]
 }
