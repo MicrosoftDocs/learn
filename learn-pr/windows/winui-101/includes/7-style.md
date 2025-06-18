@@ -71,7 +71,7 @@ Create the Resource Dictionary file called Styles:
 
 :::image type="content" source="../media/7-style/add-new-item.png" alt-text="Screenshot of Visual Studio adding a new item.":::
 
-4. In the **Add New Item** dialog, select **WinUI**in the template list on the left-side of the window.
+4. In the **Add New Item** dialog, select **WinUI** in the template list on the left-side of the window.
 
 5. Select the **Resource Dictionary (WinUI 3)**
 

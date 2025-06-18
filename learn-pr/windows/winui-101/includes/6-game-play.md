@@ -391,12 +391,12 @@ public partial string MessageContent { get; set; }
 public partial string PopUpToDisplay { get; set; }
 ```
 
-4. add to the top of `MainViewModel()`:
+4. Add to the top of `MainViewModel()`:
 ```csharp
 PopUpToDisplay = "false";
 ```
 
-5. Update `OnLetterGuessed` the to be:
+5. Update `OnLetterGuessed` to be:
 
 ```csharp
 [RelayCommand]

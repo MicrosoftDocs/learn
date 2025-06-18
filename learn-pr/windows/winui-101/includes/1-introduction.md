@@ -14,7 +14,7 @@ Throughout this course, we put these tools into practice by building SnowPal, a 
 
 For this course, we’ll use three key terms -— **View**, **ViewModel**, and **Model** -— to represent distinct parts of our application architecture:
 
-:::image type="content" source="../media/1-introduction/mvvm-intro.png" alt-text="Highlevel Overview MVVM.":::
+:::image type="content" source="../media/1-introduction/mvvm-intro.png" alt-text="Diagram that shows Highlevel Overview MVVM.":::
 
 - The **View** term refers to the User Interface (UI) of the application. This View component displays data to users and handles user interactions.
 - The **ViewModel** term handles presentation logic and transforms data from the Model into a form that the View can easily display.
@@ -24,7 +24,7 @@ These three components form the Model-View-ViewModel (MVVM) software architectur
 
 The **ViewModel** component performs the databinding between View and Model components. This databinding enables automatic propagation of data changes in both directions. The ViewModel handles syncing raw Model data to reflect UI changes automatically. If the user makes a change, the View updates the ViewModel, which can then update the Model and notify the View.
 
-:::image type="content" source="../media/1-introduction/mvvm-bi-directional-syncing.png" alt-text="Demonstrates that the View, ViewModel, and Model sync bi-directionally.":::
+:::image type="content" source="../media/1-introduction/mvvm-bi-directional-syncing.png" alt-text="Diagram that demonstrates that the View, ViewModel, and Model sync bi-directionally.":::
 
 This bi-directional syncing between View and Model components allows us to have functionality that enables a user to press a letter button in our game. This button press triggers the ViewModel to both update the View (by disabling the button) and the Model (by processing the user's guessed letter).
 
