@@ -43,9 +43,7 @@ In this task, you setup the Threat Intelligence Briefing Agent.
     1. Region: **US**
     1. Industry: **Healthcare**
 1. Select **Finish**.
-1. After the agent is created, you’re redirected to the activity page where you can get the agent to work on your first results, as part of the first run experience. Here you can run it with the automatic trigger or run it without the trigger, select **Run it automatically on the trigger**. This runs the agent today and then every seven days.
-1. On the top-right corner of the screen the message **Agent updated** is displayed. After a few seconds, the message disappears or you can close it by selecting the **X**.
-1. The activity dashboard shows a line item for that initial run with status “In progress” and the method shows as Automated. 
+1. After the agent is created, you’re redirected to the activity page where you can get the agent to work on your first results, as part of the first run experience. Here you can run it with the automatic trigger or run it without the trigger, select **Run it automatically on the trigger**. Once selected, the window displays the message, **The agent is working on your first results**. After a few seconds, the window updates again showing a line item for that initial run with status "In progress" and the method shows as Automated.
 1. After a few seconds, the run will show as Completed. Select the line item listed as  **Completed** from the activity dashboard window. ***For the purpose of the simulation, the amount of time it takes to complete the run is accelerated.***
 1. The first section of the report is the Input. Expand the down arrow next to confirm the inputs you entered are shown.
 1. The next section of the report shows the Result.
@@ -53,7 +51,7 @@ In this task, you setup the Threat Intelligence Briefing Agent.
     1. Next to where it says results are several icons. Hover over each one to see its function. Let's explore the feedback options:
         1. Select the **thumbs-up** icon to view the available options, then select **Cancel**.
         1. Select the **thumbs-down** icon.
-            1. Select **Needs improvement** to view the options then select **Inappropriate**. 
+            1. Select **Needs improvement** to view the options then select **Inappropriate**.
             1. Select **Cancel** to exit the feedback window.
 1. Now select View activity from the top right corner of the window to view the Activity map. 
     1. Using your mouse (hand icon displays) you can move the map around the page. You can zoom in/out by selecting the slider or **+** or the **-** on the bottom right corner of the window.
