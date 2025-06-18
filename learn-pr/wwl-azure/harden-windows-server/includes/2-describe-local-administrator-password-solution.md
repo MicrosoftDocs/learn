@@ -1,6 +1,6 @@
 Each computer that is member of a domain keeps a local Administrator account. This is the account that you configure when you first deploy the computer manually. The local Administrator account allows IT staff to sign in to the computer if they cannot establish connectivity to the domain.
 
-Managing local Administrator passwords across an organization is complex. In a 5,000-device environment, that means 5,000 unique accounts. To simplify, many organizations use a single shared password—but this often gets discovered by non-IT staff, leading to unauthorized admin access.
+Managing local Administrator passwords across an organization is complex. In a 5,000-device environment that means 5,000 unique accounts. To simplify, many organizations use a single shared password—but this often gets discovered by non-IT staff, leading to unauthorized admin access.
 
 ## What is Windows LAPS?
 
@@ -49,7 +49,7 @@ The Windows LAPS runs a built-in background task (by default, every hour) to eva
 
 1. A new random password is generated based on policy settings.
 1. The password and its expiration timestamp are securely backed up to either:
-    - Active Directory (on-prem), or
+    - Active Directory (on-premises), or
     - Microsoft Entra ID (cloud), depending on configuration.
 1. The expiration timestamp is stored locally and used to determine when the next rotation is needed.
 

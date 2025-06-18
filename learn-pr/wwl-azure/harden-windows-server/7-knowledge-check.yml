@@ -34,7 +34,7 @@ quiz:
       explanation: "Incorrect. You should enable BitLocker on a PAW but using an Enterprise Root Certificate Authority with Encrypting File System doesn't increase the PAWs' security."
     - content: "Enable Windows Defender Credential Guard."
       isCorrect: true
-      explanation: "Correct. Windows Defender Credential Guard prevents malware from harvesting stored credentialsYou should block domain controllers from connecting to hosts on the internet, including those in Azure unless there is a specific reason to allow this communication.."
+      explanation: "Correct. Windows Defender Credential Guard prevents malware from harvesting stored credentials. You should block domain controllers from connecting to hosts on the internet, including those in Azure unless there is a specific reason to allow this communication."
     - content: "Ensure that all domain users can sign in to the PAW."
       isCorrect: false
       explanation: "Incorrect. Only users who need to perform administrative tasks should be able to sign into the PAW."
