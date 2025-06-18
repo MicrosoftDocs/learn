@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.wwl.discover-ai-leaders-nonprofit
+metadata:
+  title: Discover AI for Leaders in Nonprofit
+  description: Discover AI for Leaders in Nonprofit
+  ms.date: 06/18/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: learning-path
+title: Discover AI for Leaders in Nonprofit
+prerequisites: |
+  -   Basic understanding of nonprofit concepts.
+summary: |
+  In this learning path, nonprofit business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and nonprofit use cases.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+products:
+- azure-openai
+- fabric
+- industry-solutions
+- microsoft-365-copilot
+- power-apps
+subjects:
+- artificial-intelligence
+- generative-ai
+modules:
+- learn.wwl.leverage-ai-tools
+- learn.wwl.create-business-value
+- learn.wwl.embrace-responsible-ai-principles-practices
+- learn.wwl.scale-ai
+- learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit
+trophy:
+  uid: learn.wwl.discover-ai-leaders-nonprofit.trophy
