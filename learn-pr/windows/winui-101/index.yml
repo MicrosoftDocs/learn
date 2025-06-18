@@ -1,0 +1,142 @@
+### YamlMime:Module
+uid: learn.winui-101
+metadata:
+  title: Build your first Windows App by using WinUI & Windows App SDK
+  description: "Embark on your Windows development journey with this beginner-friendly course designed to get you up and running quickly. Learn how to set up a professional development environment using Visual Studio, understand the fundamentals of the WinUI3, Windows App SDK and CommunityToolkit, and grasp essential concepts of the MVVM architectural pattern. Through practical, hands-on experience building a simple word-guessing game, you'll gain the confidence and skills needed to start creating your own Windows applications. This course is perfect for aspiring Windows developers looking to build a solid foundation in modern development using cutting-edge tools and best practices."
+  ms.date: 3/17/2025               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  author: chatasweetie        # GitHub ID of the Microsoft employee either authoring or project-managing this content
+  ms.author: jearleycha             # Alias     of the Microsoft employee either authoring or project-managing this content
+  ms.topic: module-build-your-first # Please don't edit, used for our analytics
+### Keep either ms.prod or ms.service, but not both
+### The list of ms.prod    values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
+### The list of ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
+###  ms.prod: TODO
+  ms.service: windows-app-sdk
+###########################################################################
+###
+### Title must be "(verb) your first (thing) by using (product)"
+###
+title: Build your first Windows App by using WinUI & Windows App SDK
+###########################################################################
+###
+### Summary
+###
+### Length:
+###   - Write 2 sentences.
+###   - Total length should be 20-25 words; up to 35 is acceptable.
+###   - To keep it brief, avoid teaching, omit motivation, and remove "learn", "in this module", and title words.
+###
+### Sentence 1:
+###   Goal: Include key technologies
+###   Example (Logic Apps): "Define a workflow using built-in triggers, actions, and conditional operators."
+###
+### Sentence 2:
+###   Goal: Include key sub-tasks
+###   Example (Logic Apps): "Your workflow will run automatically when data is available, process the data in the cloud, record results in a database, and send email notifications."
+###
+### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
+###
+summary: "Create a Windows app using WinUI 3, Windows App SDK, and Community Toolkit in Visual Studio. Set up the development environment, and build a maintainable, testable, and scalable Windows applications using best practices in software architecture."
+###########################################################################
+###
+### Learning Objectives
+###
+### Write 3 Learning Objectives, one that fits each pattern shown below.
+###
+### Learning Objective 1:
+###   Goal: Align to the verb 'prepare' as in "plan or get things ready to do the exercise"
+###   Example (Logic Apps): "Design a workflow to solve a business problem."
+###
+### Learning Objective 2:
+###   Goal: Align to the verb 'apply' as in "do the task in the exercise"
+###   Example (Logic Apps): "Implement a workflow from the standard triggers and actions"
+###
+### Learning Objective 3:
+###   Goal: Align to the verb 'validate' as in "check your work"
+###   Example (Logic Apps): "Run a workflow in the cloud to validate the results"
+###
+### Notes:
+###   - The YAML element name here is 'abstract' but it must contain your Learning Objectives.
+###   - Do not edit the lead-in sentence ("By the end of this module, you'll be able to:").
+###   - Start each objective with an upper-case letter.
+###   - End each objective with a period.
+###
+### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main
+###
+abstract: |
+  By the end of this module, you'll be able to:
+    - Plan a basic Windows application project by setting up the development environment, enabling Developer Mode, installing Visual Studio with the correct workloads, and configuring NuGet packages.
+    - Build a basic Windows application using different software architecture.
+
+###########################################################################
+###
+### Prerequisites
+###   - The first prerequisite is "_Knowledge of what (product) is and how it works at the beginner level_"
+###   - Other than the required first prerequisite, others follow the standard guidance:
+###     - Avoid ambiguity, e.g. say "Ability to write HTML at a novice level" rather than "Familiarity with HTML".
+###     - Be concrete: e.g. say "Familiarity with programming concepts such as loops, conditionals and variables" rather than "Familiarity with programming concepts".
+###     - Do not mention or link to other content that teaches the required prerequisite skills.
+###     - If needed, include software setup requirements with setup links.
+###
+### Detailed guidance:
+###   https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main
+###
+prerequisites: |
+  - A GitHub account
+  - An understanding of the C# programming language and Extensible Application Markup Language (XAML) is helpful, but it isn't necessary.
+
+###########################################################################
+###
+### Replace with the custom module icon when available
+###
+iconUrl: /learn/achievements/winui-101-badge.svg
+###########################################################################
+###
+### Do not edit: level must be 'beginner'
+###
+levels:
+  - beginner
+###########################################################################
+###
+### Specify the target roles.
+###   - Set the 'roles' to match the role targeted by your hands-on exercise.
+###
+### Use value(s) from the role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
+###
+roles:
+  - developer
+###########################################################################
+###
+### Specify the covered product.
+### Use a value from the product taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product)
+###
+products:
+- windows
+- windows-app-sdk
+- winui
+###########################################################################
+###
+### Specify the subject areas.
+### Use value(s) from the subject taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject)
+###
+subjects:
+  - frontend-development
+  - backend-development
+###########################################################################
+###
+### The units will be populated automatically during scaffold generation.
+###
+units:
+- learn.winui-101.introduction
+- learn.winui-101.dev-set-up
+- learn.winui-101.build-view
+- learn.winui-101.select-random-word
+- learn.winui-101.add-alphabet-buttons
+- learn.winui-101.game-play
+- learn.winui-101.style
+- learn.winui-101.images
+- learn.winui-101.navigation
+- learn.winui-101.knowledge-check
+- learn.winui-101.summary
+badge:
+  uid: learn.winui-101.badge
