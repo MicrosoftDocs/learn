@@ -26,7 +26,6 @@ jobs:
 
 This example is using the `github.ref` context to check the branch that triggered the workflow. If the branch is `main`, the runner is executed and prints "Deploying to production server on branch $GITHUB_REF." The default environment variable `$GITHUB_REF` is used in the runner to refer to the branch. Notice that default environment variables are all uppercase where context variables are all lowercase.
 
-<!-- INFOMAGNUS UPDATES for sub OD 1.4.2 go here. Source Material: https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs -->
 
 ## Contextual information available in a workflow
 
@@ -90,7 +89,6 @@ The following table lists restrictions for each context and special function in 
 |`on.workflow_call.inputs.<inputs_id>.default` | `github`, `inputs`, `vars` | None |
 |`on.workflow_call.outputs.<output_id>.value` | `github`, jobs, `vars`, `inputs` | None |
 
-<!-- INFOMAGNUS 1.4.2 END
 
 ## Custom environment variables
 
@@ -109,7 +107,6 @@ jobs:
           First_Name: Mona
 ```
 
-<!-- INFOMAGNUS UPDATES for sub OD 1.4.3, 1.4.6, and 1.4.7 go here. Source Material: Infomagnus team to find source material and cite sources when they update material , https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables , https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-an-environment-variable -->
 ## Set custom environment variables in a workflow
 
 You can define environment variables that are scoped to the entire workflow by using `env` at the top level of the workflow file. Scope the contents of a job within a workflow by using `jobs.<job_id>.env`. You can scope an environment variable at a specific step within a job by using `jobs.<job_id>.steps[*].env`.
@@ -350,7 +347,6 @@ For example, a `GET` request to view a specific workflow run log follows this pa
 GET /repos/{owner}/{repo}/actions/runs/{run_id}/logs
 ```
 
-<!-- INFOMAGNUS UPDATES for sub OD 1.4.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material   https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app  ,  https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app-installation -->
 
 ## Identify when to use an installation token from a GitHub app
 

@@ -77,8 +77,6 @@ To learn more about npm, check out the npm documentation:
 
 A team of developers can benefit from using reusable workflows to streamline and standardize repeated automation steps. By using reusable workflows, you can reduce redundancy, improve maintainability, and ensure consistency across your continuous integration/continuous deployment (CI/CD) pipelines.
 
-<!-- InfoMagnus Starts -->
-<!-- INFOMAGNUS UPDATES for sub OD 1.5.9. Source Material: https://docs.github.com/en/actions/sharing-automations/reusing-workflows -->
 
 ## Avoid duplication by using reusable workflows
 
@@ -137,8 +135,6 @@ By understanding how reusable workflows function and their benefits, you can ado
 
 Reusable workflows are a powerful way to enforce consistency, reduce duplication, and scale DevOps practices in any engineering team. Whether you're managing a single repository, microservices, or open-source libraries, reusable workflows can simplify automation, so your CI/CD is faster, cleaner, and easier for you to manage.
 
-<!-- INFOMAGNUS UPDATES for sub OD 2.1.1, 2.1.2, 2.1.3, and 2.1.4 go here. Source Material: Infomagnus team to find source material and cite it.
-https://docs.github.com/en/actions/writing-workflows/about-workflows , https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs , https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/triggering-a-workflow , https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflows/viewing-workflow-run-history , https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/troubleshooting-workflows/about-troubleshooting-workflows -->
 
 ## Identify the event that triggered a workflow
 
@@ -406,12 +402,7 @@ test:
       CI: true
 ```
 
-<!-- INFOMAGNUS UPDATES for sub OD 2.2.1 go here. Source Material: Infomagnus team to find source material and cite sources when they update material 
-https://docs.github.com/en/actions/writing-workflows/about-workflows -->
 
-<!-- ## Locate a workflow in a repository -->
-
-<!-- InfoMagnus END -->
 
 ## Work with artifacts
 
