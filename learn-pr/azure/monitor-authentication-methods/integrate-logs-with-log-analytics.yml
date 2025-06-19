@@ -9,6 +9,7 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: unit
+  ms.custom: sfi-ga-nochange
 durationInMinutes: 20
 content: |
   [!include[](includes/integrate-logs-with-log-analytics.md)]

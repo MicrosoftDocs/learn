@@ -2,9 +2,11 @@
 uid: learn.wwl.azure-event-hubs.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 07/17/2024
+  ms.date: 06/16/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -12,7 +14,6 @@ metadata:
   - N/A
 durationInMinutes: 3
 quiz:
-  title: "Check your knowledge"
   questions:
   - content: "Which of the following Event Hubs concepts represents an ordered sequence of events that is held in an Event Hubs?"
     choices:
@@ -35,4 +36,26 @@ quiz:
       explanation: "Incorrect. Scale covers the number of consumers and taking ownership of reading partitions."
     - content: "Load balance"
       isCorrect: false
-      explanation: "Incorrect. Load balance increases or reduces the consumers dynamically."
+      explanation: "Incorrect. Load balance increases or reduces the consumers dynamically."
+  - content: "What is a key advantage of using Microsoft Entra ID with Azure Event Hubs?"
+    choices:
+    - content: "It allows storing credentials directly in the application code for easier access."
+      isCorrect: false
+      explanation: "Incorrect. Storing credentials in code is not recommended due to security risks."
+    - content: "It eliminates the need for OAuth 2.0 tokens for authentication."
+      isCorrect: false
+      explanation: "Incorrect. OAuth 2.0 tokens are still required for authentication with Microsoft Entra ID."
+    - content: "It removes the need to store credentials in the application code by using OAuth 2.0 tokens."
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra ID enables secure authentication without storing credentials in the code."
+  - content: "What is the purpose of the EventHubProducerClient in the Azure Event Hubs client library?"
+    choices:
+    - content: "To process events from an event hub using a consumer group."
+      isCorrect: false
+      explanation: "Incorrect. Processing events is the role of the EventHubConsumerClient or EventProcessorClient."
+    - content: "To publish events to an event hub, either to specific partitions or using automatic routing."
+      isCorrect: true
+      explanation: "Correct. The EventHubProducerClient is responsible for publishing events to an Event Hub."
+    - content: "To manage and monitor the partitions within an event hub."
+      isCorrect: false
+      explanation: "Incorrect. The EventHubProducerClient is not used for managing or monitoring partitions."

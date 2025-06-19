@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.enhance-your-linkedin-experience-section
+title: Enhance your LinkedIn experience section
+metadata:
+  title: Enhance Your LinkedIn Experience Section
+  description: Enhance your LinkedIn experience section to showcase your skills and achievements
+  ms.date: 05/09/2025
+  author: andrewbettany
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-enhance-your-linkedin-experience-section.md)]

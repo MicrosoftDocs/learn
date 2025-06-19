@@ -1,4 +1,3 @@
-
 GitHub Copilot is an AI coding partner that provides autocomplete suggestions while you code. You get suggestions from Copilot by typing code or describing it in natural language.
 
 Copilot analyses your file and related files, offering suggestions in your text editor. It uses OpenAI Codex, a new AI system developed by OpenAI, to help derive context from written code and comments, and then suggests new lines or entire functions.
@@ -25,4 +24,4 @@ After successfully finishing this module, you're capable of using a prompt to cu
 
 - Basic understanding of Python and text editors.
 - Basic comprehension of Git and GitHub Fundamentals. Particularly, running basic `git` commands like `git add` and `git push`.
-- A [GitHub account](https://github.com/login) with an active subscription for [GitHub Copilot](https://github.com/github-copilot/signup) is required for either your personal GitHub account or a GitHub account managed by an organization or enterprise. For learning, the Copilot Free option with usage limits should be sufficient.
+- A [GitHub account](https://github.com/login) with an active subscription for [GitHub Copilot](https://github.com/github-copilot/signup) is required for either your personal GitHub account or a GitHub account managed by an organization or enterprise. For learning purposes, the Copilot Free option with usage limits should be sufficient.
