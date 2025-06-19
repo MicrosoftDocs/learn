@@ -17,10 +17,10 @@ abstract: |
   - Use Microsoft Copilot to refine your LinkedIn headline and summary.
   - Create a strong summary of your qualifications and experience to showcase your strengths.
   - Optimize skills and endorsements to improve visibility.
-  - Generate and practice interview questions to boost confidence and performance 
+  - Generate and practice interview questions to boost confidence and performance. 
 prerequisites: |  
-  - Basic understanding of LinkedIn  
-  - Familiarity with AI concepts  
+  - Basic understanding of LinkedIn.
+  - Familiarity with AI concepts.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:  
   - beginner

@@ -25,3 +25,4 @@ This authentication mechanism also requires the webhook endpoint to return an HT
 > [!NOTE]
 > Using self-signed certificates for validation isn't supported. Use a signed certificate from a commercial certificate authority (CA) instead.
 
+
