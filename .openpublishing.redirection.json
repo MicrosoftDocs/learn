@@ -49216,6 +49216,151 @@
       "source_path": "learn-pr/sports-machine-learning/mixed-reality-for-sports-fans/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/2-set-up-local-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/3-prepare-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/4-create-machine-learning-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/5-machine-learning-create-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/6-create-starter-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/7-codetour.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/8-initialize-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/9-add-players-to-bench.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/10-add-stats-to-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/11-move-players.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/12-update-stats.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/13-finalize-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/14-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/15-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/2-set-up-local-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/3-find-missing-values.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/4-drop-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/5-check-for-outliers.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/6-check-data-distribution.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/7-discover-bimodal-populations.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/8-create-player-columns.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/9-impute-missing-data-part-1.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/10-impute-missing-data-part-2.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/11-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/12-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
