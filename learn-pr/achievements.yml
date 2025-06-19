@@ -5805,6 +5805,11 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.machine-learning.predictive-maintenance-model-builder.badge
+  type: badge
+  title: Train a machine learning model for predictive maintenance by using ML.NET Model Builder
+  summary: Train a machine learning model in Visual Studio with ML.NET by using Model Builder, which uses sensor data to detect whether a manufacturing device is broken.
+  iconUrl: /training/achievements/machine-learning/predictive-maintenance-model-builder.svg
 - uid: learn.machine-learning.introduction-clustering-models.badge
   type: badge
   title: Introduction to clustering models by using R and tidymodels
