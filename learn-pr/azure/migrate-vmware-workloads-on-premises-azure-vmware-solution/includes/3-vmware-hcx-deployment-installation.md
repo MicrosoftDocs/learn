@@ -22,7 +22,7 @@ Before you deploy VMware HCX Connector in the on-premises vCenter Server, downlo
 
 1. Within the Azure VMware Solution resource, under **Manage**, select **Add-ons** again.
 
-1. In the **Migration using HCX** tab, you should now have **HCX plan**, **Configure HCX appliance** and **Connect with on-premise using HCX keys**. These new options for configuration were built out during the HCX deployment on the private cloud.
+1. In the **Migration using HCX** tab, you should now have **HCX plan**, **Configure HCX appliance**, and **Connect with on-premise using HCX keys**. These new options for configuration were built out during the HCX deployment on the private cloud.
 
     :::image type="content" source="../media/3-migration-vmware-hcx-configured.png" alt-text="Screenshot showing that the VMware HCX add-on is enabled and that there are more options to configure after the add-on finishes installing."lightbox="../media/3-migration-vmware-hcx-configured.png":::
 
