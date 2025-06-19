@@ -48858,6 +48858,66 @@
       "redirect_document_id": false
     },
     {
+        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/2-conceptual-overview.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/3-about-progressive-web-apps.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/4-scaffold.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/5-about-custom-vision-ai.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/6-train-model-build-inference-interface.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/7-about-github-actions.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/8-publish-deploy-github-action.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/9-test-progressive-web-app.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/10-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/11-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-language/csharp-if-elseif-else/4-challenge.md",
       "redirect_url": "/training/modules/csharp-if-elseif-else/4-exercise-challenge-apply-business-rules",
       "redirect_document_id": false
@@ -49021,7 +49081,7 @@
       "source_path": "learn-pr/machine-learning/explore-analyze-data-with-r/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-        },
+    },
     {
       "source_path": "learn-pr/machine-learning/introduction-regression-models/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
