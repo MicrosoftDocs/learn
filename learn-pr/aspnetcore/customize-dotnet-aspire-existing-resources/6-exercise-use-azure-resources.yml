@@ -8,6 +8,7 @@ metadata:
   ms.author: casoper
   ms.date: 8/20/2024
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-use-azure-resources.md)]
