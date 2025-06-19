@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: unit
+  ms.custom: sfi-ga-nochange
 durationInMinutes: 4
 content: |
   [!include[](includes/3-implement-microsoft-purview-audit.md)]

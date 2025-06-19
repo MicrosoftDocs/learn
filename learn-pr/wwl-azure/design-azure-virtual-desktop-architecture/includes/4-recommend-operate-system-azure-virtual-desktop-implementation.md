@@ -16,3 +16,4 @@ You can install the client for the current user, which doesn't require admin rig
 Once installed, the client can be launched from the Start menu by searching for **Remote Desktop**.
 
 Azure Virtual Desktop doesn't support the RemoteApp and Desktop Connections (RADC) client or the Remote Desktop Connection (MSTSC) client.
+

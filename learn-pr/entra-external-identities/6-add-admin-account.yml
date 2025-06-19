@@ -9,6 +9,7 @@ metadata:
   ms.author: lipar
   ms.topic: unit
   zone_pivot_groups: microsoft-entra-external-identities-configuration-options
+  ms.custom: sfi-ga-nochange
 durationInMinutes: 10
 content: |
   [!include[](includes/6-add-admin-account.md)]
