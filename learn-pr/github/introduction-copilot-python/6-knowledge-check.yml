@@ -6,7 +6,7 @@ metadata:
   description: Review the differences in GitHub Copilot and Prompt engineering
   author: bethanyjep
   ms.author: bethanycheum
-  ms.date: 06/25/2024
+  ms.date: 06/11/2025
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot
@@ -20,7 +20,7 @@ quiz:
     - content: "GitHub Copilot uses prompts and natural language text that you type to provide coding suggestions."
       isCorrect: true
       explanation: "Correct! GitHub Copilot is trained on billions of lines of code. It turns natural language prompts into coding suggestions across dozens of languages."
-    - content: "GitHub Copilot uses lights, that you type, and it provides suggestions based on what you type."
+    - content: "GitHub Copilot uses highlights, that you select, and it provides suggestions based on what you highlight."
       isCorrect: false
       explanation: "GitHub Copilot uses prompts and natural language text that you type to provide coding suggestions."
     - content: "GitHub Copilot uses radio language, that you type, and it provides suggestions based on what you type."
@@ -28,15 +28,15 @@ quiz:
       explanation: "GitHub Copilot doesn't use radio language."
   - content: "What are some GitHub Copilot Free features?"
     choices:
-    - content: "It's a free unrestrticted AI tool that works independent of code editors."
+    - content: "It's a free unrestricted AI tool that works independent of code editors."
       isCorrect: false
       explanation: "Incorrect. GitHub Copilot Free has a quota for code completions and chat messages."
     - content: "It provides several suggestions and chats per month directly in your IDE and on github.com."
       isCorrect: true
-      explanation: "Correct. It also supports multi-file editing and and switching models!"
-    - content: "An option to enable slower responses, preservering your Copilot Pro quota."
+      explanation: "Correct. It also supports multi-file editing and switching models!"
+    - content: "An option to enable slower responses, preserving your Copilot Pro quota."
       isCorrect: false
-      explanation: "Incorrect. Copilot Free has quoat restrictions. Copilot Pro provides unlimited code suggestions and chat."
+      explanation: "Incorrect. Copilot Free has quota restrictions. Copilot Pro provides unlimited code suggestions and chat."
   - content: "How can you accept GitHub Copilot's suggestions?"
     choices:
     - content: "Press the <kbd>Tab</kbd> key."
@@ -67,6 +67,6 @@ quiz:
     - content: "How well your extensions were installed."
       isCorrect: false
       explanation: "False. It doesn't depend on how well your extensions were installed."
-    - content: "How well you crafted your prompt."
+    - content: "How well you craft your prompt."
       isCorrect: true
       explanation: "Designing an effective prompt is, therefore, crucial in ensuring we achieve our desired outcomes. You need to detail your prompt as much as possible."

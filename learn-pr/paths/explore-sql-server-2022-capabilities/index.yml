@@ -30,8 +30,6 @@ products:
 modules:
 - learn.introduction-to-sql-server-2022
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022
-- learn.sql-server-2022-performance-enhancements
-- learn.sql-server-2022-security-scalability-availability
 - learn.sql-server-2022-data-virtualization
 - learn.introduction-sql-server-2022-t-sql-enhancements
 trophy:

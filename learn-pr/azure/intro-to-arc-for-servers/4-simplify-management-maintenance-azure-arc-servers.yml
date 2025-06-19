@@ -9,7 +9,7 @@ metadata:
   ms.author: jenhayes
   ms.topic: unit
   ms.custom: e2e-hybrid
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
   [!include[](includes/4-simplify-management-maintenance-azure-arc-servers.md)]
 quiz:
@@ -23,18 +23,18 @@ quiz:
     - content: "Use Windows Admin Center to connect to each server."
       isCorrect: false
       explanation: "Incorrect. While it's possible to identify the required information, this would require extra administrative effort."
-    - content: "Use the Azure Arc-enabled servers blade in the Azure portal."
+    - content: "Use the Azure Arc-enabled servers pane in the Azure portal."
       isCorrect: true
-      explanation: "Correct. The blade allows the administrator to readily identify the OS build and OS version. The blade also includes server name, manufacturer, model, serial number, the number of CPU cores, and the amount of memory."
-  - content: "What is the primary Azure Monitor-related benefit of Azure Arc-enabled servers compared with non Azure Arc-enabled servers?"
+      explanation: "Correct. This pane lets you easily identify a server's operating system and version."
+  - content: "Which of these can be used to automatically respond to security incidents for your Arc-enabled servers?"
     choices:
-    - content: "The ability to capture diagnostic logs."
+    - content: "Microsoft Sentinel."
       isCorrect: false
-      explanation: "Incorrect. This functionality is available for both Azure Arc-enabled servers and machines that aren't Azure Arc-enabled."
-    - content: "The ability to generate alerts."
+      explanation: "Correct. Microsoft Sentinel can respond to incidents with built-in orchestration and automation of common tasks."
+    - content: "Azure Monitor."
       isCorrect: false
-      explanation: "Incorrect. This functionality is available for both Azure Arc-enabled servers and machines that aren't Azure Arc-enabled."
-    - content: "The ability to deploy and configure the Azure Monitor Agent via VM extensions."
+      explanation: "Incorrect. Azure Monitor is a solution for collecting, analyzing, and responding to telemetry data."
+    - content: "Log Analytics workspace."
       isCorrect: true
-      explanation: "Correct. VM extensions are not available for non-Azure machines that aren't Azure Arc-enabled."
+      explanation: "Incorrect. A Log Analytics workspace is a data store for data you collect."
 

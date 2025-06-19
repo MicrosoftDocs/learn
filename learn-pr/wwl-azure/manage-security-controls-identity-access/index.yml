@@ -3,9 +3,9 @@ uid: learn.wwl.manage-security-controls-identity-access
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Manage security controls for identity and access
+  title: Manage Security Controls for Identity and Access
   description: "This module focuses on effectively managing security controls in Microsoft Entra ID by securing identities, authentication, and authorization to protect users, groups, and external identities against threats while ensuring secure and seamless access to resources."
-  ms.date: 04/11/2025
+  ms.date: 06/13/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module
@@ -82,8 +82,6 @@ units:
 - learn.wwl.manage-security-controls-identity-access.built-roles-microsoft-entra-id
 - learn.wwl.manage-security-controls-identity-access.microsoft-entra-role-based-access-control
 - learn.wwl.manage-security-controls-identity-access.create-new-custom-roles-microsoft-entra-id
-- learn.wwl.manage-security-controls-identity-access.microsoft-entra-permissions-management
-- learn.wwl.manage-security-controls-identity-access.enable-microsoft-entra-permissions-management-organization
 - learn.wwl.manage-security-controls-identity-access.zero-trust-security
 - learn.wwl.manage-security-controls-identity-access.microsoft-entra-privileged-identity-management
 - learn.wwl.manage-security-controls-identity-access.configure-privileged-identity-management
@@ -95,6 +93,7 @@ units:
 - learn.wwl.manage-security-controls-identity-access.access-reviews
 - learn.wwl.manage-security-controls-identity-access.configure-role-management-access-reviews-microsoft-entra-id-governance
 - learn.wwl.manage-security-controls-identity-access.conditional-access
+- learn.wwl.manage-security-controls-identity-access.understand-azure-lighthouse
 - learn.wwl.manage-security-controls-identity-access.knowledge-check
 - learn.wwl.manage-security-controls-identity-access.summary
 badge:

@@ -15,7 +15,7 @@ Your web applications deal with user accounts and data, but how do you securely 
 
 ### Encryption
 
-To securely encrypt a value like a string or integer, you can use symmetric or asymmetric encryption. To encrypt data with a symmetric-key algorithm, you can use the Advanced Encryption Standard (AES). In the next example, we create new instance of the `Aes` class and use it to generate a new key and initialization vector (IV).​ We use the AES to encrypt any type of managed stream. The stream is then wrapped with `CryptoStream`.
+To securely encrypt a value like a string or integer, you can use symmetric or asymmetric encryption. To encrypt data with a symmetric-key algorithm, you can use the Advanced Encryption Standard (AES). In the next example, we create a new instance of the `Aes` class and use it to generate a new key and initialization vector (IV).​ We use the AES to encrypt any type of managed stream. The stream is then wrapped with `CryptoStream`.
 
  ```csharp
 Aes aes = Aes.Create();​
