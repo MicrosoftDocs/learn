@@ -79,3 +79,4 @@ To enable all features of Azure Monitor for monitoring a virtual machine, you ne
     Metrics explorer for guest.Metrics alerts for guest.
   :::column-end:::
 :::row-end:::
+
