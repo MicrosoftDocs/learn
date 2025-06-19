@@ -49,8 +49,8 @@ In this task, you start your exploration in the home menu.
     1. From the agents page, look for the tile labeled, **Conditional Access Optimization Agent**. This is an agent that works within Microsoft Entra.
         1. Select **Manage in Entra**. A new browser tab opens to Microsoft Entra. 
         1. The Security Copilot agents page shows a tile for the currently available agent, select **View details**.
-        1. The Overview tab shows information about the agent, recent suggestions and recent activity. 
-        1. Return to the **Microsoft Security Copilot** browser tab to continue your exploration of Security Copilot.
+        1. The Overview tab shows information about the agent, recent suggestions and recent activity.
+        1. Return to the **Microsoft Security Copilot** browser tab to continue your exploration of Security Copilot. You can close the browser tab for the Conditional Access Optimization Agent.
     1. More detailed exploration of both the Threat Intelligence Briefing Agent and the Conditional Access Optimization Agent is available in the module titled, Describe Microsoft Security Copilot agents, for which there's a link in the summary unit of this module.
 
 1. Select the **Home menu icon** then select **Owner settings**. These settings are available to you as a Copilot owner. A Copilot contributor doesn't have access to these menu options.
