@@ -5,6 +5,11 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.azure.characterize-dataset-azure-data-explorer.badge
+  type: badge
+  title: Characterize an unfamiliar dataset with Azure Data Explorer
+  summary: Learn how to characterize an unfamiliar dataset using Azure Data Explorer. 
+  iconUrl: /training/achievements/azure-data-explore-web.svg
 - uid: learn.visualize-data-workbooks.badge
   type: badge
   title: Visualize data combined from multiple data sources by using Azure Monitor Workbooks
@@ -5805,6 +5810,36 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.sports-machine-learning.use-mixed-reality-toolkit.badge
+  type: badge
+  title: Create a mixed reality basketball player lineup with the Mixed Reality Toolkit
+  summary: "Use C#, Visual Studio, Unity, and the Mixed Reality Toolkit to create an interactive virtual reality experience compatible with the HoloLens. Inspired by *Space Jam: A New Legacy*, you create an experience for coaches and fans to learn more about the Tune Squad."
+  iconUrl: /training/achievements/student-evangelism/create-mixed-reality-basketball-lineup-mixed-reality-toolkit.svg
+- uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.badge
+  type: badge
+  title: Create a web app that uses data to make decisions on the basketball court
+  summary: "Use JavaScript, Azure, GitHub, and Visual Studio Code to write a web app that helps the Tune Squad coach make data-based decisions on the basketball court, inspired by SPACE JAM: A NEW LEGACY."
+  iconUrl: /training/achievements/student-evangelism/optimize-basketball-player-rest-breaks.svg
+- uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.badge
+  type: badge
+  title: Predict basketball player efficiency ratings by using machine learning and Visual Studio Code
+  summary: "By using anonymized data from real and animated basketball players in the upcoming film *Space Jam: A New Legacy*, create a machine learning model to cleanse data to be used during games. Also explore bimodal data distributions by using Python in Visual Studio Code."
+  iconUrl: /training/achievements/student-evangelism/predict-basketball-player-efficiency-ratings.svg
+- uid: learn.optimize-basketball-games-with-machine-learning.trophy
+  type: trophy
+  title: "Use basketball stats to optimize game play with Visual Studio Code, inspired by SPACE JAM: A NEW LEGACY"
+  summary: "Inspired by the new film _Space Jam: A New Legacy_, this learning path shows basketball fans how an understanding of data science and coding can support their passions, create opportunities, and even open doors to possible careers. Develop skills in Visual Studio Code, Azure, GitHub, JavaScript, and Python, to gain insights into how individual moments throughout a player's history can lead to a critical game decision in the finals."
+  iconUrl: /training/achievements/student-evangelism/optimize-basketball-games-with-machine-learning.svg
+- uid: learn.sports-machine-learning.mixed-reality-for-sports-fans.badge
+  type: badge
+  title: Prepare to bring the basketball court into a Mixed Reality space
+  summary: "Discover the fundamentals of Mixed Reality and prepare the resources you need to create an interactive experience for basketball fans and coaches inspired by *Space Jam: A New Legacy*."
+  iconUrl: /training/achievements/mixed-reality-for-sports-fans.svg
+- uid: learn.machine-learning.predictive-maintenance-model-builder.badge
+  type: badge
+  title: Train a machine learning model for predictive maintenance by using ML.NET Model Builder
+  summary: Train a machine learning model in Visual Studio with ML.NET by using Model Builder, which uses sensor data to detect whether a manufacturing device is broken.
+  iconUrl: /training/achievements/machine-learning/predictive-maintenance-model-builder.svg
 - uid: learn.machine-learning.introduction-clustering-models.badge
   type: badge
   title: Introduction to clustering models by using R and tidymodels

@@ -2,14 +2,16 @@
 uid: learn.wwl.design-azure-virtual-desktop-architecture.experience-estimator
 title: Azure Virtual Desktop Experience Estimator
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Virtual Desktop Experience Estimator
   description: "Azure Virtual Desktop Experience Estimator"
-  ms.date: 08/01/2022
+  ms.date: 06/19/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-azure-virtual-desktop-experience-estimator.md)]
+  [!include[](includes/3-azure-virtual-desktop-experience-estimator.md)]

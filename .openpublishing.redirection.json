@@ -41,6 +41,66 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/2-exercise-connect-to-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/3-characterize-data.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/4-exercise-inventory-data.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/5-explore-data-structure-queries.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/6-exercise-queries-explore.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/7-exercise-query-trends.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/8-exercise-share-query.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.azure.characterize-dataset-azure-data-explorer.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
+      "redirect_document_id": false
+    },    
+    {
       "source_path_from_root": "/learn-pr/achievements/learn.analyze-infrastructure-with-azure-monitor-logs.badge.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
       "redirect_document_id": false
@@ -49114,6 +49174,311 @@
     },
     {
       "source_path": "learn-pr/machine-learning/introduction-clustering-models/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/2-what-is-model-builder.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/3-choose-scenario-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/4-train-model-builder.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/5-exercise-train-model-builder.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/6-consume-model-builder.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/7-exercise-consume-model-builder.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/knowledge-check-model-builder.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/knowledge-check-scenario-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/predictive-maintenance-model-builder/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/optimize-basketball-games-with-machine-learning/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/mixed-reality-for-sports-fans/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/mixed-reality-for-sports-fans/2-mixed-reality-for-sports.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/mixed-reality-for-sports-fans/3-the-tools.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/mixed-reality-for-sports-fans/4-the-frameworks.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/mixed-reality-for-sports-fans/5-the-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/mixed-reality-for-sports-fans/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/mixed-reality-for-sports-fans/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/mixed-reality-for-sports-fans/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/2-set-up-local-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/3-prepare-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/4-create-machine-learning-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/5-machine-learning-create-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/6-create-starter-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/7-codetour.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/8-initialize-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/9-add-players-to-bench.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/10-add-stats-to-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/11-move-players.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/12-update-stats.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/13-finalize-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/14-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/15-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/2-set-up-local-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/3-find-missing-values.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/4-drop-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/5-check-for-outliers.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/6-check-data-distribution.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/7-discover-bimodal-populations.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/8-create-player-columns.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/9-impute-missing-data-part-1.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/10-impute-missing-data-part-2.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/11-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/12-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+     },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/2-set-up-project.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/3-configure-unity-for-toolkit.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/4-create-player-button.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/5-add-button-ui.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/6-create-player-stats-card.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/7-add-stats-card-ui.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/8-configure-button-pressed-events.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/9-add-players-to-scene.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
     }
