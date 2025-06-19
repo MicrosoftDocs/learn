@@ -49541,6 +49541,81 @@
       "source_path": "learn-pr/language/react-get-started/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/2-understanding-ef-core.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/3-migrations.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/4-interacting-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/5-test-db-operations.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/6-reverse-engineering.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio-azure-web-apps/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio-azure-web-apps/2-remote-debugging-concepts.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio-azure-web-apps/3-deploy-the-app-to-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio-azure-web-apps/4-attach-to-process.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio-azure-web-apps/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio-azure-web-apps/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio-azure-web-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
     }
   ]
 }
