@@ -1,16 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.discover-azure-message-queue.exercise-send-receive-message-from-service-bus-queue-by-using-net
-title: 'Exercise: Send and receive message from a Service Bus queue by using .NET.'
+title: Exercise - Send and receive messages from Azure Service Bus
 metadata:
-  title: 'Exercise: Send and receive message from a Service Bus queue by using .NET.'
-  description: "Exercise: Send and receive message from a Service Bus queue by using .NET."
-  ms.date: 07/18/2024
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Send and receive messages from Azure Service Bus
+  description: "Exercise - Send and receive messages from Azure Service Bus"
+  ms.date: 06/16/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
   ms.custom:
-    - sfi-ropc-nochange
-    - N/A
+  - N/A
 durationInMinutes: 30
 content: |
-  [!include[](includes/6-send-receive-messages-service-bus.md)]
+  [!include[](includes/6-send-receive-messages-service-bus.md)]
