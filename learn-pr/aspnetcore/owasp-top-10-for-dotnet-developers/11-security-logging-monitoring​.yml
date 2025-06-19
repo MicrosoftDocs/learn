@@ -4,7 +4,7 @@ title: Security logging and monitoring
 metadata:
   title: Security logging and monitoring
   description: "OWASP Top 10 for .NET Developers. Security logging and monitoring."
-  ms.date: 05/31/2024
+  ms.date: 06/18/2025
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: unit
@@ -15,12 +15,12 @@ content: |
 quiz:
   title: Check your knowledge
   questions:  
-  - content: "Which of these statements would you consider secure logging best practices?"
+  - content: "Which of these statements would you consider to be secure logging best practices?"
     choices:
     - content: "Log all events occurring in the system and store the logs in an easily accessible public location."
       isCorrect: false
       explanation: "Overlogging can add noise when diagnosing issues. Logs should be protected and not exposed to the public."
-    - content: "Log user and password of all failed authentication attempts."
+    - content: "Log the user and password of all failed authentication attempts."
       isCorrect: false
       explanation: "Not quite. Failed authentication attempts should be logged and audited. Logging passwords is a security risk."    
     - content: "Sanitize logs from sensitive information and guard access to logged information."
