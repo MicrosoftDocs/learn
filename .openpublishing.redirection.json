@@ -49646,6 +49646,96 @@
       "source_path": "learn-pr/language/react-work-with-components-and-data/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/2-clone-familiarize.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/3-refactor-to-signalr.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/4-validate-refactored-code.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/index.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/2-understand-aspnetcore-identity.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/3-add-identity.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/4-identity-customizations.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/5-customize-identity.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/6-multi-factor-authentication.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/7-configure-multi-factor-authentication.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/8-claims-policy-authorization.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/9-enable-claims-policy-authorization.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
     }
   ]
 }

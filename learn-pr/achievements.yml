@@ -5890,3 +5890,13 @@ achievements:
   title: Classify endangered bird species with Custom Vision
   summary: As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitat. Your work often involves surveying, recording, and reporting on bird activity. You want to build a machine learning model that will identify a bird in an image by species, to help with gathering data. In this module, you use Azure AI Custom Vision to create a model to identify species of birds!
   iconUrl: /training/achievements/advocates/cv-classify-bird-species.svg
+- uid: learn.secure-aspnet-core-identity.badge
+  type: badge
+  title: Secure a .NET web app with the ASP.NET Core Identity framework
+  summary: Add authentication and authorization to a web app using ASP.NET Core Identity, ASP.NET Core's native security framework.
+  iconUrl: /training/achievements/aspnetcore/secure-aspnet-core-identity.svg
+- uid: learn.aspnet-core-signalr-polling-fix.badge
+  type: badge
+  title: Replace client-side polling with ASP.NET Core SignalR
+  summary: In this module, you use ASP.NET Core SignalR to replace client-side polling functionality in an existing web app.
+  iconUrl: /training/achievements/generic-badge.svg
