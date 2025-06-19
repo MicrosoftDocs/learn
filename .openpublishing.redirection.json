@@ -49706,6 +49706,61 @@
       "source_path": "learn-pr/language/react-work-with-components-and-data/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/2-what-is-api.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/3-build-local-api.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/4-query-met-api.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/5-authentication-strategies.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/6-query-cooper-hewitt-api.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/7-handle-responses.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/8-use-libraries.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/9-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/10-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
     }
   ]
 }
