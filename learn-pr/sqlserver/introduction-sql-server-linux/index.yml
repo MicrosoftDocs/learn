@@ -2,8 +2,8 @@
 uid: learn-sqlserver.introduction-sql-server-linux
 metadata:
   title: Introduction to SQL Server on Linux 
-  description: In this module, you will learn about running SQL Server 2019 on Linux servers and containers.
-  ms.date: 04/25/2023
+  description: In this module, you learn about running SQL Server 2022 on Linux servers and containers.
+  ms.date: 06/03/2025
   author: rwestmsft
   ms.author: randolphwest
   manager: jroth

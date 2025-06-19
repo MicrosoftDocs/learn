@@ -3,23 +3,33 @@ uid: learn.wwl.hardening-windows-server
 metadata:
   title: Hardening Windows Server
   description: "Learn how to harden the security configuration of your Windows Server operating system environment. Secure administrative access to Privileged Access Workstations (PAWs), apply security baselines, and secure domain controllers and SMB traffic."
-  ms.date: 06/01/2022
+  ms.date: 06/18/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: windows-server
+  ai-usage: human-only
 title: Hardening Windows Server
 summary: Learn how to harden the security configuration of your Windows Server operating system environment. Secure administrative access to Privileged Access Workstations (PAWs), apply security baselines, and secure domain controllers and SMB traffic.
 abstract: |
   After completing this module, you will be able to:
-  *   Manage local administrator passwords using Local Administrator Password Solution
-  *   Limit administrative access to Privileged Access Workstations (PAWs)
-  *   Explain how to secure domain controllers from being compromised
-  *   Describe how to use the Microsoft Security Compliance Toolkit to harden servers
-  *   Secure SMB traffic using SMB encryption
+
+  -   Manage local administrator passwords using Local Administrator Password Solution
+
+  -   Limit administrative access to Privileged Access Workstations (PAWs)
+
+  -   Explain how to secure domain controllers from being compromised
+
+  -   Describe how to use the Microsoft Security Compliance Toolkit to harden servers
+
+  -   Secure SMB traffic using SMB encryption
 prerequisites: |
-  - Working knowledge of common Windows Server administration basics
-  - Experience with managing Active Directory Domain Services
+  -   Working knowledge of common Windows Server administration basics
+
+  -   Experience with managing Active Directory Domain Services
 iconUrl: /training/achievements/9-hardening-windows-server.svg
 hidden: true
 levels:

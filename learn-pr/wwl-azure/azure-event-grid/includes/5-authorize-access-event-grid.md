@@ -24,4 +24,5 @@ You must have the **Microsoft.EventGrid/EventSubscriptions/Write** permission on
 | Topic Type | Description |
 |--|--|
 | System topics | Need permission to write a new event subscription at the scope of the resource publishing the event. The format of the resource is: `/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider}/{resource-type}/{resource-name}` |
-| Custom topics | Need permission to write a new event subscription at the scope of the event grid topic. The format of the resource is: `/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.EventGrid/topics/{topic-name}` |
+| Custom topics | Need permission to write a new event subscription at the scope of the Event Grid topic. The format of the resource is: `/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.EventGrid/topics/{topic-name}` |
+

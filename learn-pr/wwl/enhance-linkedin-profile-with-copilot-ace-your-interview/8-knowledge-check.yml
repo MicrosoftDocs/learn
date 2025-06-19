@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.knowledge-check
+title: "Module assessment"
+metadata:
+  title: Module assessment for Enhance Your LinkedIn Profile with Microsoft Copilot and Ace Your Interview
+  description: Knowledge check for the Enhance Your LinkedIn Profile with Microsoft Copilot and Ace Your Interview module.
+  ms.date: 05/09/2025
+  author: andrewbettany
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Why is an optimized LinkedIn profile important for students?"
+      choices:
+        - content: "It increases visibility to recruiters and potential employers."
+          isCorrect: true
+        - content: "It ensures only friends and classmates can view your profile."
+          isCorrect: false
+        - content: "It automatically applies for jobs on your behalf."
+          isCorrect: false
+    - content: "What is an effective way to strengthen your LinkedIn Experience section?"
+      choices:
+        - content: "Listing only job titles without descriptions."
+          isCorrect: false
+        - content: "Highlighting skills, achievements, and using action-oriented language."
+          isCorrect: true
+        - content: "Avoiding updates after creating the initial profile."
+          isCorrect: false
+    - content: "How can endorsements improve your LinkedIn profile?"
+      choices:
+        - content: "They allow recruiters to send job offers directly."
+          isCorrect: false
+        - content: "They make your profile private to select users."
+          isCorrect: false
+        - content: "They validate your skills and increase credibility."
+          isCorrect: true

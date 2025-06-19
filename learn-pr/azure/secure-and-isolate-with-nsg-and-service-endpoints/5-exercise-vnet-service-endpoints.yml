@@ -8,6 +8,7 @@ metadata:
   ms.author: allensu
   ms.topic: unit
   ms.custom:
+    - sfi-ropc-nochange
     - devx-track-azurecli
 title: Exercise - Restrict access to Azure Storage by using service endpoints
 durationInMinutes: 10

@@ -1,6 +1,3 @@
-
-
-
 The Contoso Pets application is used to help find new homes for abandoned pets. Your goal in this challenge is to develop the application features used to ensure that you have a completed dataset for each animal in the ourAnimals array.
 
 ## Specification
@@ -20,8 +17,8 @@ This feature must:
 
 - Enforce the following validation rules for animalPhysicalDescription:
 
-    - Values cannot be null.
-    - Values cannot have zero characters.
+    - Values can't be null.
+    - Values can't have zero characters.
     - Any further restriction is up to the developer.
 
 - Inform the application user when all data requirements are met, pausing the application to ensure the message can be seen and responded to.
@@ -33,7 +30,7 @@ To validate that your code satisfies the specified requirements, complete the fo
 1. Use Visual Studio Code to build and run your app.
 
     > [!NOTE]
-    > You can exit the verification test before completing all of the verification steps if see a result that does not satisfy the specification requirements. To force an exit from the running program, in the Terminal panel, press **Ctrl-C**. After exiting the running app, complete the edits that you believe will address the issue you are working on, save your updates to the Program.cs file, and then re-build and run your code.
+    > You can exit the verification test before completing all of the verification steps if you see a result that doesn't satisfy the specification requirements. To force an exit from the running program, in the Terminal panel, press **Ctrl-C**. After exiting the running app, complete the edits that you believe will address the issue you're working on, save your updates to the Program.cs file, and then re-build and run your code.
 
 1. At the Terminal command prompt, enter **3**
 
