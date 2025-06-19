@@ -5,6 +5,11 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.azure.characterize-dataset-azure-data-explorer.badge
+  type: badge
+  title: Characterize an unfamiliar dataset with Azure Data Explorer
+  summary: Learn how to characterize an unfamiliar dataset using Azure Data Explorer. 
+  iconUrl: /training/achievements/azure-data-explore-web.svg
 - uid: learn.visualize-data-workbooks.badge
   type: badge
   title: Visualize data combined from multiple data sources by using Azure Monitor Workbooks
