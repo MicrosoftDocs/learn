@@ -5,17 +5,16 @@ In this exercise, you explore all the key landmarks in the landing page of the s
 **As you explore, keep in mind that unless otherwise stated, the information displayed and the configuration settings are for the currently selected workspace**. For this exercise, all your exploration is done in the SecurityCopilot_Workspace, which is shown at the top of the page, next to where it says Microsoft Security Copilot.
 
 > [!NOTE]
-> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message displays stating, "This feature isn't available within the simulation." When this occurs, select OK and continue the exercise steps. 
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message displays stating, "This feature isn't available within the simulation." When this occurs, select OK and continue the exercise steps.
 >
 >
 >:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
-
 
 ### Exercise
 
 For this exercise, you're logged in as Avery Howard and have the Copilot owner role for the active workspace, SecurityCopilot_Workspace. In this exercise, you explore the standalone experience of Microsoft Security Copilot.
 
-This exercise should take approximately **15** minutes to complete.
+This exercise should take approximately **30** minutes to complete.
 
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
@@ -24,16 +23,15 @@ This exercise should take approximately **15** minutes to complete.
 
 In this task, you start your exploration in the home menu. 
 
-1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/7608581a-ee3a-4fe0-be03-309a58b78c60?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/89a569ee-e0be-42cc-8ca8-5e375cd9f043?token=16d48b6c-eace-4a1f-8050-098d29d23a89&azure-portal=true)**.
 
 1. Select the **Menu** icon ![home menu icon](../media/home-menu-icon.png), which is sometimes referred to as the hamburger icon.
 
 1. Select **My sessions** and note the available options. 
     1. Select recent to view the most recent sessions
     1. Select filter and note the available options, then close the filer.
-    1. Select the home menu icon to open the home menu.
 
-1. Select **Promptbook library**. 
+1. Select the **Home menu icon** then select **Promptbook library**.
     1. Select My promptbooks. A subsequent task dives deeper into promptbooks.
     1. Select Woodgrove.
     1. Select Microsoft.
@@ -41,9 +39,21 @@ In this task, you start your exploration in the home menu.
         1. Select the Tag drop-down, then scroll-down and select cveid.
         1. Select Apply. Note: If you don't see the Apply button, use your mouse to select the space outside of the drop-down, then select Apply.
         1. To clear that filter, select the X next to cveid.
-    1. Select the home menu icon to open the home menu.
 
-1. Select **Owner settings**. These settings are available to you as a Copilot owner. A Copilot contributor doesn't have access to these menu options.
+1. Select the **Home menu icon** then select **Agents**. Although some agents operate in the Copilot standalone experience and some are embedded in specific solutions, such as Microsoft Entra, general information about any Copilot Agent can be accessed through the standalone portal.
+    1. Let’s start by looking at an agent that currently operates only in the standalone Copilot experience. Look for the tile labeled, **Threat Intelligence Briefing Agent**, then select **Go to agent**.
+        1. Review the information on the agent’s page. 
+        1. The left side of the page provides information on the trigger, permissions, identity, and role-based access for the agent.
+        1. The center portion of the page shows all the agent’s activity, including start time, method used to run the agent (automatic trigger or manual trigger), and the status. Select a line item that shows as **Completed** to view the report. The first section of the report is the **Input**. Expand the down arrow to view the inputs used for this run. The next section of the report shows the **Results**. Scroll down to view the report.
+        1. From the breadcrumb, select **Agents** to return to the agents page.
+    1. From the agents page, look for the tile labeled, **Conditional Access Optimization Agent**. This is an agent that works within Microsoft Entra.
+        1. Select **Manage in Entra**. A new browser tab opens to Microsoft Entra. 
+        1. The Security Copilot agents page shows a tile for the currently available agent, select **View details**.
+        1. The Overview tab shows information about the agent, recent suggestions and recent activity. 
+        1. Return to the **Microsoft Security Copilot** browser tab to continue your exploration of Security Copilot.
+    1. More detailed exploration of both the Threat Intelligence Briefing Agent and the Conditional Access Optimization Agent is available in the module titled, Describe Microsoft Security Copilot agents, for which there's a link in the summary unit of this module.
+
+1. Select the **Home menu icon** then select **Owner settings**. These settings are available to you as a Copilot owner. A Copilot contributor doesn't have access to these menu options.
 
     1. Azure resource links: This section includes information that shows the capacity assigned to the specific workspace. 
         1. Selecting the Switch capacity button opens a window where you as the owner could select another available capacity. For this simulation, there's no other preconfigured capacity.
@@ -55,9 +65,8 @@ In this task, you start your exploration in the home menu.
     1. Help improve Copilot - Select the information icon next to each configurable item. Configure the toggle buttons as desired
     1. Logging audit data in Microsoft Purview - Review the description. This setting applies to all workspaces for the tenant in which you are using Copilot. Select the information icon next to the toggle for an information tip. Configure as desired.
     1. Files - using File uploads is one of the mechanisms by which you can integrate your organization’s knowledge base as another source of information. Select the drop-down arrow to view options for who can upload files. Configure as desired.
-    1. Select the home menu icon to open the home menu.
 
-1. Select **Plugin settings**
+1. Select the **Home menu icon** then select **Plugin settings**
 
     1. For plugins for Security Copilot, select the drop-down for Who can add and manage their own custom plugins to view the available options. Select each available option to see how it impacts the option below.
     1. Select drop-down for Who can add and manage custom plugins for users of this workspace to view the available options. Note, this option is grayed out if Who can add and manage their own custom plugins is set to owners only.
@@ -67,18 +76,17 @@ In this task, you start your exploration in the home menu.
     1. Accessing data from Microsoft 365 services:
         1. Select the information icon to get information that describes the impact of this setting. With this toggle disabled, the Microsoft Purview plugin is not available to use. To ensure the use of the Purview plugin, this toggle must be enabled. You'll explore this more in the Purview unit. 
 
-1. Select **Role assignment**.
+1. Select the **Home menu icon** then select **Role assignment**.
     1. Select Add members, then close.
     1. Expand the Owner and Contributor roles. There are no users in the contributor role.
     1. Select the + Add recommended roles
         1. Review the description and expand each of the roles listed to view details.
         1. Select Add to add the recommended security roles, then select Ok. Once added, users in any of the roles included become Copilot contributors.
-    1. Select the home menu icon to open the home menu.
 
-1. Select **Manage workspaces**
+1. Select the **Home menu icon** then select **Manage workspaces**
     1. There's only one workspace available. Select the button on the top right corner of page that says + New workspace to view the parameters required. There's a subsequent exercise in this module that explores this option in more detail. Select Cancel.
 
-1. Select **Usage monitoring**.
+1. Select the **Home menu icon** then select **Usage monitoring**.
     1. Hovering over any of the blue bars in the bar graph opens a small window with information.
     1. Note the information available for each session.
     1. There are several options for filtering on the usage monitoring dashboard
@@ -86,7 +94,7 @@ In this task, you start your exploration in the home menu.
         1. Other filtering options are available by selecting the filter icon next to the date filter. This opens many other filter options, including Users, Plugins used, type, and category. Expand each to view available options. For this simulation, filter options won't be applied. Select Cancel.
     1. Select the home menu icon to open the home menu.
 
-1. Select **Settings**.
+1. Select the **Home menu icon** then select **Settings**.
     1. Select preferences. Scroll down to view available options.
     1. Select data and privacy.
     1. Select About.
@@ -102,7 +110,7 @@ In this task, you start your exploration in the home menu.
 
 In this task, you start exploration in the center portion of the landing page, where it says Prompts to try.
 
-1. If you previously closed the browser tab, reopen the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/7608581a-ee3a-4fe0-be03-309a58b78c60?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
+1. If you previously closed the browser tab, reopen the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/89a569ee-e0be-42cc-8ca8-5e375cd9f043?token=16d48b6c-eace-4a1f-8050-098d29d23a89&azure-portal=true)**.
 
 1. Note the options available beneath where it says Prompts to try. Here you can search for prompts or promptbooks, and based on the option you select you can filter for a specific role and/or plugin. In this simulation, you can filter for role or plugin. Filtering for both role and plugin is limited to the SOC Analyst role and the Microsoft Sentinel Plugin. Also, running a prompt or promptbook is not enabled. You will run prompts and promptbooks is subsequent exercises.
 1. Select **Prompts** to view available prompts. Selecting a prompt automatically updates the information displayed in the prompt bar. Select X to cancel. 
@@ -113,7 +121,7 @@ In this task, you start exploration in the center portion of the landing page, w
 
 At the bottom center of the page is the prompt bar. The prompt bar includes the prompts and sources icon, which you explore in this task. In subsequent exercises, you enter inputs directly in the prompt bar.
 
-1. If you previously closed the browser tab, reopen the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/7608581a-ee3a-4fe0-be03-309a58b78c60?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
+1. If you previously closed the browser tab, reopen the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/89a569ee-e0be-42cc-8ca8-5e375cd9f043?token=16d48b6c-eace-4a1f-8050-098d29d23a89&azure-portal=true)**.
 
 1. From the prompt bar, you can select the prompts icon to select a built-in prompt or a promptbook. Select the **prompts icon** ![prompts icon](../media/prompt-icon.png).
     1. Select **See all promptbooks**
