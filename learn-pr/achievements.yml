@@ -5810,6 +5810,36 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.student-evangelism.use-apis-discover-museum-art.badge
+  type: badge
+  title: Explore the art world by using RESTful APIs
+  summary: Learn about how to build a basic API, how to query APIs, and authentication strategies in Python and JavaScript while discovering unique art by using museum APIs.
+  iconUrl: /training/achievements/use-apis-discover-museum-art.svg
+- uid: learn.advocates.create-web-app-with-refreshable-models.badge
+  type: badge
+  title: Build a Web App with Refreshable Machine Learning Models
+  summary: Build a web app powered by machine learning models trained using Custom Vision AI service, and learn how to refresh them with GitHub Actions.
+  iconUrl: /training/achievements/advocates/create-web-app-with-refreshable-models.svg
+- uid: learn.language.react-work-with-components-and-data.badge
+  type: badge
+  title: Working with data and properties in React components
+  summary: The goal of React components is to create reusable blocks of code and UI. To support reusability, you can pass data into components through the use of properties. We will see how to add properties to a component, and work with complex data types such as arrays.
+  iconUrl: /training/achievements/react/react-components-data.svg
+- uid: learn.language.react-states-events.badge
+  type: badge
+  title: React state and events
+  summary: Applications typically involve data that will be changed by user interactions. These changes are often managed through some form of state and events. In this module, we explore the concepts of state and events. We also look at the tools React provides for management.
+  iconUrl: /training/achievements/react/react-state-events.svg
+- uid: learn.react.trophy
+  type: trophy
+  title: Creating your first web apps with React
+  summary: React.js is the most popular front-end JavaScript framework. Through JSX, a combination of HTML and JavaScript, developers are able to create views in a natural fashion. Developers can also create components for reusable blocks across their applications. This learning path will introduce you to React, and the core skills you need as a developer to use this powerful framework.
+  iconUrl: /training/achievements/react/react-path.svg
+- uid: learn.language.react-get-started.badge
+  type: badge
+  title: Get started with React
+  summary: React.js is the most popular front-end JavaScript framework. Developers use JSX, a combination of HTML and JavaScript, to create views in a natural way. Developers can also create components for blocks that can be reused across their applications. This module introduces React and the core skills developers need to use this powerful framework.
+  iconUrl: /training/achievements/react/react-get-started.svg
 - uid: learn.sports-machine-learning.use-mixed-reality-toolkit.badge
   type: badge
   title: Create a mixed reality basketball player lineup with the Mixed Reality Toolkit
