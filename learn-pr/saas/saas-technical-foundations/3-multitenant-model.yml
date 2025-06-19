@@ -8,6 +8,7 @@ metadata:
   author: kostinams
   ms.author: irkostin
   ms.topic: unit
+  ms.custom: sfi-ga-nochange
 durationInMinutes: 10
 content: |
   [!include[](includes/3-multitenant-model.md)]
