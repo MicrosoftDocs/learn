@@ -43,3 +43,4 @@ If an event processor disconnects from a partition, another instance can resume 
 ## Thread safety and processor instances
 
 By default, the function that processes the events is called sequentially for a given partition. Subsequent events and calls to this function from the same partition queue up behind the scenes as the event pump continues to run in the background on other threads. Events from different partitions can be processed concurrently and any shared state that is accessed across partitions have to be synchronized.
+

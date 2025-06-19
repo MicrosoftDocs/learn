@@ -8,8 +8,9 @@ metadata:
   ms.author: glenga
   ms.topic: unit
   ms.custom:
-    - devx-track-extended-java
+    - sfi-ropc-nochange
     - devx-track-js
+    - devx-track-extended-java
   zone_pivot_groups: dev-lang-javascript-powershell
 title: Exercise - Write data with output bindings
 #interactive: azure-portal

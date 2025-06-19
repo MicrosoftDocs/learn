@@ -151,7 +151,7 @@ The Azure Developer CLI (`azd`) is a command line tool that you can use to deplo
 1. To log into Azure, run this command, and then enter your Azure credentials:
 
     ```console
-    azd auth logon
+    azd auth login
     ```
 
 ## Initialize the deployment
