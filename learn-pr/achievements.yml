@@ -5810,6 +5810,16 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.react.trophy
+  type: trophy
+  title: Creating your first web apps with React
+  summary: React.js is the most popular front-end JavaScript framework. Through JSX, a combination of HTML and JavaScript, developers are able to create views in a natural fashion. Developers can also create components for reusable blocks across their applications. This learning path will introduce you to React, and the core skills you need as a developer to use this powerful framework.
+  iconUrl: /training/achievements/react/react-path.svg
+- uid: learn.language.react-get-started.badge
+  type: badge
+  title: Get started with React
+  summary: React.js is the most popular front-end JavaScript framework. Developers use JSX, a combination of HTML and JavaScript, to create views in a natural way. Developers can also create components for blocks that can be reused across their applications. This module introduces React and the core skills developers need to use this powerful framework.
+  iconUrl: /training/achievements/react/react-get-started.svg
 - uid: learn.sports-machine-learning.use-mixed-reality-toolkit.badge
   type: badge
   title: Create a mixed reality basketball player lineup with the Mixed Reality Toolkit

@@ -49481,6 +49481,66 @@
       "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/react/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/react-get-started/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/react-get-started/2-javascript-xml.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/react-get-started/3-clone-starter.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/react-get-started/4-hello-world-test.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/react-get-started/5-create-first-component.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/react-get-started/6-dynamic-data-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/react-get-started/7-add-style.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/react-get-started/8-project-from-scratch.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/react-get-started/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/react-get-started/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/react-get-started/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
