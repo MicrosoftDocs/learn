@@ -5865,3 +5865,13 @@ achievements:
   title: Classify endangered bird species with Custom Vision
   summary: As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitat. Your work often involves surveying, recording, and reporting on bird activity. You want to build a machine learning model that will identify a bird in an image by species, to help with gathering data. In this module, you use Azure AI Custom Vision to create a model to identify species of birds!
   iconUrl: /training/achievements/advocates/cv-classify-bird-species.svg
+- uid: learn.azure.create-your-first-text-to-speech-app.badge
+  type: badge
+  title: Create your first Azure AI services text to speech application
+  summary: Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure's text to speech features. In this module, you'll learn how to use Azure AI services to create a text to speech application that uses both plain text and Speech Synthesis Markup Language (SSML) to create audio files.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.create-your-first-speech-to-text-app.badge
+  type: badge
+  title: Create your first Azure AI speech to text application
+  summary: Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure's speech to text features. In this module, you'll learn how to use Azure AI services to create a speech to text application that converts a sample WAVE file into text.
+  iconUrl: /learn/achievements/generic-badge.svg
