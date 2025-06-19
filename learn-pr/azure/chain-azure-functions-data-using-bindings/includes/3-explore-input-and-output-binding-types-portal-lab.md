@@ -28,7 +28,7 @@ Let's create a function app that we can use throughout this module. A function a
 
 1. On the resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Create a resource** menu, select **Compute**, and in the results list select **Function App**. You might need to search for **Function App** in the *Search services and marketplace* window.
+1. In the **Create a resource** menu, select **Web**, and in the results list select **Function App**. You might need to search for **Function App** in the *Search services and marketplace* window.
 
 1. Select **Consumption**, then select the **Select** button. The **Create Function App** pane appears.
 
@@ -207,7 +207,7 @@ Now that we have a function app, let's create a function. Each function has a tr
 
 1. In the command bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
-1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL, and then select **OK** to close the dialog box.
+1. On the **default (function key)** select the *Copy to clipboard* icon at the end of the URL, and then select **Close** to close the dialog box.
 
 1. In the address bar of a new browser tab, paste the function URL you copied. Press <kbd>Enter</kbd> to run the request in your browser. The response might take a couple of minutes as the function app initializes. If you receive a timeout error, refresh to resend the request.
 

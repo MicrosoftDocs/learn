@@ -138,7 +138,7 @@ Let's break down what this code does:
 * Posting a message to our queue is as simple as setting the `context.bindings.newmessage` parameter.
 
 > [!NOTE]
-> The only task you performed was to create a queue binding. You never created the queue explicitly. You are witnessing the power of bindings! As the following notification declares, the queue is automatically created for you if it doesn't exist.
+> The only task you performed was to create a queue binding. You never created the queue explicitly. You're witnessing the power of bindings! As the following notification declares, the queue is automatically created for you if it doesn't exist.
 >
 > :::image type="content" source="../media/7-q-auto-create-small.png" alt-text="Screenshot showing message that the queue will be auto-created.":::.
 >
@@ -209,7 +209,7 @@ So, that's it. Let's see our work in action in the next section.
 
 1. To open the **run.ps1** file in the code editor, select your **HttpTrigger3** function from the breadcrumb at the top of the pane.
 
-1. In the Function menu, under **Developer**, select **Code + Test**. The **Code + Test** pane for your **HttpTrigger3** function appears, displaying the default content of **run.ps1**.
+1. In the Function menu, select **Code + Test**. The **Code + Test** pane for your **HttpTrigger3** function appears, displaying the default content of **run.ps1**.
 
 1. Replace the content in the file with the following code.
 
@@ -250,7 +250,7 @@ Let's break down what this code does:
 * Posting a message to our queue is as simple as calling `Push-OutputBinding` with the name of the queue output binding (`newmessage`) and the value of the `$newBookmark` object.
 
 > [!NOTE]
-> The only task you performed was to create a queue binding. You never created the queue explicitly. You are witnessing the power of bindings! As the following notification declares, the queue is automatically created for you if it doesn't exist.
+> The only task you performed was to create a queue binding. You never created the queue explicitly. You're witnessing the power of bindings! As the following notification declares, the queue is automatically created for you if it doesn't exist.
 >
 > :::image type="content" source="../media/7-q-auto-create-small.png" alt-text="Screenshot showing UI tool tip that the queue will be auto-created." border="false":::
 
