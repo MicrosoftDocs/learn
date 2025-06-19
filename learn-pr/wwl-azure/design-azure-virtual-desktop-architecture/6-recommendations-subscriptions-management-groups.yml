@@ -2,15 +2,16 @@
 uid: learn.wwl.design-azure-virtual-desktop-architecture.recommendations-for-using-subscriptions-management-groups
 title: Recommendations for using subscriptions and management groups
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recommendations for using subscriptions and management groups
   description: "Recommendations for using subscriptions and management groups"
-  ms.date: 08/01/2022
+  ms.date: 06/19/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-  ms.custom: sfi-ga-nochange
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
-  [!include[](includes/6-recommendations-subscriptions-management-groups.md)]
+  [!include[](includes/6-recommendations-subscriptions-management-groups.md)]
