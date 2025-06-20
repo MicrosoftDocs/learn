@@ -49073,6 +49073,106 @@
       "redirect_document_id": false
     },
     {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/2-what-is-cognitive-flexibility.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/3-recognize-importance-adapt-to-change.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/4-expand-outlook.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/5-use-feedback.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/6-pivot-persist-challenging-situations.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/7-exercise-cognitive-flexibility.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/8-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/9-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/2-what-is-self-regulation.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/3-exercise-approach-challenges.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/4-use-self-regulated-learning-work-through-challenges.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/5-exercise-self-regulated-learning.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/6-goal-orientation-component-self-regulation.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/7-exercise-reflect-on-use-self-regulated-learning.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/8-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/9-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
         "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/1-introduction.yml",
         "redirect_url": "https://learn.microsoft.com/training/browse/",
         "redirect_document_id": false
