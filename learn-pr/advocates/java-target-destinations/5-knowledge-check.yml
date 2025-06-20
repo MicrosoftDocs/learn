@@ -4,9 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Check your knowledge of the Java target destinations on Azure.
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: hangwan
+  author: hangwan97
+  ms.author: hangwan
   ms.date: 01/04/2024
   ms.topic: unit
   ms.custom:

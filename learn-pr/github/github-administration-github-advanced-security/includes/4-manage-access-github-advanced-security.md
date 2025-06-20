@@ -18,9 +18,9 @@ Additionally, repository administrators and organization owners can give secret 
 
 With the right set of roles and permissions, the developers involved in your security workflow can take the following actions:
 
-- For code scanning alerts: commit corrections to the code, dismiss alerts that don't require any action, or delete alerts to clean up code scanning results.
-- For secret scanning alerts: delete detected secrets, create new tokens, and update code that uses the detected secrets, or dismiss alerts that don't require any action.
-- For Dependabot alerts: update vulnerable dependencies or dismiss alerts that don't require any action.
+- **For code scanning alerts**: commit corrections to the code, dismiss alerts that don't require any action, or delete alerts to clean up code scanning results.
+- **For secret scanning alerts**: delete detected secrets, create new tokens, and update code that uses the detected secrets, or dismiss alerts that don't require any action.
+- **For Dependabot alerts**: update vulnerable dependencies or dismiss alerts that don't require any action.
 
 ## Set a security policy at the organization level
 
@@ -35,7 +35,7 @@ Follow these steps to set up a security policy at the organization level:
 
     :::image type="content" source="../media/security-policy-org.png" alt-text="Screenshot of security policy drop-down.":::
 
-1. Optionally, if you chose **Allow for selected organizations** to the right of an organization, select the drop-down menu to allow or disallow Advanced Security for the organization. Disallowing Advanced Security for an organization prevents repository administrators from enabling Advanced Security features for other repositories. But, it doesn't disable the features for repositories where the features are already enabled.
+1. Optionally, if you chose **Allow for selected organizations** to the right of an organization, select the drop-down menu to allow or disallow Advanced Security for the organization. Disallowing Advanced Security for an organization prevents repository administrators from enabling Advanced Security features for other repositories, but it doesn't disable the features for repositories where the features are already enabled.
 
     :::image type="content" source="../media/security-policy-org-2.png" alt-text="Screenshot of individual organization security policy drop-down.":::
 
