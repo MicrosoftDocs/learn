@@ -49813,11 +49813,6 @@
         "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/index.yml",
-      "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/analyze-logs-with-kql/index.yml",
       "redirect_url": "/azure/azure-monitor/logs/log-query-overview",
       "redirect_document_id": false
