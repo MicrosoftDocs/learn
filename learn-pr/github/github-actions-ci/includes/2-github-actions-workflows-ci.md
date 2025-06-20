@@ -115,7 +115,7 @@ Imagine that your organization has 10 microservices. All 10 microservices need t
 - Lint code
 - Deploy to a specific environment
 
-Without reusable workflows, every repo contains duplicated logic that list the repeated steps in each workflow.
+Without reusable workflows, every repo contains duplicated logic that lists the repeated steps in each workflow.
 
 If you use reusable workflows:
 
@@ -316,7 +316,7 @@ The following table describes common workflow failure scenarios:
 |--------|--------------|
 | A step fails and returns `command not found`l | Missing dependency or wrong setup |
 | `npm install` fails. | Corrupt `package-lock.json` file or a network issue |
-| A test step failsl | Unit test issues, missing configuration file, or invalid test syntax |
+| A test step fails | Unit test issues, missing configuration file, or invalid test syntax |
 | `Permission denied` appears. | Incorrect file permissions or missing secrets |
 
 ## Identify how to access workflow logs in GitHub
