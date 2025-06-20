@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  hidden_question_numbers: ["B16F4466_132","B16F4466_140"]
+  hidden_question_numbers: ["AB864330_46","AB864330_51","AB864330_59","AB864330_79","AB864330_95"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
@@ -20,7 +20,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Why should you select virtual machines over containers for your configuration?" 
+  - content: "Why should you select virtual machines over containers for your configuration?"
     choices:
     - content: "Virtual machines run the user mode portion of an operating system and can be tailored to contain just the needed services for your app."
       isCorrect: false
