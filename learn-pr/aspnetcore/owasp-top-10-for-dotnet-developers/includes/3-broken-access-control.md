@@ -1,5 +1,5 @@
 
-Recall that you recently joined a team at an IT software company that's tasked you with conducting a design and code review of the team-owned codebases. As you onboard to your new team and explore the codebase, you discover an ASP.NET Blazor web project. With OWASP Top 10 in mind, you set off on a deep dive into the code with your security lenses on.
+Recall that you recently joined a team at an IT software company who tasked you with conducting a design and code review of the team-owned codebases. As you onboard to your new team and explore the codebase, you discover an ASP.NET Blazor web project. With OWASP Top 10 in mind, you set off on a deep dive into the code with your security lenses on.
 
 You start at the top of the OWASP Top 10 list with *#1: Broken Access Control*. This category refers to incidents where a user who shouldn’t have permission to access that data viewed confidential information.
 
@@ -11,8 +11,8 @@ Let's consider a ASP.NET Core controller. A controller without any authorization
 :::row:::
     :::column:::
         Plain ASP.NET controller with no authorization attributes, no access restrictions applied.
-```csharp
 
+```csharp
 public class AccountController : Controller​
 {​
     public ActionResult Login()​
@@ -27,12 +27,12 @@ public class AccountController : Controller​
     {
     }
 }
-
 ```
 
 :::column-end:::
     :::column:::
         Controller with authorization attributes, based on policy or role assignments. Authorized caller is able to invoke the `GetCitizenTaxId` method.
+
 ```csharp
 [Authorize(Policy="", Roles=""]​
 public class AccountController : Controller​
@@ -56,23 +56,26 @@ public class AccountController : Controller​
 :::column-end:::
 :::row-end:::
 
-Similarly, the ASP.NET Minimal API supports the attribute decoration (Lambda *HTTP get* method with `[Authorize]` attribute), policy (`AdminsOnly`) and claim (`admin`) authorization, as shown here:
+Similarly, the ASP.NET Minimal API supports the attribute decoration (Lambda *HTTP get* method with `[Authorize]` attribute), policy (`AdminsOnly`), and claim (`admin`) authorization, as shown here:
 
->  ```csharp
-> var builder = WebApplication.CreateBuilder(args);​
->// Policy and claim use below
->builder.Services.AddAuthorization(o => o.AddPolicy("AdminsOnly", b => b.RequireClaim("admin", "true")));
-> var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");​
-> builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString)); ​
-> builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>(); ​
-> var app = builder.Build(); ​
-> app.UseAuthorization();​
-> // Attribute use below
-> app.MapGet("/auth",  [Authorize] () => "This endpoint requires authorization.");​
-> app.MapGet("/", () => "This endpoint doesn't require authorization.");​
-> app.Run();
+```csharp
+var builder = WebApplication.CreateBuilder(args);​
 
-Your application's user interface should also reflect the user's authentication (the user is who they say they are) and authorization state (whether the user is allowed to access certain information). Here, too, the OWASP Top 10 framework has you covered. ASP.NET Blazor's razor syntax supports conditionally displayed components depending on authorization status. The `AutorizeView` component selectively displays UI content based on user's authorized status.
+// Policy and claim use below
+builder.Services.AddAuthorization(o => o.AddPolicy("AdminsOnly", b => b.RequireClaim("admin", "true")));
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");​
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString)); ​
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>(); ​
+var app = builder.Build(); ​
+app.UseAuthorization();​
+
+// Attribute use below
+app.MapGet("/auth",  [Authorize] () => "This endpoint requires authorization.");​
+app.MapGet("/", () => "This endpoint doesn't require authorization.");​
+app.Run();
+```
+
+Your application's user interface should also reflect the user's authentication (the user is who they say they are) and authorization state (whether the user is allowed to access certain information). Here, too, you're covered by the OWASP Top 10 framework. ASP.NET Blazor's razor syntax supports conditionally displayed components depending on authorization status. The `AutorizeView` component selectively displays UI content based on user's authorized status.
 
 ```csharp
 <AuthorizeView Roles="admin, superuser">​
@@ -100,7 +103,7 @@ The `SecureMethod` is accessible once the user is authorized. Because the `Autor
 
 ### Code review notes
 
-You and your team have considered the broken access control risk and implemented Claims-based and Policy-based authorization in your web app. Knowing the app gets deployed to Azure, other best practices include:
+You and your team considered the broken access control risk and implemented Claims-based and Policy-based authorization in your web app. Knowing the app gets deployed to Azure, other best practices include:
 
-- Authorize users on all externally facing endpoints.
-- Use role-based and policy-based authorization in your application. ASP.NET has many ways to authorize a user​ based on their role or claims.
+- Authorizing users on all externally facing endpoints.
+- Using role-based and policy-based authorization in your application. ASP.NET has many ways to authorize a user​ based on their role or claims.

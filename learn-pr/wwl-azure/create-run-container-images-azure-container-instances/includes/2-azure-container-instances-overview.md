@@ -35,7 +35,7 @@ There are two common ways to deploy a multi-container group: use a Resource Mana
 
 ## Resource allocation
 
-Azure Container Instances allocates resources such as CPUs, memory, and optionally GPUs (preview) to a container group by adding the resource requests of the instances in the group. Using CPU resources as an example, if you create a container group with two instances, each requesting one CPU, then the container group is allocated two CPUs.
+Azure Container Instances allocates resources such as CPUs, memory, and optionally GPUs (preview) to a container group by adding the resource requests of the instances in the group. If you create a container group with two instances, each requesting one CPU, then the container group is allocated two CPUs.
 
 ## Networking
 
@@ -43,7 +43,7 @@ Container groups share an IP address and a port namespace on that IP address. To
 
 ## Storage
 
-You can specify external volumes to mount within a container group. You can map those volumes into specific paths within the individual containers in a group.  Supported volumes include:
+You can specify external volumes to mount within a container group. You can map those volumes into specific paths within the individual containers in a group. Supported volumes include:
 
 * Azure file share
 * Secret
@@ -52,7 +52,7 @@ You can specify external volumes to mount within a container group. You can map 
 
 ## Common scenarios
 
-Multi-container groups are useful in cases where you want to divide a single functional task into a few container images. These images might be delivered by different teams and have separate resource requirements.
+Multi-container groups are useful in cases where you want to divide a single functional task into a few container images. An image might be delivered by different teams and have separate resource requirements.
 
 Example usage could include:
 
