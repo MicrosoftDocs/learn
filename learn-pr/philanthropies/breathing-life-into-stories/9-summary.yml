@@ -6,7 +6,7 @@ metadata:
   description: "Review the key concepts and skills developed in creating interactive stories enhanced by Azure OpenAI and DALL·E. Reflect on techniques for generating character portraits, branching dialogue, and presenting cohesive, emotionally rich narratives."
   ms.date: 4/28/2025
   author: kprks
-  ms.author: v-kperkes
+  ms.author: kbarreto
   ms.topic: unit
   
 durationInMinutes: 5
