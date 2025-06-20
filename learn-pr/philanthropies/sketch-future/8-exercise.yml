@@ -6,8 +6,8 @@ metadata:
   description: "In this hands-on activity, learners use Microsoft Copilot to generate a storyboard for a short animation and Microsoft Designer to create character designs that align with the visual style. Learners practice AI-assisted creative development from concept to visual realization. Keywords: Microsoft Copilot, Microsoft Designer, animation storyboarding, AI character design, creative planning with AI."
 
   ms.date: 4/28/2025
-  author: kprks
-  ms.author: v-kperkes
+  author: kariannab-ms
+  ms.author: kbarreto
   ms.topic: unit
   
 durationInMinutes: 15

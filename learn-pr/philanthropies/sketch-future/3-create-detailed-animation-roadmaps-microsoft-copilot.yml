@@ -6,8 +6,8 @@ metadata:
   description: "In this unit, learners discover how Microsoft Copilot can generate structured animation roadmaps, helping them turn creative ideas into actionable production plans. Learners practice building scene breakdowns, asset lists, and project timelines using AI-driven prompts. Keywords: Microsoft Copilot, animation planning, AI roadmaps, scene breakdowns, asset organization."
 
   ms.date: 4/28/2025
-  author: kprks
-  ms.author: v-kperkes
+  author: kariannab-ms
+  ms.author: kbarreto
   ms.topic: unit
   
 durationInMinutes: 15
