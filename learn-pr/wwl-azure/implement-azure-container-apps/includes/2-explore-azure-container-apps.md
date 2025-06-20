@@ -16,7 +16,7 @@ With Azure Container Apps, you can:
 * Use internal ingress and service discovery for secure internal-only endpoints with built-in DNS-based service discovery.
 * Build microservices with [Dapr](https://docs.dapr.io/concepts/overview/) and access its rich set of APIs.
 * Run containers from any registry, public or private, including Docker Hub and Azure Container Registry (ACR).
-* Use the Azure CLI extension, Azure portal or ARM templates to manage your applications.
+* Use the Azure CLI extension, Azure portal, or ARM templates to manage your applications.
 * Provide an existing virtual network when creating an environment for your container apps.
 * Securely manage secrets directly in your application.
 * Monitor logs using Azure Log Analytics.
@@ -49,3 +49,4 @@ Microservice architectures allow you to independently develop, upgrade, version,
 ## Dapr integration
 
 When you implement a system composed of microservices, function calls are spread across the network. To support the distributed nature of microservices, you need to account for failures, retries, and timeouts. While Container Apps features the building blocks for running microservices, use of Dapr provides an even richer microservices programming model. Dapr includes features like observability, pub/sub, and service-to-service invocation with mutual TLS, retries, and more.
+

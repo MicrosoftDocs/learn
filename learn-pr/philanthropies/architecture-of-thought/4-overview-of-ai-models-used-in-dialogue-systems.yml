@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.architecture-of-thought.overview-of-ai-models-used-in-dialogue-systems
+title: Overview of AI models used in dialogue systems
+metadata:
+  title: Overview of AI Models Used in Dialogue Systems
+  description: "In this unit, learners explore the AI models that power dialogue systems, including natural language processing models like GPT-3 and GPT-4. They examine how conversational AI frameworks create human-like interactions through language understanding, response generation, and reinforcement learning. Keywords: conversational AI, GPT models, natural language processing, AI dialogue systems, reinforcement learning."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: kbarreto
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-overview-of-ai-models-used-in-dialogue-systems.md)]
