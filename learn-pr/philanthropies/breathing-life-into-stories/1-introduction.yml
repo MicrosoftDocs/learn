@@ -6,7 +6,7 @@ metadata:
   description: "In this unit, learners explore how Azure OpenAI and DALL·E can be used to create rich, interactive storytelling experiences."
   ms.date: 4/28/2025
   author: kprks
-  ms.author: v-kperkes
+  ms.author: kbarreto
   ms.topic: unit
   
 durationInMinutes: 5
