@@ -6,8 +6,8 @@ metadata:
   description: "In this unit, learners walk through a step-by-step process for transforming 2D animations into dynamic, pseudo-3D scenes using Sora. Learners prepare assets, apply depth simulation, adjust motion paths, and refine animations to create cinematic movement and storytelling depth. Keywords: Sora, 2D animation transformation, pseudo-3D animation, AI depth simulation, animation motion enhancement."
 
   ms.date: 4/28/2025
-  author: kprks
-  ms.author: v-kperkes
+  author: kariannab-ms
+  ms.author: kbarreto
   ms.topic: unit
   
 durationInMinutes: 15
