@@ -44,52 +44,52 @@
       "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/2-exercise-connect-to-resources.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/3-characterize-data.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/4-exercise-inventory-data.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/5-explore-data-structure-queries.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/6-exercise-queries-explore.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/7-exercise-query-trends.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/8-exercise-share-query.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/9-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/10-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
@@ -99,7 +99,7 @@
       "source_path_from_root": "/learn-pr/achievements/learn.azure.characterize-dataset-azure-data-explorer.badge.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path_from_root": "/learn-pr/achievements/learn.analyze-infrastructure-with-azure-monitor-logs.badge.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/getting-started",
@@ -48858,64 +48858,64 @@
       "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/1-introduction.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/2-conceptual-overview.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/2-conceptual-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/3-about-progressive-web-apps.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/3-about-progressive-web-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/4-scaffold.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/4-scaffold.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/5-about-custom-vision-ai.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/5-about-custom-vision-ai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/6-train-model-build-inference-interface.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/6-train-model-build-inference-interface.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/7-about-github-actions.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/7-about-github-actions.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/8-publish-deploy-github-action.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/8-publish-deploy-github-action.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/9-test-progressive-web-app.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/9-test-progressive-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/10-knowledge-check.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/11-summary.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/advocates/create-web-app-with-refreshable-models/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-language/csharp-if-elseif-else/4-challenge.md",
@@ -49481,7 +49481,7 @@
       "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-     },
+    },
     {
       "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
@@ -49708,54 +49708,54 @@
       "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/1-introduction.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/2-what-is-api.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/2-what-is-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/3-build-local-api.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/3-build-local-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/4-query-met-api.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/4-query-met-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/5-authentication-strategies.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/5-authentication-strategies.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/6-query-cooper-hewitt-api.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/6-query-cooper-hewitt-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/7-handle-responses.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/7-handle-responses.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/8-use-libraries.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/8-use-libraries.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/9-knowledge-check.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/10-summary.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
         "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/index.yml",
@@ -49811,6 +49811,51 @@
         "source_path": "learn-pr/student-evangelism/career-get-noticed/index.yml",
         "redirect_url": "https://learn.microsoft.com/training/browse/",
         "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/analyze-logs-with-kql/index.yml",
+      "redirect_url": "/azure/azure-monitor/logs/log-query-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/analyze-logs-with-kql/7-summary.yml",
+      "redirect_url": "/azure/azure-monitor/logs/log-query-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/analyze-logs-with-kql/6-knowledge-check.yml",
+      "redirect_url": "/azure/azure-monitor/logs/log-query-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/analyze-logs-with-kql/5-summarize-free-space-by-computer.yml",
+      "redirect_url": "/azure/azure-monitor/logs/log-query-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/analyze-logs-with-kql/4-identify-machines-with-high-cpu.yml",
+      "redirect_url": "/azure/azure-monitor/logs/log-query-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/analyze-logs-with-kql/3-list-active-machines-not-sending-logs.yml",
+      "redirect_url": "/azure/azure-monitor/logs/log-query-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/analyze-logs-with-kql/2-prepare.yml",
+      "redirect_url": "/azure/azure-monitor/logs/log-query-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/analyze-logs-with-kql/1-introduction.yml",
+      "redirect_url": "/azure/azure-monitor/logs/log-query-overview",
+      "redirect_document_id": false
     }
   ]
 }
