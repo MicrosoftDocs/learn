@@ -6,8 +6,8 @@ metadata:
   description: "In this unit, learners explore how Sora can simulate cinematic motion from text and image prompts. Learners use Sora to generate fluid, AI-driven video sequences, and experiment with storytelling through motion-rich content. Keywords: motion simulation, cinematic AI video, Sora, text-to-video, visual storytelling."
 
   ms.date: 4/28/2025
-  author: kprks
-  ms.author: v-kperkes
+  author: kariannab-ms
+  ms.author: kbarreto
   ms.topic: unit
   
 durationInMinutes: 15
