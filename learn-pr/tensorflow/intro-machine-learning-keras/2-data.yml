@@ -23,13 +23,13 @@ quiz:
     choices:
     - content: "We didn't need to. For a small amount of data like in this sample, we could just use NumPy arrays."
       isCorrect: false
-      explanation: "This is true, but other options are also true."
+      explanation: "This option is true, but other options are also true."
     - content: "It's a good idea to learn about it, especially if we're going to work with larger data in the future."
       isCorrect: false
-      explanation: "This is true, but other options are also true."
+      explanation: "This option is true, but other options are also true."
     - content: "Because it returns our data in batches of 64 images when we iterate over it, which we use later when training."
       isCorrect: false
-      explanation: "This is true, but other options are also true."
-    - content: "All of the above."
+      explanation: "This option is true, but other options are also true."
+    - content: "All of these options are true."
       isCorrect: true
       explanation: "Correct!"

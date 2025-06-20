@@ -29,7 +29,7 @@ quiz:
       explanation: "Incorrect. Our model generalizes beyond the training data. In fact, it makes good predictions for test data."
     - content: "Only images in the training data or test data."
       isCorrect: false
-      explanation: "Incorrect. You saw it work for test data that the model hadn't seen during training. You can imagine that it works similarly for other images it hasn't seen."
+      explanation: "Incorrect. You saw it work for test data that the model didn't see during training. You can imagine that it works similarly for other images it didn't see."
     - content: "Any image, so long as it's in the format expected by the model."
       isCorrect: true
       explanation: "Correct! The more similar the prediction images are to the images in the training data, the better the predictions are."
