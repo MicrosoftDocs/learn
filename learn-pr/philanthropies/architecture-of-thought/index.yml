@@ -5,7 +5,7 @@ metadata:
   description: "Explore how Azure OpenAI Studio enables the development of AI-powered dialogue systems. Learn the core architecture of conversational agents, the models behind them, and how to design basic chat interactions using Microsoft tools."
   ms.date: 4/28/2025
   author: kprks
-  ms.author: v-kperkes
+  ms.author: kbarreto
   ms.topic: module-intro-to-product
   ms.service: artificial-intelligence
 title: The Architecture of Thought - Dialogue Systems with Azure OpenAI Studio
