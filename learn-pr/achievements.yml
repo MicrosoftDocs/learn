@@ -5815,6 +5815,46 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.student-evangelism.self-regulation-work-strategically.badge
+  type: badge
+  title: Use self-regulation to work strategically
+  summary: In this module, you'll learn about using self-regulation to respond effectively to challenges. You'll also use goal-orientation theory to diagnose what motivates you to learn.
+  iconUrl: /training/achievements/tech-resilience/self-regulation.svg
+- uid: learn.student-evangelism.grow-cognitive-flexibility.badge
+  type: badge
+  title: Grow your cognitive flexibility
+  summary: In this module, you'll learn about the importance of cognitive flexibility in the field of technology. You'll learn about the benefits of stepping back and expanding your outlook and using feedback effectively. Finally, you'll learn how to reorient and persist in challenging situations.
+  iconUrl: /training/achievements/tech-resilience/grow-cognitive-flexibility.svg
+- uid: learn.student-evangelism.give-receive-effective-feedback.badge
+  type: badge
+  title: Give and receive effective feedback
+  summary: In this module, you'll learn how to give and receive effective feedback.
+  iconUrl: /training/achievements/tech-resilience/give-receive-feedback.svg
+- uid: learn.student-evangelism.exercise-your-emotional-intelligence.badge
+  type: badge
+  title: Exercise your emotional intelligence
+  summary: Learn how to use your emotional intelligence to help your peers.
+  iconUrl: /training/achievements/tech-resilience/exercise-emotional-intelligence.svg
+- uid: learn.student-evangelism.cultivate-culture-belong-tech.badge
+  type: badge
+  title: Cultivate a culture of belongingness in tech
+  summary: Explore what belonging is, why it matters, and how to recognize it. Learn about historical and current challenges to belonging in tech, and understand what contributes to a climate of belonging, including strategies to build inclusive environments.
+  iconUrl: /training/achievements/tech-resilience/culture-belonging.svg
+- uid: learn.student-evangelism.enhance-self-efficacy.badge
+  type: badge
+  title: Enhance your self-efficacy
+  summary: Develop a mindset that will set you up for success in technology.
+  iconUrl: /training/achievements/tech-resilience/enhance-self-efficacy.svg
+- uid: learn.student-evangelism.tech-resilience.trophy
+  type: trophy
+  title: Build your tech resilience
+  summary: Far too many talented people avoid choosing or actively decide to leave tech because it can be unwelcoming. Our mission? To help build a more inclusive future for the tech industry by fostering confidence, a growth mindset, resilience, and a sense of belonging. Start here to grow more as an individual and team and learn useful strategies that have a strong research base of evidence for improving effectiveness in the workplace. By the end of this series, we hope you have a new way of taking ownership over your problem-solving process, which you can apply when debugging code or when working with a team under a tight deadline.
+  iconUrl: /training/achievements/tech-resilience/path.svg
+- uid: learn.student-evangelism.develop-growth-mindset.badge
+  type: badge
+  title: Develop a growth mindset
+  summary: "In this module, you'll learn to distinguish between two mindsets: a growth mindset and a fixed mindset. When you adopt a growth mindset, you set yourself up for success and are able to take on new challenges."
+  iconUrl: /training/achievements/tech-resilience/develop-growth-mindset.svg
 - uid: learn.career-interview.badge
   type: badge
   title: Successful interviewing

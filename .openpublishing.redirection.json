@@ -49073,6 +49073,376 @@
       "redirect_document_id": false
     },
     {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/2-what-is-cognitive-flexibility.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/3-recognize-importance-adapt-to-change.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/4-expand-outlook.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/5-use-feedback.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/6-pivot-persist-challenging-situations.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/7-exercise-cognitive-flexibility.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/8-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/9-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/2-what-is-self-regulation.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/3-exercise-approach-challenges.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/4-use-self-regulated-learning-work-through-challenges.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/5-exercise-self-regulated-learning.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/6-goal-orientation-component-self-regulation.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/7-exercise-reflect-on-use-self-regulated-learning.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/8-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/9-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/2-concept-emotional-intelligence-technology.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/3-exercise-reflect-feelings.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/4-identify-emotions.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/5-exercise-assess-improve-emotional-intelligence.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/6-manage-emotions-technical-environment.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/7-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/8-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/2-characteristics-components-effective-feedback.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/3-wise-feedback-technical-environments.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/4-provide-receive-wise-feedback.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/5-tips-effective-feedback.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/6-exchange-effective-feedback.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/7-exercise-reflect-effective-feedback.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/8-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/2-explore-concept-self-efficacy.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/3-differentiate-self-efficacy-self-confidence.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/4-exercise-differentiate.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/5-examine-impact-self-efficacy.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/6-exercise-examine.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/7-evaluate-factors-self-efficacy-impact.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/8-strategies-improve-self-efficacy-technology.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/9-exercise-reflect-self-efficacy.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/10-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/11-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/2-examine-recognize-belonging.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/3-exercise-belongingness.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/4-why-belonging-matters-tech.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/5-identify-challenges-tech-environments.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/6-exercise-challenges.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/7-microaggressions-microaffirmations.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/8-exercise-interactions-cultivate-belonging.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/9-build-inclusive-environments.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/10-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/11-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/paths/tech-resilience/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/2-describe-fixed-and-growth-mindsets.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/3-exercise-reflect-mindset.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/4-differentiate-fixed-and-growth-mindsets.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/5-exercise-mindset.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/6-strategies-change-mindset.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/7-exercise-change-mindset.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/8-reflect-connection-mindset-outcomes.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/9-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/10-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/visualize-data-workbooks/6-compare-and-anlyze-data.md",
       "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
       "redirect_document_id": false
