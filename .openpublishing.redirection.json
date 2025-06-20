@@ -48946,7 +48946,102 @@
       "source_path": "learn-pr/wwl-language/csharp-evaluate-boolean-expressions/7-solution-2.md",
       "redirect_url": "/training/modules/csharp-evaluate-boolean-expressions/7-review-solution-boolean-expressions-challenge",
       "redirect_document_id": false
-    },
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-growth/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-growth/2-networking.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-growth/3-group-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-growth/4-building-trust.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-growth/5-day-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-growth/6-asking-questions.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-growth/7-continual-learning.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-growth/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-growth/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-interview/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-interview/2-prepare.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-interview/3-exercise-practice-code.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-interview/4-check-preparation.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-interview/5-tech-interview.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-interview/6-exercise-practice-questions.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-interview/7-interview.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-interview/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-interview/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "learn-pr/student-evangelism/career-interview/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+  },
     {
       "source_path": "learn-pr/wwl-language/csharp-switch-case/3-challenge.md",
       "redirect_url": "/training/modules/csharp-switch-case/3-exercise-challenge-switch-statements",
