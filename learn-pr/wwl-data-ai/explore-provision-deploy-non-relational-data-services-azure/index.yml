@@ -3,9 +3,9 @@ uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure
 metadata:
   title: Explore Azure Storage for non-relational data
   description: "This content is a part of Explore Azure Storage for non-relational data."
-  ms.date: 09/17/2024
+  ms.date: 06/20/2025
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: calopez
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
@@ -50,4 +50,4 @@ units:
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.knowledge-check
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.summary
 badge:
-  uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.badge
+  uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.badge
