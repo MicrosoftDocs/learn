@@ -149,7 +149,7 @@ d27071f3ca27        mcr.microsoft.com/dotnet/core/samples:aspnetapp   "dotnet as
 ```
 
 > [!NOTE]
-> `docker ps` is a shortcut for `docker container ls`. The names of these commands are based on the Linux utilities `ps` and `ls`, which list running processes and files, respectively.
+> `docker ps` is a shortcut for `docker container ls`. These command names are based on the Linux utilities `ps` and `ls`, which list running processes and files, respectively.
 
 You can stop an active container with the `docker stop` command, specifying the container ID.
 
@@ -177,7 +177,7 @@ Typically, once a container is stopped, you should also remove it. Removing a co
 docker rm elegant_ramanujan
 ```
 
-You can't remove a container that's running, but you can force a container to be stopped and removed with the *-f* flag to the `docker rm` command. This is a quick way to stop and remove a container, but should only be used if the app inside the container doesn't need to perform a graceful shutdown.
+You can't remove a container that's running, but you can force a container to be stopped and removed with the *-f* flag to the `docker rm` command. This is a quick way to stop and remove a container, but you should only use it if the app inside the container doesn't need to perform a graceful shutdown.
 
 ```bash
 docker container rm -f elegant_ramanujan
