@@ -2,7 +2,7 @@
 uid: learn.languages.csharp-basic-formatting.knowledge-check
 title: Module assessment
 metadata:
-  hidden_question_numbers: ["FB27E932_14","FB27E932_26","FB27E932_38","FB27E932_42","FB27E932_6","FB27E932_100","FB27E932_104","FB27E932_108"]
+  hidden_question_numbers: ["2CC27DCA_14","2CC27DCA_26","2CC27DCA_38","2CC27DCA_42","2CC27DCA_46","2CC27DCA_6","2CC27DCA_51","2CC27DCA_63","2CC27DCA_71","2CC27DCA_75","2CC27DCA_100","2CC27DCA_104","2CC27DCA_108"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: ""
   questions:
-  - content: "Which of the following escape sequences should be used to add double quotes to a literal string in C# code?" 
+  - content: "Which of the following escape sequences should be used to add double quotes to a literal string in C# code?"
     choices:
     - content: "'`\\q`'"
       isCorrect: false
