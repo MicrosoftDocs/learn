@@ -17,13 +17,13 @@ You create a containerized app by building an **image** that contains a set of f
 
 You can run Docker on your desktop or laptop if you're developing and testing locally. For production systems, Docker is available for server environments, including many variants of Linux and Microsoft Windows Server 2016. Many vendors also support Docker in the cloud. For example, you can store Docker images in Azure Container Registry and run containers with Azure Container Instances.
 
-In this module, you'll use Docker locally to build and run an image. Then, you'll upload the image to Azure Container Registry and run it in an Azure Container Instance. This version of Docker is suitable for local development and testing of Docker images.
+In this module, you'll use Docker locally to build and run an image. Then, you'll upload the image to Azure Container Registry and run it in an Azure Container Instance. This version of Docker is suitable for developing and testing Docker images locally.
 
 ## Linux and Windows Docker images
 
 Docker was initially developed for Linux and has since expanded to support Windows. Individual Docker images are either Windows-based or Linux-based, but can't be both at the same time. The image's operating system determines what kind of operating system environment is used inside the container.
 
-Authors of Docker images who wish to offer similar functionality in both Linux-based and Windows-based images can build those images separately. For example, Microsoft offers Windows and Linux Docker images containing an ASP.NET Core environment you can use as the basis for containerized ASP.NET Core applications.
+Docker image authors who wish to offer similar functionality in both Linux-based and Windows-based images can build those images separately. For example, Microsoft offers Windows and Linux Docker images containing an ASP.NET Core environment that you can use as the basis for containerized ASP.NET Core applications.
 
 Linux computers with Docker installed can only run Linux containers. Windows computers with Docker installed can run both kinds of containers. Windows runs both by using a virtual machine to run a Linux system, and uses the virtual Linux system to run Linux containers.
 
@@ -37,8 +37,8 @@ A registry is organized as a series of *repositories*. Each repository contains 
 
 Suppose you want to use the ASP.NET Core Runtime Docker image. This image is available in two versions:
 
-- 8.0 (Long-Term Support): `mcr.microsoft.com/dotnet/aspnet:8.0`
-- 6.0 (Long-Term Support): `mcr.microsoft.com/dotnet/aspnet:6.0`
+- 9.0: `mcr.microsoft.com/dotnet/aspnet:9.0`
+- 8.0 (Long-Term Support): `mcr.microsoft.com/dotnet/aspnet:9.0`
 
 Now, let's suppose you want to use the .NET Core samples Docker images. Here we have four versions available from which to choose:
 
@@ -124,11 +124,11 @@ The command maps port 80 in the container to port 8080 on your computer. If you 
 
 ## Containers and files
 
-If a running container makes changes to the files in its image, those changes only exist in the container where the changes are made. Unless you take specific steps to preserve the state of a container, these changes are lost when the container is removed. Similarly, multiple containers based on the same image that run simultaneously don't share the files in the image. Each container has its own independent copy. Any data one container writes to its filesystem isn't visible to the other.
+If a running container makes changes to the files in its image, those changes only exist in the container where the changes are made. Unless you take specific steps to preserve a container's state, these changes are lost when the container is removed. Similarly, multiple containers based on the same image that run simultaneously don't share the files in the image. Each container has its own independent copy. Any data one container writes to its filesystem isn't visible to the other.
 
-It's possible to add writable volumes to a container. A volume represents a filesystem that the container can mount, and is made available to the application running in the container. The data in a volume does persist when the container stops, and multiple containers can share the same volume. The details for creating and using volumes are outside the scope of this module.
+It's possible to add writable volumes to a container. A volume represents a filesystem that the container can mount and that's made available to the application running in the container. The data in a volume does persist when the container stops, and multiple containers can share the same volume. The details for creating and using volumes are outside the scope of this module.
 
-It's a best practice to avoid the need to make changes to the image filesystem for applications deployed with Docker. Only use it for temporary files that can afford to be lost.
+It's a best practice to avoid the need to make changes to the image filesystem for applications deployed with Docker. Only use it for temporary files that you can afford to lose.
 
 ## Manage Docker containers
 
