@@ -6,8 +6,8 @@ metadata:
   title: Collaborative Editing with Microsoft Copilot
   description: "Microsoft Copilot supports collaborative post-production by generating real-time editing suggestions, managing version comparisons, and streamlining feedback for music video refinement."
   ms.date: 4/25/2025
-  author: kprks
-  ms.author: v-kperkes
+  author: kariannab-ms
+  ms.author: kbarreto
   ms.topic: unit
   
 durationInMinutes: 10
