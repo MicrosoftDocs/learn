@@ -49073,6 +49073,66 @@
       "redirect_document_id": false
     },
     {
+        "source_path": "learn-pr/paths/tech-resilience/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/1-introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/2-describe-fixed-and-growth-mindsets.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/3-exercise-reflect-mindset.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/4-differentiate-fixed-and-growth-mindsets.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/5-exercise-mindset.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/6-strategies-change-mindset.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/7-exercise-change-mindset.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/8-reflect-connection-mindset-outcomes.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/9-knowledge-check.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/10-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/visualize-data-workbooks/6-compare-and-anlyze-data.md",
       "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
       "redirect_document_id": false
