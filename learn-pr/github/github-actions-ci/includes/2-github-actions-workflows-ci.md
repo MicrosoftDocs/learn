@@ -314,9 +314,9 @@ The following table describes common workflow failure scenarios:
 
 | Symptom | Likely cause |
 |--------|--------------|
-| A step fails and returns `command not found`l | Missing dependency or wrong setup |
+| A step fails and returns `command not found`. | Missing dependency or wrong setup |
 | `npm install` fails. | Corrupt `package-lock.json` file or a network issue |
-| A test step fails | Unit test issues, missing configuration file, or invalid test syntax |
+| A test step fails. | Unit test issues, missing configuration file, or invalid test syntax |
 | `Permission denied` appears. | Incorrect file permissions or missing secrets |
 
 ## Identify how to access workflow logs in GitHub
@@ -368,7 +368,7 @@ If an error occurs or if a test fails, a red X instead of a green checkmark appe
 
 At the beginning of this module, you considered a scenario in which you need to set up CI for your team of developers. The Node.js template is a great start, but you want to customize it to better suit your team's requirements. You want to target different versions of Node.js and different operating systems. You also want the build and test steps to be separate jobs.
 
-Here's an example of how of a customized workflow:
+Here's an example of a customized workflow:
 
 ```yml
 strategy:
