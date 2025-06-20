@@ -2,7 +2,7 @@
 uid: learn.troubleshoot-azure-network-infrastructure.3-exercise-troubleshoot-networking-with-network-watcher
 metadata:
   title: Exercise - Troubleshoot a network by using Network Watcher monitoring and diagnostic tools
-  description: In this unit, you'll set up a virtual network with constituent VMs and then use Network Watcher to view the topology and monitor connections.
+  description: In this unit, you set up a virtual network with constituent virtual machines and then use Network Watcher to view the topology and monitor connections.
   ms.date: 01/16/2024
   author: halkazwini
   ms.author: halkazwini
@@ -13,4 +13,4 @@ title: Exercise - Troubleshoot a network by using Network Watcher monitoring and
 durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-troubleshoot-networking-with-network-watcher.md)]
-
+
