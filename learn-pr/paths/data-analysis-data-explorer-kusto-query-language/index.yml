@@ -34,7 +34,6 @@ modules:
 - learn.intro-to-azure-data-explorer
 - learn.azure.explore-fundamentals-kql
 - learn.azure.gain-insights-data-kql
-- learn.azure.characterize-dataset-azure-data-explorer
 - learn.create-dashboards-azure-data-explorer
 trophy:
   uid: learn.data-analysis-data-explorer-kusto-query-language.trophy
