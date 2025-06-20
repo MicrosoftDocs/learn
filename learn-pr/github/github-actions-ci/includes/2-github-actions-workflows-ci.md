@@ -1,31 +1,33 @@
- Here, you'll learn about GitHub Actions and workflows for CI. 
+Recall that your goal is to automate the code build and publish process so that features are updated each time a developer adds a change to the code base.
 
-You learn how to:
+To implement this process, you learn how to:
 
 - Create a workflow from a template.
-- Understand the GitHub Actions logs.
+- Avoid duplication by using reusable workflows.
+- Identify the event that triggered a workflow.
+- Use GitHub Actions workflow logs.
 - Test against multiple targets.
 - Separate build and test jobs.
 - Save and access build artifacts.
-- Automate labeling a PR on review.
+- Automate adding a label to a pull request after a review.
 
 ## Create a workflow from a template
 
-To create a workflow, you start by using a template. A template has common jobs and steps preconfigured for the particular type of automation you're implementing. If you're not familiar with workflows, jobs, and steps, check out the [Automate development tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/) module.
+To create a workflow, it's common to begin by using a template. A template has common jobs and steps preconfigured for the specific type of automation you're implementing. If you're not familiar with workflows, jobs, and steps, check out the [Automate development tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/) module.
 
-On the main page of your repository, select the **Actions** tab and then select **New workflow**.
+On the main page of your GitHub repository, select **Actions**, and then select **New workflow**.
 
-On the **Choose a workflow** page, you can choose from many different templates. One example is the *Node.js* template, which does a clean install of node dependencies, builds the source code, and runs tests for different versions of Node. Another example is the *Python package* template, which installs Python dependencies, and runs tests, including lint, across different versions of Python.
+On the **Choose a workflow** page, you can choose from many types of templates. One example is the Node.js template. The *Node.js template* installs Node.js and all dependencies, builds the source code, and runs tests for different versions of Node.js. Another example is the *Python package* template, which installs Python and its dependencies, and then runs tests, including lint, in multiple versions of Python.
 
-In the search box, enter **Node.js**.
+To begin with the Node.js workflow template, in the search box, enter **Node.js**.
 
-:::image type="content" source="../media/2-workflow-template-search.png" alt-text="Screenshot showing GitHub Actions tab with the search box highlighted and containing the text 'Node.js'." border="true":::
+:::image type="content" source="../media/2-workflow-template-search.png" alt-text="Screenshot that shows the GitHub Actions tab with the search box highlighted and with the text Node.js.":::
 
-In the search results, in the Node.js pane, select **Configure**.
+In the search results, in the **Node.js** pane, select **Configure**.
 
-:::image type="content" source="../media/2-workflow-template-node-js.png" alt-text="Screenshot showing GitHub Actions tab with the Node.js pane highlighted and the Node.js template selected." border="true":::
+:::image type="content" source="../media/2-workflow-template-node-js.png" alt-text="Screenshot that shows the GitHub Actions tab with the Node.js pane highlighted and the Configure button selected.":::
 
-You see this default Node.js template workflow, in the newly created file node.js.yml.
+A `node.js.yml` file for your project is created from the template:
 
 ```yml
 name: Node.js CI
@@ -57,15 +59,15 @@ jobs:
     - run: npm test
 ```
 
-Notice the `on:` attribute. This workflow is triggered on a push to the repository, and when a pull request is made against the main branch.
+As seen in the `on` attribute, this example workflow runs in response to either a push to the repository or when a pull request is created against the main branch.
 
-There's one `job` in this workflow. Let's review what it does.
+This workflow runs one job, indicated by the `job` attribute.
 
-The `runs-on:` attribute specifies that, for the operating system, the workflow runs on `ubuntu-latest`. The `node-version:` attribute specifies that there are three builds, one each for Node version 14.x, 16.x, and 18.x. We describe the `matrix` portion in depth later, when we customize the workflow.
+The `runs-on` attribute specifies that, for the operating system, the workflow runs on `ubuntu-latest`. The `node-version` attribute specifies that there are three builds, one each for Node.js version 14.x, 16.x, and 18.x. The `matrix` attribute is described in depth later in the module.
 
-The `steps` in the job use the GitHub Actions [actions/checkout@v3](https://github.com/actions/checkout?azure-portal=true) action to get the code from your repository into the VM, and the [actions/setup-node@v3](https://github.com/actions/setup-node?azure-portal=true) action to set up the right version of Node.js. We specify that we're going to test three versions of Node.js with the `${{ matrix.node-version }}` attribute. This attribute references the matrix we previously defined. The `cache` attribute specifies a package manager for caching in the default directory.
+In the `jobs` attribute, the steps use the GitHub Actions [actions/checkout@v3](https://github.com/actions/checkout?azure-portal=true) action to get the code from your repository into a virtual machine (VM) and [actions/setup-node@v3](https://github.com/actions/setup-node?azure-portal=true) to set up the correct version of Node.js. You specify that you want to test three versions of Node.js by using the `${{ matrix.node-version }}` attribute. This attribute references the matrix that you defined earlier. The `cache` attribute specifies a package manager for caching in the default directory.
 
-The last part of this step executes commands used by Node.js projects. The `npm ci` command installs dependencies from the *package-lock.json* file, `npm run build --if-present` runs a build script if it exists, and `npm test` runs the testing framework. Notice that this template includes both the build and test steps in the same job.
+The last part of this step executes commands that Node.js projects use. The `npm ci` command installs dependencies from the `package-lock.json` file. `npm run build --if-present` runs a build script if it exists. `npm test` runs the testing framework. This template includes both build and test steps in the same job.
 
 To learn more about npm, check out the npm documentation:
 
@@ -73,253 +75,300 @@ To learn more about npm, check out the npm documentation:
 - [npm run](https://docs.npmjs.com/cli/v11/commands/npm-run?azure-portal=true)
 - [npm test](https://docs.npmjs.com/cli/v11/commands/npm-test?azure-portal=true)
 
-Beyond individual npm commands, teams can benefit from reusable workflows to streamline and standardize repeated automation steps. By leveraging reusable workflows, you can reduce redundancy, improve maintainability, and ensure consistency across your CI/CD pipelines.
+A team of developers can benefit from using reusable workflows to streamline and standardize repeated automation steps. By using reusable workflows, you can reduce redundancy, improve maintainability, and ensure consistency across your continuous integration/continuous deployment (CI/CD) pipelines.
 
-<!-- InfoMagnus Starts -->
-<!-- INFOMAGNUS UPDATES for sub OD 1.5.9. Source Material: https://docs.github.com/en/actions/sharing-automations/reusing-workflows -->
-## How to utilize reusable workflows to avoid duplication
- As teams scale and projects grow, it's common to see the same steps, such as code checkout, dependency installation, testing, and deployment—repeated across multiple workflow files. This kind of duplication not only clutters your codebase but also increases maintenance time when changes are needed. Reusable workflows solve this problem by allowing you to define automation logic once and call it from other workflows. Reusable workflows are special GitHub Actions workflows that can be called by other workflows, much like functions in programming. You create them to share repeated logic like build steps, testing procedures, or deployment strategies. Once created, you can reference them from any other workflow in the same repository or even across different repositories.
- 
-:::image type="content" source="../media/reusable-workflow.png" alt-text="Diagram illustrating the concept of reusable workflows in GitHub Actions, showing how a central workflow can be referenced by multiple repositories or workflows." border="true":::
 
-### Why use them?
-- Consistency: Teams can follow the same automation standards across all projects.
-- Efficiency: Instead of copying and pasting steps, you just point to a reusable workflow.
-- Ease of Updates: When a process changes (e.g., a new test step), you update it in one place, and all workflows using it benefit automatically.
-- Scalability: Ideal for platform or DevOps teams managing multiple services.
+## Avoid duplication by using reusable workflows
 
-Let's explore how to use reusable workflows to improve your projects.
+As teams scale and projects grow, it's common to see the same steps repeated across multiple workflow files. These steps might include code checkout, dependency installation, testing, and deployment. This kind of duplication not only clutters your code base but also increases maintenance time when code changes are required. Reusable workflows solve this problem by allowing you to define automation logic once, and then call the logic from other workflows.
 
-###  How to implement reusable workflows
-To utilize reusable workflows:
-- Create a reusable workflow in your repo’s folder. This file will include the automation steps you want to share—like testing, building, or deploying.
-- You must explicitly enable a workflow to be reusable by configuring it with the workflow_call event.
-- In your main workflows (caller workflows), you then reference this reusable file and provide any required inputs or secrets.
+Reusable workflows are special GitHub Actions workflows that other workflows can call, similar to functions in programming. You create them to share repeated logic like build steps, testing procedures, or deployment strategies. After you create a reusable workflow, you can reference it from any other workflow in the same repository or even in different repositories.
+
+:::image type="content" source="../media/reusable-workflow.png" alt-text="Diagram that shows the concept of reusable workflows in GitHub Actions. Multiple repositories or workflows can reference a central workflow." border="false":::
+
+### Why use reusable workflows?
+
+These are the benefits of using reusable workflows:
+
+- **Consistency.** Teams can follow the same automation standards across all projects.
+- **Efficiency.** Instead of copying and pasting steps, you just point to a reusable workflow.
+- **Easier updates.** When a process changes, such as by adding a test step, you update it in one location. Then all workflows that use the workflow benefit automatically.
+- **Scalability.** Reusable workflows are ideal for platform or DevOps teams that manage multiple services.
+
+Next, explore how to use reusable workflows to improve your projects.
+
+### Implement reusable workflows
+
+To use reusable workflows:
+
+1. In your repository folder, create a reusable workflow. The file includes the automation steps you want to share, like common steps involved in testing, building, and deploying.
+1. Explicitly enable a workflow to be reusable by configuring it with the `workflow_call` event.
+1. In your main workflows (caller workflows), reference this reusable file and provide any required inputs or secrets.
 
 To illustrate the advantages of reusable workflows, consider the following real-world scenario.
 
-### Real-world example
-Imagine your organization has 10 microservices and all of them need the same steps to:
+### Example
+
+Imagine that your organization has 10 microservices. All 10 microservices need the same steps to:
+
 - Run tests
 - Lint code
 - Deploy to a specific environment
 
-Without reusable workflows, every repo contains duplicated logic. With reusable workflows, you:
-- Define the process once in a central file (e.g., ci-standard.yml)
-- Call this file from every service’s own workflow, passing in variables like environment or app name
+Without reusable workflows, every repo contains duplicated logic that lists the repeated steps in each workflow.
 
-Now, if a new security step or tool is added (like scanning for vulnerabilities), you only need to add it once in the reusable workflow. All 10 services will immediately use the updated process without modifying each one.
+If you use reusable workflows:
 
-By understanding how reusable workflows function and their benefits, you can adopt best practices to maximize their effectiveness and ensure seamless integration into your CI/CD pipelines.
+- You define the process once in a central file (for example, in `ci-standard.yml`).
+- You call this file from every microservice’s own workflow, passing in variables like environment or the application name.
+
+If a new security step or tool is added, such as to scan for vulnerabilities, you add it only once in the reusable workflow. All 10 microservices immediately begin to use the updated process. You don't have to modify the 10 microservices.
+
+By understanding how reusable workflows function and their benefits, you can adopt best practices to maximize their effectiveness and ensure seamless integration with your CI/CD pipelines.
 
 ### Best practices
+
 - Centralize your reusable workflows in one repository if you plan to share them across teams.
-- Use branches or tags to version your workflows (e.g., use @v1), so changes won’t break everything unexpectedly.
-- Document inputs and secrets clearly—reusable workflows often rely on inputs and secrets, and teams need to know what to supply.
-- Combine with composite actions if you only need to reuse a few steps, not a full workflow.
+- Use branches or tags to version your workflows (for example, use `@v1`), so you can easily roll back changes if it's necessary.
+- Document inputs and secrets clearly. Reusable workflows often rely on inputs and secrets. Teams need to know what information to use.
+- If you need to reuse only a few steps, combine reusable workflows with composite actions instead of creating a full workflow.
 
-### Summary 
-Reusable workflows are a powerful way to enforce consistency, reduce duplication, and scale DevOps practices in any engineering team. Whether you're managing a monorepo, microservices, or open-source libraries, reusable workflows can simplify automation, making CI/CD faster, cleaner, and easier to manage.
+Reusable workflows are a powerful way to enforce consistency, reduce duplication, and scale DevOps practices in any engineering team. Whether you're managing a single repository, microservices, or open-source libraries, reusable workflows can simplify automation, so your CI/CD is faster, cleaner, and easier for you to manage.
 
-<!-- INFOMAGNUS UPDATES for sub OD 2.1.1, 2.1.2, 2.1.3, and 2.1.4 go here. Source Material: Infomagnus team to find source material and cite it.
-https://docs.github.com/en/actions/writing-workflows/about-workflows , https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs , https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/triggering-a-workflow , https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflows/viewing-workflow-run-history , https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/troubleshooting-workflows/about-troubleshooting-workflows -->
 
-## Identify the event that triggered a workflow from its effects
-Understanding what triggered a GitHub Actions workflow—whether it was a push to a branch, a pull request, a scheduled job, or a manual dispatch—is crucial for debugging, auditing, and improving CI/CD pipelines. You can identify the triggering event by examining the workflow run, the repository changes, or the issue/pull request involved.
+## Identify the event that triggered a workflow
 
-:::image type="content" source="../media/workflow-triggers.png" alt-text="Diagram illustrating various workflow triggers in GitHub Actions, such as push, pull request, schedule, and manual dispatch." border="true":::
+Understanding what triggered a GitHub Actions workflow is crucial for debugging, auditing, and improving CI/CD pipelines. Type of triggers include a push to a branch, a pull request created or updated, a scheduled job, or a manual dispatch. You can identify the triggering event by examining the workflow run, the repository changes, and the related GitHub issue or pull request.
 
-###  What is a workflow trigger?
-A workflow trigger is an event that causes a workflow to start. GitHub supports various types of triggers, including:
+:::image type="content" source="../media/workflow-triggers.png" alt-text="Diagram that shows various workflow triggers in GitHub Actions, such as push, pull request, schedule, and manual dispatch." border="false":::
+
+### What is a workflow trigger?
+
+A workflow trigger is an event that causes a workflow to run. GitHub supports various types of triggers, including:
+
 - `push` or `pull_request` (based on code changes)
-- `workflow_dispatch` (manual trigger)
-- schedule (cron jobs)
+- `workflow_dispatch` (a manual trigger)
+- `schedule` (cron jobs)
 - `repository_dispatch` (external systems)
-- Issue, discussion, and PR events (e.g., issues.opened, pull_request.closed)
+- Issue, discussion, and pull request events (for example, `issues.opened`, `pull_request.closed`)
 
-### Where to identify the trigger event?
-You can identify the trigger event in several ways:  
+### Identify the trigger event
 
-1. From the GitHub Actions UI
-- Navigate to the Actions tab in your repository.
-- Click on a workflow run.
-- The event type (e.g., `push`, `pull_request`, `workflow_dispatch`) is displayed at the top of the workflow run summary.
+You can identify a workflow trigger event in multiple ways:  
 
-2. Using github.event_name in Logs or workflow
-- GitHub exposes context data during a workflow run. The github.event_name variable tells you which event triggered the workflow.
-- You can print it in a step for debugging:
+- Use the GitHub Actions UI:
 
-```yml
--name: Show event trigger
-  run: echo "Triggered by ${{ github.event_name }}"
-```
-3. Using workflow Run details
-- If you're inspecting workflow runs programmatically (e.g., via the API), the run object includes an event property that specifies the trigger.
-- You can also find the commit SHA, actor, and timestamp to trace what caused the trigger.
+  1. In your repository, select the **Actions** tab.
+  1. Select a workflow run.
+
+  An event type, such as `push`, `pull_request`, or `workflow_dispatch`, appears at the top of the workflow run summary.
+
+- Use `github.event_name` in the logs or in a workflow.
+
+  - GitHub exposes context data during a workflow run. The `github.event_name` variable tells you which event triggered the workflow.
+  - You can print the information in a step for debugging:
+
+    ```yml
+    -name: Show event trigger
+      run: echo "Triggered by ${{ github.event_name }}"
+    ```
+
+- Use workflow run details:
+
+  - If you inspect workflow runs programmatically, such as by using API, the run object includes an `event` property that specifies the trigger.
+  - You can find the commit Secure Hash Algorithm (SHA), actor, and timestamp to trace what caused the trigger.
 
 ### Infer the trigger from repository effects
 
-Sometimes you may not have direct access to the workflow run but want to infer what triggered it based on repository activity. Here's how:
+You might not have direct access to the workflow run, but you still want to infer what triggered the workflow run based on repository activity:
 
-| Observed Behavior                                       | Trigger Event           |
+| Observed behavior                                       | Trigger event           |
 |---------------------------------------------------------|--------------------------|
-| A new commit pushed to `main` and workflow ran          | `push` event             |
-| A new pull request opened or updated                    | `pull_request` event     |
-| A contributor manually ran a workflow                   | `workflow_dispatch`      |
-| Workflow runs every night at a specific time            | `schedule` (cron)        |
-| Workflow ran after an external service call             | `repository_dispatch`    |
-| Workflow ran when an issue was labeled or commented on  | `issues.*` event         |
+| A new commit was pushed to `main` and the workflow ran.          | `push` event             |
+| A pull request was opened or updated.                | `pull_request` event     |
+| A contributor manually ran a workflow.                   | `workflow_dispatch`      |
+| The workflow runs daily at a specific time.            | `schedule` (cron)        |
+| The workflow ran after an external service call.             | `repository_dispatch`    |
+| The workflow ran when a label or comment was added to an issue.  | `issues.*` event         |
 
-By reviewing timestamps, pull request activity, or commit history, you can often pinpoint what action caused the workflow to run.
-### Summary
-To identify what triggered a workflow:
-- Check the workflow run summary in the Actions tab.
-- Print or log github.event_name inside the workflow for visibility.
-- Compare timestamps and repo activity (commits, PRs, issues) to infer the trigger.
-- Use the full event context for deeper investigation.
+By reviewing timestamps, pull request activity, and commit history, you can often pinpoint what action caused the workflow to run.
 
-These practices help with debugging, auditing, and improving workflow reliability across your development and deployment pipelines.
-## Describe a workflow's effects from reading its configuration file
-To describe a workflow's effects from reading its configuration file, you need to analyze the structure and contents of the ".yml" file stored in .github/workflows/. This file outlines when the workflow runs, what it does, and how it behaves under different conditions.
+To summarize how to identify what triggered a workflow:
 
-### Interpret a workflow's effects:
-1. Identify the trigger (on:)
-This section tells you when the workflow is initiated. For example:
-```yml
-on:
-  push:
-    branches: [main]
-  pull_request:
-    types: [opened, synchronize]
-  workflow_dispatch:
-```
-Effect:
-- Runs automatically when code is pushed to the main branch.
-- Runs when a pull request is created or updated.
-- Can also be triggered manually by a user
+- Check the workflow run summary on the **Actions** tab.
+- Print or log `github.event_name` inside the workflow for visibility.
+- Compare timestamps and repository activity (commits, pull requests, issues) to infer the trigger.
+- Use the full `event` context for deeper investigation.
 
-2. Understand the jobs and steps (jobs:)
-Jobs describe what the workflow will do. For instance:
-```yml
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Install dependencies
-        run: npm install
-      - name: Run tests
-        run: npm test
-```
-Effect:
-- Uses a Linux virtual environment (ubuntu-latest).
-- Checks out the repository's code.
-- Installs project dependencies.
-- Runs automated tests.
+These practices help you debug, audit, and improve workflow reliability across your development and deployment pipelines.
 
-3. Evaluate the purpose and outcome
-- By reading the configuration, you can describe the intended outcome of the workflow:
-“This workflow is a Continuous Integration (CI) pipeline. It ensures that any new code pushed to the repository or submitted via pull request is automatically tested. If tests fail, the workflow will indicate this in the GitHub UI, helping maintain code quality.”
+## Describe a workflow effect by reading its configuration file
 
-4. Optional features affecting behavior
-- env: sets environment variables.
-- if: adds conditional logic to run certain steps only when criteria are met.
-- timeout-minutes: or continue-on-error: influence execution behavior and error handling.
+To describe a workflow's effects from reading its configuration file, analyze the structure and contents of the `.yml` file stored in `.github/workflows/`.
 
-### Summary
-From reading a workflow’s configuration file, you can describe its effects by identifying:
-- When it runs (on: section),
-- What it does (jobs and steps),
-- Where it runs (runs-on),
-- Why it runs (its purpose: testing, deploying, linting, etc.),
-- How it behaves under certain conditions (environment, filters, logic).
+The workflow configuration file identifies the following information about the workflow:
+
+- When it runs (in the `on` section).
+- What it does (in `jobs` and `steps`).
+- Where it runs (the `runs-on` section).
+- Why it runs (its purpose, such as testing, deploying, or linting).
+- How it behaves in specific conditions (environment, filters, logic).
+
+### Interpret a workflow effect
+
+1. Identify the trigger.
+
+   To identify what action initiated the workflow, see the `on` section of the workflow.
+
+   For example:
+
+   ```yml
+   on:
+     push:
+       branches: [main]
+     pull_request:
+       types: [opened, synchronize]
+     workflow_dispatch:
+   ```
+
+   This example workflow:
+
+   - Runs automatically when code is pushed to the main branch (`push`).
+   - Runs when a pull request is created or updated (`pull_request`).
+   - Can be triggered manually by a user (`workflow_dispatch`).
+
+1. Identify the workflow jobs and steps.
+
+   To determine what the workflow does, see the `jobs` and `steps` sections of the workflow.
+
+   For example:
+
+   ```yml
+   jobs:
+     test:
+       runs-on: ubuntu-latest
+       steps:
+         - name: Checkout code
+           uses: actions/checkout@v3
+         - name: Install dependencies
+           run: npm install
+         - name: Run tests
+           run: npm test
+   ```
+
+   This example workflow:
+
+   - Uses a Linux virtual environment (`runs-on`).
+   - Checks out the repository's code (`steps` > `name`).
+   - Installs project dependencies (`steps` > `name`).
+   - Runs automated tests (`steps` > `name`).
+
+1. Evaluate the workflow's purpose and outcome.
+
+   By reading the configuration file, you can describe the intended outcome of the workflow:
+
+   “This workflow is a continuous integration (CI) pipeline. It ensures that any new code that is pushed to the repository or submitted via pull request is automatically tested. If tests fail, the GitHub workflow UI displays this result to help you maintain code quality.”
+
+1. Identify or set optional features that affect how the workflow runs:
+
+   - `env` sets environment variables.
+   - `if` adds conditional logic to run specific steps only when criteria are met.
+   - `timeout-minutes` or `continue-on-error` set workflow execution and error handling.
 
 ## Diagnose a failed workflow run
-### 1. Go to the Actions Tab
-Navigate to the Actions tab of your repository, then:
-- Find the failed run (usually marked with a red)
-- Click the failed workflow to open the run summary.
 
-### 2. Review the error in Logs
-In the run summary:
-- Expand each job and step until you find the one marked as failed.
-- Click to view its logs.
+1. In your repository, go to the **Actions** tab.
 
-Look for:
-- Error messages
-- Stack traces
-- Exit codes
+1. Find the failed run (typically indicated by a red **X**).
 
-For example, a failed test might show npm ERR! Test failed. or exit code 1.
+1. Select the failed workflow to open the run summary.
 
-### 3. Check the workflow configuration file
-Use the .yml file to determine:
-- What was each step trying to do?
-- If there are environment variables (env:) or conditionals (if:) affecting execution.
-- If the failure is due to a missing dependency, syntax error, or misconfigured step.
+1. In the workflow logs, review the error.
 
-If this step failed, check:
-- Were dependencies installed successfully in the previous step?
-- Do test files exist and pass locally?
+   1. In the run summary, expand each job and step until you find the one that indicates failure.
+   1. Select the job or step to view its logs.
+   1. Look for:
 
-### 4. Common failure scenarios
-| Symptom | Likely Cause |
+      - Error messages
+      - Stack traces
+      - Exit codes
+
+    For example, a failed test might show `npm ERR! Test failed` or `exit code 1`.
+
+1. Check the workflow configuration file.
+
+    Use the `.yml` file to determine:
+
+    - What was each step trying to do?
+    - If there are environment variables (`env`) or conditionals (`if`) that affect execution.
+    - If the failure is due to a missing dependency, syntax error, or misconfigured step.
+
+    If a step fails, check for the following causes:
+
+    - Were dependencies installed successfully in the preceding step?
+    - Do test files exist and pass locally?
+
+### Common failure scenarios
+
+The following table describes common workflow failure scenarios:
+
+| Symptom | Likely cause |
 |--------|--------------|
-| Step fails with `command not found` | Missing dependency or wrong setup |
-| `npm install` fails | Corrupt `package-lock.json`, network issue |
-| Test step fails | Unit test issues, missing config or invalid test syntax |
-| `Permission denied` | Incorrect file permissions or missing secrets |
+| A step fails and returns `command not found`. | Missing dependency or wrong setup |
+| `npm install` fails. | Corrupt `package-lock.json` file or a network issue |
+| A test step fails. | Unit test issues, missing configuration file, or invalid test syntax |
+| `Permission denied` appears. | Incorrect file permissions or missing secrets |
 
-## Identify ways to access the workflow logs from the user interface
+## Identify how to access workflow logs in GitHub
 
-### 1. Go to the repository
-Navigate to the repository that contains the workflow. 
-### 2. Click on the Actions tab
-Navigate to Actions tab located in the top navigation bar of the repo. This tab shows a history of all workflow runs for that repository.
+1. In your repository, go to the **Actions** tab.
 
-### 3. Select the workflow name
-- Choose the relevant workflow from the list.
-For example, if your .yml file has:
-```yml
-name: CI Workflow
-```
-You'll see a link named CI Workflow in the list.
-### 4. Choose a specific run
-- You’ll see a list of runs with status indicators
-- Click on the timestamp or commit message of the specific run you want to inspect.
+1. In the list of workflows, select the relevant workflow.
 
-### 5. Expand each job and step
-- The run summary page displays jobs as defined in the workflow file (e.g., build, test).
-- Click on a job to expand it.
-- Inside the job, expand individual steps (e.g., "Install dependencies", "Run tests").
+   For example, if your `.yml` file has the following code, a link titled **CI Workflow** appears in the list:
 
-### 6. View log output
-- Clicking a step shows the full log output (e.g., console logs, error messages, debug info).
-- You can copy, search, or download these logs.
+   ```yml
+   name: CI Workflow
+   ```
 
-### Summary
+1. Select a specific run.
+
+    In the list of runs that show status, select the timestamp or commit message of the specific run you want to inspect.
+
+1. Expand each job and step.
+
+    The run summary page displays jobs as they're defined in the workflow file, such as build or test:
+
+    1. Select a job to expand it.
+    1. Inside the job, expand individual steps, such as "Install dependencies" or "Run tests."
+
+1. View log output.
+
+   To view the full log output, including console logs, error messages, and debug information, select a workflow step. You can copy, search, and download the logs.
+
+The following table summarizes the steps you take to access workflow logs:
+
 | Action | Purpose |
 |--------|---------|
-| **Actions tab** | View all workflow runs |
-| **Select workflow name** | Filter runs by workflow |
-| **Click on a run** | See specific job/step results |
-| **Expand steps** | View detailed logs |
-| **Download logs** | For offline or team troubleshooting |
+| **Actions tab** | View all workflow runs. |
+| **Select the workflow name** | Filter runs by workflow. |
+| **Select a run** | See specific job and step results. |
+| **Expand steps** | View detailed logs. |
+| **Download logs** | Download logs for offline or team troubleshooting. |
 
 ## Action logs for the build
 
 When a workflow runs, it produces a log that includes the details of what happened and any errors or test failures.
 
-If there's an error or if a test fails, you see a red rather than a green check mark in the logs. You can examine the details of the error or failure to investigate what happened.
+If an error occurs or if a test fails, a red X instead of a green checkmark appears in the logs. You can examine the details of the error or failure to investigate what happened.
 
-:::image type="content" source="../media/2-log-details.png" alt-text="Screenshot of GitHub Actions log with details on a failed test." border="true":::
- 
+:::image type="content" source="../media/2-log-details.png" alt-text="Screenshot of GitHub Actions log with details on a failed test.":::
+
 ## Customize workflow templates
 
-At the beginning of this module, we described a scenario where you need to set up CI for your team. The Node.js template is a great start, but you want to customize it to better suit your own team's requirements. You want to target different versions of Node and different operating systems. You also want the build and test steps to be separate jobs.
+At the beginning of this module, you considered a scenario in which you need to set up CI for your team of developers. The Node.js template is a great start, but you want to customize it to better suit your team's requirements. You want to target different versions of Node.js and different operating systems. You also want the build and test steps to be separate jobs.
 
-Let's take a look at how you customize a workflow.
+Here's an example of a customized workflow:
 
 ```yml
 strategy:
@@ -328,9 +377,9 @@ strategy:
     node-version: [16.x, 18.x]
 ```
 
-Here, we configured a [build matrix](https://docs.github.com/enterprise-server@3.14/actions/writing-workflows/about-workflows#using-a-build-matrix) for testing across multiple operating systems and language versions. This matrix produces four builds, one for each operating system paired with each version of Node.
+In this example, you configure a [build matrix](https://docs.github.com/enterprise-server@3.14/actions/writing-workflows/about-workflows#using-a-build-matrix) for testing across multiple operating systems and language versions. This matrix produces four builds, one for each operating system paired with each version of Node.js.
 
-Four builds, along with all their tests, produce quite a bit of log information. It might be difficult to sort through it all. In the following sample, we show you how to move the test step to a dedicated test job. This job tests against multiple targets. Separating the build and test steps makes it easier to understand the log.
+Four builds and their tests produce a large amount of log data. It might be difficult to sort through it all. In the following sample, you move the test step to a dedicated test job. This job tests against multiple targets. Separating the build and test steps makes it easier to work with the log data.
 
 ```yml
 test:
@@ -353,24 +402,19 @@ test:
       CI: true
 ```
 
-<!-- INFOMAGNUS UPDATES for sub OD 2.2.1 go here. Source Material: Infomagnus team to find source material and cite sources when they update material 
-https://docs.github.com/en/actions/writing-workflows/about-workflows -->
 
-## Locate a workflow in a repository
 
-<!-- InfoMagnus END -->
+## Work with artifacts
 
-## What are artifacts?
+When a workflow produces something other than a log entry, the product is called an *artifact*. For example, the Node.js build produces a Docker container that can be deployed. The container is an artifact that you can upload to storage by using the [actions/upload-artifact](https://github.com/actions/upload-artifact?azure-portal=true) action. You can later download the artifact from storage by using [actions/download-artifact](https://github.com/actions/download-artifact?azure-portal=true).
 
-When a workflow produces something other than a log entry, the product is called an *artifact*. For example, the Node.js build produces a Docker container that can be deployed. This artifact, the container, can be uploaded to storage by using the action [actions/upload-artifact](https://github.com/actions/upload-artifact?azure-portal=true) and later downloaded from storage by using the action [actions/download-artifact](https://github.com/actions/download-artifact?azure-portal=true).
+Storing an artifact preserves it between jobs. Each job uses a fresh instance of a VM, so you can't reuse the artifact by saving it on the VM. If you need your artifact in a different job, you can upload the artifact to storage in one job, and download it for the other job.
 
-Storing an artifact preserves it between jobs. Each job uses a fresh instance of a virtual machine (VM), so you can't reuse the artifact by saving it on the VM. If you need your artifact in a different job, you can upload the artifact to storage in one job, and download it for the other job.
+### Artifact storage
 
-## Artifact storage
+Artifacts are stored in storage space on GitHub. The space is free for public repositories, and some storage is free for private repositories, depending on the account. GitHub stores your artifacts for 90 days.
 
-Artifacts are stored in storage space on GitHub. The space is free for public repositories and some amount is free for private repositories, depending on the account. GitHub stores your artifacts for 90 days.
-
-In the following workflow snippet, notice that in the `actions/upload-artifact@main` action there's a `path:` attribute. The value of this attribute is the path to store the artifact. Here, we specify *public/* to upload everything to a directory. If we just wanted to upload a single file, we use something like *public/mytext.txt*.
+In the following workflow snippet, notice that in the `actions/upload-artifact@main` action there's a `path` attribute. The value of this attribute is the path to store the artifact. In this example, you specify *public/* to upload everything to a directory. If you wanted only to upload a single file, use something like *public/mytext.txt*.
 
 ```yml
   build:
@@ -387,7 +431,7 @@ In the following workflow snippet, notice that in the `actions/upload-artifact@m
           path: public/
 ```
 
-To download the artifact for testing, the build must complete successfully and upload the artifact. In the following code, we specify that the test job depends on the build job.
+To download the artifact for testing, the build must complete successfully and upload the artifact. In the following code, you specify that the test job depends on the build job.
 
 ```yml
 test:
@@ -395,7 +439,7 @@ test:
     runs-on: ubuntu-latest
 ```
 
-In the following workflow snippet, we download the artifact. Now the test job can use the artifact for testing.
+In the following workflow snippet, you download the artifact. Now the test job can use the artifact for testing.
 
 ```yml
 steps:
@@ -406,15 +450,17 @@ steps:
         path: public
 ```
 
-For more information about using artifacts in workflows, see [Storing workflow data as artifacts](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/storing-workflow-data-as-artifacts) in the GitHub documentation.
+For more information about using artifacts in workflows, see [Storing workflow data as artifacts](https://docs.github.com/enterprise-cloud@latest/actions/using-workflows/storing-workflow-data-as-artifacts).
 
-## Automate reviews in GitHub using workflows
+## Automate reviews in GitHub by using workflows
 
-So far, we described starting the workflow with GitHub events such as *push* or *pull-request*. We could also run a workflow on a schedule, or on some event outside of GitHub.
+In addition to starting a workflow via GitHub events like `push` and `pull-request`, you can run a workflow on a schedule or after some event outside GitHub.
 
-Sometimes, we want to run the workflow only after a person performs an action. For example, we might only want to run a workflow after a reviewer approves the pull request. For this scenario, we can trigger on `pull-request-review`.
+You might want a workflow to run only after a user completes a specific action, such as after a reviewer approves a pull request. For this scenario, you can trigger on `pull-request-review`.
 
-Another action we could take is to add a label to the pull request. In this case, we use the [pullreminders/label-when-approved-action](https://github.com/pullreminders/label-when-approved-action?azure-portal=true) action.
+Another action you can take is to add a label to the pull request. In this case, use the [pullreminders/label-when-approved-action](https://github.com/pullreminders/label-when-approved-action?azure-portal=true) action.
+
+For example:
 
 ```yml
     steps:
@@ -426,6 +472,6 @@ Another action we could take is to add a label to the pull request. In this case
          ADD_LABEL: "approved"
 ```
 
-Notice the block called `env:`. This block is where you set the environment variables for this action. For example, you can set the number of approvers needed. Here, it's one. The `secrets.GITHUB_TOKEN` authentication variable is required because the action must make changes to your repository by adding a label. Finally, you supply the name of the label to add.
+In the `env` block, you set the environment variables for the action. For example, you can set the number of approvers required to run the workflow. In this example, it's one. The `secrets.GITHUB_TOKEN` authentication variable is required because the action must make changes to your repository by adding a label. Finally, you enter the name of the label to add.
 
-Adding a label could be an event that starts another workflow, such as a merge. We cover this event in the next module on continuous delivery with GitHub Actions.
+Adding a label might be an event that starts another workflow, such as a merge. We cover this event in the next module, which describes using continuous delivery in GitHub Actions.
