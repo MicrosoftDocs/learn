@@ -31,11 +31,11 @@ quiz:
     choices:
     - content: "Edit the Brands model to show brands suggested by Bing, and add any new brands you want to detect."
       isCorrect: true
-      explanation: "That's correct. You can both detect known brands, and well as include new brands you want to detect by providing information about it."
+      explanation: "That's correct. You can both detect known brands, and include new brands you want to detect by providing information about it."
     - content: "Edit all recorded conference call videos to include a caption of each brand seen on their first appearance."
       isCorrect: false
-      explanation: "That's incorrect. You can both detect known brands, and well as include new brands you want to detect by providing information about it. Editing the videos is not necessary."
+      explanation: "That's incorrect. You can both detect known brands, and include new brands you want to detect by providing information about it. Editing the videos isn't necessary."
     - content: "Embed the Azure Video Indexer widgets in a custom web site."
       isCorrect: false
-      explanation: "That's incorrect. You can both detect known brands, and well as include new brands you want to detect by providing information about it. Embedding the widgets is not solving the problem."
+      explanation: "That's incorrect. You can both detect known brands, and include new brands you want to detect by providing information about it. Embedding the widgets isn't solving the problem."
 
