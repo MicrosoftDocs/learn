@@ -23,7 +23,7 @@ quiz:
     - content: "Enable anonymous access for the blob container"
       isCorrect: false
       explanation: "Incorrect. Anonymous access is not required for Azure AI Search to access documents in a blob container."
-    - content: "In an Azure AI Services resource, add a data source that references the container where the files are stored"
+    - content: "In an Azure AI Search resource, add a data source that references the container where the files are stored"
       isCorrect: true
       explanation: "Correct. To search files in a blob container, you should create a data source"
   - content: "You're creating an index that includes a field named modified_date. You want to ensure that the modified_date field can be included in search results. Which attribute must you apply to the modified_date field in the index definition?"
