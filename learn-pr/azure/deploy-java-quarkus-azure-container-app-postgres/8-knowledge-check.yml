@@ -5,9 +5,8 @@ metadata:
   title: Module assessment
   description: Knowledge check
   ms.date: 03/06/2025
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: yoterada
+  author: yoshioterada
+  ms.author: yoterada
   ms.topic: unit
   ms.custom:
     - team=devdiv
@@ -49,4 +48,4 @@ quiz:
     - content: "From 255.255.255.255 to 255.255.255.255"
       isCorrect: false
       explanation: "This range isn't valid."
-
+

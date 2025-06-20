@@ -5,13 +5,12 @@ metadata:
   title: Deploy a web app to Azure
   description: In this unit, you'll learn how to use the Azure Toolkit for IntelliJ to deploy a Java web app to Azure App Service.
   ms.date: 03/18/2024
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: jialuogan
+  author: silenceJialuo
+  ms.author: jialuogan
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java
 durationInMinutes: 4
 content: |
   [!include[](includes/4-deploy-web-app-azure.md)]
-
+
