@@ -5,7 +5,7 @@ metadata:
   description: Learn how to use Azure OpenAI and DALL·E to create interactive stories with AI-generated characters, dialogue, and branching narrative paths."
   ms.date: 4/28/2025
   author: kprks
-  ms.author: v-kperkes
+  ms.author: kbarreto
   ms.topic: module-intro-to-product
   ms.service: artificial-intelligence
 title: Breathing life into stories - character and dialogue creation with Azure

@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to generate character portraits using Azure OpenAI's DALL·E. Understand how to craft prompts, influence visual style, and refine AI-generated images to match your story's tone and world-building needs."
   ms.date: 4/28/2025
   author: kprks
-  ms.author: v-kperkes
+  ms.author: kbarreto
   ms.topic: unit
   
 durationInMinutes: 10
