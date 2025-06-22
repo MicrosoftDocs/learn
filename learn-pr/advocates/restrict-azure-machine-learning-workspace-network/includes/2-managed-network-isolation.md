@@ -2,5 +2,3 @@ Using a managed virtual network provides an easier configuration for network iso
 
 - **Allow internet outbound mode**: Use this option if you want to allow your machine learning engineers access the internet freely. You can create other private endpoint outbound rules to let them access your private resources on Azure.
 - **Allow only approved outbound mode**: Use this option if you want to minimize data exfiltration risk and control what your machine learning engineers can access. You can control outbound rules using private endpoint, service tag, and FQDN.
-
-![Diagram of a managed network with allow only approved outbound mode configured.](../media/managed-virtual-network.png)

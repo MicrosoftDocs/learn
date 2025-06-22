@@ -2,39 +2,39 @@ To configure a managed virtual network that allows only approved outbound commun
 
 1. On Azure Cloud Shell, run the following command to update an existing Azure Machine Learning workspace: 
 
-```azurecli
-az ml workspace update --name ws --resource-group rg --managed-network allow_only_approved_outbound
-```
+    ```azurecli
+        az ml workspace update --name ws --resource-group rg --managed-network allow_only_approved_outbound
+    ```
 
 1. Next, you need a YAML file to configure the rules for the approved destinations. An example with sample rules for service tag, FQDN, and private endpoint is as follows:
 
- ```yaml
-name: myworkspace_dep
-managed_network:
-  isolation_mode: allow_only_approved_outbound
-  outbound_rules:
-    - name: added-servicetagrule
-      destination:
-        port_ranges: [80, 8080]
-        protocol: TCP
-        service_tag: DataFactory
-      type: service_tag
-    - name: add-fqdnrule
-      destination: 'pypi.org'
-      type: fqdn
-    - name: added-perule
-      destination:
-        service_resource_id: /subscriptions/<SUBSCRIPTION_ID>/resourceGroups/<RESOURCE_GROUP>/providers/Microsoft.Storage/storageAccounts/<STORAGE_ACCOUNT_NAME>
-        spark_enabled: true
-        subresource_target: blob
-      type: private_endpoint
-```
+     ```yaml
+    name: myworkspace_dep
+    managed_network:
+      isolation_mode: allow_only_approved_outbound
+      outbound_rules:
+        - name: added-servicetagrule
+          destination:
+            port_ranges: [80, 8080]
+            protocol: TCP
+            service_tag: DataFactory
+          type: service_tag
+        - name: add-fqdnrule
+          destination: 'pypi.org'
+          type: fqdn
+        - name: added-perule
+          destination:
+            service_resource_id: /subscriptions/<SUBSCRIPTION_ID>/resourceGroups/<RESOURCE_GROUP>/providers/Microsoft.Storage/storageAccounts/<STORAGE_ACCOUNT_NAME>
+            spark_enabled: true
+            subresource_target: blob
+          type: private_endpoint
+    ```
 
 1. After configuring the file, you can update the workspace with the command: 
 
-```azurecli
- az ml workspace update --file workspace.yaml --name ws --resource-group MyGroup
-```
+    ```azurecli
+         az ml workspace update --file workspace.yaml --name ws --resource-group MyGroup
+    ```
 
 When the isolation mode of a managed virtual network is set to *Allow internet outbound*, Azure automatically creates private endpoint outbound rules. These rules are required for the workspace and its associated resources, such as Key Vault, Storage Account, Container Registry, and Azure Machine Learning workspace, when public network access is disabled.
 
