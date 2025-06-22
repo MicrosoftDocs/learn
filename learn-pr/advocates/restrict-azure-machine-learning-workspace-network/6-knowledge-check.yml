@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.restrict-azure-machine-learning-network-traffic.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: Test your knowledge of Azure Machine Learning managed virtual networks.
+  ms.date: 06/20/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: Choose the best response for each question. 
+quiz:
+  questions:
+    - content: "You need to restrict the internet access of an Azure Machine Learning workspace. Which of the below will accomplish that?"
+      choices:
+        - content: "Configure the Azure virtual network for the Azure Machine Learning workspace to route all traffic to the on-premises network."
+          isCorrect: false
+          explanation: "Routing traffic to the on-premises network can be used to access on-premises resources but won't restrict internet access to the compute resources on an Azure Machine Learning workspace."
+        - content: "Set the isolation mode of the Azure Machine Learning workspace to allow_internet_outbound."
+          isCorrect: false
+          explanation: "The allow_internet_outbound setting enables compute resources on the Azure Machine Learning workspace to access the internet freely."
+        - content: "Set the isolation mode of the Azure Machine Learning workspace to allow_only_approved_outbound."
+          isCorrect: true
+          explanation: "The allow_only_approved_outbound setting restricts internet access from the compute resources in the Azure Machine Learning workspace to destinations allowed in the outbound rule."
+    - content: "Which statement from the below is a benefit of using Managed networks for isolation?"
+      choices:
+        - content: "Supports managed online endpoints."
+          isCorrect: true
+          explanation: "Managed networks support the utilization of managed online endpoints for real-time inferencing. Managed online endpoints are platform managed and require less administrative overhead."
+        - content: "Connect to on-premises resources."
+          isCorrect: false
+          explanation: "To connect to on-premises resources, you need to configure a custom virtual network or use a virtual network in between the managed network and the on-premises gateway."
+        - content: "Support for non-HTTP/S endpoint resources."
+          isCorrect: false
+          explanation: "Managed networks can only access HTTP/S endpoint resources."
+    - content: "As the cloud administrator of the Azure Machine Learning workspace, you receive a request from a data scientist to access the Python Package Index (PyPI) so the Azure Machine Learning workspace can access Python packages. As your workspace is configured to restrict access to the internet, how can you allow your data scientists to download these packages while staying compliant with your company's policies?"
+      choices:
+        - content: "Change the isolation mode of the Azure Machine Learning workspace to allow_internet_outbound."
+          isCorrect: false
+          explanation: "Changing the isolation mode to allow_internet_outbound allows for unrestricted internet access from the compute nodes."
+        - content: "Add a new entry to the outbound rule for a private endpoint."
+          isCorrect: false
+          explanation: "Service endpoints can be used for Azure resources."
+        - content: "Add a new entry to the outbound rule for an FQDN."
+          isCorrect: true
+          explanation: "You can add the domain of the website your compute nodes download packages from to the outbound rule."

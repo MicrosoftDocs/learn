@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.restrict-azure-machine-learning-network-traffic
+metadata:
+  ms.author: viniap
+  author: Orin-Thomas
+  ms.date: 06/20/2025
+  title: Restrict Azure Machine Learning workspace network traffic 
+  description: Overview of planning and securing Azure Machine Learning networking
+  ms.topic: module
+  moduleType: standard
+  ms.collection: ce-advocates-ai-copilot
+title: Restrict Azure Machine Learning workspace network traffic
+summary: Learn how to secure Azure Machine Learning workspaces.
+Abstract: |
+  After completing this module, you'll be able to:
+  -	Understand Azure Machine Learning networking concepts
+  -	Plan for networking isolation for Azure Machine Learning workspaces
+  -	Secure Azure Machine Learning workspaces networking
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge of and experience with:
+  - Fundamental monitoring concepts.
+  - Fundamental Azure Machine Learning concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.restrict-azure-machine-learning-network-traffic.azure-machine-learning-managed-virtual-networks
+- learn.restrict-azure-machine-learning-network-traffic.managed-network-isolation
+- learn.restrict-azure-machine-learning-network-traffic.custom-network-isolation
+- learn.restrict-azure-machine-learning-network-traffic.comparing-network-configurations
+- learn.restrict-azure-machine-learning-network-traffic.configure-managed-virtual-network-approved-outbound
+- learn.restrict-azure-machine-learning-network-traffic.knowledge-check
+- learn.restrict-azure-machine-learning-network-traffic.summary
+badge:
+  uid: learn.restrict-azure-machine-learning-network-traffic-badge

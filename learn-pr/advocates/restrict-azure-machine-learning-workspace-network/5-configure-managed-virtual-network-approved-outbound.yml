@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.restrict-azure-machine-learning-network-traffic.configure-managed-virtual-network-approved-outbound
+title: Configure managed virtual network approved outbound
+metadata:
+  title: Configure managed virtual network approved outbound
+  description: Learn how to configure approved outbound traffic for managed virtual networks in Azure Machine Learning.
+  ms.date: 06/20/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-configure-managed-virtual-network-approved-outbound.md)]

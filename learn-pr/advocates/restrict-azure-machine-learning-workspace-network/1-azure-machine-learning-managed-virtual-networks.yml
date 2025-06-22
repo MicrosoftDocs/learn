@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.restrict-azure-machine-learning-network-traffic.azure-machine-learning-managed-virtual-networks
+title: Azure Machine Learning managed virtual networks
+metadata:
+  title: Azure Machine Learning managed virtual networks
+  description: Understand Azure Machine Learning managed virtual networks.
+  ms.date: 06/20/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-azure-machine-learning-managed-virtual-networks.md)]
