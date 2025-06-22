@@ -7,11 +7,11 @@ metadata:
   title: Restrict Azure Machine Learning workspace network traffic 
   description: Overview of planning and securing Azure Machine Learning networking
   ms.topic: module
-  moduleType: standard
+  ms.service: artificial-intelligence
   ms.collection: ce-advocates-ai-copilot
 title: Restrict Azure Machine Learning workspace network traffic
 summary: Learn how to secure Azure Machine Learning workspaces.
-Abstract: |
+abstract: |
   After completing this module, you'll be able to:
   -	Understand Azure Machine Learning networking concepts
   -	Plan for networking isolation for Azure Machine Learning workspaces
