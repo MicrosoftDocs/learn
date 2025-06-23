@@ -22,9 +22,9 @@ Cases are created from alerts when an incident needs further review or response.
 - Create or view a connected Microsoft Teams team
 - Resolve the case with a classification of Benign or Confirmed policy violation
 
-You can assign a case to any user with one of these roles: **Insider Risk Management**, **Analyst**, or **Investigator**.
+:::image type="content" source="../media/insider-risk-create-case.png" alt-text="Screenshot showing how to create a case in Insider Risk Management." lightbox="../media/insider-risk-create-case.png":::
 
-:::image type="content" source="../media/insider-risk-case-details.png" alt-text="Screenshot showing how to create a case in Insider Risk Management." lightbox="../media/insider-risk-case-details.png":::
+You can assign a case to any user with one of these roles: **Insider Risk Management**, **Analyst**, or **Investigator**.
 
 ## Use the Cases dashboard
 
