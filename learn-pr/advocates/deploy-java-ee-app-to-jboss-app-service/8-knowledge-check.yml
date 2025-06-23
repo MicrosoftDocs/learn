@@ -4,9 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Check your knowledge of JBoss EAP.
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: yoshioterada
+  author: yoshioterada
+  ms.author: yoterada
   ms.date: 03/16/2025
   ms.topic: unit
   ms.custom:
