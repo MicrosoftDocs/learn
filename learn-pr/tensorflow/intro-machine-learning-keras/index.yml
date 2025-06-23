@@ -3,9 +3,9 @@ uid: learn.tensorflow.intro-machine-learning-keras
 metadata:
   title: Introduction to TensorFlow using Keras
   description: Learn how to build a TensorFlow machine learning model using the Keras API.
-  ms.date: 07/17/2023
-  author: bstollnitz
-  ms.author: bstollnitz
+  ms.date: 06/23/2025
+  author: robmcm
+  ms.author: robmcm
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: bstollnitz-08202021

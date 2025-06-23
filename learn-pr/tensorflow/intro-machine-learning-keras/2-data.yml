@@ -4,9 +4,9 @@ title: Data
 metadata:
   title: Data
   description: Learn how to get your data ready for use by a neural network.
-  ms.date: 07/17/2023
-  author: bstollnitz
-  ms.author: bstollnitz
+  ms.date: 06/23/2025
+  author: robmcm
+  ms.author: robmcm
   ms.topic: unit
   ms.product: learning-tensorflow
   ms.contributors:

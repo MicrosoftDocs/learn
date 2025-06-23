@@ -4,9 +4,9 @@ title: Making a prediction
 metadata:
   title: Making a prediction
   description: Learn how to make a prediction by using your trained neural network.
-  ms.date: 07/17/2023
-  author: bstollnitz
-  ms.author: bstollnitz
+  ms.date: 06/23/2025
+  author: robmcm
+  ms.author: robmcm
   ms.topic: unit
   ms.product: learning-tensorflow
   ms.contributors:
