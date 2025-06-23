@@ -4,9 +4,8 @@ metadata:
   title: Deploy a Jakarta EE Application to Azure
   description: Deploy a Jakarta EE application to JBoss EAP on Azure App Service and bind it to Azure Database for MySQL.
   ms.date: 03/16/2025
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: yoshioterada
+  author: yoshioterada
+  ms.author: yoterada
   ms.service: azure-java
   ms.topic: module
   ms.custom: team=cloud_advocates, devx-track-java, devx-track-javaee-jbosseap-appsvc, devx-track-javaee

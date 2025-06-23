@@ -2,10 +2,10 @@
 uid: learn.github-administration-github-advanced-security
 metadata:
   moduleType: standard
-  title: GitHub administration for GitHub Advanced Security
+  title: GitHub Administration for GitHub Advanced Security
   description: Understand where GitHub Advanced Security fits in your software development lifecycle and how to enable and roll it out in your organization.
   manager: mkluck
-  ms.date: 05/02/2024
+  ms.date: 06/10/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module
@@ -13,7 +13,7 @@ metadata:
 title: GitHub administration for GitHub Advanced Security
 summary: Understand where GitHub Advanced Security fits in your software development lifecycle and how to enable and roll it out in your organization.
 abstract: |
-  By the end of this module, you're able to:
+  By the end of this module, you should be able to:
   - Understand what GitHub Advanced Security is and how to use it in the software development lifecycle.
   - Identify which GitHub Advanced Security features are available for open-source projects and which are available on enterprise products.
   - Enable the different features of GitHub Advanced Security on different enterprise products.
