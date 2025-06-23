@@ -701,6 +701,7 @@
                     "**/*.yml"
                 ],
                 "exclude": [
+                    "device-partner-university/**",
                     "**/obj/**",
                     "**/includes/**",
                     "_themes/**",
@@ -846,6 +847,7 @@
                     "**/*.jpeg"
                 ],
                 "exclude": [
+                    "device-partner-university/**",
                     "**/obj/**",
                     "**/includes/**",
                     "_themes/**",
