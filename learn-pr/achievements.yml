@@ -5815,6 +5815,16 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.student-evangelism.practice-active-listening.badge
+  type: badge
+  title: Work with others by practicing active listening
+  summary: Learn how to work with others by practicing active listening.
+  iconUrl: /training/achievements/tech-resilience/practice-active-listening.svg
+- uid: learn.student-evangelism.communicate-strategically-mirror-coach.badge
+  type: badge
+  title: Communicate with others strategically through mirroring and coaching
+  summary: Learn how to communicate with others strategically through mirroring and coaching.
+  iconUrl: /training/achievements/tech-resilience/communicate-strategically.svg
 - uid: learn.student-evangelism.self-regulation-work-strategically.badge
   type: badge
   title: Use self-regulation to work strategically
