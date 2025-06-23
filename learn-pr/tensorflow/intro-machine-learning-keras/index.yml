@@ -1,6 +1,7 @@
 ### YamlMime:Module
 uid: learn.tensorflow.intro-machine-learning-keras
 metadata:
+  ms.service: azure-machine-learning
   title: Introduction to TensorFlow using Keras
   description: Learn how to build a TensorFlow machine learning model using the Keras API.
   ms.date: 06/23/2025
