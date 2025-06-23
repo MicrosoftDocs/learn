@@ -10,6 +10,7 @@ metadata:
   ms.author: dapine
   ms.manager: markl
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
 quiz:

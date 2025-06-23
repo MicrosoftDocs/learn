@@ -8,6 +8,7 @@ metadata:
   author: juliakm
   ms.author: jukullam
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/4-knowledge-check.md)]
