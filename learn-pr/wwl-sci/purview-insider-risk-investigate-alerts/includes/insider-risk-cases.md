@@ -13,7 +13,7 @@ Creating a case is recommended when an alert involves serious risk, multiple inc
 
 ## Create and manage cases
 
-Cases are created from alerts when an incident needs further review or response. Once created, cases can be updated with new alerts and managed throughout their lifecycle. You can:
+Cases are created from alerts when an incident needs further review or response. Once created, cases can be updated with new alerts and managed throughout their lifecycle.
 
 :::image type="content" source="../media/insider-risk-create-case.png" alt-text="Screenshot showing how to create a case in Insider Risk Management." lightbox="../media/insider-risk-create-case.png":::
 
