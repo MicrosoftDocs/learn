@@ -32,7 +32,7 @@ It's important to draft a cofounder agreement before anyone has created any subs
 
 Despite your best efforts, it's possible that you or one of your cofounders will decide to leave the company. Departure of a cofounder in the first few years of a startup is surprisingly common. It can happen for many reasons, including financial pressures or disagreements between founders.
 
-A founder leaving but remaining a large shareholder can be a major demotivating factor for the remaining founders, who are working hard for no additional benefit. It can also make the company much less attractive to investors because someone who's (at best) passive and not contributing now owns a sizable chunk of equity, or (at worst) disgruntled and actively seeking to block decision or refuse to sign critical documents to disrupt the company.
+A founder leaving but remaining a large shareholder can be a major demotivating factor for the remaining founders, who are working hard for no additional benefit. It can also make the company much less attractive to investors because someone who's (at best) passive and not contributing now owns a sizable chunk of equity, or (at worst) disgruntled and actively seeking to block decisions or refusing to sign critical documents to disrupt the company.
 
 To address this problem, startups frequently adopt *founder vesting*. That is, each founder earns equity over time, contingent on their ongoing involvement and performance.
 

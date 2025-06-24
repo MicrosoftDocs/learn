@@ -49,7 +49,7 @@ There's a growing number of mentors whose motivations hinge on increasing divers
 
 If the mentor is an early-stage investor, their motivation might be a combination of paying it forward and a desire to find and cultivate high-quality deal flow. In some cases, the mentoring relationship will work only if the investor views the startup as a genuine investment prospect.
 
-A mentor employed by an organization that runs a startup program, such as an accelerator, typically provides mentoring to startups accepted into the program.. In many cases, this role is called an *entrepreneur-in-residence* (EIR).
+A mentor employed by an organization that runs a startup program, such as an accelerator, typically provides mentoring to startups accepted into the program. In many cases, this role is called an *entrepreneur-in-residence* (EIR).
 
 Finally, there are opportunities to engage experienced founders and others in a paid capacity. This engagement is more commonly viewed as consulting rather than mentoring, and it meets a different set of needs.
 
