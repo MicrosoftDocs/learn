@@ -12,3 +12,4 @@ In this module we’ve used several different terms relating to AI services. Her
 - **RESTful API** – a scalable web application programming interface used to access Azure AI services.
 
 You can find out more about Azure AI services in the [service documentation](/azure/ai-services?azure-portal=true).
+
