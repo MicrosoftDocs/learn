@@ -16,7 +16,7 @@ quiz:
   questions:
   - content: "How do you enable GitHub Pages for your repository?"
     choices:
-    - content: "Email GitHub support and ask for your free web site installation kit."
+    - content: "Email GitHub support, and ask for your free web site installation kit."
       isCorrect: false
       explanation: "GitHub Pages can be enabled from the **Settings** tab of the repository."
     - content: "Subscribe to GitHub Enterprise and wait for further instructions in email."
@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: "Personal sites, like your resume or portfolio."
       isCorrect: false
-      explanation: "GitHub Pages are an excellent option for personal sites. It's the perfect one-two punch. First, you can impress everyone by configuring GitHub Page, and then blown them away with your other accomplishments."
+      explanation: "GitHub Pages are an excellent option for personal sites. It's the perfect one-two punch. First, you can impress everyone by configuring GitHub Pages, and then showcase your other accomplishments."
     - content: "Dynamic server-side applications."
       isCorrect: true
       explanation: "GitHub Pages only hosts static content. However, you can still use JavaScript to add dynamic behavior and even integrate with external services from your site. For server-side apps, step up to Azure Web Apps."

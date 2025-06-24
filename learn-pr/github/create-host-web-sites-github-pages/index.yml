@@ -11,12 +11,12 @@ metadata:
 title: "Create and host web sites by using GitHub Pages"
 summary: Learn how to host your personal, organization, and project sites for free with GitHub Pages.
 abstract: |
-  In this module, you will:
-  - Enable GitHub Pages
-  - Choose a theme with Jekyll
-  - Use YAML front matter
-  - Customize your site
-  - Create and edit blog posts
+  In this module, you'll:
+  - Enable GitHub Pages.
+  - Choose a theme with Jekyll.
+  - Use YAML front matter.
+  - Customize your site.
+  - Create and edit blog posts.
 prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub
