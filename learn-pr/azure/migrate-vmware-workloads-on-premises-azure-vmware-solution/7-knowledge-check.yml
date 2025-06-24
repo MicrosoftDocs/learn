@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Module assessment
   description: Knowledge check.
-  ms.date: 08/01/2024
+  ms.date: 06/19/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -44,7 +44,7 @@ quiz:
       explanation: "Port 443 needs to be open between the on-premises VMware HCX Connector and the VMware HCX Cloud Manager environment in Azure VMware Solution."
     - content: "3389"
       isCorrect: false
-      explanation: "Port 3389 is for Remote Desktop Protocol, and doesn't have to do with the HCX Connector on-premises routing traffic to the VMware HCX Cloud Manager environment."
+      explanation: "Port 3389 is for Remote Desktop Protocol, and it doesn't have to do with the HCX Connector on-premises routing traffic to the VMware HCX Cloud Manager environment."
     - content: "53"
       isCorrect: false
       explanation: "Port 53 is for DNS, and doesn't have to do with the VMware HCX Connector on-premises routing traffic to the VMware HCX Cloud Manager environment."
@@ -59,4 +59,3 @@ quiz:
     - content: "Redeploy VMware HCX on-premises to connect to Azure VMware Solution."
       isCorrect: false
       explanation: "Redeploying the VMware HCX appliance on-premises won't help create the service mesh."
-
