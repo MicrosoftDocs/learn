@@ -13,7 +13,11 @@ Creating a case is recommended when an alert involves serious risk, multiple inc
 
 ## Create and manage cases
 
-Cases are created from alerts when an incident needs further review or response. Once created, cases can be updated with new alerts and managed through their lifecycle. You can:
+Cases are created from alerts when an incident needs further review or response. Once created, cases can be updated with new alerts and managed throughout their lifecycle.
+
+:::image type="content" source="../media/insider-risk-create-case.png" alt-text="Screenshot showing how to create a case in Insider Risk Management." lightbox="../media/insider-risk-create-case.png":::
+
+You can:
 
 - Assign or reassign ownership
 - Send an email notice to the user
@@ -23,8 +27,6 @@ Cases are created from alerts when an incident needs further review or response.
 - Resolve the case with a classification of Benign or Confirmed policy violation
 
 You can assign a case to any user with one of these roles: **Insider Risk Management**, **Analyst**, or **Investigator**.
-
-:::image type="content" source="../media/insider-risk-case-details.png" alt-text="Screenshot showing how to create a case in Insider Risk Management." lightbox="../media/insider-risk-case-details.png":::
 
 ## Use the Cases dashboard
 
