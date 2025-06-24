@@ -30,7 +30,7 @@ Alternatively, you can provision a multi-service resource that encapsulates mult
 | Resource | Description |
 | ---- | ----------- |
 | ![Azure AI service icon.](../media/cognitive-services.png)<br>**Azure AI services**  | The Azure AI Services resource type includes the following services, making them available from a single endpoint: <ul><li>Azure AI Speech</li><li>Azure AI Language</li><li>Azure AI Translator</li><li>Azure AI Vision</li><li>Azure AI Face</li><li>Azure AI Custom Vision</li><li>Azure AI Document Intelligence</li></ul>|
-| ![Azure AI Foundry icon.](../media/ai-services.png)<br>**Azure AI Foundry**  | The Azure AI Services resource type includes the following services, and supports working with them through an Azure AI Foundry project\*: <ul><li>Azure OpenAI</li><li>Azure AI Speech</li><li>Azure AI Language</li><li>Azure AI Foundry Content Safety</li><li>Azure AI Translator</li><li>Azure AI Vision</li><li>Azure AI Face</li><li>Azure AI Document Intelligence</li><li>Azure AI Content Understanding</li></ul> |
+| ![Azure AI Foundry icon.](../media/ai-services.png)<br>**Azure AI Foundry**  | The Azure AI Foundry resource type includes the following services, and supports working with them through an Azure AI Foundry project\*: <ul><li>Azure OpenAI</li><li>Azure AI Speech</li><li>Azure AI Language</li><li>Azure AI Foundry Content Safety</li><li>Azure AI Translator</li><li>Azure AI Vision</li><li>Azure AI Face</li><li>Azure AI Document Intelligence</li><li>Azure AI Content Understanding</li></ul>|
 
 \* Azure AI Foundry is discussed in the next unit.
 
