@@ -3,9 +3,9 @@ uid: learn.mixed-reality-toolkit-project-unity
 metadata:
   title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit 
   description: Import the Mixed Reality Toolkit (MRTK) into your Unity project to accelerate your mixed reality development. You can also deploy your project to a HoloLens.
-  ms.date: 01/12/2024
-  author: marlenaklein-msft
-  ms.author: marlenaklein
+  ms.date: 06/24/2025
+  author: lolambean
+  ms.author: lolab
   ms.topic: module
   ms.custom:
   - team=cloud_advocates
