@@ -1,24 +1,20 @@
-> [!CAUTION]
-> This article references CentOS, a Linux distribution that is End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
-
 As you prepare to deploy across Wide World Importers' thousands of machines, you're first interested in testing Azure Arc-enabled servers and its capabilities. While you can't install Azure Arc-enabled servers on an Azure virtual machine (VM) for production scenarios, it's possible to configure Azure Arc-enabled servers to run on an Azure VM for evaluation and testing purposes only. In this unit, we showcase how Azure VMs can be used to test Azure Arc-enabled servers functionality.
 
 ## Hypothetical environment description
 
-For this discussion, we'll assume that you already have a Windows Server Azure VM. The version of Windows Server deployed in Azure should be Windows Server 2008 R2 SP1 and later versions (including Server Core).
+For this discussion, we assume that you already have a Windows Server Azure VM. The version of Windows Server deployed in Azure should be Windows Server 2012 and later versions (including Server Core).
 
 That being said, Azure Arc-enabled servers also supports the following Linux distributions:
 
-- Ubuntu 16.04, 18.04, and 20.04 LTS (x64)
-- CentOS Linux 7 and 8 (x64)
-- SUSE Linux Enterprise Server (SLES) 12 and 15 (x64)
-- Red Hat Enterprise Linux (RHEL) 7 and 8 (x64)
-- Amazon Linux 2 (x64)
-- Oracle Linux 7
+- Ubuntu 18.04 (limited support), 20.04, 22.04, and 24.04
+- SUSE Linux Enterprise Server (SLES) 12 (limited support) and 15 (x64)
+- Red Hat Enterprise Linux (RHEL) 7, 8 and 9 (x64)
+- Amazon Linux 2, and 2023 (x64)
+- Oracle Linux 7, 8, and 9 (x64)
 
 ## Prepare an Azure VM for Azure Arc-enabled servers
 
-Because your Azure VM is already registered and managed as an Azure resource, it's necessary to reconfigure the VM. Reconfiguring the VM involves removing extensions, disabling the Azure VM guest agent, and blocking Azure IMDS access. After you've made these three changes, your Azure VM behaves like any machine or server outside of Azure. This reconfigured Azure VM offers a starting point to install and evaluate Azure Arc-enabled servers.
+Because your Azure VM is already registered and managed as an Azure resource, it's necessary to reconfigure the VM. Reconfiguring the VM involves removing extensions, disabling the Azure VM guest agent, and blocking Azure IMDS access. After you make these three changes, your Azure VM behaves like any machine or server outside of Azure. This reconfigured Azure VM offers a starting point to install and evaluate Azure Arc-enabled servers.
 
 1. Remove any VM extensions on the Azure VM.
 
@@ -30,7 +26,7 @@ Because your Azure VM is already registered and managed as an Azure resource, it
 
 1. Disable the Azure VM Guest Agent.
 
-    To disable the Azure VM Guest Agent, you'll need to connect to your VM using Remote Desktop Connection (Windows) or SSH (Linux).
+    To disable the Azure VM Guest Agent, you need to connect to your VM using Remote Desktop Connection (Windows) or SSH (Linux).
 
     When you're connected to a Windows machine, run the following PowerShell commands to disable the guest agent:
 
@@ -51,7 +47,7 @@ Because your Azure VM is already registered and managed as an Azure resource, it
 
 ## Reconfigure the Azure VM
 
-The Azure portal has a wizard that will automate the script to automate the download, installation, and connection with Azure Arc. To generate a custom script for your environment, perform the following steps:
+The Azure portal has a wizard that automates the script to automate the download, installation, and connection with Azure Arc. To generate a custom script for your environment, perform the following steps:
 
 1. From your browser, go to the Azure portal.
 
@@ -87,7 +83,7 @@ The Azure portal has a wizard that will automate the script to automate the down
 
 To install with the script, you must run the downloaded script from PowerShell in your reconfigured Azure Virtual Machine.
 
-1. Connect and log in to your reconfigured Azure VM.
+1. Connect and sign in to your reconfigured Azure VM.
 
 1. Copy the script that you downloaded in the previous steps to a known location on your VM.
 
@@ -95,4 +91,4 @@ To install with the script, you must run the downloaded script from PowerShell i
 
 1. Change to the folder or share where you copied the script and execute it on the server by running the `./OnboardingScript.ps1` script.
 
-Now that you have an Azure Arc-enabled server, you can begin to test Microsoft Defender for Cloud, Azure Monitor, Azure Policies, VM Extensions and the range of Azure Arc-enabled server capabilities.
+Now that you have an Azure Arc-enabled server, you can begin to test Microsoft Defender for Cloud, Azure Monitor, Azure Policies, VM Extensions, and the range of Azure Arc-enabled server capabilities.

@@ -10,7 +10,7 @@ There are a range of options to arc-enable a single server including Azure porta
 
 | Method | Description |
 |---|---|
-| **Azure portal** | After submitting resource and deployment details in Azure portal, you're provided with a script to Arc-enable a server. You must download and run this script with elevated privileges in your Windows or Linux servers. This requires that you authenticate to your Azure subscription interactively for each installation. |
+| **Azure portal** | After submitting resource and deployment details in Azure portal, you're provided with a script to Arc-enable a server. You must download and run this script with elevated privileges in your Windows or Linux servers. This method requires that you authenticate to your Azure subscription interactively for each installation. |
 | **PowerShell** | You can use the PowerShell cmdlet `Connect-AzConnectedMachine` to download the Connected Machine agent, install the agent, and register the machine with Azure Arc. The cmdlet downloads the Windows agent package (Windows Installer) from the Microsoft Download Center, and the Linux agent package from the Microsoft package repository. |
 | **PowerShell DSC** | Using Windows PowerShell Desired State Configuration (DSC), you can automate software installation and configuration for a Windows computer. You can install the ConnectedMachine DSC module, which is designed to manage the Azure Connected Machine Agent configuration. The module also contains a PowerShell script called `AzureConnectedMachineAgent.ps1` to automate the download and installation and establish a connection with Azure Arc. This resource can be added to existing DSC configurations to represent an end-to-end configuration for a machine. |
 | **Windows Admin Center** | You can use Windows Admin Center to deploy the Connected Machine agent and register your on-premises servers without having to do any steps outside of this tool. Select the **Leverage Azure policies and solutions to manage your servers with Azure Arc** service under Azure hybrid services in the Windows Admin Center. |
@@ -21,12 +21,12 @@ For at-scale deployment of Arc-enabled servers, you can use a privileged identit
 
 | Method | Description |
 |---|---|
-| **Connect Multiple Machines with Service Principal** | To securely connect machines to Azure Arc at scale, you can use a Microsoft Entra service principal instead of using your privileged identity to interactively connect the machine. A service principal is a special limited-management identity that's granted only the minimum permission necessary to connect machines to Azure using the `azcmagent` command. This approach is safer than using a higher privilege and follows our access control security best practices. The service principal is used only during onboarding, it isn't used for any other purpose. |
+| **Connect Multiple Machines with Service Principal** | To securely connect machines to Azure Arc at scale, you can use a Microsoft Entra service principal instead of using your privileged identity to interactively connect the machine. A service principal is a special limited-management identity that's granted only the minimum permission necessary to connect machines to Azure using the `azcmagent` command. This approach is safer than using a higher privilege and follows our access control security best practices. The service principal is used only during onboarding. It isn't used for any other purpose. |
 | **Update Management (Azure portal)** | You can easily connect non-Azure servers managed by the Update Management service to Azure via Azure Arc. You can select these non-Azure servers directly in the Azure portal, and the deployment happens automatically. |
 
 You can use a range of existing software configuration products to deploy the Arc-enabled server agent to machines at scale. The script for deployment should rely on the Azure Service Principal method, because the single server script for deployment requires separate authentication for each server.
 
-- **Group Policy**: Define a new Group Policy Object for running a PowerShell script, assign the GPO to the desired Organization Unit, and schedule a task to deploy to multiple servers.
+- **Group Policy**: Define a new Group Policy Object (GPO) for running a PowerShell script, assign the GPO to the desired Organization Unit, and schedule a task to deploy to multiple servers.
 
 - **Systems Center Configuration Manager**: Author, approve, and run a custom PowerShell script to a collection of devices. See [Create and run scripts - Configuration Manager](/mem/configmgr/apps/deploy-use/create-deploy-scripts).
 
