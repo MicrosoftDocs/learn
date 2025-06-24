@@ -19,32 +19,20 @@ Microsoft Azure provides a wide range of cloud services that you can use to deve
 To use Azure AI services, you create one or more Azure AI resources in an Azure subscription and implement code in client applications to consume them. In some cases, AI services include web-based visual interfaces that you can use to configure and test your resources - for example to train a custom image classification model using the **Custom Vision** service you can use the visual interface to upload training images, manage training jobs, and deploy the resulting model.
 
 > [!NOTE]
-> You can provision Azure AI services resources in the Azure portal (or by using BICEP or ARM templates or the Azure command-line interface) and build applications that use them directly through various service-specific APIs and SDKs. However, as we'll discuss later in this module, in most medium to large-scale development scenarios it's better to provision Azure AI services resources as part of an Azure Foundry *hub* - enabling you to centralize access control and cost management, and making it easier to manage shared resource usage based on AI development *projects*.
+> You can provision Azure AI services resources in the Azure portal (or by using BICEP or ARM templates or the Azure command-line interface) and build applications that use them directly through various service-specific APIs and SDKs. However, as we'll discuss later in this module, in most medium to large-scale development scenarios it's better to provision Azure AI services resources as part of an *Azure AI Foundry* project - enabling you to centralize access control and cost management, and making it easier to manage shared resources and build the next generation of generative AI apps and agents.
 
 ### Single service or multi-service resource?
 
 Most Azure AI services, such as **Azure AI Vision**, **Azure AI Language**, and so on, can be provisioned as standalone resources, enabling you to create only the Azure resources you specifically need. Additionally, standalone Azure AI services often include a free-tier SKU with limited functionality, enabling you to evaluate and develop with the service at no cost. Each standalone Azure AI resource provides an endpoint and authorization keys that you can use to access it securely from a client application.
 
-Alternatively, you can provision a multi-service **Azure AI services** resource that encapsulates the following services in a single Azure resource:
+Alternatively, you can provision a multi-service resource that encapsulates multiple AI services in a single Azure resource. Using a multi-service resource can make it easier to manage applications that use multiple AI capabilities. There are two multi-service resource types you can use:
 
-- Azure OpenAI
-- Azure AI Speech
-- Azure AI Vision
-- Azure AI Language
-- Azure AI Foundry Content Safety
-- Azure AI Translator
-- Azure AI Document Intelligence
-- Azure AI Content Understanding
+| Resource | Description |
+| ---- | ----------- |
+| ![Azure AI service icon.](../media/cognitive-services.png)<br>**Azure AI services**  | The Azure AI Services resource type includes the following services, making them available from a single endpoint: <ul><li>Azure AI Speech</li><li>Azure AI Language</li><li>Azure AI Translator</li><li>Azure AI Vision</li><li>Azure AI Face</li><li>Azure AI Custom Vision</li><li>Azure AI Document Intelligence</li></ul>|
+| ![Azure AI Foundry icon.](../media/ai-services.png)<br>**Azure AI Foundry**  | The Azure AI Foundry resource type includes the following services, and supports working with them through an Azure AI Foundry project\*: <ul><li>Azure OpenAI</li><li>Azure AI Speech</li><li>Azure AI Language</li><li>Azure AI Foundry Content Safety</li><li>Azure AI Translator</li><li>Azure AI Vision</li><li>Azure AI Face</li><li>Azure AI Document Intelligence</li><li>Azure AI Content Understanding</li></ul>|
 
-Using a multi-service resource can make it easier to manage applications that use multiple AI capabilities.
-
-> [!TIP]
-> There may be more than one **Azure AI services** resource type available in the Azure portal.
->
-> |Service | Icon |
-> |--|--|
-> | When you want to provision an Azure AI Services resource, be careful to select the Azure AI services resource type with the icon shown here. This resource type includes the latest AI services. |![Azure AI services icon.](../media/ai-services.png)|
-> | An older Azure AI services resource type with a different icon may also be listed in the Azure portal. The older service encapsulates a different set of AI services and isn't suitable for working with newer services like Azure OpenAI and Azure AI Content Understanding.| ![Azure Cognitive Services icon.](../media/cognitive-services.png)| 
+\* Azure AI Foundry is discussed in the next unit.
 
 ### Regional availability
 
