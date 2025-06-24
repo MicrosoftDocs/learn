@@ -7,6 +7,7 @@ metadata:
   author: lolambean
   ms.author: lolab
   ms.topic: module
+  ms.service: hololens
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
