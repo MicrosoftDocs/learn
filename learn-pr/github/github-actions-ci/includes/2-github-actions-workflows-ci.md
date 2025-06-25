@@ -111,7 +111,7 @@ Imagine that your organization has 10 microservices. All 10 microservices need t
 - Lint code
 - Deploy to a specific environment
 
-Without reusable workflows, every repo contains duplicated logic that list the repeated steps in each workflow.
+Without reusable workflows, each repository ends up duplicating the same logic across multiple workflow files, leading to repeated steps and harder maintenance.
 
 If you use reusable workflows:
 
@@ -135,7 +135,7 @@ Reusable workflows are a powerful way to enforce consistency, reduce duplication
 
 At the beginning of this module, you considered a scenario in which you need to set up CI for your team of developers. The Node.js template is a great start, but you want to customize it to better suit your team's requirements. You want to target different versions of Node.js and different operating systems. You also want the build and test steps to be separate jobs.
 
-Here's an example of how of a customized workflow:
+Here's an example of a customized workflow:
 
 ```yml
 strategy:
