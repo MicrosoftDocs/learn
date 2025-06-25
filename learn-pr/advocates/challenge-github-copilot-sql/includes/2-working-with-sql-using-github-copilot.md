@@ -16,9 +16,7 @@ GitHub Copilot provides better outcomes when your prompts are more specific. If 
 
 For example, you could use GitHub Copilot to provide you with the SQL code to create a table that included columns for first name, last name, date of birth, favorite movie, and pet name by issuing the following prompt:
 
-```
-@workspace Please provide me with the SQL code to create a table that included columns for first name, last name, date of birth, favorite movie and pet name
-```
+_@workspace Please provide me with the SQL code to create a table that included columns for first name, last name, date of birth, favorite movie and pet name_
 
 ![A screenshot a GitHub Copilot prompt related to the creation of a table in SQL.](../media/create-table.svg)
 
@@ -26,14 +24,12 @@ For example, you could use GitHub Copilot to provide you with the SQL code to cr
 
 For example, if you opened a codespace were presented with an application that included SQL code, you could query GitHub Copilot with the following prompt to understand more about the project in the following manner:
 
-```
-@workspace Please briefly explain the structure of this project.
-What should I do to run it?
-```
+_@workspace Please briefly explain the structure of this project.
+What should I do to run it?_
 
 ![A screenshot showing GitHub Copilot's response to a query about project structure.](../media/project-structure.svg)
 
-## How to understand SQL queries and code
+## Understand SQL code
 
 You can use the /explain prompt to understand specific code. For example, a project might contain a file named complex.sql, which contains the query that is being executed in the application. To understand the contents of complex.sql, you can select it within the Explorer pane of GitHub Codespaces and then use the /explain prompt in the chat.
 
@@ -74,7 +70,7 @@ You can request that GitHub Copilot to generate SQL-based tests or assertions to
 
 GitHub Copilot can help you write tests for your application code by generating test code that covers your codebase. This includes unit tests, end-to-end tests, and tests for edge cases.
 
-## Debugging SQL errors.
+## Debugging SQL errors
 
 You can ask GitHub Copilot to help debug SQL errors or suggest fixes for common issues. For example, you can select a file or block of code and ask GitHub Copilot to locate and correct any syntax errors.  
 
@@ -86,14 +82,12 @@ You can use GitHub Copilot to generate prompts to create code that performs bett
 
 1. Have an understanding of the code. This understanding can be derived from existing interaction with GitHub Copilot.
 1. Select the original code and open GitHub Copilot Chat.
-1. Provide as much detail as possible. For example, you might provide GitHub Copilot chat with the following prompt: 
+1. Provide as much detail as possible. For example, you might provide GitHub Copilot chat with the following prompt:
 
-```
-Given the following requirements:
-The database is SQLite and contains tables relevant to movie ratings (see the structure in complex.sql).
-The query should efficiently aggregate and return the top-rated movies by region, minimizing execution time and avoiding unnecessary operations (such as redundant CASTs, unnecessary JOINs, or SELECT DISTINCT if not needed).
-The result should include movie title, average rating, region, and any other relevant fields.
-The query must complete in under 1.5 seconds on a large dataset.
-All business logic and correctness must be preserved as in the original complex.sql.
-Write a high-performance SQL query that fulfills these requirements, and explain any optimizations you apply.
-```
+_Given the following requirements:_
+_The database is SQLite and contains tables relevant to movie ratings (see the structure in complex.sql)._
+_The query should efficiently aggregate and return the top-rated movies by region, minimizing execution time and avoiding unnecessary operations (such as redundant CASTs, unnecessary JOINs, or SELECT DISTINCT if not needed)._
+_The result should include movie title, average rating, region, and any other relevant fields._
+_The query must complete in under 1.5 seconds on a large dataset.
+All business logic and correctness must be preserved as in the original complex.sql._
+_Write a high-performance SQL query that fulfills these requirements, and explain any optimizations you apply._

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.challenge-github-copilot-with-sql.github-skills-exercise
-title: GitHub skills exercise
+title: Hands-on exercise - Challenging GitHub Copilot with SQL
 metadata:
-  title: GitHub skills exercise
+  title: Hands-on exercise - Challenging GitHub Copilot with SQL
   description: Learn how to apply advanced GitHub Copilot features to interact with an application that uses complex SQL queries.
   ms.date: 06/25/2025
   author: Orin-Thomas

@@ -32,9 +32,7 @@ You can also use the terminal pane within a GitHub Codespace to run commands, su
 
 ![A screenshot showing a python script being called from a GitHub codespace](../media/run-python-terminal.svg)
 
-## Customizing GitHub Codespaces
-
-You can customize your project for GitHub Codespaces by committing configuration files to your repository (also known as configuration-as-code), which creates a repeatable codespace configuration for all users of your project. Each codespace you create is hosted by GitHub in a Docker container that runs on a virtual machine. You can choose the type of virtual machine you want to use depending on the resources you need.
+## Creating a GitHub Codespace
 
 To begin developing using GitHub Codespaces, you can create a codespace from a template or from any branch or commit in a GitHub repository. When you create a codespace from a template, you can start from a blank template or choose a template suitable for the work you're doing.
 
@@ -49,9 +47,13 @@ To open a codespace from your GitHub account, start at the landing page of your 
 
 ![A screenshot showing how to open a GitHub Codespace from a GitHub repository](../media/open-codespace-repository.svg)
 
+## Customizing GitHub Codespaces
+
+You can customize your project for GitHub Codespaces by committing configuration files to your repository (also known as configuration-as-code), which creates a repeatable codespace configuration for all users of your project. Each codespace you create is hosted by GitHub in a Docker container that runs on a virtual machine. You can choose the type of virtual machine you want to use depending on the resources you need.
+
 You can configure the development container for a repository so that any codespace created for that repository gives you a tailored development environment, complete with all the tools and runtimes you need to work on a specific project. A development container file is a JSON file that lets you customize the default container image that runs your codespace. You can use this JSON file to configure VS Code settings, run custom code, manage network traffic port forwarding, and configure other settings. 
 
-## Understanding GitHub Copilot in GitHub Codespaces
+## GitHub Copilot in GitHub Codespaces
 
 One of the tools you can use within a GitHub Codespace is GitHub Copilot.  You can verify that GitHub Copilot and Copilot Chat are available in your GitHub Codespaces environment by checking the Extensions tab and searching for GitHub Copilot and choosing the Install option if GitHub Copilot isn't already present.
 

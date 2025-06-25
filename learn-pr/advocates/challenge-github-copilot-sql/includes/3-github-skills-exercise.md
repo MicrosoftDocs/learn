@@ -1,8 +1,4 @@
-## Exercise overview
-
-In this exercise, you take the role of a developer who has been asked to examine and optimize a project written by a person who recently left the organization for another role. Their code was incompletely documented, so you have chosen to use GitHub Copilot to quickly get yourself across the code functionality and application structure.
-
-## Workshop objectives
+In this exercise, you take the role of a developer who has been asked to examine and optimize a project written by a person who recently left the organization for another role. Their code was incompletely documented, so you have chosen to use GitHub Copilot to quickly gain an understanding of the code functionality and application structure.
 
 By the end of this workshop, you will:
 
@@ -11,7 +7,7 @@ By the end of this workshop, you will:
 - Apply generic concepts that can improve suggestions and select from different strategies that can yield better results.
 - Get a clear understanding of poor prompting techniques, and how these can drastically affect the output from GitHub Copilot.
 
-## Hands-on exercise: Challenging GitHub Copilot with SQL
+## Exercise: Challenging GitHub Copilot with SQL
 
 This exercise walks you through the following steps:
 
