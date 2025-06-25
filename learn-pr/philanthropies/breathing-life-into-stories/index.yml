@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.philanthropies.breathing-life-into-stories
+metadata:
+  title: Breathing Life into Stories - Character and Dialogue Creation with Azure
+  description: Learn how to use Azure OpenAI and DALL·E to create interactive stories with AI-generated characters, dialogue, and branching narrative paths."
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: kbarreto
+  ms.topic: module-intro-to-product
+  ms.service: artificial-intelligence
+title: Breathing life into stories - character and dialogue creation with Azure
+
+summary: "Explore how AI tools like Azure OpenAI and DALL·E enable creators to build immersive interactive stories by generating dynamic character portraits, branching dialogue, and emotionally engaging narrative experiences."
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe how Azure OpenAI and DALL·E support character design and world-building.
+  - Write effective prompts to generate AI-powered character portraits and dialogue.
+  - Construct interactive dialogue trees that adapt to player choices.
+  - Integrate AI-generated assets into cohesive, emotionally resonant story presentations.
+
+prerequisites: |
+  - Familiarity with basic storytelling concepts and narrative structure
+  - Basic experience with cloud-based creative tools (recommended)
+
+
+iconUrl: /learn/achievements/generic-badge.svg
+
+levels:
+  - beginner
+
+roles:
+  - data-engineer
+  - data-scientist
+  - developer 
+
+products:
+- ms-copilot
+- azure-openai
+
+subjects:
+  - artificial-intelligence
+
+units:
+- learn.philanthropies.breathing-life-into-stories.introduction
+- learn.philanthropies.breathing-life-into-stories.bring-stories-to-life-with-ai
+- learn.philanthropies.breathing-life-into-stories.character-visualization-with-azure-openai-and-dalle
+- learn.philanthropies.breathing-life-into-stories.create-emotionally-intelligent-dialogue-trees
+- learn.philanthropies.breathing-life-into-stories.blend-ai-generated-content-into-narrative-worlds
+- learn.philanthropies.breathing-life-into-stories.showcase-ai-powered-storytelling-projects
+- learn.philanthropies.breathing-life-into-stories.exercise
+- learn.philanthropies.breathing-life-into-stories.knowledge-check
+- learn.philanthropies.breathing-life-into-stories.summary
+
+badge:
+  uid: learn.philanthropies.breathing-life-into-stories.badge

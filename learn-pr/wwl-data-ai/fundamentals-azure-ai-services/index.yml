@@ -1,9 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.fundamentals-azure-ai-services
 metadata:
-  title: Get started with Azure AI services
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Fundamentals of Azure AI Services
   description: "This module is an introduction to how Azure AI services can be used to build applications."
-  ms.date: 04/25/2025
+  ms.date: 06/24/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module
@@ -12,7 +14,7 @@ metadata:
   - N/A
   ms.service: azure-ai-services
   ai-usage: human-only
-title: Get started with Azure AI services
+title: Fundamentals of Azure AI services
 summary: In this module, you learn the fundamentals of how Azure AI services can be used to build applications.
 abstract: |
   -   Understand applications Azure AI services can be used to build
@@ -20,9 +22,8 @@ abstract: |
   -   Understand how to access Azure AI services in the Azure portal
 
   -   Understand how to use Azure AI services keys and endpoint for authentication
-
 prerequisites: None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/fundamentals-azure-ai-services.svg
 levels:
 - beginner
 roles:

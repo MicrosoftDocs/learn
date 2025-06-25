@@ -2,9 +2,9 @@
 uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution
 metadata:
   moduleType: standard
-  title: Migrate VMware vSphere resources from on-premises to Azure VMware Solution
+  title: Migrate VMware vSphere Resources from On-Premises to Azure VMware Solution
   description: Learn how to migrate virtual machines from an on-premises VMware environment to Azure VMware Solution by using VMware HCX.
-  ms.date: 08/01/2024
+  ms.date: 06/19/2025
   ms.author: orthomas
   author: Orin-Thomas
   ms.topic: module

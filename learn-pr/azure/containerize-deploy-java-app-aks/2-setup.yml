@@ -6,9 +6,8 @@ metadata:
   title: Set up your Azure environment
   description: Set up your Azure environment.
   ms.date: 02/12/2025
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: yoterada
+  author: yoshioterada
+  ms.author: yoterada
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli
@@ -17,4 +16,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-setup.md)]
-
+
