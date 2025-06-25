@@ -47,13 +47,13 @@ In this task, you continue with the simulation and connect a Microsoft Sentinel 
 
 1. Select the **Learn more** button on the *Get your SIEM and XDR in one place* message.
 
-    :::image type="content" source="../media/siem-xdr-learn-more.png" alt-text="Screen capture of SIEM and XDR Learn more button message.":::
+    :::image type="content" source="../media/siem-xdr-learn-more.png" alt-text="Screen capture of SIEM and XDR Learn more button message." lightbox="../media/siem-xdr-learn-more.png":::
 
 1. Selecting the **Learn more** button opens a new tab in the browser for the *Microsoft Defender XDR* portal.
 
 1. On the **Defender Defender** portal **Home** screen, you should see a banner at the top with the message, *Get your SIEM and XDR in one place*. Select the **Connect a workspaces** button.
 
-    :::image type="content" source="../media/siem-xdr-connect-workspace.png" alt-text="Screen capture of Defender XDR Connect a workspace button.":::
+    :::image type="content" source="../media/siem-xdr-connect-workspace.png" alt-text="Screen capture of Defender XDR Connect a workspace button." lightbox="../media/siem-xdr-connect-workspace.png":::
 
 1. On the *Choose a workspace* page, select the **woodgrove-loganalyiticsworkspace** Microsoft Sentinel workspace.
 
@@ -69,7 +69,7 @@ In this task, you continue with the simulation and connect a Microsoft Sentinel 
 
 1. Select the **Close** button.
 
-    :::image type="content" source="../media/successfully-connected-close-button.png" alt-text="Screen capture of the Defender XDR workspace successfully connected page.":::
+    :::image type="content" source="../media/successfully-connected-close-button.png" alt-text="Screen capture of the Defender XDR workspace successfully connected page." lightbox="../media/successfully-connected-close-button.png":::
 
 1. On the **Defender XDR** portal **Home** screen, you should see a banner at the top with the message, *Your unified SIEM and XDR is ready*. Select the **Start Hunting** button.
 
@@ -79,9 +79,9 @@ In this task, you continue with the simulation and connect a Microsoft Sentinel 
 
 1. In the *Query* pane, you should see a (KQL) query that returns threat intelligence indicators. Select the **Run query** button.
 
-    :::image type="content" source="../media/advanced-hunting-sentinel-query.png" alt-text="Screen capture of Defender XDR Sentinel Advanced hunting tables.":::
+    :::image type="content" source="../media/advanced-hunting-sentinel-query.png" alt-text="Screen capture of Defender XDR Sentinel Advanced hunting tables." lightbox="../media/advanced-hunting-sentinel-query.png":::
 
-1. Expand the left main menu pane if collapsed and  expand the new **Microsoft Sentinel** menu items. You should see *Search*,*Threat management*, *Content management* and *Configuration* selections.
+1. Expand the left main menu pane if collapsed and  expand the new **Microsoft Sentinel** menu items. You should see *Search*, *Threat management*, *Content management*, and *Configuration* selections.
 
     > [!NOTE]
     > Be aware that there are capability differences between the Azure Microsoft Sentinel portal and Sentinel in the Microsoft Defender XDR portal **[Portal capability differences](/azure/sentinel/microsoft-sentinel-defender-portal#capability-differences-between-portals)**.
