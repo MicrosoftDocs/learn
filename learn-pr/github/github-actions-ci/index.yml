@@ -37,7 +37,7 @@ subjects:
 units:
 - learn.github.github-actions-ci.1-introduction
 - learn.github.github-actions-ci.2-github-actions-workflows-ci
-- learn.github.github-actions-ci.github-actions-manage-and-debug-workflow
+- learn.github.github-actions-ci.github-actions-manage-and-debug-workflows
 - learn.github.github-actions-ci.github-actions-essential-features
 - learn.github.github-actions-ci.cache-share-debug-workflows
 - learn.github.github-actions-ci.3-exercise-ci-workflow-github
