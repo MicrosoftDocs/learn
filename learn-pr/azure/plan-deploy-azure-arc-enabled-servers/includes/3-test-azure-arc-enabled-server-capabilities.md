@@ -91,4 +91,4 @@ To install with the script, you must run the downloaded script from PowerShell i
 
 1. Change to the folder or share where you copied the script and execute it on the server by running the `./OnboardingScript.ps1` script.
 
-Now that you have an Azure Arc-enabled server, you can begin to test Microsoft Defender for Cloud, Azure Monitor, Azure Policies, VM Extensions, and the range of Azure Arc-enabled server capabilities.
+Now that you have an Azure Arc-enabled server, you can begin to test its functionality. Including, Microsoft Defender for Cloud, Azure Monitor, Azure Policies, VM Extensions, and the range of Azure Arc-enabled server capabilities.

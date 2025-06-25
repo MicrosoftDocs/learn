@@ -16,7 +16,7 @@ The Azure Connected Machine Onboarding role is available for at-scale onboarding
 
 Users with the Azure Connected Machine Resource Administrator role can read, modify, reonboard, and delete a machine. This role is designed to support management of Azure Arc-enabled servers, but not other resources in the resource group or subscription.
 
-Additionally, the Azure Connected Machine agent uses public-key authentication to communicate with the Azure service. After you onboard a server to Azure Arc, a private key is saved to the disk and used whenever the agent communicates with Azure. If stolen, the private key can be used on another server to communicate with the service and act as if it were the original server. This includes getting access to the system-assigned identity and any resources to which that identity has access. The private key file is protected to only allow the HIMDS account access to read it. To prevent offline attacks, we strongly recommend the use of full disk encryption (for example, BitLocker, dm-crypt, etc.) on the operating system volume of your server.
+Additionally, the Azure Connected Machine agent uses public-key authentication to communicate with the Azure service. After you onboard a server to Azure Arc, a private key is saved to the disk and used whenever the agent communicates with Azure. If stolen, the private key can be used on another server to communicate with the service and act as if it were the original server. A stolen private key can also get access to the system-assigned identity and any resources to which that identity has access. The private key file is protected to only allow the HIMDS account access to read it. To prevent offline attacks, we strongly recommend the use of full disk encryption (for example, BitLocker, dm-crypt, etc.) on the operating system volume of your server.
 
 ## Azure Policy Governance
 
@@ -38,7 +38,7 @@ Regulatory Compliance in Azure Policy provides Microsoft created and managed ini
 - NIST SP 800-53 Rev. 5
 - UK OFFICIAL and UK NHS
 
-Before deploying Azure Arc-enabled servers to a resource group, you can systemically define and assign Azure Policies with their respective remediation tasks at the resource group, subscription, or management group level, to ensure that auditing and compliance guardrails are in place.  
+Before deploying Azure Arc-enabled servers to a resource group, you can systemically define and assign Azure Policies with their respective remediation tasks at the resource group, subscription, or management group level. By configuring your Azure Policies up front, you ensure that auditing and compliance guardrails are in place.
 
 ## Secure Networking with Private Link
 
