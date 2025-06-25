@@ -250,7 +250,7 @@ To add the variables:
 1. Under **Properties**, for the variable group name, enter *Release*.
 1. Under **Variables**, select **+ Add**.
 1. For the name of your variable, enter *WebAppNameDev*. As its value, enter the name of the App Service instance that corresponds to your *Dev* environment, such as *tailspin-space-game-web-dev-1234*.
-1. Repeat steps 5 and 6 twice more to create variables for your T*est and *Staging* environments, as shown in this table:
+1. Repeat steps 5 and 6 twice more to create variables for your *Test* and *Staging* environments, as shown in this table:
 
     | Variable name         | Example value                            |
     |-----------------------|------------------------------------------|

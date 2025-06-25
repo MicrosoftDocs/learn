@@ -25,7 +25,7 @@ quiz:
       explanation: "With A/B testing, you could randomly show both versions of the website to users. Then the marketing team can use statistical analysis to decide which version performs better."
     - content: "Feature toggles"
       isCorrect: false
-      explanation: "Feature toggles are better suited to exposing new features to a small, select number of users to see how they react."
+      explanation: "Feature toggles are better suited to exposing new features to a small and select number of users to see how they react."
   - content: "You have a new feature for your website, and you're ready to deploy it. However, this feature is risky because it changes the way your users interact with the site. Which deployment patterns might you use to release to a small group of early adopters who have signed up to see new features?"
     choices:
     - content: "Canary release or progressive-exposure deployment"
