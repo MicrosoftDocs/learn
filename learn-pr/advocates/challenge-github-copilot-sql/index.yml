@@ -6,6 +6,7 @@ metadata:
   ms.date: 06/25/2025
   title: Challenge GitHub Copilot with SQL
   description: Learn how to apply advanced GitHub Copilot features to interact with an application that uses complex SQL queries.
+  ms.service: github-copilot
   ms.topic: module
   ms.collection: ce-advocates-ai-copilot
 title: Challenge GitHub Copilot with SQL
@@ -28,7 +29,7 @@ roles:
 products:
 - github
 units:
-- learn.challenge-github-copilot-with-sql.introduction-to-github-copilot-in-github-codespaces
+- learn.challenge-github-copilot-with-sq.introduction-github-copilot-codespaces
 - learn.challenge-github-copilot-with-sql.working-with-sql-using-github-copilot
 - learn.challenge-github-copilot-with-sql.github-skills-exercise
 - learn.challenge-github-copilot-with-sq.knowledge-check

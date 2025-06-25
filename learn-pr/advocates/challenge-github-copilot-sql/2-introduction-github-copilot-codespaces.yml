@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.challenge-github-copilot-with-sql.introduction-to-github-copilot-in-github-codespaces
+uid: learn.challenge-github-copilot-with-sq.introduction-github-copilot-codespaces
+
 title: Introduction to GitHub Copilot in GitHub Codespaces
 metadata:
   title: Introduction to GitHub Copilot in GitHub Codespaces
@@ -10,4 +11,4 @@ metadata:
   ms.topic: unit 
 durationInMinutes: 7
 content: |
-  [!include[](includes/1-introduction-to-github-copilot-in-github-codespaces.md)]
+  [!include[](includes/2-introduction-github-copilot-codespaces.md)]
