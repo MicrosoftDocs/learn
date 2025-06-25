@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-ai-everyday-tasks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 04/09/2025
+  ms.date: 06/25/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -16,17 +16,6 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the role of generative AI in content creation?"
-    choices:
-    - content: "Generative AI rearranges existing information to create new content."
-      isCorrect: false
-      explanation: "Incorrect. Generative AI doesn't just rearrange existing information; it creates something new that didn't exist before."
-    - content: "Generative AI creates new, unique content, such as writing poems, composing melodies, or designing graphics based on the patterns and styles it learned from existing data."
-      isCorrect: true
-      explanation: "Correct. Generative AI uses large language models (LLMs) that are trained on huge amounts of data to create outputs that are similar to the data they were trained on."
-    - content: "Generative AI copies existing data to produce similar content."
-      isCorrect: false
-      explanation: "Incorrect. Generative AI does not just copy data, it creates entirely new and original pieces of work."
   - content: "What is the key to getting the best responses from AI tools like Microsoft Copilot?"
     choices:
     - content: "Being clear, specific, and goal-oriented in your prompts."
@@ -49,3 +38,14 @@ quiz:
     - content: "To handle more complex questions by breaking them down into multiple steps, allowing for more accurate and detailed responses."
       isCorrect: true
       explanation: "Correct. 'Think Deeper' unlocks the power of deep reasoning in Microsoft Copilot, providing more accurate and detailed responses."
+  - content: "What is the role of generative AI in content creation?"
+    choices:
+    - content: "Generative AI rearranges existing information to create new content."
+      isCorrect: false
+      explanation: "Incorrect. Generative AI doesn't just rearrange existing information; it creates something new that didn't exist before."
+    - content: "Generative AI creates new, unique content, such as writing poems, composing melodies, or designing graphics based on the patterns and styles it learned from existing data."
+      isCorrect: true
+      explanation: "Correct. Generative AI uses large language models (LLMs) that are trained on huge amounts of data to create outputs that are similar to the data they were trained on."
+    - content: "Generative AI copies existing data to produce similar content."
+      isCorrect: false
+      explanation: "Incorrect. Generative AI does not just copy data, it creates entirely new and original pieces of work."
