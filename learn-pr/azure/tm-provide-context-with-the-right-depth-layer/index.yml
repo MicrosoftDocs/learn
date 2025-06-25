@@ -3,14 +3,15 @@ uid: learn.tm-provide-context-with-the-right-depth-layer
 metadata:
   title: Provide context with the right depth layer
   description: Threat models can get complex if all parties involved can't agree on a data-flow diagram depth layer that provides enough context to satisfy requirements
-  ms.date: 05/05/2023
+  ms.date: 06/26/2025
   author: rodsan
   ms.author: rodsan
   ms.topic: module
+  ms.service: azure
 title: Provide context with the right depth layer
 summary: Threat models can get complex if all parties involved can't agree on a data-flow diagram depth layer that provides enough context to satisfy requirements
 abstract: |
-  In this module, you'll':
+  In this module, you'll:
   - Learn the differences between each data-flow diagram depth layer.
   - Learn when to use them.
 prerequisites: None

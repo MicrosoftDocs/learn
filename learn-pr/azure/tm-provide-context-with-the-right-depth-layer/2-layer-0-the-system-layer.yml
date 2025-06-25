@@ -4,7 +4,7 @@ title: Layer 0 - The system layer
 metadata:
   title: Layer 0 - The system layer
   description: Learn what Layer 0 is and when to use it
-  ms.date: 05/05/2023
+  ms.date: 06/26/2025
   author: rodsan
   ms.author: rodsan
   ms.topic: unit
@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Layer 0 is commonly referred to as the: "
+  - content: "Layer 0 is commonly referred to as the:"
     choices:
     - content: "Context Layer"
       isCorrect: true
