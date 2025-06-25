@@ -372,6 +372,11 @@
         "redirect_url": "https://learn.microsoft.com/training/modules/connect-threat-indicators-to-azure-sentinel/9-summary-resources/",
         "redirect_document_id": false
       },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/configure-siem-security-operations-using-microsoft-sentinel/6-summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/configure-siem-security-operations-using-microsoft-sentinel/7-summary/",
+        "redirect_document_id": false
+      },
     {
       "source_path": "learn-pr/wwl-azure/purview-implement-manage-retention/auto-apply-retention-label.md",
       "redirect_url": "/training/modules/purview-manage-records/auto-apply-retention-label",
