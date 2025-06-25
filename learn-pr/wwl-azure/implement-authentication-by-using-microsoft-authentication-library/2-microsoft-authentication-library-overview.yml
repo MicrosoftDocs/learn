@@ -4,13 +4,12 @@ title: Explore the Microsoft Authentication Library
 metadata:
   title: Explore the Microsoft Authentication Library
   description: "Explore the Microsoft Authentication Library"
-  ms.date: 07/16/2024
+  ms.date: 06/25/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
   ms.custom:
-    - sfi-ropc-nochange
-    - N/A
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/2-microsoft-authentication-library-overview.md)]

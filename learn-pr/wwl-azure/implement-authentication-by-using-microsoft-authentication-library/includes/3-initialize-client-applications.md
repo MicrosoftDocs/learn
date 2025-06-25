@@ -1,12 +1,12 @@
 With MSAL.NET 3.x, the recommended way to instantiate an application is by using the application builders: `PublicClientApplicationBuilder` and `ConfidentialClientApplicationBuilder`. They offer a powerful mechanism to configure the application either from the code, or from a configuration file, or even by mixing both approaches.
 
-Before initializing an application, you first need to register it so that your app can be integrated with the Microsoft identity platform.  After registration, you may need the following information (which can be found in the Azure portal):
+Before initializing an application, you first need to register it so that your app can be integrated with the Microsoft identity platform. After registration, you might need the following information (which can be found in the Azure portal):
 
 * **Application (client) ID** - This is a string representing a GUID.
 * **Directory (tenant) ID** - Provides identity and access management (IAM) capabilities to applications and resources used by your organization. It can specify if you're writing a line of business application solely for your organization (also named single-tenant application).
 * The identity provider URL (named the **instance**) and the sign-in audience for your application. These two parameters are collectively known as the authority.
 * **Client credentials** - which can take the form of an application secret (client secret string) or certificate (of type `X509Certificate2`) if it's a confidential client app.
-* For web apps, and sometimes for public client apps (in particular when your app needs to use a broker), you need to set the **Redirect URI** where the identity provider will contact back your application with the security tokens.
+* For web apps, and sometimes for public client apps (in particular when your app needs to use a broker), you need to set the **Redirect URI** where the identity provider sends the security token back your application.
 
 ## Initializing public and confidential client applications from code
 
