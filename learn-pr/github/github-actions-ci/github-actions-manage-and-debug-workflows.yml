@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.github-actions-ci.2b-github-actions-manage-and-debug-workflows
+uid: learn.github.github-actions-ci.github-actions-manage-and-debug-workflows
 title: Manage and debug workflows in GitHub Actions
 metadata:
   title: Manage and debug workflows in GitHub Actions
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/2b-github-actions-manage-and-debug-workflows.md)]
+  [!include[](includes/github-actions-manage-and-debug-workflows.md)]
