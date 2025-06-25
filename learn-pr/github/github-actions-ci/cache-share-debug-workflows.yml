@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.github-actions-ci.2d-cache-share-debug-workflows
+uid: learn.github.github-actions-ci.cache-share-debug-workflows
 title: Cache, share and debug workflows
 metadata:
   title: Cache, share and debug workflows
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/2d-cache-share-debug-workflows.md)]
+  [!include[](includes/cache-share-debug-workflows.md)]
