@@ -40,7 +40,6 @@ units:
 - learn.github.github-actions-ci.2b-github-actions-manage-and-debug-workflow
 - learn.github.github-actions-ci.2c-github-actions-essential-features
 - learn.github.github-actions-ci.2d-cache-share-debug-workflows
-- learn.github.github-actions-ci.2b-github-actions-essential-features
 - learn.github.github-actions-ci.3-exercise-ci-workflow-github
 - learn.github.github-actions-ci.4-knowledge-check
 - learn.github.github-actions-ci.5-summary
