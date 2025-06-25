@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-graph.exercise-retrieve-user-profile
+title: Exercise - Retrieve user profile information with the Microsoft Graph SDK
+metadata:
+  title: Exercise - Retrieve user profile information with the Microsoft Graph SDK
+  description: "Exercise - Retrieve user profile information with the Microsoft Graph SDK"
+  ms.date: 06/25/2025
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 15
+content: |
+  [!include[](includes/5a-exercise-micrsoft-graph-user-profile.md)]
