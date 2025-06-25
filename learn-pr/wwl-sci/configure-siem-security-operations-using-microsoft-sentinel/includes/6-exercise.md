@@ -69,7 +69,7 @@ In this task, you continue with the simulation and connect a Microsoft Sentinel 
 
 1. Select the **Close** button.
 
-    :::image type="content" source="../media/successfully-coneected-close-button.png" alt-text="Screen capture of the Defender XDR workspace successfully connected page.":::
+    :::image type="content" source="../media/successfully-connected-close-button.png" alt-text="Screen capture of the Defender XDR workspace successfully connected page.":::
 
 1. On the **Defender XDR** portal **Home** screen, you should see a banner at the top with the message, *Your unified SIEM and XDR is ready*. Select the **Start Hunting** button.
 
@@ -84,7 +84,7 @@ In this task, you continue with the simulation and connect a Microsoft Sentinel 
 1. Expand the left main menu pane if collapsed and  expand the new **Microsoft Sentinel** menu items. You should see *Search*,*Threat management*, *Content management* and *Configuration* selections.
 
     > [!NOTE]
-    > Be aware that there are capability differences between the Azure Microsoft Sentinel portal and Sentinel in the Microsoft Defender XDR portal **[Portal capability differences](https://learn.microsoft.com/azure/sentinel/microsoft-sentinel-defender-portal#capability-differences-between-portals)**.
+    > Be aware that there are capability differences between the Azure Microsoft Sentinel portal and Sentinel in the Microsoft Defender XDR portal **[Portal capability differences](/azure/sentinel/microsoft-sentinel-defender-portal#capability-differences-between-portals)**.
 
 1. From the Microsoft Defender XDR **Microsoft Sentinel** menu items, then select **Configuration** and then **Data connectors**.
 
