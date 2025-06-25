@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.challenge-github-copilot-with-sql.working-with-sql-using-github-copilot
+title: Working with SQL using GitHub Copilot
+metadata:
+  title: Working with SQL using GitHub Copilot
+  description: Learn how to leverage GitHub Copilot to write and optimize SQL queries more efficiently.
+  ms.date: 06/25/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/2-working-with-sql-using-github-copilot.md)]

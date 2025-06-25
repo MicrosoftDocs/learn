@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.challenge-github-copilot-with-sq.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge.
+  ms.date: 06/25/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit 
+durationInMinutes: 3
+content: Choose the best response for each question. 
+quiz:
+  questions:
+    - content: "How can GitHub Copilot assist in optimizing SQL queries within a GitHub Codespace environment?"
+      choices:
+        - content: "By providing general coding tips and tricks."
+          isCorrect: false
+          explanation: "General coding tips don't address SQL query optimization."
+        - content: "By suggesting specific optimizations for slow or inefficient queries."
+          isCorrect: true
+          explanation: "GitHub Copilot can analyze SQL queries and suggest optimizations such as removing unnecessary JOINs, optimizing SELECT DISTINCT, or refactoring subqueries."
+        - content: "By automatically rewriting all SQL queries without user input."
+          isCorrect: false
+          explanation: "GitHub Copilot requires user input to provide specific suggestions and doesn't automatically rewrite all queries."
+    - content: "What is the role of GitHub Copilot in generating SQL-based tests or assertions?"
+      choices:
+        - content: "It can suggest appropriate testing frameworks based on the project type."
+          isCorrect: true
+          explanation: "GitHub Copilot can help generate SQL-based tests or assertions to verify query results or database state and suggest appropriate testing frameworks based on the project type."
+        - content: "It can execute SQL tests automatically without user intervention."
+          isCorrect: false
+          explanation: "GitHub Copilot assists in generating tests but doesn't execute them automatically."
+        - content: "It can only generate unit tests for non-SQL code."
+          isCorrect: false
+          explanation: "GitHub Copilot can generate tests for SQL code as well as other types of code."
+    - content: "How can GitHub Copilot enhance the understanding of complex SQL queries?"
+      choices:
+        - content: "By providing detailed documentation for the entire codebase."
+          isCorrect: false
+          explanation: "While GitHub Copilot can generate documentation, the specific enhancement for understanding SQL queries comes from its ability to explain to them."
+        - content: "By explaining the logic and structure of complex SQL queries."
+          isCorrect: true
+          explanation: "GitHub Copilot can explain complex SQL queries to help users understand their logic and structure."
+        - content: "By rewriting SQL queries to make them simpler."
+          isCorrect: false
+          explanation: "Rewriting queries is related to optimization and refactoring, but doesn't increase understanding of query functionality."
