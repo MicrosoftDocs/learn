@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.github-actions-ci.2c-github-actions-essential-features
+uid: learn.github.github-actions-ci.github-actions-essential-features
 title: Customize your workflow with environment variables
 metadata:
   title: Customize your workflow with environment variables and artifact data
