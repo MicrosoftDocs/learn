@@ -1,13 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-fabric-data-warehouse
 metadata:
-  title: Monitor a Microsoft Fabric data warehouse
+  title: Monitor a Microsoft Fabric Data Warehouse
   description: "A data warehouse is a vital component of an enterprise analytics solution. It's important to learn how to monitor a data warehouse so you can better understand the activity that occurs in it."
-  ms.date: 11/10/2024
+  ms.date: 06/13/2025
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: fabric
+  ai-usage: human-only
 title: Monitor a Microsoft Fabric data warehouse
 summary: A data warehouse is a vital component of an enterprise analytics solution. It's important to learn how to monitor a data warehouse so you can better understand the activity that occurs in it.
 abstract: |
@@ -19,7 +23,7 @@ abstract: |
 
   -   Monitor querying trends with query insights views.
 prerequisites: Before starting this module, you should be familiar with Microsoft Fabric and Transact-SQL.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/monitor-a-microsoft-fabric-data-warehouse.svg
 levels:
 - intermediate
 roles:

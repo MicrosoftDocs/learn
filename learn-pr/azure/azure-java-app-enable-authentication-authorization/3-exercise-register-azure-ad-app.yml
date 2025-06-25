@@ -6,13 +6,12 @@ metadata:
   title: Exercise - Register an application with Microsoft Entra ID
   description: In this exercise, you will register a web application with Microsoft Entra ID through the Azure portal.
   ms.date: 11/21/2023
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: yoterada
+  author: yoshioterada
+  ms.author: yoterada
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java
 durationInMinutes: 5
 content: |
   [!include[](includes/3-exercise-register-azure-ad-app.md)]
-
+

@@ -25,8 +25,8 @@ jobs:
 
 ```
 
- -  **On:** Specifies what will occur when code is pushed.
- -  **Jobs:** There's a single job called **build.**
- -  **Strategy:** It's being used to specify the Node.js version.
- -  **Steps:** Are doing a checkout of the code and setting up dotnet.
- -  **Run:** Is building the code.
+- :::no-loc text="On:"::: Specifies what will occur when code is pushed.
+- :::no-loc text="Jobs:"::: There's a single job called **`build`.**
+- :::no-loc text="Strategy:"::: It's being used to specify the Node.js version.
+- :::no-loc text="Steps:"::: Are doing a checkout of the code and setting up dotnet.
+- :::no-loc text="Run:"::: Is building the code.

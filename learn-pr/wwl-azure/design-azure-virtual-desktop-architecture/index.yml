@@ -1,24 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.design-azure-virtual-desktop-architecture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design the Azure Virtual Desktop architecture
   description: "Design the Azure Virtual Desktop architecture"
-  ms.date: 08/01/2022
+  ms.date: 06/19/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: azure-virtual-desktop
+  ai-usage: human-only
 title: Design the Azure Virtual Desktop architecture
-summary: Azure Virtual Desktop design requires that you assess network capacity and speed requirements,  select a load-balancing method for your Azure Virtual Desktop deployment, and choose the right Windows Desktop client.
+summary: Azure Virtual Desktop design requires that you assess network capacity and speed requirements, select a load-balancing method for your Azure Virtual Desktop deployment, and choose the right Windows Desktop client.
 abstract: |
   After completing this module, you'll be able to:
-  *   Assess network capacity and speed requirements for Azure Virtual Desktop.
-  *   Determine the connection round-trip time (RTT) from a location through the Azure Virtual Desktop service.
-  *   Recommend an operating system for an Azure Virtual Desktop implementation.
-  *   Describe the two load-balancing methods for Azure Virtual Desktop.
-  *   Recommendation subscriptions and management groups for Azure Virtual Desktop.
-  *   Recommend a configuration for performance requirements.
-prerequisites: ""
+
+  -   Assess network capacity and speed requirements for Azure Virtual Desktop.
+
+  -   Determine the connection round-trip time (RTT) from a location through the Azure Virtual Desktop service.
+
+  -   Recommend an operating system for an Azure Virtual Desktop implementation.
+
+  -   Describe the two load-balancing methods for Azure Virtual Desktop.
+
+  -   Recommendation subscriptions and management groups for Azure Virtual Desktop.
+
+  -   Recommend a configuration for performance requirements.
+prerequisites: '-   None'
 iconUrl: /training/achievements/2-design-the-azure-virtual-desktop-architecture.svg
 levels:
 - intermediate
@@ -44,4 +56,3 @@ units:
 - learn.wwl.design-azure-virtual-desktop-architecture.summary
 badge:
   uid: learn.wwl.design-azure-virtual-desktop-architecture.badge
-

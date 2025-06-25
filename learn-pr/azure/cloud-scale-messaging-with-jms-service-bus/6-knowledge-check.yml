@@ -5,9 +5,8 @@ metadata:
   title: Module assessment
   description: Check your knowledge.
   ms.date: 11/11/2024
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: spelluru
+  author: spelluru
+  ms.author: spelluru
   ms.topic: unit
 durationInMinutes: 2
 quiz:
@@ -63,4 +62,4 @@ quiz:
           isCorrect: true
           explanation: "You can lift and shift your existing JMS application from any JMS message broker to Azure Service Bus."
 
-
+

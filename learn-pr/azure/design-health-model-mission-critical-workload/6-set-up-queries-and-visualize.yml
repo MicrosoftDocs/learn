@@ -8,6 +8,7 @@ metadata:
   author: msimecek
   ms.author: prwilk
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 durationInMinutes: 15
 content: |
   [!include[](includes/6-set-up-queries-and-visualize.md)]
