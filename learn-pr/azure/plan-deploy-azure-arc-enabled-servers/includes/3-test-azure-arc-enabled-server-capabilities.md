@@ -4,13 +4,7 @@ As you prepare to deploy across Wide World Importers' thousands of machines, you
 
 For this discussion, we assume that you already have a Windows Server Azure VM. The version of Windows Server deployed in Azure should be Windows Server 2012 and later versions (including Server Core).
 
-That being said, Azure Arc-enabled servers also supports the following Linux distributions:
-
-- Ubuntu 18.04 (limited support), 20.04, 22.04, and 24.04
-- SUSE Linux Enterprise Server (SLES) 12 (limited support) and 15 (x64)
-- Red Hat Enterprise Linux (RHEL) 7, 8 and 9 (x64)
-- Amazon Linux 2, and 2023 (x64)
-- Oracle Linux 7, 8, and 9 (x64)
+That being said, Azure Arc-enabled servers also supports Linux distributions. For the full list, see [Supported operating systems](/azure/azure-arc/servers/prerequisites#supported-operating-systems).
 
 ## Prepare an Azure VM for Azure Arc-enabled servers
 
