@@ -1,4 +1,4 @@
-You've configured SSL for the connection between Azure Application Gateway and the servers in the backend pool. For the shipping portal, you need full end-to-end encryption. To do this encryption, you'll also need to encrypt the messages that the client sends to Application Gateway.
+You've configured SSL for the connection between Azure Application Gateway and the servers in the backend pool. For the shipping portal, you need full end-to-end encryption. To accomplish this encryption, you'll also need to encrypt the messages that the client sends to Application Gateway.
 
 ## Create a frontend port
 

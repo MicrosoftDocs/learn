@@ -67,4 +67,4 @@ az network application-gateway http-settings create \
     --auth-certs <certificate name>
 ```
 
-If you're using Application Gateway v2, omit the `--auth-certs` parameter. Application Gateway contacts the backend server. It verifies the authenticity of the certificate presented by the server against the CAs specified by a list of trusted root certificates. If there's no match, Application Gateway won't connect to the backend server and will fail with an HTTP 502 (Bad Gateway) error.
+If you're using Application Gateway v2, omit the `--auth-certs` parameter. Application Gateway contacts the backend server. It verifies the authenticity of the certificate the server provides against the CAs specified by a list of trusted root certificates. If there's no match, Application Gateway won't connect to the backend server, and will fail with an HTTP 502 (Bad Gateway) error.
