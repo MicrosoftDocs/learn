@@ -3,7 +3,7 @@ uid: learn.tm-provide-context-with-the-right-depth-layer
 metadata:
   title: Provide Context with the Right Depth Layer
   description: Threat models can get complex if all parties involved can't agree on a data-flow diagram depth layer that provides enough context to satisfy requirements
-  ms.date: 06/26/2025
+  ms.date: 06/25/2025
   author: rodsan
   ms.author: rodsan
   ms.topic: module
