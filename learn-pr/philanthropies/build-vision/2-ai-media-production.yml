@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.build-vision.ai-media-production
+title: AI in media production
+metadata:
+  title: AI in Media Production
+  description: "Use Microsoft Copilot, Clipchamp, and Designer to automate tasks, enhance visuals, and streamline the creative process in media production. Keywords: AI media production, Microsoft Copilot, Clipchamp, Microsoft Designer, AI video editing, AI creative workflows."
+  ms.date: 3/20/2025
+  author: kariannab-ms
+  ms.author: kbarreto
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-ai-media-production.md)]

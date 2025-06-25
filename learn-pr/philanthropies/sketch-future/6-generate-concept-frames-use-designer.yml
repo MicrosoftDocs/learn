@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.sketch-future.generate-concept-frames-use-designer
+title: Generate concept frames using Microsoft Designer
+metadata:
+  title: Generate Concept Frames Using Microsoft Designer
+  description: "In this unit, learners practice generating scene-specific concept frames using Microsoft Designer. Learners explore how to craft effective prompts, explore different visual styles, and build a coherent visual narrative to guide animation production. Keywords: Microsoft Designer, concept art generation, visual storytelling, animation scene design, AI creative prompts."
+
+  ms.date: 4/28/2025
+  author: kariannab-ms
+  ms.author: kbarreto
+  ms.topic: unit
+  
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-generate-concept-frames-use-designer.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.animate-impossible.exercise
+title: Apply AI-powered motion smoothing to an animated sequence
+metadata:
+  title: Exercise - Apply AI-Powered Motion Smoothing to an Animated Sequence
+  description: "In this hands-on activity, learners use Sora to apply AI-powered frame smoothing to a 2D animation sequence. Learners enhance motion fluidity, adjust smoothing settings, and refine pacing to create a more professional, natural-looking animated clip. Keywords: Sora, AI animation enhancement, frame interpolation, motion smoothing, animation refinement."
+
+  ms.date: 4/28/2025
+  author: kariannab-ms
+  ms.author: kbarreto
+  ms.topic: unit
+  
+durationInMinutes: 25
+content: |
+  [!include[](includes/7-exercise.md)]
