@@ -29,7 +29,7 @@ The Conditional Access optimization agent scans your tenant for new users and ap
 ## Give the Conditional Access optimization agent a try
 
 
-In this exercise, you explore key capabilities in the Conditional Access optimization agent in Microsoft embedded experience of Security Copilot.
+In this exercise, you explore key capabilities in the Security Copilot Conditional Access optimization agent embedded in Microsoft Entra.
 
 **As you explore, keep in mind that unless otherwise stated, the information displayed and the configuration settings are for the currently logged in Security Administrator**.
 
@@ -41,21 +41,19 @@ In this exercise, you explore key capabilities in the Conditional Access optimiz
 
 ### Exercise
 
-For this exercise, you're logged in as Avery Howard and have the Copilot owner role for the active workspace, SecurityCopilot_Workspace. In this exercise, you explore the standalone experience of Microsoft Security Copilot.
-
-This exercise should take approximately **30** minutes to complete.
+This exercise should take approximately **10** minutes to complete.
 
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it's recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
-
-
-1. Open [https://Entra.Microsoft.com (simulation)](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapp.highlights.guide%2Fstart%2F673ccf96-b6de-43aa-b267-5c8efe51639c%3Ftoken%3D16d48b6c-eace-4a1f-8050-098d29d23a89&data=05%7C02%7CRobert.Stewart%40microsoft.com%7C002283d502a5447b6fc608ddb25b8a73%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638862828426563227%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=krYm%2BX%2FduKbjtZI5t27fNvWrdUIw2Vj2Ufta3fJpB0o%3D&reserved=0&azure-portal=true) with at least the Security Administrator role.
+1. Open [https://Entra.Microsoft.com (simulation)](https://app.highlights.guide/start/673ccf96-b6de-43aa-b267-5c8efe51639c?token=16d48b6c-eace-4a1f-8050-098d29d23a89&azure-portal=true) with at least the Security Administrator role.
  
-2. Launch the Security Copilot Agents screen:
+There are two ways to launch the Security Copilot Agents screen:
 
    -	Option-1: Select the **Try Security Copilot** agents free for 60 days
    -	Option-2: Open Conditional Access from the menu on the left.  Then select the Conditional Access Optimization agent.
+
+Please feel free to use either option to launch the agent, but remember that both options are available.
 
 ### Option-1:
 1.	Select the "free 60 day trial" button.
