@@ -24,7 +24,7 @@ The Conditional Access optimization agent scans your tenant for new users and ap
 | Block legacy authentication | User accounts with legacy authentication are blocked from signing in. |
 | Policy consolidation | The agent scans your policy and identifies overlapping settings. For example, if you have more than one policy that has the same grant controls, the agent suggests consolidating those policies into one. |
 | Block device code flow | The agent looks for a policy blocking device code flow authentication. |
-| One-click remediation | When the agent identifies a suggestion, you can select Apply suggestion to have the agent update the associated policy with one click. |
+| One-click remediation | When the agent identifies a suggestion, you can select Apply suggestion to have the agent update the associated policy with one press of a button. |
 
 ## Give the Conditional Access optimization agent a try
 
@@ -34,7 +34,7 @@ In this exercise, you explore key capabilities in the Conditional Access optimiz
 **As you explore, keep in mind that unless otherwise stated, the information displayed and the configuration settings are for the currently logged in Security Administrator**.
 
 > [!NOTE]
-> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message displays stating, "This feature isn't available within the simulation." When this occurs, select OK and continue the exercise steps.
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, not all links on a page are enabled and text-based inputs that fall outside of the specified script are not supported. A pop-up message displays stating, "This feature isn't available within the simulation." When this occurs, select OK and continue the exercise steps.
 >
 >
 >:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
@@ -53,8 +53,8 @@ This exercise should take approximately **30** minutes to complete.
 1.	Open [https://Entra.Microsoft.com (simulation)](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapp.highlights.guide%2Fstart%2F673ccf96-b6de-43aa-b267-5c8efe51639c%3Ftoken%3D16d48b6c-eace-4a1f-8050-098d29d23a89&data=05%7C02%7CRobert.Stewart%40microsoft.com%7C002283d502a5447b6fc608ddb25b8a73%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638862828426563227%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=krYm%2BX%2FduKbjtZI5t27fNvWrdUIw2Vj2Ufta3fJpB0o%3D&reserved=0&azure-portal=true) with at least the Security Administrator role.
  
 2.	Launch the Security Copilot Agents screen:
--	Option-1 : Select the Try Security Copilot agents free for 60 days
--	Option-2 : Open Conditional Access from the menu on the left.  Then select the Conditional Access Optimization agent.
+-	Option-1: Select the "Try Security Copilot" agents free for 60 days
+-	Option-2: Open Conditional Access from the menu on the left.  Then select the Conditional Access Optimization agent.
 
 ### Option-1:
 1.	Select the “free 60 day trial” button.
@@ -79,7 +79,7 @@ This exercise should take approximately **30** minutes to complete.
 3.	Review the process flow of the agent and see what new information was detected since the last completion.
    - Take note that is search for three common access rights optimizations:
       - App / Application drift – new applications were deployed and need to be protected.
-      - User drift – please where new users were found, or user rights changed that leave them unprotected by policy.
+      - User drift – new users were found, or user rights changed that leave them unprotected by policy.
       - Policy merge – places where 2 or more policies could be merged to provide the same result, with easier management.
 
 4.	Select the breadcrumb Conditional Access Optimization Agent (Preview) at the top of the page to return to the Overview page.
@@ -119,8 +119,8 @@ This exercise should take approximately **30** minutes to complete.
 3.	Review the list of policies, you should see three types:
 
    - Microsoft – global policies sent out by Microsoft, like require MFA.
-   - User – polices created by an authorized user in your organization.
-   - Conditional Access Optimization Agent – Report Only policies created by the agent for your review.  You can choose to apply them depending your business and security goals.
+   - User – conditional access polices created by an authorized user in your organization.
+   - Conditional Access Optimization Agent – Report Only policies created by the agent for your review.  You can choose to apply them depending on business and security goals.
 
 4.	Scroll down the list to find the CA99 policy we reviewed earlier.
  
@@ -132,6 +132,6 @@ This exercise should take approximately **30** minutes to complete.
 
 8.	Select the “Apply suggestion” button.
 
-**Result** – The agent, has monitored your users each day and found users that we not protected by Risky User policies.  It suggested that you update your policy to include the new users, and provided you with a button to make the change.  In one click you have protected the users.
+**Result** – The agent, has monitored your users each day and found users that we not protected by Risky User policies.  It suggested that you update your policy to include the new users, and provided you with a button to make the change.  In one button you have protected the users.
 
 9.	Exit out to Microsoft Entra to finish the simulation.
