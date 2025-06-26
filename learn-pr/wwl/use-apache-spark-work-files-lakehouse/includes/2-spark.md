@@ -71,7 +71,7 @@ When creating an environment, you can:
 After creating at least one custom environment, you can specify it as the default environment in the workspace settings.
 
 > [!TIP]
-> For more information about using custom environments in Microsoft Fabric, see **[Create, configure, and use an environment in Microsoft Fabric](/fabric/data-engineering/create-and-use-environment=azure-portal=true)** in the Microsoft Fabric documentation.
+> For more information about using custom environments in Microsoft Fabric, see **[Create, configure, and use an environment in Microsoft Fabric](/fabric/data-engineering/create-and-use-environment?azure-portal=true)** in the Microsoft Fabric documentation.
 
 ## Additional Spark configuration options
 
