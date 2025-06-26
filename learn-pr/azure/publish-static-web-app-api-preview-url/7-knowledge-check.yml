@@ -46,7 +46,7 @@ quiz:
       choices:
         - content: "In the package.json file."
           isCorrect: false
-          explanation: "Incorrect. The configuration for your app's locations are defined in the GitHub Actions workflow file."
+          explanation: "Incorrect. The locations of your apps are defined and configured in the GitHub Actions workflow file."
         - content: "Add an entry in *staticwebapp.config.json* for the location."
           isCorrect: false
           explanation: "Incorrect. The *staticwebapp.config.json* file is where you define routing rules, not the location of your API."
@@ -56,4 +56,4 @@ quiz:
         - content: "In the GitHub Actions workflow file, located in your *.github/workflows* folder."
           isCorrect: true
           explanation: "Correct. You can configure the locations for your app code, app artifact, and API in the GitHub Actions workflow file. This file is located in your *.github/workflows* folder."
-
+
