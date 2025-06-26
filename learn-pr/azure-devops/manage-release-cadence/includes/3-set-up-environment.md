@@ -189,19 +189,19 @@ Here you create App Service instances for the three stages that you'll deploy to
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-test-asp \
-      --runtime "DOTNET|6.0"
+      --runtime "DOTNET|8.0"
 
     az webapp create \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-test-asp \
-      --runtime "DOTNET|6.0"
+      --runtime "DOTNET|8.0"
 
     az webapp create \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-prod-asp \
-      --runtime "DOTNET|6.0"
+      --runtime "DOTNET|8.0"
     ```
 
     Notice that here you apply the same App Service plan, **B1 Basic**, to the App Service instances for *Dev* and *Test*. You apply the App Service plan **Premium P1V2** to the App Service instance for *Staging*.
