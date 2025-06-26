@@ -6,7 +6,7 @@ Before initializing an application, you first need to register it so that your a
 * **Directory (tenant) ID** - Provides identity and access management (IAM) capabilities to applications and resources used by your organization. It can specify if you're writing a line of business application solely for your organization (also named single-tenant application).
 * The identity provider URL (named the **instance**) and the sign-in audience for your application. These two parameters are collectively known as the authority.
 * **Client credentials** - which can take the form of an application secret (client secret string) or certificate (of type `X509Certificate2`) if it's a confidential client app.
-* For web apps, and sometimes for public client apps (in particular when your app needs to use a broker), you need to set the **Redirect URI** where the identity provider sends the security token back your application.
+* For web apps, and sometimes for public client apps (in particular when your app needs to use a broker), you need to set the **Redirect URI** where the identity provider sends the security token back to your application.
 
 ## Initializing public and confidential client applications from code
 
