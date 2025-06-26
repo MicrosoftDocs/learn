@@ -30,7 +30,7 @@ Before you start setting up the agent, let’s go to the plugins page and make s
 
 ### Task: Set up and run the agent
 
-In this task, you setup the Threat Intelligence Briefing Agent.
+In this task, you set up the Threat Intelligence Briefing Agent.
 
 1. Select the **Menu icon** which is sometimes referred to as the hamburger icon and select **Agents**. If a pop-up displays, select **Dismiss**.
 1. Look for the tile that says, **Threat Intelligence Briefing Agent**, then select **View details**.
@@ -60,7 +60,7 @@ In this task, you setup the Threat Intelligence Briefing Agent.
 
 1. Keep this browser tab open for the next task.
 
-#### Task: Run the agent on a manual trigger with different parameters
+### Task: Run the agent on a manual trigger with different parameters
 
 There will be times where you may want to manually run the agent, with different parameters but not change the setting configured during setup that are used for automatically triggered runs.
 
