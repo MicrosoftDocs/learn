@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/9-knowledge-check.md)]

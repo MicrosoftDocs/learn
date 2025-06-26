@@ -8,6 +8,7 @@ metadata:
   author: JBrentJ
   ms.author: lolab
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 quiz:
   questions:

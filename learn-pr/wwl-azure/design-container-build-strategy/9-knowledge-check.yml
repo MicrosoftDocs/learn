@@ -11,6 +11,7 @@ metadata:
   ms.custom:
     - N/A
   no-loc: [Docker run, Docker pull, Docker build]
+  module_assessment: true
 durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]

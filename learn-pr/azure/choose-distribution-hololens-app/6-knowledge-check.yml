@@ -8,6 +8,7 @@ metadata:
   author: aprilspeight
   ms.author: tholewis
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:

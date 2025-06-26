@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom:
     - devx-track-python
+  module_assessment: true
 azureSandbox: false
 durationInMinutes: 3
 content: |

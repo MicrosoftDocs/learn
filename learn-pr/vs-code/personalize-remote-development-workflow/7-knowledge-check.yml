@@ -8,6 +8,7 @@ metadata:
   author: burkeholland
   ms.author: buhollan
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:
