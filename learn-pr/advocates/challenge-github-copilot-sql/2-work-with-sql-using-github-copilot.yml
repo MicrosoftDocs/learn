@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.challenge-github-copilot-with-sq.work-with-sql-using-github-copilot
+uid: learn.challenge-github-copilot-with-sql.work-with-sql-using-github-copilot
 title: Work with SQL using GitHub Copilot
 metadata:
   title: Work With SQL Using GitHub Copilot
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 11
 content: |
-  [!include[](includes/3-work-with-sql-using-github-copilot.md)]
+  [!include[](includes/2-work-with-sql-using-github-copilot.md)]
