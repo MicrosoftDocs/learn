@@ -50,11 +50,12 @@ This exercise should take approximately **30** minutes to complete.
 
 
 
-1.	Open [https://Entra.Microsoft.com (simulation)](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapp.highlights.guide%2Fstart%2F673ccf96-b6de-43aa-b267-5c8efe51639c%3Ftoken%3D16d48b6c-eace-4a1f-8050-098d29d23a89&data=05%7C02%7CRobert.Stewart%40microsoft.com%7C002283d502a5447b6fc608ddb25b8a73%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638862828426563227%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=krYm%2BX%2FduKbjtZI5t27fNvWrdUIw2Vj2Ufta3fJpB0o%3D&reserved=0&azure-portal=true) with at least the Security Administrator role.
+1. Open [https://Entra.Microsoft.com (simulation)](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fapp.highlights.guide%2Fstart%2F673ccf96-b6de-43aa-b267-5c8efe51639c%3Ftoken%3D16d48b6c-eace-4a1f-8050-098d29d23a89&data=05%7C02%7CRobert.Stewart%40microsoft.com%7C002283d502a5447b6fc608ddb25b8a73%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638862828426563227%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=krYm%2BX%2FduKbjtZI5t27fNvWrdUIw2Vj2Ufta3fJpB0o%3D&reserved=0&azure-portal=true) with at least the Security Administrator role.
  
-2.	Launch the Security Copilot Agents screen:
--	Option-1: Select the **Try Security Copilot** agents free for 60 days
--	Option-2: Open Conditional Access from the menu on the left.  Then select the Conditional Access Optimization agent.
+2. Launch the Security Copilot Agents screen:
+
+   -	Option-1: Select the **Try Security Copilot** agents free for 60 days
+   -	Option-2: Open Conditional Access from the menu on the left.  Then select the Conditional Access Optimization agent.
 
 ### Option-1:
 1.	Select the "free 60 day trial" button.
