@@ -8,6 +8,7 @@ metadata:
   author: RiyazPishori
   ms.author: riyazp
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

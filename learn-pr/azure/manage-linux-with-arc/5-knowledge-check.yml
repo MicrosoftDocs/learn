@@ -9,6 +9,7 @@ metadata:
   ms.author: jenhayes
   ms.topic: unit
   ms.custom: linux-related-content
+  module_assessment: true
 durationInMinutes: 4
 quiz:
   questions:

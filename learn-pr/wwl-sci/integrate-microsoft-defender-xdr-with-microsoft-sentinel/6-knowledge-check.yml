@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 10
 content: |
   [!include[](includes/6-knowledge-check.md)]

@@ -12,6 +12,7 @@ metadata:
     - team=cloud_advocates
     - devx-track-extended-java
   ms.contributors: judubois-01052021
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
