@@ -8,6 +8,7 @@ metadata:
   ms.author: alexwolf
   ms.date: 04/05/2024
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

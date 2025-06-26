@@ -12,6 +12,7 @@ metadata:
     - devx-track-extended-java
   ms.contributors:
   - sakriema-12042020
+  module_assessment: true
 title: Module assessment
 durationInMinutes: 4
 quiz:

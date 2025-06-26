@@ -8,6 +8,7 @@ metadata:
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 durationInMinutes: 4
 content: |

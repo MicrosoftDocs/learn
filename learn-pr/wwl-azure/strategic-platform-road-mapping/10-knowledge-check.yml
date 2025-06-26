@@ -8,6 +8,7 @@ metadata:
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 6
 content: |
   [!include[](includes/10-knowledge-check.md)]
