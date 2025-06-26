@@ -4,7 +4,7 @@ title: Exercise - Retrieve user profile information with the Microsoft Graph SDK
 metadata:
   title: Exercise - Retrieve user profile information with the Microsoft Graph SDK
   description: "Exercise - Retrieve user profile information with the Microsoft Graph SDK"
-  ms.date: 06/25/2025
+  ms.date: 06/26/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 15
 content: |
-  [!include[](includes/5a-exercise-micrsoft-graph-user-profile.md)]
+  [!include[](includes/5a-exercise-microsoft-graph-user-profile.md)]
