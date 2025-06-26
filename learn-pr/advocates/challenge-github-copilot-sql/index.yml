@@ -13,9 +13,9 @@ title: Challenge GitHub Copilot with SQL
 summary: In this module, you learn how to apply advanced GitHub Copilot features interact with an application that uses complex SQL queries. 
 abstract: |
   After completing this module, you will:
-  - Demonstrate an understanding of how to use GitHub Copilot with existing application and SQL code
+  - Demonstrate an understanding of how to use GitHub Copilot with existing application and SQL code.
   - Use advanced GitHub Copilot interaction techniques to deal with complex problems regarding SQL queries.
-  - Iterate, validate, and refine answers to get better and more accurate suggestions
+  - Iterate, validate, and refine answers to get better and more accurate suggestions.
   - Gain an understanding of GitHub copilot prompting techniques and prompts impact the output from GitHub Copilot.
 prerequisites: |
   To get the most out of this module, you should have:
