@@ -11,6 +11,7 @@ metadata:
     - team=nextgen
     - devx-track-python
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 1
 content: |
 quiz:

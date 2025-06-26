@@ -12,6 +12,7 @@ metadata:
   ms.custom:
     - devx-track-java
     - devx-track-extended-java
+  module_assessment: true
 durationInMinutes: 2
 quiz:
   questions:
