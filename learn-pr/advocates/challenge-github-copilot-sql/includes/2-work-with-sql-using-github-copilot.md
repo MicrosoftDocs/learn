@@ -20,7 +20,7 @@ _@workspace Please provide me with the SQL code to create a table that included 
 
 ![A screenshot a GitHub Copilot prompt related to the creation of a table in SQL.](../media/create-table.svg)
 
-## Understanding an application that includes SQL
+## Understand an application that includes SQL
 
 For example, if you opened a codespace were presented with an application that included SQL code, you could query GitHub Copilot with the following prompt to understand more about the project in the following manner:
 
@@ -70,7 +70,7 @@ You can request that GitHub Copilot to generate SQL-based tests or assertions to
 
 GitHub Copilot can help you write tests for your application code by generating test code that covers your codebase. This includes unit tests, end-to-end tests, and tests for edge cases.
 
-## Debugging SQL errors
+## Debug SQL errors
 
 You can ask GitHub Copilot to help debug SQL errors or suggest fixes for common issues. For example, you can select a file or block of code and ask GitHub Copilot to locate and correct any syntax errors.  
 
@@ -80,9 +80,9 @@ By having GitHub Copilot provide you with full table schema and indexes, you can
 
 You can use GitHub Copilot to generate prompts to create code that performs better than existing code. When interacting with GitHub Copilot, provide as much detail in the question as possible to increase the chance that the answer provided meets your requirements. To accomplish this:
 
-1. Have an understanding of the code. This understanding can be derived from existing interaction with GitHub Copilot.
-1. Select the original code and open GitHub Copilot Chat.
-1. Provide as much detail as possible. For example, you might provide GitHub Copilot chat with the following prompt:
+- Have an understanding of the code. This understanding can be derived from existing interaction with GitHub Copilot.
+- Select the original code and open GitHub Copilot Chat.
+- Provide as much detail as possible. For example, you might provide GitHub Copilot chat with the following prompt:
 
 _Given the following requirements:_
 _The database is SQLite and contains tables relevant to movie ratings (see the structure in complex.sql)._

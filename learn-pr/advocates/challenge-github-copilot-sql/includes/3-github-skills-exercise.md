@@ -3,7 +3,7 @@ In this exercise, you take the role of a developer who has been asked to examine
 By the end of this workshop, you will:
 
 - Use advanced GitHub Copilot interaction techniques to deal with complex problems regarding SQL queries.
-- Iterate, validate, and refine answers to get better and more accurate suggestions
+- Iterate, validate, and refine answers to get better and more accurate suggestions.
 - Apply generic concepts that can improve suggestions and select from different strategies that can yield better results.
 - Get a clear understanding of poor prompting techniques, and how these can drastically affect the output from GitHub Copilot.
 
@@ -11,7 +11,7 @@ By the end of this workshop, you will:
 
 This exercise walks you through the following steps:
 
-1. Start a GitHub Codespace with the web application code
+1. Start a GitHub Codespace with the web application code.
 1. Explore the project using GitHub Copilot.
 1. Determine what performance problems exist using GitHub Copilot.
 1. Examine and optimize SQL code.

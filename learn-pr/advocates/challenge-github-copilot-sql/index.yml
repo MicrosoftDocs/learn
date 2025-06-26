@@ -29,10 +29,10 @@ roles:
 products:
 - github
 units:
-- learn.challenge-github-copilot-with-sq.introduction-github-copilot-codespaces
-- learn.challenge-github-copilot-with-sql.working-with-sql-using-github-copilot
+- learn.challenge-github-copilot-with-sql.introduction-github-copilot-codespaces
+- learn.challenge-github-copilot-with-sql.work-with-sql-using-github-copilot
 - learn.challenge-github-copilot-with-sql.github-skills-exercise
-- learn.challenge-github-copilot-with-sq.knowledge-check
+- learn.challenge-github-copilot-with-sql.knowledge-check
 - learn.challenge-github-copilot-with-sql.summary
 badge:
   uid: learn.challenge-github-copilot-with-sql-badge

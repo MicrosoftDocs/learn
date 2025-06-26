@@ -22,17 +22,17 @@ GitHub Copilot Chat's AI assistance features include:
 
 By using AI to assist with coding tasks, GitHub Copilot can help you focus on higher-level design and problem-solving, rather than getting bogged down in syntax and implementation details.
 
-## Understanding GitHub Codespaces
+## Understand GitHub Codespaces
 
 GitHub Codespaces provides a cloud hosted development environment, ready to use and accessible from any computer with an internet connection and standards compliant web browser. You use GitHub Codespaces within your browser and when a codespace is loaded, you interact with it as you would any traditional IDE. GitHub Codespaces provides you with an environment that includes all the essential languages, tools, and utilities you need to code effectively. 
 
-![A screenshot of the GitHub Codespace interface, showing the explorer, a readme file, and the Ask Copilot pane](../media/codespace-interface.svg)
+![A screenshot of the GitHub Codespace interface, showing the explorer, a readme file, and the Ask Copilot pane.](../media/codespace-interface.svg)
 
 You can also use the terminal pane within a GitHub Codespace to run commands, such as python scripts.
 
-![A screenshot showing a python script being called from a GitHub codespace](../media/run-python-terminal.svg)
+![A screenshot showing a python script being called from a GitHub codespace.](../media/run-python-terminal.svg)
 
-## Creating a GitHub Codespace
+## Create a GitHub Codespace
 
 To begin developing using GitHub Codespaces, you can create a codespace from a template or from any branch or commit in a GitHub repository. When you create a codespace from a template, you can start from a blank template or choose a template suitable for the work you're doing.
 
@@ -45,9 +45,9 @@ For example, you can:
 
 To open a codespace from your GitHub account, start at the landing page of your repository, choose the Code button, and then choose Create codespace on the repository on the Codespaces tab.
 
-![A screenshot showing how to open a GitHub Codespace from a GitHub repository](../media/open-codespace-repository.svg)
+![A screenshot showing how to open a GitHub Codespace from a GitHub repository.](../media/open-codespace-repository.svg)
 
-## Customizing GitHub Codespaces
+## Customize GitHub Codespaces
 
 You can customize your project for GitHub Codespaces by committing configuration files to your repository (also known as configuration-as-code), which creates a repeatable codespace configuration for all users of your project. Each codespace you create is hosted by GitHub in a Docker container that runs on a virtual machine. You can choose the type of virtual machine you want to use depending on the resources you need.
 
