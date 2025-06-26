@@ -8,6 +8,7 @@ metadata:
   author: KenMAG
   ms.author: kelawson
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 10
 content: |
   [!include[](includes/knowledge-check.md)]

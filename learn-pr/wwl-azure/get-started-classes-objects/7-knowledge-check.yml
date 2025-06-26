@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
+  module_assessment: true
 durationInMinutes: 4
 quiz:
   title: "Check your knowledge"

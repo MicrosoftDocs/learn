@@ -9,6 +9,7 @@ metadata:
   author: normesta
   ms.author: normesta
   ms.topic: unit
+  module_assessment: true
 quiz:
   title: Check your knowledge
   questions:

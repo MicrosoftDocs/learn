@@ -11,6 +11,7 @@ metadata:
   ms.topic: unit
   ms.custom: event-tier1-build-2022
   ms.date: 08/21/2024
+  module_assessment: true
 
 durationInMinutes: 5
 content: |
