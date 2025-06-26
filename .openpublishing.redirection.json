@@ -41,6 +41,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/achievements/learn.azure.deploy-java-spring-boot-app-service-mysql.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/configure-security-policies-to-manage-data/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql",
       "redirect_document_id": false
