@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.7-knowledge-check
+uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-knowledge-check.md)]
+  [!include[](includes/knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:

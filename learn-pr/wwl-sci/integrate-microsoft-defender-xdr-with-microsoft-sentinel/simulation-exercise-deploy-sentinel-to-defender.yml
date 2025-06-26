@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.6-simulation-exercise-deploy-sentinel-to-defender
+uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.simulation-exercise-deploy-sentinel-to-defender
 title: Exercise - Connect Microsoft Sentinel to Microsoft Defender XDR
 metadata:
   title: Exercise - Connect Microsoft Sentinel to Microsoft Defender XDR
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-simulation-exercise-deploy-sentinel-to-defender.md)]
+  [!include[](includes/simulation-exercise-deploy-sentinel-to-defender.md)]
