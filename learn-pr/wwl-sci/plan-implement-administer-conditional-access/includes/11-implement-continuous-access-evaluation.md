@@ -74,7 +74,7 @@ This exercise should take approximately **30** minutes to complete.
    - Recent suggestions – Review of all existing Conditional Access policies and suggestions on how they could be merged, updated, removed, or enhanced.
    - Recent Activity – Status on the last few attempts of the Conditional Access Optimization Agent to run, and the results.
 
-2.	Select the **View run** link within the **Agent is active** box..
+2.	Select the **View run** link within the **Agent is active** box.
 
 3.	Review the process flow of the agent and see what new information was detected since the last completion.
    - Take note that is search for three common access rights optimizations:
@@ -102,13 +102,13 @@ This exercise should take approximately **30** minutes to complete.
 
 13.	Select the **Policy impact** tab at the top of the page to see a graph of this policy change over time.
 
-14.	Switch back to the **Policy details** tab, then Select the “Review policy changes” to see the proposed changes and the JSON update to be made.
+14.	Switch back to the **Policy details** tab, then select the **Review policy changes** to see the proposed changes and the JSON update to be made.
 
 15.	Use the browser **Back** button to return to the **Overview** page.
 
 16.	Select **Suggestions** from the menu.
 
-17.	Select the “x” in the upper right of the screen to close the dialog.
+17.	Select the **X** in the upper right of the screen to close the dialog.
 
 ### Explore Conditional Access Optimization Agents in CA-Policies 
 
@@ -130,8 +130,8 @@ This exercise should take approximately **30** minutes to complete.
 
 7.	Read over the description of what the suggestion is going to do.
 
-8.	Select the “Apply suggestion” button.
+8.	Select the **Apply suggestion** button.
 
-**Result** – The agent, monitors your users each day and found users that were not protected by Risky User policies.  It suggested you update your policy to include the new users, and provided you with a button to make the change.  In one button you added protection for the users.
+**Result** – The agent, monitors your users each day and found users that weren't protected by Risky User policies.  It suggested you update your policy to include the new users, and provided you with a button to make the change.  In one button you added protection for the users.
 
 9.	Exit Microsoft Entra to finish the simulation.
