@@ -2,15 +2,16 @@
 uid: learn.wwl.work-azure-blob-storage.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 07/12/2024
+  ms.date: 06/26/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
   ms.custom:
   - N/A
-  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -36,4 +37,4 @@ quiz:
       explanation: "Correct. The BlobContainerClient can be used to manipulate both containers and blobs."
     - content: "BlobUriBuilder"
       isCorrect: false
-      explanation: "Incorrect. The BlobUriBuilder provides a way to modify the contents of a Uri instance to point to different Azure Storage resources like an account, container, or blob."
+      explanation: "Incorrect. The BlobUriBuilder provides a way to modify the contents of a Uri instance to point to different Azure Storage resources like an account, container, or blob."
