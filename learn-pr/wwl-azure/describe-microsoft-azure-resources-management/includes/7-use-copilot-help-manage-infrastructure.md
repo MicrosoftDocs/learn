@@ -16,4 +16,4 @@ And for simple tasks, such as restarting a virtual machine, you can simply ask M
 ##Provide recommendations
 Microsoft Copilot in Azure provides recommendations too! If Microsoft Copilot in Azure needs further information to help, it will ask follow-up questions until it has enough information to provide a recommendation.
 
-:::image type="content" source="../media/ azure-copilot-questions.png" alt-text="Screenshot of Microsoft Copilot in Azure asking follow-up questions.":::
+:::image type="content" source="../media/azure-copilot-questions.png" alt-text="Screenshot of Microsoft Copilot in Azure asking follow-up questions.":::

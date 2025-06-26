@@ -9,7 +9,7 @@ Then, you could see statistics and metrics on each of those groups simply by ref
 
 From the **Tags** blade of Azure, you can quickly see your assigned tags. By selecting one of the tags, you can also see all resources that have that tag assigned.
 
-:::image type="content" source="../media/ azure-tags.png" alt-text="Screenshot of the tags blade showing multiple tags assigned to resources.":::
+:::image type="content" source="../media/azure-tags.png" alt-text="Screenshot of the tags blade showing multiple tags assigned to resources.":::
 
 And recall that tags can be set at different levels. You can set a tag at the subscription level, or the resource group level, or on individual resources. You can even use Azure policy to set it up so that a tag on a resource group is automatically applied to resources within the resource group. Or, you could set it so you got a notification if a resource within that resource group didn’t have the tag – so you could investigate if the resource was in the wrong resource group or if you simply needed to update the tags.
 
@@ -25,4 +25,4 @@ Locks can be created at various levels and they apply to child resources as well
 
 Locks can typically be applied within the resource *settings* section of the resource blade.
 
-:::image type="content" source="../media/ resource-locks.png" alt-text="Screenshot of a virtual machine blade in Azure with settings and locks highlighted.":::
+:::image type="content" source="../media/resource-locks.png" alt-text="Screenshot of a virtual machine blade in Azure with settings and locks highlighted.":::
