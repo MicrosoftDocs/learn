@@ -1,10 +1,9 @@
-In this exercise, you register an application in Microsoft Entra ID, then create a .NET console application that uses MSAL.NET to perform interactive authentication and acquire an access token for Microsoft Graph. You learn how to configure authentication scopes, handle user consent, and see how tokens are cached for subsequent runs. 
+In this exercise, you create a .NET app to authenticate with Microsoft Entra ID and request an access token, then call the Microsoft Graph API to retrieve and display your user profile information. You learn how to configure permissions and interact with Microsoft Graph from your application.
 
 Tasks performed in this exercise:
 
 * Register an application with the Microsoft identity platform
-* Create a .NET console app that implements the  **PublicClientApplicationBuilder** class to configure authentication.
-* Acquire a token interactively using the **user.read** Microsoft Graph permission.
+* Create a .NET console application that implements interactive authentication, and uses the **GraphServiceClient** class to retrieve user profile information.
 
 This exercise takes approximately **15** minutes to complete.
 
@@ -24,7 +23,6 @@ Select the **Launch Exercise** button to open the exercise instructions in a new
 
 <br/>
 
-<a href="https://go.microsoft.com/fwlink/?linkid=2325009" target="_blank">
+<a href="https://go.microsoft.com/fwlink/?linkid=2326013" target="_blank">
     <img src="../media/launch-exercise.png" alt="Button to launch exercise.">
 </a>
-
