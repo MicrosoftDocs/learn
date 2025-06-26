@@ -2,8 +2,9 @@
 uid: learn.github.github-actions-ci.4-knowledge-check
 title: Module assessment
 metadata:
+  unitType: knowledge_check
   title: Module assessment
-  description: Review what you've learned.
+  description: Review what you have learned.
   ms.date: 11/15/2024
   author: juliakm
   ms.author: jukullam
@@ -79,5 +80,3 @@ quiz:
     - content: "By using the `secrets` keyword."
       isCorrect: false
       explanation: "You can use the `secrets` keyword to access secrets in a job, but it doesn't pass data between jobs."
-     
-   
