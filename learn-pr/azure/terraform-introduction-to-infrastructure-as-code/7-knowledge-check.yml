@@ -11,6 +11,7 @@ metadata:
   ms.topic: unit
   ms.custom:
     - devx-track-terraform
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:

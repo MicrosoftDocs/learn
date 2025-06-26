@@ -9,6 +9,7 @@ metadata:
   ms.author: tonyj
   ms.topic: unit
   ms.custom: N/A, devx-track-azurepowershell
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

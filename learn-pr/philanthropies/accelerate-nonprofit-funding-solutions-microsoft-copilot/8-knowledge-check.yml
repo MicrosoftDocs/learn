@@ -11,6 +11,7 @@ metadata:
   ms.collection:
     - philanthropies-ai-copilot
   ai-usage: ai-assisted
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   questions:
