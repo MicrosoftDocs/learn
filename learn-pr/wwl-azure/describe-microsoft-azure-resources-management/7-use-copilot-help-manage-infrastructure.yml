@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-microsoft-azure-resources-management.use-copilot-help-manage-infrastructure
+title: Use Copilot to help manage infrastructure
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Use Copilot to help manage infrastructure
+  description: "Use Copilot to help manage infrastructure"
+  ms.date: 06/26/2025
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-use-copilot-help-manage-infrastructure.md)]

@@ -1,0 +1,60 @@
+### YamlMime:Module
+uid: learn.wwl.describe-microsoft-azure-resources-management
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Describe Microsoft Azure resources management
+  description: "Perform basic resource management tasks for Azure resources, including compute, storage, and networking."
+  ms.date: 06/26/2025
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: module
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Describe Microsoft Azure resources management
+summary: This module introduces you to basic concepts around managing Microsoft Azure compute, storage, and networking resources.
+abstract: |
+  By the end of this module, you will be able to:
+
+  * Explore an Azure subscription
+
+  * Manage virtual machines
+
+  * Manage virtual networks
+
+  * Manage storage
+
+  * Use tags and resource locks
+
+  * Use Copilot to help manage infrastructure
+prerequisites: |
+  Basic understanding of cloud computing.
+
+  Basic understanding of Microsoft Azure services such as compute, storage, and networking.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-user
+- other
+products:
+- azure
+subjects:
+- architecture
+- cloud-computing
+- infrastructure
+- networking
+- resource-management
+- virtual-machine
+units:
+- learn.wwl.describe-microsoft-azure-resources-management.introduction
+- learn.wwl.describe-microsoft-azure-resources-management.explore-subscription
+- learn.wwl.describe-microsoft-azure-resources-management.manage-virtual-machines
+- learn.wwl.describe-microsoft-azure-resources-management.manage-virtual-networks
+- learn.wwl.describe-microsoft-azure-resources-management.manage-storage
+- learn.wwl.describe-microsoft-azure-resources-management.use-tags-resource-locks
+- learn.wwl.describe-microsoft-azure-resources-management.use-copilot-help-manage-infrastructure
+- learn.wwl.describe-microsoft-azure-resources-management.knowledge-check
+- learn.wwl.describe-microsoft-azure-resources-management.summary
+badge:
+  uid: learn.wwl.describe-microsoft-azure-resources-management.badge

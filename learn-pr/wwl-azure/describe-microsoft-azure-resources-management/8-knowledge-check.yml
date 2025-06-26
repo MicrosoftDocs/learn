@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-microsoft-azure-resources-management.knowledge-check
+title: Module assessment
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Module assessment
+  description: "Module assessment"
+  ms.date: 06/26/2025
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+durationInMinutes: 3

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-microsoft-azure-resources-management.manage-storage
+title: Manage storage
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Manage storage
+  description: "Manage storage"
+  ms.date: 06/26/2025
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-manage-storage.md)]
