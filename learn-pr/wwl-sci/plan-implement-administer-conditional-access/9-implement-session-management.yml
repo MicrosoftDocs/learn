@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-implement-administer-conditional-access.implement-session-management
-title: Implement session management
+title: Implement session management and continuous access evaluation
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Implement session management
+  title: Implement session management and continuous access evaluation
   description: "Implement session management"
-  ms.date: 04/22/2025
+  ms.date: 06/26/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
