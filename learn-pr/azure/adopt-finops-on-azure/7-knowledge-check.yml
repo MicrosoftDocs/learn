@@ -8,6 +8,7 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/7-knowledge-check.md)]

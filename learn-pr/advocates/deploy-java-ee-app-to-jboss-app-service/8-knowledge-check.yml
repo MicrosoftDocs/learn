@@ -13,6 +13,7 @@ metadata:
     - devx-track-java
     - devx-track-javaee-jbosseap-appsvc
     - devx-track-javaee
+  module_assessment: true
 durationInMinutes: 2
 quiz:
   questions:
