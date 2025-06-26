@@ -4,7 +4,7 @@ But, before you begin, make sure you have completed the following steps and have
 
 ## Prerequisites
 
-The Microsoft Defender portal supports a single Microsoft Entra tenant and the connection to one workspace at a time. In the context of this article, a workspace is a Log Analytics workspace with Microsoft Sentinel enabled.
+The Microsoft Defender portal supports a single Microsoft Entra tenant and the connection to a primary workspace and multiple secondary workspaces. In the context of this article, a workspace is a Log Analytics workspace with Microsoft Sentinel enabled.
 
 To onboard and use Microsoft Sentinel in the Microsoft Defender portal, you must have the following resources and access:
 
