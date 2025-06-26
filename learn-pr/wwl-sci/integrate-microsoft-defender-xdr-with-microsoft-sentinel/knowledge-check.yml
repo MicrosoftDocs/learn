@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.6-knowledge-check
+uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check."
-  ms.date: 10/2/2024
-  author: wwlpublish
+  ms.date: 06/26/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!include[](includes/knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
