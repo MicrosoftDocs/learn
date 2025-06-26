@@ -1,6 +1,51 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/2-build.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/3-exercise-build.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/4-deploy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/5-exercise-deploy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.azure.deploy-java-spring-boot-app-service-mysql.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/configure-security-policies-to-manage-data/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql",
       "redirect_document_id": false
