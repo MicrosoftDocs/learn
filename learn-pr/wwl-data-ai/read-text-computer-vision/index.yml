@@ -30,8 +30,6 @@ subjects:
 - natural-language-processing
 units:
 - learn.wwl.read-text-computer-vision.introduction
-- learn.wwl.read-text-computer-vision.get-started
-- learn.wwl.read-text-computer-vision.get-started-vision-studio
 - learn.wwl.read-text-computer-vision.knowledge-check
 - learn.wwl.read-text-computer-vision.summary
 badge:
