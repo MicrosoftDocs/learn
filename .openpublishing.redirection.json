@@ -50651,6 +50651,11 @@
       "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/5-knowledge-check.md",
       "redirect_url": "/training/modules/get-started-computer-vision-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/6-summary.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
     }
   ]
 }
