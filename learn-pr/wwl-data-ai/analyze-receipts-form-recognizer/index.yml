@@ -30,6 +30,5 @@ products:
 subjects:
 - classification-analysis
 units:
-- learn.wwl.analyze-receipts-form-recognizer.summary
 badge:
   uid: learn.wwl.analyze-receipts-form-recognizer.badge
