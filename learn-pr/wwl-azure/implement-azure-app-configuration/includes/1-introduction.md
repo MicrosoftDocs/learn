@@ -6,3 +6,4 @@ After completing this module, you'll be able to:
 * Describe how Azure App Configuration stores information
 * Implement feature management
 * Securely access your app configuration information
+* Retrieve configuration settings from Azure App Configuration
