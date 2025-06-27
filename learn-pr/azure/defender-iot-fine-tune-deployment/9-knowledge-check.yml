@@ -8,6 +8,7 @@ metadata:
   author: limwainstein
   ms.author: lwainstein
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 8
 content: |
 quiz:
