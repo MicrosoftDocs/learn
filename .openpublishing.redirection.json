@@ -50536,6 +50536,11 @@
       "source_path": "learn-pr/wwl-azure/intro-to-azure-search/9-summary.md",
       "redirect_url": "/training/modules/ai-information-extraction/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/7-exercise.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
     }
   ]
 }
