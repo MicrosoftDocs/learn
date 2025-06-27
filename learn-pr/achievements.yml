@@ -5995,3 +5995,8 @@ achievements:
   title: 'Microsoft Azure AI Fundamentals: AI Overview'
   summary: Artificial Intelligence (AI) empowers amazing new solutions and experiences; and Microsoft Azure provides easy to use services to help you get started.
   iconUrl: /learn/achievements/get-started-with-artificial-intelligence-on-azure.svg
+- uid: learn.azure-introduction-to-azure-search.badge
+  type: badge
+  title: Fundamentals of Knowledge Mining and Azure AI Search
+  summary: Use Azure AI Search to make your data searchable.
+  iconUrl: /training/achievements/azure-introduction-to-azure-search.svg
