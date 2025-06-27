@@ -4,7 +4,7 @@ Unlike traditional, on-premises computers, updating or changing the configuratio
 
 You can access many of the management features from the VM blade that appears when you select the name of the VM from your list of resources.
 
-##Overview blade
+## Overview blade
 From the overview blade, you can quickly start, stop, or restart your VM. You can also connect to your VM if it’s already running.
 
 :::image type="content" source="../media/virtual-machine-overview.png" alt-text="Screenshot of the virtual machine overview blade.":::
@@ -22,21 +22,21 @@ Let’s also cover some of the other blades, such as:
 * Settings
 * Availability + scale
 
-##Activity log
+## Activity log
 The activity log provides a quick history of the VM’s activity. You can change filters to change what information displays in the report, such as adjusting the *timespan* to include a broader history report to look at trends.
 
 :::image type="content" source="../media/virtual-machine-activity-log.png" alt-text="Screenshot of the virtual machine activity log blade.":::
 
-##Tags
+## Tags
 Recall that In Azure, **tags** can be used to track metadata on subscriptions, resource groups, or resources. The tags blade on a specific virtual machine provides a location to manage tags for this specific VM. It can be useful to apply tags at the VM level if you’re adding custom tags for custom reporting. For example, if this machine primarily functions as a web host, you could add a tag of **Purpose** with a value of **web host**.
 
 :::image type="content" source="../media/virtual-machine-tags.png" alt-text="Screenshot of the virtual machine tags blade.":::
 
 By tagging resources, you can run reports on them to better track usage across specific use cases.
-##Networking
+## Networking
 The networking blade lets you handle many types of networking related tasks. From configuring load balances to swapping subnets or changing network security groups, if it’s networking related, you can likely accomplish it from the **networking** blade.
 
-###Changing a subnet
+### Changing a subnet
 For example, if you have one subnet that’s focused strictly for production web hosting, and another subnet that you use just for testing updates before they’re pushed to live, you can move a virtual machine between subnets to keep metrics correct and networks fulfilling their purpose.
 
 Changing a VM’s subnet is done at the **Network interface / IP configuration** level. The easiest way to access the network interface is simply selecting it from the **network settings** blade.
@@ -50,7 +50,7 @@ On the **IP configurations** blade, changing the subnet is as simple as selectin
 > [!NOTE]
 >Changing networking settings, such as swapping subgroups, may require a restart of the virtual machine.
 
-###Load balancing
+### Load balancing
 Recall that a load balancer helps distribute network traffic across multiple destinations or hosts.
 
 From the **load balancing** sub under **Networking**, you can add a load balancer to help your virtual network perform more efficiently.
@@ -68,10 +68,10 @@ To add a load balancer:
 > [!NOTE]
 > Necessary settings for the load balancer are pulled from the virtual machine (such as resource group and network security group).
 
-##Settings
+## Settings
 The settings area of the menu let’s you control things such as the disks associated with the virtual machine and resource locks, and you can view things like information on the operating system and configuration information.
 
-###Disks
+### Disks
 In the **disks** menu, you can view and swap the operating system or storage disks. For example, if you wanted to upgrade the machine to a newer version of the operating system, and you already had the image configured exactly how you want, you could simply **Swap OS disk** instead of creating a new VM or doing a complete reinstall on this VM.
 
 Similarly, if you need to add more disk storage, you can **Create and attach a new disk** or **Attach existing disks** to VM. This could be handy if you’re transitioning a VM from development to production and you want to quickly swap the data disk.
@@ -83,17 +83,17 @@ You can also select either your OS disk or you storage disk to see more informat
 > [!NOTE]
 > Swapping the OS disk requires a virtual machine restart. You can add a data disk without having to restart the virtual machine.
 
-###Locks
+### Locks
 Recall that you can use delete locks and read-only locks to prevent anyone from deleting a resource or changing a resource without first removing the lock.
 
 Imagine you have a fleet of VMs and you know that soon many of them will be deleted to decrease your cloud footprint. Adding a delete lock onto key VMs that need to be protected will help avoid them being accidentally deleted.
 
 :::image type="content" source="../media/virtual-machine-delete-lock.png" alt-text="Screenshot of the virtual machine settings area, showing a delete lock configured and ready to be applied.":::
 
-##Availability + scale
+## Availability + scale
 Recall that Azure enables both vertical (VM capability) and horizontal (number of VMs) scaling. Both of these types of scaling are accomplished in the **Availability + scale** section of the menu.
 
-###Size
+### Size
 The **Size** submenu provides vertical scaling capabilities. You can scale the VM up, increasing the computing power or memory, or down, decrease the computing power or memory, by selecting the **NEW** VM size and resizing the VM.
 
 :::image type="content" source="../media/virtual-machine-vertical-scaling.png" alt-text="Screenshot of the virtual machine Availability + scale menu with the Size submenu selected to vertically scale a VM.":::
@@ -101,12 +101,12 @@ The **Size** submenu provides vertical scaling capabilities. You can scale the V
 > [!NOTE]
 > Resizing a VM requires a machine restart if the machine is running. Additionally, it’s possible you’ll have more resizing options if you shut the machine down before attempting to change the VM size.
 
-###Availability + scaling
+### Availability + scaling
 The ***Availability + scaling*** submenu provides access to setting up scaling groups and availability sets. Recall that scaling groups will automatically add or remove VMs based on predefined thresholds for VM load. As increased load is encountered, more VMs will be brought on line. Similarly, as load drops, VMs will be taken off-line to save costs and resources.
 
 Additionally, recall that availability sets help prevent failure by keeping VMs in fault domains and update domains. This helps prevent all of your VMs being updated at the same time or all failing if one fault domain fails.
 
-##Keep exploring virtual machines
+## Keep exploring virtual machines
 There are other menu and submenus available within the virtual machine blade of Azure. Keep exploring to see what other things you can find.
 
 For example, under **Operations\Auto-shutdown** you can configure a VM to shut down at the same time every day. You can even configure a notification when it happens.
