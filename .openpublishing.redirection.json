@@ -50496,6 +50496,11 @@
       "source_path": "learn-pr/paths/document-intelligence-knowledge-mining/index.md",
       "redirect_url": "/training/paths/introduction-to-ai-on-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/explore-computer-vision-microsoft-azure/index.md",
+      "redirect_url": "/training/paths/introduction-to-ai-on-azure/",
+      "redirect_document_id": false
     }
   ]
 }
