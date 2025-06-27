@@ -50611,6 +50611,11 @@
       "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/1-introduction.md",
       "redirect_url": "/training/modules/ai-information-extraction/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/5-knowledge-check.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
     }
   ]
 }
