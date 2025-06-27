@@ -16,8 +16,8 @@ This arrangement can have a profound effect on your relationship with that perso
 
 Tips for raising money from friends and family:
 
-- Before any investment is made, discuss expectations. Ensure that you agree on the likelihood of success and failure, time frames, and how the company will be run.
-- Agree on a reasonable valuation. For example, your uncle might not have a grasp on startup valuations. While it might be tempting to set a high valuation, this might cause trouble when you raise your next round from more sophisticated investors.
+- Before any investment is made, discuss expectations. Ensure that you agree on the likelihood of success and failure, time frames, and how the company should be run.
+- Agree on a reasonable valuation. For example, your uncle might not have a grasp on startup valuations. While it might be tempting to set a high valuation, it might cause trouble when you raise your next round from more sophisticated investors.
 - Have a legal agreement that sets out the terms of the investment. Is it an equity investment, a loan, or a gift? How will the investor be compensated? What happens if the company fails? What input, if any, will they have?
 - Make sure the person can afford to lose their investment.
 
@@ -40,13 +40,13 @@ Tips for raising money from angel investors:
 
 ## Venture capital
 
-VC funds are professional investment firms managed by general partners who have often been successful entrepreneurs themselves. VC funds generally invest money provided by institutional investors like limited partners such as pension funds. These investors allocate funding to VC firms as part of their diverse portfolio of investments.
+VC funds are professional investment firms managed by general partners who were often successful entrepreneurs themselves. VC funds generally invest money provided by institutional investors like limited partners such as pension funds. These investors allocate funding to VC firms as part of their diverse portfolio of investments.
 
 Some VC funds invest at seed stage, but it's more common for them to invest at Series A and beyond. They normally invest larger amounts than is typical for angel investors.
 
 Most VC firms have a 10-year lifespan. They go through distinct phases:
 
-- Investment sourcing and investing, usually in the first five years.
+- Sourcing investments and investing, usually in the first five years.
 - Managing investments and supporting portfolio companies.
 - Making follow-on investments.
 - Exiting investments.
@@ -55,19 +55,19 @@ It's important to know where a VC fund is in its life cycle. There's little poin
 
 VC funds generally have a preferred investment stage, like seed, Series A, and Series B. They also often focus on one or more specific sectors, such as blockchain, AI, and health tech.
 
-Generally, VC funds will consider investing in a startup only after it has launched a product, generated early traction, and can show strong evidence of product-market fit. At this point, it's common for the company's growth to be limited by capital rather than by customer demand. The funding allows the company to rapidly accelerate customer acquisition and growth.
+Generally, VC funds will consider investing in a startup only after it launches a product, generates early traction, and can show strong evidence of product-market fit. At that point, it's common for the company's growth to be limited by capital rather than by customer demand. The funding allows the company to rapidly accelerate customer acquisition and growth.
 
 Tips for raising money from VC funds:
 
-- The preceding tips for angel groups also apply to VC funds.
+- Apply the preceding tips for angel groups, they also apply to VC funds.
 - Be prepared for multiple meetings and a time frame of several months from initial contact to investment close.
 - Have a comprehensive set of due-diligence resources assembled so that the fund can complete its due diligence without adding extra delays.
 
 ## Not all money is equally valuable
 
-Good investors can add significant value to your company by sharing their expertise and networks. They'll also provide guidance to the founders as they work on growing the business. Recognized investors, such as top-tier VC funds, will also add credibility by association. Their involvement might make it easier for you to raise subsequent funding rounds.
+Good investors can add significant value to your company by sharing their expertise and networks. They can also provide guidance to the founders as they work on growing the business. Recognized investors, such as top-tier VC funds, also add credibility by association. Their involvement might make it easier for you to raise subsequent funding rounds.
 
-There are investors who will add limited value, such as friends and family, as we discussed previously. There are also investors who add negative value.
+There are investors who add limited value, such as friends and family, as we discussed previously. There are also investors who add negative value.
 
 A good rule of thumb is that smart, involved money is better than dumb, passive money, which in turn is better than dumb, involved money.
 
@@ -75,6 +75,6 @@ The benefits of smart money are clear. Smart money comes from someone who has re
 
 Dumb money comes from people who don't know much about your business or about how startups work. Being passive means they're prepared to take a back seat, and they have no ambitions to contribute to running your company. Dumb, passive money is fine if you have access to other sources of experienced guidance and the investment is on general terms.
 
-Dumb, involved money is problematic. It comes from people who don't have much value to contribute, but who insist on having an active role in your company. Sometimes dumb, involved money comes from inexperienced angel investors who have created wealth in other sectors, such as retail or property investing, and want to try their hand at angel investing.
+Dumb, involved money is problematic. It comes from people who don't have much value to contribute, but who insist on having an active role in your company. Sometimes dumb, involved money comes from inexperienced angel investors who created wealth in other sectors, such as retail or property investing, and want to try their hand at angel investing.
 
-It's wise to avoid these investors. Experience has shown that the challenge of managing their involvement frequently outweighs the benefit of the capital they provide.
+It's wise to avoid these investors. Experience shows that the challenge of managing their involvement frequently outweighs the benefit of the capital they provide.

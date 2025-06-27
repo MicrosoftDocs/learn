@@ -8,6 +8,7 @@ metadata:
   author: amit7200
   ms.author: amsvarze
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:
