@@ -10,11 +10,11 @@ As an AI workload operations administrator, Azure it's your responsibility to en
 - Azure AI Foundry: Azure AI Foundry is a cloud service for the full lifecycle of application development. With AI Foundry developers can explore, build, test, and deploy AI tools and ML models.
 - Azure Machine Learning: Azure Machine Learning is a cloud service for accelerating and managing the machine learning (ML) project lifecycle.
 
-Policy definitions or initiatives have a scope to which they're applied to. When you apply the scope of a Resource Group (or another scope) to a definition or initiative, the JSON file for the underlying policy definition targets resources based on the resource type.
+Policy definitions or initiatives have a scope to which they're applied. When you apply the scope of a Resource Group (or another scope) to a definition or initiative, the JSON file for the underlying policy definition targets resources based on the resource type.
 
 Here's an example definition for an audit policy to enable the usage of Private Endpoint for Azure AI services on GitHub:
 
-![A screenshot of the Azure portal, with an Azure AI services policy related to private endpoints displayed.](../media/ai-services-policy.svg)
+[![A screenshot of the Azure portal, with an Azure AI services policy related to private endpoints displayed.](../media/ai-services-policy.svg)](../media/ai-services-policy-big.svg#lightbox)
 
 This definition runs under its scope against any resource of type Microsoft.CognitiveServices. When you analyze the resource ID structure of a service such as Azure OpenAI, you can see the resource type: /subscriptions/\<subscriptionID>/resourceGroups/\<RG-name>/providers/Microsoft.CognitiveServices/accounts/ContosoAIDemo
 
@@ -25,7 +25,7 @@ The result is this resource (Azure OpenAI) will be affected by the policy defini
 
 Here's an example definition for an audit policy to deploy a private endpoint to Azure Machine Learning:
 
-![A screenshot of the Azure portal, with an Azure Machine Learninga policy related to private endpoints displayed.](../media/machine-learning-policy.svg)
+[![A screenshot of the Azure portal, with an Azure Machine Learning policy related to private endpoints displayed.](../media/machine-learning-policy.svg)](../media/machine-learning-policy-big.svg#lightbox)
 
 The policy definition targets resources of type "Microsoft.MachineLearningServices". When you analyze the resource ID structure of BOTH Azure Machine Learning and Azure AI Foundry, you can see the same structure:
 

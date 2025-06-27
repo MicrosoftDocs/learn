@@ -16,7 +16,7 @@ To apply a policy definition to an Azure AI service:
 1. Select the policy Azure AI Services resources should restrict network access.
 1. On the policy page, scroll down to check which resource is in noncompliant state:
 
-- ![A screenshot of the Azure portal showing the results of a policy assessment.](../media/policy-assessment.svg)
+[![A screenshot of the Azure portal showing the results of a policy assessment](../media/policy-assessment.svg)](../media/policy-assessment-big.svg#lightbox)
 
 Azure Policy evaluates the state of a resource to enforce organizational standards and to assess compliance. You can apply the following list of built-in policies to Azure AI services directly from the Azure portal:
 
