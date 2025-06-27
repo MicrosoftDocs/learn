@@ -50523,6 +50523,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/6-query-data-in-an-azure-search-index.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/intro-to-azure-search/5-start-with-portal.md",
       "redirect_url": "/training/modules/ai-information-extraction/",
       "redirect_document_id": false
