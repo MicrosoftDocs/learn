@@ -50486,6 +50486,11 @@
       "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/6-summary.md",
       "redirect_url": "/training/modules/get-started-computer-vision-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/2-what-is-face-analysis.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
     }
   ]
 }
