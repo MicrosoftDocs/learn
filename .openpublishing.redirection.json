@@ -50403,11 +50403,6 @@
         "redirect_document_id": false 
     },
     {
-        "source_path": "learn-pr/azure/visualize-data-workbooks/6-compare-and-anlyze-data.md",
-        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-        "redirect_document_id": false
-    },
-    {
         "source_path": "learn-pr/azure/visualize-data-workbooks/index.md",
         "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
         "redirect_document_id": false
@@ -50440,11 +50435,6 @@
     {
         "source_path": "learn-pr/azure/visualize-data-workbooks/2-azure-workbooks-overview.md",
         "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/azure/visualize-data-workbooks/1-introduction.md",
-        "redirect_url": "/azure-monitor/visualize/workbooks-overview",
         "redirect_document_id": false
     },
     {
