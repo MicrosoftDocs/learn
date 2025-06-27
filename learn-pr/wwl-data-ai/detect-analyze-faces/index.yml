@@ -31,6 +31,5 @@ products:
 subjects:
 - classification-analysis
 units:
-- learn.wwl.detect-analyze-faces.understand-face-analysis
 badge:
   uid: learn.wwl.detect-analyze-faces.badge
