@@ -8,6 +8,7 @@ metadata:
   author: kostinams
   ms.author: irkostin
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 10
 
 content: |

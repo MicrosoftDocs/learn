@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.ai-extract-information
 metadata:
-  title: Develop AI information extraction solutions in Azure
-  description: Use Azure AI to extract information from content.
+  title: Develop AI information extraction solutions in Azure AI-3002
+  description: Use Azure AI to extract information from content. (AI-3002)
   brand: azure
   ms.date: 05/16/2025
   author: GraemeMalcolm
@@ -29,8 +29,8 @@ roles:
 subjects:
 - artificial-intelligence
 products:
-  - ai-services
-  - azure-cognitive-search
+- ai-services
+- azure-cognitive-search
 modules:
 - learn.wwl.analyze-content-ai
 - learn.wwl.analyze-content-ai-api

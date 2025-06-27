@@ -8,6 +8,7 @@ metadata:
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 10
 quiz:
   title: Check your knowledge

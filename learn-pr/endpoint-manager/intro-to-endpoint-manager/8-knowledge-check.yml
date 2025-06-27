@@ -9,6 +9,7 @@ metadata:
   author: nicholasswhite
   ms.author: nwhite
   ms.topic: unit
+  module_assessment: true
 title: Module assessment
 durationInMinutes: 3
 quiz:

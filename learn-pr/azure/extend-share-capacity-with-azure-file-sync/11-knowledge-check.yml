@@ -8,6 +8,7 @@ metadata:
   author: khdownie
   ms.author: kendownie
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 quiz:
   title: Check your knowledge
