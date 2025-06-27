@@ -20,7 +20,7 @@ summary: |
   - Publish automatically and securely your code libraries or Docker images with GitHub Packages.
 prerequisites: |
  - A [GitHub](https://github.com?azure-portal=true) account
-iconUrl: /training/achievements/github/8-learn-continuous-integration-with-github-actions.svg
+iconUrl: /training/achievements/generic-trophy.svg
 
 levels:
 - beginner
