@@ -2,14 +2,16 @@
 uid: learn.wwl.design-azure-virtual-desktop-architecture.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 08/01/2022
+  ms.date: 06/19/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
-  [!include[](includes/10-summary.md)]
+  [!include[](includes/10-summary.md)]

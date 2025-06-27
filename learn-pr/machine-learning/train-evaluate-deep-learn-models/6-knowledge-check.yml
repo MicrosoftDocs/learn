@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 durationInMinutes: 3
 content: |

@@ -38,7 +38,7 @@ If you have your Advisor dashboard open, you can skip ahead to step 3.
    When you make your selection, a more detailed page opens, showing the impacted resources and recommended actions you can take to resolve the issues.
 
 > [!NOTE]
-> If you're not ready to take action during this exercise, simply close the Azure portal, and no changes will be made to your subscriptions or resources. The only way to undo a recommendation is to take the opposite action.
+> If you're not ready to take action during this exercise, just close the Azure portal, and no changes are made to your subscriptions or resources. The only way to undo a recommendation is to take the opposite action.
 
 When you do apply any of the recommendations, your Advisor Score improves! It can take up to 24 hours for the score to change, so check back in a day or so to see how much higher it is.
 

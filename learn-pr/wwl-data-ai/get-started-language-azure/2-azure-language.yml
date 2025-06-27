@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-language-azure.azure-language
+title: Understand natural language processing on Azure
+metadata:
+  title: Understand natural language processing on Azure
+  description: "Understand natural language processing on Azure"
+  ms.date: 05/22/2025
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-azure-language.md)]

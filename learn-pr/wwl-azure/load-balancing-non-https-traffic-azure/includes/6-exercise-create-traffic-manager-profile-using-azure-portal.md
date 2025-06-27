@@ -9,21 +9,18 @@ Then you create a Traffic Manager profile based on endpoint priority. This profi
 
 :::image type="content" source="../media/6-exercise-create-traffic-manager-profile-using-azure-portal.png" alt-text="Screenshot of the traffic manager profile pointed to two app service plans.":::
 
-## Objectives
+## Job skills
 
- -  **Task 1**: Create the web apps
- -  **Task 2**: Create a Traffic Manager profile
- -  **Task 3**: Add Traffic Manager endpoints
- -  **Task 4**: Test the Traffic Manager profile
+- Create web apps.
+- Create a Traffic Manager profile.
+- Add Traffic Manager endpoints.
+- Test the Traffic Manager profile.
 
-> [!NOTE]
-> Click on the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
 
-> [!NOTE]
-> You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+> [!IMPORTANT]
+> Estimated time: 35 minutes. 
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
-> [!NOTE]
-> You can view the [Create a Traffic Manager profile using the Azure portal](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M04-Unit%206%20Create%20a%20Traffic%20Manager%20profile%20using%20the%20Azure%20portal.html) instructions directly. 
+Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 
-[![Screenshot of the simulation page.](../media/simulation-traffic-manager-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20a%20Traffic%20Manager%20profile%20using%20the%20Azure%20portal)
-
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M04-Unit%206%20Create%20a%20Traffic%20Manager%20profile%20using%20the%20Azure%20portal.html)

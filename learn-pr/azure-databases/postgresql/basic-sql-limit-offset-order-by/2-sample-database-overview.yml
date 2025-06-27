@@ -1,0 +1,25 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-database.postgresql.basic-sql-limit-offset-order-by.sample-database-overview
+title: Sample database
+metadata:
+  title: Sample database overview
+  description: "This unit introduces the structure and purpose of the sales sample database used throughout the module. It describes the key tables, their relationships via foreign keys, and how the database supports tracking orders, inventory, and customer activity. A schema diagram and SQL script are provided to help learners explore and understand the data model."
+  ms.date: 05/23/2025
+  author: milenak
+  ms.author: mpopovic
+  ms.topic: unit
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from
+### the ms.service allowlist.
+###
+### If your content isn't about a product or service, you can omit the ms.service field.
+###
+### For the list of approved ms.service values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice.
+###
+### To request new values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-sample-database-overview.md)]

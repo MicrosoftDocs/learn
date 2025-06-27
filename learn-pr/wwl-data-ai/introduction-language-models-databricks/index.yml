@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: theresai
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-databricks
   ai-usage: ai-assisted
   ms.custom: ai-learning-hub
   ms.collection: wwl-ai-copilot
@@ -39,4 +39,4 @@ units:
 - learn.wwl.introduction-language-models-databricks.summary
 badge:
   uid: learn.wwl.introduction-language-models-databricks.badge
-
+

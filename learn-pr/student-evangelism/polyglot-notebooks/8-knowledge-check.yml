@@ -10,6 +10,7 @@ metadata:
   ms.collection:
     - ce-advocates-ai-copilot
   ms.custom: team=nextgen
+  module_assessment: true
 title: Module assessment
 durationInMinutes: 3
 content: |

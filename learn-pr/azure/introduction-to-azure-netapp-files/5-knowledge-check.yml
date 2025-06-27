@@ -9,6 +9,7 @@ metadata:
   author: mengruts
   ms.author: anfdocs
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

@@ -4,12 +4,13 @@ title: Module assessment
 metadata:
   unitType: knowledge_check
   title: Module assessment
-  description: Test what you've learned about ASP.NET Core SignalR fundamentals.
-  ms.date: 10/25/2023
+  description: Test what you learned about ASP.NET Core SignalR fundamentals.
+  ms.date: 06/17/2025
   author: IEvangelist
   ms.author: dapine
   ms.manager: markl
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
 quiz:

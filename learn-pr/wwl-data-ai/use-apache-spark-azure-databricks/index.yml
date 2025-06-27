@@ -5,7 +5,7 @@ metadata:
   description: Use Apache Spark in Azure Databricks
   ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jamesh
   ms.topic: module
   ms.service: azure
 title: Use Apache Spark in Azure Databricks
@@ -42,4 +42,4 @@ units:
 - learn.wwl.use-apache-spark-azure-databricks.summary
 badge:
   uid: learn.wwl.use-apache-spark-azure-databricks.badge
-
+

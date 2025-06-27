@@ -4,12 +4,13 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/31/2023
+  ms.date: 05/12/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -37,4 +38,4 @@ quiz:
     - content: "Use the Azure AI Language service to extract linked entities."
       isCorrect: true
       explanation: "Correct. Linked entities enable you to disambiguate common entities of the same name."
-
+

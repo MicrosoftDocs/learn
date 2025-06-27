@@ -8,7 +8,9 @@ metadata:
   ms.author: judubois
   ms.date: 06/05/2023
   ms.topic: unit
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - sfi-ropc-blocked
+    - team=cloud_advocates
   ms.contributors: judubois-03112021
 durationInMinutes: 7
 content: |

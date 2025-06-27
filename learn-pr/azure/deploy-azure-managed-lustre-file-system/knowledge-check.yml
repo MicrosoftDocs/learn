@@ -9,6 +9,7 @@ metadata:
   ms.author: pauljewell
   ms.reviewer: blepore
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/knowledge-check.md)]

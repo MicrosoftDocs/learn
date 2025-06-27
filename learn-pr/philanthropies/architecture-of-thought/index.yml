@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.philanthropies.architecture-of-thought
+metadata:
+  title: The Architecture of Thought - Dialogue Systems with Azure OpenAI Studio
+  description: "Explore how Azure OpenAI Studio enables the development of AI-powered dialogue systems. Learn the core architecture of conversational agents, the models behind them, and how to design basic chat interactions using Microsoft tools."
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: kbarreto
+  ms.topic: module-intro-to-product
+  ms.service: artificial-intelligence
+title: The Architecture of Thought - Dialogue Systems with Azure OpenAI Studio
+
+summary: "Examine how AI models like GPT-3 and GPT-4, combined with Azure OpenAI Studio, allow developers to build scalable dialogue systems for customer support, virtual assistance, education, and more."
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Define the structure and components of an AI-powered dialogue system.
+  - Identify how models like GPT-3 and GPT-4 power conversational experiences.
+  - Use Azure OpenAI Studio to create and test a basic chatbot prototype.
+  - Evaluate how AI dialogue systems streamline communication and improve user experiences.
+
+prerequisites: |
+  - Familiarity with AI concepts such as natural language processing (NLP)
+  - Basic experience with web-based tools and cloud platforms (recommended)
+
+iconUrl: /learn/achievements/generic-badge.svg
+
+levels:
+  - beginner
+
+roles:
+  - data-engineer
+  - data-scientist
+  - developer 
+
+products:
+- ms-copilot
+- azure-openai
+
+subjects:
+  - artificial-intelligence
+
+units:
+- learn.philanthropies.architecture-of-thought.introduction
+- learn.philanthropies.architecture-of-thought.ai-powered-dialogue-systems
+- learn.philanthropies.architecture-of-thought.components-and-architecture-of-dialogue-systems
+- learn.philanthropies.architecture-of-thought.overview-of-ai-models-used-in-dialogue-systems
+- learn.philanthropies.architecture-of-thought.azure-openai-studio-overview
+- learn.philanthropies.architecture-of-thought.exercise
+- learn.philanthropies.architecture-of-thought.knowledge-check
+- learn.philanthropies.architecture-of-thought.summary
+
+badge:
+  uid: learn.philanthropies.architecture-of-thought.badge

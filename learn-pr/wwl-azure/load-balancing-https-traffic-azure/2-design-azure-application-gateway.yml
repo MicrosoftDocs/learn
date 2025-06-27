@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Design Azure Application Gateway
   description: "Design Azure Application Gateway"
-  ms.date: 04/14/2025
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -25,10 +25,10 @@ quiz:
       explanation: "Correct. Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications."
     - content: "The Application Gateway is primarily used for data storage and retrieval."
       isCorrect: false
-      explanation: "Incorrect. Azure Application Gateway is not designed for data storage or retrieval."
+      explanation: "Incorrect. Azure Application Gateway isn't designed for data storage or retrieval."
     - content: "The Application Gateway is primarily used for machine learning and AI tasks."
       isCorrect: false
-      explanation: "Incorrect. Azure Application Gateway is not designed for machine learning or AI tasks."
+      explanation: "Incorrect. Azure Application Gateway isn't designed for machine learning or AI tasks."
   - content: "Which type of routing does the Azure Application Gateway provide?"
     choices:
     - content: "Transport, layer 4."

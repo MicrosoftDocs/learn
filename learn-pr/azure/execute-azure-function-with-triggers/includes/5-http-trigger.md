@@ -1,6 +1,6 @@
 An HTTP request is a common operation on most platforms and devices. Whether it's a request to look up a word in a dictionary or to get the local weather, we send HTTP requests all the time. Azure Functions allows us to quickly create a piece of logic to execute when an HTTP request is received.
 
-In this unit, you'll learn how to create and invoke a function using an HTTP trigger. You'll also explore some of the customization options available for HTTP triggers.
+In this unit, you learn how to create and invoke a function using an HTTP trigger. You also explore some of the customization options available for HTTP triggers.
 
 ## What is an HTTP trigger?
 

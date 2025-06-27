@@ -4,12 +4,13 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
-  ms.date: 11/28/2023
+  ms.date: 05/12/2025
   author: PatAltimore
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen
-durationInMinutes: 5 # dummy number at present
+  module_assessment: true
+durationInMinutes: 5
 content: |
 quiz:
   questions:
@@ -46,4 +47,4 @@ quiz:
     - content: "Developers should follow CI/CD processes before MLOps is deployed."
       isCorrect: false
       explanation: "Incorrect. The ability to use CI/CD isn't a prerequisite for MLOps on edge devices."
-
+
