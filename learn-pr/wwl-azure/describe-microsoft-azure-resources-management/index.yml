@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Describe Microsoft Azure resources management
   description: "Perform basic resource management tasks for Azure resources, including compute, storage, and networking."
-  ms.date: 06/26/2025
+  ms.date: 06/27/2025
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module

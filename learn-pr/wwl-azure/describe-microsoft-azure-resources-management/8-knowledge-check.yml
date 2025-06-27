@@ -6,8 +6,68 @@ metadata:
   prefetch-feature-rollout: true
   title: Module assessment
   description: "Module assessment"
-  ms.date: 06/26/2025
+  ms.date: 06/27/2025
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which type of scaling involves adding or removing resources (such as virtual machines or containers) to meet demand?"
+    choices:
+    - content: "Vertical scaling."
+      isCorrect: false
+      explanation: "Vertical scaling adjusts the capacity (CPU, RAM) of a single resource, not the number of resources."
+    - content: "Horizontal scaling."
+      isCorrect: true
+      explanation: "Horizontal scaling adds or removes instances of resources to match demand."
+    - content: "Manual scaling."
+      isCorrect: false
+      explanation: "Manual scaling refers to how scaling is triggered, not the type of scaling. Horizontal scaling is about the number of resources."
+  - content: "What is the primary purpose of using tags in Azure resource management?"
+    choices:
+    - content: "To apply security policies to resources."
+      isCorrect: false
+      explanation: "Security policies are managed through role-based access control and network security groups, not tags."
+    - content: "To organize and group resources for reporting and cost management."
+      isCorrect: true
+      explanation: "Tags help categorize resources and enable cost tracking and reporting."
+    - content: "To restrict access to specific Azure services."
+      isCorrect: false
+      explanation: "Access restrictions are handled through permissions and policies, not tags."
+  - content: "Which Azure feature helps prevent accidental deletion or modification of critical resources?"
+    choices:
+    - content: "Role-based access control (RBAC)."
+      isCorrect: false
+      explanation: "RBAC manages who can access or modify resources, but it doesn’t prevent deletion if the user has permission."
+    - content: "Resource locks."
+      isCorrect: true
+      explanation: "Resource locks override permissions to prevent deletion or modification."
+    - content: "Network security groups (NSGs)."
+      isCorrect: false
+      explanation: "NSGs control traffic flow, not resource deletion or modification."
+  - content: "What is one way Microsoft Copilot in Azure can assist with infrastructure management?"
+    choices:
+    - content: "It can generate scripts or commands to perform tasks in Azure."
+      isCorrect: true
+      explanation: "Copilot can provide Bicep, JSON, CLI, or Bash scripts to help manage resources."
+    - content: "It replaces the Azure portal for all administrative tasks."
+      isCorrect: false
+      explanation: "Copilot enhances the portal experience but doesn’t replace it."
+    - content: "It only provides billing summaries and cost forecasts."
+      isCorrect: false
+      explanation: "Copilot can provide billing insights, but its capabilities go far beyond that."
+  - content: "Why would you use subnets within a virtual network in Azure?"
+    choices:
+    - content: "To increase the number of virtual networks in a region."
+      isCorrect: false
+      explanation: "Subnets are subdivisions within a virtual network, not a method to increase the number of VNets."
+    - content: "To segment resources for better security and traffic control."
+      isCorrect: true
+      explanation: "Subnets allow segmentation and application of custom security and routing rules."
+    - content: "To reduce the number of IP addresses used by a VNet."
+      isCorrect: false
+      explanation: "Subnets divide IP ranges but don’t reduce the total number of IPs used."
