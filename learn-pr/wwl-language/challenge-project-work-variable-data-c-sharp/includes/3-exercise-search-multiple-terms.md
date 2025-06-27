@@ -52,9 +52,9 @@ To validate that your code satisfies the specified requirements, complete the fo
 > [!NOTE]
 > You can exit the verification test before completing all of the verification steps if see a result that does not satisfy the specification requirements. To force an exit from the running program, in the Terminal panel, press **Ctrl-C**. After exiting the running app, complete the edits that you believe will address the issue you are working on, save your updates to the Program.cs file, and then re-build and run your code.
 
-1. The terminal command prompt should display as the starting point for the program
+2. The terminal command prompt should display as the starting point for the program
 
-1. At the command prompt, enter **2** menu:
+3. At the command prompt, enter **2** menu:
 
     ```Output
     Welcome to the Contoso PetFriends app. Your main menu options are:
@@ -67,7 +67,7 @@ To validate that your code satisfies the specified requirements, complete the fo
     Enter dog characteristics to search for separated by commas
     ```
 
-1. At the command prompt, enter **large, cream, golden** to test when more than one search term matches the dog descriptions. Verify that the Terminal panel updates with a message similar to the code output sample:
+4. At the command prompt, enter **large, cream, golden** to test when more than one search term matches the dog descriptions. Verify that the Terminal panel updates with a message similar to the code output sample:
 
     ```Output
     Enter dog characteristics to search for separated by commas
@@ -88,9 +88,9 @@ To validate that your code satisfies the specified requirements, complete the fo
     Press the Enter key to continue
     ```
 
-1. At the command prompt, press the enter key to continue to the main menu
+5. At the command prompt, press the enter key to continue to the main menu
 
-1. At the command prompt, enter **2** menu:
+6. At the command prompt, enter **2** menu:
 
     ```Output
     Welcome to the Contoso PetFriends app. Your main menu options are:
@@ -104,7 +104,7 @@ To validate that your code satisfies the specified requirements, complete the fo
 
     ```
 
-1. At the command prompt, enter **big, grey, stripes** to test when none of the search terms match dog descriptions. Verify that the Terminal panel updates with a message similar to the code output samples:
+7. At the command prompt, enter **big, grey, stripes** to test when none of the search terms match dog descriptions. Verify that the Terminal panel updates with a message similar to the code output samples:
 
     ```Output
     Enter dog characteristics to search for separated by commas
@@ -116,7 +116,7 @@ To validate that your code satisfies the specified requirements, complete the fo
     Press the Enter key to continue
     ```
 
-1. If you specified further restrictions for valid entries, run the appropriate test cases to verify your work.
+8. If you specified further restrictions for valid entries, run the appropriate test cases to verify your work.
 
 > [!NOTE]
 > If your code meets the requirements you should be able to complete each step in order and see the expected results in a single test pass. If you added additional restrictions, you may need to exit the application and then run a separate test pass to complete your verification.

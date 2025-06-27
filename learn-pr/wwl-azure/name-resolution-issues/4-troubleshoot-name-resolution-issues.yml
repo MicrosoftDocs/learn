@@ -2,8 +2,6 @@
 uid: learn.wwl.name-resolution-issues.troubleshoot-name-resolution-issues
 title: Troubleshoot name resolution issues
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot name resolution issues
   description: "Troubleshoot name resolution issues"
   ms.date: 04/27/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-troubleshoot-name-resolution-issues.md)]
+  [!include[](includes/4-troubleshoot-name-resolution-issues.md)]

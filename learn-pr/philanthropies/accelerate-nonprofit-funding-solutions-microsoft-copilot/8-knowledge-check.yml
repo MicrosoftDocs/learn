@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.philanthropies.accelerate-nonprofit-funding-solutions-microsoft-copilot.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: This content is a part of the Accelerate nonprofit funding solutions with Microsoft Copilot module.
   author: CourtneyHMicrosoft
   ms.author: anruss
@@ -11,6 +11,7 @@ metadata:
   ms.collection:
     - philanthropies-ai-copilot
   ai-usage: ai-assisted
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   questions:

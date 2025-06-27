@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-docker-containers-aci.5-use-data-volumes
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Use data volumes
   description: Use data volumes with Azure Container Instances (ACI).
   ms.date: 01/15/2025
@@ -10,9 +8,10 @@ metadata:
   ms.author: tomcassidy
   ms.topic: unit
   ms.custom:
+    - sfi-ropc-nochange
     - devx-track-azurecli
 title: Exercise - Use data volumes
 durationInMinutes: 10
 content: |
   [!include[](includes/5-use-data-volumes.md)]
-
+

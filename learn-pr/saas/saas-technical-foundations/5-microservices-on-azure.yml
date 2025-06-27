@@ -2,8 +2,6 @@
 uid: learn.saas-technical-foundations.microservices-on-azure
 title: Microservices on Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Microservices on Azure
   description: "In this module, you discover the key Azure tools for microservices. We cover the main computing services used in microservices and take a closer look at your data storage choices."
   ms.date: 2/9/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-microservices-on-azure.md)]
+  [!include[](includes/5-microservices-on-azure.md)]

@@ -2,13 +2,11 @@
 uid: learn.wwl.secure-ai-services.implement-network-security
 title: Implement network security
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement network security
   description: Implement network security
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 05/06/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

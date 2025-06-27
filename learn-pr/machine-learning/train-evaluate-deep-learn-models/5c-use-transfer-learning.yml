@@ -2,8 +2,6 @@
 uid: learn.wwl.train-evaluate-deep-learn-models.use-transfer-learning
 title: Exercise - Use transfer learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Use transfer learning
   description: "Exercise - Use transfer learning"
   ms.date: 07/10/2024
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 30
 content: |
-  [!include[](includes/5c-use-transfer-learning.md)]
+  [!include[](includes/5c-use-transfer-learning.md)]

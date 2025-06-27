@@ -6,12 +6,13 @@ metadata:
   prefetch-feature-rollout: true
   title: Plan security defaults
   description: "Plan security defaults"
-  ms.date: 12/16/2024
+  ms.date: 04/22/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
   ms.custom:
-  - N/A
+    - sfi-ga-nochange
+    - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/2-plan-security-defaults.md)]

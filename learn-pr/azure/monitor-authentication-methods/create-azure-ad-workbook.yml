@@ -2,8 +2,6 @@
 uid: learn.monitor-authentication-methods.create-azure-ad-workbook
 title: Create a Microsoft Entra workbook
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Create a Microsoft Entra workbook
   description: Create a Microsoft Entra workbook
@@ -11,7 +9,8 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: unit
+  ms.custom: sfi-ga-nochange
 durationInMinutes: 20
 content: |
   [!include[](includes/create-azure-ad-workbook.md)]
-
+

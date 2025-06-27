@@ -3,7 +3,7 @@ uid: learn.securing-you-basics-beyond.2-phishing
 metadata:
   title: Identify and protect yourself from phishing
   description: Identify and protect yourself from phishing
-  ms.date: 04/26/2023
+  ms.date: 05/29/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
@@ -41,4 +41,4 @@ quiz:
       explanation: "Perfect! Identifying the email as suspicious and not interacting with it are the best way to protect yourself from phishing."
     - content: "Don't open any attachments or click any links unless the email says you need to take immediate action."
       isCorrect: false
-      explanation: "Attackers will use a false sense of urgency to get you to interact with their email."
+      explanation: "Attackers use a false sense of urgency to get you to interact with their email."

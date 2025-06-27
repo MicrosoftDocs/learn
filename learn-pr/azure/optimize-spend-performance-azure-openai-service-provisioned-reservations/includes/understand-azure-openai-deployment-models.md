@@ -30,6 +30,13 @@ As part of your solution design, you need to make two key decisions:
 
 **Data zone provisioned**: Data zone provisioned deployments are available in the same Azure OpenAI resource as all other Azure OpenAI deployment types but allow you to leverage Azure global infrastructure to dynamically route traffic to the data center within the Microsoft specified data zone with the best availability for each request. Data zone provisioned deployments provide reserved model processing capacity for high and predictable throughput using Azure infrastructure within the Microsoft specified data zone.
 
+**Regional Standard**: Standard deployments provide a pay-per-token billing model on the chosen model. It's the fastest way to get started because you only pay for what you consume during service usage. Specifically, for Azure OpenAI Service, the Standard deployment type lets you pay only for tokens processed. Standard deployments are optimized for low-to-medium-volume workloads with high burstiness. Customers with high, consistent volume may experience a more significant latency variability.
+
+**Regional Provisioned**: Provisioned deployments allow you to specify the amount of throughput required in your Azure OpenAI Service deployment. The service then allocates the necessary model processing capacity and ensures it's ready for you. Throughput is defined in terms of provisioned throughput units or PTUs, which is a normalized way of representing the throughput for your deployment. This deployment type ensures consistent throughput and minimal latency variance for scalable solutions.
+
+> [!NOTE]
+> All deployments can perform the same inference operations. However, the billing, scale, and performance are substantially different.
+
 ## What does the provisioned deployment type provide?
 
 With the provisioned deployment type, you get:

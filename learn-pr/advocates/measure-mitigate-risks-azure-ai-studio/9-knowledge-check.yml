@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.measure-mitigate-risks-azure-ai-studio.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Test your knowledge of measuring and mitigating risks for a generative AI app in Azure AI Foundry.
   ms.date: 09/14/2024
   author: aprilspeight
@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot
+  module_assessment: true
 durationInMinutes: 5
 content: |
   [!include[](includes/9-knowledge-check.md)]

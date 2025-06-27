@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-databases-for-optimal-performance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure databases for optimal performance
   description: Configure databases for optimal performance
   ms.date: 03/20/2025
@@ -44,4 +42,4 @@ units:
 - learn.wwl.configure-databases-for-optimal-performance.summary
 badge:
   uid: learn.wwl.configure-databases-for-optimal-performance.badge
-
+

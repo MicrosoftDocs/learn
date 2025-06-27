@@ -2,8 +2,6 @@
 uid: learn.azure.logic-apps-and-arm-templates.exercise-deploy-logic-app-using-arm-template
 title: Exercise - Deploy a basic Azure Logic Apps workflow using an ARM template
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy a basic Azure Logic Apps workflow using an ARM template
   description: Exercise - Deploy a basic Azure Logic Apps workflow using an ARM template
   ms.date: 07/16/2024
@@ -18,4 +16,4 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-deploy-logic-app-using-arm-template.md)]
-
+

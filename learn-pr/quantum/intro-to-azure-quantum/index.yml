@@ -1,11 +1,9 @@
 ### YamlMime:Module
 uid: learn.quantum.intro-to-azure-quantum
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to quantum computing with Azure Quantum
   description: Get started with quantum computing and the Azure Quantum service.
-  ms.date: 06/09/2024
+  ms.date: 06/09/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   

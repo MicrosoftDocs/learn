@@ -2,8 +2,6 @@
 uid: learn.azure.choose-service-level-azure-netapp-files-hpc-applications.choose-service-level
 title: Choose your service level
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content  
   title: Choose your service level
   description: Examples on choosing the most cost-effective service level based on throughput requirements.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/3-choose-service-level.md)]
-
+

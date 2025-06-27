@@ -3,9 +3,10 @@ uid: learn.wwl.describe-identity-principles-concepts
 metadata:
   title: Describe identity concepts
   description: "Describe identity concepts."
-  ms.date: 09/23/2024
+  ms.date: 04/23/2025
   author: wwlpublish
   ms.author: ceperezb
+  ms.service: security
   ms.topic: module
 title: Describe identity concepts
 summary: Learn about the key concepts of authentication and authorization and why identity is important in securing corporate resources. You'll also learn about some identity-related services.

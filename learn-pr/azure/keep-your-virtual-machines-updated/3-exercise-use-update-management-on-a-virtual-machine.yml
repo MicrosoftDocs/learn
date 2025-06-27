@@ -2,8 +2,6 @@
 uid: learn.keep-your-virtual-machines-updated.3-exercise-use-update-management-on-a-virtual-machine
 title: Exercise - Use Update Management on a virtual machine
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Use Update Management on a virtual machine
   description: Exercise - Use Update Management on a virtual machine
   ms.date: 03/15/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise-use-update-management-on-a-virtual-machine.md)]
-
+

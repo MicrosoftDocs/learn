@@ -15,7 +15,7 @@ By the end of this module, you'll be able to:
 - Familiarity with Kubernetes concepts. If you're new to Kubernetes, review the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes) before you begin.
 - Familiarity with [Git](/contribute/git-github-fundamentals) and [GitHub](https://github.com).
 - Familiarity with [Docker](https://docker.com) and Docker images.
-- An active Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service).
+- An active Azure [subscription](https://azure.microsoft.com/products/kubernetes-service).
 - The ability to use the [Azure CLI](/azure/aks/kubernetes-walkthrough).
 - The ability to create a Docker container. If you're new to Docker, review the [introduction to containers](/training/modules/intro-to-containers/) before you begin.
 

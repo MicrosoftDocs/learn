@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-configure-azure-developer-cli-templates.configure-pipeline
 title: Configure a CI/CD pipeline for your template
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Configure a CI/CD pipeline for your template
   description: Configure a CI/CD pipeline for your template
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/5-configure-pipeline.md)]
-
+

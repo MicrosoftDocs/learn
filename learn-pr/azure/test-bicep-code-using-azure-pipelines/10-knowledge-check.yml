@@ -1,18 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.test-bicep-code-using-azure-pipelines.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check.
-  ms.date: 10/31/2022
+  ms.date: 05/30/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep
+  module_assessment: true
 durationInMinutes: 2
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -24,12 +23,12 @@ quiz:
     - content: Add an approval check to the pipeline.
       isCorrect: false
       explanation: Incorrect. An approval check enables you to manually verify the status of your environment or pipeline. It doesn't reduce the chance of an invalid template being submitted to Azure.
-    - content: Run preflight validation within your pipeline.
+    - content: Run preflight validation in your pipeline.
       isCorrect: true
       explanation: Correct. The preflight validation process performs validation of your template. It reports errors that prevent the template deployment from being submitted to Azure.
     - content: Add a rollback stage to your pipeline.
       isCorrect: false
-      explanation: Incorrect. You can add a rollback stage to reverse the effects of a stage that's failed, but it doesn't validate the Bicep file that you submit.
+      explanation: Incorrect. You can add a rollback stage to reverse the effects of a stage that fails, but that stage doesn't validate the Bicep file that you submit.
   - content: Which of these scenarios is an example of negative testing?
     choices:
     - content: Manually approving a pipeline run.
@@ -48,7 +47,7 @@ quiz:
       explanation: Incorrect. The Bicep linter is part of the Bicep tooling. It runs automatically when you build or deploy a Bicep file.
     - content: A template with no linting warnings or errors is guaranteed to deploy successfully.
       isCorrect: false
-      explanation: Incorrect. The linter runs some basic checks on code style. Your template might successfully pass the linter's checks, but not deploy.
+      explanation: Incorrect. The linter runs some basic checks on code style. Your template might successfully pass the linter's checks but not deploy.
     - content: Linting ensures that your Bicep file meets a minimum quality level for code style.
       isCorrect: true
       explanation: Correct. The linter doesn't verify that your file will deploy successfully, but it checks that your Bicep file follows some basic rules for code style.

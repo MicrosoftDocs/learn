@@ -2,14 +2,11 @@
 uid: learn.azure.cloud-scale-messaging-jms-service-bus.4-send-messages-to-service-bus
 title: Exercise - Send messages to Azure Service Bus
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Send messages to Azure Service Bus
   description: Write a Spring Boot app to send messages to Azure Service Bus.
   ms.date: 11/11/2024
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: spelluru
+  author: spelluru
+  ms.author: spelluru
   ms.topic: unit
 durationInMinutes: 5
 content: |

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Run Petabyte level OSS NoSQL databases with HDInsight HBase
   description: "Run Petabyte level OSS NoSQL databases with HDInsight HBase"
   ms.date: 04/09/2024
@@ -50,4 +48,4 @@ units:
 - learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.summary
 badge:
   uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.badge
-
+

@@ -2,14 +2,11 @@
 uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 05/02/2024
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: jialuogan
+  author: silenceJialuo
+  ms.author: jialuogan
   ms.topic: unit
 durationInMinutes: 2
 content: |

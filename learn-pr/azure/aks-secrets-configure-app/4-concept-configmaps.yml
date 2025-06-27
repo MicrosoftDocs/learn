@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-secrets-configure-app.4-concept-configmaps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand Kubernetes ConfigMaps
   description: Explore the concepts behind how to decouple application configuration using ConfigMaps.
   ms.date: 01/26/2024
@@ -49,4 +47,4 @@ quiz:
         - content: "ConfigMaps aren't part of any namespace."
           isCorrect: false
           explanation: "ConfigMaps are part of the namespace they're created in and are scoped to it."
-
+

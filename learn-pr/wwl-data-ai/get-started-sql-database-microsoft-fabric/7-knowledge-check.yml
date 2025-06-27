@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.get-started-sql-database-microsoft-fabric.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/18/2024
   author: JulianePadrao
@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom:
     - ignite-2024
+  module_assessment: true
 durationInMinutes: 8
 quiz:
   title: Check your knowledge

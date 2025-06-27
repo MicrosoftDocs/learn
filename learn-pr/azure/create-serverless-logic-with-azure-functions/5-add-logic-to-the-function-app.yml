@@ -2,8 +2,6 @@
 uid: learn.create-serverless-logic-with-functions.5-add-logic-to-the-function-app
 title: Exercise - Add logic to the function app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Add logic to the function app
   description: Add the business logic + trigger into the Function App
   ms.date: 11/25/2024
@@ -18,4 +16,4 @@ azureSandbox: false
 durationInMinutes: 10
 content: |
   [!include[](includes/5-add-logic-to-the-function-app.md)]
-
+

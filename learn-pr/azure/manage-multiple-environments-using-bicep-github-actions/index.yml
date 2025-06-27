@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.manage-multiple-environments-using-bicep-github-actions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Manage multiple environments by using Bicep and GitHub Actions
   description: Build a deployment workflow for Bicep IaC templates. Deploy to multiple environments by using reusable workflows. Learn how to provide environment-specific parameters from your workflow.
@@ -66,4 +64,4 @@ units:
 - learn.azure.manage-multiple-environments-using-bicep-github-actions.summary
 badge:
   uid: learn.azure.manage-multiple-environments-using-bicep-github-actions.badge
-
+

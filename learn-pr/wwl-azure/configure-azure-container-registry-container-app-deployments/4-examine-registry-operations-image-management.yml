@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-container-registry-container-app-deployments.examine-registry-operations-image-management
 title: Examine registry operations for image management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine registry operations for image management
   description: "Examine registry operations for image management"
   ms.date: 11/22/2023
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-examine-registry-operations-image-management.md)]
-
+

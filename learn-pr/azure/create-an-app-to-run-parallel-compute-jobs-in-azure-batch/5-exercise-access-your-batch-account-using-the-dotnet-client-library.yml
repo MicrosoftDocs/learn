@@ -2,8 +2,6 @@
 uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.exercise-access-your-batch-account-using-the-dotnet-client-library
 title: Exercise - Access your Batch account using the .NET client library
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Access your Batch account using the .NET client library
   description: In this hands-on exercise, you'll add code to access your Batch account using the .NET client library.
   ms.date: 02/14/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/5-exercise-access-your-batch-account-using-the-dotnet-client-library.md)]
-
+

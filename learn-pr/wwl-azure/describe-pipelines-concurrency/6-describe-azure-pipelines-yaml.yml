@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-pipelines-concurrency.describe-azure-pipelines-yaml
 title: Describe Azure Pipelines and YAML
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Azure Pipelines and YAML
   description: "Describe Azure Pipelines and YAML"
   ms.date: 05/23/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-describe-azure-pipelines-yaml.md)]
+  [!include[](includes/6-describe-azure-pipelines-yaml.md)]

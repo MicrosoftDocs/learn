@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-secure-devops.explore-key-validation-points
 title: Explore key validation points
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore key validation points
   description: "Explore key validation points"
   ms.date: 05/22/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-explore-key-validation-points.md)]
+  [!include[](includes/5-explore-key-validation-points.md)]

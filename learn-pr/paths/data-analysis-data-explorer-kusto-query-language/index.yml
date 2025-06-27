@@ -33,10 +33,7 @@ subjects:
 modules:
 - learn.intro-to-azure-data-explorer
 - learn.azure.explore-fundamentals-kql
-- learn.write-first-query-kusto-query-language
 - learn.azure.gain-insights-data-kql
-- learn.multi-table-queries-with-kusto-query-language
-- learn.azure.characterize-dataset-azure-data-explorer
 - learn.create-dashboards-azure-data-explorer
 trophy:
   uid: learn.data-analysis-data-explorer-kusto-query-language.trophy

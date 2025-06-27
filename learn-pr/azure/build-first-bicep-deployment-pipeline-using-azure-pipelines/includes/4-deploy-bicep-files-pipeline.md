@@ -22,7 +22,7 @@ You must ensure that your service principal has the permissions it needs to exec
 > [!WARNING]
 > It might seem easier to store your service principal's credentials in your YAML file, and then sign in by using the `az login` command. You should never use this approach to authenticate your service principal. Credentials in a YAML file are stored in clear text. Anyone who has access to your repository can see and use the credentials. Even if you restrict access to your Azure DevOps organization and project, whenever someone clones your repository, the YAML file that holds the credentials will be on that person's computer. It's important to use a service connection whenever you work with Azure from a pipeline. Service connections also provide other security and access control features.
 
-Service connections are created in your Azure DevOps project. A single service connection can be shared by multiple pipelines. However, it's usually a good idea to set up a service connection and the corresponding service principal for each pipeline and each environment you deploy to. This practice helps increase the security of your pipelines, and it reduces the likelihood of accidentally deploying or configuring resources in a different environment than the one you expect.
+Service connections are created in your Azure DevOps project. Multiple pipelines can share a single service connection. However, it's usually a good idea to set up a service connection and the corresponding service principal for each pipeline and each environment you deploy to. This practice helps increase the security of your pipelines, and it reduces the likelihood of accidentally deploying or configuring resources in a different environment than the one you expect.
 
 You also can set up your service connection so that it can be used only in specific pipelines. For example, when you create a service connection that deploys to your website's production environment, it's a good idea to ensure that only your website's pipeline can use this service connection. Restricting a service connection to specific pipelines stops someone else from accidentally using the same service connection for a different project and potentially causing your production website to go down.
 
@@ -46,7 +46,7 @@ The first line specifies `AzureResourceManagerTemplateDeployment@3`. It tells Az
 When you use the Azure Resource Group Deployment task, you specify _inputs_ to tell the task what to do. Here are some inputs you might specify when you use the task:
 
 - `connectedServiceName` is the name of the service connection to use.
-- `location` needs to be specified even though its value might not be used. The Azure Resource Group Deployment task can also create a resource group for you, and if it does, it needs to know the Azure region in which to create the resource group. In this module, you'll specify the `location` input value but its value isn't used.
+- `location` needs to be specified even though its value might not be used. The Azure Resource Group Deployment task can also create a resource group for you, and if it does, it needs to know the Azure region in which to create the resource group. In this module, you'll specify the `location` input value, but its value isn't used.
 - `resourceGroupName` specifies the name of the resource group that the Bicep file should be deployed to.
 - `overrideParameters` contains any parameter values you want to pass into your Bicep file at deployment time.
 
@@ -89,7 +89,7 @@ The pipeline definition file format includes a special `$(VariableName)` syntax.
 
 Azure Pipelines also uses _system variables_. System variables contain predefined information you might want to use in your pipeline. Here are some of the system variables you can use in your pipeline:
 
-- `Build.BuildNumber` is the unique identifier for your pipeline run. Despite its name, the `Build.BuildNumber` value often is a string, and not a number. You might use this variable to name your Azure deployment, so you can track the deployment back to the specific pipeline run that triggered it.
+- `Build.BuildNumber` is the unique identifier for your pipeline run. Despite its name, the `Build.BuildNumber` value often is a string, and not a number. You might use this variable to name your Azure deployment so you can track the deployment back to the specific pipeline run that triggered it.
 - `Agent.BuildDirectory` is the path on your agent machine's file system where your pipeline run's files are stored. This information can be useful when you want to reference files on the build agent.
 
 ### Create variables in your pipeline's YAML file

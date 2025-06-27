@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-ai-agent-on-azure
 metadata:
-  title: Develop AI agents on Azure
-  description: Learn how to develop AI agents on Azure using the Azure AI Agent Service and Semantic Kernel Agent Framework. 
+  title: Develop AI Agents on Azure 
+  description: Learn how to develop AI agents on Azure using the Azure AI Foundry Agent Service and Semantic Kernel Agent Framework. AI-3026
   ms.date: 02/24/2025
   author: wwlpublish
   ms.author: berryivor
@@ -12,7 +12,7 @@ title: Develop AI agents on Azure
 prerequisites: |
   Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. Consider completing the [Get started with artificial intelligence](/training/paths/get-started-with-artificial-intelligence-on-azure) learning path first.
 summary: |
-  Generative Artificial Intelligence (AI) is becoming more functional and accessible, and AI agents are a key component of this evolution. This learning path will help you understand the AI agents, including when to use them and how to build them, using Azure AI Agent Service and Semantic Kernel Agent Framework. By the end of this learning path, you will have the skills needed to develop AI agents on Azure.
+  Generative Artificial Intelligence (AI) is becoming more functional and accessible, and AI agents are a key component of this evolution. This learning path will help you understand the AI agents, including when to use them and how to build them, using Azure AI Foundry Agent Service and Semantic Kernel Agent Framework. By the end of this learning path, you will have the skills needed to develop AI agents on Azure.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -28,6 +28,7 @@ modules:
 - learn.wwl.ai-agent-fundamentals
 - learn.wwl.develop-ai-agent-azure
 - learn.wwl.build-agent-with-custom-tools
+- learn.wwl.develop-ai-agent-with-semantic-kernel
 - learn.wwl.orchestrate-sk-multi-agent-solution
 trophy:
   uid: learn.wwl.develop-ai-agent-on-azure.trophy

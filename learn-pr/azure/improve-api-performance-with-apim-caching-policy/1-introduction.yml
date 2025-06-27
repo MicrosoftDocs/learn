@@ -2,11 +2,9 @@
 uid: learn.azure.improve-api-performance-with-apim-caching-policy.1-introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: In this unit, you learn about a business problem that you can solve by using a caching policy in Azure API Management.
-  ms.date: 07/11/2023
+  ms.date: 06/09/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit

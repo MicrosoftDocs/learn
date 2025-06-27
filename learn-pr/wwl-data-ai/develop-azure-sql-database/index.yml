@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn-wwl.develop-azure-sql-database
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Develop for Azure SQL Database
   description: "Learn how to create and configure an Azure SQL Database. You'll use SQL Database Projects in VS Code, including installing the extension, importing, and modifying a schema. Additionally, you'll build and deploy database projects in GitHub Actions and Azure Pipelines, and automate and invoke the publishing of a database."
   ms.date: 9/27/2024
@@ -48,4 +46,4 @@ badge:
   uid: learn-wwl.develop-azure-sql-database.badge
 
 
-
+

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-hybrid-network-infrastructure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 03/26/2024
   author: wwlpublish
@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom:
   - e2e-hybrid
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"

@@ -2,8 +2,6 @@
 uid: learn.oxford.image-classification-azure-sphere.exercise-create-real-time-app
 title: Exercise - Create a real-time image classification application
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create a real-time image classification application
   description: In this section, we help the learner to create a real-time application to deploy Azure Sphere.
   ms.date: 07/20/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/6-exercise-create-real-time-app.md)]
-
+
