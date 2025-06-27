@@ -5975,3 +5975,23 @@ achievements:
   title: Classify endangered bird species with Custom Vision
   summary: As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitat. Your work often involves surveying, recording, and reporting on bird activity. You want to build a machine learning model that will identify a bird in an image by species, to help with gathering data. In this module, you use Azure AI Custom Vision to create a model to identify species of birds!
   iconUrl: /training/achievements/advocates/cv-classify-bird-species.svg
+- uid: learn.wwl.detect-analyze-faces.badge
+  type: badge
+  title: Fundamentals of Facial Recognition
+  summary: Face detection and analysis are important capabilities for artificial intelligence (AI) solutions. Azure AI Face service makes it easy integrate these capabilities into your applications.
+  iconUrl: /learn/achievements/detect-analyze-faces.svg
+- uid: learn.wwl.document-intelligence-knowledge-mining.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Document Intelligence and Knowledge Mining'
+  summary: 'Explore two AI workloads: document intelligence and knowledge mining.'
+  iconUrl: /training/achievements/document-intelligence-knowledge-mining.svg
+- uid: learn.wwl.explore-computer-vision-microsoft-azure.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Computer Vision'
+  summary: Computer vision is an area of artificial intelligence (AI) in which software systems are designed to perceive the world visually, through cameras, images, and video. There are multiple specific types of computer vision problem that AI engineers and data scientists can solve using a mix of custom machine learning models and platform-as-a-service (PaaS) solutions - including many AI services in Microsoft Azure.
+  iconUrl: /learn/achievements/explore-computer-vision-microsoft-azure.svg
+- uid: learn.wwl.get-started-with-artificial-intelligence-on-azure.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: AI Overview'
+  summary: Artificial Intelligence (AI) empowers amazing new solutions and experiences; and Microsoft Azure provides easy to use services to help you get started.
+  iconUrl: /learn/achievements/get-started-with-artificial-intelligence-on-azure.svg
