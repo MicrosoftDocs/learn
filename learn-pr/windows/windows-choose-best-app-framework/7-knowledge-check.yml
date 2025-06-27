@@ -10,6 +10,7 @@ metadata:
   author: alvinashcraft
   ms.author: aashcraft
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

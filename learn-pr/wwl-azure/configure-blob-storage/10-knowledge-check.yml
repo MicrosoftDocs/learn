@@ -2,7 +2,7 @@
 uid: learn.wwl.configure-blob-storage.knowledge-check
 title: Module assessment
 metadata:
-  hidden_question_numbers: ["4A4734AA_2","4A4734AA_42","4A4734AA_103","4A4734AA_75","4A4734AA_91","4A4734AA_136","4A4734AA_144","4A4734AA_152"]
+  hidden_question_numbers: ["EFC05BB3_2","EFC05BB3_42","EFC05BB3_103","EFC05BB3_75","EFC05BB3_91","EFC05BB3_136","EFC05BB3_144","EFC05BB3_152"]
   adobe-target: true
   prefetch-feature-rollout: true
   title: Module assessment
@@ -14,6 +14,7 @@ metadata:
   ms.custom:
   - N/A
   ai_generated_module_assessment: true
+  module_assessment: true
 durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
