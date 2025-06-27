@@ -30,7 +30,6 @@ subjects:
 - artificial-intelligence
 modules:
 - learn.wwl.analyze-images-computer-vision
-- learn.wwl.detect-analyze-faces
 - learn.wwl.read-text-computer-vision
 trophy:
   uid: learn.wwl.explore-computer-vision-microsoft-azure.trophy
