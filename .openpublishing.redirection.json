@@ -50546,6 +50546,11 @@
       "source_path": "learn-pr/wwl-azure/intro-to-azure-search/3-process.md",
       "redirect_url": "/training/modules/ai-information-extraction/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/index.md",
+      "redirect_url": "/training/modules/introduction-computer-vision/",
+      "redirect_document_id": false
     }
   ]
 }
