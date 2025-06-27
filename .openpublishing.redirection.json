@@ -50586,6 +50586,11 @@
       "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/2-understand-computer-vision.md",
       "redirect_url": "/training/modules/introduction-computer-vision/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/index.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
     }
   ]
 }
