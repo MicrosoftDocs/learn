@@ -50721,6 +50721,41 @@
       "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/6-summary.md",
       "redirect_url": "/training/modules/get-started-computer-vision-azure/",
       "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-api-management/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-api-management/2-what-is-azure-api-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-api-management/3-how-azure-api-management-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-api-management/4-when-to-use-azure-api-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-api-management/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-api-management/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-api-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/",
+      "redirect_document_id": false
     }
   ]
 }

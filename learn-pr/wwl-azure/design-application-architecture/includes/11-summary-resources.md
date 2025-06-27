@@ -33,8 +33,6 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 ## Learn more with self-paced training
 
-- Complete an [introduction to Azure API Management](/training/modules/introduction-to-azure-api-management/).
-
 - Complete an [introduction to Azure Event Hubs](/training/modules/intro-to-event-hubs/).
 
 - Complete an [introduction to infrastructure as code by using Bicep](/training/modules/introduction-to-infrastructure-as-code-using-bicep/).

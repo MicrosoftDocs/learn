@@ -6020,3 +6020,8 @@ achievements:
   title: Fundamentals of optical character recognition
   summary: Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.
   iconUrl: /training/achievements/read-text-computer-vision.svg
+- uid: learn.azure.introduction-to-azure-api-management.badge
+  type: badge
+  title: Introduction to Azure API Management
+  summary: Learn how Azure API Management can help reduce API complexity in your organization. Determine the types of deployments for which Azure API Management is a good API lifecycle management solution.
+  iconUrl: /training/achievements/introduction-to-azure-api-management.svg
