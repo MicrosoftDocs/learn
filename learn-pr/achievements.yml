@@ -5975,3 +5975,8 @@ achievements:
   title: Classify endangered bird species with Custom Vision
   summary: As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitat. Your work often involves surveying, recording, and reporting on bird activity. You want to build a machine learning model that will identify a bird in an image by species, to help with gathering data. In this module, you use Azure AI Custom Vision to create a model to identify species of birds!
   iconUrl: /training/achievements/advocates/cv-classify-bird-species.svg
+- uid: learn.wwl.detect-analyze-faces.badge
+  type: badge
+  title: Fundamentals of Facial Recognition
+  summary: Face detection and analysis are important capabilities for artificial intelligence (AI) solutions. Azure AI Face service makes it easy integrate these capabilities into your applications.
+  iconUrl: /learn/achievements/detect-analyze-faces.svg
