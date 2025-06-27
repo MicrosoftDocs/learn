@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-cache-for-redis.4-when-to-use-azure-cache-for-redis  
 title: When to use Azure Cache for Redis  
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content  
   title: When to use Azure Cache for Redis
   description: How you can determine if Azure Cache for Redis is a suitable caching solution for your organization.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/4-when-to-use-azure-cache-for-redis.md)]
-
+

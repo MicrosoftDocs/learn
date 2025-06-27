@@ -2,8 +2,6 @@
 uid: learn.azure.create-your-first-speech-to-text-app.create-azure-cognitive-services-account
 title: Create an Azure AI services account
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create an Azure AI services account
   description: Learn how to create an Azure AI services account.
   author: rmcmurray
@@ -16,4 +14,4 @@ azureSandbox: false
 durationInMinutes: 5
 content: |
   [!INCLUDE[](includes/2-create-azure-cognitive-services-account.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.azdo.manage-site-reliability.2-site-reliability-engineering
 title: What is reliability engineering?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is reliability engineering?
   description: Learn about the skills needed for a site reliability engineer.
   ms.date: 04/21/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-site-reliability-engineering.md)]
+  [!include[](includes/2-site-reliability-engineering.md)]

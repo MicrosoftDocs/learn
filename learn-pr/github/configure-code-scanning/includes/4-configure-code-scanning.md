@@ -6,7 +6,7 @@ For example, you can edit GitHub's CodeQL analysis workflow to specify the frequ
 
 ### Switching from Default to Advanced Code Scanning Setup
 
-If you already have a repository set up to use code scanning using the default setup method, you can switch to using the Advanced setup in the settings. Navigate to the **Code scanning** section under **Settings > Code security and analysis**, then select the three dots overflow icon (**...**). In the drop-down, select **Switch to advanced**, then follow the prompts to disable CodeQL and re-enable it with the advanced setup's generated workflow file.
+If you already have a repository set up to use code scanning using the default setup method, you can switch to using the Advanced setup in the settings. Navigate to the **Code scanning** section under **Settings > Code security and analysis**, and then select the three dots overflow icon (**...**). In the drop-down, select **Switch to advanced**. Then, follow the prompts to disable CodeQL, and re-enable it with the advanced setup's generated workflow file.
 
 ## Edit code-scanning workflow
 
@@ -28,7 +28,7 @@ Review the following sections for some common code scanning configuration option
 
 ### Configure frequency
 
-A common edit to the workflow file is to adjust the frequency with which code scanning occurs. You can configure the CodeQL analysis workflow to scan code on a schedule or when specific events occur in a repository. You can also edit the workflow file to scan code when someone pushes a change, and whenever a pull request is created. Adjusting this frequency prevents developers from introducing new vulnerabilities and errors into the code. Scanning code on a schedule informs you about the latest vulnerabilities and errors that GitHub, security researchers, and the community discover. Even when developers aren't actively maintaining the repository.
+A common edit to the workflow file is to adjust the frequency with which code scanning occurs. You can configure the CodeQL analysis workflow to scan code on a schedule or when specific events occur in a repository. You can also edit the workflow file to scan code when someone pushes a change and whenever a pull request is created. Adjusting this frequency prevents developers from introducing new vulnerabilities and errors into the code. Scanning code on a schedule informs you about the latest vulnerabilities and errors that GitHub, security researchers, and the community discover. Even when developers aren't actively maintaining the repository.
 
 #### Scan on Push
 
@@ -44,7 +44,7 @@ If you use the `pull_request` trigger, configured to scan the pull request's mer
 
 ### Define the severities causing pull request check failure
 
-By default, only alerts with the severity level of `Error` or security severity level of `Critical` or `High` cause a pull-request check failure. Pull-request failures don't stop a code scan, but represent a blocker when trying to merge code. You can find the list of pull-request failures in the **Code scanning alerts** tab under your repository's **Security**. In your repository settings, you can change the levels of alert severities and of security severities that cause a pull request check failure.
+By default, only alerts with the severity level of `Error` or security severity level of `Critical` or `High` cause a pull-request check failure. Pull-request failures don't stop a code scan but represent a blocker when trying to merge code. You can find the list of pull-request failures in the **Code scanning alerts** tab under your repository's **Security**. In your repository settings, you can change the levels of alert severities and of security severities that cause a pull request check failure.
 
 1. On GitHub.com, navigate to the repository main page. Under your repository name, select **Settings**.
 

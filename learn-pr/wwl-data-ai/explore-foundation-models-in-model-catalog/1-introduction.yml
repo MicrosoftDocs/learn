@@ -2,8 +2,6 @@
 uid: learn.explore-foundation-models-in-model-catalog.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introducing key concepts like artificial intelligence, machine learning, deep learning and natural language processing before exploring foundation models.
   author: madiepev
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]
-
+

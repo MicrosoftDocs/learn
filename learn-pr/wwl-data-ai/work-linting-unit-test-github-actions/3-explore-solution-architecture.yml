@@ -2,8 +2,6 @@
 uid: learn.wwl.work-linting-unit-test-github-actions.explore-solution-architecture
 title: Explore the solution architecture
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore the solution architecture
   description: "Explore the solution architecture"
   ms.date: 07/10/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-explore-solution-architecture.md)]
+  [!include[](includes/3-explore-solution-architecture.md)]

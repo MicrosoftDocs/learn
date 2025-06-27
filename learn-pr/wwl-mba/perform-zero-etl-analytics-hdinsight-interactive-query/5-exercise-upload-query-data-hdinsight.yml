@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.5-exercise-upload-query-data-hdinsight
 title: Exercise - Upload and query data in HDInsight
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Upload and query data in HDInsight
   description: "Exercise - Upload and query data in HDInsight"
   ms.date: 04/08/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-exercise-upload-query-data-hdinsight.md)]
+  [!include[](includes/5-exercise-upload-query-data-hdinsight.md)]

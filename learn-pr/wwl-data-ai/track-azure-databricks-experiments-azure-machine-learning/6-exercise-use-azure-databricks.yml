@@ -2,8 +2,6 @@
 uid: learn.wwl.track-azure-databricks-experiments-azure-machine-learning.exercise-use-azure-databricks
 title: Exercise - Use Azure Databricks with Azure Machine Learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Use Azure Databricks with Azure Machine Learning
   description: "Exercise - Use Azure Databricks with Azure Machine Learning"
   ms.date: 03/22/2023
@@ -15,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-exercise-use-azure-databricks.md)]
+  [!include[](includes/6-exercise-use-azure-databricks.md)]

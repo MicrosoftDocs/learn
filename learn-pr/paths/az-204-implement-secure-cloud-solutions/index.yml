@@ -1,17 +1,17 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-204-implement-secure-cloud-solutions
 metadata:
-  title: 'AZ-204: Implement secure Azure solutions'
+  title: 'Implement secure Azure solutions'
   description: Learn how to more securely deploy apps in Azure by using Azure Key Vault, managed identities, and Azure App Configuration.
   ms.date: 04/26/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: learning-path
-title: 'AZ-204: Implement secure Azure solutions'
+title: 'Implement secure Azure solutions'
 prerequisites: |
   *   At least one year of experience developing scalable solutions through all phases of software development.
   *   Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
-  *   If you are new to Azure, or cloud computing, it's recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
+  *   If you're new to Azure, or cloud computing, it's recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
 summary: |
   Learn how to more securely deploy apps in Azure by using Azure Key Vault, managed identities, and Azure App Configuration.
 iconUrl: /training/achievements/cloud-solutions-implement.svg

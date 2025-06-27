@@ -3,7 +3,7 @@ uid: learn.wwl.create-plugins-semantic-kernel
 metadata:
   title: Run prompts with Semantic Kernel
   description: "This module explores Semantic Kernel SDK plugins. Learn how plugins to the SDK are used to accomplish customized tasks and create intelligent applications."
-  ms.date: 01/24/2025
+  ms.date: 05/27/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -41,11 +41,9 @@ units:
 - learn.wwl.create-plugins-semantic-kernel.introduction
 - learn.wwl.create-plugins-semantic-kernel.optimize-language-model-prompts
 - learn.wwl.create-plugins-semantic-kernel.use-semantic-kernel-prompt-templates
-- learn.wwl.create-plugins-semantic-kernel.exercise-use-semantic-kernel-prompt-templates
 - learn.wwl.create-plugins-semantic-kernel.use-handlebars-prompt-templates
-- learn.wwl.create-plugins-semantic-kernel.exercise-use-handlebars-prompts-templates
 - learn.wwl.create-plugins-semantic-kernel.store-chat-history
-- learn.wwl.create-plugins-semantic-kernel.exercise-store-chat-history
+- learn.wwl.create-plugins-semantic-kernel.exercise-run-semantic-kernel-prompts
 - learn.wwl.create-plugins-semantic-kernel.knowledge-check
 - learn.wwl.create-plugins-semantic-kernel.summary
 badge:

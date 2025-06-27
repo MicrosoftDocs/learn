@@ -1,8 +1,8 @@
-Deployment pipelines need to communicate with Azure, so they can create and configure your Azure resources. In this module, you'll learn how service principals work, how to create and manage them, and how to authorize them to work with Azure on your behalf.
+Deployment pipelines need to communicate with Azure so they can create and configure your Azure resources. In this module, you'll learn how service principals work, how to create and manage them, and how to authorize them to work with Azure on your behalf.
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've created a Bicep template to deploy your company's website. Until now, you've been deploying it from your own computer by using command-line tools. You've decided to move the deployment into a pipeline. 
+Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've created a Bicep template to deploy your company's website. Until now, you've been deploying it from your own computer by using command-line tools. You've decided to move the deployment into a pipeline.
 
 One of your colleagues has told you that you'll need to set up a service principal for the deployment pipeline. You need to understand what this is, and then set it up so you can deploy your company's website.
 

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-alerts-responses
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure alerts and responses
   description: In this module, you learn how Azure Monitoring alerts proactively notifies you when Azure Monitor data indicates there might be a problem with your infrastructure or applications before the problem becomes one for your users.
   ms.date: 10/25/2023
@@ -37,4 +35,4 @@ units:
 - learn.wwl.configure-alerts-responses.summary
 badge:
   uid: learn.wwl.configure-alerts-responses.badge
-
+

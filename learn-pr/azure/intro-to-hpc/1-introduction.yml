@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-hpc.1-introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: In this unit, you'll learn about a business scenario that you can address by using high-performance computing services in Azure.
-  ms.date: 05/22/2023
+  ms.date: 04/07/2025
   author: padmalathas
   ms.author: padmalathas
   ms.topic: unit

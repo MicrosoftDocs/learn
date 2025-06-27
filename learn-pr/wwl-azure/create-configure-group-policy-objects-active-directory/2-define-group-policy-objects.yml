@@ -2,8 +2,6 @@
 uid: learn.wwl.create-configure-group-policy-objects-active-directory.define-group-policy-objects
 title: Define Group Policy Objects
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Define Group Policy Objects
   description: "Define Group Policy Objects"
   ms.date: 09/22/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-define-group-policy-objects.md)]
+  [!include[](includes/2-define-group-policy-objects.md)]

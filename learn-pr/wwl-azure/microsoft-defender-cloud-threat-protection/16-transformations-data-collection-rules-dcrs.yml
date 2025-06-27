@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Transformations in data collection rules (DCRs)
   description: "Transformations in data collection rules (DCRs)"
-  ms.date: 02/28/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
   ms.custom:
   - references_regions
-durationInMinutes: 7
+durationInMinutes: 3
 content: |
   [!include[](includes/16-transformations-data-collection-rules-dcrs.md)]

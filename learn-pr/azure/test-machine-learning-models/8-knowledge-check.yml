@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.machinelearning.test-machine-learning-models.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Multiple-choice questions
-  ms.date: 05/25/2021
+  ms.date: 05/15/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
@@ -28,7 +29,7 @@ quiz:
     - content: "Underfitting has occurred, and your model isn't accurate enough. You should keep training."
       isCorrect: false
       explanation: "Incorrect. Continuing to train your model when you already have good performance on your training set won't improve your performance. You need to find ways to improve performance on your test set."
-    - content: "Overfitting has occurred, and your model isn't performing well on new data outside training. You could stop training earlier, or gather more diverse data."
+    - content: "Overfitting has occurred, and your model isn't performing well on new data outside training. You could stop training earlier or gather more diverse data."
       isCorrect: true
       explanation: "Correct. Overfitting has likely occurred, and you can adjust your training to improve performance on your test set. You should consider if you need more diverse training data, or if you're training for too long."
     - content: "Your model is fine. You need to use your training data to test your model instead."

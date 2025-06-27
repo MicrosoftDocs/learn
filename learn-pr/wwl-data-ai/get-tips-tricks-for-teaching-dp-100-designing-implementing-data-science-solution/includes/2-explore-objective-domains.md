@@ -1,6 +1,3 @@
-
-
-
 All topics covered in the [DP-100: Designing and Implementing a Data Science Solution on Azure](https://aka.ms/DP100exam) course are related to applying data science and machine learning to implement and run machine learning workloads on Azure, designing and creating a suitable working environment for data science workloads; exploring data; training machine learning models; implementing pipelines; running jobs to prepare for production; and managing, deploying, and monitoring scalable machine learning solutions and map directly to [Exam DP-100: Designing and Implementing a Data Science Solution on Azure.](https://aka.ms/DP100exam) Percentages indicate the relative weight of each area on the exam. The higher the percentage, the more questions you're likely to see in that area. For the most up to date breakdown, access the [DP-100 study guide](https://aka.ms/DP100-StudyGuide) from the [Exam DP-100: Designing and Implementing a Data Science Solution on Azure](https://aka.ms/DP100exam) page.
 
 Become familiar with the objective domains, which are a comprehensive set of specific and measurable knowledge, skills, and abilities that are the basis for the development of both this course and the certification exam:

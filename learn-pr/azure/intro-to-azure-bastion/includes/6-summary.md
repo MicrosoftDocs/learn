@@ -21,4 +21,4 @@ You should now be able to determine how you can use Azure Bastion to help secure
 
 - [Azure Bastion](https://azure.microsoft.com/services/azure-bastion?azure-portal=true)
 - [Azure Bastion pricing](https://azure.microsoft.com/pricing/details/azure-bastion?azure-portal=true)
-- [Quickstart: Deploy Azure Bastion with default settings](/azure/bastion/quickstart-host-portal?azure-portal=true)
+- [Quickstart: Deploy Azure Bastion automatically](/azure/bastion/quickstart-host-portal?azure-portal=true)

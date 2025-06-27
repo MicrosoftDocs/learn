@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.configure-the-network-for-your-virtual-machines.7-knowledge-check-azure-expressroute
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
-  ms.date: 11/01/2023
+  ms.date: 04/22/2025
   author: mbender-ms
   ms.author: mbender
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

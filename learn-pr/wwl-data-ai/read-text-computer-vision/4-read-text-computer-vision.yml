@@ -2,13 +2,11 @@
 uid: learn.wwl.read-text-computer-vision.exercise
 title: Exercise - Read text in Vision Studio
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Read text in Vision Studio
   description: Exercise - Read text in Vision Studio
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 03/05/2024
+  ms.date: 04/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

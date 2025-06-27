@@ -2,14 +2,12 @@
 uid: learn.develop-apps-with-azure-database-mysql.deploy-app-on-azure
 title: Deploy your app and integrate with other Azure services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Deploy your app on Azure and integrate with other Azure services
   description: Learn how to deploy your MySQL - Flexible Server apps on Azure App Service and Azure Kubernetes Service (AKS). We'll then discuss the options for automating CI/CD tasks using Azure DevOps, GitHub, and Azure Service Operator.
   ms.date: 08/27/2024
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
   ms.custom:

@@ -1,0 +1,1 @@
+In this module, you have learned about text analytics and concepts such as tokenization, frequency analysis, and text classification. You've also been introduced to semantic language models that encode language tokens as vectors for grouping related words. 

@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.7-summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 12/21/2023
+  ms.date: 05/22/2025
   author: normesta
   ms.author: normesta
   ms.topic: unit

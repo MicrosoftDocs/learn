@@ -1,17 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.read-text-computer-vision.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 03/05/2024
+  ms.date: 04/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 durationInMinutes: 2
 quiz:
   title: ""

@@ -9,10 +9,10 @@ Examples include:
 
 We use elements and their interactions in threat modeling to help identify threats and reduce system risk. The process helps engineers collaborate more efficiently while securing their systems against the most common threats.
 
-In this module, you explore each element of a data-flow diagram. These elements have distinct shapes and functions, and require specific context.
+In this module, you explore each element of a data-flow diagram. These elements have distinct shapes and functions and require specific context.
 
 > [!NOTE]
-> We might also refer to elements as as *Stencils* throughout this learning path.
+> We might also refer to elements as *Stencils* throughout this learning path.
 
 ## When to use elements
 

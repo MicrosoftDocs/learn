@@ -2,11 +2,9 @@
 uid: learn.azure.accelerate-migration-journey.3-azure-migration-drivers
 title: Azure migration and modernization drivers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure migration and modernization drivers
   description: Understand the primary drivers for Azure migration, and how applications can be changed or replaced to use new cloud technologies.
-  ms.date: 05/15/2023
+  ms.date: 05/30/2025
   author: sgsneha
   ms.author: sudhirsneha
   ms.topic: unit
@@ -37,7 +35,7 @@ quiz:
       explanation: Datacenter contract expiration is the only migration trigger listed here. The others are cash flow challenges and resource constraints, business continuity, and cybersecurity threats.
     - content: Datacenter contract expiration, cash flow challenges and resource constraints, business continuity, cybersecurity threats
       isCorrect: true
-      explanation: Migration triggers are typically IT-oriented or based on timelines. The migration to the cloud is driven by the need to quickly reduce on-premises costs, stay secure, and simplify operations.
+      explanation: Migration triggers are typically IT-oriented or based on timelines. The need to quickly reduce on-premises costs, stay secure, and simplify operations drives migration to the cloud.
   - content: When you consider if you should migrate or modernize your applications, which is the first question you should ask during the evaluation?
     choices:
     - content: Will there be future development on this application?

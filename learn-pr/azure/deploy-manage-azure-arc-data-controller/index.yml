@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-manage-azure-arc-data-controller
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy and manage Azure Arc data controller
   description: Azure Arc-enabled data controller serves as the basis for deployment of Azure Arc-enabled data services.
   ms.date: 07/22/2024
@@ -50,4 +48,4 @@ units:
 - learn.azure.deploy-manage-azure-arc-data-controller.summary
 badge:
   uid: learn.azure.deploy-manage-azure-arc-data-controller.badge
-
+

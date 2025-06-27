@@ -2,9 +2,11 @@
 uid: learn.wwl.design-compute-solution.design-for-logic-app-solutions
 title: Design for Azure Logic Apps solutions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for Azure Logic Apps solutions
   description: "Design for Azure Logic Apps solutions"
-  ms.date: 12/06/2024
+  ms.date: 05/28/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

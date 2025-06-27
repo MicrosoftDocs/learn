@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.ha-application-storage-with-grs.3-exercise-create-storage-account
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Exercise - Create an Azure storage account
+  title: Exercise - Create an Azure Storage Account
   description: In this exercise, you learn how to prepare the foundations for a highly available application by creating an Azure storage account.
-  ms.date: 05/17/2023
+  ms.date: 06/02/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit

@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-group-policy-objects.define-administrative-templates
 title: Define administrative templates
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Define administrative templates
   description: "Define administrative templates"
   ms.date: 04/17/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-define-administrative-templates.md)]
+  [!include[](includes/7-define-administrative-templates.md)]

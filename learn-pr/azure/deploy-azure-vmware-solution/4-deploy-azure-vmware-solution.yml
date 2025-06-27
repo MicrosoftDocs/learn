@@ -1,13 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.deploy-azure-vmware-solution.deploy-azure-vmware-solution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy Azure VMware Solution
   description: Deploy Azure VMware Solution.
   ms.date: 08/01/2024
-  author: amycolyer
-  ms.author: amycolyer
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: shkuehn-03222021, orthomas-08092023

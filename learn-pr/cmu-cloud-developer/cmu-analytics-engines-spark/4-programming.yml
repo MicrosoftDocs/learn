@@ -2,8 +2,6 @@
 uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.4-programming
 title: Programming in Spark
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Programming in Spark
   description: Programming in Spark
   ms.date: 03/09/2022
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 9
 content: |
   [!include[](includes/4-programming.md)]
-
+

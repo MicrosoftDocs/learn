@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement access manager for Azure resource
   description: "Explore how to use built-in Azure roles, managed identities, and RBAC-policy to control access to Azure resources. Identity is the key to secure solutions."
-  ms.date: 02/26/2025
+  ms.date: 05/30/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: module

@@ -2,8 +2,6 @@
 uid: learn.manage-vms-with-azure-cli-data.9-cleanup
 title: Summary and cleanup
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary and cleanup
   description: Clean up the resources we used in this module
   ms.date: 09/25/2024
@@ -52,4 +50,4 @@ quiz:
     - content: "You can pipe the results to a JSON parsing utility and use filtering capability there."
       isCorrect: false
       explanation: "This might work, but it's more complex than using Azure CLI's built-in query support."
-
+

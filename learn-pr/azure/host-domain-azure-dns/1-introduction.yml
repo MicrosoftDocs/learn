@@ -2,8 +2,6 @@
 uid: learn.azure.host-domain-azure-dns.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Learn how to configure Azure DNS to host your Domain Name System (DNS) records for your domains on Azure infrastructure.
   ms.date: 10/03/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

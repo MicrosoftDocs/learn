@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning path 1 Design a machine learning solution
 
 Learning path 1 Overview
@@ -36,3 +33,4 @@ Learning Path 1 Labs
 - [Lab 1.1: Design a data ingestion strategy](https://microsoftlearning.github.io/mslearn-aml-design/Instructions/start-01-data.html)
 - [Lab 1.2: Design a model training strategy](https://microsoftlearning.github.io/mslearn-aml-design/Instructions/start-02-training.html)
 - Import solution (optional) 
+

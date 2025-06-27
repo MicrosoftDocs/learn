@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.track-azure-databricks-experiments-azure-machine-learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Track Azure Databricks experiments in Azure Machine Learning
   description: "Track Azure Databricks experiments in Azure Machine Learning"
   ms.date: 03/22/2023
@@ -41,4 +39,4 @@ units:
 - learn.wwl.track-azure-databricks-experiments-azure-machine-learning.knowledge-check
 - learn.wwl.track-azure-databricks-experiments-azure-machine-learning.summary
 badge:
-  uid: learn.wwl.track-azure-databricks-experiments-azure-machine-learning.badge
+  uid: learn.wwl.track-azure-databricks-experiments-azure-machine-learning.badge

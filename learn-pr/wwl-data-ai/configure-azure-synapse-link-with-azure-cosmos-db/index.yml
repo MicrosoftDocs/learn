@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement Azure Synapse Link with Azure Cosmos DB
   description: "Implement Azure Synapse Link with Azure Cosmos DB"
   ms.date: 12/19/2022
@@ -44,4 +42,4 @@ units:
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.knowledge-check
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.summary
 badge:
-  uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.badge
+  uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.badge

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.protecting-monitoring-tuning-migrated-database
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Protect, monitor, and tune a migrated database
   description: "Protect, monitor, and tune a migrated database"
   ms.date: 10/14/2024
@@ -49,4 +47,4 @@ units:
 - learn.wwl.protecting-monitoring-tuning-migrated-database.knowledge-check
 - learn.wwl.protecting-monitoring-tuning-migrated-database.summary
 badge:
-  uid: learn.wwl.protecting-monitoring-and-tuning-a-migrated-database.badge
+  uid: learn.wwl.protecting-monitoring-and-tuning-a-migrated-database.badge

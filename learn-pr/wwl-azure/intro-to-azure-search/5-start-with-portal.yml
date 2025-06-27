@@ -2,13 +2,11 @@
 uid: learn.azure-introduction-to-azure-search.2f-start-with-portal
 title: Create an index in the Azure portal
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create an index in the Azure portal
   description: Create an index in the Azure portal
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 07/25/2024
+  ms.date: 04/25/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

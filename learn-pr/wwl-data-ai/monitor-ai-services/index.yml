@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-ai-services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor Azure AI services
   description: Learn to monitor Azure AI services.
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 05/01/2025
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
   ms.custom: ai-learning-hub
