@@ -33,7 +33,6 @@ subjects:
 units:
 - learn.azure-introduction-to-azure-search.process
 - learn.azure-introduction-to-azure-search.6-query-data-in-an-azure-search-index
-- learn.azure-introduction-to-azure-search.exercise
 badge:
   uid: learn.azure-introduction-to-azure-search.badge
 
