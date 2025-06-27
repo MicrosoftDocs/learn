@@ -5985,3 +5985,8 @@ achievements:
   title: 'Microsoft Azure AI Fundamentals: Document Intelligence and Knowledge Mining'
   summary: 'Explore two AI workloads: document intelligence and knowledge mining.'
   iconUrl: /training/achievements/document-intelligence-knowledge-mining.svg
+- uid: learn.wwl.explore-computer-vision-microsoft-azure.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Computer Vision'
+  summary: Computer vision is an area of artificial intelligence (AI) in which software systems are designed to perceive the world visually, through cameras, images, and video. There are multiple specific types of computer vision problem that AI engineers and data scientists can solve using a mix of custom machine learning models and platform-as-a-service (PaaS) solutions - including many AI services in Microsoft Azure.
+  iconUrl: /learn/achievements/explore-computer-vision-microsoft-azure.svg
