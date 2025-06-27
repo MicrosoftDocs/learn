@@ -6000,3 +6000,8 @@ achievements:
   title: Fundamentals of Knowledge Mining and Azure AI Search
   summary: Use Azure AI Search to make your data searchable.
   iconUrl: /training/achievements/azure-introduction-to-azure-search.svg
+- uid: learn.wwl.analyze-images-computer-vision.badge
+  type: badge
+  title: Fundamentals of Computer Vision
+  summary: Azure AI Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios.
+  iconUrl: /training/achievements/analyze-images-computer-vision.svg
