@@ -5995,3 +5995,23 @@ achievements:
   title: 'Microsoft Azure AI Fundamentals: AI Overview'
   summary: Artificial Intelligence (AI) empowers amazing new solutions and experiences; and Microsoft Azure provides easy to use services to help you get started.
   iconUrl: /learn/achievements/get-started-with-artificial-intelligence-on-azure.svg
+- uid: learn.azure-introduction-to-azure-search.badge
+  type: badge
+  title: Fundamentals of Knowledge Mining and Azure AI Search
+  summary: Use Azure AI Search to make your data searchable.
+  iconUrl: /training/achievements/azure-introduction-to-azure-search.svg
+- uid: learn.wwl.analyze-images-computer-vision.badge
+  type: badge
+  title: Fundamentals of Computer Vision
+  summary: Azure AI Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios.
+  iconUrl: /training/achievements/analyze-images-computer-vision.svg
+- uid: learn.wwl.analyze-receipts-form-recognizer.badge
+  type: badge
+  title: Fundamentals of Azure AI Document Intelligence
+  summary: Document processing is a common task in many business scenarios. Organizations can use Azure AI Document Intelligence to automate data extraction across document types, such as receipts, invoices, and more.
+  iconUrl: /training/achievements/analyze-receipts-form-recognizer.svg
+- uid: learn.wwl.read-text-computer-vision.badge
+  type: badge
+  title: Fundamentals of optical character recognition
+  summary: Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.
+  iconUrl: /training/achievements/read-text-computer-vision.svg
