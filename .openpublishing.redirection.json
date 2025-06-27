@@ -50456,6 +50456,56 @@
       "source_path": "learn-pr/azure/analyze-logs-with-kql/1-introduction.yml",
       "redirect_url": "/azure/azure-monitor/logs/log-query-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/index.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/4-exercise.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/3-face-analysis-azure.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/1-introduction.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/5-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/6-summary.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/2-what-is-face-analysis.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/document-intelligence-knowledge-mining/index.md",
+      "redirect_url": "/training/paths/introduction-to-ai-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/explore-computer-vision-microsoft-azure/index.md",
+      "redirect_url": "/training/paths/introduction-to-ai-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/get-started-with-artificial-intelligence-on-azure/index.md",
+      "redirect_url": "/training/paths/introduction-to-ai-on-azure/",
+      "redirect_document_id": false
     }
   ]
 }
