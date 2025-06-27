@@ -29,7 +29,6 @@ products:
 subjects:
 - classification-analysis
 units:
-- learn.wwl.analyze-images-computer-vision.understand-computer-vision
 badge:
   uid: learn.wwl.analyze-images-computer-vision.badge
 
