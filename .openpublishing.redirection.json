@@ -50596,6 +50596,11 @@
       "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/2-document-intelligence-capabilities.md",
       "redirect_url": "/training/modules/ai-information-extraction/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/4-exercise.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
     }
   ]
 }
