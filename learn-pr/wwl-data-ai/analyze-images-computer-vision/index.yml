@@ -30,7 +30,6 @@ subjects:
 - classification-analysis
 units:
 - learn.wwl.analyze-images-computer-vision.understand-computer-vision
-- learn.wwl.analyze-images-computer-vision.summary
 badge:
   uid: learn.wwl.analyze-images-computer-vision.badge
 
