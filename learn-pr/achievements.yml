@@ -5815,6 +5815,11 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.monitor-authentication-methods.badge
+  type: badge
+  title: Monitor and report on authentication methods used in Microsoft Entra ID
+  summary: This module teaches you how to create a Microsoft Entra workbook that helps you to create a report of the authentication methods used in your tenant.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.student-evangelism.practice-active-listening.badge
   type: badge
   title: Work with others by practicing active listening

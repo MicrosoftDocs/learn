@@ -49123,6 +49123,11 @@
       "redirect_document_id": false
     },
     {
+        "source_path": "learn-pr/azure/monitor-authentication-methods/create-azure-ad-workbook.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {   
         "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/1-introduction.yml",
         "redirect_url": "https://learn.microsoft.com/training/browse/",
         "redirect_document_id": false
@@ -49588,38 +49593,43 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/visualize-data-workbooks/index.md",
-      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-      "redirect_document_id": false
+        "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-create-azure-ad-workbook.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/visualize-data-workbooks/9-summary.md",
-      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-      "redirect_document_id": false
+        "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-integrate-logs-with-log-analytics.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/visualize-data-workbooks/7-add-visualizations-chart-grid.md",
-      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-      "redirect_document_id": false
+        "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-use-logs-get-status-information.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/visualize-data-workbooks/5-add-visualization-for-query-results.md",
-      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-      "redirect_document_id": false
+        "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-write-kql-queries.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/visualize-data-workbooks/4-supported-data-sources.md",
-      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-      "redirect_document_id": false
+        "source_path": "learn-pr/azure/monitor-authentication-methods/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/visualize-data-workbooks/3-create-new-azure-workbook.md",
-      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-      "redirect_document_id": false
+        "source_path": "learn-pr/azure/monitor-authentication-methods/integrate-logs-with-log-analytics.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/visualize-data-workbooks/2-azure-workbooks-overview.md",
-      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+        "source_path": "learn-pr/azure/monitor-authentication-methods/introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-authentication-methods/knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
     },
     {
@@ -50368,13 +50378,63 @@
         "redirect_document_id": false
     },
     {
+        "source_path": "learn-pr/azure/monitor-authentication-methods/summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
         "source_path": "learn-pr/paths/start-career-in-tech/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/monitor-authentication-methods/use-logs-get-status-information.yml",
         "redirect_url": "https://learn.microsoft.com/training/browse/",
         "redirect_document_id": false
     },
     {
         "source_path": "learn-pr/student-evangelism/career-get-noticed/1-introduction.yml",
         "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/monitor-authentication-methods/write-kql-queries.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false 
+    },
+    {
+        "source_path": "learn-pr/azure/visualize-data-workbooks/index.md",
+        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/visualize-data-workbooks/9-summary.md",
+        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/visualize-data-workbooks/7-add-visualizations-chart-grid.md",
+        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/visualize-data-workbooks/5-add-visualization-for-query-results.md",
+        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/visualize-data-workbooks/4-supported-data-sources.md",
+        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/visualize-data-workbooks/3-create-new-azure-workbook.md",
+        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/visualize-data-workbooks/2-azure-workbooks-overview.md",
+        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
         "redirect_document_id": false
     },
     {
