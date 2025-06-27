@@ -2,13 +2,13 @@ In Azure Network Watcher, metrics and logs can diagnose complex configuration is
 
 Suppose you have two virtual machines (VMs) that can't communicate. You want to obtain as much information as you can to diagnose the problem.
 
-In this unit, you'll troubleshoot by using Network Watcher metrics and logs. To diagnose the connectivity issue between the two VMs, you'll then use the network security group (NSG) flow logs.
+In this unit, you troubleshoot by using Network Watcher metrics and logs. To diagnose the connectivity issue between the two VMs, you then use the network security group (NSG) flow logs.
 
 ## Register the Microsoft.Insights provider
 
 NSG flow logging requires the *Microsoft.Insights* provider. To register for the Microsoft.Insights provider, complete the following steps.
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and log in to the directory with access to the subscription you created resources in.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in to the directory with access to the subscription you created resources in.
 
 1. In the Azure portal, search for, select **Subscriptions**, and then select your subscription. The **Subscription** pane appears.
 
@@ -52,7 +52,7 @@ Now, create a storage account for the NSG flow logs.
 
 ## Create a Log Analytics workspace
 
-To view the NSG flow logs, you'll use Log Analytics.
+To view the NSG flow logs, use Log Analytics.
 
 1. On the Azure portal menu or from the **Home** page, search for and select **Log Analytics workspaces**. The **Log Analytics workspaces** pane appears.
 
@@ -117,14 +117,14 @@ Now, you're ready to generate some network traffic between VMs to catch in the f
 
 1. From the command bar, select **Connect**, then select **RDP**, and then select **Download RDP File**. If you see a warning about the publisher of the remote connection, select **Connect**.
 
-1. Launch the **FrontendVM.rdp** file and select **Connect**. 
+1. Launch the **FrontendVM.rdp** file and select **Connect**.
 
-1. When asked for your credentials, select **More choices** and sign in with the username **azureuser** and the password you specified when you created the VM.
+1. When asked for your credentials, select **More choices**. Sign in with the username **azureuser** and the password you specified when you created the VM.
 
 1. When asked for a security certificate, select **Yes**.
 
 1. In the RDP session, if prompted, allow your device to be discoverable ONLY if on a private network.
- 
+
 1. Open a PowerShell prompt and run the following command.
 
     ```PowerShell
