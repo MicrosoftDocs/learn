@@ -50606,6 +50606,11 @@
       "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/3-azure-document-intelligence.md",
       "redirect_url": "/training/modules/ai-information-extraction/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/1-introduction.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
     }
   ]
 }
