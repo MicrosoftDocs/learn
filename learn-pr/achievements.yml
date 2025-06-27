@@ -6005,3 +6005,8 @@ achievements:
   title: Fundamentals of Computer Vision
   summary: Azure AI Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios.
   iconUrl: /training/achievements/analyze-images-computer-vision.svg
+- uid: learn.wwl.analyze-receipts-form-recognizer.badge
+  type: badge
+  title: Fundamentals of Azure AI Document Intelligence
+  summary: Document processing is a common task in many business scenarios. Organizations can use Azure AI Document Intelligence to automate data extraction across document types, such as receipts, invoices, and more.
+  iconUrl: /training/achievements/analyze-receipts-form-recognizer.svg
