@@ -29,7 +29,6 @@ products:
 subjects:
 - natural-language-processing
 units:
-- learn.wwl.read-text-computer-vision.summary
 badge:
   uid: learn.wwl.read-text-computer-vision.badge
 
