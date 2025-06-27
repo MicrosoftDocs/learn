@@ -32,7 +32,6 @@ subjects:
 - artificial-intelligence
 units:
 - learn.azure-introduction-to-azure-search.process
-- learn.azure-introduction-to-azure-search.2f-start-with-portal
 - learn.azure-introduction-to-azure-search.6-query-data-in-an-azure-search-index
 - learn.azure-introduction-to-azure-search.exercise
 - learn.azure-introduction-to-azure-search.8-knowledge-check
