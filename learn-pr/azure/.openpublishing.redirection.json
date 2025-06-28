@@ -157,7 +157,7 @@
              },
              {
             "source_path_from_root": "/learn-pr/azure/build-first-bicep-template/4-exercise-define-resources-bicep-template.yml",
-            "redirect_url": "/training/modules/build-first-bicep-file/",
+            "redirect_url": "/training/modules/build-first-bicep-file/4-exercise-define-resources-bicep-template",
             "redirect_document_id": false
              },
              {
@@ -167,7 +167,7 @@
              },
              {
             "source_path_from_root": "/learn-pr/azure/build-first-bicep-template/6-exercise-add-parameters-variables-bicep-template.yml",
-            "redirect_url": "/training/modules/build-first-bicep-file/",
+            "redirect_url": "/training/modules/build-first-bicep-file/6-exercise-add-parameters-variables-bicep-template",
             "redirect_document_id": false
              },
              {
@@ -177,7 +177,7 @@
              },
              {
             "source_path_from_root": "/learn-pr/azure/build-first-bicep-template/8-exercise-refactor-template-modules.yml",
-            "redirect_url": "/training/modules/build-first-bicep-file/",
+            "redirect_url": "/training/modules/build-first-bicep-file/8-exercise-refactor-template-modules",
             "redirect_document_id": false
              },
              {
