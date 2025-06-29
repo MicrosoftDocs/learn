@@ -8,18 +8,18 @@ You'll host the website in Azure using Azure App Service. You'll incorporate a s
 
 :::image type="content" source="../media/1-architecture-diagram.png" alt-text="Architecture diagram that shows a resource group containing an App Service plan, App Service app, and storage account." border="false":::
 
-You decide to build the resources using infrastructure as code (IaC) techniques so you can reuse the template for future product launches.
+You decide to build the resources using infrastructure as code (IaC) techniques so you can reuse the Bicep file for future product launches.
 
 ## What will we learn?
 
-In this module, you'll create a reusable Bicep template to deploy a set of Azure resources for new product launches. You'll use many elements of the Bicep language, including:
+In this module, you'll create a reusable Bicep file to deploy a set of Azure resources for new product launches. You'll use many elements of the Bicep language, including:
 
 - Resource definitions to deploy your Azure resources from your Bicep code.
-- Parameters to make your template reusable.
-- Variables and expressions to make it easier to write and deploy your template.
-- Modules to help structure your template into multiple files.
-- Outputs to send data from your template and modules back to whoever or whatever is deploying your infrastructure.
+- Parameters to make your Bicep file reusable.
+- Variables and expressions to make it easier to write and deploy your Bicep file.
+- Modules to help structure your Bicep file into multiple files.
+- Outputs to send data from your Bicep file and modules back to whoever or whatever is deploying your infrastructure.
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to create Bicep templates that define your Azure resources. You'll be able to use parameters, variables, and expressions to make your templates reusable. You'll also be able to use modules and outputs to organize your templates into separate files.
+By the end of this module, you'll be able to create Bicep files that define your Azure resources. You'll be able to use parameters, variables, and expressions to make your files reusable. You'll also be able to use modules and outputs to organize your files into separate files.
