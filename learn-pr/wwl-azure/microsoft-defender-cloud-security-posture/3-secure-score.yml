@@ -2,8 +2,6 @@
 uid: learn.wwl.microsoft-defender-cloud-security-posture.secure-score
 title: Identify and remediate security risks by using the Microsoft Defender for Cloud Secure Score and Inventory
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify and remediate security risks by using the Microsoft Defender for Cloud Secure Score and Inventory
   description: "Explore secure score"
   ms.date: 02/10/2025

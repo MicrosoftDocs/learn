@@ -1,14 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.responsible-ai-studio.identify-harms
-title: Identify potential harms
+title: Map potential harms
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Identify potential harms
+  title: Map potential harms
   description: Identify, prioritize, validate and document potential harms in a responsible AI solution.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/28/2024
+  ms.date: 05/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

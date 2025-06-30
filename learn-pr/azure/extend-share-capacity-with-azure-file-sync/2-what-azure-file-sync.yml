@@ -2,8 +2,6 @@
 uid: learn.azure.extend-share-capacity-with-azure-file-sync.what-is-azure-file-sync
 title: What is Azure File Sync?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure File Sync?
   description: Explore what Azure File Sync is, how it works, and what you need to do to support it.
   ms.date: 11/17/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-azure-file-sync.md)]
-
+

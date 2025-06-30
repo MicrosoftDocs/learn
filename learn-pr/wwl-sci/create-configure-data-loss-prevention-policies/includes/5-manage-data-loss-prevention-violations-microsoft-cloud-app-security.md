@@ -1,7 +1,7 @@
 
 When you create a data loss prevention (DLP) policy using Microsoft Defender for Cloud Apps as a location in the Microsoft Purview compliance portal, the matches appear in the regular DLP reports.
 
-When you create a file policy in Defender for Cloud Apps the matched conditions and taken actions are instead be logged in Defender for Cloud Apps.
+When you create a file policy in Defender for Cloud Apps, the matched conditions and taken actions are instead logged in Defender for Cloud Apps.
 
 For example, you created a file policy in Defender for Cloud Apps to identify files including Tax Identification numbers that are shared with external users from OneDrive or SharePoint Online and automatically move them into the trash folder and revoke external access. If you want to see any matches on this policy, open the Microsoft Defender for Cloud Apps portal and follow these steps:
 

@@ -6,13 +6,10 @@ The topics covered in this module include:
 
 - Examining code development features of GitHub Copilot in Visual Studio Code.
 - Examining GitHub Copilot best practices.
-- Creating code by using code line completions.
-- Creating code by using GitHub Copilot Inline Chat.
-- Completing a "create new code" challenge and reviewing a possible solution.
-- Completing a "code logic" challenge and reviewing a possible solution.
-- Converting code between programming languages using GitHub Copilot.
+- Generating code by using code line completions.
+- Generating code by using GitHub Copilot chat features.
 
-By the end of this module, you're able to develop code more efficiently and accurately using GitHub Copilot autocompletion and chat suggestions in Visual Studio Code.
+By the end of this module, you're able to develop code more efficiently and accurately using GitHub Copilot code completions and chat suggestions in Visual Studio Code.
 
 > [!IMPORTANT]
-> To complete this GitHub Copilot training, you must have an active subscription for GitHub Copilot in your personal GitHub account, or you must be assigned to a subscription managed by an organization or enterprise. To complete module activities, you must configure your account to allow GitHub Copilot suggestions that match public code. If you're a member of an organization on GitHub Enterprise Cloud who has been assigned a GitHub Copilot seat through your organization, the setting for suggestions matching public code will be inherited from your organization or enterprise. If your account blocks suggestions that match public code, module activities won't work as expected.
+> To complete this GitHub Copilot training, you must have an active subscription for GitHub Copilot in your personal GitHub account (includes the GitHub Copilot Free plan), or you must be assigned to a subscription managed by an organization or enterprise. Module activities may include GitHub Copilot suggestions that match public code. If you're a member of an organization on GitHub Enterprise Cloud who has been assigned a GitHub Copilot subscription through your organization, the setting for suggestions matching public code may be inherited from your organization or enterprise. If your account blocks suggestions that match public code, module activities may not work as expected.

@@ -1,12 +1,10 @@
 ### YamlMime:Module
 uid: learn.wwl.evaluate-performance-improvements
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Evaluate performance improvements
   description: Evaluate performance improvements
-  ms.date: 07/13/2022
-  author: wwlpublish
+  ms.date: 03/31/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
   ms.service: azure
@@ -40,6 +38,7 @@ units:
 - learn.wwl.evaluate-performance-improvements.describe-wait-statistics
 - learn.wwl.evaluate-performance-improvements.tune-and-maintain-indexes
 - learn.wwl.evaluate-performance-improvements.understand-query-hints
+- learn.wwl.evaluate-performance-improvements.explore-performance
 - learn.wwl.evaluate-performance-improvements.exercise-isolate-problem-areas-poor-performing-queries
 - learn.wwl.evaluate-performance-improvements.knowledge-check
 - learn.wwl.evaluate-performance-improvements.summary

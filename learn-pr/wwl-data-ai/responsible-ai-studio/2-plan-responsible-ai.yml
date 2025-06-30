@@ -2,13 +2,11 @@
 uid: learn.wwl.responsible-ai-studio.plan-responsible-ai
 title: Plan a responsible generative AI solution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan a responsible generative AI solution
   description: Describe a practical process for responsible generative AI development.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/28/2024
+  ms.date: 05/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

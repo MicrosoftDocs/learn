@@ -1,12 +1,10 @@
 ### YamlMime:Module
 uid: learn.aks-optimize-compute-costs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Optimize compute costs on Azure Kubernetes Service (AKS)
+  title: Optimize Compute Costs on Azure Kubernetes Service (AKS)
   description: Explore strategies that you can use on Azure to optimize your cloud-native application-development process by using Azure Kubernetes Service (AKS).
   manager: rayoflores
-  ms.date: 12/20/2023
+  ms.date: 06/02/2025
   author: Nickomang
   ms.author: nickoman
   ms.topic: module

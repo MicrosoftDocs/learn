@@ -23,7 +23,7 @@ Restore Access – Once the infected devices are remediated, MDE signals Intune 
 Remediate Threat Variants in MDO and others – The threat signals in Microsoft Threat intelligence are used by Microsoft tools securing other parts of your organization’s attack surface. MDO and Microsoft Defender for Cloud use the signals to detect and remediate threats in email, office collaboration, Azure, and more. 
 
 
-## from the previous graphic when the user’s device was still compromised
+## From the previous graphic when the user’s device was still compromised
 
 :::image type="content" source="../media/suspend-access-compromise.png" alt-text="Diagram of steps to Suspend access during compromise.":::
 
@@ -38,4 +38,3 @@ During this time, the user is restricted from accessing corporate resources. Thi
 Once the threat has been remediated and cleaned up, MDE triggers Intune to update Microsoft Entra ID, and Conditional Access restores the user’s access to corporate resources.
   
 This mitigates risk to the organization by ensuring attackers who might be in control of these devices can't access corporate resources, while minimizing the impact on user productivity to minimize disruption of business processes.  
-  

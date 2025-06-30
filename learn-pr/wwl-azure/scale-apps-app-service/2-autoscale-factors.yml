@@ -2,8 +2,6 @@
 uid: learn.wwl.scale-apps-app-service.examine-autoscale-factors
 title: Examine scale out options
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine scale out options
   description: "Examine scale out options"
   ms.date: 02/12/2025

@@ -2,11 +2,9 @@
 uid: learn.azure.move-azure-resources-to-another-resource-group.validate-resources
 title: Validate resources in Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Validate resources in Azure
   description: Validate resources in Azure
-  ms.date: 11/21/2023
+  ms.date: 06/04/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -26,7 +24,7 @@ quiz:
       explanation: "The PowerShell `Move-AzResource` cmdlet doesn't automatically perform a move validation test."
     - content: "When you use a mobile app to call the `moveResources` REST API method."
       isCorrect: false
-      explanation: "The `moveResources` method doesn't automatically perform a move validation test. Call the `validateMoveResources` method to perform the test."
+      explanation: "The `moveResources` method doesn't automatically perform a move validation test. To perform the test, call the `validateMoveResources` method."
   - content: "In which of the following situations do you need to obtain an access token before you can validate a move?"
     choices:
     - content: "When you use the Azure portal to move the resources."

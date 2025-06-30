@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-identity-projects-pipelines-agents.configure-microsoft-hosted-agent-pools
 title: Configure a Microsoft-hosted pool
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure a Microsoft-hosted pool
   description: "Configure a Microsoft-hosted pool."
   ms.date: 1/25/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-configure-microsoft-hosted-agent-pools.md)]
+  [!include[](includes/2-configure-microsoft-hosted-agent-pools.md)]

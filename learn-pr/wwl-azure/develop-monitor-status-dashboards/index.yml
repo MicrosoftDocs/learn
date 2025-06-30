@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-monitor-status-dashboards
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Develop monitor and status dashboards
   description: "Develop monitor and status dashboards"
   ms.date: 05/08/2024
@@ -63,4 +61,4 @@ units:
   - learn.wwl.develop-monitor-status-dashboards.knowledge-check
   - learn.wwl.develop-monitor-status-dashboards.summary
 badge:
-  uid: learn.wwl.develop-monitor-status-dashboards.badge
+  uid: learn.wwl.develop-monitor-status-dashboards.badge

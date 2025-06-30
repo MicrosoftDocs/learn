@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-microsoft-configuration-manager.examine-deployment-components-of
 title: Examine deployment components of Configuration Manager
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine deployment components of Configuration Manager
   description: "Examine deployment components of Configuration Manager"
   ms.date: 05/15/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-examine-deployment-components-of.md)]
+  [!include[](includes/3-examine-deployment-components-of.md)]

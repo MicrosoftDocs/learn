@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-bastion.5-knowledge-check  
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
-  ms.date: 12/05/2023
+  ms.date: 05/29/2025
   author: cherylmc
   ms.author: cherylmc
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -43,12 +42,12 @@ quiz:
     - content: "They must deploy Azure Bastion in a different virtual network from the one that contains the VMs."
       isCorrect: false
       explanation: "Incorrect. Azure Bastion must be in the same virtual network as the managed VMs."
-    - content: "They must deploy Azure Bastion in the same virtual network as the one that contains the VMs, and in the same subnet."
+    - content: "They must deploy Azure Bastion in the same virtual network as the one that contains the VMs and in the same subnet."
       isCorrect: false
       explanation: "Incorrect. Although Azure Bastion should be deployed in the same virtual network, it must be in a different subnet."
-    - content: "They must deploy Azure Bastion in the same virtual network as the one that contains the VMs, and in a different subnet."
+    - content: "They must deploy Azure Bastion in the same virtual network as the one that contains the VMs and in a different subnet."
       isCorrect: true
-      explanation: "Correct. Azure Bastion must be deployed in the same virtual network (or peered virtual network) as the VMs, but in its own subnet."
+      explanation: "Correct. Azure Bastion must be deployed in the same virtual network (or peered virtual network) as the VMs but in its own subnet."
   - content: "Your boss is concerned that by implementing Azure Bastion, you need to maintain it with patches and updates. Is your boss correct?"
     choices:
     - content: "No, your boss is wrong. Azure Bastion is a fully managed PaaS service that you don't need to patch or update."

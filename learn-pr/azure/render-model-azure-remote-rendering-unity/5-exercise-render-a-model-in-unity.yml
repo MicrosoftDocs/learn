@@ -2,8 +2,6 @@
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.5-exercise-render-a-model-in-unity
 title: Exercise - Load and render a model with Unity
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Load and render a model with Unity
   description: Learn how to use Unity to load and configure a sample engine model project and render the model with Azure Remote Rendering.
   ms.date: 07/31/2023
@@ -18,4 +16,4 @@ azureSandbox: true
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-render-a-model-in-unity.md)]
-
+

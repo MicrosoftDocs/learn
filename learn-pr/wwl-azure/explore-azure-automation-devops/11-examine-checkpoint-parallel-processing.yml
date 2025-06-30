@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-automation-devops.examine-checkpoint-parallel-processing
 title: Examine checkpoint and parallel processing
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine checkpoint and parallel processing
   description: "Examine checkpoint and parallel processing"
   ms.date: 05/23/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/11-examine-checkpoint-parallel-processing.md)]
+  [!include[](includes/11-examine-checkpoint-parallel-processing.md)]

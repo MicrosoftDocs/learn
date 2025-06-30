@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.work-environments-azure-machine-learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Work with environments in Azure Machine Learning
   description: Use Azure Machine Learning Python SDK v2 to work with environments
   author: wwlpublish
@@ -39,4 +37,4 @@ units:
 - learn.wwl.work-environments-azure-machine-learning.summary
 badge:
   uid: learn.wwl.work-environments-azure-machine-learning.badge
-
+

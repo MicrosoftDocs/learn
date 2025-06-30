@@ -2,8 +2,6 @@
 uid: learn.azure.cna-orchestrate-containers.5-exercise-setup-aks
 title: Exercise - Set up a development environment with AKS
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Set up a development environment with AKS
   description: Set up a development environment with AKS
   ms.date: 12/28/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-setup-aks.md)]
+  [!include[](includes/5-exercise-setup-aks.md)]

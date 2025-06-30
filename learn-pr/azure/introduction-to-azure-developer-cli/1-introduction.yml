@@ -2,8 +2,6 @@
 uid: learn.azure.introduction-to-azure-developer-cli.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Introductory unit of the Introduction to the Azure Developer CLI module
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
-
+

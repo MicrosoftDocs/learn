@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-create-sk-assistant.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This unit summarizes the key concepts covered in the module, including key features and how to use Semantic Kernel SDK.
+  ms.date: 04/28/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-summary.md)]

@@ -2,11 +2,9 @@
 uid: learn.build-serverless-api-with-functions-api-management.1-introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
-  description: In this unit, you will learn about a business problem that you can address by using Azure API Management to host Azure Functions.
-  ms.date: 11/03/2023
+  description: In this unit, you'll learn about a business problem that you can address by using Azure API Management to host Azure Functions.
+  ms.date: 04/28/2025
   author: ggailey777
   ms.author: glenga
   ms.topic: unit

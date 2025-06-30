@@ -2,8 +2,6 @@
 uid: learn.improve-reliability-incidents.7-remediation
 title: "Remediation"
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Remediation"
   description: "Remediation"
   ms.date: 02/28/2024
@@ -46,4 +44,4 @@ quiz:
       isCorrect: false
       explanation: 'Workbooks are live because they can contain embedded KQL queries, plus workbooks and troubleshooting guides are only shared with people with your explicit permission.'
       
-
+

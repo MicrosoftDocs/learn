@@ -2,8 +2,6 @@
 uid: learn.azure.introduction-to-red-hat-azure.what-is-red-hat-on-azure
 title: What is Red Hat on Azure?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Red Hat on Azure?
   description: Discuss Red Hat on Azure, including Red Hat Enterprise Linux (RHEL), Azure Red Hat OpenShift, and JBoss.
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/2-what-is-red-hat-on-azure.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables.use-serverless-compute-and-parallelism-with-delta-live-tables
 title: Optimize performance with Spark and Delta Live Tables
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Optimize performance with Spark and Delta Live Tables
   description: "Optimize performance with Spark and Delta Live Tables."
   ms.date: 08/06/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/02-use-serverless-compute-and-parallelism-with-delta-live-tables.md)]
+  [!include[](includes/02-use-serverless-compute-and-parallelism-with-delta-live-tables.md)]

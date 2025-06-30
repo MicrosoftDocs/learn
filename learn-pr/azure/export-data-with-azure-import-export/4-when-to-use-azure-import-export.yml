@@ -3,14 +3,11 @@ uid: learn.azure.export-data-with-azure-import-export.when-to-use-azure-import-e
 title: When to use Azure Import/Export
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to use Azure Import/Export
   description: When to use Azure Import/Export
   ms.date: 03/08/2023
-  author: alkohli
-  ms.author: alkohli
-  manager: femila
+  author: stevenmatthew
+  ms.author: shaas
   ms.topic: unit
 
 durationInMinutes: 10

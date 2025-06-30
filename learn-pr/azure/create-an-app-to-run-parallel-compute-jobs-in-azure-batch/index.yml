@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create an app to run parallel compute jobs in Azure Batch
   description: Learn to use the Azure Batch platform to write a .NET Core console app that performs parallel, large-scale, high-performance video transcoding.
   manager: akashdubey
@@ -48,4 +46,4 @@ units:
 - learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.summary
 badge:
   uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.badge
-
+

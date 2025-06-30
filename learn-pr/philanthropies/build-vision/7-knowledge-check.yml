@@ -1,0 +1,119 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.build-vision.knowledge-check
+
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge check for unit"
+  ms.date: 3/20/2025
+  author: kariannab-ms
+  ms.author: kbarreto
+  ms.topic: unit
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
+### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
+###
+### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
+###
+### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
+### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
+### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
+  
+durationInMinutes: 10
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+### Question content requirements:
+###  - Write 5 questions
+###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
+###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
+###      Example: "What differentiates an action from a control action in a Logic App?"
+###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
+###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
+###      Example: "A financial company is building a system to let brokers trade financial instruments. The system must monitor market conditions, detect changes, and execute trades. It will need to handle a large volume of transactions quickly. The faster it completes trades, the more of an advantage the company will have over its competitors. Which requirement of this system would be difficult for Azure Logic Apps to satisfy?"
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "What is one of the main advantages of using Microsoft Copilot during preproduction?"
+    choices:
+    - content: "It generates and refines creative scripts and scene descriptions based on prompts"
+      isCorrect: true
+      explanation: "Copilot assists with scripting and planning by generating and refining ideas quickly."
+    - content: "It edits audio tracks with noise reduction tools"
+      isCorrect: false
+      explanation: "Noise reduction tools are part of Clipchamp, not Copilot."
+    - content: "It automates the exporting process in Clipchamp"
+      isCorrect: false
+      explanation: "Copilot doesn't handle exporting or technical processing tasks."
+    - content: "It creates original background music for the video"
+      isCorrect: false
+      explanation: "Copilot focuses on visual and written content, not audio composition."
+  - content: "Which AI feature in Clipchamp helps identify and arrange the most important moments in your footage?"
+    choices:
+    - content: "Smart Prompting"
+      isCorrect: false
+      explanation: "Smart Prompting is a general AI idea, not a specific Clipchamp feature."
+    - content: "Auto Composition"
+      isCorrect: true
+      explanation: "Auto Composition identifies the strongest moments and arranges scenes for you."
+    - content: "Visual Looping"
+      isCorrect: false
+      explanation: "Visual Looping isn't a recognized feature in Clipchamp."
+    - content: "Scene Painting"
+      isCorrect: false
+      explanation: "Scene Painting isn't a function of Clipchamp's current AI toolset."
+  - content: "How does Microsoft Designer assist with visual storytelling in music videos?"
+    choices:
+    - content: "By generating audio narration for each scene"
+      isCorrect: false
+      explanation: "Designer is focused on visuals, not audio."
+    - content: "By creating spreadsheets to plan video budgets"
+      isCorrect: false
+      explanation: "This action would be handled in tools like Excel, not Designer."
+    - content: "By generating AI-enhanced visuals and graphics based on descriptive prompts"
+      isCorrect: true
+      explanation: "Designer generates images and scene assets based on text prompts."
+    - content: "By editing raw video footage for timing and pacing"
+      isCorrect: false
+      explanation: "Video editing tasks are performed in Clipchamp, not Designer."
+  - content: "Why is integrating Copilot, Designer, and Clipchamp beneficial for music video production?"
+    choices:
+    - content: "It helps reduce the file size of exported videos"
+      isCorrect: false
+      explanation: "File size management is unrelated to the creative AI workflow."
+    - content: "It automates the entire production without user input"
+      isCorrect: false
+      explanation: "User guidance and input are essential throughout the process."
+    - content: "It creates a seamless workflow from concept to final video using AI tools"
+      isCorrect: true
+      explanation: "Together, these tools cover scripting, visuals, and editing, creating a smooth creative pipeline."
+    - content: "It generates audio and vocals without any music"
+      isCorrect: false
+      explanation: "None of these tools generate music or vocals."
+  - content: "What is one way Clipchamp uses AI to enhance your music video project?"
+    choices:
+    - content: "It generates a music score to match your visuals"
+      isCorrect: false
+      explanation: "Clipchamp doesn't handle music composition."
+    - content: "It provides autogenerated camera movement instructions"
+      isCorrect: false
+      explanation: "Clipchamp works with existing media, not camera direction."
+    - content: "It rewrites your music video script using predictive algorithms"
+      isCorrect: false
+      explanation: "Scriptwriting is handled in Copilot, not Clipchamp."
+    - content: "It identifies scene changes and improves pacing with intelligent transitions"
+      isCorrect: true
+      explanation: "Clipchamp uses features like intelligent scene recognition and Auto Composition to support pacing and structure."

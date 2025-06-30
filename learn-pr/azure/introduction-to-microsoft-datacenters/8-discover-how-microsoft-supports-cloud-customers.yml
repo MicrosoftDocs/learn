@@ -2,8 +2,6 @@
 uid: learn.introduction-to-microsoft-datacenters.discover-how-microsoft-supports-cloud-customers
 title: Discover how Microsoft supports cloud customers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Discover how Microsoft supports cloud customers
   description: Describes the basics of Microsoft support operations for Azure datacenters.
   ms.date: 07/17/2024
@@ -27,4 +25,4 @@ quiz:
     - content: "Basic customer support limits the number of support requests."
       isCorrect: true
       explanation: "Correct. Microsoft doesn't limit the number of support requests a customer can open to resolve issues."
-
+

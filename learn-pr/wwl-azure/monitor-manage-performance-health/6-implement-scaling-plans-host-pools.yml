@@ -2,8 +2,6 @@
 uid: learn.wwl.monitor-manage-performance-health.implement-scaling-plans-host-pools
 title: Implement scaling plans in host pools
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement scaling plans in host pools
   description: "Implement scaling plans in host pools"
   ms.date: 08/13/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-implement-scaling-plans-host-pools.md)]
+  [!include[](includes/6-implement-scaling-plans-host-pools.md)]

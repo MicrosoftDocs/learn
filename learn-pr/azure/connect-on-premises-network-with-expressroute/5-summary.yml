@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.connect-on-premises-network-with-expressroute.5-summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 10/18/2023
+  ms.date: 06/10/2025
   author: duongau
   ms.author: duau
   ms.topic: unit

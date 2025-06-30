@@ -2,13 +2,11 @@
 uid: learn.wwl.create-composed-form-recognizer-model.understand-composed-models
 title: Understand composed models
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand composed models
   description: Understand composed models
-  author: wwlpublish
-  ms.author: rcaper
-  ms.date: 03/05/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 04/30/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

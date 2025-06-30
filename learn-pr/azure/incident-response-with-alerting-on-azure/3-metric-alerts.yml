@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.incident-response-with-alerting-on-azure.3-metric-alerts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use metric alerts for alerts about performance issues in your Azure environment
   description: Investigate the different kinds of metric alerts that Azure Monitor supports.
   ms.date: 09/24/2024
@@ -13,4 +11,4 @@ title: Use metric alerts for alerts about performance issues in your Azure envir
 durationInMinutes: 4
 content: |
   [!include[](includes/3-metric-alerts.md)]
-
+

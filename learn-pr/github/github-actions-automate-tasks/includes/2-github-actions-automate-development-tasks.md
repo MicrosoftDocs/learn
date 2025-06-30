@@ -1,8 +1,8 @@
-Here, we'll introduce GitHub Actions and workflows. You'll learn the types of actions you can use and where to find them. You'll also look at examples of these types of actions and how they fit in a workflow.
+Here, we introduce GitHub Actions and workflows. You learn the types of actions you can use and where to find them. You also look at examples of these types of actions and how they fit in a workflow.
 
 ## GitHub decreases time from idea to deployment
 
-GitHub is designed to help teams of developers and DevOps engineers build and deploy applications quickly. There are many features in GitHub that enable this, but they generally fall into one of two categories:
+GitHub is designed to help teams of developers and DevOps engineers build and deploy applications quickly. There are many features in GitHub that enable these efficiencies, but they generally fall into one of two categories:
 
 - **Communication**: Consider all of the ways that GitHub makes it easy for a team of developers to communicate about the software development project: code reviews in pull requests, GitHub issues, project boards, wikis, notifications, and so on.
 - **Automation**: GitHub Actions lets your team automate workflows at every step in the software-development process, from integration to delivery to deployment. It even lets you automate adding labels to pull requests and checking for stale issues and pull requests.
@@ -11,21 +11,21 @@ When combined, these features have allowed thousands of development teams to eff
 
 ## Use workflow automation to decrease development time
 
- We'll focus on automation in this module. Let's take a moment to understand how teams can use automation to reduce the amount of time it takes to complete a typical development and deployment workflow.
+In this module, we focus on automation. Let's take a moment to understand how teams can use automation to reduce the amount of time it takes to complete a typical development and deployment workflow.
 
-Consider all of the tasks that must happen *after* the code is written, but before you can reliably use the code for its intended purpose. Depending on your organization's goals, you'll likely need to perform one or more of the following tasks:
+Consider all of the tasks that must happen *after* the code is written, but before you can reliably use the code for its intended purpose. Depending on your organization's goals, you likely need to perform one or more of the following tasks:
 
 - Ensure the code passes all unit tests.
 - Perform code quality and compliance checks to make sure the source code meets the organization's standards.
 - Check the code and its dependencies for known security issues.
-- Build the code integrating new source from (potentially) multiple contributors.
+- Build the code by integrating new source code from (potentially) multiple contributors.
 - Ensure the software passes integration tests.
-- Version the new build.
+- Specify the version of the new build.
 - Deliver the new binaries to the appropriate filesystem location.
 - Deploy the new binaries to one or more servers.
-- If any of these tasks don't pass, report the issue to the proper individual or team for resolution.
+- Determine if any of these tasks don't pass, and report the issue to the proper individual or team for resolution.
 
-The challenge is to do these tasks reliably, consistently, and in a sustainable manner. This is an ideal job for workflow automation. If you're already relying on GitHub, you'll likely want to set up your workflow automation using GitHub Actions.
+The challenge is to do these tasks reliably, consistently, and in a sustainable manner. This process is an ideal job for workflow automation. If you're already relying on GitHub, you likely want to set up your workflow automation using GitHub Actions.
 
 ## What is GitHub Actions?
 
@@ -48,8 +48,8 @@ However, beyond those GitHub Actions featured on the Actions tab, you can:
 Many GitHub Actions are open source and available for anyone who wants to use them. However, just like with any open-source software, you need to carefully check them before using them in your project. Similar to recommended community standards with open-source software such as including a README, code of conduct, contributing file, and issue templates, you can follow these recommendations when using GitHub Actions:
 
 - Review the action's `action.yml` file for inputs, outputs, and to make sure the code does what it says it does.
-- Check if the action is in the GitHub Marketplace. This is a good check, even if an action doesn't have to be on the GitHub Marketplace to be valid.
-- Check if the action is verified in the GitHub Marketplace. This means that GitHub has approved the use of this action. However, you should still review it before using it.
+- Check if the action is in the GitHub Marketplace. This check is worthwhile, even if an action doesn't have to be on the GitHub Marketplace to be valid.
+- Check if the action is verified in the GitHub Marketplace. Verification means that GitHub approved the use of this action. However, you should still review it before using it.
 - Include the version of the action you're using by specifying a Git ref, SHA, or tag.
 
 ## Types of GitHub actions
@@ -58,7 +58,7 @@ There are three types of GitHub actions: container actions, JavaScript actions, 
 
 With **container actions**, the environment is part of the action's code. These actions can only be run in a Linux environment that GitHub hosts. Container actions support many different languages.
 
-**JavaScript actions** don't include the environment in the code. You'll have to specify the environment to execute these actions. You can run these actions in a VM (virtual machine) in the cloud or on-premises. JavaScript actions support Linux, macOS, and Windows environments.
+**JavaScript actions** don't include the environment in the code. You have to specify the environment to execute these actions. You can run these actions in a VM (virtual machine) in the cloud or on-premises. JavaScript actions support Linux, macOS, and Windows environments.
 
 **Composite actions** allow you to combine multiple workflow steps within one action. For example, you can use this feature to bundle together multiple run commands into an action, and then have a workflow that executes the bundled commands as a single step using that action.
 
@@ -97,9 +97,9 @@ branding:
     color: "purple"
 ```
 
-Notice the ```inputs``` section. Here, you're getting the value of a variable called `MY_NAME`. This variable will be set in the workflow that runs this action.
+Notice the ```inputs``` section. Here, you're getting the value of a variable called `MY_NAME`. This variable is set in the workflow that runs this action.
 
-In the ```runs``` section, notice you specify *docker* in the ```uses``` attribute. When you do this, you'll need to provide the path to the Docker image file. Here, it's called *Dockerfile*. We won't get into the specifics of Docker here, but if you'd like more information, check out the [Introduction to Docker Containers](/training/modules/intro-to-docker-containers/?azure-portal=true) module.
+In the ```runs``` section, notice you specify *docker* in the ```uses``` attribute. When you set this value, you need to provide the path to the Docker image file. In this case, *Dockerfile*. We're not covering the specifics of Docker here, but if you'd like more information, check out the [Introduction to Docker Containers](/training/modules/intro-to-docker-containers/?azure-portal=true) module.
 
 The last section, *branding*, personalizes your action in the GitHub Marketplace if you decide to publish it there.
 
@@ -111,7 +111,7 @@ A *GitHub Actions workflow* is a process that you set up in your repository to a
 
 To create a workflow, you add actions to a .yml file in the ```.github/workflows``` directory in your GitHub repository.
 
-In the exercise coming up, your workflow file *main.yml* will look like this:
+In the exercise coming up, your workflow file *main.yml* looks like this example:
 
 ```yml
 name: A workflow for my Hello World file
@@ -127,7 +127,7 @@ jobs:
         MY_NAME: "Mona"
 ```
 
-Notice the ```on:``` attribute. This is a *trigger* to specify when this workflow will run. Here, it triggers a run when there's a push event to your repository. You can specify single events like ```on: push```, an array of events like ```on: [push, pull_request]```, or an event-configuration map that schedules a workflow or restricts the execution of a workflow to specific files, tags, or branch changes. The map might look something like this:
+Notice the ```on:``` attribute, its value is a *trigger* to specify when this workflow runs. Here, it triggers a run when there's a push event to your repository. You can specify single events like ```on: push```, an array of events like ```on: [push, pull_request]```, or an event-configuration map that schedules a workflow or restricts the execution of a workflow to specific files, tags, or branch changes. The map might look something like this:
 
 ```yml
 on:
@@ -146,11 +146,11 @@ on:
       - created
 ```
 
-An event will trigger on all activity types for the event unless you specify the type or types. For a comprehensive list of events and their activity types, see: [Events that trigger workflows](https://docs.github.com/actions/using-workflows/events-that-trigger-workflows?azure-portal=true) in the GitHub documentation.
+An event triggers on all activity types for the event unless you specify the type or types. For a comprehensive list of events and their activity types, see: [Events that trigger workflows](https://docs.github.com/actions/using-workflows/events-that-trigger-workflows?azure-portal=true) in the GitHub documentation.
 
-A workflow must have at least one *job*. A job is a section of the workflow associated with a *runner*. A runner can be GitHub-hosted or self-hosted, and the job can run on a machine or in a container. You'll specify the runner with the ```runs-on:``` attribute. Here, you're telling the workflow to run this job on ```ubuntu-latest```.
+A workflow must have at least one *job*. A job is a section of the workflow associated with a *runner*. A runner can be GitHub-hosted or self-hosted, and the job can run on a machine or in a container. You specify the runner with the ```runs-on:``` attribute. Here, you're telling the workflow to run this job on ```ubuntu-latest```.
 
-Each job will have steps to complete. In our example, the step uses the action *actions/checkout@v1* to check out the repository. What's interesting is the ```uses: ./action-a``` value, which is the path to the container action that you build in an *action.yml* file.
+Each job has steps to complete. In our example, the step uses the action *actions/checkout@v1* to check out the repository. What's interesting is the ```uses: ./action-a``` value, which is the path to the container action that you build in an *action.yml* file.
 
 The last part of this workflow file sets the `MY_NAME` variable value for this workflow. Recall the container action took an input called `MY_NAME`.
 
@@ -158,12 +158,69 @@ For more information on workflow syntax, see [Workflow syntax for GitHub Actions
 
 ## GitHub-hosted versus self-hosted runners
 
-We briefly mentioned runners as being associated with a job. A runner is simply a server that has the GitHub Actions runner application installed. In the previous workflow example, there was a `runs-on: ubuntu-latest` attribute within the jobs block, which told the workflow that the job will run using the GitHub-hosted runner that's running in the `ubuntu-latest` environment.
+We briefly mentioned runners as being associated with a job. A runner is simply a server that has the GitHub Actions runner application installed. In the previous workflow example, there was a `runs-on: ubuntu-latest` attribute within the jobs block, which told the workflow that the job is going to run using the GitHub-hosted runner that's running in the `ubuntu-latest` environment.
 
-When it comes to runners, there are two options from which to choose: GitHub-hosted runners or self-hosted runners. If you use a GitHub-hosted runner, each job runs in a fresh instance of a virtual environment. The GitHub-hosted runner type you define, `runs-on: {operating system-version}` then specifies that environment. With self-hosted runners, you need to apply the self-hosted label, its operating system, and the system architecture. For example, a self-hosted runner with a Linux operating system and ARM32 architecture would look like the following: `runs-on: [self-hosted, linux, ARM32]`.
+When it comes to runners, there are two options from which to choose: GitHub-hosted runners or self-hosted runners. If you use a GitHub-hosted runner, each job runs in a fresh instance of a virtual environment. The GitHub-hosted runner type you define, `runs-on: {operating system-version}` then specifies that environment. With self-hosted runners, you need to apply the self-hosted label, its operating system, and the system architecture. For example, a self-hosted runner with a Linux operating system and ARM32 architecture would look like the following specification: `runs-on: [self-hosted, linux, ARM32]`.
 
-Each type of runner has its benefits, but GitHub-hosted runners offer a quicker and simpler way to run your workflows, albeit with limited options. Self-hosted runners are a highly configurable way to run workflows in your own custom local environment. You can run self-hosted runners on-premises or in the cloud. You can also use self-hosted runners to create a custom hardware configuration with more processing power or memory. This will help to run larger jobs, install software available on your local network, and choose an operating system not offered by GitHub-hosted runners.
+Each type of runner has its benefits, but GitHub-hosted runners offer a quicker and simpler way to run your workflows, albeit with limited options. Self-hosted runners are a highly configurable way to run workflows in your own custom local environment. You can run self-hosted runners on-premises or in the cloud. You can also use self-hosted runners to create a custom hardware configuration with more processing power or memory. This type of configuration helps to run larger jobs, install software available on your local network, and choose an operating system not offered by GitHub-hosted runners.
 
-### GitHub Actions may have usage limits
+### GitHub Actions can have usage limits
 
-GitHub Actions has some usage limits, depending on your GitHub plan and whether your runner is GitHub-hosted or self-hosted. For more information on usage limits, check out [Usage limits, billing, and administration](https://docs.github.com/actions/reference/usage-limits-billing-and-administration) in the GitHub documentation.
+GitHub Actions does have some usage limits, depending on your GitHub plan and whether your runner is GitHub-hosted or self-hosted. For more information on usage limits, check out [Usage limits, billing, and administration](https://docs.github.com/actions/reference/usage-limits-billing-and-administration) in the GitHub documentation.
+
+## GitHub hosted larger runners
+
+GitHub offers larger runners for workflows that require more resources. These runners are GitHub-hosted and provide increased CPU, memory, and disk space compared to standard runners. They're designed to handle resource-intensive workflows efficiently, ensuring optimal performance for demanding tasks.
+
+### Runner sizes and labels
+
+Larger runners are available in multiple configurations, providing enhanced vCPUs, RAM, and SSD storage to meet diverse workflow requirements. These configurations are ideal for scenarios such as:
+
+- Compiling large codebases with extensive source files.
+- Running comprehensive test suites, including integration and end-to-end tests.
+- Processing large datasets for data analysis or machine learning tasks.
+- Building applications with complex dependencies or large binary outputs.
+- Performing high-performance simulations or computational modeling.
+- Executing video encoding, rendering, or other multimedia processing workflows.
+
+To use a larger runner, specify the desired runner label in the `runs-on` attribute of your workflow file. For example, to use a runner with 16 vCPUs and 64 GB of RAM, you would set `runs-on: ubuntu-latest-16core`. 
+
+```yml
+jobs:
+  build:
+    runs-on: ubuntu-latest-16core
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build project
+        run: make build
+```
+These larger runners maintain compatibility with existing workflows by including the same preinstalled tools as standard `ubuntu-latest` runners.
+
+For more information about runner sizes for larger runners, see the [GitHub documentation](https://docs.github.com/en/actions/using-github-hosted-runners/using-larger-runners/about-larger-runners#machine-sizes-for-larger-runners)
+
+### Managing larger runners
+
+GitHub provides tools to manage larger runners effectively, ensuring optimal resource utilization and cost management. Here are some key aspects of managing larger runners:
+
+#### Monitoring usage
+
+You can monitor the usage of larger runners through the GitHub Actions usage page in your repository or organization settings. This page provides insights into the number of jobs run, the total runtime, and the associated costs.
+
+#### Managing access
+
+To control access to larger runners, you can configure repository or organization-level policies. This configuration ensures that only authorized workflows or teams can use these high-resource runners.
+
+#### Cost management
+
+Larger runners incur extra costs based on their usage. To manage costs, consider the following suggestions:
+
+- Use larger runners only for workflows that require high resources.
+- Reduce runtime by optimizing workflows.
+- Monitor billing details regularly to track expenses.
+
+#### Scaling workflows
+
+If your workflows require frequent use of larger runners, consider scaling strategies such as:
+
+- Using self-hosted runners for predictable workloads.
+- Splitting workflows into smaller jobs to distribute the load across standard runners.

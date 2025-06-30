@@ -2,16 +2,14 @@
 uid: learn.wwl.backup-restore-databases.backup-sql-server-virtual-machine
 title: Back up a SQL Server virtual machine
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Back up a SQL Server virtual machine
   description: "Back up a SQL Server virtual machine"
-  ms.date: 07/25/2023
-  author: wwlpublish
+  ms.date: 03/25/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-backup-sql-server-virtual-machine.md)]
+  [!include[](includes/3-backup-sql-server-virtual-machine.md)]

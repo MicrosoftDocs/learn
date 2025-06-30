@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.optimize-performance-and-costs-using-azure-disk-storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Optimize performance and costs by using Azure Disk Storage
   description: Azure Disk Storage offers a range of disk types and capabilities that you can use to optimize application performance and costs in specific scenarios. In this module, you learn more about how disk performance works and identify Azure Disk Storage capabilities and performance-scaling options.
   manager: akashdubey
@@ -48,4 +46,4 @@ units:
 - learn.azure.optimize-performance-and-costs-using-azure-disk-storage.summary
 badge:
   uid: learn.azure.optimize-performance-and-costs-using-azure-disk-storage.badge
-
+

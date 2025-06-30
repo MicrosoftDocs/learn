@@ -31,9 +31,7 @@ Once you have Copilot set up in the CLI, here are some frequently used commands 
      Copilot starts an interactive session to clarify your request and suggest the best command.
 
 - **Executing suggested commands**:
-After receiving a suggestion, you can choose the `Execute command` option. This copies the command to your clipboard. You can also allow Copilot to execute commands on your behalf only if you configure the `ghcs` alias, you. 
-
-   Using the alias:
+After receiving a suggestion, you can choose the `Execute command` option. This copies the command to your clipboard. You can also allow Copilot to execute commands on your behalf only if you configure the `ghcs` alias:
 
    ```
    ghcs suggest "What command to see running docker containers"

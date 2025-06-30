@@ -3,7 +3,7 @@ uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-purview
 metadata:
   title: 'SC-200: Mitigate threats using Microsoft Purview'
   description: 'Use Microsoft Purview to discover, classify, and protect sensitive data in your organization. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.'
-  ms.date: 02/17/2023
+  ms.date: 05/01/2025
   author: wwlpublish
   ms.author: kelawson
   ms.topic: learning-path
@@ -29,8 +29,8 @@ subjects:
 - security
 - threat-protection
 modules:
-- learn.wwl.respond-to-data-loss-prevention-alerts-microsoft-365
-- learn-m365.m365-compliance-insider-manage-insider-risk
+- learn.wwl.purview-data-loss-prevention-alerts
+- learn.wwl.purview-insider-risk-investigate-alerts
 - learn.wwl.purview-audit-search-investigate
 - learn.wwl.investigate-threats-with-content-search-in-microsoft-purview
 trophy:

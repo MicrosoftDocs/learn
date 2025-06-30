@@ -2,13 +2,11 @@
 uid: learn.wwl.custom-name-entity-recognition.train-evaluate-your-model
 title: Train and evaluate your model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Train and evaluate your model
   description: Train and evaluate your model
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 2/21/2024
+  ms.date: 05/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

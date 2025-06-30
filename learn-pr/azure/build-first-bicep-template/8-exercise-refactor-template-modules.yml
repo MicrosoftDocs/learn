@@ -3,8 +3,6 @@ uid: learn.azure.deploy-azure-resources-bicep.refactor-template-modules
 title: Exercise - Refactor your template to use modules
 sandbox: true
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Refactor your template to use modules
   description: Learn how to create self-contained, reusable modules for your Bicep code.
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/8-exercise-refactor-template-modules.md)]
-
+

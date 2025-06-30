@@ -3,9 +3,9 @@ uid: learn.wwl.implement-manage-enforcement-cloud-governance-policies
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Implement and manage enforcement of cloud governance policies
+  title: Implement and Manage Enforcement of Cloud Governance Policies
   description: "This module equips administrators with the skills to design, deploy, and oversee security governance in Azure, ensuring alignment with organizational policies and industry best practices."
-  ms.date: 02/07/2025
+  ms.date: 06/17/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module
@@ -44,8 +44,6 @@ units:
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.access-data-identity-network-endpoint
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-governance
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.create-custom-azure-security-initiatives-policies
-- learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-blueprints
-- learn.wwl.implement-manage-enforcement-cloud-governance-policies.configure-azure-blueprints
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.deploy-secure-infrastructures
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-key-vault
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-key-vault-security

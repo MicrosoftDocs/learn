@@ -2,8 +2,6 @@
 uid: learn.azure.run-clustered-applications-azure-shared-disks.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: This unit summarizes what you've learned in this module.
   ms.date: 02/08/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
-
+

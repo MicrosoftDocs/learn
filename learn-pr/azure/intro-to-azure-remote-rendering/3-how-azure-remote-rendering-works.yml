@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-remote-rendering.3-how-azure-remote-rendering-works  
 title: How Azure Remote Rendering works  
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content  
   title: How Azure Remote Rendering works
   description: How Azure Remote Rendering works
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-how-azure-remote-rendering-works.md)]
+  [!include[](includes/3-how-azure-remote-rendering-works.md)]

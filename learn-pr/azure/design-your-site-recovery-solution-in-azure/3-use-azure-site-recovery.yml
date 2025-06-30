@@ -2,8 +2,6 @@
 uid: learn.design-your-site-recovery-solution-in-azure.3-use-azure-site-recovery
 title: Use Azure Site Recovery as part of your BCDR plan
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Azure Site Recovery as part of your BCDR plan
   description: Use Azure Site Recovery as part of your BCDR plan.
   ms.date: 04/15/2024
@@ -37,4 +35,4 @@ quiz:
       explanation: Incorrect. You can't retain the same MAC address when you're replicating virtual machines.
     - content: Load-balanced traffic, IP reservations, maximum of one virtual machine per subnet.
       isCorrect: false
-      explanation: Incorrect. You can have many virtual machines in a subnet.
+      explanation: Incorrect. You can have many virtual machines in a subnet.

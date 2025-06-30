@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-unit-tests-using-github-copilot-tools
 metadata:
-  title: Develop unit tests using GitHub Copilot tools
+  title: Develop Unit Tests using GitHub Copilot Tools
   description: "This module explores using GitHub Copilot and GitHub Copilot Chat to create unit tests. Exercises provide practical experience creating unit test projects and running unit tests in Visual Studio Code."
-  ms.date: 12/09/2024
+  ms.date: 06/02/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-standard-task-based
@@ -23,15 +23,15 @@ abstract: |
 
   -   Use Visual Studio Code, the .NET SDK, and the C# Dev Kit extension to create a test project and verify that your unit tests build and run successfully.
 prerequisites: |
-  -   An active subscription for GitHub Copilot&nbsp;is required&nbsp;for either your personal GitHub account or a GitHub account managed by an organization or enterprise.
-
-  -   Experience using the GitHub Copilot and GitHub Copilot Chat extensions for Visual Studio Code to generate autocompletion suggestions and explain existing code.
-
   -   One or more years of software development experience is recommended.
 
   -   Experience developing C# applications using Visual Studio Code and the C# Dev Kit extension is recommended.
 
-  -   Awareness of the GitHub Copilot free trial conditions. If you choose the free trial offer for GitHub Copilot, a form of payment is requested at sign-up. Charges aren't applied until the trial is over, unless you cancel before the conclusion of the 30-day period.
+  -   An active subscription for GitHub Copilot is required for either your personal GitHub account or a GitHub account managed by an organization or enterprise. You can set up a GitHub Copilot Free plan or sign-up for a GitHub Copilot Pro subscription with a one-time 30-day free trial. For this training, signing up for a GitHub Copilot Free plan is sufficient.
+
+  -   Awareness of the GitHub Copilot free trial conditions: if you choose the 30-day free trial offer for GitHub Copilot Pro, a form of payment is requested at sign-up. Charges aren't applied until the trial is over, unless you cancel before the conclusion of the 30-day period.
+
+  -   Experience using GitHub Copilot in Visual Studio Code to explain, debug, and generate code.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -45,10 +45,10 @@ subjects:
 units:
 - learn.wwl.develop-unit-tests-using-github-copilot-tools.introduction
 - learn.wwl.develop-unit-tests-using-github-copilot-tools.examine-github-copilot-support-unit-tests
-- learn.wwl.develop-unit-tests-using-github-copilot-tools.exercise-create-method-unit-tests-github-copilot-inline-chat
-- learn.wwl.develop-unit-tests-using-github-copilot-tools.exercise-create-specific-unit-test-github-copilot-inline-chat
-- learn.wwl.develop-unit-tests-using-github-copilot-tools.exercise-complete-create-unit-tests-challenge
-- learn.wwl.develop-unit-tests-using-github-copilot-tools.review-create-unit-tests-solution
+- learn.wwl.develop-unit-tests-using-github-copilot-tools.create-unit-tests-generate-tests-smart-action
+- learn.wwl.develop-unit-tests-using-github-copilot-tools.create-unit-tests-inline-chat
+- learn.wwl.develop-unit-tests-using-github-copilot-tools.create-unit-tests-chat-view-modes
+- learn.wwl.develop-unit-tests-using-github-copilot-tools.exercise-develop-unit-tests-github-copliot
 - learn.wwl.develop-unit-tests-using-github-copilot-tools.knowledge-check
 - learn.wwl.develop-unit-tests-using-github-copilot-tools.summary
 badge:

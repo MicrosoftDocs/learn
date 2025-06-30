@@ -1,6 +1,6 @@
 Application Gateway listens on an endpoint for incoming requests, then forwards these requests to one of the web servers in its back-end pool. You'll provide the configuration that describes how Application Gateway directs traffic, and how to load balance requests across web servers.
 
-In the motor-vehicle department system, you need to configure Application Gateway to load balance incoming requests across the web servers hosting the vehicle registration web app. You also need to configure Application Gateway to detect when either of the web servers has failed so it can redirect traffic to a working server. Additionally, you need to configure path-based routing to send requests for the vehicle registration and license renewal sites to the proper back-end web services.
+In the motor-vehicle department system, you need to configure Application Gateway to load balance incoming requests across the web servers hosting the vehicle-registration web app. You also need to configure Application Gateway to detect when either of the web servers has failed so it can redirect traffic to a working server. Additionally, you need to configure path-based routing to send requests for the vehicle-registration and license-renewal sites to the proper back-end web services.
 
 In this exercise, you'll create an instance of Application Gateway with a back-end pool of web servers. You'll verify that Application Gateway is configured with the correct listener to handle incoming HTTP requests, and routes these requests to a functioning web server.
 
@@ -8,7 +8,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
 ## Configure the network for Application Gateway
 
-1. To create the private subnet required by Application Gateway, run the following command. The subnet is named `appGatewaySubnet`, in the `vehicleAppVnet` virtual network that you created in the previous exercise.
+1. To create the private subnet Application Gateway requires, run the following command. The subnet is named `appGatewaySubnet` in the `vehicleAppVnet` virtual network that you created in the previous exercise.
 
     ```azurecli
     az network vnet subnet create \
@@ -44,7 +44,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     - A back-end pool containing the IP addresses of the web-server virtual machines.
     - A firewall that blocks malicious requests, such as those used by SQL Injection and Cross-Site Scripting attacks.
-    - A temporary listener that listens to port 8080. This listener will be replaced in a later step but is required for Application Gateway creation.
+    - A temporary listener that listens to port 8080. This listener will be replaced in a later step, but is required for Application Gateway creation.
     - A rule that routes (and load balances) these requests to the web servers in the back-end pool.
 
     ```azurecli
@@ -159,7 +159,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
 ## Configure path-based routing
 
-Now we need to configure path-based routing for our Application gateway. We'll route requests to **/VehicleRegistration/** to the **vmPool** and requests to **/LicenseRenewal/** to the **appServicePool**. Any requests without any URL context will be routed to the **vmPool** as a default.
+Now, we need to configure path-based routing for our Application gateway. We'll route requests to **/VehicleRegistration/** to the **vmPool** and requests to **/LicenseRenewal/** to the **appServicePool**. Any requests without any URL context will be routed to the **vmPool** as a default.
 
 1. To create the path map for the **vmPool**, run the following command:
 

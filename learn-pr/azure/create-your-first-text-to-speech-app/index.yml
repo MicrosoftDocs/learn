@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.create-your-first-text-to-speech-app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create your first Azure AI services text to speech application
   description: In this module, you'll learn how to use Azure AI services to create a text to speech application.
   author: eric-urban
@@ -44,4 +42,4 @@ units:
 - learn.azure.create-your-first-text-to-speech-app.summary
 badge:
   uid: learn.azure.create-your-first-text-to-speech-app.badge
-
+

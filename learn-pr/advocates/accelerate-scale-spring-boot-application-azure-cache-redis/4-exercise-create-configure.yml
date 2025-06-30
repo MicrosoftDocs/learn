@@ -2,17 +2,17 @@
 uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.exercise-create-configure
 title: Exercise - Create a Spring Boot application that uses Spring Data Redis
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create a Spring Boot application that uses Spring Data Redis
   description: Complete this exercise to create a Spring Boot application and configure Spring Data Redis to store business data in Redis.
   author: judubois
   ms.author: judubois
   ms.date: 06/05/2023
   ms.topic: unit
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - sfi-ropc-blocked
+    - team=cloud_advocates
   ms.contributors: judubois-03112021
 durationInMinutes: 7
 content: |
   [!include[](includes/4-exercise-create-configure.md)]
-
+

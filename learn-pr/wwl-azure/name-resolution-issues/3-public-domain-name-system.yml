@@ -2,8 +2,6 @@
 uid: learn.wwl.name-resolution-issues.public-dns
 title: Troubleshoot public DNS in Microsoft Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot public DNS in Microsoft Azure
   description: "Troubleshoot public DNS in Microsoft Azure"
   ms.date: 04/27/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-public-domain-name-system.md)]
+  [!include[](includes/3-public-domain-name-system.md)]

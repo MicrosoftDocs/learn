@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.prepare-azure-ai-development
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan and Prepare to Develop AI Solutions on Azure
   description: Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Proper planning and preparation involves identifying the services you'll use and creating an optimal working environment for your development team.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 01/31/2025
+  ms.date: 05/23/2025
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
   ms.collection:

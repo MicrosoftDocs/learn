@@ -9,11 +9,11 @@ GitHub Codespaces is a hosted developer environment operating in the cloud that 
 
 As a developer, you want to be more productive typing code faster both for net new projects and existing ones. For this task, you want to use advanced features from an AI assistant that helps improve your developer workflows in code writing, documentation, testing, and more.
 
-In this module, you'll understand how you can use advanced features of GitHub Copilot with applied examples modifying a repository using different techniques to add new HTTP API (Application Programming Interface) endpoints, write unit tests, and document existing code.
+In this module, you understand how you can use advanced features of GitHub Copilot with applied examples modifying a repository using different techniques to add new HTTP API (Application Programming Interface) endpoints, write unit tests, and document existing code.
 
 ## What will I learn?
 
-By the conclusion of this module, you'll acquire the skills to:
+By the conclusion of this module, you acquire the skills to:
 
 - Work with a preconfigured GitHub repository in Codespaces with the GitHub Copilot extension.
 - Use interactive features of GitHub Copilot to generate useful suggestions for an existing project.
@@ -25,12 +25,6 @@ After successfully finishing this module, you'll be capable of using interactive
 
 ## Prerequisites
 
-Skills:
-
 - Basic understanding of Python and text editors.
 - Basic comprehension of Git and GitHub Fundamentals and running basic `git` commands like `git add` and `git push`.
-
-Accounts:
-
-- A [GitHub account](https://github.com/login)
-- [Access to GitHub Copilot](https://github.com/github-copilot/signup)
+- A GitHub Account with an active subscription for GitHub Copilot is required for either your personal [GitHub account](https://github.com/login) or a GitHub account managed by an organization or enterprise. For learning purposes, the Copilot Free option with usage limits should be sufficient.

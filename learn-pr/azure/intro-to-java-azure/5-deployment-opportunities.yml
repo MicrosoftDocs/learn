@@ -1,14 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-java-azure.5-deployment-opportunities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deployment opportunities on Azure
   description: We introduce the various services that Azure offers for Java applications
   ms.date: 11/22/2024
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: hangwan
+  author: hangwan97
+  ms.author: hangwan
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates

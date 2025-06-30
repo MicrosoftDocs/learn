@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-significant-government-strategy-actions.describe-federal-gov-it-modernization-report-of-2017
 title: Describe the Federal Government IT Modernization Report of 2017
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe the Federal Government IT Modernization Report of 2017
   description: "Describe the Federal Government IT Modernization Report of 2017"
   ms.date: 04/29/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/16-describe-federal-government-it-modernization-report-of-2017.md)]
+  [!include[](includes/16-describe-federal-government-it-modernization-report-of-2017.md)]

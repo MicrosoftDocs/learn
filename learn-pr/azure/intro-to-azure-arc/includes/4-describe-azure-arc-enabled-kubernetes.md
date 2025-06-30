@@ -4,7 +4,7 @@ Contoso hosts Kubernetes clusters in multiple datacenters throughout the world, 
 
 Using Azure Arc, you can connect Kubernetes clusters located anywhere to Azure. You can then manage these connected clusters in a consistent way, just as you would in Azure. Azure Arc-enabled Kubernetes lets you control the cluster configuration and workloads at scale, using your Git repositories as the source of truth. This connection to Azure provides management capabilities such as inventory, monitoring, policy compliance, security, user access, and more.
 
-Azure Arc-enabled Kubernetes works with any Cloud Native Computing Foundation (CNCF) certified Kubernetes clusters. This includes clusters running on other public cloud providers and clusters running in on-premises datacenters.
+Azure Arc-enabled Kubernetes works with any Cloud Native Computing Foundation (CNCF) certified Kubernetes clusters, including clusters running on other public cloud providers and clusters running in on-premises datacenters.
 
 ## Onboard Kubernetes clusters to Azure Arc
 

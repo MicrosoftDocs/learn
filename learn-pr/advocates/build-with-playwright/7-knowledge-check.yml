@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-with-playwright.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your understanding so far.
   ms.date: 03/19/2025
   ms.author: debbieobrien
   author: debs-obrien
   ms.manager: jamont
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 6
 content: |
   Choose the best response for each question. 

@@ -4,9 +4,8 @@ title: Choose the right destination
 metadata:
   title: Choose the right destination
   description: In this unit, you choose the correct destination for running your Java application on Azure.
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: hangwan
+  author: hangwan97
+  ms.author: hangwan
   ms.date: 01/04/2024
   ms.topic: unit
   ms.custom:

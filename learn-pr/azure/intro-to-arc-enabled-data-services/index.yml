@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-arc-enabled-data-services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure Arc-enabled data services
   description: Introduction to Azure Arc-enabled data services
   ms.date: 03/07/2023
@@ -52,4 +50,4 @@ units:
 - learn.azure.intro-to-arc-enabled-data-services.6-summary
 badge:
   uid: learn.azure.intro-to-arc-enabled-data-services.badge
-
+

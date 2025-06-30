@@ -167,7 +167,7 @@ By default, Global Administrator and other administrator roles do not have permi
 
 ## Attribute log administrator
 
-Assign the Attribute Log Reader role to users who need to do the following tasks:
+Assign the Attribute Log administrator role to users who need to do the following tasks:
 
  -  Read audit logs for custom security attribute value changes.<br>
  -  Read audit logs for custom security attribute definition changes and assignments.

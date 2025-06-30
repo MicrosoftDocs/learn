@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.publish-static-web-app-authentication
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Authenticate users with Azure Static Web Apps
   description: Publish an Angular, React, Svelte, or Vue JavaScript app with API and authentication using Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
   ms.date: 12/20/2022
@@ -51,4 +49,4 @@ units:
   - learn.azure.publish-static-web-app-authentication.7-summary
 badge:
   uid: learn.azure.publish-static-web-app-authentication.badge
-
+

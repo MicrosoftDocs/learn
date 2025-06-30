@@ -1,4 +1,4 @@
-A private IP address resource can be associated with virtual machine network interfaces, internal load balancers, and application gateways. Azure can provide an IP address (dynamic assignment) or you can assign the IP address (static assignment).
+A [private IP address](/azure/virtual-network/ip-services/private-ip-addresses) resource can be associated with virtual machine network interfaces, internal load balancers, and application gateways. Azure can provide an IP address (dynamic assignment) or you can assign the IP address (static assignment).
 
 ### Things to consider when associating private IP addresses
 
@@ -21,3 +21,6 @@ A private IP address is allocated from the address range of the virtual network 
 - **Static**: You select and assign any unassigned or unreserved IP address in the subnet's address range.
 
    Suppose a subnet's address range is 10.0.0.0/16, and addresses 10.0.0.4 through 10.0.0.9 are already assigned to other resources. In this scenario, you can assign any address between 10.0.0.10 and 10.0.255.254.
+
+> [!TIP]
+> For a more complete review of virtual networks, consider the [Introduction to Virtual Networks](/training/modules/introduction-to-azure-virtual-networks/) training module. 

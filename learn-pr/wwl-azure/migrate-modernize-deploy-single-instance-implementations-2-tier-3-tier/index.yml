@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Modernize and deploy single-instance implementations of SAP on Azure (2-tier and 3-tier)
   description: 'This module explores the preparation for single-instance SAP HANA deployment on Azure. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/09/2024
@@ -43,4 +41,4 @@ units:
 - learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.summary
 badge:
   uid: learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.badge
-
+
