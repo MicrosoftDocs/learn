@@ -16,9 +16,10 @@ Next, they *reduce friction*. Let's say that a consumer team is dependent on a b
 
 Finally, they *standardize practices*. A common challenge development organizations face is that different teams often diverge in the ways they operate. Building an InnerSource program is a great opportunity to adopt standard conventions that can be used across every development team, even if they don't follow identical practices. For example, two teams might prefer different processes for accepting contributions. Having them standardize on the way they communicate their different processes makes it much easier for anyone to contribute to either.
 
-**Tip:** Consider using GitHub Discussions and GitHub Projects to further support InnerSource collaboration across teams.
+> [!TIP]
+> Consider using GitHub Discussions and GitHub Projects to further support InnerSource collaboration across teams.
 
-These examples are just a few of the benefits enjoyed by InnerSource programs. To learn more, see [An introduction to InnerSource](https://resources.github.com/whitepapers/introduction-to-innersource/?azure-portal=true).
+These examples are just a few of the benefits enjoyed by InnerSource programs. To learn more, see [An introduction to InnerSource](https://resources.github.com/whitepapers/introduction-to-innersource/).
 
 ## Set up an InnerSource program on GitHub
 
@@ -28,7 +29,10 @@ You can configure GitHub repositories with three levels of visibility. Users who
 
 - **Public** repositories are visible to everyone. Use this visibility for projects that are truly open source and offer access to people inside and outside of your organization.
 - **Internal** repositories are only visible to members of the enterprise that owns them.
-**Note:** Internal repositories are only available to GitHub Enterprise customers. Use this visibility for InnerSource projects
+
+> [!NOTE]  
+> Internal repositories are only available to GitHub Enterprise customers. Use this visibility for InnerSource projects.
+
 - **Private** repositories are only visible to the owner and any teams or individuals they add. Use this visibility for projects that only specific users and groups should have access to.
 
 Once you establish repository visibility, you can configure permissions on an individual or team basis. There are five permission levels:
@@ -39,7 +43,7 @@ Once you establish repository visibility, you can configure permissions on an in
 - **Maintain** level is recommended for project managers who need to manage the repository without access to sensitive or destructive actions.
 - **Admin** level is recommended for people who need full access to the project, including sensitive and destructive actions like managing security or deleting a repository.
 
-Learn more about [repository access permissions by level](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization?azure-portal=true).
+Learn more about [repository access permissions by level](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization).
 
 ### Create discoverable repositories
 
