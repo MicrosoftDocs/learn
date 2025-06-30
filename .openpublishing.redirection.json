@@ -49953,6 +49953,101 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/2-essential-concepts.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/3-exercise-set-up-project.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/4-exercise-create-grains-silos.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/5-exercise-create-endpoints.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/6-explore-state-concepts.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/7-exercise-persist-state.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/2-identify-windows-app-development-options.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/3-analyze-decision-criteria.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/4-use-windows-presentation-foundation.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/5-use-windows-forms.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/6-use-windows-ui.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/index.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
@@ -50720,6 +50815,56 @@
     {
       "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/6-summary.md",
       "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/2-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/3-create-configure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/4-exercise-create-configure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/5-store-session-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/6-exercise-store-session-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/7-exercise-deploy-app-service.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
       "redirect_document_id": false
     }
   ]

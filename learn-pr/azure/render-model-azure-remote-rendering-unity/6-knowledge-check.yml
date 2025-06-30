@@ -5,7 +5,7 @@ metadata:
   title: Module assessment
   description: Check your knowledge
   ms.date: 07/31/2023
-  author: aprilspeight
+  author: aprilgittens
   ms.author: apspeigh
   ms.topic: unit
   ms.custom:
@@ -52,4 +52,4 @@ quiz:
       - content: "Any number of devices can connect to a session at once."
         isCorrect: false
         explanation: "You can create, observe, and shut down as many sessions as you want, but only one device can connect to a session at a time."
-
+
