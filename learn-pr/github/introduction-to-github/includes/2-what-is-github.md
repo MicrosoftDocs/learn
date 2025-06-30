@@ -172,4 +172,4 @@ To enable or disable a feature preview:
 Feature Previews are a great way to stay ahead of the curve and explore new tools that can enhance your GitHub experience.
 
 > [!TIP]
-> Keep an eye on the **Feature preview** section regularly, as GitHub frequently adds new experimental features for users to explore.
+> GitHub frequently adds new experimental features for users to explore, so keep an eye on the **Feature review** to discover new tools and enhancements.
