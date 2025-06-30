@@ -33,7 +33,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
     docker run -d -p 8080:8080 mcr.microsoft.com/dotnet/samples:aspnetapp
     ```
 
-1. Open a web browser and enter the URL for the sample web app: `http://localhost:8080`. You should see a page that looks like the following screenshot:
+1. Open a web browser and go to the URL for the sample web app: `http://localhost:8080`. You should get a page that looks like the following screenshot:
 
     :::image type="content" source="../media/3-sample-web-app.png" alt-text="Screenshot of the sample web app running in a browser." loc-scope="other"::: <!--no-loc -->
 
