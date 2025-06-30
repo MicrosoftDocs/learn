@@ -13,7 +13,7 @@ This module covered:
 
 Apply these practices to your team projects to strengthen your InnerSource approach.
 
-Now that you have an InnerSource program together, learn to [Create an open-source program by using GitHub best practices](/training/modules/create-open-source-program-github/?azure-portal=true).
+Now that you have an InnerSource program together, learn to [Create an open-source program by using GitHub best practices](/training/modules/create-open-source-program-github).
 
 ## Learn more
 
