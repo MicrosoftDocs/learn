@@ -3,7 +3,7 @@ uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio
 metadata:
   title: Implement generative AI guardrails in Azure AI Foundry
   description: Learn how to choose and configure generative AI guardrails in Azure AI Foundry.
-  author: aprilspeight
+  author: aprilgittens
   ms.author: apspeigh
   ms.date: 08/29/2024
   ms.service: artificial-intelligence
