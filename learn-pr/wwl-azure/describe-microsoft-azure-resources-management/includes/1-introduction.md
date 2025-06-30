@@ -3,9 +3,9 @@ To get the most out of this module, you should have a basic understanding of Azu
 
 ## Learning objectives
  By the end of this module, you will be able to:
-* Explore an Azure subscription
+* Explore an Azure subscription.
 * Manage virtual machines
 * Manage virtual networks
 * Manage storage
-* Use tags and resource locks
-* Use Copilot to help manage infrastructure
+* Use tags and resource locks.
+* Use Copilot to help manage infrastructure.

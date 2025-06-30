@@ -45,7 +45,7 @@ Changing a VM’s subnet is done at the **Network interface / IP configuration**
 
 On the **IP configurations** blade, changing the subnet is as simple as selecting a different subnet from the dropdown and **Apply** the updated settings. You can also add a load balancer from this screen, if one is already created.
 
-:::image type="content" source="../media/virtual-machine-networking-subnet.png" alt-text="Screenshot of the virtual machine network interface settings blade with the subnets expanded and highlighted for the IP settings. ":::
+:::image type="content" source="../media/virtual-machine-network-subnet.png" alt-text="Screenshot of the virtual machine network interface settings blade with the subnets expanded and highlighted for the IP settings. ":::
 
 > [!NOTE]
 >Changing networking settings, such as swapping subgroups, may require a restart of the virtual machine.
@@ -55,13 +55,13 @@ Recall that a load balancer helps distribute network traffic across multiple des
 
 From the **load balancing** sub under **Networking**, you can add a load balancer to help your virtual network perform more efficiently.
 
-:::image type="content" source="../media/virtual-machine-networking-load-balancer.png" alt-text="Screenshot of the virtual machine networking blade with the load balancing selected. ":::
+:::image type="content" source="../media/virtual-machine-network-load-balancer.png" alt-text="Screenshot of the virtual machine networking blade with the load balancing selected. ":::
 
 To add a load balancer:
-* Select **Add load balancing**
-* Choose between an existing load balancer or creating a new one
-* If creating a new one, select the type of load balancing
-* Configure the load balancer and create it.
+1. Select **Add load balancing**.
+2. Choose between an existing load balancer or creating a new one.
+3. If creating a new one, select the type of load balancing.
+4. Configure the load balancer and create it.
 
 :::image type="content" source="../media/create-load-balancer.png" alt-text="Screenshot of the virtual machine networking blade showing the create screen for creating a load balancer.":::
 
@@ -69,7 +69,7 @@ To add a load balancer:
 > Necessary settings for the load balancer are pulled from the virtual machine (such as resource group and network security group).
 
 ## Settings
-The settings area of the menu let’s you control things such as the disks associated with the virtual machine and resource locks, and you can view things like information on the operating system and configuration information.
+The settings areas of the menu let’s you control things such as the disks associated with the virtual machine and resource locks, and you can view things like information on the operating system and configuration information.
 
 ### Disks
 In the **disks** menu, you can view and swap the operating system or storage disks. For example, if you wanted to upgrade the machine to a newer version of the operating system, and you already had the image configured exactly how you want, you could simply **Swap OS disk** instead of creating a new VM or doing a complete reinstall on this VM.
@@ -78,7 +78,7 @@ Similarly, if you need to add more disk storage, you can **Create and attach a n
 
 :::image type="content" source="../media/virtual-machine-disks.png" alt-text="Screenshot of the virtual machine disks area, showing the Swap OS disk and Create and attach new disk options.":::
 
-You can also select either your OS disk or you storage disk to see more information about that disk.
+You can also select either your OS disk or your storage disk to see more information about that disk.
 
 > [!NOTE]
 > Swapping the OS disk requires a virtual machine restart. You can add a data disk without having to restart the virtual machine.
@@ -96,7 +96,7 @@ Recall that Azure enables both vertical (VM capability) and horizontal (number o
 ### Size
 The **Size** submenu provides vertical scaling capabilities. You can scale the VM up, increasing the computing power or memory, or down, decrease the computing power or memory, by selecting the **NEW** VM size and resizing the VM.
 
-:::image type="content" source="../media/virtual-machine-vertical-scaling.png" alt-text="Screenshot of the virtual machine Availability + scale menu with the Size submenu selected to vertically scale a VM.":::
+:::image type="content" source="../media/virtual-machine-vertical-scaling.png" alt-text="Screenshot of the virtual machine Availability + scale menu with the Size submenu selected to vertically scale a virtual machine.":::
 
 > [!NOTE]
 > Resizing a VM requires a machine restart if the machine is running. Additionally, it’s possible you’ll have more resizing options if you shut the machine down before attempting to change the VM size.

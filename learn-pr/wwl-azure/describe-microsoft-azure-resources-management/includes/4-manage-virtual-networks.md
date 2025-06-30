@@ -1,9 +1,9 @@
 Recall that Azure provides the ability to create and manage your own virtual networks (VNets) and subnets for the virtual networks.
 
-## Virtual Networks
+## Virtual networks
 In Azure, a VNet is the foundational building block for private networking. It enables Azure resources like virtual machines, app services, and databases to securely communicate with each other, the internet, and on-premises networks. 
 
-VNets can quickly be created and managed form the Virtual Network blade within Azure. You can create new virtual networks, manage and modify existing VNets, and configure additional settings and resources.
+VNets can quickly be created and managed to form the Virtual Network blade within Azure. You can create new virtual networks, manage and modify existing VNets, and configure additional settings and resources.
 
 :::image type="content" source="../media/virtual-network-blade.png" alt-text="Screenshot of the virtual network blade within Azure.":::
 
@@ -27,4 +27,4 @@ Common reasons to use multiple subnets include:
 
 :::image type="content" source="../media/virtual-network-overview.png" alt-text="Screenshot of the virtual network overview blade within Azure.":::
 
-Similarly, once a VNet is selected, managing most of the settings is straight forward. For example, you can quickly add additional subnets, or change the subnet configuration .
+Similarly, once a VNet is selected, managing most of the settings is straight forward. For example, you can quickly add additional subnets, or change the subnet configuration.

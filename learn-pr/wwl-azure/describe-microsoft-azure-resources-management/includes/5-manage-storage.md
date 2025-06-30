@@ -37,7 +37,7 @@ You can also configure operational settings such as snapshots and backups for yo
 The **Security + networking** area gives access to manage storage account networking, access keys, the shared access signatures, and encryption, among other things. The access keys menu item and the shared access signatures menu item are important areas to be familiar with to help ensure a more secure and robust storage account.
 
 ### Access keys
-Access keys provides an easy location too manage your storage account access keys. Two access keys are provided, giving you the opportunity to rotate keys on an alternating basis, ensuring one key is always consistent. You can also **show** the access key and the associated connection string.
+Access key provides an easy location to manage your storage account access keys. Two access keys are provided, giving you the opportunity to rotate keys on an alternating basis, ensuring one key is always consistent. You can also **show** the access key and the associated connection string.
 
 :::image type="content" source="../media/rotate-access-key.png" alt-text="Screenshot of the access keys page with rotate access key highlighted.":::
 

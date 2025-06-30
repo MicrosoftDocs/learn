@@ -3,7 +3,7 @@ uid: learn.wwl.describe-microsoft-azure-resources-management
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Describe Microsoft Azure resources management
+  title: Describe Microsoft Azure Resources Management
   description: "Perform basic resource management tasks for Azure resources, including compute, storage, and networking."
   ms.date: 06/30/2025
   author: wwlpublish
@@ -16,7 +16,7 @@ summary: This module introduces you to basic concepts around managing Microsoft 
 abstract: |
   By the end of this module, you will be able to:
 
-  -   Explore an Azure subscription
+  -   Explore an Azure subscription.
 
   -   Manage virtual machines
 
@@ -24,9 +24,9 @@ abstract: |
 
   -   Manage storage
 
-  -   Use tags and resource locks
+  -   Use tags and resource locks.
 
-  -   Use Copilot to help manage infrastructure
+  -   Use Copilot to help manage infrastructure.
 prerequisites: |
   -   Basic understanding of cloud computing.
 
@@ -47,7 +47,7 @@ subjects:
 - virtual-machine
 units:
 - learn.wwl.describe-microsoft-azure-resources-management.introduction
-- learn.wwl.describe-microsoft-azure-resources-management.explore-subscription
+- learn.wwl.describe-microsoft-azure-resources-management.explore-microsoft-azure-subscription
 - learn.wwl.describe-microsoft-azure-resources-management.manage-virtual-machines
 - learn.wwl.describe-microsoft-azure-resources-management.manage-virtual-networks
 - learn.wwl.describe-microsoft-azure-resources-management.manage-storage
