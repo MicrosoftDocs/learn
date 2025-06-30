@@ -168,6 +168,8 @@ When creating workflows in GitHub Actions, you can reference actions from variou
        uses: docker://<docker-image-name>:<tag>
    ```
 
+This is particularly useful for actions that require a custom runtime or dependencies not available in standard runners.
+
 2. **Any public repository**  
    Actions hosted in public repositories can be directly referenced in your workflows. These actions are accessible to anyone and can be used by specifying the repository name and version (Git ref, SHA, or tag) in the `uses` attribute. For example:
    ```yml
