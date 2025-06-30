@@ -2,10 +2,10 @@
 uid: learn.azure.deploy-resources-different-scopes
 metadata:
   moduleType: standard
-  title: Deploy resources to subscriptions, management groups, and tenants by using Bicep
+  title: Deploy Resources to Subscriptions, Management Groups, and Tenants by Using Bicep
   description: Learn how to deploy resources to subscription, management group, and tenant scopes within your Bicep code.
   manager: jasongroce
-  ms.date: 09/27/2024
+  ms.date: 06/30/2025
   author: mumlan
   ms.author: jgao
   ms.topic: module
@@ -60,4 +60,4 @@ units:
 - learn.azure.deploy-resources-different-scopes.summary
 badge:
   uid: learn.azure.deploy-resources-different-scopes.badge
-
+
