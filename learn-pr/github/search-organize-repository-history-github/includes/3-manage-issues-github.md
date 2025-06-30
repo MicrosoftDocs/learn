@@ -10,9 +10,9 @@ Creating a branch directly from an issue helps keep your work organized and conn
 
 1. Open the issue you'd like to work on.
 2. Click **"Create branch"** from the right sidebar (if available), or create a branch locally and push it.
-3. Give the branch a descriptive name (e.g., `fix/sidebar-bug`), and start your work.
+3. Give the branch a descriptive name (e.g., fix/sidebar-bug), ensure you switch to the branch, and begin your work.
 
-> **Tip**
+> [!TIP]
 > Linking a branch to an issue helps GitHub associate future pull requests with the issue.
 
 ### Assign issues to a team member
