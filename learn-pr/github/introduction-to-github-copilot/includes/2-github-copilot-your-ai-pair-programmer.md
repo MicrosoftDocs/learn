@@ -44,9 +44,9 @@ The GitHub Copilot Free tier includes 2000 code completions per month, 50 chat r
 
 **Key features:**
 
-* Code completions in supported editors
-* Limited monthly completions and chat requests
-* Access to advanced AI models
+- Code completions in supported editors
+- Limited monthly completions and chat requests
+- Access to advanced AI models
 
 ### GitHub Copilot Pro
 
@@ -54,11 +54,11 @@ GitHub Copilot Pro is designed for individual developers who want enhanced capab
 
 **Key features:**
 
-* Unlimited code completions and chat requests
-* Priority access to the latest AI models
-* Advanced code suggestions and explanations
-* Integration with supported IDEs (VS Code, Visual Studio, JetBrains, Neovim)
-* Automated test generation and code explanation features
+- Unlimited code completions and chat requests
+- Priority access to the latest AI models
+- Advanced code suggestions and explanations
+- Integration with supported IDEs (VS Code, Visual Studio, JetBrains, Neovim)
+- Automated test generation and code explanation features
 
 ### **GitHub Copilot Pro+**
 
@@ -66,9 +66,9 @@ GitHub Copilot Pro is designed for individual developers who want enhanced capab
 
 **Key features:**
 
-* All Pro features
-* Additional premium request capacity
-* Priority infrastructure access
+- All Pro features
+- Additional premium request capacity
+- Priority infrastructure access
 
 ### GitHub Copilot Business
 
