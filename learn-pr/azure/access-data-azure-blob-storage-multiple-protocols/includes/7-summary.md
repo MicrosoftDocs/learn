@@ -10,6 +10,6 @@ For more information, refer to the following articles:
 - [Introduction to Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction)
 - [Network File System (NFS) 3.0 protocol support in Azure Blob Storage](/azure/storage/blobs/network-file-system-protocol-support)
 - [SSH File Transfer Protocol (SFTP) support for Azure Blob Storage](/azure/storage/blobs/secure-file-transfer-protocol-support)
-- [Connect to Azure Blob Storage by using the SSH File Transfer Protocol (SFTP)](/azure/storage/blobs/secure-file-transfer-protocol-support-how-to)
-- [Known issues with SSH File Transfer Protocol (SFTP) support for Azure Blob Storage](/azure/storage/blobs/secure-file-transfer-protocol-known-issues)
+- [Enable or disable SSH File Transfer Protocol (SFTP) support in Azure Blob Storage](/azure/storage/blobs/secure-file-transfer-protocol-support-how-to)
+- [Limitations and known issues with SSH File Transfer Protocol (SFTP) support for Azure Blob Storage](/azure/storage/blobs/secure-file-transfer-protocol-known-issues)
 - [Using the HDFS CLI with Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-use-hdfs-data-lake-storage)

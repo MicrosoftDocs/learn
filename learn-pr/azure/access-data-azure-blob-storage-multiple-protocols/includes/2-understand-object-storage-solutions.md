@@ -6,15 +6,15 @@ Azure Blob Storage is a service that stores unstructured data in the cloud as bl
 
 Common Blob Storage uses include:
 
-- Providing images or documents directly to a browser
+- Providing images or documents directly to a browser.
 
-- Storing files for distributed access
+- Storing files for distributed access.
 
-- Streaming video and audio
+- Streaming video and audio.
 
-- Storing data for backup and restore, disaster recovery, and archiving
+- Storing data for backup and restore, disaster recovery, and archiving.
 
-- Storing data for analysis by an on-premises or Azure-hosted service
+- Storing data for analysis by an on-premises or Azure-hosted service.
 
 ### Understand hierarchical namespace support in Azure Blob Storage
 
@@ -40,7 +40,7 @@ Data Lake Storage Gen2 allows you to treat the data as if it's stored in an HDFS
 
 ### Security
 
-Data Lake Storage Gen2 supports following authorization mechanisms:
+Data Lake Storage Gen2 supports the following authorization mechanisms:
 
 - Access control lists (ACLs), similar to Portable Operating System Interface for UNIX (POSIX) permissions
 

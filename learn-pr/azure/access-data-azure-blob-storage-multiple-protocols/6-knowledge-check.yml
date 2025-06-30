@@ -39,10 +39,10 @@ quiz:
     choices:
     - content: "SAS"
       isCorrect: false
-      explanation: "Incorrect. Blob Storage doesn’t support SAS authentication."
+      explanation: "Incorrect. Blob Storage doesn't support SAS authentication."
     - content: "Microsoft Entra authentication"
       isCorrect: false
-      explanation: "Incorrect. Blob Storage doesn’t support Microsoft Entra authentication."
+      explanation: "Incorrect. Blob Storage doesn't support Microsoft Entra authentication."
     - content: "Local users with either password or SSH key pairs "
       isCorrect: true
       explanation: "Correct. To grant access to a connecting client, the storage account must have an identity associated with that credential. That identity is called a local user."
