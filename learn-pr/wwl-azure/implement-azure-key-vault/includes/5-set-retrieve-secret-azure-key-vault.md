@@ -1,76 +1,31 @@
-In this exercise you learn how to perform the following actions by using the Azure CLI:
+In this exercise, you create an Azure Key Vault, store secrets using the Azure CLI, and build a .NET console application that can create and retrieve secrets from the key vault. You learn how to configure authentication, manage secrets programmatically, and clean up resources when finished.  
 
-* Create a Key Vault
-* Add and retrieve a secret
+Tasks performed in this exercise:
 
-## Prerequisites
+* Create Azure Key Vault resources
+* Store a secret in a key vault using Azure CLI
+* Create a .NET console app to create and retrieve secrets
+* Clean up resources
 
-* * An **Azure account** with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free)
+This exercise takes approximately **30** minutes to complete.
 
+## Before you start
 
-## Sign in to Azure and start the Cloud Shell
+To complete the exercise, you need:
 
-1. Sign in to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
+* An Azure subscription. If you don't already have one, you can sign up for one [https://azure.microsoft.com/](https://azure.microsoft.com/).
 
-    :::image type="content" source="../media/cloud-shell-menu.png" alt-text="The location of Cloud Shell launch button.":::
+## Get started
 
-1. When the shell opens be sure to select the **Bash** environment.
+Select the **Launch Exercise** button to open the exercise instructions in a new browser window. When you're finished with the exercise, return here to:
 
-    :::image type="content" source="../media/shell-bash-selection.png" alt-text="Selecting the Bash environment.":::
+> [!div class="checklist"]
+> * Complete the module
+> * Earn a badge for completing this module
 
+<br/>
 
-## Create a Key Vault
-
-1. Let's set some variables for the CLI commands to use to reduce the amount of retyping. Replace the `<myLocation>` variable string with a region that makes sense for you. The Key Vault name needs to be a globally unique name, and the following script generates a random string.
-
-    ```bash
-    myKeyVault=az204vault-$RANDOM
-    myLocation=<myLocation>
-    ```
-1. Create a resource group. 
-
-    ```azurecli
-    az group create --name az204-vault-rg --location $myLocation
-    ```
-
-1. Create a Key Vault by using the `az keyvault create` command. 
-
-    ```azurecli
-    az keyvault create --name $myKeyVault --resource-group az204-vault-rg --location $myLocation
-    ```
-
-    > [!NOTE]
-    > This can take a few minutes to run.
-
-## Add and retrieve a secret
-
-To add a secret to the vault, you just need to take a couple of extra steps. 
-
-1. Create a secret. Let's add a password that could be used by an app. The password is called **ExamplePassword** and will store the value of **hVFkk965BuUv** in it.
-
-    ```azurecli
-    az keyvault secret set --vault-name $myKeyVault --name "ExamplePassword" --value "hVFkk965BuUv"
-    ```
-
-1. Use the `az keyvault secret show` command to retrieve the secret.
-
-    ```azurecli
-    az keyvault secret show --name "ExamplePassword" --vault-name $myKeyVault
-    ```
-
-    This command returns some JSON. The last line contains the password in plain text. 
-
-    ```json
-    "value": "hVFkk965BuUv"
-    ```
-
-You've created a Key Vault, stored a secret, and retrieved it.
-
-## Clean up resources
-
-If you no longer need the resources in this exercise use the following command to delete the resource group and associated Key Vault.
-
-```azurecli
-az group delete --name az204-vault-rg --no-wait 
-```
+<a href="https://go.microsoft.com/fwlink/?linkid=2326011" target="_blank">
+    <img src="../media/launch-exercise.png" alt="Button to launch exercise.">
+</a>
 

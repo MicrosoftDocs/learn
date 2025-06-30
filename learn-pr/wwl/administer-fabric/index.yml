@@ -20,7 +20,7 @@ abstract: |
   -   Manage user access
   -   Govern data in Fabric
 prerequisites: An understanding of the Microsoft Fabric platform and its capabilities and administrative tasks.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/administer-microsoft-fabric.svg
 levels:
 - intermediate
 roles:

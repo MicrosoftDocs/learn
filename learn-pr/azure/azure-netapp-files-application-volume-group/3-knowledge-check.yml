@@ -9,6 +9,7 @@ metadata:
   author: b-ahibbard
   ms.author: anfdocs
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.govern-ai-services-azure-policy.assess-ai-workload-compliance-with-azure-policy
+title: Assess AI workload compliance with Azure Policy
+metadata:
+  title: Assess AI workload compliance with Azure Policy
+  description: Learn how to use Azure Policy to assess AI workload compliance.
+  ms.date: 06/26/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-assess-ai-workload-compliance-with-azure-policy.md)]

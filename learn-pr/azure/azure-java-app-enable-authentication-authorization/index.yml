@@ -6,9 +6,8 @@ metadata:
   description: Learn how to authenticate users with Microsoft Entra ID and get authorized access to data in a Java web app using Microsoft Authentication Library.
   manager: mkluck
   ms.date: 11/21/2023
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: yoterada
+  author: yoshioterada
+  ms.author: yoterada
   ms.topic: module-standard-task-based
   ms.service: azure-active-directory
 title: Sign in users with Microsoft Entra ID in a Java web app
@@ -50,4 +49,3 @@ units:
 - learn.azure.azure-java-app-enable-authentication-authorization.summary
 badge:
   uid: learn.azure.azure-java-app-enable-authentication-authorization.badge
-

@@ -6,13 +6,13 @@ metadata:
   title: Module assessment
   description: Knowledge check.
   ms.date: 02/12/2025
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: yoterada
+  author: yoshioterada
+  ms.author: yoterada
   ms.topic: unit
   ms.custom:
     - devx-track-java
     - devx-track-extended-java
+  module_assessment: true
 durationInMinutes: 2
 quiz:
   questions:
@@ -59,4 +59,4 @@ quiz:
       explanation: "A feature that enables you to create smaller container images with better caching and a smaller security footprint. This feature enables increased optimization and maintenance of the Dockerfile over time."
     - content: "A feature that enables you to create larger container images that use less caching."
       isCorrect: false
-      explanation: ""
+      explanation: ""

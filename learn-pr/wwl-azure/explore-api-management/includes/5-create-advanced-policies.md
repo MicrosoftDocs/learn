@@ -3,7 +3,7 @@ This unit provides a reference for the following API Management policies:
 * Control flow - Conditionally applies policy statements based on the results of the evaluation of Boolean expressions.
 * Forward request - Forwards the request to the backend service.
 * Limit concurrency - Prevents enclosed policies from executing by more than the specified number of requests at a time.
-* Log to Event Hub - Sends messages in the specified format to an Event Hub defined by a Logger entity.
+* Log to Event Hubs - Sends messages in the specified format to an event hub defined by a Logger entity.
 * Mock response - Aborts pipeline execution and returns a mocked response directly to the caller.
 * Retry - Retries execution of the enclosed policy statements, if and until the condition is met. Execution repeats at the specified time intervals and up to the specified retry count.
 
@@ -48,9 +48,9 @@ The `limit-concurrency` policy prevents enclosed policies from executing by more
 </limit-concurrency>
 ```
 
-##  Log to Event Hub
+##  Log to Event Hubs
 
-The `log-to-eventhub` policy sends messages in the specified format to an Event Hub defined by a Logger entity. As its name implies, the policy is used for saving selected request or response context information for online or offline analysis.
+The `log-to-eventhub` policy sends messages in the specified format to an event hub defined by a Logger entity. As its name implies, the policy is used for saving selected request or response context information for online or offline analysis.
 
 ```xml
 <log-to-eventhub logger-id="id of the logger entity" partition-id="index of the partition where messages are sent" partition-key="value used for partition assignment">

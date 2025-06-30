@@ -9,6 +9,7 @@ metadata:
   ms.author: tonyj
   ms.topic: unit
   ms.contributors: orthomas
+  module_assessment: true
 azureSandbox: false
 durationInMinutes: 3
 quiz:
