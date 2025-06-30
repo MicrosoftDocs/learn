@@ -65,7 +65,7 @@ If you put your README file in your repository's root directory, or in the hid
 2. The repository's root directory  
 3. The `docs` directory  
 
-Check out some [Awesome README examples](https://github.com/matiassingers/awesome-readme?azure-portal=true).
+Check out some [Awesome README examples](https://github.com/matiassingers/awesome-readme).
 
 Once the project launches, use email and other networking channels to promote it. Reaching an appropriate audience could produce a significant boost in project participation.
 
