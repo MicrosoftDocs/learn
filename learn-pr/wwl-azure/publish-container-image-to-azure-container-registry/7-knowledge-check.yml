@@ -2,14 +2,17 @@
 uid: learn.wwl.publish-container-image-to-azure-container-registry.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 07/15/2024
+  ms.date: 06/17/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
   ms.custom:
   - N/A
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -35,4 +38,4 @@ quiz:
       explanation: "Incorrect. Encryption-at-rest is supported in all three tiers."
     - content: "Premium only"
       isCorrect: false
-      explanation: "Incorrect. Encryption-at-rest is supported in all three tiers."
+      explanation: "Incorrect. Encryption-at-rest is supported in all three tiers."

@@ -6,9 +6,10 @@ metadata:
   title: Module assessment
   description: "Check your knowledge of Azure Monitor." # user input: a description for site search and SEO.
   ms.date: 11/13/2024
-  author: guywi-ms
-  ms.author: guywild
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 10
 ###########################################################################
 ###
@@ -70,4 +71,4 @@ quiz:
       isCorrect: true
       explanation: "Correct. Dashboards can combine different kinds of data into a single pane in the Azure portal."
   
-
+

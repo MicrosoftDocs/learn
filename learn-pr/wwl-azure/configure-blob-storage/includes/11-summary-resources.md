@@ -25,8 +25,3 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 - [Azure Blob Storage Performance and Scalability](/azure/storage/blobs/scalability-targets) - This article delves into performance considerations when configuring blob storage. The module covers the storage account type, and optimizing data transfer.
 
 - [Azure Blob Storage Lifecycle Management](/azure/storage/blobs/storage-lifecycle-management-concepts) - Blob storage lifecycle management allows you to automate the movement and deletion of data based on predefined rules. This article explains how to configure and manage lifecycle policies to optimize storage costs and improve data management. 
-
-## Learn more with optional hands-on exercises
-
-- [Optimize performance and costs by using Blob Storage tiers](/training/modules/optimize-archive-costs-blob-storage/).
-

@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check.
-  ms.date: 02/24/2024
+  ms.date: 05/14/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom:
@@ -12,6 +12,7 @@ metadata:
   ms.topic: unit
   ms.contributors:
   - orthomas-01072022
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -54,4 +55,4 @@ quiz:
 
 
         
-
+

@@ -4,15 +4,15 @@ metadata:
   title: Module assessment
   description: Knowledge check
   ms.date: 11/22/2024
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: hangwan
+  author: hangwan97
+  ms.author: hangwan
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
     - devx-track-extended-java
   ms.contributors:
   - sakriema-12042020
+  module_assessment: true
 title: Module assessment
 durationInMinutes: 4
 quiz:
@@ -53,4 +53,4 @@ quiz:
     - content: "All the above"
       isCorrect: true
       explanation: "Even though it always depends on the specific application, Azure offers services for all of these application types."
-
+

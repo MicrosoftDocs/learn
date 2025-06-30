@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.ha-application-storage-with-grs.4-design-applications-ha-dr
 metadata:
-  title: Design HA applications to handle disaster recovery
+  title: Design HA Applications to Handle Disaster Recovery
   description: In this unit, you learn how to design HA applications to handle disaster recovery.
-  ms.date: 05/17/2023
+  ms.date: 06/02/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
@@ -11,4 +11,4 @@ title: Design HA applications to handle disaster recovery
 durationInMinutes: 8
 content: |
   [!include[](includes/4-design-applications-ha-dr.md)]
-
+

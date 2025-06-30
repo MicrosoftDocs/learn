@@ -8,7 +8,10 @@ metadata:
   author: ju-shim
   ms.author: jushiman
   ms.topic: unit
-  ms.custom: devx-track-azurecli, linux-related-content
+  ms.custom:
+    - sfi-ropc-nochange
+    - linux-related-content
+    - devx-track-azurecli
   zone_pivot_groups: platform-cloud
 durationInMinutes: 10
 content: |

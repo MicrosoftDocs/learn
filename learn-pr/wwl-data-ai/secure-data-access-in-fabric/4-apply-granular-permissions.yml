@@ -4,10 +4,10 @@ title: Apply granular permissions
 metadata:
   title: Apply granular permissions
   description: "Learn how to configure granular permissions for SQL analytics endpoint, OneLake data access roles (preview), the warehouse, and the semantic model in Microsoft Fabric."
-  ms.date: 10/18/2024
+  ms.date: 05/06/2025
   author: wwlpublish
   ms.author: theresai
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-apply-granular-permissions.md)]
+  [!include[](includes/4-apply-granular-permissions.md)]

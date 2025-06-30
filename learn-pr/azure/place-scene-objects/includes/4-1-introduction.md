@@ -2,15 +2,15 @@ In the Mixed Reality Toolkit (MRTK), placement tools let you dynamically place h
 
 This module helps you to understand how to use MRTK features to organize objects in the scene and use a feature called *solvers* to intelligently track objects.
 
-A completed example of this tutorial can be found [here](https://github.com/microsoft/MixedRealityLearning/tree/development/MRTK3%20Tutorials).
+You can find a completed example of this tutorial [here](https://github.com/microsoft/MixedRealityLearning/tree/development/MRTK3%20Tutorials).
 
 ## Learning objectives
 
 By the end of this module, you'll be able to:
 
-* Position objects in the scene
-* Reposition objects by using solvers
-* Direct the user to objects by using solvers
+* Position objects in the scene.
+* Reposition objects by using solvers.
+* Direct the user to objects by using solvers.
 
 ## Prerequisites
 

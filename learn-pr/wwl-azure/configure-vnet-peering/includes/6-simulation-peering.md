@@ -1,33 +1,25 @@
 ## Lab scenario
 
-Your organization has three datacenters connected with a mesh wide-area network. As the Azure Administrator, you need to implement the on-premises infrastructure in Azure. 
-
-+ There are two offices, New York and Boston, in one region.
-+ There's one office, Seattle, in another region.
-+ All the offices need to be networked together so they can share information. 
-+ This simulation focuses on the connectivity of the offices, and not creating the individual Azure resources. 
+Your organization segments core IT apps and services (such as DNS and security services) from other parts of the business, including your manufacturing department. However, in some scenarios, apps and services in the core area need to communicate with apps and services in the manufacturing area. In this lab, you configure connectivity between the segmented areas. Separating production from development or separating one subsidiary from another is a common networking scenario. 
 
 ## Architecture diagram
 
 :::image type="content" source="../media/lab-05.png" alt-text="Architecture diagram as explained in the tasks." border="false":::
 
-## Objectives
+## Job skills
 
-> [!NOTE]
-> You may find slight differences between the interactive simulation and the Azure environment, but the core concepts and ideas being demonstrated are the same.
+- Create a virtual machine in a virtual network.
+- Create a virtual machine in a different virtual network.
+- Use Network Watcher to test the connection between virtual machines.
+- Configure virtual network peerings between different virtual networks.
+- Use Azure PowerShell to test the connection between virtual machines.
+- Create a custom route. (optional)
 
-+ **Task 1**: Create the infrastructure environment. In this task, you deploy three virtual machines. Virtual machines are deployed in different regions and virtual networks. 
-    + Use a template to create the virtual networks and virtual machines in the different regions. You can review the [lab templates](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/tree/master/Allfiles/Interactive%20Lab%20Simulation%20Files/05).
-    + Use Azure PowerShell to deploy the template. 
-+ **Task 2**: Configure local and global virtual network peering. 
-    + Create a local virtual network peering between the two virtual networks in the same region.
-    + Create a global virtual network peering between virtual networks in different regions. 
-+ **Task 3**: Test intersite connectivity between virtual machines on the three virtual networks.
-    + Test the virtual machine connections in the same region.
-    + Test the virtual machine connections in different regions. 
+> [!IMPORTANT]
+> Estimated time: 30 minutes. 
+> To complete the exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
-> [!NOTE]
-> select the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
+Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 
-[![Screenshot of the simulation page.](../media/simulation-intersite-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator%20Exercise%209?azure-portal=true)
 
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_05-Implement_Intersite_Connectivity.html)

@@ -2,17 +2,19 @@
 uid: learn.wwl.azure-event-grid.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 07/17/2024
+  ms.date: 06/16/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
   ms.custom:
   - N/A
+  module_assessment: true
 durationInMinutes: 3
 quiz:
-  title: "Check your knowledge"
   questions:
   - content: "Which of the following event schema properties requires a value?"
     choices:
@@ -35,4 +37,37 @@ quiz:
       explanation: "Incorrect. The Event Grid Subscription Contributor role has permissions to manage subscription operations."
     - content: "Event Grid Data Sender"
       isCorrect: false
-      explanation: "Incorrect. The Event Grid Data Sender role has permissions to send events to topics."
+      explanation: "Incorrect. The Event Grid Data Sender role has permissions to send events to topics."
+  - content: "What is the purpose of the CloudEvents schema in Azure Event Grid?"
+    choices:
+    - content: "To provide a proprietary event schema specific to Azure services."
+      isCorrect: false
+      explanation: "Incorrect. The CloudEvents schema is an open specification, not proprietary to Azure."
+    - content: "To simplify interoperability by providing a common event schema for publishing and consuming cloud-based events."
+      isCorrect: true
+      explanation: "Correct. The CloudEvents schema enables uniform tooling and easier integration across platforms."
+    - content: "To replace the Event Grid event schema entirely for all event types."
+      isCorrect: false
+      explanation: "Incorrect. The CloudEvents schema complements the Event Grid schema but does not replace it."
+  - content: "What happens when Event Grid receives a 400 (Bad Request) or 413 (Request Entity Too Large) response code during event delivery?"
+    choices:
+    - content: "Event Grid retries the delivery indefinitely until the endpoint responds."
+      isCorrect: false
+      explanation: "Incorrect. Event Grid does not retry indefinitely for these error codes."
+    - content: "Event Grid schedules the event for dead-lettering if a dead-letter location is configured."
+      isCorrect: true
+      explanation: "Correct. These error codes indicate delivery failure, prompting dead-lettering if configured."
+    - content: "Event Grid immediately drops the event without further action."
+      isCorrect: false
+      explanation: "Incorrect. Event Grid does not drop the event immediately; it schedules it for dead-lettering if configured."
+  - content: "What is the purpose of the validation handshake in Azure Event Grid when using a custom webhook endpoint?"
+    choices:
+    - content: "To prove ownership of the webhook endpoint before delivering events"
+      isCorrect: true
+      explanation: "Correct. The validation handshake ensures that only the rightful owner receives events."
+    - content: "To ensure the webhook endpoint is hosted on Azure infrastructure"
+      isCorrect: false
+      explanation: "Incorrect. The validation handshake does not verify the hosting location of the endpoint."
+    - content: "To encrypt the event data being sent to the webhook endpoint"
+      isCorrect: false
+      explanation: "Incorrect. The validation handshake is not related to encryption of event data."

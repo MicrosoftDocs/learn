@@ -8,6 +8,7 @@ metadata:
   author: v-downesmary
   ms.author: anruss
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 7
 quiz:
   title: Knowledge check

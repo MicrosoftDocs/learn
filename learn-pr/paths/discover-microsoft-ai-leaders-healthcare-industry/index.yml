@@ -1,18 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.discover-microsoft-ai-leaders-healthcare-industry
 metadata:
-  title: Discover Microsoft AI for leaders in healthcare
+  title: Discover Microsoft AI for Leaders in Healthcare
   description: In this learning path, healthcare business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and finance use cases.
-  ms.date: 10/27/2023
+  ms.date: 05/05/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: learning-path
 title: Discover Microsoft AI for leaders in healthcare
 prerequisites: |
-  * Basic understanding of healthcare concepts.
+  -   Basic understanding of AI concepts.
+  -   Basic understanding of healthcare concepts.
 summary: |
-  In this learning path, healthcare business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and finance use cases.
-iconUrl: /training/achievements/generic-trophy.svg
+  In this learning path, healthcare business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and healthcare use cases.
+iconUrl: /training/achievements/discover-microsoft-ai-leaders-healthcare-industry.svg
 levels:
 - beginner
 roles:
@@ -23,7 +24,6 @@ products:
 - azure-openai
 subjects:
 - artificial-intelligence
-- data-management
 modules:
 - learn.wwl.leverage-ai-tools
 - learn.wwl.create-business-value

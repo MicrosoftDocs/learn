@@ -62,4 +62,4 @@ The *softmax* function is used within the attention function, over the scaled do
 
 The Transformer architecture uses multi-head attention, which means tokens are processed by the attention function several times in parallel. By doing so, a word or sentence can be processed multiple times, in various ways, to extract different kinds of information from the sentence.
 
-The Transformer architecture has allowed us to train models in a more efficient way. Instead of processing each token in a sentence or sequence, attention allows a model to process tokens in parallel in various ways. Next, learn how different types of language models are available for building applications.
+The Transformer architecture has allowed us to train models in a more efficient way. Instead of processing each token in a sentence or sequence, attention allows a model to process tokens in parallel in various ways. Next, learn how different types of language models are available for generative AI.

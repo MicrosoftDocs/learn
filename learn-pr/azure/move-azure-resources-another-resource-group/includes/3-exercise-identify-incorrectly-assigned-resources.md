@@ -46,7 +46,7 @@ Create a storage account resource for production.
 
 1. Accept the remaining default values.
 
-1. Select **Review**. After validation passes, select **Create**. Wait for deployment to complete.
+1. Select **Review + create**. After validation passes, select **Create**. Wait for deployment to complete.
 
 You now have a production resource group with a production storage account resource.
 
@@ -70,7 +70,7 @@ Now, create some more resources that you can eventually move to a development re
 
 1. Accept the remaining default values.
 
-1. Select **Review**. After validation passes, select **Create**. Wait for deployment to complete.
+1. Select **Review + create**. After validation passes, select **Create**. Wait for deployment to complete.
 
 1. Create another storage account with a unique name by repeating the storage account creation steps again. Wait for deployment to complete.
 

@@ -1,4 +1,4 @@
-Azure AI Agent Service offers a powerful platform for integrating custom tools to enhance productivity and provide tailored solutions for specific business needs. By using these custom tools, businesses can achieve greater efficiency and effectiveness in their operations.
+Azure AI Foundry Agent Service offers a powerful platform for integrating custom tools to enhance productivity and provide tailored solutions for specific business needs. By using these custom tools, businesses can achieve greater efficiency and effectiveness in their operations.
 
 ## Why use custom tools?
 
@@ -20,7 +20,7 @@ The diagram shows the process of an agent choosing to use the custom tool:
 
 ## Common scenarios for custom tools in agents
 
-Custom tools within the Azure AI Agent Service enable users to extend the capabilities of AI agents, tailoring them to meet specific business needs. Some example use cases that illustrate the versatility and impact of custom tools include:
+Custom tools within the Foundry Agent Service enable users to extend the capabilities of AI agents, tailoring them to meet specific business needs. Some example use cases that illustrate the versatility and impact of custom tools include:
 
 ### Customer support automation
 
@@ -52,4 +52,4 @@ Custom tools within the Azure AI Agent Service enable users to extend the capabi
 - **Functionality**: The AI agent can recommend courses, track student progress, and answer questions about course content.
 - **Outcome**: Enhanced learning experiences, increased student engagement, and streamlined administrative tasks.
 
-These examples demonstrate how custom tools within the Azure AI Agent Service can be used across industries to address unique challenges, drive efficiency, and deliver value.
+These examples demonstrate how custom tools within the Foundry Agent Service can be used across industries to address unique challenges, drive efficiency, and deliver value.

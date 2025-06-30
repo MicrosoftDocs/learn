@@ -1,7 +1,5 @@
 
 
-## Choose between ExpressRoute Direct and Service Provider
-
 Choosing between ExpressRoute Direct and the Service Provider model depends on the requirements of the organization. These requirements include performance requirements, budget constraints, and desired level of control over the network infrastructure. Large enterprises with high data transfer needs might opt for ExpressRoute Direct. Smaller businesses or those seeking managed services might prefer the Service Provider model.
 
 In this video, we discuss provisioning a ExpressRoute Direct circuit. An ExpressRoute circuit is a dedicated, private connection that allows you to extend your on-premises networks into the Microsoft cloud.

@@ -6,7 +6,7 @@ metadata:
   description: Introduction to Azure Bot Service and Bot Framework Composer
   manager: mkluck
   ms.collection: TBD
-  ms.date: 04/24/2024
+  ms.date: 04/15/2025
   author: jasonkellingtonwaypoint
   ms.author: robmcm
   ms.topic: module
@@ -48,4 +48,4 @@ units:
 - learn.azure.intro-to-bot-service-bot-framework-composer.6-summary
 badge:
   uid: learn.intro-to-bot-service-bot-framework-composer.badge
-
+

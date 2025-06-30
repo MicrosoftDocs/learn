@@ -4,37 +4,37 @@ title:  What are the core management and governance capabilities of Azure Arc-en
 metadata:
   title: What are the core management and governance capabilities of Azure Arc-enabled servers?
   description: What are the core management and governance capabilities of Azure Arc-enabled servers?
-  ms.date: 08/01/2024
-  author: johnmarco
-  ms.author: johnmarc
+  ms.date: 05/29/2025
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: unit
   ms.custom: e2e-hybrid
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/3-capabilities-azure-arc-enabled-servers.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which VM extension can the administrator add to Azure Arc-enabled servers to start monitoring it with Azure services?"
+  - content: "Which VM extension can the administrator add to Azure Arc-enabled servers to log activity?"
     choices:
-    - content: "Qualys extension. This VM extension implements integration with Azure Defender for servers vulnerability assessment scanning."
+    - content: "Azure Automation Hybrid Runbook Worker extension"
       isCorrect: false
-      explanation: "That's incorrect. This VM extension allows the administrator to reset local Administrator's credentials on a Windows Server running in an Azure VM, but it is not supported on Azure Arc-enabled servers."
+      explanation: "Incorrect. This VM extension lets a server run Azure Automation runbooks."
     - content: "Azure Key Vault extension."
       isCorrect: false
-      explanation: "That's incorrect. This VM extension provides integration with Azure Key Vault."
-    - content: "Log Analytics agent."
+      explanation: "Incorrect. This VM extension provides integration with Azure Key Vault."
+    - content: "Azure Monitor Agent."
       isCorrect: true
-      explanation: "That's correct. This VM extension implements integration with Azure Monitor."
-  - content: "What can the administrator do in order to audit changes the state of operating system of Azure Arc-enabled servers?"
+      explanation: "Correct. This VM extension implements integration with Azure Monitor, so that activity can be tracked in a Log Analytics workspace."
+  - content: "How can the administrator ensure that all Arc-enabled servers receive a specific Azure tag?"
     choices:
-    - content: "Review Azure Advisor."
+    - content: "Deploy the Custom Script Extension."
       isCorrect: false
-      explanation: "That's incorrect. Azure Advisor is limited to cloud resources only."
-    - content: "Search through the activity logs in the Azure portal."
+      explanation: "Incorrect. This VM extension is used to download and run scripts on a server."
+    - content: "Use Azure Update Manager."
       isCorrect: false
-      explanation: "That's incorrect. The activity log records events affecting the Azure resources only."
-    - content: "Apply Azure Guest Configuration-based policy."
+      explanation: "Incorrect.  Azure Update Manager manages and governs software updates for hybrid machines."
+    - content: "Assign a policy that adds the tag when the servers are onboarded to Azure Arc."
       isCorrect: true
-      explanation: "That's correct. Guest Configuration policies allow the administrator to audit settings within the target operating system and evaluate their compliance."
-
+      explanation: "Correct. An Azure Policy definition can be created and assigned to the subscription where the servers will be onboarded."
+

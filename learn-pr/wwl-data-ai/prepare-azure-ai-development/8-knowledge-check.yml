@@ -6,10 +6,11 @@ metadata:
   description: Test your knowledge.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 04/17/2025
+  ms.date: 05/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:
@@ -25,18 +26,18 @@ quiz:
     - content: "Azure AI Services"
       isCorrect: true
       explanation: "Correct. Azure AI Services provides multiple services from a single endpoint."
-  - content: "How should you provide access to resources for developers who will work on multiple AI projects?"
+  - content: "You plan to create a simple chat app that uses a generative AI model. What kind of project should you create?"
     choices:
-    - content: "Create resource connections in an Azure AI Foundry hub."
+    - content: "Azure AI Foundry project."
       isCorrect: true
-      explanation: "Correct. Creating resource connections in a hub means they can be used from all projects created in that hub."
-    - content: "Create resource connections in each Azure AI Foundry project."
+      explanation: "Correct. An Azure AI Foundry project is the best choice for a simple generative AI app."
+    - content: "Azure AI hub based project."
       isCorrect: false
-      explanation: "Incorrect. Creating project-level connections isn't the most efficient way to manage resource access across projects."
-    - content: "Assign each developer direct access to all of the resources."
+      explanation: "Incorrect. An Azure AI hub-based project includes unnecessary services for this scenario."
+    - content: "Azure AI Custom Vision project."
       isCorrect: false
-      explanation: "Incorrect. Giving each developer direct access makes it difficult to manage ongoing access permissions."
-  - content: "Which SDK enables you to connect to shared resources in a hub?"
+      explanation: "Incorrect. An Azure AI Custom Vision project would not help in this scenario."
+  - content: "Which SDK enables you to connect to resources in a project?"
     choices:
     - content: "Azure AI Services SDK"
       isCorrect: false

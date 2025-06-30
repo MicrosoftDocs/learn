@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure Azure Application Gateway
   description: "Configure Azure Application Gateway"
-  ms.date: 04/14/2025
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -20,12 +20,12 @@ quiz:
   questions:
   - content: "Which criteria does Application Gateway use to route requests to a web server?"
     choices:
-    - content: "The IP address of the web server that is the target of the request"
+    - content: "The IP address of the web server that is the target of the request."
       isCorrect: false
       explanation: "Incorrect. The listener routes requests based on the hostname, port, and path in the URL of the request."
-    - content: "The region in which the servers hosting the web application are located"
+    - content: "The region where the web servers are located."
       isCorrect: false
       explanation: "Incorrect. The listener routes requests based on the hostname, port, and path in the URL of the request."
-    - content: "The hostname, port, and path in the URL of the request"
+    - content: "The hostname, port, and path in the URL of the request."
       isCorrect: true
       explanation: "Correct. The listener routes requests based on the hostname, port, and path in the URL of the request."

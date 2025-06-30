@@ -4,10 +4,11 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 10/1/2024
+  ms.date: 5/15/2025
   author: jupadrao
   ms.author: jupadrao
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 6
 quiz:
   questions:
@@ -44,4 +45,4 @@ quiz:
     - content: It enables the function to run without any dependencies
       isCorrect: false
       explanation: Incorrect. The isolated worker model doesn't eliminate dependencies. It allows a compiled function to run in a process isolated from the runtime.
-
+

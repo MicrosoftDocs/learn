@@ -4,10 +4,10 @@ title: Explore model development
 metadata:
   title: Explore model development
   description: "Explore model development"
-  ms.date: 07/17/2024
-  author: wwlpublish
-  ms.author: madiepev
+  ms.date: 4/24/2025
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-model-development-training.md)]
+  [!include[](includes/3-model-development-training.md)]

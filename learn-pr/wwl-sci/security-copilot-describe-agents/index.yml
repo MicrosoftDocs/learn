@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.security-copilot-describe-agents
+metadata:
+  title: Describe Microsoft Security Copilot agents
+  description: Describe Microsoft Security Copilot agents.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 05/08/2025
+  ms.service: security-copilot
+  ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+hidden: false
+title: Describe Microsoft Security Copilot agents
+summary: |
+  Automate threat detection and response with Microsoft Security Copilot agents—AI-powered tools that streamline cybersecurity operations, reduce manual workloads, and scale protection across your digital environment.
+abstract: |
+  By the end of this module, you're able to:
+  - Describe the role and functionality of Microsoft Security Copilot agents in automating security workflows.
+  - Describe the Threat Intelligence Briefing Agent.
+  - Describe the Conditional Access Optimization Agent.
+  - Describe the Phishing Triage agent.
+prerequisites: |
+  - Working knowledge of security operations and incident response
+  - Working knowledge of Microsoft security products and services
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+  - beginner
+roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - security-operations-analyst
+  - security-engineer
+  - business-owner
+products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - defender-for-threat-intelligence
+  - entra
+  - microsoft-defender
+  - ms-copilot
+subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - security
+units:
+- learn.security-copilot-describe-agents.introduction
+- learn.security-copilot-describe-agents.describe-agents
+- learn.security-copilot-describe-agents.describe-threat-intelligence-briefing-agent
+- learn.security-copilot-describe-agents.explore-threat-intelligence-briefing-agent
+- learn.security-copilot-describe-agents.describe-conditional-access-optimization-agent  
+- learn.security-copilot-describe-agents.describe-phishing-triage-agent
+- learn.security-copilot-describe-agents.module-assessment
+- learn.security-copilot-describe-agents.summary
+badge:
+  uid: learn.security-copilot-describe-agents.badge

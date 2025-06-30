@@ -1,4 +1,5 @@
 
+
 ## Scenario
 
 Your organization migrates an existing app with database servers to Azure virtual machines. Now, to reduce your costs and administrative requirements, you're considering using some Azure platform as a service (PaaS) services. Specifically, storage services to hold large file assets, such as engineering diagrams. These engineering diagrams have proprietary information, and must remain secure from unauthorized access. These files must only be accessible from specific systems. 

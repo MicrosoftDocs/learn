@@ -11,4 +11,4 @@ Now that you've reviewed this module, you should be able to:
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
 * [ML.NET Tutorial](https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro)
-* [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/)
+* [Azure Machine Learning](https://azure.microsoft.com/products/machine-learning/)

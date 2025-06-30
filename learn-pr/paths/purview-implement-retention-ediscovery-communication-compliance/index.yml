@@ -3,7 +3,7 @@ uid: learn.wwl.purview-implement-retention-ediscovery-communication-compliance
 metadata:
   title: 'Implement retention, eDiscovery, and Communication compliance in Microsoft Purview SC-5007'
   description: 'Manage data lifecycle, records management, eDiscovery, and communication compliance with Microsoft Purview. (SC-5007)'
-  ms.date: 06/05/2024
+  ms.date: 05/28/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: learning-path
@@ -27,7 +27,12 @@ subjects:
 - compliance
 modules:
 - learn.wwl.purview-implement-manage-retention
-- learn.wwl.manage-microsoft-purview-ediscovery-premium
+- learn.wwl.purview-manage-records
+- learn.wwl.purview-ediscovery-understand
+- learn.wwl.purview-ediscovery-create-case
+- learn.wwl.purview-ediscovery-manage-data-sources-holds
+- learn.wwl.purview-ediscovery-search
+- learn.wwl.purview-ediscovery-review-set
 - learn-m365.m365-compliance-insider-prepare-communication-compliance
 - learn-m365.wwl.purview-exercise-implement-retention-ediscovery-communication-compliance
 trophy:
