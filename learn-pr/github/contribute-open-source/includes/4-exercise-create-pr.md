@@ -9,7 +9,7 @@ To write a good commit message, and subsequently your pull request, follow these
 - Include a succinct description of the change by using the imperative, present tense. For example, use *add* not *added* or *adds*.
 - Limit your subject line to 50 characters.
 - Start with a capital letter, and don't end with a period (.).
-- You can use emojis or `@mention` other GitHub users in your subject line, but be mindful that not all projects encourage this.
+- You can use emojis or `@mention` other GitHub users in your subject line, but be mindful that not all projects allow or encourage this.
 
 For the body of your message and pull request, continue to use present tense. Make sure to include the motivation for the change. Contrast your change with the previous behavior. Use the space at your disposal to explain the *what* and *why* versus the *how*.
 
@@ -19,7 +19,8 @@ Your commit message is only as much to the point as the content that you're abou
 
 Before you submit your pull request, check the sidebar for ways to complete your PR. Select **Reviewers** or **Assignees** if you're familiar with the project's team structure. Add *labels* when there's guidance on using labels in, for instance, the CONTRIBUTING.md file. You can use labels as a visual clue for what you're trying to accomplish. A maintainer might also add a label or multiple labels.
 
-**Tip:** *If the repository has a CONTRIBUTING.md file or a PR template, be sure to follow its guidance when filling in your pull request.*
+> [!TIP]  
+> If the repository has a CONTRIBUTING.md file or a PR template, follow its guidance when filling in your pull request.
 
 Some of the labels we use in the repository for this Learn module are:
 
