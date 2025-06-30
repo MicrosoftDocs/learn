@@ -12,6 +12,7 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 durationInMinutes: 4
 content: |
 quiz:
@@ -38,17 +39,6 @@ quiz:
     - content: "Large Language Models have fewer parameters than Small Language Models."
       isCorrect: false
       explanation: "Incorrect. Large Language Models have many billions (even trillions) of parameters, which is more than Small Language Models."
-  - content: "What is the purpose of fine-tuning in the context of generative AI?"
-    choices:
-    - content: "It's used to manage access, authentication, and data usage in AI models."
-      isCorrect: false
-      explanation: "This statement describes the role of security and governance controls, not fine-tuning."
-    - content: "It involves connecting a language model to an organization's proprietary database."
-      isCorrect: false
-      explanation: "This statement describes the function of Retrieval-Augmented Generation, not fine-tuning."
-    - content: "It involves further training a pretrained model on a task-specific dataset to make it more suitable for a particular application."
-      isCorrect: true 
-      explanation: "Fine-tuning allows the model to specialize and perform better at specific tasks that require domain-specific knowledge."
   - content: "What are the four stages in the process of developing and implementing a plan for responsible AI when using generative models according to Microsoft's guidance?"
     choices:
     - content: "Identify potential benefits, Measure the benefits, Enhance the benefits, Operate the solution responsibly"

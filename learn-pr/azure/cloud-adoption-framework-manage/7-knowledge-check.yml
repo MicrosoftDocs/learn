@@ -7,6 +7,7 @@ metadata:
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
+  module_assessment: true
 title: Module assessment
 durationInMinutes: 10
 quiz:

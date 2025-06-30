@@ -1,4 +1,6 @@
 
+
+
 The [Azure Application Gateway](/azure/application-gateway/overview) processes network traffic to web apps hosted on a pool of web servers. The processing performed by Azure Application Gateway includes load balancing HTTP traffic and inspecting traffic using a web application firewall. This type of routing is known as application layer (OSI layer 7) load balancing. Azure Application Gateway includes the following features:
 
 - Support for the HTTP, HTTPS, HTTP/2, and WebSocket protocols.

@@ -1,16 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-implement-network-security-monitoring.implement-web-application-firewall-on-azure-front-door
-title: Implement a Web Application Firewall on Azure Front Door
+title: 'Implement a Web Application Firewall '
 metadata:
-  title: Implement a Web Application Firewall on Azure Front Door
-  description: "Implement a Web Application Firewall on Azure Front Door"
-  ms.date: 11/29/2024
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Implement a Web Application Firewall
+  description: "Implement a Web Application Firewall"
+  ms.date: 05/19/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/10-implement-web-application-firewall-on-azure-front-door.md)]
 quiz:
@@ -27,14 +29,3 @@ quiz:
     - content: "WAF policy can either be in Prevention mode or Detection mode."
       isCorrect: true
       explanation: "Correct. By default, the WAF policy is in Detection mode, but you can change it to Prevention mode."
-  - content: "What are the two types of custom rule in a WAF policy?"
-    choices:
-    - content: "String rules and match rules."
-      isCorrect: false
-      explanation: "Incorrect. There are two types of custom rules: match rules and rate limit rules. There's no string rule."
-    - content: "Match rules and rate limit rules."
-      isCorrect: true
-      explanation: "Correct. There are two types of custom rules: match rules and rate limit rules."
-    - content: "Priority rules and rate limit rules."
-      isCorrect: false
-      explanation: "Incorrect. There are two types of custom rules: match rules and rate limit rules. There's no priority rule."

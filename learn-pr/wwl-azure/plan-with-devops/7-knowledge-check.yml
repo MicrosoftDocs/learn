@@ -2,12 +2,14 @@
 uid: learn.wwl.plan-with-devops.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 02/06/2024
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -57,4 +59,3 @@ quiz:
         - content: "To automate the process of merging code changes and building resulting artifacts."
           isCorrect: false
           explanation: "Incorrect. This describes the purpose of continuous integration."
-

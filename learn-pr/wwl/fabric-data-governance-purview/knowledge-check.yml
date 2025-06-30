@@ -4,46 +4,47 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Check your knowledge"
-  ms.date: 9/25/2024
-  author: angierudduck
-  ms.author: anrudduc
+  ms.date: 06/11/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:
   questions:
   - content: "You're considering whether to add Microsoft Purview to your Microsoft Fabric environment for its extra governance features. Which of the following features is only available in Purview?"
     choices:
-    - content: "Data Loss Prevention (DLP)"
+    - content: "Data Loss Prevention (DLP)."
       isCorrect: true
       explanation: "Correct. DLP policies aren't available in Microsoft Fabric until you add Purview to your subscriptions."
-    - content: "Sensitivity tags"
+    - content: "Sensitivity tags."
       isCorrect: false
       explanation: "Incorrect. You can use tags to label items in Microsoft Fabric without Purview."
-    - content: "Capacities"
+    - content: "Capacities."
       isCorrect: false
       explanation: "Incorrect. You can use capacities to limit compute resource usage in Fabric without Purview."
-  - content: "You open the Microsoft Purview hub in Microsoft Fabric but don't see a link to the Microsoft Purview Audit tool. What should you do?"
+  - content: "Which of the following reports are included in the Purview Hub?"
     choices:
-    - content: "Sign out and sign back in as a Fabric administrator."
+    - content: "Sensitivity label report."
       isCorrect: true
-      explanation: "Correct. Only Fabric administrators see a link to the Microsoft Purview Audit tool."
-    - content: "Add a Microsoft Purview subscription."
+      explanation: "Correct. This report is in the Purview Hub."
+    - content: "Audit report."
       isCorrect: false
-      explanation: "Incorrect. You must already have a Microsoft Purview subscription because the Microsoft Purview hub is visible."
-    - content: "Select the Open full report button."
+      explanation: "Incorrect. This isn't the name of a report in the Purview Hub."
+    - content: "Workspace items report."
       isCorrect: false
-      explanation: "Incorrect. The Audit link should appear on the hub home page. The full report doesn't display this link."
-  - content: "You're setting up a connection to Microsoft Fabric from Microsoft Purview in a different tenant. Which of these security entities can you use for authentication?"
+      explanation: "Incorrect. This isn't the name of a report in the Purview Hub."
+  - content: "Which feature does Microsoft Purview add to Microsoft Fabric for data governance?"
     choices:
-    - content: "An Outlook.com account"
+    - content: "Real-time data processing capabilities."
       isCorrect: false
-      explanation: "Incorrect. You can't use an Outlook.com account to authentication for Purview access to Fabric."
-    - content: "A managed identity"
+      explanation: "Incorrect. Real-time data processing isn't a feature of Microsoft Purview."
+    - content: "Enhanced data visualization tools."
       isCorrect: false
-      explanation: "Incorrect. You can use a managed account to authenticate when Purview and Fabric are in the same tenant but not for cross-tenant authentication."
-    - content: "A service principal"
+      explanation: "Incorrect. Data visualization isn't a focus of Microsoft Purview."
+    - content: "Centralized data cataloging and compliance monitoring."
       isCorrect: true
-      explanation: "Correct. You can only use a service principal or delegated authentication when Purview and Fabric are in different tenants."
+      explanation: "Correct. Microsoft Purview provides centralized cataloging and compliance features for data governance."
     
   

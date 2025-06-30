@@ -34,3 +34,5 @@ You review Azure storage account options and some scenarios for when to use diff
 - **Consider data sensitivity**. Protect sensitive and proprietary Tailwind Traders data in your data storage. You can enable virtual networks for proprietary data and not for public data. This scenario might require separate storage accounts.
 
 - **Consider data isolation**. Segregate regulatory and compliance data, or local policies by using multiple storage accounts for Tailwind Traders. You can separate data in one application from data in another application to ensure data isolation.
+
+

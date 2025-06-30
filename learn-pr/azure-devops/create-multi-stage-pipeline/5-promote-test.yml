@@ -5,11 +5,11 @@ metadata:
   title: Exercise - Promote to the Test stage
   description: Promote to the Test stage by using a scheduled trigger.
   ms.custom: devdivchpfy22
-  ms.date: 11/29/2023
+  ms.date: 05/01/2025
   author: juliakm
   ms.author: jukullam
   ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/5-promote-test.md)]
-
+

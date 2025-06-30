@@ -5,8 +5,8 @@ metadata:
   description: This module introduces PowerShell, a cross-platform command-line shell and scripting language built for task automation and configuration
     management. 
   ms.date: 08/25/2023
-  author: softchris
-  ms.author: chnoring
+  author: sdwheeler
+  ms.author: sewhee
   ms.topic: module
   ms.custom: team=nextgen
 title: Introduction to PowerShell

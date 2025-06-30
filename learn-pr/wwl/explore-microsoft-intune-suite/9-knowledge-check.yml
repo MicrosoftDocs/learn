@@ -2,12 +2,14 @@
 uid: learn.wwl.explore-microsoft-intune-suite.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 09/27/2024
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]

@@ -6,8 +6,8 @@ metadata:
   description: Evaluate whether to use Red Hat on Azure to migrate and/or modernize your Linux workload in the cloud.
   manager: mkluck
   ms.date: 08/13/2024
-  author: johmarco
-  ms.author: johnmarc
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: module-intro-to-product
   ms.service: azure-redhat-openshift
 title: Introduction to Red Hat on Azure
@@ -41,4 +41,4 @@ units:
 - learn.azure.introduction-to-red-hat-azure.summary
 badge:
   uid: learn.azure.introduction-to-red-hat-azure.badge
-
+

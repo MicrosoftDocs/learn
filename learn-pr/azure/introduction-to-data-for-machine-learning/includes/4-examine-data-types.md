@@ -32,7 +32,7 @@ Sometimes, two different datatypes offer equivalent functionality. For example, 
 
 ## Derived datatypes
 
-As we use technology, we encounter many more basic and primitive datatypes beyond the above list. Computers can store dates, images, 3D models, and so on. We refer to these as _derived datatypes_. We start with one or more primitive datatypes to construct a derived datatype.
+As we use technology, we encounter many more basic and primitive datatypes beyond the preceding list. Computers can store dates, images, 3D models, and so on. We refer to these as _derived datatypes_. We start with one or more primitive datatypes to construct a derived datatype.
 
 Often in machine learning, it helps to convert derived types into simpler representations. For example, we can store a defined date value like **1st January, 2017** as an integer or floating point number such as **20170101**. Integer or floating point numbers make the calculations behind our models easier.
 

@@ -4,8 +4,8 @@ title: Discover objects
 metadata:
   title: Discover objects
   description: Learn what type of object a command returns to help you understand how to pick out the information you need and how a command can fit with another command in a pipeline.
-  author: ttorble
-  ms.author: chnoring
+  author: sdwheeler
+  ms.author: sewhee
   ms.date: 02/23/2023
   ms.topic: unit
   ms.custom: team=nextgen

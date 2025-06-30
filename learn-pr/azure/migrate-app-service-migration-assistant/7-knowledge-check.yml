@@ -8,6 +8,7 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 1
 quiz:
   title: Check your knowledge

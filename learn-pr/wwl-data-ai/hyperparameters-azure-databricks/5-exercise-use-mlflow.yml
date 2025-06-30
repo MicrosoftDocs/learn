@@ -4,13 +4,13 @@ title: Exercise - Optimize hyperparameters for machine learning in Azure Databri
 metadata:
   title: Exercise - Optimize hyperparameters for machine learning in Azure Databricks
   description: Exercise - Optimize hyperparameters for machine learning in Azure Databricks
-  author: wwlpublish
-  ms.author: madiepev
-  ms.date: 08/26/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 4/24/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise-use-mlflow.md)]
-
+

@@ -4,10 +4,10 @@ title: What are classification models?
 metadata:
   title: What are classification models?
   description: Conceptual unit introducing what classification models are
-  ms.date: 07/20/2024
+  ms.date: 05/12/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-what-is-classification.md)]
+  [!include[](includes/2-what-is-classification.md)]

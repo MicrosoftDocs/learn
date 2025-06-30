@@ -8,6 +8,7 @@ metadata:
   author: v1212
   ms.author: wujia
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 1
 content: |
   [!include[](includes/7-knowledge-check.md)]

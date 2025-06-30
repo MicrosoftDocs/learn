@@ -4,9 +4,9 @@ title: Exercise - Manage Azure AI Services Security
 metadata:
   title: Exercise - Manage Azure AI Services Security
   description: Exercise - Manage Azure AI Services Security
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 05/06/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,4 +15,4 @@ labId: 152414
 labModal: true
 content: |
   [!include[](includes/4-exercise-secure-ai-services.md)]
-
+

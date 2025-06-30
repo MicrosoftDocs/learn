@@ -5,7 +5,7 @@ Security and monitoring are critical aspects of managing your data warehouse.
 Data warehouse security is important to protect your data from unauthorized access. Fabric provides a number of security features to help you secure your data warehouse. These include:
 
 - Role-based access control (RBAC) to control access to the warehouse and its data.
-- SSL encryption to secure the communication between the warehouse and the client applications.
+- TLS encryption to secure the communication between the warehouse and the client applications.
 - Azure Storage Service Encryption to protect the data in transit and at rest.
 - Azure Monitor and Azure Log Analytics to monitor the warehouse activity and audit the access to the data.
 - Multifactor authentication (MFA) to add an extra layer of security to user accounts.
@@ -62,7 +62,7 @@ You can continue investigating to understand which user ran the session with the
 ```sql
     SELECT login_name
     FROM sys.dm_exec_sessions
-    WHERE 'session_id' = 'SESSION_ID WITH LONG-RUNNING QUERY';
+    WHERE session_id = 'SESSION_ID WITH LONG-RUNNING QUERY';
 ```
 
 Finally, you can use the `KILL` command to terminate the session with the long-running query:
