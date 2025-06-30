@@ -113,7 +113,7 @@ Next up, let’s review how to add files to your repository.
 
 ### How to add a file to your repository
 
-Files in GitHub can do a handful of things, but the main purpose of files is to store data and information about your project. It's worth knowing in order to add a file to a repository that you must first have minimum **Write** access within the repository you want to add a file.
+Files in GitHub can do a handful of things, but the main purpose of files is to store data and information about your project. To add a file to a repository, you need at least **Write** access.
 
 Let’s review how to add a file to your repository.
 
