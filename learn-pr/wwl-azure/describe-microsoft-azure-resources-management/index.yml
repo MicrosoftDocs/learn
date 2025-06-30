@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Describe Microsoft Azure resources management
   description: "Perform basic resource management tasks for Azure resources, including compute, storage, and networking."
-  ms.date: 06/27/2025
+  ms.date: 06/30/2025
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
@@ -16,21 +16,21 @@ summary: This module introduces you to basic concepts around managing Microsoft 
 abstract: |
   By the end of this module, you will be able to:
 
-  * Explore an Azure subscription
+  -   Explore an Azure subscription
 
-  * Manage virtual machines
+  -   Manage virtual machines
 
-  * Manage virtual networks
+  -   Manage virtual networks
 
-  * Manage storage
+  -   Manage storage
 
-  * Use tags and resource locks
+  -   Use tags and resource locks
 
-  * Use Copilot to help manage infrastructure
+  -   Use Copilot to help manage infrastructure
 prerequisites: |
-  Basic understanding of cloud computing.
+  -   Basic understanding of cloud computing.
 
-  Basic understanding of Microsoft Azure services such as compute, storage, and networking.
+  -   Basic understanding of Microsoft Azure services such as compute, storage, and networking.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
