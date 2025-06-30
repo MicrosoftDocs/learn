@@ -3,12 +3,13 @@ uid: learn.azure.authenticate-azure-deployment-pipeline-service-principals.knowl
 title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Module assessment
+  title: Module Assessment
   description: Knowledge check
-  ms.date: 01/16/2024
+  ms.date: 04/22/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:
@@ -31,7 +32,7 @@ quiz:
       explanation: Although this will work, it's not a good practice to use a single service principal for all of your environments. Additionally, granting access to your tenant root management group will allow the service principal to modify resources anywhere in your Azure environment, which is unnecessarily permissive.
     - content: Create a single service principal and grant it access to each of the resource groups in the three subscriptions.
       isCorrect: false
-      explanation: Although this will work, it's not good practice to use a single service principal for all of your environments. At the very least, you should separate production and non-production environments by using two service principals, but a dedicated service principal for each environment is preferred.
+      explanation: Although this will work, it's not good practice to use a single service principal for all of your environments. At the very least, you should separate production and nonproduction environments by using two service principals, but a dedicated service principal for each environment is preferred.
     - content: Create three service principals, one per environment, and grant each access to a single resource group in the relevant subscription.
       isCorrect: true
       explanation: When you work with multiple environments, it's best to use dedicated service principals for each environment so that your pipeline can't accidentally change anything in another environment.
@@ -63,4 +64,4 @@ quiz:
         **Scope:** Resource group
       isCorrect: false
       explanation: This role assignment is too permissive. You should avoid granting the Owner role unless it's required. In this example, it's not.
-
+

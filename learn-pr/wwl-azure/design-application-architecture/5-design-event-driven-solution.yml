@@ -2,14 +2,16 @@
 uid: learn.wwl.design-application-architecture.design-event-driven-solution
 title: Design an event-driven solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design an event-driven solution
   description: "Design an event-driven solution"
-  ms.date: 02/03/2025
+  ms.date: 05/08/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/5-design-event-driven-solution.md)]

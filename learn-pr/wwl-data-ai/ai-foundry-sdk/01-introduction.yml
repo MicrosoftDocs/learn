@@ -6,11 +6,11 @@ metadata:
   description: Introduction to Azure AI Foundry SDK.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 02/05/2025
+  ms.date: 05/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/01-introduction.md)]
-
+

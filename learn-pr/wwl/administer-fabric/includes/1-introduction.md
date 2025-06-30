@@ -1,11 +1,11 @@
-Administering a Microsoft Fabric environment involves a range of tasks that are essential for ensuring the efficient and effective use of the Fabric platform within an organization.
+Administering a Microsoft Fabric environment involves tasks that are essential for ensuring the efficient and effective use of the Fabric platform within an organization.
 
 As a Fabric administrator (admin), you need to know:
 
 - Fabric architecture
 - Security and governance features
 - Analytics capabilities
-- Various deployment and licensing options
+- Deployment and licensing options
 
 You also need to be familiar with the Fabric admin portal and other administrative tools, and be able to configure and manage the Fabric environment to meet the needs of your organization.
 

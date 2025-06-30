@@ -1,6 +1,6 @@
-Pipelines enable a continuous integration/continuous deployment (CI/CD) approach that ensures content is updated, tested, and regularly refreshed. Pipelines are an efficient and durable way to automate the movement of content through the development, test, and production stages of the content development lifecycle.
+Pipelines enable a continuous integration/continuous deployment (CI/CD) approach that ensures content is updated, tested, and regularly refreshed. Pipelines are a way to automate the movement of content through the development, test, and production stages of the content development lifecycle.
 
-## What is deployment pipelines
+## What are deployment pipelines?
 
 Fabric deployment pipelines help you deploy your Fabric items across different environments like development, test, and production. They let you develop and test content in Fabric before it reaches end users.
 
@@ -14,20 +14,17 @@ Follow these steps to create a deployment pipeline:
 1. Select the **Workspaces** icon on the left navigation pane, then **Deployment pipelines.**
 
 2. Select **New pipeline**. Then name the pipeline and select **Next**.
-3. Define, and name the stages in your pipeline. Then select **Create.**
+3. Define, and name the stages in your pipeline. Then select **Create and continue.**
 
     :::image type="content" source="../media/create-stages.png" alt-text="Screenshot of pipeline stage selector." :::
-4. Assign a workspace to a stage.  
+4. Assign a workspace to a stage. Then select the green check mark next to the stage. Then you're ready to deploy content to the pipeline.
 
     :::image type="content" source="../media/assign-workspace.png" alt-text="Screenshot of workspace assignment interface." :::
-5. Now you're ready to deploy content to the pipeline.
-
-    :::image type="content" source="../media/pipeline-setup.png" alt-text="Screenshot of pipeline without content." :::
 
 ## Deploy content to a pipeline stage
 The deployment process lets you clone content from one stage in the pipeline to another, typically from development to test, and from test to production.
 
-To deploy content between stages, select the stage to deploy from, and then select the **Deploy** button. The deployment process copies all of the workspace content into the target stage. In the following image, there's a data pipeline that only exists in the development stage that will be moved to the test stage when **Deploy** is selected in the development stage.
+To deploy content between stages, select the stage to deploy to, and then select the stage in the **Deploy from** drop-down box, and then select the **Deploy** button. The deployment process copies all of the workspace content into the target stage. In the following image, there's a data pipeline that only exists in the development stage that will be moved to the test stage when **Deploy** is selected in the development stage.
 
 :::image type="content" source="../media/deploy-content.png" alt-text="Screenshot of content deployment interface." :::
 
@@ -40,9 +37,9 @@ To use deployment pipelines with Git branches:
 
     :::image type="content" source="../media/connect-git.png" alt-text="Screenshot of workspace to Git provider connection interface." :::
 
-3. Promote content between staging environments using the deploy button in the pipeline as described in the **Deploy content to a pipeline stage** section on this page. This moves content between environments in Fabric but the Git repository won't be updated until you manually update from the workspace.
+3. Promote content between staging environments using the deploy button in the pipeline as described in the **Deploy content to a pipeline stage** section on this page. This moves content between environments in Fabric but *the Git repository won't be updated until you manually update from the workspace.*
 
-    In the image below, we see that a data pipeline item exists in all three staging environments of the deployment pipeline *in Fabric* and that the Fabric stages are synchronized.
+    In the image below, the checkmark in the deployment stage box indicates that a data pipeline item exists in all three staging environments of the deployment pipeline *in Fabric* and that the Fabric stages are synchronized.
 
     :::image type="content" source="../media/pipeline-presync.png" alt-text="Screenshot of pipeline before files are synced with Git." :::
 

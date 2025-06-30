@@ -71,6 +71,5 @@ modules:
 - learn.protect-virtual-machines-with-azure-backup
 - learn.azure.intro-to-azure-monitor
 - learn.incident-response-with-alerting-on-azure
-- learn.analyze-infrastructure-with-azure-monitor-logs
 trophy:
   uid: learn.az-104-monitor-backup-resources.trophy

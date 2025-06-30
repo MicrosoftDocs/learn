@@ -1,10 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-azure-functions.exercise-create-azure-function-by-using-visual-studio-code
-title: 'Exercise: Create an Azure Function by using Visual Studio Code'
+title: Exercise - Create an Azure Function by using Visual Studio Code
 metadata:
-  title: 'Exercise: Create an Azure Function by using Visual Studio Code'
-  description: "Exercise: Create an Azure Function by using Visual Studio Code"
-  ms.date: 02/14/2025
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Create an Azure Function by using Visual Studio Code
+  description: "Exercise - Create an Azure Function by using Visual Studio Code"
+  ms.date: 05/27/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit

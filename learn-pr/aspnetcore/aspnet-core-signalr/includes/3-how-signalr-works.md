@@ -1,6 +1,6 @@
 ## Servers and the `Hub` class
 
-The `Hub` class is a SignalR server concept. It's defined within the `Microsoft.AspNetCore.SignalR` namespace and is part of the [Microsoft.AspNetCore.SignalR](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR) NuGet package. ASP.NET Core web apps that target the Microsoft.NET.Sdk.Web SDK don't need to add a package reference for SignalR, because it's already available as part of the [shared framework](/aspnet/core/fundamentals/metapackage-app).
+The `Hub` class is a SignalR server concept defined within the `Microsoft.AspNetCore.SignalR` namespace that is part of the [Microsoft.AspNetCore.SignalR](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR) NuGet package. ASP.NET Core web apps that target the Microsoft.NET.Sdk.Web SDK don't need to add a package reference for SignalR, because it's already available as part of the [shared framework](/aspnet/core/fundamentals/metapackage-app).
 
 A `Hub` is exposed through a *route*. For example, the `https://www.contoso-pizza.com/hubs/orders` route could be used to represent an `OrdersHub` implementation. Through the various hub APIs, authors can define methods and events.
 
@@ -46,7 +46,7 @@ You fire [events](#events) from either a `Hub` or an `IHubContext` instance. The
 - <xref:Microsoft.AspNetCore.SignalR.IHubContext%602>: A context where `THub` represents a strongly typed generic hub, and `T` represents the corresponding type of client.
 
 > [!IMPORTANT]
-> `IHubContext` is for sending notifications to clients. It is *not* used to call methods on the `Hub`.
+> `IHubContext` is used for sending notifications to clients, *not* for calling methods on the `Hub`.
 
 #### An example `IHubContext`
 
@@ -70,7 +70,7 @@ public sealed class NotificationService(
 }
 ```
 
-The preceding C# code relies on `IHubContext<NotificationHub>` to access the contextual listing of clients, exposing the ability to broadcast notifications. The `hubContext` primary constructor parameter that's captured in scope is used to fire the `"NotificationReceived"` event, but it isn't intended to be used to call the hub's `NotifyAll` method.
+The preceding C# code relies on `IHubContext<NotificationHub>` to access the contextual listing of clients, exposing the ability to broadcast notifications. The `hubContext` primary constructor parameter is captured in scope and used to fire the `"NotificationReceived"` event, but it isn't intended to be used to call the hub's `NotifyAll` method.
 
 ### Methods
 
@@ -84,7 +84,7 @@ Methods aren't required to fire events, but they often do.
 
 ### Events
 
-An event can be subscribed to by name from a client. The server is responsible for raising events. `Hub`, `Hub<T>`, `IHubContext<THub>`, and `IHubContext<THub, T>` events are *named* and can define up to 10 parameters. Events are fired on the server and handled by interested clients. A client is considered interested when it subscribes to events on its hub's connection. Clients can indirectly trigger events when they call hub methods that fire events as a result of their invocation. Events can't be directly triggered by clients, though, because that's the responsibility of the server.
+ The server is responsible for raising events. A client can subscribe to an event by name. `Hub`, `Hub<T>`, `IHubContext<THub>`, and `IHubContext<THub, T>` events are *named* and can define up to 10 parameters. Events are fired on the server and handled by interested clients. A client is considered interested when it subscribes to events on its hub's connection. Clients can indirectly trigger events when they call hub methods that fire events as a result of their invocation. Clients can't directly trigger events, though, because that's the responsibility of the server.
 
 #### Event client scopes
 
@@ -124,13 +124,13 @@ Consider the following images, which can help you visualize how the hub sends me
 
 - **Broadcast to all**
 
-    :::image type="content" source="../media/signalr-all.png" lightbox="../media/signalr-all-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.All syntax.":::
+    :::image type="content" source="../media/signalr-all.png" lightbox="../media/signalr-all-large.png" alt-text="ASP.NET Core SignalR hub sending a message with Clients.All syntax.":::
 
     All connected clients receive this message, regardless of the group that they might or might not belong to.
 
 - **Isolated user**
 
-    :::image type="content" source="../media/signalr-user.png" lightbox="../media/signalr-user-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.User syntax.":::
+    :::image type="content" source="../media/signalr-user.png" lightbox="../media/signalr-user-large.png" alt-text="ASP.NET Core SignalR hub sending a message with Clients.User syntax.":::
 
     A single user receives this message, regardless of how many devices they're currently using.
 
@@ -142,9 +142,9 @@ Consider the following images, which can help you visualize how the hub sends me
 
 ## Clients and the `HubConnection` class
 
-The `HubConnection` class is a SignalR client concept, which represents the client's connection to the [server `Hub`](#servers-and-the-hub-class). It's defined within the `Microsoft.AspNetCore.SignalR.Client` namespace, and it's part of the [Microsoft.AspNetCore.SignalR.Client](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Client) NuGet package.
+The `HubConnection` class is a SignalR client concept, which represents the client's connection to the [server `Hub`](#servers-and-the-hub-class). The class is defined within the `Microsoft.AspNetCore.SignalR.Client` namespace, and it's part of the [Microsoft.AspNetCore.SignalR.Client](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Client) NuGet package.
 
-You create a `HubConnection` by using the builder pattern and the corresponding `HubConnectionBuilder` type. Given the hub's route (or <xref:System.Uri?displayProperty=fullName>), you can create a `HubConnection`. The builder can also specify additional configuration options, including logging, the desired protocol, authentication token forwarding, and automatic reconnection, among others.
+You create a `HubConnection` by using the builder pattern and the corresponding `HubConnectionBuilder` type. Given the hub's route (or <xref:System.Uri?displayProperty=fullName>), you can create a `HubConnection`. The builder can also specify more configuration options. Including, logging, the desired protocol, authentication token forwarding, and automatic reconnection, among others.
 
 The `HubConnection` API exposes start and stop functions, which you use to start and stop the connection to the server. Additionally, there are capabilities for streaming, calling [hub methods](#methods), and subscribing to [events](#events).
 

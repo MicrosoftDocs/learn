@@ -54,7 +54,7 @@ Your policy file should contain all three policies, similar to this code:
 ```
 
 > [!NOTE]
-> The order of the policies within each section is not important for this example.
+> The order of the policies within each section isn't important for this example.
 
 ## Test the policy
 

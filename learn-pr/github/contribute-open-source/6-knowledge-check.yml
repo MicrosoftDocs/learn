@@ -5,14 +5,15 @@ metadata:
   title: Module assessment
   description: Check your knowledge.
   ms.date: 05/12/2022
-  author: ttorble
-  ms.author: chnoring
+  author: camihmerhar
+  ms.author: camhernandez
   ms.topic: unit
   ms.custom:
   - team=nextgen
   - team=cloud_advocates
   ms.contributors:
   - yolasors-11052021
+  module_assessment: true
 durationInMinutes: 4
 quiz:
   title: Contribute to an open-source project using GitHub

@@ -6,10 +6,11 @@ metadata:
   description: Check your knowledge of deployment scripts
   author: smurawski
   ms.author: stmuraws
-  ms.date: 05/03/2023
+  ms.date: 04/28/2025
   ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: stmuraws-05172021
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:
@@ -29,7 +30,7 @@ quiz:
     choices:
       - content: To impersonate the user who's doing the deployment.
         isCorrect: false
-        explanation: Incorrect. The managed identity is used to authenticate the Azure CLI or Azure PowerShell session that's used to run the deployment script. That identity has its own role-based access control and does not assume the deploying user's rights.
+        explanation: Incorrect. The managed identity is used to authenticate the Azure CLI or Azure PowerShell session that's used to run the deployment script. That identity has its own role-based access control and doesn't assume the deploying user's rights.
       - content: To run the Azure CLI or Azure PowerShell commands in the deployment script.
         isCorrect: true
         explanation: Correct. The managed identity is used to authenticate the Azure CLI or Azure PowerShell session that's used to run the deployment script.
@@ -51,10 +52,10 @@ quiz:
     choices:
       - content: A custom container image.
         isCorrect: false
-        explanation: Incorrect. Deployment scripts can use default container images. A storage account (either pre-existing or created by the deployment script resource) is required.
+        explanation: Incorrect. Deployment scripts can use default container images. A storage account (either preexisting or created by the deployment script resource) is required.
       - content: An Azure Automation environment.
         isCorrect: false
-        explanation: Incorrect. Deployment scripts are not associated with Azure Automation or Azure Functions (which are more general ways to run automation in Azure). A storage account (either pre-existing or created by the deployment scripts resource) is required.
+        explanation: Incorrect. Deployment scripts aren't associated with Azure Automation or Azure Functions (which are more general ways to run automation in Azure). A storage account (either preexisting or created by the deployment scripts resource) is required.
       - content: A storage account.
         isCorrect: true
-        explanation: Correct. You can supply an existing Azure Storage resource for the deployment script, or the deployment script resource will create a storage account and file share.
+        explanation: Correct. You can supply an existing Azure Storage resource for the deployment script, or the deployment script resource can create a storage account and file share.

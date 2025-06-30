@@ -4,16 +4,14 @@ title: Exercise - Extract custom entities
 metadata:
   title: Exercise - Extract custom entities
   description: Exercise - Extract custom entities
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 2/21/2024
+  ms.date: 05/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 azureSandbox: false
-labModal: true
-labId: 152402
 durationInMinutes: 35
 content: |
   [!include[](includes/5-exercise-extract-custom-entities.md)]
-
+

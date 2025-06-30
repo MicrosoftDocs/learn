@@ -2,14 +2,17 @@
 uid: learn.wwl.design-solution-for-backup-disaster-recovery.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 12/06/2024
+  ms.date: 06/11/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/9-knowledge-check.md)]

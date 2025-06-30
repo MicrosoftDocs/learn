@@ -5,10 +5,11 @@ metadata:
   unitType: knowledge_check
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/13/2024
+  ms.date: 04/30/2025
   author: vrapolinario
   ms.author: viniap
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -47,4 +48,4 @@ quiz:
           explanation: "Correct. AKS Files volumes backed by SMB or NFS file shares are mounted as ReadWriteMany and are available to multiple nodes concurrently."
         - content: "Azure Blob storage"
           isCorrect: false
-          explanation: "Incorrect. Azure Blob storage is a type of storage that works with large unstructured datasets. It's not a type of storage volume."
+          explanation: "Incorrect. Azure Blob storage is a type of storage that works with large unstructured datasets. It's not a type of storage volume."

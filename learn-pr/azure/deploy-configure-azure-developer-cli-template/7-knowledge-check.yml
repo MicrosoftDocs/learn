@@ -2,6 +2,9 @@
 uid: learn.azure.deploy-configure-azure-developer-cli-templates.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["6D4CB7DA_22","6D4CB7DA_26","6D4CB7DA_34","6D4CB7DA_42","6D4CB7DA_47","6D4CB7DA_51","6D4CB7DA_55","6D4CB7DA_59","6D4CB7DA_71","6D4CB7DA_75","6D4CB7DA_83","6D4CB7DA_104","6D4CB7DA_108","6D4CB7DA_124","6D4CB7DA_136"]
+  module_assessment_regen_label: regen-1744907290830
+  ai_generated_module_assessment: true
   unitType: knowledge_check
   title: Module assessment
   description: Check your knowledge of the Azure Developer CLI
@@ -10,6 +13,7 @@ metadata:
   ms.author: alexwolf
   ms.topic: unit
   ms.custom: engagement-fy23
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:
@@ -70,4 +74,3 @@ quiz:
     - content: "The definition files are platform agnostic."
       isCorrect: false
       explanation: "Incorrect. Whether or not a tool is cross platform doesn't determine if it's idempotent."
-

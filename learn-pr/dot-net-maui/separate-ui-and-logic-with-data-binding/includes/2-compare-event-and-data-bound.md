@@ -19,7 +19,7 @@ Consider the example of a weather service app. The following XAML fragment conta
 </VerticalStackLayout>
 ```
 
-:::image type="content" source="../media/2-compare-event-and-data-bound/events-ui-example.png" alt-text="Screenshot of a .NET MAUI app that has an entry control for a postal code, a button with the text refresh. Under those two controls is a label that represents the humidity.":::
+:::image type="content" source="../media/2-compare-event-and-data-bound/events-ui-example.png" alt-text="Screenshot of a .NET MAUI app that has an entry control for a postal code, a button with the text refresh. Under those two controls, is a label that represents the humidity.":::
 
 There are three named controls in this example:
 
@@ -44,7 +44,7 @@ This design works great for small UIs, but as soon as the UI becomes complex, ma
 
 ## Data binding helps
 
-You can implement data bindings in XAML or code, but they're much more common in XAML, where they help to reduce the code-behind file size. By replacing procedural code in event handlers with declarative code or markup, the app is simplified and clarified. Because the bindings don't require code-behind, you can easily create, alter, or redesign the UI to fit how you want to present the data.
+You can implement data bindings in XAML or code, but they're much more common in XAML, where they help to reduce the code-behind file size. When you replace procedural code in event handlers with declarative code or markup, the app is simplified and clarified. Because the bindings don't require code-behind, you can easily create, alter, or redesign the UI to fit how you want to present the data.
 
 Let's take the same example as in the previous section, but update it to use data binding:
 
@@ -69,11 +69,11 @@ The same three controls are declared in the XAML, but none of them are named, be
 
 - **`Label` control**: This `Text` property is bound to a property named `Humidity`.
 
-In this simple UI, all of the code-behind is eliminated. Removing all code-behind isn't the point of data binding, even though it's usually possible. Code-behind still has its place. How much data binding you implement is up to you.
+In this simple UI, all of the code-behind is eliminated. Removing all code-behind isn't the point of data binding, even though it's possible. Code-behind still has its place. How much data binding you implement is up to you.
 
 Now, the UI is loosely coupled to a data object. Why is it loosely coupled instead of tightly coupled? Because of the way bindings are evaluated. Each control has a `BindingContext` property. If the context isn't set, the parent control's context is used, and so on, until the root of the XAML is evaluated. When bindings are evaluated, the context's object instance is checked for the required properties, like the label control's `Text` binding to the context's `Humidity` property. If `Humidity` doesn't exist on the context, nothing happens.
 
-Because the UI is loosely coupled, you can redesign the UI worrying about breaking code. However, you can break functionality. For example, you can delete the button and the app still compiles and runs, but you don't have a way to refresh the weather. On the other hand, you could replace the `Entry` and `Button` controls with the single `SearchBar` control. This control lets you enter text and invoke a command.
+Because the UI is loosely coupled, you can redesign the UI without worrying about breaking code. However, you can break functionality. For example, you can delete the button and the app still compiles and runs, but you don't have a way to refresh the weather. On the other hand, you could replace the `Entry` and `Button` controls with the single `SearchBar` control. This control lets you enter text and invoke a command.
 
 ```xaml
 <SearchBar Text="{Binding Location, Mode=OneWayToSource}" SearchCommand="{Binding RefreshWeather}" />

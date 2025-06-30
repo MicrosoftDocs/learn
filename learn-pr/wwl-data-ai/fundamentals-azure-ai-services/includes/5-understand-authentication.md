@@ -17,3 +17,4 @@ When you write code to access the AI service, the keys and endpoint must be incl
 
 When you use a studio interface with Azure AI services, your credentials are authenticated when you sign in, and a similar process is happening in the background. 
 
+
