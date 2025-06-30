@@ -122,7 +122,7 @@ Before we review branches and commits in the next unit, let’s quickly review g
 
 ### What are gists?
 
-Gists are a feature of GitHub that allows users to share code snippets, notes, or other small pieces of information in a lightweight and convenient way. They are essentially mini Git repositories, which means you can fork, clone, and version-control them just like a full repository. Gists are particularly useful for sharing quick solutions, configuration files, or examples without the need to create a full repository.
+Gists are a GitHub feature for sharing code snippets, notes, or small pieces of information conveniently. They are Git repositories that can be cloned, forked, and version-controlled like full repositories. Gists are particularly useful for sharing quick solutions, configuration files, or examples without the need to create a full repository.
 
 #### Key features of gists
 1. **Public and Secret Gists**:
@@ -144,14 +144,14 @@ Gists are a feature of GitHub that allows users to share code snippets, notes, o
 6. **Collaboration**:
    - While gists are typically used for individual snippets, they can also be shared and collaborated on by multiple users. Forking and commenting on gists enable lightweight collaboration.
 
-#### Use Cases for Gists:
+#### Use cases for Gists
 - Sharing quick code examples or solutions.
 - Storing configuration files or scripts for personal use.
 - Creating templates for commonly used code patterns.
 - Sharing error logs or debugging information with others.
 - Embedding code snippets in blogs, forums, or documentation.
 
-#### Limitations of Gists:
+#### Limitations of Gists
 - Gists are not entirely private, even if marked as secret. Anyone with the URL can access them, so they should not be used for sensitive or confidential information.
 - They are best suited for small snippets or single files. For larger projects or multi-file structures, a full repository is more appropriate.
 
