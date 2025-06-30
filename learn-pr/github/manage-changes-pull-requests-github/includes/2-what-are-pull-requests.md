@@ -93,10 +93,10 @@ In addition to creating and merging pull requests, there are a few advanced opti
 
 ### Requesting reviewers
 
-You can request specific collaborators to review your pull request. This helps ensure the changes are reviewed by the right people before merging.
+You can request specific collaborators to review your pull request. Only collaborators with write access to the repository can be selected as reviewers. This helps make sure your changes are reviewed by the right people before merging.
 
 1. When creating or viewing a pull request, find the Reviewers section in the right-hand sidebar.
-2. Search for and select the GitHub usernames of the collaborators you want to request a review from.
+2. Search for and select the GitHub usernames of collaborators who have write access to the repository.
 3. The selected reviewers will receive a notification to review your pull request.
 
 ### Required reviews and branch protection rules
@@ -109,6 +109,8 @@ Some repositories use branch protection rules that require pull requests to meet
 If a pull request doesn't meet these requirements, the merge button will be disabled until all conditions are satisfied.
 
 You can see the required rules for a repository at the bottom of the pull request page, under the Merge section.
+
+These rules are typically configured by repository administrators in the branch protection settings.
 
 ### Status checks and continuous integration (CI)
 
