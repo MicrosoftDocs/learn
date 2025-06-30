@@ -4,12 +4,13 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 09/26/2024
+  ms.date: 4/23/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
   ms.custom:
   - N/A
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: ""
@@ -46,4 +47,4 @@ quiz:
       explanation: "Incorrect. The authoring resource is used for authoring; not prediction."
     - content: "The Azure credentials of the user who published the language understanding application"
       isCorrect: false
-      explanation: "Incorrect. You should not share individual user credentials with other users."
+      explanation: "Incorrect. You should not share individual user credentials with other users."

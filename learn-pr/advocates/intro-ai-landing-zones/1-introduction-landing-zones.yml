@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-ai-landing-zones.introduction-landing-zones
+title: Introduction to landing zones
+metadata:
+  title: Introduction to landing zones
+  description: Understand the purpose and elements of Azure landing zones.
+  ms.date: 05/01/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/1-introduction-landing-zones.md)]

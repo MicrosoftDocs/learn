@@ -35,7 +35,6 @@ modules:
 - learn.design-your-site-recovery-solution-in-azure
 - learn.protect-infrastructure-with-azure-site-recovery
 - learn.protect-virtual-machines-with-azure-backup
-- learn.backup-restore-azure-sql
 - learn.build-app-with-scale-sets
 - learn.app-service-autoscale-rules
 - learn.azure.app-service-scale-up-scale-out

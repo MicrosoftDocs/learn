@@ -12,7 +12,7 @@ Because participating in an open-source community is a shared technical experien
 
 ## What is a Microsoft Learn contributor? 
 
-If you’ve ever used information from learn.microsoft.com, you’ve benefited from the work of a contributor. On Microsoft Learn, a contributor is anyone who adds to or changes content on the site to help create knowledge for others, or anyone who shares Microsoft Learn content and experiences with others to help them discover new learning opportunities. There are no special credentials needed--the task is open to anyone with expertise and a passion for sharing their learning. 
+If you’ve ever used information from `learn.microsoft.com`, you’ve benefited from the work of a contributor. On Microsoft Learn, a contributor is anyone who adds to or changes content on the site to help create knowledge for others, or anyone who shares Microsoft Learn content and experiences with others to help them discover new learning opportunities. There are no special credentials needed--the task is open to anyone with expertise and a passion for sharing their learning. 
 
 A contribution to Microsoft Learn could be:
 

@@ -8,6 +8,7 @@ metadata:
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 10
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -16,11 +17,11 @@ quiz:
   - content: To address the Tailwind Traders CIO's risks and concerns, which of the following steps would you start with?
     choices:
     - content: Select a small and diverse cloud governance team.
-      isCorrect: false
-      explanation: Incorrect. Tailwind Traders already has an established cloud governance team.
-    - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
       isCorrect: true
-      explanation: Correct! Rank the risks to determine which ones are most critical to address first.
+      explanation: Correct! The first step is to establish a cloud governance team.
+    - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
+      isCorrect: false
+      explanation: Incorrect. You should rank the risks to determine which ones are most critical to address first only after you establish your cloud governance team.
     - content: Distribute your policies to inform everyone who needs to adhere to cloud governance.
       isCorrect: false
       explanation: Incorrect. To create your policies, you must first perform a risk analysis to determine the most critical risks to address.
@@ -31,16 +32,16 @@ quiz:
     choices:
     - content: Select a small and diverse cloud governance team.
       isCorrect: false
-      explanation: Incorrect. Tailwind Traders already has an established cloud governance team.
+      explanation: Incorrect. This is the first step.
     - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
-      isCorrect: false
-      explanation: Incorrect. Risk analysis should be at the top of a list of things to address.
+      isCorrect: true
+      explanation: Correct. You should rank the risks to determine which ones are most critical to address first.
     - content: Distribute your policies to inform everyone who needs to adhere to cloud governance.
       isCorrect: false
       explanation: Incorrect. You must first establish the policies before you can distribute them.
     - content: Define the cloud governance policy, including a policy statement, risk ID, policy ID, and policy scope.
-      isCorrect: true
-      explanation: Correct! After you know the risks, you can define the policies that address them.
+      isCorrect: false
+      explanation: Incorrect. Only after you know the risks can you define the policies that address them.
   - content: Which step helps encourage quick decision-making and provides various perspectives?
     choices:
     - content: Select a small and diverse cloud governance team.

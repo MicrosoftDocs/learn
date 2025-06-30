@@ -4,12 +4,13 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check.
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 05/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   questions:
@@ -35,4 +36,4 @@ quiz:
     - content: "HTML"
       isCorrect: false
       explanation: "Incorrect. Client apps submit JSON requests and receive JSON responses."
-
+

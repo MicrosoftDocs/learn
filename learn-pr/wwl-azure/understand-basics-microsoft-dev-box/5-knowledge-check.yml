@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-basics-microsoft-dev-box.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Module assessment"
+  ms.date: 05/12/2025
+  author: wwlpublish
+  ms.author: fkhan
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary benefit of using Microsoft Dev Box for developers?"
+    choices:
+    - content: "It is managed through a GitHub repository."
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "It can be provisioned in minutes from a self-service, browser-based portal."
+      isCorrect: true
+      explanation: "Correct"
+    - content: "It replaces the need for version control."
+      isCorrect: false
+      explanation: "Incorrect"
+  - content: "What is the role of a Platform Engineering team in relation to Microsoft Dev Box?"
+    choices:
+    - content: "Building and managing foundational systems, including Dev Box infrastructure"
+      isCorrect: true
+      explanation: "Correct"
+    - content: "Creating internal tools for customer support"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "Monitoring sales and marketing KPIs"
+      isCorrect: false
+      explanation: "Incorrect"
+  - content: "Who is primarily responsible for configuring Dev Centers, Projects, and Network Access in a Microsoft Dev Box setup?"
+    choices:
+    - content: "Developers"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "Platform Engineers or IT Administrators"
+      isCorrect: true
+      explanation: "Correct"
+    - content: "Sales Engineers"
+      isCorrect: false
+      explanation: "Incorrect"
+  - content: "What component of Microsoft Dev Box specifies the base operating system, compute, and storage Dev Box machines use?"
+    choices:
+    - content: "Azure Region"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "Dev Box Definition"
+      isCorrect: true
+      explanation: "Correct"
+    - content: "Dev Box pool"
+      isCorrect: false
+      explanation: "Incorrect"
+  - content: "Which Microsoft service ensures secure access for Dev Box users?"
+    choices:
+    - content: "Microsoft Entra ID"
+      isCorrect: true
+      explanation: "Correct"
+    - content: "Azure DevOps"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "GitHub Actions"
+      isCorrect: false
+      explanation: "Incorrect"

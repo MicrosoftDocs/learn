@@ -71,7 +71,7 @@ Retention for Copilot data is managed through the Microsoft Purview portal.
 | Understand Copilot and Teams retention | Learn how policies apply to both Copilot and Teams messages. | - [Teams retention](/purview/retention-policies-teams?azure-portal=true) <br> - [Copilot retention](/purview/retention-policies-copilot?azure-portal=true) |
 | Enable mailbox archiving | Required for managing content stored in hidden folders like _SubstrateHolds_. | [Enable archive mailboxes](/purview/enable-archive-mailboxes?azure-portal=true) |
 | Manage inactive mailboxes | Ensure data from departed employees is retained. | [Inactive mailboxes](/purview/inactive-mailboxes-in-office-365?azure-portal=true) |
-| Check licensing | Confirm you have the required Microsoft 365 E3/E5 and Purview licenses. | [Licensing guide](/office365/servicedescriptions/microsoft-purview-data-lifecycle-records-management?azure-portal=true) |
+| Check licensing | Confirm you have the required Microsoft 365 E3/E5 and Purview licenses. | [Licensing guide](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance?azure-portal=true#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) |
 | Confirm permissions | You need the _Compliance Administrator_ or equivalent role. | [Permissions](/purview/microsoft-365-compliance-center-permissions?azure-portal=true) |
 
 ### Create a retention policy

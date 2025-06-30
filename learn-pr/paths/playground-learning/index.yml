@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.azure-databases.postgresql.playground-learning
+metadata:
+  title: 'Azure Database for PostgreSQL Tutorials'
+  description: "Learn key PostgreSQL concepts through our Azure Database for PostgreSQL Tutorials. Explore our tutorials to focus on a specific topic, or discover a subject that interest you and delve deeper."
+  ms.date: 05/23/2025
+  author: milenak
+  ms.author: mpopovic
+  ms.topic: learning-path
+title: Azure Database for PostgreSQL Tutorials
+prerequisites: |
+  -   None
+summary: |
+  Learn key PostgreSQL concepts through our Azure Database for PostgreSQL Tutorials. Explore our tutorials to focus on a specific topic, or discover a subject that interest you and delve deeper.
+iconUrl: /learn/achievements/microsoft-learn-azure-database-for-postgresql.svg
+levels:
+- beginner
+roles:
+- database-administrator
+- developer
+products:
+- azure-database-postgresql
+subjects:
+- databases
+modules:
+- learn.azure-databases.postgresql.basic-sql-simple-select
+- learn.azure-databases.postgresql.basic-sql-where-clause-subqueries
+- learn.azure-databases.postgresql.basic-sql-limit-offset-order-by
+- learn.azure-databases.postgresql.basic-sql-join-tables
+- learn.azure-databases.postgresql.basic-sql-aggregate-functions-grouping
+trophy:
+  uid: learn.azure-databases.postgresql.azure-pg-playground.trophy

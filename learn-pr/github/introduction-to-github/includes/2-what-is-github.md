@@ -151,7 +151,22 @@ Now that we have a good understanding of repositories, we can review gists. Simi
 
 Every gist is a Git repository, which you can fork and clone and be made either public or secret. Public gists are displayed publicly where people can browse new ones as they’re created. Public gists are also searchable. Conversely, secret gists aren't searchable, but they aren’t entirely private. If you send the URL of a secret gist to a friend, they'll be able to see it.
 
+### Forking and cloning gists
+
+You can fork a gist to create a copy of someone else's gist in your account.
+
+1. Navigate to the gist you want to fork.
+2. Select **Fork** at the top-right of the gist page.
+
+To clone a gist locally:
+
+```bash
+git clone https://gist.github.com/your-gist-id.git
+```
+
 To learn more about gists, see the linked article in our Resources section at the end of this module titled *Creating Gists*.
+
+---
 
 ### What are wikis?
 
@@ -173,3 +188,27 @@ Feature Previews are a great way to stay ahead of the curve and explore new tool
 
 > [!TIP]
 > GitHub frequently adds new experimental features for users to explore, so keep an eye on the **Feature review** to discover new tools and enhancements.
+=======
+### Creating, editing, and deleting wiki pages
+
+You can use the GitHub wiki to create and manage documentation for your project.
+
+**To create a wiki page:**
+
+1. Navigate to the repository.
+2. Select the **Wiki** tab.
+3. Select **Create the first page** if no pages exist, or **New Page** to add a page.
+4. Enter a title and content, then select **Save Page**.
+
+**To edit a wiki page:**
+
+1. Navigate to the wiki page you want to edit.
+2. Select **Edit** at the top-right.
+3. Make changes and select **Save Page**.
+
+**To delete a wiki page:**
+
+- Deleting a wiki page requires using Git. Clone the wiki repository, remove the file, and push the change.
+
+Learn more about managing wikis in [GitHub Docs - Adding or editing wiki pages](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages).
+

@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 durationInMinutes: 1
 quiz:

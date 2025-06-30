@@ -12,7 +12,7 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
 
 1. On the resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the menu, select **Containers**, and then select **Container Registry**.
+1. In the menu, search for and select **Container Registry**.
 
     :::image type="content" source="../media/7-search-container-registry.png" alt-text="Screenshot that shows Create a resource with Container Registry.":::
 
@@ -31,7 +31,7 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
     | Use availability zones | Accept the default. |
     | Pricing plan | **Standard** |
 
-1. Select **Review + create**. When the *Validation passed* notification appears, select **Create**. Wait until the container registry has been deployed before continuing.
+1. Leave all other options as their defaults, then select **Review + create**. When the *Validation passed* notification appears, select **Create**. Wait until the container registry has been deployed before continuing.
 
 1. Select **Go to resource**. The *Container registry* pane displays essentials about your container registry.
 
@@ -126,7 +126,7 @@ For the remainder of the exercise, you'll return to the Azure portal.
     | Image | \<*registry-name*\>.azurecr.io/reservationsystem:latest |
     | Image registry login server | Enter the login server name for your registry |
     | Image registry username | Enter the username for your registry |
-    | Image registry password | Enter the password for your registry | 
+    | Image registry password | Enter the password for your registry |
     | OS Type | Linux |
     | Size | Leave the default *Size* set to **1 vcpu, 1.5 GiB memory, 0 gpus** |
 
@@ -139,11 +139,11 @@ For the remainder of the exercise, you'll return to the Azure portal.
     | Networking type | Public |
     | DNS name label | Choose a unique name, which will be used as part of the container's URL. |
     | DNS name label scope reuse | Accept default |
-    | **Ports** |
+    | **Ports** | |
     | Ports | 80 |
     | Ports protocol | TCP |
 
-1. Select **Next: Advanced**.
+1. Select the **Advanced** tab.
 
 1. On the **Advanced** tab, enter the following values for each setting.
 

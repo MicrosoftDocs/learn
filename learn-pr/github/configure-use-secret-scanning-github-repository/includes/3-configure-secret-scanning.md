@@ -6,29 +6,20 @@ This unit walks you through the necessary steps to enable secret scanning at the
 
 Follow these steps to enable secret scanning and push protection on a private repository:
 
-1. In your repository, navigate to **Settings > Code security and analysis**.
-1. Select the **Enable** button next to **GitHub Advanced Security**
-1. Review the impact of enabling Advanced Security and select **Enable GitHub Advanced Security for this repository**.
-1. Select the **Enable** button next to **Secret scanning**. If you see a **Disable** button, it means that secret scanning was already enabled at organization level.
+1. In your repository, navigate to **Settings**.
+1. In the **Security** section, select **Advanced Security**.
+1. Select the **Enable** button next to **Secret Protection**
+1. Review the impact of enabling and select **Enable Secret Protection**.
+1. If you see a **Disable** button, it means that secret scanning was already enabled at organization level.
 1. Select the **Enable** button next to **Push protection**.
 
 :::image type="content" source="../media/enable-secret-scanning-repo-settings.png" alt-text="Screenshot of secret scanning enabled in repository settings.":::
 
 ## Enable secret scanning for an organization
 
-Enabling secret scanning at the organization level ensures that secret scanning is enabled by default on all private repositories where GitHub Advanced Security is enabled.
+Enabling secret scanning at the organization level ensures that secret scanning is enabled by default on all private repositories where GitHub Advanced Security is enabled. In order to configure, you'll need to set up [GitHub Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security).
 
-Follow these steps to enable secret scanning and push protection for an organization:
-
-1. In your organization, navigate to **Settings > Code security and analysis**.
-2. Select the **Enable all** button next to **GitHub Advanced Security**.
-3. Review the impact of enabling Advanced Security on all repositories and select **Enable all**.
-4. Select the **Enable all** button next to **Secret scanning** and select **Enable for eligible repositories**.
-   - (Optional) Select **Automatically enable for new public repositories and repositories with GitHub Advanced Security enabled**.
-5. Select the **Enable all** button next to **Push protection** and select **Enable for eligible repositories**.
-   - (Optional) Select **Automatically enable for repositories added to secret scanning**.
-
-:::image type="content" source="../media/enable-secret-scanning-org-settings.png" alt-text="Screenshot of enabling secret scanning in organization settings.":::
+Once set up, you can configure [Global Secret Scanning settings](https://docs.github.com/en/code-security/securing-your-organization/enabling-security-features-in-your-organization/configuring-global-security-settings-for-your-organization#configuring-global-secret-scanning-settings).
 
 ## Exclude files from being scanned
 
@@ -57,17 +48,17 @@ When a new secret is detected, GitHub notifies all users with access to security
 - Organization owners and enterprise owners, if they're administrators of repositories where secrets were leaked
 
 > [!NOTE]
-> Commit authors who've accidentally committed secrets will be notified, regardless of their notification preferences.
+> Commit authors who have accidentally committed secrets will be notified, regardless of their notification preferences.
 
 You'll receive an email notification if:
 
 - You're watching the repository.
 - You've enabled notifications for **All Activity** or for custom **Security alerts** on the repository.
-- In your notification settings, under "Subscriptions", then under "Watching", you have selected to receive notifications by email.
+- In your notification settings, under "Subscriptions," then under "Watching," you have selected to receive notifications by email.
 
 ## Configure recipients of secret scanning alerts
 
-Repository and organization administrators can give view access to security alerts to people or teams who have write access to the repository under **Settings > Code security and analysis > Access to alerts**:
+Repository and organization administrators can give view access to security alerts to people or teams who have write access to the repository under **Settings > Security > Advanced Security > Access to Alerts**:
 
 :::image type="content" source="../media/access-to-alerts.png" alt-text="Screenshot of Access to alerts section with Search for people or teams field highlighted.":::
 

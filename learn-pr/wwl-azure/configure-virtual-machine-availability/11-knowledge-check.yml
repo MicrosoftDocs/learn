@@ -2,6 +2,7 @@
 uid: learn.wwl.configure-virtual-machine-availability.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 02/12/2025
@@ -10,6 +11,7 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
+  module_assessment: true
 durationInMinutes: 3
 content: |
   [!include[](includes/11-knowledge-check.md)]

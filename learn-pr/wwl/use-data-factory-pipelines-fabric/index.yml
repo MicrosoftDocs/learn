@@ -1,16 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.use-data-factory-pipelines-fabric
 metadata:
-  title: Orchestrate processes and data movement with Microsoft Fabric
+  title: Orchestrate Processes and Data Movement with Microsoft Fabric
   description: "Use Data Factory pipelines in Microsoft Fabric"
-  ms.date: 05/08/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/23/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: module
-  ms.custom:
-    - build-2023
-    - ignite-2024
-  ms.service: azure
+  ms.collection: N/A
+  ms.service: fabric
   ai-usage: human-only
 title: Orchestrate processes and data movement with Microsoft Fabric
 summary: Microsoft Fabric includes Data Factory capabilities, including the ability to create pipelines that orchestrate data ingestion and transformation tasks.
@@ -25,7 +23,7 @@ abstract: |
 
   -   Run and monitor pipelines.
 prerequisites: Before starting this module, you should be familiar with Microsoft Fabric and data orchestration.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/use-data-factory-pipelines-fabric.svg
 levels:
 - beginner
 roles:
@@ -43,4 +41,4 @@ units:
 - learn.wwl.use-data-factory-pipelines-fabric.knowledge-check
 - learn.wwl.use-data-factory-pipelines-fabric.summary
 badge:
-  uid: learn.wwl.use-data-factory-pipelines-fabric.badge
+  uid: learn.wwl.use-data-factory-pipelines-fabric.badge

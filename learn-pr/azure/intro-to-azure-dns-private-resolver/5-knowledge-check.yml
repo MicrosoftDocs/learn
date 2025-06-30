@@ -9,6 +9,7 @@ metadata:
   author: ricmmartins
   ms.author: ricardomac
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

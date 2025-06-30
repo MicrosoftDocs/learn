@@ -102,3 +102,34 @@ Each category must have a unique name, emoji pairing, and a detailed description
 1. Select **Start discussion**.
 
 That covers a little about how GitHub inspires collaboration. Now let's move to how you can manage notifications, subscribe to threads, and get started with GitHub pages.
+
+### Marking a comment as an answer
+
+In a Q&A style discussion, you can mark a comment as the accepted answer to the original question.
+
+1. Navigate to the discussion.
+2. Locate the comment that best answers the original question.
+3. Select **Mark as answer** below the comment.
+
+The comment will be highlighted, making it easy for others to find the solution quickly. You can also unmark an answer if needed.
+
+### Converting a discussion to an issue
+
+If a discussion leads to work that needs to be tracked, you can convert the discussion into an issue.
+
+1. Navigate to the discussion you want to convert.
+2. Select the **`...`** (three dots) menu at the top-right of the discussion.
+3. Select **Convert to issue**.
+4. Confirm the conversion and select a repository to create the new issue in.
+
+This keeps track of actionable work that originates from community conversations.
+
+### Pinning a discussion
+
+You can pin important discussions to the top of the Discussions page for better visibility.
+
+1. Navigate to the discussion you want to pin.
+2. Select the **`...`** (three dots) menu at the top-right of the discussion.
+3. Select **Pin discussion**.
+
+Pinned discussions are helpful for highlighting announcements, important questions, or ongoing topics the community should notice.

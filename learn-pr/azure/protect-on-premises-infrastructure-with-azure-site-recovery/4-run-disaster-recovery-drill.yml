@@ -3,9 +3,9 @@ uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.4-run-dis
 metadata:
   title: Run a disaster recovery drill
   description: Understand recovery time and recovery point objectives. Then, see how a recovery drill can test that Azure Site Recovery was configured correctly to meet these objectives.
-  ms.date: 01/25/2025
-  author: ankitaduttaMSFT
-  ms.author: ankitadutta
+  ms.date: 05/23/2025
+  author: jsuri
+  ms.author: jsuri
   ms.topic: unit
 title: Run a disaster recovery drill
 durationInMinutes: 7
@@ -30,12 +30,12 @@ quiz:
       explanation: This measurement has no impact on the RTO.
   - content: "When you monitor a recovery from the recovery services vault, which of the following statistics can be viewed on the Site Recovery dashboard?"
     choices:
-    - content: Replicated items, monitoring of test failovers, and monitoring of configuration issues
+    - content: Replicated items, monitoring of test failovers, and monitoring of configuration issues.
       isCorrect: true
       explanation: All of these items can be viewed from the Recovery Services vault dashboard.
-    - content: Replicated items, vault status, and network status
+    - content: Replicated items, vault status, and network status.
       isCorrect: false
       explanation: These items can't be viewed from the Recovery Services dashboard.
-    - content: Monitoring of configuration issues, vault status, and DHCP replication status
+    - content: Monitoring of configuration issues, vault status, and DHCP replication status.
       isCorrect: false
-      explanation: These items can't be viewed from the Recovery Services dashboard.
+      explanation: These items can't be viewed from the Recovery Services dashboard.
