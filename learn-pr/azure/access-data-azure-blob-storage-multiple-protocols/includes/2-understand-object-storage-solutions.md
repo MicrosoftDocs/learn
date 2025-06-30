@@ -26,7 +26,7 @@ With a hierarchical namespace enabled on a storage account, you can achieve the 
 
 - **Atomic directory manipulation**: A hierarchical namespace stores objects in a directory hierarchy using a convention of embedding slashes (/) in the object name to denote path segments. You can improve the latency due to atomic directory manipulation, which a hierarchical namespace enables.
 
-- **Familiar interface style**: File systems with a hierarchical namespace are widely accepted by the developer community and are suitable for storage workloads designed for file systems that manipulate directories.
+- **Familiar interface style**: The developer community widely accepts file systems with a hierarchical namespace, and these file systems are suitable for storage workloads designed for directory manipulation.
 
 ## Understand Azure Data Lake Storage Gen2
 
