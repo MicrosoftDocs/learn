@@ -6,7 +6,7 @@ metadata:
   description: "This unit provides guidance on how to manage HoloLens app updates."
   ms.date: 06/11/2024
   author: aprilgittens
-  ms.author: tholewis
+  ms.author: apspeigh
   ms.topic: unit
 durationInMinutes: 4
 content: |

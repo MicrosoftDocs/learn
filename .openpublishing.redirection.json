@@ -50721,6 +50721,56 @@
       "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/6-summary.md",
       "redirect_url": "/training/modules/get-started-computer-vision-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/2-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/3-create-configure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/4-exercise-create-configure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/5-store-session-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/6-exercise-store-session-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/7-exercise-deploy-app-service.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
     }
   ]
 }
