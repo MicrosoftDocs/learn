@@ -99,6 +99,6 @@ Each category must have a unique name, emoji pairing, and a detailed description
 
    :::image type="content" source="../media/start-a-new-discussion.png" alt-text="A screenshot of starting a new discussion page with the Discussion title box and content box empty." border="false":::
 
-1. Select **Start discussion**.
+1. In your repository, go to the Discussions tab and select **Start discussion**.
 
 That covers a little about how GitHub supports collaborative work. Now let's move to how you can manage notifications, subscribe to threads, and get started with GitHub pages.
