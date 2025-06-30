@@ -44,7 +44,7 @@ Include them in the pull request description or a commit message (not the title)
 
 ### Issue hierarchy and custom fields
 
-GitHub Issues now supports advanced planning features:
+GitHub Issues supports advanced planning features:
 
 * **Issue types** – Classify issues (e.g., Task, Bug, Feature).
 * **Sub-issues** – Break down complex work into smaller, trackable parts.
