@@ -113,7 +113,7 @@ By planning ahead, you can ensure a smooth integration that keeps your organizat
 
 As your enterprise scales, automating the management of permissions across multiple organizations is essential for maintainability.
 
-#### Key Practices:
+#### Key Practices
 
 This section highlights key practices for scripting and automation to manage permissions consistently and securely as your enterprise grows. Following these practices helps streamline administration, minimize manual errors, and maintain strong governance.
 
