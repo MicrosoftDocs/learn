@@ -6020,3 +6020,8 @@ achievements:
   title: Fundamentals of optical character recognition
   summary: Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.
   iconUrl: /training/achievements/read-text-computer-vision.svg
+- uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.badge
+  type: badge
+  title: Accelerate a Spring Boot application with Azure Cache for Redis
+  summary: Learn how to use Azure Cache for Redis to cache business data and HTTP session data in a Java Spring Boot application, then publish the application to the cloud.
+  iconUrl: /training/achievements/accelerate-scale-spring-boot-application-azure-cache-redis.svg
