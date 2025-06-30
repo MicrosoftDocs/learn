@@ -1,4 +1,3 @@
-
 CodeQL treats code like data. You create a database by using queryable data that you extract from your codebase. Then you can run CodeQL queries on this database to identify security vulnerabilities, bugs, and other errors. You can write your own queries or run standard CodeQL queries written by GitHub researchers and community contributors.
 
 In this unit, you learn how to create a database. This step is required before you can analyze your code. You need to create a CodeQL database that contains all the data necessary to run queries on your code.
