@@ -6,13 +6,13 @@ This module uses resources made available to you via the sandbox, which provides
 
 To begin, create a repository by using a GitHub template. A series of repository templates are available, which contain a starter app implemented in various front end frameworks.
 
-1. Go to the GitHub [create from template page](https://github.com/login?return_to=/MicrosoftDocs/mslearn-staticwebapp-api/generate?azure-portal=true) to open the template repository.
+1. Go to the GitHub [create from template page](https://github.com/login?return_to=/MicrosoftDocs/mslearn-staticwebapp-api/generate?azure-portal=true).
 
-1. If prompted for _Owner_, select one of your GitHub accounts.
+1. If prompted for *Owner*, select one of your GitHub accounts.
 
-1. For _repository name_, enter **my-static-web-app-and-api**.
+1. For *Repository name*, enter **my-static-web-app-and-api**.
 
-1. Select **Create repository from template**.
+1. Select **Create repository**.
 
     As you create the project from a template, GitHub builds your repository in the background.
 
@@ -29,11 +29,11 @@ Now you have a GitHub repository named **my-static-web-app-and-api** in your Git
     Make sure to replace `<YOUR_GITHUB_USERNAME>` with your GitHub username.
 
    ```bash
-   git clone https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app-and-api
+   git clone https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app-and-api.git
    ```
 
    > [!NOTE]
-   > If you have trouble copying into the command prompt terminal, right-click the icon in the title bar, and in the **Properties** tab, ensure that **Use Ctrl+Shift+C/V as Copy/Paste** is checked.
+   > If you have trouble copying into the command prompt terminal, right-click the icon in the title bar, and in the **Properties** tab, ensure **Use Ctrl+Shift+C/V as Copy/Paste** is checked.
 
 1. Change to the directory for the source code you cloned.
 
@@ -291,7 +291,7 @@ Current Azure and GitHub authenticated sessions are required to create a static 
 ::: zone-end
 
    > [!NOTE]
-   > This repository differs from other projects you may have used in the past. This project contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. Typically, you'd have only one app in the root of your repository and thus the default `/` for the app path location. This is a great example of how Azure Static Web Apps lets you configure locations in the first place - you have full control over how the app is built.
+   > This repository differs from other projects you might be used to. This project contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. Typically, you'd have only one app in the root of your repository and thus the default `/` for the app path location. This structure is a great example of how Azure Static Web Apps lets you configure locations in the first place - you have full control over how the app is built.
 
 3. Once the app is created, a confirmation notification is shown in Visual Studio Code.
 
@@ -316,7 +316,7 @@ Current Azure and GitHub authenticated sessions are required to create a static 
 Congratulations! Your app is deployed to Azure Static Web Apps!
 
 > [!NOTE]
-> Don't worry if you see a web page that states the app hasn't been built and deployed yet. Try refreshing the browser in a minute. The GitHub Action service runs automatically when the Azure Static Web App is created. So if you see the splash page, the app is still being deployed.
+> Don't worry if you see a web page that states the app isn't built and deployed yet. Try refreshing the browser in a minute. The GitHub Action service runs automatically when the Azure Static Web App is created. So if you see the splash page, the app is still being deployed.
 
 ### Pull the changes from GitHub
 

@@ -2,7 +2,7 @@
 uid: learn.measure-mitigate-risks-azure-ai-studio
 metadata:
   ms.author: apspeigh
-  author: aprilspeight
+  author: aprilgittens
   ms.date: 09/14/2024
   title: Measure and mitigate risks for a generative AI app in Azure AI Foundry
   description: Learn how to measure and mitigate risks for a generative AI app leveraging responsible AI tools and features within Azure AI Foundry.
