@@ -5,6 +5,11 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.analyze-logs-with-kql.badge
+  type: badge
+  title: Guided project - Analyze logs in Azure Monitor with KQL
+  summary: Write log queries to find answers to operational and business questions. Use Kusto Query Language (KQL) to extract insights from logs in Azure Monitor.
+  iconUrl: /training/achievements/analyze-logs-with-kql.svg
 - uid: learn.azure.characterize-dataset-azure-data-explorer.badge
   type: badge
   title: Characterize an unfamiliar dataset with Azure Data Explorer
@@ -5794,7 +5799,7 @@ achievements:
   type: badge
   title: Generate code with Azure OpenAI Service
   summary: This module shows engineers how to use the Azure OpenAI Service to generate and improve code.
-  iconUrl: /learn/achievements/generic-badge.svgz
+  iconUrl: /learn/achievements/generic-badge.svg
 - uid: learn.azure.cloud-adoption-framework-plan.badge
   type: badge
   title: Prepare for cloud adoption with a data-driven plan
@@ -5810,6 +5815,91 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.monitor-authentication-methods.badge
+  type: badge
+  title: Monitor and report on authentication methods used in Microsoft Entra ID
+  summary: This module teaches you how to create a Microsoft Entra workbook that helps you to create a report of the authentication methods used in your tenant.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.student-evangelism.practice-active-listening.badge
+  type: badge
+  title: Work with others by practicing active listening
+  summary: Learn how to work with others by practicing active listening.
+  iconUrl: /training/achievements/tech-resilience/practice-active-listening.svg
+- uid: learn.student-evangelism.communicate-strategically-mirror-coach.badge
+  type: badge
+  title: Communicate with others strategically through mirroring and coaching
+  summary: Learn how to communicate with others strategically through mirroring and coaching.
+  iconUrl: /training/achievements/tech-resilience/communicate-strategically.svg
+- uid: learn.student-evangelism.self-regulation-work-strategically.badge
+  type: badge
+  title: Use self-regulation to work strategically
+  summary: In this module, you'll learn about using self-regulation to respond effectively to challenges. You'll also use goal-orientation theory to diagnose what motivates you to learn.
+  iconUrl: /training/achievements/tech-resilience/self-regulation.svg
+- uid: learn.student-evangelism.grow-cognitive-flexibility.badge
+  type: badge
+  title: Grow your cognitive flexibility
+  summary: In this module, you'll learn about the importance of cognitive flexibility in the field of technology. You'll learn about the benefits of stepping back and expanding your outlook and using feedback effectively. Finally, you'll learn how to reorient and persist in challenging situations.
+  iconUrl: /training/achievements/tech-resilience/grow-cognitive-flexibility.svg
+- uid: learn.student-evangelism.give-receive-effective-feedback.badge
+  type: badge
+  title: Give and receive effective feedback
+  summary: In this module, you'll learn how to give and receive effective feedback.
+  iconUrl: /training/achievements/tech-resilience/give-receive-feedback.svg
+- uid: learn.student-evangelism.exercise-your-emotional-intelligence.badge
+  type: badge
+  title: Exercise your emotional intelligence
+  summary: Learn how to use your emotional intelligence to help your peers.
+  iconUrl: /training/achievements/tech-resilience/exercise-emotional-intelligence.svg
+- uid: learn.student-evangelism.cultivate-culture-belong-tech.badge
+  type: badge
+  title: Cultivate a culture of belongingness in tech
+  summary: Explore what belonging is, why it matters, and how to recognize it. Learn about historical and current challenges to belonging in tech, and understand what contributes to a climate of belonging, including strategies to build inclusive environments.
+  iconUrl: /training/achievements/tech-resilience/culture-belonging.svg
+- uid: learn.student-evangelism.enhance-self-efficacy.badge
+  type: badge
+  title: Enhance your self-efficacy
+  summary: Develop a mindset that will set you up for success in technology.
+  iconUrl: /training/achievements/tech-resilience/enhance-self-efficacy.svg
+- uid: learn.student-evangelism.tech-resilience.trophy
+  type: trophy
+  title: Build your tech resilience
+  summary: Far too many talented people avoid choosing or actively decide to leave tech because it can be unwelcoming. Our mission? To help build a more inclusive future for the tech industry by fostering confidence, a growth mindset, resilience, and a sense of belonging. Start here to grow more as an individual and team and learn useful strategies that have a strong research base of evidence for improving effectiveness in the workplace. By the end of this series, we hope you have a new way of taking ownership over your problem-solving process, which you can apply when debugging code or when working with a team under a tight deadline.
+  iconUrl: /training/achievements/tech-resilience/path.svg
+- uid: learn.student-evangelism.develop-growth-mindset.badge
+  type: badge
+  title: Develop a growth mindset
+  summary: "In this module, you'll learn to distinguish between two mindsets: a growth mindset and a fixed mindset. When you adopt a growth mindset, you set yourself up for success and are able to take on new challenges."
+  iconUrl: /training/achievements/tech-resilience/develop-growth-mindset.svg
+- uid: learn.career-interview.badge
+  type: badge
+  title: Successful interviewing
+  summary: In this module, you'll learn how to prepare for technical and nontechnical interviews. You'll also get recommendations on how to best carry out an interview.
+  iconUrl: /training/achievements/student-evangelism/career-interview.svg
+- uid: learn.career-growth.badge
+  type: badge
+  title: From intern to full-time position
+  summary: You've landed your first job in tech as an intern, so now what? Learn strategies to growth-hack your career to ensure that you'll get an offer to join the company full-time after the internship is over.
+  iconUrl: /training/achievements/student-evangelism/career-growth.svg
+- uid: learn.start-career-in-tech.trophy
+  type: trophy
+  title: Start in tech as an intern
+  summary: A great way to start in tech is by landing a position as an intern. But how do you that? To get there, you need to consider things like, crafting a resume and passing an intern interview. Once an intern, you want to make sure that position turns into a full-time position in tech.
+  iconUrl: /training/achievements/start-career-in-tech.svg
+- uid: learn.career-get-noticed.badge
+  type: badge
+  title: How to get noticed
+  summary: Getting noticed by prospective employers is the first step toward landing a job in tech. This module offers plenty of helpful tips and strategies.
+  iconUrl: /training/achievements/student-evangelism/career-get-noticed.svg
+- uid: learn.student-evangelism.use-apis-discover-museum-art.badge
+  type: badge
+  title: Explore the art world by using RESTful APIs
+  summary: Learn about how to build a basic API, how to query APIs, and authentication strategies in Python and JavaScript while discovering unique art by using museum APIs.
+  iconUrl: /training/achievements/use-apis-discover-museum-art.svg
+- uid: learn.advocates.create-web-app-with-refreshable-models.badge
+  type: badge
+  title: Build a Web App with Refreshable Machine Learning Models
+  summary: Build a web app powered by machine learning models trained using Custom Vision AI service, and learn how to refresh them with GitHub Actions.
+  iconUrl: /training/achievements/advocates/create-web-app-with-refreshable-models.svg
 - uid: learn.language.react-work-with-components-and-data.badge
   type: badge
   title: Working with data and properties in React components
@@ -5900,3 +5990,88 @@ achievements:
   title: Replace client-side polling with ASP.NET Core SignalR
   summary: In this module, you use ASP.NET Core SignalR to replace client-side polling functionality in an existing web app.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.dotnet-debug-visual-studio-app-service.badge
+  type: badge
+  title: Remotely debug ASP.NET Core apps hosted on Azure App Service using Visual Studio
+  summary: Learn how to remotely debug your ASP.NET Core apps on Azure App Service directly using Visual Studio 2022.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.persist-data-ef-core.badge
+  type: badge
+  title: Persist and retrieve relational data by using Entity Framework Core
+  summary: Query and manage relational data in an Entity Framework Core (EF Core) app by using an object-relational mapper (ORM).
+  iconUrl: /training/achievements/aspnetcore/persist-data-ef-core.svg
+- uid: learn.aspnet-core-signalr.badge
+  type: badge
+  title: Introduction to ASP.NET Core SignalR
+  summary: In this introductory module, you'll learn what ASP.NET Core SignalR is, how it works, and when to use it.
+  iconUrl: /training/achievements/aspnetcore/aspnet-core-signalr.svg
+- uid: learn.azure.create-your-first-text-to-speech-app.badge
+  type: badge
+  title: Create your first Azure AI services text to speech application
+  summary: Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure's text to speech features. In this module, you'll learn how to use Azure AI services to create a text to speech application that uses both plain text and Speech Synthesis Markup Language (SSML) to create audio files.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.create-your-first-speech-to-text-app.badge
+  type: badge
+  title: Create your first Azure AI speech to text application
+  summary: Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure's speech to text features. In this module, you'll learn how to use Azure AI services to create a speech to text application that converts a sample WAVE file into text.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.orleans-build-first-app.badge
+  type: badge
+  title: Build your first Orleans app with ASP.NET Core 8.0
+  summary: Learn how to build cloud-native, distributed apps with Orleans.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.windows.windows-best-app-framework.badge
+  type: badge
+  title: Choose the best UI framework for a native Windows development project
+  summary: Windows developers have various options for creating applications that run on Windows. This module introduces the native Windows UI frameworks that are available for Windows development. It also provides guidance on how to choose the best framework for your application.
+  iconUrl: /learn/achievements/windows-best-app-framework.svg
+- uid: learn.wwl.detect-analyze-faces.badge
+  type: badge
+  title: Fundamentals of Facial Recognition
+  summary: Face detection and analysis are important capabilities for artificial intelligence (AI) solutions. Azure AI Face service makes it easy integrate these capabilities into your applications.
+  iconUrl: /learn/achievements/detect-analyze-faces.svg
+- uid: learn.wwl.document-intelligence-knowledge-mining.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Document Intelligence and Knowledge Mining'
+  summary: 'Explore two AI workloads: document intelligence and knowledge mining.'
+  iconUrl: /training/achievements/document-intelligence-knowledge-mining.svg
+- uid: learn.wwl.explore-computer-vision-microsoft-azure.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Computer Vision'
+  summary: Computer vision is an area of artificial intelligence (AI) in which software systems are designed to perceive the world visually, through cameras, images, and video. There are multiple specific types of computer vision problem that AI engineers and data scientists can solve using a mix of custom machine learning models and platform-as-a-service (PaaS) solutions - including many AI services in Microsoft Azure.
+  iconUrl: /learn/achievements/explore-computer-vision-microsoft-azure.svg
+- uid: learn.wwl.get-started-with-artificial-intelligence-on-azure.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: AI Overview'
+  summary: Artificial Intelligence (AI) empowers amazing new solutions and experiences; and Microsoft Azure provides easy to use services to help you get started.
+  iconUrl: /learn/achievements/get-started-with-artificial-intelligence-on-azure.svg
+- uid: learn.azure-introduction-to-azure-search.badge
+  type: badge
+  title: Fundamentals of Knowledge Mining and Azure AI Search
+  summary: Use Azure AI Search to make your data searchable.
+  iconUrl: /training/achievements/azure-introduction-to-azure-search.svg
+- uid: learn.wwl.analyze-images-computer-vision.badge
+  type: badge
+  title: Fundamentals of Computer Vision
+  summary: Azure AI Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios.
+  iconUrl: /training/achievements/analyze-images-computer-vision.svg
+- uid: learn.wwl.analyze-receipts-form-recognizer.badge
+  type: badge
+  title: Fundamentals of Azure AI Document Intelligence
+  summary: Document processing is a common task in many business scenarios. Organizations can use Azure AI Document Intelligence to automate data extraction across document types, such as receipts, invoices, and more.
+  iconUrl: /training/achievements/analyze-receipts-form-recognizer.svg
+- uid: learn.wwl.read-text-computer-vision.badge
+  type: badge
+  title: Fundamentals of optical character recognition
+  summary: Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.
+  iconUrl: /training/achievements/read-text-computer-vision.svg
+- uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.badge
+  type: badge
+  title: Accelerate a Spring Boot application with Azure Cache for Redis
+  summary: Learn how to use Azure Cache for Redis to cache business data and HTTP session data in a Java Spring Boot application, then publish the application to the cloud.
+  iconUrl: /training/achievements/accelerate-scale-spring-boot-application-azure-cache-redis.svg
+- uid: learn.intro-generative-ai.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Generative AI'
+  summary: "Generative AI is a form of artificial intelligence in which models are trained to generate new original content based on natural language input. In other words, you can describe a desired output in normal everyday language, and the model can respond by creating appropriate text, image, code, and more. \n\nTake this learning path to get started with generative AI. In it, you'll learn how to:\n- Understand core concepts of generative AI\n- Prepare for an AI development project\n- Describe considerations and practices for responsible generative AI\n- Build an AI agent using Azure AI Foundry"
+  iconUrl: /learn/achievements/generic-badge.svg

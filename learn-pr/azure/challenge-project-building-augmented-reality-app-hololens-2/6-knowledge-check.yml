@@ -8,6 +8,7 @@ metadata:
   author: tholewis
   ms.author: tholewis
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 15
 quiz:
   questions:

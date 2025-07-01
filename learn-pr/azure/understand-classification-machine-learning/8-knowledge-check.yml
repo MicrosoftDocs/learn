@@ -8,6 +8,7 @@ metadata:
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

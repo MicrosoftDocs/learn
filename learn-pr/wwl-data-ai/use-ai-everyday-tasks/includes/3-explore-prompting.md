@@ -6,9 +6,9 @@ To get the best out of AI, you want to create prompts that help it give you usef
 
 An effective prompt should be clear, specific, contextual, and goal oriented. By incorporating these elements into your prompts, you can ensure that you get more accurate and relevant responses from AI tools. Remember, the more information and guidance you provide in your prompt, the better Copilot can assist you.
 
-A prompt can be simple or detailed, but you must have a clear goal. If you want to be more specific, add additional information. Often, you need more than just a goal to achieve the results you want. The following graphic describes the four elements of a good prompt: Goal, Context, Sources, and Expectations.
+A prompt can be simple or detailed, but you must have a clear goal. If you want to be more specific, add additional information. Often, you need more than just a goal to achieve the results you want. The following video describes the four elements of a good prompt: Goal, Context, Sources, and Expectations.
 
-![Screenshot showing four parts of a prompt.](../media/03-copilot-prompt-parts.png)
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=44e3d1fb-b9a0-4f63-be7d-59f89a3676d5]
 
 Here are some tips to keep in mind when writing a prompt:
 

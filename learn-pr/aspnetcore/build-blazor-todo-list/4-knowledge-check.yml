@@ -9,6 +9,7 @@ metadata:
   ms.author: daroth
   ms.manager: markl
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:

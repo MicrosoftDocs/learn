@@ -55,7 +55,7 @@ You should choose a company name that's easy to say. There are two parts to this
 
   You can test this attribute objectively. Show 10 people the name of your company written down and ask each one to read out the name. You want nine or (preferably) 10 out of 10 people to get it right the first time. You should also ask whether they had any doubt about how to pronounce it. If you find that some people are unsure how to pronounce your company name, you should probably change it.
 
-- **Does saying it feel good?**
+- **Does it feel good to say it?**
 
   The name of your company should seem like a fit for the kind of business that you want to build. Over the life of your company, you're going to say the name many thousands of times, so it needs to feel right to you.
 
