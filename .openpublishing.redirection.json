@@ -50703,6 +50703,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr/2-what-is-signalr.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr/3-how-signalr-works.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr/4-when-to-use-signalr.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr/index.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/index.md",
       "redirect_url": "/training/modules/get-started-computer-vision-azure/",
       "redirect_document_id": false
