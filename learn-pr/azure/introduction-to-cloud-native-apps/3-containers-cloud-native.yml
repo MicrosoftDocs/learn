@@ -4,9 +4,9 @@ title: Using containers with cloud-native apps
 metadata:
   title: Using containers with cloud-native apps
   description: An overview of containers and kubernetes
-  ms.date: 03/02/2023
-  author: tomreidnz
-  ms.author: jasdeb
+  ms.date: 07/01/2025
+  author: robmcm
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 5
 content: |
