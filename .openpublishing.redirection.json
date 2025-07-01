@@ -51098,11 +51098,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/5-summary.yml",
-      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/index.yml",
       "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
       "redirect_document_id": false
