@@ -23,11 +23,11 @@ Connected agents should be designed with a single responsibility in mind. This m
 
 1. **Initialize the agents client**
 
-    First, you create a client that will connect to your Azure AI Foundry project.
+    First, you create a client that connects to your Azure AI Foundry project.
 
 1. **Create an agent to connect to the main agent**
 
-   Define an agent that will be connected to the main agent. You can do this using the `create_agent` method on the `AgentsClient` object. 
+   Define an agent you want to connect to the main agent. You can do this using the `create_agent` method on the `AgentsClient` object. 
    
    For example, your connected agent might retrieve stock prices, summarize documents, or validate compliance. Give the agent clear instructions that define its purpose.
 
@@ -41,7 +41,7 @@ Connected agents should be designed with a single responsibility in mind. This m
 
 1. **Create a thread and send a message**
 
-    Create the agent thread that will be used to manage the conversation context. Then create a message on the thread that contains the request you want the agent to fulfill.
+    Create the agent thread that is used to manage the conversation context. Then create a message on the thread that contains the request you want the agent to fulfill.
 
 1. **Run the agent workflow**
 

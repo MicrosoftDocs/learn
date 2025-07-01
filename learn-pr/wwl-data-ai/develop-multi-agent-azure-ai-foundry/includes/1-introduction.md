@@ -2,4 +2,4 @@ Azure AI Foundry Agent Service can help you develop sophisticated, multi-agent s
 
 Imagine you're on an engineering team that receives a constant flow of support tickets including bugs, feature requests, and infrastructure issues. Manually reviewing and sorting each one takes time and slows down your team’s ability to respond quickly. With a multi-agent approach, you can build a triage assistant that assigns different tasks to specialized agents. The sub-agents might perform tasks such as classifying ticket type, setting priority, and suggesting the right team for the work. With a multi-agent approach, these specialized agents can work together to streamline the ticketing process.
 
-In this module, you'll learn how to use connected agents in Azure AI Foundry. You'll also practice building an intelligent ticket triage system using a collaborative mutli-agent solution.
+In this module, you learn how to use connected agents in Azure AI Foundry. You also practice building an intelligent ticket triage system using a collaborative mutli-agent solution.

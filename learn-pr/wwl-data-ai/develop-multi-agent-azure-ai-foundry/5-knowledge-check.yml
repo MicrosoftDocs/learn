@@ -22,7 +22,7 @@ quiz:
       explanation: "Correct. The main agent handles intent recognition and delegates work to connected agents."
     - content: "To monitor agent performance and generate logs"
       isCorrect: false
-      explanation: "Incorrect. Logging is not the role of the main agent."
+      explanation: "Incorrect. Logging isn't the role of the main agent."
   - content: "How do you connect an agent to a main agent using the Azure AI Projects client library?"
     choices:
     - content: "Add the agent as a `ConnectedAgentTool` to the main agent's tool definition."
@@ -30,10 +30,10 @@ quiz:
       explanation: "Correct. You register the agent as a tool and include it when configuring the main agent."
     - content: "Use the `link_agents()` method to bind the sub-agent to the main agent."
       isCorrect: false
-      explanation: "Incorrect. There is no such method; connected agents are registered as tools."
+      explanation: "Incorrect. There isn't such a method; connected agents are registered as tools."
     - content: "Set the main agent's parent_id to the sub-agent's agent ID."
       isCorrect: false
-      explanation: "Incorrect. Agent relationships are not configured through ID inheritance."
+      explanation: "Incorrect. Agent relationships aren't configured through ID inheritance."
   - content: "How does the main agent decide which connected agent to use?"
     choices:
     - content: "It uses prompt instructions and natural language understanding."
