@@ -42,7 +42,7 @@ quiz:
     - content: "`targetScope = 'managementGroup'`"
       isCorrect: true
       explanation: |
-        Correct. You should deploy the role definition to the root management group, so that it is inherited by all your Azure resources throughout your organization.
+        Correct. You should deploy the role definition to the root management group, so that all your Azure resources throughout your organization inherit it.
         Role definitions can't be created at the tenant scope.
     - content: "`targetScope = 'subscription'`"
       isCorrect: false
