@@ -51156,6 +51156,51 @@
       "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/2-identify-scenarios.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/3-knowledge-check-identify-scenarios.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/4-identify-factors.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/5-knowledge-check-identify-factors.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/6-autoscale-a-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/7-exercise-autoscale-a-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
     }
   ]
 }
