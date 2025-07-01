@@ -1,14 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.cloud-scale-messaging-jms-service-bus
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable asynchronous messaging in Java apps by using JMS and Azure Service Bus
   description: Send messages to and receive messages from Azure Service Bus with Spring Boot applications.
   ms.date: 11/11/2024
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: spelluru
+  author: spelluru
+  ms.author: spelluru
   ms.topic: module
   ms.service: azure-service-bus
 title: Enable asynchronous messaging in Java apps by using JMS and Azure Service Bus
@@ -40,4 +37,3 @@ units:
 - learn.azure.cloud-scale-messaging-jms-service-bus.7-summary
 badge:
   uid: learn.azure.cloud-scale-messaging-jms-service-bus.badge
-

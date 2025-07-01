@@ -2,8 +2,6 @@
 uid: learn.azure.create-resource-manager-template-vs-code.2-explore-template-structure
 title: Explore Azure Resource Manager template structure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Resource Manager template structure
   description: Understand Azure Resource Manager template structure and learn how to write templates and deploy them to Azure.
   ms.date: 10/29/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-explore-template-structure.md)]
-
+

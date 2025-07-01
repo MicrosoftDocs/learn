@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.python-advanced-pytest.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge about pytest parametrize and fixtures
   ms.date: 4/12/2024
   author: alfredodeza
@@ -11,6 +11,7 @@ metadata:
     - team=nextgen
     - devx-track-python
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 1
 content: |
 quiz:

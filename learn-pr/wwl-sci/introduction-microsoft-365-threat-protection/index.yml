@@ -3,8 +3,8 @@ uid: learn.wwl.introduction-microsoft-365-threat-protection
 metadata:
   title: Introduction to Microsoft Defender XDR threat protection
   description: "Introduction to Microsoft 365 threat protection"
-  ms.date: 05/10/2023
-  author: wwlpublish
+  ms.date: 04/28/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: defender-xdr

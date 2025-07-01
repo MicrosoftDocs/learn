@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.powershell-write-first.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Check your knowledge
+  title: Module assessment
   description: Review what you learned in this module.
   ms.date: 10/07/2024
   author: michaeltlombardi
   ms.author: mlombardi
   ms.topic: unit
   ms.custom:
+  module_assessment: true
 durationInMinutes: 2
 quiz:
   title: Check your knowledge

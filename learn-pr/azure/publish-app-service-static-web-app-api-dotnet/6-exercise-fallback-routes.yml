@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-static-web-app-and-api-dotnet.6-exercise-fallback-routes
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create your fallback routes
   description: Exercise - Create your fallback routes
   ms.date: 03/04/2025
@@ -19,4 +17,4 @@ title: Exercise - Create your fallback routes
 durationInMinutes: 4
 content: |
   [!include[](includes/6-exercise-fallback-routes.md)]
-
+

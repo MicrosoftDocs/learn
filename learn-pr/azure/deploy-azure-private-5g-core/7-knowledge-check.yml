@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.deploy-azure-private-5g-core.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Checks that you successfully learned the deployment tasks for the Azure Private 5G Core service.
   ms.date: 06/24/2024
   author: joemarshallmsft
   ms.author: joemarshall
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 6
 content: |
 quiz:
@@ -71,4 +70,4 @@ quiz:
       isCorrect: false
       explanation: Try Again. Customer-defined keys don't exist.
       
-
+

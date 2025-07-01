@@ -24,15 +24,15 @@ The interval frequency depends on what you want to monitor. For example, you'd u
 
 ### Protocols
 
-To monitor your network, you'll need to use a secure network-management protocol that consumes minimum bandwidth. You want to keep your network secure and prevent unnecessary load on network performance. The following are some network management protocols that you can use:
+To monitor your network, you'll need to use a secure network-management protocol that consumes minimum bandwidth. You want to keep your network secure and prevent unnecessary load on network performance. The following are some network-management protocols that you can use:
 
 - **Simple Network Management Protocol (SNMP)**
 
-  Like switches and routers, the majority of Linux servers and network devices use SNMP. An SNMP-based agent is preinstalled on the device and allows for configuration. The SNMP agent collects things like traffic on the network switch, memory usage, or even printer queues. The SNMP protocol communicates information about the device to the network monitoring and management solution (NMS).
+  Like switches and routers, the majority of Linux servers and network devices use SNMP. An SNMP-based agent is preinstalled on the device and allows for configuration. The SNMP agent collects data on things like traffic on the network switch, memory usage, or even printer queues. The SNMP protocol communicates information about the device to the network monitoring and management solution (NMS).
 
 - **Windows Management Instrumentation (WMI)**
 
-  Windows devices use WMI to provide information about the status of the device. You can also use WMI to make changes to devices, such as scheduling processes to trigger or updating system properties and settings. Windows Management Infrastructure is a newer version of WMI that has upgraded capabilities, such as better integration with PowerShell to run commands and scripts.
+  Windows devices use WMI to provide information about the device's status. You can also use WMI to make changes to devices, such as scheduling processes to trigger or updating system properties and settings. Windows Management Infrastructure is a newer version of WMI that has upgraded capabilities, such as better integration with PowerShell to run commands and scripts.
 
 - **System Logging Protocol (Syslog)**
 

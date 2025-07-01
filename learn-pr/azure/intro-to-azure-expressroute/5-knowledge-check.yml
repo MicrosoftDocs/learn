@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-expressroute.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check.
-  ms.date: 12/22/2023
+  ms.date: 04/30/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]

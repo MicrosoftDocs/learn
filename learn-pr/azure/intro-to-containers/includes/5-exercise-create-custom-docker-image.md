@@ -104,7 +104,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     docker run -p 8080:80 -d --name reservations reservationsystem
     ```
 
-1. Start a web browser and navigate to `http://localhost:8080/api/reservations/1`. You should see a JSON object containing the data for reservation number 1 similar to the following output:
+1. Start a web browser and navigate to `http://localhost:8080/api/reservations/1`. You should get a JSON object containing the data for reservation number 1 similar to the following output:
 
     :::image type="content" source="../media/5-hotel-web-app.png" alt-text="Screenshot of the hotel reservations system web app running in a browser.":::
 

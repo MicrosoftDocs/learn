@@ -42,17 +42,17 @@ As a best practice, we recommend you document the following in a GitHub wiki or 
 
 ### Create workflow templates
 
-Workflow templates are a great way to ensure automation is reused and maintained in your enterprise. Both in Enterprise Cloud and Enterprise Server, users with write access to an organization's `.github` repository can create workflow templates that will be available for use to the other organization's members with the same write access. Workflow templates can then be used to create new workflows in the public and private repositories of the organization.
+Workflow templates are a great way to ensure automation is reused and maintained in your enterprise. Both in Enterprise Cloud and Enterprise Server, users with write access to an organization's .github repository can create workflow templates that will be available for use to the other organization's members with the same write access. Workflow templates can then be used to create new workflows in the public and private repositories of the organization.
 
 Creating a workflow template is done in two steps:
 
-1. Create a `yml` workflow file.
-2. Create a `json` metadata file that describes how the template should be presented to users when they're creating a workflow.
+1. Create a yml workflow file.
+2. Create a json metadata file that describes how the template should be presented to users when they're creating a workflow.
 
     > [!Note]
-    > The metadata file must have the same name as the workflow file. Instead of the `.yml` extension, it must be appended with `.properties.json`. For example, a file named `octo-organization-ci.properties.json` contains the metadata for the workflow file named `octo-organization-ci.yml`.
+    > The metadata file must have the same name as the workflow file. Instead of the .yml extension, it must be appended with .properties.json. For example, a file named octo-organization-ci.properties.json contains the metadata for the workflow file named octo-organization-ci.yml.
 
-Both files must be placed in a public `.github` repository and in a directory named `workflow-templates`. You might have to create these if they don't already exist in your organization.
+Both files must be placed in a public .github repository and in a directory named workflow-templates. You might have to create these if they don't already exist in your organization.
 
 The following is an example of a basic workflow file:
 
@@ -76,10 +76,9 @@ jobs:
         run: echo Hello from Octo Organization
 ```
 
-Note that the preceding file uses a `$default-branch` placeholder. When a workflow is created using your template, this placeholder is automatically replaced with the name of the repository's default branch.
+Note that the preceding file uses a $default-branch placeholder. When a workflow is created using your template, this placeholder is automatically replaced with the name of the repository's default branch.
 
 Following is the metadata file you would create for the workflow file:
-
 ```json
 {
     "name": "Octo Organization Workflow",
@@ -96,16 +95,155 @@ Following is the metadata file you would create for the workflow file:
 }
 ```
 
+<!-- INFOMAGNUS UPDATES for sub OD 4.1.1. go here. Source Material:https://docs.github.com/en/enterprise-cloud@latest/actions/sharing-automations/sharing-actions-and-workflows-with-your-enterprise -->
+
 Metadata files use the following parameters:
 
 |   Parameter    |                                                                                                                   Description                                                                                                                   |      Required      |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
-|     `name`     |                                                                                   Name of the workflow template displayed in the list of available templates.                                                                                    | Yes |
-| `description`  |                                                                                Description of the workflow template displayed in the list of available templates.                                                                                | Yes |
-|   `iconName`   | Defines an icon for the workflow's entry in the template list. Must be an SVG icon of the same name, and must be stored in the `workflow-templates` directory. For example, an SVG file named `example-icon.svg` is referenced as `example-icon`. | No |
-|  `categories`  |                                      Defines the language category of the workflow. When a user views the available templates, the templates that match the same language will feature more prominently.                                      |        No         |
-| `filePatterns` |                                                       Enables the template to be used if the user's repository has a file in its root directory that matches a defined regular expression.                                                       |        No         |
+|     name     |                                                                                   Name of the workflow template displayed in the list of available templates.                                                                                    | Yes |
+| description  |                                                                                Description of the workflow template displayed in the list of available templates.                                                                                | Yes |
+|   iconName   | Defines an icon for the workflow's entry in the template list. Must be an SVG icon of the same name, and must be stored in the workflow-templates directory. For example, an SVG file named example-icon.svg is referenced as example-icon. | No |
+|  categories  |                                      Defines the language category of the workflow. When a user views the available templates, the templates that match the same language will feature more prominently.                                      |        No         |
+| filePatterns |                                                       Enables the template to be used if the user's repository has a file in its root directory that matches a defined regular expression.                                                       |        No         |
 
 Once a workflow template is created, users in your organization can find it under **Actions > New workflow > Workflows created by _your_organization_name**.
 
 :::image type="content" source="../media/workflow-template.png" alt-text="Workflow template example." border="false":::
+
+## Reusable Templates for Actions and Workflows
+
+GitHub Actions allows for **workflow automation**, and a key part of managing workflows efficiently is using **reusable templates**. Reusable templates help standardize and streamline development across multiple repositories, reducing redundancy and improving maintainability.
+
+Reusable templates in GitHub Actions refer to **predefined actions and workflows** that can be referenced and used across multiple projects. They ensure consistency and compliance with enterprise-wide standards.
+
+### Types of reusable templates
+
+| **Template Type**      | **Purpose**                                      | **Example**                                |
+| ---------------------- | ------------------------------------------------ | ------------------------------------------ |
+| **Reusable Workflows** | Standardize CI/CD pipelines across repositories. | `ci-pipeline.yml`, `deploy-app.yml`        |
+| **Reusable Actions**   | Encapsulate common automation logic.             | `setup-env-action`, `security-scan-action` |
+| **Workflow Templates**  | Define reusable job structures.                  | `test-job.yml`, `build-job.yml`            |
+
+### Reusable workflows
+
+A **reusable workflow** is a workflow defined in a separate repository that can be referenced in multiple projects. This allows organizations to **centralize** their CI/CD logic.
+
+####  Structure of a reusable workflow
+
+A reusable workflow is stored in `.github/workflows/` and uses the **`workflow_call`** trigger.
+
+#### Example: Standardized CI workflow (ci-pipeline.yml)
+
+```yaml
+name: CI Pipeline
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        required: true
+        type: string
+    secrets:
+      npm-token:
+        required: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ inputs.node-version }}
+          registry-url: 'https://npm.pkg.github.com/'
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Tests
+        run: npm test
+```
+
+#### Using a reusable workflow in another repository
+
+Once defined, the reusable workflow can be used in any repository via the **`uses:`** keyword.
+
+**Example:** Calling the reusable workflow
+
+```yaml
+name: Reusable CI Pipeline
+on: push
+jobs:
+  test:
+    uses: org/reusable-workflows/.github/workflows/ci-pipeline.yml@v1
+    with:
+      node-version: '16'
+    secrets:
+      npm-token: ${{ secrets.NPM_TOKEN }}
+```
+
+#### Benefits of using a reusable workflow
+
+- Ensures all repositories follow the same CI/CD structure.  
+- Reduces redundancy and maintenance overhead.  
+- Allows for **centralized updates** without modifying each repository.
+
+### Reusable actions
+
+A **GitHub Action** is a modular, reusable unit that executes specific automation tasks. Organizations often create custom actions to **encapsulate frequently used logic**.
+
+#### Structure of a reusable action
+
+A reusable action is defined in an **action repository** with an `action.yml` file.
+
+**Example:** Custom Setup Environment Action
+
+```yaml
+name: "Setup Environment"
+description: "Sets up Node.js and installs dependencies"
+inputs:
+  node-version:
+    description: "Node.js version"
+    required: true
+  registry-url:
+    description: "NPM Registry URL"
+    required: false
+    default: "https://registry.npmjs.org/"
+runs:
+  using: "node16"
+  main: "index.js"
+```
+
+#### Using a reusable action in a workflow
+
+Instead of repeating setup steps in every workflow, we use our custom action:
+
+```yaml
+name: Build & Test
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Environment
+        uses: org/actions/setup-env@v1
+        with:
+          node-version: '16'
+```
+
+**Benefits:** 
+- Reduces duplication of setup logic across repositories.  
+- Simplifies workflow files, making them more readable.  
+- Centralizes updates—fixes or improvements in one place reflect across all workflows.
+
+### Workflow templates
+
+As discussed earlier, workflow templates help standardize automation across your organization by providing predefined structures for common tasks. These templates are a key part of the broader category of reusable workflows.
+
+In the earlier section "Create workflow templates," we outlined how to build these templates from a `yml` file and a corresponding `.properties.json` metadata file. 
+
+To further connect the concept: workflow templates are a form of reusable workflow. When you create and store them in a public `.github` repository under the `workflow-templates/` directory, they allow other organization members to create consistent workflows for their repositories without having to define them from scratch.
+
+By leveraging workflow templates, enterprises can:
+- Enforce best practices across repositories.
+- Accelerate onboarding and setup for new projects.
+- Maintain consistency in CI/CD processes.

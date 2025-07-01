@@ -2,12 +2,10 @@
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.2-what-is-azure-remote-rendering
 title: Azure Remote Rendering overview
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Remote Rendering overview
   description: Learn about Azure Remote Rendering and how it can help render complex 3D models for untethered devices.
   ms.date: 07/31/2023
-  author: aprilspeight
+  author: aprilgittens
   ms.author: apspeigh
   ms.topic: unit
   ms.custom:

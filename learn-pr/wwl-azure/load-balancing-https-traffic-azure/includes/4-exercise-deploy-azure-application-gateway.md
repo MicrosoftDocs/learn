@@ -7,20 +7,23 @@ In this lab, you use the Azure portal to create an application gateway. Then you
 :::image type="content" source="../media/4-exercise-deploy-azure-application-gateway.png" alt-text="Diagram of application gateway architecture.":::
 
 
-## Objectives
+## Job skills
 
- -  **Task 1**: Create an application gateway
- -  **Task 2**: Add backend targets
-    - Use a template to create the virtual machines. You can review the [lab template](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/blob/master/Allfiles/Exercises/M05/backend.json).
-    - Use Azure PowerShell to deploy the template. 
- -  **Task 3**: Add backend servers to backend pool
- -  **Task 4**: Test the application gateway
+- Create an application gateway.
+- Add backend targets.
+- Use a template to create the virtual machines. 
+- Add backend servers to backend pool.
+- Test the application gateway.
 
-> [!NOTE]
-> Click on the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
 
-> [!NOTE]
-> You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+> [!IMPORTANT]
+> Estimated time: 25 minutes.
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
-[![Screenshot of the simulation page.](../media/simulation-appgw-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Deploy%20Azure%20Application%20Gateway)
+Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
+
+
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M05-Unit%204%20Deploy%20Azure%20application%20gateway.html)
+
+
 

@@ -2,8 +2,6 @@
 uid: learn.wwl.security-virtual-networks.azure-best-practices-network-security
 title: Configure firewall settings on Azure resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure firewall settings on Azure resources
   description: "Configure firewall settings on Azure resources"
   ms.date: 03/25/2025

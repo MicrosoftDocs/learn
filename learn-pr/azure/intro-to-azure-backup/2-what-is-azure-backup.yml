@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-azure-backup.what-is-azure-backup
 title: What is Azure Backup?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Azure Backup
   description: Learn what Azure Backup is.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/2-what-is-azure-backup.md)]
-
+

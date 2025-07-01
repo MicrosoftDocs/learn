@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Azure Synapse serverless SQL pool to query files in a data lake
   description: Use Azure Synapse serverless SQL pool to query files in a data lake
   ms.date: 09/07/2023
@@ -40,4 +38,4 @@ units:
 - learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.summary
 badge:
   uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.badge
-
+

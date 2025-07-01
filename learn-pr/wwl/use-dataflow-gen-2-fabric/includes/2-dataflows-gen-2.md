@@ -2,6 +2,9 @@
 ms.custom:
   - build-2023
 ---
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c7fec645-bd40-4aa3-8ed4-c9877ef0e505]
+
 In our scenario, you need to develop a semantic model that can standardize the data and provide access to the business. By using Dataflows Gen2, you can connect to the various data sources, and then prep and transform the data. You can land the data directly into your lakehouse or use a data pipeline for other destinations.
 
 ## What is a dataflow?

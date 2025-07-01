@@ -2,8 +2,6 @@
 uid: learn.azure.provide-disaster-recovery-replicate-storage-data.exercise-failover-secondary-location
 title: Exercise - Fail over to secondary location
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Fail over to secondary location
   description: Learn how to initiate an Azure Storage account failover.
   ms.date: 11/03/2023
@@ -14,4 +12,4 @@ durationInMinutes: 20
 azureSandbox: false
 content: |
   [!include[](includes/5-exercise-failover-secondary-location.md)]
-
+

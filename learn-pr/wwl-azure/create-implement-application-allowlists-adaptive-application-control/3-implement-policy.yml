@@ -2,8 +2,6 @@
 uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.implement-policy
 title: Implement adaptive application control policies
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement adaptive application control policies
   description: "Implement adaptive application control policies"
   ms.date: 04/18/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 12
 content: |
-  [!include[](includes/3-implement-policy.md)]
+  [!include[](includes/3-implement-policy.md)]

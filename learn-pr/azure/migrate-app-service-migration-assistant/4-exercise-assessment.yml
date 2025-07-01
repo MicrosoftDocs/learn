@@ -2,8 +2,6 @@
 uid: learn.azure.migrate-app-service-migration-assistant.exercise-assessment
 title: Exercise - Assess an on-premises ASP.NET web application
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Assess an on-premises ASP.NET web application
   description: Use the Azure App Service Migration Assistant to perform an assessment.
   ms.date: 05/21/2020
@@ -15,4 +13,4 @@ azureSandbox: true
 interactive: bash
 content: |
   [!include[](includes/4-exercise-assessment.md)]
-
+

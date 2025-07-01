@@ -2,12 +2,10 @@
 uid: learn.intro-to-azure-bastion.2-what-is-azure-bastion  
 title: What is Azure Bastion?  
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Azure Bastion?
   description: What is Azure Bastion?
-  ms.date: 12/05/2023
+  ms.date: 05/29/2025
   author: cherylmc
   ms.author: cherylmc
   ms.topic: unit

@@ -29,6 +29,5 @@ modules:
 - learn.wwl.plan-implement-manage-access-review
 - learn.wwl.monitor-maintain-azure-active-directory
 - learn.wwl.plan-implement-privileged-access
-- learn.permissions-management.explore-features-of-permissions-management
 trophy:
   uid: learn.wwl.configure-manage-entitlement-microsoft-entra-id.trophy

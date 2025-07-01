@@ -1,17 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.chain-azure-functions-data-using-input-output-bindings.7-write-data-with-output-bindings-portal-lab
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Write data with output bindings
   description: In this hands-on unit, we write data from our Azure function to Azure Cosmos DB with the help of an output binding.
-  ms.date: 06/06/2024
+  ms.date: 06/18/2025
   author: ggailey777
   ms.author: glenga
   ms.topic: unit
   ms.custom:
-    - devx-track-extended-java
+    - sfi-ropc-nochange
     - devx-track-js
+    - devx-track-extended-java
   zone_pivot_groups: dev-lang-javascript-powershell
 title: Exercise - Write data with output bindings
 #interactive: azure-portal

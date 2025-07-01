@@ -1,17 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-to-azure-api-management.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module Assessment
   description: Check your knowledge of Azure API Management
-  ms.date: 04/07/2023
+  ms.date: 04/21/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit
   ms.custom: engagement-fy23
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

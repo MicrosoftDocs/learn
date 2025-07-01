@@ -4,8 +4,8 @@ uid: learn.wwl.responsible-ai-content-safety.what-is-content-safety
 title: What is Content Safety
 metadata:
   title: What is Content Safety
-  description: As both user-generated and AI-generated online content grow, there's a need to automatically detect harmful content. Azure AI Content Safety includes features to detect problem content automatically and at scale.
-  ms.date: 10/17/2024
+  description: As both user-generated and AI-generated online content grow, there's a need to automatically detect harmful content. Azure AI Foundry Content Safety includes features to detect problem content automatically and at scale.
+  ms.date: 05/16/2025
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

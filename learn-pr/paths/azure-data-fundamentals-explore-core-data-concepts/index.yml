@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-data-fundamentals-explore-core-data-concepts
 metadata:
-  title: 'Microsoft Azure Data Fundamentals: Explore core data concepts'
-  description: 'Microsoft Azure Data Fundamentals: Explore core data concepts'
-  ms.date: 09/25/2024
+  title: 'Introduction to Microsoft Azure Data core data concepts'
+  description: 'Introduction to Microsoft Azure Data core data concepts'
+  ms.date: 06/20/2025
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: calopez
   ms.topic: learning-path
-title: 'Microsoft Azure Data Fundamentals: Explore core data concepts'
+title: 'Introduction to Microsoft Azure Data core data concepts'
 prerequisites: |
   None
 summary: |

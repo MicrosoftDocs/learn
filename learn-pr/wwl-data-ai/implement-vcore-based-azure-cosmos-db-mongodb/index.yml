@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement vCore-based Azure Cosmos DB for MongoDB
   description: "Implement vCore-based Azure Cosmos DB for MongoDB."
   ms.date: 11/24/2024
@@ -35,4 +33,4 @@ units:
 - learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.knowledge-check
 - learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.summary
 badge:
-  uid: learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.badge
+  uid: learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.badge

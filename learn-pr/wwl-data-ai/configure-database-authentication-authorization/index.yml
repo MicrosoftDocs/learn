@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-database-authentication-authorization
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure database authentication and authorization
   description: Configure database authentication and authorization
   ms.date: 02/25/2025
@@ -43,4 +41,4 @@ units:
 - learn.wwl.configure-database-authentication-authorization.summary
 badge:
   uid: learn.wwl.configure-database-authentication-authorization.badge
-
+

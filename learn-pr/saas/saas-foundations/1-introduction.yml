@@ -2,8 +2,6 @@
 uid: learn.saas-foundations.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Learn about Software as a Service (SaaS), including differences from traditional software, service-level agreement (SLA), service-level objectives (SLO), security, and privacy.
   ms.date: 05/28/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

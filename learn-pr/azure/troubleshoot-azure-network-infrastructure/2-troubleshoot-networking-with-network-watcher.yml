@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.troubleshoot-azure-network-infrastructure.2-troubleshoot-networking-with-network-watcher
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot a network by using Network Watcher monitoring and diagnostic tools
-  description: In this unit, you'll learn about the features of Azure Network Watcher that you can use to diagnose problems in an Azure virtual network.
-  ms.date: 01/16/2024
+  description: In this unit, you learn about the features of Azure Network Watcher that you can use to diagnose problems in an Azure virtual network.
+  ms.date: 06/20/2025
   author: halkazwini
   ms.author: halkazwini
   ms.topic: unit
@@ -15,7 +13,7 @@ content: |
   [!include[](includes/2-troubleshoot-networking-with-network-watcher.md)]
 quiz:
   questions:
-  - content: "To capture traffic on a VM, Azure Network Watcher requires:"
+  - content: "To capture traffic on a virtual machine (VM), Azure Network Watcher requires:"
     choices:
     - content: "Network Watcher Agent VM Extension"
       isCorrect: true

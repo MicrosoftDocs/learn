@@ -6,7 +6,7 @@ SQL Server 2022 connects to the cloud with the following Azure services as seen 
 
 :::image type="content" source="../media/sql-server-2022-cloud-connected.png" alt-text="Diagram showing cloud connected services for SQL Server 2022.":::
 
-The SQL Server 2022 engine has been enhanced to integrate with all of these Azure services, but also can require extra software or configuration:
+The SQL Server 2022 engine was enhanced to integrate with all of these Azure services, but also can require extra software or configuration:
 
 - Distributed Availability Group - Managed disaster recovery using the Link feature for Azure SQL Managed instance requires setting up a Distributed Availability Group. SQL Server Management Studio (SSMS) provides graphical interfaces to help with this configuration.
 
@@ -44,7 +44,7 @@ Azure Synapse Link for SQL Server allows you to offload read workloads in Azure 
 
 ### Challenges with analytics
 
-Azure Synapse has become a popular service for analytics for data of all types. In addition, many customers are looking to offload their read intensive applications from their primary SQL Server, to ensure the primary application has plenty of resources. To use Azure Synapse for this purpose, you'd typically have to build Extract Transform Load (ETL) applications, or use scripts to copy data out of SQL Server to synchronize into Azure Synapse. This method can introduce challenges because the data is often out of date in Azure Synapse and it can be costly to build and maintain ETL applications.
+Azure Synapse is now a popular service for analytics for data of all types. In addition, many customers are looking to offload their read intensive applications from their primary SQL Server, to ensure the primary application has plenty of resources. To use Azure Synapse for this purpose, you typically have to build Extract Transform Load (ETL) applications, or use scripts to copy data out of SQL Server to synchronize into Azure Synapse. This method can introduce challenges because the data is often out of date in Azure Synapse and it can be costly to build and maintain ETL applications.
 
 ### Solution using Azure Synapse Link for near real-time analytics
 
@@ -78,7 +78,7 @@ Microsoft Purview allows you to create **access policies** against one or more S
 
 You don't need to create a login or user account for the Microsoft Entra account to apply the access policy. SQL Server 2022 must be configured as an Azure Arc-enabled SQL Server to use Microsoft Purview access policies. The Azure extension for SQL Server stores information on SQL Server. This information allows the database engine to connect to Microsoft Purview to retrieve access policies, cache them inside SQL Server, and apply a policy when a Microsoft Entra account attempts to log into SQL Server.
 
-You can delete the access policy from Microsoft Purview to remove the authentication and authorization of the Microsoft Entra account at any time. You can also apply an access policy across multiple SQL Server 2022 instances, thereby providing a central governance method.
+You can delete the access policy from Microsoft Purview to remove the authentication and authorization of the Microsoft Entra account at any time. You can also apply an access policy across multiple SQL Server 2022 instances, to provide a central governance method.
 
 To learn more about Microsoft Purview access policies for SQL Server 2022, see [Provision access by data owner for SQL Server on Azure Arc-enabled servers](https://aka.ms/purviewsqlaccesspolicies).
 
@@ -111,7 +111,7 @@ Microsoft Defender for SQL is a Defender plan in Microsoft Defender for Cloud, a
 
 ### Challenges in protecting SQL Server
 
-Ensuring your SQL Server and data are protected is critical to any business. Security professionals are always looking to find ways to stay ahead of security threats to SQL Server in a robust and reliable fashion.
+Ensuring that your SQL Server and data are protected, is critical to any business. Security professionals are always looking to find ways to stay ahead of security threats to SQL Server in a robust and reliable fashion.
 
 ### Solutions to protect SQL Server 2022 using Microsoft Defender
 

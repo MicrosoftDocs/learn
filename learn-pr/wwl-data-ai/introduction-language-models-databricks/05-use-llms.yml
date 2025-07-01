@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-language-models-databricks.use-llms
 title: Use LLMs for Natural Language Processing (NLP) tasks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use LLMs for Natural Language Processing (NLP) tasks
   description: "Use LLMs for Natural Language Processing (NLP) tasks"
   ms.date: 03/20/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/05-use-llms.md)]
+  [!include[](includes/05-use-llms.md)]

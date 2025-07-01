@@ -34,6 +34,7 @@ units:
 - learn.github.github-introduction-administration.what-is-github-administration
 - learn.github.github-introduction-administration.how-github-authentication-works
 - learn.github.github-introduction-administration.how-github-organization-permission-works
+- learn.github.github-introduction-administration.enterprise-access-governance
 - learn.github.github-introduction-administration.knowledge-check
 - learn.github.github-introduction-administration.summary
 badge:

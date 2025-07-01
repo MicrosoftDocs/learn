@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-nat-gateway
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Introduction to Azure NAT Gateway         
   description: Evaluate whether Microsoft Azure NAT Gateway is appropriate for resolving issues such as connection timeouts and delays connecting to the internet.       
@@ -47,4 +45,4 @@ units:
 - learn.azure.intro-to-azure-nat-gateway.7-summary
 badge:
   uid: learn.azure.intro-to-azure-nat-gateway.badge
-
+

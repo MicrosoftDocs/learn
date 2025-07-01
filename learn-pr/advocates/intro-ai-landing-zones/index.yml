@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.introduction-ai-landing-zones
+metadata:
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 05/01/2025
+  title: Introduction to AI Landing Zones
+  description: Introduction to using Azure landing zones with AI workloads
+  ms.topic: module
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.service: artificial-intelligence
+title: Introduction to AI Landing Zones
+summary: In this module, you learn how to use Azure landing zones with AI workloads
+abstract: |
+ After completing this module, you'll be able to:
+  - Describe the purpose and elements of Azure landing zones
+  - Describe the benefits of using landing zones for AI workloads
+  - Understand the division of responsibilities between platform and workload teams
+prerequisites: |
+ To get the best learning experience, you should have a basic understanding of Azure and AI workloads and the services that support them.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.introduction-ai-landing-zones.introduction-landing-zones
+- learn.introduction-ai-landing-zones.azure-ai-landing-zones
+- learn.introduction-ai-landing-zones.deploy-test-landing-zones
+- learn.introduction-ai-landing-zones.knowledge-check
+- learn.introduction-ai-landing-zones.summary
+badge:
+  uid: learn.introduction-ai-landing-zones-badge

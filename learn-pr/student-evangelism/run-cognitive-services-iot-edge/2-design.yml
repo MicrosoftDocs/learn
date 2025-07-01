@@ -2,8 +2,6 @@
 uid: learn.oxford.run-cognitive-services-iot-edge.design
 title: Design a language detection module on IoT Edge
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design a language detection module on IoT Edge
   description: In this section, we provide the structure of detecting languages on the edge 
   ms.date: 07/22/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-design.md)]
-
+

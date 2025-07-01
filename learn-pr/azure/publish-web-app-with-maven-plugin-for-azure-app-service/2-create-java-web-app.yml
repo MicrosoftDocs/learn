@@ -2,14 +2,11 @@
 uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.create-java-web-app
 title: Create a Java web app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a Java web app
   description: In this unit, you'll learn how to create a web app using Maven.
   ms.date: 05/02/2024
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: jialuogan
+  author: silenceJialuo
+  ms.author: jialuogan
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java

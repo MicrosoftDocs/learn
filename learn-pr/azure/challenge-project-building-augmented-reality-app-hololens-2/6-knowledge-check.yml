@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.challenge-project-building-augmented-reality-app-hololens-two.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 7/25/2023
   author: tholewis
   ms.author: tholewis
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 15
 quiz:
   questions:

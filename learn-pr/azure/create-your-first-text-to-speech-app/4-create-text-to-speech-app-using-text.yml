@@ -2,8 +2,6 @@
 uid: learn.azure.create-your-first-text-to-speech-app.create-text-to-speech-app-using-text
 title: Create a text to speech application using a text file
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a text to speech application using a text file
   description: Learn how to create a text to speech application using a text file.
   author: rmcmurray
@@ -16,4 +14,4 @@ azureSandbox: false
 durationInMinutes: 5
 content: |
   [!INCLUDE[](includes/4-create-text-to-speech-app-using-text.md)]
-
+

@@ -34,7 +34,7 @@ The source code for this entire demo is fully available to the public on GitHub.
 
 You can [visit the GitHub repository here](https://github.com/MicrosoftDocs/mslearn-intro-to-form-recognizer?azure-portal=true).
 
-An example of a good place to start browsing is [where we use the SDK to call the service](https://github.com/MicrosoftDocs/mslearn-intro-to-form-recognizer/blob/b1fe4f309fc4ff9b240dc599b542e577a206ec0e/src/Services/InvoiceRecognizerService.cs?azure-portal=true#L26-L33):
+An example of a good place to start browsing is with this function [where we use the SDK to call the service](https://github.com/MicrosoftDocs/mslearn-intro-to-form-recognizer/blob/b1fe4f309fc4ff9b240dc599b542e577a206ec0e/src/Services/InvoiceRecognizerService.cs?azure-portal=true#L26-L33):
 
 ```csharp
 public async Task<RecognizedForm> Analyze(Uri invoiceUri)

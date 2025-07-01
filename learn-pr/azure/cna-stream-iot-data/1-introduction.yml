@@ -2,8 +2,6 @@
 uid: learn.azure.cna-stream-iot-data.1-introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to streaming IoT data
   ms.date: 04/05/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

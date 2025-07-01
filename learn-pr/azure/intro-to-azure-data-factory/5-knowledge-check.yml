@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-data-factory.5-knowledge-check  
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 10/22/2024  
   author: jonburchel
   ms.author: jburchel  
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 6
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -71,4 +70,4 @@ quiz:
     - content: "Microsoft Entra Domain Services"
       isCorrect: false
       explanation: "Incorrect. Microsoft Entra Domain Services is a cloud-based managed authentication service that isn't used in this context."
-
+

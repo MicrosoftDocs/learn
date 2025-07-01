@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning Path 2 Explore the Azure Machine Learning workspace
 
 Learning Path 2 Overview
@@ -25,7 +22,7 @@ Learning path 2 Tips and Tricks
 
 Learning path 2 Demos
 
-- Demo the Azure Machine Learning workspace in Azure Portal
+- Demo the Azure Machine Learning workspace in Azure portal
 - Briefly show the AutoML and/or designer pipeline
 - Demo one of these for Azure Machine Learning: CLI / SDK / ARM Templates
 
@@ -33,3 +30,4 @@ Learning path 2 Labs
 
 - [Lab 2.1: Explore the Azure Machine Learning workspace](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/02-Explore-Azure-Machine-Learning.html)
 - [Lab 2.2: Explore developer tools for workspace interaction](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/02-Explore-developer-tools.html)
+

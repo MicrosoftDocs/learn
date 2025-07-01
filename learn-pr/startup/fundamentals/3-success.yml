@@ -2,8 +2,6 @@
 uid: learn.startups.fundamentals.success
 title: What makes startups succeed?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What makes startups succeed?
   description: Learn how startups succeed. An original idea and a team of employees can lead to success, as can a scalable business model and good timing.
   ms.date: 03/17/2025
@@ -13,4 +11,4 @@ metadata:
   ms.collection: learn-startups
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-success.md)]
+  [!include[](includes/3-success.md)]

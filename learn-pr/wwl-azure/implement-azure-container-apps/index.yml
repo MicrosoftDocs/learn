@@ -5,14 +5,15 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement Azure Container Apps
   description: "Run serverless containerized apps in Azure Container Apps service."
-  ms.date: 07/16/2024
+  ms.date: 06/17/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure-container-apps
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Implement Azure Container Apps
 summary: Learn how Azure Container Apps can help you deploy and manage microservices and containerized apps on a serverless platform that runs on top of Azure Kubernetes Service.
 abstract: |

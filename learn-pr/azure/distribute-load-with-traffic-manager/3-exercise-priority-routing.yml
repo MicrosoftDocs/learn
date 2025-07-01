@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.distribute-load-with-traffic-manager.3-exercise-priority-routing
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Enable automatic failover by using priority routing
   description: In this hands-on exercise, you enable automatic failover by using priority routing
   ms.date: 01/31/2024
@@ -10,6 +8,7 @@ metadata:
   ms.author: greglin
   ms.topic: unit
   ms.custom:
+    - sfi-ropc-blocked
     - devx-track-azurecli
 title: Exercise - Enable automatic failover by using priority routing
 interactive: bash
@@ -17,4 +16,4 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-priority-routing.md)]
-
+

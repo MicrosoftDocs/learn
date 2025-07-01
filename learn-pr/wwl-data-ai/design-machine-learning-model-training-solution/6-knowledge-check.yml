@@ -1,43 +1,49 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-machine-learning-model-training-solution.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
-  description: Knowledge check
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 05/28/2025
   author: wwlpublish
-  ms.author: madiepev
-  ms.date: 01/20/2025
+  ms.author: sheryang
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
+  module_assessment: true
 durationInMinutes: 3
-content: |
-  [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
-  - content: "Which compute would you recommend to train the model?"
+  - content: "What does Automated machine learning in Azure Machine Learning enable you to do?"
     choices:
-    - content: "Spark cluster"
+    - content: "Automatically deploy new versions of a model as they're trained"
       isCorrect: false
-      explanation: "Incorrect. Since the data scientists aren't familiar with Spark, it's not the preferred solution right now."
-    - content: "CPU"
+      explanation: "Incorrect. Automated machine learning does not automatically deploy models."
+    - content: "Automatically provision Azure Machine Learning workspaces for new data scientists in an organization"
+      isCorrect: false
+      explanation: "Incorrect. Automated machine learning does not automate workspace provisioning."
+    - content: "Automatically run multiple training jobs using different algorithms and parameters to find the best model"
       isCorrect: true
-      explanation: "Correct. CPU compute is the best option for training the model. There can be a need for GPU or Spark when model training takes too long, but for now it's best to start with CPUs."
-    - content: "GPU"
-      isCorrect: false
-      explanation: "Incorrect. There's no indication yet that GPUs are needed to train the model, and using GPUs over CPUs now, only incurs unnecessary extra costs."
-  - content: "What type of predictions does the mobile application need to generate?"
+      explanation: "Correct. Automated machine learning runs multiple training jobs, varying algorithms and parameters, to find the best model for your data."
+  - content: "Which of the following factors should you consider when choosing a service to train a machine learning model?"
     choices:
-    - content: "Real-time predictions"
+    - content: "The number of users in your organization."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "How much time you want to invest in model training."
       isCorrect: true
-      explanation: "Correct. There's a need for immediate predictions for individual patients."
-    - content: "Batch predictions"
+      explanation: "Correct."
+    - content: "The approximate number of predictions the model needs to make in a month."
       isCorrect: false
-      explanation: "Incorrect. Batch predictions would take too long. We need immediate predictions."
-    - content: "Local predictions"
+      explanation: "Incorrect."
+  - content: "What is a key feature of Azure Machine Learning that supports end-to-end machine learning workflows?"
+    choices:
+    - content: "It provides ready-to-use models for image classification."
       isCorrect: false
-      explanation: "Incorrect. There's a need for immediate predictions for individual patients so we need real-time predictions."
+      explanation: "Incorrect."
+    - content: "It requires integration with Microsoft Fabric to deploy models."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: " It offers centralized dataset management and automated machine learning."
+      isCorrect: true
+      explanation: "Correct."

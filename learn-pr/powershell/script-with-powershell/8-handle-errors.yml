@@ -4,8 +4,8 @@ title: Error handling
 metadata:
   title: Error handling
   description: This unit describes how to implement error handling by using Try, Catch, and Finally blocks. It also shows how to throw errors.
-  author: softchris
-  ms.author: chnoring
+  author: sdwheeler
+  ms.author: sewhee
   ms.date: 02/04/2021
   ms.topic: unit
   ms.custom: team=nextgen
