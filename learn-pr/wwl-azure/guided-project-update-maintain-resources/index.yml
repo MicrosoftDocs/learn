@@ -1,0 +1,62 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-update-maintain-resources
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Guided Project – Update and maintain resources
+  description: "Update and maintain Azure resources"
+  ms.date: 07/01/2025
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: module-guided-project
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Guided Project – Update and maintain resources
+summary: |
+  This guided project gives you the chance to practice managing Azure resources, including networks, virtual machines, and storage blobs. You'll also have the chance to work with tags and resource locks.
+
+  [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
+abstract: |
+  In this module, you'll practice how to:
+
+  -   Update a virtual network and subnet.
+
+  -   Manage virtual machines.
+
+  -   Control storage access.
+
+  -   Manage resource tags and locks.
+prerequisites: |
+  Basic understanding of cloud computing.
+
+  Basic understanding of Microsoft Azure services such as compute, storage, and networking.
+
+  An active Microsoft Azure subscription.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- beginner
+roles:
+- business-user
+- other
+products:
+- azure
+subjects:
+- architecture
+- cloud-computing
+- infrastructure
+- networking
+- resource-management
+- virtual-machine
+units:
+- learn.wwl.guided-project-update-maintain-resources.introduction
+- learn.wwl.guided-project-update-maintain-resources.prepare
+- learn.wwl.guided-project-update-maintain-resources.exercise-virtual-network
+- learn.wwl.guided-project-update-maintain-resources.exercise-manage-virtual-machines
+- learn.wwl.guided-project-update-maintain-resources.exercise-control-storage-access
+- learn.wwl.guided-project-update-maintain-resources.exercise-manage-tags-locks
+- learn.wwl.guided-project-update-maintain-resources.exercise-clean-up
+- learn.wwl.guided-project-update-maintain-resources.knowledge-check
+- learn.wwl.guided-project-update-maintain-resources.summary
+badge:
+  uid: learn.wwl.guided-project-update-maintain-resources.badge

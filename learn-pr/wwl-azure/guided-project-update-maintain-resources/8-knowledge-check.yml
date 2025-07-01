@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-update-maintain-resources.knowledge-check
+title: Module assessment
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Module assessment
+  description: "Module assessment"
+  ms.date: 07/01/2025
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Azure resource is used to group related resources for a project?"
+    choices:
+    - content: "Virtual Network"
+      isCorrect: false
+      explanation: "Incorrect. A virtual network is used to manage communication between resources, not to group them."
+    - content: "Resource Group"
+      isCorrect: true
+      explanation: "Correct. A resource group is used to group related resources for easier management and cleanup."
+    - content: "Storage Account"
+      isCorrect: false
+      explanation: "Incorrect. A storage account is used to store data, not to group resources."

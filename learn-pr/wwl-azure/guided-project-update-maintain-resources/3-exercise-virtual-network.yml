@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-update-maintain-resources.exercise-virtual-network
+title: Exercise – Update the virtual network
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise – Update the virtual network
+  description: "Exercise – Update the virtual network"
+  ms.date: 07/01/2025
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-exercise-virtual-network.md)]

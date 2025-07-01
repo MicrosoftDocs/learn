@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-update-maintain-resources.prepare
+title: Prepare
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Prepare
+  description: "Prepare"
+  ms.date: 07/01/2025
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-prepare.md)]
