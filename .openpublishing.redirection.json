@@ -51226,6 +51226,51 @@
       "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/2-analyze-limitations-of-polling-in-a-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/3-exercise-analyze-limitations-of-polling-in-a-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/4-enable-automatic-updates-in-a-web-app-using-signalr.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/5-exercise-enable-automatic-updates-in-a-web-app-using-signalr.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/6-host-a-static-website-using-a-storage-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/7-exercise-host-a-static-website-using-a-storage-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
     }
   ]
 }

@@ -6085,3 +6085,8 @@ achievements:
   title: 'Microsoft Azure AI Fundamentals: Generative AI'
   summary: "Generative AI is a form of artificial intelligence in which models are trained to generate new original content based on natural language input. In other words, you can describe a desired output in normal everyday language, and the model can respond by creating appropriate text, image, code, and more. \n\nTake this learning path to get started with generative AI. In it, you'll learn how to:\n- Understand core concepts of generative AI\n- Prepare for an AI development project\n- Describe considerations and practices for responsible generative AI\n- Build an AI agent using Azure AI Foundry"
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.advocates.azure-functions-and-signalr.badge
+  type: trophy
+  title: Enable real-time updates in a web application using Azure Functions and SignalR Service
+  summary: Change a JavaScript web app update mechanism from polling to push-based architecture with SignalR Service, Azure Cosmos DB, and Azure Functions.
+  iconUrl: /training/achievements/advocates/enable-automatic-updates-in-a-web-app-using-azure-functions-and-signalr.svg
