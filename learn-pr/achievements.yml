@@ -5980,6 +5980,41 @@ achievements:
   title: Classify endangered bird species with Custom Vision
   summary: As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitat. Your work often involves surveying, recording, and reporting on bird activity. You want to build a machine learning model that will identify a bird in an image by species, to help with gathering data. In this module, you use Azure AI Custom Vision to create a model to identify species of birds!
   iconUrl: /training/achievements/advocates/cv-classify-bird-species.svg
+- uid: learn.secure-aspnet-core-identity.badge
+  type: badge
+  title: Secure a .NET web app with the ASP.NET Core Identity framework
+  summary: Add authentication and authorization to a web app using ASP.NET Core Identity, ASP.NET Core's native security framework.
+  iconUrl: /training/achievements/aspnetcore/secure-aspnet-core-identity.svg
+- uid: learn.aspnet-core-signalr-polling-fix.badge
+  type: badge
+  title: Replace client-side polling with ASP.NET Core SignalR
+  summary: In this module, you use ASP.NET Core SignalR to replace client-side polling functionality in an existing web app.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.dotnet-debug-visual-studio-app-service.badge
+  type: badge
+  title: Remotely debug ASP.NET Core apps hosted on Azure App Service using Visual Studio
+  summary: Learn how to remotely debug your ASP.NET Core apps on Azure App Service directly using Visual Studio 2022.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.persist-data-ef-core.badge
+  type: badge
+  title: Persist and retrieve relational data by using Entity Framework Core
+  summary: Query and manage relational data in an Entity Framework Core (EF Core) app by using an object-relational mapper (ORM).
+  iconUrl: /training/achievements/aspnetcore/persist-data-ef-core.svg
+- uid: learn.aspnet-core-signalr.badge
+  type: badge
+  title: Introduction to ASP.NET Core SignalR
+  summary: In this introductory module, you'll learn what ASP.NET Core SignalR is, how it works, and when to use it.
+  iconUrl: /training/achievements/aspnetcore/aspnet-core-signalr.svg
+- uid: learn.azure.create-your-first-text-to-speech-app.badge
+  type: badge
+  title: Create your first Azure AI services text to speech application
+  summary: Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure's text to speech features. In this module, you'll learn how to use Azure AI services to create a text to speech application that uses both plain text and Speech Synthesis Markup Language (SSML) to create audio files.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.create-your-first-speech-to-text-app.badge
+  type: badge
+  title: Create your first Azure AI speech to text application
+  summary: Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure's speech to text features. In this module, you'll learn how to use Azure AI services to create a speech to text application that converts a sample WAVE file into text.
+  iconUrl: /learn/achievements/generic-badge.svg
 - uid: learn.orleans-build-first-app.badge
   type: badge
   title: Build your first Orleans app with ASP.NET Core 8.0
