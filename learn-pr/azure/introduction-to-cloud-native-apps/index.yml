@@ -2,14 +2,14 @@
 uid: learn.azure.intro-to-cloud-native-apps
 metadata:
   title: Introduction to cloud-native apps on Azure
-  description: This module teaches concepts and ideas associated with cloud-native apps. We cover selecting Open-Source Software (OSS) components like Kubernetes and PostgreSQL, as well as unique Azure tools like Cosmos DB. We’ll also identify situations that call for building cloud-native apps, and review selecting components in an example scenario.
+  description: This module teaches concepts and ideas associated with cloud-native apps. We cover selecting Open-Source Software (OSS) components like Kubernetes and PostgreSQL, and unique Azure tools like Cosmos DB. We also identify situations that call for building cloud-native apps, and review selecting components in an example scenario.
   ms.date: 03/02/2023
   author: tomreidnz
   ms.author: jasdeb
   ms.topic: module
   ms.custom: ai-learning-hub
 title: Introduction to cloud-native apps on Azure
-summary: This module teaches concepts and ideas associated with cloud-native apps. We cover selecting Open-Source Software (OSS) components like Kubernetes and PostgreSQL, as well as unique Azure tools like Cosmos DB. We’ll also identify situations that call for building cloud-native apps, and review selecting components in an example scenario.
+summary: This module teaches concepts and ideas associated with cloud-native apps. We cover selecting Open-Source Software (OSS) components like Kubernetes and PostgreSQL, and unique Azure tools like Cosmos DB. We also identify situations that call for building cloud-native apps, and review selecting components in an example scenario.
 abstract: |
   In this module, you will:
   - Describe the fundamental structure of a cloud-native app
