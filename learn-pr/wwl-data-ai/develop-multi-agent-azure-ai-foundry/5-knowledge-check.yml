@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-multi-agent-azure-ai-foundry.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your learning on connected agents in Azure AI Foundry Agent Service."
+  ms.date: 06/13/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What is the role of the main agent in a connected agent system?"
+    choices:
+    - content: "To directly perform all tasks using tools"
+      isCorrect: false
+      explanation: "Incorrect. The main agent delegates tasks rather than performing them directly."
+    - content: "To coordinate user input and route tasks to the appropriate connected agents"
+      isCorrect: true
+      explanation: "Correct. The main agent handles intent recognition and delegates work to connected agents."
+    - content: "To monitor agent performance and generate logs"
+      isCorrect: false
+      explanation: "Incorrect. Logging is not the role of the main agent."
+  - content: "How do you connect an agent to a main agent using the Azure AI Projects client library?"
+    choices:
+    - content: "Add the agent as a `ConnectedAgentTool` to the main agent's tool definition."
+      isCorrect: true
+      explanation: "Correct. You register the agent as a tool and include it when configuring the main agent."
+    - content: "Use the `link_agents()` method to bind the sub-agent to the main agent."
+      isCorrect: false
+      explanation: "Incorrect. There is no such method; connected agents are registered as tools."
+    - content: "Set the main agent's parent_id to the sub-agent's agent ID."
+      isCorrect: false
+      explanation: "Incorrect. Agent relationships are not configured through ID inheritance."
+  - content: "How does the main agent decide which connected agent to use?"
+    choices:
+    - content: "It uses prompt instructions and natural language understanding."
+      isCorrect: true
+      explanation: "Correct. The main agent uses natural language prompts to determine task routing."
+    - content: "It follows a fixed code-based decision tree."
+      isCorrect: false
+      explanation: "Incorrect. No hardcoded routing logic is needed."
+    - content: "It randomly selects from available connected agents."
+      isCorrect: false
+      explanation: "Incorrect. Task routing is based on the user's intent and the prompt design."

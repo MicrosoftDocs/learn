@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-multi-agent-azure-ai-foundry.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Reflect on what you've learned about multi-agent systems."
+  ms.date: 06/13/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]
