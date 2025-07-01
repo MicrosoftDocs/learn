@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.case-study-design-security-operations-identity-compliance-capabilities.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check for case study on: Design security operations, identity and compliance capabilities."
   ms.date: 4/5/2023
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-  module_assessment: true
 durationInMinutes: 3
 ###########################################################################
 ###

@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.case-study-design-solutions-security-best-practices-priorities.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check for the case study unit: Design solutions that align with security best practices and priorities."
   ms.date: 4/5/2023
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-  module_assessment: true
 durationInMinutes: 3
 ###########################################################################
 ###

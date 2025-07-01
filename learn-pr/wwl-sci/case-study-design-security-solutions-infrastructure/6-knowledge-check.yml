@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.case-study-design-security-solutions-infrastructure.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check for case study module on topic: Design security solutions for infrastructure."
   ms.date: 4/5/2023
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-  module_assessment: true
 durationInMinutes: 3
 ###########################################################################
 ###
