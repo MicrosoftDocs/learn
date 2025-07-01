@@ -1,10 +1,10 @@
-Some Azure resources are deployed outside resource groups, and are instead deployed at various _scopes_: a subscription, a management group, or even your whole tenant. By using Bicep, you can create and configure Azure resources at each of these scopes, and you'll gain the benefits of using infrastructure as code across your full portfolio of Azure resources.
+Some Azure resources are deployed outside resource groups and are instead deployed at various _scopes_: a subscription, a management group, or even your whole tenant. By using Bicep, you can create and configure Azure resources at each of these scopes, and you'll gain the benefits of using infrastructure as code across your full portfolio of Azure resources.
 
 ## Example scenario
 
 Suppose you're responsible for deploying and configuring Azure infrastructure at a toy company. Your R&D team is designing a new toy as part of a top-secret project called Project Teddybear. The team has asked you to create a dedicated Azure subscription to help prevent the project information from accidentally being exposed to the rest of the company.
 
-The R&D team plans to use virtual machines within the subscription, but to save money, the team has asked for your help to ensure that only certain virtual machine SKUs can be created within that subscription. The team also needs your assistance to create a virtual network in the subscription, because that network will eventually need to connect to the main corporate network, which you help to manage.
+The R&D team plans to use virtual machines within the subscription, but to save money, the team has asked for your help to ensure that only certain virtual machine SKUs can be created within that subscription. The team also needs your assistance to create a virtual network in the subscription because that network will eventually need to connect to the main corporate network, which you help to manage.
 
 Here's a diagram that shows how these components fit within their Azure subscription:
 
