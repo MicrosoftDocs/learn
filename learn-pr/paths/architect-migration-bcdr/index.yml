@@ -36,7 +36,6 @@ modules:
 - learn.protect-infrastructure-with-azure-site-recovery
 - learn.protect-virtual-machines-with-azure-backup
 - learn.build-app-with-scale-sets
-- learn.app-service-autoscale-rules
 - learn.azure.app-service-scale-up-scale-out
 - learn.design-a-geographically-distributed-application
 trophy:
