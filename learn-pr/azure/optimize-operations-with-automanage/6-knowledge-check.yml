@@ -8,6 +8,7 @@ metadata:
   author: robmcm
   ms.author: robmcm
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 quiz:
   questions:

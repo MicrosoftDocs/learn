@@ -4,9 +4,8 @@ metadata:
   title: Introduction to Java on Azure
   description: In this module, you'll begin to discover the opportunities for Java developers on Azure.
   ms.date: 11/22/2024
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: hangwan
+  author: hangwan97
+  ms.author: hangwan
   ms.topic: module
   ms.custom:
   - team=cloud_advocates
@@ -44,4 +43,3 @@ units:
 - learn.azure.intro-to-java-azure.8-summary
 badge:
   uid: learn.azure.intro-to-java-azure.badge
-
