@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.intro-k12-edu.ai-security
+title: How AI supports security in K-12 education
+metadata:
+  title: How AI supports security in K-12 education
+  description: This content is part of the "Introducing Microsoft Education for K-12" module.
+  ms.date: 06/24/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/13-ai-security.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.intro-k12-edu.ai-use-case
+title: Generative AI use cases in K-12 education
+metadata:
+  title: Generative AI use cases in K-12 education
+  description: This content is part of the "Introducing Microsoft Education for K-12" module.
+  ms.date: 06/24/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-ai-use-case.md)]

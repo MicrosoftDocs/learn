@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.intro-k12-edu.introduction
+title: Introducing Microsoft Education for K-12
+metadata:
+  title: Introducing Microsoft Education for K-12
+  description: This content is part of the "Introducing Microsoft Education for K-12" module.
+  ms.date: 06/24/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

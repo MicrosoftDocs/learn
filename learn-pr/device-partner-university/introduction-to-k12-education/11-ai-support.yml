@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.intro-k12-edu.ai-support
+title: How AI supports learning
+metadata:
+  title: How AI supports learning
+  description: This content is part of the "Introducing Microsoft Education for K-12" module.
+  ms.date: 06/24/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/11-ai-support.md)]

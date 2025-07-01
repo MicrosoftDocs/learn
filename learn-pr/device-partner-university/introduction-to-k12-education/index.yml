@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.dpu.intro-k12-edu
+title: Introduction to Microsoft Education for K-12
+metadata:
+  title: Introduction to Microsoft Education for K-12
+  description: In this module, you'll learn about Microsoft Education solutions for K-12 institutions.
+  ms.date: 06/24/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: module
+  ms.service: microsoft-365-education
+summary: >
+  Learn how K-12 educators, school leaders, and IT professionals can use the power of Microsoft Education solutions to achieve more.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the K-12 educational landscape.
+  - Explain how different Microsoft Education solutions work together to support K-12 institutions.
+  - Determine which Microsoft solutions are appropriate for a specific K-12 institution.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels: 
+  - beginner
+roles: 
+  - k-12-educator
+  - school-leader
+  - technology-manager
+products:
+  - m365-education
+units:
+  - learn.dpu.intro-k12-edu.introduction
+  - learn.dpu.intro-k12-edu.challenges
+  - learn.dpu.intro-k12-edu.why
+  - learn.dpu.intro-k12-edu.stakeholders
+  - learn.dpu.intro-k12-edu.value-prop
+  - learn.dpu.intro-k12-edu.accelerate
+  - learn.dpu.intro-k12-edu.simplify-it
+  - learn.dpu.intro-k12-edu.improve-efficiency
+  - learn.dpu.intro-k12-edu.ai-in-education
+  - learn.dpu.intro-k12-edu.ai-use-case
+  - learn.dpu.intro-k12-edu.ai-support
+  - learn.dpu.intro-k12-edu.ai-efficiency
+  - learn.dpu.intro-k12-edu.ai-security
+  - learn.dpu.intro-k12-edu.summary
+badge:
+  uid: learn.dpu.intro-k12-edu.badge

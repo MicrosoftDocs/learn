@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.intro-k12-edu.value-prop
+title: Microsoft Education value propositions
+metadata:
+  title: Microsoft Education value propositions
+  description: This content is part of the "Introducing Microsoft Education for K-12" module.
+  ms.date: 06/24/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-value-prop.md)]
