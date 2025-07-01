@@ -9,6 +9,7 @@ metadata:
   ms.author: aawislan
   ms.topic: unit
   ROBOTS: INDEX,FOLLOW
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

@@ -37,3 +37,4 @@ Trust is at the core of all of Microsoft's offerings, and security is at the cen
 > [!NOTE]
 > In some situations, AI has the potential to be used in ways that might compromise an individual's privacy or rights. Microsoft has [six Responsible AI principles](/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai?azure-portal=true) to help ensure AI services are ethical and fair. Because of this, certain Azure AI services are restricted to ensure they're used responsibly.
 
+

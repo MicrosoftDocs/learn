@@ -5,9 +5,8 @@ metadata:
   title: Exercise - Create a Java web app
   description: In this exercise, you'll create a Java web app using Maven.
   ms.date: 05/02/2024
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: jialuogan
+  author: silenceJialuo
+  ms.author: jialuogan
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java
@@ -16,4 +15,4 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-create-java-web-app.md)]
-
+

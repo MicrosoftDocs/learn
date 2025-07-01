@@ -23,10 +23,10 @@ Follow these steps to configure and run the Conditional Access optimization agen
 
 1. Go to agents - Once you sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) with at least a Security Administrator role, from the Microsoft Entra home page, select **Go to agents** from the agent notification card.
 1. Available agents - The Security Copilot agents page, shows tiles for the available agents. The page currently only shows the Conditional Access Optimization Agent, but more agents are coming soon.
-1. Start Agent - In the Conditional Access Optimization Agent tile, select **View details**. If you have not previously run the agent, you'll see the option to **Star agent** to begin the agent's first run.
+1. Start Agent - In the Conditional Access Optimization Agent tile, select **View details**. If you have not previously run the agent, you'll see the option to **Start agent** to begin the agent's first run.
 1. Overview page - If you have previously run the agent, selecting view details, brings you to the Overview page. The Overview page shows you see most recent and next scheduled runtimes, performance highlights, recent suggestions, and recent activity.
 1. Policy details - Selecting a suggestion takes you to the policy details page where you can view the agent summary, user impact, policy details, make edits, and more.
-   1. Newly created policies are created in report-only mode. As a best practice organizations should exclude their break-glass accounts from policy to avoid being locked out due to misconfiguration.
+   1. Newly created policies are created in report-only mode. As a best practice, organizations should exclude their break-glass accounts from policy to avoid being locked out due to misconfiguration.
    1. After administrators evaluate the policy settings using policy impact or report-only mode, they can move the Enable policy toggle from Report-only to On. Policies created by the agent are tagged with Conditional Access Optimization Agent in the Conditional Access policies pane.
 
 # [Go to agents](#tab/go-to-agents)

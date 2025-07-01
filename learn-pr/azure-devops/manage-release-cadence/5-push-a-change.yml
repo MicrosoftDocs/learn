@@ -4,7 +4,7 @@ title: Exercise - Push a change through the pipeline
 metadata:
   title: Exercise - Push a change through the pipeline
   description: Add a few visual changes to your application to see deployment slots in action.
-  ms.date: 02/05/2024
+  ms.date: 06/24/2025
   author: ramiMSFT
   ms.author: rabououn
   ms.custom: devdivchpfy22
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 14
 content: |
   [!include[](includes/5-push-a-change.md)]
-
+

@@ -5,7 +5,7 @@ metadata:
   title: Prepare
   description: Learn how to prepare for running evaluations and generating synthetic datasets with the Azure AI Evaluation SDK.
   ms.date: 10/13/2024
-  author: aprilspeight
+  author: aprilgittens
   ms.author: apspeigh
   ms.topic: unit
   ms.collection:

@@ -8,6 +8,7 @@ metadata:
   author: asudbring
   ms.author: allensu
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
