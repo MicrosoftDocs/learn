@@ -29,4 +29,4 @@ Suppose you have an on-premises environment with a Hyper-V host server for hosti
 
 :::image type="content" source="../media/site-recovery.png" alt-text="Diagram that shows a BCDR solution with Azure Site Recovery and Azure Backup." border="false":::
 
-In this scenario, Azure Backup periodically backs up the files and folders on your Windows machine to Azure. This process ensures they data is secure and retrievable even if the whole on-premises environment stops functioning. Separately, Azure Site Recovery is used to protect your running workloads and keep them running. Because Site Recovery can replicate frequently, the RTO for your workloads can be reduced.
+In this scenario, Azure Backup periodically backs up the files and folders on your Windows machine to Azure. This process ensures the data is secure and retrievable even if the whole on-premises environment stops functioning. Separately, Azure Site Recovery is used to protect your running workloads and keep them running. Because Site Recovery can replicate frequently, the RTO for your workloads can be reduced.

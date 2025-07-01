@@ -3,7 +3,7 @@ uid: learn.moderate-content-detect-harm-azure-ai-content-safety
 metadata:
   title: Implement generative AI guardrails with Azure AI Content Safety
   description: Learn how to implement generative AI guardrails with Azure AI Content Safety.
-  author: aprilspeight
+  author: aprilgittens
   ms.author: apspeigh
   ms.date: 08/30/2024
   ms.service: artificial-intelligence
