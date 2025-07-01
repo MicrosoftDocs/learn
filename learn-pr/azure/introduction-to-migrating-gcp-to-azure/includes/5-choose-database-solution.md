@@ -52,5 +52,4 @@ BigQuery and Azure Synapse Analytics both offer serverless data warehousing, tho
 - [Explore PostgreSQL architecture](/training/modules/explore-postgresql-architecture/)
 - [Explore MySQL architecture](/training/modules/explore-mysql-architecture/)
 - [Get started with the MongoDB API in Azure Cosmos DB](/training/modules/get-started-mongodb-api-azure-cosmos-db/)
-- [Introduction to Azure Cache for Redis](/training/modules/intro-to-azure-cache-for-redis/)
 - [What is Azure Synapse Analytics?](/azure/synapse-analytics/overview-what-is)

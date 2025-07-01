@@ -50343,6 +50343,76 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/2-what-is-azure-cache-for-redis.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/3-how-azure-cache-for-redis-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/4-when-to-use-azure-cache-for-redis.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/2-what-is-orleans.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/3-how-orleans-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/4-when-to-use-orleans.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/react/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
