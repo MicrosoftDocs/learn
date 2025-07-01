@@ -7,6 +7,7 @@ To further practice the process, you then revert your changes and watch the pipe
 Here you change the text on the hero banner. Later you'll see the change when you deploy to App Service.
 
 1. In Visual Studio Code, in the *Tailspin.SpaceGame.Web/Views/Home* directory, open *Index.cshtml*.
+
 1. Look for this text near the top of the page:
 
     ```html
@@ -24,12 +25,12 @@ Here you change the text on the hero banner. Later you'll see the change when yo
 
 ## Change the background color
 
-Here you change the background color of the hero banner from gray to green. 
+Here you change the background color of the hero banner from gray to green.
 
 1. In Visual Studio Code, in the *Tailspin.SpaceGame.Web/wwwroot/css* directory, open *site.scss*.
 
     > [!IMPORTANT]
-    > Open *site.scss*, not *site.css*. The _Build_ stage runs `node-sass` to convert *site.scss* (a Sass file) to *site.css* (a standard CSS file).
+    > Open *site.scss*, not *site.css*. The *Build* stage runs `node-sass` to convert *site.scss* (a Sass file) to *site.css* (a standard CSS file).
 
 1. Locate the following code near the top of the file:
 
@@ -54,13 +55,14 @@ For brevity, here you commit the changes to your branch, push your branch to Git
     ```
 
 1. In Azure Pipelines, trace the build through each step.
-1. Go to the URL that corresponds to the *production* slot for your _Staging_ environment. This slot is the default slot that you configured when you set up the pipeline earlier.
+
+1. Go to the URL that corresponds to the *production* slot for your *Staging* environment. This slot is the default slot that you configured when you set up the pipeline earlier.
 
     You see that the deployed website shows the color and text changes.
 
     :::image type="content" source="../media/5-app-service-staging.png" alt-text="Screenshot of a browser that shows the Space Game website with color and text changes.":::
 
-1. Go to the URL that corresponds to the *swap* slot for your _Staging_ environment. The URL includes "-swap.azurewebsites.net" in its name.
+1. Go to the URL that corresponds to the *swap* slot for your *Staging* environment. The URL includes "-swap.azurewebsites.net" in its name.
 
     You see the previous version of the website, without the color and text changes.
 
@@ -72,7 +74,7 @@ For brevity, here you commit the changes to your branch, push your branch to Git
 
 Let's say that you deployed a change that you want to revert. At this point, you could roll back the change by swapping the *production* slot and *swap* slot again. For example, you could swap the slots manually through the Azure portal. Or, instead of rolling back the changes, you could roll forward by pushing another change through the pipeline.
 
-That's what you'll do here. You'll revert your latest code changes and push another change through the pipeline. To do so, you use the `git revert` command. 
+That's what you'll do here. You'll revert your latest code changes and push another change through the pipeline. To do so, you use the `git revert` command.
 
 In Git, you seldom remove commits from a file's history. Unlike the "undo" operation in a text editor, the `git revert` command creates a new commit that's essentially the opposite of the specified set of commits. To see the commits, you first run the `git log` command to trace your commit history during the revert process.
 
@@ -126,7 +128,8 @@ Here you push your reverted change through the pipeline and see the results.
     ```
 
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
-1. Go to the URLs that correspond to the *swap* slot and *production* slot for your _Staging_ environment.
+
+1. Go to the URLs that correspond to the *swap* slot and *production* slot for your *Staging* environment.
 
     The *production* slot now points to your reverted change, which is the original website.
 
@@ -142,9 +145,9 @@ Great work! The team now has a way to automate the releases. They can get new fe
 
 The team gathers to demo the pipeline. This time, Tim pushes a change through the pipeline while everyone watches. But not everyone's convinced.
 
-**Andy:** It's great seeing deployment slots at work. But I don't get it. How do we benefit from zero-downtime deployments here? _Staging_ is only for our team and management. 
+**Andy:** It's great seeing deployment slots at work. But I don't get it. How do we benefit from zero-downtime deployments here? *Staging* is only for our team and management.
 
-**Tim:** Indeed, we won't see much benefit right now. But imagine when we apply blue-green deployments to a _Production_ stage. We'll still have the manual approval from management before we promote to _Production_. But when we do release new features, the swap process will make the rollout nearly instantaneous. It will be seamless to our users.
+**Tim:** Indeed, we won't see much benefit right now. But imagine when we apply blue-green deployments to a *Production* stage. We'll still have the manual approval from management before we promote to *Production*. But when we do release new features, the swap process will make the rollout nearly instantaneous. It will be seamless to our users.
 
 **Andy:** OK, I think I understand now. I like this improvement. The system of deployment slots was easy to set up, and it will benefit our users. Everyone wins.
 

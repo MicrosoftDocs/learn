@@ -14,5 +14,5 @@ Now that you have your project on GitHub, learn to [Manage an InnerSource progra
 Here are some links to more information on the subjects we discussed in this module:
 
 - [Ignoring files with .gitignore](https://help.github.com/en/github/using-git/ignoring-files?azure-portal=true)
-- [.gitignore repository for popular platforms](https://github.com/github/gitignore?azure-portal=true)
+- Reference the [.gitignore repository for popular platforms](https://github.com/github/gitignore?azure-portal=true)
 - [Setting repository visibility](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)

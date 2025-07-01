@@ -9,6 +9,7 @@ metadata:
   ms.author: masoucou
   ms.custom: team=nextgen
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
