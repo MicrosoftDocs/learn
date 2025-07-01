@@ -5799,7 +5799,7 @@ achievements:
   type: badge
   title: Generate code with Azure OpenAI Service
   summary: This module shows engineers how to use the Azure OpenAI Service to generate and improve code.
-  iconUrl: /learn/achievements/generic-badge.svgz
+  iconUrl: /learn/achievements/generic-badge.svg
 - uid: learn.azure.cloud-adoption-framework-plan.badge
   type: badge
   title: Prepare for cloud adoption with a data-driven plan
@@ -5980,6 +5980,16 @@ achievements:
   title: Classify endangered bird species with Custom Vision
   summary: As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitat. Your work often involves surveying, recording, and reporting on bird activity. You want to build a machine learning model that will identify a bird in an image by species, to help with gathering data. In this module, you use Azure AI Custom Vision to create a model to identify species of birds!
   iconUrl: /training/achievements/advocates/cv-classify-bird-species.svg
+- uid: learn.orleans-build-first-app.badge
+  type: badge
+  title: Build your first Orleans app with ASP.NET Core 8.0
+  summary: Learn how to build cloud-native, distributed apps with Orleans.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.windows.windows-best-app-framework.badge
+  type: badge
+  title: Choose the best UI framework for a native Windows development project
+  summary: Windows developers have various options for creating applications that run on Windows. This module introduces the native Windows UI frameworks that are available for Windows development. It also provides guidance on how to choose the best framework for your application.
+  iconUrl: /learn/achievements/windows-best-app-framework.svg
 - uid: learn.wwl.detect-analyze-faces.badge
   type: badge
   title: Fundamentals of Facial Recognition
@@ -6020,3 +6030,13 @@ achievements:
   title: Fundamentals of optical character recognition
   summary: Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.
   iconUrl: /training/achievements/read-text-computer-vision.svg
+- uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.badge
+  type: badge
+  title: Accelerate a Spring Boot application with Azure Cache for Redis
+  summary: Learn how to use Azure Cache for Redis to cache business data and HTTP session data in a Java Spring Boot application, then publish the application to the cloud.
+  iconUrl: /training/achievements/accelerate-scale-spring-boot-application-azure-cache-redis.svg
+- uid: learn.intro-generative-ai.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Generative AI'
+  summary: "Generative AI is a form of artificial intelligence in which models are trained to generate new original content based on natural language input. In other words, you can describe a desired output in normal everyday language, and the model can respond by creating appropriate text, image, code, and more. \n\nTake this learning path to get started with generative AI. In it, you'll learn how to:\n- Understand core concepts of generative AI\n- Prepare for an AI development project\n- Describe considerations and practices for responsible generative AI\n- Build an AI agent using Azure AI Foundry"
+  iconUrl: /learn/achievements/generic-badge.svg

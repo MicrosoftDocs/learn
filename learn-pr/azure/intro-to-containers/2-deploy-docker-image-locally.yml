@@ -4,7 +4,7 @@ title: Retrieve an existing Docker image and deploy it locally
 metadata:
   title: Retrieve an existing Docker image and deploy it locally
   description: Summarize the purpose of Docker and Docker Hub. Explain how to download an image containing an application from Docker Hub, and run the application locally.
-  ms.date: 06/28/2024
+  ms.date: 06/20/2025
   author: cryophobia
   ms.author: chrvaw
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-deploy-docker-image-locally.md)]
-
+
