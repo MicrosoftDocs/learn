@@ -8,6 +8,7 @@ metadata:
   author: cherylmc
   ms.author: cherylmc
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

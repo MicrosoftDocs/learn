@@ -8,6 +8,7 @@ metadata:
   author: PatAltimore
   ms.author: patricka
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
 quiz:

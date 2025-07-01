@@ -9,6 +9,7 @@ metadata:
   ms.author: brmurtau
   ms.topic: unit
   ms.custom: devdivchpfy22
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/9-knowledge-check.md)]

@@ -4,9 +4,8 @@ metadata:
   title: Sample Java app deployment
   description: We demonstrate and explain a Java app deployment to Azure App Service
   ms.date: 11/22/2024
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: hangwan
+  author: hangwan97
+  ms.author: hangwan
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
@@ -17,4 +16,4 @@ title: Sample Java app deployment
 durationInMinutes: 3
 content: |
   [!include[](includes/6-sample-deployment.md)]
-
+

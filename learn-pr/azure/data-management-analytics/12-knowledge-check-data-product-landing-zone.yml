@@ -9,6 +9,7 @@ metadata:
   author: lapate
   ms.author: lapate
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 2
 content: |
 quiz:

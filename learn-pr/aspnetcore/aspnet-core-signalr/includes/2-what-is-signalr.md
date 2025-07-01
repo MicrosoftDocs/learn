@@ -1,8 +1,8 @@
 All internet-connected applications are composed of servers and clients. Clients rely on servers for data, and their primary mechanism for receiving data is through making Hypertext Transfer Protocol (HTTP) requests. Some client applications require data that changes frequently.
 
-ASP.NET Core SignalR provides an API for creating server-to-client remote procedure calls (RPCs). RPCs invoke functions on clients from the server-side .NET Core code. There are several supported platforms, each with its own client SDK. Therefore, the programming language being invoked by RPC calls can vary.
+ASP.NET Core SignalR provides an API for creating server-to-client remote procedure calls (RPCs). RPCs invoke functions on clients from the server-side .NET Core code. There are several supported platforms, each with its own client SDK. Therefore, the programming language that the RPC calls invoke can vary.
 
-It's helpful to familiarize yourself with the common terminology that's associated with SignalR. In this unit, you'll learn what SignalR components are required in a server application, versus those in client applications. Additionally, you'll gain an understanding of the various duplex communication mechanisms. SignalR encapsulates multiple real-time protocols, and abstracts away the complexities of each implementation. For more information, see the [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) documentation.
+It's helpful to familiarize yourself with the common terminology associated with SignalR. In this unit, you learn what SignalR components are required in a server application and in client applications. Additionally, you gain an understanding of the various duplex communication mechanisms. SignalR encapsulates multiple real-time protocols, and abstracts away the complexities of each implementation. For more information, see the [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) documentation.
 
 The principal terms that are used in SignalR are discussed in the following sections.
 
@@ -26,20 +26,20 @@ In SignalR, a *hub* is used to communicate between clients and servers. A hub is
 
 #### Protocols
 
-The SignalR Protocol is a protocol for a two-way RPC over any [message-based transport](#transports). Either party in the connection can invoke procedures on the other party, and procedures can return zero or more results or an error. SignalR provides two built-in hub protocols:
+The SignalR Protocol is a protocol for a two-way RPC over any message-based transport. Either party in the connection can invoke procedures on the other party, and procedures can return zero or more results or an error. SignalR provides two built-in hub protocols:
 
-- A text protocol that's based on JSON, which is the default.
-- A binary protocol that's based on *MessagePack*, which generally creates smaller messages than JSON does.
+- A text protocol based on JSON, which is the default.
+- A binary protocol based on *MessagePack*, which generally creates smaller messages than JSON does.
 
-To use the *MessagePack* protocol, both server and client need to opt in to configuring it, and both server and client have to support it. There's a third hub protocol, called *BlazorPack*, but it's used exclusively with Blazor-Server applications. It can't be used *without* the Blazor-Server hosting model. For more information, see the official specification for [SignalR Hub Protocol](https://github.com/dotnet/aspnetcore/blob/068797e16a1bfe66461e15c8a2ffa864369d384d/src/SignalR/docs/specs/HubProtocol.md).
+To use the *MessagePack* protocol, both server and client need to opt in to configuring it, and both server and client have to support it. There's a third hub protocol used exclusively with Blazor-Server applications, called *BlazorPack*. It can't be used *without* the Blazor-Server hosting model. For more information, see the official specification for [SignalR Hub Protocol](https://github.com/dotnet/aspnetcore/blob/068797e16a1bfe66461e15c8a2ffa864369d384d/src/SignalR/docs/specs/HubProtocol.md).
 
 #### Users
 
-A user in the system acts as an individual, but can also be part of a group. Messages can be sent to [groups](#groups), and all group members are notified. A single user can connect from multiple client applications. For example, the same user can use a mobile device and a web browser and get real-time updates on both at the same time.
+A user in the system acts as an individual, but can also be part of a group. Messages can be sent to groups, and all group members are notified. A single user can connect from multiple client applications. For example, the same user can use a mobile device and a web browser and get real-time updates on both at the same time.
 
 #### Groups
 
-A group consists of one or more [connections](#connections). The server can create groups, add connections to a group, and remove connections from a group. A group has a specified name, which acts as its unique identifier. Groups serve as a scoping mechanism to help target messages. That is, real-time functionality can only be sent to users within a named group.
+A group consists of one or more connections. The server can create groups, add connections to a group, and remove connections from a group. A group has a specified name, which acts as its unique identifier. Groups serve as a scoping mechanism to help target messages. That is, real-time functionality can only be sent to users within a named group.
 
 #### Connections
 

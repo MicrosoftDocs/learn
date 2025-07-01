@@ -8,6 +8,7 @@ metadata:
   author: sgaspari815
   ms.author: robmcm
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:

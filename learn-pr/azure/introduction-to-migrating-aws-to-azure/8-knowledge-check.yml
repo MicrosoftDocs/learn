@@ -8,6 +8,7 @@ metadata:
   author: carols
   ms.author: carols
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   questions:

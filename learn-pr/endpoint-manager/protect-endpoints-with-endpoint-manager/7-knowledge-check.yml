@@ -9,6 +9,7 @@ metadata:
   author: Erikre 
   ms.author: erikre
   ms.topic: unit
+  module_assessment: true
 title: Module assessment
 durationInMinutes: 3
 quiz:

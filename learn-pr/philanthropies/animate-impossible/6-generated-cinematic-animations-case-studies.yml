@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.animate-impossible.generated-cinematic-animations-case-studies
+title: AI-generated cinematic animations - case studies with Sora
+metadata:
+  title: AI-generated Cinematic Animations - Case Studies with Sora
+  description: "In this unit, learners examine side-by-side comparisons of 2D animations and their AI-generated 3D enhancements using Sora. Learners explore how depth simulation, camera motion, and lighting improvements elevate storytelling and viewer engagement. Keywords: Sora, AI 3D animation, 2D-to-3D animation transformation, depth simulation, animation enhancement."
+  ms.date: 4/28/2025
+  author: kariannab-ms
+  ms.author: kbarreto
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-generated-cinematic-animations-case-studies.md)]
