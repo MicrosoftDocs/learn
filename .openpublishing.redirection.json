@@ -50866,6 +50866,11 @@
       "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/introduction-generative-ai/index.md",
+      "redirect_url": "/training/paths/introduction-to-ai-on-azure/",
+      "redirect_document_id": false
     }
   ]
 }
