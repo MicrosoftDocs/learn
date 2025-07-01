@@ -51156,6 +51156,46 @@
       "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/2-exercise-get-started.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/3-authentication.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/4-exercise-add-authentication.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/5-providers-roles.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/6-exercise-configure-access.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
     }
   ]
 }
