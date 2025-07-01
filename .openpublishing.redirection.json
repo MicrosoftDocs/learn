@@ -1,6 +1,51 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/2-build.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/3-exercise-build.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/4-deploy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/5-exercise-deploy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.azure.deploy-java-spring-boot-app-service-mysql.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/configure-security-policies-to-manage-data/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/security-overview?view=azuresql",
       "redirect_document_id": false
@@ -49078,6 +49123,11 @@
       "redirect_document_id": false
     },
     {
+        "source_path": "learn-pr/azure/monitor-authentication-methods/create-azure-ad-workbook.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {   
         "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/1-introduction.yml",
         "redirect_url": "https://learn.microsoft.com/training/browse/",
         "redirect_document_id": false
@@ -49543,38 +49593,43 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/visualize-data-workbooks/index.md",
-      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-      "redirect_document_id": false
+        "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-create-azure-ad-workbook.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/visualize-data-workbooks/9-summary.md",
-      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-      "redirect_document_id": false
+        "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-integrate-logs-with-log-analytics.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/visualize-data-workbooks/7-add-visualizations-chart-grid.md",
-      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-      "redirect_document_id": false
+        "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-use-logs-get-status-information.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/visualize-data-workbooks/5-add-visualization-for-query-results.md",
-      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-      "redirect_document_id": false
+        "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-write-kql-queries.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/visualize-data-workbooks/4-supported-data-sources.md",
-      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-      "redirect_document_id": false
+        "source_path": "learn-pr/azure/monitor-authentication-methods/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/visualize-data-workbooks/3-create-new-azure-workbook.md",
-      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-      "redirect_document_id": false
+        "source_path": "learn-pr/azure/monitor-authentication-methods/integrate-logs-with-log-analytics.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/visualize-data-workbooks/2-azure-workbooks-overview.md",
-      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+        "source_path": "learn-pr/azure/monitor-authentication-methods/introduction.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-authentication-methods/knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
     },
     {
@@ -49898,6 +49953,101 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/2-essential-concepts.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/3-exercise-set-up-project.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/4-exercise-create-grains-silos.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/5-exercise-create-endpoints.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/6-explore-state-concepts.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/7-exercise-persist-state.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-build-your-first-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/2-identify-windows-app-development-options.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/3-analyze-decision-criteria.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/4-use-windows-presentation-foundation.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/5-use-windows-forms.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/6-use-windows-ui.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/windows/windows-choose-best-app-framework/index.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/apps/get-started/?tabs=cpp-win32%2Cnet-maui",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/sports-machine-learning/optimize-basketball-player-rest-breaks/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
@@ -50040,6 +50190,96 @@
     {
       "source_path": "learn-pr/sports-machine-learning/predict-basketball-player-efficiency-ratings/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/2-create-azure-cognitive-services-account.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/3-exercise-create-azure-cognitive-services-account.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/4-create-single-shot-recognition-speech-to-text-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/5-exercise-create-single-shot-recognition-speech-to-text-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/6-create-continuous-recognition-speech-to-text-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/7-exercise-create-continuous-recognition-speech-to-text-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/2-create-azure-cognitive-services-account.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/3-exercise-create-azure-cognitive-services-account.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/4-create-text-to-speech-app-using-text.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/5-exercise-create-text-to-speech-app-using-text.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/6-create-text-to-speech-app-using-ssml.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/7-exercise-create-text-to-speech-app-using-ssml.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
       "redirect_document_id": false
     },
     {
@@ -50323,13 +50563,63 @@
         "redirect_document_id": false
     },
     {
+        "source_path": "learn-pr/azure/monitor-authentication-methods/summary.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
         "source_path": "learn-pr/paths/start-career-in-tech/index.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/monitor-authentication-methods/use-logs-get-status-information.yml",
         "redirect_url": "https://learn.microsoft.com/training/browse/",
         "redirect_document_id": false
     },
     {
         "source_path": "learn-pr/student-evangelism/career-get-noticed/1-introduction.yml",
         "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/monitor-authentication-methods/write-kql-queries.yml",
+        "redirect_url": "https://learn.microsoft.com/training/browse/",
+        "redirect_document_id": false 
+    },
+    {
+        "source_path": "learn-pr/azure/visualize-data-workbooks/index.md",
+        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/visualize-data-workbooks/9-summary.md",
+        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/visualize-data-workbooks/7-add-visualizations-chart-grid.md",
+        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/visualize-data-workbooks/5-add-visualization-for-query-results.md",
+        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/visualize-data-workbooks/4-supported-data-sources.md",
+        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/visualize-data-workbooks/3-create-new-azure-workbook.md",
+        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/visualize-data-workbooks/2-azure-workbooks-overview.md",
+        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
         "redirect_document_id": false
     },
     {
@@ -50445,6 +50735,266 @@
     {
       "source_path": "learn-pr/aspnetcore/aspnet-core-signalr/index.yml",
       "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/index.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/4-exercise.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/3-face-analysis-azure.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/1-introduction.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/5-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/6-summary.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/2-what-is-face-analysis.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/document-intelligence-knowledge-mining/index.md",
+      "redirect_url": "/training/paths/introduction-to-ai-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/explore-computer-vision-microsoft-azure/index.md",
+      "redirect_url": "/training/paths/introduction-to-ai-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/get-started-with-artificial-intelligence-on-azure/index.md",
+      "redirect_url": "/training/paths/introduction-to-ai-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/index.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/1-introduction.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/2-what-is-azure-search.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/6-query-data-in-an-azure-search-index.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/5-start-with-portal.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/8-knowledge-check.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/9-summary.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/7-exercise.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/intro-to-azure-search/3-process.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/index.md",
+      "redirect_url": "/training/modules/introduction-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/2b-computer-vision-models.md",
+      "redirect_url": "/training/modules/introduction-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/4-exercise.md",
+      "redirect_url": "/training/modules/introduction-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/3-image-analysis-azure.md",
+      "redirect_url": "/training/modules/introduction-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/1-introduction.md",
+      "redirect_url": "/training/modules/introduction-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/5-knowledge-check.md",
+      "redirect_url": "/training/modules/introduction-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/6-summary.md",
+      "redirect_url": "/training/modules/introduction-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-images-computer-vision/2-understand-computer-vision.md",
+      "redirect_url": "/training/modules/introduction-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/index.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/2-document-intelligence-capabilities.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/4-exercise.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/3-azure-document-intelligence.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/1-introduction.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/5-knowledge-check.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-receipts-form-recognizer/6-summary.md",
+      "redirect_url": "/training/modules/ai-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/index.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/4-read-text-computer-vision.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/2-ocr-azure.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/3-azure-studio.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/1-introduction.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/5-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/6-summary.md",
+      "redirect_url": "/training/modules/get-started-computer-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/2-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/3-create-configure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/4-exercise-create-configure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/5-store-session-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/6-exercise-store-session-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/7-exercise-deploy-app-service.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/java/spring-framework/configure-spring-boot-initializer-java-app-with-redis-cache?tabs=entraid&pivots=azure-managed-redis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/introduction-generative-ai/index.md",
+      "redirect_url": "/training/paths/introduction-to-ai-on-azure/",
       "redirect_document_id": false
     }
   ]

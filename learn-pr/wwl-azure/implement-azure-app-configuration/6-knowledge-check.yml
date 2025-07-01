@@ -2,15 +2,16 @@
 uid: learn.wwl.implement-azure-app-configuration.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 07/17/2024
+  ms.date: 06/27/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
   ms.custom:
   - N/A
-  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -47,4 +48,4 @@ quiz:
       explanation: "Incorrect. The unwrapped encryption key is cached within App Configuration for one hour, not stored permanently."
     - content: "To encrypt sensitive information at rest"
       isCorrect: true
-      explanation: "Correct. Customer-managed keys are used to encrypt sensitive information in key-value pairs at rest."
+      explanation: "Correct. Customer-managed keys are used to encrypt sensitive information in key-value pairs at rest."
