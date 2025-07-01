@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Module assessment
   description: "Module assessment"
-  ms.date: 06/30/2025
+  ms.date: 07/01/2025
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
@@ -60,7 +60,7 @@ quiz:
     - content: "It only provides billing summaries and cost forecasts."
       isCorrect: false
       explanation: "Incorrect. Copilot can provide billing insights, but its capabilities go far beyond that."
-  - content: "Why would you use subnets within a virtual network in Azure?"
+  - content: "Why would an Azure administrator use subnets within a virtual network in Azure?"
     choices:
     - content: "To increase the number of virtual networks in a region."
       isCorrect: false

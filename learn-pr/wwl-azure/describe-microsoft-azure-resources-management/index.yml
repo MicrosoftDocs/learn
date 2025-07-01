@@ -5,14 +5,14 @@ metadata:
   prefetch-feature-rollout: true
   title: Describe Microsoft Azure Resources Management
   description: "Perform basic resource management tasks for Azure resources, including compute, storage, and networking."
-  ms.date: 06/30/2025
+  ms.date: 07/01/2025
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.service: azure
   ai-usage: ai-assisted
 title: Describe Microsoft Azure resources management
-summary: This module introduces you to basic concepts around managing Microsoft Azure compute, storage, and networking resources.
+summary: This module introduces you to basic concepts around managing Microsoft Azure compute, storage, and networking resources. This module is paired with the guided project to give you practical application and experience.
 abstract: |
   By the end of this module, you will be able to:
 
