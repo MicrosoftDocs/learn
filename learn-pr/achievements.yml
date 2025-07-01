@@ -5799,7 +5799,7 @@ achievements:
   type: badge
   title: Generate code with Azure OpenAI Service
   summary: This module shows engineers how to use the Azure OpenAI Service to generate and improve code.
-  iconUrl: /learn/achievements/generic-badge.svgz
+  iconUrl: /learn/achievements/generic-badge.svg
 - uid: learn.azure.cloud-adoption-framework-plan.badge
   type: badge
   title: Prepare for cloud adoption with a data-driven plan
@@ -6035,3 +6035,8 @@ achievements:
   title: Accelerate a Spring Boot application with Azure Cache for Redis
   summary: Learn how to use Azure Cache for Redis to cache business data and HTTP session data in a Java Spring Boot application, then publish the application to the cloud.
   iconUrl: /training/achievements/accelerate-scale-spring-boot-application-azure-cache-redis.svg
+- uid: learn.intro-generative-ai.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Generative AI'
+  summary: "Generative AI is a form of artificial intelligence in which models are trained to generate new original content based on natural language input. In other words, you can describe a desired output in normal everyday language, and the model can respond by creating appropriate text, image, code, and more. \n\nTake this learning path to get started with generative AI. In it, you'll learn how to:\n- Understand core concepts of generative AI\n- Prepare for an AI development project\n- Describe considerations and practices for responsible generative AI\n- Build an AI agent using Azure AI Foundry"
+  iconUrl: /learn/achievements/generic-badge.svg
