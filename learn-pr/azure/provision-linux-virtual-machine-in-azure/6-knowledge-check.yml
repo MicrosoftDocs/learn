@@ -9,6 +9,7 @@ metadata:
   ms.author: carols
   ms.topic: unit
   ms.custom: linux-related-content
+  module_assessment: true
 durationInMinutes: 7
 quiz:
   title: Check your knowledge

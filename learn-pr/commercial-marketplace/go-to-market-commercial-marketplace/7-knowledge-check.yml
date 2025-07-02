@@ -8,6 +8,7 @@ metadata:
   author: marleva
   ms.author: maevan
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: 'Knowledge check'

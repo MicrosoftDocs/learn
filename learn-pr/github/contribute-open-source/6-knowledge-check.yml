@@ -13,6 +13,7 @@ metadata:
   - team=cloud_advocates
   ms.contributors:
   - yolasors-11052021
+  module_assessment: true
 durationInMinutes: 4
 quiz:
   title: Contribute to an open-source project using GitHub

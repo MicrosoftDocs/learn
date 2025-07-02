@@ -6,13 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Implement Conditional Access policies roles and assignments
   description: "Exercise - Implement Conditional Access policies roles and assignments"
-  ms.date: 04/22/2025
+  ms.date: 06/27/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
   ms.custom:
-    - sfi-ga-nochange
-    - N/A
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-implement-conditional-access-policies-roles-assignments.md)]

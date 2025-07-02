@@ -16,7 +16,7 @@ I think the solution we need is a good deployment pattern. A deployment pattern 
 
 Picking the right pattern would definitely help you, like by minimizing downtime. Another advantage of a deployment pattern is that it gives us a chance to run tests that should really happen in production.
 
-*Andy starts writing on the whiteboard.*
+_Andy starts writing on the whiteboard._
 
 Here are the possibilities we should consider:
 
@@ -31,7 +31,7 @@ Let's briefly discuss each pattern.
 
 ## Blue-green deployments
 
-A _blue-green deployment_ reduces risk and downtime by running two identical environments. These environments are called *blue* and *green*. At any time, only one of the environments is live. A blue-green deployment typically involves a router or load balancer that helps control the flow of traffic.
+A _blue-green deployment_ reduces risk and downtime by running two identical environments. These environments are called _blue_ and _green_. At any time, only one of the environments is live. A blue-green deployment typically involves a router or load balancer that helps control the flow of traffic.
 
 :::image type="content" source="../media/2-blue-green-deployment.png" alt-text="Diagram of a load balancer distributing traffic in a blue-green deployment.":::
 
@@ -87,13 +87,13 @@ In a ring-based deployment, we deploy changes to risk-tolerant customers first. 
 
 ## Implementing the blue-green deployment
 
-*Andy looks at Tim.*
+_Andy looks at Tim._
 
 **Andy:** That's a lot, I know. Do you want to take some time to think about it? Or you and I could ...
 
 **Tim:** Blue-green.
 
-*Everyone in the room laughs.*
+_Everyone in the room laughs._
 
 **Mara:** Is that the coffee talking?
 
@@ -105,17 +105,17 @@ So the question is, how do we implement a blue-green deployment in our pipeline?
 
 ## What are deployment slots?
 
-**Andy:** Because we're using Azure App Service, we can take advantage of *deployment slots*. Deployment slots are running apps that have their own host names.
+**Andy:** Because we're using Azure App Service, we can take advantage of _deployment slots_. Deployment slots are running apps that have their own host names.
 
 I know we're not yet ready to deploy the _Space Game_ website to production as part of the automated pipeline. But as a test, we can add a deployment slot to our **staging** environment.
 
-Instead of setting up a load balancer or a router, we can just add a second slot to the App Service instance that we use in our existing _Staging_ environment. We can call the primary slot *blue* and the secondary slot *green*.
+Instead of setting up a load balancer or a router, we can just add a second slot to the App Service instance that we use in our existing _Staging_ environment. We can call the primary slot _blue_ and the secondary slot _green_.
 
 :::image type="content" source="../media/2-zero-downtime-deployment.png" alt-text="Diagram of applications swapping IP addresses.":::
 
 This way we can deploy new features without any downtime. We swap an application and its configuration between the two deployment slots. Basically we're swapping the IP addresses of the two slots.
 
-**Tim:** I like that! You might call this variation of a blue-green deployment a *zero-downtime deployment*.
+**Tim:** I like that! You might call this variation of a blue-green deployment a _zero-downtime deployment_.
 
 **Andy:** Great! Tim and I'll work on implementing this deployment pattern. We can all meet later to see the results.
 
@@ -123,10 +123,10 @@ This way we can deploy new features without any downtime. We swap an application
 
 Feature flags were one of the release-cadence methods that the team considered. The team decided not to use feature flags, but many people have found them useful. This section provides more information about feature flags.
 
-*Feature flags*, sometime called *feature toggles*, allow you to change how a system works without changing the code. These flags allow you to push new code into your central development branch and have the code deployed but not necessarily functional. The flags are commonly implemented as the value of variables that control conditional logic.
+_Feature flags_, sometime called _feature toggles_, allow you to change how a system works without changing the code. These flags allow you to push new code into your central development branch and have the code deployed but not necessarily functional. The flags are commonly implemented as the value of variables that control conditional logic.
 
 Imagine that your team is working in the central development branch of a bank application. You decided to do all the work in the main branch to avoid messy merge operations later. But you face a problem. You're substantially changing the interest calculations, and people depend on that code every day. Worse, the changes will take you weeks to complete. You can't leave the main code broken for so long.
 
 In this scenario, a feature flag might be a good solution. You can change the code so that users who don't have the feature flag set can keep using the original interest calculation code. Meanwhile, your team does have the feature flag set, so they can see the code that they're changing.
 
-Another type of feature flag is a *release flag*. Imagine that after you complete the work on the interest calculation code, you want to try it out before you release it publicly. You have a group of users who are well positioned to deal with new code and any possible issues. You'll let them try the feature first. You change the configuration so that they also have the feature flag set and can test the new code. If problems happen, then you can quickly disable the flag.
+Another type of feature flag is a _release flag_. Imagine that after you complete the work on the interest calculation code, you want to try it out before you release it publicly. You have a group of users who are well positioned to deal with new code and any possible issues. You'll let them try the feature first. You change the configuration so that they also have the feature flag set and can test the new code. If problems happen, then you can quickly disable the flag.

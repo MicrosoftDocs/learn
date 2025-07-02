@@ -3,14 +3,15 @@ uid: learn.wwl.implement-authentication-by-using-microsoft-authentication-librar
 metadata:
   title: Implement authentication by using the Microsoft Authentication Library
   description: "Implement authentication by using the Microsoft Authentication Library"
-  ms.date: 07/16/2024
+  ms.date: 06/26/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: msal
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Implement authentication by using the Microsoft Authentication Library
 summary: Learn how to implement authentication by using the Microsoft Authentication Library.
 abstract: |
@@ -22,7 +23,7 @@ abstract: |
 
   -   Register an app with the Microsoft identity platform.
 
-  -   Create an app that retrieves a token by using the [MSAL.NET](/azure/active-directory/develop/msal-overview) library.
+  -   Create an app that retrieves a token with the&nbsp;[MSAL.NET](/azure/active-directory/develop/msal-overview) SDK.
 prerequisites: |
   -   You should be familiar with developer concepts and terminology.
 

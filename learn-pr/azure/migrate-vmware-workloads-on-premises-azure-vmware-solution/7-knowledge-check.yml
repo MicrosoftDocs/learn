@@ -11,6 +11,7 @@ metadata:
   ms.topic: unit
   ms.contributors: shkuehn-06182021, orthomas-08092023
   ms.custom: team=cloud_advocates
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

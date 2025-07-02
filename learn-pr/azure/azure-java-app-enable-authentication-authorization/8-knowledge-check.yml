@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

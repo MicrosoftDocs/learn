@@ -20,7 +20,7 @@ Let's consider the advantages or disadvantages for each of these tools, by using
 
 ### Scenario
 
-The organization you work for has been given a new contract to work for a new client. They have a handful of virtual machines that run on Azure. The development team decides they need to install a small application they've written to help increase their team's productivity and make sure they can meet new deadlines. This application doesn't require a restart.
+The organization you work for receives a new contract to work for a new client. They have a handful of virtual machines that run on Azure. The development team decides they need to install a small application they wrote to help increase their team's productivity and make sure they can meet new deadlines. This application doesn't require a restart.
 
 The team asks you to implement a solution to ensure that these virtual machines all have the application installed properly, and in the fastest and least complex manner possible.
 
@@ -46,7 +46,7 @@ You decide to use DSC. DSC configurations are easy to read. You can declare a si
 
 ### Solution summary
 
-DSC is easy to read, update, and store. DSC configurations help you declare the state your machines should be in at the point they're provisioned, rather than having instructions that detail how to put the machines in a certain state. Without Azure Automation State Configuration, you have to manage your own DSC configurations and orchestration. DSC can achieve more when it's coupled with Azure Automation State Configuration.
+DSC is easy to read, update, and store. DSC configurations help you declare the state your machines should be in at the point they're provisioned, rather than having instructions that detail how to put the machines in a certain state. Without Azure Automation State Configuration, you have to manage your own DSC configurations and orchestration. DSC can achieve more when coupled with Azure Automation State Configuration.
 
 ## Azure Automation State Configuration
 

@@ -8,6 +8,7 @@ metadata:
   author: jjaygbay1
   ms.author: jacobjaygbay
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 2
 content: |
   [!include[](includes/7-knowledge-check.md)]

@@ -21,19 +21,20 @@ When you have deployed models to the Azure AI model inference service, you can u
 The following Python code sample uses a **ChatCompletionsClient** object to chat with a model deployment named **phi-4-model**.
 
 ```python
-from azure.ai.projects import AIProjectClient
 from azure.identity import DefaultAzureCredential
 from azure.ai.inference.models import SystemMessage, UserMessage
 
 try:
         
-    # Initialize the project client
-    project_client = AIProjectClient(            
-        credential=DefaultAzureCredential(),
-        endpoint=project_endpoint)
-        
     ## Get a chat client
-    chat_client = project_client.inference.get_chat_completions_client()
+    inference_endpoint = f"https://{urlparse(project_endpoint).netloc}/models"
+
+    credential = DefaultAzureCredential()
+
+    chat_client = ChatCompletionsClient(
+            endpoint=inference_endpoint,
+            credential=credential,
+            credential_scopes=["https://ai.azure.com/.default"])
     
     # Get a chat completion based on a user-provided prompt
     user_prompt = input("Enter a question:")
@@ -52,7 +53,7 @@ except Exception as ex:
 ```
 
 > [!NOTE]
-> The **ChatCompletionsClient** class uses **Azure AI Inference** library. In addition to the **azure-ai-projects** and **azure-identity** packages discussed previously, the sample code shown here assumes that the **azure-ai-inference** package has been installed:
+> The **ChatCompletionsClient** class uses **Azure AI Inference** library. In addition to the **azure-identity** package discussed previously, the sample code shown here assumes that the **azure-ai-inference** package has been installed:
 >
 > `pip install azure-ai-inference`
 

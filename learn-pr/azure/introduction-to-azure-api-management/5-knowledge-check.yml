@@ -10,6 +10,7 @@ metadata:
   ms.author: danlep
   ms.topic: unit
   ms.custom: engagement-fy23
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

@@ -9,6 +9,7 @@ metadata:
   ms.topic: unit
   ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java, linux-related-content
   ms.assetid: HelloJavaAppService
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"

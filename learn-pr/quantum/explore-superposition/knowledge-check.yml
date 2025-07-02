@@ -10,6 +10,7 @@ metadata:
   ms.date: 01/22/2025
   ms.topic: unit
   show_latex: true
+  module_assessment: true
 durationInMinutes: 7
 content: |
   [!include[](includes/knowledge-check.md)]

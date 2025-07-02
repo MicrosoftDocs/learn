@@ -3,7 +3,7 @@ uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel
 metadata:
   title: Integrate Microsoft Defender XDR with Microsoft Sentinel
   description: "In this module, you learn how to integrate Microsoft Defender XDR with Microsoft Sentinel."
-  ms.date: 04/23/2025
+  ms.date: 06/25/2025
   author: KenMAG
   ms.author: kelawson
   ms.topic: module
@@ -39,7 +39,8 @@ units:
 - learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.3-capability-differences-between-portals
 - learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.4-onboarding-sentinel-to-defender-xdr
 - learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.5-exploring-sentinel-features-in-defender-xdr
-- learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.6-knowledge-check
-- learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.7-summary
+- learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.simulation-exercise-deploy-sentinel-to-defender
+- learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.knowledge-check
+- learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.summary
 badge:
   uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.badge

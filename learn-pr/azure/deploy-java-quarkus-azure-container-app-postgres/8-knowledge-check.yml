@@ -12,6 +12,7 @@ metadata:
     - team=devdiv
     - devx-track-extended-java
   ms.contributors: antoniomanug
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   questions:
