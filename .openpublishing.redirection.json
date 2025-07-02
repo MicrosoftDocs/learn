@@ -50193,6 +50193,96 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/2-create-azure-cognitive-services-account.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/3-exercise-create-azure-cognitive-services-account.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/4-create-single-shot-recognition-speech-to-text-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/5-exercise-create-single-shot-recognition-speech-to-text-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/6-create-continuous-recognition-speech-to-text-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/7-exercise-create-continuous-recognition-speech-to-text-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-speech-to-text-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/2-create-azure-cognitive-services-account.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/3-exercise-create-azure-cognitive-services-account.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/4-create-text-to-speech-app-using-text.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/5-exercise-create-text-to-speech-app-using-text.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/6-create-text-to-speech-app-using-ssml.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/7-exercise-create-text-to-speech-app-using-ssml.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-your-first-text-to-speech-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/sports-machine-learning/use-mixed-reality-toolkit/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
@@ -50253,6 +50343,76 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/2-what-is-azure-cache-for-redis.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/3-how-azure-cache-for-redis-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/4-when-to-use-azure-cache-for-redis.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/2-what-is-orleans.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/3-how-orleans-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/4-when-to-use-orleans.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/react/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
@@ -50310,6 +50470,81 @@
     {
       "source_path": "learn-pr/language/react-get-started/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/2-understanding-ef-core.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/3-migrations.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/4-interacting-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/5-test-db-operations.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/6-reverse-engineering.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/persist-data-ef-core/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio-azure-web-apps/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio-azure-web-apps/2-remote-debugging-concepts.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio-azure-web-apps/3-deploy-the-app-to-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio-azure-web-apps/4-attach-to-process.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio-azure-web-apps/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio-azure-web-apps/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio-azure-web-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-fundamentals/",
       "redirect_document_id": false
     },
     {
@@ -50613,6 +50848,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr/2-what-is-signalr.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr/3-how-signalr-works.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr/4-when-to-use-signalr.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr/index.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/detect-analyze-faces/index.md",
       "redirect_url": "/training/modules/get-started-computer-vision-azure/",
       "redirect_document_id": false
@@ -50870,6 +51140,91 @@
     {
       "source_path": "learn-pr/paths/introduction-generative-ai/index.md",
       "redirect_url": "/training/paths/introduction-to-ai-on-azure/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/2-clone-familiarize.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/3-refactor-to-signalr.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/4-validate-refactored-code.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/index.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/2-understand-aspnetcore-identity.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/3-add-identity.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/4-identity-customizations.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/5-customize-identity.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/6-multi-factor-authentication.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/7-configure-multi-factor-authentication.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/8-claims-policy-authorization.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/9-enable-claims-policy-authorization.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
       "redirect_document_id": false
     }
   ]
