@@ -5,7 +5,7 @@ title: Store data in SQL-compliant databases
 metadata:
   title: Store data in SQL-compliant databases
   description: "Learn how to use .NET Aspire integrations to read and write data to PostgreSQL, MySQL, and Microsoft SQL Server databases."
-  ms.date: 3/20/2024
+  ms.date: 07/02/2025
   author: camsoper
   ms.author: casoper
   ms.topic: unit
