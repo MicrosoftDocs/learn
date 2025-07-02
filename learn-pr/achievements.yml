@@ -6085,3 +6085,8 @@ achievements:
   title: 'Microsoft Azure AI Fundamentals: Generative AI'
   summary: "Generative AI is a form of artificial intelligence in which models are trained to generate new original content based on natural language input. In other words, you can describe a desired output in normal everyday language, and the model can respond by creating appropriate text, image, code, and more. \n\nTake this learning path to get started with generative AI. In it, you'll learn how to:\n- Understand core concepts of generative AI\n- Prepare for an AI development project\n- Describe considerations and practices for responsible generative AI\n- Build an AI agent using Azure AI Foundry"
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.bring-ai-to-business-users-your-organization.trophy
+  type: trophy
+  title: Bring AI to business users in your organization
+  summary: To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
+  iconUrl: /training/achievements/bring-ai-to-business-users-your-organization.svg
