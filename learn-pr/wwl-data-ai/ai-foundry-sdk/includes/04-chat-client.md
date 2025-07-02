@@ -52,7 +52,7 @@ except Exception as ex:
 
 ::: zone pivot="csharp"
 
-The following C# code sample uses the **GetAzureOpenAIChatClient()** method of the Azure AI project object to get an OpenAI client with which to chat with a model that has been deployed in the project'a Azure AI Foundry resource.
+The following C# code sample uses the **GetAzureOpenAIChatClient()** method of the Azure AI project object to get an OpenAI client with which to chat with a model that has been deployed in the project's Azure AI Foundry resource.
 
 ```csharp
 using Azure.Identity;

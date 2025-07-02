@@ -46,6 +46,6 @@ quiz:
       explanation: "Incorrect. You can't use the Azure Machine Learning SDK to chat with an Azure AI model inference model."
     - content: "Azure AI Language"
       isCorrect: false
-      explanation: "Incorrect. the Azure AI Language SDK is used to consume Azure AI Language resources, not generayive AI models."
+      explanation: "Incorrect. The Azure AI Language SDK is used to consume Azure AI Language resources, not generative AI models."
 
 
