@@ -29,7 +29,7 @@ You can use Cloud Shell to configure exfiltration protection for Azure AI servic
        az cognitiveservices account show -g "myResourceGroup" -n "Account Name" | grep Network Access
     ```
 
-   [![Screenshot that displays output of command checking status of cognitive services.](../media/show-exfiltration-configuration.svg)](../media/show-exfiltration-configuration-big.svg)
+   [![Screenshot that displays output of command checking status of cognitive services.](../media/show-exfiltration-configuration.svg)](../media/show-exfiltration-configuration-big.svg#lightbox)
 
 1. The result of this command informs you if public network access is enabled for the service and if any outbound restrictions are set.
 1. Check to see if there's a Fully Qualified Domain Name list of allowed addresses.
@@ -38,27 +38,27 @@ You can use Cloud Shell to configure exfiltration protection for Azure AI servic
        az cognitive services account show -g "myResourceGroup" -n "AccountName" | grep Fqdn
     ```
 
-1. The next command uses the rest protocol to patch the Azure OpenAI instance so that network access will be restricted and the allowed FQDN list will be set to "microsoft.com"
+1. The next command uses the rest protocol to patch the Azure OpenAI instance so that network access will be restricted and the allowed FQDN list will be set to "microsoft.com".
 
     ```azurecli
        az rest -m patch -u /subscriptions/{subscription ID}/resourceGroups/{resource group}/providers/Microsoft.CognitiveServices/accounts/{account name}?api-version=2024-10-01 -b '{"properties": { "restrictOutboundNetworkAccess": true, "allowedFqdnList": [ "microsoft.com" ] }}'
     ```
 
-1. After issuing the command, wait up to 15 minutes for settings to take effect
-1. Check if outbound access is restricted using the command we used previously
+1. After issuing the command, wait up to 15 minutes for settings to take effect.
+1. Check if outbound access is restricted using the command we used previously.
 
     ```azurecli
        az cognitiveservices account show -g "myResourceGroup" -n "Account Name" | grep Network Access
     ```
 
-1. Restrict Outbound Network access is now set to true
-1. The next command we'll send to a text file so that we can edit the file using nano
+1. Restrict Outbound Network access is now set to true.
+1. The next command we'll send to a text file so that we can edit the file using nano.
 
     ```azurecli
        az cognitiveseervices account show -g "MyResourceGroup" -n "accountName' > "myfile".txt
        nano "myfile".txt
     ```
 
-1. The output shows Microsoft.com in the allowed FQDN list
+1. The output shows Microsoft.com in the allowed FQDN list.
 
-   [![Screenshot showing the contents of the output text file in the editor.](../media/editor-list.svg)](../media/editor-list-big.svg)
+   [![Screenshot showing the contents of the output text file in the editor.](../media/editor-list.svg)](../media/editor-list-big.svg#lightbox)

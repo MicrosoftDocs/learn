@@ -27,7 +27,7 @@ Service endpoint policies let you filter virtual network traffic to specific Azu
 1. Select **Add** to add the resource information.
 1. Select **+Add an alias** and then select _/services/Azure/MachineLearning_ as the Server Alias value.  Select **Add** to add the alias.
 
-    [![A screenshot shows the configuration of a service endpoint policy in the Azure portal.](../media/service-endpoint-policy.svg)](../media/service-endpoint-policy-big.svg)
+    [![A screenshot showing the configuration of a service endpoint policy in the Azure portal.](../media/service-endpoint-policy.svg)](../media/service-endpoint-policy-big.svg#lightbox)
 
 1. Select **Review + Create, then Create**
 
@@ -66,4 +66,4 @@ Use the following steps to enable a storage endpoint for the subnet that contain
 1. In the form that appears, expand the **Services** dropdown and then enable **Microsoft.Storage**. Select **Save** to save these changes.
 1. Apply the service endpoint policy to your workspace subnet.
 
-[![A screenshot showing the edit subnet option in the Azure Portal.](../media/edit-subnet.svg)](../media/edit-subnet-big.svg)
+[![A screenshot showing the edit subnet option in the Azure Portal.](../media/edit-subnet.svg)](../media/edit-subnet-big.svg#lightbox)
