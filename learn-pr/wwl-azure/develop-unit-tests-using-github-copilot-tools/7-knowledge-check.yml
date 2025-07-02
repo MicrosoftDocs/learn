@@ -14,7 +14,7 @@ metadata:
   module_assessment: true
 durationInMinutes: 7
 quiz:
-  title: "Check your knowledge"
+  title: "Check your knowledge" 
   questions:
   - content: "What is the role of GitHub Copilot Chat in generating unit test cases?"
     choices:
