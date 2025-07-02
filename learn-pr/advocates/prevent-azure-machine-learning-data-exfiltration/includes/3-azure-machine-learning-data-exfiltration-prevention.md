@@ -2,7 +2,7 @@ Azure Machine Learning relies on multiple inbound and outbound dependencies. Som
 
 If your compute instance or cluster uses a public IP address, you have an inbound on the _azuremachinelearning_ service tag (port 44224). You can control this inbound traffic by using a network security group (NSG) and service tags.
 
-Outbound traffic is the most common route for data exfiltration. When storage outbound and Azure Front Door outbound traffic if not configured properly, it can lead to exfiltration.  However, storage outbound traffic is a requirement for compute instances and compute clusters in an Azure Machine Learning deployment.
+Outbound traffic is the most common route for data exfiltration. When storage outbound and Azure Front Door outbound traffic is not configured properly, it can lead to exfiltration.  However, storage outbound traffic is a requirement for compute instances and compute clusters in an Azure Machine Learning deployment.
 
 - A malicious agent can use this outbound rule by provisioning and saving data in their own storage account. You can remove these risks by using an Azure Service Endpoint policy and Azure Batch’s simplified node communication architecture.
 - Azure Front door is used by the Azure Machine Learning studio UI and AutoML. Instead of allowing outbound to the service tag (AzureFrontDoor.frontend), switch to the following fully qualified domain names (FQDN):
@@ -52,10 +52,10 @@ For outbound traffic, there are two options customers might be using:
 
 > [!NOTE]
 > If you enable the service endpoint on the subnet used by your firewall, you must open outbound traffic to the following hosts over **TCP port 443**:
-
-- *.blob.core.windows.net
-- *.queue.core.windows.net
-- *.table.core.windows.net
+> 
+> - *.blob.core.windows.net
+> - *.queue.core.windows.net
+> - *.table.core.windows.net
 
 ## Enable storage endpoint for the subnet
 
