@@ -6090,3 +6090,23 @@ achievements:
   title: Enable real-time updates in a web application using Azure Functions and SignalR Service
   summary: Change a JavaScript web app update mechanism from polling to push-based architecture with SignalR Service, Azure Cosmos DB, and Azure Functions.
   iconUrl: /training/achievements/advocates/enable-automatic-updates-in-a-web-app-using-azure-functions-and-signalr.svg
+- uid: learn.azure.publish-static-web-app-authentication.badge
+  type: trophy
+  title: Authenticate users with Azure Static Web Apps
+  summary: Publish an Angular, React, Svelte, or Vue JavaScript app with API and authentication using Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
+  iconUrl: /training/achievements/publish-static-web-app-authentication.svg
+- uid: learn.app-service-autoscale-rules.badge
+  type: trophy
+  title: Dynamically meet changing web app performance requirements with autoscale rules
+  summary: Respond to periods of high activity by incrementally adding resources, and then removing these resources when activity drops, to reduce costs.
+  iconUrl: /training/achievements/app-service-autoscale-rules.svg
+- uid: learn.wwl.bring-ai-to-business-users-your-organization.trophy
+  type: trophy
+  title: Bring AI to business users in your organization
+  summary: To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
+  iconUrl: /training/achievements/bring-ai-to-business-users-your-organization.svg
+- uid: learn.wwl.introduction-ai-for-business-users.trophy
+  type: trophy
+  title: Introduction to AI for business users
+  summary: To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
+  iconUrl: /training/achievements/introduction-ai-for-business-users.svg
