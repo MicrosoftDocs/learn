@@ -3,7 +3,7 @@ uid: learn.wwl.connect-agent-to-mcp-tools.understand-mcp-tool-discovery
 title: Understand MCP tool discovery
 metadata:
   title: Understand MCP tool discovery
-  description: "Learn how MCP servers host functions that can be discovered by LLMs."
+  description: "Learn how Model Context Protocol (MCP) servers host functions that can be discovered by LLMs."
   ms.date: 06/13/2025
   author: buzahid
   ms.author: buzahid

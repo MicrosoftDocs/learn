@@ -3,7 +3,7 @@ uid: learn.wwl.connect-agent-to-mcp-tools.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: "Check your learning on connecting MCP tools to Azure AI Agents."
+  description: "Check your learning on connecting Model Context Protocol (MCP) tools to Azure AI Agents."
   ms.date: 06/13/2025
   author: buzahid
   ms.author: buzahid
@@ -35,11 +35,11 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The client uses direct calls, not event subscriptions, to list tools."
   - content: "Why should MCP tools be wrapped in async functions on the client-side?"
-  choices:
+    choices:
     - content: "To allow the agent to wait for user input."
       isCorrect: false
       explanation: "Incorrect. The tools do not prevent the agent from receiving user input."
-     - content: "To enable asynchronous invocation so the agent can call tools without blocking."
+    - content: "To enable asynchronous invocation so the agent can call tools without blocking."
       isCorrect: true
       explanation: "Async functions let the agent invoke tools efficiently."
     - content: "To convert the functions into REST API endpoints automatically."

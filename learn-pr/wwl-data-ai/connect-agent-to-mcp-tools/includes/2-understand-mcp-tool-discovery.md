@@ -12,7 +12,7 @@ This approach means:
 
 ## How does MCP enable dynamic tool discovery?
 
-An MCP server hosts a set of functions that are exposed as tools using the `@mcp.tool` decorator. Tools are a primitive type in the MCP that enable servers to expose executable functionality to clients. A client can connect to the server and fetch these tools dynamically. The client then generates function wrappers that are added to the Azure AI Agent's tool definitions. This setup creates a flexible pipeline:
+An MCP server hosts a set of functions that are exposed as tools using the `@mcp.tool` decorator. Tools are a primitive type in the MCP that enables servers to expose executable functionality to clients. A client can connect to the server and fetch these tools dynamically. The client then generates function wrappers that are added to the Azure AI Agent's tool definitions. This setup creates a flexible pipeline:
 
 - The MCP server hosts available tools.
 - The MCP client dynamically discovers the tools.

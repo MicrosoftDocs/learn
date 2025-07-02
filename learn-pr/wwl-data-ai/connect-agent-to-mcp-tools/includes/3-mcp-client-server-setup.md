@@ -2,11 +2,11 @@ To dynamically connect tools to your Azure AI Agent, you first need a functionin
 
 ## What is the MCP Server?
 
-The MCP server acts as a registry for tools your agent can use. You can initialize your MCP server using `FastMCP("server-name")`. The FastMCP class uses Python type hints and docstrings to automatically generate tool definitions, making it easy to create and maintain MCP tools. These definitions are then served over HTTP when requested by the client. Because tool definitions live on the server, you can update or add new tools at any time, without having to modify or redeploy your agent.
+The MCP server acts as a registry for tools your agent can use. You can initialize your MCP server using `FastMCP("server-name")`. The FastMCP class uses Python type hints and document strings to automatically generate tool definitions, making it easy to create and maintain MCP tools. These definitions are then served over HTTP when requested by the client. Because tool definitions live on the server, you can update or add new tools at any time, without having to modify or redeploy your agent.
 
 ## What is the MCP Client?
 
-The MCP client acts as a bridge between your MCP server and the Azure AI Agent Service. The client initializes an MCP client session and connets to the server. Afterwards, it performs three key tasks:
+The MCP client acts as a bridge between your MCP server and the Azure AI Agent Service. The client initializes an MCP client session and connects to the server. Afterwards, it performs three key tasks:
 
 - Discovers available tools from the MCP server using `session.list_tools()`.
 - Generates Python function stubs that wrap the tools.
