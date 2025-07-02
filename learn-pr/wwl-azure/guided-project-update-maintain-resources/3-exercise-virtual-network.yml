@@ -6,10 +6,10 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise – Update the virtual network
   description: "Exercise – Update the virtual network"
-  ms.date: 07/01/2025
+  ms.date: 07/02/2025
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-virtual-network.md)]

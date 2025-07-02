@@ -5,3 +5,6 @@ You should now be able to:
 * Manage virtual machines.
 * Control storage access.
 * Manage resource tags and locks.
+
+>[!WARNING]
+>If you didn't complete the **Exercise - Clean-up** unit, it's important that you complete that exercise to avoid unexpected Azure costs.

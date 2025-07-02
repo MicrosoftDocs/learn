@@ -1,23 +1,14 @@
-This procedure demonstrates how to apply tags and locks to Azure resources for better management and protection.
+This guided project consists of the following exercises:
 
-## Step 1: Add a Delete Lock to the VM
+- Update the virtual network
+- Manage virtual machines
+- Control storage access
+- **Manage tags and locks**
+- Clean up
 
-1. Go to the VM created earlier.
-2. Click **Locks** under **Settings**.
-3. Click **+ Add**.
-4. Name the lock and select **Delete** as the lock type.
-5. Click **OK**.
+In this exercise, you use resource tags and resource locks to protect and track resources.
 
-## Step 2: Add a Purpose Tag to the VM
+Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
-1. Go to the VM and click **Tags**.
-2. Add a tag with:
-   - Name: `PURPOSE`
-   - Value: `file-server`
-3. Click **Save**.
-
-## Step 3: Review Tagged Resources
-
-1. In the Azure Portal, search for **Tags**.
-2. Click on the `file-server` tag value.
-3. Review all resources associated with this tag.
+[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
+ ](https://microsoftlearning.github.io/AZ-1008-Administer-Active-Directory-Domain-Services/Instructions/Labs/LAB_02_exercise_configure_domain_controller_operations.html)

@@ -1,46 +1,17 @@
-> **Note:** This procedure requires an active Azure subscription. Please take careful note of naming conventions to facilitate the removal of all resources created for this project later. Be aware that creating and using Azure resources may increase your Azure consumption and costs.
+This is a guided project, where you complete a series of tasks. It is essential to complete the units in order. Each unit requires resources and configuration from previous units to function correctly.
 
-## Step 1: Create a Resource Group
-To manage all resources in one place, create a resource group.
+## Project overview
+In this guided project, you perform a series of tasks and actions to manage Microsoft Azure resources. You have the opportunity to modify a network, move a virtual machine between subnets, manage access to storage containers and file shares, and work with resource locks and resource tags.
 
-1. Sign in to the [Azure Portal](https://portal.azure.com).
-2. In the left-hand menu, select **Resource groups**.
-3. Click **+ Create**.
-4. Enter a name for the resource group (e.g., `project-rg`).
-5. Choose a region close to you to minimize latency and cost.
-6. Click **Review + create**, then **Create**.
+> [!WARNING]
+> This project requires an Azure subscription. Leaving resources provisioned and in use after completion of will result in additional costs. It is important to keep track of resources you create and ensure they are removed during the clean-up task at the end of this project.
 
-:::image type="content" source="../media/virtual-machine-overview.png" alt-text="Screenshot of the virtual machine overview blade.":::
+## Setup
+The scenario for the project is that you’ll be managing Microsoft Azure resources. You should already be familiar with simple tasks such as creating a virtual machine or virtual network. This **Prepare** exercise creates a basic set of Azure resources that you will then go in and manage or update during the actual scenario.
 
-## Step 2: Create a Virtual Network
-Create a virtual network to enable communication between resources.
+During the setup, you’ll create a virtual network, a virtual machine, a storage account, and associated resources.
 
-1. In the Azure Portal, search for **Virtual networks** and click **+ Create**.
-2. Select the resource group created in Step 1.
-3. Enter a name for the virtual network (e.g., `project-vnet`).
-4. Choose the same region as the resource group.
-5. Under **IP Addresses**, add a subnet named `primarySubnet`.
-6. Click **Review + create**, then **Create**.
+Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
-## Step 3: Create a Linux Virtual Machine
-Deploy a cost-effective Linux VM in the virtual network.
-
-1. Search for **Virtual machines** and click **+ Create**.
-2. Select the resource group and region.
-3. Enter a name for the VM (e.g., `project-vm`).
-4. Choose **Ubuntu Server 20.04 LTS** as the image.
-5. Select a small VM size (e.g., `Standard_B1s`) to minimize cost.
-6. Configure authentication and networking to use `primarySubnet`.
-7. Click **Review + create**, then **Create**.
-
-## Step 4: Create a Storage Account
-Provision a storage account with a container and file share.
-
-1. Search for **Storage accounts** and click **+ Create**.
-2. Select the resource group and region.
-3. Enter a unique name for the storage account.
-4. Choose **Standard** performance and **Locally-redundant storage (LRS)**.
-5. Click **Review + create**, then **Create**.
-6. After deployment, go to the storage account.
-7. Under **Containers**, create a new container.
-8. Under **File shares**, create a new file share.
+[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
+ ](https://microsoftlearning.github.io/AZ-1008-Administer-Active-Directory-Domain-Services/Instructions/Labs/LAB_02_exercise_configure_domain_controller_operations.html)

@@ -1,17 +1,14 @@
-> **Warning:** Failure to completely remove resources created during this guided project could increase Azure costs.
+This guided project consists of the following exercises:
 
-## Step 1: Remove Resource Locks
+- Update the virtual network
+- Manage virtual machines
+- Control storage access
+- Manage tags and locks
+- **Clean up**
 
-1. Go to each resource (VM, storage account, etc.) that has a lock.
-2. Click **Locks** under **Settings**.
-3. Delete any existing locks.
+Congratulations – you’ve completed most of the tasks associated with this project. In this final exercise, you’ll remove all the resources you created. This scenario required that you provide an Azure subscription. It’s important, to avoid unexpected costs, to ensure you completely remove resources created during this exercise.
 
-## Step 2: Delete the Resource Group
+Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
-1. Go to **Resource groups** in the Azure Portal.
-2. Select the resource group created in Procedure 1.
-3. Click **Delete resource group**.
-4. Enter the resource group name to confirm.
-5. Click **Delete**.
-
-This action deletes all resources created in the previous procedures.
+[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
+ ](https://microsoftlearning.github.io/AZ-1008-Administer-Active-Directory-Domain-Services/Instructions/Labs/LAB_02_exercise_configure_domain_controller_operations.html)

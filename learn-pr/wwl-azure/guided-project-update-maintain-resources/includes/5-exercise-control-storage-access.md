@@ -1,40 +1,14 @@
-This procedure demonstrates how to manage access to Azure Storage by uploading files, setting locks, and using shared access tokens.
+This guided project consists of the following exercises:
 
-## Step 1: Upload a File to the Storage Container
+- Update the virtual network
+- Manage virtual machines
+- **Control storage access**
+- Manage tags and locks
+- Clean up
 
-1. Go to the storage account and select **Containers**.
-2. Open the container created earlier.
-3. Click **Upload** and select a file from your computer.
-4. Click **Upload**.
+In this exercise, you’ll manage the storage account. You’ll Upload files, manage locks, and manage access using tokens.
 
-## Step 2: Set a Delete Lock on the File
+Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
-1. Go to the storage account and click **Locks** under **Settings**.
-2. Click **+ Add**.
-3. Name the lock and select **Delete** as the lock type.
-4. Click **OK**.
-
-## Step 3: Upload a File to Azure Files
-
-1. Go to the storage account and select **File shares**.
-2. Open the file share created earlier.
-3. Click **Upload** and select a file.
-4. Click **Upload**.
-
-## Step 4: Create Shared Access Tokens
-
-1. Go to the storage account and click **Shared access signature**.
-2. Select permissions and expiration time.
-3. Generate SAS tokens using **Key 1** and **Key 2**.
-4. Copy the URLs.
-
-## Step 5: Access the File Using SAS Token
-
-1. Paste the SAS URL in a browser or use a tool like `curl` to access the file.
-
-## Step 6: Rotate Key 1 and Test Access
-
-1. Go to the storage account and click **Access keys**.
-2. Regenerate **Key 1**.
-3. Try accessing the file using the SAS URL generated with Key 1.
-4. Notice that access is denied.
+[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
+ ](https://microsoftlearning.github.io/AZ-1008-Administer-Active-Directory-Domain-Services/Instructions/Labs/LAB_02_exercise_configure_domain_controller_operations.html)

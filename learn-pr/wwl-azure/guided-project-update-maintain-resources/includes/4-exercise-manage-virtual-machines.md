@@ -1,35 +1,14 @@
-This procedure modifies the virtual machine created earlier by changing its subnet, scaling its size, attaching storage, and configuring auto-shutdown.
+This guided project consists of the following exercises:
 
-## Step 1: Change the Assigned Subnet
-Move the VM to the `fileServers` subnet.
+- Update the virtual network
+- **Manage virtual machines**
+- Control storage access
+- Manage tags and locks
+- Clean up
 
-1. Stop the VM from the **Virtual machines** blade.
-2. Go to **Networking** under the VM settings.
-3. Click **Detach network interface**.
-4. Create a new network interface in the `fileServers` subnet.
-5. Attach the new interface to the VM.
-6. Start the VM.
+In this exercise, you’ll manage the virtual machine. You’ll change the VM’s assigned subnet, vertically scale the VM, add storage, and finally add an automatic shutdown.
 
-## Step 2: Vertically Scale the VM
-Increase the VM size to improve performance.
+Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
-1. Go to the VM and click **Size** under **Settings**.
-2. Select the next larger size (e.g., `Standard_B1ms`).
-3. Click **Resize**.
-:::image type="content" source="../media/virtual-machine-overview.png" alt-text="Screenshot of the virtual machine overview blade.":::
-
-## Step 3: Add Attached Storage
-Attach a new disk to the VM.
-
-1. Go to the VM and click **Disks**.
-2. Click **+ Add data disk**.
-3. Create a new managed disk with minimal size (e.g., 10 GB).
-4. Click **Save**.
-
-## Step 4: Set Auto-Shutdown
-Configure the VM to shut down daily at 9PM.
-
-1. Go to the VM and click **Auto-shutdown** under **Operations**.
-2. Enable auto-shutdown.
-3. Set the time to 9:00 PM.
-4. Click **Save**.
+[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
+ ](https://microsoftlearning.github.io/AZ-1008-Administer-Active-Directory-Domain-Services/Instructions/Labs/LAB_02_exercise_configure_domain_controller_operations.html)
