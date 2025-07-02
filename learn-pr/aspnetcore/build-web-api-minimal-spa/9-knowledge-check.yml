@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.aspnetcore.build-web-api-minimal-spa.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge.
   ms.date: 08/11/2023
   author: CamSoper
   ms.author: casoper
   ms.custom: team=nextgen
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/9-knowledge-check.md)]

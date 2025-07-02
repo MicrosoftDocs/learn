@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.adopt-finops-on-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Test your knowledge.
   ms.date: 05/02/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/7-knowledge-check.md)]

@@ -10,11 +10,11 @@ A common performance tuning approach is as follows:
 
 - Review and evaluate expensive queries from the Query Store, or Extended Events capture, and work to manually craft indexes to better serve those queries.
 
-- Create the index(s) in a non-production environment, and test query execution and performance and observe performance changes. It's important to note any hardware differences between your production and non-production environments, as the amount of memory and the number of CPUs could affect your execution plan.
+- Create the indexes in a nonproduction environment, and test query execution and performance and observe performance changes. It's important to note any hardware differences between your production and nonproduction environments, as the amount of memory and the number of CPUs could affect your execution plan.
 
 - After testing carefully, implement the changes to your production system.
 
-Verify the column order of your indexes—the leading column drives column statistics and usually determines whether the optimizer will choose the index. Ideally, the leading column will be selective and used in the `WHERE` clause of many of your queries. Consider using a change control process for tracking changes that could affect application performance. Before dropping an index, save the code in your source control, so the index can be quickly recreated if an infrequently run query requires the index to perform well.
+Verify the column order of your indexes—the leading column drives column statistics and usually determines whether the optimizer chooses the index. Ideally, the leading column is selective and used in the `WHERE` clause of many of your queries. Consider using a change control process for tracking changes that could affect application performance. Before dropping an index, save the code in your source control, so the index can be quickly recreated if an infrequently run query requires the index to perform well.
 
 Finally, columns used for **equality comparisons** should precede columns used for **inequality comparisons** and that columns with greater selectivity should precede columns with fewer distinct values.
 
@@ -44,7 +44,7 @@ ALTER INDEX IX_Customer_PersonID_ModifiedDate ON Sales.Customer PAUSE
 GO
 ```
 
-The statement above uses the `PAUSE` clause to temporarily stop the creation of the resumable online index.
+This statement uses the `PAUSE` clause to temporarily stop the creation of the resumable online index.
 
 You can check the current execution status for a resumable online index by querying the `sys.index_resumable_operations` system view.
 

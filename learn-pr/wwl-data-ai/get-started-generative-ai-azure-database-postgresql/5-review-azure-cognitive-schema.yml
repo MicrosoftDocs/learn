@@ -2,8 +2,6 @@
 uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.review-azure-cognitive-schema
 title: Review the Azure Cognitive schema
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Review the Azure Cognitive schema
   description: Review the Azure Cognitive schema
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/5-review-azure-cognitive-schema.md)]
-
+

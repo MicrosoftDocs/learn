@@ -2,8 +2,6 @@
 uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.deploy-bicep-files-workflow
 title: Deploy Bicep files by using a workflow
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Deploy Bicep files by using a workflow
   description: Learn how to deploy a Bicep infrastructure as code template by using GitHub Actions.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-deploy-bicep-files-workflow.md)]
-
+

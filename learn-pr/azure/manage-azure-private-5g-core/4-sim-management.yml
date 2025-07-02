@@ -2,8 +2,6 @@
 uid: learn.manage-azure-private-5g-core.sim-management
 title: SIM management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: SIM management
   description: Describes the tasks for managing SIMs for user equipment attached in a private mobile network.
   ms.date: 07/29/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-sim-management.md)]
+  [!include[](includes/4-sim-management.md)]

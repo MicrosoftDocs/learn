@@ -2,17 +2,18 @@
 uid: learn.azure.automate-virtual-machine-software-installation-configuration.exercise-automate-configuration-web-server
 title: Exercise - Automate the configuration of a web server
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Automate the configuration of a web server
   description: In this exercise, you'll automate the configuration of a web server.
   ms.date: 04/04/2024
   author: ju-shim
   ms.author: jushiman
   ms.topic: unit
-  ms.custom: devx-track-azurecli, linux-related-content
+  ms.custom:
+    - sfi-ropc-nochange
+    - linux-related-content
+    - devx-track-azurecli
   zone_pivot_groups: platform-cloud
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-automate-configuration-web-server.md)]
-
+

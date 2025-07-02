@@ -2,8 +2,6 @@
 uid: learn.azure.explore-fundamentals-kql.exercise-1
 title: "Exercise: Sample queries"
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Exercise: Sample queries"
   description: "Start exploring KQL by running some simple sample queries in any of the available demo environments."
   ms.date: 11/01/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-exercise.md)]
+  [!include[](includes/5-exercise.md)]

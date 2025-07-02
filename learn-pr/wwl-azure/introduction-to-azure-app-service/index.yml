@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-azure-app-service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure App Service
   description: "Learn about the key components of Azure App Service and how App Service can help you create, maintain, and deploy web apps more efficiently."
   ms.date: 02/10/2025

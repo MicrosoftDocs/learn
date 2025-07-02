@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.hub-and-spoke-network-architecture.2-implement-hub-spoke
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement a hub-spoke network topology in Azure
   description: Implement a hub-spoke network topology in Azure
   ms.date: 02/19/2024
@@ -13,4 +11,4 @@ title: Implement a hub-spoke network topology in Azure
 durationInMinutes: 7
 content: |
   [!include[](includes/2-implement-hub-spoke.md)]
-
+

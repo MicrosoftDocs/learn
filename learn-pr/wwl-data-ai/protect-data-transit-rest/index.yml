@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.protect-data-transit-at-rest
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Protect data in-transit and at rest
   description: Protect data in-transit and at rest
   ms.date: 2/25/2025
@@ -49,4 +47,4 @@ units:
 - learn.wwl.protect-data-transit-at-rest.summary
 badge:
   uid: learn.wwl.protect-data-transit-at-rest.badge
-
+

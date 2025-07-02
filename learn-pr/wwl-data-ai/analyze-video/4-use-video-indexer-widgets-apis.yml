@@ -2,13 +2,11 @@
 uid: learn.wwl.analyze-video.use-video-indexer-widgets-apis
 title: Use Video Analyzer widgets and APIs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Video Analyzer widgets and APIs
   description: Use Video Analyzer widgets and APIs
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 12/01/2023
+  ms.date: 04/30/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

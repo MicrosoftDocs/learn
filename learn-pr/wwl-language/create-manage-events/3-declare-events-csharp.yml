@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-events.declare-events-csharp
+title: Declare events in C#
+metadata:
+  title: Declare events in C#
+  description: "Learn how to declare events in C# and use delegates to enable communication between components."
+  ms.date: 04/24/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-declare-events-csharp.md)]

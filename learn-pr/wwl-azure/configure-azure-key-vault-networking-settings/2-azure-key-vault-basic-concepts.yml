@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-key-vault-networking-settings.azure-key-vault-basic-concepts
 title: Azure Key Vault basic concepts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Key Vault basic concepts
   description: "Azure Key Vault basic concepts"
   ms.date: 10/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-azure-key-vault-basic-concepts.md)]
+  [!include[](includes/2-azure-key-vault-basic-concepts.md)]

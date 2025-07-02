@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.philanthropies.use-copilot-to-create-training-materials.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: This content is a part of the 'Use Microsoft Copilot to create training materials' module.
   author: yoosunee
   ms.author: anruss
@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.collection:
     - philanthropies-ai-copilot
+  module_assessment: true
 durationInMinutes: 5
 content: |
   [!include[](includes/4-knowledge-check.md)]

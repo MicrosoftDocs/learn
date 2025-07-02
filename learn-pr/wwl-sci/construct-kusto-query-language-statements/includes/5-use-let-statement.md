@@ -1,8 +1,11 @@
-Let statements bind names to expressions. For the rest of the scope, where the let statement appear, the name refers to its bound value.  Let statements improve modularity and reuse since they allow you to break a potentially complex expression into multiple parts. Each part is bound to a name through the let statement, and together they compose the whole. Let statements allow for the creation of user-defined functions and views. The views are expressions whose results look like a new table.
+Let statements bind names to expressions. For the rest of the scope, where the let statement appear, the name refers to its bound value. Let statements improve modularity and reuse since they allow you to break a potentially complex expression into multiple parts. Each part is bound to a name through the let statement, and together they compose the whole. Let statements allow for the creation of user-defined functions and views. The views are expressions whose results look like a new table.
 
 ## Declare and reuse variables
 
-Let statements allow for the creation of variables to be used in later statements.  In this example, timeOffSet and discardEventId are created and used as part of the SecurityEvent "where" clause.
+Let statements allow for the creation of variables to be used in later statements. In this example, timeOffSet and discardEventId are created and used as part of the SecurityEvent "where" clause.
+
+> [!NOTE]
+> You may need to increase the timeOffset and time ranges to see results in the [Logs Demo site](https://aka.ms/lademo) environment. We suggest using > 30 days if you don't see results.
 
 ```kusto
 let timeOffset = 7d;
@@ -14,7 +17,7 @@ SecurityEvent
 ```
 
 > [!TIP]
-> "ago()" is a function that will take the current Date and Time and subtract the value provided.
+> "ago()" is a function that takes the current Date and Time and subtract the value provided.
 
 ## Declare dynamic tables or lists
 
@@ -35,4 +38,3 @@ let LowActivityAccounts =
     | where cnt < 1000;
 LowActivityAccounts | where Account contains "SQL"
 ```
-

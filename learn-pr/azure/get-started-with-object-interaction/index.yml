@@ -1,22 +1,23 @@
 ### YamlMime:Module
 uid: learn.azure.get-started-with-object-interaction-tutorials-mrtk
 metadata:
-  title: Getting started with 3D object interaction
+  title: Getting Started With 3D Object Interaction
   description: This course will provide steps and procedures to follow on how to manipulate and interact with 3D objects. 
-  ms.date: 06/26/2023
+  ms.date: 06/05/2025
   author: Sean-Kerawala
-  ms.author: sekerawa
+  ms.author: lolab
   ms.topic: module
+  ms.service: hololens
 title: Getting started with 3D object interaction
 summary: Learn to manipulate and interact with 3D objects
 abstract: |
-  By the end of this module you will be able to:
-  - Learn how to configure 3D objects so they can be interacted with
-  - Learn how to add bounds control to 3D objects
-  - Learn how to organize buttons in a collection
-  - Learn how to use MRTK's menu prefabs
-  - Learn how to interact with holograms using UI menus and buttons
-  - Learn how to add text elements
+  By the end of this module, you'll be able to:
+  - Learn how to configure 3D objects so users can interact with them.
+  - Learn how to add bounds control to 3D objects.
+  - Learn how to organize buttons in a collection.
+  - Learn how to use MRTK's menu prefabs.
+  - Learn how to interact with holograms using UI menus and buttons.
+  - Learn how to add text elements.
 iconUrl: /training/achievements/get-started-with-object-interaction-tutorials-mrtk.svg
 levels:
 - beginner

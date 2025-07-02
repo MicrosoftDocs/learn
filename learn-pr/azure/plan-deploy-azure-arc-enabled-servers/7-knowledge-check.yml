@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.plan-deploy-azure-arc-enabled-servers.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge Check
   ms.date: 03/22/2023
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 durationInMinutes: 4
 content: |
@@ -59,4 +58,4 @@ quiz:
     - content: "Service Principal"
       isCorrect: false
       explanation: "The Service Principal identity can be used instead of using your privileged identity to interactively connect to machines at scale."
-
+

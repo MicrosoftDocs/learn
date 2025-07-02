@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.collaborate-pull-requests-azure-repos
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Collaborate with pull requests in Azure Repos
   description: "Collaborate with pull requests in Azure Repos"
   ms.date: 05/24/2024
@@ -56,4 +54,4 @@ units:
 - learn.wwl.collaborate-pull-requests-azure-repos.knowledge-check
 - learn.wwl.collaborate-pull-requests-azure-repos.summary
 badge:
-  uid: learn.wwl.collaborate-pull-requests-azure-repos.badge
+  uid: learn.wwl.collaborate-pull-requests-azure-repos.badge

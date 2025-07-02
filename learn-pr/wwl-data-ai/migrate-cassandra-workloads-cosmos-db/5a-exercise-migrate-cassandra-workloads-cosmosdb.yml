@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-cassandra-workloads-cosmos-db.exercise-migrate-cassandra-workloads-cosmosdb
 title: 'Exercise: Migrate Cassandra workloads to Cosmos DB'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Migrate Cassandra workloads to Cosmos DB'
   description: "Exercise: Migrate Cassandra workloads to Cosmos DB"
   ms.date: 02/01/2021
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 25
 content: |
-  [!include[](includes/5a-exercise-migrate-cassandra-workloads-cosmosdb.md)]
+  [!include[](includes/5a-exercise-migrate-cassandra-workloads-cosmosdb.md)]

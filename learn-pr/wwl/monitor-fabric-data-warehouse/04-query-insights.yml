@@ -4,10 +4,12 @@ title: Monitor queries
 metadata:
   title: Monitor queries
   description: "Monitor queries"
-  ms.date: 11/10/2024
+  ms.date: 06/13/2025
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/04-query-insights.md)]

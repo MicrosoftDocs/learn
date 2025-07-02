@@ -2,8 +2,6 @@
 uid: learn.azure-well-architected-cost-optimization.develop-cost-management-discipline
 title: Develop cost-management discipline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Develop cost-management discipline
   description: Learn how to build a team culture that has awareness of budget, expenses, reporting, and cost tracking.
   ms.date: 10/23/2023
@@ -59,4 +57,4 @@ quiz:
           explanation: "Incorrect.  Costs are rarely linear in cloud architectures, so this assumption isn't warranted."
         - content: "Do nothing, the workload should scale automatically"
           isCorrect: false
-          explanation: "Incorrect.  The workload infrastructure handling more usage isn’t the same as holistic financial planning associated with workload growth."
+          explanation: "Incorrect.  The workload infrastructure handling more usage isn’t the same as holistic financial planning associated with workload growth."

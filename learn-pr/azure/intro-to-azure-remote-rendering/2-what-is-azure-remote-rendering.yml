@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-remote-rendering.2-what-is-azure-remote-rendering  
 title: What is Azure Remote Rendering?  
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content  
   title: What is Azure Remote Rendering? 
   description: What is Azure Remote Rendering?
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-what-is-azure-remote-rendering.md)]
+  [!include[](includes/2-what-is-azure-remote-rendering.md)]

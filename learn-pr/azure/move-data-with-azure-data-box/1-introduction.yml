@@ -2,8 +2,6 @@
 uid: learn.azure.move-data-with-azure-data-box.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: In this unit, you'll learn about a business problem that you can address by using Azure Data Box products.
   ms.date: 05/01/2023
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

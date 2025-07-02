@@ -2,11 +2,9 @@
 uid: learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api.add-pre-triggers-to-operation
 title: Add triggers to an operation
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Add triggers to an operation
   description: "Add triggers to an operation"
-  ms.date: 02/06/2023
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

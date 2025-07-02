@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.cna-set-up-apps-use-scale
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Authenticate and authorize multi-tenant apps using Microsoft Entra ID
   description: Microsoft Entra ID enables you to improve the functionality of cloud-native apps in multitenant scenarios.
   manager: mkluck
@@ -48,4 +46,4 @@ units:
 - learn.azure.cna-set-up-apps-use-scale.8-knowledge-check
 - learn.azure.cna-set-up-apps-use-scale.9-summary
 badge:
-  uid: learn.azure.cna-set-up-apps-use-scale.badge
+  uid: learn.azure.cna-set-up-apps-use-scale.badge

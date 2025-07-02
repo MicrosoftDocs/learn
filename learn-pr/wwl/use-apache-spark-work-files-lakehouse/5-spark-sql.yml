@@ -4,14 +4,10 @@ title: Work with data using Spark SQL
 metadata:
   title: Work with data using Spark SQL
   description: "Work with data using Spark SQL"
-  ms.date: 01/15/2025
-  author: wwlpublish
-  ms.author: anrudduc
+  ms.date: 05/22/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-  ms.custom:
-  - build-2023
-  - build-2023-dataai
-  - build-2023-fabric
 durationInMinutes: 7
 content: |
   [!include[](includes/5-spark-sql.md)]

@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-hdinsight.2-what-is-azure-hdinsight  
 title: What is Azure HDInsight?  
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content  
   title: What is Azure HDInsight? 
   description: What is Azure HDInsight?
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-is-azure-hdinsight.md)]
-
+

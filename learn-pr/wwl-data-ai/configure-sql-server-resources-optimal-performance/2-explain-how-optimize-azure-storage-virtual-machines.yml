@@ -2,11 +2,9 @@
 uid: learn.wwl.configure-sql-server-resources-for-optimal-performance.explain-how-to-optimize-azure-storage-for-virtual-machines
 title: Explain how to optimize Azure storage for SQL Server virtual machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explain how to optimize Azure storage for SQL Server virtual machines
   description: "Explain how to optimize Azure storage for SQL Server virtual machines"
-  ms.date: 03/20/2025
+  ms.date: 04/01/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

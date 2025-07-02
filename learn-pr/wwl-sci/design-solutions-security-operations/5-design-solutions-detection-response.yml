@@ -2,8 +2,6 @@
 uid: learn.wwl.design-solutions-security-operations.design-solutions-detection-response
 title: Design solutions for detection and response that includes extended detection and response (XDR) and security information and event management (SIEM).
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design solutions for detection and response that includes extended detection and response (XDR) and security information and event management (SIEM).
   description: "SC-100 preparatory unit on the topic: design solutions for detection and response that includes extended detection and response (XDR) and security information and event management (SIEM)."
   ms.date: 09/26/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-design-solutions-detection-response.md)]
+  [!include[](includes/5-design-solutions-detection-response.md)]

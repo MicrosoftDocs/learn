@@ -67,7 +67,7 @@ Many organizations use AD FS to provide SSO to cloud applications. Moving your A
 
 Sometimes the organization might be using alternate on-premises or cloud identity providers, such as SiteMinder, Oracle Access Manager, PingFederate, etc. Most of them are on-premises installations. Some cloud providers, such as Okta and OneLogin, offer similar services.
 
-The AD FS application activity report in the Azure portal enables you to quickly identify which applications you can migrate to Microsoft Entra ID. It assesses all AD FS applications for compatibility with Microsoft Entra ID, checks for any issues, and gives guidance on preparing individual applications for migration. With the AD FS application activity report, you can discover AD FS applications and scope your migration. The AD FS application activity report lists all AD FS applications in your organization that have had an active user logged in within the last 30 days. The activity data is available to users who are assigned any of these admin roles: global administrator, global reader, report reader, security reader, application administrator, or cloud application administrator.
+The AD FS application activity report in the Azure portal enables you to quickly identify which applications you can migrate to Microsoft Entra ID. It assesses all AD FS applications for compatibility with Microsoft Entra ID, checks for any issues, and gives guidance on preparing individual applications for migration. With the AD FS application activity report, you can discover AD FS applications and scope your migration. The AD FS application activity report lists all AD FS applications in your organization that have had an active user logged in within the last 30 days. The activity data is available to users who are assigned any of these admin roles: global reader / administrator, report reader, security reader, application administrator, or cloud application administrator.
 
 ## Types of apps to migrate
 
@@ -82,7 +82,7 @@ There are two types of applications to migrate:
 
 The AD FS application activity report is available in the Azure portal under Microsoft Entra **Usage and insights** reporting. The AD FS application activity report analyzes each AD FS application to determine whether it can be migrated as-is or after review.
 
-1. Sign in to the Azure portal with an admin role that has access to AD FS application activity data (global administrator, report reader, security reader, application administrator, or cloud application administrator).
+1. Sign in to the Azure portal with an admin role that has access to AD FS application activity data (administrator, report reader, security reader, application administrator, or cloud application administrator).
 2. Select **Microsoft Entra ID**, and then select **Enterprise applications**.
 3. Under **Activity**, select **Usage and insights**, and then select **AD FS application activity** to open a list of all AD FS applications in your organization.
     
@@ -90,6 +90,6 @@ The AD FS application activity report is available in the Azure portal under Mic
     
 4.  For each application in the AD FS application activity list, view the **Migration status**:
     
-    - **Ready to migrate** means the AD FS application configuration is fully supported in Microsoft Entra ID and can be migrated as-is.
-    - **Needs review** means some of the application's settings can be migrated to Microsoft Entra ID, but you'll need to review the settings that can't be migrated as-is.
-    - **Additional steps required** means Microsoft Entra ID doesn't support some of the application's settings, so the application can’t be migrated in its current state.
+   - **Ready to migrate** means the AD FS application configuration is fully supported in Microsoft Entra ID and can be migrated as-is.
+   - **Needs review** means some of the application's settings can be migrated to Microsoft Entra ID, but you'll need to review the settings that can't be migrated as-is.
+   - **Additional steps required** means Microsoft Entra ID doesn't support some of the application's settings, so the application can’t be migrated in its current state.

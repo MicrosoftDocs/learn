@@ -1,4 +1,6 @@
-You can implement [application security groups](/azure/virtual-network/application-security-groups) in your Azure virtual network to logically group your virtual machines by workload. You can then define your network security group rules based on your application security groups.
+You can implement [application security groups (ASGs)](/azure/virtual-network/application-security-groups) in your Azure virtual network to logically group your virtual machines by workload. You can then define your network security group rules based on your application security groups.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=487bf08d-d2e4-465a-8d4c-ca3908dabeb4]
 
 ### Things to know about using application security groups
 
@@ -12,36 +14,27 @@ Let's examine how to implement application security groups by creating a configu
 
 Here are the scenario requirements for our example configuration:
 
-- We have six virtual machines in our configuration with two web servers and two database servers.
-- Customers access the online catalog hosted on our web servers.
-- The web servers must be accessible from the internet.
-- Inventory information is stored on our database servers.
-- The database servers must be accessible over HTTPS port 1433.
-- Only our web servers should have access to our database servers. 
+- In this scenario, there are two tiers: web servers and application servers.
+- The web servers handle HTTP and HTTPS internet traffic. 
+- The application servers process SQL requests from the web servers.
 
 #### Solution
 
 For our scenario, we need to build the following configuration:
 
-1. Create application security groups for the virtual machines.
+1. Create application security groups for each tier. 
 
-   1. Create an application security group named `WebASG` to group our web server machines.
-
-   1. Create an application security group named `DBASG` to group our database server machines.
-
-1. Assign the network interfaces for the virtual machines.
-
-   - For each virtual machine server, assign its network interface to the appropriate application security group.
+1. For each virtual machine server, assign its network interface to the appropriate application security group.
 
 1. Create the network security group and security rules.
 
-   - **Rule 1**: Set **Priority** to 100. Allow access from the internet to machines in the `WebASG` group from HTTP port 80 and HTTPS port 443.
+   - **Rule 1**: Set **Priority** to 100. Allow access from the internet to the web servers machines from HTTP port 80 and HTTPS port 443.
    
       Rule 1 has the lowest priority value, so it has precedence over the other rules in the group. Customer access to our online catalog is paramount in our design.
 
-   - **Rule 2**: Set **Priority** to 110. Allow access from machines in the `WebASG` group to machines in the `DBASG` group over HTTPS port 1433.
+   - **Rule 2**: Set **Priority** to 110. Allow access from the web servers to application servers over HTTPS port 1433.
 
-   - **Rule 3**: Set **Priority** to 120. **Deny** (X) access from anywhere to machines in the `DBASG` group over HTTPS port 1433.
+   - **Rule 3**: Set **Priority** to 120. **Deny** access from anywhere to application server machines over HTTPS port 1433.
 
       The combination of Rule 2 and Rule 3 ensures that only our web servers can access our database servers. This security configuration protects our inventory databases from outside attack.
 
@@ -56,3 +49,5 @@ There are several advantages to implementing application security groups in your
 - **Consider simplified rules**. Application security groups help to eliminate the need for multiple rule sets. You don't need to create a separate rule for each virtual machine. You can dynamically apply new rules to designated application security groups. New security rules are automatically applied to all the virtual machines in the specified application security group.
 
 - **Consider workload support**. A configuration that implements application security groups is easy to maintain and understand because the organization is based on workload usage. Application security groups provide logical arrangements for your applications, services, data storage, and workloads.
+
+- **Consider service tags**. Service Tags represent a group of IP address prefixes from a specific Azure service. They help minimize the complexity of frequent updates on network security rules. While service tags are used to simplify the management of IP addresses for Azure services, ASGs are used to group VMs and manage network security policies based on those groups.

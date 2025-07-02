@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-premises-postgresql-databases-azure-database-postgresql.application-migration
 title: Application migration
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Application migration
   description: "Application migration"
   ms.date: 10/14/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-application-migration.md)]
+  [!include[](includes/4-application-migration.md)]

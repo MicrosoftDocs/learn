@@ -2,8 +2,6 @@
 uid: learn.wwl.make-data-available-azure-machine-learning.exercise
 title: Exercise - Make data available in Azure Machine Learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Make data available in Azure Machine Learning
   description: Exercise - Make data available
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise.md)]
-
+

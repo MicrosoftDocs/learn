@@ -12,7 +12,7 @@ Azure Files supports two storage tiers: premium and standard. Standard file shar
 
 ## Types of authentication
 
-Three are three main authentications methods that Azure Files supports.
+There are three main authentications methods that Azure Files supports.
 
 | Authentication method | Description |
 | --- | --- |

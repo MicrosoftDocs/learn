@@ -11,7 +11,7 @@ As part of your Azure Private Link evaluation, you know that Contoso has several
 
 ## Bringing Azure PaaS services into your virtual network
 
-Depending on the resource and how it's configured, connecting to Azure PaaS services can be complicated. Private Link reduces that complexity by making Azure services appear to be just another node on your Azure virtual network. With a Private Link resource now effectively part of your virtual network, clients can use a relatively straightforward FQDN to make the connection.
+Depending on the resource and how you configure it, connecting to Azure PaaS services can be complicated. Private Link reduces that complexity by making Azure services appear to be just another node on your Azure virtual network. With a Private Link resource now effectively part of your virtual network, clients can use a relatively straightforward fully qualified domain name (FQDN) to make the connection.
 
 ## Securing traffic between your company network and the Azure cloud
 
@@ -27,7 +27,7 @@ Most Azure PaaS resources are internet-facing. These resources have, by default,
 
 The public endpoint exposes the resource to the internet, which is by design. However, that endpoint can also act as an attack point for black-hat hackers seeking a way to infiltrate or disrupt the service.
 
-Private Link doesn't do anything to prevent such attacks. However, once you've created a Private Endpoint and mapped it to the Azure resource, you no longer need the resource's public endpoint. Fortunately, you can configure the resource to disable its public endpoint so that it no longer presents an attack surface to the internet.
+Private Link doesn't do anything to prevent such attacks. However, once you create a Private Endpoint and map it to the Azure resource, you no longer need the resource's public endpoint. Fortunately, you can configure the resource to disable its public endpoint so that it no longer presents an attack surface to the internet.
 
 ## Accessing Azure PaaS resources across networks
 
@@ -43,7 +43,7 @@ Without Private Link, these networks must create their own connections to a spec
 
 Suppose a virtual machine in your network is connected to an Azure service. It's often possible for a user on the virtual machine to access multiple resources in the Azure service. For example, if the service is Azure Storage, a user could access multiple blobs, tables, files, and so on.
 
-Now suppose that the user is a malicious infiltrator who has taken control of the virtual machine. In that scenario, the user could move data from one resource to another one that they control.
+Now suppose that the user is a malicious infiltrator who takes control of the virtual machine. In that scenario, the user could move data from one resource to another one that they control.
 
 This scenario is an example of *data exfiltration*. Private Link lowers the risk of data exfiltration by  mapping a Private Endpoint to a single instance of an Azure resource. An attacker might still be able view the data, but has no way to copy or move it to another resource.
 
@@ -57,7 +57,7 @@ Suppose your company creates custom Azure services. Who consumes those services?
 * Company suppliers or vendors.
 * Your company's employees.
 
-You can say that each consumer in the above list is a *customer* of your service.
+You can say that each consumer in this list is a *customer* of your service.
 
 There's an excellent chance that the data accessed and created by those customers is every bit as important as your company's data. So your customer's data deserves the same level of privacy and security as your company data.
 

@@ -2,11 +2,9 @@
 uid: learn.azure.move-azure-resources-to-another-resource-group.exercise-move-verify-resources
 title: Exercise - Move and verify resources between Azure resource groups
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Move and verify resources between Azure resource groups
-  description: Exercise - Move and verify resources between Azure resource groups
-  ms.date: 10/18/2024
+  description: Exercise - Move and verify resources between Azure resource groups.
+  ms.date: 06/04/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit

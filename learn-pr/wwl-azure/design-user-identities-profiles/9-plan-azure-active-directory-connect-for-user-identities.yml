@@ -2,8 +2,6 @@
 uid: learn.wwl.design-for-user-identities-profiles.plan-for-azure-ad-connect
 title: Plan for Microsoft Entra Connect for user identities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan for Microsoft Entra Connect for user identities
   description: "Plan for Microsoft Entra Connect for user identities"
   ms.date: 02/10/2023
@@ -15,4 +13,4 @@ labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/9-plan-azure-active-directory-connect-for-user-identities.md)]
-
+

@@ -11,7 +11,7 @@ In this exercise, you complete the following steps:
 
 ## Get the Function app
 
-Now, add an API and connect it to your front-end app. The *api-starter* folder includes an incomplete Azure Functions project. So, let's complete that now.
+Now, add an API and connect it to your front-end app. The `api-starter` folder includes an incomplete Azure Functions project. So, let's complete that now.
 
 ### Create an API branch
 
@@ -29,7 +29,7 @@ You just created the **api** git branch.
 
 ### Complete the Azure Functions API
 
-To complete the API, start by moving the starter API code to a folder named *api*. You entered this folder name for the **api_location** when you created the Static Web Apps instance.
+To complete the API, start by moving the starter API code to a folder named `api`. You entered this folder name for the **api_location** when you created the Static Web Apps instance.
 
 1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
 
@@ -37,7 +37,7 @@ To complete the API, start by moving the starter API code to a folder named *api
 
 1. Make sure you are in the root folder of the project.
 
-1. Run the following git command to rename the *api-starter* folder to *api*.
+1. Run the following git command to rename the `api-starter` folder to `api`.
 
    ```bash
    git mv api-starter api
@@ -89,7 +89,7 @@ Now you extend your Azure Function app with a function to get your products.
 1. Select **Anonymous** as the authentication level.
 
 > [!NOTE]
-> The Functions app is in the *api* folder, which separates it from the individual web app projects. All of the web apps using the front-end frameworks make calls to the same API. You can decide how to structure your application, but for this sample it helps to see them separated.
+> The Functions app is in the `api` folder, which separates it from the individual web app projects. All of the web apps using the front-end frameworks make calls to the same API. You can decide how to structure your application, but for this sample it helps to see them separated.
 
 ### Configure the HTTP Method and route endpoint
 
@@ -131,7 +131,7 @@ Now your function is triggered on an HTTP `GET` request to **products**. Your *f
 
 ### Update the function logic
 
-The file *index.js* in the folder *api/products-get* contains logic that runs when your make an HTTP request to the route.
+The file *index.js* in the folder `api/products-get` contains logic that runs when your make an HTTP request to the route.
 
 You need to update the logic to get your products. There's data access logic in the JavaScript module */shared/product-data.js*. The `product-data` module exposes a function `getProducts` to get the products for the shopping list.
 
@@ -215,7 +215,7 @@ Now, tell Azure Functions to allow your web app to make HTTP requests to the API
    ::: zone-end
 
 > [!NOTE]
-> The *local.settings.json* file is listed in the *.gitignore* file, which prevents this file from being pushed to GitHub. This is because you could store secrets in this file that you would not want in GitHub. This is why you had to create the file when you created your repo from the template.
+> The *local.settings.json* file is listed in the *.gitignore* file, which prevents this file from being pushed to GitHub. The file is listed in *.gitignore* because you could store secrets in it that you wouldn't want in GitHub. This listing is the reason you had to create the file when you created your repo from the template.
 
 ### Run the API
 
@@ -224,7 +224,7 @@ Now it's time to watch your web app and Azure Functions project work together. S
 > [!NOTE]
 > Be sure to install the [Azure Functions Core Tools](/azure/azure-functions/functions-run-local), which allow you to run Azure Functions locally.
 
-1. Open a git terminal and go to the *api* folder:
+1. Open a git terminal and go to the `api` folder:
 
    ```bash
    cd api

@@ -2,8 +2,6 @@
 uid: learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api.exercise-recover-database-container-from-recovery-point
 title: Exercise - Recover a database or container from a recovery point
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Recover a database or container from a recovery point
   description: "Exercise - Recover a database or container from a recovery point"
   ms.date: 10/28/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 20
 content: |
-  [!include[](includes/5-exercise-recover-database-container-from-recovery-point.md)]
+  [!include[](includes/5-exercise-recover-database-container-from-recovery-point.md)]

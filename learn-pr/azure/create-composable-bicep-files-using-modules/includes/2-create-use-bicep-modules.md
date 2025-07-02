@@ -4,7 +4,7 @@ By using modules, you can reuse your Bicep code, and you can make your Bicep fil
 
 ## The benefits of modules
 
-In your toy company, you've been provisioning cloud resources by using many individual Bicep files. Over time, these templates grow significantly. Eventually, you end up having monolithic code that's difficult to read and navigate, and even harder to maintain.
+In your toy company, you've been provisioning cloud resources by using many individual Bicep files. Over time, these templates grow significantly. Eventually, you end up having monolithic code that's difficult to read and navigate and even harder to maintain.
 
 This approach also forces you to duplicate parts of your code when you want to reuse it in other templates. When you change something, you need to search through and update multiple files.
 
@@ -14,7 +14,7 @@ Bicep modules help you address these challenges by splitting your code into smal
 
 After you've created a module, you can reuse it in multiple Bicep files, even if the files are for different projects or workloads. For example, when you build out one solution, you might create separate modules for the app components, the database, and the network-related resources. Then, when you start to work on another project with similar network requirements, you can reuse the relevant module.
 
-:::image type="content" source="../../includes/media/bicep-templates-modules.png" alt-text="Diagram that shows a template referencing three modules: application, database, and networking. The networking module is then reused in another template." border="false":::
+:::image type="content" source="../../includes/media/bicep-files-modules.png" alt-text="Diagram that shows a template referencing three modules: application, database, and networking. The networking module is then reused in another template." border="false":::
 
 You can even share modules within your team, within your organization, or with the Azure community. You'll learn more about sharing Bicep modules in a future Microsoft Learn module.
 
@@ -22,7 +22,7 @@ You can even share modules within your team, within your organization, or with t
 
 Modules help you keep related resource definitions together. For example, when you define an Azure Functions app, you typically deploy the app, a hosting plan for the app, and a storage account for the app's metadata. These three components are defined separately, but they represent a logical grouping of resources, so it might make sense to define them as a module.
 
-That way, your main template doesn't need to be aware of the details of how a function app is deployed. That's the responsibility of the module.
+That way, your main template doesn't need to be aware of the details of how a function app is deployed. That's the module's responsibility.
 
 ### Composability
 
@@ -80,7 +80,7 @@ Be sure to use a descriptive file name for each module. The file name effectivel
 
 ## Use the module in a Bicep template
 
-You'll use a module in a Bicep template by using the `module` keyword, like this:
+You can use a module in a Bicep template by using the `module` keyword, like this:
 
 ```bicep
 module appModule 'modules/app.bicep' = {
@@ -125,8 +125,8 @@ You can list and view the details of deployment resources to monitor the status 
 
 ### Generated JSON ARM templates
 
-When you deploy a Bicep file, Bicep converts it to a JSON ARM template. This conversion is also called _transpilation_. The modules that the template uses are embedded into the JSON file. Regardless of how many modules you include in your template, only a single JSON file will be created.
+When you deploy a Bicep file, Bicep converts it to a JSON ARM template. This conversion is also called _transpilation_. The modules that the template uses are embedded into the JSON file. Regardless of how many modules you include in your template, only a single JSON file is created.
 
-In the example discussed in the previous section, Bicep generates a single JSON file even though there were originally two Bicep files.
+In the example in the previous section, Bicep generates a single JSON file even though there were originally two Bicep files.
 
 :::image type="content" source="../media/2-transpile.png" alt-text="Diagram that shows two Bicep files, which are transpiled into a single JSON file." border="false":::

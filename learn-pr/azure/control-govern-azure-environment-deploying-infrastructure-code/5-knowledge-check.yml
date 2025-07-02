@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge.
   ms.date: 09/27/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
 quiz:
@@ -51,4 +50,4 @@ quiz:
     - content: PIM enables users to request that their accounts are temporarily granted higher permissions than they usually have.
       isCorrect: true
       explanation: Correct. PIM allows users to use their own user accounts and identities, with a set of elevated permissions granted temporarily.
-
+

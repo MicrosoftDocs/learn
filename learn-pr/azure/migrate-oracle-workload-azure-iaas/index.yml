@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.migrate-oracle-workload-azure-iaas
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Migrate Oracle workloads to Azure IaaS virtual machines"
   description: "Learn how you can migrate your Oracle workloads to Azure IaaS virtual machines."
   manager: akashdubey
@@ -48,4 +46,4 @@ units:
 - learn.azure.migrate-oracle-workload-azure-iaas.summary
 badge:
   uid: learn.azure.migrate-oracle-workload-azure-iaas.badge
-
+

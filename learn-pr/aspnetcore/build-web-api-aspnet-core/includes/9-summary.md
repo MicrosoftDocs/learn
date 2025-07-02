@@ -9,8 +9,6 @@ Because this pattern allows you to focus on a single controller action at a time
 
 In this module, you used an in-memory cache. This approach helped you to focus on learning web API concepts, but it has some obvious limitations for real-world applications. If the application stops, all your changes are lost!
 
-In a real-world application, you would store your data in a backing store, like a database. You can learn how to persist and retrieve relational data by using Entity Framework Core in [this tutorial](/training/modules/persist-data-ef-core/).
-
 ## Videos for learning more
 
 - [.NET for Beginners](/shows/dotnet-for-beginners/)

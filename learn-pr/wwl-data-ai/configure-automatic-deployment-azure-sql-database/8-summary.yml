@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 02/26/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/8-summary.md)]

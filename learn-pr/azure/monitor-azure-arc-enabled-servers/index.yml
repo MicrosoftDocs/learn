@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.monitor-azure-arc-enabled-servers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor your hybrid and multicloud machines through Azure Arc-enabled servers
   description: Understand the monitoring capabilities of Azure Arc-enabled servers. Learn about the benefits of and how to onboard Azure Arc-enabled servers to Azure Logs and Metrics, VM Insights, and Azure Monitor Alerts.
   ms.date: 08/17/2023
@@ -43,4 +41,4 @@ units:
 - learn.azure.monitor-azure-arc-enabled-servers.summary
 badge:
   uid: learn.azure.monitor-azure-arc-enabled-servers.badge
-
+

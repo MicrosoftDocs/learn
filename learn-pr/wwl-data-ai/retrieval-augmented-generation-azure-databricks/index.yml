@@ -1,15 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.retrieval-augmented-generation-azure-databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
   description: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
   ms.date: 03/20/2025
   author: wwlpublish
   ms.author: theresai
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-databricks
   ai-usage: ai-assisted
   ms.collection: wwl-ai-copilot
 title: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
