@@ -4,4 +4,4 @@ Exfiltration poses significant risks to organizations, including potential breac
 
 A strategy to prevent data exfiltration involves applying security controls to all resources in an AI workload. In this module we focus specifically on the security controls and configuration you can apply to Azure AI services and Azure Machine Learning to address attempts at exfiltration.
 
-[![Image of a high security tenant transferring data to a low security tenant that then has access to output data to untrusted data sources.](../media/infiltration-inbound-outbound.svg)](../media/infiltration-inbound-outbound.svg)
+[![Image of a high security tenant transferring data to a low security tenant that then has access to output data to untrusted data sources.](../media/exfiltration-inbound-outbound.svg)](../media/exfiltration-inbound-outbound.svg)

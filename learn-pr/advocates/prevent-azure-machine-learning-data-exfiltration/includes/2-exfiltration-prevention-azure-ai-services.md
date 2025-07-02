@@ -61,4 +61,4 @@ You can use Cloud Shell to configure exfiltration protection for Azure AI servic
 
 1. The output shows Microsoft.com in the allowed FQDN list
 
-   [![Screenshot showing the contents of the output text file in the nano editor.](../media/nano-fqdn-list.svg)](../media/nano-fqdn-list-big.svg)
+   [![Screenshot showing the contents of the output text file in the editor.](../media/editor-list.svg)](../media/editor-list-big.svg)
