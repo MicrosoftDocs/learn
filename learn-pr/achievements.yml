@@ -6090,3 +6090,8 @@ achievements:
   title: Bring AI to business users in your organization
   summary: To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
   iconUrl: /training/achievements/bring-ai-to-business-users-your-organization.svg
+- uid: learn.wwl.introduction-ai-for-business-users.trophy
+  type: trophy
+  title: Introduction to AI for business users
+  summary: To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
+  iconUrl: /training/achievements/introduction-ai-for-business-users.svg
