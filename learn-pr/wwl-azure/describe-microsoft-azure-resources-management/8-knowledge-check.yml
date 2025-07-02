@@ -60,7 +60,7 @@ quiz:
     - content: "It only provides billing summaries and cost forecasts."
       isCorrect: false
       explanation: "Incorrect. Copilot can provide billing insights, but its capabilities go far beyond that."
-  - content: "Why would an Azure administrator use subnet within a virtual network in Azure?"
+  - content: "Why would Azure administrator use subnets within a virtual network in Azure?"
     choices:
     - content: "To increase the number of virtual networks in a region."
       isCorrect: false
