@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Use tags and resource locks
   description: "Use tags and resource locks"
-  ms.date: 07/01/2025
+  ms.date: 07/02/2025
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
