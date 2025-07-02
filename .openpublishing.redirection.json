@@ -51231,6 +51231,11 @@
       "source_path": "learn-pr/paths/bring-ai-to-business-users-your-organization/index.md",
       "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/introduction-ai-for-business-users/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
     }
   ]
 }
