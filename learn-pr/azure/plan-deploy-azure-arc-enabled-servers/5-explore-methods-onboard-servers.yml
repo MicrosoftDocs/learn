@@ -4,7 +4,7 @@ title: Explore different methods to onboard servers at scale to Azure Arc
 metadata:
   title: Explore different methods to onboard servers at scale to Azure Arc
   description: Description of the different methods for onboarding a single machine or multiple machines to Azure Arc-enabled servers. 
-  ms.date: 03/22/2023
+  ms.date: 06/25/2025
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 durationInMinutes: 10
 content: |
   [!include[](includes/5-explore-methods-onboard-servers.md)]
-
+
