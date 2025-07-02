@@ -14,7 +14,7 @@ metadata:
   module_assessment: true
 durationInMinutes: 8
 quiz:
-  title: "Check your knowledge"
+  title: "Check your knowledge" 
   questions:
   - content: "What is the purpose of using chat participants, slash commands, and chat variables in GitHub Copilot Chat?"
     choices:
