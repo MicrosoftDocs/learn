@@ -36,16 +36,16 @@ quiz:
     - content: "The Azure subscription ID"
       isCorrect: false
       explanation: "Incorrect. You don't need the Azure subscription ID to instantiate a AIProjectClient object"
-  - content: "Which library should you use to chat with a model that is deployed to the Azure AI model inference service?"
+  - content: "Which SDK should you use to chat with a model that is deployed in an Azure AI Foundry resource?"
     choices:
     - content: "Azure OpenAI"
-      isCorrect: false
-      explanation: "Incorrect. You can't use the Azure OpenAI library to chat with an Azure AI model inference model."
+      isCorrect: true
+      explanation: "Correct. You should use an OpenAI chat client to chat with an Azure AI model inference model."
     - content: "Azure Machine Learning"
       isCorrect: false
-      explanation: "Incorrect. You can't use the Azure Machine Learning library to chat with an Azure AI model inference model."
-    - content: "Azure AI Inference"
-      isCorrect: true
-      explanation: "Correct. Use the Azure AI Inference library to chat with an Azure AI model inference model."
+      explanation: "Incorrect. You can't use the Azure Machine Learning SDK to chat with an Azure AI model inference model."
+    - content: "Azure AI Language"
+      isCorrect: false
+      explanation: "Incorrect. the Azure AI Language SDK is used to consume Azure AI Language resources, not generayive AI models."
 
 
