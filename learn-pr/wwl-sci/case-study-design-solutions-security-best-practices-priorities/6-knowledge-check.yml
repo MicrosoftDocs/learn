@@ -33,27 +33,27 @@ quiz:
       explanation: "The Cloud Adoption Framework provides guidance on how to adopt and implement cloud technologies securely, efficiently and effectively."
     - content: "To help organizations build secure applications and infrastructure in the cloud"
       isCorrect: true
-      explanation: "The Cloud Adoption Framework helps organizations to design, deploy and operate cloud workloads that are consistent with their business objectives and meet security and compliance requirements."
+      explanation: "The Cloud Adoption Framework helps organizations to design, deploy, and operate cloud workloads that are consistent with their business objectives and meet security and compliance requirements."
     - content: "To establish security standards within the organization"
       isCorrect: false
       explanation: "The Cloud Adoption Framework does not specifically address establishing security standards within an organization."
     - content: "To provide guidance on network architecture for hybrid environments"
       isCorrect: false
-      explanation: "The Cloud Adoption Framework does not specifically address network architecture for hybrid environments."
+      explanation: "The Cloud Adoption Framework doesn't specifically address network architecture for hybrid environments."
   - content: "Which of the following is a key principle of the Well-Architected Framework?"
     choices:
     - content: "Optimize for ease of use"
       isCorrect: false
-      explanation: "A key principle of the Well-Architected Framework is 'optimize for cost', which means making trade-offs between the cost of running your workloads and the value they provide to your organization."
+      explanation: "A key principle of the Well-Architected Framework is 'optimize for cost,' which means making trade-offs between the cost of running your workloads and the value they provide to your organization."
     - content: "Plan for failure"
       isCorrect: true
-      explanation: "Another key principle of the Well-Architected Framework is 'design for failure', which means planning for potential problems and creating resilient systems that can withstand failures without significant downtime or data loss."
+      explanation: "Another key principle of the Well-Architected Framework is 'design for failure,' which means planning for potential problems and creating resilient systems that can withstand failures without significant downtime or data loss."
     - content: "Choose proprietary technology solutions over open source options"
       isCorrect: false
-      explanation: "The Well-Architected Framework does not make any recommendations regarding the choice of proprietary vs open source technology solutions."
-    - content: "Maximize use of third-party services for application development"
+      explanation: "The Well-Architected Framework doesn't make any recommendations regarding the choice of proprietary vs open source technology solutions."
+    - content: "Maximize use of non-Microsoft services for application development"
       isCorrect: false
-      explanation: "While the Well-Architected Framework does encourage the use of managed services provided by cloud service providers, it does not specifically recommend maximizing the use of third-party services for application development."
+      explanation: "While the Well-Architected Framework does encourage the use of managed services provided by cloud service providers, it doesn't specifically recommend maximizing the use of non-Microsoft services for application development."
   - content: "What is a critical component of business resiliency planning?"
     choices:
     - content: "Strict adherence to company policies and procedures"
