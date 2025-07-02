@@ -6,8 +6,8 @@ metadata:
   title: Store data in NoSQL databases
   description: "Learn how to use .NET Aspire integrations to read and write data to MongoDB databases."
   ms.date: 07/02/2025
-  author: camsoper
-  ms.author: casoper
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: unit
   ms.custom:
     - sfi-ropc-nochange

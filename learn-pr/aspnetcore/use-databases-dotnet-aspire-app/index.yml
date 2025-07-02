@@ -4,8 +4,8 @@ metadata:
   title: Use Databases in a .NET Aspire Project
   description: "Learn about the database systems that .NET Aspire can connect to using built-in integrations. Then see how to configure connections to, and store data in, relational and nonrelational databases."
   ms.date: 07/02/2025
-  author: camsoper
-  ms.author: casoper
+  author: IEvangelist
+  ms.author: dapine
   manager: coxford
   ms.topic: module
   ms.service: aspnet-core

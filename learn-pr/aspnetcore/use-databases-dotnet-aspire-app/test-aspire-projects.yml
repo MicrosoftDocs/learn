@@ -6,8 +6,8 @@ metadata:
   title: Create tests with .NET Aspire
   description: "Learn the fundamentals of testing in .NET Aspire."
   ms.date: 07/02/2025
-  author: camsoper
-  ms.author: casoper
+  author: IEvangelist
+  ms.author: dapine
   ms.topic: unit
   ms.custom:
     - devx-track-dotnet
