@@ -29,7 +29,7 @@ You can use Cloud Shell to configure exfiltration protection for Azure AI servic
        az cognitiveservices account show -g "myResourceGroup" -n "Account Name" | grep Network Access
     ```
 
-   [![Screenshot that displays output of command checking status of cognitive services.](../media/show-exfiltration-configuration.svg)](../media/show-exfiltration-configuration-big.svg#lightbox)
+   [![Screenshot that displays output of command checking status of cognitive services.](../media/show-exfiltration-configuration.svg)](../media/show-exfiltration-configuration-big.png#lightbox)
 
 1. The result of this command informs you if public network access is enabled for the service and if any outbound restrictions are set.
 1. Check to see if there's a Fully Qualified Domain Name list of allowed addresses.
@@ -61,4 +61,4 @@ You can use Cloud Shell to configure exfiltration protection for Azure AI servic
 
 1. The output shows Microsoft.com in the allowed FQDN list.
 
-   [![Screenshot showing the contents of the output text file in the editor.](../media/editor-list.svg)](../media/editor-list-big.svg#lightbox)
+   [![Screenshot showing the contents of the output text file in the editor.](../media/editor-list.svg)](../media/editor-list-big.png#lightbox)
