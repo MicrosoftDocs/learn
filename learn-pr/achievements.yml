@@ -5980,6 +5980,16 @@ achievements:
   title: Classify endangered bird species with Custom Vision
   summary: As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitat. Your work often involves surveying, recording, and reporting on bird activity. You want to build a machine learning model that will identify a bird in an image by species, to help with gathering data. In this module, you use Azure AI Custom Vision to create a model to identify species of birds!
   iconUrl: /training/achievements/advocates/cv-classify-bird-species.svg
+- uid: learn.orleans-product-introduction.badge
+  type: badge
+  title: Introduction to Orleans
+  summary: Learn what Orleans is and when you might want to use it.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.intro-to-azure-cache-for-redis.badge
+  type: badge
+  title: Introduction to Azure Cache for Redis
+  summary: Microsoft Azure Cache for Redis brings a critical low-latency and high-throughput data storage solution to modern applications. This solution can help improve the performance and scalability of your apps that rely heavily on backend data stores.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.secure-aspnet-core-identity.badge
   type: badge
   title: Secure a .NET web app with the ASP.NET Core Identity framework
@@ -6080,3 +6090,18 @@ achievements:
   title: Authenticate users with Azure Static Web Apps
   summary: Publish an Angular, React, Svelte, or Vue JavaScript app with API and authentication using Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
   iconUrl: /training/achievements/publish-static-web-app-authentication.svg
+- uid: learn.app-service-autoscale-rules.badge
+  type: trophy
+  title: Dynamically meet changing web app performance requirements with autoscale rules
+  summary: Respond to periods of high activity by incrementally adding resources, and then removing these resources when activity drops, to reduce costs.
+  iconUrl: /training/achievements/app-service-autoscale-rules.svg
+- uid: learn.wwl.bring-ai-to-business-users-your-organization.trophy
+  type: trophy
+  title: Bring AI to business users in your organization
+  summary: To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
+  iconUrl: /training/achievements/bring-ai-to-business-users-your-organization.svg
+- uid: learn.wwl.introduction-ai-for-business-users.trophy
+  type: trophy
+  title: Introduction to AI for business users
+  summary: To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
+  iconUrl: /training/achievements/introduction-ai-for-business-users.svg

@@ -50343,6 +50343,76 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/2-what-is-azure-cache-for-redis.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/3-how-azure-cache-for-redis-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/4-when-to-use-azure-cache-for-redis.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cache-for-redis/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/accelerate-scale-spring-boot-application-azure-cache-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/2-what-is-orleans.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/3-how-orleans-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/4-when-to-use-orleans.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/orleans-product-introduction/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-microservices-with-dotnet/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/react/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
@@ -51195,6 +51265,61 @@
     {
       "source_path": "learn-pr/azure/publish-static-web-app-authentication/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/2-identify-scenarios.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/3-knowledge-check-identify-scenarios.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/4-identify-factors.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/5-knowledge-check-identify-factors.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/6-autoscale-a-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/7-exercise-autoscale-a-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/bring-ai-to-business-users-your-organization/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/introduction-ai-for-business-users/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
     }
   ]
