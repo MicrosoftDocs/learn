@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-agent-to-mcp-tools.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your learning on connecting MCP tools to Azure AI Agents."
+  ms.date: 06/13/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What role does the MCP server play in the MCP agent tool integration?"
+    choices:
+    - content: "Runs the AI agent and processes user prompts directly."
+      isCorrect: false
+      explanation: "Incorrect. The server hosts tools; the agent processes prompts."
+    - content: "Manages network connections between multiple agents."
+      isCorrect: false
+      explanation: "Incorrect. The server focuses on tool hosting, not agent networking."
+    - content: "Hosts tool definitions and makes them available for discovery by the client."
+      isCorrect: true
+      explanation: "Correct. The MCP server acts as a central registry for tool definitions."
+  - content: "How does an MCP client retrieve available tools from the MCP server?"
+    choices:
+    - content: "By calling `session.list_tools()` to get the current tool catalog."
+      isCorrect: true
+      explanation: "Correct. The client uses `list_tools()` to discover tools dynamically."
+    - content: "By reading a static JSON file from the server directory."
+      isCorrect: false
+      explanation: "Incorrect. Tools are discovered dynamically, not via static files."
+    - content: "By subscribing to server events via a WebSocket connection."
+      isCorrect: false
+      explanation: "Incorrect. The client uses direct calls, not event subscriptions, to list tools."
+  - content: "Why should MCP tools be wrapped in async functions on the client-side?"
+  choices:
+    - content: "To allow the agent to wait for user input."
+      isCorrect: false
+      explanation: "Incorrect. The tools do not prevent the agent from receiving user input."
+     - content: "To enable asynchronous invocation so the agent can call tools without blocking."
+      isCorrect: true
+      explanation: "Async functions let the agent invoke tools efficiently."
+    - content: "To convert the functions into REST API endpoints automatically."
+      isCorrect: false
+      explanation: "Incorrect. Wrapping tools in async functions does not generate REST endpoints."
