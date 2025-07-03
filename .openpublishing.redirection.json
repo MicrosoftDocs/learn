@@ -51401,6 +51401,11 @@
       "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/8-knowledge-check.md",
       "redirect_url": "/training/modules/purview-ediscovery-search/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/7-search-delete-email-messages.md",
+      "redirect_url": "/training/modules/purview-ediscovery-search/",
+      "redirect_document_id": false
     }
   ]
 }
