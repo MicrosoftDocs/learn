@@ -6,7 +6,7 @@ In the following scenario, we'll demonstrate how Contoso Health can use Copilot 
 
 The following prerequisites should be in place before you start:
 
-- Access to a Microsoft Fabric tenant account with an active subscription. [Create a free account](https://azure.microsoft.com/free/).
+- Access to a Microsoft Fabric tenant account with an active subscription. [Create an account](https://azure.microsoft.com/free/).
 - Created a Workspace with Fabric enabled: [Create a workspace](/fabric/fundamentals/create-workspaces).
 
 ## Create a lakehouse
@@ -153,7 +153,7 @@ Notice the result is generated in the Copilot pane. Here's an example of the exp
 - _**Sorted rows**: Sort the table by "VisitDateTime" in descending order and remove the "DateOfVisit" and "HourOfVisit" columns._
 - _**Filter rows**: Filter out rows where the department is "ENT"._
 
-## Load the data to the Lakehouse
+## Load the data to the lakehouse
 
 Now that you finished transforming and combining your data, you can configure its output destination settings. Select **Choose data destination** at the bottom of the **Query settings** pane.
 

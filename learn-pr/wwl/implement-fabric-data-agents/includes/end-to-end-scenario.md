@@ -3,7 +3,7 @@ Let's walk through the process of creating, configuring, and consuming a Fabric 
 There are several steps involved creating, validating, and sharing a Fabric data agent in Fabric. The process is straightforward and you can begin testing the Fabric data agent resources in minutes.
 
 > [!div class="mx-imgBorder"]
-> [![Diagram that shows an overview of data agent.](../media/data-agent-overview.png)](../media/data-agent-overview.png#lightbox)
+> [![Diagram that shows an overview of Fabric data agent.](../media/data-agent-overview.png)](../media/data-agent-overview.png#lightbox)
 
 ## Prerequisites
 
@@ -13,12 +13,12 @@ Before you begin, make sure that:
 - You have the [Fabric data agent tenant](/fabric/data-science/data-agent-tenant-settings) settings and [Copilot tenant switch](/fabric/data-science/data-agent-tenant-settings) enabled
 - You have at least one of these: A warehouse, a lakehouse, one or more Power BI semantic models, or a KQL database with data.
 
-## 1. Create a Data Agent
+## 1. Create a Fabric data agent
 
 To begin, navigate to your workspace in Microsoft Fabric:
 - Select the **"+ New Item"** button.
 - Choose **"Fabric data agent"** from the list of options.
-- Provide a meaningful name for your data agent and proceed to configure it.
+- Provide a meaningful name for your Fabric data agent and proceed to configure it.
 
 > [![Screenshot of creating a new Fabric data agent.](../media/new-fabric-data-agent.png)](../media/new-fabric-data-agent.png#lightbox)
 
@@ -50,9 +50,9 @@ The agent displays both the final result and the intermediate steps it followed 
 
 > [!NOTE]
 > 
-> It’s important to note that the data agent only supports **read** operations—it doesn't create, update, or delete data.
+> It’s important to note that the Fabric data agent only supports **read** operations—it doesn't create, update, or delete data.
 
-## 3. Configure the Data Agent
+## 3. Configure the Fabric data agent
 
 The Fabric data agent provides various configuration options that let you tailor its behavior to better align with your organization’s needs. These settings offer flexibility and greater control over how data is processed and presented.
 
@@ -66,7 +66,7 @@ To add them in the Fabric data agent instructions pane, select **AI instructions
 
 For example, you can specify the exact data source to use for certain types of questions. Or, provide descriptions for certain tables or columns.
 
-### Provide Example Queries
+### Provide example queries
 
 You can improve the accuracy of Fabric data agent responses by providing example queries specific to each data source, such as lakehouses, warehouses, or KQL databases. This technique, known as **Few-Shot Learning** in generative AI, helps guide the agent to produce answers that more closely match your expectations.
 
@@ -82,17 +82,17 @@ For each data source, you can select **Add or edit example queries** to input th
 
 > [![Screenshot of adding example queries in a Fabric data agent.](../media/fabric-data-agent-add-example.png)](../media/fabric-data-agent-add-example.png#lightbox)
 
-## 4. Publish the Data Agent
+## 4. Publish the Fabric data agent
 
-When you're satisfied with the data agent's functionality, select **Publish** to make it accessible. Provide a detailed description of the data agent to help others understand its purpose and functionality. Other AI systems/orchestrators use the same description to effectively invoke the Fabric data agent in an automated way.
+When you're satisfied with the data agent's functionality, select **Publish** to make it accessible. Provide a detailed description of the Fabric data agent to help others understand its purpose and functionality. Other AI systems/orchestrators use the same description to effectively invoke the Fabric data agent in an automated way.
 
 > [![Screenshot of selecting the Publish button in a Fabric data agent.](../media/fabric-data-agent-publish-button.png)](../media/fabric-data-agent-publish-button.png#lightbox)
 
 After you publish the Fabric data agent, you'll have two versions of it. One version is the current draft version, which you can continue to refine and improve. The second version is the published version, which you can share with your colleagues who want to query the Fabric data agent to get answers to their questions. 
 
-## 5. Consume the Data Agent
+## 5. Consume the Fabric data agent
 
-The published data agent can be consumed in various platforms, including:
+The published Fabric data agent can be consumed in various platforms, including:
 
 - **Microsoft Fabric**
 - **Copilot Studio**

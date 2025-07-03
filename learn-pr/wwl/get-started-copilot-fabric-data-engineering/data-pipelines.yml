@@ -4,10 +4,10 @@ title: Use Copilot with Fabric data pipelines
 metadata:
   title: Use Copilot with Fabric Data Pipelines
   description: "Use Copilot with Fabric data pipelines"
-  ms.date: 06/03/2025
+  ms.date: 07/01/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/data-pipelines.md)]

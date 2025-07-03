@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-copilot-fabric.scale-copilot
+title: Scale Copilot in Fabric
+metadata:
+  title: Scale Copilot in Fabric
+  description: "Scale Copilot in Fabric"
+  ms.date: 07/01/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/scale-copilot.md)]

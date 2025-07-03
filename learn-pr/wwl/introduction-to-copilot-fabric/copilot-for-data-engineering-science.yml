@@ -4,10 +4,10 @@ title: Understand Copilot for Data Engineering and Data Science
 metadata:
   title: Understand Copilot for Data Engineering and Data Science
   description: "Understand Copilot for Data Engineering and Data Science"
-  ms.date: 06/03/2025
+  ms.date: 07/01/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 2
 content: |
   [!include[](includes/copilot-for-data-engineering-science.md)]
