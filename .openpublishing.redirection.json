@@ -51376,6 +51376,11 @@
       "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/6-configure-search-permissions-filters.md",
       "redirect_url": "/training/modules/purview-ediscovery-search/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/3-create-content-search.md",
+      "redirect_url": "/training/modules/purview-ediscovery-search/",
+      "redirect_document_id": false
     }
   ]
 }
