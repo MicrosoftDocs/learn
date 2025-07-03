@@ -6085,6 +6085,16 @@ achievements:
   title: 'Microsoft Azure AI Fundamentals: Generative AI'
   summary: "Generative AI is a form of artificial intelligence in which models are trained to generate new original content based on natural language input. In other words, you can describe a desired output in normal everyday language, and the model can respond by creating appropriate text, image, code, and more. \n\nTake this learning path to get started with generative AI. In it, you'll learn how to:\n- Understand core concepts of generative AI\n- Prepare for an AI development project\n- Describe considerations and practices for responsible generative AI\n- Build an AI agent using Azure AI Foundry"
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.advocates.azure-functions-and-signalr.badge
+  type: trophy
+  title: Enable real-time updates in a web application using Azure Functions and SignalR Service
+  summary: Change a JavaScript web app update mechanism from polling to push-based architecture with SignalR Service, Azure Cosmos DB, and Azure Functions.
+  iconUrl: /training/achievements/advocates/enable-automatic-updates-in-a-web-app-using-azure-functions-and-signalr.svg
+- uid: learn.azure.publish-static-web-app-authentication.badge
+  type: trophy
+  title: Authenticate users with Azure Static Web Apps
+  summary: Publish an Angular, React, Svelte, or Vue JavaScript app with API and authentication using Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
+  iconUrl: /training/achievements/publish-static-web-app-authentication.svg
 - uid: learn.app-service-autoscale-rules.badge
   type: trophy
   title: Dynamically meet changing web app performance requirements with autoscale rules
@@ -6100,3 +6110,8 @@ achievements:
   title: Introduction to AI for business users
   summary: To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
   iconUrl: /training/achievements/introduction-ai-for-business-users.svg
+- uid: learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.badge
+  type: badge
+  title: Investigate threats with Content search in Microsoft Purview
+  summary: This module examines how to search for content in the Microsoft Purview portal using Content Search functionality, including how to view and export the search results, and configure search permissions filtering.
+  iconUrl: /training/achievements/m365-content-compliance.svg
