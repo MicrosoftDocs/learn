@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Guided Project – Update and maintain resources
   description: "Update and maintain Azure resources"
-  ms.date: 07/02/2025
+  ms.date: 07/03/2025
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module-guided-project
@@ -27,11 +27,11 @@ abstract: |
 
   -   Manage resource tags and locks.
 prerequisites: |
-  Basic understanding of cloud computing.
+  -   Basic understanding of cloud computing.
 
-  Basic understanding of Microsoft Azure services such as compute, storage, and networking.
+  -   Basic understanding of Microsoft Azure services such as compute, storage, and networking.
 
-  An active Microsoft Azure subscription.
+  -   An active Microsoft Azure subscription.
 iconUrl: /training/achievements/generic-badge.svg
 hidden: true
 levels:
