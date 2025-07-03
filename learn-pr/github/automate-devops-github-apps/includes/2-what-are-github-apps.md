@@ -8,9 +8,9 @@ There are several factors to consider when choosing between incorporating an OAu
 
 :::image type="content" source="../media/gh-apps-oauth-apps.png" alt-text="Image of an install icon and an approve icon for GitHub Apps and OAuth Apps." :::
 
-When customizing a GitHub workflow, you have several features available. Such as, writing custom scripts, creating and authorizing your own OAuth Apps, or installing GitHub Apps available from the GitHub marketplace. In general, you can best use scripts for those one-off tasks. For actions that need to be run more often, you can use the automation of OAuth and GitHub Apps to help you and your team save time while retaining the optimal level of security within your workflows. There are many differences that affect how you decide between using a GitHub App or OAuth App. Understanding these differences beforehand can reduce some headaches and rework down the road, and help you find the best application for your specific use case within your workflow.
+When customizing a GitHub workflow, you have several features available. Such as, writing custom scripts, creating and authorizing your own OAuth Apps, or installing GitHub Apps available from the GitHub marketplace. In general, you can best use scripts for those one-off tasks. For actions that are run more often, the automation of OAuth and GitHub Apps can help you and your team save time, while retaining the optimal level of security within your workflows. There are many differences that affect how you decide between using a GitHub App or OAuth App. Understanding these differences beforehand can reduce some headaches and rework down the road, and help you find the best application for your specific use case within your workflow.
 
-At the end of this section, you'll have a good understanding of the differences between a GitHub App and an OAuth App, and know how to best choose an app for the right situation.
+At the end of this section, you should have a good understanding of the differences between a GitHub App and an OAuth App, and know how to best choose an app for the right situation.
 
 ## Granting access and permissions
 
@@ -34,9 +34,13 @@ For organizations with OAuth App access restrictions, the Administrator is able 
 
 By contrast, GitHub Apps are *installed* in your personal account, organizations you own, or specific repositories in which you have admin access. GitHub Apps are installed and interact with GitHub as a service, not an individual user as with OAuth Apps. One benefit of GitHub Apps is that, unlike OAuth apps, GitHub Apps don't consume a GitHub license.
 
-GitHub Apps access data on behalf of the application itself through a Private Key that's used to sign a JSON Web Token. Because they're installed on specific repositories, users can choose what repositories the app can access, which limits the amount of data the app is able to access. Permissions define what resources the GitHub App can access via the API. Unlike OAuth Apps, GitHub Apps have customizable permissions for repository data, issues, and pull requests. This allows you to grant more granular permissions, limiting the app to read and write in only the repositories it has been allowed to access. Only organization owners can manage the setting of GitHub Apps in an organization.
+GitHub Apps access data on behalf of the application itself through a Private Key that's used to sign a JSON Web Token. Because they're installed on specific repositories, users can choose what repositories the app can access, which limits the amount of data the app is able to access. Permissions define what resources the GitHub App can access via the API. Unlike OAuth Apps, GitHub Apps have customizable permissions for repository data, issues, and pull requests. Customization allows you to grant more granular permissions, limiting the app to read and write only in the repositories you allow it to access. Only organization owners can manage the setting of GitHub Apps in an organization.
 
-You can find and install GitHub Apps from the GitHub Marketplace. When you're searching for GitHub Apps, keep in mind that some Apps have a verified badge. This badge shows that the app is owned by an organization that has verified ownership of their domain, confirmed their email addresses with GitHub Support, and requires two-factor authentication for their organization.
+You can find and install GitHub Apps from the GitHub Marketplace. When you're searching for GitHub Apps, keep in mind that some Apps have a *verified badge*. A verified badge indicates the following about the app and the organization that owns it:
+
+- The organization's ownership of their domain is verified.
+- GitHub Support confirms the email addresses for the organization.
+- The organization requires two-factor authentication.
 
 :::image type="content" source="../media/apps-badge.png" alt-text="Image of a verified badge for a GitHub App." :::
 
@@ -46,7 +50,7 @@ You can find and install GitHub Apps from the GitHub Marketplace. When you're se
 
 ## Choose between GitHub Apps and OAuth Apps
 
-While GitHub Apps are an ideal way to integrate into your workflow in some situations, it can be challenging for larger organizations to make the transition from the traditional use of OAuth Apps for automation. For example, a security-policy restriction might also limit an administrator's options in choosing to use these tools.
+While GitHub Apps are an ideal way to integrate into your workflow in some situations, larger organizations can find it challenging to make the transition from the traditional use of OAuth Apps for automation. For example, a security-policy restriction might also limit an administrator's options in choosing to use these tools.
 
 > [!NOTE]
 > As the System Administrator, you should work with your developers to find options that are the best-fit for automation by using these applications while still following your security policy.
@@ -65,7 +69,7 @@ Here are some key characteristics and differences to consider when choosing betw
 | Installing a GitHub App grants the app access to a user or organization account's chosen repositories. | Authorizing an OAuth App grants the app access to the user's accessible resources; for example, repositories they can access. |
 | Installation access tokens are limited to specified repositories with the permissions chosen by the app's creator. | An OAuth access token is limited via scopes.                 |
 | An installation token identifies the app as the GitHub Apps bot. | An access token identifies the app as the user who granted the token to the app. |
-| GitHub Apps have targeted permissions that allow them to request access only to what they need. | OAuth Apps can't use granular permissions.                   |
+| GitHub Apps use targeted permissions that allow them to request access only to what they need. | OAuth Apps can't use granular permissions.                   |
 | GitHub Apps aren't subject to organization application policies. A GitHub App only has access to the repositories that an organization owner grants. | If an organization application policy is active, only an organization owner can authorize the installation of an OAuth App. If installed, the OAuth App gains access to anything visible to the token the organization owner has within the approved organization. |
 | Rate limit increases can be granted both at the GitHub Apps level (affecting all installations) and at the individual installation level. | Rate limit increases are granted per OAuth App. Every token granted to that OAuth App gets the increased limit. |
 | GitHub Apps can authenticate on behalf of the user, which is called user-to-server requests. The flow to authorize is the same as the OAuth App authorization flow. User-to-server tokens can expire and be renewed with a refresh token. | The OAuth flow used by OAuth Apps authorizes an OAuth App on behalf of the user. This flow is the same one used in GitHub App user-to-server authorization. |
@@ -95,7 +99,7 @@ GitHub Apps are designed to be passive. They wait for something to happen and th
 
 ### Using GitHub webhooks
 
-Webhooks are the preferred approach for event handling. When something happens on GitHub within the scope of a webhook, it's raised immediately. Webhooks push notifications that your app can listen for and process in real time. You can configure webhooks in your repository settings, including the types of events, authentication, and way the HTTP notifications are delivered.
+Webhooks are the preferred approach for event handling. When something happens on GitHub within the scope of a webhook, an event is raised immediately. Webhooks push notifications that your app can listen for and process in real time. You can configure webhooks in your repository settings, including the types of events, authentication, and way the HTTP notifications are delivered.
 
 ### Polling
 
