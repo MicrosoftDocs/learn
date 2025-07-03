@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-microsoft-copilot-azure.access-microsoft-copilot-azure
+title: Access Microsoft Copilot in Azure
+metadata:
+  title: Access Microsoft Copilot in Azure
+  description: Learn the different ways to access Microsoft Copilot in Azure.
+  ms.date: 07/03/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-access-microsoft-copilot-azure.md)]
