@@ -29,34 +29,34 @@ quiz:
       explanation: "Incorrect. A storage account is used to store data, not to group resources."
   - content: "What is the purpose of setting a delete lock on an Azure resource?"
     choices:
-    - content: "To prevent the resource from being modified"
+    - content: "To prevent the resource from being modified."
       isCorrect: false
       explanation: "Incorrect"
-    - content: "To allow only administrators to access the resource"
+    - content: "To allow only administrators to access the resource."
       isCorrect: false
       explanation: "Incorrect"
-    - content: "To prevent accidental or unauthorized deletion of the resource"
+    - content: "To prevent accidental or unauthorized deletion of the resource."
       isCorrect: true
-      explanation: "Correct. A delete lock ensures the resource cannot be deleted until the lock is removed."
+      explanation: "Correct. A delete lock ensures the resource can't be deleted until the lock is removed."
   - content: "Which of the following actions would help minimize Azure costs when creating a virtual machine?"
     choices:
-    - content: "Selecting a small virtual machine size like Standard_B1s"
+    - content: "Selecting a small virtual machine size like Standard_B1s."
       isCorrect: true
       explanation: "Correct. Smaller virtual machine sizes are more cost-effective for basic workloads."
-    - content: "Enabling auto-scaling for the virtual machine"
+    - content: "Enabling autoscaling for the virtual machine."
       isCorrect: false
-      explanation: "Incorrect. Auto-scaling is not applicable to individual virtual machines and does not directly reduce cost."
-    - content: "Using a premium SSD for the OS disk"
+      explanation: "Incorrect. Autoscaling isn't applicable to individual virtual machines and doesn't directly reduce cost."
+    - content: "Using a premium SSD for the OS disk."
       isCorrect: false
       explanation: "Incorrect. Premium SSDs are more expensive and not necessary for cost-saving scenarios."
   - content: "What happens when a shared access signature (SAS) URL is used after its associated key has been rotated?"
     choices:
-    - content: "The file becomes read-only"
+    - content: "The file becomes read-only."
       isCorrect: false
       explanation: "Incorrect"
-    - content: "The SAS URL continues to work until it expires"
+    - content: "The SAS URL continues to work until it expires."
       isCorrect: false
       explanation: "Incorrect"
-    - content: "The SAS URL becomes invalid and access is denied"
+    - content: "The SAS URL becomes invalid and access is denied."
       isCorrect: true
       explanation: "Correct. Rotating the key invalidates any SAS tokens generated with the old key."
