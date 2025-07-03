@@ -2,16 +2,15 @@
 uid: learn.wwl.generate-documentation-using-github-copilot-tools.knowledge-check
 title: Module assessment
 metadata:
-  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 06/02/2025
+  ms.date: 07/02/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
   ms.custom:
   - N/A
-  module_assessment: true
+  ai_generated_module_assessment: true
 durationInMinutes: 8
 quiz:
   title: "Check your knowledge"
