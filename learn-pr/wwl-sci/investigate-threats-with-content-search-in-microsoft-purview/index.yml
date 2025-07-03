@@ -36,6 +36,5 @@ subjects:
 - compliance
 - information-protection-governance
 units:
-- learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.view-search-results
 badge:
   uid: learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.badge
