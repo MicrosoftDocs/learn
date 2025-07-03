@@ -57,7 +57,7 @@ Single label classification models specify a project type of `customSingleLabelC
     "projectName": "<PROJECT-NAME>",
     "storageInputContainerName": "<CONTAINER-NAME>",
     "projectKind": "customSingleLabelClassification",
-    "description": "Trying out custom multi label text classification",
+    "description": "Trying out custom single label text classification",
     "language": "<LANGUAGE-CODE>",
     "multilingual": true,
     "settings": {}

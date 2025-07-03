@@ -9,6 +9,7 @@ metadata:
   author: EliotSeattle
   ms.author: eliotgra
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 10
 ###########################################################################
 ###

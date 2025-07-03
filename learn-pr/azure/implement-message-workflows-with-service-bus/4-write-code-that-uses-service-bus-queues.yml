@@ -8,6 +8,7 @@ metadata:
   author: spelluru
   ms.author: spelluru
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 durationInMinutes: 5
 content: |
   [!include[](includes/4-write-code-that-uses-service-bus-queues.md)]

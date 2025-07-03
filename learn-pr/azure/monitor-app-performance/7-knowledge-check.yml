@@ -2,9 +2,11 @@
 uid: learn.wwl.monitor-app-performance.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 07/18/2024
+  ms.date: 06/30/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -30,9 +32,9 @@ quiz:
     - content: "Log-based"
       isCorrect: false
       explanation: "Incorrect. Log-based metrics are aggregated at query time and require more processing to produce results."
-    - content: "Pre-aggregated"
+    - content: "Preaggregated"
       isCorrect: true
-      explanation: "Correct. Pre-aggregated metrics are stored as a time series and only with key dimensions, which enable near real-time alerting on dimensions of metrics, more responsive dashboards."
+      explanation: "Correct. Preaggregated metrics are stored as a time series and only with key dimensions, which enable near real-time alerting on dimensions of metrics, more responsive dashboards."
     - content: "Azure Service Bus"
       isCorrect: false
-      explanation: "Incorrect. Azure Service Bus is message queueing service."
+      explanation: "Incorrect. Azure Service Bus is message queueing service."

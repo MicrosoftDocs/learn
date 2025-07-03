@@ -57,7 +57,7 @@ The following custom script extension configuration can be added to an Azure Res
 
 Desired State Configuration (DSC) extensions make it possible for you to deal with the configurations on your infrastructure that might need more complex installation procedures, such as reboots. DSC helps you define a state for your machines instead of writing detailed manual instructions on how to achieve that state for each machine. State configurations are relatively easy to read and implement.
 
-By using a DSC extension handler, which you can define for a virtual machine, you can enforce your states. The configurations for your states can be located in various places, such as Azure Blob storage or your internal file storage. The DSC extension handler grabs the configuration and implements the state on the target virtual machine. If reboots are necessary for a configuration, DSC continues to execute the state configuration after the reboots are completed.
+By using a DSC extension handler, which you can define for a virtual machine, you can enforce your states. The configurations for your states can be located in various places, such as Azure Blob storage or your internal file storage. The DSC extension handler grabs the configuration and implements the state on the target virtual machine. If it's necessary for reboots to occur during a configuration, DSC continues to execute the state configuration after the reboots are completed.
 
 The following example defines a DSC extension handler for a virtual machine in an Azure Resource Manager template. The `script` property points to a configuration script in blob storage.
 
@@ -152,7 +152,7 @@ The following example defines a Chef extension for a virtual machine in an Azure
 }
 ```
 
-A recipe might look like the one that follows. The recipe installs an IIS web server.
+A recipe might look like the one that follows. The recipe installs an Internet Information Services (IIS) web server.
 
 ```powershell
 #install IIS on the node.
@@ -248,7 +248,7 @@ Azure Automation state configuration is the service you use to make sure that yo
 
 ![Screenshot of the State configuration panel in the Azure portal.](../media/2-automation-state-config.png)
 
-Azure Automation state configuration makes it possible for you to ensure that all target machines are assigned the correct configurations automatically. It also ensures that each machine reports back on what its current state is and shows whether it has achieved the desired state. You can send this information for reporting and for further decision making. You can interact with Azure Automation state configuration through the Azure portal or through Azure PowerShell.
+Azure Automation state configuration makes it possible for you to ensure that the correct configurations are assigned to all target machines automatically. It also ensures that each machine reports back on what its current state is and shows whether it achieved the desired state. You can send this information for reporting and for further decision making. You can interact with Azure Automation state configuration through the Azure portal or through Azure PowerShell.
 
 ## Azure Resource Manager templates
 

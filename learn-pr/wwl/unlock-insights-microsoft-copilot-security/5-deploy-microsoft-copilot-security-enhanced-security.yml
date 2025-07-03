@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  ms.custom: sfi-ga-nochange
 durationInMinutes: 7
 content: |
   [!include[](includes/5-deploy-microsoft-copilot-security-enhanced-security.md)]

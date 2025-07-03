@@ -4,7 +4,7 @@ With Azure Quantum and the Azure Quantum Development Kit (QDK), you're able to p
 
 ## Quantum programming with the Azure Quantum Development Kit
 
-Quantum programming is a distinct art from classical programming that requires different tools to understand and express quantum algorithmic thinking. The Azure Quantum Development Kit (QDK) is a **free**, open-source software development kit that you can use to write quantum programs.
+Quantum programming is a distinct art from classical programming that requires different tools to understand and express quantum algorithmic thinking. The Azure Quantum Development Kit (QDK) is a **free** open-source software development kit that you can use to write quantum programs.
 
 The QDK includes Q#, a high-level **quantum programming language**. Q# is designed to address the challenges of quantum information processing.
 
@@ -50,7 +50,7 @@ If it's your first time using Azure Quantum, you automatically get free **USD500
 Azure Quantum Credits consumption is based on a resource-usage model defined by each quantum provider and cost of use is deducted from your credits.
 
 > [!NOTE]
-> Note that Azure credits and Azure Quantum credits are different grants and shouldn't be confused. When you create a [free trial Azure account](https://azure.microsoft.com/free/), you get USD200 free Azure Credits to use on Azure services. Azure credits aren't eligible to use on quantum hardware providers.
+> Azure credits and Azure Quantum credits are different grants and shouldn't be confused. When you create a [free trial Azure account](https://azure.microsoft.com/free/), you get USD200 free Azure Credits to use on Azure services. Azure credits aren't eligible to use on quantum hardware providers.
 
 ## If I'm not a quantum expert, can I still use Azure Quantum?
 
@@ -60,7 +60,7 @@ Azure Quantum incorporates AI to assist you. You can use [Copilot in Azure Quant
 
 If you want to learn by doing, try the [Quantum Katas,](https://quantum.microsoft.com/experience/quantum-katas) a series of self-paced tutorials that teach you elements of quantum computing and Q# programming. You can also explore [the Q# quantum samples](https://github.com/microsoft/Quantum/tree/main/samples/azure-quantum).
 
-You can also learn from experts and enthusiasts through blogs, articles and videos. And you can try out some Q# code samples in the online code editor.
+You can also learn from experts and enthusiasts through blogs, articles, and videos. And you can try out some Q# code samples in the online code editor.
 
 All these tools are **free of charge**.
 

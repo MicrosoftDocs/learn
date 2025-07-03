@@ -16,7 +16,7 @@ The following diagram depicts the architecture of a typical Azure Bastion deploy
 :::image type="content" source="../media/bastion-architecture.png" alt-text="The architecture of Azure Bastion, as described in the preceding text.":::
 
 > [!NOTE]
-> The protected VMs and the Azure  Bastion host are connected to the same virtual network, although in different subnets.
+> The protected VMs and the Azure Bastion host are connected to the same virtual network, although in different subnets.
 
 The typical connection process in Azure Bastion is as follows:
 

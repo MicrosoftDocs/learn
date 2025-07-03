@@ -20,7 +20,7 @@ abstract: |
     - Build an agent using RAG on your own data in the Azure AI Foundry portal
 prerequisites: |
   Before starting this module, you should be familiar with fundamental AI concepts and services in Azure.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/build-copilot-ai-studio.svg
 levels:
   - intermediate
 roles: 

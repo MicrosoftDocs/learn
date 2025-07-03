@@ -23,7 +23,7 @@ Each ACR Task has an associated source code context - the location of a set of s
 
 The *inner-loop* development cycle is the iterative process of writing code, building, and testing your application before committing to source control. It's really the beginning of container lifecycle management.
 
-Before you commit your first line of code, ACR Tasks's quick task feature can provide an integrated development experience by offloading your container image builds to Azure. With quick tasks, you can verify your automated build definitions and catch potential problems before committing your code.
+ACR Tasks's quick task feature can provide an integrated development experience by offloading your container image builds to Azure. With quick tasks, you can verify your automated build definitions and catch potential problems before committing your code.
 
 Using the familiar `docker build` format, the [az acr build](/cli/azure/acr#az-acr-build) command in the Azure CLI takes a context (the set of files to build), sends it to ACR Tasks and, by default, pushes the built image to its registry upon completion.
 
@@ -41,7 +41,7 @@ Optionally schedule a task by setting up one or more timer triggers when you cre
 
 ## Multi-step tasks
 
-Multi-step tasks, defined in a [YAML file](/azure/container-registry/container-registry-tasks-reference-yaml) specify individual build and push operations for container images or other artifacts. They can also define the execution of one or more containers, with each step using the container as its execution environment. For example, you can create a multi-step task that automates the following:
+Multi-step tasks, defined in a [YAML file](/azure/container-registry/container-registry-tasks-reference-yaml) specify individual build and push operations for container images or other artifacts. They can also define the execution of one or more containers, with each step using the container as its execution environment. For example, you can create a multi-step task that automates the following actions:
 
 1.  Build a web application image
 1.  Run the web application container
@@ -52,7 +52,7 @@ Multi-step tasks, defined in a [YAML file](/azure/container-registry/container-r
 
 ## Image platforms
 
-By default, ACR Tasks builds images for the Linux OS and the amd64 architecture. Specify the `--platform` tag to build Windows images or Linux images for other architectures. Specify the OS and optionally a supported architecture in OS/architecture format (for example, `--platform Linux/arm`). For ARM architectures, optionally specify a variant in OS/architecture/variant format (for example, `--platform Linux/arm64/v8`):
+By default, ACR Tasks builds images for the Linux OS and the amd64 architecture. Specify the `--platform` tag to build Windows images or Linux images for other architectures. Specify the OS and optionally a supported architecture in OS/architecture format (for example, `--platform Linux/arm`). For Azure Resource Manager architectures, optionally specify a variant in OS/architecture/variant format (for example, `--platform Linux/arm64/v8`):
 
 | OS | Architecture |
 |---|---|

@@ -8,6 +8,7 @@ metadata:
   author: qianw211
   ms.author: qianwen
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:

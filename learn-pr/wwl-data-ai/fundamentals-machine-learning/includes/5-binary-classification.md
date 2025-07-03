@@ -134,7 +134,7 @@ So 100% of the patients predicted by our model to have diabetes do in fact have 
 
 #### F1-score
 
-*F1-score* is an overall metric that combined recall and precision. The formula for F1-score is:
+*F1-score* is an overall metric that combines recall and precision. The formula for F1-score is:
 
 ***(2 x Precision x Recall) &#247; (Precision + Recall)***
 

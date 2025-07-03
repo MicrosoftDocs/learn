@@ -5,7 +5,7 @@ metadata:
   title: Introduction to Azure Bastion
   description: Describe how Azure Bastion provides secure and seamless connectivity to your VMs directly in the Azure portal. Determine whether Azure Bastion can replace your administrative jump boxes.
   manager: kumud
-  ms.date: 12/05/2023
+  ms.date: 05/29/2025
   author: cherylmc
   ms.author: cherylmc
   ms.topic: module-intro-to-product
@@ -44,4 +44,4 @@ units:
 - learn.intro-to-azure-bastion.6-summary
 badge:
   uid: learn.intro-to-azure-bastion.badge
-
+

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs-simulation.exercise
+title: Exercise - Connect Microsoft Sentinel to Microsoft Defender XDR
+metadata:
+  title: Exercise - Connect Microsoft Sentinel to Microsoft Defender XDR
+  description: "Run a simulation exercise to connect a Microsoft Sentinel workspace to the Microsoft Defender portal."
+  ms.date: 6/25/2025
+  author: KenMAG
+  ms.author: kelawson
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise.md)]

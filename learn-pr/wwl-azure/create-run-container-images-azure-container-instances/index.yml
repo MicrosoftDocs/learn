@@ -1,16 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.create-run-container-images-azure-container-instances
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Run container images in Azure Container Instances
   description: "Run container images in Azure Container Instances"
-  ms.date: 02/06/2025
+  ms.date: 06/17/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module-standard-task-based
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure-container-instances
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Run container images in Azure Container Instances
 summary: Learn how Azure Container Instances can help you quickly deploy containers, how to set environment variables, and specify container restart policies.
 abstract: |
