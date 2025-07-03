@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-microsoft-copilot-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This knowledge check tests your understanding of the module content.
+  ms.date: 07/03/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 4
+content: Choose the best response for each question.
+quiz:
+  questions:
+    - content: "You're the Cloud administrator for your organization. What is a scenario on which you can use Microsoft Copilot in Azure to aid in your work?"
+      choices:
+        - content: "Manage non-Azure resources."
+          isCorrect: false
+          explanation: "Microsoft Copilot in Azure can only manage Azure and Azure Arc connected resources."
+        - content: "Create on-premises virtual machines."
+          isCorrect: false
+          explanation: "Microsoft Copilot in Azure can manage Arc-enabled servers but can't create on-premises resources."
+        - content: "Visualize an Azure virtual network topology."
+          isCorrect: true
+          explanation: "Microsoft Copilot in Azure can create a visual network topology of Azure virtual networks."
+    - content: "You're authoring a YAML specification file to deploy a workload to Azure Kubernetes Service. You found this sample YAML file on the web and aren't sure what the file does. How can you use Microsoft Copilot in Azure to support a safe deployment?"
+      choices:
+        - content: "Ask Microsoft Copilot in Azure to author a new YAML specification file."
+          isCorrect: false
+          explanation: "Creating a new file requires a review and comparison related of the sample file."
+        - content: "Ask Microsoft Copilot in Azure to explain the YAML specification file."
+          isCorrect: true
+          explanation: "Microsoft Copilot in Azure can explain the sample YAML code so you're in control of what it's doing."
+        - content: "Ask Microsoft Copilot in Azure to fix the YAML specification file."
+          isCorrect: false
+          explanation: "Microsoft Copilot in Azure can fix YAML if there are errors with its syntax."
+    - content: "How does Microsoft Copilot in Azure comply with the permissions and RBAC settings of your company?"
+      choices:
+        - content: "Microsoft Copilot in Azure won't perform actions that you don't have permissions to or access resources you don't have access to already."
+          isCorrect: true
+          explanation: "Microsoft Copilot in Azure is restricted to the permissions and authorization you already have and can't operate outside those boundaries."
+        - content: "You can ask Microsoft Copilot in Azure to elevate your role to Global Administrator."
+          isCorrect: false
+          explanation: "Microsoft Copilot in Azure can't be used to elevate your current role or add permissions."
+        - content: "Microsoft Copilot in Azure operates under a different service account and can be provided access to different resources."
+          isCorrect: false
+          explanation: "Microsoft Copilot in Azure only operates with the same context that your user account has."
