@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-microsoft-copilot-azure.perform-operations-tasks-copilot-azure
+title: Perform operations tasks using Microsoft Copilot in Azure
+metadata:
+  title:  Perform Operations Tasks Using Microsoft Copilot in Azure
+  description: TBD
+  ms.date: 07/03/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-perform-operations-tasks-copilot-azure.md)]
