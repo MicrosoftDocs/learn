@@ -4,7 +4,7 @@ In the following scenario, we'll use Copilot to create a data pipeline that copi
 
 The following prerequisites should be in place before you start:
 
-- Access to a Microsoft Fabric tenant account with an active subscription. [Create a free account](https://azure.microsoft.com/free/).
+- Access to a Microsoft Fabric tenant account with an active subscription. [Create an account](https://azure.microsoft.com/free/).
 - Created a Workspace with Fabric enabled: [Create a workspace](/fabric/fundamentals/create-workspaces).
 - Created a Lakehouse.
 
@@ -14,13 +14,18 @@ In this section, you'll create a connection to the NCSU (North Carolina State Un
 
 1. Select the gear icon in the top right corner of the Fabric portal.
 2. Choose **Manage connections and gateways** from the right navigation pane.
+
+   > [!div class="mx-imgBorder"]
+   > [![Screenshot of the Fabric settings with gear icon and 'manage connections and gateways highlighted'.](../media/manage-connections.png)](../media/manage-connections.png#lightbox)
+
 3. Select **New** to create a new connection.
 4. Choose **Cloud**.
 5. **Connection name**: ncsu
 6. **Connection type**: Web
-7. **URL**: https://www4.stat.ncsu.edu/%7Eboos/var.select/
+7. **URL**: https://www4.stat.ncsu.edu/~boos/var.select/
 8. **Authentication method**: Anonymous
-9. Select **Create** to create the connection and close the dialog box.
+9. **Privacy level**: Public
+10. Select **Create** to create the connection and close the dialog box.
 
 ## Ingest data
 

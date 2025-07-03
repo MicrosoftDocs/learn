@@ -2,17 +2,17 @@ Before you can use Copilot's capabilities within Microsoft Fabric, certain prere
 
 ## Configure a Fabric capacity 
 
-Copilot is currently supported in preview, in specific regions. Administrators should verify that their tenant or capacity is within a supported region. Not all regions support all Copilot features. If located outside the US or EU Data Boundary, Copilot is disabled by default.
+Copilot is currently supported in preview, in specific regions. Ensure that your organization has a Fabric capacity of F2 or higher. Copilot is enabled by default for these capacities but can be managed through the admin portal if adjustments are needed.
 
-Ensure that your organization has a Fabric capacity of F2 or higher. Copilot is enabled by default for these capacities but can be managed through the admin portal if adjustments are needed.
+> [!NOTE]
+> Copilot isn't supported for Fabric trial SKUs (Stock Keeping Units). Only paid SKUs (F2 or higher) are eligible.
 
-Administrators can manage Copilot settings via the Fabric admin portal, including enabling or disabling the feature and designating specific capacities for Copilot usage.
+Administrators can manage Copilot settings via the Fabric admin portal, including enabling or disabling the feature. This setting can be managed at both the tenant and the capacity levels. When this setting is enabled, the service may execute background jobs at no charge to the tenant capacity to support end user experiences.  
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot showing the tenant setting where copilot can be enabled and disabled.](../media/enable-copilot.png)](../media/enable-copilot.png#lightbox)
 
-> [!NOTE]
-> Copilot isn't supported for Fabric trial SKUs (Stock Keeping Units). Only paid SKUs (F2 or higher) are eligible.
+Administrators should verify that their tenant or capacity is within a supported region. Not all regions support all Copilot features. If located outside the US or EU Data Boundary, Copilot is disabled by default, but can be enabled. When this setting is enabled, data sent to Azure OpenAI can be processed outside your capacity's geographic boundary or national cloud boundary. 
 
 ## Designate a capacity as a Fabric Copilot capacity
 

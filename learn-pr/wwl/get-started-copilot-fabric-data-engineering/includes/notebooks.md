@@ -31,7 +31,7 @@ Source: EUROPOP2023 Population on January 1 by age, sex, and type of projection 
 
 The following prerequisites should be in place before you start:
 
-- Access to a Microsoft Fabric tenant account with an active subscription. [Create a free account](https://azure.microsoft.com/free/).
+- Access to a Microsoft Fabric tenant account with an active subscription. [Create an account](https://azure.microsoft.com/free/).
 - Created a Workspace with Fabric enabled: [Create a workspace](/fabric/fundamentals/create-workspaces).
 - Created a Lakehouse.
 - Created a new notebook and attach it to your Lakehouse.

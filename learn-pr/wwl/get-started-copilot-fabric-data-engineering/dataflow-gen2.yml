@@ -4,10 +4,10 @@ title: Use Copilot with Fabric dataflow gen2
 metadata:
   title: Use Copilot with Fabric Dataflow Gen2
   description: "Use Copilot with Fabric dataflow gen2"
-  ms.date: 06/03/2025
+  ms.date: 07/01/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
   [!include[](includes/dataflow-gen2.md)]
