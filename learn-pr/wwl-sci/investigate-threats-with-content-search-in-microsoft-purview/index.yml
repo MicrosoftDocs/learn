@@ -38,7 +38,6 @@ subjects:
 units:
 - learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.introduction
 - learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.view-search-results
-- learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.export-search-results
 - learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.search-delete-email-messages
 - learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.knowledge-check
 - learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.summary
