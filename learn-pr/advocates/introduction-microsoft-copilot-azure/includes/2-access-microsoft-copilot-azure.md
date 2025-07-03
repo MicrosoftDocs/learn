@@ -15,4 +15,4 @@ In addition to using the portal, you can access Microsoft Copilot in Azure throu
 - Automate complex setups
 - Gain insights into best practices
 
-[![An animated image showing interaction with Azure CLI.](../media/ai-shell-azure-agent.gif)](../media/ai-shell-azure-agent-big.gif)
+[![An animated image showing interaction with Azure CLI.](../media/ai-shell-azure-agent.gif)](../media/ai-shell-azure-agent-big.gif#lightbox)
