@@ -19,7 +19,7 @@ To ensure a smooth and controlled adoption of Copilot, organizations could initi
 For large organizations with high Copilot usage, isolating Copilot consumption from other Fabric workloads can be beneficial. By allocating a separate F64 or higher SKU exclusively for Copilot experiences, organizations ensure that Copilot activity doesn't affect business-critical workloads on other capacities. This separation provides clearer cost attribution and improved governance over Copilot-related expenses, but it also requires purchasing and managing multiple capacity SKUs, which may increase overall costs.
 
 > [!div class="mx-imgBorder"]
-> [![Copilot split capacity strategy diagram.](../media/copilot-split-capacity-strategy.svg)](../media/copilot-split-capacity-strategy.svg#lightbox)
+> [![Copilot split capacity strategy diagram.](../media/copilot-split-capacity-strategy.png)](../media/copilot-split-capacity-strategy.png#lightbox)
 
 ## Best practices for sustainable scaling
 
