@@ -7,7 +7,7 @@ In this guided project, you perform a series of tasks and actions to manage Micr
 > This project requires you to provide an Azure subscription. Leaving resources provisioned and running after completion of the exercise may result in unexpected costs. It is important to keep track of resources you create to ensure you remove them during the clean-up task.
 
 ## Setup
-The scenario for the project focuses on managing Microsoft Azure resources. You should already be familiar with tasks such as creating a virtual machine or virtual network. The **Prepare** exercise creates a basic set of Azure resources. The resources from the prepare exercise are used in the rest of the scenario.
+The scenario for the project focuses on managing Microsoft Azure resources. You should already be familiar with tasks such as creating a virtual machine or virtual network. The **Prepare** exercise creates a basic set of Azure resources. The resources from the prepared exercise are used in the rest of the scenario.
 
 During the setup, you create a virtual network, a virtual machine, a storage account, and associated resources.
 

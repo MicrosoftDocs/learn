@@ -3,7 +3,7 @@ uid: learn.wwl.guided-project-update-maintain-resources
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Guided Project – Update and maintain resources
+  title: Guided Project – Update and Maintain Resources
   description: "Update and maintain Azure resources"
   ms.date: 07/03/2025
   author: wwlpublish
@@ -33,7 +33,6 @@ prerequisites: |
 
   -   An active Microsoft Azure subscription.
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
 levels:
 - beginner
 roles:
