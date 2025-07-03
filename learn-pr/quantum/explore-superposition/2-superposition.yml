@@ -2,8 +2,6 @@
 uid: learn.quantum.explore-superposition.superposition
 title: What is superposition?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is superposition?
   description: Learn what superposition is. 
   ms.date: 01/22/2025
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-superposition.md)]
+  [!include[](includes/2-superposition.md)]

@@ -1,4 +1,4 @@
-As the lead developer for a print-framing company, you want to call an in-house, custom-built Web API from your workflow in Azure Logic Apps. The API calculates a price for a picture frame based on the dimensions of the frame. To access the API from your Azure Logic Apps workflow, you'll need to create your own connector.
+As the lead developer for a print framing company, you want to call an in-house, custom-built Web API from your workflow in Azure Logic Apps. The API calculates a price for a picture frame based on the dimensions of the frame. To access the API from your Azure Logic Apps workflow, you'll need to create your own connector.
 
 In this unit, you'll learn how to create and use custom connectors in an Azure Logic Apps workflow.
 
@@ -16,7 +16,7 @@ The Postman app requires you to provide the request URL and any necessary authen
 
 ### OpenAPI definition
 
-An OpenAPI definition file is a JSON file that lists the API's methods, parameters, and outputs. In .NET, you can create an OpenAPI file by adding the **Swashbuckle** NuGet package to your API's project. Then, add the following code below to the Web API's source code:
+An OpenAPI definition file is a JSON file that lists the API's methods, parameters, and outputs. In .NET, you can create an OpenAPI file by adding the **Swashbuckle** NuGet package to your API's project. Then, add the following code to the Web API's source code:
 
 1. In the **Startup.cs** file, add a `using` statement for Swashbuckle:
 

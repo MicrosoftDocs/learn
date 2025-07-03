@@ -2,8 +2,6 @@
 uid: learn.manage-secrets-with-azure-key-vault.4-authentication-with-managed-identities-for-azure-resources
 title: Vault authentication with managed identities for Azure resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Vault authentication with managed identities for Azure resources
   description: Vault authentication with managed identities for Azure resources
   ms.date: 12/12/2024
@@ -42,4 +40,4 @@ quiz:
     - content: Managed identities can automatically grant Azure Key Vault permissions.
       isCorrect: false
       explanation: Your app authenticates to a managed identities token service with a secret injected into its environment variables at runtime. This authentication method eliminates the need to store secrets during configuration.
-
+

@@ -1,4 +1,4 @@
-To truly realize the potential of AI, it’s essential to bring AI to every employee in ways that are relevant and meaningful to their work. Microsoft makes this possible by embedding AI in the applications people use in their everyday routine. No code or data science expertise is required because AI is delivered as just another feature of a SaaS product. The result is a wide range of intelligent applications for business users. 
+To truly realize the potential of AI, it’s essential to bring AI to every employee in ways that are relevant and meaningful to their work. Microsoft makes this possible by embedding AI in the applications people use everyday. No code or data science expertise is required because AI is delivered as just another feature of a SaaS product. The result is a wide range of intelligent applications for business users. 
 
 *Copilot* refers to AI embedded into applications. Microsoft Copilot provides a transformed experience across business functions and everyday routines. 
  
@@ -12,7 +12,7 @@ These solutions are often delivered as SaaS AI solutions, which deliver fast and
 
 |**Business function**|**Example scenario**|
 |-|-|
-|**Commerce**|Commerce users can use AI insights to help them more effectively manage cashflows using payment recommendations, intelligent budget proposals, and cashflow forecasting. They can even use AI to better protect their e-commerce business—and their customers—against fraud.|
+|**Commerce**| Users can use AI insights to help them more effectively manage cashflows using payment recommendations, intelligent budget proposals, and cashflow forecasting. They can even use AI to better protect their e-commerce business—and their customers—against fraud.|
 |**Customer service**|Customer service users can gain insights to address increasing volumes and manage efficient agent distribution. They can also create virtual agents that identify and resolve customer issues quickly—all without having to write code.|
 |**Finance**|Analysts are provided a range of AI-powered tools for real-time reporting, embedded analytics, and insights. For example, AI can predict when or whether their customers will pay their invoices.|
 |**Human Resources**|Workforce data can be transformed into actionable insights and next-best-action guidance. AI can also be used to automate HR tasks for employees, making procedures more agile.|
@@ -46,7 +46,7 @@ When you're not speaking in person, some nuances are missing and misunderstandin
 Nowadays, workers' routines are too often interrupted by distractions, calls, and multitasking. AI can also help cope with this problem and enable employees to focus their time and attention on what matters most.
 
 > [!NOTE] 
-> 68 percent of workers complain of their lack of uninterrupted focus time during their working routines.<sup>1</sup>
+> 68 percent of workers complain of their lack of uninterrupted focus time during their working routines.
 
 For instance, Microsoft 365 Copilot includes features for focus to make sure users don't forget any important issues. In OneNote, for example, it identifies unanswered questions all across existing notes and grouping them in one centralized location. In Teams, Copilot can extract action points from the conversation in real time.
 
@@ -65,7 +65,7 @@ Harnessing information has become the key to almost everything—from improving 
 AI-powered search experiences like Microsoft Search can help business users wade through this data to uncover more effective insights and make better data-driven decisions. Microsoft Search enables users to search for people, files, sites, and more across their organizational data and public web data—all from within the Microsoft 365 products they’re already working in. Results are even personalized to each user to ensure relevance. This feature is improved with Copilot.
 
 > [!NOTE] 
-> 62 percent of employees consider they spend too much time struggling to find the information they need.<sup>1</sup>
+> 62 percent of employees consider they spend too much time struggling to find the information they need.
 
 > [!TIP]
 > ![Photograph showing manager in a car using Copilot on a tablet.](../media/copilot-customer-story.jpg) \

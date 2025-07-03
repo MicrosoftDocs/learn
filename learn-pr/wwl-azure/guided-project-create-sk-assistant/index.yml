@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-create-sk-assistant
+metadata:
+  title: Guided project - Create a DevOps Assistant with the Semantic Kernel SDK
+  description: Develop a proof of concept AI DevOps assistant chatbot using the Semantic Kernel SDK.
+  ms.date: 04/28/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.service: semantic-kernel
+  ai-usage: human-only
+title: Guided project -  Create a DevOps Assistant with the Semantic Kernel SDK
+summary: This module guides you through the steps required to develop a proof-of-concept AI DevOps assistant with the Semantic Kernel SDK.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Create plugins for the Semantic Kernel.
+  - Create prompts to elicit the best responses from the large language model (LLM).
+  - Embed expressions in prompts to manually invoke functions.
+  - Automatically invoke the correct plugins to complete tasks.
+  - Apply filters to plugin functions.
+prerequisites: |
+  -   Experience programming in C#.
+  -   Familiarity with Azure and the Azure portal.
+  -   Access to Azure OpenAI services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- dotnet
+- vs-code
+- azure-openai
+units:
+- learn.wwl.guided-project-create-sk-assistant.introduction
+- learn.wwl.guided-project-create-sk-assistant.exercise
+- learn.wwl.guided-project-create-sk-assistant.knowledge-check
+- learn.wwl.guided-project-create-sk-assistant.summary
+badge:
+  uid: learn.wwl.guided-project-create-sk-assistant.badge

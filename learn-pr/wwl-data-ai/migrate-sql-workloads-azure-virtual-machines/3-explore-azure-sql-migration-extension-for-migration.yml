@@ -2,8 +2,6 @@
 uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.explore-azure-sql-migration-extension-for-migration
 title: Explore Azure SQL Migration extension for Azure Data Studio
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure SQL Migration extension for Azure Data Studio
   description: "Learn about the Azure SQL Migration extension for Azure Data Studio to simplify database migration to Azure SQL."
   ms.date: 08/02/2024
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-explore-azure-sql-migration-extension-for-migration.md)]
+  [!include[](includes/3-explore-azure-sql-migration-extension-for-migration.md)]

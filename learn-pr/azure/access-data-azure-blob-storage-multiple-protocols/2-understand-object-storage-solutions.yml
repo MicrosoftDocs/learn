@@ -2,8 +2,6 @@
 uid: learn.azure.access-data-azure-blob-storage-multiple-protocols.2-understand-object-storage-solutions
 title: Understand object storage solutions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Understand object storage solutions
   description: This unit provides an overview of object storage solutions.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-object-storage-solutions.md)]
-
+

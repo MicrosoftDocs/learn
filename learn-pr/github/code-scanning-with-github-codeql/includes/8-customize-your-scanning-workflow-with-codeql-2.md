@@ -50,7 +50,7 @@ packs:
   - scope/pack6:path/to/suite.qls
 ```
 
-The full format for specifying a query pack is `scope/name[@version][:path]`. Both `version` and `path` are optional. `version` is semver version range. If it is missing, the latest version is used. 
+The full format for specifying a query pack is `scope/name[@version][:path]`. Both `version` and `path` are optional. `version` is semver version range. If it's missing, the latest version is used.
 
 If you have a workflow that generates more than one CodeQL database, you can specify any CodeQL query packs to run in a custom configuration file using a nested map of packs.
 
@@ -107,13 +107,13 @@ If you only want to run custom queries, you can disable the default security que
 
 ## Excluding specific queries from analysis
 
-You can add `exclude` and `include` filters to your custom configuration file, to specify the queries you want to exclude or include in the analysis, such as: 
+You can add `exclude` and `include` filters to your custom configuration file, to specify the queries you want to exclude or include in the analysis, such as:
 
 * Specific queries from the default suites (`security`, `security-extended` and `security-and-quality`).
-* Specific queries whose results do not interest you.
+* Specific queries whose results don't interest you.
 * All the queries that generate warnings and recommendations.
 
-You can use `exclude` filters similar to those in the configuration the following file to exclude queries that you want to remove from the default analysis. In the example of configuration file below, both the `js/redundant-assignment` and the `js/useless-assignment-to-local` queries are excluded from analysis.
+You can use `exclude` filters similar to those in the configuration the following file to exclude queries that you want to remove from the default analysis. In the example of a configuration file that follows, both the `js/redundant-assignment` and the `js/useless-assignment-to-local` queries are excluded from analysis.
 
 ```yml
 query-filters:
@@ -122,9 +122,11 @@ query-filters:
   - exclude:
       id: js/useless-assignment-to-local
 ```
+
 To find the ID of a query, you can click the alert in the list of alerts in the Security tab. This opens the alert details page. The Rule ID field contains the query ID.
 
 Things to keep in mind when working with the `excludes` filter:
+
 * The order of the filters is important. The first filter instruction that appears after the instructions about the queries and query packs determines whether the queries are included or excluded by default.
 * Subsequent instructions are executed in order and the instructions that appear later in the file take precedence over the earlier instructions.
 
@@ -141,9 +143,9 @@ paths-ignore:
 ```
 
 > [!NOTE]
-> * The `paths` and `paths-ignore` keywords, used in the context of the code scanning configuration file, should not be confused with the same keywords when used for `on.<push|pull_request>.paths` in a workflow. When they're used to modify `on.<push|pull_request>` in a workflow, they determine whether the actions will be run when someone modifies code in the specified directories.
+> * The `paths` and `paths-ignore` keywords, used in the context of the code scanning configuration file, shouldn't be confused with the same keywords when used for `on.<push|pull_request>.paths` in a workflow. When they're used to modify `on.<push|pull_request>` in a workflow, they determine whether the actions will be run when someone modifies code in the specified directories.
 > * The filter pattern characters `?`, `+`, `[`, `]`, and `!` aren't supported and will be matched literally.
-> * `**` characters can only be at the start or end of a line, or surrounded by slashes, and you can't mix `**` and other characters. For example: `foo/**`, `**/foo`, and `foo/**/bar` are all allowed syntax, but `**foo` isn't. However ,you can use single stars along with other characters, as shown in the example. You'll need to quote anything that contains a `*` character.
+> * `**` characters can only be at the start or end of a line, or surrounded by slashes, and you can't mix `**` and other characters. For example: `foo/**`, `**/foo`, and `foo/**/bar` are all allowed syntax, but `**foo` isn't. However, you can use single stars along with other characters, as shown in the example. You'll need to quote anything that contains a `*` character.
 
 For compiled languages, if you want to limit code scanning to specific directories in your project, you must specify appropriate build steps in the workflow. The commands you need to use to exclude a directory from the build will depend on your build system.
 

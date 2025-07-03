@@ -2,8 +2,6 @@
 uid: learn.azure.network-fundamentals.network-protocols
 title: Network protocols to use when you implement a network
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title:  Network protocols to use when you implement a network
   description: Explore the network protocols to use when you implement services on a network.
   ms.date: 07/09/2024
@@ -64,4 +62,4 @@ quiz:
     - content: "For collecting and organizing information about managed devices on IP networks and for modifying that information to change device behavior."
       isCorrect: true
       explanation: "SNMP is a protocol that's used to gather and organize information on your IP network."
-
+

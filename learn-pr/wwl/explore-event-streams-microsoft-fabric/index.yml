@@ -5,7 +5,7 @@ metadata:
   description: "Microsoft Fabric Eventstreams is a technology for ingesting and transforming real-time streams of data."
   ms.date: 12/05/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jamesh
   ms.topic: module-standard-task-based
   ms.service: fabric
   ms.subservice: rti-eventstream

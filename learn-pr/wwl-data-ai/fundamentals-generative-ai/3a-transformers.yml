@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.transformers
+title: Understand how transformers advance language models   
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Understand how transformers advance language models  
+  description: Learn about the transformer architecture used in deep learning techniques for generative AI.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 07/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/3a-transformers.md)]

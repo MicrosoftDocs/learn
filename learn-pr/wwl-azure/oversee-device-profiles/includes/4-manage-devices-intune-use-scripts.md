@@ -1,4 +1,3 @@
-
 The Intune management extension lets you upload PowerShell scripts in Intune to run on Windows devices, in addition to shell scripts for the macOS. The management extension supplements mobile device management (MDM) capabilities and makes it easier for you to move to modern management.
 
 You can create scripts to run on the devices that provide the capabilities you need. For example, you can create a PowerShell script that installs a legacy Win32 app on your Windows devices, upload the script to Intune, assign the script to a Microsoft Entra group, and run the script on Windows devices. You can then monitor the run status of the script on Windows devices from start to finish.

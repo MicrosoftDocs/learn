@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-azure-compute-networking-services.domain-name-system
 title: Describe Azure DNS
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Azure DNS
   description: "Describe Azure DNS"
   ms.date: 09/20/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/12-domain-name-system.md)]
+  [!include[](includes/12-domain-name-system.md)]

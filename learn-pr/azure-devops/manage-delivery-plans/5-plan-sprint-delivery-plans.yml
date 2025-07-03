@@ -2,8 +2,6 @@
 uid: learn.azdo.manage-delivery-plans.5-plan-sprint-delivery-plans
 title: Exercise - Plan a sprint using Delivery Plans
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Plan a sprint using Delivery Plans
   description: Create a delivery plan, add teams, and optimize sprints to meet milestones.
   ms.date: 10/18/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-plan-sprint-delivery-plans.md)]
-
+

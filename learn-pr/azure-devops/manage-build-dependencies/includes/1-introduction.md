@@ -1,12 +1,12 @@
-In this module, you'll create a build pipeline that produces a package that multiple apps can use.
+In this module, you create a build pipeline that produces a package that multiple apps can use.
 
-It's likely that you've used open-source or other third-party components in your software. Using components that are popular in the community and have already been built and tested is often the fastest way to get things done.
+It's likely that you used open-source or other partner components in your software. Using components that are popular in the community and have already been built and tested is often the fastest way to get things done.
 
-You might also have your own app code that you can move into a library or package so that others can use it. This might be an open-source project, or software that only your team can access.
+You might also have your own app code that you can move into a library or package so that others can use it. This code might be an open-source project, or software that only your team can access.
 
-There are many ways to build and host your packages. The right solution depends both on the kinds of programming languages and frameworks you use and who you want to access your packages. Here, you'll continue your work with the Tailspin web team by creating a NuGet package for .NET that's hosted on Azure Artifacts.
+There are many ways to build and host your packages. The right solution depends both on the kinds of programming languages and frameworks you use and who you want to access your packages. Here, you continue your work with the Tailspin web team by creating a NuGet package for .NET that Azure Artifacts hosts.
 
-After completing this module, you'll be able to:
+After you complete this module, you'll be able to:
 
 - Create and share packages that multiple applications can use.
 - Create a build pipeline for your package and publish your package to Azure Artifacts.
@@ -17,7 +17,7 @@ After completing this module, you'll be able to:
 
 The modules in this learning path form a progression.
 
-To follow the progression from the beginning, be sure to first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
+To follow the progression from the beginning, first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
 
 We also recommend you start at the beginning of this learning path, [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true).
 
@@ -33,7 +33,7 @@ This environment lets you complete the exercises in this and future modules. You
 
 ## Meet the team
 
-You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
+You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you work with in this module.
 
 :::row:::
 

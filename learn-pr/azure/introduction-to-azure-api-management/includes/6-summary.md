@@ -1,22 +1,10 @@
-Our goal in this module was to help you evaluate whether Azure API Management is appropriate for managing and publishing your organization's APIs. To help you make that decision, we presented some criteria you can use:
+Our goal in this module was to help you evaluate whether Azure API Management is appropriate for managing and publishing your organization's APIs. To help you make that decision, we presented criteria you can use including number of APIs, rate of API changes, and API admin load.
 
-- Number of APIs
-- Rate of API changes
-- API administration load
+We applied these criteria in the context of our fictional food delivery organization. You learned that in most scenarios, Azure API Management offers improved API standardization, enhanced centralization of API operations, and tightened API security.
 
-We applied these criteria in the context of our fictional food delivery organization. The criteria helped you evaluate whether your organization's APIs would benefit from being gathered under the umbrella of Azure API Management. You learned that in most scenarios, Azure API Management offers the following benefits:
+However, you also learned that some organizations might not benefit from using Azure API Management. This is true if they have a small number of deployed APIs, mostly static APIs, or APIs requiring few policies, users, and analytics.
 
-- Improved API standardization through enabling management of multiple APIs from a single administrative interface.
-- Enhanced centralization of all API operations by bringing multiple APIs under a single administrative umbrella.
-- Tightened API security resulting from permissions, access control policies, and attack surface reduction.
-
-However, you also learned that some organizations might not benefit from using Azure API Management if they have:
-
-- A relatively small number of deployed APIs.
-- APIs that are mostly static or require few revisions.
-- APIs that require few, if any, administrative extras such as policies, users, and analytics.
-
-The *API economy*&mdash;how API usage by developers and their consumers generates important revenue streams for the companies that publish the APIs, increasingly drives today's connected world. If you want to maximize your API economy, use the criteria in this module to assess how Azure API Management can help your organization improve. Especially, its ability to adapt APIs to satisfy consumers, follow business trends, and take advantage of new opportunities. The process you went through here should give you enough information to choose the correct API lifecycle management solution for your organization.
+The API economy increasingly drives today's connected world. If you want to maximize your API economy, use the criteria in this module to assess your ability to adapt APIs to satisfy consumers, follow business trends, and take advantage of new opportunities. The process you went through here should give you enough information to choose the correct API lifecycle management solution for your organization.
 
 ## References
 

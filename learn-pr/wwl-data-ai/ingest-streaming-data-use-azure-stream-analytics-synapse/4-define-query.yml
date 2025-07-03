@@ -2,13 +2,11 @@
 uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.define-query
 title: Define a query to select, filter, and aggregate data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Define a query to select, filter, and aggregate data
   description: "Define a query to select, filter, and aggregate data"
   ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jamesh
   ms.topic: unit
 durationInMinutes: 5
 content: |

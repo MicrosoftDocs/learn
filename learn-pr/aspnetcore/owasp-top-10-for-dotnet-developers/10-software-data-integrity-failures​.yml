@@ -4,7 +4,7 @@ title: Software and data integrity failures
 metadata:
   title: Software and data integrity failures
   description: "OWASP Top 10 for .NET Developers. Software and data integrity failures."
-  ms.date: 05/31/2024
+  ms.date: 06/18/2025
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: unit
@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: "Static application security testing (SAST)."
       isCorrect: false
-      explanation: "Static analysis focuses on code prior to its deployment."
+      explanation: "Static analysis focuses on code before its deployment."
     - content: "Software Composition Analysis (SCA)."
       isCorrect: false
-      explanation: "Composition analysis focuses on code prior to its deployment."
+      explanation: "Composition analysis focuses on code before its deployment."
     - content: "Dynamic Application Security Testing (DAST)."
       isCorrect: true
       explanation: "Correct. Dynamic analysis can inspect and report on infrastructure configuration and expose its weak points."
     - content: "Chaos testing."
       isCorrect: false
-      explanation: "This is a helpful technique in reliability and disaster recovery testing, but not quite right for this situation."
+      explanation: "Chaos testing is a helpful technique in reliability and disaster recovery testing, but not the best choice for this situation."

@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.deploy-aks-cluster-to
 title: Deploy an AKS cluster to Azure Stack HCI
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy an AKS cluster to Azure Stack HCI
   description: "Deploy an AKS cluster to Azure Stack HCI"
   ms.date: 06/09/2021
@@ -27,4 +25,4 @@ quiz:
       explanation: "Correct. To install the extension, add the location of the downloaded package to the list of extension feeds within the extension manager of Windows Admin Center."
     - content: "Register Windows Admin Center with Azure."
       isCorrect: false
-      explanation: "Incorrect. Although you must register Windows Admin Center with Azure to install the AKS cluster on Azure Stack HCI, the registration does not play any role in installing the AKS extension for Windows Admin Center."
+      explanation: "Incorrect. Although you must register Windows Admin Center with Azure to install the AKS cluster on Azure Stack HCI, the registration does not play any role in installing the AKS extension for Windows Admin Center."

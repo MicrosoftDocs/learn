@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-roles-responsibilities-world-of-data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore data roles and services
   description: "This content is a part of Explore data roles and services."
-  ms.date: 10/09/2024
+  ms.date: 06/20/2025
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: calopez
   ms.topic: module
   ms.collection: N/A
   ms.custom:

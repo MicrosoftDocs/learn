@@ -2,8 +2,6 @@
 uid: learn.create-dashboards-azure-data-explorer.exercise-create-dashboard-from-query
 title: "Exercise: Create a dashboard from a query"
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: "Exercise: Create a dashboard from a query"
   description: "In this unit you create a dashboard directly from a query in Azure Data Explorer web UI."
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-exercise-create-dashboard-from-query.md)]
+  [!include[](includes/4-exercise-create-dashboard-from-query.md)]

@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ediscovery-search
+metadata:
+  title: Search for content with Microsoft Purview eDiscovery
+  description: Use Microsoft Purview eDiscovery to search for content across Microsoft 365. This module covers how to configure cases, define search criteria, and locate messages, files, and other organizational data.
+  ms.date: 04/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+title: Search for content with Microsoft Purview eDiscovery
+summary: |
+  Use Microsoft Purview eDiscovery to search for content across Microsoft 365. This module covers how to configure cases, define search criteria, and locate messages, files, and other organizational data.
+abstract: |
+  In this module you learn how to:
+  - Assign the roles and permissions to access Microsoft Purview eDiscovery
+  - Create and manage cases used to run eDiscovery searches
+  - Define search scope and build queries using conditions, keywords, and Copilot-generated prompts
+  - Run searches and validate results using statistics or random samples
+prerequisites: |
+  - Familiarity with Microsoft 365 workloads such as Exchange, SharePoint, and Teams
+  - Basic understanding of Microsoft Purview portal
+  - Knowledge of access control in Microsoft 365
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- auditor
+- ip-admin
+products:
+- m365
+- microsoft-purview
+subjects:
+- information-protection-governance
+- compliance
+- security
+units:
+- learn.wwl.purview-ediscovery-search.introduction
+- learn.wwl.purview-ediscovery-search.understand-ediscovery
+- learn.wwl.purview-ediscovery-search.ediscovery-prerequisites
+- learn.wwl.purview-ediscovery-search.create-ediscovery-search
+- learn.wwl.purview-ediscovery-search.conduct-ediscovery-search
+- learn.wwl.purview-ediscovery-search.export-results
+- learn.wwl.purview-ediscovery-search.knowledge-check
+- learn.wwl.purview-ediscovery-search.summary
+badge:
+  uid: learn.wwl.purview-ediscovery-search.badge

@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-azure-route-server.4-how-azure-route-server-works
 title: How does Azure Route Server work?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: How does Azure Route Server work?
   description: This unit describes the key features of Azure Route Server and provides an overview of how it works.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-how-azure-route-server-works.md)]
-
+

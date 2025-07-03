@@ -134,6 +134,54 @@ public class Library
 
 Now, the `Library` class can work with any object that implements the `IBorrowable` interface, making it more flexible and easier to extend.
 
+## Using Dependency Injection
+
+Imagine you’re setting up a home entertainment system. Instead of permanently attaching a specific brand of speakers to your stereo, you use speaker "jacks" that can accept multiple types of compatible speaker plugs. This design allows you to easily replace or upgrade the speakers without having to change the entire stereo system.
+
+In software, **Dependency Injection** works similarly. It allows a class to depend on an abstract interface rather than a specific implementation. Dependency Injection makes the system more flexible and easier to maintain because you can "plug in" different implementations without modifying the class itself.
+
+The **constructor** in programming is like the technician connecting the speaker jacks during the setup of your stereo system. For the `Library` class, the constructor (`public Library(IBorrowable item)`) is where the dependency is provided. The constructor allows the `Library` class to work with any compatible implementation, such as `BorrowableBook` or `BorrowableDVD`, without needing to change its internal structure. Just as the speaker jack enables flexibility in choosing different speakers, the constructor facilitates flexibility in using various borrowable items.
+
+Here’s how it works in code:
+
+```csharp
+public class Library
+{
+    private IBorrowable _item;
+
+    public Library(IBorrowable item) // Dependency is injected here
+    {
+        _item = item;
+    }
+
+    public void BorrowItem()
+    {
+        if (_item.IsAvailable)
+        {
+            _item.Borrow();
+        }
+        else
+        {
+            Console.WriteLine("The item is not available.");
+        }
+    }
+}
+```
+
+In this example:
+
+- The **constructor** is where the "connection" (the `IBorrowable` dependency) is made, similar to how the speaker plug connects to the "jack."
+- The `IBorrowable` interface acts like the "stereo jack," defining the standard connection point.
+- The `BorrowableBook` and `BorrowableDVD` are like different types of stereo speakers with unique connectors that get connected to the "jack."
+
+By using Dependency Injection, the `Library` class can work with any implementation of `IBorrowable`. This approach provides:
+
+- **Flexibility**: You can easily switch or add new implementations without modifying the `Library` class.
+- **Testability**: You can "plug in" mock implementations for testing purposes.
+- **Maintainability**: The `Library` class doesn’t need to know the details of the specific implementation, making it easier to extend and maintain.
+
+This design ensures that the `Library` class is no longer tightly coupled to specific implementations, making the system more modular and adaptable.
+
 ## Adding new borrowable items
 
 With the interface in place, we can easily add new types of borrowable items without modifying the `Library` class. For example, here’s a `BorrowableDVD` class:

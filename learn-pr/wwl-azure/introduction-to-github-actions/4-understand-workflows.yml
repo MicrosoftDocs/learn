@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-github-actions.understand-workflows
 title: Understand Workflows
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand Workflows
   description: "Understand Workflows"
   ms.date: 05/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-understand-workflows.md)]
+  [!include[](includes/4-understand-workflows.md)]

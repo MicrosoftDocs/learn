@@ -1,0 +1,26 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-databases.postgresql.basic-sql-where-clause-subqueries.where-clause
+title: WHERE Clause
+metadata:
+  title: WHERE Clause
+  description: "This unit teaches how to use the WHERE clause in PostgreSQL to filter data using conditions, logical operators, pattern matching, ranges, and null checks"
+  ms.date: 05/23/2025
+  author: milenak
+  ms.author: mpopovic
+  ms.topic: unit
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from
+### the ms.service allowlist.
+###
+### If your content isn't about a product or service, you can omit the ms.service field.
+###
+### For the list of approved ms.service values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice.
+###
+### To request new values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
+
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-where-clause.md)]

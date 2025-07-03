@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-understand-retention.retention-labels-retention-policies
+title: Understand retention labels and retention policies
+metadata:
+  title: Understand retention labels and retention policies
+  description: "Understand retention labels and retention policies."
+  ms.date: 04/11/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/retention-labels-retention-policies.md)]

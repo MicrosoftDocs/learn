@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-key-vault-networking-settings
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure Azure Key Vault networking settings
   description: "Learn to configure Azure Key Vault networking settings via the Azure portal, enabling secure access control to your vault, protecting sensitive keys and secrets."
   ms.date: 10/24/2024
@@ -54,4 +52,4 @@ units:
 - learn.wwl.configure-azure-key-vault-networking-settings.knowledge-check
 - learn.wwl.configure-azure-key-vault-networking-settings.summary
 badge:
-  uid: learn.wwl.configure-azure-key-vault-networking-settings.badge
+  uid: learn.wwl.configure-azure-key-vault-networking-settings.badge

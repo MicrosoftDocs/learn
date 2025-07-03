@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.data-ai.introduction-to-azure-data-lake-storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure Data Lake Storage Gen2
   description: "Discover how Data Lake Storage provides a repository where you can upload and store unstructured data bringing new efficiencies to processing big data analytics."
   ms.date: 07/18/2023
@@ -41,4 +39,4 @@ units:
 - learn.data-ai.introduction-to-azure-data-lake-storage.knowledge-check
 - learn.data-ai-introduction-to-azure-data-lake-storage.summary
 badge:
-  uid: learn.data-ai-introduction-to-azure-data-lake-storage.badge
+  uid: learn.data-ai-introduction-to-azure-data-lake-storage.badge

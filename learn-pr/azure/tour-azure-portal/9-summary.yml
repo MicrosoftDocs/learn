@@ -2,8 +2,6 @@
 uid: learn.tour-azure-portal-features.9-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 01/17/2025
@@ -52,4 +50,4 @@ quiz:
     - content: HTML
       isCorrect: false
       explanation: "Azure dashboards aren't stored as HTML files."
-
+

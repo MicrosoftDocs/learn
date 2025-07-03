@@ -2,8 +2,6 @@
 uid: learn.azdo.assess-your-development-process.4-assess-process-efficiency
 title: Assess process efficiency with value stream maps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Assess process efficiency with value stream maps
   description: See how the team performs against a value-stream-mapping exercise.
   ms.date: 10/07/2024
@@ -40,4 +38,4 @@ quiz:
     - content: "Waste is time spent on tasks that don't have direct customer value."
       isCorrect: true
       explanation: "Waste is time spent on tasks that don't have direct customer value. For example, setting up source control. It's an important task, but it doesn't have direct customer value."
-
+

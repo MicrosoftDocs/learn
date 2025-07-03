@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-git-repositories.explore-monorepo-versus-multiple-repos
 title: Explore monorepo versus multiple repos
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore monorepo versus multiple repos
   description: "Explore monorepo versus multiple repos"
   ms.date: 05/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-explore-monorepo-versus-multiple-repos.md)]
+  [!include[](includes/3-explore-monorepo-versus-multiple-repos.md)]

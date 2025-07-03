@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-deploy-administer-linux-virtual-machines-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 07/30/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -48,4 +47,4 @@ quiz:
       explanation: "Correct. The Storage Blob Data Contributor role provides read, write, and delete permissions."
     - content: "Storage Blob Delegator."
       isCorrect: false
-      explanation: "Incorrect. The Storage Blob Delegator role provides a user delegation key, which can then be used to create a shared access signature."
+      explanation: "Incorrect. The Storage Blob Delegator role provides a user delegation key, which can then be used to create a shared access signature."

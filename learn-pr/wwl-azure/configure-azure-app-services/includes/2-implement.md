@@ -1,8 +1,10 @@
-Azure App Service brings together everything you need to create websites, mobile backends, and web APIs for any platform or device. Applications run and scale with ease in both Windows and Linux-based environments.
+[Azure App Service](/azure/app-service/overview) brings together everything you need to create websites, mobile backends, and web APIs for any platform or device. Applications run and scale with ease in both Windows and Linux-based environments.
 
-App Service provides Quickstarts for several products to help you easily create and deploy your Windows and Linux apps:
+This video covers an App Service features overview and the basics of creating an app service.
 
-:::image type="content" source="../media/web-quickstarts-c154c8e4.png" alt-text="Illustration that shows products for which you can use an App Service quickstart to develop and deploy your web, mobile, and API apps." border="false":::
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8ea7ab2d-9e29-4b5a-916d-307100c16bf9]
+
+App Service provides Quickstarts for programming languages. These languages include: ASP.NET, Java, Node.js, Python, and PHP. 
 
 ### App Service benefits
 
@@ -10,7 +12,7 @@ There are many advantages to using App Service to develop and deploy your web, m
 
 | Benefit | Description |
 | --- | --- |
-| **Multiple languages and frameworks** | App Service has first-class support for ASP.NET, Java, Ruby, Node.js, PHP, and Python. You can also run PowerShell and other scripts or executables as background services. |
+| **Multiple languages and frameworks** | App Service has first-class support for ASP.NET, Java, Node.js, PHP, and Python. You can also run PowerShell and other scripts or executables as background services. |
 | **DevOps optimization** | App Service supports continuous integration and deployment with Azure DevOps, GitHub, BitBucket, Docker Hub, and Azure Container Registry. You can promote updates through test and staging environments. Manage your apps in App Service by using Azure PowerShell or the cross-platform command-line interface (CLI). |
 | **Global scale with high availability** | App Service helps you scale up or out manually or automatically. You can host your apps anywhere within the Microsoft global datacenter infrastructure, and the App Service SLA offers high availability. |
 | **Connections to SaaS platforms and on-premises data** | App Service lets you choose from more than 50 connectors for enterprise systems (such as SAP), SaaS services (such as Salesforce), and internet services (such as Facebook). You can access on-premises data by using Hybrid Connections and Azure Virtual Networks. |

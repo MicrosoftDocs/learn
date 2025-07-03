@@ -2,12 +2,10 @@
 uid: learn.azure.introduction-to-azure-api-management.how-azure-api-management-works
 title: How Azure API Management works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: How Azure API Management Works
   description: Learn how Azure API Management works for API consumers, API providers, and app developers
-  ms.date: 04/07/2023
+  ms.date: 04/21/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit

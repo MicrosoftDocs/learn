@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-hybrid-file-server-infrastructure.describe-azure-file-services
 title: Describe Azure File services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Azure File services
   description: "Describe Azure File services"
   ms.date: 01/01/2025
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 15
 content: |
-  [!include[](includes/2-describe-azure-file-services.md)]
+  [!include[](includes/2-describe-azure-file-services.md)]

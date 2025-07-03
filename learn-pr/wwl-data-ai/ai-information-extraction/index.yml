@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.ai-information-extraction
+metadata:
+  title: Get started with AI-powered information extraction in Azure
+  description: AI gives you the power to unlock insights from your data. In this module, you'll learn how to use Azure AI services to extract information from content.
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 05/11/2025
+  ai-usage: ai-assisted
+  ms.service: azure-ai-services
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: Get started with AI-powered information extraction in Azure
+summary: AI gives you the power to unlock insights from your data. In this module, you'll learn how to use Azure AI services to extract information from content.
+abstract: |
+  After completing this module, you'll be able to:
+  - Identify Azure AI services for information extraction
+  - Describe Azure AI Vision information extraction capabilities
+  - Describe Azure AI Content Understanding information extraction capabilities
+  - Describe Azure AI Document Intelligence information extraction capabilities
+  - Describe Azure AI Search information extraction capabilities
+prerequisites: |
+  Before starting this module, you should already have:
+  - Familiarity with Azure
+  - Some knowledge of AI concepts
+iconUrl: /training/achievements/azure-introduction-to-azure-search.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+products:
+- ai-services
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.ai-information-extraction.introduction
+- learn.wwl.ai-information-extraction.azure-ai-services
+- learn.wwl.ai-information-extraction.azure-ai-vision
+- learn.wwl.ai-information-extraction.content-understanding
+- learn.wwl.ai-information-extraction.document-intelligence
+- learn.wwl.ai-information-extraction.ai-search
+- learn.wwl.ai-information-extraction.exercise
+- learn.wwl.ai-information-extraction.knowledge-check
+- learn.wwl.ai-information-extraction.summary
+# This is the badge for the module.
+badge:
+  uid: learn.wwl.ai-information-extraction.badge
+

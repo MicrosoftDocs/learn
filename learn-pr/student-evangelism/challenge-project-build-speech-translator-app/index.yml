@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.challenge-project-build-speech-translator-app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Challenge project - Build a speech translator app
   description: Learn how to build a speech translation app by using Microsoft Power Apps and integrate it with AI.
   author: theoyinbooke
@@ -54,4 +52,4 @@ units:
 - learn.student-evangelism.challenge-project-build-speech-translator-app.summary
 badge:
   uid: learn.student-evangelism.challenge-project-build-speech-translator-app.badge
-
+

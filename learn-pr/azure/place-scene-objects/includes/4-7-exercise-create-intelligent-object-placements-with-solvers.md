@@ -70,7 +70,7 @@ Use the Tap To Place solver to reposition objects. Here's how:
 
     :::image type="content" source="../media/configure-start-event.png" alt-text="Screenshot that shows the Tap To Place On Placing Started event configured." lightbox="../media/configure-start-event.png":::
 
-1. In **Hierarchy**, right-click on an empty spot. Select **3D Object** > **Cube** to create a temporary object representing the ground, and configure the **Transform** component as follows:
+1. In **Hierarchy**, right-click an empty spot. Select **3D Object** > **Cube** to create a temporary object representing the ground, and configure the **Transform** component as follows:
 
     * **Position**: X = 0, Y = 0.15, Z = 6
     * **Rotation**: X = 0, Y = 0, Z = 0
@@ -78,7 +78,7 @@ Use the Tap To Place solver to reposition objects. Here's how:
 
     :::image type="content" source="../media/position-ground-cube.png" alt-text="Screenshot that shows the temporary ground Cube object added and positioned." lightbox="../media/position-ground-cube.png":::
 
-1. To enter **Game** mode, press **Play**. Then press and hold the right mouse button while moving your mouse down, until the gaze hits the **RoverAssembly** object.
+1. To enter **Game** mode, press **Play**, then press and hold the right mouse button while moving your mouse down, until the gaze hits the **RoverAssembly** object.
 
     :::image type="content" source="../media/gaze-hit-rover-assembly.png" alt-text="Screenshot that shows the Play mode split view, with gaze hitting the RoverAssembly object." lightbox="../media/gaze-hit-rover-assembly.png":::
 
@@ -90,6 +90,6 @@ Use the Tap To Place solver to reposition objects. Here's how:
 
     :::image type="content" source="../media/split-view-end.png" alt-text="Screenshot that shows the Play mode split view, with placing ended." lightbox="../media/split-view-end.png":::
 
-1. When you're done testing the feature in **Game** mode, right-click on the Cube object, and select **Delete** to remove it from the scene.
+1. When you're done testing the feature in **Game** mode, right-click the Cube object and select **Delete** to remove it from the scene.
 
     :::image type="content" source="../media/delete-temporary-ground-cube.png" alt-text="Screenshot that shows how to delete the temporary ground Cube." lightbox="../media/delete-temporary-ground-cube.png":::

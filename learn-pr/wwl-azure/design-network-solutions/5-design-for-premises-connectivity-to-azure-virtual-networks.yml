@@ -2,9 +2,11 @@
 uid: learn.wwl.design-network-solutions.design-for-premises-connectivity-to-azure-virtual-networks
 title: Design for on-premises connectivity to Azure Virtual Network
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for on-premises connectivity to Azure Virtual Network
   description: "Design for on-premises connectivity to Azure Virtual Network"
-  ms.date: 12/09/2024
+  ms.date: 05/13/2025
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit

@@ -2,9 +2,9 @@
 uid: learn.azure.open-ai-dotnet-text-completions.6-exercise-improve-completion-quality
 title: Exercise - Improve completion quality
 metadata:
-  title: Use prompt engineering to improve the text completion result quality
+  title: Use Prompt Engineering to Improve the Text Completion Result Quality
   description: Use prompt engineering to improve the text completion result quality
-  ms.date: 08/29/2024
+  ms.date: 04/01/2025
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit

@@ -3,8 +3,6 @@ uid: learn.azure.share-bicep-modules-using-private-registries.exercise-create-re
 title: Exercise - Create a registry
 sandbox: true
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Create a registry
   description: Create an Azure container registry and publish a Bicep module to it, and then consume the module in a deployment.
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/3-exercise-create-registry.md)]
-
+

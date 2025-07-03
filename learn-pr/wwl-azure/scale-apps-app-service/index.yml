@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.scale-apps-app-service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Scale apps in Azure App Service
   description: "Scale apps in Azure App Service"
   ms.date: 02/12/2025

@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.knowledge-check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
-  ms.date: 04/04/2024
+  ms.date: 05/09/2025
   author: lauradolan
   ms.author: jushiman
   ms.topic: unit
-title: Knowledge check
+  module_assessment: true
+title: Module assessment
 durationInMinutes: 4
 quiz:
   title: Check your knowledge

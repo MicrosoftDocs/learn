@@ -2,12 +2,10 @@
 uid: learn.wwl.evaluate-performance-improvements.describe-wait-statistics
 title: Describe wait statistics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe wait statistics
   description: "Describe wait statistics"
-  ms.date: 07/13/2022
-  author: wwlpublish
+  ms.date: 03/31/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false

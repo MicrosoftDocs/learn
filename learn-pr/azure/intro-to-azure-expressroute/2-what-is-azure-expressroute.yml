@@ -2,11 +2,9 @@
 uid: learn.azure.intro-to-azure-expressroute.what-is-azure-expressroute
 title: What is Azure ExpressRoute?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure ExpressRoute?
   description: Learn what Azure ExpressRoute does and how your organization can use it.
-  ms.date: 12/22/2023
+  ms.date: 04/30/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates

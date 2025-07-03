@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.store-retrieve-json-files.get-started-javascript-object-notation
+title: Get started with JavaScript Object Notation
+metadata:
+  title: Get started with JavaScript Object Notation
+  description: "Get started with JavaScript Object Notation"
+  ms.date: 04/08/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-get-started-javascript-object-notation.md)]

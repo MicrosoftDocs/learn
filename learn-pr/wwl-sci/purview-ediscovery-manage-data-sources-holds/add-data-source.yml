@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-manage-data-sources-holds.add-data-source
+title: Select and manage data sources
+metadata:
+  title: Select and manage data sources
+  description: "Select and manage data sources"
+  ms.date: 05/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/add-data-source.md)]

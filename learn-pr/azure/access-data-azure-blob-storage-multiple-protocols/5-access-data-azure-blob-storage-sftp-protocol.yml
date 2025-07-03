@@ -2,8 +2,6 @@
 uid: learn.azure.access-data-azure-blob-storage-multiple-protocols.5-access-data-azure-blob-storage-sftp-protocol
 title: Access data from Azure Blob Storage by using the SFTP protocol
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Access data from Azure Blob Storage by using the SFTP protocol.
   description: This unit describes how Azure Blob Storage supports data access by using the SFTP protocol.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/5-access-data-azure-blob-storage-sftp-protocol.md)]
-
+

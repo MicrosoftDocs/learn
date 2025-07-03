@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-content-ai-api.prepare-content-understanding
+title: Prepare to use the AI Content Understanding REST API
+metadata:
+  title: Prepare to use the AI Content Understanding REST API
+  description: Before you can use the REST API, you must prepare your Azure resource.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 05/15/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/02-prepare-content-understanding.md)]
+

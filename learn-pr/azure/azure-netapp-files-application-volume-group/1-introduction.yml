@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-application-volume-group.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Introductory unit of the Using Azure NetApp Files application volume group module.
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

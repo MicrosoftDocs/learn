@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-translator.what-is-translator
 title: What is Translator?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Translator?
   description: What is Translator?
   author: laujan
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!INCLUDE[](includes/2-what-is-translator.md)]
-
+

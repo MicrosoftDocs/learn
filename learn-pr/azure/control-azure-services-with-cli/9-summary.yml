@@ -2,8 +2,6 @@
 uid: learn.control-azure-services-with-cli.9-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 01/09/2025
@@ -48,4 +46,4 @@ quiz:
       explanation: "You need both a shell environment, such as Linux, PowerShell or CMD, and the Azure CLI tool."
     - content: "The Azure CLI and PowerShell"
       isCorrect: false
-      explanation: "The Azure CLI runs in many environments including Windows PowerShell and PowerShell 7. However, PowerShell is not required to run the Azure CLI. You can run the Azure CLI in macOS, many Linux environments, Docker Containers, and Azure Cloud Shell. PowerShell is just one of many options."
+      explanation: "The Azure CLI runs in many environments including Windows PowerShell and PowerShell 7. However, PowerShell is not required to run the Azure CLI. You can run the Azure CLI in macOS, many Linux environments, Docker Containers, and Azure Cloud Shell. PowerShell is just one of many options."

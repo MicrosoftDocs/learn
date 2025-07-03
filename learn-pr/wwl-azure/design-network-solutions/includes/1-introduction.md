@@ -1,4 +1,4 @@
-Azure Architects need to design and recommend network solutions. Global organizations are seeking cloud-based solutions to improve their business and foster growth into new markets. They need solutions that can offer robust and reliable user experiences in a global environment.
+Azure Architects need to design and recommend AI-ready network solutions. Global organizations are seeking cloud-based solutions to improve their business and foster growth into new markets. They need solutions that can offer robust and reliable user experiences in a global environment.
 
 ## Meet Tailwind Traders
 
@@ -12,7 +12,7 @@ As a member of the enterprise IT team, you're helping to define the strategy to 
 
 In this module, you learn how to:
 
-- Recommend a network architecture solution based on workload requirements.
+- Recommend an AI-ready network architecture solution based on workload requirements.
 
 - Design for on-premises connectivity to Azure Virtual Network.
 

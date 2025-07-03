@@ -1,12 +1,10 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-data-explorer 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Introduction to Azure Data Explorer          
   description: "Evaluate whether Azure Data Explorer is appropriate to process and analyze your big data."                 # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 08/21/2023
+  ms.date: 04/24/2025
   author: shsagir      
   ms.author: shsagir           
   ms.topic: module-intro-to-product

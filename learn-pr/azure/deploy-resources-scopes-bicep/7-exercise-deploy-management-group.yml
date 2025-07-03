@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-resources-different-scopes.exercise-deploy-management-groups
 title: Exercise - Deploy resources to a management group
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Deploy resources to a management group
   description: Learn how to create a Bicep file that deploys your resources to a management group.
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/7-exercise-deploy-management-group.md)]
-
+

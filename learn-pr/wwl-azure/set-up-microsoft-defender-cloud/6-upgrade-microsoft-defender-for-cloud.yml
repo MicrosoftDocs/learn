@@ -2,8 +2,6 @@
 uid: learn.wwl.set-up-microsoft-defender-cloud.upgrade-microsoft-defender-for-cloud
 title: Exercise - Enable Defender for Cloud on your Azure subscription
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Enable Defender for Cloud on your Azure subscription
   description: "Exercise - Enable Defender for Cloud on your Azure subscription"
   ms.date: 04/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 31
 content: |
-  [!include[](includes/6-upgrade-microsoft-defender-for-cloud.md)]
+  [!include[](includes/6-upgrade-microsoft-defender-for-cloud.md)]

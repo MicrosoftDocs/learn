@@ -2,22 +2,22 @@
 uid: learn.fabric-data-governance-purview
 metadata:
   title: Govern data in Microsoft Fabric with Purview
-  description: "Learn how Microsoft Purview enables the highest level of data governance for your Microsoft Fabric data lakes. Ensure that data is both tightly controlled and highly available for compliant analysis."
-  ms.date: 9/25/2024
-  author: angierudduck
-  ms.author: anrudduc
+  description: "Learn how Microsoft Purview enables the comprehensive data governance for your Microsoft Fabric data lakes. Ensure that data is both tightly controlled and highly available for compliant analysis."
+  ms.date: 06/11/2025
+  author: theresa-i
+  ms.author: theresai
   ms.service: fabric
   ms.topic: module
-  ms.collection: wwl-ai-copilot
+  ms.collection: 
   ai-usage: ai-assisted
 title: Govern data in Microsoft Fabric with Purview
-summary: "Learn how Microsoft Purview enables the highest level of data governance for your Microsoft Fabric data lakes. Ensure that data is both tightly controlled and highly available for compliant analysis."
+summary: "Learn how Microsoft Purview enables the comprehensive data governance for your Microsoft Fabric data lakes. Ensure that data is both tightly controlled and highly available for compliant analysis."
 abstract: |
   By the end of this module, you'll be able to:
-    - Describe the data governance features Microsoft Fabric includes before adding Microsoft Purview.
-    - Justify the addition of Microsoft Purview for robust data governance and protection.
+    - Describe the built-in data governance features of Microsoft Fabric.
+    - Justify adding Microsoft Purview for robust data governance and protection.
     - Connect Microsoft Purview to Microsoft Fabric.
-    - Investigate Microsoft Fabric data in the Microsoft Purview hub.
+    - Analyze Microsoft Fabric data in the Microsoft Purview hub.
 prerequisites: |
   - Familiarity with the Microsoft Fabric user interface and core concepts.
 iconUrl: /learn/achievements/generic-badge.svg

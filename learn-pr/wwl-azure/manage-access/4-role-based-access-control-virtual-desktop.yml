@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-access.rbac-for-azure-virtual-desktop
 title: Role-based access control (RBAC) for Azure Virtual Desktop
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Role-based access control (RBAC) for Azure Virtual Desktop
   description: "Role-based access control (RBAC) for Azure Virtual Desktop"
   ms.date: 08/20/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-role-based-access-control-virtual-desktop.md)]
+  [!include[](includes/4-role-based-access-control-virtual-desktop.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-generative-ai-audio-apps.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Reflect on what you've learned about audio-enabled generative AI models."
+  ms.date: 05/6/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

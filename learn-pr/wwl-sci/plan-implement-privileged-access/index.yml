@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-implement-privileged-access
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan and implement privileged access
   description: "Ensuring that administrative roles are protected and managed to increase your Azure solution security is a must. Explore how to use PIM to protect your data and resources."
   ms.date: 10/23/2023
@@ -50,4 +48,4 @@ units:
 - learn.wwl.plan-implement-privileged-access.knowledge-check
 - learn.wwl.plan-implement-privileged-access.summary-resources
 badge:
-  uid: learn.wwl.plan-implement-privileged-access.badge
+  uid: learn.wwl.plan-implement-privileged-access.badge

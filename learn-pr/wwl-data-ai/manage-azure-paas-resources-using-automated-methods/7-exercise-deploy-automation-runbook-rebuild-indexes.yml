@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-paas-resources-using-automated-methods.exercise-deploy-automation-runbook-rebuild-indexes
 title: 'Exercise: Deploy an automation runbook to automatically rebuild indexes'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Deploy an automation runbook to automatically rebuild indexes'
   description: "Exercise: Deploy an automation runbook to automatically rebuild indexes"
   ms.date: 02/27/2025
@@ -15,4 +13,4 @@ labId: 120596
 labModal: true
 durationInMinutes: 15
 content: |
-  [!include[](includes/7-exercise-deploy-automation-runbook-rebuild-indexes.md)]
+  [!include[](includes/7-exercise-deploy-automation-runbook-rebuild-indexes.md)]

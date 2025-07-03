@@ -2,8 +2,6 @@
 uid: learn.autoscale-java-azure.autoscale-monitoring
 title: Autoscaling monitoring
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Autoscaling monitoring
   description: We discuss autoscaling monitoring concepts
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-autoscale-monitoring.md)]
-
+

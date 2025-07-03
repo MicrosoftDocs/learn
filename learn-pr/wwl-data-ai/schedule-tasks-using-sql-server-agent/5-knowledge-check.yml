@@ -2,8 +2,6 @@
 uid: learn.wwl.schedule-tasks-using-sql-server-agent.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 02/26/2025
@@ -61,4 +59,4 @@ quiz:
       explanation: "Correct. The maintenance cleanup task provides the option to remove old files related to maintenance plans."
     - content: "Execute SQL Server agent job task"
       isCorrect: false
-      explanation: "Incorrect. The execute SQL Server agent job task doesn't remove old files related to maintenance plans."
+      explanation: "Incorrect. The execute SQL Server agent job task doesn't remove old files related to maintenance plans."

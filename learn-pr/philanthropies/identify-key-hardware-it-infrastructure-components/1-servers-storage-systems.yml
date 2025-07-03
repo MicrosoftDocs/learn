@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.identify-key-hardware-and-it-infrastructure-components.servers-storage-systems
+title: Servers and storage systems
+metadata:
+  title: Servers and Storage Systems
+  description: This content is a part of the "Identify key hardware and IT infrastructure components of datacenters" module.
+  ms.date: 05/10/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+ [!include[](includes/1-servers-storage-systems.md)]

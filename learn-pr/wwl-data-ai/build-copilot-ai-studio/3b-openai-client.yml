@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-copilot-ai-studio.openai-client
+title: Create a RAG-based client application
+metadata:
+  title: Create a RAG-based client application
+  description: Learn how to use the Azure OpenAI SDK to create a RAG client.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 05/23/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  zone_pivot_groups: dev-lang-csharp-python
+durationInMinutes: 7
+content: |
+  [!include[](includes/3b-openai-client.md)]
+

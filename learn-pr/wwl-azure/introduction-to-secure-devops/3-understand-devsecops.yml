@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-secure-devops.understand-devsecops
 title: Understand DevSecOps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand DevSecOps
   description: "Understand DevSecOps"
   ms.date: 05/22/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-understand-devsecops.md)]
+  [!include[](includes/3-understand-devsecops.md)]

@@ -9,11 +9,11 @@ Until now, you've focused on what service principals are and how they can be use
 After Microsoft Entra ID has authenticated a service principal, the next question becomes: what can this service principal do? This is the concept of _authorization_. It's the responsibility of the Azure role-based access control (RBAC) system, sometimes called identity and access management (IAM). By using Azure RBAC, you can grant a service principal access to a specific resource group, subscription, or management group.
 
 > [!NOTE]
-> Everything you're doing here is using the Azure RBAC system to grant access to create and manage Azure resources, like your storage accounts, App Service plan, and virtual networks. Microsoft Entra ID also has its own role system, which is sometimes called _directory roles_. You use these roles to grant permissions for service principals to manage Microsoft Entra ID. This module doesn't discuss this subject in depth, but be aware that the term _role_ can be used for both situations in some documentation.
+> Here, everything you're doing is using the Azure RBAC system to grant access to create and manage Azure resources, like your storage accounts, App Service plan, and virtual networks. Microsoft Entra ID also has its own role system, which is sometimes called _directory roles_. You use these roles to grant permissions for service principals to manage Microsoft Entra ID. This module doesn't discuss this subject in depth, but be aware that the term _role_ can be used for both situations in some documentation.
 
 ## Select the right role assignment for your pipeline
 
-A role assignment has three key parts: who the role is assigned to (the *assignee*), what they can do (the *role*), and what resource or resources the role assignment applies to (the *scope*).
+A role assignment has three key parts: who the role is assigned to (the _assignee_), what they can do (the _role_), and what resource or resources the role assignment applies to (the _scope_).
 
 ### Assignee
 
@@ -23,9 +23,9 @@ When you work with a service principal, you assign roles for that service princi
 
 It can be a little more work to figure out which role to assign. In Azure, there are a few common roles:
 
-- *Reader*, which allows the assignee to read information about resources but not modify or delete them.
-- *Contributor*, which allows the assignee to create resources, and to read and modify existing resources. However, contributors can't grant other principals access to resources.
-- *Owner*, which allows full control over resources, including granting other principals access.
+- _Reader_, which allows the assignee to read information about resources but not modify or delete them.
+- _Contributor_, which allows the assignee to create resources and to read and modify existing resources. However, contributors can't grant other principals access to resources.
+- _Owner_, which allows full control over resources, including granting other principals access.
 
 > [!CAUTION]
 > You should only grant service principals the minimum permissions that they need to do their jobs. Most of the time, the Owner role is too permissive for a deployment pipeline.
@@ -50,12 +50,12 @@ Remember that role assignments are inherited. If you assign a role at a subscrip
 Now that you understand the components of a role assignment, you can decide the appropriate values for your scenarios. Here are some general guidelines to consider:
 
 > [!div class="checklist"]
-> * Use the least permissive role that you can. If your pipeline is only going to deploy basic Bicep templates and won't manage role assignments, don't use the Owner role.
-> * Use the narrowest scope that you can. Most pipelines only need to deploy resources to a resource group, so they shouldn't be given subscription-scoped role assignments.
-> * For many pipelines, a good default option for a role assignment is the Contributor role on the resource group scope.
-> * Consider everything your pipeline does, and everything it might do in the future. For example, you might consider creating a custom role definition for your website's deployment pipeline and only grant permissions for App Service and Application Insights. Next month, you might need to add an Azure Cosmos DB account to your Bicep file, but the custom role will block Azure Cosmos DB resources from being created. 
+> - Use the least permissive role that you can. If your pipeline is only going to deploy basic Bicep templates and won't manage role assignments, don't use the Owner role.
+> - Use the narrowest scope that you can. Most pipelines only need to deploy resources to a resource group, so they shouldn't be given subscription-scoped role assignments.
+> - For many pipelines, a good default option for a role assignment is the Contributor role on the resource group scope.
+> - Consider everything your pipeline does, and everything it might do in the future. For example, you might consider creating a custom role definition for your website's deployment pipeline and only grant permissions for App Service and Application Insights. Next month, you might need to add an Azure Cosmos DB account to your Bicep file, but the custom role will block Azure Cosmos DB resources from being created. 
 Instead, it's often better to use a built-in role, or a combination of built-in roles, to avoid having to repeatedly change your role definitions. Consider using Azure Policy to enforce your governance requirements for allowed services, SKUs, and locations.
-> * Test the pipeline to verify that the role assignment works.
+> - Test the pipeline to verify that the role assignment works.
 
 ### Mixing and matching role assignments
 
@@ -65,7 +65,7 @@ You can create multiple role assignments that provide different permissions at d
 
 You likely work with multiple environments, like development, test, and production environments for your applications. The resources for each environment should be deployed to different resource groups or subscriptions.
 
-You should create separate service principals for each environment, and grant each service principal the minimum set of permissions that it needs for its deployments. Be especially careful to avoid mixing permissions for production deployments with those for deployments to non-production environments.
+You should create separate service principals for each environment, and grant each service principal the minimum set of permissions that it needs for its deployments. Be especially careful to avoid mixing permissions for production deployments with those for deployments to nonproduction environments.
 
 ## Create a role assignment for a service principal
 
@@ -113,7 +113,7 @@ Let's look at each argument:
 
 > [!TIP]
 > It's a good practice to provide a justification for your role assignments by specifying a description. A description helps anyone who reviews the role assignments later to understand their purpose, and to understand how you decided on the assignee, role, and scope.
-
+>
 > [!NOTE]
 > Role assignments can take a few minutes to become active.
 
@@ -135,7 +135,7 @@ You can also create a role assignment at the same time that you create a service
 
 ## Grant access using Bicep
 
-Role assignments are Azure resources. This means that you can create a role assignment by using Bicep. You might do this if you initialize your resource groups using Bicep, and then deploy the resources into the resource group using a service principal. Here's an example Bicep definition for the role assignment above:
+Role assignments are Azure resources. This means that you can create a role assignment by using Bicep. You might do this if you initialize your resource groups using Bicep, and then deploy the resources into the resource group using a service principal. Here's an example Bicep definition for the role assignment discussed:
 
 ```bicep
 resource roleAssignment 'Microsoft.Authorization/roleAssignments@2023-04-01-preview' = {

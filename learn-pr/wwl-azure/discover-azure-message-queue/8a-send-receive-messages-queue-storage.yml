@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-azure-message-queue.send-receive-messages-queue-storage
+title: Exercise - Send and receive messages from Azure Queue storage
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Send and receive messages from Azure Queue storage
+  description: "Exercise - Send and receive messages from Azure Queue storage"
+  ms.date: 06/16/2025
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 30
+content: |
+  [!include[](includes/8a-send-receive-messages-queue-storage.md)]

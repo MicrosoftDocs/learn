@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-iaas-solutions-with-azure-sql.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 02/18/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

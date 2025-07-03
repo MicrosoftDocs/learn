@@ -3,8 +3,6 @@ uid: learn.build-app-with-scale-sets.exercise-update-applications-virtual-machin
 title: Exercise - Update applications in Virtual Machine Scale Sets
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Update applications in Virtual Machine Scale Sets
   description: Exercise - Update applications in Virtual Machine Scale Sets
   ms.date: 03/24/2025
@@ -17,4 +15,4 @@ durationInMinutes: 10
 azureSandbox: false
 content: |
   [!include[](includes/7-exercise-update-applications-virtual-machine-scale-sets.md)]
-
+

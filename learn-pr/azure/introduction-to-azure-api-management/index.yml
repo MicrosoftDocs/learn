@@ -1,12 +1,10 @@
 ### YamlMime:Module
 uid: learn.azure.introduction-to-azure-api-management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction
   title: Introduction to Azure API Management
   description: Evaluate whether Azure API Management is appropriate for managing and exposing your organization's APIs
-  ms.date: 04/07/2023
+  ms.date: 04/21/2025
   author: dlepow
   ms.author: danlep
   ms.topic: module-intro-to-product

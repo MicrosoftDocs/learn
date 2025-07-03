@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.introducing-batch-explorer
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Visualize batch jobs with the Batch Explorer
   description: Visualize batch jobs with the Batch Explorer
-  ms.date: 04/04/2024
+  ms.date: 05/09/2025
   author: lauradolan
   ms.author: jushiman
   ms.topic: unit

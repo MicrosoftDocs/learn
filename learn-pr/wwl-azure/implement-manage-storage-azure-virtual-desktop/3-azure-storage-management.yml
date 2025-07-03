@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-manage-storage-for-azure-virtual-desktop.azure-storage-management
 title: 'Azure storage management '
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure storage management
   description: "Azure storage management"
   ms.date: 08/16/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-azure-storage-management.md)]
+  [!include[](includes/3-azure-storage-management.md)]

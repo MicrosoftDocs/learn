@@ -1,4 +1,4 @@
-Receiver operator characteristic (ROC) curves let us compare models to one another and tune our selected model. Let's discuss how and why these are done.
+ROC curves let us compare models to one another and tune our selected model. Let's discuss how and why these are done.
 
 ## Tuning a model
 
@@ -6,15 +6,15 @@ The most obvious use for an ROC curve is to choose a decision threshold that giv
 
 We've seen in the previous exercise that when we construct an ROC curve, we're just changing the decision threshold and assessing how well the model works. When we do this, we can find the threshold that gives the optimal results.
 
-Usually there isn't a single threshold that gives both the best true positive rate (TPR) and the lower false positive rate (FPR). This means that the optimal threshold depends on what you're trying to achieve. For example, in our scenario, it's very important to have a high true positive rate, because if a hiker isn't identified and an avalanche occurs, the team won't know to rescue them. There's a trade-off, though: if the false positive rate is too high, then the rescue team may repeatedly be sent out to rescue people who simply don't exist. In other situations, the false positive rate is considered more important. For example, science has a low tolerance for false-positive results. If the false-positive rate of scientific experiments was higher, there would be an endless flurry of contradictory claims, and it would be impossible to make sense of what's real.
+Usually there isn't a single threshold that gives both the best true positive rate (TPR) and the lower false positive rate (FPR). This means that the optimal threshold depends on what you're trying to achieve. For example, in our scenario, it's very important to have a high true positive rate. This is because if a hiker isn't identified and an avalanche occurs, the team won't know to rescue them. There's a trade-off, though: if the false positive rate is too high, then the rescue team may repeatedly be sent out to rescue people who simply don't exist. In other situations, the false positive rate is considered more important. For example, science has a low tolerance for false-positive results. If the false-positive rate of scientific experiments was higher, there would be an endless flurry of contradictory claims, and it would be impossible to make sense of what's real.
 
 ## Comparing models with AUC
 
-You can use ROC curves to compare models to each other, just like you can with cost functions. An ROC curve for a model shows how well it will work for a variety of decision thresholds. At the end of the day, what's most important in a model is how it will perform in the real world, where there's only one decision threshold. Why then would we want to compare models using thresholds we'll never use? There are two answers for this.
+You can use ROC curves to compare models to each other just like you can with cost functions. An ROC curve for a model shows how well it will work for a variety of decision thresholds. At the end of the day, what's most important in a model is how it will perform in the real world, where there's only one decision threshold. Why then would we want to compare models using thresholds we'll never use? There are two answers for this.
 
 Firstly, comparing ROC curves in particular ways is like performing a statistical test that tells us not just that one model did better on this particular test set, but whether it's likely to continue to perform better in the future. This is out of the scope of this learning material, but it's worth keeping in mind.
 
-Secondly, the ROC curve shows, to some degree, how reliant the model is on having the perfect threshold. For example, if our model only works well when we have a decision threshold of 0.9, but terribly above or below this value, it's not a good design. We'd probably prefer to work with a model that works reasonably well for various thresholds, knowing that if the real-world data we come across is slightly different to our test set, our model's performance won't necessarily collapse.
+Secondly, the ROC curve shows, to some degree, how reliant the model is on having the perfect threshold. For example, if our model only works well when we have a decision threshold of 0.9, but terribly above or below this value, it's not a good design. We'd probably prefer to work with a model that works reasonably well for various thresholds. We'd know that if the real-world data we come across is slightly different to our test set, our model's performance won't necessarily collapse.
 
 ### How to compare ROCs?
 

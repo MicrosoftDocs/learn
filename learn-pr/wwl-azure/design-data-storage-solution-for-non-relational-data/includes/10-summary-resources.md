@@ -42,10 +42,3 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - Choose a [data storage approach in Azure](/training/modules/choose-storage-approach-in-azure/).
 
-## Learn more with optional hands-on exercises
-
-- Create a [storage account by using the Azure portal (sandbox)](/training/modules/create-azure-storage-account).
-
-- Manage [caching and performance in Azure Storage disks (sandbox)](/training/modules/caching-and-performance-azure-storage-and-disks/).
-
-- Secure your [Azure Virtual Machines disks (sandbox)](/training/modules/secure-your-azure-virtual-machine-disks/).

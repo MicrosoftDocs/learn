@@ -13,7 +13,7 @@ The core package for working with projects in the Azure AI Foundry SDK is the **
 
 To use the Azure AI Projects library in Python, you can use the **pip** package installation utility to install the **azure-ai-projects** package from PyPi:
 
-```python
+```
 pip install azure-ai-projects
 ```
 
@@ -23,7 +23,7 @@ pip install azure-ai-projects
 
 To use the Azure AI Projects library in C#, add the **Azure.AI.Projects** package to your C# project:
 
-```csharp
+```
 dotnet add package Azure.AI.Projects --prerelease
 ```
 
@@ -31,27 +31,33 @@ dotnet add package Azure.AI.Projects --prerelease
 
 ## Using the SDK to connect to a project
 
-The first task in most Azure AI Foundry SDK code is to connect to an Azure AI Foundry project. Each project has a unique *connection string*, which you can find on the project's **Overview** page in the Azure AI Foundry portal.
+The first task in most Azure AI Foundry SDK code is to connect to an Azure AI Foundry project. Each project has a unique *endpoint*, which you can find on the project's **Overview** page in the Azure AI Foundry portal.
 
 [ ![Screenshot of the project overview page in Azure AI Foundry portal.](../media/ai-project-overview.png) ](../media/ai-project-overview.png#lightbox)
 
-You can use that connection string in your code to create an **AIProjectClient** object, which provides a programmatic proxy for the project.
+> [!NOTE]
+> The project provides multiple endpoints and keys, including:
+>
+> - An endpoint for the project itself; which can be used to access project connections, agents, and models in the Azure AI Foundry resource.
+> - An endpoint for Azure OpenAI Service APIs in the project's Azure AI Foundry resource.
+> - An endpoint for Azure AI services APIs (such as Azure AI Vision and Azure AI Language) in the Azure AI Foundry resource.
+
+You can use the project endpoint in your code to create an **AIProjectClient** object, which provides a programmatic proxy for the project.
 
 ::: zone pivot="python"
 
 The following code snippet shows how to create am **AIProjectClient** object in Python.
 
 ```python
-from azure.ai.projects import AIProjectClient
-from azure.ai.projects.models import ConnectionType
 from azure.identity import DefaultAzureCredential
+from azure.ai.projects import AIProjectClient
 ...
 
-project_connection_string = "<region>.api.azureml.ms;<project_id>;<hub_name>;<project_name>"
-project_client = AIProjectClient.from_connection_string(
-      credential=DefaultAzureCredential(),
-      conn_str=project_connection_string,
-    )
+project_endpoint = "https://......"
+project_client = AIProjectClient(            
+    credential=DefaultAzureCredential(),
+    endpoint=project_endpoint)
+
 
 ```
 
@@ -72,16 +78,18 @@ using Azure.AI.Projects;
 
 ...
 
-var connectionString = "<region>.api.azureml.ms;<project_id>;<hub_name>;<project_name>";
-var projectClient = new AIProjectClient(connectionString, new DefaultAzureCredential());
+var projectEndpoint = "https://......";
+var projectClient = new AIProjectClient(
+    new Uri(projectEndpoint),
+    new DefaultAzureCredential());
 ```
 
 > [!NOTE]
 > The code uses the default Azure credentials to authenticate when accessing the project. To enable this authentication, in addition to the **Azure.AI.Projects** package, you need to install the **Azure.Identity** package:
 >
-> `dotnet add package Azure.Identity`
+> `dotnet add package Azure.Identity --prerelease`
 
 ::: zone-end
 
 > [!TIP]
-> To access the project successfully, the Python code must be run in the context of an authenticated Azure session. For example, you could use the Azure command-line interface (CLI) `az-login`  command to sign in before running the code.
+> To access the project successfully, the code must be run in the context of an authenticated Azure session. For example, you could use the Azure command-line interface (CLI) `az-login`  command to sign in before running the code.

@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-azure-managed-lustre-file-system.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary for the Azure Managed Lustre module.
   ms.date: 07/12/2024
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/summary.md)]
+  [!include[](includes/summary.md)]

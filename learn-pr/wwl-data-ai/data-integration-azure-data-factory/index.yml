@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.integrate-data-azure-data-factory
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Data integration with Azure Data Factory
   description: Integrate data with Azure Data Factory or Azure Synapse Pipeline
   ms.date: 06/05/2023
@@ -55,4 +53,4 @@ units:
 - learn.wwl.integrate-data-azure-data-factory.summary
 badge:
   uid: learn.wwl.integrate-data-azure-data-factory.badge
-
+

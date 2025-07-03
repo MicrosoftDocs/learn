@@ -23,7 +23,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
    | Workspace Name | Provide a unique name for the Microsoft Sentinel Workspace such as *\<yourName>-sentinel*. |
    | Location | Accept the default value of **[resourceGroup().location]**. |
    | Simplevm Name | Accept the default value of **simple-vm**. |
-   | Simplevm Windows OS Version | Accept the default value of **2016-Datacenter**. |
+   | Simplevm Windows OS Version | Accept the default value of **2022-Datacenter**. |
 
 1. Select **Review + create**, and then select **Create**.
 
