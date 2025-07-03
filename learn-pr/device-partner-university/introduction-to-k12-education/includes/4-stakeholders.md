@@ -1,3 +1,5 @@
+Let's look at some of the key stakeholders in K-12 institutions.
+
 ## School leaders
 
 :::row:::
@@ -12,7 +14,7 @@ These leaders are looking for solutions that are secure, affordable, equitable, 
 :::column-end:::
   :::column span="":::
 
-:::image type="content" border="false" source="../media/school-leader.png" alt-text="School leader":::
+:::image type="icon" border="false" source="../media/school-leader.png":::
 
 :::column-end:::
 :::row-end:::
@@ -31,7 +33,7 @@ In addition, IT professionals are concerned about ensuring solutions are complia
 :::column-end:::
   :::column span="":::
 
-:::image type="content" border="false" source="../media/it-professional.png" alt-text="IT professional":::
+:::image type="icon" border="false" source="../media/it-professional.png":::
 
 :::column-end:::
 :::row-end:::
@@ -48,7 +50,7 @@ Educators want technology that adds value to their classroom. They want solution
 :::column-end:::
   :::column span="":::
 
-:::image type="content" border="false" source="../media/teacher.png" alt-text="Educator":::
+:::image type="icon" border="false" source="../media/teacher.png":::
 
 :::column-end:::
 :::row-end:::

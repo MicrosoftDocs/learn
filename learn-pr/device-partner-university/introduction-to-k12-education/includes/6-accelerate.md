@@ -15,7 +15,7 @@ Learning Accelerators increase student engagement and provide educators with val
 :::column-end:::
 :::column span="":::
 
-:::image type="content" border="false" source="../media/learning-accelerators.png" alt-text="Student using a Learning Accelerator":::
+:::image type="icon" border="false" source="../media/learning-accelerators.png":::
 
 :::column-end:::
 :::row-end:::
@@ -35,7 +35,7 @@ In addition, [Minecraft Education](https://education.minecraft.net/) contains le
 :::column-end:::
 :::column span="":::
 
-:::image type="content" border="false" source="../media/reflect.png" alt-text="Screenshot of Microsoft Reflect, asking the user how they are feeling today":::
+:::image type="icon" border="false" source="../media/reflect.png":::
 
 :::column-end:::
 :::row-end:::
@@ -55,7 +55,7 @@ Microsoft Education products have accessibility tools built in—and at no extra
 :::column-end:::
 :::column span="":::
 
-:::image type="content" border="false" source="../media/accessibility-tools.png" alt-text="Students using accessibility tools with support from their teacher":::
+:::image type="icon" border="false" source="../media/accessibility-tools.png":::
 
 :::column-end:::
 :::row-end:::
@@ -75,7 +75,7 @@ There’s also [OneNote](https://www.microsoft.com/education/products/onenote)�
 :::column-end:::
 :::column span="1":::
 
-:::image type="content" border="false" source="../media/microsoft-365.png" alt-text="Student using Microsoft 365 on her device":::
+:::image type="icon" border="false" source="../media/microsoft-365.png":::
 
 :::column-end:::
 :::row-end:::
