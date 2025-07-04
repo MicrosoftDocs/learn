@@ -1,8 +1,8 @@
 ### YamlMime:AchievementDetail
-achievementUid: learn.azure.build-reusable-bicep-templates-parameters.badge
+achievementUid: learn.azure.build-reusable-bicep-files-parameters.badge
 metadata:
   title: >-
-    Microsoft Badge: Build reusable Bicep templates by using parameters was
+    Microsoft Badge: Build reusable Bicep files by using parameters was
     issued by Microsoft
 socialImageUrl: >-
-  /training/achievements/bicep/build-reusable-bicep-templates-parameters-social.png
+  /training/achievements/bicep/build-reusable-bicep-files-parameters-social.png

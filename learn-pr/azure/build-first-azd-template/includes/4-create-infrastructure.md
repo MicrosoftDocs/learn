@@ -7,7 +7,7 @@ The Bicep or Terraform files for your template live in the `infra` folder. The `
 * `main.bicep` - Acts as the main entrypoint for Bicep execution and is used to define the resources that will be provisioned in Azure. The `main.bicep` file can also reference other Bicep modules (files) that allow you to extract out resource definitions into more granular, reusable files.
 * `abbreviations.json` - A JSON file that provides many helpful naming abbreviations. This file is loaded into the `main.bicep` file during execution and provides a set of consistent, logical naming prefixes for different Azure resources.
 * `main.parameters.json` - A JSON file that defines default values for important template parameters, such as the default Azure location or the environment name.
-* `core` - A subfolder that includes a variety of reusable Bicep templates you can use to generate common Azure resources by simply passing in configuration parameters.
+* `core` - A subfolder that includes a variety of reusable Bicep files you can use to generate common Azure resources by simply passing in configuration parameters.
 
 You can define and provision the required Azure resources for your app by updating the `main.bicep` file and creating custom Bicep files, or leveraging the templates in the `core` folder. `Main.bicep` generally orchestrates the execution of other Bicep modules by passing parameters between them. For this example, you'll create an additional minimal Bicep module to define the Azure App Service that will host your application.
 
