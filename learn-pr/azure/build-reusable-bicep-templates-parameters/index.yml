@@ -2,7 +2,7 @@
 uid: learn.azure.build-reusable-bicep-templates-parameters
 metadata:
   moduleType: standard
-  title: Build reusable Bicep templates by using parameters
+  title: Build reusable Bicep files by using parameters
   description: Control and apply parameters to a Bicep template while protecting sensitive inputs.
   ms.service: azure-resource-manager
   manager: jasongroce
@@ -57,4 +57,4 @@ units:
 - learn.azure.build-reusable-bicep-templates-parameters.summary
 badge:
   uid: learn.azure.build-reusable-bicep-templates-parameters.badge
-
+

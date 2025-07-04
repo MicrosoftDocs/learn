@@ -23,7 +23,7 @@ quiz:
     - content: Define a resource for the policy assignment by using the *audit* effect, and ignore any errors for non-production environments.
       isCorrect: false
       explanation: Incorrect. It's not good practice to ignore policy violations. Instead, you should conditionally deploy the policy assignment so that it's only for your production environments.
-    - content: Add a condition to your Bicep template so that the policy assignment is deployed only when the `environmentName` parameter value is set to `Production`.
+    - content: Add a condition to your Bicep file so that the policy assignment is deployed only when the `environmentName` parameter value is set to `Production`.
       isCorrect: true
       explanation: Correct. By using a condition with your resource declaration, you'll assign the policy only to environments that need it.
     - content: Move the policy assignment into its own module.
@@ -44,7 +44,7 @@ quiz:
     choices:
     - content: Use the `copyIndex()` function.
       isCorrect: false
-      explanation: Incorrect. The `copyIndex()` function is used within JSON templates, not within Bicep templates.
+      explanation: Incorrect. The `copyIndex()` function is used within JSON templates, not within Bicep files.
     - content: Use array functions.
       isCorrect: false
       explanation: Incorrect. Array functions are often useful when you're working with loops, but they don't let you access the current item.

@@ -1,4 +1,4 @@
-So far, your Bicep template has deployed a single Azure SQL logical server, with auditing settings included for your production environment. You now need to deploy multiple logical servers, one for each region where your company is launching its new smart teddy bear. 
+So far, your Bicep file has deployed a single Azure SQL logical server, with auditing settings included for your production environment. You now need to deploy multiple logical servers, one for each region where your company is launching its new smart teddy bear. 
 
 In this exercise, you'll extend the Bicep code that you created previously so that you can deploy instances of your databases to multiple Azure regions.
 
@@ -46,11 +46,11 @@ Your *database.bicep* file should look like this example:
 
 If it doesn't, either copy the example or adjust your template to match the example.
 
-## Deploy the Bicep template to Azure
+## Deploy the Bicep file to Azure
 
 ::: zone pivot="cli"
 
-In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following code:
+In the Visual Studio Code terminal, deploy the Bicep file to Azure by running the following code:
 
 ```azurecli
 az deployment group create --name main --template-file main.bicep
@@ -60,7 +60,7 @@ az deployment group create --name main --template-file main.bicep
 
 ::: zone pivot="powershell"
 
-In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following Azure PowerShell command:
+In the Visual Studio Code terminal, deploy the Bicep file to Azure by running the following Azure PowerShell command:
 
 ```azurepowershell
 New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep

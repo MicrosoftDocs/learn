@@ -14,7 +14,7 @@ During the process, you'll:
 
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
-## Create a Bicep template with a logical server and database
+## Create a Bicep file with a logical server and database
 
 1. Open Visual Studio Code.
 
@@ -70,7 +70,7 @@ After you've completed all of the preceding changes, your Bicep file should look
 
 If it doesn't, either copy the example or adjust your template to match the example.
 
-## Deploy the Bicep template to Azure
+## Deploy the Bicep file to Azure
 
 ::: zone pivot="cli"
 
@@ -78,7 +78,7 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ### Deploy the template to Azure by using the Azure CLI
 
-In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following code. Notice that you're explicitly setting the `location` parameter to `westus3`.
+In the Visual Studio Code terminal, deploy the Bicep file to Azure by running the following code. Notice that you're explicitly setting the `location` parameter to `westus3`.
 
 ```azurecli
 az deployment group create --name main --template-file main.bicep --parameters location=westus3
@@ -158,7 +158,7 @@ Now you'll explicitly set the parameter value to `Production`. You expect that, 
 
 ::: zone pivot="cli"
 
-In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following code:
+In the Visual Studio Code terminal, deploy the Bicep file to Azure by running the following code:
 
 ```azurecli
 az deployment group create --name main --template-file main.bicep --parameters environmentName=Production location=westus3
