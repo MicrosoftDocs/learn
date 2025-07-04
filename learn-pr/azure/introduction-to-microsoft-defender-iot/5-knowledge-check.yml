@@ -10,6 +10,7 @@ metadata:
   ms.author: lwainstein
   manager: raynew
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

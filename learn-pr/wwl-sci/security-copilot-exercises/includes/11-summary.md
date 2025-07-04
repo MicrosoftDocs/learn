@@ -25,3 +25,4 @@ Now that you completed this module, you can:
 - [Security Copilot in Microsoft Entra](/entra/fundamentals/copilot-security-entra)
 - [Workspaces overview](/copilot/security/workspaces-overview)
 - [Add a source by uploading a file (Preview)](/copilot/security/upload-file)
+- [Describe Microsoft Security Copilot agents](/training/modules/security-copilot-describe-agents/)

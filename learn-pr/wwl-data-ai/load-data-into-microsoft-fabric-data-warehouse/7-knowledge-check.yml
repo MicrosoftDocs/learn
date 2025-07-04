@@ -14,6 +14,7 @@ metadata:
     - build-2023
     - build-2023-dataai
     - build-2023-fabric 
+  module_assessment: true
 durationInMinutes: 8
 quiz:
   questions:

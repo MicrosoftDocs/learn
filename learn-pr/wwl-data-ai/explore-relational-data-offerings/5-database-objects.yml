@@ -4,12 +4,12 @@ title: Describe database objects
 metadata:
   title: Describe database objects
   description: "Describe database objects"
-  ms.date: 08/28/2024
+  ms.date: 06/20/2025
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: calopez
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 9
 content: |
-  [!include[](includes/5-database-objects.md)]
+  [!include[](includes/5-database-objects.md)]

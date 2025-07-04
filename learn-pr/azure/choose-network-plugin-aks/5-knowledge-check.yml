@@ -9,6 +9,7 @@ metadata:
   author: schaffererin
   ms.author: schaffererin
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 2
 content: |
 quiz:

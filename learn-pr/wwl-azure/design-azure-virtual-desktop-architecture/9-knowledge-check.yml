@@ -2,14 +2,17 @@
 uid: learn.wwl.design-azure-virtual-desktop-architecture.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/01/2022
+  ms.date: 06/19/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
+  module_assessment: true
 durationInMinutes: 7
 content: |
   [!include[](includes/9-knowledge-check.md)]
@@ -37,4 +40,4 @@ quiz:
       explanation: "That's incorrect. Remote Desktop Gateway grants users on public networks access to Windows desktops and applications hosted in Microsoft Azure's cloud services."
     - content: "Azure datacenter map"
       isCorrect: true
-      explanation: "That's correct. The Azure datacenter map provides information on where data is stored. Azure Virtual Desktop stores global metadata information like tenant names, host pool names, and user principal names in a datacenter."
+      explanation: "That's correct. The Azure datacenter map provides information on where data is stored. Azure Virtual Desktop stores global metadata information like tenant names, host pool names, and user principal names in a datacenter."

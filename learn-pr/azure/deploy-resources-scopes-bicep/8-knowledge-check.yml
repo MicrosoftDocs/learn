@@ -11,6 +11,7 @@ metadata:
   ms.topic: unit
   ms.custom:
     - devx-track-bicep
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/8-knowledge-check.md)]

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.workload-operations-generative-ai-center-excellence.deploy-generative-ai-workloads
-title: Deploy generative AI workloads
+title: Deploy AI workloads
 metadata:
-  title: Deploy generative AI workloads
-  description: Learn how to deploy generative AI workloads effectively, ensuring they're secure, scalable, and aligned with organizational goals.
+  title: Deploy AI workloads
+  description: Learn how to deploy AI workloads effectively, ensuring they're secure, scalable, and aligned with organizational goals.
   ms.date: 06/04/2025
   author: Orin-Thomas
   ms.author: orthomas

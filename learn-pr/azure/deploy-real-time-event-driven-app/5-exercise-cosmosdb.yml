@@ -9,8 +9,9 @@ metadata:
   ms.author: sakriema
   ms.topic: unit
   ms.custom:
-    - team=cloud_advocates
+    - sfi-ropc-nochange
     - devx-track-azurecli
+    - team=cloud_advocates
   ms.contributors: sakriema-03012021
 durationInMinutes: 8
 content: |

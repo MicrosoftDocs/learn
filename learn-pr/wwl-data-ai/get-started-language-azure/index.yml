@@ -16,7 +16,7 @@ title: Get started with natural language processing in Azure
 summary: Explore Azure AI Language's natural language processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
 abstract: Learn how to use Azure AI Language for text analysis
 prerequisites: Ability to navigate the Azure portal
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/create-publish-luis-model.svg
 levels:
 - beginner
 roles:

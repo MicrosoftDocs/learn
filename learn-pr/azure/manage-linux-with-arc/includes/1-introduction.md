@@ -6,8 +6,9 @@ Contoso, Ltd. is a midsize financial services company in London with a branch of
 
 After completing this module, you're able to:
 
-- Describe how to manage Linux machines using Azure Arc-enabled servers.
-- Describe how to use SSH with Azure Arc and Linux machines.
+- Describe how Azure Arc works with Linux machines.
+- Describe how to use SSH with Linux machines connected to Azure Arc.
+- Describe how Azure Arc can help manage Linux systems at scale.
 
 ## Prerequisites
 

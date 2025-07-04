@@ -8,6 +8,7 @@ metadata:
   author: mistoyanwork
   ms.author: mistoyan
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
