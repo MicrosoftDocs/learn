@@ -81,14 +81,14 @@ For each tweet, describe its sentiment.
 Tweet: I hate it when my phone battery dies
 Sentiment: Negative
 
-Tweet: My has been great
+Tweet: My day has been great
 Sentiment: Positive
 
 Tweet: This is the ink to the article
 Sentiment: Neutral
 
-Tweet: This new music video was incredible
-Sentiment: 
+Tweet: This new music video is incredible
+Sentiment: Positive
 ```
 
 The LLM uses the examples to understand what it needs to do and completes the prompt by returning the sentiment of the last tweet.
