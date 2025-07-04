@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-reusable-bicep-templates-parameters.knowledge-check
+uid: learn.azure.build-reusable-bicep-files-parameters.knowledge-check
 title: Module assessment
 metadata:
   unitType: knowledge_check
@@ -18,17 +18,17 @@ content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   questions:
-  - content: What will the value of the `projectName` parameter be when this template is deployed?
+  - content: What will the value of the `projectName` parameter be when this Bicep file is deployed?
     choices:
     - content: "`dog`"
       isCorrect: false
-      explanation: Incorrect. Parameter files override default parameter values. Also, any values specified in the parameter files are overridden by the values you specify explicitly when you deploy your template.
+      explanation: Incorrect. Parameter files override default parameter values. Also, any values specified in the parameter files are overridden by the values you specify explicitly when you deploy your Bicep file.
     - content: "`cat`"
       isCorrect: false
-      explanation: Incorrect. Parameter files override default parameter values. Also, any values specified in the parameter files are overridden by the values you specify explicitly when you deploy your template.
+      explanation: Incorrect. Parameter files override default parameter values. Also, any values specified in the parameter files are overridden by the values you specify explicitly when you deploy your Bicep file.
     - content: "`bird`"
       isCorrect: true
-      explanation: Correct. Parameter files override default parameter values. Also, any values specified in the parameter files are overridden by the values you specify explicitly when you deploy your template.
+      explanation: Correct. Parameter files override default parameter values. Also, any values specified in the parameter files are overridden by the values you specify explicitly when you deploy your Bicep file.
   - content: Which of these values for the `projectName` parameter would result in a deployment error?
     choices:
     - content: "An empty string."
@@ -51,4 +51,4 @@ quiz:
     - content: You can view the value of the `apiKey` parameter by inspecting the resource group deployments in the Azure portal.
       isCorrect: false
       explanation: Incorrect. Normally, the Azure portal will show you the values of each parameter for a deployment. However, the `apiKey` parameter has the `@secure()` decorator applied, which means that the parameter value is not available to you to view.
-
+
