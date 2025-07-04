@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-reusable-bicep-templates-parameters.how-use-parameter-file-with-bicep
+uid: learn.azure.build-reusable-bicep-files-parameters.how-use-parameter-file-with-bicep
 title: Provide values using parameter files
 metadata:
   unitType: learning-content
@@ -15,4 +15,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-how-use-parameter-file-with-bicep.md)]
-
+

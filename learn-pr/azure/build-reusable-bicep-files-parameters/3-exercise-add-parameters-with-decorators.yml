@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-reusable-bicep-templates-parameters.exercise-add-parameters-with-decorators
+uid: learn.azure.build-reusable-bicep-files-parameters.exercise-add-parameters-with-decorators
 title: Exercise - Add parameters and decorators
 sandbox: true
 metadata:
@@ -15,4 +15,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-add-parameters-with-decorators.md)]
-
+

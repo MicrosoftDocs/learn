@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-reusable-bicep-templates-parameters.how-secure-parameter
+uid: learn.azure.build-reusable-bicep-files-parameters.how-secure-parameter
 title: Secure your parameters
 metadata:
   unitType: learning-content
@@ -14,4 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/5-how-secure-parameter.md)]
-
+

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-reusable-bicep-templates-parameters.exercise-create-use-parameter-files
+uid: learn.azure.build-reusable-bicep-files-parameters.exercise-create-use-parameter-files
 title: Exercise - Add a parameter file and secure parameters
 sandbox: true
 metadata:
@@ -16,4 +16,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/6-exercise-create-use-parameter-files.md)]
-
+

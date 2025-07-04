@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-reusable-bicep-templates-parameters.introduction
+uid: learn.azure.build-reusable-bicep-files-parameters.introduction
 title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
   description: |
-    This module describes how you can use Bicep parameters to provide information for your template during each deployment.
+    This module describes how you can use Bicep parameters to provide information for your Bicep file during each deployment.
     You'll learn about parameter decorators, which make your parameters easy to understand and work with.
     You'll also learn about the different ways that you can provide parameter values and how to protect these values when you're working with secure information.
 
@@ -18,4 +18,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+
