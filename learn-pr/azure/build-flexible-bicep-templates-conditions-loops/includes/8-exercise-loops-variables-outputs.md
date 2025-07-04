@@ -71,7 +71,7 @@ Your *database.bicep* file should look like this example:
 
 ::: code language="bicep" source="code/8-database.bicep" highlight="68-70" :::
 
-If they don't, either copy the examples or adjust your templates to match the examples.
+If they don't, either copy the examples or adjust your Bicep files to match the examples.
 
 ## Deploy the Bicep file to Azure
 

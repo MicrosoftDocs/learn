@@ -32,7 +32,7 @@ As you do with other loops, use the `for` keyword to specify an output loop:
 
 ::: code language="bicep" source="code/7-loop-output-simple.bicep" highlight="9" :::
 
-You'll ordinarily use output loops in conjunction with other loops within your template. For example, let's look at a Bicep file that deploys a set of storage accounts to Azure regions that are specified by the `locations` parameter:
+You'll ordinarily use output loops in conjunction with other loops within your Bicep file. For example, let's look at a Bicep file that deploys a set of storage accounts to Azure regions that are specified by the `locations` parameter:
 
 ::: code language="bicep" source="code/7-loop-output-complex.bicep" range="1-14" :::
 

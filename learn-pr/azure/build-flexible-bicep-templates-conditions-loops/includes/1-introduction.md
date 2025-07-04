@@ -20,7 +20,7 @@ In this module, you'll extend a Bicep file by using conditions and loops. You'll
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to create Bicep files by using conditions and loops, and write Bicep code that configures how loops are executed. You'll also be able to create variable loops and output loops to make your templates even more flexible.
+By the end of this module, you'll be able to create Bicep files by using conditions and loops, and write Bicep code that configures how loops are executed. You'll also be able to create variable loops and output loops to make your files even more flexible.
 
 ## Prerequisites
 

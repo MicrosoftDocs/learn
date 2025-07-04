@@ -44,7 +44,7 @@ Your *database.bicep* file should look like this example:
 
 ::: code language="bicep" source="code/3-template.bicep" :::
 
-If it doesn't, either copy the example or adjust your template to match the example.
+If it doesn't, either copy the example or adjust your Bicep file to match the example.
 
 ## Deploy the Bicep file to Azure
 
@@ -87,9 +87,9 @@ After the deployment is finished, you want to verify that the new logical server
 
 1. Leave the page open in your browser. You'll check on deployments again later.
 
-## Update and redeploy the template to Azure with an additional location for a logical server
+## Update and redeploy the Bicep file to Azure with an additional location for a logical server
 
-The teddy bear toy team is about to launch again, this time into Asia. The team is asking you to deploy a new server and database in the East Asia region. To do so, you need to update your Bicep parameter and redeploy your template.
+The teddy bear toy team is about to launch again, this time into Asia. The team is asking you to deploy a new server and database in the East Asia region. To do so, you need to update your Bicep parameter and redeploy your Bicep file.
 
 ::: zone pivot="cli"
 
