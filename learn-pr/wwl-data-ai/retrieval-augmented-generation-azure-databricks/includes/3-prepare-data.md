@@ -19,7 +19,7 @@ The good news is that proper data preparation solves these problems and sets you
 There are various approaches to preparing data for RAG. This module covers a methodology that works with Azure Databricks.
 
 The diagram below illustrates this workflow:
-1. Data storage and governance establishes the foundation with secure, data storage and proper access controls.
+1. Data storage and governance establishes the foundation with secure data storage and proper access controls.
 2. Data extraction and chunking transforms large documents into smaller, manageable pieces that are optimized for processing and search.
 3. Embedding your data converts these text chunks into numerical representations that enable semantic search capabilities.
 
@@ -39,7 +39,7 @@ When used together, Unity Catalog and Delta Lake create a robust data management
 
 ### Break data into chunks
 
-**Chunking** is the process of breaking large documents into smaller, manageable pieces that can be processed individually. This step is necessary because language models have token limits—they can only process a limited amount of text at once. When someone asks a question, your RAG system retrieves relevant chunks and includes them in the prompt sent to the language model. If your chunks are too large, you'll exceed the model's token limit and won't be able to include all the relevant information.
+**Chunking** is the process of ingesting text documents and breaking large documents into smaller, manageable pieces that can be processed individually. This step is necessary because language models have token limits—they can only process a limited amount of text at once. When someone asks a question, your RAG system retrieves relevant chunks and includes them in the prompt sent to the language model. If your chunks are too large, you'll exceed the model's token limit and won't be able to include all the relevant information.
 
 Language models work with tokens—basic units of text that can be words, parts of words, or punctuation. Different models have different token limits: some handle 4,000 tokens, others can process 128,000 tokens or more. The token limit includes everything in your prompt: the user's question, the retrieved chunks, and any instructions for the model.
 
@@ -73,10 +73,6 @@ Smaller chunks work well for short, specific questions because they provide focu
 ### Embed your data
 After chunking your data, you need to convert your text chunks into **embeddings**—numerical representations that computers can understand and compare. Embeddings are a way to translate human language into mathematical coordinates that capture the meaning and relationships between different pieces of text.
 
-Computers can't directly understand the meaning of words like "dog" or "puppy" or recognize that these words are related. Embeddings solve this problem by converting text into vectors (lists of numbers) where similar concepts are positioned close together in mathematical space. This allows your RAG system to find chunks that are semantically similar to a user's question, even if they don't use the exact same words.
-
-For example, if someone asks "How do I care for a canine?" your system can find relevant chunks about "dog care" because the embeddings recognize that "canine" and "dog" have similar meanings.
-
 When you create embeddings, text chunks and user queries are converted into vectors. Similarity search finds the chunks whose vectors are closest to the query vector. Then relevant chunks are retrieved and send to the language model for response generation
 
 There are various embedding models available, each with different strengths. To choose the best model for your application, consider:
@@ -87,4 +83,4 @@ There are various embedding models available, each with different strengths. To 
 
 - **Practical considerations**: Consider factors like privacy requirements, cost, and licensing. Also be aware of context window limitations—many models ignore text beyond their maximum input length, which could affect embedding quality for longer chunks.
 
-The recommended approach is to benchmark multiple models on both your queries and documents. Test different models and measure which produces the best retrieval results for your specific use case.
+Test different models on your queries and documents and measure which produces the best retrieval results for your specific use case.
