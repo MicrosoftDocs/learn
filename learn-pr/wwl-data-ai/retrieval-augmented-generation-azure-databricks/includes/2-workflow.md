@@ -41,7 +41,7 @@ Before a RAG system can find relevant information, it needs to convert all text 
 
 An embedding model is a specialized AI tool that converts text into numerical vectors (lists of numbers) that represent the meaning of the text. Think of it as a translator that turns works and sentences into a mathematical language that computers can understand and compare.
 
-Document embedding, as shown in the diagram below, is part of a preparation phase. This is done once to set up a knowledge base. Before your RAG system can work, you need to prepare your documents. An embedding model takes all your text documents and transforms them in to mathematical vectors called embeddings, that capture their semantic meaning. This preprocessing step creates a searchable knowledge base. 
+Document embedding, as shown in the diagram below, is part of a preparation phase. This is done once to set up a knowledge base. Before your RAG system can work, you need to prepare your documents. An embedding model takes all your text documents and transforms them into mathematical vectors called embeddings, that capture their semantic meaning. This preprocessing step creates a searchable knowledge base. 
 
 :::image type="content" source="../media/document-embedding.png" alt-text="Diagram of embeddings model converting documents to vectors.":::
 
