@@ -1,8 +1,8 @@
-**Retrieval Augmented Generation (RAG)** is a technique that makes large language models more effective by connecting them to your own custom data. The RAG workflow follows a simple four-step process, as shown in the diagram below: 
+**Retrieval Augmented Generation (RAG)** is a technique that makes large language models more effective by connecting them to your own custom data. The RAG workflow follows a simple four-step process, as shown in the diagram: 
 
 :::image type="content" source="../media/retrieval-augmented-retrieval.png" alt-text="Diagram of retrieval augmented generation workflow.":::
 
-1. **User Query**: A user asks a question that the base LLM alone cannot answer accurately because it doesn't have access to your specific documents, recent information, or proprietary data.
+1. **User Query**: A user asks a question that the base LLM alone can't answer accurately because it doesn't have access to your specific documents, recent information, or proprietary data.
 
 2. **Search Your Database**: The system searches through your own document collection (company policies, reports, manuals, databases) - not the LLM's training data. Your documents were previously converted into embeddings and stored in a vector database. The system finds the most relevant information from your specific documents.
 
@@ -41,11 +41,11 @@ Before a RAG system can find relevant information, it needs to convert all text 
 
 An embedding model is a specialized AI tool that converts text into numerical vectors (lists of numbers) that represent the meaning of the text. Think of it as a translator that turns works and sentences into a mathematical language that computers can understand and compare.
 
-Document embedding, as shown in the diagram below, is part of a preparation phase. This is done once to set up a knowledge base. Before your RAG system can work, you need to prepare your documents. An embedding model takes all your text documents and transforms them into mathematical vectors called embeddings, that capture their semantic meaning. This preprocessing step creates a searchable knowledge base. 
+Document embedding, as shown in the diagram, is part of a preparation phase. This is done once to set up a knowledge base. Before your RAG system can work, you need to prepare your documents. An embedding model takes all your text documents and transforms them into mathematical vectors called embeddings, that capture their semantic meaning. This preprocessing step creates a searchable knowledge base. 
 
 :::image type="content" source="../media/document-embedding.png" alt-text="Diagram of embeddings model converting documents to vectors.":::
 
-Query embedding, shown in the diagram below, happens each time a user asks a question. First, the user's question is converted into an embedding using the same embedding model. This real-time conversion prepares the query for comparison against your pre-processed document embeddings. Only after the query is embedded can the system begin searching for relevant documents.
+Query embedding, shown in the diagram, happens each time a user asks a question. First, the user's question is converted into an embedding using the same embedding model. This real-time conversion prepares the query for comparison against your preprocessed document embeddings. Only after the query is embedded can the system begin searching for relevant documents.
 
 :::image type="content" source="../media/query-embedding.png" alt-text="Diagram of embeddings model.":::
 
@@ -53,9 +53,9 @@ Think of document embedding as building your searchable library, and query embed
 
 ### Store and search your embeddings with a vector store
 
-Once you've converted your documents into embeddings, you need somewhere to store them that allows for fast semantic search.  A regular database would struggle with this because it can't efficiently compare the mathematical similarity between vectors.
+Once you've converted your documents into embeddings, you need somewhere to store them that allows for fast semantic search. A regular database would struggle with this because it can't efficiently compare the mathematical similarity between vectors.
 
-A vector store is a specialized database designed specifically for storing and searching through embeddings (those mathematical vectors created from your documents). Unlike traditional database that store text or numbers, vector stores are optimized for finding similar vectors quickly, even when dealing with millions of documents.  
+A vector store is a specialized database designed specifically for storing and searching through embeddings (those mathematical vectors created from your documents). Unlike traditional databases that store text or numbers, vector stores are optimized for finding similar vectors quickly, even when dealing with millions of documents.  
 
 You can implement vector storage through **vector databases**, **vector libraries**, or **database plugins**.
 
@@ -81,4 +81,4 @@ The complete RAG workflow combines all the components we've discussed into a uni
 
 The key mechanism is **in-context learning** - instead of retraining the LLM, you provide relevant information as context in each prompt, allowing the LLM to generate informed responses without permanent modification.
 
-Advanced implementations may include feedback loops to refine results when the initial response doesn't meet quality thresholds.
+Advanced implementations might include feedback loops to refine results when the initial response doesn't meet quality thresholds.

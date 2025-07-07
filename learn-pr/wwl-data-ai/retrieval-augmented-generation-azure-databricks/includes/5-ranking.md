@@ -8,7 +8,7 @@ This diagram illustrates the complete process: A user query searches your vector
 
 Vector search ranks results using **similarity scores** that measure how mathematically similar document chunk vectors are to your query vector. These scores help determine which chunks are most likely to be relevant, but higher similarity doesn't guarantee the content will best answer the user's question.
 
-For example, a query about "dog training methods" might return highly similar chunks about "pet care supplies" or "animal behavior theory" - these are topically related but may not contain the specific training techniques the user needs.
+For example, a query about "dog training methods" might return highly similar chunks about "pet care supplies" or "animal behavior theory" - these are topically related but might not contain the specific training techniques the user needs.
 
 ## When and why to rerank
 
@@ -18,7 +18,7 @@ For example, a query about "dog training methods" might return highly similar ch
 - The context and intent behind the user's question  
 - The practical usefulness of the information
 
-This additional step can improve answer quality and reduce hallucinations, but it also adds processing time to your RAG pipeline.
+This extra step can improve answer quality and reduce incorrect information, but it also adds processing time to your RAG pipeline.
 
 ## Implementing reranking
 

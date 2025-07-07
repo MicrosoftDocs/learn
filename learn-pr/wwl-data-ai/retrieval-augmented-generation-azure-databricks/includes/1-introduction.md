@@ -2,7 +2,7 @@ Retrieval Augmented Generation (RAG) is a technique in natural language processi
 
 Language models have become incredibly popular because they can generate impressive, well-structured answers to user questions. When people interact with these models through chat interfaces, it feels like a natural and intuitive way to get information.
 
-However, there's a major challenge: ensuring the AI's responses are actually accurate and factual. This challenge is called **groundedness** - which simply means whether the AI's answer is based on real, reliable information rather than made-up or incorrect details. Without proper groundedness, language models can "hallucinate" by confidently stating things that aren't true. Another challenge is that traditional models use only information they were trained on that can be outdated or incomplete.
+However, there's a major challenge: ensuring the AI's responses are accurate and factual. This challenge is called **groundedness** - which simply means whether the AI's answer is based on real, reliable information rather than made-up or incorrect details. Without proper groundedness, language models might confidently stating things that aren't true. Another challenge is that traditional models use only information they were trained on that can be outdated or incomplete.
 
 When you want a language model to have access to specific knowledge, you have three main options:
 
