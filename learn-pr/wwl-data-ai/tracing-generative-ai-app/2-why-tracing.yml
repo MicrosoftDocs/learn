@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.monitor-generative-ai-app.why-monitor
-title: Why do you need to monitor?
+uid: learn.wwl.tracing-generative-ai-app.why-tracing
+title: Why do you need to use tracing?
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Why do you need to monitor?
-  description: Understand the need for monitoring your generative AI application.
+  title: Why do you need to use tracing?
+  description: Understand the need for tracing your generative AI application.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 04/30/2025
+  ms.date: 06/10/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-why-monitor.md)]
+  [!include[](includes/2-why-tracing.md)]
 

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.monitor-generative-ai-app.informed-decisions
-title: Interpret monitoring results
+uid: learn.wwl.tracing-generative-ai-app.informed-decisions
+title: Interpret tracing results
 metadata: 
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Interpret monitoring results
-  description: Learn how to interpret monitoring results to make informed decisions about your configuration.
+  title: Interpret tracing results
+  description: Learn how to interpret tracing results to make informed decisions about your configuration.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 04/30/2025
+  ms.date: 06/10/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.monitor-generative-ai-app.prepare-scripts
-title: Integrate monitoring into your app
+uid: learn.wwl.tracing-generative-ai-app.prepare-scripts
+title: Integrate tracing into your app
 metadata: 
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Integrate monitoring into your app
-  description: Learn how to instrument your generative AI application with Azure tools to capture trace data, evaluate model performance, and monitor system behavior in real time.
+  title: Integrate tracing into your app
+  description: Learn how to integrate tracing into your generative AI application on Azure.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 04/30/2025
+  ms.date: 06/10/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
