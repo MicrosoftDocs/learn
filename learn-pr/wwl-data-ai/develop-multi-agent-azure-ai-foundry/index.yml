@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.develop-multi-agent-azure-ai-foundry
+metadata:
+  title: Develop a multi-agent solution with Azure AI Foundry Agent Service
+  description: Break down complex tasks with intelligent collaboration. Learn how to design multi-agent solutions using connected agents.
+  ms.date: 06/13/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: azure-ai-openai
+title: Develop a multi-agent solution with Azure AI Foundry Agent Service
+summary: Break down complex tasks with intelligent collaboration. Learn how to design multi-agent solutions using connected agents.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe how connected agents enable modular, collaborative workflows.
+  - Design a multi-agent solution by defining main agent tools and connected agent roles.
+  - Build and run a connected agent solution
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience with deploying generative AI models in Azure AI Foundry.
+  - Programming experience with Python or Microsoft C#.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products:
+  - azure
+  - ai-services
+subjects: 
+  - cloud-computing
+units:
+- learn.wwl.develop-multi-agent-azure-ai-foundry.introduction
+- learn.wwl.develop-multi-agent-azure-ai-foundry.understand-connected-agents
+- learn.wwl.develop-multi-agent-azure-ai-foundry.design-multi-agent-solution
+- learn.wwl.develop-multi-agent-azure-ai-foundry.exercise
+- learn.wwl.develop-multi-agent-azure-ai-foundry.knowledge-check
+- learn.wwl.develop-multi-agent-azure-ai-foundry.summary
+badge:
+  uid: learn.wwl.develop-multi-agent-azure-ai-foundry.badge
+
