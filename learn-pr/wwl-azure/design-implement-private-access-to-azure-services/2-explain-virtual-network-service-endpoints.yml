@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Explain virtual network service endpoints
   description: "Explain virtual network service endpoints"
-  ms.date: 05/01/2025
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -39,7 +39,7 @@ quiz:
       explanation: "Incorrect. Firewall services are separate from Service Endpoints."
     - content: "Service Endpoints encrypt all data in transit."
       isCorrect: false
-      explanation: "Incorrect. Encryption is not a primary function of Service Endpoints."
+      explanation: "Incorrect. Encryption isn't a primary function of Service Endpoints."
   - content: "What is the impact of enabling service endpoints on network traffic?"
     choices:
     - content: "It reduces the bandwidth available for other services."

@@ -8,6 +8,9 @@ The embedded experience is also a great place to start a security investigation.
 
 In this module, you learn about the scenarios supported by the embedded experiences of Microsoft Security Copilot.
 
+> [!NOTE]
+>This module is intended to give you a flavor of just a few of the Security Copilot embedded experiences. The list of Microsoft Security solutions in which Copilot is embedded is continually growing. For information about Copilot embedded in a given security solutions, refer to training for that specific solution.
+
 After completing this module, you'll be able to:
 
 - Describe Copilot in Microsoft Defender XDR.

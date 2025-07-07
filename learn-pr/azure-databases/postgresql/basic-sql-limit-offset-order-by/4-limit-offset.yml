@@ -1,0 +1,25 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-database.postgresql.basic-sql-limit-offset-order-by.limit-offset
+title: LIMIT and OFFSET
+metadata:
+  title: LIMIT and OFFSET
+  description: "This unit covers how to use LIMIT and OFFSET in PostgreSQL to control and paginate query results. Learn to retrieve specific portions of data efficiently, ideal for large datasets and web applications."
+  ms.date: 05/23/2025
+  author: milenak
+  ms.author: mpopovic
+  ms.topic: unit
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from
+### the ms.service allowlist.
+###
+### If your content isn't about a product or service, you can omit the ms.service field.
+###
+### For the list of approved ms.service values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice.
+###
+### To request new values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-limit-offset.md)]

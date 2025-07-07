@@ -10,9 +10,9 @@ By enabling auditing, operations that occur on the database are stored for later
 
 You can use SQL database auditing to:
 
-- Retain an audit trail of selected events. You can define categories of database actions to be audited.
-- Report on database activity. You can use preconfigured reports and a dashboard to get started quickly with activity and event reporting.
-- Analyze reports. You can find suspicious events, unusual activity, and trends.
+- **Retain an audit trail of selected events**: You can define categories of database actions to be audited.
+- **Report on database activity**: You can use preconfigured reports and a dashboard to get started quickly with activity and event reporting.
+- **Analyze reports**: You can find suspicious events, unusual activity, and trends.
 
 Audit logs are written to Append Blobs in an Azure Blob Storage account that you designate. Audit policies can be applied at the server-level or database-level. Once enabled, you can use the Azure portal to view the logs, or send them to Log Analytics or Event Hubs for further processing and analysis.
 
@@ -62,7 +62,7 @@ Now generate some audit records and take a look at what you can expect.
     GO
     ```
 
-1. Back in the Azure portal, on your SQL server, select **SQL databases** in the left menu pane, and select the _marketplace_ database.
+1. Back in the Azure portal, on your SQL server, scroll down to **SQL databases**, and select the _marketplace_ database.
 
 1. In the left menu pane on your _marketplace_ database, under **Security**, select **Auditing**.
 
@@ -80,9 +80,9 @@ Take a look at another feature that uses these logs to increase the security of 
 
 Advanced Data Security (ADS) provides a set of advanced SQL security capabilities, including data discovery & classification, vulnerability assessment, and Advanced Threat Protection.
 
-- **Data discovery & classification** (currently in preview) provides capabilities built into Azure SQL Database for discovering, classifying, labeling, and protecting the sensitive data in your databases. It can be used to provide visibility into your database classification state, and to track the access to sensitive data within the database and beyond its borders.
-- **Vulnerability assessment** is an easy to configure service that can discover, track, and help you remediate potential database vulnerabilities. It provides visibility into your security state, and includes actionable steps to resolve security issues, and enhance your database fortifications.
-- **Advanced Threat Protection** detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit your database. It continuously monitors your database for suspicious activities, and provides immediate security alerts on potential vulnerabilities, SQL injection attacks, and anomalous database access patterns. Advanced Threat Protection alerts provide details of the suspicious activity and recommend action on how to investigate and mitigate the threat.
+- **Data discovery & classification**: (currently in preview) Provides capabilities built into Azure SQL Database for discovering, classifying, labeling, and protecting the sensitive data in your databases. It can be used to provide visibility into your database classification state, and to track the access to sensitive data within the database and beyond its borders.
+- **Vulnerability assessment**: An easy to configure service that can discover, track, and help you remediate potential database vulnerabilities. It provides visibility into your security state, and includes actionable steps to resolve security issues, and enhance your database fortifications.
+- **Advanced Threat Protection**: Detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit your database. It continuously monitors your database for suspicious activities, and provides immediate security alerts on potential vulnerabilities, SQL injection attacks, and anomalous database access patterns. Advanced Threat Protection alerts provide details of the suspicious activity and recommend action on how to investigate and mitigate the threat.
 
 ### Setup and configuration
 
@@ -92,15 +92,13 @@ Enable ADS on your database. ADS is a server-level setting, so start there.
 
 1. In the left menu pane, under **Security**, select **Microsoft Defender for Cloud**.
 
-1. Select **Enable Microsoft Defender for SQL**.
+1. Select **Enable** under **Microsoft Defender for SQL**.
 
-1. Select **Configure** next to the message **Enabled at the subscription-level**. The **Server settings** pane displays.
+1. Select **Configure** next to the message **Enabled at the server-level**. The **Server settings** pane displays.
 
-1. **Periodic recurring scans** is on by default. When a weekly scan is triggered, a scan result summary is sent to the email address you provide. In this case, turn this off. **Also send email notification to admins and subscription owners** is enabled by default to send the threats to the service administrators. Select **Save** at the top to save your settings.
+1. **Periodic recurring scans** is on by default. When a weekly scan is triggered, a scan result summary is sent to the email address you provide. Select **Save** at the top to save your settings.
 
-1. Under **Advanced Threat Protection Settings**, select **Add your contact details...** to open the Defender for Cloud **Email notifications** pane. Here, you can optionally define where notification emails are delivered for both the vulnerability assessment and Advanced Threat Protection as a list of semicolon separated email addresses. **Also send email notification to admins and subscription owners** is enabled by default to send the threats to the service administrators.
-
-1. You can also select **Enable Auditing....** to turn on **Azure SQL Auditing**.
+1. Under **Advanced Threat Protection Settings**, select **Add your contact details...** to open the Defender for Cloud **Email notifications**. Here, you can optionally define where notification emails are delivered for both the vulnerability assessment and Advanced Threat Protection as a list of semicolon separated email addresses.
 
 1. Select **Save** to apply the changes.
 
@@ -112,7 +110,7 @@ You receive email notifications as vulnerabilities are detected. The email outli
 
 1. Go to your marketplace database. In the search bar at the top of the Azure portal, search for marketplace, and then select the database.
 
-1. In the left menu pane, under **Security**, select **Data Discovery & Classification**.
+1. In the left menu pane under **Security**, select **Data Discovery & Classification**.
 
 The **Classification** tab shows columns within your tables that need to be protected. Some of the columns might have sensitive information or might be considered classified in different countries or regions.
 
@@ -128,7 +126,7 @@ No active recommendations should be listed once you managed the recommendations 
 
 ### Security vulnerabilities
 
-In the left menu pane, under **Security**, select **Microsoft Defender for Cloud**.
+In the left menu pane under **Security**, select **Microsoft Defender for Cloud**.
 
 The **Recommendations** section lists configuration issues on your database and the associated risk.
 

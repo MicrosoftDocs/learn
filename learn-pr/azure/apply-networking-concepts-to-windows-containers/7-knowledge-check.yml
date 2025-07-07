@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/12/2024
+  ms.date: 04/30/2025
   author: vrapolinario
   ms.author: viniap
   ms.topic: unit
@@ -48,4 +48,4 @@ quiz:
         - content: "Manage virtual machines"
           isCorrect: false
           explanation: "Incorrect. In a Kubernetes networking configuration, Kubernetes nodes (physical or virtual machines) are managed by a control plane. The control plane communicates with the nodes through the kubelet component."
-
+

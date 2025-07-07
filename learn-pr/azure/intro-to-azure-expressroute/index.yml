@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction
   title: Introduction to Azure ExpressRoute
   description: This module explains what Azure ExpressRoute does, how it works, and when you should choose to use Azure ExpressRoute as a solution.
-  ms.date: 12/22/2023
+  ms.date: 04/30/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
@@ -39,4 +39,4 @@ units:
   - learn.azure.intro-to-azure-expressroute.summary
 badge:
   uid: learn.azure.intro-to-azure-expressroute.badge
-
+

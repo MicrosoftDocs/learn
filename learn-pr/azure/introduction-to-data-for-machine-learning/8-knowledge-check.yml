@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Multiple-choice questions
-  ms.date: 10/10/2024
+  ms.date: 05/21/2025
   author: fbsolo-ms1
   ms.author: franksolomon
   ms.reviewer: franksolomon
@@ -57,4 +57,4 @@ quiz:
     - content: "Adding a large number of features that you know have no relation to what the model is trying to predict."
       isCorrect: true
       explanation: "Correct. Adding more features that aren't relevant probably harms its performance"
-
+

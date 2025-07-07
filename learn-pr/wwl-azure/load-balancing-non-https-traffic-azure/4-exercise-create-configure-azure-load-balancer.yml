@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: 'Exercise: Create and configure an Azure load balancer'
   description: "Exercise: Create and configure an Azure load balancer"
-  ms.date: 05/01/2025
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - references_regions
-durationInMinutes: 15
+durationInMinutes: 5
 content: |
   [!include[](includes/4-exercise-create-configure-azure-load-balancer.md)]

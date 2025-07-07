@@ -4,13 +4,21 @@ Imagine you're a developer working on a project that requires secure and efficie
 
 The topics covered in this module include:
 
-- Using GitHub Copilot to improve your code.
-- Improving code quality with GitHub Copilot Chat.
-- Improving code reliability and performance with GitHub Copilot Chat.
-- Improving code security with GitHub Copilot Chat.
-- Completing an "app improvement" challenge and reviewing a possible solution.
+- Exploring GitHub Copilot's code improvement tools.
+- Using GitHub Copilot's quick fix options.
+- Code refactoring with GitHub Copilot best practices.
+- Refactor code with GitHub Copilot inline chat.
+- Refactoring code with GitHub Copilot ask, edit, and agent modes.
+- Exploring GitHub Copilot code review features.
+- Refactor C# Code with GitHub Copilot.
 
-By the end of this module, you're able to use the GitHub Copilot Chat extension for Visual Studio Code to generate and implement code update suggestions that improve code quality, reliability, performance, and security.
+After completing this module, you’ll be able to:
+
+- Use GitHub Copilot's Chat view modes to analyze, edit, and execute tasks effectively.
+- Apply quick fix options to resolve coding issues, test failures, and terminal errors using tools like Fix smart actions and Inline Chat.
+- Refactor code to improve readability, reduce complexity, and enhance maintainability by leveraging Copilot's contextual tools and best practices.
+- Conduct code reviews using GitHub Copilot's review selection and review changes features to ensure quality, reliability, and security.
+- Complete a hands-on exercise to refactor and optimize a C# application using GitHub Copilot.
 
 > [!IMPORTANT]
-> To complete this GitHub Copilot training, you must have an active subscription for GitHub Copilot in your personal GitHub account, or you must be assigned to a subscription managed by an organization or enterprise. To complete module activities, you must configure your account to allow GitHub Copilot suggestions that match public code. If you're a member of an organization on GitHub Enterprise Cloud who has been assigned a GitHub Copilot seat through your organization, the setting for suggestions matching public code will be inherited from your organization or enterprise. If your account blocks suggestions that match public code, module activities won't work as expected.
+> To complete this GitHub Copilot training, you must have an active subscription for GitHub Copilot in your personal GitHub account (includes the GitHub Copilot Free plan), or you must be assigned to a subscription managed by an organization or enterprise. Module activities may include GitHub Copilot suggestions that match public code. If you're a member of an organization on GitHub Enterprise Cloud who has been assigned a GitHub Copilot subscription through your organization, the setting for suggestions matching public code may be inherited from your organization or enterprise. If your account blocks suggestions that match public code, module activities may not work as expected.

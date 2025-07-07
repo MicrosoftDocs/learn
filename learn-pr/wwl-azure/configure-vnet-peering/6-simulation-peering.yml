@@ -1,15 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-vnet-peering.interactive-simulation-peering
-title: Interactive lab simulation
+title: Exercise - Implement Intersite Connectivity
 metadata:
-  title: Interactive lab simulation
-  description: "Interactive lab simulation"
-  ms.date: 12/13/2024
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Implement Intersite Connectivity
+  description: "Exercise - Implement Intersite Connectivity"
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 12
+durationInMinutes: 5
 content: |
   [!include[](includes/6-simulation-peering.md)]

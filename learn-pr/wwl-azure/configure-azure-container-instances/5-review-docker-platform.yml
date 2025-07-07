@@ -2,14 +2,16 @@
 uid: learn.wwl.configure-azure-container-instances.review-docker-platform
 title: Review Azure Container Apps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review Azure Container Apps
   description: "Review Azure Container Apps"
-  ms.date: 12/20/2024
+  ms.date: 05/21/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
   [!include[](includes/5-review-docker-platform.md)]

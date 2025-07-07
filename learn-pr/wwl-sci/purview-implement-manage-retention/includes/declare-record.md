@@ -30,9 +30,7 @@ To manage the integrity and compliance of records marked by retention labels, co
 
 **Editing record properties**: By default, properties of locked records can be edited, but this can be turned off to ensure records remain unchanged. To change this setting:
 
-1. Navigate to Microsoft Purview portal or Microsoft Purview compliance portal.
-   - Sign in to the Microsoft Purview portal > **Settings** card > **Solutions settings** > **Records Management** > **Retention Labels**.
-   - Sign in to the Microsoft Purview compliance portal > **Records management** > **Records management settings** > **Retention labels**.
+1. Go to Microsoft Purview portal and select > **Settings** > **Records Management** > **Retention Labels**.
 1. Turn off the setting for **Allow users to edit record properties**.
 
 ## Configure retention labels to declare records
@@ -48,7 +46,7 @@ To enable the option to mark content as a regulatory record in the retention lab
 
 This setting is applied immediately without confirmation.
 
-When you create a retention label from the **Records Management** solution in the Microsoft Purview portal or the Microsoft Purview compliance portal, you can mark items as a record or a regulatory record, as long as you ran the PowerShell `Set-RegulatoryComplianceUI` command.
+After enabling the regulatory record option using the `Set-RegulatoryComplianceUI` PowerShell command, you can create retention labels in the **Records Management** solution within the Microsoft Purview portal. These labels can designate items as either records or regulatory records. While administrative units are supported in records management, they aren't applicable when publishing or auto-applying retention labels.
 
    :::image type="content" source="../media/declare-records.png" alt-text="Screenshot showing how to create a retention label for a record or regulatory record.":::
 

@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-storage-security.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/04/2025
+  ms.date: 05/23/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -16,28 +18,28 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which statement is correct about Azure Storage encryption."
+  - content: "What is the recommended way to manage and rotate your Azure storage account access keys?"
     choices:
-    - content: "Data written to Azure Storage is encrypted through 125-bit advanced encryption standard (AES) encryption."
-      isCorrect: false
-      explanation: "Incorrect. Data is encrypted through 256-bit AES encryption"
-    - content: "Data is automatically encrypted before written to Azure Managed Disks."
+    - content: "Use Azure Key Vault to manage and rotate your keys."
       isCorrect: true
-      explanation: "Correct. Data is automatically encrypted."
-    - content: "Azure Storage encryption can be disabled."
+      explanation: "Correct. The Key Vault is a great way to secure your storage access keys."
+    - content: "Save access keys in plain text accessible to others."
       isCorrect: false
-      explanation: "Incorrect. Azure Storage encryption is enabled for all new and existing storage accounts and can't be disabled."
-  - content: "What's the default network rule when configuring network access to an Azure storage account?"
+      explanation: "Incorrect. Storage access keys should be encrypted with limited access."
+    - content: "Hard code access keys in your application code."
+      isCorrect: false
+      explanation: "Incorrect. Hard-coding access keys in an application isn't a best practice."
+  - content: "What is the recommended way to authorize access to data in Azure Storage?"
     choices:
-    - content: "Allow all connections from all networks."
+    - content: "Using either Microsoft Entra ID or a shared access signature SAS."
       isCorrect: true
-      explanation: "Correct. The default network rule is to allow all connections from all networks."
-    - content: "Allow all connection from a private IP address range."
+      explanation: "Correct. Entra ID and SAS are great ways to access storage."
+    - content: "Using Shared Key authorization."
       isCorrect: false
-      explanation: "Incorrect. By default, the IP address isn't considered."
-    - content: "Deny all connections from all networks."
+      explanation: "Incorrect. Shared key authorization isn't a best practice."
+    - content: "Using access keys and connection strings for all apps accessing production or sensitive data."
       isCorrect: false
-      explanation: "Incorrect. All connections aren't denied by default."
+      explanation: "Incorrect. Entra ID and SAS are better ways to authorize access."
   - content: "You want to give read access to image assets for a limited period of time. What security option would be the best option to use?"
     choices:
     - content: "Storage account keys"

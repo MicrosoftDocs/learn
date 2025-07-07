@@ -18,7 +18,8 @@ Being part of the Network Security team at Contoso, your next task is to create 
 - Test the firewall.
 
 
-> [!NOTE]
+> [!IMPORTANT]
+> Estimated time: 60 minutes.
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.

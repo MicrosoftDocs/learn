@@ -15,7 +15,8 @@ In this exercise, you're going to run a mock DDoS attack on the virtual network.
 - Configure DDoS alerts.
 - Monitor a DDoS test attack.
 
-> [!NOTE]
+> [!IMPORTANT]
+> Estimated time: 40 minutes.
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.

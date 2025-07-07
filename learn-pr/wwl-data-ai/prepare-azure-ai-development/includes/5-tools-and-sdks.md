@@ -6,7 +6,7 @@ There are many development tools and environments available, and developers shou
 
 ### The Azure AI Foundry VS Code container image
 
-As an alternative to installing and configuring your own development environment, within Azure AI Foundry portal, you can create compute and use it to host a container image for VS Code (installed locally or as a hosted web application in a browser). The benefit of using the container image is that it includes the latest versions of the SDK packages you're most likely to work with when building AI applications with Azure AI Foundry.
+As an alternative to installing and configuring your own development environment, when working in a hub-based project in Azure AI Foundry portal, you can create compute and use it to host a container image for VS Code (installed locally or as a hosted web application in a browser). The benefit of using the container image is that it includes the latest versions of the SDK packages you're most likely to work with when building AI applications with Azure AI Foundry.
 
 ![Screenshot of a Visual Studio Code container running in a web browser.](../media/vs-code.png)
 
@@ -26,5 +26,5 @@ You can develop AI applications using many common programming languages and fram
 
 - The **[Azure AI Foundry SDK](/azure/ai-studio/how-to/develop/sdk-overview?azure-portal=true)**, which enables you to write code to connect to Azure AI Foundry projects and access resource connections, which you can then work with using service-specific SDKs.
 - **[Azure AI Services SDKs](/azure/ai-services/reference/sdk-package-resources?azure-portal=true)** - AI service-specific libraries for multiple programming languages and frameworks that enable you to consume Azure AI Services resources in your subscription. You can also use Azure AI Services through their [REST APIs](/azure/ai-services/reference/rest-api-resources).
-- The **[Azure AI Agent Service](/azure/ai-services/agents/overview?azure-portal=true)**, which is accessed through the Azure AI Foundry SDK and can be integrated with frameworks like [AutoGen](https://microsoft.github.io/autogen/0.2/docs/Getting-Started?azure-portal=true) and [Semantic Kernel](/semantic-kernel/overview?azure-portal=true) to build comprehensive AI agent solutions.
+- The **[Azure AI Foundry Agent Service](/azure/ai-services/agents/overview?azure-portal=true)**, which is accessed through the Azure AI Foundry SDK and can be integrated with frameworks like [AutoGen](https://microsoft.github.io/autogen/0.2/docs/Getting-Started?azure-portal=true) and [Semantic Kernel](/semantic-kernel/overview?azure-portal=true) to build comprehensive AI agent solutions.
 - The **[Prompt Flow](https://microsoft.github.io/promptflow/index.html?azure-portal=true)** SDK, which you can use to implement orchestration logic to manage prompt interactions with generative AI models.

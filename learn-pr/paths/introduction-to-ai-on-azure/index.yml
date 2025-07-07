@@ -1,0 +1,42 @@
+### YamlMime:LearningPath
+uid: learn.introduction-ai-azure
+metadata:
+  title: "Introduction to AI in Azure"
+  description: This course introduces core concepts related to artificial intelligence (AI), and the services in Microsoft Azure that can be used to create AI solutions. 
+  brand: azure
+  ms.date: 05/27/2025
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: learning-path
+title: "Introduction to AI in Azure"
+summary: |
+  This course introduces core concepts related to artificial intelligence (AI), and the services in Microsoft Azure that can be used to create AI solutions. 
+prerequisites: Familiarity with Azure and the Azure portal.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles: 
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products: 
+  - azure-openai
+  - azure
+subjects: 
+  - cloud-computing
+modules:
+- learn.wwl.get-started-ai-fundamentals
+- learn.wwl.fundamentals-machine-learning
+- learn.wwl.design-machine-learning-model-training-solution
+- learn.wwl.fundamentals-generative-ai
+- learn.wwl.get-started-generative-ai-azure
+- learn.wwl.introduction-language
+- learn.wwl.get-started-language-azure
+- learn.wwl.recognize-synthesize-speech
+- learn.wwl.introduction-computer-vision
+- learn.wwl.get-started-computer-vision
+- learn.wwl.introduction-information-extraction
+- learn.wwl.ai-information-extraction
+trophy:
+  uid: learn.introduction-ai-azure.trophy

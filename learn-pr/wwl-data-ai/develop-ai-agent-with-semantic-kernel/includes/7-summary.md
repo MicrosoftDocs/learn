@@ -3,5 +3,5 @@ In this module, you learned how the Semantic Kernel Agent Framework enables deve
 More reading:
 
 - Learn more about the [Semantic Kernel Agent Framework](/semantic-kernel/frameworks/agent/?pivots=programming-language-python)
-- Learn more about [Azure AI Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-azure-ai-agent-service/4298357)
+- Learn more about [Foundry Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-azure-ai-agent-service/4298357)
 - Practice [developing generative AI apps with Semantic Kernel](/training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk/)

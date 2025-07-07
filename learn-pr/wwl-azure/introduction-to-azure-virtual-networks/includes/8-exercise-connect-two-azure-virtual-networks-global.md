@@ -15,7 +15,8 @@ In this lab, you configure connectivity between the CoreServicesVnet and the Man
 - Retest and verify the virtual machines can now communicate.
 
 
-> [!NOTE]
+> [!IMPORTANT]
+> Estimated time: 30 minutes.
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.

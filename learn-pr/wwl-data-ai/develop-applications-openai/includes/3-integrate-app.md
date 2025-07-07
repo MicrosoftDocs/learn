@@ -1,4 +1,4 @@
-Azure OpenAI offers both language specific SDKs and a REST API that developers can use to add AI functionality to their applications. Generative AI capabilities in Azure OpenAI are provided through *models*. The models available in the Azure OpenAI service belong to different families, each with their own focus. To use one of these models, you need to deploy through the Azure OpenAI Service.
+Azure OpenAI offers both language specific SDKs and a REST API that developers can use to add AI functionality to their applications. Generative AI capabilities in Azure OpenAI are provided through *models*. The models available in Azure OpenAI belong to different families, each with their own focus. To use one of these models, you need to deploy through Azure OpenAI.
 
 Once you have created an Azure OpenAI resource and deployed a model, you can configure your app.
 

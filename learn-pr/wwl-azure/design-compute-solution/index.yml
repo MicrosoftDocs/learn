@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Design an Azure compute solution
   description: "Azure Architects design and recommend Azure compute solutions."
-  ms.date: 05/05/2025
+  ms.date: 05/28/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module

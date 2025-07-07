@@ -31,27 +31,33 @@ dotnet add package Azure.AI.Projects --prerelease
 
 ## Using the SDK to connect to a project
 
-The first task in most Azure AI Foundry SDK code is to connect to an Azure AI Foundry project. Each project has a unique *connection string*, which you can find on the project's **Overview** page in the Azure AI Foundry portal.
+The first task in most Azure AI Foundry SDK code is to connect to an Azure AI Foundry project. Each project has a unique *endpoint*, which you can find on the project's **Overview** page in the Azure AI Foundry portal.
 
 [ ![Screenshot of the project overview page in Azure AI Foundry portal.](../media/ai-project-overview.png) ](../media/ai-project-overview.png#lightbox)
 
-You can use that connection string in your code to create an **AIProjectClient** object, which provides a programmatic proxy for the project.
+> [!NOTE]
+> The project provides multiple endpoints and keys, including:
+>
+> - An endpoint for the project itself; which can be used to access project connections, agents, and models in the Azure AI Foundry resource.
+> - An endpoint for Azure OpenAI Service APIs in the project's Azure AI Foundry resource.
+> - An endpoint for Azure AI services APIs (such as Azure AI Vision and Azure AI Language) in the Azure AI Foundry resource.
+
+You can use the project endpoint in your code to create an **AIProjectClient** object, which provides a programmatic proxy for the project.
 
 ::: zone pivot="python"
 
 The following code snippet shows how to create am **AIProjectClient** object in Python.
 
 ```python
-from azure.ai.projects import AIProjectClient
-from azure.ai.projects.models import ConnectionType
 from azure.identity import DefaultAzureCredential
+from azure.ai.projects import AIProjectClient
 ...
 
-project_connection_string = "<region>.api.azureml.ms;<project_id>;<hub_name>;<project_name>"
-project_client = AIProjectClient.from_connection_string(
-      credential=DefaultAzureCredential(),
-      conn_str=project_connection_string,
-    )
+project_endpoint = "https://......"
+project_client = AIProjectClient(            
+    credential=DefaultAzureCredential(),
+    endpoint=project_endpoint)
+
 
 ```
 
@@ -72,8 +78,10 @@ using Azure.AI.Projects;
 
 ...
 
-var connectionString = "<region>.api.azureml.ms;<project_id>;<hub_name>;<project_name>";
-var projectClient = new AIProjectClient(connectionString, new DefaultAzureCredential());
+var projectEndpoint = "https://......";
+var projectClient = new AIProjectClient(
+    new Uri(projectEndpoint),
+    new DefaultAzureCredential());
 ```
 
 > [!NOTE]

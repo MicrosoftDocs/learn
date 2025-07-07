@@ -4,13 +4,13 @@ metadata:
   title: Monitor, diagnose, and troubleshoot your Azure Storage
   description: Monitor, diagnose, and troubleshoot your Azure Storage
   manager: akashdubey
-  ms.date: 12/21/2023
+  ms.date: 05/22/2025
   author: normesta
   ms.author: normesta
   ms.topic: module
   ms.service: azure-storage
 title: Monitor, diagnose, and troubleshoot your Azure Storage
-summary: Discover the tools available to detect and correct problems with your Azure Storage to enable your cloud storage infrastructure to operate at peak performance.
+summary: Discover the tools available to detect and correct problems with your Azure Storage, so you can enable your cloud storage infrastructure to operate at peak performance.
 abstract: | 
   In this module, you will:
   - Identify the tools used to troubleshoot issues with Azure Storage.
@@ -38,4 +38,4 @@ units:
 - learn.monitor-diagnose-and-troubleshoot-azure-storage.7-summary
 badge:
   uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.badge
-
+

@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: "Azure DevOps only"
       isCorrect: false
-      explanation: "Incorrect.  Both repository types are supported."
+      explanation: "Incorrect. Both repository types are supported."
     - content: "GitHub only"
       isCorrect: false
-      explanation: "Incorrect.  Both repository types are supported."
+      explanation: "Incorrect. Both repository types are supported."
     - content: "GitHub and Azure DevOps"
       isCorrect: true
-      explanation: "Correct.  Both repository types are supported."
+      explanation: "Correct. Both repository types are supported."
   - content: "Which content type is supported by content hub solutions?"
     choices:
     - content: "Advanced Multistage Attack Detection Fusion Rule"
@@ -37,15 +37,15 @@ quiz:
       explanation: "Correct. Parsers are supported in a content hub solution."
     - content: "Search job"
       isCorrect: false
-      explanation: "Incorrect.  Parsers are supported in a content hub solution."
+      explanation: "Incorrect. Parsers are supported in a content hub solution."
   - content: "What is the maximum number of repository connections allowed for each Microsoft Sentinel workspace?"
     choices:
-    - content: "3"
+    - content: "Three"
       isCorrect: false
       explanation: "Incorrect. Five is the maximum connections for each workspace."
-    - content: "5"
+    - content: "Five"
       isCorrect: true
-      explanation: "Correct.  Five is the maximum connections for each workspace."
-    - content: "10"
+      explanation: "Correct. Five is the maximum connections for each workspace."
+    - content: "Ten"
       isCorrect: false
       explanation: "Incorrect. Five is the maximum connections for each workspace."

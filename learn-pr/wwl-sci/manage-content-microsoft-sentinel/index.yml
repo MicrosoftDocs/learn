@@ -3,13 +3,13 @@ uid: learn.wwl.manage-content-microsoft-sentinel
 metadata:
   title: Manage content in Microsoft Sentinel
   description: "Manage content in Microsoft Sentinel"
-  ms.date: 11/22/2022
-  author: wwlpublish
+  ms.date: 06/04/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Manage content in Microsoft Sentinel
-summary: By the end of this module, you'll be able to manage _content_ in Microsoft Sentinel.
+summary: By the end of this module, you're able to manage _content_ in Microsoft Sentinel.
 abstract: |
   After completing this module, you'll be able to:
   *   Install a content hub solution in Microsoft Sentinel
