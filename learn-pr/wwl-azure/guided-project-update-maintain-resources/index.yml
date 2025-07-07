@@ -4,8 +4,8 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Guided Project – Update and Maintain Resources
-  description: "Update and maintain Azure resources"
-  ms.date: 07/03/2025
+  description: "Manage Azure compute, networking, and storage resources."
+  ms.date: 07/07/2025
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module-guided-project
