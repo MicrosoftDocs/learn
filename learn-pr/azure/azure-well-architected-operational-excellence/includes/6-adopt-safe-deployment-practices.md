@@ -13,7 +13,7 @@ The app is fully deployed in Azure and is built on Azure App Service, Azure Cosm
 
 **Use infrastructure as code (IaC) to define the repeatable aspects of the supply chain that are production ready. Prefer declarative approaches over imperative methods.**
 
-Declarative IaC tools are built to make automation and reuse easy. They let you shift infrastructure setup from individuals to tools, so actions get done the same way every time, with fewer mistakes.
+Declarative IaC tools are built to make automation and reuse easy. They let you shift infrastructure setup from individuals to tools and pipelines, so actions get done the same way every time, with fewer mistakes.
 
 Fewer technology options also reduce variance in tooling, make it easier to see configuration drift, and simplify maintenance. If you pick tools that match your team's existing skills, it's easier for everyone to get on board.
 

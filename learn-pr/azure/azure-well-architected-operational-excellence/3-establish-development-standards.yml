@@ -45,7 +45,7 @@ quiz:
       explanation: "Correct. Testing early and often helps development efficiency by catching bugs early and reducing the cost of fixing them."
   - content: "How did Contoso determine which recent process changes had the greatest impact on improving quality and efficiency?"
     choices:
-    - content: "They used the reporting features in Azure DevOps to measure their velocity."
+    - content: "They used the reporting features in Azure DevOps to help track improvements over time."
       isCorrect: true
       explanation: "Correct. Azure DevOps provides reporting features that can help you measure your velocity and identify areas for improvement."
     - content: "They timed how long it took to complete each step in their development process."

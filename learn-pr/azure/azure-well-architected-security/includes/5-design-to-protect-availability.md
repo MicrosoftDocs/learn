@@ -29,9 +29,9 @@ This approach helps keep the system up and running, even if someone tries to tak
 - They also added better input checks to clean up anything suspicious before it reaches the system.
 - With stronger input filtering and a smarter design, they've reduced the risk of this kind of attack happening again.
 
-## Proactively reduce risky entry points
+## Proactively limit attack vectors
 
-**Set up protections ahead of time to block common ways that attackers try to break in, like bugs in your code, weak network setups, or missing antivirus.**
+**Set up controls ahead of time to block common ways that attackers try to break in, like bugs in your code, weak network setups, or missing antivirus.**
 
 Regularly scan your code, install security updates, keep software current, and run antivirus tools. These practices help reduce the ways that attackers can get in, and they help keep things running smoothly.
 
@@ -55,7 +55,7 @@ Regularly scan your code, install security updates, keep software current, and r
 
 You should always have a clean, safe version of your system ready to go in case something goes wrong. That way, you can switch over to a secure backup system and restore data without introducing any threats.
 
-If your recovery process isn't well-designed, a security problem like encrypted backup data that you can't decipher or corrupted backup data can slow down recovery.
+An ineffecient recovery process can slow down recovery, which can cause you to miss recovery targets. For example, a security problem like encrypted backup data that you can't decipher or corrupted backup data might slow down recovery.
 
 *Contoso's challenge*
 

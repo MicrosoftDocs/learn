@@ -15,7 +15,7 @@ These teams are very protective of their data. They want to know that Contoso is
 
 **Analyze each part of your workflow and consider what could go wrong. Use an industry-standard methodology to classify the identified threats.**
 
-Threat modeling is the process of identifying, understanding, and addressing potential security threats before they become real problems. Analyzing your workload helps you create a report that ranks attack paths by how serious they are and makes it easier to spot threats and weak spots quickly.
+Threat modeling helps you find and fix security threats before they become real problems. Analyzing your workload helps you put together a report that shows which attack paths are the most serious and helps you quickly find weak spots.
 
 *Contoso's challenge*
 
@@ -34,7 +34,7 @@ Threat modeling is the process of identifying, understanding, and addressing pot
 
 ## Test controls yourself
 
-**Have security experts try to safely hack your system occasionally to find weak spots. Regularly scan your infrastructure, code, and tools to catch any vulnerabilities before they become real problems.**
+**Have security experts try to ethically hack your system occasionally to find weak spots. Regularly scan your infrastructure, code, and tools to catch any vulnerabilities before they become real problems.**
 
 Running security tests that mimic real-world attacks, like penetration testing, helps you see if your defenses actually work.
 

@@ -47,9 +47,9 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "Correct. Contoso suffered from a lack of standardization in their toolset. This affected productivity and quality."
+      explanation: "Correct. Contoso suffered from a lack of standardization in their toolset. This problem affected productivity and quality."
     - content: "False"
       isCorrect: false
-      explanation: "Incorrect. Contoso suffered from a lack of standardization in their toolset. This affected productivity and quality."
+      explanation: "Incorrect. Contoso suffered from a lack of standardization in their toolset. This problem affected productivity and quality."
 
  
