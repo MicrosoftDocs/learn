@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 7
 content: |
   [!include[](includes/7-knowledge-check.md)]

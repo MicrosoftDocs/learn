@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom:
     - ignite-2024
+  module_assessment: true
 durationInMinutes: 8
 quiz:
   title: Check your knowledge

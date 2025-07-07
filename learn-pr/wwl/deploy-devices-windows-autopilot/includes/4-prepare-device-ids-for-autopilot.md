@@ -7,13 +7,14 @@ After you meet all the prerequisites, you can set up Windows Autopilot deploymen
 
 ### Manage Windows Autopilot in Intune
 
-If you want to manage Windows Autopilot in the Intune, you must configure automatic mobile device management enrollment of Azure AD member Windows 11 devices. You can configure automatic mobile device management enrollment by performing the following steps:
+If you want to manage Windows Autopilot in Microsoft Intune, you must configure automatic mobile device management (MDM) enrollment for Microsoft Entra ID-joined Windows 11 devices. You can configure automatic MDM enrollment by performing the following steps:
 
-1.  In the Azure portal, select **Azure Active Directory**.
-2.  On the Azure Active Directory blade, select **Mobility (MDM and MAM)**, and then in the details pane, select **Microsoft Intune**.
-3.  On the Microsoft Intune blade, in MDM user scope, select **All** if you want all users to be able to enroll their devices to mobile device management. If you want only some users to be able to enroll their devices to mobile device management, select **Some**, specify the groups whose members should be able to enroll, and then select **Save**.
+1. In the Microsoft Entra admin center, select **Microsoft Entra ID**.
+2. On the Microsoft Entra ID blade, select **Mobility (MDM and MAM)**, and then in the details pane, select **Microsoft Intune**.
+3. On the Microsoft Intune blade, under **MDM user scope**, select **All** if you want all users to be able to enroll their devices in mobile device management. If you want only certain users to be able to enroll their devices, select **Some**, specify the groups whose members should be able to enroll, and then select **Save**.
 
 As discussed earlier, you can create Windows Autopilot deployment profiles in the Microsoft Intune admin center.
+
 
 ### Prepare a Microsoft Autopilot deployment
 
@@ -79,3 +80,4 @@ Install-Script -Name Get-WindowsAutopilotInfo
 ```powershell
 Get-WindowsAutoPilotInfo.ps1 -online -GroupTag "Autopilot-Devices" -Assign
 ```
+

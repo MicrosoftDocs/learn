@@ -1,16 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.azure-event-grid
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Event Grid
   description: "Explore Azure Event Grid"
-  ms.date: 07/17/2024
+  ms.date: 06/16/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure-event-grid
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Explore Azure Event Grid
 summary: Learn how to integrate Azure Event Grid in to your solution, implement access control to events, and how to route custom events to web endpoint by using Azure CLI.
 abstract: |
@@ -46,4 +49,4 @@ units:
 - learn.wwl.azure-event-grid.knowledge-check
 - learn.wwl.azure-event-grid.summary
 badge:
-  uid: learn.wwl.azure-event-grid.badge
+  uid: learn.wwl.azure-event-grid.badge

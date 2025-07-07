@@ -31,7 +31,7 @@ The list also gives links to guidance on moving specific resource types. For exa
 
 Virtual machines have their own limitations you must keep in mind. Here's a summary of limitations for virtual machines:
 
-- If you want to move a virtual machine, all of its dependents must go with it.
+- You can move a virtual machine, but all of its dependent resources must go with it.
 - You can't move virtual machines with certificates in Azure Key Vault between subscriptions.
 - You can't move virtual machine scale sets with standard load balancers or a standard public IP.
 - You can't move any managed disks that are in availability zones to different subscriptions.

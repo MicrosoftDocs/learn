@@ -39,8 +39,6 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - Complete an [introduction to infrastructure as code by using Bicep](/training/modules/introduction-to-infrastructure-as-code-using-bicep/).
 
-- Complete an [introduction to Azure Cache for Redis](/training/modules/intro-to-azure-cache-for-redis/).
-
 - Explore [message queues and stream processing](/training/modules/cmu-message-queues-streams/).
 
 ## Learn more with optional hands-on exercises

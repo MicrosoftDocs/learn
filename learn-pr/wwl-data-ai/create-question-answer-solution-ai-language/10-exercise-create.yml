@@ -11,8 +11,6 @@ metadata:
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 20
-labId: 152405
-labModal: true
 content: |
   [!include[](includes/10-exercise-create.md)]
 

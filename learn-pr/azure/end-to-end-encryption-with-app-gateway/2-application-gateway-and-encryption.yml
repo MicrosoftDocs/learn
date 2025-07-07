@@ -3,7 +3,7 @@ uid: learn.end-to-end-encryption-with-app-gateway.2-application-gateway-and-encr
 metadata:
   title: Application Gateway and encryption
   description: Application Gateway and encryption
-  ms.date: 01/22/2024
+  ms.date: 06/25/2025
   author: greg-lindsay
   ms.author: greglin
   ms.topic: unit
@@ -28,18 +28,18 @@ quiz:
     - content: "Application Gateway automatically protects the communications between clients and the servers running your application. You don't need to do any additional configuration."
       isCorrect: false
       explanation: "No. You must configure SSL for incoming requests from clients to Application Gateway, and for traffic transmitted between Application Gateway and the servers running your application."
-  - content: "Which of the following can't be placed in the backend pool of an application gateway?"
+  - content: "Which of the following can't you place in the backend pool of an application gateway?"
     choices:
     - content: "Azure App Service"
       isCorrect: false
-      explanation: "Azure App Service can be placed in a backend pool."
+      explanation: "You can place Azure App Service in a backend pool."
     - content: "Azure virtual machines"
       isCorrect: false
-      explanation: "Azure virtual machines can be placed in a backend pool."
+      explanation: "You can place Azure virtual machines in a backend pool."
     - content: "Azure Cosmos DB"
       isCorrect: true
-      explanation: "Correct. Azure Cosmos DB can't be placed in a backend pool."
+      explanation: "Correct. You can't place Azure Cosmos DB in a backend pool."
     - content: "Azure virtual machine scale sets"
       isCorrect: false
-      explanation: "Azure virtual machine scale sets can be placed in a backend pool."
-
+      explanation: "You can place Azure virtual machine scale sets in a backend pool."
+

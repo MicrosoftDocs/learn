@@ -42,7 +42,9 @@ units:
 - learn.security-copilot-describe-agents.introduction
 - learn.security-copilot-describe-agents.describe-agents
 - learn.security-copilot-describe-agents.describe-threat-intelligence-briefing-agent
+- learn.security-copilot-describe-agents.explore-threat-intelligence-briefing-agent
 - learn.security-copilot-describe-agents.describe-conditional-access-optimization-agent  
+- learn.security-copilot-describe-agents.explore-conditional-access-optimization-agent
 - learn.security-copilot-describe-agents.describe-phishing-triage-agent
 - learn.security-copilot-describe-agents.module-assessment
 - learn.security-copilot-describe-agents.summary

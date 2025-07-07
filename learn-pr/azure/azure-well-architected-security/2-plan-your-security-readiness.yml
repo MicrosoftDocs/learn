@@ -4,7 +4,7 @@ title: Plan your security readiness
 metadata:
   title: Plan your security readiness
   description: Learn about the importance of planning your security readiness to have a robust security posture for your workload.
-  ms.date: 12/18/2023
+  ms.date: 05/15/2025
   author: PageWriter-MSFT
   ms.author: prwilk
   ms.topic: unit
@@ -14,39 +14,39 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What is a benefit of using segmentation in your approach to security?'
+  - content: "How does segmentation benefit your approach to security?"
     choices:
-    - content: 'Segmentation allows you to isolate access to resources based on the principle of least privilege.'
+    - content: "Segmentation allows you to isolate access to resources based on the principle of least privilege."
       isCorrect: true
-      explanation: 'Correct. Segmentation minimizes the risk of lateral movement by attackers by limiting access to only those resources that are required.'
-    - content: 'Segmentation blocks all access to resources, which prevents attackers from accessing them.'
+      explanation: "Correct. Segmentation minimizes the risk of lateral movement by attackers by limiting access to only those resources that are required."
+    - content: "Segmentation blocks all access to resources, which prevents attackers from accessing them."
       isCorrect: false
-      explanation: 'Incorrect. Segmentation blocks access only to resources that are not required, not all resources.'
-    - content: 'Segmentation forces all users to use multifactor authentication (MFA) to access resources.'
+      explanation: "Incorrect. Segmentation blocks access only to resources that aren't required, not all resources."
+    - content: "Segmentation forces all users to use multifactor authentication (MFA) to access resources."
       isCorrect: false
-      explanation: 'Incorrect. Segmentation is a strategy to limit access to resources, not a strategy to enforce MFA.'
-    - content: 'Segmentation forces all users to use single sign-on (SSO) to access resources.'
+      explanation: "Incorrect. Segmentation limits access to resources. It doesn't enforce MFA."
+    - content: "Segmentation forces all users to use single sign-on (SSO) to access resources."
       isCorrect: false
-      explanation: 'Incorrect. Segmentation is a strategy to limit access to resources, not a strategy to enforce SSO.'
-  - content: 'What type of plan should you create to ensure that security events are detected and responded to in a timely manner?'
+      explanation: "Incorrect. Segmentation limits access to resources. It doesn't enforce SSO."
+  - content: "What type of plan helps you quickly detect and respond to security incidents?"
     choices:
-    - content: 'A disaster recovery plan'
+    - content: "A disaster recovery plan"
       isCorrect: false
-      explanation: 'Incorrect. Although some security incidents may qualify as disasters, you should have a plan that focuses directly on security incidents as well.'
-    - content: 'A business continuity plan'
+      explanation: "Incorrect. Although some security incidents might qualify as disasters, you should also have a plan that focuses directly on security incidents."
+    - content: "A business continuity plan"
       isCorrect: false
-      explanation: 'Incorrect. Although security incidents may affect business continuity, you should have a plan that focuses directly on security incidents as well.'
-    - content: 'A security incident response plan'
+      explanation: "Incorrect. Although security incidents might affect business continuity, you should also have a plan that focuses directly on security incidents."
+    - content: "A security incident response plan"
       isCorrect: true
-      explanation: 'Correct. A security incident response plan defines the actions that you should take in response to a security incident.'
-    - content: 'A DDoS mitigation plan'
+      explanation: "Correct. A security incident response plan defines the actions that you should take in response to a security incident."
+    - content: "A DDoS mitigation plan"
       isCorrect: false
-      explanation: 'Incorrect. Although a DDoS attack is a type of security incident, you should have a plan that focuses on all types of security incidents.'
-  - content: "True or false: Contoso's use of secure development practices will help the team ensure that all code is developed in a consistent standard manner."
+      explanation: "Incorrect. Although a DDoS attack is a type of security incident, you should have a plan that focuses on all types of security incidents."
+  - content: "True or false: Contoso's secure development practices help the team ensure that all code is developed in a consistent standard manner."
     choices:
-    - content: 'True.'
+    - content: "True"
       isCorrect: true
-      explanation: 'Correct. Secure development practices dictate the standards that all code development should follow at all times.'
-    - content: 'False.'
+      explanation: "Correct. Secure development practices dictate the standards that all code development should follow at all times."
+    - content: "False"
       isCorrect: false
-      explanation: 'Incorrect. Secure development practices dictate the standards that all code development should follow at all times.'
+      explanation: "Incorrect. Secure development practices dictate the standards that all code development should follow at all times."

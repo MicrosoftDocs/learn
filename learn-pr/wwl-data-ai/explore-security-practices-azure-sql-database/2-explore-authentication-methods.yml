@@ -8,6 +8,7 @@ metadata:
   author: jupadrao
   ms.author: jupadrao
   ms.topic: unit
+  ms.custom: sfi-ropc-blocked
 durationInMinutes: 7
 content: |
   [!include[](includes/2-explore-authentication-methods.md)]

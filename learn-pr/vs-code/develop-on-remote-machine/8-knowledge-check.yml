@@ -8,6 +8,7 @@ metadata:
   author: olguzzar
   ms.author: olguzzar
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 2
 
 content: |

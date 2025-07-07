@@ -1,5 +1,7 @@
 [Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is) combines features of big data analytics, enterprise data storage, and data integration. The service lets you run queries on serverless data or data at scale. Azure Synapse supports data ingestion, exploration, transformation, and management, and supports analysis for all your BI and machine learning needs.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e16eb645-1418-4407-8fc2-39089ad522b2]
+
 ### Things to know about Azure Synapse Analytics
 
 Azure Synapse Analytics implements a massively parallel processing (MPP) architecture and has the following characteristics.

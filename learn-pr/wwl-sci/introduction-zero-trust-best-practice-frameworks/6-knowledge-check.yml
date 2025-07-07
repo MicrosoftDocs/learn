@@ -13,6 +13,7 @@ metadata:
   content_well_notification: 
     - AI-contribution
   ai-usage: ai-assisted
+  module_assessment: true
 durationInMinutes: 3
 ###########################################################################
 ###

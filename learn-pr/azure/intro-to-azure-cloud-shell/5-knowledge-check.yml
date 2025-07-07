@@ -10,6 +10,7 @@ metadata:
   ms.author: viniap
   ms.topic: unit
   ms.custom: team=cloud_advocates
+  module_assessment: true
 durationInMinutes: 4
 quiz:
   title: Check your knowledge

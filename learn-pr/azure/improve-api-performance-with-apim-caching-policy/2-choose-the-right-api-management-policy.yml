@@ -4,11 +4,11 @@ title: Choose the right API Management policy
 metadata:
   title: Choose the right API Management policy
   description: In this unit, you learn about API Management policies and how to execute the on API requests.
-  ms.date: 07/11/2023
+  ms.date: 06/09/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-choose-the-right-api-management-policy.md)]
-
+

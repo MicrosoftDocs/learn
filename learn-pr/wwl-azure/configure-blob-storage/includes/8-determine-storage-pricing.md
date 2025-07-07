@@ -1,10 +1,10 @@
-Understanding your access patterns and correlating them with your durability and availability needs helps you to best manage your Azure Blob Storage costs. The primary tool for estimating these costs is the [Azure pricing calculator](/pricing/calculator). The pricing tool can calculate migration, monthly estimates, and future pricing estimates based on the workload-driven input that you specify. In general, the cost of block blob storage depends on:
+Understanding your access patterns and correlating them with your durability and availability needs helps you to best manage your Azure Blob Storage costs. The primary tool for estimating these costs is the Azure pricing calculator. The pricing tool can calculate migration, monthly estimates, and future pricing estimates based on the workload-driven input that you specify. In general, the cost of block blob storage depends on:
 
 - Volume of data stored per month.
 - Quantity and types of operations performed, along with any data transfer costs.
 - Data redundancy option selected.
 
-You can use the Azure [Pricing Calculator0(/pricing/calculator) to estimate you storage costs.
+You can use the Azure Pricing Calculator to estimate you storage costs.
 
 :::image type="content" source="../media/blob-pricing.png" alt-text="Screenshot of the Azure Pricing Calculator with storage highlighted." border="false":::
 

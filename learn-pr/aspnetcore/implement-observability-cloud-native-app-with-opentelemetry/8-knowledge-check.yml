@@ -8,6 +8,7 @@ metadata:
   author: codemillmatt  
   ms.author: masoucou
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 2
 content: |
 quiz:

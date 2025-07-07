@@ -9,7 +9,7 @@ The following image shows a typical enterprise-scale application with supporting
 
 :::image type="content" source="../media/enterprise-app-threats.png" alt-text="Diagram showing angles of attack in complex system.":::
 
-Security misconfiguration can manifest itself in many places, from `web.config` or `appsettings.json` settings, a database account, connectivity, or IIS configurations. The automation workflows and cloud hosting can be misconfigured or abused too. A CI/CD system could be storing plain-text environment credentials for release. A cloud environment could be using managed shared admin accounts instead of following the least-privileged principle. In the world of Microsoft cloud, Azure Role Base Access Control (RBAC) offers granular control over permissions granted to users and cloud services.
+Security misconfiguration can manifest itself in many places, from `web.config` or `appsettings.json` settings, a database account, connectivity, or Internet Information Services (IIS) configurations. The automation workflows and cloud hosting can be misconfigured or abused too. A CI/CD system could be storing plain-text environment credentials for release. A cloud environment could be using managed shared admin accounts instead of following the least-privileged principle. In the world of Microsoft cloud, Azure role-based access control offers granular control over permissions granted to users and cloud services.
 
 :::image type="content" source="../media/pipeline.png" alt-text="Screenshot showing Azure DevOps Library linked with Azure KeyVault.":::
 
@@ -21,6 +21,6 @@ As the new addition to the team, be on the lookout for default accounts and thei
 
 ### Code review notes
 
-As you review the code, configuration, and deployment settings, you notice a separate set of credentials and configuration for development, QA, and production environments. Your web app takes advantage of Azure KeyVault for storing and rotating secrets like connection strings and API keys. You also notice a lack of any Dynamic Application Security Testing (DAST) pipeline tasks that can help with detecting misconfigurations. You're planning to explore the Azure Marketplace for potential tools.
+As you review the code, configuration, and deployment settings, you notice a separate set of credentials and configuration for development, QA, and production environments. Your web app takes advantage of Azure KeyVault for storing and rotating secrets like connection strings and API keys. You also notice a lack of any Dynamic Application Security Testing (DAST) pipeline tasks that can help with detecting misconfigurations. You're planning to explore Azure Marketplace for potential tools.
 
-Security is everyone's responsibility; it's shared between cloud provider and you, application developers and architects.
+Security is everyone's responsibility; shared between the cloud provider and you, application developers and architects.

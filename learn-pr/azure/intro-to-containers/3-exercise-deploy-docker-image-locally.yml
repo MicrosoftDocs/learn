@@ -4,10 +4,10 @@ title: Exercise - Retrieve an existing Docker image and deploy it locally
 metadata:
   title: Exercise - Retrieve an existing Docker image and deploy it locally
   description: Pull an image from Docker Hub and load it into a local registry. Deploy and run the application from the registry. Examine and manage the registry.
-  ms.date: 06/28/2024
+  ms.date: 06/20/2025
   author: cryophobia
   ms.author: chrvaw
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-exercise-deploy-docker-image-locally.md)]
+  [!include[](includes/3-exercise-deploy-docker-image-locally.md)]
