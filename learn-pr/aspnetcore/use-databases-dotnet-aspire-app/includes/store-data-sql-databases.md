@@ -20,7 +20,7 @@ In the app host project:
 
 - Install the .NET Aspire hosting integration to the app host project.
 - Register a database and create a container for it in the solution's app host.
-- Pass a reference to the projects that needs access to the created container hosting the database.
+- Pass a reference to the projects that need access to the created container hosting the database.
 
 In the projects that use the database:
 
@@ -114,12 +114,12 @@ Once the database is registered in the consuming project, you can interact with 
 public class YourService(NpgsqlDataSource dataSource)
 {
     public async Task<IEnumerable<Catalog>> GetCatalog()
-	{
+    {
         const string query = "SELECT * FROM catalog";
         using var dbConnection = dataSource.OpenConnection();
         var results = await dbConnection.QueryAsync<Catalog>(command);
         return queryResult.ToArray();
-	}
+    }
 }
 ```
 
@@ -129,17 +129,17 @@ Or you can then retrieve the database context `YourDbContext` to interact with t
 public class YourService(YourDbContext context)
 {
     public async Task<IEnumerable<Catalog>> GetCatalog()
-	{
+    {
         var items = await context.ObjectItems;
         if (item is null)
         {
             return Results.NotFound();
         }
-		else
-		{
-		    return items;
-		}
-	}
+        else
+        {
+        return items;
+        }
+    }
 }
 ```
 
@@ -171,7 +171,7 @@ Then in the configuration file, you can add the connection string:
 
 ### Using configuration providers
 
-.NET Aspire has a feature of integrations that allows them to support a `Microsoft.Extensions.Configuration`. The PostgreSQL integration supports this feature, and by default it looks for settings using the `Aspire:Npgsql` key. In projects using *appsettings.json*, an example configuration might look like this:
+.NET Aspire has a feature of integrations that allows them to support a `Microsoft.Extensions.Configuration`. The PostgreSQL integration supports this feature, and by default it looks for settings using the `Aspire:Npgsql` key. In projects using _appsettings.json_, an example configuration might look like this:
 
 ```json
 {
@@ -186,7 +186,7 @@ Then in the configuration file, you can add the connection string:
 }
 ```
 
-The previous configuration is setting the connection string, enabling health checks, tracing, and metrics for the PostgreSQL integration. You code then no longer needs to specify the connection string, just use `builder.AddNpgsqlDataSource();`.
+The previous configuration is setting the connection string, enabling health checks, tracing, and metrics for the PostgreSQL integration. Your code then no longer needs to specify the connection string, just use `builder.AddNpgsqlDataSource();`.
 
 If you're using the PostgreSQL Entity Framework Core integration, you can use the `Aspire:Npgsql:EntityFrameworkCore:PostgreSQL` key to configure the database context:
 
@@ -296,7 +296,7 @@ As before, if you use the same database name in app host and the consuming proje
 
 ### Using configuration providers
 
-The SQL Server integration also supports `Microsoft.Extensions.Configuration`. By default, it looks for settings using the `Aspire:SqlServer:SqlClient` key. In projects using *appsettings.json*, an example configuration might look like this:
+The SQL Server integration also supports `Microsoft.Extensions.Configuration`. By default, it looks for settings using the `Aspire:SqlServer:SqlClient` key. In projects using _appsettings.json_, an example configuration might look like this:
 
 ```json
 {
@@ -323,10 +323,10 @@ builder.AddSqlServerClient("sqldata", static settings => settings.HealthChecks =
 
 You can pass any of the supported options:
 
-* `ConnectionString`: The connection string of the SQL Server database
-* `HealthChecks`: A boolean value that indicates whether the database health check is enabled
-* `Tracing`: A boolean value that indicates whether the OpenTelemetry tracing is enabled
-* `Metrics`: A boolean value that indicates whether the OpenTelemetry metrics are enabled
+- `ConnectionString`: The connection string of the SQL Server database.
+- `HealthChecks`: A boolean value that indicates whether the database health check is enabled.
+- `Tracing`: A boolean value that indicates whether the OpenTelemetry tracing is enabled.
+- `Metrics`: A boolean value that indicates whether the OpenTelemetry metrics are enabled.
 
 ### Connect to multiple databases
 
@@ -380,7 +380,7 @@ var myService = builder.AddProject<Projects.MyService>()
 ```
 
 Like the PostgreSQL integration, the MySQL integration also allows you to create a container for database management tools. The previous example adds **PhpMyAdmin** to the solution.
- 
+
 ## Using a MySQL database
 
 The pattern is the same in the projects that need MySQL access. In the _Program.cs_ file, this code registers the database:
@@ -429,7 +429,7 @@ builder.AddMySqlDataSource("MySqConnection");
 ### Configuration providers
 
 The `Aspire:MySqlConnector` key is used to configure the MySQL integration.
- 
+
 ```json
 {
   "Aspire": {

@@ -28,10 +28,10 @@ quiz:
     choices:
     - content: "Connection strings in the appsettings.json file and inline code."
       isCorrect: false
-      explanation: "That's incorrect. These two ways are supported but there are more."
+      explanation: "That's incorrect. These two ways are supported, but there are more."
     - content: "With inline code and using Microsoft.Extensions.Configuration."
       isCorrect: false
-      explanation: "That's incorrect. These two ways are supported but there are more."
+      explanation: "That's incorrect. These two ways are supported, but there are more."
     - content: "Using Microsoft.Extensions.Configuration, connection strings, and inline code."
       isCorrect: true
       explanation: "That's correct. All of these ways are supported."

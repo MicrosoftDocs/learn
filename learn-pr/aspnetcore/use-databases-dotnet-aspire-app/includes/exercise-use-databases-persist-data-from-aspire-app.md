@@ -53,7 +53,7 @@ Install the .NET Aspire workload using the .NET CLI:
     You should see the details of the .NET Aspire workload.
 
     ```console
-	Installed Workload Id      Manifest Version      Installation Source
+    Installed Workload Id      Manifest Version      Installation Source
     ---------------------------------------------------------------------------------------------
     aspire                     8.0.0/8.0.100         SDK 8.0.300-preview.24203, VS 17.10.34902.84
 
