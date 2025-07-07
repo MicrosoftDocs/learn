@@ -9,6 +9,7 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

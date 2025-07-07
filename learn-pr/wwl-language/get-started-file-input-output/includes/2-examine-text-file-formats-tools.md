@@ -11,7 +11,7 @@ Developers use file I/O operations to manage app data in many ways. For example,
 - Backup and restore: Implement backup and restore functionalities to safeguard important data.
 - Analyze data: Perform data analysis or reporting by reading and processing large datasets stored in files.
 
-## Compare structured and unstructured data types
+## Compare structured and unstructured storage types
 
 Data can be categorized into two main types: structured and unstructured. Understanding the differences between these types is important for effective data management and storage.
 

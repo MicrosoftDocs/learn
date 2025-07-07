@@ -19,7 +19,7 @@ abstract: |
   - Learn how to load and transform data with dataflow (Gen 2).
 prerequisites: |
   Before starting this module, you should be familiar with the basic principles of a data warehouse.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/ingest-data-with-microsoft-fabric-notebooks.svg
 levels:
 - beginner
 roles:

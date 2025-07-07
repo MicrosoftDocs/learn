@@ -3,8 +3,8 @@ uid: learn.azure.improve-api-performance-with-apim-caching-policy.3-knowledge-ch
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: In this unit, you will answer questions based on a scenario.
-  ms.date: 07/12/2023
+  description: In this unit, you answer questions based on a scenario.
+  ms.date: 06/09/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit
@@ -29,22 +29,22 @@ quiz:
     choices:
     - content: "Inbound"
       isCorrect: false
-      explanation: "Set this policy in the Outbound tag, because you want to modify responses as they are sent to users."
+      explanation: "Set this policy in the Outbound tag, because you want to modify responses as they're sent to users."
     - content: "Outbound"
       isCorrect: true
-      explanation: "Set this policy in the Outbound tag, because you want to modify responses as they are sent to users."
+      explanation: "Set this policy in the Outbound tag, because you want to modify responses as they're sent to users."
     - content: "On-error"
       isCorrect: false
-      explanation: "Set this policy in the Outbound tag, because you want to modify responses as they are sent to users."
+      explanation: "Set this policy in the Outbound tag, because you want to modify responses as they're sent to users."
   - content: "What scope would you use for the policy that ensures XML responses?"
     choices:
     - content: "Global scope for the API Management instance"
       isCorrect: false
-      explanation: "Do not use the `<json-to-xml>` policy with global scope, because this change would force all responses from the Sales API to use XML, but the website expects JSON responses."
+      explanation: "Don't use the `<json-to-xml>` policy with global scope, because this change would force all responses from the Sales API to use XML, but the website expects JSON responses."
     - content: "Product scope for the Sales product"
       isCorrect: false
-      explanation: "Do not use the `<json-to-xml>` policy with product scope, because this change would force all responses from the Sales API to use XML, but the website expects JSON responses. Also, this scope does not apply to the Board Pricing API, which is not part of the Sales product."
+      explanation: "Don't use the `<json-to-xml>` policy with product scope, because this change would force all responses from the Sales API to use XML, but the website expects JSON responses. Also, this scope doesn't apply to the Board Pricing API, which isn't part of the Sales product."
     - content: "API scope for the Board Pricing API"
       isCorrect: true
       explanation: "Use the `<json-to-xml>` policy with API scope for the Board Pricing API to ensure that all responses are sent in XML, even if developers coded them to return JSON."
-
+

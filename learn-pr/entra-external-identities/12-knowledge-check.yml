@@ -8,6 +8,7 @@ metadata:
   author: linkhp
   ms.author: lipar
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

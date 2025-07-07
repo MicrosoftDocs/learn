@@ -13,7 +13,7 @@ prediction_client = CustomVisionPredictionClient(endpoint="<YOUR_PREDICTION_RESO
                                                  credentials=credentials)
 
 # Get classification predictions for an image
-image_data = open("<PATH_TO_IMAGE_FILE>"), "rb").read()
+image_data = open("<PATH_TO_IMAGE_FILE>", "rb").read()
 results = prediction_client.detect_image("<YOUR_PROJECT_ID>",
                                            "<YOUR_PUBLISHED_MODEL_NAME>",
                                            image_data)

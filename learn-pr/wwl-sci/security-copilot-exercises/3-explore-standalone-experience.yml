@@ -10,6 +10,6 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 15
+durationInMinutes: 30
 content: |
   [!include[](includes/3-explore-standalone-experience.md)]

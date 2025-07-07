@@ -1,8 +1,8 @@
 Azure Kubernetes Service allows you to create different node pools to match specific workloads to the nodes running in each node pool.
 
-Recall from the drone-tracking example that your team developed a new predictive-modeling service that processes flight-path information in extreme weather conditions and creates optimal flight routes. This service requires GPU-based virtual-machine (VM) support and runs only on specific days during the week. The team wants to make sure no VMS are used when the service doesn't run.
+Recall from the drone-tracking example that your team developed a new predictive modeling service that processes flight-path information in extreme weather conditions and creates optimal flight routes. This service requires GPU-based virtual-machine (VM) support and runs only on specific days during the week. The team wants to make sure no VMS are used when the service doesn't run.
 
-Here, you'll create an Azure Kubernetes Service (AKS)-managed Kubernetes cluster. Next, you'll configure the cluster to support multiple node pools and allows clusters to scale the nodes in the node pools. Then, you'll add a second node pool to support user workloads with a dynamic node count. Finally, you'll scale the node count to zero to reduce the cost of the nodes used in your AKS cluster.
+Here, you'll create an Azure Kubernetes Service (AKS)-managed Kubernetes cluster. Next, you'll configure the cluster to support multiple node pools and allow clusters to scale the nodes in the node pools. Then, you'll add a second node pool to support user workloads with a dynamic node count. Finally, you'll scale the node count to zero to reduce the cost of the nodes used in your AKS cluster.
 
 ## Create a new resource group
 
@@ -12,6 +12,8 @@ Here, you'll create an Azure Kubernetes Service (AKS)-managed Kubernetes cluster
     >[Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
 1. You'll reuse the values you create here throughout all the exercises in this module. Save the output for future use.
+
+1. At the top of the Cloud Shell window, select **Settings** > **Go to Classic version**.
 
 1. Choose a region to host your resource group. Features from later exercises aren't available in all regions. For this reason, we recommend that you use **eastus** as your region. If you choose to use a different value, change the value of `REGION_NAME`.
 
@@ -50,7 +52,7 @@ With the resource group created, you can create AKS clusters within the group. Y
     ```azurecli
     VERSION=$(az aks get-versions \
         --location $REGION_NAME \
-        --query "values[?isPreview==null].version | [-1]" \
+        --query "values[?isPreview==null].version | [1]" \
         --output tsv)
     echo $VERSION
     ```

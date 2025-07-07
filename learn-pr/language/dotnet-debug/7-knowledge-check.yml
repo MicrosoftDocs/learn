@@ -11,6 +11,7 @@ metadata:
   ms.topic: unit
   ms.custom:
     - devx-track-dotnet
+  module_assessment: true
 durationInMinutes: 2
 quiz:
   title: Check your knowledge

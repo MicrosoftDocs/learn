@@ -3,8 +3,8 @@ uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs
 metadata:
   title: Configure SIEM security operations using Microsoft Sentinel
   description: "Configure security information and event management (SIEM) security operations using Microsoft Sentinel."
-  ms.date: 04/01/2025
-  author: wwlpublish
+  ms.date: 06/25/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module-guided-project 
   ms.service: microsoft-sentinel
@@ -15,12 +15,15 @@ abstract: |
   Upon completion of this module, the learner is able to:
   - Create and configure a Microsoft Sentinel workspace
   - Deploy Microsoft Sentinel Content Hub solutions and data connectors
-  - Configure Microsoft Sentinel Data Collection rules, NRT Analytic rule and Automation
+  - Configure Microsoft Sentinel Data Collection rules, NRT Analytic rule, and Automation
   - Perform a simulated attack to validate Analytic and Automation rules
+  - Run a simulation exercise to connect a Microsoft Sentinel workspace to the Microsoft Defender portal
 prerequisites: |
+  - An Azure subscription
   - Basic experience with Azure services
   - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
-  - An Azure subscription
+  - Basic experience with Microsoft Defender
+  - Familiarity with security operations concepts, such as incident response and threat detection
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate
@@ -30,6 +33,7 @@ products:
 - azure
 - microsoft-sentinel
 - azure-log-analytics
+- microsoft-defender
 subjects: 
   - threat-protection
   - cloud-security
@@ -39,6 +43,7 @@ units:
 - learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs-deploy.exercise
 - learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs-validate.exercise
 - learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs-perform.exercise
+- learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs-simulation.exercise
 - learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs.summary
 badge:
   uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs.badge

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-where-clause-subqueries.sample-database-overview
+uid: learn.azure-databases.postgresql.basic-sql-where-clause-subqueries.sample-database-overview
 title: Sample database
 metadata:
   title: Sample database overview
   description: "This unit introduces the structure and purpose of the sales sample database used throughout the module. It describes the key tables, their relationships via foreign keys, and how the database supports tracking orders, inventory, and customer activity. A schema diagram and SQL script are provided to help learners explore and understand the data model."
-  ms.date: 05/14/2025
+  ms.date: 05/23/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit

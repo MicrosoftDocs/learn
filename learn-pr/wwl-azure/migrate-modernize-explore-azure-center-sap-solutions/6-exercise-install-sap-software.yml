@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 durationInMinutes: 12
 content: |
   [!include[](includes/6-exercise-install-sap-software.md)]

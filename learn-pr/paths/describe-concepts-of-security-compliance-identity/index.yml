@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.describe-concepts-of-security-compliance-identity
 metadata:
-  title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, compliance, and identity'
-  description: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, compliance, and identity'
-  ms.date: 08/08/2022
+  title: 'Introduction to security, compliance, and identity concepts'
+  description: 'SC-900: Introduction to security, compliance, and identity concepts'
+  ms.date: 06/11/2025
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: learning-path
-title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, compliance, and identity'
+title: 'Introduction to security, compliance, and identity concepts'
 prerequisites: |
   *   None
 summary: |
@@ -18,24 +18,24 @@ summary: |
   :::column:::
     <img src="/training/achievements/describe-the-concepts-of-security-compliance-and-identity.svg" width="101" alt="Screenshot of the trophy for the Describe the concepts of security, compliance, and identity learning path." role="presentation"></img>
     
-    Part 1: Describe the concepts of security, compliance, and identity
+    Part 1: Introduction to security, compliance, and identity concepts
   :::column-end:::
   :::column:::
     <img src="/training/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg" width="101" alt="Screenshot of the trophy for the Describe the capabilities of Microsoft Entra learning path." role="presentation"></img>
     
-    [Part 2: Describe the capabilities of Microsoft Entra](../describe-capabilities-of-microsoft-identity-access/index.yml)
+    [Part 2: Introduction to Microsoft Entra](../describe-capabilities-of-microsoft-identity-access/index.yml)
   :::column-end:::
   :::row-end:::
   :::row:::
    :::column:::
     <img src="/training/achievements/describe-the-capabilities-of-microsoft-security-solutions.svg" width="101" alt="Screenshot of the trophy for the Describe the capabilities of Microsoft security solutions learning path." role="presentation"></img>
     
-    [Part 3: Describe the capabilities of Microsoft security solutions](../describe-capabilities-of-microsoft-security-solutions/index.yml)
+    [Part 3: Introduction to Microsoft security solutions](../describe-capabilities-of-microsoft-security-solutions/index.yml)
   :::column-end:::
   :::column:::
     <img src="/training/achievements/describe-the-capabilities-of-microsoft-compliance-solutions.svg" width="101" alt="Screenshot of the trophy for the Describe the capabilities of Microsoft compliance solutions learning path." role="presentation"></img>
     
-    [Part 4: Describe the capabilities of Microsoft Priva and Microsoft Purview](../describe-capabilities-of-microsoft-compliance-solutions/index.yml)
+    [Part 4: Introduction to Microsoft Priva and Microsoft Purview](../describe-capabilities-of-microsoft-compliance-solutions/index.yml)
   :::column-end:::
   :::row-end:::
   
@@ -44,7 +44,7 @@ summary: |
   :::column:::
     <img src="/training/achievements/cybersecurity-basic-concepts.svg" width="101" alt="Screenshot of the trophy for the Describe the basic concepts of cybersecurity learning path." role="presentation"></img>
     
-    Primer: [Describe the basic concepts of cybersecurity](../describe-basic-concepts-of-cybersecurity/index.yml)
+    Primer: [Describe the concepts of cybersecurity](../describe-basic-concepts-of-cybersecurity/index.yml)
   :::column-end:::
   :::row-end::: 
 iconUrl: /training/achievements/describe-the-concepts-of-security-compliance-and-identity.svg

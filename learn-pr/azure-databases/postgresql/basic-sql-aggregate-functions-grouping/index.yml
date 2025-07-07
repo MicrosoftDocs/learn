@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn.wwl-azure.basic-sql-aggregate-functions-grouping
+uid: learn.azure-databases.postgresql.basic-sql-aggregate-functions-grouping
 metadata:
   title: "Summarizing data: Aggregate functions and grouping"
   description: "Analyze data in PostgreSQL with aggregate functions and grouping. Learn COUNT, SUM, AVG, and filter results using GROUP BY and HAVING."
-  ms.date: 05/14/2025
+  ms.date: 05/23/2025
   author: mpopovic
   ms.author: mpopovic
   ms.topic: module-standard-task-based
@@ -166,10 +166,10 @@ products:
 subjects:
   - databases
 units:
-- learn.wwl-azure.basic-sql-aggregate-functions-grouping.introduction
-- learn.wwl-azure.basic-sql-aggregate-functions-grouping.sample-database-overview
-- learn.wwl-azure.basic-sql-aggregate-functions-grouping.aggregate-functions
-- learn.wwl-azure.basic-sql-aggregate-functions-grouping.group-by-having
-- learn.wwl-azure.basic-sql-aggregate-functions-grouping.summary
+- learn.azure-database.postgresql.basic-sql-aggregate-functions-grouping.introduction
+- learn.azure-database.postgresql.basic-sql-aggregate-functions-grouping.sample-database-overview
+- learn.azure-database.postgresql.basic-sql-aggregate-functions-grouping.aggregate-functions
+- learn.azure-database.postgresql.basic-sql-aggregate-functions-grouping.group-by-having
+- learn.azure-database.postgresql.basic-sql-aggregate-functions-grouping.summary
 badge:
-  uid: learn.wwl-azure.basic-sql-aggregate-functions-grouping.badge
+  uid: learn.azure-database.postgresql.basic-sql-aggregate-functions-grouping.badge

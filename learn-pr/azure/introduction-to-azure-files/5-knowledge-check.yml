@@ -8,6 +8,7 @@ metadata:
   author: khdownie
   ms.author: kendownie
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 9
 content: |
   [!include[](includes/5-knowledge-check.md)]

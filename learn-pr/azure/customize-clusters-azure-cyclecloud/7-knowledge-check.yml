@@ -9,6 +9,7 @@ metadata:
   author: anhoward
   ms.author: anhoward
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 2
 content: |
 quiz:

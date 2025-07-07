@@ -19,7 +19,7 @@ abstract: |
   - Learn how to configure granular permissions using T-SQL.
 prerequisites: |
   Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/secure-a-microsoft-fabric-data-warehouse.svg
 levels:
 - beginner
 roles:

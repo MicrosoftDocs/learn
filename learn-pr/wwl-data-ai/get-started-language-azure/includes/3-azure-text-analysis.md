@@ -54,7 +54,7 @@ For example, suppose you use Azure AI Language to detect entities in the followi
 You can identify the language in which text is written with Azure AI Language's language detection capability. For each document submitted the service detects:
 
 - The language name (for example "English").
-- The ISO 639-1 language code (for example, "en").
+- The ISO 6391 language code (for example, "en").
 - A score indicating a level of confidence in the language detection.
 
 For example, consider a scenario where you own and operate a restaurant. Customers can complete surveys and provide feedback on the food, the service, staff, and so on. Suppose you received the following reviews from customers:

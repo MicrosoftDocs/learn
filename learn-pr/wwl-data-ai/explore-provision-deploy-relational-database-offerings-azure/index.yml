@@ -3,9 +3,9 @@ uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure
 metadata:
   title: Explore relational database services in Azure
   description: "This content is a part of Explore relational database services in Azure."
-  ms.date: 10/09/2024
+  ms.date: 06/20/2025
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: calopez
   ms.topic: module-standard-task-based
   ms.collection: N/A
   ms.custom:
@@ -43,4 +43,4 @@ units:
 - learn.wwl.explore-provision-deploy-relational-database-offerings-azure.knowledge-check
 - learn.wwl.explore-provision-deploy-relational-database-offerings-azure.summary
 badge:
-  uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.badge
+  uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.badge

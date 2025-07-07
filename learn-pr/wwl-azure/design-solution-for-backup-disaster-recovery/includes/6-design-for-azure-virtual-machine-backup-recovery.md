@@ -1,5 +1,9 @@
 Azure Backup provides independent and isolated [backups for Azure virtual machines](/azure/backup/backup-azure-vms-introduction). You can use Azure Backup to take snapshot backups and restore the data on your virtual machines if there's data corruption or accidental deletion. 
 
+In this video, the instructor discusses considerations for virtual machine backup and recovery.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f5a78d16-9c91-4004-b2c0-d8618765dfc0]
+
 ### Things to know about virtual machine backup and recovery
 
 Let's examine how Azure Backup supports backup and recovery of Azure virtual machines.

@@ -65,7 +65,6 @@ subjects:
 modules:
 - learn.azure.intro-to-java-azure
 - learn.java-target-destinations
-- learn.azure.deploy-java-spring-boot-app-service-mysql
 - learn.azure.deploy-java-quarkus-azure-container-app-postgres
 - learn.azure.build-tomcat-java-appservice
 - learn.azure-spring-cloud-workshop

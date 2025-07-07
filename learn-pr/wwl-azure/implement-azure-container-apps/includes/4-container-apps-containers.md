@@ -89,3 +89,4 @@ Azure Container Apps has the following limitations:
 
 * **Privileged containers**: Azure Container Apps can't run privileged containers. If your program attempts to run a process that requires root access, the application inside the container experiences a runtime error.
 * **Operating system**: Linux-based (`linux/amd64`) container images are required.
+
