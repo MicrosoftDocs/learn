@@ -2,29 +2,13 @@ No two students are the same—which is why Microsoft Education offers solutions
 
 ## Learning Accelerators
 
-:::row:::
-
-:::column span="2":::
-
 [Learning Accelerators](https://www.microsoft.com/education/learning-tools/learning-accelerators) are AI-powered tools designed for scalable, personalized learning.  
 
 Integrated directly into Microsoft 365 Education products, they provide targeted practice in foundational skills like reading and future-ready skills like public speaking.
 
 Learning Accelerators increase student engagement and provide educators with valuable insights.
 
-:::column-end:::
-:::column span="":::
-
-:::image type="icon" border="false" source="../media/learning-accelerators.png":::
-
-:::column-end:::
-:::row-end:::
-
 ## Social-emotional skills
-
-:::row:::
-
-:::column span="2":::
 
 Microsoft Education is dedicated to fostering learning environments where students are comfortable being themselves.
 
@@ -32,19 +16,7 @@ Microsoft Education is dedicated to fostering learning environments where studen
 
 In addition, [Minecraft Education](https://education.minecraft.net/) contains lessons built to foster emotional intelligence.
 
-:::column-end:::
-:::column span="":::
-
-:::image type="icon" border="false" source="../media/reflect.png":::
-
-:::column-end:::
-:::row-end:::
-
 ## Accessibility tools
-
-:::row:::
-
-:::column span="2":::
 
 Microsoft Education products have accessibility tools built in—and at no extra cost.
 
@@ -52,30 +24,10 @@ Microsoft Education products have accessibility tools built in—and at no extra
 
 [Other tools](https://www.microsoft.com/education/learning-tools/accessibility-tools) include supports for translation, dictation, and live captioning—just to start!
 
-:::column-end:::
-:::column span="":::
-
-:::image type="icon" border="false" source="../media/accessibility-tools.png":::
-
-:::column-end:::
-:::row-end:::
-
 ## Microsoft 365 solutions
-
-:::row:::
-
-:::column span="2":::
 
 [Microsoft 365 Education](https://www.microsoft.com/education/products/microsoft-365) features many tools and solutions to support learning.
 
 For example, [Microsoft Teams](https://www.microsoft.com/education/products/teams) enables educators to create secure and collaborative virtual classrooms.
 
 There’s also [OneNote](https://www.microsoft.com/education/products/onenote)—a note-taking app that allows K-12 institutions to create and organize notebooks, sections, and pages, including embedded web content, audio, and video.
-
-:::column-end:::
-:::column span="1":::
-
-:::image type="icon" border="false" source="../media/microsoft-365.png":::
-
-:::column-end:::
-:::row-end:::

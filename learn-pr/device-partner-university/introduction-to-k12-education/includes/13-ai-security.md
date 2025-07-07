@@ -1,3 +1,5 @@
+Microsoft Education is leading the way in AI innovation for schools—with a strong foundation in security, privacy, and responsible use.
+
 ## Responsible AI Standard
 
 Microsoft is guided by our [Responsible AI Standard](https://www.microsoft.com/ai/principles-and-approach)—a document that details our approach to safe and secure AI.
