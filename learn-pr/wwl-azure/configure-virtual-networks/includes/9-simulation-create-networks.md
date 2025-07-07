@@ -16,7 +16,7 @@ Your organization is migrating a web-based application to Azure. Your first task
 
 - Create a virtual network.
 - Create a subnet.
-- Configure virtual network peering.
+- Configure virtual network peering (optional). 
 
 > [!NOTE]
 > Estimated time: 30 minutes. 

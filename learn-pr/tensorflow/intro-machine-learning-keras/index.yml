@@ -1,16 +1,17 @@
 ### YamlMime:Module
 uid: learn.tensorflow.intro-machine-learning-keras
 metadata:
+  ms.service: azure-machine-learning
   title: Introduction to TensorFlow using Keras
   description: Learn how to build a TensorFlow machine learning model using the Keras API.
-  ms.date: 07/17/2023
-  author: bstollnitz
-  ms.author: bstollnitz
+  ms.date: 06/23/2025
+  author: robmcm
+  ms.author: robmcm
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: bstollnitz-08202021
 title: Introduction to TensorFlow using Keras
-summary: This module provides all the concepts and practical knowledge you need to get started with TensorFlow. We explore Keras, a high-level API released as part of TensorFlow, and use it to build a simple neural network for image classification.
+summary: This module provides all the concepts and practical knowledge you need to get started with TensorFlow. We explore Keras, a high-level API released as part of TensorFlow, and use it to build a neural network for image classification.
 abstract: |
   In this module you will:
   - Learn to load and prepare data to be used in machine learning.

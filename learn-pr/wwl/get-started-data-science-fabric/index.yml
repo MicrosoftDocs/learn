@@ -21,7 +21,7 @@ abstract: |
   - Track model training metrics with MLflow and experiments
 prerequisites: |
   Before starting this module, you should be familiar with the basic principles of machine learning.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/get-started-data-science-fabric.svg
 levels:
 - beginner
 roles:
