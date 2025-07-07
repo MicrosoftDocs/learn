@@ -11,7 +11,7 @@ Let's start by exploring what LLMs are.
 :::image type="content" source="../media/02-large-language-model.png" alt-text="Diagram of LLMs and foundation models as part of Generative AI.":::
 
 1. **Generative AI** refers to systems that can create new content, such as text, images, audio, or video.
-1. **Large Language Models** (**LLMs**) are a type of Generative AI that focus on language-related tasks.
+1. **Large Language Models** (**LLMs**) are a type of Generative AI that focuses on language-related tasks.
 1. **Foundation models** are the underlying models that serve as the basis for AI applications. The models are trained on broad and diverse datasets and can be adapted to a wide range of downstream tasks.
 
 When you want to achieve Generative AI, you can use LLMs to generate new content. You can use a publicly available foundation model as an LLM, or you can choose to train your own.

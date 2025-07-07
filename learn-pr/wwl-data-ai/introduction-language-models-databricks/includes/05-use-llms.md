@@ -65,7 +65,7 @@ Zero-shot classification is highly versatile and efficient, as it eliminates the
 
 When you use **few-shot learning**, you provide an LLM with a few examples before it performs a specific task.
 
-Providing a model with a few examples, enables the model to quickly adapt to new tasks with minimal data, using its pre-existing language knowledge.
+Providing a model with a few examples, enables the model to quickly adapt to new tasks with minimal data, using its established language knowledge.
 
 Few-shot learning is advantageous in scenarios where labeled data is scarce or expensive to obtain. By providing a handful of examples, you can guide the model to perform specialized tasks such as domain-specific text classification, custom sentiment analysis, or entity recognition.
 

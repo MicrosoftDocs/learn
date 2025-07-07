@@ -1,8 +1,8 @@
 **Large Language Models** (**LLMs**) are like sophisticated language processing systems designed to understand and generate human language. Think of them as having four essential parts that work together, similar to how a car needs an engine, fuel system, transmission, and steering wheel to function properly.
 
-- **Prompt**: Your instructions to the model. The prompt is how you communicate with the LLM. It's your question, request or instruction.
+- **Prompt**: Your instructions to the model. The prompt is how you communicate with the LLM. It's your question, request, or instruction.
 - **Tokenizer**: Breaks down language. The tokenizer is a language translator that converts human text into a format the computer can understand.
-- **Model**: The 'brain' of the operation. The model is the actual 'brain' that processes information and generates responses. It is typically based on the transformer architecture, utilizes self-attention mechanisms to process text and generates contextually relevant responses.
+- **Model**: The 'brain' of the operation. The model is the actual 'brain' that processes information and generates responses. It's typically based on the transformer architecture, utilizes self-attention mechanisms to process text, and generates contextually relevant responses.
 - **Tasks**: What LLMs can do. Tasks are the different language-related jobs that LLMs can perform, such as text classification, translation, and dialogue generation.
 
 These components create a powerful language processing system:
@@ -82,7 +82,7 @@ Let's use this diagram as an example of how LLM processing works.
 The **LLM** is trained on a large volume of natural language text.
 **Step1: Input** Training documents and a prompt "When my dog was..." enter the system.
 **Step 2: Encoder (The analyzer)** Breaks text into **tokens** and analyzes its meaning. The **encoder** block processes token sequences using **self-attention** to determine the relationships between tokens or words.
-**Step 3: Embeddings are created** The output from the encoder is a collection of **vectors** (multi-valued numeric arrays) in which each element of the vector represents a semantic attribute of the tokens. These vectors are referred to as **embeddings**. They are numerical representations that capture meaning:
+**Step 3: Embeddings are created** The output from the encoder is a collection of **vectors** (multi-valued numeric arrays) in which each element of the vector represents a semantic attribute of the tokens. These vectors are referred to as **embeddings**. They're numerical representations that capture meaning:
 
 - **dog [10,3,2]** - animal, pet, subject
 - **cat [10,3,1]** - animal, pet, different species
