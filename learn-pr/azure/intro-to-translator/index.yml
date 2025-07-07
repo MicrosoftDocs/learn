@@ -6,7 +6,7 @@ metadata:
   author: laujan
   ms.author: lajanuar
   manager: nitinme
-  ms.date: 02/06/2024
+  ms.date: 06/27/2025
   ms.service: azure-ai-translator
   ms.topic: module
   ms.collection:
@@ -45,4 +45,4 @@ units:
 - learn.azure.intro-to-translator.summary
 badge:
   uid: learn.azure.intro-to-translator.badge
-
+
