@@ -43,7 +43,7 @@ This video highlights the optimization and security features of endpoints.
 
 
 > [!NOTE]
-> Microsoft recommends use of Azure Private Link and private endpoints for secure and private access to services hosted on the Azure platform. This information in covered in the next units. 
+> Microsoft recommends use of Azure Private Link and private endpoints for secure and private access to services hosted on the Azure platform. This information is covered in the next units. 
 
 > [!TIP]
 > Learn more about Service Endpoints in the [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/) module. This module includes an exercise to create a Service Endpoint and use network rules to restrict access to Azure Storage.

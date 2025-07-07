@@ -4,6 +4,6 @@ Many cloud architects opt for Open-Source Software (OSS) like Kubernetes and Doc
 
 ## Scenario: Smart refrigerators, smarter service, at scale
 
-Suppose you work for Adatum Corporation, a manufacturer of home appliances, where you lead a small development team and you've been tasked with building an app for smart refrigerators.
+Suppose you work for Adatum Corporation, a manufacturer of home appliances. You lead a small development team and you're tasked with building an app for smart refrigerators.
 
-We could, for example, start with creating a small inventory management app for the refrigerators, so businesses can know what needs to be restocked, or potentially, have items reordered automatically. It's the nature of cloud-native apps to have loosely coupled functionality, so we can be more agile in our design and avoid having to predict future requirements. Rather, we can extend the app if it becomes necessary. Later, we can add functionality to the app, such as connecting to refrigerator telemetry and onboard sensors.
+We could, for example, start with creating a small inventory management app for the refrigerators, so businesses can know what needs to be restocked, or potentially, have items reordered automatically. It's the nature of cloud-native apps to contain loosely coupled functionality, so we can be more agile in our design and avoid having to predict future requirements. Rather, we can extend the app if it becomes necessary. Later, we can add functionality to the app, such as connecting to refrigerator telemetry and onboard sensors.
