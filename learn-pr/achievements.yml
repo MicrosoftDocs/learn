@@ -15,6 +15,11 @@ achievements:
   title: Characterize an unfamiliar dataset with Azure Data Explorer
   summary: Learn how to characterize an unfamiliar dataset using Azure Data Explorer. 
   iconUrl: /training/achievements/azure-data-explore-web.svg
+- uid: learn.azure.intro-to-arc-enabled-data-services.badge
+  type: badge
+  title: Introduction to Azure Arc-enabled data services
+  summary: In this module, you learn the fundamentals of hybrid computing and Azure Arc.
+  iconUrl: /training/achievements/learn.azure.intro-to-arc-enabled-data-services.badge.svg
 - uid: learn.intro-to-azure-data-explorer.badge
   type: badge
   title: Introduction to Azure Data Explorer
