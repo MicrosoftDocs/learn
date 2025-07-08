@@ -51470,6 +51470,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/evolve-your-devops-practices/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/get-started/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/index.md",
       "redirect_url": "/training/modules/purview-ediscovery-search/",
       "redirect_document_id": false
