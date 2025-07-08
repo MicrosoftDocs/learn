@@ -6125,3 +6125,13 @@ achievements:
   title: Create and implement application allowlists with adaptive application control
   summary: You're able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs.
   iconUrl: /training/achievements/create-and-implement-application-allowlists-with-adaptive-application-control.svg
+- uid: learn.azdo.choose-an-agile-approach.badge
+  type: badge
+  title: Choose an Agile approach to software development
+  summary: Learn to foster the DevOps values of transparency and team cooperation with Azure Boards.
+  iconUrl: /training/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
+- uid: learn.azdo.manage-delivery-plans.badge
+  type: badge
+  title: Manage Agile software delivery plans across teams
+  summary: Learn how to optimize delivery efficiency by improving work plan visibility across teams.
+  iconUrl: /training/achievements/azure-devops/manage-agile-software-delivery-plans-across-teams.svg
