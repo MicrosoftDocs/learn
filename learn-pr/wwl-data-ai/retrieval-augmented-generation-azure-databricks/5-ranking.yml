@@ -4,8 +4,8 @@ title: Rerank your retrieved results
 metadata:
   title: Rerank your retrieved results
   description: "Rerank your retrieved results"
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/07/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 azureSandbox: false
@@ -13,4 +13,4 @@ labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/5-ranking.md)]
-
+

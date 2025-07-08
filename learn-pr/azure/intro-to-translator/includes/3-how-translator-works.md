@@ -55,7 +55,7 @@ Once a model is trained, you can view the test results. If you require a more ac
 
 ## More functionalities
 
-**Dictionary look-up** provides alternative translations for words or figures of speech. Each dictionary look-up request shows a list of alternate translations that interpret a word or phrase in its original language, allowing you to understand the translation in context. The original or alternate translations can then be used with the Dictionary example operation to show example sentences of the translation pairing in both languages, imparting clarity on the appropriate translation to use.
+**Dictionary look-up** provides alternative translations for words or figures of speech. Each dictionary look-up request shows a list of alternate translations that interpret a word or phrase in its original language, allowing you to understand the translation in context. The original or alternate translations can then be used with the Dictionary example operation to show example sentences of the translation pairing in both languages, imparting clarity on the appropriate translation to users.
 
 A **Dynamic Dictionary** is used if you already know the translation you want to apply to a word or phrase. The dynamic dictionary is best used to translate compound nouns like proper names and product names.
 

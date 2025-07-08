@@ -1,10 +1,17 @@
-Retrieval Augmented Generation (RAG) is an advanced technique in natural language processing that enhances the capabilities of Large Language Models (LLMs) by integrating vector search mechanisms.
+In this module, you've explored the key concepts behind Retrieval Augmented Generation (RAG) using Azure Databricks. RAG enhances generative AI models by dynamically retrieving relevant information from external data sources to provide more accurate and contextually relevant responses.
 
-Unlike traditional generative models, which rely solely on pretrained knowledge, RAG dynamically retrieves relevant information from external sources to produce more accurate and contextually appropriate responses.
+By completing this module, you have learned about:
 
-This hybrid approach uses the strengths of both retrieval-based and generative systems, enabling the generation of highly informative and contextually enriched text. When you combine real-time retrieval with Generative AI, RAG enhances output quality and relevance, making it ideal for applications needing detailed and current information.
+- **RAG workflow components** - Understanding the pipeline from data ingestion to response generation
+- **Data preparation for RAG** - How documents are transformed into searchable chunks and text embeddings using Azure OpenAI
+- **Vector search concepts** - How Mosaic AI Vector Search finds similar content based on semantic meaning
+- **Search result optimization** - Understanding similarity scoring and optional reranking techniques
 
-**Explore other reading materials**:
+Key concepts you've explored include data chunking, text embeddings, vector search, similarity scoring, and reranking techniques.
+
+You now have a foundational understanding of RAG workflows in Azure Databricks. The hands-on exercise has given you practical experience with the core components, providing a starting point for further exploration. 
+
+## Further reading
 
 - [Understand the Retrieval-Augmented Generation fundamentals](/azure/databricks/ai-cookbook/fundamentals-retrieval-augmented-generation?azure-portal=true)
 - [Describe Generative AI and Large Language Models on Azure Databricks](/azure/databricks/generative-ai/generative-ai?azure-portal=true)

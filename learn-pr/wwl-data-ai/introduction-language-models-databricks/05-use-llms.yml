@@ -4,12 +4,12 @@ title: Use LLMs for Natural Language Processing (NLP) tasks
 metadata:
   title: Use LLMs for Natural Language Processing (NLP) tasks
   description: "Use LLMs for Natural Language Processing (NLP) tasks"
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/07/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/05-use-llms.md)]
+  [!include[](includes/05-use-llms.md)]
