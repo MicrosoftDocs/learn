@@ -10,5 +10,4 @@ In this exercise, you’ll add a new subnet to the existing virtual network. You
 
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
-[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
- ](https://microsoftlearning.github.io/AZ-1008-Administer-Active-Directory-Domain-Services/Instructions/Labs/LAB_02_exercise_configure_domain_controller_operations.html)
+[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::](https://microsoftlearning.github.io/AZ-100-Get-started-with-Microsoft-Azure-Management-tasks/Instructions/Labs/02-exercise-virtual-network.html)
