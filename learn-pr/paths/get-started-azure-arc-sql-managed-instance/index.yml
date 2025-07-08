@@ -32,7 +32,6 @@ products:
 subjects:
 - infrastructure
 modules:
-- learn.azure.intro-to-arc-enabled-data-services
 - learn.azure.deploy-manage-azure-arc-data-controller
 - learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance
 - learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance

@@ -15,6 +15,16 @@ achievements:
   title: Characterize an unfamiliar dataset with Azure Data Explorer
   summary: Learn how to characterize an unfamiliar dataset using Azure Data Explorer. 
   iconUrl: /training/achievements/azure-data-explore-web.svg
+- uid: learn.azure.intro-to-arc-enabled-data-services.badge
+  type: badge
+  title: Introduction to Azure Arc-enabled data services
+  summary: In this module, you learn the fundamentals of hybrid computing and Azure Arc.
+  iconUrl: /training/achievements/intro-to-arc-enabled-data-services.svg
+- uid: learn.intro-to-azure-data-explorer.badge
+  type: badge
+  title: Introduction to Azure Data Explorer
+  summary: Learn to describe the ingestion, query, visualization, and data management features that Azure Data Explorer provides to help you make sense of the data flowing into your business.
+  iconUrl: /training/achievements/intro-to-azure-data-explorer.svg
 - uid: learn.azure.intro-to-azure-monitor.badge
   type: badge
   title: Introduction to Azure Monitor
@@ -6120,6 +6130,11 @@ achievements:
   title: Investigate threats with Content search in Microsoft Purview
   summary: This module examines how to search for content in the Microsoft Purview portal using Content Search functionality, including how to view and export the search results, and configure search permissions filtering.
   iconUrl: /training/achievements/m365-content-compliance.svg
+- uid: learn.azdo.evolve-your-devops-practices.trophy
+  type: trophy
+  title: Get started with Azure DevOps
+  summary: DevOps is the union of people, process, and products to enable continuous delivery of value to your end users. Azure DevOps is a set of services that gives you the tools you need to do just that. With Azure DevOps, you can build, test, and deploy any application, either to the cloud or on premises. DevOps practices that enable transparency, cooperation, continuous delivery and continuous deployment become embedded in your software development lifecycle.
+  iconUrl: /training/achievements/azure-devops/evolve-your-devops-practices.svg
 - uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.badge
   type: badge
   title: Create and implement application allowlists with adaptive application control
@@ -6135,3 +6150,13 @@ achievements:
   title: Manage Agile software delivery plans across teams
   summary: Learn how to optimize delivery efficiency by improving work plan visibility across teams.
   iconUrl: /training/achievements/azure-devops/manage-agile-software-delivery-plans-across-teams.svg
+- uid: learn.get-started-with-devops.badge
+  type: badge
+  title: Introduction to Azure DevOps
+  summary: Explore what DevOps is (and isn't) and learn how to get started with Azure DevOps.
+  iconUrl: /training/achievements/azure-devops/get-started-with-devops.svg
+- uid: learn.azdo.assess-your-development-process.badge
+  type: badge
+  title: Assess your existing software development process
+  summary: Use a value stream map to help you examine your existing processes and technologies.
+  iconUrl: /training/achievements/azure-devops/assess-your-software-development-process.svg
