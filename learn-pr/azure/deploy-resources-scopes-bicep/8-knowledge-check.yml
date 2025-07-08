@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 09/27/2024
+  ms.date: 06/30/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -42,7 +42,7 @@ quiz:
     - content: "`targetScope = 'managementGroup'`"
       isCorrect: true
       explanation: |
-        Correct. You should deploy the role definition to the root management group, so that it is inherited by all your Azure resources throughout your organization.
+        Correct. You should deploy the role definition to the root management group, so that all your Azure resources throughout your organization inherit it.
         Role definitions can't be created at the tenant scope.
     - content: "`targetScope = 'subscription'`"
       isCorrect: false
@@ -68,4 +68,3 @@ quiz:
         You can use Bicep files that have a `targetScope` of `managementGroup`, but you need to explicitly set the `scope` to `tenant()`.
         Also, the hierarchy of management groups doesn't depend on how they're deployed.
         You set a management group's parent as one of its properties.
-
