@@ -6115,3 +6115,8 @@ achievements:
   title: Investigate threats with Content search in Microsoft Purview
   summary: This module examines how to search for content in the Microsoft Purview portal using Content Search functionality, including how to view and export the search results, and configure search permissions filtering.
   iconUrl: /training/achievements/m365-content-compliance.svg
+- uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.badge
+  type: badge
+  title: Create and implement application allowlists with adaptive application control
+  summary: You're able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs.
+  iconUrl: /training/achievements/create-and-implement-application-allowlists-with-adaptive-application-control.svg
