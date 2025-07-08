@@ -55,7 +55,6 @@ subjects:
 - storage
 - identity-access
 units:
-- learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.knowledge-check
 - learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.summary
 badge:
   uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.badge
