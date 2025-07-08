@@ -40,7 +40,52 @@
       "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
       "redirect_document_id": false
     },
-       {
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/2-choose-a-messaging-platform.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/3-exercise-implement-a-service-bus-topic-and-queue.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/4-write-code-that-uses-service-bus-queues.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/5-exercise-write-code-that-uses-service-bus-queues.yml",
+       "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/6-write-code-that-uses-service-bus-topics.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/7-exercise-write-code-that-uses-service-bus-topics.yml",
+       "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
       "redirect_document_id": false
