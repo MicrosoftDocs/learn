@@ -12,7 +12,6 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - Compare and contrast the pros and cons of Azure Event Hubs and Azure Event Grid. Provide some examples. 
 
-
 ## Learn more with Azure documentation
 
 - Read about [Azure Queue Storage](https://azure.microsoft.com/services/storage/queues/).
@@ -32,6 +31,8 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 - Discover [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-overview).
 
 ## Learn more with self-paced training
+
+- Explore [API Management](/training/modules/explore-api-management/)
 
 - Complete an [introduction to Azure Event Hubs](/training/modules/intro-to-event-hubs/).
 
