@@ -508,6 +508,6 @@ if (app.Environment.IsDevelopment())
 }
 ```
 
-The above code checks the state of the app environment. If it's in development, the code retrieves the `CatalogContext` class and runs the `EnsureCreated` method. This method creates the database and runs any migrations that are pending.
+The code checks the state of the app environment. If it's in development, the code retrieves the `CatalogContext` class and runs the `EnsureCreated` method. This method creates the database and runs any migrations that are pending.
 
 For more information on how to seed the different database integrations, see the [.NET Aspire documentation](/dotnet/aspire/database/seed-database-data).

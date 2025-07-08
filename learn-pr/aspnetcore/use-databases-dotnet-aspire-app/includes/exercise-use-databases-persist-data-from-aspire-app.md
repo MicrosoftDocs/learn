@@ -132,7 +132,7 @@ Two projects connect to the SQLite database, the **Catalog.Data.Manager** and **
 1. In **Solution Explorer**, right-click the **Catalog.API** project, select **Add** > **.NET Aspire package**.
 1. In the **Search** box, add **Npgsql.EntityFramework** to the end, and press <kbd>Enter</kbd>.
 1. On the left, in the results, select **Aspire.Npgsql.EntityFrameworkCore.PostgreSQL**.
-1. On the right, select the version dropdown and then select the latest **8.0.0** release.
+1. On the right, select the version dropdown and then select the latest **9.3.1** release.
 1. Select **Install**.
 1. If the **Preview Changes** dialog appears, select **Apply**.
 1. In the **License Acceptance** dialog, select **I Accept**.
@@ -140,7 +140,7 @@ Two projects connect to the SQLite database, the **Catalog.Data.Manager** and **
 1. Delete the `PackageReference` for **Microsoft.EntityFrameworkCore.Sqlite**:
 
     ```xml
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.5" />
     ```
 
 ## Register the new PostgreSQL DbContext
@@ -203,7 +203,7 @@ The **AppHost** project can create a PostgreSQL database container, seed it with
 1. In **Solution Explorer**, right-click the **eShop.AppHost** project, select **Add** > **.NET Aspire package**.
 1. In the **Search** box, add **PostgreSQL** to the end, and press <kbd>Enter</kbd>.
 1. On the left, in the results, select **Aspire.Hosting.PostgreSQL**.
-1. On the right, select the version dropdown and then select the latest **8.0.0** release.
+1. On the right, select the version dropdown, and then select the latest **9.3.1** release.
 1. Select **Install**.
 1. If the **Preview Changes** dialog appears, select **Apply**.
 1. In the **License Acceptance** dialog, select **I Accept**.
@@ -270,7 +270,7 @@ The current app uses Redis as an in-memory data store for a customer's shopping 
 
 1. In **Solution Explorer**, right-click the **Basket.API** project, select **Add**, and then select **Add**>**.NET Aspire package**.
 1. In the **Search** box, enter **MongoDB** at the end, and press <kbd>Enter</kbd>.
-1. Select the **Aspire.MongoDB.Driver**, and then select the latest **8.0.0** version.
+1. Select the **Aspire.MongoDB.Driver**, and then select the latest **9.3.1** version.
 1. Select **Install**.
 1. If the **Preview Changes** dialog appears, select **Apply**.
 1. In the **License Acceptance** dialog, select **I Accept**.@
@@ -358,7 +358,7 @@ The basket microservice uses `HostingExtensions` to manage the Redis data store.
 
 1. In **Solution Explorer**, right-click the **eShop.AppHost** project, and select **Add** > **.NET Aspire package**.
 1. In the **Search** box, enter **MongoDB** at the end, and press <kbd>Enter</kbd>.
-1. Select the **Aspire.Hosting.MongoDB** package, and then select the latest **8.0.0** version.
+1. Select the **Aspire.Hosting.MongoDB** package, and then select the latest **9.3.1** version.
 1. Select **Install**.
 1. If the **Preview Changes** dialog appears, select **Apply**.
 1. In the **License Acceptance** dialog, select **I Accept**.@
