@@ -15,11 +15,11 @@ achievements:
   title: Characterize an unfamiliar dataset with Azure Data Explorer
   summary: Learn how to characterize an unfamiliar dataset using Azure Data Explorer. 
   iconUrl: /training/achievements/azure-data-explore-web.svg
-- uid: learn.azure.intro-to-azure-data-explorer.badge
+- uid: learn.intro-to-azure-data-explorer.badge
   type: badge
-  title: Learn to describe the ingestion, query, visualization, and data management features that Azure Data Explorer provides to help you make sense of the data flowing into your business.
-  summary: Learn how to characterize an unfamiliar dataset using Azure Data Explorer. 
-  iconUrl: /training/achievements/intro-to-azure-data-explorer.svg
+  title: Introduction to Azure Data Explorer
+  summary: Learn to describe the ingestion, query, visualization, and data management features that Azure Data Explorer provides to help you make sense of the data flowing into your business.
+  iconUrl: /training/achievements/learn-intro-to-azure-data-explorer.svg
 - uid: learn.azure.intro-to-azure-monitor.badge
   type: badge
   title: Introduction to Azure Monitor

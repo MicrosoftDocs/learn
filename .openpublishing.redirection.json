@@ -81,7 +81,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/2-what-is- azure-data-explorer.yml",
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/2-what-is-azure-data-explorer.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
       "redirect_document_id": false
     },
@@ -105,6 +105,13 @@
       "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
       "redirect_document_id": false
     },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+
+
     {
       "source_path_from_root": "/learn-pr/achievements/learn.azure.deploy-java-spring-boot-app-service-mysql.badge.yml",
       "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
