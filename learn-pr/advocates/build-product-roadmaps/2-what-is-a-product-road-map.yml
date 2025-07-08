@@ -25,7 +25,7 @@ quiz:
        explanation: "Product roadmaps are iterative, they're never finished."
      - content: When you launch the product
        isCorrect: false
-   - content: "Who should have input into the product roadmap?"
+   - content: "Who should be allowed input into the product roadmap?"
      choices:
      - content: The product manager and all the engineers
        isCorrect: false

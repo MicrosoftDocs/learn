@@ -14,7 +14,7 @@ content: |
 quiz:
    title: Check your knowledge
    questions:
-   - content: "When using a 2x2 grid for prioritization, what does having a feature in the top-left quadrant mean?"
+   - content: "When you use a 2x2 grid for prioritization, what does having a feature in the top-left quadrant mean?"
      choices:
      - content: You should work on this feature now
        isCorrect: true
@@ -23,5 +23,5 @@ quiz:
        isCorrect: false
      - content: This feature is important for user acquisition
        isCorrect: false
-     - content: This feature does offer any value and isn't important
+     - content: This feature doesn't offer any value and isn't important
        isCorrect: false

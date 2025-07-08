@@ -22,4 +22,4 @@ quiz:
        isCorrect: false
      - content: The effort and cost of product development
        isCorrect: true
-       explanation: "Your executive team is interested in your plans and the effort and cost of your development. They want to understand how product is contributing to the company's strategic objectives."
+       explanation: "Your executive team is interested in your plans and the effort and cost of your development. They want to understand how the product is contributing to the company's strategic objectives."

@@ -18,7 +18,7 @@ quiz:
      choices:
      - content: Priorities change quickly
        isCorrect: true
-       explanation: "Shorter milestones are common in startups because your priorities, resourcing, and requirements can all change quickly. With shorter milestones you can be more agile."
+       explanation: "Shorter milestones are common in startups because your priorities, resourcing, and requirements can all change quickly. With shorter milestones, you can be more agile."
      - content: Longer milestones are harder to track
        isCorrect: false
      - content: Users have short attention spans
