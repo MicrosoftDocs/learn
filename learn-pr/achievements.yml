@@ -20,6 +20,11 @@ achievements:
   title: Introduction to Azure Arc-enabled data services
   summary: In this module, you learn the fundamentals of hybrid computing and Azure Arc.
   iconUrl: /training/achievements/intro-to-arc-enabled-data-services.svg
+- uid: learn.implement-message-workflows-with-service-bus.badge
+  type: badge
+  title: Implement message-based communication workflows with Azure Service Bus
+  summary: Write C# code in a custom application that sends and receives messages using Azure Service Bus topics and queues.
+  iconUrl: /training/achievements/implement-message-workflows-with-service-bus.svg
 - uid: learn.intro-to-azure-data-explorer.badge
   type: badge
   title: Introduction to Azure Data Explorer
