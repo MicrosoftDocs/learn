@@ -19,7 +19,7 @@ achievements:
   type: badge
   title: Introduction to Azure Data Explorer
   summary: Learn to describe the ingestion, query, visualization, and data management features that Azure Data Explorer provides to help you make sense of the data flowing into your business.
-  iconUrl: /training/achievements/learn-intro-to-azure-data-explorer.svg
+  iconUrl: /training/achievements/intro-to-azure-data-explorer.svg
 - uid: learn.azure.intro-to-azure-monitor.badge
   type: badge
   title: Introduction to Azure Monitor
