@@ -6140,3 +6140,13 @@ achievements:
   title: Create and implement application allowlists with adaptive application control
   summary: You're able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs.
   iconUrl: /training/achievements/create-and-implement-application-allowlists-with-adaptive-application-control.svg
+- uid: learn.get-started-with-devops.badge
+  type: badge
+  title: Introduction to Azure DevOps
+  summary: Explore what DevOps is (and isn't) and learn how to get started with Azure DevOps.
+  iconUrl: /training/achievements/azure-devops/get-started-with-devops.svg
+- uid: learn.azdo.assess-your-development-process.badge
+  type: badge
+  title: Assess your existing software development process
+  summary: Use a value stream map to help you examine your existing processes and technologies.
+  iconUrl: /training/achievements/azure-devops/assess-your-software-development-process.svg
