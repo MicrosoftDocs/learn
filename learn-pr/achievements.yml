@@ -6120,3 +6120,8 @@ achievements:
   title: Get started with Azure DevOps
   summary: DevOps is the union of people, process, and products to enable continuous delivery of value to your end users. Azure DevOps is a set of services that gives you the tools you need to do just that. With Azure DevOps, you can build, test, and deploy any application, either to the cloud or on premises. DevOps practices that enable transparency, cooperation, continuous delivery and continuous deployment become embedded in your software development lifecycle.
   iconUrl: /training/achievements/azure-devops/evolve-your-devops-practices.svg
+- uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.badge
+  type: badge
+  title: Create and implement application allowlists with adaptive application control
+  summary: You're able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs.
+  iconUrl: /training/achievements/create-and-implement-application-allowlists-with-adaptive-application-control.svg
