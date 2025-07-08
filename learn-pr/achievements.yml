@@ -19,7 +19,7 @@ achievements:
   type: badge
   title: Introduction to Azure Arc-enabled data services
   summary: In this module, you learn the fundamentals of hybrid computing and Azure Arc.
-  iconUrl: /training/achievements/learn.azure.intro-to-arc-enabled-data-services.badge.svg
+  iconUrl: /training/achievements/intro-to-arc-enabled-data-services.badge.svg
 - uid: learn.intro-to-azure-data-explorer.badge
   type: badge
   title: Introduction to Azure Data Explorer
