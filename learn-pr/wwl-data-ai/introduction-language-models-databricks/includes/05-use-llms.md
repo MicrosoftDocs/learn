@@ -8,7 +8,7 @@ These tasks include:
 - **Zero-shot classification**: Categorize text into predefined labels without prior examples.
 - **Few-shot learning**: Adapt to new tasks with minimal training data.
 
-These versatile applications demonstrate the transformative potential of LLMs in processing and understanding human language.
+These applications demonstrate the transformative potential of LLMs in processing and understanding human language.
 
 Let's explore each of these tasks in more detail.
 

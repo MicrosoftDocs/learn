@@ -8,7 +8,7 @@
 
 3. **Add Context to Prompt**: The relevant information retrieved from your documents is combined with the user's original question to create an enhanced prompt that provides the LLM with the specific context it needs.
 
-4. **LLM Generates Response**: The base language model processes both the original question and the retrieved context from your documents to generate an accurate, grounded response based on your specific data.**
+4. **LLM Generates Response**: The base language model processes both the original question and the retrieved context from your documents to generate an accurate, grounded response based on your specific data.
 
 This process bridges the gap between a general-purpose LLM and your specific, private, or recent information, allowing you to get accurate answers based on your own documents without having to retrain the entire base model.
 
@@ -18,9 +18,9 @@ Let's look at when you can use RAG, and then review the main components and conc
 
 You can use RAG for chatbots, search enhancement, and content creation and summarization.
 
-**Chatbots**: RAG helps chatbots provide more accurate answers by accessing your current company information. When integrated with customer support systems, RAG-powered chatbots can automate support and quickly resolve customer questions using up-to-date data.
+**Chatbots**: RAG helps chatbots provide more accurate answers by accessing current information. When integrated with customer support systems, RAG-powered chatbots can automate support and quickly resolve customer questions using up-to-date data.
 
-**Search enhancement**: Instead of returning just links and snippets, RAG-powered search engines provide complete, conversational answers. Users get comprehensive responses that synthesize information from multiple sources, making it much easier to find what they need.
+**Search enhancement**: Instead of returning just links and snippets, RAG-powered search engines provide complete, conversational answers. Users get comprehensive responses that synthesize information from multiple sources, making it easy to find what they need.
 
 **Content creation and summarization**: Produce high-quality, fact-based content using your own data sources. RAG enables you to generate informed articles, create summaries from lengthy documents, and develop reports that synthesize information from multiple sources.
 
@@ -45,7 +45,7 @@ Document embedding, as shown in the diagram, is part of a preparation phase. Thi
 
 :::image type="content" source="../media/document-embedding.png" alt-text="Diagram of embeddings model converting documents to vectors.":::
 
-Query embedding, shown in the diagram, happens each time a user asks a question. First, the user's question is converted into an embedding using the same embedding model. This real-time conversion prepares the query for comparison against your preprocessed document embeddings. Only after the query is embedded can the system begin searching for relevant documents.
+Query embedding, shown in the diagram, happens each time a user asks a question. First, the user's question is converted into an embedding using the same embedding model that was used to process the documents. This real-time conversion prepares the query for comparison against your preprocessed document embeddings. Only after the query is embedded can the system begin searching for relevant documents.
 
 :::image type="content" source="../media/query-embedding.png" alt-text="Diagram of embeddings model.":::
 
@@ -63,21 +63,21 @@ The vector store enables semantic search, which means it finds relevant content 
 
 ### Augment your prompt with retrieved content
 
-After finding the most relevant documents, the RAG system combines this information with the user's original question to create an "enhanced prompt" that gives the LLM everything it needs to provide an accurate answer.
+After finding the most relevant documents, the RAG system combines this information with the user's original question to create an "augmented prompt" that gives the LLM everything it needs to provide an accurate answer.
 
 The augmentation process looks like this:
 
 1. Start with the user's question: "What's our vacation policy?"
 2. Add retrieved context: Include relevant excerpts from your HR documents
-3. Create enhanced prompt: "Based on these HR policy documents: [retrieved content], what's our vacation policy?"
+3. Create augmented prompt: "Based on these HR policy documents: [retrieved content], what's our vacation policy?"
 The LLM now has both the user's question **and** the specific information needed to answer it accurately. This is called "in-context learning" because the LLM learns from the context provided in the prompt rather than from its original training data.
 
-In the final step, the enhanced prompt is sent to the Large Language Model (LLM), which generates a response based on both the question and the retrieved information. The LLM can include citations of the original sources, allowing users to verify where the information came from.
+In the final step, the augmented prompt is sent to the Large Language Model (LLM), which generates a response based on both the question and the retrieved information. The LLM can include citations of the original sources, allowing users to verify where the information came from.
 
 The key benefit of the RAG workflows is that it gives you accurate, source-backed answers without having to retrain the entire language model on your specific documents.
 
 ## RAG architecture overview
-The complete RAG workflow combines all the components we've discussed into a unified system that transforms general-purpose LLMs into knowledgeable assistants for your specific domain.
+The complete RAG workflow combines all the components we've reviewed into a unified system that transforms general-purpose LLMs into knowledgeable assistants for your specific domain.
 
 The key mechanism is **in-context learning** - instead of retraining the LLM, you provide relevant information as context in each prompt, allowing the LLM to generate informed responses without permanent modification.
 
