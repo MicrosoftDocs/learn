@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.microservices-architecture
 metadata:
-  title: Decompose a monolithic application into a microservices architecture
+  title: Decompose a Monolithic Application into a Microservices Architecture
   description: Improve development agility, deployment, fault tolerance, and scalability by modernizing your application with a microservices architecture.
   ms.service: azure-functions
   manager: mkluck
-  ms.date: 02/02/2024
+  ms.date: 07/08/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module
@@ -39,4 +39,4 @@ units:
 - learn.microservices-architecture.7-summary
 badge:
   uid: learn.microservices-architecture.badge
-
+
