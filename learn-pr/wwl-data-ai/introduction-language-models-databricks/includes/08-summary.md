@@ -1,4 +1,4 @@
-**Large Language Models** (**LLMs**) transformed many fields by improving how machines understand and generate language.
+**Large Language Models** (**LLMs**) have transformed many fields by improving how machines understand and generate language.
 
 You can use LLMs for automated customer service through chatbots, creating personalized marketing content, and powering advanced search engines that give more accurate results.
 
