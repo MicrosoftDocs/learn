@@ -51436,6 +51436,11 @@
       "source_path": "learn-pr/wwl-azure/create-implement-application-allowlists-adaptive-application-control/1-introduction.md",
       "redirect_url": "/training/paths/implement-windows-server-iaas-virtual-machine-security/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-implement-application-allowlists-adaptive-application-control/4-knowledge-check.md",
+      "redirect_url": "/training/paths/implement-windows-server-iaas-virtual-machine-security/",
+      "redirect_document_id": false
     }
   ]
 }
