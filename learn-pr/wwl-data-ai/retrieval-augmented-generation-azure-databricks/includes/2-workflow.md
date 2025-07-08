@@ -67,9 +67,9 @@ After finding the most relevant documents, the RAG system combines this informat
 
 The augmentation process looks like this:
 
-1. Start with the user's question: "What's our vacation policy?"
-2. Add retrieved context: Include relevant excerpts from your HR documents
-3. Create augmented prompt: "Based on these HR policy documents: [retrieved content], what's our vacation policy?"
+- Start with the user's question: "What's our vacation policy?"
+- Add retrieved context: Include relevant excerpts from your HR documents
+- Create augmented prompt: "Based on these HR policy documents: [retrieved content], what's our vacation policy?"
 The LLM now has both the user's question **and** the specific information needed to answer it accurately. This is called "in-context learning" because the LLM learns from the context provided in the prompt rather than from its original training data.
 
 In the final step, the augmented prompt is sent to the Large Language Model (LLM), which generates a response based on both the question and the retrieved information. The LLM can include citations of the original sources, allowing users to verify where the information came from.
