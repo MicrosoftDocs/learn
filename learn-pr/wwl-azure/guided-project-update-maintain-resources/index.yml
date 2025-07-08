@@ -5,13 +5,13 @@ metadata:
   prefetch-feature-rollout: true
   title: Guided Project – Update and Maintain Resources
   description: "Manage Azure compute, networking, and storage resources."
-  ms.date: 07/07/2025
+  ms.date: 07/08/2025
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-assisted
-title: Guided Project – Update and maintain resources
+title: Guided project – Update and maintain resources
 summary: |
   This guided project gives you the chance to practice managing Azure resources, including networks, virtual machines, and storage blobs. You'll also have the chance to work with tags and resource locks.
 
