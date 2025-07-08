@@ -56,7 +56,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/ 4-when-to-use-azure-monitor.yml",
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/4-when-to-use-azure-monitor.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
       "redirect_document_id": false
     },
