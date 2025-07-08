@@ -51600,6 +51600,81 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/2-what-is-agile.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/3-what-is-azure-boards.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/4-plan-work-azure-boards.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/2-what-are-delivery-plans.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/3-what-is-delivery-plans.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/4-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/5-plan-sprint-delivery-plans.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/6-track-dependencies-delivery-plans.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/7-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure-devops/get-started-with-devops/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
       "redirect_document_id": false
