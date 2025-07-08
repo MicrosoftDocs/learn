@@ -51446,6 +51446,66 @@
       "source_path": "learn-pr/wwl-azure/create-implement-application-allowlists-adaptive-application-control/5-summary.md",
       "redirect_url": "/training/paths/implement-windows-server-iaas-virtual-machine-security/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/2-what-is-devops.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/3-what-is-azure-devops.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/4-create-an-azure-devops-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/2-meet-the-team.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/3-release-process.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/4-assess-process-efficiency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
     }
   ]
 }
