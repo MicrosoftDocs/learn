@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.microservices-architecture.3-exercise-deploy-monolithic-app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy a monolithic application on App Service
   description: Exercise - Deploy a monolithic application on App Service
   ms.date: 02/02/2024
@@ -15,4 +13,4 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-deploy-monolithic-app.md)]
-
+

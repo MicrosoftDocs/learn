@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-knowledge-mining.exercise
+title: Exercise - Create a knowledge mining solution
+metadata:
+  title: Exercise - Create a knowledge mining solution
+  description: Use Azure AI Search to create a knowledge mining  solution.
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 05/16/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 40
+content: |
+  [!include[](includes/7-exercise.md)]
+

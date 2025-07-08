@@ -1,4 +1,4 @@
-.NET Aspire can be broken down into solutions for three issues that face modern cloud-native apps. These are:
+.NET Aspire can be broken down into solutions for these three issues that face modern cloud-native apps:
 
 1. Managing the complexity of orchestration between microservices.
 1. Simplifying how your microservices use integrations through NuGet packages.
@@ -25,7 +25,7 @@ Configuration through declarative code is better. Using .NET Aspire, you don't n
 .NET Aspire orchestration also supports your development in the following ways:
 
 - **App composition**: .NET Aspire specifies the .NET projects, containers, executables, and cloud resources that make up the application.
-- **Service discovery and connection string management**: The app host manages injecting the right connection strings and service discovery information to simplify the developer experience.
+- **Service discovery and connection string management**: The app host manages injection of the right connection strings and service discovery information to simplify the developer experience.
 
 ## Enlisting an existing app in .NET Aspire orchestration
 

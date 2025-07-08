@@ -2,8 +2,6 @@
 uid: learn.wwl.identify-technical-debt.introduction-technical-debt
 title: Introduction to technical debt
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to technical debt
   description: "Introduction to technical debt"
   ms.date: 05/06/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-introduction-technical-debt.md)]
+  [!include[](includes/4-introduction-technical-debt.md)]

@@ -2,11 +2,9 @@
 uid: learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.exercise-lake-database
 title: Exercise - Analyze data in a lake database
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Analyze data in a lake database
   description: "Exercise - Analyze data in a lake database"
-  ms.date: 07/25/2024
+  ms.date: 04/30/2025
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit

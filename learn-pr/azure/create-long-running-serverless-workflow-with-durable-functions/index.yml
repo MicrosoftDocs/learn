@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-create-long-running-serverless-workflow-with-durable-functions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a long-running serverless workflow with Durable Functions
   description: Learn how to orchestrate a long-running workflow as a set of activities using scalable and cost-effective Durable Functions.
   ms.date: 10/19/2023
@@ -42,4 +40,4 @@ units:
 - learn.azure-create-long-running-serverless-workflow-with-durable-functions.7-summary
 badge:
   uid: learn.azure-create-long-running-serverless-workflow-with-durable-functions.badge
-
+

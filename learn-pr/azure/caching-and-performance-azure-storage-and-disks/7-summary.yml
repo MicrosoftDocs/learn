@@ -2,8 +2,6 @@
 uid: learn.caching-and-performance-azure-storage-and-disks.7-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 12/28/2023
@@ -53,4 +51,4 @@ quiz:
       isCorrect: false
     - content: New-AzVM
       isCorrect: false
-
+

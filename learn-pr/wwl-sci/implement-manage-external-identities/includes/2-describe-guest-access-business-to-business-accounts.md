@@ -1,5 +1,4 @@
-:::image type="content" source="../media/guest-user-diagram-ade26ab5-982ba6d6.png" alt-text="Diagram of allowing external users to join your Microsoft Entra tenant as a guest user.":::
-
+:::image type="content" source="../media/guest-user-diagram.png" alt-text="Diagram of allowing external users to join your Microsoft Entra tenant as a guest user.":::
 
 ### Define guest users
 

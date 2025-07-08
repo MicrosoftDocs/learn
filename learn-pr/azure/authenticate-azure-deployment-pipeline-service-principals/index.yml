@@ -1,14 +1,12 @@
 ### YamlMime:Module
 uid: learn.azure.authenticate-azure-deployment-pipeline-service-principals
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
-  title: Authenticate your Azure deployment pipeline by using service principals
+  title: Authenticate your Azure Deployment Pipeline by Using Service Principals
   description: Learn how to create, manage, and grant permissions to service principals, which enable your deployment pipelines to securely authenticate to Azure. 
   ms.service: azure-resource-manager
   manager: jasongroce
-  ms.date: 01/16/2024
+  ms.date: 04/22/2025
   author: mumian
   ms.author: jgao
   ms.topic: module
@@ -19,9 +17,9 @@ summary: |
   You'll also learn how to grant them permission to your Azure resources so that your pipelines can deploy your Bicep files.
 abstract: |
   After completing this module, you'll be able to:
-  - Explain what a service principal is, how it works, and how it compares to a managed identity
-  - Create a service principal and manage its keys
-  - Configure the appropriate authorization for a service principal to deploy Azure resources
+  - Explain what a service principal is, how it works, and how it compares to a managed identity.
+  - Create a service principal and manage its keys.
+  - Configure the appropriate authorization for a service principal to deploy Azure resources.
 prerequisites: |
   You should be familiar with:
   - Creating and deploying basic Bicep templates.

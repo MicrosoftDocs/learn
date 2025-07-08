@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.prevent-data-exfiltration-azure-ai-workloads.prevent-data-exfiltration-azure-ai-workloads
+title: Prevent data exfiltration from Azure AI Workloads
+metadata:
+  title: Prevent Data Exfiltration From Azure AI Workloads
+  description: Understand data exfiltration risks in Azure AI workloads and how to mitigate them.
+  ms.date: 07/01/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-prevent-data-exfiltration-azure-ai-workloads.md)]

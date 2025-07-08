@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.wwl.purview-ediscovery-manage-investigations
+metadata:
+  title: 'Manage investigations with Microsoft Purview eDiscovery'
+  description: 'Microsoft Purview eDiscovery supports internal investigations and legal matters by enabling the discovery, preservation, and analysis of Microsoft 365 content. Learn how to manage cases, place holds on data, run targeted searches, and organize results for review to meet legal and regulatory requirements.'
+  ms.date: 05/16/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: learning-path
+title: 'Manage investigations with Microsoft Purview eDiscovery'
+prerequisites: |
+  - Foundational knowledge of Microsoft security and compliance technologies
+  - Familiarity with Microsoft Purview and Microsoft 365 data locations
+summary: |
+  Microsoft Purview eDiscovery supports internal investigations and legal matters by enabling the discovery, preservation, and analysis of Microsoft 365 content. Learn how to manage cases, place holds on data, run targeted searches, and organize results for review to meet legal and regulatory requirements.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+products:
+- microsoft-purview
+- m365
+subjects:
+- security
+- compliance
+modules:
+- learn.wwl.purview-ediscovery-understand
+- learn.wwl.purview-ediscovery-create-case
+- learn.wwl.purview-ediscovery-manage-data-sources-holds
+- learn.wwl.purview-ediscovery-search
+- learn.wwl.purview-ediscovery-review-set
+
+trophy:
+  uid: learn.wwl.purview-ediscovery-manage-investigations.trophy

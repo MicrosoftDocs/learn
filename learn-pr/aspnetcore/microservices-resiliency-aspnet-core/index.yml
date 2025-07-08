@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn.microservices-resiliency-aspnet-core
 metadata:
-  title: Implement resiliency in a cloud-native microservice
+  title: Implement Resiliency in a Cloud-Native Microservice
   description: This module guides you through implementing resiliency in an .NET microservices app in a Kubernetes Service.
   author: codemillmatt
   ms.author: masoucou
-  ms.date: 11/06/2023
+  ms.date: 05/09/2025
   ms.service: aspnet-core
   ms.topic: module-standard-task-based
 title: Implement resiliency in a cloud-native .NET microservice
 summary: Learn how to make your cloud-native .NET Core microservices app fault-tolerant with minimal impact on the user.
 abstract: |
-  In this module, you will:
+  In this module, you'll:
   - Understand foundational resiliency concepts.
   - Observe the behavior of a microservice with no resiliency strategy.
   - Implement failure handling code for HTTP requests in one microservice.

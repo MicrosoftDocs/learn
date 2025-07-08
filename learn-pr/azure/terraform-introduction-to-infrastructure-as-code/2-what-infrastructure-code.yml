@@ -2,8 +2,6 @@
 uid: learn.azure.terraform-introduction-to-infrastructure-as-code.what-infrastructure-code
 title: What is infrastructure as code?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is infrastructure as code?
   description: Learn about infrastructure as code and how it can help you quickly and confidently scale your cloud deployments.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 10 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/2-what-infrastructure-code.md)]
-
+

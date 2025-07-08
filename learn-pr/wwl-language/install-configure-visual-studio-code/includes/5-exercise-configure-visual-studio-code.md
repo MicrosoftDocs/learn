@@ -73,3 +73,4 @@ To install the C# Dev Kit extension for Visual Studio Code, complete the followi
 The C# extensions you installed are the only ones that you need for now.
 
 In the next Unit, you install the .NET SDK.
+

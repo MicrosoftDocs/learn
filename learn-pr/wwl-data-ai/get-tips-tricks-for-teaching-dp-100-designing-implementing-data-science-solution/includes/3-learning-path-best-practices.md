@@ -1,6 +1,3 @@
-
-
-
 The DP-100: Designing and Implementing a Data Science Solution on Azure course isn't a fundamentals course. Students build their skills to be able to apply data science and machine learning to implement and run machine learning workloads on Azure.
 
 Use the trainer demos and your own experience to demonstrate each learning path’s purpose and watch for links to additional information that you want to share with your students. 

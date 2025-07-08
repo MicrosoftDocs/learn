@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.automate-deployment-using-powershell
 title: Automate deployment by using PowerShell
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Automate deployment by using PowerShell
   description: "Automate deployment by using PowerShell"
   ms.date: 02/26/2025
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/4-automate-deployment-using-powershell.md)]
-
+

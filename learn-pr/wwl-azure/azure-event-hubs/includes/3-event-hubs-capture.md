@@ -32,3 +32,4 @@ Event Hubs traffic is controlled by throughput units. A single throughput unit a
 
 Once configured, Event Hubs Capture runs automatically when you send your first event, and continues running. To make it easier for your downstream processing to know that the process is working, Event Hubs writes empty files when there's no data. This process provides a predictable cadence and marker that can feed your batch processors.
 
+

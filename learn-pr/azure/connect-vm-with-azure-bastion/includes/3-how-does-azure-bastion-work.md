@@ -4,7 +4,7 @@ The following diagram shows an overview of how Azure Bastion works when connecti
 
 :::image type="icon" source="../media/3-bastion-architecture-overview.png" border="false" alt-text="Diagram that shows the process of connecting to a VM through the Azure portal by using Azure Bastion.":::
 
-1. **You connect to a VM in the Azure portal**: In the Azure portal, on the VM overview page, select **Connect** > **Bastion** > **Use Bastion**, then enter your credentials for the VM.
+1. **You connect to a VM in the Azure portal**: In the Azure portal, on the VM overview page, select **Connect** > **Connect via Bastion**, then enter your credentials for the VM.
 1. **Browser connects to the Azure Bastion host**: The browser connects to Azure Bastion over the internet by using Transport Layer Security (TLS) and the public IP of the Azure Bastion host. Azure Gateway Manager manages portal connections to the Azure Bastion service on port 443 or 4443.
 1. **Bastion connects to the VM by using RDP or SSH**: Azure Bastion is deployed in a separate subnet called AzureBastionSubnet within the virtual network. You create the subnet when you deploy Azure Bastion. The subnet can have address spaces with a /26 subnet mask or larger. Don't deploy other Azure resources to this subnet or change the subnet name.
 1. **Bastion streams the VM to the browser**: Azure Bastion uses an HTML5-based web client that's automatically streamed to your local device. The Azure Bastion service packages the session information by using a custom protocol. The packages are transmitted through TLS.
@@ -47,7 +47,7 @@ On your existing virtual network, add a subnet named *AzureBastionSubnet*.
 
 :::image type="content" source="../media/3-virtual-network-add-subnet.png" alt-text="Screenshot of the page for adding a subnet, where the subnet name is AzureBastionSubnet.":::
 
-To provision Azure Bastion, in the portal on the VM, select **Connect** > **Bastion** > **Configure manually**. Enter a name for the Azure Bastion resource, select the subnet, create a public IP, and so on. After Azure Bastion deploys, you can connect to the VM.
+To provision Azure Bastion, in the portal on the VM, select **Connect** > **Connect via Bastion** > **Configure manually**. Enter a name for the Azure Bastion resource, select the subnet, create a public IP, and so on. After Azure Bastion deploys, you can connect to the VM.
 
 :::image type="content" source="../media/3-operations-bastion.png" alt-text="Screenshot of the Create a Bastion page with fields filled out by default, like Azure Bastion resource name, subnet, and create public IP address.":::
 

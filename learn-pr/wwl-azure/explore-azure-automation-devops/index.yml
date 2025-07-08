@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-automation-devops
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Automation with DevOps
   description: Explore Azure Automation with DevOps
   ms.date: 05/23/2024
@@ -63,4 +61,4 @@ units:
 - learn.wwl.explore-azure-automation-devops.summary
 badge:
   uid: learn.wwl.explore-azure-automation-devops.badge
-
+

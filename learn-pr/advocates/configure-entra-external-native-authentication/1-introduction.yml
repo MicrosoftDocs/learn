@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-entra-external-native-auth.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Guided project where you complete an end-to-end project by following step-by-step instructions.
+  ms.date: 04/10/2025
+  author: S2FrdQ
+  ms.author: joylynnkirui
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-database-authentication-authorization.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 02/25/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -73,4 +72,4 @@ quiz:
     - content: "Granular security"
       isCorrect: false
       explanation: "Incorrect. Granular security would involve granting access to the procedure, but not actual manage the privileges."
-
+

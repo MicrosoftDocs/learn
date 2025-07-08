@@ -2,8 +2,6 @@
 uid: learn.protect-virtual-desktop-deployment-azure-firewall.exercise-deploy-azure-firewall
 title: Exercise - Deploy Azure Firewall
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Deploy Azure Firewall
   description: Exercise - Deploy Azure Firewall
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-deploy-azure-firewall.md)]
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-paas-resources-using-automated-methods
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage Azure PaaS tasks using automation
   description: Manage Azure PaaS tasks using automation
   ms.date: 02/27/2025
@@ -50,4 +48,4 @@ units:
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.summary
 badge:
   uid: learn.wwl.manage-azure-paas-resources-using-automated-methods.badge
-
+

@@ -2,8 +2,6 @@
 uid: learn.api-management.api-management
 title: API management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: API management
   description: In this unit, you will learn what things to consider when managing APIs at scale.
   author: dlepow
@@ -50,4 +48,4 @@ quiz:
         - content: Permanently disable a backend service when an error occurs.
           isCorrect: false
           explanation: Incorrect. You don't want to disable a backend service permanently but you want to temporarily block requests to a failing backend.
-
+

@@ -1,15 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-non-relational-data-stores-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 12/13/2024
+  ms.date: 06/20/2025
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: calopez
   ms.topic: unit
   ms.custom:
   - N/A
+  module_assessment: true
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]

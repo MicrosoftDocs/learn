@@ -4,10 +4,12 @@ title: Examine user profile
 metadata:
   title: Examine user profile
   description: "This unit explains how to examine user profiles."
-  ms.date: 05/24/2023
+  ms.date: 03/31/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/2-examine-user-profile.md)]

@@ -8,7 +8,7 @@ In this module, you'll continue your journey with the Tailspin team as they set 
 
 After completing this module, you'll be able to:
 
-- Define what continuous delivery is, why it is important, and what tools you can use.
+- Define what continuous delivery is, why it's important, and what tools you can use.
 - Create a basic release pipeline in Azure Pipelines that deploys a web application to Azure
   App Service.
 - Examine pipeline analytics to understand the health and history of your releases.
@@ -32,7 +32,7 @@ You can get started with Azure and Azure DevOps for free. You don't need an Azur
 
 ## Meet the team
 
-You met the *Space Game* web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
+You met the *Space Game* web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module:
 
 :::row:::
 

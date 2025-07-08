@@ -2,13 +2,11 @@
 uid: learn.wwl.create-speech-enabled-apps.audio-format-voices
 title: Configure audio format and voices
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure audio format and voices
   description: Configure audio format and voices
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/25/2024
+  ms.date: 05/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

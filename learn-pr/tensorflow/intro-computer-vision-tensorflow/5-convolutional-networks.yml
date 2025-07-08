@@ -2,8 +2,6 @@
 uid: learn.tensorflow.intro-computer-vision.convolutional-networks
 title: Convolutional neural networks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Convolutional neural networks
   description: Learn special convolutional architecture of neural networks for image recognition tasks
   author: shwars
@@ -66,4 +64,4 @@ quiz:
         - content: "Sigmoid"
           isCorrect: false
           explanation: "Sigmoid is usually used after the final layer to get the probability output"
-
+

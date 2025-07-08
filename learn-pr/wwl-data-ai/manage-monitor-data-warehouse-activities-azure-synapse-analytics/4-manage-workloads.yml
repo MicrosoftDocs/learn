@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.manage-workloads
 title: Manage workloads in Azure Synapse Analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage workloads in Azure Synapse Analytics
   description: "Manage workloads in Azure Synapse Analytics"
   ms.date: 06/12/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-manage-workloads.md)]
+  [!include[](includes/4-manage-workloads.md)]

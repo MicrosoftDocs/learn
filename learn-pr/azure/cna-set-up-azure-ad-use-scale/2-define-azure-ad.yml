@@ -2,8 +2,6 @@
 uid: learn.azure.cna-set-up-apps-use-scale.2-define-azure-ad
 title: Define Microsoft Entra ID
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Define Microsoft Entra ID
   description: Description of Microsoft Entra ID
   ms.date: 08/22/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/2-define-azure-ad.md)]
-
+

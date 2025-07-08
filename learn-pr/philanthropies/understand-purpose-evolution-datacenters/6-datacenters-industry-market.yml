@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.understand-purpose-evolution-datacenters.datacenters-industry-market
+title: The datacenter industry and market
+metadata:
+  title: The Datacenter Industry and Market
+  description: Learn about the datacenter industry and market.
+  ms.date: 05/06/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+ [!include[](includes/6-datacenters-industry-market.md)]

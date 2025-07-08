@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.language-models
+title: How do language models work? 
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: How do language models work?
+  description: Learn about some core concepts that shape language models. Explore the first deep learning techniques used for natural language processing (NLP).
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 11/26/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-language-models.md)]
+

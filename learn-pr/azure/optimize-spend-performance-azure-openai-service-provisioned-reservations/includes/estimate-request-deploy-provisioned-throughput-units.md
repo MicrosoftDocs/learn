@@ -58,6 +58,9 @@ For example, the following screenshot displays a quota limit of 500 PTUs in West
 
 By default, PTU quota is available in many regions. If an additional quota is required, customers can request it by using the **Request Quota** link next to the **Provisioned Managed Throughput Unit** quota item in Azure OpenAI Foundry. The form allows customers to request an increase in the PTU quota for a specified region. After the request is approved, customers will receive an email at the included address, typically within two business days.
 
+> [!NOTE]
+> You must specify quota for the deployment (Global PTU, Data Zone PTU, and Regional PTU have separate quota).
+
 ## Creating a provisioned deployment - capacity is available
 
 You can create PTUs by using Azure OpenAI resource objects within Azure. You must have an Azure OpenAI resource in each region where you intend to create a deployment. Use the Azure portal to create a resource in a region with an available quota, if required. Note that Azure OpenAI resources can support multiple types of Azure OpenAI deployments at the same time. It isn't necessary to dedicate new resources for your provisioned deployments.

@@ -2,8 +2,6 @@
 uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series.7-knowledge-selecting-the-right-compiler-and-numerical-libraries
 title: Knowledge check - Select the right compiler and numerical libraries
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check - Select the right compiler and numerical libraries
   description: Learn how to select the appropriate compiler and numerical libraries to build an optimized HPC application.
   ms.date: 08/05/2024
@@ -49,4 +47,4 @@ quiz:
     - content: FFTW wrapper in Intel MKL library
       isCorrect: true
       explanation: The MKL FFTW wrapper uses the correct FFTW API and tuned FFT library for HC44. This is the best choice.
-
+

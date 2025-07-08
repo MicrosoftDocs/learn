@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-generative-ai-audio-apps.deploy-multimodal-models
+title: Deploy a multimodal model
+metadata:
+  title: Deploy a multimodal model
+  description: "Deploy a multimodal model that can respond to audio-based prompts."
+  ms.date: 05/6/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-deploy-multimodal-model.md)]

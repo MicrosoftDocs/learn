@@ -2,13 +2,11 @@
 uid: learn.wwl.analyze-video.exercise-video-indexer
 title: Exercise - Analyze video
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Analyze video
   description: Exercise - Analyze video
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 12/01/2023
+  ms.date: 04/30/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

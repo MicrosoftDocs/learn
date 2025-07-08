@@ -2,8 +2,6 @@
 uid: learn.secure-your-azure-virtual-machine-disks.4-exercise-encrypt-existing-vm-disks
 title: Exercise - Encrypt existing VM disks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Encrypt existing VM disks
   description: Exercise - Encrypt existing virtual machine (VM) disks.
   ms.date: 09/10/2024
@@ -17,4 +15,4 @@ azureSandbox: true
 durationInMinutes: 20
 content: |
   [!include[](includes/4-exercise-encrypt-existing-vm-disks.md)]
-
+

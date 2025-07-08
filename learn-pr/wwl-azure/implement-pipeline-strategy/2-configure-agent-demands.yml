@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-pipeline-strategy.configure-agent-demands
 title: Configure agent demands
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure agent demands
   description: "Configure agent demands"
   ms.date: 05/26/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-configure-agent-demands.md)]
+  [!include[](includes/2-configure-agent-demands.md)]

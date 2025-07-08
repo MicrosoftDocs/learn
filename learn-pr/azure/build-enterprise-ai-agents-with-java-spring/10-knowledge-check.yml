@@ -1,16 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-enterprise-ai-agents-with-java-spring.10-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge Check
+  title: Module assessment
   description: Test your knowledge of Spring AI and Azure deployment.
   ms.date: 03/16/2025
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: jbalderas, gok
+  author: yortch
+  ms.author: jbalderas
+  ms.reviewer: thegovind
   ms.topic: unit
   ms.custom: devx-track-java
   ms.collection: ce-skilling-ai-copilot
+  module_assessment: true
 durationInMinutes: 5
 quiz:
   questions:

@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-git-repositories.work-large-repositories
 title: Work with large repositories
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Work with large repositories
   description: "Work with large repositories"
   ms.date: 05/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-work-large-repositories.md)]
+  [!include[](includes/2-work-large-repositories.md)]

@@ -2,8 +2,6 @@
 uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.understand-branching
 title: Understand branching
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Understand branching
   description: Learn about branching strategies and branch protection.
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/2-understand-branching.md)]
-
+

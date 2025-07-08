@@ -2,8 +2,6 @@
 uid: learn.api-management.token
 title: Token management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Token management
   description: This unit describes how to apply policies to manage tokens in Azure API Management service.
   author: dlepow
@@ -38,4 +36,4 @@ quiz:
           explanation: Incorrect. Token encryption method isn't a good dimension to use for a token metric policy.
         - content: Token expiration date, to automatically renew tokens before they expire.
           isCorrect: false
-          explanation: Incorrect. Token expiration date isn't a good dimension to use for a token metric policy.
+          explanation: Incorrect. Token expiration date isn't a good dimension to use for a token metric policy.

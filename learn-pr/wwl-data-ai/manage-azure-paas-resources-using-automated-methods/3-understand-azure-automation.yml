@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-paas-resources-using-automated-methods.understand-azure-automation
 title: Understand Azure Automation
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand Azure Automation
   description: "Understand Azure Automation"
   ms.date: 02/27/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-understand-azure-automation.md)]
+  [!include[](includes/3-understand-azure-automation.md)]

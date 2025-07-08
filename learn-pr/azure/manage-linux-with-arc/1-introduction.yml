@@ -2,13 +2,11 @@
 uid: learn.manage-linux-with-arc.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to Manage Linux with Azure Arc.
-  ms.date: 07/30/2024
-  author: johnmarco
-  ms.author: johnmarc
+  ms.date: 06/04/2025
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: unit
   ms.custom: linux-related-content
 durationInMinutes: 3

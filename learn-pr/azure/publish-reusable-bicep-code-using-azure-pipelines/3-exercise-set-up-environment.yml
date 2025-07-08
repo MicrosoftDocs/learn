@@ -2,8 +2,6 @@
 uid: learn.azure.publish-reusable-bicep-code-using-azure-pipelines.exercise-set-up-environment
 title: Exercise - Set up your environment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Set up your environment
   description: Configure your environment to deploy Azure template specs and Bicep modules in your deployment pipelines.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/3-exercise-set-up-environment.md)]
-
+

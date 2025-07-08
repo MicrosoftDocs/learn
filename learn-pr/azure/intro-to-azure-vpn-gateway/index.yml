@@ -1,11 +1,9 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-vpn-gateway
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure VPN Gateway
   description: Learn what Azure VPN Gateway does, how it works, and when you should choose to use Azure VPN Gateway as a solution to meet your organization's needs.
-  ms.date: 02/24/2024
+  ms.date: 05/14/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom:

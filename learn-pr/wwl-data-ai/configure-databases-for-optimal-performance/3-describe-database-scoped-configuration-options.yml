@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-databases-for-optimal-performance.describe-database-scoped-configuration-options
 title: Describe database scoped configuration options
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe database scoped configuration options
   description: "Describe database scoped configuration options"
   ms.date: 03/20/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-describe-database-scoped-configuration-options.md)]
+  [!include[](includes/3-describe-database-scoped-configuration-options.md)]

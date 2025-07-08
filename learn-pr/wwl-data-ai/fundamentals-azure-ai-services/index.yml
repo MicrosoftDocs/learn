@@ -3,9 +3,9 @@ uid: learn.wwl.fundamentals-azure-ai-services
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Fundamentals of Azure AI services
+  title: Fundamentals of Azure AI Services
   description: "This module is an introduction to how Azure AI services can be used to build applications."
-  ms.date: 10/03/2024
+  ms.date: 06/24/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module
@@ -22,10 +22,8 @@ abstract: |
   -   Understand how to access Azure AI services in the Azure portal
 
   -   Understand how to use Azure AI services keys and endpoint for authentication
-
-  -   Create and use an Azure AI services resource in a Content Safety Studio setting
 prerequisites: None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/fundamentals-azure-ai-services.svg
 levels:
 - beginner
 roles:

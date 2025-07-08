@@ -2,12 +2,10 @@
 uid: learn.azdo.create-release-pipeline.6-monitor-pipeline-health
 title: Exercise - Monitor the health of your pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Monitor the health of your pipeline
   description: Examine a few of the analytics features that Azure Pipelines provides.
   ms.custom: devdivchpfy22, engagement-fy23
-  ms.date: 08/14/2023
+  ms.date: 04/29/2025
   author: ramiMSFT
   ms.author: rabououn
   ms.topic: unit

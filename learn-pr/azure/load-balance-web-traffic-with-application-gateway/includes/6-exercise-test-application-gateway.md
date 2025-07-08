@@ -1,4 +1,4 @@
-The final step is to test the application gateway and verify that it implements load balancing, and won't attempt to direct traffic to a web server that is unavailable. We also want to ensure that our path-based routing is working correctly.
+The final step is to test the application gateway and verify that it implements load balancing, and won't attempt to direct traffic to a web server that's unavailable. We also want to ensure that our path-based routing is working correctly.
 
 ![Diagram showing the resources that have been deployed.](../media/6-resources.svg)
 
@@ -50,11 +50,11 @@ You've verified that the web application is running. Application Gateway uses lo
 
 ## Test path-based routing
 
-Now let's test out the path-based routing. Recall that URLs to the root of the site and with **/VehicleRegistration/** will be routed to the **vmPool** containing our VMs, and requests to **/LicenseRenewal/** will be routed to the **appServicePool** containing our App Service.
+Now let's test out the path-based routing. Recall that URLs to the root of the site and with **/VehicleRegistration/** are routed to the **vmPool** containing our VMs, and requests to **/LicenseRenewal/** are routed to the **appServicePool** containing our App Service.
 
-You just confirmed that routing to the root page works, as you were able to pull up the vehicle registration page. Let's try the other routes to confirm they work.
+You just confirmed that routing to the root page works, because you were able to pull up the vehicle registration page. Let's try the other routes to confirm they work.
 
-1. Now select **Register a Vehicle** in the application gateway page. This should bring up the Vehicle Registration page for the vehicle registration site. With **/VehicleRegistration/** in the URL, this routes to the **vmPool** where our vehicle registration site is running.
+1. Now select **Register a Vehicle** in the application gateway page. This should bring up the Vehicle Registration page for the vehicle-registration site. With **/VehicleRegistration/** in the URL, this routes to the **vmPool** where our vehicle registration site is running.
 
     :::image type="content" source="../media/6-vehicle-registration.png" alt-text="Screenshot showing a vehicle-registration web app." loc-scope="other"::: <!-- no-loc -->
 

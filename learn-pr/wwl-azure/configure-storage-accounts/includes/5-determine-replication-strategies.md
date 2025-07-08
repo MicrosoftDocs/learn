@@ -1,11 +1,6 @@
 The data in your Azure storage account is always replicated to ensure durability and high availability. [Azure Storage replication](/azure/storage/common/storage-redundancy) copies your data to protect from planned and unplanned events. These events range from transient hardware failures, network or power outages, massive natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions. Replication ensures your storage account meets the Service-Level Agreement (SLA) for Azure Storage even if there are failures.
 
-We explore four replication strategies: 
-
-- Locally redundant storage (LRS)
-- Zone redundant storage (ZRS)
-- Geo-redundant storage (GRS)
-- Geo-zone-redundant storage (GZRS) 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0268948e-6253-402a-8b32-7c3f899df811]
 
 ### Locally redundant storage
 
@@ -15,7 +10,7 @@ Locally redundant storage is the lowest-cost replication option and offers the l
 
 - Your application stores data that can be easily reconstructed if data loss occurs.
 - Your data is constantly changing like in a live feed, and storing the data isn't essential.
-- Your application is restricted to replicating data only within a country or region due to data governance requirements.
+- Your application is restricted to replicating data only within a location due to data governance requirements.
 
 ### Zone redundant storage
 
@@ -58,3 +53,7 @@ Let's examine the scope of durability and availability for the different replica
 | Node in data center unavailable | Entire data center unavailable | Region-wide outage | Read access during region-wide outage | 
 | --- | --- | --- | --- |  
 | - **LRS** <br> - **ZRS** <br> - **GRS** <br> - **RA-GRS** <br> - **GZRS** <br> - **RA-GZRS** | - **ZRS** <br> - **GRS** <br> - **RA-GRS** <br> - **GZRS** <br> - **RA-GZRS** | - **GRS** <br> - **RA-GRS** <br> - **GZRS** <br> - **RA-GZRS** | - **RA-GRS** <br> - **RA-GZRS** |
+
+
+> [!TIP]
+> Extend your learning with the [*Make your application storage highly available with read-access geo-redundant storage*](/training/modules/ha-application-storage-with-grs/) training module. This module has a sandbox where you can practice. 

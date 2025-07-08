@@ -2,13 +2,11 @@
 uid: learn.startups.revenue.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Review the fundamentals of revenue models. Topics include testing revenue model assumptions with customers and developing a customer persona.
-  ms.date: 06/18/2024
-  author: vhawk85
-  ms.author: vahughes
+  ms.date: 06/16/2025
+  author: vaquresh
+  ms.author: vaquresh
   ms.topic: unit
   ms.collection: learn-startups
 durationInMinutes: 1

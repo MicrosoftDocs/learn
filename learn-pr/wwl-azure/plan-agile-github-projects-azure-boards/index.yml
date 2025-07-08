@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-agile-github-projects-azure-boards
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan Agile with GitHub Projects and Azure Boards
   description: "Plan Agile with GitHub Projects and Azure Boards"
   ms.date: 05/24/2024
@@ -62,4 +60,4 @@ units:
 - learn.wwl.plan-agile-github-projects-azure-boards.knowledge-check
 - learn.wwl.plan-agile-github-projects-azure-boards.summary
 badge:
-  uid: learn.wwl.plan-agile-github-projects-azure-boards.badge
+  uid: learn.wwl.plan-agile-github-projects-azure-boards.badge

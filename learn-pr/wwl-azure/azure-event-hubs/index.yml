@@ -5,14 +5,15 @@ metadata:
   prefetch-feature-rollout: true
   title: Explore Azure Event Hubs
   description: "Learn how Azure Event Hubs captures events and how to scale your processing application."
-  ms.date: 07/17/2024
+  ms.date: 06/16/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure-event-hubs
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Explore Azure Event Hubs
 summary: Learn how Azure Event Hubs captures events and how to scale your processing application.
 abstract: |
@@ -23,6 +24,8 @@ abstract: |
   -   Explain how to process events.
 
   -   Perform common operations with the Event Hubs client library.
+
+  -   Send and retrieve events from Azure Event Hubs
 prerequisites: |
   -   You should be familiar with developer concepts and terminology.
 
@@ -43,6 +46,7 @@ units:
 - learn.wwl.azure-event-hubs.scale-your-processing-application
 - learn.wwl.azure-event-hubs.control-access-to-events
 - learn.wwl.azure-event-hubs.perform-common-operations-client-library
+- learn.wwl.azure-event-hubs.event-hubs-send-receive
 - learn.wwl.azure-event-hubs.knowledge-check
 - learn.wwl.azure-event-hubs.summary
 badge:

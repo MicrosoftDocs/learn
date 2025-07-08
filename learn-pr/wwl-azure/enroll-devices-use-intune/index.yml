@@ -1,12 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.enroll-devices-use-intune
 metadata:
-  title: Enroll devices using Microsoft Intune
+  title: Enroll Devices Using Microsoft Intune
   description: "Students will learn how to configure and setup Intune to more easily manage Windows, Android, and iOS devices."
-  ms.date: 05/02/2024
+  ms.date: 04/16/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: windows
@@ -31,7 +32,7 @@ prerequisites: |
   -   Strong understanding of computer networking, client security, and application concepts.
 
   -   Experience using Active Directory Domain Services.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/enroll-devices-use-intune.svg
 levels:
 - intermediate
 roles:

@@ -2,8 +2,6 @@
 uid: learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.explore-alerts
 title: Explore SAP HANA alerts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore SAP HANA alerts
   description: "Explore SAP HANA alerts"
   ms.date: 07/06/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-explore-sap-hana-alerts.md)]
+  [!include[](includes/4-explore-sap-hana-alerts.md)]

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.manage-resource-lifecycles-deployment-stacks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage resource lifecycles with deployment stacks
   description: Understand how deployment stacks manage resources on your behalf, and how resources change as stacks are deployed, updated, and removed.
   ms.date: 08/01/2023
@@ -60,4 +58,4 @@ units:
 - learn.azure.manage-resource-lifecycles-deployment-stacks.summary
 badge:
   uid: learn.azure.manage-resource-lifecycles-deployment-stacks.badge
-
+

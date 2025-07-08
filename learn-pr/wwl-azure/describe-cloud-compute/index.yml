@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-cloud-compute
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe cloud computing
   description: "Introduction to concepts surrounding cloud computing. Mostly platform agnostic, focused instead on general concepts."
   ms.date: 12/12/2024

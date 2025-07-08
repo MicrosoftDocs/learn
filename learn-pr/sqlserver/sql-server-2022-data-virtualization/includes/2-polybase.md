@@ -45,7 +45,7 @@ For more information about object storage benefits, installation, and testing, s
 - [Cloudian](https://cloudian.com/sql) HyperStore
 - [Dell](https://www.dell.com/support/product-details/en-us/product/isilon-onefs) Isildon OneFS
 - [Dell](https://github.com/EMCECS/ECS-CommunityEdition) ECS Community Edition
-- [Hitachi](https://www.hitachivantara.com/en-us/pdf/white-paper/microsoft-sql-server-2022-with-hcp-backup-to-object-polybase-validation.pdf) Hitachi Content Platform (HCP)
+- [Hitachi](https://www.hitachivantara.com/en-us/pdf/architecture-guide/hitachi-solution-for-databases-microsoft-sql-server-datacenter-using-ha820-g2-server-hitachi-vsp-one-block.pdf) Hitachi Content Platform (HCP)
 - [MinIO](https://min.io/solutions/sqlserver) Multi-Cloud Object Storage
 - [Pure Storage](https://www.purestorage.com/products/unstructured-data-storage/flashblade-s.html) Pure FlashBlade. The Pure Storage [SQL Server Test Drive](https://www.purestorage.com/solutions/applications/microsoft/sql/sql-test-drive.html) portal has virtual SQL Server 2022 labs with a full ledger data virtualization guided exercise and more.
 

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-data-science-virtual-machine.exercise-preinstalled-tools
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Use the preinstalled tools
   description: Learn how to use the preinstalled tools in the Data Science Virtual Machine to perform data science.
   ms.date: 04/09/2024
@@ -17,4 +15,4 @@ title: Exercise - Use the preinstalled tools
 durationInMinutes: 15
 content: |
   [!include[](includes/exercise-preinstalled-tools.md)]
-
+

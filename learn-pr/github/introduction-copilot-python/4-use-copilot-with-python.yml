@@ -6,7 +6,7 @@ metadata:
   description: Use GitHub Copilot to update a Python project. Update the Python API and use GitHub Copilot to suggest additions for new endpoints.
   author: bethanyjep
   ms.author: bethanycheum
-  ms.date: 06/25/2024
+  ms.date: 06/11/2025
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot

@@ -2,11 +2,9 @@
 uid: learn.azdo.manage-release-cadence.4-implement-blue-green-deployment
 title: Exercise - Implement the blue-green deployment pattern
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Implement the blue-green deployment pattern
   description: Implement the blue-green deployment pattern in your pipeline by using deployment slots.
-  ms.date: 02/05/2024
+  ms.date: 06/24/2025
   author: ramiMSFT
   ms.author: rabououn
   ms.custom: devdivchpfy22

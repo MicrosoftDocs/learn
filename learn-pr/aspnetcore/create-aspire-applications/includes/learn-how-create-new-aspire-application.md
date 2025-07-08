@@ -21,7 +21,7 @@ There are two .NET Aspire starter templates currently available:
 
 - **.NET Aspire Starter Application**: This template includes the **AspireSample.AppHost** and **AspireSample.ServiceDefaults** projects, but also includes an example Blazor App **AspireSample.Web** and an API that provides data to it **AspireSample.ApiService**. These projects are preconfigured with service discovery and other basic examples of common .NET Aspire functionality.
 
-Both Aspire templates provide a dashboard to monitor the health of the services and the traffic between them. The dashboard helps improve your local development experience &mdash; as at a glance it gives you an overview of the state and structure of your app.
+Both Aspire templates provide a dashboard to monitor the health of the services and the traffic between them. The dashboard helps improve your local development experience&mdash;as at a glance it gives you an overview of the state and structure of your app.
 
 There are also three project templates available:
 
@@ -88,7 +88,7 @@ Both templates add **AppHost** and **ServiceDefaults** projects. These projects 
 
 The **ServiceDefaults** project contains the default configuration for the application. These configurations are reused across all the projects in your solution.
 
-The above solution also includes **Web** and **ApiService** projects. The **Web** project is a Blazor WebAssembly app that has a counter and calls the **ApiService** to get forecast data. The **ApiService** is a simple API that returns forecast data.
+This solution also includes **Web** and **ApiService** projects. The **Web** project is a Blazor WebAssembly app that has a counter and calls the **ApiService** to get forecast data. The **ApiService** is a simple API that returns forecast data.
 
 ### Walk through the code structure
 
@@ -108,13 +108,13 @@ builder.AddProject<Projects.AspireStarterSample_Web>("webfrontend")
 builder.Build().Run();
 ```
 
-Walking through the above code, line by line:
+Walking through the *Program.cs* code, line by line:
 
 - Create a `builder` variable that's a `IDistributedApplicationBuilder`.
 - Create a `cache` variable that's a `IResourceBuilder<RedisResource>`.
 - Call `AddProject` with a generic-type parameter containing the project's `IServiceMetadata` details, adding the **AspireSample.ApiService** project to the application model.
 
-    This is a fundamental building block of .NET Aspire. The `AddProject` configures service discovery and communication between the projects in your app. The name argument **apiservice** is used to identify the project in the application model, and used later by projects that want to communicate with it.
+    This method is a fundamental building block of .NET Aspire. `AddProject` configures service discovery and communication between the projects in your app. The name argument **apiservice** is used to identify the project in the application model, and used later by projects that want to communicate with it.
 
 - Calls `AddProject` again, this time adding the **AspireSample.Web** project to the application model. It also chains multiple calls to `WithReference` passing the **cache** and **apiservice** variables.
 

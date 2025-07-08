@@ -2,8 +2,6 @@
 uid: learn.wwl.protect-data-transit-at-rest.enable-encrypted-connections
 title: Enable encrypted connections
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable encrypted connections
   description: "Enable encrypted connections"
   ms.date: 2/25/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-enable-encrypted-connections.md)]
+  [!include[](includes/5-enable-encrypted-connections.md)]

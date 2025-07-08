@@ -4,7 +4,7 @@ title: Generate embeddings using Azure OpenAI Service
 metadata:
   title: Generate embeddings using Azure OpenAI Service
   description: "Review how to use Azure OpenAI Service to generate vector embeddings."
-  ms.date: 03/10/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

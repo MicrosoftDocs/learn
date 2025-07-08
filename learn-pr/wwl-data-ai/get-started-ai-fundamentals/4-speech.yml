@@ -3,8 +3,6 @@
 uid: learn.wwl.get-started-ai-fundamentals.speech
 title: Speech
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Speech
   description: "Speech recognition and synthesis are key components of AI that enable machines to understand and generate human speech."
   ms.date: 02/24/2025
@@ -15,4 +13,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-speech.md)]
+  [!include[](includes/4-speech.md)]

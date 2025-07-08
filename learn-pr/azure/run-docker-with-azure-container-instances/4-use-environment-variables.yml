@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-docker-containers-aci.4-use-environment-variables
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Set environment variables
   description: Set environment variables in Azure Container Instances.
   ms.date: 01/15/2025
@@ -14,4 +12,4 @@ title: Exercise - Set environment variables
 durationInMinutes: 10
 content: |
   [!include[](includes/4-use-environment-variables.md)]
-
+

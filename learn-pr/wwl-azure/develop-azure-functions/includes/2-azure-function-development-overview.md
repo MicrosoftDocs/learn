@@ -22,15 +22,15 @@ A Functions project directory contains the following files in the project root f
 
 The `host.json` metadata file contains configuration options that affect all functions in a function app instance. Other function app configuration options are managed depending on where the function app runs:
 
-* **Deployed to Azure:** in your application settings
-* **On your local computer:** in the `local.settings.json` file.
+* **Deployed to Azure:** Configured in your application settings
+* **On your local computer:** Configured in the `local.settings.json` file.
 
 Configurations in `host.json` related to bindings are applied equally to each function in the function app. You can also override or apply settings per environment using application settings. To learn more, see the [host.json reference](/azure/azure-functions/functions-host-json). 
 
 The `local.settings.json` file stores app settings, and settings used by local development tools. Settings in the `local.settings.json` file are used only when you're running your project locally. When you publish your project to Azure, be sure to also add any required settings to the app settings for the function app.
 
 > [!IMPORTANT]
-> Because the `local.settings.json` may contain secrets, such as connection strings, you should never store it in a remote repository.
+> Because the `local.settings.json` might contain secrets, such as connection strings, you should never store it in a remote repository.
 
 ### Synchronize settings
 

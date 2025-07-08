@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-onpremises-workloads-azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Migrate on-premises workloads to Azure
   description: Migrate on-premises workloads to Azure
   ms.date: 05/17/2021
@@ -42,4 +40,4 @@ units:
 - learn.wwl.migrate-onpremises-workloads-azure.summary
 badge:
   uid: learn.wwl.migrate-onpremises-workloads-azure.badge
-
+

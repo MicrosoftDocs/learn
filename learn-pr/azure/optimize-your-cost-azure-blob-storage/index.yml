@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.optimize-your-cost-azure-blob-storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Optimize your cost with Azure Blob Storage'
   description: Azure Blob Storage helps customers minimize their operational costs.
   manager: mkluck
@@ -44,4 +42,4 @@ units:
 - learn.azure.optimize-your-cost-azure-blob-storage.summary
 badge:
   uid: learn.azure.optimize-your-cost-azure-blob-storage.badge
-
+

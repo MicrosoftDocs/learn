@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-compliance-controls-for-sensitive-data.implement-dynamic-data-masking
 title: Implement Dynamic Data Masking
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement Dynamic Data Masking
   description: "Implement Dynamic Data Masking"
   ms.date: 02/26/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-implement-dynamic-data-masking.md)]
+  [!include[](includes/4-implement-dynamic-data-masking.md)]

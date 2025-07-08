@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.develop-generative-ai-audio-apps
+metadata:
+  title: Develop an audio-enabled generative AI application
+  description: A voice carries meaning beyond words, and audio-enabled generative AI models can interpret spoken input to understand tone, intent, and language. Learn how to build audio-enabled chat apps that listen and respond to audio.
+  ms.date: 05/6/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: azure-ai-services
+title: Develop an audio-enabled generative AI application
+summary: A voice carries meaning beyond words, and audio-enabled generative AI models can interpret spoken input to understand tone, intent, and language. Learn how to build audio-enabled chat apps that listen and respond to audio.
+abstract: |
+  After completing this module, you'll be able to:
+  - Deploy an audio-enabled generative AI model in Azure AI Foundry.
+  - Create a chat app that submits audio-based prompts.
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience with deploying generative AI models in Azure AI Foundry.
+  - Programming experience with Python or Microsoft C#.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles: 
+  - ai-engineer
+products: 
+  - azure
+  - ai-services
+subjects: 
+  - artificial-intelligence
+units:
+- learn.wwl.develop-generative-ai-audio-apps.introduction
+- learn.wwl.develop-generative-ai-audio-apps.deploy-multimodal-models
+- learn.wwl.develop-generative-ai-audio-apps.develop-audio-chat-apps
+- learn.wwl.develop-generative-ai-audio-apps.exercise
+- learn.wwl.develop-generative-ai-audio-apps.knowledge-check
+- learn.wwl.develop-generative-ai-audio-apps.summary
+badge:
+  uid: learn.wwl.develop-generative-ai-audio-apps.badge
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-key-vault-networking-settings.best-practices-for-azure-key-vault
 title: Best practices for Azure Key Vault
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Best practices for Azure Key Vault
   description: "Best practices for Azure Key Vault"
   ms.date: 10/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-best-practices-for-azure-key-vault.md)]
+  [!include[](includes/3-best-practices-for-azure-key-vault.md)]

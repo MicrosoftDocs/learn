@@ -1,18 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.bicep-conditions-loops.knowledge-check
-title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge on conditions and loops.
-  ms.date: 01/30/2025
+  ms.date: 04/18/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:

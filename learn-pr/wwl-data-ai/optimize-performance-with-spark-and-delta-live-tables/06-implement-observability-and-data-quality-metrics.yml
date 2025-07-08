@@ -2,8 +2,6 @@
 uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables.implement-observability-and-data-quality-metrics
 title: Implement observability and data quality metrics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement observability and data quality metrics
   description: "Implement observability and data quality metrics."
   ms.date: 08/06/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/06-implement-observability-and-data-quality-metrics.md)]
+  [!include[](includes/06-implement-observability-and-data-quality-metrics.md)]

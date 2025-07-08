@@ -152,7 +152,7 @@ New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. On the left menu, select **Deployments**.
+1. On the left menu, select **Deployments** under **Settings**.
 
    :::image type="content" source="../media/4-deployments.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the Deployments menu item highlighted." :::
 

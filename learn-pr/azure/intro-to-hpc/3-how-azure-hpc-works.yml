@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-hpc.3-azure-vm-hpc-instances
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: How Azure HPC works
+  title: How Azure HPC Works
   description: In this unit, you learn about components of Azure HPC and the orchestration of components of Azure HPC.
-  ms.date: 05/22/2023
+  ms.date: 04/07/2025
   author: padmalathas
   ms.author: padmalathas
   ms.topic: unit

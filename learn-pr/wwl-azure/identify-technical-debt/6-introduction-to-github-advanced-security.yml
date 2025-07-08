@@ -2,8 +2,6 @@
 uid: learn.wwl.identify-technical-debt.introduction-to-github-advanced-security
 title: Introduction to GitHub Advanced Security
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to GitHub Advanced Security
   description: "Introduction to GitHub Advanced Security"
   ms.date: 05/06/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-introduction-to-github-advanced-security.md)]
+  [!include[](includes/6-introduction-to-github-advanced-security.md)]
