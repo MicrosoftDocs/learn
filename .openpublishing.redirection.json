@@ -41,6 +41,153 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/2-choose-a-messaging-platform.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/3-exercise-implement-a-service-bus-topic-and-queue.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/4-write-code-that-uses-service-bus-queues.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/5-exercise-write-code-that-uses-service-bus-queues.yml",
+       "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/6-write-code-that-uses-service-bus-topics.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/7-exercise-write-code-that-uses-service-bus-topics.yml",
+       "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/2-hybrid-computing.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/3-fundamentals.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/4-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/2-what-is-azure-monitor.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/3-how-azure-monitor-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/4-when-to-use-azure-monitor.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/5-knowledge-check.yml",
+       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/2-what-is-azure-data-explorer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/3-how-azure-data-explorer-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/4-when-to-use-azure-data-explorer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/5-knowledge-check.yml",
+       "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+
+
+    {
       "source_path_from_root": "/learn-pr/achievements/learn.azure.deploy-java-spring-boot-app-service-mysql.badge.yml",
       "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
       "redirect_document_id": false
@@ -51388,6 +51535,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/evolve-your-devops-practices/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/get-started/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/index.md",
       "redirect_url": "/training/modules/purview-ediscovery-search/",
       "redirect_document_id": false
@@ -51465,6 +51617,141 @@
     {
       "source_path": "learn-pr/wwl-azure/create-implement-application-allowlists-adaptive-application-control/5-summary.md",
       "redirect_url": "/training/paths/implement-windows-server-iaas-virtual-machine-security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/2-what-is-agile.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/3-what-is-azure-boards.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/4-plan-work-azure-boards.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/2-what-are-delivery-plans.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/3-what-is-delivery-plans.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/4-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/5-plan-sprint-delivery-plans.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/6-track-dependencies-delivery-plans.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/7-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/2-what-is-devops.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/3-what-is-azure-devops.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/4-create-an-azure-devops-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/2-meet-the-team.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/3-release-process.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/4-assess-process-efficiency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
       "redirect_document_id": false
     }
   ]
