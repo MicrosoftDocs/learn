@@ -12,10 +12,7 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-The modules in this learning path form a progression:
-
-* [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
-* [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
+The modules in this learning path form a progression. To follow the progression from the beginning, be sure to first complete the [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true) learning path.
 
 This module also assumes you have basic familiarity with Azure Functions. That knowledge isn't required to complete the module. If you're new to Azure Functions, you can complete the [Create serverless applications](../../../paths/create-serverless-applications/index.yml?azure-portal=true) learning path first.
 
