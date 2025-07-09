@@ -1,3 +1,4 @@
+
 As a System Administrator at Contoso, you are responsible for evaluating all possible mitigations to secure the company’s network traffic. In addition to NSGs and Adaptive Network Hardening, you're considering implementing Microsoft Azure Firewall.
 
 ## What is Azure Firewall?

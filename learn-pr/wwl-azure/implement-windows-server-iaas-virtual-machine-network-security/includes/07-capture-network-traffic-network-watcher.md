@@ -1,4 +1,3 @@
-
 While planning Contoso's migration to Microsoft Azure, you continue to evaluate network security features that manage network traffic. To gather data on the company's network traffic, you implement Azure Network Watcher.
 
 ## What is Azure Network Watcher?

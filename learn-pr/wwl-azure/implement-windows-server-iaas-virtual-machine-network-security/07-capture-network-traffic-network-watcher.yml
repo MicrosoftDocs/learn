@@ -4,11 +4,12 @@ title: Capture network traffic with network watcher
 metadata:
   title: Capture network traffic with network watcher
   description: "Capture network traffic with network watcher"
-  ms.date: 12/24/2024
+  ms.date: 07/09/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/08-capture-network-traffic-network-watcher.md)]
+  [!include[](includes/07-capture-network-traffic-network-watcher.md)]

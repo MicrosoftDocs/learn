@@ -4,14 +4,15 @@ title: Implement Azure Firewall and Windows IaaS VMs
 metadata:
   title: Implement Azure Firewall and Windows IaaS VMs
   description: "Implement Azure Firewall and Windows IaaS VMs"
-  ms.date: 12/24/2024
+  ms.date: 07/09/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/04-implement-azure-firewall.md)]
+  [!include[](includes/03-implement-azure-firewall.md)]
 quiz:
   title: "Quick review"
   questions:
