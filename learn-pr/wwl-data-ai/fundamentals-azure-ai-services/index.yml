@@ -35,7 +35,6 @@ products:
 units:
 - learn.wwl.fundamentals-azure-ai-services.introduction
 - learn.wwl.fundamentals-azure-ai-services.what-are-ai-services
-- learn.wwl.fundamentals-azure-ai-services.create-azure-ai-resource
 - learn.wwl.fundamentals-azure-ai-services.use-azure-ai-service
 - learn.wwl.fundamentals-azure-ai-services.understand-authentication
 - learn.wwl.fundamentals-azure-ai-services.exercise
