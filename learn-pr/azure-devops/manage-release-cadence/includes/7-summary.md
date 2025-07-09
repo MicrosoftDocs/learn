@@ -8,7 +8,7 @@ As a bonus, in this module you also learned how to roll forward an unintended ch
 
 ## How is the team measuring up?
 
-In the _Assess your existing software development process_ module, Mara did a [value-stream mapping exercise](/training/modules/assess-your-development-process/4-assess-process-efficiency?azure-portal=true). The exercise helped the team analyze their current release-cycle process.
+Earlier in the team's DevOps journey, Mara did a value-stream mapping exercise that helped the team analyze their current release-cycle process.
 
 Recall that the _activity ratio_, or efficiency, is _process time_ divided by _total lead time_:
 
