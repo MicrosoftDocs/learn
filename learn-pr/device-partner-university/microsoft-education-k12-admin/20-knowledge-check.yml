@@ -16,17 +16,17 @@ quiz:
     choices:
     - content: "Speaker Progress"
       isCorrect: false
-      explanation: "Incorrect. Speaker Progress is not directly designed to support social-emotional learning."
+      explanation: "Incorrect. Speaker Progress isn't directly designed to support social-emotional learning."
     - content: "Reflect"
       isCorrect: true
       explanation: "Correct. Microsoft Reflect is directly designed to support social-emotional learning."
     - content: "Reading Coach"
       isCorrect: false
-      explanation: "Incorrect. Reading Coach is not directly designed to support social-emotional learning."
+      explanation: "Incorrect. Reading Coach isn't directly designed to support social-emotional learning."
     - content: "Educational Insights"
       isCorrect: false
-      explanation: "Incorrect. Educational Insights is not directly designed to support social-emotional learning."
-  - content: "Which of the following is not a feature of Microsoft 365 Copilot Chat?" 
+      explanation: "Incorrect. Educational Insights isn't directly designed to support social-emotional learning."
+  - content: "Which isn't a feature of Microsoft 365 Copilot Chat?" 
     choices:
     - content: "Enterprise data protection"
       isCorrect: false
@@ -39,7 +39,7 @@ quiz:
       explanation: "Incorrect. Microsoft 365 Copilot Chat features pay-as-you-go AI agents."
     - content: "Integration into Microsoft 365 apps"
       isCorrect: true
-      explanation: "Correct. Microsoft 365 Copilot Chat does not feautre integration into Microsoft 365 apps like Word or PowerPoint. Microsoft 365 Copilot is necessary for Microsoft 365 application integration."
+      explanation: "Correct. Microsoft 365 Copilot Chat doesn't feature integration into Microsoft 365 apps like Word or PowerPoint. Microsoft 365 Copilot is necessary for Microsoft 365 application integration."
   - content: "Which accessibility tool helps support communication with multilingual families or guardians?"
     choices:
     - content: "Microsoft Translator"
@@ -47,10 +47,10 @@ quiz:
       explanation: "Correct. Microsoft Translator provides an easy way for administrators to communicate with multilingual families or guardians."
     - content: "Microsoft Languages"
       isCorrect: false
-      explanation: "Incorrect. This is not the correct product name."
+      explanation: "Incorrect. This isn't the correct product name."
     - content: "Microsoft Communicator"
       isCorrect: false
-      explanation: "Incorrect. This is not the correct product name."
+      explanation: "Incorrect. This isn't the correct product name."
     - content: "Microsoft Interpreter"
       isCorrect: false
-      explanation: "Incorrect. This is not the correct product name."
+      explanation: "Incorrect. This isn't the correct product name."

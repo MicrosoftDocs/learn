@@ -1,4 +1,4 @@
-Microsoft Education is the solution K-12 administrators are looking for. Microsoft's products fot education are all designed around three main goals:
+Microsoft's products for education are all designed around three main goals:
 
 # Accelerate learning
 

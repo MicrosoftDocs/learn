@@ -10,4 +10,4 @@ OneNote notebooks can be accessed and edited from anywhere, on any device, at an
 
 ## Accessible for all
 
-Notes can be taken by typing, by voice, or with digital ink, using either a stylus or a fingertip. Multimedia like videos and pictures can also be added for a richer experience.
+Users can take notes by typing, speaking, or with digital ink, using either a stylus or a fingertip. Multimedia like videos and pictures can also be added for a richer experience.

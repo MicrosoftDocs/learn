@@ -1,4 +1,4 @@
-The table below offers a quick overview of some of the differences between Microsoft 365 Copilot Chat and Microsoft 365 Copilot.
+The table offers a quick overview of some of the differences between Microsoft 365 Copilot Chat and Microsoft 365 Copilot.
 
 ## Comparison
 
@@ -15,8 +15,8 @@ The table below offers a quick overview of some of the differences between Micro
 | Create agents using Copilot Studio           | ✓                  | ✓                |
 | Discover and pin agents                      | ✓                  | ✓                |
 | Use agents rooted in web data                | ✓                  | ✓                |
-| Use agents rooted in work data               | ✓ (metered)                 | ✓                |
-| Use agents that act independently            | ✓ (metered)                 | ✓ (metered)              |
+| Use agents rooted in work data               | ✓ (pay-as-you-go)                 | ✓                |
+| Use agents that act independently            | ✓ (pay-as-you-go)                 | ✓ (pay-as-you-go)              |
 | **Personal assistant**                       |                    |                  |
 | Copilot in Teams                             |                  | ✓                |
 | Copilot in Outlook                           |                   | ✓                |

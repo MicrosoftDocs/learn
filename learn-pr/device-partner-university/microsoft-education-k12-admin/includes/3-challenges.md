@@ -14,7 +14,7 @@ They don’t want to spend funds on solutions that their school communities can�
 
 ## Technology challenges
 
-K-12 administrators also may need support in understanding new technologies.
+K-12 administrators also might need support in understanding new technologies.
 
-They may not have a solid understanding of how innovations like AI can help them and their school systems. At the same time, they don’t want to invest in solutions that will quickly become obsolete or don’t meet the needs of their students and teachers.
+They might not have a solid understanding of how innovations like AI can help them and their school systems. At the same time, they don’t want to invest in solutions that will quickly become obsolete or don’t meet the needs of their students and teachers.
 

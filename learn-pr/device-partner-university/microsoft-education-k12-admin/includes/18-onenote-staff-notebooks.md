@@ -16,4 +16,4 @@ Here, all members of a staff team can share, organize, and collaborate in a sing
 
 ## Leader-only Section
 
-The Leader-only Section is a private space that only staff team owners and co-owners can access. Administrators can use it for drafting meeting agendas, pre-planning materials, and sharing confidential information.
+The Leader-only Section is a private space that only staff team owners and co-owners can access. Administrators can use it for drafting meeting agendas, preplanning materials, and sharing confidential information.

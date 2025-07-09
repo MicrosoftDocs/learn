@@ -1,4 +1,4 @@
-Microsoft 365 Copilot Chat offers a rich, secure AI chat experience for all [eligible Microsoft 365 Education customers](/copilot/manage#microsoft-365--chat-eligibility)—at no additional cost.
+Microsoft 365 Copilot Chat offers a rich, secure AI chat experience for all [eligible Microsoft 365 Education customers](/copilot/manage#microsoft-365--chat-eligibility)—at no extra cost.
 
 ## Free, secure AI chat
 
@@ -10,7 +10,7 @@ Administrators can use this to research various topics, analyze data, draft impo
 
 Microsoft 365 Copilot Chat enables the use of pay-as-you-go agents—AI assistants designed to do specific jobs.
 
-Educational agents can perform tasks like helping create and analyze lesson plans. These agents will help teachers and administrators alike save time and energy—while ensuring compliance to local educational standards.
+Educational agents can perform tasks like helping create and analyze lesson plans. These agents will help teachers and administrators alike save time and energy—while ensuring compliance with local educational standards.
 
 ## IT controls and data protection
 

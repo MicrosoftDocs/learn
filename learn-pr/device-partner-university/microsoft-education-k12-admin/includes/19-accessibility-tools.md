@@ -1,4 +1,4 @@
-Finally, let’s talk about accessibility. Microsoft Education solutions provide accessibility tools at no additional cost. These include features designed to help students focus on reading, narrate their thoughts out loud with speech-to-text, and more.
+Finally, let’s talk about accessibility. Microsoft Education solutions provide accessibility tools at no extra cost. These include features designed to help students focus on reading, narrate their thoughts out loud with speech-to-text, and more.
 
 Let’s focus on two that can help administrators every day.
 
