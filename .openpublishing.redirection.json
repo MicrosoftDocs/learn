@@ -51913,6 +51913,11 @@
       "source_path": "learn-pr/wwl-data-ai/fundamentals-azure-ai-services/5-understand-authentication.md",
       "redirect_url": "/training/modules/get-started-ai-fundamentals/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-azure-ai-services/4-use-azure-ai-service.md",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
     }
   ]
 }
