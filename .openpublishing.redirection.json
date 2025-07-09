@@ -51803,6 +51803,11 @@
       "source_path": "learn-pr/wwl-data-ai/analyze-text-with-text-analytics-service/2-understand-text-analytics.md",
       "redirect_url": "/training/modules/introduction-language/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/index.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
     }
   ]
 }
