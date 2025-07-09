@@ -34,6 +34,5 @@ products:
 - azure
 units:
 - learn.wwl.fundamentals-azure-ai-services.what-are-ai-services
-- learn.wwl.fundamentals-azure-ai-services.use-azure-ai-service
 badge:
   uid: learn.wwl.fundamentals-azure-ai-services.badge
