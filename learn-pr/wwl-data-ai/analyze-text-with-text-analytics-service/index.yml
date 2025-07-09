@@ -30,6 +30,5 @@ products:
 subjects:
 - natural-language-processing
 units:
-- learn.wwl.analyze-text-with-text-analytics-service.understand-text-analytics
 badge:
   uid: learn.wwl.analyze-text-with-text-analytics-service.badge
