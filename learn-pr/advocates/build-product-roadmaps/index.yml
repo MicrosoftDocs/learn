@@ -1,6 +1,7 @@
 ### YamlMime:Module
 uid: learn.build-product-road-maps
 metadata:
+  ms.service: azure
   title: Build product roadmaps
   description: Identify and construct Agile product roadmaps including audiences, prioritization, themes, milestones, epics, and user stories.
   author: czhu89
