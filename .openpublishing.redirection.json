@@ -51868,6 +51868,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/5-knowledge-check.md",
       "redirect_url": "/training/modules/get-started-language-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/6-summary.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
     }
   ]
 }
