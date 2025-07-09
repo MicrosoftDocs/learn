@@ -28,7 +28,7 @@ The core idea of multi-stage reasoning systems is that by dividing a problem int
 
 ## Design a multi-stage reasoning system
 
-When you think your solution will benefit from implementing a multi-stage reasoning system, you need to map your requirements to the necessary tools and components.
+When you think your solution benefits from implementing a multi-stage reasoning system, you need to map your requirements to the necessary tools and components.
 
 To design a multi-stage reasoning system, you break down your problem into multiple steps, or tasks. As shown in the sentiment analysis example, you can reuse the output of a previous task as input for a new task, by **chaining** LLM interactions.
 
@@ -47,8 +47,8 @@ By breaking up your problem and designing a multi-stage reasoning system, you cr
 After your initial design is complete, you can choose one of the popular Python libraries to build your multi-stage reasoning system. Understanding multiple frameworks is valuable because:
 
 - **Different approaches**: Each framework takes a unique approach to solving multi-stage reasoning challenges
-- **Project requirements**: Your specific use case may favor one framework's strengths over others
-- **Team expertise**: Your organization may already have experience with a particular framework
+- **Project requirements**: Your specific use case might favor one framework's strengths over others
+- **Team expertise**: Your organization might already have experience with a particular framework
 - **Integration needs**: Some frameworks integrate better with existing systems or data sources
 
 Azure Databricks provides access to several frameworks designed for multi-stage reasoning:

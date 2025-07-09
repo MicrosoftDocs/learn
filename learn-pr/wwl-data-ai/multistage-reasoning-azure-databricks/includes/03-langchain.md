@@ -1,4 +1,4 @@
-LangChain is an open-source Python library designed to simplify building applications with Large Language Models (LLMs). LangChain provides tools to chain together multiple LLM interactions in a structured workflow. Use this framework when you want to build complex workflows or need access to many pre-built tools and integrations.
+LangChain is an open-source Python library designed to simplify building applications with Large Language Models (LLMs). LangChain provides tools to chain together multiple LLM interactions in a structured workflow. Use this framework when you want to build complex workflows or need access to many prebuilt tools and integrations.
 
 LangChain abstracts the complexity of connecting different steps in your reasoning pipeline, allowing you to focus on designing the logic rather than managing the technical details of how components communicate.
 
@@ -29,7 +29,7 @@ Well-designed prompts ensure each stage of your reasoning process produces the r
 
 ### Find context with a retriever
 
-A **retriever** finds and returns relevant information from external sources like documents or databases. In multi-stage reasoning, retrievers typically gather context that subsequent language model operations will use to generate responses.
+A **retriever** finds and returns relevant information from external sources like documents or databases. In multi-stage reasoning, retrievers typically gather context that subsequent language model operations use to generate responses.
 
 Retrievers often work with **vector indices** and **embeddings** to find semantically similar content. Embeddings convert text into numerical vectors that capture meaning, while vector indices enable fast similarity searches across large datasets.
 
@@ -50,7 +50,7 @@ To use LangChain in Azure Databricks, you need to ensure the library is installe
 %pip install langchain
 ```
 
-Once installed, you can use LangChain to build multi-stage reasoning systems. Here's how you can structure a simple multi-stage workflow:
+Once installed, you can use LangChain to build multi-stage reasoning systems. Here's how you can structure a multi-stage workflow:
 
 ### Conceptual Example: Question Answering with Document Search
 
