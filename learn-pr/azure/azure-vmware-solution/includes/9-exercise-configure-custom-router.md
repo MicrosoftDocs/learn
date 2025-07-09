@@ -102,9 +102,9 @@ This step configures the FRR NVA to have Azure Route Server as its BGP neighbor.
     !
     ```
 
-1. sign in to FRR shell.
+1. Sign in to FRR shell.
 1. Paste the script with updated variables.
-1. Run `show ip bgp` to confirm that the NVA didn't learned routes except its own default route.
+1. Run `show ip bgp` to confirm that the NVA didn't learn routes except its own default route.
 1. Run `show ip bgp sum` to confirm that the NVA didn't established BGP sessions.
 
    :::image type="content" source="../media/9-config-bgp-showip-nosession.png" alt-text="Screenshot of command execution on NVA VM. Screenshot shows Azure Route Server as BGP neighbor for NVA.":::
@@ -130,6 +130,6 @@ The following steps establish a BGP peer relationship between the FRR NVA and Az
 
     :::image type="content" source="../media/9-config-bgp-route-table.png" alt-text="Screenshot of Azure portal menu. The menu entry titled “ToInternet” route table highlights default route configured with Internet as next hop.":::
 
-At this point, you configured Azure VMware Solution private cloud to implement secure outbound internet connectivity. You deployed Azure Route Server for an effective route exchange between Azure VMware Solution private cloud and the NVA. You then deployed Azure Firewall as the exit point for all internet-bound traffic. This was followed-up by using FRR – a custom router, which injects default route with Azure Firewall as the next hop into Azure VMware Solution private cloud.
+At this point, you configured Azure VMware Solution private cloud to implement secure outbound internet connectivity. You deployed Azure Route Server for an effective route exchange between Azure VMware Solution private cloud and the NVA. You then deployed Azure Firewall as the exit point for all internet-bound traffic. This was followed-up by using FRR, a custom router which injects a default route with Azure Firewall as the next hop into Azure VMware Solution private cloud.
 
 In the next unit, you'll learn how to implement fine-grained access controls in Azure Firewall, which allows/denies network traffic from Azure VMware Solution private cloud.
