@@ -51933,6 +51933,11 @@
       "source_path": "learn-pr/wwl-data-ai/translate-text-with-translation-service/3-exercise-translate-text-use-azure.md",
       "redirect_url": "/training/modules/get-started-language-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-text-with-translation-service/2-get-started-azure.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
     }
   ]
 }
