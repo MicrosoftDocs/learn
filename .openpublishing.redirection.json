@@ -51903,6 +51903,11 @@
       "source_path": "learn-pr/wwl-data-ai/fundamentals-azure-ai-services/7-knowledge-check.md",
       "redirect_url": "/training/modules/get-started-ai-fundamentals/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-azure-ai-services/8-summary.md",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
     }
   ]
 }
