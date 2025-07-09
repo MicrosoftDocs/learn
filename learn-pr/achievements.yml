@@ -6175,3 +6175,8 @@ achievements:
   title: Fundamentals of Text Analysis with the Language Service
   summary: Explore Azure AI Language's natural language processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
   iconUrl: /learn/achievements/analyze-text-with-text-analytics-service.svg
+- uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.badge
+  type: badge
+  title: Fundamentals of question answering with the Language Service
+  summary: Create a custom question answering knowledge base with Azure AI Language.
+  iconUrl: /learn/achievements/build-faq-chatbot-qna-maker-azure-bot-service.svg
