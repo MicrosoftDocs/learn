@@ -4,8 +4,7 @@ Users might receive a notification through the mobile app for them to approve or
 
 ## Microsoft Authenticator app
 
-:::image type="content" source="../media/authenticator-app-5fef414f.png" alt-text="Screenshot of the sign-in verification screen the user sees when verifying authentication with the app.":::
-
+:::image type="content" source="../media/authenticator-app.png" alt-text="Screenshot of the sign-in verification screen the user sees when verifying authentication with the app.":::
 
 The Authenticator app provides a high level of security, and removes the need for the user to provide a password at sign-in. The Authenticator app can help prevent unauthorized access to accounts and stop fraudulent transactions. A push notification is sent to your smartphone or tablet for extra security. Users view the notification, and if it's legitimate, select Verify. Otherwise, they can select Deny.
 
@@ -13,8 +12,7 @@ The Authenticator app can be used as a software token to generate an OATH verifi
 
 ## Open Authentication (OATH) tokens
 
-:::image type="content" source="../media/oath-token-menu-685caa6f.png" alt-text="Screenshot of the OATH (Open Authentication) token setup screen inside of multifactor authentication. Configure tokens using software or hardware.":::
-
+:::image type="content" source="../media/oath-token-menu.png" alt-text="Screenshot of the OATH (Open Authentication) token setup screen inside of multifactor authentication. Configure tokens using software or hardware.":::
 
 OATH TOTP (Time-based One Time Password) is an open standard that specifies how one-time password (OTP) codes are generated. OATH TOTP can be implemented using either software or hardware to generate the codes. Microsoft Entra ID doesn't support OATH HOTP, a different code generation standard. Software OATH tokens are typically applications such as the Microsoft Authenticator app and other authenticator apps. Microsoft Entra ID generates the secret key, or seed, that's input into the app and used to generate each OTP.
 

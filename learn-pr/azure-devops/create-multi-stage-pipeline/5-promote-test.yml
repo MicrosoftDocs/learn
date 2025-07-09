@@ -2,12 +2,10 @@
 uid: learn.azdo.create-multi-stage-pipeline.5-promote-test
 title: Exercise - Promote to the Test stage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Promote to the Test stage
   description: Promote to the Test stage by using a scheduled trigger.
   ms.custom: devdivchpfy22
-  ms.date: 11/29/2023
+  ms.date: 05/01/2025
   author: juliakm
   ms.author: jukullam
   ms.topic: unit

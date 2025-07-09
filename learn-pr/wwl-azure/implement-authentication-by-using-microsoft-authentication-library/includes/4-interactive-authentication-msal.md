@@ -1,169 +1,30 @@
-In this exercise you learn how to perform the following actions:
+In this exercise, you register an application in Microsoft Entra ID, then create a .NET console application that uses MSAL.NET to perform interactive authentication and acquire an access token for Microsoft Graph. You learn how to configure authentication scopes, handle user consent, and see how tokens are cached for subsequent runs. 
+
+Tasks performed in this exercise:
 
 * Register an application with the Microsoft identity platform
-* Use the `PublicClientApplicationBuilder` class in MSAL.NET
-* Acquire a token interactively in a console application
+* Create a .NET console app that implements the  **PublicClientApplicationBuilder** class to configure authentication.
+* Acquire a token interactively using the **user.read** Microsoft Graph permission.
 
-## Prerequisites
+This exercise takes approximately **15** minutes to complete.
 
-* An **Azure account** with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free)
-* **Visual Studio Code**: You can install Visual Studio Code from [https://code.visualstudio.com](https://code.visualstudio.com/).
-* A version of the .NET SDK [https://dotnet.microsoft.com/download/dotnet](https://dotnet.microsoft.com/en-us/download/dotnet) (6.0, 7.0, or 8.0) 
+## Before you start
 
-## Register a new application
+To complete the exercise, you need:
 
-1. Sign in to the portal: [https://portal.azure.com](https://portal.azure.com) 
+* An Azure subscription. If you don't already have one, you can sign up for one [https://azure.microsoft.com/](https://azure.microsoft.com/).
 
-1. Search for and select **Microsoft Entra ID**. 
+## Get started
 
-1. Under **Manage**, select **App registrations** > **New registration**.
+Select the **Launch Exercise** button to open the exercise instructions in a new browser window. When you're finished with the exercise, return here to:
 
-1. When the **Register an application** page appears, enter your application's registration information:
+> [!div class="checklist"]
+> * Complete the module
+> * Earn a badge for completing this module
 
-    | Field | Value |
-    |--|--|
-    | **Name** | `az204appreg` |
-    | **Supported account types** | Select **Accounts in this organizational directory only** |
-    | **Redirect URI (optional)** | Select **Public client/native (mobile & desktop)** and enter `http://localhost` in the box to the right. |
+<br/>
 
-1. Select **Register**.
+<a href="https://go.microsoft.com/fwlink/?linkid=2325009" target="_blank">
+    <img src="../media/launch-exercise.png" alt="Button to launch exercise.">
+</a>
 
-Microsoft Entra ID assigns a unique application (client) ID to your app, and you're taken to your application's **Overview** page. 
-
-## Set up the console application
-
-1. Launch Visual Studio Code and open a terminal by selecting **Terminal** and then **New Terminal**.
-
-1. Create a folder for the project and change in to the folder.
-
-    ```ps
-    md az204-auth
-    cd az204-auth
-    ```
-
-1. Create the .NET console app.
-
-    ```ps
-    dotnet new console
-    ```
-
-1. Open the *az204-auth* folder in Visual Studio Code.
-
-    ```ps
-    code . -r
-    ```
-
-## Build the console app
-
-In this section, you add the necessary packages and code to the project.
-
-### Add packages and using statements
-
-1. Add the `Microsoft.Identity.Client` package to the project in a terminal in Visual Studio Code.
-
-    ```ps
-    dotnet add package Microsoft.Identity.Client
-    ```
-
-2. Open the *Program.cs* file and add `using` statements to include `Microsoft.Identity.Client` and to enable async operations.
-
-    ```csharp
-    using System.Threading.Tasks;
-    using Microsoft.Identity.Client;
-    ```
-
-3. Change the Main method to enable async.
-
-    ```csharp
-    public static async Task Main(string[] args)
-    ```
-
-### Add code for the interactive authentication
-
-1. You need two variables to hold the Application (client) and Directory (tenant) IDs. You can copy those values from the portal. Add the following code and replace the string values with the appropriate values from the portal.
-
-    ```csharp
-    private const string _clientId = "APPLICATION_CLIENT_ID";
-    private const string _tenantId = "DIRECTORY_TENANT_ID";
-    ```
-
-2. Use the `PublicClientApplicationBuilder` class to build out the authorization context.
-
-    ```csharp
-    var app = PublicClientApplicationBuilder
-        .Create(_clientId)
-        .WithAuthority(AzureCloudInstance.AzurePublic, _tenantId)
-        .WithRedirectUri("http://localhost")
-        .Build();
-    ```
-
-    Code | Description
-    | - | - |
-    `.Create` | Creates a `PublicClientApplicationBuilder` from a clientID.
-    `.WithAuthority` | Adds a known Authority corresponding to an ADFS server. In the code we're specifying the Public cloud, and using the tenant for the app we registered.
-
-### Acquire a token
-
-When you registered the *az204appreg* app, it automatically generated an API permission `user.read` for Microsoft Graph. You use that permission to acquire a token.
-
-1. Set the permission scope for the token request. Add the following code below the `PublicClientApplicationBuilder`.
-
-    ```csharp
-    string[] scopes = { "user.read" };
-    ```
-
-1. Add code to request the token and write the result out to the console.
-
-    ```csharp
-    AuthenticationResult result = await app.AcquireTokenInteractive(scopes).ExecuteAsync();
-
-    Console.WriteLine($"Token:\t{result.AccessToken}");
-    ```
-
-## Review completed application
-
-The contents of the *Program.cs* file should resemble the following example:
-
-```csharp
-using System;
-using System.Threading.Tasks;
-using Microsoft.Identity.Client;
-
-namespace az204_auth
-{
-    class Program
-    {
-        private const string _clientId = "APPLICATION_CLIENT_ID";
-        private const string _tenantId = "DIRECTORY_TENANT_ID";
-
-        public static async Task Main(string[] args)
-        {
-            var app = PublicClientApplicationBuilder
-                .Create(_clientId)
-                .WithAuthority(AzureCloudInstance.AzurePublic, _tenantId)
-                .WithRedirectUri("http://localhost")
-                .Build(); 
-            string[] scopes = { "user.read" };
-            AuthenticationResult result = await app.AcquireTokenInteractive(scopes).ExecuteAsync();
-
-            Console.WriteLine($"Token:\t{result.AccessToken}");
-        }
-    }
-}
-```
-
-## Run the application
-
-1. In the Visual Studio Code terminal run `dotnet build` to check for errors, then `dotnet run` to run the app. 
-
-1. The app opens the default browser prompting you to select the account you want to authenticate with. If there are multiple accounts listed select the one associated with the tenant used in the app.
-
-1. If this is the first time you've authenticated to the registered app you receive a **Permissions requested** notification asking you to approve the app to read data associated with your account. Select **Accept**.
-
-    :::image type="content" source="../media/permission-consent.png" alt-text="Select **Accept** to grant the permission.":::    
-
-1. You should see the results similar to the example below in the console.
-
-    ```
-    Token:  eyJ0eXAiOiJKV1QiLCJub25jZSI6IlVhU.....
-    ```

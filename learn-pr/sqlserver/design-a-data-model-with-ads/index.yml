@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.design-a-data-model-with-ads
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design a Performant Data Model in Azure SQL Database with Azure Data Studio
   description: "Learn how to create a data model, tables, indexes, constraints, and use data types with Azure data studio."
   ms.date: 03/05/2024
@@ -51,4 +49,4 @@ units:
 - learn.design-a-data-model-with-ads.summary
 badge:
   uid: learn.design-a-data-model-with-ads.badge
-
+

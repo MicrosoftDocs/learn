@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.architecture-of-thought.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "In this unit, learners review the key concepts of AI-powered dialogue systems, including their architecture, the role of models like GPT-3 and GPT-4, and how Azure OpenAI Studio supports prototyping and deployment. They reflect on the essential skills needed to build scalable, natural conversational AI experiences. Keywords: dialogue systems, Azure OpenAI Studio, GPT models, conversational AI, AI chatbot development."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: kbarreto
+  ms.topic: unit
+  
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-summary.md)]

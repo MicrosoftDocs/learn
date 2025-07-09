@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-open-source-database-migration-azure.approaches-migration
 title: Approaches to migration
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Approaches to migration
   description: "Approaches to migration"
   ms.date: 11/07/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 12
 content: |
-  [!include[](includes/4-approaches-migration.md)]
+  [!include[](includes/4-approaches-migration.md)]

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-container-build-strategy
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design a container build strategy
   description: Design a container build strategy
   ms.date: 05/25/2024
@@ -59,4 +57,4 @@ units:
 - learn.wwl.design-container-build-strategy.summary
 badge:
   uid: learn.wwl.design-container-build-strategy.badge
-
+

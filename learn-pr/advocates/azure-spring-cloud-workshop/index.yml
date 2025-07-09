@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-spring-cloud-workshop
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy Spring microservices to Azure
   description: Learn how to deploy Spring Boot microservices to Azure Spring Apps (ASA).
   author: judubois
@@ -48,4 +46,4 @@ units:
 - learn.azure-spring-cloud-workshop.9-conclusion
 badge:
   uid: learn.azure-spring-cloud-workshop.badge
-
+

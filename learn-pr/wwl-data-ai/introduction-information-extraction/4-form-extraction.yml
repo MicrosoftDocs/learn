@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-information-extraction.form-extraction
+title: Understand the extraction of data from forms
+metadata:
+  title: Understand the extraction of data from forms
+  description: "Understand how machine learning enables data extraction from forms."
+  ms.date: 5/9/2025
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-form-extraction.md)]

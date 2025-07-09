@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ediscovery-understand
+metadata:
+  title: Understand Microsoft Purview eDiscovery
+  description: "Understand Microsoft Purview eDiscovery."
+  ms.date: 05/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Understand Microsoft Purview eDiscovery
+summary: Discover how Microsoft Purview supports a defensible eDiscovery process across Microsoft 365 services. Review how organizations can manage investigations by preserving content, running searches, analyzing results, and controlling access through role-based permissions.  
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe the purpose and stages of the eDiscovery process.  
+  - Compare the classic and new eDiscovery experiences in Microsoft Purview.  
+  - Explain how Microsoft 365 licensing affects feature availability in eDiscovery.  
+  - Identify how permissions are used to control access to sensitive case data.  
+prerequisites: |
+  - General understanding of Microsoft 365 services and user roles.  
+  - Familiarity with organizational compliance or investigation workflows.  
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+- compliance
+units:
+- learn.wwl.purview-ediscovery-understand.introduction
+- learn.wwl.purview-ediscovery-understand.understand-ediscovery
+- learn.wwl.purview-ediscovery-understand.compare-classic-new-ediscovery
+- learn.wwl.purview-ediscovery-understand.understand-ediscovery-lifecycle
+- learn.wwl.purview-ediscovery-understand.understand-ediscovery-permissions
+- learn.wwl.purview-ediscovery-understand.knowledge-check
+- learn.wwl.purview-ediscovery-understand.summary
+
+badge:
+  uid: learn.wwl.purview-ediscovery-understand.badge

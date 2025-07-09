@@ -2,8 +2,6 @@
 uid: learn.azure.capture-application-logs-app-service.1-introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 11/12/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
-
+

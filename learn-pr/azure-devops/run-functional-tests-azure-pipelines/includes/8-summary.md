@@ -27,8 +27,8 @@ You have set up UI tests that run on Windows. But you can also run your tests on
 
 If you're interested in testing UI by using Selenium, check out these resources to help you go further:
 
-* [SeleniumHQ.org](https://www.seleniumhq.org?azure-portal=true)
-* [Selenium IDE](https://www.seleniumhq.org/selenium-ide?azure-portal=true)
+* [SeleniumHQ.org](https://www.selenium.dev/?azure-portal=true)
+* [Selenium IDE](https://www.selenium.dev/selenium-ide/?azure-portal=true)
 * [UI test with Selenium](/azure/devops/pipelines/test/continuous-test-selenium?azure-portal=true)
 * [UI testing considerations](/azure/devops/pipelines/test/ui-testing-considerations?azure-portal=true&tabs=mstest)
 * [Use WebDriver to automate Microsoft Edge](/microsoft-edge/webdriver-chromium?azure-portal=true)

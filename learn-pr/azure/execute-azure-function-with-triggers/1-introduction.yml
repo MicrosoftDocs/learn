@@ -2,11 +2,9 @@
 uid: learn.execute-azure-function-with-triggers.1-introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
-  ms.date: 09/25/2023
+  ms.date: 05/19/2025
   author: ggailey777
   ms.author: glenga
   ms.topic: unit

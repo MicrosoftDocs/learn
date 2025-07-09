@@ -2,13 +2,11 @@
 uid: learn.wwl.create-azure-resources-by-using-azure-cli.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 02/17/2025
   author: wwlpublish
-  ms.author: dbradish
+  ms.author: mirobb
   ms.topic: unit
 durationInMinutes: 1
 content: |

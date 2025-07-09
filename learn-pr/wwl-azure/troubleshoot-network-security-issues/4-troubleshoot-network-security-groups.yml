@@ -2,8 +2,6 @@
 uid: learn.wwl.troubleshoot-network-security-issues.troubleshoot-nsgs
 title: Troubleshoot NSGs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot NSGs
   description: "Troubleshoot NSGs"
   ms.date: 04/27/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-troubleshoot-network-security-groups.md)]
+  [!include[](includes/4-troubleshoot-network-security-groups.md)]

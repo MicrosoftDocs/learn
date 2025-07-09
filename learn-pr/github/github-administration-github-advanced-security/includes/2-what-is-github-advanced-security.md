@@ -1,6 +1,6 @@
 GitHub has many features that help you improve and maintain the quality of your code. Some of these features are included in all plans, such as dependency graph and Dependabot alerts. Others only run in a limited functionality mode on public repositories. There are also others that require a GitHub Advanced Security license to run on private repositories.
 
-In this unit, you learn more about GitHub Advanced Security, and discover what a project with GitHub Advanced Security looks like.
+In this unit, you learn more about GitHub Advanced Security and discover what a project with GitHub Advanced Security looks like.
 
 ## The GitHub Advanced Security features
 
@@ -26,13 +26,13 @@ A GitHub Advanced Security license provides these features for private and inter
 
 So what difference do the GitHub Advanced Security features make in your software-development lifecycle? Let's have a look at a basic security scenario first.
 
-:::image type="content" source="../media/basic-scenario.png" alt-text="Image representing the different stages of the software development lifecycle in a traditional security approach.":::
+:::image type="content" source="../media/basic-scenario.png" alt-text="Diagram representing the different stages of the software development lifecycle in a traditional security approach.":::
 
-This example illustrates a traditional *security as a gate* approach in which a single security test or a series of security tests take place during the quality-assurance phase. In this scenario, security usually ends up being a bottleneck to shipping the software. This situation is what your company wants to fix by shifting security left.
+This example illustrates a traditional *security as a gate* approach, in which a single security test or a series of security tests take place during the quality-assurance phase. In this scenario, security usually ends up being a bottleneck to shipping the software. This situation is what your company wants to fix by shifting security left.
 
-Now let's look at the same software development lifecycle with GitHub Advanced Security.
+Now, let's look at the same software development lifecycle with GitHub Advanced Security.
 
-:::image type="content" source="../media/github-advanced-security-scenario.png" alt-text="Image representing the different stages of the software development lifecycle with GitHub Advanced Security.":::
+:::image type="content" source="../media/github-advanced-security-scenario.png" alt-text="Diagram representing the different stages of the software development lifecycle with GitHub Advanced Security.":::
 
 In this scenario, security is set up right from the beginning through security policies at the project configuration stage. Developers are alerted of potential security issues at every step of the development process:
 

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.survey-components-of-azure-synapse-analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Survey the Components of Azure Synapse Analytics
   description: "Survey the Components of Azure Synapse Analytics"
   ms.date: 06/23/2022
@@ -46,4 +44,4 @@ units:
 - learn.wwl.survey-components-of-azure-synapse-analytics.summary
 badge:
   uid: learn.wwl.survey-components-of-azure-synapse-analytics.badge
-
+

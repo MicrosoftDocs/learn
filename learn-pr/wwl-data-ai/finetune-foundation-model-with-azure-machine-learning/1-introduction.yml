@@ -2,8 +2,6 @@
 uid: learn.finetune-foundation-model-with-azure-machine-learning.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction to fine-tuning a foundation model from the model catalog in Azure Machine Learning."
   ms.date: 07/25/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
-
+

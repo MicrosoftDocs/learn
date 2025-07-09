@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.explore-fundamentals-kql
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)
   description: "Learn about the basics of Kusto Query Language (KQL), and the various Microsoft products that use it."
   ms.date: 11/01/2024
@@ -52,4 +50,4 @@ units:
 - learn.azure.explore-fundamentals-kql.summary
 badge:
   uid: learn.azure.explore-fundamentals-kql.badge
-
+

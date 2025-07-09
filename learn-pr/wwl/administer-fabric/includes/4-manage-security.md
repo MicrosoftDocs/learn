@@ -1,4 +1,4 @@
-If you already use Power BI in your organization, then Fabric security should feel familiar. Your role as an admin is to manage security for the Fabric environment, including managing users and groups, and how users interact with Fabric in terms of sharing and distribution of content.
+As a Fabric admin, part of your role is to manage security for the Fabric environment, including managing users and groups, and how users share and distribute content in Fabric.
 
 ## Manage users: assign and manage licenses
 
@@ -11,13 +11,13 @@ Having the appropriate procedures in place to assign and manage licenses helps t
 License management for Fabric is handled in the Microsoft 365 admin center. For more information about managing licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide&preserve-view=true).
 
 > [!NOTE]
-> The *license type* in workspace settings is related to the user licenses listed here. Consumers can see reports depending on the user license and the workspace license. For detailed information, see the [Microsoft Fabric licenses](/fabric/enterprise/licenses#workspace) documentation.
+> The *license type* in workspace settings is related to the user licenses listed here. Users can see reports depending on the user license and the workspace license. For detailed information, see the [Microsoft Fabric licenses](/fabric/enterprise/licenses#workspace) documentation.
 
 ## Manage items and sharing
 
-As an admin, you can manage how users interact with Fabric in terms of sharing and distribution of content. You can manage how users share content with others, and how they distribute content to others. You can also manage how users interact with items, such as data warehouses, data pipelines, datasets, reports, and dashboards.
+As an admin, you can manage how users share and distribute content. You can manage how users share content with others, and how they distribute content to others. You can also manage how users interact with items, such as data warehouses, data pipelines, datasets, reports, and dashboards.
 
-Items in workspaces are best distributed through a workspace app or the workspace directly. Granting the least permissive rights is the first step in securing the data. Share the read only app for access to the reports or grant access to the workspaces for collaboration and development. Another aspect of managing and distributing items is enforcing such best practices.
+Items in workspaces are best distributed through a workspace app or the workspace directly. Granting the least permissive rights is the first step in securing the data. Share the read only app for access to the reports or grant access to the workspaces for collaboration and development. Another aspect of managing and distributing items is enforcing these types of best practices.
 
 You can manage sharing and distribution both internally and outside of your organization, in compliance with your organization's policies and procedures.
 

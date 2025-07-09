@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-virtual-machine-availability.setup-availability-sets
 title: Create availability sets
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create availability sets
   description: "Create availability sets"
   ms.date: 02/12/2025

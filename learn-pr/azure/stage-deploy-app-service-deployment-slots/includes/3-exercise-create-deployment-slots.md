@@ -1,8 +1,8 @@
 A deployment slot is an instance of a web app in which you can test a new app version before you deploy it. By swapping slots, you can deploy a new version of an app without any downtime.
 
-Let's suppose you've decided to use Azure App Service deployment slots in order to streamline the deployment of new versions of your social media web app. You want to set up the web app in Azure and configure one or more deployment slots.
+Let's suppose you decide to use Azure App Service deployment slots to streamline the deployment of new versions of your social media web app. You want to set up the web app in Azure and configure one or more deployment slots.
 
-In this exercise, you'll set up a web app, add a new deployment slot for staging, and deploy different versions of the web app to the production and staging slots.
+In this exercise, you set up a web app, add a new deployment slot for staging, and deploy different versions of the web app to the production and staging slots.
 
 [!INCLUDE [](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -33,11 +33,13 @@ Start by creating a new web app resource in the Azure portal.
     | Windows Plan | Accept default. |
     | Sku and size | Accept default. |
 
+1. Select **Next : Database**.
+
 1. Select **Next : Deployment**.
 
 1. Select **Next : Networking**.
 
-1. Select **Next : Monitoring**, and enter the following value for the setting.
+1. Select **Next : Monitoring + secure**, and enter the following value for the setting.
 
     | Setting | Value |
     |---|---|
@@ -50,7 +52,7 @@ Start by creating a new web app resource in the Azure portal.
 
 ## Configure git deployment
 
-Although you can use many different tools to deploy code to your web app, in this exercise, you'll set up the web app to use a local git repository.
+Although you can use many different tools to deploy code to your web app, in this exercise, you set up the web app to use a local git repository.
 
 1. In the App Service menu, under **Deployment**, select **Deployment Center**. The **Deployment Center** pane for your app service appears.
 
@@ -60,7 +62,7 @@ Although you can use many different tools to deploy code to your web app, in thi
 
 ## Configure the git client and clone the web app source code
 
-Now, you'll set up the git client in Cloud Shell and use it to clone a sample web app.
+Now, you set up the git client in Cloud Shell and use it to clone a sample web app.
 
 1. In the Azure global controls at the top of the page, select the Cloud Shell icon to launch an Azure Cloud Shell session.
 
@@ -103,16 +105,16 @@ We're going to use git to deploy the source code to the web app's production slo
 
 1. In the Azure portal, your web app should be active. In the resource menu, select **Overview**. 
 
-1. In the Overview pane for your web app, the **Essentials** section has a URL in the **Default domain**. Note that the URL contains your deployment name for the web app.
+1. In the Overview pane for your web app, the **Essentials** section has a URL in the **Default domain**. The URL contains your deployment name for the web app.
 
     :::image type="content" source="../media/3-copy-git-clone-url.png" alt-text="Screenshot of the Essentials section, where you Copy the git clone URL." lightbox="../media/3-copy-git-clone-url.png":::
 
     > [!NOTE]
-    > If you don't see a git clone URL where it's shown in the preceding screenshot, refresh the portal.
+    > If you don't see a git clone URL in the location shown in the preceding screenshot, refresh the portal.
 
-1. Hover over the  **Git clone url** and select the *Copy to clipboard* icon. Note that this value also contains your deployment username.
+1. Hover over the  **Git clone url** and select the *Copy to clipboard* icon. This value also contains your deployment username.
 
-1. In Cloud Shell, run the following command to configure the git remote with a name "production". Replace \<git-clone-url> with the content you copied to the clipboard from the previous step.
+1. In Cloud Shell, run the following command to configure the git remote with the name `production`. Replace `\<git-clone-url>` with the content you copied to the clipboard from the previous step.
 
     ```bash
     cd app-service-web-dotnet-get-started
@@ -127,7 +129,7 @@ We're going to use git to deploy the source code to the web app's production slo
 
    The terminal session identifies all the processes that take place as part of the deployment. Wait until deployment completes. You should see a **Deployment successful** notification.
 
-1. In the Azure portal, the **Overview** pane should still be active.  Hover over the **URL**. You can either double-click it to open it in a new browser tab or copy and paste it into a new browser tab.
+1. In the Azure portal, the **Overview** pane should still be active. Hover over the **URL**. You can either double-click it to open it in a new browser tab or copy and paste it into a new browser tab.
 
     :::image type="content" source="../media/3-web-app-production-slot.png" alt-text="Screenshot of your web app in the production slot.":::
 
@@ -147,17 +149,17 @@ For your web app, you created one slot, the production slot, and you deployed so
 
 1. In the command bar, select **+ Add Slot**. The **Add a slot** pane appears.
 
-1. In the **Name** field, enter *Staging*, accept the default for **Clone settings from**, and then select **Add**.
+1. In the **Name** field, enter *staging*, accept the default for **Clone settings from**, and then select **Add**.
 
 1. After the deployment slot is successfully created, select **Close**.
 
 ## Set up git deployment for the staging slot
 
-Let's set up the new slot to use git deployment.
+Let's set up the new slot so that it uses git deployment.
 
 1. On the Azure portal, select **Home** page, and then from Azure services, select **All resources**. 
 
-1. Sort the resources by **Resource group**. for the resource group **mslearn-slots**, you'll see two App Service types. Deployment slots are represented as separate apps in the portal. 
+1. Sort the resources by **Resource group**. for the resource group **mslearn-slots**, there are two App Service types. Deployment slots are represented as separate apps in the portal.
 
 1. Select the staging slot. The Overview pane for your App Service (Slot) appears.
 
@@ -173,12 +175,12 @@ Let's set up the new slot to use git deployment.
 
 To use the git client to deploy source code to the new slot, let's add an extra remote to the git configuration.
 
-1. In App Service menu, select Overview. If you are prompted to save the password for the username you created in the previous task, select **Save**.
+1. In the **App Service** menu, select **Overview**. If you're prompted to save the password for the username you created in the previous task, select **Save**.
 
-1. On the **Overview** pane, in the **Essentials** section, hover over the **Git clone url** value and select the *Copy to clipboard* icon. Note that the URL contains your staging deployment username.
+1. On the **Overview** pane, in the **Essentials** section, hover over the **Git clone url** value and select the *Copy to clipboard* icon. The URL contains your staging deployment username.
 
     > [!NOTE]
-    > If you don't see the git clone URL, refresh the portal. Note that the **Git clone url** for staging differs slightly from the URL for the production slot, and it includes the slot name.
+    > If you don't see the git clone URL, refresh the portal. The **Git clone url** for staging differs slightly from the URL for the production slot, and it includes the slot name.
 
 1. In Cloud Shell, make sure you are in the ~/demoapp/app-service-web-dotnet-get-started folder, and then run the following command, replacing \<git-clone-uri> with the URL you copied in the previous step.
 
@@ -230,4 +232,4 @@ Now you can view the new version of the web app by browsing to the URL for the s
 
     :::image type="content" source="../media/3-web-app-staging-slot.png" alt-text="Screenshot of the updated web app in the staging slot.":::
 
-Congratulations, you've created a staging slot that has its own version of the Web App code, and you can run tests on it. Remember that the production slot has the previous web app version, and users can't yet see your new code.
+Congratulations, you just created a staging slot that has its own version of the Web App code, and you can run tests on it. Remember that the production slot has the previous web app version, and users can't yet see your new code.

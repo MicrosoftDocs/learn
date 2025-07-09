@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-database-authentication-authorization.describe-security-principals
 title: Describe Security Principals
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Security Principals
   description: "Describe security principals"
   ms.date: 02/25/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 14
 content: |
-  [!include[](includes/4-describe-security-principals.md)]
+  [!include[](includes/4-describe-security-principals.md)]

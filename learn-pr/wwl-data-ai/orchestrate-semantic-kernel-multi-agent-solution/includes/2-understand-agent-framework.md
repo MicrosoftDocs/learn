@@ -24,7 +24,7 @@ The features that power Semantic Kernel are also still available within the Agen
 
 - **Tools and plugins**
 
-    **Plugins** align with existing Semantic Kernel features, enabling agents to dynamically interact with external services or execute complex tasks through function calling.  Within the Agent Framework, **tools** are available to provide extra functionality to your agents, such as file searching or code interpreter, similar to tool usage in Azure AI Agent service. Agents use tools and plugins to perform specific tasks.
+    **Plugins** align with existing Semantic Kernel features, enabling agents to dynamically interact with external services or execute complex tasks through function calling.  Within the Agent Framework, **tools** are available to provide extra functionality to your agents, such as file searching or code interpreter, similar to tool usage in Azure AI Foundry Agent Service. Agents use tools and plugins to perform specific tasks.
 
 - **History**
 
@@ -34,7 +34,7 @@ The features that power Semantic Kernel are also still available within the Agen
 
 The Semantic Kernel Agent Framework supports several different types of agents, including:
 
-- **Azure AI Agent** - a specialized agent within the Semantic Kernel Agent Framework. The `AsureAIAgent` type is designed to provide advanced conversational capabilities with seamless tool integration. It automates tool calling and securely manages conversation history using threads, reducing the overhead of maintaining state. The `AzureAIAgent` also supports a variety of built-in tools, including file retrieval, code execution, and data interaction via Bing, Azure AI Search, Azure Functions, and OpenAPI.
+- **Azure AI Agent** - a specialized agent within the Semantic Kernel Agent Framework. The `AzureAIAgent` type is designed to provide advanced conversational capabilities with seamless tool integration. It automates tool calling and securely manages conversation history using threads, reducing the overhead of maintaining state. The `AzureAIAgent` also supports a variety of built-in tools, including file retrieval, code execution, and data interaction via Bing, Azure AI Search, Azure Functions, and OpenAPI.
 
 - **Chat Completion Agent**: designed for chat completion and conversation interfaces. The `ChatCompletionAgent` type mirrors the features and patterns in the underlying AI Service to support natural language processing, contextual understanding, and dialogue management.
 
@@ -42,4 +42,4 @@ The Semantic Kernel Agent Framework supports several different types of agents, 
 
 ## Why you should use the Semantic Kernel Agent Framework
 
-The Semantic Kernel Agent Framework offers a robust platform for building intelligent, autonomous, and collaborative AI agents. The framework can integrate agents from multiple sources, including Azure AI Agent Service, and supports both multi-agent collaboration and human-agent interaction. Agents can work together to orchestrate sophisticated workflows, where each agent specializes in a specific task, such as data collection, analysis, or decision-making. The framework also facilitates human-in-the-loop processes, enabling agents to augment human decision-making by providing insights or automating repetitive tasks. This combination of autonomy, collaboration, and interactivity makes the Semantic Kernel Agent Framework an ideal choice for applications requiring dynamic, goal-oriented behavior.
+The Semantic Kernel Agent Framework offers a robust platform for building intelligent, autonomous, and collaborative AI agents. The framework can integrate agents from multiple sources, including Foundry Agent Service, and supports both multi-agent collaboration and human-agent interaction. Agents can work together to orchestrate sophisticated workflows, where each agent specializes in a specific task, such as data collection, analysis, or decision-making. The framework also facilitates human-in-the-loop processes, enabling agents to augment human decision-making by providing insights or automating repetitive tasks. This combination of autonomy, collaboration, and interactivity makes the Semantic Kernel Agent Framework an ideal choice for applications requiring dynamic, goal-oriented behavior.

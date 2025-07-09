@@ -2,11 +2,9 @@
 uid: learn.wwl.process-bulk-data-azure-cosmos-db-sql-api.create-bulk-operations-sdk
 title: Create bulk operations with the SDK
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create bulk operations with the SDK
   description: "Create bulk operations with the SDK"
-  ms.date: 12/19/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

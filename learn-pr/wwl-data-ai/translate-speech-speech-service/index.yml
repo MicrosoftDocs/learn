@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.translate-speech-speech-service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Translate speech with the Azure AI Speech service
   description: Translate speech with the Azure AI Speech service
   author: wwlpublish
@@ -46,4 +44,4 @@ units:
 - learn.wwl.translate-speech-speech-service.summary
 badge:
   uid: learn.wwl.translate-speech-speech-service.badge
-
+

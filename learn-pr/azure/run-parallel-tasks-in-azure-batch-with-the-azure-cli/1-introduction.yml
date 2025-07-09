@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
-  ms.date: 04/04/2024
+  ms.date: 05/09/2025
   author: lauradolan
   ms.author: jushiman
   ms.topic: unit

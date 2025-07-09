@@ -2,8 +2,6 @@
 uid: learn.wwl.security-monitoring-automation-solutions.alerts-incidents-microsoft-sentinel
 title: Alerts and Incidents from Microsoft Sentinel
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Alerts and Incidents from Microsoft Sentinel
   description: "Alerts and Incidents from Microsoft Sentinel"
   ms.date: 02/03/2025

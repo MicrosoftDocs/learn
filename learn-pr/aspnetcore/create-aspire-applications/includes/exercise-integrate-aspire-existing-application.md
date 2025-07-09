@@ -1,4 +1,4 @@
-Now let's explore how to add .NET Aspire to an existing ASP.NET Core web app. Along the way, you'll learn how to add the .NET Aspire stack to an existing ASP.NET Core web app and then run the app. You'll also see how to call microservices from the ASP.NET Core app.
+Now let's explore how to add .NET Aspire to an existing ASP.NET Core web app. Along the way, you learn how to add the .NET Aspire stack to an existing ASP.NET Core web app and then run the app. You also see how to call microservices from the ASP.NET Core app.
 
 ## Set up your environment
 
@@ -84,7 +84,7 @@ In Visual Studio:
 
 ## Update the orchestration to include the products API
 
-There are many ways to resolve this issue. You could explore the code, work out how the front end is configured, edit the code, or change the **launchSettings.json** or **appsettings.json** files.
+There are many ways to resolve this issue. You could explore the code. Work out how the front end is configured, edit the code, or change the **launchSettings.json** or **appsettings.json** files.
 
 With .NET Aspire, you can change the orchestration so that the products API responds on port 5200.
 
@@ -152,7 +152,7 @@ In Visual Studio:
     builder.Build().Run();
     ```
 
-    The above code reorders the projects. The products API is now passed as a project reference to the front end Store web app.
+    This code reorders the projects. The products API is now passed as a project reference to the front end Store web app.
 
 1. In **Solution Explorer**, open the **Store** project, then open the *appsettings.json* file.
 1. Delete the endpoint configuration lines:

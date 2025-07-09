@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.resource-manager-template-reuse
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Deploy to multiple Azure environments by using JSON ARM template features"
   description: Manage multiple Azure environment deployments of your JSON Azure Resource Manager templates (ARM templates) by using functions, variables, tags, and parameter files.
   ms.service: azure-resource-manager
@@ -54,4 +52,4 @@ units:
 - learn.azure.resource-manager-template-reuse.9-summary
 badge:
   uid: learn.azure.resource-manager-template-reuse.badge
-
+

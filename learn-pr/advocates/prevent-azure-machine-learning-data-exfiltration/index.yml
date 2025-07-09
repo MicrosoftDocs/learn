@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.prevent-data-exfiltration-azure-ai-workloads
+metadata:
+  ms.author: viniap
+  author: Orin-Thomas
+  ms.date: 07/01/2025
+  title: Prevent data exfiltration from Azure AI workloads
+  description: Overview of how to prevent data exfiltration for AI workloads running on Microsoft Azure.
+  ms.topic: module
+  ms.service: azure-machine-learning
+  ms.collection: ce-advocates-ai-copilot
+title: Prevent data exfiltration from Azure AI Workloads
+summary: Learn how to configure Azure Machine Learning and Azure AI services workloads to prevent data exfiltration.
+abstract: |
+    After completing this module, you will be able to: 
+    - Understand mechanisms to prevent data exfiltration for AI workloads on Azure
+    - Configure exfiltration prevention for Azure AI services and Azure Machine Learning
+prerequisites: |
+    To get the most out of this module, you should have:
+    - Fundamental security concepts 
+    - Fundamental AI concepts 
+    - Fundamental Azure Machine Learning concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.prevent-data-exfiltration-azure-ai-workloads.prevent-data-exfiltration-azure-ai-workloads
+- learn.prevent-data-exfiltration-azure-ai-workloads.exfiltration-prevention-azure-ai-services
+- learn.prevent-data-exfiltration-azure-ai-workloads.azure-machine-learning-data-exfiltration-prevention
+- learn.prevent-data-exfiltration-azure-ai-workloads.knowledge-check
+- learn.prevent-data-exfiltration-azure-ai-workloads.summary
+badge:
+  uid: learn.prevent-data-exfiltration-azure-ai-workloads-badge

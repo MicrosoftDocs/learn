@@ -2,8 +2,6 @@
 uid: learn.introduction-to-azure-virtual-machine-scale-sets.how-azure-virtual-machine-scale-sets-work
 title: How Azure Virtual Machine Scale Sets work
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How Azure Virtual Machine Scale Sets work
   description: Learn how Azure Virtual Machine Scale Sets work.
   ms.date: 08/02/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-how-azure-virtual-machine-scale-sets-work.md)]
-
+

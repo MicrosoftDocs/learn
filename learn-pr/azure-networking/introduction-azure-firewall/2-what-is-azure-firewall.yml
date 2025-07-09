@@ -2,8 +2,6 @@
 uid: learn.introduction-azure-firewall.2-what-is-azure-firewall
 title: What is Azure Firewall?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure Firewall?
   description: Learn the basics and features Azure Firewall and Azure Firewall Manager.
   ms.date: 01/23/2025
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/2-what-is-azure-firewall.md)]
-
+

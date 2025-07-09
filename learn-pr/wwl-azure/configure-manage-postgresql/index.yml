@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-manage-postgresql
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure and manage Azure Database for PostgreSQL
   description: "Azure Database for PostgreSQL efficiently manages vast quantities of data and their structures through system catalogs and views. This module explores how to optimize database performance by accessing and configuring metadata, understanding the role of the vacuum process in maintaining database health, and managing server settings. We introduce practical techniques to enhance your PostgreSQL database administration, useful in environments requiring robust data handling and security features."
   ms.date: 05/10/2024
@@ -48,4 +46,4 @@ units:
 - learn.wwl.configure-manage-postgresql.knowledge-check
 - learn.wwl.configure-manage-postgresql.summary
 badge:
-  uid: learn.wwl.configure-manage-postgresql.badge
+  uid: learn.wwl.configure-manage-postgresql.badge

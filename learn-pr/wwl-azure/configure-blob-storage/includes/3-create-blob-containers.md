@@ -6,23 +6,17 @@ Let's look at the configuration characteristics of containers and blobs.
 
 - All blobs must be in a container.
 
+- Containers organize your blob storage. 
+
 - A container can store an unlimited number of blobs.
 
 - An Azure storage account can contain an unlimited number of containers.
 
-- You can create the container in the Azure portal.
-
-- You can upload blobs into a container.
-
-
-### How to move content between containers
-#### <!-- Video -->
-
-<iframe width="854" height="480" src="https://www.youtube.com/embed/S3TXW4UrSak" title="How to move Azure Storage Blobs between containers" allowfullscreen></iframe>
+- You must create a storage container before you can begin to upload data.
 
 ### Configure a container
 
-In the Azure portal, you configure two settings to create a container for an Azure storage account. As you review these details, consider how you might organize containers in your storage account.
+In the Azure portal, you configure settings to create a container for an Azure storage account. As you review these details, consider how you might organize containers in your storage account.
 
 :::image type="content" source="../media/blob-containers-a243a2b9.png" alt-text="Screenshot that shows the container creation page and the public access level choices in the Azure portal." border="false":::
 
@@ -37,8 +31,6 @@ In the Azure portal, you configure two settings to create a container for an Azu
    - **Blob**: Allow anonymous public read access for the blobs only.
    - **Container**: Allow anonymous public read and list access to the entire container, including the blobs.
 
-> [!NOTE]
-> You can also create a blob container with PowerShell by using the `New-AzStorageContainer` command.
 
 
 

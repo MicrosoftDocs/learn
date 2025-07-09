@@ -4,8 +4,8 @@ metadata:
   title: Monitor and optimize reservation use
   description: Learn how to monitor and optimize your use of reserved instances.
   ms.date: 10/24/2024
-  author: bandersmsft
-  ms.author: banders
+  author: tonyafehr
+  ms.author: tfehr
   ms.topic: unit
 title: Monitor and optimize reservation use
 durationInMinutes: 5

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.control-network-traffic-flow-with-routes.4-network-virtual-appliances
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is an NVA?
   description: Explain the purpose and role of an NVA
   ms.date: 12/02/2024
@@ -44,4 +42,4 @@ quiz:
       - content: "Download a virtual appliance from Azure Marketplace and configure the appliance to connect to the production and perimeter networks."
         isCorrect: false
         explanation: "This answer is incorrect. Simply installing a virtual appliance and connecting it to your networks forms only half of the solution and won't control the flow of traffic."             
-
+

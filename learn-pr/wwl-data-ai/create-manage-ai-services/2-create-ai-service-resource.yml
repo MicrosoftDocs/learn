@@ -2,13 +2,11 @@
 uid: learn.wwl.create-manage-ai-services.create-resource
 title: Provision an Azure AI services resource
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Provision an Azure AI services resource
   description: Provision an Azure AI services resource.
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 05/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

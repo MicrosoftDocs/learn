@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Defender for Cloud AI threat protection
   description: "Defender for Cloud AI threat protection"
-  ms.date: 02/28/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
   ms.custom:
   - references_regions
-durationInMinutes: 7
+durationInMinutes: 3
 content: |
   [!include[](includes/30-ai-threat-protection.md)]

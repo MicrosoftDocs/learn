@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.identify-sap-certified-configurations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify SAP-certified configurations
   description: "Help identify prerequisites, deployment options, and SAP-certified configurations available to you when deploying SAP products in Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 09/19/2024
@@ -49,4 +47,4 @@ units:
 - learn.wwl.identify-sap-certified-configurations.knowledge-check
 - learn.wwl.identify-sap-certified-configurations.summary
 badge:
-  uid: learn.wwl.identify-sap-certified-configurations.badge
+  uid: learn.wwl.identify-sap-certified-configurations.badge

@@ -2,8 +2,6 @@
 uid: learn.startups.fundamentals.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Review startup concepts. Examples include personal considerations to keep in mind when founding a startup, and factors that can lead to success and failure.
   ms.date: 03/17/2025
@@ -13,4 +11,4 @@ metadata:
   ms.collection: learn-startups
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/6-summary.md)]

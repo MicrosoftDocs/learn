@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.github-actions-packages.knowledge-check-2
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge
   ms.date: 11/26/2023
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 2
 quiz:
   title: Check your knowledge

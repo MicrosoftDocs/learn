@@ -2,11 +2,9 @@
 uid: learn.introduction-to-azure-dns.when-to-use-azure-dns
 title: When to use Azure DNS
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to use Azure DNS
   description: When to use Azure DNS
-  ms.date: 01/31/2024
+  ms.date: 05/15/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

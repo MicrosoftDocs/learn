@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-evaluate-boolean-expressions.solution-2
+title: Review the solution to the Boolean expressions challenge activity
+metadata:
+  title: Review the solution to the Boolean expressions challenge activity
+  description: "Review the solution to the Boolean expressions challenge activity"
+  ms.date: 06/16/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-review-solution-boolean-expressions-challenge.md)]

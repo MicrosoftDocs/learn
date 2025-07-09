@@ -2,8 +2,6 @@
 uid: learn.blob-storage-image-upload-static-web-apps.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Recap of concepts covered in this module.
   ms.date: 03/23/2023
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
-
+

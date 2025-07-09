@@ -3,12 +3,10 @@ uid: learn.deploy-azure-database-for-mysql.what-azure-database-mysql
 title: Azure Database for MySQL
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Database for MySQL
   description: Describe the core functionality of Azure Database for MySQL.
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
   ms.custom: event-tier1-build-2022

@@ -2,13 +2,11 @@
 uid: learn.wwl.create-azure-resources-by-using-azure-cli.install-azure-cli
 title: Install Azure CLI
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Install Azure CLI
   description: "Choose the right environment and install Azure CLI."
   ms.date: 02/17/2025
   author: wwlpublish
-  ms.author: dbradish
+  ms.author: mirobb
   ms.topic: unit
   ms.custom: devx-track-azurecli
   zone_pivot_groups: platform

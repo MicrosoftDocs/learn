@@ -2,8 +2,6 @@
 uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.understand-github-actions
 title: Understand GitHub Actions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Understand GitHub Actions
   description: Learn about workflows, jobs, and actions. Also, learn how workflows run on runners.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-understand-github-actions.md)]
-
+

@@ -11,7 +11,7 @@ You can use the CodeQL CLI standalone product to analyze code and to generate a 
 
 Before you generate a CodeQL database, you need to install and set up the CodeQL CLI. You then need to check out the version of your codebase that you want to analyze.
 
-For compiled languages, the directory should be ready to build, with all dependencies already installed. CodeQL begins by extracting a single relational representation of each source file in the codebase to create a database. You'll use this database to analyze your code.
+For compiled languages, the directory should be ready to build, with all dependencies already installed. CodeQL begins by extracting a single relational representation of each source file in the codebase to create a database. You use this database to analyze your code.
 
 For interpreted languages, the extractor runs directly on the source code. This capability gives you an accurate representation of the codebase and resolves any dependencies.
 
@@ -25,7 +25,7 @@ Use the following steps to set up the CodeQL CLI.
 
 We recommend that you install the CodeQL CLI and queries by downloading the bundled package. This method helps ensure compatibility and improved performance, as opposed to downloading the CLI and queries separately.
 
-The CodeQL CLI download package is a .zip archive that contains tools, scripts, and various CodeQL-specific files. The bundle includes the CodeQL CLI, compatible versions of the queries and libraries from the CodeQL GitHub repo, and precompiled versions of the included queries.
+The CodeQL CLI download package is a .zip archive that contains tools, scripts, and various CodeQL-specific files. The bundle includes: the CodeQL CLI, compatible versions of the queries and libraries from the CodeQL GitHub repo, and the precompiled versions of the included queries.
 
 1. Go to the [Releases page of the CodeQL public repository](https://github.com/github/codeql-action/releases).
 1. Download the platform-specific bundle under **Assets**.
@@ -36,7 +36,7 @@ On the **Releases** page, you can also view the changelogs for releases, along w
 
 If you're using Linux, Windows, or macOS, you can extract the .zip archive into the directory of your choice.
 
-Users of macOS Catalina (or newer) need to take additional steps. For more information, see the [CodeQL documentation about getting started with the CLI](https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/).
+Users of macOS Catalina (or newer) need to take further steps. For more information, see the [CodeQL documentation about getting started with the CLI](https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/).
 
 ### 3. Run CodeQL processes
 
@@ -51,7 +51,7 @@ Now you can run CodeQL commands.
 
 You can run CodeQL CLI subcommands to verify that you correctly set up the CLI and can analyze databases:
 
-- Run `codeql resolve qlpacks` (if you added `codeql` to `PATH`) to show which CodeQL packs the CLI can find. Otherwise, use `/<extraction-root>/codeql/codeql resolve qlpacks`. This command displays the names of the CodeQL packs included in the CodeQL CLI bundle, shown in the earlier steps as `<extraction-root>`.
+- Run `codeql resolve packs` (if you added `codeql` to `PATH`) to show which CodeQL packs the CLI can find. Otherwise, use `/<extraction-root>/codeql/codeql resolve packs`. This command displays the names of the CodeQL packs included in the CodeQL CLI bundle, shown in the earlier steps as `<extraction-root>`.
 
   If the CodeQL CLI can't find the CodeQL packs for the expected languages, check that you downloaded the CodeQL bundle and not a standalone copy of the CodeQL CLI.
 
@@ -121,7 +121,7 @@ To find out which options are available for your language's extractor, enter `co
 
 ## Data in a CodeQL database
 
-A CodeQL database is a single directory that contains all of the data that's required for analysis. This data includes relational data, copied source files, and a language-specific database schema that specifies the mutual relations in the data. CodeQL imports this data after extraction.
+A CodeQL database is a single directory that contains all of the data required for analysis. This data includes relational data, copied source files, and a language-specific database schema that specifies the mutual relations in the data. CodeQL imports this data after extraction.
 
 CodeQL databases provide a snapshot of a particular language's queryable data that was extracted from a codebase. This data is a full, hierarchical representation of the code. It includes a representation of the abstract syntax tree, the data-flow graph, and the control-flow graph.
 
@@ -140,7 +140,7 @@ Database creation in the code-scanning workflow has some potential shortfalls. T
 
 You need to use a language matrix for `autobuild` to build each of the compiled languages listed in the matrix. You can use a matrix to create jobs for more than one supported version of a programming language, operating system, or tool.
 
-If you don't use a matrix, `autobuild` tries to build the supported compiled language with the most source files in the repository. Analysis of compiled languages, other than Go, will often fail unless you supply explicit commands to build the code before performing the analysis step.
+If you don't use a matrix, `autobuild` tries to build the supported compiled language with the most source files in the repository. Analysis of compiled languages, other than Go, often fails unless you supply explicit commands to build the code before performing the analysis step.
 
 The behavior of the `autobuild` step varies depending on the operating system that the language extractor runs on. The `autobuild` step tries to automatically detect a suitable build method for the language based on the operating system. This behavior can lead to unreliable results for compiled languages, and it can often result in a failed run.
 

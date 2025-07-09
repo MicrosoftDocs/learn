@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.integrate-identity-management-systems
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Integrate with identity management systems
   description: "Integrate with identity management systems"
   ms.date: 05/27/2024
@@ -60,4 +58,4 @@ units:
 - learn.wwl.integrate-identity-management-systems.knowledge-check
 - learn.wwl.integrate-identity-management-systems.summary
 badge:
-  uid: learn.wwl.integrate-identity-management-systems.badge
+  uid: learn.wwl.integrate-identity-management-systems.badge

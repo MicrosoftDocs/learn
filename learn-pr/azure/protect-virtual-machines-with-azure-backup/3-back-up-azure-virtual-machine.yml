@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-virtual-machines-with-azure-backup.3-back-up-azure-virtual-machine
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Back up an Azure virtual machine by using Azure Backup
   description: Explore all the methods of backing up virtual machines provided by Azure Backup, and decide which method to implement.
   ms.date: 09/05/2024
@@ -12,4 +10,4 @@ metadata:
 title: Back up an Azure virtual machine by using Azure Backup
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-back-up-azure-virtual-machine.md)]
+  [!include[](includes/3-back-up-azure-virtual-machine.md)]

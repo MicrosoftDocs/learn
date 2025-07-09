@@ -3,28 +3,30 @@ uid: learn.wwl.connect-threat-indicators-to-azure-sentinel
 metadata:
   title: Connect threat indicators to Microsoft Sentinel
   description: "Connect threat indicators to Microsoft Sentinel"
-  ms.date: 06/27/2022
-  author: wwlpublish
+  ms.date: 05/06/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Connect threat indicators to Microsoft Sentinel
 summary: Learn how to connect Threat Intelligence Indicators to the Microsoft Sentinel workspace using the provided data connectors.
 abstract: |
-  Upon completion of this module, the learner will be able to:
+  Upon completion of this module, the learner is able to:
+  - Configure the Defender Threat Intelligence connector in Microsoft Sentinel
   - Configure the TAXII connector in Microsoft Sentinel
-  - Configure the Threat Intelligence Platform connector in Microsoft Sentinel
+  - Configure the Threat Intelligence Upload API connector in Microsoft Sentinel
   - View threat indicators in Microsoft Sentinel
 prerequisites: |
-  Basic experience with Azure services
+  Basic experience with Microsoft Azure and Microsoft Defender services
 iconUrl: /training/achievements/azure-sentinel-threat-indicator.svg
 levels:
 - intermediate
 roles:
 - security-operations-analyst
 products:
-- azure
+- microsoft-defender
 - microsoft-sentinel
+- defender-for-threat-intelligence
 subjects:
 - security
 - cloud-security
@@ -32,9 +34,10 @@ subjects:
 units:
 - learn.wwl.connect-threat-indicators-to-azure-sentinel.introduction
 - learn.wwl.connect-threat-indicators-to-azure-sentinel.plan-for-threat-intelligence-connectors
+- learn.wwl.connect-threat-indicators-to-azure-sentinel.defender-threat-intelligence-connector
 - learn.wwl.connect-threat-indicators-to-azure-sentinel.intelligence-taxii-connector
-- learn.wwl.connect-threat-indicators-to-azure-sentinel.intelligence-platforms-connector
-- learn.wwl.connect-threat-indicators-to-azure-sentinel.view-your-with-kql
+- learn.wwl.connect-threat-indicators-to-azure-sentinel.intelligence-upload-api-connector
+- learn.wwl.connect-threat-indicators-to-azure-sentinel.view-your-threat-indicators
 - learn.wwl.connect-threat-indicators-to-azure-sentinel.knowledge-check
 - learn.wwl.connect-threat-indicators-to-azure-sentinel.summary-resources
 badge:

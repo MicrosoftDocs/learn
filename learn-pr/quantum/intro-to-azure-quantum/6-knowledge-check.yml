@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.intro-to-azure-quantum.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Check your understanding so far.
   author: azure-quantum-content
   ms.author: quantumdocwriters
   
-  ms.date: 01/09/2024
+  ms.date: 06/09/2025
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 6
 content: |
   [!include[](includes/6-knowledge-check.md)]

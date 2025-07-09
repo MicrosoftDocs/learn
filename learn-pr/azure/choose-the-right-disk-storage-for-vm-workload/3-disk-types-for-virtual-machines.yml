@@ -2,11 +2,9 @@
 uid: learn.choose-the-right-disk-storage-for-vm-workload.3-disk-types-for-virtual-machines
 title: Disk types for virtual machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Disk types for virtual machines
   description: Disk types for virtual machines
-  ms.date: 09/05/2023
+  ms.date: 04/18/2025
   author: roygara
   ms.author: rogarana
   ms.topic: unit
@@ -25,10 +23,10 @@ quiz:
       explanation: "Ultra Disks offer the best performance of disk types on Azure."
     - content: "Premium SSD"
       isCorrect: false
-      explanation: "Premium SSD managed disks have excellent performance, but do not offer the best performance of disk types on Azure."
+      explanation: "Premium SSD managed disks have excellent performance, but don't offer the best performance of disk types on Azure."
     - content: "Standard HDD"
       isCorrect: false
-      explanation: "Standard HDDs don't perform as well as premium SSDs or Ultra SSDs."
+      explanation: "Standard HDDs aren't as performant as premium SSDs or Ultra SSDs."
   - content: "You have a medium-sized application with high IO requirements. You need to optimize for the best price for your performance while guaranteeing performance. What disk type should you use?"
     choices:
     - content: "Premium SSD v2"
@@ -36,8 +34,8 @@ quiz:
       explanation: "Standard tier disks don't guarantee a minimum throughput and Premium SSD managed disks don't allow you to make granular adjustments and optimize their cost. For these reasons, use premium SSD v2 managed disks."
     - content: "Standard SSD"
       isCorrect: false
-      explanation: "Although standard SSDs can easily support the required throughput 99% of the time, that performance is not guaranteed."
+      explanation: "Although standard SSDs can easily support the required throughput 99% of the time, that performance isn't guaranteed."
     - content: "Standard HDD"
       isCorrect: false
-      explanation: "Although standard HDDs can easily support the required throughput, that performance is not guaranteed."
+      explanation: "Although standard HDDs can easily support the required throughput, that performance isn't guaranteed."
 

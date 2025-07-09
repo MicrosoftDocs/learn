@@ -2,11 +2,11 @@
 uid: learn.azure.network-fundamentals-2.basic-client-server
 title: An introduction to network client and server technology
 metadata:
-  title:  An introduction to network client and server technology
+  title:  An Introduction to Network Client and Server Technology
   description: An introduction to network-based client technology and the various server options available.
-  ms.date: 07/13/2023
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 03/27/2025
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 7
 content: |
@@ -34,6 +34,6 @@ quiz:
     - content: "Hosts all your web and non-web apps in one place, so they can be accessed across the network."
       isCorrect: true
       explanation: "An application server provides application access to a client."
-    - content: "Hosts all your web apps and lets users in the network run them and use them in their browser."
+    - content: "An application server hosts all your web apps and lets users in the network run them and use them in their browser."
       isCorrect: false
       explanation: "An application server provides application access to a client (both web apps and custom software)."

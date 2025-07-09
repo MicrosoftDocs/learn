@@ -2,8 +2,6 @@
 uid: learn.wwl.protecting-monitoring-tuning-migrated-database.monitor-configure-database-server
 title: Monitor and configure a database server
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor and configure a database server
   description: "Monitor and configure a database server"
   ms.date: 10/14/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 11
 content: |
-  [!include[](includes/3-monitor-configure-database-server.md)]
+  [!include[](includes/3-monitor-configure-database-server.md)]

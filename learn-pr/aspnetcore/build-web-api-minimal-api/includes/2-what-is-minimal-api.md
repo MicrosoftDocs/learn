@@ -146,6 +146,7 @@ To use Swagger and the Swagger UI in your API, you do two things:
          {
            c.SwaggerDoc("v1", new OpenApiInfo { Title = "Todo API", Description = "Keep track of your tasks", Version = "v1" });
          });
+     }
      ```
 
    - Add `UseSwagger()` and `UseSwaggerUI()`. These two code lines tell the API project to use Swagger and also where to find the specification file *swagger.json*.

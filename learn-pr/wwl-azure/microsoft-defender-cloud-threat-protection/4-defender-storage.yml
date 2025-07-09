@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Defender for Storage
   description: "Defender for Storage"
-  ms.date: 02/28/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
   ms.custom:
   - references_regions
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/4-defender-storage.md)]

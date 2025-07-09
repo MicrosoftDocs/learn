@@ -2,8 +2,6 @@
 uid: learn.wwl.review-azure-powershell-module.migrate-powershell-from-azurerm-to-azure
 title: Migrate Azure PowerShell from AzureRM to Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Migrate Azure PowerShell from AzureRM to Azure
   description: "Migrate Azure PowerShell from AzureRM to Azure"
   ms.date: 03/22/2024
@@ -16,4 +14,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/5-migrate-powershell-from-azurerm-to-azure.md)]
-
+

@@ -1,14 +1,14 @@
 The first step in building a generative AI solution with Azure OpenAI is to provision an Azure OpenAI resource in your Azure subscription. You can get started by creating a resource in the [Azure portal](https://portal.azure.com/?azure-portal=true) or with the Azure command line interface (CLI).
 
-## Create an Azure OpenAI Service resource in the Azure portal
+## Create an Azure OpenAI resource in the Azure portal
 
-When you create an Azure OpenAI Service resource, you need to provide a subscription name, resource group name, region, unique instance name, and select a pricing tier.
+When you create an Azure OpenAI resource, you need to provide a subscription name, resource group name, region, unique instance name, and select a pricing tier.
 
-![Screenshot of the Azure portal's page to create an Azure OpenAI Service resource.](../media/create-azure-openai-portal.png)
+![Screenshot of the Azure portal's page to create an Azure OpenAI resource.](../media/create-azure-openai-portal.png)
 
-## Create an Azure OpenAI Service resource in Azure CLI
+## Create an Azure OpenAI resource in Azure CLI
 
-To create an Azure OpenAI Service resource from the CLI, refer to this example and replace the following variables with your own:
+To create an Azure OpenAI resource from the CLI, refer to this example and replace the following variables with your own:
 
 - MyOpenAIResource: *replace with a unique name for your resource*
 - OAIResourceGroup: *replace with your resource group name* 
@@ -26,7 +26,7 @@ az cognitiveservices account create \
 ```
 
 >[!NOTE]
->You can find the regions available for a service through the CLI command `az account list-locations`. To see how to sign into Azure and create an Azure group via the CLI, you can refer to the [documentation here](/azure/cognitive-services/openai/how-to/create-resource?pivots=cli#sign-in-to-the-cli?azure-portal=true). Azure OpenAI Service provides access to many types of models. Certain models are only available in select regions. Consult the [Azure OpenAI model availability guide](/azure/cognitive-services/openai/concepts/models#model-summary-table-and-region-availability/?azure-portal=true) for region availability. You can create two Azure OpenAI resources per region.
+>You can find the regions available for a service through the CLI command `az account list-locations`. To see how to sign into Azure and create an Azure group via the CLI, you can refer to the [documentation here](/azure/cognitive-services/openai/how-to/create-resource?pivots=cli#sign-in-to-the-cli?azure-portal=true). Azure OpenAI provides access to many types of models. Certain models are only available in select regions. Consult the [Azure OpenAI model availability guide](/azure/cognitive-services/openai/concepts/models#model-summary-table-and-region-availability/?azure-portal=true) for region availability. You can create two Azure OpenAI resources per region.
 
 ## Use Azure OpenAI Foundry
 
@@ -34,7 +34,7 @@ Azure AI Foundry provides access to model management, deployment, experimentatio
 
 You can access the Azure AI Foundry through the Azure portal after creating a resource, or at [https://ai.azure.com/](https://ai.azure.com/) by signing in to your Azure account. During the sign-in workflow, select the appropriate directory, Azure subscription, and Azure OpenAI resource.
 
-When you first open Azure AI Foundry, you'll want to navigate to the **Azure OpenAI** page (where you focus on only Azure OpenAI Service models), select your resource if you haven't already, and deploy your first model. To do so, select the **Deployments** page, from where you can deploy a base model and start experimenting with it.
+When you first open Azure AI Foundry, you'll want to navigate to the **Azure OpenAI** page (where you focus on only Azure OpenAI models), select your resource if you haven't already, and deploy your first model. To do so, select the **Deployments** page, from where you can deploy a base model and start experimenting with it.
 
 >[!NOTE]
 >If you are not the resource owner, you will need the following role-based access controls: 1. *Cognitive Services OpenAI User*: This role allows viewing resources and using the chat playground. 2. *Cognitive Services OpenAI Contributor*: This role allows the user to create new deployments.

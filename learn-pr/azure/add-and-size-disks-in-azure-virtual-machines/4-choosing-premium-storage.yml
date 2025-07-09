@@ -2,8 +2,6 @@
 uid: learn.add-and-size-disks-in-azure-virtual-machines.4-choosing-premium-storage
 title: Determine whether to use premium storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Determine whether to use premium storage
   description: Determine whether to use premium storage
   ms.date: 12/09/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-choosing-premium-storage.md)]
-
+

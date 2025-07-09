@@ -2,8 +2,6 @@
 uid: learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.manage-user-permissions
 title: Manage user permissions in Azure Synapse serverless SQL pools
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage user permissions in Azure Synapse serverless SQL pools
   description: "Manage user permissions in Azure Synapse serverless SQL pools"
   ms.date: 06/14/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-manage-user-permissions.md)]
+  [!include[](includes/4-manage-user-permissions.md)]

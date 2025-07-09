@@ -2,12 +2,10 @@
 uid: learn.wwl.retrieval-augmented-generation-azure-databricks.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/07/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 azureSandbox: false

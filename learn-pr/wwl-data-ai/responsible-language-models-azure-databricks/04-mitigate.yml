@@ -2,8 +2,6 @@
 uid: learn.wwl.responsible-language-models-azure-databricks.mitigate
 title: Mitigate issues
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Mitigate issues
   description: "Mitigate issues"
   ms.date: 03/20/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/04-mitigate.md)]
+  [!include[](includes/04-mitigate.md)]

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-docker-containers-aci.3-restart-policy
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Control Azure Container Instances restart behavior
   description: Control Container Instances restart behavior.
   ms.date: 01/15/2025
@@ -13,4 +11,4 @@ title: Exercise - Control restart behavior
 durationInMinutes: 6
 content: |
   [!include[](includes/3-restart-policy.md)]
-
+

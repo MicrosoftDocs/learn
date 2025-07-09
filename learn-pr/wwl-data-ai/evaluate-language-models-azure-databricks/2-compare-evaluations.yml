@@ -2,8 +2,6 @@
 uid: learn.wwl.evaluate-language-models-azure-databricks.compare-evaluations
 title: Compare LLM and traditional ML evaluations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Compare LLM and traditional ML evaluations
   description: "Compare Large Language Model and traditional Machine Learning evaluations"
   ms.date: 03/20/2025
@@ -15,4 +13,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/2-compare-evaluations.md)]
-
+

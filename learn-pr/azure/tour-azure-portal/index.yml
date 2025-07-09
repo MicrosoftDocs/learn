@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.tour-azure-portal-features
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage services with the Azure portal
   description: Get acquainted with the Azure cloud platform through the Azure portal, where you can create and manage all of your Azure resources.
   manager: rayoflores
@@ -47,4 +45,4 @@ units:
 - learn.tour-azure-portal-features.9-summary
 badge:
   uid: learn.tour-azure-portal-features.badge
-
+

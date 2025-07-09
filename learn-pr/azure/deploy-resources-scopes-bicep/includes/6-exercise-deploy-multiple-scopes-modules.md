@@ -1,9 +1,9 @@
 > [!NOTE]
 > This exercise requires an Azure subscription. If you don't already have one, you can get a [free subscription](https://azure.microsoft.com/free/?azure-portal=true).
 
-The R&D team has asked for your help to create a virtual network in the Project Teddybear subscription. You know you'll be helping the team with more subscriptions in the future, so you decide to extend your reusable Bicep template to deploy a virtual network for the team members to use. 
+The R&D team has asked for your help to create a virtual network in the Project Teddybear subscription. You know you'll be helping the team with more subscriptions in the future, so you decide to extend your reusable Bicep template to deploy a virtual network for the team members to use.
 
-In this exercise, you'll update the template that you started to build in the last exercise. 
+In this exercise, you'll update the template that you started to build in the last exercise.
 
 During the process, you'll:
 

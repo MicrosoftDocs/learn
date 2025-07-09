@@ -2,8 +2,6 @@
 uid: learn.azure.host-domain-azure-dns.resolve-name-alias-record
 title: Dynamically resolve resource name by using alias record
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Dynamically resolve resource name by using alias record
   description: Dynamically resolve resource name by using alias record
   ms.date: 10/03/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/5-resolve-name-alias-record.md)]
-
+

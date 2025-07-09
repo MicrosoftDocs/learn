@@ -2,8 +2,6 @@
 uid: learn.azure.structure-bicep-code-collaboration.exercise-refactor-bicep-file
 title: Exercise - Refactor your Bicep file
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Refactor your Bicep file
   description: Learn how to refactor your Bicep file to follow best practices.
@@ -12,8 +10,9 @@ metadata:
   ms.author: jgao
   ms.topic: unit
   ms.custom:
+    - sfi-ropc-nochange
     - devx-track-bicep
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-refactor-bicep-file.md)]
-
+

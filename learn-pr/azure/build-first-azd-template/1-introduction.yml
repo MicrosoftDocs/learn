@@ -2,8 +2,6 @@
 uid: learn.azure.build-first-azure-developer-cli-template.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Introductory unit of the Build Your First Azure Developer CLI Template module
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
-
+

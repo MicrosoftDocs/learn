@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-virtual-machines-with-azure-backup.6-exercise-restore-virtual-machine-data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Restore Azure virtual machine data 
   description: Learn how to restore a successful backup to replace a virtual machine that became corrupted, and monitor its progress.
   ms.date: 09/05/2024
@@ -12,4 +10,4 @@ metadata:
 title: Exercise - Restore Azure virtual machine data
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-exercise-restore-virtual-machine-data.md)]
+  [!include[](includes/6-exercise-restore-virtual-machine-data.md)]

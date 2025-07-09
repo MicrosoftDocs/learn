@@ -1,4 +1,4 @@
-By using the powerful copy loops feature, you can create dynamic and flexible templates. It's important to understand how to control the way that loops execute when they create resources and how to use loops to set resource properties and nest loops. 
+By using the powerful copy loops feature, you can create dynamic and flexible templates. It's important to understand how to control the way that loops execute when they create resources and how to use loops to set resource properties and nest loops.
 
 In this unit, you'll learn how to control the execution of copy loops and how to use resource property loops and nested loops in Bicep.
 

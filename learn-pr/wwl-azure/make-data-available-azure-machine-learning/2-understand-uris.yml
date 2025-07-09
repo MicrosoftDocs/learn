@@ -2,8 +2,6 @@
 uid: learn.wwl.make-data-available-azure-machine-learning.understand-uris
 title: Understand URIs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand URIs
   description: Understand URIs
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-understand-uris.md)]
-
+

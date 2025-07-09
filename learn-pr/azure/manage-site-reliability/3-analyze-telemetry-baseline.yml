@@ -2,8 +2,6 @@
 uid: learn.azdo.manage-site-reliability.3-analyze-telemetry-baseline
 title: What is Application Insights?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Application Insights?
   description: Learn about Application Insights notifications and telemetry.
   ms.date: 04/21/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-analyze-telemetry-baseline.md)]
+  [!include[](includes/3-analyze-telemetry-baseline.md)]

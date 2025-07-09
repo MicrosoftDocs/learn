@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.automate-deployment-of-sap-azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Automate Deployment of SAP on Azure
   description: "After this module, you'll be able to run automated deployments of SAP on Azure infrastructure."
   ms.date: 12/23/2024

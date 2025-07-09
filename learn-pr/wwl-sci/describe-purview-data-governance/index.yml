@@ -3,12 +3,11 @@ uid: learn.describe-purview-data-governance
 metadata:
   title: Describe the data governance solutions of Microsoft Purview
   description: "Describe the data governance solutions of Microsoft Purview."
-  ms.date: 9/19/2024
+  ms.date: 04/23/2025
   author: wwlpublish
   ms.author: ceperezb
   ai-usage: ai-assisted
   ms.topic: module-standard-task-based
-  ms.collection: wwl-ai-copilot
   ms.service: purview
 title: Describe the data governance solutions of Microsoft Purview
 summary: "Learn about Microsoft Purview data governance solutions that leverage AI and modern technologies to ensure data quality, security, and compliance while also accelerating value creation."

@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-azure-communication-services.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: "A summary of the introduction to Azure Communication Services module."
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/6-summary.md)]

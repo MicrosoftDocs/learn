@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.machinelearning.evaluate-real-world-models
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Confusion matrix and data imbalances
   description: How do we know if a model is good or bad at classifying our data? The way that computers assess model performance sometimes can be difficult for us to comprehend or can over-simplify how the model behaves in the real world. To build models that work satisfactorily, we need to find intuitive ways to assess them, and understand how these metrics can bias our view.
   ms.date: 03/13/2025
@@ -44,4 +42,4 @@ units:
 - learn.machinelearning.evaluate-real-world-models.summary
 badge: 
   uid: learn.machinelearning.evaluate-real-world-models.badge #add the uid for your achievement badge.
-
+

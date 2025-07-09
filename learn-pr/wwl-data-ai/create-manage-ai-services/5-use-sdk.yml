@@ -2,13 +2,11 @@
 uid: learn.wwl.create-manage-ai-services.use-sdk
 title: Use an SDK
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use an SDK
   description: Use an SDK.
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 05/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

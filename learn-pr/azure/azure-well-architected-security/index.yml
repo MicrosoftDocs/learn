@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-security
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Microsoft Azure Well-Architected Framework - Security
   description: Discover the tools that Azure provides to help you design a secure environment throughout your infrastructure, data, network, and applications.
   ms.date: 12/04/2023
@@ -44,4 +42,3 @@ units:
 - learn.azure-well-architected-security.summary
 badge:
   uid: learn.azure-well-architected-security.badge
-

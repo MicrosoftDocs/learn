@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.inclusive-marketing.5-knowledge-check
-title: Check your knowledge
+title: Module assessment
 metadata:
-  title: Check your knowledge
+  title: Module assessment
   description: Check your knowledge
   ms.date: 05/18/2023
   author: asajohnson
   ms.author: asjohnso
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 quiz:
   title: Check your knowledge

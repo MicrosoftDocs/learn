@@ -1,6 +1,6 @@
-Your organization grows, and demand rises in Europe and Asia. Your organization is based in the United States. Most of your infrastructure is cloud based. Your European users are reporting a slow website. To provide better service to the customers in Europe, your company has asked you to create a new and improved web server for Europe. The machine must be configured as an IIS web server when it's provisioned.
+Your organization grows, and demand rises in Europe and Asia. Your organization is based in the United States. Most of your infrastructure is cloud based. Your European users are reporting a slow website. To provide better service to the customers in Europe, your company asks you to create a new and improved web server for Europe. The machine must be configured as an Internet Information Services (IIS) web server when you provision it.
 
-You've been asked to choose appropriate provisioning tools. Your tools should also be easy to use and easily customizable.
+You're asked to choose appropriate provisioning tools. Your tools should also be easy to use and easily customizable.
 
 In this exercise, you provision a web server to meet the requirements.
 
@@ -8,11 +8,13 @@ In this exercise, you provision a web server to meet the requirements.
 
 You need to use several tools to provision a web server. Using an Azure Resource Manager template, you can define the environment for your web server. The Resource Manager template can also help you define a desired state configuration (DSC) for your web server. When you link to a DSC extension handler in the Resource Manager template, both the environment and the desired state are applied when you provision the web server. The DSC extension handler helps enforce the DSC state that you defined.
 
-In the following exercise, you use a Resource Manager template to provision a virtual machine. The DSC extension handler that's included in the template enforces your state on the virtual machine. You use an Azure storage account to host your DSC configuration file.
+In the following exercise, you use a Resource Manager template to provision a virtual machine. The DSC extension handler included in the template enforces your state on the virtual machine. You use an Azure storage account to host your DSC configuration file.
 
 ## Clone the configuration and template
 
 Let's start by obtaining a configuration file and an Azure Resource Manager template from GitHub.
+
+1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
 
 1. In Azure Cloud Shell instance on the right, run the following command to clone the GitHub repository.
 
@@ -108,6 +110,40 @@ The GitHub repository that you cloned, also contains a Resource Manager template
     },
     ```
 
+1. Let's also update the virtual machine image in the template. Find the following code in the *template.json* file:
+
+    ```json
+    "imageSKU": {
+            "type": "string",
+            "defaultValue": "2012-R2-Datacenter",
+            "allowedValues": [
+                "2008-R2-SP1",
+                "2012-Datacenter",
+                "2012-R2-Datacenter"
+            ],
+            "metadata": {
+                "description": "Image SKU"
+            }
+    },
+    ```
+
+1. Update the code as follows so that it looks like this code:
+
+    ```json
+    "imageSKU": {
+            "type": "string",
+            "defaultValue": "2019-Datacenter",
+            "allowedValues": [
+                "2008-R2-SP1",
+                "2012-Datacenter",
+                "2019-Datacenter"
+            ],
+            "metadata": {
+                "description": "Image SKU"
+            }
+    },
+    ```
+
 1. Save the template by pressing <kbd>Ctrl+S</kbd>.
 
     In the `<variables>` section of the *template.json* file, notice that values are stored to configure networking for a virtual machine.
@@ -139,7 +175,7 @@ Now that you have a completed template and a zipped configuration file, you can 
 
 Now that you know the template is valid, you can deploy it.
 
-1. To deploy the template, run the following command. When prompted for a password, enter the password you defined in the previous task.
+1. Run the following command To deploy the template. When prompted for a password, enter the password you defined in the previous task.
 
     ```azurecli
     az deployment group create \
@@ -148,9 +184,9 @@ Now that you know the template is valid, you can deploy it.
         --parameters vmName=hostVM1 adminUsername=serveradmin
     ```
 
-    It may take several minutes for deployment to complete.
+    It can take several minutes for deployment to complete.
 
-1. When the deployment is completed, you should have a virtual machine configured as an IIS web server. To confirm it has been set up, run the following command to list all of the resources in the resource group.
+1. When the deployment is completed, you should have a virtual machine configured as an IIS web server. To confirm your setup, run the following command to list all of the resources in the resource group.
 
     ```azurecli
     az resource list \

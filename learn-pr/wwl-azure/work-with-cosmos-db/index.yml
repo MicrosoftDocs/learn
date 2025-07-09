@@ -5,14 +5,14 @@ metadata:
   prefetch-feature-rollout: true
   title: Work with Azure Cosmos DB
   description: "Work with Azure Cosmos DB"
-  ms.date: 07/15/2024
+  ms.date: 06/26/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
   ms.custom:
   - N/A
   ms.service: azure-cosmos-db
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Work with Azure Cosmos DB
 summary: Learn how to develop client and server-side programming solutions on Azure Cosmos DB.
 abstract: |
@@ -20,7 +20,7 @@ abstract: |
 
   -   Identify classes and methods used to create resources
 
-  -   Create resources by using the Azure Cosmos DB .NET v3 SDK
+  -   Create resources in Azure Cosmos DB for NoSQL using .NET
 
   -   Write stored procedures, triggers, and user-defined functions by using JavaScript
 prerequisites: |

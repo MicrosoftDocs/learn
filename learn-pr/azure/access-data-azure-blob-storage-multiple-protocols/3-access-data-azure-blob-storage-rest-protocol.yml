@@ -2,12 +2,10 @@
 uid: learn.azure.access-data-azure-blob-storage-multiple-protocols.3-access-data-azure-blob-storage-rest-protocol
 title: Access data from Azure Blob Storage by using the REST protocol
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Access data from Azure Blob Storage by using the REST protocol
   description: This unit describes how Azure Blob Storage supports data access using the REST protocol.
-  ms.date: 11/07/2023
+  ms.date: 06/26/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit

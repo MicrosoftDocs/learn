@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.training-certification-course-planning-microsoft-learn-educators
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Training, certification, and course planning for MSLE
   description: "The VEPS series covers the MSLE program providing an understanding of all aspects of the program from joining MSLE, preparing to teach a course, closing out a course, and participating in the MSLE Teams-based community."
   ms.date: 07/19/2024
@@ -46,4 +44,4 @@ units:
 - learn.wwl.training-certification-course-planning-microsoft-learn-educators.knowledge-check
 - learn.wwl.training-certification-course-planning-microsoft-learn-educators.summary
 badge:
-  uid: learn.wwl.training-certification-course-planning-microsoft-learn-educators.badge
+  uid: learn.wwl.training-certification-course-planning-microsoft-learn-educators.badge

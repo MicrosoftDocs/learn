@@ -2,8 +2,6 @@
 uid: learn.azure.azure-vmware-solution.using-frrouting-nva
 title: Using FRRouting as an NVA
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Using FRRouting as an NVA
   description: This content is part of the "Secure outbound internet connectivity for Azure VMware Solution" module.
   ms.date: 03/23/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/8-using-frrouting-nva.md)]
+  [!include[](includes/8-using-frrouting-nva.md)]

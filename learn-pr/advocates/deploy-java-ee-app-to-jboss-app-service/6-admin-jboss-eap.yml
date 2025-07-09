@@ -4,9 +4,8 @@ title: Access the JBoss EAP administration tools and application logs
 metadata:
   title: Access the JBoss EAP Administration Tools and Application Logs
   description: Shows you how to access the JBoss EAP administration tools and application logs.
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: yoshioterada
+  author: yoshioterada
+  ms.author: yoterada
   ms.date: 03/16/2025
   ms.topic: unit
   ms.custom:

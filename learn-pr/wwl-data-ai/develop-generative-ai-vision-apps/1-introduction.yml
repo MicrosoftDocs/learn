@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-generative-ai-vision-apps.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Get started with vision-enabled generative AI models."
+  ms.date: 04/29/2025
+  author: gmalc
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

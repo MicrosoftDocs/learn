@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-blob-storage.upload-blobs
-title: Upload blobs
+title: Manage blobs
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Upload blobs
-  description: "Upload blobs"
-  ms.date: 01/29/2025
+  title: Manage blobs
+  description: "Manage blobs"
+  ms.date: 06/13/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
