@@ -31,7 +31,6 @@ subjects:
 - natural-language-processing
 units:
 - learn.wwl.analyze-text-with-text-analytics-service.understand-text-analytics
-- learn.wwl.analyze-text-with-text-analytics-service.knowledge-check
 - learn.wwl.analyze-text-with-text-analytics-service.summary
 badge:
   uid: learn.wwl.analyze-text-with-text-analytics-service.badge
