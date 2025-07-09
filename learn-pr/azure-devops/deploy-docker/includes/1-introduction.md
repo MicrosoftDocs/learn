@@ -16,10 +16,7 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-The modules in this learning path form a progression. If you want to follow the progression from the beginning, complete the following learning paths:
-
-- [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
-- [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
+The modules in this learning path form a progression. To follow the progression from the beginning, be sure to first complete the [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true) learning path.
 
 This module assumes you have basic familiarity with Docker, although that knowledge isn't required to complete it. If you're new to the topic, it's recommended that you complete the [Introduction to Docker containers](/training/modules/intro-to-docker-containers/?azure-portal=true) module first.
 

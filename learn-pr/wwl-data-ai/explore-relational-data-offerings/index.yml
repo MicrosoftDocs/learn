@@ -3,9 +3,9 @@ uid: learn.wwl.explore-relational-data-offerings
 metadata:
   title: Explore fundamental relational data concepts
   description: "This content is a part of Explore fundamental relational data concepts."
-  ms.date: 08/28/2024
+  ms.date: 06/20/2025
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: calopez
   ms.topic: module
   ms.custom:
   - N/A
@@ -46,4 +46,4 @@ units:
 - learn.wwl.explore-relational-data-offerings.knowledge-check
 - learn.wwl.explore-relational-data-offerings.summary
 badge:
-  uid: learn.wwl.explore-relational-data-offerings.badge
+  uid: learn.wwl.explore-relational-data-offerings.badge

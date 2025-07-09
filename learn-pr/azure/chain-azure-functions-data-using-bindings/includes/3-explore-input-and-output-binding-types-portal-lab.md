@@ -12,7 +12,7 @@ The parameter `req` is the *trigger binding*, and the parameter `res` is the *ou
 
 ::: zone pivot="powershell"
 
-:::image type="content" source="../media/3-default-http-trigger-implementation-powershell-small.png" alt-text="Screenshot of Code and Test pane showing default code for HTTP trigger function template." lightbox="../media/3-default-http-trigger-implementation-powershell.png"::: 
+:::image type="content" source="../media/3-default-http-trigger-implementation-powershell-small.png" alt-text="Screenshot of Code and Test pane showing default code for HTTP trigger function template." lightbox="../media/3-default-http-trigger-implementation-powershell.png":::
 
 The parameter `Request` is the *trigger binding*, and the parameter `Response` is the *output binding*.
 
@@ -28,7 +28,7 @@ Let's create a function app that we can use throughout this module. A function a
 
 1. On the resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Create a resource** menu, select **Compute**, and in the results list select **Function App**. You might need to search for **Function App** in the *Search services and marketplace* window.
+1. In the **Create a resource** menu, select **Web**, and in the results list select **Function App**. You might need to search for **Function App** in the *Search services and marketplace* window.
 
 1. Select **Consumption**, then select the **Select** button. The **Create Function App** pane appears.
 
@@ -99,7 +99,7 @@ Now that we have a function app, it's time to create a function. Each function h
 
     :::image type="content" source="../media/3-add-function-small.png" alt-text="Screenshot for the Create Function pane." lightbox="../media/3-add-function.png":::
 
-1. In the **Select a template** section, select the **HTTP trigger** template, then select **Next**.
+1. In the **Select a template** section, select the **HTTP trigger** template, and then select **Next**.
 
 1. In the **Template details** section, confirm the following settings.
 
@@ -207,7 +207,7 @@ Now that we have a function app, let's create a function. Each function has a tr
 
 1. In the command bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
-1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL, and then select **OK** to close the dialog box.
+1. On the **default (function key)** select the *Copy to clipboard* icon at the end of the URL, and then select **Close** to close the dialog box.
 
 1. In the address bar of a new browser tab, paste the function URL you copied. Press <kbd>Enter</kbd> to run the request in your browser. The response might take a couple of minutes as the function app initializes. If you receive a timeout error, refresh to resend the request.
 
@@ -301,7 +301,7 @@ Now that we have a function app, let's create a function. Each function has a tr
 
    :::image type="content" source="../media/3-function-integration-vertical-small.png" alt-text="Screenshot of vertical flow diagram showing Trigger and Inputs leading to Function and Function leading to Outputs." lightbox="../media/3-function-integration-vertical.png":::
 
-   You can see that we can't add more than _one_ trigger. To change a trigger for a function, you need to delete the trigger and create a new one. However, the **Inputs** and **Outputs** sections enable you to add more than one binding, so the request can accept more than one input value and return more than one output value.
+   You can see that we can't add more than *one* trigger. To change a trigger for a function, you need to delete the trigger and create a new one. However, the **Inputs** and **Outputs** sections enable you to add more than one binding, so the request can accept more than one input value and return more than one output value.
 
 1. In the **Inputs** box, select **Add input**. The **Create Input** pane appears. Select the dropdown list for **Binding Type** to view a list of all possible input binding types.
 
@@ -309,7 +309,7 @@ Now that we have a function app, let's create a function. Each function has a tr
 
    Take a moment to consider how you might use each of these input bindings in a solution.
 
-   Later in this module, we add input bindings, but for now, select **Cancel** to dismiss this pane.
+   Later in this module, we add input bindings. For now, select **Cancel** to dismiss this pane.
 
 1. In the **Outputs** box, select **Add output**. The **Create Output** pane appears. Select the dropdown list for **Binding Type** to view a list of all possible output binding types.
 
@@ -341,8 +341,8 @@ Now that we have a function app, let's create a function. Each function has a tr
 
     :::image type="content" source="../media/3-function-output-bindings.png" alt-text="Screenshot of the Add output options.":::
 
-    As you can see, there are several output binding types. Later in this module, we add output bindings but, for now, select **Cancel** to dismiss this pane.
+    As you can see, there are several output binding types. Later in this module, we add output bindings. For now, select **Cancel** to dismiss this pane.
 
 ::: zone-end
 
-So far, we learned how to create a function app and add a function to it. We saw a simple function in action--one that runs when an HTTP request is made. We also explored the Azure portal and the types of input and output bindings that are available to functions. In the next unit, we'll use an input binding to read text from a database.
+So far, we learned how to create a function app and add a function to it. We saw a simple function in action, which is one that runs when an HTTP request is made. We also explored the Azure portal and the types of input and output bindings that are available to functions. In the next unit, we'll use an input binding to read text from a database.

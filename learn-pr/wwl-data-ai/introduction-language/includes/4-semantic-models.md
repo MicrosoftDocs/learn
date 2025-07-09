@@ -3,7 +3,7 @@ As the state of the art for NLP has advanced, the ability to train models that e
 Vectors represent lines in multidimensional space, describing direction and distance along multiple axes. Overall, the vector describes the direction and distance of the path from origin to end. Semantically similar tokens should result in vectors that have a similar orientation – in other words they point in the same direction. As a simple example, suppose the embeddings for our tokens consist of vectors with three elements, for example:
 
 ```
-- 4 ("dog"): [10.3.2]
+- 4 ("dog"): [10,3,2]
 - 5 ("bark"): [10,2,2]
 - 8 ("cat"): [10,3,1]
 - 9 ("meow"): [10,2,1]

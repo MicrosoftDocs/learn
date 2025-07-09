@@ -9,6 +9,7 @@ metadata:
   ms.author: aastewar
   ms.topic: unit
   no-loc: [Red, Danger]
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

@@ -1,6 +1,6 @@
 When using Actions to create CI or CD workflows, you'll often need to pass artifacts created by one job to another.
 
-The most common ways to do it are by using the **upload-artifact** and **download-artifact** actions.
+The most common ways to do it are by using the **`upload-artifact`** and **`download-artifact`** actions.
 
 ## Upload-artifact
 
@@ -52,7 +52,7 @@ You can specify multiple paths:
 
 ```
 
-For more information on this action, see [upload-artifact.](https://github.com/actions/upload-artifact)
+For more information on this action, see [:::no-loc text="upload-artifact.":::](https://github.com/actions/upload-artifact)
 
 ## Download-artifact
 
@@ -68,7 +68,7 @@ There's a corresponding action for downloading (or retrieving) artifacts.
 
 If no path is specified, it's downloaded to the current directory.
 
-For more information on this action, see [download-artifact.](https://github.com/actions/download-artifact)
+For more information on this action, see [:::no-loc text="download-artifact.":::](https://github.com/actions/download-artifact)
 
 ## Artifact retention
 

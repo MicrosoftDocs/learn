@@ -4,10 +4,12 @@ title: Control file access using the FileStream class
 metadata:
   title: Control file access using the FileStream class
   description: "Control file access using the FileStream class."
-  ms.date: 04/03/2025
+  ms.date: 07/02/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/5-control-file-access-filestream-class.md)]

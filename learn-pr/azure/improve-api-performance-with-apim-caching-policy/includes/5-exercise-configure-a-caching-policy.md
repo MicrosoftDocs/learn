@@ -1,6 +1,6 @@
 When you manage APIs with Azure API Management, you can modify API behavior without having to rewrite code, by use of policies. To cache API responses, you use API Management's caching policies.
 
-As the developer for a board game company, you decide to implement caching for a Board Gaming API. First, you need to add the API to API Management. Then, you'll write your caching policies. We'll do both in this exercise.
+As the developer for a board game company, you decide to implement caching for a Board Gaming API. First, you need to add the API to API Management. Then, write your caching policies. In this exercise, we do both.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -11,11 +11,11 @@ As the developer for a board game company, you decide to implement caching for a
 
 To create an Azure App Service web API, we use the following steps:
 
-1. In the Azure taskbar, select the Cloud Shell icon to open Azure Cloud Shell.
+1. Open Azure Cloud Shell by selecting the Cloud Shell icon In the Azure taskbar.
 
     :::image type="content" source="../media/3-cloud-shell-icon.png" alt-text="Screenshot of Cloud Shell icon in taskbar.":::
 
-1. Clone the sample web API by running the following command:
+1. Run the following command to clone the sample web API:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-improve-api-performance-with-apim-caching-policy.git
@@ -28,7 +28,7 @@ To create an Azure App Service web API, we use the following steps:
     bash setup.sh
     ```
 
-Setup.sh has seven parts that take several minutes to run.  When it finishes, three URLs are displayed:
+Setup.sh has seven parts that take several minutes to run. When it finishes, three URLs are displayed:
 
 - A web API test URL to test the web API
 - A Swagger URL for the Swagger UI
@@ -38,11 +38,11 @@ Make note of these URLs. We'll use them in the next task.
 
 ## Test the newly deployed web API
 
-When the web API is successfully created in Cloud Shell, you can test it. Run a test by submitting a GET request in the browser or by checking the OpenAPI definition. This test runs against the web API in the **azurewebsites.net** domain before it's added to API Management.
+When the web API is successfully created in Cloud Shell, you can test it. Run a test by submitting a GET request in the browser or by checking the OpenAPI definition. This test runs against the web API in the **azurewebsites.net** domain before being added to API Management.
 
-1. On the Azure portal **Resource** menu, or on the **Home** page, select **All resources**. Then select the App Service resource. The **BoardGamingAPI123aa456789** App Service pane appears. The numbers at the end will differ for your implementation.
+1. On the Azure portal **Resource** menu, or on the **Home** page, select **All resources**. Then select the App Service resource. The **BoardGamingAPI123aa456789** App Service pane appears. The numbers at the end differ for your implementation.
 
-1. In the command bar of the **Overview** tab, as a test, select **Browse**. Notice the error message. The browser displays the message "No webpage found for this address". This occurs because the web API doesn't implement a web user interface.
+1. In the command bar of the **Overview** tab, as a test, select **Browse**. Notice the error message. The browser displays the message *No webpage found for this address*, because the web API doesn't implement a web user interface.
 
 1. In a new browser tab, paste the web API test URL that you previously copied, and select <kbd>Enter</kbd>. The browser displays a response in JSON format. Notice that the result includes the server time, with the label **quotePreparedTime**.
 
@@ -50,11 +50,11 @@ When the web API is successfully created in Cloud Shell, you can test it. Run a 
 
 1. In a third browser tab, paste the Swagger JSON URL that you copied previously. The browser displays the OpenAPI specification in JSON format.
 
-Leave these tabs open. They'll be handy later.
+Leave these tabs open. They come in handy later.
 
 ## Create a new API Management instance
 
-Now that we have a functional API, let's set up API Management. For this module we'll use the Basic v2 tier for API Management, which is designed for development and testing scenarios and provides an internal cache. (As an option, you can also configure an external cache.) Azure configures API Management instances for this tier in just a minute or so. 
+Now that we have a functional API, let's set up API Management. For this module, we use the Basic v2 tier for API Management, which is designed for development and testing scenarios and provides an internal cache. (As an option, you can also configure an external cache.) Azure configures API Management instances for this tier in just a minute or so.
 
 1. On the Azure portal **Resource** menu, or on the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
@@ -69,7 +69,7 @@ Now that we have a functional API, let's set up API Management. For this module 
     | Resource group | Select a new or existing resource group. A resource group is a logical container that holds related resources for an Azure solution. |
     | **Instance details** |
     | Region | Choose a region where you can deploy a Basic v2 instance. Example: South Central US |
-    | Resource name | Choose a unique name. Make a note of it. You'll need it later on. |
+    | Resource name | Choose a unique name. Make a note of it. You use it later on. |
     | Organization name | BoardGames |
     | Administrator email | The email address to receive all system notifications. |
     | **Pricing tier** |
@@ -81,7 +81,7 @@ Now that we have a functional API, let's set up API Management. For this module 
 
 We must apply a policy to enable caching of API responses. However, before you can apply a policy, you must add the API to the API Management instance.
 
-1. In the [Azure portal](https://portal.azure.com/) menu, or on the **Home** page, select **All resources**. Then select the API Management service that you created earlier.
+1. In the [Azure portal](https://portal.azure.com/) menu, or on the **Home** page, select **All resources**. Then select the API Management service that you just created.
 
 1. In the left navigation, under **APIs**, select **APIs**. The **APIs** pane for your API Management service appears. It offers numerous templates for you to choose from.
 
@@ -118,13 +118,13 @@ The API is now added to the management instance. Let's test how the API function
 
     :::image type="content" source="../media/5-view-cached-response.png" alt-text="Screenshot that shows the timestamp of the payload in the test console. ":::
 
-1. Select **Send** to repeat the request. Notice that the time in the *HTTP response* payload has changed.
+1. Select **Send** to repeat the request. Notice that the time in the *HTTP response* payload is changed.
 
 ## Add a caching policy
 
 We can now enable caching by adding response caching policies.
 
-1. Select the **Design** tab for your API, and choose the **GET - GetPriceEstimate** operation.  The **GetPriceEstimate** pane appears.
+1. Select the **Design** tab for your API, and choose the **GET - GetPriceEstimate** operation. The **GetPriceEstimate** pane appears.
 
 1. In the **Inbound processing** section, select **+ Add policy**. The **Add inbound policy** pane appears.
 
@@ -136,7 +136,7 @@ We can now enable caching by adding response caching policies.
 
 1. In the **Inbound processing** section, select **</>**. The policy XML editor appears.
 
-1. Notice that a `<cache-lookup>` tag has been added to the `<inbound>` section. A `<cache-store>` tag has also been added to the `<outbound>` section.
+1. Notice that a `<cache-lookup>` tag is added to the `<inbound>` section. A `<cache-store>` tag is also added to the `<outbound>` section.
 
     :::image type="content" source="../media/5-policy-editor-with-caching-policies.png" alt-text="Screenshot that shows a policy editor with caching policies.":::
 
@@ -144,7 +144,7 @@ We can now enable caching by adding response caching policies.
 
 ## Test the cache
 
-We'll run the same test on the API as in the previous section, from within API Management. We'll then review the results.
+We run the same test on the API as in the previous section, from within API Management. Then, we review the results.
 
 1. In the **APIs** pane for your API Management service, select the **Test** tab. Then select the **GET - GetPriceEstimate** operation. The **GetPriceEstimate** pane appears.
 
@@ -163,11 +163,11 @@ We'll run the same test on the API as in the previous section, from within API M
 
 1. Review the results. Notice that the precise `quotePreparedTime` is included in the *HTTP response* payload.
 
-1. Select **Send** to repeat the request. Notice that the `quotePreparedTime` value in the response is still the same. That's because a cached response is served.
+1. Select **Send** to repeat the request. Notice that the `quotePreparedTime` value in the response is still the same because a cached response is served.
 
 ## Configure the cache to vary results based on query parameters
 
-We'll configure the cache to serve unique prices based on the *Height* query parameter. Board *Width* isn't used to calculate cost, so it won't be configured.
+We configure the cache to serve unique prices based on the *Height* query parameter. Board *Width* isn't used to calculate cost, so we don't configure it.
 
 1. Select the **Design** tab for your API. Then select the **GET - GetPriceEstimate** operation. The **GetPriceEstimate** pane appears.
 
@@ -187,7 +187,7 @@ We'll configure the cache to serve unique prices based on the *Height* query par
 
 The cache should now deliver unique responses based on the *Height* query parameter. Since the *Width* parameter doesn't affect cost, a cached response is used even when the width changes. Let's test that:
 
-1. In the **APIs** pane for your API Management service, select the **Test** tab. Then select the **GET - GetPriceEstimate** operation.  The **GetPriceEstimate** pane appears.
+1. In the **APIs** pane for your API Management service, select the **Test** tab. Then select the **GET - GetPriceEstimate** operation. The **GetPriceEstimate** pane appears.
 
 1. Enter the following values as **Template parameters** and **Query parameters**.
 
@@ -204,7 +204,7 @@ The cache should now deliver unique responses based on the *Height* query parame
 
     :::image type="content" source="../media/5-view-cached-response.png" alt-text="Screenshot that shows the timestamp of the payload in the test console. ":::
 
-1. Select **Send** to repeat the request. Notice that like before, the time value in the response hasn't changed. That's because a cached response was served.
+1. Select **Send** to repeat the request. As before, the time value in the response doesn't change, because a cached response was served.
 
 1. To test the *Height* parameter, use the following values as *Template parameters* and *Query parameters*.
 
@@ -230,4 +230,4 @@ The cache should now deliver unique responses based on the *Height* query parame
 
 1. Select **Send**.
 
-1. Review the result. This time, although the *Width* query parameter is different, the result doesn't change. That's because a cached response is served.
+1. Review the result. This time, although the *Width* query parameter is different, the result doesn't change, because a cached response is served.

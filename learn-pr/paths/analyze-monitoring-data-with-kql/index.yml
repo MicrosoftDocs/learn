@@ -40,6 +40,5 @@ subjects:
 modules:
 - learn.azure.explore-fundamentals-kql
 - learn.azure.gain-insights-data-kql
-- learn.analyze-logs-with-kql
 trophy:
   uid: learn.analyze-monitoring-data-with-kql.trophy

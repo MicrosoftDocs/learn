@@ -11,22 +11,20 @@ Let's start by exploring what LLMs are.
 :::image type="content" source="../media/02-large-language-model.png" alt-text="Diagram of LLMs and foundation models as part of Generative AI.":::
 
 1. **Generative AI** refers to systems that can create new content, such as text, images, audio, or video.
-1. **Large Language Models** (**LLMs**) are a type of Generative AI that focus on language-related tasks.
+1. **Large Language Models** (**LLMs**) are a type of Generative AI that focuses on language-related tasks.
 1. **Foundation models** are the underlying models that serve as the basis for AI applications. The models are trained on broad and diverse datasets and can be adapted to a wide range of downstream tasks.
 
 When you want to achieve Generative AI, you can use LLMs to generate new content. You can use a publicly available foundation model as an LLM, or you can choose to train your own.
 
 ## Understand the LLM architecture
 
-The architecture of LLMs typically involves **transformer networks**, which is a type of neural network introduced by the [*Attention is all you need* paper by Vaswani, et al. from 2017](https://arxiv.org/abs/1706.03762?azure-portal=true).
+To understand how LLMs work, we need to start with neural networks - computer systems inspired by how the human brain processes information, with interconnected nodes that learn patterns from data. LLMs use a specific type of neural network called transformers, which have revolutionized how AI understands language.
 
-Transformers use **self-attention mechanisms** to weigh the importance of different words in a sentence, allowing the model to understand context more effectively than previous models like **recurrent neural networks** (**RNNs**) or **long short-term memory** (**LSTM**) **networks**.
+**Transformers** are the architectural foundation of modern LLMs, designed specifically to process and understand text. Unlike older neural network approaches that had to read text word-by-word in sequence, transformers can analyze all words in a sentence simultaneously and determine how they relate to each other.
 
-This architectural breakthrough greatly improved LLMs, making them better at handling long-range dependencies and understanding the overall structure of the text.
+The breakthrough innovation in LLM architecture is the **self-attention mechanism** - it allows the model to focus on the most relevant words when understanding any part of the text. For example, in "The dog that was barking loudly woke up the neighbors," the transformer architecture enables the LLM to instantly connect "barking" and "loudly" to "dog," even though they're separated by other words.
 
-Training language models requires substantial computational resources and large-scale datasets. The datasets often include a diverse range of texts from books, websites, articles, and other written materials.
-
-During training, the model learns to predict the next word in a sentence, given the preceding words, which help it understand context and develop language comprehension. The sheer size of these models, often consisting of billions of parameters, allows them to store a vast amount of linguistic knowledge. For instance, GPT-3, one of the most well-known LLMs, has 175 billion parameters, making it one of the largest AI models ever created.
+This **transformer architecture** is what makes LLMs so powerful at understanding context and generating coherent text. They have a parallel processing capability that allows LLMs to handle long documents effectively and maintain understanding across entire conversations or articles, which was impossible with previous neural network designs. This architectural foundation, combined with massive training datasets and billions of parameters, creates the sophisticated language understanding we see in modern LLMs.
 
 ## Explore LLM applications
 

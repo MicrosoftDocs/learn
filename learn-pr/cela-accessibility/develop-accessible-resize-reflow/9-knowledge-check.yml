@@ -8,6 +8,7 @@ metadata:
   ms.author: erzelman
   ms.date: 02/12/2025
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 quiz:
   title: Check your knowledge

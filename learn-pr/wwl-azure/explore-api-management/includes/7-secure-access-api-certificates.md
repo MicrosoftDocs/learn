@@ -16,7 +16,7 @@ These properties aren't mutually exclusive and they can be mixed together to for
 Client certificates are signed to ensure that they aren't tampered with. When a partner sends you a certificate, verify that it comes from them and not an imposter. There are two common ways to verify a certificate:
 
 * Check who issued the certificate. If the issuer was a certificate authority that you trust, you can use the certificate. You can configure the trusted certificate authorities in the Azure portal to automate this process.
-* If the certificate is issued by the partner, verify that it came from them. For example, if they deliver the certificate in person, you can be sure of its authenticity. These are known as self-signed certificates.
+* Ensure you trust the source of any self-signed certificates.
 
 ## Accepting client certificates in the Consumption tier
 

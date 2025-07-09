@@ -4,7 +4,7 @@ title: Broken access control
 metadata:
   title: Broken access control
   description: "OWASP Top 10 for .NET Developers. Broken Access Control."
-  ms.date: 05/31/2024
+  ms.date: 06/18/2025
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: unit
@@ -21,16 +21,15 @@ quiz:
 
   - content: "The goal of the Open Web Application Security Project (OWASP) Top 10 report put together by security experts is to:"  
     choices:    
-    - content: "Create a standard for security benchmark of web applications."
+    - content: "Create a standard security benchmark for web applications."
       isCorrect: false
-      explanation: "Incorrect. OWASP Top 10 is often effort to be an 'awareness document' for educational purposes."
-    - content: "Improve awareness and promote recommended mitigation techniques to most critical security concerns for web app security."
+      explanation: "Incorrect. OWASP Top 10 is primarily an 'awareness document' for educational purposes."
+    - content: "Improve awareness and promote recommended mitigation techniques to the most critical security concerns for web app security."
       isCorrect: true
       explanation: "Correct."
     - content: "Be the only go-to report your organization would need to stay secured."
       isCorrect: false
       explanation: "Incorrect. There are many security reports beyond OWASP, with SANS CWE Top 25 being one of them."
-
   - content: "What is Broken Access Control?"  
     choices:
     - content: "A vulnerability that allows an attacker to access restricted information."
