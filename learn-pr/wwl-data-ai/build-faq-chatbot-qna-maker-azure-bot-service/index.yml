@@ -30,6 +30,5 @@ products:
 subjects:
 - chatbots
 units:
-- learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.understand-question-answering
 badge:
   uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.badge
