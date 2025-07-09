@@ -39,7 +39,6 @@ products:
 subjects:
 - natural-language-processing
 units:
-- learn.wwl.create-language-model-with-luis.knowledge-check
 - learn.wwl.create-language-model-with-luis.summary
 badge:
   uid: learn.wwl.create-language-model-with-luis.badge
