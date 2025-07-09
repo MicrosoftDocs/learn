@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.k12-admin.microsoft-365-copilot
+title: Microsoft 365 Copilot
+metadata:
+  title: Microsoft 365 Copilot
+  description: This content is part of the "Microsoft Education for K-12 administrators" module.
+  ms.date: 07/01/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/14-microsoft-365-copilot.md)]

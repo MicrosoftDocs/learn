@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.k12-admin.onenote-staff-notebooks
+title: OneNote Staff Notebooks
+metadata:
+  title: OneNote Staff Notebooks
+  description: This content is part of the "Microsoft Education for K-12 administrators" module.
+  ms.date: 07/01/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/18-onenote-staff-notebooks.md)]
