@@ -51768,6 +51768,11 @@
       "source_path": "learn-pr/azure-devops/assess-your-development-process/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-text-with-text-analytics-service/index.md",
+      "redirect_url": "/training/modules/introduction-language/",
+      "redirect_document_id": false
     }
   ]
 }
