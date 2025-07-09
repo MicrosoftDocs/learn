@@ -33,7 +33,6 @@ units:
 - learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.introduction
 - learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.understand-question-answering
 - learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.get-started-qna-bot
-- learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.create-bot
 - learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.knowledge-check
 - learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.summary
 badge:
