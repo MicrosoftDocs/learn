@@ -40,7 +40,6 @@ subjects:
 - natural-language-processing
 units:
 - learn.wwl.create-language-model-with-luis.introduction
-- learn.wwl.create-language-model-with-luis.get-started
 - learn.wwl.create-language-model-with-luis.knowledge-check
 - learn.wwl.create-language-model-with-luis.summary
 badge:
