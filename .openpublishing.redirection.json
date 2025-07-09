@@ -51853,6 +51853,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/4-exercise-create-language-understanding-application.md",
       "redirect_url": "/training/modules/get-started-language-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/3-get-started.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
     }
   ]
 }
