@@ -51953,6 +51953,11 @@
       "source_path": "learn-pr/wwl-data-ai/translate-text-with-translation-service/4-summary.md",
       "redirect_url": "/training/modules/get-started-language-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-text-with-translation-service/1a-translation.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
     }
   ]
 }
