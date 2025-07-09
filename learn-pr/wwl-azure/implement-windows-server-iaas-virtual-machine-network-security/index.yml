@@ -3,32 +3,51 @@ uid: learn.wwl.implement-windows-server-iaas-vm-network-security
 metadata:
   title: Implement Windows Server IaaS VM network security
   description: "Implement Windows Server IaaS VM network security"
-  ms.date: 12/24/2024
+  ms.date: 07/09/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: windows-server
+  ai-usage: human-only
 title: Implement Windows Server IaaS VM network security
 summary: In this module, you'll focus on how to improve the network security for Windows Server infrastructure as a service (IaaS) virtual machines (VMs) and how to diagnose network security issues with those VMs.
 abstract: |
   After completing this module, you'll be able to:
-  - Implement Network Security Groups (NSGs) with Windows Server IaaS VMs.
-  - Implement adaptive network hardening.
-  - Implement Azure Firewall.
-  - Implement Windows Defender Firewall in Windows Server IaaS VMs.
-  - Choose an appropriate filtering solution.
-  - Capture network traffic with Network Watcher.
+
+  -   Implement Network Security Groups (NSGs) with Windows Server IaaS VMs.
+
+  -   Implement adaptive network hardening.
+
+  -   Implement Azure Firewall.
+
+  -   Implement Windows Defender Firewall in Windows Server IaaS VMs.
+
+  -   Choose an appropriate filtering solution.
+
+  -   Capture network traffic with Network Watcher.
 prerequisites: |
   To get the best learning experience from this module, it's important that you have knowledge and experience in the following areas:
-  - Managing Windows Server operating systems (OSs) and Windows Server workloads in on-premises scenarios, including AD DS, Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services
-  - Common Windows Server management tools
-  - Core Microsoft compute, storage, networking, and virtualization technologies
-  - On-premises resiliency Windows Server based compute and storage technologies
-  - Implementing and managing IaaS services in Azure
-  - Microsoft Entra ID
-  - Security-related technologies (firewalls, encryption, multifactor authentication)
-  - Windows PowerShell scripting
-  - Automation and monitoring
+
+  -   Managing Windows Server operating systems (OSs) and Windows Server workloads in on-premises scenarios, including AD DS, Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services
+
+  -   Common Windows Server management tools
+
+  -   Core Microsoft compute, storage, networking, and virtualization technologies
+
+  -   On-premises resiliency Windows Server based compute and storage technologies
+
+  -   Implementing and managing IaaS services in Azure
+
+  -   Microsoft Entra ID
+
+  -   Security-related technologies (firewalls, encryption, multifactor authentication)
+
+  -   Windows PowerShell scripting
+
+  -   Automation and monitoring
 iconUrl: /training/achievements/implement-windows-server-iaas-vm-network-security.svg
 levels:
 - intermediate
@@ -47,7 +66,6 @@ subjects:
 units:
 - learn.wwl.implement-windows-server-iaas-vm-network-security.introduction
 - learn.wwl.implement-windows-server-iaas-vm-network-security.groups-windows-iaas-vms
-- learn.wwl.implement-windows-server-iaas-vm-network-security.adaptive-network-hardening
 - learn.wwl.implement-windows-server-iaas-vm-network-security.azure-firewall-windows-iaas-vms
 - learn.wwl.implement-windows-server-iaas-vm-network-security.windows-firewall-windows-iaas-vms
 - learn.wwl.implement-windows-server-iaas-vm-network-security.choose-appropriate-filtering-solution
