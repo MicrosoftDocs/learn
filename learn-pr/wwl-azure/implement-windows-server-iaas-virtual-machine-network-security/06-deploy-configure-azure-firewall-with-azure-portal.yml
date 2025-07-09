@@ -4,14 +4,15 @@ title: Deploy and configure Azure firewall using the Azure portal
 metadata:
   title: Deploy and configure Azure firewall using the Azure portal
   description: "Deploy and configure Azure firewall using the Azure portal"
-  ms.date: 12/24/2024
+  ms.date: 07/09/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
+  ms.custom:
+  - N/A
 durationInMinutes: 13
 content: |
-  [!include[](includes/07-deploy-configure-azure-firewall-with-azure-portal.md)]
+  [!include[](includes/06-deploy-configure-azure-firewall-with-azure-portal.md)]
 quiz:
   title: "Quick review"
   questions:
