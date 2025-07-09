@@ -33,7 +33,6 @@ roles:
 products:
 - azure
 units:
-- learn.wwl.fundamentals-azure-ai-services.introduction
 - learn.wwl.fundamentals-azure-ai-services.what-are-ai-services
 - learn.wwl.fundamentals-azure-ai-services.use-azure-ai-service
 - learn.wwl.fundamentals-azure-ai-services.understand-authentication
