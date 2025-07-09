@@ -41,6 +41,153 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/2-choose-a-messaging-platform.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/3-exercise-implement-a-service-bus-topic-and-queue.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/4-write-code-that-uses-service-bus-queues.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/5-exercise-write-code-that-uses-service-bus-queues.yml",
+       "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/6-write-code-that-uses-service-bus-topics.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/7-exercise-write-code-that-uses-service-bus-topics.yml",
+       "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/2-hybrid-computing.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/3-fundamentals.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/4-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/2-what-is-azure-monitor.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/3-how-azure-monitor-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/4-when-to-use-azure-monitor.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/5-knowledge-check.yml",
+       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/2-what-is-azure-data-explorer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/3-how-azure-data-explorer-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/4-when-to-use-azure-data-explorer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/5-knowledge-check.yml",
+       "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/intro-to-azure-data-explorer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
+      "redirect_document_id": false
+    },
+
+
+    {
       "source_path_from_root": "/learn-pr/achievements/learn.azure.deploy-java-spring-boot-app-service-mysql.badge.yml",
       "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
       "redirect_document_id": false
@@ -51086,6 +51233,41 @@
       "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/6-summary.md",
       "redirect_url": "/training/modules/get-started-computer-vision-azure/",
       "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-api-management/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-api-management/2-what-is-azure-api-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-api-management/3-how-azure-api-management-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-api-management/4-when-to-use-azure-api-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-api-management/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-api-management/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-api-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/accelerate-scale-spring-boot-application-azure-cache-redis/1-introduction.yml",
@@ -51225,6 +51407,606 @@
     {
       "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-web-api-minimal-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/2-analyze-limitations-of-polling-in-a-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/3-exercise-analyze-limitations-of-polling-in-a-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/4-enable-automatic-updates-in-a-web-app-using-signalr.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/5-exercise-enable-automatic-updates-in-a-web-app-using-signalr.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/6-host-a-static-website-using-a-storage-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/7-exercise-host-a-static-website-using-a-storage-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/automatic-update-of-a-webapp-using-azure-functions-and-signalr/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-signalr/signalr-tutorial-authenticate-azure-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/2-exercise-get-started.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/3-authentication.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/4-exercise-add-authentication.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/5-providers-roles.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/6-exercise-configure-access.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-static-web-app-authentication/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/static-web-apps/authentication-authorization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/2-identify-scenarios.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/3-knowledge-check-identify-scenarios.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/4-identify-factors.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/5-knowledge-check-identify-factors.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/6-autoscale-a-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/7-exercise-autoscale-a-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/app-service-autoscale-rules/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/manage-automatic-scaling",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/bring-ai-to-business-users-your-organization/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/introduction-ai-for-business-users/index.md",
+      "redirect_url": "/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/evolve-your-devops-practices/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/get-started/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/index.md",
+      "redirect_url": "/training/modules/purview-ediscovery-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/6-configure-search-permissions-filters.md",
+      "redirect_url": "/training/modules/purview-ediscovery-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/3-create-content-search.md",
+      "redirect_url": "/training/modules/purview-ediscovery-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/2-explore-ediscovery-solutions.md",
+      "redirect_url": "/training/modules/purview-ediscovery-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/5-export-search-results.md",
+      "redirect_url": "/training/modules/purview-ediscovery-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/1-introduction.md",
+      "redirect_url": "/training/modules/purview-ediscovery-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/8-knowledge-check.md",
+      "redirect_url": "/training/modules/purview-ediscovery-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/7-search-delete-email-messages.md",
+      "redirect_url": "/training/modules/purview-ediscovery-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/9-summary.md",
+      "redirect_url": "/training/modules/purview-ediscovery-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/investigate-threats-with-content-search-in-microsoft-purview/4-view-search-results.md",
+      "redirect_url": "/training/modules/purview-ediscovery-search/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-implement-application-allowlists-adaptive-application-control/index.md",
+      "redirect_url": "/training/paths/implement-windows-server-iaas-virtual-machine-security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-implement-application-allowlists-adaptive-application-control/2-describe-controls.md",
+      "redirect_url": "/training/paths/implement-windows-server-iaas-virtual-machine-security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-implement-application-allowlists-adaptive-application-control/3-implement-policy.md",
+      "redirect_url": "/training/paths/implement-windows-server-iaas-virtual-machine-security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-implement-application-allowlists-adaptive-application-control/1-introduction.md",
+      "redirect_url": "/training/paths/implement-windows-server-iaas-virtual-machine-security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-implement-application-allowlists-adaptive-application-control/4-knowledge-check.md",
+      "redirect_url": "/training/paths/implement-windows-server-iaas-virtual-machine-security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-implement-application-allowlists-adaptive-application-control/5-summary.md",
+      "redirect_url": "/training/paths/implement-windows-server-iaas-virtual-machine-security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/2-what-is-agile.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/3-what-is-azure-boards.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/4-plan-work-azure-boards.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/choose-an-agile-approach/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/2-what-are-delivery-plans.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/3-what-is-delivery-plans.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/4-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/5-plan-sprint-delivery-plans.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/6-track-dependencies-delivery-plans.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/7-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-delivery-plans/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/boards/plans/add-edit-delivery-plan?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/2-what-is-devops.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/3-what-is-azure-devops.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/4-create-an-azure-devops-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/get-started-with-devops/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/2-meet-the-team.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/3-release-process.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/4-assess-process-efficiency.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/assess-your-development-process/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/user-guide/plan-your-azure-devops-org-structure?view=azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-text-with-text-analytics-service/index.md",
+      "redirect_url": "/training/modules/introduction-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-text-with-text-analytics-service/4-exercise.md",
+      "redirect_url": "/training/modules/introduction-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-text-with-text-analytics-service/3-get-started-azure.md",
+      "redirect_url": "/training/modules/introduction-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-text-with-text-analytics-service/1-introduction.md",
+      "redirect_url": "/training/modules/introduction-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-text-with-text-analytics-service/5-knowledge-check.md",
+      "redirect_url": "/training/modules/introduction-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-text-with-text-analytics-service/6-summary.md",
+      "redirect_url": "/training/modules/introduction-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-text-with-text-analytics-service/2-understand-text-analytics.md",
+      "redirect_url": "/training/modules/introduction-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/index.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/4-exercise.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/3-get-started-knowledge-base.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/1-introduction.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/5-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/6-summary.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/2-understand-question-answering.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/index.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/2-describe-language-understanding.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/4-exercise-create-language-understanding-application.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/3-get-started.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/1-introduction.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/5-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-language-understanding/6-summary.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/explore-natural-language-processing/index.md",
+      "redirect_url": "/training/paths/introduction-to-ai-on-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-azure-ai-services/index.md",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-azure-ai-services/3-create-azure-ai-resource.md",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-azure-ai-services/6-exercise.md",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-azure-ai-services/1-introduction.md",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-azure-ai-services/7-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-azure-ai-services/8-summary.md",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-azure-ai-services/5-understand-authentication.md",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-azure-ai-services/4-use-azure-ai-service.md",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-azure-ai-services/2-what-are-ai-services.md",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-text-with-translation-service/index.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-text-with-translation-service/3-exercise-translate-text-use-azure.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-text-with-translation-service/2-get-started-azure.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-text-with-translation-service/1-introduction.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-text-with-translation-service/3a-knowledge-check.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-text-with-translation-service/4-summary.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-text-with-translation-service/1a-translation.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-text-with-translation-service/1b-use-azure-translation.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/03-implement-adaptive-network-hardening.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/04-implement-azure-firewall.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/03-implement-azure-firewall",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/05-implement-windows-defender-firewall.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/04-implement-windows-defender-firewall",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/06-choose-appropriate-filtering-solution.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/05-choose-appropriate-filtering-solution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/07-deploy-configure-azure-firewall-with-azure-portal.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/06-deploy-configure-azure-firewall-with-azure-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/08-capture-network-traffic-network-watcher.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/07-capture-network-traffic-network-watcher",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/09-log-network-traffic-using-azure-portal.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/08-log-network-traffic-using-azure-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/10-knowledge-check.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/09-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/11-summary.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/10-summary",
       "redirect_document_id": false
     }
   ]

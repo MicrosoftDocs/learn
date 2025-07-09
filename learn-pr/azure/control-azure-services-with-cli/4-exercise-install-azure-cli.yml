@@ -5,8 +5,8 @@ metadata:
   title: Work with the Azure CLI
   description: Learn the command structure and syntax to work with the Azure CLI
   ms.date: 01/09/2025
-  author: dbradish-microsoft
-  ms.author: dbradish
+  author: mikefrobbins
+  ms.author: mirobb
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli
@@ -14,4 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-install-azure-cli.md)]
-
+

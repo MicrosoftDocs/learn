@@ -155,11 +155,7 @@ As with subscription-scoped deployments, you can view management group-scoped de
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. On left pane, select **All services**.
-
 1. In the **Search** box, enter **management group**, then select **Management groups** in the results list.
-
-   :::image type="content" source="../media/7-portal-search.png" alt-text="Screenshot of the Azure portal interface showing the service list with 'Management groups' highlighted." border="true":::
 
 1. Select the **Secret R&D Projects** management group.
 

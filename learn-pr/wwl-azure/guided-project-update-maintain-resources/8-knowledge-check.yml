@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-update-maintain-resources.knowledge-check
+title: Module assessment
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Module Assessment
+  description: "Module assessment"
+  ms.date: 07/09/2025
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Azure resource is used to group related resources for a project?"
+    choices:
+    - content: "Virtual Network"
+      isCorrect: false
+      explanation: "Incorrect. A virtual network is used to manage communication between resources, not to group them."
+    - content: "Resource Group"
+      isCorrect: true
+      explanation: "Correct. A resource group is used to group related resources for easier management and cleanup."
+    - content: "Storage Account"
+      isCorrect: false
+      explanation: "Incorrect. A storage account is used to store data, not to group resources."
+  - content: "What is the purpose of setting a delete lock on an Azure resource?"
+    choices:
+    - content: "To prevent the resource from being modified."
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "To allow only administrators to access the resource."
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "To prevent accidental or unauthorized deletion of the resource."
+      isCorrect: true
+      explanation: "Correct. A delete lock ensures the resource can't be deleted until the lock is removed."
+  - content: "Which of the following actions would help minimize Azure costs when creating a virtual machine?"
+    choices:
+    - content: "Selecting a small virtual machine size like Standard_B1s."
+      isCorrect: true
+      explanation: "Correct. Smaller virtual machine sizes are more cost-effective for basic workloads."
+    - content: "Enabling autoscaling for the virtual machine."
+      isCorrect: false
+      explanation: "Incorrect. Autoscaling isn't applicable to individual virtual machines and doesn't directly reduce cost."
+    - content: "Using a premium SSD for the OS disk."
+      isCorrect: false
+      explanation: "Incorrect. Premium SSDs are more expensive and not necessary for cost-saving scenarios."
+  - content: "What happens when a shared access signature (SAS) URL is used after its associated key has been rotated?"
+    choices:
+    - content: "The file becomes read-only."
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "The SAS URL continues to work until it expires."
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "The SAS URL becomes invalid and access is denied."
+      isCorrect: true
+      explanation: "Correct. Rotating the key invalidates any SAS tokens generated with the old key."

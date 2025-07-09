@@ -15,6 +15,26 @@ achievements:
   title: Characterize an unfamiliar dataset with Azure Data Explorer
   summary: Learn how to characterize an unfamiliar dataset using Azure Data Explorer. 
   iconUrl: /training/achievements/azure-data-explore-web.svg
+- uid: learn.azure.intro-to-arc-enabled-data-services.badge
+  type: badge
+  title: Introduction to Azure Arc-enabled data services
+  summary: In this module, you learn the fundamentals of hybrid computing and Azure Arc.
+  iconUrl: /training/achievements/intro-to-arc-enabled-data-services.svg
+- uid: learn.implement-message-workflows-with-service-bus.badge
+  type: badge
+  title: Implement message-based communication workflows with Azure Service Bus
+  summary: Write C# code in a custom application that sends and receives messages using Azure Service Bus topics and queues.
+  iconUrl: /training/achievements/implement-message-workflows-with-service-bus.svg
+- uid: learn.intro-to-azure-data-explorer.badge
+  type: badge
+  title: Introduction to Azure Data Explorer
+  summary: Learn to describe the ingestion, query, visualization, and data management features that Azure Data Explorer provides to help you make sense of the data flowing into your business.
+  iconUrl: /training/achievements/intro-to-azure-data-explorer.svg
+- uid: learn.azure.intro-to-azure-monitor.badge
+  type: badge
+  title: Introduction to Azure Monitor
+  summary: Learn how to use Azure Monitor to provide insights into your Azure resource performance and operations.
+  iconUrl: /training/achievements/intro-to-azure-monitor.svg
 - uid: learn.visualize-data-workbooks.badge
   type: badge
   title: Visualize data combined from multiple data sources by using Azure Monitor Workbooks
@@ -6075,6 +6095,11 @@ achievements:
   title: Fundamentals of optical character recognition
   summary: Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.
   iconUrl: /training/achievements/read-text-computer-vision.svg
+- uid: learn.azure.introduction-to-azure-api-management.badge
+  type: badge
+  title: Introduction to Azure API Management
+  summary: Learn how Azure API Management can help reduce API complexity in your organization. Determine the types of deployments for which Azure API Management is a good API lifecycle management solution.
+  iconUrl: /training/achievements/introduction-to-azure-api-management.svg
 - uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.badge
   type: badge
   title: Accelerate a Spring Boot application with Azure Cache for Redis
@@ -6085,3 +6110,93 @@ achievements:
   title: 'Microsoft Azure AI Fundamentals: Generative AI'
   summary: "Generative AI is a form of artificial intelligence in which models are trained to generate new original content based on natural language input. In other words, you can describe a desired output in normal everyday language, and the model can respond by creating appropriate text, image, code, and more. \n\nTake this learning path to get started with generative AI. In it, you'll learn how to:\n- Understand core concepts of generative AI\n- Prepare for an AI development project\n- Describe considerations and practices for responsible generative AI\n- Build an AI agent using Azure AI Foundry"
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.advocates.azure-functions-and-signalr.badge
+  type: trophy
+  title: Enable real-time updates in a web application using Azure Functions and SignalR Service
+  summary: Change a JavaScript web app update mechanism from polling to push-based architecture with SignalR Service, Azure Cosmos DB, and Azure Functions.
+  iconUrl: /training/achievements/advocates/enable-automatic-updates-in-a-web-app-using-azure-functions-and-signalr.svg
+- uid: learn.azure.publish-static-web-app-authentication.badge
+  type: trophy
+  title: Authenticate users with Azure Static Web Apps
+  summary: Publish an Angular, React, Svelte, or Vue JavaScript app with API and authentication using Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
+  iconUrl: /training/achievements/publish-static-web-app-authentication.svg
+- uid: learn.app-service-autoscale-rules.badge
+  type: trophy
+  title: Dynamically meet changing web app performance requirements with autoscale rules
+  summary: Respond to periods of high activity by incrementally adding resources, and then removing these resources when activity drops, to reduce costs.
+  iconUrl: /training/achievements/app-service-autoscale-rules.svg
+- uid: learn.wwl.bring-ai-to-business-users-your-organization.trophy
+  type: trophy
+  title: Bring AI to business users in your organization
+  summary: To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
+  iconUrl: /training/achievements/bring-ai-to-business-users-your-organization.svg
+- uid: learn.wwl.introduction-ai-for-business-users.trophy
+  type: trophy
+  title: Introduction to AI for business users
+  summary: To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
+  iconUrl: /training/achievements/introduction-ai-for-business-users.svg
+- uid: learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.badge
+  type: badge
+  title: Investigate threats with Content search in Microsoft Purview
+  summary: This module examines how to search for content in the Microsoft Purview portal using Content Search functionality, including how to view and export the search results, and configure search permissions filtering.
+  iconUrl: /training/achievements/m365-content-compliance.svg
+- uid: learn.azdo.evolve-your-devops-practices.trophy
+  type: trophy
+  title: Get started with Azure DevOps
+  summary: DevOps is the union of people, process, and products to enable continuous delivery of value to your end users. Azure DevOps is a set of services that gives you the tools you need to do just that. With Azure DevOps, you can build, test, and deploy any application, either to the cloud or on premises. DevOps practices that enable transparency, cooperation, continuous delivery and continuous deployment become embedded in your software development lifecycle.
+  iconUrl: /training/achievements/azure-devops/evolve-your-devops-practices.svg
+- uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.badge
+  type: badge
+  title: Create and implement application allowlists with adaptive application control
+  summary: You're able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs.
+  iconUrl: /training/achievements/create-and-implement-application-allowlists-with-adaptive-application-control.svg
+- uid: learn.azdo.choose-an-agile-approach.badge
+  type: badge
+  title: Choose an Agile approach to software development
+  summary: Learn to foster the DevOps values of transparency and team cooperation with Azure Boards.
+  iconUrl: /training/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
+- uid: learn.azdo.manage-delivery-plans.badge
+  type: badge
+  title: Manage Agile software delivery plans across teams
+  summary: Learn how to optimize delivery efficiency by improving work plan visibility across teams.
+  iconUrl: /training/achievements/azure-devops/manage-agile-software-delivery-plans-across-teams.svg
+- uid: learn.get-started-with-devops.badge
+  type: badge
+  title: Introduction to Azure DevOps
+  summary: Explore what DevOps is (and isn't) and learn how to get started with Azure DevOps.
+  iconUrl: /training/achievements/azure-devops/get-started-with-devops.svg
+- uid: learn.azdo.assess-your-development-process.badge
+  type: badge
+  title: Assess your existing software development process
+  summary: Use a value stream map to help you examine your existing processes and technologies.
+  iconUrl: /training/achievements/azure-devops/assess-your-software-development-process.svg
+- uid: learn.wwl.analyze-text-with-text-analytics-service.badge
+  type: badge
+  title: Fundamentals of Text Analysis with the Language Service
+  summary: Explore Azure AI Language's natural language processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
+  iconUrl: /learn/achievements/analyze-text-with-text-analytics-service.svg
+- uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.badge
+  type: badge
+  title: Fundamentals of question answering with the Language Service
+  summary: Create a custom question answering knowledge base with Azure AI Language.
+  iconUrl: /learn/achievements/build-faq-chatbot-qna-maker-azure-bot-service.svg
+- uid: learn.wwl.create-language-model-with-luis.badge
+  type: badge
+  title: Fundamentals of conversational language understanding
+  summary: In this module, we introduce you to conversational language understanding, and show how to create applications that understand language with Azure AI Language.
+  iconUrl: /training/achievements/create-publish-luis-model.svg
+- uid: learn.wwl.explore-natural-language-processing.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Natural Language Processing'
+  summary: Natural language processing supports applications that can see, hear, speak with, and understand users. Using text analytics, translation, and language understanding services, Microsoft Azure makes it easy to build applications that support natural language.
+  iconUrl: /learn/achievements/explore-natural-language-processing.svg
+- uid: learn.wwl.fundamentals-azure-ai-services.badge
+  type: badge
+  title: Fundamentals of Azure AI services
+  summary: In this module, you learn the fundamentals of how Azure AI services can be used to build applications.
+  iconUrl: /training/achievements/fundamentals-azure-ai-services.svg
+- uid: learn.wwl.translate-text-with-translation-service.badge
+  type: badge
+  title: Fundamentals of language translation
+  summary: Automated translation capabilities in an AI solution enable closer collaboration by removing language barriers.
+  iconUrl: /training/achievements/translate-text-with-translation-service.svg
