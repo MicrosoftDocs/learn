@@ -26,7 +26,6 @@ products:
 subjects:
 - natural-language-processing
 modules:
-- learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service
 - learn.wwl.create-language-model-with-luis
 - learn.wwl.recognize-synthesize-speech
 - learn.wwl.translate-text-with-translation-service
