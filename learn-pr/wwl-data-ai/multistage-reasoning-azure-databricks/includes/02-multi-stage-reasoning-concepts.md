@@ -1,4 +1,4 @@
-Multi-stage reasoning systems are designed to solve complex problems by breaking them down into a series of manageable steps or stages. When you use such a system, your AI application generates more accurate responses by handling each part of a complex task systematically rather than trying to solve everything at once.
+Multi-stage reasoning systems are designed to solve complex problems by breaking them down into a series of manageable steps or stages. These systems generate more accurate responses than single-stage approaches.
 
 ## Understand the need for multi-stage reasoning
 
@@ -10,7 +10,7 @@ Let's explore an example to illustrate the need for multi-stage reasoning system
 1. You send the prompt to an LLM.
 1. The response is the overall sentiment.
 
-When you send this complex prompt to a Large Language Model (LLM), the output can be inaccurate because the objective contains multiple intents: translation, analysis, and sentiment classification. When you have an objective with multiple intents, the LLM can get overwhelmed by the complexity and produce unreliable results.
+When you send this complex prompt to a Large Language Model (LLM), the output can be less accurate than breaking down the task because the objective contains multiple intents: translation, analysis, and sentiment classification. When you have an objective with multiple intents, the LLM can get overwhelmed by the complexity and produce unreliable results.
 
 Instead, you can break down the problem and send a prompt to an LLM for each specific intent:
 
@@ -40,7 +40,7 @@ When you want to build a multi-stage reasoning system, you need to:
 
 The tools you need depend on the tasks you need to perform. For example, you can retrieve customer data from a SQL database to provide necessary context, search a vector store to retrieve context based on semantic similarity, or use a fine-tuned LLM to generate output in a specific tone or format.
 
-By breaking up your problem and designing a multi-stage reasoning system, you create AI solutions that handle more manageable tasks. As you design individual tasks and chain them together, you create a more flexible design. Each task, or stage, can be optimized individually, and you can reuse tasks across systems to speed up development of new solutions.
+By breaking up your problem and designing a multi-stage reasoning system,ou create AI solutions that handle more manageable tasks than single-stage approaches. As you design individual tasks and chain them together, you create a more flexible design than in large single-stage systems. Each task, or stage, can be optimized individually, and you can reuse tasks across systems to speed up development of new solutions.
 
 ## Choose a library
 
