@@ -20,7 +20,7 @@ To start answering this question, you need to discover, filter, and deploy a mod
 - [**GitHub**](https://github.com/marketplace/models-github): Access to diverse models via GitHub Marketplace and GitHub Copilot.
 - [**Azure AI Foundry**](https://ai.azure.com/explore/models): Comprehensive catalog with robust tools for deployment.
 
-Though you can use each of these catalogs to explore models, the model catalog in Azure AI Foundry makes it easiest to explore and deploy a model to build you prototype, while offering the best selection of models.
+Though you can use each of these catalogs to explore models, the model catalog in Azure AI Foundry makes it easiest to explore and deploy a model to build your prototype, while offering the best selection of models.
 
 Let's explore some of the options you need to consider when searching for suitable models.
 
