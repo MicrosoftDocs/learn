@@ -6170,3 +6170,8 @@ achievements:
   title: Assess your existing software development process
   summary: Use a value stream map to help you examine your existing processes and technologies.
   iconUrl: /training/achievements/azure-devops/assess-your-software-development-process.svg
+- uid: learn.wwl.analyze-text-with-text-analytics-service.badge
+  type: badge
+  title: Fundamentals of Text Analysis with the Language Service
+  summary: Explore Azure AI Language's natural language processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
+  iconUrl: /learn/achievements/analyze-text-with-text-analytics-service.svg
