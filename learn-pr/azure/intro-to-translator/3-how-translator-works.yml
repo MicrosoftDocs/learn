@@ -6,11 +6,11 @@ metadata:
   description: How Translator works
   author: laujan
   ms.author: lajanuar
-  ms.date: 02/06/2024
+  ms.date: 06/27/2025
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot
 durationInMinutes: 5
 content: |
   [!INCLUDE[](includes/3-how-translator-works.md)]
-
+

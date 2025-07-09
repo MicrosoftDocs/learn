@@ -1,0 +1,3 @@
+In this module, you learned how to design and implement multi-agent solutions using Azure AI Foundry Agent Service.
+
+Connected agents let you break down complex tasks by assigning them to specialized agents that work together within a coordinated system. You explored how to define clear roles for main and connected agents, delegate tasks using natural language, and design modular workflows that are easier to scale and maintain. You also practiced building a multi-agent solution. Great work!

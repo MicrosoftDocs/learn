@@ -36,7 +36,7 @@ There are two main options for implementing vector search in Azure Databricks: v
 
 A vector database is a specialized database optimized to store and retrieve embeddings - those vectors with hundreds or thousands of numbers that represent meaning. Like traditional databases, vector databases use indices (organized structures that speed up searches) to quickly find relevant data, but these vector indices are designed to find mathematically similar vectors rather than exact matches. In RAG applications, vector databases primarily store text embeddings - vectors that represent the semantic meaning of your document chunks - along with metadata about each chunk (like source document, page numbers, or categories).
 
-:::image type="content" source="../media/matched-query.png" alt-text="Vector space visualization showing both document and query vectors as dots. A relevant document vector is positioned close to the query vector.":::
+:::image type="content" source="../media/matched-query.png" alt-text="Diagram of vector space visualization showing both document and query vectors as dots. A relevant document vector is positioned close to the query vector.":::
 
 This visualization shows how vectors work in practice. Each dot represents a vector - the blue dots are document chunk embeddings stored in the vector database, and the orange dot is a query vector. The image labels "Relevant document" and "Query" indicate vectors that are close together in the mathematical space, showing similarity. When you search, the database finds document vectors nearest to your query vector.
 

@@ -6,7 +6,7 @@ metadata:
   description: Multiple-choice questions
   author: laujan
   ms.author: lajanuar
-  ms.date: 02/06/2024
+  ms.date: 06/27/2025
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot
@@ -50,4 +50,4 @@ quiz:
     - content: Custom models can be tuned to understand the emotion of the document, allowing a sentiment score to provide more data for the end user.
       isCorrect: false
       explanation: Incorrect. Custom models don't offer a sentiment score.
-
+

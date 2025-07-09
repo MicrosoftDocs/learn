@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 06/16/2025
+  ms.date: 07/08/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -15,6 +15,7 @@ metadata:
   module_assessment: true
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "Which of the following event schema properties requires a value?"
     choices:

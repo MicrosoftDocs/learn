@@ -13,19 +13,19 @@ Contoso Air provides a baggage tracking solution for airlines. The workload is h
 
 **By using your cost tracking system, continuously evaluate and optimize the costs of resources, data, and paid support. Are there underutilized resources that can be retired, replaced, rebuilt, or refactored?**
 
-You'll reduce costs by avoiding paying for resources that aren't fully utilized. Understanding pricing metrics can help you make decisions that are more aligned with your cost model. It can also prevent unwarranted billing. Resizing or removing underutilized resources, or even changing SKUs, can reduce costs.
+You reduce costs by avoiding paying for resources that aren't fully utilized. Understanding pricing metrics can help you make decisions that are more aligned with your cost model. It can also prevent unwarranted billing. You can also reduce costs by resizing or removing underutilized resources, or even changing SKUs.
 
 You might also be able to save some costs by evaluating the use of your support contracts with your technology suppliers and right-sizing them.
 
 *Contoso's challenge*
 
-- The workload team has always come in under budget, so optimization for cost efficiency hasn't been a priority.
+- The workload team typically comes in under budget, so optimization for cost efficiency hasn't been a priority.
 - They're planning to improve the workload's reliability next year and know that doing so will increase their Azure costs, likely pushing the workload over their budget. They're considering asking for an increased budget for next year.
 
 *Applying the approach and outcomes*
 
 - The team decides that before asking for more money, they'll evaluate their current Azure and support costs to look for potential savings opportunities. They look into the per-resource, per-resource group, and per-tag breakdowns of cost in the existing cost tracking system and notice some unexpected spend.
-- The team discovers that there are VMs running in their environment that were used for a deprecated build system and are no longer needed, there's a significant amount of old data in Azure Storage that can be moved to a less expensive tier, and they're paying for a support contract with their cloud provider that includes consultative hours that they are'nt using.
+- The team discovers that there are VMs running in their environment that were used for a deprecated build system and are no longer needed, there's a significant amount of old data in Azure Storage that can be moved to a less expensive tier, and they're paying for a support contract with their cloud provider that includes consultative hours that they aren't using.
 - The team optimizes their Azure costs by deleting the unused VMs and moving the old data to Archive storage. They begin working more closely with their cloud provider to make good use of their consulting services.
 - The team adds a recurring task to their backlog to perform evaluations of their workload costs going forward.
 
@@ -43,7 +43,7 @@ Regular reviews of metrics, performance data, billing reports, and feature usage
 *Applying the approach and outcomes*
 
 - The team finds that they have allocated more resources than are necessary to low priority flows, and can safely scale back the allocated throughput, while maintaining their performance requirements. Specifically, they can move away from over-provisioning to handle peak loads and implement a queue-based load leveling system instead.
-- They also find that a new feature has been added to their selected SKU on their compute platform that replaces some authentication code. Using this feature will mean less code to maintain and test.
+- They also find that a new feature has been added to their selected SKU on their compute platform that replaces some authentication code. Using this feature means less code to maintain and test.
 
 ## Optimize your deployment environments
 
@@ -55,8 +55,8 @@ You also can save costs by creating preproduction environments on-demand and rem
 
 *Contoso's challenge*
 
-- The workload team spends more on preproduction environments than it does on production environments. While this may be important for some scenarios, it seems excessive for this workload.
-- The preproduction environments have been built to match the production environment very closely. The workload team appreciates having a very close approximation of the production environment in the lower environments as it provides them a high degree of confidence that behaviors in production will match the lower environments.
+- The workload team spends more on preproduction environments than it does on production environments. While this cost can be important for some scenarios, it seems excessive for this workload.
+- The preproduction environments have been built to match the production environment very closely. The workload team appreciates having a very close approximation of the production environment in the lower environments, as it provides them with a high degree of confidence that behaviors in production will match the lower environments.
 
 *Applying the approach and outcomes*
 
