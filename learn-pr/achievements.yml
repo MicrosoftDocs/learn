@@ -6190,3 +6190,8 @@ achievements:
   title: 'Microsoft Azure AI Fundamentals: Natural Language Processing'
   summary: Natural language processing supports applications that can see, hear, speak with, and understand users. Using text analytics, translation, and language understanding services, Microsoft Azure makes it easy to build applications that support natural language.
   iconUrl: /learn/achievements/explore-natural-language-processing.svg
+- uid: learn.wwl.fundamentals-azure-ai-services.badge
+  type: badge
+  title: Fundamentals of Azure AI services
+  summary: In this module, you learn the fundamentals of how Azure AI services can be used to build applications.
+  iconUrl: /training/achievements/fundamentals-azure-ai-services.svg
