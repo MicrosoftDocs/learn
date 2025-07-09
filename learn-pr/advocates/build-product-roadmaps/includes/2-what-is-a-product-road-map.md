@@ -32,11 +32,11 @@ The final form of your roadmap could be represented in many different ways. Some
 
 To build a roadmap, we work top down, from the least granular component to the most granular.
 
-* **Mission**: Your reason for building the product.
-* **Themes**: High-level components of the product; for example, "Acquire new customers."
-* **Milestones**: Groups of time-boxed epics; for example, three months worth of work.
-* **Epics**: Collections of user stories that often represent a feature; for example, Authentication.
-* **User Stories**: User-centric stories that describe a requirement; for example, "Giving the user the ability to reset their password." User stories are typically collected in an epic.
+- **Mission**: Your reason for building the product.
+- **Themes**: High-level components of the product; for example, "Acquire new customers."
+- **Milestones**: Groups of time-boxed epics; for example, three months worth of work.
+- **Epics**: Collections of user stories that often represent a feature; for example, Authentication.
+- **User Stories**: User-centric stories that describe a requirement; for example, "Giving the user the ability to reset their password." User stories are typically collected in an epic.
 
 ![Diagram of a product roadmap hierarchy.](../media/product-roadmap.png)
 

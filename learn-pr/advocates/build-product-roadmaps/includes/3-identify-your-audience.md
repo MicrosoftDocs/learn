@@ -6,8 +6,8 @@ At Fabrikam, the audiences for our product roadmap are:
 
 The engineers, designers, and product managers that are working on the product. They're looking for lower-level tactical information at the sprint and story level that tells them what to work on right now:
 
-* What do we plan to do this sprint?
-* The status of the work they're doing right now.
+- What do we plan to do this sprint?
+- The status of the work they're doing right now.
 
 ![Screenshot of an engineering product roadmap.](../media/story.png)
 
@@ -17,9 +17,9 @@ This audience is the primary and default audience for your product roadmap, and 
 
 Your executive team is interested in your high-level goals, like the total time and cost of development work and how it achieves the company's strategic objectives. Most likely, the executive audience is interested in the reporting outputs from your product management process.
 
-* What you plan to do in the short term; for example, the next quarter? What are you going to do next?
-* What you have and are achieving currently; for example, this quarter? Are you on schedule?
-* The ongoing and planned time and cost of your development.
+- What you plan to do in the short term; for example, the next quarter? What are you going to do next?
+- What you have and are achieving currently; for example, this quarter? Are you on schedule?
+- The ongoing and planned time and cost of your development.
 
 ![Screenshot of a product roadmap summary slide.](../media/product-roadmap-002.png)
 

@@ -8,8 +8,8 @@ This module is an introduction, for Product Managers and Product Engineers, to d
 
 In this module you learn how to:
 
-* Describe the basic components and importance of product roadmaps.
-* Identify your product mission and the appropriate audiences for your roadmap.
-* Structure a roadmap and choose a prioritization methodology appropriate for your product.
+- Describe the basic components and importance of product roadmaps.
+- Identify your product mission and the appropriate audiences for your roadmap.
+- Structure a roadmap and choose a prioritization methodology appropriate for your product.
 
 By the end of this module, you're able to construct a product roadmap that your team can use to build and manage your product.
