@@ -33,6 +33,5 @@ roles:
 products:
 - azure
 units:
-- learn.wwl.fundamentals-azure-ai-services.what-are-ai-services
 badge:
   uid: learn.wwl.fundamentals-azure-ai-services.badge
