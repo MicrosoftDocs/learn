@@ -52008,6 +52008,41 @@
       "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/11-summary.md",
       "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/10-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-logic-apps-using-arm-templates/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-logic-apps-using-arm-templates/2-describe-a-logic-app-using-workflow-definition-language.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-logic-apps-using-arm-templates/3-deploy-logic-app-using-arm-template.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-logic-apps-using-arm-templates/4-exercise-deploy-logic-app-using-arm-template.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-logic-apps-using-arm-templates/5-exercise-deploy-a-logic-app-using-a-parameterized-arm-template.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-logic-apps-using-arm-templates/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-deploy-logic-apps-using-arm-templates/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/",
+      "redirect_document_id": false
     }
   ]
 }
