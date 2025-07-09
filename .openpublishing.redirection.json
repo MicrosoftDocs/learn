@@ -51833,6 +51833,11 @@
       "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/6-summary.md",
       "redirect_url": "/training/modules/get-started-language-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-faq-chatbot-qna-maker-azure-bot-service/2-understand-question-answering.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
     }
   ]
 }
