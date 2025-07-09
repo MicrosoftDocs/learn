@@ -6180,3 +6180,8 @@ achievements:
   title: Fundamentals of question answering with the Language Service
   summary: Create a custom question answering knowledge base with Azure AI Language.
   iconUrl: /learn/achievements/build-faq-chatbot-qna-maker-azure-bot-service.svg
+- uid: learn.wwl.create-language-model-with-luis.badge
+  type: badge
+  title: Fundamentals of conversational language understanding
+  summary: In this module, we introduce you to conversational language understanding, and show how to create applications that understand language with Azure AI Language.
+  iconUrl: /training/achievements/create-publish-luis-model.svg
