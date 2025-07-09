@@ -51963,6 +51963,51 @@
       "source_path": "learn-pr/wwl-data-ai/translate-text-with-translation-service/1b-use-azure-translation.md",
       "redirect_url": "/training/modules/get-started-language-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/03-implement-adaptive-network-hardening.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/04-implement-azure-firewall.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/03-implement-azure-firewall",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/05-implement-windows-defender-firewall.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/04-implement-windows-defender-firewall",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/06-choose-appropriate-filtering-solution.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/05-choose-appropriate-filtering-solution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/07-deploy-configure-azure-firewall-with-azure-portal.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/06-deploy-configure-azure-firewall-with-azure-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/08-capture-network-traffic-network-watcher.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/07-capture-network-traffic-network-watcher",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/09-log-network-traffic-using-azure-portal.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/08-log-network-traffic-using-azure-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/10-knowledge-check.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/09-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/11-summary.md",
+      "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/10-summary",
+      "redirect_document_id": false
     }
   ]
 }

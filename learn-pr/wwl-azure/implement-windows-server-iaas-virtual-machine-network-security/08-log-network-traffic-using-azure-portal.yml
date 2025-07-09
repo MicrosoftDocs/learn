@@ -4,14 +4,15 @@ title: Log network traffic to and from a VM using the Azure portal
 metadata:
   title: Log network traffic to and from a VM using the Azure portal
   description: "Log network traffic to and from a VM using the Azure portal"
-  ms.date: 12/24/2024
+  ms.date: 07/09/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
-azureSandbox: false
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/09-log-network-traffic-using-azure-portal.md)]
+  [!include[](includes/08-log-network-traffic-using-azure-portal.md)]
 quiz:
   title: "Quick review"
   questions:

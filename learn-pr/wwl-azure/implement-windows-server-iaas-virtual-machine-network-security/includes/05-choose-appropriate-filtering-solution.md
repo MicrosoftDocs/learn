@@ -1,4 +1,3 @@
-
 A number of traffic filtering solutions are available to help Contoso to manage their network traffic. It's important that IT staff understand which to use, and when. 
 
 ## Available filtering options
