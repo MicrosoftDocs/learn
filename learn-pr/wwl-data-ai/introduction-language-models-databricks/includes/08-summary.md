@@ -6,7 +6,7 @@ LLMs are also key in language translation services, making cross-language commun
 
 **Explore other reading materials**:
 
-- [Get an introduction to Large Language Models](/training/modules/introduction-large-language-models/?azure-portal=true)
-- [Get an introduction to building generative AI solutions for developers](/azure/developer/ai/introduction-build-generative-ai-solutions?azure-portal=true)
-- [Explore how generative AI and LLMs work](/dotnet/ai/conceptual/how-genai-and-llms-work?azure-portal=true)
-- [Explore a guide to working with Large Language Models](/shows/generative-ai-for-beginners/introduction-to-generative-ai-and-llms-generative-ai-for-beginners)
+- [Introduction to Large Language Models](/training/modules/introduction-large-language-models/?azure-portal=true)
+- [Generative AI solutions for developers](/azure/developer/ai/introduction-build-generative-ai-solutions?azure-portal=true)
+- [How generative AI and LLMs work](/dotnet/ai/conceptual/how-genai-and-llms-work?azure-portal=true)
+- [Introduction to Generative AI and LLMs](/shows/generative-ai-for-beginners/introduction-to-generative-ai-and-llms-generative-ai-for-beginners)
