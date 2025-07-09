@@ -6,7 +6,7 @@ Azure Firewall is configured in "block by default" design. It means any network 
 
 ## Outbound network rules
 
-While "block by default" is a good principle, you need legitimate traffic to be excluded from this principle.  You can use one of the two features provided by Azure Firewall to exclude legitimate traffic from "block by default" configuration.
+While "block by default" is a good principle, you need legitimate traffic to be excluded from this principle. You can use one of the two features provided by Azure Firewall to exclude legitimate traffic from "block by default" configuration.
 
 The first feature is called "classic rules" or just "rules." Each Azure Firewall instance is configured with a rule, which consists of a protocol, source IP address space, source ports, destination IP address space, and destination ports. This is an excellent choice for smaller deployments. But for enterprise-grade deployments, this approach has limited scalability as the rules are defined per Azure Firewall instance. When there are multiple Azure Firewall instances, the process of defining rules becomes repetitive and difficult to manage. This is where the second feature, which uses Azure Firewall policy, becomes handy. By using Azure Firewall policy, rules are defined only once and then applied to multiple Azure Firewall instances.
 

@@ -3,7 +3,7 @@ uid: learn.azure.azure-vmware-solution
 title: Secure outbound internet connectivity for Azure VMware Solution
 metadata:
   title: Secure Outbound Internet Connectivity for Azure VMware Solution
-  description: Secure outbound internet connectivity for Azure VMware Solution using Azure Route Server, Azure Firewall and third-party NVA
+  description: Secure outbound internet connectivity for Azure VMware Solution using Azure Route Server, Azure Firewall, and third-party NVA
   ms.date: 07/08/2025
   author: Mahesh-MSFT
   ms.author: maksh

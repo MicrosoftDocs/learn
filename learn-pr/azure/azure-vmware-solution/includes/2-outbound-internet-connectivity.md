@@ -8,7 +8,7 @@ Choosing the right way for outbound internet connectivity depends upon whether y
 
 ## Controlling internet traffic
 
-Contoso has very prescriptive requirements on how workloads should be connected to the internet. Such requirements allow Contoso to have a centralized exit for internet bound traffic from all applications running inside and outside of Azure VMware Solution.  To meet these requirements, Contoso wants to implement customized internet outbound connectivity on top of options provided by Azure VMware Solution.
+Contoso has very prescriptive requirements on how workloads should be connected to the internet. Such requirements allow Contoso to have a centralized exit for internet bound traffic from all applications running inside and outside of Azure VMware Solution. To meet these requirements, Contoso wants to implement customized internet outbound connectivity on top of options provided by Azure VMware Solution.
 
 ### Disable outbound internet connectivity
 
