@@ -51923,6 +51923,11 @@
       "source_path": "learn-pr/wwl-data-ai/fundamentals-azure-ai-services/2-what-are-ai-services.md",
       "redirect_url": "/training/modules/get-started-ai-fundamentals/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-text-with-translation-service/index.md",
+      "redirect_url": "/training/modules/get-started-language-azure/",
+      "redirect_document_id": false
     }
   ]
 }
