@@ -51878,6 +51878,11 @@
       "source_path": "learn-pr/paths/explore-natural-language-processing/index.md",
       "redirect_url": "/training/paths/introduction-to-ai-on-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-azure-ai-services/index.md",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/",
+      "redirect_document_id": false
     }
   ]
 }
