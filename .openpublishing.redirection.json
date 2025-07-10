@@ -26,7 +26,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/4-explore-disaster-recovery-azure-arc-enabled-sql-managed-instance.yml",
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/4-exercise-implement-high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
       "redirect_document_id": false
     },
