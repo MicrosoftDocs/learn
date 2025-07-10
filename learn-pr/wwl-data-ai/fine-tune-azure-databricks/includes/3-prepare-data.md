@@ -23,4 +23,4 @@ Include the following key elements in your dataset:
 - **Diverse examples**: Include various questions and answers to cover different topics and scenarios. Diverse examples help the model generalize better and handle a wide range of queries.
 - **Human-generated responses**: Use human-generated responses to train the model. Human-generated responses ensure that the model learns to generate natural and accurate replies.
 
-Well-prepared data is the foundation of successful fine-tuning, so investing time in creating high-quality, representative training examples will directly impact your model's performance.
+Well-prepared data is the foundation of successful fine-tuning, so investing time in creating high-quality, representative training examples will affect your model's performance.

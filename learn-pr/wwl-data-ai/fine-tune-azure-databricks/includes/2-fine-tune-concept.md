@@ -14,9 +14,9 @@ You'll also want to consider fine-tuning when you have sufficient high-quality t
 
 Fine-tuning uses the concept of transfer learning, which means taking knowledge learned from one task and applying it to a related task. This approach leverages a model that has already learned useful representations and adapts it to a new task. The process involves several key steps:
 
-**Start with a foundation model**: You begin with a pretrained LLM that has already learned general language patterns from diverse text data.
+**Start with a foundation model**: Begin with a pre-trained LLM that has already learned general language patterns from diverse text data.
 
-**Prepare your training data**: You create a dataset that represents the specific task or domain you want the model to excel at. This data should include examples of the inputs and outputs you expect in your application.
+**Prepare your training data**: Create a dataset that represents the specific task or domain you want the model to excel at. This data should include examples of the inputs and outputs you expect in your application.
 
 **Continue training**: The model continues learning by processing your specialized dataset. During this process, the model's parameters are fine-tuned to better capture the patterns in your data while retaining its general language capabilities.
 
@@ -24,7 +24,7 @@ Fine-tuning uses the concept of transfer learning, which means taking knowledge 
 
 For example, if you're building a customer support chatbot for a software company, your training data might include historical customer questions and the appropriate responses. You'd also want to include product documentation and troubleshooting guides, along with examples of the tone and style you want the model to use.
 
-The fine-tuning process is more efficient than training from scratch because it leverages the language understanding that the model has already developed, requiring fewer computational resources and less training time.
+The fine-tuning process is more efficient than training from scratch because it uses the language understanding that the model has already developed, requiring fewer computational resources and less training time.
 
 ## Explore key factors for fine-tuning
 
@@ -36,7 +36,7 @@ Successful fine-tuning involves balancing several factors:
 
 **Layer selection**: Neural networks are organized in layers, where each layer learns different aspects of language patterns. You can choose to fine-tune all layers of the model or freeze certain layers. Freezing means keeping some layers unchanged to preserve the model's general language understanding while adapting others for specific tasks.
 
-**Dataset quality**: The relevance and quality of your training data directly impact the model's performance. Your data should be representative of real-world scenarios and aligned with your intended use case.
+**Dataset quality**: The relevance and quality of your training data affects the model's performance. Your data should be representative of real-world scenarios and aligned with your intended use case.
 
 The goal is to adapt the model to your specific use case while preserving its general language capabilities.
 
