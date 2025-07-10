@@ -11,6 +11,66 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/paths/kusto-query-language/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+        {
+      "source_path_from_root": "/learn-pr/paths/analyze-monitoring-data-with-kql/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/2-query-basics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/3-kql-query-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/4-kql-query-structure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/5-exercise.yml",
+       "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/6-query-types.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/7-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
       "redirect_document_id": false
