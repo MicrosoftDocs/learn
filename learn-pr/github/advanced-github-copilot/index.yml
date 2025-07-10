@@ -6,6 +6,7 @@ metadata:
   author: abrilurena
   ms.author: abrilu
   ms.date: 09/30/2024
+  ms.update-cycle: 180-days
   ms.service: github-copilot
   ms.topic: module
   ms.collection:
