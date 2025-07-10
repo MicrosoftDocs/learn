@@ -128,4 +128,4 @@ Authentication issues can happen because you're using an *N* SKU of Windows on y
 
 ## Issue isn't listed here
 
-If your issue isn't listed here, see [Troubleshooting overview, feedback, and support for Azure Virtual Desktop](/azure/virtual-desktop/troubleshoot-set-up-overview) for information about how to open an Azure support case for Azure Virtual Desktop.
+If your issue isn't listed here, see [Troubleshooting overview, feedback, and support for Azure Virtual Desktop](/troubleshoot/azure/virtual-desktop/troubleshoot-set-up-overview) for information about how to open an Azure support case for Azure Virtual Desktop.
