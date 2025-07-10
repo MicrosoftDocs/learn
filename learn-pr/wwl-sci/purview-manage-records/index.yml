@@ -3,7 +3,7 @@ uid: learn.wwl.purview-manage-records
 metadata:
   title: Manage records and disposition with Microsoft Purview
   description: "Manage records and disposition with Microsoft Purview."
-  ms.date: 06/10/2025
+  ms.date: 07/09/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -38,8 +38,10 @@ units:
 - learn.wwl.purview-manage-records.plan-retention-disposition
 - learn.wwl.purview-manage-records.retention-label-file-plan
 - learn.wwl.purview-manage-records.auto-apply-retention-label
+- learn.wwl.purview-manage-records.exercise-create-auto-apply
 - learn.wwl.purview-manage-records.declare-record
 - learn.wwl.purview-manage-records.disposition-review
+- learn.wwl.purview-manage-records.exercise-disposition-review
 - learn.wwl.purview-manage-records.principles-retention
 - learn.wwl.purview-manage-records.knowledge-check
 - learn.wwl.purview-manage-records.summary
