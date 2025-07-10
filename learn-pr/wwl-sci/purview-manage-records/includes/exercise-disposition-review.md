@@ -2,7 +2,7 @@ Retention labels help manage how long content is kept and what happens when that
 
 In this exercise, you first create a role group that allows selected users to review items marked for disposition. Then you create a retention label for vendor contracts and configure it to start a disposition review after five years. You'll define a review stage, assign a reviewer, and publish the label so it's available in Microsoft 365.
 
-**Estimated time to complete**: 20-30 minutes
+**Estimated time to complete**: 15-20 minutes
 
 > [!IMPORTANT]
 > To complete this exercise, you need access to Microsoft Purview features through one of these Microsoft 365 licenses:
