@@ -11,6 +11,161 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/paths/kusto-query-language/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+        {
+      "source_path_from_root": "/learn-pr/paths/analyze-monitoring-data-with-kql/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/2-query-basics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/3-kql-query-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/4-kql-query-structure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/5-exercise.yml",
+       "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/6-query-types.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/7-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/2-group-data-aggregate-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/3-exercise-connect-to-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/4-exercise-count-events-count-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/5-exercise-visualize-data-render-operator.yml",
+       "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/6-exercise-summarize-data-aggregate-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/7-exercise-introduce-variables-let-statement.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/8-challenge.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/9-solution.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/10-knowledge-check.yml",
+       "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/2-explore-high-availability-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/3-explore-disaster-recovery-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/4-exercise-implement-high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/5-knowledge-check.yml",
+       "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/2-build.yml",
       "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
       "redirect_document_id": false
