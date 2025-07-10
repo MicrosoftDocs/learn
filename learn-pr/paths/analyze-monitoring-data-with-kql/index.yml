@@ -39,6 +39,5 @@ subjects:
 - infrastructure
 modules:
 - learn.azure.explore-fundamentals-kql
-- learn.azure.gain-insights-data-kql
 trophy:
   uid: learn.analyze-monitoring-data-with-kql.trophy

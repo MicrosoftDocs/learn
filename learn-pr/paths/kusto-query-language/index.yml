@@ -43,6 +43,5 @@ subjects:
 - big-data
 modules:
 - learn.azure.explore-fundamentals-kql
-- learn.azure.gain-insights-data-kql
 trophy:
   uid: learn.kusto-query-language.trophy
