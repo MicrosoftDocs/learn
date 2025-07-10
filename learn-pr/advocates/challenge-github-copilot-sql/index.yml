@@ -4,6 +4,7 @@ metadata:
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 06/25/2025
+  ms.update-cycle: 180-days
   title: Challenge GitHub Copilot with SQL
   description: Learn how to apply advanced GitHub Copilot features to interact with an application that uses complex SQL queries.
   ms.service: github-copilot

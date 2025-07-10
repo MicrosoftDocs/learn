@@ -6,6 +6,7 @@ metadata:
   author: juliamuiruri4
   ms.author: juliamuiruri
   ms.date: 12/4/2023
+  ms.update-cycle: 180-days
   ms.service: microsoft-copilot
   ms.topic: module-challenge-project
   ms.collection:

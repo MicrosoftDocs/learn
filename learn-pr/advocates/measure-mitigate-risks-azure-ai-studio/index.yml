@@ -4,6 +4,7 @@ metadata:
   ms.author: apspeigh
   author: aprilgittens
   ms.date: 09/14/2024
+  ms.update-cycle: 180-days
   title: Measure and mitigate risks for a generative AI app in Azure AI Foundry
   description: Learn how to measure and mitigate risks for a generative AI app leveraging responsible AI tools and features within Azure AI Foundry.
   ms.service: artificial-intelligence
