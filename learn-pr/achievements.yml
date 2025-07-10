@@ -6200,3 +6200,13 @@ achievements:
   title: Fundamentals of language translation
   summary: Automated translation capabilities in an AI solution enable closer collaboration by removing language barriers.
   iconUrl: /training/achievements/translate-text-with-translation-service.svg
+- uid: learn.visual-studio-test-concepts.badge
+  type: badge
+  title: Introduction to software testing concepts
+  summary: Describe the common best practices, theory, and patterns of writing tests. Characterize the types of problems that testing can solve for your repository.
+  iconUrl: /training/achievements/visual-studio-test-concepts.svg
+- uid: learn.visual-studio.visual-studio-test-tools.badge
+  type: badge
+  title: C# testing in Visual Studio
+  summary: Start testing your C# apps by using the testing tools in Visual Studio.
+  iconUrl: /training/achievements/visual-studio/visual-studio-test-tools.svg
