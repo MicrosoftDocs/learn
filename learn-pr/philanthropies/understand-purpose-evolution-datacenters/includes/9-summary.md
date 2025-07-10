@@ -22,7 +22,7 @@ The module also covered the core components of datacenters, such as power supply
 - [Is Hybrid and Remote Work Here to Stay? Opportunities and Challenges in the United States and Abroad Roy Y. Chan, Xi Lin, and Krishna Bista](https://scholar.harvard.edu/sites/scholar.harvard.edu/files/roychan/files/is_hybrid_remote_work_here_to_stay_in_higher_education_-_chan_lin_bista.pdf)
 - [Dgtl Infra: What is an Edge Data Center? (With Examples)](https://dgtlinfra.com/what-is-an-edge-data-center/)
 - [Flexential: Edge data center: Everything you need to know](https://www.flexential.com/resources/blog/edge-data-centers)
-- [GB Times: What is data center colocation?](https://gbtimes.com/what-is-data-center-colocation/)
+- [What is data center colocation?](https://www.bmc.com/blogs/data-center-colocation)
 - [DMTF: Software Defined Data Center (SDDC) Definition 5 A White Paper from the OSDDC Incubator](https://www.dmtf.org/sites/default/files/standards/documents/DSP-IS0501_1.0.0.pdf)
 - [PCX: Enterprise Data Centers: What Role Do They Play and How Are They Evolving?](https://info.pcxcorp.com/blog/enterprise-data-centers-what-role-do-they-play-and-how-are-they-evolving)
 - [HPE: What is an enterprise data center?](https://www.hpe.com/us/en/what-is/enterprise-data-center.html)
