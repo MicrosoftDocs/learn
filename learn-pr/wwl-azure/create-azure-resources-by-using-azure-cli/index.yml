@@ -5,7 +5,7 @@ metadata:
   description: "Create Azure resources by using Azure CLI"
   ms.date: 02/17/2025
   author: wwlpublish
-  ms.author: mirobb
+  ms.author: lumac
   ms.topic: module
   ms.service: azure
   ai-usage: ai-assisted
