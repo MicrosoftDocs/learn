@@ -11,6 +11,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/2-explore-high-availability-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/3-explore-disaster-recovery-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/4-exercise-implement-high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/5-knowledge-check.yml",
+       "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/2-build.yml",
       "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
       "redirect_document_id": false
