@@ -1,12 +1,10 @@
-**LlamaIndex** is a framework designed for building multi-reasoning systems that integrate with *your data*.
-
-Whether your data is accessible through APIs, or stored in SQL databases, you can use LlamaIndex to integrate your data with your AI system.
+**LlamaIndex** is a framework designed for building multi-stage reasoning systems that integrate with *your data*. LlamaIndex focuses on connecting language models to your existing documents, databases, and APIs. Use this framework when your multi-stage reasoning system needs to work with your own data sources.
 
 LlamaIndex simplifies the process of content augmentation by providing you with tools to index, query, and interact with your data.
 
 ## Explore the main components of LlamaIndex
 
-When you build a multi-reasoning system with LlamaIndex, you need to be familiar with the main components:
+When you build a multi-stage reasoning system with LlamaIndex, you work with several main components:
 
 :::image type="content" source="../media/llama-index-overview.png" alt-text="Diagram of the main components for LlamaIndex." lightbox="../media/llama-index-overview.png":::
 
@@ -19,7 +17,7 @@ Let's explore each of these components in more detail.
 
 ### Use LLMs and embedding models
 
-When you build a multi-reasoning system with LlamaIndex, you use **LLMs** to generate responses. You can use the built-in interface to use models from Azure OpenAI, Hugging Face, or LangChain for natural language tasks like text completion and chat.
+When you build a multi-stage reasoning system with LlamaIndex, you use **LLMs** to generate responses. You can use the built-in interface to use models from Azure OpenAI, Hugging Face, or LangChain for natural language tasks like text completion and chat.
 
 > [!Tip]
 > Learn how to integrate LlamaIndex with [Azure OpenAI models](https://docs.llamaindex.ai/en/stable/examples/llm/azure_openai/?azure-portal=true).
