@@ -12,12 +12,7 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-The modules in this learning path are part of a progression.
-
-To follow the progression from the beginning, be sure to first complete these learning paths:
-
-- [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
-- [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
+The modules in this learning path form a progression. To follow the progression of this series from the beginning, complete the [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true) learning path.
 
 We also recommend that you start at the beginning of this learning path, [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true).
 
