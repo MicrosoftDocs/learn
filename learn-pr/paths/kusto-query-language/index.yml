@@ -42,6 +42,5 @@ subjects:
 - data-visualization
 - big-data
 modules:
-- learn.azure.explore-fundamentals-kql
 trophy:
   uid: learn.kusto-query-language.trophy

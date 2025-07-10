@@ -31,7 +31,6 @@ products:
 subjects:
 - data-analytics
 modules:
-- learn.azure.explore-fundamentals-kql
 - learn.create-dashboards-azure-data-explorer
 trophy:
   uid: learn.data-analysis-data-explorer-kusto-query-language.trophy
