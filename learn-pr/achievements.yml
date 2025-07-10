@@ -135,6 +135,16 @@ achievements:
   title: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
   summary: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
   iconUrl: /training/achievements/iot/manage-monitor-devices-iot-hub-azure-monitor.svg
+- uid: learn.kusto-query-language.trophy.trophy
+  type: trophy
+  title: Data analysis with Kusto Query Language
+  summary: In this learning path, students learn how to analyze data in various environments using the Kusto Query Language.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.analyze-monitoring-data-with-kql.trophy
+  type: trophy
+  title: Analyze monitoring data with Kusto Query Language
+  summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
+  iconUrl: /training/achievements/generic-trophy.svg
 - uid: learn.wwl.explore-iot-hub-monitoring.badge
   type: badge
   title: Guided project - Explore Azure IoT Hub monitoring
