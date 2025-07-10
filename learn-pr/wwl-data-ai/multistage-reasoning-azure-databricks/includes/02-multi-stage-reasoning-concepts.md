@@ -40,7 +40,7 @@ When you want to build a multi-stage reasoning system, you need to:
 
 The tools you need depend on the tasks you need to perform. For example, you can retrieve customer data from a SQL database to provide necessary context, search a vector store to retrieve context based on semantic similarity, or use a fine-tuned LLM to generate output in a specific tone or format.
 
-By breaking up your problem and designing a multi-stage reasoning system,ou create AI solutions that handle more manageable tasks than single-stage approaches. As you design individual tasks and chain them together, you create a more flexible design than in large single-stage systems. Each task, or stage, can be optimized individually, and you can reuse tasks across systems to speed up development of new solutions.
+By breaking up your problem and designing a multi-stage reasoning system, you create AI solutions that handle more manageable tasks than single-stage approaches. As you design individual tasks and chain them together, you create a more flexible design than in large single-stage systems. Each task, or stage, can be optimized individually, and you can reuse tasks across systems to speed up development of new solutions.
 
 ## Choose a library
 
