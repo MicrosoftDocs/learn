@@ -15,6 +15,11 @@ achievements:
   title: Characterize an unfamiliar dataset with Azure Data Explorer
   summary: Learn how to characterize an unfamiliar dataset using Azure Data Explorer. 
   iconUrl: /training/achievements/azure-data-explore-web.svg
+- uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.badge
+  type: badge
+  title: Implement high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance
+  summary: In this module, you'll learn to describe high-availability and disaster-recovery options for Azure Arc-enabled SQL Managed Instance.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.azure.intro-to-arc-enabled-data-services.badge
   type: badge
   title: Introduction to Azure Arc-enabled data services
