@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-microsoft-azure-management-tasks
 metadata:
   title: Introduction to Microsoft Azure Management Tasks
   description: This learning path helps you explore basic management tasks for Azure resources. You'll have the opportunity to learn about managing virtual machines, virtual networks, and storage accounts, and then a guided project will give you hands-on experience actually managing Azure resources.
-  ms.date: 07/04/2025
+  ms.date: 07/10/2025
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: learning-path
@@ -30,5 +30,6 @@ subjects:
 - virtual-machine
 modules:
 - learn.wwl.describe-microsoft-azure-resources-management
+- learn.wwl.guided-project-update-maintain-resources
 trophy:
   uid: learn.wwl.introduction-microsoft-azure-management-tasks.trophy
