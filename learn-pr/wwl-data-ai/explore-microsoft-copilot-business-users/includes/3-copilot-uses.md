@@ -14,11 +14,11 @@ To see how Copilot can assist you at work, let's consider a hypothetical example
 
 ![Photograph of a business user.](../media/business-user.jpg)
 
-Marie is a project manager at a business consultancy company. She's spent the last few days on vacation, and is now back in the office and ready to get back to work.
+Marie is a project manager at a business consultancy company. She's been on vacation the last few days, and is now back in the office and ready to get back to work.
 
-1. She starts her day in **Microsoft 365 Copilot Chat**, and uses **Copilot** to summarize the email and Teams threads she missed while out of the office and highlight any explicit follow-up actions that have been assigned to her.
-1. One action she needs to follow up on is to support Alex, a sales executive who needs to prepare for a customer meeting where they'll present a proposal for a consultancy engagement. Alex has sent a lengthy email describing the customer requirements in detail, so Marie uses **Copilot in Outlook** to summarize the email as a bulleted list of key points.
-1. After reviewing the key customer requirements, Marie uses **Copilot in Microsoft Word** to generate a draft for a statement of work that describes the proposed solution based on the customer's requirements and examples of proposals from previous projects.
+1. She starts her day in **Microsoft 365 Copilot Chat**, and uses **Copilot** to summarize the email and Teams threads she missed while out of the office and highlight any explicit follow-up actions assigned to her.
+1. One action she needs to follow up on is to support Alex, a sales executive who needs to prepare for a customer meeting to present a proposal for a consultancy engagement. Alex sent a lengthy email describing the customer requirements in detail, so Marie uses **Copilot in Outlook** to summarize the email as a bulleted list of key points.
+1. After Marie reviews the key customer requirements, she uses **Copilot in Microsoft Word** to generate a draft for a statement of work that describes the proposed solution based on the customer's requirements and examples of proposals from previous projects.
 1. Next, Marie uses Excel to create a budget for the project, including payment milestones; and uses **Copilot in Excel** to generate visualizations of the cost data.
 1. With the work planned and costed, Marie uses **Copilot in Microsoft PowerPoint** to create a presentation based on the statement of work.
 1. Now Marie can use **Copilot in Outlook** to find Alex's availability and schedule a meeting to sync on the proposal.
