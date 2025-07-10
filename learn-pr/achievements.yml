@@ -10,6 +10,11 @@ achievements:
   title: Guided project - Analyze logs in Azure Monitor with KQL
   summary: Write log queries to find answers to operational and business questions. Use Kusto Query Language (KQL) to extract insights from logs in Azure Monitor.
   iconUrl: /training/achievements/analyze-logs-with-kql.svg
+- uid: learn.azure.gain-insights-data-kql.badge
+  type: badge
+  title: Gain insights from your data by using Kusto Query Language
+  summary: Write advanced queries in Kusto Query Language to help you gain insights from your data. 
+  iconUrl: /training/achievements/gain-insights-in-your-data-using-kusto-query-language.svg
 - uid: learn.azure.characterize-dataset-azure-data-explorer.badge
   type: badge
   title: Characterize an unfamiliar dataset with Azure Data Explorer
