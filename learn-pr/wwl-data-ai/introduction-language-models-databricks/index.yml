@@ -4,6 +4,7 @@ metadata:
   title: Get started with language models in Azure Databricks
   description: Get started with language models in Azure Databricks
   ms.date: 07/07/2025
+  ms.update-cycle: 180-days
   author: theresa-i
   ms.author: theresai
   ms.topic: module

@@ -4,6 +4,7 @@ metadata:
   title: Get started with Azure SQL Database for modern application development
   description: "Learn how Azure SQL Database works, the key concepts, and practical examples to help developers effectively utilize Azure SQL Database in their cloud-based applications."
   ms.date: 4/24/2025
+  ms.update-cycle: 180-days
   author: jupadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based

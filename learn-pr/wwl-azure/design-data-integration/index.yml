@@ -6,6 +6,7 @@ metadata:
   title: Design data integration
   description: "Azure Architects design and recommend data integration solutions."
   ms.date: 06/10/2025
+  ms.update-cycle: 180-days
   author: wwlpublish
   ms.author: jileary
   ms.topic: module

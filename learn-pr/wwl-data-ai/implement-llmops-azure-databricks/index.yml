@@ -4,6 +4,7 @@ metadata:
   title: Implement LLMOps in Azure Databricks
   description: Implement LLMOps in Azure Databricks
   ms.date: 03/20/2025
+  ms.update-cycle: 180-days
   author: wwlpublish
   ms.author: theresai
   ms.topic: module

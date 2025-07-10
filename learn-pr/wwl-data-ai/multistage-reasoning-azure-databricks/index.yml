@@ -4,6 +4,7 @@ metadata:
   title: Implement multi-stage reasoning in Azure Databricks
   description: Implement multi-stage reasoning in Azure Databricks
   ms.date: 07/08/2025
+  ms.update-cycle: 180-days
   author: theresa-i
   ms.author: theresai
   ms.topic: module
