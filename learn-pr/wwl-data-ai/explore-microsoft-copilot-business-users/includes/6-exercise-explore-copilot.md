@@ -5,7 +5,7 @@ Now it's time for you to explore Microsoft Copilot for yourself.
 
 #### Option 1: Explore Microsoft Copilot in Microsoft Edge
 
-If you don't have access to Microsoft 365 Copilot, launch this version to explore Microsoft Copilot in Microsoft Edge. 
+If you don't have access to Microsoft 365 Copilot, launch this version to explore Microsoft Copilot in Microsoft Edge.
 
 This exercise requires a free Microsoft account (for example an *outlook.com*, *live.com*, or *hotmail.com* account), and the Microsoft Edge web browser.
 
@@ -16,11 +16,11 @@ This exercise requires a free Microsoft account (for example an *outlook.com*, *
 > [!TIP] 
 > If you did not sign into Edge after creating your account, use the user account icon (&#128100;) on the Edge toolbar to sign in using a *personal* account.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2304792&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2249955&azure-portal=true)
 
 #### Option 2: Explore Microsoft 365 Copilot
 
-If you have access to Microsoft 365 Copilot, launch this version of the exercise and follow the instructions. 
+If you have access to Microsoft 365 Copilot, launch this version of the exercise and follow the instructions.
 
 > [!NOTE]
 > To complete this version, you need a Microsoft 365 account with a subscription for Microsoft 365 Copilot.
