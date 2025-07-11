@@ -5,7 +5,7 @@ With the foundation of the app built, this section will be on building out most 
 You'll copy/paste most the game logic. You can either copy/paste the whole Game class with the code below or you can copy/paste the new pieces:
 
 1. In the Solution Explorer, open the `Game.cs` file
-2. Update the Game class:
+1. Update the Game class:
 
 <details>
   <summary>Replace the whole Game class</summary>
@@ -161,7 +161,7 @@ public string MessageContent { get; private set; }
 
 ```
 
-5. At the end of` StartNewGame()` add:
+5. At the end of `StartNewGame()` add:
 
 ```csharp
 IncorrectGuesses = 0;
@@ -235,6 +235,7 @@ private string GetLosingMessage()
     return string.Format(_losingMessages[random.Next(_losingMessages.Length)], CurrentWord);
 }
 ```
+
 </details>
 
 The `Game` class encapsulates the core logic for the word-guessing game. It starts with a predefined list of words and sets of messages for winning and losing scenarios. The class tracks the game's state through properties like the current word, the player's progress, incorrect guesses, and whether the game has ended or been won. Key methods include `StartNewGame`, which initializes a new game by selecting a random word and resetting the state, and `PlayGame`, which processes each guessed letter and checks the game status. The game logic is straightforward: guess a letter, update the game state, and determine if the game is won or lost based on the player's progress or the number of incorrect guesses.
@@ -366,6 +367,7 @@ public partial class MainViewModel : ObservableObject
 }
 
 ```
+
 </details>
 
 or
@@ -462,6 +464,7 @@ private void SetLettersIsEnabled(bool status)
     }
 }
 ```
+
 </details>
 
 The `MainViewModel` class plays a central role in the MVVM architecture of the word-guessing game, acting as the intermediary between the game logic and the user interface. It inherits from `ObservableObject`,  enabling automatic notifications to the UI when properties change. The class contains several observable properties that reflect the game's state, including the word display, available letters, game statistics, and message information. Upon initialization, the ViewModel sets up a list of alphabet letters and starts a new game. Key methods include `StartNewGame`, which resets the game state, and `OnLetterGuessed`, which processes player guesses and determines if the game should continue or end. When the game ends, the `EndGame ` method is called to display a message and disable further guesses. The` ClosePopupClicked` method resets the game for a new round after the end game message is dismissed.
@@ -472,7 +475,6 @@ You'll copy/paste two sections of the View XAML. You can either copy/paste the w
 
 1. In the Solution Explorer, open the GamePage.xaml file
 2. Update the GamePage.xaml:
-
 
 <details>
   <summary>Replace the whole Grid </summary>
@@ -542,10 +544,9 @@ You'll copy/paste two sections of the View XAML. You can either copy/paste the w
 </Page>
 ```
 
-
 </details>
 
-Or 
+Or
 
 <details>
   <summary> Add each section:</summary>
@@ -573,6 +574,7 @@ Or
     </Popup>
 </Grid>
 ```
+
 </details>
 
 This XAML code defines the UI for the word-guessing game, with two key interactive elements: the Guesses Left Display and a message Popup. The Guesses Left Display uses a TextBlock that dynamically updates to show the remaining guesses. It achieves this through data binding, specifically `{x:Bind ViewModel.GuessesLeft, Mode=OneWay}`, which connects the TextBlock's Text property to the `GuessesLeft` property in the ViewModel. The OneWay mode ensures that changes in the ViewModel automatically update the UI. The message Popup, controlled by `IsOpen="{x:Bind ViewModel.PopUpToDisplay, Mode=OneWay}"`, appears based on the game's state to show end-game messages. Its content, including the message title and text, is also bound to ViewModel properties, allowing for dynamic updates. A close button in the Popup triggers a command in the ViewModel to reset the game. These elements demonstrate how the UI responds to the game's logic, providing real-time feedback and interaction for the player.

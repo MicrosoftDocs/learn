@@ -27,11 +27,11 @@ First, create the Game.cs file to contain the game logic:
 
 1. In the Solution Explorer, **Right click** the **Models** Folder > **Add** > **Class**
 
-:::image type="content" source="../media/4-select-random-word/create-a-class.png" alt-text="Screenshot of Visual Studio creating a class.":::
+    :::image type="content" source="../media/4-select-random-word/create-a-class.png" alt-text="Screenshot of Visual Studio creating a class.":::
 
-2. Name the folder **Game.cs**
-3. **Click Add**
-4. Replace `internal class Game{}` with:
+1. Name the folder **Game.cs**
+1. **Click Add**
+1. Replace `internal class Game{}` with:
 
 ```csharp
 public class Game
@@ -92,20 +92,20 @@ This code provides a basic structure for the word-guessing game. Below a breakdo
 
 ## ViewModel
 
-5. In the Solution Explorer, **Right Click** the **SnowPal project** > **Add** > **Class**
+1. In the Solution Explorer, **Right Click** the **SnowPal project** > **Add** > **Class**
 
-:::image type="content" source="../media/4-select-random-word/create-class-project.png" alt-text="Screenshot of Visual Studio creating a class for a project.":::
+    :::image type="content" source="../media/4-select-random-word/create-class-project.png" alt-text="Screenshot of Visual Studio creating a class for a project.":::
 
-6. Name the folder **MainViewModel.cs**
-7. **Click Add**
-8. Add the following imports:
+1. Name the folder **MainViewModel.cs**
+1. **Click Add**
+1. Add the following imports:
 
-```csharp
-using CommunityToolkit.Mvvm.ComponentModel;
-using SnowPal.Models;
-```
+    ```csharp
+    using CommunityToolkit.Mvvm.ComponentModel;
+    using SnowPal.Models;
+    ```
 
-9. Replace the `internal class MainViewModel {}` with:
+1. Replace the `internal class MainViewModel {}` with:
 
 ```csharp
 public partial class MainViewModel : ObservableObject
@@ -224,46 +224,46 @@ public partial class MainViewModel : INotifyPropertyChanged
 
 ## View
 
-10. In Solution Explorer, open **GamePage.xaml.cs**
-11. Add **ViewModel** property above the public **GamePage Class**:
+1. In Solution Explorer, open **GamePage.xaml.cs**
+1. Add **ViewModel** property above the public **GamePage Class**:
 
-```csharp
-namespace SnowPal.Pages
-{
-    public sealed partial class GamePage : Page
+    ```csharp
+    namespace SnowPal.Pages
     {
-        public MainViewModel ViewModel { get; } = new();
-
-        public GamePage()
+        public sealed partial class GamePage : Page
         {
-            this.InitializeComponent();
+            public MainViewModel ViewModel { get; } = new();
+    
+            public GamePage()
+            {
+                this.InitializeComponent();
+            }
         }
     }
-}
-```
+    ```
 
-This code ensures that the GamePage has access to the MainViewModel.
+    This code ensures that the GamePage has access to the MainViewModel.
 
-12. In Solution Explorer, **open GamePage.xaml**
-13. **Locate** `xmlns:local="using:SnowPal.Views"` in the Page’s element
-14. **Replace** it with:
+1. In Solution Explorer, **open GamePage.xaml**
+1. **Locate** `xmlns:local="using:SnowPal.Views"` in the Page’s element
+1. **Replace** it with:
 
-```xaml
-xmlns:local="using:SnowPal.Models"
-```
+    ```xaml
+    xmlns:local="using:SnowPal.Models"
+    ```
 
-15. **Locate** `Word Display Area` comment
-16. In the `TextBlock` below, replace the value of the `Text` property of `"_ _ _ _ _"` with:
+1. **Locate** `Word Display Area` comment
+1. In the `TextBlock` below, replace the value of the `Text` property of `"_ _ _ _ _"` with:
 
-```xaml
-"{x:Bind ViewModel.WordDisplay, Mode=OneWay}"
-```
+    ```xaml
+    "{x:Bind ViewModel.WordDisplay, Mode=OneWay}"
+    ```
 
-The `{x:Bind}` markup extension used here offers a performance advantage over traditional `{Binding}` because it's compiled at build time rather than being resolved at runtime. This compilation results in faster data binding operations. Additionally, this binding creates a reactive connection between the UI and the ViewModel. When the `WordDisplay` property in the ViewModel changes, the UI will automatically update to reflect the new value. The `Mode=OneWay` specifies that changes in the source (ViewModel.WordDisplay) updates the target (the UI element), but not vice versa.
+    The `{x:Bind}` markup extension used here offers a performance advantage over traditional `{Binding}` because it's compiled at build time rather than being resolved at runtime. This compilation results in faster data binding operations. Additionally, this binding creates a reactive connection between the UI and the ViewModel. When the `WordDisplay` property in the ViewModel changes, the UI will automatically update to reflect the new value. The `Mode=OneWay` specifies that changes in the source (ViewModel.WordDisplay) updates the target (the UI element), but not vice versa.
 
-Now you can Run app in Debug mode by doing the following steps:
+    Now you can Run app in Debug mode by doing the following steps:
 
-17. On the title bar, **Click** on **Debug** > **Start Debugging** OR on your keyboard press **F5** key
+1. On the title bar, **Click** on **Debug** > **Start Debugging** OR on your keyboard press **F5** key
 
 :::image type="content" source="../media/3-build-view/screenshot-app.png" alt-text="Screenshot of Visual Studio's Search.":::
 
@@ -271,21 +271,21 @@ Now you can Run app in Debug mode by doing the following steps:
 
 It's difficult to tell if the code worked since it looks similar to before. To see the randomly selected word during debugging:
 
-18. In Solution Explorer, open **Game.cs**
-19. **Add** to the imports:
+1. In Solution Explorer, open **Game.cs**
+1. **Add** to the imports:
 
-```csharp
-using System.Diagnostics;
-```
+    ```csharp
+    using System.Diagnostics;
+    ```
 
-20. At the bottom of the `StartNewGame` function add:
+1. At the bottom of the `StartNewGame` function add:
 
-```csharp
-Debug.WriteLine("Current Word: " + CurrentWord);
-```
+    ```csharp
+    Debug.WriteLine("Current Word: " + CurrentWord);
+    ```
 
-21. On the title bar, **Click** on **Debug** > **Start Debugging** OR on your keyboard press **F5** key
-22. **Locate the Output window** which typically appear at the bottom of the Visual Studio IDE, or do one of the following:
+1. On the title bar, **Click** on **Debug** > **Start Debugging** OR on your keyboard press **F5** key
+1. **Locate the Output window** which typically appear at the bottom of the Visual Studio IDE, or do one of the following:
     1. From the Menu: Go to **Debug** > **Windows** > **Output**.
     1. Keyboard Shortcut: Press `Ctrl + Alt + O` (that's a letter 'O', not zero).
     1. Search Visual Studio: Use the Visual Studio search bar `(Ctrl+Q)` and type **"Output"** and select the "Output" window from the results.

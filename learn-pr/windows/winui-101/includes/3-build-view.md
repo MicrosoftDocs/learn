@@ -46,126 +46,126 @@ The current app only contains `MainWindow.xaml` files. You can think of the Main
 
 :::image type="content" source="../media/3-build-view/code-search.png" alt-text="Screenshot of Visual Studio's Search.":::
 
-2. Delete `<StackPanel>` and `<Button>` elements
-3. Add `<Frame x:Name="MainFrame" />`
+1. Delete `<StackPanel>` and `<Button>` elements
+1. Add `<Frame x:Name="MainFrame" />`
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<Window
-    x:Class="SnowPal.MainWindow"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:SnowPal"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Title="SnowPal">
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <Window
+        x:Class="SnowPal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:SnowPal"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="SnowPal">
+    
+        <Frame x:Name="MainFrame" />
+    
+    </Window>
+    ```
 
-    <Frame x:Name="MainFrame" />
-
-</Window>
-```
-
-4. In the Solution Explorer, open `MainWindow.xaml.cs` by double clicking it
+1. In the Solution Explorer, open `MainWindow.xaml.cs` by double clicking it
     - If `MainWindow.xaml.cs` isn't visible, **click** the arrow to the right of `MainWindow.xaml` to show `MainWindow.xaml.cs`
-5. Add to the imports, located at the top of the file:
+1. Add to the imports, located at the top of the file:
 
-```csharp
-using SnowPal.Pages;
-```
+    ```csharp
+    using SnowPal.Pages;
+    ```
 
-> [!NOTE]
-> Visual Studio display errors because you're actively developing. If you see error, you can ignore until the end of the section or when you're asked to run the app.
+    > [!NOTE]
+    > Visual Studio display errors because you're actively developing. If you see error, you can ignore until the end of the section or when you're asked to run the app.
 
-6. Delete `myButton_Click` function.
-7. In the MainWindow constructor function, under the `InitializeComponent();`, add to the `MainFrame.Navigate(typeof(GamePage));`
+1. Delete `myButton_Click` function.
+1. In the MainWindow constructor function, under the `InitializeComponent();`, add to the `MainFrame.Navigate(typeof(GamePage));`
 
 Your code should look like the following code:
 
-```csharp
-using SnowPal.Pages;
-
-namespace SnowPal
-{
-    public sealed partial class MainWindow : Window
+    ```csharp
+    using SnowPal.Pages;
+    
+    namespace SnowPal
     {
-        public MainWindow()
+        public sealed partial class MainWindow : Window
         {
-            this.InitializeComponent();
-            MainFrame.Navigate(typeof(GamePage));
+            public MainWindow()
+            {
+                this.InitializeComponent();
+                MainFrame.Navigate(typeof(GamePage));
+            }
         }
     }
-}
-```
+    ```
 
-Now the MainWindow constructor is responsible for navigating the Frame control named MainFrame to display the GamePage when the application starts.
+    Now the MainWindow constructor is responsible for navigating the Frame control named MainFrame to display the GamePage when the application starts.
 
-Next to create the GamePage:
+    Next to create the GamePage:
 
-8. In the Solution Explorer, **Right Click** your new **Pages Folder** > **Add** > **New Item....**  
+1. In the Solution Explorer, **Right Click** your new **Pages Folder** > **Add** > **New Item....**  
 
-:::image type="content" source="../media/3-build-view/add-new-page.png" alt-text="Screenshot of Visual Studios adding a page.":::
+    :::image type="content" source="../media/3-build-view/add-new-page.png" alt-text="Screenshot of Visual Studios adding a page.":::
 
-9. In the **Add New Item** dialog, select **WinUI** in the template list on the left-side of the window.
-10. Select the **Blank Page (WinUI 3)** template.
-11. Name the file **GamePage.xaml**
+1. In the **Add New Item** dialog, select **WinUI** in the template list on the left-side of the window.
+1. Select the **Blank Page (WinUI 3)** template.
+1. Name the file **GamePage.xaml**
 
-:::image type="content" source="../media/3-build-view/save-gamepage.png" alt-text="Screenshot of Visual Studios saving the game page.":::
+    :::image type="content" source="../media/3-build-view/save-gamepage.png" alt-text="Screenshot of Visual Studios saving the game page.":::
 
-12. **Click Add**
+1. **Click Add**
 
 These steps create both `GamePage.xaml` & `GamePage.xaml.cs`.
 
-13. If `GamePage.xaml` doesn’t auto open, In the Solution Explorer, open GamePage.xaml by double clicking it
-14. Replace the `Grid` elements with the following Grid:
+1. If `GamePage.xaml` doesn’t auto open, In the Solution Explorer, open GamePage.xaml by double clicking it
+1. Replace the `Grid` elements with the following Grid:
 
-```xml
-<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="50*"/>
-        </Grid.ColumnDefinitions>
+    ```xml
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+            </Grid.ColumnDefinitions>
+        
+    <!-- Title -->
+    <TextBlock Text="SnowPal" Grid.ColumnSpan="2" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        
+    <!-- Drawing -->
+    <Image x:Name="Image" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,10,10,10" Source="/Assets/Wide310x150Logo.png"/>
     
-<!-- Title -->
-<TextBlock Text="SnowPal" Grid.ColumnSpan="2" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" />
     
-<!-- Drawing -->
-<Image x:Name="Image" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,10,10,10" Source="/Assets/Wide310x150Logo.png"/>
+    <!-- Guesses Left Display -->
+    <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">
+        <TextBlock Text="Guesses Left: " FontSize="20"/>
+        <TextBlock Text="6" FontSize="20"/>
+    </StackPanel>
+    
+    <!-- Alphabet Buttons -->
+    <Grid x:Name="AlphabetButtonsGridView" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,50,10,10" >
+        <Button Content="A" IsEnabled="True" FontSize="20"/>
+    </Grid>
+    
+    <!-- Word Display Area -->
+    <TextBlock x:Name="Word" Grid.Row="2" Grid.ColumnSpan="2" Text="_ _ _ _ _ " FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10"/>
+    
+    <!-- Popup for message -->
+    </Grid>
+    ```
 
+    Now you can run the app in Debug mode by doing the following steps:
 
-<!-- Guesses Left Display -->
-<StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">
-    <TextBlock Text="Guesses Left: " FontSize="20"/>
-    <TextBlock Text="6" FontSize="20"/>
-</StackPanel>
+1. On the title bar, **Click** on **Debug**, **Click** on **Start Debugging** OR on your keyboard press **F5** key
 
-<!-- Alphabet Buttons -->
-<Grid x:Name="AlphabetButtonsGridView" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,50,10,10" >
-    <Button Content="A" IsEnabled="True" FontSize="20"/>
-</Grid>
+    You should see something like this:
 
-<!-- Word Display Area -->
-<TextBlock x:Name="Word" Grid.Row="2" Grid.ColumnSpan="2" Text="_ _ _ _ _ " FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10"/>
+    :::image type="content" source="../media/3-build-view/screenshot-app.png" alt-text="Screenshot of Game.":::
 
-<!-- Popup for message -->
-</Grid>
-```
-
-Now you can run the app in Debug mode by doing the following steps:
-
-15. On the title bar, **Click** on **Debug**, **Click** on **Start Debugging** OR on your keyboard press **F5** key
-
-You should see something like this:
-
-:::image type="content" source="../media/3-build-view/screenshot-app.png" alt-text="Screenshot of Game.":::
-
-16. Close the app
+1. Close the app
 
 Great! Let’s walk through the XAML code. Remember that XAML elements are often nested within one another to establish hierarchical relationships.
 
