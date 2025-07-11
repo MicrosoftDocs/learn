@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-and-copilot-agents.types-of-agents
+title: Types of Copilot agents
+metadata:
+  title: Types of Copilot Agents
+  description: This content is part of the "Microsoft 365 Copilot and Copilot agents" module.
+  ms.date: 06/26/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-types-of-agents.md)]
