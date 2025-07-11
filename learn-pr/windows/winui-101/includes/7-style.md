@@ -2,8 +2,8 @@ WinUI applications benefit from using styles and resource dictionaries to create
 
 Styles define the visual appearance of controls. You can apply styles in two ways:
 
-1. Inline: Directly on a specific control
-2. As a reusable resource: Stored in a resource dictionary
+- Inline: Directly on a specific control
+- As a reusable resource: Stored in a resource dictionary
 
 For example, here's a TextBlock with inline styling:
 
@@ -67,19 +67,19 @@ The example code above can look like this with Resource dictionary:
 
 Create the Resource Dictionary file called Styles:
 
-3. In the Solution Explorer **Right click** on the **project** > **Add** > **New Item....**  
+1. In the Solution Explorer **Right click** on the **project** > **Add** > **New Item....**  
 
-:::image type="content" source="../media/7-style/add-new-item.png" alt-text="Screenshot of Visual Studio adding a new item.":::
+    :::image type="content" source="../media/7-style/add-new-item.png" alt-text="Screenshot of Visual Studio adding a new item.":::
 
-4. In the **Add New Item** dialog, select **WinUI** in the template list on the left-side of the window.
+1. In the **Add New Item** dialog, select **WinUI** in the template list on the left-side of the window.
 
-5. Select the **Resource Dictionary (WinUI 3)**
+1. Select the **Resource Dictionary (WinUI 3)**
 
-:::image type="content" source="../media/7-style/add-style-file.png" alt-text="Screenshot of Visual Studio adding a Resource Dictionary.":::
+    :::image type="content" source="../media/7-style/add-style-file.png" alt-text="Screenshot of Visual Studio adding a Resource Dictionary.":::
 
-6. Name the file **Styles.xaml**
-7. **Click Add**
-8. **Replace** the code with:
+1. Name the file **Styles.xaml**
+1. **Click Add**
+1. **Replace** the code with:
 
 ```xaml
 <ResourceDictionary
@@ -222,19 +222,19 @@ For situations where you want to use similar styles but with a slight variation,
 
 Add `Styles` Resource Dictionary to `App.xaml`:
 
-9. In the Solution Explorer open `App.xaml`
-10. Under ` <!-- Other merged dictionaries here -->` add:
+1. In the Solution Explorer open `App.xaml`
+1. Under ` <!-- Other merged dictionaries here -->` add:
 
-```xaml
-<ResourceDictionary Source="Styles.xaml"/>
-```
+    ```xaml
+    <ResourceDictionary Source="Styles.xaml"/>
+    ```
 
-This makes the resources in styles.xaml available throughout your entire application.
+    This makes the resources in styles.xaml available throughout your entire application.
 
-Use the Styles in Your UI:
+    Use the Styles in Your UI:
 
-11. In the Solution Explorer open `GamePage.xaml`
-12. Replace the grid with the following code:
+1. In the Solution Explorer open `GamePage.xaml`
+1. Replace the grid with the following code:
 
 ```xaml
 
@@ -306,7 +306,7 @@ The code applies various predefined styles to different UI elements, such as Tex
 
 Now you can Run app in Debug mode by doing the following steps:
 
-13. On the title bar, **click** on **Debug**, **click** on **Start Debugging** OR on your keyboard press **F5** key
+- On the title bar, **click** on **Debug**, **click** on **Start Debugging** OR on your keyboard press **F5** key
 
 You should see something like this:
 

@@ -18,14 +18,14 @@ You can generate buttons dynamically. Ideally, the letters of the game know if t
 This section, you build the custom datatype, `GameLetter` that has two properties.
 
 1. In the Solution Explorer, **Right click** your **Model folder** > **Add** > **Class**
-2. Name the file **GameLetter.cs**
-3. Add to the imports:
+1. Name the file **GameLetter.cs**
+1. Add to the imports:
 
-```csharp
-using CommunityToolkit.Mvvm.ComponentModel;
-```
+    ```csharp
+    using CommunityToolkit.Mvvm.ComponentModel;
+    ```
 
-4. Replace the `internal class GameLetter{}` with:
+1. Replace the `internal class GameLetter{}` with:
 
 ```csharp
 public partial class GameLetter : ObservableObject
@@ -49,38 +49,36 @@ The `GameLetter` class is designed to represent a single letter in the game and 
 
 The ViewModel creates the array of GameLetter objects from A to Z. It also handles when the user selects a letter as a guess; at that point it updates the View.
 
-5. In the Solution Explorer, open **MainViewModel.cs**
-6. Add **Letter** Property under `WordDisplay`:
+1. In the Solution Explorer, open **MainViewModel.cs**
+1. Add **Letter** Property under `WordDisplay`:
 
-```csharp
-[ObservableProperty]
- public partial List<GameLetter> Letters { get; set; }
-```
+    ```csharp
+    [ObservableProperty]
+     public partial List<GameLetter> Letters { get; set; }
+    ```
 
-7. Add the creation of the letters to the top of the `MainViewModel`‘s Constructor
+1. Add the creation of the letters to the top of the `MainViewModel`‘s Constructor
 
-```csharp
-Letters = new List<GameLetter>();
-for (char letter = 'A'; letter <= 'Z'; letter++)
-{
-    Letters.Add(new GameLetter(letter));
-}
+    ```csharp
+    Letters = new List<GameLetter>();
+    for (char letter = 'A'; letter <= 'Z'; letter++)
+    {
+        Letters.Add(new GameLetter(letter));
+    }
+    ```
 
-```
+1. Add a **Command Handler Function** under `// Command executed when a letter is guessed`:
 
-8. Add a **Command Handler Function** under `// Command executed when a letter is guessed`:
+    ```csharp
+    [RelayCommand]
+    public void OnLetterGuessed(char LetterValue)
+    {
+        // play the game with the guessed letter
+        UpdateProperties(LetterValue);    
+    }
+    ```
 
-```csharp
-[RelayCommand]
-public void OnLetterGuessed(char LetterValue)
-{
-    // play the game with the guessed letter
-    UpdateProperties(LetterValue);
-
-}
-```
-
-9. Replace the `UpdateProperties` to:
+1. Replace the `UpdateProperties` to:
 
 ```csharp
 private void UpdateProperties(char LetterValue = '\0')
@@ -181,24 +179,24 @@ The new UpdateProperties function now handles the case where it receives a Lette
 
 To create buttons dynamically, you use a [Control](/windows/apps/design/controls/). In Windows app development, controls are the UI elements that display content and enable user interaction. There are over 45 controls, ranging from simple elements like buttons and text boxes to more advanced data presentation controls like the `GridView` and `ListView`. These controls adhere to the Fluent Design System principles, ensuring your app looks modern, scales well across different devices and screen sizes, and provides a consistent user experience.
 
-10. In the Solution Explorer, open the **GamePage.xaml** file
-11. Locate the **Page** element
-12. At the end of **Page** element, add a new `x:Name` property:
+1. In the Solution Explorer, open the **GamePage.xaml** file
+1. Locate the **Page** element
+1. At the end of **Page** element, add a new `x:Name` property:
 
-```xaml
-x:Name="ThisPage"  
-```
+    ```xaml
+    x:Name="ThisPage"  
+    ```
 
-13. **Delete** the Alphabet Buttons’ Grid
+1. **Delete** the Alphabet Buttons’ Grid
 
-```xaml
-<!-- Alphabet Buttons -->
-<Grid x:Name=" AlphabetButtonsGridView" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,50,10,10">
-    <Button Content="A" IsEnabled="True" FontSize="20"/>
-</Grid>
-```
+    ```xaml
+    <!-- Alphabet Buttons -->
+    <Grid x:Name=" AlphabetButtonsGridView" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,50,10,10">
+        <Button Content="A" IsEnabled="True" FontSize="20"/>
+    </Grid>
+    ```
 
-14. **Replace** it with Grid View code:
+1. **Replace** it with Grid View code:
 
 ```xaml
 <GridView x:Name="AlphabetButtonsGridView" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,50,10,10" 
@@ -234,15 +232,12 @@ This `GridView` control creates a grid of buttons that are created with dynamic 
 
 The above code uses both `x:bind` and `binding.` The code uses Binding for the Command property because it needs to reference the `ViewModel.LetterGuessedCommand` through the parent page (`ThisPage`) using `ElementName`. `x:Bind` doesn't support `ElementName`, so `Binding` is required to access the command outside the DataTemplate's default DataContext. Inside the DataTemplate, `x:Bind` is used for properties like `Character` and `IsAvailable` because they belong to the templated object (`GameLetter`) and can be resolved directly, offering better performance and type safety.
 
-<details>
-  <summary>More on why `ThisPage` is needed</summary>
-  <p> This binding uses the `ElementName` property to reference the Page element named `ThisPage`. This allows access to the Page's ViewModel property, which contains the LetterGuessedCommand. By referencing the Page element directly, the Button can bind to a command defined in the Page's ViewModel, even though it is inside a DataTemplate with its data context set to a GameLetter object. This approach lets the Button execute a command from the main ViewModel, rather than being restricted to properties or commands within individual GameLetter objects.
-  </p>
-</details>
+> [!NOTE]
+> **why `ThisPage` is needed**  This binding uses the `ElementName` property to reference the Page element named `ThisPage`. This allows access to the Page's ViewModel property, which contains the LetterGuessedCommand. By referencing the Page element directly, the Button can bind to a command defined in the Page's ViewModel, even though it is inside a DataTemplate with its data context set to a GameLetter object. This approach lets the Button execute a command from the main ViewModel, rather than being restricted to properties or commands within individual GameLetter objects.
 
 Now you can Run app in Debug mode by doing the following step:
 
-15. On the title bar, **click** on **Debug**, click on **Start Debugging** OR on your keyboard press **F5** key
+- On the title bar, **click** on **Debug**, click on **Start Debugging** OR on your keyboard press **F5** key
 
 The app should be playable with alphabet buttons.
 
