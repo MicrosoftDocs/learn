@@ -6225,3 +6225,8 @@ achievements:
   title: Fundamentals of language translation
   summary: Automated translation capabilities in an AI solution enable closer collaboration by removing language barriers.
   iconUrl: /training/achievements/translate-text-with-translation-service.svg
+- uid: learn.azure-storage-dotnet-aspire-app.badge
+  type: badge
+  title: Use Azure Storage with .NET Aspire
+  summary: Learn how to access and use Azure Storage accounts from .NET Aspire solutions for file storage, data storage, and message queuing.
+  iconUrl: /learn/achievements/generic-badge.svg
