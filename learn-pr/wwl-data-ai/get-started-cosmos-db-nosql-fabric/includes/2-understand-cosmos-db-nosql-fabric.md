@@ -26,6 +26,6 @@ Throughput is handled automatically and no other configuration is needed. Fabric
 > Multi-region writes and reads aren't supported in public preview.
 
 > [!NOTE]
-> In public preview, we don’t yet support vector search for AI scenarios, reverse-ETL with Spark connector or real-time intelligence (RTI).
+> In public preview, we don’t yet support reverse-ETL with Spark connector or real-time intelligence (RTI).
 
 Cosmos DB NoSQL in Fabric delivers the no-knob, best-performance available, 5 seconds to start, 5 minutes to WOW Fabric experience.

@@ -40,7 +40,7 @@ units:
 - learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.create-explore-cosmos-db-nosql-fabric-database
 - learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.build-operational-workloads-cosmos-db-nosql-fabric
 - learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.secure-monitor-cosmos-db-nosql-fabric
-- learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.integrate-cosmos-db-nosql-fabric-services
+- learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.cosmos-db-nosql-fabric-analytical-endpoint
 - learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.exercise-create-populate-query-cosmos-db-nosql-fabric-database
 - learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.knowledge-check
 - learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.summary

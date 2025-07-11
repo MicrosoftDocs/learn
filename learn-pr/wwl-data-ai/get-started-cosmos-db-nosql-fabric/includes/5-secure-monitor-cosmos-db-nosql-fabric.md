@@ -22,12 +22,6 @@ Cosmos DB NoSQL in Fabric automatically encrypts data at rest. For extra control
 
 Databases are also configured with zone-redundancy by default. This setup includes built-in high availability and disaster recovery (HADR), with data replicated across Fabric paired regions through OneLake.
 
-## Backup and restore
-
-Cosmos DB NoSQL in Fabric is backed up continuously. You can restore the database to a specific point in time, with backups retained for up to 30 days.
-
 ## Monitoring and metrics
 
 The Cosmos DB NoSQL database experience in Fabric includes built-in metrics. Users can view operation counts by type, latency trends, and other integrated metrics directly in the database user experience (UX).
-
-To track usage costs, the Capacity metrics app provides detailed insights into Cosmos DB consumption within Fabric.
