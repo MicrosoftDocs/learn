@@ -8,6 +8,7 @@ metadata:
   author: joshuawaddell
   ms.author: jowaddel
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 1
 content: | 
 quiz:

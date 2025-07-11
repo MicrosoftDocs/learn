@@ -10,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: debryen-11292021
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]

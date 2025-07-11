@@ -3,7 +3,7 @@ uid: learn.ha-application-storage-with-grs.6-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 05/17/2023
+  ms.date: 06/02/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
@@ -11,4 +11,4 @@ title: Summary
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
-
+

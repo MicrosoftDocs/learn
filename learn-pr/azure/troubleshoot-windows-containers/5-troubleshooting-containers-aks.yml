@@ -8,6 +8,7 @@ metadata:
   author: vrapolinario
   ms.author: viniap
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 durationInMinutes: 10
 content: |
   [!include[](includes/5-troubleshooting-containers-aks.md)]

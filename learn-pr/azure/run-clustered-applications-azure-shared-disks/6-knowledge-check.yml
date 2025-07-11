@@ -8,6 +8,7 @@ metadata:
   author: roygara
   ms.author: rogarana
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

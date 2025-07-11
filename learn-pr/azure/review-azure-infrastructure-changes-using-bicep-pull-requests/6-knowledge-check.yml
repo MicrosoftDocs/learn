@@ -12,6 +12,7 @@ metadata:
   ms.custom:
     - devx-track-bicep
   zone_pivot_groups: repository-hosting-platform
+  module_assessment: true
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]

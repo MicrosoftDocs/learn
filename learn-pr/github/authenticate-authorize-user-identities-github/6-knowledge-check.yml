@@ -8,6 +8,7 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   questions:

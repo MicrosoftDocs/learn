@@ -11,8 +11,6 @@ metadata:
   ms.collection:
     - wwl-ai-copilot
 azureSandbox: false
-labModal: true
-labId: 152402
 durationInMinutes: 35
 content: |
   [!include[](includes/5-exercise-extract-custom-entities.md)]

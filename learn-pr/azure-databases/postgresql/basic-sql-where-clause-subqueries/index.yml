@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn.wwl-azure.basic-sql-where-clause-subqueries
+uid: learn.azure-databases.postgresql.basic-sql-where-clause-subqueries
 metadata:
   title: "Filtering data: The WHERE clause and subqueries"
   description: "Learn how to filter data in PostgreSQL using the WHERE clause, logical operators, pattern matching, and subqueries for advanced query control."
-  ms.date: 05/14/2025
+  ms.date: 05/23/2025
   author: mpopovic
   ms.author: mpopovic
   ms.topic: module-standard-task-based
@@ -163,10 +163,10 @@ products:
 subjects:
   - databases
 units:
-- learn.wwl-azure.basic-sql-where-clause-subqueries.introduction
-- learn.wwl-azure.basic-sql-where-clause-subqueries.sample-database-overview
-- learn.wwl-azure.basic-sql-where-clause-subqueries.where-clause
-- learn.wwl-azure.basic-sql-where-clause-subqueries.subqueries
-- learn.wwl-azure.basic-sql-where-clause-subqueries.summary
+- learn.azure-databases.postgresql.basic-sql-where-clause-subqueries.introduction
+- learn.azure-databases.postgresql.basic-sql-where-clause-subqueries.sample-database-overview
+- learn.azure-databases.postgresql.basic-sql-where-clause-subqueries.where-clause
+- learn.azure-databases.postgresql.basic-sql-where-clause-subqueries.subqueries
+- learn.azure-databases.postgresql.basic-sql-where-clause-subqueries.summary
 badge:
-  uid: learn.wwl-azure.basic-sql-where-clause-subqueries.badge
+  uid: learn.azure-databases.postgresql.basic-sql-where-clause-subqueries.badge

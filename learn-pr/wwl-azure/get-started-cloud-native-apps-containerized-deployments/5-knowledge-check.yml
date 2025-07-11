@@ -10,6 +10,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 quiz:
   title: "Check your knowledge"

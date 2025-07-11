@@ -8,6 +8,7 @@ metadata:
   author: ju-shim
   ms.author: jushiman
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 quiz:
   title: Check your knowledge

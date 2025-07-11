@@ -11,6 +11,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

@@ -5,7 +5,7 @@ title: Exercise - Configure multiple nodes and enable scale-to-zero on an AKS cl
 metadata:
   title: Exercise - Configure multiple nodes and enable scale-to-zero on an AKS cluster
   description: Here you'll configure multiple node pools on an AKS cluster and scale a user node pool's node count to zero.
-  ms.date: 12/20/2023
+  ms.date: 06/02/2025
   author: Nickomang
   ms.author: nickoman
   ms.topic: unit
@@ -14,4 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-node-pools.md)]
-
+

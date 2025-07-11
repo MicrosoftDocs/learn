@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-where-clause-subqueries.subqueries
+uid: learn.azure-databases.postgresql.basic-sql-where-clause-subqueries.subqueries
 title: Subqueries
 metadata:
   title: Subqueries
   description: "This unit teaches how to use subqueries in PostgreSQL to filter, calculate, and manipulate data within SELECT, UPDATE, and WHERE clauses using nested queries."
-  ms.date: 05/14/2025
+  ms.date: 05/23/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit

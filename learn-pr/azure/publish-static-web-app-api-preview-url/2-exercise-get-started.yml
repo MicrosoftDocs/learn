@@ -2,8 +2,8 @@
 uid: learn.azure.publish-static-web-app-api-preview-url.2-exercise-get-started
 metadata:
   title: Exercise - Get started
-  description: Get started by running and deploying a static web app
-  ms.date: 12/12/2023
+  description: Get started by running and deploying a static web app.
+  ms.date: 06/27/2025
   author: v1212
   ms.author: wujia
   ms.topic: unit
@@ -14,4 +14,4 @@ title: Exercise - Get started
 durationInMinutes: 7
 content: |
   [!include[](includes/2-exercise-get-started.md)]
-
+

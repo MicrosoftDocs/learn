@@ -3,12 +3,12 @@ uid: learn.startups.fundraising.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Gain an overview of how to build a high-performing startup team. See topics like attributes of successful teams and how to use mentors.
-  ms.date: 06/17/2024
-  author: vhawk85
-  ms.author: vahughes
+  description: Gain an overview of how to build a high-performing startup team. See subjects like the attributes of successful teams and how to use mentors.
+  ms.date: 06/12/2025
+  author: vaquresh
+  ms.author: vaquresh
   ms.topic: unit
   ms.collection: learn-startups
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

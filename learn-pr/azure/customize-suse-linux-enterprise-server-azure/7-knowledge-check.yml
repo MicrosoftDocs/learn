@@ -10,6 +10,7 @@ metadata:
   ms.author: yenchiho
   ms.topic: unit
   ms.custom: linux-related-content
+  module_assessment: true
 durationInMinutes: 2
 content: |
 quiz:

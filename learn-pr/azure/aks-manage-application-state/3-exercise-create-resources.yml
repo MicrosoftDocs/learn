@@ -8,9 +8,10 @@ metadata:
   ms.author: nickoman
   ms.topic: unit
   ms.custom:
-    - build-2023
-    - build-2023-dataai
+    - sfi-ropc-nochange
     - devx-track-azurecli
+    - build-2023-dataai
+    - build-2023
 title: Host a new database using Azure Cosmos DB
 sandbox: false
 # sandbox: true

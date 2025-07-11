@@ -10,6 +10,7 @@ metadata:
   ms.custom:
   - e2e-hybrid
   - event-tier1-build-2022
+  module_assessment: true
 title: Module assessment
 durationInMinutes: 2
 content: |

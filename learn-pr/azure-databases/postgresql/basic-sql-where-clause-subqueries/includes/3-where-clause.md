@@ -5,7 +5,7 @@ It's a powerful filtering tool with a wide range of options, allowing users to c
 ## Filtering based on a single condition
 
 ```sql
-SELECT produt_name, price, unit
+SELECT product_name, price, unit
 FROM sales.products
 WHERE price > 50;
 ```

@@ -5,12 +5,12 @@ metadata:
   title: Module assessment
   description: Knowledge check
   ms.date: 11/21/2023
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: yoterada
+  author: yoshioterada
+  ms.author: yoterada
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
@@ -49,4 +49,4 @@ quiz:
       isCorrect: false
       explanation: "No. The URL where the identity provider will send the tokens to is the **Redirect URI**."
       
-
+

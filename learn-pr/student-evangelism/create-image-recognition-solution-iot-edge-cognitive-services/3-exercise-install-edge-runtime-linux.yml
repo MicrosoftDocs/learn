@@ -8,7 +8,10 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: unit
-  ms.custom: team=nextgen, linux-related-content
+  ms.custom:
+    - sfi-ropc-nochange
+    - linux-related-content
+    - team=nextgen
 durationInMinutes: 15 # dummy number at present
 content: |
   [!include[](includes/3-exercise-install-edge-runtime-linux.md)]

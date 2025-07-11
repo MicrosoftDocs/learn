@@ -13,6 +13,7 @@ metadata:
     - devx-track-extended-java
     - devx-track-terraform
   ms.contributors: ropreddy-04092021
+  module_assessment: true
 durationInMinutes: 2
 quiz:
   questions:
