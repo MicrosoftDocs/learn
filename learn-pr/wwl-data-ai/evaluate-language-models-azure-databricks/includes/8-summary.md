@@ -1,3 +1,3 @@
 Large Language Models need specialized evaluation methods because they generate text and handle complex language tasks. LLMs require assessment across multiple dimensions including content quality, safety, and task performance.
 
-This module taught you the fundamentals of LLM evaluation in Azure Databricks. You learned about the unique challenges of evaluating text-generating models and how LLM evaluation fits within broader AI system assessment. You explored key evaluation metrics for measuring model performance and discovered how to use one LLM to evaluate another when human review isn't feasible.
+In this module, you learned about the fundamentals of LLM evaluation. You learned about the unique challenges of evaluating text-generating models and how LLM evaluation fits within broader AI system assessment. You also explored key evaluation metrics for measuring model performance and discovered how to use one LLM to evaluate another when human review isn't feasible.

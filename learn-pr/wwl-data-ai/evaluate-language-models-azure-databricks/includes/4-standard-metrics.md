@@ -1,8 +1,8 @@
 When you evaluate an LLM, you need to measure how well it performs specific tasks. For text generation tasks like translation and summarization, you use metrics that compare generated text to reference examples. For classification tasks, you measure how often the model makes correct predictions. You also need to assess safety and quality through toxicity metrics and human evaluation.
 
-## Use BLEU and ROUGE to evaluate text generation
+## Evaluate text generation
 
-When you need to evaluate text generation tasks like translation or summarization, you compare the generated text to reference examples. Reference text is the ideal or expected output for a given input - for example, a human-written translation or a professionally written summary. Two common metrics for this comparison are BLEU and ROUGE.
+When you need to evaluate text generation tasks like translation or summarization, you compare the generated text to reference examples. Reference text is the ideal or expected output for a given input like a human-written translation or a professionally written summary. Two common metrics for this comparison are BLEU and ROUGE.
 
 **BLEU (Bilingual Evaluation Understudy)** measures how much of your generated text matches the reference text. It gives you a score between 0 and 1, where higher scores mean better matches.
 
@@ -10,25 +10,23 @@ When you need to evaluate text generation tasks like translation or summarizatio
 
 ## Measure accuracy for classification tasks
 
-Classification tasks involve choosing one answer from a set of predefined categories - for example, determining if a review is positive or negative, or selecting the correct answer from multiple choices.
+Classification tasks involve choosing one answer from a set of predefined categories like determining if a review is positive or negative, or selecting the correct answer from multiple choices.
 
 **Accuracy** measures how often a model makes correct predictions. For classification tasks like sentiment analysis or multiple choice questions, accuracy is calculated as the number of correct answers divided by total questions.
 
 Accuracy works well when there's one clearly correct answer, but it's not suitable for open-ended text generation where multiple responses could be valid.
 
-## Evaluate text fluency with perplexity
+## Evaluate text predictability with perplexity
 
-Text fluency refers to how natural and readable the generated text sounds. For example, does it flow well and sound like something a person would write?
+**Perplexity** measures how predictable your generated text is to the language model. It evaluates how well the model predicts what words should come next in a sentence. Lower perplexity scores indicate the text follows expected language patterns.
 
-**Perplexity** measures how well a language model predicts what words come next in a sentence. Lower perplexity scores mean the model is better at predicting the right words, which typically leads to more natural-sounding text.
-
-Perplexity measures the model's uncertainty - lower perplexity generally means better, more fluent text. It's helpful when comparing different models to see which one produces more natural language.
+You use perplexity to compare models and see which one produces more predictable text patterns. 
 
 ## Assess content safety with toxicity metrics
 
 When you deploy an LLM to serve real users, you need to ensure it doesn't generate harmful, offensive, or biased content. This is crucial because LLMs trained on large internet datasets can learn and reproduce toxic language or biases present in the training data.
 
-**Toxicity** metrics evaluate whether your model generates problematic content. These metrics help identify potential risks before deployment, allowing you to implement safeguards or additional training to reduce harmful outputs.
+**Toxicity** metrics evaluate whether your model generates this type of content. These metrics help identify potential risks before deployment, allowing you to implement safeguards or additional training to reduce harmful outputs.
 
 Tools like the [Perspective API](https://perspectiveapi.com/?azure-portal=true) can assess text toxicity, providing scores that indicate the likelihood of content being perceived as harmful or offensive.
 

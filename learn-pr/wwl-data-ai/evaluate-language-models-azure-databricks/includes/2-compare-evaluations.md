@@ -28,23 +28,14 @@ This black box nature means you can't easily trace how the model arrived at its 
 
 This interpretability gap affects building user trust and debugging unexpected outputs, making it a consideration in your evaluation strategy.
 
-## Avoid overfitting and generalization
+## Assess generalization across contexts
 
-LLM evaluation must assess how well models generalize to new, unseen inputs while maintaining consistent performance across different contexts.
+Generalization refers to a model's ability to perform well on data or tasks it hasn't seen during training, rather than just memorizing specific examples. For LLMs, good generalization means the model can handle new topics, writing styles, and use cases beyond what it was specifically trained on.
 
-Generalization challenges specific to LLMs present themselves in several ways. **Domain adaptation** becomes critical when you need your model to perform well across different subject areas - a model trained primarily on technical documentation might struggle with creative writing tasks. **Instruction following** tests whether your LLM consistently follows different types of prompts and maintains performance across various task formats.
+Consider a customer service LLM trained primarily on technical support conversations. Good generalization means it can adapt when customers ask about billing, use casual language, or need help with different products. Poor generalization would show up as the model giving overly technical responses to simple questions or failing to understand requests outside its training domain.
 
-**Context length handling** affects how well the model maintains quality when working with varying input lengths, from short prompts to lengthy documents. Finally, **robustness** measures the model's stability when facing adversarial or unexpected inputs that might try to confuse or mislead it. These challenges require careful evaluation strategies that go beyond simple accuracy measurements.
+Evaluating generalization helps ensure your LLM remains useful across the varied scenarios it encounters in real applications.
 
-## Implement evaluation dynamically
+## Implement evaluation with MLflow
 
-LLM evaluation requires continuous monitoring and adaptation, especially for deployed applications where language requirements and user expectations evolve.
-
-Dynamic evaluation refers to ongoing assessment of model performance in real-world conditions, rather than one-time testing with static datasets. This approach recognizes that LLM performance can shift over time due to changing user patterns, new domain requirements, or evolving quality standards. Several key practices support effective dynamic evaluation:
-
-- **Real-time monitoring**: Tracks output quality as your model encounters new user inputs and communication patterns
-- **A/B testing**: Compares different model versions or prompt strategies against live interactions
-- **Feedback integration**: Incorporates actual user responses into your evaluation metrics
-- **Adaptive benchmarking**: Updates evaluation criteria as your application grows and user needs change
-
-MLflow provides comprehensive tools to support these dynamic evaluation needs, offering experiment tracking, model comparison, and automated metric computation tailored for LLM applications. MLflow is integrated with Azure Databricks, providing support for LLM evaluation workflows within the platform.
+Azure Databricks integrates MLflow to support LLM evaluation workflows. You can use MLflow to track experiments, log evaluation metrics, compare model performance, and manage evaluation datasets. The platform integrates evaluation capabilities with other Azure Databricks features, enabling you to iterate and improve your LLM applications systematically.
