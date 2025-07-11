@@ -52163,6 +52163,46 @@
       "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/11-summary.md",
       "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/10-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/2-store-files-azure-blob-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/3-add-items-azure-storage-queues.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/4-add-rows-azure-storage-tables.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/5-exercise-add-items-azure-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
     }
   ]
 }
