@@ -44,6 +44,14 @@ Effective human evaluation requires:
 
 Combining automated metrics with human evaluation provides a more comprehensive assessment of model performance. Automated metrics offer efficiency and consistency, while human evaluation provides nuanced insights into subjective quality aspects.
 
+## Interpret evaluation metrics effectively
+
+LLM evaluation metrics require interpretation because they sometimes don't tell the complete story about model performance. Understanding what each metric actually measures helps you make better decisions about your model.
+
+When interpreting LLM metrics, consider the context and limitations of each measurement. A high BLEU score indicates good overlap with reference text, but it doesn't guarantee that the generated text is coherent or appropriate for the situation. Similarly, low perplexity suggests the model is confident in its predictions, but this doesn't mean the content is factually correct or useful.
+
+Multiple metrics together provide a more complete picture than any single score. For example, a model might have excellent fluency scores but poor accuracy on factual questions, or high similarity to reference texts but low creativity ratings. Always evaluate metrics in combination and consider what aspects of performance matter most for your specific use case.
+
 ## Track evaluation metrics with MLflow
 
 Once you start running evaluations, you'll want to keep track of all your results and experiments. This is where MLflow can help. It's supported in Azure Databricks and helps you organize your evaluation data, experiment results, and model versions.

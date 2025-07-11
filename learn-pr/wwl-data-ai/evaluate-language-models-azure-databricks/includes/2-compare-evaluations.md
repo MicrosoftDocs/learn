@@ -6,19 +6,11 @@ These LLM-specific evaluation challenges affect how you choose evaluation method
 
 LLM evaluation focuses on language quality dimensions that present unique measurement challenges. When you evaluate text generation, you're assessing not just correctness but also coherence, creativity, and contextual appropriateness.
 
-The complexity comes from the subjective nature of language itself. What makes good writing varies based on audience, purpose, and context. A technical explanation needs precision and clarity, while creative content might prioritize originality and emotional impact. LLMs must handle this variability, which means your evaluation approach must account for multiple quality dimensions simultaneously.
+The complexity comes from the subjective nature of language. Good writing varies based on audience, purpose, and context. A technical explanation needs precision and clarity, while creative content might prioritize originality and emotional impact. Since LLMs must handle this variability, your evaluation approach must account for multiple quality dimensions simultaneously.
 
 Unlike simple classification tasks where you can measure accuracy against known labels, language generation produces open-ended outputs where multiple responses could be equally valid. This reality shapes how you design evaluation frameworks and interpret results.
 
-## Understand how to interpret evaluation metrics
-
-LLM evaluation metrics are designed to capture the nuanced aspects of language generation. These metrics often require careful interpretation and contextual understanding.
-
-LLM evaluation combines multiple approaches:
-- **Automated metrics** for specific tasks
-- **Human evaluation** for subjective quality assessment
-- **Task-specific measures** that align with your application's goals
-- **Contextual relevance** scoring for real-world applicability
+To address these challenges, LLM evaluation typically combines several complementary approaches. The following sections explore key evaluation strategies and considerations for implementing effective LLM assessment.
 
 ## Include human evaluations
 
@@ -40,9 +32,9 @@ This interpretability gap affects building user trust and debugging unexpected o
 
 LLM evaluation must assess how well models generalize to new, unseen inputs while maintaining consistent performance across different contexts.
 
-Generalization challenges specific to LLMs present themselves in several ways. **Domain adaptation** becomes critical when you need your model to perform well across different subject areas - a model trained primarily on technical documentation might struggle with creative writing tasks. **Context length handling** affects how well the model maintains quality when working with varying input lengths, from short prompts to lengthy documents.
+Generalization challenges specific to LLMs present themselves in several ways. **Domain adaptation** becomes critical when you need your model to perform well across different subject areas - a model trained primarily on technical documentation might struggle with creative writing tasks. **Instruction following** tests whether your LLM consistently follows different types of prompts and maintains performance across various task formats.
 
-**Instruction following** tests whether your LLM consistently follows different types of prompts and maintains performance across various task formats. Finally, **robustness** measures the model's stability when facing adversarial or unexpected inputs that might try to confuse or mislead it. These challenges require careful evaluation strategies that go beyond simple accuracy measurements.
+**Context length handling** affects how well the model maintains quality when working with varying input lengths, from short prompts to lengthy documents. Finally, **robustness** measures the model's stability when facing adversarial or unexpected inputs that might try to confuse or mislead it. These challenges require careful evaluation strategies that go beyond simple accuracy measurements.
 
 ## Implement evaluation dynamically
 

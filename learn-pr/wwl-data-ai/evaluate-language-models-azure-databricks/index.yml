@@ -14,10 +14,10 @@ title: Evaluate language models with Azure Databricks
 summary: Explore Large Language Model (LLM) evaluation, understand their relationship with AI system evaluation, and explore various LLM evaluation metrics and specific task-related evaluations.
 abstract: |
   In this module, you learn how to:
-  - Explore LLM evaluation challenges and approaches.
-  - Describe the relationship between LLM evaluation and evaluation of entire AI systems.
-  - Describe generic LLM evaluation metrics like accuracy, perplexity, and toxicity.
-  - Describe LLM-as-a-judge for evaluation.
+  - Evaluate LLM evaluation models
+  - Describe the relationship between LLM evaluation and AI system evaluation
+  - Describe standard LLM evaluation metrics like accuracy, perplexity, and toxicity
+  - Describe LLM-as-a-judge for evaluation
 prerequisites: |
   Before starting this module, you should be familiar with Azure Databricks. Consider completing [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) before starting this module.
 iconUrl: /learn/achievements/describe-azure-databricks.svg
