@@ -1,6 +1,6 @@
 In this module, you explored how to build and manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
 
-This module covered:
+You learned about:
 
 - Contrasting user owned projects versus organization owned projects.
 - Making recommendations about the number of GitHub organizations you should have.
