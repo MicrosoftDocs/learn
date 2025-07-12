@@ -6,7 +6,7 @@ This guided project consists of the following exercises:
 - Manage tags and locks
 - Clean up
 
-In this exercise, you’ll manage the virtual machine. You’ll change the virtual machines assigned subnet, vertically scale the virtual machine, add storage, and finally add an automatic shutdown.
+In this exercise, you’ll manage the virtual machine. You’ll change the virtual machine's assigned subnet, vertically scale the virtual machine, add storage, and finally add an automatic shutdown.
 
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
