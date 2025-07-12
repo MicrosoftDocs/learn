@@ -5,10 +5,11 @@ metadata:
   title: Module assessment
   description: "This unit is the knowledge check for the module migrating data to Azure Database for MySQL - Flexible Server. It covered migration phases and considerations, tool options, and migration approaches."
   ms.date: 08/28/2024
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 ###########################################################################
 ###
@@ -82,4 +83,4 @@ quiz:
     - content: "Use Percona XtraBackup and Azure Database for MySQL Import CLI to create the target server, and then enable HA."
       isCorrect: true
       explanation: "This is a simple way to migrate the data, and ensure managed high-availability in the flexible server."
-
+

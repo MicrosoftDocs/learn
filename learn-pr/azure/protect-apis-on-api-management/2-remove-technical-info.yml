@@ -4,11 +4,11 @@ title: Remove technical information from API responses
 metadata:
   title: Remove technical information from API responses
   description: Create an API gateway and remove some of the headers from web API responses.
-  ms.date: 08/10/2023
+  ms.date: 05/30/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-remove-technical-info.md)]
-
+

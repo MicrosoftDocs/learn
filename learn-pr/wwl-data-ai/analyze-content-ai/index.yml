@@ -1,16 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-content-ai
 metadata:
-  title: Analyze content with Azure AI Content Understanding
+  title: Create a multimodal analysis solution with Azure AI Content Understanding 
   description: Use Azure AI Content Understanding for multimodal content analysis and information extraction.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 01/13/2025
+  ms.date: 05/15/2025
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
-title: Analyze content with Azure AI Content Understanding
+title: Create a multimodal analysis solution with Azure AI Content Understanding 
 summary: Use Azure AI Content Understanding for multimodal content analysis and information extraction.
 abstract: |
   After completing this module, you will be able to:
@@ -41,4 +41,4 @@ units:
 - learn.wwl.analyze-content-ai.summary
 badge:
   uid: learn.wwl.analyze-content-ai.badge
-
+

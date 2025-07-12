@@ -6,10 +6,11 @@ metadata:
   title: Module assessment
   description: Knowledge check
   ms.date: 08/21/2024
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -71,4 +72,4 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Automatic backups are a feature of Azure Database for MySQL."
       
-
+

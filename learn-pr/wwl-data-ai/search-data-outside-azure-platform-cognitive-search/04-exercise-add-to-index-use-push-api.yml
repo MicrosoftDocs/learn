@@ -4,9 +4,9 @@ title: 'Exercise: Add to an index using the push API'
 metadata:
   title: "Exercise: Add to an index using the push API"
   description: "Exercise: Add to an index using the push API"
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 05/06/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,4 +15,4 @@ labModal: false
 durationInMinutes: 15
 content: |
   [!include[](includes/04-exercise-add-to-index-use-push-api.md)]
-
+

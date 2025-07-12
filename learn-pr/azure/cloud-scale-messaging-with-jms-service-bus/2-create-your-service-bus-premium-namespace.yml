@@ -5,9 +5,8 @@ metadata:
   title: Exercise - Create your Azure Service Bus Premium namespace
   description: Use the Azure CLI to create your Azure Service Bus Premium namespace.
   ms.date: 11/11/2024
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: spelluru
+  author: spelluru
+  ms.author: spelluru
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli
@@ -15,4 +14,4 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-your-service-bus-premium-namespace.md)]
-
+

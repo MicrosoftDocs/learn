@@ -6,7 +6,7 @@ metadata:
   description: Learn how to build an agent using the Semantic Kernel SDK. This unit provides an exercise to build an agent using the Semantic Kernel SDK.
   author: buzahid
   ms.author: buzahid
-  ms.date: 03/25/2025
+  ms.date: 05/16/2025
   ms.topic: unit
 durationInMinutes: 30
 content: |

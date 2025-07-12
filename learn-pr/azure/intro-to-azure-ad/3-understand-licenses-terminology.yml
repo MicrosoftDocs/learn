@@ -3,10 +3,11 @@ uid: learn.intro-to-azure-ad.3-understand-licenses-terminology
 metadata:
   title: Understand Microsoft Entra ID licenses and terminology
   description: Understand Microsoft Entra ID licenses and terminology
-  ms.date: 12/18/2023
+  ms.date: 04/30/2025
   author: MicrosoftGuyJFlo
   ms.author: joflore
   ms.topic: unit
+  ms.custom: sfi-ga-nochange
 title: Understand Microsoft Entra ID licenses and terminology
 durationInMinutes: 3
 content: |
@@ -36,4 +37,4 @@ quiz:
     - content: Microsoft Entra ID P2
       isCorrect: true
       explanation: Identity Protection helps you configure risk-based Conditional Access for your applications to protect them from identity-based risks.
-
+

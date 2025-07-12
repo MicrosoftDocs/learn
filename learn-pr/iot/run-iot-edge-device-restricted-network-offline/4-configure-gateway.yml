@@ -8,7 +8,8 @@ metadata:
   ms.author: abartolo
   ms.topic: unit
   ms.custom:
-  - team=cloud_advocates
+    - sfi-ropc-nochange
+    - team=cloud_advocates
   ms.contributors:
   - abartolo-05192020
 title: Configure an IoT Edge device as gateway

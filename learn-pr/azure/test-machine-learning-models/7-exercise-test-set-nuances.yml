@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.machinelearning.test-machine-learning-models.exercise-test-set-nuances
-title: Exercise – Test set nuances
+title: Exercise - Test set nuances
 metadata:
-  title: Exercise – Test set nuances
+  title: Exercise - Test set nuances
   description: Exercise unit about test set nuances in machine learning
-  ms.date: 05/25/2021
+  ms.date: 05/15/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit

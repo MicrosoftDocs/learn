@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Improve data path performance between networks with ExpressRoute FastPath
   description: "Improve data path performance between networks with ExpressRoute FastPath"
-  ms.date: 05/02/2025
+  ms.date: 05/16/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

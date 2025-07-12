@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-code-improvements-using-github-copilot-tools.examine-github-copilot-code-review-features
+title: Examine the GitHub Copilot code review features
+metadata:
+  title: Examine the GitHub Copilot code review features
+  description: "Examine the GitHub Copilot code review features"
+  ms.date: 06/02/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-examine-github-copilot-code-review-features.md)]

@@ -27,8 +27,7 @@ If you're interested in doing serverless integrations like these with visual wor
 The following resources are related to the subjects covered in this module that you might find interesting:
 
 * [Azure Functions documentation](/azure/azure-functions/)
-* [Azure Serverless Computing Cookbook](https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/)
 * [Quickstart: Azure Queue Storage client library for JavaScript](/azure/storage/queues/storage-nodejs-how-to-use-queues)
-* [Introduction to Azure Cosmos DB: SQL API](/azure/cosmos-db/sql-api-introduction)
+* [Azure Cosmos DB - Database for the AI Era](/azure/cosmos-db/introduction)
 * [A technical overview of Azure Cosmos DB](https://azure.microsoft.com/blog/a-technical-overview-of-azure-cosmos-db/)
 * [Azure Cosmos DB documentation](/azure/cosmos-db/)

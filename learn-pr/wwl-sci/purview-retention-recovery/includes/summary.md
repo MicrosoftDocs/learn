@@ -19,4 +19,4 @@ Applying the right retention and recovery tools helps organizations reduce risk,
 - [Flowchart to determine when an item will be retained or permanently deleted](/purview/retention-flowchart?azure-portal=true)
 - [Create and configure retention policies](/purview/create-retention-policies?azure-portal=true)
 - [Use file plan to create and manage retention labels](/purview/file-plan-manager?azure-portal=true)
-- [Publish retention labels and apply them in apps](/create-apply-retention-labels?azure-portal=true)
+- [Publish retention labels and apply them in apps](/purview/create-apply-retention-labels?tabs=manual-outlook%2Cdefault-label-for-sharepoint)

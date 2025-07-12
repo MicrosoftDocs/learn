@@ -39,7 +39,7 @@ In this module, you created billed resources on your Azure subscription. The fol
 
 ## Optional: Clean up services
 
-In this module, you also registered service providers within Azure to access their features. There's no extra charge for registering the providers or features. Follow these steps to unregister.
+In this module, you also registered service providers within Azure to access their features. There's no extra charge for registering the providers or features. Follow these steps to unregister the policies and providers.
 
 1. Run the following command to unregister the Azure Policy on AKS feature.
 
@@ -55,7 +55,7 @@ In this module, you also registered service providers within Azure to access the
     ```
 
     > [!IMPORTANT]
-    > If you choose to unregister, then the optimization features covered in the learning module aren't able until you register.
+    > If you choose to unregister, then the optimization features covered in the learning module aren't available again until you register.
 
 ## Learn more
 

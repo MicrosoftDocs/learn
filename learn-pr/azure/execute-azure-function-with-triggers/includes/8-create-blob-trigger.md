@@ -1,4 +1,4 @@
-In this unit, we're going to create an Azure function that displays the name and size of a blob when it's created or updated.
+In this unit, we're going to create an Azure function that displays the name and size of a blob when the blob is created or updated.
 
 ## Create a blob trigger
 
@@ -28,12 +28,12 @@ Let's continue using your existing Azure Functions application and add a blob tr
 
 ## Create a blob container
 
-Now that we've created a blob trigger, let's use Storage browser to create a blob and trigger the function.
+Now that our blob trigger is created, let's use Storage Browser to create a blob and trigger the function.
 
 1. Open the storage account you used (or created) in a new tab.
 
     > [!TIP]
-    > You can duplicate a tab in most browsers by right-clicking the tab and selecting **Duplicate** from the menu. We want to use a new tab so we can switch between the two services we are working with.
+    > You can duplicate a tab in most browsers by right-clicking the tab and selecting **Duplicate** from the menu. We want to use a new tab so we can switch between the two services we're working with.
 
 1. In the Azure portal, under **Azure services**, select **All resources**. The **All resources** pane appears.
 
@@ -55,7 +55,7 @@ To create a container called **samples-workitems**:
 
 ## Turn on your blob trigger
 
-Now that we've created our container to monitor, let's run our function so we can see output when a blob is created.
+Now that we created our container to monitor, let's run our function so we can see output when a blob is created.
 
 1. Switch back to the browser tab with your Azure Function (or reopen it).
 
@@ -81,4 +81,4 @@ Our blob trigger is now up and listening for activity. Let's create a blob to se
 
 1. Select **Upload**.
 
-1. Switch back to the Azure Function tab and check the output logs for a message that displays which file was uploaded. Your blob trigger should automatically execute. If you select **Test/Run** from the top menu bar, and then select **Run** in the function pane, it might result in an error due to the default value that is specified in the **Test** request body. You'll need to change the path from the *Input* tab in the request **Body** pane to a valid file for the test to run successfully.
+1. Switch back to the Azure Function tab and check the output logs for a message that displays which file was uploaded. Your blob trigger should automatically execute. If you select **Test/Run** from the top menu bar, and then select **Run** in the function pane, it might result in an error due to the default value that is specified in the **Test** request body. You need to change the path from the *Input* tab in the request **Body** pane to a valid file for the test to run successfully.

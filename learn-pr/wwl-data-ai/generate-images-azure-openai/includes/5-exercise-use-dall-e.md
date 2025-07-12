@@ -1,4 +1,4 @@
-Now it's your chance to use a DALL-E model to generate images. In this exercise, you'll provision an Azure AI Foundry project and use it to deploy a DALL-E model and explore image generation in the Azure AI Foundry portal. Then you'll use the Python or .NET SDK to consume a DALL-E model from a custom application.
+Now it's your chance to use generative AI to create images. In this exercise, you'll provision an Azure AI Foundry project and deploy a DALL-E model. Then, you'll explore image generation in the Azure AI Foundry portal. Finally, you'll use the Python or .NET SDK to consume the DALL-E model from a custom application.
 
 Launch the exercise and follow the instructions.
 

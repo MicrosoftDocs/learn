@@ -10,9 +10,6 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-azureSandbox: false
-labId: 152400
-labModal: true
 durationInMinutes: 30
 content: |
   [!include[](includes/7-exercise-speech-app.md)]

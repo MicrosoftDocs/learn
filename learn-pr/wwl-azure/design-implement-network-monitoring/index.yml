@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Design and implement network monitoring
   description: "You learn to design and implement network monitoring solutions such as Azure Monitor and Network watcher."
-  ms.date: 05/01/2025
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module

@@ -3,9 +3,9 @@ uid: learn.wwl.translate-text-with-translator-service
 metadata:
   title: Translate text with the Translator service
   description: Translate text with the Translator service
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 12/05/2023
+  ms.date: 05/06/2025
   ms.service: azure-ai-translator
   ms.topic: module-standard-task-based
   ms.collection:
@@ -43,4 +43,4 @@ units:
 - learn.wwl.translate-text-with-translator-service.summary
 badge:
   uid: learn.wwl.translate-text-with-translator-service.badge
-
+

@@ -2,12 +2,17 @@
 uid: learn.wwl.configure-azure-kubernetes-service-cluster.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/08/2024
+  ms.date: 05/15/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
+  ms.custom:
+  - N/A
+  module_assessment: true
 durationInMinutes: 6
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -47,14 +52,3 @@ quiz:
     - content: "Resource Policy Contributor and Owner"
       isCorrect: true
       explanation: "Correct. Resource Policy Contributor and Owner have the appropriate Azure RBAC policy assignment operations to assign a policy definition to your Kubernetes cluster."
-  - content: "What is the purpose of Azure Policy in relation to Kubernetes clusters?"
-    choices:
-    - content: "Azure Policy is used to deploy policy definitions into the cluster as pod templates."
-      isCorrect: false
-      explanation: "Incorrect. Azure Policy deploys policy definitions as constraint templates and constraint custom resources."
-    - content: "Azure Policy is used to manage and report on the compliance state of your Kubernetes clusters from multiple places."
-      isCorrect: false
-      explanation: "Incorrect. Azure Policy allows for centralized management and reporting of compliance state."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
-      isCorrect: true
-      explanation: "Correct. Azure Policy applies at scale enforcements and safeguards on Kubernetes clusters in a centralized, consistent manner to ensure secure and stable application hosting platforms."

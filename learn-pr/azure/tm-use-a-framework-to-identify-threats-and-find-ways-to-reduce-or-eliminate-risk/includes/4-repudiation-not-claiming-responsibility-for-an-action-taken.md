@@ -23,9 +23,9 @@ Examples include:
 
 |Name|Interaction|Definition|
 |----|-----------|----------|
-|Process <-> Process|![Process to Process Interaction.](../media/process-process.png)|A task sends or receives data to or from another task|
-|Process <-> External Entity|![Process to External Entity Interaction.](../media/process-externalentity.png)|A task sends or receives data to or from a user|
-|Process <-> Data Store|![Process to Data Store Interaction.](../media/process-datastore.png)|A task sends or receives data to or from a data store|
+|Process <-> Process|![Process to Process Interaction.](../media/process-process.png)|A task sends or receives data to or from another task.|
+|Process <-> External Entity|![Process to External Entity Interaction.](../media/process-externalentity.png)|A task sends or receives data to or from a user.|
+|Process <-> Data Store|![Process to Data Store Interaction.](../media/process-datastore.png)|A task sends or receives data to or from a data store.|
 
 ## How to prevent repudiation
 

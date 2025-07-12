@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-information-extraction.overview
+title: Overview
+metadata:
+  title: Overview
+  description: "Overview"
+  ms.date: 5/9/2025
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-overview.md)]

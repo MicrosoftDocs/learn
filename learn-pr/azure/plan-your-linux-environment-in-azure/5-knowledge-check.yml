@@ -9,6 +9,7 @@ metadata:
   ms.author: carols
   ms.topic: unit
   ms.custom: linux-related-content
+  module_assessment: true
 durationInMinutes: 8
 content: |
   [!include[](includes/5-knowledge-check.md)]

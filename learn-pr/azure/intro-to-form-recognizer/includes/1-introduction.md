@@ -2,7 +2,7 @@ Azure AI Document Intelligence is a cloud-based service that uses machine learni
 
 Document Intelligence can be integrated into applications via programming language SDKs or the REST API. You can also enhance existing workflows with unstructured data from paper-based or digital document images. Historically, this functionality required manual extraction or custom machine learning systems.
 
-Document Intelligence can be tailored to specific content using custom forms or by inputting data using built-in templates allowing for secure and accurate data extraction. Document Intelligence enables your  organization to effectively manage the velocity at which data is collected and processed and is key to improved operations, informed data-driven decisions, and enlightened innovation.
+Document Intelligence can be tailored to specific content by using custom forms or by inputting data using built-in templates. Both methods allow for secure and accurate data extraction. Document Intelligence enables your organization to effectively manage the velocity at which data is collected and processed and is key to improved operations, informed data-driven decisions, and enlightened innovation.
 
 ## Prerequisites
 
@@ -15,4 +15,3 @@ In this module, you will:
 - Assess the benefits of Document Intelligence.
 - Describe what Document Intelligence offers.
 - Define scenarios where Document Intelligence can be applied.
-

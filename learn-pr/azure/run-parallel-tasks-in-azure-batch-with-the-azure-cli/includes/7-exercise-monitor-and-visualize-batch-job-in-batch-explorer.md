@@ -1,17 +1,17 @@
 The Batch Explorer lets you view the status of jobs in the Azure Batch service.
 
-As the solution architect, you'll need a way of visualizing the progress of large numbers of nodes and tasks being used to process water purification images in parallel.
+As the solution architect, you need a way to visualize the progress of the large numbers of nodes and tasks being used to perform the parallel processing of water purification images.
 
-Here, you'll execute a job in Azure Batch and then use the Batch Explorer to view its progress.
+Here, you execute a job in Azure Batch and then use the Batch Explorer to view its progress.
 
 >[!IMPORTANT]
->The exercises in this module are optional. To complete the exercises, you'll need your own Azure subscription.
+>The exercises in this module are optional. To complete the exercises, you need your own Azure subscription.
 
 ## Use the Batch Explorer to analyze a job
 
 Using Azure Batch Explorer, you can see the Batch accounts you have in your account in the left-hand sidebar, and the status of pools, nodes, jobs, and tasks in the right.
 
-For scenarios in which you might have hundreds or thousands of tasks running in various states of progress on hundreds or thousands of nodes, it's crucial to visualize this information quickly and be able to drill down into the detail of any problems or areas of particular interest.
+In certain scenarios, you might have hundreds or thousands of tasks running in various states of progress on hundreds or thousands of nodes. It's crucial that you can visualize this information quickly, and that you're able to drill down into the detail of any problems or areas of particular interest.
 
 1. Sign into the [Azure portal](https://portal.azure.com/).
 
@@ -31,7 +31,7 @@ For scenarios in which you might have hundreds or thousands of tasks running in 
 
 1. Select the active job.
 
-    A panel opens up showing the job status. You haven't created any tasks and nothing is running, so this panel is empty.
+    A panel opens up showing the job status. This panel is empty because you didn't create any tasks, and nothing is running.
 
 1. Run the following command in the Cloud Shell to create new Azure Batch tasks, using the Batch account and pool you created in the previous exercise:
 
@@ -47,6 +47,6 @@ For scenarios in which you might have hundreds or thousands of tasks running in 
 
     This job consists of more tasks, each of which outputs all environment variables, then waits five seconds. Batch Explorer is  powerful for monitoring more numerous and longer-running tasks.
 
-1. Go back to Batch Explorer. Notice, in the top-right corner, tasks being queued, an indication of progress, and the number of tasks that have succeeded or failed.
+1. Go back to Batch Explorer. Notice, in the top-right corner, tasks being queued, an indication of progress, and the number of tasks that succeeded or failed.
 
 1. Select the **Refresh** button to the right of the **Filter by task ID** box. As tasks complete, the task details, including the exit code, appear here.

@@ -1,0 +1,76 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.perfect-cut.knowledge-check
+
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge check for the module"
+  ms.date: 3/20/2025
+  author: kariannab-ms
+  ms.author: kbarreto
+  ms.topic: unit
+  
+durationInMinutes: 10
+
+content: |
+quiz:
+  questions:
+  - content: "What is one of the main benefits of using Clipchamp during post-production?"
+    choices:
+    - content: "It uses AI to automate color correction, transitions, and format resizing"
+      isCorrect: true
+      explanation: "Clipchamp uses AI to streamline the editing process by handling tasks like color grading, transitions, and platform-specific resizing."
+    - content: "It creates 3D models from 2D sketches"
+      isCorrect: false
+      explanation: "Clipchamp is a video editor—it doesn't generate 3D models from sketches."
+    - content: "It replaces the need for storyboards and animation planning"
+      isCorrect: false
+      explanation: "Clipchamp is used in post-production and doesn't replace planning tools like storyboards."
+
+  - content: "How does AI-based upscaling improve animation quality?"
+    choices:
+    - content: "It increases resolution while maintaining detail and sharpness"
+      isCorrect: true
+      explanation: "AI-based upscaling enhances visual clarity by intelligently increasing resolution without degrading image quality."
+    - content: "It compresses the animation to make it more pixelated"
+      isCorrect: false
+      explanation: "Upscaling improves image quality, not reduces it."
+    - content: "It removes all color to simplify rendering"
+      isCorrect: false
+      explanation: "Upscaling focuses on resolution enhancement, not color reduction."
+
+  - content: "What’s the purpose of applying vintage or stylized effects in animation post-production?"
+    choices:
+    - content: "To enhance mood, match aesthetic goals, and improve storytelling impact"
+      isCorrect: true
+      explanation: "Stylized effects like grain, color filters, or VHS overlays help reinforce narrative tone and creative direction."
+    - content: "To hide mistakes from earlier animation steps"
+      isCorrect: false
+      explanation: "Effects should be used intentionally—not as a way to mask errors."
+    - content: "To convert animations into black-and-white sketches"
+      isCorrect: false
+      explanation: "While some effects may change color schemes, their purpose is to support visual style—not convert formats."
+
+  - content: "What should you do before exporting your final animation in Clipchamp?"
+    choices:
+    - content: "Review the full video for timing, transitions, and visual consistency"
+      isCorrect: true
+      explanation: "Final review ensures that your video is smooth, cohesive, and ready for publishing in the correct format and resolution."
+    - content: "Export immediately after uploading assets"
+      isCorrect: false
+      explanation: "You should always preview, refine, and check the animation before exporting."
+    - content: "Skip adding transitions or effects to save time"
+      isCorrect: false
+      explanation: "Transitions and effects enhance visual quality and should be applied intentionally."
+
+  - content: "How does AI support syncing visual elements with audio in post-production?"
+    choices:
+    - content: "It helps align animation transitions and effects with beats or dialogue timing"
+      isCorrect: true
+      explanation: "AI in tools like Clipchamp can assist with matching visual cuts and transitions to music or voiceovers, improving pacing and engagement."
+    - content: "It writes original lyrics for background music"
+      isCorrect: false
+      explanation: "AI syncing refers to visual/audio alignment, not songwriting."
+    - content: "It automatically removes all audio for smoother playback"
+      isCorrect: false
+      explanation: "Audio removal isn't a syncing feature—AI assists with integration, not elimination."

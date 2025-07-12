@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-github-copilot.examine-github-copilot-ai-assistance-features
+title: Examine GitHub Copilot's AI assistance features
+metadata:
+  title: Examine GitHub Copilot's AI assistance features
+  description: "Examine GitHub Copilot's AI assistance features"
+  ms.date: 06/02/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  - ai-learning-hub
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-examine-github-copilot-ai-assistance-features.md)]

@@ -4,8 +4,8 @@ title: Describe LLM-as-a-judge for evaluation
 metadata:
   title: Describe LLM-as-a-judge for evaluation
   description: "Describe LLM-as-a-judge for evaluation"
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/10/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 azureSandbox: false
@@ -13,4 +13,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/5-language-model-judge.md)]
-
+

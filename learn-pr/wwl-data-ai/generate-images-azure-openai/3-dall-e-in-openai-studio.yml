@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.generate-images-azure-openai.dall-e-in-openai-studio
-title: Explore DALL-E in Azure AI Foundry portal
+title: Explore image-generation models in Azure AI Foundry portal
 metadata:
-  title: Explore DALL-E in Azure AI Foundry portal
-  description: Use the playground in Azure AI Foundry portal to explore DALL-E image generation
+  title: Explore image-generation models in Azure AI Foundry portal
+  description: Use the Images playground in Azure AI Foundry portal to explore image generation models.
   author: ivorb
   ms.author: berryivor
-  ms.date: 04/29/2025
+  ms.date: 05/08/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

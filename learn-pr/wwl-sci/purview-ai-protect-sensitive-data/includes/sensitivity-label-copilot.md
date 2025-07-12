@@ -51,7 +51,7 @@ To access this, navigate to **DSPM for AI** > **Recommendations** > **Protect yo
 
 While sensitivity labels provide strong protections, there are a few important limitations to be aware of:
 
-- **Manual vs. inherited labels**: Copilot won't override a manually applied higher-priority label with an inherited one.
+- **Label inheritance behavior**: Sensitivity labels applied by Copilot are inherited from source content based on label priority. In cases where multiple files are referenced, the highest-priority label is used.
 - **Double Key Encryption (DKE)**: Copilot can't access content protected by DKE.
 - **Teams data**: Sensitivity labels applied to Teams chats or meetings aren't currently recognized by Copilot.
 - **App-specific behavior**: Copilot in Word and PowerPoint can't generate content from encrypted files. In Microsoft Edge, encrypted files can only be referenced if the user has sufficient permissions.

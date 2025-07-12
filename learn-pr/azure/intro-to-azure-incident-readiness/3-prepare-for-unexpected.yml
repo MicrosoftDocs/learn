@@ -8,6 +8,7 @@ metadata:
   author: rmcmurray
   ms.author: keall
   ms.topic: unit
+  ms.custom: sfi-ga-nochange
 durationInMinutes: 19
 content: |
   [!include[](includes/3-prepare-for-unexpected.md)]

@@ -1,12 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-basics-microsoft-dev-box
 metadata:
-  title: Understand the basics of Microsoft Dev Box
+  title: Understand the Basics of Microsoft Dev Box
   description: "This module discusses the fundamentals of the Microsoft dev Box, its key concepts, and architecture."
-  ms.date: 05/02/2025
+  ms.date: 05/12/2025
   author: wwlpublish
   ms.author: fkhan
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: dev-box
   ai-usage: human-only
 title: Understand the basics of Microsoft Dev Box
@@ -34,8 +37,11 @@ roles:
 products:
 - azure
 subjects:
+- cloud-computing
+- devops
 - infrastructure
 - platform-engineering
+- virtual-machine
 units:
 - learn.wwl.understand-basics-microsoft-dev-box.introduction
 - learn.wwl.understand-basics-microsoft-dev-box.learn-fundamentals-microsoft-dev-box

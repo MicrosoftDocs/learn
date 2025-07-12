@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.create-computer-vision-solutions-azure-ai
 metadata:
-  title: Create computer vision solutions in Azure
-  description: How to create computer vision solutions in Azure
-  ms.date: 4/29/2025
+  title: Develop computer vision solutions in Azure
+  description: Learn how to develop computer vision solutions in Azure
+  ms.date: 05/05/2025
   author: wwlpublish
   ms.author: berryivor
   ms.topic: learning-path
-title: Create computer vision solutions in Azure
+title: Develop computer vision solutions in Azure
 prerequisites: |
   Before starting this learning path, you should already have:
   - Familiarity with Azure and the Azure portal.

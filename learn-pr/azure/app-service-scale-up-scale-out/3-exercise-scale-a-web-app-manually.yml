@@ -4,11 +4,11 @@ title: Exercise - Scale a web app manually
 metadata:
   title: Exercise - Scale a web app manually
   description: Manually scale a web app in and out.
-  ms.date: 11/08/2023
+  ms.date: 05/05/2025
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-scale-a-web-app-manually.md)]
-
+

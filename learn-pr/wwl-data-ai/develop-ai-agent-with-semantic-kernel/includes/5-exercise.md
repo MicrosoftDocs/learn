@@ -1,4 +1,4 @@
-Now you're ready to build an agent with the Semantic Kernel Agent Framework. In this exercise, you use Azure AI Agent Service and Semantic Kernel to create an AI agent that creates an expense claim email.
+Now you're ready to build an agent with the Semantic Kernel Agent Framework. In this exercise, you use Foundry Agent Service and Semantic Kernel to create an AI agent that creates an expense claim email.
 
 [!INCLUDE [Lab note](../../../includes/wwl/launch-exercise-note.md)]
 

@@ -1,9 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.discover-azure-message-queue
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover Azure message queues
   description: "Learn how to integrate Azure Service Bus and Azure Queue storage in to your solution, and how to send and receive message by using .NET."
-  ms.date: 07/18/2024
+  ms.date: 06/16/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
@@ -50,7 +52,8 @@ units:
 - learn.wwl.discover-azure-message-queue.exercise-send-receive-message-from-service-bus-queue-by-using-net
 - learn.wwl.discover-azure-message-queue.explore-azure-queue-storage
 - learn.wwl.discover-azure-message-queue.create-manage-azure-queue-storage-queues-messages-by-using-net
+- learn.wwl.discover-azure-message-queue.send-receive-messages-queue-storage
 - learn.wwl.discover-azure-message-queue.knowledge-check
 - learn.wwl.discover-azure-message-queue.summary
 badge:
-  uid: learn.wwl.discover-azure-message-queue.badge
+  uid: learn.wwl.discover-azure-message-queue.badge

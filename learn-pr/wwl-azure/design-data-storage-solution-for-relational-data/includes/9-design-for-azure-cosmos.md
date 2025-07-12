@@ -2,17 +2,23 @@ The final option we consider is relational table data storage using Azure Cosmos
 
 [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/) is a fully managed NoSQL database service for modern app development. As a fully managed service, Azure Cosmos DB takes database administration off your hands with automatic management, updates, and patching. It also handles capacity management with cost-effective serverless and automatic scaling options that respond to application needs to match capacity with demand.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5880727c-ac19-40fb-ac67-82d3fe05edfe]
+
 ### Things to know about Azure Cosmos DB
 
 Review the following characteristics of Azure Cosmos DB and how it can help with relational data storage.
 
 - Azure Cosmos DB has single-digit millisecond response times and guaranteed speed at any scale. 
 
+- Azure Cosmos DB offers [multiple database APIs](/azure/cosmos-db/choose-api), which include NoSQL, MongoDB, PostgreSQL, Cassandra, Gremlin, and Table. These APIs allow your applications to treat Azure Cosmos DB as if it were various other databases technologies, without the overhead of management, and scaling approaches. 
+
+    :::image type="content" source="../media/cosmos-decision-tree.png" alt-text="Flowchart decision tree to select between Cosmos DB and SQL." border="false":::
+
 - Applications that are written for Azure Table Storage can migrate to the Azure Cosmos DB Table API with few code changes.
 
 - Azure Cosmos DB Table API and Table Storage share the same table data model and expose the same create, delete, update, and query operations through their SDKs.
 
-### Things to consider when using the Azure Cosmos DB Table API
+### Things to consider when choosing the Azure Cosmos DB Table API
 
 If you currently use Azure Table Storage, you gain many benefits by moving to the Azure Cosmos DB Table API. As you review these benefits, consider how Azure Cosmos DB can be included in your relational data storage plan for Tailwind Traders:
 
@@ -26,3 +32,6 @@ If you currently use Azure Table Storage, you gain many benefits by moving to th
 | **Consistency** | Strong within primary region. | Five well-defined consistency levels to trade off availability, latency, throughput, and consistency. |
 | **Pricing** | Consumption-based pricing model. | Available in both consumption-based and provisioned capacity pricing models. |
 | **SLAs** | 99.99% availability | 99.99% availability SLA for all single region accounts and all multi-region accounts with relaxed consistency, and 99.999% read availability on all multi-region database accounts. |
+
+> [!TIP]
+> There's a lot more to learn in the [Introduction to Azure Cosmos DB for NoSQL](/training/modules/introduction-to-azure-cosmos-db-sql-api/) training module. 

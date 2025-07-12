@@ -32,7 +32,7 @@ It's important to draft a cofounder agreement before anyone has created any subs
 
 Despite your best efforts, it's possible that you or one of your cofounders will decide to leave the company. Departure of a cofounder in the first few years of a startup is surprisingly common. It can happen for many reasons, including financial pressures or disagreements between founders.
 
-A founder leaving but remaining a large shareholder can be a major demotivating factor for the remaining founders, who are working hard for no additional benefit. It can also make the company much less attractive to investors, because a sizable chunk of equity is now owned by someone who's (at best) passive and not contributing, or (at worst) disgruntled and actively seeking to disrupt the company by blocking decisions or refusing to sign critical documents.
+A founder leaving but remaining a large shareholder can be a major demotivating factor for the remaining founders, who are working hard for no additional benefit. It can also make the company much less attractive to investors because someone who's (at best) passive and not contributing now owns a sizable chunk of equity, or (at worst) disgruntled and actively seeking to block decisions or refusing to sign critical documents to disrupt the company.
 
 To address this problem, startups frequently adopt *founder vesting*. That is, each founder earns equity over time, contingent on their ongoing involvement and performance.
 
@@ -47,11 +47,11 @@ The main benefits of founder vesting are:
 
 Founder vesting has two components:
 
-- **Cliff**. A cliff is typically a one-year period from the date of incorporation in which none of the founders have any vested shares. At the end of the year, assuming that each founder has remained involved, 25 percent of their shares will vest.
+- **Cliff**: A cliff is typically a one-year period from the date of incorporation in which none of the founders have any vested shares. Assuming each founder has remained involved, at the end of the year 25 percent of their shares will vest.
 
   If a founder departs within the first year, they forfeit all of their shareholding. This makes sense on the basis that in most startups, not much value is created in the first year.
 
-- **Monthly vesting**. The remaining 75 percent of each founder's shareholding is vested in equal installments over the following three years.
+- **Monthly vesting**: The remaining 75 percent of each founder's shareholding is vested in equal installments over the following three years.
 
 :::image type="content" source="../media/learning-path-percentage-vested.png" alt-text="Line chart that shows how the percentage vested changes over time. After the percentage remains at zero for a year, it jumps and then steadily climbs.":::
 

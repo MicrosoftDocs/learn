@@ -11,28 +11,14 @@ The following code example shows how to implement this pattern.
 ::: zone pivot="python"
 
 ```python
-from azure.identity import DefaultAzureCredential
-from azure.ai.projects import AIProjectClient
-from azure.ai.projects.models import ConnectionType
-import openai
-
-
-# Initialize the project client
-projectClient = AIProjectClient.from_connection_string(
-    conn_str="<region>.api.azureml.ms;<project_id>;<hub_name>;<project_name>",
-    credential=DefaultAzureCredential()
-)
+from openai import AzureOpenAI
 
 # Get an Azure OpenAI chat client
-chat_client = projectClient.inference.get_azure_openai_client(api_version="2024-10-21")
-
-# Use the AI search service connection to get service details
-searchConnection = projectClient.connections.get_default(
-    connection_type=ConnectionType.AZURE_AI_SEARCH,
-    include_credentials=True,
+chat_client = AzureOpenAI(
+    api_version = "2024-12-01-preview",
+    azure_endpoint = open_ai_endpoint,
+    api_key = open_ai_key
 )
-search_url = searchConnection.endpoint_url
-search_key = searchConnection.key
 
 # Initialize prompt with system message
 prompt = [
@@ -50,7 +36,7 @@ rag_params = {
             "type": "azure_search",
             "parameters": {
                 "endpoint": search_url,
-                "index_name": "<azure_ai_search_index_name>",
+                "index_name": "index_name",
                 "authentication": {
                     "type": "api_key",
                     "key": search_key,
@@ -77,34 +63,17 @@ print(completion)
 ::: zone pivot="csharp"
 
 ```csharp
-using Azure.Identity;
-using Azure.AI.Projects;
 using Azure.AI.OpenAI;
 using System.ClientModel;
 using Azure.AI.OpenAI.Chat;
 using OpenAI.Chat;
 
-...
-
 {
-    
-    // Initialize the project client
-    var projectClient = new AIProjectClient(
-        "<region>.api.azureml.ms;<project_id>;<hub_name>;<project_name>",
-        new DefaultAzureCredential()
-    );
-
     // Get an Azure OpenAI chat client
-    ChatClient chatClient = projectClient.GetAzureOpenAIChatClient("<model_deployment_name>");
-    
-    // Use the AI search service connection to get service details
-    var connectionsClient = projectClient.GetConnectionsClient();
-    ConnectionResponse searchConnection = connectionsClient.GetDefaultConnection(ConnectionType.AzureAISearch, true);
-    var searchProperties = searchConnection.Properties as ConnectionPropertiesApiKeyAuth;
-    string search_url = searchProperties.Target;
-    string search_key = searchProperties.Credentials.Key;
-    
-
+    AzureOpenAIClient azureClient = new(
+        new Uri(open_ai_endpoint),
+        new AzureKeyCredential(open_ai_key));
+    ChatClient chatClient = azureClient.GetChatClient(chat_model);
     
     // Initialize prompt with system message
     var prompt = new List<ChatMessage>()
@@ -123,7 +92,7 @@ using OpenAI.Chat;
         new AzureSearchChatDataSource()
         {
             Endpoint = new Uri(search_url),
-            IndexName = "<azure_ai_search_index_name>",
+            IndexName = "index_name",
             Authentication = DataSourceAuthentication.FromApiKey(search_key),
         }
     );
@@ -152,7 +121,7 @@ rag_params = {
             "type": "azure_search",
             "parameters": {
                 "endpoint": search_url,
-                "index_name": "<azure_ai_search_index_name>",
+                "index_name": "index_name",
                 "authentication": {
                     "type": "api_key",
                     "key": search_key,
@@ -180,7 +149,7 @@ rag_params = {
         new AzureSearchChatDataSource()
         {
             Endpoint = new Uri(search_url),
-            IndexName = "<azure_ai_search_index_name>",
+            IndexName = "index_name",
             Authentication = DataSourceAuthentication.FromApiKey(search_key),
             // Params for vector-based query
             QueryType = "vector",

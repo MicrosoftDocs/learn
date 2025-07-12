@@ -4,7 +4,7 @@ title: Plan the UI tests
 metadata:
   title: Plan the UI tests
   description: Define requirements for a set of manual UI tests.
-  ms.date: 04/02/2024
+  ms.date: 05/07/2025
   author: steved0x
   ms.author: sdanie
   ms.custom: devdivchpfy22
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/4-plan-ui-tests.md)]
-
+

@@ -5,11 +5,11 @@ metadata:
   title: Exercise - Promote to the Dev stage
   description: Promote to the Dev stage by using a build trigger.
   ms.custom: devdivchpfy22
-  ms.date: 11/29/2023
+  ms.date: 05/01/2025
   author: juliakm
   ms.author: jukullam
   ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/4-promote-dev.md)]
-
+

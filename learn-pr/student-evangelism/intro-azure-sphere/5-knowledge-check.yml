@@ -8,6 +8,7 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5 # dummy number at present
 content: |
 quiz:

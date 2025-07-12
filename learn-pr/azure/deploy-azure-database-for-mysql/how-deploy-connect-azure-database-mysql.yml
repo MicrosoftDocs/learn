@@ -5,8 +5,8 @@ title: How to deploy and connect to Azure Database for MySQL
 metadata:
   title: How to deploy and connect to Azure Database for MySQL 
   description: Describe how to deploy and connect to Azure Database for MySQL.
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
   ms.custom: event-tier1-build-2022
@@ -15,4 +15,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/how-deploy-connect-azure-database-mysql.md)]
-
+

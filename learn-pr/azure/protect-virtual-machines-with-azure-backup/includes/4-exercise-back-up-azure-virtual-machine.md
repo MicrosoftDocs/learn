@@ -67,6 +67,14 @@ az vm create \
     --subnet NorthwindInternal1
 ```
 
+> [!NOTE]
+> If you get a `securityProfile.securityType is invalid` error running the preceding command, run the following commands to register `UseStandardSecurityType`, then re-run the preceding command.
+>
+> ```azurecli
+> az feature register --name UseStandardSecurityType --namespace Microsoft.Compute
+> az feature show --name UseStandardSecurityType --namespace Microsoft.Compute
+> ```
+
 The command can take a few minutes to complete. Wait for it to finish before moving on to the next step.
 
 ### Enable backup for a virtual machine by using the Azure portal

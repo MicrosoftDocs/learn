@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-ad.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 12/18/2023
+  ms.date: 04/30/2025
   author: MicrosoftGuyJFlo
   ms.author: joflore
   ms.topic: unit
@@ -11,4 +11,4 @@ title: Introduction
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

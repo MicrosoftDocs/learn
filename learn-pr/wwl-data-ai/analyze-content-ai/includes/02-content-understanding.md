@@ -29,6 +29,6 @@ Analysis of audio enables you to automate tasks like summarizing conference call
 
 ### Video
 
-Video accounts for a large volume of the data captured today, and you can use Content Understanding to analyze and extract insights from video to support many scenarios. For example, to summarize and extract key points from presentations or to detect the presence of specific activity in security footage.
+Video accounts for a large volume of the data captured today, and you can use Content Understanding to analyze and extract insights from video to support many scenarios. For example, to extract key points from video conference recordings, to summarize presentations, or to detect the presence of specific activity in security footage.
 
 ![Screenshot of an video file being analyzed by Content Understanding.](../media/video-analysis.png)

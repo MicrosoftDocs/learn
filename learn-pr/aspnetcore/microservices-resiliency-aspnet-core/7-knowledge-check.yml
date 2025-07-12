@@ -5,8 +5,9 @@ metadata:
   description: Test your knowledge of what you learned in this tutorial about resiliency.
   author: codemillmatt
   ms.author: masoucou
-  ms.date: 11/06/2023
+  ms.date: 05/09/2025
   ms.topic: unit
+  module_assessment: true
 title: Module assessment
 durationInMinutes: 7
 content: |

@@ -14,7 +14,7 @@ Deployment from Visual Studio is a great feature for developers. It allows them 
 
 ## Continuous deployment
 
-Azure Functions makes it easy to deploy your function app using App Service continuous integration. Azure Functions integrates with numerous deployment sources, which support a workflow where function code updates triggers deployment to Azure.
+Azure Functions makes it easy to deploy your function app using App Service continuous integration. Azure Functions integrates with numerous deployment sources, which support a workflow where function code updates trigger deployment to Azure.
 
 Continuous deployment is a great option for projects where multiple and frequent contributions are being integrated. It also lets you maintain source control on your functions code. The following deployment sources are currently supported:
 

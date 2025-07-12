@@ -8,6 +8,7 @@ metadata:
   author: lnyswonger
   ms.author: joemarshall
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

@@ -3,10 +3,10 @@ uid: learn.wwl.ai-agent-fundamentals.exercise
 title: Exercise - Explore AI Agent development
 metadata:
   title: Exercise - Explore AI Agent development
-  description: Create an agent by using Azure AI Agent Service in the Azure AI Foundry portal.
-  author: wwlpublish
+  description: Create an agent by using Azure AI Foundry Agent Service in the Azure AI Foundry portal.
+  author: ivorb
   ms.author: berryivor
-  ms.date: 04/03/2025
+  ms.date: 05/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
