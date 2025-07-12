@@ -71,13 +71,13 @@ Your *database.bicep* file should look like this example:
 
 ::: code language="bicep" source="code/8-database.bicep" highlight="68-70" :::
 
-If they don't, either copy the examples or adjust your templates to match the examples.
+If they don't, either copy the examples or adjust your Bicep files to match the examples.
 
-## Deploy the Bicep template to Azure
+## Deploy the Bicep file to Azure
 
 ::: zone pivot="cli"
 
-In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following code. This process can take a couple of minutes to finish, and then you'll have a successful deployment.
+In the Visual Studio Code terminal, deploy the Bicep file to Azure by running the following code. This process can take a couple of minutes to finish, and then you'll have a successful deployment.
 
 ```azurecli
 az deployment group create --name main --template-file main.bicep
@@ -87,7 +87,7 @@ az deployment group create --name main --template-file main.bicep
 
 ::: zone pivot="powershell"
 
-In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following Azure PowerShell command. This process can take a couple of minutes to finish, and then you'll have a successful deployment.
+In the Visual Studio Code terminal, deploy the Bicep file to Azure by running the following Azure PowerShell command. This process can take a couple of minutes to finish, and then you'll have a successful deployment.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep

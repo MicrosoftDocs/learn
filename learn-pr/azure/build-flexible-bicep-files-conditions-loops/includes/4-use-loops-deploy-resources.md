@@ -10,7 +10,7 @@ In this unit, you learn how to deploy multiple instances of resources by using _
 
 ## Use copy loops
 
-When you define a resource or a module in a Bicep template, you can use the `for` keyword to create a loop. Place the `for` keyword in the resource declaration, then specify how you want Bicep to identify each item in the loop. Typically, you loop over an array of objects to create multiple instances of a resource. The following example deploys multiple storage accounts, and their names are specified as parameter values:
+When you define a resource or a module in a Bicep file, you can use the `for` keyword to create a loop. Place the `for` keyword in the resource declaration, then specify how you want Bicep to identify each item in the loop. Typically, you loop over an array of objects to create multiple instances of a resource. The following example deploys multiple storage accounts, and their names are specified as parameter values:
 
 ::: code language="bicep" source="code/4-loop-simple.bicep" highlight="7-8, 14" :::
 
