@@ -1,25 +1,25 @@
 ### YamlMime:Module
 uid: learn.challenge-project-use-generative-ai-to-create-business-model-startup
 metadata:
-  title: Challenge Project – Create a Business Model for your startup using Microsoft Copilot.
-  description: Challenge Project - Use Microsoft Copilot (formally Bing Chat) to Create a Business Model for your Startup or business.
+  title: Challenge Project — Create a Business Model for Your Startup Using Microsoft Copilot.
+  description: Challenge Project - Use Microsoft Copilot to Create a Business Model for your Startup or business.
   author: juliamuiruri4
   ms.author: juliamuiruri
-  ms.date: 12/4/2023
+  ms.date: 07/03/2025
   ms.service: microsoft-copilot
   ms.topic: module-challenge-project
   ms.collection:
     - TBD
     - ce-advocates-ai-copilot
   ms.custom: team=nextgen
-title: Challenge Project – Create a Business Model for your startup using Microsoft Copilot
+title: Challenge Project — Create a Business Model for your startup using Microsoft Copilot
 summary: Use Microsoft Copilot, your everyday AI companion, to create a Business Model for your Startup or business.
 abstract: |
-  In this module you develop the following skills that can be used in your everyday interaction with Generative AI:
-  - Utilizing the various features or capabilities of Microsoft Copilot.
-  - Utilizing multi-modal features of Microsoft Copilot.
-  - Prompt writing tips and techniques.
-  - Practice your Critical/ Creative Thinking with Microsoft Copilot.
+  In this module, you develop the following skills that you can use in your everyday interaction with Generative AI:
+  - Using the various features or capabilities of Microsoft Copilot.
+  - Using multi-modal features of Microsoft Copilot.
+  - Tips and techniques for writing prompts.
+  - Practicing your Critical/Creative Thinking with Microsoft Copilot.
   - Researching with Microsoft Copilot.
   - Applying format and tone to Generative AI Models.
 prerequisites: |

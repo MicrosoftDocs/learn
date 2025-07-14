@@ -1,7 +1,8 @@
 ﻿The following steps explain how to create and configure Azure Route Server (ARS) using Azure Command Line Interface (CLI). However, you can use Azure portal, PowerShell, or Terraform to achieve the same effect.
 
 ## Create Resource Group & Virtual Network
-The recommendation is to deploy Azure VMware Solution private cloud as part of Azure Landing Zone Architecture. Using Landing Zone architecture helps to meet changing requirements effectively, meet governance requirements faster and promote reuse of shared services to drive cost optimization. In this architecture, a separate subscription is used to deploy Azure VMware Solution private cloud. Azure Landing Zone connectivity subscription should be used to deploy Azure Networking services such as Azure Route Server, Azure ExpressRoute Gateway, Azure Firewall, etc.
+
+The recommendation is to deploy Azure VMware Solution private cloud as part of Azure Landing Zone Architecture. Using Landing Zone architecture helps to meet changing requirements effectively, meet governance requirements faster, and promote reuse of shared services to drive cost optimization. In this architecture, a separate subscription is used to deploy Azure VMware Solution private cloud. Azure Landing Zone connectivity subscription should be used to deploy Azure Networking services such as Azure Route Server, Azure ExpressRoute Gateway, Azure Firewall, etc.
 
 The first step is to configure Azure VMware Solution private cloud with the right resource group and virtual network to enable outbound internet connectivity.
 
@@ -30,7 +31,8 @@ az network routeserver create --name <routeserver-name>  --resource-group <resou
 ```
 
 ## Enable Branch-to-branch connectivity
-The last step is to set up your route exchange mechanism is to enable branch-to-branch connectivity: 
+
+The last step to set up your route exchange mechanism is to enable branch-to-branch connectivity:
 
 ```azurecli
 az network routeserver update --name <routeserver-name>  --resource-group <resource-group-name>   --allow-b2b-traffic true

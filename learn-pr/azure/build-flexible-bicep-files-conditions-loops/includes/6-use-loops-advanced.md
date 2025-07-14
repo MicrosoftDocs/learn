@@ -1,4 +1,4 @@
-By using the powerful copy loops feature, you can create dynamic and flexible templates. It's important to understand how to control the way that loops execute when they create resources and how to use loops to set resource properties and nest loops.
+By using the powerful copy loops feature, you can create dynamic and flexible Bicep files. It's important to understand how to control the way that loops execute when they create resources and how to use loops to set resource properties and nest loops.
 
 In this unit, you'll learn how to control the execution of copy loops and how to use resource property loops and nested loops in Bicep.
 
@@ -24,7 +24,7 @@ Now let's apply the `@batchSize` decorator with a value of `2`:
 
 ::: code language="bicep" source="code/6-loop-batchSize.bicep" range="2-6" highlight="1" :::
 
-When you deploy the template, Bicep will deploy in batches of two:
+When you deploy the file, Bicep will deploy in batches of two:
 
 :::image type="content" source="../media/6-batch-size-2.png" alt-text="Diagram showing time on the horizontal axis, with app1 and app2 stacked to run as one batch, and app3 to run as a second batch." border="false":::
 
@@ -35,7 +35,7 @@ You can also tell Bicep to run the loop sequentially by setting the `@batchSize`
 
 ::: code language="bicep" source="code/6-loop-batchSize.bicep" range="1, 3-6" highlight="1" :::
 
-When you deploy the template, Bicep waits for each resource deployment to finish before it starts the next one:
+When you deploy the file, Bicep waits for each resource deployment to finish before it starts the next one:
 
 :::image type="content" source="../media/6-batch-size-1.png" alt-text="Diagram showing time on the horizontal axis, with app1, app2, and app3 being deployed sequentially." border="false":::
 
@@ -63,7 +63,7 @@ You can use a nested loop to deploy the subnets within each virtual network:
 
 The nested loop uses the `range()` function to create two subnets.
 
-When you deploy the template, you get the following virtual networks and subnets:
+When you deploy the Bicep file, you get the following virtual networks and subnets:
 
 | Virtual network name | Location | Address prefix | Subnets |
 | --- | --- | --- | --- |
