@@ -1,5 +1,3 @@
-# Introduction
-
 Microsoft 365 Copilot and Copilot agents are designed to enhance productivity and streamline workflows by providing intelligent assistance within Microsoft 365 applications.
 
 ## Table of contents

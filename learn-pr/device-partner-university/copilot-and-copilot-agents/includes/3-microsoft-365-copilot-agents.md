@@ -1,5 +1,3 @@
-# Microsoft 365 Copilot agents
-
 Agents are specialized AI tools built to perform specific tasks or solve business challenges, often with minimal input from the people that use them.
 
 If agents are like apps, then a copilot is the AI-powered interface that allows users to interact with these agents.

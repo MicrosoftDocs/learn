@@ -1,5 +1,3 @@
-# Types of Copilot agents
-
 You can use Microsoft-built agents or create your own standalone agents with Copilot Studio. There are different types of agents available, so you can choose what works best for your specific needs.
 
 ## Prompt-and-response agents

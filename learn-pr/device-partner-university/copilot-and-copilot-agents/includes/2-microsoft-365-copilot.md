@@ -1,5 +1,3 @@
-# Microsoft 365 Copilot
-
 Microsoft 365 Copilot is a powerful AI assistant that helps boost productivity and simplify everyday tasks.
 
 It’s built right into the Microsoft 365 apps your customers already use&mdash;like Outlook, Word, and Excel&mdash;offering real-time support and smart suggestions as they work.
@@ -16,9 +14,9 @@ This intuitive interaction allows them to focus on what matters most, while Copi
 
 ## Benefits of Copilot
 
-Additionally, Copilot leverages the power of AI to provide personalized assistance tailored to your customers' needs. 
+Additionally, Copilot leverages the power of AI to provide personalized assistance tailored to your customers' needs.
 
-It learns from employee interactions and adapts to their preferences, ensuring that the support thye receive is always relevant and helpful. 
+It learns from employee interactions and adapts to their preferences, ensuring that the support they receive is always relevant and helpful.
 
 With Copilot, employees can collaborate more effectively with their team, stay organized, and make informed decisions with ease. 
 
