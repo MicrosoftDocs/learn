@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric
 metadata:
-  title: Get started with SQL Database in Microsoft Fabric
-  description: "Learn how SQL Database in Microsoft Fabric works, the key concepts, and practical examples to help users SQL Database effectively as part of their analytics solutions."
+  title: Get started with Cosmos DB Database in Microsoft Fabric
+  description: "Learn how Cosmos DB Database in Microsoft Fabric works, the key concepts, and practical examples to help users Cosmos DB Database effectively as part of their analytics solutions."
   ms.date: 04/15/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
   ms.service: fabric
   ai-usage: ai-assisted
-title: Get started with SQL Database in Microsoft Fabric
+title: Get started with Cosmos DB in Microsoft Fabric
 summary: Learn how Cosmos DB NoSQL in Fabric supports operational workloads within the Fabric platform, and how to use it to build and manage scalable, transactional applications.
 abstract: |
   By the end of this module, you'll be able to:
