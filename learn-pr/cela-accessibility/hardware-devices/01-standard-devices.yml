@@ -25,14 +25,14 @@ quiz:
     - content: "It isn't necessary to ensure that standard hardware devices are accessible if an accessible version of the same device already exists."
       isCorrect: false
       explanation: "Incorrect. Although many standard hardware devices such as the standard Xbox controller have an accessible counterpart (the Xbox Adaptive Controller), it doesn't mean that all players need the same level of customization and flexibility that a product like the Xbox Adaptive Controller offers. Instead, all hardware devices should provide a baseline level of accessible elements when possible to provide better experiences for more players."
-  - content: "Which of the following options does not accurately reflect the benefits of developing accessible standard gaming hardware?"
+  - content: "Which of the following options doesn't accurately reflect the benefits of developing accessible standard gaming hardware?"
     choices:
     - content: "Providing players an opportunity to own and use devices that are similar in look and feel to the rest of commercial gaming hardware on the market."
       isCorrect: false
       explanation: "Incorrect. Many bespoke assistive technologies largely differ in appearance compared to products created by large commercial gaming companies. When standard devices are more accessible, more players have an opportunity to use the same types of devices that fit in with those being used by the friends or family they play with."
     - content: "Improving the accessibility of standard devices creates better experiences for all players. This includes those who don't use assistive technologies but still benefit from the improved ease of use."
       isCorrect: false
-      explanation: "Incorrect. Accessible experiences can ultimately provide better experiences in general for all players as situational circumstances like a broken hand can arise at any time, making it difficult to use devices in the manner they are used to."
+      explanation: "Incorrect. Accessible experiences can ultimately provide better experiences in general for all players as situational circumstances like a broken hand can arise at any time, making it difficult to use devices in the manner they're used to."
     - content: "More accessible standard devices eliminate the need for developers to ensure that the devices they create are compatible with existing assistive technologies in the market."
       isCorrect: true
-      explanation: "Correct. This option does not accurately reflect the benefits of developing accessible standard devices. Creating more accessible standard devices does not mean that assistive technologies might still be required by players. Compatibility between these devices should continue to be prioritized accordingly."
+      explanation: "Correct. This option doesn't accurately reflect the benefits of developing accessible standard devices. Players may still need assistive technologies even if standard devices become more accessible. Compatibility between these devices should continue to be prioritized accordingly."
