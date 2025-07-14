@@ -20,21 +20,21 @@ quiz:
     choices:
     - content: "OnInvalidSubmit"
       isCorrect: true
-      explanation: "This event executes when EditForm fields are submitted with invalid content"
+      explanation: "This event executes when EditForm fields are submitted with invalid content."
     - content: "OnFailedValidation"
       isCorrect: false
-      explanation: "This sounds like a good name for an event, but isn't correct"
+      explanation: "Sounds like a good name for an event, but it isn't correct."
     - content: "OnFailedSubmit"
       isCorrect: false
-      explanation: "'Failed' isn't part of the event name that is raised"
+      explanation: "'Failed' isn't part of the event name that is raised."
   - content: "An EditForm has the following features EXCEPT:"
     choices:
     - content: "Data Binding"
       isCorrect: false
-      explanation: "The EditForm can be associated with an object and then acts like a view of the object for data entry purposes"
+      explanation: "The EditForm can be associated with an object and then acts like a view of the object for data entry purposes."
     - content: "Data cleansing"
       isCorrect: true
-      explanation: "While you can edit the content of an EditForm, it doesn't perform data cleansing operations on its own"
+      explanation: "While you can edit the content of an EditForm, it doesn't perform data cleansing operations on its own."
     - content: "Validation"
       isCorrect: false
-      explanation: "An EditForm extensive and extensible validation capabilities"
+      explanation: "An EditForm extensive and extensible validation capabilities."

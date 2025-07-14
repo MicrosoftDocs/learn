@@ -3,7 +3,7 @@ uid: learn-pr.use-forms-in-blazor-web-apps.exercise-add-server-client-side-data-
 title: Exercise - Add server-side and client-side data validation to the address form 
 metadata:
   unitType: Exercise
-  title: "Exercise - Add server-side and client-side data validation to the address form "
+  title: "Exercise - Add server-side and client-side data validation to the address form"
   description: "Use data annotations on a model to add custom validation to a Blazor EditForm component."
   ms.date: 01/09/2025
   author: csharpfritz
