@@ -1,5 +1,3 @@
-# Build Operational Workloads in Cosmos DB NoSQL in Fabric
-
 Cosmos DB NoSQL in Fabric is designed to support operational workloads that require fast, scalable, and secure access to data. In this unit, you explore how Cosmos DB NoSQL in Fabric can be used in various real-world scenarios to support application development and data-driven solutions. Let's review a few examples of how Cosmos DB NoSQL in Fabric can be used to build operational workloads.
 
 ## Scenario: AI-Powered knowledge assistant

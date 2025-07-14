@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.exercise-create-populate-query-cosmos-db-nosql-fabric-database
-title: Introduction
+title: 'Exercise: Create, populate, and query a Cosmos DB NoSQL in Fabric database'
 metadata:
   title: 'Exercise: Create, populate, and query a Cosmos DB NoSQL in Fabric database'
   description: "Create a database, load data into a container, and run queries using built-in tools and supported SDKs."

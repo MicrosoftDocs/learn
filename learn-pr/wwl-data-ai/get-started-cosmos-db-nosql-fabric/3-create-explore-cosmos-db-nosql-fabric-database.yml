@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.create-explore-cosmos-db-nosql-fabric-database
-title: Introduction
+title: Create and explore a Cosmos DB NoSQL in Fabric database
 metadata:
   title: Create and explore a Cosmos DB NoSQL in Fabric database
   description: "Learn how to set up a Cosmos DB NoSQL database in Fabric and work with data using built-in tools."

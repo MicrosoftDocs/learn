@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.secure-monitor-cosmos-db-nosql-fabric
-title: Introduction
+title: Secure and monitor Cosmos DB NoSQL in Fabric
 metadata:
   title: Secure and monitor Cosmos DB NoSQL in Fabric
   description: "Learn how access to Cosmos DB NoSQL in Fabric is managed through workspace roles, and how to monitor performance, usage, and availability using tools in the Fabric platform."

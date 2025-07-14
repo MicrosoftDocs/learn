@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.understand-cosmos-db-nosql-fabric
-title: Introduction
+title: Understand Cosmos DB NoSQL in Fabric
 metadata:
   title: Understand Cosmos DB NoSQL in Fabric
   description: "Learn what Cosmos DB NoSQL in Fabric is, how it operates within the Fabric platform, and which core capabilities are available."
