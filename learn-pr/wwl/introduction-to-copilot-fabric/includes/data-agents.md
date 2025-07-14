@@ -1,23 +1,28 @@
 Fabric data agents in Microsoft Fabric are AI-powered tools designed to make data insights more accessible and actionable. They allow users to interact with organizational data stored in Fabric OneLake using natural language, enabling even nontechnical users to ask questions and receive precise, context-rich answers.
 
 ## Key concepts
+Understanding the following fundamental concepts will help you leverage Fabric data agents effectively in your organization.
 
-- **Conversational Q&A**: Fabric data agents enable you to ask plain English-language questions about your data and receive relevant answers. This eliminates the need for technical expertise in AI or a deep understanding of the data structure.
+**Conversational Q&A** makes it easy for anyone to interact with data using plain English. For example, if you’re unsure how to write a SQL query to find last quarter’s sales, simply ask the agent, “What were our sales last quarter?” and receive a relevant answer. This removes the barrier of technical expertise and lets you focus on your business questions.
 
-- **Data source integration**: A Fabric data agent can connect to a variety of data sources, including lakehouses, warehouses, KQL databases, and Power BI semantic models. This flexibility allows organizations to tailor the agent to their specific data needs.
+**Data source integration** means you don’t have to worry about where your data lives. Whether your information is in lakehouses, warehouses, KQL databases, or Power BI semantic models, Fabric data agents can connect and pull insights from all these sources. If you’ve ever struggled to combine data from multiple systems, this feature streamlines the process and saves you time.
 
-- **Schema awareness**: Fabric data agents use the schema and metadata of connected data sources to generate accurate and context-aware responses. They use structured queries (SQL, DAX, or KQL) to retrieve data while maintaining read-only access.
+**Schema awareness** ensures that the agent understands the structure and metadata of your data sources. If you’re unsure which tables or fields to use, the agent leverages schema knowledge to generate accurate, context-aware responses. For instance, you can ask about “customer retention” and the agent will know which tables and columns to reference, reducing guesswork and errors.
 
-- **Customizability**: Organizations can fine-tune Fabric data agents by adding custom instructions, examples, and guidance. This ensures that the agent aligns with organizational terminology and provides responses tailored to specific use cases.
+**Customizability** allows you to tailor the agent to your organization’s terminology and needs. If your team uses specific jargon or has unique reporting requirements, you can add custom instructions and examples. This helps the agent deliver responses that match your business context, making it easier for everyone to get actionable insights.
 
-- **Secure and contextual responses**: Fabric data agents enforce strict read-only access and adhere to user permissions. They ensure that responses are focused on the context of the selected data sources, reducing the risk of irrelevant or misleading answers.
+**Secure and contextual responses** mean you don’t have to worry about unauthorized access or irrelevant answers. The agent enforces read-only access and respects user permissions, so users only see data they’re allowed to view. This reduces the risk of sharing sensitive information and keeps responses focused on the right context.
 
-- **Integration with external systems**: Fabric data agents can integrate with tools like Microsoft Copilot Studio, Azure AI Foundry, and Microsoft Teams, making them versatile for broader use cases beyond Fabric.
+**Integration with external systems** extends the agent’s capabilities beyond Fabric. If you need to collaborate in Microsoft Teams or automate workflows with Copilot Studio or Azure AI Foundry, the agent can connect with these tools. This makes it easier to share insights, automate tasks, and work smarter across your organization.
+
+By understanding and applying these concepts, you’ll be able to overcome common challenges like technical barriers, data silos, and inconsistent terminology, making it easier to use Fabric data agents and drive smarter, data-informed decisions.
 
 Here's an example of how you can interact with Copilot in a Fabric data agent:
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of copilot in a Fabric data agent.](../media/copilot-data-agent.png)](../media/copilot-data-agent.png#lightbox)
+
+We’ll explore this topic in more detail in a later module.
 
 ## Benefits
 

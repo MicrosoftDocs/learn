@@ -2,18 +2,24 @@ Copilot for Data Engineering and Data Science in Microsoft Fabric is an AI-power
 
 ## Key concepts
 
-- **AI-assisted code generation**: Copilot generates code snippets tailored to tasks such as data loading, applying transformations, and saving Pandas/Spark dataframes inside notebooks. Use natural language to describe your data integration requirements, and Copilot will generate the necessary code and steps.
+Understanding the following fundamental concepts will help you leverage Copilot for Data Engineering and Data Science in your organization.
 
-- **Code explanation**: Provides explanations for existing code, helping you understand complex queries and tasks
+**AI-assisted code generation** enables you to describe your data integration requirements in natural language, such as "Load sales data from CSV and filter for the last quarter." Copilot then generates the necessary code and steps, reducing the time spent searching for syntax or troubleshooting errors. This is especially helpful for users who struggle with remembering complex Pandas or Spark commands.
 
-- **Visualization**: It can create visualizations based on your data, helping you to quickly understand trends and patterns.
+With **code explanation**, Copilot can clarify what a block of code does, making it easier to understand complex queries or unfamiliar scripts. For example, if you encounter a multi-step data transformation and aren't sure how it works, Copilot provides a plain-language summary, helping you learn and avoid mistakes.
 
-- **Machine learning**: Copilot can assist in building and training machine learning models, providing code snippets and guidance throughout the process.
+**Visualization** support allows you to quickly create charts and graphs from your data. If you’re unsure how to plot trends or compare categories, simply ask Copilot to visualize your dataset. This feature helps users who find it challenging to select the right visualization or write plotting code, making data exploration more intuitive.
+
+When working with **machine learning**, Copilot guides you through building and training models. If you’re new to machine learning or unsure how to start, you can ask Copilot to generate code for tasks like splitting data, training a regression model, or evaluating results. This reduces the barrier to entry and helps you focus on solving business problems rather than wrestling with technical details.
+
+By using these features, you can overcome common challenges such as lack of coding experience, difficulty understanding complex logic, and uncertainty about best practices. Copilot empowers you to work smarter, learn faster, and deliver insights more efficiently.
 
 Here's an example of how you can interact with Copilot in the Notebook:
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of copilot in a Fabric Notebook.](../media/copilot-notebook.png)](../media/copilot-notebook.png#lightbox)
+
+We’ll explore this topic in more detail in a later module.
 
 ### Benefits
 

@@ -2,17 +2,13 @@ Copilot for SQL Database in Microsoft Fabric is an AI-powered assistant designed
 
 ### Key concepts
 
-- **Natural language to SQL**: Copilot allows you to generate SQL queries using natural language prompts. For example, you can ask Copilot to "List all customers who made purchases last month," and it generates the corresponding SQL query.
+Copilot for SQL Database can significantly improve your workflow by addressing common challenges users face when working with SQL. For example, many people struggle to translate business questions into accurate SQL queries. With **Natural language to SQL**, you can simply describe what you need—such as "List all customers who made purchases last month"—and Copilot will generate the correct query for you, reducing the need to memorize complex syntax.
 
-- **Code completion**: Copilot enhances productivity by providing intelligent code completions as you write SQL queries. This feature helps you write accurate and efficient queries faster.
+Writing efficient queries can be time-consuming, especially when you're unsure of the exact table or column names. **Code completion** helps by suggesting relevant code snippets as you type, allowing you to build queries faster and with fewer errors. If you encounter issues or are unsure why a query isn't working, **Quick actions** let Copilot automatically fix errors or explain the logic behind your queries, making debugging less frustrating and more educational.
 
-- **Quick actions**: Copilot offers quick actions such as fixing errors in SQL queries or explaining the logic behind them. These actions help you debug and understand their queries more effectively.
+Understanding the structure of your database is another common hurdle. Copilot’s **Schema awareness** means it uses your database’s metadata to offer context-aware suggestions, so you don’t have to constantly reference documentation. When errors occur, **Error handling and debugging** features provide actionable recommendations, helping you resolve issues and optimize performance without getting stuck.
 
-- **Schema awareness**: Copilot uses the schema and metadata of the SQL database, such as table and column names, to provide accurate and context-aware query suggestions.
-
-- **Error handling and debugging**: Copilot helps identifying and resolving issues in SQL queries. It provides actionable recommendations to fix errors and optimize query performance.
-
-- **Query explanation**: Copilot can explain the logic of SQL queries in natural language, making it easier for you to understand complex queries and learn best practices.
+Finally, complex queries can be difficult to interpret, especially for those new to SQL. With **Query explanation**, Copilot translates SQL logic into plain language, making it easier to understand what your queries are doing and helping you learn best practices as you work. By leveraging these features, you can work smarter, reduce frustration, and focus on extracting insights from your data.
 
 Here's an example of how you can interact with Copilot in the Fabric SQL Database editor:
 

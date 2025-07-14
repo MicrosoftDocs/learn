@@ -1,4 +1,4 @@
-Fabric data agents are designed to revolutionize how organizations interact with their data by using generative AI. Below are the key capabilities that make Fabric data agents a powerful tool for enhancing data accessibility and usability:
+Fabric data agents are designed to revolutionize how organizations interact with their data by using generative AI. Below are the key capabilities that make Fabric data agents a powerful tool for enhancing data accessibility and usability.
 
 ## Chat with your data
 
