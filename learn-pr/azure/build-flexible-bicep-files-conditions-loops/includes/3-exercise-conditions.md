@@ -14,7 +14,7 @@ During the process, you'll:
 
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
-## Create a Bicep template with a logical server and database
+## Create a Bicep file with a logical server and database
 
 1. Open Visual Studio Code.
 
@@ -68,17 +68,17 @@ After you've completed all of the preceding changes, your Bicep file should look
 
 ::: code language="bicep" source="code/3-template.bicep" :::
 
-If it doesn't, either copy the example or adjust your template to match the example.
+If it doesn't, either copy the example or adjust your Bicep file to match the example.
 
-## Deploy the Bicep template to Azure
+## Deploy the Bicep file to Azure
 
 ::: zone pivot="cli"
 
 [!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-sandbox-deploy-cli.md)]
 
-### Deploy the template to Azure by using the Azure CLI
+### Deploy the Bicep file to Azure by using the Azure CLI
 
-In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following code. Notice that you're explicitly setting the `location` parameter to `westus3`.
+In the Visual Studio Code terminal, deploy the Bicep file to Azure by running the following code. Notice that you're explicitly setting the `location` parameter to `westus3`.
 
 ```azurecli
 az deployment group create --name main --template-file main.bicep --parameters location=westus3
@@ -90,9 +90,9 @@ az deployment group create --name main --template-file main.bicep --parameters l
 
 [!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-sandbox-deploy-powershell.md)]
 
-### Deploy the template to Azure by using Azure PowerShell
+### Deploy the Bicep file to Azure by using Azure PowerShell
 
-In the Visual Studio Code terminal, deploy the template to Azure by running the following Azure PowerShell command. This process can take a couple of minutes to complete, and then you'll have a successful deployment.
+In the Visual Studio Code terminal, deploy the Bicep file to Azure by running the following Azure PowerShell command. This process can take a couple of minutes to complete, and then you'll have a successful deployment.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep -location westus3
@@ -154,11 +154,11 @@ In the previous deployment, the default value for the `environmentName` paramete
 
 Now you'll explicitly set the parameter value to `Production`. You expect that, by making this change, the storage account for auditing purposes will be deployed, and auditing will be enabled on the logical server.
 
-### Deploy the template for the production environment
+### Deploy the Bicep file for the production environment
 
 ::: zone pivot="cli"
 
-In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following code:
+In the Visual Studio Code terminal, deploy the Bicep file to Azure by running the following code:
 
 ```azurecli
 az deployment group create --name main --template-file main.bicep --parameters environmentName=Production location=westus3
@@ -168,7 +168,7 @@ az deployment group create --name main --template-file main.bicep --parameters e
 
 ::: zone pivot="powershell"
 
-In the Visual Studio Code terminal, deploy the template to Azure by running the following Azure PowerShell command:
+In the Visual Studio Code terminal, deploy the Bicep file to Azure by running the following Azure PowerShell command:
 
 ```azurepowershell
 New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep -environmentName Production -location westus3

@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: Learn how to build flexible Bicep templates by using conditions and loops. 
+  description: Learn how to build flexible Bicep files by using conditions and loops. 
   ms.date: 04/18/2025
   author: mumian
   ms.author: jgao
