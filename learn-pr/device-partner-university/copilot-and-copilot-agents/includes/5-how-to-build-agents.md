@@ -1,6 +1,6 @@
 To build agents, start by logging into [Copilot Studio](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio?msockid=1c78a392f9cd65fc11bdb6fdf847642e). It offers a low-code way to create agents&mdash;starting with grounding them in their own data.
 
-From there, you can add actions that connect to your business systems, so the agent can perform tasks. For more sensitive or complex topics, you can design custom flows to stay in control. Then it's time to test, refine, and customize until your agent is exactly how you want it.
+From there, you can add actions that connect to your business systems, so the agent can perform tasks. For more sensitive or complex tasks, you can design custom flows to stay in control. Then it's time to test, refine, and customize until your agent is exactly how you want it.
 
 ## Building in Copilot Studio
 

@@ -2,7 +2,7 @@ Agents are specialized AI tools built to perform specific tasks or solve busines
 
 If agents are like apps, then a copilot is the AI-powered interface that allows users to interact with these agents.
 
-Agents can respond to and resolve user inquiries in real time, or they can operate independently, taking specific actions based on data and pre-defined goals. They can also run business processes, adapt to new challenges, and improve over time.
+Agents can respond to and resolve user inquiries in real time, or they can operate independently, taking specific actions based on data and predefined goals. They can also run business processes, adapt to new challenges, and improve over time.
 
 Microsoft 365 Copilot, for instance, features a constellation of agents to help employees get things done, including:
 
@@ -22,8 +22,8 @@ AI agents can analyze vast amounts of data quickly and accurately, extracting in
 
 ### Decision-making
 
-By making use of data inputs and algorithms, AI agents can operate independently across many dynamic environments. This includes prioritizing tasks, recommending actions, or even acting autonomously. For example, they can optimize inventory levels based on sales forecasts to conserve resources while meeting customer demand. 
+By making use of data inputs and algorithms, AI agents can operate independently across many dynamic environments. Their ability to operate independently includes prioritizing tasks, recommending actions, or even acting autonomously. For example, they can optimize inventory levels based on sales forecasts to conserve resources while meeting customer demand.
 
 ### Adapt to challenges
 
-Through analyzing and processing user interactions and feedback, agents adapt and improve their performance over time. This allows AI tools to refine their responses, personalize user experiences, and become more effective in their tasks. For instance, in IT operations, agents can learn from historical data to hone and enhance incident response strategies, which can improve resolution times. 
+Through analyzing and processing user interactions and feedback, agents adapt and improve their performance over time. This continuous learning process allows AI tools to refine their responses, personalize user experiences, and become more effective in their tasks. For instance, in IT operations, agents can learn from historical data to hone and enhance incident response strategies, which can improve resolution times.

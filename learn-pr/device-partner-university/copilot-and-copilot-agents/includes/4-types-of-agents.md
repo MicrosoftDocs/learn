@@ -2,15 +2,15 @@ You can use Microsoft-built agents or create your own standalone agents with Cop
 
 ## Prompt-and-response agents
 
-These agents perform specific tasks based on a user's input or "prompt". They process the given input and generate a corresponding response, facilitating a back-and-forth exchange with the user. 
+These agents perform specific tasks based on a user's input or "prompt." They process the given input and generate a corresponding response, facilitating a back-and-forth exchange with the user.
 
-They're helpful for streamlining routine interactions and enhancing customer support&mdash;without adding more complexity to existing systems. They can be used as chatbots, virtual assistants, or specialized AI systems for business apps. 
+They're helpful for streamlining routine interactions and enhancing customer support&mdash;without adding more complexity to existing systems. They can be used as chatbots, virtual assistants, or specialized AI systems for business apps.
 
 ## Cognitive agents
 
-Designed to mimic human thought processes, these agents use machine learning and natural language processing to understand, learn, and adapt to user behavior over time. This makes them useful for analyzing historical data and taking action based on their learnings. 
+Designed to mimic human thought processes, these agents use machine learning and natural language processing to understand, learn, and adapt to user behavior over time. This ability enables them to analyze historical data and take action based on what they learn.
 
-Cognitive agents can analyze customer data to deliver tailored recommendations that support informed decision-making. Using data-driven insights, these agents help create more personalized user experiences, improving customer satisfaction and engagement.
+Cognitive agents can analyze customer data to deliver tailored recommendations that support informed decision-making. By using data-driven insights, these agents help create more personalized user experiences, improving customer satisfaction and engagement.
 
 ## Autonomous agents
 
