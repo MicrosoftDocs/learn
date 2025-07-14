@@ -27,7 +27,7 @@ Open Microsoft Copilot in your personal profile <https://copilot.microsoft.com/>
 Set the conversation style to **Think Deeper**.
 
 > [!IMPORTANT]
-> Setting the conversation style helps you define what type of output you will be getting. Think Deeper mode encourages Microsoft Copilot to use more expressive language, use humour or emotion, and generate different types of content. Deep Research mode, on the other end, focuses on clarity and accuracy, while Quick response looks to find the quickest answer to a question.
+> Setting the conversation style helps you define what type of output you will be getting. Think Deeper mode encourages Microsoft Copilot to use more expressive language, use humor or emotion, and generate different types of content. Deep Research mode, on the other end, focuses on clarity and accuracy, while Quick response looks to find the quickest answer to a question.
 
 ![Screenshot showing conversation style set to creative.](../media/conversation-style.png)
 

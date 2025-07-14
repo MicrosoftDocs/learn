@@ -3,7 +3,7 @@ Before going straight to building a product, a key step for a startup is to iden
 - **A mass market**: Your product considered to serve a wide view of potential users with no specific attributes.
 - **A niche market**: Your product is customized for uses with a specialized need and characteristics.
 - **Segmented market**: Looking at an existing customer segment, your product is highly customized for a distinguished portion of the customer group.
-- **Diverse market**: Your product serve multiple customers with different needs and characteristics.
+- **Diverse market**: Your product serves multiple customers with different needs and characteristics.
 
 > [!NOTE]
 > Steps to add prompts:
@@ -56,7 +56,7 @@ Please use short bullet point phrases of each value proposition.
 
 **Sample Response**
 
-Here'ss a sample response from Microsoft Copilot.
+Here's a sample response from Microsoft Copilot.
 
 ![Screenshot showing sample response on value proposition edited.](../media/value-proposition-edited.png)
 
