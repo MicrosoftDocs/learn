@@ -2,8 +2,8 @@
 uid: learn.azure.bicep-conditions-loops
 metadata:
   moduleType: standard
-  title: Build Flexible Bicep Templates by Using Conditions and Loops
-  description: Build advanced Bicep templates by using conditions to conditionally deploy resources and using loops to deploy multiple instances of resources.
+  title: Build Flexible Bicep files by Using Conditions and Loops
+  description: Build advanced Bicep files by using conditions to conditionally deploy resources and using loops to deploy multiple instances of resources.
   ms.service: azure-resource-manager
   manager: jasongroce
   ms.date: 04/18/2025
@@ -11,17 +11,17 @@ metadata:
   ms.author: jgao
   ms.topic: module
   ms.devlang: bicep
-title: Build flexible Bicep templates by using conditions and loops
+title: Build flexible Bicep files by using conditions and loops
 summary: |
   In this module, you'll deploy resources only when specific constraints are in place and use loops to deploy multiple resources that have similar properties.
 abstract: |
   After completing this module, you'll be able to:
-    - Deploy resources conditionally within a Bicep template.
+    - Deploy resources conditionally within a Bicep file.
     - Deploy multiple instances of resources by using loops.
     - Use output and variable loops.
 prerequisites: |
   You should be familiar with:
-  - Creating and deploying basic Bicep templates, including modules.
+  - Creating and deploying basic Bicep files, including modules.
   - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
   To follow along with the exercises in the module, you'll need:

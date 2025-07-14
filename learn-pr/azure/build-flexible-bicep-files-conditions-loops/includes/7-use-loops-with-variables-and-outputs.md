@@ -1,6 +1,6 @@
 You've learned how you can use copy loops to deploy multiple instances of resources and how to set the properties of a resource by using loops. In Bicep, you can also use loops with variables and outputs.
 
-For your toy company, you need to deploy virtual networks with the same subnet configuration across multiple Azure regions. You expect that you'll need to add additional subnets to your virtual networks in the future, so you want to have the flexibility in your Bicep templates to modify the subnet configuration.
+For your toy company, you need to deploy virtual networks with the same subnet configuration across multiple Azure regions. You expect that you'll need to add additional subnets to your virtual networks in the future, so you want to have the flexibility in your Bicep files to modify the subnet configuration.
 
 Because you'll also be deploying multiple storage accounts in your Azure environment, you need to provide the endpoints for each storage account as output so that your deployment pipelines can use this information.
 
@@ -32,7 +32,7 @@ As you do with other loops, use the `for` keyword to specify an output loop:
 
 ::: code language="bicep" source="code/7-loop-output-simple.bicep" highlight="9" :::
 
-You'll ordinarily use output loops in conjunction with other loops within your template. For example, let's look at a Bicep file that deploys a set of storage accounts to Azure regions that are specified by the `locations` parameter:
+You'll ordinarily use output loops in conjunction with other loops within your Bicep file. For example, let's look at a Bicep file that deploys a set of storage accounts to Azure regions that are specified by the `locations` parameter:
 
 ::: code language="bicep" source="code/7-loop-output-complex.bicep" range="1-14" :::
 

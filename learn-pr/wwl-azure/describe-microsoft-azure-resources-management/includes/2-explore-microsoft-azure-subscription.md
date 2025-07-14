@@ -1,6 +1,6 @@
 Recall that a Microsoft Azure subscription is unit of management, billing, and scale.
 
-Using Azure requires an Azure subscription is associated with your Microsoft account. The subscription provides authenticated and authorized access to Azure products and services. It also allows you to provision resources.
+Using Azure requires an Azure subscription that is associated with your Microsoft account. The subscription provides authenticated and authorized access to Azure products and services. It also allows you to provision resources.
 
 An account can have multiple subscriptions, but it’s only required to have one. You could use a second subscription to manage different projects, or different clients or customers.
 
