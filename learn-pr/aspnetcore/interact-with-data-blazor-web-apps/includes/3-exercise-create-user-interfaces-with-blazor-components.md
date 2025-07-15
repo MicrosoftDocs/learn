@@ -1,4 +1,4 @@
-In this exercise, you start to create a new Blazing Pizza app for the pizza delivery company. The company has provided the current CSS, imagery, and HTML from its old site to work with.
+In this exercise, you start to create a new Blazing Pizza app for the pizza delivery company. The company provides you with the current CSS, imagery, and HTML from its old site to work with.
 
 > [!NOTE]
 > This module uses the .NET CLI and Visual Studio Code for local development. After you finish this module, you can apply the concepts by using Visual Studio for Windows and Visual Studio for Mac for macOS. For continued development, you can use Visual Studio Code for Windows, Linux, and macOS.
@@ -48,7 +48,7 @@ You can also run and debug your project with Visual Studio Code.
 1. Visual Studio Code also switches to the **Run and Debug** window that allows you to restart or stop your app.
 
     :::image type="content" source="../media/3-visual-studio-code-debugging.png" alt-text="Screenshot showing the debugging window in Visual Studio Code.":::
-1. Select <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app.
+1. To stop the app, select <kbd>Shift</kbd> + <kbd>F5</kbd>.
 
 ## Download the Blazing Pizza assets and starter files
 
