@@ -5,15 +5,15 @@ You can use Azure Pipelines to automate Bicep deployments. Azure Pipelines provi
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure to support a website at a toy company. You've built a Bicep template to deploy the website. Every time you need to reconfigure the website, you update your Bicep files and redeploy them from your computer. The website team asks for changes regularly, so the deployment process has become time-consuming. You want to find a way to automate the process so that you can focus on other tasks and initiatives.
+Suppose you're responsible for deploying and configuring the Azure infrastructure to support a website at a toy company. You've built a Bicep file to deploy the website. Every time you need to reconfigure the website, you update your Bicep files and redeploy them from your computer. The website team asks for changes regularly, so the deployment process has become time-consuming. You want to find a way to automate the process so that you can focus on other tasks and initiatives.
 
-You also want your colleagues to be able to make changes to the Bicep templates and deploy the templates themselves, but you need to make sure your colleagues follow the same process that you use. You decide to create a deployment pipeline that will run automatically every time the Bicep code is updated in your shared repository. The pipeline will deploy your Bicep files to Azure.
+You also want your colleagues to be able to make changes to the Bicep files and deploy the files themselves, but you need to make sure your colleagues follow the same process that you use. You decide to create a deployment pipeline that will run automatically every time the Bicep code is updated in your shared repository. The pipeline will deploy your Bicep files to Azure.
 
 :::image type="content" source="../media/1-workflow.png" alt-text="Diagram that shows a change to a Bicep file pushed to Azure Repos, and then a pipeline triggers deployment to Azure." border="false":::
 
 ## What will you learn?
 
-In this module, you'll learn how to automate the deployment of Bicep templates by using Azure Pipelines. You'll understand the benefits of using pipelines to deploy your code, and you'll build a basic pipeline that deploys a Bicep file. You'll also learn how to authorize your pipeline to deploy resources to your Azure environment and how to set when a pipeline runs.
+In this module, you'll learn how to automate the deployment of Bicep files by using Azure Pipelines. You'll understand the benefits of using pipelines to deploy your code, and you'll build a basic pipeline that deploys a Bicep file. You'll also learn how to authorize your pipeline to deploy resources to your Azure environment and how to set when a pipeline runs.
 
 ## What is the main goal?
 

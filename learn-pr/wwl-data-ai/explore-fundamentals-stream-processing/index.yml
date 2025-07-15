@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-fundamentals-of-stream-processing
 metadata:
-  title: Explore fundamentals of real-time analytics
+  title: Explore Fundamentals of Real-Time Analytics
   description: "Learn about the basics of stream processing, and the services in Microsoft Azure that you can use to implement real-time analytics solutions."
-  ms.date: 06/20/2025
-  author: wwlpublish
-  ms.author: calopez
+  ms.date: 07/15/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A

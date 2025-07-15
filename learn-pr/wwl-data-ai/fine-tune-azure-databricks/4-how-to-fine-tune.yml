@@ -4,8 +4,8 @@ title: Fine-tune an Azure OpenAI model
 metadata:
   title: Fine-tune an Azure OpenAI model
   description: "Fine-tune an Azure OpenAI model"
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/09/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 azureSandbox: false
@@ -13,4 +13,4 @@ labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/4-how-to-fine-tune.md)]
-
+
