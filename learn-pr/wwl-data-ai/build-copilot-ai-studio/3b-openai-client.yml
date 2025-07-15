@@ -10,7 +10,6 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-  zone_pivot_groups: dev-lang-csharp-python
 durationInMinutes: 7
 content: |
   [!include[](includes/3b-openai-client.md)]
