@@ -11,7 +11,7 @@ In this exercise, you clone an existing app and create a new address component t
 
 [!include[](../../../includes/dotnet9-sdk-version.md)]
 
-If you have never created a Blazor app before, follow the [setup instructions for Blazor](https://aka.ms/blazor-getting-started) to install the correct version of .NET and check your machine is set up correctly. Stop at the **Create your app** step.
+If you're creating your first Blazor app, follow the [setup instructions for Blazor](https://aka.ms/blazor-getting-started) to install the correct version of .NET and check your machine is set up correctly. Stop at the **Create your app** step.
 
 1. Open **Visual Studio Code**.
 1. Open the integrated terminal from Visual Studio Code by selecting **View**, then select **Terminal** from the main menu.
