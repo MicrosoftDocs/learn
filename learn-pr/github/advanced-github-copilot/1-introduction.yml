@@ -5,7 +5,7 @@ metadata:
   title: Introduction
   description: GitHub Copilot is an AI pair programmer that offers autocomplete-style suggestions as you code in your text editor. You can use natural language to describe what you need, or ask GitHub Copilot interactive questions about coding and get meaningful answers.
   author: abrilurena
-  ms.author: abrilu
+  ms.author: orthomas
   ms.date: 09/30/2024
   ms.topic: unit
   ms.collection:
