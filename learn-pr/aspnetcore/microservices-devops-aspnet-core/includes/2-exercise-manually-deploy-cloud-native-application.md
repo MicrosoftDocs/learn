@@ -173,7 +173,7 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
 
 Now the eShop images are in the ACR you can update the AKS deployment manifest to use these new images.
 
-1. In Visual Studio Code, from the EXPLORER panel, select the **deployment.yml** file in the root of the project.
+1. In Visual Studio Code or Codespaces, from the EXPLORER panel, select the **deployment.yml** file in the root of the project.
 1. Replace on line 17:
 
     ```yml
