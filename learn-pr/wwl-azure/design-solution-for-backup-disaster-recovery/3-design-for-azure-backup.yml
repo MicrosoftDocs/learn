@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Design for Azure Backup
   description: "Design for Azure Backup"
-  ms.date: 06/11/2025
+  ms.date: 07/01/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

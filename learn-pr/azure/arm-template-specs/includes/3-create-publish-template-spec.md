@@ -44,7 +44,7 @@ After your template is written, instead of submitting the template to Azure for 
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-[!INCLUDE [Note that Bicep template specs are not roundtrippable](./code/note-bicep-roundtrip.md)]
+[!INCLUDE [Note that Bicep file specs are not roundtrippable](./code/note-bicep-roundtrip.md)]
 
 ::: zone-end
 

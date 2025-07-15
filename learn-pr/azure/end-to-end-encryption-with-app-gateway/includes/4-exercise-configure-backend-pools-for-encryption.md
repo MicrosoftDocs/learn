@@ -42,7 +42,7 @@ The following image highlights the elements you configure in this exercise. You'
     ```
 
     > [!NOTE]
-    > This script takes several minutes to finish. Allow it to work through multiple processes to unpack and configure the gateway and resources. You should see that the process succeeded with zero warnings and zero errors.
+    > This script takes several minutes to finish. Allow it to work through multiple processes to unpack and configure the gateway and resources. You should see that the process succeeds with zero warnings and zero errors.
 
 ## Verify that the web server is configured correctly
 

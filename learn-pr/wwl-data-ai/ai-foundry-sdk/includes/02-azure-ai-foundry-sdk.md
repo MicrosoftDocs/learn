@@ -13,7 +13,7 @@ The core package for working with projects in the Azure AI Foundry SDK is the **
 
 To use the Azure AI Projects library in Python, you can use the **pip** package installation utility to install the **azure-ai-projects** package from PyPi:
 
-```python
+```
 pip install azure-ai-projects
 ```
 
@@ -23,7 +23,7 @@ pip install azure-ai-projects
 
 To use the Azure AI Projects library in C#, add the **Azure.AI.Projects** package to your C# project:
 
-```csharp
+```
 dotnet add package Azure.AI.Projects --prerelease
 ```
 
@@ -87,7 +87,7 @@ var projectClient = new AIProjectClient(
 > [!NOTE]
 > The code uses the default Azure credentials to authenticate when accessing the project. To enable this authentication, in addition to the **Azure.AI.Projects** package, you need to install the **Azure.Identity** package:
 >
-> `dotnet add package Azure.Identity`
+> `dotnet add package Azure.Identity --prerelease`
 
 ::: zone-end
 
