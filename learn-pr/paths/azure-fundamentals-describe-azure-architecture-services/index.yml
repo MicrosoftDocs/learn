@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-fundamentals-describe-azure-architecture-services
 metadata:
-  title: 'Microsoft Azure Fundamentals: Describe Azure architecture and services'
-  description: 'Microsoft Azure Fundamentals: Describe Azure architecture and services'
+  title: 'Introduction to Microsoft Azure: Describe Azure Architecture and Services'
+  description: 'Introduction to Microsoft Azure: Describe Azure architecture and services'
   ms.date: 08/11/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: learning-path
-title: 'Microsoft Azure Fundamentals: Describe Azure architecture and services'
+title: 'Introduction to Microsoft Azure: Describe Azure architecture and services'
 prerequisites: |
   * Basic familiarity with IT terms and concepts
 summary: |
