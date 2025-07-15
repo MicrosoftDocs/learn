@@ -2,7 +2,7 @@ Blazor includes several ways to share information between components. You can us
 
 Suppose you're working on the new pizza delivery website. Multiple pizzas should be displayed on the home page in the same way. You want to display the pizzas by rendering a child component for each pizza. Now, you want to pass an ID to that child component that determines the pizza it will display. You also want to store and display a value on multiple components that shows the total number of pizzas you've sold today.
 
-In this unit, you'll learn three different techniques you can use to share values between two or more Blazor components.
+In this unit, you learn three different techniques you can use to share values between two or more Blazor components.
 
 ## Sharing information with other components by using component parameters
 
@@ -68,7 +68,7 @@ In the parent component, you set parameter values by using attributes of the chi
 
 Component parameters work well when you want to pass a value to the immediate child of a component. Things become awkward when you have a deep hierarchy with children of children and so on. Component parameters aren't automatically passed to grandchild components from ancestor components or further down the hierarchy. To handle this problem elegantly, Blazor includes cascading parameters. When you set the value of a cascading parameter in a component, its value is automatically available to all descendant components to any depth.
 
-In the parent component, using the `<CascadingValue>` tag specifies the information that will cascade to all descendants. This tag is implemented as a built-in Blazor component. Any component that's rendered within that tag is able to access the value.
+In the parent component, using the `<CascadingValue>` tag specifies the information that will cascade to all descendants. This tag is implemented as a built-in Blazor component. Any component rendered within that tag is able to access the value.
 
 ```razor
 @page "/specialoffers"
@@ -145,6 +145,6 @@ Now, in any component where you want to set or retrieve AppState values, you can
 ```
 
 > [!NOTE]
-> This code implements a counter that increments when the user selects a button, much like the example in the [Blazor Tutorial - Build your first Blazor app](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro). The difference is that in this case, because we've stored the counter's value in an AppState scoped service, the count persists across page loads and can be seen by other users.
+> This code implements a counter that increments when the user selects a button, much like the example in the [Blazor Tutorial - Build your first Blazor app](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro). The difference is that in this case, because we stored the counter's value in an AppState scoped service, the count persists across page loads and can be seen by other users.
 
 In the next unit, you'll try it yourself!

@@ -1,8 +1,8 @@
-Engaging websites need to display dynamic content that might change all the time. Obtaining data from a dynamic source, such as a database or web service, is a fundamental technique in web development.
+Engaging websites need to display dynamic content that might change all the time. Learning how to obtain data from a dynamic source, such as a database or web service, is a fundamental technique in web development.
 
 Suppose you're working for a pizza delivery firm on its updated customer-facing website. You have a range of webpages laid out and designed as Blazor components. Now, you want to populate those pages with information about pizzas, toppings, and orders that you want to obtain from a database.
 
-In this unit, you'll learn how to access data and render it within HTML markup for display to the user.
+In this unit, you learn how to access data and render it within HTML markup for display to the user.
 
 ## Creating a registered data service
 
@@ -11,7 +11,7 @@ If you want to create a dynamic website that shows changing information to users
 In a Blazor Server app, you can create a registered service to represent a data source and obtain data from it.
 
 > [!NOTE]
-> The sources of data you can use in a Blazor app include relational databases, NoSQL databases, web services, various Azure services, and many other systems. You can use .NET technologies such as Entity Framework, HTTP clients, and ODBC to query those sources. These techniques are beyond the scope of this module. Here, you'll learn how to format and use data that you obtained from one of these sources and technologies.
+> The sources of data you can use in a Blazor app include relational databases, NoSQL databases, web services, various Azure services, and many other systems. You can use .NET technologies such as Entity Framework, HTTP clients, and ODBC (Open Database Connectivity) to query those sources. These techniques are beyond the scope of this module. Here, you learn how to format and use data that you obtained from one of these sources and technologies.
 
 The creation of a registered service starts by writing a class that defines its properties. Here's an example that you might write to represent a pizza:
 
@@ -117,7 +117,7 @@ After getting some data from the service, you'll want to display it to the user.
 
 ### Checking for data
 
-First, determine what the page displays before the pizzas are loaded. We can do this by checking whether the `todaysPizzas` collection is `null`. To run conditional rendering code in a Blazor component, use the `@if` directive:
+First, we determine what the page displays before the pizzas are loaded by checking whether the `todaysPizzas` collection is `null`. To run conditional rendering code in a Blazor component, use the `@if` directive:
 
 ```razor
 @if (todaysPizzas == null)
@@ -130,7 +130,7 @@ else
 }
 ```
 
-The `@if` directive renders the markup in its first code block only if the C# expression returns `true`. You can also use an `else if` code block to run other tests and render markup if they're true. Finally, you can specify an `else` code block to render code if none of the previous conditions returned true. By checking for `null` in the `@if` code block, you ensure that Blazor won't try to display pizza details before data is obtained from the service.
+The `@if` directive renders the markup in its first code block only if the C# expression returns `true`. You can also use an `else if` code block to run other tests and render markup if they're true. Finally, you can specify an `else` code block to render code if none of the previous conditions returned true. By checking for `null` in the `@if` code block, you ensure that Blazor doesn't try to display pizza details before data is obtained from the service.
 
 > [!NOTE]
 > Blazor also includes the `@switch` directive for rendering markup based on a test that might return multiple values. The `@switch` directive works in a similar way to the C# `switch` statement.
@@ -139,7 +139,7 @@ The `@if` directive renders the markup in its first code block only if the C# ex
 
 If Blazor executes the `else` statement in the preceding code, you know that some pizzas were obtained from the service. The next task is to display these pizzas to the user. Let's look at how to display the data in a simple HTML table.
 
-We don't know how many pizzas will be available when we code this page. We can use the `@foreach` directive to loop through all the objects in the `todaysPizzas` collection and render a row for each one:
+We don't know how many pizzas are available when we code this page. We can use the `@foreach` directive to loop through all the objects in the `todaysPizzas` collection and render a row for each one:
 
 ```razor
 <table>
@@ -169,7 +169,7 @@ We don't know how many pizzas will be available when we code this page. We can u
 
 :::image type="content" source="../media/4-simple-pizza-list.png" alt-text="Screenshot showing how the list of pizzas appears on a Blazor component.":::
 
-Of course, you probably want a richer display of pizzas than the plain table shown in this example. You might want to format the price and other values. Work with your graphic designers to develop a more engaging UI. For example, include pictures of each pizza.
+You probably want a richer display of pizzas than the plain table shown in this example. You might want to format the price and other values. Work with your graphic designers to develop a more engaging UI. For example, include pictures of each pizza.
 
 > [!NOTE]
 > Blazor includes other looping directives, such as `@for`, `@while`, and `@do while`. These directives return repeated blocks of markup. They work in a similar way to the equivalent C# `for`, `while`, and `do...while` loops.
