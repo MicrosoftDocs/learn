@@ -6210,3 +6210,8 @@ achievements:
   title: C# testing in Visual Studio
   summary: Start testing your C# apps by using the testing tools in Visual Studio.
   iconUrl: /training/achievements/visual-studio/visual-studio-test-tools.svg
+- uid: learn.visual-studio.visual-studio-test.trophy
+  type: trophy
+  title: Use Visual Studio for modern development
+  summary: Want to learn more about using Visual Studio to develop and test apps, but don't know where to start? Start here!
+  iconUrl: /training/achievements/visual-studio/visual-studio-test.svg

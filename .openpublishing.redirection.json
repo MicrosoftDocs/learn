@@ -52083,6 +52083,11 @@
       "source_path": "learn-pr/visual-studio/visual-studio-test-tools/index.yml",
       "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/microsoft-testing-platform-intro",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/visual-studio/index.yml",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/windows/",
+      "redirect_document_id": false
     }
   ]
 }
