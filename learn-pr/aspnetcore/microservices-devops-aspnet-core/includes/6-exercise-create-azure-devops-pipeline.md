@@ -9,16 +9,16 @@ Your manager wants you to change the CI/CD for the companies eShop app to use Az
 1. Select **+ New project**.
 1. For the **Project name**, enter **eShop deployment**.
 1. Leave the **Visibility** set to **Private**, select **Create**.
-1. On the left, select **Pipelines**, then select **Create Pipeline**.
+1. On the left, select **Pipelines**, and then select **Create Pipeline**.
 1. On the **Connect page**, for **Where is your code?**, select **GitHub**.
 1. If prompted, sign in to GitHub, and authorize Azure Pipelines to access your GitHub account.
 1. For **Select a repository**, select your forked repository.
 1. On the **Configure** page, select the **Deploy to Azure Kubernetes Service** option.
-1. In the **Deploy to Azure Kubernetes Service** pane, select your Azure subscription, then select **Continue**.
+1. In the **Deploy to Azure Kubernetes Service** pane, select your Azure subscription, and then select **Continue**.
 1. If prompted, log in to your Azure subscription.
 1. For the **Cluster**, select the AKS cluster you created in the previous unit **aks-eshop**.
-1. For the **Namespace**, leave **Existing** selected, then select **default**.
-1. For the **Container registry**, select the Azure Container Registry you created in the previous unit; for example, **acseshop186748394**.
+1. For the **Namespace**, leave **Existing** selected, and then select **default**.
+1. For the **Container registry**, select the Azure Container Registry you created in the previous unit such as **acseshop186748394**.
 1. For the **Image name**, enter **productservice**.
 1. For the **Service Port**, enter **8080**.
 1. Select **Validate and configure**.
@@ -109,7 +109,7 @@ stages:
 
 The **trigger** and **resources** sections define when the pipeline should run. In this case, the pipeline will run when a change is committed to the main branch of your repository.
 
-The **variables** section defines the variables used in the pipeline. The variables are used to define the Azure Container Registry, and the Dockerfile to use.
+The **variables** section defines the variables used in the pipeline. The variables are used to define the Azure Container Registry and the Dockerfile to use.
 
 The YAML then defines a **Build** job that uses the **ubuntu-latest** agent. The job uses the Docker task to build and push the image to the Azure Container Registry.
 
@@ -143,12 +143,12 @@ In the build stage, you can see that the build has failed. Select the **Build an
 
 In DevOps, go back to the pipeline summary page. You're going to edit the created pipeline to fix the error.
 
-1. In the top right, select the **More actions** menu, then select **Edit pipeline**.
+1. In the top right, select the **More actions** menu, and then select **Edit pipeline**.
 
 1. Line 17 of the YAML file defines the Dockerfile to use, and by default the pipeline expects there to be a file named **Dockerfile** in the root of the repository.
 
     The eShop uses a different docker file for the product service named **DockerfileProducts**. Edit Line 17 to be:
-    
+
     ```yaml
       dockerfilePath: '**/DockerfileProducts.acr'
     ```
@@ -156,11 +156,11 @@ In DevOps, go back to the pipeline summary page. You're going to edit the create
 1. Select **Save**.
 1. In the **Save** pane, select **Save**.
 1. Select **Run** then, in the **Run pipeline** pane, select **Run**.
-    
+
     Watch the **Build stage** complete. The **Deploy stage** pauses until you select it and permit it to run.
-    
+
     :::image type="content" source="../media/6-devops-completed.png" alt-text="A screenshot showing the completed pipeline." lightbox="../media/6-devops-completed.png" border="true":::
-    
+
     The pipeline completes successfully. Select the **Deploy** stage to view the steps.
 
     :::image type="content" source="../media/6-deploy-steps.png" alt-text="A screenshot showing the Deploy stage and the successfully completed steps." lightbox="../media/6-deploy-steps.png" border="true":::

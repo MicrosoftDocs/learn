@@ -3,7 +3,7 @@ Before you can automate your website deployments, you need to deploy the existin
 The commands create the following resources to deploy an updated version of the eShop app.
 
 - Provision an Azure Container Registry (ACR) and then push images into the registry.
-- Provision an AKS cluster and then deploy the containers into the cluster.
+- Provision an AKS cluster, and then deploy the containers into the cluster.
 - Test the deployment.
 - Create service principals to allow GitHub Actions to deploy to AKS and Azure Container Registry.
 
@@ -11,9 +11,11 @@ The commands create the following resources to deploy an updated version of the 
 > Make sure you've completed the **prerequisites** before you begin.
 
 ## Open the development environment
+
 You can choose to use a GitHub codespace that hosts the exercise, or complete the exercise locally in Visual Studio Code.
 
 ## GitHub Codespaces Setup
+
 Fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops/fork) repository to your own GitHub account. Then on your new fork:
 
 1. Select **Code**.
@@ -23,10 +25,11 @@ Fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops](ht
 GitHub takes several minutes to create and configure the codespace. When the process completes, you see the code files for the exercise.
 
 ## Optional: Visual Studio Code Setup
+
 To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops/fork) repository to your own GitHub account and clone it locally. Then:
 
 1. Install any [system requiements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
-1. Make sure Docker is running. 
+1. Make sure Docker is running.
 1. In a new Visual Studio Code window open the folder of the cloned repository
 1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
 1. Search: **>Dev Containers: Rebuild and Reopen in Container**
@@ -73,7 +76,7 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
     export ACR_NAME=acseshop$SRANDOM
     ```
 
-    The previous commands create environment variables that you'll use in the next Azure CLI commands. You need to change the **LOCATION** to an Azure region close to you; for example, **eastus**. If you'd like a different name for your resource group, AKS cluster, or ACR, change those values. To view your new repositories in the Azure portal, assign yourself as **App Compliance Automation Administrator** in the **Access control (IAM)** of the container registry.
+    The previous commands create environment variables that you'll use in the next Azure CLI commands. You need to change the **LOCATION** to an Azure region close to you such as **eastus**. If you'd like a different name for your resource group, AKS cluster, or ACR, change those values. To view your new repositories in the Azure portal, assign yourself as **App Compliance Automation Administrator** in the **Access control (IAM)** of the container registry.
 
 1. Run these Azure CLI commands:
 
@@ -83,7 +86,7 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
     az acr login --name $ACR_NAME
     ```
 
-    If you receive an authentication error when `az acr login --name $ACR_Name` is run, you need to turn on **Admin user** in the newly created **container register** in Azure under **Settings - Access Keys**. Azure prompts you to enter these credentials to continue. You could also need to authenticate again with `az login --use-device-code`.
+    If you receive an authentication error when `az acr login --name $ACR_Name` is run, you need to turn on **Admin user** in the newly created **container register** in Azure under **Settings - Access Keys**. Azure prompts you to enter these credentials to continue. You may also need to authenticate again with `az login --use-device-code`.
 
     These commands create a resource group to contain the Azure resources, an ACR for your images, and then logins into the ACR. It can take a few minutes until you see this output:
 
@@ -197,7 +200,7 @@ Now the eShop images are in the ACR you can update the AKS deployment manifest t
     kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.9.3/deploy/static/provider/cloud/deploy.yaml
     ```
 
-    The above `kubectl` command adds services and components to allow ingress into your AKS cluster. Check that the ingress is ready run using the following kubernetes command:
+    The above `kubectl` command adds services and components to allow ingress into your AKS cluster. Check that the ingress is ready to run using the following kubernetes command:
 
     ```bash
     kubectl get services --namespace ingress-nginx 
@@ -229,7 +232,7 @@ Now the eShop images are in the ACR you can update the AKS deployment manifest t
    ingress.networking.k8s.io/eshop-ingress created
    ```
 
-1. Check the two microservices are deployed with this command:
+1. Check that the two microservices are deployed with this command:
 
     ```bash
     kubectl get pods -A
