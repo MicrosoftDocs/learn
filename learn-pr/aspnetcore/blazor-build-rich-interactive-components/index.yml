@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Familiarity with HTML, CSS, and JavaScript web development.
   - Novice ability to write C# code.
-  - The [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) installed.
+  - The [.NET 9.0 SDK](https://dotnet.microsoft.com/download/dotnet/9.0) installed.
   - An integrated development environment (IDE) such as [Visual Studio Code](https://code.visualstudio.com).
 iconUrl: /training/achievements/build-interactive-components-blazor-web-apps.svg
 levels:
