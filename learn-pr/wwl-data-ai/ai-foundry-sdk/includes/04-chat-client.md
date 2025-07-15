@@ -76,7 +76,7 @@ namespace my_foundry_client
         
                 // Get a chat client
                 ChatClient chatClient = projectClient.GetAzureOpenAIChatClient(
-                    deploymentName: model_deployment, 
+                    deploymentName: model_deployment_name, 
                     connectionName: null,
                     apiVersion: "2024-10-21");
         
@@ -84,7 +84,7 @@ namespace my_foundry_client
                 Console.WriteLine("Enter a question:");
                 var user_prompt = Console.ReadLine();
 
-                ChatCompletion completion = openaiClient.CompleteChat(
+                ChatCompletion completion = chatClient.CompleteChat(
                 [
                     new SystemChatMessage("You are a helpful AI assistant."),
                     new UserChatMessage(user_prompt)

@@ -20,7 +20,7 @@ summary: |
   Take this learning path to get started with Bicep. In it, you'll:
 
   * Decide whether Bicep is the right choice for your deployments to Azure.
-  * Understand Bicep's declarative syntax and the structure of a Bicep template.
+  * Understand Bicep's declarative syntax and the structure of a Bicep file.
   * Apply Bicep features such as parameters, conditions, and loops to control how your infrastructure is deployed.
   * Define modules that break down complex deployments into smaller and more reusable components.
 
@@ -30,7 +30,7 @@ summary: |
   > Want to learn Bicep live from subject matter experts? [Follow on-demand Learn Live sessions with our experts.](/events/learntv/learnlive-iac-and-bicep/)
 
   [!include[](../../includes/bicep-paths.md)]
-prerequisites: Familiarity with Azure Resource Manager and Azure resource groups is recommended, but not required.
+prerequisites: Familiarity with Azure Resource Manager and Azure resource groups is recommended but not required.
 iconUrl: /training/achievements/bicep/fundamentals-bicep.svg
 levels:
 - beginner
@@ -44,7 +44,7 @@ products:
 modules:
 - learn.azure.introduction-infrastructure-code-using-bicep
 - learn.azure.deploy-azure-resources-bicep
-- learn.azure.build-reusable-bicep-templates-parameters
+- learn.azure.build-reusable-bicep-files-parameters
 - learn.azure.bicep-conditions-loops
 - learn.azure.create-composable-bicep-files-using-modules
 trophy:
