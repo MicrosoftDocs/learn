@@ -28,9 +28,9 @@ GitHub takes several minutes to create and configure the codespace. When the pro
 
 To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops](https://github.com/MicrosoftDocs/mslearn-dotnet-cloudnative-devops/fork) repository to your own GitHub account and clone it locally. Then:
 
-1. Install any [system requiements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
+1. Install any [system requirements](https://code.visualstudio.com/docs/devcontainers/containers) to run Dev Container in Visual Studio Code.
 1. Make sure Docker is running.
-1. In a new Visual Studio Code window open the folder of the cloned repository
+1. In a new Visual Studio Code window, open the folder of the cloned repository
 1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
 1. Search: **>Dev Containers: Rebuild and Reopen in Container**
 1. Visual Studio Code creates your development container locally.
@@ -133,7 +133,7 @@ To use **Visual Studio Code**, fork the [https://github.com/MicrosoftDocs/mslear
     az aks get-credentials --name $CLUSTER_NAME --resource-group $RESOURCE_GROUP
     ```
 
-    The above commands create a single node AKS cluster, connect it to the ACR, and then connect your local machine to the AKS cluster. The above commands can take a few minutes to complete.
+    The commands create a single node AKS cluster, connect it to the ACR, and then connect your local machine to the AKS cluster. The commands can take a few minutes to complete.
 
 1. Check that the new AKS can pull images from the ACR with this command:
 
@@ -200,7 +200,7 @@ Now the eShop images are in the ACR you can update the AKS deployment manifest t
     kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.9.3/deploy/static/provider/cloud/deploy.yaml
     ```
 
-    The above `kubectl` command adds services and components to allow ingress into your AKS cluster. Check that the ingress is ready to run using the following kubernetes command:
+    The `kubectl` command adds services and components to allow ingress into your AKS cluster. Check that the ingress is ready to run using the following kubernetes command:
 
     ```bash
     kubectl get services --namespace ingress-nginx 
@@ -255,7 +255,7 @@ Now the eShop images are in the ACR you can update the AKS deployment manifest t
     echo "http://$(kubectl get services --namespace ingress-nginx ingress-nginx-controller --output jsonpath='{.status.loadBalancer.ingress[0].ip}')"
     ```
 
-    The above command returns the external IP address for the web app. Hold <kbd>CTRL</kbd> and click the link to open the app in a new tab.
+    The command returns the external IP address for the web app. Hold <kbd>CTRL</kbd> and click the link to open the app in a new tab.
 
     :::image type="content" source="../media/2-eshop-homepage.png" alt-text="A screenshot of the eShop web app home page.":::
 

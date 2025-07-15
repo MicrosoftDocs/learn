@@ -3,12 +3,12 @@ Your manager wants you to change the CI/CD for the companies eShop app to use Az
 ## Create an Azure DevOps Pipeline
 
 > [!IMPORTANT]
-> Before you begin you'll need to have an Azure DevOps account. If you don't have one, you can create one for free at [dev.azure.com](https://dev.azure.com/).
+> Before you begin, you'll need to have an Azure DevOps account. If you don't have one, you can create one for free at [dev.azure.com](https://dev.azure.com/).
 
 1. Sign in to [dev.azure.com](https://dev.azure.com/).
 1. Select **+ New project**.
 1. For the **Project name**, enter **eShop deployment**.
-1. Leave the **Visibility** set to **Private**, select **Create**.
+1. Leave the **Visibility** set to **Private**, and select **Create**.
 1. On the left, select **Pipelines**, and then select **Create Pipeline**.
 1. On the **Connect page**, for **Where is your code?**, select **GitHub**.
 1. If prompted, sign in to GitHub, and authorize Azure Pipelines to access your GitHub account.
