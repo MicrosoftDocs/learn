@@ -2,7 +2,7 @@ Deployment pipelines need to communicate with Azure so they can create and confi
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've created a Bicep template to deploy your company's website. Until now, you've been deploying it from your own computer by using command-line tools. You've decided to move the deployment into a pipeline.
+Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've created a Bicep file to deploy your company's website. Until now, you've been deploying it from your own computer by using command-line tools. You've decided to move the deployment into a pipeline.
 
 One of your colleagues has told you that you'll need to set up a service principal for the deployment pipeline. You need to understand what this is, and then set it up so you can deploy your company's website.
 
@@ -21,7 +21,7 @@ By the end of this module, you'll have an understanding of service principals an
 
 You should be familiar with:
 
-- Creating and deploying basic Bicep templates, including modules.
+- Creating and deploying basic Bicep files, including modules.
 - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
 To follow along with the exercises in the module, you'll need:

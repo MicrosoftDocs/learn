@@ -11,6 +11,161 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/paths/kusto-query-language/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+        {
+      "source_path_from_root": "/learn-pr/paths/analyze-monitoring-data-with-kql/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/2-query-basics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/3-kql-query-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/4-kql-query-structure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/5-exercise.yml",
+       "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/6-query-types.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/7-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/2-group-data-aggregate-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/3-exercise-connect-to-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/4-exercise-count-events-count-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/5-exercise-visualize-data-render-operator.yml",
+       "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/6-exercise-summarize-data-aggregate-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/7-exercise-introduce-variables-let-statement.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/8-challenge.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/9-solution.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/10-knowledge-check.yml",
+       "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/2-explore-high-availability-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/3-explore-disaster-recovery-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/4-exercise-implement-high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/5-knowledge-check.yml",
+       "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/deploy-java-spring-boot-app-service-mysql/2-build.yml",
       "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
       "redirect_document_id": false
@@ -52007,6 +52162,141 @@
     {
       "source_path": "learn-pr/wwl-azure/implement-windows-server-iaas-virtual-machine-network-security/11-summary.md",
       "redirect_url": "/training/modules/implement-windows-server-iaas-virtual-machine-network-security/10-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/2-store-files-azure-blob-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/3-add-items-azure-storage-queues.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/4-add-rows-azure-storage-tables.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/5-exercise-add-items-azure-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/azure-storage-dotnet-aspire-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/storage/azure-storage-blobs-integration?tabs=dotnet-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/develop-ai-solutions-azure-openai/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/develop-applications-openai/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/ai-foundry-sdk/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/develop-applications-openai/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/ai-foundry-sdk/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/develop-applications-openai/2-getting-started.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/ai-foundry-sdk/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/develop-applications-openai/3-integrate-app.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/ai-foundry-sdk/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/develop-applications-openai/4-prompt-engineering.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/ai-foundry-sdk/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/develop-applications-openai/5-prompt-engineering-provide-context.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/ai-foundry-sdk/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/develop-applications-openai/6-generating-code.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/ai-foundry-sdk/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/develop-applications-openai/7-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/ai-foundry-sdk/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/develop-applications-openai/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/ai-foundry-sdk/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/develop-applications-openai/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/ai-foundry-sdk/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-own-data-azure-openai/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-own-data-azure-openai/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-own-data-azure-openai/2-understand-use-own-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-own-data-azure-openai/3-adding-own-data-source.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-own-data-azure-openai/4-chat-model-own-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-own-data-azure-openai/5-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-own-data-azure-openai/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-copilot-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-own-data-azure-openai/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/build-copilot-ai-studio/",
       "redirect_document_id": false
     }
   ]
