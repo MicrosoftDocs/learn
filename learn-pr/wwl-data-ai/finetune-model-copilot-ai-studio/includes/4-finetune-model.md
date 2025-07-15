@@ -1,6 +1,6 @@
-When you want to fine-tune a language model, you can use a base or foundation model that is already pretrained on large amounts of data. There are many foundation models available through the model catalog in the Azure AI Studio. You can fine-tune base models on various tasks, like text classification, translation, or chat completion.
+When you want to fine-tune a language model, you can use a base or foundation model that is already pretrained on large amounts of data. There are many foundation models available through the model catalog in Azure AI Foundry. You can fine-tune base models on various tasks, like text classification, translation, or chat completion.
 
-When you want to use a fine-tuned model to generate responses in a chat application, you need to use a base model that can be fine-tuned on a chat completion task. The Azure AI Studio model catalog allows you to filter based on fine-tuning tasks to decide which base model to select. You can, for example, select a GPT-4 or Llama-2-7b model to fine-tune on your own training data.
+When you want to use a fine-tuned model to generate responses in a chat application, you need to use a base model that can be fine-tuned on a chat completion task. The Azure AI Foundry model catalog allows you to filter based on fine-tuning tasks to decide which base model to select. You can, for example, select a GPT-4 or Llama-2-7b model to fine-tune on your own training data.
 
 To fine-tune a language model from Azure AI Foundry's model catalog, you can use the user interface provided in the portal.
 
