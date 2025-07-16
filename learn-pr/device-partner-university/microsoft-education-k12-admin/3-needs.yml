@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.k12-admin.challenges
-title: K-12 administrator challenges
+uid: learn.dpu.k12-admin.needs
+title: What K-12 administrators need
 metadata:
-  title: Challenges for K-12 administrators
+  title: What K-12 administrators Need
   description: This content is part of the "Microsoft Education for K-12 administrators" module.
   ms.date: 07/01/2025
   author: melissawinters
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-challenges.md)]
+  [!include[](includes/3-needs.md)]

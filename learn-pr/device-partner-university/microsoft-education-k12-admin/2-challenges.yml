@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.k12-admin.searching
-title: Learning Accelerators supporting information literacy
+uid: learn.dpu.k12-admin.challenges
+title: K-12 administrator challenges
 metadata:
-  title: Learning Accelerators supporting information literacy
+  title: Challenges for K-12 Administrators
   description: This content is part of the "Microsoft Education for K-12 administrators" module.
   ms.date: 07/01/2025
   author: melissawinters
   ms.author: v-mwinters
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
-  [!include[](includes/11-searching.md)]
+  [!include[](includes/2-challenges.md)]

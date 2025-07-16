@@ -30,10 +30,8 @@ products:
   - m365-education
 units:
   - learn.dpu.k12-admin.introduction
-  - learn.dpu.k12-admin.who-are-administrators
   - learn.dpu.k12-admin.challenges
   - learn.dpu.k12-admin.needs
-  - learn.dpu.k12-admin.why-microsoft-education
   - learn.dpu.k12-admin.learning-accelerators
   - learn.dpu.k12-admin.reading
   - learn.dpu.k12-admin.mathematics
@@ -47,7 +45,6 @@ units:
   - learn.dpu.k12-admin.microsoft-teams
   - learn.dpu.k12-admin.onenote-for-education
   - learn.dpu.k12-admin.onenote-staff-notebooks
-  - learn.dpu.k12-admin.accessibility-tools
   - learn.dpu.k12-admin.knowledge-check
   - learn.dpu.k12-admin.summary
 badge:

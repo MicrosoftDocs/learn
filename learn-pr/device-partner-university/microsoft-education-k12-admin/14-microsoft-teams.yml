@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.k12-admin.accessibility-tools
-title: Accessibility tools
+uid: learn.dpu.k12-admin.microsoft-teams
+title: Microsoft Teams
 metadata:
-  title: Accessibility tools
+  title: Microsoft Teams
   description: This content is part of the "Microsoft Education for K-12 administrators" module.
   ms.date: 07/01/2025
   author: melissawinters
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/19-accessibility-tools.md)]
+  [!include[](includes/14-microsoft-teams.md)]

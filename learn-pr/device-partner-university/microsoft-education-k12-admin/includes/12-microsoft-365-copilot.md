@@ -6,8 +6,8 @@ With the ability to connect to work data, Microsoft 365 Copilot can truly simpli
 
 Let’s look at some examples of what administrators can do with Microsoft 365 Copilot:
 
-- Use Copilot Chat to analyze an attendance data spreadsheet and identify any concerning patterns.
-- Use Copilot in Teams to automatically take notes and organize action items.
-- Use Copilot in Outlook to summarize lengthy email threads and ensure nothing important is overlooked.
-- Use Copilot in Word to draft a grant proposal outline based on school improvement goals.
-- Use Copilot Studio agent builder in Copilot Chat to create an agent that handles routine administrative tasks.
+- Analyze an attendance data spreadsheet and identify any concerning patterns with Copilot Chat.
+- Automatically take notes and organize action items with Copilot in Teams.
+- Summarize lengthy email threads and ensure nothing important is overlooked with Copilot in Outlook.
+- Draft a grant proposal outline based on school improvement goals with Copilot in Word.
+- Create an agent that handles routine administrative tasks with Copilot Studio agent builder in Copilot Chat.
