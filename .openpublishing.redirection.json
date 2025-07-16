@@ -52298,6 +52298,41 @@
       "source_path": "learn-pr/wwl-data-ai/use-own-data-azure-openai/7-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-copilot-ai-studio/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/send-messages-rabbitmq-dotnet-aspire-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/messaging/rabbitmq-integration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/send-messages-rabbitmq-dotnet-aspire-app/2-what-rabbitmq.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/messaging/rabbitmq-integration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/send-messages-rabbitmq-dotnet-aspire-app/3-send-messages-rabbitmq.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/messaging/rabbitmq-integration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/send-messages-rabbitmq-dotnet-aspire-app/4-exercise-send-messages-rabbitmq.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/messaging/rabbitmq-integration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/send-messages-rabbitmq-dotnet-aspire-app/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/messaging/rabbitmq-integration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/send-messages-rabbitmq-dotnet-aspire-app/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/messaging/rabbitmq-integration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/send-messages-rabbitmq-dotnet-aspire-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/messaging/rabbitmq-integration",
+      "redirect_document_id": false
     }
   ]
 }
