@@ -10,11 +10,36 @@ achievements:
   title: Guided project - Analyze logs in Azure Monitor with KQL
   summary: Write log queries to find answers to operational and business questions. Use Kusto Query Language (KQL) to extract insights from logs in Azure Monitor.
   iconUrl: /training/achievements/analyze-logs-with-kql.svg
+- uid: learn.azure.explore-fundamentals-kql.badge
+  type: badge
+  title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)
+  summary: Learn about the basics of Kusto Query Language (KQL), and the various Microsoft products that use it.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.gain-insights-data-kql.badge
+  type: badge
+  title: Gain insights from your data by using Kusto Query Language
+  summary: Write advanced queries in Kusto Query Language to help you gain insights from your data. 
+  iconUrl: /training/achievements/gain-insights-in-your-data-using-kusto-query-language.svg
 - uid: learn.azure.characterize-dataset-azure-data-explorer.badge
   type: badge
   title: Characterize an unfamiliar dataset with Azure Data Explorer
   summary: Learn how to characterize an unfamiliar dataset using Azure Data Explorer. 
   iconUrl: /training/achievements/azure-data-explore-web.svg
+- uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.badge
+  type: badge
+  title: Implement high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance
+  summary: In this module, you'll learn to describe high-availability and disaster-recovery options for Azure Arc-enabled SQL Managed Instance.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.intro-to-arc-enabled-data-services.badge
+  type: badge
+  title: Introduction to Azure Arc-enabled data services
+  summary: In this module, you learn the fundamentals of hybrid computing and Azure Arc.
+  iconUrl: /training/achievements/intro-to-arc-enabled-data-services.svg
+- uid: learn.implement-message-workflows-with-service-bus.badge
+  type: badge
+  title: Implement message-based communication workflows with Azure Service Bus
+  summary: Write C# code in a custom application that sends and receives messages using Azure Service Bus topics and queues.
+  iconUrl: /training/achievements/implement-message-workflows-with-service-bus.svg
 - uid: learn.intro-to-azure-data-explorer.badge
   type: badge
   title: Introduction to Azure Data Explorer
@@ -110,6 +135,16 @@ achievements:
   title: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
   summary: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
   iconUrl: /training/achievements/iot/manage-monitor-devices-iot-hub-azure-monitor.svg
+- uid: learn.kusto-query-language.trophy.trophy
+  type: trophy
+  title: Data analysis with Kusto Query Language
+  summary: In this learning path, students learn how to analyze data in various environments using the Kusto Query Language.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.analyze-monitoring-data-with-kql.trophy
+  type: trophy
+  title: Analyze monitoring data with Kusto Query Language
+  summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
+  iconUrl: /training/achievements/generic-trophy.svg
 - uid: learn.wwl.explore-iot-hub-monitoring.badge
   type: badge
   title: Guided project - Explore Azure IoT Hub monitoring
@@ -6085,6 +6120,11 @@ achievements:
   title: Fundamentals of optical character recognition
   summary: Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.
   iconUrl: /training/achievements/read-text-computer-vision.svg
+- uid: learn.azure.introduction-to-azure-api-management.badge
+  type: badge
+  title: Introduction to Azure API Management
+  summary: Learn how Azure API Management can help reduce API complexity in your organization. Determine the types of deployments for which Azure API Management is a good API lifecycle management solution.
+  iconUrl: /training/achievements/introduction-to-azure-api-management.svg
 - uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.badge
   type: badge
   title: Accelerate a Spring Boot application with Azure Cache for Redis
@@ -6125,8 +6165,83 @@ achievements:
   title: Investigate threats with Content search in Microsoft Purview
   summary: This module examines how to search for content in the Microsoft Purview portal using Content Search functionality, including how to view and export the search results, and configure search permissions filtering.
   iconUrl: /training/achievements/m365-content-compliance.svg
+- uid: learn.azdo.evolve-your-devops-practices.trophy
+  type: trophy
+  title: Get started with Azure DevOps
+  summary: DevOps is the union of people, process, and products to enable continuous delivery of value to your end users. Azure DevOps is a set of services that gives you the tools you need to do just that. With Azure DevOps, you can build, test, and deploy any application, either to the cloud or on premises. DevOps practices that enable transparency, cooperation, continuous delivery and continuous deployment become embedded in your software development lifecycle.
+  iconUrl: /training/achievements/azure-devops/evolve-your-devops-practices.svg
 - uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.badge
   type: badge
   title: Create and implement application allowlists with adaptive application control
   summary: You're able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs.
   iconUrl: /training/achievements/create-and-implement-application-allowlists-with-adaptive-application-control.svg
+- uid: learn.azdo.choose-an-agile-approach.badge
+  type: badge
+  title: Choose an Agile approach to software development
+  summary: Learn to foster the DevOps values of transparency and team cooperation with Azure Boards.
+  iconUrl: /training/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
+- uid: learn.azdo.manage-delivery-plans.badge
+  type: badge
+  title: Manage Agile software delivery plans across teams
+  summary: Learn how to optimize delivery efficiency by improving work plan visibility across teams.
+  iconUrl: /training/achievements/azure-devops/manage-agile-software-delivery-plans-across-teams.svg
+- uid: learn.get-started-with-devops.badge
+  type: badge
+  title: Introduction to Azure DevOps
+  summary: Explore what DevOps is (and isn't) and learn how to get started with Azure DevOps.
+  iconUrl: /training/achievements/azure-devops/get-started-with-devops.svg
+- uid: learn.azdo.assess-your-development-process.badge
+  type: badge
+  title: Assess your existing software development process
+  summary: Use a value stream map to help you examine your existing processes and technologies.
+  iconUrl: /training/achievements/azure-devops/assess-your-software-development-process.svg
+- uid: learn.wwl.analyze-text-with-text-analytics-service.badge
+  type: badge
+  title: Fundamentals of Text Analysis with the Language Service
+  summary: Explore Azure AI Language's natural language processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
+  iconUrl: /learn/achievements/analyze-text-with-text-analytics-service.svg
+- uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.badge
+  type: badge
+  title: Fundamentals of question answering with the Language Service
+  summary: Create a custom question answering knowledge base with Azure AI Language.
+  iconUrl: /learn/achievements/build-faq-chatbot-qna-maker-azure-bot-service.svg
+- uid: learn.wwl.create-language-model-with-luis.badge
+  type: badge
+  title: Fundamentals of conversational language understanding
+  summary: In this module, we introduce you to conversational language understanding, and show how to create applications that understand language with Azure AI Language.
+  iconUrl: /training/achievements/create-publish-luis-model.svg
+- uid: learn.wwl.explore-natural-language-processing.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Natural Language Processing'
+  summary: Natural language processing supports applications that can see, hear, speak with, and understand users. Using text analytics, translation, and language understanding services, Microsoft Azure makes it easy to build applications that support natural language.
+  iconUrl: /learn/achievements/explore-natural-language-processing.svg
+- uid: learn.wwl.fundamentals-azure-ai-services.badge
+  type: badge
+  title: Fundamentals of Azure AI services
+  summary: In this module, you learn the fundamentals of how Azure AI services can be used to build applications.
+  iconUrl: /training/achievements/fundamentals-azure-ai-services.svg
+- uid: learn.wwl.translate-text-with-translation-service.badge
+  type: badge
+  title: Fundamentals of language translation
+  summary: Automated translation capabilities in an AI solution enable closer collaboration by removing language barriers.
+  iconUrl: /training/achievements/translate-text-with-translation-service.svg
+- uid: learn.azure.logic-apps-and-arm-templates.badge
+  type: badge
+  title: Create and deploy an Azure Logic Apps workflow using Azure Resource Manager templates
+  summary: In this module, you'll define an Azure Logic Apps workflow declaratively as a Resource Manager template and deploy the app using the Azure Command Line Interface (CLI).
+  iconUrl: /training/achievements/logic-apps-and-arm-templates.svg
+- uid: learn.azure-storage-dotnet-aspire-app.badge
+  type: badge
+  title: Use Azure Storage with .NET Aspire
+  summary: Learn how to access and use Azure Storage accounts from .NET Aspire solutions for file storage, data storage, and message queuing.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.develop-ai-solutions-azure-openai.trophy
+  type: trophy
+  title: Develop Generative AI solutions with Azure OpenAI in Foundry Models
+  summary: Azure OpenAI in Foundry Models provides access to OpenAI's powerful large language models such as GPT and Embeddings models. These models enable various natural language processing (NLP) solutions to understand, converse, and generate content. Users can access the service through REST APIs, SDKs, and Azure AI Foundry.
+  iconUrl: /training/achievements/develop-ai-solutions-azure-openai.svg
+- uid: learn.iot.run-iot-edge-device-restricted-network-offline.badge
+  type: badge
+  title: Run an IoT Edge device in a restricted network and offline
+  summary: This module is theoretical and will walk you through how an IoT Edge device can be harnessed as a gateway to child devices and can store captured information if connectivity is unavailable.
+  iconUrl: /training/achievements/run-iot-edge-device-restricted-network-offline.svg

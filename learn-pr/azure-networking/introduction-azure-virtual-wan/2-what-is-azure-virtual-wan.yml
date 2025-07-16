@@ -4,11 +4,11 @@ title: What is Azure Virtual WAN?
 metadata:
   title: What is Azure Virtual WAN?
   description: Overview of Azure Virtual WAN and its features
-  ms.date: 12/06/2023
+  ms.date: 07/02/2025
   author: cherylmc
   ms.author: cherylmc
   ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-what-is-azure-virtual-wan.md)]
-
+
