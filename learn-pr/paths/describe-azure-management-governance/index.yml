@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.describe-azure-management-governance
 metadata:
-  title: 'Microsoft Azure Fundamentals: Describe Azure management and governance'
+  title: 'Introduction to Microsoft Azure: Describe Azure Management and Governance'
   description: 'Microsoft Azure Fundamentals: Describe Azure management and governance'
   ms.date: 08/16/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: learning-path
-title: 'Microsoft Azure Fundamentals: Describe Azure management and governance'
+title: 'Introduction to Microsoft Azure: Describe Azure management and governance'
 prerequisites: |
   * Basic familiarity with IT terms and concepts
 summary: |

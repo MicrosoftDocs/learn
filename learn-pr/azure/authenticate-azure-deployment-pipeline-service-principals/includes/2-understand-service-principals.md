@@ -2,17 +2,17 @@ Service principals provide a way to authenticate pipelines, applications, and so
 
 ## Why does a pipeline need to authenticate?
 
-When you deploy a Bicep template, you effectively ask Azure Resource Manager to create or modify your Azure resources. In this example scenario, you've created a Bicep template to deploy your toy company's website. The Bicep template declares resources that include an Azure App Service plan, an app, and an Application Insights instance.
+When you deploy a Bicep file, you effectively ask Azure Resource Manager to create or modify your Azure resources. In this example scenario, you've created a Bicep file to deploy your toy company's website. The Bicep file declares resources that include an Azure App Service plan, an app, and an Application Insights instance.
 
-When you deploy the template, Resource Manager checks whether the resources exist. If they don't, Resource Manager creates them. If any already exist, Resource Manager ensures that their configuration matches the configuration that you specify in the template.
+When you deploy the file, Resource Manager checks whether the resources exist. If they don't, Resource Manager creates them. If any already exist, Resource Manager ensures that their configuration matches the configuration that you specify in the file.
 
-All of these operations require permissions, because they access and modify your Azure resources. The specific permissions needed for deployment will depend on what the template contains. To deploy the example Bicep template for your toy company's website, you need to have the following permissions inside the resource group that you're deploying to:
+All of these operations require permissions, because they access and modify your Azure resources. The specific permissions needed for deployment will depend on what the file contains. To deploy the example Bicep file for your toy company's website, you need to have the following permissions inside the resource group that you're deploying to:
 
 - The ability to create deployments. Deployments are considered to be resources with a type of `Microsoft.Resources/deployments`.
 - The ability to create and modify App Service plans and apps.
 - The ability to create and modify Application Insights instances.
 
-Until now, you've probably deployed your Bicep templates yourself by using the Azure CLI or Azure PowerShell. When you use these tools, you normally use your own user account and authenticate by using your browser. This is called using your own _identity_. When you submit a deployment, Azure verifies that your identity has the necessary permissions to do what your Bicep template specifies.
+Until now, you've probably deployed your Bicep files yourself by using the Azure CLI or Azure PowerShell. When you use these tools, you normally use your own user account and authenticate by using your browser. This is called using your own _identity_. When you submit a deployment, Azure verifies that your identity has the necessary permissions to do what your Bicep file specifies.
 
 After you move to a pipeline, you need to use a different type of identity because the pipeline itself runs deployments, without your direct involvement.
 

@@ -4,12 +4,12 @@ title: Identify key components of LLM applications
 metadata:
   title: Identify key components of LLM applications
   description: "Identify key components of LLM applications"
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/07/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/04-key-components-llms.md)]
+  [!include[](includes/04-key-components-llms.md)]

@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Load and render a model with Unity
   description: Learn how to use Unity to load and configure a sample engine model project and render the model with Azure Remote Rendering.
   ms.date: 07/31/2023
-  author: aprilspeight
+  author: aprilgittens
   ms.author: apspeigh
   ms.topic: unit
   ms.custom:
@@ -16,4 +16,4 @@ azureSandbox: true
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-render-a-model-in-unity.md)]
-
+

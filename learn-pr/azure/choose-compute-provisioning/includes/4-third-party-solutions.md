@@ -10,9 +10,9 @@ Let's consider Chef and Terraform against the same criteria as in the previous u
 
 ### Scenario
 
-Your organization has decided to let the developers create some virtual machines for their own testing purposes. The development team knows various programming languages and recently started writing Ruby applications. They'd like to scale these applications and run them on test environments. They're familiar with Linux. The developers run only Linux-based machines and destroy them after testing is finished.
+Your organization decides to let the developers create some virtual machines for their own testing purposes. The development team knows various programming languages and recently started writing Ruby applications. They'd like to scale these applications and run them on test environments. They're familiar with Linux. The developers run only Linux-based machines and destroy them after testing is finished.
 
-The scenario is ideal for Chef, since you're letting the programmers create their own environments by using their own Ruby configuration scripts. They're already familiar with Ruby, since they've written applications with the language.
+The scenario is ideal for Chef, since you're letting the programmers create their own environments by using their own Ruby configuration scripts. They're already familiar with Ruby, since their applications are written in that language.
 
 ### Solution summary
 
@@ -28,7 +28,7 @@ Chef is suitable for large-scale infrastructure deployment and configuration. Ch
 
 ### Scenario
 
-Your organization has gained a new client who wants to create multiple virtual machines across several cloud providers. The client has asked you to create three new virtual machines in Azure and one other in the public cloud. The client wants the virtual machines to be similar. They should be created by using a script that works with both providers. This approach helps the client have a better idea of what they've provisioned across providers.
+Your organization gains a new client who wants to create multiple virtual machines across several cloud providers. The client asks you to create three new virtual machines in Azure and one other in the public cloud. The client wants the virtual machines to be similar. They should be created by using a script that works with both providers. This approach helps the client have a better idea of what they provisioned across providers.
 
 Terraform is a good solution for this scenario. You can easily create virtual machines and other resources on multiple providers by using Terraform.
 

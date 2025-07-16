@@ -12,7 +12,7 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
 
 1. On the resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the menu, search for and select **Container Registry**.
+1. In the menu, search for **Container Registry**. In the Container Registry search result, select **Create** > **Container Registry**.
 
     :::image type="content" source="../media/7-search-container-registry.png" alt-text="Screenshot that shows Create a resource with Container Registry.":::
 
@@ -83,7 +83,7 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
     docker push <registry-name>.azurecr.io/reservationsystem:latest
     ```
 
-    Wait until the upload completes. This process will take several minutes to push all the objects of the image to your repository. You can observe the progress as each object advances from *Waiting* to *Preparing* to *Pushing* to *Pushed*.
+    Wait until the upload completes. This process takes several minutes to push all the objects of the image to your repository. You can observe the progress as each object advances from *Waiting* to *Preparing* to *Pushing* to *Pushed*.
 
 ## Verify the registry contents
 
@@ -101,7 +101,7 @@ For the remainder of the exercise, you'll return to the Azure portal.
 
 1. In the Azure portal, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the resource menu, select **Containers**, and then select **Container Instances**.
+1. In the resource menu, select **Containers**, and then select **Create** > **Container Instances** in the **Container Instances** search item.
 
     :::image type="content" source="../media/7-search-container-instance.png" alt-text="Screenshot showing Container Instances.":::
 

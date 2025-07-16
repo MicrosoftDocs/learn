@@ -78,7 +78,7 @@ azd provision
 azd deploy
 ```
 
-## Using custom Bicep templates
+## Using custom Bicep files
 
 You've seen that you can use the `azd infra synth` command to generate the Bicep files necessary to deploy a .NET Aspire app. You can then modify those Bicep files to alter the deployment. But you can also intervene in the creation of Bicep files earlier, during coding by linking to a Bicep file in the app host project.
 
@@ -132,4 +132,4 @@ In the above code, notice that:
 - [What is Bicep?](/azure/azure-resource-manager/bicep/overview)
 - [Understand the structure and syntax of Bicep files](/azure/azure-resource-manager/bicep/file)
 - [Generate Bicep from .NET Aspire project model](/dotnet/aspire/deployment/azure/aca-deployment-azd-in-depth#generate-bicep-from-net-aspire-project-model)
-- [Use custom Bicep templates](/dotnet/aspire/deployment/azure/custom-bicep-templates)
+- [Use custom Bicep files](/dotnet/aspire/deployment/azure/custom-bicep-templates)
