@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.dpu.copilot-and-copilot-agents
+title: Microsoft 365 Copilot and Copilot agents
+metadata:
+  title: Microsoft 365 Copilot and Copilot agents
+  description: In this module, you'll learn how Microsoft 365 Copilot and Copilot agents enhance productivity and streamline workflows by providing intelligent assistance within Microsoft 365 applications.
+  ms.date: 06/26/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: microsoft-365-copilot
+summary: > 
+  Explore Microsoft 365 Copilot and Copilot agents to understand what they are, how they work, and the value they bring to organizations.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Differentiate between Microsoft 365 Copilot and Copilot agents
+  - List the benefits they bring to organizations, such as improve efficiency and enhance overall productivity
+  - Assess whether Microsoft 365 Copilot and Copilot agents are appropriate for a specific organization.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels: 
+  - beginner
+roles: 
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - microsoft-365-copilot
+units:
+  - learn.dpu.copilot-and-copilot-agents.introduction
+  - learn.dpu.copilot-and-copilot-agents.microsoft-365-copilot
+  - learn.dpu.copilot-and-copilot-agents.microsoft-365-copilot-agents
+  - learn.dpu.copilot-and-copilot-agents.types-of-agents
+  - learn.dpu.copilot-and-copilot-agents.how-to-build-agents
+  - learn.dpu.copilot-and-copilot-agents.additional-resources
+  - learn.dpu.copilot-and-copilot-agents.summary
+badge:
+  uid: learn.dpu.copilot-and-copilot-agents.badge

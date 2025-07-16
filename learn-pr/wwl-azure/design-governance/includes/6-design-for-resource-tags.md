@@ -1,7 +1,9 @@
 [Resource tags](/azure/azure-resource-manager/management/tag-resources?tabs=json) are another way to organize resources. Tags provide extra information, or metadata, about your resources. 
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=670885a7-e1ed-43af-b32e-6052dbd6e7a4]
+
 > [!TIP]
-> Before you start a resource tagging project, ask yourself what you want to accomplish. Will reporting or billing use tags? Can you use the tags to enable more effective searching for Tailwind Traders? Will automated scripts use tags? Be sure to clearly define your goals. 
+> Before you start a resource tagging project, ask yourself what you want to accomplish. Can you use the tags to enable more effective searching for Tailwind Traders? Do automated scripts use tags? Be sure to clearly define your goals. 
 
 ### Things to know about resource tags
 
@@ -13,7 +15,7 @@ As you plan the governance strategy for Tailwind Traders, consider these charact
 
 - Resource tags can be added, modified, and deleted. These actions can be done with PowerShell, the Azure CLI, Azure Resource Manager (ARM) templates, the REST API, or the Azure portal.
 
-- [Tags can be applied](/azure/azure-resource-manager/management/tag-resources) to a resource group. However, tags applied to a resource group aren't inherited by the resources in the group.
+- [Tags can be applied](/azure/azure-resource-manager/management/tag-resources) to a resource group. However, tags applied to a resource group aren't inherited.
 
 ### Things to consider when creating resource tags
 
@@ -21,7 +23,7 @@ You created the organizational hierarchy for Tailwind Traders. Now you need to d
 
 :::image type="content" source="../media/resource-tags.png" alt-text="Diagram that shows an example hierarchy of resource tags." border="false":::
 
-- **Consider your organization's taxonomy**. Align your resource tags with accepted department nomenclature to make it easier to understand. Are there recognized terms for compliance or cost reporting for the Tailwind Traders organization? Add tags for office locations, confidentiality levels, or other defined policies.
+- **Consider your organization's taxonomy**. Align your resource tags with accepted department nomenclature. Are there recognized terms for compliance or cost reporting for the Tailwind Traders organization? Add tags for office locations, confidentiality levels, or other defined policies.
 
 - **Consider whether you need IT-aligned or business-aligned tagging**. Implement IT-aligned tagging or business-aligned tagging, or a combination of these approaches to be most effective.
 
@@ -40,7 +42,7 @@ You created the organizational hierarchy for Tailwind Traders. Now you need to d
    | Tag type | Description |  Example name-value pairs |
    | --- | --- | --- |
    | **Functional** | Functional tags categorize resources according to their purpose within a workload. This tag shows the deployed environment for a resource, or other functionality and operational details. | - `app = catalogsearch1` <br> - `tier = web` <br> - `webserver = apache` <br> - `env = production, dev, staging` |
-   | **Classification** | Classification tags identify a resource by how it's used and what policies apply to it. | - `confidentiality = private` <br> - `SLA = 24hours` |
+   | **Classification** | Classification tags identify resource usage. | - `confidentiality = private` <br> - `SLA = 24hours` |
    | **Accounting** | Accounting tags allow a resource to be associated with specific groups within an organization for billing purposes. | - `department = finance` <br> - `program = business-initiative` <br> - `region = northamerica` | 
    | **Partnership** | Partnership tags provide information about the people (other than IT members) who are associated with a resource, or otherwise affected by the resource. | - `owner = jsmith` <br> - `contactalias = catsearchowners` <br> - `stakeholders = user1;user2;user3` |
    | **Purpose** | Purpose tags align resources to business functions to better support investment decisions. | - `businessprocess = support` <br> - `businessimpact = moderate` <br> - `revenueimpact = high` | 

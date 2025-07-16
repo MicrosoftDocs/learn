@@ -10,11 +10,26 @@ achievements:
   title: Guided project - Analyze logs in Azure Monitor with KQL
   summary: Write log queries to find answers to operational and business questions. Use Kusto Query Language (KQL) to extract insights from logs in Azure Monitor.
   iconUrl: /training/achievements/analyze-logs-with-kql.svg
+- uid: learn.azure.explore-fundamentals-kql.badge
+  type: badge
+  title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)
+  summary: Learn about the basics of Kusto Query Language (KQL), and the various Microsoft products that use it.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.gain-insights-data-kql.badge
+  type: badge
+  title: Gain insights from your data by using Kusto Query Language
+  summary: Write advanced queries in Kusto Query Language to help you gain insights from your data. 
+  iconUrl: /training/achievements/gain-insights-in-your-data-using-kusto-query-language.svg
 - uid: learn.azure.characterize-dataset-azure-data-explorer.badge
   type: badge
   title: Characterize an unfamiliar dataset with Azure Data Explorer
   summary: Learn how to characterize an unfamiliar dataset using Azure Data Explorer. 
   iconUrl: /training/achievements/azure-data-explore-web.svg
+- uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.badge
+  type: badge
+  title: Implement high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance
+  summary: In this module, you'll learn to describe high-availability and disaster-recovery options for Azure Arc-enabled SQL Managed Instance.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.azure.intro-to-arc-enabled-data-services.badge
   type: badge
   title: Introduction to Azure Arc-enabled data services
@@ -120,6 +135,16 @@ achievements:
   title: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
   summary: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
   iconUrl: /training/achievements/iot/manage-monitor-devices-iot-hub-azure-monitor.svg
+- uid: learn.kusto-query-language.trophy.trophy
+  type: trophy
+  title: Data analysis with Kusto Query Language
+  summary: In this learning path, students learn how to analyze data in various environments using the Kusto Query Language.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.analyze-monitoring-data-with-kql.trophy
+  type: trophy
+  title: Analyze monitoring data with Kusto Query Language
+  summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
+  iconUrl: /training/achievements/generic-trophy.svg
 - uid: learn.wwl.explore-iot-hub-monitoring.badge
   type: badge
   title: Guided project - Explore Azure IoT Hub monitoring
@@ -6205,3 +6230,13 @@ achievements:
   title: Create and deploy an Azure Logic Apps workflow using Azure Resource Manager templates
   summary: In this module, you'll define an Azure Logic Apps workflow declaratively as a Resource Manager template and deploy the app using the Azure Command Line Interface (CLI).
   iconUrl: /training/achievements/logic-apps-and-arm-templates.svg
+- uid: learn.azure-storage-dotnet-aspire-app.badge
+  type: badge
+  title: Use Azure Storage with .NET Aspire
+  summary: Learn how to access and use Azure Storage accounts from .NET Aspire solutions for file storage, data storage, and message queuing.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.develop-ai-solutions-azure-openai.trophy
+  type: trophy
+  title: Develop Generative AI solutions with Azure OpenAI in Foundry Models
+  summary: Azure OpenAI in Foundry Models provides access to OpenAI's powerful large language models such as GPT and Embeddings models. These models enable various natural language processing (NLP) solutions to understand, converse, and generate content. Users can access the service through REST APIs, SDKs, and Azure AI Foundry.
+  iconUrl: /training/achievements/develop-ai-solutions-azure-openai.svg
