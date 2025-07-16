@@ -1,3 +1,1 @@
-In this module, you learned how the ESU program helps organizations maintain security on Windows 10 devices. 
-
-We briefly summarized what ESUs are and identified when an organization can benefit from the program. We also discussed how the ESU program protects businesses and gives IT teams more time to complete the transition to Windows 11. Lastly, we explained the cost of implementation and how it increases each year.
+In this module, you learned how the ESU program helps organizations maintain security on Windows 10 devices. We briefly summarized what ESUs are and identified when an organization can benefit from the program. We also discussed how the ESU program protects businesses and gives IT teams more time to complete the transition to Windows 11. Lastly, we explained the cost of implementation and how it increases each year.
