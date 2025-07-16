@@ -74,7 +74,7 @@ Advanced Threat Protection is analyzing your logs to detect unusual behavior and
 
 ### Transport Layer Security (Encryption-in-transit)
 
-SQL Database, SQL Managed Instance, and Azure Synapse Analytics secure customer data by encrypting data in motion with [Transport Layer Security (TLS)](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server).
+SQL Database, SQL Managed Instance, and Azure Synapse Analytics secure customer data by encrypting data in motion with [Transport Layer Security (TLS)](/windows-server/security/tls/transport-layer-security-protocol).
 
 SQL Database, SQL Managed Instance, and Azure Synapse Analytics enforce encryption (SSL/TLS) at all times for all connections. This ensures all data is encrypted "in transit" between the client and server irrespective of the setting of **Encrypt** or **TrustServerCertificate** in the connection string.
 

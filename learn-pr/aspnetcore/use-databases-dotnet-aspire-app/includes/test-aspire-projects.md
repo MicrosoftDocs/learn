@@ -1,8 +1,8 @@
 Testing is an essential part of developing high-quality software. Testing can help you find and fix bugs, improve performance, and ensure that your code meets the requirements and expectations of your users. Testing can also help you automate the deployment process and prevent regressions in the future. .NET Aspire provides tools and libraries to simplify the development, testing, and deployment of distributed applications. 
 
-In this unit, you learn how to test .NET Aspire projects using xUnit, a popular testing framework for .NET. You learn how to create different types of tests, such as integration tests and functional tests, and how to run them using the .NET Aspire CLI or Visual Studio. 
+In this unit, you learn how to test .NET Aspire projects using xUnit, a popular testing framework for .NET. You learn how to create different types of tests, such as integration tests and functional tests, and how to run them using the .NET Aspire CLI or Visual Studio.
 
-## Create a test project 
+## Create a test project
 
 The easiest way to create a .NET Aspire test project is to use the testing project template. You can use the `dotnet new` command to create a standard class library project, and then add the references to the .NET Aspire testing libraries and the xUnit packages.
 
@@ -10,7 +10,7 @@ The easiest way to create a .NET Aspire test project is to use the testing proje
 dotnet new aspire-xunit
 ```
 
-## Explore the test project 
+## Explore the test project
 
 The following example test project was created as part of the **.NET Aspire Starter Application** template. If you're unfamiliar with it, see [Quickstart: Build your first .NET Aspire project](/dotnet/aspire/get-started/build-your-first-aspire-app). The .NET Aspire test project takes a project reference dependency on the target app host. Consider the template project:
 

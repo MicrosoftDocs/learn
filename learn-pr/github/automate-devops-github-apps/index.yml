@@ -3,13 +3,13 @@ uid: learn.github.automate-devops-github-apps
 metadata:
   title: "Automate DevOps processes by using GitHub Apps"
   description: Learn to automate DevOps processes by using GitHub Apps that handle repetitive tasks, enforce team policies, and maintain a tidy repository.
-  ms.date: 04/14/2023
+  ms.date: 07/03/2025
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module-standard-task-based
   ms.service: azure-devops
 title: "Automate DevOps processes by using GitHub Apps"
-summary: Optimize the value of GitHub Apps and features to manage users in your workflow to help speed up your processes while maintaining efficiency, security, and reliability.
+summary: Optimize the value of GitHub Apps and features to manage users in your workflow to help speed-up your processes while maintaining efficiency, security, and reliability.
 abstract: |
   In this module, you will:
   - Identify available GitHub Access Tokens needed to support GitHub users.
@@ -42,4 +42,4 @@ units:
 - learn.github.automate-devops-github-apps.5-summary
 badge:
   uid: learn.github.automate-devops-github-apps.badge
-
+

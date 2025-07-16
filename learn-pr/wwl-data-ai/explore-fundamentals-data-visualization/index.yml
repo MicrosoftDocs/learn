@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-fundamentals-of-data-visualization
 metadata:
-  title: Explore fundamentals of data visualization
+  title: Explore Fundamentals of Data Visualization
   description: "Learn the fundamental principles of analytical data modeling and data visualization, using Microsoft Power BI as a platform to explore these principles in action."
-  ms.date: 06/20/2025
-  author: wwlpublish
-  ms.author: calopez
+  ms.date: 07/15/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module
   ms.collection: N/A
   ms.custom:
