@@ -1,6 +1,6 @@
 Blazor includes several ways to share information between components. You can use component parameters or cascading parameters to send values from a parent component to a child component. The AppState pattern is another approach you can use to store values and access them from any component in the application.
 
-Suppose you're working on the new pizza delivery website. Multiple pizzas should be displayed on the home page in the same way. You want to display the pizzas by rendering a child component for each pizza. Now, you want to pass an ID to that child component that determines the pizza it will display. You also want to store and display a value on multiple components that shows the total number of pizzas you've sold today.
+Suppose you're working on the new pizza delivery website. Multiple pizzas should be displayed on the home page in the same way. You want to display the pizzas by rendering a child component for each pizza. Now, you want to pass an ID to that child component that determines the pizza it displays. You also want to store and display a value on multiple components that shows the total number of pizzas you sold today.
 
 In this unit, you learn three different techniques you can use to share values between two or more Blazor components.
 
@@ -10,7 +10,7 @@ In a Blazor web app, each component renders a portion of HTML. Some components r
 
 In this hierarchy of parent and child components, you can share information between them by using *component parameters*. Define these parameters on child components, and then set their values in the parent. For example, if you have a child component that displays pizza photos, you could use a component parameter to pass the pizza ID. The child component looks up the pizza from the ID and obtains pictures and other data. If you want to display many different pizzas, you can use this child component multiple times on the same parent page, passing a different ID to each child.
 
-You start by defining the component parameter in the child component. It's defined as a C# public property and decorated with the `[Parameter]` attribute:
+Start by defining the component parameter in the child component. You define it as a C# public property and decorate it with the `[Parameter]` attribute:
 
 ```razor
 <h2>New Pizza: @PizzaName</h2>
@@ -91,7 +91,7 @@ In the descendant components, you can access the cascading value by using compon
 }
 ```
 
-So in this example, the `<h2>` tag has the content `Deal: Throwback Thursday` because that cascading value was set by an ancestor component.
+So in this example, the `<h2>` tag has the content `Deal: Throwback Thursday` because an ancestor component sets that cascading value.
 
 > [!NOTE]
 > As for component parameters, you can pass objects as cascading parameters if you have more complex requirements.
@@ -145,6 +145,6 @@ Now, in any component where you want to set or retrieve AppState values, you can
 ```
 
 > [!NOTE]
-> This code implements a counter that increments when the user selects a button, much like the example in the [Blazor Tutorial - Build your first Blazor app](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro). The difference is that in this case, because we stored the counter's value in an AppState scoped service, the count persists across page loads and can be seen by other users.
+> This code implements a counter that increments when the user selects a button, much like the example in the [Blazor Tutorial - Build your first Blazor app](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro). The difference is that in this case, we stored the counter's value in an AppState scoped service. Our scoped service class allows the count to persist across page loads and other users can see it.
 
 In the next unit, you'll try it yourself!

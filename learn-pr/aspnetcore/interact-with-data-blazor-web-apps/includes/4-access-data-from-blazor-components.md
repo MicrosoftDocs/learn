@@ -89,7 +89,7 @@ Usually, the component and the service are in different namespace members, so yo
 
 ### Override the OnInitializedAsync method
 
-A good place to call the service and obtain data is in the `OnInitializedAsync` method. This event fires when the component's initialization is complete and it has received initial parameters but before the page is rendered and displayed to the user. The event is defined on the Blazor component's base class. You can override it in a code block as in this example:
+A good place to call the service and obtain data is in the `OnInitializedAsync` method. This event fires when the component's initialization is complete and it receives its initial parameters, but before the page is rendered and displayed to the user. The event is defined on the Blazor component's base class. You can override it in a code block as in this example:
 
 ```csharp
 protected override async Task OnInitializedAsync()

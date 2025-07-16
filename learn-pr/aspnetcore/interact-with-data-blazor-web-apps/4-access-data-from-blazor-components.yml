@@ -34,7 +34,7 @@ quiz:
       explanation: "The @inject directive makes services available that are registered with the service locator."
     - content: "@page"
       isCorrect: false
-      explanation: "The @page directive instructs the Blazor runtime that a *.razor* file can be navigated to. It doesn't make services available to the code on the page."
+      explanation: "The @page directive instructs the Blazor runtime that a Razor file can be navigated to. It doesn't make services available to the code on the page."
     - content: "@using"
       isCorrect: false
       explanation: "The @using directive is used in the same way as the `using` statement in .cs files and doesn't make instances of services available to the code on the page."
