@@ -52166,37 +52166,37 @@
     },
     {
       "source_path": "learn-pr/visual-studio/visual-studio-test-concepts/1-introduction.yml",
-      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/unit-testing-best-practices",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/visual-studio/visual-studio-test-concepts/2-what-is-testing.yml",
-      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/unit-testing-best-practices",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/visual-studio/visual-studio-test-concepts/3-why-we-test.yml",
-      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/unit-testing-best-practices",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/visual-studio/visual-studio-test-concepts/4-different-types-of-testing.yml",
-      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/unit-testing-best-practices",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/visual-studio/visual-studio-test-concepts/5-testing-schools-of-thought.yml",
-      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/unit-testing-best-practices",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/visual-studio/visual-studio-test-concepts/6-summary.yml",
-      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/unit-testing-best-practices",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/visual-studio/visual-studio-test-concepts/index.yml",
-      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/unit-testing-best-practices",
       "redirect_document_id": false
     },
     {
