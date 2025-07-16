@@ -1,8 +1,8 @@
-Security updates play a critical role in keeping organizations protected—especially as operating systems reach end of support. The Extended Security Updates (ESU) program helps you stay secure while you plan your next steps, ensuring continued protection, minimizing risk, and giving your IT teams time to manage upgrades on their schedule. Microsoft is here to help you extend protection, reduce disruption, and move forward with confidence.
+Keeping systems secure is crucial as operating systems reach their end of support. The Extended Security Updates (ESU) program helps organizations stay protected while moving from Windows 10 to Windows 11. It offers continued security and extra time to upgrade devices so organizations can move forward with confidence.
 
 ## Table of contents
 
-In this module, you'll discover the benefits of the Extended Security Updates (ESU) program. You'll learn about the challenges organizations face when running Windows 10 after end of support (EOS), and explore how the ESU program helps enable a smooth transition to Windows 11.
+In this module, you'll discover the benefits of the Extended Security Updates (ESU) program. You'll learn about the challenges organizations face when running Windows 10 after end of support, and explore how the ESU program helps enable a smooth transition to Windows 11.
 
 ## Learning objectives
 
