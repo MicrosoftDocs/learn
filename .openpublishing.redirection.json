@@ -52333,6 +52333,56 @@
       "source_path": "learn-pr/wwl-data-ai/use-own-data-azure-openai/7-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/build-copilot-ai-studio/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/run-iot-edge-device-restricted-network-offline/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/run-iot-edge-device-restricted-network-offline/2-deploy-enabled-linux-vm.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/run-iot-edge-device-restricted-network-offline/3-setup-parent-child-devices.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/run-iot-edge-device-restricted-network-offline/4-configure-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/run-iot-edge-device-restricted-network-offline/5-open-inbound-ports-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/run-iot-edge-device-restricted-network-offline/6-configure-live-message-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/run-iot-edge-device-restricted-network-offline/7-connect-child-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/run-iot-edge-device-restricted-network-offline/8-test-connectivity-offline-support.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/run-iot-edge-device-restricted-network-offline/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/run-iot-edge-device-restricted-network-offline/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/iot-central/",
+      "redirect_document_id": false
     }
   ]
 }
