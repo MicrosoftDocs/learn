@@ -1,3 +1,5 @@
+Public speaking can be scary and difficult to practice. Microsoft Education has developed two Learning Accelerators to help students develop skills in giving presentations—and to provide educators and administrators with the data they need to advance their students' skills.
+
 ## Speaker Coach
 
 Speaker Coach helps evaluate students’ public speaking performances and gives personalized feedback—all without the stress of a live audience. 

@@ -1,3 +1,5 @@
+Social-emotional learning is a core part of most K-12 curriculums. Microsoft Reflect is built to support well-being.
+
 ## Reflect
 
 Reflect helps students build their emotional vocabulary and express feelings in a safe, fun way—while giving educators the insights they need to provide active support.

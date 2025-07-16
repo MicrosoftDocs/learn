@@ -1,3 +1,5 @@
+Math Progress is designed to help students learn critical mathematical thinking.
+
 ## Math Progress
 
 Math Progress helps educators streamline assignment creation and gather student performance insights—helping save time and improve educational outcomes.

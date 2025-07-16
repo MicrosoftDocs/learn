@@ -1,3 +1,5 @@
+Let's look at some Learning Accelerators that are designed to help students master fundamental reading skills.
+
 ## Reading Coach
 
 Reading Coach gives students engaging, individualized reading fluency practice—complete with personalized coaching on pronunciation and vocabulary.

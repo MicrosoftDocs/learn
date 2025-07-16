@@ -1,3 +1,5 @@
+Information literacy is an essential skill in today's world. Students must be able to find the information they need online, evaluate its value, and determine how trustworthy the source is. This is no small feat! Microsoft has developed two Learning Accelerators to help.
+
 ## Search Coach
 
 Search Coach helps improve information literacy and teaches students how to search effectively—from asking effective questions to identifying reliable sources. 
