@@ -1,5 +1,5 @@
 
-In this exercise, you’ll learn how to identify and resolve blocking issues using SSMS.
+In this exercise, you’ll learn how to identify and troubleshoot blocking issues using SQL Server Management Studio (SSMS).
 
 > [!NOTE]
 > To complete this exercise, you'll need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true).
