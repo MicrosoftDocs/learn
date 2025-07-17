@@ -3,7 +3,7 @@ uid: learn.wwl.configure-storage-security
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Configure Azure Storage security
+  title: Configure Azure Storage Security
   description: "Learn how to configure common Azure Storage security features like storage access signatures."
   ms.date: 05/23/2025
   author: wwlpublish
