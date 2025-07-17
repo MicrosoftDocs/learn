@@ -52185,6 +52185,86 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/visual-studio/visual-studio-test-concepts/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/unit-testing-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-test-concepts/2-what-is-testing.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/unit-testing-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-test-concepts/3-why-we-test.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/unit-testing-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-test-concepts/4-different-types-of-testing.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/unit-testing-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-test-concepts/5-testing-schools-of-thought.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/unit-testing-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-test-concepts/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/unit-testing-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-test-concepts/index.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/unit-testing-best-practices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-test-tools/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/microsoft-testing-platform-intro",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-test-tools/2-create-test.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/microsoft-testing-platform-intro",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-test-tools/3-exercise-write-test.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/microsoft-testing-platform-intro",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-test-tools/4-view-run-tests.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/microsoft-testing-platform-intro",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-test-tools/5-exercise-create-test-suite.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/microsoft-testing-platform-intro",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-test-tools/6-sharpen-test-skills.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/microsoft-testing-platform-intro",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-test-tools/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/microsoft-testing-platform-intro",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/visual-studio/visual-studio-test-tools/index.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/microsoft-testing-platform-intro",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/visual-studio/index.yml",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/windows/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/create-deploy-logic-apps-using-arm-templates/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/route-and-process-data-logic-apps/",
       "redirect_document_id": false

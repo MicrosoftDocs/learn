@@ -4,7 +4,7 @@ title: Automate deployment by using Azure CLI
 metadata:
   title: Automate deployment by using Azure CLI
   description: "Automate deployment by using Azure CLI"
-  ms.date: 02/26/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -16,4 +16,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/5-automate-deployment-using-cli.md)]
-
+

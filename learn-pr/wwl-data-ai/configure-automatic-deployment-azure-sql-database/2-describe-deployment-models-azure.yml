@@ -4,7 +4,7 @@ title: Describe deployment models in Azure
 metadata:
   title: Describe deployment models in Azure
   description: "Describe deployment models in Azure"
-  ms.date: 02/26/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -16,4 +16,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-describe-deployment-models-azure.md)]
-
+
