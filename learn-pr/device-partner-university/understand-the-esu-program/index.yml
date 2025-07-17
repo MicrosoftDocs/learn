@@ -30,7 +30,7 @@ products:
 units:
   - learn.dpu.understand-the-esu-program.introduction
   - learn.dpu.understand-the-esu-program.empower-to-move-forward
-  - learn.dpu.understand-the-esu-program.cost-and-coverage
+  - learn.dpu.understand-the-esu-program.cost-coverage
   - learn.dpu.understand-the-esu-program.summary
 badge:
   uid: learn.dpu.understand-the-esu-program.badge

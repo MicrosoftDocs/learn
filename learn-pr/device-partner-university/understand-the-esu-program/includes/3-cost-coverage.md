@@ -8,21 +8,21 @@ The ESU program is available for USD61 per device for Year One through the [Micr
 
 ## Other program details
 
-*Can ESUs be purchased for a specific duration?*
+***Can ESUs be purchased for a specific duration?***
 
 The ESU program is sold on a yearly basis. That means you can't buy partial periods, like say, only six months.
 
 Year One starts in November 2025. If you wait until Year Two to enroll, you'll have to pay for both Year One and Year Two, since ESUs are cumulative.
 
-*When is the ESU program available for licensing?*
+***When is the ESU program available for licensing?***
 
 The Windows 10 ESU program is available through volume licensing, meaning you can purchase it right now. It’s available for those using Windows 10 Enterprise, Education, and Professional editions.
 
-*Is technical support included in ESU?*
+***Is technical support included in ESU?***
 
 No, technical support for Windows 10 isn't included in the ESU program. However, Microsoft provides support for organizations that encounter challenges related to the ESU program specifically.
 
-*Will Windows 10 PCs still work?*
+***Will Windows 10 PCs still work?***
 
 Windows 10 PCs will continue to work, but you should upgrade eligible devices to Windows 11 using Windows Autopatch or Microsoft Intune. For the best and most secure experience, you should transition to new Windows 11 PCs as soon as possible.
 
