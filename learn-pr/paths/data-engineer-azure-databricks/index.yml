@@ -20,7 +20,7 @@ roles:
 products:
 - azure-databricks
 subjects:
-- data-engineering
+- data-analytics
 modules:
 - learn.wwl.explore-azure-databricks
 - learn.wwl.perform-data-analysis-azure-databricks
