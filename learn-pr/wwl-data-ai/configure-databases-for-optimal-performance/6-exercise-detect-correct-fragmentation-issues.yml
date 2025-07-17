@@ -4,13 +4,10 @@ title: 'Exercise: Detect and correct fragmentation issues'
 metadata:
   title: 'Exercise: Detect and correct fragmentation issues'
   description: "Exercise: Detect and correct fragmentation issues"
-  ms.date: 03/20/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-azureSandbox: false
-labId: 119402
-labModal: true
-durationInMinutes: 15
+durationInMinutes: 20
 content: |
-  [!include[](includes/6-exercise-detect-correct-fragmentation-issues.md)]
+  [!include[](includes/6-exercise-detect-correct-fragmentation-issues.md)]

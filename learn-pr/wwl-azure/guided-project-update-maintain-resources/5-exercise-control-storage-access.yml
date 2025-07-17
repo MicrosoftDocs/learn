@@ -10,6 +10,6 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-control-storage-access.md)]

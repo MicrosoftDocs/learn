@@ -10,7 +10,7 @@ metadata:
   ms.topic: module
   ms.collection: ce-advocates-ai-copilot
 title: Govern AI services with Azure Policy
-summary: TBD
+summary: Learn how to govern AI services on Azure with Azure Policy including how to apply policy definitions and assess AI workload compliance.
 abstract: |
     After completing this module, you'll be able to:
     -	Set up policy and initiative assignments to Azure AI services, Azure AI Foundry, and Azure Machine Learning

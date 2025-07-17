@@ -144,7 +144,7 @@ After you publish a template as a template spec, you can *export* it. Exporting 
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-[!INCLUDE [Note that Bicep template specs are not roundtrippable](./code/note-bicep-roundtrip.md)]
+[!INCLUDE [Note that Bicep file specs aren't roundtrippable](./code/note-bicep-roundtrip.md)]
 
 ::: zone-end
 

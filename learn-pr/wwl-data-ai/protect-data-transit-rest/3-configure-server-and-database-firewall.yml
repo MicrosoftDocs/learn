@@ -4,7 +4,7 @@ title: Configure server and database firewall rules
 metadata:
   title: Configure server and database firewall rules
   description: "Configure server and database firewall rules"
-  ms.date: 2/25/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-configure-server-and-database-firewall.md)]
+  [!include[](includes/3-configure-server-and-database-firewall.md)]
