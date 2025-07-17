@@ -1,5 +1,3 @@
-# What is Reading Coach?
-
 Reading Coach builds reading fluency through personalized reading practice—for students of all abilities. As students read aloud, it offers real-time feedback on pronunciation, syllabification accuracy, and reading progress.
 
 ## How does it benefit educators?

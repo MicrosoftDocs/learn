@@ -1,5 +1,3 @@
-# Reading Progress
-
 Typically, literacy assessments require a teacher to listen to individual students read—a process that can take a very, very long time.
 
 With Reading Progress, however, educators can assign reading assessments for students to complete independently—enabling them to capture the rich data these assessments provide without disrupting their classroom routines, structures, and schedules.

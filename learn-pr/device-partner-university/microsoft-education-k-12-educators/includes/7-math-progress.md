@@ -1,5 +1,3 @@
-# Math Progress
-
 Math Progress streamlines assignment creation. It also provides student performance insights to help educators identify trends at the individual or class level.
 
 In addition, it also addresses students’ mistakes and common misconceptions—helping accelerate their learning.

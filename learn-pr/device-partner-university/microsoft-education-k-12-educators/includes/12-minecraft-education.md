@@ -1,5 +1,3 @@
-# Minecraft Education
-
 Students everywhere love playing Minecraft—and teachers love using Minecraft Education in their classrooms. Let’s learn how students can build digital skills through Minecraft Education.
 
 ## Fun, inclusive learning

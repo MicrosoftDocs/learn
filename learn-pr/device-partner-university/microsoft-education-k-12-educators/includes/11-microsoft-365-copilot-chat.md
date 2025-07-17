@@ -1,5 +1,3 @@
-# Microsoft 365 Copilot Chat
-
 Available at no additional cost for [eligible Microsoft 365 customers](/copilot/manage#microsoft-365--chat-eligibility), Microsoft 365 Copilot Chat offers a secure AI chat experience—designed to help save educators time and enrich their teaching.
 
 Microsoft 365 Copilot Chat offers:

@@ -3,25 +3,31 @@ uid: learn.dpu.k-12-educators
 title: Microsoft Education for K-12 educators
 metadata:
   title: Microsoft Education for K-12 educators
-  description: [Add brief summary]
+  description: In this module, you'll explore various Microsoft Education solutions for K-12 educators.
   ms.date: 07/17/2025
   author: melissawinters
   ms.author: v-mwinters
   ms.topic: module
-  ms.service: [Add]
+  ms.service: microsoft-365-education
 summary: >
-  [Add brief summary]
+  Microsoft Education offers tools designed to support K–12 educators by addressing common challenges like outdated technology, limited time, and the need for accessible, inclusive learning. Solutions such as Learning Accelerators, Reflect, Immersive Reader, and Copilot Chat help streamline instruction, personalize learning, and enhance student engagement. These tools empower educators to focus more on teaching and student connection while building future-ready skills.
 abstract: |
   By the end of this module, you'll be able to:
-  - [Add learning objectives here]
+  - Identify the key challenges K–12 educators face and explain how Microsoft Education tools—such as Learning Accelerators, Reflect, and Immersive Reader—address these challenges to support teaching and learning.
+  - Demonstrate how to use Microsoft tools like Reading Coach, Math Progress, and Education Insights to personalize instruction, streamline assessment, and improve student outcomes across foundational and future-ready skills.
+  - Explore how Microsoft 365 Copilot Chat and Minecraft Education can enhance lesson planning, student engagement, and classroom customization through AI-powered support and immersive learning environments.
 prerequisites: |
   - None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/microsoft-education-k-12-educators.svg
 ratingEnabled: false
 levels:
   - beginner
-roles: [Add]
-products: [Add]
+roles:  
+  - k-12-educator
+  - school-leader
+  - technology-manager
+products:
+  - m365-education
 units:
   - learn.dpu.k-12-educators.introduction
   - learn.dpu.k-12-educators.education-insights

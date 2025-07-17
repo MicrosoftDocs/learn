@@ -1,5 +1,3 @@
-# Learning Accelerators
-
 Let’s start with our [Learning Accelerators](https://www.microsoft.com/education/learning-tools/learning-accelerators)—and discover how they effectively address the needs of K-12 educators.
 
 Learning Accelerators focus primarily on two types of skills:

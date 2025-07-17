@@ -1,5 +1,3 @@
-# Challenges facing K-12 educators
-
 The concept of an educator may seem simple at first—a teacher is a teacher, right? But in reality, educators span all types of different roles, responsibilities, and requirements.
 
 It’s impossible to list all the different kinds of educators out there, but examples include:

@@ -1,5 +1,3 @@
-# What K-12 educators need
-
 Microsoft Education solutions are designed to respond to the needs of K-12 educators—no matter what they teach, how they teach, or where they teach.
 
 ## Enhanced learning

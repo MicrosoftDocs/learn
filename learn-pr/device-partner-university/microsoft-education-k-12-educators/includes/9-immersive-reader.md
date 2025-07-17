@@ -1,5 +1,3 @@
-# Immersive Reader
-
 Immersive Reader is a free, easy-to-use tool that implements proven techniques to improve reading comprehension for people—regardless of their age or ability.
 
 Integrated into many Microsoft products, Immersive Reader enables students to quickly access the reading supports they need.

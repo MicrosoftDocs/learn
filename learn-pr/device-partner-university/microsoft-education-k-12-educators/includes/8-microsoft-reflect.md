@@ -1,5 +1,3 @@
-# Microsoft Reflect
-
 Microsoft Reflect is a well-being app designed to support connection, expression, and learning. With it, students can:
 
 - Build self-awareness and empathy
