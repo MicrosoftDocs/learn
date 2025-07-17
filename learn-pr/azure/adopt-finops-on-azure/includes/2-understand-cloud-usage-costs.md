@@ -20,11 +20,11 @@ Define strategies to assign and split shared cloud costs using accounts, tags, l
 
 ## Reporting + analytics
 
-<iframe title="FinOps interactive guide for reporting and analytics." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%202%20-%20Reporting%20and%20analytics" width="800" height="500"></iframe>
-
 #### Objective:
 
 Examine and showback cloud data to gain insights into usage and spend patterns. Identify cost optimization opportunities, improve cost efficiency, and make informed financial decisions regarding cloud resources.
+
+<iframe title="FinOps interactive guide for reporting and analytics." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%202%20-%20Reporting%20and%20analytics" width="800" height="500"></iframe>
 
 ## Anomaly management
 
