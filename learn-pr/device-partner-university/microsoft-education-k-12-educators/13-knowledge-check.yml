@@ -16,7 +16,7 @@ quiz:
     choices:
         - content: "It replaces the need for classroom instruction."
           isCorrect: false
-          explanation: "Incorrect. Reading Coach supports instruction but does not replace it."
+          explanation: "Incorrect. Reading Coach supports instruction but doesn't replace it."
         - content: "It allows students to practice reading independently with personalized feedback."
           isCorrect: true
           explanation: "Correct. Reading Coach provides individualized reading practice and real-time feedback."
@@ -53,7 +53,7 @@ quiz:
           explanation: "Correct. Education Insights Premium provides comprehensive data to educators."
         - content: "Blocking inappropriate content"
           isCorrect: false
-          explanation: "Incorrect. This is not a function of Education Insights Premium."
+          explanation: "Incorrect. This isn't a function of Education Insights Premium."
   - content: "How does Math Progress support educators?"
     choices:
         - content: "By offering emotional check-ins for students"
@@ -72,7 +72,7 @@ quiz:
     choices:
         - content: "By grading student essays automatically"
           isCorrect: false
-          explanation: "Incorrect. This is not a listed feature of Copilot Chat."
+          explanation: "Incorrect. This isn't a listed feature of Copilot Chat."
         - content: "By creating immersive Minecraft worlds"
           isCorrect: false
           explanation: "Incorrect. Minecraft Education and Lesson Crafter handle this."
@@ -81,5 +81,5 @@ quiz:
           explanation: "Correct. Copilot Chat can assist with newsletters, reports, and invitations."
         - content: "By blocking social media during class"
           isCorrect: false
-          explanation: "Incorrect. Copilot Chat does not manage content filtering."
+          explanation: "Incorrect. Copilot Chat doesn't manage content filtering."
 

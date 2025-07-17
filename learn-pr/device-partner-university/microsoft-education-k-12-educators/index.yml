@@ -30,9 +30,6 @@ products:
   - m365-education
 units:
   - learn.dpu.k-12-educators.introduction
-  - learn.dpu.k-12-educators.education-insights
-  - learn.dpu.k-12-educators.microsoft-365-copilot-chat
-  - learn.dpu.k-12-educators.minecraft-education
   - learn.dpu.k-12-educators.challenges-facing-k-12-educators
   - learn.dpu.k-12-educators.what-k-12-educators-need
   - learn.dpu.k-12-educators.learning-accelerators
@@ -41,6 +38,9 @@ units:
   - learn.dpu.k-12-educators.math-progress
   - learn.dpu.k-12-educators.microsoft-reflect
   - learn.dpu.k-12-educators.immersive-reader
+  - learn.dpu.k-12-educators.education-insights
+  - learn.dpu.k-12-educators.microsoft-365-copilot-chat
+  - learn.dpu.k-12-educators.minecraft-education
   - learn.dpu.k-12-educators.knowledge-check
   - learn.dpu.k-12-educators.summary
 badge:
