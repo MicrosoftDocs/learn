@@ -27,7 +27,7 @@ quiz:
       isCorrect: true
       explanation: Foreign keys create a link, or reference, back to another table's primary key ensuring data continuity.
 
-  - content: What type of constraint would you use to limit the values that are accepted by one or more columns in a table to a specified range using logical expressions?
+  - content: What type of constraint would you use to limit the values accepted by one or more columns in a table to a specified range using logical expressions?
     choices:
     - content: Check
       isCorrect: true

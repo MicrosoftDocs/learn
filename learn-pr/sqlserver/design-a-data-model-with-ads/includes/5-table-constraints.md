@@ -22,7 +22,7 @@ A foreign key is a column or combination of columns that can be used to enforce 
 
 ## Enforce data integrity with constraints
 
-### Null values, default values and check constraints
+### Null values, default values, and check constraints
 
 Controlling what data gets stored in the card-game tables could help keep out unwanted values and enforce data integrity (complete, consistent, and accurate data sets). At the simplest level, there are columns where you need to always have a value entered (such as card_name), preventing the omission of key pieces of data. When creating the tables, you can set columns to allow or disallow empty or null values. The Azure SQL database will see when someone isn't providing all the required data elements by passing in null values. When this situation occurs, the database will prevent the record from being entered.
 
