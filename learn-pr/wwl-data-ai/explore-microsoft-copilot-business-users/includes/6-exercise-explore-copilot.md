@@ -15,7 +15,7 @@ This exercise requires a free Microsoft account (for example an *outlook.com*, *
 
 ![Screenshot of Copilot.microsoft.com with the sign in button highlighted.](../media/copilot-sign-in.png)
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2249955&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2328305&azure-portal=true)
 
 #### Option 2: Explore Microsoft 365 Copilot
 
