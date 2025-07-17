@@ -28,7 +28,6 @@ subjects:
 - cloud-computing
 modules:
 - learn.choose-messaging-model
-- learn.implement-message-workflows-with-service-bus
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs
 trophy:
   uid: learn.connect-your-services-together.trophy

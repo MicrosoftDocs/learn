@@ -11,7 +11,7 @@ At the end of this module, you'll be able to:
 - Describe the database systems that .NET Aspire can connect to using built-in integrations.
 - Use .NET Aspire integrations to read and write data to PostgreSQL, MySQL, and Microsoft SQL Server databases.
 - Use .NET Aspire integrations to read and write data to MongoDB databases.
-- Understand the basics of testing in .NET Aspire. 
-- Create a test project using xUnit. 
-- Write and run tests for .NET Aspire projects. 
-- Utilize the .NET Aspire testing project templates. 
+- Understand the basics of testing in .NET Aspire.
+- Create a test project using xUnit.
+- Write and run tests for .NET Aspire projects.
+- Utilize the .NET Aspire testing project templates.
