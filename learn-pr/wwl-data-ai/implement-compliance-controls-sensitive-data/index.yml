@@ -3,7 +3,7 @@ uid: learn.wwl.implement-compliance-controls-for-sensitive-data
 metadata:
   title: Implement compliance controls for sensitive data
   description: Implement compliance controls for sensitive data
-  ms.date: 02/26/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
@@ -48,4 +48,4 @@ units:
 - learn.wwl.implement-compliance-controls-for-sensitive-data.summary
 badge:
   uid: learn.wwl.implement-compliance-controls-for-sensitive-data.badge
-
+
