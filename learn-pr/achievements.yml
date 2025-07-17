@@ -6225,6 +6225,11 @@ achievements:
   title: Fundamentals of language translation
   summary: Automated translation capabilities in an AI solution enable closer collaboration by removing language barriers.
   iconUrl: /training/achievements/translate-text-with-translation-service.svg
+- uid: learn.execute-azure-function-with-triggers.badge
+  type: badge
+  title: Execute an Azure Function with triggers
+  summary: A trigger is responsible for executing an Azure function and there are dozens of triggers to choose from. This module shows you some of the most common types of triggers and how to configure them to execute your logic.
+  iconUrl: /training/achievements/execute-azure-function-with-triggers.svg
 - uid: learn.visual-studio-test-concepts.badge
   type: badge
   title: Introduction to software testing concepts
