@@ -1,10 +1,10 @@
-We saw the settings and properties you can select to predict your disk performance. Now, let's look at ways to improve that through *caching*.
+So far, we've seen the settings and properties you can select to predict your disk performance. Now, let's look at ways to improve that through *caching*.
 
 ## Disk caching
 
 A cache is a specialized component that stores data, typically in memory, so that it can be accessed more quickly. The data in a cache is often data that was read previously, or data that resulted from an earlier calculation. The goal is to access data faster than getting it from the disk.
 
-Caching uses specialized (and sometimes expensive) temporary storage that has faster read and write performance than permanent storage. Because cache storage is often limited, you need to make decisions as to what data operations benefit most from caching. But even where the cache can be made widely available, such as in Azure, it's still important to know the workload patterns of each disk before deciding which caching type to use.
+Caching uses specialized (and sometimes expensive) temporary storage that has faster read and write performance than permanent storage. Because cache storage is often limited, you need to make decisions as to what data operations benefit most from caching. Even where the cache can be made widely available, such as in Azure, it's still important to know the workload patterns of each disk before deciding which caching type to use.
 
 **Read caching** tries to speed up data *retrieval*. Instead of reading from permanent storage, the data is read from the faster cache. Data reads hit the cache under the following conditions:
 
@@ -26,7 +26,7 @@ Azure storage caching provides cache services for Azure Blob storage, Azure File
 
 Azure virtual machine disk caching is about optimizing read and write access to the virtual hard disk (VHD) files attached to Azure VMs. In this module, we focus on disk caching.
 
-Disk caching isn't supported for Ultra Disks or Premium SSD v2, however they already benefit from lower latency, which addresses some of the same core problems as disk caching.
+Disk caching isn't supported for Ultra Disks or Premium SSD v2; however, they already benefit from lower latency, which addresses some of the same core problems as disk caching.
 
 ### Azure virtual machine disk types
 
