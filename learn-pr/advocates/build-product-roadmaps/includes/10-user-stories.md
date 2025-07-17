@@ -6,27 +6,27 @@
 
 User stories are the base artifacts for Agile planning. A user story is a high-level definition of a requirement. It should contain enough information that the requirement is understood and a reasonable estimate of the effort required to build it can be made.
 
-User stories are written throughout the development lifecycle, but most of them are written when you create an epic. Typically, the whole team is involved, often including stakeholders from the business or even customers. The stories are written in a workshop-like forum. Further stories will evolve as the epic proceeds to address new requirements or to split existing stories that have become too complex. Some stories will even evolve into epics in their own right if they turn out to be complex or emerge as functionality worth extending.
+User stories are written throughout the development lifecycle, but most of them are written when you create an epic. Typically, the whole team is involved, often including stakeholders from the business or even customers. The stories are written in a workshop-like forum. Further stories evolve as the epic proceeds to address new requirements or to split existing stories that become too complex. Some stories even evolve into epics in their own right if they turn out to be complex or emerge as functionality worth extending.
 
  :::column-end:::
 :::row-end:::
 
 A good user story contains:
 
-* A summary of the requirement, no more than one or two sentences.
-* A priority to tell us how important the story is to the product.
-* A series of "stories" about the requirement that describes what we expect from it.
-* A test of the story's success.
-* An estimate of the effort the story will take.
+- A summary of the requirement, no more than one or two sentences.
+- A priority to tell us how important the story is to the product.
+- A series of "stories" about the requirement that describes what we expect from it.
+- A test of the story's success.
+- An estimate of the effort the story will take.
 
 Let’s look at an example story for our recommendation engine:
 
-* Summary: Build a content-based recommendation algorithm.
-* Priority: 1
-* Stories:
-  * As a customer, I want to see recommendations based on my prior purchases so I can find the best items to buy.
-* Test: The algorithm returns three content-based recommendations for a customer’s user ID.
-* Estimate: three days.
+- Summary: Build a content-based recommendation algorithm.
+- Priority: 1
+- Stories:
+  - As a customer, I want to see recommendations based on my prior purchases so I can find the best items to buy.
+- Test: The algorithm returns three content-based recommendations for a customer’s user ID.
+- Estimate: three days.
 
 ## Subject
 
@@ -55,7 +55,7 @@ The estimate is the amount of effort we believe the story will take to complete.
 > [!WARNING]
 > Estimates can be contentious. It's often hard to estimate how much effort is involved in a story. If you or the team get it wrong, avoid recriminations. Instead, focus on identifying why the estimate was wrong and doing better next time; more learning, less blame.
 
-Your estimates also help you crudely ascertain how many people you need building your product. If you want to build 20 stories in a month that require more effort than your team can deliver, then you know you need to hire more people to build your product.
+Your estimates also help you crudely ascertain how many people you need to build your product. If you want to build 20 stories in a month that require more effort than your team can deliver, then you know you need to hire more people to build your product.
 
 ## Summary
 
@@ -63,4 +63,4 @@ This story is a formal user story; many organizations use more lightweight and i
 
 ![Diagram of product roadmap structure.](../media/structure.png)
 
-From here, we can now also see the whole structure of a roadmap, and how each component from user stories to the mission rolls up into the plan to build your product.
+From here, we can now see the whole structure of a roadmap, and how each component from user stories to the mission rolls up into the plan to build your product.
