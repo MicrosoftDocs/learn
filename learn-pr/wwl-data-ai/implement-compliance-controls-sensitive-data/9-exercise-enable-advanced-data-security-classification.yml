@@ -8,9 +8,6 @@ metadata:
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-azureSandbox: false
-labId: 119400
-labModal: true
 durationInMinutes: 15
 content: |
   [!include[](includes/9-exercise-enable-advanced-data-security-classification.md)]
