@@ -13,7 +13,7 @@ Instructors receive valuable insights from these check-ins. They can see at a gl
 
 Cultivating social-emotional skills in K-12 schools can lead to a number of benefits:
 
-- A Better school climate
+- A better school climate
 - Greater academic achievement
 - Higher engagement in learning
 - More consistent attendance

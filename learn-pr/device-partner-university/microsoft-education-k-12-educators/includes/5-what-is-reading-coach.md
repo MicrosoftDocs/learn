@@ -8,8 +8,12 @@ Students can use Reading Coach for independent reading practice while at school.
 
 Reading Coach can also be accessed from home—so educators can assign it as homework to help students maintain their reading progress over school breaks.
 
-Equity and accessibility Reading Coach can understand content in over 80 languages—including 14 English dialects. This means students from different language backgrounds can use it with ease.
+### Equity and accessibility
+
+Reading Coach can understand content in over 80 languages—including 14 English dialects. This means students from different language backgrounds can use it with ease.
 
 In addition, Immersive Reader is embedded in Reading Coach for students who need a little extra support.
 
-Personalized learning Reading Coach can use AI to create personalized stories for students—taking into account their interests and reading level. This can help foster creativity—and make reading more fun.
+### Personalized learning
+
+Reading Coach can use AI to create personalized stories for students—taking into account their interests and reading level. This can help foster creativity—and make reading more fun.
