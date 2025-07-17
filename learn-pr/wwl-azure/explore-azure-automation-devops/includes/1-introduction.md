@@ -14,7 +14,7 @@ You can even schedule the tasks to be executed automatically at regular interval
 
 You can automate processes using runbooks or automate configuration management by using Desired State Configuration (DSC).
 
-For more information about Azure Automation, review [An introduction to Azure Automation](https://azure.microsoft.com/documentation/articles/automation-intro/).
+For more information about Azure Automation, review [An introduction to Azure Automation](/azure/automation/).
 
 :::image type="content" source="../media/azure-automation-90cfa135.png" alt-text="Azure Automation icon":::
 

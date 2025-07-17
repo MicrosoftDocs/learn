@@ -17,7 +17,7 @@ There are two broad categories of activity in a pipeline.
 - **Control flow activities** - activities that you can use to implement loops, conditional branching, or manage variable and parameter values. The wide range of control flow activities enables you to implement complex pipeline logic to orchestrate data ingestion and transformation flow.
 
 > [!TIP]
-> For details about the complete set of pipeline activities available in Microsoft Fabric, see [Activity overview](/fabric/data-factory/activity-overview&azure-portal=true) in the Microsoft Fabric documentation.
+> For details about the complete set of pipeline activities available in Microsoft Fabric, see [Activity overview](/fabric/data-factory/activity-overview) in the Microsoft Fabric documentation.
 
 <!-- Update URL for release -->
 
@@ -30,4 +30,3 @@ Using parameters increases the reusability of your pipelines, enabling you to cr
 ### Pipeline runs
 
 Each time a pipeline is executed, a *data pipeline run* is initiated. Runs can be initiated on-demand in the Fabric user interface or scheduled to start at a specific frequency. Use the unique run ID to review run details to confirm they completed successfully and investigate the specific settings used for each execution.
-

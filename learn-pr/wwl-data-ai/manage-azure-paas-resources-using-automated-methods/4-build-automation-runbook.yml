@@ -4,7 +4,7 @@ title: Build an automation runbook
 metadata:
   title: Build an automation runbook
   description: "Build an automation runbook"
-  ms.date: 02/27/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-build-automation-runbook.md)]
+  [!include[](includes/4-build-automation-runbook.md)]

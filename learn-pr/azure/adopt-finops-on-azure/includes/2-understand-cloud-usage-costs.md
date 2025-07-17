@@ -1,4 +1,4 @@
-Understanding cloud usage and costs is important for effective cloud management and optimization. Gaining this understanding allows organizations to gain insight into how resources are being utilized, identify trends, and make informed decisions to optimize performance and cost efficiency. Data ingestion, allocation, reporting and analytics, and anomaly management play crucial roles in achieving this objective.
+Understanding cloud usage and costs are important for effective cloud management and optimization. Gaining this understanding allows organizations to gain insight into how resources are being utilized, identify trends, and make informed decisions to optimize performance and cost efficiency. Data ingestion, allocation, reporting and analytics, and anomaly management play crucial roles in achieving this objective.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=d1689416-9919-497e-95ed-bb40bbb1b053]
 
@@ -18,19 +18,13 @@ Define strategies to assign and split shared cloud costs using accounts, tags, l
 
 <iframe title="FinOps interactive guide for cost allocation." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%201%20-%20Cost%20allocation" width="800" height="500"></iframe>
 
-#### Get started with managing shared costs:
-
-<iframe title="FinOps interactive guide for managing shared costs." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%203%20-%20Manage%20shared%20costs" width="800" height="500"></iframe>
-
 ## Reporting + analytics
 
 #### Objective:
 
-Examine and showback cloud data to gain insights into usage and spend patterns to identify cost optimization opportunities, improve cost efficiency, and make informed financial decisions regarding cloud resources.
+Examine and showback cloud data to gain insights into usage and spend patterns. Identify cost optimization opportunities, improve cost efficiency, and make informed financial decisions regarding cloud resources.
 
-#### Get started with data analysis & showback:
-
-<iframe title="FinOps interactive guide for data analysis & showback." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%202%20-%20Data%20analysis%20and%20showback" width="800" height="500"></iframe>
+<iframe title="FinOps interactive guide for reporting and analytics." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%202%20-%20Reporting%20and%20analytics" width="800" height="500"></iframe>
 
 ## Anomaly management
 
