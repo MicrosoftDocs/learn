@@ -34,7 +34,7 @@ There are three types of disks used with Azure VMs:
 
 - **OS disk**: When you create an Azure VM, Azure automatically attaches a VHD for the operating system (OS).
 
-- **Temporary disk**: When you create an Azure VM, Azure also automatically adds a temporary disk. This disk is used for data, such as page and swap files. The data on this disk might be lost during maintenance or a VM redeploy. Don't use it for storing permanent data, such as database files or transaction logs.
+- **Temporary disk**: When you create an Azure VM, Azure also automatically adds a temporary disk. This disk is used for data such as page and swap files. The data on this disk might be lost during maintenance or a VM redeploy. Don't use it for storing permanent data, such as database files or transaction logs.
 
 - **Data disks**: A data disk is a VHD attached to a virtual machine to store application data or other data you need to keep.
 
@@ -65,7 +65,7 @@ So, how can your cache settings affect the performance of your workloads running
 
 ### OS disk
 
-The default behavior of a VM OS disk is to use the cache in read/write mode. So, if you have applications that store data files on the OS disk and perform lots of random read/write operations to the data files. Consider moving those files to a data disk that has the caching turned off. Why is that? Well, if the read queue doesn't contain sequential reads, caching is of little or no benefit. The overhead of maintaining the cache as if the data was sequential can reduce disk performance.
+The default behavior of a VM OS disk is to use the cache in read/write mode. If you have applications that store data files on the OS disk and perform lots of random read/write operations to the data files, consider moving those files to a data disk that has the caching turned off. Why is that? Well, if the read queue doesn't contain sequential reads, caching is of little or no benefit. The overhead of maintaining the cache as if the data was sequential can reduce disk performance.
 
 ### Data disks
 
