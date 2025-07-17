@@ -1,4 +1,3 @@
-
 It's time to create the tables that will hold the data for your online card-reference application. Use the following image to visualize what the data model could look like.
 
 ![Picture of a sample data model consisting of four tables.](../media/model-1s.png)
@@ -209,7 +208,7 @@ With the translation rules in mind, here's how you can create the translations t
 
 ## Create the sets table
 
-The card game will have sets released five times a year, so you need to track the set name and the release date. The sets table is a simple table, but it'll be important when you need to add cards to each individual set. The first column will be named **set_id**and be an `int` data type. Next, a name is needed for each set, so **set_name** will be the next column, and will have an `nvarchar` data type with a length of 50. The last column in this small but important table is the **set_date**. It only needs to track day/month/year, so a `date` data type will work here.
+The card game will have sets released five times a year, so you need to track the set name and the release date. The sets table is a simple table, but it'll be important when you need to add cards to each individual set. The first column will be named **set_id** and be an `int` data type. Next, a name is needed for each set, so **set_name** will be the next column, and will have an `nvarchar` data type with a length of 50. The last column in this small but important table is the **set_date**. It only needs to track day/month/year, so a `date` data type will work here.
 
 Here's what the sets table will look like:
 

@@ -1,4 +1,3 @@
-
 Now that your data model is complete, it's time to insert some data and see how all the elements created with the tables work.
 
 In this exercise, you'll run sql commands to see how the tables are related in the data model and how the rules you created are enforced.
