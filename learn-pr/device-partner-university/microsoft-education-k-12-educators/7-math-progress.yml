@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.k-12-educators.math-progress
+title: Math progress
+metadata:
+  title: Math Progress
+  description: This content is part of the "Microsoft Education for K-12 educators" module.
+  ms.date: 07/17/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-math-progress.md)]

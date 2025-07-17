@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dpu.k-12-educators
+title: Microsoft Education for K-12 educators
+metadata:
+  title: Microsoft Education for K-12 educators
+  description: [Add brief summary]
+  ms.date: 07/17/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: module
+  ms.service: [Add]
+summary: >
+  [Add brief summary]
+abstract: |
+  By the end of this module, you'll be able to:
+  - [Add learning objectives here]
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles: [Add]
+products: [Add]
+units:
+  - learn.dpu.k-12-educators.introduction
+  - learn.dpu.k-12-educators.education-insights
+  - learn.dpu.k-12-educators.microsoft-365-copilot-chat
+  - learn.dpu.k-12-educators.minecraft-education
+  - learn.dpu.k-12-educators.challenges-facing-k-12-educators
+  - learn.dpu.k-12-educators.what-k-12-educators-need
+  - learn.dpu.k-12-educators.learning-accelerators
+  - learn.dpu.k-12-educators.what-is-reading-coach
+  - learn.dpu.k-12-educators.reading-progress
+  - learn.dpu.k-12-educators.math-progress
+  - learn.dpu.k-12-educators.microsoft-reflect
+  - learn.dpu.k-12-educators.immersive-reader
+  - learn.dpu.k-12-educators.knowledge-check
+  - learn.dpu.k-12-educators.summary
+badge:
+  uid: learn.dpu.k-12-educators.badge
