@@ -152,7 +152,8 @@ Gists are a GitHub feature for sharing code snippets, notes, or small pieces of 
 - Embedding code snippets in blogs, forums, or documentation.
 
 #### Limitations of Gists
-- Gists are not entirely private, even if marked as secret. Anyone with the URL can access them, so they should not be used for sensitive or confidential information.
+> [!IMPORTANT]
+> Gists are not entirely private, even if marked as secret. Anyone with the URL can access them, so they should not be used for sensitive or confidential information.
 - They are best suited for small snippets or single files. For larger projects or multi-file structures, a full repository is more appropriate.
 
 To learn more about how to create and manage gists, refer to the GitHub documentation in the Resources section of this module or visit the [GitHub Gists documentation](https://docs.github.com/en/github/writing-on-github/creating-gists).
