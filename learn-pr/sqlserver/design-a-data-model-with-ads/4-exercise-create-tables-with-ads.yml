@@ -4,11 +4,11 @@ title: Create tables with Azure Data Studio
 metadata:
   title: Create tables with Azure Data Studio
   description: "Create a data model for an application that includes tables and data types using Table Designer in Azure Data Studio"
-  ms.date: 03/05/2024
+  ms.date: 07/17/2025
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: unit
 durationInMinutes: 30
 content: |
   [!include[](includes/4-exercise-create-tables-with-ads.md)]
-
+

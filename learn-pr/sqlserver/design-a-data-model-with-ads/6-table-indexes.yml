@@ -4,7 +4,7 @@ title: Table indexes
 metadata:
   title: Table indexes
   description: "Learn about index types in Azure SQL Database. Learn about clustered indexes, columnstore indexes and full text indexes."
-  ms.date: 03/05/2024
+  ms.date: 07/17/2025
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: unit
@@ -37,4 +37,4 @@ quiz:
       explanation: Columnstore indexes wouldn't help with the storage of binary data or data kept on the file system.
     - content: Data Warehouses
       isCorrect: true
-      explanation:  Clustered columnstore indexes use column-based data storage to help with analytical queries that are run in data warehouses.
+      explanation:  Clustered columnstore indexes use column-based data storage to help with analytical queries that are run in data warehouses.
