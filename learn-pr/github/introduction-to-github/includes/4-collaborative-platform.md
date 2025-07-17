@@ -33,7 +33,7 @@ For this walkthrough, we'll go over how to create an issue from a repository. Bu
 1. If you're a project maintainer, you can assign the issue to someone, add it to a project board, associate it with a milestone, or apply a label.
 1. When you're finished, select **Submit new issue**.
 
-Some conversations are more suitable for GitHub Discussions. GitHub Discussions are intended for open-ended conversations, such as asking questions, sharing information, or gathering community feedback.
+Some conversations are more suitable for GitHub Discussions. They are intended for open-ended conversations such as asking questions, sharing information, or gathering community feedback..
 
 In the next section, we’ll review Discussions and how to best utilize the feature.
 
