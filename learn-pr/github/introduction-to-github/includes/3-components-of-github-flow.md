@@ -50,7 +50,7 @@ Once the changes have been approved (if required), the pull request's source bra
 
 Unlike issues and discussions, pull requests relate specifically to proposed changes in code. Issues are used for tracking bugs, feature requests, or tasks, while Discussions are meant for broader conversations that aren’t tied directly to a specific line of code.
 
-Now that we know of all the ingredients, let’s review the GitHub flow.
+Now that we understand all the key elements, let’s review the GitHub flow.
 
 ## The GitHub flow
 
