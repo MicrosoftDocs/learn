@@ -52185,6 +52185,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/execute-azure-function-with-triggers/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-triggers-bindings?tabs=isolated-process%2Cnode-v4%2Cpython-v2&pivots=programming-language-csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/execute-azure-function-with-triggers/2-determine-best-trigger.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-triggers-bindings?tabs=isolated-process%2Cnode-v4%2Cpython-v2&pivots=programming-language-csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/execute-azure-function-with-triggers/3-timer-trigger.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-triggers-bindings?tabs=isolated-process%2Cnode-v4%2Cpython-v2&pivots=programming-language-csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/execute-azure-function-with-triggers/4-create-timer-trigger.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-triggers-bindings?tabs=isolated-process%2Cnode-v4%2Cpython-v2&pivots=programming-language-csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/execute-azure-function-with-triggers/5-http-trigger.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-triggers-bindings?tabs=isolated-process%2Cnode-v4%2Cpython-v2&pivots=programming-language-csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/execute-azure-function-with-triggers/6-create-http-trigger.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-triggers-bindings?tabs=isolated-process%2Cnode-v4%2Cpython-v2&pivots=programming-language-csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/execute-azure-function-with-triggers/7-blob-trigger.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-triggers-bindings?tabs=isolated-process%2Cnode-v4%2Cpython-v2&pivots=programming-language-csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/execute-azure-function-with-triggers/8-create-blob-trigger.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-triggers-bindings?tabs=isolated-process%2Cnode-v4%2Cpython-v2&pivots=programming-language-csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/execute-azure-function-with-triggers/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-triggers-bindings?tabs=isolated-process%2Cnode-v4%2Cpython-v2&pivots=programming-language-csharp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/execute-azure-function-with-triggers/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-triggers-bindings?tabs=isolated-process%2Cnode-v4%2Cpython-v2&pivots=programming-language-csharp",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/visual-studio/visual-studio-test-concepts/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/dotnet/core/testing/unit-testing-best-practices",
       "redirect_document_id": false
