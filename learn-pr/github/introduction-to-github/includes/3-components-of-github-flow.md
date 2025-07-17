@@ -48,7 +48,7 @@ Once the changes have been approved (if required), the pull request's source bra
 
 :::image type="content" source="../media/2-pull-request.png" alt-text="A screenshot of a pull request and a comment within the pull request." border="false":::
 
-Pull requests differ from issues and discussions in that they relate specifically to proposed changes in code. Issues are used for tracking bugs, feature requests, or tasks, while Discussions are meant for broader conversations that aren’t tied directly to a specific line of code.
+Unlike issues and discussions, pull requests relate specifically to proposed changes in code. Issues are used for tracking bugs, feature requests, or tasks, while Discussions are meant for broader conversations that aren’t tied directly to a specific line of code.
 
 Now that we know of all the ingredients, let’s review the GitHub flow.
 
