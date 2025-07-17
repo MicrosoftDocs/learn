@@ -41,11 +41,6 @@ In the next section, we’ll review Discussions and how to best utilize the feat
 
 Discussions are for conversations that need to be accessible to everyone and aren't related to code. Discussions enable fluid, open conversation in a public forum.
 
-In this section we go over:
-
-- Enabling discussions in your repository.
-- Creating a new discussion and various discussion categories.
-
 Let’s review how to enable discussions in your repository.
 
 ### Enabling discussions in your repository
