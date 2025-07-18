@@ -27,7 +27,7 @@ The diagram illustrates this workflow:
 
 Let's explore each of these components in more detail.
 
-### Store and govern your data storage
+### Store and govern your data
 
 Before you can search your data, you need to store it securely and control who can access it. This foundational step ensures your RAG system only retrieves authorized data when responding to user queries, maintaining security and compliance.
 

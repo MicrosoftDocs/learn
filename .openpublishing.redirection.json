@@ -52185,6 +52185,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/deploy-run-container-app-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-custom-container",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-run-container-app-service/2-build-store-images.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-custom-container",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-run-container-app-service/3-exercise-build-images.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-custom-container",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-run-container-app-service/4-deploy-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-custom-container",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-run-container-app-service/5-exercise-deploy-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-custom-container",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-run-container-app-service/6-update-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-custom-container",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-run-container-app-service/7-exercise-update-web-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-custom-container",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-run-container-app-service/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-custom-container",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-run-container-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/app-service/quickstart-custom-container",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/execute-azure-function-with-triggers/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-triggers-bindings?tabs=isolated-process%2Cnode-v4%2Cpython-v2&pivots=programming-language-csharp",
       "redirect_document_id": false
