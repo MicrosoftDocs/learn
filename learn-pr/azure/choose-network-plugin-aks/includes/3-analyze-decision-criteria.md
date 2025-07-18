@@ -10,8 +10,8 @@ Kubenet lets the nodes receive defined IP addresses, without the need to reserve
 
 The following basic calculations compare address space in the network models:
 
-* kubenet: a simple /24 IP address range can support up to 251 nodes in the cluster (each Azure virtual network subnet reserves the first three IP addresses for management operations). This node count could support up to 27,610 pods (with a default maximum of 110 pods per node with kubenet).
-* Azure CNI: that same basic /24 subnet range could only support a maximum of 8 nodes in the cluster. This node count could only support up to 240 pods (with a default maximum of 30 pods per node with Azure CNI).
+* **kubenet**: A simple /24 IP address range can support up to 251 nodes in the cluster (each Azure virtual network subnet reserves the first three IP addresses for management operations). This node count could support up to 27,610 pods (with a default maximum of 110 pods per node with kubenet).
+* **Azure CNI**: That same basic /24 subnet range could only support a maximum of 8 nodes in the cluster. This node count could only support up to 240 pods (with a default maximum of 30 pods per node with Azure CNI).
 
 ### Cluster size
 
@@ -19,7 +19,7 @@ Kubenet has a hard maximum of 400 nodes per cluster, while Azure CNI is dependen
 
 ### Connectivity
 
-In Kubenet, you must manually manage and maintain user-defined routes (UDRs). To reach pods from outside the cluster, a load balancer must be used. With Azure CNI, pods get full virtual network connectivity and can be directly reached via their private IP address from connected networks.
+In kubenet, you must manually manage and maintain user-defined routes (UDRs). To reach pods from outside the cluster, a load balancer must be used. With Azure CNI, pods get full virtual network connectivity and can be directly reached via their private IP address from connected networks.
 
 ### Multi-cluster support
 
@@ -27,7 +27,7 @@ In kubenet, multiple clusters can't use the same node subnet. With Azure CNI, th
 
 ### Latency
 
-Compared to Azure CNI, Kubenet needs an extra hop, which can introduce some minor latency. Latency-sensitive workloads should be deployed on clusters using Azure CNI.
+Compared to Azure CNI, kubenet needs an extra hop, which can introduce some minor latency. Latency-sensitive workloads should be deployed on clusters using Azure CNI.
 
 ### Extra capabilities
 
