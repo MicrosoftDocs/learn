@@ -4,9 +4,9 @@ title: API management
 metadata:
   title: API management
   description: In this unit, you will learn what things to consider when managing APIs at scale.
-  author: dlepow
-  ms.author: danlep
-  manager: susanpotter
+  author: softchris
+  author: chnoring
+  manager:
   ms.date: 06/30/2024
   ms.topic: unit
 durationInMinutes: 5
@@ -48,4 +48,4 @@ quiz:
         - content: Permanently disable a backend service when an error occurs.
           isCorrect: false
           explanation: Incorrect. You don't want to disable a backend service permanently but you want to temporarily block requests to a failing backend.
-
+

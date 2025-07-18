@@ -5,11 +5,11 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 06/30/2024
-  author: dlepow
-  ms.author: danlep
-  manager: susanpotter
+  author: softchris
+  author: chnoring
+  manager:
   ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-summary.md)]
-
+
