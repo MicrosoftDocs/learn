@@ -4,7 +4,7 @@ Choosing the best network plugin for your use case depends on your criteria. Eac
 
 ### IPv4 exhaustion
 
-Kubenet is designed with the conservation of IP address space in mind. Azure CNI provides pods with complete network connectivity, but requires more IP address space and planning. IPv4 exhaustion is when the number of addresses reach the limit and stop nodes from a scale or upgrade operation. During exhaustion, your application demands too many resources and falters to keep up.
+Kubenet is designed with the conservation of IP address space in mind. Azure CNI provides pods with complete network connectivity, but requires more IP address space and planning. IPv4 exhaustion is when the number of addresses reaches the limit and stop nodes from a scale or upgrade operation. During exhaustion, your application demands too many resources and falters to keep up.
 
 Kubenet lets the nodes receive defined IP addresses, without the need to reserve a large number of IP addresses up front for all of the potential pods that could run in the cluster. With kubenet, you worry less about IPv4 exhaustion and handle a small IP address range for large cluster support and application demands.
 

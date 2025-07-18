@@ -1,4 +1,4 @@
-An AKS cluser requires a network plugin in order to facilitate pod-to-pod communication, pod-to-node communication, and in some cases, node-to-pod communication. There are two networking models available on AKS: kubenet and Azure CNI. There are additional evolutions of Azure CNI, including Azure CNI Overlay, Azure CNI for dynamic IP allocation, and Azure CNI Powered by Cilium. Each of these models has its own set of features and limitations. 
+An AKS cluster requires a network plugin in order to facilitate pod-to-pod communication, pod-to-node communication, and in some cases, node-to-pod communication. There are two networking models available on AKS: kubenet and Azure CNI. There are additional evolutions of Azure CNI, including Azure CNI Overlay, Azure CNI for dynamic IP allocation, and Azure CNI Powered by Cilium. Each of these models has its own set of features and limitations. 
 
 ## kubenet
 
