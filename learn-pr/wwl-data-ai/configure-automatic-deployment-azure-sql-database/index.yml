@@ -3,7 +3,7 @@ uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database
 metadata:
   title: Automate database deployment
   description: "Automate database deployment"
-  ms.date: 02/26/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based
@@ -44,4 +44,4 @@ units:
 - learn.wwl.configure-automatic-deployment-for-azure-sql-database.summary
 badge:
   uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.badge
-
+

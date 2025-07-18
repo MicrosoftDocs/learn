@@ -5,6 +5,6 @@ The main takeaways from this module include understanding how Data Factory and N
 More Reading:
 
 - [Getting started with Microsoft Fabric](/azure/data-factory/introduction)
-- [Understanding Dataflows in Microsoft Fabric](/docs/power-query/dataflows/overview)
+- [Understanding Dataflows in Microsoft Fabric](/fabric/data-factory/create-first-dataflow-gen2)
 - [Exploring Notebooks in Microsoft Fabric](/azure/notebooks/)
-- [Scheduling Jobs in Microsoft Fabric](/azure/data-factory/scheduling-and-execution)
+- [Scheduling Jobs in Microsoft Fabric](/rest/api/fabric/core/job-scheduler)

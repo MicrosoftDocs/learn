@@ -5,12 +5,12 @@ metadata:
   title: Exercise - Use the Azure portal
   description: Use the Azure portal to explore some of the most common panes you use in the Azure portal to create and manage services.
   ms.date: 01/17/2025
-  author: JnHs
-  ms.author: jenhayes
+  author: wwlpublish
+  ms.author: cynthist
   ms.topic: unit
 # interactive: azure-portal
 azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-navigate-the-portal.md)]
-
+

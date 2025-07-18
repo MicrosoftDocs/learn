@@ -7,7 +7,7 @@ metadata:
   title: Applied GitHub Copilot techniques
   description: Use GitHub Copilot to update a Python project. Update the Python API and use GitHub Copilot to suggest additions for new endpoints.
   author: abrilurena
-  ms.author: abrilu
+  ms.author: orthomas
   ms.date: 09/30/2024
   ms.topic: unit
   ms.collection:

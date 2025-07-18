@@ -235,46 +235,6 @@ If an error occurs or if a test fails, a red X instead of a green checkmark appe
 
 :::image type="content" source="../media/2-log-details.png" alt-text="Screenshot of GitHub Actions log with details on a failed test.":::
 
-## Customize workflow templates
-
-At the beginning of this module, you considered a scenario in which you need to set up CI for your team of developers. The Node.js template is a great start, but you want to customize it to better suit your team's requirements. You want to target different versions of Node.js and different operating systems. You also want the build and test steps to be separate jobs.
-
-Here's an example of how of a customized workflow:
-
-```yml
-strategy:
-  matrix:
-    os: [ubuntu-latest, windows-latest]
-    node-version: [16.x, 18.x]
-```
-
-In this example, you configure a [build matrix](https://docs.github.com/enterprise-server@3.14/actions/writing-workflows/about-workflows#using-a-build-matrix) for testing across multiple operating systems and language versions. This matrix produces four builds, one for each operating system paired with each version of Node.js.
-
-Four builds and their tests produce a large amount of log data. It might be difficult to sort through it all. In the following sample, you move the test step to a dedicated test job. This job tests against multiple targets. Separating the build and test steps makes it easier to work with the log data.
-
-```yml
-test:
-  runs-on: ${{ matrix.os }}
-  strategy:
-    matrix:
-      os: [ubuntu-latest, windows-latest]
-      node-version: [16.x, 18.x]
-  steps:
-  - uses: actions/checkout@v3
-  - name: Use Node.js ${{ matrix.node-version }}
-    uses: actions/setup-node@v3
-    with:
-      node-version: ${{ matrix.node-version }}
-  - name: npm install, and test
-    run: |
-      npm install
-      npm test
-    env:
-      CI: true
-```
-
-
-
 ## Work with artifacts
 
 When a workflow produces something other than a log entry, the product is called an *artifact*. For example, the Node.js build produces a Docker container that can be deployed. The container is an artifact that you can upload to storage by using the [actions/upload-artifact](https://github.com/actions/upload-artifact?azure-portal=true) action. You can later download the artifact from storage by using [actions/download-artifact](https://github.com/actions/download-artifact?azure-portal=true).
