@@ -16,11 +16,11 @@ iconUrl: /training/achievements/data-engineer-azure-databricks.svg
 levels:
 - intermediate
 roles:
-- data-engineer
+- data-analyst
 products:
 - azure-databricks
 subjects:
-- data-engineering
+- data-analytics
 modules:
 - learn.wwl.explore-azure-databricks
 - learn.wwl.perform-data-analysis-azure-databricks
