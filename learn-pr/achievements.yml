@@ -6225,6 +6225,11 @@ achievements:
   title: Fundamentals of language translation
   summary: Automated translation capabilities in an AI solution enable closer collaboration by removing language barriers.
   iconUrl: /training/achievements/translate-text-with-translation-service.svg
+- uid: learn.azure.deploy-run-container-app-service.badge
+  type: badge
+  title: Deploy and run a containerized web app with Azure App Service
+  summary: Create a Docker image and store it in a repository in Azure Container Registry. Use Azure App Service to deploy a web application based on the Docker image. Configure continuous deployment for the web app by using a webhook that monitors the Docker image for changes.
+  iconUrl: /training/achievements/deploy-run-container-app-service.svg
 - uid: learn.execute-azure-function-with-triggers.badge
   type: badge
   title: Execute an Azure Function with triggers
