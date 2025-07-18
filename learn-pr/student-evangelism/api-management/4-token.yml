@@ -5,7 +5,7 @@ metadata:
   title: Token management
   description: This unit describes how to apply policies to manage tokens in Azure API Management service.
   author: softchris
-  author: chnoring
+  ms.author: chnoring
   manager:
   ms.date: 06/30/2024
   ms.topic: unit
