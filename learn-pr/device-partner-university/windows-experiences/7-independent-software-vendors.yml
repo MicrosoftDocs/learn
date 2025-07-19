@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.windows-experiences.third-parties-using-npu
-title: Third parties using NPU
+uid: learn.dpu.windows-experiences.independent-software-vendors
+title: Independent Software Vendors
 metadata:
-  title: Third Parties Using NPU
+  title: Independent Software Vendors
   description: This content is part of the "A new generation of Windows experiences" module.
   ms.date: 07/18/2025
   author: Stephanie-Rosenzweig
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-third-parties-using-npu.md)]
+  - include: includes/7-independent-software-vendors.md
