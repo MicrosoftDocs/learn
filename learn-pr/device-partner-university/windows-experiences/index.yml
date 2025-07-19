@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.dpu.windows-experiences
+title: A new generation of Windows experiences
+metadata:
+  title: A New Generation of Windows Experiences
+  description: In this module, you'll learn about new Windows experiences on Windows 11 Pro and Copilot+ PCs.
+  ms.date: 07/18/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Discover new Windows experiences designed to boost productivity and support creativity by helping you save time and work more efficiently.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Discuss the next wave of Windows experiences
+  - Explain how these Windows experiences are easier to use, more accessible, and more impactful than before
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles: 
+  - business-owner
+  - business-user
+  - technology-manager
+products: 
+  - windows-11
+units:
+  - learn.dpu.windows-experiences.introduction
+  - learn.dpu.windows-experiences.drive-productivity
+  - learn.dpu.windows-experiences.innovative-new-features
+  - learn.dpu.windows-experiences.support-creativity
+  - learn.dpu.windows-experiences.accomplish-more
+  - learn.dpu.windows-experiences.windows-11-experiences
+  - learn.dpu.windows-experiences.third-parties-using-npu
+  - learn.dpu.windows-experiences.summary
+badge:
+  uid: learn.dpu.windows-experiences.badge

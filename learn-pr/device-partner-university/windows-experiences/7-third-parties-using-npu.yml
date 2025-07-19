@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-experiences.third-parties-using-npu
+title: Third parties using NPU
+metadata:
+  title: Third Parties Using NPU
+  description: This content is part of the "A new generation of Windows experiences" module.
+  ms.date: 07/18/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-third-parties-using-npu.md)]

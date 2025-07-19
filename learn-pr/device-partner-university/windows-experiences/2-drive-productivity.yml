@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-experiences.drive-productivity
+title: Drive productivity
+metadata:
+  title: Drive Productivity
+  description: This content is part of the "A new generation of Windows experiences" module.
+  ms.date: 07/18/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-drive-productivity.md)]
