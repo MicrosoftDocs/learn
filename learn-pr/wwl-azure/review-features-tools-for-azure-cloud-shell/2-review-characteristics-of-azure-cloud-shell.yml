@@ -2,8 +2,6 @@
 uid: learn.wwl.review-features-tools-for-azure-cloud-shell.review-characteristics-of-azure-cloud-shell
 title: Review the characteristics of Azure Cloud Shell
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Review the characteristics of Azure Cloud Shell
   description: "Review the characteristics of Azure Cloud Shell"
   ms.date: 10/20/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-review-characteristics-of-azure-cloud-shell.md)]
+  [!include[](includes/2-review-characteristics-of-azure-cloud-shell.md)]

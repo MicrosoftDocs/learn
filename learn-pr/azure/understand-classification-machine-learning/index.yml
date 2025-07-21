@@ -1,11 +1,9 @@
 ### YamlMime:Module
 uid: learn.machinelearning.understand-classification-machine-learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Create and understand classification models in machine learning
+  title: Create and Understand Classification Models in Machine Learning
   description: Classification means assigning items into categories, or can also be thought of automated decision making. Here we introduce classification models through logistic regression, providing you with a stepping-stone toward more complex and exciting classification methods.
-  ms.date: 07/20/2024
+  ms.date: 05/12/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: module
@@ -17,10 +15,10 @@ title: Create and understand classification models in machine learning
 summary: Classification means assigning items into categories, or can also be thought of automated decision making. Here we introduce classification models through logistic regression, providing you with a stepping-stone toward more complex and exciting classification methods.
 abstract: | 
   In this module, you will:
-  - Discover how classification differs from classical regression
-  - Build models that can perform classification tasks
-  - Explore how to assess and improve classification models
-prerequisites: Familiarity with machine learning models
+  - Discover how classification differs from classical regression.
+  - Build models that can perform classification tasks.
+  - Explore how to assess and improve classification models.
+prerequisites: Familiarity with machine-learning models
 iconUrl: /training/achievements/machine-learning/understand-classification-machine-learning.svg
 levels: 
 - beginner

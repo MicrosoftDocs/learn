@@ -2,8 +2,6 @@
 uid: learn.azure-well-architected-performance-efficiency.achieve-and-sustain-performance
 title: Achieve and sustain performance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Achieve and sustain performance
   description: Learn how to operate your workload to achieve and sustain performance.
   ms.date: 12/13/2023

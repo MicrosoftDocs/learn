@@ -2,13 +2,13 @@ Azure Network Watcher helps you diagnose configuration errors that prevent virtu
 
 Suppose you have two VMs that can't communicate. You want to diagnose the problem and resolve it as fast as possible. You want to use Network Watcher to do that.
 
-Here, you'll troubleshoot connectivity between two VMs in different subnets.
+In this unit, you troubleshoot connectivity between two VMs in different subnets.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Configure a virtual network and VMs
 
-Let's start by creating the infrastructure. We'll also purposely be creating a configuration error:
+Let's start by creating the infrastructure. We're also going to purposely create a configuration error:
 
 1. In your browser, open an [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) session.
 
@@ -64,9 +64,9 @@ Let's start by creating the infrastructure. We'll also purposely be creating a c
     ```
 
     > [!NOTE]
-    > If you get an error "partofthepassword: event not found", create a new password using allowed characters.
+    > If you get an error with the message *partofthepassword: event not found*, create a new password using allowed characters.
 
-1. Install IIS on **FrontendVM** by running the following code.
+1. Install Internet Information Services (IIS) on **FrontendVM** by running the following code.
 
     ```azurecli
     az vm extension set \
@@ -154,7 +154,7 @@ az network watcher configure \
 
 ## Use Network Watcher to show the topology
 
-Now, you can use Network Watcher in the Azure portal to troubleshoot connectivity between two VMs in different subnets. Your colleague has reported a connectivity issue over HTTP/HTTPS between the two VMs. First, investigate the network topology.
+Now, you can use Network Watcher in the Azure portal to troubleshoot connectivity between two VMs in different subnets. Your colleague reported a connectivity issue over HTTP/HTTPS between the two VMs. First, investigate the network topology.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
@@ -162,7 +162,7 @@ Now, you can use Network Watcher in the Azure portal to troubleshoot connectivit
 
 1. In the Network Watcher menu, under **Monitoring**, select **Topology**. The **Network Watcher | Topology** pane appears.
 
-1. In the dropdown fields, select your **Subscription** and **Resource Group** for this exercise. The network topology for **MyVNet1** displays the frontend and backend VM interfaces. This is the virtual network you created at the beginning of this exercise.
+1. In the dropdown fields, select your **Subscription** and **Resource Group** for this exercise. The network topology for **MyVNet1** displays the frontend and backend VM interfaces. This virtual network is the one you created at the beginning of this exercise.
 
    :::image type="content" source="../media/3-network-topology.png" alt-text="Screenshot showing the exercise network topology." lightbox="../media/3-network-topology.png":::
 
@@ -209,7 +209,7 @@ The topology appears to be correct. To get more information, let's set up some t
     | Test Frequency | Every 30 seconds |
     | *Keep the default values for the remaining settings* |
 
-1. Select **Add Test configuration** to add this test configuration to your test group.  The **Add test group details** reappears with your test configuration identified.
+1. Select **Add Test configuration** to add this test configuration to your test group. The **Add test group details** reappears with your test configuration identified.
 
 1. In the **Destinations** box, select **Add destinations**. The **Add Destinations** pane appears.
 
@@ -301,4 +301,4 @@ Let's use the IP flow verify tool to get more information.
 
 1. The Result shows Access denied because of NSG and security rules.
 
-In this exercise, you have successfully used Network Watcher tools to discover the connectivity issue between the two subnets. Communication is allowed one way but blocked the other way because of NSG rules.
+In this exercise, you successfully used Network Watcher tools to discover the connectivity issue between the two subnets. Communication is allowed one way but blocked the other way because of NSG rules.

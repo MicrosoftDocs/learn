@@ -4,10 +4,12 @@ title: Prepare line-of-business apps for app protection policies
 metadata:
   title: Prepare line-of-business apps for app protection policies
   description: "Prepare line-of-business apps for app protection policies"
-  ms.date: 07/18/2023
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-prepare-line-of-business-apps-app-protection-policies.md)]

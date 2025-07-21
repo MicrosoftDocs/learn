@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-arc-enabled-kubernetes
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure Arc-enabled Kubernetes
   description: Learn about Azure Arc-enabled Kubernetes and how it can help organizations optimize and simplify their operations.
   manager: rayoflores
@@ -53,4 +51,4 @@ units:
 - learn.azure.intro-to-arc-enabled-kubernetes.8-summary
 badge:
   uid: learn.azure.intro-to-arc-enabled-kubernetes.badge
-
+

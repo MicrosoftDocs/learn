@@ -2,8 +2,6 @@
 uid: learn.wwl.extend-pipeline-use-multiple-templates.configure-pipeline-application-use-tokenization
 title: Configure the pipeline and the application to use tokenization
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure the pipeline and the application to use tokenization
   description: "Configure the pipeline and the application to use tokenization."
   ms.date: 1/25/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-configure-pipeline-application-use-tokenization.md)]
+  [!include[](includes/4-configure-pipeline-application-use-tokenization.md)]

@@ -2,8 +2,6 @@
 uid: learn.create-first-azure-front-door.exercise-create-web-sites
 title: Exercise - Create websites
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Create websites
   description: Create a virtual network and virtual machines for hosting the vehicle registration web app, and an App Service for hosting the license renewal web app
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-create-web-sites.md)]
-
+

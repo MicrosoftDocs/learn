@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Orchestrating data movement and transformation in Azure Data Factory
   description: "Orchestrate data movement and transformation in Azure Data Factory or Azure Synapse Pipeline"
   ms.date: 02/13/2024
@@ -51,4 +49,4 @@ units:
 - learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.summary
 badge:
   uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.badge
-
+

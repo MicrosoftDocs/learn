@@ -2,8 +2,6 @@
 uid: learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.troubleshoot-azure-load-balancer
 title: Troubleshoot Azure Load Balancer
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot Azure Load Balancer
   description: Troubleshoot Azure Load Balancer
   ms.date: 12/04/2023
@@ -38,4 +36,4 @@ quiz:
     - content: Load Balancer queues client requests until the port is opened again. At that point, the requests are sent.
       isCorrect: false
       explanation: Traffic is blocked and all requests time out and eventually fail unless this port was a probe port. In that case, the VM is removed from rotation.
-
+

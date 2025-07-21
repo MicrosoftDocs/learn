@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-a-geographically-distributed-application.2-geo-distributed-architecture
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design a geographically distributed architecture
   description: In this unit, you learn how to modify a scalable, single-region architecture in Azure to be resilient to regional outages.
   ms.date: 03/17/2023
@@ -37,4 +35,4 @@ quiz:
       explanation: "This configuration isn't necessary or possible. Azure DNS records are replicated globally by default."
     - content: "Replace Azure DNS with Azure Traffic Manager."
       isCorrect: false
-      explanation: "Azure Traffic Manager can't store DNS records for name resolution."
+      explanation: "Azure Traffic Manager can't store DNS records for name resolution."

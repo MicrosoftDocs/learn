@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.configure-dependency-injection.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check for ASP.NET Core dependency injection.
   ms.date: 11/7/2024
   author: CamSoper
   ms.author: casoper
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 quiz:
   title: Check your understanding

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-storage-approach-in-azure.6-summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary.
   ms.date: 10/18/2024
@@ -13,4 +11,4 @@ title: Summary
 durationInMinutes: 3
 content: |
   [!include[](includes/6-summary.md)]
-
+

@@ -48,7 +48,7 @@ Windows PowerShell is an OS component, so it receives the same lifecycle support
 PowerShell is shipped, installed, and configured separately from Windows PowerShell. First released as PowerShell Core 6.0 in 2018, it was the first version that offered multi-platform support, extending its availability to macOS and Linux operating systems.
 
 > [!NOTE]
-> The latest version of PowerShell is PowerShell 7.2, available via Microsoft Update.
+> The latest version of PowerShell is PowerShell 7.5, available via Microsoft Update.
 
 PowerShell and Windows PowerShell are separately installed and you can run supported commands using either environment.
 
@@ -62,6 +62,9 @@ The following table provides a general timeline of the major PowerShell releases
 
 | Version        | Release Date | Notes                                                        |
 | -------------- | ------------ | ------------------------------------------------------------ |
+| PowerShell 7.5 | January 2025     | Built on .NET 9.0.                                           |
+| PowerShell 7.4 | November 2023     | Built on .NET 8.0.                                           |
+| PowerShell 7.3 | November 2022     | Built on .NET 7.0.                                           |
 | PowerShell 7.2 | November 2021     | Built on .NET 6.0.                                           |
 | PowerShell 7.1 | November 2020     | Built on .NET 5.0.                                           |
 | PowerShell 7.0 | March 2020     | Built on .NET Core 3.1.                                      |
@@ -74,7 +77,7 @@ The following table provides a general timeline of the major PowerShell releases
 | PowerShell 1.0 | November 2006     | Installable on Windows XP SP2, Windows Server 2003 SP1, and Windows Vista. Optional component of Windows Server 2008. |
 
 > [!NOTE]
-> Throughout this module, topics will relate to both the latest Windows PowerShell and PowerShell versions (5.1 and 7.2). Most cmdlets will work using either platform. However, there'll be a note if a specific feature is only supported or relates to one specific platform.
+> Throughout this module, topics will relate to both the latest Windows PowerShell and PowerShell versions (5.1 and 7.5). Most cmdlets will work using either platform. However, there'll be a note if a specific feature is only supported or relates to one specific platform.
 
 > **Additional reading:** To support more recent versions of PowerShell on down-level operating systems, you might need to install the latest version of the Windows Management Framework. For more information, refer to [Install and Configure WMF 5.1](https://aka.ms/install-and-configure-WMF-5.1).
 

@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-pipeline-agents-pools.communicate-with-azure-pipelines
 title: Communicate with Azure Pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Communicate with Azure Pipelines
   description: "Communicate with Azure Pipelines"
   ms.date: 05/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-communicate-with-azure-pipelines.md)]
+  [!include[](includes/7-communicate-with-azure-pipelines.md)]

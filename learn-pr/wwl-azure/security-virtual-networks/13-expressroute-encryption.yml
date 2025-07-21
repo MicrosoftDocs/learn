@@ -2,8 +2,6 @@
 uid: learn.wwl.security-virtual-networks.expressroute-encryption
 title: Implement encryption over ExpressRoute
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement encryption over ExpressRoute
   description: "Implement encryption over ExpressRoute"
   ms.date: 03/25/2025

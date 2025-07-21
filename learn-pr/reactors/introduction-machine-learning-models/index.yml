@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.reactors.introduction-machine-learning-models 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to machine learning models 
   description: Learn how to use machine learning models for data science operations.
   ms.date: 05/19/2020
@@ -50,4 +48,4 @@ units:
 - learn.reactors.introduction-machine-learning-models.9-classification-decision-trees
 badge:
   uid: learn.reactors.introduction-machine-learning-models.badge
-
+

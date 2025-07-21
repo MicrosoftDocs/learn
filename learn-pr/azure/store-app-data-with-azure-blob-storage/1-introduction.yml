@@ -2,8 +2,6 @@
 uid: learn.store-app-data-with-azure-blob-storage.1-introduction
 title: Introduction to Blob storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Blob storage
   description: Introduction to Blob storage
   ms.date: 10/29/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
-
+

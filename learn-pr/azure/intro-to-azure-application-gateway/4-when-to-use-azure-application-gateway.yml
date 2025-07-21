@@ -2,11 +2,9 @@
 uid: learn.azure.intro-to-azure-application-gateway.when-to-use-azure-application-gateway
 title: When to use Azure Application Gateway
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to use Azure Application Gateway
   description: Learn when you should choose to use Azure Application Gateway as a solution to meet your organization's needs.
-  ms.date: 01/31/2024
+  ms.date: 05/15/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates

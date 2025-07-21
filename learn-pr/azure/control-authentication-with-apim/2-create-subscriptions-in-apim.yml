@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Create subscriptions in Azure API Management
   description: In this unit, you learn how subscriptions and keys can limit access to APIs in API Management.
-  ms.date: 06/13/2023
+  ms.date: 03/26/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit

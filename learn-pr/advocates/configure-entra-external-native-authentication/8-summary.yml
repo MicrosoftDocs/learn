@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-entra-external-native-auth.summary
+title: Summary
+metadata:
+  title: Summary
+  description: A summary of information
+  ms.date: 04/10/2025
+  author: S2FrdQ
+  ms.author: joylynnkirui
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

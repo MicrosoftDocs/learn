@@ -2,8 +2,6 @@
 uid: learn.intro-azure-functions.what-azure-functions
 title: What is Azure Functions?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure Functions?
   description: In this unit, you learn about Azure Functions and when it best fits your architectural needs.
   author: ggailey777
@@ -27,4 +25,4 @@ quiz:
         - content: "A trigger is when code times out and binding is the code that runs as a result."
           isCorrect: false
           explanation: "Incorrect! A trigger defines a condition for when code should run. A timeout is a kind of trigger but there are many different types of triggers like blob storage events, database inserts, new message in message queues, and more. Bindings are configuration that helps your code connect to a data source and make reading and writing to it possible by just a few lines of code."
-
+

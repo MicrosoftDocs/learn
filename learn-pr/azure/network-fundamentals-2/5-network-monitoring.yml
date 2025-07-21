@@ -2,11 +2,11 @@
 uid: learn.azure.network-fundamentals-2.network-monitoring
 title: Network monitoring
 metadata:
-  title: Use monitoring in your network
+  title: Use Monitoring in your Network
   description: Understand how to use monitoring to protect your network.
-  ms.date: 07/13/2023
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 03/27/2025
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 7
 content: |
@@ -16,13 +16,13 @@ quiz:
   questions:
   - content: You need to query log data for applications across your network in Azure. Which tool do you use?
     choices:
-    - content: You use Syslog to query the log data that has been collected.
+    - content: Use Syslog to query the log data that has been collected.
       isCorrect: false
       explanation: Syslog is used for event logging. Use Log Analytics.
-    - content: You use Log Analytics to query the data that has been collected.
+    - content: Use Log Analytics to query the data that has been collected.
       isCorrect: true
       explanation: Log Analytics can help you run complex queries over your log data.
-    - content: You use an agent to run queries on the data that has been collected.
+    - content: Use an agent to run queries on the data that has been collected.
       isCorrect: false
       explanation: An agent is used to collect information from a resource such as a virtual machine. Use Log Analytics to run queries.
       

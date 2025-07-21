@@ -2,8 +2,6 @@
 uid: learn.monitor-java-azure.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: summary
   title: Summary of monitoring your Java applications on Azure
   description: We look at a summary of monitoring your Java applications on Azure
@@ -19,4 +17,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/10-summary.md)]
-
+

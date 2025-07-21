@@ -4,7 +4,7 @@ title: Refactor using interfaces
 metadata:
   title: Refactor using interfaces
   description: "Use interfaces in refactoring to reduce dependencies."
-  ms.date: 02/17/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

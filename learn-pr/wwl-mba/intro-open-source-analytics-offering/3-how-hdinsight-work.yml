@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-open-source-analytics-offering.3-how-does-hdinsight-work
 title: How does HDInsight work
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How does HDInsight work
   description: "How does HDInsight work"
   ms.date: 01/05/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-how-hdinsight-work.md)]
+  [!include[](includes/3-how-hdinsight-work.md)]

@@ -1,14 +1,14 @@
-With the rise of **Large Language Models** (**LLMs**), there are several methods to deploy and use these models effectively.
+Deployment is a core operational component in LLMOps. Once you've developed and evaluated your language models, you need to make practical deployment decisions that are unique to LLMs. There are three key approaches to operationalizing LLMs: structuring prompts for reuse, orchestrating complex AI workflows, and delivering models to end users. Let's explore those.
 
-## Store engineered prompts as templates
+## How to structure prompts
 
 To start with, one of the key methods is through **engineered prompts**. Engineered prompts are carefully crafted prompts that guide the LLM to generate the desired output. When you store these prompts as templates, you can reuse them across different applications, ensuring consistency and efficiency in the deployment process.
 
-## Build AI systems with chains
+## How to orchestrate complex AI workflows
 
 Another powerful approach is the use of **chains**. Tools like LangChain and LlamaIndex allow for the creation of chains, which are sequences of operations that process and transform data through various stages. By using LLMs at different points within these chains, you can achieve sophisticated data processing and transformation capabilities.
 
-## Work with model deployments
+## How to deliver models to end users
 
 When you work with LLMs, you most commonly work with **pretrained models**. These models are pretrained on large datasets and can be used out-of-the-box for various applications. They offer a quick and easy way to deploy generative AI without the need for extensive training.
 

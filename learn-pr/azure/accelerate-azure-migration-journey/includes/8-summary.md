@@ -14,4 +14,3 @@ Many more resources are available to help you migrate to Azure.
 - [Microsoft Cloud Adoption Framework for Azure](https://azure.microsoft.com/solutions/cloud-enablement/cloud-adoption-framework/)
 - [Create your Azure free account](https://azure.microsoft.com/free/?azure-portal=true)
 - [Best practices to accelerate your cloud migration](https://techcommunity.microsoft.com/t5/azure-migration-and/best-practices-for-accelerating-cloud-migration/ba-p/1534495)
-- [Cloud migration and modernization resources](https://azure.microsoft.com/solutions/migration/)

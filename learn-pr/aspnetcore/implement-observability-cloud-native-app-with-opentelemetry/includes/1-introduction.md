@@ -1,4 +1,4 @@
-Because of the distributed nature of cloud-native applications, they should be closely monitored to ensure they're healthy and that their behavior is fast and reliable. If problems develop, you need to know before users do. You can achieve observability by including a telemetry package such as OpenTelemetry.
+Because of the distributed nature of cloud-native applications, they should be closely monitored to ensure they're healthy, and their behavior is fast and reliable. If problems develop, you need to know before users do. You can achieve observability by including a telemetry package such as OpenTelemetry.
 
 Imagine you work for an online outdoor clothing retailer that has a microservice-based web app it uses for stock management. While testing the cloud-native app, you're asked to ensure that its behavior can be monitored. You want to see how .NET supports observability.
 

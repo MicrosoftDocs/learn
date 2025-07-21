@@ -1,4 +1,6 @@
-You can limit network traffic to resources in your virtual network by using a network security group. You can assign a network security group to a subnet or a network interface, and define security rules in the group to control network traffic.
+You can limit network traffic to resources in your virtual network by using a [network security group](/azure/virtual-network/network-security-groups-overview). You can assign a network security group to a subnet or a network interface, and define security rules in the group to control network traffic.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=82ae3221-5622-47d5-b21d-4110c546d85d]
 
 ### Things to know about network security groups
 
@@ -10,11 +12,11 @@ Let's look at the characteristics of network security groups.
 
 - A network security group can be associated multiple times.
 
-- You create a network security group and define security rules in the Azure portal.
+- You create a network security group and define security rules in the Azure portal. 
 
-Network security groups are defined for your virtual machines in the Azure portal. The **Overview** page for a virtual machine provides information about the associated network security groups. You can see details such as the assigned subnets, assigned network interfaces, and the defined security rules.
+- The Overview page for a virtual machine provides information about the associated network security groups. You can see details such as the assigned subnets, assigned network interfaces, and the defined security rules.
 
-:::image type="content" source="../media/network-security-groups-1ebf7bed.png" alt-text="Screenshot that shows details for a network security group for a virtual machine in the Azure portal.":::
+:::image type="content" source="../media/network-security-groups-1ebf7bed.png" alt-text="Screenshot of the network security group overview page." border="false":::
 
 #### Network security groups and subnets
 

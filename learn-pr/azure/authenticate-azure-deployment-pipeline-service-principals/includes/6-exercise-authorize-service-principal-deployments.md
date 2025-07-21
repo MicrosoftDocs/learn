@@ -16,7 +16,7 @@ In the previous exercise, you signed in by using the service principal and then 
 
 ::: zone pivot="cli"
 
-1. In Visual Studio Code's Azure Cloud Shell (bash) terminal, sign in to Azure by running the following command: 
+1. In Visual Studio Code's Azure Cloud Shell (bash) terminal, sign in to Azure by running the following command:
 
     ```azurecli
     az login
@@ -70,9 +70,9 @@ Now you'll create a resource group to contain the toy company's website resource
 
 For your website's deployment pipeline, you decide to create a role assignment with the following details:
 
-- **Assignee**: The service principal that you created in the previous exercise.
-- **Role**: The Contributor built-in role.
-- **Scope**: The resource group that you created in the previous step.
+* **Assignee**: The service principal that you created in the previous exercise.
+* **Role**: The Contributor built-in role.
+* **Scope**: The resource group that you created in the previous step.
 
 ::: zone pivot="cli"
 
@@ -116,7 +116,7 @@ You previously created a Bicep file that deploys your website's resources. Here,
 
 ## Deploy the Bicep file by using the service principal
 
-You don't currently have a deployment pipeline, so you'll simulate what a pipeline does to deploy your Bicep file. 
+You don't currently have a deployment pipeline, so you'll simulate what a pipeline does to deploy your Bicep file.
 
 ::: zone pivot="cli"
 
@@ -183,8 +183,8 @@ Use the Azure portal to inspect the resources that you deployed and to inspect t
 
    You might also see a deployment named **Failure-Anomalies-Alert-Rule-Deployment**. Application Insights creates this deployment automatically.
 
-1. Select the **main** deployment to see what resources were deployed, and then expand **Deployment details**. 
- 
+1. Select the **main** deployment to see what resources were deployed, and then expand **Deployment details**.
+
    In this case, the App Service plan, the app, and the Application Insights instance are listed.
 
     :::image type="content" source="../media/6-deployment-details.png" alt-text="Screenshot of the Azure portal deployments overview pane for the main deployment, with an App Service plan and app, and an Application Insights instance listed." border="true":::
@@ -193,7 +193,7 @@ Use the Azure portal to inspect the resources that you deployed and to inspect t
 
 ## Clean up the resource group and service principal
 
-You've successfully created a service principal and role assignment, and you've deployed your website's resources by using a Bicep file. You can now remove the resources that you created. 
+You've successfully created a service principal and role assignment, and you've deployed your website's resources by using a Bicep file. You can now remove the resources that you created.
 
 ::: zone pivot="cli"
 
@@ -203,7 +203,7 @@ You've successfully created a service principal and role assignment, and you've 
    az logout
    ```
 
-1. Sign back in to Azure with your own user account by running the following command: 
+1. Sign back in to Azure with your own user account by running the following command:
 
     ```azurecli
     az login
@@ -219,7 +219,7 @@ You've successfully created a service principal and role assignment, and you've 
 
    When you're prompted to confirm, enter `y`.
 
-2. Run the following command to delete the service principal. Replace the `APPLICATION_ID` placeholder with the application ID that you copied in the previous exercise:
+1. Run the following command to delete the service principal. Replace the `APPLICATION_ID` placeholder with the application ID that you copied in the previous exercise:
 
    ```azurecli
    az ad sp delete --id APPLICATION_ID
@@ -235,7 +235,7 @@ You've successfully created a service principal and role assignment, and you've 
    Logout-AzAccount
    ```
 
-1. Sign back in to Azure with your own user account by running the following command: 
+1. Sign back in to Azure with your own user account by running the following command:
 
     ```azurepowershell
     Connect-AzAccount

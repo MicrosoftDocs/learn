@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.azure-netapp-files-application-volume-group
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Using Azure NetApp Files application volume group   
   description: Learn how to use Azure NetApp Files application volume groups to optimize deployments with Oracle and SAP HANA.        
@@ -41,4 +39,4 @@ units:
 - learn.azure.azure-netapp-files-application-volume-group.summary
 badge:
   uid: learn.azure.azure-netapp-files-application-volume-group.badge
-
+

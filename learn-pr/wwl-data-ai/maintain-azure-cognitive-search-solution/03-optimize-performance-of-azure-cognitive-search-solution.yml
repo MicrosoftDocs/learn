@@ -2,8 +2,6 @@
 uid: learn.wwl.maintain-azure-cognitive-search-solution.optimize-performance-of-azure-cognitive-search-solution
 title: Optimize performance of an Azure AI Search solution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Optimize performance of an Azure AI Search solution
   description: Optimize performance of an Azure AI Search solution
   author: ivorb
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/03-optimize-performance-of-azure-cognitive-search-solution.md)]
-
+

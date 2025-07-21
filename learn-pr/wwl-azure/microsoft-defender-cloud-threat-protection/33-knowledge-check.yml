@@ -6,12 +6,13 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/28/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
   ms.custom:
   - references_regions
+  module_assessment: true
 durationInMinutes: 10
 content: |
   [!include[](includes/33-knowledge-check.md)]

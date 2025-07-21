@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-and-copilot-agents.how-to-build-agents
+title: How can I build agents?
+metadata:
+  title: How Can I Build Agents?
+  description: This content explores how an organization can build their own Copilot agents.
+  ms.date: 06/26/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-how-to-build-agents.md)]

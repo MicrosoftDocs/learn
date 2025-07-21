@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Manage end-to-end deployment scenarios by using Bicep and GitHub Actions
   description: Build a deployment workflow for Bicep infrastructure as code templates. Create a single workflow to deploy infrastructure, applications, and data.
@@ -67,4 +65,4 @@ units:
 - learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions.summary
 badge:
   uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions.badge
-
+

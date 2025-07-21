@@ -2,8 +2,6 @@
 uid: learn.wwl.just-in-time-access.just-in-time-access-to-protect-azure-virtual-machines
 title: Understand just-in-time virtual machine access
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand just-in-time virtual machine access
   description: "Understand just-in-time virtual machine access"
   ms.date: 05/31/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-just-in-time-access-to-protect-azure-virtual-machines.md)]
+  [!include[](includes/2-just-in-time-access-to-protect-azure-virtual-machines.md)]

@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.exercise-monitor-azure-batch-job-in-cli
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Monitor your Azure Batch job in the CLI
   description: Exercise - Monitor your Azure Batch job in the CLI
-  ms.date: 04/04/2024
+  ms.date: 05/09/2025
   author: lauradolan
   ms.author: jushiman
   ms.topic: unit

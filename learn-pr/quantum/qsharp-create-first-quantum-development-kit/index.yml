@@ -1,11 +1,9 @@
 ### YamlMime:Module
 uid: learn.quantum.qsharp-create-first-quantum-development-kit
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create your first Q# program by using the Azure Quantum Development Kit
   description: Get started with Q# programming by building a quantum random number generator.
-  ms.date: 01/22/2025
+  ms.date: 06/09/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   
@@ -15,7 +13,7 @@ metadata:
 title: Create your first Q# program by using the Quantum Development Kit
 summary: Get started with Q# programming by building a quantum random number generator.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   - Allocate qubits and apply quantum operations to them.
   - Create a Q# program by using the Azure Quantum Development Kit.
   - Explain how Q# programs are structured.
@@ -24,7 +22,7 @@ abstract: |
   - Learn the basic structure of a Q# program.
   - Create a new Q# file.
   - Define the logic of a problem.
-  - Combine classical and quantum operations to solve a problem.
+  - Solve a problem by combining classical and quantum operations.
   - Work with qubits and quantum operations to build a quantum random number generator.
   
 prerequisites: |

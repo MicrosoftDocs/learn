@@ -2,8 +2,6 @@
 uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.7-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 01/28/2025
@@ -55,4 +53,4 @@ quiz:
     - content: "2 MB"
       isCorrect: false
       explanation: "2 MB is more than the maximum size for a single publication (individual or batch) allowed by Azure Event Hubs."
-
+

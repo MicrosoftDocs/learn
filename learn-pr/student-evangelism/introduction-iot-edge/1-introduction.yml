@@ -2,8 +2,6 @@
 uid: learn.oxford.intro-to-iot-edge.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 07/30/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 2 # dummy number at present
 content: |
   [!include[](includes/1-introduction.md)]
-
+

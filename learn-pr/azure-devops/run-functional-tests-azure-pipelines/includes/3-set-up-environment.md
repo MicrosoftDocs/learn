@@ -1,4 +1,4 @@
-In this section, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environments that you'll deploy.
+In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environments that you'll deploy.
 
 To accomplish these tasks, you:
 
@@ -14,11 +14,11 @@ To accomplish these tasks, you:
 
 To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
 
-Although you don't need an Azure subscription to work with Azure DevOps, here, you'll use Azure DevOps to deploy to resources that exist in your Azure subscription. To simplify the process, sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
+Although you don't need an Azure subscription to work with Azure DevOps, you'll use Azure DevOps here to deploy to resources that exist in your Azure subscription. To simplify the process, sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
 
-If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
+If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true). When you add the user, choose the **Basic** access level.
 
-Then sign out of Azure DevOps. Then sign in again under the Microsoft account that you use to sign in to your Azure subscription.
+Then, sign out of Azure DevOps and sign in again under the Microsoft account that you use to sign in to your Azure subscription.
 
 ## Get the Azure DevOps project
 
@@ -28,23 +28,34 @@ The modules in this learning path form a progression as you follow the Tailspin 
 
 ### Run the template
 
-Run a template that sets up everything in your Azure DevOps organization.
+Run a template that sets up your Azure DevOps organization.
 
-> [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=run-functional-tests&azure-portal=true)
+1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
-From the Azure DevOps Demo Generator site, follow these steps to run the template:
+1. When prompted to **Enter the template number from the list of templates**, enter **32** for **Run functional tests in Azure Pipelines**, then press **Enter**.
 
-1. Select **Sign In** and accept the usage terms.
-1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *Space Game - web - Functional tests*.
+1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) or use device login.
 
-    :::image type="content" source="../media/4-create-new-project.png" alt-text="Screenshot of Creating a project through the Azure DevOps Demo Generator.":::
+    > [!NOTE]
+    > If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). For this module, you can use **Full access**, but in a real-world situation, you should ensure you grant only the necessary scopes.
 
-1. Select **Yes, I want to fork this repository**. Then select **Authorize**.
-1. Select **Create Project**.
+1. Enter your Azure DevOps organization name, then press **Enter**.
 
-    The template takes a few moments to run.
-1. Select **Navigate to project** to go to your project in Azure DevOps.
+1. If prompted, enter your Azure DevOps PAT, then press **Enter**.
+
+1. Enter a project name such as *Space Game - web - Functional tests*, then press **Enter**.
+
+1. Once your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
+
+### Fork the repository
+
+If you haven't already, create a fork of the **mslearn-tailspin-spacegame-web-deploy** repository.
+
+1. On GitHub, go to the [mslearn-tailspin-spacegame-web-deploy](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy) repository.
+
+1. Select **Fork** at the top-right of the screen.
+
+1. Choose your GitHub account as the **Owner**, then select **Create fork**.
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/training/modules/run-functional-tests-azure-pipelines/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
@@ -72,7 +83,7 @@ To set up the work item:
 
     :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
-1. On the **Automate quality tests** work item, select the down arrow at the bottom of the card. Then assign the work item to yourself.
+1. On the **Automate quality tests** work item, select the down arrow at the bottom of the card, then assign the work item to yourself.
 
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
@@ -164,22 +175,22 @@ Here, you create the App Service instances for the three stages you'll deploy to
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|6.0"
+      --runtime "DOTNETCORE|8.0"
 
     az webapp create \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|6.0"
+      --runtime "DOTNETCORE|8.0"
 
     az webapp create \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|6.0"
+      --runtime "DOTNETCORE|8.0"
     ```
 
-    For learning purposes, here, you apply the same App Service plan (**B1 Basic**) to each App Service instance. In practice, you'd assign a plan that matches your expected workload.
+    For learning purposes, you apply the same App Service plan (**B1 Basic**) to each App Service instance here. In practice, you'd assign a plan that matches your expected workload.
 
 1. Run the following `az webapp list` command to list the hostname and state of each App Service instance.
 
@@ -202,7 +213,7 @@ Here, you create the App Service instances for the three stages you'll deploy to
 
 1. As an optional step, copy and paste one or more of the names into your browser to verify that they're running and that the default home page appears.
 
-    You should get this page:
+    You should get a page similar to this one:
 
     :::image type="content" source="../../shared/media/app-service-default.png" alt-text="The default home page on Azure App Service.":::
 
@@ -279,8 +290,8 @@ Here, you create a service connection that enables Azure Pipelines to access you
 1. In Azure DevOps, go to your **Space Game - web - Functional tests** project.
 1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
-1. Near the top of the page, **Service principal (automatic)**. Then select **Next**.
+1. Select **Create service connection**, then choose **Azure Resource Manager**, then select **Next**.
+1. Near the top of the page, **App registration (automatic)**.
 1. Fill in these fields:
 
     | Field                   | Value                                      |

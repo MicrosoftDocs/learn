@@ -22,5 +22,5 @@ The diagram shows the following process:
 
 1. A user provides details of an upcoming trip to a travel booking agent.
 1. The travel booking agent automates the booking of flight tickets and hotel reservations.
-1. The travel booking agent initiates an expense claim for the travel costs though the expense agent.
+1. The travel booking agent initiates an expense claim for the travel costs through the expense agent.
 1. The expense agent submits the expense claim for processing.

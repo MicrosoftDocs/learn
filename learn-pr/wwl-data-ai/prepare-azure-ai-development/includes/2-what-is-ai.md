@@ -13,3 +13,11 @@ Common AI capabilities that developers can integrate into a software application
 | ![Diagram of a chart showing an upward trend.](../media/prediction.png)<br>**Decision support** | The ability to use historic data and learned correlations to make predictions that support business decision making. For example, analyzing demographic and economic factors in a city to predict real estate market trends that inform property pricing decisions.  |
 
 Determining the specific AI capabilities you want to include in your application can help you identify the most appropriate AI services that you'll need to provision, configure, and use in your solution.
+
+## A closer look at generative AI
+
+*Generative AI* represents the latest advance in artificial intelligence, and deserves some extra attention. Generative AI uses *language models* to respond to natural language *prompts*, enabling you to build conversational apps and agents that support research, content creation, and task automation in ways that were previously unimaginable.
+
+![Diagram of a prompt, a language model, and a response.](../media/prompt.png)
+
+The language models used in generative AI solutions can be large language models (LLMs) that have been trained on huge volumes of data and include many millions of parameters; or they can be small language models (SLMs) that are optimized for specific scenarios with lower overhead. Language models commonly respond to text-based prompts with natural language text; though increasingly new *multi-modal* models are able to handle image or speech prompts and respond by generating text, code, speech, or images.

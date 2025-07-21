@@ -35,3 +35,4 @@ Logical separation of clusters usually provides a higher pod density than physic
 7.  To edit the namespace, select **YAML**. :::image type="content" source="../media/edit-namespace-yaml-1220bb0c.png" alt-text="Screenshot of the YAML for the namespace.":::
     
 8.  Select **Review + save** to save YAML updates to the namespace.
+

@@ -36,7 +36,9 @@ The execution policy in PowerShell is meant to minimize the possibility of a use
 
 To identify the effective execution policy for the current PowerShell session, use the following cmdlet:
 
-`Get-ExecutionPolicy`
+```powershell
+Get-ExecutionPolicy
+```
 
 You can configure the following policy settings:
 
@@ -49,4 +51,8 @@ You can configure the following policy settings:
 
 To change the execution policy in PowerShell, use the following command:
 
-`Set-ExecutionPolicy -ExecutionPolicy <PolicyName>`
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy <PolicyName>
+```
+
+

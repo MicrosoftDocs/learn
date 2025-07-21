@@ -60,27 +60,21 @@ Iteration is a key part of creating effective AI prompts. In this step, you refi
 > [!NOTE]
 > Think Deeper unlocks the power of deep reasoning in Microsoft Copilot. It can handle more complex questions by breaking them down into multiple steps, allowing for more accurate and detailed responses.
 
-1. Pick one of your earlier prompts and submit to Copilot, then review the results. 
+1. Pick one of your earlier prompts, activate Think Deeper by selecting the **Quick response** box and selecting **Think Deeper**, then submit to Copilot and review the results.
 
 > **Sample prompt**:
 > Copilot, generate a list of 5 book recommendations for a beach holiday that focus on world building science fiction.
 
-![Screenshot of Copilot with the Submit button highlighted.](../media/05-copilot-submit.jpg)
+![Screenshot of Copilot with the Submit button highlighted.](../media/05-think-deeper-submit.jpg)
 
-2. Activate **Think Deeper** by selecting the icon.
-
-![Screenshot of Copilot with the Think Deeper button highlighted.](../media/05-think-deeper-activate.jpg)
-
-3. Ask a follow-up question for more detailed information.
+2. Ask a follow-up question for more detailed information.
 
 > **Sample prompt**:
 > I'd like to dive into the central themes and motifs of each book, to understand the underlying messages and connections between the stories. 
 
  This will take Copilot around 30 seconds to return your results.
 
-![Screenshot of Copilot with Think Deeper activated and the Submit button highlighted.](../media/05-think-deeper-submit.jpg)
-
-4. Review the output from Think Deeper. Consider how it compares to standard responses.
+3. Review the output from Think Deeper. Consider how it compares to standard responses.
 
 > [!NOTE]
 > **Build your AI habit**:

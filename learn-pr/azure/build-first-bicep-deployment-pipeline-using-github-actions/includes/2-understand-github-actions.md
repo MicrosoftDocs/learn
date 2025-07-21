@@ -10,7 +10,7 @@ When you work with GitHub Actions, you define your workflow configuration in a Y
 
 ## Runners
 
-Until now, you've deployed your Bicep files from your local computer. After you write a Bicep template, you deploy it to Azure by using the Azure CLI or Azure PowerShell. These tools use your computer's resources to submit the template to Azure. They use your personal identity to authenticate you to Azure and to verify that you have the permissions to deploy the resources.
+Until now, you've deployed your Bicep files from your local computer. After you write a Bicep file, you deploy it to Azure by using the Azure CLI or Azure PowerShell. These tools use your computer's resources to submit the file to Azure. They use your personal identity to authenticate you to Azure and to verify that you have the permissions to deploy the resources.
 
 A workflow also needs access to a computer or GPU with the correct operating system and hardware platform so it can execute the deployment actions. GitHub Actions uses _runners_, which are computers that are configured to run deployment steps for a workflow. Each runner already has the Bicep and Azure tooling you used in earlier modules, so it can do the same things you do from your own computer. Instead of a human executing commands, the GitHub Actions service instructs the runner to run the steps that you've defined in the workflow YAML file.
 

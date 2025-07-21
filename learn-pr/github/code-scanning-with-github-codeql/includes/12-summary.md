@@ -1,10 +1,10 @@
 In this module, we learned:
 
-* Code scanning with CodeQL can be customized using the advanced setup workflow file that specifies the location of queries, which languages to analyze, and whether they should be built with autobuild, or manual build steps.
+* Code scanning with CodeQL can be customized using the advanced setup workflow file that specifies the location of queries, which languages to analyze, and whether they should be built with autobuild or manual build steps.
 * GitHub supports integration of third party scanning and alerting tools in the code scanning process.
 * CodeQL has a CLI that allows you to create and analyze databases offline and then upload the results to GitHub using a SARIF file.
 
-Without using GitHub code scanning with CodeQL, it would be difficult to automate both the scanning of your code, and generating pull requests to fix the vulnerable code. In addition, CodeQL provides an extensive, growing library of queries in multiple languages that help you create more secure code with little engineering effort.
+Without using GitHub code scanning with CodeQL, it would be difficult to automate both the scanning of your code and generating pull requests to fix the vulnerable code. In addition, CodeQL provides an extensive, growing library of queries in multiple languages that help you create more secure code with little engineering effort.
 
 ## References
 

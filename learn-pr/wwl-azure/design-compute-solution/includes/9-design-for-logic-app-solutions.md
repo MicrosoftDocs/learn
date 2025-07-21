@@ -52,3 +52,7 @@ Take a few minutes to learn how [Azure Logic Apps](https://customers.microsoft.c
 You can use the following flowchart for other questions to ask as you plan for using Azure Logic Apps.
 
 :::image type="content" source="../media/investigate-logic-apps-thumbnail.png" alt-text="Flowchart that shows a detailed decision tree for when to use Azure Logic Apps." border="false" lightbox="../media/investigate-logic-apps.png":::
+
+
+> [!TIP]
+> Continue learning about Azure Logic Apps in the [Introduction to Azure Logic Apps](/training/modules/intro-to-logic-apps/) module.

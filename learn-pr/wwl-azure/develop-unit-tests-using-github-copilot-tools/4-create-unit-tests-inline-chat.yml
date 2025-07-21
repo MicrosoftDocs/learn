@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-unit-tests-using-github-copilot-tools.create-unit-tests-inline-chat
+title: Create unit tests using Inline Chat
+metadata:
+  title: Create unit tests using Inline Chat
+  description: "Create unit tests using Inline Chat"
+  ms.date: 06/02/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-create-unit-tests-inline-chat.md)]

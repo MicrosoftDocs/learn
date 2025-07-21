@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-container-registry-container-app-deployments.create-container-registry-instance-azure-portal
 title: Create a container registry instance in the Azure portal
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a container registry instance in the Azure portal
   description: "Create a container registry instance in the Azure portal"
   ms.date: 11/22/2023
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-create-container-registry-instance-azure-portal.md)]
-
+

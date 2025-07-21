@@ -1,6 +1,6 @@
 Your project came with a pipeline that builds the projects in the solution and deploys the web app to Azure App Service. Now it's time to extend that pipeline to also deploy the new Azure Functions project.
 
-In this part, you'll:
+In this part, you do these tasks:
 
 > [!div class="checklist"]
 > * Review the *Build* stage.
@@ -10,13 +10,13 @@ In this part, you'll:
 
 ## Review the Build stage
 
-Here, you'll review the existing CI/CD pipeline defined in *azure-pipelines.yml*.
+Here, review the existing CI/CD pipeline defined in *azure-pipelines.yml*.
 
 1. From Azure DevOps, navigate to **Pipelines**.
 1. Select the pipeline.
 1. Select **Edit**. Ensure that the branch is set to **main** by selecting it from the dropdown menu. This brings up the *azure-pipelines.yml* file that defines the existing CI/CD pipeline.
 
-    Because of the use of wildcards to the project paths, the highlighted tasks below will automatically restore, build, and publish the new Azure Functions project.
+    Because of the use of wildcards to the project paths, the highlighted tasks in this file automatically restore, build, and publish the new Azure Functions project.
 
     [!code-yml[](code/4-1-azure-pipelines.yml?highlight=37-57)]
 
@@ -68,7 +68,7 @@ Add the following highlighted code to the end of your pipeline. Be sure to match
 
     :::image type="content" source="../media/4-deploy-url.png" alt-text="A screenshot of Azure Pipelines, showing the location of the web site URL.":::
 
-1. You'll get a page with the site running on App Service. Scroll down to confirm that the leaderboard has real data in it. This is powered by the function app.
+1. You get a page with the site running on App Service. Scroll down to confirm that the leaderboard has real data in it. This feature is powered by the function app.
 
     :::image type="content" source="../media/4-space-game.png" alt-text="A screenshot of the Space Game web site.":::
 
@@ -77,13 +77,13 @@ Add the following highlighted code to the end of your pipeline. Be sure to match
 
 1. You can also test out the function app directly. Just navigate to your URL using the following format. The response is JSON, which should just render as text in your browser.
 
-    ```
+    ```http
     http://<leaderboard function name>.azurewebsites.net/api/LeaderboardFunction?pageSize=10
     ```
 
     such as
 
-    ```
+    ```http
     http://tailspin-space-game-leaderboard-4692.azurewebsites.net/api/LeaderboardFunction?pageSize=10
     ```
 

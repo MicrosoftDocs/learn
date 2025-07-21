@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-generic-anonymous-types.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check what you've learned in this module."
+  ms.date: 04/03/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary purpose of generics in programming?"
+    choices:
+    - content: "To allow code to handle multiple data types while ensuring type safety."
+      isCorrect: true
+      explanation: "Correct. Generics enables developers to write reusable code that works with different data types, ensuring type safety by catching errors at compile time."
+    - content: "To improve runtime performance by optimizing memory usage."
+      isCorrect: false
+      explanation: "Incorrect. While generics can enhance performance by avoiding unnecessary type conversions, their primary purpose is to ensure type safety and code reusability."
+    - content: "To simplify debugging by automatically generating error messages."
+      isCorrect: false
+      explanation: "Incorrect. Generics doesn't generate error messages for debugging; they ensure type safety during compilation, reducing runtime errors."
+  - content: "Which of the following is an example of a generic class?"
+    choices:
+    - content: "`public class Box<T> { public T Item { get; set; } }`"
+      isCorrect: true
+      explanation: "Correct. This is a generic class where 'T' acts as a placeholder for the type, allowing the class to work with any data type."
+    - content: "`public class Box { public int Item { get; set; } }`"
+      isCorrect: false
+      explanation: "Incorrect. This is a non-generic class because it's explicitly defined to work only with integers."
+    - content: "`public class Box { public void AddItem(string item) { } }`"
+      isCorrect: false
+      explanation: "Incorrect. This is a non-generic class because it's designed to work only with strings, not multiple data types."
+  - content: "Which of the following scenarios is a common use case for anonymous types in C#?"
+    choices:
+    - content: "Projecting selected properties in a Language-Integrated Query (LINQ)."
+      isCorrect: true
+      explanation: "Correct. Anonymous types are commonly used in LINQ queries to project results into objects with only the required properties."
+    - content: "Defining a reusable class for multiple methods."
+      isCorrect: false
+      explanation: "Incorrect. Anonymous types aren't reusable and are intended for temporary use within a single method."
+    - content: "Creating mutable objects for data manipulation."
+      isCorrect: false
+      explanation: "Incorrect. Anonymous types are immutable, meaning their properties are read-only and can't be modified after creation."

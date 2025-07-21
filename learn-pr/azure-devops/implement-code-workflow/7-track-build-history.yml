@@ -2,8 +2,6 @@
 uid: learn.azdo.implement-code-workflow.7-track-build-history
 title: Exercise - Track your build history
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Track your build history
   description: Add a widget to the dashboard to track the history of your builds.
   ms.date: 1/21/2025
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/7-track-build-history.md)]
-
+

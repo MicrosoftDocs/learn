@@ -1,18 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.develop-apps-with-azure-database-mysql.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge Check for Develop applications with Azure Database for MySQL - Flexible Server module.
   ms.date: 08/27/2024
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
   ms.custom:
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

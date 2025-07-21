@@ -21,3 +21,4 @@ This exercise you enable Azure Policy add on for an Azure Kubernetes Service clu
     
 
 Verify that the **Microsoft.PolicyInsights** Resource provider is registered.
+

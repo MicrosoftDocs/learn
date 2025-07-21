@@ -4,7 +4,7 @@ metadata:
   title: Using advanced GitHub Copilot features
   description: Use advanced features of GitHub Copilot with Visual Studio Code to make changes and updates to a Python application.
   author: abrilurena
-  ms.author: abrilu
+  ms.author: orthomas
   ms.date: 09/30/2024
   ms.service: github-copilot
   ms.topic: module

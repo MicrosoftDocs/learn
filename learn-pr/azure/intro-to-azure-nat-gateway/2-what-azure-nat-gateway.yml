@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-azure-nat-gateway.2-what-azure-nat-gateway
 title: What is Azure NAT Gateway?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Azure NAT Gateway?
   description: This unit describes the Azure NAT Gateway service.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-azure-nat-gateway.md)]
-
+

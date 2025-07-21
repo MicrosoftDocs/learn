@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.ha-application-storage-with-grs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Make your application storage highly available with read-access geo-redundant storage
-  description: In this module, you learn how to make your application storage highly available by ensuring that you can fail over resources if there's an Azure region failure.
+  title: Make Your Application Storage Highly Available with Read-Access Geo-Redundant Storage
+  description: Learn how to make your application storage highly available by ensuring that you can fail over resources if there's an Azure region failure.
   ms.service: azure-storage
   manager: mkluck
-  ms.date: 05/17/2023
+  ms.date: 06/02/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module
@@ -15,7 +13,7 @@ title: Make your application storage highly available with read-access geo-redun
 summary: In this module, you learn how to make your application storage highly available by ensuring that you can fail over resources if there's an Azure region failure.
 abstract: |
   In this module, you will:
-  - Identify the features of RA-GRS storage
+  - Identify the features of read-access geo-redundant storage (RA-GRS)
   - Identify the application design considerations when you use RA-GRS
   - Implement the Circuit Breaker pattern in a sample application 
 prerequisites: |

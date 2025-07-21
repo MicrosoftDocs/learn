@@ -23,7 +23,7 @@ In this module, you create a multistage pipeline to build and deploy your applic
     | **Instance Details** |
     | Name | Provide a unique name, such as *tailspin-space-game-web-1234*. This name must be unique across Azure. It becomes part of the domain name. In practice, choose a name that describes your service. Note the name for later. |
     | Publish  | Code |
-    | Runtime stack | .NET 6 (LTS) |
+    | Runtime stack | .NET 8 (LTS) |
     | Operating System | Linux |
     | Region | Select a region, preferably one close to you.|
     | **Pricing plans** |
@@ -54,7 +54,7 @@ In this module, you create a multistage pipeline to build and deploy your applic
 
 1. Under **Pipelines**, select **Service connections**.
 
-1. Select **New service connection**, and then select **Azure Resource Manager** then select **Next**.
+1. Select **Create service connection**, and then select **Azure Resource Manager** then select **Next**.
 
 1. Select **Service principal (automatic)**, and then select **Next**.
 
@@ -97,7 +97,7 @@ To convert your existing build configuration to a multistage pipeline, you add a
 
 ## Create the dev environment
 
-An *environment* is an abstract representation of your deployment environment. Environments can be used to define specific criteria for your release such as which pipeline is authorized to deploy to the environment. Environments can also be used to set up manual approvals for specific user/group to approve before deployment is resumed.
+An *environment* is an abstract representation of your deployment environment. You can use environments to define specific criteria for your release, such as which pipeline is authorized to deploy to the environment. You can also use environments to set up manual approvals for specific user/group to approve before deployment is resumed.
 
 1. From Azure Pipelines, select **Environments**.
 
@@ -113,7 +113,7 @@ An *environment* is an abstract representation of your deployment environment. E
 
 ## Store your web app name in a pipeline variable
 
-The *Deploy* stage that we're creating uses the name to identify which App Service instance to deploy to e.g: *tailspin-space-game-web-1234*.
+The *Deploy* stage that we're creating uses the name to identify to which App Service instance to deploy; for example, *tailspin-space-game-web-1234*.
 
 Although you could hard-code this name in your pipeline configuration, defining it as a variable makes your configuration more reusable.
 

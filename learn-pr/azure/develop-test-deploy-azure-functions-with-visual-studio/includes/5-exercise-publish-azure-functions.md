@@ -22,7 +22,7 @@ Here, you use the Azure portal to create an Azure Function App. Then, you deploy
 
     The **Create Function App** pane appears.
 
-1. Select **Consumptio** as the hosting plan. Then on the **Basics** tab, enter the following values for each setting.
+1. Select **Consumption** as the hosting plan. Then on the **Basics** tab, enter the following values for each setting.
 
     > [!NOTE]
     > Your function app must have a name unique to Azure. We suggest using something like **\<*your initials*\>watchfunctions**. Use this name wherever you see *\<your-function-app-name\>* in the remainder of the exercise.
@@ -98,7 +98,7 @@ Here, you use the Azure portal to create an Azure Function App. Then, you deploy
     :::image type="content" source="../media/5-functions-app.png" alt-text="Screenshot of the Azure portal Function App pane showing the 'Function1' and 'WatchInfo' functions." loc-scope="other"::: <!-- no-loc -->
 
     > [!NOTE]
-    > The functions are marked as *Read Only*. You cannot modify their settings or configuration from the Azure portal because you published them from Visual Studio. If you need to update either of these functions, make the changes in Visual Studio and publish them again.
+    > The functions are marked as *Read Only*. You can't modify their settings or configuration from the Azure portal because you published them from Visual Studio. If you need to update either of these functions, make the changes in Visual Studio and publish them again.
 
 1. In the **Function App** pane, select the **URL** (highlighted in the previous image). A browser window opens, and confirms that the function app is up and running.
 

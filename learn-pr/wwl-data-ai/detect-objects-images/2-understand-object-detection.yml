@@ -1,21 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.detect-objects-images.understand-object-detection
-title: Understand object detection
+title: Use Azure AI Custom Vision for object detection
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Understand object detection
-  description: Understand object detection
+  title: Use Azure AI Custom Vision for object detection
+  description: Understand how to use Azure AI Custom Vision to train a model that detects objects in images.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/5/2024
+  ms.date: 05/05/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 azureSandbox: false
 sandbox: false
 labModal: false
-durationInMinutes: 6
+durationInMinutes: 5
 content: |
   [!include[](includes/2-understand-object-detection.md)]
 

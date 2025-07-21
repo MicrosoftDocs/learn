@@ -2,8 +2,6 @@
 uid: learn.wwl.secure-mysql.understand-super-user-access
 title: Understand super user access
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand super user access
   description: "Understand super user access"
   ms.date: 11/08/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-understand-super-user-access.md)]
+  [!include[](includes/3-understand-super-user-access.md)]

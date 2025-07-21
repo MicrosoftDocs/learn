@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-secure-devops.explore-continuous-security-validation
 title: Explore continuous security validation
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore continuous security validation
   description: "Explore continuous security validation"
   ms.date: 05/22/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-explore-continuous-security-validation.md)]
+  [!include[](includes/6-explore-continuous-security-validation.md)]

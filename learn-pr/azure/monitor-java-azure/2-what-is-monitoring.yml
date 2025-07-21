@@ -2,8 +2,6 @@
 uid: learn.monitor-java-azure.learning-content
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Introduction
   description: You'll learn about the different forms of monitoring, and what monitoring solution is available on Azure
@@ -19,4 +17,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/2-what-is-monitoring.md)]
-
+

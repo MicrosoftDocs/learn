@@ -2,8 +2,6 @@
 uid: learn.wwl.advanced-security-compute.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 06/10/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/13-summary.md)]
+  [!include[](includes/13-summary.md)]

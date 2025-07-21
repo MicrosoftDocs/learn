@@ -64,7 +64,7 @@ Use the following steps to prepare for the guided project exercises.
 1. Open the extracted **Guided-project-Work-with-variable-data-in-CSharp-main** folder in Visual Studio Code
     1. Open Visual Studio Code locally (or open MS Learn sandbox and open Visual Studio Code if you aren't using a local dev environment)
     1. In Visual Studio Code, on the **File** menu, select **Open Folder**
-    1. Navigate to the folder that contains your extracted files, expand the folder structure to locate the folder named "GuidedProject".
+    1. Navigate to the folder that contains your extracted files. Expand the folder structure to locate the folder named "GuidedProject."
     1. Select **Guided-project-Work-with-variable-data-in-CSharp-main** and then select **Select Folder**
 
         - The Visual Studio Code EXPLORER view should show two subfolders named **Final** and **Starter**.

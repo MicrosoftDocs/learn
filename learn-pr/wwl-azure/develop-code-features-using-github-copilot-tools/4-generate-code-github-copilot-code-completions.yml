@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-code-features-using-github-copilot-tools.generate-code-github-copilot-code-completions
+title: Generate code using GitHub Copilot code completion suggestions
+metadata:
+  title: Generate code using GitHub Copilot code completion suggestions
+  description: "Generate code using GitHub Copilot code completion suggestions"
+  ms.date: 06/02/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-generate-code-github-copilot-code-completions.md)]

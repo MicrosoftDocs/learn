@@ -1,13 +1,13 @@
 ### YamlMime:Module
 uid: learn.use-telemetry-dotnet-aspire
 metadata:
-  title: Use telemetry in a .NET Aspire project
+  title: Use Telemetry in a .NET Aspire Project
   description: In this module, you'll learn about using telemetry to record the behavior of a cloud-native application and how the .NET Aspire stack makes it easier store data and view it later.
   author: camsoper
   ms.author: casoper
   manager: coxford
   ms.topic: module
-  ms.date: 8/20/2024
+  ms.date: 05/21/2025
   ms.service: dotnet-aspire
   ms.custom:
   - team=cloud_advocates

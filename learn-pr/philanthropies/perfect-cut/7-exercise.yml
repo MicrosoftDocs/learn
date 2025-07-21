@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.perfect-cut.exercise
+title: Apply AI-based upscaling and vintage effects
+metadata:
+  title: Exercise - Apply AI-Based Upscaling and Vintage Effects
+  description: "In this hands-on activity, learners use Microsoft Clipchamp to upscale the resolution of an animation clip and apply stylistic effects. Learners refine visual quality, experiment with vintage aesthetics, and enhance storytelling through post-production techniques. Keywords: Microsoft Clipchamp, AI upscaling, vintage animation effects, animation post-production, video enhancement."
+
+  ms.date: 4/28/2025
+  author: kariannab-ms
+  ms.author: kbarreto
+  ms.topic: unit
+  
+durationInMinutes: 25
+content: |
+  [!include[](includes/7-exercise.md)]

@@ -2,16 +2,12 @@
 uid: learn.wwl.evaluate-performance-improvements.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 07/13/2022
-  author: wwlpublish
+  ms.date: 7/17/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+durationInMinutes: 30
 content: |
   [!include[](includes/1-introduction.md)]

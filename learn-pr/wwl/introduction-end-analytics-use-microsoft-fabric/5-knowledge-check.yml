@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-end-analytics-use-microsoft-fabric.knowledge-check
-title: Knowledge Check
+title: Module assessment
 metadata:
-  title: Knowledge Check
+  title: Module assessment
   description: "Knowledge Check"
   ms.date: 03/27/2025
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   questions:

@@ -2,8 +2,6 @@
 uid: learn.wwl.trigger-github-actions-trunk-based-development.trigger-workflow
 title: Trigger a workflow
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Trigger a workflow
   description: "Trigger a workflow"
   ms.date: 07/25/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-trigger-workflow.md)]
+  [!include[](includes/4-trigger-workflow.md)]

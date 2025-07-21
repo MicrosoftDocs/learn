@@ -2,8 +2,6 @@
 uid: learn.finetune-foundation-model-with-azure-machine-learning.exercise
 title: Exercise - Fine-tune a foundation model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Fine-tune a foundation model
   description: "Exercise - Fine-tune a foundation model using the Azure Machine Learning studio."
   ms.date: 07/25/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-exercise.md)]
+  [!include[](includes/5-exercise.md)]

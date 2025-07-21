@@ -4,13 +4,13 @@ In this module, you learned how to troubleshoot and diagnose Azure Storage issue
 
 ## Learn more
 
-- [Monitoring Azure Blob Storage](/azure/storage/blobs/monitor-blob-storage)
-- [Monitoring Azure Files](/azure/storage/files/storage-files-monitoring)
-- [Monitoring Azure Queue Storage](/azure/storage/queues/monitor-queue-storage)
-- [Monitoring Azure Table storage](/azure/storage/tables/monitor-table-storage)
-- [Monitoring your storage service with Azure Monitor Storage insights](/azure/storage/common/storage-insights-overview)
+- [Monitor Azure Blob Storage](/azure/storage/blobs/monitor-blob-storage)
+- [Monitor Azure Files](/azure/storage/files/storage-files-monitoring)
+- [Monitor Azure Queue Storage](/azure/storage/queues/monitor-queue-storage)
+- [Monitor Azure Table storage](/azure/storage/tables/monitor-table-storage)
+- [Monitor your storage service with Azure Monitor Storage insights](/azure/storage/common/storage-insights-overview)
 - [Best practices for monitoring Azure Blob Storage](/azure/storage/blobs/blob-storage-monitoring-scenarios)
-- [Analyze metrics with Azure Monitor metrics explorer](/azure/azure-monitor/essentials/analyze-metrics)
+- [Analyzing metrics with Azure Monitor metrics explorer](/azure/azure-monitor/essentials/analyze-metrics)
 - [Overview of Log Analytics in Azure Monitor](/azure/azure-monitor/logs/log-analytics-overview)
 - [Azure Monitor Metrics overview](/azure/azure-monitor/essentials/data-platform-metrics)
 - [Azure Monitor Logs overview](/azure/azure-monitor/logs/data-platform-logs)

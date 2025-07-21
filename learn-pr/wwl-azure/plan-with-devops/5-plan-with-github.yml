@@ -2,8 +2,6 @@
 uid: learn.wwl.plan-with-devops.plan-with-github
 title: 'Plan with GitHub'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Plan with GitHub'
   description: "Both GitHub and Azure DevOps offer DevOps planning capabilities, but this unit focuses on GitHub Projects and Project Boards."
   ms.date: 02/06/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-plan-with-github.md)]
+  [!include[](includes/5-plan-with-github.md)]

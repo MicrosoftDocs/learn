@@ -2,8 +2,6 @@
 uid: learn.wwl.train-evaluate-classification-models.exercise-model
 title: Exercise - Train and evaluate a classification model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Train and evaluate a classification model
   description: "Exercise - Train and evaluate a classification model"
   ms.date: 08/25/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/01-binary.ipynb
-
+

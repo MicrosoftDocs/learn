@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-data-science-virtual-machine.exercise-connect
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Connect to your Data Science Virtual Machine
   description: Learn how to connect to your Data Science Virtual Machine.
   ms.date: 04/09/2024
@@ -41,4 +39,4 @@ quiz:
           isCorrect: false
           explanation: "On Ubuntu, you must use an XFCE client, such as X2Go Client. On Windows, you must use Microsoft Remote Desktop client software."
 
-
+

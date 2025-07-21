@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.move-data-with-azure-data-box
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Move large amounts of data to the cloud by using Azure Data Box family
   description: Learn how to move large amounts of data to the cloud by using Azure Data Box devices.
   ms.date: 05/01/2023
@@ -38,4 +36,4 @@ units:
 - learn.azure.move-data-with-azure-data-box.summary
 badge:
   uid: learn.azure.move-data-with-azure-data-box.badge
-
+

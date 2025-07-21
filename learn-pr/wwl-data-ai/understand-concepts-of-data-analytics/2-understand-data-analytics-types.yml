@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-concepts-of-data-analytics.understand-data-analytics-types
 title: Understand data analytics types
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand data analytics types
   description: "Understand data analytics types"
   ms.date: 10/27/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-understand-data-analytics-types.md)]
+  [!include[](includes/2-understand-data-analytics-types.md)]

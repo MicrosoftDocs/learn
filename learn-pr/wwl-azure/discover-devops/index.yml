@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.discover-devops
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Discover DevOps"
   description: "This module explores how DevOps practices optimize application lifecycle management for accelerated time to market and operational stability."
   ms.date: 02/05/2024
@@ -50,4 +48,4 @@ units:
   - learn.wwl.discover-devops.summary
 badge:
   uid: learn.wwl.discover-devops.badge
-
+

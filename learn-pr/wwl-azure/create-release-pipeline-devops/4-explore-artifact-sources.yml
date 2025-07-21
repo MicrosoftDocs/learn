@@ -2,8 +2,6 @@
 uid: learn.wwl.create-release-pipeline.explore-artifact-sources
 title: Explore artifact sources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore artifact sources
   description: "Explore artifact sources"
   ms.date: 05/28/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-explore-artifact-sources.md)]
+  [!include[](includes/4-explore-artifact-sources.md)]

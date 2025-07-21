@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.automate-devops-github-apps.4-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
-  description: Check what you've learned.
-  ms.date: 04/14/2023
+  title: Module assessment
+  description: Check what you learned about GitHub Apps.
+  ms.date: 07/03/2025
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
@@ -42,10 +41,10 @@ quiz:
     choices:
     - content: "Webhooks have better network accessibility than polling."
       isCorrect: true
-      explanation: "Webhooks require the publisher to connect to the subscriber to push data, which may not be practical if the subscriber is behind a firewall. However, you can mitigate this scenario through relay services like smee.io."
+      explanation: "Webhooks require the publisher to connect to the subscriber to push data, which might not be practical if the subscriber is behind a firewall. However, you can mitigate this scenario through relay services like smee.io."
     - content: "Webhooks use less bandwidth than polling."
       isCorrect: false
-      explanation: "Webhooks only send data when there's data to send. Polling makes regular requests even when nothing has changed."
+      explanation: "Webhooks only send data when there's data to send. Polling makes regular requests even when nothing is changed."
     - content: "Webhooks offer faster delivery of new data than polling."
       isCorrect: false
       explanation: "Webhooks send data as soon as it becomes available. Polling can be delayed up to the polling interval length."

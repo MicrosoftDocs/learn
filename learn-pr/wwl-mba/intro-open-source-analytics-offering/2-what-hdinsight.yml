@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-open-source-analytics-offering.2-what-is-hdinsight
 title: What is HDInsight?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is HDInsight?
   description: "What is HDInsight?"
   ms.date: 01/05/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-what-hdinsight.md)]
+  [!include[](includes/2-what-hdinsight.md)]

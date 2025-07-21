@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-first-html-webpage.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check what you learn in this module."
+  ms.date: 04/25/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check Your Knowledge on Programming Websites"
+  questions:
+  - content: "`<strong> Make me bold </strong>` is an example of which of the following?"
+    choices:
+    - content: "Tag"
+      isCorrect: false
+      explanation: "Incorrect. A tag is one part of the overall string."
+    - content: "Script"
+      isCorrect: false
+      explanation: "Incorrect. This is an example of an HTML element, not a script."
+    - content: "Element"
+      isCorrect: true
+      explanation: "Correct. Two tags with text in between them is an element."
+  - content: "What does a hyperlink do in HTML?"
+    choices:
+    - content: "Enables a developer to style text"
+      isCorrect: false
+      explanation: "Incorrect. The style tag or a stylesheet enables styling in HTML."
+    - content: "Creates a bulleted list"
+      isCorrect: false
+      explanation: "Incorrect. Bulleted lists use the `<ul>` tag."
+    - content: "Allows a user to navigate to other things"
+      isCorrect: true
+      explanation: "Correct. A hyperlink points to other content on the website or the internet."
+  - content: "Which best describes the correct use of the `<li>` tag?"
+    choices:
+    - content: "The `<li>` tag is used for ordered list items."
+      isCorrect: false
+      explanation: "Incorrect. The `<li>` is used for both ordered and unordered lists."
+    - content: "The `<li>` tag is used for unordered list items."
+      isCorrect: false
+      explanation: "Incorrect. The `<li>` is used for both ordered and unordered lists."
+    - content: "The `<li>` tag is used for both ordered and unordered list items."
+      isCorrect: true
+      explanation: "Correct. The `<li>` is used for both ordered and unordered lists."

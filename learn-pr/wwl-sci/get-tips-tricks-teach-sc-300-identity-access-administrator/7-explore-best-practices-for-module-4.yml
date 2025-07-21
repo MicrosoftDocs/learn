@@ -2,8 +2,6 @@
 uid: learn.wwl.get-tips-tricks-teach-sc-300-identity-access-administrator.explore-best-practices-for-module-4
 title: Explore best practices for module 4
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore best practices for module 4
   description: "Explore best practices for module 4"
   ms.date: 11/17/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 12
 content: |
-  [!include[](includes/7-explore-best-practices-for-module-4.md)]
+  [!include[](includes/7-explore-best-practices-for-module-4.md)]

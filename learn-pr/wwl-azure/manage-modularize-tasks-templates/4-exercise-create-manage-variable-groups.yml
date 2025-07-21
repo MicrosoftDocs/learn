@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-modularize-tasks-templates.exercise-create-manage-variable-groups
 title: Exercise - create and manage variable groups
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - create and manage variable groups
   description: "Exercise - create and manage variable groups"
   ms.date: 05/21/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 30
 content: |
-  [!include[](includes/4-exercise-create-manage-variable-groups.md)]
+  [!include[](includes/4-exercise-create-manage-variable-groups.md)]
