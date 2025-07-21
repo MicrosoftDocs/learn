@@ -30,7 +30,6 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn.wwl.plan-form-recognizer-solution.introduction
 - learn.wwl.plan-form-recognizer-solution.understand
 - learn.wwl.plan-form-recognizer-solution.resources
 - learn.wwl.plan-form-recognizer-solution.knowledge-check
