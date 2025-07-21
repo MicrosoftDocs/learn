@@ -18,7 +18,7 @@ abstract: |
     - Use the Images playground in Azure AI Foundry portal
     - Integrate image generation models into your apps
 prerequisites: |
-  Before starting this module, you should be familiar with Azure AI Foundry. You should also have programming experience with Python or Microsoft C#.
+  Before starting this module, you should be familiar with Azure AI Foundry. You should also have programming experience.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate
