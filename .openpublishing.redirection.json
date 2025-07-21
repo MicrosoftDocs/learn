@@ -52558,6 +52558,11 @@
       "source_path": "learn-pr/iot/run-iot-edge-device-restricted-network-offline/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/iot-central/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-composed-form-recognizer-model/index.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
     }
   ]
 }
