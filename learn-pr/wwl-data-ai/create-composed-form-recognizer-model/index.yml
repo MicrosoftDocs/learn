@@ -32,7 +32,6 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn.wwl.create-composed-form-recognizer-model.understand-composed-models
 badge:
   uid: learn.wwl.create-composed-form-recognizer-model.badge
 
