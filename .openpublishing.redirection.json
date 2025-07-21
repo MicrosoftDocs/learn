@@ -52608,6 +52608,11 @@
       "source_path": "learn-pr/wwl-data-ai/plan-form-recognizer-solution/4-choose-model-type.md",
       "redirect_url": "/training/paths/ai-extract-information/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/plan-form-recognizer-solution/1-introduction.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
     }
   ]
 }
