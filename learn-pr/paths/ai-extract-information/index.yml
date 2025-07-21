@@ -19,7 +19,7 @@ summary: |
 prerequisites: |
   Before starting this learning path, you should already have:
   - Familiarity with Azure and Azure AI Foundry.
-  - Experience programming with C# or Python.
+  - Programming experience.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
