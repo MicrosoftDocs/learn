@@ -40,9 +40,9 @@ You can update your table with what you know from the previous units and scenari
 | card_status | bit | no | 1 |  |
 | card_art | varbinary(max) | no |  |  |
 
-#### Update the cards table in Azure Data Studio
+#### Update the cards table in Visual Studio Code
 
-1. With Azure Data Studio open from the previous exercise, find the **dbo.cards** table in the connections navigator in the tables folder. Right-click the cards table and select **Design**.
+1. With Visual Studio Code open from the previous exercise, find the **dbo.cards** table in the connections navigator in the tables folder. Right-click the cards table and select **Design**.
 
     ![Screenshot showing how to right-click the cards table in the connections navigator and select Design.](../media/open-tab-1.png)
 
@@ -89,11 +89,11 @@ You can update your table with what you know from the previous units and scenari
 
     The check constraints view should look like the following image after adding the card_color constraint:
 
-    ![Screenshot of the check constraints view of the Table Designer in Azure Data Studio showing how to add new check constraints to a column.](../media/new-table-12.png)
+    ![Screenshot of the check constraints view of the Table Designer in Visual Studio Code showing how to add new check constraints to a column.](../media/new-table-12.png)
 
 1. The **cards** table is now complete and should look like the following:
 
-    ![Screenshot of the completed cards table in Azure Data Studio.](../media/cons-5a.png)
+    ![Screenshot of the completed cards table in Visual Studio Code.](../media/cons-5a.png)
 
 1. Select the **Publish Changes** button on the top-left of the table designer window to save these table changes to the database.
 
@@ -119,7 +119,7 @@ With the identity column and foreign key in mind, here's what you'll add to your
 | translation_card_name | nvarchar(500) | no |  | The translated card name |
 | translation_card_text | nvarchar(2000) | yes |  | The translated card text |
 
-#### Update the translations table in Azure Data Studio
+#### Update the translations table in Visual Studio Code
 
 1. Find the **dbo.card_translations** table in the connections navigator in the tables folder. Right-click the table and select **Design**.
 
@@ -158,7 +158,7 @@ With the identity column and foreign key in mind, here's what you'll add to your
 
     The **card_translations** table is now complete and should look like the following:
 
-    ![Screenshot of the completed card translations table in Azure Data Studio.](../media/ads-card-translations-table.png)
+    ![Screenshot of the completed card translations table in Visual Studio Code.](../media/ads-card-translations-table.png)
 
 1. Select the **Publish Changes** button on the top-left of the table designer window to save these table changes to the database.
 
@@ -180,7 +180,7 @@ The update on the sets table is minor; you'll just add a primary key that's also
 | set_name | nvarchar(50) | no |  |  |
 | set_date | date | no |  | It doesn't need to store time (hours/minutes/seconds) so DATE will work here |
 
-#### Update the sets table in Azure Data Studio
+#### Update the sets table in Visual Studio Code
 
 1. Find the **dbo.sets table** in the connections navigator in the tables folder. Right-click the table and select **Design**.
 
@@ -203,7 +203,7 @@ The update on the sets table is minor; you'll just add a primary key that's also
 
     The **sets** table is now complete and should look like the following:
 
-    ![Screenshot of the completed sets table in Azure Data Studio.](../media/cons-14.png)
+    ![Screenshot of the completed sets table in Visual Studio Code.](../media/cons-14.png)
 
 1. Select the **Publish Changes** button on the top-left of the table designer window to save these table changes to the database.
 
@@ -227,7 +227,7 @@ The **set_lists** table will look like the following with the modifications:
 | card_id | int | no |  | Foreign key back to the Cards table |
 | set_id | int | no |  | Foreign key back to the Sets table |
 
-#### Update the set_lists table in Azure Data Studio
+#### Update the set_lists table in Visual Studio Code
 
 1. Find the **dbo.set_lists** table in the connections navigator in the tables folder. Right-click the cards table and select **Design**.
 
@@ -282,7 +282,7 @@ The **set_lists** table will look like the following with the modifications:
 
 1. The **set_lists** table is now complete. It should look like the following image:
 
-    ![A screenshot of the completed card set list table in Azure Data Studio.](../media/ads-card-set-list-table.png)
+    ![A screenshot of the completed card set list table in Visual Studio Code.](../media/ads-card-set-list-table.png)
 
 1. Select the **Publish Changes** button on the top left of the table designer window to save these table changes to the database.
 

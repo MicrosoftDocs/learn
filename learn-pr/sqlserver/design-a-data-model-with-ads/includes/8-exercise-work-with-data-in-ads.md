@@ -4,7 +4,7 @@ In this exercise, you'll run sql commands to see how the tables are related in t
 
 ## Open a new query sheet
 
-1. To start working with SQL in the Azure SQL Database, you need to open a new query sheet. In Azure Data Studio, right-click the cards database server in the left pane and select **New Query**.
+1. To start working with SQL in the Azure SQL Database, you need to open a new query sheet. In Visual Studio Code, right-click the cards database server in the left pane and select **New Query**.
 
     ![Screenshot showing how to select New Query for a query sheet.](../media/query-1.png)
 
@@ -14,7 +14,7 @@ In this exercise, you'll run sql commands to see how the tables are related in t
 
 ## Working with data
 
-The following section will use the query sheet in Azure Data Studio. Once you've copied and pasted a command onto the sheet, you can highlight the SQL code. Once highlighted, either press **F5** or select the green **Run** button to run the SQL code in your Azure SQL Database.
+The following section will use the query sheet in Visual Studio Code. Once you've copied and pasted a command onto the sheet, you can highlight the SQL code. Once highlighted, either press **F5** or select the green **Run** button to run the SQL code in your Azure SQL Database.
 
 ![Screenshot showing how to select the green Run button to run the query in the query sheet.](../media/query-3.png)
 

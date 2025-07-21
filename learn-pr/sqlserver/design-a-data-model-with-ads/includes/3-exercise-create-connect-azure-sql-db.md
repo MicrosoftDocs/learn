@@ -1,6 +1,6 @@
-In the online card-reference application scenario, you'll be building a data model in an Azure SQL Database using the table designer in Azure Data Studio.
+In the online card-reference application scenario, you'll be building a data model in an Azure SQL Database using the table designer in Visual Studio Code.
 
-In this exercise, you'll deploy an Azure SQL Database using scripts via the Azure CLI right in the browser. Next, you'll install Azure Data Studio and create a connection from Azure Data Studio to the Azure SQL Database.
+In this exercise, you'll deploy an Azure SQL Database using scripts via the Azure CLI right in the browser. Next, you'll install Visual Studio Code and the MSSQL extension, then create a connection from Visual Studio Code to the Azure SQL Database.
 
 ## Deploy Azure SQL Database using PowerShell
 
@@ -64,7 +64,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     Remember to note your password, unique ID, and region and server name. You'll use them throughout the module.
 
-1. Run the following script to deploy an empty Azure SQL Database instance and logical server. The script also adds your IP address as a firewall rule so you can access the database via Azure Data Studio.
+1. Run the following script to deploy an empty Azure SQL Database instance and logical server. The script also adds your IP address as a firewall rule so you can access the database via Visual Studio Code.
 
     ```powershell
     # Create a new server with a system wide unique server name
@@ -90,7 +90,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
         -HighAvailabilityReplicaCount 0
     Write-Host "Database deployed."
     Write-Host "------------------------------------------------------"
-    Write-Host "Your database connect details for Azure Data Studio are:"
+    Write-Host "Your database connect details for Visual Studio Code are:"
     Write-Host "Server: "$serverName".database.windows.net"
     Write-Host "User Name: "$adminSqlLogin
     Write-Host "Password: "$password
@@ -115,33 +115,33 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ## Configure your local machine for development with Azure SQL Database
 
-In this section, you'll install Azure Data Studio so that you can use the table designer when creating your data model.
+In this section, you'll install Visual Studio Code so that you can use the table designer when creating your data model.
 
-### Download and install Azure Data Studio
+### Download and install Visual Studio Code
 
-Azure Data Studio is an open-source application for managing Azure SQL Databases on any platform (Windows, Mac, or Linux). In this module, you'll use Azure Data Studio to connect to an Azure SQL Database and use the Table Designer.
+In this module, you'll use Visual Studio Code and the MSSQL extension to connect to an Azure SQL Database and use the Table Designer.
 
-1. Go to the [Azure Data Studio Download](/sql/azure-data-studio/download-azure-data-studio) page and download and install the application applicable to your operating system.
+1. Go to the [Visual Studio Code Download](https://code.visualstudio.com/download) page and download and install the application applicable to your operating system.
 
-    ![Screenshot showing the install Azure Data Studio dialog.](../media/install-ads-1.png)
+    ![Screenshot showing the install Visual Studio Code dialog.](../media/install-vscode-1.png)
 
-1. Once Azure Data Studio is installed, start the application.
+1. Once Visual Studio Code is installed, start the application. Select **Extension** from the task bar, search for *mssql*, and Install **SQL Server (mssql)**.
 
-    ![Screenshot of the process of starting and loading Azure Data Studio.](../media/install-ads-2.png)
+    ![Screenshot showing the install MSSQL extension dialog.](../media/install-vscode-2.png)
 
-## Connect to Azure SQL Database with Azure Data Studio
+## Connect to Azure SQL Database with Visual Studio Code
 
-Once your database is deployed, there are many ways that you can connect and interact with it: sqlcmd, Azure Data Studio, SQL Server Management Studio, the query editor in the portal, and so on. Here, you'll learn how to connect to the database using Azure Data Studio.
+Once your database is deployed, there are many ways that you can connect and interact with it: sqlcmd, Visual Studio Code, SQL Server Management Studio, the query editor in the portal, and so on. Here, you'll learn how to connect to the database using Visual Studio Code.
 
-1. Open Azure Data Studio.
+1. Open Visual Studio Code.
 
-1. Select **Connections** from the left-hand taskbar. You can create and store all your database connections here.
+1. Select the **Connections** from the left-hand taskbar. You can create and store all your database connections here.
 
-    ![Screenshot of Azure Data Studio with the connections icon highlighted.](../media/create-connection-1.png)
+    ![Screenshot of Visual Studio Code with the connections icon highlighted.](../media/create-connection-1.png)
 
-1. Next to **SERVERS**, select the **New Connection** button (it looks like a server with a plus sign).
+1. Select the **Add Connection** button or the **+** sign.
 
-    ![Screenshot of Azure Data Studio selecting the New Connection button.](../media/create-connection-2.png)
+    ![Screenshot of Visual Studio Code selecting the New Connection button.](../media/create-connection-2.png)
 
 1. In the **Connection Details** pane that opens, fill in the following information:
 
@@ -162,6 +162,6 @@ Once your database is deployed, there are many ways that you can connect and int
 
     ![Screenshot of the create database connection blade.](../media/create-connection-3.png)
 1. Select **Connect**.
-1. Once you make a successful connection, you should be able to navigate the database's contents in the **Connections pane** in Azure Data Studio.
+1. Once you make a successful connection, you should be able to navigate the database's contents in the **Connections pane** in Visual Studio Code.
 
-    ![Screenshot of the database's contents in the Azure Data Studio connections pane.](../media/create-connection-4.png)
+    ![Screenshot of the database's contents in the Visual Studio Code connections pane.](../media/create-connection-4.png)
