@@ -5,5 +5,5 @@ One of the most effective ways to mitigate harmful responses from generative AI 
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](..\media\launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2273316)
+[![Button to launch exercise.](..\media\launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2273316&azure-portal=true)
 
