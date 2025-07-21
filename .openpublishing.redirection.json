@@ -52568,6 +52568,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-composed-form-recognizer-model/3-assemble-composed-models.md",
       "redirect_url": "/training/paths/ai-extract-information/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-composed-form-recognizer-model/4-exercise-model.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
     }
   ]
 }
