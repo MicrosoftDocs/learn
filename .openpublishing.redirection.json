@@ -52598,6 +52598,11 @@
       "source_path": "learn-pr/paths/get-started-azure-ai/index.md",
       "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/plan-form-recognizer-solution/index.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
     }
   ]
 }
