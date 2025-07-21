@@ -30,7 +30,7 @@ roles:
 
 products: 
   - windows-11 
-  - window-10
+  - windows-10
 units:
   - learn.dpu.Understanding-windows10-EOS.introduction
   - learn.dpu.Understanding-windows10-EOS.why-windows-10-eos-matters
