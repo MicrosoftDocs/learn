@@ -20,8 +20,9 @@ iconUrl: /training/achievements/generic-badge.svg
 ratingEnabled: false
 levels:
   - beginner
-roles: security-engineer
-products: surface
+roles:
+  - security-engineer
+products: [surface]
 units:
   - learn.dpu.surface-management-portal.introduction
   - learn.dpu.surface-management-portal.efficient-device-management
