@@ -94,7 +94,7 @@ In this module, you'll employ the Azure CLI to launch the resources necessary fo
 > [!IMPORTANT]
 > You must have your own Azure subscription to complete the exercises in this module.
 
-### Launch Cloud Shell inn Azure portal
+### Launch Cloud Shell in Azure portal
 
 1. Navigate to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 
@@ -190,7 +190,7 @@ In this section, you'll create Bash variables to make the setup process more con
     The `--sku` argument specifies the B1 plan. This plan runs on the Basic tier. The `--is-linux` argument specifies to use Linux workers.
 
     > [!IMPORTANT]
-    > If the B1 SKU isn't available in your Azure subscription, [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/?azure-portal=true), such as S1 (Standard).
+    > If the B1 SKU isn't available in your Azure subscription, [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/?azure-portal=true) such as S1 (Standard).
 
 1. Run the following `az webapp create` command to create the App Service instance.
 
@@ -264,7 +264,7 @@ To add the variables:
     > [!IMPORTANT]
     > Set the name of the App Service instance, not its host name. In this example, you would enter *tailspin-space-game-web-4692* and not *tailspin-space-game-web-4692.azurewebsites.net*.
 
-1. Repeat the process to add another variable named *RegistryName* with the value of your Azure Container Registry login server, such as *tailspinspacegame4692.azurecr.io*.
+1. Repeat the process to add another variable named *RegistryName* with the value of your Azure Container Registry login server, such as *tailspinspacegame4692.azurecr.io*. Select **Save** at the top of the page.
 
 1. Select **Pipeline permissions**, and then select the `+` sign to add a pipeline. Select **mslearn-tailspin-spacegame-web-docker** to give your pipeline permission to access the variable group.
 
@@ -274,7 +274,7 @@ To add the variables:
 
 ## Create required service connections
 
-Here, you'll create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module. You'll also create a Docker Registry connection to publish your container to the Azure Container Registry.
+Here, you'll create a service connection that allows Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module. You'll also create a Docker Registry connection to publish your container to the Azure Container Registry.
 
 > [!IMPORTANT]
 > Ensure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
@@ -282,8 +282,8 @@ Here, you'll create a service connection that enables Azure Pipelines to access 
 1. In Azure DevOps, go to your **Space Game - web - Docker** project.
 1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
-1. Near the top of the page, **Service principal (automatic)**. Then select **Next**.
+1. Select **Create service connection**, then choose **Azure Resource Manager**, then select **Next**.
+1. Near the top of the page, **App registration (automatic)**.
 1. Fill in these fields:
 
     | Field                   | Value                                      |
@@ -303,6 +303,7 @@ Here, you'll create a service connection that enables Azure Pipelines to access 
 
 1. Select **New service connection**, then choose **Docker Registry**, then select **Next**.
 1. Near the top of the page, select **Azure Container Registry**.
+1. Select **Service Principal** for the **Authentication Type**.
 1. Fill in these fields:
 
     | Field                     | Value                                        |
