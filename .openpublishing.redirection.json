@@ -52628,6 +52628,11 @@
       "source_path": "learn-pr/wwl-data-ai/plan-form-recognizer-solution/6-summary.md",
       "redirect_url": "/training/paths/ai-extract-information/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/plan-form-recognizer-solution/2-understand.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
     }
   ]
 }
