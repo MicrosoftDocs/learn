@@ -6270,3 +6270,8 @@ achievements:
   title: Run an IoT Edge device in a restricted network and offline
   summary: This module is theoretical and will walk you through how an IoT Edge device can be harnessed as a gateway to child devices and can store captured information if connectivity is unavailable.
   iconUrl: /training/achievements/run-iot-edge-device-restricted-network-offline.svg
+- uid: learn.wwl.create-composed-form-recognizer-model.badge
+  type: badge
+  title: Create a composed Document intelligence model
+  summary: Learn how to assemble custom models into composed solutions that can analyze different types of your own documents.
+  iconUrl: /training/achievements/create-composed-form-recognizer-model.svg
