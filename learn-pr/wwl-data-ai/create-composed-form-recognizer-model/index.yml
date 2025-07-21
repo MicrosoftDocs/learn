@@ -33,7 +33,6 @@ subjects:
 - artificial-intelligence
 units:
 - learn.wwl.create-composed-form-recognizer-model.understand-composed-models
-- learn.wwl.create-composed-form-recognizer-model.knowledge-check
 - learn.wwl.create-composed-form-recognizer-model.summary
 badge:
   uid: learn.wwl.create-composed-form-recognizer-model.badge
