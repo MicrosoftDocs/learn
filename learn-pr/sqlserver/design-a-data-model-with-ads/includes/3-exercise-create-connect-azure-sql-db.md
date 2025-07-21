@@ -146,7 +146,7 @@ Once your database is deployed, there are many ways that you can connect and int
 1. In the **Connection Details** pane that opens, fill in the following information:
 
     > [!TIP]
-    > You can find the values for **Server**, **User Name**, **Password** and **Database** at the end of the PowerShell database creation script you just ran with Azure Cloud Shell.
+    > You can find the values for **Server**, **User Name**, **Password**, and **Database** at the end of the PowerShell database creation script you just ran with Azure Cloud Shell.
 
     *Connection type*: **Microsoft SQL Server**  
     *Server*: **cardsserver[uniqueID].database.windows.net**  

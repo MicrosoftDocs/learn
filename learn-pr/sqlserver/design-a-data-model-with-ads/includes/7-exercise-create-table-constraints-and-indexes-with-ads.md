@@ -125,7 +125,7 @@ With the identity column and foreign key in mind, here's what you'll add to your
 
     ![Screenshot showing how to right click the card_translations table in the connections navigator and select Design.](../media/open-tab-2.png)
 
-1. First, decide which columns allow null values and which don't. A row in this table must have an ID, a reference to the **card_id** from the **cards** table, a translation language and a translated card name. As with the cards table, **translation_card_text** can be null. In the **Allow Nulls** column in the table designer, *uncheck all the checkboxes except for the one in the ***translation_card_text*** row*.
+1. First, decide which columns allow null values and which don't. A row in this table must have an ID, a reference to the **card_id** from the **cards** table, a translation language, and a translated card name. As with the cards table, **translation_card_text** can be null. In the **Allow Nulls** column in the table designer, *uncheck all the checkboxes except for the one in the ***translation_card_text*** row*.
 
     ![Screenshot showing how to uncheck all the checkboxes except for the one in the translation_card_text row.](../media/cons-7.png)
 
@@ -252,7 +252,7 @@ The **set_lists** table will look like the following with the modifications:
 
     ![Screenshot showing how to select the Foreign Keys tab in the table designer for the set_lists table, then select the + New Foreign Key button.](../media/new-table-26.png)
 
-1. For the first key, in the Foreign Key **Name** field, enter **FK_card_id_to_card** and use the **Foreign Table** drop-down to select **dbo.cards**.
+1. For the first key, in the Foreign Key **Name** field, enter **FK_card_id_to_card**, and use the **Foreign Table** drop-down to select **dbo.cards**.
 
     ![Screenshot showing how to enter FK_card_id_to_card and use the Foreign Table drop-down to select dbo.cards.](../media/cons-19.png)
 
