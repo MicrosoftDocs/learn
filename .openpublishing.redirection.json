@@ -52578,6 +52578,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-composed-form-recognizer-model/1-introduction.md",
       "redirect_url": "/training/paths/ai-extract-information/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-composed-form-recognizer-model/5-knowledge-check.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
     }
   ]
 }
