@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should:
   - Be familiar with Azure services and the Azure portal
-  - Have experience programming with C# or Python
+  - Have programming experience
 iconUrl: /training/achievements/transcribe-speech-input-text.svg
 levels:
 - intermediate
