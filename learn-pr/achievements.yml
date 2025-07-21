@@ -6275,3 +6275,8 @@ achievements:
   title: Create a composed Document intelligence model
   summary: Learn how to assemble custom models into composed solutions that can analyze different types of your own documents.
   iconUrl: /training/achievements/create-composed-form-recognizer-model.svg
+- uid: learn.wwl.get-started-azure-ai.trophy
+  type: trophy
+  title: Get started with Azure AI Services
+  summary: Azure AI Services is a collection of services that are building blocks of AI functionality you can integrate into your applications. In this learning path, you'll learn how to provision, secure, monitor, and deploy Azure AI Services resources and use them to build intelligent solutions.
+  iconUrl: /training/achievements/provision-and-manage-azure-cognitive-services.svg
