@@ -52578,6 +52578,81 @@
       "source_path": "learn-pr/iot/run-iot-edge-device-restricted-network-offline/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/iot-central/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-composed-form-recognizer-model/index.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-composed-form-recognizer-model/3-assemble-composed-models.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-composed-form-recognizer-model/4-exercise-model.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-composed-form-recognizer-model/1-introduction.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-composed-form-recognizer-model/5-knowledge-check.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-composed-form-recognizer-model/6-summary.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-composed-form-recognizer-model/2-understand-composed-models.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/get-started-azure-ai/index.md",
+      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/plan-form-recognizer-solution/index.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/plan-form-recognizer-solution/4-choose-model-type.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/plan-form-recognizer-solution/1-introduction.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/plan-form-recognizer-solution/5-knowledge-check.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/plan-form-recognizer-solution/3-resources.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/plan-form-recognizer-solution/6-summary.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/plan-form-recognizer-solution/2-understand.md",
+      "redirect_url": "/training/paths/ai-extract-information/",
+      "redirect_document_id": false
     }
   ]
 }
