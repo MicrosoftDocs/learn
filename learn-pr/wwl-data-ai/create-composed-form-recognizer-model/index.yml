@@ -34,7 +34,6 @@ subjects:
 units:
 - learn.wwl.create-composed-form-recognizer-model.introduction
 - learn.wwl.create-composed-form-recognizer-model.understand-composed-models
-- learn.wwl.create-composed-form-recognizer-model.exercise-model
 - learn.wwl.create-composed-form-recognizer-model.knowledge-check
 - learn.wwl.create-composed-form-recognizer-model.summary
 badge:
