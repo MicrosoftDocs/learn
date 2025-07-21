@@ -28,7 +28,6 @@ products:
 subjects:
 - artificial-intelligence
 modules:
-- learn.wwl.plan-form-recognizer-solution
 - learn.wwl.use-prebuilt-form-recognizer-models
 - learn.wwl.work-with-form-recognizer
 trophy:
