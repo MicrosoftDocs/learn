@@ -4,7 +4,7 @@ title: Exercise - Enable and configure Azure VM disk cache with the Azure portal
 metadata:
   title: Exercise - Enable and configure Azure VM disk cache with the Azure portal
   description: Exercise - Enable and configure Azure VM disk cache with the Azure portal
-  ms.date: 12/28/2023
+  ms.date: 07/17/2025
   author: roygara
   ms.author: rogarana
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-enable-and-configure-azure-vm-disk-cache-by-using-the-azure-portal.md)]
-
+
