@@ -6280,3 +6280,8 @@ achievements:
   title: Get started with Azure AI Services
   summary: Azure AI Services is a collection of services that are building blocks of AI functionality you can integrate into your applications. In this learning path, you'll learn how to provision, secure, monitor, and deploy Azure AI Services resources and use them to build intelligent solutions.
   iconUrl: /training/achievements/provision-and-manage-azure-cognitive-services.svg
+- uid: learn.wwl.plan-form-recognizer-solution.badge
+  type: badge
+  title: Plan an Azure AI Document Intelligence solution
+  summary: Learn how to use Azure AI Document Intelligence to build solutions that analyze forms and output data for storage or further processing.
+  iconUrl: /training/achievements/plan-form-recognizer-solution.svg
