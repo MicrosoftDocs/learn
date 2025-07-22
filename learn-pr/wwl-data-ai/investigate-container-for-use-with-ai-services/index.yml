@@ -38,7 +38,6 @@ subjects:
 units:
 - learn.wwl.investigate-container-for-use-with-ai-services.understand-containers
 - learn.wwl.investigate-container-for-use-with-ai-services.use-ai-services-containers
-- learn.wwl.investigate-container-for-use-with-ai-services.summary
 badge:
   uid: learn.wwl.investigate-container-for-use-with-ai-services.badge
 
