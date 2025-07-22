@@ -52703,6 +52703,11 @@
       "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-with-ai-services/6-summary.md",
       "redirect_url": "/azure/ai-services/cognitive-services-container-support",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-with-ai-services/2-understand-containers.md",
+      "redirect_url": "/azure/ai-services/cognitive-services-container-support",
+      "redirect_document_id": false
     }
   ]
 }
