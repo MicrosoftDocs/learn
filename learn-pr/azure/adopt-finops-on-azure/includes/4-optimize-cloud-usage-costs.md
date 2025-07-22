@@ -12,7 +12,7 @@ Rate optimization, licensing + SaaS management, workload optimization, architect
 
 ## Workload optimization
 
-**Objective:**  Analyze and optimize cloud resources to match the specific usage patterns while ensuring that workloads operate efficiently and ensure there is sufficient business value for the cloud costs associated with each type of resource that is consumed.
+**Objective:**  Analyze and optimize cloud resources to match the specific usage patterns while ensuring that workloads operate efficiently and ensure there's sufficient business value for the cloud costs associated with each type of resource that is consumed.
 
 ### Get started with resource utilization and efficiency
 
