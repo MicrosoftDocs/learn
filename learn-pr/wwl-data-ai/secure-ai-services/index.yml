@@ -39,7 +39,6 @@ units:
 - learn.wwl.secure-ai-services.introduction
 - learn.wwl.secure-ai-services.keys-with-azure-key-vault
 - learn.wwl.secure-ai-services.implement-network-security
-- learn.wwl.secure-ai-services.exercise-secure-ai-services
 - learn.wwl.secure-ai-services.knowledge-check
 - learn.wwl.secure-ai-services.summary
 badge:
