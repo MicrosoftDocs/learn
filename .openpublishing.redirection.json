@@ -52713,6 +52713,11 @@
       "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-with-ai-services/3-use-ai-services-container.md",
       "redirect_url": "/azure/ai-services/cognitive-services-container-support",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-ai-services/index.md",
+      "redirect_url": "/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
     }
   ]
 }
