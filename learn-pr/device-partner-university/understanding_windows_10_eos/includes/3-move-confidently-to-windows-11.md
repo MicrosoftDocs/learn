@@ -12,7 +12,7 @@ EOS is a **final deadline**, not a gradual phase-out. Acting early helps you sta
 ### Check if your device is ready
 
 **“Can my Windows 10 PC upgrade to Windows 11?”**  
-Not all devices will qualify. Windows 11 has specific hardware requirements.
+Not all devices qualify. Windows 11 has specific hardware requirements.
 
 Use the [PC Health Check app](https://support.microsoft.com/windows/how-to-use-the-pc-health-check-app-9c8abd9b-03ba-4e67-81ef-36f37caa7844) to see if your PC is compatible. This helps you plan ahead with confidence—whether that means upgrading your current device or exploring new options.
 
@@ -20,7 +20,7 @@ Use the [PC Health Check app](https://support.microsoft.com/windows/how-to-use-t
 
 Check these baseline specs to see if your device is ready to upgrade:
 
-- **Processor:** 1 GHz or faster, 2+ cores, 64-bit or SoC  
+- **Processor:** 1 GHz or faster, 2+ cores, 64-bit, or SoC  
 - **RAM:** 4 GB minimum  
 - **Storage:** 64 GB or more  
 - **Firmware:** UEFI with Secure Boot  
@@ -29,7 +29,7 @@ Check these baseline specs to see if your device is ready to upgrade:
 - **Display:** HD 720p display, at least 9” diagonally, with 8 bits per color channel  
 - **Internet:** Required for setup and updates  
 
-You can view full details on system requirments [here.](https://www.microsoft.com/windows/windows-11-specifications?r=1)
+You can view full details on system requirements [here.](https://www.microsoft.com/windows/windows-11-specifications?r=1)
 
 ### Choose secure, modern solutions
 
