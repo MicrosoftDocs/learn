@@ -36,7 +36,6 @@ subjects:
 units:
 - learn.wwl.create-manage-ai-services.use-rest
 - learn.wwl.create-manage-ai-services.use-sdk
-- learn.wwl.create-manage-ai-services.knowledge-check
 - learn.wwl.create-manage-ai-services.summary
 badge:
   uid: learn.wwl.create-manage-ai-services.badge
