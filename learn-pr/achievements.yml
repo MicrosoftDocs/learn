@@ -6225,6 +6225,16 @@ achievements:
   title: Fundamentals of language translation
   summary: Automated translation capabilities in an AI solution enable closer collaboration by removing language barriers.
   iconUrl: /training/achievements/translate-text-with-translation-service.svg
+- uid: learn.azure.deploy-run-container-app-service.badge
+  type: badge
+  title: Deploy and run a containerized web app with Azure App Service
+  summary: Create a Docker image and store it in a repository in Azure Container Registry. Use Azure App Service to deploy a web application based on the Docker image. Configure continuous deployment for the web app by using a webhook that monitors the Docker image for changes.
+  iconUrl: /training/achievements/deploy-run-container-app-service.svg
+- uid: learn.execute-azure-function-with-triggers.badge
+  type: badge
+  title: Execute an Azure Function with triggers
+  summary: A trigger is responsible for executing an Azure function and there are dozens of triggers to choose from. This module shows you some of the most common types of triggers and how to configure them to execute your logic.
+  iconUrl: /training/achievements/execute-azure-function-with-triggers.svg
 - uid: learn.visual-studio-test-concepts.badge
   type: badge
   title: Introduction to software testing concepts
@@ -6260,3 +6270,38 @@ achievements:
   title: Run an IoT Edge device in a restricted network and offline
   summary: This module is theoretical and will walk you through how an IoT Edge device can be harnessed as a gateway to child devices and can store captured information if connectivity is unavailable.
   iconUrl: /training/achievements/run-iot-edge-device-restricted-network-offline.svg
+- uid: learn.wwl.create-composed-form-recognizer-model.badge
+  type: badge
+  title: Create a composed Document intelligence model
+  summary: Learn how to assemble custom models into composed solutions that can analyze different types of your own documents.
+  iconUrl: /training/achievements/create-composed-form-recognizer-model.svg
+- uid: learn.wwl.get-started-azure-ai.trophy
+  type: trophy
+  title: Get started with Azure AI Services
+  summary: Azure AI Services is a collection of services that are building blocks of AI functionality you can integrate into your applications. In this learning path, you'll learn how to provision, secure, monitor, and deploy Azure AI Services resources and use them to build intelligent solutions.
+  iconUrl: /training/achievements/provision-and-manage-azure-cognitive-services.svg
+- uid: learn.wwl.plan-form-recognizer-solution.badge
+  type: badge
+  title: Plan an Azure AI Document Intelligence solution
+  summary: Learn how to use Azure AI Document Intelligence to build solutions that analyze forms and output data for storage or further processing.
+  iconUrl: /training/achievements/plan-form-recognizer-solution.svg
+- uid: learn.wwl.create-manage-ai-services.badge
+  type: badge
+  title: Create and consume Azure AI services
+  summary: Azure AI services enable developers to easily add AI capabilities into their applications. Learn how to create and consume these services.
+  iconUrl: /training/achievements/create-and-manage-cognitive-services.svg
+- uid: learn.wwl.investigate-container-for-use-with-ai-services.badge
+  type: badge
+  title: Deploy Azure AI services in containers
+  summary: Learn about Container support in Azure AI services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
+  iconUrl: /training/achievements/investigate-container-for-use-with-cognitive-services.svg
+- uid: learn.wwl.monitor-ai-services.badge
+  type: badge
+  title: Monitor Azure AI services
+  summary: Azure AI services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Azure AI Services in order to track utilization, determine trends, and detect and troubleshoot issues.
+  iconUrl: /learn/achievements/monitor-cognitive-services.svg
+- uid: learn.wwl.secure-ai-services.badge
+  type: badge
+  title: Secure Azure AI services
+  summary: Securing Azure AI services can help prevent data loss and privacy violations for user data that may be a part of the solution.
+  iconUrl: /training/achievements/secure-cognitive-services.svg
