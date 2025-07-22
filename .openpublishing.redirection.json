@@ -52688,6 +52688,11 @@
       "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-with-ai-services/4-exercise-use-container.md",
       "redirect_url": "/azure/ai-services/cognitive-services-container-support",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-with-ai-services/1-introduction.md",
+      "redirect_url": "/azure/ai-services/cognitive-services-container-support",
+      "redirect_document_id": false
     }
   ]
 }
