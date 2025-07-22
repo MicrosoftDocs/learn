@@ -36,7 +36,6 @@ subjects:
 - containers
 - artificial-intelligence
 units:
-- learn.wwl.investigate-container-for-use-with-ai-services.introduction-to-containerization-of
 - learn.wwl.investigate-container-for-use-with-ai-services.understand-containers
 - learn.wwl.investigate-container-for-use-with-ai-services.use-ai-services-containers
 - learn.wwl.investigate-container-for-use-with-ai-services.knowledge-check
