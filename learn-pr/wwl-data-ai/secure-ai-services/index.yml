@@ -36,7 +36,6 @@ products:
 subjects:
 - security
 units:
-- learn.wwl.secure-ai-services.introduction
 - learn.wwl.secure-ai-services.keys-with-azure-key-vault
 - learn.wwl.secure-ai-services.knowledge-check
 - learn.wwl.secure-ai-services.summary
