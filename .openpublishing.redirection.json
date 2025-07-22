@@ -52678,6 +52678,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-manage-ai-services/5-use-sdk.md",
       "redirect_url": "/training/modules/prepare-azure-ai-development/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-with-ai-services/index.md",
+      "redirect_url": "/azure/ai-services/cognitive-services-container-support",
+      "redirect_document_id": false
     }
   ]
 }
