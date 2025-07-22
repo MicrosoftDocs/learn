@@ -52648,6 +52648,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-manage-ai-services/5a-exercise-ai-services.md",
       "redirect_url": "/training/modules/prepare-azure-ai-development/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-manage-ai-services/3-identify-keys-endpoints.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
     }
   ]
 }
