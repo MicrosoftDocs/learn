@@ -6300,3 +6300,8 @@ achievements:
   title: Monitor Azure AI services
   summary: Azure AI services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Azure AI Services in order to track utilization, determine trends, and detect and troubleshoot issues.
   iconUrl: /learn/achievements/monitor-cognitive-services.svg
+- uid: learn.wwl.secure-ai-services.badge
+  type: badge
+  title: Secure Azure AI services
+  summary: Securing Azure AI services can help prevent data loss and privacy violations for user data that may be a part of the solution.
+  iconUrl: /training/achievements/secure-cognitive-services.svg
