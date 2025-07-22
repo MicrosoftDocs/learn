@@ -6285,3 +6285,8 @@ achievements:
   title: Plan an Azure AI Document Intelligence solution
   summary: Learn how to use Azure AI Document Intelligence to build solutions that analyze forms and output data for storage or further processing.
   iconUrl: /training/achievements/plan-form-recognizer-solution.svg
+- uid: learn.wwl.create-manage-ai-services.badge
+  type: badge
+  title: Create and consume Azure AI services
+  summary: Azure AI services enable developers to easily add AI capabilities into their applications. Learn how to create and consume these services.
+  iconUrl: /training/achievements/create-and-manage-cognitive-services.svg
