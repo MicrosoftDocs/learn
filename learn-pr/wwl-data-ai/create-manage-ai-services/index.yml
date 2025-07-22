@@ -35,7 +35,6 @@ subjects:
 - artificial-intelligence
 units:
 - learn.wwl.create-manage-ai-services.introduction
-- learn.wwl.create-manage-ai-services.create-resource
 - learn.wwl.create-manage-ai-services.identify-keys-endpoints
 - learn.wwl.create-manage-ai-services.use-rest
 - learn.wwl.create-manage-ai-services.use-sdk
