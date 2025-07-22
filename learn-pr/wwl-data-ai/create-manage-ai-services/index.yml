@@ -34,7 +34,6 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn.wwl.create-manage-ai-services.use-rest
 - learn.wwl.create-manage-ai-services.use-sdk
 badge:
   uid: learn.wwl.create-manage-ai-services.badge
