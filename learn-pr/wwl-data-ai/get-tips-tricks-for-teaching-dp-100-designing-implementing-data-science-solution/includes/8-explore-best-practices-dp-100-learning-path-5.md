@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning path 5 Find the best model with Automated Machine Learning
 
 Learning path 5 Overview
@@ -33,3 +30,4 @@ Learning path 5 Demos (optional)
 Learning Path 5 Lab
 
 - [Lab 5.1: Find the best classification model with Automated Machine Learning](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/06-AutoML-classification-model.html)  
+

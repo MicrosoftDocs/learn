@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.object-detection-lva-edge-device
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Object detection on Edge devices with Live Video Analytics using YOLO model"
   description: "This module helps learner to deploy object detection solution using Live Video Analytics on IoT Edge."
   ms.date: 07/20/2024
@@ -57,4 +55,4 @@ units:
 - learn.oxford.object-detection-lva-edge-device.how-deploy-solution
 - learn.oxford.object-detection-lva-edge-device.exercise-bring-ai-model-deploy-solution
 - learn.oxford.object-detection-lva-edge-device.summary
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.discover-how-microsoft-datacenters-work
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Microsoft Datacenters
   description: TBD
   ms.date: 07/17/2024
@@ -44,4 +42,4 @@ units:
 - learn.introduction-to-microsoft-datacenters.summary
 badge:
   uid: learn.discover-how-microsoft-datacenters-work-badge
-
+

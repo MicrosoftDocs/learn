@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-cloud-shell.how-azure-cloud-shell-works
 title: How does Azure Cloud Shell work?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: How does Azure Cloud Shell work?
   description: This unit describes the key features of Azure Cloud Shell and provides an overview of how it works.
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-how-azure-cloud-shell-works.md)]
-
+

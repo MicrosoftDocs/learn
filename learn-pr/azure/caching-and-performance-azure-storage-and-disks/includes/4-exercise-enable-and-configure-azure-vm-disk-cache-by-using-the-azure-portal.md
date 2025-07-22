@@ -30,7 +30,8 @@ In this step, we create a VM.
     | Virtual machine name | Enter *fotoshareVM* |
     | Region | See the following list. Select a location close to you. |
     | Availability options | Leave as default |
-    | Image | Select **Windows Server 2019 Datacenter** |
+    | Security type | **Standard** |
+    | Image | Select **Windows Server 2019 Datacenter - x64 Gen2** |
     | VM architecture | Select **x64** |
     | Size | Accept the default **Standard_DS1-v2**, which gives you a single CPU and 3.5 GB of memory. That's fine for this example. |
     | **Administrator account** |
@@ -61,7 +62,7 @@ After our VM is deployed, we can confirm the caching status of the OS disk with 
 
 From the dropdown list, change the **Host caching** value for the OS disk to **Read-only** and select **Apply** at the bottom of the page.
 
-This update can take some time, because changing the cache setting of an Azure disk detaches and reattaches the target disk. If it's the operating system disk, the VM also restarts. When the operation completes, you get a notification saying the VM disks are updated. Check the *Notifications* icon in the top taskbar of the portal for confirmation.
+This update can take some time, because changing an Azure disk's cache setting detaches and reattaches the target disk. If it's the operating system disk, the VM also restarts. When the operation completes, you get a notification saying the VM disks are updated. Check the *Notifications* icon in the top taskbar of the portal for confirmation.
 
 After completion, the OS disk cache type is set to **Read-only**.
 

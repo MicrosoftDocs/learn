@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-microsoft-azure-resources-management.manage-virtual-machines
+title: Manage virtual machines
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Manage Virtual Machines
+  description: "Manage virtual machines"
+  ms.date: 07/03/2025
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-manage-virtual-machines.md)]

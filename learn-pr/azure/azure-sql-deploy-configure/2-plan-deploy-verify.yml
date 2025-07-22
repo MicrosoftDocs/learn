@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-deploy-configure.2-plan-deploy-verify
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan, deploy, and verify Azure SQL
   description: Plan, deploy, and verify Azure SQL
   ms.date: 11/11/2024
@@ -44,4 +42,4 @@ quiz:
       - content: "SELECT * FROM sys.dm_os_process_memory"
         isCorrect: false
         explanation: "This isn't supported in Azure SQL Database."
-
+

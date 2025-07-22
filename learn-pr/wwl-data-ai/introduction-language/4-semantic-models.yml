@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-language.semantic-models
+title: Understand semantic language models
+metadata:
+  title: Understand semantic language models
+  description: "Understand semantic language models"
+  ms.date: 5/23/2025
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-semantic-models.md)]

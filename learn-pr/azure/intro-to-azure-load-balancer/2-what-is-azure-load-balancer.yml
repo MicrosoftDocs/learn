@@ -2,11 +2,9 @@
 uid: learn.azure.intro-to-azure-load-balancer.what-is-azure-load-balancer
 title: What is Azure Load Balancer?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure Load Balancer?
   description: Learn what Azure Load Balancer does and how your organization can use it.
-  ms.date: 01/12/2024
+  ms.date: 04/30/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates

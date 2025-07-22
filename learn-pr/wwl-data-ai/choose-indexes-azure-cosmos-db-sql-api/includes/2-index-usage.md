@@ -7,7 +7,7 @@ The query engine evaluates query filters and then traverses the index of your co
 | **Full scan** | The query engine will load the items, in their entirety, to the transactional store to evaluate the filters. | This type of scan does not use the index; however, the RU charge for loading items is based on the number of items in the entire container. |
 
 > [!NOTE]
-> An index scan can range in complexity from an efficient and precise index scan, to a more involved expanded index scan, and finally the most complex full index scan.
+> An index scan can range in complexity from an efficient and precise index seek, to a more involved expanded index scan, and finally the most complex full index scan.
 
 As a query developer, it’s essential to understand which queries will require a seek vs. a scan. It’s also important to understand which queries cannot use the index and will require a full scan. Specifically, you should optimize your queries to use filter predicates that use the most efficient lookup method.
 
@@ -124,3 +124,4 @@ The query engine will traverse the tree in the following order:
 This binary search moved the query, in complexity, from an index seek to a precise index scan. The query engine scans all possible values in the index, but this is still far more efficient than a full scan of all JSON content. Queries that use range comparisons and string functions often will require the use of an index scan.
 
 There are edge cases where the query engine cannot use the index to evaluate a filter. These cases will require the query engine to load the JSON content of all items into the transactional store before evaluating the filter. Full scans can potentially have significant request unit charges as the charge scales linearly with the total number of items in the container. While full scans are rare, it is essential to know that they are possible when using specific built-in functions in query filters.
+

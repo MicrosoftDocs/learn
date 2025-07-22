@@ -1,20 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-images.exercise-computer-vision
-title: Exercise - Analyze images with Azure AI Vision
+title: Exercise - Analyze images
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Exercise - Analyze images with Azure AI Vision
+  title: Exercise - Analyze images
   description: Exercise - Analyze images with Azure AI Vision
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 02/05/2024
+  ms.date: 04/30/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-azureSandbox: false
-labId: 152411
-labModal: true
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-computer-vision.md)]

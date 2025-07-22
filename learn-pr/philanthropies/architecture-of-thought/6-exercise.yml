@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.architecture-of-thought.exercise
+title: Build a basic AI-powered chatbot with Azure OpenAI Studio
+metadata:
+  title: Exercise - Build a Basic AI-Powered Chatbot with Azure OpenAI Studio
+  description: "In this hands-on activity, learners use Azure OpenAI Studio to build a simple AI-powered chatbot capable of handling basic customer support queries. They practice designing system prompts, test conversational flows, and refine chatbot behavior through prompt iteration. Keywords: Azure OpenAI Studio, AI chatbot, prompt engineering, chatbot development, conversational AI."
+
+  ms.date: 4/28/2025
+  author: kprks
+  ms.author: kbarreto
+  ms.topic: unit
+  
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise.md)]

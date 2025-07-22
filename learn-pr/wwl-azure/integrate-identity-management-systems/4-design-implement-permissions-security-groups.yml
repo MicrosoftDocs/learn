@@ -2,8 +2,6 @@
 uid: learn.wwl.integrate-identity-management-systems.design-implement-permissions-security-groups
 title: Design and implement permissions and security groups in Azure DevOps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design and implement permissions and security groups in Azure DevOps
   description: "Design and implement permissions and security groups in Azure DevOps"
   ms.date: 05/27/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-design-implement-permissions-security-groups.md)]
+  [!include[](includes/4-design-implement-permissions-security-groups.md)]

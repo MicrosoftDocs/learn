@@ -1,35 +1,33 @@
 ### YamlMime:Module
 uid: learn.azure.child-extension-bicep-templates
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
-  title: Deploy child and extension resources by using Bicep
-  description: Learn how to deploy child and extension resources, and refer to existing resources, within your Bicep code.
+  title: Deploy Child and Extension Resources by Using Bicep
+  description: Learn how to deploy child and extension resources, and refer to existing resources, in Bicep code.
   ms.service: azure-resource-manager
   manager: jasongroce
-  ms.date: 01/31/2025
+  ms.date: 05/27/2025
   author: mumian
   ms.author: jgao
   ms.topic: module
   ms.devlang: bicep
 title: Deploy child and extension resources by using Bicep
 summary: |
-  Deploy various Azure resources in your Bicep code. Define and use child and extension resources. Work with resources that you created outside a Bicep template or module.
+  Deploy various Azure resources in your Bicep code. Define and use child and extension resources. Work with resources that you created outside of a Bicep template or module.
 abstract: |
   After completing this module, you'll be able to:
     - Explain resource types and resource IDs
     - Deploy child and extension resources
-    - Represent and use pre-existing resources in a Bicep template
+    - Represent and use preexisting resources in a Bicep template
 prerequisites: |
   You should be familiar with:
   - Creating and deploying basic Bicep templates.
   - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
-  To follow along with the exercises in the module, you need:
+  To complete the exercises in the module, you need:
   - [Visual Studio Code](https://code.visualstudio.com), installed locally.
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed.
-  - Either:
+  - One of the following:
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.
     - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.
 iconUrl: /training/achievements/bicep/child-extension-bicep-templates.svg

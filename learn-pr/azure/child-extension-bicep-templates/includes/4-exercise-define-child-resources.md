@@ -1,19 +1,19 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-You're starting to work on your R&D team's requests, and you decide to start by building an Azure Cosmos DB database for the toy drone's test data. In this exercise, you create the Azure Cosmos DB account and two child resources, one by using the `parent` property and the other as a nested resource.
+You're starting to work on your R&D team's requests. You decide to start by creating an Azure Cosmos DB database for the toy drone's test data. In this exercise, you create the Azure Cosmos DB account and two child resources. You create one child resource by using the `parent` property and the other as a nested resource.
 
 During the process, you:
 
 > [!div class="checklist"]
-> * Create a Bicep file that deploys a Cosmos DB account.
-> * Add a database and container, which are child resources of the Cosmos DB account.
+> * Create a Bicep file that deploys an Azure Cosmos DB account.
+> * Add a database and container, both of which are child resources of the Azure Cosmos DB account.
 > * Deploy the template and verify the deployment.
 
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
 ## Create a Bicep template that contains an Azure Cosmos DB account
 
-First, you create a new Bicep template with an Azure Cosmos DB account. To do so:
+First, you create a new Bicep template that contains an Azure Cosmos DB account. To do so:
 
 1. Open Visual Studio Code.
 
@@ -21,7 +21,7 @@ First, you create a new Bicep template with an Azure Cosmos DB account. To do so
 
 1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
 
-   You can either select **File** > **Save As** or press <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you saved the file. For example, you might want to create a *scripts* folder to save it in.
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you saved the file. For example, you might want to create a *templates* folder to save it in.
 
 1. Add the following content to the file. It's a good idea to enter it manually rather than copy and paste it. That way, you can see how the tooling helps you write your Bicep files.
 
@@ -30,7 +30,7 @@ First, you create a new Bicep template with an Azure Cosmos DB account. To do so
    > [!TIP]
    > Bicep is strict about where you put line breaks, so be sure to add line breaks only where shown here.
 
-   This Bicep template deploys an Azure Cosmos DB account that is the parent resource you build upon in the next section.
+   This Bicep template deploys an Azure Cosmos DB account that's the parent resource you build upon in the next section.
 
 1. Save the changes to the file.
 
@@ -79,11 +79,11 @@ Now you add another child resource. This time, you add it as a nested resource i
 
 ## Verify your Bicep file
 
-After you've completed all of the preceding changes, your _main.bicep_ file should look like this example:
+After you complete the preceding steps, your _main.bicep_ file should look like this example:
 
 :::code language="bicep" source="code/4-complete.bicep" :::
 
-If it doesn't, either copy the example or adjust your template to match the example.
+If it doesn't look the same, either copy the example or adjust your template to match the example.
 
 ## Deploy the template to Azure
 
@@ -93,7 +93,7 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ### Deploy the template to Azure
 
-Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This operation can take a minute or two to complete, before you see a successful deployment.
+Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. It might take a minute or two before you see a successful deployment.
 
 ```azurecli
 az deployment group create --name main --template-file main.bicep
@@ -107,7 +107,7 @@ az deployment group create --name main --template-file main.bicep
 
 ### Deploy the template to Azure
 
-Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This operation can take a minute or two to complete, before you see a successful deployment.
+Deploy the template to Azure by using the following Azure PowerShell command in the terminal. It might take a minute or two before you see a successful deployment.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
@@ -119,15 +119,14 @@ New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
 
-   1. Select your avatar in the upper-right corner of the page.
-
-   1. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+   1. Select your avatar in the upper-right corner of the page, and then select **Switch directory**. 
+   1. A list of directories appears. Select the **Switch** button next to **Microsoft Learn Sandbox**.
 
 1. On the home page, select **Resource groups**. The **Resource groups** pane appears.
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. In **Overview**, you can see that one deployment succeeded.
+1. In the **Overview** pane, you can see that one deployment succeeded.
 
     :::image type="content" source="../media/4-deployment-succeeded.png" alt-text="Screenshot of the Azure portal interface for the resource group overview, with the deployments section showing that one succeeded." border="true":::
 
@@ -135,8 +134,8 @@ New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 
     :::image type="content" source="../media/4-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
 
-1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's a Cosmos DB account, database, and container listed.
+1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand the list. In this case, there's a Cosmos DB account, database, and container listed.
 
     :::image type="content" source="../media/4-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with three Cosmos DB resources listed." border="true":::
 
-1. Leave the page open in your browser, so you can check on deployments again later.
+1. Leave the page open in your browser so you can check on deployments again later.

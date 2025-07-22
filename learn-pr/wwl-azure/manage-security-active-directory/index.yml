@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-security-active-directory
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage security in Active Directory
   description: "This module focuses on maintaining security in an Active Directory environment. It covers things from permissions management to authentication methods to identifying problematic accounts."
   ms.date: 10/22/2024
@@ -61,4 +59,4 @@ units:
 - learn.wwl.manage-security-active-directory.knowledge-check
 - learn.wwl.manage-security-active-directory.summary
 badge:
-  uid: learn.wwl.manage-security-active-directory.badge
+  uid: learn.wwl.manage-security-active-directory.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-asynchronous-tasks.exercise-implement-tasks-asynchronously-parallel
+title: Exercise - Implement tasks asynchronously and in parallel
+metadata:
+  title: Exercise - Implement tasks asynchronously and in parallel
+  description: "Exercise - Implement tasks asynchronously and in parallel."
+  ms.date: 04/07/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-exercise-implement-tasks-asynchronously-parallel.md)]

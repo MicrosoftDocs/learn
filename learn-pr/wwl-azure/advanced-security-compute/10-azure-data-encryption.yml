@@ -2,8 +2,6 @@
 uid: learn.wwl.advanced-security-compute.azure-data-encryption
 title: Configure disk encryption, Azure Disk Encryption (ADE), encryption as host, and confidential disk encryption
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure disk encryption, Azure Disk Encryption (ADE), encryption as host, and confidential disk encryption
   description: "Configure disk encryption, Azure Disk Encryption (ADE), encryption as host, and confidential disk encryption"
   ms.date: 06/10/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/10-azure-data-encryption.md)]
+  [!include[](includes/10-azure-data-encryption.md)]

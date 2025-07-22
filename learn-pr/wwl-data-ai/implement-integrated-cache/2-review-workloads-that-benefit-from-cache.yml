@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-integrated-cache.review-workloads-that-benefit-from-cache
 title: Review workloads that benefit from the cache
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Review workloads that benefit from the cache
   description: "Review workloads that benefit from the cache"
-  ms.date: 10/22/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

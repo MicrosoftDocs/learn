@@ -2,8 +2,6 @@
 uid: learn.wwl.design-solutions-security-operations.design-security-operations-capabilities-hybrid-multicloud-environments
 title: Design monitoring to support hybrid and multicloud environments
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design monitoring to support hybrid and multicloud environments
   description: "SC-100 preparatory unit on the topic: Design monitoring to support hybrid and multicloud environments."
   ms.date: 09/26/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-design-security-operations-capabilities-hybrid-multicloud-environments.md)]
+  [!include[](includes/2-design-security-operations-capabilities-hybrid-multicloud-environments.md)]

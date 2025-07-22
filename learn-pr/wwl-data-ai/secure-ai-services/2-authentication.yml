@@ -2,13 +2,11 @@
 uid: learn.wwl.secure-ai-services.keys-with-azure-key-vault
 title: Consider authentication
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Consider authentication
   description: Consider authentication
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 05/06/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

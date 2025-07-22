@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan hybrid transactional and analytical processing using Azure Synapse Analytics
   description: Plan hybrid transactional and analytical processing using Azure Synapse Analytics
   ms.date: 06/26/2023
@@ -36,4 +34,4 @@ units:
 - learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.summary
 badge:
   uid: learn.wwl.design-hybrid-transactional-analytical-processing.badge
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.configure-early-termination
 title: Configure early termination
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure early termination
   description: Configure early termination
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/4-configure-early-termination.md)]
-
+

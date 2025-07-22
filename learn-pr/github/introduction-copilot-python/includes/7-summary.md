@@ -1,10 +1,10 @@
-In this module, we looked at how GitHub Codespaces can significantly improve the software development lifecycle, offering features that range from creating a repository from a GitHub template to adding animations with live suggestions. GitHub Codespaces allows you to customize your coding experience and GitHub Copilot guides you in each step of the way.
+In this module, we looked at how GitHub Codespaces can significantly improve the software development lifecycle. We learned about the features of GitHub Codespaces that range from creating a repository from a GitHub template to adding animations with live suggestions. GitHub Codespaces allows you to customize your coding experience and GitHub Copilot guides you in each step of the way.
 
 After finishing this module, you should be able to:
 
 - Configure a GitHub repository in Codespaces and install the GitHub Copilot extension.
 - Engineer prompts for your project that follow best practices to generate suggestions from GitHub Copilot.
-- Use GitHub Copilot Chat to ask and receive coding-related questions.
+- Use GitHub Copilot Chat to ask coding-related questions and receive answers.
 
 ## Delete your Codespaces resources
 

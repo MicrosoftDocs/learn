@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-development-operations-principles-for-machine-learn
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to DevOps principles for machine learning
   description: Learn about DevOps for machine learning, machine learning operations, and MLOps.
   author: wwlpublish
@@ -44,4 +42,4 @@ units:
 - learn.wwl.introduction-development-operations-principles-for-machine-learn.summary
 badge:
   uid: learn.wwl.introduction-to-devops-principles-for-machine-learning.badge
-
+

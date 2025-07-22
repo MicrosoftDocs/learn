@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-pipelines-concurrency
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe pipelines and concurrency
   description: "Describe pipelines and concurrency"
   ms.date: 05/23/2024
@@ -61,4 +59,4 @@ units:
 - learn.wwl.describe-pipelines-concurrency.knowledge-check
 - learn.wwl.describe-pipelines-concurrency.summary
 badge:
-  uid: learn.wwl.describe-pipelines-concurrency.badge
+  uid: learn.wwl.describe-pipelines-concurrency.badge

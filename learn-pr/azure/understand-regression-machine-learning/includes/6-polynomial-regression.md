@@ -10,7 +10,7 @@ y = intercept + B1*x
 
 ![Diagram showing a two-parameter polynomial regression graph.](../media/6-polynomial-graph.png)
 
-While a three-parameter polynomial has a single bend in it:
+A three-parameter polynomial has a single bend in it:
 
 y = intercept + B1*x + B2 * x2
 
@@ -24,7 +24,7 @@ y = intercept + B1*x + B2 * x2 + B3 * x3
 
 ### Polynomial versus other curves
 
-There are many kinds of curves, such as log curves and logistic (s-shaped) curves, all of which can be used with regression.
+There are many kinds of curves, such as log curves and logistic (s-shaped) curves, all of which we can use with regression.
 
 ![Diagram showing polynomial, log and logistic curves.](../media/6-polynomial-vs-curves.png)
 

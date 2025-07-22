@@ -2,8 +2,6 @@
 uid: learn.wwl.security-storage.azure-storage
 title: Azure Storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Storage
   description: "Azure Storage"
   ms.date: 06/25/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-azure-storage.md)]
+  [!include[](includes/2-azure-storage.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.design-container-build-strategy.explore-azure-container-related-services
 title: Explore Azure container-related services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure container-related services
   description: "Explore Azure container-related services"
   ms.date: 05/25/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-explore-azure-container-related-services.md)]
+  [!include[](includes/7-explore-azure-container-related-services.md)]

@@ -2,8 +2,6 @@
 uid: learn.azure.protect-vm-settings-with-dsc.use-powershell-dsc
 title: Use PowerShell DSC to achieve a desired state
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use PowerShell DSC to achieve a desired state
   description: Use PowerShell DSC to achieve a desired state
   ms.date: 09/22/2023
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-use-powershell-dsc.md)]
-
+

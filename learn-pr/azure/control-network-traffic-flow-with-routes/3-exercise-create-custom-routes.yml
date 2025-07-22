@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.control-network-traffic-flow-with-routes.3-exercise-create-custom-routes
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create custom routes
   description: Create custom routes
   ms.date: 12/02/2024
@@ -17,4 +15,4 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-create-custom-routes.md)]
-
+

@@ -1,14 +1,12 @@
 ### YamlMime:Module
 uid: introduction-azure-web-application-firewall
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Introduction to Azure Web Application Firewall"
   description: Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including its features, how it's deployed, and its common use cases.
   manager: kumud
-  ms.date: 02/14/2024
+  ms.date: 05/01/2025
   author: vhorne
-  ms.author: victorh
+  ms.author: robmcm
   ms.topic: module-intro-to-product
   ms.service: azure-web-application-firewall
 title: "Introduction to Azure Web Application Firewall"

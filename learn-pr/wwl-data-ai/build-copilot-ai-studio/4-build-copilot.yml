@@ -1,14 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-copilot-ai-studio.build-copilot
-title: Build an agent with prompt flow
+title: Implement RAG in a prompt flow
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Build an agent with prompt flow
-  description: Learn about build an agent with prompt flow.
+  title: Implement RAG in a prompt flow
+  description: Learn about using RAG in a prompt flow.
   author: madiepev
   ms.author: madiepev
-  ms.date: 11/26/2024
+  ms.date: 05/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

@@ -3,14 +3,11 @@ uid: learn.azure.export-data-with-azure-import-export.how-azure-import-export-wo
 title: How Azure Import/Export works
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How Azure Import/Export works
   description: How Azure Import/Export works
   ms.date: 03/08/2023
-  author: alkohli
-  ms.author: alkohli
-  manager: femila
+  author: stevenmatthew
+  ms.author: shaas
   ms.topic: unit
 
 durationInMinutes: 5

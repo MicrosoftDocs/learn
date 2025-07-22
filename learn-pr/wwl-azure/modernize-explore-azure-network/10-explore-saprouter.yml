@@ -2,8 +2,6 @@
 uid: learn.wwl.modernize-explore-azure-network.explore-saprouter
 title: Explore SAProuter
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore SAProuter
   description: "Explore SAProuter"
   ms.date: 01/09/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/10-explore-saprouter.md)]
+  [!include[](includes/10-explore-saprouter.md)]

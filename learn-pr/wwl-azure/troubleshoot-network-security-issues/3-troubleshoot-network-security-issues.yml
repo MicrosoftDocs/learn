@@ -2,16 +2,15 @@
 uid: learn.wwl.troubleshoot-network-security-issues.troubleshoot-network-security-issues
 title: Troubleshoot network security issues
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot network security issues
   description: "Troubleshoot network security issues"
   ms.date: 04/27/2023
   author: mistoyanwork
   ms.author: mistoyan
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-troubleshoot-network-security-issues.md)]
+  [!include[](includes/3-troubleshoot-network-security-issues.md)]

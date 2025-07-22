@@ -2,8 +2,6 @@
 uid: learn.wwl.continuous-deployment-for-machine-learning.set-up-environments-for-development-production
 title: Set up environments for development and production
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Set up environments for development and production
   description: Set up environments for development and production
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-set-up-environments-for-development-production.md)]
-
+

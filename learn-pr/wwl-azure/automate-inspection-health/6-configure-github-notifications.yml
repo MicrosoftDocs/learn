@@ -2,8 +2,6 @@
 uid: learn.wwl.automate-inspection-of-health.configure-github-notifications
 title: Configure GitHub notifications
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure GitHub notifications
   description: "Configure GitHub notifications"
   ms.date: 05/28/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-configure-github-notifications.md)]
+  [!include[](includes/6-configure-github-notifications.md)]

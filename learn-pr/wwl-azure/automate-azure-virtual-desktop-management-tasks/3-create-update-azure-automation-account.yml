@@ -2,8 +2,6 @@
 uid: learn.wwl.automate-azure-virtual-desktop-management-tasks.create-update-azure-automation-account
 title: Create or update an Azure Automation account
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create or update an Azure Automation account
   description: "Create or update an Azure Automation account"
   ms.date: 06/21/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-create-update-azure-automation-account.md)]
+  [!include[](includes/3-create-update-azure-automation-account.md)]

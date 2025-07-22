@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.explore-smart-detection-notifications
 title: Explore smart detection notifications
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore smart detection notifications
   description: "Explore smart detection notifications"
   ms.date: 05/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-explore-smart-detection-notifications.md)]
+  [!include[](includes/4-explore-smart-detection-notifications.md)]

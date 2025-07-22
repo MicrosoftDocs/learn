@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-content-ai-api.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Check your knowledge.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 05/15/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What configuration values are needed to use the Azure AI Content Understanding REST API?"
+    choices:
+    - content: "The name of the resource group where the Azure AI service is deployed."
+      isCorrect: false
+      explanation: "Incorrect. The resource group name isn't required to use the REST API."
+    - content: "The Azure subscription ID and tenant ID."
+      isCorrect: false
+      explanation: "Incorrect. The subscription ID and tenant ID aren't required to use the REST API."
+    - content: "The endpoint and key for the Azure AI service."
+      isCorrect: true
+      explanation: "Correct. The endpoint and key are required to use the REST API."
+  - content: "What must be specified when calling the *analyze* method to extract fields from content?"
+    choices:
+    - content: "The name of the Azure AI services resource."
+      isCorrect: false
+      explanation: "Incorrect. The name of the Azure AI services resource isn't required."
+    - content: "The name of the analyzer."
+      isCorrect: true
+      explanation: "Correct. The name of the analyzer is required to extract fields from content."
+    - content: "The Operation-Location returned when the analyzer was created."
+      isCorrect: false
+      explanation: "Incorrect. The Operation-Location isn't required to extract fields from content."
+  - content: "How are the extracted fields returned?"
+    choices:
+    - content: "As type-specific values."
+      isCorrect: true
+      explanation: "Correct. Each field in the results is of a specific data type."
+    - content: "As a list of strings."
+      isCorrect: false
+      explanation: "Incorrect. The extracted fields aren't returned as a list of strings."
+    - content: "As a single blob."
+      isCorrect: false
+      explanation: "Incorrect. The extracted fields aren't returned as a single blob."
+

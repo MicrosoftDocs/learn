@@ -2,8 +2,6 @@
 uid: learn.wwl.scale-apps-app-service.identify-autoscale-factors
 title: Identify autoscale factors
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify autoscale factors
   description: "Identify autoscale factors"
   ms.date: 02/12/2025

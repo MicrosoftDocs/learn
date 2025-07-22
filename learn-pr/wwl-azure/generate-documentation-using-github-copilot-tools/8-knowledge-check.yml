@@ -1,10 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.generate-documentation-using-github-copilot-tools.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  hidden_question_numbers: ["A1A8B431_10","A1A8B431_30","A1A8B431_6","A1A8B431_51","A1A8B431_55","A1A8B431_63","A1A8B431_67","A1A8B431_79","A1A8B431_104","A1A8B431_108","A1A8B431_112","A1A8B431_128","A1A8B431_88"]
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 11/14/2024
+  ms.date: 07/02/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -12,7 +14,7 @@ metadata:
   - N/A
 durationInMinutes: 8
 quiz:
-  title: "Check your knowledge"
+  title: "Check your knowledge" 
   questions:
   - content: "What is the purpose of using chat participants, slash commands, and chat variables in GitHub Copilot Chat?"
     choices:

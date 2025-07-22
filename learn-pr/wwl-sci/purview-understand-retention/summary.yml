@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-understand-retention.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary."
+  ms.date: 04/11/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/summary.md)]

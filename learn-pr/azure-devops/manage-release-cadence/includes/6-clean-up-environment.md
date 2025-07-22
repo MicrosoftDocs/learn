@@ -36,11 +36,12 @@ Earlier in this module, you assigned the **Improve release cadence** work item t
 
 In practice, "Done" often means putting working software into the hands of your users. For learning purposes, here you mark this work as complete because you can now choose a deployment pattern that enables you to release changes more quickly to your users.
 
-At the end of each _sprint_, or work iteration, your team might want to hold a retrospective meeting. In the meeting, you can share the work that you completed in the sprint, what went well, and what could be improved.
+At the end of each *sprint*, or work iteration, your team might want to hold a retrospective meeting. In the meeting, you can share the work that you completed in the sprint, what went well, and what could be improved.
 
 To complete the work item:
 
 1. In Azure DevOps, go to **Boards**, and then select **Boards** from the menu.
+
 1. Move the **Improve release cadence** work item from the **Doing** column to the **Done** column.
 
     :::image type="content" source="../media/5-azure-boards-wi5-done.png" alt-text="A screenshot of Azure Boards, showing the card in the Done column.":::
@@ -78,6 +79,7 @@ To delete the project:
 1. At the bottom of the **Project details** area, select **Delete**.
 
     :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="A screenshot of Azure Pipelines showing the location of the Delete button.":::
+
 1. In the window that appears, enter the project name, and then select **Delete** again.
 
 Your project is now deleted.

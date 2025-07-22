@@ -1,14 +1,14 @@
-In this exercise, you'll update your function to parse information from the GitHub webhook payload, and display the results.
+In this exercise, you update your function to parse information from the GitHub webhook payload, and display the results.
 
 ## Update your function to parse the webhook payload
 
 1. In the Azure portal, go to the Function App that you created earlier.
 
-1. On the **Function App** pane, in the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
+1. On the **Function App** pane, select your Function App under **Functions** in the center pane.
 
-1. Select the HttpTrigger1 you created. The **HtttpTrigger1** pane appears for your *Function*.
+1. Select the **HttpTrigger1** you created. The **HtttpTrigger1** pane appears for your *Function*.
 
-1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane for your *Function* appears.
+1. Select **Code + Test** at the top of the screen. The **Code + Test** pane for your *Function* appears.
 
 1. In the path above the code, from the dropdown list, select **index.js**. The JavaScript for your trigger appears.
 
@@ -28,7 +28,7 @@ In this exercise, you'll update your function to parse information from the GitH
     }
     ```
 
-    This code retrieves the event type from the request header, and the title and action fields from the message body. This information indicates that page has changed, and whether it has been edited or newly created. The code then constructs a response that summarizes the action. Here's what the JavaScript should look like:
+    This code retrieves the event type from the request header, and the title and action fields from the message body. This information indicates that page changed, and whether it's been edited or newly created. The code then constructs a response that summarizes the action. Here's what the JavaScript should look like:
 
     ```JavaScript
     module.exports = async function (context, req) {
@@ -77,7 +77,7 @@ In this exercise, you'll update your function to parse information from the GitH
 
 1. Select the latest (top) delivery entry (*redelivery*) by selecting its ellipsis button (**...**).
 
-1. Select the **Response** tab. You'll see how the webhook has triggered your function, which then parsed the information, and sent a response similar to the following text:
+1. Select the **Response** tab. You should see how the webhook has triggered your function, which then parsed the information, and sent a response similar to the following text:
 
     ```text
     Page is Home, Action is edited, Event Type is gollum

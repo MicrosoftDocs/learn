@@ -2,8 +2,6 @@
 uid: learn.provision-azure-sql-db.3-create-your-database
 title: Exercise - Create your Azure SQL database
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create your Azure SQL database
   description: Create your Azure SQL database
   ms.date: 01/17/2025
@@ -23,4 +21,4 @@ content: |
 #     resource:
 #       type: "Microsoft.Sql/servers"
 #   hint: "Follow the directions above to create a SQL database named 'Logistics'."
-
+

@@ -2,8 +2,6 @@
 uid: learn.azure.azure-speech-services-tutorials-mrtk.1-introduction
 title: Introduction 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   author: marlenaklein-msft
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

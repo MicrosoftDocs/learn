@@ -6,12 +6,13 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure identity providers
   description: "Configure identity providers"
-  ms.date: 12/18/2024
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
   ms.custom:
-  - N/A
+    - sfi-ga-nochange
+    - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/13-configure-identity-providers.md)]

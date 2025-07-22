@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-business-benefits-azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe the business benefits of Azure
   description: "This module explores various business benefits of Azure, including cost-efficiency, innovation, agility, and security."
   ms.date: 09/20/2024
@@ -49,4 +47,4 @@ units:
 - learn.wwl.describe-business-benefits-azure.knowledge-check
 - learn.wwl.describe-business-benefits-azure.summary
 badge:
-  uid: learn.wwl.describe-business-benefits-azure.badge
+  uid: learn.wwl.describe-business-benefits-azure.badge

@@ -2,8 +2,6 @@
 uid: learn.align-requirements-in-azure.2-public-private-hybrid
 title: Azure solutions for public, private, and hybrid cloud
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure solutions for public, private, and hybrid cloud
   description: Learn about Azure solutions for public, private, and hybrid cloud.
   ms.date: 12/06/2024
@@ -51,4 +49,4 @@ quiz:
       isCorrect: true
     - content: Hybrid cloud
       isCorrect: false
-      explanation: "The VPN is a public cloud resource; however, because the VPN is a private connection between two private datacenters, this scenario describes a private cloud deployment."
+      explanation: "The VPN is a public cloud resource; however, because the VPN is a private connection between two private datacenters, this scenario describes a private cloud deployment."

@@ -2,8 +2,6 @@
 uid: learn.azdo.manage-build-dependencies.9-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summarize what you've learned and discover resources to learn more.
   ms.custom: devdivchpfy22
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
-
+

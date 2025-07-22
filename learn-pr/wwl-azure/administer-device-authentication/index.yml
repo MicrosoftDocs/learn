@@ -1,12 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.administer-device-authentication
 metadata:
-  title: Manage device authentication
+  title: Manage Device Authentication
   description: "In this module, you learn about device authentication and management in Microsoft Entra ID. MD-102"
-  ms.date: 03/22/2024
+  ms.date: 04/16/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: windows
@@ -29,7 +30,7 @@ prerequisites: |
   -   Strong understanding of computer networking, client security, and application concepts.
 
   -   Experience using Active Directory Domain Services.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/administer-device-authentication.svg
 levels:
 - intermediate
 roles:

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-provision-environments
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Provision and test environments
   description: "Provision and test environments"
   ms.date: 05/06/2024
@@ -63,4 +61,4 @@ units:
 - learn.wwl.configure-provision-environments.knowledge-check
 - learn.wwl.configure-provision-environments.summary
 badge:
-  uid: learn.wwl.configure-provision-environments.badge
+  uid: learn.wwl.configure-provision-environments.badge

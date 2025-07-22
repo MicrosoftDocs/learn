@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.collaborate-pull-requests-azure-repos.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 12/12/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
   [!include[](includes/4-knowledge-check.md)]
@@ -48,4 +47,4 @@ quiz:
           explanation: "Incorrect. Branch policies enforce a code review process to maintain code quality and standards."
         - content: "To allow developers to push changes directly to the main branch."
           isCorrect: false
-          explanation: "Incorrect. Branch policies are designed to prevent direct changes to the main branch, ensuring code quality and change-management standards."
+          explanation: "Incorrect. Branch policies are designed to prevent direct changes to the main branch, ensuring code quality and change-management standards."

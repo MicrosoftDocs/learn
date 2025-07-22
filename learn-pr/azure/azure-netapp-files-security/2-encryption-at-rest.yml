@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-security.encryption-at-rest 
 title: Data encryption at rest in Azure NetApp Files
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-module
   title: Encryption at rest in Azure NetApp Files
   description: "Azure NetApp Files offers software and hardware level encryption for your data."
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-encryption-at-rest.md)]
+  [!include[](includes/2-encryption-at-rest.md)]

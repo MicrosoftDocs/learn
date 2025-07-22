@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-hpc.6-summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: In this unit, you'll review what you have learned about high-performance computing tools in Azure.
-  ms.date: 05/22/2023
+  ms.date: 04/07/2025
   author: padmalathas
   ms.author: padmalathas
   ms.topic: unit

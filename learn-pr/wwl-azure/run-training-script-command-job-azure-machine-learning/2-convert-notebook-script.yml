@@ -2,8 +2,6 @@
 uid: learn.wwl.run-training-script-command-job-azure-machine-learning.convert-notebook-script
 title: Convert a notebook to a script
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Convert a notebook to a script
   description: Learn how to get your code production ready.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 9
 content: |
   [!include[](includes/2-convert-notebook-script.md)]
-
+

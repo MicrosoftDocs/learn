@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-computer-vision
+metadata:
+  title: Introduction to computer vision concepts
+  description: Introduction to computer vision concepts
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 5/20/2025
+  ms.service: azure
+  ai-usage: ai-assisted
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
+title: Introduction to computer vision concepts
+summary: Introduction to computer vision concepts
+abstract: Introduction to computer vision concepts
+prerequisites: Ability to navigate the Azure portal
+iconUrl: /training/achievements/analyze-images-computer-vision.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- ai-services
+subjects:
+- classification-analysis
+units:
+- learn.wwl.introduction-computer-vision.introduction
+- learn.wwl.introduction-computer-vision.overview
+- learn.wwl.introduction-computer-vision.understand-image-processing
+- learn.wwl.introduction-computer-vision.computer-vision-models
+- learn.wwl.introduction-computer-vision.modern-vision-models
+- learn.wwl.introduction-computer-vision.knowledge-check
+- learn.wwl.introduction-computer-vision.summary
+badge:
+  uid: learn.wwl.introduction-computer-vision.badge
+

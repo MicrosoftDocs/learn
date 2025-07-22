@@ -2,20 +2,13 @@
 uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.exercise-deploy-azure-database-using-template
 title: 'Exercise: Deploy an Azure SQL Database using an Azure Resource Manager template'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Deploy an Azure SQL Database using an Azure Resource Manager template'
   description: "Exercise: Deploy an Azure SQL Database using an Azure Resource Manager template"
-  ms.date: 02/26/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-  ms.custom:
-    - devx-track-arm-template
-azureSandbox: false
-labId: 120593
-labModal: true
-durationInMinutes: 12
+durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-deploy-azure-database-using-template.md)]
 

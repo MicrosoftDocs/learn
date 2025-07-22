@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-secure-scalable-platform-architectures
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design Secure and Scalable Platform Architectures
   description: "In this module, learners will gain insights into designing platform architectures that are secure, scalable, and compliant with regulatory standards. The module covers capacity planning, cost optimization, and the role of automation in maintaining consistency and reducing manual errors. Learners will also explore strategies for building scalable solutions that can handle increasing demand and complex workflows."
   ms.date: 01/14/2025
@@ -62,4 +60,4 @@ units:
   - learn.wwl.design-secure-scalable-platform-architectures.knowledge-check
   - learn.wwl.design-secure-scalable-platform-architectures.summary
 badge:
-  uid: learn.wwl.design-secure-scalable-platform-architectures.badge
+  uid: learn.wwl.design-secure-scalable-platform-architectures.badge

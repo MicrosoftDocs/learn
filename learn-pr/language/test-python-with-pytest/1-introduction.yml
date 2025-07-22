@@ -3,8 +3,8 @@ uid: learn.test-python-with-pytest.introduction
 title: Introduction
 metadata:
   title: Introduction to testing with Pytest
-  description: This module will go through the basics of Pytest, a powerful testing tool for Python. You'll learn writing and running tests, and reporting.
-  ms.date: 12/08/2023
+  description: This module will go through the basics of Pytest, a powerful testing tool for Python. You'll learn to write and run tests, as well as reporting.
+  ms.date: 05/27/2025
   author: alfredodeza
   ms.author: alfredodeza
   ms.custom:

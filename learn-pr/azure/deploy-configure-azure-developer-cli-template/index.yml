@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-configure-azure-developer-cli-templates
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction
   title: Deploy and configure Azure Developer CLI templates
   description: Learn how to deploy and configure Azure Developer CLI templates
@@ -42,4 +40,4 @@ units:
 - learn.azure.deploy-configure-azure-developer-cli-templates.knowledge-check
 - learn.azure.deploy-configure-azure-developer-cli-templates.summary
 badge:
-  uid: learn.azure.deploy-configure-azure-developer-cli-templates.badge
+  uid: learn.azure.deploy-configure-azure-developer-cli-templates.badge

@@ -2,8 +2,6 @@
 uid: learn.data-ai-introduction-to-azure-data-lake-storage.azure-data-lake-gen2
 title: Understand Azure Data Lake Storage Gen2
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand Azure Data Lake Storage Gen2
   description: "Understand Azure Data Lake Storage Gen2"
   ms.date: 07/18/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-azure-data-lake-gen2.md)]
+  [!include[](includes/2-azure-data-lake-gen2.md)]

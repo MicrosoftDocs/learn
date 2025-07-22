@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-confidential-computing-with-azure-virtual-machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   ms.author: jushiman
   author: ju-shim
   manager: akashdubey
@@ -42,4 +40,4 @@ units:
 - learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.summary
 badge:
   uid: learn.azure.intro-to-confidential-computing-with-azure-virtual-machines-badge
-
+

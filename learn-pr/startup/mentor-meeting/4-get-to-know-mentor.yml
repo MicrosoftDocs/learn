@@ -2,8 +2,6 @@
 uid: learn.startups.mentor-meeting.get-to-know-mentor
 title: Get to know your mentor
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Get to know your mentor
   description: "This content is part of the \"Make the most of a mentor meeting\" module."
   ms.date: 04/18/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-get-to-know-mentor.md)]
-
+

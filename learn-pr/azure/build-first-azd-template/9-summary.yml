@@ -2,8 +2,6 @@
 uid: learn.azure.build-first-azure-developer-cli-template.summary
 title: Summary and clean up
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: summary
   title: Summary and clean up
   description: Summary unit for the Build Your first Azure Developer CLI Template module
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/9-summary.md)]
-
+

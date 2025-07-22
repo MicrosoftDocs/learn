@@ -1,6 +1,6 @@
 Azure SQL provides varying levels of database availability options and capabilities according to service tiers. The service tier determines the underlying architecture of the database or managed instance that you deploy.
 
-There are two pricing models for Azure SQL databases and managed instances: DTU and vCore. In this unit, we focus on the vCore service tiers and their architectures for high availability. 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b8b00c8c-dd1c-423e-bc90-c18cc5e6c775]
 
 ### Things to know about General Purpose availability
 
@@ -32,7 +32,7 @@ The image illustrates the availability architecture for the vCore Business Criti
 
 - Unlike the General Purpose tier, the data and log files all run on direct-attached SSD, which significantly reduces network latency.
 
-- In this tier, there are three secondary replicas. One secondary replica can be used as a read-only endpoint (at no extra charge). A transaction can complete a commit when at least one secondary replica has implemented the change. 
+- In this tier, there are three secondary replicas. One secondary replica can be used as a read-only endpoint (at no extra charge). A transaction can complete a commit when at least one secondary replica completes the change. 
 
 ### Things to know about Hyperscale availability
 

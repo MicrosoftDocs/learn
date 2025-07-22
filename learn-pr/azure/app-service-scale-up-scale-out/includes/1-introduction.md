@@ -11,7 +11,7 @@ In this module, you use Azure App Service to scale a web app to match planned se
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Scale a web app in and out manually.
 - Scale a web app up and down.

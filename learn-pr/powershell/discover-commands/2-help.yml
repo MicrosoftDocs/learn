@@ -4,8 +4,8 @@ title: Discover a command by using the help system
 metadata:
   title: Discover a command by using the help system
   description: Use the built-in PowerShell help system to discover how to call a command.
-  author: ttorble
-  ms.author: chnoring
+  author: sdwheeler
+  ms.author: sewhee
   ms.date: 02/23/2023
   ms.topic: unit
   ms.custom: team=nextgen

@@ -2,8 +2,6 @@
 uid: learn.improve-reliability-incidents.3-lifecycle
 title: "Characteristics and lifecycle of an incident"
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Characteristics and lifecycle of an incident"
   description: "Characteristics and lifecycle of an incident"
   ms.date: 02/28/2024
@@ -51,4 +49,4 @@ quiz:
     - content: 'Readiness'
       isCorrect: false
       explanation: 'Readiness is the fifth and final phase of an incident.'
-
+

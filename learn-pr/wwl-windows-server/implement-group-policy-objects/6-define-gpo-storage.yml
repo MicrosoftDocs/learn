@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-group-policy-objects.define-gpo-storage
 title: Define GPO storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Define GPO storage
   description: "Define GPO storage"
   ms.date: 04/17/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-define-gpo-storage.md)]
+  [!include[](includes/6-define-gpo-storage.md)]

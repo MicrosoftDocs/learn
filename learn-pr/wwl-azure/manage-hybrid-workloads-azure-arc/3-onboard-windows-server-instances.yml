@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-hybrid-workloads-with-azure-arc.onboard-windows-server-instances
 title: Onboard Windows Server instances
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Onboard Windows Server instances
   description: "Onboard Windows Server instances"
   ms.date: 01/15/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-onboard-windows-server-instances.md)]
+  [!include[](includes/3-onboard-windows-server-instances.md)]

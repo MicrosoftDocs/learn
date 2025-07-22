@@ -25,13 +25,13 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | Workspace Name  | Provide a unique name for the Microsoft Sentinel Workspace such as `<yourName>-sentinel`, where *\<yourName>* represents the workspace name that you chose in the previous task. |
     | Location | Accept the default value of **[resourceGroup().location]**. |
     | Simplevm Name | Accept the default value of **simple-vm**. |
-    | Simplevm Windows OS Version | Accept the default value of **2016-Datacenter**. |
+    | Simplevm Windows OS Version | Accept the default value of **2022-Datacenter**. |
 
 1. Select the **Review + create**. When validation passes, select **Create**.
 
     :::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the Custom Deployment page." border="true":::
 
-    > [!Note]
+    > [!NOTE]
     > Wait for the deployment to complete. The deployment should take less than five minutes.
 
 ## Task 2: Check the resources created
@@ -68,7 +68,7 @@ In this task, you deploy a Microsoft Sentinel Data connector to detect Azure Act
 
 1. In the *Search* box, search for and select the **Azure Activity** Solution. On the **Azure Activity** details pane, select **Install**.
 
-1. Wait for the install to complete and them select **Manage**.
+1. Wait for the install to complete and then select **Manage**.
 
 1. In the *Search* box, search for and select the **Azure Activity** Data connector. 
 
@@ -89,7 +89,7 @@ In this task, you deploy a Microsoft Sentinel Data connector to detect Azure Act
 
 1. Select **Create** to finish.
 
-1. Once the deployment is complete, you'll see the **Connected** status (green bar) for the Azure Activity connector in the *Configuration/Data connectors* pane.
+1. Once the deployment is complete, you see the **Connected** status (green bar) for the Azure Activity connector in the *Configuration/Data connectors* pane.
 
 :::image type="content" source="../media/07-azure-sentinel-connector.png" alt-text="Screenshot of the Microsoft Sentinel connector" border="true" lightbox="../media/07-azure-sentinel-connector.png":::
 

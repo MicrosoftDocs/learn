@@ -5,7 +5,7 @@ metadata:
   title: Finding a tool to manage your road map
   description: This unit teaches you about finding a tool to help you manage your road map.
   author: czhu89
-  ms.date: 04/24/2023
+  ms.date: 07/09/2025
   ms.author: cazh
   ms.topic: unit
 durationInMinutes: 2
@@ -16,12 +16,12 @@ quiz:
    questions:
    - content: "Why might you want to use a tool to manage your product road map?"
      choices:
-     - content: So you know who to blame when things go wrong
+     - content: So you know who to blame when things go wrong.
        isCorrect: false
-     - content: So you can keep track of what you're building
+     - content: So you can keep track of what you're building.
        isCorrect: true
-       explanation: "A product road map management tool helps you maintain a central, single source of truth, for your road map. Making it easier to share the data to a variety of audiences."
-     - content: To make it easier to manage meetings
+       explanation: "A product road map management tool helps you maintain a central, single source of truth, for your road map. Making it easier to share the data with various audiences."
+     - content: To make it easier to manage meetings.
        isCorrect: false
-     - content: To keep track of the names of the features you want to build
+     - content: So you can keep track of the names of the features you want to build.
        isCorrect: false

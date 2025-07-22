@@ -2,8 +2,6 @@
 uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.microsoft-purview-governance-portal-use-cases
 title: Identify use cases for the Microsoft Purview governance portal
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify use cases for the Microsoft Purview governance portal
   description: "Implement data discovery and classification​"
   ms.date: 02/24/2025

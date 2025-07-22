@@ -1,4 +1,4 @@
-You've learned how the Azure ExpressRoute service works, and how to connect your on-premises networks to the Microsoft cloud by using an ExpressRoute circuit. You've also learned about the different peering options available, and how to use a virtual network gateway to route requests between your on-premises network and the Microsoft cloud. 
+You learned how the Azure ExpressRoute service works, and how to connect your on-premises networks to the Microsoft cloud by using an ExpressRoute circuit. You also learned about the different peering options available, and how to use a virtual network gateway to route requests between your on-premises network and the Microsoft cloud.
 
 In this unit, we show you the most common use cases for deploying ExpressRoute. We also compare ExpressRoute to other connection options available for Azure, like site-to-site and point-to-site through a virtual network gateway. Together, this information helps you determine whether ExpressRoute is the most appropriate solution for your organization.
 
@@ -6,12 +6,12 @@ In this unit, we show you the most common use cases for deploying ExpressRoute. 
 
 Consider using the Azure ExpressRoute service in the following scenarios:
 
-- Low-latency connectivity to services in the cloud. In these situations, eliminating or reducing the network overhead has a significant effect on the performance of your applications.
-- Accessing high-volume systems in the cloud that consume or produce massive volumes of data quickly. ExpressRoute can move data around rapidly, with high reliability.
-- Consuming Microsoft Cloud Services, such as Office 365 and Dynamics 365. ExpressRoute is especially useful if your organization has a large number of users who need to access these services concurrently.
-- Organizations that have migrated large-scale on-premises systems to Azure. Using ExpressRoute helps ensure that the results of the migrations are seamless for on-premises clients. Organizations should notice no drop in performance. They might even experience some improvement if network bandwidth restricted their previous on-premises systems.
-- Situations where data shouldn't traverse the public internet for security reasons.
-- Large datacenters, with a high number of users and systems accessing SaaS offerings.
+- When you require low-latency connectivity to services in the cloud. In these situations, eliminating or reducing the network overhead has a significant effect on the performance of your applications.
+- When accessing high-volume systems in the cloud that consume or produce massive volumes of data quickly. ExpressRoute can move data around rapidly, with high reliability.
+- When consuming Microsoft Cloud Services, such as Office 365 and Dynamics 365. ExpressRoute is especially useful if your organization has a large number of users who need to access these services concurrently.
+- When migrating large-scale on-premises systems to Azure. Using ExpressRoute helps ensure that the results of the migrations are seamless for on-premises clients. Organizations should notice no drop in performance. They might even experience some improvement if network bandwidth restricted their previous on-premises systems.
+- When you have a situation where data shouldn't traverse the public internet for security reasons.
+- When you have a large datacenter that has a high number of users and systems accessing SaaS offerings.
 
 ## Benefits of using ExpressRoute
 
@@ -19,11 +19,11 @@ ExpressRoute offers several advantages for building highly scalable, cloud-based
 
 ### Predictable performance
 
-Having a dedicated connection to the Microsoft cloud guarantees performance. There are no concerns over internet provider outages or spikes in internet traffic. With ExpressRoute, your providers are accountable to provide the necessary throughput and latency SLA.
+Having a dedicated connection to the Microsoft cloud guarantees performance. There are no concerns over internet provider outages or spikes in internet traffic. With ExpressRoute, your providers are accountable to provide the necessary service level agreement for throughput and latency.
 
 ### Data privacy for your traffic
 
-Traffic that's sent over ExpressRoute connection is as secure as using MPLS WAN links. There's no risk of internet monitoring or packet capture by malicious users.
+Traffic sent over an ExpressRoute connection is as secure as using multiprotocol label switching (MPLS) WAN links. There's no risk of internet monitoring or packet capture by malicious users.
 
 ### High-throughput, low-latency connections
 

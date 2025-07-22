@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.exercise-provision-hdinsight-perform-data-transformations
 title: Exercise - Provision HDInsight to perform advanced streaming data transformations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Provision HDInsight to perform advanced streaming data transformations
   description: "Exercise - Provision HDInsight to perform advanced streaming data transformations"
   ms.date: 04/07/2024
@@ -15,4 +13,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-exercise-provision-hdinsight-perform-data-transformations.md)]
-
+

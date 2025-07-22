@@ -2,8 +2,6 @@
 uid: learn.machinelearning.evaluate-real-world-models.cost-vs-evaluation
 title: Cost functions versus evaluation metrics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Cost functions versus evaluation metrics
   description: Conceptual unit about cost functions versus evaluation metrics in machine learning
   ms.date: 03/13/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-cost-vs-evaluation.md)] 
+  [!include[](includes/6-cost-vs-evaluation.md)] 

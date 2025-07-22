@@ -2,8 +2,6 @@
 uid: learn.wwl.set-up-microsoft-defender-cloud.define-brute-force-attacks
 title: Define brute force attacks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Define brute force attacks
   description: "Define brute force attacks"
   ms.date: 04/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/16-define-brute-force-attacks.md)]
+  [!include[](includes/16-define-brute-force-attacks.md)]

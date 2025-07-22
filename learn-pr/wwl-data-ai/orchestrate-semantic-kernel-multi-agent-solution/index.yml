@@ -34,6 +34,7 @@ subjects:
 units:
 - learn.wwl.orchestrate-sk-multi-agent-solution.introduction
 - learn.wwl.orchestrate-sk-multi-agent-solution.understand-agent-framework
+- learn.wwl.orchestrate-sk-multi-agent-solution.create-agent-group-chat
 - learn.wwl.orchestrate-sk-multi-agent-solution.design-agent-selection-strategy
 - learn.wwl.orchestrate-sk-multi-agent-solution.define-chat-termination-strategy
 - learn.wwl.orchestrate-sk-multi-agent-solution.exercise
