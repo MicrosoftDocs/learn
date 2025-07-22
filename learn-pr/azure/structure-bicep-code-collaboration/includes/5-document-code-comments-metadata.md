@@ -1,12 +1,12 @@
-Good Bicep code is _self-documenting_. This means that it uses clear naming and a good structure so that when colleagues read your code, they can quickly understand what's happening. If they need to make changes, they can be confident they're modifying the right places.
+Good Bicep code is *self-documenting*. This means that it uses clear naming and a good structure. So when colleagues read your code, they can quickly understand what's happening. If they need to make changes, they can be confident they're modifying the right places.
 
-In some situations, though, you might need to clarify certain code by adding extra documentation to your Bicep files. Also, after your template is deployed and resources have been created in Azure, it's important that anyone who looks at your Azure environment understands what each resource is and what it's for.
+In some situations, though, you might need to clarify certain code by adding extra documentation to your Bicep files. It's important that anyone who looks at your Azure environment understands what each resource is and what it's for.
 
-In this unit, you'll learn how to add comments to your Bicep files and how to use resource tags to add metadata to your Azure resources. This additional documentation gives your colleagues insights into what your code does, the logic you used to write the code, and the purpose of your Azure resources.
+In this unit, you learn how to add comments to your Bicep files and how to use resource tags to add metadata to your Azure resources. This added documentation gives your colleagues insights into what your code does, the logic you used to write the code, and the purpose of your Azure resources.
 
 ## Add comments to your code
 
-Bicep allows you to add _comments_ to your code. Comments are human-readable text that documents your code but is ignored when the file is deployed to Azure.
+Bicep allows you to add *comments* to your code. Comments are human-readable text that documents your code but is ignored when the file is deployed to Azure.
 
 Bicep supports two types of comments:
 
@@ -21,7 +21,7 @@ Bicep supports two types of comments:
 > [!TIP]
 > Avoid using comments for obvious and clear parts of your code. Having too many comments actually reduces your code's readability. Also, it's easy to forget to update comments when your code changes in the future. Focus on documenting unique logic and complex expressions.
 
-You can also use Bicep comments to add a structured multi-line block at the beginning of each file. Think of it as a _manifest_. Your team might decide that each template and module should have a manifest that describes the purpose of the template and what it contains, such as in this example:
+You can also use Bicep comments to add a structured multi-line block at the beginning of each file. Think of it as a *manifest*. Your team might decide that each template and module should have a manifest that describes the purpose of the template and what it contains, such as in this example:
 
 ```bicep
 /*
@@ -43,7 +43,7 @@ For example, your website's Bicep template might include a parameter for the URL
 ::: code language="json" source="code/5-parameters.jsonc" highlight="6" :::
 
 > [!TIP]
-> When you work with parameter files and other JSON files that include comments, you usually need to use the _.jsonc_ file extension instead of _.json_. This helps Visual Studio Code and other tools understand that comments are allowed.
+> When you work with parameter files and other JSON files that include comments, you usually need to use the *.jsonc* file extension instead of *.json*. This extension helps Visual Studio Code and other tools understand that comments are allowed.
 
 ## Add descriptions to parameters, variables, and outputs
 
@@ -51,7 +51,7 @@ When you create a parameter, variable, or output, you can apply the `@descriptio
 
 ::: code language="bicep" source="code/5-descriptions.bicep" highlight="1, 4, 7" :::
 
-Descriptions are more powerful than comments because, when someone uses the Visual Studio Code extension for Bicep, the descriptions are shown whenever someone hovers over a symbolic name. Also, when someone uses your Bicep file as a module, they'll see the descriptions you apply to your parameters.
+Descriptions are more powerful than comments. When you use the Visual Studio Code extension for Bicep, the descriptions are shown whenever you hover over a symbolic name. Also, when someone uses your Bicep file as a module, they can see the descriptions you apply to your parameters.
 
 ## Add descriptions to resources
 
@@ -61,18 +61,18 @@ Additionally, some resources support adding descriptions or other human-readable
 
 ::: code language="bicep" source="code/5-role-assignment-description.bicep" highlight="8" :::
 
-It's a good idea to use this property to explain why you've created each role assignment. The description is deployed to Azure with the resource, so anyone who audits your Azure environment's RBAC configuration will immediately understand the purpose of the role assignment.
+It's a good idea to use this property to explain why you created each role assignment. The description is deployed to Azure with the resource, so anyone who audits the RBAC configuration of your Azure environment immediately understands the purpose of the role assignment.
 
 ## Apply resource tags
 
 Comments in your Bicep file don't appear anywhere in your deployed resources. They're there only to help you document your Bicep files. However, there are many situations where you need to track information about your deployed Azure resources, including:
 
 - Allocating your Azure costs to specific cost centers.
-- Understanding how the data that's contained in databases and storage accounts should be classified and protected.
+- Understanding how the data contained in databases and storage accounts should be classified and protected.
 - Recording the name of the team or person who's responsible for management of the resource.
 - Tracking the name of the environment that the resource relates to, such as production or development.
 
-Resource _tags_ allow you to store important metadata about resources. You define resource tags in your Bicep code, and Azure stores the information with the resource when it's deployed:
+Resource *tags* allow you to store important metadata about resources. You define resource tags in your Bicep code, and Azure stores the information with the resource when the resource is deployed:
 
 ::: code language="bicep" source="code/5-tags.bicep" range="5-21" highlight="4-9" :::
 
@@ -80,7 +80,7 @@ You can query a resource's tags by using tools such as Azure PowerShell and the 
 
 :::image type="content" source="../media/5-tags-portal.png" alt-text="Screenshot of the Azure portal for a storage account, showing the location of tags." border="true":::
 
-It's common to use the same set of tags for all your resources, so it's often a good idea to define your tags as parameters or variables, and then reuse them on each resource:
+It's common to use the same set of tags for all your resources. So, it's often a good idea to define your tags as parameters or variables, and then reuse them on each resource:
 
 ```bicep
 param tags object = {
