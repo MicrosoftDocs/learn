@@ -52673,6 +52673,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-manage-ai-services/4-use-rest.md",
       "redirect_url": "/training/modules/prepare-azure-ai-development/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-manage-ai-services/5-use-sdk.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
     }
   ]
 }
