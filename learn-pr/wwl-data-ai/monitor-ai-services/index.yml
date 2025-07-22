@@ -38,7 +38,6 @@ subjects:
 units:
 - learn.monitor-ai-services.monitor-cost
 - learn.monitor-ai-services.view-metrics
-- learn.monitor-ai-services.knowledge-check
 - learn.monitor-ai-services.summary
 badge:
   uid: learn.wwl.monitor-ai-services.badge
