@@ -52663,6 +52663,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-manage-ai-services/6-knowledge-check.md",
       "redirect_url": "/training/modules/prepare-azure-ai-development/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-manage-ai-services/7-summary.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
     }
   ]
 }
