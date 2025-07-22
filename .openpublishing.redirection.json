@@ -52753,6 +52753,11 @@
       "source_path": "learn-pr/wwl-data-ai/monitor-ai-services/8-summary.md",
       "redirect_url": "/azure/azure-monitor/platform/monitor-azure-resource",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-ai-services/4-view-metrics.md",
+      "redirect_url": "/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
     }
   ]
 }
