@@ -4,22 +4,12 @@ By now, you've acquired the knowledge and insights needed to make informed decis
 
 ## Learn more
 
-- [FinOps review assessment](/assessments/ad1c0f6b-396b-44a4-924b-7a4c778a13d3/)
+- [**FinOps review assessment**](/assessments/ad1c0f6b-396b-44a4-924b-7a4c778a13d3/):  Use FinOps guidance to assess your organization's capability gaps. Get recommendations for maximizing cloud business value using FinOps best practices.
 
-Use FinOps guidance to assess your organization's capability gaps. Get recommendations for maximizing cloud business value using FinOps best practices.
+- [**FinOps interactive guides**](https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure): Gain hands-on experience with Microsoft solutions that enable various FinOps capabilities and best practices.
 
-- [FinOps interactive guides](https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure)
+- [**FinOps e-book**](https://info.microsoft.com/ww-landing-finops-with-azure-bringing-finops-to-life-through-organizational-and-cultural-alignment.html):  This e-book guides you through the FinOps principles to highlight Microsoft solutions that can support your cloud journey.
 
-Gain hands-on experience with Microsoft solutions that enable various FinOps capabilities and best practices.
+- [**FinOps documentation**](/azure/cost-management-billing/finops/):  Find technical documentation and guidance to help make informed decisions and follow FinOps best practices.
 
-- [FinOps e-book](https://info.microsoft.com/ww-landing-finops-with-azure-bringing-finops-to-life-through-organizational-and-cultural-alignment.html)
-
-This e-book guides you through the FinOps principles to highlight Microsoft solutions that can support your cloud journey.
-
-- [FinOps documentation](/azure/cost-management-billing/finops/)
-
-Find technical documentation and guidance to help make informed decisions and follow FinOps best practices.
-
-- [FinOps on Azure](https://azure.microsoft.com/solutions/finops/)
-
-Explore the range of Microsoft products and services designed to bolster your efforts in implementing FinOps best practices.
+- [**FinOps on Azure**](https://azure.microsoft.com/solutions/finops/):  Explore the range of Microsoft products and services designed to bolster your efforts in implementing FinOps best practices.
