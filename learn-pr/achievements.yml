@@ -6290,3 +6290,8 @@ achievements:
   title: Create and consume Azure AI services
   summary: Azure AI services enable developers to easily add AI capabilities into their applications. Learn how to create and consume these services.
   iconUrl: /training/achievements/create-and-manage-cognitive-services.svg
+- uid: learn.wwl.investigate-container-for-use-with-ai-services.badge
+  type: badge
+  title: Deploy Azure AI services in containers
+  summary: Learn about Container support in Azure AI services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
+  iconUrl: /training/achievements/investigate-container-for-use-with-cognitive-services.svg
