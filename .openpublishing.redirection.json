@@ -52718,6 +52718,11 @@
       "source_path": "learn-pr/wwl-data-ai/monitor-ai-services/index.md",
       "redirect_url": "/azure/azure-monitor/platform/monitor-azure-resource",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-ai-services/3-create-alerts.md",
+      "redirect_url": "/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
     }
   ]
 }
