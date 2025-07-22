@@ -52638,6 +52638,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-manage-ai-services/index.md",
       "redirect_url": "/training/modules/prepare-azure-ai-development/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-manage-ai-services/2-create-ai-service-resource.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
     }
   ]
 }
