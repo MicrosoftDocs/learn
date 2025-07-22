@@ -52738,6 +52738,11 @@
       "source_path": "learn-pr/wwl-data-ai/monitor-ai-services/1-introduction.md",
       "redirect_url": "/azure/azure-monitor/platform/monitor-azure-resource",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-ai-services/7-knowledge-check.md",
+      "redirect_url": "/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
     }
   ]
 }
