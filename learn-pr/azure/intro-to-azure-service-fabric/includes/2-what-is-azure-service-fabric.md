@@ -2,7 +2,7 @@ Let's start with a few definitions and a quick tour through Azure Service Fabric
 
 ## What is a container?
 
-A *container* is an atomic unit of software that wraps an application and all of its dependencies, such as libraries and configuration files, into its own isolated environment that includes everything needed to run the software in that environment. A container runs directly on top of the kernel and has an isolated view of the file system and other resources. The application inside the container has no knowledge of any other applications or processes outside of its container.
+A *container* is an atomic unit of software that wraps an application and all of its dependencies into its own isolated environment that includes everything needed to run the software in that environment. A container runs directly on top of the kernel and has an isolated view of the file system and other resources. The application inside the container has no knowledge of any other applications or processes outside of its container.
 
 ### Why use containers?
 
@@ -48,7 +48,7 @@ The microservice model provides the following benefits:
 
 A *stateless* service is one where each request and reply can be understood in isolation. You can imagine a simplistic calculator service, where you send a calculation to be performed (2+2, for example) and receive a single answer (4). If you want to perform another calculation on that result (4 x 2, for example), you would manually send a request to compute 4 x 2 and receive 8. However, the service wouldn't be aware you were using the initial calculation's result.
 
-A *stateful* service is one where each request and reply fit into a history of transactions that the service has knowledge of and can reference. Let's use the calculator service example again, but with a stateful version this time. You request the calculation 2+2 to be performed, and you receive 4. This time, you request the service to take the previous result and multiply by 2 (let's say the syntax looks like Answer x 2). You receive 8 as you did in the first example. However, this time, the calculator service had knowledge that the result of the previous transaction (Answer) was 4.
+A *stateful* service is one where each request and reply fit into a history of transactions that the service has knowledge of and can reference. Let's use the calculator service example again, but with a stateful version this time. You request the calculation 2+2 to be performed, and you receive 4. This time, you request the service to take the previous result and multiply by 2 (let's say the syntax looks like Answer x 2). The result is 8 as it was in the first example. However, this time, the calculator service had knowledge that the result of the previous transaction (Answer) was 4.
 
 ### Why use stateless and stateful services?
 
@@ -60,7 +60,7 @@ With microservice architecture, you can mix stateless and stateful services toge
 
 ## What is Azure Service Fabric?
 
-Azure Service Fabric manages your distributed computing system. It makes it simple to deploy and manage containerized applications, implement microservice architecture, and make use of robust stateful services in addition to stateless ones. Service Fabric offers development and operations tooling, support for various programming models, container orchestration, cluster health and monitoring, automatic scaling, and more.
+Azure Service Fabric manages your distributed computing system. It makes it simple to deploy and manage containerized applications, implement microservice architecture, and make use of robust stateful services in addition to stateless ones. Service Fabric offers development and operations tooling, support for various programming models, container orchestration, cluster health and monitoring, and automatic scaling.
 
 :::image type="content" source="../media/2-service-fabric-overview.png" alt-text="Diagram that shows the scope of Azure Service Fabric, including orchestration, programming models, automatic scaling, and more.":::
 
