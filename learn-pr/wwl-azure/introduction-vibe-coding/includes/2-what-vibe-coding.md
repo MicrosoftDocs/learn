@@ -38,7 +38,7 @@ Vibe coding is being adopted in professional software development environments f
 
     Vibe coding can be used to refactor existing codebases by describing the desired changes in natural language. The AI tool generates the necessary code modifications, allowing developers to implement code or UI/UX improvements without manually rewriting large portions of code.
 
-Other agentic tasks include: workflows and prompt-driven automation, generating project documentation, and converting language or framework.
+Other agentic tasks include: Workflows and prompt-driven automation, generating project documentation, and converting language or framework.
 
 > [!NOTE]
 > Vibe coding doesn't replace the need for experienced developers. While it can significantly enhance productivity and lower the barrier to entry for software creation, it introduces new challenges that require expert oversight, especially in professional and production-grade environments.
@@ -63,7 +63,7 @@ AI-generated code often requires refinement. It may introduce technical debt, vi
 
 Moreover, while AI excels at generating snippets and scaffolding, it struggles with designing complex systems, managing state and concurrency, and integrating across services and APIs. These tasks demand deep domain knowledge and systems thinking—skills that only seasoned developers bring to the table.
 
-Debugging and maintaining AI-generated code also remains a human responsibility. When something breaks—or worse, silently fails—developers must trace through unfamiliar logic, identify root causes, and apply fixes that preserve system integrity. This is especially critical in regulated industries or mission-critical systems where reliability and traceability are nonnegotiable.
+Debugging and maintaining AI-generated code also remains a human responsibility. When something breaks—or worse, silently fails—developers must trace through unfamiliar logic, identify root causes, and apply fixes that preserve system integrity. This is especially critical in regulated industries or mission-critical systems where reliability and traceability are non-negotiable.
 
 Vibe coding also requires guardrails. Without experienced oversight, AI-generated code can introduce security vulnerabilities, lead to bloated or inconsistent codebases, and erode quality standards.
 

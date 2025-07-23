@@ -13,9 +13,9 @@ A vibe coding approach is well-suited to projects where requirements are likely 
 
 Vibe coding follows a structured yet flexible three-phase approach that takes you from initial concept to fully functional application. Each phase builds upon the previous one, allowing for continuous refinement and improvement.
 
-- Phase 1: Envision and plan your project
-- Phase 2: Develop an initial prototype
-- Phase 3: Iterative development of app features
+- Phase 1: Envision and plan your project.
+- Phase 2: Develop an initial prototype.
+- Phase 3: Iterative development of app features.
 
 The time devoted to each phase can vary based on project complexity, team size, and specific requirements. However, the iterative nature of vibe coding means that these phases often overlap, allowing for simultaneous planning and development.
 
@@ -95,7 +95,7 @@ One of the key advantages of vibe coding is its ability to support and sustain d
 **Incremental progress**: Each iteration builds naturally on the previous one, creating a sense of momentum and accomplishment that reinforces the flow state.
 
 > [!TIP]
-> To maximize flow state benefits: work in focused time blocks, minimize external interruptions, and trust the iterative process rather than trying to perfect each step before moving forward.
+> To maximize flow state benefits: Work in focused time blocks, minimize external interruptions, and trust the iterative process rather than trying to perfect each step before moving forward.
 
 ## Vibe coding for business-driven project scenarios
 

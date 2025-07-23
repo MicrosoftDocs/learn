@@ -34,7 +34,7 @@ The function should error if the input is not a positive integer.
 
 Examples are one of the most effective ways to communicate your intent to Copilot. You can provide example input data, expected outputs, and even example implementations to guide the AI's understanding.
 
-**Example:**
+**Example**:
 
 ```text
 Write a function that finds all dates in a string and returns them in an array. Dates can be formatted like:
@@ -58,7 +58,7 @@ Expected return: ["11/14/2023", "12-1-23"]
 
 When facing a complex or large task, decompose it into smaller, manageable components. This approach leads to better results and makes it easier to debug and refine individual pieces.
 
-**Example:** Instead of asking Copilot to generate a complete word search puzzle, break it down:
+**Example**: Instead of asking Copilot to generate a complete word search puzzle, break it down:
 
 1. `Write a function to generate a 10 by 10 grid of letters`
 2. `Write a function to find all words in a grid of letters, given a list of valid words`
@@ -69,18 +69,18 @@ When facing a complex or large task, decompose it into smaller, manageable compo
 
 Avoid vague references and ambiguous terms that could be interpreted multiple ways. Be explicit about what you're referring to and what you want Copilot to do.
 
-**Poor examples:**
+**Poor examples**:
 
 - "What does this do?" (unclear what "this" refers to).
 - "Fix the bug" (doesn't specify which bug or how to fix it).
 
-**Better examples:**
+**Better examples**:
 
-- "What does the createUser function do?".
-- "What does the code in your last response do?".
-- "Fix the validation error in the email input field".
+- "What does the createUser function do?"
+- "What does the code in your last response do?"
+- "Fix the validation error in the email input field."
 
-**Library considerations:**
+**Library considerations**:
 
 - If using an uncommon library, describe its purpose.
 - For specific libraries, include import statements or specify which library you want to use.
@@ -89,13 +89,13 @@ Avoid vague references and ambiguous terms that could be interpreted multiple wa
 
 Help Copilot understand your project structure and intentions by managing your development environment effectively.
 
-**In your IDE:**
+**In your IDE**:
 
 - Open relevant files and close unrelated ones.
 - Highlight specific code sections you want Copilot to reference.
 - Use chat participants like `@workspace` in Visual Studio Code or `@project` in JetBrains IDEs.
 
-**In Copilot Chat:**
+**In Copilot Chat**:
 
 - Reference specific files or code blocks.
 - Attach relevant documentation or specifications.
@@ -105,7 +105,7 @@ Help Copilot understand your project structure and intentions by managing your d
 
 Don't expect perfect results on the first try. Copilot works best when you engage in an iterative conversation, refining your requests based on the responses you receive.
 
-**Strategies for iteration:**
+**Strategies for iteration**:
 
 - If using inline suggestions, delete and try again with a modified prompt.
 - In Copilot Chat, reference previous responses and ask for specific modifications.
@@ -115,7 +115,7 @@ Don't expect perfect results on the first try. Copilot works best when you engag
 
 Copilot Chat uses conversation history to understand context, so manage this history strategically.
 
-**Best practices:**
+**Best practices**:
 
 - Start new threads for different tasks or projects.
 - Delete irrelevant or unsuccessful requests that might confuse future responses.
@@ -125,7 +125,7 @@ Copilot Chat uses conversation history to understand context, so manage this his
 
 The quality of your existing codebase affects Copilot's ability to generate appropriate suggestions. Maintain high standards in your code to get better AI assistance.
 
-**Code quality factors:**
+**Code quality factors**:
 
 - Use consistent code style and patterns.
 - Choose descriptive names for variables and functions.
@@ -150,7 +150,7 @@ If GitHub Copilot’s initial response doesn't align with your expectations, you
 - Add context to the chat that clarifies your goals or requirements.
 - Use Copilot Chat to ask follow-up questions that build on previous responses.
 
-### Evaluating and Responding to Copilot's Suggestions
+### Evaluating and responding to Copilot's suggestions
 
 Understanding how to assess Copilot's suggestions is crucial for effective vibe coding. Not every suggestion will be perfect, and knowing when to accept, reject, or modify responses will significantly improve your development experience.
 
@@ -164,7 +164,7 @@ Accept Copilot's suggestions when they:
 - Include proper error handling: Edge cases and potential failures are addressed.
 - Match your project's style: Consistent with existing codebase patterns and conventions.
 
-**Example of a good suggestion to accept:**
+**Example of a good suggestion to accept**:
 
 *Prompt:* "Create a function to validate email addresses"
 
@@ -193,7 +193,7 @@ Reject Copilot's suggestions when they:
 - Lack error handling: Don't account for potential failure scenarios.
 - Violate coding standards: Don't follow your team's established practices.
 
-**Example of a suggestion to reject:**
+**Example of a suggestion to reject**:
 
 *Prompt:* "Create a secure password validation function"
 
@@ -217,7 +217,7 @@ Modify Copilot's suggestions when they:
 - Require different variable names: Logic is correct but naming could be improved.
 - Need performance optimizations: Functional but could be more efficient.
 
-**Example of a suggestion to modify:**
+**Example of a suggestion to modify**:
 
 *Copilot suggests:*
 
@@ -243,19 +243,19 @@ function calculateTotal(items) {
 
 When a suggestion isn't quite right, try these approaches:
 
-**Refine your prompt:**
+**Refine your prompt**:
 
 - Add more specific requirements.
 - Include examples of expected input/output.
 - Specify the programming style or framework you're using.
 
-**Request modifications:**
+**Request modifications**:
 
 - "Make the previous function more robust with error handling."
 - "Simplify the code you just wrote."
 - "Add TypeScript types to the previous function."
 
-**Build incrementally:**
+**Build incrementally**:
 
 - Start with a basic version and ask for enhancements.
 - Add features one at a time rather than requesting everything at once.

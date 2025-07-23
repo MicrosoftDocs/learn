@@ -14,7 +14,7 @@ Effective vibe coding begins with structured planning that transforms abstract i
 
 For a vibe coding approach, you can construct a simple product vision by working through a series of targeted questions to define your application's purpose and boundaries.
 
-**Goal:** Define a simple product vision through AI collaboration.
+**Goal**: Define a simple product vision through AI collaboration.
 
 Start by articulating the high-level vision for your product. This vision should describe the problem you're solving, your target users, and the core value your product delivers.
 
@@ -47,7 +47,7 @@ A product requirements document (PRD) serves as your project's blueprint, provid
 > [!NOTE]
 > The sections and level of detail included in your PRD generally depend on the size and scope of your project. Businesses often adopt a standardized PRD template to ensure consistency across projects, but you can also create a custom document that suits your needs.
 
-**Goal:** Translate your product vision into a structured Product Requirements Document (PRD) that guides development and AI collaboration.
+**Goal**: Translate your product vision into a structured Product Requirements Document (PRD) that guides development and AI collaboration.
 
 A PRD outlines what your application will do, how it will behave, and what constraints it must meet. It serves as a blueprint for both human developers and AI tools.
 
@@ -79,7 +79,7 @@ Organize features into three categories to maintain focus:
 
 Product planning should include a description of the user interface and user experience. Visual elements are often the best way to communicate these requirements.
 
-**Goal:** Define the layout, navigation, and user flow of your application using wireframe diagrams and other visual aids.
+**Goal**: Define the layout, navigation, and user flow of your application using wireframe diagrams and other visual aids.
 
 Wireframe diagrams provide a visual representation your application's structure and functionality. They help bridge the gap between written requirements and implementation.
 
@@ -90,7 +90,7 @@ You can use GitHub Copilot Agent or other AI tools to generate wireframe diagram
 - **Interface specifications**: Key interactions, data displays, and input methods.
 
 > [!TIP]
-> You can use tools like M365 Copilot, GitHub Copilot Agent, Figma, or draw.io to create wireframe diagrams.
+> You can use tools like Microsoft 365 Copilot, GitHub Copilot Agent, Figma, or draw.io to create wireframe diagrams.
 
 ### Example user flow
 
@@ -113,7 +113,7 @@ Coding standards and guidelines are used to define code quality expectations, en
 
 Selecting an appropriate list of coding standards and guidelines helps ensure your AI-generated code meets your expectations.
 
-**Goal:** Define coding standards that ensure quality, consistency, and security in AI-generated code.
+**Goal**: Define coding standards that ensure quality, consistency, and security in AI-generated code.
 
 Use GitHub Copilot to generate coding guidelines tailored to your project. Start by describing your goals (e.g., clean code, accessibility, security), and ask Copilot to suggest standards in the following areas:
 

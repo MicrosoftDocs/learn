@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.introduction-vibe-coding.identify-product-user-interface-requirements
+uid: learn.wwl.introduction-vibe-coding.identify-product-requirements-guidelines
 title: Identify product requirements and coding guidelines
 metadata:
   title: Identify product requirements and coding guidelines
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-identify-product-user-interface-requirements.md)]
+  [!include[](includes/5-identify-product-requirements-guidelines.md)]

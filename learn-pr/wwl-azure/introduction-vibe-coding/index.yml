@@ -48,10 +48,10 @@ subjects:
 - productivity
 units:
 - learn.wwl.introduction-vibe-coding.introduction
-- learn.wwl.introduction-vibe-coding.what-is-vibe-coding
+- learn.wwl.introduction-vibe-coding.what-vibe-coding
 - learn.wwl.introduction-vibe-coding.examine-vibe-coding-process
 - learn.wwl.introduction-vibe-coding.create-effective-prompts-github-copilot
-- learn.wwl.introduction-vibe-coding.identify-product-user-interface-requirements
+- learn.wwl.introduction-vibe-coding.identify-product-requirements-guidelines
 - learn.wwl.introduction-vibe-coding.customize-github-copilot-responses
 - learn.wwl.introduction-vibe-coding.exercise-get-started-vibe-coding-github-copilot
 - learn.wwl.introduction-vibe-coding.knowledge-check
