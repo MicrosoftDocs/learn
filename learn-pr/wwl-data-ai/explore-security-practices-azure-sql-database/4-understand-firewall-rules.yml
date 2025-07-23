@@ -2,8 +2,6 @@
 uid: learn-wwl.explore-security-practices-azure-sql-database.understand-firewall-rules
 title: Understand firewall rules
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand firewall rules
   description: "Learn how firewall rules work in Azure SQL Database."
   ms.date: 09/24/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-understand-firewall-rules.md)]
+  [!include[](includes/4-understand-firewall-rules.md)]

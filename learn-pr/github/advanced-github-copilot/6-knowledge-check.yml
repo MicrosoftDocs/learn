@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.advanced-github-copilot.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Review advanced features in GitHub Copilot.
   author: abrilurena
-  ms.author: abrilu
+  ms.author: orthomas
   ms.date: 09/30/2024
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

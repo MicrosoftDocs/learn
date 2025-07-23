@@ -2,8 +2,6 @@
 uid: learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.objective-domains
 title: Objective domains
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Objective domains
   description: Objective domains
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-objective-domains.md)]
-
+

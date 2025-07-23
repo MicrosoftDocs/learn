@@ -2,14 +2,11 @@
 uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 05/02/2024
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: jialuogan
+  author: silenceJialuo
+  ms.author: jialuogan
   ms.topic: unit
 durationInMinutes: 2
 content: |

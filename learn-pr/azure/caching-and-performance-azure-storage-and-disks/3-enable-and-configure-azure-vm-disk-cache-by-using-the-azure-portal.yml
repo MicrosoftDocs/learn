@@ -2,11 +2,9 @@
 uid: learn.caching-and-performance-azure-storage-and-disks.3-enable-and-configure-azure-vm-disk-cache-by-using-the-azure-portal
 title: Enable and configure Azure VM disk cache with the Azure portal
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable and configure Azure VM disk cache with the Azure portal
   description: Enable and configure Azure VM disk cache with the Azure portal
-  ms.date: 12/28/2023
+  ms.date: 07/17/2025
   author: roygara
   ms.author: rogarana
   ms.topic: unit

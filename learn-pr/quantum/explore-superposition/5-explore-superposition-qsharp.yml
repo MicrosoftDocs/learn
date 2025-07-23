@@ -2,8 +2,6 @@
 uid: learn.quantum.explore-superposition.superposition-qsharp
 title: Exercise - Create different superposition states with Q#
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Explore Superposition with Q#
   description: Learn how to create superposition states and analyze them using Q#.
   ms.date: 01/22/2025
@@ -14,4 +12,4 @@ metadata:
   ai-usage: ai-assisted
 durationInMinutes: 12
 content: |
-  [!include[](includes/5-explore-superposition-qsharp.md)]
+  [!include[](includes/5-explore-superposition-qsharp.md)]

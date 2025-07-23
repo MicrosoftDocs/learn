@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-solutions-benefits.benefits
 title: Benefits of using Azure NetApp Files
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Benefits of using Azure NetApp Files
   description: Learn benefits of Azure NetApp Files for different workload types. 
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-benefits.md)]
+  [!include[](includes/2-benefits.md)]

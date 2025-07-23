@@ -1,5 +1,7 @@
 Azure Subscriptions are logical containers that serve as units of management and scale and billing boundaries. Limits and quotas can be applied, and each organization can use subscriptions to manage costs and resources by group.​ 
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0261a4cd-5b40-4b47-8d20-6582443cac14]
+
 ### Things to know about subscriptions
 
 To use Azure, you must have an Azure subscription. A subscription provides you with a logical container to create and pay for Azure products and services. There are [several types of subscriptions](https://azure.microsoft.com/support/legal/offer-details/), such as Enterprise Agreement and Pay-As-You-Go. 

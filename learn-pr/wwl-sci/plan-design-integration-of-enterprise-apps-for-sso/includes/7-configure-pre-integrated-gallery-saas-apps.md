@@ -8,9 +8,10 @@ To edit the app properties:
 2. In the **Manage** section, select **Properties** to open the **Properties** pane for editing.
 3. Take a moment to understand the options available. The options available will depend on how the app is integrated with Microsoft Entra ID. For example, an app that uses SAML-based SSO will have fields such as *User access URL* whereas an app that uses OIDC-based SSO won't. Apps added through **Microsoft Entra ID - App registrations** are by default OIDC-based apps, while apps added **through Microsoft Entra ID - Enterprise applications** might use any SSO standard. All apps will have fields for configuring when an app appears and can be used. These fields are:
     
-   -  **Enabled for users to sign in?** determines whether users assigned to the application can sign in.
-   -  **User assignment required?** determines whether users who aren't assigned to the application can sign in.
-   -  **Visible to users?** determines whether users assigned to an app can see it in [My Apps](https://myapps.microsoft.com/) and Microsoft 365 app launcher. (See the waffle menu in the upper-left corner of a Microsoft 365 website.)
+   - **Enabled for users to sign in?** determines whether users assigned to the application can sign in.
+   - **User assignment required?** determines whether users who aren't assigned to the application can sign in.
+   - **Visible to users?** determines whether users assigned to an app can see it in [My Apps](https://myapps.microsoft.com/) and Microsoft 365 app launcher. (See the waffle menu in the upper-left corner of a Microsoft 365 website.)
+
 4. When you're finished, select **Save**<br>
 
 ## Use a custom logo
@@ -33,4 +34,3 @@ You can use the notes field to add any information that is relevant for the mana
 3. Update the Notes field, select **Save**.
     
    :::image type="content" source="../media/notes-application.png" alt-text="Screenshot of the Properties screen that shows how to change the notes. These notes help your users know when and how to use the apps.":::
-    

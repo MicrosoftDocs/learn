@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-provision-environments.explore-azure-load-testing
 title: Explore Azure Load Testing
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Load Testing
   description: "Explore Azure Load Testing"
   ms.date: 05/06/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-explore-azure-load-testing.md)]
+  [!include[](includes/7-explore-azure-load-testing.md)]

@@ -1,23 +1,21 @@
 ## Lab scenario
 
-Your organization needs a new platform for its virtualized workloads. As the Azure Administrator you need to:
-+ Review and evaluate Azure Container Instances.
-+ Identify and test your app container by using Docker images. 
+Your organization has a web application that runs on a virtual machine in your on-premises data center. The organization wants to move all applications to the cloud but doesn’t want to have a large number of servers to manage. You decide to evaluate Azure Container Instances and Docker.
 
 ## Architecture diagram
 
 :::image type="content" source="../media/lab-09b.png" alt-text="Architecture diagram as explained in the text." border="false":::
 
-## Objectives
+## Job skills
 
-+ **Task 1**: Deploy an Azure Container Instances using a Docker image.
-    + Create a new container instance by using a [Linux image](https://github.com/Azure-Samples/aci-helloworld). 
-    + Configure a valid globally unique DNS host name. This host name is used to test the container.
-+ **Task 2**: Review the functionality of Azure Container Instances.
-    + Confirm the container instance is running.
-    + Verify that the Welcome to Azure Container Instances page is displayed.
++ Deploy an Azure Container Instance using a Docker image.
++ Test and verify deployment of an Azure Container Instance.
 
 > [!NOTE]
-> Select the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
+> Estimated time: 15 minutes.
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
-[![Screenshot of the simulation page.](../media/simulation-container-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator%20Exercise%2014?azure-portal=true)
+Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
+
+
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_09b-Implement_Azure_Container_Instances.html)

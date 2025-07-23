@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.azure-netapp-file-cost-optimization
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Optimize costs with Azure NetApp Files      
   description: This module looks at cost models and cost optimization features in Azure NetApp Files.    
@@ -39,4 +37,4 @@ units:
 - learn.azure.azure-netapp-files-cost-optimization.summary
 badge:
   uid: learn.azure.azure-netapp-files-cost-optimization.badge
-
+

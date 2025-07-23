@@ -2,8 +2,6 @@
 uid: learn.wwl.set-up-microsoft-defender-cloud.deploy-microsoft-defender-for-cloud
 title: Deploy Microsoft Defender for Cloud
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy Microsoft Defender for Cloud
   description: "Deploy Microsoft Defender for Cloud"
   ms.date: 04/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-deploy-microsoft-defender-for-cloud.md)]
+  [!include[](includes/5-deploy-microsoft-defender-for-cloud.md)]

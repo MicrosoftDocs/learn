@@ -3,8 +3,6 @@ uid: learn.azure.route-and-process-data-logic-apps.create-news-tracker
 title: Exercise - Create a news tracker with Azure Logic Apps
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create a news tracker with Azure Logic Apps
   description: Exercise - Create a news tracker with Azure Logic Apps
   ms.date: 09/25/2024
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-exercise-create-news-tracker.md)]
-
+

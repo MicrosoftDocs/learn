@@ -1,6 +1,6 @@
 In this section, you'll follow along with Andy and Mara as they plan a basic CD pipeline that runs on Azure Pipelines.
 
-When it's done, they'll demo it to the rest of the team. The pipeline will serve as a POC that they'll improve on and expand as they learn more and get feedback from Tim and Amita.
+When it's done, they'll demo it to the rest of the team. The pipeline will serve as a POC on which they'll improve and expand as they learn more and get feedback from Tim and Amita.
 
 ## What are the parts of a basic CD pipeline?
 
@@ -37,7 +37,7 @@ An artifact is deployed to an environment. Azure Pipelines makes it easy to depl
 
 In Azure Pipelines, the term environment has a second meaning. Here, an environment is an abstract representation of your deployment environment, such as a Kubernetes cluster, an App Service instance, or a virtual machine.
 
-An Azure Pipelines environment records the deployment history to help you identify the source of changes. By using Azure Pipelines environments, you can also define security checks and ways to control how an artifact is promoted from one stage of a pipeline to another. What an environment includes depends on what you want to do with the artifact. An environment where you want to test the artifact will probably be defined differently than one where you want to deploy the artifact for your end users.
+An Azure Pipelines environment records the deployment history to help you identify the source of changes. By using Azure Pipelines environments, you can also define security checks and ways to control how an artifact is promoted from one stage of a pipeline to another. What an environment includes depends on what you want to do with the artifact. An environment where you want to test the artifact is probably defined differently than one where you want to deploy the artifact for your end users.
 
 One way to define an Azure Pipelines environment is with a YAML file. Your YAML file includes an `environment` section, which specifies the Azure Pipelines environment, where you'll deploy your artifact.
 
@@ -83,7 +83,7 @@ After a bit of research, Andy and Mara come up with the general steps that allow
 1. Provide a way for Azure Pipelines to authenticate access to that environment.
 1. Use Azure Pipelines tasks to deploy the build artifact to that environment.
 
-**Mara:** According to our research, we need to create a _service connection_ to specify the target environment and authenticate access to it. After we define the service connection, it'll be available for all of our tasks to use. Then we need to use the built-in tasks [DownloadPipelineArtifact](/azure/devops/pipelines/tasks/utility/download-pipeline-artifact?azure-portal=true) to download the build artifact to the pipeline agent and [AzureWebApp](/azure/devops/pipelines/tasks/deploy/azure-rm-web-app?azure-portal=true) to deploy our application to Azure App Service.
+**Mara:** According to our research, we need to create a _service connection_ to specify the target environment and authenticate access to it. After we define the service connection, it'll be available for all of our tasks to use. Then we need to use the built-in tasks [DownloadPipelineArtifact@2](/azure/devops/pipelines/tasks/reference/download-pipeline-artifact-v2?azure-portal=true) to download the build artifact to the pipeline agent and [AzureWebApp@1](/azure/devops/pipelines/tasks/reference/azure-web-app-v1?azure-portal=true) to deploy our application to Azure App Service.
 
 ### What are jobs and strategies?
 

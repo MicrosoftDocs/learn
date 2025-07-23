@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning Path 8 Optimize model training in Azure Machine Learning
 
 Learning Path 8 Overview
@@ -30,3 +27,4 @@ Learning Path 8 Labs (optional)
 
 - Lab 8.1: [Perform hyperparameter tuning with a sweep job](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/09-Hyperparameter-tuning.html)
 - [Lab 8.2: Run pipelines in Azure Machine Learning](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/09-Run-pipelines.html)
+

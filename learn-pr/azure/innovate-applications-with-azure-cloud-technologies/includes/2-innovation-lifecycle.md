@@ -3,7 +3,7 @@ Tailwind Traders has questions about innovation that affect many other organizat
 - How do we increase the rate of change without affecting the running business?
 - How do we decide where to innovate and what changes to implement to maximize the business return of those innovations?
 
-The answer to both questions is: Tailwind Traders needs to embrace change as part of its organizational culture. One reason why change-averse organizations often have change-related outages is that those changes are too large and impactful. The changes are hard to test in controlled and realistic environments.
+The answer to both questions, Tailwind Traders needs to embrace change as part of its organizational culture. One reason why change-averse organizations often have change-related outages is that those changes are too large and impactful. The changes are hard to test in controlled and realistic environments.
 
 If processes are established to introduce changes frequently, those changes are smaller in size and risk. However, this process doesn't just involve adopting certain tools or technologies. It requires a culture that fosters change and accepts failures.
 

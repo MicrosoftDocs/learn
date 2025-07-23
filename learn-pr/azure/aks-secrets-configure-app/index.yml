@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.aks-secrets-configure-app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage application configuration and secrets in Azure Kubernetes Service (AKS)
   description: Learn how to securely store application secrets and configurations using native Kubernetes resources in Azure Kubernetes Service (AKS).
   manager: rayoflores
@@ -46,4 +44,4 @@ units:
 - learn.aks-secrets-configure-app.4-concept-configmaps
 - learn.aks-secrets-configure-app.5-exercise-create-configmaps
 - learn.aks-secrets-configure-app.6-summary
-
+

@@ -2,8 +2,6 @@
 uid: learn.quantum.estimate-resources-quantum-algorithms.resource-estimation-in-quantum-computing
 title: Why is resource estimation important?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Why is resource estimation important in quantum computing?
   description: Learn what resource estimation is and why it is important in quantum computing.
   ms.date: 01/22/2025
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-resource-estimation-in-quantum-computing.md)]
-
+

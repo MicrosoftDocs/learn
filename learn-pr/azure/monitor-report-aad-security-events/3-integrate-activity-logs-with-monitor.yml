@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.3-integrate-activity-logs-with-monitor
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Integrate logs with a Log Analytics workspace
   description: Integrate Microsoft Entra logs with a Log Analytics workspace.
   ms.date: 03/01/2023
   author: softchris
   ms.author: chnoring
   ms.topic: unit
+  ms.custom: sfi-ga-nochange
 title: Integrate logs with a Log Analytics workspace
 durationInMinutes: 7
 content: |
@@ -38,4 +37,4 @@ quiz:
     - content: The `top` query command
       isCorrect: false
       explanation: The `top` query command returns the top *n* rows of the result set.
-
+

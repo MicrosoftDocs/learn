@@ -2,8 +2,6 @@
 uid: learn.wwl.integrate-azure-pipelines.understand-pipeline-structure
 title: Understand the pipeline structure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand the pipeline structure
   description: "Understand the pipeline structure"
   ms.date: 12/12/2024
@@ -14,4 +12,4 @@ metadata:
     - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-understand-pipeline-structure.md)]
+  [!include[](includes/3-understand-pipeline-structure.md)]

@@ -2,12 +2,10 @@
 uid: learn.azure.access-data-azure-blob-storage-multiple-protocols.1-introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: This is an introduction to the module.
-  ms.date: 11/07/2023
+  ms.date: 06/26/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit

@@ -2,8 +2,6 @@
 uid: learn.wwl.security-monitoring-automation-solutions.enable-analytics-rules-microsoft-sentinel
 title: Enable analytics rules in Microsoft Sentinel
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable analytics rules in Microsoft Sentinel
   description: "Enable analytics rules in Microsoft Sentinel"
   ms.date: 02/03/2025

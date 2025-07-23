@@ -696,6 +696,19 @@
                 "dest": "modules"
             },
             {
+                "src": "device-partner-university",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "files": [
                     "**/*.md",
                     "**/*.yml"
@@ -826,6 +839,19 @@
             },
             {
                 "src": "sports-machine-learning",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.txt",
+                    "**/*.ipynb"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "device-partner-university",
                 "files": [
                     "**/*.gif",
                     "**/*.png",

@@ -2,8 +2,6 @@
 uid: learn.wwl.microsoft-azure-data-engineering-academic-programs.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 06/02/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/17-summary.md)]
+  [!include[](includes/17-summary.md)]

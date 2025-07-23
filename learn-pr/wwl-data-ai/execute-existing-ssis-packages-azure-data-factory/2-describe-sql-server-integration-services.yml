@@ -2,8 +2,6 @@
 uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory.describe-sql-server-integration-services
 title: Describe SQL Server integration services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe SQL Server integration services
   description: "Describe SQL Server integration services"
   ms.date: 06/07/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-describe-sql-server-integration-services.md)]
+  [!include[](includes/2-describe-sql-server-integration-services.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.train-evaluate-deep-learn-models.deep-neural-network-concepts
 title: Deep neural network concepts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deep neural network concepts
   description: "Deep neural network concepts"
   ms.date: 07/10/2024
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-deep-neural-network-concepts.md)]
+  [!include[](includes/2-deep-neural-network-concepts.md)]

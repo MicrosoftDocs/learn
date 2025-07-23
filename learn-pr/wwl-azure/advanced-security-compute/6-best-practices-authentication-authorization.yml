@@ -2,8 +2,6 @@
 uid: learn.wwl.advanced-security-compute.best-practices-authentication-authorization
 title: Configure authentication for Azure Kubernetes Service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure authentication for Azure Kubernetes Service
   description: "Configure authentication for Azure Kubernetes Service"
   ms.date: 06/10/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-best-practices-authentication-authorization.md)]
+  [!include[](includes/6-best-practices-authentication-authorization.md)]

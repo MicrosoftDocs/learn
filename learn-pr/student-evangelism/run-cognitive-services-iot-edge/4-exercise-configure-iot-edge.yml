@@ -2,16 +2,17 @@
 uid: learn.oxford.run-cognitive-services-iot-edge.exercise-configure-iot-edge
 title: Exercise - Configure IoT Edge to IoT Hub	
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Configure IoT Edge to IoT Hub	
   description: In this section, there's an exercise and it guides the learner in how to set up communication between IoT Hub and IoT Edge	
   ms.date: 07/22/2024
   author: PatAltimore
   ms.author: patricka
   ms.topic: unit
-  ms.custom: team=nextgen, devx-track-azurecli
+  ms.custom:
+    - sfi-ropc-nochange
+    - devx-track-azurecli
+    - team=nextgen
 durationInMinutes: 12
 content: |
   [!include[](includes/4-exercise-configure-iot-edge.md)]
-
+

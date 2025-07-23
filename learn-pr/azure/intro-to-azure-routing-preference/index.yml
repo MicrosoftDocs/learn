@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-routing-preference
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure routing preference
   description: "Learn about routing preference in Azure and how to recognize scenarios where routing preference is applicable."
   ms.service: azure-virtual-network
@@ -43,4 +41,4 @@ units:
 - learn.intro-to-azure-routing-preference.summary
 badge:
   uid: learn.intro-to-azure-routing-preference.badge
-
+

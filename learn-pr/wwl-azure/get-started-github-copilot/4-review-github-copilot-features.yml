@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-github-copilot.review-github-copilot-features
+title: Review GitHub Copilot features
+metadata:
+  title: Review GitHub Copilot features
+  description: "Review GitHub Copilot features"
+  ms.date: 06/02/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  - ai-learning-hub
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-review-github-copilot-features.md)]

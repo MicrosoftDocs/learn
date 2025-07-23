@@ -2,8 +2,6 @@
 uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: This unit summarizes how to manage end-to-end deployment scenarios by using Bicep and Azure Pipelines.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
-
+

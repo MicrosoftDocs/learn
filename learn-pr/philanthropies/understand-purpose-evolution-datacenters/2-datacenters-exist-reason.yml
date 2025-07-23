@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.understand-purpose-evolution-datacenters.datacenters-exist-reason
+title: Why do datacenters exist?
+metadata:
+  title: Why do datacenters exist?
+  description: Learn about the reason for the existence of datacenters.
+  ms.date: 05/06/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+ [!include[](includes/2-datacenters-exist-reason.md)]

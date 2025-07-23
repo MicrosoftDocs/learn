@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.create-your-first-app-with-azure-maps.exercise-test-your-route-finding-app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   description: Test your app. Test the route options provided. Optionally, add your own locations.
   ms.date: 08/13/2024
   author: PeterTurcan
@@ -11,4 +9,4 @@ metadata:
 title:  Exercise - test your route finding app
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-exercise-test-your-route-finding-app.md)]
+  [!include[](includes/5-exercise-test-your-route-finding-app.md)]

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.continuous-deployment-for-machine-learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Continuous deployment for machine learning
   description: Learn about continuous development for machine learning, machine learning operations, and MLOps.
   author: wwlpublish
@@ -36,4 +34,4 @@ units:
 - learn.wwl.continuous-deployment-for-machine-learning.summary
 badge:
   uid: learn.wwl.continuous-deployment-for-machine-learning.badge
-
+

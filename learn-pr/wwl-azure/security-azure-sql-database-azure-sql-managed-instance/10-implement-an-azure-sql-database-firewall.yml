@@ -2,8 +2,6 @@
 uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.implement-an-azure-sql-database-firewall
 title: Implement an Azure SQL Database firewall
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement an Azure SQL Database firewall
   description: "Implement an Azure SQL Database firewall"
   ms.date: 02/24/2025

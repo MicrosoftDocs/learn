@@ -2,11 +2,9 @@
 uid: learn.introduction-azure-virtual-wan.2-what-is-azure-virtual-wan
 title: What is Azure Virtual WAN?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure Virtual WAN?
   description: Overview of Azure Virtual WAN and its features
-  ms.date: 12/06/2023
+  ms.date: 07/02/2025
   author: cherylmc
   ms.author: cherylmc
   ms.topic: unit

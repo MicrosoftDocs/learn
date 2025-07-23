@@ -15,4 +15,4 @@ Experiencing Digital Twins inside the Unity editor can be useful, but you can re
 * [Use the Start menu and mixed-reality home](/hololens/holographic-home#close-apps)
 * [MRTK Input Simulation Service](/windows/mixed-reality/mrtk-unity/features/input-simulation/input-simulation-service)
 * [Getting around HoloLens 2](/hololens/hololens2-basic-usage)
-* [Unity's Interface documentation](https://docs.unity3d.com/Manual/UsingTheEditor.html)
+* [Unity's Interface documentation](https://docs.unity3d.com/2023.2/Documentation/Manual/UsingTheEditor.html)

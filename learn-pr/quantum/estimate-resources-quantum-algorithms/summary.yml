@@ -2,8 +2,6 @@
 uid: learn.quantum.estimate-resources-quantum-algorithms.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary.
   ms.date: 01/22/2025
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/summary.md)]
-
+

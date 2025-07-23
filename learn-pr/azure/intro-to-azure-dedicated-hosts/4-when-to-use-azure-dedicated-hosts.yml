@@ -2,8 +2,6 @@
 uid: learn.introduction-to-azure-dedicated-hosts.when-to-use-azure-dedicated-hosts
 title: When to use Azure dedicated hosts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to use Azure dedicated hosts
   description: Learn when to use Azure dedicated hosts.
   ms.date: 06/1/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-when-to-use-azure-dedicated-hosts.md)]
-
+

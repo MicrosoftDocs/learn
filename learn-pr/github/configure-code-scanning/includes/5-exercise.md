@@ -23,4 +23,4 @@ When you've finished the exercise in GitHub, return here for:
 ​
 ​
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/skills/introduction-to-codeql)
+> [Start the exercise on GitHub](https://github.com/skills-dev/introduction-to-codeql)

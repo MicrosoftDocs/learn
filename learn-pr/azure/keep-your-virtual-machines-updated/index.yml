@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.keep-your-virtual-machines-updated
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Keep your virtual machines updated
   description: Learn to use Azure Update Management to update virtual machines, verify agent connectivity, and use Azure Log Analytics in your cloud environment.
   manager: akashdubey
@@ -41,4 +39,4 @@ units:
 - learn.keep-your-virtual-machines-updated.7-summary
 badge:
   uid: learn.keep-your-virtual-machines-updated.badge
-
+

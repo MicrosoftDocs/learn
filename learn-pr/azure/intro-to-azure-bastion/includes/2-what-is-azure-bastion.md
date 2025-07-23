@@ -4,7 +4,7 @@ It's vital to be able to securely administer and manage remote hosted VMs. To be
 
 Secure remote management is the ability to connect to a remote resource without exposing that resource to security risks. This type of connection can sometimes be challenging, especially if the resource is being accessed across the internet.
 
-When administrators connect to remote VMs, they typically use either RDP or SSH to achieve their administrative goals. The problem is, to connect to a hosted VM, you must connect to its public IP address. However, exposing the IP ports used by RDP and SSH (**3389** and **22**) to the internet is highly undesirable, because it presents significant security risks.
+When administrators connect to remote VMs, they typically use either RDP or SSH to achieve their administrative goals. The problem is that to connect to a hosted VM, you must connect to its public IP address. However, exposing the IP ports used by RDP and SSH (**3389** and **22**) to the internet is highly undesirable because it presents significant security risks.
 
 ## Azure Bastion definition
 
@@ -25,7 +25,7 @@ The following table describes the features that are available after you deploy A
 |No hassle of managing Network Security Groups (NSGs)| You don't need to apply any NSGs to the Azure Bastion subnet. Because Azure Bastion connects to your virtual machines over private IP, you can configure your NSGs to allow RDP/SSH from Azure Bastion only. This removes the hassle of managing NSGs each time you need to securely connect to your virtual machines.|
 |No need to manage a separate bastion host on a VM |Azure Bastion is a fully managed platform PaaS service from Azure that is hardened internally to provide you secure RDP/SSH connectivity.|
 |Protection against port scanning|Your VMs are protected against port scanning by rogue and malicious users because you don't need to expose the VMs to the internet.|
-|Hardening in one place only|Azure Bastion sits at the perimeter of your virtual network, so you don’t need to worry about hardening each of the VMs in your virtual network.|
+|Hardening in one place only|Azure Bastion sits at the perimeter of your virtual network, so you don't need to worry about hardening each of the VMs in your virtual network.|
 |Protection against zero-day exploits |The Azure platform protects against zero-day exploits by keeping the Azure Bastion hardened and always up to date for you.|
 
 ## How to avoid exposing remote management ports
@@ -33,7 +33,7 @@ The following table describes the features that are available after you deploy A
 By implementing Azure Bastion, you can manage the Azure VMs within a configured Azure virtual network by using either RDP or SSH, without needing to expose those management ports to the public internet. By using Azure Bastion, you can:
 
 - Connect easily to your Azure VMs. Connect your RDP and SSH sessions directly in the Azure portal.
-- Avoid exposing management ports to the internet. Sign in to your Azure VMs and avoid public internet exposure by using SSH and RDP with private IP addresses only.
+- Avoid exposing management ports to the internet. Sign in to your Azure VMs, and avoid public internet exposure by using SSH and RDP with private IP addresses only.
 - Avoid extensive reconfiguration of your existing network infrastructure. Integrate and traverse existing firewalls and security perimeters by using a modern HTML5-based web client over TLS on port **443**.
 - Simplify sign in. Use your SSH keys for authentication when signing in to your Azure VMs.
 

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.capture-application-logs-app-service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Capture Web Application Logs with App Service Diagnostics Logging
   description: Learn about how to capture trace output from your Azure web apps. View a live log stream and download logs files for offline analysis.
   ms.date: 11/12/2024
@@ -43,4 +41,4 @@ units:
 - learn.azure.capture-application-logs-app-service.8-summary
 badge:
   uid: learn.azure.capture-application-logs-app-service.badge
-
+

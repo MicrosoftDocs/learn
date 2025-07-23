@@ -2,8 +2,6 @@
 uid: learn.manage-azure-private-5g-core.system-upgrade
 title: System upgrade
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: System upgrade
   description: Describes the tasks for upgrading an Azure Private 5G Core instance and its underlying platforms.
   ms.date: 07/29/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-system-upgrade.md)]
+  [!include[](includes/5-system-upgrade.md)]

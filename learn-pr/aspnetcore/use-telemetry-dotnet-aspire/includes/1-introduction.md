@@ -1,8 +1,8 @@
-Cloud-native applications consist of independent microservices that may execute as a distributed set of containers. It can be difficult to study the behavior of the entire application to diagnose bugs or performance issues. You should consider early how to record telemetry data. .NET Aspire provides a dashboard that displays telemetry in a developer focused view.
-   
+Cloud-native applications consist of independent microservices that may execute as a distributed set of containers. It can be difficult to study the entire application's behavior to diagnose bugs or performance issues. You should consider early how to record telemetry data. .NET Aspire provides a dashboard that displays telemetry in a developer focused view.
+
 Imagine you're an employee at an outdoor equipment retailer. You've started to build your new cloud-native app and you've integrated .NET Aspire to manage and connect your microservices. Now, you want to study the performance of the microservices and obtain details when bugs arise in your code.
 
-In this module, you'll see how .NET Aspire makes it easy to both record and examine telemetry in a cloud-native app.
+In this module, you'll learn how .NET Aspire makes it easy to both record and examine telemetry in a cloud-native app.
 
 ## Learning objectives
 

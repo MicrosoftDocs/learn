@@ -21,7 +21,7 @@ Private Endpoint takes an unused private IP address from the address space of a 
 Private Endpoint gets an IP address from the same address space, such as 10.1.0.32. Private Endpoint then maps that address to a specified Azure service. Using the private IP address effectively brings the service into your virtual network.
 
 > [!NOTE]
-> Clients that connect to a Private Link resource don't need to use the Private Endpoint's assigned IP address in the connection string. Instead, if you configure the Private Endpoint to integrate with your private DNS zone, then Azure automatically assigns a FQDN to the endpoint. For example, if the Private Link resource is an Azure Storage table, the FQDN will be something like mystorageaccount1234.table.core.windows.net.
+> Clients that connect to a Private Link resource don't need to use the IP address assigned to the Private Endpoint in the connection string. Instead, if you configure the Private Endpoint to integrate with your private DNS zone, then Azure automatically assigns a fully qualified domain name (FQDN) to the endpoint. For example, if the Private Link resource is an Azure Storage table, the FQDN is something like mystorageaccount1234.table.core.windows.net.
 
 Here are a few key points to consider when evaluating Private Endpoint:
 
@@ -34,11 +34,11 @@ Here are a few key points to consider when evaluating Private Endpoint:
 * You can map a maximum of 1,000 Private Endpoint interfaces to the same Private Link resource.
 
 > [!CAUTION]
-> Although it's possible to map multiple Private Endpoint interfaces to a single resource, it's not recommended because doing so can lead to DNS conflicts and other problems. The best practice is to map only a single Private Endpoint to a single Private Link resource.
+> Although it's possible to map multiple Private Endpoint interfaces to a single resource, it isn't recommended. Doing so can lead to Domain Name System (DNS) conflicts and other problems. The best practice is to map only a single Private Endpoint to a single Private Link resource.
 
 * Connections are one way, meaning that only clients can connect to a Private Endpoint interface. If an Azure service is mapped to a Private Endpoint interface, the provider of that service can't connect to (or even perceive) the Private Endpoint interface.
 * A deployed Private Endpoint interface is read-only, meaning that no one can modify it. For example, no one can map the interface to a different resource, nor can anyone change the interface's IP address.
-* Although you must deploy the Private Endpoint in the same region as your virtual network, the Private Link resource can be located in a different region.
+* You must deploy the Private Endpoint in the same region as your virtual network, but the Private Link resource can be located in a different region.
 
 > [!NOTE]
 > What is the difference between a service endpoint and a private endpoint? A *service endpoint* configures an Azure resource to allow connections only from a specified virtual network. However, that connection is still made via the resource's public endpoint, so some security risks remain. Private Endpoint removes those risks by supporting the disabling of a resource's public endpoint.

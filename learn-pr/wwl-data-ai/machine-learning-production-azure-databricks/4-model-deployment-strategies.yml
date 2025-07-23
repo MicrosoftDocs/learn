@@ -2,13 +2,11 @@
 uid: learn.wwl.machine-learning-production-azure-databricks.model-deployment-strategies
 title: Explore model deployment strategies
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore model deployment strategies
   description: "Explore model deployment strategies"
-  ms.date: 07/17/2024
-  author: wwlpublish
-  ms.author: madiepev
+  ms.date: 4/24/2025
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 6
 content: |

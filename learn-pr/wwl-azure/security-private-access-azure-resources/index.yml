@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.security-private-access-azure-resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan and implement security for private access to Azure resources
   description: "This module focuses on equipping administrators with the knowledge and skills required to plan and implement robust security measures for private access to Azure resources, safeguarding sensitive data and enhancing network integrity."
   ms.date: 10/03/2024
@@ -47,4 +45,4 @@ units:
 - learn.wwl.security-private-access-azure-resources.knowledge-check
 - learn.wwl.security-private-access-azure-resources.summary
 badge:
-  uid: learn.wwl.security-private-access-azure-resources.badge
+  uid: learn.wwl.security-private-access-azure-resources.badge

@@ -30,7 +30,7 @@ quiz:
     choices:
       - content: "A practice that ensures system uptime by maintaining optimal replica volumes."
         isCorrect: false
-        explanation: "DevSecOps isn't concerned with replica volumes of systems, which details replication strategies used in high availability deployment scenarios."
+        explanation: "DevSecOps isn't concerned with replica volumes of systems, which detail replication strategies used in high availability deployment scenarios."
       - content: "A security model used by developers to certify that code changes do not affect production environments."
         isCorrect: false
         explanation: "There's no certification process involved in DevSecOps. The idea behind DevSecOps is that security mechanisms are integrated throughout the development cycle to increase the overall security posture."
@@ -53,7 +53,7 @@ quiz:
       explanation: "These are some of the most common web applications' vulnerability exploits, all of which can be programmed into a well-managed web application firewall policy."
     - content: "Malware propagation and attack repulsion"
       isCorrect: false
-      explanation: "WAF is position around application-level DDoS attack protection, this does NOT include general-purpose malware repulsion"
+      explanation: "WAF is position around application-level DDoS attack protection. This does NOT include general-purpose malware repulsion"
   - content: What are the benefits of using Azure Key Vault for data encryption in Azure?
     choices:
       - content: It provides a centralized key management solution.

@@ -2,8 +2,6 @@
 uid: learn.improve-reliability-incidents.2-importance
 title: "Importance of incident response"
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Importance of incident response"
   description: "Importance of incident response"
   ms.date: 02/28/2024
@@ -45,4 +43,4 @@ quiz:
     - content: 'in less than 1 week or a month'
       isCorrect: false
       explanation: 'This is the definition of a "low" performer according to the _State of DevOps_ report.'
-
+

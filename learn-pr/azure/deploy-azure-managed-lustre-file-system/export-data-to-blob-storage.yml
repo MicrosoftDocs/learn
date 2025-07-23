@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-azure-managed-lustre-file-system.export-data-to-blob-storage
 title: Export file system data to Azure Blob Storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Export file system data to Azure Blob Storage
   description: Learn how to export Azure Managed Lustre file system data to Azure Blob Storage.
   ms.date: 07/12/2024
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/export-data-to-blob-storage.md)]
+  [!include[](includes/export-data-to-blob-storage.md)]

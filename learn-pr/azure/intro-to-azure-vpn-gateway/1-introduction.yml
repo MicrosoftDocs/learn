@@ -2,11 +2,9 @@
 uid: learn.azure.intro-to-azure-vpn-gateway.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction.
-  ms.date: 02/24/2024
+  ms.date: 05/14/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates

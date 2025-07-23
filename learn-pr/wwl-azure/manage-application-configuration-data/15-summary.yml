@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-application-configuration-data.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 05/28/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/15-summary.md)]
+  [!include[](includes/15-summary.md)]

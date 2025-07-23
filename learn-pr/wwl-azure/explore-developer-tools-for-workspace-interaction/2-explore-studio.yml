@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-developer-tools-for-workspace-interaction.explore-studio
 title: Explore the studio
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore the studio
   description: "Explore the studio"
   ms.date: 07/25/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-explore-studio.md)]
+  [!include[](includes/2-explore-studio.md)]

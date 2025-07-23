@@ -1,4 +1,4 @@
-In this module, we explore compute solutions available in Azure. We look at Azure Virtual Machines, Azure Logic Apps, Azure App Service, Azure Functions, Azure Kubernetes Service, and other options. Some compute solutions support serverless scenarios, while other solutions work well with virtual machines and containers. We examine fast, scalable, flexible solution options to add compute power to your infrastructure. 
+In this module, we explore AI-ready compute solutions available in Azure. We look at Azure Virtual Machines, Azure Logic Apps, Azure App Service, Azure Functions, Azure Kubernetes Service, and other options. Some compute solutions support serverless scenarios, while other solutions work well with virtual machines and containers. We examine fast, scalable, flexible solution options to add compute power to your infrastructure. 
 
 ## Meet Tailwind Traders
 

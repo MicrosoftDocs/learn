@@ -2,11 +2,9 @@
 uid: learn.azure.app-service-scale-up-scale-out.1-introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
-  ms.date: 11/08/2023
+  ms.date: 05/05/2025
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: unit

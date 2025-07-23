@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-alerts.configure-data-loss-prevention-alert-generation
+title: Configure DLP policies to generate alerts
+metadata:
+  title: Configure DLP policies to generate alerts
+  description: "Configure DLP policies to generate alerts"
+  ms.date: 04/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/configure-data-loss-prevention-alert-generation.md)]

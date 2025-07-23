@@ -2,8 +2,6 @@
 uid: learn.create-first-azure-front-door.routing-traffic-with-front-door
 title: Routing requests with Front Door
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: learning-content
   description: Explains how Front Door routes requests and determines the best available origin to service the request.
@@ -39,4 +37,4 @@ quiz:
     - content: "Front Door sends requests to the origin with the lowest latency, but can also send requests based on weight, priority or session affinity."
       isCorrect: true
       explanation: "Correct!"
-
+

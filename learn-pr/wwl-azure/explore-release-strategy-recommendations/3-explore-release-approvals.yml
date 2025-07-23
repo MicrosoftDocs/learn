@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-release-strategy-recommendations.explore-release-approvals
 title: Explore release approvals
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore release approvals
   description: "Explore release approvals"
   ms.date: 05/21/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-explore-release-approvals.md)]
+  [!include[](includes/3-explore-release-approvals.md)]

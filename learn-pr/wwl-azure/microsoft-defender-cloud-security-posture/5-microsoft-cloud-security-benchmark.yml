@@ -2,8 +2,6 @@
 uid: learn.wwl.microsoft-defender-cloud-security-posture.microsoft-cloud-security-benchmark
 title: Add industry and regulatory standards to Microsoft Defender for Cloud
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Add industry and regulatory standards to Microsoft Defender for Cloud
   description: "Microsoft cloud security benchmark"
   ms.date: 02/10/2025

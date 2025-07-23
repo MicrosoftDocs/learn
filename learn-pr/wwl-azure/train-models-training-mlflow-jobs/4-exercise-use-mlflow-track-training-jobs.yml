@@ -2,8 +2,6 @@
 uid: learn.wwl.train-models-training-mlflow-jobs.exercise-use-mlflow-track-training-jobs
 title: Exercise - Use MLflow to track training jobs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Use MLflow to track training jobs
   description: Explore how to use MLflow in scripts with Azure Machine Learning through a hands-on exercise.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-use-mlflow-track-training-jobs.md)]
-
+

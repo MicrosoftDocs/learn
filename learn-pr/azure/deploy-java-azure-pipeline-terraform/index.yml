@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-java-azure-pipeline-terraform
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Rapidly develop and deploy Java apps using GitHub Actions or Azure Pipelines
   description: Create a Terraform configuration, provision your Azure resources, and set up your project for continuous integration and continuous delivery (CI/CD) by using either GitHub Actions or Azure Pipelines.
   ms.date: 08/02/2023
@@ -49,4 +47,4 @@ units:
 - learn.azure.deploy-java-azure-pipeline-terraform.7-summary
 badge:
   uid: learn.azure.deploy-java-azure-pipeline-terraform.badge
-
+

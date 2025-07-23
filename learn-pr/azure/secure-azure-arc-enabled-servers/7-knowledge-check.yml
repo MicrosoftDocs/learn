@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.secure-azure-arc-enabled-servers.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge about what you learned.
   ms.date: 04/24/2024
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -72,4 +71,4 @@ quiz:
     - content: "Azure Function"
       explanation: "Incorrect, Azure Functions can be used, but it isn't required to onboard to these Azure services."
       isCorrect: false
-
+

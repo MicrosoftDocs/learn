@@ -5,15 +5,16 @@ metadata:
   prefetch-feature-rollout: true
   title: Monitor app performance
   description: "Monitor app performance"
-  ms.date: 07/18/2024
+  ms.date: 06/30/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure-monitor
   ms.subservice: application-insights
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Monitor app performance
 summary: Learn how to use the tools offered in Application Insights to enhance the performance and stability of your applications.
 abstract: |
@@ -44,6 +45,7 @@ units:
 - learn.wwl.monitor-app-performance.instrument-app-for-monitoring
 - learn.wwl.monitor-app-performance.select-availability-test
 - learn.wwl.monitor-app-performance.troubleshoot-by-using-application-map
+- learn.wwl.monitor-app-performance.monitor-application-instrumentation
 - learn.wwl.monitor-app-performance.knowledge-check
 - learn.wwl.monitor-app-performance.summary
 badge:

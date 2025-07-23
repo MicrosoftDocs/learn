@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-package-management.explore-packages
 title: Explore packages
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore packages
   description: "Explore packages"
   ms.date: 05/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-explore-packages.md)]
+  [!include[](includes/2-explore-packages.md)]

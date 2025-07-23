@@ -1,4 +1,4 @@
-F# has access to world-class tooling. Whether it's a lightweight text editor or an IDE, you have choices when it comes to choosing your tools. However, at a minimum, you need the .NET SDK to start writing F# code. 
+F# has access to world-class tooling. Whether it's a lightweight text editor or an IDE, you have choices when it comes to choosing your tools. However, at a minimum, you need the .NET SDK to start writing F# code.
 
 ## .NET SDK
 
@@ -14,8 +14,8 @@ The .NET SDK is free and cross-platform, which means you can install it on Windo
 
 You can use any text editor to write F# code. However, Visual Studio Code is a free, open-source, and cross-platform text editor that is lightweight but also offers the following features to take your development workflow to the next level:
 
-- **Debugging:** Visual Studio Code's built-in debugger helps accelerate your edit, compile and debug loop.
-- **Version control:** Visual Studio Code has integrated source control management (SCM) and includes Git support built-in to help you keep track of your code as it changes.
+- **Debugging:** Visual Studio Code's built-in debugger helps accelerate your edit, compile, and debug loop.
+- **Version control:** Visual Studio Code integrates source control management (SCM) and includes Git support built-in to help you keep track of your code as it changes.
 - **Integrated terminal:** Visual Studio Code includes a fully featured integrated terminal, which makes it easy to work with the .NET CLI from inside the editor.
 - **Extensions:** Extend the functionality of Visual Studio Code using extensions.
 

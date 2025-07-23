@@ -2,8 +2,6 @@
 uid: learn.azure.monitor-azure-arc-enabled-servers.deploy-manage-observability-agents-using-vm-extensions-azure-arc-enabled-servers
 title: Deploy and manage observability agents with ease using VM extensions for Azure Arc-enabled servers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy and manage observability agents with ease using VM extensions for Azure Arc-enabled servers
   description: Deploy and manage observability agents with ease using VM extensions for Azure Arc-enabled servers
   ms.date: 08/17/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-deploy-manage-observability-agents-using-vm-extensions-azure-arc-enabled-servers.md)]
-
+

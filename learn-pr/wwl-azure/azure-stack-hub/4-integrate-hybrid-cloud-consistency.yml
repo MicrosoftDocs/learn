@@ -2,8 +2,6 @@
 uid: learn.wwl.azure-stack-hub.integrate-hybrid-cloud-consistency
 title: Integrate hybrid cloud consistency
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Integrate hybrid cloud consistency
   description: "Integrate hybrid cloud consistency"
   ms.date: 08/05/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-integrate-hybrid-cloud-consistency.md)]
+  [!include[](includes/4-integrate-hybrid-cloud-consistency.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-unit-tests-using-github-copilot-tools.create-unit-tests-chat-view-modes
+title: Create unit tests using Chat view modes
+metadata:
+  title: Create unit tests using Chat view modes
+  description: "Create unit tests using Chat view modes"
+  ms.date: 06/02/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-create-unit-tests-chat-view-modes.md)]

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-deploy-sap-hana-azure-large-instances
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement and deploy SAP HANA on Azure (Large Instances)
   description: 'This module explores how to deploy, validate, and install SAP HANA on Azure (Large Instances). Prepare for Exam AZ-120: Planning and Administering Microsoft Azure for SAP Workloads.'
   ms.date: 06/30/2022
@@ -43,4 +41,4 @@ units:
 - learn.wwl.implement-deploy-sap-hana-azure-large-instances.summary
 badge:
   uid: learn.wwl.implement-deploy-sap-hana-azure-large-instances.badge
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-azure-kubernetes-service-cluster.spoke-network-kubernetes
 title: Plan the IP addresses
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan the IP addresses
   description: "Plan the IP addresses"
   ms.date: 03/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-spoke-network-kubernetes.md)]
+  [!include[](includes/4-spoke-network-kubernetes.md)]

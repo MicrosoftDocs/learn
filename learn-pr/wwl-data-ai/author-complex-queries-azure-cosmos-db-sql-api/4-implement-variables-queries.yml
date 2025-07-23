@@ -2,11 +2,9 @@
 uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.implement-variables-queries
 title: Implement variables in queries
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement variables in queries
   description: "Implement variables in queries"
-  ms.date: 03/10/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

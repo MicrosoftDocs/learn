@@ -2,11 +2,9 @@
 uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.move-data-by-using-stream-analytics
 title: Move data by using Stream Analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Move data by using Stream Analytics
   description: "Move data by using Stream Analytics"
-  ms.date: 10/17/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

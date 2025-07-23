@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-git-repositories.configure-github-tags-organize-repositories
 title: Configure GitHub tags to organize repositories
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure GitHub tags to organize repositories
   description: "Configure GitHub tags to organize repositories"
   ms.date: 05/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/13-configure-github-tags-organize-repositories.md)]
+  [!include[](includes/13-configure-github-tags-organize-repositories.md)]

@@ -1,4 +1,4 @@
-Your app is collecting telemetry data and you now need a more comprehensive way to view it. In this unit, you'll see how to view telemetry data in many different tools.
+Your app is collecting telemetry data, and you now need a more comprehensive way to view it. In this unit, you'll see how to view telemetry data in many different tools.
 
 ## Monitor and view telemetry data
 
@@ -6,7 +6,7 @@ A common way to view telemetry data is to use Prometheus and Grafana together. P
 
 ### Prometheus
 
-The first step is to add a Prometheus container and configure it to collect data from each microservice in your app. You then add the Prometheus .NET client library to collect metrics from the app.
+The first step is to add a Prometheus container, and configure it to collect data from each microservice in your app. You then add the Prometheus .NET client library to collect metrics from the app.
 
 :::image type="content" source="../media/prometheus.png" alt-text="Screenshot that shows the configured Prometheus app showing the health of the eShopLite app." lightbox="../media/prometheus.png":::
 
@@ -29,7 +29,7 @@ scrape_configs:
 
 ### Grafana
 
-Grafana is an open-source visualization tool that you can use to create dashboards to view the metrics collected by Prometheus. You can configure Grafana to connect to Prometheus and display the metrics in a dashboard. Like before, you add a Grafana container to your app and configure it to connect to Prometheus.
+Grafana is an open-source visualization tool that you can use to create dashboards to view the metrics collected by Prometheus. You can configure Grafana to connect to Prometheus, and display the metrics in a dashboard. Like before, you add a Grafana container to your app, and configure it to connect to Prometheus.
 
 :::image type="content" source="../media/grafana.png" alt-text="Screenshot that shows an ASP.NET dashboard in Grafana." lightbox="../media/grafana.png":::
 
@@ -57,8 +57,8 @@ In your diagnostics project, you need to add support for Zipkin via the `OpenTel
 
 ### Go deeper with Application Insights
 
-There's a tool that can combine looking at metrics and viewing distributed tracing and then merge it with data from logs. Application Insights is an extensible Application Performance Management (APM) service. You can use it to monitor your live web application. Application Insights automatically detects performance anomalies. It includes powerful analytics tools to help you diagnose issues and understand what users actually do with your app.
+There's a tool that can combine looking at metrics and viewing distributed tracing, and then merge it with data from logs. Application Insights is an extensible Application Performance Management (APM) service. You can use it to monitor your live web application. Application Insights automatically detects performance anomalies. It includes powerful analytics tools to help you diagnose issues and understand what users actually do with your app.
 
 :::image type="content" source="../media/app-insights.png" alt-text="Screenshot that shows Application Insights showing the health of the eShopLite app." lightbox="../media/app-insights.png":::
 
-Like the preceding tools, you need to add a NuGet package to your solution `Azure.Monitor.OpenTelemetry.AspNetCore` and then introduce Azure Monitor as an exporter to your diagnostics project.
+Like the preceding tools, you need to add a NuGet package to your solution `Azure.Monitor.OpenTelemetry.AspNetCore`, and then introduce Azure Monitor as an exporter to your diagnostics project.

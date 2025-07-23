@@ -4,10 +4,12 @@ title: Examine options for minimizing user profile size
 metadata:
   title: Examine options for minimizing user profile size
   description: "This unit examines options for minimizing user profile size."
-  ms.date: 05/24/2023
+  ms.date: 03/31/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-examine-options-minimizing-user-profile-size.md)]

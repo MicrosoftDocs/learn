@@ -2,13 +2,11 @@
 uid: learn.wwl.machine-learning-production-azure-databricks.model-versioning-lifecycle-management
 title: Explore model versioning and lifecycle management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore model versioning and lifecycle management
   description: "Explore model versioning and lifecycle management"
-  ms.date: 07/17/2024
-  author: wwlpublish
-  ms.author: madiepev
+  ms.date: 4/24/2025
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 5
 content: |

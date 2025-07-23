@@ -1,19 +1,17 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-front-door 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction
   title: Introduction to Azure Front Door
   description: Azure Front Door provides a fast, reliable, and secure modern cloud content delivery network, integrated with intelligent threat protection.
   manager: kumud
-  ms.date: 10/16/2023
+  ms.date: 03/31/2025
   author: duongau
   ms.author: duau
   ms.topic: module-intro-to-product
   ms.service: azure-frontdoor
 title: Introduction to Azure Front Door
-summary: Describe how Azure Front Door provides a fast, reliable, and secure modern cloud content delivery network. Determine whether Azure Front Door can help you transform your global consumer and enterprise apps into more secure, high-performing, personalized modern apps.
+summary: Describe how Azure Front Door provides a fast, reliable, and secure modern cloud content delivery network. Determine whether Azure Front Door can help you transform your global consumer and enterprise apps into more secure, high-performing, and personalized modern apps.
 abstract: |
   By the end of this module, you'll be able to: 
     - Evaluate whether Azure Front Door can help transform your organization's apps into high-performing, personalized modern apps.

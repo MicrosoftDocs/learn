@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.finetune-foundation-model-with-azure-machine-learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Fine-tune a foundation model from the model catalog in Azure Machine Learning
   description: "Learn how to fine-tune a foundation model from the model catalog in Azure Machine Learning."
   ms.date: 07/25/2024
@@ -42,4 +40,4 @@ units:
 - learn.finetune-foundation-model-with-azure-machine-learning.knowledge-check
 - learn.finetune-foundation-model-with-azure-machine-learning.summary
 badge:
-  uid: learn.finetune-foundation-model-with-azure-machine-learning.badge
+  uid: learn.finetune-foundation-model-with-azure-machine-learning.badge

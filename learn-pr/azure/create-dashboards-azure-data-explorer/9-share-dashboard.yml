@@ -2,8 +2,6 @@
 uid: learn.create-dashboards-azure-data-explorer.share-dashboard
 title: Share dashboards
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Share dashboards
   description: "Share Azure Data Explorer dashboards with a colleague."
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/9-share-dashboard.md)]
-
+

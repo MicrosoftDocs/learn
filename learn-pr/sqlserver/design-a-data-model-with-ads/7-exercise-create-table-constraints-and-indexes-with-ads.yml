@@ -1,12 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-a-data-model-with-ads.exercise-create-table-constraints-and-indexes-with-ads
-title: Create table constraints and indexes with Azure Data Studio
+title: Create table constraints and indexes with Visual Studio Code
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Create table constraints and indexes with Azure Data Studio
+  title: Create table constraints and indexes with Visual Studio Code
   description: "Create primary and foreign keys on the tables in the database. Also implement default values and check constraints in columns."
-  ms.date: 03/05/2024
+  ms.date: 07/17/2025
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: unit

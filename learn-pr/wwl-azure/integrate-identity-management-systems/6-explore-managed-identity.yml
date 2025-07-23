@@ -2,8 +2,6 @@
 uid: learn.wwl.integrate-identity-management-systems.explore-managed-identity
 title: Implement managed identities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement managed identities
   description: "Implement managed identities"
   ms.date: 05/27/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-explore-managed-identity.md)]
+  [!include[](includes/6-explore-managed-identity.md)]

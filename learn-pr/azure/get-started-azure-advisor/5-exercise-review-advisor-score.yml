@@ -2,11 +2,9 @@
 uid: learn.azure.get-started-azure-advisor.5-exercise-review-advisor-score
 title: 'Exercise - Review your Advisor Score'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise - Review your Advisor Score'
   description: Learn how to review your Azure Advisor Score.
-  ms.date: 10/20/2023
+  ms.date: 05/28/2025
   author: aortoll
   ms.author: anortoll
   ms.topic: unit

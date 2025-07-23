@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.understand-basics-microsoft-dev-box
+metadata:
+  title: Understand the Basics of Microsoft Dev Box
+  description: "This module discusses the fundamentals of the Microsoft dev Box, its key concepts, and architecture."
+  ms.date: 05/12/2025
+  author: wwlpublish
+  ms.author: fkhan
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: dev-box
+  ai-usage: human-only
+title: Understand the basics of Microsoft Dev Box
+summary: This module describes the basics of platform engineering and IDP and how Microsoft Dev Box service fits in that ecosystem. It covers fundamentals of the service along with an architectural review and key concepts.
+abstract: |
+  By the end of this module, you'll be able to:
+
+  -   Understand the basics of platform engineering and IDP.
+
+  -   Detail the key roles involved with setting up, managing, and maintaining the service.
+
+  -   Describe key concepts such as Dev center, projects, Dev box definition, and dev pools.
+
+  -   Detail out network connectivity, Intune integration, identity service, and user connectivity for the service.
+prerequisites: '-   You should be familiar with basic cloud computing concepts and terminology.'
+iconUrl: /training/achievements/understand-basics-microsoft-dev-box.svg
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- devops-engineer
+- platform-engineer
+- solution-architect
+products:
+- azure
+subjects:
+- cloud-computing
+- devops
+- infrastructure
+- platform-engineering
+- virtual-machine
+units:
+- learn.wwl.understand-basics-microsoft-dev-box.introduction
+- learn.wwl.understand-basics-microsoft-dev-box.learn-fundamentals-microsoft-dev-box
+- learn.wwl.understand-basics-microsoft-dev-box.understand-components-microsoft-dev-box
+- learn.wwl.understand-basics-microsoft-dev-box.review-microsoft-dev-box-technical-architecture
+- learn.wwl.understand-basics-microsoft-dev-box.knowledge-check
+- learn.wwl.understand-basics-microsoft-dev-box.summary
+badge:
+  uid: learn.wwl.understand-basics-microsoft-dev-box.badge

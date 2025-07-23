@@ -2,8 +2,6 @@
 uid: learn.wwl.strategic-platform-road-mapping.continuous-improvement-innovation-management
 title: Continuous Improvement and Innovation Management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Continuous Improvement and Innovation Management
   description: "Continuous Improvement and Innovation Management"
   ms.date: 01/14/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-continuous-improvement-innovation-management.md)]
+  [!include[](includes/5-continuous-improvement-innovation-management.md)]

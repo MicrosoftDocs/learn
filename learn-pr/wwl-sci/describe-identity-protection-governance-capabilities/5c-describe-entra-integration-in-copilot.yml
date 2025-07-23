@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entra-integration-in-copilot
 title: Describe Microsoft Entra integration with Microsoft Security Copilot
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Microsoft Entra integration with Microsoft Security Copilot
   description: "Describe Microsoft Entra integration with Microsoft Security Copilot"
   ms.date: 08/02/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/5c-describe-entra-integration-in-copilot.md)]
+  [!include[](includes/5c-describe-entra-integration-in-copilot.md)]

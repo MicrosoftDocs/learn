@@ -8,23 +8,23 @@ Most funding rounds involve more than one investor. Two to five investors is typ
 
 How do you decide which investors to approach, and in what order?
 
-The first step before you contact any investors is to do research and determine which investors might be interested in your company. Consider the sector focus, stage of investment, and geography. Most investors prefer to invest in companies located close enough that they can meet in person (although this has changed markedly over the last couple of years).
+The first step before you contact any investors is to do research and determine which investors might be interested in your company. Consider the sector focus, stage of investment, and geography. Most investors prefer to invest in companies located close enough that they can meet in person (although this preference has changed markedly over the last couple of years).
 
-After you have a list of potential investors, rank them in order of preference. At the top of the list are the investors that you most want to have as shareholders in your company. This ranking might be because of their sector experience, networks, or strong brand. Maybe you've spoken to founders they've backed previously who told you that they're great to work with.
+After you have a list of potential investors, rank them in order of preference. At the top of the list, are the investors that you most want to have as shareholders in your company. This ranking might be because of their sector experience, networks, or strong brand. Maybe you spoke with the founders they backed previously who told you that they're great to work with.
 
-At the bottom of the list are the investors that you would be willing to have as shareholders. They might be less desirable because they have shallower expertise in your sector, are general partners who don't have experience as founders, or the feedback about them from other founders is less positive.
+At the bottom of the list, are the investors that you would be willing to have as shareholders. They might be less desirable because they have shallower expertise in your sector. Or, they're general partners who don't have experience as founders, or the feedback about them from other founders is less positive.
 
 Don't contact investors from whom you wouldn't accept an investment; this wastes your time and theirs.
 
 There are two schools of thought on which investors to approach first:
 
-- If you're confident of your investment proposal and your pitch is polished, start at the top of your list. Pitch the investors you most want to invest in your startup. If they agree to invest, your funding round will close more quickly and you avoid wasting time with less valuable investors.
+- If you're confident of your investment proposal and your pitch is polished, start at the top of your list. Pitch the investors you most want to invest in your startup. If they agree to invest, your funding round closes more quickly and you avoid wasting time with less valuable investors.
 
-- If this is your first time raising a funding round, your pitch is a little shaky, or your company only just meets the investability threshold for your target investors, it might be a good idea to start at the bottom of your list.
+- If it's your first time raising a funding round, your pitch is a little shaky, or your company only just meets the investability threshold for your target investors. It might be a good idea to start at the bottom of your list.
 
    By pitching less desirable investors, you gain experience in pitching your startup. You also receive feedback and questions from these investors that you can integrate into subsequent pitches. By the time you make it to the top of your list, your pitch will be more solid and you can anticipate many of the questions you'll receive.
 
-   The disadvantage of the second approach is that it takes longer. You'll have more meetings, and you might even receive investment offers from your non-preferred investors. Many founders find it difficult to say no to an investment offer, because they run the risk of saying no and then not receiving offers from any of their preferred investors.
+   The disadvantage of the second approach is that it takes longer. You'll have more meetings, and you might even receive investment offers from your nonpreferred investors. Many founders find it difficult to say no to an investment offer, because they run the risk of saying no and then not receiving offers from any of their preferred investors.
   
 ## Make contact with investors
 
@@ -46,13 +46,13 @@ By building relationships with investors in this way, you increase the chances o
 
 One of the most common mistakes made by first-time founders is to approach too few investors at the outset.
 
-After you contact an investor, it might take several months before you know whether they're going to invest. If you only contact a handful of investors, you run the risk that all of them will pass on the round. Then you have to restart the entire process with another set of investors, which will increase the time it takes to close your funding round.
+After you contact an investor, it might take several months before you know whether they're going to invest. If you only contact a handful of investors, you run the risk that all of them will pass on the round. Then you have to restart the entire process with another set of investors, which increases the time it takes to close your funding round.
 
 Approaching investors in series also means you have little opportunity for competitive tension, so there's less incentive for each investor to offer attractive terms. It can even lead to unfavorable terms if investors know that without their money, your company could run out of cash.
 
-Finally, startups that are on the fundraising trail for an extended period start to look questionable. Investors will ask why after many months you've still not secured your required funding.
+Finally, startups that are on the fundraising trail for an extended period start to look questionable. Investors will ask why your required funding is still secured after many months.
 
-In contrast, if you make initial contact with 10 to 20 investors in parallel, you increase the chances of closing your funding round quickly. The up-front workload is higher, but this approach allows you to treat fundraising like a sales funnel and prioritize your efforts on those investors who appear most likely to proceed. Even if most investors pass on your funding round, you'll have enough candidate investors in the pipeline that you won't need to restart the entire process.
+In contrast, if you make initial contact with 10 to 20 investors in parallel, you increase the chances of closing your funding round quickly. The up-front workload is higher, but this approach allows you to treat fundraising like a sales funnel and prioritize your efforts on those investors who appear most likely to proceed. Even if most investors pass on your funding round, you have enough candidate investors in the pipeline that you don't need to restart the entire process.
 
 You might also be able to achieve some competitive tension as investors realize they need to move quickly and offer attractive terms to not miss out.
 
@@ -60,7 +60,7 @@ You might also be able to achieve some competitive tension as investors realize 
 
 Most funding rounds involve multiple investors, but in most cases one investor does most of the pre-investment work and is often the first to commit funding. This investor is referred to as the *lead investor*.
 
-Finding a lead investor is important, because their commitment signals to other investors that someone they trust has evaluated your startup as a worthy investment. This phenomenon is noticeable when the lead investor is a top-tier venture capital fund or well-known angel investor. On many occasions, previously undecided investors commit within days of learning that a lead investor has committed to a funding round.
+Finding a lead investor is important, because their commitment signals to other investors that someone they trust has evaluated your startup as a worthy investment. This phenomenon is noticeable when the lead investor is a top-tier venture capital fund or well-known angel investor. On many occasions, previously undecided investors commit within days of learning that a lead investor is committed to a funding round.
 
 As a startup founder, one of your objectives is to find true believers who will make an early decision to back your company and help you secure the other investors you need to close your funding round.
 
@@ -92,12 +92,12 @@ After you sign a term sheet, an investor begins due diligence. In this process, 
 
 The goal of due diligence is to ensure that there are no serious obstacles to your company's chance to succeed.
 
-There's no single due-diligence checklist that all investors use, but there are some common themes in which most investors are interested. The following sections list due diligence review topics that most early-stage investors want to review.
+There's no single due-diligence checklist that all investors use, but there are some common themes in which most investors are interested. The following table lists the topics that most early-stage investors want to review for due diligence.
 
 ||Topics|
 |---|---|
 |**Corporate**|Confirm company structure, incorporation documents, list of shareholders, and class of shares<br><br>Copy of shareholders agreement|
-|**Intellectual property (IP)**|Confirm ownership by the company of all relevant IP assets<br><br>Confirm deed of assignment conferring ownership of the IP created by employees and contractors<br><br>Confirm non-reliance on IP assets that aren't owned by the company|
+|**Intellectual property (IP)**|Confirm ownership by the company of all relevant IP assets<br><br>Confirm deed of assignment conferring ownership of the IP created by employees and contractors<br><br>Confirm nonreliance on IP assets that the company doesn't own|
 |**Financial**|Identify any outstanding debts or other financing arrangements<br><br>Review historical financial reports verified by company accountant<br><br>Identify any financial breaches or disputes|
 |**Contracts**|Review details of all material contracts, including with employees, contractors, suppliers, and customers<br><br>Review copies of all material contracts<br><br>Identify any contractual breaches or disputes|
 |**Investment**|Review details of any prior investments, including identity of investor and investment terms|
@@ -107,4 +107,4 @@ There's no single due-diligence checklist that all investors use, but there are 
 |**Litigation**|Details of any existing or threatened proceedings by third parties|
 |**Regulatory**|Details of any government approvals, licenses, or permits obtained or required|
 
-As a founder, you'll want to ensure that investors can complete due diligence in the shortest time possible. You can streamline this process by creating a secure online repository of all relevant documents and sharing a link with the investor. This repository is sometimes referred to as a *data room*.
+As a founder, you want to ensure that investors can complete due diligence in the shortest time possible. You can streamline this process by creating a secure online repository of all relevant documents and sharing a link with the investor. This repository is sometimes referred to as a *data room*.

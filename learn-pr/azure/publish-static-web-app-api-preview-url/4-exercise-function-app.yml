@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-static-web-app-api-preview-url.4-exercise-function-app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create an Azure Functions project
-  description: Use the Azure Functions tools to build an API for a static site
-  ms.date: 12/12/2023
+  description: Use the Azure Functions tools to build an API for a static site.
+  ms.date: 06/27/2025
   author: v1212
   ms.author: wujia
   ms.topic: unit

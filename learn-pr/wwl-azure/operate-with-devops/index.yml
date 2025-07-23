@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.operate-with-devops
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Operate with DevOps"
   description: "Achieve operational excellence and enhance developer experience in your organization through DevOps. Your operational and development practices improve by implementing shift-right testing, observability through performance and security monitoring, Site Reliability Engineering and platform engineering."
   ms.date: 02/06/2024
@@ -52,4 +50,4 @@ units:
 - learn.wwl.operate-with-devops.knowledge-check
 - learn.wwl.operate-with-devops.summary
 badge:
-  uid: learn.wwl.operate-with-devops.badge
+  uid: learn.wwl.operate-with-devops.badge

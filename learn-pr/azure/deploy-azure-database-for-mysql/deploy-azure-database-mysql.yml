@@ -3,12 +3,10 @@ uid: learn.deploy-azure-database-for-mysql.deploy-azure-database-mysql
 title: Exercise - Deploy an Azure Database for MySQL flexible server
 sandbox: true
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy an Azure Database for MySQL flexible server
   description: Deploy an Azure Database for MySQL flexible server.
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
   ms.custom: event-tier1-build-2022

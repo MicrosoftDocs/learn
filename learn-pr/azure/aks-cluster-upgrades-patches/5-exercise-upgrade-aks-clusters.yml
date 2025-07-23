@@ -2,8 +2,6 @@
 uid: learn.aks-cluster-upgrades-patches.exercise 
 title: Patch and upgrade an AKS cluster
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise  
   title: Patch and upgrade an AKS cluster
   description: Implement an AKS cluster and apply patches and upgrade it to the latest Kubernetes version supported by Azure Kubernetes Service. 
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-upgrade-aks-clusters.md)]
-
+

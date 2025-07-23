@@ -1,12 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.design-network-solutions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design network solutions
   description: "Azure Architects design and recommend network solutions."
-  ms.date: 12/09/2024
+  ms.date: 05/13/2025
   author: wwlpublish
   ms.author: jileary
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure
