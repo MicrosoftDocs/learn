@@ -123,11 +123,11 @@ In this module, you'll use Visual Studio Code and the MSSQL extension to connect
 
 1. Go to the [Visual Studio Code Download](https://code.visualstudio.com/download) page and download and install the application applicable to your operating system.
 
-    ![Screenshot showing the install Visual Studio Code dialog.](../media/install-vscode-1.png)
+    ![Screenshot showing the install Visual Studio Code dialog.](../media/install-vs-code-1.png)
 
 1. Once Visual Studio Code is installed, start the application. Select **Extension** from the task bar, search for *mssql*, and Install **SQL Server (mssql)**.
 
-    ![Screenshot showing the install MSSQL extension dialog.](../media/install-vscode-2.png)
+    ![Screenshot showing the install MSSQL extension dialog.](../media/install-vs-code-2.png)
 
 ## Connect to Azure SQL Database with Visual Studio Code
 
