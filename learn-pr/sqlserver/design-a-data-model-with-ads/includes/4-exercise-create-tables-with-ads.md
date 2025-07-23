@@ -1,4 +1,3 @@
-
 It's time to create the tables that will hold the data for your online card-reference application. Use the following image to visualize what the data model could look like.
 
 ![Picture of a sample data model consisting of four tables.](../media/model-1s.png)
@@ -46,15 +45,15 @@ The following table outline is a summary of what we discussed in the previous pa
 | card_status | bit |
 | card_art | varbinary(max) |
 
-#### Create the cards table in Azure Data Studio
+#### Create the cards table in Visual Studio Code
 
-1. In Azure Data Studio, navigate to the **Connections tab**.
+1. In Visual Studio Code, navigate to the **Connections tab**.
 
-    ![Screenshot of the connections tab in Azure Data Studio.](../media/ads-1.png)
+    ![Screenshot of the connections tab in Visual Studio Code.](../media/ads-1.png)
 
 1. Expand the database server directory to find the **Tables** folder.
 
-    ![Screenshot of the Azure Data Studio interface showing how to locate the Tables folder in a server connection.](../media/ads-2.png)
+    ![Screenshot of the Visual Studio Code interface showing how to locate the Tables folder in a server connection.](../media/ads-2.png)
 
 1. Right-click the **Tables** folder and select **New Table**, which will open up a new Table Designer view.
 
@@ -75,7 +74,7 @@ The following table outline is a summary of what we discussed in the previous pa
     > [!NOTE]
     > Be sure to confirm that this table is in the **Tables** folder. Right-click the **Tables** folder in your database drop-down in your server connection and select **Refresh**. You should now see your table populated in the drop-down.
 
-    ![Screenshot of the Table Designer in Azure Data Studio showing how to change the name of the table and publish this table to a database.](../media/ads-6.png)
+    ![Screenshot of the Table Designer in Visual Studio Code showing how to change the name of the table and publish this table to a database.](../media/ads-6.png)
 
 1. Now, you need to add columns and data types to the **cards** table. The first column you're going to add is **card_id** which has a data type of **int**. Use the default column that was added when you created the table and change the name from **column_1** to **card_id**.
 
@@ -125,7 +124,7 @@ The following table outline is a summary of what we discussed in the previous pa
 
     The **cards** table is now complete and should look like the following:
 
-    ![A screenshot of the completed cards table design in Azure Data Studio.](../media/ads-finished-cards-table.png)
+    ![A screenshot of the completed cards table design in Visual Studio Code.](../media/ads-finished-cards-table.png)
 
 1. Select the **Publish Changes** button on the top-left of the table designer window to save these table changes to the database.
 
@@ -135,7 +134,7 @@ The following table outline is a summary of what we discussed in the previous pa
 
     ![Screenshot showing how to click the Update Database button to submit the changed to the cards table to the database.](../media/new-table-18.png)
 
-1. Select the **X** on the **table designer tab** in Azure Data Studio when done to close the window.
+1. Select the **X** on the **table designer tab** in Visual Studio Code when done to close the window.
 
     ![Screenshot showing how to click the X on the table designer tab to close the table designer for the cards table](../media/close-tab-1.png)
 
@@ -157,7 +156,7 @@ With the translation rules in mind, here's how you can create the translations t
 | translation_card_name | nvarchar(500) |
 | translation_card_text | nvarchar(2000) |
 
-#### Create the translations table in Azure Data Studio
+#### Create the translations table in Visual Studio Code
 
 1. Right-click the **Tables** folder and select **New Table**, which opens up a new Table Designer view.
 
@@ -203,13 +202,13 @@ With the translation rules in mind, here's how you can create the translations t
 
     If you're prompted to review the changes, select the **Update Database** button.
 
-1. Select the **X** on the **table designer tab** in Azure Data Studio to close the window.
+1. Select the **X** on the **table designer tab** in Visual Studio Code to close the window.
 
     ![Screenshot showing how to click the X on the table designer tab to close the table designer for the card_translations table.](../media/close-tab-2.png)
 
 ## Create the sets table
 
-The card game will have sets released five times a year, so you need to track the set name and the release date. The sets table is a simple table, but it'll be important when you need to add cards to each individual set. The first column will be named **set_id**and be an `int` data type. Next, a name is needed for each set, so **set_name** will be the next column, and will have an `nvarchar` data type with a length of 50. The last column in this small but important table is the **set_date**. It only needs to track day/month/year, so a `date` data type will work here.
+The card game will have sets released five times a year, so you need to track the set name and the release date. The sets table is a simple table, but it'll be important when you need to add cards to each individual set. The first column will be named **set_id** and be an `int` data type. Next, a name is needed for each set, so **set_name** will be the next column, and will have an `nvarchar` data type with a length of 50. The last column in this small but important table is the **set_date**. It only needs to track day/month/year, so a `date` data type will work here.
 
 Here's what the sets table will look like:
 
@@ -221,7 +220,7 @@ Here's what the sets table will look like:
 | set_name | nvarchar(50) |
 | set_date | date |
 
-#### Create the sets table in Azure Data Studio
+#### Create the sets table in Visual Studio Code
 
 1. Right-click the **Tables** folder and select **New Table** which will open up a new Table Designer view.
 
@@ -251,7 +250,7 @@ Here's what the sets table will look like:
 
     The final **sets** table should look like the following image:
 
-    ![Screenshot of the final sets table in Azure Data Studio.](../media/sets-6.png)
+    ![Screenshot of the final sets table in Visual Studio Code.](../media/sets-6.png)
 
 1. Select the **Publish Changes** button on the top-left of the table designer window to save these table changes to the database.
 
@@ -259,7 +258,7 @@ Here's what the sets table will look like:
 
     If prompted to review the changes, select the **Update Database** button.
 
-1. Select the **X** on the **table designer tab** in Azure Data Studio to close the window.
+1. Select the **X** on the **table designer tab** in Visual Studio Code to close the window.
 
     ![Screenshot showing how to click the X on the table designer tab to close the table designer for the sets table.](../media/close-tab-3.png)
 
@@ -279,7 +278,7 @@ The set_lists table will look like the following table outline:
 | card_id | int |
 | set_id | int |
 
-#### Create the set_lists table in Azure Data Studio
+#### Create the set_lists table in Visual Studio Code
 
 1. Right-click the **Tables** folder and select **New Table**, which opens up a new Table Designer view.
 
@@ -309,7 +308,7 @@ The set_lists table will look like the following table outline:
 
     The final **sets** table should look like the following:
 
-    ![Screenshot of the final set_lists table in Azure Data Studio.](../media/lists-6.png)
+    ![Screenshot of the final set_lists table in Visual Studio Code.](../media/lists-6.png)
 
 1. Select the **Publish Changes** button on the top left of the table designer window to save these table changes to the database.
 
@@ -317,7 +316,7 @@ The set_lists table will look like the following table outline:
 
     If prompted to review the changes, select the **Update Database** button.
 
-1. Select the **X** on the **table designer tab** in Azure Data Studio when done to close the window.
+1. Select the **X** on the **table designer tab** in Visual Studio Code when done to close the window.
 
     ![A screenshot showing how to click the X on the table designer tab to close the table designer for the set_lists table.](../media/close-tab-4.png)
 

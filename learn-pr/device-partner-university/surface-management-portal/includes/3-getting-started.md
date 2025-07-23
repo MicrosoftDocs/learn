@@ -1,4 +1,4 @@
-##Getting started
+## Getting started
 
 To use Security Copilot in the Surface Management Portal, a Microsoft Intune license and available Security Compute Units (SCU) for Security Copilot are required.
 
