@@ -2,15 +2,15 @@
 
 At Microsoft, we base Windows feature design on three main principles:
 
-### 1. Tech should adapt to its users
+### Tech should adapt to its users
 
 Technology should adapt to people, not the other way around. With permission, we’re personalizing features based on user preferences to deliver a more consistent, richer experience.
 
-### 2. Tech should be useful and trustworthy
+### Tech should be useful and trustworthy
 
 Experiences should be genuinely useful and trustworthy. Our features are purpose-driven, built around real needs, and rigorously assessed for safety and privacy before development starts.
 
-### 3. Tech should solve the hardest problems
+### Tech should solve the hardest problems
 
 We go beyond incremental improvements. We reimagine how Windows can empower people in new and groundbreaking ways on the devices they turn to when things matter most.
 
