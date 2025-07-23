@@ -33,8 +33,9 @@ Different AI tools support different protection methods. Microsoft Purview appli
 | AI tool type | Protections supported |
 |-----|-----|
 | **Microsoft Copilot** | Sensitivity labels, DLP, Audit, Insider Risk Management |
-| **Copilot Studio / Fabric** | DLP, sensitivity labels, and custom policy logic |
+| **Copilot Studio / Fabric** | Sensitivity labels, DLP, custom policy logic, and Purview SDK support for Dataverse-based agents |
 | **Enterprise AI apps** | DLP and access controls when integrated with Microsoft Entra ID |
 | **Browser-based tools** | Endpoint DLP, browser control policies, file transfer restrictions |
+| **Azure AI Foundry / other developer AI tools** | DLP and labeling via Purview integration and SDK; visibility in DSPM for AI for monitoring agent activity |
 
 Understanding which protections apply helps ensure sensitive data remains secure, regardless of how users interact with AI tools.
