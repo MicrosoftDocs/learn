@@ -1,0 +1,179 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-vibe-coding.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Module assessment"
+  ms.date: 07/23/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary characteristic of vibe coding?"
+    choices:
+    - content: "Writing code line-by-line with traditional development methods."
+      isCorrect: false
+      explanation: "Incorrect. Vibe coding shifts away from line-by-line coding to describing desired experiences in natural language."
+    - content: "Describing desired product experiences in natural language rather than writing code line-by-line."
+      isCorrect: true
+      explanation: "Correct. Vibe coding emphasizes describing what you want in natural language, allowing AI to generate the implementation details."
+    - content: "Using only visual programming interfaces without any text-based coding."
+      isCorrect: false
+      explanation: "Incorrect. Vibe coding still involves code generation, but the approach focuses on natural language descriptions rather than manual coding."
+  - content: "Which group can benefit from vibe coding for rapid prototyping without extensive programming knowledge?"
+    choices:
+    - content: "Only experienced software developers."
+      isCorrect: false
+      explanation: "Incorrect. While experienced developers can benefit, vibe coding can help nonprogrammers as well."
+    - content: "Nonprogrammers such as sales professionals, teachers, and engineers."
+      isCorrect: true
+      explanation: "Correct. Vibe coding democratizes software development, allowing individuals from various backgrounds to create functional prototypes."
+    - content: "Only data scientists and AI specialists."
+      isCorrect: false
+      explanation: "Incorrect. While these professionals can use vibe coding, it's accessible to a broader audience including nontechnical users."
+  - content: "What is a key limitation of vibe coding that requires experienced developer oversight?"
+    choices:
+    - content: "It can't generate any functional code."
+      isCorrect: false
+      explanation: "Incorrect. Vibe coding can generate functional code, but it has other limitations that require oversight."
+    - content: "It only works with visual programming languages."
+      isCorrect: false
+      explanation: "Incorrect. Vibe coding works with traditional programming languages and generates text-based code."
+    - content: "AI-generated code may introduce technical debt and lack proper architecture without expert review."
+      isCorrect: true
+      explanation: "Correct. While AI can generate working code, it may not follow best practices, introduce security vulnerabilities, or lack proper system design without experienced oversight."
+  - content: "What are the three main phases of the vibe coding process?"
+    choices:
+    - content: "Planning, Testing, and Deployment."
+      isCorrect: false
+      explanation: "Incorrect. While these phases are important development phases, they don't represent the specific vibe coding approach."
+    - content: "Envision and plan, Develop initial prototype, and Iterative development of features."
+      isCorrect: true
+      explanation: "Correct. These three phases represent the structured yet flexible approach of vibe coding from concept to functional application."
+    - content: "Research, Implementation, and Documentation."
+      isCorrect: false
+      explanation: "Incorrect. These topic areas represent software development activities but not the specific phases of vibe coding."
+  - content: "What is the purpose of the five-step feedback loop in vibe coding's iterative development phase?"
+    choices:
+    - content: "To replace the need for human oversight in development."
+      isCorrect: false
+      explanation: "Incorrect. The feedback loop complements rather than replaces human judgment and oversight."
+    - content: "To maintain momentum while ensuring quality through Prompt, Suggestion, Review, Refine, and Repeat cycles."
+      isCorrect: true
+      explanation: "Correct. This cycle allows developers to maintain creative flow while progressively building more sophisticated functionality with quality control."
+    - content: "To automate the entire software development lifecycle."
+      isCorrect: false
+      explanation: "Incorrect. The feedback loop is part of the iterative improvement phase, not full automation of development."
+  - content: "How does vibe coding help maintain developer flow state?"
+    choices:
+    - content: "By eliminating the need for any planning or documentation."
+      isCorrect: false
+      explanation: "Incorrect. Vibe coding still requires planning, but it reduces context switching and maintains focus."
+    - content: "By reducing context switching and providing immediate feedback through natural language interfaces."
+      isCorrect: true
+      explanation: "Correct. Vibe coding minimizes disruptions like searching documentation or switching between tools, helping developers stay focused and productive."
+    - content: "By automating all coding decisions without developer input."
+      isCorrect: false
+      explanation: "Incorrect. Vibe coding is collaborative and requires ongoing developer input and decision-making."
+  - content: "What makes a prompt effective when working with GitHub Copilot?"
+    choices:
+    - content: "Using only technical jargon and complex terminology."
+      isCorrect: false
+      explanation: "Incorrect. Effective prompts should be clear and accessible, avoiding unnecessary complexity."
+    - content: "Starting general then getting specific, providing concrete examples, and eliminating ambiguity."
+      isCorrect: true
+      explanation: "Correct. Effective prompts give context first, then specific requirements, include examples, and are clear about intentions."
+    - content: "Making requests as brief as possible without any context."
+      isCorrect: false
+      explanation: "Incorrect. While brevity can be good, context and specificity are crucial for effective prompts."
+  - content: "When should you break down complex tasks in your prompts to GitHub Copilot?"
+    choices:
+    - content: "Never, because it confuses the AI."
+      isCorrect: false
+      explanation: "Incorrect. Breaking down complex tasks actually helps AI generate better, more manageable solutions."
+    - content: "Only when working with legacy code."
+      isCorrect: false
+      explanation: "Incorrect. Task decomposition is beneficial for any complex request, not just legacy code."
+    - content: "When facing complex tasks to make them more manageable and get better results."
+      isCorrect: true
+      explanation: "Correct. Decomposing complex tasks into smaller components leads to better results and makes debugging easier."
+  - content: "What should you do when GitHub Copilot's initial response doesn't meet your expectations?"
+    choices:
+    - content: "Immediately start over with a different approach."
+      isCorrect: false
+      explanation: "Incorrect. It's better to iterate and refine rather than restart."
+    - content: "Iterate on your prompt by adding more context, being more specific, or asking follow-up questions."
+      isCorrect: true
+      explanation: "Correct. Copilot works best through iterative conversation, refining requests based on previous responses."
+    - content: "Accept the response as-is since AI suggestions are always optimal."
+      isCorrect: false
+      explanation: "Incorrect. AI suggestions often need refinement and should be evaluated critically."
+  - content: "What is the primary purpose of creating a Product Requirements Document (PRD) in vibe coding?"
+    choices:
+    - content: "To replace the need for any wireframes or visual planning."
+      isCorrect: false
+      explanation: "Incorrect. PRDs complement rather than replace visual planning elements like wireframes."
+    - content: "To serve as a blueprint that guides development and provides clear guidance for AI assistants."
+      isCorrect: true
+      explanation: "Correct. PRDs translate product vision into structured requirements that guide both human developers and AI tools."
+    - content: "To satisfy legal compliance requirements only."
+      isCorrect: false
+      explanation: "Incorrect. While PRDs may help with compliance, their primary purpose is development guidance."
+  - content: "How should features be prioritized when creating an MVP using vibe coding?"
+    choices:
+    - content: "All features should be implemented simultaneously without prioritization."
+      isCorrect: false
+      explanation: "Incorrect. Prioritization is crucial for MVP development to focus on essential functionality first."
+    - content: "Organize features into must-have, should-have, and could-have categories."
+      isCorrect: true
+      explanation: "Correct. This categorization helps maintain focus on essential functionality while planning for future enhancements."
+    - content: "Only implement the most complex features first."
+      isCorrect: false
+      explanation: "Incorrect. MVP should focus on core, essential features rather than complexity."
+  - content: "What role do wireframe diagrams play in the vibe coding process?"
+    choices:
+    - content: "They're optional and add unnecessary complexity to the process."
+      isCorrect: false
+      explanation: "Incorrect. Wireframes provide valuable visual guidance that improves AI-generated code quality."
+    - content: "They provide visual representation of application structure and help bridge the gap between written requirements and implementation."
+      isCorrect: true
+      explanation: "Correct. Wireframes help communicate layout, navigation, and user flow, improving the accuracy of AI suggestions."
+    - content: "They replace the need for any written requirements or planning."
+      isCorrect: false
+      explanation: "Incorrect. Wireframes complement written requirements rather than replacing them."
+  - content: "What are custom instructions in GitHub Copilot Chat designed to do?"
+    choices:
+    - content: "Limit the AI's capabilities to prevent errors."
+      isCorrect: false
+      explanation: "Incorrect. Custom instructions enhance rather than limit AI capabilities by providing better context."
+    - content: "Automatically incorporate coding practices and project requirements into every chat request."
+      isCorrect: true
+      explanation: "Correct. Custom instructions ensure consistent application of guidelines without manually adding context to each request."
+    - content: "Replace the need for writing any prompts or questions."
+      isCorrect: false
+      explanation: "Incorrect. Custom instructions enhance prompts but don't eliminate the need for clear communication."
+  - content: "Which file location provides cross-editor support for GitHub Copilot custom instructions?"
+    choices:
+    - content: "Visual Studio Code settings only."
+      isCorrect: false
+      explanation: "Incorrect. While Visual Studio Code settings work, they don't provide cross-editor support."
+    - content: "`.github/copilot-instructions.md` file at workspace root."
+      isCorrect: true
+      explanation: "Correct. This file location works across Visual Studio Code, Visual Studio, and GitHub.com, providing consistent instructions across different environments."
+    - content: "Multiple `.instructions.md` files in any location."
+      isCorrect: false
+      explanation: "Incorrect. While these files are useful, they don't provide the same level of cross-editor support."
+  - content: "What is the advantage of using the `applyTo` metadata in `.instructions.md` files?"
+    choices:
+    - content: "It makes the instructions apply to all files regardless of type."
+      isCorrect: false
+      explanation: "Incorrect. The `applyTo` metadata is used for targeted application, not universal application."
+    - content: "It prevents the instructions from being used accidentally."
+      isCorrect: false
+      explanation: "Incorrect. The metadata doesn't prevent usage but controls when instructions are automatically applied."
+    - content: "It enables automatic application of instructions based on file patterns and glob matching."
+      isCorrect: true
+      explanation: "Correct. The `applyTo` property allows instructions to be automatically applied to specific file types or patterns, providing targeted guidance."

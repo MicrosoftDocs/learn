@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-vibe-coding.what-is-vibe-coding
+title: What is vibe coding?
+metadata:
+  title: What is vibe coding?
+  description: "What is vibe coding?"
+  ms.date: 07/23/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-what-is-vibe-coding.md)]

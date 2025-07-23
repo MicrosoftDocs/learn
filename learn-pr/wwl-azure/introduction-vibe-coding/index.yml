@@ -1,0 +1,60 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-vibe-coding
+metadata:
+  title: Introduction to Vibe Coding
+  description: "This module examines how to create an app using a vibe coding process and GitHub Copilot Agent."
+  ms.date: 07/23/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: module-intro-to-product
+  ms.service: github-copilot
+  ms.devlang: javascript
+  ai-usage: ai-assisted
+title: Introduction to vibe coding
+summary: This module examines how to create an app using a vibe coding process and GitHub Copilot Agent.
+abstract: |
+  At the end of this module, you will be able to:
+
+  -   Explain vibe coding and the vibe coding approach to software development.
+
+  -   Create effective prompts for GitHub Copilot in a vibe coding process.
+
+  -   Generate product requirements and wireframe diagrams using GitHub Copilot.
+
+  -   Configure the GitHub Copilot environment for customized responses.
+
+  -   Create a prototype app using vibe coding and GitHub Copilot Agent.
+prerequisites: |
+  -   Basic understanding of the software development process is recommended.
+
+  -   Some experience developing prompts for large language models is recommended.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-owner
+- data-scientist
+- developer
+- k-12-educator
+- startup-founder
+- student
+products:
+- github
+- vs-code
+subjects:
+- app-development
+- artificial-intelligence
+- frontend-development
+- productivity
+units:
+- learn.wwl.introduction-vibe-coding.introduction
+- learn.wwl.introduction-vibe-coding.what-is-vibe-coding
+- learn.wwl.introduction-vibe-coding.examine-vibe-coding-process
+- learn.wwl.introduction-vibe-coding.create-effective-prompts-github-copilot
+- learn.wwl.introduction-vibe-coding.identify-product-user-interface-requirements
+- learn.wwl.introduction-vibe-coding.customize-github-copilot-responses
+- learn.wwl.introduction-vibe-coding.exercise-get-started-vibe-coding-github-copilot
+- learn.wwl.introduction-vibe-coding.knowledge-check
+- learn.wwl.introduction-vibe-coding.summary
+badge:
+  uid: learn.wwl.introduction-vibe-coding.badge

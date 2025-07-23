@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-vibe-coding.create-effective-prompts-github-copilot
+title: Create effective prompts for GitHub Copilot
+metadata:
+  title: Create effective prompts for GitHub Copilot
+  description: "Create effective prompts for GitHub Copilot"
+  ms.date: 07/23/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-create-effective-prompts-github-copilot.md)]
