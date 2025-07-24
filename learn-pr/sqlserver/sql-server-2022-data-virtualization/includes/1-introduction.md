@@ -6,7 +6,7 @@ Data virtualization in SQL Server 2025 is the ability to access data where it li
 
 The following figure shows the full extent of data virtualization support in SQL Server 2025.
 
-:::image type="content" source="../media/sql-server-2025-data-virtualization.png" alt-text="Diagram of the data virtualization options in SQL Server 2025." border="false":::
+:::image type="content" source="../media/sql-server-2022-data-virtualization.png" alt-text="Diagram of the data virtualization options in SQL Server 2025." border="false":::
 
 This training module reviews the data virtualization options in SQL Server 2025, including:
 
