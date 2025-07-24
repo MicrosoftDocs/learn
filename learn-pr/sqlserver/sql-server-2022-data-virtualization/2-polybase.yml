@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.sql-server-2022-data-virtualization.polybase
+uid: learn.sql-server-2025-data-virtualization.polybase
 title: Introduction to PolyBase
 metadata:
   title: Introduction to PolyBase
-  description: "Learn about PolyBase and the evolution of PolyBase from SQL Server 2016 to SQL Server 2022."
+  description: "Learn about PolyBase and the evolution of PolyBase from SQL Server 2016 to SQL Server 2025."
   ms.date: 07/24/2025
   author: HugoMSFT
   ms.author: hudequei
@@ -32,11 +32,11 @@ quiz:
     - content: "False"
       isCorrect: false
       explanation: "Not all PolyBase data sources need to have the PolyBase services configured and running, but they all require the **PolyBase Query Service for External Data** to be installed and enabled."
-  - content: "SQL Server 2022 supports all types of object storage."
+  - content: "SQL Server 2025 supports all types of object storage."
     choices: 
     - content: "True"
       isCorrect: false
-      explanation: "SQL Server 2022 supports S3-compatible object storage only."
+      explanation: "SQL Server 2025 supports S3-compatible object storage only."
     - content: "False"
       isCorrect: true
-      explanation: "SQL Server 2022 supports S3-compatible object storage only."
+      explanation: "SQL Server 2025 supports S3-compatible object storage only."

@@ -2,13 +2,13 @@
 ms.custom:
   - build-2023
 ---
-Data virtualization in SQL Server 2022 is the ability to access data where it lives. Data virtualization integrates data at query time, without replicating or moving the original data.
+Data virtualization in SQL Server 2025 is the ability to access data where it lives. Data virtualization integrates data at query time, without replicating or moving the original data.
 
-The following figure shows the full extent of data virtualization support in SQL Server 2022.
+The following figure shows the full extent of data virtualization support in SQL Server 2025.
 
-:::image type="content" source="../media/sql-server-2022-data-virtualization.png" alt-text="Diagram of the data virtualization options in SQL Server 2022." border="false":::
+:::image type="content" source="../media/sql-server-2025-data-virtualization.png" alt-text="Diagram of the data virtualization options in SQL Server 2025." border="false":::
 
-This training module reviews the data virtualization options in SQL Server 2022, including:
+This training module reviews the data virtualization options in SQL Server 2025, including:
 
 - PolyBase services
 - REST API connectors such as Azure Data Lake Storage, Azure Blob Storage, and Amazon S3-compatible object storage that allow for new access with data virtualization
@@ -32,15 +32,15 @@ Data virtualization has the following major benefits:
 
 - **T-SQL language:** Uses all the benefits of the T-SQL language, its commands, enhancements, and familiarity.
 
-- **One source for all your data:** Uses SQL Server 2022 as a single data source and data hub for all required data, hiding data complexity from applications. Database administrators and data engineers can maintain a single environment.
+- **One source for all your data:** Uses SQL Server 2025 as a single data source and data hub for all required data, hiding data complexity from applications. Database administrators and data engineers can maintain a single environment.
 
 - **Security**: Uses SQL Server security features for granular permissions, credential management, and control.
 
-- **Cost flexibility:** Is available in all SQL Server 2022 editions.
+- **Cost flexibility:** Is available in all SQL Server 2025 editions.
 
 ## Data virtualization use cases
 
-SQL Server 2022 offers the following major data virtualization use cases:
+SQL Server 2025 offers the following major data virtualization use cases:
 
 - **In-database analytics:** Use and combine all SQL Server capabilities and familiarity when using data virtualization.
 - **Offload or export data to other data sources.**
@@ -54,13 +54,13 @@ After you complete this module, you:
 
   - Understand the benefits and principles of data virtualization.
   - Know what PolyBase is and how to use its capabilities.
-  - Are familiar with object storage solutions and SQL Server 2022 support for S3-compatible object storage.
-  - Know how to install and configure PolyBase on SQL Server 2022.
-  - Know how to access and query external data by using PolyBase in SQL Server 2022.
+  - Are familiar with object storage solutions and SQL Server 2025 support for S3-compatible object storage.
+  - Know how to install and configure PolyBase on SQL Server 2025.
+  - Know how to access and query external data by using PolyBase in SQL Server 2025.
 
 ## Prerequisites
 
-- Basic working knowledge of SQL Server 2022
+- Basic working knowledge of SQL Server 2025
 - Fundamental knowledge of T-SQL and SQL query execution
-- SQL Server 2022 installed
+- SQL Server 2025 installed
 - SQL Server Management Studio (SSMS) installed

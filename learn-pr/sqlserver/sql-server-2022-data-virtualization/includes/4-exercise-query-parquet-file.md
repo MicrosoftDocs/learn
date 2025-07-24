@@ -29,7 +29,7 @@ PolyBase setup installs two PolyBase services, **SQL Server PolyBase Engine** an
 
 ## Enable PolyBase
 
-Once you install the service, connect to your SQL Server 2022 instance in SQL Server Management Studio (SSMS) and run the following command to enable PolyBase.
+Once you install the service, connect to your SQL Server 2025 instance in SQL Server Management Studio (SSMS) and run the following command to enable PolyBase.
 
 ```sql
 EXEC SP_CONFIGURE @CONFIGNAME = N'POLYBASE ENABLED', @CONFIGVALUE = 1;

@@ -4,7 +4,7 @@ ms.custom:
 ---
 In this unit, you connect to and create an external table from a database in Azure SQL Database by using the PolyBase services. For this exercise, you:
 
-- Create a database in SQL Server 2022.
+- Create a database in SQL Server 2025.
 - Create a database master key to secure the Azure SQL database scoped credential.
 - Create a database scoped credential to access the Azure SQL Database data source.
 - Create an external data source by using the database scoped credential.
@@ -13,13 +13,13 @@ In this unit, you connect to and create an external table from a database in Azu
 
 ## Prerequisites
 
-- An Azure SQL database created by using the instructions in [Quickstart: Create a single database - Azure SQL Database](/azure/azure-sql/database/single-database-create-quickstart). For this exercise, name the Azure SQL server `polybaseserver` and the Azure SQL database `polybase2022test`. Be sure to select **Use existing data > Sample** under **Additional settings** when you create the database.
+- An Azure SQL database created by using the instructions in [Quickstart: Create a single database - Azure SQL Database](/azure/azure-sql/database/single-database-create-quickstart). For this exercise, name the Azure SQL server `polybaseserver` and the Azure SQL database `polybase2025test`. Be sure to select **Use existing data > Sample** under **Additional settings** when you create the database.
 
-- A SQL Server 2022 instance with PolyBase installed and enabled as for the previous exercise. To connect to another database such as an Azure SQL database, you need to use PolyBase services. Open SQL Server Configuration Manager and make sure the **SQL Server PolyBase Data Movement** and **SQL Server PolyBase Engine** services are running.
+- A SQL Server 2025 instance with PolyBase installed and enabled as for the previous exercise. To connect to another database such as an Azure SQL database, you need to use PolyBase services. Open SQL Server Configuration Manager and make sure the **SQL Server PolyBase Data Movement** and **SQL Server PolyBase Engine** services are running.
 
 ## Create a database
 
-In your SQL Server 2022 instance, create a database called `Demo2`, and switch to using that database.
+In your SQL Server 2025 instance, create a database called `Demo2`, and switch to using that database.
 
 ```sql
 USE MASTER;
@@ -82,19 +82,19 @@ RECONFIGURE;
 
 ## Use OPENROWSET to access the Azure SQL database
 
-Use [OPENROWSET](/sql/t-sql/functions/openrowset-transact-sql) to connect to the `polybase2022test` database in Azure SQL Database and query the `SalesLT.Customer` table. You need to specify a provider. This example uses the MSOLEDBSQL provider, which is installed with SQL Server 2022. You also need to specify the SQL authentication `<user>` and `<password>`
+Use [OPENROWSET](/sql/t-sql/functions/openrowset-transact-sql) to connect to the `polybase2025test` database in Azure SQL Database and query the `SalesLT.Customer` table. You need to specify a provider. This example uses the MSOLEDBSQL provider, which is installed with SQL Server 2025. You also need to specify the SQL authentication `<user>` and `<password>`
 
 ```sql
 SELECT
 *
 FROM OPENROWSET(
 N'MSOLEDBSQL',
-'Server=polybaseserver.database.windows.net;database=polybase2022test;uid=<user>;pwd=<password>',
+'Server=polybaseserver.database.windows.net;database=polybase2025test;uid=<user>;pwd=<password>',
 'SELECT * FROM SalesLT.Customer'
 );
 ```
 
-## Create an external table from SQL Server 2022 to Azure SQL Database
+## Create an external table from SQL Server 2025 to Azure SQL Database
 
 Now that you verified you can query the external data source, you can create and view an external table called `ext_tblCustomers` from that data source by using the database scoped credential and external data source.
 
@@ -105,10 +105,10 @@ CREATE EXTERNAL TABLE ext_tblCustomers(
    ,EmailAddress  NVARCHAR(50)
 )
 WITH 
-(LOCATION = N'polybase2022test.SalesLT.Customer'
+(LOCATION = N'polybase2025test.SalesLT.Customer'
 ,DATA_SOURCE = AzureSQLDB);
  
 SELECT * FROM ext_tblCustomers;
 ```
 
-In this unit, you used PolyBase on a SQL Server 2022 instance to query and create an external table from Azure SQL Database. Proceed to the next unit to learn about the CREATE EXTERNAL TABLE AS SELECT (CETAS) command and its benefits.
+In this unit, you used PolyBase on a SQL Server 2025 instance to query and create an external table from Azure SQL Database. Proceed to the next unit to learn about the CREATE EXTERNAL TABLE AS SELECT (CETAS) command and its benefits.
