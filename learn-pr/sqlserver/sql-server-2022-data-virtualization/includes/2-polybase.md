@@ -16,7 +16,7 @@ For more information about PolyBase, see [PolyBase features and limitations](/sq
 
 - **Native support for CSV, Parquet, & Delta 1**:  PolyBase Query Service for External Data installation is no longer required to use OPENROWSET, CREATE EXTERNAL TABLE, or CREATE EXTERNAL TABLE AS SELECT with the following types of external data: Parquet, Delta, Azure Blob Storage (ABS), Azure Data Lake Storage (ADLS), or S3-Compatible Object storage.
 
-- **Use generic ODBC data sources on Linux**:  For more information, see [Configure PolyBase to access external data with ODBC generic types](https://learn.microsoft.com/en-us/sql/relational-databases/polybase/polybase-configure-odbc-generic?view=sql-server-ver17&tabs=windows).
+- **Use generic ODBC data sources on Linux**:  For more information, see [Configure PolyBase to access external data with ODBC generic types](https://learn.microsoft.com/sql/relational-databases/polybase/polybase-configure-odbc-generic?view=sql-server-ver17&tabs=windows).
 
 - **TDS 8.0 support**:  When using Microsoft ODBC Driver 18 for SQL Server, TDS 8.0 isn't supported for SQL Server as an external data source.
 
@@ -41,9 +41,9 @@ Amazon Web Services (AWS) established the S3 standard framework, and major stora
 For more information about object storage benefits, installation, and testing, see the following storage partner documentation. For more object storage providers, see [Providers of S3-compatible object storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage#providers-of-s3-compatible-object-storage).
 
 - [Cloudian](https://cloudian.com/sql) HyperStore
-- [Dell](https://www.dell.com/support/product-details/en-us/product/isilon-onefs) Isildon OneFS
+- [Dell](https://www.dell.com/support/product-details/product/isilon-onefs) Isildon OneFS
 - [Dell](https://github.com/EMCECS/ECS-CommunityEdition) ECS Community Edition
-- [Hitachi](https://www.hitachivantara.com/en-us/pdf/architecture-guide/hitachi-solution-for-databases-microsoft-sql-server-datacenter-using-ha820-g2-server-hitachi-vsp-one-block.pdf) Hitachi Content Platform (HCP)
+- [Hitachi](https://www.hitachivantara.com/pdf/architecture-guide/hitachi-solution-for-databases-microsoft-sql-server-datacenter-using-ha820-g2-server-hitachi-vsp-one-block.pdf) Hitachi Content Platform (HCP)
 - [MinIO](https://min.io/solutions/sqlserver) Multi-Cloud Object Storage
 - [Pure Storage](https://www.purestorage.com/products/unstructured-data-storage/flashblade-s.html) Pure FlashBlade.
 

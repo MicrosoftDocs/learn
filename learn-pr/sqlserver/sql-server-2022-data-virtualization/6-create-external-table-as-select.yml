@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.sql-server-2025-data-virtualization.create-external-table-as-select
+uid: learn.sql-server-2022-data-virtualization.create-external-table-as-select
 title: CREATE EXTERNAL TABLE AS SELECT (CETAS)
 metadata:
   title: CREATE EXTERNAL TABLE AS SELECT (CETAS)
