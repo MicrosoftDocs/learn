@@ -52510,6 +52510,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/dotnet-aspire/index.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/introduction-dotnet-aspire/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/introduction-dotnet-aspire/2-what.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/introduction-dotnet-aspire/3-learn-about-components.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/introduction-dotnet-aspire/4-learn-about-tools.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/introduction-dotnet-aspire/5-exercise-use-eshop.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/introduction-dotnet-aspire/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/introduction-dotnet-aspire/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/introduction-dotnet-aspire/index.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/run-iot-edge-device-restricted-network-offline/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/iot-central/",
       "redirect_document_id": false
