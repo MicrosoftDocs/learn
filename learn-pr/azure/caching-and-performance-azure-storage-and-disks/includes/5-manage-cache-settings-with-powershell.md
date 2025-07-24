@@ -5,7 +5,7 @@ Creating administration scripts is a powerful way to optimize your workflow. You
 
 ## What is Azure PowerShell?
 
-Azure PowerShell is a cross-platform command-line tool to connect to your Azure subscription and manage resources. It's combination of two things: **PowerShell**, which provides the command-line tool support; and the **Az** PowerShell module, which provides the commands (referred to as "cmdlets") to work with Azure.
+Azure PowerShell is a cross-platform command-line tool to connect to your Azure subscription and manage resources. It's combination of two things: **PowerShell**, which provides the command-line tool support; and the **Az** PowerShell module, which provides the commands (referred to as *cmdlets*) to work with Azure.
 
 Azure PowerShell has cmdlets to manipulate most aspects of Azure resources. You can work with resource groups, storage, virtual machines, Microsoft Entra ID, containers, machine learning, and so on. We cover all these details in other training modules.
 

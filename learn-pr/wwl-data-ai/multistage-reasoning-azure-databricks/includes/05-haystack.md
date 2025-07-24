@@ -8,7 +8,7 @@ When you build a multi-stage reasoning system with Haystack, you work with sever
 
 :::image type="content" source="../media/haystack-overview.png" alt-text="Diagram of the main components of a Haystack architecture." lightbox="../media/haystack-overview.png":::
 
-1. **Pipelines**: A directed multigraph of components.
+1. **Pipelines**: A workflow that connects components in sequence to process data from start to finish.
 1. **Generators**: Components that use language models to create text responses.
 1. **Retriever**: A component that retrieves relevant documents for a query.
 1. **Document stores**: A database for your documents.

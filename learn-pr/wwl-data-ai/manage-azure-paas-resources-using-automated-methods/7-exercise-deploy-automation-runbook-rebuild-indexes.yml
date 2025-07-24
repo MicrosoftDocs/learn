@@ -4,13 +4,10 @@ title: 'Exercise: Deploy an automation runbook to automatically rebuild indexes'
 metadata:
   title: 'Exercise: Deploy an automation runbook to automatically rebuild indexes'
   description: "Exercise: Deploy an automation runbook to automatically rebuild indexes"
-  ms.date: 02/27/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-azureSandbox: false
-labId: 120596
-labModal: true
-durationInMinutes: 15
+durationInMinutes: 30
 content: |
-  [!include[](includes/7-exercise-deploy-automation-runbook-rebuild-indexes.md)]
+  [!include[](includes/7-exercise-deploy-automation-runbook-rebuild-indexes.md)]

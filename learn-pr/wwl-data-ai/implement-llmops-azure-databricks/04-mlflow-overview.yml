@@ -4,12 +4,12 @@ title: Describe MLflow deployment capabilities
 metadata:
   title: Describe MLflow deployment capabilities
   description: "Describe MLflow deployment capabilities"
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/17/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/04-mlflow-overview.md)]
+  [!include[](includes/04-mlflow-overview.md)]
