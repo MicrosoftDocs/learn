@@ -28,4 +28,4 @@ When you've finished the exercise in GitHub, return here for:
 > * A badge for completing this module
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/skills/introduction-to-secret-scanning)
+> [Start the exercise on GitHub](https://github.com/skills-dev/introduction-to-secret-scanning)
