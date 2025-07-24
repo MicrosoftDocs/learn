@@ -52798,6 +52798,41 @@
       "source_path": "learn-pr/paths/implement-information-protection/index.md",
       "redirect_url": "/training/paths/purview-implement-information-protection/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-migrating-aspnet-apps-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-dotnet-apps-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-migrating-aspnet-apps-azure/2-what-is-asp-net-app-migration.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-dotnet-apps-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-migrating-aspnet-apps-azure/3-evaluate-migration-considerations.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-dotnet-apps-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-migrating-aspnet-apps-azure/4-investigate-migration-assistants-and-options.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-dotnet-apps-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-migrating-aspnet-apps-azure/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-dotnet-apps-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-migrating-aspnet-apps-azure/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-dotnet-apps-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-migrating-aspnet-apps-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-dotnet-apps-azure/",
+      "redirect_document_id": false
     }
   ]
 }
