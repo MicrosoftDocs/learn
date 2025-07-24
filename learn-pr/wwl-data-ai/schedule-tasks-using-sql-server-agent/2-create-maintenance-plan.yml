@@ -4,7 +4,7 @@ title: Create a SQL Server maintenance plan
 metadata:
   title: Create a SQL Server maintenance plan
   description: "Create a SQL Server maintenance plan"
-  ms.date: 02/26/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 15
 content: |
-  [!include[](includes/2-create-maintenance-plan.md)]
+  [!include[](includes/2-create-maintenance-plan.md)]
