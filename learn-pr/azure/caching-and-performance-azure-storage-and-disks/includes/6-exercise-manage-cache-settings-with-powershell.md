@@ -1,14 +1,14 @@
 In the previous exercise, we performed the following tasks using the Azure portal:
 
-- View the OS disk cache status.
-- Change the cache settings of the OS disk.
-- Add a data disk to the VM.
-- Change the caching type on a new data disk.
+- Viewed the OS disk cache status.
+- Changed the cache settings of the OS disk.
+- Added a data disk to the VM.
+- Changed the caching type on a new data disk.
 
 Let's practice these operations using Azure PowerShell.
 
 > [!NOTE]
-> We're going to use Azure PowerShell, but you could also use the Azure CLI, which provides similar functionality as a console-based tool. It runs on macOS, Linux, and Windows. If you're interested in learning more about the Azure CLI, check out the **Manage Virtual Machines with the Azure CLI** module.
+> We're going to use Azure PowerShell, but you could also use the Azure CLI, which provides similar functionality as a console-based tool. It runs on macOS, Linux, and Windows. If you're interested in learning more about the Azure CLI, check out the **[Manage Virtual Machines with the Azure CLI](/training/modules/manage-virtual-machines-with-azure-cli/)** module.
 
 We're going to use the VM we created in the previous exercise. The operations in this lab assume:
 
@@ -83,7 +83,7 @@ Let's change it back to the default for an OS disk, which is *ReadWrite*.
     $myVM.StorageProfile.OsDisk.Caching = "ReadWrite"
     ```
 
-    This command runs fast, which should tell you it's doing something locally. The command only changes the property on the `myVM` object. If you refresh the `$myVM` variable by reassigning it using the `Get-AzVM` cmdlet, the caching value doesn't change on the VM.
+    This command runs quickly, which should tell you it's doing something locally. The command only changes the property on the `myVM` object. If you refresh the `$myVM` variable by reassigning it using the `Get-AzVM` cmdlet, the caching value doesn't change on the VM.
 
 1. To make the change on the VM itself, call `Update-AzVM` by running the following command:
 
@@ -91,7 +91,7 @@ Let's change it back to the default for an OS disk, which is *ReadWrite*.
     Update-AzVM -ResourceGroupName $myRGName -VM $myVM
     ```
 
-    Notice that this call takes a while to complete because we're updating the actual VM, and Azure restarts the VM  to make the change.
+    Notice that this command takes a while to complete, because we're updating the actual VM and Azure restarts the VM  to make the change.
 
     ```output
     RequestId IsSuccessStatusCode StatusCode ReasonPhrase

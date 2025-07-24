@@ -7,7 +7,7 @@ LLM-as-a-judge provides consistent and scalable evaluations. Unlike human evalua
 LLM-as-a-judge works by giving the evaluator LLM specific instructions through a prompt template. Here's an example template that evaluates how well a system answers a user's question:
 
 ```md
-You will be given a `user_question` and `system_answer` couple. Your task is to provide a 'total rating' scoring how well the `system_answer` answers the user concerns expressed in the `user_question`.
+You will be given a `user_question` and `system_answer` pair. Your task is to provide a 'total rating' scoring how well the `system_answer` answers the user concerns expressed in the `user_question`.
 
 Give your answer as a float on a scale of 0 to 10, where 0 means that the `system_answer` is not helpful at all, and 10 means that the answer completely and helpfully addresses the question. 
 

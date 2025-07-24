@@ -1,11 +1,10 @@
-
 Now that your data model is complete, it's time to insert some data and see how all the elements created with the tables work.
 
 In this exercise, you'll run sql commands to see how the tables are related in the data model and how the rules you created are enforced.
 
 ## Open a new query sheet
 
-1. To start working with SQL in the Azure SQL Database, you need to open a new query sheet. In Azure Data Studio, right-click the cards database server in the left pane and select **New Query**.
+1. To start working with SQL in the Azure SQL Database, you need to open a new query sheet. In Visual Studio Code, right-click the cards database server in the left pane and select **New Query**.
 
     ![Screenshot showing how to select New Query for a query sheet.](../media/query-1.png)
 
@@ -15,14 +14,14 @@ In this exercise, you'll run sql commands to see how the tables are related in t
 
 ## Working with data
 
-The following section will use the query sheet in Azure Data Studio. Once you've copied and pasted a command onto the sheet, you can highlight the SQL code. Once highlighted, either press **F5** or select the green **Run** button to run the SQL code in your Azure SQL Database.
+The following section will use the query sheet in Visual Studio Code. Once you've copied and pasted a command onto the sheet, you can highlight the SQL code. Once highlighted, either press **F5** or select the green **Run** button to run the SQL code in your Azure SQL Database.
 
 ![Screenshot showing how to select the green Run button to run the query in the query sheet.](../media/query-3.png)
 
 1. To start, insert a row into the cards table with the following SQL.
 
     > [!NOTE]
-    > To make inserting images simple, you will convert some text into varbinary with the `convert` SQL command.
+    > To make inserting images simple, you'll convert some text into varbinary with the `convert` SQL command.
 
     ```sql
     insert into dbo.cards (card_name, card_type, card_color, card_power, card_text, card_status, card_art)
@@ -108,7 +107,7 @@ The following section will use the query sheet in Azure Data Studio. Once you've
     values(1,23);
     ```
 
-    As expected, the insert was blocked by a foreign key violation:
+    As expected, a foreign key violation blocked the insert:
 
     ![Screenshot showing how an insert into set_lists table was blocked by foreign key violations.](../media/query-8.png)
 
@@ -206,7 +205,7 @@ The following section will use the query sheet in Azure Data Studio. Once you've
     values(@card5i,2);
     ```
 
-1. If you run this four-table join SQL query again, you can see all the cards, their translations and the sets to which they belong. Run the following SQL statement in the query sheet:
+1. If you run this four-table join SQL query again, you can see all the cards, their translations, and the sets to which they belong. Run the following SQL statement in the query sheet:
 
     ```sql
     select c.card_id, c.card_name, 
