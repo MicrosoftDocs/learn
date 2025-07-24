@@ -4,7 +4,7 @@ Ingress controllers define how your application can connect to the outside world
 
 In this unit you'll:
 
-* Configure the ingress manifest so the container image can be accessed by outside applications.
+* Configure the ingress manifest so outside applications can access the container image.
 * Deploy the ingress controller.
 * Create a web app using a Docker image.
 

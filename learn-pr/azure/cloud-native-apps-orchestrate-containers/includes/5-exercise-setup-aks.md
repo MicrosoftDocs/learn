@@ -140,7 +140,7 @@ It can take some time to fully deploy Kubernetes clusters and access them. You c
 
 2. Open the integrated editor in Cloud Shell using `code .`.
 
-3. Open the `service.yaml` file to review the configuration. **You don't need to edit anything**, just take note that we will name our service `cna-express`.
+3. Open the `service.yaml` file to review the configuration. **You don't need to edit anything**, just take note that we'll name our service `cna-express`.
 
     ```yaml
     # service.yaml
