@@ -60,4 +60,4 @@ Now, you must set the SSH configuration and finalize creation of your VM so that
 
 Great work! You have deployed a Linux VM that you can connect to using SSH.
 
-In the next section, you'll learn how to use the VS Code Remote - SSH extension to connect to the VM.
+In the next section, you'll learn how to use the Visual Studio Code Remote - SSH extension to connect to the VM.

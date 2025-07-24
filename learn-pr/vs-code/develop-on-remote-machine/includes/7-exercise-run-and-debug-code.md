@@ -32,7 +32,7 @@ To create and run your Node.js application, you'll need to run a series of comma
     express myExpressApp --view pug
     ```
 
-4. Open the application files by clicking Open Folder in the Explorer view. Select "myExpressApp" in the dropdown to open the folder in your VS Code window.
+4. Open the application files by clicking Open Folder in the Explorer view. Select "myExpressApp" in the dropdown to open the folder in your Visual Studio Code window.
 
     :::image type="content" source="../media/7-open-folder.png" alt-text="Screenshot showing opening the myExpressApp folder.":::
 
@@ -75,9 +75,9 @@ Now that the application is running, you can use Port forwarding to browse the w
 
 ## Edit and debug the application
 
-You can use VS Code's built-in features to edit and debug the application running on the remote machine.
+You can use Visual Studio Code's built-in features to edit and debug the application running on the remote machine.
 
-1. Navigate to the File Explorer in VS Code and open the app.js file.
+1. Navigate to the File Explorer in Visual Studio Code and open the app.js file.
 2. Set a breakpoint on line 10 of the file by clicking in the gutter to the left of the line number. You'll see a red circle displayed.
 
     :::image type="content" source="../media/7-breakpoint.png" alt-text="Screenshot showing a breakpoint set at line 10 of the app.js file.":::
