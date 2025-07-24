@@ -4,11 +4,11 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Module assessment"
-  ms.date: 07/23/2025
+  ms.date: 07/24/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 10
 quiz:
   title: "Check your knowledge"
   questions:
@@ -19,7 +19,7 @@ quiz:
       explanation: "Incorrect. Vibe coding shifts away from line-by-line coding to describing desired experiences in natural language."
     - content: "Describing desired product experiences in natural language rather than writing code line-by-line."
       isCorrect: true
-      explanation: "Correct. Vibe coding emphasizes describing what you want in natural language, allowing AI to generate the implementation details."
+      explanation: "Correct. Vibe coding emphasizes a developer describing what they want in natural language, allowing AI to generate the implementation details."
     - content: "Using only visual programming interfaces without any text-based coding."
       isCorrect: false
       explanation: "Incorrect. Vibe coding still involves code generation, but the approach focuses on natural language descriptions rather than manual coding."
@@ -89,7 +89,7 @@ quiz:
     - content: "Making requests as brief as possible without any context."
       isCorrect: false
       explanation: "Incorrect. While brevity can be good, context and specificity are crucial for effective prompts."
-  - content: "When should you break down complex tasks in your prompts to GitHub Copilot?"
+  - content: "When should a developer break down complex tasks in their prompts to GitHub Copilot?"
     choices:
     - content: "Never, because it confuses the AI."
       isCorrect: false
@@ -100,12 +100,12 @@ quiz:
     - content: "When facing complex tasks to make them more manageable and get better results."
       isCorrect: true
       explanation: "Correct. Decomposing complex tasks into smaller components leads to better results and makes debugging easier."
-  - content: "What should you do when GitHub Copilot's initial response doesn't meet your expectations?"
+  - content: "What should a developer do when GitHub Copilot's initial response doesn't meet their expectations?"
     choices:
     - content: "Immediately start over with a different approach."
       isCorrect: false
       explanation: "Incorrect. It's better to iterate and refine rather than restart."
-    - content: "Iterate on your prompt by adding more context, being more specific, or asking follow-up questions."
+    - content: "Iterate on their prompt by adding more context, being more specific, or asking follow-up questions."
       isCorrect: true
       explanation: "Correct. Copilot works best through iterative conversation, refining requests based on previous responses."
     - content: "Accept the response as-is since AI suggestions are always optimal."

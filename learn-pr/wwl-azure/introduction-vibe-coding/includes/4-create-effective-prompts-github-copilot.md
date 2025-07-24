@@ -20,7 +20,7 @@ Creating high-quality prompts is essential for getting the most value from GitHu
 
 When writing a prompt for Copilot, begin with a broad description of your goal or scenario, then provide specific requirements. This approach gives Copilot the necessary context while ensuring your detailed needs are addressed.
 
-**Example:**
+**Example**:
 
 ```text
 Write a function that tells me if a number is prime.

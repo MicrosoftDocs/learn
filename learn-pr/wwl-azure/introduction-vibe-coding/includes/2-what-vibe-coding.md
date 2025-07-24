@@ -16,7 +16,7 @@ For example:
 
 - A sales or marketing professional can use vibe coding to create a simple prototype that demonstrates their vision for a product or service. They can describe the desired features and functionality in natural language, and the AI will generate a prototype app that can be pitched to management or stakeholders. If approved, the prototype can be handed off to a development team to create a production-ready application.
 
-- A teacher can use vibe coding to create educational tools or resources, such as a quiz app or a simple game, by describing the desired functionality and content in natural language. This approach allows educators to quickly develop interactive learning materials without needing extensive programming skills.
+- A teacher can use vibe coding to create educational tools or resources, such as a knowledge check app or a simple game, by describing the desired functionality and content in natural language. This approach allows educators to quickly develop interactive learning materials without needing extensive programming skills.
 
 - An engineer or data scientist can use vibe coding to create a prototype data analysis tool or visualization by describing the desired functionality and data sources in natural language. The AI tool can generate a prototype that can be tested and refined, allowing engineers to quickly explore ideas without needing to write extensive code.
 
