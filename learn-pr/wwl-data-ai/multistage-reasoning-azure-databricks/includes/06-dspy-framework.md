@@ -1,4 +1,4 @@
-**DSPy** is a framework that helps you build programs with Large Language Models (LLMs) by focusing on what you want the model to do rather than how to prompt it. Instead of manually writing and adjusting prompts, DSPy automatically optimizes prompts and system performance for you. Use this framework when you want systematic optimization of your LLM interactions rather than manual prompt engineering.
+**DSPy** is a framework that helps you build programs with Large Language Models (LLMs) by focusing on what you want the model to do rather than how to prompt it. Instead of manually writing and adjusting prompts, DSPy automatically optimizes prompts and system performance for you. This framework works best when you want to stop writing prompts manually and instead describe what you want rather than how to ask for it.
 
 DSPy treats LLM interactions as programmable modules that can be composed, optimized, and reused. When you build multi-stage reasoning systems, DSPy lets you declare the behavior you need at each stage (using signatures) and automatically finds the best way to prompt the LLM to achieve that behavior.
 

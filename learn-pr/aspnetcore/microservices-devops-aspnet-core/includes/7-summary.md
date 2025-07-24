@@ -21,7 +21,7 @@ Earlier, you created an Entra service principal that allows GitHub to authentica
 
    - Owned by the current user.
    - Containing the string `eShop` in the display name.
-   
+
 1. Use the `az ad sp delete` Azure CLI command to remove each matching service principal.
 
 1. Delete the Azure resource group `rg-eshop` to delete all the resources you created in previous units.

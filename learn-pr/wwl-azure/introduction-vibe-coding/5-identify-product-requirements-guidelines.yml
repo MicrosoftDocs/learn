@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-vibe-coding.identify-product-requirements-guidelines
+title: Identify product requirements and coding guidelines
+metadata:
+  title: Identify Product Requirements and Coding Guidelines
+  description: "Identify product requirements and coding guidelines"
+  ms.date: 07/24/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-identify-product-requirements-guidelines.md)]

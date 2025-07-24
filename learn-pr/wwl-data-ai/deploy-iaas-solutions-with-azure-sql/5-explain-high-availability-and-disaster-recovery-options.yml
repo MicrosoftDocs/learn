@@ -4,7 +4,7 @@ title: Explain high availability and disaster recovery options
 metadata:
   title: Explain high availability and disaster recovery options
   description: "Explain high availability and disaster recovery options"
-  ms.date: 02/18/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 12
 content: |
-  [!include[](includes/5-explain-high-availability-and-disaster-recovery-options.md)]
+  [!include[](includes/5-explain-high-availability-and-disaster-recovery-options.md)]
