@@ -1,6 +1,6 @@
 In our example scenario, your team needs to deploy a container image from Azure Container Registry to AKS.
 
-In this unit, you will:
+In this unit you'll:
 
 * Connect to the AKS Kubernetes cluster using kubectl in Azure Cloud Shell.
 * Configure a deployment manifest for the express.js container.

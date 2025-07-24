@@ -2,7 +2,7 @@ Kubernetes gives Pods their own IP addresses and gives a single DNS name for a s
 
 Ingress controllers define how your application can connect to the outside world. In the example scenario, smart fridges need to send messages to the Node.js container, and Ingress controllers determine the configuration of that connection.
 
-In this unit, you will:
+In this unit you'll:
 
 * Configure the ingress manifest so the container image can be accessed by outside applications.
 * Deploy the ingress controller.
