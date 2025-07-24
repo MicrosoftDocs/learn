@@ -10,10 +10,12 @@ metadata:
   ms.topic: module
   ms.service: security-copilot
 summary: >
-  [Add brief summary]
+  In this module, you'll learn more about this integration and how it helps IT teams work smarter with streamlined deployment and AI enhancements.
 abstract: |
   By the end of this module, you'll be able to:
-  - [Add learning objectives here]
+  - Describe how the Surface Management Portal empowers easy management of Surface devices
+  - Explain how Security Copilot enhances the Surface Management Portal experience
+  - Identify the benefits of using Security Copilot in the Surface Management Portal
 prerequisites: |
   - None
 iconUrl: /training/achievements/generic-badge.svg
