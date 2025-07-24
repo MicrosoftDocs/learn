@@ -16,7 +16,7 @@ For more information about PolyBase, see [PolyBase features and limitations](/sq
 
 - **Native support for CSV, Parquet, & Delta 1**:  PolyBase Query Service for External Data installation is no longer required to use OPENROWSET, CREATE EXTERNAL TABLE, or CREATE EXTERNAL TABLE AS SELECT with the following types of external data: Parquet, Delta, Azure Blob Storage (ABS), Azure Data Lake Storage (ADLS), or S3-Compatible Object storage.
 
-- **Use generic ODBC data sources on Linux**:  For more information, see [Configure PolyBase to access external data with ODBC generic types](https://learn.microsoft.com/sql/relational-databases/polybase/polybase-configure-odbc-generic?view=sql-server-ver17&tabs=windows).
+- **Use generic ODBC data sources on Linux**:  For more information, see [Configure PolyBase to access external data with ODBC generic types](/sql/relational-databases/polybase/polybase-configure-odbc-generic).
 
 - **TDS 8.0 support**:  When using Microsoft ODBC Driver 18 for SQL Server, TDS 8.0 isn't supported for SQL Server as an external data source.
 
