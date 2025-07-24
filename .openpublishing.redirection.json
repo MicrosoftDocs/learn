@@ -52510,6 +52510,91 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/aspnetcore/use-databases-dotnet-aspire-app/exercise-use-databases-persist-data-from-aspire-app.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/database/sql-server-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/use-databases-dotnet-aspire-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/database/sql-server-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/use-databases-dotnet-aspire-app/introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/database/sql-server-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/use-databases-dotnet-aspire-app/knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/database/sql-server-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/use-databases-dotnet-aspire-app/store-data-nosql-databases.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/database/sql-server-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/use-databases-dotnet-aspire-app/store-data-sql-databases.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/database/sql-server-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/use-databases-dotnet-aspire-app/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/database/sql-server-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/use-databases-dotnet-aspire-app/test-aspire-projects.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/database/sql-server-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/improve-performance-cache-aspire/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/caching/caching-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/improve-performance-cache-aspire/2-caches-redis.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/caching/caching-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/improve-performance-cache-aspire/3-redis-distributed-cache.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/caching/caching-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/improve-performance-cache-aspire/4-redis-output-cache.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/caching/caching-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/improve-performance-cache-aspire/5-customize-connection-strings.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/caching/caching-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/improve-performance-cache-aspire/6-exercise-cache-data-redis.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/caching/caching-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/improve-performance-cache-aspire/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/caching/caching-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/improve-performance-cache-aspire/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/caching/caching-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/improve-performance-cache-aspire/index.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/aspire/caching/caching-integrations",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/aspnetcore/create-aspire-applications/exercise-create-new-aspire-application.yml",
       "redirect_url": "https://learn.microsoft.com/dotnet/aspire/get-started/build-your-first-aspire-app",
       "redirect_document_id": false
