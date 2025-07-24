@@ -52793,6 +52793,11 @@
       "source_path": "learn-pr/wwl-data-ai/secure-ai-services/6-summary.md",
       "redirect_url": "/azure/ai-services/security-features",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-information-protection/index.md",
+      "redirect_url": "/training/paths/purview-implement-information-protection/",
+      "redirect_document_id": false
     }
   ]
 }
