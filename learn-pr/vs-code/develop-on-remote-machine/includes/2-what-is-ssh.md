@@ -15,7 +15,7 @@ You want to explore setting up a remote machine for each application that your a
 
 ## Configuring a remote machine for SSH
 
-One way to set up a remote machine is to configure a virtual machine (VM) to use SSH. There are a lot of different configuration options for VMs, such as the operating system and size. The VM should be configured with the same properties needed for developing your agency's applications. For example, the application is deployed on a Linux machine, so a Linux VM should be used. 
+One way to set up a remote machine is to configure a virtual machine (VM) to use SSH. There are a lot of different configuration options for VMs, such as the operating system and size. The VM should be configured with the same properties needed for developing your agency's applications. For example, the application is deployed on a Linux machine, so you should use a Linux VM.
 
 The VM must also be configured to use SSH by generating the SSH key pair and allowing inbound connections on port 22. Port 22 is the default port used for SSH connections. Once these SSH settings are configured on the VM, the VM becomes an SSH server with a unique public IP address for secure connections.
 
