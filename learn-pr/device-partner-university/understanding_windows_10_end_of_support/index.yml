@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.dpu.Understanding-windows10-EOS
+uid: learn.dpu.Understanding-windows10-end-of-support
 title: Prepare for Windows 10 end of support
 metadata:
   title: Prepare for Windows 10 end of support
@@ -32,11 +32,11 @@ products:
   - windows-11 
   - windows-10
 units:
-  - learn.dpu.Understanding-windows10-EOS.introduction
-  - learn.dpu.Understanding-windows10-EOS.why-windows-10-end-of-support-matters
-  - learn.dpu.Understanding-windows10-EOS.move-confidently-to-windows-11
-  - learn.dpu.Understanding-windows10-EOS.windows-knows-business
-  - learn.dpu.Understanding-windows10-EOS.support-beyond-end-of-support
-  - learn.dpu.Understanding-windows10-EOS.summary
+  - learn.dpu.Understanding-windows10-end-of-support.introduction
+  - learn.dpu.Understanding-windows10-end-of-support.why-windows-10-end-of-support-matters
+  - learn.dpu.Understanding-windows10-end-of-support.move-confidently-to-windows-11
+  - learn.dpu.Understanding-windows10-end-of-support.windows-knows-business
+  - learn.dpu.Understanding-windows10-end-of-support.support-beyond-end-of-support
+  - learn.dpu.Understanding-windows10-end-of-support.summary
 badge:
-  uid: learn.dpu.Understanding-windows10-EOS.badge
+  uid: learn.dpu.Understanding-windows10-end-of-support.badge
