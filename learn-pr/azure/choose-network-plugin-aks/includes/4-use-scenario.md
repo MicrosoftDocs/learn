@@ -11,11 +11,11 @@ If one or more of the following aren't true, you consider opting for a developme
 * The operational overhead of maintaining route tables and UDRs in the development environment is acceptable.
 * The development environment only supports Linux-based node pools.
 
-With kubenet, the Azure platform automatically creates and configures the virtual network resources whenever you create an AKS cluster. You can also manually create and configure the virtual network resources and attach it to those resources at creation time. However, making changes to Azure-managed network resources is unsupported.
+With kubenet, the Azure platform automatically creates and configures the virtual network resources whenever you create an AKS cluster. You can also manually create and configure the virtual network resources and attach it to those resources at creation time. However, making changes to Azure-managed network resources isn't supported.
 
 ## Production
 
-Bear in mind that there are several factors that prevent kubenet from being an acceptable networking option for production. Kubenet shines as a quick method to prototype and test small applications in development. 
+Bear in mind that there are several factors that prevent kubenet from being an acceptable networking option for production. Kubenet shines as a quick method to prototype and test small applications in development.
 
 Instead, Azure CNI is more suited for production environments for its configurable networking option that includes:
 
