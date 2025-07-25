@@ -6265,6 +6265,41 @@ achievements:
   title: Develop Generative AI solutions with Azure OpenAI in Foundry Models
   summary: Azure OpenAI in Foundry Models provides access to OpenAI's powerful large language models such as GPT and Embeddings models. These models enable various natural language processing (NLP) solutions to understand, converse, and generate content. Users can access the service through REST APIs, SDKs, and Azure AI Foundry.
   iconUrl: /training/achievements/develop-ai-solutions-azure-openai.svg
+- uid: learn.send-messages-rabbitmq-dotnet-aspire-app.badge
+  type: badge
+  title: Send messages with RabbitMQ in a .NET Aspire project
+  summary: Learn how to use message queues on RabbitMQ exchange servers to decouple microservices and manage communications in a cloud-native application built with .NET Aspire.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.improve-performance-cache-aspire.badge
+  type: badge
+  title: Improve performance with a cache in a .NET Aspire project
+  summary: Learn about using Redis caching to increase performance in a cloud-native application. You'll also discover how .NET Aspire makes it easy to access Redis caching services from your microservices.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.use-databases-dotnet-aspire-app.badge
+  type: badge
+  title: Use databases in a .NET Aspire project
+  summary: Learn about the database systems that .NET Aspire can connect to using built-in integrations. Then see how to configure connections to, and store data in, relational and nonrelational databases.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.use-telemetry-dotnet-aspire.badge
+  type: badge
+  title: Use telemetry in a .NET Aspire project
+  summary: Learn how to use telemetry in a .NET Aspire project to log data and examine the behavior of a cloud-native application.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.create-aspire-application.badge
+  type: badge
+  title: Create a .NET Aspire project
+  summary: Learn how to create cloud-native applications from scratch or add orchestration to an existing app by using the .NET Aspire stack in .NET 8.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.dotnet-aspire.trophy
+  type: trophy
+  title: Build distributed apps with .NET Aspire
+  summary: Learn how to build observable, production ready, distributed applications with .NET Aspire. 
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.introduction-dotnet-aspire.badge
+  type: badge
+  title: Introduction to .NET Aspire
+  summary: Learn about the .NET Aspire stack in .NET 8 and how you can use it to ease and accelerate the development of cloud-native web applications. 
+  iconUrl: /learn/achievements/generic-badge.svg
 - uid: learn.iot.run-iot-edge-device-restricted-network-offline.badge
   type: badge
   title: Run an IoT Edge device in a restricted network and offline
