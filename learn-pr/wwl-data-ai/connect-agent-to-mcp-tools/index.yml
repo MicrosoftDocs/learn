@@ -36,6 +36,7 @@ units:
 - learn.wwl.connect-agent-to-mcp-tools.introduction
 - learn.wwl.connect-agent-to-mcp-tools.understand-mcp-tool-discovery
 - learn.wwl.connect-agent-to-mcp-tools.mcp-client-server-setup
+- learn.wwl.connect-agent-to-mcp-tools.use-azure-ai-agents-with-mcp
 - learn.wwl.connect-agent-to-mcp-tools.exercise
 - learn.wwl.connect-agent-to-mcp-tools.knowledge-check
 - learn.wwl.connect-agent-to-mcp-tools.summary
