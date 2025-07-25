@@ -1,17 +1,17 @@
-Blazor gives you the power to connect C# code to HTML DOM events. You'll use this ability to improve an existing app.
+Blazor gives you the power to connect C# code to HTML DOM events. In this exercise, you use this ability to improve an existing app.
 
-As part of a development team working to enhance a Blazing Pizza app, you've been asked to finish the checkout process to capture customers' addresses. You'll add some text fields and improve the checkout process.
+As part of a development team working to enhance a Blazing Pizza app, you're asked to finish the checkout process to capture customers' addresses. You want to add some text fields and improve the checkout process.
 
-In this exercise, you'll clone an existing app and create a new address component to capture address details. With the fields in place, you'll set the focus to the first field on the form.
+In this exercise, you clone an existing app and create a new address component to capture address details. With the fields in place, you set the focus to the first field on the form.
 
 ## Clone your team's existing app
 
 > [!NOTE]
-> This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
+> This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continue development using Visual Studio Code (Windows, Linux, & macOS).
 
 [!include[](../../../includes/dotnet9-sdk-version.md)]
 
-If you haven't created a Blazor app before, follow the [setup instructions for Blazor](https://aka.ms/blazor-getting-started) to install the correct version of .NET and check your machine is set up correctly. Stop at the **Create your app** step.
+If you're creating your first Blazor app, follow the [setup instructions for Blazor](https://aka.ms/blazor-getting-started) to install the correct version of .NET and check your machine is set up correctly. Stop at the **Create your app** step.
 
 1. Open **Visual Studio Code**.
 1. Open the integrated terminal from Visual Studio Code by selecting **View**, then select **Terminal** from the main menu.
@@ -32,7 +32,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
     :::image type="content" source="../media/3-blazing-pizza-starting-state.png" alt-text="Screenshot of the Blazing Pizza app after cloning it":::
 
-    Try configuring some pizzas and adding them to your order. Select **Order >** at the bottom of the page. You'll see the current checkout page.
+    Try configuring some pizzas and adding them to your order. Select **Order >** at the bottom of the page. You should see the current checkout page.
 
 1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app from running.
 
@@ -40,7 +40,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
 1. In Visual Studio Code, in the file explorer, expand **Pages**, then select **Checkout.razor**.
 
-    At the moment, the checkout page just shows the list of pizzas that have been configured. You've been asked to refactor the page to include an address section.
+    At the moment, the checkout page just shows the list of pizzas that were configured. You're asked to refactor the page to include an address section.
 
 1. Replace the existing `<div class="main">` HTML block to have two columns for data.
 
@@ -66,7 +66,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
     The preceding code connects the HTML `onclick` event for the button element to the `PlaceOrder` Blazor method in the `@code` block.
 
-    The refactoring references two new Blazor controls `OrderReview` and `AddressEditor`. You'll move the old checkout code that listed the pizzas to the `OrderReview` component.
+    The refactoring references two new Blazor controls `OrderReview` and `AddressEditor`. Move the old checkout code that listed the pizzas to the `OrderReview` component.
 
 1. In the file explorer, right-click on **Shared**, then select **New File**.
 1. Enter **OrderReview.razor** as the filename.
@@ -160,7 +160,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
 ## Improve usability of the form
 
-When the customer is taken to the checkout page, the first thing they do is enter their name. Blazor allows you to set the focus on HTML elements on a page. Let's make our app better by adding this.
+When the customer is taken to the checkout page, the first thing they do is enter their name. Blazor allows you to set the focus on HTML elements in a page. Let's make our app better by adding this behavior.
 
 1. In **AddressEditor.razor**, change the HTML for the name `input` element to add `@ref="startName"`.
 
@@ -168,9 +168,9 @@ When the customer is taken to the checkout page, the first thing they do is ente
     <input @ref="startName" @bind="Address.Name" />
     ```
 
-    The Blazor directive `@ref="startName"` lets the code block create an `ElementReference` to reference the input element. You can then use this element reference to call `FocusAsync` after a page has been rendered.
+    The Blazor directive `@ref="startName"` lets the code block create an `ElementReference` to reference the input element. You can then use this element reference to call `FocusAsync` after a page is rendered.
 
-1. Add code to call `FocusAsync` after a page has loaded under the `[Parameter] public Address Address { get; set; }` declaration.
+1. Add code to call `FocusAsync` after a page is loaded under the `[Parameter] public Address Address { get; set; }` declaration.
 
     ```razor
     private ElementReference startName;
@@ -183,7 +183,7 @@ When the customer is taken to the checkout page, the first thing they do is ente
     }    
     ```
 
-    This code creates the `ElementReference` and then after a page has been rendered sets the focus to the `Name` field.
+    This code creates the `ElementReference` and then after a page is rendered sets the focus to the `Name` field.
 
 1. In Visual Studio Code, press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 

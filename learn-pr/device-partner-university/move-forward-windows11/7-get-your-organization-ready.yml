@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.move-forward-windows11.get-your-organization-ready
+title: Get your organization ready
+metadata:
+  title: Get Your Organization Ready
+  description: This content is part of the "Move forward with Windows 11 Pro before Windows 10 EOS" module.
+  ms.date: 07/24/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-get-your-organization-ready.md)]

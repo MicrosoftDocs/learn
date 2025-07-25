@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Module assessment
   description: "Check your knowledge on choosing an AKS networking plugin."
-  ms.date: 03/18/2024
+  ms.date: 07/18/2025
   author: schaffererin
   ms.author: schaffererin
   ms.topic: unit
@@ -39,4 +39,4 @@ quiz:
       isCorrect: true
       explanation: "The extra features and reduced latency of Azure CNI make it a better choice for production clusters."
    
-
+

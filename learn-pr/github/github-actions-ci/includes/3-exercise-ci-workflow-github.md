@@ -21,4 +21,4 @@ After you finish the exercise in GitHub, return here for:
 > *Altering the contents in this workflow can break the exercise's ability to validate your actions, provide feedback, and grade the results.* You don't need to modify any of the workflow files to complete this exercise.
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/skills/test-with-actions)
+> [Start the exercise on GitHub](https://github.com/skills-dev/test-with-actions)

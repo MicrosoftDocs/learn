@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.move-forward-windows11.stay-secure-with-windows-11
+title: Stay secure with Windows 11
+metadata:
+  title: Stay Secure With Windows 11
+  description: This content is part of the "Move forward with Windows 11 Pro before Windows 10 EOS" module.
+  ms.date: 07/24/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-stay-secure-with-windows-11.md)]
