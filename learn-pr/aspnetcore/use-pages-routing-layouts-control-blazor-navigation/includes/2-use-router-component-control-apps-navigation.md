@@ -143,7 +143,7 @@ You can also use the `NavigationManager` object to send your users to another co
 ```
 
 > [!NOTE]
-> The string that you pass to the `NavigateTo()` method is the absolute or relative URI where you want to send the user. Make sure that you have a component set up at that address. For the preceding code, a component with the `@page "/buypizza"` directive will handle this route.
+> The string that you pass to the `NavigateTo()` method is the absolute or relative URI where you want to send the user. Make sure that you have a component set up at that address. In the preceding code, a component with the `@page "/buypizza"` directive handles this route.
 
 ## Use NavLink components
 
