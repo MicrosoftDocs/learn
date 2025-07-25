@@ -6,7 +6,7 @@ To connect using SSH, you must have a running SSH server. Most commonly, the con
 
 ## Using SSH for development
 
-You want to explore setting up a remote machine for each application that your agency works on. Each machine is its own remote development environment that you can access, without needing any application files on your local machine. You see the following ways that connecting to a remote machine using SSH can benefit your agency:
+You want to explore setting up a remote machine for each application your agency works on. Each machine is its own remote development environment that you can access without needing any application files on your local machine. Here are some ways that connecting to a remote machine using SSH can benefit your agency:
 
 - Securely connect to the remote machine that has the same operating system where your application is deployed.
 - Seamlessly switch between SSH connections depending on which application you're working on.
@@ -15,7 +15,7 @@ You want to explore setting up a remote machine for each application that your a
 
 ## Configuring a remote machine for SSH
 
-One way to set up a remote machine is to configure a virtual machine (VM) to use SSH. There are a lot of different configuration options for VMs, such as the operating system and size. The VM should be configured with the same properties needed for developing your agency's applications. For example, the application is deployed on a Linux machine, so you should use a Linux VM.
+One way to set up a remote machine is to configure a virtual machine (VM) to use SSH. There are a lot of different configuration options for VMs, such as the operating system and size. The VM should be configured with the same properties you need for developing your agency's applications. For example, if the application is deployed on a Linux machine, you should use a Linux VM.
 
 The VM must also be configured to use SSH by generating the SSH key pair and allowing inbound connections on port 22. Port 22 is the default port used for SSH connections. Once these SSH settings are configured on the VM, the VM becomes an SSH server with a unique public IP address for secure connections.
 
