@@ -25,7 +25,7 @@ Each component lifecycle method has a specific purpose, and you can override the
 | **1** | Component created | The component is instantiated. |
 | **2** | <xref:Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync%2A> | Sets parameters from the component's parent in the render tree. |
 | **3** | <xref:Microsoft.AspNetCore.Components.ComponentBase.OnInitialized%2A> / <xref:Microsoft.AspNetCore.Components.ComponentBase.OnInitializedAsync%2A> | Occurs when the component is ready to start. |
-| **4** | <xref:Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet%2A> / <xref:Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync%2A> | Occurs when the component has received parameters and properties are assigned. |
+| **4** | <xref:Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet%2A> / <xref:Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync%2A> | Occurs when the component receives parameters and properties are assigned. |
 | **5** | <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender%2A> / <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync%2A> | Occurs after the component renders. |
 | **6** | `Dispose` / `DisposeAsync` | If the component implements either <xref:System.IDisposable> or <xref:System.IAsyncDisposable>, the appropriate disposable occurs as part of destroying the component. |
 
@@ -81,7 +81,7 @@ If the component needs to render, you can use the `BuildRenderTree` method to ge
 
 Next, the component view is rendered and the UI is updated. Finally, the component runs the `OnAfterRender` and `OnAfterRenderAsync` methods. At this point, the UI is fully functional, and you can interact with JavaScript and any elements in the DOM. Use these methods to do any other steps that require access to the fully rendered content, such as calling JavaScript code from JS interop.
 
-The `OnAfterRender` and `OnAfterRenderAsync` methods take a boolean parameter called `firstRender`. This parameter is `true` the first time the methods are run, but `false` thereafter. You can evaluate this parameter to do one-time operations that might be wasteful and resource intensive if they're repeated every time the component renders.
+The `OnAfterRender` and `OnAfterRenderAsync` methods take a boolean parameter called `firstRender`. This parameter is `true` the first time the methods are run, but `false` thereafter. You can evaluate this parameter to do one-time operations that might be wasteful and resource intensive if you repeat them every time the component renders.
 
 > [!NOTE]
 > Don't confuse prerendering with the first render for a Blazor component. Prerendering occurs before a SignalR connection is established with the browser, and generates a static version of a page. The first render occurs when the connection with the browser is fully active and all functionality is available.
