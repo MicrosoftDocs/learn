@@ -1,8 +1,8 @@
-At the moment, the Blazing Pizza app is using HTML elements to capture data and for buttons. The Blazor framework has improved support for forms that allow them to use components that can be bound to a C# model.
+At the moment, the Blazing Pizza app is using HTML elements for buttons and to capture data. The Blazor framework improves support for forms, allowing them to use components that can be bound to a C# model.
 
 The team would like you to replace the current HTML elements with Blazor components. The team would like you to only submit orders if the address and name aren't blank.
 
-In this exercise, you'll replace the current HTML fields with a Blazor component and change how customers submit orders. You'll see how to use the EditContext to write manual validations for a form.
+In this exercise, you replace the current HTML fields with a Blazor component and change how customers submit orders. Then, you see how to use the EditContext to write manual validations for a form.
 
 ## Add a Blazor EditForm component
 
@@ -46,12 +46,12 @@ In this exercise, you'll replace the current HTML fields with a Blazor component
 1. In the file explorer, expand **Shared**, then select **AddressEditor.razor**.
 
 1. Select the **Edit** menu, then select **Replace**.
-1. In the first field enter `<input`, in the replace field enter `<InputText`, and then select replace all.
+1. In the **Find** field enter `<input`, in the **Replace** field enter `<InputText`, and then select **Replace All**.
 
     :::image type="content" source="../media/5-replace-input-elements.png" alt-text="Screenshot of Visual Studio Code and the text replace dialog.":::
 
 1. Select the **Edit** menu, then select **Replace**.
-1. In the first field enter `@bind=`, in the replace field enter `@bind-Value=`, and then select replace all.
+1. In the **Find** field `@bind=`, in the **Replace** field enter `@bind-Value=`, and then select **Replace All**.
 1. Remove the `@ref="startName"` code on the Name field.
 1. Remove all the code below the Parameter declaration in the `@code` block. The block should now look like this.
 
