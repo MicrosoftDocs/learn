@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.Understanding-windows10-EOS.why-windows-10-eos-matters
+title: Why Windows 10 eos matters
+metadata:
+  title: Why Windows 10 Eos Matters
+  description: This content is part of the "Understanding Windows 10 end of support" module.
+  ms.date: 07/17/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-why-windows-10-eos-matters.md)]
