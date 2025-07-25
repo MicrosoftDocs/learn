@@ -2,14 +2,14 @@ You can enhance your Azure AI Foundry agent by connecting it to Model Context Pr
 
 When you use the Azure AI Foundry Agent Service to connect to your MCP server, you don't need to manually create an MCP client session or add any function tools to your agent. Instead, you create an MCP tool object that connects to your MCP server. Then you add information about the MCP server to the agent thread when invoking a prompt. This also allows you to connect and use different tools from multiple servers depending on your needs.
 
-## Integrating Remote MCP Servers
+## Integrating remote MCP servers
 
 To connect to an MCP server, you need:
 - A remote MCP server endpoint (for example, https://api.githubcopilot.com/mcp/).
 - An Azure AI Foundry agent configured to use the MCP tool.
 
 You can connect to multiple MCP servers by adding them as separate tools, each with:
-- `server_label`: A unique identifier for the MCP server (e.g., github).
+- `server_label`: A unique identifier for the MCP server (e.g., GitHub).
 - `server_url`: The MCP server’s URL.
 - `allowed_tools` (optional): A list of specific tools the agent is allowed to access.
 
@@ -31,7 +31,7 @@ When using the Azure MCP Tool object, you don't need to wrap function tools or i
 - Create an agent run and pass additional information about the mcp tool in `tool_resources`
 - When the run completes, you should see the results of any invoked tools in the response.
 
-Note: If the model tries to invoke a tool in your MCP server with approval required, you get a run status of requires_action. 
+If the model tries to invoke a tool in your MCP server with approval required, you get a run status of requires_action. 
     - In the `requires_action` field, you can get more details on which tool in the MCP server is called and any arguments to be passed.
     - Review the tool and arguments so that you can make an informed decision for approval.
     - Submit your approval to the agent with call_id by setting approve to true.
