@@ -1,1 +1,15 @@
-Understand how Microsoft Purview controls AI data access
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-understand-risks.control-ai-sensitive-data
+title: Understand how Microsoft Purview controls AI data access
+metadata:
+  title: Understand How Microsoft Purview Controls AI Data Access
+  description: "Understand how Microsoft Purview controls AI data access."
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/control-ai-sensitive-data.md)]

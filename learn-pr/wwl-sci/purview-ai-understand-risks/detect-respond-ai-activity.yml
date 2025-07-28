@@ -1,1 +1,15 @@
-Understand how Microsoft Purview addresses risky AI activity
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-understand-risks.detect-respond-ai-activity
+title: Understand how Microsoft Purview addresses risky AI activity
+metadata:
+  title: Understand How Microsoft Purview Addresses Risky AI Activity
+  description: "Understand how Microsoft Purview addresses risky AI activity."
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/detect-respond-ai-activity.md)]

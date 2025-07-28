@@ -24,6 +24,8 @@ DLP policies can be configured to:
 
 Microsoft 365 Copilot (preview) is now available as a **DLP policy location**, which lets you apply DLP rules directly to Copilot prompts. You can configure policies to block, audit, or notify users when Copilot activity matches a sensitive information type or label.
 
+:::image type="content" source="../media/copilot-dlp-flow.png" alt-text="Illustration showing the DLP evaluation flow for Microsoft 365 Copilot where the user submits a prompt, the file includes a sensitivity label, DLP checks for a policy match, and a policy action is triggered." lightbox="../media/copilot-dlp-flow.png":::
+
 Browser-based interactions can be governed using **endpoint DLP** and **Microsoft Edge for Business**, which help detect when users paste or upload protected content into unmanaged AI services.
 
 ## Understand which protections apply to each AI tool

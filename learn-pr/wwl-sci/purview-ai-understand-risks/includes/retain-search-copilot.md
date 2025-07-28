@@ -10,6 +10,8 @@ This mailbox-based storage model supports:
 - Applying retention policies to AI interactions using **Microsoft Purview Data Lifecycle Management**
 - Auditing interactions using **Microsoft Purview Audit**
 
+:::image type="content" source="../media/copilot-data-in-mailbox.png" alt-text="Diagram showing Copilot prompts and responses stored in a user mailbox in Exchange Online, with retention, audit, and eDiscovery access through Microsoft Purview." lightbox="../media/copilot-data-in-mailbox.png":::
+
 AI data is only stored for supported Copilot experiences and enterprise AI apps that are integrated with Microsoft 365. Browser-based AI tools, like consumer ChatGPT, are not covered.
 
 ## Apply retention policies to AI interaction data

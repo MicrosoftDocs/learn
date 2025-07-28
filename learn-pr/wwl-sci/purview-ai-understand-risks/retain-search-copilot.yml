@@ -1,3 +1,19 @@
 Retain and search Copilot prompts and responses
 
 Understand AI data security risks and how Microsoft Purview addresses them
+
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-understand-risks.retain-search-copilot
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction."
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/retain-search-copilot.md)]

@@ -1,6 +1,6 @@
 Assessing AI-related data exposure starts with visibility into how sensitive content is shared and accessed. Microsoft Purview uses **Data Security Posture Management (DSPM) for AI** to assess potential risks across supported AI tools and connected data sources. These assessments help security teams identify overshared content, risky access patterns, and sensitive files referenced in AI interactions.
 
-:::image type="content" source="../media/dspm-ai-assessment.png" alt-text="Illustration of the DSPM for AI process: discovery, classification, risk assessment, and recommendations." lightbox="../media/dspm-ai-assessment.png":::
+:::image type="content" source="../media/dspm-ai-assessment.png" alt-text="Illustration of DSPM for AI process showing discovery, classification, risk assessment, and recommendations." lightbox="../media/dspm-ai-assessment.png":::
 
 ## Interpret data exposure assessments in DSPM for AI
 

@@ -1,1 +1,15 @@
-Evaluate compliance risks for AI usage
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-understand-risks.compliance-risks-ai
+title: Evaluate compliance risks for AI usage
+metadata:
+  title: Evaluate Compliance Risks for AI Usage
+  description: "Evaluate Compliance Risks for AI Usage."
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/compliance-risks-ai.md)]
