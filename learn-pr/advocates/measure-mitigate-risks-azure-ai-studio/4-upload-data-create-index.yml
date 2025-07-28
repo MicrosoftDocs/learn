@@ -5,6 +5,7 @@ metadata:
   title: Upload data and create an index
   description: Learn how to upload data and create an index in Azure AI Foundry.
   ms.date: 09/14/2024
+  ms.update-cycle: 180-days
   author: aprilgittens
   ms.author: apspeigh
   ms.topic: unit

@@ -27,13 +27,12 @@ try:
     # Get a chat completion based on a user-provided prompt
     user_prompt = input("Enter a question:")
     
-    response = chat_client.complete(
-        model=model_deployment_name,
-        [
+    response = chat_client.chat.completions.create(
+        model=your_model_deployment_name,
+        messages=[
             {"role": "system", "content": "You are a helpful AI assistant."},
             {"role": "user", "content": user_prompt}
         ]
-        ],
     )
     print(response.choices[0].message.content)
 
