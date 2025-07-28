@@ -4,13 +4,12 @@ title: Implement Microsoft Entra Connect Health
 metadata:
   title: Implement Microsoft Entra Connect Health
   description: "Implement Microsoft Entra Connect Health"
-  ms.date: 04/08/2025
+  ms.date: 07/24/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
   ms.custom:
-    - sfi-ga-nochange
-    - N/A
+  - N/A
 durationInMinutes: 12
 content: |
   [!include[](includes/8-implement-azure-active-directory-connect-health.md)]
