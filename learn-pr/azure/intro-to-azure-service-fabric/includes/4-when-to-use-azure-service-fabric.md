@@ -11,6 +11,6 @@ You saw earlier that there are several features that enhance the Azure Service F
 | **Cluster node upgrades** | Do you want to reduce the number of cluster management tasks? Service Fabric offers automatic cluster upgrading and wave deployment to minimize disruption to your services. |
 | **Storage volume support** | Is your application stateful, and does it require persisted storage? Service Fabric supports both static and dynamic storage volumes. |
 | **Integrated with CI/CD tools** | Do you already use existing Azure resources and make use of Azure Pipelines? You can configure a Service Fabric cluster to integrate with your CI/CD solution. |
-| **Azure, on-premises, and public cloud compatibility** | Are you interested in the features of Service Fabric but concerned about migrating your solution to Azure? You can bring Service Fabric on-premises in Windows or Linux. You can also integrate Service Fabric into other cloud platforms, including AWS. |
+| **Azure, on-premises, and public cloud compatibility** | Are you interested in the features of Service Fabric but concerned about migrating your solution to Azure? You can bring Service Fabric on-premises in Windows or Linux. You can also integrate Service Fabric into other cloud platforms, including Amazon Web Services (AWS). |
 
-All the above features are configurable either when you create the cluster or after deployment.
+All of these features are configurable either when you create the cluster or after deployment.
