@@ -29,7 +29,7 @@ roles:
   - administrator
 
 products: 
-  - windows-11 
+  - windows-11
   - windows-10
 units:
   - learn.dpu.Understanding-windows10-end-of-support.introduction
