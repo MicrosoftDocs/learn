@@ -19,7 +19,7 @@ In this unit, you connect to and create an external table from a database in Azu
 
 ## Create a database
 
-In your SQL Server 2025 instance, create a database called `Demo2`, and switch to using that database.
+In your SQL Server instance, create a database called `Demo2`, and switch to using that database.
 
 ```sql
 USE MASTER;

@@ -2,7 +2,7 @@
 ms.custom:
   - build-2023
 ---
-In this exercise, you: 
+In this exercise you: 
 
 - Install and enable PolyBase.
 - Create a database.
