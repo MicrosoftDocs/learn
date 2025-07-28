@@ -1,4 +1,4 @@
-A network plugin is required by an AKS cluster in order to facilitate pod-to-pod communication, pod-to-node communication, and in some cases, node-to-pod communication. There are two networking models available on AKS: kubenet and Azure CNI. There are additional evolutions of Azure CNI, including Azure CNI Overlay, Azure CNI for dynamic IP allocation, and Azure CNI Powered by Cilium. Each of these models has its own set of features and limitations. 
+An AKS cluster requires a network plugin in order to facilitate pod-to-pod communication, pod-to-node communication, and in some cases, node-to-pod communication. There are two networking models available on AKS: kubenet and Azure CNI. There are additional evolutions of Azure CNI, including Azure CNI Overlay, Azure CNI for dynamic IP allocation, and Azure CNI Powered by Cilium. Each of these models has its own set of features and limitations. 
 
 ## kubenet
 
@@ -17,10 +17,10 @@ If your custom subnet doesn't contain a route table, AKS creates one for you and
 
 ## Azure CNI
 
-The Azure CNI plugin is a more complex networking option with higher configurability and more supported features. With Azure CNI, a pre-existing subnet and a virtual network are required in order to utilize the clusters using with Azure CNI networking require extra planning. The size of your virtual network and its subnet must accommodate the number of pods you plan to run and the number of nodes for the cluster. With Azure CNI:
+The Azure CNI plugin is a more complex networking option with higher configurability and more supported features. With Azure CNI, a preexisting subnet and a virtual network are required in order to utilize the clusters using with Azure CNI networking require extra planning. The size of your virtual network and its subnet must accommodate the number of pods you plan to run and the number of nodes for the cluster. With Azure CNI:
 
 * Nodes receive an IP address space from the Azure Virtual Network subnet.
-* Each pod receives an IP address in the node pool's subnet, and can directly communicate with other pods and services.
+* Each pod receives an IP address in the node pool's subnet and can directly communicate with other pods and services.
 * Your clusters can be as large as the IP address range you specify. However, the IP address range must be planned in advance, and all of the IP addresses are consumed by the AKS nodes based on the maximum number of pods that they can support.
 
 With Azure CNI, a pre-existing subnet and a virtual network are required in order to utilize the Azure CNI network plugin. This subnet and virtual network can be created during the creation time of the AKS cluster.
@@ -29,16 +29,16 @@ With Azure CNI, a pre-existing subnet and a virtual network are required in orde
 
 ### Azure CNI Overlay
 
-Azure CNI Overlay represents an evolution of Azure CNI, addressing scalability and planning challenges arising from the assignment of virtual network IPs to pods. Azure CNI Overlay assigns private CIDR IPs to pods. The private IPs are separate from the virtual network and can be reused across multiple clusters. Azure CNI Overlay can scale beyond the 400 node limit enforced in Kubenet clusters. Azure CNI Overlay is the recommended option for most clusters.
+Azure CNI Overlay represents an evolution of Azure CNI and addresses scalability and planning challenges arising from assigning virtual network IPs to pods. Azure CNI Overlay assigns private CIDR IPs to pods. The private IPs are separate from the virtual network and can be reused across multiple clusters. Azure CNI Overlay can scale beyond the 400 node limit enforced in Kubenet clusters. Azure CNI Overlay is the recommended option for most clusters.
 
 ### Azure CNI Powered by Cilium
 
 Azure CNI Powered by Cilium uses Cilium to provide high-performance networking, observability, and network policy enforcement. It integrates natively with Azure CNI Overlay for scalable IP address management (IPAM).
 
-Additionally, Cilium enforces network policies by default, without requiring a separate network policy engine. Azure CNI Powered by Cilium can scale beyond Azure Network Policy Manager's limits of 250 nodes / 20-K pod by using ePBF programs and a more efficient API object structure.
+Additionally, Cilium enforces network policies by default, without requiring a separate network policy engine. Azure CNI Powered by Cilium can scale beyond Azure Network Policy Manager's limits of 250 nodes/20-K pod by using ePBF programs and a more efficient API object structure.
 
 Azure CNI Powered by Cilium is the recommended option for clusters that require network policy enforcement.
 
 ## Use a custom plugin
 
-For customers who plan to use a custom network configuration, there are no networking plugin requirements. You can choose from CNI providers like Cilium or Flannel. However, it's best to turn to their own documentation as it's not covered by Microsoft.
+For customers who plan to use a custom network configuration, there are no networking plugin requirements. You can choose from CNI providers like Cilium or Flannel. However, it's best to turn to their own documentation, because it's not covered by Microsoft.

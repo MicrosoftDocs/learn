@@ -2,7 +2,7 @@
 
 ## Create a new user in Microsoft Entra ID
 
-You can skip creating this user if you have already created the same user in the earlier module.
+You can skip creating this user if you created the same user in the earlier module.
 
 1. Browse to the Identity menu in the [Microsoft Entra admin center](https://entra.microsoft.com/).
 2. In the left navigation, under select **Users**, then **All Users.**
@@ -48,7 +48,7 @@ You can skip creating this user if you have already created the same user in the
 6. Select **Billing** from the menu on the left.
 7. Select **Licenses**.
 8. From the list of licenses you have available, select one.
-9. Next you'll select **Groups** from the list near the top of the screen.<br>
+9. Next you select **Groups** from the list near the top of the screen.<br>
 10. On the Groups page, select + **Assign license**.<br>
 11. Search for and select the **Marketing** group we created earlier.
 12. Select the **Assign** button at the bottom of the dialog.
@@ -61,7 +61,7 @@ After you delete a user, the account remains in a suspended state for 30 days. D
 You can view your restorable users, restore a deleted user, or permanently delete a user using Microsoft Entra ID user interface.
 
 > [!IMPORTANT]
-> Neither you nor Microsoft customer support can restore a permanently deleted user.
+> You can't restore a permanently deleted user.
 
 ## Required permissions
 

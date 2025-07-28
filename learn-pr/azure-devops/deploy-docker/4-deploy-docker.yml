@@ -4,7 +4,7 @@ title: Exercise - Deploy a Docker container to Azure
 metadata:
   title: Exercise - Deploy a Docker container to Azure
   description: Extend your YAML pipeline to build and deploy a Docker container.
-  ms.date: 12/05/2023
+  ms.date: 07/07/2025
   author: ramiMSFT
   ms.author: rabououn
   ms.custom: devdivchpfy22, engagement-fy23
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/4-deploy-docker.md)]
-
+
