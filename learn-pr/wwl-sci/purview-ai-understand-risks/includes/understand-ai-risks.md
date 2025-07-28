@@ -16,9 +16,11 @@ Without insight into these areas, it becomes difficult to apply protections or a
 
 AI tools generally fall into three categories:
 
-- **Microsoft Copilot experiences** such as Microsoft 365 Copilot, Security Copilot, Copilot Studio, and Copilot in Fabric
-- **Enterprise AI apps** that support identity integration, like ChatGPT Enterprise and Microsoft Entra-integrated applications
-- **Browser-based AI tools** including ChatGPT, Gemini, and similar services accessed outside of Microsoft 365
+- **Copilot experiences**: Microsoft-managed Copilots integrated into Microsoft 365, such as Microsoft 365 Copilot, Security Copilot, Copilot Studio, and Copilot in Fabric
+- **Enterprise AI apps**: Organizationally connected AI apps like ChatGPT Enterprise or Azure AI services, which may integrate through Microsoft Entra, data connectors, or Azure AI Foundry
+- **Other AI apps**: Browser-based generative AI tools like ChatGPT (consumer) and Gemini, which operate outside the Microsoft 365 environment
+
+   :::image type="content" source="../media/ai-app-risk-category.png" alt-text="Table showing three AI app categories—Copilot experiences, Enterprise AI apps, and Other AI apps—alongside examples and associated risks for each category." lightbox="../media/ai-app-risk-category.png":::
 
 Understanding the type of AI tool helps determine what protections are available and how to configure them.
 

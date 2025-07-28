@@ -10,11 +10,13 @@ DSPM for AI provides centralized visibility and control over how organizational 
 
 Instead of requiring new infrastructure, DSPM for AI builds on existing Microsoft Purview tools like data classification, sensitivity labels, and data loss prevention (DLP). This approach allows organizations to apply consistent protections across AI interactions without needing to deploy new security infrastructure.
 
+:::image type="content" source="../media/purview-ai-protections.png" alt-text="Illustration of a layered stack showing Microsoft Purview protections for AI: Sensitivity Labels, Data Loss Prevention, Adaptive Protection, Insider Risk Management, and Data Security Posture Management for AI." lightbox="../media/purview-ai-protections.png":::
+
 ## AI tool categories in Microsoft Purview
 
 To apply the appropriate protections, Microsoft Purview classifies AI tools into three main categories. Understanding these categories helps determine which policies and controls are supported.
 
-### Microsoft Copilot experiences
+### Copilot experiences
 
 These are Microsoft-managed AI solutions that operate within the Microsoft 365 ecosystem. Examples include:
 
@@ -35,7 +37,7 @@ These apps are built or managed by the organization and typically support identi
 
 Enterprise AI apps offer more control than browser-based tools, including options for scoped access, authentication, and monitoring through Microsoft Entra integration.
 
-### Browser-based AI tools
+### Other AI apps
 
 These tools are accessed outside of the Microsoft 365 environment and typically don't offer identity integration or built-in security controls. Common examples include:
 
