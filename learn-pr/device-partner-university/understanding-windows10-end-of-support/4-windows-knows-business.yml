@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.Understanding-windows10-end-of-support.windows-knows-business
+title: Windows knows business
+metadata:
+  title: Windows Knows Business
+  description: This content is part of the "Understanding Windows 10 end of support" module.
+  ms.date: 07/17/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-windows-knows-business.md)]
