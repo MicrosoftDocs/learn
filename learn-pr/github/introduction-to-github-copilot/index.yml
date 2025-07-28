@@ -6,6 +6,7 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.date: 09/12/2024
+  ms.update-cycle: 180-days
   ms.service: github-copilot
   ms.topic: module
   ms.collection:
