@@ -5,6 +5,7 @@ metadata:
   title: Introduction to Spring AI and Azure OpenAI
   description: Learn about Spring AI's core concepts and its integration with Azure OpenAI.
   ms.date: 03/16/2025
+  ms.update-cycle: 180-days
   author: yortch
   ms.author: jbalderas
   ms.reviewer: thegovind

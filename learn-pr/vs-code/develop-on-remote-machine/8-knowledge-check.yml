@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Test your knowledge of connecting using SSH in Visual Studio Code."
-  ms.date: 01/22/2024
+  ms.date: 07/24/2025
   author: olguzzar
   ms.author: olguzzar
   ms.topic: unit
@@ -16,24 +16,24 @@ quiz:
   questions:
   - content: "What is the recommended way to authenticate when using SSH?"
     choices:
-    - content: "Password authentication."
+    - content: "Password authentication"
       isCorrect: false
       explanation: "Password authentication isn't the recommended authentication method."
-    - content: "SSH keys."
+    - content: "SSH keys"
       isCorrect: true
       explanation: "SSH keys are the recommended authentication method when using SSH."
-    - content: "There's no authentication needed."
+    - content: "There's no authentication needed"
       isCorrect: false
       explanation: "Authentication is necessary for verifying the client-server connection in SSH."    
   - content: "What command do you run to connect to an SSH host in Visual Studio Code?"
     choices:
-    - content: "Connect to Host..."
+    - content: "Connect to Host"
       isCorrect: true
-      explanation: "The Connect to Host... command is used to connect to an SSH host."
-    - content: "Open Remote Repository..."
+      explanation: "The Connect to Host command is used to connect to an SSH host."
+    - content: "Open Remote Repository"
       isCorrect: false
       explanation: "The Open Remote Repository command doesn't connect to an SSH host."
-    - content: "Open SSH Connection..."
+    - content: "Open SSH Connection"
       isCorrect: false
       explanation: "There's no command in Visual Studio Code called Open SSH Connection."
   - content: "How can you locally browse a web app is running on the remote machine?"
