@@ -6,6 +6,7 @@ metadata:
   author: bethanyjep
   ms.author: bethanycheum
   ms.date: 06/11/2025
+  ms.update-cycle: 180-days
   ms.service: github-copilot
   ms.topic: module-standard-task-based
   ms.collection:
