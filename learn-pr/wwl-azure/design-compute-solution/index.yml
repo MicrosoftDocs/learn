@@ -3,7 +3,7 @@ uid: learn.wwl.design-compute-solution
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Design An Azure Compute Solution
+  title: Design an Azure Compute Solution
   description: "Azure Architects design and recommend Azure compute solutions."
   ms.date: 05/28/2025
   author: wwlpublish
