@@ -156,8 +156,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "learn-pr/wwl-azure/describe-cost-management-azure/5-exercise-compare-workload-costs-use-total-cost-ownership-calculator.yml",
-       "redirect_url": "https://learn.microsoft.com/training/modules/describe-cost-management-azure/",
+      "source_path_from_root": "/learn-pr/wwl-azure/describe-cost-management-azure/5-exercise-compare-workload-costs-use-total-cost-ownership-calculator.yml",
+       "redirect_url": "https://learn.microsoft.com/training/modules/describe-cost-management-azure",
       "redirect_document_id": false
     },
     {
