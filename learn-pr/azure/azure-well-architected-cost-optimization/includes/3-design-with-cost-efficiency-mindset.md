@@ -1,19 +1,19 @@
-| :::image type="icon" source="../media/goal.svg"::: Buy only what you need to get the most return on investment. |
+| :::image type="icon" source="../media/goal.svg"::: Spend only what you need to get the most return on investment. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 Every architectural decision affects your budget, such as whether you build or buy, what tools you use, or how you license and train. It's important to weigh those options and make trade-offs that still meet your app's needs without overspending.
 
 **Example scenario**
 
-Contoso Manufacturing runs a custom-built warehouse management system (WMS) that handles its four warehouses across South America. They want to update and move the WMS to the cloud. They're deciding between lifting and shifting the current setup or building something new with modern tools. Leadership wants to keep costs under control, so the team needs a plan that balances cost with performance.
+Contoso Manufacturing runs a custom-built warehouse management system (WMS) that handles its four warehouses across South America. They want to update and move the WMS to the cloud. They're deciding between a lift-and-shift move of the current setup or building something new with modern tools. Leadership wants to keep costs under control, so the team needs a plan that maintains cost efficiency.
 
 The WMS solution is a .NET application that runs on Internet Information Services (IIS) and uses SQL Server for its databases.
 
 ## Understand the full cost of your design
 
-**Establish a cost baseline that includes the cost for technology, automation, acquisition, training, and change management. Your design should meet all the key requirements including return on investment (ROI) and still be flexible enough to grow with your needs.**
+**Measure the total cost incurred by technology and automation choices, taking into account the impact on return on investment (ROI). The design must work within the acceptable boundaries for all functional and nonfunctional requirements. The design must also be flexible to accommodate predicted evolution. Factor in the cost of acquisition, training, and change management.**
 
-A cost baseline helps you stay on budget by showing where the money's going, including hidden costs that you might miss. Keeping ROI in mind helps avoid overbuilding a system that ends up costing more than it's worth.
+Implementing a balanced approach that takes ROI into account prevents over-engineering, which might increase costs.
 
 *Contoso's challenge*
 
@@ -28,13 +28,32 @@ A cost baseline helps you stay on budget by showing where the money's going, inc
 
 - The workload team takes a practical approach to designing the system. They want it to be cost-effective, meet expectations, and avoid overcomplicating things. To keep the ROI in check and make the migration smooth, they decide to go with an equivalent solution in the cloud, such as Azure App Service.
 
-- They establish a cost baseline that accounts for infrastructure, licensing, and operational costs, as well as less obvious factors like training for new platforms, rewriting legacy code, and managing change across teams. They gain a clearer picture of what's feasible within their budget, which confirms their decision of Azure App Service as the more familiar, lower-risk path.
+- They establish a cost baseline that accounts for infrastructure, licensing, and operational costs, as well as less obvious factors like training for new platforms, rewriting legacy code, and managing change across teams. They gain a clearer picture of what's feasible within their budget, which confirms their decision of App Service as the more familiar, lower-risk path.
 
 - During the migration, the team plans to clean up some of the technical debt that makes sense to tackle now. That way, after everything's running on Azure, they'll be in a better spot to keep improving the platform while still keeping the ROI in mind when making those choices.
 
+## Refine the design
+
+**Fine-tune the design by prioritizing services that can reduce the overall cost, don't need additional investment, or don't have a significant impact on functionality. Prioritization should account for the business model and technology choices that bring high ROI.**
+
+You can explore cheaper options that might enable resource flexibility or dynamic scaling, or you might justify the use of existing investments. The prioritization parameters might factor in costs that are required for critical workloads, runtime, and operations, and other costs that might help the team work more efficiently.
+
+*Contoso's challenge*
+
+- The existing workload is hosted on a hyper-converged (HCI) appliance and the team's cost center is charged back for compute, network, and storage costs.
+
+- The workload has deployed the preproduction and production environments on Windows virtual machines.
+- GitHub Actions with self-hosted runners is used for running GitHub Actions jobs.
+
+*Applying the approach and outcomes*
+
+- After evaluating several cloud-native options, the team decides that moving the web components to App Service would provide Windows IIS application compatibility without significant changes and wouldn't require significant training.
+
+- The team decides to continue using GitHub Actions with self-hosted runners, but they'll migrate to a virtual machine scale set with the ability to scale to zero nodes when they aren't being used.
+
 ## Design your architecture to support cost guardrails
 
-**Set up cost limits in your architecture to keep spending within a safe range, and ensure that your team follows those limits.**
+**Set up cost limits in your architecture to keep spending within a safe range, and ensure that your cloud environment costs are kept under those limits.**
 
 Enforcing limits helps avoid surprise charges and ensures that you only use what you actually budget for.
 
@@ -52,27 +71,3 @@ Enforcing limits helps avoid surprise charges and ensures that you only use what
 - They plan to set scale limits for the App Service plans.
 - They plan to set up a deny policy to block certain expensive virtual machine SKUs from being used.
 - They plan to add automation to save on storage. Older or less-used data will automatically move to cheaper storage tiers like cold or archive. This kind of automation wasn't possible in their old HCI environment.
-
-## Optimize your deployment environments
-
-**Use different setups for each stage of development, and only run as many environments as you need. Production should be where most of your costs go.**
-
-You can save money by understanding that not all environments need to match production. Nonproduction environments can have different features, SKUs, instance counts, and even logging.
-
-You can also save costs by creating preproduction environments only when you need them, and shutting them down when you're done.
-
-*Contoso's challenge*
-
-- Contoso sets up all their environments, including development, test, preproduction, and production, the same way regardless of usage.
-
-- Even environments that sit idle most of the time are using full-scale resources, driving up costs.
-- They also don't have automation in place to turn environments on or off based on actual usage, which leads to a lot of waste.
-
-*Applying the approach and outcomes*
-
-- Development moves to smaller, cheaper virtual machines that only run when needed.
-
-- Test environments are set to autoscale, but only during active testing times.
-- Preproduction setups are created on-demand by using templates and automatically shut down after use.
-- They add monitoring and automation to make sure environments only run when they're actually being used.
-- By rightsizing their environments and automating when they're active, Contoso cut cloud costs significantly, without sacrificing speed or quality in their software delivery.

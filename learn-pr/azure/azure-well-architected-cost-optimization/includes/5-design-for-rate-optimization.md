@@ -11,53 +11,11 @@ Three Azure Kubernetes Service (AKS) clusters are behind the API Management inst
   - One runs a Windows node pool for APIs written in .NET 4.5.
   
   - One Linux cluster for the APIs written in Java Spring. 
-  - One runs a Windows node pool for APIs written in .NET Core on Linux. They inherited this cluster.
+  - One runs a Windows node pool for APIs written in .NET Core on Linux. They inherited this cluster from a prior team.
   
 These clusters are only used for the APIs and are now all managed by the BI team. It's not the cleanest setup, but it works, so they've left it alone.
 
 The BI team is a cost center in the business, so they're looking for ways to optimize its rates to drive down operating costs.
-
-## Match pricing models to workload patterns
-
-**Choose the right billing model based on how your workloads behave.**
-
-Not all workloads need the same pricing model. Some run all the time and benefit from fixed pricing or reserved instances. Others are used occasionally and are better suited for pay-as-you-go pricing. Matching the pricing model to the workload helps avoid paying for unused capacity and keeps costs aligned with actual usage.
-
-*Contoso's challenge*
-
-- The team manages a suite of GraphQL APIs that serve different departments. Some APIs are used constantly, like daily reporting. Others only see traffic during specific business cycles, like quarterly planning or audit periods.
-
-- Everything runs on always-on infrastructure, even the low-traffic APIs.
-- They're using pay-as-you-go pricing across the board, even for workloads with predictable usage.
-
-*Applying the approach and outcomes*
-
-- The team identifies APIs that have steady usage and moves them to fixed-price SKUs or reserved instances to lock in savings.
-
-- For APIs that have bursty or seasonal traffic, they switch to consumption-based services like Azure Container Apps.
-- They also evaluate whether some APIs can be consolidated or scaled down during off-hours.
-- These changes help them align costs with actual usage and avoid paying for idle resources.
-
-## Optimize licensing and agreements
-
-**Use smart licensing strategies and work with your licensing team to cut costs.**
-
-Licensing can be a hidden cost driver. By using benefits like Azure Hybrid Benefit, dev/test pricing, and coordinating with your licensing team, you can reduce spend without changing how your workloads run. Forecasting your needs also helps your organization negotiate better deals that benefit multiple teams.
-
-*Contoso's challenge*
-
-- The team manages several AKS clusters that support their GraphQL APIs. One of those clusters runs Windows workloads, but the team hasn’t looked closely at how those workloads are licensed. The setup has been stable, and since costs haven’t spiked, there hasn’t been much urgency to revisit it.
-
-- Their preproduction environments run in the same pricing tier and region as production. It’s convenient, but they’re starting to wonder if that’s the most efficient use of resources.
-- Licensing decisions have mostly been handled separately from infrastructure planning, so the team hasn’t had much visibility into whether they’re getting the best possible pricing.
-
-*Applying the approach and outcomes*
-
-- The team reviews their AKS clusters and realize that the Windows node pools could qualify for Azure Hybrid Benefit. By applying their existing Windows Server licenses, they can reduce compute costs without changing the workload.
-
-- They also evaluate their environment structure and move development and test workloads into dev/test subscriptions. To save even more, they shift those environments to lower-cost regions, since they don’t need the same performance or availability as production.
-- They loop in the licensing team and share their usage forecasts. This collaboration helps procurement negotiate better enterprise agreements, unlocking extra savings.
-- These steps reduce licensing costs and help the organization get better deals overall.
 
 ## Combine infrastructure where it makes sense
 
@@ -78,3 +36,41 @@ When you pack more utility into fewer systems, you use less hardware and spend l
 - They also consolidate to four nodes for their system node pool, saving the costs of five virtual machines.
 - Now they only have one cluster to patch and update, which saves even more time.
 - Next, they're looking at merging two Linux node pools into one to make things even simpler.
+
+## Take advantage of reservations and other infrastructure discounts
+
+**Optimize by committing and prepurchasing to take advantage of discounts offered on resource types that aren't expected to change over time and for which costs and utilization are predictable. Also, work with your licensing team to influence future purchase agreement programs and renewals.**
+
+Microsoft offers reduced rates for predictable and long-term commitment to specific resources and resource categories. Resources cost less during the usage period and can be amortized over the period.
+
+By keeping your licensing team aware of the current and predicted investment by resource, you can help them rightsize commitments when your organization signs the agreement. In some cases, these projections and commitments could influence your organization's price sheet, which benefits your workload's cost and also other teams that use the same technology.
+
+*Contoso's challenge*
+
+- Now that the team has consolidated onto one cluster, removing some of the excess compute and operational burden they previously absorbed, they're interested in finding additional measures to lower the cost of the cluster.
+
+- Because the BI team is happy with the AKS platform, they plan on continuing to use it for the foreseeable future, and likely will even grow its usage.
+
+*Applying the approach and outcomes*
+
+- Because AKS is built on top of Azure Virtual Machine Scale Sets, the team looks into Azure reservations. They know the expected SKUs and scale units they need for the user nodes.
+
+- They purchase a three-year reservation that covers the system node pool and the minimum instance count of nodes per user node pool.
+- With this purchase, the team knows they're getting the best deal on their compute needs while allowing the workload to grow over time.
+
+## Use fixed-price billing when practical
+
+**Switch to fixed-price billing instead of consumption-based billing for a resource when its utilization is high and predictable and a comparable SKU or billing option is available.**
+
+When utilization is high and predictable, the fixed-price model usually costs less and often supports more features. Using it could increase your ROI.
+
+*Contoso's challenge*
+
+- The API Management instances are all deployed as Consumption tier SKUs currently. After evaluating the APIs' usage patterns, they understand that the APIs are used globally and sometimes quite heavily. The team decides to analyze the cost differences between the current billing model and a fixed-price model.
+
+*Applying the approach and outcomes*
+
+- After performing the cost analysis, the team finds that migrating from Consumption to Standard tier will be a bit less expensive overall given the current usage patterns. As the services grow over the next year, the cost differences will likely become more pronounced. Even though the fixed-pricing model doesn't reflect the elasticity characteristics of the requests, sometimes prepurchased billing models are the right choice.
+
+- As an added bonus, using the Standard tier allows the use of a private endpoint for inbound connections, which the team has been eager to implement for the workload.
+- In this case, switching SKUs made sense for both utilization purposes and for the added benefit of the additional network segmentation that's possible with a private endpoint implementation.

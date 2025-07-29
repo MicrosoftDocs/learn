@@ -1,13 +1,13 @@
 | :::image type="icon" source="../media/goal.svg"::: Build a cost-aware team culture. |
 | :----------------------------------------------------------------------------------------------------------------------------------------- |
 
-Help your team get comfortable thinking about budgets, spending, and tracking costs. Cost optimization happens at different levels of the organization. So it's important to understand how your work fits into the bigger picture and supports company goals and FinOps practices. Having visibility into how resources are organized and how financial policies are applied helps you manage your workload in a consistent, efficient way.
+Help your team get comfortable thinking about budgets, spending, and tracking costs. Cost optimization happens at different levels of the organization. So it's important to understand how your workload fits into the bigger picture and supports company goals and FinOps practices. Having visibility into how resources are organized and how financial policies are applied helps you manage your workload in a consistent, efficient way.
 
 **Example scenario**
 
 Contoso organizes and hosts trade shows. They want to improve how they sell tickets and decide to build a mobile app in-house. The following scenarios walk through how they go from idea to launch, with a focus on making smart cost decisions along the way. The web app is written in .NET, hosted on Azure App Service, and uses Azure SQL Database for its database.
 
-## Create a cost model
+## Develop a cost model
 
 **Before you can track spending properly, you must build a basic cost model.**
 
@@ -46,9 +46,9 @@ After you set a budget, you can set spending limits and get alerts if you're abo
 - This budget gives their architect a clear financial target to design around. As more is learned about the implementation and the operations necessary, the workload team expects to need to renegotiate budget a bit so they leave a small buffer.
 - The goal is to stay flexible but stick to the budget as closely as possible.
 
-## Encourage open communication
+## Encourage upstream communication
 
-**Share how design changes based on production insights could affect costs.**
+**Encourage upstream communication from architects to application owners.**
 
 When your organization makes budget adjustments, real-world learnings from production feedback are just as important as the numbers.
 

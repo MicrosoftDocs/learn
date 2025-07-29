@@ -27,7 +27,7 @@ This visibility helps you catch unexpected charges early, support showback or ch
 
 - Before the team asks for more budget, they decide to take a closer look at their current Azure and support costs to see if there's any room to save. They dig into the cost breakdowns by resource, resource group, and tags by using their cost tracking system. They find unexpected spending.
 
-- The team finds some virtual machines (VMs) still running that were used for an old build system that they don't need anymore. There's also old data sitting in Azure Storage that could be moved to a cheaper tier. On top of that, they're paying for a support contract that includes consult hours, but they haven't been using them.
+- The team finds some virtual machines (VMs) still running that were used for an old build system that they don't need anymore. There's also old data sitting in Azure Storage that could be moved to a cheaper tier. On top of that, they're paying for a support contract that includes consulting hours, but they haven't been using them.
 - The team optimizes their Azure costs by deleting the unused VMs and moving the old data to Archive storage. They begin working more closely with their cloud provider to make good use of their consulting services.
 - They add a recurring task to their backlog to regularly review and optimize their workload costs going forward.
 
@@ -49,9 +49,9 @@ Cloud environments evolve, and so should your architecture. Review your metrics,
 
 - They also notice that their compute platform now includes a new feature in their chosen SKU that replaces some of the authentication code. Using this feature means less code to maintain and test.
 
-## Keep your cloud environment tidy
+## Optimize your cloud environement continuously
 
-**Make it a habit to regularly check for unused resources or old data in your cloud setup and clean them out. Over time, these components that were once useful can stick around and quietly accrue costs. Keep your environment clean to help keep things efficient and save money.**
+**Make it a habit to regularly check for unused resources or old data in your cloud setup and remove them. Over time, these components that were once useful can stick around and quietly accrue costs. Keep your environment optimized to help keep things efficient and save money.**
 
 Shutting down resources that you're not using and deleting data that you don't need frees up budget for more important work.
 

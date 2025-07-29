@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What modeling technique predicts total cost of ownership (TCO) in a workload?"
+    - content: "What modeling technique is used to predict total cost of ownership (TCO) in a workload?"
       choices:
         - content: "A health model"
           isCorrect: false

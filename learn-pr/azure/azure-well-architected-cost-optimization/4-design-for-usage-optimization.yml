@@ -14,17 +14,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which feature helps you save money on Azure compute services by paying for only the compute that you use?"
+    - content: "Which feature helps you save money on some Azure compute services by paying for only the compute that you use?"
       choices:
         - content: "Azure Advisor cost recommendations"
           isCorrect: false
-          explanation: "Incorrect. Azure Advisor cost recommendations provide recommendations about how you can reduce your Azure spend by identifying idle and underused resources."
+          explanation: "Incorrect. Azure Advisor cost recommendations provide recommendations about how you can reduce your Azure spend by identifying idle and underutilized resources."
         - content: "Azure reservations"
           isCorrect: false
           explanation: "Incorrect. Azure reservations let you prepay for a one-year or three-year term to get a discount on the base compute rate. You can't pay for only the compute that you use in this model."
         - content: "Azure Hybrid Benefit"
           isCorrect: false
-          explanation: "Incorrect. Azure Hybrid Benefit lets you use your on-premises Windows Server or SQL Server licenses with Software Assurance to pay a reduced rate on Azure Virtual Machines. It doesn't affect the cost of resources based on usage."
+          explanation: "Incorrect. Azure Hybrid Benefit lets you use your on-premises Windows Server or SQL Server licenses with Software Assurance to pay a reduced rate on Azure Virtual Machines. It doesn't affect the cost of resources based on utilization."
         - content: "Consumption-based billing"
           isCorrect: true
           explanation: "Correct. Services like Azure Functions and Azure Container Instances can be configured to use consumption-based billing, which means that you pay only for the compute that you use."
@@ -45,13 +45,13 @@ quiz:
       choices:
         - content: "Review the monthly Azure bill"
           isCorrect: false
-          explanation: "Incorrect. The Azure bill doesn't provide information about the usage of a given resource."
+          explanation: "Incorrect. The Azure bill doesn't provide information about the utilization of a given resource."
         - content: "Set up Azure budget alerts"
           isCorrect: false
           explanation: "Incorrect. Budget alerts only notify users when the budget is exceeded, they can't provide any information about a given resource's usage."
         - content: "Review the cost analysis report for the subscription"
           isCorrect: false
-          explanation: "Incorrect. The cost analysis report doesn't provide information about the usage of a given resource."
+          explanation: "Incorrect. The cost analysis report doesn't provide information about the utilization of a given resource."
         - content: "Review the Azure Advisor cost recommendations"
           isCorrect: true
-          explanation: "Correct. Azure Advisor cost recommendations can identify underused MySQL servers and provides a recommendation when such servers are found."
+          explanation: "Correct. Azure Advisor cost recommendations can identify underutilized MySQL servers and provides a recommendation when such servers are found."

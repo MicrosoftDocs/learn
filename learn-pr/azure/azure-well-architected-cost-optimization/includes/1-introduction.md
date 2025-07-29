@@ -8,7 +8,7 @@ The Azure Well-Architected Framework is a guide that helps ensure that your work
 
 Designing an architecture is about supporting your business goals while being mindful of budget and return on investment (ROI). Start with these questions:
 
-- Does your budget actually support what you're trying to achieve?
+- Does your allocated budget actually support what you're trying to achieve?
 
 - How are you spending money on your app and its operations, and where should you focus most?
 - Can you get more out of what you already have, either by using it better or reducing what you don't need?
