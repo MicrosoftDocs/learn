@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.ha-application-storage-with-grs.2-storage-account-replication-features
 metadata:
-  title: Understand the role of an Azure storage account and its replication features 
+  title: Azure Storage Account and its Replication Features 
   description: Learn how an Azure storage account is configured to allow for the replication and high availability of data. 
-  ms.date: 05/17/2023
+  ms.date: 06/02/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
@@ -11,4 +11,4 @@ title: Understand the role of an Azure storage account and its replication featu
 durationInMinutes: 6
 content: |
   [!include[](includes/2-storage-account-replication-features.md)]
-
+

@@ -8,6 +8,7 @@ metadata:
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 7
 content: |
   [!include[](includes/6-knowledge-check.md)]

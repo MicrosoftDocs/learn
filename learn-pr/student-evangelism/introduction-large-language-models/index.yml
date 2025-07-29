@@ -4,6 +4,7 @@ metadata:
   ms.author: chnoring
   author: softchris
   ms.date: 11/30/2023
+  ms.update-cycle: 180-days
   title: Introduction to large language models
   description: Learn about large language models, their core concepts, the models that are available to use, and when to use them.
   ms.topic: module

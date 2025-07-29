@@ -14,7 +14,7 @@ Bicep modules help you address these challenges by splitting your code into smal
 
 After you've created a module, you can reuse it in multiple Bicep files, even if the files are for different projects or workloads. For example, when you build out one solution, you might create separate modules for the app components, the database, and the network-related resources. Then, when you start to work on another project with similar network requirements, you can reuse the relevant module.
 
-:::image type="content" source="../../includes/media/bicep-templates-modules.png" alt-text="Diagram that shows a template referencing three modules: application, database, and networking. The networking module is then reused in another template." border="false":::
+:::image type="content" source="../../includes/media/bicep-files-modules.png" alt-text="Diagram that shows a template referencing three modules: application, database, and networking. The networking module is then reused in another template." border="false":::
 
 You can even share modules within your team, within your organization, or with the Azure community. You'll learn more about sharing Bicep modules in a future Microsoft Learn module.
 

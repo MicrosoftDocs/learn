@@ -9,6 +9,7 @@ metadata:
   author: vhorne
   ms.author: victorh
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 2
 content: |
 quiz:

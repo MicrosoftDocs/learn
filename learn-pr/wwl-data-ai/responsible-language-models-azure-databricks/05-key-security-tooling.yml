@@ -4,12 +4,12 @@ title: Use key security tooling to protect your AI systems
 metadata:
   title: Use key security tooling to protect your AI systems
   description: "Use key security tooling to protect your AI systems"
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/17/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/05-key-security-tooling.md)]
+  [!include[](includes/05-key-security-tooling.md)]

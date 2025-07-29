@@ -1,3 +1,6 @@
+
+
+
 Arrays can be used to store multiple values of the same type in a single variable. The values stored in an array are generally related. For example, a list of student names could be stored in a string array named `students`.
 
 Your work in the security department is focused on finding a pattern for fraudulent orders. You want your code to review past customer orders and identify markers associated with fraudulent orders. Your company hopes the markers can be used to identify potential fraudulent purchase orders in the future before they're processed. Since you don't always know in advance how many orders you need to review, you can't create individual variables to hold each Order ID. How can you create a data structure to hold multiple related values?
@@ -34,26 +37,36 @@ This module includes activities that guide you through the process of building a
 
     Notice that a command prompt in the Terminal panel displays the folder path for the current folder. For example:  
 
-    ```dos
+    ```PowerShell
     C:\Users\someuser\Desktop>
     ```
 
     > [!NOTE]
     > If you are working on your own PC rather than in a sandbox or hosted environment and you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip over the next step, which is used to create a console app in the TestProject folder.
 
-1. At the Terminal command prompt, to create a new console application in a specified folder, type `dotnet new console -o ./CsharpProjects/TestProject` and then press Enter.
+1. At the Terminal command prompt, to create a new console application in a specified folder, enter the following prompt:
 
-    This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the **CsharpProjects** and **TestProject** folders for you, and uses *TestProject* as the name of your `.csproj` file.
+    ```dotnetcli
+    dotnet new console -o ./CsharpProjects/TestProject
+    ```
 
-1. In the EXPLORER panel, expand the **CsharpProjects** folder.
+    This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the CsharpProjects and TestProject folders for you, and uses TestProject as the name of your `.csproj` file.
 
-    You should see the **TestProject** folder and two files, a C# program file named **Program.cs** and a C# project file named **TestProject.csproj**.
+    If a message is displayed telling you that the files already exist, continue with the next steps. You'll reuse the existing project files.
 
-1. In the EXPLORER panel, to view your code file in the Editor panel, select **Program.cs**.
+1. In the EXPLORER view, expand the **CsharpProjects** folder.
+
+    You should see the **TestProject** folder and two files, a C# program file named Program.cs and a C# project file named TestProject.csproj.
+
+1. On the Visual Studio Code **File** menu, select **Open Folder**.
+
+1. In the **Open Folder** dialog, select the **CsharpProjects** folder, and then select **Select Folder**.
+
+1. In the EXPLORER view, expand the TestProject folder, and then select **Program.cs**.
 
 1. Delete the existing code lines.
 
-    You can use this C# console project to create, build, and run code samples during this module.
+    You'll be using this C# console project to create, build, and run code samples during this module.
 
 1. Close the Terminal panel.
 
@@ -121,7 +134,7 @@ To intentionally "break" your application, attempt to access a fourth element of
 
 1. On the Visual Studio Code **File** menu, select **Save**.
 
-1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+1. In the EXPLORER view, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
     A Terminal panel should open, and should include a command prompt showing that the Terminal is open to your **TestProject** folder location.
 
@@ -178,7 +191,7 @@ Accessing the value of an array element works the same way as assigning a value 
 
 1. On the Visual Studio Code **File** menu, select **Save**.
 
-1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+1. In the EXPLORER view, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
 1. At the Terminal command prompt, type `dotnet run` and then press Enter.
 
@@ -223,7 +236,7 @@ The elements of an array are just like any other variable value. You can assign,
 
 1. On the Visual Studio Code **File** menu, select **Save**.
 
-1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+1. In the EXPLORER view, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
 1. At the Terminal command prompt, type `dotnet run` and then press Enter.
 
@@ -292,7 +305,7 @@ You can initialize an array during declaration just like you would a regular var
 
 1. On the Visual Studio Code **File** menu, select **Save**.
 
-1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+1. In the EXPLORER view, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
 1. At the Terminal command prompt, type `dotnet run` and then press Enter.
 

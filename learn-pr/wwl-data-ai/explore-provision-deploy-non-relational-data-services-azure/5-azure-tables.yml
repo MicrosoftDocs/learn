@@ -4,12 +4,12 @@ title: Explore Azure Tables
 metadata:
   title: Explore Azure Tables
   description: "Explore Azure Tables"
-  ms.date: 09/17/2024
-  author: wwlpublish
-  ms.author: rcaper
+  ms.date: 07/15/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-azure-tables.md)]
+  [!include[](includes/5-azure-tables.md)]

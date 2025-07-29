@@ -5,12 +5,13 @@ metadata:
   unitType: knowledge_check
   title: Module assessment
   description: Knowledge check
-  ms.date: 09/27/2024
+  ms.date: 07/22/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
   ms.custom:
     - devx-track-bicep
+  module_assessment: true
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -27,14 +28,14 @@ quiz:
     - content: Create a new output to pass the storage account key back to the user.
       isCorrect: false
       explanation: Incorrect. Avoid emitting secrets as outputs. Outputs aren't designed to handle secure data.
-  - content: You want to ensure that your template's users provide valid inputs for the `number` parameter. How should you do this?
+  - content: How can you ensure that your template's users provide valid inputs for the `number` parameter?
     choices:
     - content: Apply parameter decorators.
       isCorrect: true
       explanation: Correct. Parameter decorators such as `@maxLength` validate the input for each parameter.
     - content: Apply Azure role-based access control (RBAC) on your deployment scope.
       isCorrect: false
-      explanation: Incorrect. Azure RBAC defines the permissions that users have set to access a given resource or group of resources. It doesn't validate the parameter values that your template users provide.
+      explanation: Incorrect. Azure RBAC defines the permissions set by users to access a given resource or group of resources. It doesn't validate the parameter values that your template users provide.
     - content: Hard-code as many values into templates as possible.
       isCorrect: false
       explanation: Incorrect. Although hard-coding values prevents users from providing incorrect input, you can enable your template's users to provide input through parameters, and validate it by using parameter decorators.
@@ -49,4 +50,4 @@ quiz:
     - content: You can structure your template and group elements in any order.
       isCorrect: false
       explanation: Incorrect. Although it's true that you can structure your Bicep templates in many different ways, ordering is unrelated to configuration sets.
-
+

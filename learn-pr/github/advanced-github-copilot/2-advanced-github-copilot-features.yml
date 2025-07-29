@@ -6,8 +6,9 @@ metadata:
   title: Advanced GitHub Copilot features
   description: GitHub Copilot is an AI-assisted coding tool that helps developers write better code, faster by generating suggestions using code, comments, and interactive chats.
   author: abrilurena
-  ms.author: abrilu
+  ms.author: orthomas
   ms.date: 09/30/2024
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot

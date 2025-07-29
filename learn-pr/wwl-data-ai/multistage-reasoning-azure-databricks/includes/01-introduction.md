@@ -6,4 +6,4 @@ To address these limitations, you can use **multi-stage reasoning systems**. The
 
 :::image type="content" source="../media/model-system.png" alt-text="Diagram illustrating the difference between using one complex model or building a multi-stage reasoning system.":::
 
-In Azure Databricks, you can create multi-stage reasoning systems using popular libraries. When you combine the computing power of Apache Spark, the reliable data storage of Delta Lake, and advanced machine learning libraries, Databricks makes it easy to efficiently process complex tasks.
+In Azure Databricks, you can create multi-stage reasoning systems using popular libraries. When you combine the computing power of Apache Spark, the data storage of Delta Lake, and advanced machine learning libraries, Databricks makes it easy to efficiently process complex tasks.

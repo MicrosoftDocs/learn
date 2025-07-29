@@ -4,10 +4,11 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/26/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -59,4 +60,4 @@ quiz:
       explanation: "Incorrect. Dynamic data masking works by obfuscating data in order to limit its exposure."
     - content: "Azure Purview"
       isCorrect: true
-      explanation: "Correct. Azure Purview automates data discovery by providing data scanning and classification as a service for assets across your data estate."
+      explanation: "Correct. Azure Purview automates data discovery by providing data scanning and classification as a service for assets across your data estate."

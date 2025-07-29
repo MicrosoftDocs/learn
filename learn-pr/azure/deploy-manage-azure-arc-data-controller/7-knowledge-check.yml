@@ -8,6 +8,7 @@ metadata:
   author: MikeRayMSFT
   ms.author: mikeray
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:

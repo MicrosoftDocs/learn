@@ -2,19 +2,17 @@ As the solution architect for your organization's healthcare system, you want to
 
 In this exercise, you create an Azure storage account and configure the account for RA-GRS. By default, the storage account is set to LRS when you create it. Because you want the application to be highly available, you change the mode to RA-GRS. The storage account is used as a disaster-recovery feature to ensure that the application is always running.
 
-First, create an Azure storage account to store the application data.
-
-![Diagram of the storage account configuration.](../media/3-storage-account-overview.png)
-
 ## Create an Azure storage account to host healthcare application
 
-Create a storage account. The storage account hosts the healthcare application.
+First, create an Azure storage account to store the application data. The storage account hosts the healthcare application.
+
+:::image type="content" source="../media/3-storage-account-overview.png" alt-text="Diagram of the storage account configuration.":::
 
 1. In Cloud Shell, run the following commands:
 
     ```bash
     STORAGEACCT=$(az storage account create \
-            --resource-group <rgn>[Sandbox resource group]</rgn> \
+            --resource-group "<rgn>[Sandbox resource group]</rgn>" \
             --name healthcareapp$RANDOM \
             --sku Standard_RAGRS \
             --output tsv \
@@ -23,7 +21,10 @@ Create a storage account. The storage account hosts the healthcare application.
     echo $STORAGEACCT
     ```
 
-    Make a note of the value of the **\$STORAGEACCT** variable if you need to re-create it in a later exercise.
+    > [!TIP]
+    > The *Sandbox resource group* field autopopulates after you activate the sandbox.
+
+    Make a note of the value of the `$STORAGEACCT` variable if you need to re-create it in a later exercise.
 
     This step sets the replication policy of the storage account to RA-GRS, which enables the application to fail over to the secondary region if there's an outage.
 
@@ -44,12 +45,12 @@ Create a storage account. The storage account hosts the healthcare application.
     ```azurecli
         az storage account show-connection-string \
             --name $STORAGEACCT \
-            --resource-group <rgn>[Sandbox resource group]</rgn>
+            --resource-group "<rgn>[Sandbox resource group]</rgn>"
     ```
 
 1. Copy the output connection string and save it for reference later in this module.
 
-## Fail over Azure storage account
+## View the storage account replication status
 
 Use Cloud Shell to view the replication status of your storage account. To view the status of the primary and secondary locations, run the following command:
 

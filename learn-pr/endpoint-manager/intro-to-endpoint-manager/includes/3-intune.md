@@ -6,8 +6,8 @@ Microsoft Intune integrates closely with:
 - Microsoft Purview Information Protection.
 - Microsoft Defender advanced threat protection products.
 
-When you use Microsoft Intune with Microsoft 365, you can help your workforce be productive on all their devices while protecting your organization's information. If you have on-premises infrastructure such as Exchange or an Active Directory, you can use Intune connectors to help you connect to external services. Intune is included in Microsoft's [Enterprise Mobility + Security (EMS) suite](https://www.microsoft.com/microsoft-365/enterprise-mobility-security?azure-portal=true).
+When you use Microsoft Intune with Microsoft 365, you can help your workforce be productive on all their devices while protecting your organization's information. If you have on-premises infrastructure such as Exchange or an Active Directory, you can use Intune connectors to help you connect to external services. Intune is included in Microsoft's [Security suite](https://www.microsoft.com/security).
 
 The following diagram shows how Intune interacts with other components in your on-premises and cloud infrastructures.
 
-[ ![Diagram of Intune infrastructure.](../media/intro-to-endpoint-manager-02.png) ](../media/intro-to-endpoint-manager-02.png#lightbox)
+[![Diagram of Intune infrastructure.](../media/intro-to-endpoint-manager-02.png)](../media/intro-to-endpoint-manager-02.png#lightbox)

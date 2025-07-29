@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-implement-manage-retention.exercise-retention-policies
+title: Exercise - Configure static and adaptive retention policies in Microsoft Purview
+metadata:
+  title: Exercise - Configure static and adaptive retention policies in Microsoft Purview
+  description: "Exercise - Configure static and adaptive retention policies in Microsoft Purview."
+  ms.date: 07/02/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/exercise-retention-policies.md)]

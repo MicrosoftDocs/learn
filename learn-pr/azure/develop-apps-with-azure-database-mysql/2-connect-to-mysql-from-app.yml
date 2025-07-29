@@ -11,10 +11,11 @@ metadata:
   ms.reviewer: maghan
   ms.topic: unit
   ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - devx-track-extended-java
+    - sfi-ropc-nochange
     - devx-track-python
+    - devx-track-extended-java
+    - build-2023-dataai
+    - build-2023
   zone_pivot_groups: dev-lang-php-python-java
 durationInMinutes: 5
 content: |

@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.connect-agent-to-mcp-tools
+metadata:
+  title: Integrate MCP Tools with Azure AI Agents
+  description: Enable dynamic tool access for your Azure AI agents. Learn how to connect MCP-hosted tools and integrate them seamlessly into agent workflows.
+  ms.date: 06/13/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: azure-ai-openai
+title: Integrate MCP Tools with Azure AI Agents
+summary: Enable dynamic tool access for your Azure AI agents. Learn how to connect MCP-hosted tools and integrate them seamlessly into agent workflows.
+abstract: |
+  After completing this module, you're able to:
+  - Explain the roles of the MCP server and client in tool discovery and invocation.
+  - Wrap MCP tools as asynchronous functions and register them with Azure AI agents.
+  - Build an Azure AI agent that dynamically accesses and calls MCP tools during runtime.
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience with deploying generative AI models in Azure AI Foundry.
+  - Programming experience.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products:
+  - azure
+  - ai-services
+subjects: 
+  - cloud-computing
+units:
+- learn.wwl.connect-agent-to-mcp-tools.introduction
+- learn.wwl.connect-agent-to-mcp-tools.understand-mcp-tool-discovery
+- learn.wwl.connect-agent-to-mcp-tools.mcp-client-server-setup
+- learn.wwl.connect-agent-to-mcp-tools.use-azure-ai-agents-with-mcp
+- learn.wwl.connect-agent-to-mcp-tools.exercise
+- learn.wwl.connect-agent-to-mcp-tools.knowledge-check
+- learn.wwl.connect-agent-to-mcp-tools.summary
+badge:
+  uid: learn.wwl.connect-agent-to-mcp-tools.badge
+

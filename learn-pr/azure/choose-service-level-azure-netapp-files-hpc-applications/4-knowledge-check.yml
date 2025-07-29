@@ -9,6 +9,7 @@ metadata:
   author: mengruts
   ms.author: mengtsai
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   questions:

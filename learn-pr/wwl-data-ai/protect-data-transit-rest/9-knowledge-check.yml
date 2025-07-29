@@ -4,10 +4,11 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 2/25/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -70,4 +71,4 @@ quiz:
       explanation: "Incorrect. CLI only supports creating server-level firewall rules."
     - content: "Executing a T-SQL statement"
       isCorrect: true
-      explanation: "Correct. This is the only way to create a database firewall rule."
+      explanation: "Correct. This is the only way to create a database firewall rule."

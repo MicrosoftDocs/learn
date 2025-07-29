@@ -1,112 +1,30 @@
-In this exercise you learn how to perform the following actions:
+In this exercise, you create an Azure API Management instance, import an OpenAPI specification backend API, configure the API settings including the web service URL and subscription requirements, and test the API operations to verify they work correctly.
 
-* Create an API Management (APIM) instance
+Tasks performed in this exercise:
+
+* Create an Azure API Management (APIM) instance
 * Import an API
 * Configure the backend settings
 * Test the API
 
-## Prerequisites
+This exercise takes approximately **20** minutes to complete.
 
-* An **Azure account** with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free).
+## Before you start
 
-## Sign in to Azure
+To complete the exercise, you need:
 
-1. Sign in to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
+* An Azure subscription. If you don't already have one, you can sign up for one [https://azure.microsoft.com/](https://azure.microsoft.com/).
 
-    :::image type="content" source="../media/cloud-shell-menu.png" alt-text="The location of Cloud Shell launch button.":::
+## Get started
 
-1. After the shell opens, be sure to select the **Bash** environment.
+Select the **Launch Exercise** button to open the exercise instructions in a new browser window. When you're finished with the exercise, return here to:
 
-    :::image type="content" source="../media/shell-bash-selection.png" alt-text="Selecting the Bash environment.":::
+> [!div class="checklist"]
+> * Complete the module
+> * Earn a badge for completing this module
 
-## Create an API Management instance
+<br/>
 
-1. Let's set some variables for the CLI commands to use to reduce the amount of retyping. Replace `<myLocation>` with a region that makes sense for you. The APIM name needs to be a globally unique name, and the following script generates a random string. Replace `<myEmail>` with an email address you can access.
-
-    ```bash
-    myApiName=az204-apim-$RANDOM
-    myLocation=<myLocation>
-    myEmail=<myEmail>
-    ```
-
- 1. Create a resource group. The following commands create a resource group named *az204-apim-rg*.
-
-    ```bash
-    az group create --name az204-apim-rg --location $myLocation
-    ```
-
-1. Create an APIM instance. The `az apim create` command is used to create the instance. The `--sku-name Consumption` option is used to speed up the process for the walkthrough. 
-
-    ```bash
-    az apim create -n $myApiName \
-        --location $myLocation \
-        --publisher-email $myEmail  \
-        --resource-group az204-apim-rg \
-        --publisher-name AZ204-APIM-Exercise \
-        --sku-name Consumption 
-    ```
-    > [!NOTE]
-    > The operation should complete in about five minutes. 
-
-## Import a backend API
-
-This section shows how to import and publish an OpenAPI specification backend API.
-
-1. In the Azure portal, search for and select **API Management services**.
-
-1. On the **API Management** screen, select the API Management instance you created.
-
-1. In the **API management service** navigation pane, under **APIs**, select **APIs**.
-
-    :::image type="content" source="../media/select-apis-navigation-pane.png" alt-text="Select APIs in the service navigation pane.":::
-
-1. Select **OpenAPI** from the list and select **Full** in the pop-up.
-
-    :::image type="content" source="../media/create-api.png" alt-text="The OpenAPI dialog box. Fields are detailed in the following table.":::
-
-    Use the values from the following table to fill out the form. You can leave any fields not mentioned their default value.
-
-    | Setting | Value | Description |
-    |--|--|--|
-    | **OpenAPI Specification** | `https://bigconference.azurewebsites.net/` | References the service implementing the API, requests are forwarded to this address. Most of the necessary information in the form is automatically populated after you enter this. |
-    | **Display name** | *Big Conference API* | This name is displayed in the Developer portal. |
-    | **Name** | *big-conference-api* | Provides a unique name for the API. |
-    | **Description** | Automatically populated | Provide an optional description of the API. |
-
-1. Select **Create**.
-
-## Configure the API settings
-
-The *Big Conference API* is created. Configure the API settings. 
-
-1. Select **Settings** in the blade to the right.
-
-1. Confirm that `https://bigconference.azurewebsites.net/` is in the **Web service URL** field.
-
-1. Deselect the **Subscription required** checkbox.
-
-    :::image type="content" source="../media/api-settings-backend.png" alt-text="Specify the backend URL for the API.":::
-
-1. Select **Save**.
-
-## Test the API
-
-Now that the API has been imported and configured it's time to test the API.
-
-1. Select **Test**.
-
-    :::image type="content" source="../media/select-test.png" alt-text="Select test in the right pane.":::
-
-1. Select **Speakers_Get**. The page shows **Query parameters** and **Headers**, if any. 
-
-1. Select **Send**.
-
-    Backend responds with **200 OK** and some data.
-
-## Clean up Azure resources
-
-When you're finished with the resources you created in this exercise you can use the following command to delete the resource group and all related resources.
-
-```bash
-az group delete --name az204-apim-rg
-```
+<a href="https://go.microsoft.com/fwlink/?linkid=2325516" target="_blank">
+    <img src="../media/launch-exercise.png" alt="Button to launch exercise.">
+</a>

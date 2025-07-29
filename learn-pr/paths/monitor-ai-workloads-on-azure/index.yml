@@ -32,7 +32,6 @@ products:
 - azure-monitor
 - azure-log-analytics
 modules:
-- learn.wwl.monitor-ai-services
 - learn.wwl.evaluate-models-azure-ai-studio
 - learn.introduction-to-azure-machine-learning-monitoring
 trophy:

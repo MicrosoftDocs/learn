@@ -11,6 +11,7 @@ metadata:
   ms.reviewer: maghan
   ms.topic: unit
   ms.custom:
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

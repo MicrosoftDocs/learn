@@ -7,10 +7,12 @@ metadata:
   author: pablonunes
   ms.author: pablolopes
   ms.date: 12/7/2023
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot
   ms.custom: team=nextgen
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"

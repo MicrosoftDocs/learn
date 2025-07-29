@@ -1,6 +1,6 @@
 In this module, you learned about Azure disk caching and how it potentially improves performance. You used the Azure portal and Azure PowerShell to manage disk caching for your VM.
 
-Once you have an Azure VM disk caching strategy in place, you can then quickly and easily deploy new VMs and disks with the optimum disk cache settings by using scripts and templates.
+Once you have an Azure VM disk caching strategy in place, you can quickly and easily deploy new VMs and disks with the optimum disk cache settings by using scripts and templates.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

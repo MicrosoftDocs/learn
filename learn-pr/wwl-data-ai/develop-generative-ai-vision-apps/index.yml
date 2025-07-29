@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should have:
   - Experience with deploying generative AI models in Azure AI Foundry.
-  - Programming experience with Python or Microsoft C#.
+  - Programming experience.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate
