@@ -4,8 +4,9 @@ metadata:
   title: Using GitHub Copilot with JavaScript
   description: Develop updates in a JavaScript application using GitHub Copilot with Visual Studio Code.
   author: abrilurena
-  ms.author: abrilu
+  ms.author: orthomas
   ms.date: 08/12/2024
+  ms.update-cycle: 180-days
   ms.service: github-copilot
   ms.topic: module-standard-task-based
   ms.collection:

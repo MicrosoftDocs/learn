@@ -7,11 +7,11 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
-To learn more about the Azure Kubernetes Service, Kubenet, and Azure CNI, visit the following sites and articles:
+To learn more about the Azure Kubernetes Service, kubenet, and Azure CNI, visit the following sites and articles:
 
 * [AKS Cluster Architecture](/training/paths/aks-cluster-architecture)
 * [Azure CNI Module](/training/modules/aks-network-design-azure-container-network-interface/?source=recommendations)
-* [Configure Kubenet](/azure/aks/configure-kubenet)
+* [Configure kubenet](/azure/aks/configure-kubenet)
 * [Configure Azure CNI](/azure/aks/configure-azure-cni)
 * [Configure Azure CNI Overlay](/azure/aks/azure-cni-overlay)
 * [Configure Azure CNI Powered by Cilium](/azure/aks/azure-cni-powered-by-cilium)

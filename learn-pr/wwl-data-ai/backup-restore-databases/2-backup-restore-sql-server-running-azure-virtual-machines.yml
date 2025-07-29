@@ -4,7 +4,7 @@ title: Back up and restore SQL Server running on Azure virtual machines
 metadata:
   title: Back up and restore SQL Server running on Azure virtual machines
   description: "Back up and restore SQL Server running on Azure virtual machines"
-  ms.date: 03/25/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-backup-restore-sql-server-running-azure-virtual-machines.md)]
+  [!include[](includes/2-backup-restore-sql-server-running-azure-virtual-machines.md)]

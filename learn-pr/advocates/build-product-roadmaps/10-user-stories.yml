@@ -5,7 +5,7 @@ metadata:
   title: User stories
   description: This unit teaches how to write user stories.
   author: czhu89
-  ms.date: 04/24/2023
+  ms.date: 07/09/2025
   ms.author: cazh
   ms.topic: unit
 durationInMinutes: 2
@@ -16,10 +16,10 @@ quiz:
    questions:
    - content: What do you do to a user story if it becomes too complex?
      choices:
-     - content: Stop working on the story
+     - content: Stop working on the story.
        isCorrect: false
      - content: Nothing.
        isCorrect: false
-     - content: Break the story into smaller stories
+     - content: Break the story into smaller stories.
        isCorrect: true
        explanation: "Complex stories should be broken down into smaller stories."

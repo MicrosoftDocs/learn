@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should already have:
   - Familiarity with Azure and the Azure portal.
-  - Experience programming with C# or Python.
+  - Programming experience.
 iconUrl: /training/achievements/artificial-intelligence-detect-faces.svg
 levels:
 - intermediate

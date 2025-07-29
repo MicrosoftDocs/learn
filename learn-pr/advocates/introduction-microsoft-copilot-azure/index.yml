@@ -4,6 +4,7 @@ metadata:
   ms.author: viniap
   author: Orin-Thomas
   ms.date: 07/03/2025
+  ms.update-cycle: 180-days
   title: Introduction to Microsoft Copilot in Azure
   description: Learn how to use Microsoft Copilot in Azure to perform operations tasks, manage access, and enhance productivity.
   ms.topic: module

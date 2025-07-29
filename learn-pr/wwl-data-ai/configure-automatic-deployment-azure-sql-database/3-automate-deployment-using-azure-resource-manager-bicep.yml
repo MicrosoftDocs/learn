@@ -4,7 +4,7 @@ title: Automate deployment by using Azure Resource Manager templates and Bicep
 metadata:
   title: Automate deployment by using Azure Resource Manager templates and Bicep
   description: "Automate deployment by using Azure Resource Manager templates and Bicep"
-  ms.date: 02/26/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -16,4 +16,4 @@ labModal: false
 durationInMinutes: 12
 content: |
   [!include[](includes/3-automate-deployment-using-azure-resource-manager-bicep.md)]
-
+

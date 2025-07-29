@@ -2,7 +2,7 @@ Blazor can bind forms to models in your application. If you decorate those model
 
 The app correctly doesn't place orders when a client doesn't enter a name and some address fields. The team would like you to enhance the validations to include more of the fields. They'd also like to have some minimum lengths and character validation.
 
-In this exercise, you'll replace the current server-side validation to use data annotations. You'll see how to manage validation messages and improve the out-of-the-box validation support. In the last step, you'll control how the form submits, only submitting a form when all fields are valid.
+In this exercise, you replace the current server-side validation to use data annotations. Then you see how to manage validation messages and improve the out-of-the-box validation support. In the last step, you control how the form submits, only submitting a form when all fields are valid.
 
 ## Add data annotations to a Blazor model
 
@@ -67,7 +67,7 @@ In this exercise, you'll replace the current server-side validation to use data 
 
     :::image type="content" source="../media/7-show-validation-errors.png" alt-text="Screenshot of the error messages for each field.":::
 
-    This interaction improves the error checks for each field, but the error for each field would be better next to the field it's related to.
+    This interaction improves the error checks for each field, but the error for each field would be better next to the field it relates to.
 
 1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app from running.
 
@@ -176,7 +176,7 @@ In this exercise, you'll replace the current server-side validation to use data 
 ## Restore the overall error message and disable the submit button
 
 1. In the file explorer, expand **Pages**, then select **Checkout.razor**.
-1. Add an `OnInvalidSubmit` parameter that will call a `ShowError` method to the `EditForm` component.
+1. Add an `OnInvalidSubmit` parameter that calls a `ShowError` method to the `EditForm` component.
 
     ```razor
     <EditForm Model=Order.DeliveryAddress OnValidSubmit=PlaceOrder OnInvalidSubmit=ShowError> 
@@ -216,7 +216,7 @@ In this exercise, you'll replace the current server-side validation to use data 
 
 ## Enable the submit button when all fields are correct
 
-Would a better user experience be that a customer can't submit their order until they've completed all the fields? Let's change the checkout page to support this requirement. Change the `EditForm` to use an EditContext instead of a model.
+Would a better user experience be that a customer can't submit their order until they complete all the fields? Let's change the checkout page to support this requirement. Change the `EditForm` to use an EditContext instead of a model.
 
 1. In the file explorer, expand **Pages**, then select **Checkout.razor**.
 1. Update `EditForm` element.
@@ -257,7 +257,7 @@ Would a better user experience be that a customer can't submit their order until
         }
     ```
 
-1. Because we've now created an event handler, we should dispose of it when the checkout component no longer needs it.
+1. Now that we created an event handler, we should dispose of it when the checkout component no longer needs it.
 
     ```csharp
     public void Dispose()
