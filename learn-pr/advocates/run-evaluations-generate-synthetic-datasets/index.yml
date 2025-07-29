@@ -4,6 +4,7 @@ metadata:
   ms.author: apspeigh
   author: aprilgittens
   ms.date: 10/13/2024
+  ms.update-cycle: 180-days
   title: Run evaluations and generate synthetic datasets
   description: Learn how to run evaluations and generate synthetic datasets with the Azure AI Evaluation SDK.
   ms.service: artificial-intelligence

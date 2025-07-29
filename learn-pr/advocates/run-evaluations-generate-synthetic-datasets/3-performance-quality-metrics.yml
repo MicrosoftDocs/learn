@@ -5,6 +5,7 @@ metadata:
   title: Exercise - Performance and quality metrics
   description: Learn how to run an evaluation using performance and quality metrics.
   ms.date: 10/13/2024
+  ms.update-cycle: 180-days
   author: aprilgittens
   ms.author: apspeigh
   ms.topic: unit
