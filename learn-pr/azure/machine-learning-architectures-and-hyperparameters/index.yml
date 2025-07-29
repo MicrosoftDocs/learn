@@ -6,6 +6,7 @@ metadata:
   title: Select and customize architectures and hyperparameters using random forest
   description: Explore how altering the architecture of more complex models can bring about more effective results.
   ms.date: 03/24/2025
+  ms.update-cycle: 180-days
   author: s-polly
   ms.author: scottpolly
   ms.topic: module

@@ -5,6 +5,7 @@ metadata:
   title: Implement the Evaluator-Optimizer agent Pattern Using Spring AI
   description: Learn how to implement the Evaluator-Optimizer agent pattern using Spring AI.
   ms.date: 03/16/2025
+  ms.update-cycle: 180-days
   author: yortch
   ms.author: jbalderas
   ms.reviewer: thegovind

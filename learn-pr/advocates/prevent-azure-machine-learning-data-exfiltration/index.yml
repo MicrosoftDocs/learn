@@ -4,6 +4,7 @@ metadata:
   ms.author: viniap
   author: Orin-Thomas
   ms.date: 07/01/2025
+  ms.update-cycle: 180-days
   title: Prevent data exfiltration from Azure AI workloads
   description: Overview of how to prevent data exfiltration for AI workloads running on Microsoft Azure.
   ms.topic: module

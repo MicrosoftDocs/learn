@@ -6,6 +6,7 @@ metadata:
   author: bethanyjep
   ms.author: bethanycheum
   ms.date: 12/04/2023
+  ms.update-cycle: 180-days
   ms.service: microsoft-copilot
   ms.topic: module-challenge-project
   ms.collection:
