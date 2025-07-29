@@ -14,20 +14,20 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which scenario is a good use case for purchasing a reserved instance?"
+    - content: "Contoso consolidated three AKS clusters into one. What was one of the main benefits of this change?"
       choices:
-        - content: "Your workload is running on VMs and is accessed 24/7."
+        - content: "Improved security through network isolation."
           isCorrect: true
-          explanation: "Correct. Purchasing reserved instances for VMs that are running 24/7 is a good way to save money."
-        - content: "Your workload is running on Azure App Service and is only accessed during business hours."
+          explanation: "Incorrect. Consolidating clusters can actually reduce isolation, not improve it. Separate clusters offer stronger boundaries for security-sensitive workloads."
+        - content: "Reduced patching and operational overhead."
           isCorrect: false
-          explanation: "Incorrect. Being able to stop the App Service instances when they aren't in use is a better way to save money."
-        - content: "Your workload is running on VMs and will only be in service for six months."
+          explanation: "Correct. Consolidating clusters reduced the number of nodes and simplified maintenance, saving time and cost."
+        - content: "Increased API response times."
           isCorrect: false
-          explanation: "Incorrect. Reservations can only be purchased on one-year or three-year terms, so this isn't a good use case for a reservation."
-        - content: "Your workload is running on Azure Container Apps and is accessed 24/7."
+          explanation: "Incorrect. Consolidation doesn't inherently improve performance. In fact, if not managed well, it could introduce resource contention."
+        - content: "Enabled multi-region failover."
           isCorrect: false
-          explanation: "Incorrect. Azure reservations can't be purchased for Azure Container Apps."
+          explanation: "Incorrect. Multi-region failover typically requires multiple clusters or services deployed across regions. Consolidation into one cluster doesn't support this approach."
 
     - content: "When might it be a good idea to switch from consumption-based billing to a fixed-rate billing model?"
       choices:
@@ -44,17 +44,17 @@ quiz:
           isCorrect: false
           explanation: "Incorrect. You might be able to run your workload with far fewer resources for the other nine months of the year, so a fixed-rate billing model isn't a good fit."
 
-    - content: "Contoso's SQL databases are spread across multiple VMs, each with its own SQL Server Enterprise license. Which of the following cost-saving measures should Contoso consider?"
+    - content: "Why did Contoso switch their API Management tier from Consumption to Standard?"
       choices:
-        - content: "Switch all of the SQL Enterprise licenses to SQL Server Developer."
+        - content: "The Standard tier offered better developer tools."
           isCorrect: false
-          explanation: "Incorrect. SQL Server Developer is only for development and testing purposes and can't be used in production environments."
-        - content: "Consolidate the databases onto fewer VMs and apply Azure Hybrid Benefit to each Windows and SQL Server license."
+          explanation: "Incorrect. Developer tools are largely consistent across tiers. The decision was based on networking and cost, not tooling."
+        - content: "The Standard tier allowed for private endpoints and was more cost-effective."
           isCorrect: true
-          explanation: "Correct. Consolidating the databases onto fewer VMs and applying Azure Hybrid Benefit to each Windows and SQL Server license cuts down the number of VMs and licenses to pay for."
-        - content: "Add all of the database servers into an Always On failover cluster."
+          explanation: "Correct. The team found the Standard tier better aligned with their usage patterns and offered extra network benefits."
+        - content: "The Consumption tier didn't support global usage."
           isCorrect: false
-          explanation: "Incorrect. This scenario might be a good idea for high availability, but it won't save Contoso any money."
-        - content: "Disable SQL backups."
+          explanation: "Incorrect. The Consumption tier does support global usage, but it lacks features like virtual network integration and private endpoints."
+        - content: "The Standard tier had unlimited scaling."
           isCorrect: false
-          explanation: "Incorrect. Disabling backups isn't a good idea because it puts the databases at risk of data loss."
+          explanation: "Incorrect. The Standard tier supports scaling, but it isn't unlimited. The Consumption tier actually offers more elastic scaling in some scenarios."

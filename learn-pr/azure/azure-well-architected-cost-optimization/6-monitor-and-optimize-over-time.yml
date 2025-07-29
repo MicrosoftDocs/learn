@@ -29,7 +29,7 @@ quiz:
           isCorrect: true
           explanation: "Correct. All Azure services, including Azure Storage accounts, are included in your Azure costs."
 
-    - content: "Which aspect of your workload should you not consider refining according to ROI data?"
+    - content: "Which aspect of your workload should you not consider refining based on ROI data?"
       choices:
         - content: "The workload's architecture design"
           isCorrect: false
@@ -44,18 +44,18 @@ quiz:
           isCorrect: true
           explanation: "Correct. The functional and nonfunctional requirements aren't subject to change based on ROI data."
 
-    - content: "Contoso Air developers are considering deploying a new dev/test environment in Azure. Which of the following design decisions would be most cost-effective?"
+    - content: "What change did Contoso make to reduce unnecessary compute usage without affecting performance?"
       choices:
-        - content: "Deploying the app on an Azure App Service Isolated plan in the new dev/test environment resources"
+        - content: "They upgraded to a higher compute SKU to handle peak loads"
           isCorrect: false
-          explanation: "Incorrect. Dev/test environments should be designed with the minimum resources required to support the workload."
-        - content: "Enabling Azure Site Recovery for the dev/test environment"
-          isCorrect: false
-          explanation: "Incorrect. Dev/test environments shouldn't be designed with disaster recovery capabilities in most cases."
-        - content: "Enabling active geo-replication for the dev/test environment's Azure SQL databases"
-          isCorrect: false
-          explanation: "Incorrect. Dev/test environments typically only use test data and shouldn't replicate that data to other regions in most cases."
-        - content: "Using the Developer SKU for the dev/test environment's API Management instance"
+          explanation: "Incorrect. This approach would increase costs, not reduce them. Contoso aimed to optimize usage, not expand it."
+        - content: "They switched to a queue-based load leveling system"
           isCorrect: true
-          explanation: "Correct. Using the Developer SKU for the dev/test environment's API Management instance is the most cost-effective option."
+          explanation: "Correct. They realized they were over-provisioning resources for peak times. By switching to a queue-based load leveling system, they could smooth out demand and reduce compute usage without impacting performance."
+        - content: "They added more VMs to their AKS cluster"
+          isCorrect: false
+          explanation: "Incorrect. Adding VMs increases capacity and cost. Contoso actually removed unused node pools to save money."
+        - content: "They enabled geo-redundancy for all services"
+          isCorrect: false
+          explanation: "Incorrect. Geo-redundancy improves availability but adds cost. It wasn't part of their cost-saving strategy."
 
