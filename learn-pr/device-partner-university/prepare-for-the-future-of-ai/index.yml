@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.dpu.prepare-for-the-future-of-ai
+title: Prepare for the future of AI with Copilot+ PCs
+metadata:
+  title: Prepare For The Future Of AI With Copilot+ PCs
+  description: In this module, you'll learn what makes Copilot+ PCs a new class of AI-powered Windows 11 devices, including how their built-in Neural Processing Units (NPUs) enable faster, more private, and energy-efficient AI experiences.
+  ms.date: 07/29/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Learn all about what makes Copilot+ PCs unique and how they can help you get more done.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the key features and benefits of Copilot+ PCs, including their AI capabilities powered by Neural Processing Units (NPUs).
+  - Explain how NPUs enhance performance, privacy, and sustainability in AI-driven tasks on Copilot+ PCs.
+  - Identify the unique AI experiences and hardware options available across different Copilot+ PC models from major OEMs.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/prepare-for-the-future-of-ai.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - ai-product-manager
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.prepare-for-the-future-of-ai.introduction
+  - learn.dpu.prepare-for-the-future-of-ai.copilot-pc-overview
+  - learn.dpu.prepare-for-the-future-of-ai.why-npus-matter
+  - learn.dpu.prepare-for-the-future-of-ai.unique-experiences
+  - learn.dpu.prepare-for-the-future-of-ai.silicon-updates
+  - learn.dpu.prepare-for-the-future-of-ai.device-updates
+  - learn.dpu.prepare-for-the-future-of-ai.summary
+badge:
+  uid: learn.dpu.prepare-for-the-future-of-ai.badge
