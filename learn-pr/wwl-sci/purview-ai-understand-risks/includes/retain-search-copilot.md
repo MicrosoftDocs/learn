@@ -1,4 +1,4 @@
-AI prompts and responses often contain sensitive or regulated content. OOrganizations need the ability to retain, search, and preserve this information for legal or compliance investigations. Microsoft Purview provides tools to support these scenarios across supported Copilot and AI application categories.
+AI prompts and responses often contain sensitive or regulated content. Organizations need the ability to retain, search, and preserve this information for legal or compliance investigations. Microsoft Purview provides tools to support these scenarios across supported Copilot and AI application categories.
 
 ## Understand where AI interaction data is stored
 
@@ -12,7 +12,7 @@ This mailbox-based storage model supports:
 
 :::image type="content" source="../media/copilot-data-in-mailbox.png" alt-text="Diagram showing Copilot prompts and responses stored in a user mailbox in Exchange Online, with retention, audit, and eDiscovery access through Microsoft Purview." lightbox="../media/copilot-data-in-mailbox.png":::
 
-AI data is only stored for supported Copilot experiences and enterprise AI apps that are integrated with Microsoft 365. Browser-based AI tools, like consumer ChatGPT, are not covered.
+AI data is only stored for supported Copilot experiences and enterprise AI apps that are integrated with Microsoft 365. Browser-based AI tools, like consumer ChatGPT, aren't covered.
 
 ## Apply retention policies to AI interaction data
 

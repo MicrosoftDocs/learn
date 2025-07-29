@@ -1,9 +1,50 @@
-Understand AI data security risks
-Understand how Microsoft Purview secures AI data
-Identify AI-related data exposure risks
-Understand how Microsoft Purview controls AI data access
-Discover how Microsoft Purview addresses risky AI activity
-Review retention and search options for Copilot prompts and responses
-Evaluate compliance risks for AI usage
+### YamlMime:Module
+uid: learn.wwl.purview-ai-understand-risks
+metadata:
+  title: Understand How to Secure AI Data with Microsoft Purview
+  description: "Understand how to secure AI data with Microsoft Purview."
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Understand How to Secure AI Data with Microsoft Purview
+summary: Microsoft Purview helps organizations discover how Microsoft 365 Copilot and other AI tools interact with data. Using Data Security Posture Management (DSPM) for AI and Audit, security teams can detect AI activity, assess potential risks, and gather insights to support data protection and compliance strategies.
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain how Microsoft Purview DSPM for AI and Audit help identify AI-related data risks
+  - Set up DSPM for AI to detect activity from Microsoft 365 Copilot and enterprise AI tools
+  - Use Microsoft Purview Audit to search for and review Copilot interactions
+  - Analyze AI activity and risks using built-in reports and insights
+prerequisites: |
+  - Familiarity with Microsoft 365 services.
+  - Basic understanding of AI tools, including Microsoft 365 Copilot.
+  - Knowledge of security and compliance concepts such as data loss prevention (DLP), sensitivity labels, and auditing.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.purview-ai-understand-risks.introduction
+- learn.wwl.purview-ai-understand-risks.understand-ai-risks
+- learn.wwl.purview-ai-understand-risks.understand-purview-ai-protections
+- learn.wwl.purview-ai-understand-risks.assess-ai-risks
+- learn.wwl.purview-ai-understand-risks.control-ai-sensitive-data
+- learn.wwl.purview-ai-understand-risks.detect-respond-ai-activity
+- learn.wwl.purview-ai-understand-risks.retain-search-copilot
+- learn.wwl.purview-ai-understand-risks.compliance-risks-ai
+- learn.wwl.purview-ai-understand-risks.knowledge-check
+- learn.wwl.purview-ai-understand-risks.summary
 
-Understand how to secure AI data with Microsoft Purview
+badge:
+  uid: learn.wwl.purview-ai-understand-risks.badge
