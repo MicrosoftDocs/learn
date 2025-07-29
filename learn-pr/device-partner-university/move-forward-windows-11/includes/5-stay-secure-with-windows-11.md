@@ -26,7 +26,7 @@ Copilot+ PCs and Windows 11 Pro PCs are designed for fast, easy deployment and c
 
 - **Fast, easy deployment**  
   With familiar tools and processes, IT teams can efficiently manage both Windows 10 and Windows 11 environments.  
-  Businesses can take advantage of features like [Windows Autopilot](autopilot/overview) for zero-touch provisioning—reducing setup time and ensuring a smoother upgrade process.
+  Businesses can take advantage of features like [Windows Autopilot](/mem/autopilot/windows-autopilot) for zero-touch provisioning—reducing setup time and ensuring a smoother upgrade process.
 
 - **Uninterrupted performance**  
   Seamless compatibility ensures mission-critical business apps continue to run smoothly without disruptions.  
