@@ -5,7 +5,7 @@ metadata:
   title: Identify your audience
   description: This unit teaches you about identifying your product's audience.
   author: czhu89
-  ms.date: 04/24/2023
+  ms.date: 07/09/2025
   ms.author: cazh
   ms.topic: unit
 durationInMinutes: 2
@@ -22,4 +22,4 @@ quiz:
        isCorrect: false
      - content: The effort and cost of product development
        isCorrect: true
-       explanation: "Your executive team is interested in your plans and the effort and cost of your development. They want to understand how product is contributing to the company's strategic objectives."
+       explanation: "Your executive team is interested in your plans and the effort and cost of your development. They want to understand how the product is contributing to the company's strategic objectives."

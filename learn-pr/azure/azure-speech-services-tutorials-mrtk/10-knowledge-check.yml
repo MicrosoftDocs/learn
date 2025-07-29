@@ -7,9 +7,11 @@ metadata:
   author: marlenaklein-msft
   ms.author: marlenaklein
   ms.date: 01/17/2024
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot
+  module_assessment: true
 durationInMinutes: 3
 content: Choose the best response for each question. 
 quiz:

@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom: sfi-ga-nochange
 durationInMinutes: 10
 content: |
   [!include[](includes/5-assign-azure-active-directory-roles-privileged-identity-management.md)]

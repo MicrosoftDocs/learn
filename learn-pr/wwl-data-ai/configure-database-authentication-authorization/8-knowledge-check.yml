@@ -4,10 +4,11 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/25/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -71,4 +72,4 @@ quiz:
     - content: "Granular security"
       isCorrect: false
       explanation: "Incorrect. Granular security would involve granting access to the procedure, but not actual manage the privileges."
-
+

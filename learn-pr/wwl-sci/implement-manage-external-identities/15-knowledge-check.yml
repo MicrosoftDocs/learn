@@ -12,6 +12,7 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
+  module_assessment: true
 durationInMinutes: 2
 content: |
   [!include[](includes/15-knowledge-check.md)]

@@ -6,10 +6,12 @@ metadata:
   author: japhletnwamu
   ms.author: japhletnwamu
   ms.date: 08/28/2024
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot
   ms.custom: team=nextgen
+  module_assessment: true
 title: Module assessment
 durationInMinutes: 3
 content: |

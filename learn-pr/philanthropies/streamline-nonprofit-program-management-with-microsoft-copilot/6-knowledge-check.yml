@@ -7,10 +7,12 @@ metadata:
   author: CourtneyHMicrosoft
   ms.author: anruss
   ms.date: 01/14/2025
+  ms.update-cycle: 180-days
   ms.topic: unit
   ai-usage: ai-assisted
   ms.collection:
     - ce-skilling-ai-copilot
+  module_assessment: true
 durationInMinutes: 3
 content: |
 quiz:

@@ -4,10 +4,11 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Check your knowledge.
-  ms.date: 12/06/2023
+  ms.date: 07/02/2025
   author: cherylmc
   ms.author: cherylmc
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -47,4 +48,4 @@ quiz:
     - content: "Azure Firewall and Azure Firewall Manager"
       isCorrect: true
       explanation: "That's correct. Use Azure Firewall and Azure Firewall Manager."
-
+

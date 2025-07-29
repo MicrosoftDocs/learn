@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview
+metadata:  
+  title: Enhance Your LinkedIn Profile With Microsoft Copilot And Ace Your Interview
+  description: Your LinkedIn profile is a gateway to networking, career growth, and personal branding. By leveraging Microsoft Copilot, you can refine your headline, summary, and experience sections, ensuring that your profile highlights your strengths and potential, in addition to serving as a valuable interview preparation tool.
+  ms.author: tsheppard
+  author: andrewbettany
+  ms.date: 05/30/2025
+  ms.topic: module-standard-task-based
+  moduleType: standard
+  ms.service: microsoft-copilot
+  ai-usage: ai-assisted
+title: Enhance your LinkedIn profile with Microsoft Copilot and ace your interview
+summary: Your LinkedIn profile is a gateway to networking, career growth, and personal branding. By leveraging Microsoft Copilot, you can refine your headline, summary, and experience sections, ensuring that your profile highlights your strengths and potential, in addition to serving as a valuable interview preparation tool.
+abstract: |  
+  By the end of this module, you’ll be able to:   
+  - Use Microsoft Copilot to refine your LinkedIn headline and summary.
+  - Create a strong summary of your qualifications and experience to showcase your strengths.
+  - Optimize skills and endorsements to improve visibility.
+  - Generate and practice interview questions to boost confidence and performance. 
+prerequisites: |  
+  - Basic understanding of LinkedIn.
+  - Familiarity with AI concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:  
+  - beginner
+roles:  
+  - k-12-educator
+  - student
+  - higher-ed-educator
+products:  
+  - microsoft-edge
+  - ms-copilot  
+subjects:  
+  - artificial-intelligence
+  - generative-ai
+units:
+- learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.introduction
+- learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.importance-strong-linkedin-presence
+- learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.refine-your-linkedin-headline-summary
+- learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.tips-great-linkedin-profile-photo
+- learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.enhance-your-linkedin-experience-section
+- learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.optimize-skills-endorsements-on-linkedin
+- learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.master-job-interviews-for-students
+- learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.knowledge-check
+- learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.summary
+badge:
+  uid: learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview-badge

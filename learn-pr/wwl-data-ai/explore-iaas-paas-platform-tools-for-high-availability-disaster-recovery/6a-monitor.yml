@@ -4,7 +4,7 @@ title: Monitor availability
 metadata:
   title: Monitor availability
   description: "Explore how to monitor availability."
-  ms.date: 03/27/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/6a-monitor.md)]
+  [!include[](includes/6a-monitor.md)]

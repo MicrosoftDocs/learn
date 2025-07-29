@@ -5,6 +5,91 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.analyze-logs-with-kql.badge
+  type: badge
+  title: Guided project - Analyze logs in Azure Monitor with KQL
+  summary: Write log queries to find answers to operational and business questions. Use Kusto Query Language (KQL) to extract insights from logs in Azure Monitor.
+  iconUrl: /training/achievements/analyze-logs-with-kql.svg
+- uid: learn.azure.explore-fundamentals-kql.badge
+  type: badge
+  title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)
+  summary: Learn about the basics of Kusto Query Language (KQL), and the various Microsoft products that use it.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.gain-insights-data-kql.badge
+  type: badge
+  title: Gain insights from your data by using Kusto Query Language
+  summary: Write advanced queries in Kusto Query Language to help you gain insights from your data. 
+  iconUrl: /training/achievements/gain-insights-in-your-data-using-kusto-query-language.svg
+- uid: learn.azure.characterize-dataset-azure-data-explorer.badge
+  type: badge
+  title: Characterize an unfamiliar dataset with Azure Data Explorer
+  summary: Learn how to characterize an unfamiliar dataset using Azure Data Explorer. 
+  iconUrl: /training/achievements/azure-data-explore-web.svg
+- uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.badge
+  type: badge
+  title: Implement high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance
+  summary: In this module, you'll learn to describe high-availability and disaster-recovery options for Azure Arc-enabled SQL Managed Instance.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.intro-to-arc-enabled-data-services.badge
+  type: badge
+  title: Introduction to Azure Arc-enabled data services
+  summary: In this module, you learn the fundamentals of hybrid computing and Azure Arc.
+  iconUrl: /training/achievements/intro-to-arc-enabled-data-services.svg
+- uid: learn.implement-message-workflows-with-service-bus.badge
+  type: badge
+  title: Implement message-based communication workflows with Azure Service Bus
+  summary: Write C# code in a custom application that sends and receives messages using Azure Service Bus topics and queues.
+  iconUrl: /training/achievements/implement-message-workflows-with-service-bus.svg
+- uid: learn.intro-to-azure-data-explorer.badge
+  type: badge
+  title: Introduction to Azure Data Explorer
+  summary: Learn to describe the ingestion, query, visualization, and data management features that Azure Data Explorer provides to help you make sense of the data flowing into your business.
+  iconUrl: /training/achievements/intro-to-azure-data-explorer.svg
+- uid: learn.azure.intro-to-azure-monitor.badge
+  type: badge
+  title: Introduction to Azure Monitor
+  summary: Learn how to use Azure Monitor to provide insights into your Azure resource performance and operations.
+  iconUrl: /training/achievements/intro-to-azure-monitor.svg
+- uid: learn.visualize-data-workbooks.badge
+  type: badge
+  title: Visualize data combined from multiple data sources by using Azure Monitor Workbooks
+  summary: Use Azure Workbooks to query data from multiple data sources and use visualizations such as graphs, charts, and grids to build visual reports for data analysis and reporting.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure-security.configure-security-policies-to-manage-data.badge
+  type: badge
+  title: Configure security policies to manage data
+  summary: Learn how to configure security policies to manage data. 
+  iconUrl: /training/achievements/configure-security-policies-to-manage-data.svg
+- uid: learn.sql-server-2022-performance-enhancements.badge
+  type: badge
+  title: Understand the built-in query intelligence enhancements of SQL Server 2022
+  summary: Learn about and use the Intelligent Query Processing feature enhancements in SQL Server 2022.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.secure-your-azure-sql-database.badge
+  type: badge
+  title: Secure your Azure SQL Database
+  summary: Secure an Azure SQL database to keep the information safe and diagnose potential security concerns as they happen.
+  iconUrl: /training/achievements/secure-your-azure-sql-database.svg
+- uid: learn.react-to-state-changes-using-event-grid.badge
+  type: badge
+  title: React to state changes in your Azure services by using Event Grid
+  summary: Build a serverless application architecture, automate your operations, and integrate applications by handling Azure events with Event Grid.
+  iconUrl: /training/achievements/react-to-state-changes-using-event-grid.svg
+- uid: learn.azure-sql-case-studies.badge
+  type: badge
+  title: Putting it all together with Azure SQL
+  summary: In this learning path, you've deployed and configured a secure, performant, and highly available solution by using Azure SQL. There are many elements in a single solution. In this module, you'll learn how to take the business scenario and determine the best resources and processes to satisfy requirements while considering the constraints within the scenario. You'll also learn what else you should consider with Azure SQL and opportunities in the cloud.
+  iconUrl: /training/achievements/azure-sql-case-studies.svg
+- uid: learn.multi-table-queries-with-kusto-query-language.badge
+  type: badge
+  title: Write multi-table queries by using Kusto Query Language
+  summary: Write advanced queries in Kusto Query Language and gain deeper insights by combining data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, and `materialize`, and the new aggregation functions `arg_min` and `arg_max`. Also, learn how to communicate these results visually in charts.
+  iconUrl: /training/achievements/multi-table-queries-with-kusto-query-language.svg
+- uid: learn.write-first-query-kusto-query-language.badge
+  type: badge
+  title: Write your first query with Kusto Query Language
+  summary: Learn how to write simple queries in Kusto Query Language (KQL) by using the operators take, project, count, where, and sort. 
+  iconUrl: /training/achievements/write-first-query-kusto-query-language.svg 
 - uid: learn.send-crop-weather-alerts.badge
   type: badge
   title: Use Twilio and Azure Maps to receive text message weather alerts 
@@ -50,6 +135,16 @@ achievements:
   title: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
   summary: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
   iconUrl: /training/achievements/iot/manage-monitor-devices-iot-hub-azure-monitor.svg
+- uid: learn.kusto-query-language.trophy.trophy
+  type: trophy
+  title: Data analysis with Kusto Query Language
+  summary: In this learning path, students learn how to analyze data in various environments using the Kusto Query Language.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.analyze-monitoring-data-with-kql.trophy
+  type: trophy
+  title: Analyze monitoring data with Kusto Query Language
+  summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
+  iconUrl: /training/achievements/generic-trophy.svg
 - uid: learn.wwl.explore-iot-hub-monitoring.badge
   type: badge
   title: Guided project - Explore Azure IoT Hub monitoring
@@ -5749,7 +5844,7 @@ achievements:
   type: badge
   title: Generate code with Azure OpenAI Service
   summary: This module shows engineers how to use the Azure OpenAI Service to generate and improve code.
-  iconUrl: /learn/achievements/generic-badge.svgz
+  iconUrl: /learn/achievements/generic-badge.svg
 - uid: learn.azure.cloud-adoption-framework-plan.badge
   type: badge
   title: Prepare for cloud adoption with a data-driven plan
@@ -5765,3 +5860,493 @@ achievements:
   title: Design a hybrid network architecture on Azure
   summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.monitor-authentication-methods.badge
+  type: badge
+  title: Monitor and report on authentication methods used in Microsoft Entra ID
+  summary: This module teaches you how to create a Microsoft Entra workbook that helps you to create a report of the authentication methods used in your tenant.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.student-evangelism.practice-active-listening.badge
+  type: badge
+  title: Work with others by practicing active listening
+  summary: Learn how to work with others by practicing active listening.
+  iconUrl: /training/achievements/tech-resilience/practice-active-listening.svg
+- uid: learn.student-evangelism.communicate-strategically-mirror-coach.badge
+  type: badge
+  title: Communicate with others strategically through mirroring and coaching
+  summary: Learn how to communicate with others strategically through mirroring and coaching.
+  iconUrl: /training/achievements/tech-resilience/communicate-strategically.svg
+- uid: learn.student-evangelism.self-regulation-work-strategically.badge
+  type: badge
+  title: Use self-regulation to work strategically
+  summary: In this module, you'll learn about using self-regulation to respond effectively to challenges. You'll also use goal-orientation theory to diagnose what motivates you to learn.
+  iconUrl: /training/achievements/tech-resilience/self-regulation.svg
+- uid: learn.student-evangelism.grow-cognitive-flexibility.badge
+  type: badge
+  title: Grow your cognitive flexibility
+  summary: In this module, you'll learn about the importance of cognitive flexibility in the field of technology. You'll learn about the benefits of stepping back and expanding your outlook and using feedback effectively. Finally, you'll learn how to reorient and persist in challenging situations.
+  iconUrl: /training/achievements/tech-resilience/grow-cognitive-flexibility.svg
+- uid: learn.student-evangelism.give-receive-effective-feedback.badge
+  type: badge
+  title: Give and receive effective feedback
+  summary: In this module, you'll learn how to give and receive effective feedback.
+  iconUrl: /training/achievements/tech-resilience/give-receive-feedback.svg
+- uid: learn.student-evangelism.exercise-your-emotional-intelligence.badge
+  type: badge
+  title: Exercise your emotional intelligence
+  summary: Learn how to use your emotional intelligence to help your peers.
+  iconUrl: /training/achievements/tech-resilience/exercise-emotional-intelligence.svg
+- uid: learn.student-evangelism.cultivate-culture-belong-tech.badge
+  type: badge
+  title: Cultivate a culture of belongingness in tech
+  summary: Explore what belonging is, why it matters, and how to recognize it. Learn about historical and current challenges to belonging in tech, and understand what contributes to a climate of belonging, including strategies to build inclusive environments.
+  iconUrl: /training/achievements/tech-resilience/culture-belonging.svg
+- uid: learn.student-evangelism.enhance-self-efficacy.badge
+  type: badge
+  title: Enhance your self-efficacy
+  summary: Develop a mindset that will set you up for success in technology.
+  iconUrl: /training/achievements/tech-resilience/enhance-self-efficacy.svg
+- uid: learn.student-evangelism.tech-resilience.trophy
+  type: trophy
+  title: Build your tech resilience
+  summary: Far too many talented people avoid choosing or actively decide to leave tech because it can be unwelcoming. Our mission? To help build a more inclusive future for the tech industry by fostering confidence, a growth mindset, resilience, and a sense of belonging. Start here to grow more as an individual and team and learn useful strategies that have a strong research base of evidence for improving effectiveness in the workplace. By the end of this series, we hope you have a new way of taking ownership over your problem-solving process, which you can apply when debugging code or when working with a team under a tight deadline.
+  iconUrl: /training/achievements/tech-resilience/path.svg
+- uid: learn.student-evangelism.develop-growth-mindset.badge
+  type: badge
+  title: Develop a growth mindset
+  summary: "In this module, you'll learn to distinguish between two mindsets: a growth mindset and a fixed mindset. When you adopt a growth mindset, you set yourself up for success and are able to take on new challenges."
+  iconUrl: /training/achievements/tech-resilience/develop-growth-mindset.svg
+- uid: learn.career-interview.badge
+  type: badge
+  title: Successful interviewing
+  summary: In this module, you'll learn how to prepare for technical and nontechnical interviews. You'll also get recommendations on how to best carry out an interview.
+  iconUrl: /training/achievements/student-evangelism/career-interview.svg
+- uid: learn.career-growth.badge
+  type: badge
+  title: From intern to full-time position
+  summary: You've landed your first job in tech as an intern, so now what? Learn strategies to growth-hack your career to ensure that you'll get an offer to join the company full-time after the internship is over.
+  iconUrl: /training/achievements/student-evangelism/career-growth.svg
+- uid: learn.start-career-in-tech.trophy
+  type: trophy
+  title: Start in tech as an intern
+  summary: A great way to start in tech is by landing a position as an intern. But how do you that? To get there, you need to consider things like, crafting a resume and passing an intern interview. Once an intern, you want to make sure that position turns into a full-time position in tech.
+  iconUrl: /training/achievements/start-career-in-tech.svg
+- uid: learn.career-get-noticed.badge
+  type: badge
+  title: How to get noticed
+  summary: Getting noticed by prospective employers is the first step toward landing a job in tech. This module offers plenty of helpful tips and strategies.
+  iconUrl: /training/achievements/student-evangelism/career-get-noticed.svg
+- uid: learn.student-evangelism.use-apis-discover-museum-art.badge
+  type: badge
+  title: Explore the art world by using RESTful APIs
+  summary: Learn about how to build a basic API, how to query APIs, and authentication strategies in Python and JavaScript while discovering unique art by using museum APIs.
+  iconUrl: /training/achievements/use-apis-discover-museum-art.svg
+- uid: learn.advocates.create-web-app-with-refreshable-models.badge
+  type: badge
+  title: Build a Web App with Refreshable Machine Learning Models
+  summary: Build a web app powered by machine learning models trained using Custom Vision AI service, and learn how to refresh them with GitHub Actions.
+  iconUrl: /training/achievements/advocates/create-web-app-with-refreshable-models.svg
+- uid: learn.language.react-work-with-components-and-data.badge
+  type: badge
+  title: Working with data and properties in React components
+  summary: The goal of React components is to create reusable blocks of code and UI. To support reusability, you can pass data into components through the use of properties. We will see how to add properties to a component, and work with complex data types such as arrays.
+  iconUrl: /training/achievements/react/react-components-data.svg
+- uid: learn.language.react-states-events.badge
+  type: badge
+  title: React state and events
+  summary: Applications typically involve data that will be changed by user interactions. These changes are often managed through some form of state and events. In this module, we explore the concepts of state and events. We also look at the tools React provides for management.
+  iconUrl: /training/achievements/react/react-state-events.svg
+- uid: learn.react.trophy
+  type: trophy
+  title: Creating your first web apps with React
+  summary: React.js is the most popular front-end JavaScript framework. Through JSX, a combination of HTML and JavaScript, developers are able to create views in a natural fashion. Developers can also create components for reusable blocks across their applications. This learning path will introduce you to React, and the core skills you need as a developer to use this powerful framework.
+  iconUrl: /training/achievements/react/react-path.svg
+- uid: learn.language.react-get-started.badge
+  type: badge
+  title: Get started with React
+  summary: React.js is the most popular front-end JavaScript framework. Developers use JSX, a combination of HTML and JavaScript, to create views in a natural way. Developers can also create components for blocks that can be reused across their applications. This module introduces React and the core skills developers need to use this powerful framework.
+  iconUrl: /training/achievements/react/react-get-started.svg
+- uid: learn.sports-machine-learning.use-mixed-reality-toolkit.badge
+  type: badge
+  title: Create a mixed reality basketball player lineup with the Mixed Reality Toolkit
+  summary: "Use C#, Visual Studio, Unity, and the Mixed Reality Toolkit to create an interactive virtual reality experience compatible with the HoloLens. Inspired by *Space Jam: A New Legacy*, you create an experience for coaches and fans to learn more about the Tune Squad."
+  iconUrl: /training/achievements/student-evangelism/create-mixed-reality-basketball-lineup-mixed-reality-toolkit.svg
+- uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.badge
+  type: badge
+  title: Create a web app that uses data to make decisions on the basketball court
+  summary: "Use JavaScript, Azure, GitHub, and Visual Studio Code to write a web app that helps the Tune Squad coach make data-based decisions on the basketball court, inspired by SPACE JAM: A NEW LEGACY."
+  iconUrl: /training/achievements/student-evangelism/optimize-basketball-player-rest-breaks.svg
+- uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.badge
+  type: badge
+  title: Predict basketball player efficiency ratings by using machine learning and Visual Studio Code
+  summary: "By using anonymized data from real and animated basketball players in the upcoming film *Space Jam: A New Legacy*, create a machine learning model to cleanse data to be used during games. Also explore bimodal data distributions by using Python in Visual Studio Code."
+  iconUrl: /training/achievements/student-evangelism/predict-basketball-player-efficiency-ratings.svg
+- uid: learn.optimize-basketball-games-with-machine-learning.trophy
+  type: trophy
+  title: "Use basketball stats to optimize game play with Visual Studio Code, inspired by SPACE JAM: A NEW LEGACY"
+  summary: "Inspired by the new film _Space Jam: A New Legacy_, this learning path shows basketball fans how an understanding of data science and coding can support their passions, create opportunities, and even open doors to possible careers. Develop skills in Visual Studio Code, Azure, GitHub, JavaScript, and Python, to gain insights into how individual moments throughout a player's history can lead to a critical game decision in the finals."
+  iconUrl: /training/achievements/student-evangelism/optimize-basketball-games-with-machine-learning.svg
+- uid: learn.sports-machine-learning.mixed-reality-for-sports-fans.badge
+  type: badge
+  title: Prepare to bring the basketball court into a Mixed Reality space
+  summary: "Discover the fundamentals of Mixed Reality and prepare the resources you need to create an interactive experience for basketball fans and coaches inspired by *Space Jam: A New Legacy*."
+  iconUrl: /training/achievements/mixed-reality-for-sports-fans.svg
+- uid: learn.machine-learning.predictive-maintenance-model-builder.badge
+  type: badge
+  title: Train a machine learning model for predictive maintenance by using ML.NET Model Builder
+  summary: Train a machine learning model in Visual Studio with ML.NET by using Model Builder, which uses sensor data to detect whether a manufacturing device is broken.
+  iconUrl: /training/achievements/machine-learning/predictive-maintenance-model-builder.svg
+- uid: learn.machine-learning.introduction-clustering-models.badge
+  type: badge
+  title: Introduction to clustering models by using R and tidymodels
+  summary: Get an introduction to clustering models. Clustering is the process of grouping objects with similar objects.
+  iconUrl: /training/achievements/machine-learning/introduction-clustering-models.svg
+- uid: learn.machine-learning.introduction-regression-models.badge
+  type: badge
+  title: Introduction to regression models by using R and tidymodels
+  summary: Get an introduction to regression models. In machine learning, the goal of regression is to create a model that can predict a numeric, quantifiable value.
+  iconUrl: /training/achievements/machine-learning/introduction-regression-models.svg
+- uid: learn.machine-learning.introduction-classification-models.badge
+  type: badge
+  title: Introduction to classification models by using R and tidymodels
+  summary: Classification is a form of machine learning in which you train a classification model to predict which category an item belongs to. In this module, you learn how to use the R programming language and tidymodels framework to train classification models.
+  iconUrl: /training/achievements/machine-learning/introduction-classification-models.svg
+- uid: learn.machine-learning.machine-learning-with-r.trophy
+  type: trophy
+  title: Create machine learning models with R and tidymodels
+  summary: Learn how to explore and analyze data by using R. Get an introduction to regression models, classification models, and clustering models by using tidymodels and R.
+  iconUrl: /training/achievements/machine-learning/machine-learning-with-r.svg
+- uid: learn.machine-learning.explore-analyze-data-r.badge
+  type: badge
+  title: Explore and analyze data with R
+  summary: In this module, you explore, analyze, and visualize data by using the R programming language.
+  iconUrl: /training/achievements/machine-learning/explore-analyze-data-r.svg
+- uid: learn.advocates.cv-classify-bird-species.badge
+  type: badge
+  title: Classify endangered bird species with Custom Vision
+  summary: As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitat. Your work often involves surveying, recording, and reporting on bird activity. You want to build a machine learning model that will identify a bird in an image by species, to help with gathering data. In this module, you use Azure AI Custom Vision to create a model to identify species of birds!
+  iconUrl: /training/achievements/advocates/cv-classify-bird-species.svg
+- uid: learn.orleans-product-introduction.badge
+  type: badge
+  title: Introduction to Orleans
+  summary: Learn what Orleans is and when you might want to use it.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.intro-to-azure-cache-for-redis.badge
+  type: badge
+  title: Introduction to Azure Cache for Redis
+  summary: Microsoft Azure Cache for Redis brings a critical low-latency and high-throughput data storage solution to modern applications. This solution can help improve the performance and scalability of your apps that rely heavily on backend data stores.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.secure-aspnet-core-identity.badge
+  type: badge
+  title: Secure a .NET web app with the ASP.NET Core Identity framework
+  summary: Add authentication and authorization to a web app using ASP.NET Core Identity, ASP.NET Core's native security framework.
+  iconUrl: /training/achievements/aspnetcore/secure-aspnet-core-identity.svg
+- uid: learn.aspnet-core-signalr-polling-fix.badge
+  type: badge
+  title: Replace client-side polling with ASP.NET Core SignalR
+  summary: In this module, you use ASP.NET Core SignalR to replace client-side polling functionality in an existing web app.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.dotnet-debug-visual-studio-app-service.badge
+  type: badge
+  title: Remotely debug ASP.NET Core apps hosted on Azure App Service using Visual Studio
+  summary: Learn how to remotely debug your ASP.NET Core apps on Azure App Service directly using Visual Studio 2022.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.persist-data-ef-core.badge
+  type: badge
+  title: Persist and retrieve relational data by using Entity Framework Core
+  summary: Query and manage relational data in an Entity Framework Core (EF Core) app by using an object-relational mapper (ORM).
+  iconUrl: /training/achievements/aspnetcore/persist-data-ef-core.svg
+- uid: learn.aspnet-core-signalr.badge
+  type: badge
+  title: Introduction to ASP.NET Core SignalR
+  summary: In this introductory module, you'll learn what ASP.NET Core SignalR is, how it works, and when to use it.
+  iconUrl: /training/achievements/aspnetcore/aspnet-core-signalr.svg
+- uid: learn.azure.create-your-first-text-to-speech-app.badge
+  type: badge
+  title: Create your first Azure AI services text to speech application
+  summary: Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure's text to speech features. In this module, you'll learn how to use Azure AI services to create a text to speech application that uses both plain text and Speech Synthesis Markup Language (SSML) to create audio files.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.create-your-first-speech-to-text-app.badge
+  type: badge
+  title: Create your first Azure AI speech to text application
+  summary: Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure's speech to text features. In this module, you'll learn how to use Azure AI services to create a speech to text application that converts a sample WAVE file into text.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.orleans-build-first-app.badge
+  type: badge
+  title: Build your first Orleans app with ASP.NET Core 8.0
+  summary: Learn how to build cloud-native, distributed apps with Orleans.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.windows.windows-best-app-framework.badge
+  type: badge
+  title: Choose the best UI framework for a native Windows development project
+  summary: Windows developers have various options for creating applications that run on Windows. This module introduces the native Windows UI frameworks that are available for Windows development. It also provides guidance on how to choose the best framework for your application.
+  iconUrl: /learn/achievements/windows-best-app-framework.svg
+- uid: learn.wwl.detect-analyze-faces.badge
+  type: badge
+  title: Fundamentals of Facial Recognition
+  summary: Face detection and analysis are important capabilities for artificial intelligence (AI) solutions. Azure AI Face service makes it easy integrate these capabilities into your applications.
+  iconUrl: /learn/achievements/detect-analyze-faces.svg
+- uid: learn.wwl.document-intelligence-knowledge-mining.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Document Intelligence and Knowledge Mining'
+  summary: 'Explore two AI workloads: document intelligence and knowledge mining.'
+  iconUrl: /training/achievements/document-intelligence-knowledge-mining.svg
+- uid: learn.wwl.explore-computer-vision-microsoft-azure.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Computer Vision'
+  summary: Computer vision is an area of artificial intelligence (AI) in which software systems are designed to perceive the world visually, through cameras, images, and video. There are multiple specific types of computer vision problem that AI engineers and data scientists can solve using a mix of custom machine learning models and platform-as-a-service (PaaS) solutions - including many AI services in Microsoft Azure.
+  iconUrl: /learn/achievements/explore-computer-vision-microsoft-azure.svg
+- uid: learn.wwl.get-started-with-artificial-intelligence-on-azure.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: AI Overview'
+  summary: Artificial Intelligence (AI) empowers amazing new solutions and experiences; and Microsoft Azure provides easy to use services to help you get started.
+  iconUrl: /learn/achievements/get-started-with-artificial-intelligence-on-azure.svg
+- uid: learn.azure-introduction-to-azure-search.badge
+  type: badge
+  title: Fundamentals of Knowledge Mining and Azure AI Search
+  summary: Use Azure AI Search to make your data searchable.
+  iconUrl: /training/achievements/azure-introduction-to-azure-search.svg
+- uid: learn.wwl.analyze-images-computer-vision.badge
+  type: badge
+  title: Fundamentals of Computer Vision
+  summary: Azure AI Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios.
+  iconUrl: /training/achievements/analyze-images-computer-vision.svg
+- uid: learn.wwl.analyze-receipts-form-recognizer.badge
+  type: badge
+  title: Fundamentals of Azure AI Document Intelligence
+  summary: Document processing is a common task in many business scenarios. Organizations can use Azure AI Document Intelligence to automate data extraction across document types, such as receipts, invoices, and more.
+  iconUrl: /training/achievements/analyze-receipts-form-recognizer.svg
+- uid: learn.wwl.read-text-computer-vision.badge
+  type: badge
+  title: Fundamentals of optical character recognition
+  summary: Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.
+  iconUrl: /training/achievements/read-text-computer-vision.svg
+- uid: learn.azure.introduction-to-azure-api-management.badge
+  type: badge
+  title: Introduction to Azure API Management
+  summary: Learn how Azure API Management can help reduce API complexity in your organization. Determine the types of deployments for which Azure API Management is a good API lifecycle management solution.
+  iconUrl: /training/achievements/introduction-to-azure-api-management.svg
+- uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.badge
+  type: badge
+  title: Accelerate a Spring Boot application with Azure Cache for Redis
+  summary: Learn how to use Azure Cache for Redis to cache business data and HTTP session data in a Java Spring Boot application, then publish the application to the cloud.
+  iconUrl: /training/achievements/accelerate-scale-spring-boot-application-azure-cache-redis.svg
+- uid: learn.intro-generative-ai.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Generative AI'
+  summary: "Generative AI is a form of artificial intelligence in which models are trained to generate new original content based on natural language input. In other words, you can describe a desired output in normal everyday language, and the model can respond by creating appropriate text, image, code, and more. \n\nTake this learning path to get started with generative AI. In it, you'll learn how to:\n- Understand core concepts of generative AI\n- Prepare for an AI development project\n- Describe considerations and practices for responsible generative AI\n- Build an AI agent using Azure AI Foundry"
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.advocates.azure-functions-and-signalr.badge
+  type: trophy
+  title: Enable real-time updates in a web application using Azure Functions and SignalR Service
+  summary: Change a JavaScript web app update mechanism from polling to push-based architecture with SignalR Service, Azure Cosmos DB, and Azure Functions.
+  iconUrl: /training/achievements/advocates/enable-automatic-updates-in-a-web-app-using-azure-functions-and-signalr.svg
+- uid: learn.azure.publish-static-web-app-authentication.badge
+  type: trophy
+  title: Authenticate users with Azure Static Web Apps
+  summary: Publish an Angular, React, Svelte, or Vue JavaScript app with API and authentication using Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
+  iconUrl: /training/achievements/publish-static-web-app-authentication.svg
+- uid: learn.app-service-autoscale-rules.badge
+  type: trophy
+  title: Dynamically meet changing web app performance requirements with autoscale rules
+  summary: Respond to periods of high activity by incrementally adding resources, and then removing these resources when activity drops, to reduce costs.
+  iconUrl: /training/achievements/app-service-autoscale-rules.svg
+- uid: learn.wwl.bring-ai-to-business-users-your-organization.trophy
+  type: trophy
+  title: Bring AI to business users in your organization
+  summary: To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
+  iconUrl: /training/achievements/bring-ai-to-business-users-your-organization.svg
+- uid: learn.wwl.introduction-ai-for-business-users.trophy
+  type: trophy
+  title: Introduction to AI for business users
+  summary: To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
+  iconUrl: /training/achievements/introduction-ai-for-business-users.svg
+- uid: learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.badge
+  type: badge
+  title: Investigate threats with Content search in Microsoft Purview
+  summary: This module examines how to search for content in the Microsoft Purview portal using Content Search functionality, including how to view and export the search results, and configure search permissions filtering.
+  iconUrl: /training/achievements/m365-content-compliance.svg
+- uid: learn.azdo.evolve-your-devops-practices.trophy
+  type: trophy
+  title: Get started with Azure DevOps
+  summary: DevOps is the union of people, process, and products to enable continuous delivery of value to your end users. Azure DevOps is a set of services that gives you the tools you need to do just that. With Azure DevOps, you can build, test, and deploy any application, either to the cloud or on premises. DevOps practices that enable transparency, cooperation, continuous delivery and continuous deployment become embedded in your software development lifecycle.
+  iconUrl: /training/achievements/azure-devops/evolve-your-devops-practices.svg
+- uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.badge
+  type: badge
+  title: Create and implement application allowlists with adaptive application control
+  summary: You're able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs.
+  iconUrl: /training/achievements/create-and-implement-application-allowlists-with-adaptive-application-control.svg
+- uid: learn.azdo.choose-an-agile-approach.badge
+  type: badge
+  title: Choose an Agile approach to software development
+  summary: Learn to foster the DevOps values of transparency and team cooperation with Azure Boards.
+  iconUrl: /training/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
+- uid: learn.azdo.manage-delivery-plans.badge
+  type: badge
+  title: Manage Agile software delivery plans across teams
+  summary: Learn how to optimize delivery efficiency by improving work plan visibility across teams.
+  iconUrl: /training/achievements/azure-devops/manage-agile-software-delivery-plans-across-teams.svg
+- uid: learn.get-started-with-devops.badge
+  type: badge
+  title: Introduction to Azure DevOps
+  summary: Explore what DevOps is (and isn't) and learn how to get started with Azure DevOps.
+  iconUrl: /training/achievements/azure-devops/get-started-with-devops.svg
+- uid: learn.azdo.assess-your-development-process.badge
+  type: badge
+  title: Assess your existing software development process
+  summary: Use a value stream map to help you examine your existing processes and technologies.
+  iconUrl: /training/achievements/azure-devops/assess-your-software-development-process.svg
+- uid: learn.wwl.analyze-text-with-text-analytics-service.badge
+  type: badge
+  title: Fundamentals of Text Analysis with the Language Service
+  summary: Explore Azure AI Language's natural language processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
+  iconUrl: /learn/achievements/analyze-text-with-text-analytics-service.svg
+- uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.badge
+  type: badge
+  title: Fundamentals of question answering with the Language Service
+  summary: Create a custom question answering knowledge base with Azure AI Language.
+  iconUrl: /learn/achievements/build-faq-chatbot-qna-maker-azure-bot-service.svg
+- uid: learn.wwl.create-language-model-with-luis.badge
+  type: badge
+  title: Fundamentals of conversational language understanding
+  summary: In this module, we introduce you to conversational language understanding, and show how to create applications that understand language with Azure AI Language.
+  iconUrl: /training/achievements/create-publish-luis-model.svg
+- uid: learn.wwl.explore-natural-language-processing.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Natural Language Processing'
+  summary: Natural language processing supports applications that can see, hear, speak with, and understand users. Using text analytics, translation, and language understanding services, Microsoft Azure makes it easy to build applications that support natural language.
+  iconUrl: /learn/achievements/explore-natural-language-processing.svg
+- uid: learn.wwl.fundamentals-azure-ai-services.badge
+  type: badge
+  title: Fundamentals of Azure AI services
+  summary: In this module, you learn the fundamentals of how Azure AI services can be used to build applications.
+  iconUrl: /training/achievements/fundamentals-azure-ai-services.svg
+- uid: learn.wwl.translate-text-with-translation-service.badge
+  type: badge
+  title: Fundamentals of language translation
+  summary: Automated translation capabilities in an AI solution enable closer collaboration by removing language barriers.
+  iconUrl: /training/achievements/translate-text-with-translation-service.svg
+- uid: learn.azure.deploy-run-container-app-service.badge
+  type: badge
+  title: Deploy and run a containerized web app with Azure App Service
+  summary: Create a Docker image and store it in a repository in Azure Container Registry. Use Azure App Service to deploy a web application based on the Docker image. Configure continuous deployment for the web app by using a webhook that monitors the Docker image for changes.
+  iconUrl: /training/achievements/deploy-run-container-app-service.svg
+- uid: learn.execute-azure-function-with-triggers.badge
+  type: badge
+  title: Execute an Azure Function with triggers
+  summary: A trigger is responsible for executing an Azure function and there are dozens of triggers to choose from. This module shows you some of the most common types of triggers and how to configure them to execute your logic.
+  iconUrl: /training/achievements/execute-azure-function-with-triggers.svg
+- uid: learn.visual-studio-test-concepts.badge
+  type: badge
+  title: Introduction to software testing concepts
+  summary: Describe the common best practices, theory, and patterns of writing tests. Characterize the types of problems that testing can solve for your repository.
+  iconUrl: /training/achievements/visual-studio-test-concepts.svg
+- uid: learn.visual-studio.visual-studio-test-tools.badge
+  type: badge
+  title: C# testing in Visual Studio
+  summary: Start testing your C# apps by using the testing tools in Visual Studio.
+  iconUrl: /training/achievements/visual-studio/visual-studio-test-tools.svg
+- uid: learn.visual-studio.visual-studio-test.trophy
+  type: trophy
+  title: Use Visual Studio for modern development
+  summary: Want to learn more about using Visual Studio to develop and test apps, but don't know where to start? Start here!
+  iconUrl: /training/achievements/visual-studio/visual-studio-test.svg
+- uid: learn.azure.logic-apps-and-arm-templates.badge
+  type: badge
+  title: Create and deploy an Azure Logic Apps workflow using Azure Resource Manager templates
+  summary: In this module, you'll define an Azure Logic Apps workflow declaratively as a Resource Manager template and deploy the app using the Azure Command Line Interface (CLI).
+  iconUrl: /training/achievements/logic-apps-and-arm-templates.svg
+- uid: learn.azure-storage-dotnet-aspire-app.badge
+  type: badge
+  title: Use Azure Storage with .NET Aspire
+  summary: Learn how to access and use Azure Storage accounts from .NET Aspire solutions for file storage, data storage, and message queuing.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.develop-ai-solutions-azure-openai.trophy
+  type: trophy
+  title: Develop Generative AI solutions with Azure OpenAI in Foundry Models
+  summary: Azure OpenAI in Foundry Models provides access to OpenAI's powerful large language models such as GPT and Embeddings models. These models enable various natural language processing (NLP) solutions to understand, converse, and generate content. Users can access the service through REST APIs, SDKs, and Azure AI Foundry.
+  iconUrl: /training/achievements/develop-ai-solutions-azure-openai.svg
+- uid: learn.send-messages-rabbitmq-dotnet-aspire-app.badge
+  type: badge
+  title: Send messages with RabbitMQ in a .NET Aspire project
+  summary: Learn how to use message queues on RabbitMQ exchange servers to decouple microservices and manage communications in a cloud-native application built with .NET Aspire.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.improve-performance-cache-aspire.badge
+  type: badge
+  title: Improve performance with a cache in a .NET Aspire project
+  summary: Learn about using Redis caching to increase performance in a cloud-native application. You'll also discover how .NET Aspire makes it easy to access Redis caching services from your microservices.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.use-databases-dotnet-aspire-app.badge
+  type: badge
+  title: Use databases in a .NET Aspire project
+  summary: Learn about the database systems that .NET Aspire can connect to using built-in integrations. Then see how to configure connections to, and store data in, relational and nonrelational databases.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.use-telemetry-dotnet-aspire.badge
+  type: badge
+  title: Use telemetry in a .NET Aspire project
+  summary: Learn how to use telemetry in a .NET Aspire project to log data and examine the behavior of a cloud-native application.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.create-aspire-application.badge
+  type: badge
+  title: Create a .NET Aspire project
+  summary: Learn how to create cloud-native applications from scratch or add orchestration to an existing app by using the .NET Aspire stack in .NET 8.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.dotnet-aspire.trophy
+  type: trophy
+  title: Build distributed apps with .NET Aspire
+  summary: Learn how to build observable, production ready, distributed applications with .NET Aspire. 
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.introduction-dotnet-aspire.badge
+  type: badge
+  title: Introduction to .NET Aspire
+  summary: Learn about the .NET Aspire stack in .NET 8 and how you can use it to ease and accelerate the development of cloud-native web applications. 
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.iot.run-iot-edge-device-restricted-network-offline.badge
+  type: badge
+  title: Run an IoT Edge device in a restricted network and offline
+  summary: This module is theoretical and will walk you through how an IoT Edge device can be harnessed as a gateway to child devices and can store captured information if connectivity is unavailable.
+  iconUrl: /training/achievements/run-iot-edge-device-restricted-network-offline.svg
+- uid: learn.wwl.create-composed-form-recognizer-model.badge
+  type: badge
+  title: Create a composed Document intelligence model
+  summary: Learn how to assemble custom models into composed solutions that can analyze different types of your own documents.
+  iconUrl: /training/achievements/create-composed-form-recognizer-model.svg
+- uid: learn.wwl.get-started-azure-ai.trophy
+  type: trophy
+  title: Get started with Azure AI Services
+  summary: Azure AI Services is a collection of services that are building blocks of AI functionality you can integrate into your applications. In this learning path, you'll learn how to provision, secure, monitor, and deploy Azure AI Services resources and use them to build intelligent solutions.
+  iconUrl: /training/achievements/provision-and-manage-azure-cognitive-services.svg
+- uid: learn.wwl.plan-form-recognizer-solution.badge
+  type: badge
+  title: Plan an Azure AI Document Intelligence solution
+  summary: Learn how to use Azure AI Document Intelligence to build solutions that analyze forms and output data for storage or further processing.
+  iconUrl: /training/achievements/plan-form-recognizer-solution.svg
+- uid: learn.wwl.create-manage-ai-services.badge
+  type: badge
+  title: Create and consume Azure AI services
+  summary: Azure AI services enable developers to easily add AI capabilities into their applications. Learn how to create and consume these services.
+  iconUrl: /training/achievements/create-and-manage-cognitive-services.svg
+- uid: learn.wwl.investigate-container-for-use-with-ai-services.badge
+  type: badge
+  title: Deploy Azure AI services in containers
+  summary: Learn about Container support in Azure AI services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
+  iconUrl: /training/achievements/investigate-container-for-use-with-cognitive-services.svg
+- uid: learn.wwl.monitor-ai-services.badge
+  type: badge
+  title: Monitor Azure AI services
+  summary: Azure AI services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Azure AI Services in order to track utilization, determine trends, and detect and troubleshoot issues.
+  iconUrl: /learn/achievements/monitor-cognitive-services.svg
+- uid: learn.wwl.secure-ai-services.badge
+  type: badge
+  title: Secure Azure AI services
+  summary: Securing Azure AI services can help prevent data loss and privacy violations for user data that may be a part of the solution.
+  iconUrl: /training/achievements/secure-cognitive-services.svg
+- uid: implement-information-protection.trophy
+  type: trophy
+  title: 'SC-400: Implement Information Protection in Microsoft 365'
+  summary: 'Organizations require information protection solutions to protect their data against theft and accidental loss. Learn how to protect your sensitive information. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.'
+  iconUrl: /training/achievements/implement-information-protection.svg
+- uid: learn.azure.intro-to-migrating-aspnet-apps-azure.badge
+  type: badge
+  title: Introduction to migrating ASP.NET apps to Azure
+  summary: Evaluate the process of migrating an ASP.NET application from on-premises to Azure, along with a supporting Azure SQL database. Identify the benefits and challenges of the migration process.
+  iconUrl: /training/achievements/intro-to-migrating-aspnet-apps-azure.svg

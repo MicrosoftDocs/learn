@@ -8,6 +8,7 @@ metadata:
   author: garvct
   ms.author: cogarvey
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-knowledge-check-troubleshoot-performance-bottlenecks.md)]

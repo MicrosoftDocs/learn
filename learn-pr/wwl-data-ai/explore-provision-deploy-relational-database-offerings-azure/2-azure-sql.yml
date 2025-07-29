@@ -4,12 +4,12 @@ title: Describe Azure SQL services and capabilities
 metadata:
   title: Describe Azure SQL services and capabilities
   description: "Describe Azure SQL services and capabilities"
-  ms.date: 10/09/2024
-  author: wwlpublish
-  ms.author: rcaper
+  ms.date: 07/15/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-azure-sql.md)]
+  [!include[](includes/2-azure-sql.md)]

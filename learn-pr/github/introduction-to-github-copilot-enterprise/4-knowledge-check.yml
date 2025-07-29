@@ -7,9 +7,11 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.date: 02/28/2024
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot
+  module_assessment: true
 durationInMinutes: 4
 quiz:
   title: Check your knowledge

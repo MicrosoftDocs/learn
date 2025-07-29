@@ -8,6 +8,7 @@ metadata:
   author: erzelman
   ms.author: erzelman
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 1
 content: |
   [!include[](includes/6-knowledge-check.md)]

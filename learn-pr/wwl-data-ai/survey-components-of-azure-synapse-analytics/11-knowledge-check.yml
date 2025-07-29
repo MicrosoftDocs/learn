@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

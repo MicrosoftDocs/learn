@@ -2,8 +2,9 @@
 uid: learn.evaluate-generative-ai-apps
 metadata:
   ms.author: apspeigh
-  author: aprilspeight
+  author: aprilgittens
   ms.date: 10/11/2024
+  ms.update-cycle: 180-days
   title: Evaluating generative AI applications
   description: Learn the fundamental concepts of evaluating generative AI applications.
   ms.service: artificial-intelligence

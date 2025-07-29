@@ -4,7 +4,7 @@ title: Explore performance and security
 metadata:
   title: Explore performance and security
   description: "Explore performance and security"
-  ms.date: 02/18/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 13
 content: |
-  [!include[](includes/4-explore-performance-and-security.md)]
+  [!include[](includes/4-explore-performance-and-security.md)]

@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.evaluate-language-models-azure-databricks.compare-evaluations
-title: Compare LLM and traditional ML evaluations
+title: Explore LLM evaluation
 metadata:
-  title: Compare LLM and traditional ML evaluations
-  description: "Compare Large Language Model and traditional Machine Learning evaluations"
-  ms.date: 03/20/2025
-  author: wwlpublish
+  title: Explore LLM evaluation
+  description: "Explore Large Language Model evaluation"
+  ms.date: 07/10/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 azureSandbox: false
@@ -13,4 +13,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/2-compare-evaluations.md)]
-
+

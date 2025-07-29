@@ -6,6 +6,7 @@ metadata:
   author: marlenaklein-msft
   ms.author: marlenaklein
   ms.date: 01/17/2024
+  ms.update-cycle: 180-days
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
   ms.collection:

@@ -7,7 +7,9 @@ metadata:
   ms.date: 02/01/2023
   author: CamSoper
   ms.author: casoper
-  ms.custom: team=nextgen
+  ms.custom:
+    - sfi-ropc-nochange
+    - team=nextgen
   ms.topic: unit
 durationInMinutes: 10
 content: |

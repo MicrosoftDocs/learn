@@ -3,21 +3,21 @@ uid: learn.wwl.connect-data-to-azure-sentinel-with-data-connectors
 metadata:
   title: Connect data to Microsoft Sentinel using data connectors
   description: "Connect data to Microsoft Sentinel using data connectors"
-  ms.date: 08/02/2023
-  author: wwlpublish
+  ms.date: 06/11/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Connect data to Microsoft Sentinel using data connectors
-summary: The primary approach to connect log data is using the Microsoft Sentinel provided data connectors.  This module provides an overview of the available data connectors.
+summary: The primary approach to connect log data is using the Microsoft Sentinel provided data connectors. This module provides an overview of the available data connectors.
 abstract: |
-  Upon completion of this module, the learner will be able to:
+  Upon completion of this module, the learner is able to:
   - Describe how to install Content Hub Solutions to provision Microsoft Sentinel Data connectors
   - Explain the use of data connectors in Microsoft Sentinel
   - Describe the Microsoft Sentinel data connector providers
   - Explain the Common Event Format and Syslog connector differences in Microsoft Sentinel
 prerequisites: |
-  Basic experience with Microsoft Azure operations
+  Basic experience with Microsoft Azure and Microsoft Defender operations
 iconUrl: /training/achievements/connect-data-to-azure-sentinel-with-data-connectors.svg
 levels:
 - intermediate
@@ -25,6 +25,7 @@ roles:
 - security-operations-analyst
 products:
 - azure
+- microsoft-defender
 - microsoft-sentinel
 - azure-log-analytics
 subjects:

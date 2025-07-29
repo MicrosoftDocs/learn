@@ -7,10 +7,12 @@ metadata:
   author: bethanyjep
   ms.author: bethanycheum
   ms.date: 12/04/2023
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot
   ms.custom: team=cloud_advocates
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"

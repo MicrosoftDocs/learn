@@ -10,6 +10,7 @@ metadata:
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: ""

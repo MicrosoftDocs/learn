@@ -1,14 +1,35 @@
-Retention labels in Microsoft Purview help you control how long to keep files and when to delete them. You can use them to meet regulatory requirements, manage risk, and improve how your organization handles information. Labels can be applied manually or automatically, and they're a key part of your data lifecycle strategy.
+Retention labels in Microsoft Purview help you control how long to keep files and when to delete them. You can use them to meet regulatory requirements, manage risk, and improve how your organization handles information. Labels can be applied manually or automatically, and they’re a key part of your data lifecycle strategy.
 
 ## Create a retention label
 
-You can create a retention label either from the **Data Lifecycle Management** section or by using the **File plan** in **Records Management**. The main difference is that the file plan includes extra classification features like bulk actions, detailed overviews, and metadata tags (called descriptors). If you're managing just a few labels or don't need structured classification, you can create them directly in Data Lifecycle Management instead.
+You can create retention labels from either Data Lifecycle Management or Records Management in the Microsoft Purview portal:
 
-### What is a file plan?
+- Use **Data Lifecycle Management** when you want a simple, straightforward way to create and publish labels for general retention scenarios.
+- Use **Records Management** when you need additional classification metadata, structured oversight, or advanced records governance capabilities like file plan descriptors.
+
+Both methods let you configure the same core retention settings. The Records Management path just adds extra structure and review tools.
+
+### Create a label using Data Lifecycle Management
+
+1. Sign in to the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true) and select **Solutions** > **Data lifecycle management** > **Retention labels**.
+
+1. Select **Create a label**, then give it a name and optional description.
+
+1. Choose what happens to content with this label:
+
+   - Retain forever or for a specific time
+   - Retain then delete
+   - Just label for classification without retention or deletion
+
+1. If you selected retention, choose the length of time and what happens when that time ends.
+
+1. Review and finish your configuration.
+
+You can then publish this label using a retention label policy.
+
+### Steps to create a retention label using file plan
 
 A file plan is a structured way to manage retention labels across your organization. It gives you a centralized view of all your labels and lets you organize them by categories like department, function, or regulatory authority. File plans are especially helpful when you need to manage many labels or align your data governance practices with formal records management standards.
-
-## Steps to create a retention label using file plan
 
 1. Sign in to the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true) and select **Solutions** > **Records management** > **File plan**.
 

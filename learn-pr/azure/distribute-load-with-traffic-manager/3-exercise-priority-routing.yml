@@ -8,6 +8,7 @@ metadata:
   ms.author: greglin
   ms.topic: unit
   ms.custom:
+    - sfi-ropc-blocked
     - devx-track-azurecli
 title: Exercise - Enable automatic failover by using priority routing
 interactive: bash

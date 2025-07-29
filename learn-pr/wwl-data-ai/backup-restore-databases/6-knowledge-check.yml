@@ -4,10 +4,11 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/25/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -48,4 +49,4 @@ quiz:
       explanation: "Incorrect. Active geo-replication isn't supported by Azure SQL Managed Instance."
     - content: "Failover Cluster Instance"
       isCorrect: false
-      explanation: "Incorrect. Failover Cluster Instance isn't supported by Azure SQL Managed Instance."
+      explanation: "Incorrect. Failover Cluster Instance isn't supported by Azure SQL Managed Instance."

@@ -3,8 +3,8 @@ uid: learn.wwl.multistage-reasoning-azure-databricks
 metadata:
   title: Implement multi-stage reasoning in Azure Databricks
   description: Implement multi-stage reasoning in Azure Databricks
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/08/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: module
   ms.service: azure-databricks

@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.azdo.deploy-docker
 metadata:
-  title: Automate Docker container deployments with Azure Pipelines
+  title: Automate Docker Container Deployments with Azure Pipelines
   description: Use Azure Pipelines to deploy Docker containers to Azure App Service.
-  ms.date: 12/05/2023
+  ms.date: 07/07/2025
   author: ramiMSFT
   ms.author: rabououn
   ms.custom: devdivchpfy22, engagement-fy23
@@ -47,4 +47,4 @@ units:
 - learn.azdo.deploy-docker.6-summary
 badge:
   uid: learn.azdo.deploy-docker.badge
-
+

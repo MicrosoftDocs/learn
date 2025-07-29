@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/26/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -59,4 +59,4 @@ quiz:
       explanation: "Correct. The maintenance cleanup task provides the option to remove old files related to maintenance plans."
     - content: "Execute SQL Server agent job task"
       isCorrect: false
-      explanation: "Incorrect. The execute SQL Server agent job task doesn't remove old files related to maintenance plans."
+      explanation: "Incorrect. The execute SQL Server agent job task doesn't remove old files related to maintenance plans."

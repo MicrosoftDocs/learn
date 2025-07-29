@@ -3,7 +3,7 @@ uid: learn.wwl.design-implement-azure-expressroute
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Design and implement Azure ExpressRoute
+  title: Design and Implement Azure ExpressRoute
   description: "You learn how to design and implement Azure ExpressRoute, ExpressRoute Global Reach, ExpressRoute FastPath."
   ms.date: 05/16/2025
   author: wwlpublish
