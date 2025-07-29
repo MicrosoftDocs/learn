@@ -23,7 +23,6 @@ ratingEnabled: false
 levels:
   - beginner
 roles:
-  - ai-product-manager
   - business-owner
   - business-user
   - administrator

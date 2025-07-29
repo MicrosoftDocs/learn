@@ -14,7 +14,9 @@ For commercial users (signed in with a Microsoft Entra account), the Copilot key
 
 For consumer users (signed in with a Microsoft account), the key continues to open the Microsoft Copilot app.
 
-:::image type="content" border="true" source="../media/copilot-key.png" alt-text="Photograph of a closeup of the Copilot key":::
+For more information, see [aka.ms/keysupport](https://aka.ms/keysupport).
+
+:::image type="content" border="true" source="../media/copilot-key.jpg" alt-text="Photograph of a closeup of the Copilot key":::
 
 ## Copilot+ PC performance
 
