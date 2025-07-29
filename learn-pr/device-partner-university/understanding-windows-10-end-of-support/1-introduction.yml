@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.Understanding-windows10-end-of-support.support-beyond-end-of-support
-title: Support beyond end of support
+uid: learn.dpu.Understanding-windows-10-end-of-support.introduction
+title: Introduction
 metadata:
-  title: Support beyond end of support
+  title: Introduction
   description: This content is part of the "Understanding Windows 10 end of support" module.
   ms.date: 07/17/2025
   author: hhreyes21
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-support-beyond-end-of-support.md)]
+  [!include[](includes/1-introduction.md)]
