@@ -1,1 +1,15 @@
-Understand AI data security risks
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-understand-risks.understand-ai-risks
+title: Understand AI data security risks
+metadata:
+  title: Understand AI Data Security Risks
+  description: "Understand AI data security risks."
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/understand-ai-risks.md)]

@@ -1,1 +1,15 @@
-Understand how Microsoft Purview secures AI data
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-understand-risks.understand-purview-ai-protections
+title: Understand how Microsoft Purview secures AI data
+metadata:
+  title: Understand How Microsoft Purview Secures AI Data
+  description: "Understand how Microsoft Purview secures AI data."
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/understand-purview-ai-protections.md)]
