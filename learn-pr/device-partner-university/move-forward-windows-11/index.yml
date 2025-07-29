@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.move-forward-windows-11
+title: Move forward with Windows 11 Pro before Windows 10 EOS
+metadata:
+  title: Move Forward With Windows 11 Pro Before Windows 10 EOS
+  description: In this module, you’ll explore what Windows 10 end of support (EOS) means for your organization, why upgrading now is critical, and the key benefits of moving to Windows 11 Pro.
+  ms.date: 07/29/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  [Add brief summary]
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand the implications of Windows 10 EOS
+  - Identify the benefits of Windows 11 Pro for your organization
+  - Discover tools that simplify deployment and device management
+  - Plan a smooth upgrade path using available Microsoft resources
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - windows-11
+  - windows-10
+units:
+  - learn.dpu.move-forward-windows-11.introduction
+  - learn.dpu.move-forward-windows-11.countdown-to-windows-10-end-of-support
+  - learn.dpu.move-forward-windows-11.benefits-of-upgrade
+  - learn.dpu.move-forward-windows-11.risk-of-delay
+  - learn.dpu.move-forward-windows-11.stay-secure-with-windows-11
+  - learn.dpu.move-forward-windows-11.upgrade-with-confidence
+  - learn.dpu.move-forward-windows-11.get-your-organization-ready
+  - learn.dpu.move-forward-windows-11.summary
+badge:
+  uid: learn.dpu.move-forward-windows-11.badge
