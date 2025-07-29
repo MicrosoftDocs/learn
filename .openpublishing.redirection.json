@@ -45375,8 +45375,13 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/nvidia/deploy-model-to-nvidia-triton-inference-server/6-summary.yml",
+      "source_path": "learn-pr/nvidia/deploy-model-to-nvidia-triton-inference-server/5-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-cost-management-azure/5-exercise-compare-workload-costs-use-total-cost-ownership-calculator.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cost-management-azure/",
       "redirect_document_id": false
     },
     {
