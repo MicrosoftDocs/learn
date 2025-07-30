@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.multistage-reasoning-azure-databricks
 metadata:
-  title: Implement multi-stage reasoning in Azure Databricks
+  title: Implement Multi-Stage Reasoning in Azure Databricks
   description: Implement multi-stage reasoning in Azure Databricks
   ms.date: 07/08/2025
   author: theresa-i
