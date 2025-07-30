@@ -1,10 +1,10 @@
 ### YamlMime:Module
 uid: learn.wwl.connect-azure-assets-to-azure-defender
 metadata:
-  title: Connect Azure assets to Microsoft Defender for Cloud
+  title: Connect Azure Assets to Microsoft Defender for Cloud
   description: "Connect Azure assets to Microsoft Defender for Cloud"
-  ms.date: 02/22/2023
-  author: wwlpublish
+  ms.date: 07/30/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: defender-for-cloud
