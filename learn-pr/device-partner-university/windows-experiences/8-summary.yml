@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-experiences.summary
+title: Help organizations succeed
+metadata:
+  title: Help Organizations Succeed
+  description: This content is part of the "A new generation of Windows experiences" module.
+  ms.date: 07/18/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]
