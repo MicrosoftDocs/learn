@@ -10,7 +10,7 @@ DSPM for AI provides centralized visibility and control over how organizational 
 
 Instead of requiring new infrastructure, DSPM for AI builds on existing Microsoft Purview tools like data classification, sensitivity labels, and data loss prevention (DLP). This approach allows organizations to apply consistent protections across AI interactions without needing to deploy new security infrastructure.
 
-:::image type="content" source="../media/purview-ai-protections.png" alt-text="Illustration of a layered stack showing Microsoft Purview protections for AI: Sensitivity Labels, Data Loss Prevention, Adaptive Protection, Insider Risk Management, and Data Security Posture Management for AI." lightbox="../media/purview-ai-protections.png":::
+:::image type="content" source="../media/purview-ai-shield.png" alt-text="Illustration of DSPM for AI shield showing Sensitivity Labels, Data Loss Prevention, Adaptive Protection, and Insider Risk Management as integrated protections." lightbox="../media/purview-ai-shield.png":::
 
 ## AI tool categories in Microsoft Purview
 
