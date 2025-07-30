@@ -36,7 +36,7 @@ Copilot+ PCs and Windows 11 Pro PCs are designed for fast, easy deployment and c
   Empower employees with cutting-edge tools that enhance productivity and spark innovation.  
   Windows 11 Pro boosts efficiency with productivity-enhancing features, enabling **50% faster workflows** and improved multitasking capabilities compared to Windows 10.
 
-#### Disclaimer
+#### Disclaimers
 
 1. Windows [App Assure program](/windows/compatibility/app-assure)  
 1. Windows 11 Survey Report. Techaisle LLC, September 2024. Commissioned by Microsoft. Windows 11 results are in comparison with Windows 10 devices.

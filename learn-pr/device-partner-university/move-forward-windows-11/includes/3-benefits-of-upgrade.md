@@ -12,8 +12,6 @@ Upgrading to Windows 11 Pro cuts hidden costs tied to outdated devices—reducin
 **⚙️ Simplify deployment**  
 Windows 11 Pro supports mission-critical business applications with a reported 25% faster deployment, automated updates, and precise control over data and AI. Proactive planning ensures a smooth and optimized upgrade process.
 
----
-
 ## Consider what’s at stake
 
 While the benefits of Windows 11 Pro may speak for themselves, it's just as important to understand what your organization may be missing by staying on Windows 10.
@@ -21,8 +19,6 @@ While the benefits of Windows 11 Pro may speak for themselves, it's just as impo
 > [!TIP]
 > Being proactive keeps you in a stronger position—with fewer surprises down the line.
 
----
-
 #### Disclaimer 
 
-1. Microsoft commissioned study delivered by Forrester Consulting [“The Total Economic Impact™ of Windows 11 Pro Devices”, December 2022](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Vrvx). Note, quantified benefits reflect results over three years combined into a single composite organization that generates $1 billion in annual revenue, has 2,000 employees, refreshes hardware on a four-year cycle, and migrates the entirety of its workforce to Windows 11 devices.
+Microsoft commissioned study delivered by Forrester Consulting [“The Total Economic Impact™ of Windows 11 Pro Devices”, December 2022](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Vrvx).Note, quantified benefits reflect results over three years combined into a single composite organization that generates $1 billion in annual revenue, has 2,000 employees, refreshes hardware on a four-year cycle, and migrates the entirety of its workforce to Windows 11 devices.

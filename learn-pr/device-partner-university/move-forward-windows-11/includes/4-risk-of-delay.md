@@ -31,6 +31,4 @@ Old devices are slower and require more maintenance, dragging down productivity.
 **Compatibility issues**  
 Older devices may struggle with new apps and tools, resulting in compatibility issues. This can slow innovation and limit the ability to adopt modern solutions.
 
----
-
 As you’ll see in the next section, Windows 11 Pro doesn’t just respond to security risks—it helps you stay ahead of them.
