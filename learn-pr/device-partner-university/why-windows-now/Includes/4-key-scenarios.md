@@ -1,4 +1,4 @@
-# The right messaging
+## The right messaging
 
 Different users have different reasons for upgrading to Windows 11 Pro, depending on:
 
@@ -8,7 +8,7 @@ Different users have different reasons for upgrading to Windows 11 Pro, dependin
 
 These factors help to determine the right messaging. Understanding how Windows 11 can meet their needs can help drive an upgrade decision—whether it’s improving security, increasing productivity, or unlocking AI potential—helping them achieve their business goals.
 
-# Key user scenarios
+## Key user scenarios
 
 Now let's explore the three key user scenarios for a Windows 11 device upgrade:
 

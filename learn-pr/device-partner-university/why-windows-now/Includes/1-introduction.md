@@ -1,4 +1,3 @@
-# Introduction
 
 With Windows 10 End of Service (EOS) fast approaching, let's take a look at Microsoft's strategy for driving the adoption of Windows 11 Pro. 
 
