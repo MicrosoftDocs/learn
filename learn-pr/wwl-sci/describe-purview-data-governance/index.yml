@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.describe-purview-data-governance
 metadata:
-  title: Describe the data governance solutions of Microsoft Purview
+  title: Describe the Data Governance Solutions of Microsoft Purview
   description: "Describe the data governance solutions of Microsoft Purview."
-  ms.date: 04/23/2025
+  ms.date: 07/30/2025
   author: wwlpublish
   ms.author: ceperezb
   ai-usage: ai-assisted

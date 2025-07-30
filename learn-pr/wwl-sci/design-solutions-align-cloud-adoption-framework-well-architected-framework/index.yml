@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework
 metadata:
-  title: Design security solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)
+  title: Design Security Solutions that Align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)
   description: "You'll learn about the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF) and how you can use them to design more secure solutions."
-  ms.date: 3/14/2023
+  ms.date: 07/30/2025
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
