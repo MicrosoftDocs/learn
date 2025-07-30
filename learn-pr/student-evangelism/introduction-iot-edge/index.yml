@@ -4,6 +4,7 @@ metadata:
   title: "Introduction to Azure IoT Edge"
   description: "Learn how to explain the essential characteristics of the IoT Edge and the functionality of the IoT Edge components."
   ms.date: 07/30/2024
+  ms.update-cycle: 180-days
   author: orin-thomas
   ms.author: orthomas
   ms.topic: module

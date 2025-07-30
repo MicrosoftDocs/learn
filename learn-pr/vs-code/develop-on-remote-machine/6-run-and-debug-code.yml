@@ -4,7 +4,7 @@ title: Run and debug code
 metadata:
   title: Run and debug code
   description: "When connected to a remote machine using SSH in Visual Studio Code, editing, running, and debugging code is the same experience as if you were developing locally."
-  ms.date: 01/22/2024
+  ms.date: 07/24/2025
   author: olguzzar
   ms.author: olguzzar
   ms.topic: unit

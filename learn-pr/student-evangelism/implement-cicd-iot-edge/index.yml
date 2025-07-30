@@ -5,6 +5,7 @@ metadata:
   description: "This module implements CICD pipeline for edge devices."
   manager: lizross
   ms.date: 07/20/2024
+  ms.update-cycle: 180-days
   author: orin-thomas
   ms.author: orthomas
   ms.topic: module

@@ -6,6 +6,7 @@ metadata:
   author: theoyinbooke
   ms.author: somelezediko
   ms.date: 12/13/2023
+  ms.update-cycle: 180-days
   ms.service: azure-ai-services
   ms.topic: module-challenge-project
   ms.collection:

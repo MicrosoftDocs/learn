@@ -1,16 +1,17 @@
 ### YamlMime:Module
 uid: learn.build-product-road-maps
 metadata:
+  ms.service: azure
   title: Build product roadmaps
   description: Identify and construct Agile product roadmaps including audiences, prioritization, themes, milestones, epics, and user stories.
   author: czhu89
-  ms.date: 04/24/2023
+  ms.date: 07/09/2025
   ms.author: cazh
   ms.topic: module
 title: Build product roadmaps
 summary: Identify and construct Agile product roadmaps including audiences, prioritization, themes, milestones, epics, and user stories.
 abstract: | 
- In this module, you'll learn how to:
+ In this module, you learn how to:
  - Describe the basic components and importance of product roadmaps.
  - Structure a roadmap appropriate for your product.
  - Identify and develop themes, milestones, epics, and user stories for your product roadmap.

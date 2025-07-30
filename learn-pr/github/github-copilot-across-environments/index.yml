@@ -4,6 +4,7 @@ metadata:
   title: "GitHub Copilot Across Environments: IDE, Chat, and Command Line Techniques"
   description: "GitHub Copilot Across Environments: IDE, Chat, and Command Line Techniques explores the versatile integration of GitHub's AI-powered coding assistance. It covers effective use of Copilot's auto-suggestions and multiple panes in IDEs, using natural language interactions in Copilot Chat, and streamlining command-line workflows. The guide delves into optimizing prompts, understanding context-aware code generation, and customizing Copilot's behavior across different coding environments."
   ms.date: 10/08/2024
+  ms.update-cycle: 180-days
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module

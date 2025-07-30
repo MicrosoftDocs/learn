@@ -11,7 +11,7 @@ title: Develop computer vision solutions in Azure
 prerequisites: |
   Before starting this learning path, you should already have:
   - Familiarity with Azure and the Azure portal.
-  - Experience programming with C# or Python.
+  - Programming experience.
 summary: |
   Computer vision is an area of artificial intelligence that deals with visual perception. Azure AI includes multiple services that support common computer vision scenarios.
 iconUrl: /training/achievements/cognitive-services-computer-vision.svg

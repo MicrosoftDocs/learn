@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-microsoft-identity-platform
 metadata:
-  title: Explore the Microsoft identity platform
+  title: Explore the Microsoft Identity Platform
   description: "Learn the core features and functionality of the Microsoft identity platform including authentication, libraries, and app management tools."
   ms.date: 07/16/2024
   author: wwlpublish

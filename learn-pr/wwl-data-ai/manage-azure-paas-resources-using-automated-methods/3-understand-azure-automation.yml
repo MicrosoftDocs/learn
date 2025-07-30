@@ -4,7 +4,7 @@ title: Understand Azure Automation
 metadata:
   title: Understand Azure Automation
   description: "Understand Azure Automation"
-  ms.date: 02/27/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-understand-azure-automation.md)]
+  [!include[](includes/3-understand-azure-automation.md)]

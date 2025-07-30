@@ -18,10 +18,10 @@ abstract: |
   - Generate text translation from speech.
   - Synthesize spoken translations.
 prerequisites: |
-  Before starting this module, you should:
-  - Be familiar with Azure services and the Azure portal.
-  - Have experience programming with C# or Python.
-  - Have experience of using the Azure AI Speech service to transcribe speech to text.
+  Before starting this module, you should have:
+  - Familiarity with Azure services and the Azure portal.
+  - Programming experience.
+  - Experience of using the Azure AI Speech service to transcribe speech to text.
 iconUrl: /training/achievements/translate-speech-speech-service.svg
 levels:
 - intermediate
@@ -44,4 +44,4 @@ units:
 - learn.wwl.translate-speech-speech-service.summary
 badge:
   uid: learn.wwl.translate-speech-speech-service.badge
-
+

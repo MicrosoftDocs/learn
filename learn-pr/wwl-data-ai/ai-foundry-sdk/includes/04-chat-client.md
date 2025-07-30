@@ -5,8 +5,6 @@ While you can use the Azure OpenAI SDK, to connect "directly" to a model using k
 > [!TIP]
 > You can use the OpenAI chat client provided by an Azure AI Foundry project to chat with any model deployed in the associated Azure AI Foundry resource - even non-OpenAI models, such as Microsoft Phi models.
 
-::: zone pivot="python"
-
 The following Python code sample uses the **get_azure_openai_client()** method in the Azure AI project's **inference** operations object to get an OpenAI client with which to chat with a model that has been deployed in the project'a Azure AI Foundry resource.
 
 ```python
@@ -29,13 +27,12 @@ try:
     # Get a chat completion based on a user-provided prompt
     user_prompt = input("Enter a question:")
     
-    response = chat_client.complete(
-        model=model_deployment_name,
-        [
+    response = chat_client.chat.completions.create(
+        model=your_model_deployment_name,
+        messages=[
             {"role": "system", "content": "You are a helpful AI assistant."},
             {"role": "user", "content": user_prompt}
         ]
-        ],
     )
     print(response.choices[0].message.content)
 
@@ -47,64 +44,3 @@ except Exception as ex:
 > In addition to the **azure-ai-projects** and **azure-identity** packages discussed previously, the sample code shown here assumes that the **openai** package has been installed:
 >
 > `pip install openai`
-
-::: zone-end
-
-::: zone pivot="csharp"
-
-The following C# code sample uses the **GetAzureOpenAIChatClient()** method of the Azure AI project object to get an OpenAI client with which to chat with a model that has been deployed in the project's Azure AI Foundry resource.
-
-```csharp
-using Azure.Identity;
-using Azure.AI.Projects;
-using Azure.AI.OpenAI;
-using OpenAI.Chat;;
-
-namespace my_foundry_client
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            try
-            {
-                // Initialize the project client
-                var projectEndpoint = "https://.....";
-                var projectClient = new AIProjectClient(
-                    new Uri(projectEndpoint),
-                    new DefaultAzureCredential());
-        
-                // Get a chat client
-                ChatClient chatClient = projectClient.GetAzureOpenAIChatClient(
-                    deploymentName: model_deployment_name, 
-                    connectionName: null,
-                    apiVersion: "2024-10-21");
-        
-                // Get a chat completion based on a user-provided prompt
-                Console.WriteLine("Enter a question:");
-                var user_prompt = Console.ReadLine();
-
-                ChatCompletion completion = chatClient.CompleteChat(
-                [
-                    new SystemChatMessage("You are a helpful AI assistant."),
-                    new UserChatMessage(user_prompt)
-                ]);
-        
-                Console.WriteLine(completion.Content[0].Text);
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
-    }
-}
-```
-
-> [!NOTE]
-> In addition to the **azure-ai-projects** and **azure-identity** packages discussed previously, the sample code shown here assumes that the **Azure.AI.OpenAI** package has been installed:
->
-> `dotnet add package Azure.AI.OpenAI --prerelease`
-
-::: zone-end

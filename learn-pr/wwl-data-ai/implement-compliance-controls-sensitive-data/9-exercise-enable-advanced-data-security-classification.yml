@@ -4,13 +4,10 @@ title: 'Exercise: Enable Microsoft Defender for SQL and Data Classification'
 metadata:
   title: 'Exercise: Enable Microsoft Defender for SQL and Data Classification'
   description: "Exercise: Enable Microsoft Defender for SQL and Data Classification"
-  ms.date: 02/26/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-azureSandbox: false
-labId: 119400
-labModal: true
 durationInMinutes: 15
 content: |
-  [!include[](includes/9-exercise-enable-advanced-data-security-classification.md)]
+  [!include[](includes/9-exercise-enable-advanced-data-security-classification.md)]
