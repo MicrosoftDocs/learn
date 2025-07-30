@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-generative-ai-engineering-azure-databricks
 metadata:
-  title: Implement Generative AI engineering with Azure Databricks
+  title: Implement Generative AI Engineering with Azure Databricks
   description: Generative Artificial Intelligence (AI) engineering with Azure Databricks uses the platform's capabilities to explore, fine-tune, evaluate, and integrate advanced language models. By using Apache Spark's scalability and Azure Databricks' collaborative environment, you can design complex AI systems.
   ms.date: 07/17/2025
   author: theresa-i

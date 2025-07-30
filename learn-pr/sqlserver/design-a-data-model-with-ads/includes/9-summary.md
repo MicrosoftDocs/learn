@@ -1,4 +1,3 @@
-
 You were tasked to create a data model for a card game's web-based reference application. By learning some of the core concepts for tables in Azure SQL, you were able to:
 
 * Add primary keys and identity columns to the tables.
@@ -13,6 +12,6 @@ Without these concepts, the data model would contain duplicate rows and potentia
 
 * [Get Started Querying with Transact-SQL](/training/paths/get-started-querying-with-transact-sql/)
 * [Pages and extents architecture guide](/sql/relational-databases/pages-and-extents-architecture-guide)
-* [Azure SQL Hyperscale](/azure/azure-sql/database/service-tier-hyperscale)
+* [Hyperscale service tier](/azure/azure-sql/database/service-tier-hyperscale)
 * [Data types (Transact-SQL)](/sql/t-sql/data-types/data-types-transact-sql)
 * [Indexes](/sql/relational-databases/indexes/indexes)

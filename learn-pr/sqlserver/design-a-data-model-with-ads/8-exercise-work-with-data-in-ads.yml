@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-a-data-model-with-ads.exercise-work-with-data-in-ads
-title: Work with data in Azure Data Studio
+title: Work with data in Visual Studio Code
 metadata:
-  title: Work with data in Azure Data Studio
-  description: "Use Azure Data Studio to create tables with data types, indexes, and constraints and link them with foreign keys and primary keys"
-  ms.date: 03/05/2024
+  title: Work with data in Visual Studio Code
+  description: "Use Visual Studio Code to create tables with data types, indexes, and constraints and link them with foreign keys and primary keys"
+  ms.date: 07/17/2025
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: unit
 durationInMinutes: 20
 content: |
-  [!include[](includes/8-exercise-work-with-data-in-ads.md)]
+  [!include[](includes/8-exercise-work-with-data-in-ads.md)]

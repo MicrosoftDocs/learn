@@ -4,6 +4,7 @@ metadata:
   ms.author: viniap
   author: Orin-Thomas
   ms.date: 06/20/2025
+  ms.update-cycle: 180-days
   title: Restrict Azure Machine Learning workspace network traffic 
   description: Overview of planning and securing Azure Machine Learning networking
   ms.topic: module

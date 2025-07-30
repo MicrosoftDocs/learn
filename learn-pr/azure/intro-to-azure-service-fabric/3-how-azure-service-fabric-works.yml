@@ -5,7 +5,7 @@ title: How Azure Service Fabric works
 metadata:
   title: How Azure Service Fabric works
   description: Learn how Azure Service Fabric works, and how workloads are developed and deployed.
-  ms.date: 01/03/2024
+  ms.date: 07/23/2025
   author: tomvcassidy
   ms.author: tomcassidy
   ms.topic: unit
@@ -13,4 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-how-azure-service-fabric-works.md)]
-
+

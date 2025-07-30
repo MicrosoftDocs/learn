@@ -5,6 +5,7 @@ metadata:
   title: Set Up the pgvector Extension in Azure PostgreSQL for Use with Spring AI
   description: Learn how to use the pgvector extension in Azure PostgreSQL and apply the vector similarity search abstraction in Spring AI.
   ms.date: 03/16/2025
+  ms.update-cycle: 180-days
   author: yortch
   ms.author: jbalderas
   ms.reviewer: thegovind

@@ -5,6 +5,7 @@ metadata:
   title: Create a content filter
   description: Learn how to create a content filter and apply the filter to a model.
   ms.date: 09/14/2024
+  ms.update-cycle: 180-days
   author: aprilgittens
   ms.author: apspeigh
   ms.topic: unit

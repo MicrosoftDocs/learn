@@ -5,6 +5,7 @@ metadata:
   title: Summary
   description: Summarize the key concepts and learnings from the module.
   ms.date: 10/13/2024
+  ms.update-cycle: 180-days
   author: aprilgittens
   ms.author: apspeigh
   ms.topic: unit

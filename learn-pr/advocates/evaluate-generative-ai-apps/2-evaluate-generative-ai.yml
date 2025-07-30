@@ -5,6 +5,7 @@ metadata:
   title: Evaluate generative AI
   description: An introduction to concepts for evaluating generative AI applications.
   ms.date: 10/11/2024
+  ms.update-cycle: 180-days
   author: aprilgittens
   ms.author: apspeigh
   ms.topic: unit

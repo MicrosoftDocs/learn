@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should have:
   - Experience with deploying generative AI models in Azure AI Foundry.
-  - Programming experience with Python or Microsoft C#.
+  - Programming experience.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate
@@ -36,6 +36,7 @@ units:
 - learn.wwl.connect-agent-to-mcp-tools.introduction
 - learn.wwl.connect-agent-to-mcp-tools.understand-mcp-tool-discovery
 - learn.wwl.connect-agent-to-mcp-tools.mcp-client-server-setup
+- learn.wwl.connect-agent-to-mcp-tools.use-azure-ai-agents-with-mcp
 - learn.wwl.connect-agent-to-mcp-tools.exercise
 - learn.wwl.connect-agent-to-mcp-tools.knowledge-check
 - learn.wwl.connect-agent-to-mcp-tools.summary
