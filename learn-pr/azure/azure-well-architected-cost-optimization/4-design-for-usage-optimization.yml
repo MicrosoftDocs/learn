@@ -14,20 +14,20 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which feature helps you save money on some Azure compute services by paying for only the compute that you use?"
+    - content: "Why did Contoso move their durable function to a lower-tier App Service plan?"
       choices:
-        - content: "Azure Advisor cost recommendations"
+        - content: "To improve performance during nightly syncs"
           isCorrect: false
-          explanation: "Incorrect. Azure Advisor cost recommendations provide recommendations about how you can reduce your Azure spend by identifying idle and underutilized resources."
-        - content: "Azure reservations"
+          explanation: "Incorrect. The move was cost-driven, not performance-driven. The lower-tier plan met existing performance needs."
+        - content: "To enable support for multiple programming languages"
           isCorrect: false
-          explanation: "Incorrect. Azure reservations let you prepay for a one-year or three-year term to get a discount on the base compute rate. You can't pay for only the compute that you use in this model."
-        - content: "Azure Hybrid Benefit"
-          isCorrect: false
-          explanation: "Incorrect. Azure Hybrid Benefit lets you use your on-premises Windows Server or SQL Server licenses with Software Assurance to pay a reduced rate on Azure Virtual Machines. It doesn't affect the cost of resources based on utilization."
-        - content: "Consumption-based billing"
+          explanation: "Incorrect. Language support wasn't a factor in the decision."
+        - content: "To reduce costs while maintaining required functionality"
           isCorrect: true
-          explanation: "Correct. Services like Azure Functions and Azure Container Instances can be configured to use consumption-based billing, which means that you pay only for the compute that you use."
+          explanation: "Correct. The durable function no longer needed the performance and scalability of the original Standard plan. Moving to a lower-tier plan reduced costs without affecting performance."
+        - content: "To increase availability across multiple regions"
+          isCorrect: false
+          explanation: "Incorrect. The function didn't require multiple-region availability."
 
     - content: "For cost efficiency, which high availability design should you avoid if you've already paid for the resources?"
       choices:
@@ -40,18 +40,21 @@ quiz:
         - content: "Active-passive"
           isCorrect: true
           explanation: "Correct. An active-passive design might lead to paying for idle resources."
+        - content: "Passive-only"
+          isCorrect: false
+          explanation: "Incorrect. A passive-only design lacks the active components needed to serve traffic or maintain availability, and still incurs cost without delivering value."
 
-    - content: "How can the workload team ensure that they catch abandoned resources, like MySQL servers, that are no longer used?"
+    - content: "What change did Contoso make to reduce idle compute costs for their integration function that only runs at night?"
       choices:
-        - content: "Review the monthly Azure bill"
+        - content: "They moved the function to a Premium App Service plan for better performance"
           isCorrect: false
-          explanation: "Incorrect. The Azure bill doesn't provide information about the utilization of a given resource."
-        - content: "Set up Azure budget alerts"
-          isCorrect: false
-          explanation: "Incorrect. Budget alerts only notify users when the budget is exceeded, they can't provide any information about a given resource's usage."
-        - content: "Review the cost analysis report for the subscription"
-          isCorrect: false
-          explanation: "Incorrect. The cost analysis report doesn't provide information about the utilization of a given resource."
-        - content: "Review the Azure Advisor cost recommendations"
+          explanation: "Incorrect. This approach increases costs, it doesn't reduce them. Performance wasn't a concern for this workload."
+        - content: "They configured the App Service plan to scale down during off-hours"
           isCorrect: true
-          explanation: "Correct. Azure Advisor cost recommendations can identify underutilized MySQL servers and provides a recommendation when such servers are found."
+          explanation: "Correct. Contoso realized the function only runs nightly, so they adjusted the App Service plan to scale down when not in use."
+        - content: "They enabled geo-redundancy to improve availability"
+          isCorrect: false
+          explanation: "Incorrect. Geo-redundancy adds cost and wasn't necessary for this function's availability requirements."
+        - content: "They added more instances to handle future growth"
+          isCorrect: false
+          explanation: "Incorrect. Adding instances increases cost. The goal was to reduce idle compute usage, not expand capacity."
