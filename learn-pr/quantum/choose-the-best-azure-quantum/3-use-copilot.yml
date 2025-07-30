@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.choose-the-best-azure-quantum.use-qcom
-title: Exercise - Use the Copilot to run a quantum program
+title: Exercise - Use Copilot to run a quantum program
 metadata:
-  title: Exercise - Use the Copilot to run a quantum program
-  description: Use the Copilot of Azure Quantum website to run a quantum program
-  ms.date: 10/30/2024
+  title: Exercise - Use Copilot to run a quantum program
+  description: Use Copilot on the Microsoft Quantum website to run a quantum program
+  ms.date: 07/24/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-use-copilot.md)]
+  [!include[](includes/3-use-copilot.md)]

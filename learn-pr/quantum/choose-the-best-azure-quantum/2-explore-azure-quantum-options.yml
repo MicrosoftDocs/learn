@@ -4,10 +4,10 @@ title: Explore the different Azure Quantum options
 metadata:
   title: Explore the different Azure Quantum options
   description: Explore the different Azure Quantum options
-  ms.date: 12/13/2023
+  ms.date: 07/24/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   ms.topic: unit
 durationInMinutes: 9
 content: |
-  [!include[](includes/2-explore-azure-quantum-options.md)]
+  [!include[](includes/2-explore-azure-quantum-options.md)]
