@@ -1,4 +1,4 @@
-Introduced in 2024, Copilot+ PCs are a new class of Windows 11 Pro PCs designed for the next era of AI.
+In 2024, Microsoft introduced Copilot+ PCs—a class of Windows 11 Pro PCs designed for the next era of AI.
 
 ## Table of contents
 

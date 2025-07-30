@@ -2,11 +2,9 @@ Many OEMs are now building Copilot+ PCs. Let's look at a few examples from Dell,
 
 ## Copilot+ PCs from Dell
 
-Equipped with Intel® Core™ Ultra processors (Series 2), the Dell Pro 13/14 Premium is the slimmest and lightest of Dell’s Pro portfolio, starting at only 2.36 pounds.
+The Dell Pro 13/14 Premium is the slimmest and lightest of Dell’s Pro portfolio, starting at only 2.36 pounds. It comes equipped with Intel® Core™ Ultra processors. (Series 2), In addition, the 14-inch edition features a Tandem OLED display option that brings work to life with vibrant colors against a true black background.
 
-In addition, the 14-inch edition features a Tandem OLED display option that brings work to life with vibrant colors against a true black background.
-
-The Dell Pro 13/14/16 Plus is offered in a variety of form factors, sizes, and configurations—all on the same system BIOS to simplify ordering and management for IT departments. Intel® Core™ Ultra processors (Series 2) processors power productive AI experiences for all.
+The Dell Pro 13/14/16 Plus is offered in many form factors, sizes, and configurations—all on the same system BIOS to simplify ordering and management for IT departments. Intel® Core™ Ultra processors (Series 2) processors power productive AI experiences for all.
 
 Other Copilot+ PC devices include the Dell Pro Max 14/16 series and Dell Pro Max desktops. These come in Intel® Core™ Ultra (Series 2) and AMD Ryzen™ processor options.
 
@@ -14,14 +12,18 @@ Other Copilot+ PC devices include the Dell Pro Max 14/16 series and Dell Pro Max
 
 HP EliteBook X Flip G1i 14-inch Notebook Next-Gen AI PC and HP EliteBook X G1i 14-inch Notebook Next-Gen AI PC offer up to 48 TOPS, of NPU performance with Intel® Core™ Ultra processors (Series 2). You can choose between the EliteBook X Flip G1i’s four use modes, or the laptop experience of the EliteBook X G1i.
 
-HP’s most powerful next-gen AI business notebook, the HP EliteBook X G1a Next Gen AI PC empowers employees to supercharge their work performance with an AMD Ryzen™ AI 300 Series processor capable of up to 55 TOPS and up to 64GB of RAM.
+The HP EliteBook X G1a is HP’s most powerful next-gen AI business notebook. It empowers employees to supercharge their work performance with an AMD Ryzen™ AI 300 Series processor capable of up to 55 TOPS and up to 64GB of RAM.
 
 ## Copilot+ PCs from Lenovo
 
-Lenovo Yoga Slim 9i is the world’s first available camera-under-display laptop (based on research conducted by Lenovo in January 2025 of consumer laptops sold by major PC manufacturers shipping more than 1 million units annually.). Enhanced with Visionary.ai image processing technology, Yoga Slim 9i features a 98% screen-to-body ratio PureSight Pro OLED display and is powered by up to an Intel® Core™ Ultra processor with a 48 TOPS NPU.
+Lenovo Yoga Slim 9i is the world’s first available camera-under-display laptop.¹ Yoga Slim 9i is enhanced with Visionary.ai image processing technology, features a 98% screen-to-body ratio PureSight Pro OLED display, and is powered by up to an Intel® Core™ Ultra processor with a 48 TOPS NPU.
 
-Lenovo Yoga 7i 2-in-1 is a versatile 2-in-1 laptop. It offers a 2.8K OLED display processor. The 360-degree convertible design and optional Yoga Pen expand the palette of creativity, making it perfect for business presentations and multitasking.
+Lenovo Yoga 7i 2-in-1 is a versatile 2-in-1 laptop. It offers a 2.8 K OLED display processor. The 360-degree convertible design and optional Yoga Pen expand the palette of creativity, making it perfect for business presentations and multitasking.
 
-Designed for productivity-focused users, Lenovo IdeaPad Pro 5i  features a 2.8K OLED display processor for breathtaking performance. The onboard NPU powers AI functionalities that make the Lenovo IdeaPad Pro 5i a powerful productivity package.
+Lenovo IdeaPad Pro 5i is designed for productivity-focused users. It features a 2.8 K OLED display processor and an onboard NPU that powers AI functionalities.
 
-Lenovo IdeaCentre Mini x is a compact desktop with a sleek 1-liter design. Powered by a Snapdragon® X Plus processor with a 45 TOPS NPU, it handles data-intensive projects and complex creative designs with ease. In addition, it offers ultra-fast Wi-Fi 7 and multiple USB 4.0 ports.
+Lenovo IdeaCentre Mini x is a compact desktop with a sleek 1-liter design. It's powered by a Snapdragon® X Plus processor with a 45 TOPS NPU, and handles data-intensive projects and complex creative designs with ease. In addition, it offers ultra-fast Wi-Fi 7 and multiple USB 4.0 ports.
+
+## Disclaimers
+
+1. Based on research conducted by Lenovo in January 2025 of consumer laptops sold by major PC manufacturers shipping more than 1 million units annually.
