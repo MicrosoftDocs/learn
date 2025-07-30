@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.prepare-for-the-future-of-ai.why-npus-matter
-title: Why NPUs matter
+uid: learn.dpu.prepare-for-the-future-of-ai.why-neural-processing-units-matter
+title: Why Neural Processing Units matter
 metadata:
-  title: Why NPUs Matter
+  title: Why Neural Processing Units Matter
   description: This content is part of the "Prepare for the future of AI with Copilot+ PCs" module.
   ms.date: 07/29/2025
   author: melissawinters
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-why-npus-matter.md)]
+  [!include[](includes/3-why-neural-processing-units-matter.md)]
