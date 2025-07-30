@@ -4,35 +4,27 @@ Understanding cloud usage and costs are important for effective cloud management
 
 ## Data ingestion
 
-#### Objective:
-
-Collect, transfer, and normalize data from various sources for analysis, with a focus on understanding the usage and costs associated with an organization's cloud infrastructure.
+**Objective:**  Collect, transfer, and normalize data from various sources for analysis, with a focus on understanding the usage and costs associated with an organization's cloud infrastructure.
 
 ## Allocation
 
-#### Objective:
+**Objective:**  Define strategies to assign and split shared cloud costs using accounts, tags, labels, and other metadata, creating accountability among teams and projects within an organization.
 
-Define strategies to assign and split shared cloud costs using accounts, tags, labels, and other metadata, creating accountability among teams and projects within an organization.
-
-#### Get started with cost allocation:
+#### Get started with cost allocation
 
 <iframe title="FinOps interactive guide for cost allocation." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%201%20-%20Cost%20allocation" width="800" height="500"></iframe>
 
 ## Reporting + analytics
 
-#### Objective:
-
-Examine and showback cloud data to gain insights into usage and spend patterns. Identify cost optimization opportunities, improve cost efficiency, and make informed financial decisions regarding cloud resources.
+**Objective:**  Examine and showback cloud data to gain insights into usage and spend patterns. Identify cost optimization opportunities, improve cost efficiency, and make informed financial decisions regarding cloud resources.
 
 <iframe title="FinOps interactive guide for reporting and analytics." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%202%20-%20Reporting%20and%20analytics" width="800" height="500"></iframe>
 
 ## Anomaly management
 
-#### Objective:
+**Objective:**  Detect, identify, alert, and manage unexpected cloud cost and usage irregularities in a timely manner to lower risk in cost-effective cloud operations.
 
-Detect, identify, alert, and manage unexpected cloud cost and usage irregularities in a timely manner to lower risk in cost-effective cloud operations.
-
-#### Get started with managing anomalies:
+### Get started with managing anomalies
 
 <iframe title="FinOps interactive guide for managing anomalies." src="https://mslearn.cloudguides.com/guides/FinOps%20on%20Azure%20Exercise%205%20-%20Manage%20anomalies" width="800" height="500"></iframe>
 
