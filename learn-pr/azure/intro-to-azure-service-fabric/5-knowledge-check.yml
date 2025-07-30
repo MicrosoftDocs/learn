@@ -5,7 +5,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Check what you learned about Azure Service Fabric.
-  ms.date: 01/03/2024
+  ms.date: 07/23/2025
   author: tomvcassidy
   ms.author: tomcassidy
   ms.topic: unit
@@ -40,11 +40,11 @@ quiz:
       explanation: "Service Fabric supports both static and dynamic storage volumes for containers that need persisted storage."
     - content: "Enable cluster autoscaling to scale the cluster horizontally"
       isCorrect: false
-      explanation: "Scaling horizontally will add more nodes to your Service Fabric cluster."
+      explanation: "Scaling horizontally adds more nodes to your Service Fabric cluster."
 
   - content: "What environments does Azure Service Fabric support?"
     choices:
-    - content: "Service Fabric supports building on Azure, on-premises in Windows and Linux, and other cloud platforms, including AWS."
+    - content: "Service Fabric supports building on Azure, on-premises in Windows and Linux, and other cloud platforms, including Amazon Web Services (AWS)."
       isCorrect: true
       explanation: "As a part of Service Fabric's any Cloud, any OS offering, Service Fabric supports all of these options."
     - content: "Service Fabric only supports building on Azure."
@@ -53,4 +53,4 @@ quiz:
     - content: "Service Fabric supports Azure and other cloud platforms. It also supports on-premises solutions, but only on Windows."
       isCorrect: false
       explanation: "As a part of Service Fabric's any Cloud, any OS offering, Service Fabric supports both Windows and Linux solutions."
-
+

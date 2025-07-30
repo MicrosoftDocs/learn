@@ -3,7 +3,7 @@ uid: learn.wwl.describe-performance-monitoring
 metadata:
   title: Describe performance monitoring
   description: Describe performance monitoring
-  ms.date: 03/19/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
@@ -46,4 +46,4 @@ units:
 - learn.wwl.describe-performance-monitoring.summary
 badge:
   uid: learn.wwl.describe-performance-monitoring.badge
-
+

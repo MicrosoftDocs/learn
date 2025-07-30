@@ -4,6 +4,7 @@ metadata:
   title: "Run Azure AI services on IoT Edge"
   description: Implement a cognitive service for performing language detection on an IoT Edge device.
   ms.date: 07/08/2024
+  ms.update-cycle: 180-days
   author: orin-thomas
   ms.author: orthomas
   ms.topic: module

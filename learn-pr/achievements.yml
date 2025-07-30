@@ -10,11 +10,26 @@ achievements:
   title: Guided project - Analyze logs in Azure Monitor with KQL
   summary: Write log queries to find answers to operational and business questions. Use Kusto Query Language (KQL) to extract insights from logs in Azure Monitor.
   iconUrl: /training/achievements/analyze-logs-with-kql.svg
+- uid: learn.azure.explore-fundamentals-kql.badge
+  type: badge
+  title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)
+  summary: Learn about the basics of Kusto Query Language (KQL), and the various Microsoft products that use it.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.gain-insights-data-kql.badge
+  type: badge
+  title: Gain insights from your data by using Kusto Query Language
+  summary: Write advanced queries in Kusto Query Language to help you gain insights from your data. 
+  iconUrl: /training/achievements/gain-insights-in-your-data-using-kusto-query-language.svg
 - uid: learn.azure.characterize-dataset-azure-data-explorer.badge
   type: badge
   title: Characterize an unfamiliar dataset with Azure Data Explorer
   summary: Learn how to characterize an unfamiliar dataset using Azure Data Explorer. 
   iconUrl: /training/achievements/azure-data-explore-web.svg
+- uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.badge
+  type: badge
+  title: Implement high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance
+  summary: In this module, you'll learn to describe high-availability and disaster-recovery options for Azure Arc-enabled SQL Managed Instance.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.azure.intro-to-arc-enabled-data-services.badge
   type: badge
   title: Introduction to Azure Arc-enabled data services
@@ -120,6 +135,16 @@ achievements:
   title: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
   summary: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
   iconUrl: /training/achievements/iot/manage-monitor-devices-iot-hub-azure-monitor.svg
+- uid: learn.kusto-query-language.trophy.trophy
+  type: trophy
+  title: Data analysis with Kusto Query Language
+  summary: In this learning path, students learn how to analyze data in various environments using the Kusto Query Language.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.analyze-monitoring-data-with-kql.trophy
+  type: trophy
+  title: Analyze monitoring data with Kusto Query Language
+  summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
+  iconUrl: /training/achievements/generic-trophy.svg
 - uid: learn.wwl.explore-iot-hub-monitoring.badge
   type: badge
   title: Guided project - Explore Azure IoT Hub monitoring
@@ -6200,3 +6225,128 @@ achievements:
   title: Fundamentals of language translation
   summary: Automated translation capabilities in an AI solution enable closer collaboration by removing language barriers.
   iconUrl: /training/achievements/translate-text-with-translation-service.svg
+- uid: learn.azure.deploy-run-container-app-service.badge
+  type: badge
+  title: Deploy and run a containerized web app with Azure App Service
+  summary: Create a Docker image and store it in a repository in Azure Container Registry. Use Azure App Service to deploy a web application based on the Docker image. Configure continuous deployment for the web app by using a webhook that monitors the Docker image for changes.
+  iconUrl: /training/achievements/deploy-run-container-app-service.svg
+- uid: learn.execute-azure-function-with-triggers.badge
+  type: badge
+  title: Execute an Azure Function with triggers
+  summary: A trigger is responsible for executing an Azure function and there are dozens of triggers to choose from. This module shows you some of the most common types of triggers and how to configure them to execute your logic.
+  iconUrl: /training/achievements/execute-azure-function-with-triggers.svg
+- uid: learn.visual-studio-test-concepts.badge
+  type: badge
+  title: Introduction to software testing concepts
+  summary: Describe the common best practices, theory, and patterns of writing tests. Characterize the types of problems that testing can solve for your repository.
+  iconUrl: /training/achievements/visual-studio-test-concepts.svg
+- uid: learn.visual-studio.visual-studio-test-tools.badge
+  type: badge
+  title: C# testing in Visual Studio
+  summary: Start testing your C# apps by using the testing tools in Visual Studio.
+  iconUrl: /training/achievements/visual-studio/visual-studio-test-tools.svg
+- uid: learn.visual-studio.visual-studio-test.trophy
+  type: trophy
+  title: Use Visual Studio for modern development
+  summary: Want to learn more about using Visual Studio to develop and test apps, but don't know where to start? Start here!
+  iconUrl: /training/achievements/visual-studio/visual-studio-test.svg
+- uid: learn.azure.logic-apps-and-arm-templates.badge
+  type: badge
+  title: Create and deploy an Azure Logic Apps workflow using Azure Resource Manager templates
+  summary: In this module, you'll define an Azure Logic Apps workflow declaratively as a Resource Manager template and deploy the app using the Azure Command Line Interface (CLI).
+  iconUrl: /training/achievements/logic-apps-and-arm-templates.svg
+- uid: learn.azure-storage-dotnet-aspire-app.badge
+  type: badge
+  title: Use Azure Storage with .NET Aspire
+  summary: Learn how to access and use Azure Storage accounts from .NET Aspire solutions for file storage, data storage, and message queuing.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.develop-ai-solutions-azure-openai.trophy
+  type: trophy
+  title: Develop Generative AI solutions with Azure OpenAI in Foundry Models
+  summary: Azure OpenAI in Foundry Models provides access to OpenAI's powerful large language models such as GPT and Embeddings models. These models enable various natural language processing (NLP) solutions to understand, converse, and generate content. Users can access the service through REST APIs, SDKs, and Azure AI Foundry.
+  iconUrl: /training/achievements/develop-ai-solutions-azure-openai.svg
+- uid: learn.send-messages-rabbitmq-dotnet-aspire-app.badge
+  type: badge
+  title: Send messages with RabbitMQ in a .NET Aspire project
+  summary: Learn how to use message queues on RabbitMQ exchange servers to decouple microservices and manage communications in a cloud-native application built with .NET Aspire.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.improve-performance-cache-aspire.badge
+  type: badge
+  title: Improve performance with a cache in a .NET Aspire project
+  summary: Learn about using Redis caching to increase performance in a cloud-native application. You'll also discover how .NET Aspire makes it easy to access Redis caching services from your microservices.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.use-databases-dotnet-aspire-app.badge
+  type: badge
+  title: Use databases in a .NET Aspire project
+  summary: Learn about the database systems that .NET Aspire can connect to using built-in integrations. Then see how to configure connections to, and store data in, relational and nonrelational databases.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.use-telemetry-dotnet-aspire.badge
+  type: badge
+  title: Use telemetry in a .NET Aspire project
+  summary: Learn how to use telemetry in a .NET Aspire project to log data and examine the behavior of a cloud-native application.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.create-aspire-application.badge
+  type: badge
+  title: Create a .NET Aspire project
+  summary: Learn how to create cloud-native applications from scratch or add orchestration to an existing app by using the .NET Aspire stack in .NET 8.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.dotnet-aspire.trophy
+  type: trophy
+  title: Build distributed apps with .NET Aspire
+  summary: Learn how to build observable, production ready, distributed applications with .NET Aspire. 
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.introduction-dotnet-aspire.badge
+  type: badge
+  title: Introduction to .NET Aspire
+  summary: Learn about the .NET Aspire stack in .NET 8 and how you can use it to ease and accelerate the development of cloud-native web applications. 
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.iot.run-iot-edge-device-restricted-network-offline.badge
+  type: badge
+  title: Run an IoT Edge device in a restricted network and offline
+  summary: This module is theoretical and will walk you through how an IoT Edge device can be harnessed as a gateway to child devices and can store captured information if connectivity is unavailable.
+  iconUrl: /training/achievements/run-iot-edge-device-restricted-network-offline.svg
+- uid: learn.wwl.create-composed-form-recognizer-model.badge
+  type: badge
+  title: Create a composed Document intelligence model
+  summary: Learn how to assemble custom models into composed solutions that can analyze different types of your own documents.
+  iconUrl: /training/achievements/create-composed-form-recognizer-model.svg
+- uid: learn.wwl.get-started-azure-ai.trophy
+  type: trophy
+  title: Get started with Azure AI Services
+  summary: Azure AI Services is a collection of services that are building blocks of AI functionality you can integrate into your applications. In this learning path, you'll learn how to provision, secure, monitor, and deploy Azure AI Services resources and use them to build intelligent solutions.
+  iconUrl: /training/achievements/provision-and-manage-azure-cognitive-services.svg
+- uid: learn.wwl.plan-form-recognizer-solution.badge
+  type: badge
+  title: Plan an Azure AI Document Intelligence solution
+  summary: Learn how to use Azure AI Document Intelligence to build solutions that analyze forms and output data for storage or further processing.
+  iconUrl: /training/achievements/plan-form-recognizer-solution.svg
+- uid: learn.wwl.create-manage-ai-services.badge
+  type: badge
+  title: Create and consume Azure AI services
+  summary: Azure AI services enable developers to easily add AI capabilities into their applications. Learn how to create and consume these services.
+  iconUrl: /training/achievements/create-and-manage-cognitive-services.svg
+- uid: learn.wwl.investigate-container-for-use-with-ai-services.badge
+  type: badge
+  title: Deploy Azure AI services in containers
+  summary: Learn about Container support in Azure AI services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
+  iconUrl: /training/achievements/investigate-container-for-use-with-cognitive-services.svg
+- uid: learn.wwl.monitor-ai-services.badge
+  type: badge
+  title: Monitor Azure AI services
+  summary: Azure AI services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Azure AI Services in order to track utilization, determine trends, and detect and troubleshoot issues.
+  iconUrl: /learn/achievements/monitor-cognitive-services.svg
+- uid: learn.wwl.secure-ai-services.badge
+  type: badge
+  title: Secure Azure AI services
+  summary: Securing Azure AI services can help prevent data loss and privacy violations for user data that may be a part of the solution.
+  iconUrl: /training/achievements/secure-cognitive-services.svg
+- uid: implement-information-protection.trophy
+  type: trophy
+  title: 'SC-400: Implement Information Protection in Microsoft 365'
+  summary: 'Organizations require information protection solutions to protect their data against theft and accidental loss. Learn how to protect your sensitive information. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.'
+  iconUrl: /training/achievements/implement-information-protection.svg
+- uid: learn.azure.intro-to-migrating-aspnet-apps-azure.badge
+  type: badge
+  title: Introduction to migrating ASP.NET apps to Azure
+  summary: Evaluate the process of migrating an ASP.NET application from on-premises to Azure, along with a supporting Azure SQL database. Identify the benefits and challenges of the migration process.
+  iconUrl: /training/achievements/intro-to-migrating-aspnet-apps-azure.svg

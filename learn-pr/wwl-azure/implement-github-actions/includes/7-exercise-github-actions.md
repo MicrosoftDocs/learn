@@ -22,4 +22,4 @@ When you're finished the exercise in GitHub, return here for:
 
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/skills/hello-github-actions)
+> [Start the exercise on GitHub](https://github.com/skills-dev/hello-github-actions)

@@ -4,6 +4,7 @@ metadata:
   title: "Introduction to Azure Functions for IoT"
   description: "Learn about Azure Functions for IoT. University of Oxford"
   ms.date: 07/25/2024
+  ms.update-cycle: 180-days
   author: orin-thomas
   ms.author: orthomas
   ms.topic: module-standard-task-based

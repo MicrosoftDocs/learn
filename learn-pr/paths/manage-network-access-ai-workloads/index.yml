@@ -31,7 +31,6 @@ products:
 - ai-services
 - azure-machine-learning
 modules:
-- learn.wwl.secure-ai-services
 - learn.restrict-azure-machine-learning-network-traffic
 trophy:
   uid: learn.wwl.manage-network-access-ai-workloads.trophy

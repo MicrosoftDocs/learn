@@ -4,7 +4,7 @@ title: Exercise - Manage cache settings with PowerShell
 metadata:
   title: Exercise - Manage cache settings with PowerShell
   description: Exercise - Manage cache settings with PowerShell
-  ms.date: 12/28/2023
+  ms.date: 07/17/2025
   author: roygara
   ms.author: rogarana
   ms.topic: unit
@@ -15,4 +15,4 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-manage-cache-settings-with-powershell.md)]
-
+
