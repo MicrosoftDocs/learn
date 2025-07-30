@@ -17,8 +17,8 @@ abstract: |
     - Understand the Cloud Adoption Framework and how it can be used to accelerate and secure an organizations move to the cloud.
     - Understand the Well-Architected Framework and how it can be used to design solutions in the cloud that adhere to sound design principles including security.
 prerequisites: |
-  - Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments.
-  - Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals.
+  - Conceptual knowledge of security policies, requirements, Zero Trust architecture, and management of hybrid environments.
+  - Working experience with Zero Trust strategies, applying security policies, and developing security requirements based on business goals.
 iconUrl: /learn/achievements/design-solutions-align-cloud-adoption-well-architected-framework.svg
 levels:
 - advanced

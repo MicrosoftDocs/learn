@@ -13,7 +13,7 @@ metadata:
     - wwl-ai-copilot
 title: Describe Microsoft Security Copilot
 summary: |
-  Get acquainted with Microsoft Security Copilot. You are introduced to some basic terminology, how Microsoft Security Copilot processes prompts, the elements of an effective prompt, and how to enable the solution.
+  Get acquainted with Microsoft Security Copilot. You're introduced to some basic terminology, how Microsoft Security Copilot processes prompts, the elements of an effective prompt, and how to enable the solution.
 abstract: |
   By the end of this module, you'll be able to:
     - Describe what Microsoft Security Copilot is.
