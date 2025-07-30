@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-microsoft-fabric-environment
 metadata:
-  title: Manage a Microsoft Fabric environment
+  title: Manage a Microsoft Fabric Environment
   description: Microsoft Fabric is a Software-as-a-Service platform for data analytics. Learn how to manage your environment through Continuous Integration/Continuous Deployment (CI/CD), monitoring, and security.
   ms.date: 04/28/2025
   author: wwlpublish
