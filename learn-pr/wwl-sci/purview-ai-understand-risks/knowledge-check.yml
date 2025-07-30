@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-understand-risks.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your knowledge."
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A security analyst is reviewing AI data exposure risks across SharePoint Online and Exchange. They want to identify sensitive files accessed by AI tools and review recommended actions. Which Microsoft Purview feature should they use?"
+    choices:
+    - content: "Communication Compliance"
+      isCorrect: false
+      explanation: "Incorrect: Communication Compliance is used to review prompt and response content for policy violations, not data exposure."
+    - content: "Data Security Posture Management (DSPM) for AI"
+      isCorrect: true
+      explanation: "Correct: DSPM for AI assesses how sensitive data is accessed or exposed in AI interactions and provides recommended actions."
+    - content: "Insider Risk Management"
+      isCorrect: false
+      explanation: "Incorrect: Insider Risk Management focuses on user behavior, not file-level exposure across data sources."
+
+  - content: "An organization wants to stop employees from pasting confidential data into consumer AI websites like ChatGPT. Which Microsoft Purview feature should they configure?"
+    choices:
+    - content: "Endpoint data loss prevention (DLP)"
+      isCorrect: true
+      explanation: "Correct: Endpoint DLP can block or audit actions like pasting or uploading content into unmanaged browser-based AI tools."
+    - content: "Microsoft Defender Antivirus"
+      isCorrect: false
+      explanation: "Incorrect: Defender Antivirus doesn't govern data usage in browsers."
+    - content: "Microsoft Entra Conditional Access"
+      isCorrect: false
+      explanation: "Incorrect: Conditional Access can limit access to apps, but it doesn't block content transfer in browsers."
+
+  - content: "A risk analyst notices a user submitting a high volume of prompts to Copilot and repeatedly accessing sensitive documents. Which Microsoft Purview feature helps detect this type of behavior?"
+    choices:
+    - content: "Adaptive Protection"
+      isCorrect: false
+      explanation: "Incorrect: Adaptive Protection responds to risk levels but doesn't detect the behavior directly."
+    - content: "Insider Risk Management"
+      isCorrect: true
+      explanation: "Correct: Insider Risk Management can detect patterns like excessive prompting or frequent access to high-value content."
+    - content: "Compliance Manager"
+      isCorrect: false
+      explanation: "Incorrect: Compliance Manager is used for assessments, not behavioral detection."
+
+  - content: "Your organization is preparing for an audit and wants to assess how well it meets regulatory requirements for AI tool usage. Which solution helps map controls and track progress?"
+    choices:
+    - content: "Microsoft Purview Audit"
+      isCorrect: false
+      explanation: "Incorrect: Purview Audit tracks activity, but doesn't provide control assessments or templates."
+    - content: "Microsoft Sentinel"
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Sentinel is for threat detection and SIEM use cases, not compliance control mapping."
+    - content: "Compliance Manager"
+      isCorrect: true
+      explanation: "Correct: Compliance Manager provides assessments, templates, and tracking tools for regulatory compliance."
+
+  - content: "A compliance officer needs to retain and search AI-generated content submitted in Microsoft 365 Copilot. Where is this data stored for search and eDiscovery?"
+    choices:
+    - content: "In a hidden folder in the user's Exchange Online mailbox"
+      isCorrect: true
+      explanation: "Correct: AI interactions in Copilot are stored in Exchange mailboxes and treated as communications data."
+    - content: "In SharePoint document libraries"
+      isCorrect: false
+      explanation: "Incorrect: Copilot prompts and responses aren't stored in SharePoint."
+    - content: "In a dedicated Microsoft Purview AI log database"
+      isCorrect: false
+      explanation: "Incorrect: There's no separate AI log database for retention and eDiscovery."

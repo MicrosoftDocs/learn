@@ -20,11 +20,11 @@ AI tools generally fall into three categories:
 - **Enterprise AI apps**: Organizationally connected AI apps like ChatGPT Enterprise or Azure AI services that might integrate through Microsoft Entra data connectors, or Azure AI Foundry
 - **Other AI apps**: Browser-based generative AI tools like ChatGPT (consumer) and Gemini, which operate outside the Microsoft 365 environment
 
-   :::image type="content" source="../media/ai-app-risk-category.png" alt-text="Table showing three AI app categories—Copilot experiences, Enterprise AI apps, and Other AI apps—alongside examples and associated risks for each category." lightbox="../media/ai-app-risk-category.png":::
-
 Understanding the type of AI tool helps determine what protections are available and how to configure them.
 
 ### Data exposure in AI interactions
+
+:::image type="content" source="../media/ai-interaction-risk-examples.png" alt-text="Diagram showing how sensitive data can be exposed during AI interactions through prompts, overshared content, or AI-generated responses." lightbox="../media/ai-interaction-risk-examples.png":::
 
 AI interactions can lead to unintentional data exposure through:
 
