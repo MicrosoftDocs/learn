@@ -22,6 +22,6 @@ Microsoft regularly publishes **built-in templates** for AI scenarios in Complia
 - **AI and Large Language Model usage**
 - **ISO/IEC standards**, such as ISO/IEC 42001 for AI management systems (where applicable)
 
-Templates can be customized to reflect your organizational context and compliance priorities. They can also be used to track the implementation of Microsoft Purview features—such as sensitivity labels, data loss prevention policies, and retention configurations—as evidence of control effectiveness.
+Templates can be customized to reflect your organizational context and compliance priorities. They can also be used to track the implementation of Microsoft Purview features, such as sensitivity labels, data loss prevention policies, and retention configurations, which serve as evidence of control effectiveness.
 
 By using these assessments, compliance and risk teams can maintain visibility into AI-related risks and demonstrate due diligence during audits or regulatory reviews.
