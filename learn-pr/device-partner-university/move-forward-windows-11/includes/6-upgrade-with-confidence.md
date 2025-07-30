@@ -18,14 +18,15 @@ They can save time with secure, automated setups, leveraging existing tools for 
 #### Disclaimers
 
 1. [How Microsoft reduced Windows 11 update size by 40%](https://techcommunity.microsoft.com/blog/windows-itpro-blog/how-microsoft-reduced-windows-11-update-size-by-40/2839794)
-1. Microsoft Entra ID and Microsoft Intune sold separately.
-## Seamless Upgrade Resources
+1. Microsoft Entra ID and Microsoft Intune sold separately. 
+
+## Seamless upgrade resources
 
 With Windows 10 nearing EOS, organizations should upgrade to Windows 11 Pro now rather than later to ensure a smooth transition.
 
 Windows 11 Pro provides advanced tools to minimize disruptions, boost productivity, and streamline the upgrade process.
 
-## Essential Resources
+## Essential resources
 
 - **[Help Me Choose](https://www.microsoft.com/en-us/windows/business/help-me-choose)**  
   Helps organizations select the ideal Windows 11 Pro devices tailored to their specific needs, making the upgrade process smoother.
