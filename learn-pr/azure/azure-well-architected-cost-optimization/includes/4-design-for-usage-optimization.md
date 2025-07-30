@@ -30,26 +30,25 @@ Some resource SKUs come with built-in features for performance, security, or rel
 - They also check their MySQL SKU and confirm that it's rightsized for the current workload.
 - These changes help them reduce costs without affecting performance or reliability.
 
-## Use commitment-based discounts where it makes sense
+## Optimize your high availability design
 
-**Plan ahead to save more. If you know that you'll be using certain resources for a while, commit to them.**
+**Prioritize deployment of active-active or active-only over active-passive models, as part of your recovery plan, if you already paid for the resources.**
 
-Reserved instances and savings plans can lower costs significantly. Use commitment-based resources when you're building new features, setting up extra environments, or improving performance and reliability.
+If your design defaults to using active-passive models, you might have idle resources that could otherwise be used. Converting to active-active might enable you to meet your load leveling and scale bursting requirements without overspending. If you can meet your recovery targets with an active-only model, the costs of those resources can be removed completely.
 
 *Contoso's challenge*
 
-- The MySQL database and App Service plan have been running steadily for over a year.
+- The COTS application uses Azure Database for MySQL Flexible Server configured for same-zone high availability, which provides a standby server in the same availability zone as the primary server. They also have enabled automatic backups.
 
-- The team has been using pay-as-you-go pricing the whole time.
-- They didn't realize they could save money by committing to longer-term usage.
+- The workload's recovery point objective (RPO) is relatively long at 12 hours, and the recovery time objective (RTO) is three hours during the school day.
+- Based on previous recovery tests, the team knows that they can meet their RPO and RTO targets through automatic failover to the standby server. They have also tested recovering the database from a backup and they can meet the targets in this scenario.
 
 *Applying the approach and outcomes*
 
-- The team reviews usage patterns and confirms that the services are stable and long-term.
+- The workload team reevaluates the benefit of the high availability design versus the cost of the service being twice as much as a single instance.
 
-- They purchase reserved capacity for the MySQL database and a savings plan for App Service.
-- These commitments reduce their monthly costs and make budgeting easier.
-- They also set a reminder to review usage again before the commitment period ends.
+- The team tests building a new instance and recovering a database from backup and they're satisfied that they will still be in compliance with their recovery targets, so they decide to eliminate the standby instance.
+- The team updates the disaster recovery plan to reflect the new recovery strategy and realize the cost savings through the new configuration.
 
 ## Scale smart with demand
 
