@@ -28,4 +28,4 @@ The NPU features the latest Oryon cores and up to 45 TOPS of AI performance, enh
 
 ## Disclaimer
 
-1. All versions of the Intel vPro® platform require an eligible Intel processor, a supported operating system, Intel LAN and/or WLAN silicon, firmware enhancements, and other hardware and software necessary to deliver the manageability use cases, security features, system performance and stability that define the platform. See [intel.com/performance-vpro](https://www.intel.com/performance-vpro) for details.
+All versions of the Intel vPro® platform require an eligible Intel processor, a supported operating system, Intel LAN and/or WLAN silicon, firmware enhancements, and other hardware and software necessary to deliver the manageability use cases, security features, system performance and stability that define the platform. See [intel.com/performance-vpro](https://www.intel.com/performance-vpro) for details.

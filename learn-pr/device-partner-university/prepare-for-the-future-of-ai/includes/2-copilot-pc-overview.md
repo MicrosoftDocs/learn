@@ -16,7 +16,7 @@ For consumer users (signed in with a Microsoft account), the key continues to op
 
 For more information, see [aka.ms/keysupport](https://aka.ms/keysupport).
 
-:::image type="content" border="true" source="../media/copilot-key.jpg" alt-text="Photograph of a closeup of the Copilot key":::
+:::image type="content" border="true" source="../media/copilot-key.jpg" alt-text="Photograph of a closeup of the Copilot key.":::
 
 ## Copilot+ PC performance
 

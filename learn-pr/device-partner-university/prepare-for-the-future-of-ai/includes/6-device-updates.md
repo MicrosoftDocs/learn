@@ -24,6 +24,6 @@ Lenovo IdeaPad Pro 5i is designed for productivity-focused users. It features a 
 
 Lenovo IdeaCentre Mini x is a compact desktop with a sleek 1-liter design. It's powered by a Snapdragon® X Plus processor with a 45 TOPS NPU, and handles data-intensive projects and complex creative designs with ease. In addition, it offers ultra-fast Wi-Fi 7 and multiple USB 4.0 ports.
 
-## Disclaimers
+## Disclaimer
 
-1. Based on research conducted by Lenovo in January 2025 of consumer laptops sold by major PC manufacturers shipping more than 1 million units annually.
+Based on research conducted by Lenovo in January 2025 of consumer laptops sold by major PC manufacturers shipping more than 1 million units annually.

@@ -16,7 +16,7 @@ New [privacy controls](https://support.microsoft.com/windows/privacy-and-control
 
 On Copilot+ PCs, Live Captions² offers real-time translation for video and audio from over 40 languages into English—removing boundaries for understanding and collaboration across languages. Live Captions can provide captions even when disconnected from the internet, and you have control over how the captions look.
 
-:::image type="content" border="true" source="../media/live-captions.png" alt-text="Screenshot of Live Captions on a Copilot+ PC. A presentation in Japanese is being automatically translated and captioned into English for the viewer":::
+:::image type="content" border="true" source="../media/live-captions.png" alt-text="Screenshot of Live Captions on a Copilot+ PC. A presentation in Japanese is being automatically translated and captioned into English for the viewer.":::
 
 ## Windows Studio Effects
 
