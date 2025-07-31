@@ -1,4 +1,4 @@
-While all applications of artificial intelligence require considerations for responsible, system that rely on facial or other biometric data can be particularly problematic.
+While all applications of artificial intelligence require considerations for responsible, systems that rely on facial or other biometric data can be particularly problematic.
 
 When building a solution that uses facial data, considerations include (but aren't limited to):
 
