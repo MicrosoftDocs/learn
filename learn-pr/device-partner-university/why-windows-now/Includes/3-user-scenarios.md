@@ -10,7 +10,7 @@
 
 ## Adding value
 
-Business users want solution stacks, and Windows 11 presents a great opportunity to maximize their efficiency. In fact, 90% of decision makers expect to purchase value-added services alongside Copilot+ PCs. This can include solutions like:
+Business users want solution stacks, and Windows 11 presents a great opportunity to maximize their efficiency. In fact, 90% of decision makers expect to purchase value-added services alongside Copilot+ PCs. This can include solutions like:¹
 
 - Network security solutions
 - AI strategy consultation and assessment
