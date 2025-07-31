@@ -26,7 +26,7 @@ Microsoft 365 Copilot (preview) is now available as a **DLP policy location**, w
 
 The diagram illustrates how DLP evaluates Microsoft 365 Copilot prompts and enforces policy actions.
 
-:::image type="content" source="../media/copilot-data-loss-prevention-flow.svg" alt-text="Diagram showing the flow of a Microsoft 365 Copilot prompt through DLP evaluation: the user submits a prompt, sensitivity labels are applied, DLP evaluates the content, and a policy action allows, blocks, or audits the activity." border ="false"":::
+:::image type="content" source="../media/copilot-data-loss-prevention-flow.svg" alt-text="Diagram showing the flow of a Microsoft 365 Copilot prompt through DLP evaluation: the user submits a prompt, sensitivity labels are applied, DLP evaluates the content, and a policy action allows, blocks, or audits the activity." border ="false":::
 
 Browser-based interactions can be governed using **endpoint DLP** and **Microsoft Edge for Business**, which help detect when users paste or upload protected content into unmanaged AI services.
 
