@@ -2,7 +2,7 @@ Not all AI activity is safe or appropriate. Prompts might expose sensitive data,
 
 Insider Risk Management and Communication Compliance help identify potentially risky AI activity, while Adaptive Protection applies dynamic controls based on user risk levels.
 
-:::image type="content" source="../media/purview-risk-detection-response.png" alt-text="Illustration showing how Microsoft Purview detects risky behavior using Insider Risk Management, Communication Compliance, and AI activity indicators, and responds with Adaptive Protection, risk-based policy enforcement, and Conditional Access." lightbox="../media/purview-risk-detection-response.png":::
+:::image type="content" source="../media/detect.svg" alt-text="Illustration of DSPM for AI shield showing environment coverage, sensitivity labels, DLP enforcement, and user risk mitigation." border = "false":::
 
 ## Detect risky prompts with Insider Risk Management
 
@@ -25,6 +25,8 @@ You can combine these detections with **priority user groups**, **notice templat
 - Prompts that include personal data or sensitive business details
 
 AI-generated content can be reviewed just like any other form of communication, such as email or Teams messages. When a policy violation is detected, reviewers can take actions like tagging, notifying the user, escalating to a manager, or preserving the message for further investigation.
+
+:::image type="content" source="../media/respond.svg" alt-text="Illustration of DSPM for AI shield showing environment coverage, sensitivity labels, DLP enforcement, and user risk mitigation." border = "false":::
 
 ## Apply controls with Adaptive Protection
 
