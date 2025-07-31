@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.dpu.why-windows-now
+title: Why Windows 11 Pro, why now
+metadata:
+  title: Why Windows 11 Pro, Why Now
+  description: In this module, you'll understand the reasons to upgrade to Windows 11 Pro and the different upgrade scenarios that help drive upgrades.
+  ms.date: 07/28/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Explore the benefits of Windows 11 Pro and understand the scenarios where upgrading is essential to enhanced business productivity.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Identify the value proposition of Windows 11 Pro
+  - Summarize how AI implementation in Windows 11 helps accelerate workflows
+  - Determine various user scenarios where upgrading to Windows 11 Pro is the best decision for business users
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.why-windows-now.introduction
+  - learn.dpu.why-windows-now.windows-11-value
+  - learn.dpu.why-windows-now.user-scenarios
+  - learn.dpu.why-windows-now.key-scenarios
+  - learn.dpu.why-windows-now.informed-insights
+  - learn.dpu.why-windows-now.summary
+badge:
+  uid: learn.dpu.why-windows-now.badge
