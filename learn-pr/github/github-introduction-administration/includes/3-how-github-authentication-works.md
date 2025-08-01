@@ -26,9 +26,13 @@ You can even use SSH keys with a repository owned by an organization that uses S
 
 Deploy keys are another type of SSH key in GitHub that grants a user access to a single repository. GitHub attaches the public part of the key directly to the repository instead of a personal user account, and the private part of the key remains on the user's server. Deploy keys are read-only by default, but you can give them write access when adding them to a repository.
 
+To configure fork settings:
 
+1. Go to the repository’s **Settings**.
+1. In the left sidebar, under Security, click **Deploy keys**.
+1. Locate the **Add deploy key** option to create a new key.
 
-Randy
+:::image type="content" source="../media/deployment-keys.png" alt-text="Screenshot showing the Add deploy key on the Deploy keys option." border="false":::
 
 ## GitHub's added security options
 
