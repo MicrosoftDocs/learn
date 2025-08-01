@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-experiences.support-creativity
+title: Support creativity
+metadata:
+  title: Support Creativity
+  description: This content is part of the "A new generation of Windows experiences" module.
+  ms.date: 07/18/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-support-creativity.md)]

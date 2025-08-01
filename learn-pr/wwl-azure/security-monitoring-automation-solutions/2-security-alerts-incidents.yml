@@ -6,7 +6,7 @@ metadata:
   description: "Manage and respond to security alerts in Microsoft Defender for Cloud"
   ms.date: 02/03/2025
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A

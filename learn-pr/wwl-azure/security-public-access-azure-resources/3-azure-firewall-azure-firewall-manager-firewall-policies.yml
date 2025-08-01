@@ -6,10 +6,10 @@ metadata:
   description: "Plan, implement, and manage an Azure Firewall, Azure Firewall Manager and firewall policies"
   ms.date: 06/25/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-azure-firewall-azure-firewall-manager-firewall-policies.md)]
+  [!include[](includes/3-azure-firewall-azure-firewall-manager-firewall-policies.md)]

@@ -6,10 +6,10 @@ metadata:
   description: "Best practices for Azure Key Vault"
   ms.date: 10/24/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-best-practices-for-azure-key-vault.md)]
+  [!include[](includes/3-best-practices-for-azure-key-vault.md)]

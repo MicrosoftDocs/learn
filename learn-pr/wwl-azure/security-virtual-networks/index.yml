@@ -5,7 +5,7 @@ metadata:
   description: "This module is designed to provide administrators with the knowledge and skills needed to plan and implement robust security measures for Azure virtual networks, ensuring the confidentiality, integrity, and availability of network resources."
   ms.date: 03/25/2025
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: module-intro-to-product
   ms.collection: N/A
   ms.custom:
