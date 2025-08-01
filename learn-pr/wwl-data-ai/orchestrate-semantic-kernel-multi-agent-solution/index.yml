@@ -6,7 +6,7 @@ metadata:
   author: buzahid
   ms.author: buzahid
   ms.date: 02/24/2025
-  ms.service: azure-ai-openai
+  ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
 title: Orchestrate a multi-agent solution using Semantic Kernel
 summary: Learn how to use the Semantic Kernel SDK to develop your own AI agents that can collaborate for a multi-agent solution.
@@ -27,10 +27,9 @@ roles:
   - solution-architect
   - student
 products: 
-  - azure-openai
-  - azure
+  - ai-services
 subjects: 
-  - cloud-computing
+  - artificial-intelligence
 units:
 - learn.wwl.orchestrate-sk-multi-agent-solution.introduction
 - learn.wwl.orchestrate-sk-multi-agent-solution.understand-agent-framework

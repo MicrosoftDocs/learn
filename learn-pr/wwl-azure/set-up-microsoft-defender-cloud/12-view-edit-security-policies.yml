@@ -6,10 +6,10 @@ metadata:
   description: "View and edit security policies"
   ms.date: 04/24/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/12-view-edit-security-policies.md)]
+  [!include[](includes/12-view-edit-security-policies.md)]
