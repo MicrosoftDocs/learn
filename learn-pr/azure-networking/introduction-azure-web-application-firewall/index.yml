@@ -6,7 +6,7 @@ metadata:
   manager: kumud
   ms.date: 05/01/2025
   author: vhorne
-  ms.author: robmcm
+  ms.author: victorh
   ms.topic: module-intro-to-product
   ms.service: azure-web-application-firewall
 title: "Introduction to Azure Web Application Firewall"
