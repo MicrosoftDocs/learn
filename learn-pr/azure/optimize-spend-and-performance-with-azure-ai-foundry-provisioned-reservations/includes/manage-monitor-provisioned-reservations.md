@@ -82,7 +82,7 @@ If you discover that your organization's reservations are underused, you can eit
 - **Refund a reservation**: You can have a reservation refund as well. From the Azure portal, select the reservation that you want to return, and then select **Refund**.
 
 > [!NOTE]
-> The total canceled commitment can't exceed (US dollar) $50,000 in a 12-month rolling window. Azure won't process any refund that exceeds the $50,000 limit in a 12-month window for either a billing profile or EA enrollment.
+> The total canceled commitment can't exceed (US dollar) \\$50,000 in a 12-month rolling window. Azure won't process any refund that exceeds the \\$50,000 limit in a 12-month window for either a billing profile or EA enrollment.
 
 ## Make optimizations with exchanges or scope changes
 
@@ -92,14 +92,14 @@ If you find that your organization's reservations are being underused, you have 
 
 If your reservation is consistently underutilized or if you need to move your Azure AI Foundry workloads to a new deployment, consider exchanging them to align to your business.
 
-- •	For Azure AI Foundry Provisioned Throughput reservations you can change the region, term, deployment type, and payment option when you make an exchange.
+- For Azure AI Foundry Provisioned Throughput reservations you can change the region, term, deployment type, and payment option when you make an exchange.
 - For example, you can exchange a quantity of 50 global-provisioned reservations with a one-year term in US West for the following:
   - **New Deployment**: 50 data zone-provisioned reservations with a one-year term in US West
   - **New Region**: 50 global-provisioned reservations with a one-year term in Sweden Central
   - **New Deployment and Regional**: 50 data zone-provisioned reservations with a one-year term in Sweden Central
   - **New Term**: 50 global-provisioned reservations with a three-year term in US West
 - When you exchange a reservation, The prorated reservation amount is refunded, and you're charged fully for the new purchase. The prorated reservation amount is the daily prorated residual value of the reservation being returned.
-- The new reservation's lifetime commitment should equal to or greater than the returned reservation's remaining commitment. For example, for a three-year reservation that's USD $100 per month which is exchanged after the 18th payment, the new reservation's lifetime commitment should be USD $1,800 or more (paid monthly or upfront).
+- The new reservation's lifetime commitment should equal to or greater than the returned reservation's remaining commitment. For example, for a three-year reservation that's USD 100 per month which is exchanged after the 18th payment, the new reservation's lifetime commitment should be USD 1,800 or more (paid monthly or upfront).
 - There are no fees or penalty for exchanges.
 
 ### Change the reservation scope
