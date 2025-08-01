@@ -9,6 +9,7 @@ metadata:
   author: yenchiho
   ms.author: yenchiho
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 2
 content: |
 quiz:

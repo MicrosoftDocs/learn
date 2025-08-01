@@ -2,6 +2,9 @@ Microsoft Intune has capabilities that are powered by Microsoft Security Copilot
 
 Access to your Intune data is supported through Microsoft Security Copilot, referred to as the standalone experience, or embedded within the Intune admin center, referred to as Copilot in Intune. This unit focuses on the embedded experience.
 
+> [!NOTE]
+>The list of Copilot capabilities embedded in Microsoft Intune is continually growing. This unit provides just a sampling of those capabilities. For more information, see documentation on Microsoft Intune.
+
 ### Before you begin
 
 To enable Copilot to access your Intune data, for either the embedded or standalone experience, Microsoft Security Copilot must be configured, the Microsoft Intune plugin must be enabled, and you need to have appropriate role permissions. You need a role permission that grants access to Copilot and you also need a separate Intune service-specific role like the Intune Endpoint Security Manager role. There isn't a built-in Intune role that includes access to Copilot.

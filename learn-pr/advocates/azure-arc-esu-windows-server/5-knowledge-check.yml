@@ -4,11 +4,12 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Answer the questions to determine what you learned in the module.
-  ms.date: 01/03/2024
+  ms.date: 05/20/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
   ms.custom: team=cloud_advocates
+  module_assessment: true
 durationInMinutes: 5
 content: Choose the best response for each question. 
 quiz:

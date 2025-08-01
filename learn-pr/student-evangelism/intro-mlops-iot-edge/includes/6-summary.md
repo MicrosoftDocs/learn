@@ -1,7 +1,7 @@
-In this module, we considered the scenario of deploying a predictive maintenance algorithm into pumps located remotely (Oil and Gas sector). The enterprise was already capturing data from sensors located in the field – but wanted to deploy predictive maintenance algorithms on edge devices. To overcome data drift, the enterprise wanted to retrain the algorithms automatically.
+This module explores deploying a predictive maintenance algorithm to pumps located remotely in the oil and gas sector. The enterprise captures data from field sensors but wants to deploy predictive maintenance algorithms on edge devices. To address data drift, the enterprise aims to retrain the algorithms automatically.
 
-MLOps enables you to manage the process of model development and deployment end to end. Machine learning models can be built, monitored, and validated with minimal intervention. The models can be deployed on edge devices (pumps) and can run offline if needed. Frequent and automatic retraining of the models ensures that the most up-to-date version of the model is running on the devices.
+MLOps lets you manage model development and deployment end to end. You can build, monitor, and validate machine learning models with minimal intervention. These models can be deployed on edge devices like pumps and run offline if needed. Frequent, automatic retraining ensures the most up-to-date model runs on the devices.
 
-In the absence of the MLOps strategy, the models deployed may return results that don't reflect the current state of the data. These results may be misleading or even incorrect.
+Without an MLOps strategy, deployed models might return results that don't reflect the current state of the data. These results can be misleading or incorrect.
 
-By deploying MLOps, you can realize the value of your models and retain that value over time by keeping the model up to date by retraining. The company can achieve substantial savings on maintenance and production costs and increase workplace safety and their environmental impact with these objectives.
+Deploying MLOps helps you realize and retain the value of your models by keeping them up to date through retraining. The company can save significantly on maintenance and production costs, improve workplace safety, and reduce its environmental impact.

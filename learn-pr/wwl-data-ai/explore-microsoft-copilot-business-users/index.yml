@@ -1,35 +1,37 @@
 ### YamlMime:Module
 uid: learn.explore-microsoft-copilot-business-users
 metadata:
-  title: Work smarter with AI using Microsoft Copilot
+  title: Work Smarter with AI using Microsoft Copilot
   description: "Learn how to be more productive with Microsoft Copilot."
-  ms.date: 11/11/2024
-  author: GraemeMalcolm
+  ms.date: 07/15/2025
+  author: wwlpublish
   ms.author: gmalc
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
-  ai-usage: ai-assisted
+  ms.topic: module-standard-task-based
+  ms.collection: wwl-ai-copilot
   ms.service: microsoft-copilot
-  ms.collection:
-    - wwl-ai-copilot
+  ai-usage: ai-assisted
 title: Work smarter with AI using Microsoft Copilot
-summary: "Microsoft Copilot is an AI-powered assistant that you can use for personal projects and work."
+summary: Microsoft Copilot is an AI-powered assistant that you can use for personal projects and work.
 abstract: |
   By the end of this module, you'll be able to:
-    - Describe Microsoft Copilot and Microsoft 365 Copilot
-    - Identify tasks with which Microsoft Copilot can assist
-    - Describe how Microsoft Copilot works.
-    - Write effective prompts for Microsoft Copilot
-prerequisites: |
-  - Familiarity with Microsoft productivity applications like Word, Excel, PowerPoint, and Outlook.
-iconUrl: /learn/achievements/data-ai/explore-microsoft-copilot-business-users.svg
+
+  -   Describe Microsoft Copilot and Microsoft 365 Copilot
+
+  -   Identify tasks with which Microsoft Copilot can assist
+
+  -   Describe how Microsoft Copilot works.
+
+  -   Write effective prompts for Microsoft Copilot
+prerequisites: '-   Familiarity with Microsoft productivity applications like Word, Excel, PowerPoint, and Outlook.'
+iconUrl: /training/achievements/data-ai/explore-microsoft-copilot-business-users.svg
 levels:
-  - beginner
+- beginner
 roles:
-  - business-user
+- business-user
 products:
-  - ms-copilot
+- ms-copilot
 subjects:
-  - artificial-intelligence
+- artificial-intelligence
 units:
 - learn.explore-microsoft-copilot-business-users.introduction
 - learn.explore-microsoft-copilot-business-users.what-is-copilot

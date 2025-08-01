@@ -4,10 +4,11 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Check your knowledge.
-  ms.date: 12/20/2023
+  ms.date: 05/27/2025
   author: codemillmatt  
   ms.author: masoucou
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 2
 content: |
 quiz:

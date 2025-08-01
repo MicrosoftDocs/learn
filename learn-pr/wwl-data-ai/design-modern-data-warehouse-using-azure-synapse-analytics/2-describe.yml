@@ -4,7 +4,7 @@ title: Describe a modern data warehouse
 metadata:
   title: Describe a modern data warehouse
   description: "Describe a modern data warehouse"
-  ms.date: 07/30/2024
+  ms.date: 04/25/2025
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
@@ -17,4 +17,4 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-describe.md)]
-
+

@@ -1,6 +1,6 @@
 You follow the Tailspin Space Game web team as they discuss how to best deliver on new marketing requirements driven by management. The team needs to integrate some serverless technology, specifically Azure Functions, into their DevOps process.
 
-Let's check in with the team.
+You can check in with the team.
 
 ## The new requirements
 
@@ -34,11 +34,11 @@ The meeting breaks up. The next morning, Andy excitedly pops into Mara's office 
 **Mara:** This sounds like exactly what we need. I can help extend the existing CI/CD pipeline to support building and deploying it like we do for the main site project.
 
 > [!NOTE]
-> In this module, we won't focus on how to connect your app to Azure Functions. If you're interested, you can [review the source code](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-azure-functions?azure-portal=true). The code uses the [Azure Functions runtime for C#](/azure/azure-functions/functions-dotnet-class-library?azure-portal=true) to read leaderboard data from Azure Functions.
+> This module doesn't focus on how to connect your app to Azure Functions. If you're interested, [review the source code](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-azure-functions?azure-portal=true). The code uses the [Azure Functions runtime for C#](/azure/azure-functions/functions-dotnet-class-library?azure-portal=true) to read leaderboard data from Azure Functions.
 
 ## What is Azure Functions?
 
-**Azure Functions** is a specific offering within the broader spectrum of Azure serverless computing technologies. It provides an easy way for developers to build straightforward functions that exist in a stateless, serverless environment. Functions can be triggered using various methods, such as HTTP requests, changes to data in storage, receipt of a message from a queue, and more. You can learn more about the trigger bindings in [Azure Functions triggers and bindings concepts](/azure/azure-functions/functions-triggers-bindings?azure-portal=true).
+**Azure Functions** is a specific offering within the broader spectrum of Azure serverless computing technologies. It provides an easy way for developers to build straightforward functions that exist in a stateless, serverless environment. Functions can be triggered using various methods, such as HTTP requests, changes to data in storage, and receipt of a message from a queue. You can learn more about the trigger bindings in [Azure Functions triggers and bindings concepts](/azure/azure-functions/functions-triggers-bindings?azure-portal=true).
 
 The Tailspin team selected Azure Functions for this scenario because it met all their needs:
 
@@ -51,4 +51,4 @@ The Tailspin team selected Azure Functions for this scenario because it met all 
 - We need to have massive scale without making a massive commitment.
   - *Serverless technologies have virtually unlimited scale that can automatically ramp up and down faster than virtual machines or app services.*
 
-Azure Functions and other serverless technologies aren't always the right fit for every solution. Later on, we'll discuss where you can find resources to help you select the right technology for the job.
+Azure Functions and other serverless technologies aren't always the right fit for every solution. Later on, learn about where you can find resources to help you select the right technology for the job.

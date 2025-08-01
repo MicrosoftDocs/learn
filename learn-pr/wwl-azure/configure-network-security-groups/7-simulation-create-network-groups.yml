@@ -1,15 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-network-security-groups.interactive-lab-simulation-network-groups
-title: Interactive lab simulation
+title: Exercise - Implement virtual networking
 metadata:
-  title: Interactive lab simulation
-  description: "Interactive lab simulation"
-  ms.date: 02/12/2025
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Implement virtual networking
+  description: "Exercise - Implement virtual networking"
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 15
+durationInMinutes: 5
 content: |
   [!include[](includes/7-simulation-create-network-groups.md)]

@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Design and implement Azure load balancer using the Azure portal
   description: "Design and implement Azure load balancer using the Azure portal"
-  ms.date: 04/07/2025
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

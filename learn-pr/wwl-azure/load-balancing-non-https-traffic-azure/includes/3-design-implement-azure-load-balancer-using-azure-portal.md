@@ -1,5 +1,12 @@
 
+
 **Azure Load Balancer** operates at layer 4 of the Open Systems Interconnection (OSI) model. It's the single point of contact for clients. Azure Load Balancer distributes inbound flows that arrive at the load balancer's front end to backend pool instances. These flows are according to configured load-balancing rules and health probes. The backend pool instances can be Azure Virtual Machines or instances in a virtual machine scale set.
+
+This video reviews how to select a load balancer type.  
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=096fa8d5-dde4-41b4-b025-99a1ced3f98f]
+
+
 
 ## Choosing a load balancer type
 
@@ -12,13 +19,6 @@ An **internal load balancer** is used where private IPs are needed at the fronte
 This diagram shows how public and internal load balancers can work together.
 
 :::image type="content" source="../media/load-balancer-3cfca04c.png" alt-text="Diagram that shows a public and internal load balancer.":::
-
-## How to select a load balancer type (video)
-
-This video reviews how to select a load balancer type.  
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=096fa8d5-dde4-41b4-b025-99a1ced3f98f]
-
 
 ## Azure load balancer and availability zones
 

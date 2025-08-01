@@ -34,7 +34,7 @@ Along with path-based routing and multiple site hosting, there are a few additio
 
 ## Load balancing in Application Gateway
 
-Application Gateway will automatically load balance requests sent to the servers in each back-end pool using a round-robin mechanism. However, you can configure session stickiness if you need to ensure that all requests for a client in the same session are routed to the same server in a back-end pool.
+Application Gateway automatically load balances requests sent to the servers in each back-end pool using a round-robin mechanism. However, you can configure session stickiness if you need to ensure that all requests for a client in the same session are routed to the same server in a back-end pool.
 
 Load-balancing works with the OSI Layer 7 routing that Application Gateway routing implements, which means that it load balances requests based on the routing parameters (host names and paths) the Application Gateway rules use. In comparison, other load balancers, such as Azure Load Balancer, function at the OSI Layer 4 level, and distribute traffic based on the IP address of the target of a request.
 
@@ -43,7 +43,7 @@ Operating at OSI Layer 7 lets load balancing take advantage of the other feature
 - Support for the HTTP, HTTPS, HTTP/2 and WebSocket protocols.
 - A web application firewall to protect against web application vulnerabilities.
 - End-to-end request encryption.
-- Autoscaling, to dynamically adjust capacity as your web traffic load changes.
+- Autoscaling to dynamically adjust capacity as your web traffic load changes.
 
 ## Routing for the motor-vehicle department
 

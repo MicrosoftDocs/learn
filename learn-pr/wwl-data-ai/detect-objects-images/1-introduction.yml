@@ -6,14 +6,14 @@ metadata:
   description: Introduction
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/5/2024
+  ms.date: 05/05/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 azureSandbox: false
 sandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

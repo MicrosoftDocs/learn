@@ -5,11 +5,11 @@ metadata:
   unitType: learning-content
   title: When to use Azure Policy
   description: "Learn ways that you can use Azure Policy to manage resources."
-  ms.date: 07/19/2024
+  ms.date: 04/28/2025
   author: ricmmartins
   ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/4-when-to-use-azure-policy.md)]
-
+

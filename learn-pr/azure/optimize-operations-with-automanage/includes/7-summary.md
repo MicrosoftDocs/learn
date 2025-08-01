@@ -6,7 +6,7 @@ In this module, you discovered the benefits Azure Automanage can bring to your W
 
 You can learn more by reviewing the following articles:
 
-- [What is Azure Automanage?](/azure/automanage/overview-about)
-- [Azure Automanage for Machines Best Practices](/azure/automanage/automanage-linux)
-- [What is Azure Arc-enabled servers?](/azure/azure-arc/servers/overview?azure-portal=true)
+- [Azure Automanage machine best practices](/azure/automanage/overview-about)
+- [Azure Automanage for Machines Best Practices - Linux](/azure/automanage/automanage-linux)
+- [What is Azure Arc-enabled servers?](/azure/automanage/automanage-linux)
 - [What is Azure Policy?](/azure/governance/policy/overview)

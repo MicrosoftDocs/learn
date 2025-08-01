@@ -1,5 +1,6 @@
 
 
+
 Azure provides both public and private DNS services.  
 
 :::image type="content" source="../media/create-private-dns-zone-48970f32.png" alt-text="Screenshot of the portal DNS selection page.":::

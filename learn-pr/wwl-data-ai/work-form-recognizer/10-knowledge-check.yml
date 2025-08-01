@@ -6,10 +6,11 @@ metadata:
   description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 09/05/2024
+  ms.date: 04/28/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -49,4 +50,4 @@ quiz:
     - content: "Nothing else is required."
       isCorrect: false
       explanation: "Incorrect: Labeled training requires JSON files to be provided when training a model, or those JSON files need to be generated before training your model."
-
+

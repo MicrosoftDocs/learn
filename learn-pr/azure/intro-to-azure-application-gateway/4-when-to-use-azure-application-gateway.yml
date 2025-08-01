@@ -4,7 +4,7 @@ title: When to use Azure Application Gateway
 metadata:
   title: When to use Azure Application Gateway
   description: Learn when you should choose to use Azure Application Gateway as a solution to meet your organization's needs.
-  ms.date: 01/31/2024
+  ms.date: 05/15/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-when-to-use-azure-application-gateway.md)]
-
+

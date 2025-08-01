@@ -10,9 +10,7 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-labId: 152399
-labModal: true
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-translate-speech.md)]
-
+

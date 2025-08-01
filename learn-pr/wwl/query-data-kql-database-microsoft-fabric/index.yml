@@ -5,7 +5,7 @@ metadata:
   description: "Microsoft Fabric provides a scalable and flexible store for real-time data."
   ms.date: 12/06/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jamesh
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
@@ -39,4 +39,4 @@ units:
 - learn.wwl.query-data-kql-database-microsoft-fabric.knowledge-check
 - learn.wwl.query-data-kql-database-microsoft-fabric.summary
 badge:
-  uid: learn.wwl.query-data-kql-database-microsoft-fabric.badge
+  uid: learn.wwl.query-data-kql-database-microsoft-fabric.badge

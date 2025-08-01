@@ -4,9 +4,9 @@ title: Understand prebuilt capabilities of the Azure AI Language service
 metadata:
   title: Understand prebuilt capabilities of the Azure AI Language service
   description: Understand prebuilt capabilities of the Azure AI Language service
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/20/2024
+  ms.date: 04/30/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,4 +15,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2a-understand-prebuilt-capabilities.md)]
-
+

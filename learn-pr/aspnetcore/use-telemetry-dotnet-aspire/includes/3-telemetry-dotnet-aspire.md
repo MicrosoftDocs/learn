@@ -10,7 +10,7 @@ A principal aim in the design and implementation of .NET Aspire is to ensure tha
 
 .NET Aspire integrations also have built-in support for telemetry.
 
-.NET Aspire provides the .NET Aspire dashboard when you debug locally. This web interface includes rich tools that display logs, metrics in graphical formats, and traces in timelines. 
+.NET Aspire provides the .NET Aspire dashboard when you debug locally. This web interface includes rich tools that display logs, metrics in graphical formats, and traces in timelines.
 
 :::image type="content" source="../media/aspire-dashboard-traces.png" lightbox="../media/aspire-dashboard-traces.png" alt-text="Screenshot showing the Traces page in the .NET Aspire dashboard.":::
 

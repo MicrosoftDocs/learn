@@ -5,7 +5,7 @@ metadata:
   title: Choose a Microsoft-hosted or self-hosted build agent
   description: Learn about some of the factors to consider when you choose a build agent.
   ms.custom: devdivchpfy22
-  ms.date: 04/02/2024
+  ms.date: 05/08/2025
   author: steved0x
   ms.author: sdanie
   ms.topic: unit
@@ -45,4 +45,4 @@ quiz:
     - content: "Must run on Linux. Use a Microsoft-hosted agent to build Windows applications."
       isCorrect: false
       explanation: "A self-hosted agent can run on Linux, macOS, or Windows."
-
+

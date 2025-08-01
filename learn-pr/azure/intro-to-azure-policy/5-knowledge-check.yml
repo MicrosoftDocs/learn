@@ -5,10 +5,11 @@ metadata:
   unitType: knowledge_check
   title: Module assessment
   description: "Check your knowledge about Azure Policy."
-  ms.date: 07/19/2024
+  ms.date: 04/28/2025
   author: ricmmartins
   ms.author: ricardomac
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:
@@ -23,7 +24,7 @@ quiz:
       explanation: "Correct. This statement best describes Azure Policy."
     - content: "It's a tool to enforce security controls."
       isCorrect: false
-      explanation: "Incorrect. Azure Policy can help with policies to cover security controls, but isn't limited to that."
+      explanation: "Incorrect. Azure Policy can help with policies to cover security controls but isn't limited to that."
   - content: "Is the following statement accurate? When you're using Azure Policy, you're restricted to Azure resources only."
     choices:
     - content: "This statement is wrong. You can use Azure Policy outside Azure."
@@ -45,5 +46,5 @@ quiz:
       explanation: "Incorrect. Azure Policy doesn't provide recommendations for your Azure resources. You can use Azure Advisor to get recommendations."
     - content: "Adding required configuration at scale."
       isCorrect: true
-      explanation: "Correct. As example, you can create a policy to enable Azure Backup for all virtual machines within an Azure subscription."
-
+      explanation: "Correct. As an example, you can create a policy to enable Azure Backup for all virtual machines within an Azure subscription."
+

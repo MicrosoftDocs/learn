@@ -4,10 +4,10 @@ title: Understand the serverless compute tier
 metadata:
   title: Understand the serverless compute tier
   description: "Learn how the serverless compute tier works in Azure SQL Database."
-  ms.date: 10/02/2024
+  ms.date: 4/24/2025
   author: jupadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-understand-serverless-compute-tier.md)]
+  [!include[](includes/4-understand-serverless-compute-tier.md)]

@@ -6,11 +6,11 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 08/21/2024
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-summary.md)]
-
+

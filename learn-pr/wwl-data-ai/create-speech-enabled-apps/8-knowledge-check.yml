@@ -4,12 +4,13 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/25/2024
+  ms.date: 05/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -48,4 +49,4 @@ quiz:
     - content: "Specify a filename in the AudioConfig object."
       isCorrect: false
       explanation: "Incorrect. To set a voice, set the SpeechSynthesisVoiceName property of the SpeechConfig to a voice name, such as \"en-GB-George\"."
-
+

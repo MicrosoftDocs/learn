@@ -42,6 +42,4 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 ## Learn more with optional practical exercises
 
-- Back up and restore [your Azure SQL database (sandbox)](/training/modules/backup-restore-azure-sql/).
-
 - Protect your [virtual machines by using Azure Backup](/training/modules/protect-virtual-machines-with-azure-backup/). _Azure subscription required_.

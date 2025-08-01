@@ -9,6 +9,7 @@ metadata:
   ms.author: bradj
   ms.topic: unit
   ms.custom:
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

@@ -1,6 +1,10 @@
 
 [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview) is a DNS-based traffic load balancer. This service allows you to distribute traffic to your public facing applications across the global Azure regions. Traffic Manager also provides your public endpoints with high availability and quick responsiveness. The most important point to understand is that Traffic Manager works at the DNS level which is at the Application layer (Layer-7).
 
+This video reviews Traffic Manager features and how the service works. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3e483c2b-e42e-4705-8851-3e3ed219adf6]
+
 ## Key features of Traffic Manager
 
 Traffic Manager offers the several key features.
@@ -17,14 +21,11 @@ Traffic Manager offers the several key features.
 
 Azure Traffic Manager enables you to control how network traffic is distributed to application deployments (endpoints) running in your different datacenters. Azure Traffic Manager [uses DNS to direct the client requests](/azure/traffic-manager/traffic-manager-how-it-works#how-clients-connect-using-traffic-manager) to the appropriate service endpoint based on a traffic-routing method. For any profile, Traffic Manager applies the traffic-routing method associated to it to each DNS query it receives. The traffic-routing method determines which endpoint is returned in the DNS response.
 
-This video reviews Traffic Manager features and how the service works. 
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3e483c2b-e42e-4705-8851-3e3ed219adf6]
-
-
-## Traffic routing methods
-
 Azure Traffic Manager supports different traffic-routing methods to determine how to route network traffic to the various service endpoints. You select the method that best fits your requirements. 
+
+This video reviews Traffic Manager routing methods. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=de489673-af9f-4474-842b-f6b13807065c]
 
 #### Priority routing method
 
@@ -51,11 +52,6 @@ Use the [**Geographic** routing method](/azure/traffic-manager/traffic-manager-r
 
 :::image type="content" source="../media/routing-method-geographic-c04c1141.png" alt-text="Diagram that shows the 'Geographic' routing method.":::
 
-## Traffic Manager routing methods (video)
-
-This video reviews Traffic Manager routing methods. 
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=de489673-af9f-4474-842b-f6b13807065c]
 
 > [!TIP]
 > Learn more about Traffic Manager check out the [Enhance your service availability and data locality by using Azure Traffic Manager](/training/modules/distribute-load-with-traffic-manager/) module.

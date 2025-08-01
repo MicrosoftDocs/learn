@@ -28,3 +28,4 @@ The following recommendation applies only to AKS and the Azure Policy Add-on:
  -  Use system node pool with CriticalAddonsOnly taint to schedule Gatekeeper pods.
  -  Secure outbound traffic from your AKS clusters.
  -  If the cluster has aad-pod-identity enabled, Node Managed Identity (NMI) pods modify the nodes' iptables to intercept calls to the Azure Instance Metadata endpoint.
+

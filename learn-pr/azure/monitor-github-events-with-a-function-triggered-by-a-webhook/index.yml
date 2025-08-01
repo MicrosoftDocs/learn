@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook
 metadata:
-  title: Monitor GitHub events by using a webhook with Azure Functions
+  title: Monitor GitHub Events by Using a Webhook with Azure Functions
   description: Discover the benefits of webhooks when you trigger an Azure function with a GitHub webhook and then parse the payload for insights.
-  ms.date: 10/27/2022
+  ms.date: 04/24/2025
   author: ggailey777
   ms.author: glenga
   ms.topic: module-standard-task-based
   ms.service: azure-functions
   manager: susanpotter
 title: Monitor GitHub events by using a webhook with Azure Functions
-summary: Webhooks offer a lightweight mechanism for your app to be notified by another service when something of interest happens. In this module. you'll learn how to trigger an Azure function with a GitHub webhook and parse the payload for insights.
+summary: Webhooks offer a lightweight mechanism for your app to be notified by another service when something of interest happens. In this module, you'll learn how to trigger an Azure function with a GitHub webhook and parse the payload for insights.
 abstract: | 
   In this module, you will:
-  - Trigger your function with a webhook
-  - Analyze the message from the webhook
-  - Secure webhook payloads with a secret
+  - Trigger your function with a webhook.
+  - Analyze the message from the webhook.
+  - Secure webhook payloads with a secret.
 prerequisites: | 
   - Beginner-level knowledge of Azure Functions
   - A GitHub account
@@ -42,4 +42,4 @@ units:
 - learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.summary
 badge:
   uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.badge
-
+

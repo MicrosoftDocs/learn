@@ -9,6 +9,7 @@ metadata:
   ms.author: mlombardi
   ms.topic: unit
   ms.custom:
+  module_assessment: true
 durationInMinutes: 2
 quiz:
   title: Check your knowledge

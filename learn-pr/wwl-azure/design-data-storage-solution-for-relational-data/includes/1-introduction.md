@@ -1,4 +1,4 @@
-Many organizations have an aging or under-engineered data platform strategy. There's a significant trend of moving existing systems to the cloud, building new applications quickly with the cloud, and offloading some on-premises costs. Organizations are seeking to design a plan for how to move their data workloads to the cloud. Administrators want to understand how to set up their organizations for success. 
+Many organizations have an aging or under-engineered data platform strategy. There's a significant trend of moving existing systems to the cloud, building new AI-ready applications quickly with the cloud, and offloading some on-premises costs. Organizations are seeking to design a plan for how to move their data workloads to the cloud. Administrators want to understand how to set up their organizations for success. 
 
 ## Meet Tailwind Traders
 
@@ -30,7 +30,7 @@ In this module, you learn how to:
 
 ### Skills measured
 
-The content in this module helps you prepare for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions. The module concepts are covered in:
+The content in this module helps you prepare for [Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions](/credentials/certifications/exams/az-305/). The module concepts are covered in:
 
 Design data storage solutions
 

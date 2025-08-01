@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: theresai
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-databricks
   ai-usage: ai-assisted
   ms.collection:  wwl-ai-copilot
 title: Implement LLMOps in Azure Databricks

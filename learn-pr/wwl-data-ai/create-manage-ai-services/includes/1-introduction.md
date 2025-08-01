@@ -7,7 +7,7 @@ AI services includes a wide range of individual services across language, speech
 - **Azure AI Speech** - Speech to text, text to speech, translation, and speaker recognition.
 - **Azure AI Document Intelligence** - An optical character recognition (OCR) solution that can extract semantic meaning from forms, such as invoices, receipts, and others.
 - **Azure AI Search** - A cloud-scale search solution that uses AI services to extract insights from data and documents.
-- **Azure OpenAI** - An Azure AI service that provides access to the capabilities of OpenAI GPT-4.
+- **Azure AI Foundry** - An Azure AI service that provides access to generative AI models and agents.
 
 While the details of each AI service can vary, the approach to provisioning and consuming them is generally the same. 
 

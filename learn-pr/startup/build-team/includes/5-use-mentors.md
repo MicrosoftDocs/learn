@@ -2,12 +2,12 @@ The term *mentor* can refer to many different types of relationships. In startup
 
 The main reason why startup founders seek out mentors is to short-circuit the learning curve. By tapping into guidance from more experienced founders (especially those who have been through the startup loop multiple times), new founders can more quickly find the right path to growth, overcome obstacles, and avoid making critical mistakes. A good mentor can also help startup founders broaden their network and connect with others who can help them as their business grows.
 
-Just as inclusive hiring can be a source of competitive advantage, broadening the capabilities of your team via experienced mentors can be a hugely beneficial step.
+Just as inclusive hiring can be a source of competitive advantage, broadening the capabilities of your team via experienced mentors can be a beneficial step.
 
 In this unit, we'll focus on two types of mentoring:
 
-- Informal connections that you make directly with experienced founders and investors
-- Structured mentoring relationships, such as those found in most incubator and accelerator programs
+- Informal connections that you make directly with experienced founders and investors.
+- Structured mentoring relationships, such as those found in most incubator and accelerator programs.
 
 We'll also briefly discuss the mentor network that's part of the [Microsoft for Startups Founders Hub](https://www.microsoft.com/startups?azure-portal=true) and explain how you can tap into this valuable resource.
 
@@ -49,7 +49,7 @@ There's a growing number of mentors whose motivations hinge on increasing divers
 
 If the mentor is an early-stage investor, their motivation might be a combination of paying it forward and a desire to find and cultivate high-quality deal flow. In some cases, the mentoring relationship will work only if the investor views the startup as a genuine investment prospect.
 
-If the mentor is employed by an organization that runs a startup program such as an accelerator, their role will generally include providing mentoring to those startups that have been accepted into the program. In many cases, this role is called an *entrepreneur-in-residence* (EIR).
+A mentor employed by an organization that runs a startup program, such as an accelerator, typically provides mentoring to startups accepted into the program. In many cases, this role is called an *entrepreneur-in-residence* (EIR).
 
 Finally, there are opportunities to engage experienced founders and others in a paid capacity. This engagement is more commonly viewed as consulting rather than mentoring, and it meets a different set of needs.
 
@@ -58,7 +58,7 @@ Finally, there are opportunities to engage experienced founders and others in a 
 There are many ways to tap into high-quality mentoring. The best way to find good mentors depends on the maturity of your local startup ecosystem. Here are some practical tips that are likely to be helpful no matter where you're located:
 
 - Engage with your local startup community via networking events, pitch competitions, hackathons, and mentor-matching events.
-- Take part in a structured startup program such as an accelerator, as long as it's delivered by mentors who have broad startup experience.
+- Seek out and participate in structured startup programs, such as accelerators, only if mentors with extensive startup experience are leading them.
 - Connect with other founders, ask them who they've found to be good mentors, and ask for introductions.
 - Search online for people who have built successful companies that have some similarities to yours (sector focus, customer persona, or business model). Reach out to them directly.
 - Utilize the mentor network that's part of the Microsoft for Startups Founders Hub. (You'll learn more about that later in this unit.)

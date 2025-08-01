@@ -1,10 +1,10 @@
 ### YamlMime:Module
 uid: learn.azdo.host-build-agent
 metadata:
-  title: Host your own build agent in Azure Pipelines
+  title: Host Your Own Build Agent in Azure Pipelines
   description: Work with guidance from the Space Game web team to set up your build agent running on-premises or on an Azure virtual machine running in the cloud.
   ms.custom: devdivchpfy22
-  ms.date: 04/02/2024
+  ms.date: 05/08/2025
   author: steved0x
   ms.author: sdanie
   ms.topic: module
@@ -23,7 +23,7 @@ prerequisites: |
   - An Azure DevOps organization
   - An Azure subscription
   - Visual Studio Code
-  - .NET 6.0 SDK
+  - .NET 8.0 SDK
   - Git
   - A GitHub account
 iconUrl: /training/achievements/azure-devops/host-your-own-build-server-in-your-build-pipeline.svg
@@ -48,4 +48,4 @@ units:
 - learn.azdo.host-build-agent.7-summary
 badge:
   uid: learn.azdo.host-build-agent.badge
-
+

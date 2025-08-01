@@ -5,7 +5,7 @@ metadata:
   description: "Create Azure resources by using Azure CLI"
   ms.date: 02/17/2025
   author: wwlpublish
-  ms.author: dbradish
+  ms.author: lumac
   ms.topic: module
   ms.service: azure
   ai-usage: ai-assisted
@@ -54,4 +54,4 @@ units:
 - learn.wwl.create-azure-resources-by-using-azure-cli.knowledge-check
 - learn.wwl.create-azure-resources-by-using-azure-cli.summary
 badge:
-  uid: learn.wwl.create-azure-resources-by-using-azure-cli.badge
+  uid: learn.wwl.create-azure-resources-by-using-azure-cli.badge

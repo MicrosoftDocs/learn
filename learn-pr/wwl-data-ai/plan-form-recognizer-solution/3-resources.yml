@@ -6,7 +6,7 @@ metadata:
   description: Plan Azure AI Document Intelligence resources
   author: ivorb
   ms.author: berryivor
-  ms.date: 09/04/2024
+  ms.date: 5/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -17,4 +17,4 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/3-resources.md)]
-
+

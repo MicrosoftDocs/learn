@@ -4,11 +4,11 @@ title: The benefits of using Azure API Management to compose your API
 metadata:
   title: The benefits of using Azure API Management to compose your API
   description: In this unit, you'll learn about common issues with the microservices architecture and how you can address them by adding functions to existing APIs in API Management.
-  ms.date: 11/03/2023
+  ms.date: 04/28/2025
   author: ggailey777
   ms.author: glenga
   ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-import-additional-functions-existing-api-gateway.md)]
-
+

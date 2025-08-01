@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-github-copilot.exercise-examine-github-copilot-settings-interface
+title: Exercise - Examine GitHub Copilot settings and user interface features
+metadata:
+  title: Exercise - Examine GitHub Copilot settings and user interface features
+  description: "Exercise - Examine GitHub Copilot settings and user interface features"
+  ms.date: 06/02/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  - ai-learning-hub
+durationInMinutes: 25
+content: |
+  [!include[](includes/12-exercise-examine-github-copilot-settings-interface.md)]

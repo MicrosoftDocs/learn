@@ -3,12 +3,12 @@ uid: learn.azure.stage-deploy-app-service-deployment-slots.3-exercise-create-dep
 title: Exercise - Create deployment slots
 metadata:
   title: Exercise - Create deployment slots
-  description: In this exercise, you'll set up a web app and then deploy code to two deployment slots.
-  ms.date: 04/11/2023
+  description: In this exercise, you set up a web app and then deploy code to two deployment slots.
+  ms.date: 04/22/2025
   author: cephalin
   ms.author: cephalin
   ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise-create-deployment-slots.md)]
-
+

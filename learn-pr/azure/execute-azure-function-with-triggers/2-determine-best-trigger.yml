@@ -4,11 +4,11 @@ title: Determine the best trigger for your Azure function
 metadata:
   title: Determine the best trigger for your Azure function
   description: Determine the best trigger for your Azure function
-  ms.date: 09/25/2023
+  ms.date: 05/19/2025
   author: ggailey777
   ms.author: glenga
   ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-determine-best-trigger.md)]
-
+

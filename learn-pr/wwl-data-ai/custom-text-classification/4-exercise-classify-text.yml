@@ -4,16 +4,14 @@ title: Exercise - Classify text
 metadata:
   title: Exercise - Classify text
   description: Exercise - Classify text
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/31/2023
+  ms.date: 05/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 35
-labId: 152403
-labModal: true
 content: |
   [!include[](includes/4-exercise-classify-text.md)]
-
+

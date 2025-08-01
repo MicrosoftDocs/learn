@@ -5,7 +5,7 @@ metadata:
   description: Analyze images
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 02/05/2024
+  ms.date: 04/30/2025
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
   ms.collection:
@@ -13,15 +13,14 @@ metadata:
 title: Analyze images
 summary: With the Azure AI Vision service, you can use pre-trained models to analyze images and extract insights and information from them.
 abstract: |
-  After completing this module, you'll be able to:
-  - Provision an Azure AI Vision resource
-  - Analyze an image
-  - Generate a smart-cropped thumbnail
+  After completing this module, you’ll be able to:
+  - Provision an Azure AI Vision resource.
+  - Use the Azure AI Vision SDK to connect to your resource.
+  - Write code to analyze an image.
 prerequisites: |
   Before starting this module, you should already have:
   - Familiarity with Azure and the Azure portal.
   - Experience programming with C# or Python.
-  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path first.
 iconUrl: /training/achievements/computer-vision-analyze-images.svg
 levels:
 - intermediate
@@ -37,10 +36,9 @@ units:
 - learn.wwl.analyze-images.introduction
 - learn.wwl.analyze-images.provision-computer-vision-resource
 - learn.wwl.analyze-images.analyze-image
-- learn.wwl.analyze-images.generate-smart-cropped-thumbnail
 - learn.wwl.analyze-images.exercise-computer-vision
 - learn.wwl.analyze-images.knowledge-check
 - learn.wwl.analyze-images.summary
 badge:
   uid: learn.wwl.analyze-images.badge
-
+

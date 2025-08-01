@@ -1,4 +1,5 @@
 
+
 ## Azure Network Watcher
 
 [Azure Network Watcher](/azure/network-watcher/network-watcher-overview) is a regional service that enables you to monitor and diagnose network conditions. Network diagnostic and visualization tools help you understand, diagnose, and gain insights to your network in Azure. Network Watcher is designed to monitor and repair the network health of IaaS products which includes virtual machines, virtual networks, Application Gateways, and Load Balancers.

@@ -3,11 +3,11 @@ uid: learn.wwl.retrieval-augmented-generation-azure-databricks
 metadata:
   title: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
   description: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/07/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-databricks
   ai-usage: ai-assisted
   ms.collection: wwl-ai-copilot
 title: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
@@ -38,4 +38,4 @@ units:
 - learn.wwl.retrieval-augmented-generation-azure-databricks.summary
 badge:
   uid: learn.wwl.retrieval-augmented-generation-azure-databricks.badge
-
+

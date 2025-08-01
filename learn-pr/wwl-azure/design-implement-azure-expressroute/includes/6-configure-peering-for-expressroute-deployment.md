@@ -1,5 +1,6 @@
 
 
+
 ## Choose a peering scheme
 
 You can use two different peering schemes with ExpressRoute: **Private Peering** and **Microsoft Peering**. 
@@ -34,11 +35,11 @@ ExpressRoute locations, also known as peering locations or meet-me locations, ar
 
 - **Azure region connectivity**: Ensure that the peering location provides connectivity to the Azure regions you need to access. Different peering locations can offer connectivity to different sets of Azure regions, especially if you're using the Local or Standard SKU.
 
-- **Network Service Provider availability**: Check which network service providers (NSPs) are available at the peering location. You'll need to work with an NSP to establish the physical connection to Azure ExpressRoute. Choose a provider that offers competitive pricing and reliable service.
+- **Network Service Provider availability**: Check which network service providers (NSPs) are available at the peering location. You need to work with an NSP to establish the physical connection to Azure ExpressRoute. Choose a provider that offers competitive pricing and reliable service.
 
 - **Bandwidth requirements**: Consider your bandwidth needs and ensure that the peering location can support the required capacity. Different locations may have different bandwidth options available.
 
-- **Cost Ccnsiderations**: Costs can vary based on the peering location, the NSP chosen, and the bandwidth required. To find the most cost-effective solution for your needs, compare costs across different locations and providers.
+- **Cost Considerations**: Costs can vary based on the peering location, the NSP chosen, and the bandwidth required. To find the most cost-effective solution for your needs, compare costs across different locations and providers.
 
 - **Compliance and regulatory requirements**: If your organization has specific compliance or regulatory requirements, ensure that the peering location meets these standards. Compliance requirements might include data residency or industry-specific regulations.
 

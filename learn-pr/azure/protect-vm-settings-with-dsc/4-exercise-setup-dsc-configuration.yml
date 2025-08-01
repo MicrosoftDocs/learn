@@ -8,6 +8,7 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 durationInMinutes: 30
 interactive: bash
 azureSandbox: true

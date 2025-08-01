@@ -4,7 +4,7 @@ title: Exercise - Set up a test API
 metadata:
   title: Exercise - Set up a test API
   description: In this exercise, you'll create a Web API, hosted in Azure, that you can call from a workflow in Azure Logic Apps.
-  ms.date: 05/02/2023
+  ms.date: 06/03/2025
   author: ecfan
   ms.author: estfan
   ms.topic: unit
@@ -14,4 +14,4 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-setup-a-test-api.md)]
-
+

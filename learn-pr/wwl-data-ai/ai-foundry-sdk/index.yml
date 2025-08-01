@@ -5,7 +5,7 @@ metadata:
   description: Use the Azure AI Foundry SDK to develop AI applications with Azure AI Foundry projects.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 02/05/2025
+  ms.date: 05/23/2025
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
   ms.collection:
@@ -41,4 +41,4 @@ units:
 - learn.wwl.ai-foundry-sdk.summary
 badge:
   uid: learn.wwl.ai-foundry-sdk.badge
-
+

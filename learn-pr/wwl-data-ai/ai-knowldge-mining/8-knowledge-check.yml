@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-knowledge-mining.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Knowledge check
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 05/16/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which component of an Azure AI Search solution is scheduled to extract and enrich data to populate an index?"
+    choices:
+    - content: "Indexer"
+      isCorrect: true
+      explanation: "Correct. An indexer is run to extract data and populate an index."
+    - content: "Projection"
+      isCorrect: false
+      explanation: "Incorrect.A projection is used to store extracted data in a knowledge store."
+    - content: "Query"
+      isCorrect: false
+      explanation: "Incorrect. A query is used to search an index."
+  - content: "Which service supports built-in AI skills in Azure AI Search?"
+    choices:
+    - content: "Azure Functions"
+      isCorrect: false
+      explanation: "Incorrect. Azure Functions can be used to implement custom skills, but isn't required for built-in skills."
+    - content: "Azure AI services"
+      isCorrect: true
+      explanation: "Correct. An Azure AI services resource is required to support built-in skills."
+    - content: "Azure Cosmos DB"
+      isCorrect: false
+      explanation: "Incorrect. Azure Cosmos DB could be a data source fo Azure AI Search, but it isn't required for built-in skills."
+  - content: "Which kind of projection results in a relational data schema for extracted fields?"
+    choices:
+    - content: "File"
+      isCorrect: false
+      explanation: "Incorrect. File projections are used to store extracted images as files."
+    - content: "Object"
+      isCorrect: false
+      explanation: "Incorrect. Object projections are used to store extracted documents as JSON files."
+    - content: "Table"
+      isCorrect: true
+      explanation: "Correct. Use table projections to persist extracted data in a relational schema."
+
+

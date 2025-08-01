@@ -2,12 +2,15 @@
 uid: learn.languages.csharp-write-first.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["79301B93_14","79301B93_26","79301B93_108","79301B93_120","79301B93_124","79301B93_128","79301B93_88","79301B93_96"]
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 04/25/2024
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"

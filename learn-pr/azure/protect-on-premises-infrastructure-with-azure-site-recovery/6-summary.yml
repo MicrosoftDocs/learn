@@ -3,11 +3,11 @@ uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.6-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 01/25/2025
-  author: ankitaduttaMSFT
-  ms.author: ankitadutta
+  ms.date: 05/23/2025
+  author: jsuri
+  ms.author: jsuri
   ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/6-summary.md)]

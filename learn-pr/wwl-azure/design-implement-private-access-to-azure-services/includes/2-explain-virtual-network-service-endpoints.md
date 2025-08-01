@@ -1,4 +1,5 @@
 
+
 ## Scenario
 
 Your organization migrates an existing app with database servers to Azure virtual machines. Now, to reduce your costs and administrative requirements, you're considering using some Azure platform as a service (PaaS) services. Specifically, storage services to hold large file assets, such as engineering diagrams. These engineering diagrams have proprietary information, and must remain secure from unauthorized access. These files must only be accessible from specific systems. 
@@ -42,7 +43,7 @@ This video highlights the optimization and security features of endpoints.
 
 
 > [!NOTE]
-> Microsoft recommends use of Azure Private Link and private endpoints for secure and private access to services hosted on the Azure platform. This information in covered in the next units. 
+> Microsoft recommends use of Azure Private Link and private endpoints for secure and private access to services hosted on the Azure platform. This information is covered in the next units. 
 
 > [!TIP]
 > Learn more about Service Endpoints in the [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/) module. This module includes an exercise to create a Service Endpoint and use network rules to restrict access to Azure Storage.

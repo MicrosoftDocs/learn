@@ -1,4 +1,5 @@
 
+
 ExpressRoute virtual network gateway facilitates the exchange of network routes and directs network traffic. [ExpressRoute FastPath](/azure/expressroute/about-fastpath) enhances data path performance between your on-premises network and your virtual networks. When enabled, ExpressRoute FastPath routes network traffic directly to virtual machines, bypassing the ExpressRoute virtual network gateway. 
 
 FastPath is available on all ExpressRoute circuits. ExpressRoute FastPath is useful for enterprises that need consistent and high-performance connectivity to Azure for mission-critical applications. 

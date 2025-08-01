@@ -4,7 +4,7 @@ Imagine yourself in the role of a network engineer at an organization that is in
 
 In this module, you will:
 
-- Explore virtual networks and subnets
+- Explore virtual networks and subnets.
 - Configure public IP services.
 - Explore domain name resolution.
 - Explore virtual network peering. 

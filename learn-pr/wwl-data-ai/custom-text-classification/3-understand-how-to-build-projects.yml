@@ -4,9 +4,9 @@ title: Understand how to build text classification projects
 metadata:
   title: Understand how to build text classification projects
   description: Understand how to build text classification projects
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/31/2023
+  ms.date: 05/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,4 +15,4 @@ labModal: false
 durationInMinutes: 12
 content: |
   [!include[](includes/3-understand-how-to-build-projects.md)]
-
+

@@ -2,12 +2,16 @@
 uid: learn.wwl.configure-azure-kubernetes-service-cluster.understand-azure-policy-kubernetes-clusters
 title: Understand Azure Policy for Kubernetes clusters
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand Azure Policy for Kubernetes clusters
   description: "Understand Azure Policy for Kubernetes clusters"
-  ms.date: 03/08/2024
+  ms.date: 05/15/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-understand-azure-policy-kubernetes-clusters.md)]
+  [!include[](includes/2-understand-azure-policy-kubernetes-clusters.md)]

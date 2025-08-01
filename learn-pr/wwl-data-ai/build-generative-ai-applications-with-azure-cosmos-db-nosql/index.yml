@@ -18,7 +18,7 @@ abstract: |
   - Integrate data and AI models using LangChain orchestration to create intelligent and adaptable Generative AI application.
 prerequisites: |
   Before starting this module, you should have a basic understanding of Python development, Azure Cosmos DB for NoSQL, working with AI models, and understand the concepts associated with retrieval augmented generated (RAG) patterns.
-iconUrl: /training/achievements/azure-cosmos-db-build-copilots.svg
+iconUrl: /training/achievements/build-generative-ai-applications-with-azure-cosmos-db-nosql.svg
 levels:
 - intermediate
 roles:

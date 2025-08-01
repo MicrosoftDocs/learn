@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.chain-azure-functions-data-using-input-output-bindings
 metadata:
-  title: Chain Azure Functions together by using input and output bindings
+  title: Chain Azure Functions Together by Using Input and Output Bindings
   description: In this module, we learn how to integrate your Azure Function with various data sources by using bindings.
-  ms.date: 06/06/2024
+  ms.date: 06/18/2025
   author: ggailey777
   ms.author: glenga
   ms.topic: module-standard-task-based
@@ -12,11 +12,11 @@ metadata:
 title: Chain Azure Functions together using input and output bindings
 summary: Azure Functions makes it easy for your function code to integrate with data and services. Through the power of bindings, you declare the data sources to read and write, and let Azure Functions take care of the rest.
 abstract: |
-  In this module, you will:
-  - Explore what types of data sources can be accessed through bindings
-  - Read data from Azure Cosmos DB using Azure Functions
-  - Store data in Azure Cosmos DB using Azure Functions
-  - Send messages to Azure Queue Storage using Azure Functions
+  In this module, you'll:
+  - Explore what types of data sources can be accessed through bindings.
+  - Read data from Azure Cosmos DB using Azure Functions.
+  - Store data in Azure Cosmos DB using Azure Functions.
+  - Send messages to Azure Queue Storage using Azure Functions.
 prerequisites: None
 iconUrl: /training/achievements/chain-azure-functions-data-using-bindings.svg
 levels:
@@ -43,4 +43,4 @@ units:
 - learn.chain-azure-functions-data-using-input-output-bindings.8-summary
 badge:
   uid: learn.chain-azure-functions-data-using-input-output-bindings.badge
-
+

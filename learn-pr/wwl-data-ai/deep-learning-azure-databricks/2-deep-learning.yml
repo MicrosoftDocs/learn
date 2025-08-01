@@ -4,13 +4,13 @@ title: Understand deep learning concepts
 metadata:
   title: Understand deep learning concepts
   description: Understand deep learning concepts
-  author: wwlpublish
-  ms.author: madiepev
-  ms.date: 08/26/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 4/24/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/2-deep-learning.md)]
-
+

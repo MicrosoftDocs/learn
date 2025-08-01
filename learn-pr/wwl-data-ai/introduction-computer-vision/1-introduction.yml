@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-computer-vision.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 5/20/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
+

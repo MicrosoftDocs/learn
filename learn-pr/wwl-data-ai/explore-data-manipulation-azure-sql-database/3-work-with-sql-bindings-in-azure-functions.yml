@@ -4,11 +4,12 @@ title: Manipulate data in Azure SQL Database with Azure Functions
 metadata:
   title: Manipulate data in Azure SQL Database with Azure Functions
   description: "Learn how to manipulate data in Azure SQL Database with Azure Functions."
-  ms.date: 10/1/2024
+  ms.date: 5/15/2025
   author: jupadrao
   ms.author: jupadrao
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 durationInMinutes: 7
 content: |
   [!include[](includes/3-work-with-sql-bindings-in-azure-functions.md)]
-
+

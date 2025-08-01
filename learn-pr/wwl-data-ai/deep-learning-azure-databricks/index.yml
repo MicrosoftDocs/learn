@@ -3,9 +3,9 @@ uid: learn.wwl.deep-learning-azure-databricks
 metadata:
   title: Train deep learning models in Azure Databricks
   description: Learn how to use deep learning libraries like PyTorch in Azure Databricks, and to distribute training by using TorchDistributor
-  author: wwlpublish
-  ms.author: madiepev
-  ms.date: 08/26/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 4/24/2025
   ms.service: azure-machine-learning
   ms.topic: module-standard-task-based
   ms.collection:
@@ -38,4 +38,4 @@ units:
 - learn.wwl.deep-learning-azure-databricks.summary
 badge:
   uid: learn.wwl.deep-learning-azure-databricks.badge
-
+

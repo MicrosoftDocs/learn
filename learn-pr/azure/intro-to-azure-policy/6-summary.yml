@@ -5,11 +5,11 @@ metadata:
   unitType: summary
   title: Summary
   description: "Summary of Azure Policy and other reading."
-  ms.date: 07/19/2024
+  ms.date: 04/28/2025
   author: ricmmartins
   ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
-
+

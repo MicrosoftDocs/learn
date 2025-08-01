@@ -6,35 +6,49 @@ metadata:
   description: Knowledge check
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/5/2024
+  ms.date: 05/05/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 azureSandbox: false
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
+  - content: "What Azure AI Custom Vision resources should you create in Azure to create a custom vision solution?"
+    choices:
+    - content: "A single Computer Vision resource"
+      isCorrect: false
+      explanation: "Incorrect. You can't use an Azure AI Computer Vision resource for custom vision models."
+    - content: "A Custom Vision resource for image classification, and another for object detection"
+      isCorrect: false
+      explanation: "Incorrect. Custom Vision resources aren't specific to image classification and object detection."
+    - content: "A Custom Vision resource for training, and another for prediction"
+      isCorrect: true
+      explanation: "Correct. You need separate Custom Vision resources for training and prediction."
   - content: "You want to train a model that can categorize an image as \"cat\" or \"dog\" based on its subject. What kind of Azure AI Custom Vision project should you create?"
     choices:
     - content: "Image classification (multiclass)"
       isCorrect: true
-      explanation: "That's correct. To train a model that classifies an image using a single tag, use an Image classification (multiclass) project."
+      explanation: "Correct. To train a model that classifies an image using a single tag, use an Image classification (multiclass) project."
     - content: "Image classification (multilabel)"
       isCorrect: false
-      explanation: "That's incorrect. To train a model that classifies an image using a single tag, use an Image classification (multiclass) project."
+      explanation: "Incorrect. To train a model that classifies an image using a single tag, use an Image classification (multiclass) project."
     - content: "Object detection"
       isCorrect: false
-      explanation: "That's incorrect. To train a model that classifies an image using a single tag, use an Image classification (multiclass) project."
-  - content: "Which of the following kinds of Azure resource can you use to host a trained Azure AI Custom Vision model?"
+      explanation: "Incorrect. To train a model that classifies an image using a single tag, use an Image classification (multiclass) project."
+  - content: "What information does a client application need to connect to Azure AI Custom Vision and classify an image?"
     choices:
-    - content: "Azure AI Custom Vision (Training)"
+    - content: "The endpoint and key for the Custom Vision training resource"
       isCorrect: false
-      explanation: "That's incorrect. You can publish a trained Azure AI Custom Vision model to either an Azure AI Custom Vision (Prediction) resource or an Azure AI Services multi-service resource."
-    - content: "Azure AI Vision"
+      explanation: "Incorrect. You can't generate predictions from the training resource endpoint."
+    - content: "The endpoint and key for the Custom Vision prediction resource"
       isCorrect: false
-      explanation: "That's incorrect. You can publish a trained Azure AI Custom Vision model to either an Azure AI Custom Vision (Prediction) resource or an Azure AI Services multi-service resource."
-    - content: "Azure AI Services"
+      explanation: "Incorrect. While you *do* need the endpoint and key for the prediction endpoint, you also need some other settings."
+    - content: "The endpoint and key for the Custom Vision prediction resource, the project ID for your image classification project, and the name of your deployed model"
       isCorrect: true
-      explanation: "That's correct. You can publish a trained Azure AI Custom Vision model to either an Azure AI Custom Vision (Prediction) resource or an Azure AI Services multi-service resource."
-
+      explanation: "Correct. You need all of these values to generate an image classification prediction."
+
+
+

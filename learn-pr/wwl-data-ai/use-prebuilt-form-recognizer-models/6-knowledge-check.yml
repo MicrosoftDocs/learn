@@ -6,10 +6,11 @@ metadata:
   description: Knowledge check
   author: ivorb
   ms.author: berryivor
-  ms.date: 09/04/2024
+  ms.date: 04/28/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -49,4 +50,4 @@ quiz:
     - content: "Convert the document to PDF format."
       isCorrect: true
       explanation: "Correct. Word documents are not supported by Azure AI Document Intelligence but PDF documents are supported. Azure AI Document Intelligence is designed to analyze scanned and photographed paper documents, not documents that are already in a digital format so you should consider using another technology to extract the data in Word documents."
-
+

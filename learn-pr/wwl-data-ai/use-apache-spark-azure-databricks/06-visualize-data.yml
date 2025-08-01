@@ -6,10 +6,10 @@ metadata:
   description: "Visualize data"
   ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/06-visualize-data.md)]
+  [!include[](includes/06-visualize-data.md)]

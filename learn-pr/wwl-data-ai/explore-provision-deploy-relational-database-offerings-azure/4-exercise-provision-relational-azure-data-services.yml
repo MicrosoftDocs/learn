@@ -4,13 +4,13 @@ title: 'Exercise: Explore Azure relational database services'
 metadata:
   title: 'Exercise: Explore Azure relational database services'
   description: "Exercise: Explore Azure relational database services"
-  ms.date: 10/09/2024
+  ms.date: 06/20/2025
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: calopez
   ms.topic: unit
   ms.custom:
   - N/A
   zone_pivot_groups: data-azure-database
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise-provision-relational-azure-data-services.md)]
+  [!include[](includes/4-exercise-provision-relational-azure-data-services.md)]

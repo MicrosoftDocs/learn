@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: 'Exercise: Create a Traffic Manager profile using the Azure portal'
   description: "Exercise: Create a Traffic Manager profile using the Azure portal"
-  ms.date: 04/07/2025
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - references_regions
-durationInMinutes: 7
+durationInMinutes: 5
 content: |
   [!include[](includes/6-exercise-create-traffic-manager-profile-using-azure-portal.md)]

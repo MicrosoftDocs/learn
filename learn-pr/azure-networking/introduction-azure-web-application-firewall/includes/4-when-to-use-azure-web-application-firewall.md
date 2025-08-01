@@ -1,19 +1,19 @@
 You know what Azure Web Application Firewall is and how it works. Now you need some criteria to help you evaluate whether Azure Web Application Firewall is a suitable choice for your company. To help you decide, let's consider the following scenarios:
 
-- You have web apps that contain sensitive or proprietary data
-- You have web apps that require users to sign in
-- Your web app developers lack security expertise
-- Your web app developers have other priorities
-- You have web app development budget constraints
-- You have web app development time constraints
-- Your web app must be built and deployed quickly
-- Your web app launch will be high-profile
+- You have web apps that contain sensitive or proprietary data.
+- You have web apps that require users to sign in.
+- Your web app developers lack security expertise.
+- Your web app developers have other priorities.
+- You have web app development budget constraints.
+- You have web app development time constraints.
+- Your web app must be built and deployed quickly.
+- Your web app launch will be high-profile.
 
 As part of your Azure Web Application Firewall evaluation, you know that Contoso fits several of these scenarios. Read the corresponding sections for more details.
 
 ## You have web apps that contain sensitive or proprietary data
 
-Some web attackers are motivated only by the challenge of breaking into a system. However, most malicious hackers use injection, protocol attacks, and similar exploits with payoff in mind. That payoff might be any of the following items:
+The challenge of breaking into a system is some web attackers only motivation. However, most malicious hackers use injection, protocol attacks, and similar exploits with payoff in mind. That payoff might be any of the following items:
 
 - Customer credit card numbers
 - Sensitive personal information, such as driver's license numbers or passport numbers
@@ -49,7 +49,7 @@ Coding against the full range of potential web app exploits requires significant
 - Front-end web technologies, such as HTML, CSS, and JavaScript
 - Server-side web technologies, such as SQL, PHP, and user sessions
 
-What if your company's web-development team lacks knowledge in one or more of these concepts? In that case, your web apps are vulnerable to multiple exploits. By contrast, Azure Web Application Firewall is maintained and updated by a team of Microsoft security experts.
+What if your company's web-development team lacks knowledge in one or more of these concepts? In that case, your web apps are vulnerable to multiple exploits. By contrast, a team of Microsoft security experts maintain and update Azure Web Application Firewall.
 
 ## Your web-app developers have other priorities
 
@@ -59,16 +59,15 @@ Chances are you'd prefer that your web-development team focus on fulfilling thes
 
 ## You have web-app development budget constraints
 
-Coding in-house against all the OWASP exploits is an expensive proposition:
+Coding in-house against all the OWASP exploits is an expensive proposition. Web developers with the necessary security expertise are relatively rare. These developers can command higher salaries than colleagues who lack such expertise.
 
-- Web developers with the necessary security expertise are relatively rare. These developers can command higher salaries than colleagues who lack such expertise.
-- Coding against the full range of web app exploits isn't a one-time-only proposition. As new or modified exploits become known, your team must constantly maintain and update its security code. Your security experts must become permanent members of your web-development team, and permanent line items in your budget.
+Also, coding against the full range of web app exploits isn't a one-time-only proposition. As new or modified exploits become known, your team must constantly maintain and update its security code. Your security experts must become permanent members of your web-development team, and permanent line items in your budget.
 
 Azure Web Application Firewall isn't free. However, you might find that it's a more cost-effective solution than hiring a team of full-time web security experts.
 
 ## You have web-app development time constraints
 
-Many web-development teams code in-house against all the OWASP exploits. However, most of these teams soon realize that creating and maintaining this code is laborious and time-consuming. If you're trying to meet a tight deadline to launch a new web app, the thousands of person-hours required to protect the app against all the OWASP exploits is a major hurdle,
+Many web-development teams code in-house against all the OWASP exploits. However, most of these teams soon realize that creating and maintaining this code is laborious and time-consuming. If you're trying to meet a tight deadline to launch a new web app, the thousands of person-hours required to protect the app against all the OWASP exploits is a major hurdle.
 
 You can configure an Azure Application Gateway instance or Azure Front Door profile with Azure Web Application Firewall in minutes.
 

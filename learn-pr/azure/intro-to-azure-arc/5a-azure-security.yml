@@ -4,12 +4,12 @@ metadata:
   title: Describe Azure Arc security solutions
   description: Describe Azure Arc security solutions
   ms.date: 03/21/2025
-  author: johnmarco
-  ms.author: johnmarc
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: unit
   ms.custom: e2e-hybrid
 title: Describe Azure Arc security solutions
 durationInMinutes: 4
 content: |
   [!include[](includes/5a-azure-security.md)]
-
+

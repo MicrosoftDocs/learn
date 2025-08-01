@@ -15,7 +15,7 @@ The order of the six fields in Azure is: `{second} {minute} {hour} {day} {month}
 
 For example, a CRON expression to create a trigger that executes every five minutes looks like: `0 */5 * * * *`
 
-At first, this string might look confusing. We'll come back and break down these concepts when we have a deeper look at CRON expressions.
+At first, this string might look confusing. We'll break down these concepts after we have a deeper look at CRON expressions.
 
 To build a CRON expression, you need to have a basic understanding of some of the special characters.
 
@@ -26,7 +26,7 @@ To build a CRON expression, you need to have a basic understanding of some of th
 | -      | Specifies a range | A hyphen "10-12" in the hour field means a range that includes the hours 10, 11, and 12. |
 | /      | Specifies an increment | A slash "*/10" in the minutes field means an increment of every 10 minutes. |
 
-Now we'll go back to the original CRON expression example. Let’s try to understand it better by breaking it down field by field.
+Now let's go back to the original CRON expression example and try to understand it better by breaking it down field by field.
 
 ```text
 0 */5 * * * *
@@ -38,12 +38,12 @@ The **second field** represents minutes. The value "*/5" contains two special ch
 
 The **remaining four fields** numerically represent the hour in a 24-hour day, day in the month, month in a 12-month year, and day of the 7-day week. An asterisk for these fields means to select every possible value. In this example, we select "every hour of every day of every month."
 
-When you put all the fields together, the expression is read as "the first second of every fifth minute of every hour, of every day, of every month".
+When you put all the fields together, the expression is read as "the first second of every fifth minute of every hour, of every day, of every month."
 
 ## How to create a timer trigger
 
 You can create a timer trigger in the Azure portal. In your function app, select **timer trigger** from the list of trigger templates. Enter the logic that you want to execute. Supply a **Timestamp parameter name** and the **CRON expression**.
 
-In this module, we'll focus on creating triggers in the portal, but you can also create triggers programmatically using Core Tools, Visual Studio or Visual Studio Code.
+In this module, we focus on creating triggers in the portal, but you can also create triggers programmatically using Core Tools, Visual Studio or Visual Studio Code.
 
 A timer trigger invokes the function code on a consistent schedule. To define the schedule for a timer trigger, we build a CRON expression, which is a string that represents a set of times.

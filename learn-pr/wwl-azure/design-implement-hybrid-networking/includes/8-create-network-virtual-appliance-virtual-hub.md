@@ -1,5 +1,6 @@
 
 
+
 One of the benefits of Azure Virtual WAN is the ability to support reliable connections from many different technologies. These technologies include ExpressRoute, VPN Gateway, Barracuda CloudGen WAN, Cisco Cloud OnRamp for multicloud, and VMware SD-WAN. These types of devices are known as [network virtual appliances (NVAs)](/azure/virtual-wan/about-nva-hub). NVAs enable transitive connectivity throughout an organization's Virtual WAN.
 
 NVAs are deployed directly into a Virtual WAN hub and have an externally facing public IP address. This capability lets customers connect their branch Customer Premises Equipment (CPE) to the same brand NVA in the virtual hub. 

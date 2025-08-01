@@ -10,7 +10,7 @@ Document Intelligence Layout API can extract text, selection marks, and table st
 
 ## Prebuilt models
 
-Document Intelligence prebuilt models are available for more than 15. Here, we review four models: invoice, receipt, identification, and business card.
+Azure AI Document Intelligence offers a wide variety of prebuilt models. Here, we review four models: invoice, receipt, identification, and business card.
 
 ### Prebuilt invoice model
 
@@ -34,7 +34,7 @@ The prebuilt ID document model extracts data from worldwide passports, Drivers' 
 
 ### Prebuilt business card model
 
-The business card model extracts key information from printed business cards and returns a structured JSON data representation. Extracted information includes first name, last name, company name, email address, and phone number.  Business card data extraction is a common image processing scenario within enterprise systems.
+The business card model extracts key information from printed business cards and returns a structured JSON data representation. Extracted information includes first name, last name, company name, email address, and phone number. Business card data extraction is a common image processing scenario within enterprise systems.
 
 ![Prebuilt business card example.](../media/overview-business-card.jpeg)
 

@@ -4,12 +4,10 @@ title: Understand pipelines
 metadata:
   title: Understand pipelines
   description: "Understand pipelines"
-  ms.date: 05/08/2024
-  author: wwlpublish
-  ms.author: shlindsay
+  ms.date: 05/23/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-  ms.custom:
-  - build-2023
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-understand-fabric-pipeline.md)]
+  [!include[](includes/2-understand-fabric-pipeline.md)]

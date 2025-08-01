@@ -5,7 +5,7 @@ metadata:
   description: Learn what data you can analyze by choosing prebuilt Forms Analyzer models and how to deploy these models in a Document intelligence solution.
   author: ivorb
   ms.author: berryivor
-  ms.date: 09/04/2024
+  ms.date: 04/28/2025
   ms.service: azure
   ms.topic: module-standard-task-based
   ms.collection:
@@ -39,4 +39,4 @@ units:
 - learn.wwl.use-prebuilt-form-recognizer-models.summary
 badge:
   uid: learn.wwl.use-prebuilt-form-recognizer-models.badge
-
+

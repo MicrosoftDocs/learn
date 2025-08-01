@@ -4,10 +4,10 @@ title: Explain deployment options
 metadata:
   title: Explain deployment options
   description: "Learn to explain the deployment options available."
-  ms.date: 10/02/2024
+  ms.date: 4/24/2025
   author: jupadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 9
 content: |
-  [!include[](includes/2-explain-sql-database-deployment-options.md)]
+  [!include[](includes/2-explain-sql-database-deployment-options.md)]

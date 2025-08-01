@@ -4,12 +4,13 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 05/06/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -48,4 +49,4 @@ quiz:
     - content: "207 and 503."
       isCorrect: true
       explanation: "Correct. 503 is the response means the system is under heavy load and your request can't be processed at this time. 207 means that some documents succeeded, but at least one of them failed."
-
+

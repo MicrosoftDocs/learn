@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.classify-images.exercise-custom-vision
-title: Exercise - Classify images with Azure AI Custom Vision
+title: Exercise - Classify images
 metadata:
-  title: Exercise - Classify images with Azure AI Custom Vision
-  description: Exercise - Classify images with Azure AI Custom Vision
+  title: Exercise - Classify images
+  description: Classify images with Azure AI Custom Vision
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/5/2024
+  ms.date: 05/05/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 30
+durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise-custom-vision.md)]
-
+

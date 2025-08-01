@@ -4,7 +4,7 @@ metadata:
   title: Connect your on-premises network to the Microsoft global network by using ExpressRoute
   description: Connect your on-premises systems and users to Azure and Office 365 by using ExpressRoute for private, dedicated, and guaranteed throughput connectivity.
   manager: kumud
-  ms.date: 10/18/2023
+  ms.date: 06/10/2025
   author: duongau
   ms.author: duau
   ms.topic: module
@@ -37,4 +37,4 @@ units:
 - learn.connect-on-premises-network-with-expressroute.5-summary
 badge:
   uid: learn.connect-on-premises-network-with-expressroute.badge
-
+

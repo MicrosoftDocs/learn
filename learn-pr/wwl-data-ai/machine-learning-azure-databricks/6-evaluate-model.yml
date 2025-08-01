@@ -4,13 +4,13 @@ title: Evaluate a machine learning model
 metadata:
   title: Evaluate a machine learning model
   description: Evaluate a machine learning model
-  author: wwlpublish
-  ms.author: madiepev
-  ms.date: 08/26/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 4/24/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/6-evaluate-model.md)]
-
+

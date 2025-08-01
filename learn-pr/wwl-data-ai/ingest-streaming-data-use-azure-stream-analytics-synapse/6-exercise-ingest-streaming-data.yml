@@ -6,8 +6,8 @@ metadata:
   description: "Exercise - Ingest streaming data into Azure Synapse Analytics"
   ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jamesh
   ms.topic: unit
 durationInMinutes: 45
 content: |
-  [!include[](includes/6-exercise-ingest-streaming-data.md)]
+  [!include[](includes/6-exercise-ingest-streaming-data.md)]

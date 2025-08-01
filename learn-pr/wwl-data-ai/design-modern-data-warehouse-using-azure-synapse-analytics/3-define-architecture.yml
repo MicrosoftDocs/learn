@@ -4,7 +4,7 @@ title: Define a modern data warehouse architecture
 metadata:
   title: Define a modern data warehouse architecture
   description: "Define a modern data warehouse architecture"
-  ms.date: 07/30/2024
+  ms.date: 04/25/2025
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
@@ -17,4 +17,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-define-architecture.md)]
-
+

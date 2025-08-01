@@ -1,5 +1,6 @@
 
 
+
 Public networks like the Internet communicate by using public IP addresses. Private networks like your Azure Virtual Network use private IP addresses, which aren't routable on public networks. To support a network that exists both in Azure and on-premises, you must configure IP addressing for both types of networks.
 
 Public IP addresses enable Internet resources to communicate with Azure resources and enable Azure resources to communicate outbound with Internet and public-facing Azure services. A public IP address in Azure is dedicated to a specific resource. A resource without a public IP assigned can communicate outbound through network address translation services, where Azure dynamically assigns an available IP address that isn't dedicated to the resource.
@@ -24,7 +25,7 @@ Public IP addresses are created with an IPv4 or IPv6 address, which can be eithe
 
 **A dynamic public IP address** is an assigned address that can change over the lifespan of the Azure resource. The dynamic IP address is allocated when you create or start a virtual machine (VM). The IP address is released when you stop or delete the VM. In each Azure region, public IP addresses are assigned from a unique pool of addresses. The default allocation method is dynamic.
 
-**A static public IP address** is an assigned address that doesn't change over the lifespan of the Azure resource. To ensure that the IP address for the resource remains the same, set the allocation method explicitly to static. In this case, an IP address is assigned immediately. The IP address is released only when you delete the resource or change the IP allocation method to dynamic.
+**A static public IP address** is an assigned address that is fixed over the lifespan of the Azure resource. To ensure that the IP address for the resource remains the same, set the allocation method explicitly to static. In this case, an IP address is assigned immediately. The IP address is released only when you delete the resource or change the IP allocation method to dynamic.
 
 ## Choose the appropriate SKU for a public IP address
 

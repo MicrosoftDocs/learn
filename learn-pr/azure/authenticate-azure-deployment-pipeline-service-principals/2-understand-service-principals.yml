@@ -3,12 +3,12 @@ uid: learn.azure.authenticate-azure-deployment-pipeline-service-principals.under
 title: Understand service principals
 metadata:
   unitType: learning-content
-  title: Understand service principals
+  title: Understand Service Principals
   description: Learn what service principals are, how they're different from user accounts, and how they work.
-  ms.date: 01/16/2024
+  ms.date: 04/22/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-understand-service-principals.md)]
+  [!include[](includes/2-understand-service-principals.md)]

@@ -2,11 +2,11 @@ Optimal API performance is essential to most organizations. By using a cache of 
 
 Suppose there's a need for the board gaming API to provide faster responses to requests. For example, users often request prices for various sizes of the board for games. API Management policies can accelerate responses by configuring a cache of prepared responses. When a request is received from a user, API Management checks to see if there's an appropriate response in the cache already. If there is, that response can be sent to the user without building it again from the data source.
 
-Here, you'll learn how to configure such a cache.
+Here, you learn how to configure such a cache.
 
 ## How to control the API Management cache
 
-To set up a cache, you use an outbound policy named `cache-store` to store responses. You also use an inbound policy named `cache-lookup` to check if there's a cached response for the current request. You can see these two policies in the example below:
+To set up a cache, you use an outbound policy named `cache-store` to store responses. You also use an inbound policy named `cache-lookup` to check if there's a cached response for the current request. You can see these two policies in the following example:
 
 ```xml
 <policies>
@@ -60,7 +60,7 @@ It's important to ensure that, if you serve a response from the cache, it's rele
 
 `http://<boardgames.domain>/stock/api/product?partnumber=3416&customerid=1128`
 
-This request is intended to check the stock levels for a product with part number 3416. The customer ID is used by a separate policy, and doesn't alter the response. Subsequent requests for the same part number can be served from the cache, as long as the record hasn't expired. So far, so good.
+This request is intended to check the stock levels for a product with part number 3416. The customer ID is used by a separate policy, and doesn't alter the response. Subsequent requests for the same part number can be served from the cache, as long as the record doesn't expire. So far, so good.
 
 Now suppose that a different customer requests the same product:
 
@@ -93,7 +93,7 @@ To modify this default behavior, use the `vary-by-query-parameter` element withi
 </policies>
 ```
 
-With this policy, the cache will store and separate responses for each product, because they have different part numbers. The cache won't store separate responses for each *customer*, because that query parameter isn't listed.
+With this policy, the cache stores and separates responses for each product, because they have different part numbers. The cache doesn't store separate responses for each *customer*, because that query parameter isn't listed.
 
 By default, Azure API Management doesn't examine HTTP headers to determine whether a cached response is suitable for a given request. If a header can make a significant difference to a response, use the `<vary-by-header>` tag. Work with your developer team to understand how each API uses query parameters and headers so you can decide which vary-by tags to use in your policy.
 

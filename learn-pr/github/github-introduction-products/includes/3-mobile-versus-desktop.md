@@ -8,7 +8,7 @@ GitHub Mobile gives you a way to do high-impact work on GitHub quickly and from 
 
 With GitHub Mobile you can:
 
-- Manage, triage, and clear notifications from github.com.
+- Manage, triage, and clear notifications from github.com by marking them as read, muting threads, or filtering notifications by type.
 - Read, review, and collaborate on issues and pull requests.
 - Edit files in pull requests.
 - Search for, browse, and interact with users, repositories, and organizations.
@@ -23,8 +23,10 @@ GitHub Desktop is an open-source, stand-alone software application that enables 
 
 Here are a few of the many things you can do with GitHub Desktop:
 
-- Add and clone repositories.
-- Add changes to your commit interactively.
-- Quickly add coauthors to your commit.
-- Check out branches with pull requests and view CI statuses.
-- Compare changed images.
+- Add repositories to GitHub Desktop to manage existing projects locally.
+- Clone repositories from GitHub to quickly set up projects locally and start working.
+- Add changes to your commit interactively, making it easier to manage and review changes before committing.
+- Quickly add coauthors to your commit, ensuring proper attribution in collaborative projects.
+- Check out branches with pull requests to review and collaborate on code changes.
+- View CI statuses to ensure code quality and streamline collaboration.
+- Compare changed images to visually review updates in image files.

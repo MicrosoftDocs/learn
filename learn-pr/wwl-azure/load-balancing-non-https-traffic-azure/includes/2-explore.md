@@ -1,5 +1,9 @@
 The term load balancing refers to the even distribution of incoming network workloads to a group of backend computing resources or servers. Load balancing aims to optimize resource use, maximize throughput, minimize response time, and avoid overloading any single resource. Load balancing can also improve availability by sharing a workload across redundant computing resources.
 
+This video reviews how to select a load balancing solution. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=86a4202c-057d-4a20-ba74-50dc2c730b08]
+
 ## Load Balancing options for Azure
 
 Azure provides various load balancing services that you can use to distribute your workloads across multiple computing resources, but the following are the main services:
@@ -55,13 +59,6 @@ This [flowchart](/azure/architecture/guide/technology-choices/load-balancing-ove
 
 > [!TIP]
 > You should use this flowchart and the suggested recommendation only as a starting point. A completed solution can incorporate two or more load-balancing solutions.
-
-## How to select a non-HTTP(S) load balancing solution (video)
-
-This video reviews how to select a load balancing solution. 
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=86a4202c-057d-4a20-ba74-50dc2c730b08]
-
 
 ## Selecting a load balancing solution by using the Azure portal
 

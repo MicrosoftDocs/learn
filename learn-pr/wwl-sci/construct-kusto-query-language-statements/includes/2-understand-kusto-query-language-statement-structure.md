@@ -6,19 +6,19 @@ The tabular expression statement's syntax has tabular data flow from one tabular
 
 For example, the following query has a single statement, which is a tabular expression statement. The statement starts with a table called SecurityEvent. The EventID column's value filters the data (rows) and then the results are summarized by creating a new column for the count() by Account. Next, in the Prepare phase, the results are then limited to 10 rows.
 
-:::image type="content" source="../media/kql-pipe.png" alt-text="Diagram of K Q L Statement showing data, condition and evidence.":::
+:::image type="content" source="../media/kql-pipe.png" alt-text="Diagram of K Q L Statement showing data, condition, and evidence.":::
 
 > [!IMPORTANT]
-> It is essential to understand how the results flow through the pipe "|".  Everything on the left of the pipe is processed then passed to the right of the pipe.  
+> It's essential to understand how the results flow through the pipe "|". Everything on the left of the pipe is processed then passed to the right of the pipe.  
 
 ## Access the Log Analytics demo environment
 
-Microsoft provides access to an environment to practice writing KQL statements.  The only requirement is to have an account to log into Azure. There are no charges to your Azure account to access this environment. You can execute the KQL statements in this module in the demo environment.
+Microsoft provides access to an environment to practice writing KQL statements. The only requirement is to have an account to log into Azure. There are no charges to your Azure account to access this environment. You can execute the KQL statements in this module in the demo environment.
 
-You can access the demo environment at the [Logs Demo site](https://aka.ms/lademo). If you receive the message "No results found", try changing the time range.
+You can access the demo environment at the [Logs Demo site](https://aka.ms/lademo). If you receive the message *No results found*, try increasing the time range (or timeOffset) to > 30 days.
 
 > [!IMPORTANT]
-> The log analytics demo database is a dynamic environment.  The events recorded in the tables in that environment are continuously updating with different security events. This is similar to what a person would experience in a real-world security operations setting.  As a result, finite queries in this training may show no results depending on the state of the demo database at the time the query is run.  For example, a query on the *SecurityEvent* table for "discardEventID = 4688" within the last day may show no results if that particular event last took place three days ago.  Therefore, you may need to adjust variables in the scripts listed in this training ad hoc depending on what data is in the demo database at the time you run the script in order for the query to show results.  These script adjustments are similar to what you would perform in the real world and should help you learn how the specific parts of the script function.  
+> The log analytics demo database is a dynamic environment. The events recorded in the tables in that environment are continuously updating with different security events. This is similar to what a person would experience in a real-world security operations setting. As a result, finite queries in this training may show no results depending on the state of the demo database at the time the query is run. For example, a query on the *SecurityEvent* table for "discardEventID = 4688" within the last day may show no results if that particular event last took place three days ago. Therefore, you may need to adjust variables in the scripts listed in this training depending on what data is in the demo database at the time you run the script in order for the query to show results. These script adjustments are similar to what you would perform in the real world and should help you learn how the specific parts of the script function.  
 
 :::image type="content" source="../media/log-analytics-demo-2.png" alt-text="Screenshot of the Log Analytics Demo Environment.":::
 

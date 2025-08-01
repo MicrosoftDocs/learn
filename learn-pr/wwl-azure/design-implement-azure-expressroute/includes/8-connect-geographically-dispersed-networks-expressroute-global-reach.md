@@ -1,8 +1,11 @@
 
+With [ExpressRoute Global Reach](/azure/expressroute/expressroute-global-reach), you can link ExpressRoute circuits to create a private network between your on-premises networks. 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=750c807c-1fec-4665-abf0-25608c92ead8]
 
-With [ExpressRoute Global Reach](/azure/expressroute/expressroute-global-reach), you can link ExpressRoute circuits to create a private network between your on-premises networks. For example, you might have a branch office in San Francisco and another branch office in London. Both branch offices have high-speed connectivity to Azure resources in US West and UK South. However, the branch offices can't connect and send data directly with one another. With Global Reach the San Francisco office can directly exchange data with your London office through the existing ExpressRoute circuits and Microsoft's global network.
+### Global Reach example architecture
+
+Imagine you have a branch office in San Francisco and another branch office in London. Both branch offices have high-speed connectivity to Azure resources in US West and UK South. However, the branch offices can't connect and send data directly with one another. With Global Reach the San Francisco office can directly exchange data with your London office through the existing ExpressRoute circuits and Microsoft's global network.
 
 :::image type="content" source="../media/global-reach-5558594f.png" alt-text="Diagram of the GlobalReach layout.":::
 

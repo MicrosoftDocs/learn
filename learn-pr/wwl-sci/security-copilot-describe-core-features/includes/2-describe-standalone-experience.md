@@ -15,7 +15,7 @@ There are some key landmarks on the Copilot landing page (portal) to which the u
 
 The home menu is accessed by selecting the hamburger icon located on the top left corner of the Copilot landing page.
 
-:::image type="content" source="../media/home-menu-icon-home-menu-options.png" lightbox="../media/home-menu-icon-home-menu-options-agents.png" alt-text="Screen capture showing the hamburger icon and the page it opens when selected.":::
+:::image type="content" source="../media/home-menu-icon-home-menu-options-agents.png" lightbox="../media/home-menu-icon-home-menu-options-agents.png" alt-text="Screen capture showing the hamburger icon and the page it opens when selected.":::
 
 From the home menu, the user can navigate as follows:
 
@@ -27,6 +27,10 @@ From the home menu, the user can navigate as follows:
 - The promptbook library, which includes promptbooks builtin and custom promptbooks. Information about each promptbook is provided, including the description, the required inputs, the number of prompts, the owner, and more. From the promptbook library you can run the selected promptbook by selecting the run icon. You can also select the ellipses for more options.
 
     :::image type="content" source="../media/promptbook-library-v2.png" lightbox="../media/promptbook-library-v2.png" alt-text="Screen capture listing the promptbook library.":::
+
+- Agents, which are AI-powered assistants built into Microsoft Security Copilot.  This page lists Microsoft and non-Microsoft agents that offer significant benefits for security teams and IT operations by automating routine tasks and freeing up valuable time for teams to concentrate on strategic initiatives and complex problem-solving.
+
+    :::image type="content" source="../media/agents-list-v2.png" lightbox="../media/agents-list-v2.png" alt-text="Screen capture showing the agents window, which lists available Microsoft and non-Microsoft agents.":::
 
 - Owner specific options, for users configured as owners:
 
@@ -94,7 +98,7 @@ From the home menu, the user can navigate as follows:
   - The About page provides information of the app version for Copilot.
   
     # [Preferences](#tab/preferences)
-    :::image type="content" source="../media/settings-preferences.png" lightbox="../media/settings-preferences.png" alt-text="Screen capture showing the preferences that can be configured by any user.":::
+    :::image type="content" source="../media/preferences-with-workspaces.png" lightbox="../media/preferences-with-workspaces.png" alt-text="Screen capture showing the preferences that can be configured by any user.":::
 
     # [Data and privacy](#tab/data-privacy)
     :::image type="content" source="../media/settings-data-privacy.png" lightbox="../media/settings-data-privacy.png" alt-text="Screen capture showing the preferences that can be configured by any user.":::

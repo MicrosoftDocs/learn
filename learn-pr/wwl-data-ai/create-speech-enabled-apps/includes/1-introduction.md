@@ -4,7 +4,7 @@ Azure AI Speech provides APIs that you can use to build speech-enabled applicati
 - **Speech to text**: An API that enables *speech recognition* in which your application can accept spoken input.
 - **Text to speech**: An API that enables *speech synthesis* in which your application can provide spoken output.
 - **Speech Translation**: An API that you can use to translate spoken input into multiple languages.
-- **Speaker Recognition**: An API that enables your application to recognize individual speakers based on their voice.
+- **Keyword Recognition**: An API that enables your application to recognize keywords or short phrases.
 - **Intent Recognition**: An API that uses conversational language understanding to determine the semantic meaning of spoken input.
 
 This module focuses on speech recognition and speech synthesis, which are core capabilities of any speech-enabled application.

@@ -1,4 +1,5 @@
 
+
 ## What is Azure Private Link Service?
 
 Private Link gives you private access from your Azure virtual network to PaaS services and Microsoft Partner services in Azure. But, what if your company has its own Azure services? Is it possible to offer those customers a private connection to your company's services?

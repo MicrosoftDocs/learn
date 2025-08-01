@@ -4,10 +4,10 @@ title: Understand the data movement tools available
 metadata:
   title: Understand the data movement tools available
   description: "Learn the data movement tools available in Azure SQL Database."
-  ms.date: 10/1/2024
+  ms.date: 5/15/2025
   author: jupadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-move-data-by-using-additional-tools.md)]
+  [!include[](includes/4-move-data-by-using-additional-tools.md)]

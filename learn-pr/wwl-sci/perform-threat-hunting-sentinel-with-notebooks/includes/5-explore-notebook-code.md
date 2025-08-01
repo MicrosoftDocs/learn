@@ -1,4 +1,4 @@
-The following code blocks of the "Getting Started Guide For Microsoft Sentinel ML Notebooks" notebook provide a representative example of working with Microsoft Sentinel data.
+The following code blocks provide a representative example of using notebooks to work with Microsoft Sentinel data.
 
 **Code Block**
 
@@ -6,11 +6,11 @@ In this snippet of code:
 
 - Create a new variable [test_query] that contains the KQL query.
 
-- Next, you run the query [qry_prov.exec_query()].  This utilizes the msticpy library to execute the KQL query in the Microsoft Sentinel Log Analytics related workspace.  The results are stored in the [test_df] variable.
+- Next, you run the query [qry_prov.exec_query()]. This utilizes the msticpy library to execute the KQL query in the Microsoft Sentinel Log Analytics related workspace. The results are stored in the [test_df] variable.
 
 - Next, display the first five rows with the xxx_xxxx.head() function.
 
-:::image type="content" source="../media/threat-hunt-1.png" alt-text="Screenshot of a Sentinel Notebook Sample 1 Query.":::
+:::image type="content" source="../media/threat-hunt-1.png" alt-text="Screenshot of a Microsoft Sentinel Notebook Sample 1 Query.":::
 
 **Code Block**
 
@@ -26,7 +26,7 @@ In this snippet of code:
 
 - The new function returns the Severity of the IP address.
 
-:::image type="content" source="../media/threat-hunt-3.png" alt-text="Screenshot of a Sentinel Notebook Sample 2 Query.":::
+:::image type="content" source="../media/threat-hunt-3.png" alt-text="Screenshot of a Microsoft Sentinel Notebook Sample 2 Query.":::
 
 **Code Block**
 
@@ -34,8 +34,8 @@ In this snippet of code:
 
 - Create a new variable [vis_q] that contains the KQL query.
 
-- Next, you run the query [qry_prov.exec_query()].  This utilizes the msticpy library to execute the KQL query in the Microsoft Sentinel Log Analytics related workspace.  The results are stored in the [vis_data] variable.
+- Next, you run the query [qry_prov.exec_query()]. This utilizes the msticpy library to execute the KQL query in the Microsoft Sentinel Log Analytics related workspace. The results are stored in the [vis_data] variable.
 
-- Then, [qry_prov.exec_query()] returns  a pandas DataFrame that provides visualization features.  You then plot a bar graph with the unique IP addresses and how many times they were used in the first five entries of the Dataframe.
+- Then, [qry_prov.exec_query()] returns  a pandas DataFrame that provides visualization features. You then plot a bar graph with the unique IP addresses and how many times they were used in the first five entries of the Dataframe.
 
-:::image type="content" source="../media/threat-hunt-2.png" alt-text="Screenshot of a Sentinel Notebook Sample 3 Query.":::
+:::image type="content" source="../media/threat-hunt-2.png" alt-text="Screenshot of a Microsoft Sentinel Notebook Sample 3 Query.":::

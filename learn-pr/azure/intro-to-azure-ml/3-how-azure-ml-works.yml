@@ -4,10 +4,10 @@ title: How Azure Machine Learning works
 metadata:
   title: How Azure Machine Learning works
   description: How Azure Machine Learning works
-  ms.date: 07/20/2024
+  ms.date: 04/15/2025
   author: sdgilley
   ms.author: sgilley
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-how-azure-ml-works.md)]
+  [!include[](includes/3-how-azure-ml-works.md)]

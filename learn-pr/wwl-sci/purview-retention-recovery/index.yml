@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-retention-recovery
 metadata:
-  title: Implement and manage retention and recovery in Microsoft Purview
-  description: "Implement and manage retention and recovery in Microsoft Purview."
-  ms.date: 04/14/2025
+  title: Implement and manage Microsoft 365 retention and recovery
+  description: "Implement and manage Microsoft 365 retention and recovery."
+  ms.date: 05/14/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ms.service: purview
   ai-usage: ai-assisted
   hidden: false
-title: Implement and manage retention and recovery in Microsoft Purview
-summary: Microsoft Purview helps reduce data exposure by providing tools to control how long content is kept and when it’s permanently deleted. Through retention labels, policies, adaptive scopes, and recovery capabilities, organizations can apply consistent lifecycle rules across Microsoft 365 and reduce the risk of keeping unnecessary or outdated data. This approach supports both compliance and information security goals by minimizing what data is available to unauthorized access or misuse.
+title: Implement and manage Microsoft 365 retention and recovery
+summary: Microsoft Purview provides tools to manage how long content is retained and when it's deleted across Microsoft 365 services. These retention settings apply lifecycle rules using labels, policies, and adaptive scopes. When content is deleted, recovery options are managed within the individual services, such as SharePoint and Exchange. Together, these tools support compliance and information security by reducing the risk of retaining unnecessary or outdated data.
 abstract: |
   After completing this module, you'll be able to:
   - Plan retention and disposition using retention labels.

@@ -45,10 +45,10 @@ Alternatively, you can also generate the code to load the data in the notebook a
 While the parquet file in the previous example is stored in the lakehouse, it's also possible to load data from external sources like Azure Blob Storage.
 
 ```Python
-account_name = "<account_name>"
-container_name = "<container_name>"
-relative_path = "<relative_path>"
-sas_token = "<sas_token>" 
+blob_account_name = ""
+blob_container_name = ""
+blob_relative_path = ""
+blob_sas_token = ""
 
 wasbs = f'wasbs://{blob_container_name}@{blob_account_name}.blob.core.windows.net/{blob_relative_path}?{blob_sas_token}'
 

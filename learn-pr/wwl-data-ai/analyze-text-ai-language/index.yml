@@ -3,7 +3,7 @@ uid: learn.wwl.analyze-text-ai-language
 metadata:
   title: Analyze text with Azure AI Language
   description: Analyze text with Azure AI Language
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
   ms.date: 10/10/2023
   ms.service: azure-ai-language
@@ -44,4 +44,4 @@ units:
 - learn.wwl.analyze-text-ai-language.summary
 badge:
   uid: learn.wwl.analyze-text-ai-language.badge
-
+

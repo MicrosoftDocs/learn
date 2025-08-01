@@ -5,7 +5,7 @@ metadata:
   unitType: summary
   title: Summary
   description: This unit summarizes what you've learned in this module.
-  ms.date: 09/27/2024
+  ms.date: 06/30/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -14,4 +14,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
-
+

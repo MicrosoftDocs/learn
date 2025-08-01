@@ -3,9 +3,9 @@ uid: learn.wwl.hyperparameters-azure-databricks
 metadata:
   title: Tune hyperparameters in Azure Databricks
   description: Learn how to use the Hyperopt library in Azure Databricks to tune machine learning hyperparameters.
-  author: wwlpublish
-  ms.author: madiepev
-  ms.date: 08/26/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 4/24/2025
   ms.service: azure-databricks
   ms.topic: module-standard-task-based
   ms.collection:
@@ -38,4 +38,4 @@ units:
 - learn.wwl.hyperparameters-azure-databricks.summary
 badge:
   uid: learn.wwl.hyperparameters-azure-databricks.badge
-
+

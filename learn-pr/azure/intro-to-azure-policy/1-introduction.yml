@@ -5,11 +5,11 @@ metadata:
   unitType: introduction
   title: Introduction
   description: "Introduction to Azure Policy."
-  ms.date: 07/19/2024
+  ms.date: 04/28/2025
   author: ricmmartins
   ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

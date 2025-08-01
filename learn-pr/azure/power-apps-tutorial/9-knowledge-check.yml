@@ -8,6 +8,7 @@ metadata:
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: Choose the best response for each question.
 quiz:

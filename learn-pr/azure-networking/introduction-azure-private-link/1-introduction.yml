@@ -4,11 +4,11 @@ title: Introduction
 metadata:
   title: Introduction
   description: Introduction to the Introduction to Azure Private Link module.
-  ms.date: 01/22/2024
+  ms.date: 04/17/2025
   author: asudbring
   ms.author: allensu
   ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
-
+

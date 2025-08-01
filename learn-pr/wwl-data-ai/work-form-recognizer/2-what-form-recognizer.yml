@@ -6,11 +6,11 @@ metadata:
   description: What is Azure Document Intelligence?
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 04/18/2024
+  ms.date: 04/28/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-form-recognizer.md)]
-
+

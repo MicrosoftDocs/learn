@@ -1,5 +1,7 @@
 Security rules in network security groups enable you to filter network traffic. You can define rules to control the traffic flow in and out of virtual network subnets and network interfaces.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8a05737b-6af8-4a01-aeaa-790710b82fa6]
+
 ### Things to know about security rules
 
 Let's review the characteristics of security rules in network security groups.
@@ -8,14 +10,16 @@ Let's review the characteristics of security rules in network security groups.
 
 - Azure creates the default security rules in each network security group that you create.
 
-- You can add more security rules to a network security group by specifying conditions for any of the following settings:
-   - **Name**
-   - **Priority**
-   - **Port**
-   - **Protocol** (Any, TCP, UDP)
-   - **Source** (Any, IP addresses, Service tag)
-   - **Destination** (Any, IP addresses, Virtual network)
-   - **Action** (Allow or Deny)
+- You can add more security rules to a network security group by [specifying conditions](/azure/virtual-network/manage-network-security-group?tabs=network-security-group-portal#create-a-security-rule). Here's a list of the most common conditions. 
+
+   | Setting | Value |
+   | --- | --- |
+   | Source | Any, IP Addresses, My IP address, Service Tag, or Application security group |
+   | Source port ranges | Specify the ports on which the rule allows or denies traffic |
+   | Destination | Any, IP Addresses, Service Tag,  or Application security group |
+   | Protocol | Restrict the rule to the Transmission Control Protocol (TCP), User Datagram Protocol (UDP), or Internet Control Message Protocol (ICMP). The default is for the rule to apply to all protocols (Any). |
+   | Action | Allow or Deny |
+   | Priority | A value between 100 and 4,096 that's unique for all security rules within the NSG |
 
 - Each security rule is assigned a Priority value. All security rules for a network security group are processed in priority order. When a rule has a low Priority value, the rule has a higher priority or precedence in terms of order processing.
 
