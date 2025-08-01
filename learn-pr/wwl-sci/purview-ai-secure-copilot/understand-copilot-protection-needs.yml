@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-secure-copilot.understand-copilot-protection-needs
+title: Understand Microsoft 365 Copilot and data protection needs
+metadata:
+  title: Understand Microsoft 365 Copilot and data protection needs
+  description: "Understand Microsoft 365 Copilot and data protection needs"
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/understand-copilot-protection-needs.md)]
