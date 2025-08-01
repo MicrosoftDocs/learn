@@ -1,8 +1,8 @@
 ### YamlMime:Module
-uid: learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations
+uid: learn.azure.optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations
 metadata:
   title: Optimize Spend and Performance with Azure AI Foundry Provisioned Throughput Reservations
-  description: This module introduces you to provisioned deployments in Azure OpenAI services. 
+  description: This module introduces you to provisioned deployments in Azure AI Foundry. 
   ms.date: 08/01/2025
   author: rmcmurray
   ms.author: robmcm
