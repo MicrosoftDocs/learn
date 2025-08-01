@@ -45,9 +45,11 @@ For organization-owned repositories, administrators can control whether reposito
 
 To configure fork settings:
 
-1. Go to the repository’s **Settings**.
-1. Scroll to the **Danger Zone**.
-1. Locate the fork control options and update them as needed.
+1. Go to the Organization repository’s **Settings**.
+1. In the left sidebar, under Access, click **Member privileges**.
+1. Locate the **Repository forking** options and update them as needed.
+
+    :::image type="content" source="../media/fork-repo-manage.png" alt-text="Screenshot showing the fork permissions of a GitHub Organization." border="false":::
 
 **Tip:** If you disable forking for a private repository, no one (including organization members) will be able to fork it.
 
