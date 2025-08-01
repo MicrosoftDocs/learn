@@ -3,11 +3,11 @@ uid: learn.wwl.develop-multi-agent-azure-ai-foundry
 metadata:
   title: Develop a multi-agent solution with Azure AI Foundry Agent Service
   description: Break down complex tasks with intelligent collaboration. Learn how to design multi-agent solutions using connected agents.
-  ms.date: 06/13/2025
+  ms.date: 08/01/2025
   author: buzahid
   ms.author: buzahid
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
-  ms.service: azure-ai-openai
+  ms.service: azure-ai-foundry
 title: Develop a multi-agent solution with Azure AI Foundry Agent Service
 summary: Break down complex tasks with intelligent collaboration. Learn how to design multi-agent solutions using connected agents.
 abstract: |
@@ -28,8 +28,7 @@ roles:
   - solution-architect
   - student
 products:
-  - azure
-  - ai-services
+  - azure-ai-foundry
 subjects: 
   - cloud-computing
 units:

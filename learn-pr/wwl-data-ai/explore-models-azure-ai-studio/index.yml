@@ -3,11 +3,11 @@ uid: learn.wwl.explore-models-copilot-ai-studio
 metadata:
   title: Choose and deploy models from the model catalog in Azure AI Foundry portal
   description: "Choose the various language models that are available through the Azure AI Foundry's model catalog. Understand how to select, deploy, and test a model, and to improve its performance."
-  ms.date: 05/23/2025
+  ms.date: 08/01/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: module-standard-task-based 
-  ms.service: azure-ai-services
+  ms.service: azure-ai-foundry
   ms.custom: ai-learning-hub
 title: Choose and deploy models from the model catalog in Azure AI Foundry portal
 summary: "Choose the various language models that are available through the Azure AI Foundry's model catalog. Understand how to select, deploy, and test a model, and to improve its performance."
@@ -25,8 +25,7 @@ roles:
   - data-scientist
   - ai-engineer
 products: 
-  - azure
-  - ai-services
+  - azure-ai-foundry
 subjects: 
   - cloud-computing
   - artificial-intelligence

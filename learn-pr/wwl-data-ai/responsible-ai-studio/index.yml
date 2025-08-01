@@ -5,8 +5,8 @@ metadata:
   description: A practical approach to implementing generative AI responsibly, and exploring content filters in AI Foundry portal.
   author: ivorb
   ms.author: berryivor
-  ms.date: 05/23/2025
-  ms.service: azure-ai-openai
+  ms.date: 08/01/2025
+  ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
@@ -30,8 +30,7 @@ roles:
   - solution-architect
   - student
 products: 
-  - azure-openai
-  - azure
+  - azure-ai-foundry
 subjects: 
   - cloud-computing
   - data-management

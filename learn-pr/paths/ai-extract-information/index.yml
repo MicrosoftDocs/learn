@@ -4,10 +4,11 @@ metadata:
   title: Develop AI information extraction solutions in Azure AI-3002
   description: Use Azure AI to extract information from content. (AI-3002)
   brand: azure
-  ms.date: 05/16/2025
+  ms.date: 08/01/2025
   author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: learning-path
+  ms.service: azure-ai-foundry
 title: Develop AI information extraction solutions in Azure
 summary: |
   Use Azure AI to extract information from content to support scenarios like:
@@ -30,6 +31,7 @@ subjects:
 - artificial-intelligence
 products:
 - ai-services
+- azure-ai-foundry
 - azure-cognitive-search
 modules:
 - learn.wwl.analyze-content-ai

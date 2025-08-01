@@ -3,10 +3,11 @@ uid: learn.wwl.develop-ai-agent-on-azure
 metadata:
   title: Develop AI Agents on Azure 
   description: Learn how to develop AI agents on Azure using the Azure AI Foundry Agent Service and Semantic Kernel Agent Framework. AI-3026
-  ms.date: 07/28/2025
+  ms.date: 08/01/2025
   author: wwlpublish
   ms.author: berryivor
   ms.topic: learning-path
+  ms.service: azure-ai-foundry
   ms.collection: wwl-ai-copilot
 title: Develop AI agents on Azure
 prerequisites: |
@@ -19,7 +20,7 @@ levels:
 roles:
 - ai-engineer
 products:
-- ai-services
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 - machine-learning
