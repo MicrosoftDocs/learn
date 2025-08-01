@@ -35,6 +35,6 @@ units:
 - learn.wwl.purview-ai-secure-copilot.introduction
 - learn.wwl.purview-ai-secure-copilot.understand-copilot-protection-needs
 - learn.wwl.purview-ai-secure-copilot.sensitivity-labels-copilot
-
+- learn.wwl.purview-ai-secure-copilot.data-loss-prevention-copilot
 badge:
   uid: learn.wwl.purview-ai-secure-copilot.badge
