@@ -8,7 +8,7 @@ metadata:
   description: "Implement Conditional Access policies for Cloud Resources in Azure"
   ms.date: 06/13/2025
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A

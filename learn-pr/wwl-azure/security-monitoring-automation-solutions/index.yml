@@ -5,7 +5,7 @@ metadata:
   description: "Learn to set up Azure Monitor and Microsoft Sentinel for automatic security monitoring and response in cloud settings."
   ms.date: 02/03/2025
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: module-intro-to-product
   ms.custom:
   - N/A
