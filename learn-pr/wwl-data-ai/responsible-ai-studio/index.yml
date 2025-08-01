@@ -30,10 +30,9 @@ roles:
   - solution-architect
   - student
 products: 
-  - azure-ai-foundry
+  - ai-services
 subjects: 
-  - cloud-computing
-  - data-management
+  - artificial-intelligence
 units:
 - learn.wwl.responsible-ai-studio.introduction
 - learn.wwl.responsible-ai-studio.plan-responsible-ai

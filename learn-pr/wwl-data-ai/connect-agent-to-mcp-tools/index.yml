@@ -28,9 +28,9 @@ roles:
   - solution-architect
   - student
 products:
-  - azure-ai-foundry
+  - ai-services
 subjects: 
-  - cloud-computing
+  - artificial-intelligence
 units:
 - learn.wwl.connect-agent-to-mcp-tools.introduction
 - learn.wwl.connect-agent-to-mcp-tools.understand-mcp-tool-discovery

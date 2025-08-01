@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: learning-path
-  ms.service: azure-ai-foundry
 title: Develop computer vision solutions in Azure
 prerequisites: |
   Before starting this learning path, you should already have:

@@ -31,7 +31,6 @@ roles:
 - ai-engineer
 products:
 - ai-services
-- azure-ai-foundry
 - azure-cognitive-search
 subjects:
 - artificial-intelligence

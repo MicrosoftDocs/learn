@@ -27,9 +27,9 @@ roles:
   - solution-architect
   - student
 products: 
-  - azure-ai-foundry
+  - ai-services
 subjects: 
-  - cloud-computing
+  - artificial-intelligence
 units:
 - learn.wwl.develop-ai-agent-with-semantic-kernel.introduction
 - learn.wwl.develop-ai-agent-with-semantic-kernel.understand-semantic-kernel-agents

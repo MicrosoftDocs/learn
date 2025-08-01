@@ -25,7 +25,7 @@ levels:
 roles: 
   - ai-engineer
 products: 
-  - azure-ai-foundry
+  - ai-services
 subjects: 
   - artificial-intelligence
 units:

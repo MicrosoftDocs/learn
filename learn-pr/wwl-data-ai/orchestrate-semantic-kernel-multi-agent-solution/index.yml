@@ -27,9 +27,9 @@ roles:
   - solution-architect
   - student
 products: 
-  - azure-ai-foundry
+  - ai-services
 subjects: 
-  - cloud-computing
+  - artificial-intelligence
 units:
 - learn.wwl.orchestrate-sk-multi-agent-solution.introduction
 - learn.wwl.orchestrate-sk-multi-agent-solution.understand-agent-framework

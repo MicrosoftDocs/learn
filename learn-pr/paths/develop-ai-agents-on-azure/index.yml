@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: learning-path
-  ms.service: azure-ai-foundry
   ms.collection: wwl-ai-copilot
 title: Develop AI agents on Azure
 prerequisites: |
@@ -20,7 +19,7 @@ levels:
 roles:
 - ai-engineer
 products:
-- azure-ai-foundry
+- ai-services
 subjects:
 - artificial-intelligence
 - machine-learning

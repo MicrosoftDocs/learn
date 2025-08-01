@@ -8,7 +8,6 @@ metadata:
   author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: learning-path
-  ms.service: azure-ai-foundry
 title: Develop AI information extraction solutions in Azure
 summary: |
   Use Azure AI to extract information from content to support scenarios like:
@@ -31,7 +30,6 @@ subjects:
 - artificial-intelligence
 products:
 - ai-services
-- azure-ai-foundry
 - azure-cognitive-search
 modules:
 - learn.wwl.analyze-content-ai

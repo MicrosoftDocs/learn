@@ -29,7 +29,6 @@ roles:
 - developer
 products:
 - ai-services
-- azure-ai-foundry
 subjects:
 - artificial-intelligence
 units:
