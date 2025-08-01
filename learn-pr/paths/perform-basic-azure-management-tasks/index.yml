@@ -5,7 +5,7 @@ metadata:
   description: Perform basic Azure Management Tasks (Security and Monitoring)
   ms.date: 04/02/2025
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: learning-path
 title: Perform basic Azure Management Tasks (Security and Monitoring)
 prerequisites: |
