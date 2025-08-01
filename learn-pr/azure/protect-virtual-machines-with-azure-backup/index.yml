@@ -3,10 +3,10 @@ uid: learn.protect-virtual-machines-with-azure-backup
 metadata:
   title: Protect your virtual machines by using Azure Backup
   description: Use Azure Backup to help protect on-premises servers, virtual machines, SQL Server, Azure file shares, and other workloads.
-  manager: mkluck
+  manager: akashdubey
   ms.date: 09/05/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: AbhishekMallick-MS
+  ms.author: v-mallicka
   ms.topic: module
   ms.service: azure-backup
 title: Protect your virtual machines by using Azure Backup
@@ -40,4 +40,4 @@ units:
 - learn.protect-virtual-machines-with-azure-backup.7-summary
 badge:
   uid: learn.protect-virtual-machines-with-azure-backup.badge
-
+
