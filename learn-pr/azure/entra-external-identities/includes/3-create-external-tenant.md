@@ -14,7 +14,7 @@ You'll need to create a tenant with external configuration in the [Microsoft Ent
 If you don't have an Azure subscription, you can create a trial tenant for free.
 
 > [!IMPORTANT]
-> At the end of the 30-day free trial period, extensions are not available. If no Azure subscription is added, your free trial tenant will be disabled and deleted. You have the following options:
+> At the end of the 30-day free trial period, extensions aren't available. If no Azure subscription is added, your free trial tenant will be disabled and deleted. You have the following options:
 > - **Upgrade your tenant:** If you're ready to upgrade before the trial period ends, you can [upgrade your free trial tenant to a paid subscription](/entra/external-id/customers/quickstart-trial-setup#upgrade-your-free-trial-by-adding-an-azure-subscription).
 > - **Register for another trial:** Use the same link [aka.ms/ciam-free-trial](https://www.aka.ms/ciam-free-trial) to start a new trial.
 
@@ -114,7 +114,7 @@ If you don't have an Azure subscription, you can create a trial tenant for free.
 ::: zone pivot="microsoft-graph-api"
 
 > [!NOTE]
-> Before you start, please note that for creating an external tenant, you will be using **Azure REST API** and not Microsoft Graph. You can follow [the link to check the availability and validity of a domain name for the tenant](/rest/api/activedirectory/check-name-availability/check-name-availability?view=rest-activedirectory-2023-05-17-preview&tabs=HTTP) to run the REST API directly from your browser. The following screenshot shows where to select after following the link and also demonstrates how to run a particular API. ![ ![Screenshot of the button titled Try it highlighted in the right side of the HTTP request code header. The HTTP request checks the availability and validity of a domain name for the tenant.](../media/create-an-external-tenant/10_inline.png) ](../media/create-an-external-tenant/10.png#lightbox)
+> Before you start, please note that for creating an external tenant, you'll be using **Azure REST API** and not Microsoft Graph. You can follow [the link to check the availability and validity of a domain name for the tenant](/rest/api/activedirectory/check-name-availability/check-name-availability?view=rest-activedirectory-2023-05-17-preview&tabs=HTTP) to run the REST API directly from your browser. The following screenshot shows where to select after following the link and also demonstrates how to run a particular API. ![ ![Screenshot of the button titled Try it highlighted in the right side of the HTTP request code header. The HTTP request checks the availability and validity of a domain name for the tenant.](../media/create-an-external-tenant/10_inline.png) ](../media/create-an-external-tenant/10.png#lightbox)
 
 #### 1. Check domain name availability
 
@@ -198,7 +198,7 @@ The following request initiates an async request to [create an external tenant](
 - **{subscriptionId}** with your Azure subscription ID.
 - **{resourceGroupName}** with the name of the resource group you created earlier.
 - **{resourceName}** with the initial subdomain of the tenant. For example, *contoso*, or *woodgrove*.
-- **{location}** with the location in which the resource is hosted and data resides. Can be one of 'United States', 'Europe', 'Asia Pacific', or 'Australia'.
+- **{location}** with the location in which the resource is hosted and data resides. Can be one of 'United States,' 'Europe,' 'Asia Pacific,' or 'Australia.'
 - **{displayName}** with a display name of your tenant.
 
 ```json
