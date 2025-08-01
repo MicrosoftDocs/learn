@@ -7,7 +7,7 @@ metadata:
   description: "This module equips administrators with the skills to design, deploy, and oversee security governance in Azure, ensuring alignment with organizational policies and industry best practices."
   ms.date: 06/17/2025
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: module
   ms.collection: N/A
   ms.custom:

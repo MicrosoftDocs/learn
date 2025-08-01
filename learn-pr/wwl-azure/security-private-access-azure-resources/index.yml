@@ -5,7 +5,7 @@ metadata:
   description: "This module focuses on equipping administrators with the knowledge and skills required to plan and implement robust security measures for private access to Azure resources, safeguarding sensitive data and enhancing network integrity."
   ms.date: 10/03/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: module-intro-to-product
   ms.custom:
   - references_regions
@@ -45,4 +45,4 @@ units:
 - learn.wwl.security-private-access-azure-resources.knowledge-check
 - learn.wwl.security-private-access-azure-resources.summary
 badge:
-  uid: learn.wwl.security-private-access-azure-resources.badge
+  uid: learn.wwl.security-private-access-azure-resources.badge

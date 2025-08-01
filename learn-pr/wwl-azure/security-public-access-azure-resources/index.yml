@@ -5,7 +5,7 @@ metadata:
   description: "Plan and implement security for public access to Azure resources"
   ms.date: 06/25/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: module-intro-to-product
   ms.custom:
   - N/A
@@ -48,4 +48,4 @@ units:
 - learn.wwl.security-public-access-azure-resources.knowledge-check
 - learn.wwl.security-public-access-azure-resources.summary
 badge:
-  uid: learn.wwl.security-public-access-azure-resources.badge
+  uid: learn.wwl.security-public-access-azure-resources.badge
