@@ -6,8 +6,8 @@ metadata:
   title: Module assessment
   description: This is a knowledge check unit.
   ms.date: 06/26/2025
-  author: rmcmurray
-  ms.author: robmcm
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3

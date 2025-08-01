@@ -8,7 +8,7 @@ metadata:
   description: "Configure access to Key Vault, including vault access policies and Azure role-based access control"
   ms.date: 06/17/2025
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
