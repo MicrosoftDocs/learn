@@ -2,7 +2,7 @@ Sensitivity labels in Microsoft Purview help control what data Microsoft 365 Cop
 
 ## Understand how labeling affects Copilot behavior
 
-Copilot respects sensitivity labels on the content it accesses and may apply labels to output, depending on the app. Label behavior varies slightly across Microsoft 365 apps.
+Copilot respects sensitivity labels on the content it accesses and might apply labels to output, depending on the app. Label behavior varies slightly across Microsoft 365 apps.
 
 Here's what to expect:
 
@@ -25,13 +25,13 @@ To manage how Copilot interacts with sensitive data:
 - **Set Outlook labeling requirements** if users need to manually apply labels to drafts that include Copilot-generated content.
 - **Review Teams meeting and chat label settings**, since Copilot in Teams follows the session label.
 
-All sensitivity label policies are configured in the **Information Protection** solution area of Microsoft Purview. You don't need to configure anything specific for Copilot, but it's a good idea to test label behavior in the apps your users rely on and update your policies as needed.
+All sensitivity label policies are configured in the **Information Protection** solution area of Microsoft Purview. You don't need to configure anything specific for Copilot, but it's a good idea to test label behavior in the apps your users rely on and adjust your policies as needed.
 
 > [!NOTE]
-> If you haven't already created sensitivity labels, see [how to create and configure a sensitivity label](/purview/create-sensitivity-labels?tabs=classic-label-scheme).
+> If your organization doesn't have sensitivity labels and label policies in place, see [Create and configure sensitivity labels and their policies](/purview/create-sensitivity-labels?tabs=classic-label-scheme).
 
 ## Use DSPM for AI to recommend labeling
 
-Data Security Posture Management (DSPM) for AI helps identify when sensitive content is accessed during Copilot interactions. DSPM for AI includes a recommendation to set up default sensitivity labels and policies if they haven't been configured yet. This step ensures that foundational protections are in place before Copilot is widely used across Microsoft 365 apps.
+Data Security Posture Management (DSPM) for AI helps identify when sensitive content is accessed during Copilot interactions. DSPM for AI includes a recommendation to set up default sensitivity labels and policies if they haven't been configured yet. This step helps ensure that foundational protections are in place before Copilot is widely used across Microsoft 365 apps.
 
-Once labels and policies are created, they're managed in Information Protection, where you can monitor label usage and update conditions as needed.
+Once labels and policies are created, they're managed in **Information Protection**, where you can review label usage and update conditions as needed.
