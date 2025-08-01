@@ -97,3 +97,5 @@ Each category must have a unique name, emoji pairing, and a detailed description
 1. In your repository, go to the Discussions tab and select **Start discussion**.
 
 That covers a little about how GitHub supports collaborative work. Now let's move to how you can manage notifications, subscribe to threads, and get started with GitHub pages.
+
+
