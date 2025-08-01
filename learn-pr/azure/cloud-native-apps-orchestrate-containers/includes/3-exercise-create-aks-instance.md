@@ -1,9 +1,9 @@
-In this exercise, you will:
+In this exercise you'll:
 
 * Create a new registry in Azure Container Registry using the Azure portal.
-* Build an express.js Docker image and upload it to your container registry.
-* Create a Kubernetes cluster using AKS and connect it to your container registry.
-* Build a Next.js Docker image and upload it to your container registry.
+* Build an express.js Docker image, and upload it to your container registry.
+* Create a Kubernetes cluster using AKS, and connect it to your container registry.
+* Build a Next.js Docker image, and upload it to your container registry.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 

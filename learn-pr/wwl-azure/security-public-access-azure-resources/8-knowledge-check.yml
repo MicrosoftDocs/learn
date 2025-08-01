@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check"
   ms.date: 06/25/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
@@ -71,4 +71,4 @@ quiz:
       explanation: "While SEO is important for web visibility, WAF's role is to improve security, not SEO."
     - content: "To protect web applications from common web vulnerabilities and attacks."
       isCorrect: true
-      explanation: "WAF is designed to safeguard applications against web-based attacks and exploits, such as SQL injection and cross-site scripting, enhancing application security."
+      explanation: "WAF is designed to safeguard applications against web-based attacks and exploits, such as SQL injection and cross-site scripting, enhancing application security."

@@ -6,10 +6,10 @@ metadata:
   description: "Azure Storage"
   ms.date: 06/25/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-azure-storage.md)]
+  [!include[](includes/2-azure-storage.md)]
