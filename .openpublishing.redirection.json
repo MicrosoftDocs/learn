@@ -393,6 +393,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/hyperparameters-azure-databricks/2-hyperopt.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/modules/hyperparameters-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/hyperparameters-azure-databricks/3-review-hyperopt-trials.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/modules/hyperparameters-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/hyperparameters-azure-databricks/4-scale-hyperopt.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/modules/hyperparameters-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/characterize-data-azure-data-explorer/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/data-explorer/web-ui-query-overview",
       "redirect_document_id": false
