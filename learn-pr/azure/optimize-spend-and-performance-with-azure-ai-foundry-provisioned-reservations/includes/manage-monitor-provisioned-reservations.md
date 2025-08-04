@@ -4,9 +4,9 @@ After you purchase a reservation, you can review it in the Azure portal. The res
 
 By default, the following users can review and manage reservations:
 
-- The person who buys a reservation and the account administrator of the billing subscription used to buy the reservation. These users are added to the reservation order. To review reservations that you have explicit access to in the Azure portal, navigate to Reservations.
+- The person who buys a reservation and the account administrator of the billing subscription used to buy the reservation. These users are added to the reservation order. To review reservations that you have explicit access to in the Azure portal, navigate to **Reservations**.
 
-- EA and Microsoft Customer Agreement billing administrators. Billing access is granted based on user role. To review and manage reservations in the Azure portal, navigate to **Cost Management + Billing**, and then select **Reservations Transactions**.
+- Enterprise Agreement and Microsoft Customer Agreement billing administrators. Billing access is granted based on user role. To review and manage reservations in the Azure portal, navigate to **Cost Management + Billing**, and then select **Reservations transactions**.
 
 > [!NOTE]
 > You can also manage reservation purchases programmatically.
@@ -29,23 +29,23 @@ From the **Cost Management** window, billing administrators can review payments 
 
 Enterprise Agreement and Microsoft Customer Agreement billing administrators use the **Cost Management + Billing** **portal** to review reservation purchases, by selecting **Reservation transactions**.
 
-:::image type="content" source="../media/6-reservation-transactions-small.png" alt-text="A screenshot displaying reservation transactions in Cost Management." border="true" lightbox="../media/6-reservation-transactions.png":::
+:::image type="content" source="../media/6-reservation-transactions-small.png" alt-text="Screenshot showing reservation transactions in Cost Management." border="true" lightbox="../media/6-reservation-transactions.png":::
 
 Enterprise Agreement and Microsoft Customer Agreement customers can also use the **Cost Management** **Power BI** app to get reservation transactions. To do that, complete the following high-level steps:
 
 1. Download and open the **Cost Management** app.
 
-2. Access the **RI Purchases** report to review all purchases and refunds. Exchanges appear as a refund and another purchase.
+1. Access the **RI Purchases** report to review all purchases and refunds. Exchanges appear as a refund and another purchase.
 
 Enterprise Agreement and Microsoft Customer Agreement customers can get the purchase information from the usage details data, by following these steps:
 
 1. In the Azure portal, go to **Cost management + Billing**.
 
-2. Select the billing account, select **Usage + prices**, and then select **Download** to get the usage details in a CSV file.
+1. Select the billing account, select **Usage + prices**, and then select **Download** to get the usage details in a CSV file.
 
-3. In the CSV file, filter for **chargeType** = **Purchase**.
+1. In the CSV file, filter for **chargeType** = **Purchase**.
 
-4. Select all records where the provider value is **Azure**.
+1. Select all records where the provider value is **Azure**.
 
 ## Monitor and optimize reservation use
 
@@ -55,17 +55,15 @@ You can review reservation usage in the Azure portal. To maximize savings, try t
 
 1. Sign in to the Azure portal.
 
-2. Navigate to **Reservations** and note the Utilization (%) for a reservation.
+1. Navigate to **Reservations** and note the Utilization (%) for a reservation.
 
    :::image type="content" source="../media/6-reservations-small.png" alt-text="A screenshot of the Reservations page in the Azure portal." border="true" lightbox="../media/6-reservations.png":::
 
-3. Select the reservation utilization percentage to review utilization details.
+1. Select the reservation utilization percentage to review utilization details.
 
    :::image type="content" source="../media/6-reservation-utilization-small.png" alt-text="A screenshot depicting the utilization percentage for a reservation." border="true" lightbox="../media/6-reservation-utilization.png":::
 
-4. Select a point on the chart to review the usage breakdown by resource in the view.
-
-Billing administrators can review all reservations from **Cost Management + Billing** by selecting **Reservation Transactions**, and then selecting the banner indicating the used percentage.
+Billing administrators can review all reservations from **Cost Management + Billing** by selecting **Reservation transactions**, and then selecting the banner indicating the used percentage.
 
 You can retrieve the same data by using APIs:
 
@@ -75,13 +73,13 @@ You can retrieve the same data by using APIs:
 
 If you discover that your organization's reservations are underused, you can either change the reservation scope, or have the reservation refunded:
 
-- **Change the reservation scope.** If your reservation is scoped to a single subscription or resource group, then another subscription or resource group may have matching resources that can benefit from the reservation. Consider one of the following two actions:
+- **Change the reservation scope**: If your reservation is scoped to a single subscription or resource group, then another subscription or resource group might have matching resources that can benefit from the reservation. Consider one of the following two actions:
 
   - Change the reservation scope to shared scope.
 
   - Split the reservation into smaller chunks and assign them individually to scopes that have utilization for matching resources.
 
-- **Refund a reservation** You can have a reservation refund as well.  From the Azure portal, select the reservation that you want to return, and then select **Refund**.
+- **Refund a reservation**: You can have a reservation refund as well. From the Azure portal, select the reservation that you want to return, and then select **Refund**.
 
 > [!NOTE]
 > The total canceled commitment can't exceed (US dollar) \\$50,000 in a 12-month rolling window. Azure won't process any refund that exceeds the \\$50,000 limit in a 12-month window for either a billing profile or EA enrollment.
@@ -92,14 +90,14 @@ If you find that your organization's reservations are being underused, you have 
 
 ### Exchange a reservation
 
-If your reservation is consistently underutilized or if you need to move your Azure OpenAI Service workloads to a new deployment, consider exchanging them to align to your business.
+If your reservation is consistently underutilized or if you need to move your Azure AI Foundry workloads to a new deployment, consider exchanging them to align to your business.
 
-- For Azure OpenAI Service Provisioned reservations you can change the region, term, deployment type, and payment option when you make an exchange.
-- For example, you can exchange a quantity of 50 Global provisioned reservations with a one-year term in US West for the following:
-  - **New Deployment**: 50 Data Zone provisioned reservations with a one-year term in US West
-  - **New Region**: 50 Global provisioned reservation with a one-year term in Sweden Central
-  - **New Deployment and Regional**: 50 Data Zone provisioned reservations with a one-year term in Sweden Central
-  - **New Term**: 50 Global provisioned reservations with a three-year term in US West
+- For Azure AI Foundry Provisioned Throughput reservations you can change the region, term, deployment type, and payment option when you make an exchange.
+- For example, you can exchange a quantity of 50 global-provisioned reservations with a one-year term in US West for the following:
+  - **New Deployment**: 50 data zone-provisioned reservations with a one-year term in US West
+  - **New Region**: 50 global-provisioned reservations with a one-year term in Sweden Central
+  - **New Deployment and Regional**: 50 data zone-provisioned reservations with a one-year term in Sweden Central
+  - **New Term**: 50 global-provisioned reservations with a three-year term in US West
 - When you exchange a reservation, The prorated reservation amount is refunded, and you're charged fully for the new purchase. The prorated reservation amount is the daily prorated residual value of the reservation being returned.
 - The new reservation's lifetime commitment should equal to or greater than the returned reservation's remaining commitment. For example, for a three-year reservation that's USD 100 per month which is exchanged after the 18th payment, the new reservation's lifetime commitment should be USD 1,800 or more (paid monthly or upfront).
 - There are no fees or penalty for exchanges.
@@ -113,41 +111,39 @@ If you scope your reservation to a single subscription or resource group, then i
 
 ## Analyze and report after reservation purchase
 
-You can create several reports to help you analyze and perform reporting after buying a reservation. When it comes to cost reporting, it is important to understand two concepts:
+You can create several reports to help you analyze and perform reporting after buying a reservation. When it comes to cost reporting, it's important to understand two concepts:
 
 - *Actual cost data*
 - *Amortized cost data*
 
-**Actual Cost data.** Provides data to reconcile with your monthly bill. This data has reservation purchase costs and reservation application details. With this data, you can know which subscription, resource group, or resource received the reservation discount on a particular day. The EffectivePrice for the usage that receives the reservation discount is zero.
+**Actual cost data**: Provides data to reconcile with your monthly bill. This data has reservation purchase costs and reservation application details. With this data, you can know which subscription, resource group, or resource received the reservation discount on a particular day. The EffectivePrice for the usage that receives the reservation discount is zero.
 
-**Amortized Cost.** This dataset is similar to the Actual Cost dataset except that the EffectivePrice for the usage that gets a reservation discount is the prorated cost of the reservation (instead of being zero). This helps you understand the monetary value of reservation consumption by subscription, resource group, or resource. It can also help you charge back for the reservation utilization internally. The dataset also has unused reservation hours, but it doesn't have reservation purchase records.
+**Amortized cost**: This dataset is similar to the actual cost dataset except that the EffectivePrice for the usage that gets a reservation discount is the prorated cost of the reservation (instead of being zero). This helps you understand the monetary value of reservation consumption by subscription, resource group, or resource. It can also help you charge back for the reservation utilization internally. The dataset also has unused reservation hours, but it doesn't have reservation purchase records.
 
 > [!NOTE]
 > Amortized cost data is only available to Enterprise Agreement and Microsoft Customer Agreement customers.
 
 You can review reservation savings in Power BI.
 
-## Chargeback with cost analysis
-
-:::image type="content" source="../media/6-chargeback-with-cost-analysis.png" alt-text="A screenshot displaying selections in cost analysis to view unused reservations." border="true":::
+:::image type="content" source="../media/6-chargeback-with-cost-analysis.png" alt-text="Screenshot displaying selections in cost analysis to view unused reservations." border="true":::
 
 Cost analysis displays charges as they appear on your bill. It displays them as actual costs or amortized over the course of your reservation period. To access cost analysis, perform the following steps:
 
 1. In the Azure portal, navigate to **Cost Management + Billing**.
 
-2. Select **Cost Management**, and then select **Cost analysis**.
+1. Select **Cost Management**, and then select **Cost analysis**.
 
-3. Change the view from **Actual cost** to **Amortized cost**.
+1. Change the view from **Actual cost** to **Amortized cost**.
 
-4. Apply the following filters:
+1. Apply the following filters:
 
    - For **Pricing Model**, select **Reservation**.
 
    - For **Reservation**, select the desired reservation name.
 
-5. You can select filters and views to display the monetary value of the reservation consumption by subscription, resource group, or resource. Using the data in this window, you can use information to charge back for reservation use.
+1. You can select filters and views to display the monetary value of the reservation consumption by subscription, resource group, or resource. Using the data in this window, you can use information to charge back for reservation use.
 
-   :::image type="content" source="../media/6-cost-analysis-1-small.png" alt-text="A screenshot depicting the Amortized cost selection." border="true" lightbox="../media/6-cost-analysis-1.png":::
+   :::image type="content" source="../media/6-cost-analysis-1-small.png" alt-text="Xcreenshot depicting the Amortized cost selection." border="true" lightbox="../media/6-cost-analysis-1.png":::
 
 You can create a chargeback report to charge internal cost centers using amortized data. In amortized data, the cost of a reservation is the consumption value based on the discounted price for the instances covered by reservations. Amortized cost data provides the monetary value of a reservation's utilization for:
 
@@ -164,7 +160,7 @@ In the Cost analysis window, the **unused reservation** view displays the moneta
 
 1. In **Cost analysis**, change the view from **Actual cost** to **Amortized cost**.
 
-2. Set up your cost analysis view with the following selections:
+1. Set up your cost analysis view with the following selections:
 
    - Set **Charge type** to **unusedreservation**.
 
@@ -174,15 +170,15 @@ In the Cost analysis window, the **unused reservation** view displays the moneta
 
    - Set the **chart type** to **Table**.
 
-   :::image type="content" source="../media/6-cost-analysis-2-small.png" alt-text="A screenshot displaying cost analysis filters." border="true" lightbox="../media/6-cost-analysis-2.png":::
+   :::image type="content" source="../media/6-cost-analysis-2-small.png" alt-text="Screenshot displaying cost analysis filters." border="true" lightbox="../media/6-cost-analysis-2.png":::
 
-The same unused reservation information is in the usage details data. To review it, retrieve the amortized data, and then apply a filter on **Charge type** = **unusedreservation**. This will display the reservation waste.
+The same unused reservation information is in the usage details data. To review it, retrieve the amortized data, and then apply a filter on **Charge type** = **unusedreservation**. This displays the reservation waste.
 
 ## Renewal options for Azure reservation
 
-You can renew reservations to automatically purchase a replacement when an existing reservation expires. Automatic renewal provides an easy way to continue getting reservation discounts. It also saves you from having to closely monitor a reservation's expiration. With automatic renewal, you prevent savings benefits loss by not having to manually renew. The renewal setting is turned on by default when you make a purchase. You can, however, manually turn off the renewal setting at the time of purchase. After purchase, you can enable or disable the renewal setting at any time, up to the expiration of the existing reservation. If auto-renewal is enabled, you need to manually turn it off to stop automatic renewal.
+You can renew reservations to automatically purchase a replacement when an existing reservation expires. Automatic renewal provides an easy way to continue getting reservation discounts. It also saves you from having to closely monitor a reservation's expiration. With automatic renewal, you prevent savings benefits loss by not having to manually renew. The renewal setting is turned on by default when you make a purchase. You can, however, manually turn off the renewal setting at the time of purchase. After purchase, you can enable or disable the renewal setting at any time, up to the expiration of the existing reservation. If autorenewal is enabled, you need to manually turn it off to stop automatic renewal.
 
-The renewal price is available 30 days before the expiry of the existing reservation. If you enable renewal more than 30 days before the reservation expiration, you're sent an email 30 days before expiration detailing renewal costs. The reservation price might change between the time that you lock in the renewal price and the renewal time. If so, your renewal will not be processed, and you can purchase a new reservation to continue getting the benefit.
+Renewal notification emails are sent 30 days before expiration for terms greater or equal to 1 year, and 5 days for terms less than a year, and again on the expiration date. The reservation price might change between the time that you lock in the renewal price and the renewal time. If so, your renewal isn't processed, and you can purchase a new reservation to continue getting the benefit.
 
 Renewing a reservation creates a new reservation when the existing reservation expires. It doesn't extend the term of the existing reservation.
 
@@ -190,9 +186,9 @@ To set up Azure reservation renewal, from the Azure portal, perform the followin
 
 1. Select **Reservations**, and then select the reservation that you want to set up.
 
-2. Select **Renewal**.
+1. Select **Renewal**.
 
-3. Select **Automatically purchase a new reservation upon expiry**.
+1. Select **Automatically purchase a new reservation upon expiry**.
 
    :::image type="content" source="../media/6-renewal-small.png" alt-text="A screenshot displaying reservation renewal." border="true" lightbox="../media/6-renewal.png":::
 
