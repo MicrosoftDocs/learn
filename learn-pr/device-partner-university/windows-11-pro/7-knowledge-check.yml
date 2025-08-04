@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.new-windows-11-pro.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "What's new with Windows 11 Pro" module.
+  ms.date: 07/23/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Let's find out what you've learned!
+  questions:
+  - content: "What feature in Windows 11 Pro helps users find content by describing it in their own words?"
+    choices:
+        - content: "Windows Studio Effects"
+          isCorrect: false
+          explanation: "Incorrect. This feature enhances video calls with effects like background blur and eye contact."
+        - content: "Recall"
+          isCorrect: true
+          explanation: "Correct. Recall captures snapshots of the desktop and allows users to search using natural language."
+        - content: "Snap Layouts"
+          isCorrect: false
+          explanation: "Incorrect. Snap Layouts help organize windows on the screen but do not support content search."
+        - content: "Microsoft Copilot Studio"
+          isCorrect: false
+          explanation: "Incorrect. This tool is used to create custom AI experiences, not for content discovery."
+  - content: "Which feature in Windows 11 Pro allows secure sign-ins using facial recognition or fingerprint?"
+    choices:
+        - content: "Windows Hello for Business"
+          isCorrect: true
+          explanation: "Correct. It enables passwordless authentication using biometrics like face or fingerprint."
+        - content: "Microsoft Pluton"
+          isCorrect: false
+          explanation: "Incorrect. Pluton is a security processor, not a sign-in method."
+        - content: "Token Protection"
+          isCorrect: false
+          explanation: "Incorrect. Token Protection secures sign-on sessions but does not handle biometric sign-ins."
+        - content: "Windows Autopatch"
+          isCorrect: false
+          explanation: "Incorrect. Autopatch automates updates, not user authentication."
+  - content: "What is the purpose of the Copilot key on Windows 11 Pro PCs?"
+    choices:
+        - content: "To launch Windows Studio Effects"
+          isCorrect: false
+          explanation: "Incorrect. Windows Studio Effects are accessed via Quick Settings, not the Copilot key."
+        - content: "To open Microsoft 365 and access productivity tools"
+          isCorrect: true
+          explanation: "Correct. The Copilot key opens Microsoft 365 and Copilot for productivity."
+        - content: "To enable Recall snapshots"
+          isCorrect: false
+          explanation: "Incorrect. Recall is a separate feature available on Copilot+ PCs."
+        - content: "To activate Windows Update for Business"
+          isCorrect: false
+          explanation: "Incorrect. Updates are managed through Autopatch and Intune, not the Copilot key."
+  - content: "Which Windows 11 Pro feature helps IT automate updates and reduce downtime?"
+    choices:
+        - content: "Windows Autopatch"
+          isCorrect: true
+          explanation: "Correct. It automates updates for Windows and Microsoft 365 apps, reducing manual effort."
+        - content: "Windows Copilot Runtime"
+          isCorrect: false
+          explanation: "Incorrect. This is used for building AI-powered apps, not managing updates."
+        - content: "Microsoft Copilot"
+          isCorrect: false
+          explanation: "Incorrect. Copilot assists users with productivity tasks, not IT updates."
+        - content: "Windows Studio Effects"
+          isCorrect: false
+          explanation: "Incorrect. These are visual enhancements for video calls, unrelated to updates."
+  - content: "What does Windows Ink allow users to do on Windows 11 Pro devices?"
+    choices:
+        - content: "Automate software updates"
+          isCorrect: false
+          explanation: "Incorrect. This is handled by Windows Autopatch."
+        - content: "Convert handwriting into typed text"
+          isCorrect: true
+          explanation: "Correct. Windows Ink supports handwriting recognition and inking."
+        - content: "Enable biometric authentication"
+          isCorrect: false
+          explanation: "Incorrect. This is a function of Windows Hello for Business."
+        - content: "Access AI-powered search"
+          isCorrect: false
+          explanation: "Incorrect. AI-powered search is enabled by features like Recall and Copilot."
+
