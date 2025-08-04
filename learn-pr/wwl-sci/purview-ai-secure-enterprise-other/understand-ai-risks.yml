@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-secure-enterprise-other.understand-ai-risks
+title: Understand risks from enterprise and third-party AI tools
+metadata:
+  title: Understand risks from enterprise and third-party AI tools
+  description: "Understand risks from enterprise and third-party AI tools"
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/understand-ai-risks.md)]
