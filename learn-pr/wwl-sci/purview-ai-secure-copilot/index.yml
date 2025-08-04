@@ -2,7 +2,7 @@
 uid: learn.wwl.purview-ai-secure-copilot
 metadata:
   title: Secure Microsoft 365 Copilot Interactions with Microsoft Purview
-  description: Secure Microsoft 365 Copilot Interactions with Microsoft Purview
+  description: AI tools like Microsoft 365 Copilot create new ways to interact with sensitive data, but they also introduce new risks. Learn how Microsoft Purview helps you apply security and compliance controls that protect data, manage AI activity, and support responsible use at scale.
   ms.date: 04/10/2025
   author: wwlpublish
   ms.author: riswinto
@@ -11,26 +11,34 @@ metadata:
   ms.service: purview
 title: Secure Microsoft 365 Copilot Interactions with Microsoft Purview
 summary: |
-  Microsoft Purview helps organizations protect sensitive data in environments that use AI tools. Learn how to reduce data security risks by applying sensitivity labels, using data loss prevention controls, and deploying recommended protections through DSPM for AI.
+  AI tools like Microsoft 365 Copilot create new ways to interact with sensitive data, but they also introduce new risks. Learn how Microsoft Purview helps you apply security and compliance controls that protect data, manage AI activity, and support responsible use at scale.
 abstract: |
   In this module you learn how to:
-  - Use sensitivity labels to control how AI tools access and handle content
-  - Configure endpoint DLP to restrict risky actions in browsers
-  - Apply DSPM for AI recommendations to protect sensitive data across Microsoft Purview solutions
+  - Control Copilot's access to sensitive content with sensitivity labels
+  - Prevent data exposure in Copilot interactions using data loss prevention policies
+  - Retain and audit Copilot prompts and responses with retention and audit
+  - Investigate Copilot activity using eDiscovery
+  - Detect risky or inappropriate Copilot usage with Communication Compliance
+  - Assess AI compliance using Compliance Manager
 prerequisites: |
-  None
+  - Familiarity with Microsoft 365 Copilot
+  - Basic knowledge of Microsoft Purview
+  - Understanding of compliance and data protection concepts
+  - Experience with Microsoft 365 roles and permissions
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
 - administrator
 - auditor
+- ip-admin
+- risk-practitioner
 products:
 - m365
 - microsoft-purview
 subjects:
-- data-management
-- threat-protection
+- security
+- compliance
 units:
 - learn.wwl.purview-ai-secure-copilot.introduction
 - learn.wwl.purview-ai-secure-copilot.understand-copilot-protection-needs
