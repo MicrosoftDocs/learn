@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.dpu.copilot-pc-business-users
+title: Introducing Copilot+ PC business users
+metadata:
+  title: Introducing Copilot+ PC Business Users
+  description: In this module, you'll learn who some of the main business audiences for Copilot+ PCs are—and what priorities and challenges Copilot+ PCs can help them address.
+  ms.date: 08/04/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Explore early adopters of Copilot+ PCs for business, and learn what Copilot+ PCs can do for them.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Identify the key business audiences for Copilot+ PCs and understand their roles, priorities, and challenges.
+  - Explain how Copilot+ PCs address productivity, innovation, and efficiency needs across various professional functions.
+  - Evaluate the benefits of Copilot+ PCs for early adopters in non-regulated industries, particularly those in sales and marketing.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/copilot-pc-business-users.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.copilot-pc-business-users.introduction
+  - learn.dpu.copilot-pc-business-users.modern-business-landscape
+  - learn.dpu.copilot-pc-business-users.empower-innovation
+  - learn.dpu.copilot-pc-business-users.support-professionals
+  - learn.dpu.copilot-pc-business-users.ambitious-leadership
+  - learn.dpu.copilot-pc-business-users.information-technology-decision-makers
+  - learn.dpu.copilot-pc-business-users.c-suite-executives
+  - learn.dpu.copilot-pc-business-users.smb-founders-owners
+  - learn.dpu.copilot-pc-business-users.sales-marketing-pros
+  - learn.dpu.copilot-pc-business-users.knowledge-creators
+  - learn.dpu.copilot-pc-business-users.knowledge-creator-subsets
+  - learn.dpu.copilot-pc-business-users.knowledge-check
+  - learn.dpu.copilot-pc-business-users.summary
+badge:
+  uid: learn.dpu.copilot-pc-business-users.badge

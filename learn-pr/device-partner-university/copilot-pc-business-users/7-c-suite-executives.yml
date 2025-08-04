@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-pc-business-users.c-suite-executives
+title: C suite executives
+metadata:
+  title: C Suite Executives
+  description: This content is part of the "Introducing Copilot+ PC business users" module.
+  ms.date: 08/04/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-c-suite-executives.md)]
