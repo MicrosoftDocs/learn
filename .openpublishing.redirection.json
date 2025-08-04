@@ -49900,6 +49900,51 @@
       "redirect_document_id": false
     },
     {
+        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/index.yml",
+        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/azure-openai-service-overview.yml",
+        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/azure-ai-foundry-overview",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/choose-purchase-azure-openai-service-provisioned-reservation.yml",
+        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/choose-purchase-azure-ai-foundry-provisioned-reservation",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/estimate-request-deploy-provisioned-throughput-units.yml",
+        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/estimate-request-deploy-provisioned-throughput-units",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/introduction.yml",
+        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/introduction",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/knowledge-check.yml",
+        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/knowledge-check",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/manage-monitor-provisioned-reservations.yml",
+        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/manage-monitor-provisioned-reservations",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/summary.yml",
+        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/summary",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/understand-azure-openai-deployment-models.yml",
+        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/understand-azure-ai-foundry-deployment-models",
+        "redirect_document_id": false
+    },
+    {
         "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-create-azure-ad-workbook.yml",
         "redirect_url": "https://learn.microsoft.com/training/browse/",
         "redirect_document_id": false
