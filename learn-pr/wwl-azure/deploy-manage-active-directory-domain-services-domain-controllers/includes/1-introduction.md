@@ -13,3 +13,7 @@ By the end of this module, you'll be able to:
  -  Deploy Active Directory Domain Services domain controllers.
  -  Migrate a domain controller to a new site.
  -  Manage Active Directory Domain Services operations masters.
+
+## Get help along the way
+
+While you're going through the training on Active Directory Domain Services, you have the chance to interact with this AI-powered chat agent. Clockwork Orin is trained on Windows Server and Active Directory. Clockwork Orin can help explain things during the training and help guide you through the tasks during the guided project at the end of the learning path. Launch [Clockwork Orin](https://aka.ms/ADDSAppliedSkillTutor?azure-portal=true) in a separate window or tab to keep it with you throughout the training and activities.
