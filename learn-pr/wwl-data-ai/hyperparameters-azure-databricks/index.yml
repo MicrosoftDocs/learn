@@ -11,7 +11,7 @@ metadata:
   ms.collection:
     - wwl-ai-copilot
 title: Tune hyperparameters in Azure Databricks
-summary: Tuning hyperparameters is an essential part of machine learning. In Azure Databricks, you can use the Hyperopt library to optimize hyperparameters automatically.
+summary: Tuning hyperparameters is an essential part of machine learning. In Azure Databricks, you can use the Optune library to optimize hyperparameters automatically.
 abstract: |
   In this module, you learn how to:
   - Use the Optuna library to optimize hyperparameters.
