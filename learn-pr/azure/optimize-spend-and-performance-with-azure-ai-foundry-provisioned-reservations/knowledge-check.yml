@@ -105,7 +105,7 @@ quiz:
     - content: "Azure AI Foundry deployments continue to run but are billed at the hourly rate."
       isCorrect: true
       explanation: "Correct. Azure AI Foundry deployments continue to run but are billed at the hourly rate when Azure reservation expires."
-    - content: "Azure AI Foundry deployments stops."
+    - content: "Azure AI Foundry deployments stop."
       isCorrect: false
       explanation: "Incorrect. Azure AI Foundry deployments continue to run but are billed at the hourly rate when Azure reservation expires."
     - content: "Azure AI Foundry deployments continue to run but are billed at the monthly rate."

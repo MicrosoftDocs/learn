@@ -86,11 +86,11 @@ In this event, Azure AI Foundry directs you to other regions with available quot
 
 :::image type="content" source="../media/4-deploy-model-capacity-not-available.png" alt-text="A screenshot of the Azure AI Foundry deployment page for a provisioned deployment with no capacity available." border="true":::
 
-Important things to note:
-
-- A message displays, indicating the number of PTUs you have in available quota and how many you can currently deploy at this time.
-
-- If you select a PTU number greater than the service capacity, a message displays that provides options for you to obtain more capacity, and an option to select an alternate region. Selecting **See other regions** opens a dialog box that lists the Azure AI Foundry resources where you can create a deployment, along with the maximum-sized deployment based on the available quota and service capacity in each region.
+> [!IMPORTANT]
+>
+> - A message displays, indicating the number of PTUs you have in available quota and how many you can currently deploy at this time.
+>
+> - If you select a PTU number greater than the service capacity, a message displays that provides options for you to obtain more capacity, and an option to select an alternate region. Selecting **See other regions** opens a dialog box that lists the Azure AI Foundry resources where you can create a deployment, along with the maximum-sized deployment based on the available quota and service capacity in each region.
 
 When you select a resource and then select **Switch resource**, the **Deploy model** dialog box redisplays information using the selected resource. You can then proceed to create your deployment in the new region.
 
