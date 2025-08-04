@@ -2,6 +2,8 @@ Innovative and entrepreneurial by nature, small and medium business (SMB) founde
 
 They believe affordable AI solutions have the potential to increase productivity and improve customer service— helping them gain a competitive edge in their respective industries.
 
+:::image type="content" border="true" source="../media/small-business-owner-at-work.png" alt-text="Photograph of a man working on a Copilot+ PC in a casual home office setting":::
+
 ## SMB founder/owner concerns
 
 According to Microsoft research, the five biggest responsibilities of SMB founders and owners are:

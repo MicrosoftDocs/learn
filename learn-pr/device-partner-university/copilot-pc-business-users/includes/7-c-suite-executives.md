@@ -2,6 +2,8 @@ As leaders of their organizations, C-suite executives are interested in finding 
 
 While they aim to be among the first to capitalize on emerging technology, they also need to manage costs and ensure a consistent user experience for their employees.
 
+:::image type="content" border="true" source="../media/c-suite-executive-at-desk.png" alt-text="Photograph of a businessman at a desk working on a Copilot+ PC":::
+
 ## Aspects of C-suite roles
 
 According to Microsoft research, the top five responsibilities that C-suite executives must navigate are:

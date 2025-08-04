@@ -2,6 +2,8 @@ Information Technology Decision Makers (ITDMs) are responsible for determining w
 
 They want to ensure that pursuing an ambitious AI strategy will deliver returns, so they’re concerned about potential technical challenges and security risks.
 
+:::image type="content" border="true" source="../media/information-technology-decision-maker-at-desk.png" alt-text="Photograph of a woman wearing a headset while working on a Copilot+ PC":::
+
 ## Top considerations for ITDMs
 
 According to Microsoft research, the top five responsibilities that ITDMs manage are:

@@ -2,6 +2,8 @@ Operating outside of IT, these business decision makers (BDMs) are mainly focuse
 
 They want their teams to leverage AI-enhanced technologies to advance their flexibility, creativity, and knowledge.
 
+:::image type="content" border="true" source="../media/marketing-professional-at-work.png" alt-text="Photograph of a woman using a Copilot+ PC laptop on a riser connected to two monitors, working on a PowerPoint presentation":::
+
 ## Challenges for sales/marketing
 
 According to Microsoft research, the top five responsibilities that Sales and Marketing pros manage are:

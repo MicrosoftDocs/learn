@@ -9,6 +9,7 @@ metadata:
   ms.author: v-stephanier
   ms.topic: module
   ms.service: windows-11
+  ms.custom: CW052024-2
 summary: >
   Explore early adopters of Copilot+ PCs for business, and learn what Copilot+ PCs can do for them.
 abstract: |
@@ -33,11 +34,11 @@ units:
   - learn.dpu.copilot-pc-business-users.introduction
   - learn.dpu.copilot-pc-business-users.modern-business-landscape
   - learn.dpu.copilot-pc-business-users.empower-innovation
-  - learn.dpu.copilot-pc-business-users.support-professionals
-  - learn.dpu.copilot-pc-business-users.ambitious-leadership
+  - learn.dpu.copilot-pc-business-users.early-adopters
+  - learn.dpu.copilot-pc-business-users.key-early-adopter-types
   - learn.dpu.copilot-pc-business-users.information-technology-decision-makers
   - learn.dpu.copilot-pc-business-users.c-suite-executives
-  - learn.dpu.copilot-pc-business-users.smb-founders-owners
+  - learn.dpu.copilot-pc-business-users.small-business-founders-owners
   - learn.dpu.copilot-pc-business-users.sales-marketing-pros
   - learn.dpu.copilot-pc-business-users.knowledge-creators
   - learn.dpu.copilot-pc-business-users.knowledge-creator-subsets

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.copilot-pc-business-users.ambitious-leadership
-title: Ambitious leadership
+uid: learn.dpu.copilot-pc-business-users.small-business-founders-owners
+title: Small and medium-sized business founders and owners
 metadata:
-  title: Ambitious Leadership
+  title: Small and Medium-Sized Business Founders and Owners
   description: This content is part of the "Introducing Copilot+ PC business users" module.
   ms.date: 08/04/2025
   author: Stephanie-Rosenzweig
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/5-ambitious-leadership.md)]
+  [!include[](includes/8-small-business-founders-owners.md)]
