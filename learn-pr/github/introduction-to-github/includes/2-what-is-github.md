@@ -120,46 +120,54 @@ Congratulations, you just created a new file in your repository! You have also c
 
 Before we review branches and commits in the next unit, let’s quickly review gists, wikis, and GitHub pages because they're similar to repositories.
 
-### What are gists?
+### What are gists
 
-Gists are a GitHub feature for sharing code snippets, notes, or small pieces of information conveniently. They are Git repositories that can be cloned, forked, and version-controlled like full repositories. Gists are particularly useful for sharing quick solutions, configuration files, or examples without the need to create a full repository.
+Now that we have a good understanding of repositories, we can review gists. Similarly to repositories, gists are a simplified way to share code snippets with others.
 
-#### Key features of gists
-1. **Public and Secret Gists**:
-   - **Public Gists**: These are visible to everyone and can be discovered through GitHub's search functionality. They are ideal for sharing code snippets or solutions that you want to make available to the broader community.
-   - **Secret Gists**: These are not searchable or publicly listed, but they are not entirely private. Anyone with the URL can access them. They are useful for sharing code with a limited audience, such as collaborators or friends.
+Every gist is a Git repository, which you can fork and clone and be made either public or secret. Public gists are displayed publicly where people can browse new ones as they’re created. Public gists are also searchable. Conversely, secret gists aren't searchable, but they aren’t entirely private. If you send the URL of a secret gist to a friend, they'll be able to see it.
 
-2. **Version Control**:
-   - Every change made to a gist is tracked, allowing you to view the history of edits. This makes it easy to revert to a previous version or see how the snippet has evolved over time.
+### Forking and cloning gists
 
-3. **Forking and Cloning**:
-   - Like repositories, gists can be forked and cloned. This allows others to build upon your work or adapt it to their needs.
+You can fork a gist to create a copy of someone else's gist in your account.
 
-4. **Embedding**:
-   - Gists can be embedded into websites or blogs, making them a great tool for sharing code examples in tutorials or documentation.
+1. Navigate to the gist you want to fork.
+2. Select **Fork** at the top-right of the gist page.
 
-5. **Markdown Support**:
-   - Gists support Markdown formatting, which means you can include rich text, headings, links, and even images alongside your code. This is particularly useful for adding context or explanations to your snippets.
+To clone a gist locally:
 
-6. **Collaboration**:
-   - While gists are typically used for individual snippets, they can also be shared and collaborated on by multiple users. Forking and commenting on gists enable lightweight collaboration.
+```bash
+git clone https://gist.github.com/your-gist-id.git
+```
 
-#### Use cases for Gists
-- Sharing quick code examples or solutions.
-- Storing configuration files or scripts for personal use.
-- Creating templates for commonly used code patterns.
-- Sharing error logs or debugging information with others.
-- Embedding code snippets in blogs, forums, or documentation.
+To learn more about gists, see the linked article in our Resources section at the end of this module titled *Creating Gists*.
 
-#### Limitations of Gists
-> [!IMPORTANT]
-> Gists are not entirely private, even if marked as secret. Anyone with the URL can access them, so they should not be used for sensitive or confidential information.
-- They are best suited for small snippets or single files. For larger projects or multi-file structures, a full repository is more appropriate.
-
-To learn more about how to create and manage gists, refer to the GitHub documentation in the Resources section of this module or visit the [GitHub Gists documentation](https://docs.github.com/en/github/writing-on-github/creating-gists).
+---
 
 ### What are wikis?
 
 Every repository on GitHub.com comes equipped with a section for hosting documentation, called a wiki. You can use your repository's wiki to share long-form content about your project, such as how to use it, how you designed it, or its core principles. While a README file quickly tells what your project can do, you can use a wiki to provide additional documentation.
 
 It’s worth a reminder that if your repository is private, only people who have at least read access to your repository will have access to your wiki.
+
+### Creating, editing, and deleting wiki pages
+
+You can use the GitHub wiki to create and manage documentation for your project.
+
+**To create a wiki page:**
+
+1. Navigate to the repository.
+2. Select the **Wiki** tab.
+3. Select **Create the first page** if no pages exist, or **New Page** to add a page.
+4. Enter a title and content, then select **Save Page**.
+
+**To edit a wiki page:**
+
+1. Navigate to the wiki page you want to edit.
+2. Select **Edit** at the top-right.
+3. Make changes and select **Save Page**.
+
+**To delete a wiki page:**
+
+- Deleting a wiki page requires using Git. Clone the wiki repository, remove the file, and push the change.
+
+Learn more about managing wikis in [GitHub Docs - Adding or editing wiki pages](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages).
