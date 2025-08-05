@@ -11,7 +11,7 @@ With the latest Windows 11 Pro devices, you can work effectively from anywhere�
 
 Digital handwriting smoothly converts to typed text and supports multiple languages. Inking also works across more apps, including Windows Notifications, Photos, Paint, Paint 3D, Clipchamp, and non-Microsoft apps like Zoom, Spotify, WhatsApp, Facebook Messenger, and Good Notes.<sup>22</sup>
 
-[![A screenshot of Windows Ink with a dark‑mode bloom in the background on a Windows 11 Pro device.](../media/windows‑ink.png)](../media/windows‑ink‑large.png)
+[![A screenshot of Windows Ink with a dark‑mode bloom in the background on a Windows 11 Pro device.](../media/windows‑ink-inline.png)](../media/windows‑ink‑expanded.png)
 
 ## Personalize for every workstyle
 

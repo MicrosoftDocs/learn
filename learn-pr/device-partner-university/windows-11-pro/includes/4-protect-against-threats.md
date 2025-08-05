@@ -31,7 +31,7 @@ To protect against credential loss or theft, Windows Hello and Windows Hello for
 
 Windows Hello for Business now enables IT admins to enforce passwordless authentication by removing the password sign-in option on devices. Additionally, Windows Hello has a new look and integration with multiple features including passkeys to provide a more secure, seamless experience.<sup>17</sup>
 
-[ ![A screenshot of Windows Hello settings in dark mode on a Windows 11 Pro device.](../media/windows-hello-for-business.png)](../media/windows-hello-for-business-large.png#lightbox)
+[ ![A screenshot of Windows Hello settings in dark mode on a Windows 11 Pro device.](../media/windows-hello-for-business-inline.png)](../media/windows-hello-for-business-expanded.png#lightbox)
 
 
 ## Powerful safeguards for data and privacy
