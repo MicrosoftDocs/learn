@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.new-windows-11-pro.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is part of the "What's new with Windows 11 Pro" module.
+  ms.date: 07/23/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
