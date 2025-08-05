@@ -20,3 +20,4 @@ When you've finished the exercise in GitHub, return here for:
 
 > [!div class="nextstepaction"]
 > [Start the exercise on GitHub](https://github.com/skills/connect-the-dots?azure-portal=true)
+
