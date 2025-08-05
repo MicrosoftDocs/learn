@@ -12,7 +12,7 @@ Let’s explore how Copilot+ PCs support these themes—particularly security.
 **Accelerate success** with a turbocharged NPU, for an unmatched experience with lightning speed, smooth performance, and richer AI. Copilot+ PCs are powered by advanced NPUs capable of delivering up to 40 trillion operations per second (TOPS)—**fueling smoother performance, lightning-fast responsiveness, and more immersive AI experiences**.
 
 That’s up to **5x faster than 5-year-old Windows PCs still in use today**, enabling a noticeable leap forward in productivity and efficiency for modern workloads.  
-<small>Based on Cinebench 24 Multi-Core benchmark. [See Copilot+ PCs FAQs](https://aka.ms/cpclaims)</small>
+*Based on Cinebench 24 Multi-Core benchmark. [See Copilot+ PCs FAQs](https://aka.ms/cpclaims)*
 
 ## Unlock efficiency and innovation
 
