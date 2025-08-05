@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: purview
   hidden: false
-title: Investigate Insider Risk Alerts and Related Activity
+title: Investigate insider risk alerts and related activity
 summary: Investigate insider risk alerts and manage related cases in Microsoft Purview to assess user behavior, take appropriate action, and coordinate deeper reviews across teams.
 abstract: |
   After completing this module, you'll be able to:
