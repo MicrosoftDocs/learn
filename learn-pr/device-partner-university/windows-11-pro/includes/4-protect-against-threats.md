@@ -31,8 +31,11 @@ To protect against credential loss or theft, Windows Hello and Windows Hello for
 
 Windows Hello for Business now enables IT admins to enforce passwordless authentication by removing the password sign-in option on devices. Additionally, Windows Hello has a new look and integration with multiple features including passkeys to provide a more secure, seamless experience.<sup>17</sup>
 
-:::image type="content" border="false" source="..\media\windows-hello-for-business.png" alt-text="A screenshot of Passwordless Windows Hello for Business Settings and Log-in with Dark mode Bloom on a Windows 11 Pro device screen.":::
-
+:::image type="content"
+    source="../media/windows-hello-for-business-inline.png"
+    alt-text="A screenshot of Windows Hello settings in dark mode on a Windows 11 Pro device."
+    lightbox="../media/windows-hello-for-business-large.png"
+:::
 
 ## Powerful safeguards for data and privacy
 
@@ -46,9 +49,10 @@ Protect valuable business and personal information from chip to cloud with power
 ## Disclaimers
 
 1. Sold separately.  
-1. Results in comparison to Windows 10 PCs, improve your day-to-day experience with Windows 11 Pro laptops, Principled Technologies, April 2023. Report commissioned by Microsoft.  
+1. Results in comparison to Windows 10 PCs. *Improve Your Day‑to‑Day Experience with Windows 11 Pro Laptops*, Principled Technologies, April 2023. Report commissioned by Microsoft.  
 1. Results in comparison to Windows 10 PCs. Microsoft commissioned study delivered by Forrester Consulting *The Total Economic Impact™ of Windows 11 Pro Devices*, December 2022. [https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Vrvx](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Vrvx)  
-   *Note: Quantified benefits reflect results over a three-year period combined into a single composite organization. This organization generates USD 1 billion in annual revenue, employs 2,000 people, refreshes its hardware on a four-year cycle, and migrates its entire workforce to Windows 11 devices.*  
+[!NOTE]
+Quantified benefits reflect results over a three‑year period combined into a single composite organization. This organization generates USD 1 billion in annual revenue, employs 2,000 people, refreshes its hardware on a four‑year cycle, and migrates its entire workforce to Windows 11 devices. 
 1. Windows 11 Survey Report, Techaisle, September 2024. Microsoft commissioned report where results are in comparison with Windows 10 devices.  
 1. Battery life varies based on settings, usage, device, and other factors.  
 1. Requires eligible Microsoft 365 license.  

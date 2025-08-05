@@ -11,8 +11,11 @@ With the latest Windows 11 Pro devices, you can work effectively from anywhere�
 
 Digital handwriting smoothly converts to typed text and supports multiple languages. Inking also works across more apps, including Windows Notifications, Photos, Paint, Paint 3D, Clipchamp, and non-Microsoft apps like Zoom, Spotify, WhatsApp, Facebook Messenger, and Good Notes.<sup>22</sup>
 
-:::image type="content" border="false" source="..\media\windows-ink.png" alt-text="A screenshot of Windows Ink with a Dark mode Bloom in the background on a Windows 11 Pro device.":::
-
+:::image type="content" border="false"
+    source="../media/windows-ink-inline.png"
+    alt-text="A screenshot of Windows Ink with a dark‑mode bloom in the background on a Windows 11 Pro device."
+    lightbox="../media/windows-ink-large.png"
+:::
 
 ## Personalize for every workstyle
 
@@ -41,9 +44,10 @@ Windows 11 Pro devices support more sustainable workstyles. Enjoy the freedom of
 ## Disclaimers
 
 1. Sold separately.  
-1. Results in comparison to Windows 10 PCs, improve your day-to-day experience with Windows 11 Pro laptops, Principled Technologies, April 2023. Report commissioned by Microsoft.  
+1. Results in comparison to Windows 10 PCs. *Improve Your Day‑to‑Day Experience with Windows 11 Pro Laptops*, Principled Technologies, April 2023. Report commissioned by Microsoft.
 1. Results in comparison to Windows 10 PCs. Microsoft commissioned study delivered by Forrester Consulting *The Total Economic Impact™ of Windows 11 Pro Devices*, December 2022. [https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Vrvx](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Vrvx)  
-   *Note: Quantified benefits reflect results over a three-year period combined into a single composite organization. This organization generates USD 1 billion in annual revenue, employs 2,000 people, refreshes its hardware on a four-year cycle, and migrates its entire workforce to Windows 11 devices.*  
+[!NOTE]
+Quantified benefits reflect results over a three‑year period combined into a single composite organization. This organization generates USD 1 billion in annual revenue, employs 2,000 people, refreshes its hardware on a four‑year cycle, and migrates its entire workforce to Windows 11 devices.
 1. Windows 11 Survey Report, Techaisle, September 2024. Microsoft commissioned report where results are in comparison with Windows 10 devices.  
 1. Battery life varies based on settings, usage, device, and other factors.  
 1. Requires eligible Microsoft 365 license.  
