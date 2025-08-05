@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dpu.new-windows-11-pro
+title: What's new with Windows 11 Pro
+metadata:
+  title: What'S New With Windows 11 Pro
+  description: In this module, you'll discover how the latest Windows 11 Pro features can help organizations work more efficiently and securely. 
+  ms.date: 07/23/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+    Find out how Windows 11 Pro supports organizational goals with tools designed for productivity and protection.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the key benefits of Windows 11 Pro for organizations
+  - Identify the features included in Windows 11 Pro
+  - Evaluate how these features can enhance business operations
+prerequisites: |
+  - None
+iconUrl: /training/achievements/new-windows-11-pro.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+- business-owner
+- business-user
+- technology-manager
+products:
+- windows-11
+units:
+  - learn.dpu.new-windows-11-pro.introduction
+  - learn.dpu.new-windows-11-pro.accelerate-success
+  - learn.dpu.new-windows-11-pro.designed-for-business
+  - learn.dpu.new-windows-11-pro.protect-against-threats
+  - learn.dpu.new-windows-11-pro.easier-cost-effective
+  - learn.dpu.new-windows-11-pro.faster-performance
+  - learn.dpu.new-windows-11-pro.knowledge-check
+  - learn.dpu.new-windows-11-pro.summary
+badge:
+  uid: learn.dpu.new-windows-11-pro.badge
