@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-alerts.exercise-investigate-alert
+title: Exercise - Investigate a DLP Alert and Related Incident
+
+metadata:
+  title: Exercise - Investigate a DLP Alert and Related Incident
+  description: "Exercise - Investigate a DLP Alert and Related Incident"
+  ms.date: 08/05/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/exercise-investigate-alert.md)]
