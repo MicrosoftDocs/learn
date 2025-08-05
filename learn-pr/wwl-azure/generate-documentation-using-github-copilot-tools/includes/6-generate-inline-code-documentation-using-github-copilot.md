@@ -56,7 +56,7 @@ The Ask mode can be used to evaluate your code and suggest inline code documenta
 
 The Chat view in Edit mode can be used to generate inline code documentation for code file, class, or method. You can review the suggested inline documentation and request updates as needed before updating the code file.
 
-1. Open the Chat view in Ask mode.
+1. Open the Chat view in Edit mode.
 
 1. Add context to the chat prompt. For example, select the **Add Context** button and then select **Open Editors** to add the open editor tabs to the chat.
 

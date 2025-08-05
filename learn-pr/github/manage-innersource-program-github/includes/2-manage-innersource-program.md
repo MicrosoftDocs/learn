@@ -10,13 +10,16 @@ Anyone can freely use, modify, and share open-source software. Using open-source
 
 An InnerSource program can offer numerous benefits beyond what traditional closed-source models provide.
 
-First, they *encourage transparency*. Access to the source code of other company projects can help developers be more productive when working on their own projects. They can see how different teams solve problems similar to the ones they're facing, and often find code and other assets that they can reuse. Access to team issues, pull requests, and project plans also provide better data for them to understand the velocity and direction of the project.
+First, they *support internal visibility*. Access to the source code of other company projects can help developers be more productive when working on their own projects. They can see how different teams solve problems similar to the ones they're facing, and often find code and other assets that they can reuse. Access to team issues, pull requests, and project plans also provide better data for them to understand the velocity and direction of the project.
 
-Next, they *reduce friction*. Let's say that a consumer team is dependent on a bug fix or new feature for a project owned by a different team. IN an InnerSource program, they have a channel through which they can propose the changes they need. And if those changes can't be merged in for any reason, the consumer team has the option of forking the project to meet their needs.
+Next, they *reduce friction*. Let's say that a consumer team is dependent on a bug fix or new feature for a project owned by a different team. In an InnerSource program, they have a channel through which they can propose the changes they need. And if those changes can't be merged in for any reason, the consumer team has the option of forking the project to meet their needs.
 
 Finally, they *standardize practices*. A common challenge development organizations face is that different teams often diverge in the ways they operate. Building an InnerSource program is a great opportunity to adopt standard conventions that can be used across every development team, even if they don't follow identical practices. For example, two teams might prefer different processes for accepting contributions. Having them standardize on the way they communicate their different processes makes it much easier for anyone to contribute to either.
 
-These examples are just a few of the benefits enjoyed by InnerSource programs. To learn more, see [An introduction to InnerSource](https://resources.github.com/whitepapers/introduction-to-innersource/?azure-portal=true).
+> [!TIP]
+> Consider using GitHub Discussions and GitHub Projects to further support InnerSource collaboration across teams.
+
+These examples are just a few of the benefits enjoyed by InnerSource programs. To learn more, see [An introduction to InnerSource](https://resources.github.com/whitepapers/introduction-to-innersource/).
 
 ## Set up an InnerSource program on GitHub
 
@@ -25,7 +28,11 @@ These examples are just a few of the benefits enjoyed by InnerSource programs. T
 You can configure GitHub repositories with three levels of visibility. Users who don't meet the visibility requirement see "not found" pages when they try to access your repository. The levels are:
 
 - **Public** repositories are visible to everyone. Use this visibility for projects that are truly open source and offer access to people inside and outside of your organization.
-- **Internal** repositories are only visible to members of the organization that owns them. Use this visibility for InnerSource projects.
+- **Internal** repositories are only visible to members of the enterprise that owns them.
+
+> [!NOTE]  
+> Internal repositories are only available to GitHub Enterprise customers. Use this visibility for InnerSource projects.
+
 - **Private** repositories are only visible to the owner and any teams or individuals they add. Use this visibility for projects that only specific users and groups should have access to.
 
 Once you establish repository visibility, you can configure permissions on an individual or team basis. There are five permission levels:
@@ -36,7 +43,7 @@ Once you establish repository visibility, you can configure permissions on an in
 - **Maintain** level is recommended for project managers who need to manage the repository without access to sensitive or destructive actions.
 - **Admin** level is recommended for people who need full access to the project, including sensitive and destructive actions like managing security or deleting a repository.
 
-Learn more about [repository access permissions by level](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization?azure-portal=true).
+Learn more about [repository access permissions by level](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization).
 
 ### Create discoverable repositories
 
@@ -60,7 +67,8 @@ A README file communicates expectations for your project and helps you manage co
 - Include references to the projects on which you depend. These references are a good way to promote the work of others.
 - Use Markdown to guide readers through properly formatted content.
 
-If you put your README file in your repository's root directory, or in the hidden `.github` or `docs` directory, GitHub recognizes and automatically surfaces your README to repository visitors. If a repository contains more than one README file, then the file shown is chosen from locations in the following order: 
+If you put your README.md file in your repository's root directory, or in the hidden `.github` or `docs` directory, GitHub recognizes and automatically surfaces your README to repository visitors. If a repository contains more than one README file, then the file shown is chosen from locations in the following order: 
+
 1. The `.github` directory  
 2. The repository's root directory  
 3. The `docs` directory  
@@ -68,6 +76,8 @@ If you put your README file in your repository's root directory, or in the hid
 Check out some [Awesome README examples](https://github.com/matiassingers/awesome-readme?azure-portal=true).
 
 Once the project launches, use email and other networking channels to promote it. Reaching an appropriate audience could produce a significant boost in project participation.
+
+[Learn more about README files in the GitHub documentation.](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
 
 ### Manage projects on GitHub
 

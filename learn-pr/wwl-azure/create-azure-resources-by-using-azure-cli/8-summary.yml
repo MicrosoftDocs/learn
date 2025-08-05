@@ -6,8 +6,8 @@ metadata:
   description: "Summary"
   ms.date: 02/17/2025
   author: wwlpublish
-  ms.author: dbradish
+  ms.author: lumac
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/8-summary.md)]

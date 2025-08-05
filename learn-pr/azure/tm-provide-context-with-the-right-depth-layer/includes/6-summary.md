@@ -1,6 +1,6 @@
 Threat modeling allows engineers to graphically describe their system to others. It creates a common ground and enables more focused security conversations.
 
-However, threat models can either get too complex or too high level, depending on the system you're building and the required context.
+However, threat models can either get too complex or too high-level, depending on the system you're building and the required context.
 
 In this module, you learned to prioritize your issues and apply the right layer of security controls based on type and function.
 

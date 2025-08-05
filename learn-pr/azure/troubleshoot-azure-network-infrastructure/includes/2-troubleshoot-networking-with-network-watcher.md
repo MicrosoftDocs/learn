@@ -2,7 +2,7 @@ Azure Network Watcher includes several tools you can use to monitor your virtual
 
 In your engineering company, you want to help your staff to choose the right Network Watcher tool for each troubleshooting task. They need to understand all the options available and the kinds of problems that each tool can solve.
 
-Here, you'll look at the Network Watcher tool categories, the tools in each category, and how each tool is applied in example use cases.
+Here, you look at the Network Watcher tool categories, the tools in each category, and how each tool is applied in example use cases.
 
 ## What is Network Watcher?
 
@@ -12,7 +12,7 @@ Network Watcher is an Azure service that combines tools in a central place to di
 - Network diagnostic tools
 - Traffic logging tools
 
-With tools to monitor for and diagnose problems, Network Watcher gives you a centralized hub for identifying network glitches, CPU spikes, connectivity problems, memory leaks, and other issues before they affect your business.
+Network Watcher has tools to monitor for and diagnose problems. It gives you a centralized hub for identifying network glitches, CPU spikes, connectivity problems, memory leaks, and other issues before they affect your business.
 
 ## Network Watcher monitoring tools
 
@@ -49,7 +49,7 @@ You use the Azure portal to view the topology of an Azure network. In the Azure 
 
 The Connection Monitor tool provides a way to check that connections work between Azure resources. Use this tool to verify that two VMs can communicate if you want them to.
 
-This tool also measures the latency between resources. It can catch changes that will affect connectivity, such as changes to the network configuration or changes to network security group (NSG) rules. It can probe VMs at regular intervals to look for failures or changes.
+This tool also measures the latency between resources. It can catch changes that affect connectivity, such as changes to the network configuration or changes to network security group (NSG) rules. It can probe VMs at regular intervals to look for failures or changes.
 
 If there's an issue, Connection Monitor tells you why it occurred and how to fix it. Along with monitoring VMs, Connection Monitor can examine an IP address or fully qualified domain name (FQDN).
 
@@ -63,7 +63,7 @@ You can use Network Performance Monitor to monitor endpoint-to-endpoint connecti
 
 - Between branches and datacenters
 - Between virtual networks
-- For your connections between on-premises and the cloud
+- For your connections, between on-premises and the cloud
 - For Azure ExpressRoute circuits
 
 ## Network Watcher diagnostic tools
@@ -88,9 +88,15 @@ This tool uses a 5-tuple packet parameter-based verification mechanism to detect
 
 ### What is the NSG diagnostic tool?
 
-The Network Security Group (NSG) Diagnostics tool provides detailed information to help you understand and debug the security configuration of your network. 
+The Network Security Group (NSG) Diagnostics tool provides detailed information to help you understand and debug the security configuration of your network.
 
-For a given source-destination pair, the tool shows you the NSGs that will be traversed, the rules that will be applied in each NSG, and the final allow/deny status for the flow. By understanding which traffic flows will be allowed or denied in your Azure Virtual Network, you can determine if your NSG rules are configured correctly.
+For a given source-destination pair, the tool shows you:
+
+- The NSGs that will be traversed.
+- The rules that will be applied in each NSG.
+- The final allow/deny status for the flow.
+
+By understanding which traffic flows will be allowed or denied in your Azure Virtual Network, you can determine if your NSG rules are configured correctly.
 
 ### What is the next hop tool?
 
@@ -104,7 +110,7 @@ The effective security rules tool in Network Watcher displays all the effective 
 
 Network security groups (NSGs) are used in Azure networks to filter packets based on their source and destination IP address and port numbers. NSGs are vital to security because they help you carefully control the surface area of the VMs that users can access. Keep in mind, though, that a mistakenly configured NSG rule might prevent legitimate communication. As a result, NSGs are a frequent source of network problems.
 
-For example, if two VMs can't communicate because an NSG rule blocks them, it can be difficult to diagnose which rule is causing the problem. You'll use the effective security rules tool in Network Watcher to display all the effective NSG rules and help you diagnose which rule is causing the specific problem.
+For example, if two VMs can't communicate because an NSG rule blocks them, it can be difficult to diagnose which rule is causing the problem. You use the effective security rules tool in Network Watcher to display all the effective NSG rules and help you diagnose which rule is causing the specific problem.
 
 To use the tool, you choose a VM and its network adapter. The tool displays all the NSG rules that apply to that adapter. It's easy to determine a blocking rule by viewing this list.
 
@@ -130,7 +136,7 @@ If the connection is successful, information about the communication appears, in
 - The number of probe packets sent.
 - The number of hops in the complete route to the destination.
 
-If the connection is unsuccessful, you'll see details of the fault. Fault types include:
+If the connection is unsuccessful, you see details of the fault. Fault types include:
 
 - **CPU**. The connection failed because of high CPU utilization.
 - **Memory**. The connection failed because of high memory utilization.
@@ -166,7 +172,7 @@ Network Watcher includes the two following traffic tools:
 
 ### What is the flow logs tool?
 
-Flow logs allows you to log information about IP traffic flowing through a network security group. Flow logs stores data in Azure storage. Flow data is sent to Azure Storage from where you can access it and export it to any visualization tool, security information and event management (SIEM) solution, or intrusion detection system (IDS) of your choice. You can use this data to analyze traffic patterns and troubleshoot connectivity issues.
+Flow logs allows you to log information about IP traffic flowing through a network security group. Flow logs stores data in Azure storage. From Azure Storage, you can access your flow data and export it to any visualization tool, security information and event management (SIEM) solution, or intrusion detection system (IDS) of your choice. You can use this data to analyze traffic patterns and troubleshoot connectivity issues.
 
 Flow logs use cases can be categorized into two types. Network monitoring and usage monitoring and optimization.
 
@@ -180,7 +186,7 @@ Flow logs use cases can be categorized into two types. Network monitoring and us
 #### Usage monitoring and optimization
 
 - Identify top talkers in your network.
-- Combine with GeoIP data to identify cross-region traffic.
+- Identify cross-region traffic by combing flow data with GeoIP data.
 - Understand traffic growth for capacity forecasting.
 - Use data to remove overly restrictive traffic rules.
 
@@ -201,7 +207,7 @@ Let's examine some scenarios that you can investigate and troubleshoot by using 
 
 ### There are connectivity issues in a single-VM network
 
-Your colleagues have deployed a VM in Azure and are having network connectivity issues. Your colleagues are trying to use Remote Desktop Protocol (RDP) to connect to the virtual machine, but they can't connect.
+Your colleagues deployed a VM in Azure and are having network connectivity issues. Your colleagues are trying to use Remote Desktop Protocol (RDP) to connect to the virtual machine, but they can't connect.
 
 To troubleshoot this issue, use the IP flow verify tool. This tool lets you specify a local and remote port, the protocol (TCP/UDP), the local IP, and the remote IP to check the connection status. It also lets you specify the direction of the connection (inbound or outbound). IP flow verify runs a logical test on the rules in place on your network.
 
@@ -211,17 +217,17 @@ Suppose the result shows that access was denied because of the NSG rule **Defaul
 
 ### A VPN connection isn't working
 
-Your colleagues have deployed VMs in two virtual networks and can't connect between them.
+Your colleagues deployed VMs in two virtual networks and can't connect between them.
 
 To troubleshoot a VPN connection, use Azure VPN troubleshoot. This tool runs diagnostics on a virtual network gateway connection, and returns a health diagnosis. You can run this tool from the Azure portal, PowerShell, or the Azure CLI.
 
-When you run the tool, it checks the gateway for common issues and returns the health diagnosis. You can also view the log file to get more information. The diagnosis will show whether the VPN connection is working. If the VPN connection isn't working, VPN troubleshoot will suggest ways to resolve the issue.
+When you run the tool, it checks the gateway for common issues and returns the health diagnosis. You can also view the log file to get more information. The diagnosis shows whether the VPN connection is working. If the VPN connection isn't working, VPN troubleshoot suggests ways to resolve the issue.
 
-Suppose the diagnosis shows a key mismatch. To resolve the problem, reconfigure the remote gateway to make sure the keys match on both ends. Pre-shared keys are case-sensitive.
+Suppose the diagnosis shows a key mismatch. To resolve the problem, reconfigure the remote gateway to make sure the keys match on both ends. Preshared keys are case-sensitive.
 
 ### No servers are listening on designated destination ports
 
-Your colleagues have deployed VMs in a single virtual network and can't connect between them.
+Your colleagues deployed VMs in a single virtual network and can't connect between them.
 
 Use the connection troubleshoot tool to troubleshoot this issue. In this tool, you specify the local and remote VMs. In the probe setting, you can choose a specific port.
 

@@ -5,6 +5,9 @@ You learned about:
 - Finding relevant issues and pull requests.
 - Searching history to find context.
 - Making connections within GitHub to help others find things.
+- Use labels and milestones to filter and organize issues.
+- Respond faster with saved replies.
+- Assign issues and pull requests to collaborators.
 
 Now that you're familiar with finding and organizing information on GitHub, learn to [Maintain a secure repository by using GitHub best practices](/training/modules/maintain-secure-repository-github/).
 

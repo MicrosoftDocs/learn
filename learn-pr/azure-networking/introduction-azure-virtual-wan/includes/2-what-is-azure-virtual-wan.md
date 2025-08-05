@@ -28,11 +28,11 @@ Azure Virtual WAN is a hub-and-spoke architecture. The Virtual WAN is a Microsof
 
 Microsoft hosts and manages all the components that make up this service. It's easy to deploy and use, while offering the following services:
 
-- Enables any-to-any connectivity to workloads distributed globally in virtual networks
+- Enables any-to-any connectivity to workloads distributed globally in virtual networks.
 - Connects:
-  - Working at home and mobile users using point-to-site VPN
-  - Branch offices using site-to-site VPN
-  - Main campuses and datacenters using ExpressRoute for private connections
+  - Working at home and mobile users using point-to-site VPN.
+  - Branch offices using site-to-site VPN.
+  - Main campuses and datacenters using ExpressRoute for private connections.
 
 Virtual WAN hubs enabled in Azure regions function as networking hubs. These hubs are connected in full-mesh integration. This integration supports any-to-any connectivity access to workloads that are globally distributed.
 
@@ -57,16 +57,16 @@ The following image depicts an Azure Virtual WAN deployment with two Virtual hub
 
 ## Secure virtual hub
 
-To convert the virtual hub to a secure virtual hub, use Azure Firewall Manager.
+To convert the virtual hub to a secured virtual hub, use Azure Firewall Manager.
 
 Firewall rules, created by the Firewall Manager, allow for the creation of security and routing policies for network traffic. Data flowing from the internet, private IP addresses, or Azure platform services can be filtered.
 
 >[!NOTE]
 > User-defined routes aren't needed to route traffic through the firewall.
 
-The secure virtual hub supports the provisioning of two security providers:
+The secured virtual hub supports the provisioning of two security providers:
 
 - Azure Firewall for private traffic
 - Third-party security providers that are integrated with Firewall Manager
 
-Virtual hubs or secure virtual hubs are the regional connection points for a virtual WAN. These hubs support multiple service endpoints. The endpoints provide connectivity between networks and services. They're the core of networking for each region.
+Virtual hubs or secured virtual hubs are the regional connection points for a virtual WAN. These hubs support multiple service endpoints. The endpoints provide connectivity between networks and services. They're the core of networking for each region.

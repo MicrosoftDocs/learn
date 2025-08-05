@@ -5,7 +5,7 @@ metadata:
   description: Discover the services and tools available to automate the deployment and configuration of your Azure infrastructure.
   ms.service: azure-virtual-machines
   manager: mkluck
-  ms.date: 03/29/2023
+  ms.date: 06/24/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module
@@ -37,4 +37,4 @@ units:
 - learn.choose-compute-provisioning.6-summary
 badge:
   uid: learn.choose-compute-provisioning.badge
-
+

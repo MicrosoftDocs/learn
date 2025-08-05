@@ -1,10 +1,10 @@
 ### YamlMime:Module
 uid: learn.end-to-end-encryption-with-app-gateway
 metadata:
-  title: Encrypt network traffic end to end with Azure Application Gateway
+  title: Encrypt Network Traffic End to End with Azure Application Gateway
   description: Secure the traffic from your users all the way to your web servers by enabling TLS encryption on Application Gateway.
   manager: kumud
-  ms.date: 01/16/2024
+  ms.date: 06/25/2025
   author: greg-lindsay
   ms.author: greglin
   ms.topic: module
@@ -41,4 +41,4 @@ units:
 - learn.end-to-end-encryption-with-app-gateway.7-summary
 badge:
   uid: learn.end-to-end-encryption-with-app-gateway.badge
-
+

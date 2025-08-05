@@ -1,4 +1,4 @@
-Microsoft Sentinel is now generally available within the Microsoft unified security operations platform in the Microsoft Defender portal. The following benefits and new or improved capabilities are available in the Defender portal with the integration of Microsoft Sentinel and Defender XDR.
+Microsoft Sentinel is now generally available in the Microsoft Defender portal. The following benefits and new or improved capabilities are available in the Defender portal with the integration of Microsoft Sentinel and Defender XDR.
 
 ## Microsoft Sentinel integration with Microsoft Defender XDR
 
@@ -6,7 +6,7 @@ Use one of the following methods to integrate Microsoft Sentinel with Microsoft 
 
 - Ingest Microsoft Defender XDR service data into Microsoft Sentinel and view Microsoft Sentinel data in the Azure portal. Enabled by installing the Defender XDR connector in Microsoft Sentinel.
 
-- Integrate Microsoft Sentinel and Defender XDR into a single, unified security operations platform in the Microsoft Defender portal. In this case, view Microsoft Sentinel data directly in the Microsoft Defender portal with the rest of your Defender incidents, alerts, vulnerabilities, and other security data. Enabled by installing the Defender XDR connector in Microsoft Sentinel and then onboarding Microsoft Sentinel to the unified operations platform in the Defender portal.
+- Integrate Microsoft Sentinel and Defender XDR into a single portal. In this case, view Microsoft Sentinel data directly in the Microsoft Defender portal with the rest of your Defender incidents, alerts, vulnerabilities, and other security data. Enabled by installing the Defender XDR connector in Microsoft Sentinel and then onboarding Microsoft Sentinel to the unified operations platform in the Defender portal.
 
 Select the appropriate tab to see what the Microsoft Sentinel integration with Defender XDR looks like depending on which integration method you use.
 
@@ -14,7 +14,7 @@ Select the appropriate tab to see what the Microsoft Sentinel integration with D
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel.
 
-:::image type="content" source="../media/sentinel-xdr.png" alt-text="Diagram of the unified security operations platform for Microsoft Sentinel in Azure and in Microsoft Defender XDR." lightbox="../media/sentinel-xdr.png" border="false":::
+:::image type="content" source="../media/sentinel-xdr.png" alt-text="Diagram of Microsoft Sentinel in Azure and in Microsoft Defender XDR." lightbox="../media/sentinel-xdr.png" border="false":::
 
 In this diagram:
 
@@ -25,9 +25,9 @@ In this diagram:
 
 ## [Defender portal](#tab/defender-portal)
 
-The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel with the unified security operations platform.
+The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel with Microsoft Defender.
 
-:::image type="content" source="../media/sentinel-unified-siem-xdr.png" alt-text="Diagram of the unified security operations platform for Microsoft Sentinel in Azure and in Microsoft Defender XDR." lightbox="../media/sentinel-unified-siem-xdr.png" border="false":::
+:::image type="content" source="../media/sentinel-unified-siem-xdr.png" alt-text="Diagram of Microsoft Defender with Microsoft Sentinel in Azure and in Microsoft Defender XDR." lightbox="../media/sentinel-unified-siem-xdr.png" border="false":::
 
 In this diagram:
 
@@ -46,7 +46,7 @@ Query from a single portal across different data sets to make hunting more effic
 
 ## Attack disruption
 
-Deploy automatic attack disruption for SAP with both the unified security operations platform and the Microsoft Sentinel solution for SAP applications. For example, contain compromised assets by locking suspicious SAP users in a financial process manipulation attack.
+Deploy automatic attack disruption for SAP with both Microsoft Defender and the Microsoft Sentinel solution for SAP applications. For example, contain compromised assets by locking suspicious SAP users in a financial process manipulation attack.
 
 ## Unified entities
 
