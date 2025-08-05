@@ -5,7 +5,7 @@ metadata:
   title: Module assessment
   description: Test your knowledge of running evaluations and generating a synthetic dataset with the Azure AI Evaluation SDK.
   ms.date: 10/13/2024
-  author: aprilspeight
+  author: aprilgittens
   ms.author: apspeigh
   ms.topic: unit
   ms.collection:

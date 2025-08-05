@@ -4,12 +4,12 @@ title: Explore LlamaIndex
 metadata:
   title: Explore LlamaIndex
   description: "Explore LlamaIndex"
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/08/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/04-llamaindex.md)]
+  [!include[](includes/04-llamaindex.md)]

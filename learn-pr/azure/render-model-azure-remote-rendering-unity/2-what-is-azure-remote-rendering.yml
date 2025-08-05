@@ -5,7 +5,7 @@ metadata:
   title: Azure Remote Rendering overview
   description: Learn about Azure Remote Rendering and how it can help render complex 3D models for untethered devices.
   ms.date: 07/31/2023
-  author: aprilspeight
+  author: aprilgittens
   ms.author: apspeigh
   ms.topic: unit
   ms.custom:
@@ -15,4 +15,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-is-azure-remote-rendering.md)]
-
+

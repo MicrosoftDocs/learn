@@ -1,4 +1,4 @@
-In this unit, you'll learn how to monitor and manage billing for GitHub’s metered products, including Actions minutes, storage, licenses, and advanced features like Copilot and GHAS.
+In this unit, you'll learn how to monitor and manage billing for GitHub’s metered products, including Actions minutes, storage, licenses, and advanced features like Copilot and GitHub Advanced Security (GHAS).
 
 GitHub provides detailed billing and consumption reports to track the usage of **metered products**. These reports help administrators monitor costs, allocate resources efficiently, and ensure compliance with organizational policies.
 
@@ -74,8 +74,10 @@ GitHub Enterprise provides advanced features for organizations, and the number o
 GitHub Advanced Security (GHAS) offers **code scanning, secret scanning, and dependency review** for enhanced security.
 
 ### Tracking Consumption
-- View reports in **Settings → Billing → GHAS Usage** to see active committers.
-- The report shows **unique committers per billing period**.
+- To view GitHub Advanced Security (GHAS) usage, go to your Enterprise account and navigate to:
+https://github.com/enterprises/<your-enterprise>/billing → Advanced Security
+- An active committer is anyone who has pushed at least one commit to a repository with GitHub Advanced Security (GHAS) enabled within the **last 90 days**, regardless of when the commit was originally authored.
+- GHAS billing is based on the number of **unique active committers** per billing period.
 
 ### Billing Details
 - **Pricing Model:**
@@ -89,7 +91,7 @@ GitHub Advanced Security (GHAS) offers **code scanning, secret scanning, and dep
 
 ---
 
-## GitHub Copilot**
+## GitHub Copilot
 GitHub Copilot provides **AI-driven code completion** and suggestions, billed per user.
 
 ### Tracking Consumption
@@ -123,8 +125,8 @@ GitHub LFS is used for storing large binary files separately from Git repositori
 ### Billing Details
 
 - **Free Tier:**
-  - 1GB of storage per repository
-  - 1GB of bandwidth per month
+  - 1GB of storage per account per month
+  - 1GB of bandwidth usage per month
 
 For more information on Git Large File Storage (LFS) usage and limits, see [GitHub's LFS documentation](https://docs.github.com/en/github/managing-large-files/about-git-large-file-storage#about-storage-and-bandwidth-usage).
 

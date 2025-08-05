@@ -1,4 +1,4 @@
-You're a Security Operations Analyst working at a company that deployed both Microsoft Defender XDR and Microsoft Sentinel. You need to prepare for the Unified Security Operations Platform connecting Microsoft Sentinel to Defender XDR.
+You're a Security Operations Analyst working at a company that deployed both Microsoft Defender XDR and Microsoft Sentinel. You need to prepare for Microsoft Sentinel in the Microsoft Defender portal by connecting Microsoft Sentinel to Defender XDR.
 
 In this exercise, you perform the following tasks:
 
@@ -19,7 +19,7 @@ In this task, you deploy the Microsoft Defender XDR connector.
 
 1. In the Microsoft Edge browser, open the simulated environment by selecting this link: **[Azure portal]( https://app.highlights.guide/start/1c894b46-4b0a-40cb-b0f0-1e1c86c615f3?token=16d48b6c-eace-4a1f-8050-098d29d23a89)**.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. On the Azure portal *Home* page, select the **Microsoft Sentinel** icon.
 
 1. On the *Microsoft Sentinel* page, select the **Woodgrove-LogAnalyiticWorkspace** Workspace.
 

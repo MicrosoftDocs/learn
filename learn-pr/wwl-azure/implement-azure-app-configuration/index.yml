@@ -1,32 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-azure-app-configuration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Azure App Configuration
   description: "Learn how to use Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features."
-  ms.date: 07/17/2024
+  ms.date: 06/27/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
   ms.custom:
   - N/A
   ms.service: azure-app-configuration
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Implement Azure App Configuration
 summary: Learn how to use Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features.
 abstract: |
   After completing this module, you'll be able to:
 
-  * Explain the benefits of using Azure App Configuration
+  -   Explain the benefits of using Azure App Configuration
 
-  * Describe how Azure App Configuration stores information
+  -   Describe how Azure App Configuration stores information
 
-  * Implement feature management
+  -   Implement feature management
 
-  * Securely access your app configuration information
+  -   Securely access your app configuration information
+
+  -   Retrieve configuration settings from Azure App Configuration
 prerequisites: |
-  * You should be experienced with developer concepts and terminology.
+  -   You should be experienced with developer concepts and terminology.
 
-  * An understanding of cloud computing and some experience with the Azure portal.
+  -   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/azure-app-implement-configuration.svg
 levels:
 - intermediate
@@ -42,7 +46,8 @@ units:
 - learn.wwl.implement-azure-app-configuration.create-paired-keys-values
 - learn.wwl.implement-azure-app-configuration.manage-application-features
 - learn.wwl.implement-azure-app-configuration.secure-data
+- learn.wwl.implement-azure-app-configuration.retrieve-configuration-settings
 - learn.wwl.implement-azure-app-configuration.knowledge-check
 - learn.wwl.implement-azure-app-configuration.summary
 badge:
-  uid: learn.wwl.implement-azure-app-configuration.badge
+  uid: learn.wwl.implement-azure-app-configuration.badge
