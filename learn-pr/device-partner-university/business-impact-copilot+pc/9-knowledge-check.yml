@@ -36,7 +36,7 @@ quiz:
           explanation: "Correct. The Copilot key invokes the Copilot app for easy AI integration."
         - content: "To activate voice commands"
           isCorrect: false
-          explanation: "Incorrect. This is not the primary function of the Copilot key."
+          explanation: "Incorrect. This isn't the primary function of the Copilot key."
         - content: "To access system settings"
           isCorrect: false
           explanation: "Incorrect. System settings are accessed through other means."
@@ -44,7 +44,7 @@ quiz:
     choices:
         - content: "By enabling remote desktop access"
           isCorrect: false
-          explanation: "Incorrect. Recall does not provide remote access functionality."
+          explanation: "Incorrect. Recall doesn't provide remote access functionality."
         - content: "By providing real-time virus protection"
           isCorrect: false
           explanation: "Incorrect. This is a security feature, not related to Recall."
@@ -59,9 +59,9 @@ quiz:
         - content: "Windows Defender Antivirus"
           isCorrect: false
           explanation: "Incorrect. This is a standard Windows security feature."
-        - content: "Microsoft Pluton security co-processor"
+        - content: "Microsoft Pluton security coprocessor"
           isCorrect: true
-          explanation: "Correct. Copilot+ PCs include this co-processor for enhanced data protection."
+          explanation: "Correct. Copilot+ PCs include this coprocessor for enhanced data protection."
         - content: "Firewall protection"
           isCorrect: false
           explanation: "Incorrect. This is a general Windows feature."
@@ -78,7 +78,7 @@ quiz:
           explanation: "Correct. NPUs are optimized for AI tasks, offering better performance and energy efficiency."
         - content: "They increase internet speed"
           isCorrect: false
-          explanation: "Incorrect. NPUs do not affect network performance."
+          explanation: "Incorrect. NPUs don't affect network performance."
         - content: "They improve battery charging time"
           isCorrect: false
           explanation: "Incorrect. NPUs contribute to energy efficiency but not charging speed."
