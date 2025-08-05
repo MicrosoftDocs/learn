@@ -1,4 +1,10 @@
-In this exercise, you investigate activity related to a departing employee who might have copied and archived sensitive content before their account was disabled. You review the alert, evaluate the user's actions, escalate the case, and examine the broader context in Microsoft Defender.
+In this exercise, you investigate activity related to a departing employee who may have copied and archived sensitive content before their account was disabled. You'll review the alert, evaluate the user's actions, escalate the case, and examine the broader context in Microsoft Defender.
+
+> [!NOTE]
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page might not be enabled and text-based inputs that fall outside of the specified script might not be supported. A pop-up message displays stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.
+>
+>
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature isn't available within the simulation.":::
 
 **Tasks:**
 
@@ -8,9 +14,11 @@ In this exercise, you investigate activity related to a departing employee who m
 
 ## Task 1 - Investigate alert details and user activity
 
-In this task, you review the insider risk alert and analyze the user's activity using key investigation tools.
+In this task, you'll open a simulated version of Microsoft Purview to investigate an insider risk alert. You'll review the alert, examine user activity, and use built-in tools to summarize key behaviors.
 
-1. In Microsoft Purview, go to **Solutions** > **Insider Risk Management** > **Alerts**.
+Complete this task in the simulation: **[Open simulated Microsoft Purview portal](https://app.highlights.guide/start/d3e09027-0dbb-40cf-a5b9-8a08308a7350?token=16d48b6c-eace-4a1f-8050-098d29d23a89&link=0&azure-portal=true)**.
+
+1. In the [simulated Microsoft Purview portal](https://app.highlights.guide/start/d3e09027-0dbb-40cf-a5b9-8a08308a7350?token=16d48b6c-eace-4a1f-8050-098d29d23a89&link=0&azure-portal=true), go to **Solutions** > **Insider Risk Management** > **Alerts**.
 
 1. Select the alert titled *Potential data theft - Employee Departure* (Alert ID `4bdf001f`) at the top of the list.
 
@@ -68,9 +76,11 @@ You have successfully created, escalated, and resolved the insider risk case bas
 
 ## Task 3 - Correlate incident data in Microsoft Defender
 
-In this task, you use Microsoft Defender to view how the insider risk alert contributes to a broader security incident.
+In this task, you'll switch to a simulated version of Microsoft Defender to review how the insider risk alert is connected to a larger incident. You'll explore the attack timeline, related alerts, and additional evidence across Microsoft 365 services.
 
-1. In **Microsoft Defender**, go to **Incidents & response** > **Incidents & alerts** > **Incidents**.
+Complete this task in the simulation: **[Open simulated Microsoft Defender portal](https://app.highlights.guide/start/d3e09027-0dbb-40cf-a5b9-8a08308a7350?token=16d48b6c-eace-4a1f-8050-098d29d23a89&link=1&azure-portal=true)**.
+
+1. In the [simulated Microsoft Defender portal](https://app.highlights.guide/start/d3e09027-0dbb-40cf-a5b9-8a08308a7350?token=16d48b6c-eace-4a1f-8050-098d29d23a89&link=1&azure-portal=true), go to **Incidents & response** > **Incidents & alerts** > **Incidents**.
 
 1. Select **Add filter** > **Service/detection sources**, choose **Microsoft Insider Risk Management**, then select **Apply**.
 
