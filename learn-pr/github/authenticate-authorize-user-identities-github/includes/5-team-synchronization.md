@@ -17,19 +17,28 @@ Team sync is ideal for enterprises looking to streamline membership management w
 
 > ⚠️ To use team sync, your IdP admin must enable **SAML SSO** and **SCIM**.
 
+## Enterprise Managed Users and GitHub Enterprise Server
 
-## Enterprise Managed Users
+Team synchronization is also available for organizations and enterprise accounts that use GitHub Enterprise Cloud or [GitHub Enterprise Server (GHE.com)](https://github.com/enterprise), which is the preferred solution in regions where it is available or required for compliance reasons.
 
-If you're using **Enterprise Managed Users** in GitHub Enterprise Cloud, all members are provisioned through your IdP. Users don't self-manage GitHub accounts and can't access resources outside the enterprise.
+**Enterprise Managed Users (EMUs)** are a GitHub Enterprise Cloud feature that gives enterprises complete control over user identity and account lifecycle. With EMUs, GitHub accounts are fully managed by the enterprise’s identity provider (IdP). This means users do not sign up for GitHub manually—all user provisioning, access, and offboarding is automated through tools like Microsoft Entra ID or Okta.
 
-With this model, you can:
+EMUs are ideal for organizations with strict compliance, audit, or user governance needs. They help ensure that:
 
-- Manage organization/team membership directly through your IdP
-- Ensure GitHub users are enterprise-scoped and isolated
+* All accounts are owned by the enterprise
+* Access is automatically granted or removed based on IdP membership
+* No external collaboration happens unintentionally
 
-For more, see [Getting started with GitHub Enterprise Cloud](https://docs.github.com/get-started/onboarding/getting-started-with-github-enterprise-cloud).
+When using EMUs:
 
+* Managed users cannot push code to or fork repositories outside the enterprise
+* They can only interact with other users and resources inside the enterprise
 
+You can manage EMU-based organization and team membership using groups in your IdP, and optionally integrate [team synchronization](#enable-team-synchronization) to automate group-to-team mapping.
+
+For organizations with requirements around self-hosting or specific regional regulations, **GitHub Enterprise Server (GHE.com)** offers an on-premises solution that allows you to maintain full control of your GitHub environment.
+
+For more details, see [Getting started with GitHub Enterprise Cloud](https://docs.github.com/get-started/onboarding/getting-started-with-github-enterprise-cloud) and [About GitHub Enterprise Server](https://docs.github.com/en/enterprise-server@latest).
 
 ## Team Synchronization vs. SCIM for GHES 
 

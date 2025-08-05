@@ -12,7 +12,7 @@ All of these operations require permission because they access and modify your A
 - The ability to create and modify App Service plans and apps.
 - The ability to create and modify Application Insights instances.
 
-Until now, you've probably deployed your Bicep files yourself by using the Azure CLI or Azure PowerShell. When you use these tools, you normally use your own user account and authenticate by using your browser. This is called using your own _identity_. When you submit a deployment, Azure verifies that your identity has the necessary permissions to do what your Bicep template specifies.
+Until now, you've probably deployed your Bicep files yourself by using the Azure CLI or Azure PowerShell. When you use these tools, you normally use your own user account and authenticate by using your browser. This is called using your own _identity_. When you submit a deployment, Azure verifies that your identity has the necessary permissions to do what your Bicep file specifies.
 
 After you move to a GitHub Actions deployment workflow, you need to use a different type of identity, because the workflow runs deployments without your direct involvement.
 

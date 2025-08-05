@@ -176,7 +176,7 @@ When creating workflows in GitHub Actions, you can reference actions from variou
        uses: actions/checkout@v3
    ```
 
-> [!IMPORTANT]
+[!IMPORTANT]
 > **For better security, use a full commit SHA when referencing actions—not just a tag like `@v3`.**  
 > This makes sure your workflow always uses the exact same code, even if the action is updated or changed later.  
 > Example: `uses: actions/checkout@c2c1744e079e0dd11c8e0af4a96064ca4f6a2e9e`
@@ -188,6 +188,8 @@ When creating workflows in GitHub Actions, you can reference actions from variou
      - name: Use a local action
        uses: ./path-to-action
    ```
+
+For more details, see [security hardening guidance for GitHub Actions](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions#using-third-party-actions).
 
 4. **An enterprise marketplace**  
    If your organization uses GitHub Enterprise, you can reference actions from your enterprise's private marketplace. These actions are curated and managed by your organization, ensuring compliance with internal standards. For example:
@@ -201,7 +203,7 @@ When creating workflows in GitHub Actions, you can reference actions from variou
 - Actions in private repositories can also be referenced, but they require proper authentication and permissions.
 - When referencing actions, always specify a version (Git ref, SHA, or tag) to ensure consistency and avoid unexpected changes.
 
-For more information, see [Referencing actions in workflows](https://docs.github.com/actions/using-workflows/referencing-actions-in-workflows?azure-portal=true).
+For more information, see [Referencing actions in workflows](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions).
 
 ## GitHub-hosted versus self-hosted runners
 

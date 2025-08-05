@@ -1,4 +1,4 @@
-Now that you know the basics of the GitHub platform, let’s go over some platform management.
+Now that you know the basics of the GitHub platform, this section covers platform management topics.
 
 In this unit, we'll cover:
 
@@ -23,7 +23,11 @@ If you're no longer interested in receiving updates, you can unsubscribe, unwatc
 
 ## Subscribing to threads and finding threads where you're mentioned
 
-Subscribing to individual threads, such as a particular issue or pull request, ensures you receive updates even if you weren't originally involved.
+You can also access detailed notification settings by navigating to your GitHub user settings and choosing 'Notifications' to configure delivery channels such as email, web, and mobile.
+
+If you want to keep an eye on issues or pull requests that mention a specific user, use the search qualifier *mentions:* followed by the username.
+
+To make sure you get updates about a particular thread (like an issue or pull request), you can subscribe to it—even if you weren’t originally part of the conversation.
 
 You can subscribe to a thread by:
 
@@ -33,7 +37,7 @@ To find conversations where you're mentioned:
 
 - Use the search qualifier `mentions:<username>` in the GitHub search bar to locate issues and pull requests where you were @mentioned.
 
-This makes it easy to keep track of discussions that require your input.
+This way, you won’t miss any conversations that need your attention.
 
 ### Filter notifications
 
@@ -59,11 +63,11 @@ Notification settings are managed under your GitHub account settings in **Notifi
 
 ## What are GitHub Pages?
 
-To round out our journey of GitHub, let’s tackle GitHub pages. You can use GitHub Pages to publicize and host a website about yourself, your organization, or your project directly from a repository on GitHub.com.
+Now let’s take a look at GitHub Pages. You can use GitHub Pages to publicize and host a website about yourself, your organization, or your project directly from a repository on GitHub.com.
 
-GitHub Pages is a static site-hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub. Optionally, you can run the files through a build process and publish a website. Edit and push your changes, and your project is live for the public in a visually organized way.
+GitHub Pages is a static site-hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub. Optionally, you can run the files through a build process and publish a website. You can specify a source branch and folder (e.g., `/docs`) for your Pages site, and GitHub will host the content publicly.
 
-Next up, we'll walk through an exercise to get you started with GitHub. In the next exercise, you'll:
+Next, you'll complete a hands-on activity to reinforce key GitHub skills. In the next exercise, you'll:
 
 - Create a new repository.
 - Create a new branch.

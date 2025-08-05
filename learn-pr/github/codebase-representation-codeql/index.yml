@@ -3,7 +3,7 @@ uid: learn.codebase-representation-codeql
 metadata:
   title: "Identify security vulnerabilities in your codebase by using CodeQL"
   description: "Learn how to use CodeQL to analyze the code in your GitHub repository and identify security vulnerabilities." 
-  ms.date: 05/01/2024
+  ms.date: 07/01/2025
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module
@@ -11,7 +11,7 @@ metadata:
 title: Identify security vulnerabilities in your codebase by using CodeQL
 summary: "In this module, you learn about CodeQL and how you can use it to analyze the code in your GitHub repository and identify security vulnerabilities."
 abstract: |
- By the end of this module, you'll be able to:
+ By the end of this module, you're able to:
   - Create a database by using CodeQL to extract a single relational representation of each source file in the codebase.
   - Run CodeQL in a database to find problems in your source code and find potential security vulnerabilities.
   - Understand CodeQL scan results by using GitHub-created queries or your own custom queries.

@@ -5,8 +5,8 @@ metadata:
   title: Install Azure CLI
   description: Install Azure CLI
   ms.date: 01/09/2025
-  author: dbradish-microsoft
-  ms.author: dbradish
+  author: mikefrobbins
+  ms.author: mirobb
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli
@@ -14,4 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-install-azure-cli.md)]
-
+

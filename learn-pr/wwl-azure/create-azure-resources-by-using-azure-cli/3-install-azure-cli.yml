@@ -6,11 +6,11 @@ metadata:
   description: "Choose the right environment and install Azure CLI."
   ms.date: 02/17/2025
   author: wwlpublish
-  ms.author: dbradish
+  ms.author: lumac
   ms.topic: unit
   ms.custom: devx-track-azurecli
   zone_pivot_groups: platform
 durationInMinutes: 10
 content: |
   [!include[](includes/3-install-azure-cli.md)]
-
+
