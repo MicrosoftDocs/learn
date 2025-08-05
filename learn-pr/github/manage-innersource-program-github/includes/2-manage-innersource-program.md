@@ -78,7 +78,6 @@ Once the project launches, use email and other networking channels to promote it
 
 [Learn more about README files in the GitHub documentation.](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
 
-
 ### Manage projects on GitHub
 
 As projects gain traction, the influx of users and contributions can require lots of work to manage. Depending on the project, a significant amount of work might be required just to manage the expectations of project participants.

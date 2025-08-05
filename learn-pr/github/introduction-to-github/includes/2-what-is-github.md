@@ -151,7 +151,6 @@ Congratulations, you just created a new file in your repository! You have also c
 Before we review branches and commits in the next unit, let’s quickly review gists, wikis, and GitHub pages because they're similar to repositories.
 
 ### What are gists?
-
 Gists are a feature of GitHub that allows users to share code snippets, notes, or other small pieces of information in a lightweight and convenient way. They are essentially mini Git repositories, which means you can fork, clone, and version-control them just like a full repository. Gists are particularly useful for sharing quick solutions, configuration files, or examples without the need to create a full repository.
 
 #### Key Features of Gists:
@@ -170,7 +169,6 @@ Gists are a feature of GitHub that allows users to share code snippets, notes, o
 
 5. **Markdown Support**:
    - Gists support Markdown formatting, which means you can include rich text, headings, links, and even images alongside your code. This is particularly useful for adding context or explanations to your snippets.
-   - Code blocks are automatically rendered with syntax highlighting, making your snippets easy to read.
 
 6. **Collaboration**:
    - While gists are typically used for individual snippets, they can also be shared and collaborated on by multiple users. Forking and commenting on gists enable lightweight collaboration.

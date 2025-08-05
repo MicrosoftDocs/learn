@@ -205,7 +205,6 @@ For more details, see [security hardening guidance for GitHub Actions](https://d
 
 For more information, see [Referencing actions in workflows](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions).
 
-
 ## GitHub-hosted versus self-hosted runners
 
 We briefly mentioned runners as being associated with a job. A runner is simply a server that has the GitHub Actions runner application installed. In the previous workflow example, there was a `runs-on: ubuntu-latest` attribute within the jobs block, which told the workflow that the job is going to run using the GitHub-hosted runner that's running in the `ubuntu-latest` environment.
