@@ -12,31 +12,17 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which three criteria must a commercial customer meet to be considered part of the target audience for Copilot+ PCs?"
-    choices:
-        - content: "Be an early adopter, work in a regulated industry, and have a large IT department"
-          isCorrect: false
-          explanation: "Incorrect. Regulated industries are not the focus for early adoption of Copilot+ PCs."
-        - content: "Be an early adopter, be in a non-regulated industry, and employ many staff in sales and marketing"
-          isCorrect: true
-          explanation: "Correct. These are the three criteria that define the target audience for Copilot+ PCs."
-        - content: "Be a late adopter, be in a non-regulated industry, and focus on product development"
-          isCorrect: false
-          explanation: "Incorrect. The target audience is defined by early adoption, not late adoption."
-        - content: "Be in a regulated industry, employ many staff in HR, and prioritize cost savings"
-          isCorrect: false
-          explanation: "Incorrect. Regulated industries and HR staffing are not part of the defined criteria."
   - content: "What is the top concern for IT Decision Makers (ITDMs) regarding generative AI?"
     choices:
         - content: "Difficulty in training employees"
           isCorrect: false
-          explanation: "Incorrect. While training is a challenge, it is not the top concern."
+          explanation: "Incorrect. While training is a challenge, it isn't the top concern."
         - content: "Lack of innovation"
           isCorrect: false
           explanation: "Incorrect. ITDMs are focused on innovation but are more concerned about security risks."
         - content: "New security risks to data"
           isCorrect: true
-          explanation: "Correct. 71% of early adopting ITDMs believe generative AI will introduce new security risks."
+          explanation: "Correct. A reported 71% of early adopting ITDMs believe generative AI will introduce new security risks."
         - content: "High cost of AI hardware"
           isCorrect: false
           explanation: "Incorrect. Cost is a consideration, but not the top concern."
@@ -47,21 +33,21 @@ quiz:
           explanation: "Incorrect. They focus on technology strategy and security."
         - content: "C-suite Executives"
           isCorrect: false
-          explanation: "Incorrect. They oversee strategy and innovation but are not primarily focused on revenue generation."
+          explanation: "Incorrect. They oversee strategy and innovation but aren't primarily focused on revenue generation."
         - content: "Sales and Marketing pros"
           isCorrect: true
           explanation: "Correct. Their main priority is generating revenue and improving productivity through AI."
-        - content: "SMB Founders and Owners"
+        - content: "Small and medium business Founders and Owners"
           isCorrect: false
-          explanation: "Incorrect. They are focused on overall business growth and operations."
+          explanation: "Incorrect. They're focused on overall business growth and operations."
   - content: "What is a key benefit of Copilot+ PCs for knowledge creators?"
     choices:
         - content: "Reducing company expenses"
           isCorrect: false
-          explanation: "Incorrect. While AI may contribute to cost savings, this is not the key benefit for knowledge creators."
+          explanation: "Incorrect. While AI might contribute to cost savings, this isn't the key benefit for knowledge creators."
         - content: "Automating customer service entirely"
           isCorrect: false
-          explanation: "Incorrect. Copilot+ PCs support but do not fully automate customer service."
+          explanation: "Incorrect. Copilot+ PCs support but don't fully automate customer service."
         - content: "Accelerating results and safeguarding work"
           isCorrect: true
           explanation: "Correct. Copilot+ PCs help knowledge creators work efficiently and securely."

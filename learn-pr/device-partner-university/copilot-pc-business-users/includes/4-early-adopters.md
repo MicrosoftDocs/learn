@@ -1,6 +1,4 @@
-Now that you’ve learned how Copilot+ PCs can enhance productivity and simplify tasks, let’s take a closer look at who might benefit most from using them.
-
-We’ll explore the types of users who are likely to embrace this new technology, what drives their interest, what they need to succeed in their roles, and the common challenges they face. Understanding these factors will help you recognize where Copilot+ PCs can make the biggest impact.
+Now that you know how Copilot+ PCs can enhance productivity and simplify tasks, let’s take a closer look at who might benefit most from using them.
 
 ## Early adopters
 

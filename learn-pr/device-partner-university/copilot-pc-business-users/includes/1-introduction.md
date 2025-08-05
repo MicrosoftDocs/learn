@@ -10,4 +10,4 @@ By the end of this module, you'll be able to:
 
 - Identify the key business audiences for Copilot+ PCs and understand their roles, priorities, and challenges.
 - Explain how Copilot+ PCs address productivity, innovation, and efficiency needs across various professional functions.
-- Evaluate the benefits of Copilot+ PCs for early adopters in non-regulated industries, particularly those in sales and marketing.
+- Evaluate the benefits of Copilot+ PCs for early adopters in non-regulated industries, particularly in sales and marketing.
