@@ -70,3 +70,5 @@ Now that we know the basics of GitHub we can walk through the GitHub flow and it
 That’s it, you’ve been through a GitHub flow cycle!  
 
 Let’s move onto the next section where we’ll cover the differences between issues and discussions.
+
+
