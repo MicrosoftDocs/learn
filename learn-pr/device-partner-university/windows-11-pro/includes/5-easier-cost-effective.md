@@ -48,8 +48,8 @@ Windows 11 Pro PCs are designed for quick adoption and compatibility with your e
 1. Sold separately.  
 1. Results in comparison to Windows 10 PCs. *Improve Your Day‑to‑Day Experience with Windows 11 Pro Laptops*, Principled Technologies, April 2023. Report commissioned by Microsoft.   
 1. Results in comparison to Windows 10 PCs. Microsoft commissioned study delivered by Forrester Consulting *The Total Economic Impact™ of Windows 11 Pro Devices*, December 2022. [https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Vrvx](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Vrvx)  
-[!NOTE]
-Quantified benefits reflect results over a three‑year period combined into a single composite organization. This organization generates USD 1 billion in annual revenue, employs 2,000 people, refreshes its hardware on a four‑year cycle, and migrates its entire workforce to Windows 11 devices.
+> [!NOTE]
+> Quantified benefits reflect results over a three‑year period combined into a single composite organization. This organization generates USD 1 billion in annual revenue, employs 2,000 people, refreshes its hardware on a four‑year cycle, and migrates its entire workforce to Windows 11 devices.
 1. Windows 11 Survey Report, Techaisle, September 2024. Microsoft commissioned report where results are in comparison with Windows 10 devices.  
 1. Battery life varies based on settings, usage, device, and other factors.  
 1. Requires eligible Microsoft 365 license.  
