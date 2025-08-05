@@ -156,7 +156,7 @@ The last part of this workflow file sets the `MY_NAME` variable value for this w
 
 For more information on workflow syntax, see [Workflow syntax for GitHub Actions](https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions?azure-portal=true)
 
-## Referencing Actions in Workflows
+## Referencing actions in workflows
 
 When creating workflows in GitHub Actions, you can reference actions from various sources. These actions can be used to automate tasks in your workflows. Below are the primary sources where workflows can reference actions:
 
