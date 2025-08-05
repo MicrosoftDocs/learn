@@ -22,7 +22,7 @@ Common titles include:
 - IT Director
 - IT Manager
 - IT Executive
-- 
+
 :::column-end:::
 
 :::column span="2":::
