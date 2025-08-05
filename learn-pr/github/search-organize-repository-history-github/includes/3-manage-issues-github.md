@@ -45,3 +45,4 @@ To unpin: use the same menu and click **Unpin issue**.
 * Close issues manually or automatically with PR keywords (e.g., `Fixes #12`).
 
 Effective issue management helps your team stay aligned, reduce duplicate effort, and speed up development.
+
