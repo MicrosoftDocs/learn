@@ -1,50 +1,54 @@
-In this unit, you implement the second phase of your quantum random number generator: combining multiple random bits to form a larger random number. This phase builds on the random bit generator you already created in the previous unit.
+In this unit, you implement the second part of your quantum random number generator by combining multiple random bits to form a larger random number. This part builds on the random bit generator that you already created in the previous unit.
 
 ## Combine multiple random bits to form a larger number
 
-In the previous unit, you created a random bit generator that generates a random bit by putting a qubit into superposition and measuring it.
+In the previous unit, you created a random bit generator that puts a qubit into a superposition state and then measures that qubit to generate random bit value of 0 or 1, each with 50% probability. The value of this bit is truly random, there's no way to know ahead of time what you get after the measurement. But how can you use this behavior to generate larger random numbers?
 
-When you measure the qubit, you get a random bit, either 0 or 1, with equal 50% probability. The value of this bit is truly random, there's no way of knowing what you get after the measurement. But how can you use this behavior to generate larger random numbers?
-
-Let's say you repeat the process four times, generating this sequence of binary digits:
+If you repeat the process four times, then you might generate this sequence of binary digits:
 
 $${0, 1, 1, 0}$$
 
-If you concatenate, or combine, these bits into a bit string, you can form a larger number. In this example, the bit sequence ${0110}$ is equivalent to six in decimal.
+If you combine these bits into a bit string, then you can form a larger number. In this example, the bit sequence ${0110}$ in binary is equivalent to the number 6 in decimal.
 
 $${0110_{\ binary} \equiv 6_{\ decimal}}$$
 
-If you repeat this process many times, you can combine multiple bits to form any large number.
+To generate an arbitrarily large random number, just repeat this process many times, then combine all of the bits into a binary number and convert that binary number to a decimal number.
 
 ## Define the random number generator logic
 
 Let's outline what the logic of a random number generator should be, provided the random bit generator built in the previous unit:
 
-1. Define `max` as the maximum number you want to generate.
-1. Define the number of random bits you need to generate by calculating how many bits, `nBits`, you need to express integers up to `max`.
+Before you start to write Q# code, consider the following logic to generate a random number:
+
+1. Define `max` as the maximum decimal number that you want to generate.
+1. Determine the number of random bits, `nBits`, that are required to generate `max`.
 1. Generate a random bit string that's `nBits` in length.
-1. If the bit string represents a number greater than `max`, go back to step three.
-1. Otherwise, the process is complete. Return the generated number as an integer.
+1. If the bit string represents a number greater than `max`, then go back to the previous step.
+1. Otherwise, the process is complete. Return the generated number as a decimal integer.
 
-As an example, let's set `max` to 12. That is, 12 is the largest number you want to get from the random number generator. 
+For example, define `max` to be 12. That is, 12 is the largest number that your random number generator should output.
 
-You need ${\lfloor ln(12) / ln(2) + 1 \rfloor}$, or 4 bits to represent a number between 0 and 12. (For brevity, we skip how to derive this equation.)
+Use the following equation to determine the number of bits required to represent the number 12 in binary:
 
-Let's say you generate the bit string ${1101_{\ binary}}$, which is equivalent to ${13_{\ decimal}}$. Because 13 is greater than 12, you repeat the process.
+$${\lfloor ln(12) / ln(2) + 1 \rfloor}$$
 
-Next, you generate the bit string ${0110_{\ binary}}$, which is equivalent to ${6_{\ decimal}}$. Because 6 is less than 12, the process is complete.
+According to this equation, you need 4 bits to represent a number between 0 and 12.
+
+For example, suppose you generate a random bit four times and get the bit string ${1101_{\ binary}}$. This value in binary is equal to 13 in decimal. Because 13 is greater than 12, you repeat the process.
+
+Next, you generate the bit string ${0110_{\ binary}}$, which equals ${6_{\ decimal}}$. Because 6 is less than 12, the process is complete.
 
 The quantum random number generator returns the number 6.
 
-## Create a complete random number generator
+## Create a complete random number generator in Q#
 
-Here, you expand on the `Main.qs` file to build larger random numbers. 
+Here, you expand on the `Main.qs` file from the previous lesson to build your random number generator.
 
 ### Import the required libraries
 
-First, you need to import the required namespaces from the Q# Standard library to the program. The Q# compiler loads many common functions and operations automatically, however for the complete quantum random number generator, you need some more functions and operations from two Q# namespaces: `Microsoft.Quantum.Math`and `Microsoft.Quantum.Convert`.
+First, import the namespaces from the Q# standard library that contain the functions and operations that you need to write your program. The Q# compiler loads many common functions and operations automatically, but for the quantum random number generator you need some more functions and operations from two Q# namespaces: `Microsoft.Quantum.Math` and `Microsoft.Quantum.Convert`.
 
-Copy and paste the following `import` directives to the top of your `Main.qs` file:
+Copy and paste the following `import` directives at the beginning of your `Main.qs` file:
 
 ```qsharp
 import Microsoft.Quantum.Convert.*;
@@ -53,11 +57,14 @@ import Microsoft.Quantum.Math.*;
 
 ### Rename the `Main` operation to `GenerateRandomBit`
 
-For the complete random number generator, you're going to reuse the operation defined in the previous unit. However, the operation name `Main` is the entry point of the program and should be unique. To avoid confusion, you need to rename the `Main` operation to `GenerateRandomBit`.
+The random number generator program uses the `Main` operation that you wrote in the previous unit to generate a random bit. Rename the `Main` operation to `GenerateRandomBit` so that this operation has a more descriptive name and isn't the entry point to the program.
 
-The `GenerateRandomBit` operation should look like this:
+Copy and paste the following code into `Main.qs`:
 
 ```qsharp
+import Microsoft.Quantum.Convert.*;
+import Microsoft.Quantum.Math.*;
+
 operation GenerateRandomBit() : Result {
     // Allocate a qubit.
     use q = Qubit();
@@ -78,9 +85,9 @@ operation GenerateRandomBit() : Result {
 
 ### Define the quantum random number operation
 
-Here, you define the `GenerateRandomNumberInRange` operation. This operation repeatedly calls the `GenerateRandomBit` operation to build a string of bits.
+Create a new operation called `GenerateRandomNumberInRange` operation. This operation repeatedly calls the `GenerateRandomBit` operation to build a string of bits.
 
-Copy the following code and paste it before the `GenerateRandomBit` operation into your `Main.qs` file:
+Copy the following code and place it directly before the `GenerateRandomBit` operation into your `Main.qs` file:
 
 ```qsharp
 /// Generates a random number between 0 and `max`.
@@ -93,31 +100,33 @@ operation GenerateRandomNumberInRange(max : Int) : Int {
     for idxBit in 1..nBits {
         set bits += [GenerateRandomBit()];
     }
+
     let sample = ResultArrayAsInt(bits);
     
-    // Return random number if it is within the requested range.
-    // Generate it again if it is outside the range.
+    // Return random number if it's within the requested range.
+    // Generate it again if it's outside the range.
     return sample > max ? GenerateRandomNumberInRange(max) | sample;
 }
 ```
 
-Let's take a moment to review the new code.
+Here's an overview of the preceding code:
 
-- You need to calculate the number of bits needed to express integers up to `max`. The `BitSizeI` function from the `Microsoft.Quantum.Math` library converts an integer to the number of bits needed to represent it.
-- The `GenerateRandomNumberInRange` operation uses a `for` loop to generate random numbers until it generates one that's equal to or less than `max`. The `for` loop works exactly the same as a `for` loop in other programming languages.
-- The variable `bits` is a mutable variable. A mutable variable is one that can change during the computation. You use the `set` directive to change a mutable variable's value.
-- The `ResultArrayAsInt` function comes from the `Microsoft.Quantum.Convert` library. This function converts the bit string to a positive integer.
+- Call the `BitSizeI` function from the `Microsoft.Quantum.Math` library to calculate the number of bits needed to represent the integer that's stored in `max`.
+- Use a `for` loop to generate a number of random bits equal to `nBits`. Call your `GenerateRandomBit` operation to generate the random bits.
+- Inside the `for` loop, use the `set` statement to update the `bits` variable with each new random bit. The variable `bits` is a mutable variable, which means that the value of `bits` can change during the computation.
+- Call the `ResultArrayAsInt` function from the `Microsoft.Quantum.Convert` library to convert the array of bits in `bits` to a positive integer stored in `sample`.
+- In the `return` statement, check whether `sample` is greater than `max`. If `sample` is greater, then call `GenerateRandomNumberInRange` again and start over. Otherwise, return the random number stored in `sample`.
 
 ### Add an entry point
 
-Finally, you add an entry point to the program. By default, the Q# compiler looks for a `Main` operation and starts processing there, no matter where the operation is located. The `Main` operation calls the `GenerateRandomNumberInRange` operation to generate a random number between 0 and a `max` number. In this example, you define the maximum value as 100.
+Finally, add an entry point operation to the program that brings the whole program together. By default, the Q# compiler looks for a `Main` operation and starts processing there, no matter where the operation is located in your file. Here, the `Main` operation sets a value for `max` and calls the `GenerateRandomNumberInRange` operation to generate a random number between 0 and `max`.
 
-Copy and paste the following code to your `Main.qs` file:
+For example, to generate a random number between 0 and 100, copy the following code to your `Main.qs` file:
 
 ```qsharp
 operation Main() : Int {
     let max = 100;
-    Message($"Sampling a random number between 0 and {max}: ");
+    Message($"Generating a random number between 0 and {max}: ");
 
     // Generate random number in the 0..max range.
     return GenerateRandomNumberInRange(max);
@@ -126,7 +135,7 @@ operation Main() : Int {
 
 ### Final program
 
-Your `Main.qs` file should look like this:
+Here's the complete Q# code for your program in `Main.qs`:
 
 ```qsharp
 import Microsoft.Quantum.Convert.*;
@@ -134,12 +143,12 @@ import Microsoft.Quantum.Math.*;
 
 operation Main() : Int {
     let max = 100;
-    Message($"Sampling a random number between 0 and {max}: ");
+    Message($"Generating a random number between 0 and {max}: ");
     
     // Generate random number in the 0..max range.
     return GenerateRandomNumberInRange(max);
 }
-    
+
 /// Generates a random number between 0 and `max`.
 operation GenerateRandomNumberInRange(max : Int) : Int {
     // Determine the number of bits needed to represent `max` and store it
@@ -152,8 +161,8 @@ operation GenerateRandomNumberInRange(max : Int) : Int {
     }
     let sample = ResultArrayAsInt(bits);
     
-    // Return random number if it is within the requested range.
-    // Generate it again if it is outside the range.
+    // Return random number if it's within the requested range.
+    // Generate it again if it's outside the range.
     return sample > max ? GenerateRandomNumberInRange(max) | sample;
 }
     
@@ -178,17 +187,18 @@ operation GenerateRandomBit() : Result {
 
 ## Run the program
 
-Let's try out our new random number generator!
+Try out your new quantum random number generator!
 
-1. Before running the program, you need to set the target profile to **Unrestricted**. Select **View** > **Command Palette**, search for *QIR*, select **Q#: Set the Azure Quantum QIR target profile**, and then select **Q#: unrestricted**.
-1. To run your program, select **Run** from the list of commands above the `Main` operation or press **Ctrl+F5**. Your output displays in the debug console.
-1. Run the program again to see a different result.
+1. Before you run the program, you must set the target profile for the simulator to **Unrestricted**. Open the **View** menu and choose **Command Palette**.
+1. Search for **QIR**, choose **QDK: Set the Azure Quantum QIR target profile**, and then choose **QIR unrestricted**.
+1. To run your program, choose the **Run** code lens from the list of commands above the `Main` operation. Or, press **Ctrl+F5**. Your output displays in the debug console.
+1. Run the program multiple times and notice how the result changes.
 
 > [!NOTE]
-> If the target profile isn't set to **Unrestricted**, you get an error when you run the program.
+> If the target profile isn't set to **QIR unrestricted**, then you get an error when you run the program.
 
-Congratulations! Now you know how to combine classical logic with Q# to create a quantum random number generator.
+Congratulations! You created a truly random quantum number generator in Q#.
 
 ## Bonus exercise
 
-Try to modify the program to also require the generated random number to be greater than some minimum number, `min`, instead of zero.
+Try to modify the program so that it also requires the generated random number to be greater than some minimum positive number, `min`, instead of zero.
