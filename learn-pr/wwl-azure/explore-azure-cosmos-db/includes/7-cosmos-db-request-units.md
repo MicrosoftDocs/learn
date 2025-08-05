@@ -8,7 +8,7 @@ The following image shows the high-level idea of RUs:
 
 :::image type="content" source="../media/request-units.png" alt-text="Image showing how database operations consume request units.":::
 
-The type of Azure Cosmos DB account you're using determines the way consumed RUs get charged. There are three modes in which you can create an account:
+The type of Azure Cosmos DB account you're using determines the way consumed RUs get charged. There are two modes for account creation:
 
 *  **Provisioned throughput mode**: In this mode, you provision the number of RUs for your application on a per-second basis in increments of 100 RUs per second. To scale the provisioned throughput for your application, you can increase or decrease the number of RUs at any time in increments or decrements of 100 RUs. You can make your changes either programmatically or by using the Azure portal. You can provision throughput at container and database granularity level.
 
