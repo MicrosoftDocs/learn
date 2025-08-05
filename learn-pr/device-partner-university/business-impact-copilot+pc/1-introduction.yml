@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.business-impact-copilot+pc.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is part of the "Turbocharge business impact with Copilot+ PC" module.
+  ms.date: 08/04/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

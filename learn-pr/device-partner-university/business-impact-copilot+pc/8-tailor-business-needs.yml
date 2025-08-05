@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.business-impact-copilot+pc.tailor-business-needs
+title: Tailor business needs
+metadata:
+  title: Tailor Business Needs
+  description: This content is part of the "Turbocharge business impact with Copilot+ PC" module.
+  ms.date: 08/04/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-tailor-business-needs.md)]
