@@ -6,7 +6,7 @@ They want their teams to use AI-enhanced technologies to advance their flexibili
 
 ## Challenges for sales/marketing
 
-According to Microsoft research, the top five responsibilities that Sales and Marketing pros manage are:
+According to Microsoft research, the top five responsibilities that sales and marketing professionals manage are:
 
 - Marketing
 - Digital media
@@ -14,7 +14,7 @@ According to Microsoft research, the top five responsibilities that Sales and Ma
 - Product development
 - Employee management
 
-We also identified the top five growth-driving priorities that Sales and Marketing pros hold for their teams and organizations:
+We also identified the top five growth-driving priorities that they hold for their teams and organizations:
 
 - Marketing
 - Efficiency and productivity
@@ -24,7 +24,7 @@ We also identified the top five growth-driving priorities that Sales and Marketi
 
 ## Essential workplace efficiency
 
-For Sales and Marketing pros, generating revenue is their number one priority. They’re always on the lookout for new solutions to help streamline workflows—so their teams can be more productive and bring in greater profits.
+For sales and marketing professionals, generating revenue is their number one priority. They’re always on the lookout for new solutions to help streamline workflows—so their teams can be more productive and bring in greater profits.
 
 Indeed, over a quarter of Chief Revenue Officers plan to create new teams to oversee generative AI operations by 2025—reflecting the growing demand for AI solutions in this demographic.
 
