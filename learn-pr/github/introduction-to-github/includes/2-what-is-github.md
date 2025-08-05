@@ -89,11 +89,36 @@ Let’s walk through how to create a repository from github.com.
 
 1. Select **Create repository** and congratulations! You just created a repository!
 
+### How to clone a repository
+
+Cloning a repository allows you to create a local copy of a repository on your computer. This is useful for making changes locally and syncing them back to the remote repository.
+
+1. On GitHub.com, navigate to the main page of the repository you want to clone.
+1. Above the list of files, click the **Code** button.
+
+    :::image type="content" source="../media/2-selecting-code-button.png" alt-text="Screenshot of the Code button dropdown menu with clone options." border="false":::
+
+1. Copy the URL for the repository using the HTTPS, SSH, or GitHub CLI option.
+1. Open your terminal and navigate to the directory where you want to clone the repository.
+1. Run the following command, replacing `<repository-url>` with the URL you copied:
+
+    ```bash
+    git clone <repository-url>
+    ```
+
+1. Once the cloning process is complete, navigate into the repository folder:
+
+    ```bash
+    cd <repository-name>
+    ```
+
+Congratulations! You now have a local copy of the repository.
+
 Next up, let’s review how to add files to your repository.
 
 ### How to add a file to your repository
 
-Files in GitHub can do a handful of things, but the main purpose of files is to store data and information about your project. It's worth knowing in order to add a file to a repository that you must first have minimum **Write** access within the repository you want to add a file.
+Files in GitHub can do a handful of things, but the main purpose of files is to store data and information about your project. To add a file to a repository, you need at least **Write** access.
 
 Let’s review how to add a file to your repository.
 
@@ -190,6 +215,21 @@ Every repository on GitHub.com comes equipped with a section for hosting documen
 
 It’s worth a reminder that if your repository is private, only people who have at least read access to your repository will have access to your wiki.
 
+### What are Feature preview?
+
+Feature Previews allow you to try out experimental features on GitHub before they are officially released. These previews give you early access to new functionality and allow you to provide feedback to help shape the final product.
+
+To enable or disable a feature preview:
+
+1. Navigate to your GitHub account by selecting your profile picture in the top-right corner of GitHub.com.
+1. Select **Feature preview** from the drop-down menu.
+1. Browse the list of available previews and toggle the features you want to try.
+
+Feature Previews are a great way to stay ahead of the curve and explore new tools that can enhance your GitHub experience.
+
+> [!TIP]
+> GitHub frequently adds new experimental features for users to explore, so keep an eye on the **Feature review** to discover new tools and enhancements.
+=======
 ### Creating, editing, and deleting wiki pages
 
 You can use the GitHub wiki to create and manage documentation for your project.
@@ -212,3 +252,4 @@ You can use the GitHub wiki to create and manage documentation for your project.
 - Deleting a wiki page requires using Git. Clone the wiki repository, remove the file, and push the change.
 
 Learn more about managing wikis in [GitHub Docs - Adding or editing wiki pages](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages).
+
