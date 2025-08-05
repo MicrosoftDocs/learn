@@ -31,7 +31,7 @@ Public IP addresses are created with an IPv4 or IPv6 address, which can be eithe
 
 > [!IMPORTANT]
 >
-> On September 30, 2025, Basic SKU public IPs will be retired. If you are currently using Basic SKU public IPs, make sure to upgrade to Standard SKU public IPs prior to the retirement date. For guidance on upg
+> On September 30, 2025, Basic SKU public IPs will be retired. If you are currently using Basic SKU public IPs, make sure to upgrade to Standard SKU public IPs prior to the retirement date. For guidance on upgrading, visit [Upgrading a basic public IP address to Standard SKU](/azure/virtual-network/ip-services/public-ip-basic-upgrade-guidance).
 
 | Public IP address | **Standard** | **Basic**|
 | --- | --- |--- |
