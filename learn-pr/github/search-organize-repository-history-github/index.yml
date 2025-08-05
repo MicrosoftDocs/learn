@@ -31,10 +31,12 @@ products:
 - github
 - azure
 units:
-- learn.github.search-organize-repository-history-github.1-introduction
-- learn.github.search-organize-repository-history-github.2-search-organize-repository-history-github
-- learn.github.search-organize-repository-history-github.3-connect-dots
-- learn.github.search-organize-repository-history-github.4-knowledge-check
-- learn.github.search-organize-repository-history-github.5-summary
+  - learn.github.search-organize-repository-history-github.1-introduction
+  - learn.github.search-organize-repository-history-github.2-search-organize-repository-history-github
+  - learn.github.search-organize-repository-history-github.3-manage-issues-github
+  - learn.github.search-organize-repository-history-github.4-track-link-work-github
+  - learn.github.search-organize-repository-history-github.5-connect-dots
+  - learn.github.search-organize-repository-history-github.6-knowledge-check
+  - learn.github.search-organize-repository-history-github.7-summary
 badge:
   uid: learn.github.search-organize-repository-history-github.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.search-organize-repository-history-github.4-track-link-work-github
+title: Track and link work in GitHub
+metadata:
+  title: How to track and link work in GitHub
+  description: "Learn how to link PRs to issues, use issue templates and forms, and apply hierarchy and keywords."
+  ms.date: 05/07/2025
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-track-link-work-github.md)]
