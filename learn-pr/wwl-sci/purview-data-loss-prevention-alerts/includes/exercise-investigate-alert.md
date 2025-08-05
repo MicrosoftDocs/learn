@@ -7,8 +7,8 @@ In this exercise, you investigate a data loss prevention (DLP) alert triggered b
 
 **Tasks:**
 
-1. Investigate the DLP alert in Microsoft Purview
-1. Correlate incident data in Microsoft Defender
+- Investigate the DLP alert in Microsoft Purview
+- Correlate incident data in Microsoft Defender
 
 ## Task 1 - Investigate the DLP alert in Microsoft Purview
 

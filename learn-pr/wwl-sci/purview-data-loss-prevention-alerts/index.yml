@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ai-usage: ai-assisted
   ms.service: purview
-title: Investigate and Respond to Microsoft Purview Data Loss Prevention Alerts
+title: Investigate and respond to Microsoft Purview Data Loss Prevention alerts
 summary: |
   Microsoft Purview and Microsoft Defender XDR help organizations detect potential data loss risks and respond quickly to protect sensitive information. Investigation and response activities include reviewing DLP alerts, applying appropriate remediation actions, and documenting findings in a structured and consistent way.
 abstract: |
