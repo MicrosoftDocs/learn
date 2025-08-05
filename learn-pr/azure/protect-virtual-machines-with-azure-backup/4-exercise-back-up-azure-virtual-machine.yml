@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Back up an Azure virtual machine
   description: Learn how to create a virtual machine, and set up and start a backup.
   ms.date: 09/05/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: AbhishekMallick-MS
+  ms.author: v-mallicka
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli

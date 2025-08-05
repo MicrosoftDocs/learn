@@ -5,7 +5,7 @@ metadata:
   description: "This module is designed to provide administrators with the knowledge and skills required to plan and implement comprehensive security measures for Azure storage resources, safeguarding data integrity, confidentiality, and availability."
   ms.date: 06/25/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: module-intro-to-product
   ms.custom:
   - N/A
@@ -54,4 +54,4 @@ units:
 - learn.wwl.security-storage.knowledge-check
 - learn.wwl.security-storage.summary
 badge:
-  uid: learn.wwl.security-storage.badge
+  uid: learn.wwl.security-storage.badge
