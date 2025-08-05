@@ -10,7 +10,7 @@ Professionals are struggling to find uninterrupted time for meaningful activitie
 
 To elaborate, 86% of professionals would like help swiftly locating files, information, and insights saving them valuable time otherwise spent searching for resources. This is just one example of a low-value activity that can be automated by AI.
 
-:::image type="content" border="true" source="../media/business-man-at-desk.png" alt-text="Photograph of a financial advisor working at a table in a shared office space":::
+:::image type="content" border="true" source="../media/business-man-at-desk.png" alt-text="Photograph of a financial advisor working at a table in a shared office space.":::
 
 ## Enhanced work experiences
 

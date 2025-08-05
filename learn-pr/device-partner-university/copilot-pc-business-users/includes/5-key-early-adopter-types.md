@@ -27,7 +27,7 @@ Common titles include:
 
 :::column span="":::
 
-:::image type="content" border="true" source="../media/information-technology-decision-maker.png" alt-text="Photograph of a man in a suit representing an Information Technology Decision Maker":::
+:::image type="content" border="true" source="../media/information-technology-decision-maker.png" alt-text="Photograph of a man in a suit representing an Information Technology Decision Maker.":::
 
 :::column-end:::
 
@@ -50,7 +50,7 @@ C-suite executives are high-level executives within a company who hold a "C-leve
 
 :::column span="":::
 
-:::image type="content" border="true" source="../media/c-suite-executive.png" alt-text="Photograph of a woman in a suit representing a C-suite executive":::
+:::image type="content" border="true" source="../media/c-suite-executive.png" alt-text="Photograph of a woman in a suit representing a C-suite executive.":::
 
 :::column-end:::
 
@@ -77,7 +77,7 @@ They play a critical role in acquiring new customers, analyzing market trends, a
 
 :::column span="":::
 
-:::image type="content" border="true" source="../media/marketing-professional.png" alt-text="Photograph of a man in a suit representing a marketing professional":::
+:::image type="content" border="true" source="../media/marketing-professional.png" alt-text="Photograph of a man in a suit representing a marketing professional.":::
 
 :::column-end:::
 
@@ -101,7 +101,7 @@ They may also be involved in various other aspects of the business, including sa
 
 :::column span="":::
 
-:::image type="content" border="true" source="../media/small-business-owner.png" alt-text="Photograph of a woman representing a small business owner":::
+:::image type="content" border="true" source="../media/small-business-owner.png" alt-text="Photograph of a woman representing a small business owner.":::
 
 :::column-end:::
 
