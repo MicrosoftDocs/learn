@@ -2,7 +2,7 @@
 
 To begin, let’s briefly review the value Windows 11 Pro delivers:
 
-## Supercharge insights and efficiency 
+## Supercharge insights and efficiency
 
 Get more done in less time with features like Snap layouts and Microsoft 365 Copilot<sup>1</sup>—helping you stay organized and boost efficiency, with workflows up to 50% faster on average.<sup>2</sup>
 
