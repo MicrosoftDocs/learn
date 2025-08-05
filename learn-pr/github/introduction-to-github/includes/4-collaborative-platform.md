@@ -33,7 +33,7 @@ For this walkthrough, we'll go over how to create an issue from a repository. Bu
 1. If you're a project maintainer, you can assign the issue to someone, add it to a project board, associate it with a milestone, or apply a label.
 1. When you're finished, select **Submit new issue**.
 
-Some conversations are more suitable for GitHub Discussions. They are intended for open-ended conversations such as asking questions, sharing information, or gathering community feedback..
+Some conversations are more suitable for GitHub Discussions. You can use GitHub Discussions to ask and answer questions, share information, make announcements, and conduct or participate in conversations about a project.
 
 In the next section, we’ll review Discussions and how to best utilize the feature.
 
@@ -41,9 +41,14 @@ In the next section, we’ll review Discussions and how to best utilize the feat
 
 Discussions are for conversations that need to be accessible to everyone and aren't related to code. Discussions enable fluid, open conversation in a public forum.
 
-Let’s review how to enable discussions in your repository.
+In this section we go over:
 
-### Enabling discussions in your repository
+- Enabling a discussion in your repository.
+- Creating a new discussion and various discussion categories.
+
+Let’s dive into enabling a discussion in your repository.
+
+### Enabling a discussion in your repository
 
 Repository owners and people with Write access can enable GitHub Discussions for a community on their public and private repositories. The visibility of a discussion is inherited from the repository the discussion is created in.
 
@@ -94,7 +99,7 @@ Each category must have a unique name, emoji pairing, and a detailed description
 
    :::image type="content" source="../media/start-a-new-discussion.png" alt-text="A screenshot of starting a new discussion page with the Discussion title box and content box empty." border="false":::
 
-1. In your repository, go to the Discussions tab and select **Start discussion**.
+1. Select **Start discussion**.
 
 That covers a little about how GitHub inspires collaboration. Now let's move to how you can manage notifications, subscribe to threads, and get started with GitHub pages.
 
