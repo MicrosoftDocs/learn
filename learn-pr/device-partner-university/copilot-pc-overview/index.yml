@@ -3,7 +3,7 @@ uid: learn.dpu.copilot-pc-overview
 title: Copilot+ PC overview
 metadata:
   title: Copilot+ PC Overview
-  description: In this module, we’ll take a holistic look at Copilot+ PCs—exploring their unique combination of hardware and software advancements.
+  description: In this module, we will take a holistic look at Copilot+ PCs—exploring their unique combination of hardware and software advancements.
   ms.date: 08/06/2025
   author: Stephanie-Rosenzweig
   ms.author: v-stephanier
@@ -19,7 +19,7 @@ abstract: |
   - Understand the significance of the NPU and its impact on efficiency
 prerequisites: |
   - None
-iconUrl: "C:\Github\learn-pr\learn-pr\achievements\copilot-pc-overview.svg"
+iconUrl: "../achievements/copilot-pc-overview.svg"
 ratingEnabled: false
 levels:
   - beginner
