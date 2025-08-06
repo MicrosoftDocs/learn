@@ -4,10 +4,10 @@ title: Configure managed identity
 metadata:
   title: Configure managed identity
   description: "Learn how to configure managed identity for Azure SQL Database."
-  ms.date: 09/24/2024
-  author: jupadrao
+  ms.date: 08/06/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-configure-managed-identity.md)]
+  [!include[](includes/3-configure-managed-identity.md)]
