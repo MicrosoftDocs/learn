@@ -1,0 +1,3 @@
+In this module, we explored the way AI-enhanced Copilot+ PCs can help organizations stay agile, so they can adapt and respond to dynamic business needs—helping them beat out competition and stay ahead of changing industry trends. With this knowledge, you now have a better understanding of how Copilot+ PCs elevate modern business.
+
+We took a look at the different types of Windows PCs, software enhancements of Copilot+ PCs that unlock new productivity workflows, and unique hardware experiences that turbocharge the way business is done.
