@@ -1,0 +1,64 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.case-study-identity-data-security.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Test your knowledge on the key highlights of the interactive case study."
+  ms.date: 08/05/2025
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+
+quiz:
+  questions: 
+  - content: "Which of the following is a key risk associated with manual identity provisioning?"
+    choices:
+      - content: "Increased collaboration"
+        isCorrect: false
+        explanation: "Collaboration isn't inherently a risk; the issue lies in lack of access control."
+      - content: "Faster onboarding"
+        isCorrect: false
+        explanation: "While manual provisioning may be fast, it lacks governance and introduces risk."
+      - content: "Stale or overprivileged accounts"
+        isCorrect: true
+        explanation: "Manual provisioning often leads to outdated or excessive access rights, increasing security risk."
+
+  - content: "What is the primary benefit of using Microsoft Entra Privileged Identity Management (PIM)?"
+    choices:
+      - content: "Enables just-in-time access and automated reviews"
+        isCorrect: true
+        explanation: "PIM helps enforce least privilege by granting temporary access and automating access reviews."
+      - content: "Provides persistent admin access"
+        isCorrect: false
+        explanation: "Persistent access increases risk and contradicts Zero Trust principles."
+      - content: "Encrypts sensitive data"
+        isCorrect: false
+        explanation: "Encryption is handled by other tools like Microsoft Purview, not PIM."
+
+  - content: "Why is uniform MFA enforcement problematic in hybrid environments?"
+    choices:
+      - content: "It increases password strength"
+        isCorrect: false
+        explanation: "MFA doesn't affect password strength; it adds a second layer of authentication."
+      - content: "It causes user fatigue and frequent lockouts"
+        isCorrect: true
+        explanation: "Without contextual triggers, MFA can frustrate users and reduce effectiveness."      
+      - content: "It improves telemetry correlation"
+        isCorrect: false
+        explanation: "Telemetry correlation is handled by monitoring tools, not MFA enforcement."
+
+  - content: "Which Microsoft solution helps detect anomalous sign-ins and risky user behavior?"
+    choices:
+      - content: "Microsoft Defender for Identity"
+        isCorrect: true
+        explanation: "Defender for Identity monitors identity signals and detects suspicious activity across hybrid environments."
+      - content: "Microsoft Purview"
+        isCorrect: false
+        explanation: "Purview focuses on data classification and protection, not identity threat detection."
+      - content: "Microsoft Entra Lifecycle Workflows"
+        isCorrect: false
+        explanation: "Lifecycle Workflows automate identity provisioning but don't detect threats."
