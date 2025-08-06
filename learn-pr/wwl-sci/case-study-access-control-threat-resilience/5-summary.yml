@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.case-study-access-control-threat-resilience.summary
+uid: learn.case-study-access-control-threat-resilience.summary
 title: Summary
 metadata:
   title: Summary
-  description: "This unit summarizes the key points covered in the interactive case study on modernizing access control and threat resilience. It reinforces the importance of implementing robust security measures and best practices."
+  description: "This unit summarizes the key points covered in the interactive case study on modernizing user access control and threat resilience. It reinforces the importance of implementing robust security measures and best practices."
   ms.date: 08/05/2025
   author: wwlpublish
   ms.author: ceperezb
