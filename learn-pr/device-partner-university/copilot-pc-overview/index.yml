@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dpu.copilot-pc-overview
+title: Copilot+ PC overview
+metadata:
+  title: Copilot+ PC Overview
+  description: In this module, we’ll take a holistic look at Copilot+ PCs—exploring their unique combination of hardware and software advancements.
+  ms.date: 08/06/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+  ms.custom: CW052024-1
+summary: >
+  Learn how Copilot+ PCs boost performance and productivity with AI features and a powerful Neural Processing Unit (NPU).
+abstract: |
+  By the end of this module, you'll be able to:
+  - Define key terms such as CPU, GPU, NPU, and TOPS
+  - Describe how Copilot+ PCs support productivity, performance, and security
+  - Understand the significance of the NPU and its impact on efficiency
+prerequisites: |
+  - None
+iconUrl: /training/achievements/"C:\Users\Stephanie.Rosenzweig\OneDrive - BDS Connected Solutions\Commercial EZ Stories\MS Learn\Badges\Copilot+ PC Accred\modules\copilot-pc-overview.svg".svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.copilot-pc-overview.introduction
+  - learn.dpu.copilot-pc-overview.important-terms
+  - learn.dpu.copilot-pc-overview.advantages
+  - learn.dpu.copilot-pc-overview.powerful-processor
+  - learn.dpu.copilot-pc-overview.knowledge-check
+  - learn.dpu.copilot-pc-overview.summary
+badge:
+  uid: learn.dpu.copilot-pc-overview.badge
