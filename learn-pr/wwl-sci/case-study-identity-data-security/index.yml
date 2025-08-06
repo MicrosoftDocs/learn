@@ -1,3 +1,4 @@
+
 ### YamlMime:Module
 uid: learn.wwl.case-study-identity-data-security
 metadata:
@@ -12,9 +13,9 @@ title: "Interactive case study: Modernizing identity and data security"
 summary: "Apply your cybersecurity architect skills on a real business scenario focused on identity and data security. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
 abstract: |
   You learn:
-  -   How to analyze business requirements
-  -   How to match technical capabilities to meet those needs
-  -   How to design cohesive solutions that incorporate all of the required functions
+  - Explore identity lifecycle gaps, guest access risks, and monitoring limitations.
+  - Learn how these challenges align with Zero Trust principles.
+  - Apply architectural reasoning to assess threats and design secure solutions.
 prerequisites: |
   -   Experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
   -   Experience with hybrid and cloud implementations.
