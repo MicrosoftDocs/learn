@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-secure-enterprise-other.retention-ai
+title: Apply retention to AI-generated prompts and responses
+metadata:
+  title: Apply Retention to AI-generated Prompts and Responses
+  description: "Apply retention to AI-generated prompts and responses"
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/retention-ai.md)]
