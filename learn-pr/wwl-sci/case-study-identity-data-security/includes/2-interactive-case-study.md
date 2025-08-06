@@ -1,5 +1,5 @@
 
-In this unit, learners engage with the interactive case study focused on Woodgrove Bank, a fictitious financial institution facing identity and data security challenges in a hybrid environment.
+In this unit, you engage with the interactive case study focused on Woodgrove Bank, a fictitious financial institution facing identity and data security challenges in a hybrid environment.
 
 ### Scenario Summary
 
@@ -10,9 +10,9 @@ Woodgrove Bank operates with a hybrid identity setup, facing fragmented provisio
 The structure of the interactive case study consists of the following five sections:
 
 - **Animated Scenario**: Presents the context and challenges faced by a financial organization.
-- **Hotspot Activity**: Allows learners to uncover risks by exploring key areas in a visual environment.
-- **Multiple-Choice Questions (MCQ)**: Challenges learners to assess threats and identify vulnerabilities.
-- **Drag-and-Drop Architecture Design**: Enables learners to build a security solution using Microsoft technologies.
+- **Hotspot Activity**: Allows you to uncover risks by exploring key areas in a visual environment.
+- **Multiple-Choice Questions (MCQ)**: Challenges you to assess threats and identify vulnerabilities.
+- **Drag-and-Drop Architecture Design**: Enables you to build a security solution using Microsoft technologies.
 - **Carousel-Based Implementation Steps**: Visualizes how the solution would be deployed in a real-world setting.
 
 Each component is designed to reinforce Zero Trust principles and promote architectural reasoning in hybrid identity environments.

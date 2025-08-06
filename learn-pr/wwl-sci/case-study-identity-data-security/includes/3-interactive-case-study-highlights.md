@@ -1,31 +1,40 @@
-This unit explores the key architectural and operational insights surfaced through the interactive case study on Woodgrove Bank’s hybrid identity and data security posture. The simulation reveals systemic gaps that are common in enterprise environments and provides a structured lens for learners to analyze and reflect on them.
+This unit explores the key architectural and operational insights surfaced through the interactive case study on Woodgrove Bank’s hybrid identity and data security posture. The simulation reveals systemic gaps that are common in enterprise environments and provides a structured lens for you to analyze and reflect on them.
 
-- **Identity Provisioning and Lifecycle Management**
-  - Provisioning is manual and fragmented across business units, leading to stale, overprivileged accounts.
-  - Lack of automation and lifecycle workflows results in inconsistent deprovisioning and privilege creep.
-  - These gaps increase the risk of insider threats and unauthorized access.
+### Situation Assessment
 
-- **Guest Access and External Collaboration**
-  - Guest users are invited via self-service without expiration policies or role-based access controls.
-  - This creates unmanaged external surfaces that persist beyond intended access periods.
-  - Collaboration sprawl and lack of oversight amplify exposure to data leakage and misuse.
+Woodgrove Bank faces several identity and data security challenges in its hybrid environment:
 
-- **Multi-Factor Authentication (MFA) Fatigue**
-  - MFA is enforced uniformly without contextual triggers, causing user frustration and frequent lockouts.
-  - The absence of adaptive policies undermines usability and security, especially for high-risk roles.
-  - This friction can lead to resistance or circumvention, weakening the overall security posture.
+- Decentralized identity provisioning leads to stale and overprivileged accounts.
+- Unmanaged external access via self-service guest invitations lacks role restrictions and expiration.
+- Uniform MFA enforcement without contextual triggers causes user fatigue and frequent lockouts.
+- Siloed monitoring delays detection of suspicious activity.
+- Weak data governance allows sensitive data to be stored and shared in unclassified, guest-accessible environments.
 
-- **Monitoring and Telemetry Fragmentation**
-  - Security telemetry is siloed across identity systems, delaying detection of anomalous behavior.
-  - Suspicious sign-ins, dormant account activity, and risky user behavior often go unnoticed.
-  - Without centralized visibility, threat signals are missed or misinterpreted, reducing response effectiveness.
+These issues reflect systemic governance and visibility gaps that elevate identity-based risks.
 
-- **Data Governance and Classification Deficiencies**
-  - Sensitive data is stored and shared in unclassified environments accessible to guests.
-  - Manual labeling is inconsistent, and autolabeling isn't deployed, leading to misclassification.
-  - Lack of policy enforcement allows data to flow unchecked, increasing the risk of exfiltration
+### Threat Analysis
 
-- **Architectural Maturity Gaps**
-  - Conditional Access policies are inconsistently applied.
-  - Privileged access isn't time-bound or governed through approval workflows.
-  - Legacy applications rely on weak authentication, and cloud adoption outpaces governance readiness.
+Operational weaknesses translate into tangible threats:
+
+- Privilege escalation and unauthorized access due to long-lived, overprivileged accounts.
+- External threat surfaces from unmanaged guest access.
+- Credential abuse and insider threats enabled by lack of contextual MFA and automated provisioning.
+- Data leaks from absent classification and data loss prevention (DLP) controls, often undetected due to fragmented monitoring.
+
+These vulnerabilities highlight how poor identity hygiene can be exploited, especially in hybrid environments.
+
+### Architectural Solution
+
+A Zero Trust–aligned strategy using integrated Microsoft tools addresses Woodgrove Bank’s risks:
+
+- Microsoft Entra Privileged Identity Management for managing standing privileges.
+- Purview Information Protection and DLP for classifying and protecting sensitive data.
+- Defender for Identity and Microsoft Sentinel for unified visibility and incident response.
+
+This architecture emphasizes:
+
+- Automation
+- Policy-driven controls
+- Telemetry correlation across cloud and on-premises systems
+
+It's scalable, integrated, and operationally efficient—directly addressing overprivileged accounts, inconsistent provisioning, unmanaged guest access, and unclassified data.

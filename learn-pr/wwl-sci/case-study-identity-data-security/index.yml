@@ -2,16 +2,17 @@
 uid: learn.case-study-identity-data-security
 metadata:
   title: "Interactive case study: Modernizing identity and data security"
-  description: "Apply your cybersecurity architect skills on a real business scenario in the area of identity and data security. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
+  description: "Apply your cybersecurity architect skills on a real business scenario in the area of identity and data security. Analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
   ms.date: 08/05/2025
   author: wwlpublish
   ms.author: ceperezb
+  ai-usage: ai-assisted
   ms.topic: module
   ms.service: security
 title: "Interactive case study: Modernizing identity and data security"
-summary: "Apply your cybersecurity architect skills on a real business scenario focused on identity and data security. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
+summary: "Apply your cybersecurity architect skills on a real business scenario focused on identity and data security. Analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
 abstract: |
-  You learn:
+  In this interactive case study, you:
   - Explore identity lifecycle gaps, guest access risks, and monitoring limitations.
   - Learn how these challenges align with Zero Trust principles.
   - Apply architectural reasoning to assess threats and design secure solutions.
