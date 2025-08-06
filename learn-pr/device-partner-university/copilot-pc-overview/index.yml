@@ -19,7 +19,7 @@ abstract: |
   - Understand the significance of the NPU and its impact on efficiency
 prerequisites: |
   - None
-iconUrl: "../achievements/copilot-pc-overview.svg"
+iconUrl: "C:\Github\learn-pr\learn-pr\achievements\copilot-pc-overview.svg"
 ratingEnabled: false
 levels:
   - beginner
