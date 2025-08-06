@@ -14,8 +14,8 @@ With commercial data protection enabled:
 
 These safeguards ensure that users and organizations can confidently use Microsoft 365 Copilot without compromising security. [Learn more about enterprise data protection with Copilot.](/copilot/microsoft-365/enterprise-data-protection)
 
-
-> *Note: Microsoft 365 Copilot is sold separately.*
+> [!NOTE]
+> Microsoft 365 Copilot is sold separately.
 
 ## Seamless integration with Microsoft 365 and Intune
 
