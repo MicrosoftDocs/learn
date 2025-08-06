@@ -1,6 +1,6 @@
 It's important to understand storage metrics so you know which metrics to examine and what these metrics indicate about the state of a storage account. Using Azure Storage metrics, you can analyze your applications' usage trends and diagnose possible issues with your storage account.
 
-In this unit, you'll learn about metrics in Azure Monitor, what information it reports on, and how you can use the metrics it provides to identify problems with how your applications are using Azure Storage.
+In this unit, you learn about metrics in Azure Monitor. In particular, the information it reports on, and how you can use the metrics it provides to identify problems with how your applications are using Azure Storage.
 
 ## Understand metrics
 
@@ -12,7 +12,7 @@ Capacity metrics describe data storage (for example: bytes stored, bytes still a
 
 ### Transaction metrics
 
-Transaction metrics describe account activity (for example: number of transactions or number of bytes read). Transaction metrics are emitted on every request to a storage account from Azure Storage to Azure Monitor. In the case of no activity on your storage account, there will be no data on transaction metrics in the period. The time grain defines the time interval that metric values are presented. The supported time grains for all transaction metrics are PT1H and PT1M.
+Transaction metrics describe account activity (for example: number of transactions or number of bytes read). Transaction metrics are emitted on every request to a storage account from Azure Storage to Azure Monitor. If there's no activity on your storage account during a certain time range, then there are no transaction metrics reported during that time range. The time grain defines the time interval that metric values are presented for. The supported time grains for all transaction metrics are PT1H and PT1M.
 
 ## The anatomy of a metric value
 
@@ -22,13 +22,13 @@ You can get metric values by providing a time range, time interval, metric names
 |---|---|
 | Time range | The period of time that you want to capture (for example: yesterday or the last month). |
 | Time interval | The granularity of time reflected by a metric value. (for example: a value that reflects one hour or one day). |
-| Metric namespace | The namespace of the metric. This specifies whether to get a metric at the storage account level, or at the level of a specific storage service (for example: File Storage). |
-| Metric name | The metric you're interested in (for example: egress). |
-| Aggregation | How you want that value calculated. In most cases, you'll choose either a sum or an average. |
+| Metric namespace | The namespace of the metric. The namespace specifies whether to get a metric at the storage account level, or at the level of a specific storage service (for example: *File Storage*). |
+| Metric name | The metric you're interested in (for example: *egress*). |
+| Aggregation | How you want that value calculated. In most cases, you choose either a *sum* or an *average*. |
 
-For metrics that support dimensions, you can filter the metric with the desired dimension value. Dimensions are name/value pairs that carry additional data to describe the metric value. For example, authentication type is a dimension for transactions. If you're interested in seeing only transactions that were authorized by using an account key, you can use the authentication dimension and filter on account key.
+For metrics that support dimensions, you can filter the metric with the desired dimension value. Dimensions are name/value pairs that carry more data to describe the metric value. For example, authentication type is a dimension for transactions. If you're interested in seeing only transactions that were authorized by using an account key, you can use the authentication dimension and filter on account key.
 
-The **ResponseType** dimension reveals the success and failure rate, and the reasons for failure, such as timeouts, throttling, network errors, authorization failure, and so on. This information can give you a good insight as to why the performance of your applications may be suffering. For example, frequent throttling and timeout errors can indicate a high level of contention occurring for limited resources, and you might need to re-architect your system to the use the **Premium** rather than the **Standard** tier for your storage accounts. You might also need to spread the load across multiple storage accounts or select a different organization for any blob containers and tables that your application is using.
+The **ResponseType** dimension reveals the success and failure rate, and the reasons for failure, such as timeouts, throttling, network errors, authorization failure, and so on. This information can give you a good insight as to why the performance of your applications might be suffering. For example, frequent throttling and timeout errors can indicate a high level of contention occurring for limited resources, and you might need to rearchitect your system to the use the **Premium** rather than the **Standard** tier for your storage accounts. You might also need to spread the load across multiple storage accounts or select a different organization for any blob containers and tables that your application is using.
 
 ## View and analyze metrics
 
@@ -72,7 +72,7 @@ az monitor metrics list --resource <resource-ID> --metric "Transactions" --inter
 
 ### Application code
 
-You can get metric values by writing code that uses any of the Azure SDKs. The following example uses the [Azure SDK for .NET](/dotnet/azure/sdk/azure-sdk-for-dotnet) to get the average amount of Blob storage used in a storage account over a specified time period.
+You can get metric values by writing code that uses any of the Software Development Kits (SDKs). The following example uses the [Azure SDK for .NET](/dotnet/azure/sdk/azure-sdk-for-dotnet) to get the average amount of Blob storage used in a storage account over a specified time period.
 
 ```csharp
 public static async Task ReadStorageMetricValueTest()

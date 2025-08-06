@@ -3,7 +3,7 @@ Our goal was to help you evaluate whether Azure Service Fabric would be a good c
 You also saw how Service Fabric:
 
 - Supports any cloud and any operating system.
-- Offers two cluster models: standard, where you control the underlying resources, and managed, where the underlying resources are managed by Azure.
+- Offers two cluster models: standard, where you control the underlying resources, and managed, where Azure manages the underlying resources.
 - Provides a runtime that supports stateless and stateful microservice architectures.
 - Integrates with Azure services to streamline your solution.
 

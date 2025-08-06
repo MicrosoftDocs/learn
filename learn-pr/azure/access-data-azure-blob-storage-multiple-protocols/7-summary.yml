@@ -5,11 +5,11 @@ metadata:
   unitType: summary
   title: Summary
   description: This is a summary unit.
-  ms.date: 11/07/2023
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 06/26/2025
+  author: normesta
+  ms.author: normesta
   ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
-
+

@@ -33,14 +33,14 @@ Register the function with your agent using the Azure AI SDK:
 functions = FunctionTool(user_functions)
 toolset = ToolSet()
 toolset.add(functions)
-project_client.agents.enable_auto_function_calls(toolset=toolset)
+agent_client.enable_auto_function_calls(toolset=toolset)
 
 # Create your agent with the toolset
-agent = project_client.agents.create_agent(
+agent = agent_client.create_agent(
     model="gpt-4o-mini",
     name="snowfall-agent",
     instructions="You are a weather assistant tracking snowfall. Use the provided functions to answer questions.",
-    toolset={"functions": [recent_snowfall]}
+    toolset=toolset
 )
 ```
 
@@ -79,7 +79,7 @@ When your Azure Function is in place, integrate add it to the agent definition a
       ),
   )
   
-  agent = project_client.agents.create_agent(
+  agent = agent_client.create_agent(
       model=os.environ["MODEL_DEPLOYMENT_NAME"],
       name="azure-function-agent",
       instructions="You are a snowfall tracking agent. Use the provided Azure Function to fetch snowfall based on location.",
@@ -146,7 +146,7 @@ First, create a JSON file ( in this example, called *snowfall_openapi.json*) des
 Then, register the OpenAPI tool in the agent defintion:
 
   ```python
-  from azure.ai.projects.models import OpenApiTool, OpenApiAnonymousAuthDetails
+  from azure.ai.agents.models import OpenApiTool, OpenApiAnonymousAuthDetails
   
   with open("snowfall_openapi.json", "r") as f:
       openapi_spec = json.load(f)
@@ -154,7 +154,7 @@ Then, register the OpenAPI tool in the agent defintion:
   auth = OpenApiAnonymousAuthDetails()
   openapi_tool = OpenApiTool(name="snowfall_api", spec=openapi_spec, auth=auth)
   
-  agent = project_client.agents.create_agent(
+  agent = agent_client.create_agent(
       model="gpt-4o-mini",
       name="openapi-agent",
       instructions="You are a snowfall tracking assistant. Use the API to fetch snowfall data.",

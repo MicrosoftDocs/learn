@@ -8,6 +8,7 @@ metadata:
   author: vrapolinario
   ms.author: viniap
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 quiz:
   title: Knowledge check

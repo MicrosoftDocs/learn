@@ -1,10 +1,10 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-language-models-databricks
 metadata:
-  title: Get started with language models in Azure Databricks
+  title: Get Started with Language Models in Azure Databricks
   description: Get started with language models in Azure Databricks
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/07/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: module
   ms.service: azure-databricks

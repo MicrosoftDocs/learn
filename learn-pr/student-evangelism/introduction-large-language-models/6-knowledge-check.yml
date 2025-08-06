@@ -8,6 +8,7 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]

@@ -90,7 +90,7 @@ Before you write any pipeline code, you can try things manually to verify the pr
 
     ```dotnetcli
     dotnet tool run reportgenerator \
-      -- -reports:./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.cobertura.xml \
+      -reports:./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.cobertura.xml \
       -targetdir:./CodeCoverage \
       -reporttypes:HtmlInline_AzurePipelines
     ```

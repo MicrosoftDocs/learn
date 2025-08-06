@@ -3,7 +3,7 @@ uid: learn.introduction-to-azure-dns
 metadata:
   title: Introduction to Azure DNS
   description: Azure DNS is a cloud service that allows you to host and manage domain name system (DNS) domains, also known as DNS zones.
-  ms.date: 01/31/2024
+  ms.date: 05/15/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module-intro-to-product
@@ -13,7 +13,7 @@ metadata:
 title: Introduction to Azure DNS
 summary: This module explains what Azure DNS does, how it works, and when you should choose to use Azure DNS as a solution to meet your organization’s needs.
 abstract:  |
-  In this module, you will:
+  In this module, you'll:
   - Learn what Azure DNS is and the functionality it provides.
   - Determine whether Azure DNS meets the needs of your organization.
   - Understand the difference between Azure DNS public and private zones.
@@ -38,4 +38,4 @@ units:
 - learn.introduction-to-azure-dns.summary
 badge:
   uid: learn.introduction-to-azure-dns.badge
-
+

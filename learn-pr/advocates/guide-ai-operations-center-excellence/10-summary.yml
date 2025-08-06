@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.workload-operations-generative-ai-center-excellence.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Module summary.
+  ms.date: 06/04/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-summary.md)]

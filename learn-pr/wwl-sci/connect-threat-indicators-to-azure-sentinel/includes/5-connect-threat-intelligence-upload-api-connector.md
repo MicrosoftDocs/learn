@@ -52,7 +52,7 @@ The upload API ingests threat intelligence objects at the workspace level and re
 The following configuration information is required by the upload API:
 
 - Application (client) ID
-- Microsoft Entra access token with [OAuth 2.0 authentication](/active-directory/fundamentals/auth-oauth2)
+- Microsoft Entra access token with [OAuth 2.0 authentication](/entra/identity-platform/v2-protocols)
 - Microsoft Sentinel workspace ID
 
 Enter these values in the configuration of your integrated TIP or custom solution where required.

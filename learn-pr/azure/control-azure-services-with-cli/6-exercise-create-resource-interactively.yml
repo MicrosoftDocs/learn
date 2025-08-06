@@ -5,8 +5,9 @@ metadata:
   title: Exercise - Create an Azure Resource interactively with Azure CLI
   description: Exercise - Create an Azure Resource interactively with Azure CLI
   ms.date: 01/09/2025
-  author: dbradish-microsoft
-  ms.author: dbradish
+  ms.update-cycle: 180-days
+  author: mikefrobbins
+  ms.author: mirobb
   ms.topic: unit
   ms.collection: ce-skilling-ai-copilot
   ms.custom:
@@ -15,4 +16,4 @@ durationInMinutes: 15
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/6-exercise-create-resource-interactively.md)]
+  [!include[](includes/6-exercise-create-resource-interactively.md)]

@@ -3,7 +3,7 @@ uid: learn.dotnet-debug-visual-studio.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Check what you've learned.
+  description: Check what you learned about debugging in Visual Studio.
   author: alexwolfmsft
   ms.author: alexwolf
   manager: jmartens
@@ -11,6 +11,7 @@ metadata:
   ms.topic: unit
   ms.custom:
     - devx-track-dotnet
+  module_assessment: true
 durationInMinutes: 2
 quiz:
   title: Check your knowledge
@@ -33,28 +34,28 @@ quiz:
       choices:
         - content: '`Debug.Assert(count != 0, "Count should not be 0.");`'
           isCorrect: false
-          explanation: "Assert tests a condition. If it's true, nothing will happen or else the application will enter break mode. So here, if the count is 0, it will enter break mode."
+          explanation: "Assert tests a condition. If it's true, nothing happens or else the application enters break mode. So here, if the count is 0, it enters break mode."
         - content: '`Debug.Assert(count == 0, "Count should not be 0.");`'
           isCorrect: false
-          explanation: "Assert tests a condition. If it's true, nothing will happen or else the application will enter break mode. So here, if the count is 0, nothing will happen."
+          explanation: "Assert tests a condition. If it's true, nothing happens or else the application enters break mode. So here, if the count is 0, nothing happens."
         - content: '`Debug.WriteIf(count != 0, "Count should not be 0.");`'
           isCorrect: false
           explanation: "This code prints a message when the count doesn't equal 0."
         - content: '`Debug.WriteIf(count == 0, "Count should not be 0.");`'
           isCorrect: true
-          explanation: "This code will only print a debug message when the count is 0."
+          explanation: "This code only prints a debug message when the count is 0."
     - content: "What are the top two values a debugger provides?"
       choices:
         - content: "Control of your program execution and observation of your program's state"
           isCorrect: true
           explanation: "The two main values almost every debugger provides are the ability to control program execution and to observe program state."
-        - content: "Modifying program values and changing your program output"
+        - content: "Modifying program values and changing your program output."
           isCorrect: false
-          explanation: "Changing your program's output isn't useful because it will only have effect when the application is being debugged."
-        - content: "Observing your program's state and modifying your program values"
+          explanation: "Changing your program's output isn't useful because it only has effect when the application is being debugged."
+        - content: "Observing your program's state and modifying your program values."
           isCorrect: false
           explanation: "Observing and modifying values are important, but it's also important to be able to control the flow of program execution."
-        - content: "Editing your program while running and editing program values"
+        - content: "Editing your program while running and editing program values."
           isCorrect: false
           explanation: "Editing programs is useful, but observing your program's operational state is another important value that the .NET debugger provides."
     - content: "Which Visual Studio debugger window is most useful to observe the current value of a specific variable across different functions?"
@@ -62,7 +63,7 @@ quiz:
         - content: "Use the Locals window because it shows all variables that are currently in scope."
           isCorrect: false
           explanation: "While the Locals window does display all variables currently in scope, it's not the best way to watch the value of a specific variable."
-        - content: "Hover over the variable in the code editor to display the value."
+        - content: "Display the value by hovering over the variable in the code editor."
           isCorrect: false
           explanation: "While hovering does display the variable's current value, it's a manual process and isn't efficient."
         - content: "Use the Watch window to select specific variables or expressions to watch throughout the program's execution."

@@ -4,7 +4,7 @@ Azure AI Document Intelligence is designed to support complex document and form 
 
 Let's explore an example of using Azure AI Document Intelligence to extract data from a form.
 
-Suppose a financial loan company needs to hundreds of mortgage applications each day. Here's an example of just the first page of a standard 11-page mortgage application form:
+Suppose a financial loan company needs to process hundreds of mortgage applications each day. Here's an example of just the first page of a standard 11-page mortgage application form:
 
 ![Photograph of a loan application form.](../media/loan-application.png)
 

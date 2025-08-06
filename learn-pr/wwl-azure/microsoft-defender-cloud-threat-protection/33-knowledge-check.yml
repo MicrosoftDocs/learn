@@ -8,10 +8,11 @@ metadata:
   description: "Knowledge check"
   ms.date: 04/15/2025
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - references_regions
+  module_assessment: true
 durationInMinutes: 10
 content: |
   [!include[](includes/33-knowledge-check.md)]

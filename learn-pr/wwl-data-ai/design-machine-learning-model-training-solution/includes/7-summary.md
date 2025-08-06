@@ -1,5 +1,2 @@
-In this module, you've learned how to:
+In this module you learned about considerations for machine learning solutions. Machine learning forms the backbone of modern AI applications, enabling systems to generate insights from data for tasks like predictive analytics and personalized recommendations. Designing an effective ML solution involves a structured, iterative process: defining the problem, acquiring and preparing data, training the model, integrating it into applications, and monitoring its performance. Microsoft Azure supports this lifecycle through Azure Machine Learning studio, a browser-based platform where users can manage data, run experiments, deploy models, and monitor results using both code-first and no-code tools like Automated machine learning.
 
-- Identify machine learning tasks.
-- Choose a service to train a model.
-- Choose between compute options.

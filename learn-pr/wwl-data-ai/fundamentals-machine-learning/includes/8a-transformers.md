@@ -81,7 +81,7 @@ We can plot these vectors in three-dimensional space, like this:
 
 ![Diagram of token vectors plotted in three dimensional space.](../media/embed-example.png)
 
-The embedding vectors for `"dog"` and `"puppy"` describe a path along an almost identical direction, which is also fairly similar to the direction for `"cat"`. The embedding vector for `"skateboard"` however describes journey in a very different direction.
+The embedding vectors for `"dog"` and `"puppy"` describe a path along an almost identical direction, which is also fairly similar to the direction for `"cat"`. The embedding vector for `"skateboard"` however describes a journey in a very different direction.
 
 > [!NOTE]
 > The previous example shows a simple example model in which each embedding has only three dimensions. Real language models have many more dimensions.
@@ -100,12 +100,10 @@ In a decoder block, attention layers are used to predict the next token in a seq
 
 Remember that the attention layer is working with numeric vector representations of the tokens, not the actual text. In a decoder, the process starts with a sequence of token embeddings representing the text to be completed. The first thing that happens is that another *positional encoding* layer adds a value to each embedding to indicate its position in the sequence:
 
-```
 - [**1**,5,6,2]  (I)
 - [**2**,9,3,1]  (heard)
 - [**3**,1,1,2]  (a)
 - [**4**,10,3,2] (dog)
-```
 
 During training, the goal is to predict the vector for the final token in the sequence based on the preceding tokens. The attention layer assigns a numeric *weight* to each token in the sequence so far. It uses that value to perform a calculation on the weighted vectors that produces an *attention score* that can be used to calculate a possible vector for the next token. In practice, a technique called *multi-head attention* uses different elements of the embeddings to calculate multiple attention scores. A neural network is then used to evaluate all possible tokens to determine the most probable token with which to continue the sequence. The process continues iteratively for each token in the sequence, with the output sequence so far being used regressively as the input for the next iteration – essentially building the output one token at a time.
 

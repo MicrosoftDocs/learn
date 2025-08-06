@@ -14,7 +14,7 @@ In this module, you created resources by using your Azure subscription. You want
 
 ## Learn More
 
-- [Docker overview](https://docs.docker.com/guides/docker-overview/)
+- [Docker overview](https://docs.docker.com/get-started/docker-overview/)
 - [Install Docker Desktop on Windows](https://docs.docker.com/desktop/install/windows-install/)
 - [Docker reference documentation](https://docs.docker.com/reference/)
 - [Best practices for writing Dockerfiles](https://docs.docker.com/build/building/best-practices/)

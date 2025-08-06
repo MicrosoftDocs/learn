@@ -4,11 +4,12 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check.
-  ms.date: 01/12/2024
+  ms.date: 07/22/2025
   author: Orin-Thomas
   ms.author: orthomas
   ms.custom: team=cloud_advocates
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -19,7 +20,7 @@ quiz:
       choices:
         - content: Layer 4
           isCorrect: true
-          explanation: Correct. Load Balancer functions at Layer 4 (transport layer) of the OSI model.
+          explanation: Correct. Load Balancer functions at Layer 4 (transport layer) of the Open Systems Interconnection (OSI) model.
         - content: Layer 7
           isCorrect: false
           explanation: Incorrect. Load Balancer functions at Layer 4 of the OSI model. Other Azure services, such as Azure Application Gateway, can load balance traffic at Layer 7.
@@ -33,7 +34,7 @@ quiz:
           explanation: Incorrect. Health probes allow you to determine whether a back-end pool instance is responding to traffic.
         - content: High availability port
           isCorrect: false
-          explanation: Incorrect. High availability ports are a type of rule in which all TCP and UDP traffic that arrives on all ports is load balanced.
+          explanation: Incorrect. High availability ports are a type of rule in which all Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) traffic that arrives on all ports is load balanced.
         - content: Session persistence
           isCorrect: true
           explanation: Correct. Session persistence allows you to ensure that traffic from a client computer interacting with Azure Load Balancer is always forwarded to the same server in the back-end pool.
@@ -48,4 +49,4 @@ quiz:
         - content: Health probe
           isCorrect: true
           explanation: Correct. Health probes allow you to determine whether a back-end pool instance is responding to traffic.
-          
+          

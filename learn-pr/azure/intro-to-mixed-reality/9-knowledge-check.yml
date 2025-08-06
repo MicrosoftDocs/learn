@@ -8,6 +8,7 @@ metadata:
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 quiz:
   questions:

@@ -9,6 +9,7 @@ metadata:
   author: erjosito
   ms.author: jomore
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 05
 content: |
 quiz:

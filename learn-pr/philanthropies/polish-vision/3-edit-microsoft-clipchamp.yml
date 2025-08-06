@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.polish-vision.edit-microsoft-clipchamp
+
+title: Edit with Microsoft Clipchamp
+metadata:
+  title: Edit with Microsoft Clipchamp
+  description: "Microsoft Clipchamp is an AI-powered video editor that makes music video post-production easy. It helps creators refine footage, add smart scene transitions, enhance audio, and apply professional visual effects."
+  ms.date: 4/25/2025
+  author: kariannab-ms
+  ms.author: kbarreto
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-edit-microsoft-clipchamp.md)]

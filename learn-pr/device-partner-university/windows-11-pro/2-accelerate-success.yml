@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.new-windows-11-pro.accelerate-success
+title: Accelerate organizational success
+metadata:
+  title: Accelerate Organizational Success
+  description: This content is part of the "What's new with Windows 11 Pro" module.
+  ms.date: 07/23/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-accelerate-success.md)]

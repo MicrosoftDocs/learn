@@ -60,11 +60,13 @@ The [hosting option](/azure/security/fundamentals/shared-responsibility) of your
 
 :::image type="content" source="../media/host-infrastructures.png" alt-text="Diagram that highlights the developer and cloud provider responsibilities for infrastructure and platform services." border="false":::
 
-- **[Infrastructure-as-a-Service (IaaS)](https://azure.microsoft.com/overview/what-is-iaas/)** lets you create individual virtual machines along with the associated networking and storage components. Then you deploy the software and applications you want onto those virtual machines. This model is the closest to a traditional on-premises environment, except that Microsoft manages the infrastructure. You still manage the individual virtual machines. Azure Virtual Machines offers IaaS hosting.
+- **[Software-as-a-Service (SaaS)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-saas)** delivers software applications over the internet, on a subscription basis. Users can access these applications via a web browser without needing to manage the underlying infrastructure or application software. Microsoft 365 is an example of a SaaS solution, providing cloud-based productivity tools like Word, Excel, Outlook, and Teams.
 
-- **[Platform-as-a-Service (PaaS)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-paas)** provides a managed hosting environment, where you can deploy your application without needing to manage virtual machines or networking resources. Azure compute services that offer PaaS hosting include Azure Batch, App Service, Container Instances, and Azure Kubernetes Service.
+- **[Platform-as-a-Service (PaaS)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-paas)** provides a managed hosting environment where developers can build, deploy, and manage applications without worrying about the underlying infrastructure. Azure handles the infrastructure, maintenance, and scalability, allowing developers to focus on writing code. Examples of Azure PaaS offerings include Azure App Services, Azure Functions, and Azure SQL Database.
 
-- **[Software-as-a-Service (SaaS)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-saas)** operates on a hosted cloud-based model where software applications are accessed over the internet. 
+- **[Infrastructure-as-a-Service (IaaS)](https://azure.microsoft.com/overview/what-is-iaas/)** provides virtualized computing resources over the internet. It allows users to rent virtual machines, storage, and networking resources on-demand, without the need for physical hardware. Azure Virtual Machines is a prime example of an IaaS offering, where users can deploy and manage VMs inside an Azure virtual network.
+
+- **On-premises hosting** involves deploying and managing applications on local servers within an organization's own data center. This option provides the highest level of control over the infrastructure but requires significant investment in hardware, maintenance, and IT staff. Azure also supports hybrid cloud solutions, allowing integration between on-premises infrastructure and Azure services.
 
 > [!TIP]
-> You can being your study of Azure AI-ready compute solutions with the [Describe Azure compute and networking services](/training/modules/describe-azure-compute-networking-services/) module.
+> You can extend your study of Azure AI-ready compute solutions with the [Describe Azure compute and networking services](/training/modules/describe-azure-compute-networking-services/) module.

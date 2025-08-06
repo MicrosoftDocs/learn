@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-limit-offset-order-by.order-by
+uid: learn.azure-database.postgresql.basic-sql-limit-offset-order-by.order-by
 title: ORDER BY
 metadata:
   title: ORDER BY
   description: "This unit explains how to use the ORDER BY clause in PostgreSQL to sort query results by one or multiple columns in ascending or descending order. It includes practical examples to help you organize and prioritize data for clearer analysis."
-  ms.date: 05/14/2025
+  ms.date: 05/23/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit

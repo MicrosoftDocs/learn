@@ -7,10 +7,12 @@ metadata:
   author: theoyinbooke
   ms.author: somelezediko
   ms.date: 12/13/2023
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot
   ms.custom: team=nextgen
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:

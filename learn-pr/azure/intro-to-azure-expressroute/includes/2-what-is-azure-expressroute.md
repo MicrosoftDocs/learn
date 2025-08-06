@@ -9,7 +9,7 @@ ExpressRoute provides direct access between on-premises networks and the followi
 - Microsoft Office 365
 - Microsoft Dynamics 365
 
-ExpressRoute provides organizations with Open Systems Interconnection (OSI) model Layer 3 connectivity between on-premises hosts and hosts in the Microsoft cloud. For example, a computer on your on-premises network can use an ExpressRoute connection to contact an IaaS VM through its IP address, but it can't send traffic to that IaaS VM’s Media Access Control (MAC) address.
+ExpressRoute provides organizations with Open Systems Interconnection (OSI) model Layer 3 connectivity between on-premises hosts and hosts in the Microsoft cloud. For example, a computer on your on-premises network can use an ExpressRoute connection to contact an IaaS virtual machine (VM) through its IP address, but it can't send traffic to that IaaS VM’s Media Access Control (MAC) address.
 
 ExpressRoute providers provision connections with redundant devices. Service Level Agreements (SLAs) guarantee a high level of availability. Organizations that require availability guarantees that go beyond the provider SLA can configure multiple ExpressRoute connections.
 
@@ -33,4 +33,4 @@ Azure ExpressRoute supports three models for connecting on-premises networks to 
 ExpressRoute uses a private connection between your on-premises network and Microsoft’s clouds. VPN connections travel across the public internet, so it's possible (if unlikely) that traffic can be captured as it passes across the internet. Some jurisdictions require that certain types of data never transit the public internet, so choosing ExpressRoute is a matter of compliance rather than simple technical necessity.  
 
 > [!NOTE]
-> Even if an ExpressRoute connection is used, DNS queries, certificate revocation list checking, and requests to the Azure Content Delivery Network will still be sent across the public internet.
+> Even if an ExpressRoute connection is used, Domain Name System (DNS) queries, certificate revocation list checking, and requests to the Azure Content Delivery Network are still sent across the public internet.

@@ -5,8 +5,8 @@ metadata:
   description: Learn how to monitor and control your Azure spending and optimize the use of Azure resources.
   brand: azure
   ms.date: 03/23/2020
-  author: bandersmsft
-  ms.author: banders
+  author: tonyafehr
+  ms.author: tfehr
   ms.topic: learning-path
 title: "Control Azure spending and manage bills with Microsoft Cost Management + Billing"
 summary: Learn how to monitor and control your Azure spending and optimize the use of Azure resources.

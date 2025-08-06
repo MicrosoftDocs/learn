@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure Azure App Service
   description: "Configure Azure App Service"
-  ms.date: 04/28/2025
+  ms.date: 06/05/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module

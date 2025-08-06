@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-joining-tables.introduction
+uid: learn.azure-database.postgresql.basic-sql-join-tables.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "This unit introduces the concept of SQL joins in PostgreSQL, explaining how to combine data from multiple related tables using INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN, and NATURAL JOIN. It sets the stage for learning how to query interconnected data efficiently in real-world relational database scenarios."
-  ms.date: 05/14/2025
+  ms.date: 05/23/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit

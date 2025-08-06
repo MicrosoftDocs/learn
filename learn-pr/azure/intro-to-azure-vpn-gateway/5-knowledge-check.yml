@@ -12,6 +12,7 @@ metadata:
   ms.topic: unit
   ms.contributors:
   - orthomas-01072022
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]

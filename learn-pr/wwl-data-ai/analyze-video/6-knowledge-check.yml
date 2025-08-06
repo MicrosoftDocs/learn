@@ -10,11 +10,12 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
-  title: "Check your knowledge"
+  title: "Check your knowledge"
   questions:
   - content: "You want Azure Video Indexer to analyze a video. What must you do first?"
     choices:
@@ -31,11 +32,11 @@ quiz:
     choices:
     - content: "Edit the Brands model to show brands suggested by Bing, and add any new brands you want to detect."
       isCorrect: true
-      explanation: "That's correct. You can both detect known brands, and well as include new brands you want to detect by providing information about it."
-    - content: "Edit the conference call videos to include a caption of each brand seen on their first appearance."
+      explanation: "That's correct. You can both detect known brands, and include new brands you want to detect by providing information about it."
+    - content: "Edit all recorded conference call videos to include a caption of each brand seen on their first appearance."
       isCorrect: false
-      explanation: "That's incorrect. You can both detect known brands, and well as include new brands you want to detect by providing information about it."
-    - content: "Embed the Azure Video Indexer widgets in a custom web site that has all the brand images stored for reference."
+      explanation: "That's incorrect. You can both detect known brands, and include new brands you want to detect by providing information about it. Editing the videos isn't necessary."
+    - content: "Embed the Azure Video Indexer widgets in a custom web site."
       isCorrect: false
-      explanation: "That's incorrect. You can both detect known brands, and well as include new brands you want to detect by providing information about it."
+      explanation: "That's incorrect. You can both detect known brands, and include new brands you want to detect by providing information about it. Embedding the widgets isn't solving the problem."
 

@@ -3,7 +3,7 @@ uid: learn.wwl.manage-azure-paas-resources-using-automated-methods
 metadata:
   title: Manage Azure PaaS tasks using automation
   description: Manage Azure PaaS tasks using automation
-  ms.date: 02/27/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
@@ -48,4 +48,4 @@ units:
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.summary
 badge:
   uid: learn.wwl.manage-azure-paas-resources-using-automated-methods.badge
-
+

@@ -8,6 +8,7 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/3-how-deploy-edge-device.md)]

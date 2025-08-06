@@ -6,7 +6,8 @@ metadata:
   description: Use Translator
   author: laujan
   ms.author: lajanuar
-  ms.date: 02/06/2024
+  ms.date: 06/27/2025
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot
@@ -15,4 +16,4 @@ azureSandbox: true
 interactive: bash
 content: |
   [!INCLUDE[](includes/5-use-translator.md)]
-
+

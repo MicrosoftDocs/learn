@@ -6,7 +6,7 @@ metadata:
   author: buzahid
   ms.author: buzahid
   ms.date: 05/16/2025
-  ms.service: azure-ai-openai
+  ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
 title: Develop an AI agent with Semantic Kernel
 summary: This module provides engineers with the skills to begin building Azure AI Foundry Agent Service agents with Semantic Kernel.
@@ -27,10 +27,9 @@ roles:
   - solution-architect
   - student
 products: 
-  - azure-openai
-  - azure
+  - ai-services
 subjects: 
-  - cloud-computing
+  - artificial-intelligence
 units:
 - learn.wwl.develop-ai-agent-with-semantic-kernel.introduction
 - learn.wwl.develop-ai-agent-with-semantic-kernel.understand-semantic-kernel-agents

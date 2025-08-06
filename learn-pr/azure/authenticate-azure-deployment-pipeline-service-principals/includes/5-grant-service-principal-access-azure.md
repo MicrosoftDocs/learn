@@ -50,7 +50,7 @@ Remember that role assignments are inherited. If you assign a role at a subscrip
 Now that you understand the components of a role assignment, you can decide the appropriate values for your scenarios. Here are some general guidelines to consider:
 
 > [!div class="checklist"]
-> - Use the least permissive role that you can. If your pipeline is only going to deploy basic Bicep templates and won't manage role assignments, don't use the Owner role.
+> - Use the least permissive role that you can. If your pipeline is only going to deploy basic Bicep files and won't manage role assignments, don't use the Owner role.
 > - Use the narrowest scope that you can. Most pipelines only need to deploy resources to a resource group, so they shouldn't be given subscription-scoped role assignments.
 > - For many pipelines, a good default option for a role assignment is the Contributor role on the resource group scope.
 > - Consider everything your pipeline does, and everything it might do in the future. For example, you might consider creating a custom role definition for your website's deployment pipeline and only grant permissions for App Service and Application Insights. Next month, you might need to add an Azure Cosmos DB account to your Bicep file, but the custom role will block Azure Cosmos DB resources from being created. 

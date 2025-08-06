@@ -8,6 +8,7 @@ metadata:
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 quiz:
   title: Knowledge Check

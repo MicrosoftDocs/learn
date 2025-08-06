@@ -1,7 +1,8 @@
 ## Querying all columns from a table
 
 ```sql
-SELECT * FROM sales.customers;
+SELECT * 
+FROM sales.customers;
 ```
 
 This query retrieves all rows and columns from the `sales.customers` table. However, querying all columns isn't required and is a costly operation. For best performance, only select the necessary columns.
@@ -11,7 +12,8 @@ Selecting specific columns is more efficient because it reduces the amount of da
 ## Querying specific columns
 
 ```sql
-SELECT customer_name, city, country FROM sales.customers;
+SELECT customer_name, city, country 
+FROM sales.customers;
 ```
 
 This query retrieves only the `customer_name`, `city`, and `country` columns from the `sales.customers` table.
@@ -19,7 +21,8 @@ This query retrieves only the `customer_name`, `city`, and `country` columns fro
 ## Querying distinct values
 
 ```sql
-SELECT DISTINCT country FROM sales.customers;
+SELECT DISTINCT country 
+FROM sales.customers;
 ```
 
 The `DISTINCT` keyword in SQL is used to ensure that the result of a query contains only unique values for a specified column or combination of columns, eliminating any duplicate entries.  

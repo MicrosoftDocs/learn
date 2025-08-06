@@ -10,6 +10,7 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 2
 content: |
   [!include[](includes/5-knowledge-check.md)]

@@ -8,6 +8,7 @@ metadata:
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 durationInMinutes: 7
 content: |
   [!include[](includes/2-use-data-api-builder-for-azure-sql-database.md)]

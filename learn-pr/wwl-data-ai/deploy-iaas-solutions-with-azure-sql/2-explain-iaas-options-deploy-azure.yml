@@ -4,7 +4,7 @@ title: Explain IaaS options to deploy SQL Server in Azure
 metadata:
   title: Explain IaaS options to deploy SQL Server in Azure
   description: "Explain IaaS options to deploy SQL Server in Azure"
-  ms.date: 02/18/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 13
 content: |
-  [!include[](includes/2-explain-iaas-options-deploy-azure.md)]
+  [!include[](includes/2-explain-iaas-options-deploy-azure.md)]

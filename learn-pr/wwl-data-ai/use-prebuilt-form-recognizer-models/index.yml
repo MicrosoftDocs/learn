@@ -18,7 +18,8 @@ abstract: |
   -	Analyze forms by using the General Document, Read, and Layout models.
   -	Analyze forms by using financial, ID, and tax prebuilt models.
 prerequisites: |
-  - Basic understanding of Document intelligence
+  - Familiarity with Azure and the Azure portal.
+  - Programming experience.
 iconUrl: /training/achievements/use-prebuilt-form-recognizer-models.svg
 levels:
 - intermediate

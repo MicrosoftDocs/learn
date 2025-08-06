@@ -5,7 +5,8 @@ This is essential for organizing data in a way that makes it easier to interpret
 ## Sorting in ascending order (default)
 
 ```sql
-SELECT * FROM sales.products
+SELECT * 
+FROM sales.products
 ORDER BY price;
 ```
 
@@ -17,7 +18,8 @@ To change the order, you need to indicate that explicitly, as demonstrated in th
 ## Sorting in descending order
 
 ```sql
-SELECT * FROM sales.products
+SELECT * 
+FROM sales.products
 ORDER BY price DESC;
 ```
 
@@ -26,7 +28,8 @@ This query retrieves products sorted by price in descending order.
 ## Sorting by multiple columns
 
 ```sql
-SELECT * FROM sales.customers
+SELECT * 
+FROM sales.customers
 ORDER BY country, city;
 ```
 
@@ -39,7 +42,8 @@ In essence, this query provides a customer list that is organized primarily by `
 Additionally, combining this approach with `ASC` or `DESC` modifiers allows full control over the sorting direction for each column.
 
 ```sql
-SELECT * FROM sales.customers
+SELECT * 
+FROM sales.customers
 ORDER BY country ASC, city DESC;
 ```
 

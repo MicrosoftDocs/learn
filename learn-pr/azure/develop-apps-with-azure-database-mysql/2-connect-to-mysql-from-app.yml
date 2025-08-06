@@ -6,17 +6,18 @@ metadata:
   title: Connect to and query an Azure Database for MySQL flexible server from your app
   description: Learn how to connect to and query Azure Database for MySQL - Flexible Server from your application, developed in languages like PHP, Java, Python.
   ms.date: 08/27/2024
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
   ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - devx-track-extended-java
+    - sfi-ropc-nochange
     - devx-track-python
+    - devx-track-extended-java
+    - build-2023-dataai
+    - build-2023
   zone_pivot_groups: dev-lang-php-python-java
 durationInMinutes: 5
 content: |
   [!include[](includes/2-connect-to-mysql-from-app.md)]
-
+

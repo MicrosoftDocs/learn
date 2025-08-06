@@ -4,7 +4,7 @@ title: Implement Row Level security
 metadata:
   title: Implement Row Level security
   description: "Implement Row Level Security (RLS)"
-  ms.date: 02/26/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-implement-row-level-security.md)]
+  [!include[](includes/5-implement-row-level-security.md)]

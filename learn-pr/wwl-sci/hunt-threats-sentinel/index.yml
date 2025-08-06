@@ -3,8 +3,8 @@ uid: learn.azure.hunt-threats-sentinel
 metadata:
   title: Threat hunting with Microsoft Sentinel
   description: Learn how to proactively identify threat behaviors by using Microsoft Sentinel queries.
-  ms.date: 03/06/2025
-  author: wwlpublish
+  ms.date: 06/09/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: microsoft-sentinel

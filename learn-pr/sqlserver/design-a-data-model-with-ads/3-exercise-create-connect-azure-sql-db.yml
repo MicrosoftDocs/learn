@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-a-data-model-with-ads.exercise-create-connect-azure-sql-db
-title: Create an Azure SQL Database and a connection in Azure Data Studio
+title: Create an Azure SQL Database and a connection in Visual Studio Code
 metadata:
-  title: Create an Azure SQL Database and a connection in Azure Data Studio
-  description: "Set up Azure Data Studio locally on your machine and then create an Azure SQL Database with Azure Cloud Shell and PowerShell"
-  ms.date: 03/05/2024
+  title: Create an Azure SQL Database and a connection in Visual Studio Code
+  description: "Set up Visual Studio Code locally on your machine and then create an Azure SQL Database with Azure Cloud Shell and PowerShell"
+  ms.date: 07/17/2025
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: unit
@@ -15,4 +15,4 @@ interactive: powershell
 sandbox: true
 content: |
   [!include[](includes/3-exercise-create-connect-azure-sql-db.md)]
-
+

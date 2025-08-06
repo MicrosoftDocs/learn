@@ -4,12 +4,12 @@ title: Describe Azure services for open-source databases
 metadata:
   title: Describe Azure services for open-source databases
   description: "Describe Azure services for open-source databases"
-  ms.date: 10/09/2024
-  author: wwlpublish
-  ms.author: rcaper
+  ms.date: 07/15/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-azure-database-open-source.md)]
+  [!include[](includes/3-azure-database-open-source.md)]

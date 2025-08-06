@@ -2,9 +2,9 @@ In previous units, you created a database and scanned the extracted file from yo
 
 ## View code-scanning results from CodeQL analysis
 
-Interpreted query results are automatically displayed in the source code in the CodeQL extension for VS Code. Output results that the CodeQL CLI generates can be in many formats for use with various tools.
+Interpreted query results are automatically displayed in the source code in the CodeQL extension for Visual Studio Code. Output results that the CodeQL CLI generates can be in many formats for use with various tools.
 
-You can control how analysis results are displayed in source code by modifying a query's `select` statement. You can make the results clear and easy for other users to understand while developing the query. When you write your own queries in the query console or in the CodeQL extension for VS Code, there are no constraints on what can be selected.
+You can control how analysis results are displayed in source code by modifying a query's `select` statement. You can make the results clear and easy for other users to understand while developing the query. When you write your own queries in the query console or in the CodeQL extension for Visual Studio Code, there are no constraints on what can be selected.
 
 If you want to use a query to create alerts in GitHub code scanning or generate valid analysis results by using the CodeQL CLI, you need to make the `select` statement report results in the required format.
 
@@ -16,12 +16,12 @@ GitHub's default CodeQL analysis might include more properties for alerts than r
 
 Each alert includes the following information:
 
-- The problem with the code and the name of the tool that identified it
-- The line of code that triggered the alert
-- Properties of the alert, such as the severity
-- The security severity
-- When the problem was introduced
-- The nature of the problem
+- The problem with the code and the name of the tool that identified it.
+- The line of code that triggered the alert.
+- The properties of the alert, such as the severity.
+- The security severity.
+- The point when the problem was introduced.
+- The nature of the problem.
 
 Information also includes how to fix the problem when CodeQL analysis identifies an alert. Additionally, code scanning through CodeQL can detect data-flow problems in your code.
 
@@ -56,7 +56,7 @@ You have two ways to close an alert:
 
 ### Dismiss a code-scanning alert
 
-Dismissing an alert is a way of closing an alert that you don't think needs to be fixed. One example is an error in code that's used only for testing. You might also dismiss an alert if the effort required to fix the error is greater than the potential benefit of improving the code.
+Dismissing an alert is a way of closing an alert that you don't think needs to be fixed. For example, you might dismiss an alert for an error in code used only for testing. You might also dismiss an alert if the effort required to fix the error is greater than the potential benefit of improving the code.
 
 You can dismiss alerts from code-scanning annotations in the code or from the summary list on the **Security** tab. To dismiss an alert from the list, select the **Dismiss alert** menu, select a reason for dismissal, and then select the **Dismiss alert** button.
 
@@ -64,9 +64,9 @@ You can dismiss alerts from code-scanning annotations in the code or from the su
 
 When you dismiss an alert:
 
-- It's dismissed in all branches.
-- It's removed from the number of current alerts for your project.
-- It's moved to the **Closed** list in the summary of alerts. You can reopen it from here, if necessary.
+- The alert is dismissed in all branches.
+- The alert is removed from the number of current alerts for your project.
+- The alert is moved to the **Closed** list in the summary of alerts. You can reopen it from here, if necessary.
 - The reason why you closed the alert is recorded.
 - The next time code scanning runs, the same code won't generate an alert.
 
@@ -83,7 +83,7 @@ You can delete alerts from the summary list on the **Security** tab.
 
 When you delete an alert:
 
-- It's deleted in all branches.
-- It's removed from the number of current alerts for your project.
-- It isn't added to the **Closed** list in the summary of alerts.
-- If the code that generated the alert stays the same, and the same code-scanning tool runs again without any configuration changes, the alert appears again in your analysis results.
+- The alert is deleted in all branches.
+- The alert is removed from the number of current alerts for your project.
+- The alert isn't added to the **Closed** list in the summary of alerts.
+- The alert appears again in your analysis results, if the code that generated the alert stays the same, and the same code-scanning tool runs again without any configuration changes.

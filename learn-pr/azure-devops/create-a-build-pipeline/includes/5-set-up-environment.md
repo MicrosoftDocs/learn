@@ -2,8 +2,6 @@ In this section, you'll ensure that your Microsoft Azure DevOps organization is 
 
 The modules in this learning path form a progression, in which you follow the Tailspin web team through its DevOps journey.
 
-This learning path also builds on the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path. There, you used the basic process to set up your Azure DevOps organization and created a task backlog on Azure Boards.
-
 ## Get the Azure DevOps project
 
 Here, you ensure that your Azure DevOps organization is set up to complete the rest of this module. You do this by running a template that creates a project for you in Azure DevOps.

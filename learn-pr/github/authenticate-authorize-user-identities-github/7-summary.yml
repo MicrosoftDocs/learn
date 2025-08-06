@@ -8,6 +8,7 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]

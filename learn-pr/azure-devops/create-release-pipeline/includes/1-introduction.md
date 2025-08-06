@@ -21,10 +21,7 @@ If you want to start with this learning path, set up a development environment o
 
 [!include[](../../shared/includes/prerequisites.md)]
 
-To follow the progression from the beginning, complete the following learning paths:
-
-- [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
-- [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
+To follow the progression from the beginning, be sure to first complete the [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true) learning path.
 
 You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources in your Azure subscription.
 
