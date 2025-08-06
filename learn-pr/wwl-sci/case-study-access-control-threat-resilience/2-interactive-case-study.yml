@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.case-study-access-control-threat-resilience.interactive-case-study
+title: Interactive Case Study
+metadata:
+  title: Interactive Case Study
+  description: "Project overview and setup requirements."
+  ms.date: 08/05/2025
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+durationInMinutes: 30
+content: |
+  [!include[](includes/2-interactive-case-study.md)]

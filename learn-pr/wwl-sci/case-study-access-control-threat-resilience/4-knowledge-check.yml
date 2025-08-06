@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.case-study-access-control-threat-resilience.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Test your knowledge on the key highlights of the interactive case study."
+  ms.date: 08/05/2025
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+
+quiz:
+  questions: 

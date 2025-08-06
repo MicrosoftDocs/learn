@@ -1,0 +1,43 @@
+
+### YamlMime:Module
+uid: learn.wwl.case-study-access-control-threat-resilience
+metadata:
+  title: "Interactive case study: Modernizing access control and threat resilience"
+  description: "Apply your cybersecurity architect skills on a real business scenario in the area of security best practices. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
+  ms.date: 08/05/2025
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: module
+  ms.service: security
+title: "Interactive case study: Modernizing access control and threat resilience"
+summary: "Apply your cybersecurity architect skills on a real business scenario focused on access control and threat resilience. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
+abstract: |
+  You learn:
+  -   How to analyze business requirements
+  -   How to match technical capabilities to meet those needs
+  -   How to design cohesive solutions that incorporate all of the required functions
+prerequisites: |
+  -   Experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
+  -   Experience with hybrid and cloud implementations.
+iconUrl: /training/achievements/case-study-design-solutions-security-best-practices-priorities.svg
+levels: 
+  - advanced
+roles:
+  - security-engineer
+  - solution-architect
+products: 
+  - entra
+  - entra-id
+subjects: 
+  - security
+  - cloud-security
+units:
+- learn.wwl.case-study-access-control-threat-resilience.introduction
+- learn.wwl.case-study-access-control-threat-resilience.interactive-case-study
+- learn.wwl.case-study-access-control-threat-resilience.interactive-case-study-highlights
+- learn.wwl.case-study-access-control-threat-resilience.knowledge-check
+- learn.wwl.case-study-access-control-threat-resilience.summary
+badge:
+  uid: learn.wwl.case-study-access-control-threat-resilience.badge
+
+
