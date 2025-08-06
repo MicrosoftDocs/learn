@@ -53150,7 +53150,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/entra-external-identities/index.yml",
+      "source_path": "learn-pr/entra-external-identities.yml",
       "redirect_url": "/training/modules/entra-external-identities",
       "redirect_document_id": true
     },
