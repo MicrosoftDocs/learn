@@ -3,7 +3,7 @@ uid: learn.wwl.enroll-devices-use-intune
 metadata:
   title: Enroll Devices Using Microsoft Intune
   description: "Students will learn how to configure and setup Intune to more easily manage Windows, Android, and iOS devices."
-  ms.date: 04/16/2025
+  ms.date: 08/01/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: module

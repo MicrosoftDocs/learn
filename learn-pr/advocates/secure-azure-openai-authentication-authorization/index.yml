@@ -4,6 +4,7 @@ metadata:
   ms.author: sayoung
   author: sarah-yo
   ms.date: 10/16/2024
+  ms.update-cycle: 180-days
   title: Secure Azure OpenAI authentication and authorization
   description: Learn about the security considerations for different ways of authenticating to Azure OpenAI and how to assign role based access control permissions to managed identities
   ms.topic: module

@@ -6,11 +6,11 @@ metadata:
   description: "How network security groups filter network traffic"
   ms.date: 06/12/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/4-create-network-security-group.md)]
-interactive: bash
+interactive: bash

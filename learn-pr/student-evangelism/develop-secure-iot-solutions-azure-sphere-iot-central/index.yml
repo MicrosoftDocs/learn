@@ -4,6 +4,7 @@ metadata:
   title: "Develop secure IoT solutions for Azure Sphere with Azure IoT Central"
   description: "Develop highly secure IoT solutions with Azure Sphere, Azure RTOS and Azure IoT Central"
   ms.date: 07/10/2024
+  ms.update-cycle: 180-days
   author: orin-thomas
   ms.author: orthomas
   ms.topic: module

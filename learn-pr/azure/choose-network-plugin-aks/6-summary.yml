@@ -5,10 +5,10 @@ metadata:
   unitType: summary
   title: Summary
   description: "Review what you've learned about AKS networking plugins."
-  ms.date: 03/18/2024
+  ms.date: 07/18/2025
   author: schaffererin
   ms.author: schaffererin
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/6-summary.md)]

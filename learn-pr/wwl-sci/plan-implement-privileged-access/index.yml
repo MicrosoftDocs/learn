@@ -1,26 +1,38 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-implement-privileged-access
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan and implement privileged access
   description: "Ensuring that administrative roles are protected and managed to increase your Azure solution security is a must. Explore how to use PIM to protect your data and resources."
-  ms.date: 10/23/2023
+  ms.date: 08/06/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Plan and implement privileged access
 summary: Ensuring that administrative roles are protected and managed to increase your Azure solution security is a must. Explore how to use PIM to protect your data and resources.
 abstract: |
   By the end of this module, you will be able to:
-  - Define a privileged access strategy for administrative users (resources, roles, approvals, and thresholds)
-  - Configure Privileged Identity Management for Microsoft Entra roles
-  - Configure Privileged Identity Management for Azure resources
-  - Assign roles
-  - Manage PIM requests
-  - Analyze PIM audit history and reports
-  - Create and manage emergency access accounts
-prerequisites: |
-  None
+
+  -   Define a privileged access strategy for administrative users (resources, roles, approvals, and thresholds)
+
+  -   Configure Privileged Identity Management for Microsoft Entra roles
+
+  -   Configure Privileged Identity Management for Azure resources
+
+  -   Assign roles
+
+  -   Manage PIM requests
+
+  -   Analyze PIM audit history and reports
+
+  -   Create and manage emergency access accounts
+prerequisites: None
 iconUrl: /training/achievements/plan-and-implement-privileged-access.svg
 levels:
 - advanced
@@ -48,4 +60,4 @@ units:
 - learn.wwl.plan-implement-privileged-access.knowledge-check
 - learn.wwl.plan-implement-privileged-access.summary-resources
 badge:
-  uid: learn.wwl.plan-implement-privileged-access.badge
+  uid: learn.wwl.plan-implement-privileged-access.badge

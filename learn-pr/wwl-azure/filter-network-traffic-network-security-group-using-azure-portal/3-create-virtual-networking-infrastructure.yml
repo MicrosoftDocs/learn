@@ -6,11 +6,11 @@ metadata:
   description: "Azure Virtual Network"
   ms.date: 06/12/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/3-create-virtual-networking-infrastructure.md)]
-interactive: bash
+interactive: bash

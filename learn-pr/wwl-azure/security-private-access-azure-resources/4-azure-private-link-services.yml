@@ -6,10 +6,10 @@ metadata:
   description: "Plan and implement Private Link services"
   ms.date: 10/03/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - references_regions
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-azure-private-link-services.md)]
+  [!include[](includes/4-azure-private-link-services.md)]

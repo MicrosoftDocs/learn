@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.new-windows-11-pro.designed-for-business
+title: Designed for business
+metadata:
+  title: Designed For Business
+  description: This content is part of the "What's new with Windows 11 Pro" module.
+  ms.date: 07/23/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-designed-for-business.md)]

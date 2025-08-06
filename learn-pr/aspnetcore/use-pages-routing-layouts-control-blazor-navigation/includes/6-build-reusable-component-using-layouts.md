@@ -77,7 +77,7 @@ This diagram illustrates how a component and a layout are combined to render the
 If you want to apply a template to all the Blazor components in a folder, you can use the **_Imports.razor** file as a shortcut. When the Blazor compiler finds this file, it includes its directives in all the components in the folder automatically. This technique removes the need to add the `@layout` directive to every component and applies to components in the same folder as the **_Imports.razor** file and all its subfolders.
 
 > [!IMPORTANT]
-> Don't add a `@layout` directive to the **_Imports.razor** file in the root folder of your project because that results in an infinite loop of layouts.
+> Don't add a `@layout` directive to the **_Imports.razor** file in the root folder of your project because it results in an infinite loop of layouts.
 
 If you want to apply a default layout to every component in all folders of your web app, you can do so in the **App.razor** component, where you configure the **Router** component, as you learned in unit 2. In the `<RouteView>` tag, use the `DefaultLayout` attribute.
 
