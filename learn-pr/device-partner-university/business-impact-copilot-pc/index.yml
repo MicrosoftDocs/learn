@@ -28,15 +28,15 @@ roles:
 products:
   - windows-11
 units:
-  - learn.dpu.business-impact-copilot+pc.introduction
-  - learn.dpu.business-impact-copilot+pc.help-organizations-adapt
-  - learn.dpu.business-impact-copilot+pc.device-differentiators
-  - learn.dpu.business-impact-copilot+pc.four-key-areas-emphasis
-  - learn.dpu.business-impact-copilot+pc.adaptable-modern
-  - learn.dpu.business-impact-copilot+pc.light-up-your-team-s-potential
-  - learn.dpu.business-impact-copilot+pc.improve-flexibility-management
-  - learn.dpu.business-impact-copilot+pc.tailor-business-needs
-  - learn.dpu.business-impact-copilot+pc.knowledge-check
-  - learn.dpu.business-impact-copilot+pc.summary
+  - learn.dpu.business-impact-copilot-pc.introduction
+  - learn.dpu.business-impact-copilot-pc.help-organizations-adapt
+  - learn.dpu.business-impact-copilot-pc.device-differentiators
+  - learn.dpu.business-impact-copilot-pc.four-key-areas-emphasis
+  - learn.dpu.business-impact-copilot-pc.adaptable-modern
+  - learn.dpu.business-impact-copilot-pc.light-up-your-team-s-potential
+  - learn.dpu.business-impact-copilot-pc.improve-flexibility-management
+  - learn.dpu.business-impact-copilot-pc.tailor-business-needs
+  - learn.dpu.business-impact-copilot-pc.knowledge-check
+  - learn.dpu.business-impact-copilot-pc.summary
 badge:
-  uid: learn.dpu.business-impact-copilot+pc.badge
+  uid: learn.dpu.business-impact-copilot-pc.badge
