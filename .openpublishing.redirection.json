@@ -53218,6 +53218,66 @@
       "source_path": "learn-pr/entra-external-identities/13-summary.yml",
       "redirect_url": "/training/modules/entra-external-identities/13-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cyclecloud/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm/2-node-health-checks-using-azure-cyclecloud.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cyclecloud/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm/3-cluster-requirements-for-ai-training-workloads.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cyclecloud/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm/4-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cyclecloud/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cyclecloud/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cyclecloud/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-image-builder/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-image-builder/3-how-does-azure-image-builder-work.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-image-builder/4-when-to-use-azure-image-builder.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-image-builder/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-image-builder/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-image-builder/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": true
     }
   ]
 }
