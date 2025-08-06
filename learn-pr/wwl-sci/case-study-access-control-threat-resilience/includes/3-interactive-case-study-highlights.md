@@ -36,6 +36,6 @@ Key components include:
 - Azure Backup with immutable vaults and anomaly detection to strengthen ransomware resilience.
 - Microsoft Sentinel, Defender XDR, and Security Copilot for centralized, AI-assisted threat detection and response.
 - Azure Arc and Azure Policy to enforce compliance baselines across hybrid workloads.
-- Entra Lifecycle Workflows and Entitlement Management to automate identity governance and streamline access reviews.
+- Microsoft Entra Lifecycle Workflows and Entitlement Management to automate identity governance and streamline access reviews.
 
 This integrated solution improves visibility, enforces consistent policies, and enhances operational resilience across Contoso’s hybrid environment.
