@@ -1,0 +1,3 @@
+In this module, we took a holistic look at Copilot+ PCs. We explored their unique combination of hardware and software advancements. We also reviewed how these devices deliver real business value and respond to the growing need for AI-powered performance, security, and productivity in today’s workplace.
+
+:::image type="content" border="true" source="../media/copilot-bloom.png" alt-text="A photograph of a gray laptop showing the Copilot+ PC bloom on the screen.":::
