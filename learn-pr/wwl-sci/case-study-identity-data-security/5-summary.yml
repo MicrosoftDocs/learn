@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.case-study-identity-data-security.summary
-title: Summary
+uid: learn.wwl.case-study-identity-data-security.summary 
+title: Summary 
 metadata:
   title: Summary
   description: "This unit summarizes the key points covered in the interactive case study on modernizing identity and data security. It reinforces the importance of implementing robust security measures and best practices."
-  ms.date: 08/05/20255/2025
-  author: wwlpublish
-  ms.author: ceperezb
-  ms.topic: interactive-tutorial
+  ms.date: 08/05/2025 
+  author: wwlpublish 
+  ms.author: ceperezb 
+  ms.topic: unit 
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]

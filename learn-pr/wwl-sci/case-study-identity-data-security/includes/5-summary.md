@@ -9,7 +9,7 @@ In this case study module, you:
 
 ### Resources
 
-- [Microsoft Entra Identity Protection](entra/id-protection/overview-identity-protection)
+- [Microsoft Entra Identity Protection](/entra/id-protection/overview-identity-protection)
 - [What are lifecycle workflows?](/entra/id-governance/what-are-lifecycle-workflows)
 - [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
 - [What is Microsoft Sentinel?](/azure/sentinel/overview)
