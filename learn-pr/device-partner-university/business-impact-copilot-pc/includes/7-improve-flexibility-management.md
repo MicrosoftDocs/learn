@@ -2,7 +2,7 @@ Take advantage of edge computing for increased performance, security, and data p
 
 ## Optimize the IT ecosystem
 
-Optimize your IT environment for performance, security, cost, and efficiency by leveraging modern cloud management tools combined with intelligent edge computing. This enhances scalability and agility so companies can adapt swiftly to evolving business needs while maintaining continuity.
+Optimize your IT environment for performance, security, cost, and efficiency by applying modern cloud management tools combined with intelligent edge computing. This enhances scalability and agility so companies can adapt swiftly to evolving business needs while maintaining continuity.
 
 Benefit from strategic cloud utilization and AI running locally on energy-efficient, high-performance devices. With industry-leading AI acceleration, Copilot+PCs provide up to 2X faster NPU performance than other devices in its class—giving employees the speed and responsiveness they need to get more done.¹
 

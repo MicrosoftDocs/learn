@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.business-impact-copilot+pc.help-organizations-adapt
-title: Help organizations adapt
+uid: learn.dpu.business-impact-copilot-pc.four-key-areas-emphasis
+title: Four key areas emphasis
 metadata:
-  title: Help Organizations Adapt
+  title: Four Key Areas Emphasis
   description: This content is part of the "Turbocharge business impact with Copilot+ PC" module.
   ms.date: 08/04/2025
   author: ozahran7
   ms.author: v-zahranomar
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
-  [!include[](includes/2-help-organizations-adapt.md)]
+  [!include[](includes/4-four-key-areas-emphasis.md)]

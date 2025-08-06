@@ -10,5 +10,5 @@ Next, we'll delve deeper into these benefits. Each benefit is aligned with the f
 
 ### Disclaimers
 
-1. Tested May 2024 using Cinebench 2024 Multi-Core benchmark comparing NG AI PCs with Snapdragon X Elite 12 core and Snapdragon X Plus 10 core configurations to MacBook Air 15” with M3 8 core CPU / 10 Core GPU configuration. Performance will vary significantly between device configuration and usage.
-1. Tested May 2024 using Geekbench 6 Multi-Core benchmark comparing NG AI PCs with Snapdragon X Elite 12 core and Snapdragon X Plus 10 core configurations to MacBook Air 15” with M3 8 core CPU / 10 Core GPU configuration. Performance will vary significantly between device configuration and usage.
+1. Tested May 2024 using Cinebench 2024 Multi-Core benchmark comparing NG AI PCs with Snapdragon X Elite 12 core and Snapdragon X Plus 10 core configurations to MacBook Air 15” with M3 8 core CPU / 10 Core GPU configuration. Performance varies significantly between device configuration and usage.
+1. Tested May 2024 using Geekbench 6 Multi-Core benchmark comparing NG AI PCs with Snapdragon X Elite 12 core and Snapdragon X Plus 10 core configurations to MacBook Air 15” with M3 8 core CPU / 10 Core GPU configuration. Performance varies significantly between device configuration and usage.

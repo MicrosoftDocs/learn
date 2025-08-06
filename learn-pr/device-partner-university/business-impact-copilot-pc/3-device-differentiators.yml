@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.business-impact-copilot+pc.summary
-title: Summary
+uid: learn.dpu.business-impact-copilot-pc.device-differentiators
+title: Device differentiators
 metadata:
-  title: Summary
+  title: Device Differentiators
   description: This content is part of the "Turbocharge business impact with Copilot+ PC" module.
   ms.date: 08/04/2025
   author: ozahran7
   ms.author: v-zahranomar
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
-  [!include[](includes/10-summary.md)]
+  [!include[](includes/3-device-differentiators.md)]

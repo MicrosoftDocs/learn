@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.business-impact-copilot+pc.introduction
-title: Introduction
+uid: learn.dpu.business-impact-copilot-pc.improve-flexibility-management
+title: Improve flexibility management
 metadata:
-  title: Introduction
+  title: Improve Flexibility Management
   description: This content is part of the "Turbocharge business impact with Copilot+ PC" module.
   ms.date: 08/04/2025
   author: ozahran7
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/7-improve-flexibility-management.md)]

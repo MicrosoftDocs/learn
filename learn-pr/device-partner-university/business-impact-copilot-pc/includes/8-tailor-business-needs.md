@@ -1,4 +1,4 @@
-Put AI to work for you by easily creating custom, automated workflows and industry-specific solutions with expanded Copilot experiences. Using Copilot+PCs, you can automate low-value, time-consuming tasks and invest your effort in more valuable areas.
+Put AI to work for you by easily creating custom, automated workflows, and industry-specific solutions with expanded Copilot experiences. Using Copilot+PCs, you can automate low-value, time-consuming tasks and invest your effort in more valuable areas.
 
 ## Take advantage of AI solutions
 

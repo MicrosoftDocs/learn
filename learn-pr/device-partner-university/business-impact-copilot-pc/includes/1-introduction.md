@@ -1,4 +1,4 @@
-The way that we work is changing rapidly. New AI-based solutions are solving problems of efficiency, productivity, and collaboration for busiensses. Copilot+ PCs help to address the needs of modern workers and businesses by turbocharging their impact.
+The way that we work is changing rapidly. New AI-based solutions are solving problems of efficiency, productivity, and collaboration for businesses. Copilot+ PCs help to address the needs of modern workers and businesses by turbocharging their impact.
 
 ## Table of contents
 

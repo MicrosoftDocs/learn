@@ -2,7 +2,7 @@ AI-enhanced devices can help organizations stay agile, so they can adapt and res
 
 ## Revolution, not evolution
 
-Before delving into the business impact of Copilot+ PCs, it’s important to appreciate the gravity of this moment. Copilot+ PCs don’t merely represent the next evolution of personal computing—they are a revolution. These devices are going to permanently change how people use computers—and it's important not to get left behind.
+Before delving into the business impact of Copilot+ PCs, it’s important to appreciate the gravity of this moment. Copilot+ PCs don’t merely represent the next evolution of personal computing—they're a revolution. These devices are going to permanently change how people use computers—and it's important not to get left behind.
 
 ## A new AI era begins
 
