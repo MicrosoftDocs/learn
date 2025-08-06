@@ -2,16 +2,18 @@
 uid: learn.wwl.deploy-iaas-solutions-with-azure-sql.knowledge-check
 title: Module assessment
 metadata:
-  ai_generated_module_assessment: true
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 7/17/2025
+  ms.date: 08/06/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
+  ms.custom:
+  - N/A
+  ai_generated_module_assessment: true
   module_assessment: true
-azureSandbox: false
-labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/7-knowledge-check.md)]

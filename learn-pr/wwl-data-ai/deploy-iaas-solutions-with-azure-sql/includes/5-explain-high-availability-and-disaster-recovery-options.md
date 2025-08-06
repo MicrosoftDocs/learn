@@ -62,3 +62,4 @@ Azure Site Recovery is supported for use with SQL Server, but keep in mind that 
 1. Data is continuously replicated to cache
 1. Cache is replicated to the target storage account
 1. During failover the virtual machine is added to the target environment
+
