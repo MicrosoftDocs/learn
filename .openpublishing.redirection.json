@@ -53150,134 +53150,134 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/entra-external-identities/index.yml",
+      "source_path": "learn-pr/entra-external-identities/index.yml",
       "redirect_url": "/training/modules/entra-external-identities",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/entra-external-identities/1-introduction.yml",
+      "source_path": "learn-pr/entra-external-identities/1-introduction.yml",
       "redirect_url": "/training/modules/entra-external-identities/1-introduction",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/entra-external-identities/2-prepare.yml",
+      "source_path": "learn-pr/entra-external-identities/2-prepare.yml",
       "redirect_url": "/training/modules/entra-external-identities/2-prepare",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/entra-external-identities/3-create-external-tenant.yml",
+      "source_path": "learn-pr/entra-external-identities/3-create-external-tenant.yml",
       "redirect_url": "/training/modules/entra-external-identities/3-create-external-tenant",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/entra-external-identities/4-register-application.yml",
+      "source_path": "learn-pr/entra-external-identities/4-register-application.yml",
       "redirect_url": "/training/modules/entra-external-identities/4-register-application",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/entra-external-identities/5-create-sign-up-sign-in-user-flow.yml",
+      "source_path": "learn-pr/entra-external-identities/5-create-sign-up-sign-in-user-flow.yml",
       "redirect_url": "/training/modules/entra-external-identities/5-create-sign-up-sign-in-user-flow",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/entra-external-identities/6-add-admin-account.yml",
+      "source_path": "learn-pr/entra-external-identities/6-add-admin-account.yml",
       "redirect_url": "/training/modules/entra-external-identities/6-add-admin-account",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/entra-external-identities/7-collect-user-attributes-during-sign-up.yml",
+      "source_path": "learn-pr/entra-external-identities/7-collect-user-attributes-during-sign-up.yml",
       "redirect_url": "/training/modules/entra-external-identities/7-collect-user-attributes-during-sign-up",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/entra-external-identities/8-customize-look-feel.yml",
+      "source_path": "learn-pr/entra-external-identities/8-customize-look-feel.yml",
       "redirect_url": "/training/modules/entra-external-identities/8-customize-look-feel",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/entra-external-identities/9-enable-social-identity-provider-sign-in.yml",
+      "source_path": "learn-pr/entra-external-identities/9-enable-social-identity-provider-sign-in.yml",
       "redirect_url": "/training/modules/entra-external-identities/9-enable-social-identity-provider-sign-in",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/entra-external-identities/10-validate-attributes-collected-during-sign-up.yml",
+      "source_path": "learn-pr/entra-external-identities/10-validate-attributes-collected-during-sign-up.yml",
       "redirect_url": "/training/modules/entra-external-identities/10-validate-attributes-collected-during-sign-up",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/entra-external-identities/11-enable-multifactor-authentication.yml",
+      "source_path": "learn-pr/entra-external-identities/11-enable-multifactor-authentication.yml",
       "redirect_url": "/training/modules/entra-external-identities/11-enable-multifactor-authentication",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/entra-external-identities/12-knowledge-check.yml",
+      "source_path": "learn-pr/entra-external-identities/12-knowledge-check.yml",
       "redirect_url": "/training/modules/entra-external-identities/12-knowledge-check",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/entra-external-identities/13-summary.yml",
+      "source_path": "learn-pr/entra-external-identities/13-summary.yml",
       "redirect_url": "/training/modules/entra-external-identities/13-summary",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/azure/optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cyclecloud/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm/2-node-health-checks-using-azure-cyclecloud.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cyclecloud/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm/3-cluster-requirements-for-ai-training-workloads.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cyclecloud/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm/4-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cyclecloud/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm/5-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cyclecloud/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cyclecloud/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-image-builder/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-image-builder/3-how-does-azure-image-builder-work.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-image-builder/4-when-to-use-azure-image-builder.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-image-builder/5-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-image-builder/6-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-image-builder/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
