@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender
 metadata:
-  title: Describe threat protection with Microsoft Defender XDR
+  title: Describe Threat Protection with Microsoft Defender XDR
   description: "Describe threat protection with Microsoft Defender XDR"
-  ms.date: 04/15/2025
+  ms.date: 07/30/2025
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module

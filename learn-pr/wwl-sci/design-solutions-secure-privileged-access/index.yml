@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.design-solutions-secure-privileged-access
 metadata:
-  title: Design solutions for securing privileged access
+  title: Design Solutions for Securing Privileged Access
   description: "You learn advanced techniques for designing solutions that manage privileged access effectively."
-  ms.date: 04/02/2025
+  ms.date: 07/30/2025
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module

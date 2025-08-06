@@ -5,6 +5,7 @@ metadata:
   title: "Connecting IoT devices to Azure AI services using Azure Functions"
   description: Create and deploy an Azure function to make a language translation IoT device
   ms.date: 07/10/2024
+  ms.update-cycle: 180-days
   author: orin-thomas
   ms.author: orthomas
   ms.topic: module-standard-task-based

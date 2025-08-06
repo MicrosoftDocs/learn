@@ -4,6 +4,7 @@ metadata:
   title: Train and Understand Regression Models in Machine Learning  
   description: Regression is arguably the most widely used machine learning technique, commonly underlying scientific discoveries, business planning, and stock market analytics. This learning material takes a dive into some common regression analyses, both simple and more complex, and provides some insight on how to assess model performance.
   ms.date: 05/14/2025
+  ms.update-cycle: 180-days
   author: s-polly
   ms.author: scottpolly
   ms.topic: module

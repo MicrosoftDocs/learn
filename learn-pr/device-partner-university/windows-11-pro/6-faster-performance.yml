@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.new-windows-11-pro.faster-performance
+title: Faster performance
+metadata:
+  title: Faster Performance
+  description: This content is part of the "What's new with Windows 11 Pro" module.
+  ms.date: 07/23/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-faster-performance.md)]
