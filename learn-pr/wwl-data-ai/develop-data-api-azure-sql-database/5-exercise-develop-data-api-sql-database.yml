@@ -4,10 +4,10 @@ title: 'Exercise: Develop a Data API for Azure SQL Database'
 metadata:
   title: 'Exercise: Develop a Data API for Azure SQL Database'
   description: "Learn how to develop and deploy a data API for an Azure SQL Database using Azure Static Web Apps."
-  ms.date: 10/10/2024
+  ms.date: 08/06/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/5-exercise-develop-data-api-sql-database.md)]
+  [!include[](includes/5-exercise-develop-data-api-sql-database.md)]
