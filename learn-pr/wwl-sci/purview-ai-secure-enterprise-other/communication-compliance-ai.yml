@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-secure-enterprise-other.communication-compliance-ai
+title: Identify policy violations with Communication Compliance
+metadata:
+  title: Identify Policy Violations with Communication Compliance
+  description: "Identify policy violations with Communication Compliance"
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/communication-compliance-ai.md)]

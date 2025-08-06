@@ -47,8 +47,6 @@ To create an assessment, you first assign it to a **group**. Groups let you orga
    - Choose **Microsoft 365** as the service
    - Review and confirm your settings
 
-      :::image type="content" source="../media/compliance-manager-nist-assessment.png" alt-text="Screenshot showing Compliance Manager with the NIST AI Risk Management Framework selected as a regulation for Microsoft 365 assessments." lightbox=" ../media/compliance-manager-nist-assessment.png":::
-
 This creates an assessment where you can track Microsoft-managed and customer-managed actions that support AI compliance.
 
 ## Use DSPM for AI to support your assessments
