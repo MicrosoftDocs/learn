@@ -6,10 +6,10 @@ metadata:
   description: "Enable just-in-time access on virtual machines"
   ms.date: 05/31/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-enable-just-in-time-virtual-machine-access.md)]
+  [!include[](includes/3-enable-just-in-time-virtual-machine-access.md)]

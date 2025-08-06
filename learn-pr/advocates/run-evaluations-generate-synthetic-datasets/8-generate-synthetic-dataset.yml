@@ -5,6 +5,7 @@ metadata:
   title: Exercise - Generate a synthetic dataset
   description: Learn how to generate a synthetic dataset.
   ms.date: 10/13/2024
+  ms.update-cycle: 180-days
   author: aprilgittens
   ms.author: apspeigh
   ms.topic: unit

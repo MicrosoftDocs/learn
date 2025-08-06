@@ -1,6 +1,6 @@
 Blazor provides many features to improve the interactions with users of your apps. You can capture and handle DOM events, use HTML forms, and provide extensive validation for the input provided by users.
 
-In this module, you've learned how to:
+In this module, you learned how to:
 
 - Improve your app's interactivity using Blazor event handlers.
 - Use Blazor forms to improve data entry.

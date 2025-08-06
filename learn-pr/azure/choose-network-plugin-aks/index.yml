@@ -2,10 +2,10 @@
 uid: learn.choose-best-networking-plugin-for-aks
 metadata:
   moduleType: choose
-  title: Choose the best networking plugin for AKS
+  title: Choose the Best Networking Plugin for AKS
   description: "Learn how to choose between Azure CNI and kubenet, two networking plugin options for an Azure Kubernetes Service cluster."
   manager: rayoflores
-  ms.date: 03/18/2024
+  ms.date: 07/18/2025
   author: schaffererin
   ms.author: schaffererin
   ms.topic: module-choose-best-product
@@ -14,11 +14,11 @@ title: Choose the best networking plugin for AKS
 summary: "Understand the key differences and considerations when selecting between Azure CNI and kubenet, two networking plugin options for an Azure Kubernetes Service cluster."
 abstract: |
   By the end of this module, you'll be able to:
-    - Understand what a Kubernetes network plugin is
-    - Understand the pros, cons, and limitations of kubenet
-    - Know how to deploy an AKS cluster with kubenet
-    - Understand the pros, cons, and limitations of Azure CNI
-    - Know how to deploy an AKS cluster with Azure CNI
+    - Understand what a Kubernetes network plugin is.
+    - Understand the pros, cons, and limitations of kubenet.
+    - Know how to deploy an AKS cluster with kubenet.
+    - Understand the pros, cons, and limitations of Azure CNI.
+    - Know how to deploy an AKS cluster with Azure CNI.
 prerequisites: |
   - Basic understanding of Azure Kubernetes Service concepts such as the Kubernetes API, clusters, and pods
   - Familiarity with basic networking concepts like CIDR, IP address allocation and NAT
@@ -41,4 +41,4 @@ units:
 - learn.choose-best-networking-plugin-for-aks.summary
 badge:
   uid: learn.choose-best-networking-plugin-for-aks.badge
-
+

@@ -6,10 +6,10 @@ metadata:
   description: "Microsoft cloud security benchmark"
   ms.date: 04/24/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/9-microsoft-cloud-security-benchmark.md)]
+  [!include[](includes/9-microsoft-cloud-security-benchmark.md)]

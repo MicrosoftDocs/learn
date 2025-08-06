@@ -5,9 +5,9 @@ metadata:
   description: AI gives you the power to unlock insights from your data. In this module, you'll learn how to use Azure AI services to extract information from content.
   author: graememalcolm
   ms.author: gmalc
-  ms.date: 05/11/2025
+  ms.date: 08/01/2025
   ai-usage: ai-assisted
-  ms.service: azure-ai-services
+  ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
@@ -31,6 +31,7 @@ roles:
 - ai-engineer
 products:
 - ai-services
+- azure-cognitive-search
 subjects:
 - artificial-intelligence
 units:
