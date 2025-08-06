@@ -6,10 +6,10 @@ metadata:
   description: "Implement Microsoft Defender for Cloud"
   ms.date: 04/24/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-implement-microsoft-defender-for-cloud.md)]
+  [!include[](includes/2-implement-microsoft-defender-for-cloud.md)]

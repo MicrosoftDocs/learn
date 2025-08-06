@@ -6,10 +6,10 @@ metadata:
   description: "Azure Key Vault basic concepts"
   ms.date: 10/24/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-azure-key-vault-basic-concepts.md)]
+  [!include[](includes/2-azure-key-vault-basic-concepts.md)]

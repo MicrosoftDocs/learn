@@ -6,7 +6,7 @@ The MCP server acts as a registry for tools your agent can use. You can initiali
 
 ## What is the MCP Client?
 
-The MCP client acts as a bridge between your MCP server and the Azure AI Agent Service. The client initializes an MCP client session and connects to the server. Afterwards, it performs three key tasks:
+A standard MCP client acts as a bridge between your MCP server and the Azure AI Agent Service. The client initializes an MCP client session and connects to the server. Afterwards, it performs three key tasks:
 
 - Discovers available tools from the MCP server using `session.list_tools()`.
 - Generates Python function stubs that wrap the tools.

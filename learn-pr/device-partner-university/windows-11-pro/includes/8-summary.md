@@ -1,0 +1,3 @@
+In this module, you explored the latest features of Windows 11 Pro and the value they deliver to organizations. You gained the knowledge to clearly explain these benefits to others and determine how Windows 11 Pro can help organizations thrive.
+
+:::image type="content" border="false" source="..\media\windows-11-pro-devices.png" alt-text="A photograph of Windows 11 Pro devices being used by a mixed-gender team collaborating at a desk in an office space.":::

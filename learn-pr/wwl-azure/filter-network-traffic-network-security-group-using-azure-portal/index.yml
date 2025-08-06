@@ -5,7 +5,7 @@ metadata:
   description: "Learn to regulate network traffic to your Azure resources by configuring and applying network security groups in the Azure portal, improving your network's security posture."
   ms.date: 06/12/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
@@ -48,4 +48,4 @@ units:
 - learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.knowledge-check
 - learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.summary
 badge:
-  uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.badge
+  uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.badge

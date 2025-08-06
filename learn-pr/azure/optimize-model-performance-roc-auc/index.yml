@@ -4,6 +4,7 @@ metadata:
   title: Measure and Optimize Model Performance with ROC and AUC
   description: Receiver operator characteristic curves are a powerful way to assess and fine-tune trained classification models. We introduce and explain the utility of these curves through learning content and practical exercises.
   ms.date: 04/03/2025
+  ms.update-cycle: 180-days
   author: s-polly
   ms.author: scottpolly
   ms.topic: module
