@@ -3,6 +3,8 @@ uid: learn-windows.introduction-to-web-development.6-tracking-changes
 title: Knowledge check
 metadata:
   title: Knowledge check
+  module_assessment: true
+  ai_generated_module_assessment: true
   description: Check your knowledge of the basics of web development
   ms.date: 09/17/2024
   author: kjo-msft
