@@ -42,6 +42,7 @@ units:
 - learn.wwl.tracing-generative-ai-app.what-to-trace
 - learn.wwl.tracing-generative-ai-app.how-to-trace
 - learn.wwl.tracing-generative-ai-app.advanced-tracing
+- learn.wwl.tracing-generative-ai-app.analyze-trace-data
 - learn.wwl.tracing-generative-ai-app.exercise
 - learn.wwl.tracing-generative-ai-app.knowledge-check
 - learn.wwl.tracing-generative-ai-app.summary

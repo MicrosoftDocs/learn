@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.tracing-generative-ai-app.analyze-trace-data
+title: Make informed decisions with trace data analysis
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Make informed decisions with trace data analysis
+  description: Learn how to analyze trace data in Azure AI Foundry to identify patterns, make data-driven improvements, and optimize AI application performance and reliability.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 08/06/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-analyze-trace-data.md)]

@@ -126,28 +126,9 @@ def generate_trip_profile_with_error_handling(hike_name):
 
 **Key tracing insights**: When JSON parsing fails, you can see the exact error, the first 200 characters of the response that causes the issue, and whether the response needs to be cleaned. The detailed trace information makes debugging faster.
 
-## Analyze traces in Azure AI Foundry
+## Best practices for implementation
 
-When viewing traces in Azure AI Foundry, look for patterns in your trace data:
-
-### Understanding error patterns
-
-The trace attributes you've added provide valuable insights into application performance and reliability. By analyzing these patterns, you can identify common failure points and optimization opportunities:
-
-- **High `parsing.success: false` rates**: Your prompts may need improvement to generate better-formatted output.
-- **Low `match.success_rate` values**: Your product matching logic needs enhancement.
-- **Slow `response.time` values**: Consider optimizing prompts or using different models.
-
-### Monitoring session success
-
-Session-level metrics help you understand the overall user experience and identify where improvements are needed. Focus on these key indicators to measure application health:
-
-- **`session.success: false` patterns**: Look at which operations fail most often.
-- **`operations.completed` counts**: Understand where users drop off in multi-step workflows.
-
-## Best practices for production
-
-When implementing advanced tracing in production:
+When implementing advanced tracing patterns:
 
 **Always trace**:
 
@@ -168,4 +149,4 @@ When implementing advanced tracing in production:
 
 **Security**: Never include passwords, API keys, or sensitive personal information in trace attributes. Use placeholder values for debugging.
 
-With these advanced patterns, you can build comprehensive observability into complex AI applications. You can quickly identify where problems occur, understand why problems happen, and measure the effectiveness of your AI operations.
+With these advanced patterns, you can build comprehensive observability into complex AI applications that will help you identify and debug issues in production.
