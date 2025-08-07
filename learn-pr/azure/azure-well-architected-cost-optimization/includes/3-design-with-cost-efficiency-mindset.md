@@ -5,7 +5,7 @@ Every architectural decision affects your budget, such as whether you build or b
 
 **Example scenario**
 
-Contoso Manufacturing runs a custom-built warehouse management system (WMS) that handles its four warehouses across South America. They want to update and move the WMS to the cloud. They're deciding between a lift-and-shift move of the current setup or building something new with modern tools. Leadership wants to keep costs under control, so the team needs a plan that maintains cost efficiency.
+Contoso Manufacturing runs a custom-built warehouse management system (WMS) that handles its four warehouses across South America. They want to update and move the WMS to the cloud. They're deciding between a lift-and-shift move of the current solution or a green field build with modern cloud tools. Leadership wants to keep costs under control, so the team needs a plan that maintains cost efficiency.
 
 The WMS solution is a .NET application that runs on Internet Information Services (IIS) and uses SQL Server for its databases.
 

@@ -1,10 +1,4 @@
-The Azure Well-Architected Framework is a guide that helps ensure that your workload is: 
-
-- Resilient, available, and recoverable.
-- As secure as you need it to be.
-- **Worth the investment.**
-- Developed and operated responsibly.
-- Meeting its goals on time.
+The Cost Optimization pillar in the Azure Well-Architected Framework helps you validate that your workload delivers a sufficient return on investment.
 
 Designing an architecture is about supporting your business goals while being mindful of budget and return on investment (ROI). Start with these questions:
 

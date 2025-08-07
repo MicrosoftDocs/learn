@@ -1,10 +1,4 @@
-The Azure Well-Architected Framework is a guide that helps ensure that your workload is: 
-
-- Resilient, available, and recoverable.
-- As secure as you need it to be.
-- Worth the investment.
-- Developed and operated responsibly.
-- **Meeting its goals on time.**
+The Performance Efficiency pillar in the Azure Well-Architected Framework helps ensure that your workload accomplishes its purpose within acceptable timeframes.
 
 Performance efficiency is the ability of your workload to adjust to changes in demand. A workload must be able to handle an increase in load without compromising user experience. And when there's a decrease in load, the workload must conserve its resources. Capacity, or how much CPU and memory you have available, plays a major role in performance.
 
