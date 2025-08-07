@@ -6350,3 +6350,13 @@ achievements:
   title: Introduction to migrating ASP.NET apps to Azure
   summary: Evaluate the process of migrating an ASP.NET application from on-premises to Azure, along with a supporting Azure SQL database. Identify the benefits and challenges of the migration process.
   iconUrl: /training/achievements/intro-to-migrating-aspnet-apps-azure.svg
+- uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions.badge
+  type: badge
+  title: Manage end-to-end deployment scenarios by using Bicep and GitHub Actions
+  summary: Create a unified workflow to deploy your entire environment. You'll add build jobs to your workflow, and use workflow artifacts and Bicep outputs to publish applications, databases, and blobs.
+  iconUrl: /training/achievements/bicep/manage-end-end-deployment-scenarios-using-bicep-github-actions.svg
+- uid: learn.azure.intro-to-confidential-computing-with-azure-virtual-machines-badge
+  type: badge
+  title: Intro to confidential computing with Azure Virtual Machines
+  summary: This module helps you understand Microsoft Azure confidential computing concepts for virtual machines, including confidential virtual machines and application enclaves, and which approach to use.
+  iconUrl: /training/achievements/generic-badge.svg
