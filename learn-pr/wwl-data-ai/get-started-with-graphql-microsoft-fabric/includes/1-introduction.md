@@ -4,6 +4,8 @@ Microsoft Fabric API for GraphQL is a managed service that enables you to create
 
 :::image type="content" source="../media/1-architecture.png" alt-text="Diagram showing how GraphQL works in Microsoft Fabric." lightbox="../media/1-architecture.png":::
 
+This diagram shows how GraphQL API serves as a unified data access layer. The GraphQL API sits between client applications and various Microsoft Fabric data sources, including SQL databases, warehouses, lakehouses, and mirrored databases. This centralized approach allows developers to query multiple data sources through a single GraphQL endpoint, eliminating the need to connect directly to each individual data source.
+
 The primary purpose of GraphSQL is to provide a more efficient and flexible way to query data compared to traditional SQL databases. It allows clients to specify exactly what data they need from the server and receive that data in a predictable way. This reduces the amount of data transferred over the network and minimizes the number of requests needed to fetch related data.
 
 ### Explore differences from SQL database
