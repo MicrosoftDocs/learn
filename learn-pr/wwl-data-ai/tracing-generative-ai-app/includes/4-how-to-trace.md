@@ -1,48 +1,161 @@
-Now that you understand what to monitor, it’s time to explore *how* Azure supports performance monitoring in practice. Azure gives you lightweight, code-first tools to inspect and reason about the behavior of your generative AI deployments, without needing to build out full observability stacks.
+# Implement tracing in generative AI applications
 
-Effective monitoring requires a multi-faceted approach that includes, **tracing**, **online evaluation**, and **observability** through **Azure Monitor Application Insights**.
+Now that you understand what tracing is and what to trace, it's time to implement tracing in your generative AI applications. In this section, you learn how to set up tracing infrastructure and instrument your code to capture meaningful trace data.
 
-Let's explore each of these components in more detail.
+Using the Trail Guide AI Assistant as our example, you explore the practical steps to add tracing to a real application, from initial setup to capturing detailed execution flows.
 
-## Understand tracing
+## Set up tracing infrastructure
 
-To continuously monitor your generative AI application, start by **capturing and storing detailed telemetry data**. You can store telemetry data by instrumenting your application with the **Azure AI Tracing package**. This package logs trace data to an Azure Monitor Application Insights resource.
+Before you can capture traces, you need to configure the tracing infrastructure. Azure AI Foundry provides built-in tracing capabilities that integrate with Azure Application Insights using OpenTelemetry.
 
-The trace data follows the OpenTelemetry standard, ensuring structured and comprehensive observability. Once you have tracing set up, you can analyze your application's request flow, track latency, and monitor resource consumption.
+> [!NOTE]
+> To trace an application, you need an Azure AI Foundry project with an associated Azure Application Insights resource. To learn how to set up monitoring and logging infrastructure for AI applications, explore the [Monitor your generative AI application](/training/modules/monitor-generative-ai-app?azure-portal=true) module.
 
-> [!Note]
-> You can trace any AI model supporting the [Azure AI model inference API](/azure/ai-foundry/model-inference/?azure-portal=true).
+### Install required packages
 
-### Understand online evaluation
+Install the necessary packages for tracing in your Python environment:
 
-By default, tracing allows you to monitor metrics like token usage, API calls, and response times. To add metrics that reflect the model's performance, you can add continuous evaluation.
+```bash
+pip install azure-ai-projects azure-monitor-opentelemetry opentelemetry-instrumentation-openai-v2
+```
 
-Continuous evaluation helps you assess the quality, security, and safety of AI-generated outputs in real-time. With **Azure AI Online Evaluation**, you can automatically **evaluate your application's responses**.
+These packages provide:
 
-You can use built-in evaluators that align with the Azure AI Evaluation SDK (like groundedness or coherence) or define custom evaluators to track domain-specific performance metrics. When you consistently run evaluations on collected trace data, your team can proactively detect and mitigate emerging issues in both preproduction and live deployments.
+- **azure-ai-projects**: Client to connect to your Azure AI Foundry project.
+- **azure-monitor-opentelemetry**: Integration with Azure Application Insights.
+- **opentelemetry-instrumentation-openai-v2**: Automatic tracing for OpenAI SDK calls.
 
-## Understand Azure Monitor Application Insights
+### Configure the tracing provider
 
-For a comprehensive view of your AI application's health, **Azure Monitor Application Insights** offers advanced observability tools. These tools include:
+Setting up tracing involves three key steps: instrumenting the OpenAI SDK, connecting to your project, and configuring Azure Monitor.
 
-- Custom dashboards
-- Real-time visualization of evaluation results
-- Configurable alerting mechanisms
+```python
+from opentelemetry.instrumentation.openai_v2 import OpenAIInstrumentor
+from azure.monitor.opentelemetry import configure_azure_monitor
+from azure.ai.projects import AIProjectClient
+from azure.identity import DefaultAzureCredential
+from opentelemetry import trace
 
-This integration ensures that all critical insights, such as token usage, latency, and request volume, are readily accessible, empowering your team to make data-driven optimizations.
+# Enable automatic tracing for all OpenAI calls
+OpenAIInstrumentor().instrument()
 
-### Set up Azure Monitor alerts
+# Connect to your Azure AI project
+project_client = AIProjectClient(
+    credential=DefaultAzureCredential(),
+    endpoint="https://<your-resource>.services.ai.azure.com/api/projects/<your-project>"
+)
 
-Alerts notify you of critical conditions and can take corrective action.
+# Configure Azure Monitor to collect traces
+connection_string = project_client.telemetry.get_connection_string()
+configure_azure_monitor(connection_string=connection_string)
 
-**Alert rules** can be based on metric or log data:
+# Get tracer for custom spans and chat client for model calls
+tracer = trace.get_tracer(__name__)
+chat_client = project_client.inference.get_chat_completions_client()
+```
 
-- **Metric** alert rules provide near-real time alerts based on collected metrics.
-- **Log** alert rules based on log data allow for complex logic across data from multiple sources.
+Once configured, every OpenAI SDK call automatically generates trace data that appears in Azure AI Foundry. However, to trace your business logic, you need to create custom spans.
 
-Alert rules use **action groups**, which can take actions such as sending email or SMS notifications. Action groups can send notifications using webhooks to trigger external processes or to integrate with IT service management tools. You can share action groups, actions, and sets of recipients across multiple rules.
+## Create reusable tracing functions
 
-> [!Note]
-> Triggered alerts are stored for 30 days and are deleted after the 30-day retention period. The alert rules remain active.
+The key to effective tracing is creating reusable functions that combine your business logic with meaningful tracing data.
 
-Now that you understand the key components of monitoring generative AI systems, let’s delve into how these concepts are implemented in code using Azure’s AI and observability tools.
+### Model call wrapper with timing
+
+Instead of calling the model directly, create a wrapper function that adds timing and metadata. The wrapper function captures what you're asking the model, how long it takes to respond, and details about the response:
+
+```python
+def call_model(system_prompt, user_prompt, span_name):
+    with tracer.start_as_current_span(span_name) as span:
+        # Record what we're asking the model
+        span.set_attribute("prompt.user", user_prompt)
+        start_time = time.time()
+        
+        # Make the actual model call (automatically traced by OpenAI instrumentation)
+        response = chat_client.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ]
+        )
+        
+        # Record timing and response metrics
+        duration = time.time() - start_time
+        output = response.choices[0].message.content
+        span.set_attribute("response.time", duration)
+        span.set_attribute("response.tokens", len(output.split()))
+        
+        return output
+```
+
+The wrapper pattern gives you consistent timing across all model calls, standard attributes for debugging, and a reusable structure for any AI operation.
+
+### Business logic with tracing
+
+For your application's core functions, wrap them in spans that capture both inputs and outputs. Notice how wrapping functions in spans creates a **hierarchy**. For example, the `recommend_hike` span contains the `recommend_model_call` span:
+
+```python
+def recommend_hike(preferences):
+    with tracer.start_as_current_span("recommend_hike") as span:
+        # Build the prompt for this specific task
+        prompt = f"""
+        Recommend a named hiking trail based on the following user preferences.
+        Provide only the name of the trail and a one-sentence summary.
+        Preferences: {preferences}
+        """
+        
+        # Call the model with our wrapper function
+        response = call_model(
+            "You are an expert hiking trail recommender.",
+            prompt,
+            "recommend_model_call"
+        )
+        
+        # Store the result for debugging
+        result = response.strip()
+        span.set_attribute("hike_recommendation", result)
+        return result
+```
+
+## Implement session-level tracing
+
+For complete user interactions, create a top-level span that encompasses the entire workflow. The top-level span represents the full user journey from input to final response:
+
+```python
+def trail_guide_session(user_preferences):
+    with tracer.start_as_current_span("trail_guide_session") as session_span:
+        # Generate unique session ID for tracking across multiple interactions
+        session_id = f"session_{int(time.time())}"
+        session_span.set_attribute("session.id", session_id)
+        
+        print("--- Trail Guide AI Assistant ---")
+        
+        # Execute the core business logic (the recommend_hike function creates child spans)
+        hike = recommend_hike(user_preferences)
+        print(f"✅ Recommended Hike: {hike}")
+        
+        # Mark session as successful for monitoring
+        session_span.set_attribute("session.success", True)
+        print(f"🔍 Trace ID available for session: {session_id}")
+        
+        return hike
+```
+
+## Understanding the trace hierarchy
+
+When you view traces in Azure AI Foundry, you find a hierarchical structure that shows how your application flows:
+
+- **trail_guide_session** (your main workflow)
+  - **recommend_hike** (business logic span)
+    - **recommend_model_call** (your custom model call span)
+      - **chat gpt-4o** (automatic OpenAI SDK span)
+
+Each level provides different insights:
+
+- **Session level**: Overall success/failure, user journey timing.
+- **Business logic level**: Individual operation performance and results.
+- **Model call level**: Prompt engineering effectiveness and response quality.
+- **SDK level**: Model performance, token usage, and API errors.
+
+With these basic tracing patterns, you can start monitoring your AI assistant. The next unit covers advanced scenarios like handling multiple model calls, JSON parsing, and error debugging.

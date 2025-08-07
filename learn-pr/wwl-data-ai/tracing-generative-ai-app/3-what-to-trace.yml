@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.tracing-generative-ai-app.what-to-trace
-title: Understand key metrics to trace
+title: Identify what to trace in generative AI applications
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Understand key metrics to trace
-  description: Understand which key metrics to monitor for generative AI applications.
+  title: Identify what to trace in generative AI applications
+  description: Identify the key components and operations to trace in generative AI applications.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 06/10/2025
+  ms.date: 08/06/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[](includes/3-what-to-trace.md)]
 

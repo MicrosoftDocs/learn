@@ -1,31 +1,34 @@
 ### YamlMime:Module
-uid: learn.wwl.monitor-generative-ai-app
+uid: learn.wwl.tracing-generative-ai-app
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Analyze and debug your generative AI app with tracing
-  description: Learn how to monitor the performance of your generative AI application using Azure AI Foundry. This module teaches you to track key metrics like latency and token usage to make informed, cost-effective deployment decisions.
+  description: Learn how to implement tracing in your generative AI applications using Azure AI Foundry and OpenTelemetry. This module teaches you to capture detailed execution flows, debug complex workflows, and understand application behavior for better reliability and optimization.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 04/30/2025
-  ms.service: azure-ai-services
+  ms.date: 08/06/2025
+  ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
   ms.custom: ai-learning-hub
 title: Analyze and debug your generative AI app with tracing
-summary: "Learn how to monitor the performance of your generative AI application using Azure AI Foundry. This module teaches you to track key metrics like latency and token usage to make informed, cost-effective deployment decisions."
+summary: "Learn how to implement tracing in your generative AI applications using Azure AI Foundry and OpenTelemetry. This module teaches you to capture detailed execution flows, debug complex workflows, and understand application behavior for better reliability and optimization."
 abstract: |
   By the end of this module, you'll be able to:
-    - Understand why monitoring is essential when moving Gen AI apps toward production readiness.
-    - Identify and interpret key performance metrics: latency, throughput, token usage, and error rates.
-    - Use Azure Monitor together with Azure AI Foundry to observe and analyze app behavior.
-    - Apply insights to optimize performance, cost, and user experience in Gen AI solutions.
+    - Distinguish between monitoring and tracing in generative AI applications.
+    - Identify key tracing concepts: traces, spans, and attributes in OpenTelemetry.
+    - Set up tracing infrastructure with Azure AI Foundry and Application Insights.
+    - Implement custom spans for AI model calls and business logic operations.
+    - Handle complex workflows with structured data generation and error handling.
+    - Analyze trace data to identify performance bottlenecks and failure patterns.
+    - Apply production best practices for effective observability.
 prerequisites: |
   Before starting this module, you should be familiar with:
-    - Basic software development concepts
-    - Basic AI concepts
-    - Basic Azure concepts
+    - Basic Python programming concepts
+    - Basic AI and generative AI concepts
+    - Basic Azure concepts and Azure AI Foundry
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate
@@ -38,15 +41,14 @@ subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contrib
   - artificial-intelligence
   - app-development
 units:
-- learn.wwl.monitor-generative-ai-app.introduction
-- learn.wwl.monitor-generative-ai-app.why-monitor
-- learn.wwl.monitor-generative-ai-app.what-to-monitor
-- learn.wwl.monitor-generative-ai-app.how-to-monitor
-- learn.wwl.monitor-generative-ai-app.prepare-scripts
-- learn.wwl.monitor-generative-ai-app.informed-decisions
-- learn.wwl.monitor-generative-ai-app.exercise
-- learn.wwl.monitor-generative-ai-app.knowledge-check
-- learn.wwl.monitor-generative-ai-app.summary
+- learn.wwl.tracing-generative-ai-app.introduction
+- learn.wwl.tracing-generative-ai-app.why-tracing
+- learn.wwl.tracing-generative-ai-app.what-to-trace
+- learn.wwl.tracing-generative-ai-app.how-to-trace
+- learn.wwl.tracing-generative-ai-app.advanced-tracing
+- learn.wwl.tracing-generative-ai-app.exercise
+- learn.wwl.tracing-generative-ai-app.knowledge-check
+- learn.wwl.tracing-generative-ai-app.summary
 badge:
-  uid: learn.wwl.monitor-generative-ai-app.badge
+  uid: learn.wwl.tracing-generative-ai-app.badge
 

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.tracing-generative-ai-app.how-to-trace
-title: Explore how to trace with Azure
+title: Implement tracing in generative AI applications
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Explore how to trace with Azure
-  description: Explore how to use tracing for generative AI applications with Azure.
+  title: Implement tracing in generative AI applications
+  description: Implement tracing in generative AI applications.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 06/10/2025
+  ms.date: 08/06/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
