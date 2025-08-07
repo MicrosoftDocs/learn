@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework.modernize
+title: Modernize
+metadata:
+  title: Modernize
+  description: "A high-level overview of how to Modernize in Azure, including how to replatform, refactor, and rearchitect workloads."
+  ms.date: 08/07/2025
+  author: stephen-sumner
+  ms.author: ssumner
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6
+  -modernize.md)]

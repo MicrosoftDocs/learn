@@ -3,10 +3,10 @@ uid: learn.azure.cloud-adoption-framework.plan
 title: Plan
 metadata:
   title: Plan
-  description: "A high-level overview of the Plan methodology in the Cloud Adoption Framework, including how to manage your digital estate, align your organization, and adapt roles."
-  ms.date: 02/06/2025
-  author: Zimmergren
-  ms.author: tozimmergren
+  description: "A high-level overview of how to plan for cloud adoption in the Cloud Adoption Framework, including how prepare your organization, people, workloads, and total cost of ownership."
+  ms.date: 08/07/2025
+  author: stephen-sumner
+  ms.author: ssumner
   ms.topic: unit
 durationInMinutes: 10
 content: |
