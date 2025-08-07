@@ -11,4 +11,4 @@ You can learn more by reviewing the following documents.
 
 ## Provide feedback on the AI Tutor
 
-Did you use the AI Tutor? Wether you used it while completing this training, as a study aid, or for helps with labs and activties, we'd appreciate your feedback. Please complete a **brief [survey](https://forms.office.com/r/0eaEXzVTbZ)** to share your thoughts. You can complete the survey again if you're already completed it but have additional or different thoughts on the AI Tutor. 
+Did you use the AI Tutor? Wether you used it while completing this training, as a study aid, or for helps with labs and activties, we'd appreciate your feedback. Please complete a **[brief survey](https://forms.office.com/r/0eaEXzVTbZ)** to share your thoughts. You can complete the survey again if you're already completed it but have additional or different thoughts on the AI Tutor. 
