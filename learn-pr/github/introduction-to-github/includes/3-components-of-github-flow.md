@@ -122,3 +122,5 @@ Note: Git flow assumes merge commits for integrating branches. Using rebase or s
 Congratulations! You’ve just walked through the full GitHub Flow—and explored how Git flow offers a structured alternative for release-driven projects.
 
 Let’s move onto the next section where we’ll cover the differences between issues and discussions.
+
+

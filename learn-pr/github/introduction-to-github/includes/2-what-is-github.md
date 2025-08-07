@@ -213,22 +213,7 @@ Every repository on GitHub.com comes equipped with a section for hosting documen
 
 It’s worth a reminder that if your repository is private, only people who have at least read access to your repository will have access to your wiki.
 
-### What are Feature preview?
-
-Feature Previews allow you to try out experimental features on GitHub before they are officially released. These previews give you early access to new functionality and allow you to provide feedback to help shape the final product.
-
-To enable or disable a feature preview:
-
-1. Navigate to your GitHub account by selecting your profile picture in the top-right corner of GitHub.com.
-1. Select **Feature preview** from the drop-down menu.
-1. Browse the list of available previews and toggle the features you want to try.
-
-Feature Previews are a great way to stay ahead of the curve and explore new tools that can enhance your GitHub experience.
-
-> [!TIP]
-> GitHub frequently adds new experimental features for users to explore, so keep an eye on the **Feature review** to discover new tools and enhancements.
-=======
-### Creating, editing, and deleting wiki pages
+#### Creating, editing, and deleting wiki pages
 
 You can use the GitHub wiki to create and manage documentation for your project.
 
@@ -250,4 +235,21 @@ You can use the GitHub wiki to create and manage documentation for your project.
 - Deleting a wiki page requires using Git. Clone the wiki repository, remove the file, and push the change.
 
 Learn more about managing wikis in [GitHub Docs - Adding or editing wiki pages](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages).
+
+
+### What are Feature preview?
+
+Feature Previews allow you to try out experimental features on GitHub before they are officially released. These previews give you early access to new functionality and allow you to provide feedback to help shape the final product.
+
+To enable or disable a feature preview:
+
+1. Navigate to your GitHub account by selecting your profile picture in the top-right corner of GitHub.com.
+1. Select **Feature preview** from the drop-down menu.
+1. Browse the list of available previews and toggle the features you want to try.
+
+Feature Previews are a great way to stay ahead of the curve and explore new tools that can enhance your GitHub experience.
+
+> [!TIP]
+> GitHub frequently adds new experimental features for users to explore, so keep an eye on the **Feature review** to discover new tools and enhancements.
+
 
