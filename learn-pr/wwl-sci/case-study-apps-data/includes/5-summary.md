@@ -25,4 +25,4 @@ In this case study module, you:
 - [Threat detection in Microsoft Sentinel](/azure/sentinel/threat-detection)
 - [Automate container image builds and maintenance with Azure Container Registry tasks](/azure/container-registry/container-registry-tasks-overview)
 - [What is Azure Policy?](/azure/governance/policy/overview)
-- [Microsoft Threat Modeling Tool](azure/security/develop/threat-modeling-tool)
+- [Microsoft Threat Modeling Tool](/azure/security/develop/threat-modeling-tool)
