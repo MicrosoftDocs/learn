@@ -6350,3 +6350,13 @@ achievements:
   title: Introduction to migrating ASP.NET apps to Azure
   summary: Evaluate the process of migrating an ASP.NET application from on-premises to Azure, along with a supporting Azure SQL database. Identify the benefits and challenges of the migration process.
   iconUrl: /training/achievements/intro-to-migrating-aspnet-apps-azure.svg
+- uid: learn.azure.migrate-oracle-workload-azure-iaas.badge
+  type: badge
+  title: Migrate Oracle workloads to Azure IaaS virtual machines
+  summary: This module describes the process of moving an existing application and Oracle database to Azure-hosted virtual machines (VMs). This approach helps minimize refactoring, development, and configuration.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.introduction-to-azure-compute-gallery-badge
+  type: badge
+  title: Introduction to Azure Compute Gallery
+  summary: Learn what Azure Compute Gallery is, how it works, and when to use it.
+  iconUrl: /training/achievements/generic-badge.svg
