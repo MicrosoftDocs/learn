@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework.cloud-native
-title: Innovate
+title: Cloud-native
 metadata:
   title: Cloud-native
   description: "A high-level overview of the Cloud-native methodology in the Cloud Adoption Framework, including how to build cloud-native apps and features."
