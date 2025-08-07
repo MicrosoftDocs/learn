@@ -1,7 +1,3 @@
----
-ms.custom:
-  - ignite-2024
----
 Now it's your chance to work with GraphQL in Microsoft Fabric.
 
 In this exercise, you create an API for GraphQL in Fabric, expose data from SQL Database, and validate access.
