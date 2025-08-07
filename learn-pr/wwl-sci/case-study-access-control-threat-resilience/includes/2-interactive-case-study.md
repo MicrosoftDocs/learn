@@ -24,5 +24,4 @@ Use the image that follows to access the interactive case study, where you explo
 > [!NOTE]
 > It's recommended that you open the link in a new browser window. To do so, select the right mouse key and select the option.
 
-
-[![Thumbnail image for the interactive case study](../media/case-study-accesss-control-threat-resilience-v2.png)](https://microsoftlearning.github.io/click-throughs/docs/sc-100/sc100_casestudy_simulations/interactive_case_study_enhancing_user_access_control_and_threat_resilience/story.html)
+[![Thumbnail image for the interactive case study](../media/case-study-access-control-threat-resilience-v2.png)](https://microsoftlearning.github.io/click-throughs/docs/sc-100/sc100_casestudy_simulations/interactive_case_study_enhancing_user_access_control_and_threat_resilience/story.html)
