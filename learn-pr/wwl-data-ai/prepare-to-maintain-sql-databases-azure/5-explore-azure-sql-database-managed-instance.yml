@@ -4,7 +4,7 @@ title: Explore Azure SQL Managed Instance
 metadata:
   title: Explore Azure SQL Managed Instance
   description: "Explore Azure SQL Managed Instance"
-  ms.date: 2/12/2025
+  ms.date: 8/7/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-explore-azure-sql-database-managed-instance.md)]
+  [!include[](includes/5-explore-azure-sql-database-managed-instance.md)]

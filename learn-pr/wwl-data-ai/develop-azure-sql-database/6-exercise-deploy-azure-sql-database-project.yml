@@ -4,10 +4,10 @@ title: 'Exercise: Configure and deploy CI/CD pipelines for Azure SQL Database pr
 metadata:
   title: 'Exercise: Configure and deploy CI/CD pipelines for Azure SQL Database projects'
   description: "Learn how to configure and deploy CI/CD pipelines for Azure SQL Database projects."
-  ms.date: 9/27/2024
-  author: jupadrao
+  ms.date: 08/06/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/6-exercise-deploy-azure-sql-database-project.md)]
+  [!include[](includes/6-exercise-deploy-azure-sql-database-project.md)]

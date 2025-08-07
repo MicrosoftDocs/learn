@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 9/27/2024
-  author: jupadrao
+  ms.date: 08/06/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
   module_assessment: true
@@ -46,4 +46,4 @@ quiz:
       isCorrect: false
       explanation: Incorrect. Azure Pipelines don't store data, they build, test, and deploy code.
 
-
+
