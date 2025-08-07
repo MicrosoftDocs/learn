@@ -1,4 +1,9 @@
-Building on the basic tracing setup, you can implement more sophisticated tracing patterns for complex AI workflows. In this section, you learn how to trace applications with multiple model calls, handle structured data generation, and debug errors effectively.
+Building on the basic tracing setup, you can implement more sophisticated tracing patterns for complex AI workflows.
+
+In this section, you learn to implement two essential advanced tracing patterns:
+
+- **Structured data generation with error handling** - Trace AI operations that generate JSON or structured data, capturing both successful parsing and common failure scenarios.
+- **Business logic tracing** - Trace your application's processing logic that operates on AI outputs to measure effectiveness and identify bottlenecks.
 
 The Trail Guide AI Assistant becomes more complex when it needs to generate structured trip profiles and match products. These scenarios require advanced tracing techniques.
 
@@ -6,94 +11,31 @@ The Trail Guide AI Assistant becomes more complex when it needs to generate stru
 
 Real-world AI applications often involve multiple steps: getting recommendations, generating structured data, and processing results. Each step needs its own tracing strategy.
 
-### Generate structured data with error handling
+### Generate structured data with comprehensive error handling
 
-When your AI application generates JSON or other structured data, you need to trace both the generation and parsing steps. Many AI applications fail in production at this point:
+**Purpose**: The structured data tracing pattern shows how to trace AI operations that generate structured data (like JSON), capturing detailed information about both successful operations and parsing failures. Comprehensive error handling is critical because many AI applications fail during the JSON parsing step, and you need visibility into why.
+
+**What you trace**: Model calls, response cleaning, parsing success/failure, and error details.
+
+When your AI application generates JSON or other structured data, you need to trace both the generation and parsing steps:
 
 ```python
 def generate_trip_profile(hike_name):
-    with tracer.start_as_current_span("trip_profile_generation") as span:
-        # Build a prompt that should return JSON
-        prompt = f"""
-        Hike: {hike_name}
-        Respond ONLY with a valid JSON object and nothing else.
-        Format: {{ "trailType": ..., "typicalWeather": ..., "recommendedGear": [ ... ] }}
-        """
-        
-        # Call the model
-        response = call_model(
-            "You are an AI assistant that returns structured hiking trip data in JSON format.",
-            prompt,
-            "trip_profile_model_call"
-        )
-        
-        # Attempt to parse the response
-        try:
-            profile = json.loads(response)
-            span.set_attribute("profile.success", True)
-            span.set_attribute("gear.count", len(profile.get("recommendedGear", [])))
-            return profile
-        except json.JSONDecodeError as e:
-            # Tracing captures why parsing failed
-            span.set_attribute("profile.success", False)
-            span.set_attribute("error.message", str(e))
-            print(f"❌ JSON parsing failed: {e}")
-            return {}
-```
-
-**Key tracing insights**: The `profile.success` attribute immediately tells you if the operation works. When the operation fails, you have the exact error message and can examine the raw model response in the child span.
-
-### Trace business logic operations
-
-Beyond AI calls, trace your application's business logic. Tracing business logic helps you understand how your application processes AI outputs:
-
-```python
-def match_products(recommended_gear):
-    with tracer.start_as_current_span("product_matching") as span:
-        # Your business logic with a mock product catalog
-        mock_catalog = ["TrailMaster Boots", "WeatherShield Jacket", "ComfortPack Daypack"]
-        
-        matched = []
-        for gear_item in recommended_gear:
-            for product in mock_catalog:
-                if any(word in product.lower() for word in gear_item.lower().split()):
-                    matched.append(product)
-                    break
-        
-        # Add metrics that help you understand matching effectiveness
-        span.set_attribute("gear.requested", len(recommended_gear))
-        span.set_attribute("products.matched", len(matched))
-        span.set_attribute("match.success_rate", len(matched) / len(recommended_gear) if recommended_gear else 0)
-        
-        return matched
-```
-
-**Key tracing insights**: The `match.success_rate` attribute tells you how well your product matching logic works. Low success rates indicate you need better matching algorithms or a more complete product catalog.
-
-## Handle errors with detailed tracing
-
-When errors occur in AI applications, they can be mysterious. Detailed tracing helps you understand not just what fails, but why the failure occurs.
-
-### Common AI application errors
-
-AI applications commonly fail due to:
-
-- **Model output formatting issues**: The model returns text that can't be parsed as expected.
-- **Empty or unexpected responses**: The model doesn't follow instructions.
-- **Rate limiting or API errors**: Infrastructure issues.
-
-Here's how to trace these error scenarios:
-
-```python
-def generate_trip_profile_with_error_handling(hike_name):
     with tracer.start_as_current_span("trip_profile_generation") as span:
         try:
             span.set_attribute("hike.name", hike_name)
             span.set_attribute("operation.type", "json_generation")
             
+            # Build a prompt that should return JSON
+            prompt = f"""
+            Hike: {hike_name}
+            Respond ONLY with a valid JSON object and nothing else.
+            Format: {{ "trailType": ..., "typicalWeather": ..., "recommendedGear": [ ... ] }}
+            """
+            
             response = call_model(
                 "You are an AI assistant that returns structured hiking trip data in JSON format.",
-                f"Generate trip profile for: {hike_name}",
+                prompt,
                 "trip_profile_model_call"
             )
             
@@ -107,6 +49,7 @@ def generate_trip_profile_with_error_handling(hike_name):
             
             profile = json.loads(response)
             span.set_attribute("parsing.success", True)
+            span.set_attribute("gear.count", len(profile.get("recommendedGear", [])))
             return profile
             
         except json.JSONDecodeError as e:
@@ -124,29 +67,37 @@ def generate_trip_profile_with_error_handling(hike_name):
             raise
 ```
 
-**Key tracing insights**: When JSON parsing fails, you can see the exact error, the first 200 characters of the response that causes the issue, and whether the response needs to be cleaned. The detailed trace information makes debugging faster.
+The structured data tracing pattern captures detailed information about both successful operations and failures. The key attributes (`parsing.success`, `error.type`, `response.raw`) provide the data needed for debugging and analysis.
 
-## Best practices for implementation
+### Trace business logic operations
 
-When implementing advanced tracing patterns:
+**Purpose**: The business logic tracing pattern shows how to trace your application's processing logic that operates on AI outputs. Business logic includes operations like matching AI recommendations to your product catalog, filtering results, calculating scores, or transforming data. Unlike AI model calls, business logic operations happen entirely within your application, but they're equally important to monitor for performance and effectiveness.
 
-**Always trace**:
+**What you trace**: Input/output metrics, success rates, and processing effectiveness to identify optimization opportunities.
 
-- Session-level operations (user journeys).
-- AI model calls and their success/failure.
-- Data parsing and validation steps.
-- Business logic that processes AI outputs.
+Beyond AI calls, trace your application's business logic that processes AI outputs. In the Trail Guide example, the business logic matches AI-recommended gear to actual products in your catalog:
 
-**Avoid tracing**:
+```python
+def match_products(recommended_gear):
+    with tracer.start_as_current_span("product_matching") as span:
+        # Business logic: Match AI recommendations to your product catalog
+        # In a real application, this might query a database or API
+        mock_catalog = ["TrailMaster Boots", "WeatherShield Jacket", "ComfortPack Daypack"]
+        
+        matched = []
+        for gear_item in recommended_gear:
+            # Custom matching algorithm (your business logic)
+            for product in mock_catalog:
+                if any(word in product.lower() for word in gear_item.lower().split()):
+                    matched.append(product)
+                    break
+        
+        # Trace metrics that help you understand business logic effectiveness
+        span.set_attribute("gear.requested", len(recommended_gear))
+        span.set_attribute("products.matched", len(matched))
+        span.set_attribute("match.success_rate", len(matched) / len(recommended_gear) if recommended_gear else 0)
+        
+        return matched
+```
 
-- Individual string operations or basic calculations.
-- Internal utility functions (simple helper functions that format text, clean data, or retrieve configuration values).
-- Any operation containing sensitive user data.
-
-### Performance and security considerations
-
-**Performance**: Tracing adds minimal overhead, but avoid storing large text in span attributes. Use the first 200 characters for debugging purposes.
-
-**Security**: Never include passwords, API keys, or sensitive personal information in trace attributes. Use placeholder values for debugging.
-
-With these advanced patterns, you can build comprehensive observability into complex AI applications that will help you identify and debug issues in production.
+The business logic tracing pattern captures input and output metrics (`gear.requested`, `products.matched`, `match.success_rate`) that help you understand processing effectiveness and identify areas for improvement.
