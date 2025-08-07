@@ -1,8 +1,8 @@
 ### YamlMime:Module
-uid: learn.dpu.new-windows-11-pro
+uid: learn.dpu.windows-11-pro
 title: What's new with Windows 11 Pro
 metadata:
-  title: What'S New With Windows 11 Pro
+  title: What's New With Windows 11 Pro
   description: In this module, you'll discover how the latest Windows 11 Pro features can help organizations work more efficiently and securely. 
   ms.date: 07/23/2025
   author: Stephanie-Rosenzweig
@@ -30,13 +30,13 @@ roles:
 products:
 - windows-11
 units:
-  - learn.dpu.new-windows-11-pro.introduction
-  - learn.dpu.new-windows-11-pro.accelerate-success
-  - learn.dpu.new-windows-11-pro.designed-for-business
-  - learn.dpu.new-windows-11-pro.protect-against-threats
-  - learn.dpu.new-windows-11-pro.easier-cost-effective
-  - learn.dpu.new-windows-11-pro.faster-performance
-  - learn.dpu.new-windows-11-pro.knowledge-check
-  - learn.dpu.new-windows-11-pro.summary
+  - learn.dpu.windows-11-pro.introduction
+  - learn.dpu.windows-11-pro.accelerate-success
+  - learn.dpu.windows-11-pro.designed-for-business
+  - learn.dpu.windows-11-pro.protect-against-threats
+  - learn.dpu.windows-11-pro.easier-cost-effective
+  - learn.dpu.windows-11-pro.faster-performance
+  - learn.dpu.windows-11-pro.knowledge-check
+  - learn.dpu.windows-11-pro.summary
 badge:
-  uid: learn.dpu.new-windows-11-pro.badge
+  uid: learn.dpu.windows-11-pro.badge
