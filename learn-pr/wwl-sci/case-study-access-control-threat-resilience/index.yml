@@ -28,7 +28,7 @@ roles:
   - solution-architect
 products: 
   - entra
-  - entra-id
+  - defender-for-cloud
 subjects: 
   - security
   - cloud-security
