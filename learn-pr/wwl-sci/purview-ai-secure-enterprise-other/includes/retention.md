@@ -1,9 +1,6 @@
+As organizations adopt enterprise and consumer AI tools, the need to manage user interactions with these apps becomes increasingly important. Microsoft Purview retention policies help ensure that AI-generated prompts and responses are retained or deleted in accordance with compliance requirements. To apply retention, this content must first be captured by a collection policy that copies it into the user’s Exchange mailbox.
 
-As organizations adopt enterprise and consumer AI tools, the need to retain and manage user interactions with these apps becomes increasingly important. Microsoft Purview retention policies help ensure that AI-generated prompts and responses are retained or deleted in accordance with your compliance requirements.
-
-These AI interactions are stored in hidden folders within Exchange Online mailboxes. Microsoft Purview applies retention policies to these folders based on the locations you select when configuring a policy.
-
-This lets you manage content from AI apps using the same tools and processes already in place for Microsoft 365 workloads.
+Captured interactions are stored in hidden folders within Exchange Online mailboxes. Retention policies apply to these folders based on the locations you select when configuring a policy, allowing you to manage AI content using the same tools and processes already in place for Microsoft 365 workloads.
 
 ## Understand where AI app data is stored
 

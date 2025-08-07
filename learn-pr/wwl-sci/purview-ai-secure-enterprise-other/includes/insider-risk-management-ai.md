@@ -70,3 +70,5 @@ Use these steps to configure the policy manually:
 1. On the **Indicators** page, select the indicators you want this policy to use. You can also turn on any additional indicators that aren't currently enabled.
 1. Choose default or custom thresholds.
 1. Review your settings and select **Submit** to activate the policy.
+
+Risk signals from this policy can feed into Adaptive Protection, which uses user risk levels to adjust DLP enforcement dynamically.

@@ -29,6 +29,8 @@ Compliance Manager includes **premium templates** for assessing your compliance 
 - ISO/IEC 42001:2023
 - NIST AI Risk Management Framework (RMF) 1.0
 
+   :::image type="content" source="../media/compliance-manager-ai-regulations.png" alt-text="Screenshot showing a list of premium AI compliance templates, including NIST AI Risk Management Framework and ISO/IEC standards." lightbox="../media/compliance-manager-ai-regulations.png":::
+
 These assessments help your organization evaluate how sensitive data is handled, how AI interactions are governed, and what safeguards are in place.
 
 To create an assessment, you first assign it to a **group**. Groups let you organize assessments by regulation, business unit, or year. Controls can be shared across assessments in the same group, which lets you track common actions more efficiently.
@@ -38,13 +40,14 @@ To create an assessment, you first assign it to a **group**. Groups let you orga
 
 ## Create an assessment using an AI regulation template
 
+These assessments help you evaluate whether your organization' s use of AI tools aligns with regulatory expectations and internal policies.
+
 1. Navigate to the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true) and select **Solutions** > **Compliance Manager**.
 1. Select **Assessments**, then choose **+ Add assessment**.
 1. In the guided flow:
 
    - Select one of the AI regulation templates
    - Assign the assessment to a new or existing group
-   - Choose **Microsoft 365** as the service
    - Review and confirm your settings
 
 This creates an assessment where you can track Microsoft-managed and customer-managed actions that support AI compliance.

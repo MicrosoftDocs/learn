@@ -75,6 +75,8 @@ After creating the policy, use the Microsoft Edge admin center to apply a config
 
 Some AI-related interactions can happen outside managed browsers or endpoints, such as through unmanaged apps or shadow IT usage. Microsoft Purview **Network Data Security** extends DLP protections by integrating with non-Microsoft network security solutions (SASE) to classify and track sensitive data shared with external AI apps and services.
 
+It integrates with supported SASE platforms to classify AI-related network traffic, helping extend DLP visibility beyond endpoints and browsers.
+
 This capability is useful for identifying patterns like:
 
 - Users submitting sensitive prompts to unmanaged AI chat interfaces
