@@ -6350,3 +6350,13 @@ achievements:
   title: Introduction to migrating ASP.NET apps to Azure
   summary: Evaluate the process of migrating an ASP.NET application from on-premises to Azure, along with a supporting Azure SQL database. Identify the benefits and challenges of the migration process.
   iconUrl: /training/achievements/intro-to-migrating-aspnet-apps-azure.svg
+- uid: learn.azure.migrate-oracle-application-azure-paas.badge
+  type: badge
+  title: Migrate Oracle-powered applications by using Azure PaaS database services
+  summary: This module describes the process of modernizing an existing Oracle-powered workload to simplify management by refactoring the database to a fully managed cloud-native Azure database service.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.intro-to-azure-dedicated-hosts.badge
+  type: badge
+  title: Introduction to Azure dedicated hosts
+  summary: Learn about what Azure dedicated hosts is, how it works, and when you should choose to use a dedicated host as a solution to meet your organization's needs.
+  iconUrl: /training/achievements/generic-badge.svg
