@@ -53243,6 +53243,96 @@
       "source_path": "learn-pr/azure/cloud-adoption-framework/9-secure.yml",
       "redirect_url": "/training/modules/cloud-adoption-framework/10-secure",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-infrastructure-change-reviews-using-bicep-github/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-infrastructure-change-reviews-using-bicep-github/2-understand-automated-pull-request-validation.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-infrastructure-change-reviews-using-bicep-github/3-exercise-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-infrastructure-change-reviews-using-bicep-github/4-exercise-create-workflow-pull-request.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-infrastructure-change-reviews-using-bicep-github/5-deploy-ephemeral-environments-reviews.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-infrastructure-change-reviews-using-bicep-github/6-exercise-create-ephemeral-environments-pull-requests.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-infrastructure-change-reviews-using-bicep-github/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-infrastructure-change-reviews-using-bicep-github/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-azure-infrastructure-change-reviews-using-bicep-github/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-github-actions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-github-actions/2-publish-bicep-code-deployment-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-github-actions/3-exercise-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-github-actions/4-exercise-publish-template-spec.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-github-actions/5-design-workflow-versioning-strategy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-github-actions/6-exercise-publish-module-registry.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-github-actions/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-github-actions/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-github-actions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
     }
   ]
 }
