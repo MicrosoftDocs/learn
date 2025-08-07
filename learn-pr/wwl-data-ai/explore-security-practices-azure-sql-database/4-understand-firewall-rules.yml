@@ -4,10 +4,10 @@ title: Understand firewall rules
 metadata:
   title: Understand firewall rules
   description: "Learn how firewall rules work in Azure SQL Database."
-  ms.date: 09/24/2024
-  author: jupadrao
+  ms.date: 08/06/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-understand-firewall-rules.md)]
+  [!include[](includes/4-understand-firewall-rules.md)]
