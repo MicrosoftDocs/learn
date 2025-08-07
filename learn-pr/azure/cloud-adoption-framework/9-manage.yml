@@ -4,10 +4,10 @@ title: Manage
 metadata:
   title: Manage
   description: "A high-level overview of the Manage methodology in the Cloud Adoption Framework, including how to establish a management baseline and implement specialization."
-  ms.date: 02/06/2025
-  author: Zimmergren
-  ms.author: tozimmergren
+  ms.date: 08/07/2025
+  author: stephen-sumner
+  ms.author: ssumner
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/8-manage.md)]
+  [!include[](includes/9-manage.md)]
