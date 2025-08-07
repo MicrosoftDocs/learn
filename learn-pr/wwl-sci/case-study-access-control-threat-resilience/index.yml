@@ -31,11 +31,11 @@ subjects:
   - security
   - cloud-security
 units:
-- learn.case.study-access-control-threat-resilience.introduction
-- learn.case.study-access-control-threat-resilience.interactive-case-study
-- learn.case.study-access-control-threat-resilience.interactive-case-study-highlights
-- learn.case.study-access-control-threat-resilience.knowledge-check
-- learn.case.study-access-control-threat-resilience.summary
+- learn.case-study-access-control-threat-resilience.introduction
+- learn.case-study-access-control-threat-resilience.interactive-case-study
+- learn.case-study-access-control-threat-resilience.interactive-case-study-highlights
+- learn.case-study-access-control-threat-resilience.knowledge-check
+- learn.case-study-access-control-threat-resilience.summary
 badge:
   uid: learn.case.study-access-control-threat-resilience.badge
 
