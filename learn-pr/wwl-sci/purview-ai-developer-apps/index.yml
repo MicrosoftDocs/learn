@@ -34,6 +34,7 @@ subjects:
 - threat-protection
 units:
 - learn.wwl.purview-ai-developer-apps.introduction
+- learn.wwl.purview-ai-developer-apps.understand-developer-ai-risks
 
 - learn.wwl.purview-ai-developer-apps.knowledge-check
 - learn.wwl.purview-ai-developer-apps.summary

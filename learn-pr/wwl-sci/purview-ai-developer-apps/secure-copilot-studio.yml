@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-developer-apps.secure-copilot-studio
+title: Apply Microsoft Purview protections in Copilot Studio
+metadata:
+  title: Apply Microsoft Purview protections in Copilot Studio
+  description: "Apply Microsoft Purview protections in Copilot Studio"
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/secure-copilot-studio.md)]
