@@ -1,7 +1,7 @@
 Here, we discuss some of the essential security tools and techniques available to GitHub repository administrators. 
 
 >[!Note]
-> The following content doesn't cover the fundamentals of writing secure code, but rather important security considerations, tools, and features to use within a GitHub repository.
+> This content focuses on **important security considerations, tools, and features to use within a GitHub repository.
 
 ## The importance of a secure development strategy
 
@@ -51,6 +51,7 @@ From the Security tab, you can add features to your GitHub workflow to help avoi
 - **Dependabot alerts** that notify you when GitHub detects that your repository is using a vulnerable dependency or malware.
 - **Security advisories** that you can use to privately discuss, fix, and publish information about security vulnerabilities in your repository.
 - **Code scanning** that helps you find, triage, and fix vulnerabilities and errors in your code.
+- **Secret scanning** that detects tokens, credentials, and secrets committed to your repo and can block them before the push. **Push protection** is enabled by default on public repositories.
 
 For more information, see [GitHub security features](https://docs.github.com/code-security/getting-started/github-security-features).
 
@@ -115,6 +116,26 @@ You can use the workflows that protect the branch to:
 - Run a linter to check for typos and conformation to the internal coding conventions;
 - Run automated tests to check for any behavior changes of the code;
 - And so on.
+
+## Required reviewers in pull requests
+
+You can improve repository security by requiring reviews before code is merged into important branches. Required reviewers help enforce quality, security, and accountability.
+
+To configure required reviewers:
+
+1. Navigate to the repository on GitHub.
+2. Under the repository name, click **Settings** > **Branches**.
+3. Next to the branch you want to protect, click **Add rule** or edit an existing rule.
+4. Select **Require pull request reviews before merging**.
+5. Optionally, check:
+   - **Require review from Code Owners**
+   - **Dismiss stale pull request approvals when new commits are pushed**
+   - **Require approval from someone other than the last pusher**
+
+Required reviews can’t be bypassed without admin permissions. They ensure that proposed changes are reviewed by another contributor or designated code owner before being merged.
+
+For more details, see [About protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).
+
 
 ## Add a CODEOWNERS file
 

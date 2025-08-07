@@ -156,7 +156,7 @@ The last part of this workflow file sets the `MY_NAME` variable value for this w
 
 For more information on workflow syntax, see [Workflow syntax for GitHub Actions](https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions?azure-portal=true)
 
-## Referencing Actions in Workflows
+## Referencing actions in workflows
 
 When creating workflows in GitHub Actions, you can reference actions from various sources. These actions can be used to automate tasks in your workflows. Below are the primary sources where workflows can reference actions:
 
@@ -168,8 +168,6 @@ When creating workflows in GitHub Actions, you can reference actions from variou
        uses: docker://<docker-image-name>:<tag>
    ```
 
-This is particularly useful for actions that require a custom runtime or dependencies not available in standard runners.
-
 2. **Any public repository**  
    Actions hosted in public repositories can be directly referenced in your workflows. These actions are accessible to anyone and can be used by specifying the repository name and version (Git ref, SHA, or tag) in the `uses` attribute. For example:
    ```yml
@@ -178,6 +176,11 @@ This is particularly useful for actions that require a custom runtime or depende
        uses: actions/checkout@v3
    ```
 
+[!IMPORTANT]
+> **For better security, use a full commit SHA when referencing actions—not just a tag like `@v3`.**  
+> This makes sure your workflow always uses the exact same code, even if the action is updated or changed later.  
+> Example: `uses: actions/checkout@c2c1744e079e0dd11c8e0af4a96064ca4f6a2e9e`
+
 3. **The same repository as your workflow file**  
    You can reference actions stored in the same repository as your workflow file. This is useful for custom actions that are specific to your project. To reference such actions, use a relative path to the action's directory. For example:
    ```yml
@@ -185,6 +188,8 @@ This is particularly useful for actions that require a custom runtime or depende
      - name: Use a local action
        uses: ./path-to-action
    ```
+
+For more details, see [security hardening guidance for GitHub Actions](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions#using-third-party-actions).
 
 4. **An enterprise marketplace**  
    If your organization uses GitHub Enterprise, you can reference actions from your enterprise's private marketplace. These actions are curated and managed by your organization, ensuring compliance with internal standards. For example:
@@ -198,7 +203,7 @@ This is particularly useful for actions that require a custom runtime or depende
 - Actions in private repositories can also be referenced, but they require proper authentication and permissions.
 - When referencing actions, always specify a version (Git ref, SHA, or tag) to ensure consistency and avoid unexpected changes.
 
-For more information, see [Referencing actions in workflows](https://docs.github.com/actions/using-workflows/referencing-actions-in-workflows?azure-portal=true).
+For more information, see [Referencing actions in workflows](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions).
 
 ## GitHub-hosted versus self-hosted runners
 
