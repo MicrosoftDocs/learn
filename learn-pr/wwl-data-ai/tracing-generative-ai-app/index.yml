@@ -17,13 +17,9 @@ title: Analyze and debug your generative AI app with tracing
 summary: "Learn how to implement tracing in your generative AI applications using Azure AI Foundry and OpenTelemetry. This module teaches you to capture detailed execution flows, debug complex workflows, and understand application behavior for better reliability and optimization."
 abstract: |
   By the end of this module, you'll be able to:
-    - Distinguish between monitoring and tracing in generative AI applications.
-    - Identify key tracing concepts: traces, spans, and attributes in OpenTelemetry.
     - Set up tracing infrastructure with Azure AI Foundry and Application Insights.
     - Implement custom spans for AI model calls and business logic operations.
-    - Handle complex workflows with structured data generation and error handling.
     - Analyze trace data to identify performance bottlenecks and failure patterns.
-    - Apply production best practices for effective observability.
 prerequisites: |
   Before starting this module, you should be familiar with:
     - Basic Python programming concepts
