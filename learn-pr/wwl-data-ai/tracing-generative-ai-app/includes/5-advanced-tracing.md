@@ -132,11 +132,15 @@ When viewing traces in Azure AI Foundry, look for patterns in your trace data:
 
 ### Understanding error patterns
 
+The trace attributes you've added provide valuable insights into application performance and reliability. By analyzing these patterns, you can identify common failure points and optimization opportunities:
+
 - **High `parsing.success: false` rates**: Your prompts may need improvement to generate better-formatted output.
 - **Low `match.success_rate` values**: Your product matching logic needs enhancement.
 - **Slow `response.time` values**: Consider optimizing prompts or using different models.
 
 ### Monitoring session success
+
+Session-level metrics help you understand the overall user experience and identify where improvements are needed. Focus on these key indicators to measure application health:
 
 - **`session.success: false` patterns**: Look at which operations fail most often.
 - **`operations.completed` counts**: Understand where users drop off in multi-step workflows.
