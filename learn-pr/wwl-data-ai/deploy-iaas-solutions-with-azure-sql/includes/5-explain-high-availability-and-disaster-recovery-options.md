@@ -28,9 +28,9 @@ The image above shows a logical diagram of an Always On Availability Group, runn
 
 ### SQL Server Failover Cluster instances
 
-If you need to protect the entire instance, you could use a SQL Server Failover Cluster Instance (FCI), which provides high availability for an entire instance, in a single region. A FCI doesn't provide disaster recovery without being combined with another feature like availability groups or log shipping. FCIs also require shared storage that can be provided on Azure by using shared file storage or using Storage Spaces Direct on Windows Server.
+If you need to protect the entire instance, you could use a SQL Server Failover Cluster Instance (FCI), which provides high availability for an entire instance, in a single region. An FCI doesn't provide disaster recovery without being combined with another feature like availability groups or log shipping. FCIs also require shared storage that can be provided on Azure by using shared file storage or using Storage Spaces Direct on Windows Server.
 
-For Azure workloads, availability groups are the preferred solution for newer deployments, because the shared storage require of FCIs increases the complexity of deployments. However, for migrations from on-premises solutions, an FCI may be required for application support.
+For Azure workloads, availability groups are the preferred solution for newer deployments, because the shared storage required of FCIs increases the complexity of deployments. However, for migrations from on-premises solutions, an FCI may be required for application support.
 
 ## Disaster Recovery options
 
