@@ -1,6 +1,6 @@
 This unit explores the architectural and operational insights surfaced through the interactive case study on Litware Inc.’s hybrid endpoint and infrastructure security posture. The simulation reveals systemic gaps common in distributed industrial environments and provides a structured lens for learners to analyze and reflect on them.
 
-### Situation Assessment
+### Situation assessment
 
 Litware Inc. faces several endpoint and infrastructure security challenges across its global operations:
 
@@ -12,7 +12,7 @@ Litware Inc. faces several endpoint and infrastructure security challenges acros
 
 These issues reflect architectural maturity gaps and fragmented governance that elevate the risk of multi-vector attacks across IT, OT, and cloud domains.
 
-### Threat Analysis
+### Threat analysis
 
 Operational weaknesses translate into tangible threats:
 
@@ -25,7 +25,7 @@ Operational weaknesses translate into tangible threats:
 
 These vulnerabilities highlight how fragmented infrastructure and inconsistent security practices can be exploited, especially in hybrid industrial environments.
 
-### Architectural Solution
+### Architectural solution
 
 A Zero Trust–aligned hybrid security framework using integrated Microsoft tools addresses Litware Inc.’s risks:
 
