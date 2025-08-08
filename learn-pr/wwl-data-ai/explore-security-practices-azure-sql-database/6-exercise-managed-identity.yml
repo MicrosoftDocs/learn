@@ -4,10 +4,10 @@ title: 'Exercise: Configure managed identity for Azure SQL Database'
 metadata:
   title: 'Exercise: Configure managed identity for Azure SQL Database'
   description: "Learn how to configure managed identity for Azure SQL Database."
-  ms.date: 09/24/2024
-  author: jupadrao
+  ms.date: 08/06/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/6-exercise-managed-identity.md)]
+  [!include[](includes/6-exercise-managed-identity.md)]
