@@ -6355,3 +6355,13 @@ achievements:
   title: Authenticate and authorize multi-tenant apps using Microsoft Entra ID
   summary: Microsoft Entra ID enables you to improve the functionality of cloud-native apps in multitenant scenarios.
   iconUrl: /training/achievements/cna-set-up-azure-ad-use-scale.svg
+- uid: learn.aks-cluster-autoscaling.badge
+  type: badge
+  title: Automatically scale your AKS clusters with the cluster autoscaler
+  summary: Learn how to configure automatic scaling for your AKS clusters using the cluster autoscaler.
+  iconUrl: /training/achievements/aks-cluster-autoscaling.svg
+- uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.badge
+  type: badge
+  title: Manage end-to-end deployment scenarios by using Bicep and Azure Pipelines
+  summary: Create a unified pipeline to deploy your entire environment. You add a build stage to your pipeline, and use pipeline artifacts and Bicep outputs to publish applications, databases, and blobs.
+  iconUrl: /training/achievements/bicep/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.svg

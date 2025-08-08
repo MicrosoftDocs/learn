@@ -53293,6 +53293,81 @@
       "source_path": "learn-pr/azure/cloud-adoption-framework/9-secure.yml",
       "redirect_url": "/training/modules/cloud-adoption-framework/10-secure",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/2-understand-end-end-deployments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/3-configure-applications-virtual-machines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/4-exercise-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/5-exercise-deploy-web-application.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/6-configure-storage-databases.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/7-exercise-seed-storage-account-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-autoscaling/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/cluster-autoscaler",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-autoscaling/2-concepts-cluster-scaling.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/cluster-autoscaler",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-autoscaling/3-exercise-cluster-autoscaler.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/cluster-autoscaler",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-autoscaling/4-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/cluster-autoscaler",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-autoscaling/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/cluster-autoscaler",
+      "redirect_document_id": false
     }
   ]
 }
