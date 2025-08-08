@@ -19,7 +19,7 @@ Once discovered, apps and agents appear in the **Copilot experiences and agents*
 
 ## Review data risk in connected sources
 
-If AI apps reference content stored in SharePoint, it's important to understand whether that content is properly protected. The **Data risk assessments** tab in DSPM allows you to scan SharePoint sites to identify potential issues such as:
+If AI apps reference content stored in SharePoint, it's important to understand whether that content is properly protected. The **Data risk assessments** tab in DSPM for AI allows you to scan SharePoint sites to identify potential issues such as:
 
 - Files that contain sensitive information types
 - Files that are unlabeled or haven't been scanned
@@ -31,7 +31,7 @@ You can use these results to apply file-level protections, restrict AI access to
 
 ## Follow recommendations related to developer AI apps
 
-The **Recommendations** tab in DSPM includes guidance for apps and agents created using services like Copilot Studio, Fabric, Azure AI, and Microsoft Entra.
+The **Recommendations** tab in DSPM for AI includes guidance for apps and agents created using services like Copilot Studio, Fabric, Azure AI, and Microsoft Entra.
 
 Some recommendations in DSPM for AI specifically address apps created in developer environments. For example:
 
@@ -45,7 +45,7 @@ Some recommendations guide you through creating or updating a DLP policy. Others
 
 ## Extend coverage with collection policies
 
-If your organization uses other services or needs to expand DSPM coverage, you can configure collection policies to capture additional signals. These policies define which locations or activities should be tracked and can include:
+If your organization uses other services or needs to expand DSPM for AI coverage, you can configure collection policies to capture additional signals. These policies define which locations or activities should be tracked and can include:
 
 - Prompts and responses from browser-based Copilot interactions
 - Activity from apps deployed through Microsoft Entra

@@ -2,12 +2,12 @@
 uid: learn.wwl.purview-ai-developer-apps.azure-ai-services-protections
 title: Enforce protections in Azure AI services and Azure AI Foundry
 metadata:
-  title: Enforce protections in Azure AI services and Azure AI Foundry
+  title: Enforce Protections in Azure AI Services and Azure AI Foundry
   description: "Enforce protections in Azure AI services and Azure AI Foundry"
   ms.date: 04/10/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 5
 content: |
   [!include[](includes/azure-ai-services-protections.md)]

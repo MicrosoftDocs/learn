@@ -9,12 +9,15 @@ Before you can apply protections, apps built with Azure AI must be onboarded int
 If the app is registered in Microsoft Entra ID, onboarding typically involves:
 
 - Authorizing access to Microsoft 365 data
-- Assigning the required API permissions, such as **Mail.Read** or **Sites.Read.All**
+- Assigning the appropriate Microsoft Graph API permissions, such as `Mail.Read` or `Sites.Read.All`, depending on which data the app needs to access
 - Making sure Purview-supported signals are enabled for the app
 
 For apps that use data sources outside of Microsoft 365, such as files stored in Azure or on external services, you might need to configure Data Security Posture Management for (DSPM) for AI collection policies. These policies allow you to capture prompt activity and file access from Azure-hosted apps so they can appear in Microsoft Purview.
 
 Once onboarded, apps become visible in DSPM for AI reports and can be included in policy scopes for DLP and other Microsoft Purview tools.
+
+> [!NOTE]
+> To view or manage onboarding in DSPM for AI, users need the correct Microsoft Purview or Microsoft Entra permissions. For details, see [Permissions for Data Security Posture Management for AI](/purview/dspm-ai-permissions).
 
 ## Apply DLP policies to Azure AI apps
 
