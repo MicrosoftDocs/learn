@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-developer-apps.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your knowledge."
+  ms.date: 08/11/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Contoso developers build an agent in Copilot Studio that connects to a SharePoint site. The SharePoint site includes documents labeled as Highly Confidential. What feature should Contoso use to ensure the agent doesn't summarize these files?"
+    choices:
+    - content: "Sensitivity labels with access restrictions"
+      isCorrect: true
+      explanation: "Sensitivity labels can enforce access and summarization restrictions on agents."
+    - content: "Sensitivity labels with policy tips"
+      isCorrect: false
+      explanation: "Policy tips only provide guidance. You need enforcement to restrict summarization."
+    - content: "Microsoft Entra Conditional Access"
+      isCorrect: false
+      explanation: "Conditional Access controls user access, not how agents interact with labeled files."
+
+  - content: "A developer at Fabrikam creates an AI agent that sends sensitive data to a non-Microsoft AI tool in Microsoft Edge. What Microsoft Purview feature helps block this behavior for users at high risk?"
+    choices:
+    - content: "eDiscovery holds"
+      isCorrect: false
+      explanation: "eDiscovery holds preserve data but don't enforce policy actions like blocking."
+    - content: "Audit logging for AI interactions"
+      isCorrect: false
+      explanation: "Audit logging provides visibility, but it doesn't block the action."
+    - content: "Adaptive Protection in DLP"
+      isCorrect: true
+      explanation: "Adaptive Protection can apply stricter enforcement like blocking risky users from sending sensitive data."
+
+  - content: "A compliance analyst wants to investigate whether users have submitted prompts with offensive or misleading content to AI tools. Which Microsoft Purview solution helps with this task?"
+    choices:
+    - content: "Communication Compliance"
+      isCorrect: true
+      explanation: "Communication Compliance surfaces prompts that include harmful, offensive, or inappropriate input."
+    - content: "Audit"
+      isCorrect: false
+      explanation: "Audit shows metadata for prompts, but not the content of the prompts."
+    - content: "Insider Risk Management"
+      isCorrect: false
+      explanation: "Insider Risk Management looks at risky patterns but not prompt content itself."
+
+  - content: "A developer registers an AI app through Microsoft Entra that accesses Microsoft 365 data. What Microsoft Purview capability helps the organization understand the data risks this app introduces?"
+    choices:
+    - content: "DSPM for AI"
+      isCorrect: true
+      explanation: "Data Security Posture Management (DSPM) for AI surfaces apps and assesses how they use sensitive data."
+    - content: "Adaptive Protection enforcement"
+      isCorrect: false
+      explanation: "Adaptive Protection is used for applying protection based on user risk level, not assessing apps."
+    - content: "Communication Compliance"
+      isCorrect: false
+      explanation: "Communication Compliance evaluates prompt content, not app-level risks."
+
+  - content: "A security team reviews DSPM for AI data risk assessments for a SharePoint site used by a Copilot Studio agent. They notice several overshared files with no labels. What should they do to reduce the risk of unintended exposure?"
+    choices:
+    - content: "Restrict AI access to the SharePoint site"
+      isCorrect: false
+      explanation: "That limits AI use, but the broader issue is unprotected content."
+    - content: "Apply sensitivity labels to the files"
+      isCorrect: true
+      explanation: "Labeling the files helps control how the content is used and summarized by agents."
+    - content: "Export the site's audit logs"
+      isCorrect: false
+      explanation: "Audit logs provide visibility but won't protect the files or change AI behavior."

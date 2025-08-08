@@ -1,25 +1,30 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-ai-developer-apps
 metadata:
-  title: Assess and mitigate AI risks with Microsoft Purview
+  title: Secure Developer AI Environments with Microsoft Purview
   description: Microsoft Purview helps you strengthen data security in AI environments, providing tools to handle challenges from AI technology. Learn to safeguard your data and adapt to evolving security challenges in AI technology.
-  ms.date: 04/10/2025
+  ms.date: 08/11/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ai-usage: ai-assisted
   ms.service: purview
-title: Assess and mitigate AI risks with Microsoft Purview
+title: Secure developer AI environments with Microsoft Purview
 summary: |
-  Microsoft Purview includes tools that help detect risky activity and apply policy-based protections in AI environments. This includes detecting generative AI usage, assigning user risk levels, and adjusting enforcement actions based on those levels.
+  Microsoft Purview provides tools to secure developer AI environments by discovering apps, assessing data access, and applying appropriate protections. This includes detecting generative AI usage, assigning user risk levels, and applying dynamic enforcement based on user behavior and data sensitivity.
 abstract: |
   In this module you learn how to:
-  - Detect generative AI usage with Insider Risk Management
-  - Use risk scoring to identify users who pose a higher risk
-  - Apply dynamic protections with Adaptive Protection based on user behavior
-  - Use data assessments to identify oversharing risks in AI interactions
+  - Discover developer AI apps and assess their access to sensitive data
+  - Enforce protections for Azure AI services and Entra-registered apps
+  - Govern AI agents built in Copilot Studio
+  - Retain and classify prompt and response content
+  - Investigate risky AI usage with Insider Risk Management, Communication Compliance, and Audit
+  - Apply dynamic protections using Adaptive Protection and risk-based policies
 prerequisites: |
-  None
+  To get the most from this module, you should have:
+  - A basic understanding of Microsoft Purview features, like sensitivity labels, data loss prevention, and retention
+  - A general understanding of Microsoft Entra app registration and identity management
+  - Familiarity with how Microsoft 365 Copilot and AI services access organizational data
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -29,9 +34,15 @@ roles:
 products:
 - m365
 - microsoft-purview
+- entra
+- microsoft-copilot-studio
+- fabric
+- ai-services
 subjects:
-- data-management
-- threat-protection
+- security
+- generative-ai
+- insider-risk
+- compliance
 units:
 - learn.wwl.purview-ai-developer-apps.introduction
 - learn.wwl.purview-ai-developer-apps.understand-developer-ai-risks
