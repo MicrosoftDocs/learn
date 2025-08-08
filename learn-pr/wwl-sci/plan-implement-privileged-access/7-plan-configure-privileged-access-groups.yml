@@ -2,12 +2,16 @@
 uid: learn.wwl.plan-implement-privileged-access.plan-configure-privileged-access-groups
 title: Plan and configure Privileged Access Groups
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan and configure Privileged Access Groups
   description: "Plan and configure Privileged Access Groups"
-  ms.date: 10/23/2023
+  ms.date: 08/06/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/7-plan-configure-privileged-access-groups.md)]
+  [!include[](includes/7-plan-configure-privileged-access-groups.md)]

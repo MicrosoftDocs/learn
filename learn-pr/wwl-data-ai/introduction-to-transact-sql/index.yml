@@ -3,9 +3,9 @@ uid: learn.wwl.intro-to-transact-sql
 metadata:
   title: Introduction to Transact-SQL
   description: "Introduction to Transact-SQL"
-  ms.date: 11/22/2024
-  author: wwlpublish
-  ms.author: rcaper
+  ms.date: 08/06/2025
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: module
   ms.service: sql
   ms.subservice: t-sql
