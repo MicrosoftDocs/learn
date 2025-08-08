@@ -17,7 +17,7 @@ The structure of the interactive case study consists of the following five secti
 
 Each component is designed to reinforce Zero Trust principles and promote architectural reasoning in hybrid identity environments.
 
-### Access the interactive simulation
+### Access the interactive case study
 
 Use the image that follows to access the interactive case study, where you explore the scenario through a series of activities that simulate real-world decision-making and solution design.
 
