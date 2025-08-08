@@ -25,5 +25,4 @@ After you complete this module, you'll be able to publish reusable Azure templat
 If you need a refresher on Bicep modules, registries, or template specs, see these Microsoft Learn training modules:
 
 - [Create composable Bicep files by using modules](xref:learn.azure.create-composable-bicep-files-using-modules)
-- [Share Bicep modules by using private registries](xref:learn.azure.share-bicep-modules-using-private-registries)
 - [Publish libraries of reusable infrastructure code by using template specs](xref:learn.azure.arm-template-specs)
