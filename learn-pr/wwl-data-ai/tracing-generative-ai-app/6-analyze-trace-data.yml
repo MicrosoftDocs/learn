@@ -12,6 +12,6 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 8
+durationInMinutes: 5
 content: |
   [!include[](includes/6-analyze-trace-data.md)]
