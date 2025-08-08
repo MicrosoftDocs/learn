@@ -1,11 +1,13 @@
-Developers are increasingly using tools like Copilot Studio, Azure AI services, and custom AI agents to build intelligent apps. These environments offer powerful capabilities but also introduce new data security and compliance risks. From unsecured data access to ungoverned AI responses, a single misconfigured agent or prompt can result in sensitive data exposure or regulatory violations.
+Developers are increasingly using tools like Copilot Studio, Azure AI services, Copilot in Fabric, and Microsoft Entra-registered apps. These environments offer powerful capabilities but also introduce new data security and compliance risks. From unsecured data access to ungoverned AI responses, a single misconfigured agent or prompt can result in sensitive data exposure or regulatory violations.
 
 AI agents and apps created in development environments can ingest, generate, and share sensitive information based on user inputs and backend data sources. Several factors make these environments uniquely risky:
 
-- Prompt injection attacks can exploit unfiltered input to manipulate an agent’s behavior.
+- Prompt injection attacks can exploit unfiltered input to manipulate an agent's behavior.
 - AI agents might access and return data they shouldn't, especially if their permissions are too broad.
 - Files used in development might lack sensitivity labels or encryption, leaving them unprotected.
 - Custom apps registered through Microsoft Entra ID or deployed using Azure AI services might fall outside the visibility of traditional security tools if not onboarded to Microsoft Purview.
+
+These environments include any tools or platforms where developers or makers build, configure, or extend AI-powered apps, whether through low-code, custom code, or Microsoft Entra-registered interfaces.
 
 ## Understand the challenge
 

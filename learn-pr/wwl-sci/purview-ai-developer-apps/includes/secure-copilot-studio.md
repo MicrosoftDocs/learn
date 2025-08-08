@@ -1,5 +1,7 @@
 Copilot Studio allows users to build custom AI agents that can answer questions, summarize documents, or automate business processes. These agents often connect to internal data sources and return generated responses to users. This flexibility introduces the risk of exposing sensitive information if agents aren't configured and governed appropriately.
 
+Microsoft Copilot Studio is one of several platforms where developers can build custom AI agents. Like Azure AI services and Entra-registered apps, these agents can interact with sensitive data and must be secured using Microsoft Purview tools.
+
 Microsoft Purview provides several ways to manage these risks. Sensitivity labels can limit which content agents are allowed to access. Data loss prevention (DLP) policies can block or restrict agent responses that include sensitive data. Retention, audit, and eDiscovery features can preserve, review, and investigate agent interactions to meet compliance requirements. Classification signals from AI prompts and responses can also appear in Microsoft Purview dashboards and reports when supported.
 
 ## Understand what needs to be protected
@@ -16,7 +18,7 @@ Understanding these risks is the first step in applying the right protections.
 
 ## Use sensitivity labels to scope data access
 
-Sensitivity labels determine how information is classified and protected across Microsoft 365. In Copilot Studio, [labels can influence whether agents are allowed to summarize or return certain types of content](/microsoft-copilot-studio/sensitivity-label-copilot-studio#microsoft-purview-strengthens-information-protection-for-copilot-studio).
+Sensitivity labels determine how information is classified and protected across Microsoft 365. In Copilot Studio, [labels can influence whether agents are allowed to summarize or return certain types of content](https://learn.microsoft.com/en-us/microsoft-copilot-studio/sensitivity-label-copilot-studio#microsoft-purview-strengthens-information-protection-for-copilot-studio).
 
 :::image type="content" source="../media/copilot-studio-sensitivity-label.png" alt-text="Screenshot showing Copilot Studio response referencing labeled files and displaying a Confidential label with protection set to Any User." lightbox="../media/copilot-studio-sensitivity-label.png":::
 
@@ -85,3 +87,5 @@ With eDiscovery, teams can:
 - Export content for use in legal review, incident response, or investigations
 
 Making agent interactions discoverable helps ensure that AI usage can be reviewed with the same rigor as other forms of communication and collaboration.
+
+Agent activity from Copilot Studio is also surfaced in **Data Security Posture Management (DSPM) for AI**, where you can view usage details in reports and the activity explorer. These tools give you visibility into AI interactions across your organization and help detect patterns of risk or policy violations.

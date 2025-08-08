@@ -35,6 +35,9 @@ subjects:
 units:
 - learn.wwl.purview-ai-developer-apps.introduction
 - learn.wwl.purview-ai-developer-apps.understand-developer-ai-risks
+- learn.wwl.purview-ai-developer-apps.discover-assess-ai-apps
+
+- learn.wwl.purview-ai-developer-apps.secure-copilot-studio
 
 - learn.wwl.purview-ai-developer-apps.knowledge-check
 - learn.wwl.purview-ai-developer-apps.summary
