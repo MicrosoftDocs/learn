@@ -22,9 +22,6 @@ Beyond linting, you might want to consider testing your template specs and modul
 
 You should choose whether to include workflow steps that deploy and test your template specs and modules. In this Microsoft Learn training module, we lint the Bicep code but don't include other forms of testing. If you want to test your template specs and modules, consider how you'll deploy them to Azure. Also consider whether you'll use dedicated subscriptions or resource groups to deploy the resources.
 
-> [!TIP]
-> We recommend that you review [Test your Bicep code by using GitHub Actions](xref:learn.azure.test-bicep-code-using-github-actions) for more information on how to test your Bicep files in an automated workflow.
-
 ## Authentication and authorization
 
 When you publish template specs to Azure yourself, your Microsoft Entra user needs to be granted access to the resource group that contains the template spec resource. Likewise, when you publish a Bicep module to a registry, your Microsoft Entra user needs to have permission to write to the Azure Container Registry instance that your organization uses for its Bicep modules.
