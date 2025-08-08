@@ -44,6 +44,9 @@ This policy enforcement applies to:
 
 This functionality allows you to limit AI-generated responses based on the classification of the content being accessed. It helps reduce the risk of unintentional data disclosure through summarization.
 
+> [!NOTE]
+> Some features in Microsoft Purview, including DLP and eDiscovery, require Microsoft 365 E5 or Microsoft 365 E5 Compliance licensing. Make sure your organization meets the licensing requirements to use these capabilities.
+
 ## Retain agent interactions for compliance
 
 When logging is enabled, Copilot Studio agent conversations can be stored in Exchange Online mailboxes. This allows organizations to retain the content of prompts and responses and apply Microsoft Purview retention policies.
@@ -61,7 +64,7 @@ Retention policies can:
 These policies help meet regulatory and internal recordkeeping requirements by ensuring agent activity is preserved and accessible.
 
 > [!NOTE]
-> To retain, audit, or search Copilot Studio conversations, logging must be explicitly enabled in the agent settings.
+> To retain, audit, or search Copilot Studio conversations, logging must be explicitly enabled in the agent’s settings within Copilot Studio. Without logging, these features won’t capture prompt or response content.
 
 ## Use audit to review agent usage
 
