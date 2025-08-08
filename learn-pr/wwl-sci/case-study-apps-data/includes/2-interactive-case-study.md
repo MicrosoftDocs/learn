@@ -1,11 +1,11 @@
 
 In this unit, you engage with the interactive case study focused on Fabrikam Inc., a fictitious e-commerce organization navigating application, and data security challenges in a multicloud environment.
 
-### Scenario Summary
+### Scenario summary
 
 Fabrikam Inc. operates across Azure and AWS, deploying microservices in AKS and EKS clusters. The organization faces fragmented DevOps security practices, including manual secret rotation, public database endpoints, and inconsistent CI/CD pipeline controls. These issues expose the organization to misconfigurations, credential leaks, and delayed threat detection—highlighting the need for integrated policy enforcement and unified visibility across cloud-native environments.
 
-### Interactive Case study structure
+### Interactive case study structure
 
 The structure of the interactive case study consists of the following five sections:
 
@@ -17,13 +17,13 @@ The structure of the interactive case study consists of the following five secti
 
 Each component is designed to reinforce Zero Trust principles and promote architectural reasoning in multicloud application environments.
 
-### Access the Interactive Simulation
+### Access the interactive simulation
 
 Use the image that follows to access the interactive case study, where you explore the scenario through a series of activities that simulate real-world decision-making and solution design.
 
 > [!NOTE]
 > It's recommended that you open the link in a new browser window. To do so, select the right mouse key and select the option.
 
-[![Thumbnail image for the interactive case study](../media/case-study-apps-infrastructure-v2.png)](https://microsoftlearning.github.io/click-throughs/docs/sc-100/sc100_casestudy_simulations/interactive_case_study_securing_apps_and_data/story.html)
+[!Screenshot of the landing page for the interactive case study](../media/case-study-apps-infrastructure-v2.png)](https://microsoftlearning.github.io/click-throughs/docs/sc-100/sc100_casestudy_simulations/interactive_case_study_securing_apps_and_data/story.html)
 
 

@@ -1,6 +1,6 @@
 This unit explores the architectural and operational insights surfaced through the interactive case study on Fabrikam Inc.’s multicloud application and data security posture. The simulation reveals systemic gaps common in cloud-native environments and provides a structured lens for learners to analyze and reflect on them.
 
-### Situation Assessment
+### Situation assessment
 
 Fabrikam Inc. faces several application and data security challenges in its dual-cloud (Azure and AWS) environment:
 
@@ -12,7 +12,7 @@ Fabrikam Inc. faces several application and data security challenges in its dual
 
 These issues reflect decentralized security practices and visibility gaps that elevate risks in cloud-native architectures.
 
-### Threat Analysis
+### Threat analysis
 
 Operational weaknesses translate into tangible threats:
 
@@ -24,7 +24,7 @@ Operational weaknesses translate into tangible threats:
 
 These vulnerabilities highlight how DevOps practices and cloud-native complexity can be exploited, especially in multicloud environments.
 
-### Architectural Solution
+### Architectural solution
 
 A Zero Trust–aligned DevSecOps framework using integrated Microsoft tools addresses Fabrikam Inc.’s risks:
 
