@@ -53170,6 +53170,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/cna-set-up-azure-ad-use-scale/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-set-up-azure-ad-use-scale/2-define-azure-ad.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-set-up-azure-ad-use-scale/3-exercise-set-up-azure-ad.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-set-up-azure-ad-use-scale/4-azure-ad-app-development.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-set-up-azure-ad-use-scale/5-exercise-implement-multitenant-data.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-set-up-azure-ad-use-scale/6-manage-monitor-azure-ad-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-set-up-azure-ad-use-scale/7-exercise-integrate-next-js-web-app-azure-ad.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-set-up-azure-ad-use-scale/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-set-up-azure-ad-use-scale/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cna-set-up-azure-ad-use-scale/index.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/entra-external-identities.yml",
       "redirect_url": "/training/modules/entra-external-identities",
       "redirect_document_id": true
