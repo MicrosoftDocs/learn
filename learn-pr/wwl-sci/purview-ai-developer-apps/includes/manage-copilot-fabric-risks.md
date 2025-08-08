@@ -1,9 +1,9 @@
 Copilot in Microsoft Fabric allows users to interact with data using natural language. In tools like Power BI, users can ask questions, generate reports, and summarize data without needing to write formulas or build visuals manually. These experiences are designed for productivity, but they can introduce risk if Copilot accesses sensitive content without proper controls in place.
 
-Microsoft Purview supports visibility, lifecycle management, and investigation for Copilot interactions in Fabric. You can assess data risks, preserve prompt and response content, and respond to compliance requirements using retention, audit, and eDiscovery tools.
+Microsoft Purview supports retention, audit, and eDiscovery for Copilot in Fabric. These tools help you track activity and meet compliance needs across your environment.
 
 > [!NOTE]
-> Microsoft Purview doesn’t currently enforce real-time data loss prevention (DLP) for Copilot in Fabric. DSPM provides visibility into Copilot activity, but not response blocking.
+> Microsoft Purview doesn't currently enforce real-time DLP for Copilot in Fabric. DSPM provides visibility into Copilot activity, but not response blocking.
 
 ## Understand how Copilot in Fabric uses data
 
@@ -15,7 +15,7 @@ Understanding which datasets Copilot can access and how that access is logged is
 
 ## Capture activity using DSPM collection policies
 
-To bring Copilot in Fabric activity into Microsoft Purview, configure collection policies in Data Security Posture Management (DSPM) for AI. These policies let you:
+Data Security Posture Management (DSPM) for AI is the entry point for understanding how Copilot interacts with data across your environment. To bring Copilot in Fabric activity into Microsoft Purview, configure collection policies in DSPM for AI. These policies let you:
 
 - Detect when Copilot is used in Fabric
 - Capture prompts and responses for review
@@ -25,24 +25,21 @@ Once collected, this content appears in **activity explorer**, where you can fil
 
 ## Retain interactions for compliance and reporting
 
-If logging is enabled, prompts and responses from Copilot in Fabric can be stored in Exchange Online. You can apply Microsoft Purview retention policies to this content by selecting the **Microsoft Copilot Experiences** location when creating a policy.
+When logging is enabled in Fabric, prompt and response content can be retained using Microsoft Purview retention policies scoped to the **Microsoft Copilot Experiences** location.
 
 > [!NOTE]
-> Microsoft Purview doesn’t currently enforce real-time data loss prevention (DLP) for Copilot in Fabric. DSPM provides visibility into Copilot activity, but not response blocking.
+> While real-time policy enforcement isn't currently supported in Fabric, Microsoft Purview allows you to capture Copilot activity, assess risks, and investigate prompt data through logging, retention, audit, and eDiscovery.
 
 Retention policies allow you to:
 
 - Preserve interactions for a required duration
-- Keep a record of agent activity even if the dataset changes
+- Keep a record of interactions even if the underlying dataset changes
 - Support regulatory, legal, or internal recordkeeping needs
 
-This ensures that generated content isn't lost and can be reviewed later if needed.
+This allows organizations to support investigations and ensure AI-generated content remains accessible.
 
 ## Use audit and eDiscovery for investigations
 
-When Copilot activity is logged, it also becomes available in Microsoft Purview **Audit** and **eDiscovery**.
-
-- In **Audit**, you can view metadata such as who used Copilot, when the prompt occurred, and what service was used. These events don't include prompt content but help establish timelines.
-- In **eDiscovery**, you can search for stored interactions, filter by user or keyword, and export results for legal or compliance review.
+Logged Copilot activity in Fabric becomes available to **Microsoft Purview Audit** and **eDiscovery**, allowing you to review metadata, search interactions, and export content for legal or compliance purposes.
 
 These tools support investigation needs even when more granular policy enforcement isn't available in Fabric.

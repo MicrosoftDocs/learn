@@ -1,6 +1,6 @@
 AI agents and copilots often generate, access, or return content that includes sensitive or regulated information. These interactions might involve summarizing SharePoint files, answering questions based on Power BI datasets, or responding to users directly in Microsoft Teams. In each case, the data exchanged in prompts and responses can require protection
 
-Microsoft Purview supports classifying, restricting, and retaining AI prompt data using tools like sensitivity labels, data loss prevention (DLP), and retention policies. These capabilities help ensure AI interactions are governed consistently with your organization’s broader data protection strategy.
+Microsoft Purview supports classifying, restricting, and retaining AI prompt data using tools like sensitivity labels, data loss prevention (DLP), and retention policies. These capabilities help ensure AI interactions are governed consistently with your organization's broader data protection strategy.
 
 ## Use sensitivity labels to control access and classification
 
