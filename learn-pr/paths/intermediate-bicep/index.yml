@@ -44,7 +44,6 @@ modules:
 - learn.azure.child-extension-bicep-templates
 - learn.azure.manage-changes-bicep-code-git
 - learn.azure.structure-bicep-code-collaboration
-- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests
 - learn.arm-template-whatif
 - learn.azure.migrate-azure-resources-bicep
 trophy:
