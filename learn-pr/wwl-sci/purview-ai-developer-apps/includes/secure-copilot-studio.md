@@ -1,6 +1,4 @@
-Copilot Studio allows users to build custom AI agents that can answer questions, summarize documents, or automate business processes. These agents often connect to internal data sources and return generated responses to users. This flexibility introduces the risk of exposing sensitive information if agents aren't configured and governed appropriately.
-
-Microsoft Copilot Studio is one of several platforms where developers can build custom AI agents. Like Azure AI services and Entra-registered apps, these agents can interact with sensitive data and must be secured using Microsoft Purview tools.
+Copilot Studio allows users to build custom AI agents that can answer questions, summarize documents, or automate business processes. These agents often connect to internal data sources and return generated responses to users. This flexibility introduces the risk of exposing sensitive information if agents aren't configured and governed appropriately. Like Azure AI services and Entra-registered apps, these agents can interact with sensitive data and must be secured using Microsoft Purview tools.
 
 Microsoft Purview provides several ways to manage these risks. Sensitivity labels can limit which content agents are allowed to access. Data loss prevention (DLP) policies can block or restrict agent responses that include sensitive data. Retention, audit, and eDiscovery features can preserve, review, and investigate agent interactions to meet compliance requirements. Classification signals from AI prompts and responses can also appear in Microsoft Purview dashboards and reports when supported.
 
@@ -60,7 +58,10 @@ Retention policies can:
 - Keep interaction records available even if the agent is modified or deleted
 - Ensure content remains available for search, audit, or investigation
 
-These policies support regulatory and internal recordkeeping needs by preserving and making agent activity accessible.
+These policies help meet regulatory and internal recordkeeping requirements by ensuring agent activity is preserved and accessible.
+
+> [!NOTE]
+> To retain, audit, or search Copilot Studio conversations, logging must be explicitly enabled in the agent settings.
 
 ## Use audit to review agent usage
 
@@ -88,4 +89,4 @@ With eDiscovery, teams can:
 
 Making agent interactions discoverable helps ensure that AI usage can be reviewed with the same rigor as other forms of communication and collaboration.
 
-Agent activity from Copilot Studio is also surfaced in **Data Security Posture Management (DSPM) for AI**, where you can view usage details in reports and the activity explorer. These tools give you visibility into AI interactions across your organization and help detect patterns of risk or policy violations.
+Agent activity from Copilot Studio is also surfaced in **Data Security Posture Management (DSPM) for AI**, where you can view usage details in reports and the activity explorer. These tools give you visibility into AI interactions across your organization and help detect risk patterns or policy violations.
