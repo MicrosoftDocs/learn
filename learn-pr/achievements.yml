@@ -110,6 +110,11 @@ achievements:
   title: Make your virtual machines highly available
   summary: Make your virtual machines highly available
   iconUrl: /training/achievements/make-your-virtual-machines-highly-available.svg
+- uid: learn.cloud-adoption-framework-strategy.badge
+  type: badge
+  title: Develop a cloud adoption strategy by using the Cloud Adoption Framework
+  summary: The Cloud Adoption Framework for Azure consists of eight methodologies. This module focuses on the [Strategy methodology](/azure/cloud-adoption-framework/strategy/). It provides guidance about how to assess your existing strategy and identify ways to improve it before you adopt and integrate cloud technologies. The next methodology is the [Plan methodology](/azure/cloud-adoption-framework/plan/), where you create an actionable plan to implement your cloud adoption strategy.
+  iconUrl: /training/achievements/cloud-adoption-framework-strategy.svg
 - uid: learn.scale-and-size-virtual-machines.badge
   type: badge
   title: Scale and size Virtual Machines in Azure

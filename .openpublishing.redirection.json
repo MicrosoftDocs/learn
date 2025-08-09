@@ -1109,6 +1109,71 @@
       "redirect_url": "/training/modules/intro-to-azure-data-science-virtual-machine"
     },
     {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-strategy/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/2-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-strategy/1-introduction-strategy.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/2-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-strategy/2-assess.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/2-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-strategy/3-motivations.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/2-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-strategy/4-mission-objectives.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/2-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-strategy/5-team.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/2-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-strategy/6-prepare.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/2-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-strategy/7-inform-cost.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/2-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-strategy/8-inform-ai.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/2-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-strategy/9-inform-resiliency.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/2-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-strategy/10-inform-security.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/2-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-strategy/11-inform-sustainability.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/2-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-adoption-framework-strategy/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/2-strategy",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/advocates/interactive-deep-learning/7-summary-and-knowledge-check.md",
       "redirect_url": "/training/modules/intro-to-azure-data-science-virtual-machine"
     },
