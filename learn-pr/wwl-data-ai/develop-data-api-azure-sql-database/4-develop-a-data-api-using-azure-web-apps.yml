@@ -4,11 +4,11 @@ title: Develop a data API using Azure Web App for Containers
 metadata:
   title: Develop a data API using Azure Web App for Containers
   description: "Learn how to develop a data API using Azure Web App for Containers."
-  ms.date: 10/10/2024
+  ms.date: 08/06/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
   ms.custom: sfi-ropc-nochange
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-develop-a-data-api-using-azure-web-apps.md)]
+  [!include[](includes/4-develop-a-data-api-using-azure-web-apps.md)]

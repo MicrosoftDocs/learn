@@ -9,4 +9,6 @@ Microsoft Fabric provides tools for both citizen and professional data practitio
 - Data science
 - Business intelligence
 
-This module introduces the Fabric platform, discusses who Fabric is for, and explores Fabric services.
+Additionally, Microsoft Fabric integrates Copilot, a generative AI assistant that enhances productivity across all workloads by providing intelligent code completion, natural language to SQL conversion, automated insights, and contextual assistance for data professionals and business users alike.
+
+This module introduces the Fabric platform, discusses who Fabric is for, explores Fabric services, and examines how Copilot enhances the analytics experience.

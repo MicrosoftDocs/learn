@@ -4,11 +4,11 @@ title: Explore authentication methods
 metadata:
   title: Explore authentication methods
   description: "Learn to explain authentication methods for Azure SQL Database."
-  ms.date: 09/24/2024
-  author: jupadrao
+  ms.date: 08/06/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
   ms.custom: sfi-ropc-blocked
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-explore-authentication-methods.md)]
+  [!include[](includes/2-explore-authentication-methods.md)]
