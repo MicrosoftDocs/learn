@@ -53653,6 +53653,121 @@
       "source_path": "learn-pr/azure/cloud-adoption-framework/9-secure.yml",
       "redirect_url": "/training/modules/cloud-adoption-framework/10-secure",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/implement-data-loss-prevention/index.md",
+      "redirect_url": "/training/paths/purview-implement-manage-dlp/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-information-governance/index.md",
+      "redirect_url": "/purview/manage-data-governance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-loss-prevention-polices/index.md",
+      "redirect_url": "/training/paths/purview-implement-manage-dlp/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-loss-prevention-polices/2-configure-data-loss-prevention-for-policy-precedence.md",
+      "redirect_url": "/training/paths/purview-implement-manage-dlp/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-loss-prevention-polices/3-implement-data-loss-prevention-policies-test-mode.md",
+      "redirect_url": "/training/paths/purview-implement-manage-dlp/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-loss-prevention-polices/1-introduction.md",
+      "redirect_url": "/training/paths/purview-implement-manage-dlp/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-loss-prevention-polices/8-knowledge-check.md",
+      "redirect_url": "/training/paths/purview-implement-manage-dlp/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-loss-prevention-polices/6-manage-permissions-for-data-loss-prevention-reports.md",
+      "redirect_url": "/training/paths/purview-implement-manage-dlp/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-loss-prevention-polices/7-manage-respond-data-loss-prevention-policy-violations.md",
+      "redirect_url": "/training/paths/purview-implement-manage-dlp/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-loss-prevention-polices/9-summary-resources.md",
+      "redirect_url": "/training/paths/purview-implement-manage-dlp/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-loss-prevention-polices/4-use-data-loss-prevention-reports.md",
+      "redirect_url": "/training/paths/purview-implement-manage-dlp/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/index.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/apply-mailbox-holds-microsoft-exchange.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/explain-retention-copilot-interactions.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/explain-retention-exchange-online.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/explain-retention-sharepoint-online-onedrive.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/explain-retention-teams.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/explain-retention-viva-engage.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/introduction.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/knowledge-check.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/recover-content-microsoft-365-workloads.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/recover-content-microsoft-exchange.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/summary-resources.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
     }
   ]
 }

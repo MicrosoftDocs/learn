@@ -6395,3 +6395,23 @@ achievements:
   title: Authenticate and authorize multi-tenant apps using Microsoft Entra ID
   summary: Microsoft Entra ID enables you to improve the functionality of cloud-native apps in multitenant scenarios.
   iconUrl: /training/achievements/cna-set-up-azure-ad-use-scale.svg
+- uid: implement-data-loss-prevention.trophy
+  type: trophy
+  title: 'SC-400: Implement Data Loss Prevention'
+  summary: 'In this learning plan we discuss how to implement data loss prevention techniques to secure your Microsoft 365 data. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.'
+  iconUrl: /training/achievements/implement-data-loss-prevention.svg
+- uid: implement-information-governance.trophy
+  type: trophy
+  title: 'SC-400: Implement Data Lifecycle and Records Management'
+  summary: 'Learn how to plan and implement data lifecycle and records management strategies for an organization. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.'
+  iconUrl: /training/achievements/implement-information-governance.svg
+- uid: learn.wwl.manage-data-loss-prevention-polices.badge
+  type: badge
+  title: Manage data loss prevention policies and reports in Microsoft 365
+  summary: Learn how to manage data loss prevention policies and mitigate data loss prevention policy violations.
+  iconUrl: /learn/achievements/manage-data-loss-prevention-polices.svg
+- uid: learn.wwl.manage-data-retention-microsoft-365.badge
+  type: badge
+  title: Manage data retention and deletion in Microsoft 365 workloads
+  summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
+  iconUrl: /training/achievements/manage-data-retention-in-microsoft-365.svg
