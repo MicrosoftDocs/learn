@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-virtual-machine-availability
 metadata:
-  title: Configure virtual machine availability
+  title: Configure Virtual Machine Availability
   description: "Learn how to configure virtual machine availability including vertical and horizontal scaling."
   ms.date: 02/12/2025
   author: wwlpublish

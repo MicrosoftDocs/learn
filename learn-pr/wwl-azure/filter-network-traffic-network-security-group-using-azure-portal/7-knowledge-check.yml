@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check"
   ms.date: 06/12/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
@@ -60,4 +60,4 @@ quiz:
       explanation: "Incorrect. The network interfaces need to be in the same virtual network for both the source and destination application security groups."
     - content: "They must exist in the same virtual network"
       isCorrect: true
-      explanation: "Correct. All network interfaces for both the source and destination application security groups need to exist in the same virtual network."
+      explanation: "Correct. All network interfaces for both the source and destination application security groups need to exist in the same virtual network."

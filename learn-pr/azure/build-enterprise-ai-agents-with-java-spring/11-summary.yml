@@ -5,6 +5,7 @@ metadata:
   title: Summary
   description: Review what you learned about Spring AI and Azure deployment.
   ms.date: 03/16/2025
+  ms.update-cycle: 180-days
   author: yortch
   ms.author: jbalderas
   ms.reviewer: thegovind

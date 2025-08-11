@@ -4,6 +4,7 @@ metadata:
   title: "Object detection on Edge devices with Live Video Analytics using YOLO model"
   description: "This module helps learner to deploy object detection solution using Live Video Analytics on IoT Edge."
   ms.date: 07/20/2024
+  ms.update-cycle: 180-days
   author: orin-thomas
   ms.author: orthomas
   ms.topic: module

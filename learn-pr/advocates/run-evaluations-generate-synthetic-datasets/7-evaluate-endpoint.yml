@@ -5,6 +5,7 @@ metadata:
   title: Exercise - Evaluate an endpoint
   description: Learn how to run an evaluation on an endpoint.
   ms.date: 10/13/2024
+  ms.update-cycle: 180-days
   author: aprilgittens
   ms.author: apspeigh
   ms.topic: unit

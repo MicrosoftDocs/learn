@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.data-engineer-azure-databricks
 metadata:
-  title: Implement a data lakehouse analytics solution with Azure Databricks DP-3011
+  title: Implement a Data Lakehouse Analytics Solution with Azure Databricks
   description: Implement a data lakehouse analytics solution with Azure Databricks. (DP-3011)
   ms.date: 08/30/2024
   author: theresa-i
@@ -16,11 +16,11 @@ iconUrl: /training/achievements/data-engineer-azure-databricks.svg
 levels:
 - intermediate
 roles:
-- data-engineer
+- data-analyst
 products:
 - azure-databricks
 subjects:
-- data-engineering
+- data-analytics
 modules:
 - learn.wwl.explore-azure-databricks
 - learn.wwl.perform-data-analysis-azure-databricks

@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-data-loss-prevention-alerts
 metadata:
-  title: Investigate and respond to Microsoft Purview Data Loss Prevention alerts
-  description: Investigate and respond to Microsoft Purview Data Loss Prevention alerts.
-  ms.date: 04/25/2025
+  title: Investigate and Respond to Microsoft Purview Data Loss Prevention Alerts
+  description: Investigate and Respond to Microsoft Purview Data Loss Prevention Alerts.
+  ms.date: 08/05/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -44,6 +44,7 @@ units:
 - learn.wwl.purview-data-loss-prevention-alerts.investigate-alerts-purview
 - learn.wwl.purview-data-loss-prevention-alerts.investigate-alerts-defender
 - learn.wwl.purview-data-loss-prevention-alerts.respond-data-loss-prevention-alerts
+- learn.wwl.purview-data-loss-prevention-alerts.exercise-investigate-alert
 - learn.wwl.purview-data-loss-prevention-alerts.knowledge-check
 - learn.wwl.purview-data-loss-prevention-alerts.summary
 badge:

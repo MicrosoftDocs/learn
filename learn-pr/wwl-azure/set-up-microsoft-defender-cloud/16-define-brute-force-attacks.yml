@@ -6,10 +6,10 @@ metadata:
   description: "Define brute force attacks"
   ms.date: 04/24/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/16-define-brute-force-attacks.md)]
+  [!include[](includes/16-define-brute-force-attacks.md)]

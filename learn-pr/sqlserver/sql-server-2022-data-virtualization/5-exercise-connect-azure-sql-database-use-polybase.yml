@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.sql-server-2022-data-virtualization.exercise-connect-azure-sql-database-use-polybase
+uid: learn.sql-server-2025-data-virtualization.exercise-connect-azure-sql-database-use-polybase
 title: Exercise - Create an external table from a database in Azure SQL Database
 metadata:
   title: Exercise - Create an external table from a database in Azure SQL Database
   description: "An exercise using data virtualization to connect to Azure SQL Database."
-  ms.date: 04/28/2024
+  ms.date: 07/24/2025
   author: HugoMSFT
   ms.author: hudequei
   ms.topic: unit

@@ -5,8 +5,9 @@ metadata:
   title: Use GitHub Copilot with JavaScript
   description: Use GitHub Copilot to update a JavaScript project. Update the JavaScript portfolio site and use GitHub Copilot to suggest additions and enhancements.
   author: abrilurena
-  ms.author: abrilu
+  ms.author: orthomas
   ms.date: 08/12/2024
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot

@@ -5,6 +5,7 @@ metadata:
   title: Exercise - Deploy a Spring AI Application to Azure Container Apps
   description: Learn how to deploy your Spring AI application to Azure Container Apps.
   ms.date: 03/16/2025
+  ms.update-cycle: 180-days
   author: yortch
   ms.author: jbalderas
   ms.reviewer: thegovind

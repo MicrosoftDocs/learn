@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.dpu.understand-the-esu-program
+title: Understand the Extended Security Updates (ESU) program for Windows 10
+metadata:
+  title: Understand the Extended Security Updates (ESU) Program for Windows 10
+  description: In this module, you'll learn about the Extended Security Updates (ESU) program for Windows 10. 
+  ms.date: 07/16/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-10
+  ms.custom: CW042425-1
+summary: >
+  Discover how organizations can take advantage of the Extended Security Updates (ESU) program for Windows 10 to facilitate a smooth and secure transition to Windows 11.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Summarize what ESUs are and how they work
+  - Identify when an organization can benefit from the ESU program
+  - Determine the cost of implementing an ESU program
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg 
+ratingEnabled: false
+levels: 
+  - beginner
+roles: 
+  - business-owner
+  - technology-manager
+products:
+  - windows-10
+units:
+  - learn.dpu.understand-the-esu-program.introduction
+  - learn.dpu.understand-the-esu-program.empower-to-move-forward
+  - learn.dpu.understand-the-esu-program.cost-coverage
+  - learn.dpu.understand-the-esu-program.summary
+badge:
+  uid: learn.dpu.understand-the-esu-program.badge

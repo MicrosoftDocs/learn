@@ -4,12 +4,12 @@ title: Exercise - Implement responsible AI
 metadata:
   title: Exercise - Implement responsible AI
   description: "Exercise - Implement responsible AI"
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/17/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 15
 content: |
-  [!include[](includes/06-exercise.md)]
+  [!include[](includes/06-exercise.md)]

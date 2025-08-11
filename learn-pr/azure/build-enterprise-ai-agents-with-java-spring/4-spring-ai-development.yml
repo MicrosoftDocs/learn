@@ -5,6 +5,7 @@ metadata:
   title: Develop a RAG Application with Spring AI and Azure OpenAI
   description: Learn how to implement a RAG application using Spring AI with Azure OpenAI and VectorStore Spring Boot Starters.
   ms.date: 03/16/2025
+  ms.update-cycle: 180-days
   author: yortch
   ms.author: jbalderas
   ms.reviewer: thegovind

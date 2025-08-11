@@ -3,7 +3,7 @@ uid: learn.wwl.design-implement-network-security-monitoring
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Design and implement network security
+  title: Design and Implement Network Security
   description: "You learn to design and implement network security solutions such as Azure DDoS, Azure Firewall, Network Security Groups, and Web Application Firewall."
   ms.date: 05/19/2025
   author: wwlpublish

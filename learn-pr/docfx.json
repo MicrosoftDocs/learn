@@ -696,12 +696,24 @@
                 "dest": "modules"
             },
             {
+                "src": "device-partner-university",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "files": [
                     "**/*.md",
                     "**/*.yml"
                 ],
                 "exclude": [
-                    "device-partner-university/**",
                     "**/obj/**",
                     "**/includes/**",
                     "_themes/**",
@@ -839,6 +851,19 @@
                 "dest": "modules"
             },
             {
+                "src": "device-partner-university",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.txt",
+                    "**/*.ipynb"
+                ],
+                "dest": "modules"
+            },
+            {
                 "files": [
                     "**/*.gif",
                     "**/*.png",
@@ -847,7 +872,6 @@
                     "**/*.jpeg"
                 ],
                 "exclude": [
-                    "device-partner-university/**",
                     "**/obj/**",
                     "**/includes/**",
                     "_themes/**",
@@ -882,7 +906,6 @@
                 "dot-net-maui/**/*.yml": true,
                 "educator/**/*.yml": true,
                 "endpoint-manager/**/*.yml": true,
-                "entra-external-identities/**/*.yml": true,
                 "github/**/*.yml": true,
                 "iot/**/*.yml": true,
                 "language/**/*.yml": true,
@@ -932,7 +955,6 @@
                 "dot-net-maui/**/*.yml": true,
                 "educator/**/*.yml": true,
                 "endpoint-manager/**/*.yml": true,
-                "entra-external-identities/**/*.yml": true,
                 "github/**/*.yml": true,
                 "iot/**/*.yml": true,
                 "language/**/*.yml": true,

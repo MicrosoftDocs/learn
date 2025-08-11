@@ -3,13 +3,11 @@ uid: learn-wwl.get-started-sql-database-microsoft-fabric
 metadata:
   title: Get started with SQL Database in Microsoft Fabric
   description: "Learn how SQL Database in Microsoft Fabric works, the key concepts, and practical examples to help users SQL Database effectively as part of their analytics solutions."
-  ms.date: 10/18/2024
+  ms.date: 08/07/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based
   ms.service: fabric
-  ms.custom:
-    - ignite-2024
   ai-usage: ai-assisted
 title: Get started with SQL Database in Microsoft Fabric
 summary: You'll explore how to use the capabilities of SQL databases within the Microsoft Fabric environment, which provides a unified platform for managing and analyzing data.
