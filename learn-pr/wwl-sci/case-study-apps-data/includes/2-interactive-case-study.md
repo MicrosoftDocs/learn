@@ -24,6 +24,7 @@ Use the image that follows to access the interactive case study, where you explo
 > [!NOTE]
 > It's recommended that you open the link in a new browser window. To do so, select the right mouse key and select the option.
 
-[!Screenshot of the landing page for the interactive case study](../media/case-study-apps-infrastructure-v2.png)](https://microsoftlearning.github.io/click-throughs/docs/sc-100/sc100_casestudy_simulations/interactive_case_study_securing_apps_and_data/story.html)
+
+[![Screenshot of the landing page for the interactive case study](../media/case-study-apps-infrastructure-v2.png)](https://microsoftlearning.github.io/click-throughs/docs/sc-100/sc100_casestudy_simulations/interactive_case_study_securing_apps_and_data/story.html)
 
 
