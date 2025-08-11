@@ -145,7 +145,7 @@ achievements:
   title: Strengthen cloud security by using the Cloud Adoption Framework
   summary: Organizations that move to the cloud often find that they need to modernize security practices and tooling to keep up with continuous changes in cloud platforms, business requirements, and security threats. The Cloud Adoption Framework for Azure consists of eight methodologies. This module focuses on the Secure methodology, which provides guidance for the security modernization journey.
   iconUrl: /training/achievements/cloud-adoption-framework-security.svg
-- uid: learn.cloud-adoption-framework.trophy
+- uid: learn.accelerate-cloud-adoption
   type: trophy
   title: Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure
   summary: Do you need a clear path forward for your cloud journey? This learning path includes best practice guidance to help you create a cloud strategy, define a cloud adoption plan, prepare your cloud environment with proper governance, and implement cloud operations in alignment with your organizational needs. Cloud architects and IT professionals will learn and engage with the proven best practices, tools, and documentation in the Cloud Adoption Framework for Azure to build the technical knowledge needed to help your organization successfully adopt the cloud and meet business goals.
