@@ -53303,6 +53303,11 @@
       "source_path": "learn-pr/paths/implement-information-governance/index.md",
       "redirect_url": "/purview/manage-data-governance",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-loss-prevention-polices/index.md",
+      "redirect_url": "/training/paths/purview-implement-manage-dlp/",
+      "redirect_document_id": false
     }
   ]
 }
