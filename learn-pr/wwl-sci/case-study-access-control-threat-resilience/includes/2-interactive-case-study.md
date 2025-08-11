@@ -1,11 +1,11 @@
 
 In this unit, you engage with the interactive case study focused on Contoso Healthcare Solutions, a fictitious healthcare institution.
 
-### Scenario Summary
+### Scenario summary
 
 Contoso Healthcare Solutions operates a hybrid IT environment with legacy on-premises systems and cloud-hosted workloads. The organization faces challenges in identity management, access control, and incident response due to fragmented systems and manual processes. A recent ransomware incident exposed critical gaps, prompting a shift toward a Zero Trust architecture.
 
-### Interactive Case study structure
+### Interactive case study structure
 
 The structure of the interactive case study consists of the following five sections:
 
@@ -17,11 +17,11 @@ The structure of the interactive case study consists of the following five secti
 
 Each component is designed to reinforce Zero Trust principles and promote architectural reasoning in hybrid identity environments.
 
-### Access the Interactive Simulation
+### Access the interactive case study
 
 Use the image that follows to access the interactive case study, where you explore the scenario through a series of activities that simulate real-world decision-making and solution design.
 
 > [!NOTE]
 > It's recommended that you open the link in a new browser window. To do so, select the right mouse key and select the option.
 
-[![Thumbnail image for the interactive case study](../media/case-study-access-control-threat-resilience-v2.png)](https://microsoftlearning.github.io/click-throughs/docs/sc-100/sc100_casestudy_simulations/interactive_case_study_enhancing_user_access_control_and_threat_resilience/story.html)
+[![Screenshot of the landing page for the interactive case study](../media/case-study-access-control-threat-resilience-v2.png)](https://microsoftlearning.github.io/click-throughs/docs/sc-100/sc100_casestudy_simulations/interactive_case_study_enhancing_user_access_control_and_threat_resilience/story.html)
