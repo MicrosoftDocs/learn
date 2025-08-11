@@ -53403,6 +53403,11 @@
       "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/recover-content-microsoft-exchange.md",
       "redirect_url": "/training/modules/purview-retention-recovery/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/summary-resources.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
     }
   ]
 }
