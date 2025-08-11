@@ -53318,6 +53318,11 @@
       "source_path": "learn-pr/wwl-sci/manage-data-loss-prevention-polices/3-implement-data-loss-prevention-policies-test-mode.md",
       "redirect_url": "/training/paths/purview-implement-manage-dlp/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-loss-prevention-polices/1-introduction.md",
+      "redirect_url": "/training/paths/purview-implement-manage-dlp/",
+      "redirect_document_id": false
     }
   ]
 }
