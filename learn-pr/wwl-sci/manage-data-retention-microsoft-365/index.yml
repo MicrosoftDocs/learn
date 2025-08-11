@@ -36,7 +36,6 @@ subjects:
 units:
 - learn.wwl.manage-data-retention-microsoft-365.recover-content-microsoft-exchange
 - learn.wwl.manage-data-retention-microsoft-365.recover-content-microsoft-365-workloads
-- learn.wwl.manage-data-retention-microsoft-365.knowledge-check
 - learn.wwl.manage-data-retention-microsoft-365.summary-resources
 badge:
   uid: learn.wwl.manage-data-retention-microsoft-365.badge
