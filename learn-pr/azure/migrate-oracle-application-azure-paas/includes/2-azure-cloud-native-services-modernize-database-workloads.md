@@ -67,4 +67,4 @@ Replatforming by using a managed Azure PaaS database solution is generally a goo
 - Can update your application code to use the new database platform.
 - Want to eliminate Oracle licensing.
 
-Given your applications and priorities, this type of migration seems like the best way to meet your goals. Other workloads may not be a good fit for this option. To explore additional methods for migrating Oracle workloads, review [Migrate Oracle workloads to Azure IaaS virtual machines](/training/modules/migrate-oracle-workload-azure-iaas) and [Migrate an Oracle workload to Oracle Database@Azure](/training/modules/migrate-oracle-workload-azure-odaa).
+Given your applications and priorities, this type of migration seems like the best way to meet your goals. Other workloads may not be a good fit for this option.
