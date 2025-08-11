@@ -53408,6 +53408,76 @@
       "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/summary-resources.md",
       "redirect_url": "/training/modules/purview-retention-recovery/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-routing-preference/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-routing-preference/2-what-is-routing-preference.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-routing-preference/3-how-routing-preference-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-routing-preference/4-when-to-use-routing-preference.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-routing-preference/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-routing-preference/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-routing-preference/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-performance-and-costs-using-azure-disk-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-performance-and-costs-using-azure-disk-storage/2-choose-right-azure-disk-storage-option.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-performance-and-costs-using-azure-disk-storage/3-understand-disk-performance-characteristics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-performance-and-costs-using-azure-disk-storage/4-optimize-performance-and-costs-using-performance-scaling-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-performance-and-costs-using-azure-disk-storage/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-performance-and-costs-using-azure-disk-storage/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-performance-and-costs-using-azure-disk-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
     }
   ]
 }
