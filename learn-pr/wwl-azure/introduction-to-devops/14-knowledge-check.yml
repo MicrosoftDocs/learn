@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/29/2024
-  author: wwlpublish
+  ms.date: 08/11/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   module_assessment: true
@@ -47,4 +47,4 @@ quiz:
       explanation: "Correct. Infrastructure as Code (IaC) is a practice that enables the automation and validation of the creation and teardown of environments to help with delivering secure and stable application hosting platforms."
     - content: "Software as a Service (SaaS)."
       isCorrect: false
-      explanation: "Incorrect. Infrastructure as Code (IaC) is a practice that enables the automation and validation of the creation and teardown of environments to help with delivering secure and stable application hosting platforms."
+      explanation: "Incorrect. Infrastructure as Code (IaC) is a practice that enables the automation and validation of the creation and teardown of environments to help with delivering secure and stable application hosting platforms."
