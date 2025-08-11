@@ -1,5 +1,3 @@
-# Implement tracing in generative AI applications
-
 Now that you understand what tracing is and what to trace, it's time to implement tracing in your generative AI applications. In this section, you learn how to set up tracing infrastructure and instrument your code to capture meaningful trace data.
 
 Using the Trail Guide AI Assistant as our example, you explore the practical steps to add tracing to a real application, from initial setup to capturing detailed execution flows.
