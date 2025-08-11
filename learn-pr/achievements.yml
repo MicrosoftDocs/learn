@@ -6365,3 +6365,8 @@ achievements:
   title: 'SC-400: Implement Data Lifecycle and Records Management'
   summary: 'Learn how to plan and implement data lifecycle and records management strategies for an organization. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.'
   iconUrl: /training/achievements/implement-information-governance.svg
+- uid: learn.wwl.manage-data-loss-prevention-polices.badge
+  type: badge
+  title: Manage data loss prevention policies and reports in Microsoft 365
+  summary: Learn how to manage data loss prevention policies and mitigate data loss prevention policy violations.
+  iconUrl: /learn/achievements/manage-data-loss-prevention-polices.svg
