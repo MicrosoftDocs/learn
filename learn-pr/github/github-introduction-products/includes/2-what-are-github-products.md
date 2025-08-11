@@ -149,10 +149,8 @@ Here are the extra features of GitHub Enterprise Cloud:
 - Option to centrally manage policy and billing for multiple GitHub.com organizations with an enterprise account
 - Option to provision and manage the user accounts for your developers, by using Enterprise Managed Users
 
-### Additional Notes
-
-**GitHub Copilot Availability**  
-GitHub Copilot is not included in any plan by default. However, Copilot Business and Copilot Enterprise can be added to eligible plans.
+> [!NOTE]
+> GitHub Copilot is not included in any plan by default. However, Copilot Business and Copilot Enterprise can be added to eligible plans.
 
 **Enterprise Managed Users (EMU)**  
 Enterprise Managed Users allow organizations to control identities using their identity provider, enabling central access management and increased security.

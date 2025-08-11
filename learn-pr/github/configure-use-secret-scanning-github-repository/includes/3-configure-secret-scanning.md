@@ -83,5 +83,5 @@ You can also manage:
 
 To access these options, go to **Settings > Code security and analysis > Secret Protection** on your repository or organization.
 
-> \[!NOTE]
+> [!NOTE]
 > These settings provide more granular control and are helpful when scaling secret scanning across multiple repositories.

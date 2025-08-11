@@ -54,9 +54,9 @@ Dependabot is an automated dependency management tool, responsible for keeping p
 
 Dependabot includes:
 
-* Dependabot alerts for known vulnerabilities
-* Dependabot security updates for vulnerable packages
-* Dependabot version updates to keep dependencies current
+* Alerts for known vulnerabilities
+* Security updates for vulnerable packages
+* Version updates to keep dependencies current
 
 Dependabot works closely with the Dependency Graph to determine which dependencies are in use and cross-reference them against the GitHub Advisory Database to detect vulnerabilities.
 

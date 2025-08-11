@@ -74,8 +74,7 @@ GitHub Enterprise provides advanced features for organizations, and the number o
 GitHub Advanced Security (GHAS) offers **code scanning, secret scanning, and dependency review** for enhanced security.
 
 ### Tracking Consumption
-- To view GitHub Advanced Security (GHAS) usage, go to your Enterprise account and navigate to:
-https://github.com/enterprises/<your-enterprise>/billing → Advanced Security
+- To view GitHub Advanced Security (GHAS) usage, on GitHub.com, select Enterprises from the side navigation, select your enterprise from the list, then navigate to Billing → Advanced Security.
 - An active committer is anyone who has pushed at least one commit to a repository with GitHub Advanced Security (GHAS) enabled within the **last 90 days**, regardless of when the commit was originally authored.
 - GHAS billing is based on the number of **unique active committers** per billing period.
 

@@ -150,7 +150,7 @@ Congratulations, you just created a new file in your repository! You have also c
 
 Before we review branches and commits in the next unit, let’s quickly review gists, wikis, and GitHub pages because they're similar to repositories.
 
-### What are gists?
+### What are Gists?
 Gists are a feature of GitHub that allows users to share code snippets, notes, or other small pieces of information in a lightweight and convenient way. They are essentially mini Git repositories, which means you can fork, clone, and version-control them just like a full repository. Gists are particularly useful for sharing quick solutions, configuration files, or examples without the need to create a full repository.
 
 #### Key Features of Gists:
@@ -158,22 +158,22 @@ Gists are a feature of GitHub that allows users to share code snippets, notes, o
    - **Public Gists**: These are visible to everyone and can be discovered through GitHub's search functionality. They are ideal for sharing code snippets or solutions that you want to make available to the broader community.
    - **Secret Gists**: These are not searchable or publicly listed, but they are not entirely private. Anyone with the URL can access them. They are useful for sharing code with a limited audience, such as collaborators or friends.
 
-2. **Version Control**:
+2. **Version control**:
    - Every change made to a gist is tracked, allowing you to view the history of edits. This makes it easy to revert to a previous version or see how the snippet has evolved over time.
 
-3. **Forking and Cloning**:
+3. **Forking and cloning**:
    - Like repositories, gists can be forked and cloned. This allows others to build upon your work or adapt it to their needs.
 
 4. **Embedding**:
    - Gists can be embedded into websites or blogs, making them a great tool for sharing code examples in tutorials or documentation.
 
-5. **Markdown Support**:
+5. **Markdown support**:
    - Gists support Markdown formatting, which means you can include rich text, headings, links, and even images alongside your code. This is particularly useful for adding context or explanations to your snippets.
 
 6. **Collaboration**:
    - While gists are typically used for individual snippets, they can also be shared and collaborated on by multiple users. Forking and commenting on gists enable lightweight collaboration.
 
-#### Use Cases for Gists:
+#### Use cases for Gists:
 - Sharing quick code examples or solutions.
 - Storing configuration files or scripts for personal use.
 - Creating templates for commonly used code patterns.
@@ -190,7 +190,7 @@ Gists are a feature of GitHub that allows users to share code snippets, notes, o
 
 To learn more about how to create and manage gists, refer to the GitHub documentation in the Resources section of this module or visit the [GitHub Gists documentation](https://docs.github.com/en/github/writing-on-github/creating-gists).
 
-### Forking and cloning gists
+### Forking and cloning Gists
 
 You can fork a gist to create a copy of someone else's gist in your account.
 
@@ -237,7 +237,7 @@ You can use the GitHub wiki to create and manage documentation for your project.
 Learn more about managing wikis in [GitHub Docs - Adding or editing wiki pages](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages).
 
 
-### What are Feature preview?
+### What are Feature Previews?
 
 Feature Previews allow you to try out experimental features on GitHub before they are officially released. These previews give you early access to new functionality and allow you to provide feedback to help shape the final product.
 
