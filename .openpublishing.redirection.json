@@ -53293,6 +53293,11 @@
       "source_path": "learn-pr/azure/cloud-adoption-framework/9-secure.yml",
       "redirect_url": "/training/modules/cloud-adoption-framework/10-secure",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/implement-data-loss-prevention/index.md",
+      "redirect_url": "/training/paths/purview-implement-manage-dlp/",
+      "redirect_document_id": false
     }
   ]
 }
