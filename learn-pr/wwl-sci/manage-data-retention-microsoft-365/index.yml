@@ -34,6 +34,5 @@ subjects:
 - compliance
 - data-management
 units:
-- learn.wwl.manage-data-retention-microsoft-365.summary-resources
 badge:
   uid: learn.wwl.manage-data-retention-microsoft-365.badge
