@@ -2,13 +2,11 @@
 uid: learn.wwl.prepare-azure-ai-development.azure-ai-services
 title: Azure AI services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure AI Services
   description: Azure AI Services provides pre-built AI capabilities that you can use in your applications.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 01/31/2025
+  ms.date: 05/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

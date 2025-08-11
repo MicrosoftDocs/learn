@@ -2,12 +2,10 @@
 uid: learn.choose-best-networking-plugin-for-aks.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: "Learn how to choose an Azure Kubernetes Service (AKS) network plugin"
-  ms.date: 03/18/2024
+  ms.date: 07/18/2025
   author: schaffererin
   ms.author: schaffererin
   ms.topic: unit

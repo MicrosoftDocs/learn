@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-mysql-architecture.exercise-explore-azure-database-for-mysql-flexible-server
 title: 'Exercise: Explore Azure Database for MySQL Flexible server'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Explore Azure Database for MySQL Flexible server'
   description: "Exercise: Explore Azure Database for MySQL Flexible server"
   ms.date: 10/10/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-exercise-explore-azure-database-for-mysql-flexible-server.md)]
+  [!include[](includes/5-exercise-explore-azure-database-for-mysql-flexible-server.md)]

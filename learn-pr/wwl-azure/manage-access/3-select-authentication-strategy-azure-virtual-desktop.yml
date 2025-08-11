@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-access.select-authentication-strategy-azure-virtual-desktop
 title: Selecting an authentication strategy for Azure Virtual Desktop
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Selecting an authentication strategy for Azure Virtual Desktop
   description: "Selecting an authentication strategy for Azure Virtual Desktop"
   ms.date: 08/20/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-select-authentication-strategy-azure-virtual-desktop.md)]
+  [!include[](includes/3-select-authentication-strategy-azure-virtual-desktop.md)]

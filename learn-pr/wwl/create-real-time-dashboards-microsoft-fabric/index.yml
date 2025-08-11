@@ -5,7 +5,7 @@ metadata:
   description: "Real-time Dashboard is a Real-Time Intelligence capability in Microsoft Fabric that you can use to create real-time data visualizations."
   ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jamesh
   ms.topic: module
   ms.collection: N/A
   ms.custom:

@@ -1,8 +1,8 @@
-﻿Organizations have very prescriptive network traffic security requirements. Noncompliance with network traffic security requirements can potentially result in costly penalties – especially in heavily regulated industries such as healthcare or finance. This module demonstrates how to meet these network security requirements by securing outbound network traffic from Azure VMware Solution.
+﻿Organizations have very prescriptive network traffic security requirements. Noncompliance with network traffic security requirements can potentially result in costly penalties, especially in heavily regulated industries such as healthcare or finance. This module demonstrates how to meet these network security requirements by securing outbound network traffic from Azure VMware Solution.
 
 ## Example Scenario
 
-You work for a healthcare industry customer – Contoso. Contoso recently moved their applications from an on-premises VMware environment to Azure VMware Solution.
+You work for a healthcare industry customer, Contoso. Contoso recently moved their applications from an on-premises VMware environment to Azure VMware Solution.
 
 Contoso's network security team wants to implement the same network traffic inspection and control process in Azure VMware Solution as they had in their on-premises environment. Carrying forward these same processes helps Contoso to remain compliant with rigorous healthcare industry regulations while accelerating their digital transformation initiatives further.
 

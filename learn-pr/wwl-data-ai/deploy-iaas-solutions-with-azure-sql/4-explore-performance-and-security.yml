@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Explore performance and security
   description: "Explore performance and security"
-  ms.date: 02/18/2025
+  ms.date: 08/08/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 13
 content: |
   [!include[](includes/4-explore-performance-and-security.md)]

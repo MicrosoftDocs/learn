@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-access.enforce-microsoft-entra-multifactor-authentication
 title: Enforce Microsoft Entra multifactor authentication for Azure Virtual Desktop using Conditional Access
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enforce Microsoft Entra multifactor authentication for Azure Virtual Desktop using Conditional Access
   description: "Enforce Microsoft Entra multifactor authentication for Azure Virtual Desktop using Conditional Access"
   ms.date: 08/20/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/7-enforce-microsoft-entra-multifactor-authentication.md)]
+  [!include[](includes/7-enforce-microsoft-entra-multifactor-authentication.md)]

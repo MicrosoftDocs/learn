@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor and manage data engineering workloads with Apache Spark in Azure Synapse Analytics
   description: "Monitor and manage data engineering workloads with Apache Spark in Azure Synapse Analytics"
   ms.date: 01/05/2022
@@ -45,4 +43,4 @@ units:
 - learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.summary
 badge:
   uid: learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.badge
-
+

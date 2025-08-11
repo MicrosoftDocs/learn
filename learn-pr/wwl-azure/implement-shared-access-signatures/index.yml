@@ -1,9 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-shared-access-signatures
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Implement shared access signatures
+  title: Implement Shared Access Signatures
   description: Implement shared access signatures
   ms.date: 11/13/2024
   author: wwlpublish

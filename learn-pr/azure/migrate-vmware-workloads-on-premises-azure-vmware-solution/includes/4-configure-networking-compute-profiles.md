@@ -2,12 +2,12 @@ After VMware HCX Connector is installed on-premises, link it to VMware HCX Cloud
 
 ## What is a site pair?  
 
-The first step involves creating a *site pair*. A site pair provides network connectivity needed for management, authentication, and orchestration of VMware's HCX migration services across a source and destination VMware vSphere environment. In your scenario, the source is the on-premises VMware vSphere environment and the destination is Azure VMware Solution. The following table provides more details:
+The first step involves creating a *site pair*. A site pair provides network connectivity needed for management, authentication, and orchestration of VMware's HCX migration services across a source and destination VMware vSphere environment. In your scenario, the source is the on-premises VMware vSphere environment, and the destination is Azure VMware Solution. The following table provides more details:
 
 | Component| Notes |
 | :------- | :----- |
-| HCX Connector (source) | - Deployed in the on-premises vSphere environment after Azure VMware Solution deploys. <br>- Creates a unidirectional site pairing to Azure VMware Solution. <br>- Starts migrations to Azure VMware Solution.
-| HCX Cloud (destination) | - Provisioned with Azure VMware Solution when the private cloud deploys in Azure. <br>- Generally the destination for VMware HCX site pairing. <br>- VMware HCX Cloud site is always a software-defined datacenter. <br>- Supports network extension at layer 2 in the networking stack, which is optional.
+| HCX Connector (source) | - Deployed in the on-premises vSphere environment after Azure VMware Solution deploys. <br>- Creates a unidirectional site pairing to Azure VMware Solution. <br>- Starts migrations to Azure VMware Solution. |
+| HCX Cloud (destination) | - Provisioned with Azure VMware Solution when the private cloud deploys in Azure. <br>- Generally the destination for VMware HCX site pairing. <br>- VMware HCX Cloud site is always a software-defined datacenter. <br>- Supports network extension at layer 2 in the networking stack, which is optional. |
 
 ## Add a site pair
 

@@ -2,11 +2,9 @@
 uid: learn.design-a-data-model-with-ads.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: summary
-  description: "Summary for create a data model with Azure Data Studio covering data types, Azure sql database, data modeling, indexes, constraints, and basic table design."
-  ms.date: 03/05/2024
+  description: "Summary for create a data model with Visual Studio Code covering data types, Azure sql database, data modeling, indexes, constraints, and basic table design."
+  ms.date: 07/17/2025
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: unit

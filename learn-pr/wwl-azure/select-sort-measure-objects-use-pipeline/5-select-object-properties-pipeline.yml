@@ -2,8 +2,6 @@
 uid: learn.wwl.select-sort-measure-objects-use-pipeline.select-object-properties-pipeline
 title: Select object properties in the pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Select object properties in the pipeline
   description: "Select object properties in the pipeline"
   ms.date: 05/30/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-select-object-properties-pipeline.md)]
+  [!include[](includes/5-select-object-properties-pipeline.md)]

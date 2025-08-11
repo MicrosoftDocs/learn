@@ -1,4 +1,4 @@
-By using Razor class libraries, you can share and reuse user-interface components between Blazor applications. In this module, you'll focus on building and sharing components for Blazor applications.
+By using Razor class libraries, you can share and reuse user-interface components between Blazor applications. In this module, you focus on building and sharing components for Blazor applications.
 
 ![Diagram showing a Razor class library being used in the Blazor server instance and Blazor WebAssembly.](../media/blazor-class-library-usage.png)
 
@@ -10,17 +10,17 @@ By using Razor class libraries, you can share the features across the applicatio
 
 ![Screenshot of an example modal window component that can be shared across Blazor applications.](../media/modal-window.png)
 
-## What will we be doing?
+## What are you going to do?
 
-In this module, you'll create a Razor class library to accomplish the following goals:
+In this module, you create a Razor class library to accomplish the following goals:
 
-- Present a modal dialog box with default theming
-- Use and customize the modal dialog in a Blazor application
-- Package the modal window dialog for use with other applications
+- Present a modal dialog box with default theming.
+- Use and customize the modal dialog in a Blazor application.
+- Package the modal window dialog for use with other applications.
 
 ## What is the main goal?
 
-By the end of the module, you'll be able to design a modal window component that you can share and customize across other Blazor applications.
+By the end of the module, you're able to design a modal window component that you can share and customize across other Blazor applications.
 
 ## Prerequisites
 

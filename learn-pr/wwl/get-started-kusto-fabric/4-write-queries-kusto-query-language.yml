@@ -6,7 +6,7 @@ metadata:
   description: "Understand how to store and query real-time data in Fabric."
   ms.date: 12/03/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jamesh
   ms.topic: unit
 durationInMinutes: 15
 content: |

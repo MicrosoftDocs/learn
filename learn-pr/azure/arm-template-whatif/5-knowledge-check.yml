@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-template-whatif.5-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Three multiple-choice questions
   ms.date: 03/18/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
   ms.custom: team=nextgen
+  module_assessment: true
 durationInMinutes: 4
 content: |
 quiz:
@@ -55,4 +54,4 @@ quiz:
     - content: NoChange
       isCorrect: false
       explanation: Incorrect. The NoChange change type is returned when a resource defined in the template is already deployed in the resource group.
-
+

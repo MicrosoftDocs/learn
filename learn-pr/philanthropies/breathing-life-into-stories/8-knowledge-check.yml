@@ -1,0 +1,109 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.breathing-life-into-stories.knowledge-check
+
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 3/20/2025
+  author: kprks
+  ms.author: kbarreto
+  ms.topic: unit
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
+### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
+###
+### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
+###
+### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
+### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
+### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
+  
+durationInMinutes: 10
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+### Question content requirements:
+###  - Write 5 questions
+###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
+###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
+###      Example: "What differentiates an action from a control action in a Logic App?"
+###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
+###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
+###      Example: "A financial company is building a system to let brokers trade financial instruments. The system must monitor market conditions, detect changes, and execute trades. It will need to handle a large volume of transactions quickly. The faster it completes trades, the more of an advantage the company will have over its competitors. Which requirement of this system would be difficult for Azure Logic Apps to satisfy?"
+###
+###########################################################################
+
+content: |
+quiz:
+    questions:
+    - content: "What is one of the main advantages of using AI in interactive storytelling?"
+      choices:
+      - content: "It accelerates the creation of characters and dialogue while enhancing creativity"
+        isCorrect: true
+        explanation: "AI tools like Azure OpenAI and DALL·E help streamline content creation and inspire new narrative directions."
+      - content: "It automatically generates 3D environments and level design"
+        isCorrect: false
+        explanation: "AI tools in this module focus on character and dialogue—not full 3D environment design."
+      - content: "It replaces the need for a human writer or narrative structure"
+        isCorrect: false
+        explanation: "AI supports the creative process but doesn't replace human storytelling or structure."
+
+    - content: "How does DALL·E contribute to interactive storytelling?"
+      choices:
+      - content: "By generating character portraits from text descriptions"
+        isCorrect: true
+        explanation: "DALL·E turns detailed prompts into visual images, making it easier to conceptualize and present story characters."
+      - content: "By creating branching story logic for interactive games"
+        isCorrect: false
+        explanation: "Branching logic and dialogue are handled by language models like GPT, not DALL·E."
+      - content: "By animating cutscenes based on story beats"
+        isCorrect: false
+        explanation: "DALL·E generates static visuals—it doesn't handle animation or video production."
+
+    - content: "What technique helps maintain narrative consistency when using both AI and human-generated content?"
+      choices:
+      - content: "Using a style guide to align tone, language, and structure across all dialogue"
+        isCorrect: true
+        explanation: "A style guide ensures that AI-generated content fits seamlessly with manually written scenes."
+      - content: "Randomizing AI outputs to add variety"
+        isCorrect: false
+        explanation: "Randomization can lead to inconsistency and confusion—controlled prompts and review are key."
+      - content: "Turning off AI memory and limiting all responses to one sentence"
+        isCorrect: false
+        explanation: "Limiting responses reduces quality—context and coherence are essential for immersion."
+
+    - content: "Why is human oversight important when refining AI-generated dialogue trees?"
+      choices:
+      - content: "To ensure emotional realism, logical flow, and alignment with character personality"
+        isCorrect: true
+        explanation: "Human review helps adjust pacing, consistency, and tone to meet storytelling goals."
+      - content: "To hand-draw each scene before using AI"
+        isCorrect: false
+        explanation: "Hand-drawing is unrelated to refining AI dialogue—it's about visual creation."
+      - content: "To convert dialogue into binary code for game engines"
+        isCorrect: false
+        explanation: "Game engine integration may require formatting, but binary conversion is not part of narrative refinement."
+
+    - content: "How does AI-powered dialogue generation support player immersion?"
+      choices:
+      - content: "By allowing NPCs to react dynamically to player choices and emotions"
+        isCorrect: true
+        explanation: "AI can adjust responses based on player behavior, creating more natural, engaging interactions."
+      - content: "By limiting player input to multiple-choice questions"
+        isCorrect: false
+        explanation: "Limiting input can reduce immersion—AI allows more flexible, natural language interaction."
+      - content: "By replacing all narrative paths with a single fixed outcome"
+        isCorrect: false
+        explanation: "Branching dialogue is key to immersion—fixed outcomes reduce interactivity."

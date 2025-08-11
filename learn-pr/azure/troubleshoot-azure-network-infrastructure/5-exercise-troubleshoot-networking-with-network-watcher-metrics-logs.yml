@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.troubleshoot-azure-network-infrastructure.5-exercise-troubleshoot-networking-with-network-watcher-metrics-logs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Troubleshoot a network by using Network Watcher metrics and logs
-  description: In this unit, you'll use flow logging to diagnose a connectivity issue.
-  ms.date: 01/16/2024
+  description: In this unit, you use flow logging to diagnose a connectivity issue.
+  ms.date: 06/20/2025
   author: halkazwini
   ms.author: halkazwini
   ms.topic: unit

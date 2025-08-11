@@ -2,8 +2,6 @@
 uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.extract
 title: Extract key phrases
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Extract key phrases
   description: Extract key phrases
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/2-extract.md)]
-
+

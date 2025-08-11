@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-azure-managed-lustre-file-system.introduction
 title: Introduction to Azure Managed Lustre
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure Managed Lustre
   description: Introduction to Azure Managed Lustre.
   ms.date: 07/12/2024
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/introduction.md)]
+  [!include[](includes/introduction.md)]

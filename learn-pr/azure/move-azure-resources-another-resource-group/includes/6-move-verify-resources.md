@@ -16,7 +16,7 @@ For our scenario, we just need to move a pair of storage accounts to a different
 
 1. Move the dependent resources into one resource group with the resource.
 1. Move the resource and dependent resources together from the source subscription to the target subscription.
-1. If necessary, redistribute the dependent resources to different resource groups within the target subscription.
+1. Redistribute dependent resources to different resource groups within the target subscription, if necessary.
 
 ## How to move resources
 
@@ -46,7 +46,7 @@ The following commands show you how to move a resource by using the Azure CLI.
     az resource move --destination-group <destination resource group name> --ids $yourResource
    ```
 
-1. Return all the resources in your resource group to verify your resource moved.
+1. Verify that your resource moved by listing all the resources in your resource group.
 
     ```azurecli
     az resource list --resource-group <destination resource group name> --query [].type --output tsv | uniq
@@ -76,7 +76,7 @@ The following commands show you how to move a resource by using Azure PowerShell
     Move-AzResource -DestinationResourceGroupName <destination resource group name> -ResourceId $yourResource.ResourceId
    ```
 
-1. Return all the resources in your resource group to verify your resource moved.
+1. Verify that your resource moved by listing all the resources in your resource group.
 
    ```powerShell
    Get-AzResource -ResourceGroupName <destination resource group name> | ft

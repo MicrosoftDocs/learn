@@ -32,21 +32,32 @@ The modules in this learning path are part of a progression. You follow the Tail
 
 Run a template that sets up your Azure DevOps organization.
 
-> [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=manage-release-cadence&azure-portal=true)
+1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
-On the Azure DevOps Demo Generator site, follow these steps to run the template:
+1. When prompted to **Enter the template number from the list of templates**, enter **34** for **Manage release cadence in Azure Pipelines with deployment patterns**, and then press **Enter**.
 
-1. Select **Sign In** and accept the usage terms.
-1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *Space Game - web - Deployment patterns*.
+1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) or use device login.
 
-    :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot that shows how to create a project through the Azure DevOps Demo Generator.":::
+    > [!NOTE]
+    > If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). For this module, you can use **Full access**, but in a real-world situation, you should ensure you grant only the necessary scopes.
 
-1. Select **Yes, I want to fork this repository**. Then select **Authorize**.
-1. Select **Create Project**.
+1. Enter your Azure DevOps organization name, then press **Enter**.
 
-    The template takes a few moments to run.
-1. Select **Navigate to project** to go to your project in Azure DevOps.
+1. If prompted, enter your Azure DevOps PAT, and then press **Enter**.
+
+1. Enter a project name such as *Space Game - web - Deployment patterns*, then press **Enter**.
+
+1. Once your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
+
+### Fork the repository
+
+If you haven't already, create a fork of the **mslearn-tailspin-spacegame-web-deploy** repository.
+
+1. On GitHub, go to the [mslearn-tailspin-spacegame-web-deploy](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy) repository.
+
+1. Select **Fork** at the top-right of the screen.
+
+1. Choose your GitHub account as the **Owner**, then select **Create fork**.
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/training/modules/manage-release-cadence/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to follow the cleanup steps even if you don't complete this module.
@@ -55,7 +66,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 ## Move the work item to Doing
 
-In this part, in Azure Boards you assign yourself a work item that relates to this module. You also move the work item to the **Doing** state. In practice, your team would create work items at the start of each *sprint*, or work iteration.
+In this part, in Azure Boards you assign yourself a work item that relates to this module. You also move the work item to the **Doing** state. In practice, your team would create work items at the start of each *sprint* or work iteration.
 
 Assigning work in this way gives you a checklist to work from. It gives your team visibility into what you're working on and how much work is left. It also helps the team enforce limits on work in progress (WIP) so that the team doesn't take on too much work at one time.
 
@@ -87,7 +98,7 @@ At the end of this module, you move the card to the **Done** column after you co
 
 ## Create the Azure App Service environments
 
-Here you create the environments that define the pipeline stages. You create one App Service instance that corresponds to each stage: _Dev_, _Test_, and _Staging_.
+Here you create the environments that define the pipeline stages. You create one App Service instance that corresponds to each stage: *Dev*, *Test*, and *Staging*.
 
 In previous modules, you used the Azure CLI to create your App Service instances. Here you'll do the same.
 
@@ -101,7 +112,7 @@ In previous modules, you used the Azure CLI to create your App Service instances
 
 ### Select an Azure region
 
-Here you specify the default _region_, or geographic location, where your Azure resources will be created.
+Here you specify the default *region*, or geographic location, where your Azure resources will be created.
 
 1. In Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription.
 
@@ -127,7 +138,7 @@ Here you specify the default _region_, or geographic location, where your Azure 
 
 ### Create the App Service instances
 
-Here you create App Service instances for the three stages that you'll deploy to: _Dev_, _Test_, and _Staging_. You'll add a deployment slot to _Staging_ later in this module.
+Here you create App Service instances for the three stages that you'll deploy to: *Dev*, *Test*, and *Staging*. You'll add a deployment slot to *Staging* later in this module.
 
 > [!NOTE]
 > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not routable from the internet but that only your team can access. Later, when you're ready, you could reconfigure your network to make the website available to your users.
@@ -163,37 +174,37 @@ Here you create App Service instances for the three stages that you'll deploy to
     > [!IMPORTANT]
     > If the **B1** SKU isn't available as part of your Azure subscription, then [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/?azure-portal=true), such as **S1** (**Standard**).
 
-    Recall that an App Service plan defines the CPU, memory, and storage resources that are provided for your web app to run. 
+    Recall that an App Service plan defines the CPU, memory, and storage resources that are provided for your web app to run.
 
-    The first command specifies the **B1** plan. This plan runs on the **Basic** tier. The App Service environments use this plan for the _Dev_ and _Test_ stages. The **B1 Basic** plan is intended for apps that have low-traffic requirements, such as in a development or test environment.
+    The first command specifies the **B1** plan. This plan runs on the **Basic** tier. The App Service environments use this plan for the *Dev* and *Test* stages. The **B1 Basic** plan is intended for apps that have low-traffic requirements, such as in a development or test environment.
 
-    The second command specifies the **P1V2** plan, which runs on the **Premium** tier. This plan is used for _Staging_. The **Premium P1V2** plan is for production workloads. It runs on dedicated virtual machine instances.
+    The second command specifies the **P1V2** plan, which runs on the **Premium** tier. This plan is used for *Staging*. The **Premium P1V2** plan is for production workloads. It runs on dedicated virtual machine instances.
 
-    The **Basic** plan tier offers no additional deployment slots. However, the **Premium** plan does. That's why you need the **Premium** plan for your _Staging_ environment.
+    The **Basic** plan tier offers no additional deployment slots. However, the **Premium** plan does. That's why you need the **Premium** plan for your *Staging* environment.
 
-1. Run the following `az webapp create` commands to create the three App Service instances, one for each of the  _Dev_, _Test_, and _Staging_ environments.
+1. Run the following `az webapp create` commands to create the three App Service instances, one for each of the  *Dev*, *Test*, and *Staging* environments.
 
     ```azurecli
     az webapp create \
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-test-asp \
-      --runtime "DOTNET|6.0"
+      --runtime "DOTNET|8.0"
 
     az webapp create \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-test-asp \
-      --runtime "DOTNET|6.0"
+      --runtime "DOTNET|8.0"
 
     az webapp create \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-prod-asp \
-      --runtime "DOTNET|6.0"
+      --runtime "DOTNET|8.0"
     ```
 
-    Notice that here you apply the same App Service plan, **B1 Basic**, to the App Service instances for _Dev_ and _Test_. You apply the App Service plan **Premium P1V2** to the App Service instance for _Staging_.
+    Notice that here you apply the same App Service plan, **B1 Basic**, to the App Service instances for *Dev* and *Test*. You apply the App Service plan **Premium P1V2** to the App Service instance for *Staging*.
 
 1. Run the following `az webapp list` command to list the host name and state of each App Service instance.
 
@@ -225,7 +236,7 @@ Here you create App Service instances for the three stages that you'll deploy to
 
 ## Create pipeline variables in Azure Pipelines
 
-In [Create a multistage pipeline by using Azure Pipelines](/training/modules/create-multi-stage-pipeline?azure-portal=true), you added one variable for each of the App Service instances that correspond to the _Dev_, _Test_, and _Staging_ stages in your pipeline. Here you do the same.
+In [Create a multistage pipeline by using Azure Pipelines](/training/modules/create-multi-stage-pipeline?azure-portal=true), you added one variable for each of the App Service instances that correspond to the *Dev*, *Test*, and *Staging* stages in your pipeline. Here you do the same.
 
 Each stage in your pipeline configuration uses these variables to identify which App Service instance to deploy to.
 
@@ -238,8 +249,8 @@ To add the variables:
 1. Select **+ Variable group**.
 1. Under **Properties**, for the variable group name, enter *Release*.
 1. Under **Variables**, select **+ Add**.
-1. For the name of your variable, enter *WebAppNameDev*. As its value, enter the name of the App Service instance that corresponds to your _Dev_ environment, such as *tailspin-space-game-web-dev-1234*.
-1. Repeat steps 5 and 6 twice more to create variables for your _Test_ and _Staging_ environments, as shown in this table:
+1. For the name of your variable, enter *WebAppNameDev*. As its value, enter the name of the App Service instance that corresponds to your *Dev* environment, such as *tailspin-space-game-web-dev-1234*.
+1. Repeat steps 5 and 6 twice more to create variables for your *Test* and *Staging* environments, as shown in this table:
 
     | Variable name         | Example value                            |
     |-----------------------|------------------------------------------|
@@ -293,7 +304,7 @@ Here you create a service connection that enables Azure Pipelines to access your
 1. In Azure DevOps, go to your **Space Game - web - Deployment patterns** project.
 1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
+1. Select **New service connection**, then choose **Azure Resource Manager**, and then select **Next**.
 1. Near the top of the page, **Service principal (automatic)**. Then select **Next**.
 1. Fill in these fields:
 
@@ -316,7 +327,7 @@ Here you create a service connection that enables Azure Pipelines to access your
 
 Here you fetch the `blue-green` branch from GitHub. Then you *check out*, or switch to, that branch.
 
-This branch contains the _Space Game_ project that you worked with in the previous modules and an Azure Pipelines configuration to start with.
+This branch contains the *Space Game* project that you worked with in the previous modules and an Azure Pipelines configuration to start with.
 
 1. In Visual Studio Code, open the integrated terminal.
 1. Run the following `git` commands to fetch a branch named `blue-green` from the Microsoft repository and to switch to that branch.
@@ -332,11 +343,11 @@ This branch contains the _Space Game_ project that you worked with in the previo
 
     The configuration resembles the ones that you created in the previous modules in this learning path. It builds only the application's **Release** configuration. For brevity, it omits the triggers, manual approvals, and tests that you set up in previous modules.
 
-    For learning purposes, this configuration promotes changes from any branch to _Dev_, _Test_, and _Staging_. A more robust approach might promote changes from only a release branch or `main`. You used this robust approach in the [Create a multistage pipeline by using Azure Pipelines](/training/modules/create-multi-stage-pipeline?azure-portal=true) module.
+    For learning purposes, this configuration promotes changes from any branch to *Dev*, *Test*, and *Staging*. A more robust approach might promote changes from only a release branch or `main`. You used this robust approach in the [Create a multistage pipeline by using Azure Pipelines](/training/modules/create-multi-stage-pipeline?azure-portal=true) module.
 
 ## Run the pipeline and see the deployed website
 
-Here you push the initial configuration to GitHub so that you're up to date with the team. Later, you'll add a slot to the _Staging_ environment so that you can implement a blue-green deployment.
+Here you push the initial configuration to GitHub so that you're up to date with the team. Later, you'll add a slot to the *Staging* environment so that you can implement a blue-green deployment.
 
 1. In Visual Studio Code, open the integrated terminal.
 1. Run the following `git commit` command to add an empty entry to your commit history.

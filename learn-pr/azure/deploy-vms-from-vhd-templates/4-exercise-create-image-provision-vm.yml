@@ -2,8 +2,6 @@
 uid: learn.deploy-vms-from-vhd-templates.4-exercise-create-image-provision-vm
 title: Exercise - Create an image of an Azure VM from the Azure CLI and provision a new VM
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create an image of an Azure VM from the Azure CLI and provision a new VM
   description: Exercise - Create an image of an Azure VM from the Azure CLI and provision a new VM
   ms.date: 09/09/2024
@@ -17,4 +15,4 @@ azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise-create-image-provision-vm.md)]
-
+

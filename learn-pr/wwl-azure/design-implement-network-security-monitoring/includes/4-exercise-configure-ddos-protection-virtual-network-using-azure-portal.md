@@ -6,20 +6,19 @@ In this exercise, you're going to run a mock DDoS attack on the virtual network.
 
 :::image type="content" source="../media/4-exercise-configure-ddos-protection-virtual-network-using-azure-portal.png" alt-text="Diagram of the DDoS lab architecture.":::
 
-## Objectives
+## Job skills
 
-- **Task 1**: Create a DDoS Protection plan.
-- **Task 2**: Enable DDoS Protection on a new virtual network.
-- **Task 3**: Configure DDoS telemetry.
-- **Task 4**: Configure DDoS diagnostic logs.
-- **Task 5**: Configure DDoS alerts.
-- **Task 6**: Monitor a DDoS test attack.
+- Create a DDoS Protection plan.
+- Enable DDoS Protection on a new virtual network.
+- Configure DDoS telemetry.
+- Configure DDoS diagnostic logs.
+- Configure DDoS alerts.
+- Monitor a DDoS test attack.
 
-> [!NOTE]
-> Click on the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning.
+> [!IMPORTANT]
+> Estimated time: 40 minutes.
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
-> [!NOTE]
-> You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 
-[![Screenshot of the simulation page.](../media/simulation-ddos-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Configure%20Azure%20DDoS%20Protection%20on%20a%20virtual%20network)
-
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M06-Unit%204%20Configure%20DDoS%20Protection%20on%20a%20virtual%20network%20using%20the%20Azure%20portal.html)

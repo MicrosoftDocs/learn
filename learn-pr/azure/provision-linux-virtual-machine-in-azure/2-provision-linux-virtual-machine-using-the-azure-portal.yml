@@ -2,8 +2,6 @@
 uid: learn.provision-linux-virtual-machine-in-azure.provision-linux-virtual-machine-using-the-azure-portal
 title: Provision a Linux virtual machine by using the Azure portal
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Provision a Linux virtual machine by using the Azure portal
   description: Learn how to provision a Linux virtual machine by using the Azure portal.
   ms.date: 01/17/2025
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 13
 content: |
   [!include[](includes/2-provision-linux-virtual-machine-using-the-azure-portal.md)]
-
+

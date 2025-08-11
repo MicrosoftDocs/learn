@@ -11,7 +11,7 @@ You need to store the data somewhere. In the previous flowchart, the data store 
 ## Create an Azure Cosmos DB account
 
 > [!NOTE]
-> This exercise is not intended to be a tutorial on Azure Cosmos DB. If you're interested in learning more, see the complete learning path about Azure Cosmos DB at the end of this module.
+> This exercise isn't intended to be a tutorial on Azure Cosmos DB. If you're interested in learning more, see the complete learning path about Azure Cosmos DB at the end of this module.
 
 ### Create a database account
 
@@ -28,6 +28,7 @@ A database account is a container for managing one or more databases. Before we 
     | Setting | Value | Description |
     |---|---|---|
     | **Project Details** |
+    | Workload Type | Development/Testing | Ensures optimal performance and cost efficiency.
     | Subscription | Concierge Subscription | The Azure subscription that works with the resources in the sandbox. |
     | Resource Group | From the drop-down list, select <rgn>[sandbox resource group name]</rgn> | The resource group for your sandbox. |
     | **Instance Details** |
@@ -44,7 +45,7 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Select **Go to resource** to go to the database account in the portal. The **Quick start** pane for your Azure Cosmos DB account appears.
 
-Next, we add a container and then add a database to the Azure Cosmos DB account.
+Next, we add a container, and then add a database to the Azure Cosmos DB account.
 
 ### Add a container
 
@@ -61,7 +62,7 @@ Let's use the Data Explorer tool to create a database and container.
     | Setting | Value | Description |
     |---|---|---|
     | Database id | Select **Create new**, and enter *func-io-learn-db* for the Database id | Database names can be 1 to 255 characters long, and can't contain `/, \\, #, ?`, or a trailing space.<br>You can enter whatever you want, but we're using *func-io-learn-db* in this module. |
-    | Database Max RU/s | 4000 |Accept the default throughput of 4000 request units per second (RU/s). To reduce latency, you can scale up the performance later. |
+    | Database Max RU/s | Manual |Adjust to Manual and accept the default of 400 request units per second (RU/s). To reduce latency, you can scale up the performance later. |
     | Container id | *Bookmarks* | Container IDs have the same character requirements as database names. We're using *Bookmarks* in this module.|
     | Partition key | /id  | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. We use the *Partition key* setting as a convenience here because we're not concerned with database performance in this module. To learn more about Azure Cosmos DB partition key strategies, explore the Microsoft Learn Azure Cosmos DB modules. |
 
@@ -71,11 +72,11 @@ Let's use the Data Explorer tool to create a database and container.
 
     When complete, the Data Explorer displays **func-io-learn-db** in **DATA** under **NOSQL API**.
 
-1. Select **func-io-learn-db** to expand it. Notice that your **func-io-learn-db** database contains several child members, including Scale and Bookmarks. 
+1. Select **func-io-learn-db** to expand it. Notice that your **func-io-learn-db** database contains child members, including Bookmarks.
 
 1. Expand the **Bookmarks** container. Notice that several child members already prepopulate it.
 
-In the next task, you add some data, also known as items, to your Bookmarks container.
+In the next task, you add some data (also known as items) to your Bookmarks container.
 
 ### Add test data
 
@@ -144,7 +145,7 @@ Your **Bookmarks** container has five items. In this scenario, if a request arri
 
 ## Create your function
 
-1. Go to the function app that you created in the preceding unit. In the resource menu, select **Home**, and in the **Recent resources** section, you should see your function app (**Type** equals **Function App**). Select your function app. The **Function App** pane appears.
+1. Go to the function app that you created in the preceding unit. In the resource menu, select **Home**. In the **Recent resources** section, you should see your function app (**Type** equals **Function App**). Select your function app, and the **Function App** pane appears.
 
 1. In the **Functions** tab on the **Overview** page, you should have one function, **HttpTrigger1**.
 
@@ -152,7 +153,7 @@ Your **Bookmarks** container has five items. In this scenario, if a request arri
 
 1. In the **Select a template** section, select **HTTP trigger**, then select **Next**.
 
-1. Accept all default settings and select **Create** to create your function.
+1. Accept all default settings, and select **Create** to create your function.
 
    The Overview pane for the **HttpTrigger2** function appears.
 
@@ -162,7 +163,7 @@ You can verify our progress so far by testing the new function.
 
 1. In the command bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
-1. Select **default (function key)** from the drop-down list, then select the *Copy to clipboard* icon, and select **OK**.
+1. On the **default (function key)**, select the *Copy to clipboard* icon, and select **Close**.
 
 1. Paste the function URL you copied into the address bar of a new browser tab. Append the query string value `&name=<your name>` to the end of the URL, replacing `<your  name>` with your name, and then press <kbd>Enter</kbd>. The Azure function should return a personalized response in the browser.
 
@@ -197,9 +198,9 @@ To read data from the database, you need to define an input binding. As you see 
     | **Collection Name** | `Bookmarks` | The collection we read the data from. This setting was defined. |
     | **Document ID** | `id` | Add the Document ID that we defined when we created the _Bookmarks_ Azure Cosmos DB container. |
     | **Partition key** | `/id` | Add the partition key that you defined when you created the _Bookmarks_ Azure Cosmos DB collection. The key entered here (specified in input binding format `<key>`) must match the one in the collection. |
-    | **SQL Query (optional)** | _Leave blank_ | You're only retrieving one document at a time based on the ID. So, filtering with the Document ID setting is a better than using a SQL Query in this instance. You could craft a SQL Query to return one entry (`SELECT * from b where b.ID = id`). That query would indeed return a document, but it would return it in a document collection. Your code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
+    | **SQL Query (optional)** | _Leave blank_ | You're only retrieving one document at a time based on the ID. So, filtering with the Document ID setting is better than using a SQL Query in this instance. You could craft a SQL Query to return one entry (`SELECT * from b where b.ID = id`). That query would indeed return a document, but it would return it in a document collection. Your code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
 
-    To clarify why we're using these settings, we want to look up a bookmark with a specific ID, so we tied the **Document ID** that our function receives in the query string to the input binding. This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding returns either 0 (not found) or 1 (found) documents.
+    To clarify why we're using these settings, we want to look up a bookmark with a specific ID, so we tied the **Document ID** that our function receives in the query string to the input binding. This syntax is known as a *binding expression*. An HTTP request triggers the function that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding returns either 0 (not found) or 1 (found) documents.
 
 1. To save this input binding configuration, select **Add**.
 
@@ -388,7 +389,7 @@ Let's examine what this code is doing.
 
 1. In the command bar, select **Get function URL**. The **Get function URL** dialog box appears.
 
-1. From the **Key** drop-down list, select **default** under **Function key**, and then select the *Copy to clipboard* icon at the end of the URL.
+1. On the **default (function key)**, select the *Copy to clipboard* icon.
 
 1. Paste the function key you copied into the address bar of a new browser tab, and then add the query string value `&id=docs` to the end of the URL. The resulting URL should resemble the following example:
 
@@ -402,8 +403,8 @@ Let's examine what this code is doing.
     }
     ```
 
-1. Replace `&id=docs` with `&id=missing`, press <kbd>Enter</kbd>, and observe the response. We defined five bookmarks, and created a meaningful error response if the requested bookmark doesn't exist.
+1. Replace `&id=docs` with `&id=missing`, press <kbd>Enter</kbd>, and observe the response. We defined five bookmarks and created a meaningful error response if the requested bookmark doesn't exist.
 
-In this unit, you created your first input binding manually to read from an Azure Cosmos DB database. The amount of code you wrote to search our database and read data was minimal, thanks to bindings. You did most of your work configuring the binding declaratively, and the platform took care of the rest.
+In this unit, you created your first input binding manually to read from an Azure Cosmos DB database. The amount of code you wrote to search our database and read data was minimal because of bindings. You did most of your work configuring the binding declaratively, and the platform took care of the rest.
 
 In the next unit, you'll add more data to our bookmarks collection through an Azure Cosmos DB output binding.

@@ -1,14 +1,12 @@
 ### YamlMime:Module
 uid: learn.protect-virtual-machines-with-azure-backup
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Protect your virtual machines by using Azure Backup
   description: Use Azure Backup to help protect on-premises servers, virtual machines, SQL Server, Azure file shares, and other workloads.
-  manager: mkluck
+  manager: akashdubey
   ms.date: 09/05/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: AbhishekMallick-MS
+  ms.author: v-mallicka
   ms.topic: module
   ms.service: azure-backup
 title: Protect your virtual machines by using Azure Backup

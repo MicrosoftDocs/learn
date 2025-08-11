@@ -2,11 +2,9 @@
 uid: learn.caching-and-performance-azure-storage-and-disks.5-manage-cache-settings-with-powershell
 title: Manage cache settings with PowerShell
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage cache settings with PowerShell
   description: Manage cache settings with PowerShell
-  ms.date: 12/28/2023
+  ms.date: 07/17/2025
   author: roygara
   ms.author: rogarana
   ms.topic: unit

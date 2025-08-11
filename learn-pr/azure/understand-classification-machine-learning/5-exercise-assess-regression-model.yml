@@ -2,11 +2,9 @@
 uid: learn.machinelearning.understand-classification-machine-learning.exercise-assess-regression-model
 title: Exercise - Assessing a logistic regression model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Assessing a logistic regression model
   description: Exercise unit learning to assess a logistic regression model
-  ms.date: 07/20/2024
+  ms.date: 05/12/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit

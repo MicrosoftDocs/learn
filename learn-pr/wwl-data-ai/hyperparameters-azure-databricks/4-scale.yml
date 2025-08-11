@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.hyperparameters-azure-databricks.scale-hyperopt
+title: Scale hyperparameter optimization
+metadata:
+  title: Scale hyperparameter optimization
+  description: Learn how to scale hyperparameter optimization
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 8/4/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-scale.md)]
+

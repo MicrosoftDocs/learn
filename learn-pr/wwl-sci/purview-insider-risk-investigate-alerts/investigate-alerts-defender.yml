@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-insider-risk-investigate-alerts.investigate-alerts-defender
+title: Investigate insider risk alerts in Microsoft Defender XDR
+metadata:
+  title: Investigate insider risk alerts in Microsoft Defender XDR
+  description: "Investigate insider risk alerts in Microsoft Defender XDR."
+  ms.date: 04/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/investigate-alerts-defender.md)]

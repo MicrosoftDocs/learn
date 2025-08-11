@@ -2,8 +2,6 @@
 uid: learn.azure.manage-changes-bicep-code-git.exercise-commit-files-view-history
 title: Exercise - Commit files to your repository and view their history
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Commit files to your repository and view their history
   description: Learn how Git tracks files, and how to stage and commit files and view their history.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/5-exercise-commit-files-view-history.md)]
-
+

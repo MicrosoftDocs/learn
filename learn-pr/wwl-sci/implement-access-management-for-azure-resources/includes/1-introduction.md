@@ -6,11 +6,11 @@ An application might also need to have permission to access data or other Azure 
 
 By the end of this module will be able to:
 
- -  Assign Azure roles and custom roles to access Azure resources.
- -  Create and manage application access with managed identities.
- -  Configure and manage access into Azure Key Vault.
- -  Retrieve object from a key vault securely.
- -  Explore the capabilities of Microsoft Entra Permissions Management.
+- Assign Azure roles and custom roles to access Azure resources.
+- Create and manage application access with managed identities.
+- Configure and manage access into Azure Key Vault.
+- Retrieve object from a key vault securely.
+- Explore the capabilities of Microsoft Entra Permissions Management.
 
 ### Prerequisites
 

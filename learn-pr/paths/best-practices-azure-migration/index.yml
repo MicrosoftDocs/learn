@@ -44,7 +44,6 @@ subjects:
 - migration
 modules:
 - learn.azure.accelerate-migration-journey
-- learn.azure.cloud-adoption-framework-plan
 - learn.cloud-adoption-framework-migrate
 trophy:
   uid: learn.best-practices-azure-migration.trophy

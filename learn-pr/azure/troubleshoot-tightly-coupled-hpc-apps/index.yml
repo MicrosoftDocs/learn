@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.troubleshoot-tightly-coupled-hpc-apps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot tightly coupled HPC applications on HBv2, HC, and HB series virtual machines
   description: Troubleshoot tightly coupled HPC applications that are having runtime failures or are underperforming.
   ms.date: 05/29/2024
@@ -39,4 +37,4 @@ units:
 - learn.azure.troubleshoot-tightly-coupled-hpc-apps.6-summary
 badge:
   uid: learn.azure.troubleshoot-tightly-coupled-hpc-apps.badge
-
+

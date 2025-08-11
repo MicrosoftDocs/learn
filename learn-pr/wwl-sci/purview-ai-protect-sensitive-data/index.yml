@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ai-protect-sensitive-data
+metadata:
+  title: Protect sensitive data from AI-related risks
+  description: Protect sensitive data from AI-related risks
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Protect sensitive data from AI-related risks
+summary: |
+  Microsoft Purview helps organizations protect sensitive data in environments that use AI tools. Learn how to reduce data security risks by applying sensitivity labels, using data loss prevention controls, and deploying recommended protections through DSPM for AI.
+abstract: |
+  In this module you learn how to:
+  - Use sensitivity labels to control how AI tools access and handle content
+  - Configure endpoint DLP to restrict risky actions in browsers
+  - Apply DSPM for AI recommendations to protect sensitive data across Microsoft Purview solutions
+prerequisites: |
+  None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- auditor
+products:
+- m365
+- microsoft-purview
+subjects:
+- data-management
+- threat-protection
+units:
+- learn.wwl.purview-ai-protect-sensitive-data.introduction
+- learn.wwl.purview-ai-protect-sensitive-data.dspm-ai-recommendations
+- learn.wwl.purview-ai-protect-sensitive-data.sensitivity-label-copilot
+- learn.wwl.purview-ai-protect-sensitive-data.endpoint-dlp-block-paste-ai
+- learn.wwl.purview-ai-protect-sensitive-data.knowledge-check
+- learn.wwl.purview-ai-protect-sensitive-data.summary
+badge:
+  uid: learn.wwl.purview-ai-protect-sensitive-data.badge

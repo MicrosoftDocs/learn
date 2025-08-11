@@ -2,8 +2,6 @@
 uid: learn.azure.set-up-mixed-reality-azure-digital-twins-unity.use-cases
 title: Use case introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use case introduction
   description: Learn about the modified assets and simulated operational data you'll be working with based on a real wind farm, the Lac-Alfred Wind Project in Quebec, Canada.
   ms.date: 01/24/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-use-cases.md)]
+  [!include[](includes/6-use-cases.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.work-compute-resources-azure-machine-learning.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: In this module, you've learned how to choose the appropriate compute target, and how to create and use a compute instance or cluster.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
-
+

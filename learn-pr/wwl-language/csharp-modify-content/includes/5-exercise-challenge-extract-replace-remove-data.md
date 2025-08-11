@@ -47,7 +47,7 @@ If you're unfamiliar with HTML code, review the ["Quick HTML primer"](#quick-htm
 
 1. Replace the HTML character `™` (`&trade;`) with `®` (`&reg;`) in the `output` variable.
 
-1. Run your solution and verify the output put matches the expected output.
+1. Run your solution and verify the output matches the expected output.
 
     ```Output
     Quantity: 5000

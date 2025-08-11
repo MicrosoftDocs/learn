@@ -3,12 +3,10 @@ uid: learn.deploy-azure-database-for-mysql.introduction
 title: Introduction
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Provide an introduction of Azure Database for MySQL.
-  author: shreyaaithal
-  ms.author: shaithal
+  author: deepthiprasad
+  ms.author: deprasa
   ms.reviewer: maghan
   ms.topic: unit
   ms.custom: event-tier1-build-2022

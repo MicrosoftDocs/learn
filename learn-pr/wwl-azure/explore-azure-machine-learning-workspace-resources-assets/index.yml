@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Machine Learning workspace resources and assets
   description: As a data scientist, you can use Azure Machine Learning to train and manage your machine learning models. Learn what Azure Machine Learning is, and get familiar with all its resources and assets.
   author: wwlpublish
@@ -41,4 +39,4 @@ units:
 - learn.wwl.explore-azure-machine-learning-workspace-resources-assets.summary
 badge:
   uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets.badge
-
+

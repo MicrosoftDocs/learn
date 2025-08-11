@@ -2,8 +2,6 @@
 uid: learn.wwl.create-release-pipeline.explore-release-pipelines
 title: Explore release pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore release pipelines
   description: "Explore release pipelines"
   ms.date: 05/28/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-explore-release-pipelines.md)]
+  [!include[](includes/3-explore-release-pipelines.md)]

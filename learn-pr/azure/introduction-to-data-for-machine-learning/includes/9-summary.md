@@ -2,7 +2,8 @@ We covered much ground. Let's review some of the key messages.
 
 ## What are data categories?
 
-Data fall into several conceptual categories. The most common are:
+Data falls into several conceptual categories. The most common are:
+
 - Continuous data (numbers).
 - Categorical data that has no order.
 - Ordinal data, which can be treated as numbers or ordered categories.

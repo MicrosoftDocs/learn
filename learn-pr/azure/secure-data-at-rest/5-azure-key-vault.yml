@@ -2,8 +2,6 @@
 uid: learn.secure-data-at-rest.5-azure-key-vault
 title: Keep your keys and secrets safe by using Azure Key Vault
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Keep your keys and secrets safe by using Azure Key Vault
   description: Keep your keys and secrets safe by using Azure Key Vault
   ms.date: 05/02/2023
@@ -38,4 +36,4 @@ quiz:
       - content: Use the "az keyvault secret set" command.
         isCorrect: true
         explanation: This command lets you add a secret or update one. 
-
+

@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-templates-command-line-github-actions.5-exercise-linked-templates.md
 title: Exercise - Deploy linked and nested ARM templates
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy linked and nested ARM templates
   description: Deploying linked and nested ARM templates
   ms.date: 03/13/2024
@@ -20,4 +18,4 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-linked-templates.md)]
-
+

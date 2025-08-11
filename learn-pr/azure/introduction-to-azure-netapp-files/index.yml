@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.introduction-to-azure-netapp-files
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Introduction to Azure NetApp Files         
   description: Evaluate whether Microsoft Azure NetApp Files is appropriate for migrating and running your organization's file-based workloads.       
@@ -46,4 +44,4 @@ units:
 - learn.azure.introduction-to-azure-netapp-files.summary
 badge:
   uid: learn.azure.introduction-to-azure-netapp-files.badge
-
+

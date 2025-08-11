@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.understand-purpose-evolution-datacenters.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary of understanding the purpose and evolution of datacenters.
+  ms.date: 05/06/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+ [!include[](includes/9-summary.md)]

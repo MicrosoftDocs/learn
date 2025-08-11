@@ -2,8 +2,6 @@
 uid: learn.choose-messaging-model.2-choose-whether-to-use-message-queues-or-events
 title: Choose whether to use messages or events
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Choose whether to use messages or events
   description: Choose whether to use messages or events
   ms.date: 01/24/2025
@@ -34,4 +32,4 @@ quiz:
     - content: "Event"
       isCorrect: false
       explanation: "The delete-account notification is a message. The key factor is that the web service has an expectation about how the data layer processes the message: the data layer must remove the user's data from the database for the system to function correctly. The message itself contains only simple information so the type of the communication could be considered an event; however, the fact that the web service requires the data layer to handle the notification in a specific way is sufficient to make it a message."
-
+

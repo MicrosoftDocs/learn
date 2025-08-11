@@ -4,7 +4,7 @@ The IT compliance team at our network of healthcare facilities is now assessing 
 
 ## Microsoft Purview auditing solutions
 
-Microsoft Purview auditing solutions enable organizations to handle security events, forensic investigations, internal investigations, and compliance obligations efficiently. They integrate many Microsoft 365 services and solutions and record thousands of user and admin activities in your organization's unified audit log. Security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization can search these audit records to find out what took happened across your Microsoft 365 organization.
+Microsoft Purview auditing solutions enable organizations to handle security events, forensic investigations, internal investigations, and compliance obligations efficiently. They integrate many Microsoft 365 services and solutions and record thousands of user and admin activities in your organization's unified audit log. Security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization can search these audit records to find out what happened across your Microsoft 365 organization.
 
 Here you learn how to:
 

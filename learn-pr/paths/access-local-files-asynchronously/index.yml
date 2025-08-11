@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.wwl.access-local-files-asynchronously
+metadata:
+  title: Access local files asynchronously
+  description: Learn how to&nbsp;manage local files using the System.IO namespace and how to asynchronously back up and restore application data using the System.Text.Json namespace.&nbsp;
+  ms.date: 04/08/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: learning-path
+title: Access local files asynchronously
+prerequisites: |
+  -   An installation of Visual Studio Code with the C# Dev Kit extension installed.
+  -   The ability to develop object-oriented programs in C# that implement classes, interfaces, class inheritance, and polymorphic behavior.
+  -   The ability to manage&nbsp;collections, structs, records, generics, dates and times,&nbsp;and anonymous types.
+summary: |
+  Learn how to&nbsp;manage local files using the System.IO namespace and how to asynchronously back up and restore application data using the System.Text.Json namespace.&nbsp;
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+- vs-code
+subjects:
+- app-development
+- custom-app-development
+modules:
+- learn.wwl.get-started-file-input-output
+- learn.wwl.store-retrieve-json-files
+- learn.wwl.implement-asynchronous-tasks
+trophy:
+  uid: learn.wwl.access-local-files-asynchronously.trophy

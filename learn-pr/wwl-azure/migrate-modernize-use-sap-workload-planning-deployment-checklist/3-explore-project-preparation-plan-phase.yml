@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-use-sap-workload-planning-deployment-checklist.explore-project-preparation-plan-phase
 title: Explore the project preparation and planning phase
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore the project preparation and planning phase
   description: "Explore the project preparation and planning phase"
   ms.date: 01/08/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 12
 content: |
-  [!include[](includes/3-explore-project-preparation-plan-phase.md)]
+  [!include[](includes/3-explore-project-preparation-plan-phase.md)]

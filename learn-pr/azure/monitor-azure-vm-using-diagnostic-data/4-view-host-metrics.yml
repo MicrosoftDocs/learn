@@ -2,8 +2,6 @@
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.view-host-metrics
 title: Use Metrics Explorer to view detailed host metrics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Metrics Explorer to view detailed host metrics
   description: Use Azure Monitor Metrics Explorer to create and configure a custom VM host metrics graph.
   ms.date: 09/26/2024
@@ -38,4 +36,4 @@ quiz:
     - content: Aggregation
       isCorrect: false
       explanation: The fields for a Metrics Explorer graph include **Scope**, **Metrics Namespace**, **Metric**, and **Aggregation**.
-
+

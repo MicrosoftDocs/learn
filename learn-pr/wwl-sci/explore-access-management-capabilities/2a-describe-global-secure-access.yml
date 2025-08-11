@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-global-secure-access
 title: Describe Global Secure Access in Microsoft Entra
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Global Secure Access in Microsoft Entra
   description: "Describe Global Secure Access in Microsoft Entra"
   ms.date: 08/02/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 9
 content: |
-  [!include[](includes/2a-describe-global-secure-access.md)]
+  [!include[](includes/2a-describe-global-secure-access.md)]

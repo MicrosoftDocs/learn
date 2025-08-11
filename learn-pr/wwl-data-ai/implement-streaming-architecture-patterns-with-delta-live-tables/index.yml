@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement streaming architecture patterns with Delta Live Tables
   description: "Learn about structured streaming with Delta Live Tables"
   ms.date: 7/25/2024
@@ -44,4 +42,4 @@ units:
 - learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.summary
 badge:
   uid: learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.badge
-
+

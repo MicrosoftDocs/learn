@@ -2,8 +2,6 @@
 uid: learn.azure.test-bicep-code-using-github-actions.exercise-add-test-job-workflow
 title: Exercise - Add a test job to your workflow
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Add a test job to your workflow
   description: Add a post-deployment test job to your Bicep deployment workflow.
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/9-exercise-add-test-job-workflow.md)]
-
+

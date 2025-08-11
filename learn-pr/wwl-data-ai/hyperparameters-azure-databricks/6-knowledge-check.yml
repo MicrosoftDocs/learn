@@ -1,52 +1,50 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.hyperparameters-azure-databricks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
-  author: wwlpublish
-  ms.author: madiepev
-  ms.date: 08/26/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 8/4/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: ""
   questions:
-  - content: "Which function should you use to initiate Hyperopt trials?"
+  - content: "Which method should you use to initiate Optuna optimization?"
     choices:
-    - content: "hyperopt.tpe.suggest"
+    - content: "optuna.trial.suggest"
       isCorrect: false
-      explanation: "Incorrect. The hyperopt.tpe.suggest constant is used to specify a TPE (Tree of Parzen Estimator) search algorithm."
-    - content: "hyperopt.hp.choice"
+      explanation: "Incorrect. The suggest methods are used to define hyperparameter search spaces within the objective function."
+    - content: "optuna.create_trial"
       isCorrect: false
-      explanation: "Incorrect. The hyperopt.htp.choice function defines an expression for a hyperparameter range."
-    - content: "hyperopt.fmin"
+      explanation: "Incorrect. This is not a valid Optuna method for starting optimization."
+    - content: "study.optimize"
       isCorrect: true
-      explanation: "Correct. The fmin function controls the Hyperopt process to minimize an objective function."
-  - content: "Which of these objects defines the set of hyperparameter values from which Hyperopt can sample when running trials?"
+      explanation: "Correct. The optimize method controls the Optuna optimization process to find the best hyperparameters."
+  - content: "Which object in Optuna is used to define hyperparameter values for sampling during trials?"
     choices:
     - content: "An *objective* function"
       isCorrect: false
-      explanation: "Incorrect. An objective function doesn't define a set of possible hyperparameter values."
-    - content: "A search space"
+      explanation: "Incorrect. An objective function evaluates the model performance but doesn't define hyperparameter ranges."
+    - content: "A trial object"
       isCorrect: true
-      explanation: "Correct. A search space defines a set of possible hyperparameter values."
-    - content: "A search algorithm"
+      explanation: "Correct. The Trial object provides suggest methods to define hyperparameter search spaces."
+    - content: "A sampler object"
       isCorrect: false
-      explanation: "Incorrect. A search algorithm doesn't define a set of possible hyperparameter values."
-  - content: "Which class should you use to track details of each hyperparameter tuning run when using Spark MLLib?"
+      explanation: "Incorrect. A Sampler implements sampling strategies but doesn't define the hyperparameter space."
+  - content: "Which class should you use to track details of hyperparameter tuning when using Spark integration?"
     choices:
-    - content: "Trials"
+    - content: "SparkOptimizer"
       isCorrect: true
-      explanation: "Correct. The Trials class tracks details from each trial run."
-    - content: "SparkTrials"
+      explanation: "Correct. The SparkOptimizer class handles distributed optimization in Spark environments."
+    - content: "Study"
       isCorrect: false
-      explanation: "Incorrect. SparkTrials is used to parallelize runs when using a nondistributed framework."
+      explanation: "Incorrect. While Study manages optimization, SparkOptimizer is specifically for Spark integration."
     - content: "RDD"
       isCorrect: false
       explanation: "Incorrect. An RDD (Resilient Distributed Datasets) is a core Spark structure for data."
-

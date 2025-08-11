@@ -2,13 +2,11 @@
 uid: learn.startups.name-brand.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Gain an overview of naming and branding for startups. See why a strong name and brand are important.
-  ms.date: 06/05/2024
-  author: ryanmesches
-  ms.author: vahughes
+  ms.date: 06/13/2025
+  author: vaquresh
+  ms.author: vaquresh
   ms.topic: unit
   ms.collection: learn-startups
 durationInMinutes: 2

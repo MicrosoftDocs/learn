@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage Azure Kubernetes Service on Azure Stack HCI
   description: "Manage Azure Kubernetes Service on Azure Stack HCI"
   ms.date: 06/09/2021
@@ -56,4 +54,4 @@ units:
 - learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.summary
 badge:
   uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.badge
-
+

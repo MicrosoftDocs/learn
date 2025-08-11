@@ -2,8 +2,6 @@
 uid: learn.wwl.plan-implement-business-continuity-disaster-recovery.monitor-azure-cost-management
 title: Monitor costs by using Azure Cost Management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor costs by using Azure Cost Management
   description: "Monitor costs by using Azure Cost Management"
   ms.date: 08/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-monitor-azure-cost-management.md)]
+  [!include[](includes/4-monitor-azure-cost-management.md)]

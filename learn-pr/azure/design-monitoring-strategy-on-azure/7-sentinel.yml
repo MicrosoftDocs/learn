@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.6-sentinel
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage enterprise security by using Microsoft Sentinel
   description: Learn how to monitor, analyze, and manage enterprise security by using Microsoft Sentinel.
   ms.date: 01/22/2025
@@ -38,4 +36,4 @@ quiz:
     - content: Use the timeline.
       isCorrect: false
       explanation: You can use the timeline feature to understand the path that a threat takes over time, but the timeline doesn't show affected users.
-
+

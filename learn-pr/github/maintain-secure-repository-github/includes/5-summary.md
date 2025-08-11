@@ -18,5 +18,5 @@ Here are some links to more information on the topics we discussed in this modul
 - [Dependabot official site](https://github.com/dependabot)
 - [Security apps on GitHub Marketplace](https://github.com/marketplace/category/security?azure-portal=true)
 - [Adding a security policy to your repository](https://docs.github.com/code-security/getting-started/adding-a-security-policy-to-your-repository)
-- [Ignoring files](https://docs.github.com/get-started/getting-started-with-git/ignoring-files)
+- [Ignoring files](https://docs.github.com/get-started/git-basics/ignoring-files)
 - [Removing sensitive data from a repository](https://docs.github.com/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)

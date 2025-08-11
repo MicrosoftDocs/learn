@@ -2,8 +2,6 @@
 uid: learn.wwl.use-sap-workload-planning-deployment-checklist.explore-non-production-phase
 title: Explore the nonproduction phase
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore the nonproduction phase
   description: "Explore the nonproduction phase of deploying SAP workloads to Azure."
   ms.date: 08/01/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-explore-non-production-phase.md)]
+  [!include[](includes/5-explore-non-production-phase.md)]

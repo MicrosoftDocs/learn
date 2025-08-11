@@ -2,8 +2,6 @@
 uid: learn.azure-well-architected-security.plan-your-security-readiness
 title: Plan your security readiness
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan your security readiness
   description: Learn about the importance of planning your security readiness to have a robust security posture for your workload.
   ms.date: 12/18/2023
@@ -52,4 +50,3 @@ quiz:
     - content: 'False.'
       isCorrect: false
       explanation: 'Incorrect. Secure development practices dictate the standards that all code development should follow at all times.'
-

@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint.manage-alert-suppression
 title: Manage alert suppression
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage alert suppression
   description: "Manage alert suppression"
   ms.date: 1/7/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-manage-alert-suppression.md)]
+  [!include[](includes/4-manage-alert-suppression.md)]

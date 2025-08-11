@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.iot.create-your-first-app-with-azure-maps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create your first route finding app with Azure Maps
   description: Learn about writing code to interact with Azure Maps. Develop and test a fun app using JavaScript and Visual Studio Code to find the best route for a truck, car, or bicycle. The route is from the west coast of the USA, to the east coast. You can see how routes change based on vehicle. And, for trucks, how routes vary if the contents are hazardous. You get the chance to add in your own locations.
   ms.date: 08/13/2024
@@ -43,4 +41,4 @@ units:
 - learn.iot.create-your-first-app-with-azure-maps.summary
 badge:
   uid: learn.iot.create-your-first-app-with-azure-maps.badge
-
+

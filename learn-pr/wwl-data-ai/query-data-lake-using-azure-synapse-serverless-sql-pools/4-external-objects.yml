@@ -2,8 +2,6 @@
 uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.external-objects
 title: Create external database objects
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create external database objects
   description: "Create external database objects"
   ms.date: 09/07/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-external-objects.md)]
+  [!include[](includes/4-external-objects.md)]

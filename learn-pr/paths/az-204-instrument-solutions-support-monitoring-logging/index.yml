@@ -1,17 +1,17 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-204-instrument-solutions-to-support-monitoring-logging
 metadata:
-  title: 'AZ-204: Troubleshoot solutions by using Application Insights'
+  title: 'Troubleshoot solutions by using Application Insights'
   description: Learn how to instrument apps to enable Application Insights to monitor performance and help troubleshoot issues.
   ms.date: 04/25/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: learning-path
-title: 'AZ-204: Troubleshoot solutions by using Application Insights'
+title: 'Troubleshoot solutions by using Application Insights'
 prerequisites: |
   *   At least one year of experience developing scalable solutions through all phases of software development.
   *   Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
-  *   If you're new to Azure or cloud computing it's recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
+  *   If you're new to Azure or cloud computing, it's recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
 summary: |
   Learn how to instrument apps to enable Application Insights to monitor performance and help troubleshoot issues.
 iconUrl: /training/achievements/monitoring-instrument-solutions.svg

@@ -2,8 +2,6 @@
 uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.transform-data-with-using-create-external-table-as-select-statement
 title: Transform data files with the CREATE EXTERNAL TABLE AS SELECT statement
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Transform data files with the CREATE EXTERNAL TABLE AS SELECT statement
   description: "Transform data files with the CREATE EXTERNAL TABLE AS SELECT statement"
   ms.date: 11/16/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-transform-data-using-create-external-table-select-statement.md)]
+  [!include[](includes/2-transform-data-using-create-external-table-select-statement.md)]
