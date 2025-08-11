@@ -26,8 +26,6 @@ products:
 subjects:
 - information-protection-governance
 modules:
-- learn-m365.m365-compliance-information-govern-information
 - learn.wwl.manage-data-retention-microsoft-365
-- learn-m365.m365-compliance-information-manage-records
 trophy:
   uid: implement-information-governance.trophy
