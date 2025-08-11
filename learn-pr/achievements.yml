@@ -6360,3 +6360,8 @@ achievements:
   title: 'SC-400: Implement Data Loss Prevention'
   summary: 'In this learning plan we discuss how to implement data loss prevention techniques to secure your Microsoft 365 data. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.'
   iconUrl: /training/achievements/implement-data-loss-prevention.svg
+- uid: implement-information-governance.trophy
+  type: trophy
+  title: 'SC-400: Implement Data Lifecycle and Records Management'
+  summary: 'Learn how to plan and implement data lifecycle and records management strategies for an organization. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.'
+  iconUrl: /training/achievements/implement-information-governance.svg
