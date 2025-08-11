@@ -53363,6 +53363,11 @@
       "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/explain-retention-copilot-interactions.md",
       "redirect_url": "/training/modules/purview-retention-recovery/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/explain-retention-exchange-online.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
     }
   ]
 }
