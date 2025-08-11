@@ -53388,6 +53388,11 @@
       "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/introduction.md",
       "redirect_url": "/training/modules/purview-retention-recovery/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/knowledge-check.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
     }
   ]
 }
