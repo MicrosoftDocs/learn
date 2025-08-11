@@ -53408,6 +53408,101 @@
       "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/summary-resources.md",
       "redirect_url": "/training/modules/purview-retention-recovery/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/2-manage-azure-batch-workloads-from-dotnet-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/3-exercise-setup-batch-and-storage-accounts-in-the-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/4-access-your-batch-account-using-the-dotnet-client-library.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/5-exercise-access-your-batch-account-using-the-dotnet-client-library.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/6-exercise-create-a-pool-of-compute-nodes-to-run-our-jobs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/7-create-and-run-a-batch-job-using-the-dotnet-client-library.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/8-exercise-upload-resources-with-storage-library.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/9-exercise-manage-and-deploy-applications-on-compute-nodes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/10-monitor-and-log-job-progress.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-red-hat-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/openshift/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-red-hat-azure/2-what-is-red-hat-on-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/openshift/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-red-hat-azure/3-how-red-hat-on-azure-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/openshift/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-red-hat-azure/4-when-to-use-red-hat-on-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/openshift/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-red-hat-azure/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/openshift/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-red-hat-azure/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/openshift/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-red-hat-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/openshift/",
+      "redirect_document_id": false
     }
   ]
 }
