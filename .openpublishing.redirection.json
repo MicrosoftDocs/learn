@@ -53353,6 +53353,11 @@
       "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/index.md",
       "redirect_url": "/training/modules/purview-retention-recovery/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/apply-mailbox-holds-microsoft-exchange.md",
+      "redirect_url": "/training/modules/purview-retention-recovery/",
+      "redirect_document_id": false
     }
   ]
 }
