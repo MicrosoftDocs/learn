@@ -30,6 +30,5 @@ products:
 subjects:
 - information-protection-governance
 units:
-- learn.wwl.manage-data-loss-prevention-polices.use-data-loss-prevention-reports
 badge:
   uid: learn.wwl.manage-data-loss-prevention-polices.badge
