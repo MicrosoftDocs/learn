@@ -4,7 +4,7 @@ As a **GitHub Enterprise administrator**, tracking **license usage** is crucial 
 
 Note: For pre-paid (subscription-based) plans, you'll see a set number of available licenses. For Pay-As-You-Go (PAYG) plans—the default for new Enterprise customers—there is no concept of “available licenses.” Billing is based on actual usage (active seats), and you are charged accordingly each month.
 
-## Finding License Usage for a Specific Organization
+## Finding license usage for a specific organization
 
 To find **license usage statistics** for a single **GitHub organization**:
 
@@ -19,7 +19,7 @@ To find **license usage statistics** for a single **GitHub organization**:
     - Pending invitations
     - Available licenses (only shown for pre-paid accounts)
 
-#### Command-Line Alternative (GraphQL API)
+#### Command-Line alternative (GraphQL API)
 
 For more granular data, admins can use **GraphQL API**:
 
@@ -35,7 +35,7 @@ For more granular data, admins can use **GraphQL API**:
 }
 ```
 
-## Method 2: Finding License Usage Across Multiple Organizations
+## Method 2: Finding license usage across multiple organizations
 
 For organizations under the same **enterprise account**, admins can analyze usage across all organizations.
 
@@ -66,7 +66,7 @@ To fetch usage data for all organizations in an enterprise:
 
 ```
 
-## Method 3: Finding License Usage for Enterprise Accounts
+## Method 3: Finding license usage for enterprise accounts
 
 For enterprises using **GitHub Enterprise Cloud or GitHub Enterprise Server**, admins can track licenses at the **enterprise level**.
 
@@ -82,7 +82,7 @@ Next, you'll learn how to access and view license statistics on GitHub Enterpris
     - **Available seats**
     - **Historical license usage trends**
 
-#### REST API Alternative
+#### REST API alternative
 
 For **programmatic access**, use the REST API:
 
@@ -93,7 +93,7 @@ curl -H "Authorization: token YOUR-TOKEN" \
 
 ---
 
-## Method 4: Finding License Usage Across Multiple GitHub Instances
+## Method 4: Finding license usage across multiple GitHub instances
 
 For **large enterprises** with multiple GitHub Enterprise **Server instances**, admins must track **license consumption** across deployments.
 
@@ -112,10 +112,10 @@ curl -H "Authorization: token YOUR-TOKEN" \
     - **Usage per GitHub instance**
     - **Available capacity per region**
 
-## Best Practices for License Usage Management
+## Best practices for license usage management
 The following strategies can help you manage licenses more efficiently across your organization:
 
-- **Automate Monitoring**: Use **GraphQL/REST API queries** to **track usage trends**.  
-- **Optimize Unused Seats**: Identify **inactive users** and **reclaim unused licenses**.  
-- **Enable Usage-Based Billing**: Ensure **billing reflects actual consumption**.  
-- **Regular Audits**: Conduct **monthly/quarterly** **license reviews** to optimize cost.
+- **Automate monitoring**: Use **GraphQL/REST API queries** to **track usage trends**.  
+- **Optimize unused seats**: Identify **inactive users** and **reclaim unused licenses**.  
+- **Enable usage-based billing**: Ensure **billing reflects actual consumption**.  
+- **Regular audits**: Conduct **monthly/quarterly** **license reviews** to optimize cost.
