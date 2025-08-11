@@ -31,7 +31,6 @@ subjects:
 - information-protection-governance
 units:
 - learn.wwl.manage-data-loss-prevention-polices.introduction
-- learn.wwl.manage-data-loss-prevention-polices.implement-data-loss-prevention-policies-test-mode
 - learn.wwl.manage-data-loss-prevention-polices.use-data-loss-prevention-reports
 - learn.wwl.manage-data-loss-prevention-polices.manage-permissions-for-data-loss-prevention-reports
 - learn.wwl.manage-data-loss-prevention-polices.manage-respond-data-loss-prevention-policy-violations
