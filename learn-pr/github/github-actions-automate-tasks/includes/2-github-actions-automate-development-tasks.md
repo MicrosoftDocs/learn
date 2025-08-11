@@ -182,7 +182,7 @@ When creating workflows in GitHub Actions, you can reference actions from variou
 > Example: `uses: actions/checkout@c2c1744e079e0dd11c8e0af4a96064ca4f6a2e9e`
 
 3. **The same repository as your workflow file**  
-   You can reference actions stored in the same repository as your workflow file. This is useful for custom actions that are specific to your project. To reference such actions, use a relative path to the action's directory. For example:
+   You can reference actions stored in the same repository as your workflow file. This feature is useful for custom actions that are specific to your project. To reference such actions, use a relative path to the action's directory. For example:
    ```yml
    steps:
      - name: Use a local action
