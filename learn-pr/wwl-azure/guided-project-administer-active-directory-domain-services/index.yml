@@ -21,13 +21,13 @@ summary: |
 abstract: |
   In this module, you'll practice how to:
 
-  -   Configure Domain Controller Operations.
+  -   Configure domain controller operations.
 
-  -   Configure User Management Operations.
+  -   Configure user management operations.
 
-  -   Manage Password Policies.
+  -   Manage password policies.
 
-  -   Configure Security Settings.
+  -   Configure security settings.
 prerequisites: |
   Knowledge of and experience working with:
 
