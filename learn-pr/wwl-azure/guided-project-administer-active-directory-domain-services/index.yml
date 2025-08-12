@@ -11,7 +11,11 @@ metadata:
   ai-usage: human-only
 title: Guided project - Administer Active Directory Domain Services
 summary: |
-  This guided project helps prepare you to manage Active Directory Domain services, including creating and deploying domains, configuring group policy objects, establishing and enforcing passwords, and maintaining security of Active Directory.
+  This guided project helps prepare you to manage Active Directory Domain services, including:
+  - Creating and deploying domains.
+  - Coonfiguring group policy objects.
+  - Establishing and enforcing passwords.
+  - Maintaining security of Active Directory.
 
   [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
 abstract: |
