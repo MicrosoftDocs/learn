@@ -53408,6 +53408,116 @@
       "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/summary-resources.md",
       "redirect_url": "/training/modules/purview-retention-recovery/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/2-understand-git.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/3-exercise-initialize-git-repository.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/4-commit-files-view-history.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/5-exercise-commit-files-view-history.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/6-branch-merge-changes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/7-exercise-branch-merge-changes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/8-publish-repository-enable-collaboration.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/9-exercise-publish-repository.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/2-arc-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/3-kubernetes-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/4-connect-kubernetes-arc.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/5-services.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/6-gitops.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/7-integrate-policy-monitor.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
     }
   ]
 }
