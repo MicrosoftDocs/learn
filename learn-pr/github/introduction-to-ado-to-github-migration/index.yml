@@ -1,0 +1,39 @@
+uid: learn.github.introduction-to-ado-to-github-migration
+title: Introduction to AzureDev Ops to GitHub Migration
+metadata:
+  title: Introduction to AzureDev Ops to GitHub Migration
+  description: This is the first module of four in this learning path that will help guide you through your Azure Devops to GitHub Enterprise migration.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 08/12/2025
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: This is the first module of four in this learning path that will help guide you through your Azure Devops to GitHub Enterprise migration.
+
+abstract: |
+  At the end of this module, you'll be able to: 
+  -	Understanding the different phases of the Migration Process
+  -	Defining your key objectives and key success criteria during the migration
+  -	Equip you with the tools to start Phase 1 of your migration, Discovery and Planning
+prerequisites: |
+  - Basic understanding of GitHub fundamentals
+  - A GitHub Enterprise Cloud account
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+units:
+  - learn.github.introduction-to-ado-to-github-migration.why-migrate-github-enterprise
+  - learn.github.introduction-to-ado-to-github-migration.six-phases-migration-journey
+  - learn.github.introduction-to-ado-to-github-migration.phase-one-discovery-planning
+  - learn.github.introduction-to-ado-to-github-migration.summary
+badge:
+  uid: learn.github.introduction-to-ado-to-github-migration.badge
