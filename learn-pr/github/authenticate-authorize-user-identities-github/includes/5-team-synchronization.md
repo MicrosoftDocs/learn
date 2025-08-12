@@ -59,7 +59,7 @@ Consider the following scenario to understand how team synchronization works in 
 > [!NOTE]
 > Team Sync in GHES doesn’t provision accounts. Users must already be GitHub organization members.
 
-### Team Sync Configuration
+## Enable team synchronization
 
 1. Enable Security Assertion Markup Language(SAML) Single Sign-On(SSO) and SCIM in your IdP.
 2. Map GitHub teams to IdP groups via GitHub UI or API.
@@ -76,7 +76,7 @@ To disable:
 1. Navigate to **Settings** > **Organization security**
 2. Click **Disable team synchronization**
 
-:::image type="content" source="../media/disable-team-synchronization.png" alt-text="Screenshot of the organization setting to disable team synchronization." :::
+:::image type="content" source="../media/disable-team-synchronization.png" alt-text="Screenshot of the organization setting to disable team synchronization." border="false":::
 
 > [!NOTE]
 > Disabling sync removes users from teams if they were added via IdP mapping.
