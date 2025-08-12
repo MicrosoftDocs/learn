@@ -53408,6 +53408,91 @@
       "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/summary-resources.md",
       "redirect_url": "/training/modules/purview-retention-recovery/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/2-understand-template-specs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/3-create-publish-template-spec.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/4-deploy-template-spec.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/5-exercise-create-deploy-template-spec.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/6-manage-template-spec.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/7-exercise-update-version-template-spec.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-inbound-connectivity-azure-load-balancer/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-inbound-connectivity-azure-load-balancer/2-troubleshoot-azure-load-balancer.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-inbound-connectivity-azure-load-balancer/3-diagnose-issues-by-reviewing-configurations-and-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-inbound-connectivity-azure-load-balancer/4-exercise-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-inbound-connectivity-azure-load-balancer/5-exercise-identify-and-resolve-inbound-network-connectivity.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-inbound-connectivity-azure-load-balancer/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-inbound-connectivity-azure-load-balancer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/",
+      "redirect_document_id": false
     }
   ]
 }

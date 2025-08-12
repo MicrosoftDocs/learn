@@ -6375,3 +6375,13 @@ achievements:
   title: Manage data retention and deletion in Microsoft 365 workloads
   summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
   iconUrl: /training/achievements/manage-data-retention-in-microsoft-365.svg
+- uid: learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.badge
+  type: badge
+  title: Troubleshoot inbound network connectivity for Azure Load Balancer
+  summary: Review multidimensional metrics for the load balancer in Azure Monitor Metrics, and check health probe status for the load balancer.
+  iconUrl: /training/achievements/troubleshoot-inbound-connectivity-azure-load-balancer.svg
+- uid: learn.azure.arm-template-specs.badge
+  type: badge
+  title: Publish libraries of reusable infrastructure code by using template specs
+  summary: Reuse and share your ARM templates across your organization. Publish template specs that deploy resources preconfigured for your organization's requirements. Control access and safely update template specs by using versions.
+  iconUrl: /training/achievements/bicep/arm-template-specs.svg
