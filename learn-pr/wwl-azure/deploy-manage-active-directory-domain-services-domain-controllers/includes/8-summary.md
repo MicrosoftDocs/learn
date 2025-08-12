@@ -8,3 +8,7 @@ You can learn more by reviewing the following documents.
  -  [Create a two-way forest trust in Microsoft Entra Domain Services with an on-premises domain](/azure/active-directory-domain-services/tutorial-create-forest-trust?azure-portal=true).
  -  [AD DS Deployment](/windows-server/identity/ad-ds/deploy/ad-ds-deployment?azure-portal=true)
  -  [Planning Operations Master Role Placement](/windows-server/identity/ad-ds/plan/planning-operations-master-role-placement?azure-portal=true)
+
+## Provide feedback on the AI Tutor
+
+Did you use the AD DS Tutor? Whether you used it while completing this training, as a study aid for the [Microsoft Applied Skills: Administer Active Directory Domain Services](/credentials/applied-skills/administer-active-directory-domain-services/) credential, or for helps with labs and activities, we'd appreciate your feedback. Please complete a **[brief survey](https://forms.office.com/r/0eaEXzVTbZ)** to share your thoughts. You can complete the survey again if you've already completed it but have other, or different thoughts on the AD DS Tutor.
