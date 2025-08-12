@@ -4,6 +4,7 @@ metadata:
   title: Get started with prompt flow to develop Large Language Model (LLM) apps
   description: Get started with prompt flow to develop Large Language Model (LLM) apps.
   ms.date: 11/30/2023
+  ms.update-cycle: 180-days
   author: madiepev
   ms.author: madiepev
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
