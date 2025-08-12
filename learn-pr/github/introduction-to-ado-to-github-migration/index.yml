@@ -13,10 +13,10 @@ metadata:
 summary: This is the first module of four in this learning path that will help guide you through your Azure Devops to GitHub Enterprise migration.
 
 abstract: |
-  At the end of this module, you'll be able to: 
+  At the end of this module, you're able to: 
   -	Understanding the different phases of the Migration Process
   -	Defining your key objectives and key success criteria during the migration
-  -	Equip you with the tools to start Phase 1 of your migration, Discovery and Planning
+  -	Equip you with the tools to start Phase 1 of your migration, Discovery, and Planning
 prerequisites: |
   - Basic understanding of GitHub fundamentals
   - A GitHub Enterprise Cloud account

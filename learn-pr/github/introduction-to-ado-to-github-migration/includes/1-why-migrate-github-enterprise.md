@@ -8,11 +8,11 @@ This is the first module of four in this learning path that will help guide you 
 
 But let's start at the beginning.
 
-In this module we will go through:
+In this module we'll go through:
 
 - Understanding the different phases of the Migration Process
 - Defining your key objectives and key success criteria during the migration
-- Equip you with the tools to start Phase 1 of your migration, Discovery and Planning
+- Equip you with the tools to start Phase 1 of your migration, Discovery, and Planning
 
 ## Prerequisites
 

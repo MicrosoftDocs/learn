@@ -4,9 +4,9 @@ At the start of this module, you set out to:
 
 - Understand the different phases of the Migration Process
 - Define your key objectives and key success criteria during the migration
-- Equip you with the tools to start Phase 1 of your migration, Discovery and Planning
+- Equip you with the tools to start Phase 1 of your migration, Discovery, and Planning
 
-This is the first module of a set of 4 modules that will take you through your Azure DevOps to GitHub Enterprise migration. Here is a preview of what to do next with the following modules:
+This is the first module of a set of four modules that will take you through your Azure DevOps to GitHub Enterprise migration. Here's a preview of what to do next with the following modules:
 
 Module 2: Source Environment Assessment and Target Environment Setup
 Module 3: Migration Testing and Production Migration
