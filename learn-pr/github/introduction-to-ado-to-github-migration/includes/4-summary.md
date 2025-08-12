@@ -9,7 +9,9 @@ At the start of this module, you set out to:
 This is the first module of a set of four modules that will take you through your Azure DevOps to GitHub Enterprise migration. Here's a preview of what to do next with the following modules:
 
 Module 2: Source Environment Assessment and Target Environment Setup
+
 Module 3: Migration Testing and Production Migration
+
 Module 4: Post Migration Activities and Troubleshooting Guide
 
 ## Additional resources
