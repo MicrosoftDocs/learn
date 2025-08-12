@@ -1,6 +1,6 @@
 Are you excited to get started with your migration?  Before beginning the technical work, you need to establish a solid foundation with proper discovery and planning. This phase sets the stage for a successful migration by aligning stakeholders, defining objectives, and preparing the necessary tools and processes.
 
-### Migration Objectives
+### Migration objectives
 
 Starting with clear Migration Objectives will help your stakeholders feel confident that this migration is in their best interest. 
 
@@ -10,7 +10,7 @@ Starting with clear Migration Objectives will help your stakeholders feel confid
 - Establish proper governance and security controls
 - Enable seamless team transition
 
-### Key Success Criteria
+### Key success criteria
 
 Similar to Migration Objectives, Key Success Criteria should be on everyone's minds during the migration to ensure minimal business disruption and success for the future environment.
 
@@ -34,7 +34,7 @@ Here is a checklist to complete before your kickoff meeting.
 - [ ] Service connection details
 - [ ] User and team membership lists
 
-#### GitHub Enterprise Cloud
+#### GitHub enterprise cloud
 
 - [ ] Enterprise Owner or Organization Owner access
 - [ ] Personal Access Token with migration permissions
@@ -43,14 +43,14 @@ Here is a checklist to complete before your kickoff meeting.
 - [ ] Billing and licensing information
 - [ ] User provisioning and team sync validated (if EMU)
 
-#### Identity Provider
+#### Identity provider
 
 - [ ] Azure AD/Entra ID Administrator access (if changes needed)
 - [ ] SCIM provisioning operational (for EMU environments)
 - [ ] Group management permissions for team synchronization
 - [ ] **Authentication Testing Completed:** SSO login verified
 
-### Tools & Software Setup
+### Tools & Software setup
 
 - [ ] Install GitHub CLI (`gh`)
 - [ ] Install GitHub ADO2GH CLI extension (`gh extension install github/gh-ado2gh`)
@@ -58,7 +58,7 @@ Here is a checklist to complete before your kickoff meeting.
 - [ ] Access to PowerShell/Bash for scripting
 - [ ] Migration tracking spreadsheet or tool
 
-### Stakeholder Identification
+### Stakeholder identification
 
 - [ ] Executive Sponsor
 - [ ] IT Leadership
@@ -72,7 +72,7 @@ Have everything on your check list? Perfect, now let's schedule that kick off me
 
 Here's an agenda for your kick off meeting, a charter template to keep everything organized, and a Risk Management Matrix to keep expectations realistic.
 
-### Kickoff Meeting Agenda
+### Kickoff meeting agenda
 
 1. **Project Overview** (30 minutes)
 
@@ -93,7 +93,7 @@ Here's an agenda for your kick off meeting, a charter template to keep everythin
    - Mitigation strategies
    - Rollback procedures
 
-### Project Charter Template
+### Project charter template
 
 Use this template to document your migration project:
 
@@ -142,7 +142,7 @@ Use this template to document your migration project:
     - [ ] Other services: [List decisions]
 ```
 
-### Risk Management Matrix
+### Risk management matrix
 Use this matrix to identify and plan for potential risks:
 
 | Risk                       | Likelihood | Impact | Mitigation                              | Owner    |
