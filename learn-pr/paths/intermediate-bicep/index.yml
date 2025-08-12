@@ -46,6 +46,5 @@ modules:
 - learn.azure.structure-bicep-code-collaboration
 - learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests
 - learn.arm-template-whatif
-- learn.azure.migrate-azure-resources-bicep
 trophy:
   uid: learn.bicep-collaborate.trophy

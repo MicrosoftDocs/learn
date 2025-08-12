@@ -53408,6 +53408,111 @@
       "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/summary-resources.md",
       "redirect_url": "/training/modules/purview-retention-recovery/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/2-convert-migrate-resources-bicep-file.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/3-exercise-convert-migrate-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/4-refactor-bicep-file.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/5-exercise-refactor-bicep-file.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/6-test-deploy-converted-template.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/7-exercise-test-deploy-converted-template.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/8-workflow-migrate-resources-bicep.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/2-file-access.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/3-performance-considerations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/4-traffic-considerations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/5-authentication-authorization-considerations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/6-nfs-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/7-parallel-file-systems.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/8-hybrid-file-access-requirements.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
     }
   ]
 }
