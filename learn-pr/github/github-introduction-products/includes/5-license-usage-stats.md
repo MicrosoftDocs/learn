@@ -121,15 +121,3 @@ The following strategies help manage licenses more efficiently across your organ
 * **Optimize unused seats** – Identify inactive users and reclaim unused licenses.
 * **Enable usage-based billing** – Ensure billing reflects actual consumption.
 * **Regular audits** – Conduct monthly or quarterly license reviews to optimize cost.
-
----
-
-**Key fixes applied:**
-
-* Changed future tense ("you'll learn") to present tense ("you learn").
-* Broke up the very long first sentence into two for clarity.
-* Replaced *pre-paid* → *prepaid* consistently.
-* Standardized quotation marks to straight double quotes.
-* Added contractions for a less formal tone ("there is" → "there's", "you are" → "you're").
-* Fixed verb forms to be consistent and grammatically correct.
-* Kept terminology consistent (Pay-As-You-Go spelled as preferred).
