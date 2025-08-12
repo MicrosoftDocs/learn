@@ -53408,6 +53408,96 @@
       "source_path": "learn-pr/wwl-sci/manage-data-retention-microsoft-365/summary-resources.md",
       "redirect_url": "/training/modules/purview-retention-recovery/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/2-what-azure-route-server.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/3-when-use-azure-route-server.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/4-how-azure-route-server-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/5-deploy-azure-route-server.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/2-overview-of-kubernetes-networking.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/3-overview-of-azure-cni-networking.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/4-estimate-cluster-size-pods.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/5-estimate-cluster-size-nodes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/6-size-the-network.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/7-exercise-deploy-aks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
     }
   ]
 }
