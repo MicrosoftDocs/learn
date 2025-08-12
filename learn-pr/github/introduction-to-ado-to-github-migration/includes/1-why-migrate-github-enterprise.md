@@ -4,11 +4,11 @@ GitHub Enterprise (GHE) has evolved into a powerful, agentic DevOps platform tha
 
 Paired with GitHub Copilot, which integrates directly into development environments throughout GHE, Copilot accelerates onboarding, reduces cognitive load, and boosts developer satisfaction. When paired with GitHub Codespaces and Actions, Copilot enables a frictionless development experience that supports rapid iteration and innovation.
 
-This is the first module of four in this learning path that will help guide you through your Azure Devops to GitHub Enterprise migration.
+This is the first module of four in this learning path that guides you through your Azure DevOps to GitHub Enterprise migration.
 
 But let's start at the beginning.
 
-In this module we'll go through:
+In this module we go through:
 
 - Understanding the different phases of the Migration Process
 - Defining your key objectives and key success criteria during the migration
