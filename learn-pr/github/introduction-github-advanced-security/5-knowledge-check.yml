@@ -2,7 +2,6 @@
 uid: learn.introduction-github-advanced-security.knowledge-check
 title: Module assessment
 metadata:
-  unitType: knowledge_check
   title: Module assessment
   description: Knowledge check - Introduction to GitHub Advanced Security module
   ms.date: 07/13/2023
@@ -10,64 +9,96 @@ metadata:
   ms.author: robmcm
   ms.topic: unit
   module_assessment: true
-durationInMinutes: 5 # user input: the estimate time to complete the unit
-content: |
+durationInMinutes: 5
 quiz:
-  title: Check your knowledge 
+  title: Check your knowledge
   questions:
-  - content: What is GitHub Advanced Security (GHAS)?
-    choices:
-    - content: "An automated tool for managing project dependencies."
-      isCorrect: false
-      explanation: "Incorrect. This describes the purpose of Dependabot, not GHAS."
-    - content: "An application security solution that empowers developers."
-      isCorrect: true
-      explanation: "Correct. GHAS is a security solution that empowers developers by embedding security features into their workflow to help prevent vulnerabilities and credential leaks in source code."
-    - content: "A tool for analyzing source code for security vulnerabilities."
-      isCorrect: false
-      explanation: "Incorrect. This describes the purpose of code scanning, which is a part of GHAS, but not the full definition of GHAS itself."
-    - content: "A platform for tracking the full impact of changes to dependencies in a project."
-      isCorrect: false
-      explanation: "Incorrect. This describes the purpose of Dependency Review, a feature of Dependabot within GHAS, but not the full definition of GHAS."
-  - content: "How does code scanning contribute to the security of a software development project?"
-    choices:
-    - content: "By preventing unauthorized access to sensitive information."
-      isCorrect: false
-      explanation: "Incorrect. This is more related to secret scanning, not code scanning."
-    - content: "By automating the management of project dependencies."
-      isCorrect: false
-      explanation: "Incorrect. This describes the purpose of Dependabot, not code scanning."
-    - content: "By identifying and addressing security vulnerabilities in the codebase."
-      isCorrect: true
-      explanation: "Correct. Code scanning analyzes source code for security vulnerabilities and coding errors, helping developers address these issues early in the development process."
-    - content: "By analyzing source code for potential coding errors."
-      isCorrect: false
-      explanation: "Incorrect. This is a general description of static analysis, which is a technique used in code scanning, but it does not fully describe the contribution of code scanning to security."
-  - content: "How does Dependabot use the dependency graph in GitHub Advanced Security (GHAS)?"
-    choices:
-    - content: "To identify and address security vulnerabilities in the codebase."
-      isCorrect: false
-      explanation: "Incorrect. This describes the purpose of code scanning, not how Dependabot uses the dependency graph."
-    - content: "To automatically update project dependencies to their latest, secure versions."
-      isCorrect: false
-      explanation: "Incorrect. While Dependabot updates project dependencies, this answer does not specifically mention how it uses the dependency graph."
-    - content: "To generate alerts for potential security vulnerabilities in project dependencies."
-      isCorrect: false
-      explanation: "Incorrect. This describes the purpose of Dependabot alerts, not how Dependabot uses the dependency graph."
-    - content: "To cross-reference dependency data with the GitHub Advisory Database."
-      isCorrect: true
-      explanation: "Correct. Dependabot uses the dependency graph to cross-reference dependency data with the GitHub Advisory Database and generate alerts for potential vulnerabilities in project dependencies."
-  - content: "How does GitHub Advanced Security (GHAS) help integrate security into each step of the software development life cycle?"
-    choices:
-    - content: "By providing a comprehensive dashboard summarizing the security status of the repository."
-      isCorrect: false
-      explanation: "Incorrect. This describes the purpose of the Security Overview, not how GHAS integrates security into each step of the software development life cycle."
-    - content: "By automating security checks with every pull request, surfacing issues in the context of the development workflow."
-      isCorrect: true
-      explanation: "Correct. GHAS automates security checks with every pull request, surfacing issues in the context of the development workflow, which helps integrate security into each step of the software development life cycle."
-    - content: "By generating alerts for outdated dependencies in a project."
-      isCorrect: false
-      explanation: "Incorrect. This describes the purpose of Dependabot alerts, not how GHAS integrates security into each step of the software development life cycle."
-    - content: "By providing access to curated security intelligence from millions of developers and security researchers around the world."
-      isCorrect: false
-      explanation: "Incorrect. While GHAS provides access to curated security intelligence, this answer does not specifically mention how it integrates security into each step of the software development life cycle."
+    - content: "What is GitHub Advanced Security (GHAS)?"
+      choices:
+        - content: "An automated tool for managing project dependencies."
+          isCorrect: false
+          explanation: "Incorrect. This describes the purpose of Dependabot, not GHAS."
+        - content: "An application security solution that empowers developers."
+          isCorrect: true
+          explanation: "Correct. GHAS is a security solution that empowers developers by embedding security features into their workflow to help prevent vulnerabilities and credential leaks in source code."
+        - content: "A tool for analyzing source code for security vulnerabilities."
+          isCorrect: false
+          explanation: "Incorrect. This describes the purpose of code scanning, which is a part of GHAS, but not the full definition of GHAS itself."
+        - content: "A platform for tracking the full impact of changes to dependencies in a project."
+          isCorrect: false
+          explanation: "Incorrect. This describes the purpose of Dependency Review, a feature of Dependabot within GHAS, but not the full definition of GHAS."
+
+    - content: "How does code scanning contribute to the security of a software development project?"
+      choices:
+        - content: "By preventing unauthorized access to sensitive information."
+          isCorrect: false
+          explanation: "Incorrect. This is more related to secret scanning, not code scanning."
+        - content: "By automating the management of project dependencies."
+          isCorrect: false
+          explanation: "Incorrect. This describes the purpose of Dependabot, not code scanning."
+        - content: "By identifying and addressing security vulnerabilities in the codebase."
+          isCorrect: true
+          explanation: "Correct. Code scanning analyzes source code for security vulnerabilities and coding errors, helping developers address these issues early in the development process."
+        - content: "By analyzing source code for potential coding errors."
+          isCorrect: false
+          explanation: "Incorrect. This is a general description of static analysis, which is a technique used in code scanning, but it does not fully describe the contribution of code scanning to security."
+
+    - content: "How does Dependabot use the dependency graph in GitHub Advanced Security (GHAS)?"
+      choices:
+        - content: "To identify and address security vulnerabilities in the codebase."
+          isCorrect: false
+          explanation: "Incorrect. This describes the purpose of code scanning, not how Dependabot uses the dependency graph."
+        - content: "To automatically update project dependencies to their latest, secure versions."
+          isCorrect: false
+          explanation: "Incorrect. While Dependabot updates project dependencies, this answer does not specifically mention how it uses the dependency graph."
+        - content: "To generate alerts for potential security vulnerabilities in project dependencies."
+          isCorrect: false
+          explanation: "Incorrect. This describes the purpose of Dependabot alerts, not how Dependabot uses the dependency graph."
+        - content: "To cross-reference dependency data with the GitHub Advisory Database."
+          isCorrect: true
+          explanation: "Correct. Dependabot uses the dependency graph to cross-reference dependency data with the GitHub Advisory Database and generate alerts for potential vulnerabilities in project dependencies."
+
+    - content: "How does GitHub Advanced Security (GHAS) help integrate security into each step of the software development life cycle?"
+      choices:
+        - content: "By providing a comprehensive dashboard summarizing the security status of the repository."
+          isCorrect: false
+          explanation: "Incorrect. This describes the purpose of the Security Overview, not how GHAS integrates security into each step of the software development life cycle."
+        - content: "By automating security checks with every pull request, surfacing issues in the context of the development workflow."
+          isCorrect: true
+          explanation: "Correct. GHAS automates security checks with every pull request, surfacing issues in the context of the development workflow, which helps integrate security into each step of the software development life cycle."
+        - content: "By generating alerts for outdated dependencies in a project."
+          isCorrect: false
+          explanation: "Incorrect. This describes the purpose of Dependabot alerts, not how GHAS integrates security into each step of the software development life cycle."
+        - content: "By providing access to curated security intelligence from millions of developers and security researchers around the world."
+          isCorrect: false
+          explanation: "Incorrect. While GHAS provides access to curated security intelligence, this answer does not specifically mention how it integrates security into each step of the software development life cycle."
+
+    - content: "What role does the dependency graph play in GitHub Advanced Security (GHAS)?"
+      choices:
+        - content: "It prevents developers from pushing insecure code."
+          isCorrect: false
+          explanation: "Incorrect. This is more related to Push Protection."
+        - content: "It helps manage user access roles for code scanning alerts."
+          isCorrect: false
+          explanation: "Incorrect. This is related to repository permissions, not the dependency graph."
+        - content: "It identifies dependencies and powers features like Dependabot alerts and Dependency Review."
+          isCorrect: true
+          explanation: "Correct. The dependency graph enables features such as Dependabot alerts, security updates, and Dependency Review by identifying direct and transitive dependencies."
+        - content: "It tracks usage statistics for security features."
+          isCorrect: false
+          explanation: "Incorrect. GitHub's dependency graph does not track feature usage."
+
+    - content: "How does Push Protection help secure your codebase?"
+      choices:
+        - content: "It will block commits when checks aren't passing"
+          isCorrect: false
+          explanation: "Incorrect. This describes CI testing, not Push Protection."
+        - content: "It blocks pushes that contain detected secrets before they reach the repository."
+          isCorrect: true
+          explanation: "Correct. Push Protection scans for secrets at the time of commit and prevents the push if secrets are detected."
+        - content: "It encrypts code in private repositories."
+          isCorrect: false
+          explanation: "Incorrect. GitHub does not encrypt code using Push Protection."
+        - content: "It provides version control for dependency updates."
+          isCorrect: false
+          explanation: "Incorrect. That is related to Dependabot version updates."
