@@ -3,9 +3,9 @@ uid: learn.wwl.guided-project-administer-active-directory-domain-services
 metadata:
   title: Guided project - Administer Active Directory Domain Services
   description: "This guided project helps prepare you to manage Active Directory Domain services, including creating and deploying domains, configuring group policy objects, establishing and enforcing passwords, and maintaining security of Active Directory."
-  ms.date: 08/16/2024
+  ms.date: 08/12/2024
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module-guided-project
   ms.service: azure-active-directory
   ai-usage: human-only
@@ -51,4 +51,4 @@ units:
 - learn.wwl.guided-project-administer-active-directory-domain-services.knowledge-check
 - learn.wwl.guided-project-administer-active-directory-domain-services.summary
 badge:
-  uid: learn.wwl.guided-project-administer-active-directory-domain-services.badge
+  uid: learn.wwl.guided-project-administer-active-directory-domain-services.badge
