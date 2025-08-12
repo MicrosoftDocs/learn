@@ -69,7 +69,7 @@ Supported IdPs:
 - **Microsoft Entra ID**: Requires permissions for profile reading and directory access.
 - **Okta**: Requires SAML SSO, SCIM, tenant URL, and Single Sign-on for Web Systems(SSWS) token with read-only admin access.
 
-### Disable Team Sync
+## Disable team synchronization
 
 To disable:
 
