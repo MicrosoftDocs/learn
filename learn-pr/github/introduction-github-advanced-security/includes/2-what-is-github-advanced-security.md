@@ -95,7 +95,7 @@ When GitHub Advanced Security (GHAS) is paired with GitHub Enterprise Cloud (GHE
 
 The table below summarizes the availability of GitHub Advanced Security features for public and private repositories.
 
-|                     | Public repository | Private repository without Advanced Security | Private repository with Advanced Security |
+|     Feature         | Public repository | Private repository without Advanced Security | Private repository with Advanced Security |
 |---------------------|-------------------|--------------------------------------------|-------------------------------------------|
 | Code scanning       | ✅                | ❌                                         | ✅                                        |
 | Secret scanning     | ✅                | ❌                                         | ✅                                        |
