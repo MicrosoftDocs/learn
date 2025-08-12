@@ -6,7 +6,10 @@ There are several options for authenticating with GitHub:
 
 ### Username and password
 
-Administrators can allow users to continue using the default username and password authentication method, sometimes known as the "basic" HTTP authentication scheme. **Note: GitHub no longer supports password authentication for Git operations or API usage.** We strongly recommend using one (or several) of the other options listed in this unit.
+Administrators can allow users to continue using the default username and password authentication method, sometimes known as the "basic" HTTP authentication scheme.
+
+> [!NOTE]
+> GitHub no longer supports password authentication for Git operations or API usage. We strongly recommend using one (or several) of the other options listed in this unit.
 
 ### Personal access tokens
 

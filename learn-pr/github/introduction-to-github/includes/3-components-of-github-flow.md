@@ -114,7 +114,8 @@ Git flow uses several long-lived and temporary branches:
 - Ideal for **slower, more structured development cycles** (e.g., enterprise or regulated environments)
 - Considered more "heavyweight" than GitHub Flow due to **additional branch management**
 
-Note: Git flow assumes merge commits for integrating branches. Using rebase or squash merges can interfere with its branch structure and history tracking.
+> [!NOTE]
+> Git flow assumes merge commits for integrating branches. Using rebase or squash merges can interfere with its branch structure and history tracking.
 
 > For many teams using GitHub, GitHub Flow is simpler and faster. But if your team values predictability and needs more release planning, Git flow may be a better fit.
 

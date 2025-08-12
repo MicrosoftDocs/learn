@@ -4,7 +4,8 @@ You also learn how to use the admin console, APIs, and best practices to optimiz
 As a **GitHub Enterprise administrator**, tracking **license usage** is crucial for managing costs, optimizing resources, and staying compliant.
 GitHub provides several ways to track seat usage across organizations, enterprise accounts, and GitHub Enterprise Server instances.
 
-> **Note:** For prepaid (subscription-based) plans, you see a set number of available licenses. For Pay-As-You-Go (PAYG) plans—the default for new Enterprise customers—there’s no concept of “available licenses.” Billing is based on actual usage (active seats), and you’re charged each month according to that usage.
+> [!NOTE]
+> For prepaid (subscription-based) plans, you see a set number of available licenses. For Pay-As-You-Go (PAYG) plans—the default for new Enterprise customers—there’s no concept of “available licenses.” Billing is based on actual usage (active seats), and you’re charged each month according to that usage.
 
 ## Method 1: Find license usage for a specific organization
 

@@ -7,7 +7,7 @@ Each bill reflects a combination of subscriptions and usage-based charges:
 * **Subscriptions** include your account’s plan (such as GitHub Pro or GitHub Team) and fixed monthly costs for products like GitHub Copilot or Marketplace apps.
 * **Usage-based billing** applies to products where cost scales with use—such as GitHub Actions (based on runtime minutes and artifact storage) or GitHub Packages.
 
-  > \[!NOTE]
+  > [!NOTE]
   > Most plans include a set number of free usage minutes or storage. For example, GitHub Pro includes 3,000 free GitHub Actions minutes per month. You can manage overages by setting spending limits.
 
 Understanding GitHub’s billing model helps you plan budgets, track usage, and manage costs across accounts. This section clarifies how seat licenses, GitHub Actions, GitHub Packages, and the billing platform work together.

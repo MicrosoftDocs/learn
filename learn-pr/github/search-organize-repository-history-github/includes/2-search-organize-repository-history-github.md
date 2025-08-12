@@ -98,7 +98,8 @@ is:open is:issue label:bug
 
 This returns all open issues labeled as "bug." Labels can reflect issue type, priority, team, or workflow status.
 
-> Tip: You can combine labels with other filters for precise queries, such as:
+> [!TIP]
+> You can combine labels with other filters for precise queries, such as:
 >
 > ```
 > is:pr label:"ready for review" author:@me
@@ -114,7 +115,8 @@ For example:
 is:open is:issue milestone:"Sprint 1"
 ```
 
-> Note: Only open milestones will match unless you include closed ones by searching with `milestone:*`.
+> [!NOTE]
+> Only open milestones will match unless you include closed ones by searching with `milestone:*`.
 
 ## What is git blame?
 
@@ -169,8 +171,8 @@ While saved replies are useful for common responses, **issue templates** are a b
 * **Issue templates** prompt users to fill in specific fields or answer certain questions up front, reducing back-and-forth and ensuring you have the details you need from the start.
 * Templates help maintainers avoid “lost data” by collecting structured information before an issue is even submitted.
 
-**Tip:**
-To set up issue templates, go to your repository’s **Settings** > **Issues** > **Set up templates**. You can create templates for bug reports, feature requests, or anything else your project needs.
+> [!TIP]
+> To set up issue templates, go to your repository’s **Settings** > **Issues** > **Set up templates**. You can create templates for bug reports, feature requests, or anything else your project needs.
 
 > **Best practice:**
 > Use issue templates to capture required details and reduce missing or incomplete information. Use saved replies for routine responses and instructions after issues or pull requests are submitted.
@@ -187,7 +189,8 @@ You can assign one or more people to an issue or pull request to show who’s re
 
 You can also assign people directly from the list view using the checkboxes beside each issue and selecting Assign from the top bar.
 
-> Tip: Use the `assignee:` filter in your searches to find items assigned to yourself or others.
+> [!TIP]
+> Use the `assignee:` filter in your searches to find items assigned to yourself or others.
 
 Example:
 ```

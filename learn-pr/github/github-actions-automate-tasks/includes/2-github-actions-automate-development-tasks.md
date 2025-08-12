@@ -199,9 +199,9 @@ For more details, see [security hardening guidance for GitHub Actions](https://d
        uses: enterprise-org/action-name@v1
    ```
 
-### Additional Notes
-- Actions in private repositories can also be referenced, but they require proper authentication and permissions.
-- When referencing actions, always specify a version (Git ref, SHA, or tag) to ensure consistency and avoid unexpected changes.
+> [!NOTE]
+> - Actions in private repositories can also be referenced, but they require proper authentication and permissions.
+> - When referencing actions, always specify a version (Git ref, SHA, or tag) to ensure consistency and avoid unexpected changes.
 
 For more information, see [Referencing actions in workflows](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions).
 

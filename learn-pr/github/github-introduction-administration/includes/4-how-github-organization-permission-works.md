@@ -51,7 +51,8 @@ To configure fork settings:
 
     :::image type="content" source="../media/fork-repo-manage.png" alt-text="Screenshot showing the fork permissions of a GitHub Organization." border="false":::
 
-**Tip:** If you disable forking for a private repository, no one (including organization members) will be able to fork it.
+> [!TIP]
+> If you disable forking for a private repository, no one (including organization members) will be able to fork it.
 
 To learn more, see the GitHub Docs article on [Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 
