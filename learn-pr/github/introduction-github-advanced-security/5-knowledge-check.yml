@@ -96,4 +96,9 @@ quiz:
         - content: "It blocks pushes that contain detected secrets before they reach the repository."
           isCorrect: true
           explanation: "Correct. Push Protection scans for secrets at the time of commit and prevents the push if secrets are detected."
-        - content: "It encrypts c
+        - content: "It encrypts code in private repositories."
+          isCorrect: false
+          explanation: "Incorrect. GitHub does not encrypt code using Push Protection."
+        - content: "It provides version control for dependency updates."
+          isCorrect: false
+          explanation: "Incorrect. That is related to Dependabot version updates."
