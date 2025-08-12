@@ -12,7 +12,7 @@ In this module we go through:
 
 - Understanding the different phases of the Migration Process
 - Defining your key objectives and key success criteria during the migration
-- Equip you with the tools to start Phase 1 of your migration, Discovery, and Planning
+- Equip you with the tools to start Phase 1 of your migration: Discovery and planning
 
 ## Prerequisites
 

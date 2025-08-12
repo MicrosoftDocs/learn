@@ -50,7 +50,7 @@ Here is a checklist to complete before your kickoff meeting.
 - [ ] Group management permissions for team synchronization
 - [ ] **Authentication Testing Completed:** SSO login verified
 
-### Tools & Software setup
+### Tools & software setup
 
 - [ ] Install GitHub CLI (`gh`)
 - [ ] Install GitHub ADO2GH CLI extension (`gh extension install github/gh-ado2gh`)

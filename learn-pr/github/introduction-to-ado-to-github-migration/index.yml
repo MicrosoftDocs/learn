@@ -1,6 +1,6 @@
 ### YamlMime:Module
 uid: learn.github.introduction-to-ado-to-github-migration
-title: Introduction to Azure DevOps to GitHub Migration
+title: Introduction to Azure DevOps to GitHub migration
 metadata:
   title: Introduction to Azure DevOps to GitHub Migration
   description: This module is the first of four in this learning path that guides you through your Azure DevOps to GitHub Enterprise migration.
@@ -16,7 +16,7 @@ abstract: |
   At the end of this module, you're able to: 
   -	Understanding the different phases of the Migration Process
   -	Defining your key objectives and key success criteria during the migration
-  -	Equip you with the tools to start Phase 1 of your migration, Discovery, and Planning
+  -	Equip you with the tools to start Phase 1 of your migration: Discovery and planning
 prerequisites: |
   - Basic understanding of GitHub fundamentals
   - A GitHub Enterprise Cloud account
