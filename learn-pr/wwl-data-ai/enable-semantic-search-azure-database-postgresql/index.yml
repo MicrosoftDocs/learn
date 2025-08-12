@@ -6,6 +6,7 @@ metadata:
   title: Enable semantic search in Azure Database for PostgreSQL
   description: "Learn to enable semantic search in Azure Database for PostgreSQL."
   ms.date: 04/23/2025
+  ms.update-cycle: 180-days
   author: wwlpublish
   ms.author: calopez
   ms.topic: module
