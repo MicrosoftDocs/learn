@@ -4,11 +4,11 @@ Are you excited to get started with your migration?  Before beginning the techni
 
 Starting with clear Migration Objectives will help your stakeholders feel confident that this migration is in their best interest. 
 
--	Migrate repositories from Azure DevOps to GitHub Enterprise Cloud
--	Maintain data integrity and complete history
--	Ensure minimal business disruption
--	Establish proper governance and security controls
--	Enable seamless team transition
+- Migrate repositories from Azure DevOps to GitHub Enterprise Cloud
+- Maintain data integrity and complete history
+- Ensure minimal business disruption
+- Establish proper governance and security controls
+- Enable seamless team transition
 
 ### Key Success Criteria
 
