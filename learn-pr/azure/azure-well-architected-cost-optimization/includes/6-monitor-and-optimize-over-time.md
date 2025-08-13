@@ -49,7 +49,7 @@ Cloud environments evolve, and so should your architecture. Review your metrics,
 
 - They also notice that their compute platform now includes a new feature in their chosen SKU that replaces some of the authentication code. Using this feature means less code to maintain and test.
 
-## Optimize your cloud environement continuously
+## Optimize your cloud environment continuously
 
 **Make it a habit to regularly check for unused resources or old data in your cloud setup and remove them. Over time, these components that were once useful can stick around and quietly accrue costs. Keep your environment optimized to help keep things efficient and save money.**
 
