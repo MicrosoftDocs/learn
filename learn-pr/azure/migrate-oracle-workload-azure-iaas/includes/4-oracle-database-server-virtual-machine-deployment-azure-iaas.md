@@ -20,7 +20,7 @@ For resource deployment, the example scripts offer versions using either [Terraf
 
 To configure the machines after deployment, the scripts make use of [Ansible](/azure/developer/ansible/overview). You modify the sample Ansible configuration files to automate any post-deployment VM setup, including configuring the Oracle database software and creating your databases.
 
-Use the example [Data Guard-based automated deployment](https://github.com/Azure/lza-oracle/blob/main/docs/wiki/Deploy-DG-with-Bicep-GitHub-Actions.md) as your starting point, and modify the configuration to match the requirements you gathered during your assessment process. This creates two database servers synced for redundancy using [Oracle Data Guard](https://www.oracle.com/database/data-guard/). To integrate this process with your existing IT workflows, you manage the [deployment using GitHub Actions](/training/paths/bicep-github-actions/).
+Use the example [Data Guard-based automated deployment](https://github.com/Azure/lza-oracle/blob/main/docs/wiki/Deploy-DG-with-Bicep-GitHub-Actions.md) as your starting point, and modify the configuration to match the requirements you gathered during your assessment process. This creates two database servers synced for redundancy using [Oracle Data Guard](https://www.oracle.com/database/data-guard/).
 
 When successfully deployed, your database infrastructure architecture should resemble the following example diagram.
 
