@@ -1,10 +1,4 @@
-The Azure Well-Architected Framework is a guide that helps ensure that your workload is: 
-
-- Resilient, available, and recoverable.
-- **As secure as you need it to be.**
-- Worth the investment.
-- Developed and operated responsibly.
-- Meeting its goals on time.
+The Security pillar in the Azure Well-Architected Framework helps ensure that your workload is as secure as you need it to be.
 
 A Well-Architected workload must be built with a Zero Trust approach. A secure workload can withstand attacks and follows the security principles of confidentiality, integrity, and availability, also known as the *CIA Triad*, while meeting business goals. Even small problems can cause major damage to the brand and reputation of the workload or organization.
 

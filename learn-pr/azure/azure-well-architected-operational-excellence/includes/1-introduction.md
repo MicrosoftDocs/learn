@@ -1,10 +1,4 @@
-The Azure Well-Architected Framework is a guide that helps ensure that your workload is: 
-
-- Resilient, available, and recoverable.
-- As secure as you need it to be.
-- Worth the investment.
-- **Developed and operated responsibly.**
-- Meeting its goals on time.
+The Operational Excellence pillar in the Azure Well-Architected Framework helps ensure that your workload supports responsible development and operations.
 
 The Operational Excellence pillar focuses on using DevOps practices to keep workloads running smoothly. It lays out clear processes for development, monitoring, and release management to help teams stay aligned and follow consistent workflows. The main goal is to reduce variation, avoid human errors, and minimize disruption to customers.
 
