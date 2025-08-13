@@ -1,4 +1,3 @@
-
 Now it's your chance to deploy an Azure SQL Database. 
 
 In this exercise, you’ll learn how to configure basic resources needed to deploy an Azure SQL Database with a Virtual Network Endpoint.
@@ -9,3 +8,4 @@ In this exercise, you’ll learn how to configure basic resources needed to depl
 Launch the exercise and follow the instructions.
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/dp-300-database-administrator/Instructions/Labs/02-provision-sql-database.html?azure-portal=true)
+
