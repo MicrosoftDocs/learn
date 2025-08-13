@@ -10,3 +10,7 @@ Use these resources to discover more:
  -  [Configure authentication policies silos](/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts)
  -  [Configure account security](/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)
  -  [Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage)
+
+## Provide feedback on the AI Tutor
+
+Did you use the AD DS Tutor? Whether you used it while completing this training, as a study aid for the [Microsoft Applied Skills: Administer Active Directory Domain Services](/credentials/applied-skills/administer-active-directory-domain-services/) credential, or for helps with labs and activities, we'd appreciate your feedback. Please complete a **[brief survey](https://forms.office.com/r/0eaEXzVTbZ)** to share your thoughts. You can complete the survey again if you've already completed it but have other, or different thoughts on the AD DS Tutor.
