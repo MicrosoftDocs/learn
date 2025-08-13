@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.agent-orchestration-patterns.ai-agent-orchestration-patterns
+title: AI Agent Orchestration Patterns
+metadata:
+  title: AI Agent Orchestration Patterns
+  description: Introduction to AI Agent Orchestration Patterns
+  ms.date: 08/13/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-ai-agent-orchestration-patterns.md)]
