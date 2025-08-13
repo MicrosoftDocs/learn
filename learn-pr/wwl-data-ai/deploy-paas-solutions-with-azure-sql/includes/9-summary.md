@@ -5,3 +5,4 @@ Now that you've reviewed this module, you should be able to:
 - Understand PaaS provisioning and deployment options
 - Understand elastic pools and hyperscale features
 - Examine SQL Managed Instances
+
