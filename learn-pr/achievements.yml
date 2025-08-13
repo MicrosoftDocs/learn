@@ -6385,3 +6385,8 @@ achievements:
   title: Build your first Bicep deployment workflow by using GitHub Actions
   summary: In this module, you'll create an automated workflow in GitHub Actions that securely deploys resources to Azure from Bicep code. You'll also learn to configure your workflow to run on a schedule or when your configuration changes.
   iconUrl: /training/achievements/bicep/build-first-bicep-deployment-workflow-using-github-actions.svg
+- uid: learn.bicep-pipelines-github-actions.trophy
+  type: trophy
+  title: Deploy Azure resources by using Bicep and GitHub Actions
+  summary: Gain all of the benefits of infrastructure as code by using an automated workflow to deploy your Bicep templates, and integrate other deployment activities with your workflows. You'll build workflows using GitHub Actions.
+  iconUrl: /training/achievements/bicep/bicep-github-actions.svg
