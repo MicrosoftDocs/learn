@@ -12,10 +12,10 @@ An example of where the group chat orchestration pattern is appropriate is a cit
 
 Each agent may have the following approach:
 
-1. The _community engagement agent_ evaluates accessibility requirements, anticipated resident feedback, and usage patterns to ensure equitable community access
-1. The _environmental planning agent_ assesses ecological impact, sustainability measures, native vegetation displacement, and compliance with environmental regulations
-1. The _budget and operations agent_ analyzes construction costs, ongoing maintenance expenses, staffing requirements, and long-term operational sustainability
-1. The chat manager facilitates structured debate where agents challenge each other's recommendations and defend their reasoning. A parks department employee participates in the chat thread to add insight and respond to agents' knowledge requests in real time. This process enables the employee to update the original proposal to address identified concerns and better prepare for community feedback
+- The _community engagement agent_ evaluates accessibility requirements, anticipated resident feedback, and usage patterns to ensure equitable community access
+- The _environmental planning agent_ assesses ecological impact, sustainability measures, native vegetation displacement, and compliance with environmental regulations
+- The _budget and operations agent_ analyzes construction costs, ongoing maintenance expenses, staffing requirements, and long-term operational sustainability
+- The chat manager facilitates structured debate where agents challenge each other's recommendations and defend their reasoning. A parks department employee participates in the chat thread to add insight and respond to agents' knowledge requests in real time. This process enables the employee to update the original proposal to address identified concerns and better prepare for community feedback
 
 [![A diagram of group chat orchestration in the example application.](../media/group-chat-orchestration-example.png)](../media/group-chat-orchestration-example.png#lightbox)
 

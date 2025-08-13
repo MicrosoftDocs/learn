@@ -10,7 +10,7 @@ metadata:
   ms.topic: module
   ms.service: copilot-for-azure
   ms.collection: ce-advocates-ai-copilot
-title: Introduction to AI Agent Orchestration Patterns
+title: Introduction to AI agent orchestration patterns
 summary: In this module, you learn about the fundamental orchestration patterns for multi-agent architectures.
 abstract: | 
   Completing this module helps you choose which of the following orchestration patterns is appropriate for your AI application's specific requirements:
