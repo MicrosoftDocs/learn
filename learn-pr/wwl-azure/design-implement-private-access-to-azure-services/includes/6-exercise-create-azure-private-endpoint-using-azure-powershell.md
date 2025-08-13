@@ -9,20 +9,22 @@ In this lab, you create a Private Endpoint for an Azure web app and deploy a vir
 
 ## Job skills
 
- - Create a resource group and deploy a web app.
- - Create a virtual network and bastion host.
- - Create a test virtual machine.
- - Create a private endpoint.
- - Configure the private DNS zone.
- - Test connectivity across the private endpoint.
+- Create a resource group
+- Create a virtual network
+- Deploy Azure Bastion
+- Create a private endpoint
+- Configure the private DNS zone
+- Create a test virtual machine
+- Test connectivity to the private endpoint
 
 > [!IMPORTANT]
 > Estimated time: 45 minutes.
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
+> If you have completed the previous exercise, then this lab is optional. 
 
 Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M07-Unit%206%20Create%20an%20Azure%20private%20endpoint%20using%20Azure%20PowerShell.html)
+[![Button to launch exercise.](../media/launch-exercise.png)](/azure/private-link/create-private-endpoint-powershell?tabs=dynamic-ip)
 
 
 
