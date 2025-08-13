@@ -17,7 +17,7 @@ Throughout this process, the manager agent continuously refines the task ledger 
 
 The manager agent might watch for excessive stalls in restoring service and guards against infinite remediation loops. It maintains a complete audit trail of the evolving plan and the implementation steps, which provides transparency for post-incident review. This transparency ensures that the SRE team can improve both the workload and the automation based on lessons learned.
 
-![A diagram of magentic orchestration in the example application.](../media/image10.png)
+[![A diagram of magentic orchestration in the example application.](../media/magentic-orchestration-example.png)](../media/magentic-orchestration-example-big.png#lightbox)
 
 The magnetic orchestration pattern is appropriate in the following scenarios:
 
