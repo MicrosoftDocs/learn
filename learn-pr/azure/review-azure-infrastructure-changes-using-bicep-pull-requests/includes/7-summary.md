@@ -16,5 +16,4 @@ You've now increased your team's confidence in your Bicep development process an
   - [Manage repository changes by using pull requests on GitHub](/training/modules/manage-changes-pull-requests-github/)
   - [Collaborate with pull requests in Azure Repos](/training/modules/collaborate-pull-requests-azure-repos/)
 - Bicep best practices
-  - [Structure your Bicep code for collaboration](/training/modules/structure-bicep-code-collaboration/)
   - [Best practices for Bicep](/azure/azure-resource-manager/bicep/best-practices)

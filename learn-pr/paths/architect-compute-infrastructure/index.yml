@@ -30,6 +30,5 @@ modules:
 - learn.deploy-vms-from-vhd-templates
 - learn.build-app-with-scale-sets
 - learn.intro-to-hpc
-- learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli
 trophy:
   uid: learn.architect-compute-infrastructure.trophy
