@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-devops.what-source-control
-title: What is source control?
+title: What is Source Control?
 metadata:
   title: What is source control?
   description: "Understand version control systems and their importance in software development workflows."
-  ms.date: 08/11/2025
+  ms.date: 08/15/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
