@@ -53443,6 +53443,81 @@
       "source_path": "learn-pr/wwl-data-ai/deploy-paas-solutions-with-azure-sql/9-knowledge-check.md",
       "redirect_url": "/training/modules/deploy-paas-solutions-with-azure-sql/8-knowledge-check",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-lighthouse/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/lighthouse/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-lighthouse/2-what-is-azure-lighthouse.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/lighthouse/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-lighthouse/3-how-azure-lighthouse-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/lighthouse/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-lighthouse/4-when-to-use-azure-lighthouse.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/lighthouse/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-lighthouse/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/lighthouse/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-lighthouse/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/lighthouse/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-lighthouse/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/lighthouse/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/2-evaluate-data-redundancy-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/3-exercise-change-replication-strategy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/4-evaluate-storage-account-failover.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/5-exercise-failover-secondary-location.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
     }
   ]
 }
