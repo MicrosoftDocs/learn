@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-sk-multi-agent-solution.use-group-chat-orchestration
+title: Use group chat orchestration
+metadata:
+  title: Use group chat orchestration
+  description: Learn how and when to use the group chat orchestration pattern.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 08/14/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-use-group-chat-orchestration.md)]

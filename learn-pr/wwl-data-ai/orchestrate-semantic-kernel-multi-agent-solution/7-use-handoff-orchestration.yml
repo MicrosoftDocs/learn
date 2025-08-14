@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-sk-multi-agent-solution.use-handoff-orchestration
+title: Use handoff orchestration
+metadata:
+  title: Use handoff orchestration
+  description: Learn how and when to use the handoff orchestration pattern.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 08/14/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-use-handoff-orchestration.md)]

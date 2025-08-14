@@ -12,9 +12,9 @@ The Agent Framework in Semantic Kernel provides architecture on top of existing 
 
     Agents are intelligent, AI-driven entities capable of reasoning and executing tasks. They use language models, functions, and memory to make decisions dynamically.
 
-- **Agent collaboration**
+- **Agent orchestration**
 
-    Agents can collaborate together through an **agent group chat**, which enables multiple agents to join the same chat, even of different agent types. Agent group chats determine which agent should respond and how to determine if the conversation is finished.
+    Multiple agents can collaborate towards a common goal with different orchestration patterns. The Semantic Kernel supports severa different orchestration patterns, each with a unified interface for construction and invocation, so you can easily switch between patterns without rewriting your agent logic.
 
 The features that power Semantic Kernel are also still available within the Agent Framework, including:
 

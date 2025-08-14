@@ -5,7 +5,7 @@ metadata:
   description: Learn how to design multi-agent solutions with Semantic Kernel and Azure AI Foundry
   author: buzahid
   ms.author: buzahid
-  ms.date: 02/24/2025
+  ms.date: 08/14/2025
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
 title: Orchestrate a multi-agent solution using Semantic Kernel
@@ -13,8 +13,8 @@ summary: Learn how to use the Semantic Kernel SDK to develop your own AI agents 
 abstract: |
   By the end of this module, you'll be able to:
   - Build AI agents using the Semantic Kernel SDK
+  - Understand how and when to use different orchestration patterns
   - Develop multi-agent solutions
-  - Create custom selection and termination strategies for agent collaboration
 prerequisites: |
   - Familiarity with Azure and the Azure portal.
   - An understanding of generative AI. You can learn more with [Fundamentals of Generative AI](/training/modules/fundamentals-generative-ai/).
@@ -33,9 +33,12 @@ subjects:
 units:
 - learn.wwl.orchestrate-sk-multi-agent-solution.introduction
 - learn.wwl.orchestrate-sk-multi-agent-solution.understand-agent-framework
-- learn.wwl.orchestrate-sk-multi-agent-solution.create-agent-group-chat
-- learn.wwl.orchestrate-sk-multi-agent-solution.design-agent-selection-strategy
-- learn.wwl.orchestrate-sk-multi-agent-solution.define-chat-termination-strategy
+- learn.wwl.orchestrate-sk-multi-agent-solution.understand-agent-orchestration
+- learn.wwl.orchestrate-sk-multi-agent-solution.use-concurrent-orchestration
+- learn.wwl.orchestrate-sk-multi-agent-solution.use-sequential-orchestration
+- learn.wwl.orchestrate-sk-multi-agent-solution.use-group-chat-orchestration
+- learn.wwl.orchestrate-sk-multi-agent-solution.use-handoff-orchestration
+- learn.wwl.orchestrate-sk-multi-agent-solution.use-magnetic-orchestration
 - learn.wwl.orchestrate-sk-multi-agent-solution.exercise
 - learn.wwl.orchestrate-sk-multi-agent-solution.knowledge-check
 - learn.wwl.orchestrate-sk-multi-agent-solution.summary

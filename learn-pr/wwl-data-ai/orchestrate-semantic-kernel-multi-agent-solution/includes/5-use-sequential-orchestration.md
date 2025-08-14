@@ -6,7 +6,7 @@ Sequential orchestration works best for tasks that need to be done step-by-step,
 
 ## When to use sequential orchestration
 
-Use the sequential orchestration pattern when your workflow has:
+Consider using the sequential orchestration pattern when your workflow has:
 
 - Processes made up of multiple steps that must happen in a specific order, where each step relies on the one before it.  
 - Data workflows where each stage adds something important that the next stage needs to work properly.  
