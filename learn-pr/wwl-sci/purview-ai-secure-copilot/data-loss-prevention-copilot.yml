@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-ai-secure-copilot.data-loss-prevention-copilot
-title: Apply DLP policies scoped to Microsoft 365 Copilot
+title: Apply DLP policies to Microsoft 365 Copilot
 metadata:
-  title: Apply DLP policies scoped to Microsoft 365 Copilot
-  description: "Apply DLP policies scoped to Microsoft 365 Copilot"
-  ms.date: 04/10/2025
+  title: Apply DLP Policies to Microsoft 365 Copilot
+  description: "Apply DLP policies to Microsoft 365 Copilot"
+  ms.date: 08/18/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit

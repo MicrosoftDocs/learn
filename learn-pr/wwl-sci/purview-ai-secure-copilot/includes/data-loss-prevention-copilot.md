@@ -8,7 +8,7 @@ The **Microsoft 365 Copilot** policy location is available when you create a cus
 
 | Condition | Description |
 |-----|-----|
-| **Content contains > Sensitivity labels** | Detects when labeled files or emails are accessed by Copilot |
+| **Content contains** > **Sensitivity labels** | Detects when labeled files or emails are accessed by Copilot |
 
 | Action | Description |
 |-----|-----|

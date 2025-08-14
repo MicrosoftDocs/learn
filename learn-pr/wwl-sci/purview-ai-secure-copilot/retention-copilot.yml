@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-ai-secure-copilot.retention-copilot
-title: Retain Microsoft 365 Copilot prompts and responses
+title: Apply retention policies to Copilot prompts and responses
 metadata:
-  title: Retain Microsoft 365 Copilot prompts and responses
-  description: "Retain Microsoft 365 Copilot prompts and responses."
-  ms.date: 04/10/2025
+  title: Apply Retention Policies to Copilot Prompts and Responses
+  description: "Apply retention policies to Copilot prompts and responses."
+  ms.date: 08/18/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit

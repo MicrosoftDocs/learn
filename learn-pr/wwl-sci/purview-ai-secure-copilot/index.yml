@@ -3,7 +3,7 @@ uid: learn.wwl.purview-ai-secure-copilot
 metadata:
   title: Secure Microsoft 365 Copilot Interactions with Microsoft Purview
   description: AI tools like Microsoft 365 Copilot create new ways to interact with sensitive data, but they also introduce new risks. Learn how Microsoft Purview helps you apply security and compliance controls that protect data, manage AI activity, and support responsible use at scale.
-  ms.date: 04/10/2025
+  ms.date: 08/18/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -42,13 +42,13 @@ subjects:
 units:
 - learn.wwl.purview-ai-secure-copilot.introduction
 - learn.wwl.purview-ai-secure-copilot.understand-copilot-protection-needs
+- learn.wwl.purview-ai-secure-copilot.compliance-manager-copilot
+- learn.wwl.purview-ai-secure-copilot.audit-copilot
+- learn.wwl.purview-ai-secure-copilot.communication-compliance-copilot
 - learn.wwl.purview-ai-secure-copilot.sensitivity-labels-copilot
 - learn.wwl.purview-ai-secure-copilot.data-loss-prevention-copilot
 - learn.wwl.purview-ai-secure-copilot.retention-copilot
-- learn.wwl.purview-ai-secure-copilot.audit-copilot
 - learn.wwl.purview-ai-secure-copilot.ediscovery-copilot
-- learn.wwl.purview-ai-secure-copilot.communication-compliance-copilot
-- learn.wwl.purview-ai-secure-copilot.compliance-manager-copilot
 - learn.wwl.purview-ai-secure-copilot.knowledge-check
 - learn.wwl.purview-ai-secure-copilot.summary
 badge:
