@@ -53450,11 +53450,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/choose-compute-provisioning/1-introduction.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/choose-compute-provisioning/2-provisioning-solutions.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
       "redirect_document_id": false
