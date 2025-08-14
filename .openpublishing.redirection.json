@@ -53481,42 +53481,42 @@
     },
     {
       "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/1-introduction.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/2-implement-hub-spoke.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/3-plan-virtual-networks.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/4a-create-hub-spoke-virtual-network-manager.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/4-exercise-implement-hub-spoke.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/5-secure-hub-spoke.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/6-summary.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/index.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
       "redirect_document_id": false
     }
   ]
