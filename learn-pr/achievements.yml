@@ -110,6 +110,46 @@ achievements:
   title: Make your virtual machines highly available
   summary: Make your virtual machines highly available
   iconUrl: /training/achievements/make-your-virtual-machines-highly-available.svg
+- uid: learn.cloud-adoption-framework-strategy.badge
+  type: badge
+  title: Develop a cloud adoption strategy by using the Cloud Adoption Framework
+  summary: The Cloud Adoption Framework for Azure consists of eight methodologies. This module focuses on the [Strategy methodology](/azure/cloud-adoption-framework/strategy/). It provides guidance about how to assess your existing strategy and identify ways to improve it before you adopt and integrate cloud technologies. The next methodology is the [Plan methodology](/azure/cloud-adoption-framework/plan/), where you create an actionable plan to implement your cloud adoption strategy.
+  iconUrl: /training/achievements/cloud-adoption-framework-strategy.svg
+- uid: learn.azure.cloud-adoption-framework-ready.badge
+  type: badge
+  title: Choose the best Azure landing zone to support your requirements for cloud operations
+  summary: Azure landing zones can accelerate configuration of your cloud environment. This module will help you choose and get started with the best landing zone option for your needs.
+  iconUrl: /training/achievements/cloud-adoption-framework-ready.svg
+- uid: learn.cloud-adoption-framework-migrate.badge
+  type: badge
+  title: Use the Cloud Adoption Framework Migrate methodology to migrate your workload to the cloud
+  summary: Learn how to use the four stages of the Cloud Adoption Framework Migrate methodology to migrate your workload to the cloud.
+  iconUrl: /training/achievements/cloud-adoption-framework-migrate.svg
+- uid: learn.azure.cloud-adoption-framework-govern.badge
+  type: badge
+  title: Address tangible risks with the Govern methodology of the Cloud Adoption Framework for Azure
+  summary: Without proper governance, it can be difficult and laborious to maintain consistent control across a portfolio of workloads. Fortunately, cloud-native tools like Azure Policy provide convenient means to establish those controls. The Govern methodology helps you evaluate and establish corporate policies and disciplines to mitigate tangible risks.
+  iconUrl: /training/achievements/address-risks-caf-govern.svg
+- uid: learn.cloud-adoption-framework-manage.badge
+  type: badge
+  title: Ensure stable operations and optimization across all supported workloads deployed to the cloud
+  summary: As workloads are deployed to the cloud, operations are critical to success. In this learn module, you learn how to deploy an operations baseline to manage workloads in your environment. The module also covers how to enhance the baseline, both for workloads and for platforms.
+  iconUrl: /training/achievements/cloud-adoption-framework-manage.svg
+- uid: learn.innovate-applications-azure-cloud-technologies.badge
+  type: badge
+  title: Innovate applications by using Azure cloud technologies
+  summary: Innovation is a complex subject that encompasses many disciplines. The agility of the public cloud allows to quicker innovation cycles and quicker hypothesis verification. Learn how to use Azure cloud technologies to sustain your organization's innovation requirements.
+  iconUrl: /training/achievements/innovate-applications-azure-cloud-technologies.svg
+- uid: learn.azure.cloud-adoption-framework-security.badge
+  type: badge
+  title: Strengthen cloud security by using the Cloud Adoption Framework
+  summary: Organizations that move to the cloud often find that they need to modernize security practices and tooling to keep up with continuous changes in cloud platforms, business requirements, and security threats. The Cloud Adoption Framework for Azure consists of eight methodologies. This module focuses on the Secure methodology, which provides guidance for the security modernization journey.
+  iconUrl: /training/achievements/cloud-adoption-framework-security.svg
+- uid: learn.cloud-adoption-framework.trophy
+  type: trophy
+  title: Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure
+  summary: Do you need a clear path forward for your cloud journey? This learning path includes best practice guidance to help you create a cloud strategy, define a cloud adoption plan, prepare your cloud environment with proper governance, and implement cloud operations in alignment with your organizational needs. Cloud architects and IT professionals will learn and engage with the proven best practices, tools, and documentation in the Cloud Adoption Framework for Azure to build the technical knowledge needed to help your organization successfully adopt the cloud and meet business goals.
+  iconUrl: /training/achievements/cloud-adoption-framework.svg
 - uid: learn.scale-and-size-virtual-machines.badge
   type: badge
   title: Scale and size Virtual Machines in Azure
