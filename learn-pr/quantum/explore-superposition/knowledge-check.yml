@@ -7,7 +7,7 @@ metadata:
   author: azure-quantum-content
   ms.author: quantumdocwriters
   
-  ms.date: 01/22/2025
+  ms.date: 08/14/2025
   ms.topic: unit
   show_latex: true
   module_assessment: true
@@ -22,35 +22,35 @@ quiz:
       choices:
       - content: The limitation of a quantum system to exist only in one predefined, observable state.
         isCorrect: false
-        explanation: Incorrect. Superposition allows a quantum system to exist in multiple states, not just predefined ones.
-      - content: The phenomenon of a quantum system to be in a combination of multiple states at the same time.
+        explanation: Incorrect. Superposition is when a quantum system is described by a combination of multiple states, not just a single predefined state.
+      - content: The phenomenon of a quantum system to be described as a combination of multiple states at the same time.
         isCorrect: true
-        explanation: Correct. Superposition refers to the quantum phenomenon where a particle can exist in multiple states simultaneously.
+        explanation: Correct. Superposition refers to the quantum phenomenon where the state of a particle is described as a combination different states at the same time.
       - content: The observation of a quantum particle in one definite position at a time.
         isCorrect: false
-        explanation: Incorrect. This describes a classical state, not a quantum superposition where multiple states are possible simultaneously.
+        explanation: Incorrect. This describes a classical state, not a quantum superposition where the particle is described as a combination of all possible states simultaneously.
 
-    - content: If a qubit is in the state $|q\rangle = \frac{1}{\sqrt{3}} |0\rangle + \sqrt{\frac{2}{3}} |1\rangle$, what is the probability of measuring the qubit in the state $|0\rangle$?
+    - content: If a qubit is in the state $|q\rangle = \frac{1}{\sqrt{3}} |0\rangle + \sqrt{\frac{2}{3}} |1\rangle$, what is the probability that you measure the qubit to be in the state $|0\rangle$?
       choices:
       - content: The probability of measuring the qubit in the state $|0\rangle$ is $\frac{1}{3}$.
         isCorrect: true
-        explanation: Correct. The probability of obtaining the qubit state is the absolute value of the probability amplitude squared. For the state $|0\rangle$, the probability amplitude is $\frac{1}{\sqrt{3}}$.
+        explanation: Correct. The probability that you measure a particular qubit state is the square of the magnitude of the probability amplitude for that state. For the state $|0\rangle$, the probability amplitude is $\frac{1}{\sqrt{3}}$.
       - content: The probability of measuring the qubit in the state $|0\rangle$ is $\frac{2}{3}$.
         isCorrect: false
-        explanation: Incorrect. The probability of obtaining the qubit state is the absolute value of the probability amplitude squared. For the state $|0\rangle$, the probability amplitude is $\frac{1}{\sqrt{3}}$.
+        explanation: Incorrect. The probability that you measure a particular qubit state is the square of the magnitude of the probability amplitude for that state. For the state $|0\rangle$, the probability amplitude is $\frac{1}{\sqrt{3}}$.
       - content: The probability of measuring the qubit in the state $|0\rangle$ is $\frac{1}{\sqrt{3}}$.
         isCorrect: false
-        explanation: Incorrect. The probability of obtaining the qubit state is the absolute value of the probability amplitude squared. For the state $|0\rangle$, the probability amplitude is $\frac{1}{\sqrt{3}}$.
+        explanation: Incorrect. The probability that you measure a particular qubit state is the square of the magnitude of the probability amplitude for that state. For the state $|0\rangle$, the probability amplitude is $\frac{1}{\sqrt{3}}$.
 
-    - content: You write a Q# program that applies the Hadamard operation to a qubit and then measures it, how can you examine the state of the qubit at different stages?
+    - content: You write a Q# program that applies the Hadamard operation to a qubit and then measures the qubit. How can you examine the state of the qubit at different stages in the program?
       choices:
       - content: You print the qubit's state directly to the console.
         isCorrect: false
-        explanation: Incorrect. Q# does not allow direct printing of a qubit's state to the console due to the nature of quantum mechanics.
+        explanation: Incorrect. Q# does not allow direct printing of a qubit's state to the console because of the nature of quantum mechanics.
       - content: You use the `DumpMachine` function after each operation.
         isCorrect: true
         explanation: Correct. The `DumpMachine` function allows developers to output the state of the quantum simulator at specific points in the program.
-      - content: You use the `Measure` function after each operation.
+      - content: You use the `Measure` operation after each operation.
         isCorrect: false
-        explanation: Incorrect. The `Measure` function would not provide the state of the qubit at different stages but rather collapse the qubit's state.
-
+        explanation: Incorrect. The `Measure` operation doesn't provide the state of the qubit at different stages, but rather collapses the qubit's state to a single basis state.
+

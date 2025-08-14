@@ -1,37 +1,38 @@
+In the classical world, real objects like the cat and the box can only be in one state at a time. But in the quantum world, particles can exist in superposition of all their possible states.
 
-If the cat from the previous unit was a quantum cat, the state of the quantum cat and the box system would be the same: the sum of the six different positions of the quantum cat with respect to the box, weighted by the probability of finding the quantum cat in that position. The only difference is that the classic cat can be in one (and only one) of six possible positions while the quantum cat can be in all six positions at the same time!
+Unfortunately, there aren't any quantum computers that use cats to perform calculations. Instead, actual quantum computers use qubits, short for quantum bits. Just like how a bit is the basic unit of information in classical computing, a qubit is the basic unit of information in quantum computing. And just like how bits can take either one of two possible values, 0 and 1, a qubit also has a value of 0 or 1 when we measure the qubit.
 
-In the classical world, objects can only be in one state at a time. However, in the quantum world, quantum particles can be in multiple states at the same time. This phenomenon is called **superposition**.
+There are many physical representations of qubits. For example, the polarization of a photon or the spin state of an electron can both be used as qubits. Photons have two distinct polarization states and electrons have two distinct spin states when we measure them. We can represent one of those states as 0 and the other state as 1, and the qubit will always give 0 or 1 when we measure it.
 
-In quantum computing nobody uses quantum cats - sadly - but **qubits**. The word "qubit" means "quantum bit". Just like in classical computing, where the basic unit of information is the bit, in quantum computing the basic unit of information is the qubit. And just like the bit can take two possible values, 0 and 1, a qubit is any quantum particle that can be in two possible states. For example, a qubit could be a photon, which can be polarized in two directions, or an electron, which can be in two energy levels.
+But how do we represent superposition in a qubit? And what is the probability that we find a qubit in a particular state when we take a measurement?
 
-How can you represent the superposition in a qubit? What is the probability of finding a qubit in a particular state?
+## Bloch sphere representation of superposition for single qubits
 
-## How can you represent the superposition in a qubit?
+A qubit is a quantum particle that is in one of two possible states when we measure the qubit. Regardless of the physical nature of the qubit, we label the two states as 0 and 1. A qubit can be in the state 0, in the state 1, or in an infinite number of  superpositions of both the 0 and 1 states. How do we represent these superpositions in quantum computing?
 
-A qubit is a quantum particle that has two possible positions, or *states*. As analog to the classical bit, the quantum states of a qubit are also called $0$ and $1$. A qubit can be in the state $0$, in the state $1$, and in any superposition of both states. How can you represent this superposition?
+A helpful geometric representation of the superposition state of a single qubit is the Bloch sphere.
 
-Imagine that you draw a circle and a vertical and horizontal axis such that the middle point is the center of the circle. The state $0$ is placed at the upper point of the vertical axis and the state $1$ is at the lower point.
+Imagine that you draw a circle with a unit radius (radius length equal to 1). Then, draw a vertical and horizontal axis such that the two axes intersect at the center of the circle. Now, let's define the 0 state to be where the vertical axis meets the top of the circle and the 1 state to be where the vertical axis meets the bottom of the circle. On this circle, the 0 and 1 states are $180^\circ$, or $\pi$ radians, from each other.
 
-How could you describe this representation? You could say that the state $0$ is an arrow, or a *vector*, pointing up and the state $1$ is a vector pointing down. Therefore a classical bit would be a vector pointing either up or down, but never in another direction.
+How does this representation relate to the state of a qubit? We can represent the qubit's state with an arrow (or vector) of unit length that's drawn from the center of the circle to the edge of the circle. When the vector is pointing vertically up, the qubit is in the 0 state, and when the vector is pointing vertically down, the qubit is in the 1 state. In this representation, a classical bit would be a vector that is always pointing straight up or straight down, but never in any other direction.
 
-:::image type="content" source="../media/superposition-bloch-sphere.png" alt-text="Diagram of a circle with two arrows pointing up and down from the center of the circle. The arrows represent the states 0 and 1 respectively. Any other state is an arrow pointing at other directions.":::
+:::image type="content" source="../media/superposition-bloch-sphere.png" alt-text="Diagram of a circle with two arrows pointing up and down from the center of the circle. The arrows represent the states 0 and 1 respectively. Any other state is an arrow pointing at another direction.":::
 
-What about any other point of the circle? How can you represent that state? Just as coordinates in a plane, you could try to represent it as a combination of the two states $0$ and $1$. For example, you could take how close the vector is from the state $0$ and call this angle $\alpha$, and how close is from the state $1$ and call this angle $\beta$. We could represent the state as $\alpha 0 + \beta 1 $. Thus, the state is a *superposition* of the states $0$ and $1$.
+For a qubit, the vector can point anywhere on the circle. Each location on the circle, other than straight up or straight down, represents a superposition state. For example, we call the angle that the vector makes with the 0 state $\alpha$, and that angle that the vector makes with the 1 state $\beta$. Then, we represent the superposition state of the qubit as $\alpha 0 + \beta 1$.
 
-Just like the example of the cat and the box, the global state of a qubit is the sum of the individual states, $0$ and $1$, weighted by the probability of finding the qubit in that state, $\alpha$ and $\beta $.
+Similar to the example of the cat and the box, the superposition state of a qubit is the sum of the individual states, 0 and 1, weighted by the numbers $\alpha$ and $\beta$. However, in the cat-and-box system the weights are real numbers, but in the qubit system the weights $\alpha$ and $\beta$ are complex numbers.
+
+Because that amplitudes $\alpha$ and $\beta$ are complex numbers, we need another circle in our diagram that's in a plane perpendicular to the first circle in order to truly represent any superposition state of the qubit. These two circles exist in three dimensions to produce the Bloch sphere.
 
 :::image type="content" source="../media/bloch-sphere.png" alt-text="Diagram of the Bloch sphere with states 0 and 1 in the z axis, and other vector representing the infinite combinations of superpositions.":::
 
-This representation of a qubit is actually accurate, and it's known as the *Bloch sphere*.
+This Bloch sphere is an accurate geometrical representation of every possible superposition state for a single qubit, where the the state is represented by the location on the sphere's surface that the vector is pointing at. As useful as the Bloch sphere is, it unfortunately can't be extended to systems with multiple qubits.
 
 > [!TIP]
-> The Bloch sphere is a powerful tool as the operations that we can perform on a qubit can be represented as rotations about one of the cardinal axes. While thinking about a quantum computation as a sequence of rotations is a powerful intuition, it is challenging to use this intuition to design and describe algorithms. Q# alleviates this issue by providing a language for describing such rotations.
+> The Bloch sphere is a powerful tool because the operations that we perform on a qubit during quantum computation can be represented as rotations about one of the Bloch sphere's cardinal axes. This geometric representation helps to build intuition about how operations work in quantum computing, but it's challenging to use this intuition to design and describe algorithms. Q# alleviates this issue by providing a language for describing such rotations.
 
 ## What is the probability of finding a qubit in a state?
 
-Like in the example of the cat and the box of the previous unit, the global state of a qubit is the sum of the individual states, $0$ and $1$, weighted by the probability of finding the qubit in that state, $\alpha$ and $\beta $. The numbers $\alpha$ and $\beta$ represent how "close" the qubit state is to the states $0$ and $1$, respectively. So, are $\alpha$ and $\beta$ the probability of finding the qubit in the state $0$ or $1$? Not exactly.
+In the cat-and-box system from the previous unit, the weights for each state are real numbers that directly correspond to the probability of finding the system in each state. In the qubit system, the numbers $\alpha$ and $\beta$ are in general complex numbers that don't directly give the probabilities of finding the qubit in the 0 and 1 states. Instead, these numbers are called probability amplitudes (or just amplitudes).
 
-The numbers $\alpha$ and $\beta$ are *probability amplitudes* for each state. Their absolute values, for example $|\alpha|^2$ give the corresponding probabilities. For example, the probability for observing state $0$ is $|\alpha|^2$, and the probability of observing state $1$ is $|\beta|^2$.
-
-The numbers $\alpha$ and $\beta$ can be positive, negative, or even complex numbers. However, in a valid quantum superposition, all probabilities must sum to one: $|\alpha|^2+|\beta|^2=1$. This constraint is known as the *normalization condition*. You can think of the normalization condition as the fact that you always obtain an outcome when you measure, so the probabilities of measuring every possible outcome must sum to one.
+The actual probabilities are calculated from the squares of the magnitudes of the probability amplitudes. The probability that a measurement finds the qubit in the 0 state is $|\alpha|^2$, and the probability that a measurement finds the qubit in the 1 state is $|\beta|^2$. In general, $\alpha + \beta$ does't sum to 100%, but $|\alpha|^2 + |\beta|^2$ always does. The constraint that $|\alpha|^2 + |\beta|^2 = 1$ is called the normalization condition, and every valid quantum state must meet this condition.
