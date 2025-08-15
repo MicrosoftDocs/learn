@@ -1,57 +1,61 @@
-| :::image type="icon" source="../media/goal.svg"::: The workload must continue to operate with full or reduced functionality. |
+| :::image type="icon" source="../media/goal.svg"::: Ensure that the workload continues to run with full or reduced functionality. |
 | :----------------------------------------------------------------------------------------------------------------------------------------- |
 
-You should expect component malfunctions, platform outages, performance degradations, and other faults to occur. Build resiliency in the system so that it's fault-tolerant and can degrade gracefully.
+You should be ready for component malfunctions, platform outages, performance degradations, and other problems. Build your system to be resilient and handle these faults gracefully.
 
 **Example scenario**
 
-Contoso Air is a commercial airline that has an in-house development department. The main LOB application is a booking solution that allows customers to book flights directly with Contoso Air. The app is built in Azure and uses Azure App Service, Cosmos DB, Azure Functions, Azure Logic Apps, and Azure Service Bus.
+Contoso Air is a commercial airline that has an in-house development department. The main line of business (LOB) application is a booking solution that lets customers book flights directly with Contoso Air. The app is built in Azure and uses Azure App Service, Azure Cosmos DB, Azure Functions, Azure Logic Apps, and Azure Service Bus.
 
 ## Determine failure risks
 
-**Identify potential failure points in the system, especially for the critical components, and determine the effect on user and system flows.**
+**Identify where the system might fail, especially in critical areas, and determine the effect on user and system flows.**
 
-Analyze the failure case, blast radius, and intensity of fault for each potential failure point. Failure cases and their intensity can range from relatively low-impact scenarios like the temporary loss of a backend process to full-scale outages resulting from disasters. Performing this analysis helps you determine the design of error handling capabilities at the component level.
+Analyze the failure case, blast radius, and intensity of fault for each potential failure point. Failures can range from relatively minor problems like the temporary loss of a back-end process to major outages from disasters. Performing this analysis helps you design ways to handle faults at the component level.
 
 *Contoso's challenge*
 
-- The LOB application provides many key functions ranging from marketing through commerce. The ticket purchase user flow has been identified as the most critical flow.  The workload team has determined that more reliability measures should be implemented to ensure that the flow is optimized for resilience.
-- The team has time budgeted for improvements like decoupling components and redesigning flows, but wants to ensure that they're using that time to focus on the highest value improvements.
+- The LOB app provides many key functions, from marketing to commerce. The workload teams identified the ticket purchase user flow as the most critical flow. They want to add more reliability measures to ensure that this flow is resilient.
+
+- They set aside time for improvements like separating components and redesigning flows, but they want to focus on the highest value improvements.
 
 *Applying the approach and outcomes*
 
-- The team identifies the external payment gateway as a potential failure point. The gateway is highly available but there’s a potential for users experiencing occasional transient faults resulting from network issues or bursts of extremely high requests. The gateway might reject some requests when it’s overloaded by multiple simultaneous requests being sent.
-- The team determines that users must resubmit requests when the gateway rejects their initial requests, causing a negative user experience.
+- The team identifies the external payment gateway as a potential failure point. The gateway is highly available, but users might experience occasional transient faults from network problems or high request volumes. If multiple requests happen at the same time, the gateway might reject some requests because it's overloaded.
+
+- The team determines that users have to resubmit requests if the gateway rejects them, causing a negative user experience.
 
 ## Implement self-preservation mechanisms
 
-**Build self-preservation capabilities by using design patterns correctly and modularizing the design to isolate faults.**
+**Use design patterns and separate the design into modules to isolate faults so that your system can protect itself.**
 
-By building self-preservation capabilities into the system, you'll be able to prevent a problem from affecting downstream components. The system will be able to mitigate transient and permanent failures, performance bottlenecks, and other problems that might affect reliability. You'll also be able to minimize the blast radius.
+By building self-preservation capabilities into the system, you can prevent a problem from affecting downstream components. Your system will be able to mitigate transient and permanent failures, performance bottlenecks, and other problems that might affect reliability. You can also minimize the impact of any problems.
 
 *Contoso's challenge*
 
-- The team wants to minimize the risk of transient failures causing users' requests to be rejected by the payment gateway.  Because of the transient nature of some of the error conditions, there’s a high probability the same request will succeed if resubmitted.
+- The team wants to reduce the chances of temporary errors causing users' payment requests to be rejected. The errors are often short-lived, so there's a good chance that the same request will go through if the user tries again.
 
 *Applying the approach and outcomes*
 
-- The team develops custom logic in the flow to retry the transaction after a short delay when a failure that can be retried is detected.
-- The solution design will be modified to incorporate the Retry Pattern, slightly increasing the wait time between retries until the request is successfully processed or the maximum number of failures is reached.
-- The team also decides to decouple the user interaction and backend payment processing functionality of this flow using an event-driven approach with Azure Service Bus. When unrecoverable failures occur while processing the message (after the maximum number of retries), the backend processor abandons processing that request, leaving the message in the queue so it can be reprocessed at a later time.
+- The team adds custom logic in the flow to retry the transaction after a short delay when a retryable failure is detected.
+
+- They're changing the design to use the Retry pattern. This pattern makes the wait time between retries slightly longer until the request goes through or reaches the maximum number of attempts.
+- The team also decides to separate the user interaction and back-end payment processing by using an event-driven approach with Service Bus. After the maximum number of retries, if the system still can't process the message, the back-end processor stops processing that request and leaves it in the queue for later processing.
 
 ## Build comprehensive redundancy and resiliency
 
 **Build redundancy in layers and resiliency on various application tiers.**
 
-Aim for redundancy in physical utilities and immediate data replication. Also aim for redundancy in the functional layer that covers services, operations, and personnel. Redundancy helps minimize single points of failure. For example, if there’s an outage affecting one or more components, an availability zone, or an entire regional, a redundant (active-active or active-passive) deployment allows you to meet uptime targets.
+Create backups for physical utilities and data. Aim for redundancy in the functional layer that covers services, operations, and personnel. Redundancy helps minimize single points of failure. For example, if an outage affects one or more components, an availability zone, or an entire regional, a redundant deployment such as an active-active or active-passive deployment helps you meet uptime targets.
 
-Adding intermediaries prevents direct dependency between components and improves buffering. Both of these benefits harden the resiliency of the system.
+Adding intermediaries prevents direct dependency between components and improves buffering. These benefits improve the resiliency of the system.
 
 *Contoso's challenge*
 
-- Implementing retries and decoupling the payment gateway calls from the UI using Service Bus has dramatically increased the reliability of this flow, but the business stakeholders still worry about data loss that might happen due to a catastrophic failure in the primary region.  
+- Adding retries and separating the payment gateway calls from the UI by using Service Bus dramatically increased the reliability of this flow. But the business stakeholders still worry about data loss if there's a major failure in the primary region.
 
 *Applying the approach and outcomes*
 
-- The team decides to upgrade to Service Bus premium tier. By doing so, they can take advantage of that tier's Availability Zones support functionality. With this functionality, multiple copies of the data are stored across three physically separated facilities (availability zones), and the service has enough capacity reserves to instantly cope with the complete, catastrophic loss of a datacenter.
-- Additionally, the team configures Azure Service Bus Geo-Disaster recovery to continuously replicate data to a secondary region that will be used in the unlikely case of a complete failure of the primary region.
+- The team decides to upgrade to the Service Bus premium tier. This upgrade lets them use availability zones, which means that multiple copies of the data are stored across three physically separated facilities. So if one datacenter goes down completely, the service can handle it without any problems.
+
+- The team configures Service Bus geo-disaster recovery to continuously replicate data to a secondary region. So if the primary region fails completely, the secondary region can take over.
