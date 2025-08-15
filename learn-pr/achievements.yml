@@ -6415,3 +6415,13 @@ achievements:
   title: Manage data retention and deletion in Microsoft 365 workloads
   summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
   iconUrl: /training/achievements/manage-data-retention-in-microsoft-365.svg
+- uid: learn.create-first-azure-front-door.badge
+  type: badge
+  title: Load balance your web service traffic with Front Door
+  summary: Accelerate the delivery and maintain high availability of web applications by distributing web traffic across multiple web servers. Secure your web applications from intruders and malicious attacks with managed and unmanaged rules.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.ha-application-storage-with-grs.badge
+  type: badge
+  title: Make your application storage highly available with read-access geo-redundant storage
+  summary: In this module, you learn how to make your application storage highly available by ensuring that you can fail over resources if there's an Azure region failure.
+  iconUrl: /training/achievements/ha-application-storage-with-grs.svg
