@@ -6425,3 +6425,8 @@ achievements:
   title: Choose the best networking plugin for AKS
   summary: Understand the key differences and considerations when selecting between Azure CNI and kubenet, two networking plugin options for an Azure Kubernetes Service cluster.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.aks-cluster-architecture.trophy
+  type: trophy
+  title: Azure Kubernetes Service (AKS) cluster architecture and operations
+  summary: In this learning path, you'll understand some of the fundamental cluster architecture decisions you'll be faced with and be given the tools to help you make decisions for them.  You'll also learn about some of the governance and operations features available to AKS clusters.
+  iconUrl: /training/achievements/generic-trophy.svg
