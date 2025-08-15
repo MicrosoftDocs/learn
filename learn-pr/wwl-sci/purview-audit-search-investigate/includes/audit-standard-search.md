@@ -106,10 +106,12 @@ Steps in the investigation:
    - For soft- or hard-deleted items, open the record's **Details** and view **More information** for context like the subject line and original location.
 
      **Example of a soft-deleted item**:
-     :::image type="content" source="../media/soft-deleted-item.png" alt-text="Screenshot showing the audit record for a soft-deleted item.":::
+  
+      :::image type="content" source="../media/soft-deleted-item.png" alt-text="Screenshot showing the audit record for a soft-deleted item.":::
 
      **Example of a hard-deleted item**:
-     :::image type="content" source="../media/hard-deleted-item.png" alt-text="Screenshot showing the audit record for a hard-deleted item.":::
+
+        :::image type="content" source="../media/hard-deleted-item.png" alt-text="Screenshot showing the audit record for a hard-deleted item.":::
 
 1. **Take corrective action**:
 
