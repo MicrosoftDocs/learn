@@ -20,7 +20,7 @@ In the summary below, we have included controls from the full baseline where:
 
 The recommended logging guidance from MCSB on Azure is the following:
 
-* Ensure that you are integrating Azure activity logs into a centralized Log Analytics workspace. 
+* Ensure that you are integrating Azure activity logs into a centralized Log Analytics workspace.
 * Use Azure Monitor to query and perform analytics and create alert rules using the logs aggregated from Azure services, endpoint devices, network resources, and other security systems.
 * In addition, enable and onboard data to Microsoft Sentinel which provides the security information event management (SIEM) and security orchestration automated response (SOAR) capability.
 
@@ -34,20 +34,20 @@ Azure Monitor also includes Azure Monitor SCOM Managed Instance, which allows yo
 
 Use Azure Monitor to monitor these types of resources in Azure, other clouds, or on-premises:
 
--   Applications
--   Virtual machines
--   Guest operating systems
--   Containers
--   Databases
--   Security events in combination with Azure Sentinel
--   Networking events and health in combination with Network Watcher
--   Custom sources that use the APIs to get data into Azure Monitor
--   Collect your Prometheus metrics with Azure Managed Prometheus and analyze them using PromQL in Azure Managed Grafana.
+* Applications
+* Virtual machines
+* Guest operating systems
+* Containers
+* Databases
+* Security events in combination with Azure Sentinel
+* Networking events and health in combination with Network Watcher
+* Custom sources that use the APIs to get data into Azure Monitor
+* Collect your Prometheus metrics with Azure Managed Prometheus and analyze them using PromQL in Azure Managed Grafana.
 
 You can also export monitoring data from Azure Monitor into other systems so you can:
 
--   Integrate with other third-party and open-source monitoring and visualization tools
--   Integrate with ticketing and other ITSM systems
+* Integrate with other third-party and open-source monitoring and visualization tools
+* Integrate with ticketing and other ITSM systems
 
 ### High level architecture
 
@@ -57,10 +57,10 @@ The following diagram gives a high-level view of Azure Monitor.
 
 The diagram depicts the Azure Monitor system components:
 
--   The **[data sources](/azure/azure-monitor/data-sources)** are the types of data collected from each monitored resource. The data is collected and routed to the **data platform**.
--   The **[data platform](/azure/azure-monitor/data-platform)** is made up of the data stores for collected data. Azure Monitor's data platform has stores for metrics, logs, traces, and changes.
--   The functions and components that consume data include analysis, visualizations, insights, and responses.
--   Services that integrate with Azure Monitor to provide additional functionality and are integrated throughout the system.
+* The **[data sources](/azure/azure-monitor/data-sources)** are the types of data collected from each monitored resource. The data is collected and routed to the **data platform**.
+* The **[data platform](/azure/azure-monitor/data-platform)** is made up of the data stores for collected data. Azure Monitor's data platform has stores for metrics, logs, traces, and changes.
+* The functions and components that consume data include analysis, visualizations, insights, and responses.
+* Services that integrate with Azure Monitor to provide additional functionality and are integrated throughout the system.
 <!--
 [](/azure/azure-monitor/overview#data-sources)
 -->
@@ -130,11 +130,44 @@ Microsoft Purview Audit (Standard) provides with you with the ability to log and
 * *Audit search tool in the Microsoft Purview portal or the compliance portal.* Use the Audit log search tool in the portals to search for audit records. You can search for specific activities, for activities performed by specific users, and activities that occurred with a date range.
 
 * *Search-UnifiedAuditLog cmdlet.* You can also use the Search-UnifiedAuditLog cmdlet in Exchange Online PowerShell (the underlying cmdlet for the search tool) to search for audit events or to use in a script. For more information, see:
-    * Search-UnifiedAuditLog cmdlet reference
-    * Use a PowerShell script to search the audit log
+  * Search-UnifiedAuditLog cmdlet reference
+  * Use a PowerShell script to search the audit log
 
 * *Export audit records to a CSV file.* After running the Audit log search tool in the Microsoft Purview portal or the compliance portal, you can export the audit records returned by the search to a CSV file. This lets you use Microsoft Excel sort and filter on different audit record properties. You can also use Excel Power Query transform functionality to split each property in the AuditData JSON object into its own column. This lets you effectively view and compare similar data for different events. For more information, see Export, configure, and view audit log records.
 
 * *Access to audit logs via Office 365 Management Activity API.* A third method for accessing and retrieving audit records is to use the Office 365 Management Activity API. This lets organizations retain auditing data for longer periods than the default 180 days and lets them import their auditing data to a SIEM solution. For more information, see Office 365 Management Activity API reference.
 
 * *180-day audit log retention.* When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for your organization. In Audit (Standard), records are retained for 180 days, which means you can search for activities that occurred within the past six months.
+
+## Log storage tiers in Microsoft Sentinel
+
+Microsoft Sentinel is a cloud-native Security Information and Event Management (SIEM) solution that provides comprehensive visibility and threat detection across an organization's entire technology ecosystem. When you create an instance of Microsoft Sentinel, you create or select an Azure Log Analytics workspace and enable Microsoft Sentinel on that workspace.  That workspace becomes the SIEM data repository.
+
+Microsoft Sentinel, being cloud-based solution, introduces cost considerations. You pay for data ingestion, data retention, and sometimes queries. Also, organizations have different needs for logs.  Some logs contain high fidelity data that have critical security value and are used for rea-time monitoring, alerts, and analytics.  Other logs may contain high volume data that may contain limited security value, but help draw a full picture of security incident or breach through on-demand querying, analytics, and long-term hunting. So, while all logs can be useful, not all logs are of equal value.
+
+Microsoft Sentinel is designed with two distinct storage tiers to optimize cost and performance:
+
+* Analytics tier: The existing Microsoft Sentinel data tier (log analytics) supporting advanced hunting, alerting, and incident management to help you proactively identify and resolve issues across your infrastructure and applications. This tier is designed for high-performance analytics and real-time data processing.
+* Data lake tier: Provides centralized long-term storage for querying and Python-based advanced analytics. It's designed for cost effective retention of large volumes of security data for up to 12 years. Data in the data lake tier isn’t available for real-time analytics features and threat hunting. The data is in a low-cost cold tier.
+
+:::image type="content" source="../media/sentinel-log-tiers.png" lightbox="../media/sentinel-log-tiers.png" alt-text="An images that describes the two storage tiers available in Microsoft Sentinel.  The analytics tier and the Data lake tier..":::
+
+#### Data lake
+
+The data lake tier is made possible with the introduction of the [Microsoft Sentinel data lake (preview)](/azure/sentinel/datalake/sentinel-lake-overview). Microsoft Sentinel data lake enables a fully managed, cloud-native, data lake that is purposefully designed for security, inside Sentinel.
+
+Sentinel data lake is an opt-in feature. Customers can continue to use the existing analytics tier without any change. If a customer is looking to optimize costs, they can split data across analytics and data lake tiers. Sentinel data lake is only available in the Defender portal.
+
+Sentinel data lake simplifies security data management, eliminates security data silos, and enables cost-effective long-term security data retention with the ability to run multiple forms of analytics.
+
+:::image type="content" source="../media/sentinel-with-data-lake.png" lightbox="../media/sentinel-with-data-lake.png" alt-text="An images that describes the two storage tiers available in Microsoft Sentinel.  The analytics tier and the Data lake tier..":::
+
+#### Data connectors and data flow
+
+When you onboard to Microsoft Sentinel data lake, your existing Microsoft Sentinel data connectors are configured to send data to both the analytics tier - your Microsoft Sentinel log analytics workspaces (SIEM storage), and mirror the data to the data lake tier for longer term storage (data lake).
+
+Mirroring data in the data lake with the same retention as the analytics tier doesn’t incur additional billing charges. Only when the retention is increased will it generate additional cost for the storage. Once in the analytics tier, the advanced KQL features are available.
+
+If you switch from analytic + data lake mirror (default) to only ingesting into the data lake tier, any new data will stop coming to the analytic tier table, and data will be stored only in the data lake.
+
+:::image type="content" source="../media/data-lake-tiers-data-flow.png" lightbox="../media/data-lake-tiers-data-flow.png" alt-text="An image that depicts the mirroring of data from analytics tier to the data lake tier.":::
