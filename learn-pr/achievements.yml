@@ -6415,3 +6415,13 @@ achievements:
   title: Manage data retention and deletion in Microsoft 365 workloads
   summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
   iconUrl: /training/achievements/manage-data-retention-in-microsoft-365.svg
+- uid: learn.keep-your-virtual-machines-updated.badge
+  type: badge
+  title: Keep your virtual machines updated
+  summary: Deploy the Azure Update Management solution to update virtual machines in your cloud environment.
+  iconUrl: /training/achievements/keep-your-virtual-machines-updated.svg
+- uid: learn.choose-best-networking-plugin-for-aks.badge
+  type: badge
+  title: Choose the best networking plugin for AKS
+  summary: Understand the key differences and considerations when selecting between Azure CNI and kubenet, two networking plugin options for an Azure Kubernetes Service cluster.
+  iconUrl: /training/achievements/generic-badge.svg
