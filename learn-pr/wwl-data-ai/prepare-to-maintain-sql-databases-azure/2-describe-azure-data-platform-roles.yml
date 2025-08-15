@@ -4,7 +4,7 @@ title: Describe Microsoft Intelligent Data Platform roles
 metadata:
   title: Describe Microsoft Intelligent Data Platform roles
   description: "Describe Microsoft Intelligent Data Platform roles"
-  ms.date: 2/12/2025
+  ms.date: 8/7/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-describe-azure-data-platform-roles.md)]
+  [!include[](includes/2-describe-azure-data-platform-roles.md)]

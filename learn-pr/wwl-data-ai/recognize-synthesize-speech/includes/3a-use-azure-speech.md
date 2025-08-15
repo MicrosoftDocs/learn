@@ -5,11 +5,9 @@
 
 ## Using studio interfaces
 
-You can create Azure AI Speech projects using user interfaces with **Speech Studio** or **Azure AI Studio**.
+You can create Azure AI Speech projects using **Azure AI Foundry portal's Speech Playground**.
 
-|**Speech Studio**|**Azure AI Studio**|
-|-|-|
-|![A screenshot of the Microsoft Speech Studio home page.](../media/speech-studio-example.png)|![A screenshot of the Microsoft Azure AI Studio home page.](../media/ai-services-home-speech.png)|
+![A screenshot of the Microsoft Azure AI Foundry portal's Speech Playground.](../media/ai-foundry-speech-playground.png)
 
 ## Azure resources for Azure AI Speech
 

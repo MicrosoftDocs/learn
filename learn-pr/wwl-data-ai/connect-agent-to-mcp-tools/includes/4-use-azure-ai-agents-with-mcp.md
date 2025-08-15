@@ -17,7 +17,7 @@ The MCP tool also supports custom headers, which let you pass:
 - Authentication keys (API keys, OAuth tokens).
 - Other required headers for the MCP server.
 
-    - These headers are included in tool_resources during each run and are not stored between runs.
+    - These headers are included in `tool_resources` during each run and are not stored between runs.
 
 ## Invoking tools
 
@@ -28,7 +28,8 @@ When using the Azure MCP Tool object, you don't need to wrap function tools or i
 - Use the `set_approval_mode` to  determine whether approval is required. Supported values are:
     - `always`: A developer needs to provide approval for every call. If you don't provide a value, this one is the default.
     - `never`: No approval is required.
-- Create an agent run and pass additional information about the mcp tool in `tool_resources`
+- Create a `ToolSet` object and add the `McpTool` object
+- Create an agent run and specify the `toolset` property
 - When the run completes, you should see the results of any invoked tools in the response.
 
 If the model tries to invoke a tool in your MCP server with approval required, you get a run status of requires_action. 

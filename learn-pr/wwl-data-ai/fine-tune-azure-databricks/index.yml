@@ -4,6 +4,7 @@ metadata:
   title: Fine-Tune Language Models with Azure Databricks
   description: Fine-tune language models with Azure Databricks
   ms.date: 07/09/2025
+  ms.update-cycle: 180-days
   author: theresa-i
   ms.author: theresai
   ms.topic: module

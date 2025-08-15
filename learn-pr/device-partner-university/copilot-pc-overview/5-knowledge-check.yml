@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-pc-overview.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Copilot+ PC overview" module.
+  ms.date: 08/06/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What distinguishes Copilot+ PCs from other Windows 11 Pro AI PCs?"
+    choices:
+        - content: "They use cloud-based Copilot only"
+          isCorrect: false
+          explanation: "Incorrect. Cloud-based Copilot is available on Windows 11 Pro PCs, not exclusive to Copilot+ PCs."
+        - content: "They feature a supercharged NPU capable of 40+ TOPS"
+          isCorrect: true
+          explanation: "Correct. Copilot+ PCs have NPUs with 40+ TOPS, offering the fastest performance."
+        - content: "They lack a Copilot key"
+          isCorrect: false
+          explanation: "Incorrect. Copilot+ PCs include a Copilot key for easy access to AI features."
+        - content: "They don't support AI-enabled apps"
+          isCorrect: false
+          explanation: "Incorrect. Copilot+ PCs support a wide range of AI-enabled apps."
+  - content: "What does TOPS measure in the context of NPUs?"
+    choices:
+        - content: "The number of AI models supported"
+          isCorrect: false
+          explanation: "Incorrect. TOPS doesn't measure model support."
+        - content: "The total maximum achievable throughput"
+          isCorrect: true
+          explanation: "Correct. TOPS measures the processing capability of an NPU."
+        - content: "The amount of memory used"
+          isCorrect: false
+          explanation: "Incorrect. Memory usage isn't related to TOPS."
+        - content: "The number of CPU cores"
+          isCorrect: false
+          explanation: "Incorrect. CPU cores are unrelated to TOPS."
+  - content: "Which component is most efficient for running AI tasks like face recognition?"
+    choices:
+        - content: "CPU"
+          isCorrect: false
+          explanation: "Incorrect. CPUs can perform AI tasks but are less efficient."
+        - content: "GPU"
+          isCorrect: false
+          explanation: "Incorrect. GPUs are better than CPUs but less efficient than NPUs for AI tasks."
+        - content: "NPU"
+          isCorrect: true
+          explanation: "Correct. NPUs complete AI tasks faster and with less energy and heat."
+        - content: "RAM"
+          isCorrect: false
+          explanation: "Incorrect. RAM stores data but doesn't process AI tasks."
+  - content: "What percentage of employees want AI to summarize meetings and plan their day?"
+    choices:
+        - content: "Sixty-four percent"
+          isCorrect: false
+          explanation: "Incorrect. Sixty-four percent of employees struggle with managing tasks due to lack of energy and time."
+        - content: "Seventy-three percent"
+          isCorrect: false
+          explanation: "Incorrect. Seventy-three percent are comfortable using AI for creative work."
+        - content: "Eighty percent"
+          isCorrect: true
+          explanation: "Correct. Eighty percent want AI to summarize meetings and plan their day."
+        - content: "Eighty-six percent"
+          isCorrect: false
+          explanation: "Incorrect. Eighty-six percent want AI to help find the right answers and information."
+  - content: "What is the end-of-service date for Windows 10?"
+    choices:
+        - content: "October 14, 2024"
+          isCorrect: false
+          explanation: "Incorrect. This date isn't mentioned in the document."
+        - content: "May 9, 2023"
+          isCorrect: false
+          explanation: "Incorrect. This is the publication date of a referenced report."
+        - content: "October 14, 2025"
+          isCorrect: true
+          explanation: "Correct. Windows 10 support ends on this date."
+        - content: "September 30, 2025"
+          isCorrect: false
+          explanation: "Incorrect. This date isn't mentioned in the document."
+

@@ -4,7 +4,7 @@ title: Understand SQL Server in an Azure virtual machine
 metadata:
   title: Understand SQL Server in an Azure virtual machine
   description: "Understand SQL Server in an Azure virtual machine"
-  ms.date: 2/12/2025
+  ms.date: 8/7/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-understand-sql-server-azure-virtual-machine.md)]
+  [!include[](includes/3-understand-sql-server-azure-virtual-machine.md)]
