@@ -52,4 +52,4 @@ Implement the Magentic orchestration pattern with the Semantic Kernel SDK:
 1. **Stop the runtime (optional)**  
    Cleanly shut down to free resources.
 
-Magentic orchestration excels at solving complex, evolving problems that require real-time coordination between specialized agents. It's ideal for tasks where the plan cannot be defined in advance and must adapt as new information emerges. Using the Semantic Kernel Python SDK, you can build systems that dynamically design, refine, and execute solution paths.
+Magentic orchestration excels at solving complex, evolving problems that require real-time coordination between specialized agents. It's ideal for tasks where the plan can't be defined in advance and must adapt as new information emerges. Using the Semantic Kernel Python SDK, you can build systems that dynamically design, refine, and execute solution paths.
