@@ -6,8 +6,8 @@ metadata:
   description: This unit summarizes the key concepts covered in the module, including key features and how to use Semantic Kernel Agent Framework.
   author: buzahid
   ms.author: buzahid
-  ms.date: 03/14/2025
+  ms.date: 08/14/2025
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/12-summary.md)]

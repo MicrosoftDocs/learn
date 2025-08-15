@@ -6,8 +6,8 @@ metadata:
   description: Learn how to build a multi-agent solution. This unit provides an interactive exercise to develop a multi-agent solution with the Semantic Kernel Agent Framework.
   author: buzahid
   ms.author: buzahid
-  ms.date: 03/14/2025
+  ms.date: 08/14/2025
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/6-exercise.md)]
+  [!include[](includes/10-exercise.md)]
