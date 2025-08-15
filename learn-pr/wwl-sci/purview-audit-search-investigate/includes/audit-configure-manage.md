@@ -95,7 +95,3 @@ Auditing can only be disabled with PowerShell:
 Connect-ExchangeOnline
 Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
 ```
-
-## Knowledge check
-
-Choose the best response for this question.

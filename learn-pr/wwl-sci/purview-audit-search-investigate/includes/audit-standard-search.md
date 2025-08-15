@@ -123,7 +123,3 @@ Steps in the investigation:
 - SoftDeleted items can usually be restored within the retention window (14–30 days).
 - HardDeleted items might be recoverable if the mailbox is on hold.
 - Use Microsoft Purview portal search tools to locate and recover items where possible.
-
-## Knowledge check
-
-Choose the best response for this question.

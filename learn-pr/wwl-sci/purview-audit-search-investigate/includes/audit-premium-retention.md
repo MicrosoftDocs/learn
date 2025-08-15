@@ -74,7 +74,3 @@ For more advanced management, use **[Security & Compliance PowerShell](/powershe
   ```powershell
   Remove-UnifiedAuditLogRetentionPolicy -Identity "Microsoft Teams Audit Policy"
   ```
-
-## Knowledge check
-
-Choose the best response for this question.

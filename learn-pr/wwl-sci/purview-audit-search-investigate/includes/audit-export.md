@@ -65,7 +65,3 @@ $auditlog | Select-Object CreationDate, UserIds, RecordType, AuditData | Export-
 - **Filter by RecordType** to focus on specific workloads.
 - **Filter by Operations** to narrow results to key actions, such as file sharing or deletion.
 - Use Power Query transformations to make JSON data in the **AuditData** column easier to read.
-
-## Knowledge check
-
-Choose the best response for this question.

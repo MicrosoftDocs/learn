@@ -48,7 +48,3 @@ As Copilot's role in managing healthcare-related documentation grows, securely l
 - **Configure audit settings**: Ensure Microsoft Purview Audit is capturing all relevant Copilot activities.
 - **Review logs regularly**: Examine logs on a scheduled basis to identify anomalies or unauthorized access.
 - **Update security measures**: Adjust policies or controls based on log analysis to improve data protection.
-
-## Knowledge check
-
-Choose the best response for this question.

@@ -63,7 +63,3 @@ Interactions with **Microsoft Copilot and supported AI apps** are logged in the 
 ## Where you work
 
 Use the **Microsoft Purview portal** to run targeted searches, save them, and export results. You can also use PowerShell for scripted queries and automation, and the Unified Audit Log Retention cmdlets to create and manage retention policies.
-
-## Knowledge check
-
-Choose the best response for this question.
