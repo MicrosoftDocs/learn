@@ -38,7 +38,7 @@ units:
 - learn.wwl.orchestrate-sk-multi-agent-solution.use-sequential-orchestration
 - learn.wwl.orchestrate-sk-multi-agent-solution.use-group-chat-orchestration
 - learn.wwl.orchestrate-sk-multi-agent-solution.use-handoff-orchestration
-- learn.wwl.orchestrate-sk-multi-agent-solution.use-magnetic-orchestration
+- learn.wwl.orchestrate-sk-multi-agent-solution.use-magentic-orchestration
 - learn.wwl.orchestrate-sk-multi-agent-solution.manage-orchestration-runtime-lifecycles
 - learn.wwl.orchestrate-sk-multi-agent-solution.exercise
 - learn.wwl.orchestrate-sk-multi-agent-solution.knowledge-check

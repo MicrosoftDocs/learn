@@ -3,7 +3,7 @@ uid: learn.wwl.orchestrate-sk-multi-agent-solution.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: This unit contains a knowledge check which can help learners reinforce their understanding of the material.
+  description: This unit contains a knowledge check, which can help learners reinforce their understanding of the material.
   author: buzahid
   ms.author: buzahid
   ms.date: 08/14/2025
@@ -44,4 +44,4 @@ quiz:
       explanation: "Incorrect. Concurrent runs tasks independently in parallel, not dynamically based on context."  
     - content: "Sequential"  
       isCorrect: false  
-      explanation: "Incorrect. Sequential follows a fixed order and does not dynamically change control between agents."  
+      explanation: "Incorrect. Sequential follows a fixed order and doesn't dynamically change control between agents."  

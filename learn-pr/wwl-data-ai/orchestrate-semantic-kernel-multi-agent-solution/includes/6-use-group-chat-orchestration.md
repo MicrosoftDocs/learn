@@ -72,10 +72,10 @@ Custom managers let you implement specialized logic tailored to your use case.
 
 During each round of the conversation, the chat manager calls methods in this order:
 
-1. `should_request_user_input` — Checks if human input is needed before the next agent responds.  
-1. `should_terminate` — Determines if the conversation should end (e.g., max rounds reached).  
-1. `filter_results` — If ending, summarizes or processes the final conversation.  
-1. `select_next_agent` — If continuing, chooses the next agent to speak.
+1. `should_request_user_input` - Checks if human input is needed before the next agent responds.  
+1. `should_terminate` - Determines if the conversation should end (e.g., max rounds reached).  
+1. `filter_results` - If ending, summarizes or processes the final conversation.  
+1. `select_next_agent` - If continuing, chooses the next agent to speak.
 
 This ensures user input and termination conditions are handled before moving the conversation forward. Override these methods in your custom manager to change behavior.
 

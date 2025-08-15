@@ -1,6 +1,6 @@
 **Handoff orchestration** lets AI agents transfer control to one another based on the task context or user requests. Each agent can "handoff" the conversation to another agent with the right expertise, making sure the best-suited agent handles each part of the task. This pattern is ideal for customer support, expert systems, or any situation where dynamic delegation is needed.
 
-![Diagram of handoff orchestration flow](../media/multi-agent-handoff.png)
+![Diagram of handoff orchestration flow.](../media/multi-agent-handoff.png)
 
 This pattern fits scenarios where the best agent isn't known upfront or where the task requirements become clearer during processing. Unlike parallel patterns, agents work one at a time, fully handing off control from one to the next.
 

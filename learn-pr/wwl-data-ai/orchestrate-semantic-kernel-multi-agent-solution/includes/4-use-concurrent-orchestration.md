@@ -1,6 +1,6 @@
 **Concurrent orchestration** lets multiple agents work on the same task at the same time. Each agent handles the task independently, and then their outputs are gathered and combined. This method works especially well when you want diverse approaches or solutions, like during brainstorming, group decision-making, or voting.
 
-![Diagram of concurrent orchestration flow](../media/multi-agent-concurrent.png)
+![Diagram of concurrent orchestration flow.](../media/multi-agent-concurrent.png)
 
 This pattern is useful when you need different approaches or ideas to solve the same problem. Instead of having agents work one after another, they all work at the same time. This speeds up the process and covers the problem from many angles. 
 

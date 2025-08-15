@@ -8,13 +8,13 @@ The runtime acts as the execution engine for orchestrations, providing a space w
 - **Actor lifecycle management** – Creating, registering, and managing all participating agents and orchestration actors, ensuring that each one operates independently and securely.
 - **Execution context** – Allowing multiple orchestrations to run at the same time, each with its own state and resources, without interfering with each other.
 
-You can think of the orchestration as the plan or “map,” and the runtime as the engine that runs it — controlling timing, message flow, and execution order.
+You can think of the orchestration as the plan or "map," and the runtime as the engine that runs it—controlling timing, message flow, and execution order.
 
 ## Handling timeouts
 
 When you invoke an orchestration, it immediately returns a handler you can use to retrieve results later. This asynchronous approach makes it possible to start long-running processes without blocking the rest of your application.
 
-If a timeout is reached when waiting for results, the orchestration is not stopped — it continues running in the background until completion. You can check for results later, or set a timeout for the retrieval process itself to avoid waiting indefinitely.
+If a timeout is reached when waiting for results, the orchestration is not stopped—it continues running in the background until completion. You can check for results later, or set a timeout for the retrieval process itself to avoid waiting indefinitely.
 
 ## Human-in-the-loop interactions
 
