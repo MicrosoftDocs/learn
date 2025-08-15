@@ -150,7 +150,7 @@ Microsoft Sentinel is designed with two distinct storage tiers to optimize cost 
 * Analytics tier: The existing Microsoft Sentinel data tier (log analytics) supporting advanced hunting, alerting, and incident management to help you proactively identify and resolve issues across your infrastructure and applications. This tier is designed for high-performance analytics and real-time data processing.
 * Data lake tier: Provides centralized long-term storage for querying and Python-based advanced analytics. It's designed for cost effective retention of large volumes of security data for up to 12 years. Data in the data lake tier isn’t available for real-time analytics features and threat hunting. The data is in a low-cost cold tier.
 
-:::image type="content" source="../media/sentinel-log-tiers.png" lightbox="../media/sentinel-log-tiers.png" alt-text="An images that describes the two storage tiers available in Microsoft Sentinel.  The analytics tier and the Data lake tier..":::
+:::image type="content" source="../media/sentinel-log-tiers.png" lightbox="../media/sentinel-log-tiers.png" alt-text="An  that describes the two storage tiers available in Microsoft Sentinel.  The analytics tier and the Data lake tier..":::
 
 #### Data lake
 
@@ -160,7 +160,7 @@ Sentinel data lake is an opt-in feature. Customers can continue to use the exist
 
 Sentinel data lake simplifies security data management, eliminates security data silos, and enables cost-effective long-term security data retention with the ability to run multiple forms of analytics.
 
-:::image type="content" source="../media/sentinel-with-data-lake.png" lightbox="../media/sentinel-with-data-lake.png" alt-text="An images that describes the two storage tiers available in Microsoft Sentinel.  The analytics tier and the Data lake tier..":::
+:::image type="content" source="../media/sentinel-with-data-lake.png" lightbox="../media/sentinel-with-data-lake.png" alt-text="An image that shows the Microsoft Sentinel data lake architecture.":::
 
 #### Data connectors and data flow
 
