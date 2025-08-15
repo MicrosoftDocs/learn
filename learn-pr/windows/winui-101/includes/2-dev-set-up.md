@@ -11,7 +11,7 @@ To enable Developer Mode:
 
 ## Install Visual Studio
 
-You use [Visual Studio](https://github.com/MicrosoftDocs/windows-dev-docs/blob/docs/visualstudio/ide), Microsoft's comprehensive integrated development environment (IDE), to create your WinUI app. This IDE helps you write, debug, and deploy your apps. The project templates in Visual Studio get you started with projects for Windows and many other platforms.
+You use [Visual Studio](/visualstudio/ide), Microsoft's comprehensive integrated development environment (IDE), to create your WinUI app. This IDE helps you write, debug, and deploy your apps. The project templates in Visual Studio get you started with projects for Windows and many other platforms.
 
 > [!NOTE]
 > Before installing these tools, ensure your development computer meets the [system requirements for Windows app development](https://github.com/MicrosoftDocs/windows-dev-docs/blob/docs/hub/apps/windows-app-sdk/system-requirements.md).
@@ -19,7 +19,7 @@ You use [Visual Studio](https://github.com/MicrosoftDocs/windows-dev-docs/blob/d
 1. Go to the Visual Studio page to download and install the latest Visual Studio. You can use the free Visual Studio Community Edition.
 
     > [!NOTE]
-    > The installer guides you through the steps, but if you need detailed instructions, see [Install Visual Studio](https://github.com/MicrosoftDocs/windows-dev-docs/blob/docs/visualstudio/install/install-visual-studio).
+    > The installer guides you through the steps, but if you need detailed instructions, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
 
     While installing Visual Studio, you need to install the workloads and components required for developing with WinUI and the Windows App SDK.
 
