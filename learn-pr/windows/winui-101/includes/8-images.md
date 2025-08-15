@@ -2,7 +2,7 @@ To enhance the game's visual appeal, you'll add images representing different st
 
 Add images to the project:
 
-1. Go to **[this github repo](https://github.com/microsoft/Windows-DevRel/tree/main/Samples/SnowPal-Win-101/snowpal/Assets)** and locate the following images:
+1. Go to **[this github repo](https://github.com/microsoft/Windows-DevRel/tree/main/Samples/SnowPal-Win-101/Snowpal/Assets)** and locate the following images:
     - snow-0.png
     - snow-1.png
     - snow-2.png
