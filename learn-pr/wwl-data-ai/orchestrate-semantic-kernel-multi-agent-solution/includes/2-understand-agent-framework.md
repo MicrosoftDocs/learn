@@ -14,7 +14,7 @@ The Agent Framework in Semantic Kernel provides architecture on top of existing 
 
 - **Agent orchestration**
 
-    Multiple agents can collaborate towards a common goal with different orchestration patterns. The Semantic Kernel supports severa different orchestration patterns, each with a unified interface for construction and invocation, so you can easily switch between patterns without rewriting your agent logic.
+    Multiple agents can collaborate towards a common goal with different orchestration patterns. The Semantic Kernel supports several different orchestration patterns, each with a unified interface for construction and invocation, so you can easily switch between patterns without rewriting your agent logic.
 
 The features that power Semantic Kernel are also still available within the Agent Framework, including:
 

@@ -29,7 +29,7 @@ You may want to avoid using the concurrent orchestration pattern in the followin
 - Agents need to build on each other's work or depend on shared context in a specific order.
 - The task requires a strict sequence of steps or predictable, repeatable results.
 - Resource limits, like model usage quotas, make running agents in parallel inefficient or impossible.
-- Agents cannot reliably coordinate changes to shared data or external systems while running at the same time.
+- Agents can't reliably coordinate changes to shared data or external systems while running at the same time.
 - There's no clear way to resolve conflicts or contradictions between results from different agents.
 - Combining results is too complicated or ends up lowering the overall quality.
 
