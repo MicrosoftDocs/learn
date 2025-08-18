@@ -6415,3 +6415,13 @@ achievements:
   title: Manage data retention and deletion in Microsoft 365 workloads
   summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
   iconUrl: /training/achievements/manage-data-retention-in-microsoft-365.svg
+- uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.badge
+  type: badge
+  title: Monitor, diagnose, and troubleshoot your Azure Storage
+  summary: Discover the tools available to detect and correct problems with your Azure Storage, so you can enable your cloud storage infrastructure to operate at peak performance.
+  iconUrl: /training/achievements/monitor-diagnose-and-troubleshoot-azure-storage.svg
+- uid: learn.azure.child-extension-bicep-templates.badge
+  type: badge
+  title: Deploy child and extension resources by using Bicep
+  summary: Deploy various Azure resources in your Bicep code. Define and use child and extension resources. Work with resources that you created outside of a Bicep template or module.
+  iconUrl: /training/achievements/bicep/child-extension-bicep-templates.svg
