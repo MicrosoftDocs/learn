@@ -35,7 +35,7 @@ In this section, you're creating your first dataflow.
 2. From the workspace, select **New item**, then select **Dataflow Gen2**.
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of the New dataflow gen2 option.](../media/new-dataflow-gen2.png)](../media/new-dataflow-gen2.png#lightbox)
+> [![Screenshot of the New Dataflow Gen2 option.](../media/new-dataflow-gen2.png)](../media/new-dataflow-gen2.png#lightbox)
 
 ## Generate sample data
 
@@ -55,7 +55,7 @@ In this section, you're generating sample data for your dataflow. Normally, Cont
 3. Tap the send button to generate the query. Observe the sample data and the query created in the dataflow canvas (this might differ slightly depending on your environment and the latest updates to Copilot.)
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of the dataflow gen2 canvas, highlighting Copilot.](../media/dataflow-copilot-canvas.png)](../media/dataflow-copilot-canvas.png#lightbox)
+> [![Screenshot of the Dataflow Gen2 canvas, highlighting Copilot.](../media/dataflow-copilot-canvas.png)](../media/dataflow-copilot-canvas.png#lightbox)
 
 ## Clean and transform the data
 
@@ -77,7 +77,7 @@ In this section, you'll clean and transform the data using Copilot.
 Notice that the data types are changed in the query. We keep the DateOfVisit and HourOfVisit as text. Later, we'll merge them and convert them to DateTime data type.
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of the dataflow gen2 canvas, highlighting the data types.](../media/dataflow-copilot-data-types.png)](../media/dataflow-copilot-data-types.png#lightbox)
+> [![Screenshot of the Dataflow Gen2 canvas, highlighting the data types.](../media/dataflow-copilot-data-types.png)](../media/dataflow-copilot-data-types.png#lightbox)
 
 2. Add a new field that takes the age and segments it into different age groups. Enter the following prompt in the Copilot pane:
    
@@ -101,7 +101,7 @@ Notice that the data types are changed in the query. We keep the DateOfVisit and
 Notice the AgeRange column is added to the query.
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of the dataflow gen2 canvas, highlighting the age range.](../media/dataflow-copilot-age-range.png)](../media/dataflow-copilot-age-range.png#lightbox)
+> [![Screenshot of the Dataflow Gen2 canvas, highlighting the age range.](../media/dataflow-copilot-age-range.png)](../media/dataflow-copilot-age-range.png#lightbox)
 
 3. Create a new field that combines the DateOfVisit and HourOfVisit fields. Enter the following prompt in the Copilot pane:
 
@@ -129,7 +129,7 @@ Notice the AgeRange column is added to the query.
 Your query should now look like this:
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of the dataflow gen2 canvas, highlighting the final result.](../media/dataflow-copilot-final-result.png)](../media/dataflow-copilot-final-result.png#lightbox)
+> [![Screenshot of the Dataflow Gen2 canvas, highlighting the final result.](../media/dataflow-copilot-final-result.png)](../media/dataflow-copilot-final-result.png#lightbox)
 
 ## Code explanation
 
