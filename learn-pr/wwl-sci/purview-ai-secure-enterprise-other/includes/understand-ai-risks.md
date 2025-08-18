@@ -1,4 +1,4 @@
-AI tools are now part of everyday workflows, but many operate outside of IT governance. These include enterprise-approved applications like ChatGPT Enterprise, as well as public browser-based tools like Gemini or Claude. Some are integrated into systems through plugins or APIs, while others are used independently without visibility or control.
+AI tools are now part of everyday workflows, but many operate outside of IT governance. These include enterprise-approved applications like ChatGPT Enterprise, and public browser-based tools like Gemini or Claude. Some are integrated into systems through plugins or APIs, while others are used independently without visibility or control.
 
 When users interact with these tools, there's a risk of exposing sensitive data through prompts, responses, or persistent histories. Identifying which tools are in use and understanding how they interact with organizational data is an essential first step in managing that risk.
 
@@ -11,7 +11,7 @@ External AI tools fall into two categories based on how they're introduced and m
 Enterprise AI apps are tools that your organization has formally approved or provisioned. These apps often include administrative controls or offer integration with Microsoft Entra ID or other governance frameworks. Examples include:
 
 - **ChatGPT Enterprise**: Provides enterprise-grade privacy commitments and can be registered using a Microsoft Purview data connector
-- **Other third-party apps**: Integrated through APIs or identity platforms and subject to organizational oversight
+- **Other non-Microsoft apps**: Integrated through APIs or identity platforms and subject to organizational oversight
 
 Even with formal approval, these apps can pose data security risks if sensitive content is used without protective policies in place.
 
@@ -33,10 +33,10 @@ Whether intentional or not, users often share sensitive information with externa
 
 | Risk type | Description |
 |-----|-----|
-| **Prompt exposure** | Users may submit sensitive data (e.g., customer records, internal documents) as part of an AI prompt. These inputs may be retained or processed externally.|
-| **Generated content**  | AI-generated summaries, code, or responses may contain sensitive information or be shared without protections. |
+| **Prompt exposure** | Users might submit sensitive data (for example, customer records, internal documents) as part of an AI prompt. These inputs might be retained or processed externally.|
+| **Generated content**  | AI-generated summaries, code, or responses might contain sensitive information or be shared without protections. |
 | **Unapproved storage** | Some tools save prompts or outputs to external accounts, making data retrieval and control difficult. |
-| **Shadow AI adoption** | Users may adopt AI tools independently, bypassing IT governance. This creates blind spots for security teams. |
+| **Shadow AI adoption** | Users might adopt AI tools independently, bypassing IT governance. This creates gaps in visibility for security teams. |
 
 Without oversight, these risks can lead to data leakage, compliance violations, or misuse of intellectual property.
 
@@ -46,7 +46,7 @@ Microsoft Purview includes several capabilities to help detect, assess, and miti
 
 - **Data Security Posture Management (DSPM) for AI**: Identifies AI tools in use, detects how sensitive data is accessed or shared, and recommends protection strategies.
 - **Endpoint Data Loss Prevention (DLP)**: Blocks users from pasting or uploading sensitive content into browser-based AI tools such as ChatGPT or Gemini.
-- **Communication Compliance**: Flags inappropriate prompts and responses in supported enterprise and third-party AI apps.
+- **Communication Compliance**: Flags inappropriate prompts and responses in supported enterprise and non-Microsoft AI apps.
 - **Insider Risk Management**: Detects risky AI behavior, including visits to unsanctioned tools or the use of sensitive data in high-risk prompts.
-- **Retention**: Applies retention and deletion policies to user prompts and AI-generated responses in supported enterprise and third-party apps. Content is copied to hidden folders in Exchange mailboxes for compliance purposes and remains available to eDiscovery tools until the retention period ends.
+- **Retention**: Applies retention and deletion policies to user prompts and AI-generated responses in supported enterprise and non-Microsoft apps. Content is copied to hidden folders in Exchange mailboxes for compliance purposes and remains available to eDiscovery tools until the retention period ends.
 - **Compliance Manager**: Offers templates to assess regulatory and organizational requirements for using AI tools. These assessments help track control implementation and audit readiness.

@@ -14,8 +14,8 @@ DSPM for AI shows how users interact with AI tools across your Microsoft 365 env
 You can use DSPM for AI to:
 
 - Identify which AI tools are being used
-- Detect prompts that reference sensitive files or overshared data
-- View which users and data are most involved in AI interactions
+- Detect prompts that reference sensitive files or overshared data through data risk assessments
+- View which users and data are most involved in AI interactions in Activity Explorer
 - Review suggested protections based on how data is used
 
 For non-Microsoft tools to appear in DSPM, they typically need to be registered through Microsoft Entra ID or integrated using a supported connector.

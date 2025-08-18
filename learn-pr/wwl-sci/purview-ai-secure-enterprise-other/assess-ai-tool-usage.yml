@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-secure-enterprise-other.assess-ai-tool-usage
+title: Assess AI usage for security and compliance
+metadata:
+  title: AAssess AI Usage for Security and Compliance
+  description: "Assess AI usage for security and compliance."
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/assess-ai-tool-usage.md)]

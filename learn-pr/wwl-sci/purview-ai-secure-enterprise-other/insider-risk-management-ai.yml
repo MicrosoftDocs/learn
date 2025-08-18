@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-ai-secure-enterprise-other.insider-risk-management-ai
-title: Detect high-risk activity with Insider Risk Management
+title: Detect risky AI usage with Insider Risk Management
 metadata:
-  title: Detect High-risk Activity with Insider Risk Management
-  description: "Detect high-risk activity with Insider Risk Management"
+  title: Detect Risky AI Usage with Insider Risk Management
+  description: "Detect risky AI usage with Insider Risk Management"
   ms.date: 04/10/2025
   author: wwlpublish
   ms.author: riswinto
