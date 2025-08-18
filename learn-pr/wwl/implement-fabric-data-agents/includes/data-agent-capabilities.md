@@ -1,4 +1,4 @@
-Fabric data agents are designed to revolutionize how organizations interact with their data by using generative AI. Below are the key capabilities that make Fabric data agents a powerful tool for enhancing data accessibility and usability.
+Fabric data agents are designed to help organizations interact with their data by using generative AI. Below are key capabilities that make Fabric data agents useful for data accessibility and usability.
 
 ## Interact with your data
 
@@ -14,7 +14,7 @@ Fabric data agents include configuration options that allow creators to test and
 
 You can provide organization-specific instructions, example queries, and guidance to fine-tune the Fabric data agent. This ensures that the agent’s responses align with your organization’s unique needs and objectives. 
 
-## Seamless reasoning across multiple data sources
+## Reasoning across multiple data sources
 
 Fabric data agents can reason over multiple data sources, including:
 
@@ -32,11 +32,11 @@ The Fabric data agent can only access data that you provide, with up to five dat
 
 ## Integration inside and outside of Fabric
 
-Your Data Agent can be consumed both within and outside of Microsoft Fabric. Integrations include:
+Your data agent can be used both within and outside Microsoft Fabric. Integrations include:
 
 - **Copilot Studio**: Extend the agent's functionality to custom workflows.
-- **Microsoft Teams**: Enable collaborative data-driven discussions.
-- **Azure AI Foundry**: Use advanced AI capabilities for broader applications.
+- **Microsoft Teams**: Support collaborative data discussions.
+- **Azure AI Foundry**: Use AI capabilities for additional scenarios.
 - **Custom Applications**: Embed the agent into your own tools and platforms.
 
 While both Microsoft Fabric data agents and  Copilot for Microsoft Fabric use generative AI to process and reason over data, there are key differences in their functionality and use cases:
@@ -46,4 +46,4 @@ While both Microsoft Fabric data agents and  Copilot for Microsoft Fabric use ge
 | **Flexibility** | Customizable with instructions and examples. | Preconfigured, limited customization. |
 | **Use Case** | Broader scope; integrates with external tools (e.g., Copilot Studio, Teams, ...).| Focused on in-Fabric tasks like notebooks and warehouse queries. |
 
-These integrations ensure that Fabric data agents can seamlessly fit into your organization's existing ecosystem, enhancing collaboration and decision-making.
+These integrations allow Fabric data agents to fit into your organization's existing ecosystem, supporting collaboration and decision-making.

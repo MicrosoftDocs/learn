@@ -31,4 +31,4 @@ For large organizations with high Copilot usage, isolating Copilot consumption f
 6. **Consider split strategies**: For large deployments, evaluate capacity isolation benefits
 7. **Balance cost and performance**: Make informed decisions about scaling investments
 
-By implementing these scaling strategies and monitoring practices, organizations can successfully deploy Copilot in Microsoft Fabric while maintaining optimal performance, controlling costs, and ensuring a positive user experience across their analytics workflows.
+By applying these scaling strategies and monitoring practices, organizations can deploy Copilot in Microsoft Fabric while maintaining performance, managing costs, and supporting a consistent user experience across analytics workflows.

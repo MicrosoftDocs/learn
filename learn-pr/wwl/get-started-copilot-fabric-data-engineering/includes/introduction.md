@@ -4,8 +4,8 @@ In this module, we'll explore how Contoso Health, a multi-specialty hospital net
 
 There's various ways Contoso Health can ingest and transform data in Microsoft Fabric. 
 
-- With **Dataflow Gen 2**, you can transform data using 300+ data transformation options, and write the results into multiple destinations with an easy to use, highly visual user interface. We'll explore how Copilot can make the process of creating a dataflow easier and faster.
+- With **Dataflow Gen 2**, you can transform data using many transformation options and write the results into multiple destinations with a visual user interface. We'll explore how Copilot can assist with creating a dataflow.
   
-- The copy activity as part of a **Fabric Data Pipeline** is the best low-code and no-code choice to move large quantities of data to lakehouses and warehouses from varieties of sources, either ad-hoc or via a schedule. Copilot can help you create a pipeline, just using natural language. 
+- The copy activity in a **Fabric Data Pipeline** is a low-code and no-code option to move large quantities of data to lakehouses and warehouses from various sources, either ad-hoc or on a schedule. Copilot can help you create a pipeline using natural language. 
   
 - Develop the code to extract and transform data with a **Spark Notebook**. Spark provides a distributed computing platform that can process large amounts of data in parallel. Code is typically written in Python, Scala, or R. Copilot can assist you with writing the code.

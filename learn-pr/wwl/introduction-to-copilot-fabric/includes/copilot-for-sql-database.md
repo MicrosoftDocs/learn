@@ -1,4 +1,4 @@
-Copilot for SQL Database in Microsoft Fabric is an AI-powered assistant that supports database management and query development. It uses generative AI to assist with query creation, debugging, and optimization.
+Copilot for SQL Database in Microsoft Fabric is an AI-based assistant that supports database management and query development. It uses generative AI to assist with query creation, debugging, and optimization.
 
 ### Key concepts
 
@@ -17,7 +17,7 @@ Here's an example of how you can interact with Copilot in the Fabric SQL Databas
 
 ## Benefits
 
-Using Copilot for SQL Database can streamline database workflows and support focusing on analysis. Key benefits:
+Using Copilot for SQL Database can support database workflows. Key areas where it can help:
 
 - **Efficiency**: Automates query generation and provides code completions.  
 - **Accessibility**: Enables interaction with SQL databases using natural language.  

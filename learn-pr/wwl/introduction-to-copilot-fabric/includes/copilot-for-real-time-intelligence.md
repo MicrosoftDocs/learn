@@ -1,4 +1,4 @@
-Copilot for Real-Time Intelligence in Microsoft Fabric is an AI-powered assistant that helps analyze real-time data streams. It uses generative AI to simplify complex queries and provide query suggestions and summaries.
+Copilot for Real-Time Intelligence in Microsoft Fabric is an AI-based assistant that supports analysis of real-time data streams. It uses generative AI to help with complex queries and provide query suggestions and summaries.
 
 ## Key concepts
 
@@ -15,7 +15,7 @@ Here's an example of how you can interact with Copilot in the Fabric KQL queryse
 
 ## Benefits
 
-Using Copilot for Real-Time Intelligence can streamline workflows and support focusing on insights from real-time data streams. Key benefits:
+Using Copilot for Real-Time Intelligence can support workflows involving real-time data streams. Key areas where it can help:
 
 - **Efficiency**: Automates creation of queries and visualizations.  
 - **Accessibility**: Enables interaction with real-time data using natural language.  

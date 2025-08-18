@@ -17,7 +17,7 @@ Administrators can manage Copilot settings via the Fabric admin portal, includin
 
 ## Designate a capacity as a Fabric Copilot capacity
 
-Fabric Copilot capacity is a feature that allows users to utilize Copilot even if their Power BI reports aren't on a P1/F2 capacity. Administrators can designate a capacity as a Copilot capacity. It ensures that all Copilot consumption is billed to this capacity. It simplifies access and usage for users, as they no longer need specific capacity assignments.
+Fabric Copilot capacity lets users use Copilot even if their Power BI reports aren't on a P1/F2 capacity. Administrators can designate a capacity as a Copilot capacity. All Copilot consumption is then billed to this capacity. This approach removes the need for individual capacity assignments for Copilot usage.
 
 > [!div class="mx-imgBorder"]
 > [![Diagram explains when a user is added to a copilot capacity, the user's copilot usage is consumed from their copilot capacity.](../media/copilot-capacity.png)](../media/copilot-capacity.png#lightbox)

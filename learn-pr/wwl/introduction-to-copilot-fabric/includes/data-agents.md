@@ -1,4 +1,4 @@
-Fabric data agents in Microsoft Fabric are AI-powered tools that allow users to interact with organizational data stored in Fabric OneLake using natural language. They enable nontechnical users to ask questions and receive context-based answers.
+Fabric data agents in Microsoft Fabric are AI-based tools that allow users to interact with organizational data stored in Fabric OneLake using natural language. They enable non-technical users to ask questions and receive context-based answers.
 
 ## Key concepts
 The following fundamental concepts describe how Fabric data agents work.
@@ -9,11 +9,11 @@ The following fundamental concepts describe how Fabric data agents work.
 
 **Schema awareness** uses structure and metadata of data sources to generate context-aware responses. For instance, you can ask about “customer retention” and the agent will reference relevant tables and columns.
 
-**Customizability** allows you to tailor the agent to your organization’s terminology and needs. If your team uses specific jargon or has unique reporting requirements, you can add custom instructions and examples. This helps the agent deliver responses that match your business context, making it easier for everyone to get actionable insights.
+**Customizability** allows tailoring the agent to your organization’s terminology and needs. If your team uses specific jargon or has unique reporting requirements, you can add custom instructions and examples. This helps the agent deliver responses that reflect business context.
 
 **Secure and contextual responses** mean you don’t have to worry about unauthorized access or irrelevant answers. The agent enforces read-only access and respects user permissions, so users only see data they’re allowed to view. This reduces the risk of sharing sensitive information and keeps responses focused on the right context.
 
-**Integration with external systems** extends the agent’s capabilities beyond Fabric. If you need to collaborate in Microsoft Teams or automate workflows with Copilot Studio or Azure AI Foundry, the agent can connect with these tools. This makes it easier to share insights, automate tasks, and work smarter across your organization.
+**Integration with external systems** extends the agent’s use beyond Fabric. If you need to collaborate in Microsoft Teams or automate workflows with Copilot Studio or Azure AI Foundry, the agent can connect with these tools. This can help with sharing insights and automating tasks across your organization.
 
 These concepts address common challenges like technical barriers, data silos, and inconsistent terminology and support data-informed decisions.
 
@@ -26,7 +26,7 @@ We’ll explore this topic in more detail in a later module.
 
 ## Benefits
 
-Using Fabric data agents supports teams engaging with data effectively. Key benefits:
+Using Fabric data agents supports teams engaging with data. Key areas where they can help:
 
 - **Accessibility**: Uses natural language interactions.  
 - **Efficiency**: Simplifies data exploration without writing complex queries.  

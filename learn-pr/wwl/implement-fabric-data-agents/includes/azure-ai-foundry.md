@@ -1,12 +1,12 @@
-Integrating **Azure AI Foundry Agents** with **Microsoft Fabric data agents** enables organizations to unlock advanced data analysis and conversational AI capabilities. By connecting these two powerful services, you can transform enterprise data into interactive Q&A systems, allowing users to explore and gain insights from their data through natural language conversations.
+Integrating **Azure AI Foundry Agents** with **Microsoft Fabric data agents** enables organizations to use advanced data analysis and conversational AI capabilities. By connecting these two services, you can expose enterprise data through interactive Q&A, allowing users to explore and retrieve information via natural language.
 
 ## Why integrate Azure AI Foundry with Fabric Data Agents?
 
-Integrating these services allows users to **interact with enterprise data** through chat interfaces, making data exploration more intuitive and accessible. This approach helps users quickly uncover **actionable, data-driven insights** to support better decision-making. 
+Integrating these services allows users to **interact with enterprise data** through chat interfaces, making data exploration more accessible. This approach helps users obtain **data-driven insights** that can support decision-making. 
 
-With **Identity Passthrough** (On-Behalf-Of) authorization, all data access is governed by the user’s permissions, ensuring robust enterprise security and compliance. 
+With **Identity Passthrough** (On-Behalf-Of) authorization, all data access is governed by the user’s permissions, supporting enterprise security and compliance. 
 
-The integration also **streamlines** the process of connecting AI agents to enterprise data, reducing both development time and complexity.
+The integration also reduces the steps required to **connect AI agents to enterprise data**, lowering development effort and complexity.
 
 ## Prerequisites
 

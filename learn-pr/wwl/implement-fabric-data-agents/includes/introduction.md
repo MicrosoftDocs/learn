@@ -1,4 +1,4 @@
-Microsoft Fabric's Fabric Data Agents are a revolutionary feature that empowers organizations to create conversational Q&A systems driven by generative AI. These agents make data insights more accessible by allowing users to ask plain English questions about data stored in Fabric OneLake and receive precise, context-rich answers. 
+Microsoft Fabric's Fabric Data Agents enable organizations to create conversational Q&A systems driven by generative AI. These agents make data insights more accessible by allowing users to ask plain English questions about data stored in Fabric OneLake and receive responses grounded in the underlying data. 
 
 This learning unit guides you through:
 
@@ -6,4 +6,4 @@ This learning unit guides you through:
 - Configuring and fine-tuning Fabric Data Agents to align with organizational needs.
 - Exploring the technical workflow, including natural language processing, query generation, and secure data access.
 
-By the end of this unit, you'll be equipped to implement and optimize Fabric Data Agents, empowering your organization to extract actionable insights from its data with ease.
+By the end of this unit, you'll be able to implement and optimize Fabric Data Agents to help your organization obtain insights from its data.

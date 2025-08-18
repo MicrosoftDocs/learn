@@ -1,4 +1,4 @@
-Copilot for Fabric Data Engineering is a powerful tool that helps you write code faster and more efficiently in your notebooks. It works with Lakehouse tables and files, and it understands the dataframes you're working with. 
+Copilot for Fabric Data Engineering assists with writing code in notebooks. It works with Lakehouse tables and files, and it can reference the dataframes you're working with. 
 
 There are multiple ways to interact with Copilot for Fabric Data Engineering, including:
 

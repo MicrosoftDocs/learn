@@ -25,10 +25,10 @@ We’ll explore this topic in more detail in a later module.
 
 ### Benefits
 
-By using Copilot for Data Engineering and Data Science, you can streamline your workflows, reduce errors, and focus on deriving insights and building models from your data. Here are some key benefits:
+By using Copilot for Data Engineering and Data Science, you can perform common tasks, reduce some errors, and focus on deriving insights and building models from your data. Here are some areas where it can help:
 
-- **Efficiency**: Automates repetitive tasks and accelerates development.  
-- **Accessibility**: Reduces the learning curve for new users by enabling natural language interactions.  
-- **Accuracy**: Provides context-aware suggestions that align with your data's structure.  
-- **Collaboration**: Supports team productivity with clear documentation and shared insights.
+- **Efficiency**: Automates repetitive tasks.  
+- **Accessibility**: Supports users by enabling natural language interactions.  
+- **Accuracy**: Provides context-based suggestions aligned with data structure.  
+- **Collaboration**: Can help with documentation and sharing outputs.
 

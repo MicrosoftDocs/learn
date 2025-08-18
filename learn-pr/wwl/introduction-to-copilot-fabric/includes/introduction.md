@@ -6,7 +6,7 @@ Microsoft Fabric is a Software-as-a-Service (SaaS) analytics platform that unifi
 
 ## What is Copilot for Fabric?
 
-Copilot for Fabric is an AI-powered assistant that supports common tasks across Microsoft Fabric. It uses generative AI to help users transform and analyze data, generate insights, and create visualizations and reports.
+Copilot for Fabric is an AI-based assistant that supports common tasks across Microsoft Fabric. It uses generative AI to help users transform and analyze data, generate insights, and create visualizations and reports.
 
 Copilot for Fabric provides code suggestions, can automate routine processes, and enables natural language interactions. This helps reduce the learning curve for new users and supports moving from raw data to insights.
 
@@ -23,7 +23,7 @@ Copilot in Microsoft Fabric is intended for a range of users across the organiza
 - **Self-service users**: Business analysts and data professionals who work with data but may not have extensive technical backgrounds
 - **Business users**: End users who consume reports, dashboards, and insights to make data-driven decisions
 
-Copilot is intended to augment user capabilities rather than replace them. It supports efficiency across different skill levels and roles.
+Copilot is intended to augment user capabilities rather than replace them. It can assist users across different skill levels and roles.
 
 ## Prerequisites for using Copilot in Fabric
 
