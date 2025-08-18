@@ -1,8 +1,8 @@
-Copilot in Fabric for Data Warehouse is an AI-powered assistant designed to streamline data warehousing tasks. It integrates seamlessly with the SQL analytics endpoint and Warehouse in Microsoft Fabric, providing intelligent insights and T-SQL code generation to enhance productivity and simplify workflows.
+Copilot in Fabric for Data Warehouse is an AI-powered assistant that supports data warehousing tasks. It integrates with the SQL analytics endpoint and Warehouse in Microsoft Fabric, providing T-SQL code generation and related suggestions.
 
 ## Key concepts
 
-Understanding the following fundamental concepts will help you leverage Copilot in Fabric Data Warehouse effectively in your organization.
+The following concepts describe how Copilot in Fabric Data Warehouse works.
 
 **Natural language to SQL** makes it easier for users who struggle with writing complex T-SQL queries. Instead of spending time learning syntax or searching for examples, simply describe what you want in plain language—such as "Show all agents who sell properties in California"—and Copilot generates the query for you. This reduces barriers for new users and speeds up analysis for experienced ones.
 
@@ -25,7 +25,7 @@ We’ll explore this topic in more detail in a later module.
 
 ## Benefits
 
-By using Copilot for Data Warehouse, you can streamline your SQL workflows, reduce errors, and focus on deriving insights from your data. Here are some key benefits:
+Using Copilot for Data Warehouse can streamline SQL workflows and support focusing on analysis. Key benefits:
 
 - **Efficiency**: Automates query generation and provides intelligent code completions, saving time and effort.  
 - **Accessibility**: Allows you to interact with the data warehouse using natural language, reducing the need for advanced SQL knowledge.  

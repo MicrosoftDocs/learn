@@ -1,8 +1,8 @@
-Copilot for Data Engineering and Data Science in Microsoft Fabric is an AI-powered assistant designed to enhance productivity and simplify workflows. It provides contextualized code suggestions and natural language responses for tasks across data engineering and data science domains. It lights up directly in a notebook, allowing you to interact with your data and code seamlessly.
+Copilot for Data Engineering and Data Science in Microsoft Fabric is an AI-powered assistant that supports common data engineering and data science tasks. It provides contextualized code suggestions and natural language responses for tasks across data engineering and data science domains. It is available directly in a notebook, allowing you to interact with your data and code.
 
 ## Key concepts
 
-Understanding the following fundamental concepts will help you leverage Copilot for Data Engineering and Data Science in your organization.
+The following fundamental concepts describe how Copilot for Data Engineering and Data Science works.
 
 **AI-assisted code generation** enables you to describe your data integration requirements in natural language, such as "Load sales data from CSV and filter for the last quarter." Copilot then generates the necessary code and steps, reducing the time spent searching for syntax or troubleshooting errors. This is especially helpful for users who struggle with remembering complex Pandas or Spark commands.
 
@@ -28,5 +28,5 @@ By using Copilot for Data Engineering and Data Science, you can streamline your 
 - **Efficiency**: Automates repetitive tasks and accelerates development.  
 - **Accessibility**: Reduces the learning curve for new users by enabling natural language interactions.  
 - **Accuracy**: Provides context-aware suggestions that align with your data's structure.  
-- **Collaboration**: Enhances team productivity with clear documentation and shared insights.
+- **Collaboration**: Supports team productivity with clear documentation and shared insights.
 

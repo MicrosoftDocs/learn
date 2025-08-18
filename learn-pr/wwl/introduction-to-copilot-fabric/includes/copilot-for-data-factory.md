@@ -1,8 +1,8 @@
-Copilot for Data Factory in Microsoft Fabric is an AI-powered assistant designed to simplify and enhance data integration workflows. It acts as a subject-matter expert (SME), enabling you to create, transform, and manage dataflows and pipelines using natural language inputs.
+Copilot for Data Factory in Microsoft Fabric is an AI-powered assistant that supports common data integration workflows. It enables you to create, transform, and manage dataflows and pipelines using natural language inputs.
 
 ## Copilot for Dataflow Gen2
 
-Copilot for Dataflow Gen2 can enhance your productivity by assisting with several key tasks that often challenge users. For example, many people struggle with writing complex queries or modifying existing ones to fit new requirements. With **Query generation**, you can simply describe what you need in natural language, and Copilot will create or update queries for you. If you need sample data or want to reference existing queries, Copilot streamlines this process, making data preparation faster and more intuitive.
+Copilot for Dataflow Gen2 assists with several tasks that often challenge users. For example, many people struggle with writing complex queries or modifying existing ones to fit new requirements. With **Query generation**, you can describe what you need in natural language, and Copilot will create or update queries for you. If you need sample data or want to reference existing queries, Copilot helps speed up data preparation.
 
 When it comes to **Data transformation**, defining the right steps to filter, aggregate, or reshape data can be confusing, especially for those new to Mashup code. Copilot allows you to specify your transformation needs in plain language, then automatically generates the required Mashup code. This removes the guesswork and helps you achieve accurate results without deep coding expertise.
 
@@ -19,11 +19,11 @@ We’ll explore this topic in more detail in a later module.
 
 ## Copilot for Data Pipelines
 
-Copilot for Data Pipelines can significantly enhance your productivity by addressing common challenges in pipeline creation and management. Many users find it difficult to design complex pipelines from scratch, especially when they are unsure which activities to include or how to configure them. With **Pipeline generation**, you can simply describe your desired workflow in natural language—for example, "Copy data from Azure SQL to a Lakehouse and send a notification when complete"—and Copilot will automatically generate the necessary Data Pipeline activities. This removes the guesswork and accelerates the setup process.
+Copilot for Data Pipelines addresses common challenges in pipeline creation and management. Many users find it difficult to design complex pipelines from scratch, especially when they are unsure which activities to include or how to configure them. With **Pipeline generation**, you can describe your desired workflow in natural language—for example, "Copy data from Azure SQL to a Lakehouse and send a notification when complete"—and Copilot will generate the necessary Data Pipeline activities. This speeds up the setup process.
 
 Troubleshooting errors in pipelines is another area where users often struggle, particularly when error messages are unclear or solutions are not obvious. The **Error troubleshooting** feature in Copilot provides clear explanations of pipeline errors and actionable guidance to resolve issues. For instance, if a pipeline fails due to a missing dataset, Copilot will identify the problem and suggest steps to fix it, helping you maintain smooth workflows and minimize downtime.
 
-Understanding the structure and relationships within a complex pipeline can also be challenging, especially for those new to Data Factory. With **Pipeline summarization**, Copilot can generate a concise overview of your pipeline, describing the activities involved and how they interact. This makes it easier to review, share, and optimize your pipelines, allowing you to work smarter and focus on achieving your data integration goals.
+Understanding the structure and relationships within a complex pipeline can also be challenging, especially for those new to Data Factory. With **Pipeline summarization**, Copilot can generate a concise overview of your pipeline, describing the activities involved and how they interact. This makes it easier to review, share, and optimize your pipelines.
 
 Here's an example of how you can interact with Copilot in the Data Factory pipeline editor:
 
