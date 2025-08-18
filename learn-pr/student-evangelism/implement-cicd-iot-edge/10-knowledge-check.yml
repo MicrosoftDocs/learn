@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: In this section, we create interactive questions that validate if the learner understands the learning objectives.
-  ms.date: 07/20/2024
+  ms.date: 08/18/2025
   author: PatAltimore
   ms.author: patricka
   ms.topic: unit
@@ -35,4 +35,4 @@ quiz:
     - content: "Pipelines"
       isCorrect: true
       explanation: "CI/CD is implemented using pipelines."
-
+
