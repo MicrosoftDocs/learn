@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-copilot-fabric-data-warehouse.code-completions
-title: Use Copilot code completion in Fabric's Data Warehouse
+title: Use Copilot code completion in Microsoft Fabric's Data Warehouse
 metadata:
-  title: Use Copilot code completion in Fabric's Data Warehouse
-  description: "Use Copilot code completion in Fabric's Data Warehouse"
+  title: Use Copilot code completion in Microsoft Fabric's Data Warehouse
+  description: "Use Copilot code completion in Microsoft Fabric's Data Warehouse"
   ms.date: 07/01/2025
   author: weslbo
   ms.author: wedebols

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-copilot-fabric-data-warehouse.best-practices
-title: Review best practices using Copilot in Fabric's Data Warehouse
+title: Review best practices using Copilot in Microsoft Fabric's Data Warehouse
 metadata:
-  title: Review best practices using Copilot in Fabric's Data Warehouse
-  description: "Review best practices using Copilot in Fabric's Data Warehouse"
+  title: Review best practices using Copilot in Microsoft Fabric's Data Warehouse
+  description: "Review best practices using Copilot in Microsoft Fabric's Data Warehouse"
   ms.date: 07/01/2025
   author: weslbo
   ms.author: wedebols

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-copilot-fabric.copilot-for-data-factory
-title: Understand Copilot for Fabric Data Factory
+title: Understand Copilot for Microsoft Fabric Data Factory
 metadata:
-  title: Understand Copilot for Fabric Data Factory
-  description: "Understand Copilot for Fabric Data Factory"
+  title: Understand Copilot for Microsoft Fabric Data Factory
+  description: "Understand Copilot for Microsoft Fabric Data Factory"
   ms.date: 07/01/2025
   author: weslbo
   ms.author: wedebols

@@ -15,14 +15,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is a primary benefit of using Copilot for Fabric?"
+  - content: "What is a primary benefit of using Copilot for Microsoft Fabric?"
     choices:
     - content: "It manages infrastructure without user input."
       isCorrect: false
       explanation: "Sorry, that’s incorrect. Copilot helps with workflows, not infrastructure management."
     - content: "It automates complex data workflows and provides intelligent code suggestions."
       isCorrect: true
-      explanation: "That’s correct. Copilot for Fabric streamlines workflows and offers intelligent suggestions."
+      explanation: "That’s correct. Copilot for Microsoft Fabric streamlines workflows and offers intelligent suggestions."
     - content: "It replaces all manual data entry with voice commands."
       isCorrect: false
       explanation: "Sorry, that’s incorrect. Copilot doesn't replace all manual data entry with voice commands."
@@ -48,14 +48,14 @@ quiz:
     - content: "Automatic data deletion."
       isCorrect: false
       explanation: "Sorry, that’s incorrect. Copilot doesn't delete data automatically."
-  - content: "What is a key advantage of Fabric data agents?"
+  - content: "What is a key advantage of Microsoft Fabric data agents?"
     choices:
     - content: "They require advanced coding skills to operate."
       isCorrect: false
-      explanation: "Sorry, that’s incorrect. Fabric data agents are designed for accessibility, not advanced coding."
+      explanation: "Sorry, that’s incorrect. Microsoft Fabric data agents are designed for accessibility, not advanced coding."
     - content: "They allow users to interact with organizational data using natural language and enforce read-only access."
       isCorrect: true
-      explanation: "That’s correct. Fabric data agents enable natural language interaction and maintain data security."
+      explanation: "That’s correct. Microsoft Fabric data agents enable natural language interaction and maintain data security."
     - content: "They provide unrestricted write access to all data sources."
       isCorrect: false
-      explanation: "Sorry, that’s incorrect. Fabric data agents don't provide write access."
+      explanation: "Sorry, that’s incorrect. Microsoft Fabric data agents don't provide write access."
