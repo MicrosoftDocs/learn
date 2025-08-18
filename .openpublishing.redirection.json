@@ -53800,6 +53800,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/deploy-paas-solutions-with-azure-sql/9-knowledge-check.md",
+      "redirect_url": "/training/modules/deploy-paas-solutions-with-azure-sql/8-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/choose-the-right-disk-storage-for-vm-workload/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
       "redirect_document_id": false
