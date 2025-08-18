@@ -1,6 +1,6 @@
-Let's walk through the process of creating, configuring, and consuming a Fabric data agent to enable conversational AI experiences for querying enterprise data.
+This section walks through creating, configuring, and using a Fabric data agent to enable conversational AI for querying enterprise data.
 
-There are several steps involved creating, validating, and sharing a Fabric data agent in Fabric. The process is straightforward and you can begin testing the Fabric data agent resources in minutes.
+There are several steps involved in creating, validating, and sharing a Fabric data agent. After initial setup, you can begin testing the Fabric data agent promptly.
 
 > [!div class="mx-imgBorder"]
 > [![Diagram that shows an overview of Fabric data agent.](../media/data-agent-overview.png)](../media/data-agent-overview.png#lightbox)
@@ -101,7 +101,7 @@ The published Fabric data agent can be consumed in various platforms, including:
 - **Azure AI Foundry**
 - **Custom applications via API**
 
-These integrations enable conversational AI experiences, allowing users to query data in natural language and retrieve actionable insights.
+These integrations enable conversational AI, allowing users to query data in natural language and retrieve insights.
 
 ## Best practices
 

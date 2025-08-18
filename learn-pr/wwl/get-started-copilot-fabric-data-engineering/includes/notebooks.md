@@ -1,4 +1,4 @@
-Copilot for Fabric Data Engineering is a powerful tool that helps you write code faster and more efficiently in your notebooks. It works with Lakehouse tables and files, and it understands the dataframes you're working with. 
+Copilot for Fabric Data Engineering assists with writing code in notebooks. It works with Lakehouse tables and files, and it can reference the dataframes you're working with. 
 
 There are multiple ways to interact with Copilot for Fabric Data Engineering, including:
 
@@ -40,16 +40,14 @@ The following prerequisites should be in place before you start:
 
 Create a new cell in your notebook and copy the following instruction into it. To indicate that we want Copilot to generate code, use `%%code` as the first instruction in the cell. Execute the cell to generate the code.
 
-> [!NOTE]
-> **Crafted instruction**:
->
-> _%%code_
-> 
-> _Download the following file from this URL:_
-> 
-> _https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/proj_23np$defaultview/?format=TSV_
-> 
-> _Then write the file to the default lakehouse into a temporary folder. Create the temporary folder if it doesn't exist yet._
+```copilot-prompt
+%%code
+
+Download the following file from this URL:
+https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/proj_23np$defaultview/?format=TSV
+
+Then write the file to the default lakehouse into a temporary folder. Create the temporary folder if it doesn't exist yet.
+```
  
 Copilot generates code, which might differ slightly depending on your environment and the latest updates to Copilot.
 
@@ -80,16 +78,13 @@ Execute the cell and observe the output. The file should be downloaded and saved
 
 Now, create a new cell in your notebook and copy the following instruction into it.
 
-> [!NOTE]
-> **Crafted instruction**:
->
-> _%%code_
-> 
-> _Load the file 'Files/temp/proj_23np.tsv' into a spark dataframe._
-> 
-> _The fields are separated with a tab._
-> 
-> _Show the contents of the DataFrame using display method._
+```copilot-prompt
+%%code
+
+Load the file 'Files/temp/proj_23np.tsv' into a spark dataframe.
+The fields are separated with a tab.
+Show the contents of the DataFrame using display method.
+```
 
 Observe the output. The dataframe should contain the data from the TSV file. Here's an example of what the generated code might look like:
 
@@ -120,35 +115,34 @@ Here's an example of what the output might look like:
 
 Let's now go ahead and transform the data. We need to make sure the first field is split into separate columns. Additionally, we also need to make sure to work with correct data types and apply filtering. Create a new cell in your notebook and copy the following instruction into it.
 
-> [!NOTE]
-> **Crafted instruction**:
->
-> _%%code_
-> 
-> _Now transform this dataframe spark_df and split the first field 'freq,projection,sex,age,unit,geo\TIME_PERIOD' using a comma into 6 separate fields._
-> 
-> _Then, remove the fields 'freq', 'age', 'unit'._
-> 
-> _The fields 'projection', 'sex', 'geo' should be positioned first._
-> 
-> _The 'projection' field contains codes that should be replaced with the following values:_
-> 
-> - _'BSL' -> 'Baseline projections'._
-> - _'LFRT' -> 'Sensitivity test: lower fertility'._
-> - _'LMRT' -> 'Sensitivity test: lower mortality'._
-> - _'HMIGR' -> 'Sensitivity test: higher migration'._
-> - _'LMIGR' -> 'Sensitivity test: lower migration'._
-> - _'NMIGR' -> 'Sensitivity test: no migration'._
-> 
-> _Filter the 'geo' field and remove values 'EA20' and 'EU27_2020' (these are not countries)._
-> 
-> _Filter the 'sex' field and remove 'T' (these are totals)._
-> 
-> _Strip spaces from all field names in the dataframe._
-> 
-> _Convert the data type of all the year fields to integer._
-> 
-> _Display (Render) the DataFrame._
+```copilot-prompt
+%%code
+
+Now transform this dataframe spark_df and split the first field 'freq,projection,sex,age,unit,geo\TIME_PERIOD' using a comma into 6 separate fields.
+
+Then, remove the fields 'freq', 'age', 'unit'.
+
+The fields 'projection', 'sex', 'geo' should be positioned first.
+
+The 'projection' field contains codes that should be replaced with the following values:
+
+ _'BSL' -> 'Baseline projections'.
+ _'LFRT' -> 'Sensitivity test: lower fertility'.
+ _'LMRT' -> 'Sensitivity test: lower mortality'.
+ _'HMIGR' -> 'Sensitivity test: higher migration'.
+ _'LMIGR' -> 'Sensitivity test: lower migration'.
+ _'NMIGR' -> 'Sensitivity test: no migration'.
+
+Filter the 'geo' field and remove values 'EA20' and 'EU27_2020' (these are not countries).
+
+Filter the 'sex' field and remove 'T' (these are totals).
+
+Strip spaces from all field names in the dataframe.
+
+Convert the data type of all the year fields to integer.
+
+Display (Render) the DataFrame.
+```
 
 Copilot generates code, which might differ slightly depending on your environment and the latest updates to Copilot.
 
@@ -220,12 +214,11 @@ Here's an example of what the output might look like:
 
 Next, we want to save the transformed data to our lakehouse. Create a new cell in your notebook and copy the following instruction into it.
 
-> [!NOTE]
-> **Crafted instruction**:
->
-> _%%code_
-> 
-> _Save the dataframe as a new table named 'Population' in the default lakehouse._
+```copilot-prompt
+%%code
+ 
+Save the dataframe as a new table named 'Population' in the default lakehouse.
+```
 
 Copilot generates code, which might differ slightly depending on your environment and the latest updates to Copilot.
 
@@ -239,10 +232,9 @@ spark_df.write.format("delta").saveAsTable("Population")
 
 To validate that the data is saved correctly, expand the tables in your Lakehouse and check the contents. You can also use the **Copilot chat panel** to ask questions and get insights, and the AI provides responses or code to copy into your notebook. For example, you can ask:
 
-> [!NOTE]
-> **Crafted instruction**:
->
-> _What is the projected population for geo BE in 2050?_
+```copilot-prompt
+What is the projected population for geo BE in 2050?
+```
 
 Copilot generates code to filter the data for the specified geo and year, and display the result.
 

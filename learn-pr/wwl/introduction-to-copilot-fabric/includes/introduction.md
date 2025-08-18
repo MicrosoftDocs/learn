@@ -2,30 +2,28 @@ Let's first understand the context of Microsoft Fabric and its components.
 
 ## What is Microsoft Fabric?
 
-Microsoft Fabric is an end-to-end data analytics platform that unifies various tools and services to empower users to manage, analyze, and visualize data seamlessly. It integrates data engineering, data science, real-time analytics, and business intelligence into a single, cohesive experience.
-
-Microsoft Fabric simplifies complex data workflows, enabling users to focus on deriving insights rather than managing infrastructure. It provides a unified platform that enhances collaboration, reduces operational overhead, and accelerates decision-making by delivering actionable insights efficiently.
+Microsoft Fabric is a Software-as-a-Service (SaaS) analytics platform that unifies core data and AI workloads—including data engineering, data integration, data warehousing, data science, real-time analytics, and business intelligence—into a single, cohesive experience. By delivering these capabilities as a managed SaaS offering, Fabric reduces infrastructure and integration overhead, streamlines collaboration, and helps users focus on turning data into actionable insights.
 
 ## What is Copilot for Fabric?
 
-Copilot for Fabric is an AI-powered assistant designed to enhance productivity and simplify workflows across Microsoft Fabric. It uses generative AI to help users transform and analyze data, generate insights, and create visualizations and reports with ease.
+Copilot for Fabric is an AI-based assistant that supports common tasks across Microsoft Fabric. It uses generative AI to help users transform and analyze data, generate insights, and create visualizations and reports.
 
-Copilot for Fabric streamlines complex tasks by providing intelligent code suggestions, automating routine processes, and enabling natural language interactions. This allows users to focus on higher-value activities, reduces the learning curve for new users, and accelerates the journey from raw data to actionable insights.
+Copilot for Fabric provides code suggestions, can automate routine processes, and enables natural language interactions. This helps reduce the learning curve for new users and supports moving from raw data to insights.
 
-In the next sections, we'll explore the various components of Copilot for Fabric, including Copilot for Data Factory, Copilot for SQL Database, Copilot for Real-Time Intelligence, and Fabric Data Agents. Each component is designed to address specific use cases and enhance the overall data analytics experience within Microsoft Fabric.
+In the next sections, we'll outline components of Copilot for Fabric, including Copilot for Data Factory, Copilot for SQL Database, Copilot for Real-Time Intelligence, and Fabric Data Agents. Each component addresses specific use cases within Microsoft Fabric.
 
 > [!div class="mx-imgBorder"]
 > [![Diagram showing an overview of Copilot in Microsoft Fabric.](../media/fabric-copilot-overview.png)](../media/fabric-copilot-overview.png#lightbox)
 
 ## Who can use Copilot in Fabric?
 
-Copilot in Microsoft Fabric is designed to enhance the data analytics experience for a diverse range of users across the organization. The technology aims to facilitate user interaction with their data and items in Fabric for:
+Copilot in Microsoft Fabric is intended for a range of users across the organization. It facilitates interaction with data and items in Fabric for:
 
 - **Enterprise developers**: Technical professionals who create and manage complex data solutions and analytics infrastructure
 - **Self-service users**: Business analysts and data professionals who work with data but may not have extensive technical backgrounds
 - **Business users**: End users who consume reports, dashboards, and insights to make data-driven decisions
 
-Copilot aims to augment the abilities and intelligence of human users rather than replace them. It's designed to make work more efficient and improve outcomes across different skill levels and roles within an organization.
+Copilot is intended to augment user capabilities rather than replace them. It can assist users across different skill levels and roles.
 
 ## Prerequisites for using Copilot in Fabric
 

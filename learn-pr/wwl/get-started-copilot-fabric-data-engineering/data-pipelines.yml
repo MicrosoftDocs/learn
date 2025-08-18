@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-copilot-fabric-data-engineering.data-pipelines
-title: Use Copilot with Fabric data pipelines
+title: Use Copilot with Microsoft Fabric data pipelines
 metadata:
-  title: Use Copilot with Fabric Data Pipelines
-  description: "Use Copilot with Fabric data pipelines"
+  title: Use Copilot with Microsoft Fabric Data Pipelines
+  description: "Use Copilot with Microsoft Fabric data pipelines"
   ms.date: 07/01/2025
   author: weslbo
   ms.author: wedebols

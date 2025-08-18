@@ -2,7 +2,7 @@ The Copilot chat pane in Microsoft Fabric's Data Warehouse allows users to inter
 
 ## Key capabilities
 
-The Copilot chat pane offers several capabilities. It can convert natural language prompts into T-SQL queries, enabling seamless query generation. You can ask questions about data warehousing concepts and receive detailed answers. Additionally, Copilot provides natural language explanations for T-SQL code, helping users understand complex queries. It also helps resolving T-SQL errors by offering automated suggestions to fix issues.
+The Copilot chat pane offers several capabilities. It can convert natural language prompts into T-SQL queries to support query generation. You can ask questions about data warehousing concepts and receive answers. Additionally, Copilot provides natural language explanations for T-SQL code to help users understand queries. It also assists with resolving T-SQL errors by offering suggestions to fix issues.
 
 ## How to get started
 
@@ -13,20 +13,18 @@ The Copilot chat pane offers several capabilities. It can convert natural langua
    - The chat pane provides starter prompts to help you get familiar with Copilot.
 4. Enter the following prompt:
 
-> [!NOTE]
-> **Crafted instruction**:
->
-> _How can I import data into my Fabric Warehouse?_
+```copilot-prompt
+How can I import data into my Fabric Warehouse?
+```
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of the Fabric Warehouse Copilot Chat interface with general information.](../media/copilot-chat.png)](../media/copilot-chat.png#lightbox)
 
 You can also ask Copilot to generate T-SQL queries based on your natural language prompts. For example, you can ask for a specific query or request a summary of data.
 
-> [!NOTE]
-> **Crafted instruction**:
->
-> _Get number of trips performed by each medallion._
+```copilot-prompt
+Get number of trips performed by each medallion.
+```
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of the Fabric Warehouse Copilot Chat interface with T-SQL Suggestion.](../media/copilot-chat-2.png)](../media/copilot-chat-2.png#lightbox)
@@ -58,4 +56,4 @@ For `/generate-sql`, `/question`, and optionally `/fix`, include additional info
 
 ## Summary
 
-The Copilot chat pane in Fabric's Data Warehouse is a powerful tool for generating SQL queries, fixing errors, and learning about data warehousing. By using natural language and advanced commands, you can streamline your workflow and enhance productivity.
+The Copilot chat pane in Fabric's Data Warehouse can generate SQL queries, help fix errors, and support learning about data warehousing. By using natural language and the available commands, you can perform common tasks from one interface.

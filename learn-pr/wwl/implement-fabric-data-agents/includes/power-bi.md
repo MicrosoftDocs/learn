@@ -1,4 +1,4 @@
-Copilot in Power BI enables users to ask natural language questions and receive relevant answers from their available Fabric resources. With Copilot, you can interact with data across Power BI semantic models, reports, and Fabric data agents, all within a single conversational interface. This integration helps you focus on extracting insights without switching between different items.
+Copilot in Power BI enables users to ask natural language questions and receive answers from their available Fabric resources. With Copilot, you can interact with data across Power BI semantic models, reports, and Fabric data agents in a single conversational interface. This integration reduces the need to switch between different items.
 
 > [!NOTE]
 > This feature is currently in preview.

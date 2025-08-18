@@ -15,7 +15,7 @@ With your sample warehouse open, expand the views, and select the **vw_PaymentAn
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Fabric Data Warehouse Copilot Quick Actions.](../media/quick-actions.png)](../media/quick-actions.png#lightbox)
 
-Notice the **Explain** and **Fix** buttons at the top of the query editor. When you select **Explain**, Copilot analyzes your query and generates inline comments that explain what your code does. If applicable, Copilot leaves a summary at the top of the query as well. The comments appear next to the relevant lines of code in your query editor. You can edit or delete the comments as needed. 
+When you select **Explain**, Copilot analyzes your query and generates inline comments that explain what your code does. If applicable, Copilot leaves a summary at the top of the query as well. The comments appear next to the relevant lines of code in your query editor. You can edit or delete the comments as needed. 
 
 ```sql
 -- Create a view named vw_PaymentAnalysis to analyze payment data

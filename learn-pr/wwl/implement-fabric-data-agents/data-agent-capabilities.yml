@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-fabric-data-agents.data-agent-capabilities
-title: Understand Fabric data agent capabilities
+title: Understand Microsoft Fabric data agent capabilities
 metadata:
-  title: Understand Fabric data agent capabilities
-  description: "Understand Fabric data agent capabilities"
+  title: Understand Microsoft Fabric data agent capabilities
+  description: "Understand Microsoft Fabric data agent capabilities"
   ms.date: 07/01/2025
   author: weslbo
   ms.author: wedebols

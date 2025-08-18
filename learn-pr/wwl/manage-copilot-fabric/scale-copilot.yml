@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-copilot-fabric.scale-copilot
-title: Scale Copilot in Fabric
+title: Scale Copilot in Microsoft Fabric
 metadata:
-  title: Scale Copilot in Fabric
-  description: "Scale Copilot in Fabric"
+  title: Scale Copilot in Microsoft Fabric
+  description: "Scale Copilot in Microsoft Fabric"
   ms.date: 07/01/2025
   author: weslbo
   ms.author: wedebols
