@@ -10,7 +10,7 @@ metadata:
   ms.service: fabric
   ai-usage: ai-assisted
 title: Manage Copilot in Microsoft Fabric
-summary: "Manage Copilot in Microsoft Fabric: empower your organization with AI-driven insights."
+summary: "Operationalize Copilot in Fabric—enable, govern, monitor consumption, scale capacity, and apply responsible AI and access controls for secure, cost‑efficient adoption."
 abstract: |
   In this module, you learn how to:
     - Explain the core architecture and governance model of Copilot in Microsoft Fabric.

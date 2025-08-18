@@ -10,7 +10,7 @@ metadata:
   ms.service: fabric
   ai-usage: ai-assisted
 title: Get started with Copilot in Microsoft Fabric for Data Warehouse
-summary: "Unlock the power of data with Microsoft Fabric and Copilot from a data warehouse perspective."
+summary: "Accelerate warehouse analytics with Copilot in Fabric—use AI chat, inline completions, and quick actions to generate, refine, explain, and fix T-SQL while applying best-practice prompting."
 abstract: |
   In this module, you learn how to:
     - Apply Copilot across Fabric Data Warehouse experiences to accelerate querying, authoring, and troubleshooting.

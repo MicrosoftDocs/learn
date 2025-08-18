@@ -10,7 +10,7 @@ metadata:
   ms.service: fabric
   ai-usage: ai-assisted
 title: Implement Microsoft Fabric Data Agents (chat with your data)
-summary: "Empower your organization with Microsoft Fabric data agents: transform data into actionable insights through conversational AI."
+summary: "Enable secure conversational access to enterprise data with Fabric data agents—design, configure, govern, and integrate AI-powered Q&A experiences across OneLake sources."
 abstract: |
   In this module, you learn how to:
     - Design and configure Fabric data agents that enable secure conversational access to enterprise data.

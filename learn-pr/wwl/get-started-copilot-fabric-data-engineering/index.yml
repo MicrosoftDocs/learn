@@ -10,7 +10,7 @@ metadata:
   ms.service: fabric
   ai-usage: ai-assisted
 title: Get started with Copilot in Microsoft Fabric for data engineering
-summary: "Unlock the power of data with Microsoft Fabric and Copilot from a data engineering perspective."
+summary: "Accelerate data engineering in Fabric with Copilot—apply AI prompts to ingest, transform, orchestrate, and explain dataflows, pipelines, and Spark code."
 abstract: |
   In this module, you learn how to:
     - Apply Copilot across Microsoft Fabric to accelerate end‑to‑end data engineering tasks from ingestion to transformation and exploration.
