@@ -4,9 +4,9 @@ metadata:
   title: "Implement CI/CD for IoT Edge"
   description: "This module implements CICD pipeline for edge devices."
   manager: lizross
-  ms.date: 07/20/2024
+  ms.date: 08/18/2025
   ms.update-cycle: 180-days
-  author: orin-thomas
+  author: PatAltimore
   ms.author: orthomas
   ms.topic: module
   ms.service: azure-iot-edge
@@ -43,4 +43,4 @@ units:
 - learn.oxford.implement-cicd-iot-edge.exercise-create-release-pipeline-iot-edge
 - learn.oxford.implement-cicd-iot-edge.knowledge-check
 - learn.oxford.implement-cicd-iot-edge.summary
-
+
