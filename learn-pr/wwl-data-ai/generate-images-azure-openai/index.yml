@@ -5,8 +5,8 @@ metadata:
   description: Use models in Azure AI Foundry to generate images
   author: ivorb
   ms.author: berryivor
-  ms.date: 05/08/2025
-  ms.service: azure-ai-openai
+  ms.date: 08/01/2025
+  ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
@@ -18,7 +18,7 @@ abstract: |
     - Use the Images playground in Azure AI Foundry portal
     - Integrate image generation models into your apps
 prerequisites: |
-  Before starting this module, you should be familiar with Azure AI Foundry. You should also have programming experience with Python or Microsoft C#.
+  Before starting this module, you should be familiar with Azure AI Foundry. You should also have programming experience.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate
@@ -26,7 +26,6 @@ roles:
   - ai-engineer
   - developer
 products: 
-  - azure-openai
   - ai-services
 subjects: 
   - artificial-intelligence

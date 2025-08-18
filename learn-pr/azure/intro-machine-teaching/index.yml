@@ -4,6 +4,7 @@ metadata:
   title: Introduction to Machine Teaching
   description: Learn the concept of Machine Teaching and evaluate when to use it.
   ms.date: 10/17/2022
+  ms.update-cycle: 180-days
   author: softchris
   ms.author: chnoring
   ms.topic: module

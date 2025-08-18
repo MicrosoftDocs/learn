@@ -7,6 +7,7 @@ metadata:
   author: yoosunee
   ms.author: anruss
   ms.date: 05/28/2025
+  ms.update-cycle: 180-days
   ms.service: artificial-intelligence
   ms.topic: module-standard-task-based
   ms.collection:

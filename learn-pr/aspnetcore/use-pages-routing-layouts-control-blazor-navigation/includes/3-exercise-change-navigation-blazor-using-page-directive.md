@@ -1,4 +1,4 @@
-Blazor has a navigation state helper that helps C# code manage an app's URIs. There's also a **NavLink** component that's a drop-in replacement for the `<a>` element. One of NavLink's features is adding an active class to HTML links for an app's menus.
+Blazor has a navigation state helper that helps C# code manage a URI in your app. There's also a **NavLink** component that's a drop-in replacement for the `<a>` element. One of NavLink's features is adding an active class to HTML links for an app's menus.
 
 Your team made a start on the Blazing Pizza app and built Blazor components to represent pizzas and orders. Now the app needs to add checkout and other order-related pages.
 
@@ -9,9 +9,9 @@ In this exercise, you add a new checkout page, add a top navigation to the app, 
 > [!NOTE]
 > This module uses the .NET command-line interface (CLI) and Visual Studio Code for local development. After you finish this module, you can apply the concepts by using Visual Studio (Windows) or Visual Studio for Mac (macOS). For continued development, use Visual Studio Code for Windows, Linux, and macOS.
 
-[!include[](../../../includes/dotnet6-sdk-version.md)]
+[!include[](../../../includes/dotnet9-sdk-version.md)]
 
-If you haven't created a Blazor app before, follow the [setup instructions for Blazor](https://aka.ms/blazor-getting-started) to install the correct version of .NET and check that your machine is set up correctly. Stop at the **Create your app** step.
+If you're creating your first Blazor app, follow the [setup instructions for Blazor](https://aka.ms/blazor-getting-started) to install the correct version of .NET and check that your machine is set up correctly. Stop at the **Create your app** step.
 
 1. Open Visual Studio Code.
 1. Open the integrated terminal from Visual Studio Code by selecting **View**. Then on the main menu, select **Terminal**.
@@ -32,7 +32,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
     :::image type="content" source="../media/blazing-pizza-setup.png" alt-text="Screenshot showing the cloned version of the Blazing Pizza app.":::
 
-    Configure some pizzas and add them to your order. Select **Order >** at the bottom of the page. The default "404 not found" message appears because there isn't a checkout page yet.
+    Configure some pizzas and add them to your order. Select **Order >** at the bottom of the page. The default message "Sorry, there's nothing at this address." appears because there isn't a checkout page yet.
 
 1. To stop the app, select <kbd>Shift</kbd> + <kbd>F5</kbd>.
 
@@ -124,8 +124,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
         <a href="" class="nav-tab" >
             <img src="img/pizza-slice.svg" />
             <div>Get Pizza</div>
-        </a>
-    
+        </a>    
     </div>
     ```
 
@@ -140,14 +139,13 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
         <a href="" class="nav-tab active" >
             <img src="img/pizza-slice.svg" />
             <div>Get Pizza</div>
-        </a>
-    
+        </a>   
     </div>
     ```
 
 1. In Visual Studio Code, select <kbd>F5</kbd>. Or on the **Run** menu, select **Start Debugging**.
 
-    The app now has a nice menu bar at the top, which includes the company's logo. Add some pizzas, and progress the order to the checkout page. You see the pizzas listed and the active indicator missing from the menu.
+    The app now has a nice menu bar at the top, which includes the company's logo. Add some pizzas and select the **Order** button to progress to the checkout page. You see the pizzas listed and the active indicator missing from the menu.
 
     :::image type="content" source="../media/blazing-checkout-page.png" alt-text="Screenshot showing the checkout page with some pizzas.":::
 
@@ -193,38 +191,38 @@ At the moment, the checkout page doesn't allow customers to place their orders. 
 1. Replace the `PizzaStoreContext` class with this code:
 
     ```csharp
-      public class PizzaStoreContext : DbContext
-      {
-            public PizzaStoreContext(
-                DbContextOptions options) : base(options)
-            {
-            }
+    public class PizzaStoreContext : DbContext
+    {
+        public PizzaStoreContext(
+            DbContextOptions options) : base(options)
+        {
+        }
     
-            public DbSet<Order> Orders { get; set; }
+        public DbSet<Order> Orders { get; set; }
     
-            public DbSet<Pizza> Pizzas { get; set; }
+        public DbSet<Pizza> Pizzas { get; set; }
     
-            public DbSet<PizzaSpecial> Specials { get; set; }
+        public DbSet<PizzaSpecial> Specials { get; set; }
     
-            public DbSet<Topping> Toppings { get; set; }
+        public DbSet<Topping> Toppings { get; set; }
     
-            protected override void OnModelCreating(ModelBuilder modelBuilder)
-            {
-                base.OnModelCreating(modelBuilder);
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
     
-                // Configuring a many-to-many special -> topping relationship that is friendly for serialization
-                modelBuilder.Entity<PizzaTopping>().HasKey(pst => new { pst.PizzaId, pst.ToppingId });
-                modelBuilder.Entity<PizzaTopping>().HasOne<Pizza>().WithMany(ps => ps.Toppings);
-                modelBuilder.Entity<PizzaTopping>().HasOne(pst => pst.Topping).WithMany();
-            }
-
-      }
+            // Configuring a many-to-many special -> topping relationship that is friendly for serialization
+            modelBuilder.Entity<PizzaTopping>().HasKey(pst => new { pst.PizzaId, pst.ToppingId });
+            modelBuilder.Entity<PizzaTopping>().HasOne<Pizza>().WithMany(ps => ps.Toppings);
+            modelBuilder.Entity<PizzaTopping>().HasOne(pst => pst.Topping).WithMany();
+        }
+    }
     ```
 
     This code adds entity framework support for the app's order and pizza classes.
 
-1. In Visual Studio Code, on the menu, select **File** > **New Text File**.
-1. Select the C# language, and enter this code:
+1. In Visual Studio Code, on the menu, select **File** > **New File**.
+1. Enter **OrderController.cs** as the filename. Make sure you save the file in the same directory as **OrderState.cs**.
+1. Add the following code:
 
     ```csharp
     using Microsoft.AspNetCore.Mvc;
@@ -280,7 +278,7 @@ At the moment, the checkout page doesn't allow customers to place their orders. 
     The preceding code allows our app to get all the current orders and place an order. The `[Route("orders")]` Blazor attribute allows this class to handle incoming HTTP requests for **/orders** and **/orders/{orderId}**.
 
 1. Save your changes with <kbd>Ctrl</kbd>+<kbd>S</kbd>.
-1. For the filename, use **OrderController.cs**. Make sure you save the file in the same directory as **OrderState.cs**.
+
 1. In the file explorer, select **OrderState.cs**.
 1. At the bottom of the class under the `RemoveConfiguredPizza` method, modify `ResetOrder()` to reset the order:
 
@@ -385,7 +383,7 @@ The app is improving. We have pizza configuration and a checkout. We want to all
         }
     }
     ```
-    
+
     The navigation needs to change on all the pages we have now to include a link to the new **My orders** page. Open **Checkout.razor** and **Index.razor** and replace the navigation with this code:
 
     ```html
@@ -402,8 +400,7 @@ The app is improving. We have pizza configuration and a checkout. We want to all
         <a href="myorders" class="nav-tab" >
             <img src="img/bike.svg" />
             <div>My orders</div>
-        </a>
-    
+        </a>    
     </div>
     ```
 

@@ -20,7 +20,7 @@ We start by using an AKS cluster to deploy a Node.js container, which will proce
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 * Create a Kubernetes AKS cluster.
 * Run a Docker container in Kubernetes.

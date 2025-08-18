@@ -3,8 +3,9 @@ uid: learn.wwl.implement-llmops-azure-databricks
 metadata:
   title: Implement LLMOps in Azure Databricks
   description: Implement LLMOps in Azure Databricks
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/17/2025
+  ms.update-cycle: 180-days
+  author: theresa-i
   ms.author: theresai
   ms.topic: module
   ms.service: azure-databricks

@@ -5,7 +5,7 @@ metadata:
   description: "Discover how to leverage Microsoft Defender for Cloud through the Azure portal to ensure the security of your Azure services and workloads, offering continuous threat detection and prevention."
   ms.date: 05/31/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
@@ -60,4 +60,4 @@ units:
 - learn.wwl.just-in-time-access.knowledge-check
 - learn.wwl.just-in-time-access.summary
 badge:
-  uid: learn.wwl.just-in-time-access.badge
+  uid: learn.wwl.just-in-time-access.badge

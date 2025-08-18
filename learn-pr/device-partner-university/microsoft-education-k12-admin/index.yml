@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.dpu.k12-admin
+title: Microsoft Education for K-12 administrators
+metadata:
+  title: Microsoft Education for K-12 administrators
+  description: In this module, you'll learn how Microsoft Education solutions support the needs of K-12 administrators.
+  ms.date: 07/01/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: module
+  ms.service: microsoft-365-education
+  ms.custom: CE052925-2
+summary: >
+  Learn how Microsoft Education solutions help K-12 administrators achieve more.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Identify key challenges faced by K–12 administrators and explain how Microsoft Education solutions address them.
+  - Describe how specific Microsoft Learning Accelerators support foundational, future-ready, and well-being skills in K–12 education.
+  - Demonstrate how Microsoft 365 tools—such as Copilot, Teams, and OneNote—enhance administrative efficiency, collaboration, and accessibility.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/microsoft-education-k12-admin.svg
+ratingEnabled: false
+levels: 
+  - beginner
+roles: 
+  - k-12-educator
+  - school-leader
+  - technology-manager
+products:
+  - m365-education
+units:
+  - learn.dpu.k12-admin.introduction
+  - learn.dpu.k12-admin.challenges
+  - learn.dpu.k12-admin.needs
+  - learn.dpu.k12-admin.learning-accelerators
+  - learn.dpu.k12-admin.reading
+  - learn.dpu.k12-admin.mathematics
+  - learn.dpu.k12-admin.well-being
+  - learn.dpu.k12-admin.speaking
+  - learn.dpu.k12-admin.searching
+  - learn.dpu.k12-admin.insights
+  - learn.dpu.k12-admin.microsoft-365-copilot-chat
+  - learn.dpu.k12-admin.microsoft-365-copilot
+  - learn.dpu.k12-admin.comparing-copilots
+  - learn.dpu.k12-admin.microsoft-teams
+  - learn.dpu.k12-admin.onenote-for-education
+  - learn.dpu.k12-admin.onenote-staff-notebooks
+  - learn.dpu.k12-admin.knowledge-check
+  - learn.dpu.k12-admin.summary
+badge:
+  uid: learn.dpu.k12-admin.badge

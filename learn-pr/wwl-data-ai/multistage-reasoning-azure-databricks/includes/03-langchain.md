@@ -52,7 +52,7 @@ To use LangChain in Azure Databricks, you need to ensure the library is installe
 
 Once installed, you can use LangChain to build multi-stage reasoning systems. Here's how you can structure a multi-stage workflow:
 
-### Conceptual Example: Question Answering with Document Search
+### Conceptual example: question answering with document search
 
 Instead of asking an LLM to "answer my question using only your training data," you can create a multi-stage system that finds relevant information first:
 

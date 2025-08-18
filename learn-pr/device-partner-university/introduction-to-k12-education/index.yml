@@ -9,6 +9,7 @@ metadata:
   ms.author: v-mwinters
   ms.topic: module
   ms.service: microsoft-365-education
+  ms.custom: CE052925-1
 summary: >
   Learn how K-12 educators, school leaders, and IT professionals can use the power of Microsoft Education solutions to achieve more.
 abstract: |
@@ -18,7 +19,7 @@ abstract: |
   - Determine which Microsoft solutions are appropriate for a specific K-12 institution.
 prerequisites: |
   - None
-iconUrl: /training/achievements/introduction-to-k12-education.svg
+iconUrl: /training/achievements/introduction-to-k-12-education.svg
 ratingEnabled: false
 levels: 
   - beginner

@@ -17,7 +17,7 @@ Let's explore each of these components in more detail.
 
 ### Use LLMs and embedding models
 
-When you build a multi-stage reasoning system with LlamaIndex, you use **LLMs** to generate responses. You can use the built-in interface to use models from Azure OpenAI, Hugging Face, or LangChain for natural language tasks like text completion and chat.
+When you build a multi-stage reasoning system with LlamaIndex, you use **LLMs** to generate responses. You can use the built-in interface to use models from Azure OpenAI, Hugging Face, or other model providers for natural language tasks like text completion and chat.
 
 > [!Tip]
 > Learn how to integrate LlamaIndex with [Azure OpenAI models](https://docs.llamaindex.ai/en/stable/examples/llm/azure_openai/?azure-portal=true).

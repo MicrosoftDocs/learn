@@ -1,9 +1,10 @@
 ### YamlMime:Module
 uid: learn.wwl.fundamentals-machine-learning
 metadata:
-  title: Introduction to machine learning concepts
+  title: Introduction to Machine Learning Concepts
   description: "Machine learning is the basis for most modern artificial intelligence solutions. A familiarity with the core concepts on which machine learning is based is an important foundation for understanding AI."
-  ms.date: 02/14/2025
+  ms.date: 7/29/2025
+  ms.update-cycle: 180-days
   author: wwlpublish
   ms.author: gmalc
   ms.topic: module

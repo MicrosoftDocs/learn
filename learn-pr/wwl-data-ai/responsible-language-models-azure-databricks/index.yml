@@ -1,10 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.responsible-language-models-azure-databricks
 metadata:
-  title: Review responsible AI principles for language models in Azure Databricks
+  title: Review Responsible AI Principles for Language Models in Azure Databricks
   description: Review responsible AI principles for language models in in Azure Databricks
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/17/2025
+  ms.update-cycle: 180-days
+  author: theresa-i
   ms.author: theresai
   ms.topic: module
   ms.service: azure-databricks

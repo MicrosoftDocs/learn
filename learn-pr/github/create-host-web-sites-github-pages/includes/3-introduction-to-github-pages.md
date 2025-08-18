@@ -19,4 +19,4 @@ When you finish the exercise in GitHub, return here for:
 > **Altering the contents in this workflow can break the exercise's**
 > **ability to validate your actions, provide feedback, or grade the results**.
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/skills/github-pages?azure-portal=true)
+> [Start the exercise on GitHub](https://github.com/skills-dev/github-pages?azure-portal=true)

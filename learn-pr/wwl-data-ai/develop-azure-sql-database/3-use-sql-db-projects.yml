@@ -4,10 +4,10 @@ title: Use SQL Database Projects
 metadata:
   title: Use SQL Database Projects
   description: "Learn how to use SQL Database Projects."
-  ms.date: 9/27/2024
-  author: jupadrao
+  ms.date: 08/06/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-use-sql-db-projects.md)]
+  [!include[](includes/3-use-sql-db-projects.md)]

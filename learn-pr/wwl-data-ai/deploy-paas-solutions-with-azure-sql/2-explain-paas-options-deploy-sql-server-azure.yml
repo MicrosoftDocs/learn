@@ -2,14 +2,16 @@
 uid: learn.wwl.deploy-paas-solutions-with-azure-sql.explain-paas-options-for-deploying-sql-server-azure
 title: Explain PaaS options for deploying SQL Server in Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explain PaaS options for deploying SQL Server in Azure
   description: "Explain PaaS options for deploying SQL Server in Azure"
-  ms.date: 05/27/2022
+  ms.date: 08/13/2025
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 12
 content: |
-  [!include[](includes/2-explain-paas-options-deploy-sql-server-azure.md)]
+  [!include[](includes/2-explain-paas-options-deploy-sql-server-azure.md)]

@@ -4,7 +4,7 @@ title: Describe task status notifications
 metadata:
   title: Describe task status notifications
   description: "Describe task status notifications"
-  ms.date: 02/26/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-describe-task-status-notifications.md)]
+  [!include[](includes/3-describe-task-status-notifications.md)]

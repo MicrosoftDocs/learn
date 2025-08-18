@@ -5,8 +5,9 @@ metadata:
   title: Summary
   description: Summary
   author: japhletnwamu
-  ms.author: japhletnwamu
+  ms.author: orthomas
   ms.date: 08/28/2024
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot

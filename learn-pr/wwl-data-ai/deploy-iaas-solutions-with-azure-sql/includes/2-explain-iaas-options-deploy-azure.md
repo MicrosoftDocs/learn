@@ -96,3 +96,4 @@ When you provision an Azure virtual machine running SQL Server, you can also con
 :::image type="content" source="../media/dp-3300-module-11-lab-51.png" alt-text="SQL Server settings tab when creating a SQL Server virtual machine":::
 
 For more information about the SQL Server settings available when creating a virtual machine, see [Provision SQL Server on Azure VM (Azure portal)](/azure/azure-sql/virtual-machines/windows/create-sql-vm-portal).
+

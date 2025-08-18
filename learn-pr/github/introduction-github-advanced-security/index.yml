@@ -2,11 +2,11 @@
 uid: learn.introduction-github-advanced-security # Do not edit: uid must be globally unique
 metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
-  title: Introduction to GitHub Advanced Security          # Do not edit: title must be "Introduction to (product)"
-  description: "This module will help you become familiar with GitHub's Advanced Security features and best practices. As you learn about these features, you'll identify critical areas for eliminating security gaps."             # Copy your 'evaluate' Learning Objective here (see below)
+  title: Introduction to GitHub Advanced Security  # Do not edit: title must be "Introduction to (product)"
+  description: "This module will help you become familiar with GitHub's Advanced Security features and best practices. As you learn about these features, you'll identify critical areas for eliminating security gaps."
   ms.service: github
   manager: mkluck
-  ms.date: 07/13/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  ms.date: 07/13/2023             # Date of commit to GitHub (cannot be in the future)
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module
@@ -14,9 +14,9 @@ title: Introduction to GitHub Advanced Security
 summary: "This module will help you become familiar with GitHub's Advanced Security features (GHAS) and best practices. As you learn about these features, you'll identify critical areas for eliminating security gaps."
 abstract: |
   By the end of this module, you'll be able to:
-    - Define GHAS and the importance of the integral features such as Secret scanning, Code scanning, and Dependabot
-    - Know how to utilize GHAS to maximize security impact
-    - Understand GHAS and its role in the security ecosystem
+    - Define GHAS and key features such as secret scanning, code scanning, and Dependabot
+    - Use GHAS to maximize security impact
+    - Explain GHAS and its role in the security ecosystem
 prerequisites: |
   - A GitHub Enterprise Cloud or Enterprise Server account with GitHub Advanced Security
   - Working knowledge of GitHub Actions and workflows
@@ -24,17 +24,17 @@ iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
-- developer
+  - developer
 products:
-- github
+  - github
 subjects:
-- devops
+  - devops
 units:
-- learn.introduction-github-advanced-security.introduction 
-- learn.introduction-github-advanced-security.what-is-github-advanced-security
-- learn.introduction-github-advanced-security.create-culture-around-security
-- learn.introduction-github-advanced-security.respond-to-security-alerts
-- learn.introduction-github-advanced-security.knowledge-check
-- learn.introduction-github-advanced-security.summary
+  - learn.introduction-github-advanced-security.introduction
+  - learn.introduction-github-advanced-security.what-is-github-advanced-security
+  - learn.introduction-github-advanced-security.create-culture-around-security
+  - learn.introduction-github-advanced-security.respond-to-security-alerts
+  - learn.introduction-github-advanced-security.knowledge-check
+  - learn.introduction-github-advanced-security.summary
 badge:
   uid: learn.introduction-github-advanced-security.badge

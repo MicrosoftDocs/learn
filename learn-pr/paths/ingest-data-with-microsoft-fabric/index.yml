@@ -1,10 +1,10 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.ingest-data-with-microsoft-fabric
 metadata:
-  title: Ingest data with Microsoft Fabric
+  title: Ingest Data with Microsoft Fabric
   description: Explore how Microsoft Fabric enables you to ingest and orchestrate data from various sources (such as files, databases, or web services) through dataflows, notebooks, and pipelines.
-  ms.date: 01/29/2025
-  author: wwlpublish
+  ms.date: 08/15/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: learning-path
 title: Ingest data with Microsoft Fabric
@@ -33,8 +33,6 @@ modules:
 - learn.wwl.ingest-dataflows-gen2-fabric
 - learn.wwl.use-data-factory-pipelines-fabric
 - learn.wwl.use-apache-spark-work-files-lakehouse
-- learn.wwl.get-started-kusto-fabric
-- learn.wwl.explore-event-streams-microsoft-fabric
 - learn.wwl.query-data-kql-database-microsoft-fabric
 trophy:
   uid: learn.wwl.ingest-data-with-microsoft-fabric.trophy

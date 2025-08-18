@@ -3,7 +3,7 @@ uid: learn.wwl.protect-data-transit-at-rest
 metadata:
   title: Protect data in-transit and at rest
   description: Protect data in-transit and at rest
-  ms.date: 2/25/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
@@ -47,4 +47,4 @@ units:
 - learn.wwl.protect-data-transit-at-rest.summary
 badge:
   uid: learn.wwl.protect-data-transit-at-rest.badge
-
+

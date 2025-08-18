@@ -4,7 +4,7 @@ title: Configure Always-on availability groups
 metadata:
   title: Configure Always-on availability groups
   description: "Configure Always-on availability groups"
-  ms.date: 03/27/2025
+  ms.date: 7/17/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 13
 content: |
-  [!include[](includes/3-configure-always-availability-groups.md)]
+  [!include[](includes/3-configure-always-availability-groups.md)]
