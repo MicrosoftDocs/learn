@@ -41,6 +41,5 @@ modules:
 - learn.introduction-to-azure-virtual-machines
 - learn.choose-storage-approach-in-azure
 - learn.create-azure-storage-account
-- learn.choose-the-right-disk-storage-for-vm-workload
 trophy:
   uid: learn.researcher-introduction-to-cloud-computing.trophy

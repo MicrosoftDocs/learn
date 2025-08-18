@@ -26,8 +26,6 @@ What-if sometimes shows that a resource will change when actually no change will
 
 After you see the output of the what-if operation, you can determine whether to continue on to the deployment. This step typically involves a human reviewing the output from the what-if command, and then making a decision about whether the identified changes are reasonable. If a human reviewer decides that the changes are reasonable, they can manually approve the workflow run.
 
-To learn more about the what-if command, see the Microsoft Learn module [Preview Azure deployment changes by using what-if](/training/modules/arm-template-whatif/).
-
 ## Environments
 
 In GitHub Actions, an _environment_ represents the place where your solution is deployed. Environments provide features that help when you work with complex deployments. In a future module, you'll learn more about environments and their features. For now, we focus on their ability to add required reviewers to your workflow.

@@ -53800,8 +53800,68 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-data-ai/deploy-paas-solutions-with-azure-sql/9-knowledge-check.md",
-      "redirect_url": "/training/modules/deploy-paas-solutions-with-azure-sql/8-knowledge-check",
+      "source_path": "learn-pr/azure/choose-the-right-disk-storage-for-vm-workload/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-the-right-disk-storage-for-vm-workload/2-managed-unmanaged-local-disk-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-the-right-disk-storage-for-vm-workload/3-disk-types-for-virtual-machines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-the-right-disk-storage-for-vm-workload/4-select-disk-type-for-your-workload.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-the-right-disk-storage-for-vm-workload/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-the-right-disk-storage-for-vm-workload/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-whatif/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-whatif/2-deployment-modes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-whatif/3-what-if.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-whatif/4-exercise-what-if.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-whatif/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-whatif/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-whatif/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
       "redirect_document_id": false
     }
   ]
