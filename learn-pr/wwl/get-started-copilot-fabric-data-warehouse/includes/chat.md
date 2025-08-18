@@ -13,20 +13,18 @@ The Copilot chat pane offers several capabilities. It can convert natural langua
    - The chat pane provides starter prompts to help you get familiar with Copilot.
 4. Enter the following prompt:
 
-> [!NOTE]
-> **Crafted instruction**:
->
-> _How can I import data into my Fabric Warehouse?_
+```copilot-prompt
+How can I import data into my Fabric Warehouse?
+```
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of the Fabric Warehouse Copilot Chat interface with general information.](../media/copilot-chat.png)](../media/copilot-chat.png#lightbox)
 
 You can also ask Copilot to generate T-SQL queries based on your natural language prompts. For example, you can ask for a specific query or request a summary of data.
 
-> [!NOTE]
-> **Crafted instruction**:
->
-> _Get number of trips performed by each medallion._
+```copilot-prompt
+Get number of trips performed by each medallion.
+```
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of the Fabric Warehouse Copilot Chat interface with T-SQL Suggestion.](../media/copilot-chat-2.png)](../media/copilot-chat-2.png#lightbox)

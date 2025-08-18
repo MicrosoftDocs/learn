@@ -45,12 +45,11 @@ In this section, you're generating sample data for your dataflow. Normally, Cont
 
 2. Enter the following prompt in the Copilot pane:
 
-    > [!NOTE]
-    > **Crafted prompt**:
-    >
-    > _Create a new query with sample data that lists 100 patient data records and their satisfaction scores. It should include a patient-id, gender, age, date-of-visit, hour-of-visit, department, satisfaction-score._
-    >
-    > _This is the list of our departments: Cardiology, Dermatology, Orthopedics, Neurology, Gastroenterology, Pediatrics, Ophthalmology, Oncology, Urology, ENT._
+    ```copilot-prompt
+    Create a new query with sample data that lists 100 patient data records and their satisfaction scores. It should include a patient-id, gender, age, date-of-visit, hour-of-visit, department, satisfaction-score.
+    
+    This is the list of our departments: Cardiology, Dermatology, Orthopedics, Neurology, Gastroenterology, Pediatrics, Ophthalmology, Oncology, Urology, ENT.
+    ```
 
 3. Tap the send button to generate the query. Observe the sample data and the query created in the dataflow canvas (this might differ slightly depending on your environment and the latest updates to Copilot.)
 
@@ -63,16 +62,12 @@ In this section, you'll clean and transform the data using Copilot.
 
 1. Change the data types. It's important to ensure that the data types are set correctly for each field. Enter the following prompt in the Copilot pane:
 
-    > [!NOTE]
-    > **Crafted prompt**:
-    >
-    > _Change the data types for the following fields:_
-    > 
-    > _- DateOfVisit and HourOfVisit to text_
-    > 
-    > _- PatientID, Age, SatisfactionScore to number_
-    > 
-    > _- Gender, Department to text_
+    ```copilot-prompt
+    Change the data types for the following fields:
+    - DateOfVisit and HourOfVisit to text
+    - PatientID, Age, SatisfactionScore to number
+    - Gender, Department to text
+    ```
 
 Notice that the data types are changed in the query. We keep the DateOfVisit and HourOfVisit as text. Later, we'll merge them and convert them to DateTime data type.
 
@@ -81,22 +76,15 @@ Notice that the data types are changed in the query. We keep the DateOfVisit and
 
 2. Add a new field that takes the age and segments it into different age groups. Enter the following prompt in the Copilot pane:
    
-    > [!NOTE]
-    > **Crafted prompt**:
-    >
-    > _Add a column AgeRange (type text) that transforms the Age field:_
-    >
-    > _18-24: Young Adults_
-    > 
-    > _25-34: Early Career_
-    > 
-    > _35-44: Mid Career_
-    > 
-    > _45-54: Late Career_
-    > 
-    > _55-64: Pre-Retirement_
-    > 
-    > _65+: Retirees_
+    ```copilot-prompt
+    Add a column AgeRange (type text) that transforms the Age field:
+    - 18-24: Young Adults
+    - 25-34: Early Career
+    - 35-44: Mid Career
+    - 45-54: Late Career
+    - 55-64: Pre-Retirement
+    - 65+: Retirees
+    ```
 
 Notice the AgeRange column is added to the query.
 
@@ -105,24 +93,21 @@ Notice the AgeRange column is added to the query.
 
 3. Create a new field that combines the DateOfVisit and HourOfVisit fields. Enter the following prompt in the Copilot pane:
 
-    > [!NOTE]
-    > **Crafted prompt**:
-    >
-    > _Create a new field that combines the text from DateOfVisit and HourOfVisit. The new field should be called VisitDateTime and should be of type DateTime_
+    ```copilot-prompt
+    Create a new field that combines the text from DateOfVisit and HourOfVisit. The new field should be called VisitDateTime and should be of type DateTime
+    ```
 
 4. Remove the DateOfVisit and HourOfVisit fields as they are no longer needed. Then, sort the table by visit date. Enter the following prompt in the Copilot pane:
    
-    > [!NOTE]
-    > **Crafted prompt**:
-    >
-    > _Remove the DateOfVisit and HourOfVisit fields. Sort by VisitDateTime descending._
+    ```copilot-prompt
+    Remove the DateOfVisit and HourOfVisit fields. Sort by VisitDateTime descending.
+    ```
 
     5. Remove the ENT department. Enter the following prompt in the Copilot pane:
 
-    > [!NOTE]
-    > **Crafted prompt**:
-    >
-    > _Remove ENT from the Departments_
+    ```copilot-prompt
+    Remove ENT from the Departments
+    ```
 
 6. Rename the Query to SatisfactionScores.
 
@@ -137,10 +122,9 @@ For complex queries, Copilot explains the generated Mashup code, helping you und
 
 1. Enter the following prompt in the Copilot pane:
 
-    > [!NOTE]
-    > **Crafted prompt**:
-    >
-    > _Describe this query_
+    ```copilot-prompt
+    Describe this query
+    ```
 
 Notice the result is generated in the Copilot pane. Here's an example of the explanation:
 

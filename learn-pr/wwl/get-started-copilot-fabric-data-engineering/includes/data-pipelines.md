@@ -44,19 +44,17 @@ In this section, you'll create a connection to the NCSU (North Carolina State Un
    
 The prompt should look something like this:
 
-   > [!NOTE]
-   > **Crafted prompt**:
-   >
-   > _Source connection of "CopyDataActivity" (Copy) is "ncsu" (RestService);_
-   > _Destination connection of "CopyDataActivity" (Copy) is "Patient_Lakehouse" (Lakehouse)_
+   ```copilot-prompt
+   Source connection of "CopyDataActivity" (Copy) is "ncsu" (RestService);
+   Destination connection of "CopyDataActivity" (Copy) is "Patient_Lakehouse" (Lakehouse)
+   ```
 
 9. Send the prompt to Copilot.
 10. In the Copilot pane, notice the suggested prompt with missing information. In this case, it needs one more piece of information: the table name in the destination lakehouse. Enter the name of the table in the destination lakehouse as **diabetes**.
    
-   > [!NOTE]
-   > **Crafted prompt**:
-   >
-   > _table of Destination connection "Patient_Lakehouse" (Lakehouse) in "CopyDataActivity" (Copy) is diabetes_
+   ```copilot-prompt
+   table of Destination connection "Patient_Lakehouse" (Lakehouse) in "CopyDataActivity" (Copy) is diabetes
+   ```
 
 11. Select the **Copy data** activity in the pipeline canvas.
 12. Navigate to the **Source** tab in the pane below.
@@ -78,10 +76,9 @@ The prompt should look something like this:
 
 4. Enter the following prompt to make sure the data gets deleted first:
 
-   > [!NOTE]
-   > **Crafted prompt**:
-   >
-   > Can you add a delete activity as the first activity?
+   ```copilot-prompt
+   Can you add a delete activity as the first activity?
+   ```
 
 5. Notice the **Delete** activity has been added to the pipeline. Select the **Delete** activity in the pipeline canvas and configure manually the **Source**.
 
