@@ -12,11 +12,11 @@ metadata:
 title: Implement Microsoft Fabric Data Agents (chat with your data)
 summary: "Empower your organization with Microsoft Fabric data agents: transform data into actionable insights through conversational AI."
 abstract: |
-  By the end of this module, you'll be able to:
-    - Understand Microsoft Fabric data agent capabilities.
-    -	Implement an end-to-end Microsoft Fabric data agent.
-    -	Integrate Microsoft Fabric data agents with Azure AI Foundry.
-    - Use Microsoft Fabric data agents within Power BI.
+  In this module, you learn how to:
+    - Design and configure Fabric data agents that enable secure conversational access to enterprise data.
+    - Curate and optimize data sources, instructions, and example queries for accurate and relevant responses.
+    - Publish, operationalize, and integrate Fabric data agents with downstream experiences like Azure AI Foundry, Power BI, and custom apps.
+    - Apply governance, permission, and prompting best practices that improve reliability and safeguard data.
 prerequisites: |
   You should be familiar with data analytics and engineering concepts and terminology.
 iconUrl: /learn/achievements/generic-badge.svg

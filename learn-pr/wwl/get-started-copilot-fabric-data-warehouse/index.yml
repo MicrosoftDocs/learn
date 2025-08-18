@@ -12,9 +12,11 @@ metadata:
 title: Get started with Copilot in Microsoft Fabric for Data Warehouse
 summary: "Unlock the power of data with Microsoft Fabric and Copilot from a data warehouse perspective."
 abstract: |
-  By the end of this module, you'll be able to:
-    - Use Copilot code completion, chat, and quick actions in Microsoft Fabric's Data Warehouse.
-    - Understand best practices using Copilot in Microsoft Fabric's Data Warehouse.
+  In this module, you learn how to:
+    - Apply Copilot across Fabric Data Warehouse experiences to accelerate querying, authoring, and troubleshooting.
+    - Generate, refine, explain, and fix T-SQL using chat, inline code completions, and quick actions.
+    - Incorporate effective prompting, naming, and schema design practices that improve Copilot accuracy.
+    - Use Copilot capabilities responsibly to enhance productivity while maintaining data quality and governance.
 prerequisites: |
   You should be familiar with data analytics and engineering concepts and terminology.
 iconUrl: /learn/achievements/generic-badge.svg

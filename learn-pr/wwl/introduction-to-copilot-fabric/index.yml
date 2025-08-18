@@ -12,14 +12,11 @@ metadata:
 title: Introduction to Copilot in Microsoft Fabric
 summary: "Transform data into insights with Microsoft Fabric and Copilot: a comprehensive overview."
 abstract: |
-  By the end of this module, you'll be able to:
-    - Understand Copilot for Microsoft Fabric Data Factory.
-    -	Understand Copilot for Data Engineering and Data Science.
-    -	Understand Copilot for Data Warehouse.
-    - Understand Copilot in Power BI.
-    - Understand Copilot for Real-Time Intelligence.
-    - Understand Copilot for SQL Database Workload.
-    - Understand Microsoft Fabric data agents.
+  In this module, you learn to:
+    - Describe the role of Copilot in accelerating end-to-end analytics workflows in Microsoft Fabric.
+    - Identify high‑value productivity scenarios across data integration, engineering, warehousing, BI, real-time intelligence, SQL, and data agents.
+    - Explain how natural language and AI-assisted features reduce complexity, improve quality, and foster collaboration.
+    - Recognize prerequisites, licensing, and governance considerations for enabling Copilot responsibly.
 prerequisites: |
   You should be familiar with data analytics and engineering concepts and terminology.
 iconUrl: /learn/achievements/generic-badge.svg

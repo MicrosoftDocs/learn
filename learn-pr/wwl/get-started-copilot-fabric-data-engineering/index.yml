@@ -12,10 +12,11 @@ metadata:
 title: Get started with Copilot in Microsoft Fabric for data engineering
 summary: "Unlock the power of data with Microsoft Fabric and Copilot from a data engineering perspective."
 abstract: |
-  By the end of this module, you'll be able to:
-    - Use Copilot with Microsoft Fabric Dataflow Gen2.
-    -	Use Copilot with Microsoft Fabric Data Pipelines.
-    -	Use Copilot in Microsoft Fabric Notebooks.
+  In this module, you learn how to:
+    - Apply Copilot across Microsoft Fabric to accelerate end‑to‑end data engineering tasks from ingestion to transformation and exploration.
+    - Prompt Copilot to create and configure dataflows and pipelines with natural language instead of manual UI steps.
+    - Generate, refine, and explain data transformation logic and Spark code safely and efficiently.
+    - Use effective prompting strategies and best practices to improve quality, performance, and governance when using Copilot in Fabric.
 prerequisites: |
   You should be familiar with data analytics and engineering concepts and terminology.
 iconUrl: /learn/achievements/generic-badge.svg

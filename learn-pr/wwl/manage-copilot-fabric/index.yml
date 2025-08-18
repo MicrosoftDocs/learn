@@ -12,11 +12,12 @@ metadata:
 title: Manage Copilot in Microsoft Fabric
 summary: "Manage Copilot in Microsoft Fabric: empower your organization with AI-driven insights."
 abstract: |
-  By the end of this module, you'll be able to:
-    - Understand Copilot in Microsoft Fabric.
-    -	Enable Copilot in Microsoft Fabric.
-    -	Understand Copilot in Microsoft Fabric Consumption.
-    - Scale Copilot in Microsoft Fabric.
+  In this module, you learn how to:
+    - Explain the core architecture and governance model of Copilot in Microsoft Fabric.
+    - Enable and configure Copilot tenant and capacity settings aligned with regional, security, and compliance requirements.
+    - Monitor and interpret Copilot capacity consumption using metrics and token-based costing to inform optimization.
+    - Plan scalable rollout strategies (controlled access, capacity designation, isolation) that balance performance and cost.
+    - Apply responsible AI and data access best practices (permissions, RLS/CLS, data residency) when operationalizing Copilot.
 prerequisites: |
   You should be familiar with data analytics and engineering concepts and terminology.
 iconUrl: /learn/achievements/generic-badge.svg
