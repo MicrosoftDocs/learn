@@ -8,9 +8,11 @@ The following fundamental concepts describe how Copilot for Data Engineering and
 
 With **code explanation**, Copilot can clarify what a block of code does, making it easier to understand complex queries or unfamiliar scripts. For example, if you encounter a multi-step data transformation and aren't sure how it works, Copilot provides a plain-language summary, helping you learn and avoid mistakes.
 
-**Visualization** support allows you to quickly create charts and graphs from your data. If you’re unsure how to plot trends or compare categories, simply ask Copilot to visualize your dataset. This feature helps users who find it challenging to select the right visualization or write plotting code, making data exploration more intuitive.
+**Visualization** support allows you to create charts and graphs from your data. If you’re unsure how to plot trends or compare categories, ask Copilot to visualize your dataset. This feature helps users who find it challenging to select the right visualization or write plotting code, making data exploration more intuitive.
 
-When working with **machine learning**, Copilot guides you through building and training models. If you’re new to machine learning or unsure how to start, you can ask Copilot to generate code for tasks like splitting data, training a regression model, or evaluating results. This reduces the barrier to entry and helps you focus on solving business problems rather than wrestling with technical details.
+## Data science
+
+For data scientists working on **machine learning**, Copilot helps build and train models. If you are new to machine learning or unsure how to start, ask Copilot to generate code for tasks such as splitting data, training a regression model, and evaluating results. This lowers the barrier to entry and lets you focus on business problems instead of technical details.
 
 By using these features, you can overcome common challenges such as lack of coding experience, difficulty understanding complex logic, and uncertainty about best practices. Copilot empowers you to work smarter, learn faster, and deliver insights more efficiently.
 

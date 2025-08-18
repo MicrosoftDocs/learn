@@ -2,9 +2,7 @@ Let's first understand the context of Microsoft Fabric and its components.
 
 ## What is Microsoft Fabric?
 
-Microsoft Fabric is an end-to-end data analytics platform that unifies tools and services to manage, analyze, and visualize data. It integrates data engineering, data science, real-time analytics, and business intelligence into a single experience.
-
-Microsoft Fabric simplifies complex data workflows, enabling users to focus on deriving insights rather than managing infrastructure. It provides a unified platform that enhances collaboration, reduces operational overhead, and accelerates decision-making by delivering actionable insights efficiently.
+Microsoft Fabric is a Software-as-a-Service (SaaS) analytics platform that unifies core data and AI workloads—including data engineering, data integration, data warehousing, data science, real-time analytics, and business intelligence—into a single, cohesive experience. By delivering these capabilities as a managed SaaS offering, Fabric reduces infrastructure and integration overhead, streamlines collaboration, and helps users focus on turning data into actionable insights.
 
 ## What is Copilot for Fabric?
 

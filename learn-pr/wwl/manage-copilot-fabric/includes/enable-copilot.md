@@ -12,7 +12,8 @@ Administrators can manage Copilot settings via the Fabric admin portal, includin
 > [!div class="mx-imgBorder"]
 > [![Screenshot showing the tenant setting where copilot can be enabled and disabled.](../media/enable-copilot.png)](../media/enable-copilot.png#lightbox)
 
-Administrators should verify that their tenant or capacity is within a supported region. Not all regions support all Copilot features. If located outside the US or EU Data Boundary, Copilot is disabled by default, but can be enabled. When this setting is enabled, data sent to Azure OpenAI can be processed outside your capacity's geographic boundary or national cloud boundary. 
+> [!IMPORTANT]
+> Administrators should verify that their tenant or capacity is within a supported region. Not all regions support all Copilot features. If located outside the US or EU Data Boundary, Copilot is disabled by default, but can be enabled. When this setting is enabled, data sent to Azure OpenAI can be processed outside your capacity's geographic boundary or national cloud boundary. 
 
 ## Designate a capacity as a Fabric Copilot capacity
 

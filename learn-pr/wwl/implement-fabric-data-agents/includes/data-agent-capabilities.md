@@ -1,6 +1,6 @@
 Fabric data agents are designed to revolutionize how organizations interact with their data by using generative AI. Below are the key capabilities that make Fabric data agents a powerful tool for enhancing data accessibility and usability.
 
-## Chat with your data
+## Interact with your data
 
 The data agent enables natural interaction with your data by allowing you to ask questions in plain English and receive structured, human-readable responses. It analyzes your input, determines the most appropriate data source—such as a Lakehouse, Warehouse, Power BI dataset, or KQL database—and automatically selects the right tool to generate, validate, and execute the corresponding queries.
 
@@ -39,9 +39,9 @@ Your Data Agent can be consumed both within and outside of Microsoft Fabric. Int
 - **Azure AI Foundry**: Use advanced AI capabilities for broader applications.
 - **Custom Applications**: Embed the agent into your own tools and platforms.
 
-While both Fabric data agents and Fabric copilots use generative AI to process and reason over data, there are key differences in their functionality and use cases:
+While both Microsoft Fabric data agents and  Copilot for Microsoft Fabric use generative AI to process and reason over data, there are key differences in their functionality and use cases:
 
-| **Aspect** | **Fabric data agents** | **Fabric Copilots** |
+| **Aspect** | **Fabric data agents** | **Copilot for Microsoft Fabric** |
 |------------|------------------------|---------------------|
 | **Flexibility** | Customizable with instructions and examples. | Preconfigured, limited customization. |
 | **Use Case** | Broader scope; integrates with external tools (e.g., Copilot Studio, Teams, ...).| Focused on in-Fabric tasks like notebooks and warehouse queries. |

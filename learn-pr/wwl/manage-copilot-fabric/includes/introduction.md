@@ -1,12 +1,12 @@
-Fabric Copilot is an AI-powered assistant embedded within Microsoft Fabric, designed to enhance productivity and simplify complex tasks. Copilot uses advanced machine learning and natural language processing to help in data analysis, code generation, and workflow automation. It makes sophisticated data operations accessible to both technical and nontechnical users.
+Copilot for Microsoft Fabric is an AI-powered assistant embedded within Microsoft Fabric, designed to enhance productivity and simplify complex tasks. Copilot uses advanced machine learning and natural language processing to help in data analysis, code generation, and workflow automation. It makes sophisticated data operations accessible to both technical and nontechnical users.
 
-## Features of Fabric Copilot
+## Features of Copilot for Microsoft Fabric
 
 - **Natural Language Querying**: You can interact with data using everyday natural language.
 - **Automated Code Generation**: Copilot can generate code snippets for data transformations, visualizations, and machine learning models based on descriptions.
 - **Data Insights Automation**: It identifies patterns, trends, and anomalies in datasets, providing proactive insights and recommendations.
 
-## Data teams and Microsoft Fabric Copilot
+## Data teams and Microsoft Copilot for Microsoft Fabric
 
 Copilot and other generative AI features in preview bring new ways to transform and analyze data, generate insights, and create visualizations and reports in Microsoft Fabric and Power BI. These capabilities are designed to empower all data practitioners, including:
 

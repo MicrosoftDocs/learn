@@ -26,20 +26,20 @@ quiz:
     - content: "They only work with Power BI and don't support other data sources."
       isCorrect: false
       explanation: "Incorrect. Microsoft Fabric Data Agents support multiple data sources."
-  - content: "Which of the following is NOT a supported integration for consuming a Microsoft Fabric Data Agent?"
+  - content: "What defines the scope of data a Microsoft Fabric Data Agent can access to answer user questions?"
     choices:
-    - content: "Microsoft Teams"
+    - content: "The example queries provided during setup"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Teams is a supported integration."
-    - content: "Custom applications via API"
-      isCorrect: false
-      explanation: "Incorrect. Custom applications via API are supported."
-    - content: "Google Sheets"
+      explanation: "Incorrect. Example queries guide intent but don't expand data access."
+    - content: "The data sources explicitly connected (grounded) to the agent"
       isCorrect: true
-      explanation: "Correct. Google Sheets isn't listed as a supported integration."
-    - content: "Copilot Studio"
+      explanation: "Correct. Only the configured/grounded data sources are used for retrieval."
+    - content: "The agent's AI instructions"
       isCorrect: false
-      explanation: "Incorrect. Copilot Studio is a supported integration."
+      explanation: "Incorrect. The AI instructions guide the behavior, but don't define the scope of data it has access to."
+    - content: "The number of users interacting with the agent"
+      isCorrect: false
+      explanation: "Incorrect. Usage volume does not change accessible data."
   - content: "What is the purpose of providing example queries when configuring a Microsoft Fabric Data Agent?"
     choices:
     - content: "To help the AI generate more precise responses by demonstrating expected outputs."
