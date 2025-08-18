@@ -21,7 +21,6 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 ## Learn more with self-paced training
 
 - [Introduction to Azure Application Gateway](/training/modules/intro-to-azure-application-gateway/). Improve application resilience by distributing load across multiple servers and use path-based routing to direct web traffic.
-- [Encrypt network traffic end to end with Azure Application Gateway](/training/modules/end-to-end-encryption-with-app-gateway/). This module shows you how to encrypt traffic with SSL by using Application Gateway.
 - [Load balance your web service traffic with Application Gateway](/training/modules/load-balance-web-traffic-with-application-gateway/). Improve application resilience by distributing load across multiple servers and use path-based routing to direct web traffic.
 - [Introduction to Azure Front Door](/training/modules/intro-to-azure-front-door/). Describe how Azure Front Door provides a fast, reliable, and secure modern cloud content delivery network. Determine whether Azure Front Door can help you transform your global consumer and enterprise apps into more secure, high-performing, and personalized modern apps.
 - [Load balance your web service traffic with Front Door](/training/modules/create-first-azure-front-door/). Identify the capabilities of Front Door. Learn to create a Front Door profile and distribute traffic to origins.

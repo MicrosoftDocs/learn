@@ -13,10 +13,6 @@ Azure offers several networking services to help protect your network resources.
 - Access multi-layered protection, including attack analytics, metrics, and alerting.
 - Receive support from the DDoS rapid response team.
 
-> [!Tip]
-> Learn more with the [Introduction to Azure DDoS Protection](/training/modules/introduction-azure-ddos-protection/) training module. 
-
-
 ### Azure Private Link
 
 [Azure Private Link](/azure/private-link/private-link-overview) enables you to access Azure PaaS services (such as Azure Storage and SQL Database) and Azure hosted customer-owned/partner services over a private endpoint in your virtual network. Traffic between your virtual network and the service travels the Microsoft backbone network. Exposing your service to the public internet is no longer necessary. You can create your own private link service in your virtual network and deliver it to your customers. Private Link is used to access PaaS services, such as Azure Storage, Azure SQL, App Services, and more. 
