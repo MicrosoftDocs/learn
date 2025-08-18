@@ -1,8 +1,8 @@
-Copilot for Power BI is an AI-powered assistant designed to enhance the report creation and data exploration experience. It uses generative AI to help you interact with your data, create reports, and gain insights more efficiently. Copilot is available in both Power BI Desktop and the Power BI Service.
+Copilot in Power BI is an AI-powered assistant designed to enhance the report creation and data exploration experience. It uses generative AI to help you interact with your data, create reports, and gain insights more efficiently. Copilot is available in both Power BI Desktop and the Power BI Service.
 
 ## Key concepts
 
-Understanding the following fundamental concepts will help you leverage Copilot for Power BI effectively in your organization.
+Understanding the following fundamental concepts will help you leverage Copilot in Power BI effectively in your organization.
 
 **Natural language interaction** makes it possible to communicate with your data using everyday language. If you’ve ever struggled to remember the exact field names or how to build a specific chart, Copilot lets you simply ask, “Show the top categories by sales,” or “Create a summary of this report.” This removes technical barriers and empowers users of all skill levels to explore data confidently.
 
@@ -27,7 +27,7 @@ We’ll explore this topic in more detail in a later module.
 
 ## Benefits
 
-By using Copilot for Power BI, users can streamline their reporting workflows, reduce errors, and focus on deriving actionable insights from their data. Here are some key benefits:
+By using Copilot in Power BI, users can streamline their reporting workflows, reduce errors, and focus on deriving actionable insights from their data. Here are some key benefits:
 
 - **Efficiency**: Automates report creation and data exploration, saving time and effort.  
 - **Accessibility**: Enables you to interact with their data using natural language, reducing the need for advanced technical skills.  
