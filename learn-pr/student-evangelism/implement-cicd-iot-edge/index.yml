@@ -6,7 +6,7 @@ metadata:
   manager: lizross
   ms.date: 08/18/2025
   ms.update-cycle: 180-days
-  author: orin-thomas
+  author: PatAltimore
   ms.author: orthomas
   ms.topic: module
   ms.service: azure-iot-edge
