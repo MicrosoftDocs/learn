@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-copilot-fabric-data-engineering.excercise-copilot-fabric-notebooks
+title: Exercise - Analyze data with Apache Spark and Copilot in Microsoft Fabric notebooks
+metadata:
+  title: Exercise - Analyze data with Apache Spark and Copilot in Microsoft Fabric notebooks
+  description: "Exercise - Analyze data with Apache Spark and Copilot in Microsoft Fabric notebooks"
+  ms.date: 08/18/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/excercise-copilot-fabric-notebooks.md)]

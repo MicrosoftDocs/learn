@@ -3,7 +3,7 @@ uid: learn.wwl.implement-fabric-data-agents
 metadata:
   title: Implement Microsoft Fabric Data Agents
   description: Implement Microsoft Fabric Data Agents (chat with your data)
-  ms.date: 07/01/2025
+  ms.date: 08/18/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: module
@@ -37,6 +37,7 @@ units:
 - learn.wwl.implement-fabric-data-agents.end-to-end-scenario
 - learn.wwl.implement-fabric-data-agents.azure-ai-foundry
 - learn.wwl.implement-fabric-data-agents.power-bi
+- learn.wwl.implement-fabric-data-agents.excercise-copilot-fabric-data-agents
 - learn.wwl.implement-fabric-data-agents.knowledge-check
 - learn.wwl.implement-fabric-data-agents.summary
 badge: 
