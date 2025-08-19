@@ -3,19 +3,19 @@ uid: learn.wwl.authentication-compliance
 metadata:
   title: MD-102 Manage authentication and compliance
   description: This learning path covers the various solutions for managing authentication. Students will also learn about the different types of VPNs, as well as compliance and conditional access policies.
-  ms.date: 03/31/2023
+  ms.date: 08/19/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: learning-path
 title: MD-102 Manage authentication and compliance
 prerequisites: |
   Students should have:
-  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
-  - Strong understanding of computer networking, client security, and application concepts
-  - Experience using Active Directory Domain Services
+  -   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  -   Strong understanding of computer networking, client security, and application concepts
+  -   Experience using Active Directory Domain Services
 summary: |
   This learning path covers the various solutions for managing authentication. Students will also learn about the different types of VPNs, as well as compliance and conditional access policies.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/authentication-compliance.svg
 levels:
 - intermediate
 roles:
