@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
-  ms.date: 07/22/2024
+  ms.date: 08/19/2025
   author: PatAltimore
   ms.author: patricka
   ms.topic: unit
@@ -49,4 +49,4 @@ quiz:
       explanation: "Azure Container Registry isn't used for storing and managing services"
     
     
-
+
