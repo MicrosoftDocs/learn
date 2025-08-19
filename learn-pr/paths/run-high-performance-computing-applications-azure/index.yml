@@ -34,7 +34,6 @@ subjects:
 - cloud-computing
 - infrastructure
 modules:
-- learn.intro-to-hpc
 - learn.azure.create-batch-account-using-azure-portal
 - learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli
 - learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch

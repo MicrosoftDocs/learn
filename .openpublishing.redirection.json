@@ -53803,6 +53803,76 @@
       "source_path": "learn-pr/wwl-data-ai/deploy-paas-solutions-with-azure-sql/9-knowledge-check.md",
       "redirect_url": "/training/modules/deploy-paas-solutions-with-azure-sql/8-knowledge-check",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hpc/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hpc/2-azure-batch.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hpc/3-how-azure-hpc-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hpc/4-microsoft-hpc-pack.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hpc/5-scenarios-for-hpc-and-batch.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hpc/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hpc/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-a-geographically-distributed-application/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-a-geographically-distributed-application/2-geo-distributed-architecture.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-a-geographically-distributed-application/3-geo-distributed-networking.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-a-geographically-distributed-application/4-geo-distributed-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-a-geographically-distributed-application/5-geo-distributed-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-a-geographically-distributed-application/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-a-geographically-distributed-application/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
     }
   ]
 }

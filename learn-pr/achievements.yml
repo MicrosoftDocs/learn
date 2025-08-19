@@ -6415,3 +6415,13 @@ achievements:
   title: Manage data retention and deletion in Microsoft 365 workloads
   summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
   iconUrl: /training/achievements/manage-data-retention-in-microsoft-365.svg
+- uid: learn.design-geographically-distributed-application.badge
+  type: badge
+  title: Design a geographically distributed application
+  summary: Build an application that spans multiple geographic locations for high availability and resiliency.
+  iconUrl: /training/achievements/design-geographically-distributed-application-social.png
+- uid: learn.intro-to-hpc.badge
+  type: badge
+  title: Introduction to high-performance computing (HPC) on Azure
+  summary: Discover the services available on Azure for your high-performance computing workloads.
+  iconUrl: /training/achievements/intro-to-hpc.svg
