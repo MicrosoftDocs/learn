@@ -6425,3 +6425,8 @@ achievements:
   title: Caching and performance in Azure storage disks
   summary: Moving data as fast as possible is good for business. Learn about disk performance in Azure, how caching can help optimize read and write access to storage, and how to enable caching to help optimize the performance of Azure VM disks.
   iconUrl: /training/achievements/caching-and-performance-azure-storage-and-disks.svg
+- uid: learn.aks-cluster-scalability.trophy
+  type: trophy
+  title: Azure Kubernetes Service (AKS) application and cluster scalability
+  summary: In this learning path, you'll understand how autoscaling of your AKS workloads can be achieved and how workload scale changes drive how your cluster scales to meet workload needs.
+  iconUrl: /training/achievements/generic-trophy.svg

@@ -53888,6 +53888,11 @@
       "source_path": "learn-pr/azure/aks-optimize-compute-costs/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/aks/best-practices-cost",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/aks-cluster-scalability/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-scale",
+      "redirect_document_id": false
     }
   ]
 }
