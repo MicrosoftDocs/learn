@@ -29,7 +29,7 @@ Next, ensure the data is stored in the right formats. Correct **data types** pre
 Change Age and SatisfactionScore to numbers; set Department as text.
 ```
 
-Shaping the data often means **adding new fields** that make the dataset easier to interpret. Derived values like age groups or categories can support business-focused analysis. Here are two example prompts that adds a new column, based on some classification rule you define in natural language:
+Shaping the data often means **adding new fields** that make the dataset easier to interpret. Derived values like age groups or categories can support business-focused analysis. Here are two example prompts that add a new column, based on some classification rule you define in natural language:
 
 ```copilot-prompt
 Add a new column AgeRange that groups patients into categories: 18–24 as Young Adults, 25–34 as Early Career, etc.

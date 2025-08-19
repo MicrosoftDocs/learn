@@ -1,19 +1,19 @@
-Copilot can help creating a data pipeline that copies data from a public or internal datasource into a Lakehouse for analysis. Rather than a click-by-click tutorial, the focus here's on understanding the **concepts, flow, and rationale** behind each step.
+Copilot can help create a data pipeline that copies data from a public or internal datasource into a Lakehouse for analysis. Rather than a click-by-click tutorial, the focus here's on understanding the **concepts, flow, and rationale** behind each step.
 
 Before any pipeline can run, a few foundational elements must be in place: access to a Fabric tenant with a workspace, and a Lakehouse as the destination. These are the building blocks that ensure there's both a **source** and a **target** for the data integration process.
 
-## Creating a connection
+## Create a connection
 
 Connections are essential for linking Fabric with external data sources. Conceptually, a **connection** defines *where the data is coming from* and *how it's accessed*. Public datasets can often be ingested with anonymous authentication, while enterprise sources may require stricter credentials.
 
-It's important to have the connections ready before you can us them in a data pipeline. Connections can be managed by selecting the **gear** icon in the top right corner of the Fabric portal, and selecting **Manage connections and gateways**. From there, you can create new connections or update existing ones.
+It's important to have the connections ready before you can use them in a data pipeline. Connections can be managed by selecting the **gear** icon in the top right corner of the Fabric portal, and selecting **Manage connections and gateways**. From there, you can create new connections or update existing ones.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of a data pipeline connection.](../media/new-connection.png)](../media/new-connection.png#lightbox)
 
-## Ingesting data with Copilot
+## Ingest data with Copilot
 
-Once the connections exists, the pipeline must know what to copy and where to put it. Copilot suggests the **Ingest data** prompt, and assists by generating a **Copy Data activity**. You still have to provide missing context such as:
+Once the connections exist, the pipeline must know what to copy and where to put it. Copilot suggests the **Ingest data** prompt, and assists by generating a **Copy Data activity**. You still have to provide missing context such as:
 
 * **Source connection**
 * **Destination connection**
@@ -27,9 +27,9 @@ Source connection of CopyDataActivity is [source]; destination connection is [la
 > [![Screenshot of a data pipeline copy activity.](../media/pipeline-00.png)](../media/pipeline-00.png#lightbox)
 
 
-Copilot scaffolds the activity, but the user must validate and complete it (e.g., specifying file path, setting file format, and choosing the correct column delimiter). This reinforces the skill of reviewing defaults and filling in context-sensitive details.
+Copilot scaffolds the activity, but the user must validate and complete it (for example, specifying file path, setting file format, and choosing the correct column delimiter). This reinforces the skill of reviewing defaults and filling in context-sensitive details.
 
-## Transforming data
+## Transform data
 
 Pipelines rarely stop at ingestion. Copilot can extend the workflow by suggesting **transform data** activities. As an example, you can ask Copilot the following prompt:
 
@@ -41,7 +41,7 @@ Here, Copilot inserts a delete activity into the pipeline, demonstrating how use
 
 Conceptually, this stage shows how Copilot facilitates *pipeline orchestration* while leaving you responsible for precision and governance.
 
-## Summarizing the pipeline
+## Summarize the pipeline
 
 Copilot can also describe the pipeline in plain language. This helps you:
 
