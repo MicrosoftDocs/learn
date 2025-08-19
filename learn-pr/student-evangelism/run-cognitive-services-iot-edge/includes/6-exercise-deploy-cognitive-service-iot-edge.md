@@ -16,7 +16,7 @@ Create an Azure AI Language service resource that matches your container.
    | Subscription   | Select the appropriate subscription.    |
    | Location       | Select a nearby location.               |
    | Pricing tier   | Enter **S**, the standard pricing tier. |
-   | Resource group | Select an available resource group.     |ource group.     |
+   | Resource group | Select an available resource group.     |
 
 1. Select **Create**, then wait for the resource to be created. Your browser automatically redirects to the new resource page.
 1. Go to the resource.
