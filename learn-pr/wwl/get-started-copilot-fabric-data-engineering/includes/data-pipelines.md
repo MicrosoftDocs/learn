@@ -1,89 +1,58 @@
-In the following scenario, we'll use Copilot to create a data pipeline that copies data from a public datasource named diabetes.tab.txt to the Lakehouse. 
+Copilot can help creating a data pipeline that copies data from a public or internal datasource into a Lakehouse for analysis. Rather than a click-by-click tutorial, the focus here's on understanding the **concepts, flow, and rationale** behind each step.
 
-## Prerequisites
+Before any pipeline can run, a few foundational elements must be in place: access to a Fabric tenant with a workspace, and a Lakehouse as the destination. These are the building blocks that ensure there's both a **source** and a **target** for the data integration process.
 
-The following prerequisites should be in place before you start:
+## Creating a connection
 
-- Access to a Microsoft Fabric tenant account with an active subscription. [Create an account](https://azure.microsoft.com/free/).
-- Created a Workspace with Fabric enabled: [Create a workspace](/fabric/fundamentals/create-workspaces).
-- Created a Lakehouse.
+Connections are essential for linking Fabric with external data sources. Conceptually, a **connection** defines *where the data is coming from* and *how it's accessed*. Public datasets can often be ingested with anonymous authentication, while enterprise sources may require stricter credentials.
 
-## Create a connection 
+It's important to have the connections ready before you can us them in a data pipeline. Connections can be managed by selecting the **gear** icon in the top right corner of the Fabric portal, and selecting **Manage connections and gateways**. From there, you can create new connections or update existing ones.
 
-In this section, you'll create a connection to the NCSU (North Carolina State University) diabetes data source. For more information about this dataset, see [Diabetes dataset](/azure/open-datasets/dataset-diabetes?tabs=azureml-opendatasets)
+> [!div class="mx-imgBorder"]
+> [![Screenshot of a data pipeline connection.](../media/new-connection.png)](../media/new-connection.png#lightbox)
 
-1. Select the gear icon in the top right corner of the Fabric portal.
-2. Choose **Manage connections and gateways** from the right navigation pane.
+## Ingesting data with Copilot
 
-   > [!div class="mx-imgBorder"]
-   > [![Screenshot of the Fabric settings with gear icon and 'manage connections and gateways highlighted'.](../media/manage-connections.png)](../media/manage-connections.png#lightbox)
+Once the connections exists, the pipeline must know what to copy and where to put it. Copilot suggests the **Ingest data** prompt, and assists by generating a **Copy Data activity**. You still have to provide missing context such as:
 
-3. Select **New** to create a new connection.
-4. Choose **Cloud**.
-5. **Connection name**: ncsu
-6. **Connection type**: Web
-7. **URL**: https://www4.stat.ncsu.edu/~boos/var.select/
-8. **Authentication method**: Anonymous
-9. **Privacy level**: Public
-10. Select **Create** to create the connection and close the dialog box.
+* **Source connection**
+* **Destination connection**
+* **Target table name**
 
-## Ingest data
+```copilot-prompt
+Source connection of CopyDataActivity is [source]; destination connection is [lakehouse]; table name is [tablename].
+```
 
-1. Create a new pipeline.
-2. Select the Copilot icon in the top right corner of the pipeline canvas.
-3. Select the **Ingest data** suggestion and send it.
-4. In the Copilot pane, notice the suggested prompt with missing information:
+> [!div class="mx-imgBorder"]
+> [![Screenshot of a data pipeline copy activity.](../media/pipeline-00.png)](../media/pipeline-00.png#lightbox)
 
-   > [!div class="mx-imgBorder"]
-   > [![Screenshot of the pipeline copilot suggestion.](../media/pipeline-00.png)](../media/pipeline-00.png#lightbox)
 
-5. Locate your cursor at the end of the first sentence (source connection)
-6. Type the forward slash (/) to see the list of available connections and choose the **ncsu** connection.
-7. Locate your cursor at the end of the second sentence (destination connection)
-8. Type the forward slash (/) to see the list of available connections and choose the **Patient_Lakehouse** connection.
-   
-The prompt should look something like this:
+Copilot scaffolds the activity, but the user must validate and complete it (e.g., specifying file path, setting file format, and choosing the correct column delimiter). This reinforces the skill of reviewing defaults and filling in context-sensitive details.
 
-   ```copilot-prompt
-   Source connection of "CopyDataActivity" (Copy) is "ncsu" (RestService);
-   Destination connection of "CopyDataActivity" (Copy) is "Patient_Lakehouse" (Lakehouse)
-   ```
+## Transforming data
 
-9. Send the prompt to Copilot.
-10. In the Copilot pane, notice the suggested prompt with missing information. In this case, it needs one more piece of information: the table name in the destination lakehouse. Enter the name of the table in the destination lakehouse as **diabetes**.
-   
-   ```copilot-prompt
-   table of Destination connection "Patient_Lakehouse" (Lakehouse) in "CopyDataActivity" (Copy) is diabetes
-   ```
+Pipelines rarely stop at ingestion. Copilot can extend the workflow by suggesting **transform data** activities. As an example, you can ask Copilot the following prompt:
 
-11. Select the **Copy data** activity in the pipeline canvas.
-12. Navigate to the **Source** tab in the pane below.
-13. Set the **Relative URL** of the source to **diabetes.txt**.
-14. Set the File format to **Delimited text**.
-15. Select the **Settings** button for the file format
-16. Set the **Column delimiter** to **Tab (\t)** and select **OK**.
-17. Select **Run this pipeline** in the copilot pane.
-18. Wait for the pipeline to finish running and check the status of the pipeline in the **Output** pane.
+```copilot-prompt
+Can you add a delete activity as the first activity?
+```
 
-## Transform data
+Here, Copilot inserts a delete activity into the pipeline, demonstrating how users can restructure workflows using natural language. You still need to configure details like which source to delete from, highlighting the balance between automation and human oversight.
 
-1. In the copilot pane, select the **Transform data** suggestion and send it.
-2. In the Copilot pane, notice the result:
+Conceptually, this stage shows how Copilot facilitates *pipeline orchestration* while leaving you responsible for precision and governance.
 
-   _Please click on the item in the **Pipeline validation output** to complete your pipeline settings._
-   
-3. Notice also the dataflow has been added to the pipeline. This dataflow is a placeholder and needs to be configured manually. Select the **Workspace** and **Dataflow**. 
+## Summarizing the pipeline
 
-4. Enter the following prompt to make sure the data gets deleted first:
+Copilot can also describe the pipeline in plain language. This helps you:
 
-   ```copilot-prompt
-   Can you add a delete activity as the first activity?
-   ```
+- Verify that the pipeline aligns with their intent.
+- Reinforce understanding of the workflow’s components.
+- Reflect on how ingestion, transformation, and orchestration fit together.
 
-5. Notice the **Delete** activity has been added to the pipeline. Select the **Delete** activity in the pipeline canvas and configure manually the **Source**.
+As an example, consider the following prompt:
 
-## Summarize the pipeline
+```copilot-prompt
+Summarize this pipeline, turning the technical configuration into a conceptual narrative.
+```
 
-1. In the copilot pane, select the **Summarize this pipeline** suggestion and send it.
-2. Notice this resulting explanation in the Copilot pane.
-
+Copilot supports the **how** of building a pipeline: it scaffolds connections, ingestion, and transformation activities using natural language. It also supports the **why**: encouraging you to validate, configure, and reflect on each stage, building both confidence and transferable data engineering skills.
