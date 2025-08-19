@@ -53803,6 +53803,86 @@
       "source_path": "learn-pr/wwl-data-ai/deploy-paas-solutions-with-azure-sql/9-knowledge-check.md",
       "redirect_url": "/training/modules/deploy-paas-solutions-with-azure-sql/8-knowledge-check",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-cloud-everyone/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-cloud-everyone/2-diversity-inclusion.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-cloud-everyone/3-inclusive-culture.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-cloud-everyone/4-inclusive-design.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-cloud-everyone/5-inclusive-market.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-cloud-everyone/6-cloud-everyone.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-cloud-everyone/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-cloud-everyone/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-cloud-everyone/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/threat-modeling-secured-environment/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/security/privileged-access-workstations/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/threat-modeling-secured-environment/2-assessment-questions.yml",
+      "redirect_url": "https://learn.microsoft.com/security/privileged-access-workstations/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/threat-modeling-secured-environment/3-gather-data.yml",
+      "redirect_url": "https://learn.microsoft.com/security/privileged-access-workstations/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/threat-modeling-secured-environment/4-visualize-risk.yml",
+      "redirect_url": "https://learn.microsoft.com/security/privileged-access-workstations/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/threat-modeling-secured-environment/5-eliminate-risk.yml",
+      "redirect_url": "https://learn.microsoft.com/security/privileged-access-workstations/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/threat-modeling-secured-environment/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/security/privileged-access-workstations/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/threat-modeling-secured-environment/index.yml",
+      "redirect_url": "https://learn.microsoft.com/security/privileged-access-workstations/overview",
+      "redirect_document_id": false
     }
   ]
 }
