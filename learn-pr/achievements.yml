@@ -6415,3 +6415,13 @@ achievements:
   title: Manage data retention and deletion in Microsoft 365 workloads
   summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
   iconUrl: /training/achievements/manage-data-retention-in-microsoft-365.svg
+- uid: learn.aks-optimize-compute-costs.badge
+  type: badge
+  title: Optimize compute costs on Azure Kubernetes Service (AKS)
+  summary: Explore cost-optimization strategies to use on Azure for your cloud-native application-development process. Azure Kubernetes Service (AKS) offers features that you can use to manage compute costs on your AKS cluster. These features include node autoscaling, AKS spot node pools, and Azure Policy.
+  iconUrl: /training/achievements/optimize-compute-costs-on-azure-kubernetes-service.svg
+- uid: learn.caching-and-performance-azure-storage-and-disks.badge
+  type: badge
+  title: Caching and performance in Azure storage disks
+  summary: Moving data as fast as possible is good for business. Learn about disk performance in Azure, how caching can help optimize read and write access to storage, and how to enable caching to help optimize the performance of Azure VM disks.
+  iconUrl: /training/achievements/caching-and-performance-azure-storage-and-disks.svg

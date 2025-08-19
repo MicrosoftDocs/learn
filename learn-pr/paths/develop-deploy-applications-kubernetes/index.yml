@@ -31,7 +31,6 @@ modules:
 # - learn.aks-deployment-pipeline-github-actions
 - learn.aks-manage-application-state
 - learn.aks-secrets-configure-app
-- learn.aks-optimize-compute-costs
 
 trophy:
   uid: learn.generic-trophy-2.trophy

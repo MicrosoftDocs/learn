@@ -53803,6 +53803,91 @@
       "source_path": "learn-pr/wwl-data-ai/deploy-paas-solutions-with-azure-sql/9-knowledge-check.md",
       "redirect_url": "/training/modules/deploy-paas-solutions-with-azure-sql/8-knowledge-check",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/caching-and-performance-azure-storage-and-disks/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/caching-and-performance-azure-storage-and-disks/2-effect-of-caching-on-disk-performance-in-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/caching-and-performance-azure-storage-and-disks/3-enable-and-configure-azure-vm-disk-cache-by-using-the-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/caching-and-performance-azure-storage-and-disks/4-exercise-enable-and-configure-azure-vm-disk-cache-by-using-the-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/caching-and-performance-azure-storage-and-disks/5-manage-cache-settings-with-powershell.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/caching-and-performance-azure-storage-and-disks/6-exercise-manage-cache-settings-with-powershell.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/caching-and-performance-azure-storage-and-disks/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/caching-and-performance-azure-storage-and-disks/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-optimize-compute-costs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/best-practices-cost",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-optimize-compute-costs/2-node-pools.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/best-practices-cost",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-optimize-compute-costs/3-exercise-node-pools.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/best-practices-cost",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-optimize-compute-costs/4-spot-node-pools.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/best-practices-cost",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-optimize-compute-costs/5-exercise-spot-node-pools.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/best-practices-cost",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-optimize-compute-costs/6-resource-quota-azure-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/best-practices-cost",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-optimize-compute-costs/7-exercise-resource-quota-azure-policy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/best-practices-cost",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-optimize-compute-costs/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/best-practices-cost",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-optimize-compute-costs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/best-practices-cost",
+      "redirect_document_id": false
     }
   ]
 }
