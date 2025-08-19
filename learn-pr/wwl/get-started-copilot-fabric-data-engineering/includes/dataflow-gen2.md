@@ -65,6 +65,10 @@ The VisitDateTime field didn’t parse correctly—recreate it using the format 
 
 Copilot not only executes transformations; it also explains the underlying Mashup (M) code. This transparency builds confidence by showing what happens under the hood, offers a gradual path to learn query syntax while still working in natural language, and promotes reflection as you compare your intent with the logic it generates.
 
+```copilot-prompt
+Describe this query
+```
+
 ## Best practices for working with Copilot for Dataflow Gen2
 
 - Copilot is best equipped to handle data integration topics, so it's best to limit your questions to this area.
