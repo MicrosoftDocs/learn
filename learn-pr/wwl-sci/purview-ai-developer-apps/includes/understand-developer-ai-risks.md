@@ -15,26 +15,16 @@ The pace and flexibility of AI development environments can create gaps in visib
 
 ## Establish safeguards across development environments
 
-To reduce these risks, organizations need clear safeguards across the environments where AI is built and deployed. These safeguards include:
+To reduce these risks, organizations should take these actions across AI development environments:
 
-- Discovering which apps, agents, and services are in use and what data they interact with
-- Applying sensitivity labels, encryption, and data loss prevention policies to consistently protect content
-- Detecting prompt misuse or unauthorized access using analytics and risk signals
-- Retaining, auditing, and classifying AI interactions to meet compliance obligations
+- **Discover apps and agents** in use and identify the data they access
+- **Apply sensitivity labels and DLP policies** to protect sensitive files and restrict unsafe AI interactions
+- **Detect risky behavior** such as prompt misuse or unauthorized access using analytics and risk signals
+- **Preserve and investigate interactions** with retention, audit, and eDiscovery to meet compliance requirements
 
-## Use Microsoft Purview to apply protections
+### Use Microsoft Purview to apply protections
 
-Microsoft Purview provides tools that support data security and compliance across AI development environments, as long as those environments are correctly configured and supported:
-
-- **Data Security Posture Management (DSPM) for AI** is the central entry point. It helps identify which AI apps and agents are active across your organization. This includes agents built with Copilot Studio, apps registered through Microsoft Entra ID, and solutions deployed using Azure AI services. It can also surface activity from agents that interact with non-Microsoft AI websites in supported browsers.
-
-- **Sensitivity labels** can protect content used during development when agents interact with labeled files in supported services such as SharePoint or OneDrive. In some environments, like Copilot Studio agents that access SharePoint, labels can determine whether the agent is allowed to summarize or return content.
-
-- **Data Loss Prevention (DLP) policies** help prevent unsafe agent behavior involving sensitive data. For example, policies can restrict agents from summarizing labeled files or block users from pasting sensitive content into prompts when using browser-based AI tools.
-
-- **Auditing and risk detection** features help capture agent interactions and identify possible misuse. These signals become available when agent activity is logged through supported Microsoft 365 services or DSPM collection policies.
-
-- **Retention and eDiscovery** features help meet compliance requirements by preserving prompts and responses for later search and investigation. These capabilities apply when interactions are stored in Exchange Online or other supported data sources.
+Microsoft Purview provides the tools to put these safeguards into practice. **DSPM for AI** gives visibility into which apps and agents are active, while **auditing and risk detection** capture interactions and surface potential misuse. To protect sensitive content, admins can apply **sensitivity labels** and **DLP policies**. **Retention policies** preserve prompt and response data for compliance, while **eDiscovery** supports search and investigation of that data when required.
 
 ## Support secure development without slowing innovation
 

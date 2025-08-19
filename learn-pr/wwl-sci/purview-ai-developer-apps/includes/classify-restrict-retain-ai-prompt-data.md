@@ -1,6 +1,6 @@
-AI agents and copilots often generate, access, or return content that includes sensitive or regulated information. These interactions might involve summarizing SharePoint files, answering questions based on Power BI datasets, or responding to users directly in Microsoft Teams. In each case, the data exchanged in prompts and responses can require protection
+AI agents and copilots can generate, access, and return sensitive or regulated information. They might summarize SharePoint files, analyze Power BI datasets, or respond to questions in Microsoft Teams. Because these interactions involve sensitive data, they require consistent protection and governance.
 
-Microsoft Purview supports classifying, restricting, and retaining AI prompt data using tools like sensitivity labels, data loss prevention (DLP), and retention policies. These capabilities help ensure AI interactions are governed consistently with your organization's broader data protection strategy.
+Microsoft Purview provides safeguards for developer AI apps by classifying, restricting, retaining, and investigating prompt data. Using tools such as sensitivity labels, DLP policies, retention, audit, and eDiscovery, organizations can apply the same governance standards to AI interactions that already protect files, emails, and other content.
 
 ## Use sensitivity labels to control access and classification
 
@@ -10,7 +10,7 @@ Sensitivity labels apply classification and protection to files, emails, and oth
 - How content is processed by copilots in Microsoft 365
 - What data is visible to copilots based on label scope and encryption settings
 
-For example, in **Copilot Studio**, SharePoint files labeled **Highly Confidential** can be excluded from summarization based on your policy settings. In **Microsoft 365 Copilot**, DLP policies can reference sensitivity labels to block specific content from being included in responses.
+For example, in **Copilot Studio**, SharePoint files labeled **Highly Confidential** can be excluded from summarization based on your policy settings. In **Microsoft 365 Copilot**, data loss prevention (DLP) policies can reference sensitivity labels to block specific content from being included in responses.
 
 ## Understand label inheritance in AI interactions
 
@@ -31,18 +31,38 @@ Microsoft Purview DLP policies allow you to block or restrict AI-generated respo
 - Allow referencing file names only for files with sensitive info types
 - Require user justification before content is returned
 
-These DLP actions apply to copilots embedded in Microsoft 365 apps, and custom copilots built in Copilot Studio that use supported Microsoft 365 data sources.
+DLP policies apply to copilots embedded in Microsoft 365 apps and to custom copilots built in Copilot Studio that use supported Microsoft 365 data sources.
 
 ## Retain AI interactions using retention policies and labels
 
-Prompts and responses from copilots and AI agents can be stored in Exchange Online when logging is enabled. Once stored, retention labels and policies can be applied to manage the lifecycle of this data.
+Prompts and responses from copilots and AI agents can be stored in Exchange Online when logging is enabled. Once stored, retention labels and policies can help manage the lifecycle of this data.
 
-You can:
+- **Retention labels** let you classify and apply granular retention rules to content, such as specific AI interactions. Labels are published through **retention label policies**, which by default can target standard locations like Exchange mailboxes, SharePoint sites, OneDrive accounts, and Microsoft 365 Groups.
+- **Retention policies** provide broader coverage, allowing you to preserve or delete all Copilot interactions in a location for a defined period. Labels provide more precise control, while policies apply broadly across interaction data.
 
-- Create retention labels specifically for AI interaction data
-- Publish retention labels to locations like **Microsoft Copilot Experiences**
-- Use auto-apply conditions if content is classified by sensitivity label or keyword match
+> [!NOTE]
+> To include AI-specific locations like **Microsoft Copilot Experiences**, **Enterprise AI apps**, or **Other AI apps**, your tenant must have pay-as-you-go billing enabled.
 
-Alternatively, you can configure retention policies without labels to preserve or delete all Copilot interactions for a defined period.
+## Log and investigate AI activities with audit
 
-This approach helps support audit readiness, legal investigations, and internal governance standards by ensuring prompt data isn't lost or deleted prematurely.
+Microsoft Purview Audit captures events when copilots and agents are used across supported services. For developer AI apps, these logs provide the activity-level detail needed to investigate how copilots and agents are being used.
+
+Audit logs can show:
+
+- Which user interacted with a custom copilot or agent
+- When the interaction occurred
+- Which app, service, or Microsoft Entra-registered application was involved
+
+By reviewing Audit logs for AI interactions, you can identify unusual patterns of activity and determine whether further safeguards are required.
+
+## Investigate AI content with eDiscovery
+
+Microsoft Purview eDiscovery makes it possible to search, review, and export AI prompts and responses that are in Exchange Online when logging is enabled. This allows legal, compliance, or security teams to investigate content generated by developer AI apps in the same way they would email or documents.
+
+In eDiscovery, you can:
+
+- Search prompts and responses by keyword, label, user, or time range
+- Review AI interaction content alongside other Microsoft 365 data
+- Export results for legal review or incident investigations
+
+By making developer AI prompts and responses discoverable, eDiscovery supports compliance obligations and ensures investigations are comprehensive.

@@ -47,11 +47,11 @@ units:
 - learn.wwl.purview-ai-developer-apps.introduction
 - learn.wwl.purview-ai-developer-apps.understand-developer-ai-risks
 - learn.wwl.purview-ai-developer-apps.discover-assess-ai-apps
+- learn.wwl.purview-ai-developer-apps.classify-restrict-retain-ai-prompt-data
 - learn.wwl.purview-ai-developer-apps.azure-ai-services-protections
 - learn.wwl.purview-ai-developer-apps.entra-ai-apps
 - learn.wwl.purview-ai-developer-apps.secure-copilot-studio
 - learn.wwl.purview-ai-developer-apps.manage-copilot-fabric-risks
-- learn.wwl.purview-ai-developer-apps.classify-restrict-retain-ai-prompt-data
 - learn.wwl.purview-ai-developer-apps.investigate-respond-ai-activity
 - learn.wwl.purview-ai-developer-apps.knowledge-check
 - learn.wwl.purview-ai-developer-apps.summary
