@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-copilot-fabric-data-warehouse
 metadata:
-  title: Get started with Copilot in Microsoft Fabric for Data Warehouse
+  title: Get Started With Copilot in Microsoft Fabric for Data Warehouse
   description: Get started with Copilot in Microsoft Fabric for Data Warehouse
-  ms.date: 07/01/2025
+  ms.date: 08/18/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: module
@@ -37,6 +37,7 @@ units:
 - learn.wwl.get-started-copilot-fabric-data-warehouse.chat
 - learn.wwl.get-started-copilot-fabric-data-warehouse.quick-actions
 - learn.wwl.get-started-copilot-fabric-data-warehouse.best-practices
+- learn.wwl.get-started-copilot-fabric-data-warehouse.exercise-copilot-fabric-data-warehouse
 - learn.wwl.get-started-copilot-fabric-data-warehouse.knowledge-check
 - learn.wwl.get-started-copilot-fabric-data-warehouse.summary
 badge: 

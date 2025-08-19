@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-copilot-fabric-data-engineering
 metadata:
-  title: Get started with Copilot in Microsoft Fabric for data engineering
-  description: Get started with Copilot in Microsoft Fabric for data engineering.
-  ms.date: 07/01/2025
+  title: Get Started With Copilot in Microsoft Fabric for Data Engineering
+  description: Get Started with Copilot in Microsoft Fabric for data engineering.
+  ms.date: 08/18/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: module
@@ -34,8 +34,10 @@ subjects:
 units:
 - learn.wwl.get-started-copilot-fabric-data-engineering.introduction
 - learn.wwl.get-started-copilot-fabric-data-engineering.dataflow-gen2
+- learn.wwl.get-started-copilot-fabric-data-engineering.exercise-copilot-fabric-dataflow-gen2
 - learn.wwl.get-started-copilot-fabric-data-engineering.data-pipelines
 - learn.wwl.get-started-copilot-fabric-data-engineering.notebooks
+- learn.wwl.get-started-copilot-fabric-data-engineering.exercise-copilot-fabric-notebooks
 - learn.wwl.get-started-copilot-fabric-data-engineering.knowledge-check
 - learn.wwl.get-started-copilot-fabric-data-engineering.summary
 badge: 

@@ -1,157 +1,82 @@
 Data integration is crucial for Contoso Health to consolidate information from various sources. Dataflow Gen2 in Microsoft Fabric's Data Factory offers a visual interface for creating dataflows, enabling users to ingest and transform data seamlessly. With Copilot's integration, users can employ natural language to define data transformation steps, making the ETL process more intuitive.
 
-In the following scenario, we'll demonstrate how Contoso Health can use Copilot to create a dataflow that extracts, transforms, and loads (ETL) patient satisfaction survey data into a Lakehouse for further analysis.
+Let's imagine how Contoso Health combines structured data such as patient satisfaction surveys into a unified workflow enables richer analysis and insights. Microsoft Fabric’s **Dataflow Gen2**, enhanced by **Copilot**, streamlines this process by letting users describe transformations in natural language.
 
-## Prerequisites
+Instead of focusing on every button click, this unit explores *how* the process unfolds conceptually, and *why* each step is important for building skills in data transformation. 
 
-The following prerequisites should be in place before you start:
+## How it works
 
-- Access to a Microsoft Fabric tenant account with an active subscription. [Create an account](https://azure.microsoft.com/free/).
-- Created a Workspace with Fabric enabled: [Create a workspace](/fabric/fundamentals/create-workspaces).
-
-## Create a lakehouse
-
-In this section, you create a lakehouse in Fabric.
-
-1. In [Fabric](https://app.fabric.microsoft.com), select **Workspaces** from the navigation bar.
-
-2. To open your workspace, enter its name in the search box located at the top and select it from the search results.
-
-3. From the workspace, select **New item**, then select **Lakehouse**.
-
-4. In the **New lakehouse** dialog box, enter **Patient_Lakehouse** in the **Name** field.
+Think of the process as a cycle of **prompt → output → validation → refinement**. Each stage builds on the last, and different types of transformations illustrate this cycle:
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of the New lakehouse dialog box.](../media/new-lakehouse.png)](../media/new-lakehouse.png#lightbox)
+> [![Diagram showing the process as a cycle.](../media/prompt-cycle.png)](../media/prompt-cycle.png#lightbox)
 
-5. Select **Create** to create and open the new lakehouse.
+**Data ingestion** is the starting point. Without data, there is nothing to transform. You might begin by generating sample records to experiment with transformations. Currently Copilot can generate sample tables, but initiating ingestion directly from an external data source through a prompt is not yet supported. Here's an example prompt:
 
-## Create a dataflow
+```copilot-prompt
+Create a new query with 50 patient records including patient-id, age, gender, and satisfaction-score.
+```
 
-In this section, you're creating your first dataflow.
-
-1. Navigate back to your Microsoft Fabric workspace.
-
-2. From the workspace, select **New item**, then select **Dataflow Gen2**.
+Here's an example of what Copilot could generate:
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot of the New Dataflow Gen2 option.](../media/new-dataflow-gen2.png)](../media/new-dataflow-gen2.png#lightbox)
+> [![Screenshot of a Dataflow gen2 table generated using Copilot.](../media/dataflow-copilot-canvas.png)](../media/dataflow-copilot-canvas.png#lightbox)
 
-## Generate sample data
 
-In this section, you're generating sample data for your dataflow. Normally, Contoso Health would use real data from their Electronic Health Records system, such as patient satisfaction survey data, but for this exercise, you'll generate sample data.
+Next, ensure the data is stored in the right formats. Correct **data types** prevent errors in calculations and make later steps more reliable. If you want, you can combine multiple data type transformations at once, like in the following example prompt:
 
-1. Make sure you open the Copilot pane by selecting the **Copilot** icon in the top right corner of the dataflow canvas.
+```copilot-prompt
+Change Age and SatisfactionScore to numbers; set Department as text.
+```
 
-2. Enter the following prompt in the Copilot pane:
+Shaping the data often means **adding new fields** that make the dataset easier to interpret. Derived values like age groups or categories can support business-focused analysis. Here are two example prompts that add a new column, based on some classification rule you define in natural language:
 
-    ```copilot-prompt
-    Create a new query with sample data that lists 100 patient data records and their satisfaction scores. It should include a patient-id, gender, age, date-of-visit, hour-of-visit, department, satisfaction-score.
-    
-    This is the list of our departments: Cardiology, Dermatology, Orthopedics, Neurology, Gastroenterology, Pediatrics, Ophthalmology, Oncology, Urology, ENT.
-    ```
+```copilot-prompt
+Add a new column AgeRange that groups patients into categories: 18–24 as Young Adults, 25–34 as Early Career, etc.
+```
 
-3. Tap the send button to generate the query. Observe the sample data and the query created in the dataflow canvas (this might differ slightly depending on your environment and the latest updates to Copilot.)
+```copilot-prompt
+Create a flag column that marks patients with SatisfactionScore below 4 as AtRisk.
+```
 
-> [!div class="mx-imgBorder"]
-> [![Screenshot of the Dataflow Gen2 canvas, highlighting Copilot.](../media/dataflow-copilot-canvas.png)](../media/dataflow-copilot-canvas.png#lightbox)
+**Filtering** narrows the dataset to what matters most. Removing noisy or irrelevant records improves data quality. Here are two example prompts that filter the data according to some rule you define in natural language:
 
-## Clean and transform the data
+```copilot-prompt
+Remove rows where SatisfactionScore is less than 3.
+```
 
-In this section, you'll clean and transform the data using Copilot.
+```copilot-prompt
+Exclude records where Department is ENT.
+```
 
-1. Change the data types. It's important to ensure that the data types are set correctly for each field. Enter the following prompt in the Copilot pane:
+Sometimes, fields need to be combined to streamline analysis. For example, **merging** a date field with a time field avoids the need for extra joins or lookups.
 
-    ```copilot-prompt
-    Change the data types for the following fields:
-    - DateOfVisit and HourOfVisit to text
-    - PatientID, Age, SatisfactionScore to number
-    - Gender, Department to text
-    ```
+```copilot-prompt
+Merge DateOfVisit and HourOfVisit into a new column called VisitDateTime of type DateTime.
+```
 
-Notice that the data types are changed in the query. We keep the DateOfVisit and HourOfVisit as text. Later, we'll merge them and convert them to DateTime data type.
+Finally, iteration is key. After each transformation, **review** the results and **refine** your prompts if something looks off. This loop helps build skill in articulating precise instructions and understanding how Copilot interprets them. Sometimes, it can be as easy as telling Copilot what to do, like in the following example prompt. You can also remove a transformation step Copilot created, and resubmit your refined prompt.
 
-> [!div class="mx-imgBorder"]
-> [![Screenshot of the Dataflow Gen2 canvas, highlighting the data types.](../media/dataflow-copilot-data-types.png)](../media/dataflow-copilot-data-types.png#lightbox)
+```copilot-prompt
+The VisitDateTime field didn’t parse correctly—recreate it using the format yyyy-MM-dd HH:mm.
+```
 
-2. Add a new field that takes the age and segments it into different age groups. Enter the following prompt in the Copilot pane:
-   
-    ```copilot-prompt
-    Add a column AgeRange (type text) that transforms the Age field:
-    - 18-24: Young Adults
-    - 25-34: Early Career
-    - 35-44: Mid Career
-    - 45-54: Late Career
-    - 55-64: Pre-Retirement
-    - 65+: Retirees
-    ```
+## Explain M code
 
-Notice the AgeRange column is added to the query.
+Copilot not only executes transformations; it also explains the underlying Mashup (M) code. This transparency builds confidence by showing what happens under the hood, offers a gradual path to learn query syntax while still working in natural language, and promotes reflection as you compare your intent with the logic it generates.
 
-> [!div class="mx-imgBorder"]
-> [![Screenshot of the Dataflow Gen2 canvas, highlighting the age range.](../media/dataflow-copilot-age-range.png)](../media/dataflow-copilot-age-range.png#lightbox)
+```copilot-prompt
+Describe this query
+```
 
-3. Create a new field that combines the DateOfVisit and HourOfVisit fields. Enter the following prompt in the Copilot pane:
-
-    ```copilot-prompt
-    Create a new field that combines the text from DateOfVisit and HourOfVisit. The new field should be called VisitDateTime and should be of type DateTime
-    ```
-
-4. Remove the DateOfVisit and HourOfVisit fields as they are no longer needed. Then, sort the table by visit date. Enter the following prompt in the Copilot pane:
-   
-    ```copilot-prompt
-    Remove the DateOfVisit and HourOfVisit fields. Sort by VisitDateTime descending.
-    ```
-
-    5. Remove the ENT department. Enter the following prompt in the Copilot pane:
-
-    ```copilot-prompt
-    Remove ENT from the Departments
-    ```
-
-6. Rename the Query to SatisfactionScores.
-
-Your query should now look like this:
-
-> [!div class="mx-imgBorder"]
-> [![Screenshot of the Dataflow Gen2 canvas, highlighting the final result.](../media/dataflow-copilot-final-result.png)](../media/dataflow-copilot-final-result.png#lightbox)
-
-## Code explanation
-
-For complex queries, Copilot explains the generated Mashup code, helping you understand the logic and purpose of each transformation step. 
-
-1. Enter the following prompt in the Copilot pane:
-
-    ```copilot-prompt
-    Describe this query
-    ```
-
-Notice the result is generated in the Copilot pane. Here's an example of the explanation:
-
-*Here's an explanation for **SatisfactionScores**: Generate a table of patient visit records, categorize by age range, combine date and hour into a datetime, sort by visit time, and exclude ENT department visits.*
-- _**Source**: Generate a list of 100 records with patient details including ID, gender, age, date and hour of visit, department, and satisfaction score._
-- _**Table**: Convert the list of records into a table._
-- _**Change type**: Change the data types of the columns to appropriate types (text, number, datetime)._
-- _**Add column**: Add a new column "AgeRange" categorizing patients into age groups._
-- _**Add column 1**: Add a new column "VisitDateTime" combining "DateOfVisit" and "HourOfVisit" into a datetime format._
-- _**Sorted rows**: Sort the table by "VisitDateTime" in descending order and remove the "DateOfVisit" and "HourOfVisit" columns._
-- _**Filter rows**: Filter out rows where the department is "ENT"._
-
-## Load the data to the lakehouse
-
-Now that you finished transforming and combining your data, you can configure its output destination settings. Select **Choose data destination** at the bottom of the **Query settings** pane.
-
-> [!div class="mx-imgBorder"]
-> [![Screenshot of the dataflow data destination.](../media/dataflow-data-destination.png)](../media/dataflow-data-destination.png#lightbox)
-
-Choose the **Lakehouse** option and select the **Patient_Lakehouse** lakehouse you created earlier. Select **Next**.
-
-Within this experience, you can configure the destination lakehouse and table for your query results, in addition to the update method (Append or Replace).
-
-Your dataflow is now ready to be published. Select **Publish**.
-
-## Best practices
+## Best practices for working with Copilot for Dataflow Gen2
 
 - Copilot is best equipped to handle data integration topics, so it's best to limit your questions to this area.
+- Start simple. Test one transformation at a time before chaining multiple steps.
 - If you include descriptions such as query names, column names, and values in the input, Copilot is more likely to generate useful outputs.
 - Try breaking complex inputs into more granular tasks. This helps Copilot better understand your requirements and generate a more accurate output.
+- Validate after each step by reviewing the output table.
+- Iterate incrementally — treat Copilot as a partner you refine with, not a one-shot generator.
+- Frame prompts around clear outcomes (e.g., *“add a column that groups ages”*) instead of vague commands.
+- Use the code explanations to reinforce learning and deepen technical skills.
+- Regularly check how Copilot interprets prompts to improve phrasing and clarity over time.

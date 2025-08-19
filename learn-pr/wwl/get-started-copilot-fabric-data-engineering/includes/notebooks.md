@@ -27,18 +27,9 @@ In this example, we use Copilot for Fabric Data Engineering to load, transform, 
 
 Source: EUROPOP2023 Population on January 1 by age, sex, and type of projection [[proj_23np](https://ec.europa.eu/eurostat/databrowser/product/view/proj_23np?category=proj.proj_23n)], Last updated June 28, 2023.
 
-### Prerequisites
-
-The following prerequisites should be in place before you start:
-
-- Access to a Microsoft Fabric tenant account with an active subscription. [Create an account](https://azure.microsoft.com/free/).
-- Created a Workspace with Fabric enabled: [Create a workspace](/fabric/fundamentals/create-workspaces).
-- Created a Lakehouse.
-- Created a new notebook and attach it to your Lakehouse.
-
 ### Load data
 
-Create a new cell in your notebook and copy the following instruction into it. To indicate that we want Copilot to generate code, use `%%code` as the first instruction in the cell. Execute the cell to generate the code.
+Begin in a fresh notebook that's attached to your Lakehouse. In a new cell, you might try the following prompt. Prefixing with `%%code` signals to Copilot that you'd like generated code. Run it whenever you're ready to see what Copilot proposes.
 
 ```copilot-prompt
 %%code
@@ -74,9 +65,9 @@ shutil.move(file_path, os.path.join(lakehouse_temp_folder, "proj_23np.tsv"))
 print(f"File successfully written to {os.path.join(lakehouse_temp_folder, 'proj_23np.tsv')}")
 ```
 
-Execute the cell and observe the output. The file should be downloaded and saved in the temporary folder of your Lakehouse.
+After running the cell, you should find the file downloaded and placed in the temporary folder of your Lakehouse.
 
-Now, create a new cell in your notebook and copy the following instruction into it.
+In another new cell, you could ask Copilot to load the data like this:
 
 ```copilot-prompt
 %%code
@@ -86,7 +77,7 @@ The fields are separated with a tab.
 Show the contents of the DataFrame using display method.
 ```
 
-Observe the output. The dataframe should contain the data from the TSV file. Here's an example of what the generated code might look like:
+The resulting dataframe will contain the contents of the TSV file. One possible generated script could look like:
 
 ```python
 #### ATTENTION: AI-generated code can include errors or operations you didn't intend. Review the code in this cell carefully before running it.
@@ -113,7 +104,7 @@ Here's an example of what the output might look like:
 
 ### Transform data
 
-Let's now go ahead and transform the data. We need to make sure the first field is split into separate columns. Additionally, we also need to make sure to work with correct data types and apply filtering. Create a new cell in your notebook and copy the following instruction into it.
+Next, consider transforming the data: splitting the combined first field into separate columns, cleaning up unused fields, standardizing data types, and applying a bit of filtering. A prompt like the following in a new cell can guide Copilot:
 
 ```copilot-prompt
 %%code
@@ -212,7 +203,7 @@ Here's an example of what the output might look like:
 
 ### Save data
 
-Next, we want to save the transformed data to our lakehouse. Create a new cell in your notebook and copy the following instruction into it.
+With transformations in place, you may want to persist the result to the Lakehouse. For instance, a cell prompt like this will have Copilot generate save logic:
 
 ```copilot-prompt
 %%code
@@ -230,7 +221,7 @@ spark_df.write.format("delta").saveAsTable("Population")
 
 ### Validation
 
-To validate that the data is saved correctly, expand the tables in your Lakehouse and check the contents. You can also use the **Copilot chat panel** to ask questions and get insights, and the AI provides responses or code to copy into your notebook. For example, you can ask:
+To check that the table saved as expected, expand the Tables list in your Lakehouse and review its contents. You can also turn to the **Copilot chat panel** for quick exploratory questions; Copilot will reply with explanations or runnable code. For example:
 
 ```copilot-prompt
 What is the projected population for geo BE in 2050?
@@ -257,6 +248,6 @@ result_df.show()
 ```
 
 ## Best practices
-- Copilot is best equipped to handle data engineering and data science topics, so limit your questions to this area.
-- Explicitly describe the data you want Copilot to examine. If you describe the data asset - for example, by naming files, tables, or columns - Copilot can more likely retrieve relevant data and generate useful outputs.
-- To provide Copilot with more context for performing analysis, load the data into the notebook as DataFrames or pin the data in your lakehouse.
+- Copilot is currently strongest with data engineering and data science scenarios, so framing questions in those domains tends to yield clearer results.
+- Giving Copilot concrete references to your data assets (file paths, table names, column names) usually improves the specificity and usefulness of generated answers.
+- Loading data as DataFrames or pinning datasets in your Lakehouse supplies richer context, enabling more accurate analysis and transformations.

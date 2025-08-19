@@ -32,6 +32,8 @@ To use Copilot in Microsoft Fabric, your organization must meet specific require
 - **Fabric capacities**: F2 or higher SKU
 - **Power BI Premium capacities**: P SKU (any tier)
 
+In addition, Copilot must be enabled by your Fabric administrators at the level of the tenant. It is enabled by default, but administrators can disable Copilot if your organization isn't ready to adopt it.
+
 > [!NOTE]
 > Copilot isn't available on trial SKUs, as it requires access to the Azure OpenAI Service that powers the AI capabilities.
 
