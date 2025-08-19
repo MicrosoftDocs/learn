@@ -5022,24 +5022,28 @@
       "redirect_url": "/training/modules/get-started-ai-fundamentals/8-knowledge-check"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/3-design-agent-selection-strategy.yml",
-      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/4-design-agent-selection-strategy"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/3-create-agent-group-chat.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/3-understand-agent-orchestration"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/4-define-chat-termination-strategy.yml",
-      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/5-define-chat-termination-strategy"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/4-design-agent-selection-strategy.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/4-use-concurrent-orchestration"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/5-exercise.yml",
-      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/6-exercise"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/5-define-chat-termination-strategy.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/5-use-sequential-orchestration"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/6-knowledge-check.yml",
-      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/7-knowledge-check"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/6-exercise.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/10-exercise"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/7-summary.yml",
-      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/8-summary"
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/11-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/8-summary.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/12-summary"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-images/4-generate-smart-cropped-thumbnail.yml",
