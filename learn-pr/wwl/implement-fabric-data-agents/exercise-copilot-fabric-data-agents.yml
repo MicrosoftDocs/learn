@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-fabric-data-agents.excercise-copilot-fabric-data-agents
+uid: learn.wwl.implement-fabric-data-agents.exercise-copilot-fabric-data-agents
 title: Exercise - Chat with your data using Microsoft Fabric data agents
 metadata:
   title: Exercise - Chat with your data using Microsoft Fabric data agents
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/excercise-copilot-fabric-data-agents.md)]
+  [!include[](includes/exercise-copilot-fabric-data-agents.md)]
