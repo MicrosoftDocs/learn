@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.purview-ai-developer-apps.classify-restrict-retain-ai-prompt-data
+uid: learn.wwl.purview-ai-developer-apps.classify-retain-investigate-ai-prompt-data
 title: Classify, restrict, and retain AI prompt data
 metadata:
   title: Classify, Restrict, and Retain AI Prompt Data
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/classify-restrict-retain-ai-prompt-data.md)]
+  [!include[](includes/classify-retain-investigate-ai-prompt-data.md)]
