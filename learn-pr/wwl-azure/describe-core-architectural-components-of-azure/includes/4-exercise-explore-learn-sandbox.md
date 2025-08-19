@@ -1,16 +1,19 @@
-In this exercise, you explore the Learn sandbox. You can interact with the Learn sandbox in three different ways. During exercises, you'll be provided for instructions for at least one of the methods below.
+In this exercise, you explore ways to interact with Microsoft Azure. You can interact with Azure in different ways, including through the web portal or using the Azure command line interface (CLI) with PowerShell or Bash commands.
 
-You start by activating the Learn sandbox. Then, you’ll investigate each of the methods to work in the Learn sandbox.
+## Access the Azure Portal
 
-## Activate the Learn Sandbox
+The Azure portal provides a graphic user interface (GUI) to interact with Azure services. You can navigate to different service areas, manage subscriptions and accounts, search for specific services or settings, and so on.
 
-If you haven’t already, use the Activate sandbox button above to activate the Learn sandbox.
+The Azure portal is accessed at [https://portal.azure.com](https://portal.azure.com/?azure-portal=true)
 
-If you receive a notice saying Microsoft Learn needs your permission to create Azure resource, use the Review permission button to review and accept the permissions. Once you approve the permissions, it may take a few minutes for the sandbox to activate.
+Once you're logged into the portal, you can navigate around Azure using the interface, or you can use the command line interface and PowerShell and BASH commands.
 
-## Task 1: Use the PowerShell CLI
+## Use the command line interface
 
-Once the sandbox launches, half the screen will be in PowerShell command line interface (CLI) mode. If you’re familiar with PowerShell, you can manage your Azure environment using PowerShell commands.
+You can use the CLI from within the Azure portal. Once logged into Azure, the CLI can be accessed by selecting the Cloud Shell icon. This will bring up a CLI set to use PowerShell syntax. If you’re familiar with PowerShell, you can manage your Azure environment using PowerShell commands.
+
+To access CloudShell from the Azure portal, select the CloudShell icon.
+:::image type="content" source="../media/open-cloudshell.png" alt-text="Screenshot of the Azure Portal action area with the CloudShell icon pointed out.":::
 
 :::image type="content" source="../media/sandbox-powershell-11569b2c-7a9a0db5.png" alt-text="Screenshot of the Azure PowerShell CLI at initial launch.":::
 
@@ -103,12 +106,6 @@ The commands should have worked the same as before, and given you the same resul
 ```azurecli
 exit
 ```
-
-## Task 4: Use the Azure portal
-
-You’ll also have the option of using the Azure portal during sandbox exercises. You need to use the link provided in the exercise to access the Azure portal. Using the provided link, instead of opening the portal yourself, ensures the correct subscription is used and the exercise remains free for you to complete.
-
-Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to check out the Azure web interface. Once in the portal, you can see all the services Azure has to offer as well as look around at resource groups and so on.
 
 ## Continue
 
