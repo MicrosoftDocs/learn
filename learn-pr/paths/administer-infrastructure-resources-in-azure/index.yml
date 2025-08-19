@@ -40,7 +40,6 @@ modules:
 - learn.azure.create-resource-manager-template-vs-code
 - learn.add-and-size-disks-in-azure-virtual-machines
 - learn.caching-and-performance-azure-storage-and-disks
-- learn.secure-your-azure-virtual-machine-disks
 - learn.azure.protect-vm-settings-with-dsc
 - learn.azure.monitor-azure-vm-using-diagnostic-data
 trophy:
