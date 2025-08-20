@@ -5,8 +5,8 @@ metadata:
   description: Implement a cognitive service for performing language detection on an IoT Edge device.
   ms.date: 08/19/2025
   ms.update-cycle: 180-days
-  author: PatAltimore
-  ms.author: patricka
+  author: sethmanheim
+  ms.author: sethm
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.collection: ce-advocates-ai-copilot
