@@ -2,11 +2,11 @@
 uid: learn.wwl.deploy-workloads-with-databricks-workflows.key-components-of-azure-databricks-workflows
 title: Understand key components of Azure Databricks Workflows
 metadata:
-  title: Understand key components of Azure Databricks Workflows
+  title: Understand Key Components of Azure Databricks Workflows
   description: "Understand key components of Azure Databricks Workflows"
-  ms.date: 07/29/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 20/08/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 durationInMinutes: 7
 content: |

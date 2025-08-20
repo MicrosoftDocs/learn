@@ -2,14 +2,14 @@
 uid: learn.wwl.explore-azure-databricks.get-started
 title: Get started with Azure Databricks
 metadata:
-  title: Get started with Azure Databricks
+  title: Get Started With Azure Databricks
   description: "Get started with Azure Databricks"
-  ms.date: 08/29/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 20/08/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/02-azure-databricks.md)]
+  [!include[](includes/02-azure-databricks.md)]
