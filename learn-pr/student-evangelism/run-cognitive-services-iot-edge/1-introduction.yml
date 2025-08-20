@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Introduction to running Azure AI services on the edge
   ms.date: 08/19/2025
-  author: PatAltimore
-  ms.author: patricka
+  author: sethmanheim
+  ms.author: sethm
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4
