@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics
 metadata:
-  title: Manage and monitor data warehouse activities in Azure Synapse Analytics
+  title: Manage and Monitor Data Warehouse Activities in Azure Synapse Analytics
   description: Manage and monitor data warehouse activities in Azure Synapse Analytics
-  ms.date: 06/12/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module
   ms.service: azure
 title: Manage and monitor data warehouse activities in Azure Synapse Analytics
@@ -39,4 +39,4 @@ units:
 - learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.summary
 badge:
   uid: learn.wwl.manage-monitor-data-warehouse-activities.badge
-
+
