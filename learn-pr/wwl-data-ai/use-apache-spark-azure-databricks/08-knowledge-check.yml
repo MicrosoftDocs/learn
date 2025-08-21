@@ -2,18 +2,17 @@
 uid: learn.wwl.use-apache-spark-azure-databricks.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 12/12/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
-  title: "Check your knowledge"
   questions:
   - content: "Which definition best describes Apache Spark?"
     choices:

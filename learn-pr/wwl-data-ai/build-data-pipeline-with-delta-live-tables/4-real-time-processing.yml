@@ -2,11 +2,11 @@
 uid: learn.wwl.build-data-pipelines-with-delta-live-tables.real-time-processing
 title: Real-time processing
 metadata:
-  title: Real-time processing
+  title: Real-Time Processing
   description: "Real-time processing"
-  ms.date: 07/23/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 durationInMinutes: 5
 content: |

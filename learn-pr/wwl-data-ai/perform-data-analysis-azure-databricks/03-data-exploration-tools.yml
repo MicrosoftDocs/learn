@@ -2,11 +2,11 @@
 uid: learn.wwl.perform-data-analysis-azure-databricks.data-exploration-tools
 title: Data exploration tools in Azure Databricks
 metadata:
-  title: Data exploration tools in Azure Databricks
+  title: Data Exploration Tools in Azure Databricks
   description: "Data exploration tools in Azure Databricks"
-  ms.date: 12/12/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

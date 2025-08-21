@@ -2,11 +2,11 @@
 uid: learn.wwl.use-apache-spark-azure-databricks.get-to-know-spark
 title: Get to know Spark
 metadata:
-  title: Get to know Spark
+  title: Get to Know Spark
   description: "Get to know Spark"
-  ms.date: 12/12/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

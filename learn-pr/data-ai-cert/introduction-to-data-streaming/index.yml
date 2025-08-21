@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.data-ai.introduction-to-data-streaming
 metadata:
-  title: Get started with Azure Stream Analytics
+  title: Get Started With Azure Stream Analytics
   description: "Get started with Azure Stream Analytics"
-  ms.date: 12/08/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module-standard-task-based
   ms.service: azure-stream-analytics
 title: Get started with Azure Stream Analytics
@@ -37,4 +37,4 @@ units:
 - learn.data-ai.introduction-to-data-streaming.knowledge-check
 - learn.data-ai.introduction-to-data-streaming.summary
 badge:
-  uid: learn.data-ai.introduction-to-data-streaming.badge
+  uid: learn.data-ai.introduction-to-data-streaming.badge

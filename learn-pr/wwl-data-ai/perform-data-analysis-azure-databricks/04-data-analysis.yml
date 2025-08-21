@@ -2,11 +2,11 @@
 uid: learn.wwl.perform-data-analysis-azure-databricks.data-analysis
 title: Data analysis using DataFrame APIs
 metadata:
-  title: Data analysis using DataFrame APIs
+  title: Data Analysis Using DataFrame APIs
   description: "Data analysis using DataFrame APIs"
-  ms.date: 12/12/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

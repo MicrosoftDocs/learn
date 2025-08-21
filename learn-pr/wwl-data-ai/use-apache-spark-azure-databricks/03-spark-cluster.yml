@@ -2,11 +2,11 @@
 uid: learn.wwl.use-apache-spark-azure-databricks.create-spark-cluster
 title: Create a Spark cluster
 metadata:
-  title: Create a Spark cluster
+  title: Create a Spark Cluster
   description: "Create a Spark cluster"
-  ms.date: 12/12/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

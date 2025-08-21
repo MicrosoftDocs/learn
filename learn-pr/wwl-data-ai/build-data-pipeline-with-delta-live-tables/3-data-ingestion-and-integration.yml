@@ -2,11 +2,11 @@
 uid: learn.wwl.build-data-pipeline-with-delta-live-tables.data-ingestion-and-integration
 title: Data ingestion and integration
 metadata:
-  title: Data ingestion and integration
+  title: Data Ingestion and Integration
   description: "Data ingestion and integration"
-  ms.date: 07/23/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 durationInMinutes: 7
 content: |
