@@ -13,7 +13,6 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
-  title: "Check your knowledge"
   questions:
   - content: "Which definition best describes Apache Spark?"
     choices:
