@@ -17,6 +17,6 @@ Users also access the **Microsoft Threat Intelligence** solution from the Micros
 
 Throughout the rest of this module, you'll learn more about the solutions that are part of Microsoft Defender XDR, the Microsoft Defender portal, the integration of Microsoft Defender XDR with Microsoft Security Copilot, and Microsoft Defender Threat Intelligence.
 
-Watch this brief video that describes the benefits of Microsoft Defender, Microsoft's XDR solution.
+Watch this brief video that describes the benefits of Microsoft Defender XDR.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=2da38838-a10e-4412-bd93-a9adae672c92]
