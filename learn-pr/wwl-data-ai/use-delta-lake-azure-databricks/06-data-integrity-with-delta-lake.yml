@@ -2,9 +2,9 @@
 uid: learn.wwl.use-delta-lake-azure-databricks.data-integrity-with-delta-lake
 title: Data integrity with Delta Lake
 metadata:
-  title: Data Integrity With Delta Lake
+  title: Data Integrity with Delta Lake
   description: "Data integrity with Delta Lake"
-  ms.date: 08/21/2025
+  ms.date: 08/20/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-workloads-with-databricks-workflows
 metadata:
-  title: Deploy workloads with Azure Databricks Workflows
+  title: Deploy Workloads with Azure Databricks Workflows
   description: "Learn how to deploy workloads with Azure Databricks Workflows"
-  ms.date: 08/21/2025
+  ms.date: 08/20/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: module-standard-task-based
