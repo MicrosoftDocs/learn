@@ -3,7 +3,8 @@ uid: learn.wwl.recognize-synthesize-speech
 metadata:
   title: Get started with speech in Azure
   description: "Learn how to use Azure AI services to recognize and synthesize speech."
-  ms.date: 11/04/2024
+  ms.date: 8/15/2025
+  ms.update-cycle: 180-days
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module

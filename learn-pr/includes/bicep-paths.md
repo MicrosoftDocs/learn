@@ -12,11 +12,7 @@ To learn about Bicep, we recommend you take these three learning paths:
 
 [Part 1: Fundamentals of Bicep](xref:learn.bicep-deploy-manage)
 :::column-end:::
-:::column:::
-[<img src="/training/achievements/bicep/intermediate-bicep.svg" width="101" height="120" alt="The trophy for the Intermediate Bicep learning path." role="presentation"></img>](xref:learn.bicep-collaborate)
 
-[Part 2: Intermediate Bicep](xref:learn.bicep-collaborate)
-:::column-end:::
 :::column:::
 [<img src="/training/achievements/bicep/advanced-bicep.svg" width="101" height="120" alt="The trophy for the Advanced Bicep learning path." role="presentation"></img>](xref:learn.advanced-bicep)
 

@@ -2,11 +2,11 @@
 uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.configure-inputs-outputs
 title: Configure inputs and outputs
 metadata:
-  title: Configure inputs and outputs
+  title: Configure Inputs and Outputs
   description: "Configure inputs and outputs"
-  ms.date: 12/12/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 durationInMinutes: 9
 content: |
