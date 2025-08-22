@@ -20,7 +20,7 @@ The case helps you group related search, review, and deletion actions.
 
 ## Step 2: Search for Copilot activity
 
-After you create a case, create a search to find Copilot interactions:
+After you create a case, create a search to find Copilot interactions. For example, if an investigation requires you to confirm whether a sensitive report was used in Copilot prompts, you can create a search scoped to Copilot interactions. This lets you find those items across mailboxes and determine whether they should be preserved or deleted.
 
 1. In the case, select **Create search**.
 1. Give your search a name and a description.
@@ -73,11 +73,11 @@ If your investigation requires deletion, you'll need to remove any retention set
 
 ## Step 5: Delete Copilot data with Microsoft Graph Explorer
 
-You can delete Copilot data by using Microsoft Graph Explorer or PowerShell. Make sure you have the **Search And Purge** role assigned in Microsoft Purview with the user performing the deletion.
+You can delete Copilot data by using Microsoft Graph Explorer or PowerShell. Make sure you have the **Search And Purge** role assigned in Microsoft Purview with the user performing the deletion. Deletion is needed when investigators determine that Copilot interactions contain sensitive data that shouldn’t remain in mailboxes.
 
 ### Option 1: Graph Explorer
 
-1. Go to [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?azure-portal=true) and sign in with an account that has the necessary permissions.
+1. Go to [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?azure-portal=true) and sign in with an account that has the necessary permissions.
 1. Enter this GET request to view the list of eDiscovery cases in your organization:
 
    ```bash

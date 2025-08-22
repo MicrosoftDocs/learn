@@ -1,6 +1,6 @@
 Microsoft Purview retention policies help ensure that prompts and responses generated during Microsoft 365 Copilot interactions are retained for as long as needed to meet compliance and business requirements.
 
-Copilot interactions are stored in Exchange Online mailboxes, including hidden folders used for compliance purposes. Microsoft Purview applies retention policies to these mailboxes based on the policy locations you configure.
+Copilot interactions are stored as compliance copies in Exchange Online mailboxes, including hidden folders used for compliance purposes. Microsoft Purview applies retention policies to these mailboxes based on the policy locations you configure.
 
 This lets you manage Copilot content using the same tools and processes you already use for Microsoft 365 workloads.
 
@@ -15,7 +15,7 @@ Retention behavior depends on how the Copilot interaction is stored:
 These interactions can be retained or deleted using Microsoft Purview retention policies. Each supported location must be selected explicitly when configuring a policy.
 
 > [!NOTE]
-> Microsoft Copilot experiences is a new, dedicated policy location. It isn't included in existing policies and must be selected when creating or editing a policy.
+> **Microsoft Copilot experiences** is a new, dedicated policy location. It isn’t included in existing policies and must be selected when creating or editing a policy. For more details on how retention applies to Copilot and other AI apps, see **[Learn about retention for Copilot and AI apps](/purview/retention-policies-copilot?azure-portal=true)**.
 
 ## Create a retention policy for Copilot interactions
 

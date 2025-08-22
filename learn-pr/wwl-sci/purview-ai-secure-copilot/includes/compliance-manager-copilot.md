@@ -4,13 +4,17 @@ By using AI-focused assessment templates, you can identify compliance gaps, trac
 
 ## Use AI regulation templates in Compliance Manager
 
-Compliance Manager includes **premium templates** for assessing your compliance with AI-related regulations, such as:
+Compliance Manager provides AI-focused templates that let you evaluate Copilot use against regulatory and industry standards. These templates show which protections are already in place and where gaps remain.
+
+For example, a legal team might be asked to confirm that Copilot use meets regulatory standards. They might need to show that AI-generated content is retained, sensitive data is protected, and controls align with the EU AI Act. In that case, you can select a template, run an assessment, and review the results to see which actions are required.
+
+Available templates include:
 
 - EU Artificial Intelligence Act
 - NIST AI Risk Management Framework (RMF)
 - ISO/IEC 42001:2023 and 23894:2023
 
-These assessments help your organization evaluate how sensitive data is handled, how AI interactions are governed, and what safeguards are in place.
+Each template maps regulatory expectations to specific Microsoft Purview controls, such as sensitivity labels, DLP, retention, and audit. The results show your organization's current compliance score and provide recommended actions you can assign to responsible staff.
 
 > [!TIP]
 > These templates apply to all supported generative AI tools, including Microsoft 365 Copilot, Security Copilot, ChatGPT Enterprise, and Azure AI services.
@@ -35,7 +39,7 @@ This creates an assessment where you can track Microsoft-managed and customer-ma
 Each assessment includes:
 
 - **Controls** that evaluate how your organization governs data, manages AI risks, and applies responsible use practices.
-- **Microsoft actions** hat document how Microsoft services like Copilot align with the regulation.
+- **Microsoft actions** that document how Microsoft services like Copilot align with the regulation.
 - **Your improvement actions**, such as enabling DLP for AI, tagging sensitive data, or documenting review processes.
 
 Use the **Progress**, **Controls**, and **Improvement actions** tabs to review your organization's alignment with each control.

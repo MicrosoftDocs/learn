@@ -48,7 +48,7 @@ To configure the policy:
 > [!NOTE]
 > Policy updates can take up to four hours to take effect in Copilot experiences.
 
-This policy applies to supported Microsoft 365 apps, including Word, Excel, PowerPoint, Outlook (preview), and Copilot Chat. When the policy is triggered, Copilot excludes the content from summaries but might still cite the item, depending on the user's permissions.
+This policy applies to supported Microsoft 365 apps, including Word, Excel, PowerPoint, Outlook, and Copilot Chat. Emails are included if they were sent on or after January 1, 2025. When the policy is triggered, Copilot excludes the content from summaries but might still cite the item, depending on the user's permissions.
 
 ## Use DSPM for AI to recommend Copilot-specific DLP
 

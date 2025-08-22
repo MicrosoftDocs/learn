@@ -40,6 +40,8 @@ These fields can help confirm whether sensitive information was involved or whet
 
 ## Search for Copilot interactions in the audit log
 
+Audit searches can confirm how Copilot is being used in your organization. For example, if you need to confirm whether a sensitive file was used in a Copilot prompt during an investigation, you can run a search scoped to Copilot interactions. Filtering by record type or exporting results to CSV lets you focus on the activity that matters most.
+
 To view Copilot interactions in Microsoft Purview Audit:
 
 1. Go to the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true).

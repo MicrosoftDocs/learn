@@ -16,11 +16,11 @@ Being aware of these risks helps guide the selection and configuration of approp
 
 Microsoft Purview Data Security Posture Management (DSPM) for AI helps administrators identify where sensitive data might be used during Microsoft 365 Copilot interactions. It analyzes content usage patterns and provides recommendations for applying appropriate protections.
 
-DSPM for AI organizes these recommendations into categories:
+DSPM for AI organizes its recommendations into three categories that reflect common risk scenarios when Copilot is used across an organization:
 
-- **Data security**: Highlights gaps in labeling, DLP, or access control configurations.
-- **Communication insights**: Identifies potentially inappropriate or risky prompts and responses.
-- **AI regulations**: Flags areas where audit, retention, or policy settings might need to be adjusted for compliance.
+- **Data security**: Gaps in labeling, DLP, or access control configurations that could let Copilot process sensitive files
+- **Communication insights**: Prompts or responses that include inappropriate language or expose sensitive data
+- **AI regulations**: Audit, retention, or policy settings that must align with regulatory expectations
 
 DSPM for AI is designed to help you get started quickly. You can act on recommendations directly or use them to guide configuration in the relevant Microsoft Purview tools.
 
