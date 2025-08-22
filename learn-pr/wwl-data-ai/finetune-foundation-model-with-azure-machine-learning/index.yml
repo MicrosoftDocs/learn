@@ -4,6 +4,7 @@ metadata:
   title: Fine-tune a foundation model from the model catalog in Azure Machine Learning
   description: "Learn how to fine-tune a foundation model from the model catalog in Azure Machine Learning."
   ms.date: 07/25/2024
+  ms.update-cycle: 180-days
   author: madiepev
   ms.author: madiepev
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics

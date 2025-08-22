@@ -2,12 +2,12 @@
 uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.understand-pipelines-azure-synapse-analytics
 title: Understand pipelines in Azure Synapse Analytics
 metadata:
-  title: Understand pipelines in Azure Synapse Analytics
+  title: Understand Pipelines in Azure Synapse Analytics
   description: "Understand pipelines in Azure Synapse Analytics"
-  ms.date: 10/06/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-understand-pipelines-azure-synapse-analytics.md)]
+  [!include[](includes/2-understand-pipelines-azure-synapse-analytics.md)]

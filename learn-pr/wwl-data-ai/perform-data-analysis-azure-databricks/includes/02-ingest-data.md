@@ -1,6 +1,6 @@
 Before you can work with data in Azure Databricks, you need to ingest data into the platform. Once in the platform, the cloud-based compute allows you to process large volumes of data efficiently.
 
-Data in Azure Databricks is stored using *Apache Delta Lake*, an open source system for managing data files on which relational tables can be defined and queried. The actual storage location for the delta lake files can vary. Azure Databricks supports connecting to cloud data storage services such as Azure Storage and Azure Data Lake. Azure Databricks also provides *Unit Catalog* as a governance solution for managing and tracking data access and lineage across multiple connected data stores.
+Data in Azure Databricks is stored using *Apache Delta Lake*, an open source system for managing data files on which relational tables can be defined and queried. The actual storage location for the delta lake files can vary. Azure Databricks supports connecting to cloud data storage services such as Azure Storage and Azure Data Lake. Azure Databricks also provides *Unity Catalog* as a governance solution for managing and tracking data access and lineage across multiple connected data stores.
 
 ![Screenshot of adding data to Azure Databricks.](../media/upload-data.png)
 
