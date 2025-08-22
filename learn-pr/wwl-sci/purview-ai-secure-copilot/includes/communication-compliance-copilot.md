@@ -53,7 +53,7 @@ To create the policy from a recommendation:
 1. Select the **Detect unethical behavior in AI apps** recommendation.
 1. Review the policy details, then select **Create policies** to create the policy with default settings.
 
-    :::image type="content" source="../media/dspm-ai-communication-compliance-copilot.png" alt-text="Screenshot in DSPM for AI showing setup prompt for a policy to detect unethical behavior in Microsoft 365 Copilot and other AI apps using pay-as-you-go billing." lightbox="../media/dspm-ai-communication-compliance-copilot.png":::
+    :::image type="content" source="../media/posture-management-communication-compliance-copilot.png" alt-text="Screenshot in DSPM for AI showing setup prompt for a policy to detect unethical behavior in Microsoft 365 Copilot and other AI apps using pay-as-you-go billing." lightbox="../media/dspm-ai-communication-compliance-copilot.png":::
 
 1. After the policy is created, go to the **Communication Compliance** solution and edit the policy to assign reviewers or make other changes.
 
