@@ -1,27 +1,27 @@
-AI technologies can introduce new regulatory and compliance risks, especially when prompts or generated content include sensitive data or fall under specific jurisdictional requirements. Microsoft Purview includes **Compliance Manager**, which helps organizations assess and improve their readiness to meet regulatory obligations tied to AI usage.
+AI technologies can create new compliance risks. Prompts might include sensitive data, and generated responses can surface regulated content or raise jurisdictional concerns. Organizations need a way to evaluate whether their AI use meets regulatory and industry standards. Microsoft Purview includes **Compliance Manager**, which provides a structured way to assess AI-related risks and track progress toward meeting obligations.
 
 ## Use Compliance Manager to assess AI-specific risks
 
-**Compliance Manager** is a risk assessment tool in Microsoft Purview that helps evaluate how well your organization is meeting regulatory and industry standards. For AI-related usage, it includes **assessments and templates** that cover common control requirements for tools like Microsoft 365 Copilot and other generative AI applications.
+Compliance Manager works as a risk assessment framework. It allows compliance and risk teams to evaluate how well their organization is meeting regulatory expectations, including those affected by AI.
 
-These assessments include controls for:
+For example, a legal team might need assurance that Copilot prompts are being retained and can be audited. Compliance Manager includes assessments that identify whether those controls are configured. Assessments cover areas to:
 
-- Protecting sensitive data during AI interactions
-- Ensuring audit and retention policies are in place
-- Managing non-Microsoft access and API usage
-- Aligning AI tool use with regulatory expectations
+- Protect sensitive data during AI interactions
+- Enforce audit and retention policies
+- Govern non-Microsoft and API access
+- Align AI usage with regulatory and jurisdictional standards
 
-Each assessment generates a **compliance score** and provides recommendations to improve your posture. You can assign improvement actions to responsible users and track progress over time.
+Each assessment produces a **compliance score** and lists recommended improvement actions. These actions can be assigned to responsible staff, creating accountability and making progress measurable over time.
 
 ## Apply templates to manage compliance for AI tools
 
-Microsoft regularly publishes **built-in templates** for AI scenarios in Compliance Manager. These templates map specific controls to regulatory standards, including:
+Compliance Manager also includes **prebuilt templates** that map common AI scenarios to specific control requirements. These templates give organizations a starting point for understanding where their protections align with regulatory standards and where gaps remain. Examples include:
 
-- **Microsoft 365 Copilot Data Protection Baseline**
-- **Microsoft Copilot for Microsoft 365 (preview)**
-- **AI and Large Language Model usage**
-- **ISO/IEC standards**, such as ISO/IEC 42001 for AI management systems (where applicable)
+- Microsoft 365 Copilot Data Protection Baseline
+- Microsoft Copilot for Microsoft 365 (preview)
+- AI and Large Language Model usage
+- ISO/IEC standards such as ISO/IEC 42001 for AI management systems (where applicable)
 
-Templates can be customized to reflect your organizational context and compliance priorities. They can also be used to track the implementation of Microsoft Purview features, such as sensitivity labels, data loss prevention policies, and retention configurations, which serve as evidence of control effectiveness.
+Templates can be tailored to reflect organizational priorities. They also allow teams to demonstrate how Purview features such as sensitivity labels, data loss prevention, and retention policies serve as evidence during audits or regulatory reviews.
 
-By using these assessments, compliance and risk teams can maintain visibility into AI-related risks and demonstrate due diligence during audits or regulatory reviews.
+By using assessments and templates together, compliance and risk teams maintain visibility into AI-related risks and can demonstrate due diligence when questioned by auditors or regulators.

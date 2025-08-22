@@ -1,39 +1,39 @@
-Not all AI activity is safe or appropriate. Prompts might expose sensitive data, violate organizational policies, or indicate unsafe user behavior. To manage these risks, Microsoft Purview provides tools to help detect risky interactions and respond with appropriate actions.
+Not all AI activity is safe. Prompts might expose sensitive data, surface regulated information, or suggest behavior that violates organizational policies. Microsoft Purview includes several tools that let you detect these risks and respond in a structured way.
 
-Insider Risk Management and Communication Compliance help identify potentially risky AI activity, while Adaptive Protection applies dynamic controls based on user risk levels.
-
-:::image type="content" source="../media/detect.svg" alt-text="Illustration of DSPM for AI shield showing environment coverage, sensitivity labels, DLP enforcement, and user risk mitigation." border = "false":::
+Insider Risk Management and Communication Compliance focus on identifying risky AI interactions, while Adaptive Protection applies stronger controls when a user's behavior raises concern.
 
 ## Detect risky prompts with Insider Risk Management
 
-**Insider Risk Management** in Microsoft Purview helps detect potentially harmful user behavior, including misuse of AI tools. It includes built-in policy templates designed to flag potentially risky AI activity based on defined policy thresholds, such as:
+Consider a scenario where a user submits dozens of prompts in a short time, some of which contain confidential contract data. This kind of activity can be difficult to catch manually.
+
+**Insider Risk Management** includes policy templates that help flag risky AI behaviors such as:
 
 - Excessive prompt activity within a short period
 - Prompts that include sensitive or confidential information
-- Repeated access to high-value files before submitting prompts
+- Repeated access to high-value files before prompting
 
-Examples include the **Risky AI usage (preview)** and **Risky browser usage (preview)** policy templates. These templates are designed to detect specific patterns of AI tool usage that might indicate risk. When conditions are met, the policy flags the activity for review in an alert.
+The **Risky AI usage** and **Risky browser usage (preview)** templates are designed specifically to identify patterns like these. When thresholds are met, the activity is flagged for review in an alert.
 
-You can combine these detections with **priority user groups**, **notice templates**, and **Microsoft Defender for Endpoint signals** to enhance the signal quality and take informed action.
+To refine detections, you can combine these policies with **priority user groups**, **notice templates**, and signals from **Microsoft Defender for Endpoint**. This strengthens the signal quality so that alerts focus on activity most likely to represent a real risk.
 
 ## Analyze AI interactions for policy violations
 
-**Communication Compliance** helps organizations evaluate how AI tools like Microsoft 365 Copilot are being used, with a focus on ensuring prompts and responses align with organizational policies. This includes detecting when interactions involve:
+AI-generated content should be reviewed with the same level of care as email or Teams messages. **Communication Compliance** allows organizations to evaluate prompts and responses for alignment with policy.
 
-- Inappropriate or offensive content
-- Confidential or regulated data being surfaced in responses
-- Prompts that include personal data or sensitive business details
+For example, reviewers can be notified when:
 
-AI-generated content can be reviewed just like any other form of communication, such as email or Teams messages. When a policy violation is detected, reviewers can take actions like tagging, notifying the user, escalating to a manager, or preserving the message for further investigation.
+- Prompts contain personal data or sensitive business details
+- Responses surface confidential or regulated data
+- Interactions include offensive or inappropriate content
 
-:::image type="content" source="../media/respond.svg" alt-text="Illustration of DSPM for AI shield showing environment coverage, sensitivity labels, DLP enforcement, and user risk mitigation." border = "false":::
+When a violation is detected, reviewers can tag it, notify the user, escalate it to a manager, or preserve the interaction for investigation. This ensures AI use is governed alongside other communication channels.
 
 ## Apply controls with Adaptive Protection
 
-**Adaptive Protection** uses Microsoft Purview signals to adjust user access dynamically. When Insider Risk Management assigns a higher risk level to a user, Adaptive Protection can enforce stronger restrictions, including:
+Sometimes detection isn't enough, especially if risky behavior continues. **Adaptive Protection** can help by applying stronger controls when Insider Risk Management raises a user's risk level. For example, a user flagged for risky AI activity could be:
 
-- Blocking users from sharing files externally
-- Preventing file uploads or pasting into AI tools using data loss prevention (DLP)
-- Restricting access to sensitive content based on label sensitivity
+- Blocked from sharing files externally
+- Prevented from uploading or pasting content into AI tools by data loss prevention (DLP)
+- Restricted from accessing sensitive files with high-sensitivity labels
 
-These protections integrate with **Microsoft Entra Conditional Access** and **Purview DLP policies** to ensure that controls scale with user behavior. Users flagged for risky AI usage can be automatically placed under stricter policies until their risk level returns to normal.
+These restrictions integrate with **Microsoft Entra Conditional Access** and **Purview DLP policies**, so controls scale with behavior. Once the user's risk level decreases, stricter policies can be lifted.

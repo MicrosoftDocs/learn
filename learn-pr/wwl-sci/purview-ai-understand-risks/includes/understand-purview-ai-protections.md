@@ -1,60 +1,56 @@
-After identifying the security and compliance risks introduced by AI tools, the next step is to understand how Microsoft Purview helps address those risks.  Microsoft Purview uses a layered approach that builds on existing data security tools while introducing new capabilities designed specifically for AI. These capabilities are unified under **Data Security Posture Management (DPSM) for AI**.
+After you identify the security and compliance risks introduced by AI tools, the next step is to understand how Microsoft Purview addresses those risks. Microsoft Purview uses a layered approach that builds on your existing data security controls and adds AI‑specific capabilities, unified as **Data Security Posture Management (DSPM) for AI**.
 
 ## Data Security Posture Management for AI
 
-DSPM for AI provides centralized visibility and control over how organizational data is accessed during AI interactions. It helps security teams:
+DSPM for AI gives security teams visibility and control over how organizational data is accessed during AI interactions. With DSPM, you can:
 
 - Discover which AI tools are being used
-- Identify how sensitive content is accessed or referenced by AI tools
-- Assess and reduce exposure risks in commonly used data sources
+- Identify when sensitive content is accessed or referenced by AI tools
+- Assess and reduce exposure risks across commonly used data sources
 
-Instead of requiring new infrastructure, DSPM for AI builds on existing Microsoft Purview tools like data classification, sensitivity labels, and data loss prevention (DLP). This approach allows organizations to apply consistent protections across AI interactions without needing to deploy new security infrastructure.
-
-:::image type="content" source="../media/purview-ai-shield.svg" alt-text="Illustration of DSPM for AI shield showing environment coverage, sensitivity labels, DLP enforcement, and user risk mitigation." border = "false":::
+DSPM for AI uses existing Microsoft Purview features such as data classification, sensitivity labels, and data loss prevention (DLP). This means organizations can apply familiar protections to AI scenarios in a consistent way across their environments.
 
 ## AI tool categories in Microsoft Purview
 
-To apply the appropriate protections, Microsoft Purview classifies AI tools into three main categories. Understanding these categories helps determine which policies and controls are supported.
+Imagine your legal team asks, "Could Copilot expose confidential contracts?" The answer depends on the type of AI tool being used. Microsoft Purview groups AI tools into three categories so you can see which protections apply in each case.
 
 ### Copilot experiences
 
-These are Microsoft-managed AI solutions that operate within the Microsoft 365 ecosystem. Examples include:
-
-- Microsoft 365 Copilot
-- Security Copilot
-- Copilot Studio
-- Copilot in Microsoft Fabric
-
-Because these tools are integrated with Microsoft 365, they can honor sensitivity labels, respect encryption policies, and be included in audit and compliance reporting.
+If your users primarily work in Microsoft 365 apps, **Copilot experiences** such as Microsoft 365 Copilot, Security Copilot, or Copilot in Fabric provide the strongest built-in protections. Because these tools run inside Microsoft 365, they automatically respect sensitivity labels, encryption policies, and audit logging. For example, if a file is encrypted with a _Highly Confidential_ label, Copilot won't be able to surface that content in a generated response unless the user has permission to the file.
 
 ### Enterprise AI apps
 
-These apps are built or managed by the organization and typically support identity integration using Microsoft Entra ID. Examples include:
+If your organization is building or adopting custom AI apps, like ChatGPT Enterprise or solutions created with Azure OpenAI, you'll need **enterprise AI apps** integrated with Microsoft Entra. These apps usually connect with your identity system, which allows you to:
 
-- ChatGPT Enterprise
-- Custom apps registered in Microsoft Entra
-- AI solutions developed using Azure OpenAI services
+- Enforce authentication
+- Manage scoped access
+- Apply Microsoft Purview protections through data locations such as SharePoint, OneDrive, and Exchange
+- Extend protections through endpoint and browser DLP where relevant
 
-Enterprise AI apps offer more control than browser-based tools, including options for scoped access, authentication, and monitoring through Microsoft Entra integration.
+This category provides flexibility for custom development while still maintaining enterprise-grade security.
 
 ### Other AI apps
 
-These tools are accessed outside of the Microsoft 365 environment and typically don't offer identity integration or built-in security controls. Common examples include:
+If employees use unmanaged, browser-based tools such as the public version of ChatGPT or Google Gemini, protections work differently. These **other AI apps** don't integrate with your identity system or security policies. In these cases, Purview relies on endpoint and browser controls, such as:
 
-- ChatGPT (consumer version)
-- Google Gemini
-- Other web-based generative AI apps
+- Blocking sensitive data from being pasted into a generative AI website
+- Warning the user before data is submitted
+- Requiring justification if someone attempts to share restricted content
 
-Because browser-based tools often lack built-in governance, Microsoft Purview relies on controls like endpoint DLP and browser-specific monitoring to apply protections.
+For example, endpoint DLP can step in when a user tries to paste customer data into a public chatbot.
+
+Framing AI tools in categories helps you identify which protections apply natively and where stronger safeguards are required.
 
 ## Applying existing controls to secure AI interactions
 
-Microsoft Purview doesn’t require organizations to start from scratch. Instead, it extends familiar security controls to address AI-specific scenarios. These include:
+AI introduces new ways for sensitive data to be shared, but the protections needed aren't new. Microsoft Purview extends the same controls already in place for files, email, and endpoints so they also apply to AI interactions.
 
-- **Sensitivity labels**: Labels applied to content can restrict how AI tools access or summarize data. For example, content marked as "Highly Confidential" with encryption and restricted extract rights can prevent Copilot from including that content in responses.
+Consider a scenario where a user pastes customer data into a Copilot prompt. Purview protections respond in several ways:
 
-- **Data loss prevention (DLP)**: DLP policies can be configured to detect when sensitive data is being input into AI tools or copied to unsecured locations. These policies apply across locations, including Exchange, SharePoint, endpoints, and browser sessions.
+- **Sensitivity labels**: If the source document is labeled and encrypted, Copilot honors those permissions. If the prompting user isn't authorized, the content won't be included. Labels keep protections with the data.
+- **Data loss prevention (DLP)**: Even if the file isn't labeled, DLP can detect sensitive info as it's typed or pasted into the prompt and block, warn, or allow with justification. You can extend the same policies you use for Exchange or SharePoint to Copilot prompts and browser sessions.
+- **Insider risk indicators and policies**: Insider Risk Management can identify repeated risky behavior, and Adaptive Protection can automatically apply stricter label or DLP policies until the user's risk level decreases.
 
-- **Indicators and policies**: DSPM for AI works with Insider Risk Management and Adaptive Protection to flag potentially risky AI behaviors, such as excessive prompt activity or repeated access to confidential documents.
+**Rule of thumb:** Use labels to enforce access, DLP to control data in motion, and Insider Risk with Adaptive Protection to address risky behavior patterns over time.
 
-This integrated model allows organizations to extend their existing data protection strategy to AI interactions without creating separate policy silos.
+By applying these existing controls, organizations can extend their current data protection strategy to AI interactions. Instead of building a separate set of AI policies, they can ensure consistent safeguards across files, email, endpoints, and now AI tools.

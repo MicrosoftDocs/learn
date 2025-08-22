@@ -2,44 +2,38 @@ Once sensitive content and AI-related risks have been identified, the next step 
 
 ## Enforce access boundaries with sensitivity labels
 
-**Sensitivity labels** help enforce access controls during AI interactions by defining how content can be used. Labels can include encryption, content marking, and usage restrictions. These protections carry over when data is accessed or processed by AI tools.
+**Sensitivity labels** define how content can be used, and those rules carry into AI interactions. Think of labels as access boundaries that stay with the data no matter where it goes.
 
-For example, Microsoft 365 Copilot respects label settings in these ways:
+For example, in Microsoft 365 Copilot:
 
-- If content is labeled with encryption that restricts access, Copilot can't include that content in its responses unless the user running the prompt has permission to read the file.
-- If **auto-labeling** is enabled, sensitive content can be automatically labeled before it's accessed by AI tools, helping enforce protection even without user involvement.
-- Labels that restrict copying, extracting, or printing can prevent AI-generated output from including protected content.
+- A document labeled with encryption is protected. If a user doesn't have permission to read it, Copilot won't include that content in a response.
+- Auto-labeling can apply protections to sensitive files before a user even tries to reference them in a prompt, closing gaps where someone forgets to label a file.
+- Labels that restrict copying or extraction can prevent or reduce Copilot responses that expose that information, depending on label configuration.
 
-These protections extend to Copilot in Microsoft Word, Excel, PowerPoint, Outlook, and Teams, and other AI-enabled Microsoft 365 apps that support sensitivity label enforcement.
+Because these protections apply across Word, Excel, Outlook, Teams, and other Microsoft 365 apps, the same access rules your organization already relies on extend into Copilot interactions.
 
 ## Use DLP policies to block or audit AI activity
 
-**Microsoft Purview DLP policies** help control how sensitive data is shared during AI interactions, especially when content is copied into or out of AI-enabled environments.
+Data loss prevention (DLP) policies act as guardrails for how sensitive data moves during AI interactions. Consider a scenario where a user pastes personal customer data into a Copilot prompt. Depending on the rules in place, DLP could:
 
-DLP policies can be configured to:
+- Block the prompt from being submitted
+- Warn the user or ask for justification before continuing
+- Audit the activity for later review
 
-- **Block or audit prompts** that include sensitive information
-- **Detect pasting or typing** of protected content into AI chat windows
-- **Monitor file uploads** into browser-based AI tools, such as ChatGPT or Gemini
+When Copilot is available as a DLP policy location in your tenant, you can apply these controls directly to prompts. The same policies already protecting email and SharePoint now apply to AI activity as well.
 
-Microsoft 365 Copilot (preview) is now available as a **DLP policy location**, which lets you apply DLP rules directly to Copilot prompts. You can configure policies to block, audit, or notify users when Copilot activity matches a sensitive information type or label.
-
-The diagram illustrates how DLP evaluates Microsoft 365 Copilot prompts and enforces policy actions.
-
-:::image type="content" source="../media/copilot-data-loss-prevention-flow.svg" alt-text="Diagram showing the flow of a Microsoft 365 Copilot prompt through DLP evaluation: the user submits a prompt, sensitivity labels are applied, DLP evaluates the content, and a policy action allows, blocks, or audits the activity." border ="false":::
-
-Browser-based interactions can be governed using **endpoint DLP** and **Microsoft Edge for Business**, which help detect when users paste or upload protected content into unmanaged AI services.
+Browser-based AI tools require a different approach. Endpoint DLP and Microsoft Edge for Business can detect when a user tries to paste or upload sensitive content into an unmanaged AI service like ChatGPT or Gemini, helping to close gaps outside of Microsoft 365.
 
 ## Understand which protections apply to each AI tool
 
-Different AI tools support different protection methods. Microsoft Purview applies controls based on the type of tool:
+Not every AI tool supports the same safeguards. The protections available depend on how the tool connects with your environment. If the tool is unmanaged or browser-based, endpoint and browser DLP are your primary protections.
 
 | AI tool type | Protections supported |
 |-----|-----|
-| **Microsoft Copilot** | Sensitivity labels, DLP, Audit, Insider Risk Management |
-| **Copilot Studio / Fabric** | Sensitivity labels, DLP, custom policy logic, and Purview SDK support for Dataverse-based agents |
-| **Enterprise AI apps** | DLP and access controls when integrated with Microsoft Entra ID |
-| **Browser-based tools** | Endpoint DLP, browser control policies, file transfer restrictions |
-| **Azure AI Foundry / other developer AI tools** | DLP and labeling via Purview integration and SDK; visibility in DSPM for AI for monitoring agent activity |
+| **Microsoft Copilot**| Sensitivity labels, DLP, Audit, Insider Risk Management |
+| **Copilot Studio / Fabric** | Sensitivity labels, DLP, custom policy logic, and Purview integration for Dataverse agents |
+| **Enterprise AI apps** | DLP through endpoints, Microsoft Edge, and Microsoft 365 data locations, with access controls enforced by Microsoft Entra ID |
+| **Browser-based tools** | Endpoint DLP, browser control policies, file transfer restrictions|
+| **Azure AI Foundry / developer AI tools** | DLP and labeling via Purview integration and SDK, visibility in Data Security Posture Management for AI |
 
-Understanding which protections apply helps ensure sensitive data remains secure, regardless of how users interact with AI tools.
+This mapping helps you decide which tools can be governed with built-in protections and which require additional layers, such as endpoint or browser controls.
