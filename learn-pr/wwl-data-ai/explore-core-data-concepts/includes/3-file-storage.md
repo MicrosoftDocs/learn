@@ -1,4 +1,4 @@
-> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2331992]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=dfed27b3-9bb6-4e4d-be37-1135536b2c48]
 
 The ability to store data in files is a core element of any computing system. Files can be stored in local file systems on the hard disk of your personal computer, and on removable media such as USB drives; but in most organizations, important data files are stored centrally in some kind of shared file storage system. Increasingly, that central storage location is hosted in the cloud, enabling cost-effective, secure, and reliable storage for large volumes of data.
 
