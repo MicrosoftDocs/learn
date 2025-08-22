@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "Team Foundation Server."
       isCorrect: false
-      explanation: "Incorrect. Azure Data Factory does not integrate with Team Foundation Server."
+      explanation: "Incorrect. Azure Data Factory doesn't integrate with Team Foundation Server."
     - content: "Source Safe."
       isCorrect: false
-      explanation: "Incorrect. Source Safe does not integrate with Team Foundation Server."
+      explanation: "Incorrect. Source Safe doesn't integrate with Team Foundation Server."
     - content: "Git repositories."
       isCorrect: true
       explanation: "Correct. Azure Data Factory allows you to configure a Git repository with either Azure Repos or GitHub, and is a version control system that allows for easier change tracking and collaboration."
@@ -29,13 +29,13 @@ quiz:
     choices:
     - content: "Repo."
       isCorrect: false
-      explanation: "Incorrect. Repo is the shorthand term for a repository, which is a location in which your source code for Azure Data Factory solutions are stored."
+      explanation: "Incorrect. Repo is the shorthand term for a repository, which is a location in which your source code for Azure Data Factory solutions is stored."
     - content: "Pull request."
       isCorrect: true
-      explanation: "Correct. After a developer is satisfied with their changes, they create a pull request from their feature branch to the master or collaboration branch to get their changes reviewed by peers."
+      explanation: "Correct. After a developer is satisfied with their changes, they create a pull request from their feature branch to the main or collaboration branch to get their changes reviewed by peers."
     - content: "Commit."
       isCorrect: false
-      explanation: "Incorrect. A commit is an aspect of working with a Git repository that will commit the work that you do to the repository that you are working on."
+      explanation: "Incorrect. A commit is an aspect of working with a Git repository that will commit the work that you do to the repository that you're working on."
   - content: "Which feature in alerts can be used to determine how an alert is fired?"
     choices:
     - content: "Add rule."
@@ -46,4 +46,4 @@ quiz:
       explanation: "Incorrect. Severity is a mandatory field in the Alert window that enables you to assign the severity level of the alert being defined."
     - content: "Add criteria."
       isCorrect: true
-      explanation: "Correct. The add criteria feature enables you to determine how an alert is fired"
+      explanation: "Correct. The add criteria feature enables you to determine how an alert is fired"

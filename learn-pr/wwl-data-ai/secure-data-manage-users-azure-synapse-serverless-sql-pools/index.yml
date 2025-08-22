@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools
 metadata:
-  title: Secure data and manage users in Azure Synapse serverless SQL pools
+  title: Secure Data and Manage Users in Azure Synapse Serverless SQL Pools
   description: "Secure data and manage users in Azure Synapse serverless SQL pools"
-  ms.date: 06/14/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module
   ms.service: azure-synapse-analytics
   ms.subservice: sql
@@ -37,4 +37,4 @@ units:
 - learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.knowledge-check
 - learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.summary
 badge:
-  uid: learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.badge
+  uid: learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.badge

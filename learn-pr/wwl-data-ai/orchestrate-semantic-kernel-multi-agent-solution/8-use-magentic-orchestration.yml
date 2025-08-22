@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-sk-multi-agent-solution.use-magentic-orchestration
+title: Use Magentic orchestration
+metadata:
+  title: Use Magentic Orchestration
+  description: Understand how and when to use the Magentic orchestration pattern.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 08/14/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-use-magentic-orchestration.md)]
