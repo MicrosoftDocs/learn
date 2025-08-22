@@ -38,8 +38,6 @@ Surface products are designed with principles of the circular economy, incorpora
 - Packaging and energy efficiency are improved compared to Surface Pro 9.
 - Devices are designed for serviceability, featuring replaceable components and service options intended to extend product lifespan and support return on investment.
 
-![A photograph of two executives in an office using a Surface Laptop 13-inch device. A Surface Pro 12-inch device in laptop mode is on a desk, connected to an external monitor. A Surface Arc Mouse is next to the device.](../media/environmental.png)
-
 ## Designed for everyone
 
 Surface Pro, when paired with the Surface Pro Flex Keyboard, offers inclusive design features that support a wide range of user needs:
