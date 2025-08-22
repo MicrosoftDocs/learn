@@ -12,10 +12,11 @@ Imagine you're trying to address common DevOps challenges such as monitoring app
 
 This modular, scalable, and intelligent multi-agent system streamlines the DevOps process. The agents collaborate to reduce manual intervention and improve efficiency while ensuring timely communication and resolution of issues.
 
-In this module, you'll explore how to use the powerful capabilities of Semantic Kernel to design and orchestrate intelligent agents that work collaboratively to solve complex problems. You'll also learn how to use the Semantic Kernel Agents Framework to develop your own AI agents that can collaborate for a multi-agent solution.
+In this module, you'll explore how to use the powerful capabilities of Semantic Kernel to design and orchestrate intelligent agents that work collaboratively to solve complex problems. You'll also learn about the different types of orchestration patterns available, and use the Semantic Kernel Agents Framework to develop your own AI agents that can collaborate for a multi-agent solution.
 
 After completing this module, you'll be able to:
 
 - Build AI agents using the Semantic Kernel SDK
 - Use tools and plugins with your AI agents
+- Understand different types of orchestration patterns
 - Develop multi-agent solutions
