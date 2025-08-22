@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-git-branches-workflows.implement-branch-merging-restrictions
-title: Implement branch merging restrictions
+title: Implement Branch Merging Restrictions
 metadata:
-  title: Implement branch merging restrictions
-  description: "Implement branch merging restrictions"
-  ms.date: 05/24/2024
-  author: wwlpublish
+  title: Implement Branch Merging Restrictions
+  description: "Implement Branch Merging Restrictions"
+  ms.date: 08/18/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/7-implement-branch-merging-restrictions.md)]
+  [!include[](includes/7-implement-branch-merging-restrictions.md)]

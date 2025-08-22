@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-git-branches-workflows.explore-github-flow
-title: Explore GitHub flow
+title: Explore GitHub Flow
 metadata:
-  title: Explore GitHub flow
-  description: "Explore GitHub flow"
-  ms.date: 05/24/2024
-  author: wwlpublish
+  title: Explore GitHub Flow
+  description: "Explore GitHub Flow"
+  ms.date: 08/18/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-explore-github-flow.md)]
+  [!include[](includes/5-explore-github-flow.md)]
