@@ -110,6 +110,46 @@ achievements:
   title: Make your virtual machines highly available
   summary: Make your virtual machines highly available
   iconUrl: /training/achievements/make-your-virtual-machines-highly-available.svg
+- uid: learn.cloud-adoption-framework-strategy.badge
+  type: badge
+  title: Develop a cloud adoption strategy by using the Cloud Adoption Framework
+  summary: The Cloud Adoption Framework for Azure consists of eight methodologies. This module focuses on the [Strategy methodology](/azure/cloud-adoption-framework/strategy/). It provides guidance about how to assess your existing strategy and identify ways to improve it before you adopt and integrate cloud technologies. The next methodology is the [Plan methodology](/azure/cloud-adoption-framework/plan/), where you create an actionable plan to implement your cloud adoption strategy.
+  iconUrl: /training/achievements/cloud-adoption-framework-strategy.svg
+- uid: learn.azure.cloud-adoption-framework-ready.badge
+  type: badge
+  title: Choose the best Azure landing zone to support your requirements for cloud operations
+  summary: Azure landing zones can accelerate configuration of your cloud environment. This module will help you choose and get started with the best landing zone option for your needs.
+  iconUrl: /training/achievements/cloud-adoption-framework-ready.svg
+- uid: learn.cloud-adoption-framework-migrate.badge
+  type: badge
+  title: Use the Cloud Adoption Framework Migrate methodology to migrate your workload to the cloud
+  summary: Learn how to use the four stages of the Cloud Adoption Framework Migrate methodology to migrate your workload to the cloud.
+  iconUrl: /training/achievements/cloud-adoption-framework-migrate.svg
+- uid: learn.azure.cloud-adoption-framework-govern.badge
+  type: badge
+  title: Address tangible risks with the Govern methodology of the Cloud Adoption Framework for Azure
+  summary: Without proper governance, it can be difficult and laborious to maintain consistent control across a portfolio of workloads. Fortunately, cloud-native tools like Azure Policy provide convenient means to establish those controls. The Govern methodology helps you evaluate and establish corporate policies and disciplines to mitigate tangible risks.
+  iconUrl: /training/achievements/address-risks-caf-govern.svg
+- uid: learn.cloud-adoption-framework-manage.badge
+  type: badge
+  title: Ensure stable operations and optimization across all supported workloads deployed to the cloud
+  summary: As workloads are deployed to the cloud, operations are critical to success. In this learn module, you learn how to deploy an operations baseline to manage workloads in your environment. The module also covers how to enhance the baseline, both for workloads and for platforms.
+  iconUrl: /training/achievements/cloud-adoption-framework-manage.svg
+- uid: learn.innovate-applications-azure-cloud-technologies.badge
+  type: badge
+  title: Innovate applications by using Azure cloud technologies
+  summary: Innovation is a complex subject that encompasses many disciplines. The agility of the public cloud allows to quicker innovation cycles and quicker hypothesis verification. Learn how to use Azure cloud technologies to sustain your organization's innovation requirements.
+  iconUrl: /training/achievements/innovate-applications-azure-cloud-technologies.svg
+- uid: learn.azure.cloud-adoption-framework-security.badge
+  type: badge
+  title: Strengthen cloud security by using the Cloud Adoption Framework
+  summary: Organizations that move to the cloud often find that they need to modernize security practices and tooling to keep up with continuous changes in cloud platforms, business requirements, and security threats. The Cloud Adoption Framework for Azure consists of eight methodologies. This module focuses on the Secure methodology, which provides guidance for the security modernization journey.
+  iconUrl: /training/achievements/cloud-adoption-framework-security.svg
+- uid: learn.cloud-adoption-framework.trophy
+  type: trophy
+  title: Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure
+  summary: Do you need a clear path forward for your cloud journey? This learning path includes best practice guidance to help you create a cloud strategy, define a cloud adoption plan, prepare your cloud environment with proper governance, and implement cloud operations in alignment with your organizational needs. Cloud architects and IT professionals will learn and engage with the proven best practices, tools, and documentation in the Cloud Adoption Framework for Azure to build the technical knowledge needed to help your organization successfully adopt the cloud and meet business goals.
+  iconUrl: /training/achievements/cloud-adoption-framework.svg
 - uid: learn.scale-and-size-virtual-machines.badge
   type: badge
   title: Scale and size Virtual Machines in Azure
@@ -6350,3 +6390,43 @@ achievements:
   title: Introduction to migrating ASP.NET apps to Azure
   summary: Evaluate the process of migrating an ASP.NET application from on-premises to Azure, along with a supporting Azure SQL database. Identify the benefits and challenges of the migration process.
   iconUrl: /training/achievements/intro-to-migrating-aspnet-apps-azure.svg
+- uid: learn.azure.cna-set-up-apps-use-scale.badge
+  type: badge
+  title: Authenticate and authorize multi-tenant apps using Microsoft Entra ID
+  summary: Microsoft Entra ID enables you to improve the functionality of cloud-native apps in multitenant scenarios.
+  iconUrl: /training/achievements/cna-set-up-azure-ad-use-scale.svg
+- uid: implement-data-loss-prevention.trophy
+  type: trophy
+  title: 'SC-400: Implement Data Loss Prevention'
+  summary: 'In this learning plan we discuss how to implement data loss prevention techniques to secure your Microsoft 365 data. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.'
+  iconUrl: /training/achievements/implement-data-loss-prevention.svg
+- uid: implement-information-governance.trophy
+  type: trophy
+  title: 'SC-400: Implement Data Lifecycle and Records Management'
+  summary: 'Learn how to plan and implement data lifecycle and records management strategies for an organization. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.'
+  iconUrl: /training/achievements/implement-information-governance.svg
+- uid: learn.wwl.manage-data-loss-prevention-polices.badge
+  type: badge
+  title: Manage data loss prevention policies and reports in Microsoft 365
+  summary: Learn how to manage data loss prevention policies and mitigate data loss prevention policy violations.
+  iconUrl: /learn/achievements/manage-data-loss-prevention-polices.svg
+- uid: learn.wwl.manage-data-retention-microsoft-365.badge
+  type: badge
+  title: Manage data retention and deletion in Microsoft 365 workloads
+  summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
+  iconUrl: /training/achievements/manage-data-retention-in-microsoft-365.svg
+- uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.badge
+  type: badge
+  title: Monitor, diagnose, and troubleshoot your Azure Storage
+  summary: Discover the tools available to detect and correct problems with your Azure Storage, so you can enable your cloud storage infrastructure to operate at peak performance.
+  iconUrl: /training/achievements/monitor-diagnose-and-troubleshoot-azure-storage.svg
+- uid: learn.azure.child-extension-bicep-templates.badge
+  type: badge
+  title: Deploy child and extension resources by using Bicep
+  summary: Deploy various Azure resources in your Bicep code. Define and use child and extension resources. Work with resources that you created outside of a Bicep template or module.
+  iconUrl: /training/achievements/bicep/child-extension-bicep-templates.svg
+- uid: learn.bicep-collaborate.trophy
+  type: trophy
+  title: Intermediate Bicep
+  summary: Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your deployments more consistent and repeatable.
+  iconUrl: /training/achievements/bicep/intermediate-bicep.svg

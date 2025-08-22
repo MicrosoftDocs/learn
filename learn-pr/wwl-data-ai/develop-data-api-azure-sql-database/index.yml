@@ -3,7 +3,7 @@ uid: learn-wwl.develop-data-api-azure-sql-database
 metadata:
   title: Develop a data API for Azure SQL Database
   description: "Learn how to create modern REST data API for Azure SQL Database. We'll delve into Data API Builder, a powerful cross-platform that simplifies the creation of endpoints for your Azure SQL Database. With features like automatic query generation, granular security controls, and seamless integration with other Azure services, the Data API Builder can effortlessly transform your database into a versatile API."
-  ms.date: 10/10/2024
+  ms.date: 08/06/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based
@@ -44,4 +44,4 @@ badge:
   uid: learn-wwl.develop-data-api-azure-sql-database.badge
 
 
-
+

@@ -4,10 +4,10 @@ title: Develop a data API using Azure Static Web Apps
 metadata:
   title: Develop a data API using Azure Static Web Apps
   description: "Learn how to develop a data API using Azure Static Web Apps."
-  ms.date: 10/10/2024
+  ms.date: 08/06/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-develop-a-data-api-using-static-web-app.md)]
+  [!include[](includes/3-develop-a-data-api-using-static-web-app.md)]
