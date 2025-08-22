@@ -45,12 +45,9 @@ These are separate from the **Microsoft Copilot experiences** location, which co
 
 ## What happens when retention applies
 
-Once captured, messages from AI apps are stored in hidden folders in the user's Exchange mailbox. When the configured retention period expires:
+Once the configured retention period expires, items are processed through the Exchange compliance pipeline. They remain discoverable by eDiscovery if any holds are in place. When no holds apply, the service permanently deletes the items.
 
-- Messages are moved to the **SubstrateHolds** folder, where they remain discoverable to eDiscovery tools.
-- After a minimum of one day, and if no other hold applies, messages are permanently deleted by the Exchange service.
-
-These processes help ensure that AI-generated content is handled according to your retention policies, even when it's not visible in the user interface of the AI tool.
+This process helps ensure that AI-generated content is handled according to your retention policies, even when it's not visible in the user interface of the AI tool.
 
 > [!IMPORTANT]
 > If a user is subject to another retention policy, an eDiscovery hold, or a litigation hold, permanent deletion might be delayed.

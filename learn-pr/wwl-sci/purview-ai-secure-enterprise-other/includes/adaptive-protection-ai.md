@@ -44,6 +44,9 @@ Contoso chooses to assign risk levels based on user activity, allowing them to f
 
 Contoso uses the **Fortify your data security** recommendation in **DSPM for AI** to simplify deployment. This recommendation creates a prebuilt DLP policy named **DSPM for AI - Block sensitive info from AI sites** designed to work with Adaptive Protection.
 
+> [!NOTE]  
+> The exact DSPM for AI policy name can vary by tenant. Look for the DSPM for AI one-click policy that blocks sensitive information from AI sites.  
+
 **The policy**:
 
 - Targets **elevated risk users** identified through insider risk management

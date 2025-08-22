@@ -23,7 +23,7 @@ Before you create the policy, complete these configuration steps:
 
 - Turn on auditing in Microsoft 365
 - Assign the required permissions in Microsoft Purview
-- Enable the indicators needed in Insider Risk Management
+- Enable the indicators needed in Insider Risk Management. The Risky AI usage template depends on the relevant indicators being turned on, either before or during policy creation.
 
 For broader detection coverage, consider pairing the policy with:
 
@@ -71,4 +71,4 @@ Use these steps to configure the policy manually:
 1. Choose default or custom thresholds.
 1. Review your settings and select **Submit** to activate the policy.
 
-Risk signals from this policy can feed into Adaptive Protection, which uses user risk levels to adjust DLP enforcement dynamically.
+Risk signals from this policy can feed into Adaptive Protection, which uses user risk levels to adjust data loss prevention enforcement dynamically.

@@ -42,11 +42,13 @@ Without oversight, these risks can lead to data leakage, compliance violations, 
 
 ## Use Microsoft Purview to assess and reduce risk
 
-Microsoft Purview includes several capabilities to help detect, assess, and mitigate the risks introduced by external AI tools:
+When employees use public AI tools, even small actions can introduce outsized risk. A quick copy-paste of customer data into a chatbot might leave sensitive information outside your organization's control, and generated responses can just as easily expose internal details. These situations highlight why security teams need both visibility and safeguards.
 
-- **Data Security Posture Management (DSPM) for AI**: Identifies AI tools in use, detects how sensitive data is accessed or shared, and recommends protection strategies.
-- **Endpoint Data Loss Prevention (DLP)**: Blocks users from pasting or uploading sensitive content into browser-based AI tools such as ChatGPT or Gemini.
-- **Communication Compliance**: Flags inappropriate prompts and responses in supported enterprise and non-Microsoft AI apps.
-- **Insider Risk Management**: Detects risky AI behavior, including visits to unsanctioned tools or the use of sensitive data in high-risk prompts.
-- **Retention**: Applies retention and deletion policies to user prompts and AI-generated responses in supported enterprise and non-Microsoft apps. Content is copied to hidden folders in Exchange mailboxes for compliance purposes and remains available to eDiscovery tools until the retention period ends.
-- **Compliance Manager**: Offers templates to assess regulatory and organizational requirements for using AI tools. These assessments help track control implementation and audit readiness.
+Once you've identified which AI tools are in use, you can use Microsoft Purview capabilities to address the risks they create:
+
+- **Data Security Posture Management (DSPM) for AI** highlights which tools are active and shows when sensitive data is being used, helping you spot prompt exposure before it becomes a problem.
+- **Endpoint Data Loss Prevention (DLP)** reduces prompt exposure by blocking or restricting users from pasting or uploading sensitive information into browser-based AI tools.
+- **Communication Compliance** detects when prompts or responses include inappropriate or confidential content, so you can respond before it leads to a violation.
+- **Insider Risk Management** assigns risk levels when users engage in risky AI behavior, such as visiting unsanctioned tools or entering sensitive information into high-risk prompts.
+- **Retention** ensures that captured AI interactions are kept or deleted according to compliance requirements, so sensitive data doesn't remain longer than necessary.
+- **Compliance Manager** helps you evaluate whether your AI usage aligns with regulatory expectations and internal policies, closing gaps that could lead to compliance issues.

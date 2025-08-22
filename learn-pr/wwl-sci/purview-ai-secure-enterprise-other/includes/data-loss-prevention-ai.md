@@ -1,4 +1,4 @@
-Microsoft Purview Data Loss Prevention (DLP) plays a key role in protecting sensitive data when users interact with generative AI tools. As these tools become more common in the workplace, there's a growing risk that users might paste or upload sensitive content into AI chat interfaces or web apps that store or process the data. DLP addresses this challenge by monitoring and restricting browser and endpoint activity that could expose sensitive information.
+Microsoft Purview Data Loss Prevention (DLP) plays a key role in protecting sensitive data when users interact with generative AI tools. As these tools become more common in the workplace, there's a growing risk that users might paste or upload sensitive content into AI chat interfaces or web apps that store or process the data. DLP addresses this challenge by detecting and restricting browser and endpoint activity that could expose sensitive information.
 
 ## Understand where DLP protections apply
 
@@ -48,13 +48,16 @@ Use these restrictions to:
 
 Policies can be enforced across Microsoft Edge, Google Chrome (with extension), and Mozilla Firefox (with extension).
 
+> [!TIP]  
+> Outcomes for **Paste to supported browsers** and **Upload to a restricted cloud service domain** can differ depending on browser and extension configuration. Test both **block** and **block with override** to confirm the user experience before rolling out broadly.  
+
 > [!NOTE]
 > These protections only apply to devices that are onboarded to Microsoft Purview and meet the minimum version and configuration requirements.
 
-## Configure browser DLP for managed Microsoft Edge devices
+## Configure browser DLP for managed Microsoft Edge devices (preview)
 
-> [!NOTE]
-> Browser DLP in Microsoft Edge for Business is currently in public preview.
+> [!IMPORTANT]  
+> It requires a configuration profile deployed through the Microsoft Edge Management Service.  
 
 Browser DLP allows you to block sharing of sensitive information from Microsoft Edge to unmanaged AI apps on Intune-managed devices. This configuration includes both a Purview DLP policy and a Microsoft Edge browser policy deployed through the Microsoft Edge Management Service.
 

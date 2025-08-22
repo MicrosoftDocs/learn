@@ -4,12 +4,12 @@ title: Assess AI usage for security and compliance
 metadata:
   title: AAssess AI Usage for Security and Compliance
   description: "Assess AI usage for security and compliance."
-  ms.date: 04/10/2025
+  ms.date: 08/22/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/assess-ai-tool-usage.md)]

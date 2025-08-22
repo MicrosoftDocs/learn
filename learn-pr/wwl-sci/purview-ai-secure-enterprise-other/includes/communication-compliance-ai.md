@@ -53,7 +53,7 @@ AI policy matches appear in the **Pending** tab in Communication Compliance. Eac
 - The matched text that triggered the policy
 - An icon and subject tag identifying the interaction as AI-related
 
-Prompts and responses are shown separately, helping reviewers pinpoint the exact interaction that matched the policy. Most matches are triggered by content that includes sensitive information, offensive language, or terms related to confidential topics, policy violations, or unethical behavior. Reviewers can take standard actions such as tagging, resolving, escalating, downloading, or exporting the item.
+Prompts and responses are shown separately, which makes it easier for reviewers to identify exactly what triggered the match and decide on the right action. Most matches are triggered by content that includes sensitive information, offensive language, or terms related to confidential topics, policy violations, or unethical behavior. Reviewers can take standard actions such as tagging, resolving, escalating, downloading, or exporting the item.
 
 > [!TIP]
 > DSPM for AI can recommend Communication Compliance policies when it detects risk signals in Microsoft 365 Copilot interactions. To analyze interactions with enterprise or browser-based AI apps, you'll need to create or customize a policy manually.

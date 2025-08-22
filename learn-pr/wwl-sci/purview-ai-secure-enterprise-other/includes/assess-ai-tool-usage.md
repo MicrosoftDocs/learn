@@ -18,7 +18,7 @@ You can use DSPM for AI to:
 - View which users and data are most involved in AI interactions in Activity Explorer
 - Review suggested protections based on how data is used
 
-For non-Microsoft tools to appear in DSPM, they typically need to be registered through Microsoft Entra ID or integrated using a supported connector.
+Enterprise AI apps appear in DSPM when they're registered through Microsoft Entra ID or connected with a supported connector. Other AI apps, such as public browser-based tools, show up through browser and endpoint signals captured by Microsoft Purview.
 
 ## Assess compliance readiness with Compliance Manager
 
@@ -56,12 +56,12 @@ This creates an assessment where you can track Microsoft-managed and customer-ma
 
 If you're using **Data Security Posture Management (DSPM) for AI**, the **Recommendations** section can guide you through steps that align with regulatory requirements for AI usage.
 
-One recommendation, **Get guided assistance to AI regulations**, maps to frameworks such as the NIST AI Risk Management Framework (RMF). It outlines a set of actions that support compliance and reduce risk across supported generative AI tools. These include:
+One recommendation, **Get guided assistance to AI regulations**, maps to frameworks such as the NIST AI Risk Management Framework (RMF). When you use DSPM for AI as part of a compliance assessment, it points you to actions in other Microsoft Purview solutions. These steps let you connect AI activity to your organization’s security and compliance goals:
 
-- **Reviewing audit logs** to identify potentially inappropriate or sensitive interactions with AI apps
-- **Monitoring activity in external AI tools**, such as browser-based or connected apps, and turning on policies to flag sensitive content
-- **Creating Communication Compliance policies** to detect risky prompts or responses across generative AI tools
-- **Using DLP policies** to restrict sensitive data from being shared in AI-enabled environments, such as Teams chat or non-Microsoft tools
-- **Applying retention policies** to define how long AI interaction content is preserved and when it's deleted
+- **Review audit logs** to trace sensitive or inappropriate interactions with AI apps.
+- **Detect activity in external AI tools** through browser or endpoint signals, and configure policies to flag risky content.
+- **Create Communication Compliance policies** to surface prompts or responses that violate policy.
+- **Apply DLP policies** to stop sensitive data from being pasted or uploaded into AI-enabled environments.
+- **Use retention policies** so prompts and responses are kept or deleted according to compliance requirements.
 
 Each action links directly to the relevant Microsoft Purview solution. You can configure these steps individually or use them as part of an AI regulation assessment in **Compliance Manager**.
