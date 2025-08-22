@@ -38,7 +38,7 @@ quiz:
       explanation: "Incorrect. Version Control just keeps track of multiple versions of data but doesn't allow you to restore to previous versions of data"
   - content: "Which Delta Lake operation can be used to improve read performance by organizing data into fewer, larger files?"
     choices:
-    - content: "VACCUM"
+    - content: "VACUUM"
       isCorrect: false
       explanation: "Incorrect. VACUUM removes all files from the table directory that aren't managed by Delta, and data files that are no longer in the latest state of the transaction log for the table and are older than a retention threshold."
     - content: "OPTIMIZE"
