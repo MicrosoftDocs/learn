@@ -5,7 +5,7 @@ Watch this brief video for information on the benefits of Microsoft Defender XDR
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=2da38838-a10e-4412-bd93-a9adae672c92]
 
-From an architectural perspective, Defender XDR serves as a central component in a layered defense strategy, bridging traditionally siloed security tools and data sources. It supports proactive threat hunting, incident investigation, and coordinated response by providing a single pane of glass for security analysts. That single pane of glass is delivered through the Microsoft Defender portal, which is your interface to Microsoft Defender, a unified security operations platform. Microsoft Defender protects a wide range of assets by integrating the following services:
+From an architectural perspective, Defender XDR serves as a central component in a layered defense strategy, bridging traditionally siloed security tools and data sources. It supports proactive threat hunting, incident investigations, and coordinated responses by providing a single pane of glass for security analysts. That single pane of glass is the Microsoft Defender portal, which delivers a unified security operations platform that protects a wide range of assets by integrating the following services:
 
 - Defender XDR
   - Microsoft Defender for Identity
