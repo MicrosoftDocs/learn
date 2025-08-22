@@ -26,8 +26,6 @@ Understanding the type of AI tool helps determine what protections are available
 
 AI interactions can expose sensitive data in several ways. The diagram shows a common scenario: a user enters sensitive content in a prompt, AI accesses overshared or unprotected files, and the response exposes that data.
 
-:::image type="content" source="../media/ai-interaction-risk-examples.png" alt-text="Diagram showing how AI interactions can expose sensitive data: a user enters a sensitive prompt, AI accesses overshared content, and the AI response exposes sensitive data." lightbox="../media/ai-interaction-risk-examples.png":::
-
 AI interactions can lead to unintentional data exposure through:
 
 - Sensitive content being entered into prompts
