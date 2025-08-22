@@ -13,4 +13,4 @@ A Copilot+ PC is a high-performance computing device designed to support advance
 - The Neural Processing Unit (NPU) is a specialized chip used to run AI processes directly on hardware, with specific architecture for deep learning.
 - Trillions of Operations Per Second (TOPS) is a unit that measures the total maximum achievable throughput for an NPU.
 
-![An illustration of an NPU chip set against an illuminated gradient background.](../../media/processor.png)
+![An illustration of an NPU chip set against an illuminated gradient background.](../media/processor.png)
