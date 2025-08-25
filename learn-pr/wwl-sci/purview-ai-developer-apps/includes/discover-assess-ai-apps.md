@@ -39,7 +39,7 @@ Some recommendations in DSPM for AI specifically address apps created in develop
 - **Secure data in Azure AI apps and agents** can apply to custom AI services deployed through Azure or apps registered in Microsoft Entra.
 - **Secure interactions in Microsoft Copilot experiences** automatically captures activity from Copilot Studio agents and copilots embedded in Teams or Fabric.
 
-   :::image type="content" source="../media/posture-management-ai-enterpise-recommendation.png" alt-text="Screenshot showing confirmation of a policy created to capture enterprise AI app interactions for compliance and data management." lightbox="../media/posture-management-ai-enterpise-recommendation.png":::
+   :::image type="content" source="../media/posture-management-ai-enterprise-app-recommendation.png" alt-text="Screenshot showing confirmation of a policy created to capture enterprise AI app interactions for compliance and data management." lightbox="../media/posture-management-ai-enterprise-app-recommendation.png":::
 
 Some recommendations guide you through creating or updating a DLP policy. Others help you configure retention, apply sensitivity labels, or expand coverage using collection policies. Reviewing these recommendations allows you to take targeted actions based on how developer AI apps use sensitive or regulated content.
 
