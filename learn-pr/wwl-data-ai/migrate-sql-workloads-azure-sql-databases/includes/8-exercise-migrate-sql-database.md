@@ -8,3 +8,4 @@ In this exercise, you’ll learn how to migrate a SQL Server database to Azure S
 Launch the exercise and follow the instructions.
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-sql-migration/Instructions/Labs/03-migrate-sql-server-workloads-azure-sql-database.html?azure-portal=true)
+

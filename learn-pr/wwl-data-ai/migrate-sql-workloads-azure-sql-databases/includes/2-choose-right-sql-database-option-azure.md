@@ -90,3 +90,4 @@ We recommend waiting for 5 seconds at a minimum on your first retry. Each subseq
 > If a SELECT statement fails with a transient error for SQL Database, don't directly retry it. Instead, retry the SELECT statement in a new connection.
 
 To learn more about the connection retry principals, see [Troubleshoot transient connection errors in SQL Database and SQL Managed Instance](/azure/azure-sql/database/troubleshoot-common-connectivity-issues).
+

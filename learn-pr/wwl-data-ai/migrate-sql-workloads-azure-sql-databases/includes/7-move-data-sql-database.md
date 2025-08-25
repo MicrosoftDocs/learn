@@ -11,3 +11,4 @@ Understanding the schema and data types of the table is essential for using the 
 ## Azure Data Factory	
 
 You can use [Azure Data Factory](/azure/data-factory/quickstart-get-started) for data migration rather than entire database migration. Azure Data Factory can migrate and transform data from source SQL Server databases, and it's commonly used for business intelligence workloads (BI). 
+
