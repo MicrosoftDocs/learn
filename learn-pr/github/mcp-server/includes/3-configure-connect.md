@@ -1,6 +1,6 @@
 In this unit, you'll learn how to set up and use GitHub MCP Server in Visual Studio Code so you can bring AI-powered workflows directly into your development environment. You'll learn:
 
-- How to setup using OAuth or a Personal Access Token (PAT)
+- How to set up using OAuth or a Personal Access Token (PAT)
 
 - Optional local setup using Docker for more control
 
@@ -15,7 +15,7 @@ In this unit, you'll learn how to set up and use GitHub MCP Server in Visual Stu
 Now that you know what GitHub MCP Server can do, let's walk through how to set it up in Visual Studio Code so you can start using it immediately. This will let you integrate your preferred AI-powered workflows directly into your coding environment without complex setup. 
 
 1. In Visual Studio Code, open the Command Palette by pressing Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (Mac).
-1. Type mcp: add server and press Enter.
+1. Type MCP: add server and press Enter.
 1. From the list, select **HTTP (HTTP or Server-Sent Events)**.
 1. In the **Server URL** field, enter https://api.githubcopilot.com/mcp/, then press Enter.
 1. When prompted to enter a **Server ID**, you can press Enter to use the default or type a custom ID if you prefer.
@@ -28,7 +28,7 @@ After setup, GitHub MCP Server will be ready to use with your projects in VS Cod
 
 In order to use Personal Access Token (PAT) for advanced control, you can follow these steps:
 
-1. Create a PAT with repo and read: packages scopes in your GitHub account.
+1. Create a PAT with repo and read: packages scope in your GitHub account.
 1. You'll follow the same steps above, but cancel OAuth when prompted.
 1. In your configuration file, add:
 
@@ -58,7 +58,7 @@ In order to use Personal Access Token (PAT) for advanced control, you can follow
 
 If your enterprise uses GitHub Enterprise Server with PAT restrictions, you can only access the API scopes allowed by your organization's policy. If all endpoints are restricted, the MCP Server won't be available, check with your admin if you're unsure.
 
-For local use, the MCP Server requires Docker and authentication with a Personal Access Token (PAT). OAuth is not supported in this setup.
+For local use, the MCP Server requires Docker and authentication with a Personal Access Token (PAT). OAuth isn't supported in this setup.
 
 1. First you need to confirm that Docker is installed and running on your system.
 1. Next, generate a PAT with the necessary scopes.
@@ -99,8 +99,8 @@ For local use, the MCP Server requires Docker and authentication with a Personal
 
 If you encounter issues while using GitHub MCP Server, here are some practical checks:
 
-- Confirm that you are signed into your GitHub account within VS Code.
+- Confirm that you're signed into your GitHub account within VS Code.
 - If using a PAT, ensure it has the correct scopes and is entered correctly.
 - Double-check your configuration for any typos or missing fields.
-- If using Docker, ensure it is installed and actively running.
+- If using Docker, ensure it's installed and actively running.
 - Try restarting VS Code or the MCP Server to resolve temporary connection issues.

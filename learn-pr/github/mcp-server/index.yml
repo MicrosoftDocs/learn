@@ -14,7 +14,7 @@ summary: This module introduces GitHub MCP Server, a secure and scalable way to 
 
 abstract: |
   By the end of this module, you'll be able to:
-  - Understand what MCP and GitHub MCP Server are and why they are useful for developers.
+  - Understand what MCP and GitHub MCP Server are and why they're useful for developers.
   - Set up and configure GitHub MCP Server in Visual Studio Code for your projects.
   - Use the GitHub MCP Server with Copilot Chat to automate development tasks.
   - Identify and resolve common issues when working with GitHub MCP Server.
@@ -23,7 +23,7 @@ prerequisites: |
   Before getting started, ensure you have the following:
   - A GitHub account 
   - Visual Studio Code or another editor that supports MCP integration
-  - If you are a member of an organization or enterprise with a Copilot Business or Copilot Enterprise plan, the "MCP servers in Copilot" policy must be enabled in order to use MCP with Copilot.
+  - If you're a member of an organization or enterprise with a Copilot Business or Copilot Enterprise plan, the "MCP servers in Copilot" policy must be enabled in order to use MCP with Copilot.
   (Optional)
   - A GitHub Personal Access Token (PAT) for advanced setup and permissions control.
   - Docker installed if you plan to experiment with a local server setup for hands-on control.

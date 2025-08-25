@@ -18,7 +18,7 @@ quiz:
           isCorrect: false
         - content: Model Context Protocol
           isCorrect: true
-        - content: Multi-Cloud Provider
+        - content: Multicloud Provider
           isCorrect: false
         - content: Modular Code Process
           isCorrect: false
@@ -84,17 +84,17 @@ quiz:
           isCorrect: false
           explanation: Tokens should always be entered via secure input prompts to prevent exposure.
 
-    - content: Which troubleshooting step should you try first if MCP Server tools are not working in VS Code?
+    - content: Which troubleshooting step should you try first if MCP Server tools aren't working in VS Code?
       choices:
         - content: Reinstall Docker
           isCorrect: false
-        - content: Confirm you are signed into your GitHub account in VS Code
+        - content: Confirm you're signed into your GitHub account in VS Code
           isCorrect: true
         - content: Delete your PAT
           isCorrect: false
         - content: Remove all server configurations
           isCorrect: false
-          explanation: The most common issue is not being signed into your GitHub account in VS Code.
+          explanation: The most common issue isn't being signed into your GitHub account in VS Code.
 
     - content: What is an example of how MCP Server extends Copilot's capabilities in agent mode?
       choices:
@@ -102,7 +102,7 @@ quiz:
           isCorrect: false
         - content: Copilot can open issues, manage workflows, and execute tasks across platforms
           isCorrect: true
-        - content: Copilot cannot interact with GitHub repositories
+        - content: Copilot can't interact with GitHub repositories
           isCorrect: false
         - content: Copilot disables semantic search
           isCorrect: false

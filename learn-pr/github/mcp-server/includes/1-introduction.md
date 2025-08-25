@@ -1,14 +1,14 @@
-The GitHub MCP Server is a hosted, secure, scalable way to integrate your favorite GitHub features into your AI-assisted workflow. Built on the Model Context Protocol (MCP), introduced by Anthropic, it is compatible with all of your favorite development tools.
+The GitHub MCP Server is a hosted, secure, scalable way to integrate your favorite GitHub features into your AI-assisted workflow. Built on the Model Context Protocol (MCP), introduced by Anthropic, it's compatible with all of your favorite development tools.
 
 Its suite of tools extends GitHub Copilot and other AI tools to help you automate tasks, manage repositories, and enhance your development experience with context-aware AI assistance.
 
-GitHub MCP Server helps you get started quickly while keeping your workflow simple and focused.It is available for Visual Studio Code and will expand to other editors and platforms, helping you bring AI-powered productivity to your entire development process.
+GitHub MCP Server helps you get started quickly while keeping your workflow simple and focused. It's available for Visual Studio Code and will expand to other editors and platforms, helping you bring AI-powered productivity to your entire development process.
 
 ## Learning objectives
 
 By the end of this module, you'll be able to:
 
-- Understand what MCP and GitHub MCP Server are and why they are useful for developers.
+- Understand what MCP and GitHub MCP Server are and why they're useful for developers.
 
 - Set up and configure GitHub MCP Server in Visual Studio Code for your projects.
 
@@ -24,7 +24,7 @@ Before getting started, ensure you have the following:
 
 - Visual Studio Code or another editor that supports MCP integration
 
-- If you are a member of an organization or enterprise with a Copilot Business or Copilot Enterprise plan, the "MCP servers in Copilot" policy must be enabled in order to use MCP with Copilot.
+- If you're a member of an organization or enterprise with a Copilot Business or Copilot Enterprise plan, the "MCP servers in Copilot" policy must be enabled in order to use MCP with Copilot.
 
 (Optional)
 
