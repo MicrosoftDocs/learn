@@ -32,14 +32,14 @@ To configure the policy:
 1. On the **Customize advanced DLP rules** page, select **+ Create rule**.
 1. On the **Create rule** page:
 
-   - Give your policy rule a name and optional description.
-   - Under **Conditions** select **+ Add condition** > **Content contains**.
-   - In the **Conditions** section, select **Add** > **Sensitivity labels** and choose the sensitivity labels you want to target.
-   - In the **Actions** section, select **+ Add an action** > **Prevent Copilot from processing content**.
+   1. Give your policy rule a name and optional description.
+   1. Under **Conditions** select **+ Add condition** > **Content contains**.
+   1. In the **Conditions** section, select **Add** > **Sensitivity labels** and choose the sensitivity labels you want to target.
+   1. In the **Actions** section, select **+ Add an action** > **Prevent Copilot from processing content**.
 
        :::image type="content" source="../media/create-rule-copilot.png" alt-text="Screenshot showing a DLP rule that blocks Copilot from processing content labeled Highly Confidential using the Prevent Copilot action." lightbox="../media/create-rule-copilot.png":::
 
-   - Configure incident reports based on your organization's needs, then select **Save** at the bottom of the **Create rule** page.
+   1. Configure incident reports based on your organization's needs, then select **Save** at the bottom of the **Create rule** page.
 
 1. On the **Customize advanced DLP rules** page, select **Next**.
 1. On the **Policy mode** page, select to create your policy in simulation mode, to enable the policy immediately, or to leave the policy turned off.

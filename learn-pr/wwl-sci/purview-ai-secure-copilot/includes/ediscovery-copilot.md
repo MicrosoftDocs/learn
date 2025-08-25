@@ -54,9 +54,9 @@ Before taking action, review the content returned by your search:
 1. After the search completes, select the search result and choose Add to review set.
 1. Create a new review set or select an existing one to use.
 1. Once the content is added to the review set, you can take these actions:
-   - Search and filter the content to focus on relevant items
-   - Tag items to support organization and review decisions
-   - Run analytics to help identify what content to retain or remove
+   1. Search and filter the content to focus on relevant items
+   1. Tag items to support organization and review decisions
+   1. Run analytics to help identify what content to retain or remove
 
 This helps you decide if any content needs to be deleted and which sources are affected.
 

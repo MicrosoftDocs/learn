@@ -25,10 +25,10 @@ Each template maps regulatory expectations to specific Microsoft Purview control
 1. Select **Assessments**, then choose **+ Add assessment**.
 1. In the guided flow:
 
-   - Select one of the AI regulation templates
-   - Assign the assessment to a new or existing group
-   - Choose **Microsoft 365** as the service
-   - Review and confirm your settings
+   1. Select one of the AI regulation templates
+   1. Assign the assessment to a new or existing group
+   1. Choose **Microsoft 365** as the service
+   1. Review and confirm your settings
 
       :::image type="content" source="../media/compliance-manager-ai-assessment.png" alt-text="Screenshot showing Compliance Manager with the NIST AI Risk Management Framework selected as a regulation for Microsoft 365 assessments." lightbox=" ../media/compliance-manager-ai-assessment.png":::
 
