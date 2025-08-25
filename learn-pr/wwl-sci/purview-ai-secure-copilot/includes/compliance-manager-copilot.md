@@ -30,7 +30,7 @@ Each template maps regulatory expectations to specific Microsoft Purview control
    - Choose **Microsoft 365** as the service
    - Review and confirm your settings
 
-      :::image type="content" source="../media/compliance-manager-nist-assessment.png" alt-text="Screenshot showing Compliance Manager with the NIST AI Risk Management Framework selected as a regulation for Microsoft 365 assessments." lightbox=" ../media/compliance-manager-nist-assessment.png":::
+      :::image type="content" source="../media/compliance-manager-ai-assessment.png" alt-text="Screenshot showing Compliance Manager with the NIST AI Risk Management Framework selected as a regulation for Microsoft 365 assessments." lightbox=" ../media/compliance-manager-ai-assessment.png":::
 
 This creates an assessment where you can track Microsoft-managed and customer-managed actions that support AI compliance.
 

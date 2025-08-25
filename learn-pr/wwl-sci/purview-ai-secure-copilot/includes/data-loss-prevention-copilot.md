@@ -62,7 +62,7 @@ To create a DLP policy from the DSPM for AI recommendation:
 1. Review the recommendation, then select **Get started**.
 1. On the next page, choose the sensitivity labels that you want to protect from Copilot processing. The policy restricts Copilot from using content with these labels in summaries, though the content might still appear in citations.
 
-   :::image type="content" source="../media/posture-management-select-sensitivity-label.png" alt-text="Screenshot showing sensitivity labels selected in DSPM for AI to create a DLP policy that excludes labeled content from Copilot and agent processing." lightbox="../media/dsmp-ai-select-sensitivity-label.png":::
+   :::image type="content" source="../media/posture-management-select-sensitivity-label.png" alt-text="Screenshot showing sensitivity labels selected in DSPM for AI to create a DLP policy that excludes labeled content from Copilot and agent processing." lightbox="../media/posture-management-select-sensitivity-label.png":::
 
 1. Select **Create policy** to create the policy in simulation mode.
 
