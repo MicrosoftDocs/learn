@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.dpu.copilot-plus-pc-accreditation-2025
+title: Copilot+ PC Accreditation 2025
+metadata:
+  title: Copilot+ Pc Accreditation 2025
+  description: This Learning Path introduces the Copilot+ PC Accreditation and explores how AI-powered Windows PCs can support everyday tasks. It covers key features and tools that help users work more efficiently, solve problems quickly, and explore new ways of using technology in daily life
+  ms.date: 08/25/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: learning-path
+  ms.custom: CW052024-0
+summary: >
+  Explore the key components of Copilot+ PCs, including an introduction to their AI-powered features, how they can be used by different types of users, the security technologies designed to support AI, and the potential impact these devices can have on everyday productivity and problem-solving..
+prerequisites: None
+iconUrl: /training/achievements/copilot-plus-pc-accreditation-2025.svg
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - windows-11
+modules:
+  - learn.dpu.copilot-pc-overview
+  - learn.dpu.copilot-pc-business-users
+  - learn.dpu.powerful-security-designed-for-ai
+  - learn.dpu.business-impact-copilot-pc
+trophy:
+  uid: learn.dpu.copilot-plus-pc-accreditation-2025.trophy
