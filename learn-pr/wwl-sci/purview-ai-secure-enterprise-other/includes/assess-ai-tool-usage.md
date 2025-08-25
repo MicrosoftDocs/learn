@@ -56,7 +56,7 @@ This creates an assessment where you can track Microsoft-managed and customer-ma
 
 If you're using **Data Security Posture Management (DSPM) for AI**, the **Recommendations** section can guide you through steps that align with regulatory requirements for AI usage.
 
-One recommendation, **Get guided assistance to AI regulations**, maps to frameworks such as the NIST AI Risk Management Framework (RMF). When you use DSPM for AI as part of a compliance assessment, it points you to actions in other Microsoft Purview solutions. These steps let you connect AI activity to your organization’s security and compliance goals:
+One recommendation, **Get guided assistance to AI regulations**, maps to frameworks such as the NIST AI Risk Management Framework (RMF). When you use DSPM for AI as part of a compliance assessment, it points you to actions in other Microsoft Purview solutions. These actions let you connect AI activity to your organization's security and compliance goals:
 
 - **Review audit logs** to trace sensitive or inappropriate interactions with AI apps.
 - **Detect activity in external AI tools** through browser or endpoint signals, and configure policies to flag risky content.

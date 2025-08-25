@@ -21,9 +21,9 @@ Detection applies to tools like Microsoft 365 Copilot and other supported AI app
 
 Before you create the policy, complete these configuration steps:
 
-- Turn on auditing in Microsoft 365
-- Assign the required permissions in Microsoft Purview
-- Enable the indicators needed in Insider Risk Management. The Risky AI usage template depends on the relevant indicators being turned on, either before or during policy creation.
+1. Turn on auditing in Microsoft 365
+1. Assign the required permissions in Microsoft Purview
+1. Enable the indicators needed in Insider Risk Management. The Risky AI usage template depends on the relevant indicators being turned on, either before or during policy creation.
 
 For broader detection coverage, consider pairing the policy with:
 
