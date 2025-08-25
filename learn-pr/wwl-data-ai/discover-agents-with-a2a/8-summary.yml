@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-agents-with-a2a.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Reflect on what you learned about the A2A (Agent-to-Agent) protocol."
+  ms.date: 08/01/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
