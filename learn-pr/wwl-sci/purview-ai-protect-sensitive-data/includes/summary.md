@@ -17,4 +17,3 @@ These capabilities support responsible AI use by helping organizations apply con
 - [Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels?azure-portal=true)
 - [Get started with Microsoft 365 Copilot - admin guide](/copilot/microsoft-365/microsoft-365-copilot-setup?azure-portal=true)
 - [Get started with endpoint data loss prevention](/purview/endpoint-dlp-getting-started?azure-portal=true)
-\
