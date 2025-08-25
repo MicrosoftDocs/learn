@@ -13,7 +13,7 @@ GitHub Flow has emerged as the preferred workflow for organizations prioritizing
 
 > [!NOTE] > **Prerequisites for Success**: To implement GitHub Flow effectively, you'll need a GitHub account and repository. See "[Signing up for GitHub](https://docs.github.com/en/github/getting-started-with-github/signing-up-for-github)" and "[Create a repo](https://docs.github.com/en/github/getting-started-with-github/create-a-repo)."
 
-> [!TIP] > **Platform Flexibility**: GitHub Flow integrates seamlessly across development environments - web interface, command line, [GitHub CLI](https://cli.github.com/), or [GitHub Desktop](https://docs.github.com/en/free-pro-team@latest/desktop) - enabling teams to maintain consistency regardless of individual preferences.
+> [!NOTE] > **Platform Flexibility**: GitHub Flow integrates seamlessly across development environments - web interface, command line, [GitHub CLI](https://cli.github.com/), or [GitHub Desktop](https://docs.github.com/en/free-pro-team@latest/desktop) - enabling teams to maintain consistency regardless of individual preferences.
 
 ## The GitHub Flow Methodology: Six Strategic Steps
 
@@ -25,7 +25,7 @@ For detailed guidance, see "[Creating and deleting branches within your reposito
 
 :::image type="content" source="../media/create-branch-8f64a7d3.png" alt-text="Screenshot of a branching model representing the branch creation.":::
 
-### Step 2: Iterative Development Excellence
+### Step 2: Iterative Development in Isolation
 
 Implement your changes with confidence, knowing that branch isolation provides a safety net. The beauty of GitHub Flow lies in its forgiveness - mistakes can be easily reverted, and additional commits can address issues without impacting the main codebase.
 
@@ -35,7 +35,7 @@ Each commit should represent a logical, complete change with descriptive messagi
 
 **Enterprise Best Practice**: Maintain atomic commits that can be easily reviewed, reverted, or cherry-picked across branches.
 
-> [!TIP] > **Parallel Development Strategy**: Create separate branches for each distinct change to streamline review processes and enable independent deployment of features.
+> [!NOTE] > **Parallel Development Strategy**: Create separate branches for each distinct change to streamline review processes and enable independent deployment of features.
 
 ### Step 4: Pull Request as Collaboration Gateway
 
@@ -52,7 +52,7 @@ Reference: "[Creating a pull request](https://docs.github.com/en/articles/creati
 
 :::image type="content" source="../media/open-pull-request-5c5ad0c7.png" alt-text="Screenshot of a branching model representing an open a pull request.":::
 
-## Enterprise Pull Request Excellence
+## Enterprise Pull Request Strategy
 
 ### Documentation as Code Strategy
 

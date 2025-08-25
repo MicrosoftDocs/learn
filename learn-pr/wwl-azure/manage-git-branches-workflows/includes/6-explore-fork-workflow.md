@@ -92,7 +92,7 @@ Understanding the technical and organizational differences between forking and c
 
 ### Enterprise Service Provider Integration
 
-Modern Git service providers (Azure Repos, GitHub, GitLab) implement forking as a sophisticated organizational feature rather than a basic Git operation. This integration provides:
+Modern Git service providers (Azure Repos, GitHub) implement forking as a sophisticated organizational feature rather than a basic Git operation. This integration provides:
 
 - **Access control management** aligned with organizational security policies
 - **Visibility and discovery** through service provider interfaces

@@ -21,7 +21,7 @@ This unit teaches you to implement a continuous delivery-ready branching model u
 
 The following principles establish a robust foundation for continuous delivery:
 
-### Main Branch Excellence
+### Main Branch Stability
 
 - **Single source of truth**: The main branch is the exclusive path for production releases
 - **Production readiness**: Main branch must always be in a deployable state
@@ -64,7 +64,7 @@ users/[username]/[description]
 users/john-doe/experimental-caching
 ```
 
-### Pull Request Excellence
+### Pull Request Management
 
 - **Mandatory code review**: No exceptions for direct merges to main
 - **Automated validation**: Integrate CI/CD pipelines for quality gates
@@ -79,7 +79,6 @@ This practical exercise leverages Azure's comprehensive DevOps toolchain:
 
 - **[Azure CLI](/cli/azure/install-azure-cli)**: Cloud-native command-line interface for Azure services
 - **[Azure DevOps CLI](/azure/devops/cli)**: Specialized extension for seamless Git, CI/CD, and Agile tool integration across Windows, Linux, and macOS
-- **[Git Pull Request Merge Conflict Extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.conflicts-tab)**: Microsoft DevLabs' solution for web-based conflict resolution, eliminating local merge complexity
 
 ### Azure DevOps CLI Configuration
 
@@ -165,58 +164,63 @@ git push -u origin feature/myFeature-1
 
 **Output:**
 _To https://dev.azure.com/organization/teamproject/_git/MyWebApp_
-** [new branch] feature/myFeature-1 -> feature/myFeature-1\*
-_Branch feature/myFeature-1 set up to track remote branch feature/myFeature-1 from origin._ 5. Configure Azure DevOps CLI for your organization and project. Replace **organization** and **project name\*\*:
 
-    ```CMD
-    az devops configure --defaults organization=https://dev.azure.com/organization project="project name"
-    ```
+- _[new branch] feature/myFeature-1 -> feature/myFeature-1_
+  _Branch feature/myFeature-1 set up to track remote branch feature/myFeature-1 from origin._
 
-6.  Create a new pull request (using the Azure DevOps CLI) to review the changes in the feature-1 branch:
+### Step 3: Azure DevOps CLI Configuration and Pull Request Creation
 
-    ```CMD
-    az repos pr create --title "Review Feature-1 before merging to main" --work-items 38 39 `
-    --description "#Merge feature-1 to main" `
-    --source-branch feature/myFeature-1 --target-branch main `
-    --repository myWebApp --open
-    ```
+Configure Azure DevOps CLI for your organization and project. Replace **organization** and **project name**:
 
-    Use the --open switch when raising the pull request to open it in a web browser after it has been created. The --deletesource-branch switch can be used to delete the branch after the pull request is complete. Also, consider using --auto-complete to complete automatically when all policies have passed, and the source branch can be merged into the target branch.
+```CMD
+az devops configure --defaults organization=https://dev.azure.com/organization project="project name"
+```
 
-    > [!NOTE]
-    > For more information about **az repos pr create** parameter, see [Create a pull request to review and merge code](/azure/devops/repos/git/pull-requests).
+Create a new pull request (using the Azure DevOps CLI) to review the changes in the feature-1 branch:
 
-    The team jointly reviews the code changes and approves the pull request:
+```CMD
+az repos pr create --title "Review Feature-1 before merging to main" --work-items 38 39 `
+--description "#Merge feature-1 to main" `
+--source-branch feature/myFeature-1 --target-branch main `
+--repository myWebApp --open
+```
 
-    :::image type="content" source="../media/pr-code-changes-approved-completed-90fe3da6.png" alt-text="Screenshot of the pull request with code changes approved and completed.":::
+Use the --open switch when raising the pull request to open it in a web browser after it has been created. The --deletesource-branch switch can be used to delete the branch after the pull request is complete. Also, consider using --auto-complete to complete automatically when all policies have passed, and the source branch can be merged into the target branch.
 
-    The main is ready to release. Team tags the main branch with the release number:
+> [!NOTE]
+> For more information about **az repos pr create** parameter, see [Create a pull request to review and merge code](/azure/devops/repos/git/pull-requests).
 
-    :::image type="content" source="../media/create-tag-example-9a81a5d0.png" alt-text="Screenshot of the creation of a tag example.":::
+The team jointly reviews the code changes and approves the pull request:
 
-7.  Start work on Feature 2. Create a branch on remote from the main branch and do the checkout locally:
+:::image type="content" source="../media/pr-code-changes-approved-completed-90fe3da6.png" alt-text="Screenshot of the pull request with code changes approved and completed.":::
 
-    **_myWebApp_**
+The main is ready to release. Team tags the main branch with the release number:
 
-    ```CMD
-    git push origin main:refs/heads/feature/myFeature-2
-    ```
+:::image type="content" source="../media/create-tag-example-9a81a5d0.png" alt-text="Screenshot of the creation of a tag example.":::
 
-    **Output:**
+### Step 4: Parallel Feature Development
 
-    _Total 0 (delta 0), reused 0 (delta 0) To `https://dev.azure.com/**organization**/**teamproject**/\_git/MyWebApp` \* \[new branch\] origin/HEAD -&gt; refs/heads/feature/myFeature-2._
+Start work on Feature 2. Create a branch on remote from the main branch and do the checkout locally:
 
-    **_myWebApp_**
+**_myWebApp_**
 
-    ```CMD
-    git checkout feature/myFeature-2
-    ```
+```CMD
+git push origin main:refs/heads/feature/myFeature-2
+```
 
-    **Output:**
+**Output:**
+_Total 0 (delta 0), reused 0 (delta 0) To `https://dev.azure.com/**organization**/**teamproject**/\_git/MyWebApp` \* \[new branch\] origin/HEAD -&gt; refs/heads/feature/myFeature-2._
 
-    _Switched to a new branch 'feature/myFeature-2' Branch feature/myFeature-2 set up to track remote branch feature/myFeature-2 from origin._
+**_myWebApp_**
 
-8.  Modify Program.cs by changing the same comment line in the code changed in feature-1.
+```CMD
+git checkout feature/myFeature-2
+```
+
+**Output:**
+_Switched to a new branch 'feature/myFeature-2' Branch feature/myFeature-2 set up to track remote branch feature/myFeature-2 from origin._
+
+Modify Program.cs by changing the same comment line in the code changed in feature-1:
 
     ```
     public class Program
@@ -233,66 +237,70 @@ _Branch feature/myFeature-1 set up to track remote branch feature/myFeature-1 fr
                 .Build();
     ```
 
-9.  Commit the changes locally, push them to the remote repository, and then raise a pull request to merge the changes from feature/myFeature-2 to the main branch:
+### Step 5: Feature 2 Pull Request and Hotfix Scenario
 
-    ```CMD
-    az repos pr create --title "Review Feature-2 before merging to main" --work-items 40 42 `
-    --description "#Merge feature-2 to main" `
-    --source-branch feature/myFeature-2 --target-branch main `
-    --repository myWebApp --open
-    ```
+Commit the changes locally, push them to the remote repository, and then raise a pull request to merge the changes from feature/myFeature-2 to the main branch:
 
-    A critical bug is reported in production against the feature-1 release with the pull request in flight. To investigate the issue, you need to debug against the version of the code currently deployed in production. To investigate the issue, create a new fof branch using the release_feature1 tag:
+```CMD
+az repos pr create --title "Review Feature-2 before merging to main" --work-items 40 42 `
+--description "#Merge feature-2 to main" `
+--source-branch feature/myFeature-2 --target-branch main `
+--repository myWebApp --open
+```
 
-    **_myWebApp_**
+A critical bug is reported in production against the feature-1 release with the pull request in flight. To investigate the issue, you need to debug against the version of the code currently deployed in production. To investigate the issue, create a new fof branch using the release_feature1 tag:
 
-    ```CMD
-    git checkout -b fof/bug-1 release_feature1
-    ```
+**_myWebApp_**
 
-    **Output:**
+```CMD
+git checkout -b fof/bug-1 release_feature1
+```
 
-    _Switched to a new branch, 'fof/bug-1'._
+**Output:**
+_Switched to a new branch, 'fof/bug-1'._
 
-10. Modify Program.cs by changing the same line of code that was changed in the feature-1 release:
+### Step 6: Critical Hotfix Implementation
 
-    ```
-    public class Program
+Modify Program.cs by changing the same line of code that was changed in the feature-1 release:
+
+```
+public class Program
+{
+    // Editing the same line (file from feature-FOF branch)
+    public static void Main(string[] args)
     {
-        // Editing the same line (file from feature-FOF branch)
-        public static void Main(string[] args)
-        {
-            BuildWebHost(args).Run();
-        }
+        BuildWebHost(args).Run();
+    }
 
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
-    ```
+    public static IWebHost BuildWebHost(string[] args) =>
+        WebHost.CreateDefaultBuilder(args)
+            .UseStartup<Startup>()
+            .Build();
+```
 
-11. Stage and commit the changes locally, then push changes to the remote repository:
+Stage and commit the changes locally, then push changes to the remote repository:
 
-    **_myWebApp_**
+**_myWebApp_**
 
-    ```CMD
-    git add .
-    git commit -m "Adding FOF changes."
-    git push -u origin fof/bug-1
-    ```
+```CMD
+git add .
+git commit -m "Adding FOF changes."
+git push -u origin fof/bug-1
+```
 
-    **Output:**
+**Output:**
+_To `https://dev.azure.com/**organization**/**teamproject**/\_git/MyWebApp` \* \[new branch\] fof/bug-1 - fof/bug-1 Branch fof/bug-1 set up to track remote branch fof/bug-1 from origin._
 
-    _To `https://dev.azure.com/**organization**/**teamproject**/\_git/MyWebApp` \* \[new branch\] fof/bug-1 - fof/bug-1 Branch fof/bug-1 set up to track remote branch fof/bug-1 from origin._
+### Step 7: Hotfix Integration and Conflict Resolution
 
-12. Immediately after the changes have been rolled out to production, tag the fof\\bug-1 branch with the release_bug-1 tag, then raise a pull request to merge the changes from fof/bug-1 back into the main:
+Immediately after the changes have been rolled out to production, tag the fof\\bug-1 branch with the release_bug-1 tag, then raise a pull request to merge the changes from fof/bug-1 back into the main:
 
-    ```CMD
-    az repos pr create --title "Review Bug-1 before merging to main" --work-items 100 `
-    --description "#Merge Bug-1 to main" `
-    --source-branch fof/Bug-1 --target-branch main `
-    --repository myWebApp --open
-    ```
+```CMD
+az repos pr create --title "Review Bug-1 before merging to main" --work-items 100 `
+--description "#Merge Bug-1 to main" `
+--source-branch fof/Bug-1 --target-branch main `
+--repository myWebApp --open
+```
 
     As part of the pull request, the branch is deleted. However, you can still reference the entire history using the tag.
 
@@ -306,11 +314,25 @@ _Branch feature/myFeature-1 set up to track remote branch feature/myFeature-1 fr
 
     :::image type="content" source="../media/merge-conflicts-pull-request-84cba5e1.png" alt-text="Screenshot of merge conflicts from pull request.":::
 
-13. The Git Pull Request Merge Conflict resolution extension makes it possible to resolve merge conflicts right in the browser. Navigate to the conflicts tab and click on Program.cs to resolve the merge conflicts:
+## Resolve merge conflicts
 
-    :::image type="content" source="../media/git-pr-merge-conflict-resolution-extension-0e6d8b72.png" alt-text="Screenshot of the Git pull request merge conflict resolution extension.":::
+To resolve merge conflicts, you can use the Azure DevOps web interface or resolve them locally using Git commands. For local resolution, first update your feature branch with the latest changes from main:
 
-    The user interface allows you to take the source, target, add custom changes, review, and submit the merge. With the changes merged, the pull request is completed.
+    ```CMD
+    git checkout feature/myFeature-2
+    git fetch origin
+    git merge origin/main
+    ```
+
+    Resolve the conflicts in your preferred editor, then complete the merge:
+
+    ```CMD
+    git add .
+    git commit -m "Resolve merge conflicts between feature-2 and main"
+    git push origin feature/myFeature-2
+    ```
+
+    With the conflicts resolved, the pull request can be completed successfully.
 
 At this point, you can create a release branch based on the critical bug fix implemented in the **fof/bug-1** branch and merged into master. Using the git checkout command, create a dedicated release branch from the master branch.
 
