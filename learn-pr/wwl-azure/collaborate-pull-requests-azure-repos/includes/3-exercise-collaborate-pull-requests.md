@@ -1,126 +1,207 @@
-Code issues that are found sooner are both easier and cheaper to fix. So development teams strive to push code quality checks as far left into the development process as possible.
+# Exercise: Implement Enterprise Pull Request Workflows
 
-As the name suggests, branch policies give you a set of out-of-the-box policies that can be applied to the branches on the server.
+In this exercise, you'll configure a comprehensive pull request workflow for enterprise environments. You'll work through each step to establish advanced branch policies, automated governance controls, and scalable collaboration patterns using Azure Repos.
 
-Any changes being pushed to the server branches need to follow these policies before the changes can be accepted.
+## Scenario: Enterprise Development Team Setup
 
-Policies are a great way to enforce your team's code quality and change-management standards. In this recipe, you'll learn how to configure branch policies on your main branch.
+You're the lead DevOps engineer for a financial services company implementing a new trading platform. The development involves multiple teams with varying responsibilities:
 
-## Getting ready
+- **Core Development Team**: Primary application development and feature implementation
+- **Security Team**: Security review and compliance validation
+- **Architecture Team**: Architectural consistency and technical debt management
+- **QA Team**: Quality assurance and testing coordination
 
-The out-of-the-box branch policies include several policies, such as build validation and enforcing a merge strategy. We'll only focus on the branch policies needed to set up a code-review workflow in this recipe.
+Your mission is to establish a pull request workflow that ensures security compliance, maintains architectural integrity, and supports rapid development velocity while providing comprehensive audit trails required for financial industry regulations.
 
-## How to do it
+## Exercise Steps
 
-1.  Open the branches view for the myWebApp Git repository in the parts-unlimited team portal. Select the main branch, and from the pull-down, context menu choose Branch policies:
+### Step 1: Access Branch Policies Configuration
 
-    :::image type="content" source="../media/open-branches-9ad34c7c.png" alt-text="Open branches.":::
+1. Navigate to your Azure DevOps project and access the **Repos** section.
 
+2. Select your target repository and open the **Branches** view.
 
-2.  In the policies view, It presents out-of-the-box policies. Set the minimum number of reviewers to 1:
+3. Locate the main branch (or your primary integration branch) and select **Branch policies** from the context menu:
 
-    :::image type="content" source="../media/require-minimum-number-reviewers-4e4d2d64.png" alt-text="Require a minimum number of reviewers.":::
+   :::image type="content" source="../media/open-branches-9ad34c7c.png" alt-text="Navigate to branch policies configuration.":::
 
+### Step 2: Configure Reviewer Requirements
 
-    The Allow requestors to approve their own changes option allows the submitter to self-approve their changes.
+Configure **Minimum number of reviewers** with enterprise considerations:
 
-    While this might be acceptable for mature teams, in general, it should be avoided.<br>
+:::image type="content" source="../media/require-minimum-number-reviewers-4e4d2d64.png" alt-text="Configure minimum reviewer requirements.":::
 
-3.  Use the review policy with the comment-resolution policy. It allows you to enforce that the code review comments are resolved before the changes are accepted. The requester can take the feedback from the comment and create a new work item and resolve the changes. It at least guarantees that code review comments aren't lost with the acceptance of the code into the main branch:
+Apply these **Strategic Configuration** settings:
 
-    :::image type="content" source="../media/check-comment-resolution-f4bb058c.png" alt-text="Check for comment resolution.":::
+- Set minimum reviewers to 2 for comprehensive coverage
+- **Disable** "Allow requestors to approve their own changes" for separation of duties
+- **Enable** "Allow completion even if some reviewers vote to wait or reject" for emergency scenarios
+- **Configure** "When new changes are pushed" to reset all approval votes for security
 
+### Step 3: Set Up Automatic Reviewer Assignment
 
-4.  A requirement instigates a code change in the team project. If the work item triggered the work isn't linked to the change, it becomes hard to understand why it was made over time. It's especially useful when reviewing the history of changes. Configure the Check for linked work items policy to block changes that don't have a work item linked to them:
+Implement intelligent reviewer routing based on expertise and code areas:
 
-    :::image type="content" source="../media/check-linked-work-items-9f9a5589.png" alt-text="Check for linked work items.":::
+:::image type="content" source="../media/add-automatic-reviewers-528e31d0.png" alt-text="Configure automatic reviewer assignment.":::
 
+Configure your **Enterprise Reviewer Strategy**:
 
-5.  Select the option to automatically include reviewers when a pull request is raised automatically. You can map which reviewers are added based on the area of the code being changed:
+- **Security Team**: Automatic assignment for authentication, authorization, and data handling changes
+- **Architecture Team**: Required for infrastructure, framework, and design pattern modifications
+- **Domain Experts**: Automatic assignment based on file paths and functional areas
+- **Cross-Training**: Include junior developers for knowledge transfer opportunities
 
-    :::image type="content" source="../media/add-automatic-reviewers-528e31d0.png" alt-text="Add automatic reviewers.":::
+### Step 4: Enable Quality Assurance Policies
 
+Establish comprehensive quality gates through comment resolution requirements:
 
-## How it works
+:::image type="content" source="../media/check-comment-resolution-f4bb058c.png" alt-text="Enforce comment resolution requirements.":::
 
-With the branch policies in place, the main branch is now fully protected.
+This policy ensures that all review feedback is addressed, creating accountability and preventing oversight gaps that could impact production stability.
 
-The only way to push changes to the main branch is by first making the changes in another branch and then raising a pull request to trigger the change-acceptance workflow.
+### Step 5: Configure Traceability and Compliance
 
-Choose to create a new branch from one of the existing user stories in the work item hub.
+Configure work item linking for regulatory compliance and project tracking:
 
-By creating a new branch from a work item, that work item automatically gets linked to the branch.
+:::image type="content" source="../media/check-linked-work-items-9f9a5589.png" alt-text="Require work item linkage for traceability.":::
 
-You can optionally include more than one work item with a branch as part of the create workflow:
+This provides these **Compliance Benefits**:
 
-:::image type="content" source="../media/create-branch-8f64a7d3.png" alt-text="Create a branch.":::
+- Full audit trail from requirement to deployment
+- Regulatory compliance documentation
+- Impact analysis and change tracking
+- Project management integration and progress visibility
 
+### Step 6: Create Feature Branches with Traceability
 
-Prefix in the name when creating the branch to make a folder for the branch to go in.
+Create feature branches directly from work items to establish automatic linkage:
 
-In the preceding example, the branch will go in the folder. It is a great way to organize branches in busy environments.
+:::image type="content" source="../media/create-branch-8f64a7d3.png" alt-text="Create branches from work items for automatic traceability.":::
 
-With the newly created branch selected in the web portal, edit the HomeController.cs file to include the following code snippet and commit the changes to the branch.
+Follow this **Enterprise Branch Naming Strategy**:
 
-In the image below, you'll see that you can directly commit the changes after editing the file by clicking the commit button.
+- Use folder prefixes for organization: `feature/`, `hotfix/`, `release/`
+- Include work item IDs for traceability: `feature/12345-trading-algorithm`
+- Consistent naming supports automation and analytics
 
-The file path control in the team portal supports search.
+### Step 7: Implement Changes Using Best Practices
 
-Start typing the file path to see all files in your Git repository under that directory, starting with these letters showing up in the file path search results dropdown.
+Implement changes using enterprise development practices:
 
-:::image type="content" source="../media/change-code-commit-84502261.png" alt-text="Change code and commit.":::
+:::image type="content" source="../media/change-code-commit-84502261.png" alt-text="Implement changes with comprehensive commit practices.":::
 
+Follow these **Enterprise Commit Standards**:
 
-The code editor in the web portal has several new features in Azure DevOps Server, such as support for bracket matching and toggle white space.
+- Descriptive commit messages linking to requirements
+- Atomic commits that represent logical changes
+- Security-conscious coding practices
+- Documentation updates accompanying code changes
 
-You can load the command palette by pressing it. Among many other new options, you can now toggle the file using a file mini-map, collapse, and expand, and other standard operations.
+### Step 8: Create Comprehensive Pull Requests
 
-To push these changes from the new branch into the main branch, create a pull request from the pull request view.
+Create pull requests that facilitate comprehensive review and collaboration:
 
-Select the new branch as the source and the main as the target branch.
+:::image type="content" source="../media/create-pull-request-af53d7fb.png" alt-text="Create comprehensive pull requests with rich context.":::
 
-The new pull request form supports markdown, so you can add the description using the markdown syntax.
+Apply these **Enterprise Pull Request Best Practices**:
 
-The description window also supports @ mentions and \# to link work items:
+- **Comprehensive Descriptions**: Include business context, technical approach, and testing strategy
+- **Markdown Documentation**: Use structured markdown for clarity and readability
+- **Stakeholder Mentions**: @mention relevant team members and domain experts
+- **Work Item Integration**: Link related work items for complete context
 
-:::image type="content" source="../media/create-pull-request-af53d7fb.png" alt-text="Create pull request.":::
+### Step 9: Coordinate Multi-Stakeholder Reviews
 
+Coordinate sophisticated review processes across multiple stakeholders:
 
-The pull request is created; the overview page summarizes the changes and the status of the policies.
+:::image type="content" source="../media/pull-request-comments-438950c3.png" alt-text="Manage comprehensive review discussions.":::
 
-The Files tab shows you a list of changes and the difference between the previous and the current versions.
+Implement this **Multi-Stakeholder Review Strategy**:
 
-Any updates pushed to the code files will show up in the Updates tab, and a list of all the commits is shown under the Commits tab:
+- **Security Reviews**: Focus on authentication, authorization, and data protection
+- **Architecture Reviews**: Evaluate design patterns, technical debt, and scalability
+- **Code Quality Reviews**: Assess maintainability, performance, and testing
+- **Documentation Reviews**: Ensure comprehensive documentation and knowledge transfer
 
-:::image type="content" source="../media/pull-request-comments-438950c3.png" alt-text="Pull request comments.":::
+### Step 10: Facilitate Effective Review Discussions
 
+Facilitate thorough review discussions that enhance code quality and knowledge transfer using these **Review Facilitation Techniques**:
 
-Open the Files tab: this view supports code comments at the line level, file level, and overall.
+- **Structured Feedback**: Categorize comments by type (critical, suggestion, question)
+- **Educational Focus**: Explain reasoning behind suggestions for knowledge transfer
+- **Solution-Oriented**: Provide specific recommendations rather than just identifying issues
+- **Timeline Management**: Balance thoroughness with development velocity
 
-The comments support both @ for mentions and \# to link work items, and the text supports markdown syntax:
+### Step 11: Leverage Azure DevOps Integration
 
-The code comments are persisted in the pull request workflow; the code comments support multiple iterations of reviews and work well with nested responses.
+Leverage Azure DevOps integration for comprehensive validation with these **Pipeline Integration Benefits**:
 
-The reviewer policy allows for a code review workflow as part of the change acceptance.
+- **Automated Build Validation**: Ensure changes don't break compilation or basic functionality
+- **Test Suite Execution**: Run comprehensive test suites before allowing merge
+- **Security Scanning**: Integrate automated security analysis tools
+- **Performance Testing**: Validate performance impact of changes
 
-It's an excellent way for the team to collaborate on any code changes pushed into the main branch.
+## Advanced Features and Management
 
-When the required number of reviewers approves the pull request, it can be completed.
+### Branch Recovery and Management
 
-You can also mark the pull request to autocomplete after your review. It autocompletes the pull requests once all the policies have been successfully compiled.
+Azure DevOps provides sophisticated branch management capabilities for enterprise environments:
 
-## There's more
+**Deleted Branch Recovery**:
 
-Have you ever been in a state where a branch has been accidentally deleted? It can't be easy to figure out what happened.
+- Search for deleted branches by exact name
+- View deletion history and responsible parties
+- Restore branches while maintaining commit history
+- Re-establish policies and permissions as needed
 
-Azure DevOps Server now supports searching for deleted branches. It helps you understand who deleted it and when. The interface also allows you to recreate the branch.
+**Enterprise Branch Management**:
 
-Deleted branches are only shown if you search for them by their exact name to cut out the noise from the search results.
+- Implement consistent branch naming conventions
+- Use folder organization for complex repository structures
+- Establish retention policies for completed work
+- Monitor branch proliferation and cleanup inactive branches
 
-To search for a deleted branch, enter the full branch name into the branch search box. It will return any existing branches that match that text.
+## Measuring Success and Optimization
 
-You'll also see an option to search for an exact match in the list of deleted branches.
+### Key Performance Indicators
 
-If a match is found, you'll see who deleted it and when. You can also restore the branch. Restoring the branch will re-create it at the commit to which is last pointed.
+Track the effectiveness of your pull request implementation:
 
-However, it won't restore policies and permissions.
+**Velocity Metrics**:
+
+- Pull request cycle time from creation to merge
+- Review participation rates and feedback quality
+- Policy compliance rates and exception handling
+
+**Quality Metrics**:
+
+- Defect detection rates during review
+- Post-merge issue rates and root cause analysis
+- Knowledge transfer effectiveness and skill development
+
+**Compliance Metrics**:
+
+- Audit trail completeness and accuracy
+- Regulatory compliance adherence
+- Security review coverage and effectiveness
+
+### Continuous Improvement
+
+**Regular Assessment**:
+
+- Conduct monthly retrospectives on pull request effectiveness
+- Gather team feedback on policy burden versus benefit
+- Analyze metrics to identify optimization opportunities
+- Evolve policies based on organizational maturity and changing requirements
+
+## Exercise Results
+
+This comprehensive exercise demonstrates how Azure Repos pull request capabilities support enterprise development requirements:
+
+- **Scalable Governance**: Automated policy enforcement without development velocity impact
+- **Comprehensive Compliance**: Full audit trails and regulatory adherence
+- **Quality Amplification**: Systematic quality improvement through structured review processes
+- **Knowledge Distribution**: Effective knowledge transfer and skill development across teams
+- **Security Integration**: Embedded security practices in development workflows
+
+The implemented workflow provides the foundation for sustainable, scalable enterprise development that balances governance requirements with development agility.
