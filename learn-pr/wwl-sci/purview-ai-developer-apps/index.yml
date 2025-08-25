@@ -31,6 +31,8 @@ levels:
 roles:
 - administrator
 - auditor
+- developer
+- auditor
 products:
 - m365
 - microsoft-purview
