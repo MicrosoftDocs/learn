@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-secure-enterprise-other.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your knowledge."
+  ms.date: 08/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A security administrator at Northwind Traders wants to assess whether the company is meeting regulatory expectations for using generative AI tools like ChatGPT Enterprise. Which Microsoft Purview capability should they use?"
+    choices:
+    - content: "Insider Risk Management"
+      isCorrect: false
+      explanation: "Insider Risk Management is used to detect risky behavior, not assess regulatory alignment."
+    - content: "Data Security Posture Management (DSPM) for AI"
+      isCorrect: false
+      explanation: "DSPM helps discover usage and recommend protections but doesn't assess regulatory readiness."
+    - content: "Compliance Manager with AI regulation templates"
+      isCorrect: true
+      explanation: "Compliance Manager includes AI-specific regulation templates to assess compliance with standards like the EU AI Act and NIST RMF."
+  
+  - content: "At Contoso Ltd., a compliance officer notices users are pasting sensitive content into public AI tools like Gemini. They want to restrict this behavior only for high-risk users. What should they implement?"
+    choices:
+    - content: "A DLP policy with Adaptive Protection"
+      isCorrect: true
+      explanation: "Adaptive Protection allows DLP enforcement to adjust based on user risk level, targeting only high-risk users."
+    - content: "A static DLP policy for all users"
+      isCorrect: false
+      explanation: "A static DLP policy applies uniformly and doesn't adjust based on risk level."
+    - content: "A Communication Compliance policy with escalation enabled"
+      isCorrect: false
+      explanation: "Communication Compliance detects policy violations but doesn't block actions like pasting data."
+
+  - content: "Fabrikam wants to detect when employees are using AI tools in ways that might involve regulated or sensitive information, such as submitting client data in prompts. Which Purview tool is designed to flag this behavior?"
+    choices:
+    - content: "Retention policies for enterprise AI apps"
+      isCorrect: false
+      explanation: "Retention policies preserve content but don't detect risky behavior."
+    - content: "Insider Risk Management using the Risky AI usage policy"
+      isCorrect: true
+      explanation: "Insider Risk Management with the Risky AI usage policy detects sensitive content in AI prompts and responses."
+    - content: "Microsoft Defender for Endpoint"
+      isCorrect: false
+      explanation: "Defender for Endpoint doesn't analyze AI prompt content for compliance violations."
+
+  - content: "A reviewer at Woodgrove Bank is examining matches flagged by a Communication Compliance policy applied to public AI apps. What kind of content is most likely to trigger a match?"
+    choices:
+    - content: "Browsing history showing visits to AI-related websites"
+      isCorrect: false
+      explanation: "Browsing history is detected by Insider Risk Management or browser-level policies, not Communication Compliance."
+    - content: "Unusual system access patterns across Microsoft Entra ID"
+      isCorrect: false
+      explanation: "This kind of signal falls under identity or behavioral analytics, not content policy enforcement."
+    - content: "A prompt that includes sensitive data or violates company policy"
+      isCorrect: true
+      explanation: "Communication Compliance flags prompts and responses that contain sensitive data, offensive language, or other policy violations."
+
+  - content: "Tailspin Toys uses a collection policy to capture prompts and responses from public AI tools. What must happen before Microsoft Purview retention policies can apply to this content?"
+    choices:
+    - content: "The content must be copied to a hidden folder in the user's Exchange mailbox"
+      isCorrect: true
+      explanation: "Purview retention only applies after content is captured into the user's Exchange mailbox through a collection policy."
+    - content: "The AI tool must be registered with Microsoft Entra ID"
+      isCorrect: false
+      explanation: "Microsoft Entra ID registration applies to enterprise apps, but isn't required for retention to apply."
+    - content: "The user must manually tag the content for compliance"
+      isCorrect: false
+      explanation: "Retention policies apply automatically once the content is captured in the mailbox; manual tagging isn't required."

@@ -1,0 +1,59 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ai-secure-enterprise-other
+metadata:
+  title: Secure enterprise and browser-based AI apps with Microsoft Purview
+  description: Secure enterprise and browser-based AI apps with Microsoft Purview
+  ms.date: 08/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Secure enterprise and browser-based AI apps with Microsoft Purview
+summary: |
+  AI tools across enterprise and public environments create new opportunities but also introduce data security and compliance risks. Microsoft Purview helps reduce these risks by discovering AI usage, assessing compliance needs, and applying integrated controls for protection, retention, and responsible use.
+abstract: |
+  In this module you learn how to:
+  - Discover and assess AI usage with DSPM for AI and Compliance Manager
+  - Apply data loss prevention to restrict risky actions in browsers and endpoints
+  - Detect policy violations in prompts and responses with Communication Compliance
+  - Use Insider Risk Management and Adaptive Protection to apply risk-based controls
+  - Retain AI-generated content with Microsoft Purview retention policies
+prerequisites: |
+  - Familiarity with enterprise and public AI apps
+  - Basic knowledge of Microsoft Purview
+  - Understanding of Microsoft Entra ID and Microsoft 365 roles
+  - Awareness of data security and compliance concepts
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- risk-practitioner
+- security-operations-analyst
+- auditor
+
+products:
+- m365
+- microsoft-purview
+subjects:
+- data-management
+- threat-protection
+- information-protection-governance
+- compliance
+- security
+- insider-risk
+
+units:
+- learn.wwl.purview-ai-secure-enterprise-other.introduction
+- learn.wwl.purview-ai-secure-enterprise-other.understand-ai-risks
+- learn.wwl.purview-ai-secure-enterprise-other.assess-ai-tool-usage
+- learn.wwl.purview-ai-secure-enterprise-other.communication-compliance-ai
+- learn.wwl.purview-ai-secure-enterprise-other.insider-risk-management-ai
+- learn.wwl.purview-ai-secure-enterprise-other.data-loss-prevention-ai
+- learn.wwl.purview-ai-secure-enterprise-other.adaptive-protection-ai
+- learn.wwl.purview-ai-secure-enterprise-other.retention-ai
+- learn.wwl.purview-ai-secure-enterprise-other.knowledge-check
+- learn.wwl.purview-ai-secure-enterprise-other.summary
+badge:
+  uid: learn.wwl.purview-ai-secure-enterprise-other.badge
