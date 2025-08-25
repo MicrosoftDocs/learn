@@ -42,3 +42,5 @@ Prompts and responses from copilots and AI agents can be stored in Exchange Onli
 
 > [!NOTE]
 > To include AI-specific locations like **Microsoft Copilot Experiences**, **Enterprise AI apps**, or **Other AI apps**, your tenant must have pay-as-you-go billing enabled.
+
+Extending labels, DLP, and retention to AI interactions ensures that sensitive content is classified, protected, and retained the same as other organizational data.

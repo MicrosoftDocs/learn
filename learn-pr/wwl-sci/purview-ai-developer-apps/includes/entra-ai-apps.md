@@ -1,6 +1,4 @@
-Developers often register custom AI apps in Microsoft Entra to give those apps access to organizational data through Microsoft Graph APIs. These apps might be built entirely in-house or use external platforms and services, but all rely on Microsoft Entra ID for authentication and access management.
-
-Because these apps can read, generate, or share sensitive content, it's important to apply visibility, classification, and data protection policies consistently. Microsoft Purview allows you to evaluate risk across Entra-registered apps and apply the same compliance controls used for other AI-enabled tools in your environment.
+Custom AI apps registered in Microsoft Entra can access organizational data through Graph APIs. If these apps aren't governed, they might read or share sensitive content without consistent safeguards. By bringing these apps into Microsoft Purview, you can gain visibility into how they interact with organizational data. From there, you can apply sensitivity labels, data loss prevention policies, and use retention and eDiscovery to preserve and review content as needed.
 
 ## Discover apps through Microsoft Entra signals
 
@@ -45,3 +43,5 @@ You can apply retention policies to:
 - Apply consistent lifecycle controls across other content types
 
 Captured content can also be searched in **eDiscovery**. You can filter by user, app, or content type, and export data for legal or compliance review. This allows you to maintain full lifecycle visibility over AI-generated content, even when it originates from custom or external apps registered through Microsoft Entra.
+
+With these controls, Microsoft Entra-registered apps are governed with the same protections as other AI tools, reducing the chance of sensitive data being exposed through unmanaged access.
