@@ -10,7 +10,7 @@ In this unit, you'll learn how to set up and use GitHub MCP Server in Visual Stu
 
 ## Set up GitHub MCP Server in VS Code
 
-### Using OAuth
+### Use OAuth
 
 Now that you know what GitHub MCP Server can do, let's walk through how to set it up in Visual Studio Code so you can start using it immediately. This will let you integrate your preferred AI-powered workflows directly into your coding environment without complex setup. 
 
@@ -24,7 +24,7 @@ Now that you know what GitHub MCP Server can do, let's walk through how to set i
 
 After setup, GitHub MCP Server will be ready to use with your projects in VS Code. You can now start using AI-powered tools and workflows to automate tasks, manage issues, and analyze your code directly within your editor, helping you stay focused on your work while GitHub MCP Server handles the heavy lifting in the background.
 
-### Using personal access token
+### Use personal access token
 
 In order to use Personal Access Token (PAT) for advanced control, you can follow these steps:
 

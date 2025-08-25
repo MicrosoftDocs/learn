@@ -8,15 +8,15 @@ In this unit, you'll learn:
 - How to apply best practices to guide Copilot in agentic workflows effectively.
 
 
-## How to use GitHub MCP Server with Copilot Chat?
+## How to use GitHub MCP Server with Copilot Chat
 
-- Open Copilot Chat in Visual Studio Code and switch to Agent mode to activate the MCP Server tools.
+1. Open Copilot Chat in Visual Studio Code and switch to Agent mode to activate the MCP Server tools.
 
-- Click on Select tools to view all the available MCP Server functionalities.
+1. Click on Select tools to view all the available MCP Server functionalities.
 
-- You can now try creating a new issue, summarizing a repository, or getting insights into your work using natural language prompts.
+1. You can now try creating a new issue, summarizing a repository, or getting insights into your work using natural language prompts.
 
-- Follow the prompts within Copilot Chat to complete your tasks efficiently.
+1. Follow the prompts within Copilot Chat to complete your tasks efficiently.
 
 ## Copilot's agentic capabilities and MCP
 
@@ -34,7 +34,7 @@ Agentic capabilities give Copilot the ability to:
 
 In other words, agent mode allows Copilot to handle tasks in a way that feels more autonomous, almost like having a teammate who understands the bigger picture rather than just following individual instructions.
 
-### Why MCP makes Agent mode stronger?
+### How MCP makes Agent mode stronger
 
 On its own, agent mode is powerful. But when you add MCP servers, you give Copilot the ability to reach beyond the immediate coding environment. Through MCP, Copilot can:
 
@@ -51,7 +51,8 @@ When you bring these two capabilities together, you unlock key advantages:
 - **Extended context**: Copilot can draw on information from multiple systems, not just your code editor.
 
 - **Reduced manual effort**: Routine work like opening issues, managing workflows, or running checks can be automated while you focus on higher-value decisions.
-  **Seamless integration**: Copilot can carry out tasks that span tools and platforms, without needing custom connectors or constant switching.
+  
+- **Seamless integration**: Copilot can carry out tasks that span tools and platforms, without needing custom connectors or constant switching.
 
 ### Best practices for success
 
@@ -78,10 +79,10 @@ When you select the Start the exercise on GitHub button below, you'll be navigat
 
 When you've finished the exercise in GitHub, return here for:
 
-A quick knowledge check.
+- A quick knowledge check.
 
-A summary of what you've learned.
+- A summary of what you've learned.
 
-A badge for completing this module.
+- A badge for completing this module.
 
-[Start the exercise on Github](https://github.com/skills/integrate-mcp-with-copilot/)
+[Start the exercise on GitHub](https://github.com/skills/integrate-mcp-with-copilot/)

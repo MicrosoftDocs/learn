@@ -23,25 +23,25 @@ MCP offers:
 
 - Integration into your existing development environment and processes.
 
-### How MCP clients connect to servers and services?
+### How MCP clients connect to servers and services
 
 :::image type="content" source="../media/model-context-protocol-architecture.png" alt-text="Diagram showing the interaction between MCP clients and servers across local and internet environments." lightbox="../media/model-context-protocol-architecture.png":::
 
 The above diagram illustrates three common ways that an MCP Client (such as Claude, an IDE, or another tool) can interact with MCP Servers and the services they connect to. Each path shows a different type of communication, depending on whether the resources are local or remote.
 
-#### 1. Local communication with local data (top path)
+#### Local communication with local data (top path)
 
 In this scenario, the MCP Client talks directly to an MCP Server running on your machine using the MCP Protocol. That server then connects to a local data source (for example, files, databases, or other resources stored on your computer).
 
 **When to use it**: This setup is useful for local development, or anytime you want fast access to data that stays private on your machine.
 
-#### 2. Local server as a bridge to remote services (middle path)
+#### Local server as a bridge to remote services (middle path)
 
 Here, the MCP Client still connects to an MCP Server running locally. But instead of working only with local data, this server bridges to a remote service on the internet by calling its Web APIs.
 
 **When to use it**: This model is common when a local tool needs to fetch or update information from a remote service but benefits from having a local server in between—for example, to handle caching, security checks, or data preprocessing.
 
-#### 3. Remote communication over the internet (bottom path)
+#### Remote communication over the internet (bottom path)
 
 In the final setup, the MCP Client connects to an MCP Server that lives entirely on the internet (not on your machine). That remote server then communicates with other external services via Web APIs.
 
