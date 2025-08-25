@@ -25,7 +25,7 @@ products:
 modules:
   - learn.dpu.copilot-pc-overview
   - learn.dpu.copilot-pc-business-users
-  - learn.dpu.powerful-security-designed-for-ai
+  - learn.dpu.powerful-security-ai
   - learn.dpu.business-impact-copilot-pc
 trophy:
   uid: learn.dpu.copilot-plus-pc-accreditation-2025.trophy
