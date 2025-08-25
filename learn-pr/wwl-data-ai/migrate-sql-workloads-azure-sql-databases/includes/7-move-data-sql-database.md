@@ -6,7 +6,7 @@ In our bicycle manufacturer scenario, suppose the company has an on-premises SQL
 
 The [bcp utility](/sql/relational-databases/import-export/import-and-export-bulk-data-by-using-the-bcp-utility-sql-server) allows bulk exporting of data from a SQL Server table into a data file and vice versa. The utility is versatile, enabling data transfer between SQL Server and other programs or databases. 
 
-Understanding the schema and data types of the table is essential for using the bcp command effectively, unless a pre-existing format file is available.
+Understanding the schema and data types of the table is essential for using the bcp command effectively, unless a preexisting format file is available.
 
 ## Azure Data Factory	
 
