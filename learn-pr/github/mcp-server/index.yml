@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.github.mcp-server
+title: Introduction to MCP Server
+metadata:
+  title: Introduction to MCP Server
+  description: Learn how to set up and use GitHub MCP Server in Visual Studio Code to extend GitHub Copilot and streamline your AI-assisted development workflow.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 08/25/2025
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: This module introduces GitHub MCP Server, a secure and scalable way to integrate GitHub features into your AI tools. You'll learn what MCP is, how to configure GitHub MCP Server in VS Code, use it with Copilot Chat, and troubleshoot common issues.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand what MCP and GitHub MCP Server are and why they are useful for developers.
+  - Set up and configure GitHub MCP Server in Visual Studio Code for your projects.
+  - Use the GitHub MCP Server with Copilot Chat to automate development tasks.
+  - Identify and resolve common issues when working with GitHub MCP Server.
+
+prerequisites: |
+  Before getting started, ensure you have the following:
+  - A GitHub account 
+  - Visual Studio Code or another editor that supports MCP integration
+  - If you are a member of an organization or enterprise with a Copilot Business or Copilot Enterprise plan, the "MCP servers in Copilot" policy must be enabled in order to use MCP with Copilot.
+  (Optional)
+  - A GitHub Personal Access Token (PAT) for advanced setup and permissions control.
+  - Docker installed if you plan to experiment with a local server setup for hands-on control.
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+units:
+  - learn.github.mcp-server.introduction
+  - learn.github.mcp-server.simplify-workflow
+  - learn.github.mcp-server.configure-connect
+  - learn.github.mcp-server.use-github-copilot-chat
+  - learn.github.mcp-server.knowledge-check
+  - learn.github.mcp-server.summary
+badge:
+  uid: learn.github.mcp-server.badge
