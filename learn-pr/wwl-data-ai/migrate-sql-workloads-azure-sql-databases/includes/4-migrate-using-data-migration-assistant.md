@@ -72,3 +72,4 @@ When migrating a SQL Server database to Azure SQL Database using the Data Migrat
 - Ensure that the correct permissions are provided to the shared folder to avoid migration failures.
 - Enable encrypted connections when connecting to the source and target servers for increased security.
 - Check for untrusted constraints on both the source and target databases before migrating data and fix them as needed. Fix untrusted constraints as needed. Leaving the constraints untrusted can result in poor execution plans, and it can affect performance.
+
