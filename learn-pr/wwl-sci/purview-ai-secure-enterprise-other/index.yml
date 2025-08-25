@@ -32,10 +32,12 @@ roles:
 - risk-practitioner
 - security-operations-analyst
 - auditor
+
 products:
 - m365
 - microsoft-purview
 subjects:
+- data-management
 - threat-protection
 - information-protection-governance
 - compliance

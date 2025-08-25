@@ -1,4 +1,4 @@
-As organizations adopt enterprise and consumer AI tools, the need to manage user interactions with these apps becomes increasingly important. Microsoft Purview retention policies help ensure that AI-generated prompts and responses are retained or deleted in accordance with compliance requirements. To apply retention, this content must first be captured by a collection policy that copies it into the user’s Exchange mailbox.
+As organizations adopt enterprise and consumer AI tools, the need to manage user interactions with these apps becomes increasingly important. Microsoft Purview retention policies help ensure that AI-generated prompts and responses are retained or deleted in accordance with compliance requirements. To apply retention, this content must first be captured by a collection policy that copies it into the user's Exchange mailbox.
 
 Captured interactions are stored in hidden folders within Exchange Online mailboxes. Retention policies apply to these folders based on the locations you select when configuring a policy, allowing you to manage AI content using the same tools and processes already in place for Microsoft 365 workloads.
 
@@ -42,6 +42,18 @@ These are separate from the **Microsoft Copilot experiences** location, which co
 
 1. On the **Decide if you want to retain content, delete it, or both** page, choose whether to retain content, delete it, or both, and set how long to keep the content.
 1. Review your policy settings, then create your policy.
+
+## Use retention labels for item‑level control
+
+Because AI interactions are copied into users' Exchange mailboxes, you can also govern this data with **retention labels** published through a **label policy**. Publish the labels to the **Exchange email** location and, if needed, use an **auto‑labeling** policy to apply a label based on sensitive info types, keywords, or trainable classifiers. This supports item‑level retention when you need different rules than a broad policy.
+
+### Publish and apply labels
+
+1. In the Microsoft Purview portal, go to **Solutions** > **Data Lifecycle Management** > **Policies** > **Label policies**, then select **Publish labels**. Include **Exchange email** as a location.
+1. (Optional) Create an **Auto‑labeling** policy for **Exchange** with conditions that match AI interaction content, such as specific sensitive info types or keywords.
+
+> [!NOTE]
+> AI interactions still need to be **captured by a collection policy** so they're written to the user's mailbox. Capturing enterprise and other AI app data, and some AI policy locations, require **pay‑as‑you‑go billing**. Retention labels themselves are published to **Exchange** because that's where the captured content resides.
 
 ## What happens when retention applies
 
