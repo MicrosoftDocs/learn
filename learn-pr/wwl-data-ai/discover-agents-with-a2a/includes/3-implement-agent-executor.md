@@ -15,7 +15,7 @@ An Agent Executor typically defines two primary operations:
 
 **Execute**  
 - Processes incoming requests and generates responses.  
-- Accesses request details (e.g., user input, task context).  
+- Accesses request details (for example, user input, task context).  
 - Sends results back via an event queue, which may include messages, task updates, or artifacts.
 
 **Cancel**  
@@ -26,13 +26,13 @@ The executor uses the **RequestContext** to understand the incoming request and 
 
 ## Request handling flow
 
-Consider a simple "Hello World" agent workflow:
+Consider a "Hello World" agent workflow:
 
-1. The agent has a small helper class that implements its core logic (e.g., returning a string).  
+1. The agent has a small helper class that implements its core logic (for example, returning a string).  
 1. The executor receives a request and calls the agent’s logic.  
 1. The executor wraps the result as an event and places it on the event queue.  
 1. The routing mechanism sends the event back to the requester.  
 
-For cancellation, a basic agent might simply indicate that cancellation is not supported.
+For cancellation, a basic agent might only indicate that cancellation isn't supported.
 
 The Agent Executor is central to making your A2A agent functional. It defines how the agent executes tasks and communicates results, providing a standardized interface for clients and other agents. Properly implemented executors enable seamless integration and collaboration in multi-agent workflows.

@@ -2,7 +2,7 @@ Before an A2A agent can participate in multi-agent workflows, it needs to explai
 
 ## Agent Skills
 
-An Agent Skill describes a specific capability or function the agent can perform. Think of it as a building block that communicates to clients or other agents what tasks the agent is designed to handle.
+An Agent Skill describes a specific capability or function that the agent can perform. Think of it as a building block that communicates to clients or other agents what tasks the agent is designed to handle.
 
 Key elements of an Agent Skill include:
 - ID: A unique identifier for the skill.
@@ -10,27 +10,27 @@ Key elements of an Agent Skill include:
 - Description: A detailed explanation of what the skill does.
 - Tags: Keywords for categorization and easier discovery.
 - Examples: Sample prompts or use cases to illustrate the skill in action.
-- Input/Output Modes: Supported data formats or media types (e.g., text, JSON).
+- Input/Output Modes: Supported data formats or media types (for example, text, JSON).
 
 When defining a skill for your agent, consider the tasks it should perform, how to describe them clearly, and how other agents or clients might use them. For example, a simple "Hello World" skill could return a basic greeting in text format, whereas a blog-writing skill might accept a topic and return a suggested title or outline.
 
 ## Agent Card
 
-The Agent Card is like a digital business card for your agent. It is a structured document that a routing agent or client can retrieve to discover your agent’s capabilities and how to interact with it.
+The Agent Card is like a digital business card for your agent. It's a structured document that a routing agent or client can retrieve to discover your agent’s capabilities and how to interact with it.
 
 Key elements of an Agent Card include:
 - Identity Information: Name, description, and version of the agent.
 - Endpoint URL: Where the agent’s A2A service can be accessed.
 - Capabilities: Supported A2A features such as streaming or push notifications.
 - Default Input/Output Modes: The primary media types the agent can handle.
-- Skills: A list of the agent’s skills that can be invoked by other agents.
+- Skills: A list of the agent’s skills that other agents can invoke.
 - Authentication Support: Indicates if the agent requires credentials for access.
 
 When creating an Agent Card, ensure it accurately represents your agent’s skills and endpoints. This allows clients or routing agents to discover the agent, understand what it can do, and interact with it appropriately.
 
 ## Putting it together
 
-Once an agent has defined its skills and published an Agent Card:
+Once an agent defines its skills and publishes an Agent Card:
 - Other agents or clients can discover the agent automatically.
 - Requests can be routed to the agent’s appropriate skill.
 - Responses are returned in supported formats, enabling smooth collaboration across multiple agents.

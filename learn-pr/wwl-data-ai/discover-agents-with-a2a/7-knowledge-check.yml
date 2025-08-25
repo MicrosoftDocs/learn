@@ -22,23 +22,23 @@ quiz:
       explanation: "Correct. The A2A server acts as a routing layer that delegates requests to the appropriate agent."
     - content: "It stores static agent responses for reuse."
       isCorrect: false
-      explanation: "Incorrect. Responses are generated dynamically by the agent via the executor."
+      explanation: "Incorrect. The agent generates responses dynamically."
   - content: "What does the Agent Executor do in an A2A agent?"
     choices:
     - content: "Manages network connections between clients and servers."
       isCorrect: false
-      explanation: "Incorrect. Networking is handled by the server and request handler."
+      explanation: "Incorrect. The server and request handler manage the network connections."
     - content: "Processes incoming requests and generates responses or events."
       isCorrect: true
       explanation: "Correct. The executor contains the core logic for handling requests and sending responses or event updates."
     - content: "Provides a GUI for monitoring agent activity."
       isCorrect: false
-      explanation: "Incorrect. The executor does not provide a user interface."
+      explanation: "Incorrect. The executor doesn't provide a user interface."
   - content: "What is an agent card used for in A2A?"
     choices:
     - content: "It stores the agent's API key for authentication."
       isCorrect: false
-      explanation: "Incorrect. Agent cards do not handle authentication credentials."
+      explanation: "Incorrect. Agent cards don't handle authentication credentials."
     - content: "It provides metadata about the agent, such as its capabilities and available functions."
       isCorrect: true
       explanation: "Correct. Agent cards describe what an agent can do and help clients discover and interact with it."
