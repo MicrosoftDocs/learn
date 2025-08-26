@@ -6,7 +6,7 @@ metadata:
   title: Implement Azure App Configuration
   description: "Learn how to use Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features."
   ms.date: 06/27/2025
-  author: wwlpublish
+  author: jeffkoms
   ms.author: jeffko
   ms.topic: module
   ms.custom:

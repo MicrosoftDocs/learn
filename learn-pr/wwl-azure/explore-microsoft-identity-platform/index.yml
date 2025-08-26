@@ -4,7 +4,7 @@ metadata:
   title: Explore the Microsoft Identity Platform
   description: "Learn the core features and functionality of the Microsoft identity platform including authentication, libraries, and app management tools."
   ms.date: 07/16/2024
-  author: wwlpublish
+  author: jeffkoms
   ms.author: jeffko
   ms.topic: module
   ms.custom:

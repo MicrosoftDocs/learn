@@ -4,7 +4,7 @@ metadata:
   title: 'Develop solutions that use Blob storage'
   description: 'Learn how to create Azure Blob storage resources, manage data through the blob storage lifecycle, and work with containers and items by using the Azure Blob storage client library V12 for .NET.'
   ms.date: 12/07/2021
-  author: wwlpublish
+  author: jeffkoms
   ms.author: jeffko
   ms.topic: learning-path
 title: 'Develop solutions that use Blob storage'

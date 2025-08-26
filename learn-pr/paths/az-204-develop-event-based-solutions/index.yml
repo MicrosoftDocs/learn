@@ -4,7 +4,7 @@ metadata:
   title: 'Develop event-based solutions'
   description: 'Learn how to build applications with event-based architectures by integrating Azure Event Grid and Azure Event Hubs in to your solution.'
   ms.date: 02/09/2022
-  author: wwlpublish
+  author: jeffkoms
   ms.author: jeffko
   ms.topic: learning-path
 title: 'Develop event-based solutions'

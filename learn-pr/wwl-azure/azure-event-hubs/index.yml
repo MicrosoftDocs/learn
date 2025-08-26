@@ -6,7 +6,7 @@ metadata:
   title: Explore Azure Event Hubs
   description: "Learn how Azure Event Hubs captures events and how to scale your processing application."
   ms.date: 06/16/2025
-  author: wwlpublish
+  author: jeffkoms
   ms.author: jeffko
   ms.topic: module
   ms.collection: N/A

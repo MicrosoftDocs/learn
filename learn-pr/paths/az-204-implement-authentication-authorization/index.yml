@@ -4,7 +4,7 @@ metadata:
   title: 'Implement user authentication and authorization'
   description: 'Learn how to implement authentication and authorization to resources by using the Microsoft identity platform, Microsoft Authentication Library, shared access signatures, and use Microsoft Graph.'
   ms.date: 12/09/2021
-  author: wwlpublish
+  author: jeffkoms
   ms.author: jeffko
   ms.topic: learning-path
 title: 'Implement user authentication and authorization'
