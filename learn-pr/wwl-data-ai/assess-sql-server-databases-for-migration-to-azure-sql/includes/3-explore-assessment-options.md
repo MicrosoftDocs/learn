@@ -3,7 +3,7 @@ When it comes to migrating a database to a new platform or version, it's importa
 Tools such as **Azure migration extension for Azure Data Studio** and **Azure Migrate** can help you in this process.
 
 > [!NOTE]
-> For comprehensive migrations, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience.it comes to migrating a database to a new platform or version, it’s important to assess the database beforehand to identify any potential issues that could affect the migration process. 
+> For comprehensive migrations, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience. When it comes to migrating a database to a new platform or version, it's important to assess the database beforehand to identify any potential issues that could affect the migration process. 
 
 Tools such as **Azure migration extension for Azure Data Studio**, and **Azure Migrate** can help you in this process.
 
