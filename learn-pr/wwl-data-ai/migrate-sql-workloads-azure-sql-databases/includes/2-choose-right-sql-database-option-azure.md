@@ -60,12 +60,11 @@ There are two modes of migration to Azure SQL Database: **Online** and **Offline
 | [Import Export Wizard/BACPAC](/azure/azure-sql/database/database-export) | **Offline** |
 | [Bulk copy (bcp utility)](/sql/relational-databases/import-export/import-and-export-bulk-data-by-using-the-bcp-utility-sql-server) | **Offline** |
 | [Azure Data Factory](/azure/data-factory/quickstart-get-started) | **Offline** |
-| [Data Migration Assistant (DMA)](/sql/dma/dma-overview) | **Offline** |
 
 \* Can have a higher performance impact, depending on the workload.
 
 > [!NOTE]
-> While the Database Migration Assistant is a useful tool available, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience.
+> We recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience.
 
 ## Migration performance
 

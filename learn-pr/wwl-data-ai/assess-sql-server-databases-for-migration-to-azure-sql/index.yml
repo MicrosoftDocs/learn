@@ -3,8 +3,8 @@ uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql
 metadata:
   title: Assess SQL Server databases for migration to Azure SQL
   description: "Learn multiple assessment tools that facilitate the migration of databases to Azure, including the Azure SQL Migration extension for Azure Data Studio, Azure Migrate, and Data Migration Assistant."
-  ms.date: 05/23/2023
-  author: wwlpublish
+  ms.date: 08/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based
   ms.service: azure
@@ -43,4 +43,4 @@ units:
 - learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.knowledge-check
 - learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.summary
 badge:
-  uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.badge
+  uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.badge

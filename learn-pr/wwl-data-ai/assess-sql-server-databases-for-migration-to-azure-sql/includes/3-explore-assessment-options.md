@@ -1,10 +1,11 @@
+When it comes to migrating a database to a new platform or version, it's important to assess the database beforehand to identify any potential issues that could affect the migration process. 
 
-When it comes to migrating a database to a new platform or version, it’s important to assess the database beforehand to identify any potential issues that could affect the migration process. 
-
-Tools such as **Azure migration extension for Azure Data Studio**, **Azure Migrate**, and **Data Migration Assistant (DMA)** can help you in this process.
+Tools such as **Azure migration extension for Azure Data Studio** and **Azure Migrate** can help you in this process.
 
 > [!NOTE]
-> While the Database Migration Assistant is a useful tool available, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience.
+> For comprehensive migrations, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview) for large migrations and enhanced overall experience.it comes to migrating a database to a new platform or version, it’s important to assess the database beforehand to identify any potential issues that could affect the migration process. 
+
+Tools such as **Azure migration extension for Azure Data Studio**, and **Azure Migrate** can help you in this process.
 
 ## Azure migration extension for Azure Data Studio
 
@@ -25,15 +26,5 @@ Azure Migrate is suitable for larger-scale migrations and scenarios.
 
 > [!NOTE]
 > To see a list of integrated tools supported by Azure Migrate, see [Integrated tools](/azure/migrate/migrate-services-overview#integrated-tools)
-
-## Data Migration Assistant (DMA)
-
-The Database Migration Assistant (DMA) is a standalone application that helps migrating or upgrading SQL Server databases. It automates the process of checking for compatibility issues and offers recommendations. DMA connects to the source and target servers, identifying breaking changes, deprecated features, and assessing new features for improved performance. It supports both on-premises SQL Server host migrations and migrations to Azure SQL.
-
-:::image type="content" border="false" source="../media/2-data-migration-assistant-start.png" alt-text="Screenshot of the Data Migration Assistant start page.":::
-
-Although DMA supports Azure SQL Managed Instance and SQL Server on Azure Virtual Machines as target options, it's best suited for organizations migrating their databases to Azure SQL Database or SQL Server.
-
-To learn more about Data Migration Assistant, see [Best practices for running Data Migration Assistant](/sql/dma/dma-bestpractices)
 
 Regardless of the tool chosen, it's important to evaluate the specific requirements and goals of your migration project. Selecting the appropriate tool based on your scenario helps ensure a successful and efficient SQL Server migration to Azure.
