@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Migrate SQL Server workloads to Azure SQL Database
   description: "Learn the essentials of Azure SQL Database deployment and migration. Explore its benefits, exclusive features, and migration options while optimizing performance and application connections for a smooth transition to the cloud."
-  ms.date: 08/25/2025
+  ms.date: 08/26/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based
@@ -48,7 +48,6 @@ units:
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.introduction
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.choose-right-sql-database-option-azure
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-using-azure-migration-extension
-- learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-using-data-migration-assistant
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-using-bacpac
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-sql-server-azure-sql-database-online
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.move-data-sql-database
