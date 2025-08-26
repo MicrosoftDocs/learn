@@ -1,6 +1,6 @@
 Now it's your chance to identify cost differences between on-premises and Azure deployments.  
 
-In this exercise, you’ll learn how to calculate the Total Cost of Ownership (TCO) of migrating to Azure by using the TCO calculator.
+In this exercise, you’ll learn how to calculate the Total Cost of Ownership (TCO) of migrating to Azure by using the Azure pricing calculator.
 
 > [!NOTE]
 > To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true).
