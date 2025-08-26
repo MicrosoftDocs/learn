@@ -1,9 +1,7 @@
-Copilot in Microsoft Fabric allows users to interact with data using natural language. In tools like Power BI, users can ask questions, generate reports, and summarize data without needing to write formulas or build visuals manually. These experiences are designed for productivity, but they can introduce risk if Copilot accesses sensitive content without proper controls in place.
-
-Microsoft Purview supports retention, audit, and eDiscovery for Copilot in Fabric. These tools help you track activity and meet compliance needs across your environment.
+Copilot in Microsoft Fabric lets users query and summarize datasets in Power BI with natural language. Without safeguards, Copilot can reveal more data than intended, especially if datasets aren't labeled or properly scoped. Microsoft Purview enables you to capture, retain, and audit these interactions so they can be reviewed and searched for compliance or security investigations.
 
 > [!NOTE]
-> Microsoft Purview doesn't currently enforce real-time DLP for Copilot in Fabric. DSPM provides visibility into Copilot activity, but not response blocking.
+> Microsoft Purview doesn't currently enforce real-time data loss prevention for Copilot in Fabric. DSPM provides visibility into Copilot activity, but not response blocking.
 
 ## Understand how Copilot in Fabric uses data
 
@@ -42,4 +40,4 @@ This allows organizations to support investigations and ensure AI-generated cont
 
 Logged Copilot activity in Fabric becomes available to **Microsoft Purview Audit** and **eDiscovery**, allowing you to review metadata, search interactions, and export content for legal or compliance purposes.
 
-These tools support investigation needs even when more granular policy enforcement isn't available in Fabric.
+By capturing and retaining Fabric interactions, you maintain oversight of how sensitive datasets are used, even when real-time enforcement isn't possible.
