@@ -2,7 +2,7 @@ Apps built with Azure AI services or Azure AI Foundry often connect to sensitive
 
 ## Onboard Azure AI apps to Microsoft Purview
 
-Unonboarded Azure AI apps fall outside Microsoft Purview, leaving protections like DLP and retention unenforced. Before you can apply protections, apps built with Azure AI must be onboarded into Microsoft Purview.
+Un-onboarded Azure AI apps fall outside Microsoft Purview, leaving protections like DLP and retention unenforced. Before you can apply protections, apps built with Azure AI must be onboarded into Microsoft Purview.
 
 If the app is registered in Microsoft Entra ID, onboarding typically involves:
 
