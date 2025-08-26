@@ -1,10 +1,8 @@
-Developers can use Azure AI services and Azure AI Foundry to build custom apps that generate responses based on organizational data. These apps often rely on models like GPT through Azure OpenAI and might connect to sensitive data sources that include regulated or business-critical content.
-
-It's important to ensure that content generated or accessed by these apps is protected. Microsoft Purview supports policy enforcement for data loss prevention, retention, and investigations across apps built with Azure AI.
+Apps built with Azure AI services or Azure AI Foundry often connect to sensitive data sources. Without governance, they can generate or share regulated information outside approved boundaries. Microsoft Purview lets you onboard these apps so protections such as data loss prevention (DLP), retention, and eDiscovery apply consistently, even when the app is hosted outside Microsoft 365.
 
 ## Onboard Azure AI apps to Microsoft Purview
 
-Before you can apply protections, apps built with Azure AI must be onboarded into Microsoft Purview.
+Un-onboarded Azure AI apps fall outside Microsoft Purview, leaving protections like DLP and retention unenforced. Before you can apply protections, apps built with Azure AI must be onboarded into Microsoft Purview.
 
 If the app is registered in Microsoft Entra ID, onboarding typically involves:
 
@@ -12,16 +10,16 @@ If the app is registered in Microsoft Entra ID, onboarding typically involves:
 - Assigning the appropriate Microsoft Graph API permissions, such as `Mail.Read` or `Sites.Read.All`, depending on which data the app needs to access
 - Making sure Purview-supported signals are enabled for the app
 
-For apps that use data sources outside of Microsoft 365, such as files stored in Azure or on external services, you might need to configure Data Security Posture Management for (DSPM) for AI collection policies. These policies allow you to capture prompt activity and file access from Azure-hosted apps so they can appear in Microsoft Purview.
+For apps that use data sources outside Microsoft 365, such as files stored in Azure or on external services, you might need to configure Data Security Posture Management (DSPM) for AI collection policies. These policies allow you to capture prompt activity and file access from Azure-hosted apps so they can appear in Microsoft Purview.
 
 Once onboarded, apps become visible in DSPM for AI reports and can be included in policy scopes for DLP and other Microsoft Purview tools.
 
 > [!NOTE]
-> To view or manage onboarding in DSPM for AI, users need the correct Microsoft Purview or Microsoft Entra permissions. For details, see [Permissions for Data Security Posture Management for AI](/purview/dspm-ai-permissions).
+> To view or manage onboarding in DSPM for AI, users need the correct Microsoft Purview or Microsoft Entra permissions. For details, see [Permissions for Data Security Posture Management for AI](/purview/dspm-ai-permissions?azure-portal=true).
 
 ## Apply DLP policies to Azure AI apps
 
-Data loss prevention (DLP) policies help you detect and restrict how Azure AI apps interact with sensitive content. If an app accesses Microsoft 365 data, you can apply policies that trigger when:
+Even after onboarding, apps might still return or share sensitive content unless DLP policies restrict them. DLP policies help you detect and restrict how Azure AI apps interact with sensitive content. If an app accesses Microsoft 365 data, you can apply policies that trigger when:
 
 - Files with sensitivity labels are accessed
 - Confidential content is used in a generated response
@@ -33,7 +31,7 @@ If you use DSPM for AI collection policies to capture prompts and responses, you
 
 ## Retain and investigate AI content with Microsoft Purview
 
-Captured prompts and responses from Azure AI apps can be retained and investigated using Microsoft Purview.
+Prompts and responses from Azure AI apps can contain sensitive business data. Without retention, they might be lost before compliance reviews or investigations.
 
 Retention policies allow you to preserve this content for a defined period based on your organization's compliance or business requirements. You can apply retention across all collected AI interactions or scope it to specific users, apps, or data types.
 
@@ -43,4 +41,4 @@ Captured content is also available in **eDiscovery**. You can use it to:
 - Review AI interactions alongside other content like email or documents
 - Export results for legal or compliance investigations
 
-Even if the AI app is hosted outside Microsoft 365, using Microsoft Purview ensures that the data it accesses or generates can still be retained and made available for compliance, audit, or security response.
+Bringing Azure AI apps into Microsoft Purview ensures sensitive data is retained, reviewable, and subject to the same compliance standards as other workloads.

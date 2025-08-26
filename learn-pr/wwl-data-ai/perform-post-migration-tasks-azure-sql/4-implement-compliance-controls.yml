@@ -4,10 +4,10 @@ title: Implement compliance controls for sensitive data
 metadata:
   title: Implement compliance controls for sensitive data
   description: "Learn how to implement compliance controls for sensitive data in Azure SQL."
-  ms.date: 09/14/2023
-  author: wwlpublish
+  ms.date: 8/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-implement-compliance-controls.md)]
+  [!include[](includes/4-implement-compliance-controls.md)]

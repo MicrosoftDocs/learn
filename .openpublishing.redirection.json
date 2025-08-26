@@ -261,6 +261,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/assess-sql-server-databases-for-migration-to-azure-sql/6-assess-database-data-migration-assistant.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sql-workloads-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/4-migrate-using-data-migration-assistant.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sql-workloads-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/migrate-sql-workloads-azure-virtual-machines/4-review-data-migration-assistant.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sql-workloads-azure",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/4-sql-managed-instance.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
       "redirect_document_id": false
@@ -53582,7 +53597,7 @@
     {
       "source_path": "learn-pr/entra-external-identities.yml",
       "redirect_url": "/training/modules/entra-external-identities",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/entra-external-identities/1-introduction.yml",

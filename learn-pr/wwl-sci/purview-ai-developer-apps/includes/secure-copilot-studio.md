@@ -1,6 +1,4 @@
-Copilot Studio allows users to build custom AI agents that can answer questions, summarize documents, or automate business processes. These agents often connect to internal data sources and return generated responses to users. This flexibility introduces the risk of exposing sensitive information if agents aren't configured and governed appropriately. Like Azure AI services and Entra-registered apps, these agents can interact with sensitive data and must be secured using Microsoft Purview tools.
-
-Microsoft Purview provides several ways to manage these risks. You can use sensitivity labels, data loss prevention (DLP) policies, retention, audit, and eDiscovery to govern Copilot Studio activity, like with other AI platforms. These tools allow you to restrict access, preserve interactions, and support compliance reviews.
+Copilot Studio allows users to create custom AI agents that connect to data sources like SharePoint or Dataverse. If left unprotected, these agents might return sensitive content in responses or bypass logging requirements. Microsoft Purview gives you the ability to enforce sensitivity labels, restrict responses through data loss prevention, and retain agent interactions for audit or investigation.
 
 ## Understand what needs to be protected
 
@@ -16,7 +14,7 @@ Understanding these risks is the first step in applying the right protections.
 
 ## Use sensitivity labels to scope data access
 
-Sensitivity labels in SharePoint can influence how Copilot Studio agents access or summarize files. Label policies determine what content agents can process or return, based on your organization's data classification strategy.
+Copilot and agents run in the user's context and honor sensitivity labels and encryption. If a user doesn't have rights to open or extract content from a labeled file, the agent can't summarize it. To block agents from processing labeled content even when a user does have access, use a DLP policy scoped to Microsoft 365 Copilot.
 
 :::image type="content" source="../media/copilot-studio-sensitivity-label.png" alt-text="Screenshot showing Copilot Studio response referencing labeled files and displaying a Confidential label with protection set to Any User." lightbox="../media/copilot-studio-sensitivity-label.png":::
 
@@ -30,15 +28,11 @@ Label-based access control helps ensure that agents operate within defined bound
 
 ## Apply DLP policies to control agent responses
 
-You can use a DLP policy scoped to the **Microsoft 365 Copilot** location to restrict Copilot Studio agents from processing or summarizing sensitive SharePoint files. For example, you might block access to files labeled **Highly Confidential**, allowing only file references to be returned.
+To reduce the risk of agents disclosing sensitive information, you can use a DLP policy scoped to the **Microsoft 365 Copilot** location. This lets you block or limit agent responses when they attempt to process SharePoint files labeled as highly sensitive.
 
 :::image type="content" source="../media/data-loss-prevention-copilot.png" alt-text="Screenshot showing a DLP rule that blocks Copilot from processing content labeled Highly Confidential using a Copilot-specific action." lightbox="../media/data-loss-prevention-copilot.png":::
 
-This policy enforcement applies to:
-
-- Agents built in Copilot Studio for Microsoft Teams or SharePoint
-- Microsoft 365 Copilot
-- Other Copilot integrations that rely on SharePoint data
+A Copilot-scoped DLP policy applies when the knowledge source is SharePoint. It includes Copilot Studio agents in Teams or SharePoint, Microsoft 365 Copilot, and other Copilot integrations that rely on SharePoint data.
 
 This functionality limits AI-generated responses based on content classification and helps reduce the risk of unintentional data disclosure.
 
@@ -47,22 +41,18 @@ This functionality limits AI-generated responses based on content classification
 
 ## Retain agent interactions for compliance
 
-When logging is enabled, Copilot Studio agent conversations can be stored in Exchange Online mailboxes. This allows organizations to retain the content of prompts and responses and apply Microsoft Purview retention policies.
+Copilot Studio interactions used in Microsoft 365 are automatically captured as compliance copies in Exchange Online. You can apply a Microsoft Purview retention policy scoped to the **Microsoft Copilot Experiences location** to preserve them for compliance or recordkeeping.
 
 :::image type="content" source="../media/retention-copilot-location.png" alt-text="Screenshot showing Microsoft Copilot experiences selected as a location in the retention policy setup." lightbox="../media/retention-copilot-location.png":::
 
-To retain agent conversations, create a retention policy scoped to the **Microsoft Copilot Experiences** location. Retention policies let you preserve these interactions even if the agent is changed or removed, and they support auditing and eDiscovery. This helps meet regulatory and internal recordkeeping requirements by ensuring agent activity is preserved and accessible.
-
 > [!NOTE]
-> To retain, audit, or search Copilot Studio conversations, logging must be explicitly enabled in the agent's settings within Copilot Studio. Without logging, these features won't capture prompt or response content.
+> Copilot Studio transcript logging in Dataverse is optional and separate from Microsoft Purview. Compliance copies in Exchange Online are automatic and don't require enabling a setting in the agent.
 
 ## Use audit to review agent usage
 
-When logging is enabled, Copilot Studio interactions can generate audit events that are searchable in Microsoft Purview Audit. These events record agent activity metadata, such as which user triggered an agent, when it occurred, and which agent was involved.
+Microsoft Purview Audit logs provide metadata about agent activity, such as who used the agent, when it occurred, and which agent was involved. Audit logs help you:
 
-Audit logs help you:
-
-- Track how agents are being used across your environment
+- Track how agents are used across your environment
 - Identify users interacting with specific agents
 - Investigate activity timelines during security or compliance reviews
 
@@ -70,7 +60,7 @@ Audit logs don't contain prompt or response content. For deeper investigation, u
 
 ## Use eDiscovery to investigate agent-generated content
 
-Agent conversations stored in Exchange Online can also be made available to Microsoft Purview eDiscovery tools. This allows legal, compliance, or security teams to search and review content when needed.
+To review the content of prompts and responses in more detail, you can search Copilot Studio conversations using eDiscovery. This makes it possible to identify risky use, filter results, or export data for compliance or legal review.
 
 To search for Copilot Studio content specifically, use the `IPM.SkypeTeams.Message.Copilot.Studio.*` value in the **ItemClass** field of the search query.
 
@@ -80,8 +70,10 @@ With eDiscovery, teams can:
 - Filter results based on participant, timeframe, or sensitivity
 - Export content for use in legal review, incident response, or investigations
 
-Making agent interactions discoverable helps ensure that AI usage can be reviewed with the same rigor as other forms of communication and collaboration.
+Making agent interactions discoverable helps ensure that AI usage can be reviewed as consistently as other forms of communication and collaboration.
 
 ## View agent activity in Data Security Posture Management (DSPM) for AI
 
-Agent activity from Copilot Studio is also visible in DSPM for AI. DSPM for AI shows prompt and response usage across your environment and allows you to filter activity by user, sensitivity, and risk signals. These reports help identify potential policy violations or misuse of sensitive data.
+DSPM for AI reports show prompt and response activity across your environment, including sensitivity and risk indicators. You can filter by user, sensitivity, or risk signal to spot potential misuse or gaps in protection. In **Activity explorer**, you can view Copilot Studio prompts and responses with filters for user, sensitivity, and risk indicators.
+
+Together, these safeguards let you govern Copilot Studio agents so they don't expose sensitive information or bypass compliance requirements.

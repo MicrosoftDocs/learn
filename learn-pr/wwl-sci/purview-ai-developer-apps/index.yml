@@ -3,7 +3,7 @@ uid: learn.wwl.purview-ai-developer-apps
 metadata:
   title: Secure Developer AI Environments with Microsoft Purview
   description: Microsoft Purview provides tools to secure developer AI environments by discovering apps, assessing data access, and applying appropriate protections. This includes detecting generative AI usage, assigning user risk levels, and applying dynamic enforcement based on user behavior and data sensitivity.
-  ms.date: 08/25/2025
+  ms.date: 08/26/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
