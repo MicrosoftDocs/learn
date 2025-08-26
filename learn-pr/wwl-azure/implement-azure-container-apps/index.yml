@@ -6,7 +6,7 @@ metadata:
   title: Implement Azure Container Apps
   description: "Run serverless containerized apps in Azure Container Apps service."
   ms.date: 06/17/2025
-  author: jeffkoms
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: module
   ms.collection: N/A

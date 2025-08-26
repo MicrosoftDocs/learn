@@ -4,7 +4,7 @@ metadata:
   title: Implement GitHub Actions
   description: "GitHub Actions is a powerful CI/CD platform that allows developers to automate their software development workflows. Learn how GitHub actions are implemented, how workflow files are structured, and how to control workflow execution."
   ms.date: 11/13/2024
-  author: jeffkoms
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: module
   ms.service: github
