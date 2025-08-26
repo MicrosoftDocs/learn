@@ -53595,11 +53595,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/entra-external-identities/entra-external-identities.yml",
-      "redirect_url": "/training/modules/entra-external-identities",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "learn-pr/entra-external-identities/1-introduction.yml",
       "redirect_url": "/training/modules/entra-external-identities/1-introduction",
       "redirect_document_id": true
