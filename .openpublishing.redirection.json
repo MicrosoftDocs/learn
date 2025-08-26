@@ -280,8 +280,6 @@
       "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
       "redirect_document_id": false
     },
-
-
     {
       "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/6-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
@@ -53597,7 +53595,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/entra-external-identities.yml",
+      "source_path": "learn-pr/entra-external-identities/entra-external-identities.yml",
       "redirect_url": "/training/modules/entra-external-identities",
       "redirect_document_id": true
     },
