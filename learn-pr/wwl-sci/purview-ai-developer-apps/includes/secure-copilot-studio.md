@@ -46,7 +46,7 @@ Copilot Studio interactions used in Microsoft 365 are automatically captured as 
 :::image type="content" source="../media/retention-copilot-location.png" alt-text="Screenshot showing Microsoft Copilot experiences selected as a location in the retention policy setup." lightbox="../media/retention-copilot-location.png":::
 
 > [!NOTE]
-> Copilot Studio transcript logging in Dataverse is optional and separate from Microsoft Purview. Compliance copies in Exchange Online are automatic and don’t require enabling a setting in the agent.
+> Copilot Studio transcript logging in Dataverse is optional and separate from Microsoft Purview. Compliance copies in Exchange Online are automatic and don't require enabling a setting in the agent.
 
 ## Use audit to review agent usage
 
