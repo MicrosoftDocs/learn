@@ -4,10 +4,10 @@ title: Automate database tasks for scalability
 metadata:
   title: Automate database tasks for scalability
   description: "Learn how to automate database tasks for scalability."
-  ms.date: 09/14/2023
-  author: wwlpublish
+  ms.date: 8/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-automate-database-tasks-scalability.md)]
+  [!include[](includes/7-automate-database-tasks-scalability.md)]

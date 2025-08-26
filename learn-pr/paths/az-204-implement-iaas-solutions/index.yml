@@ -4,7 +4,7 @@ metadata:
   title: 'Implement containerized solutions'
   description: Learn how to create and deploy containerized solutions to Azure by using the Azure Container Registry, Azure Container Instances, and Azure Container Apps.
   ms.date: 02/06/2024
-  author: wwlpublish
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: learning-path
 title: 'Implement containerized solutions'

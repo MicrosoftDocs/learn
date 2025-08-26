@@ -8,7 +8,7 @@ You learned how to:
 - Review activity using Microsoft Purview tools like Audit and eDiscovery
 - Detect risky or inappropriate usage with Insider Risk Management and Communication Compliance
 
-Without these protections, AI apps can operate with limited visibility and inconsistent data handling. With Microsoft Purview, you created a foundation for securing developer AI environments while supporting innovation and compliance at scale.
+Without these protections, AI apps can operate with limited visibility and inconsistent data handling. With Microsoft Purview, you built a foundation for securing developer AI environments while supporting compliance and safe innovation.
 
 ## Resources
 
