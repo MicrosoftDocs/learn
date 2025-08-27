@@ -7,24 +7,77 @@ In the previous unit, you explored the different ways that users can authenticat
 
 ## Repository permission levels
 
-You can customize access to a given repository by assigning permissions. There are five repository-level permissions:
+You can customize access to each repository by assigning specific permission levels. There are five standard repository-level permissions:
 
 - **Read**: Recommended for non-code contributors who want to view or discuss your project. This level is good for anyone that needs to view the content within the repository but doesn't need to actually make contributions or changes.
-- **Triage**: Recommended for contributors who need to proactively manage issues and pull requests without write access. This level could be good for some project managers who manage tracking issues but don't make any changes.
+- **Triage**: Recommended for contributors who need to proactively manage issues and pull requests without write access. This level is useful for project managers who track issues and discussions without modifying code.
 - **Write**: Recommended for contributors who actively push to your project. Write is the standard permission for most developers.
 - **Maintain**: Recommended for project managers who need to manage the repository without access to sensitive or destructive actions.
 - **Admin**: Recommended for people who need full access to the project, including sensitive and destructive actions like managing security or deleting a repository. These people are repository owners and administrators.
 
-You can give organization members, outside collaborators, and teams different levels of access to repositories owned by an organization. Each permission level progressively increases access to a repository's content and settings. Choose the level that best fits each person or team's role in your project without giving more access to the project than necessary.
+You can give organization members, outside collaborators, and teams different levels of access to repositories owned by an organization. Each permission level grants progressively more access to repository content and settings. Choose the level that best fits each person or team's role in your project without giving more access to the project than necessary.
 
-After you create a repository with the correct permissions, you can make it a template so that anyone who has access to the repository can generate a new repository that has the same directory structure and files as your default branch. To make a template:
+Administrators can also create custom roles in GitHub Enterprise, extending one of these base roles with additional permissions as needed.
 
-1. On GitHub.com, go to the main page of the repository.
-1. Under the repository name, select **Settings**. If you can't see the **Settings** tab, open the dropdown menu, and then select **Settings**.
+### What is repository forking?
 
-    :::image type="content" source="../media/repository-actions-settings.png" alt-text="Screenshot showing where to locate the settings button in your GitHub repository.":::
+Forking is a way to create a personal copy of someone else's repository under your own GitHub account. When you fork a repository, you get your own version that you can freely modify without affecting the original project. This process is a common workflow for contributing to open source or experimenting with changes safely.
 
-1. Select **Template repository**.
+You can also keep your fork up to date by pulling in changes from the original repository, often called the “upstream” repo.
+
+Here’s how to fork a repository:
+
+1. On GitHub.com, navigate to the main page of the repository you want to fork.
+2. In the upper-right corner, select **Fork**.
+3. Choose an owner for the fork (your personal account or an organization).
+4. Optionally, rename the forked repository or include all branches.
+5. Select **Create fork**.
+
+    :::image type="content" source="../media/fork-repo-option.png" alt-text="Screenshot showing the fork button in the top-right corner of a GitHub repository." border="false":::
+
+### Managing fork permissions (for admins)
+
+For organization-owned repositories, administrators can control whether repositories can be forked:
+
+- **Public repositories**: Forking is always allowed.
+- **Private repositories**: Forking can be disabled or restricted to organization members only.
+- **Internal repositories**: These can only be forked within the same enterprise account.
+
+To configure fork settings:
+
+1. Go to the Organization repository’s **Settings**.
+1. In the left sidebar, under Access, click **Member privileges**.
+1. Locate the **Repository forking** options and update them as needed.
+
+    :::image type="content" source="../media/fork-repo-manage.png" alt-text="Screenshot showing the fork permissions of a GitHub Organization." border="false":::
+
+> [!TIP]
+> If you disable forking for a private repository, no one (including organization members) will be able to fork it.
+
+To learn more, see the GitHub Docs article on [Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+
+## Viewing Repository Insights
+
+Repository insights on GitHub offer a powerful way to monitor and analyze your project's activity, contributions, and dependencies. By leveraging these insights, you can track project health, identify bottlenecks, and ensure security. This section will guide you through the steps to access repository insights and provide best practices for using them effectively.
+
+### Steps to View Repository Insights
+
+1. Navigate to the repository on GitHub.
+2. Under the repository name, click on the **Insights** tab.
+3. Explore the following sections within the Insights tab:
+   - **Contributors**: View a graph of contributions over time, including commits, additions, and deletions by each contributor.
+   - **Traffic**: Monitor repository traffic, including unique visitors and page views.
+   - **Commits**: Analyze commit activity over time.
+   - **Code Frequency**: Track the number of lines added and deleted over time.
+   - **Dependency Graph**: View the dependencies of your repository and identify potential security vulnerabilities.
+
+### Best Practices for Using Repository Insights
+
+- **Monitor Contributions**: Use the Contributors section to identify active contributors and areas of the repository that are receiving the most attention.
+- **Track Traffic**: Use the Traffic section to understand how users are interacting with your repository and identify trends in engagement.
+- **Address Vulnerabilities**: Regularly review the Dependency Graph to ensure your repository remains secure.
+
+By leveraging repository insights, you can make data-driven decisions to improve collaboration, security, and project management.
 
 ## Ways Users Receive Repository Access
 

@@ -9,6 +9,7 @@ metadata:
   ms.topic: module
   ai-usage: ai-assisted
   ms.service: purview
+  hidden: true
 title: Protect sensitive data from AI-related risks
 summary: |
   Microsoft Purview helps organizations protect sensitive data in environments that use AI tools. Learn how to reduce data security risks by applying sensitivity labels, using data loss prevention controls, and deploying recommended protections through DSPM for AI.

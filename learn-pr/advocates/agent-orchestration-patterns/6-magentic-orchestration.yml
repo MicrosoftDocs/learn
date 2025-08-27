@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.agent-orchestration-patterns.magentic-orchestration
+title: Magentic orchestration
+metadata:
+  title: Magentic orchestration
+  description: Understand the magentic orchestration pattern in AI agent orchestration.
+  ms.date: 08/13/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-magentic-orchestration.md)]

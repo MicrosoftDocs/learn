@@ -4,6 +4,7 @@ metadata:
   title: Get started with natural language processing in Azure
   description: "Explore Azure AI Language's natural language processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection."
   ms.date: 05/22/2025
+  ms.update-cycle: 180-days
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module
