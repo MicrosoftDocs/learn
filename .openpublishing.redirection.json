@@ -53665,6 +53665,86 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/intro-to-azure-dedicated-hosts/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/dedicated-hosts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-dedicated-hosts/2-what-is-azure-dedicated-hosts.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/dedicated-hosts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-dedicated-hosts/3-how-azure-dedicated-hosts-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/dedicated-hosts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-dedicated-hosts/4-when-to-use-azure-dedicated-hosts.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/dedicated-hosts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-dedicated-hosts/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/dedicated-hosts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-dedicated-hosts/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/dedicated-hosts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-dedicated-hosts/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/dedicated-hosts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-application-azure-paas/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/architecture-migrate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-application-azure-paas/2-azure-cloud-native-services-modernize-database-workloads.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/architecture-migrate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-application-azure-paas/3-create-application-migration-plan.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/architecture-migrate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-application-azure-paas/4-convert-migrate-oracle-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/architecture-migrate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-application-azure-paas/5-migrate-applications-to-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/architecture-migrate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-application-azure-paas/6-management-cost-optimization-considerations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/architecture-migrate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-application-azure-paas/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/architecture-migrate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-application-azure-paas/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/architecture-migrate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-application-azure-paas/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/architecture-migrate",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cyclecloud/",
       "redirect_document_id": false
