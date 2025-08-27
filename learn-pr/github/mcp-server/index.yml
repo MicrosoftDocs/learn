@@ -43,6 +43,7 @@ units:
   - learn.github.mcp-server.simplify-workflow
   - learn.github.mcp-server.configure-connect
   - learn.github.mcp-server.use-github-copilot-chat
+  - learn.github.mcp-server.exercise-integrate-github-copilot
   - learn.github.mcp-server.knowledge-check
   - learn.github.mcp-server.summary
 badge:
