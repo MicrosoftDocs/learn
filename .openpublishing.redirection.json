@@ -54053,6 +54053,86 @@
       "source_path": "learn-pr/paths/intermediate-bicep/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-compute-gallery/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-compute-gallery/2-what-is-azure-compute-gallery.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-compute-gallery/3-how-azure-compute-gallery-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-compute-gallery/4-when-to-use-azure-compute-gallery.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-compute-gallery/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-compute-gallery/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-compute-gallery/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-iaas/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-iaas/2-describe-rehosting-streamlines-migration.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-iaas/3-assess-workloads-build-migration-plan.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-iaas/4-oracle-database-server-virtual-machine-deployment-azure-iaas.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-iaas/5-application-migration-process-to-azure-iaas.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-iaas/6-management-cost-optimization-considerations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-iaas/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-iaas/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-iaas/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration",
+      "redirect_document_id": false
     }
   ]
 }

@@ -31,7 +31,6 @@ products:
 subjects:
 - databases
 modules:
-- learn.azure.migrate-oracle-workload-azure-iaas
 - learn.azure.migrate-oracle-workload-azure-odaa
 trophy:
   uid: learn.azure.migrate-oracle-workloads-to-azure.trophy
