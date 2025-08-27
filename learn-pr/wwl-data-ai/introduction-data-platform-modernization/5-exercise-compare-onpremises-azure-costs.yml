@@ -4,12 +4,12 @@ title: 'Exercise: Compare on-premises Azure costs'
 metadata:
   title: 'Exercise: Compare on-premises Azure costs'
   description: "Exercise: Compare on-premises Azure costs"
-  ms.date: 04/14/2023
-  author: wwlpublish
-  ms.author: rcaper
+  ms.date: 08/26/2025
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-exercise-compare-onpremises-azure-costs.md)]
+  [!include[](includes/5-exercise-compare-onpremises-azure-costs.md)]

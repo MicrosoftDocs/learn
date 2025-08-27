@@ -8,6 +8,14 @@ Data Factory provides a modern data integration experience to ingest, prepare, a
 
 Notebooks in Microsoft Fabric offer a versatile environment for data exploration, transformation, and analysis. They support various programming languages, including Python, KQL, and SQL, and provide an interactive interface for running code, visualizing data, and documenting workflows. Key features include:
 
+- Microsoft Fabric notebooks provide an **interactive, browser-based environment** where you can write and run code without needing local setup. They allow you to combine code, text written in Markdown, and visual outputs in a single place, making them useful for both exploration and documentation.
+
+- Notebooks support **multiple languages**, including PySpark, Python, Scala, Spark SQL, and SparkR, and you can even switch between languages from one cell to another. For working with data, the built-in display() function makes it easy to turn DataFrames or query results into **interactive tables and simple charts**, with options to filter and inspect rows and columns directly in the notebook.
+
+- In terms of execution, notebooks can be run **interactively** while you work, **scheduled** to run automatically, or embedded in a pipeline. The way they run depends on the context—sometimes under your own account, other times under a pipeline or scheduler—which controls the level of access.
+
+- Finally, **environments** in Fabric make it possible to manage dependencies consistently. Shared environments and reusable configurations help teams standardize their work and avoid repeating setup across multiple notebooks.
+
 ## Schedules and Triggers in Microsoft Fabric
 
 Scheduling pipelines includes three standard types of scheduling, including time-based, event-based, and custom scheduling. Scheduling in Microsoft Fabric also allows for seamless integration with other services, which allow for more dynamic event-driven pipelines.

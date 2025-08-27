@@ -115,7 +115,7 @@ There are several documentation tasks where agent mode is the best choice.
 
 1. Multi-file and cross-file documentation generation.
 
-    - Agent mode can analyze the entire project structure, gather information from multiple files and folders, and generate documentation that links and summarizes content across the codebase. Ror example, generating a full API reference or a README that describes all major components.
+    - Agent mode can analyze the entire project structure, gather information from multiple files and folders, and generate documentation that links and summarizes content across the codebase. For example, generating a full API reference or a README that describes all major components.
 
 1. Automated project analysis and summarization.
 

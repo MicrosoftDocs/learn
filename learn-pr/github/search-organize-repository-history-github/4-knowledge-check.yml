@@ -3,7 +3,7 @@ uid: learn.github.search-organize-repository-history-github.4-knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Check what you've learned.
+  description: Check your knowledge.
   ms.date: 01/02/2025
   author: a-a-ron
   ms.author: aastewar
@@ -15,36 +15,86 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "How does GitHub's top-level search bar differ from the search options available on repository tabs?"
-    choices:
-    - content: "Other than being located in different parts of the user interface, they're otherwise the same."
-      isCorrect: false
-      explanation: "They offer different user experiences due to their scoping."
-    - content: "They support different filter syntax options."
-      isCorrect: false
-      explanation: "They support the same filter syntax model."
-    - content: "The top-level search bar supports searching everything across all of GitHub, whereas the repository tab searches are scoped to cover specific types in the current repository."
-      isCorrect: true
-      explanation: "The top-level search allows the most flexibility, whereas the scoped tab searches provide popular filter dropdowns for easier refinement."
-  - content: "What does `git blame` do?"
-    choices:
-    - content: "It creates a bug assigned to the last person who committed changes to the specified file."
-      isCorrect: false
-      explanation: "`git blame` is used to display file commit history."
-    - content: "It displays the commit history of the file."
-      isCorrect: true
-      explanation: "Despite the accusatory name, `git blame` is just a command to display commit history."
-    - content: "It reverts the effects of a `git praise` command."
-      isCorrect: false
-      explanation: "In some systems, `git praise` is a friendlier alias for the `git blame` command."
-  - content: "Suppose a bug issue is reported on your project, and you know which pull request introduced the problem. Which of the following options is **not** a cross-linking best practice?"
-    choices:
-    - content: "Don't create cross-links when the root cause of the issue is already known."
-      isCorrect: true
-      explanation: "It's a good practice to always add cross-links in case you or someone else needs the context later on."
-    - content: "Add a comment to the bug report that includes the pull request's author by using an @mention."
-      isCorrect: false
-      explanation: "This linking is a good practice, assuming the author is available to support the issue."
-    - content: "Add a comment to the bug report that links the pull request to it using the #ID syntax."
-      isCorrect: false
-      explanation: "This linking is a good practice as it provides transparency to the issue author and anyone who might end up working on it."
+    - content: "How does GitHub's top-level search bar differ from the search options available on repository tabs?"
+      choices:
+        - content: "Other than being located in different parts of the user interface, they're otherwise the same."
+          isCorrect: false
+          explanation: "They offer different user experiences due to their scoping."
+        - content: "They support different filter syntax options."
+          isCorrect: false
+          explanation: "They support the same filter syntax model."
+        - content: "The top-level search bar supports searching everything across all of GitHub, whereas the repository tab searches are scoped to cover specific types in the current repository."
+          isCorrect: true
+          explanation: "The top-level search allows the most flexibility, whereas the scoped tab searches provide popular filter dropdowns for easier refinement."
+
+    - content: "What does `git blame` do?"
+      choices:
+        - content: "It creates a bug assigned to the last person who committed changes to the specified file."
+          isCorrect: false
+          explanation: "`git blame` is used to display file commit history."
+        - content: "It displays the commit history of the file."
+          isCorrect: true
+          explanation: "Despite the accusatory name, `git blame` is just a command to display commit history."
+        - content: "It reverts the effects of a `git praise` command."
+          isCorrect: false
+          explanation: "In some systems, `git praise` is a friendlier alias for the `git blame` command."
+
+    - content: "Suppose a bug issue is reported on your project, and you know which pull request introduced the problem. Which of the following options is **not** a cross-linking best practice?"
+      choices:
+        - content: "Don't create cross-links when the root cause of the issue is already known."
+          isCorrect: true
+          explanation: "It's a good practice to always add cross-links in case you or someone else needs the context later on."
+        - content: "Add a comment to the bug report that includes the pull request's author by using an @mention."
+          isCorrect: false
+          explanation: "This linking is a good practice, assuming the author is available to support the issue."
+        - content: "Add a comment to the bug report that links the pull request to it using the #ID syntax."
+          isCorrect: false
+          explanation: "This linking is a good practice as it provides transparency to the issue author and anyone who might end up working on it."
+
+    - content: "What is a benefit of assigning a milestone to issues or pull requests?"
+      choices:
+        - content: "It prevents other users from editing the issue or PR."
+          isCorrect: false
+          explanation: "Milestones are used for grouping, not for permissions."
+        - content: "It helps track progress toward a shared goal, such as a release."
+          isCorrect: true
+          explanation: "Milestones group issues and PRs to track completion toward goals."
+        - content: "It sends email notifications to the entire repository."
+          isCorrect: false
+          explanation: "Milestones don't change notification behavior."
+
+    - content: "Which query shows all open issues labeled as bugs in a specific milestone?"
+      choices:
+        - content: "is: open is: issue label: bug milestone:\"Sprint 1\""
+          isCorrect: true
+          explanation: "This query filters by both label and milestone."
+        - content: "Label: bug milestone: closed"
+          isCorrect: false
+          explanation: "This query is invalid; milestone: closed isn't a valid value."
+        - content: "Is: pr label: bug"
+          isCorrect: false
+          explanation: "These filters pull requests, not issues."
+
+    - content: "How do you insert a saved reply in an issue or pull request comment?"
+      choices:
+        - content: "Click the saved reply icon in the comment field and select from your saved replies."
+          isCorrect: true
+          explanation: "The saved reply icon (speech bubble) lets you select from predefined replies."
+        - content: "Type `@saved` and select from the reply dropdown."
+          isCorrect: false
+          explanation: "There's no `@saved` shortcut for replies."
+        - content: "Use the slash command `/reply` to open your saved replies."
+          isCorrect: false
+          explanation: "GitHub doesn't support slash commands for saved replies."
+
+    - content: "What does assigning someone to an issue or pull request indicate?"
+      choices:
+        - content: "That person is responsible for working on it."
+          isCorrect: true
+          explanation: "Assigning a user shows they're expected to take ownership."
+        - content: "That person is the original author."
+          isCorrect: false
+          explanation: "Authorship and assignment are separate."
+        - content: "That person will automatically receive a badge."
+          isCorrect: false
+          explanation: "GitHub doesn't award badges for assignments."
