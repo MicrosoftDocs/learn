@@ -6,7 +6,7 @@ metadata:
   title: Work With Azure Blob Storage
   description: "Learn how to use the Azure Blob storage client library to create and update Blob storage resources."
   ms.date: 06/26/2025
-  author: wwlpublish
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: module
   ms.collection: N/A
