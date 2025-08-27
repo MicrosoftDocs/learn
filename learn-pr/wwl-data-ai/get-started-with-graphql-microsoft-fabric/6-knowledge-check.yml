@@ -4,12 +4,10 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 10/24/2024
+  ms.date: 08/07/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-  ms.custom:
-    - ignite-2024
   module_assessment: true
 durationInMinutes: 6
 quiz:

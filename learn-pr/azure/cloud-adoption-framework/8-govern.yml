@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework.govern
+title: Govern
+metadata:
+  title: Govern
+  description: "A high-level overview of the Govern methodology in the Cloud Adoption Framework, including how to assess cloud risks, document policies, and enforce policies."
+  ms.date: 08/07/2025
+  author: stephen-sumner
+  ms.author: ssumner
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-govern.md)]

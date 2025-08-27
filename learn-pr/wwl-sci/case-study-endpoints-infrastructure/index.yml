@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.case-study-endpoints-infrastructure
+metadata:
+  title: "Interactive Case Study: Securing Endpoints and Infrastructure"
+  description: "Apply your cybersecurity architect skills on a real business scenario in the area of endpoint and infrastructure security. Analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
+  ms.date: 08/05/2025
+  author: wwlpublish
+  ms.author: ceperezb
+  ai-usage: ai-assisted
+  ms.topic: module
+  ms.service: security
+title: "Interactive case study: Securing endpoints and infrastructure"
+summary: "Apply your cybersecurity architect skills on a real business scenario focused on endpoint and infrastructure security. Analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
+abstract: |
+  In this interactive case study, you:
+  - Explore common security gaps in distributed, hybrid enterprises spanning endpoints, OT/IoT, and cloud governance.
+  - Learn how to analyze threats and map Microsoft security capabilities to address risks across IT and industrial environments.
+  - Apply architectural reasoning to design and sequence a Zero Trust–aligned solution that secures endpoints and infrastructure end‑to‑end.
+prerequisites: |
+  -   Experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
+  -   Experience with hybrid and cloud implementations.
+iconUrl: /training/achievements/case-study-endpoints-infrastructure.svg
+hidden: false
+levels: 
+  - advanced
+roles:
+  - security-engineer
+  - solution-architect
+products: 
+  - intune
+  - defender-xdr
+  - defender-for-iot
+  - defender-for-cloud
+  - defender-endpoint
+  - azure-arc
+subjects: 
+  - security
+  - cloud-security
+units:
+- learn.case-study-endpoints-infrastructure.introduction
+- learn.case-study-endpoints-infrastructure.interactive-case-study
+- learn.case-study-endpoints-infrastructure.interactive-case-study-highlights
+- learn.case-study-endpoints-infrastructure.knowledge-check
+- learn.case-study-endpoints-infrastructure.summary
+badge:
+  uid: learn.case-study-endpoints-infrastructure.badge
+
+

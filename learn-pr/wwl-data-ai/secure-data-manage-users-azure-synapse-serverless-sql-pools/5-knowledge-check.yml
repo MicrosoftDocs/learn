@@ -2,11 +2,11 @@
 uid: learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 06/14/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
@@ -47,4 +47,4 @@ quiz:
     - content: "Executor."
       isCorrect: false
       explanation: "Incorrect. This role doesn't exist."
-
+
