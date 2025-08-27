@@ -261,6 +261,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/assess-sql-server-databases-for-migration-to-azure-sql/6-assess-database-data-migration-assistant.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sql-workloads-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/migrate-sql-workloads-azure-sql-databases/4-migrate-using-data-migration-assistant.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sql-workloads-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/migrate-sql-workloads-azure-virtual-machines/4-review-data-migration-assistant.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sql-workloads-azure",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/intro-to-arc-enabled-data-services/4-sql-managed-instance.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/upload-download-and-manage-data-with-azure-storage-explorer",
       "redirect_document_id": false
@@ -53582,7 +53597,7 @@
     {
       "source_path": "learn-pr/entra-external-identities.yml",
       "redirect_url": "/training/modules/entra-external-identities",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/entra-external-identities/1-introduction.yml",
@@ -53802,6 +53817,101 @@
     {
       "source_path": "learn-pr/wwl-data-ai/deploy-paas-solutions-with-azure-sql/9-knowledge-check.md",
       "redirect_url": "/training/modules/deploy-paas-solutions-with-azure-sql/8-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/child-extension-bicep-templates/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/child-extension-bicep-templates/2-understand-azure-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/child-extension-bicep-templates/3-define-child-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/child-extension-bicep-templates/4-exercise-define-child-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/child-extension-bicep-templates/5-define-extension-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/child-extension-bicep-templates/6-work-with-existing-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/child-extension-bicep-templates/7-exercise-deploy-extension-existing-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/child-extension-bicep-templates/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/child-extension-bicep-templates/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/child-extension-bicep-templates/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-diagnose-and-troubleshoot-azure-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-diagnose-and-troubleshoot-azure-storage/2-storage-toubleshooting-tools.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-diagnose-and-troubleshoot-azure-storage/3-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-diagnose-and-troubleshoot-azure-storage/4-exercise-storage-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-diagnose-and-troubleshoot-azure-storage/5-storage-logging.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-diagnose-and-troubleshoot-azure-storage/6-exercise-storage-logging.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-diagnose-and-troubleshoot-azure-storage/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-diagnose-and-troubleshoot-azure-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/intermediate-bicep/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
       "redirect_document_id": false
     }
   ]

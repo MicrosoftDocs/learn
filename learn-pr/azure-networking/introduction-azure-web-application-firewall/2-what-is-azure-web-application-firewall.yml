@@ -5,8 +5,8 @@ metadata:
   title: What is Azure Web Application Firewall?
   description: Learn the basics of Azure Web Application Firewall including key features and common attacks it protects against.
   ms.date: 05/01/2025
-  author: vhorne
-  ms.author: robmcm
+  author: halkazwini
+  ms.author: halkazwini
   ms.topic: unit
   ms.custom: sfi-ropc-nochange
 durationInMinutes: 10

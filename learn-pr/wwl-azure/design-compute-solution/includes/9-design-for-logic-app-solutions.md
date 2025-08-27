@@ -47,9 +47,7 @@ There are several points to consider when deciding whether Azure Logic Apps is t
 
 #### Business application
 
-Take a few minutes to learn how [Azure Logic Apps](https://customers.microsoft.com/story/1567549472346870706-eon-esmartsystems-azure-en) distributes data from drones inspecting power lines. 
-
-You can use the following flowchart for other questions to ask as you plan for using Azure Logic Apps.
+This flowchart shows a detailed decision tree for when to use Azure Logic Apps.
 
 :::image type="content" source="../media/investigate-logic-apps-thumbnail.png" alt-text="Flowchart that shows a detailed decision tree for when to use Azure Logic Apps." border="false" lightbox="../media/investigate-logic-apps.png":::
 
