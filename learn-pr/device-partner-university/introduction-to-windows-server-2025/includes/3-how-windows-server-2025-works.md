@@ -1,6 +1,6 @@
 Windows Server 2025 is a modern, secure, and scalable operating system designed to support diverse workloads—from traditional on-premises infrastructure to hybrid cloud environments. This unit introduces the key components of Windows Server 2025 and explains how they work together to deliver reliable, high-performance services.
 
-## 🔧 Core components of Windows Server 2025
+## Core components of Windows Server 2025
 
 ### 1. Operating system kernel
 - Manages hardware resources, memory, processes, and security.
@@ -40,7 +40,7 @@ Windows Server 2025 is a modern, secure, and scalable operating system designed 
 - **Azure Arc** for managing on-prem servers like cloud resources.
 - **Hotpatching** for updates without rebooting.
 
-## 🔄 How these parts work together
+## How these parts work together
 
 Windows Server 2025 is modular and interoperable. Here's how its components interact:
 
@@ -57,7 +57,7 @@ Together, these components form a cohesive platform that adapts to different org
 
 A retail company operates hundreds of stores in various locations. Each store requires local server capabilities to support point-of-sale systems, inventory management, and customer Wi-Fi. The central IT team seeks unified control, consistent security, and scalable infrastructure across all locations. To meet these requirements, the company adopts Windows Server 2025.
 
-## 🧩 How Windows Server 2025 components work together
+## How Windows Server 2025 components work together
 
 The following sections describe how each component of Windows Server 2025 contributes to the company's distributed infrastructure strategy.
 
