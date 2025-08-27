@@ -17,6 +17,12 @@ Lakeflow Jobs offer several benefits that make them a powerful tool for managing
 - Enables a unified approach to data processing and analytics.
 - Trigger Lakeflow Jobs based on schedules, events, or dependencies for flexibility in data operations.
 
+### Notifications
+
+- Trigger alerts on key events like job/task start, success, failure, or long runtimes.
+- Send notifications to multiple destinations such as email, Slack, Teams, PagerDuty, or webhooks.
+- Control noise by muting notifications for skipped or canceled runs.
+
 ### Real-Time Data Processing
 
 - Supports both batch and streaming data for real-time data processing and analytics.

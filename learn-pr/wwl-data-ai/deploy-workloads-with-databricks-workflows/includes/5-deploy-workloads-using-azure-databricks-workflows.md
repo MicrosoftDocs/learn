@@ -2,7 +2,8 @@ Deploying workloads using Lakeflow Jobs involves several steps, from setting up 
 
 ### Set Up Your Azure Databricks Cluster
 
-- Configure the compute that will execute the task. You can either use Serverless compute, an existing all-purpose cluster, or specify a classic cluster that will be created for each job run.
+- Configure the compute that will execute the task. You can choose classic jobs compute, serverless compute for jobs (if enabled), an existing SQL warehouse, Lakeflow Declarative Pipelines compute, or optionally an existing all-purpose compute (not recommended for production).
+- You can share job compute across tasks in a workflow to reduce start-up latency and optimize resource usage, with compute starting when the first task begins and terminating after the final dependent task completes.
 
 ### Develop Your Data Pipelines
 
@@ -16,7 +17,7 @@ Deploying workloads using Lakeflow Jobs involves several steps, from setting up 
 
 ### Create Jobs for Automation
 
-- Define Jobs: In the Databricks workspace, navigate to the 'Jobs & Pipelines' section and create new jobs. You can set up jobs to execute notebooks, scripts, or compiled Java ARchives (JARs).
+- Define Jobs: In the Databricks workspace, navigate to the 'Jobs & Pipelines' section and create new jobs. You can set up jobs to execute notebooks, scripts, or compiled Java Archives (JARs).
 
 - Configure Tasks and Dependencies: Define the tasks within each job, set parameters, and configure dependencies between tasks if your Lakeflow Job requires executing tasks in a specific order.
 

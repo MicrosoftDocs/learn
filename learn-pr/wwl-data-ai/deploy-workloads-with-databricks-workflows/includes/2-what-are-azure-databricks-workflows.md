@@ -1,10 +1,12 @@
 Lakeflow Jobs are a set of tools and features within the Azure Databricks environment designed to help you orchestrate, schedule, and automate data processing tasks. These workflows allow you to define, manage, and run multi-step data pipelines that can include data ingestion, transformation, and analysis processes. They provide an efficient way to build, execute, and monitor batch and streaming data jobs that are scalable and optimized for performance.
 
-The Laekflow Jobs are deeply integrated with Azure's cloud infrastructure, benefiting from its security, scalability, and compliance features. They support dependencies between tasks, allowing for sophisticated job scheduling and management. Additionally, Azure Databricks provides a user-friendly interface for creating, monitoring, and managing these workflows, which enhances productivity and collaboration among data teams. This setup is ideal for organizations looking to streamline their data operations in a robust and scalable cloud environment.
+The Lakeflow Jobs are deeply integrated with Azure's cloud infrastructure, benefiting from its security, scalability, and compliance features. They support dependencies between tasks, allowing for sophisticated job scheduling and management. Additionally, Azure Databricks provides a user-friendly interface for creating, monitoring, and managing these workflows, which enhances productivity and collaboration among data teams. This setup is ideal for organizations looking to streamline their data operations in a robust and scalable cloud environment.
 
 ![Diagram showing an example of a Lakeflow Job. The diagram shows order and clickstream data going into a Delta Live Tables pipeline, then being prepared and joined and then used to train models.](../media/azure-databricks-workflows.png)
 
 Some components of Lakeflow Jobs are:
+
+- **Control flow:** Lets you orchestrate task execution—sequentially or in parallel—with branching (via conditional and if/else tasks), looping (For each), and retry logic to manage dependencies and error handling.
 
 - **Job Scheduling:** You can schedule jobs to run automatically at defined intervals, handling dependencies between tasks and retrying failed tasks, ensuring robust data processing routines.
 

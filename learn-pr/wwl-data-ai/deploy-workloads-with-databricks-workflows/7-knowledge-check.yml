@@ -32,7 +32,7 @@ quiz:
       explanation: "Incorrect. Databricks notebooks are collaborative documents that contain runnable code, visualizations, and narrative text used to orchestrate complex data transformations and visualizations."
     - content: "Jobs"
       isCorrect: false
-      explanation: "Incorrect. Jobs are the primary component in Lakeflow Jobs. They allow you to define and schedule automated tasks such as running notebooks, scripts, or compiled Java ARchives (JARs)."
+      explanation: "Incorrect. Jobs are the primary component in Lakeflow Jobs. They allow you to define and schedule automated tasks such as running notebooks, scripts, or compiled Java Archives (JARs)."
     - content: "Clusters"
       isCorrect: true
       explanation: "Correct. Clusters in Azure Databricks are groups of virtual machines that provide computational resources for running jobs. They can be configured to autoscale, which means they automatically adjust the number of nodes in the cluster based on the workload, ensuring efficient use of resources and optimal performance."
