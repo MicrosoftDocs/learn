@@ -55,7 +55,7 @@ Together, these components form a cohesive platform that adapts to different org
 
 ## Scenario overview
 
-A national retail company operates hundreds of stores across the country. Each store requires local server capabilities to support point-of-sale systems, inventory management, and customer Wi-Fi. The central IT team seeks unified control, consistent security, and scalable infrastructure across all locations. To meet these requirements, the company adopts Windows Server 2025.
+A retail company operates hundreds of stores in various locations. Each store requires local server capabilities to support point-of-sale systems, inventory management, and customer Wi-Fi. The central IT team seeks unified control, consistent security, and scalable infrastructure across all locations. To meet these requirements, the company adopts Windows Server 2025.
 
 ## 🧩 How Windows Server 2025 components work together
 
