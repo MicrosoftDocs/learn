@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-workloads-with-databricks-workflows.deploy-workloads-using-azure-databricks-workflows
-title: Deploy workloads using Azure Databricks Workflows
+title: Deploy workloads using Lakeflow Jobs
 metadata:
-  title: Deploy Workloads using Azure Databricks Workflows
-  description: "Deploy workloads using Azure Databricks Workflows"
+  title: Deploy Workloads using Lakeflow Jobs
+  description: "Deploy workloads using Lakeflow Jobs"
   ms.date: 08/20/2025
   author: weslbo
   ms.author: wedebols

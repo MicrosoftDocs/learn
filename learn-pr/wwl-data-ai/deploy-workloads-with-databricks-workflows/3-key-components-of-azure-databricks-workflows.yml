@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-workloads-with-databricks-workflows.key-components-of-azure-databricks-workflows
-title: Understand key components of Azure Databricks Workflows
+title: Understand key components of Lakeflow Jobs
 metadata:
-  title: Understand Key Components of Azure Databricks Workflows
-  description: "Understand key components of Azure Databricks Workflows"
+  title: Understand Key Components of Lakeflow Jobs
+  description: "Understand key components of Lakeflow Jobs"
   ms.date: 08/20/2025
   author: weslbo
   ms.author: wedebols

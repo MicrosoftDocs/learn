@@ -1,14 +1,14 @@
-Deploying workloads using Azure Databricks Workflows involves several steps, from setting up your Databricks environment to orchestrating and monitoring your data pipelines. Here's a step-by-step guide to help you get started:
+Deploying workloads using Lakeflow Jobs involves several steps, from setting up your Databricks environment to orchestrating and monitoring your data pipelines. Here's a step-by-step guide to help you get started:
 
-### Set Up Your Azure Databricks Environment
+### Set Up Your Azure Databricks Cluster
 
-- Configure Databricks Clusters: Set up clusters in your Databricks workspace. You can choose between standard and high-concurrency clusters depending on your needs. Configure autoscaling to optimize resource usage.
+- Configure the compute that will execute the task. You can either use Serverless compute, an existing all-purpose cluster, or specify a classic cluster that will be created for each job run.
 
 ### Develop Your Data Pipelines
 
 - Create Notebooks or Scripts: Use Databricks notebooks or scripts to develop your data processing tasks. Notebooks support Python, Scala, SQL, and R. Ensure that your code is modular and well-documented to facilitate maintenance and collaboration.
 
-- Test Locally: Run your scripts or notebooks manually to test the logic and performance before scheduling them as part of a workflow.
+- Test manually: Run your scripts or notebooks manually to test the logic and performance before scheduling them as part of a Lakeflow Job.
 
 ### Package Dependencies
 
@@ -16,21 +16,21 @@ Deploying workloads using Azure Databricks Workflows involves several steps, fro
 
 ### Create Jobs for Automation
 
-- Define Jobs: In the Databricks workspace, navigate to the 'Jobs' section and create new jobs. You can set up jobs to execute notebooks, scripts, or compiled Java ARchives (JARs).
+- Define Jobs: In the Databricks workspace, navigate to the 'Jobs & Pipelines' section and create new jobs. You can set up jobs to execute notebooks, scripts, or compiled Java ARchives (JARs).
 
-- Configure Tasks and Dependencies: Define the tasks within each job, set parameters, and configure dependencies between tasks if your workflow requires executing tasks in a specific order.
+- Configure Tasks and Dependencies: Define the tasks within each job, set parameters, and configure dependencies between tasks if your Lakeflow Job requires executing tasks in a specific order.
 
-### Schedule and Trigger Workflows
+### Schedule and Trigger Lakeflow Jobs
 
-- Schedule Jobs: Use the built-in scheduler to set up cron jobs for running your workflows at specific times or intervals. Alternatively, trigger jobs by external events or API calls.
+- Schedule Jobs: Use the built-in scheduler to set up cron jobs for running your Lakeflow Jobs at specific times or intervals. Alternatively, trigger jobs by external events or API calls.
 
-- Trigger Dependencies: Configure job dependencies to ensure that certain jobs run only after the successful completion of others, facilitating complex data workflows.
+- Trigger Dependencies: Configure job dependencies to ensure that certain jobs run only after the successful completion of others, facilitating complex data Lakeflow Jobs.
 
 ### Monitor and Optimize
 
-- Monitoring Tools: Utilize Databricks' built-in monitoring tools to track the execution and performance of your workflows. To optimize costs and efficiency, adjust resources and configurations based on performance data.
+- Monitoring Tools: Utilize Databricks' built-in monitoring tools to track the execution and performance of your Lakeflow Jobs. To optimize costs and efficiency, adjust resources and configurations based on performance data.
 
-- Logging and Debugging: Check logs for errors or bottlenecks in your workflows. Databricks provides detailed logs that can help in troubleshooting and refining your processes.
+- Logging and Debugging: Check logs for errors or bottlenecks in your Lakeflow Jobs. Databricks provides detailed logs that can help in troubleshooting and refining your processes.
 
 ### Collaborate and Share
 
@@ -42,4 +42,4 @@ Deploying workloads using Azure Databricks Workflows involves several steps, fro
 
 - Implement Security Measures: Apply security policies and manage access control to protect your data and comply with regulations. Utilize Databricks’ features for data encryption, role-based access control, and audit trails.
 
-By following these steps, you can efficiently deploy and manage your data processing and analytical workloads using Azure Databricks Workflows, using the platform's capabilities for big data and machine learning projects.
+By following these steps, you can efficiently deploy and manage your data processing and analytical workloads using Lakeflow Jobs, using the platform's capabilities for big data and machine learning projects.

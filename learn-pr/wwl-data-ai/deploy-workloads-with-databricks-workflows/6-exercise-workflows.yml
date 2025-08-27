@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-workloads-with-databricks-workflows.exercise-workflows
-title: Exercise - Create an Azure Databricks Workflow
+title: Exercise - Create a Lakeflow Job
 metadata:
-  title: Exercise - Create an Azure Databricks Workflow
-  description: "Exercise - Create an Azure Databricks Workflow"
+  title: Exercise - Create a Lakeflow Job
+  description: "Exercise - Create a Lakeflow Job"
   ms.date: 08/20/2025
   author: weslbo
   ms.author: wedebols
