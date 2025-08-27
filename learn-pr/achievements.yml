@@ -6390,6 +6390,16 @@ achievements:
   title: Introduction to migrating ASP.NET apps to Azure
   summary: Evaluate the process of migrating an ASP.NET application from on-premises to Azure, along with a supporting Azure SQL database. Identify the benefits and challenges of the migration process.
   iconUrl: /training/achievements/intro-to-migrating-aspnet-apps-azure.svg
+- uid: learn.azure.publish-reusable-bicep-code-using-azure-pipelines.badge
+  type: badge
+  title: Publish reusable Bicep code by using Azure Pipelines
+  summary: Publish Azure template specs and Bicep modules by using a deployment pipeline. Automatically validate and add versioning to your reusable Bicep code.
+  iconUrl: /training/achievements/bicep/publish-reusable-bicep-code-using-azure-pipelines.svg
+- uid: learn.azure.deploy-azure-managed-lustre-file-system.badge
+  type: badge
+  title: Accelerate HPC and AI workloads with Azure Managed Lustre
+  summary: Deploy an Azure Managed Lustre file system, integrate the file system with Azure Blob Storage, and connect clients to the file system.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions.badge
   type: badge
   title: Manage end-to-end deployment scenarios by using Bicep and GitHub Actions

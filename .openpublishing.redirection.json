@@ -53830,6 +53830,91 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/deploy-azure-managed-lustre-file-system/connect-client-to-file-system.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-managed-lustre/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-managed-lustre-file-system/create-managed-lustre-file-system.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-managed-lustre/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-managed-lustre-file-system/export-data-to-blob-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-managed-lustre/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-managed-lustre-file-system/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-managed-lustre/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-managed-lustre-file-system/introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-managed-lustre/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-managed-lustre-file-system/knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-managed-lustre/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-managed-lustre-file-system/managed-lustre-overview-prerequisites.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-managed-lustre/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-managed-lustre-file-system/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-managed-lustre/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-azure-pipelines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-azure-pipelines/2-publish-bicep-code-deployment-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-azure-pipelines/3-exercise-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-azure-pipelines/4-exercise-publish-template-spec.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-azure-pipelines/5-design-pipeline-versioning-strategy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-azure-pipelines/6-exercise-publish-module-registry.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-azure-pipelines/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-azure-pipelines/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-reusable-bicep-code-using-azure-pipelines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/implement-data-loss-prevention/index.md",
       "redirect_url": "/training/paths/purview-implement-manage-dlp/",
       "redirect_document_id": false
