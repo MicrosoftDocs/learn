@@ -4,6 +4,7 @@ metadata:
   title: Design a Modern Data Warehouse using Azure Synapse Analytics
   description: "Design a Modern Data Warehouse using Azure Synapse Analytics"
   ms.date: 04/25/2025
+  ms.update-cycle: 180-days
   author: wwlpublish
   ms.author: jamesh
   ms.topic: module-standard-task-based

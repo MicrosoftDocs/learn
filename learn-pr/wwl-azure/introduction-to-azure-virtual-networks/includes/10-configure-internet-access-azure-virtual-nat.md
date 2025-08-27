@@ -17,9 +17,7 @@ NAT scales automatically to support dynamic workloads. NAT can support up to 16 
 
 ## Limitations of NAT
 
-- Basic resources (for example basic load balancer) and any products derived from them aren't compatible with NAT. Basic resources must be placed on a subnet not configured with NAT.
 - Only the IPv4 address family is supported. NAT doesn't interact with IPv6 address family. 
 - NAT can't span multiple virtual networks.
 - IP fragmentation isn't supported.
 
-Choose the best response for each question.
