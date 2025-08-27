@@ -15,7 +15,7 @@ Streams are the delivery mechanism that carries events from where they happen to
 
 Real-time analytics extends beyond processing event streams. To build real-time solutions, you need several integrated capabilities working together:
 
-**Real-time data ingestion:** Collect data from multiple sources simultaneously - database changes (Change Data Capture or CDC), sensors, applications, system logs, and APIs - as information is generated.
+**Real-time data ingestion:** Collect data from multiple sources simultaneously - database changes from change data capture, sensors, applications, system logs, and APIs - as information is generated.
 
 **Stream processing:** Analyze data while it's in motion, perform operations like filtering, aggregating, joining with other data sources, and detect patterns with minimal latency. Data may be temporarily buffered for processing but flows through the system continuously.
 
@@ -24,8 +24,6 @@ Real-time analytics extends beyond processing event streams. To build real-time 
 **Interactive dashboards:** Create visualizations that update automatically as new data arrives, show current state and trends in real-time.
 
 **Automated decision making:** Set up event-driven rules and triggers that can initiate actions, send alerts, or start workflows based on real-time conditions.
-
-**Complex event processing:** Identify meaningful patterns across multiple event streams, such as correlating user behavior with system performance or detecting fraud by analyzing transaction patterns.
 
 ## Use real-time analytics
 
