@@ -2,14 +2,14 @@
 uid: learn.wwl.use-delta-lake-azure-synapse-analytics.create-delta-tables
 title: Create Delta Lake tables
 metadata:
-  title: Create Delta Lake tables
+  title: Create Delta Lake Tables
   description: "Create Delta Lake tables"
-  ms.date: 10/11/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-create-delta-tables.md)]
+  [!include[](includes/3-create-delta-tables.md)]

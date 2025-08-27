@@ -32,5 +32,6 @@ modules:
 - learn.wwl.connect-agent-to-mcp-tools
 - learn.wwl.develop-ai-agent-with-semantic-kernel
 - learn.wwl.orchestrate-sk-multi-agent-solution
+- learn.wwl.discover-agents-with-a2a
 trophy:
   uid: learn.wwl.develop-ai-agent-on-azure.trophy

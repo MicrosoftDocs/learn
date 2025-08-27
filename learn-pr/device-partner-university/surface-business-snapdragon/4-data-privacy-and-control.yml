@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-business-snapdragon.data-privacy-and-control
+title: Data privacy and control
+metadata:
+  title: Data Privacy And Control
+  description: This content is part of the "Surface Pro for Business with Snapdragon® X Elite and Plus processors" module.
+  ms.date: 08/22/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-data-privacy-and-control.md)]

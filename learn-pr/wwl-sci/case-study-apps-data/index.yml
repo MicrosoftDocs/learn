@@ -20,7 +20,7 @@ prerequisites: |
   -   Experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
   -   Experience with hybrid and cloud implementations.
 iconUrl: /training/achievements/case-study-apps-data.svg
-hidden: true
+hidden: false
 levels: 
   - advanced
 roles:
