@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ninja-label-sensitive-data.create-publish-sensitivity-label
+title: Develop Your Sensitivity Label Strategy
+metadata:
+  title: Develop your sensitivity label strategy
+  description: "Develop your sensitivity label strategy."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/create-publish-sensitivity-label.md)]

@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ninja-label-sensitive-data.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the main benefit of using customizable sensitivity labels in an organization?"
+    choices:
+    - content: "They allow only manual labeling of files"
+      isCorrect: false
+    - content: "They help classify, protect, and monitor sensitive data across environments"
+      isCorrect: true
+    - content: "They automatically delete old files"
+      isCorrect: false
+
+  - content: "How do sensitivity labels maintain protection when files are shared externally?"
+    choices:
+    - content: "Labels are removed"
+      isCorrect: false
+    - content: "Files become public"
+      isCorrect: false
+    - content: "Labels are portable and retain protection with the document"
+      isCorrect: true
+
+  - content: "What distinguishes client-side auto-labeling from service-side auto-labeling in Microsoft Purview?"
+    choices:
+    - content: "Client-side requires user input; service-side applies labels automatically in storage"
+      isCorrect: true
+    - content: "Service-side can only label emails"
+      isCorrect: false
+    - content: "Client-side deletes files"
+      isCorrect: false
+
+  - content: "Why is it important to assign sensitivity labels to departments in large organizations?"
+    choices:
+    - content: "To ensure only relevant users can access the appropriate labeled content"
+      isCorrect: true
+    - content: "To remove all user access"
+      isCorrect: false
+    - content: "To create more passwords"
+      isCorrect: false
+
+  - content: "How does on-demand classification improve data protection for inactive or historical files?"
+    choices:
+    - content: "It deletes all old files"
+      isCorrect: false
+    - content: "It allows administrators to scan and label dormant files with current policies"
+      isCorrect: true
+    - content: "It archives the files permanently"
+      isCorrect: false
