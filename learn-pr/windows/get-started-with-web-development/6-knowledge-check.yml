@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn-windows.introduction-to-web-development.6-tracking-changes
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   module_assessment: true
   ai_generated_module_assessment: false
-  description: Check your knowledge of the basics of web development
+  description: Assess your knowledge of the basics of web development
   ms.date: 09/17/2024
   author: kjo-msft
   ms.author: karinjohnson
@@ -14,7 +14,7 @@ durationInMinutes: 2
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-    title: Check your knowledge
+    title:
     questions:
     - content: "What is the main purpose of HTML?"
       choices:
