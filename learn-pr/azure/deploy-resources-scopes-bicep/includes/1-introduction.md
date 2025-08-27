@@ -32,9 +32,6 @@ You should be familiar with:
 - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 - Child and extension resources.
 
-> [!NOTE]
-> In this module, you build on your knowledge of extension resources. If you need a refresher, see [Deploy child and extension resources by using Bicep](xref:learn.azure.child-extension-bicep-templates).
-
 To follow along with the exercises in the module, you need:
 
 - An Azure account, with the ability to create subscription-level resources. For one exercise, which is optional, you need to be able to create management groups and policies.

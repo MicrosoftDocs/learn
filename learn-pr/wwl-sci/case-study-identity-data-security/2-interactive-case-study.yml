@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.case-study-identity-data-security.interactive-case-study
+title: Interactive case study 
+metadata:
+  title: Interactive Case Study 
+  description: "Project overview and setup requirements." 
+  ms.date: 08/05/2025 
+  author: wwlpublish 
+  ms.author: ceperezb 
+  ms.topic: unit 
+durationInMinutes: 30
+content: |
+  [!include[](includes/2-interactive-case-study.md)]

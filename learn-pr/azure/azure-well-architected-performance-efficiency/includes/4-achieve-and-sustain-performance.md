@@ -1,73 +1,81 @@
-| :::image type="icon" source="../media/goal.svg":::  Protect against performance degradation while the system is in use and as it evolves. |
+| :::image type="icon" source="../media/goal.svg"::: Put safeguards in place to keep performance from slipping while the system is running and as it grows or changes over time. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-Development isn't a one-time effort. It's an ongoing process. Expect changes in performance as features change. There's variance in user patterns and profiles, even changes from optimizations in other Azure Well-Architected pillars. Any change can strain workload resources.
+Development isn't a one-time effort. It's an ongoing process. Expect changes in performance as features change. User patterns and profiles can change, and even optimizations made in other areas of the Azure Well-Architected Framework can have an impact. Any of these changes can put extra pressure on your workload resources, so it's important to monitor how everything performs as the system grows and changes.
 
-Safeguard the system from changes so that it doesn't slide back on performance targets. Integrate testing and monitoring in the development process. Test the system's performance in production with real load and simulate that load with automated testing prior to production. In both cases, you should have monitoring practices in place for verification purposes.
+Safeguard the system from changes so that it doesn't slide back on performance targets. Build testing and monitoring right into the development process. Run performance tests in production by using real load, and simulate that load with automated testing before you go live. In both cases, have monitoring in place so you can verify how everything holds up and catch any problems early.
 
-Throughout the development lifecycle, conduct various types of tests at different stages. In the initial stages, test the proof of concept to make sure performance results aren't entirely unexpected. As development progresses, conduct manual, low-effort tests to establish benchmarks. In the build stage, start developing automated routine performance tests that evaluate latency, stress levels, load capacity, and other characteristics defined in the test plans.
+As you move through the development life cycle, run different types of tests at each stage. Early on, check the proof of concept (POC) to make sure the performance results aren't totally unexpected. As development moves forward, do some quick, manual tests to set performance benchmarks. In the build phase, start putting together automated performance tests that check latency, stress levels, load capacity, and any other traits outlined in the test plans.
 
-Monitoring must be an integral part of that effort, rather than being an isolated exercise. You can see how the system and its resources perform over time. You can then fine-tune them to maximize their value, and ensure they continue to meet performance standards.
+Monitoring needs to be part of the whole process, not just something you do on the side. It helps you see how the system and its resources are performing over time. That way, you can make adjustments to get the most out of them and keep everything running up to performance standards.
 
-Keep in mind that performance targets vary over time, in response to changes. Update the performance model based on tested and monitored metrics. Clearly indicate increased, reduced, or no effect on the performance of the flows.
+Keep in mind that performance targets can shift over time as things change. Make sure to update the performance model based on the metrics you've tested and monitored. Be clear about whether those changes boosted performance, slowed it down, or didn't make a difference at all in how the flows are running.
 
-Always be ready to renegotiate and reset expectations with business stakeholders.
+Always be open to resetting expectations and having new conversations with business stakeholders when needed.
 
 **Example scenario**
 
-Contoso Event Solutions offers a product that event entrance staff can use to scan tickets on a mobile device and quickly allow entrance to a ticketed venue for those authorized.  The system is available with both a completely offline mode and also as a cloud-connected version for venues worried about ticket duplication.  The offline mode is highly performant, but the online mode was missing its performance targets. The development team recently invested a couple of development cycles to work on it, and now performance is much improved and meeting targets.  Business stakeholders would like to expand their customer base to support larger venues soon.
+Contoso Event Solutions has a product that entrance staff can use to scan tickets on a mobile device and quickly let authorized guests into a venue. The system works in both a fully offline mode and a cloud-connected version, which is great for venues that are worried about ticket duplication. The offline mode runs really well, but the online version had been falling short of its performance goals.
+
+The development team spent a couple of cycles improving it, and now it's meeting those targets. Business stakeholders are now looking to grow the customer base and start supporting larger venues soon.
 
 ## Test for performance in development
 
-**Formalize performance tests as quality gates that can approve or deny release promotion and the final deployment to production.**
+**Make performance tests part of your quality gates so they can either approve or deny a release from moving forward to production.**
 
-These checkpoints ensure that each stage of deployment meets the required performance standards before you proceed to the next. The checkpoints help prevent unintended performance regression. For instance, if the performance is significantly below expectations, you might block a release until improvements are made.
+These checkpoints ensure that each step in the deployment process meets the right performance standards before moving on. They help catch any unexpected drops in performance early. For example, if performance takes a big hit, you might hold off on releasing until it's back on track.
 
 *Contoso's challenge*
 
-- The team has invested considerable time and effort to achieve acceptable performance for the online version of the application, but they don’t have any system in place presently to prevent a regression.
-- The next feature they plan on adding is the ability for a venue to opt into showing a picture of the attendee along with the scan for additional verification. There is a risk that the extra photo lookup and download will slow the process.
-- Without a formal process in place, there is a risk that the performance of both the online and offline versions could be negatively affected by the additional functionality and they may fall below their targets. 
+- The team has put a lot of time and effort into getting the online version of the application to perform well, but right now, there's nothing in place to stop performance from regressing again.
+
+- The next feature they plan to add will let venues choose to show a photo of the attendee along with the ticket scan for extra verification. There's a chance that pulling up and downloading the photo could slow things down a bit.
+- Without a clear process in place, there's a real risk that adding new features could hurt the performance of both the online and offline versions, and they might end up missing their targets.
 
 *Applying the approach and outcomes*
 
-- The team integrates automated performance tests into the build pipeline. By implementing strict performance-based “go/no-go” criteria in the build pipeline, the team is more confident that the new feature is not going to be released with a performance regression.
-- The team was wise to implement this testing, as it caught a bug in the newest version of the build. The bug forced the app to attempt to connect to the internet to download an image while the scanner was set to offline mode, causing a timeout to occur with every ticket scan. Catching this bug with the automated testing allowed the team to fix the bug before releasing the new version.
+- The team has added automated performance tests to the build pipeline. By setting up strict "go or no-go" rules based on performance, they feel more confident that new features won't get released if they cause a performance regression.
+
+- It was a smart move for the team to set up that testing because it caught a bug in the latest build. The bug made the app try to connect to the internet to download an image, even when the scanner was in offline mode, which caused a timeout every time someone scanned a ticket. Thanks to the automated tests, the team found the problem early and fixed it before the new version went out.
 
 ## Optimize through observability
 
-**Set up a repeatable process for monitoring real transactions in production and deviations against your performance targets. Additionally, use synthetic transactions in production and set up monitoring alerts on performance regressions.**
+**Set up a process that you can reuse to monitor real transactions in production and see when performance starts drifting from your targets. Also, run synthetic transactions in production and set up alerts to catch any performance slowdowns.**
 
-You want insight into the actual performance of your system under real-world load that couldn't be simulated through tests. Then you can proactively identify issues and areas of improvement such as potential bottlenecks, underutilized resources, and other concerns.
+You want a clear view of how your system actually performs when it handles real-world traffic, which is something that tests alone can't fully capture. Then you can get ahead of problems and spot areas to improve, like possible bottlenecks, resources that aren't being used effectively, and other concerns that might slow things down.
 
 *Contoso's challenge*
 
-- During an event where they are using online ticket validation, the backend system is heavily used.
-- There is an application performance monitoring (APM) system in place, but it hasn't been used to monitor the health of production transactions.
+- During an event where they're using online ticket validation, the back-end system is heavily used.
+
+- There's an application performance monitoring (APM) system in place, but it hasn't been used to monitor the health of production transactions.
 
 *Applying the approach and outcomes*
 
-- The team has decided to adopt updated processes to better capture health metrics:
-    - They configure alerting based on performance percentiles and for performance outliers. No alerts indicates that the system is performing in acceptable ranges for most ticket scans.
-    - After an offline event is complete, the telemetry for ticket scans is uploaded in batch and those metrics too go through a process to look for deviations from acceptable performance.
-    - The team also implements synthetic transaction testing to augment their performance monitoring. Since almost all events take place on weekends and in the evening, the team uses synthetic transaction testing throughout the week to generate a more consistent performance baseline.
+- The team decided to update their processes so they can track health metrics more effectively:
+  - They set up alerts based on performance percentiles and outliers. If no alerts come up, it means that the system is handling most ticket scans within the expected range.
+
+  - After an offline event is complete, the ticket scan telemetry is uploaded in batches. That data also goes through a check to look for any performance problems.
+  - The team added synthetic transaction testing to boost their performance monitoring. Since most events happen on weekends and in the evenings, they run synthetic transaction tests during the week to build a more stable performance baseline. 
 
 ## Handle workload changes intelligently
 
-**Address performance erosion as usage increases, features change, and data accumulates over time to sustain performance. Reset expectations and establish new targets, if fine-tuning brings only short-term benefits.**
+**Address performance erosion as usage grows, features change, and data builds up over time so things keep running smoothly. If fine-tuning only gives you short-term benefits, it might be time to reset expectations and set new performance targets.**
 
-By adopting this approach, you can preserve the performance state before degradation develops into problems that negatively affect user experience beyond the acceptable range.
+By taking this approach, you can keep performance steady before it starts slipping in ways that hurt the user experience beyond what's acceptable.
 
-Changing targets resets the performance model, and you don't waste time in optimizing the system that has already reached its capacity.
+Changing targets resets the performance model, and you don't waste time optimizing a system that has already reached its capacity.
 
 *Contoso's challenge*
 
 - The sales team has been aggressively onboarding new event venues into the system. Business is good.
-- The workload monitoring system has started to notice the performance budget is getting eaten into more and more over time, even without the introduction of new features. 
-- Without a change, this trajectory may lead to an unacceptable regression in performance, putting the workload at risk of suffering an outage if an incident occurs. 
+
+- The workload monitoring system started to notice a steady dip in the performance budget over time, even though no new features have been added.
+- If nothing changes, this trend could lead to a serious drop in performance. It could get bad enough that the workload might not hold up if something goes wrong.
 
 *Applying the approach and outcomes*
 
-- The team realizes that as more customers onboard, the data lookup mechanism for online events is doing a very large scan over the data for many queries.
-- Some query optimization has helped keep the increased usage from causing additional harm.  In the coming months, the team plans to break out different events into different data partitions to reduce the need for query scanning. This will support the continued scaling out of the workload.
-- They also realize that they can further optimize the system to grow by removing ticketing data from old events. Searching for old events isn’t something that the ticket validation system should need to do, so that data can be moved into a store dedicated for reporting and historical lookup.
+- The team notices that as more customers come on board, the data lookup for online events is doing some heavy scanning across the dataset for a lot of queries.
+
+- Some query tuning has helped keep the growing usage from making things worse. Looking ahead, the team plans to split different events into separate data partitions. This approach should cut down on how much scanning the queries have to do and help the workload keep scaling smoothly.
+- They also realize that there's room to scale better by clearing out ticketing data from older events. Since the ticket validation system doesn't need to search through past events, that data can be moved to a separate store just for reporting and historical lookups.
