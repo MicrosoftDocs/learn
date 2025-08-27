@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-cost-management-concepts.understanding-infrastructure-cost-considerations
+title: Understanding infrastructure cost considerations
+metadata:
+  title: Understanding infrastructure cost considerations
+  description: Understand the cost considerations of infrastructure that supports AI workloads
+  ms.date: 08/20/2025
+  author: scuffy
+  ms.author: socuff
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-understanding-infrastructure-cost-considerations.md)]
