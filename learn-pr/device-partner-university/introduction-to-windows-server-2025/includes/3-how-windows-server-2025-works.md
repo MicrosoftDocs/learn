@@ -61,30 +61,30 @@ A retail company operates hundreds of stores in various locations. Each store re
 
 The following sections describe how each component of Windows Server 2025 contributes to the company's distributed infrastructure strategy.
 
-### 1. Operating system kernel
+### Operating system kernel
 - Provides a stable foundation for all workloads, ensuring consistent performance across store servers and central datacenter systems.
 
-### 2. Server roles and features
+### Server roles and features
 - Store servers utilize **DHCP** to assign IP addresses to devices, **DNS** for internal name resolution, and **IIS** to host a local web-based inventory application.
 - The central datacenter employs **Active Directory** for identity and access management across all store locations.
 
-### 3. Hyper-V virtualization
+### Hyper-V virtualization
 - Store servers host multiple virtual machines (VMs), including instances for point-of-sale, inventory, and guest Wi-Fi services.
 - Central IT uses nested virtualization to validate updates prior to chain-wide deployment.
 
-### 4. Storage and networking
+### Storage and networking
 - **Storage Spaces Direct** provides fault-tolerant local storage, maintaining data availability in the event of disk failure.
 - **Software-defined networking (SDN)** enables dynamic adjustment of network policies based on traffic patterns and security requirements.
 
-### 5. Security infrastructure
+### Security infrastructure
 - **Credential Guard** secures login credentials on store servers.
 - **Group Policy** enforces standardized security configurations across all locations.
 
-### 6. Management and automation
+### Management and automation
 - IT administrators use **Windows Admin Center** for remote monitoring and management of all servers.
 - **PowerShell scripts** automate routine tasks such as nightly backups and patch deployments.
 
-### 7. Hybrid cloud integration
+### Hybrid cloud integration
 - **Azure Arc** connects store servers to cloud-based management tools, allowing centralized policy enforcement and monitoring.
 - **Hotpatching** applies critical updates without requiring reboots, maintaining uptime for point-of-sale systems during business hours.
 

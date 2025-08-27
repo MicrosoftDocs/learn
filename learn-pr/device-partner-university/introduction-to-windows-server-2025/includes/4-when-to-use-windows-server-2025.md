@@ -1,6 +1,6 @@
 Windows Server 2025 is designed for organizations that require a secure, scalable, and flexible operating system to support modern workloads. This unit provides guidance for evaluating whether Windows Server 2025 aligns with organizational needs by outlining its capabilities, limitations, and appropriate use cases.
 
-## ✅ When to use Windows Server 2025
+## When to use Windows Server 2025
 
 Windows Server 2025 is suitable for environments that require:
 
@@ -28,7 +28,7 @@ Windows Server 2025 is suitable for environments that require:
   - Allows upgrades from older Windows Server versions (e.g., Server 2012 R2).
   - Maintains compatibility with both traditional applications and modern services.
 
-## ❌ When not to use Windows Server 2025
+## When not to use Windows Server 2025
 
 Alternative solutions may be more appropriate if:
 
