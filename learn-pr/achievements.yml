@@ -6455,6 +6455,26 @@ achievements:
   title: Authenticate and authorize multi-tenant apps using Microsoft Entra ID
   summary: Microsoft Entra ID enables you to improve the functionality of cloud-native apps in multitenant scenarios.
   iconUrl: /training/achievements/cna-set-up-azure-ad-use-scale.svg
+- uid: learn.azure.test-bicep-code-using-github-actions.badge
+  type: badge
+  title: Test your Bicep code by using GitHub Actions
+  summary: Validate and test your Bicep code in your deployment workflow. You'll use linting, preflight validation, and the what-if operation to validate your Azure changes before you deploy, and you'll test your resources after each deployment.
+  iconUrl: /training/achievements/bicep/test-bicep-code-using-github-actions.svg
+- uid: learn.azure.create-batch-account-using-azure-portal.badge
+  type: badge
+  title: Create an Azure Batch account by using the Azure portal
+  summary: Azure Batch is a service that enables you to run large-scale parallel and high-performance computing (HPC) applications efficiently in the cloud. There's no need to manage or configure infrastructure. Just schedule the job, allocate the resources you need, and let Batch take care of the rest.
+  iconUrl: /training/achievements/create-batch-account-using-azure-portal.svg
+- uid: learn.azure.share-bicep-modules-using-private-registries.badge
+  type: badge
+  title: Share Bicep modules by using private registries
+  summary: Reuse Bicep modules to reduce code duplication and increase the quality of your deployments. Create a private registry for your organization. Publish shared modules to the registry, and consume them in multiple deployments.
+  iconUrl: /training/achievements/bicep/share-bicep-modules-using-private-registries.svg
+- uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code.badge
+  type: badge
+  title: Control and govern your Azure environment by deploying your infrastructure as code
+  summary: Plan how to harden and help secure your Azure environment, along with the controls to apply to your configuration changes and deployments.
+  iconUrl: /training/achievements/bicep/control-govern-azure-environment-deploying-infrastructure-code.svg
 - uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.badge
   type: badge
   title: Review Azure infrastructure changes by using Bicep and pull requests

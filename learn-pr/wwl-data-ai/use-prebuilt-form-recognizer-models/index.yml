@@ -5,9 +5,10 @@ metadata:
   description: Learn what data you can analyze by choosing prebuilt Forms Analyzer models and how to deploy these models in a Document intelligence solution.
   author: ivorb
   ms.author: berryivor
-  ms.date: 04/28/2025
+  ms.date: 08/28/2025
   ms.service: azure
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
 title: Use prebuilt Document intelligence models
@@ -28,6 +29,7 @@ roles:
 products:
 - ai-services
 - document-intelligence
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 units:
