@@ -5,7 +5,7 @@ metadata:
   title: Module assessment
   description: "Knowledge check"
   ms.date: 03/06/2023
-  author: wwlpublish
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
   module_assessment: true
@@ -55,4 +55,4 @@ quiz:
       explanation: "Incorrect. Client connections are automatically redirected, not disconnected."
     - content: "They remain connected to the old primary."
       isCorrect: false
-      explanation: "Incorrect. Connections don't remain connected to the old primary during a failover."
+      explanation: "Incorrect. Connections don't remain connected to the old primary during a failover."

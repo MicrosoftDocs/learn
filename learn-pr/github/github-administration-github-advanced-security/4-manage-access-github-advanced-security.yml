@@ -6,8 +6,8 @@ metadata:
   title: Manage access to GitHub Advanced Security
   description: Overview of how to set up access for different security alerts and how to set up security policies at the organization and repository level 
   ms.date: 06/10/2025
-  author: rmcmurray
-  ms.author: robmcm
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 5
 content: |
