@@ -6,11 +6,11 @@ The Azure portal provides a graphic user interface (GUI) to interact with Azure 
 
 The Azure portal is accessed at [https://portal.azure.com](https://portal.azure.com/?azure-portal=true)
 
-Once you're logged into the portal, you can navigate around Azure using the interface, or you can use the command line interface and PowerShell and BASH commands.
+Once you're logged into the portal, you can navigate around Azure using the interface, or you can use the command line interface with PowerShell and BASH commands.
 
 ## Use the command line interface
 
-You can use the CLI from within the Azure portal. Once logged into Azure, the CLI can be accessed by selecting the Cloud Shell icon. This will bring up a CLI set to use PowerShell syntax. If you’re familiar with PowerShell, you can manage your Azure environment using PowerShell commands.
+You can use the CLI from within the Azure portal. Once logged into Azure, access the CLI by selecting the Cloud Shell icon. This will bring up a CLI window in PowerShell or BASH mode. If you’re familiar with PowerShell, you can manage your Azure environment using PowerShell commands.
 
 To access CloudShell from the Azure portal, select the CloudShell icon.
 :::image type="content" source="../media/open-cloudshell.png" alt-text="Screenshot of the Azure Portal action area with the CloudShell icon pointed out.":::
@@ -31,7 +31,7 @@ Use the PowerShell Get-date command to get the current date and time.
 Get-date
 ```
 
-Most Azure specific commands will start with the letters az. The Get-date command you just ran is a PowerShell specific command. Let's try an Azure command to check what version of the CLI you're using right now.
+Most Azure specific commands will start with the letters az. The Get-date command is a PowerShell specific command. Let's try an Azure command to check what version of the CLI you're using right now.
 
 ```powershell
 az version
@@ -39,7 +39,7 @@ az version
 
 ## Task 2: Use the BASH CLI
 
-If you’re more familiar with BASH, you can use BASH command instead by shifting to the BASH CLI.
+If you’re more familiar with BASH, you can use BASH commands instead by shifting to the BASH CLI.
 
 Enter bash to switch to the BASH CLI.
 
@@ -51,7 +51,7 @@ bash
 
 
 > [!TIP]
-> You can tell you're in BASH mode by the username displayed on the command line. It will be your username@azure.
+> You can tell you're in BASH mode by the username displayed on the command line, your username@azure.
 
 Again, use the Get-date command to get the current date and time.
 
@@ -70,7 +70,7 @@ Use the date command to get the current date and time.
 date
 ```
 
-Just like in the PowerShell mode of the CLI, you can use the letters az to start an Azure command in the BASH mode. Try to run an update to the CLI with az upgrade.
+Just like in the PowerShell mode of the CLI, use the letters az to start an Azure command in the BASH mode. Try to run an update to the CLI with az upgrade.
 
 ```azurecli
 az upgrade
@@ -113,4 +113,4 @@ exit
 
 ## Continue
 
-You're all set for now. We'll come back to this sandbox later in this module and actually create an Azure resource!
+You're all set for now.
