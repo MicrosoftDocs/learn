@@ -10,7 +10,7 @@ Once you're logged into the portal, you can navigate around Azure using the inte
 
 ## Use the command line interface
 
-You can use the CLI from within the Azure portal. Once logged into Azure, access the CLI by selecting the Cloud Shell icon. This will bring up a CLI window in PowerShell or BASH mode. If you’re familiar with PowerShell, you can manage your Azure environment using PowerShell commands.
+You can use the CLI from within the Azure portal. Once logged into Azure, access the CLI by selecting the Cloud Shell icon. Launching Cloud Shell brings up a CLI window in PowerShell or BASH mode. If you’re familiar with PowerShell, you can manage your Azure environment using PowerShell commands.
 
 To access CloudShell from the Azure portal, select the CloudShell icon.
 :::image type="content" source="../media/open-cloudshell.png" alt-text="Screenshot of the Azure Portal action area with the CloudShell icon pointed out.":::
@@ -31,7 +31,7 @@ Use the PowerShell Get-date command to get the current date and time.
 Get-date
 ```
 
-Most Azure specific commands will start with the letters az. The Get-date command is a PowerShell specific command. Let's try an Azure command to check what version of the CLI you're using right now.
+The Get-date command is a PowerShell specific command. Most Azure specific commands start with the letters **az**. Let's try an Azure command to check what version of the CLI you're using right now.
 
 ```powershell
 az version
@@ -82,7 +82,7 @@ You can change back to PowerShell mode by entering pwsh on the BASH command line
 
 Another way to interact is using the Azure CLI interactive mode. This changes CLI behavior to more closely resemble an integrated development environment (IDE). Interactive mode provides autocompletion, command descriptions, and even examples. If you’re unfamiliar with BASH and PowerShell, but want to use the command line, interactive mode may help you.
 
-Enter az interactive to enter interactive mode.
+Enter `az interactive` to enter interactive mode.
 
 ```azurecli
 az interactive
@@ -90,12 +90,12 @@ az interactive
 
 Decide whether you wish to send telemetry data and enter YES or NO.
 
-You may have to wait a minute or two to allow the interactive mode to fully initialize. Then, enter the letter “a” and auto-completion should start to work. If auto-completion isn’t working, erase what you’ve entered, wait a bit longer, and try again.
+You may have to wait a minute or two to allow the interactive mode to fully initialize. Then, enter the letter “a” and auto-completion should start to work. If auto-completion isn’t working, wait a bit longer and try again.
 
 :::image type="content" source="../media/azure-interactive-mode-c8421a2d-3c3d662b.png" alt-text="Screenshot of interactive mode with autocompletion providing commands that start with A.":::
 
 
-Once initialized, you can use the arrow keys or tab to help complete your commands. Interactive mode is set up specifically for Azure, so you don't need to enter az to start a command (but you can if you want to or are used to it). Try the upgrade or version commands again, but this time without az in front.
+Once initialized, you can use the arrow keys or tab to help complete your commands. Interactive mode is set up specifically for Azure, so you don't need to enter az to start a command. Try the upgrade or version commands again, but this time without az in front.
 
 ```azurecli
 version
