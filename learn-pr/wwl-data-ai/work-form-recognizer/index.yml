@@ -5,9 +5,10 @@ metadata:
   description: Azure Document intelligence extracts data at scale to enable the submission of documents in real time, at scale, with accuracy. This module gives users the tools to use the Azure Document intelligence vision API.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 04/28/2025
+  ms.date: 08/28/2025
   ms.service: azure
   ms.topic: module
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
   ai-usage: human-only
@@ -35,6 +36,7 @@ roles:
 products:
 - ai-services
 - document-intelligence
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 units:

@@ -5,9 +5,10 @@ metadata:
   description: Translate text with the Translator service
   author: ivorb
   ms.author: berryivor
-  ms.date: 05/06/2025
+  ms.date: 008/28/2025
   ms.service: azure-ai-translator
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
 title: Translate text with Azure AI Translator service
@@ -30,6 +31,7 @@ roles:
 - developer
 products:
 - ai-services
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 units:
