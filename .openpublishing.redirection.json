@@ -54388,6 +54388,246 @@
       "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-github-actions/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/2-understand-end-end-deployments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/3-configure-applications-virtual-machines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/4-exercise-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/5-exercise-deploy-web-application.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/6-configure-storage-databases.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/7-exercise-seed-storage-account-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-autoscaling/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/cluster-autoscaler",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-autoscaling/2-concepts-cluster-scaling.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/cluster-autoscaler",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-autoscaling/3-exercise-cluster-autoscaler.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/cluster-autoscaler",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-autoscaling/4-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/cluster-autoscaler",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-autoscaling/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/cluster-autoscaler",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/2-understand-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/3-handle-similarities-between-environments-using-reusable-workflows.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/4-exercise-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/5-exercise-add-multiple-environments-your-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/6-handle-differences-between-environments-using-bicep-parameters.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/7-exercise-use-bicep-parameters-multiple-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-data-with-azure-data-box/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/databox/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-data-with-azure-data-box/2-what-is-azure-data-box-family.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/databox/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-data-with-azure-data-box/3-how-azure-data-box-family-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/databox/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-data-with-azure-data-box/4-when-to-use-azure-data-box-family.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/databox/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-data-with-azure-data-box/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/databox/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-data-with-azure-data-box/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/databox/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-cost-azure-blob-storage/azure-blob-storage-cost-optimization-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-cost-azure-blob-storage/azure-blob-storage-pricing-considerations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-cost-azure-blob-storage/describe-manage-azure-blob-storage-access-tiers.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-cost-azure-blob-storage/implement-azure-blob-storage-lifecycle-management.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-cost-azure-blob-storage/implement-azure-blob-storage-reservations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-cost-azure-blob-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-cost-azure-blob-storage/introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-cost-azure-blob-storage/knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-cost-azure-blob-storage/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/review-azure-infrastructure-changes-using-bicep-pull-requests/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/review-azure-infrastructure-changes-using-bicep-pull-requests/2-understand-branching.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/review-azure-infrastructure-changes-using-bicep-pull-requests/3-exercise-protect-main-branch.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/review-azure-infrastructure-changes-using-bicep-pull-requests/4-review-merge-bicep-changes-using-pull-requests.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/review-azure-infrastructure-changes-using-bicep-pull-requests/5-exercise-create-review-merge-pull-request.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/review-azure-infrastructure-changes-using-bicep-pull-requests/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/review-azure-infrastructure-changes-using-bicep-pull-requests/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/review-azure-infrastructure-changes-using-bicep-pull-requests/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
     }
   ]
 }
