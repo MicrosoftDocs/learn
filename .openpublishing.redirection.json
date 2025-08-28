@@ -54463,6 +54463,86 @@
       "source_path": "learn-pr/azure/aks-cluster-autoscaling/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/aks/cluster-autoscaler",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/2-understand-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/3-handle-similarities-between-environments-using-reusable-workflows.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/4-exercise-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/5-exercise-add-multiple-environments-your-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/6-handle-differences-between-environments-using-bicep-parameters.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/7-exercise-use-bicep-parameters-multiple-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-github-actions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-data-with-azure-data-box/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/databox/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-data-with-azure-data-box/2-what-is-azure-data-box-family.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/databox/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-data-with-azure-data-box/3-how-azure-data-box-family-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/databox/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-data-with-azure-data-box/4-when-to-use-azure-data-box-family.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/databox/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-data-with-azure-data-box/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/databox/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-data-with-azure-data-box/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/databox/",
+      "redirect_document_id": false
     }
   ]
 }

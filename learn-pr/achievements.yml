@@ -6455,6 +6455,16 @@ achievements:
   title: Authenticate and authorize multi-tenant apps using Microsoft Entra ID
   summary: Microsoft Entra ID enables you to improve the functionality of cloud-native apps in multitenant scenarios.
   iconUrl: /training/achievements/cna-set-up-azure-ad-use-scale.svg
+- uid: learn.azure.move-data-with-azure-data-box.badge
+  type: badge
+  title: Move large amounts of data to the cloud by using Azure Data Box family
+  summary: Evaluate Azure Data Box family to import terabytes (TBs) of data from a local computer to Azure Blob storage. Order disks. Copy data to disks and return them. Verify that the data is uploaded to Azure.
+  iconUrl: /training/achievements/move-data-with-azure-data-box.svg
+- uid: learn.azure.manage-multiple-environments-using-bicep-github-actions.badge
+  type: badge
+  title: Manage multiple environments by using Bicep and GitHub Actions
+  summary: Deploy your Bicep code to multiple environments to improve the quality of your deployments. Use reusable workflows to reduce code duplication, and set parameter values for each environment.
+  iconUrl: /training/achievements/bicep/manage-multiple-environments-using-bicep-github-actions.svg
 - uid: learn.aks-cluster-autoscaling.badge
   type: badge
   title: Automatically scale your AKS clusters with the cluster autoscaler
