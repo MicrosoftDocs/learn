@@ -162,6 +162,10 @@ Microsoft Sentinel data lake simplifies security data management, eliminates sec
 
 :::image type="content" source="../media/sentinel-with-data-lake.png" lightbox="../media/sentinel-with-data-lake.png" alt-text="An architecture diagram that shows the components of Microsoft Sentinel with data lake":::
 
+Watch this brief video on the benefits of Microsoft Sentinel data lake.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=70653000-83ec-42ef-9e2f-206748f6bd28]
+
 #### Data connectors and data flow
 
 When you onboard to Microsoft Sentinel data lake, your existing Microsoft Sentinel data connectors are configured to send data to both the analytics tier - your Microsoft Sentinel log analytics workspaces (SIEM storage), and mirror the data to the data lake tier for longer term storage (data lake).

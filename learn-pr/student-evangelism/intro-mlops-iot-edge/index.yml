@@ -5,7 +5,7 @@ metadata:
   description: "Analyze the significance of MLOps in the development and deployment of machine learning models for IoT Edge. Describe the components of the MLOps pipeline and show how you can combine them to create models that can be retrained automatically for IoT Edge devices."
   ms.date: 05/12/2025
   ms.update-cycle: 180-days
-  author: PatAltimore
+  author: sethmanheim
   ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates

@@ -2,11 +2,11 @@
 uid: learn.wwl.transform-data-spark-azure-synapse-analytics.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 08/25/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3
@@ -44,4 +44,4 @@ quiz:
       explanation: "That's correct. The tables are loosely coupled from the files allowing the table to be dropped while the files remain."
     - content: "The table is dropped from the metastore and the files are deleted"
       isCorrect: false
-      explanation: "That's incorrect. The files are loosely coupled and dropping the table has no impact on the existing files."
+      explanation: "That's incorrect. The files are loosely coupled and dropping the table has no impact on the existing files."

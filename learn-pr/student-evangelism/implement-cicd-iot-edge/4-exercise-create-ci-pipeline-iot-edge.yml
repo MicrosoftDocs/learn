@@ -4,11 +4,11 @@ title: Exercise - Create a CI pipeline for IoT Edge with Azure DevOps
 metadata:
   title: Exercise - Create a CI pipeline for IoT Edge with Azure DevOps
   description: In this section, we guide the learner to create a CI pipeline for IoT Edge.
-  ms.date: 07/20/2024
-  author: PatAltimore
-  ms.author: patricka
+  ms.date: 08/18/2025
+  author: sethmanheim
+  ms.author: sethm
   ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise-create-ci-pipeline-iot-edge.md)]
-
+

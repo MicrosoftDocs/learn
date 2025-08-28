@@ -22,6 +22,6 @@ Each component is designed to reinforce Zero Trust principles and promote archit
 Use the image that follows to access the interactive case study, where you explore the scenario through a series of activities that simulate real-world decision-making and solution design.
 
 > [!NOTE]
-> It's recommended that you open the link in a new browser window. To do so, select the right mouse key and select the option.
+> It's recommended that you open the link in a new browser window. To do so, select the right mouse key and select, "Open link in new window."
 
 [![Screenshot of the landing page for the interactive case study.](../media/case-study-access-control-threat-resilience-v2.png)](https://microsoftlearning.github.io/click-throughs/docs/sc-100/sc100_casestudy_simulations/interactive_case_study_enhancing_user_access_control_and_threat_resilience/story.html)
