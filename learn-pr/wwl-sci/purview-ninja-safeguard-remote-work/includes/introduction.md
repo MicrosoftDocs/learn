@@ -15,6 +15,6 @@ After completing this module, you'll be able to:
 Before starting this module, ensure you:
 
 - Know the basics of data protection and compliance.
-- Be familiar with Microsoft Purview DLP, sensitivity labels, and SITs.
+- Be familiar with Microsoft Purview DLP, sensitivity labels, and sensitive information types.
 - Understand how Microsoft 365 services (OneDrive, SharePoint, Exchange Online, Teams) are used.
 - Have a general understanding of Microsoft Entra Conditional Access.
