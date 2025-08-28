@@ -3,7 +3,7 @@ uid: learn.wwl.purview-unified-catalog-understand
 metadata:
   title: Understand retention in Microsoft Purview
   description: Understand retention in Microsoft Purview
-  ms.date: 04/11/2025
+  ms.date: 09/12/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -33,6 +33,10 @@ subjects:
 - data-management
 units:
 - learn.wwl.purview-unified-catalog-understand.introduction
+- learn.wwl.purview-unified-catalog-understand.fragmented-data-challenge
+- learn.wwl.purview-unified-catalog-understand.address-fragmentation-challenge
+- learn.wwl.purview-unified-catalog-understand.elements-unified-catalog
+- learn.wwl.purview-unified-catalog-understand.responsible-ai-unified-catalog
 
 - learn.wwl.purview-unified-catalog-understand.knowledge-check
 - learn.wwl.purview-unified-catalog-understand.summary
