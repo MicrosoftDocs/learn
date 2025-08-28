@@ -6,11 +6,11 @@ Microsoft has made these defaults broadly available based on observed effectiven
 
 Security defaults include the following core protections:
 
-- [Requiring all users to register for MFA](entra/fundamentals/security-defaults#require-all-users-to-register-for-azure-ad-multifactor-authentication)
-- [Requiring administrators to do MFA](entra/fundamentals/security-defaults#require-administrators-to-do-multifactor-authentication)
-- [Requiring users to do MFA when necessary](entra/fundamentals/security-defaults#require-users-to-do-multifactor-authentication-when-necessary)
-- [Blocking legacy authentication protocols](entra/fundamentals/security-defaults#block-legacy-authentication-protocols)
-- [Protecting privileged activities like access to the Azure portal](entra/fundamentals/security-defaults#protect-privileged-activities-like-access-to-the-azure-portal)
+- [Requiring all users to register for MFA](/entra/fundamentals/security-defaults#require-all-users-to-register-for-azure-ad-multifactor-authentication)
+- [Requiring administrators to do MFA](/entra/fundamentals/security-defaults#require-administrators-to-do-multifactor-authentication)
+- [Requiring users to do MFA when necessary](/entra/fundamentals/security-defaults#require-users-to-do-multifactor-authentication-when-necessary)
+- [Blocking legacy authentication protocols]/(entra/fundamentals/security-defaults#block-legacy-authentication-protocols)
+- [Protecting privileged activities like access to the Azure portal](/entra/fundamentals/security-defaults#protect-privileged-activities-like-access-to-the-azure-portal)
 
 Tenants created on or after October 22, 2019, may have security defaults enabled by default. These settings are automatically applied to new tenants to enhance baseline security.
 
