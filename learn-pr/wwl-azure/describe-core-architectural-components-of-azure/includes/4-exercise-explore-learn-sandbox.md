@@ -15,7 +15,7 @@ You can use the CLI from within the Azure portal. Once logged into Azure, access
 To access CloudShell from the Azure portal, select the CloudShell icon.
 :::image type="content" source="../media/open-cloudshell.png" alt-text="Screenshot of the Azure Portal action area with the CloudShell icon pointed out.":::
 
-You can quickly change between PowerShell and BASH in the CLI by selecting the **Switch to ...** button.
+You can quickly change between PowerShell and BASH in the CLI by selecting the **Switch to ...** button or entering `BASH` or `PWSH`.
 
 :::image type="content" source="../media/switch-button.png" alt-text="Screenshot of the Switch to button in the Azure command line interface.":::
 
@@ -23,7 +23,9 @@ You can quickly change between PowerShell and BASH in the CLI by selecting the *
 
 
 > [!TIP]
-> You can tell you're in PowerShell mode by the PS before your directory on the command line.
+> When in PowerShell mode, the command line starts with PS. When in BASH mode, the command line starts with your user name@azure.
+>
+> :::image type="content" source="../media/sandbox-powershell-11569b2c-7a9a0db5.png" alt-text="Screenshot of the Azure PowerShell CLI at initial launch.":::
 
 Use the PowerShell Get-date command to get the current date and time.
 
