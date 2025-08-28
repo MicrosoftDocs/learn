@@ -4,6 +4,7 @@ metadata:
   title: Deploy Azure Databricks models in Azure Machine Learning
   description: "Deploy Azure Databricks models in Azure Machine Learning"
   ms.date: 03/22/2023
+  ms.update-cycle: 180-days
   author: wwlpublish
   ms.author: gmalc
   ms.topic: module-standard-task-based

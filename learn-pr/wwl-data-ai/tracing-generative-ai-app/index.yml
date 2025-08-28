@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.tracing-generative-ai-app
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Analyze and debug your generative AI app with tracing
+  description: Learn how to implement tracing in your generative AI applications using Azure AI Foundry and OpenTelemetry. This module teaches you to capture detailed execution flows, debug complex workflows, and understand application behavior for better reliability and optimization.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 08/06/2025
+  ms.service: azure-ai-foundry
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: ai-learning-hub
+title: Analyze and debug your generative AI app with tracing
+summary: "Learn how to implement tracing in your generative AI applications using Azure AI Foundry and OpenTelemetry. This module teaches you to capture detailed execution flows, debug complex workflows, and understand application behavior for better reliability and optimization."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Set up tracing infrastructure with Azure AI Foundry and Application Insights.
+    - Implement custom spans for AI model calls and business logic operations.
+    - Analyze trace data to identify performance bottlenecks and failure patterns.
+prerequisites: |
+  Before starting this module, you should be familiar with:
+    - Basic Python programming concepts
+    - Basic AI and generative AI concepts
+    - Basic Azure concepts and Azure AI Foundry
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - ai-engineer
+products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - azure
+  - ai-services
+subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - artificial-intelligence
+  - app-development
+units:
+- learn.wwl.tracing-generative-ai-app.introduction
+- learn.wwl.tracing-generative-ai-app.why-tracing
+- learn.wwl.tracing-generative-ai-app.what-to-trace
+- learn.wwl.tracing-generative-ai-app.how-to-trace
+- learn.wwl.tracing-generative-ai-app.advanced-tracing
+- learn.wwl.tracing-generative-ai-app.analyze-trace-data
+- learn.wwl.tracing-generative-ai-app.exercise
+- learn.wwl.tracing-generative-ai-app.knowledge-check
+- learn.wwl.tracing-generative-ai-app.summary
+badge:
+  uid: learn.wwl.tracing-generative-ai-app.badge
+

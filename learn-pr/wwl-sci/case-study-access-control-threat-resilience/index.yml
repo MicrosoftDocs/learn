@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.case-study-access-control-threat-resilience
 metadata:
-  title: "Interactive case study: Modernizing access control and threat resilience"
+  title: "Interactive Case Study: Modernizing User Access Control and Threat Resilience"
   description: "Apply your cybersecurity architect skills on a real business scenario focused on user access control and threat resilience. Analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
   ms.date: 08/05/2025
   author: wwlpublish
@@ -9,7 +9,7 @@ metadata:
   ai-usage: ai-assisted
   ms.topic: module
   ms.service: security
-title: "Interactive case study: Modernizing access control and threat resilience"
+title: "Interactive case study: Modernizing user access control and threat resilience"
 summary: "Apply your cybersecurity architect skills on a real business scenario focused on user access control and threat resilience. Analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
 abstract: |
   In this interactive case study, you:
@@ -20,7 +20,7 @@ prerequisites: |
   -   Experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
   -   Experience with hybrid and cloud implementations.
 iconUrl: /training/achievements/case-study-access-control-threat-resilience.svg
-hidden: true
+hidden: false
 levels: 
   - advanced
 roles:

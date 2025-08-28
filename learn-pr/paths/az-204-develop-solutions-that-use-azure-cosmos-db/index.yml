@@ -4,7 +4,7 @@ metadata:
   title: 'Develop solutions that use Azure Cosmos DB'
   description: Learn how to create Azure Cosmos DB resources with the appropriate consistency levels, and perform data operations by using the .NET SDK V3 for Azure Cosmos DB.
   ms.date: 04/25/2023
-  author: wwlpublish
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: learning-path
 title: 'Develop solutions that use Azure Cosmos DB'

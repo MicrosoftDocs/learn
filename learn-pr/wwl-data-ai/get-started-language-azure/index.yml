@@ -3,7 +3,8 @@ uid: learn.wwl.get-started-language-azure
 metadata:
   title: Get started with natural language processing in Azure
   description: "Explore Azure AI Language's natural language processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection."
-  ms.date: 05/22/2025
+  ms.date: 08/28/2025
+  ms.update-cycle: 180-days
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module
@@ -27,6 +28,7 @@ roles:
 - student
 products:
 - ai-services
+- azure-ai-foundry
 subjects:
 - natural-language-processing
 units:
