@@ -54581,32 +54581,32 @@
     },
     {
       "source_path": "learn-pr/security/securing-you-basics-beyond/1-introduction.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/security/securing-you-basics-beyond/2-phishing.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/security/securing-you-basics-beyond/3-passwords.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/security/securing-you-basics-beyond/4-multi-factor-authentication.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/security/securing-you-basics-beyond/5-summary.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/security/securing-you-basics-beyond/index.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/overview",
       "redirect_document_id": false
     },
     {
