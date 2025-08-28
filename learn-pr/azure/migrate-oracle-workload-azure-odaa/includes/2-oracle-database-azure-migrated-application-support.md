@@ -42,6 +42,6 @@ There are several approaches to moving Oracle workloads to Azure. Typically, Ora
 
 - Offload some of the management of your database hosting resources.
 
-Other workloads may not be a good fit for this option. To explore other methods for migrating Oracle workloads, review [Migrate Oracle workloads to Azure IaaS virtual machines](/training/modules/migrate-oracle-workload-azure-iaas) and [Migrate Oracle-powered applications by using Azure PaaS database services](/training/modules/migrate-oracle-application-azure-paas).
+Other workloads may not be a good fit for this option.
 
 Oracle Database@Azure allows you to minimize migration churn and preserve critical performance and latency capabilities, all while streamlining your IT maintenance load.

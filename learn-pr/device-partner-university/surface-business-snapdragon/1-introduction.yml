@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-business-snapdragon.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is part of the "Surface Pro for Business with Snapdragon® X Elite and Plus processors" module.
+  ms.date: 08/22/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

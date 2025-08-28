@@ -2,11 +2,11 @@
 uid: learn.wwl.deploy-workloads-with-databricks-workflows.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 07/29/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/20/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 azureSandbox: false

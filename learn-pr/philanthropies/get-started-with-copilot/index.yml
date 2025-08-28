@@ -4,6 +4,7 @@ metadata:
   author: yoosunee
   ms.author: anruss
   ms.date: 01/14/2025
+  ms.update-cycle: 180-days
   title: "AI Fluency: Get started with Microsoft Copilot"
   description: Learn how to get started with Microsoft Copilot, understand its main functions and benefits, and explore strategies for effective interaction. This module covers GPT model fundamentals, setup, and tips for engaging conversations.
   ms.topic: module

@@ -1,4 +1,3 @@
-
 Now it's your chance to deploy a SQL Server on an Azure Virtual Machine. 
 
 In this exercise, you’ll explore the Azure portal and use it to create an Azure VM with SQL Server installed. Then they'll connect to the virtual machine through Remote Desktop Protocol.
@@ -9,3 +8,4 @@ In this exercise, you’ll explore the Azure portal and use it to create an Azur
 Launch the exercise and follow the instructions.
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/dp-300-database-administrator/Instructions/Labs/01-provision-sql-vm.html?azure-portal=true)
+
