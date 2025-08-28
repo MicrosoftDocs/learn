@@ -20,7 +20,7 @@ Client certificates are signed to ensure that they aren't tampered with. When a 
 
 ## Accepting client certificates in the Consumption tier
 
-The Consumption tier in API Management is designed to conform with serverless design principals. If you build your APIs from serverless technologies, such as Azure Functions, this tier is a good fit. In the Consumption tier, you must explicitly enable the use of client certificates, which you can do on the **Custom domains** page. This step isn't necessary in other tiers.
+The Consumption tier in API Management is designed to conform with serverless design principles. If you build your APIs from serverless technologies, such as Azure Functions, this tier is a good fit. In the Consumption tier, you must explicitly enable the use of client certificates, which you can do on the **Custom domains** page. This step isn't necessary in other tiers.
 
 :::image type="content" source="../media/configure-request-certificates.png" alt-text="Configure the gateway to request certificates":::
 

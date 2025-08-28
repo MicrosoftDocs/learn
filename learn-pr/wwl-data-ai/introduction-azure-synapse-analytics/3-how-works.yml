@@ -2,14 +2,14 @@
 uid: learn.wwl.introduction-to-azure-synapse-analytics.how-works
 title: How Azure Synapse Analytics works
 metadata:
-  title: How Azure Synapse Analytics works
+  title: How Azure Synapse Analytics Works
   description: "How Azure Synapse Analytics works"
-  ms.date: 08/17/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-how-works.md)]
+  [!include[](includes/3-how-works.md)]
