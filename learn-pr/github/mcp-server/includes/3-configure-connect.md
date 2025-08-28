@@ -24,7 +24,7 @@ Now that you know what GitHub MCP Server can do, let's walk through how to set i
 
 After setup, GitHub MCP Server will be ready to use with your projects in VS Code. You can now start using AI-powered tools and workflows to automate tasks, manage issues, and analyze your code directly within your editor, helping you stay focused on your work while GitHub MCP Server handles the heavy lifting in the background.
 
-### Use personal access token
+### Use Personal Access Token
 
 In order to use Personal Access Token (PAT) for advanced control, you can follow these steps:
 
