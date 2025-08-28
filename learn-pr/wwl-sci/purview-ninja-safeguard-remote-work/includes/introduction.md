@@ -1,6 +1,6 @@
 Microsoft Purview Endpoint Data Loss Prevention (DLP) safeguards sensitive data on devices, especially in remote work environments. By monitoring and controlling endpoint data transfers, it blocks unauthorized sharing and enforces security policies, minimizing risks like copying to external devices or unsecured channels. This tool ensures compliance, reduces data exposure risks, and provides organizations with a reliable way to protect confidential information as employees work outside traditional office settings.
 
-## Learning objecives
+## Learning objectives
 
 After completing this module, you'll be able to:
 
