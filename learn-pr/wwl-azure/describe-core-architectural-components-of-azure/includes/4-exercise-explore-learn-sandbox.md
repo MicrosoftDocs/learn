@@ -15,6 +15,10 @@ You can use the CLI from within the Azure portal. Once logged into Azure, the CL
 To access CloudShell from the Azure portal, select the CloudShell icon.
 :::image type="content" source="../media/open-cloudshell.png" alt-text="Screenshot of the Azure Portal action area with the CloudShell icon pointed out.":::
 
+You can quickly change between PowerShell and BASH in the CLI by selecting the **Switch to ...** button.
+
+:::image type="content" source="../media/switch-button.png" alt-text="Screenshot of the Switch to button in the Azure command line interface.":::
+
 :::image type="content" source="../media/sandbox-powershell-11569b2c-7a9a0db5.png" alt-text="Screenshot of the Azure PowerShell CLI at initial launch.":::
 
 
