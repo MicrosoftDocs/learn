@@ -54543,6 +54543,71 @@
       "source_path": "learn-pr/azure/move-data-with-azure-data-box/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/databox/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/network-fundamentals-2/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/network-fundamentals-2/2-basic-client-server.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/network-fundamentals-2/3-authentication-authorization.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/network-fundamentals-2/4-firewalls-network-security.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/network-fundamentals-2/5-network-monitoring.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/network-fundamentals-2/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/network-fundamentals-2/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/security/securing-you-basics-beyond/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/security/securing-you-basics-beyond/2-phishing.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/security/securing-you-basics-beyond/3-passwords.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/security/securing-you-basics-beyond/4-multi-factor-authentication.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/security/securing-you-basics-beyond/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/security/securing-you-basics-beyond/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/fundamentals/",
+      "redirect_document_id": false
     }
   ]
 }
