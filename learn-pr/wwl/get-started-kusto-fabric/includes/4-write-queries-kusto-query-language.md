@@ -47,4 +47,4 @@ SELECT TOP 10 * FROM stock;
 Microsoft Fabric includes Copilot for Real-Time Intelligence, which can help you write the queries you need to extract insights from your eventhouse data. Copilot uses AI to understand the information you're looking for and can generate the required query code for you.
 
 > [!TIP]
-> To learn more about Copilot for Real-Time Intelligence, see **[Copilot for Real-Time Intelligence](/fabric/get-started/copilot-real-time-intelligence)**.
+> To learn more about Copilot for Real-Time Intelligence, see **[Copilot for Real-Time Intelligence](/fabric/real-time-intelligence/copilot-writing-queries)**.

@@ -1,14 +1,14 @@
-In this module, you've looked at the five key principles of the Reliability pillar of the Azure Well-Architected Framework.
+In this module, you learned about the five key principles of the Reliability pillar in the Azure Well-Architected Framework.
 
-Outages and malfunctions are expected events for workloads deployed in the cloud, on distributed systems. As such, workload design should proactively consider the effects of outages and malfunctions and build reliability measures into the design to optimize the resiliency of the system. Workload reliability design focuses on maximizing availability through redundancy, scalability, the application of design patterns, and the use of proper operational procedures. When malfunctions and outages do happen, the design also focuses on minimizing the effects, or blast radius, of the event through industry-proven design patterns. To allow the teams supporting the workload to be able to efficiently react to potential or active events, a robust observability platform is necessary.
+Outages and malfunctions are normal for cloud workloads on distributed systems. So it's important to design your system to handle these problems and build in reliability measures to keep things running smoothly. Focus on maximizing availability with redundancy, scalability, design patterns, and good operational practices. When problems do happen, aim to minimize their impact by using proven design patterns. A strong observability platform helps teams react efficiently to potential or active problems.
 
-With strong reliability comes tradeoffs with other Well-Architected Framework pillars like performance efficiency and cost optimization, so careful consideration of the balance between pillars and prioritization is paramount to success.
+Balancing reliability with other pillars like Performance Efficiency and Cost Optimization is crucial for success.
 
 ## Learn more
 
-To learn more about the Azure Well-Architected Framework and Azure services that improve the reliability of your architectures, see the following resources:
+To learn more about the Well-Architected Framework and Azure services that improve reliability, see the following resources:
 
 - [Reliability design principles](/azure/well-architected/reliability/principles)
 - [Design review checklist for Reliability](/azure/well-architected/reliability/checklist)
-- [Reliability tradeoffs](/azure/well-architected/reliability/tradeoffs)
+- [Reliability trade-offs](/azure/well-architected/reliability/tradeoffs)
 - [Cloud design patterns that support reliability](/azure/well-architected/reliability/design-patterns)

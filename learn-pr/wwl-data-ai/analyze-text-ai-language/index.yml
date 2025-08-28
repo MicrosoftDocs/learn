@@ -5,9 +5,10 @@ metadata:
   description: Analyze text with Azure AI Language
   author: ivorb
   ms.author: berryivor
-  ms.date: 10/10/2023
+  ms.date: 08/28/2025
   ms.service: azure-ai-language
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
 title: Analyze text with Azure AI Language
@@ -29,6 +30,7 @@ roles:
 - developer
 products:
 - ai-services
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 units:
