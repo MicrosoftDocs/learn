@@ -1,0 +1,14 @@
+**Data Security Posture Management (DSPM)** refers to tools and practices that help organizations discover, monitor, and protect sensitive data across cloud and hybrid environments. These solutions enable efficient data security posture management by identifying risks and ensuring compliance. Using DSPM helps prevent unauthorized access, data breaches, and potential financial or reputational harm. With the integration of Security Copilot, administrators can have deeper investigations and insights into the activity that are taking place in their data real estate. 
+
+Once you've set up DSPM and onboarded your organization to Security Copilot, use the featured promptbooks and prompt gallery to get started. [Promptbooks](/purview/data-security-posture-management-copilot#risky-user-investigation-promptbook) offer built-in prompts that help you quickly understand your data security status. Select from Security Copilot's promptbooks or prompts in the Prompt Gallery.
+
+:::image type="content" source="../media/data-security-posture-management-get-started.png" alt-text="Screenshot showing Security Copilot promptbooks for data protection and risky user investigation in Data Security Posture Management." lightbox="../media/data-security-posture-management-get-started.png":::
+
+DSPM provides built-in prompts for investigating sensitive data, risky users, and suspicious activity in your organization. To access them, select **[View more in the prompt gallery](/purview/data-security-posture-management-copilot#copilot-prompt-gallery)** on the **Overview page**. You can customize these prompts or run them directly in Copilot.
+
+:::image type="content" source="../media/copilot-gallery-data-security-posture-management.png" alt-text="Screenshot showing Copilot Prompt Gallery with data security prompts for sensitive data, risky users, suspicious activity, and external sharing." lightbox="../media/copilot-gallery-data-security-posture-management.png":::
+
+Custom prompts in Security Copilot accelerate investigations by streamlining the identification and analysis of data security risks, reducing manual effort required by security teams. Promptbooks improve the accuracy of security reviews by ensuring consistent and thorough exploration of potential gaps, even in high-risk scenarios. The Prompt Gallery enhances usability, making it easy for users to find relevant prompts without deep technical expertise. These tools support governance by enabling traceable and auditable investigations, helping organizations align with compliance strategies. Additionally, administrators are empowered to launch targeted investigations with minimal setup, improving their responsiveness to emerging threats.
+
+- Streamlines investigations and improves responsiveness to threats.
+- Supports compliance and governance with traceable, auditable processes.
