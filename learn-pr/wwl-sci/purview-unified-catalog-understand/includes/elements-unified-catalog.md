@@ -1,4 +1,4 @@
-The Unified Catalog brings together technical foundations, governance, and business context to make data discoverable, understandable, and trusted across the organization. To see how this works, it helps to look at its essential elements.
+The Unified Catalog is built on several elements that work together to give data structure, context, and consistency. To see how this works, it helps to look at each element. These elements include the Data Map, data products, and governance concepts such as glossary terms, domains, and policies.
 
 ## Data assets: the foundation
 
@@ -31,6 +31,4 @@ Governance also depends on controls that ensure data is usable and trusted in pr
 - **[Data quality health report](/purview/unified-catalog-reports-data-quality-health)**: Provide visibility into whether data meets standards for accuracy, completeness, and reliability.
 - **[Data governance health report (preview)](/purview/unified-catalog-reports-data-governance)**: Show the overall state of governance across domains and point to areas that might need more attention.
 
-## From foundation to value
-
-The essential elements of the Unified Catalog work together to bridge the gap between raw data and business-ready insights. The **Data Map** inventories everything, while **data products** make curated data accessible to consumers. Governance elements such as glossary terms, domains, and policies add the consistency needed to turn data into a trusted organizational asset.
+Together, these elements bridge the gap between raw data and business-ready insights. The Data Map inventories everything, data products make curated data accessible to consumers, and governance concepts such as glossary terms, domains, and policies provide the consistency needed to turn data into a trusted organizational asset. With this foundation in place, you can see how AI features in Unified Catalog build on these elements to simplify discovery and curation.
