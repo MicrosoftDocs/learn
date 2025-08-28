@@ -5,7 +5,7 @@ metadata:
   description: Translate text with the Translator service
   author: ivorb
   ms.author: berryivor
-  ms.date: 008/28/2025
+  ms.date: 08/28/2025
   ms.service: azure-ai-translator
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
