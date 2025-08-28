@@ -54628,6 +54628,196 @@
       "source_path": "learn-pr/azure/review-azure-infrastructure-changes-using-bicep-pull-requests/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-govern-azure-environment-deploying-infrastructure-code/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-govern-azure-environment-deploying-infrastructure-code/2-plan-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-govern-azure-environment-deploying-infrastructure-code/3-secure-repositories-pipelines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-govern-azure-environment-deploying-infrastructure-code/4-secure-azure-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-govern-azure-environment-deploying-infrastructure-code/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-govern-azure-environment-deploying-infrastructure-code/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-govern-azure-environment-deploying-infrastructure-code/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/share-bicep-modules-using-private-registries/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/share-bicep-modules-using-private-registries/2-understand-module-registries.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/share-bicep-modules-using-private-registries/3-exercise-create-registry.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/share-bicep-modules-using-private-registries/4-publish-module-private-registry.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/share-bicep-modules-using-private-registries/5-exercise-publish-module-your-registry.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/share-bicep-modules-using-private-registries/6-use-module-from-registry.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/share-bicep-modules-using-private-registries/7-exercise-use-modules-from-your-registry.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/share-bicep-modules-using-private-registries/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/share-bicep-modules-using-private-registries/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/share-bicep-modules-using-private-registries/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-batch-account-using-azure-portal/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-batch-account-using-azure-portal/2-create-azure-batch-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-batch-account-using-azure-portal/3-exercise-create-azure-batch-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-batch-account-using-azure-portal/4-run-batch-applications.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-batch-account-using-azure-portal/5-exercise-run-batch-applications.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-batch-account-using-azure-portal/6-azure-batch-security.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-batch-account-using-azure-portal/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-batch-account-using-azure-portal/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-batch-account-using-azure-portal/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-github-actions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-github-actions/2-understand-workflow-jobs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-github-actions/3-lint-validate-bicep-code.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-github-actions/4-exercise-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-github-actions/5-exercise-add-lint-validate-jobs-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-github-actions/6-preview-approve-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-github-actions/7-exercise-add-preview-job-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-github-actions/8-test-resources-after-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-github-actions/9-exercise-add-test-job-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-github-actions/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-github-actions/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/test-bicep-code-using-github-actions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
     }
   ]
 }

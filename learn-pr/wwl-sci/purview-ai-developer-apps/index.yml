@@ -30,7 +30,6 @@ levels:
 - intermediate
 roles:
 - administrator
-- auditor
 - developer
 - auditor
 products:

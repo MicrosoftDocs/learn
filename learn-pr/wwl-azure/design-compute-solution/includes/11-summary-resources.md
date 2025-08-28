@@ -40,8 +40,6 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - Complete the [Introduction to Azure virtual machines](/training/modules/intro-to-azure-virtual-machines/) module.
 
-- Complete the [Create an Azure Batch account by using the Azure portal](/training/modules/create-batch-account-using-azure-portal/) module. 
-
 - Complete the [Configure Azure App Service](/training/modules/configure-azure-app-services/) module.
 
 - Complete the [Configure Container Instance](/training/modules/configure-azure-container-instances/) module.
