@@ -24,6 +24,6 @@ In order to begin this process for your organization, start by completing these 
 
 ## Step 3: Cross reference organization sensitive types and out-of-box sensitive information types
 
-- Identify relevant [built-in sensitive information types](/purview/sit-sensitive-information-type-entity-definitions). Examples include, Social Security Numbers, credit card numbers, bank account information and, health data. These built-in types are essential for quickly detecting and protecting regulated or high-risk data across all organizational repositories.
+Identify relevant [built-in sensitive information types](/purview/sit-sensitive-information-type-entity-definitions). Examples include, Social Security Numbers, credit card numbers, bank account information and, health data. These built-in types are essential for quickly detecting and protecting regulated or high-risk data across all organizational repositories.
 
-- Additional scenarios regarding sensitive information that might be worth considering can be found in the [sensitive information type common scenarios documentation](/purview/sit-common-scenarios). Reviewing these scenarios can help you address unique or emerging risks relevant to your company's operations and compliance requirements.
+Additional scenarios regarding sensitive information that might be worth considering can be found in the [sensitive information type common scenarios documentation](/purview/sit-common-scenarios). Reviewing these scenarios can help you address unique or emerging risks relevant to your company's operations and compliance requirements.

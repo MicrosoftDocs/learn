@@ -12,16 +12,8 @@ Following the last module, all SITs not identified against the built-in SITs now
 
 ## Step 2: Test custom sensitive information types within the Microsoft Purview portal
 
-- **Iterate and refine definitions based on test results and stakeholder feedback.**
+**Iterate and refine definitions based on test results and stakeholder feedback.**
 
-- Review test results for false positives or missed detections, gather stakeholder feedback (if necessary), and update SIT definitions for improved accuracy.
+Review test results for false positives or missed detections, gather stakeholder feedback (if necessary), and update SIT definitions for improved accuracy. Repeat testing until SITs meet organizational needs.
 
-- Repeat testing until SITs meet organizational needs.
-
-- Once custom SITs and OOB SITs are identified, ensure you test your SIT by following this guidance: [Test the effects of a sensitive information type](/purview/sit-test-a-sit#test-the-effects-of-a-sensitive-information-type).
-
-- Confirm all SITs are configured and tested, address any issues, and keep documentation for compliance.
-
-  - _This step is critical as it decreases false positives before Data Loss Prevention and autolabeling policies are created._
-
-- Thorough SIT testing reduces unnecessary alerts and improves the effectiveness of DLP and autolabeling.
+Once custom SITs and OOB SITs are identified, ensure you test your SIT by following this guidance: [Test the effects of a sensitive information type](/purview/sit-test-a-sit#test-the-effects-of-a-sensitive-information-type). Confirm all SITs are configured and tested, address any issues, and keep documentation for compliance. _This step is critical as it decreases false positives before Data Loss Prevention and autolabeling policies are created._ Thorough SIT testing reduces unnecessary alerts and improves the effectiveness of DLP and autolabeling.
