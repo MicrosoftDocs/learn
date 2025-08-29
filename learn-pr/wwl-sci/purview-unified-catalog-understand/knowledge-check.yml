@@ -17,7 +17,7 @@ content: |
 quiz: 
   title: "Check your knowledge"
   questions:
-  - content: "Contoso's finance and sales teams define **active customer** differently, leading to conflicting reports. Which Unified Catalog feature should Contoso use to establish a consistent definition of this term?"
+  - content: "Contoso's finance and sales teams define _active customer_ differently, leading to conflicting reports. Which Unified Catalog feature should Contoso use to establish a consistent definition of this term?"
     choices:
     - content: "Glossary terms"
       isCorrect: true
@@ -29,7 +29,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect: Data products package assets for use, but they rely on glossary terms for consistent definitions."
 
-  - content: "The governance team wants to ensure that the agreed definition of **active customer** reflects real business usage. Who is primarily responsible for validating this definition in Unified Catalog?"
+  - content: "The governance team wants to ensure that the agreed definition of _active customer_ reflects real business usage. Who is primarily responsible for validating this definition in Unified Catalog?"
     choices:
     - content: "Business experts"
       isCorrect: true
