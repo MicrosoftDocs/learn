@@ -34,4 +34,4 @@ Governance directly solves the challenges of fragmentation:
 
 - **Compliance gaps → Consistent controls**: Policies apply across the data estate to reduce risk.
 
-The result is a data estate that supports accurate reporting and confident decision-making.
+The result is a data estate that supports accurate reporting and confident decision-making. Microsoft Purview Unified Catalog puts this governance framework into practice by centralizing assets, adding shared context, and applying consistent controls.

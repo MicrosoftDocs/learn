@@ -42,4 +42,4 @@ This shared workspace ensures that each role contributes to a governed outcome t
 
 Without defined roles, data governance efforts can stall. Assets might be inventoried but lack business meaning, or policies might be configured but never tied back to outcomes. The Unified Catalog provides both a technical platform and a framework for collaboration. When each persona understands their responsibilities, data governance becomes sustainable and scalable across the entire estate.
 
-These defined personas and responsibilities set the stage for understanding how the unified catalog builds on the classic catalog experience and creates a more unified approach.
+With roles defined, it's also important to see how AI features can support their work while still requiring oversight.

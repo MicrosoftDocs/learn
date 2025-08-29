@@ -36,12 +36,10 @@ units:
 - learn.wwl.purview-unified-catalog-understand.fragmented-data-challenge
 - learn.wwl.purview-unified-catalog-understand.address-fragmentation-challenge
 - learn.wwl.purview-unified-catalog-understand.elements-unified-catalog
-- learn.wwl.purview-unified-catalog-understand.responsible-ai-unified-catalog
 - learn.wwl.purview-unified-catalog-understand.roles-personas-unified-catalog
+- learn.wwl.purview-unified-catalog-understand.responsible-ai-unified-catalog
 - learn.wwl.purview-unified-catalog-understand.from-classic-unified-catalog
-
-
-
+- learn.wwl.purview-unified-catalog-understand.unified-catalog-importance
 - learn.wwl.purview-unified-catalog-understand.knowledge-check
 - learn.wwl.purview-unified-catalog-understand.summary
 badge:

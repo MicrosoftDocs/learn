@@ -34,4 +34,4 @@ Controls in the Unified Catalog ensure that data is both cataloged and governed:
 
 - **[Data governance health report (preview)](/purview/unified-catalog-reports-data-governance)** shows the overall state of governance across domains and highlights areas that need attention.
 
-Together, these elements bridge the gap between raw data and business-ready insights. The Data Map inventories everything, data products make curated data accessible, and governance concepts provide the consistency needed to turn data into a trusted asset. With this foundation, organizations can make decisions and build analytics on reliable data.
+Together, these elements bridge the gap between raw data and business-ready insights. The Data Map inventories everything, data products make curated data accessible, and governance concepts provide the consistency needed to turn data into a trusted asset. With the building blocks in place, the next step is to see how different roles use them to turn raw data into business value

@@ -32,4 +32,6 @@ All AI-powered features in Unified Catalog follow [Microsoft's responsible AI pr
 
 ## Balancing efficiency and trust
 
-AI features reduce manual work and speed up cataloging, but they don’t replace governance. The most effective approach is to use AI as an assistant that accelerates curation, with governance ensuring trust.
+AI features reduce manual work and speed up cataloging, but they don't replace governance. The most effective approach is to use AI as an assistant that accelerates curation, with governance ensuring trust.
+
+Next, we'll compare how the Unified Catalog experience builds on the classic catalog to provide this stronger governance foundation.
