@@ -50,5 +50,6 @@ modules:
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github
 - learn.azure.publish-reusable-bicep-code-using-github-actions
 - learn.azure.control-govern-azure-environment-deploying-infrastructure-code
+- learn.azure.authenticate-azure-deployment-workflow-workload-identities
 trophy:
   uid: learn.bicep-pipelines-github-actions.trophy

@@ -33,7 +33,6 @@ subjects:
 - cloud-computing
 modules:
 - learn.aks-app-scaling-keda
-- learn.aks-cluster-autoscaling
 - learn.aks-optimize-compute-costs
 trophy:
   uid: learn.aks-cluster-scalability.trophy

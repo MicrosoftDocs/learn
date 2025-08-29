@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-agents-with-a2a.exercise
+title: Exercise - Connect to remote Azure AI Agents with the A2A protocol
+metadata:
+  title: Exercise - Connect to remote Azure AI Agents with the A2A protocol
+  description: "Build an A2A (Agent-to-Agent) client-server application that coordinates and connects to remote Azure AI Agent."
+  ms.date: 08/01/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise.md)]

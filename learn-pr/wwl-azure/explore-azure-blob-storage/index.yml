@@ -4,7 +4,7 @@ metadata:
   title: Explore Azure Blob Storage
   description: "Learn the core features and functionality of Azure Blob storage."
   ms.date: 07/12/2024
-  author: wwlpublish
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: module
   ms.service: azure-blob-storage

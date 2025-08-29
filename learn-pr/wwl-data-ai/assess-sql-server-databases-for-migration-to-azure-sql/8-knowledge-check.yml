@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/23/2023
-  author: wwlpublish
+  ms.date: 08/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
   module_assessment: true
@@ -45,4 +45,4 @@ quiz:
       explanation: "That's correct. When calculating the estimated monthly cost for Azure SQL Database using the Azure SQL Assessment tool, the factors considered are the database size, compute size, and database activity."
     - content: "Compute size, storage size, and database activity."
       isCorrect: false
-      explanation: "That's incorrect. While compute size and database activity are part of the calculation, storage size isn't part of it."
+      explanation: "That's incorrect. While compute size and database activity are part of the calculation, storage size isn't part of it."

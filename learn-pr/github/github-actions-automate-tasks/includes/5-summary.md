@@ -29,5 +29,5 @@ Here are some links to more information on the topics we discussed in this modul
 - [Manually running a workflow](https://docs.github.com/actions/using-workflows/manually-running-a-workflow)
 - [Webhook events and payloads](https://docs.github.com/developers/webhooks-and-events/webhook-events-and-payloads)
 - [Disabling and enabling a workflow](https://docs.github.com/actions/managing-workflow-runs/disabling-and-enabling-a-workflow)
-- [Sharing workflows, secrets, and runners with your organization](https://docs.github.com/actions/using-workflows/sharing-workflows-secrets-and-runners-with-your-organization)
+- [Sharing workflows, secrets, and runners with your organization](https://docs.github.com/en/actions/how-tos/reuse-automations/share-with-your-organization)
 - [Scheduled events](https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#schedule)
