@@ -3,10 +3,10 @@ uid: learn.wwl.get-started-kusto-fabric.define-real-time-analytics
 title: What is real-time data analytics?
 metadata:
   title: What is real-time data analytics?
-  description: "What are the common elements of a real-time data analytics solution?"
-  ms.date: 12/03/2024
-  author: wwlpublish
-  ms.author: jamesh
+  description: "What is real-time data analytics?"
+  ms.date: 08/28/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
 durationInMinutes: 10
 content: |

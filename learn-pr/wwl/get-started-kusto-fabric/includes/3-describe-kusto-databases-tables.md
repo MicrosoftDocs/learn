@@ -1,15 +1,15 @@
-As organizations generate increasing volumes of event-driven data, the ability to process, analyze and act on data in motion becomes essential for competitive advantage. Real-Time Intelligence provides comprehensive capabilities for working with streaming data with minimal latency.
+As organizations generate increasing volumes of event-driven data, the ability to process, analyze, and act on data in motion becomes essential for competitive advantage. Real-Time Intelligence provides comprehensive capabilities for working with streaming data with minimal latency.
 
 ## Real-Time Intelligence use cases
 
 Unlike batch systems that process data on scheduled intervals, Real-Time Intelligence helps you respond to events as they happen, delivering near real-time insights.
 
-Here are common types of event data and examples of how Real-Time Intelligence can support downstream actions and business responsiveness:  
+Here are some common types of event data and examples of how Real-Time Intelligence can support downstream actions and business responsiveness:  
 
 - **Vehicle location data**: Monitor location streams and detect route deviations to enable delivery optimization systems
 - **Equipment sensor data**: Analyze temperature, pressure, and vibration patterns to support predictive maintenance programs  
 - **Transaction data**: Process spending patterns in real-time to feed fraud detection and account security systems
-- **Application performance metrics**: Track response times and error rates to inform auto-scaling and system management decisions
+- **Application performance metrics**: Track response times and error rates to inform autoscaling and system management decisions
 - **Infrastructure monitoring data**: Monitor health metrics to support automated system management and resource provisioning
 
 ## Real-Time Intelligence Components
@@ -26,7 +26,7 @@ Data ingestion and processing happen through Eventstreams, which capture streami
 
 ## Store real-time data in an Eventhouse
 
-Storage in Real-Time Intelligence centers on Eventhouses, which contain KQL databases optimized for time-series data and high-velocity ingestion. These databases automatically index incoming data by ingestion time and partition it for optimal query performance across massive datasets. The storage layer integrates with OneLake, making the data available to other Fabric workloads and ensuring consistency across the analytics platform.
+Storage in Real-Time Intelligence centers on Eventhouses, which contain KQL (Kusto Query Language) databases optimized for time-series data and high-velocity ingestion. These databases automatically index incoming data by ingestion time and partition it for optimal query performance across massive datasets. The storage layer integrates with OneLake, making the data available to other Fabric workloads and ensuring consistency across the analytics platform.
 
 ## Analyze data with KQL Queryset or T-SQL
 
@@ -44,7 +44,7 @@ Automated actions are handled by Activator, which continuously monitors streamin
 
 The Fabric Real-Time hub is a central location where you can discover and manage all of the data-in-motion that you have access to. It gives you a way to ingest streaming data from Azure and from external sources and it lets you subscribe to Azure and Fabric events.
 
-Think of the Real-Time hub as your streaming data catalog where you can see what's happening in near real-time across your organization. There are connectors you can use to ingest data into Microsoft Fabric from a variety of sources. For example, you might connect to IoT sensor streams through Azure Event Hubs, subscribe to Azure Blob Storage events, use Change Data Capture (CDC) to stream database changes, or monitor Fabric workspace events.
+Think of the Real-Time hub as your streaming data catalog where you can see what's happening in near real-time across your organization. There are connectors you can use to ingest data into Microsoft Fabric from various sources. For example, you might connect to IoT sensor streams through Azure Event Hubs, subscribe to Azure Blob Storage events, use Change Data Capture (CDC) to stream database changes, or monitor Fabric workspace events.
 
 Once you have configured a connection to data source or event source, these items become the foundation for event driven decision making and a wide range of real-time analytics solutions, from building dashboards and setting up alerts to triggering automated workflows and analyzing trends in your data.
 

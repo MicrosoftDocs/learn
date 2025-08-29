@@ -2,18 +2,24 @@
 uid: learn.wwl.get-started-kusto-fabric
 metadata:
   title: Get started with Real-Time Intelligence in Microsoft Fabric
-  description: "Analysis of real-time data streams is a critical capability for any modern data analytics solution. You can use the Real-Time Intelligence capabilities of Microsoft Fabric to ingest, query, and process streams of data."
-  ms.date: 12/03/2024
-  author: wwlpublish
-  ms.author: jamesh
+  description: "Real-Time Intelligence in Microsoft Fabric has capabilities that help you ingest, process, store, visualize, and act on data in motion to gain immediate insights from events as they happen."
+  ms.date: 08/28/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: module-standard-task-based
   ms.service: fabric
 title: Get started with Real-Time Intelligence in Microsoft Fabric
-summary: Analysis of real-time data streams is a critical capability for any modern data analytics solution. You can use the Real-Time Intelligence capabilities of Microsoft Fabric to ingest, query, and process streams of data.
+summary: Real-Time Intelligence in Microsoft Fabric has capabilities that help you ingest, process, store, visualize, and act on data in motion to gain immediate insights from events as they happen.
 abstract: |
-  Microsoft Fabric includes Real-Time Intelligence capabilities that you can use to capture, analyze, visualize, and act on real-time streams of event data.
+  In this module, you learn how to:
+  - Describe real-time analytics, streams and events.
+  - Understand Real-Time Intelligence components in Fabric.
+  - Ingest data and transform data in motion.
+  - Store and query data in KQL databases.
+  - Visualize steaming data with Real-Time Dashboards.
+  - Automate actions with Activator.
 prerequisites: |
-  Before starting this module, you should be familiar with Microsoft Fabric.
+  Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
@@ -23,6 +29,7 @@ roles:
 products:
 - fabric
 subjects:
+- data-engineering
 - data-analytics
 units:
 - learn.wwl.get-started-kusto-fabric.introduction
