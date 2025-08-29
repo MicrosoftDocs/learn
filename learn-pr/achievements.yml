@@ -6525,6 +6525,16 @@ achievements:
   title: Manage data retention and deletion in Microsoft 365 workloads
   summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
   iconUrl: /training/achievements/manage-data-retention-in-microsoft-365.svg
+- uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities.badge
+  type: badge
+  title: Authenticate your Azure deployment workflow by using workload identities
+  summary: Workload identities enable your deployment workflows to authenticate securely with Azure without you managing any passwords, keys, or secrets. In this module, you'll learn what workload identities are, how they work, and how to create them. You'll also learn how to grant them permission to your Azure resources so that your workflows can deploy your Bicep files.
+  iconUrl: /training/achievements/bicep/authenticate-azure-deployment-workflow-workload-identities.svg
+- uid: learn.aks-application-autoscaling-native.badge
+  type: badge
+  title: Application scalability on AKS with HorizontalPodAutoscalers
+  summary: Scale your applications to match your load by using native scalability features present in Kubernetes.
+  iconUrl: /training/achievements/aks-application-autoscaling-native.svg
 - uid: learn.azure.export-data-with-azure-import-export.badge
   type: badge
   title: Export large amounts of data from Azure by using Azure Import/Export
