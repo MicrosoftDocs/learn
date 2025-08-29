@@ -6525,6 +6525,21 @@ achievements:
   title: Manage data retention and deletion in Microsoft 365 workloads
   summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
   iconUrl: /training/achievements/manage-data-retention-in-microsoft-365.svg
+- uid: learn.azure.migrate-oracle-workloads-to-azure.trophy
+  type: trophy
+  title: Migrate Oracle workloads to Azure
+  summary: In this learning path, you'll learn about three ways you can move Oracle workloads to Azure. Based on your business needs, you might rehost Oracle databases and applications in Azure IaaS virtual machines,  migrate Oracle Exadata databases to Oracle Database@Azure, or modernize Oracle databases to Azure PaaS database services. You'll gain an overview of each approach across the three modules.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.azure.migrate-oracle-workload-azure-odaa.badge
+  type: badge
+  title: Migrate Oracle workloads to Oracle Database@Azure
+  summary: This module describes the process of migrating business-critical Oracle Exadata workloads to Azure without refactoring, by taking advantage of Oracle infrastructure in Azure datacenters via Oracle Database@Azure.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.automate-virtual-machine-software-installation-configuration.badge
+  type: badge
+  title: Automate the installation and configuration of software in your Virtual Machines
+  summary: Learn how to use the cross-platform Azure CLI to create a virtual machine in Azure, and use a custom script to install and configure a web server. Automate the installation of PHP and the creation of a dynamic home page, then use a web browser to test your installation.
+  iconUrl: /training/achievements/automate-virtual-machine-software-installation-configuration.svg
 - uid: learn.azure.introduction-to-red-hat-azure.badge
   type: badge
   title: Introduction to Red Hat on Azure

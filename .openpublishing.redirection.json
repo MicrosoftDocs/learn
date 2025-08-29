@@ -54983,6 +54983,101 @@
       "source_path": "learn-pr/azure/introduction-to-red-hat-azure/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/openshift/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/migrate-oracle-workloads-to-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/2-automate-installation-virtual-machine.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/3-exercise-automate-installation-virtual-machine.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/4-automate-configuration-web-server.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/5-exercise-automate-configuration-web-server.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/2-oracle-database-azure-migrated-application-support.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/3-assess-workloads-build-migration-plan.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/4-create-exadata-infrastructure-using-oracle-database-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/5-provisioning-process-exadata-virtual-machine-clusters.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/6-application-migration-process-to-azure-iaas.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/7-management-cost-optimization-considerations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
     }
   ]
 }
