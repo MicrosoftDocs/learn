@@ -5,10 +5,11 @@ metadata:
   description: The Azure AI conversational language understanding service (CLU) enables you to train an Azure AI Language model that apps can use to extract meaning from natural language.
   author: ivorb
   ms.author: berryivor
-  ms.date: 04/30/2025
+  ms.date: 08/28/2025
   ms.service: azure-ai-language
   ms.subservice: azure-ai-clu
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
 title: Build a conversational language understanding model
@@ -32,6 +33,7 @@ roles:
 - developer
 products:
 - ai-services
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 - cloud-computing

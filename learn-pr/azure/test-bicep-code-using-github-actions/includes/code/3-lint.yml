@@ -1,7 +1,0 @@
-jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - script: |
-        az bicep build --file deploy/main.bicep

@@ -35,13 +35,10 @@ subjects:
 - infrastructure
 modules:
 - learn.intro-to-hpc
-- learn.azure.create-batch-account-using-azure-portal
 - learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli
-- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch
 - learn.azure.azure-cyclecloud-high-performance-computing
 - learn.azure.customize-clusters-azure-cyclecloud
 - learn.hpc-storage-considerations
-- learn.azure.deploy-azure-managed-lustre-file-system
 - learn.azure.choose-service-level-azure-netapp-files-hpc-applications
 - learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices
 - learn.azure.optimize-hpc-application-azure-virtual-machines-series
