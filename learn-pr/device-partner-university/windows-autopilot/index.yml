@@ -8,7 +8,8 @@ metadata:
   author: Stephanie-Rosenzweig
   ms.author: v-stephanier
   ms.topic: module
-  ms.service: autopilot
+  ms.service: 
+  - autopilot
   ms.custom: CC112124-1
 summary: >
   In this module, we review how Windows Autopilot supports device deployment.
@@ -27,7 +28,8 @@ roles:
   - business-user
   - administrator
   - technology-manager
-products:
+products: 
+  - windows-autopilot
 
 units:
   - learn.dpu.windows-autopilot.introduction
