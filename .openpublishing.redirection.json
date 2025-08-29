@@ -54818,6 +54818,476 @@
       "source_path": "learn-pr/azure/test-bicep-code-using-github-actions/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-routing-preference/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-routing-preference/2-what-is-routing-preference.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-routing-preference/3-how-routing-preference-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-routing-preference/4-when-to-use-routing-preference.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-routing-preference/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-routing-preference/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-routing-preference/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/ip-services/routing-preference-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-performance-and-costs-using-azure-disk-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-performance-and-costs-using-azure-disk-storage/2-choose-right-azure-disk-storage-option.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-performance-and-costs-using-azure-disk-storage/3-understand-disk-performance-characteristics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-performance-and-costs-using-azure-disk-storage/4-optimize-performance-and-costs-using-performance-scaling-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-performance-and-costs-using-azure-disk-storage/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-performance-and-costs-using-azure-disk-storage/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-performance-and-costs-using-azure-disk-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/2-manage-azure-batch-workloads-from-dotnet-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/3-exercise-setup-batch-and-storage-accounts-in-the-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/4-access-your-batch-account-using-the-dotnet-client-library.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/5-exercise-access-your-batch-account-using-the-dotnet-client-library.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/6-exercise-create-a-pool-of-compute-nodes-to-run-our-jobs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/7-create-and-run-a-batch-job-using-the-dotnet-client-library.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/8-exercise-upload-resources-with-storage-library.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/9-exercise-manage-and-deploy-applications-on-compute-nodes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/10-monitor-and-log-job-progress.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-red-hat-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/openshift/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-red-hat-azure/2-what-is-red-hat-on-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/openshift/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-red-hat-azure/3-how-red-hat-on-azure-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/openshift/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-red-hat-azure/4-when-to-use-red-hat-on-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/openshift/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-red-hat-azure/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/openshift/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-red-hat-azure/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/openshift/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-red-hat-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/openshift/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/migrate-oracle-workloads-to-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/2-automate-installation-virtual-machine.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/3-exercise-automate-installation-virtual-machine.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/4-automate-configuration-web-server.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/5-exercise-automate-configuration-web-server.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/automate-virtual-machine-software-installation-configuration/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/2-oracle-database-azure-migrated-application-support.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/3-assess-workloads-build-migration-plan.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/4-create-exadata-infrastructure-using-oracle-database-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/5-provisioning-process-exadata-virtual-machine-clusters.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/6-application-migration-process-to-azure-iaas.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/7-management-cost-optimization-considerations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/2-identify-deployment-workflow-prerequisites.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/3-install-srm-azure-vmware-solution.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/4-install-vsphere-replication-appliance.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/5-configure-vcenter-site-pairing.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/export-data-with-azure-import-export/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/import-export/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/export-data-with-azure-import-export/2-what-is-azure-import-export.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/import-export/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/export-data-with-azure-import-export/3-how-azure-import-export-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/import-export/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/export-data-with-azure-import-export/4-when-to-use-azure-import-export.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/import-export/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/export-data-with-azure-import-export/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/import-export/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/export-data-with-azure-import-export/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/import-export/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-application-autoscaling-native/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-scale",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-application-autoscaling-native/2-concepts-scaling.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-scale",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-application-autoscaling-native/3-exercise-scaling.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-scale",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-application-autoscaling-native/4-concepts-scaling-fine-tune.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-scale",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-application-autoscaling-native/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-scale",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-application-autoscaling-native/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-scale",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-workflow-workload-identities/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-workflow-workload-identities/2-understand-workload-identities.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-workflow-workload-identities/3-create-workload-identity-github-actions-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-workflow-workload-identities/4-grant-workload-identity-access-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-workflow-workload-identities/5-use-workload-identity-github-actions-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-workflow-workload-identities/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-workflow-workload-identities/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-azure-deployment-workflow-workload-identities/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-upgrades-patches/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-upgrades-patches/2-what-are-versions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-upgrades-patches/3-what-are-aks-versions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-upgrades-patches/4-how-to-upgrade-aks-clusters.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-upgrades-patches/5-exercise-upgrade-aks-clusters.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-upgrades-patches/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-upgrades-patches/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-data-at-rest/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/key-vault/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-data-at-rest/2-classify-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/key-vault/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-data-at-rest/3-azure-storage-service-encryption.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/key-vault/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-data-at-rest/4-secure-azure-sql-cosmos-db-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/key-vault/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-data-at-rest/5-azure-key-vault.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/key-vault/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-data-at-rest/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/key-vault/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-data-at-rest/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/key-vault/",
+      "redirect_document_id": false
     }
   ]
 }
