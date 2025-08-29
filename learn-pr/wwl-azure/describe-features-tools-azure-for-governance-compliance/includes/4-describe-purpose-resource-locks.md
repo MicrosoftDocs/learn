@@ -13,7 +13,7 @@ There are two types of resource locks, one that prevents users from deleting and
 
 You can manage resource locks from the Azure portal, PowerShell, the Azure CLI, or from an Azure Resource Manager template.
 
-To view, add, or delete locks in the Azure portal, go to the Settings section of any resource's Settings pane in the Azure portal.
+To view, add, or delete locks in the Azure portal, go to the Locks section of any resource's Settings pane in the Azure portal.
 
 :::image type="content" source="../media/resource-lock-54695e43-61c37c58.png" alt-text="A screenshot showing the resource lock control, under settings, for a storage account.":::
 

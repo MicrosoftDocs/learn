@@ -4,12 +4,12 @@ title: Exercise - Get started with Azure Stream Analytics
 metadata:
   title: Exercise - Get started with Azure Stream Analytics
   description: "Exercise - Get started with Azure Stream Analytics"
-  ms.date: 12/08/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-process-events-azure-stream-analytics.md)]
+  [!include[](includes/4-process-events-azure-stream-analytics.md)]

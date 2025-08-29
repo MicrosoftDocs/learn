@@ -2,11 +2,11 @@
 uid: learn.wwl.perform-data-analysis-azure-databricks.exercise
 title: Exercise - Explore data with Azure Databricks
 metadata:
-  title: Exercise - Explore data with Azure Databricks
+  title: Exercise - Explore Data With Azure Databricks
   description: "Exercise - Explore data with Azure Databricks"
-  ms.date: 12/12/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/20/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

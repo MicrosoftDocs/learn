@@ -6,8 +6,8 @@ metadata:
   title: Enable Code Scanning with Third Party Tools 
   description: In this unit, you'll learn how to enable code scanning with third party tools and how to use and upload SARIF files.
   ms.date: 04/16/2025
-  author: rmcmurray
-  ms.author: robmcm
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 4
 content: |

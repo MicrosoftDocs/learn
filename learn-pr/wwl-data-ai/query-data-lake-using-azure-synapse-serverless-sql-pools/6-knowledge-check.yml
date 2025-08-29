@@ -2,11 +2,11 @@
 uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 09/07/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
@@ -46,4 +46,4 @@ quiz:
       explanation: "Correct. a DATA SOURCE provides the connection information to the files in a data lake store."
     - content: "EXTERNAL TABLE"
       isCorrect: false
-      explanation: "Incorrect. An EXTERNAL TABLE creates the table object without selecting data into it."
+      explanation: "Incorrect. An EXTERNAL TABLE creates the table object without selecting data into it."

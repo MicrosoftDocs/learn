@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-secure-copilot.compliance-manager-copilot
+title: Assess Copilot regulatory compliance with Compliance Manager
+metadata:
+  title: Assess Copilot Regulatory Compliance with Compliance Manager
+  description: "Assess Copilot regulatory compliance with Compliance Manager"
+  ms.date: 08/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/compliance-manager-copilot.md)]
