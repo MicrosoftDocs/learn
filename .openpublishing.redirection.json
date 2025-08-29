@@ -55078,6 +55078,76 @@
       "source_path": "learn-pr/azure/migrate-oracle-workload-azure-odaa/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/workloads/oracle/oracle-migration-oracle-database-at-azure",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/2-identify-deployment-workflow-prerequisites.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/3-install-srm-azure-vmware-solution.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/4-install-vsphere-replication-appliance.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/5-configure-vcenter-site-pairing.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-disaster-recovery-vmware-srm-azure-vmware-solution/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-vmware/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/export-data-with-azure-import-export/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/import-export/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/export-data-with-azure-import-export/2-what-is-azure-import-export.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/import-export/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/export-data-with-azure-import-export/3-how-azure-import-export-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/import-export/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/export-data-with-azure-import-export/4-when-to-use-azure-import-export.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/import-export/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/export-data-with-azure-import-export/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/import-export/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/export-data-with-azure-import-export/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/import-export/",
+      "redirect_document_id": false
     }
   ]
 }
