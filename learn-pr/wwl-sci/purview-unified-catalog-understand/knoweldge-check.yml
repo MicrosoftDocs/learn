@@ -1,0 +1,78 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-unified-catalog-understand.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Knowledge check"
+  ms.date: 08/29/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+
+quiz: 
+  title: "Check your knowledge"
+  questions:
+  - content: "Contoso's finance and sales teams define **active customer** differently, leading to conflicting reports. Which Unified Catalog feature should Contoso use to establish a consistent definition of this term?"
+    choices:
+    - content: "Glossary terms"
+      isCorrect: true
+      explanation: "Correct: Glossary terms define business language consistently across departments, ensuring 'active customer' has the same meaning for finance and sales."
+    - content: "Natural language search"
+      isCorrect: false
+      explanation: "Incorrect: Natural language search helps users find data assets but doesn't enforce consistent definitions."
+    - content: "Data products"
+      isCorrect: false
+      explanation: "Incorrect: Data products package assets for use, but they rely on glossary terms for consistent definitions."
+
+  - content: "The governance team wants to ensure that the agreed definition of **active customer** reflects real business usage. Who is primarily responsible for validating this definition in Unified Catalog?"
+    choices:
+    - content: "Business experts"
+      isCorrect: true
+      explanation: "Correct: Business experts validate glossary terms to ensure they reflect actual business usage."
+    - content: "Data owners"
+      isCorrect: false
+      explanation: "Incorrect: Data owners connect and manage systems but don't validate business definitions."
+    - content: "Data stewards"
+      isCorrect: false
+      explanation: "Incorrect: Data stewards curate assets and assign terms but don't validate them against business usage."
+
+  - content: "Analysts at Contoso want a single, trusted source that combines finance and sales customer records into one governed dataset. Which Unified Catalog element should a steward create?"
+    choices:
+    - content: "Data product"
+      isCorrect: true
+      explanation: "Correct: Data products package related assets into a curated, governed source for a specific use case, such as customer insights."
+    - content: "Governance domain"
+      isCorrect: false
+      explanation: "Incorrect: Governance domains organize assets by business area, not by curated use case."
+    - content: "Data map entry"
+      isCorrect: false
+      explanation: "Incorrect: The Data Map inventories assets but doesn't provide a curated, governed source."
+
+  - content: "While curating data, AI in Unified Catalog proposes links between assets and glossary terms. What should governance teams do with these AI suggestions?"
+    choices:
+    - content: "Review and validate them before adoption"
+      isCorrect: true
+      explanation: "Correct: AI suggestions speed up curation but must be reviewed to ensure accuracy and alignment with business definitions."
+    - content: "Accept them automatically to save time"
+      isCorrect: false
+      explanation: "Incorrect: AI outputs require oversight; accepting them automatically could introduce errors."
+    - content: "Ignore them completely"
+      isCorrect: false
+      explanation: "Incorrect: AI suggestions are valuable when reviewed and validated."
+
+  - content: "Compared to the classic catalog, what advantage does Unified Catalog provide Contoso in this scenario?"
+    choices:
+    - content: "Provides governance concepts and collaboration across roles"
+      isCorrect: true
+      explanation: "Correct: Unified Catalog expands beyond technical metadata, enabling governance concepts, curated products, and collaboration across owners, stewards, experts, and consumers."
+    - content: "Focuses only on technical metadata"
+      isCorrect: false
+      explanation: "Incorrect: That was a limitation of the classic catalog."
+    - content: "Eliminates the need for data owners"
+      isCorrect: false
+      explanation: "Incorrect: Data owners remain essential for connecting and managing source systems."
