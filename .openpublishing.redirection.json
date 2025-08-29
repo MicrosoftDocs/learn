@@ -55288,6 +55288,311 @@
       "source_path": "learn-pr/azure/secure-data-at-rest/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/key-vault/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/2-what-azure-route-server.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/3-when-use-azure-route-server.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/4-how-azure-route-server-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/5-deploy-azure-route-server.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-route-server/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/route-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/2-overview-of-kubernetes-networking.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/3-overview-of-azure-cni-networking.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/4-estimate-cluster-size-pods.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/5-estimate-cluster-size-nodes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/6-size-the-network.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/7-exercise-deploy-aks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-network-design-azure-container-network-interface/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-network-cni-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/2-convert-migrate-resources-bicep-file.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/3-exercise-convert-migrate-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/4-refactor-bicep-file.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/5-exercise-refactor-bicep-file.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/6-test-deploy-converted-template.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/7-exercise-test-deploy-converted-template.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/8-workflow-migrate-resources-bicep.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-azure-resources-bicep/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/2-file-access.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/3-performance-considerations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/4-traffic-considerations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/5-authentication-authorization-considerations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/6-nfs-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/7-parallel-file-systems.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/8-hybrid-file-access-requirements.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hpc-storage-considerations/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/hpc-cache/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/2-understand-git.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/3-exercise-initialize-git-repository.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/4-commit-files-view-history.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/5-exercise-commit-files-view-history.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/6-branch-merge-changes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/7-exercise-branch-merge-changes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/8-publish-repository-enable-collaboration.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/9-exercise-publish-repository.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-changes-bicep-code-git/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/2-arc-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/3-kubernetes-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/4-connect-kubernetes-arc.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/5-services.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/6-gitops.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/7-integrate-policy-monitor.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
     }
   ]
 }
