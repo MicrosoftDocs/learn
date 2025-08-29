@@ -24,13 +24,14 @@ iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
-- administrator
-- auditor
+- data-engineer
+- data-analyst
 products:
-- m365
 - microsoft-purview
 subjects:
 - data-management
+- data-engineering
+- security
 units:
 - learn.wwl.purview-unified-catalog-understand.introduction
 - learn.wwl.purview-unified-catalog-understand.fragmented-data-challenge
