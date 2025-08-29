@@ -26,7 +26,7 @@ To learn about the different methods used to register devices with Windows Autop
 
 - [Automatic registration](/autopilot/automatic-registration)
 
-- [Manual registration](/autopilot/manual-registration)[](/autopilot/manual-registration)
+- [Manual registration](/autopilot/manual-registration)
 
 ### Upload the hardware hash
 

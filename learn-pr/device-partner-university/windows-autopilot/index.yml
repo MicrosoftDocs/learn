@@ -8,7 +8,7 @@ metadata:
   author: Stephanie-Rosenzweig
   ms.author: v-stephanier
   ms.topic: module
-  ms.service: [Add]
+  ms.service: autopilot
   ms.custom: CC112124-1
 summary: >
   In this module, we review how Windows Autopilot supports device deployment.
