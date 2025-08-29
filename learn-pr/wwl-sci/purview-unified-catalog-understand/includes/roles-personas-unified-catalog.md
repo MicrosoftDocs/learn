@@ -40,6 +40,6 @@ This shared workspace ensures that each role contributes to a governed outcome t
 
 ## Importance of defined roles
 
-Without defined roles, data governance efforts can stall. Assets might be inventoried but lack business meaning, or policies might be configured but never tied back to outcomes. The Unified Catalog provides both a technical platform and a framework for collaboration. When each persona understands their responsibilities, data governance becomes sustainable and scalable across the entire estate.
+Without defined roles, governance efforts can lose momentum. Assets might be inventoried without business meaning, or policies might be configured without connection to outcomes. The Unified Catalog addresses this by combining a technical platform with a framework for collaboration, so each persona understands their responsibilities and contributes to trusted results.
 
-With roles defined, it's also important to see how AI features can support their work while still requiring oversight.
+When these responsibilities align with consistent definitions across departments, the organization moves from fragmented data to a unified estate. This foundation reduces confusion, builds trust, and enables confident decision-making. These outcomes bring the full value of unification into focus.

@@ -10,13 +10,13 @@ AI is integrated into the catalog experience in several ways:
 
 - **AI-generated glossary terms** recommend new business terms based on patterns in the data estate.
 
+- **AI-suggested assets and rules** identify data to include in products and propose quality checks based on metadata.
+
 These features make the catalog more approachable for business users and reduce manual effort for stewards.
 
 ## Why responsible use matters
 
-AI can streamline cataloging, but suggestions might be incomplete or inaccurate if left unchecked. Without review, small gaps can scale into larger trust issues across the catalog.
-
-Governance teams should:
+If AI-suggested terms, assets, or rules are accepted without review, small gaps can scale into larger trust issues across the catalog. To avoid this, governance teams should:
 
 - **Evaluate suggestions** to confirm they match business definitions.
 
@@ -32,6 +32,6 @@ All AI-powered features in Unified Catalog follow [Microsoft's responsible AI pr
 
 ## Balancing efficiency and trust
 
-AI features reduce manual work and speed up cataloging, but they don't replace governance. The most effective approach is to use AI as an assistant that accelerates curation, with governance ensuring trust.
+AI features reduce manual work and speed up cataloging, but they don't replace governance. The most effective approach is to treat AI as an assistant that accelerates curation while governance provides the accountability that ensures trusted results.
 
 Next, we'll compare how the Unified Catalog experience builds on the classic catalog to provide this stronger governance foundation.

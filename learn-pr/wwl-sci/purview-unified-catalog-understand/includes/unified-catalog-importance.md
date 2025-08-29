@@ -13,3 +13,5 @@ Organizations often struggle with data scattered across systems, inconsistent de
 Unification means less time reconciling reports and more time using data you can trust. Business users know terms align across departments. Governance teams apply policies once and see them enforced everywhere. Analysts and developers rely on curated products instead of stitching together raw assets.
 
 A common challenge is when different departments define terms like _active customer_ in conflicting ways. With the Unified Catalog, those definitions are shared and consistent across the estate, removing confusion and enabling confident decision-making.
+
+Together, these outcomes show how Unified Catalog turns scattered information into a foundation for trusted business value.
