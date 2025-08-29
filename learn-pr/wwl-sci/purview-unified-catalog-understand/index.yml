@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-unified-catalog-understand
 metadata:
-  title: Understand retention in Microsoft Purview
-  description: Understand retention in Microsoft Purview
+  title: Understand how Microsoft Purview Unified Catalog unifies your data estate
+  description: Understand how Microsoft Purview Unified Catalog unifies your data estate
   ms.date: 08/29/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ai-usage: ai-assisted
   ms.service: purview
-title: Understand retention in Microsoft Purview
+title: Understand how Microsoft Purview Unified Catalog unifies your data estate
 summary: |
   Microsoft Purview retention helps organizations manage how long data is kept and when it can be deleted. Learn how to apply retention strategically to meet compliance requirements, reduce risk, and protect important information throughout its lifecycle.
 abstract: |
