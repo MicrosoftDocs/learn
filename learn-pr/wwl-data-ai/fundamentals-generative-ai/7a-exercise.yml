@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.fundamentals-generative-ai.exercise
+uid: learn.wwl.fundamentals-generative-ai.exercise-ai-agent
 title: Exercise - Explore a generative AI agent scenario
 metadata:
   title: Exercise - Explore a generative AI agent scenario
@@ -12,5 +12,5 @@ metadata:
     - wwl-ai-copilot
 durationInMinutes: 15
 content: |
-  [!include[](includes/7-exercise.md)]
+  [!include[](includes/7a-exercise.md)]
 
