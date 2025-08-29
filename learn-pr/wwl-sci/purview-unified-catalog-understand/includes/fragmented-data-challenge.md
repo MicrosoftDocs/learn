@@ -1,28 +1,37 @@
-Organizations depend on data for decisions, but when that data is fragmented across systems, it becomes difficult to manage and trust. Most organizations manage data across multiple platforms: databases, cloud services, SaaS applications, and on-premises systems. While this variety supports different business needs, it also creates fragmentation. When data is scattered, it becomes harder to know what exists, who owns it, and whether it can be trusted.
+Organizations depend on data for decisions, but when that data is fragmented across systems, it becomes hard to manage and trust. Many organizations spread data across databases, cloud services, SaaS apps, and on-premises systems. This variety supports business needs but also creates fragmentation. When data is scattered, it's harder to know what exists, who owns it, and whether it can be trusted.
 
 ## Fragmentation in practice
 
-Consider a company where finance, sales, and operations each store customer records in separate systems. Each system defines _active customer_ differently. Reports don't match, teams question the numbers, and decision-making slows down as data must be reconciled manually.
+Imagine a company where finance, sales, and operations each store customer records in separate systems. Each system defines _active customer_ differently. Reports don't match, teams question the numbers, and decision-making slows down as data must be reconciled manually.
 
-This kind of fragmentation creates challenges such as:
+This fragmentation leads to challenges like:
 
-- **Limited visibility**: Each department can only see the data in its own system, making it hard to understand the full picture.
-- **Inconsistent definitions**: Terms like _customer_ or _product_ aren't defined consistently, leading to confusion in reporting.
-- **Unclear ownership**: No one is accountable for ensuring data is accurate across all systems.
-- **Reduced trust**: Business leaders hesitate to use conflicting data for important decisions.
-- **Compliance gaps**: Sensitive information might be stored in one system without the same controls as another, increasing risk of exposure.
+- **Limited visibility**: Each department sees only its own data, making it hard to understand the full picture.
 
-Together, these issues prevent organizations from treating data as a trusted asset and limit its value for decision-making.
+- **Inconsistent definitions**: Terms like _customer_ or _product_ aren't defined consistently, leading to confusion in reports.
+
+- **Unclear ownership**: No clear accountability for data accuracy across systems.
+
+- **Reduced trust**: Business leaders hesitate to act on conflicting data.
+
+- **Compliance gaps**: Sensitive data might lack consistent controls, raising risk of exposure.
+
+Together, these issues prevent organizations from treating data as a trusted asset.
 
 ## Why governance matters
 
-Data governance addresses these issues by introducing structure and accountability. Governance establishes shared terminology, assigns ownership, and ensures consistent policies for quality and access. Instead of treating governance as a barrier, think of it as the framework that makes data useful and trusted.
+Data governance addresses fragmentation by introducing structure and accountability. It establishes shared terminology, assigns ownership, and enforces consistent policies for quality and access. Governance isn't a barrier. It's the framework that makes data useful and trusted.
 
-With governance in place, organizations can:
+Governance directly solves the challenges of fragmentation:
 
-- Create a shared understanding of data definitions.
-- Apply policies consistently across the data estate.
-- Improve discoverability so business users can find the data they need.
-- Build trust in data for reporting, analytics, and compliance.
+- **Limited visibility → Better discoverability**: Users can find the data they need across systems.
 
-The result is a data estate that functions as a reliable foundation for insights, innovation, and business outcomes.
+- **Inconsistent definitions → Shared understanding**: Key terms like _customer_ or _product_ are defined consistently.
+
+- **Unclear ownership → Clear accountability**: Roles are assigned so data accuracy is maintained.
+
+- **Reduced trust → Trusted data**: Reliable information supports reporting, analytics, and decisions.
+
+- **Compliance gaps → Consistent controls**: Policies apply across the data estate to reduce risk.
+
+The result is a data estate that supports accurate reporting and confident decision-making.

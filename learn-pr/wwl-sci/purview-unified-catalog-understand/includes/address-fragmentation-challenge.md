@@ -1,15 +1,15 @@
-Microsoft Purview Unified Catalog provides the foundation for trusted data by combining technical assets, business context, and governance policies in one place. It addresses the challenges of fragmentation by making data easier to organize, govern, and access consistently across the organization.
+Microsoft Purview Unified Catalog addresses fragmentation by giving organizations a single environment to organize, govern, and access data consistently.
 
-Unified Catalog addresses fragmentation by:
+To overcome these challenges, Unified Catalog provides capabilities that make data easier to manage, govern, and trust:
 
-- **Centralizing data assets**: The [Microsoft Purview Data Map](/purview/data-map) scans and inventories assets across cloud and on-premises sources. This inventory provides a complete view of what data exists and where it's located.
+- **Centralizing data assets** with the [Microsoft Purview Data Map](/purview/data-map) which inventories sources across cloud and on-premises to provide a complete view of what exists and where it lives.
 
-- **Adding business context**: Assets are enriched with glossary terms, governance domains, and critical data elements so that business users understand not just where data lives, but what it represents. For instance, a glossary term can standardize a definition like _active customer_ across the organization, reducing confusion and making reports more reliable.
+- **Adding business context** with glossary terms, governance domains, and critical data elements so definitions like _active customer_ are consistent across the organization.
 
-- **Supporting self-service discovery**: Curated data products let analysts, developers, and other consumers find trusted data without needing to search across multiple systems.
+- **Supporting self-service discovery** through curated data products that let analysts and developers find trusted data without searching across multiple systems.
 
-- **Applying consistent governance**: Policies for access, classification, and data quality are applied uniformly, reducing risk and increasing trust in the data estate.
+- **Applying consistent governance** by enforcing policies for access, classification, and data quality across the estate.
 
-- **Linking data to outcomes**: Through objectives and key results (OKRs), organizations can tie governance activities to business goals, showing the value of unified data management.
+- **Linking data to outcomes** with objectives and key results (OKRs) that tie activities to measurable business goals.
 
-By addressing fragmentation with a unified approach, Microsoft Purview Unified Catalog gives organizations a consistent foundation for trusted data and effective governance.
+This unified approach reduces confusion, builds trust, and provides a reliable foundation for confident data use.

@@ -10,6 +10,6 @@ metadata:
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/from-classic-unified-catalog.md)]
