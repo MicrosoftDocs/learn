@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ninja-label-sensitive-data.container-label
+title: Manage sensitivity labels at the container level
+metadata:
+  title: Manage Sensitivity Labels at the Container Level
+  description: "Manage sensitivity labels at the container level."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/container-label.md)]

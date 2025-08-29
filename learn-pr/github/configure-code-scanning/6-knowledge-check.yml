@@ -6,8 +6,8 @@ metadata:
   title: Module Assessment
   description: Knowledge check questions for configure code scanning module. # user input: a description for site search and SEO
   ms.date: 04/16/2025
-  author: rmcmurray
-  ms.author: robmcm
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 5 # user input: the estimate time to complete the unit
