@@ -32,7 +32,6 @@ products:
 subjects:
 - cloud-computing
 modules:
-- learn.aks-application-autoscaling-native
 - learn.aks-app-scaling-keda
 - learn.aks-optimize-compute-costs
 trophy:
