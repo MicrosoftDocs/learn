@@ -26,7 +26,7 @@ Key attack vectors include:
 
 The threat analysis in the case study shows how traditional perimeter-based defenses fall short in hybrid environments and why unified identity governance and modern access controls are essential.
 
-### Architectural Solution Summary
+### Architectural solution summary
 
 To address these challenges, the case study guides you through designing a Zero Trust–aligned architecture using Microsoft technologies.
 

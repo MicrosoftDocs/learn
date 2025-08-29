@@ -4,6 +4,7 @@ metadata:
   title: 'Guided project: Build and Deploy your own AI Copilot'
   description: "Build an AI copilot for Contoso Bike Shop. Integrate Azure OpenAI and Cosmos DB to enable advanced data searches, use GPT-3.5 for enhanced results, and deploy the solution on Azure Kubernetes Service."
   ms.date: 11/13/2024
+  ms.update-cycle: 180-days
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module

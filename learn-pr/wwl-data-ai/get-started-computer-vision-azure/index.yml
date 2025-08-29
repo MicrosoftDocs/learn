@@ -5,7 +5,7 @@ metadata:
   description: Azure AI Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios. Learn how to use the Azure AI Vision service to analyze images.
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 05/16/2025
+  ms.date: 08/28/2025
   ms.service: azure
   ai-usage: ai-assisted
   ms.topic: module
@@ -26,6 +26,7 @@ roles:
 - student
 products:
 - ai-services
+- azure-ai-foundry
 subjects:
 - classification-analysis
 units:
