@@ -6525,6 +6525,16 @@ achievements:
   title: Manage data retention and deletion in Microsoft 365 workloads
   summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
   iconUrl: /training/achievements/manage-data-retention-in-microsoft-365.svg
+- uid: learn.hpc-storage-considerations.badge
+  type: badge
+  title: Understand factors that influence HPC storage selection in Azure
+  summary: This module covers various factors that influence HPC storage selection in Azure. We review NFS, file access, directory services, parallel file systems, and hybrid file-access considerations.
+  iconUrl: /training/achievements/hpc-storage-considerations.svg
+- uid: learn.azure.migrate-azure-resources-bicep.badge
+  type: badge
+  title: Migrate Azure resources and JSON ARM templates to use Bicep
+  summary: Export and convert your Azure resources to Bicep files, and migrate your JSON Azure Resource Manager templates (ARM templates) to Bicep. Refactor your Bicep files to follow best practices. Test your Bicep files and deploy them to production.
+  iconUrl: /training/achievements/bicep/migrate-azure-resources-and-json-templates-bicep.svg
 - uid: learn.aks-network-design-azure-container-network-interface.badge
   type: badge
   title: Configure Azure CNI networking in Azure Kubernetes Service (AKS)
