@@ -34,6 +34,7 @@ subjects:
 modules:
 - learn.choose-best-networking-plugin-for-aks
 - learn.aks-cluster-upgrades-patches
+- learn.aks-network-design-azure-container-network-interface
 - learn.aks-governance-azure-policy
 trophy:
   uid: learn.aks-cluster-architecture.trophy

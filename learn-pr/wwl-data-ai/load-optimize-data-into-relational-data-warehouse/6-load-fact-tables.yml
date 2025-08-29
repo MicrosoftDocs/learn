@@ -2,12 +2,12 @@
 uid: learn.wwl.load-data-into-relational-data-warehouse.load-fact-tables
 title: Load fact tables
 metadata:
-  title: Load fact tables
+  title: Load Fact Tables
   description: "Load fact tables"
-  ms.date: 10/27/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-load-fact-tables.md)]
+  [!include[](includes/6-load-fact-tables.md)]

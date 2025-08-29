@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-fabric-data-agents.power-bi
+title: Use Microsoft Fabric data agents within Power BI 
+metadata:
+  title: Use Microsoft Fabric Data Agents Within Power BI
+  description: "Use Microsoft Fabric data agents within Power BI"
+  ms.date: 08/18/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/power-bi.md)]

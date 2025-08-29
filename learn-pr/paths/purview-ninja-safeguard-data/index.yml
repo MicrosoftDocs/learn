@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.purview-ninja-safeguard-data
+metadata:
+  title: 'Secure Sensitive Data with Microsoft Purview Ninja Training Scenarios'
+  description: 'Discover how to classify data, apply sensitivity labels, enforce DLP policies, and use Security Copilot to protect information across Microsoft 365.'
+  ms.date: 08/25/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: learning-path
+title: 'Secure sensitive data with Microsoft Purview Ninja training scenarios'
+prerequisites: |
+  - Basic knowledge of data protection and security
+  - Demonstrates an L100-200 level understanding of Microsoft Purview Information Protection and Microsoft Purview Data Loss Prevention.
+summary: |
+  Welcome to the Microsoft Purview Information Protection and Data Loss Prevention Ninja Scenario guide: a comprehensive resource designed to unify the core principles of information protection with advanced data loss prevention strategies. This guide builds on established best practices by presenting five carefully selected real-world scenarios that matter most to our customers and users. Our objective is to simplify the resolution of common information security challenges, offering a structured path with clear, actionable guidance and references to deepen your understanding. Upon completion of this training, you won't only gain valuable insights but also earn a badge recognizing your expertise and commitment to safeguarding organizational data.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- microsoft-purview
+- m365
+subjects:
+- security
+- compliance
+modules:
+- learn.wwl.purview-ninja-discover-define-sits
+- learn.wwl.purview-ninja-label-sensitive-data
+- learn.wwl.purview-ninja-security-copilot
+- learn.wwl.purview-ninja-prevent-data-loss-share-transfer
+- learn.wwl.purview-ninja-safeguard-remote-work
+
+trophy:
+  uid: learn.wwl.purview-ninja-safeguard-data.trophy

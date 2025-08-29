@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.agent-orchestration-patterns.sequential-orchestration
+title: Sequential orchestration
+metadata:
+  title: Sequential orchestration
+  description: Understand the sequential orchestration pattern in AI agent orchestration.
+  ms.date: 08/13/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-sequential-orchestration.md)]

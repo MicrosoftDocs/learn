@@ -4,9 +4,14 @@ You could use the Azure portal, the Azure CLI, Azure PowerShell, or an Azure Res
 
 In this instance, you're going to use the Azure CLI.
 
+>[!IMPORTANT]
+>This exercise creates a VM that is used in a later exercise within this module. To avoid leaving a VM running for an extended period of time, it's recommended that you complete the full module in one sitting.
+
 ## Task 1: Create a Linux virtual machine and install Nginx
 
-Use the following Azure CLI commands to create a Linux VM and install Nginx. After your VM is created, you'll use the Custom Script Extension to install Nginx. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system after your VM is up and running.
+1. Log into the [Azure portal](https://portal.azure.com/?azure-portal=true).
+1. Select the Azure Cloud Shell icon to bring up Cloud Shell.
+1. Use the following Azure CLI commands to create a Linux VM and install Nginx. After your VM is created, you'll use the Custom Script Extension to install Nginx. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system after your VM is up and running.
 
 1.  From Cloud Shell, run the following `az vm create` command to create a Linux VM:
     
@@ -18,19 +23,6 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
       --image Ubuntu2204 \
       --admin-username azureuser \
       --generate-ssh-keys    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
     
     Your VM takes a few moments to come up. You named the VM **my-vm**. You use this name to refer to the VM in later steps.
@@ -45,19 +37,6 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
       --version 2.1 \
       --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh"]}' \
       --protected-settings '{"commandToExecute": "./configure-nginx.sh"}'    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
     
     This command uses the Custom Script Extension to run a Bash script on your VM. The script is stored on GitHub. While the command runs, you can choose to [examine the Bash script](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh?azure-portal=true) from a separate browser tab. To summarize, the script:
@@ -69,4 +48,4 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
 
 ## Continue
 
-This exercise is complete for now. The sandbox keeps running, and you come back to this point in a few units to update the network configuration so you can get to the website.
+This exercise is complete for now. You'll use this VM later in this module. 
