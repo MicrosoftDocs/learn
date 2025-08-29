@@ -3,7 +3,7 @@ uid: learn.wwl.operationalize-gen-ai-apps
 metadata:
   title: Operationalize generative AI applications (GenAIOps)
   description: Learn how to develop, evaluate, optimize, and deploy generative AI applications (GenAIOps)
-  ms.date: 03/03/2025
+  ms.date: 08/06/2025
   author: wwlpublish
   ms.author: madiepev
   ms.topic: learning-path
@@ -29,5 +29,7 @@ subjects:
 modules:
 - learn.wwl.plan-prepare-genaiops
 - learn.evaluate-generative-ai-apps
+- learn.wwl.monitor-generative-ai-app
+- learn.wwl.tracing-generative-ai-app
 trophy:
   uid: learn.wwl.operationalize-gen-ai-apps.trophy

@@ -4,11 +4,11 @@ title: Compare additional migration methods
 metadata:
   title: Compare additional migration methods
   description: "Learn additional migration methods available for moving databases to SQL Server on Azure Virtual Machine."
-  ms.date: 08/02/2024
-  author: wwlpublish
+  ms.date: 08/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/7-compare-additional-migration-methods.md)]
+  [!include[](includes/7-compare-additional-migration-methods.md)]

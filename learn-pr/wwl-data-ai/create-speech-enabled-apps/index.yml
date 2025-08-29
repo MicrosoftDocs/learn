@@ -5,9 +5,10 @@ metadata:
   description: Create speech-enabled apps with Azure AI services.
   author: ivorb
   ms.author: berryivor
-  ms.date: 05/01/2025
+  ms.date: 08/28/2025
   ms.service: azure-ai-speech
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
 title: Create speech-enabled apps with Azure AI services
@@ -34,6 +35,7 @@ roles:
 - student
 products:
 - ai-services
+- azure-ai-foundry
 subjects:
 - custom-app-development
 - artificial-intelligence

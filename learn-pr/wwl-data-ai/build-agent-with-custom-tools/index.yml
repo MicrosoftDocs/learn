@@ -3,10 +3,11 @@ uid: learn.wwl.build-agent-with-custom-tools
 metadata:
   title: Integrate custom tools into your agent
   description: Learn how to build an agent with custom tools using the Azure AI Foundry Agent Service.
-  ms.date: 08/01/2025
+  ms.date: 08/28/2025
   author: ivorb
   ms.author: berryivor
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.service: azure-ai-foundry
 title: Integrate custom tools into your agent
 summary: "Built-in tools are useful, but they may not meet all your needs. In this module, learn how to extend the capabilities of your agent by integrating custom tools for your agent to use."
@@ -28,7 +29,9 @@ roles:
   - solution-architect
   - student
 products: 
-  - ai-services
+  - azure-ai-foundry
+  - azure-ai-foundry-agent-service
+  - azure-ai-foundry-sdk
 subjects: 
   - artificial-intelligence
 units:

@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.date: 04/30/2025
-  ms.service: azure-ai-services
+  ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
@@ -32,8 +32,7 @@ levels:
 roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - ai-engineer
 products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-  - azure
-  - ai-services
+  - azure-ai-foundry
 subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - artificial-intelligence
   - app-development
