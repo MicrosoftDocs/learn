@@ -16,7 +16,7 @@ Your organization segments core IT apps and services (such as DNS and security s
 - Create a custom route. (optional)
 
 > [!IMPORTANT]
-> Estimated time: 30 minutes. 
+> Estimated time: 50 minutes. 
 > To complete the exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.

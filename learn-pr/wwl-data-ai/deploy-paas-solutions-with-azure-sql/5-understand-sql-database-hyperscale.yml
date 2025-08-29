@@ -2,14 +2,16 @@
 uid: learn.wwl.deploy-paas-solutions-with-azure-sql.understand-sql-database-hyperscale
 title: Understand SQL database hyperscale
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand SQL database hyperscale
   description: "Understand SQL database hyperscale"
-  ms.date: 7/17/2025
+  ms.date: 08/13/2025
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/5-understand-sql-database-hyperscale.md)]

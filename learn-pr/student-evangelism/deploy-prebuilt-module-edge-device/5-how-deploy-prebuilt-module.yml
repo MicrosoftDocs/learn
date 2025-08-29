@@ -5,7 +5,7 @@ metadata:
   title: Deploy a prebuilt module to an IoT Edge device
   description: In this unit, we explain submitting a new deployment to an IoT Edge device
   ms.date: 05/09/2025
-  author: PatAltimore
+  author: sethmanheim
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen
