@@ -55218,6 +55218,76 @@
       "source_path": "learn-pr/azure/authenticate-azure-deployment-workflow-workload-identities/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-upgrades-patches/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-upgrades-patches/2-what-are-versions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-upgrades-patches/3-what-are-aks-versions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-upgrades-patches/4-how-to-upgrade-aks-clusters.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-upgrades-patches/5-exercise-upgrade-aks-clusters.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-upgrades-patches/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-cluster-upgrades-patches/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-data-at-rest/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/key-vault/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-data-at-rest/2-classify-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/key-vault/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-data-at-rest/3-azure-storage-service-encryption.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/key-vault/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-data-at-rest/4-secure-azure-sql-cosmos-db-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/key-vault/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-data-at-rest/5-azure-key-vault.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/key-vault/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-data-at-rest/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/key-vault/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-data-at-rest/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/key-vault/",
+      "redirect_document_id": false
     }
   ]
 }
