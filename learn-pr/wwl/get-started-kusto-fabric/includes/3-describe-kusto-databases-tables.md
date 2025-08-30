@@ -6,39 +6,39 @@ Unlike batch systems that process data on scheduled intervals, Real-Time Intelli
 
 Here are some common types of event data and examples of how Real-Time Intelligence can support downstream actions and business responsiveness:  
 
-- **Vehicle location data**: Monitor location streams and detect route deviations to enable delivery optimization systems
-- **Equipment sensor data**: Analyze temperature, pressure, and vibration patterns to support predictive maintenance programs  
-- **Transaction data**: Process spending patterns in real-time to feed fraud detection and account security systems
-- **Application performance metrics**: Track response times and error rates to inform autoscaling and system management decisions
-- **Infrastructure monitoring data**: Monitor health metrics to support automated system management and resource provisioning
+- **Delivery tracking**: Monitor vehicle locations to alert customers when packages are delayed
+- **Equipment monitoring**: Track machine temperature to prevent costly breakdowns  
+- **Fraud detection**: Analyze purchase patterns to block suspicious transactions immediately
+- **Website performance**: Monitor page load times to improve user experience
+- **System health**: Track application errors to maintain service reliability
 
 ## Real-Time Intelligence Components
 
 Microsoft Fabric's Real-Time Intelligence is an integrated set of components that work together to handle streaming data from capture through automated response.
 
-![Diagram of Fabric Real-Time Intelligence capabilities.](../media/real-time-intelligence-core.png)
+:::image type="content" source="../media/real-time-intelligence-core.png" alt-text="Diagram of Fabric Real-Time Intelligence capabilities." lightbox="../media/real-time-intelligence-core.png":::
 
 The diagram shows how Real-Time Intelligence components work together for end-to-end processing. Each component handles a specific stage of the real-time analytics process:
 
 ## Ingest and process data in motion with Eventstreams
 
-Data ingestion and processing happen through Eventstreams, which capture streaming data from various sources and apply real-time transformations as data flows through the system. The Real-Time Hub acts as the central catalog where you can discover available data sources and configure connections without writing code. Eventstreams provide comprehensive data processing capabilities including filtering to remove unwanted events, enrichment to add contextual information, format conversion between different data structures, and content-based routing to send processed data to different destinations based on business rules.
+Data ingestion and processing can happen through Eventstreams, which capture streaming data from various sources and apply real-time transformations as data flows through the system. Eventstreams can filter, enrich, and transform your data and route it to different destinations.
 
 ## Store real-time data in an Eventhouse
 
-Storage in Real-Time Intelligence centers on Eventhouses, which contain KQL (Kusto Query Language) databases optimized for time-series data and high-velocity ingestion. These databases automatically index incoming data by ingestion time and partition it for optimal query performance across massive datasets. The storage layer integrates with OneLake, making the data available to other Fabric workloads and ensuring consistency across the analytics platform.
+Real-Time Intelligence stores data in KQL (Kusto Query Language) databases in Eventhouses. These databases are designed for time-series data and fast ingestion of streaming data. The storage integrates with OneLake, making your data available to other Fabric tools.
 
-## Analyze data with KQL Queryset or T-SQL
+## Analyze data with KQL Queryset
 
-Analysis capabilities come through direct querying of KQL databases using the Kusto Query Language, which excels at time-based analytics and pattern detection in streaming data. You can build complex analytical queries that process large volumes of events in seconds, enabling both ad-hoc exploration and systematic analysis of streaming patterns. KQL databases also support T-SQL queries within the KQL Queryset interface, allowing you to use familiar SQL syntax alongside KQL for data analysis.
+KQL Querysets provide a workspace for running and managing queries against KQL databases. The KQL Queryset allows you to save queries for future use, organize multiple query tabs, and share queries with others for collaboration. The KQL Queryset also supports T-SQL queries, allowing you to use familiar SQL syntax alongside KQL for data analysis.
 
-## Visualize insights with Real-Time Dashboards
+## Visualize insights with Real-Time Dashboard
 
-Visualization occurs through Real-Time Dashboards, which connect directly to KQL databases and refresh automatically as new data arrives. These dashboards support interactive exploration with parameters and drill-down capabilities, allowing you to monitor current conditions and explore historical trends within the same interface.
+Real-Time Dashboards connect directly to KQL databases and refresh automatically as new data arrives. These dashboards let you explore data interactively and monitor both current conditions and historical trends.
 
 ## Act on data with Activator
 
-Automated actions are handled by Activator, which continuously monitors streaming data against user-defined rules and thresholds. When conditions are met, Activator can send notifications, trigger workflows in Power Automate, call webhooks, or execute other Fabric jobs, creating event-driven automation that responds to real-time conditions without human intervention.
+Automated actions can be configured with **Activator**, which continuously monitors streaming data against user-defined rules and thresholds. When conditions are met, Activator can send notifications, trigger workflows in Power Automate, execute Fabric data pipelines or notebooks, creating event-driven automation that responds to real-time conditions.
 
 ## Discover streaming data with the Real-Time Hub
 
@@ -48,7 +48,7 @@ Think of the Real-Time hub as your streaming data catalog where you can see what
 
 Once you have configured a connection to data source or event source, these items become the foundation for event driven decision making and a wide range of real-time analytics solutions, from building dashboards and setting up alerts to triggering automated workflows and analyzing trends in your data.
 
-![Screenshot of Microsoft Fabric Real-Time hub.](../media/real-time-hub.png)
+:::image type="content" source="../media/real-time-hub.png" alt-text="Screenshot of Microsoft Fabric Real-Time hub." lightbox="../media/real-time-hub.png":::
 
 To access the real-time hub, select the **Real-Time** icon in the main Fabric menu bar.
 

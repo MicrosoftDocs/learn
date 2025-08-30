@@ -1,6 +1,6 @@
 Activator is a technology in Microsoft Fabric that enables automated processing of events that trigger actions. For example, you can use Activator to notify you by email when a value in an Eventstream deviates from a specific range or to run a notebook to perform some Spark-based data processing logic when a real-time dashboard is updated.
 
-![Screenshot of an Activator alert in Microsoft Fabric.](../media/activator.png)
+:::image type="content" source="../media/activator.png" alt-text="Screenshot of an Activator alert in Microsoft Fabric." lightbox="../media/activator.png":::
 
 This image shows a rule configured to alert when package delivery failures happen, demonstrating how you can automate responses to specific business events.
 

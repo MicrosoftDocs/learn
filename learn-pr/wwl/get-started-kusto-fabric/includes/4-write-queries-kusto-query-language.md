@@ -1,6 +1,6 @@
 KQL databases in an Eventhouse are where you store and query real-time data that flows from Eventstreams and other streaming sources. Once data is loaded into tables, you can use the Kusto Query Language (KQL) or T-SQL to query your data.
 
-![Screenshot of an Eventhouse in Microsoft Fabric.](../media/eventhouse.png)
+:::image type="content" source="../media/eventhouse.png" alt-text="Screenshot of an Eventhouse in Microsoft Fabric." lightbox="../media/eventhouse.png":::
 
 Within an eventhouse, you can create:
 

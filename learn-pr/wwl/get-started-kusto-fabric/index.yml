@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: fabric
 title: Get started with Real-Time Intelligence in Microsoft Fabric
-summary: Real-Time Intelligence in Microsoft Fabric has capabilities that help you ingest, process, store, visualize, and act on data in motion to gain immediate insights from events as they happen.
+summary: Real-Time Intelligence in Microsoft Fabric helps you ingest, process, store, visualize, and act on data in motion to get insights from events as they happen.
 abstract: |
   In this module, you learn how to:
   - Describe real-time analytics, streams and events.
