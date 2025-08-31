@@ -1,6 +1,6 @@
 As organizations generate increasing volumes of event-driven data, the ability to process, analyze, and act on data in motion becomes essential for competitive advantage. Real-Time Intelligence provides comprehensive capabilities for working with streaming data with minimal latency.
 
-## Real-Time Intelligence use cases
+## Explore Real-Time Intelligence use cases
 
 Unlike batch systems that process data on scheduled intervals, Real-Time Intelligence helps you respond to events as they happen, delivering near real-time insights.
 
@@ -12,7 +12,7 @@ Here are some common types of event data and examples of how Real-Time Intellige
 - **Website performance**: Monitor page load times to improve user experience
 - **System health**: Track application errors to maintain service reliability
 
-## Real-Time Intelligence Components
+## Real-Time Intelligence components
 
 Microsoft Fabric's Real-Time Intelligence is an integrated set of components that work together to handle streaming data from capture through automated response.
 
@@ -30,7 +30,7 @@ Real-Time Intelligence stores data in KQL (Kusto Query Language) databases in Ev
 
 ## Analyze data with KQL Queryset
 
-KQL Querysets provide a workspace for running and managing queries against KQL databases. The KQL Queryset allows you to save queries for future use, organize multiple query tabs, and share queries with others for collaboration. The KQL Queryset also supports T-SQL queries, allowing you to use familiar SQL syntax alongside KQL for data analysis.
+KQL Queryset provides a workspace for running and managing queries against KQL databases. The KQL Queryset allows you to save queries for future use, organize multiple query tabs, and share queries with others for collaboration. The KQL Queryset also supports T-SQL queries, allowing you to use familiar SQL syntax alongside KQL for data analysis.
 
 ## Visualize insights with Real-Time Dashboard
 

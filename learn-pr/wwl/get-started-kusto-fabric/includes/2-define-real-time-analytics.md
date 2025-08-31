@@ -2,9 +2,9 @@ Real-time analytics is the practice of processing, analyzing, and acting on data
 
 ## Understand events and streams
 
-In data systems, **events** are records of things that happen in a system. They capture moments when something occurs, changes, or is completed. Examples include website clicks, stock price changes, customer purchases, patient vital sign changes, or equipment sensor readings. Think of them as digital records or log entries that document activity across your systems.  
+**Events** are records of things that happen in a system. They capture moments when something occurs, changes, or is completed. Examples include website clicks, stock price changes, customer purchases, patient vital sign changes, or equipment sensor readings. Think of them as digital records or log entries that document activity across your systems.  
 
-A **stream** is essentially a sequence of events, typically ordered by the time an event occurred. Each event in the stream represents something that happened at a specific moment. Events flow through streams continuously as they occur. For example, a stream of equipment temperature sensor readings contains temperature readings over many points of time. That means that a stream contains the event information needed to detect patterns over time or to identify opportunities or risks and take action immediately after something happens, or in *real-time*. 
+A **stream** is essentially a sequence of events, typically ordered by the time an event occurred. Each event in the stream represents something that happened at a specific moment. Events flow through streams continuously as they occur. For example, a stream of equipment temperature sensor readings contains temperature readings over many points of time. This continuous flow of event information allows you to detect patterns over time, identify opportunities or risks, and take action immediately after something happens, or in *real-time*.
 
 Streams are the delivery mechanism that carries events from where they happen to where they need to be processed, analyzed, or acted upon.
 
