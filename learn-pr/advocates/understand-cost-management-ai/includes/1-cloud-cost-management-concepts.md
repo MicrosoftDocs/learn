@@ -1,10 +1,10 @@
-Cloud cost management is a discipline that includes people, processes, tools and data. This dicipline helps ensure that cloud resources are sized correctly, meet business requirements for application performance, and that their cost is relative to the benefit they give the business.
+Cloud cost management is a discipline that includes people, processes, tools, and data. This discipline helps ensure that cloud resources are sized correctly, meet business requirements for application performance, and that their cost is relative to the benefit they give the business.
 
 With the consumption-based model of the cloud (pay for what you use), it's natural to ask both "how much will this cost?" and "why is this costing so much?". So, cloud cost management is considered at every stage in an application's lifecycle - from estimating costs before deployment, through to saving money by decommissioning resources that are no longer needed.
 
 ## Preparing your cloud environment
 
-There are several design decisions for your Microsoft Azure cloud environment which will help your cost management processes and align the structure of your cloud resources with your organization's structure. These include:
+There are several design decisions for your Microsoft Azure cloud environment that will help your cost management processes and align the structure of your cloud resources with your organization's structure. These include:
 
 - **Establishing your subscriptions** - Subscriptions provide a billing container for Azure resources, with all of your cloud resources in that subscription appearing on one invoice. They often mirror environment types, with separate subscriptions for Development or Production workloads. They aren't limited to a geographical region and can also be used for enforcing policies. For cost management, they're top level of cloud cost data. 
 - **Adopting consistent naming conventions** - When investigating costs, you want to know what a resource is, what it's being used for and who is using it. This is easier if you have defined a structure naming convention for your Azure resources that is used by everyone who has access to create new cloud resources.  
@@ -26,4 +26,4 @@ Establishing budgets and alert thresholds helps you drive organizational account
 
 ## Optimizing costs
 
-Cost optimization requires comparing cost data with business usage data and business requirements. Cost reduction for the sake of saving money can negatively impact application performance. For example, if you are using an Azure Machine Learning Compute Instance to train deep learning models, CPU-based virtual machines are significantly cheaper than GPU virtual machines, but deep learning training will be orders of magnitude slower and could take days instead of hours. But cost optimization can include right-sizing underutilized resources, removing unused resources, rearchitecting applications, and taking advantage of rate discounts with savings plans and reserved instances.
+Cost optimization requires comparing cost data with business usage data and business requirements. Cost reduction for the sake of saving money can negatively impact application performance. For example, if you're using an Azure Machine Learning Compute Instance to train deep learning models, CPU-based virtual machines are significantly cheaper than GPU virtual machines, but deep learning training will be orders of magnitude slower and could take days instead of hours. But cost optimization can include right-sizing underutilized resources, removing unused resources, rearchitecting applications, and taking advantage of rate discounts with savings plans and reserved instances.
