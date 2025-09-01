@@ -1,4 +1,4 @@
-Cloud cost management is a discipline that includes people, processes, tools and data. It helps ensure that cloud resources are sized correctly, meet business requirements for application performance, and that their cost is relative to the benefit they give the business.
+Cloud cost management is a discipline that includes people, processes, tools and data. This dicipline helps ensure that cloud resources are sized correctly, meet business requirements for application performance, and that their cost is relative to the benefit they give the business.
 
 With the consumption-based model of the cloud (pay for what you use), it's natural to ask both "how much will this cost?" and "why is this costing so much?". So, cloud cost management is considered at every stage in an application's lifecycle - from estimating costs before deployment, through to saving money by decommissioning resources that are no longer needed.
 

@@ -6,7 +6,7 @@ The FinOps Foundation is a project of The Linux Foundation, dedicated to advanci
 
 [![A diagram of the FinOps Framework showing principles, scopes, core personas, domains and capabilities.](../media/finops-framework.png)](../media/finops-framework-big.png#lightbox)
 
-[*FinOps Framework*](https://www.finops.org/framework/)_ by_ [*FinOps Foundation*](https://www.finops.org/)
+[*FinOps Framework*](https://www.finops.org/framework/) by [*FinOps Foundation*](https://www.finops.org/)
 
 Many organizations have already established FinOps practices as their cloud usage has scaled and matured, though for others, AI may be the catalyst for them to assess and improve their cloud cost management processes.  
 

@@ -4,6 +4,7 @@ Combined with an understanding of good cloud cost management principles, you're 
 
 ## Learn more
 
+- [AdventureWorks eShop reference application](https://github.com/Azure-Samples/eShopOnAzure)
 - [Organize your Azure resources effectively](/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources)
 - [Microsoft Azure subscription considerations and recommendations](/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org-subscriptions)
 - [Define your naming convention](/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)
