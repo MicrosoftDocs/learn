@@ -14,7 +14,7 @@ This approach supports responsible AI use and aligns with organizational data go
 
 | Step | Description | Learn more |
 |------|-------------|------------|
-| Understand how Copilot data is stored | Copilot interactions are stored in a hidden folder within each user's Exchange mailbox.  | [Content stored in Exchange Online mailboxes for eDiscovery](/purview/ediscovery-what-is-stored-in-a-mailbox?azure-portal=true) |
+| Understand how Copilot data is stored | Copilot interactions are stored in a hidden folder within each user's Exchange mailbox. | [Content stored in Exchange Online mailboxes for eDiscovery](/purview/ediscovery-what-is-stored-in-a-mailbox?azure-portal=true) |
 | Assign eDiscovery roles | To create a case, assign the **eDiscovery Manager** role. To delete Copilot data, assign the **Search And Purge** role.  | [Assign eDiscovery permissions in the Microsoft Purview portal](/purview/ediscovery-assign-permissions?azure-portal=true) |
 | Confirm license requirements | A Microsoft 365 E5 license is required for both Microsoft Purview eDiscovery (Premium) and Microsoft 365 Copilot.  | [eDiscovery service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-purview-service-description?azure-portal=true#microsoft-purview-ediscovery) |
 | Review deletion limits | A maximum of 100 items per mailbox can be removed at a time. This action is intended for targeted incident response. | [Search for and delete Copilot data](/purview/ediscovery-search-and-delete-copilot-data?azure-portal=true) |

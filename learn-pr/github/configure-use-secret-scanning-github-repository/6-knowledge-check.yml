@@ -6,8 +6,8 @@ metadata:
   title: Module assessment
   description: Knowledge check for configuring and using secret scanning in GitHub.
   ms.date: 06/05/2025
-  author: rmcmurray
-  ms.author: robmcm
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3
