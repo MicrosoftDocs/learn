@@ -118,7 +118,7 @@ While ultimately you may want to create real-time dashboards or Power BI reports
 
 ## Using Copilot to assist with queries
 
-For AI-based assistance with KQL querying, you can use [Copilot for Real-Time Intelligence](/fabric/get-started/copilot-real-time-intelligence).
+For AI-based assistance with KQL querying, you can use [Copilot for Real-Time Intelligence](/fabric/real-time-intelligence/copilot-writing-queries).
 
 When your administrator has enabled Copilot, you see the option in queryset menu bar. Copilot opens as a pane to the side of the main query interface. When you ask a question about your data, Copilot generates the KQL code to answer your question.
 

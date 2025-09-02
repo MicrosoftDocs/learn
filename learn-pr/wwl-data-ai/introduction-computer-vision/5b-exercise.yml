@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-computer-vision.exercise
+title: Exercise - Explore a computer vision scenario
+metadata:
+  title: Exercise - Explore a computer vision scenario
+  description: Explore a computer vision scenario.
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 08/29/2025
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5b-exercise.md)]
+

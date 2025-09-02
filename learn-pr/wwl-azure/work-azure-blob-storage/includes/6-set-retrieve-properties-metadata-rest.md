@@ -24,7 +24,7 @@ Metadata values can only be read or written in full; partial updates aren't supp
 
 ### Retrieving properties and metadata
 
-The GET and HEAD operations both retrieve metadata headers for the specified container or blob. These operations return headers only; they don't return a response body. The URI syntax for retrieving metadata headers on a container is as follows: 
+The GET/HEAD operation retrieves metadata headers for the specified container or blob. These operations return headers only; they don't return a response body. The URI syntax for retrieving metadata headers on a container is as follows: 
     
 ```
 GET/HEAD https://myaccount.blob.core.windows.net/mycontainer?restype=container  

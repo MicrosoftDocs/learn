@@ -371,7 +371,7 @@ Console.WriteLine($"{person.FName} {person.LName}: age = {person.Age}");
 
 ```
 
-If a method takes an array as a parameter and modifies the value of individual elements, it isn't necessary for the method to return the array. C# passes all reference types by value, and the value of an array reference is the pointer to the array. In the following example, changes to the contents of the values array that are made in the DoubleValues method are observable by any code that has a reference to the array.
+If a method takes an array as a parameter and modifies the value of individual elements, it isn't necessary for the method to return the array. C# passes all reference types by value, and the value of an array reference is the pointer to the array.
 
 ## Expression-bodied members
 

@@ -2,11 +2,11 @@
 uid: learn.wwl.load-data-into-relational-data-warehouse.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 10/27/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3
@@ -46,4 +46,4 @@ quiz:
       explanation: "That's correct. In this case, simply changing the number with no history is appropriate."
     - content: "Type 2"
       isCorrect: false
-      explanation: "That's incorrect. There should be no historical context for storing an old phone number."
+      explanation: "That's incorrect. There should be no historical context for storing an old phone number."
