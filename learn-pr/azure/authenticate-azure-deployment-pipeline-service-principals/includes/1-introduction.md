@@ -11,7 +11,7 @@ One of your colleagues has told you that you'll need to set up a service princip
 In this module, you'll create a service principal with a key, ready for your pipeline to use. You'll create a resource group in Azure to contain your company's website, and you'll authorize the service principal to deploy and configure your website's resources.
 
 > [!NOTE]
-> The information in this Microsoft Learn module is specific to Azure Pipelines. If you use GitHub Actions, the way your deployment workflows authenticate is different. To learn more about GitHub Actions and deployment authorization, see [Authenticate your Azure deployment workflow by using workload identities](xref:learn.azure.authenticate-azure-deployment-workflow-workload-identities).
+> The information in this Microsoft Learn module is specific to Azure Pipelines. If you use GitHub Actions, the way your deployment workflows authenticate is different.
 
 ## What is the main goal?
 

@@ -54,7 +54,9 @@ To search for Copilot-related activity:
 1. Select **Solutions** > **Audit**.
 1. On the **Search** page, set a **Start date** and **End date**.
 1. Under **Activities - friendly names**, enter a keyword like _Copilot_ or _AI_ to view related user and admin activities. Select the activities relevant to your investigation or review. These might include interactions with Copilot, updates to plugins or promptbooks, or actions related to AI-powered meeting notes.
+
    :::image type="content" source="../media/audit-copilot-search-activities.png" alt-text="Screenshot showing Interacted with Copilot selected under Activities - friendly names." lightbox="../media/audit-copilot-search-activities.png":::
+
 1. For more targeted searches, use **Activities - operation names** and enter operation values such as `CopilotInteraction`, `AINotesUpdate`, or other known operation names.
 1. In the **Record types** dropdown, select types such as `CopilotInteraction`, `ConnectedAIAppInteraction`, or `AIAppInteraction` to scope the results to AI activity.
 1. (Optional) Use fields like **Users**, **AppIdentity**, or **File, folder, or site** to narrow your results based on specific criteria.
