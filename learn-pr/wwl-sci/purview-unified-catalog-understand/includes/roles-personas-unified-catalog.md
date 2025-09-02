@@ -14,6 +14,8 @@ Several personas typically interact with Microsoft Purview Unified Catalog. Thei
 
 - **Data consumers**: Analysts, developers, and others who use curated products, provide feedback, and request new products when gaps exist.
 
+    :::image type="content" source="../media/personas.svg" alt-text="Screenshot showing where to select data sources in eDiscovery." border = "false" lightbox=" ../media/personas.png":::
+
 ## Collaboration across roles
 
 A sales analyst needs a trusted source for customer activity. Here’s how each role contributes:
