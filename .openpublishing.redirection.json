@@ -54140,6 +54140,101 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-azure-nat-gateway/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/nat-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-nat-gateway/2-what-azure-nat-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/nat-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-nat-gateway/3-when-use-azure-nat-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/nat-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-nat-gateway/4-how-azure-nat-gateway-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/nat-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-nat-gateway/5-deploy-configure-azure-nat-gateway.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/nat-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-nat-gateway/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/nat-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-nat-gateway/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/nat-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-nat-gateway/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/nat-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-command-line-tools-intro/choose-the-right-cli-tool.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-command-line-tools-intro/index.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-command-line-tools-intro/infrastructure-as-code.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-command-line-tools-intro/into-to-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-command-line-tools-intro/introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-command-line-tools-intro/intro-to-azure-powershell.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-command-line-tools-intro/intro-to-bicep.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-command-line-tools-intro/intro-to-terraform.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-command-line-tools-intro/knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-command-line-tools-intro/scripting-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-command-line-tools-intro/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/cli/azure/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/child-extension-bicep-templates/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
       "redirect_document_id": false
