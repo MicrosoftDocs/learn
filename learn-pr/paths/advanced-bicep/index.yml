@@ -40,7 +40,5 @@ products:
 modules:
 - learn.azure.deploy-resources-different-scopes
 - learn.azure.extend-resource-manager-template-deployment-scripts
-- learn.azure.share-bicep-modules-using-private-registries
-- learn.azure.arm-template-specs
 trophy:
   uid: learn.advanced-bicep.trophy
