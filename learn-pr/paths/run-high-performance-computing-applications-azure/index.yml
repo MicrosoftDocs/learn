@@ -35,7 +35,6 @@ subjects:
 - infrastructure
 modules:
 - learn.intro-to-hpc
-- learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli
 - learn.azure.azure-cyclecloud-high-performance-computing
 - learn.azure.customize-clusters-azure-cyclecloud
 - learn.azure.choose-service-level-azure-netapp-files-hpc-applications
