@@ -4,7 +4,7 @@ metadata:
   title: 'Implement secure Azure solutions'
   description: Learn how to more securely deploy apps in Azure by using Azure Key Vault, managed identities, and Azure App Configuration.
   ms.date: 04/26/2023
-  author: wwlpublish
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: learning-path
 title: 'Implement secure Azure solutions'

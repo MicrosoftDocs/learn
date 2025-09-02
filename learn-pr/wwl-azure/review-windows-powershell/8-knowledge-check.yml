@@ -4,18 +4,17 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/07/2025
+  ms.date: 08/20/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
   ms.custom:
   - N/A
-  module_assessment: true
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
-  title: ""
+  title: "Knowledge check"
   questions:
   - content: "You want to start PowerShell 7 from the command line. Which command will you run?"
     choices:
