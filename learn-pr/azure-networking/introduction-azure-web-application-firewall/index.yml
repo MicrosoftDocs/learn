@@ -5,8 +5,8 @@ metadata:
   description: Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including its features, how it's deployed, and its common use cases.
   manager: kumud
   ms.date: 05/01/2025
-  author: vhorne
-  ms.author: robmcm
+  author: halkazwini
+  ms.author: halkazwini
   ms.topic: module-intro-to-product
   ms.service: azure-web-application-firewall
 title: "Introduction to Azure Web Application Firewall"

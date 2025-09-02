@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Set up communication between IoT Hub and IoT Edge
   description: In this unit, there's an exercise and it guides the learner how to set up communication between IoT Hub and IoT Edge
   ms.date: 05/09/2025
-  author: PatAltimore
+  author: sethmanheim
   ms.author: leestott
   ms.topic: unit
   ms.custom: team=nextgen, devx-track-azurecli

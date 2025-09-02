@@ -3,9 +3,9 @@ uid: learn.wwl.implement-synapse-link-for-sql
 metadata:
   title: Implement Azure Synapse Link for SQL
   description: "Implement Azure Synapse Link for SQL"
-  ms.date: 02/10/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module-standard-task-based
   ms.service: azure-synapse-analytics
   ms.subservice: synapse-link
@@ -40,4 +40,4 @@ units:
 - learn.wwl.implement-synapse-link-for-sql.knowledge-check
 - learn.wwl.implement-synapse-link-for-sql.summary
 badge:
-  uid: learn.wwl.implement-synapse-link-for-sql.badge
+  uid: learn.wwl.implement-synapse-link-for-sql.badge

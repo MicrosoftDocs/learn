@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-information-extraction
 metadata:
   title: Introduction to AI-powered information extraction concepts
   description: "Introduction to AI-powered information extraction concepts"
-  ms.date: 5/9/2025
+  ms.date: 05/29/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: module
@@ -31,6 +31,7 @@ units:
 - learn.wwl.introduction-information-extraction.form-extraction
 - learn.wwl.introduction-information-extraction.multimodal-extraction
 - learn.wwl.introduction-information-extraction.knowledge-mining
+- learn.wwl.introduction-information-extraction.exercise
 - learn.wwl.introduction-information-extraction.knowledge-check
 - learn.wwl.introduction-information-extraction.summary
 badge:

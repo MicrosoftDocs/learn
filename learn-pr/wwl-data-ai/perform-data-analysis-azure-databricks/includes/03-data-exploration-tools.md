@@ -34,7 +34,7 @@ Azure Databricks also supports **SQL** by allowing to switch between DataFrame o
 
 To filter the DataFrame using a SQL query, you first create a temporary view:
 
-```sql
+```python
 df.createOrReplaceTempView("people")
 
 sql_df = spark.sql("SELECT Name, Age FROM people WHERE Age > 30")
