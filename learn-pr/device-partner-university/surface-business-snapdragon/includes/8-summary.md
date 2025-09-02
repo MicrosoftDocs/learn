@@ -1,0 +1,3 @@
+In this module, we reviewed the key features of Microsoft Surface Pro for Business, including performance specifications, AI-enhanced functionality, and battery efficiency. We also described how the device supports mobile and creative workflows through its lightweight and versatile design. You should now understand how you can use key features of Microsoft Surface Pro for Business to improve efficiency.
+
+For more information on Microsoft Surface Pro for Business, check out [this page](https://www.microsoft.com/surface/devices/surface-pro-11th-edition).

@@ -57,7 +57,4 @@ Here's an example YAML pipeline that deploys an application to the Development e
 
 It allows you to deploy the application to different environments by changing the environment name in the env section.
 
-For more information about Environments, see:
-
-- [Create and target an environment.](/azure/devops/pipelines/process/environments)
-- [Manage multiple environments by using Bicep and Azure Pipelines](/training/modules/manage-multiple-environments-using-bicep-azure-pipelines/)
+For more information about Environments, see [Create and target an environment.](/azure/devops/pipelines/process/environments)

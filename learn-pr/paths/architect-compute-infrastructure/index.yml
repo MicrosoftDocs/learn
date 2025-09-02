@@ -25,7 +25,6 @@ subjects:
 - serverless-computing
 modules:
 - learn.manage-vms-with-azure-cli
-- learn.choose-compute-provisioning
 - learn.azure.create-resource-manager-template-vs-code
 - learn.deploy-vms-from-vhd-templates
 - learn.build-app-with-scale-sets
