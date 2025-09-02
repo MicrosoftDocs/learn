@@ -1,0 +1,3 @@
+It's critical to identify sensitive information types (SITs) and labels to be used for different data loss prevention supported (DLP) [locations](/purview/dlp-policy-reference#locations).
+
+Earlier in this training, sensitive data types were identified and then sensitivity labels were created. There were both automatic and manual labeling steps that were created. These labeling processes help ensure that sensitive information is properly protected and handled according to organizational policies. Review the [supported locations table for DLP policies](/purview/dlp-policy-reference#locations) to see where SITs and labels can be applied.

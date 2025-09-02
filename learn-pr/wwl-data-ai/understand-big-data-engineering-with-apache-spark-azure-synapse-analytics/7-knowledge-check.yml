@@ -2,18 +2,17 @@
 uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 05/25/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
-  title: "Check your knowledge"
   questions:
   - content: "Which definition best describes Apache Spark?"
     choices:
@@ -47,4 +46,4 @@ quiz:
       explanation: "Incorrect. The %%pyspark magic instructs Spark to interpret the code in the cell as Python."
     - content: "%%sql"
       isCorrect: true
-      explanation: "Correct. The %%sql magic instructs Spark to interpret the code in the cell as SQL."
+      explanation: "Correct. The %%sql magic instructs Spark to interpret the code in the cell as SQL."

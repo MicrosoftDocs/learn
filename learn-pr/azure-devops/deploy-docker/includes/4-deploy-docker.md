@@ -27,7 +27,7 @@ Here, you'll add a new pipeline variable to your existing YAML pipeline defined 
 
 ### Docker task
 
-You can use the [Docker task](/azure/devops/pipelines/tasks/build/docker-v2?azure-portal=true) to build and deploy Docker images. Replace the entire **Build** stage with the YAML snippet below.
+You can use the [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2) to build and deploy Docker images. Replace the entire **Build** stage with the YAML snippet below.
 
 * **command**: Specifies the Docker command to run.
 * **buildContext**: Specifies the path to the build context.
