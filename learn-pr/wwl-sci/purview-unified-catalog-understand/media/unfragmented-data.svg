@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="315.84283"
-   height="299.79391"
-   viewBox="0 0 315.84283 299.79391"
+   width="369.07037"
+   height="350.3168"
+   viewBox="0 0 369.07037 350.3168"
    role="img"
    aria-label="Abstract blue cloud with a zig-zag data network passing through a centered shield"
    version="1.1"
    id="svg14"
+   sodipodi:docname="unfragmented-data.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="369.07037"
+       height="350.3168"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
   <defs
      id="defs14">
     <linearGradient
@@ -50,7 +71,7 @@
   <!-- ===== Centered shield (balanced proportions) ===== -->
   <!-- Shield shape centered around (148, 156) -->
   <g
-     transform="matrix(0.64195699,0,0,0.64195699,-334.45959,-53.28243)"
+     transform="matrix(0.75014305,0,0,0.75014305,-390.82453,-62.261873)"
      id="g18">
     <path
        d="m 563,490.5 c 0,-32.861 26.639,-59.5 59.5,-59.5 32.861,0 59.5,26.639 59.5,59.5 0,32.861 -26.639,59.5 -59.5,59.5 -32.861,0 -59.5,-26.639 -59.5,-59.5 z m 8.609,0 c 0,28.107 22.784,50.891 50.891,50.891 28.107,0 50.891,-22.784 50.891,-50.891 0,-28.107 -22.784,-50.892 -50.891,-50.892 -28.107,0 -50.891,22.785 -50.891,50.892 z"

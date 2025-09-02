@@ -8,7 +8,7 @@ To overcome these challenges, Unified Catalog provides capabilities that make da
 - **Applying consistent governance** by enforcing access, classification, and quality controls across the estate.
 - **Linking data to outcomes** with objectives that connect governance activities to measurable business goals.
 
-  :::image type="content" source="../media/unfragmented-data.svg" alt-text="Screenshot showing where to select data sources in eDiscovery." lightbox=" ../media/unfragmented-data-sources.png":::
+  :::image type="content" source="../media/unfragmented-data.svg" alt-text="Screenshot showing where to select data sources in eDiscovery."  border="false" :::
 
 This unified approach reduces confusion, builds trust, and provides a reliable foundation for confident data use.
 
