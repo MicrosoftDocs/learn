@@ -40,9 +40,5 @@ modules:
 - learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines
 - learn.azure.authenticate-azure-deployment-pipeline-service-principals
 - learn.azure.test-bicep-code-using-azure-pipelines
-- learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines
-- learn.azure.publish-reusable-bicep-code-using-azure-pipelines
-- learn.azure.control-govern-azure-environment-deploying-infrastructure-code
-- learn.azure.manage-multiple-environments-using-bicep-azure-pipelines
 trophy:
   uid: learn.bicep-pipelines-azdo.trophy
