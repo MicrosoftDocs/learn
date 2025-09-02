@@ -3,7 +3,7 @@ uid: learn-wwl.migrate-sql-workloads-azure-managed-instances
 metadata:
   title: Migrate SQL Server workloads to Azure SQL Managed Instance
   description: "Migrate SQL Server workloads to Azure SQL Managed Instance"
-  ms.date: 04/14/2025
+  ms.date: 08/26/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module

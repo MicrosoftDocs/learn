@@ -4,10 +4,10 @@ metadata:
   title: Introduction to GitHub's products
   description: Overview of GitHub's products, plans, associated features, and billing. 
   ms.service: github
-  manager: mkluck
+  manager: alicondah
   ms.date: 09/19/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: module-intro-to-product
 title: Introduction to GitHub's products
 summary: This module provides an overview of GitHub products, including the account types, plan options, associated features, and billing. It also covers how to access GitHub on-the-go using GitHub Desktop and GitHub Mobile. 

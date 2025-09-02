@@ -6,8 +6,8 @@ metadata:
   title: Use SQL Server 2022 as a data hub querying files and backup/restore to object storage providers
   description: "Learn how to use T-SQL to access files types like parquet and delta stored in Azure Storage of S3 compatible storage. In addition, learn how to back up and restore SQL Server databases with S3 compatible storage."
   ms.date: 04/15/2025
-  author: vanto
-  ms.author: vanto
+  author: rgward
+  ms.author: bobward
   ms.reviewer: vanto
   ms.topic: unit
 durationInMinutes: 10
