@@ -55868,6 +55868,336 @@
       "source_path": "learn-pr/azure/troubleshoot-inbound-connectivity-azure-load-balancer/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/load-balancer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-lighthouse/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/lighthouse/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-lighthouse/2-what-is-azure-lighthouse.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/lighthouse/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-lighthouse/3-how-azure-lighthouse-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/lighthouse/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-lighthouse/4-when-to-use-azure-lighthouse.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/lighthouse/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-lighthouse/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/lighthouse/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-lighthouse/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/lighthouse/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-lighthouse/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/lighthouse/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/2-evaluate-data-redundancy-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/3-exercise-change-replication-strategy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/4-evaluate-storage-account-failover.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/5-exercise-failover-secondary-location.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provide-disaster-recovery-replicate-storage-data/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-compute-provisioning/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-compute-provisioning/2-provisioning-solutions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-compute-provisioning/3-azure-native-solutions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-compute-provisioning/4-third-party-solutions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-compute-provisioning/5-exercise-deploy-template.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-compute-provisioning/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-compute-provisioning/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/2-implement-hub-spoke.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/3-plan-virtual-networks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/4a-create-hub-spoke-virtual-network-manager.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/4-exercise-implement-hub-spoke.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/5-secure-hub-spoke.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/2-understand-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/3-handle-similarities-between-environments-using-pipeline-templates.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/4-exercise-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/5-exercise-add-multiple-environments-your-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/6-handle-differences-between-environments-using-bicep-parameters.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/7-exercise-use-bicep-parameters-multiple-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-service-fabric/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-fabric/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-service-fabric/2-what-is-azure-service-fabric.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-fabric/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-service-fabric/3-how-azure-service-fabric-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-fabric/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-service-fabric/4-when-to-use-azure-service-fabric.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-fabric/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-service-fabric/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-fabric/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-service-fabric/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-fabric/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-service-fabric/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-fabric/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/structure-bicep-code-collaboration/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/structure-bicep-code-collaboration/2-exercise-review-existing-template.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/structure-bicep-code-collaboration/3-improve-parameters-names.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/structure-bicep-code-collaboration/4-plan-structure-bicep-file.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/structure-bicep-code-collaboration/5-document-code-comments-metadata.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/structure-bicep-code-collaboration/6-exercise-refactor-bicep-file.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/structure-bicep-code-collaboration/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/structure-bicep-code-collaboration/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/structure-bicep-code-collaboration/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-parallel-tasks-in-azure-batch-with-the-azure-cli/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-parallel-tasks-in-azure-batch-with-the-azure-cli/2-what-is-azure-batch.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-parallel-tasks-in-azure-batch-with-the-azure-cli/3-design-an-azure-batch-job-to-run-parallel-task.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-parallel-tasks-in-azure-batch-with-the-azure-cli/4-exercise-create-azure-batch-job-in-cli-to-run-parallel-task.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-parallel-tasks-in-azure-batch-with-the-azure-cli/5-exercise-monitor-azure-batch-job-in-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-parallel-tasks-in-azure-batch-with-the-azure-cli/6-introducing-batch-explorer.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-parallel-tasks-in-azure-batch-with-the-azure-cli/7-exercise-monitor-and-visualize-batch-job-in-batch-explorer.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-parallel-tasks-in-azure-batch-with-the-azure-cli/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-parallel-tasks-in-azure-batch-with-the-azure-cli/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/run-parallel-tasks-in-azure-batch-with-the-azure-cli/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/batch/",
+      "redirect_document_id": false
     }
   ]
 }
