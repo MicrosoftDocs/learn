@@ -54030,6 +54030,101 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/2-understand-github-actions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/3-exercise-create-run-basic-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/4-deploy-bicep-files-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/5-exercise-create-github-secret.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/6-exercise-add-bicep-deployment-action-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/7-control-workflow-executes-triggers.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/8-exercise-update-workflow-trigger.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-github-actions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-secrets-configure-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-secrets-configure-app/2-concept-secrets.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-secrets-configure-app/3-exercise-create-secrets.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-secrets-configure-app/4-concept-configmaps.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-secrets-configure-app/5-exercise-create-configmaps.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-secrets-configure-app/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-secrets-configure-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/bicep-github-actions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/deploy-paas-solutions-with-azure-sql/10-summary.md",
       "redirect_url": "/training/modules/deploy-paas-solutions-with-azure-sql/9-summary",
       "redirect_document_id": false
@@ -55592,6 +55687,91 @@
     {
       "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/2-understand-template-specs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/3-create-publish-template-spec.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/4-deploy-template-spec.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/5-exercise-create-deploy-template-spec.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/6-manage-template-spec.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/7-exercise-update-version-template-spec.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-specs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-inbound-connectivity-azure-load-balancer/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-inbound-connectivity-azure-load-balancer/2-troubleshoot-azure-load-balancer.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-inbound-connectivity-azure-load-balancer/3-diagnose-issues-by-reviewing-configurations-and-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-inbound-connectivity-azure-load-balancer/4-exercise-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-inbound-connectivity-azure-load-balancer/5-exercise-identify-and-resolve-inbound-network-connectivity.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-inbound-connectivity-azure-load-balancer/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/troubleshoot-inbound-connectivity-azure-load-balancer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/load-balancer/",
       "redirect_document_id": false
     }
   ]
