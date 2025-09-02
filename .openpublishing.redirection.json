@@ -56018,6 +56018,91 @@
       "source_path": "learn-pr/azure/hub-and-spoke-network-architecture/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-network/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/2-understand-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/3-handle-similarities-between-environments-using-pipeline-templates.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/4-exercise-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/5-exercise-add-multiple-environments-your-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/6-handle-differences-between-environments-using-bicep-parameters.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/7-exercise-use-bicep-parameters-multiple-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-multiple-environments-using-bicep-azure-pipelines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-service-fabric/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-fabric/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-service-fabric/2-what-is-azure-service-fabric.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-fabric/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-service-fabric/3-how-azure-service-fabric-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-fabric/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-service-fabric/4-when-to-use-azure-service-fabric.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-fabric/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-service-fabric/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-fabric/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-service-fabric/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-fabric/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-service-fabric/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-fabric/",
+      "redirect_document_id": false
     }
   ]
 }
