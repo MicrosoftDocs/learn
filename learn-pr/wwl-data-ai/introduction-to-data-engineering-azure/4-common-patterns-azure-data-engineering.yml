@@ -2,12 +2,12 @@
 uid: learn.wwl.introduction-data-engineering-azure.common-patterns-azure-data-engineering
 title: Important data engineering concepts
 metadata:
-  title: Important data engineering concepts
+  title: Important Data Engineering Concepts
   description: "Important data engineering concepts"
-  ms.date: 02/07/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-common-patterns-azure-data-engineering.md)]
+  [!include[](includes/4-common-patterns-azure-data-engineering.md)]

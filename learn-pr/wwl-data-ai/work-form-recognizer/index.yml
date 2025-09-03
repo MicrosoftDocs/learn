@@ -5,12 +5,12 @@ metadata:
   description: Azure Document intelligence extracts data at scale to enable the submission of documents in real time, at scale, with accuracy. This module gives users the tools to use the Azure Document intelligence vision API.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 04/28/2025
+  ms.date: 08/28/2025
   ms.service: azure
   ms.topic: module
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
-  ai-usage: human-only
 title: Extract data from forms with Azure Document intelligence
 summary: Document intelligence uses machine learning technology to identify and extract key-value pairs and table data from form documents with accuracy, at scale. This module teaches you how to use the *Azure Document intelligence* cognitive service.
 abstract: |
@@ -35,6 +35,7 @@ roles:
 products:
 - ai-services
 - document-intelligence
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 units:

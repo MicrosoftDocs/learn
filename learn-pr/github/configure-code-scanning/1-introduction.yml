@@ -6,8 +6,8 @@ metadata:
   title: Introduction
   description: Learn how to implement code scanning using CodeQL, third party tools, and GitHub Actions.
   ms.date: 04/16/2025
-  author: rmcmurray
-  ms.author: robmcm
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 2
 content: |

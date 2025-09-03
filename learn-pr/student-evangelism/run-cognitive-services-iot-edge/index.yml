@@ -3,10 +3,10 @@ uid: learn.oxford.run-cognitive-services-iot-edge
 metadata:
   title: "Run Azure AI services on IoT Edge"
   description: Implement a cognitive service for performing language detection on an IoT Edge device.
-  ms.date: 07/08/2024
+  ms.date: 08/19/2025
   ms.update-cycle: 180-days
-  author: orin-thomas
-  ms.author: orthomas
+  author: sethmanheim
+  ms.author: sethm
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.collection: ce-advocates-ai-copilot
@@ -46,4 +46,4 @@ units:
 - learn.oxford.run-cognitive-services-iot-edge.exercise-test-cognitive-service
 - learn.oxford.run-cognitive-services-iot-edge.knowledge-check
 - learn.oxford.run-cognitive-services-iot-edge.summary
-
+
