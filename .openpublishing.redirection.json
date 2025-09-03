@@ -54140,6 +54140,81 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure-networking/introduction-azure-ddos-protection/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ddos-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-ddos-protection/2-what-is-azure-ddos-protection.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ddos-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-ddos-protection/3-how-azure-ddos-protection-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ddos-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-ddos-protection/4-when-to-use-azure-ddos-protection.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ddos-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-ddos-protection/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ddos-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-ddos-protection/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ddos-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-ddos-protection/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ddos-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/end-to-end-encryption-with-app-gateway/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/application-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/end-to-end-encryption-with-app-gateway/2-application-gateway-and-encryption.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/application-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/end-to-end-encryption-with-app-gateway/3-configure-backend-pools-for-encryption.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/application-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/end-to-end-encryption-with-app-gateway/4-exercise-configure-backend-pools-for-encryption.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/application-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/end-to-end-encryption-with-app-gateway/5-configure-listener-for-encryption.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/application-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/end-to-end-encryption-with-app-gateway/6-exercise-configure-listener-for-encryption.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/application-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/end-to-end-encryption-with-app-gateway/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/application-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/end-to-end-encryption-with-app-gateway/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/application-gateway/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/intro-to-azure-nat-gateway/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/nat-gateway/",
       "redirect_document_id": false
@@ -56432,6 +56507,171 @@
     {
       "source_path": "learn-pr/azure/keep-your-virtual-machines-updated/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-the-right-disk-storage-for-vm-workload/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-the-right-disk-storage-for-vm-workload/2-managed-unmanaged-local-disk-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-the-right-disk-storage-for-vm-workload/3-disk-types-for-virtual-machines.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-the-right-disk-storage-for-vm-workload/4-select-disk-type-for-your-workload.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-the-right-disk-storage-for-vm-workload/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-the-right-disk-storage-for-vm-workload/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-whatif/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-whatif/2-deployment-modes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-whatif/3-what-if.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-whatif/4-exercise-what-if.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-whatif/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-whatif/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/arm-template-whatif/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+     },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/2-generalize-server-create-image.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/3-create-image.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/4-exercise-create-image-provision-vm.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/2-what-azure-file-sync.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/3-check-windows-server-readiness.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/4-exercise-assess-windows-server-readiness.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/5-set-up-azure-file-sync.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/6-exercise-create-file-sync-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/7-set-up-azure-file-sync-windows-server.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/8-exercise-configure-file-sync-tools-windows-server.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/9-test-troubleshoot-azure-file-sync.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/10-exercise-check-file-sync.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/11-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/12-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
       "redirect_document_id": false
     }
   ]

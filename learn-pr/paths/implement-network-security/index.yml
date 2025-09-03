@@ -33,7 +33,6 @@ subjects:
 modules:
 - learn.configure-the-network-for-your-virtual-machines
 - learn.secure-and-isolate-with-nsg-and-service-endpoints
-- learn.end-to-end-encryption-with-app-gateway
 - learn.troubleshoot-azure-network-infrastructure
 trophy:
   uid: learn.security.implement-network-security.trophy

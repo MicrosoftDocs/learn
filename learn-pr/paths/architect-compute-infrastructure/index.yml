@@ -26,7 +26,6 @@ subjects:
 modules:
 - learn.manage-vms-with-azure-cli
 - learn.azure.create-resource-manager-template-vs-code
-- learn.deploy-vms-from-vhd-templates
 - learn.build-app-with-scale-sets
 - learn.intro-to-hpc
 trophy:
