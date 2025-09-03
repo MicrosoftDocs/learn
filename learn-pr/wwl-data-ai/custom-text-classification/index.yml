@@ -5,9 +5,10 @@ metadata:
   description: The Azure AI Language service enables processing of natural language to use in your own app. Learn how to build a custom text classification project.
   author: ivorb
   ms.author: berryivor
-  ms.date: 05/01/2025
+  ms.date: 08/28/2025
   ms.service: azure-ai-language
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
 title: Create a custom text classification solution
@@ -31,6 +32,7 @@ roles:
 - developer
 products:
 - ai-services
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 - classification-analysis

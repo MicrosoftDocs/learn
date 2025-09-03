@@ -2,14 +2,14 @@
 uid: learn.wwl.use-delta-lake-azure-synapse-analytics.catalog-tables
 title: Create catalog tables
 metadata:
-  title: Create catalog tables
+  title: Create Catalog Tables
   description: "Create catalog tables"
-  ms.date: 10/11/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-catalog-tables.md)]
+  [!include[](includes/4-catalog-tables.md)]
