@@ -4,10 +4,10 @@ title: Implement security to protect Azure SQL
 metadata:
   title: Implement security to protect Azure SQL
   description: "Learn how to implement security to protect Azure SQL."
-  ms.date: 09/14/2023
-  author: wwlpublish
+  ms.date: 8/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-protect-azure-sql-security-features.md)]
+  [!include[](includes/3-protect-azure-sql-security-features.md)]
