@@ -56283,6 +56283,81 @@
       "source_path": "learn-pr/paths/advanced-bicep/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ha-application-storage-with-grs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ha-application-storage-with-grs/2-storage-account-replication-features.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ha-application-storage-with-grs/3-exercise-create-storage-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ha-application-storage-with-grs/4-design-applications-ha-dr.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ha-application-storage-with-grs/5-exercise-deploy-ha-application.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ha-application-storage-with-grs/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/ha-application-storage-with-grs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/create-first-azure-front-door/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/create-first-azure-front-door/2-routing-traffic-with-front-door.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/create-first-azure-front-door/3-exercise-create-web-sites.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/create-first-azure-front-door/4-create-configure-front-door.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/create-first-azure-front-door/5-exercise-create-configure-front-door.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/create-first-azure-front-door/6-exercise-test-front-door.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/create-first-azure-front-door/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/create-first-azure-front-door/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
     }
   ]
 }
