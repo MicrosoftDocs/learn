@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 08/20/2025
+  ms.date: 09/03/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which feature allows you to configure a Databricks workflow to execute tasks based on the successful completion of other tasks?"
+  - content: "Which feature allows you to configure a Lakeflow Job to execute tasks based on the successful completion of other tasks?"
     choices:
     - content: "Libraries"
       isCorrect: false
@@ -24,7 +24,7 @@ quiz:
       explanation: "Incorrect. Azure Databricks can automatically manage the creation and termination of clusters for running tasks and are fine-tuned for performance based on the workload."
     - content: "Dependency"
       isCorrect: true
-      explanation: "Correct. Dependency in Azure Databricks Workflows enables the configuration of jobs to run automatically based on certain conditions, such as the success or failure of other jobs. This feature is essential for managing tasks within complex workflows, ensuring they're executed in the correct order."
+      explanation: "Correct. Dependency in Lakeflow Jobs enables the configuration of jobs to run automatically based on certain conditions, such as the success or failure of other jobs. This feature is essential for managing tasks within complex workflows, ensuring they're executed in the correct order."
   - content: "Which Azure Databricks component is essential for scaling computational resources according to workload demands?"
     choices:
     - content: "Notebooks"
@@ -32,18 +32,18 @@ quiz:
       explanation: "Incorrect. Databricks notebooks are collaborative documents that contain runnable code, visualizations, and narrative text used to orchestrate complex data transformations and visualizations."
     - content: "Jobs"
       isCorrect: false
-      explanation: "Incorrect. Jobs are the primary component in Databricks Workflows. They allow you to define and schedule automated tasks such as running notebooks, scripts, or compiled Java ARchives (JARs)."
+      explanation: "Incorrect. Jobs are the primary component in Lakeflow Jobs. They allow you to define and schedule automated tasks such as running notebooks, scripts, or compiled Java Archives (JARs)."
     - content: "Clusters"
       isCorrect: true
-      explanation: "Correct. Clusters in Azure Databricks are groups of virtual machines that provide computational resources for running workflows. They can be configured to autoscale, which means they automatically adjust the number of nodes in the cluster based on the workload, ensuring efficient use of resources and optimal performance."
-  - content: "What is the primary use of the Databricks REST API in the context of Databricks Workflows?"
+      explanation: "Correct. Clusters in Azure Databricks are groups of virtual machines that provide computational resources for running jobs. They can be configured to autoscale, which means they automatically adjust the number of nodes in the cluster based on the workload, ensuring efficient use of resources and optimal performance."
+  - content: "What is the primary use of the Databricks REST API in the context of Lakeflow Jobs?"
     choices:
     - content: "To manually execute SQL queries"
       isCorrect: false
       explanation: "Incorrect. Databricks REST API isn't primarily used to execute SQL queries manually."
     - content: "To create, manage, and execute jobs programmatically"
       isCorrect: true
-      explanation: "Correct. The Databricks REST API provides a programmatic interface to create, manage, and execute jobs in Azure Databricks. This capability is crucial for automating workflows and integrating Databricks tasks with other applications and services, allowing for a more flexible and scalable deployment of data workflows."
+      explanation: "Correct. The Databricks REST API provides a programmatic interface to create, manage, and execute jobs in Azure Databricks. This capability is crucial for automating Lakeflow Jobs and integrating Databricks tasks with other applications and services, allowing for a more flexible and scalable deployment of data workflows."
     - content: "To visualize data within Databricks notebooks"
       isCorrect: false
       explanation: "Incorrect. Databricks REST API isn't primarily used to visualize data within Databricks notebooks."
