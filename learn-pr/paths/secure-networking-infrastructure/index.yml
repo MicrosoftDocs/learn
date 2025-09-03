@@ -30,7 +30,6 @@ subjects:
 modules:
 - introduction-azure-firewall
 - learn.intro-to-azure-firewall-manager
-- introduction-azure-ddos-protection
 - introduction-azure-virtual-wan
 - introduction-azure-private-link
 trophy:
