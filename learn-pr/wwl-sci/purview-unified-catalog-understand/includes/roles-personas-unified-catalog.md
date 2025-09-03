@@ -14,7 +14,7 @@ Several personas typically interact with Microsoft Purview Unified Catalog. Thei
 
 - **Data consumers**: Analysts, developers, and others who use curated products, provide feedback, and request new products when gaps exist.
 
-    :::image type="content" source="../media/personas.svg" alt-text="Screenshot showing where to select data sources in eDiscovery." border="false":::
+    :::image type="content" source="../media/personas.svg" alt-text="Diagram showing the Unified Catalog at the center, connected in a circle to five roles: Owner, Steward, Expert, Admin, and Consumer, representing collaboration across personas." border="false":::
 
 ## Collaboration across roles
 

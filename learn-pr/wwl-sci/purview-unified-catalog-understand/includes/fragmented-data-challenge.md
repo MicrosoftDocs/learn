@@ -4,7 +4,7 @@ Organizations depend on data for decisions, but when that data is fragmented acr
 
 Imagine a company where finance, sales, and operations each store customer records in separate systems. Each system defines _active customer_ differently. Reports don't match, teams question the numbers, and decision-making slows down as data must be reconciled manually.
 
-:::image type="content" source="../media/fragmented-data.svg" alt-text="Screenshot showing where to select data sources in eDiscovery." border="false":::
+:::image type="content" source="../media/fragmented-data.svg" alt-text="Diagram showing unconnected people, files, and cloud data linked by overlapping dashed lines, representing fragmented data." border="false":::
 
 This fragmentation leads to challenges like:
 
