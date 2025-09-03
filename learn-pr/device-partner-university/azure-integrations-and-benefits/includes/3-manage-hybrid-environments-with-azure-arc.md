@@ -1,12 +1,12 @@
-If your organization runs Windows Server in its own data center or across other cloud platforms, [Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/overview) provides a unified way to manage those servers through the Azure Portal. This centralized approach allows IT teams to view, configure, and secure all their servers—regardless of location—from a single interface, streamlining operations and improving consistency.
+If your organization runs Windows Server in its own data center or across other cloud platforms, [Azure Arc](https://learn.microsoft.com/azure/azure-arc/overview) provides a unified way to manage those servers through the Azure portal. This centralized approach allows IT teams to view, configure, and secure all their servers—regardless of location—from a single interface, streamlining operations and improving consistency.
 
-Azure Arc provides a unified management layer for Windows Server, whether your servers are on-premises, in other clouds, or at the edge. By connecting Windows Server to Azure Arc, IT teams can centralize management, enforce policies, and enable advanced Azure services—all from the Azure Portal.
+Azure Arc provides a unified management layer for Windows Server, whether your servers are on-premises, in other clouds, or at the edge. By connecting Windows Server to Azure Arc, IT teams can centralize management, enforce policies, and enable advanced Azure services—all from the Azure portal.
 
 :::image type="content" source="../media/azure-company.png" alt-text="A photograph of a developer and CEO in office hallway, walking meeting, positive exchange.":::
 
 ## Using Azure features on hybrid servers
 
-Azure Arc enables Windows Server to use Azure services even if the servers are not running in Azure. This includes services like machine learning, databases, and monitoring.
+Azure Arc enables Windows Server to use Azure services even if the servers aren't running in Azure. This includes services like machine learning, databases, and monitoring.
 
 If your organization wants to leverage Azure Machine Learning for on-premises data, connecting Windows Server to Azure Arc allows you to run these Azure services without migrating the workloads to the cloud.
 
@@ -15,11 +15,11 @@ If your organization wants to leverage Azure Machine Learning for on-premises da
 
 To onboard a Windows Server to Azure Arc:
 
-1. Open the Azure Portal.
+1. Open the Azure portal.
 2. Navigate to Azure Arc > Servers.
 3. Click “Add” and select “Generate script.”
 4. Run the script on your Windows Server.
-5. Verify that the server appears in the Azure Portal.
+5. Verify that the server appears in the Azure portal.
 
 This process enables centralized management and policy enforcement. 
 

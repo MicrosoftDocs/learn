@@ -30,7 +30,7 @@ quiz:
     choices:
         - content: "Increases server memory capacity"
           isCorrect: false
-          explanation: "Incorrect. Hotpatching does not affect memory."
+          explanation: "Incorrect. Hotpatching doesn't affect memory."
         - content: "Enables real-time failover"
           isCorrect: false
           explanation: "Incorrect. That’s a resilience feature, not Hotpatching."
@@ -58,7 +58,7 @@ quiz:
     choices:
         - content: "Provides free cloud storage"
           isCorrect: false
-          explanation: "Incorrect. Azure Hybrid Benefit does not offer free storage."
+          explanation: "Incorrect. Azure Hybrid Benefit doesn't offer free storage."
         - content: "Enables automatic patching"
           isCorrect: false
           explanation: "Incorrect. That’s related to Hotpatching, not Hybrid Benefit."

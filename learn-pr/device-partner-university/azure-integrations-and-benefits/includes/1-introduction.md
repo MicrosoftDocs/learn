@@ -1,10 +1,10 @@
-Windows Server 2025 works seamlessly with Microsoft Azure to enhance management, security, and scalability in hybrid and multi-cloud environments.
+Windows Server 2025 works seamlessly with Microsoft Azure to enhance management, security, and scalability in hybrid and multicloud environments.
 
-In this module, you’ll explore how Windows Server 2025 integrates with Azure services such as Azure Arc, Defender for Cloud, and Sentinel. You’ll learn how to configure hybrid management, enforce security policies, and improve operational efficiency using real-world tools and scenarios.
+In this module, you explore how Windows Server 2025 integrates with Azure services such as Azure Arc, Defender for Cloud, and Microsoft Sentinel. You learn how to configure hybrid management, enforce security policies, and improve operational efficiency using real-world tools and scenarios.
 
 ## Learning objectives
 
-By the end of this module, you’ll be able to:
+By the end of this module, you're able to:
 - Describe how Windows Server 2025 integrates with Azure services.
 - Configure and manage Windows Server with Azure Arc.
 - Apply Azure policies and security baselines to on-premises and cloud servers.
