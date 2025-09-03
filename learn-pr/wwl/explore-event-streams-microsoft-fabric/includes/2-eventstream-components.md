@@ -1,10 +1,10 @@
-Microsoft Fabric Eventstream works by creating a pipeline of events from multiple internal and external sources to different destinations. Eventstream is the delivery mechanism that carries events from where they happen, then through optional transformations and to where they need to be processed, analyzed, or acted upon.
+The eventstream feature in Fabric works by creating a pipeline that ingests events from streaming data sources, processes them through optional transformations, and delivers them to various destinations. Eventstream is the delivery mechanism that carries events from where they happen to where they need to be processed, analyzed, or acted upon.
 
 You can use the eventstream canvas, which is a visual editor, to design your pipeline by dragging and dropping different nodes, such as sources, transformations and, destinations. You can also see the event data flowing through the pipeline in real-time. You don't need to write any code or manage any infrastructure to use eventstream.
 
 :::image type="content" source="../media/real-time-intelligence-eventstream-workflow.png" alt-text="Screenshot of an eventstream." lightbox="../media/real-time-intelligence-eventstream-workflow.png":::
 
-This image shows the eventstream canvas. There's a real-time data source called **Bicycles**, which includes city bike rental data including bike locations, bike station street names and more. **Bicycle-data** is an eventstream that ingests data from the **Bicycles** data source. The data is transformed by an operation named **GroupByStreet** that sums the number of bikes by bike station street name. This data is stored in a table in an eventhouse called **Bikes-by-street-table**.
+This image shows the eventstream canvas. There's a real-time data source called **Bicycles**, which includes: city bike rental data including bike locations, bike station street names and more. **Bicycle-data** is an eventstream that ingests data from the **Bicycles** data source. The data is transformed by an operation named **GroupByStreet** that sums the number of bikes by bike station street name. This data is stored in a table in an eventhouse called **Bikes-by-street-table**.
 
 The main components of an eventstream are:
 

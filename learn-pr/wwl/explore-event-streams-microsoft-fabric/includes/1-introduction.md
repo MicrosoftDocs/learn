@@ -2,7 +2,7 @@
 
 Some of the main benefits of eventstream in Fabric are:
 
-- You can capture, transform, and route data to various destinations. You can use the drag and drop feature to make your event data processing logic without writing any code.
+- You can capture, transform, and route data to various destinations. You can use the drag and drop feature to create your event data processing logic without writing any code.
 - There are multiple source connectors to ingest event data from different sources, such as Azure Event Hubs, Azure IoT Hub, Azure storage, Apache Kafka, and others.
 - You can send data to a wide range of destinations for storage, further analysis or processing. 
 

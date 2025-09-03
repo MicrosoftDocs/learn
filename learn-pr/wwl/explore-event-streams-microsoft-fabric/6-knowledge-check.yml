@@ -15,17 +15,17 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the primary function of Microsoft Fabric Eventstreams?"
+  - content: "What is the primary function of eventstream?"
     choices:
     - content: "Performing batch loading of data into a data warehouse."
       isCorrect: false
-      explanation: "Incorrect. Eventstreams isn't a batch loading technology."
+      explanation: "Incorrect. Eventstream isn't a batch loading technology."
     - content: "Running Apache Spark notebooks and jobs."
       isCorrect: false
-      explanation: "Incorrect. Eventstreams isn't used primarily to run Spark code."
+      explanation: "Incorrect. Eventstream isn't used primarily to run Spark code."
     - content: "Ingesting and transforming real-time data."
       isCorrect: true
-      explanation: "Correct. Eventstreams is used to ingest and transform real-time data."
+      explanation: "Correct. Eventstream is used to ingest and transform real-time data."
   - content: "What do temporal window transformation enable you to do?"
     choices:
     - content: "Aggregate event data in a stream based on specific time periods."

@@ -10,13 +10,13 @@ Common transformation scenarios include:
 
 ## Eventstream transformations
 
-The eventstream canvas offers a straightforward and user-friendly method for creating event data processing workflows. Fabric Eventstream provide several no-code transformations that you can drag onto the canvas:
+The eventstream canvas give you a way to create event data processing workflows. Eventstream provide several no-code transformations that you can drag onto the canvas:
 
 - **Filter**: Filter events based on the value of a field in the input. Keep only events that meet specific conditions. For example: temperature > 80°, status = "error", customer type = "premium".
 - **Manage fields**: This transformation allows you to add, remove, change data type, or rename fields coming in from an input or another transformation. Add calculated fields, remove unnecessary columns, rename fields, or change data types to match destination requirements.
-- **Aggregate**: Use the Aggregate transformation to calculate an aggregation (Sum, Minimum, Maximum, or Average) every time a new event occurs over a period of time. This operation also allows for the renaming of these calculated columns, and filtering or slicing the aggregation based on other dimensions in your data. You can have one or more aggregations in the same transformation.
-- **Group by**: Calculate aggregations across events within time windows, for example, hourly sales totals, or daily temperature averages. This transformation supports various time windows including tumbling windows (fixed intervals) and sliding windows (overlapping intervals).
-- **Union**: Use the Union transformation to connect two or more nodes in the event canvas and add events with shared fields (with the same name and data type) into one table. Fields that don't match are dropped and not included in the output.
+- **Aggregate**: Use the aggregate transformation to calculate an aggregation (Sum, Minimum, Maximum, or Average) every time a new event occurs over a period of time. This operation also lets you rename calculated columns, and filter the aggregation based on other dimensions in your data. You can have one or more aggregations in the same transformation.
+- **Group by**: Calculate aggregations across events within time windows, for example, hourly sales totals, or daily temperature averages. This transformation supports various time windows including *tumbling windows* (fixed intervals) and *sliding windows* (overlapping intervals).
+- **Union**: Use the union transformation to connect two or more nodes in the event canvas and add events with shared fields (with the same name and data type) into one table. Fields that don't match are dropped and not included in the output.
 - **Join**: Combine data from two streams based on a matching condition between them.
 - **Expand**: Use this array transformation to create a new row for each value within an array.
 
