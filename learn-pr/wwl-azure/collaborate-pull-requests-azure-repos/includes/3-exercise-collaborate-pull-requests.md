@@ -1,5 +1,3 @@
-# Exercise: Implement Enterprise Pull Request Workflows
-
 In this exercise, you'll configure a comprehensive pull request workflow for enterprise environments. You'll work through each step to establish advanced branch policies, automated governance controls, and scalable collaboration patterns using Azure Repos.
 
 ## Scenario: Enterprise Development Team Setup

@@ -1,5 +1,3 @@
-# Enterprise Pull Request Collaboration in Azure Repos
-
 Pull requests are a key part of modern software development teams. They help teams work together better by making code review easier and more organized. Pull requests are not just about checking code - they help team members learn from each other, maintain code quality, and keep everyone aligned on project goals. This approach works well for teams of all sizes, from small startups to large companies.
 
 ## The Strategic Imperative of Pull Request Excellence
