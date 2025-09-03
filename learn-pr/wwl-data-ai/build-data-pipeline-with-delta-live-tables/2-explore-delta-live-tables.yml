@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-data-pipeline-with-delta-live-tables.explore-delta-live-tables
-title: Explore Delta Live Tables
+title: Explore Lakeflow Declarative Pipelines
 metadata:
-  title: Explore Delta Live Tables
-  description: "Explore Delta Live Tables"
-  ms.date: 08/20/2025
+  title: Explore Lakeflow Declarative Pipelines
+  description: "Explore Lakeflow Declarative Pipelines"
+  ms.date: 09/03/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
