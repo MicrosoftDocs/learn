@@ -23,10 +23,6 @@ In the previous diagram, it's important to highlight:
 1. The DNS private resolver hosted in the hub virtual network uses the Azure-provided DNS (168.63.129.16) as a forwarder. IP address 168.63.129.16 is a virtual public IP address that facilitates a communication channel to Azure platform resources. 
 1. The hub virtual network must be linked to the Private DNS zone names for Azure services, such as privatelink.blob.core.windows.net, as shown in the diagram.
 
-> [!NOTE]
-> There are many other [DNS integration scenarios](/azure/cloud-adoption-framework/ready/azure-best-practices/private-link-and-dns-integration-at-scale#private-link-and-dns-integration-in-hub-and-spoke-network-architectures) to fit your organization's needs. 
-
-
 ### What is Azure DNS Private Resolver
 
 [Azure DNS Private Resolver](/azure/dns/dns-private-resolver-overview) enables you to query Azure DNS on-premises private zones without deploying VM based DNS servers. When you use DNS Private Resolver, you don't need a DNS forwarder, and Azure DNS is able to resolve on-premises domain names.
