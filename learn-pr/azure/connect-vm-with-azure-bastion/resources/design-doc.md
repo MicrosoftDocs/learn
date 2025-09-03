@@ -194,5 +194,4 @@ Sources:
 
 Scripts to possibly leverage:
 
-- https://learn.microsoft.com/training/modules/troubleshoot-inbound-connectivity-azure-load-balancer/4-exercise-set-up-environment 
 - https://github.com/MicrosoftDocs/mslearn-troubleshoot-inbound-network-connectivity-azure-load-balancer/blob/master/src/scripts/setup.sh)
