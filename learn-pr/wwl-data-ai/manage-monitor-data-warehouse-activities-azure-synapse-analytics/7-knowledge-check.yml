@@ -2,11 +2,11 @@
 uid: learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 06/12/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
@@ -46,4 +46,4 @@ quiz:
       explanation: "Incorrect. sys.dm_pdw_dms_workers allows you to monitor data movement in the dedicated SQL pool"
     - content: "DBCC PDW_SHOWEXECUTIONPLAN."
       isCorrect: false
-      explanation: "Incorrect. DBCC PDW_SHOWEXECUTIONPLAN Shows an execution plan of a query, and is not a Dynamic Management View."
+      explanation: "Incorrect. DBCC PDW_SHOWEXECUTIONPLAN Shows an execution plan of a query, and is not a Dynamic Management View."

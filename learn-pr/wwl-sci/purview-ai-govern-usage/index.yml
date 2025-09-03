@@ -9,6 +9,7 @@ metadata:
   ms.topic: module
   ai-usage: ai-assisted
   ms.service: purview
+  hidden: true
 title: Govern AI usage with Microsoft Purview
 summary: |
   Learn how to apply policies and manage the lifecycle of AI-generated content using Microsoft Purview. This module shows how to retain, delete, investigate, and review content created in Microsoft 365 Copilot and other AI apps.

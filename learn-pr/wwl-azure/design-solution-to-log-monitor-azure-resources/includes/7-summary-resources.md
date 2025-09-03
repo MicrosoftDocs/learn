@@ -25,7 +25,3 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 - Improve [incident response with alerting on Azure](/training/modules/incident-response-with-alerting-on-azure/).
 
 - Get an [introduction to Azure Data Explorer](/training/modules/intro-to-azure-data-explorer/intro-to-azure-data-explorer/).
-
-## Learn more with optional practical exercises
-
-- Monitor, diagnose, and troubleshoot [your Azure storage](/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/).

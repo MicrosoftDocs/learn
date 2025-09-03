@@ -1,21 +1,21 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-on-premise-based-tools
 metadata:
-  title: MD-102 Deploy using on-premises based tools
+  title: MD-102 Deploy Using On-premises Based Tools
   description: Students are introduced to deployment using the Microsoft Deployment Toolkit and Configuration Manager.
-  ms.date: 04/06/2023
+  ms.date: 08/19/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: learning-path
 title: MD-102 Deploy using on-premises based tools
 prerequisites: |
   Students should have:
-  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
-  - Strong understanding of computer networking, client security, and application concepts
-  - Experience using Active Directory Domain Services
+  -   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  -   Strong understanding of computer networking, client security, and application concepts
+  -   Experience using Active Directory Domain Services
 summary: |
   Students are introduced to deployment using the Microsoft Deployment Toolkit and Configuration Manager.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/deploy-on-premise-based-tools.svg
 levels:
 - intermediate
 roles:

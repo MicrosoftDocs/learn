@@ -1,36 +1,12 @@
 In this exercise, you configure the access to the virtual machine (VM) you created earlier in this module.
 
 > [!IMPORTANT]
-> The Microsoft Learn sandbox should still be running. If the sandbox timed out, you'll need to redo the previous exercise (**Exercise - Create an Azure virtual machine**).
+> The VM for this exercise was createdly previously in this module. If you deleted the VM or resource group created in unit 3, you'll need to redo the previous exercise (**Exercise - Create an Azure virtual machine**).
 
-To verify the VM you created previously is still running, use the following command:
+Right now, the VM you created and installed Nginx on during the previous exercise isn't accessible from the internet. In this exercise, you'll create a network security group that changes that by allowing inbound HTTP access on port 80.
 
-```azurecli
-az vm list
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```
-
-If you receive an empty response `[]`, you need to complete the first exercise in this module again. If the result lists your current VM and its settings, you may continue.
-
-Right now, the VM you created and installed Nginx on isn't accessible from the internet. You create a network security group that changes that by allowing inbound HTTP access on port 80.
+> [!NOTE]
+> It's important that you're in the BASH version of Cloud Shell for some of the commands in this exercise. You can use the **Switch to...** button if you're currently in PowerShell mode.
 
 ## Task 1: Access your web server
 
@@ -40,72 +16,21 @@ In this procedure, you get the IP address for your VM and attempt to access your
     
     ```azurecli
     IPADDRESS="$(az vm list-ip-addresses \
-      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+      --resource-group "IntroAzureRG" \
       --name my-vm \
       --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
       --output tsv)"    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
 2.  Run the following `curl` command to download the home page:
     
     ```bash
     curl --connect-timeout 5 http://$IPADDRESS
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
     
     The `--connect-timeout` argument specifies to allow up to five seconds for the connection to occur. After five seconds, you see an error message that states that the connection timed out:
     
     ```output
     curl: (28) Connection timed out after 5001 milliseconds
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
     
     This message means that the VM wasn't accessible within the timeout period.
@@ -116,23 +41,6 @@ In this procedure, you get the IP address for your VM and attempt to access your
         
         ```bash
         echo $IPADDRESS       
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         ```
         
         You see an IP address, for example, *23.102.42.235*.
@@ -151,51 +59,15 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     
     ```azurecli
     az network nsg list \
-      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+      --resource-group "IntroAzureRG" \
       --query '[].name' \
       --output tsv    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
     
     You see this output:
     
     ```output
     my-vmNSG
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
     
     Every VM on Azure is associated with at least one network security group. In this case, Azure created an NSG for you called *my-vmNSG*.
@@ -203,25 +75,8 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     
     ```azurecli
     az network nsg rule list \
-      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+      --resource-group "IntroAzureRG" \
       --nsg-name my-vmNSG    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
     
     You see a large block of text in JSON format in the output. In the next step, you'll run a similar command that makes this output easier to read.
@@ -229,27 +84,10 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     
     ```azurecli
     az network nsg rule list \
-      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+      --resource-group "IntroAzureRG" \
       --nsg-name my-vmNSG \
       --query '[].{Name:name, Priority:priority, Port:destinationPortRange, Access:access}' \
       --output table    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
     
     You see this output:
@@ -258,24 +96,6 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     Name              Priority    Port    Access
     -----------------  ----------  ------  --------
     default-allow-ssh  1000        22      Allow
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
     
     You see the default rule, *default-allow-ssh*. This rule allows inbound connections over port 22 (SSH). SSH (Secure Shell) is a protocol that's used on Linux to allow administrators to access the system remotely. The priority of this rule is 1000. Rules are processed in priority order, with lower numbers processed before higher numbers.
@@ -290,30 +110,13 @@ Here, you create a network security rule that allows inbound access on port 80 (
     
     ```azurecli
     az network nsg rule create \
-      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+      --resource-group "IntroAzureRG" \
       --nsg-name my-vmNSG \
       --name allow-http \
       --protocol tcp \
       --priority 100 \
       --destination-port-range 80 \
       --access Allow    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
     
     For learning purposes, here you set the priority to 100. In this case, the priority doesn't matter. You would need to consider the priority if you had overlapping port ranges.
@@ -321,27 +124,10 @@ Here, you create a network security rule that allows inbound access on port 80 (
     
     ```azurecli
     az network nsg rule list \
-      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+      --resource-group "IntroAzureRG" \
       --nsg-name my-vmNSG \
       --query '[].{Name:name, Priority:priority, Port:destinationPortRange, Access:access}' \
       --output table    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
     
     You see both the *default-allow-ssh* rule and your new rule, *allow-http*:
@@ -351,23 +137,6 @@ Here, you create a network security rule that allows inbound access on port 80 (
     -----------------  ----------  ------  --------
     default-allow-ssh  1000        22      Allow
     allow-http          100        80      Allow    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
 
 ## Task 4: Access your web server again
@@ -381,46 +150,12 @@ Now that you configured network access to port 80, let's try to access the web s
     
     ```bash
     curl --connect-timeout 5 http://$IPADDRESS
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
     
     You see this response:
     
     ```html
     <html><body><h2>Welcome to Azure! My name is my-vm.</h2></body></html>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     ```
 2.  As an optional step, refresh your browser tab that points to your web server. You see the home page:
     
@@ -429,6 +164,10 @@ Now that you configured network access to port 80, let's try to access the web s
 
 Nice work. In practice, you can create a standalone network security group that includes the inbound and outbound network access rules you need. If you have multiple VMs that serve the same purpose, you can assign that NSG to each VM at the time you create it. This technique enables you to control network access to multiple VMs under a single, central set of rules.
 
-<!--- raw content start --->
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
-<!--- raw content end --->
+You've completed this exercise and all of the exercises for this module. To clean up your Azure environment and avoid leaving VMs running when not in use, delete the **IntroAzureRG** resource group.
+
+## Clean up
+1. From the Azure home page, under Azure services, select **Resource groups**.
+1. Select the **IntroAzureRG** resource group.
+1. Select **Delete resource group**.
+1. Enter `IntroAzureRG` to confirm deletion of the resource group and select delete.
