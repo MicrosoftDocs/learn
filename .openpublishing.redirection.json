@@ -56498,6 +56498,106 @@
       "source_path": "learn-pr/azure/arm-template-whatif/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
       "redirect_document_id": false
+     },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/2-generalize-server-create-image.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/3-create-image.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/4-exercise-create-image-provision-vm.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/2-what-azure-file-sync.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/3-check-windows-server-readiness.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/4-exercise-assess-windows-server-readiness.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/5-set-up-azure-file-sync.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/6-exercise-create-file-sync-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/7-set-up-azure-file-sync-windows-server.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/8-exercise-configure-file-sync-tools-windows-server.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/9-test-troubleshoot-azure-file-sync.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/10-exercise-check-file-sync.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/11-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/12-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
+      "redirect_document_id": false
     }
   ]
 }
