@@ -3,16 +3,14 @@ uid: learn.wwl.explore-event-streams-microsoft-fabric.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  module_assessment: true
   ai_generated_module_assessment: true
+  module_assessment: true
   description: "Check your knowledge of eventstream in Real-Time Intelligence"
   ms.date: 09/03/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
   ms.custom:
-  - N/A
-  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
