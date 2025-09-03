@@ -1,6 +1,6 @@
 Azure Arc extends the capabilities of Windows Server 2025 to on-premises and multi-cloud environments, providing centralized management across all servers and resources.
 
-:::image type="content" source="media/worker-office.png" alt-text="A photograph of a Person at desk in office, working on computer. Wearing glasses, blue shirt, navy quilted vest.":::
+:::image type="content" source="../media/worker-office.png" alt-text="A photograph of a Person at desk in office, working on computer. Wearing glasses, blue shirt, navy quilted vest.":::
 
 ## Unified management of servers
 

@@ -12,7 +12,7 @@ Microsoft Azure is a cloud platform that provides infrastructure, services, and 
 
 Suppose your organization is expanding to a new region. Instead of investing in new hardware, you can spin up Azure resources instantly and scale them as demand grows—paying only for what you use.
 
-:::image type="content" source="media/azure-employee.png" alt-text="A photograph of a smiling Azure developer working on intelligent apps in an automated assembly line setting.":::
+:::image type="content" source="../media/azure-employee.png" alt-text="A photograph of a smiling Azure developer working on intelligent apps in an automated assembly line setting.":::
 
 ## Azure services for Windows Server
 

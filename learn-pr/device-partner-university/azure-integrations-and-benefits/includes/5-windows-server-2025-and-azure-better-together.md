@@ -31,7 +31,7 @@ Azure Arc helps apply Azure’s security measures to Windows Server, ensuring co
 - Enforcing role-based access controls [Azure RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview)
 - Maintaining compliance with regulatory standards across on-premises and hybrid environments
 
-:::image type="content" source="media/azure-healthcare.png" alt-text="A photograph of two people reviewing medical imaging scans on monitors and tablet. Displays include brain and chest scans. One person points at screen; the other holds tablet. Room with multiple monitors..":::
+:::image type="content" source="../media/azure-healthcare.png" alt-text="A photograph of two people reviewing medical imaging scans on monitors and tablet. Displays include brain and chest scans. One person points at screen; the other holds tablet. Room with multiple monitors..":::
 
 ### Scenario: Healthcare Compliance
 
