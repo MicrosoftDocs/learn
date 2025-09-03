@@ -1,5 +1,3 @@
-## Strategic feedback ecosystem design
-
 The continuing success of practically every software product depends on establishing comprehensive feedback mechanisms that operate throughout the entire product lifecycle. Effective feedback cycles deliver critical data required for continuous assessment and improvement, enabling teams to make informed decisions and respond proactively to emerging challenges.
 
 ### Enterprise feedback architecture framework

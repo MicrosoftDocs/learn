@@ -1,4 +1,4 @@
-## Strategic project planning and setup
+Understanding project scope and ownership is crucial for successful collaboration between GitHub Projects and Azure Boards. In this unit, we'll explore key considerations for defining project boundaries and responsibilities.
 
 ### Project scope and ownership decisions
 

@@ -1,5 +1,3 @@
-## Strategic work planning and iteration management
-
 GitHub Projects provide comprehensive capabilities to control project deliverables, release dates, and iterations for effective upcoming work planning. Understanding how to leverage these features strategically can transform project delivery outcomes.
 
 ### Iteration planning framework

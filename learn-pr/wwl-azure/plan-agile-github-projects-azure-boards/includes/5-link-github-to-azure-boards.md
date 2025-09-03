@@ -1,5 +1,3 @@
-## Strategic integration: GitHub development + Azure Boards planning
-
 The integration between GitHub and Azure Boards creates a powerful hybrid approach that combines GitHub's developer-friendly environment with Azure Boards' enterprise planning capabilities. This connection enables organizations to maintain centralized project governance while allowing development teams to work in their preferred GitHub environment.
 
 **Business benefits of integration:**

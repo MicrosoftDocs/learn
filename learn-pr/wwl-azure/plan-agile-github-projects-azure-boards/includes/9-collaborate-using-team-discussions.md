@@ -1,5 +1,3 @@
-## Strategic team collaboration and knowledge sharing
-
 GitHub Discussions provide powerful capabilities for team coordination, enabling teams to plan collaboratively, share updates, and engage in meaningful conversations that transcend individual projects or repositories. Understanding how to leverage discussions strategically transforms team communication and decision-making processes.
 
 ### Discussion frameworks for enterprise teams

@@ -1,5 +1,3 @@
-## Understanding GitHub Projects: Modern project management
-
 GitHub Projects provides a powerful, adaptable project management solution that helps teams plan and track their work effectively. As the modern approach to project management on GitHub, Projects offers flexible tools that adapt to your team's workflow, whether you're working on a single repository or coordinating across multiple repositories and teams.
 
 ## What are GitHub Projects?
