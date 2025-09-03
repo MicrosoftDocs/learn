@@ -1,7 +1,7 @@
-Once you create an Eventstream in Fabric, you can connect it to a wide range of data sources, optionally transform it, and route the processed data to multiple destinations. In this unit, we'll review eventstream sources and destinations. 
+Once you create an eventstream in Fabric, you can connect it to a wide range of data sources, optionally transform it, and route the processed data to multiple destinations. In this unit, we'll review eventstream sources and destinations. 
 
 ## Eventstream sources
-You can stream data from Microsoft sources and also ingest data from third-party platforms including:
+You can stream data from Microsoft sources and also ingest data from non-Microsoft platforms including:
 
 - **Microsoft sources**, like Azure Event Hubs, Azure IoT Hubs, Azure Service Bus, Change Data Capture (CDC) feeds in database services, and others.
 - **Azure events**, like Azure Blob Storage events.
@@ -33,7 +33,7 @@ You can attach to multiple destinations within an event stream at the same time 
 
 ## Configure eventstream destinations
 
-Eventstream destinations can be configured in the eventream canvas. A destination can be specified after a datasource is connected or after optional transformations are applied.
+Eventstream destinations can be configured in the eventstream canvas. A destination can be specified after a datasource is connected or after optional transformations are applied.
 
 :::image type="content" source="../media/eventstream-destinations.png" alt-text="Screenshot showing how to configure destinations in eventstream canvas." lightbox="../media/eventstream-destinations.png":::
 
