@@ -27,19 +27,19 @@ By completing this module, you'll master the foundational concepts needed to lea
 
 Before starting your DevOps journey, evaluate your current state:
 
-**✅ Technical Readiness**
+**Technical Readiness**
 
 - [ ] Do you have experience with version control systems?
 - [ ] Are you familiar with basic cloud computing concepts?
 - [ ] Do you understand software development lifecycles?
 
-**✅ Organizational Readiness**
+**Organizational Readiness**
 
 - [ ] Does your organization support cultural change?
 - [ ] Are stakeholders committed to DevOps transformation?
 - [ ] Do you have executive sponsorship for change initiatives?
 
-**✅ Personal Readiness**
+**Personal Readiness**
 
 - [ ] Are you prepared to learn new tools and processes?
 - [ ] Can you dedicate time for hands-on practice?
@@ -115,8 +115,8 @@ Successful learners will have prior knowledge and understanding of the following
 
 **If you're new to DevOps**, consider taking the:
 
-- Free online: [DevOps foundations: The core principles and practices](https://go.microsoft.com/fwlink/?linkid=2268284) \- **NEW.**
-- Instructor-led course: AZ-2008: DevOps foundations: The core principles and practices - **NEW**.
+- Free online: [DevOps foundations: The core principles and practices](https://go.microsoft.com/fwlink/?linkid=2268284).
+- Instructor-led course: AZ-2008: DevOps foundations: The core principles and practices.
 
 If you're new to Azure and cloud computing, consider one of the following resources:
 

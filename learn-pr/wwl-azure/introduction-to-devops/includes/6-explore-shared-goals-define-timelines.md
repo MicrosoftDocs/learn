@@ -1,5 +1,3 @@
-## Explore shared goals using the SMART framework
-
 Effective DevOps transformation requires goals that are **Specific, Measurable, Achievable, Relevant, and Time-bound (SMART)**. These outcomes should have specific, measurable targets that directly relate to customer value and business objectives.
 
 ### SMART goals examples for DevOps transformation:
