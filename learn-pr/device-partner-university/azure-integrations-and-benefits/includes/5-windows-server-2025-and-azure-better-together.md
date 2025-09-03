@@ -1,8 +1,8 @@
-Windows Server 2025 is designed to work seamlessly with Azure management tools, helping organizations improve uptime, streamline operations, and unlock advanced hybrid capabilities. By connecting Windows Server to Azure, IT teams gain access to features that simplify management and reduce disruption. For more, see [Windows Server and Azure Management](https://learn.microsoft.com/windows-server/administration/azure).
+Windows Server 2025 is designed to work seamlessly with Azure management tools, helping organizations improve uptime, streamline operations, and unlock advanced hybrid capabilities. By connecting Windows Server to Azure, IT teams gain access to features that simplify management and reduce disruption. For more, see [Windows Server and Azure Management](/windows-server/administration/azure).
 
 Some of the key benefits include:
 
-- **[Hotpatching](https://learn.microsoft.com/windows-server/get-started/hotpatch)**: Install updates without frequent reboots, cutting downtime from up to 12 reboots annually to as few as 4.
+- **[Hotpatching](/windows-server/get-started/hotpatch)**: Install updates without frequent reboots, cutting downtime from up to 12 reboots annually to as few as 4.
 - **At-scale inventory**: Search and manage all servers and resources from a single portal.
 - **Consistent VM extensions**: Enforce best practices across environments for reliable operations.
 - **Integration with premium services**: Connect hybrid servers to advanced management capabilities.
@@ -28,7 +28,7 @@ With hybrid environments in place, securing them becomes critical. Let’s explo
 Azure Arc helps apply Azure’s security measures to Windows Server, ensuring consistent protection and compliance. Key capabilities include:
 
 - Applying security baselines across servers
-- Enforcing role-based access controls [Azure RBAC](https://learn.microsoft.com/azure/role-based-access-control/overview)
+- Enforcing role-based access controls [Azure RBAC](/azure/role-based-access-control/overview)
 - Maintaining compliance with regulatory standards across on-premises and hybrid environments
 
 :::image type="content" source="../media/azure-healthcare.png" alt-text="A photograph of two people reviewing medical imaging scans on monitors and tablet. Displays include brain and chest scans. One person points at screen; the other holds tablet. Room with multiple monitors..":::

@@ -4,7 +4,7 @@ Azure Arc extends the capabilities of Windows Server 2025 to on-premises and mul
 
 ## Unified management of servers
 
-[Azure Arc-enabled Windows Servers](https://learn.microsoft.com/azure/azure-arc/servers/overview) allow IT teams to manage both virtual machines and physical servers from a single platform. This streamlines operations and reduces the complexity of maintaining multiple environments.
+[Azure Arc-enabled Windows Servers](azure/azure-arc/servers/overview) allow IT teams to manage both virtual machines and physical servers from a single platform. This streamlines operations and reduces the complexity of maintaining multiple environments.
 
 ## Multi-OS monitoring
 
@@ -18,9 +18,9 @@ By using Azure Arc insights, IT teams can make data-driven decisions that align 
 
 Azure Arc-enabled Windows Server integrates with Azure’s built-in security and compliance tools:
 
-- **[Azure Policy](https://learn.microsoft.com/azure/governance/policy/overview)**: Enforce compliance at scale across all registered servers.
+- **[Azure Policy](/azure/governance/policy/overview)**: Enforce compliance at scale across all registered servers.
 - **Security baselines**: Apply consistent configurations to reduce vulnerabilities.
-- **[Azure role-based access control (Azure RBAC)](https://learn.microsoft.com/azure/role-based-access-control/overview)**: Limit access to sensitive resources.
+- **[Azure role-based access control (Azure RBAC)](/azure/role-based-access-control/overview)**: Limit access to sensitive resources.
 - **Cross-environment compliance**: Monitor and ensure compliance with regulations across on-premises and cloud deployments.
  
 ## Security integration

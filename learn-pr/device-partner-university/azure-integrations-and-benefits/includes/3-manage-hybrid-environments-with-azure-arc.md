@@ -1,4 +1,4 @@
-If your organization runs Windows Server in its own data center or across other cloud platforms, [Azure Arc](https://learn.microsoft.com/azure/azure-arc/overview) provides a unified way to manage those servers through the Azure portal. This centralized approach allows IT teams to view, configure, and secure all their servers—regardless of location—from a single interface, streamlining operations and improving consistency.
+If your organization runs Windows Server in its own data center or across other cloud platforms, [Azure Arc](azure/azure-arc/overview) provides a unified way to manage those servers through the Azure portal. This centralized approach allows IT teams to view, configure, and secure all their servers—regardless of location—from a single interface, streamlining operations and improving consistency.
 
 Azure Arc provides a unified management layer for Windows Server, whether your servers are on-premises, in other clouds, or at the edge. By connecting Windows Server to Azure Arc, IT teams can centralize management, enforce policies, and enable advanced Azure services—all from the Azure portal.
 
