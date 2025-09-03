@@ -2,52 +2,61 @@
 uid: learn.wwl.explore-git-hooks
 metadata:
   title: Explore Git hooks
-  description: Explore Git hooks
-  ms.date: 05/08/2024
-  author: wwlpublish
+  description: "Learn how to create Git hooks that automatically check code quality, scan for security issues, and help teams follow coding rules."
+  ms.date: 09/02/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.custom:
-  - N/A
-  ai-usage: human-only
+    - N/A
+  ai-usage: ai-assisted
   ms.service: azure-devops-repos
 title: Explore Git hooks
-summary: This module describes Git hooks and their usage during the development process, implementation, and behavior.
+summary: Learn how to use Git hooks to automatically check your code and improve your development process.
 abstract: |
-  By the end of this module, you're able to:
-  -   Understand Git hooks
-  -   Identify when used Git hooks
-  -   Implement Git hooks for automation
-  -   Explain Git hooks' behavior
-prerequisites: None
+  By the end of this module, you can:
+  -   Create Git hooks that automatically check code quality for your team
+  -   Build hooks that run before and after commits to check your code
+  -   Make security hooks that prevent passwords and secrets from being saved
+  -   Connect Git hooks with Azure DevOps and build pipelines
+  -   Set up Git hooks for your whole team to use
+prerequisites: |
+  - Good knowledge of Git commands and how to use Git workflows
+  - Experience using Azure DevOps for development projects
+  - Understanding of automated testing and continuous integration
+  - Basic skills in writing scripts (Bash, PowerShell, or Python)
+  - Knowledge of security best practices in software development
 iconUrl: /training/achievements/4-explore-git-hooks.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 units:
-- learn.wwl.explore-git-hooks.introduction
-- learn.wwl.explore-git-hooks.introduction-to
-- learn.wwl.explore-git-hooks.implement
-- learn.wwl.explore-git-hooks.knowledge-check
-- learn.wwl.explore-git-hooks.summary
+  - learn.wwl.explore-git-hooks.introduction
+  - learn.wwl.explore-git-hooks.introduction-to
+  - learn.wwl.explore-git-hooks.implement
+  - learn.wwl.explore-git-hooks.knowledge-check
+  - learn.wwl.explore-git-hooks.summary
 badge:
   uid: learn.wwl.explore-git-hooks.badge
-
