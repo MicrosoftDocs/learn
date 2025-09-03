@@ -34,7 +34,7 @@ units:
   - learn.dpu.microsoft-intune.introduction
   - learn.dpu.microsoft-intune.challenges
   - learn.dpu.microsoft-intune.ways-to-use-intune
-  - learn.dpu.microsoft-intune.setup-intune
+  - learn.dpu.microsoft-intune.set-up-intune
   - learn.dpu.microsoft-intune.adding-assigning-apps
   - learn.dpu.microsoft-intune.app-protection-policies
   - learn.dpu.microsoft-intune.intune-plans
