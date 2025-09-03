@@ -8,17 +8,17 @@ Check out the [supported configurations](/mem/intune/fundamentals/supported-devi
 
 Sign in to the Intune admin center to sign up for Intune. If you already have a subscription, use your existing credentials to sign-in.
 
-For more details, check out [Sign up or sign in to Intune](https://docs.microsoft.com/mem/intune/fundamentals/account-sign-up)
+For more details, check out [Sign up or sign in to Intune](/mem/intune/fundamentals/account-sign-up)
 
 ## 2. Connect the company domain name
 
 Set DNS registration to connect your company's domain name with Intune. This gives users a familiar domain when connecting to Intune and using resources.
 
-For more information, visit [configure a custom domain name](https://docs.microsoft.com/mem/intune/fundamentals/custom-domain-name-configure)
+For more information, visit [configure a custom domain name](/mem/intune/fundamentals/custom-domain-name-configure)
 
 ## 3. Add users and device-based groups
 
-Add [users](https://docs.microsoft.com/mem/intune/fundamentals/users-add) and [device-based groups](https://docs.microsoft.com/mem/intune/fundamentals/groups-add) or connect your existing Active Directory to sync with Microsoft Entra ID. Adding users is required unless the devices are ”user-less,” like shared or kiosk devices. In that case, device-based groups are used to assign apps, settings, and other resources because group tasks are run based on device identity, not user identity.
+Add [users](/mem/intune/fundamentals/users-add) and [device-based groups](/mem/intune/fundamentals/groups-add) or connect your existing Active Directory to sync with Microsoft Entra ID. Adding users is required unless the devices are ”user-less,” like shared or kiosk devices. In that case, device-based groups are used to assign apps, settings, and other resources because group tasks are run based on device identity, not user identity.
 
 ## 4. Grant permission to use Intune
 

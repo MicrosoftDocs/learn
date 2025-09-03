@@ -28,8 +28,8 @@ roles:
   - business-user
   - administrator
   - technology-manager
-products:
-
+products: 
+  - intune
 units:
   - learn.dpu.microsoft-intune.introduction
   - learn.dpu.microsoft-intune.challenges
