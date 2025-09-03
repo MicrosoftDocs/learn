@@ -56358,6 +56358,81 @@
       "source_path": "learn-pr/azure-networking/create-first-azure-front-door/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-network-plugin-aks/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-network-plugin-aks/2-identify-plugin-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-network-plugin-aks/3-analyze-decision-criteria.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-network-plugin-aks/4-use-scenario.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-network-plugin-aks/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-network-plugin-aks/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-network-plugin-aks/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/aks-cluster-architecture/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/keep-your-virtual-machines-updated/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/keep-your-virtual-machines-updated/2-update-management-solution-on-a-vm.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/keep-your-virtual-machines-updated/3-exercise-use-update-management-on-a-virtual-machine.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/keep-your-virtual-machines-updated/4-verify-agent-connectivity-and-schedule-recurring-updates.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/keep-your-virtual-machines-updated/5-exercise-use-azure-log-analytics-and-schedule-updates.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/keep-your-virtual-machines-updated/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/keep-your-virtual-machines-updated/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
     }
   ]
 }

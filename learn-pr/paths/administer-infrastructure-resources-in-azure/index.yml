@@ -33,7 +33,6 @@ modules:
 - learn.provision-linux-virtual-machine-in-azure
 - learn.create-a-windows-vm-in-azure
 - learn.manage-vms-with-azure-cli
-- learn.keep-your-virtual-machines-updated
 #- learn.scale-and-size-virtual-machines
 #- learn.make-your-virtual-machines-highly-available
 - learn.configure-the-network-for-your-virtual-machines
