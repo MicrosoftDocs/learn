@@ -56198,6 +56198,91 @@
       "source_path": "learn-pr/azure/run-parallel-tasks-in-azure-batch-with-the-azure-cli/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/batch/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-vm-settings-with-dsc/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-vm-settings-with-dsc/2-what-is-azure-automation-state-configuration.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-vm-settings-with-dsc/3-use-powershell-dsc.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-vm-settings-with-dsc/4-exercise-setup-dsc-configuration.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-vm-settings-with-dsc/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-vm-settings-with-dsc/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/automation/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-resources-scopes-bicep/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-resources-scopes-bicep/2-understand-deployment-scopes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-resources-scopes-bicep/3-deploy-templates-different-scopes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-resources-scopes-bicep/4-exercise-deploy-subscription-scoped-resource.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-resources-scopes-bicep/5-deploy-multiple-scopes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-resources-scopes-bicep/6-exercise-deploy-multiple-scopes-modules.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-resources-scopes-bicep/7-exercise-deploy-management-group.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-resources-scopes-bicep/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-resources-scopes-bicep/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-resources-scopes-bicep/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/advanced-bicep/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
+      "redirect_document_id": false
     }
   ]
 }
