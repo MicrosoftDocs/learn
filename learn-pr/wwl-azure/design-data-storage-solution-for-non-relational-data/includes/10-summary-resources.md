@@ -32,8 +32,6 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 ### Learn more with self-paced training
 
-- Choose the [right disk storage for your virtual machine workload](/training/modules/choose-the-right-disk-storage-for-vm-workload/).
-
 - Configure [Azure Blob Storage](/training/modules/configure-blob-storage/).
 
 - Choose a [data storage approach in Azure](/training/modules/choose-storage-approach-in-azure/).

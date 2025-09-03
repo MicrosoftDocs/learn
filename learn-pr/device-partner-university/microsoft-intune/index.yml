@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.microsoft-intune
+title: Device management with Microsoft Intune
+metadata:
+  title: Device Management With Microsoft Intune
+  description: In this module, you’ll learn how Microsoft Intune helps you easily manage devices and apps from the cloud.
+  ms.date: 09/03/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: microsoft-intune
+  ms.custom: CC120324-1
+summary: >
+  In this module, you'll learn about how Microsoft Intune helps manage and secure devices, apps, and users.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Use Microsoft Intune to manage devices and applications.
+  - Discover how Intune supports access control, compliance, and data protection.
+  - Discover how to configure Intune, enroll devices, deploy apps, and customize the user experience.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - intermediate
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products: 
+  - intune
+units:
+  - learn.dpu.microsoft-intune.introduction
+  - learn.dpu.microsoft-intune.challenges
+  - learn.dpu.microsoft-intune.ways-to-use-intune
+  - learn.dpu.microsoft-intune.set-up-intune
+  - learn.dpu.microsoft-intune.adding-assigning-apps
+  - learn.dpu.microsoft-intune.app-protection-policies
+  - learn.dpu.microsoft-intune.intune-plans
+  - learn.dpu.microsoft-intune.knowledge-check
+  - learn.dpu.microsoft-intune.summary
+badge:
+  uid: learn.dpu.microsoft-intune.badge
