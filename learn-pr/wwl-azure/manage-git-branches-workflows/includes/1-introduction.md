@@ -1,5 +1,3 @@
-## Strategic branching for modern software delivery
-
 Effective Git branching strategies are fundamental to successful software delivery at scale. This module provides comprehensive guidance on designing and implementing branching workflows that support continuous delivery, team collaboration, and quality assurance. You'll learn how to select and implement the right branching model for your organization's needs, whether you're working with small agile teams or large enterprise development organizations.
 
 ### Why branching strategy matters
@@ -50,19 +48,19 @@ After completing this module, you'll master essential branching strategies and b
 
 ## Self-assessment: Evaluate your branching readiness
 
-**✅ Git Fundamentals**
+**Git Fundamentals**
 
 - [ ] Do you understand Git basics like commits, branches, and merges?
 - [ ] Are you familiar with distributed version control concepts?
 - [ ] Do you know how to resolve merge conflicts?
 
-**✅ Team Development Experience**
+**Team Development Experience**
 
 - [ ] Have you worked in teams using shared repositories?
 - [ ] Do you understand code review processes and pull requests?
 - [ ] Are you familiar with continuous integration concepts?
 
-**✅ Organizational Context**
+**Organizational Context**
 
 - [ ] Does your team have specific release schedules or compliance requirements?
 - [ ] Are you working with distributed teams across time zones?

@@ -1,5 +1,3 @@
-## Feature branch workflow: Systematic development isolation
-
 The Feature Branch Workflow provides a systematic approach to software development by isolating all feature work in dedicated branches, separate from the main branch. This encapsulation enables multiple developers to work simultaneously on different features without interfering with each other or destabilizing the main codebase.
 
 ### Strategic advantages of feature branch isolation

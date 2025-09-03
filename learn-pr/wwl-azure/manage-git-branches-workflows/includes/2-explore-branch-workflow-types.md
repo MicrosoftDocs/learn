@@ -1,5 +1,3 @@
-## Strategic workflow selection for enterprise development
-
 Choosing the right Git branching workflow is critical for team productivity, code quality, and delivery speed. The optimal workflow depends on your team's structure, release requirements, and organizational constraints. Understanding the characteristics and trade-offs of different workflows enables informed decisions that support your development goals.
 
 ### Enterprise workflow evaluation framework

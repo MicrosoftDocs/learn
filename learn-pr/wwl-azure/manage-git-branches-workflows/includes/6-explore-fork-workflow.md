@@ -1,5 +1,3 @@
-## Fork Workflow: Distributed Development at Enterprise Scale
-
 The Fork Workflow represents a paradigm shift from traditional centralized development models, establishing a distributed architecture that excels in enterprise environments requiring strict access controls, audit trails, and scalable collaboration patterns.
 
 ### Strategic Differentiation from Centralized Models

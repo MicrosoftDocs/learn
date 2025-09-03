@@ -1,5 +1,3 @@
-## Modern Git Branching for Continuous Delivery
-
 Successful software delivery depends on a branching strategy that balances speed, quality, and risk management. The goal is to ship enhancements quickly while maintaining production stability.
 
 ### Strategic Balance: Speed vs. Quality
