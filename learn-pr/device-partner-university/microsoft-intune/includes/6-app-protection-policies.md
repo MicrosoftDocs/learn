@@ -10,7 +10,7 @@ One of the significant advantages of APP is that it can be applied without requi
 
 You can learn more about how to create and assign app protection policies [here](/mem/intune/apps/app-protection-policies).
 
-![A photograph of two employees collaborating together on a desktop computer in an office environment. One employee is seated at the desk while the other is standing beside them.](../media/intune-management.png)
+![A photograph of two employees collaborating at a desktop computer, one seated and the other standing beside them in an office.](../media/intune-management.png)
 
 ## Wipe company app data
 
