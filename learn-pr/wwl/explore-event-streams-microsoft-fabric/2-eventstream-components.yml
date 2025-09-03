@@ -4,12 +4,12 @@ title: Components of eventstreams
 metadata:
   title: Components of eventstreams
   description: "Explore the main components of eventstreams"
-  ms.date: 12/02/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 09/03/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 10
+durationInMinutes: 3
 content: |
   [!include[](includes/2-eventstream-components.md)]
