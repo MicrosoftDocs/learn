@@ -30,7 +30,6 @@ subjects:
 - architecture
 modules:
 - learn.connect-on-premises-network-with-vpn-gateway
-- learn.connect-on-premises-network-with-expressroute
 - learn.secure-and-isolate-with-nsg-and-service-endpoints
 - learn.integrate-vnets-with-vnet-peering
 - learn.distribute-load-with-traffic-manager
