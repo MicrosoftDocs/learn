@@ -10,7 +10,7 @@ Common transformation scenarios include:
 
 ## Transform event data
 
-The eventstream canvas give you a way to create event data processing workflows. Eventstream provide several no-code transformations that you can drag onto the canvas:
+The eventstream canvas gives you a way to create event data processing workflows. Eventstream provide several no-code transformations that you can drag onto the canvas:
 
 - **Filter**: Filter events based on the value of a field in the input. Keep only events that meet specific conditions. For example: temperature > 80°, status = "error", customer type = "premium".
 - **Manage fields**: This transformation allows you to add, remove, change data type, or rename fields coming in from an input or another transformation. Add calculated fields, remove unnecessary columns, rename fields, or change data types to match destination requirements.
