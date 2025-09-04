@@ -27,6 +27,5 @@ modules:
 - learn.manage-vms-with-azure-cli
 - learn.azure.create-resource-manager-template-vs-code
 - learn.build-app-with-scale-sets
-- learn.intro-to-hpc
 trophy:
   uid: learn.architect-compute-infrastructure.trophy
