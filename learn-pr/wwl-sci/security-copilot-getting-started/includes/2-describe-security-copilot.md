@@ -50,6 +50,6 @@ Copilot combines powerful LLMs with security-specific sources from Microsoft. Th
 
 The information you give Copilot will only be accessible to your organization. Your data is your data, and it's protected by comprehensive enterprise compliance and security controls. Your data isn't used to train the foundation AI models.
 
-:::image type="content" source="../media/security-copilot-v2.png" lightbox="../media/security-copilot-v2.png" alt-text="Diagram showing key attributes of Security Copilot, including hyperscale AI infrastructure, security specific orchestrator,evergreen threat intelligence, and cyber skills and promptbooks.":::
+:::image type="content" source="../media/security-copilot-stack.png" lightbox="../media/security-copilot-stack.png" alt-text="Diagram showing key attributes of Security Copilot, including hyperscale AI infrastructure, security specific orchestrator,evergreen threat intelligence, and cyber skills and promptbooks.":::
 
 Microsoft Security Copilot is the first security product to enable defenders to move at the speed and scale of AI.

@@ -2,20 +2,20 @@
 
 In this task, you'll create a new storage account.
 
-1.  Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)
+1.  Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/?azure-portal=true)
 2.  Select **Create a resource**.
 3.  Under Categories, select **Storage**.
 4.  Under Storage account, select **Create**.
 5.  On the **Basics** tab of the Create a storage account blade, fill in the following information. Leave the defaults for everything else.
     
-    | **Setting**          | **Value**                                            |
-    | -------------------- | ---------------------------------------------------- |
-    | Subscription         | Concierge Subscription                               |
-    | Resource group       | Select the resource group that starts with **learn** |
-    | Storage account name | Create a unique storage account name                 |
-    | Region               | Leave default                                        |
-    | Performance          | Standard                                             |
-    | Redundancy           | Locally redundant storage (LRS)                      |
+    | **Setting**          | **Value**                                                    |
+    | -------------------- | ------------------------------------------------------------ |
+    | Subscription         | Select the subscription you want to use for the exercise.    |
+    | Resource group       | Select Create new and enter `IntroAzureRG` and select OK     |
+    | Storage account name | Create a unique storage account name                         |
+    | Region               | Leave default                                                |
+    | Performance          | Standard                                                     |
+    | Redundancy           | Locally redundant storage (LRS)                              |
 6.  On the **Advanced** tab of the Create a storage account blade, fill in the following information. Leave the defaults for everything else.
     
     | **Setting**                                              | **Value** |
@@ -74,6 +74,10 @@ In this section, you'll create a Blob container and upload a picture.
 
 Congratulations - you've completed this exercise. You created a storage account, added a container to the storage account, and then uploaded blobs (files) to your container. Then you changed the access level so you could access your file from the internet.
 
-<!--- raw content start --->
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
-<!--- raw content end --->
+## Clean up
+
+To clean up the assets created in this exercise and avoid unnecessary costs, delete the resource group (and all associated resources).
+1. From the Azure home page, under Azure servces, select **Resource groups**.
+1. Select the **IntroAzureRG** resource group.
+1. Select **Delete resource group**.
+1. Enter `IntroAzureRG` to confirm deletion of the resource group and select delete.

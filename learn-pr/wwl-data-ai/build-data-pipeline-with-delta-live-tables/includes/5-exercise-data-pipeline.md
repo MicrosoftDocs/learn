@@ -1,7 +1,7 @@
-Now it's your chance to create a data pipeline with Delta Live Tables.
+Now it's your chance to create a Lakeflow Declarative Pipeline.
 
 > [!NOTE]
-> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
+> To complete this lab, you need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
 
 Launch the exercise and follow the instructions.
 

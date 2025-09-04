@@ -8,7 +8,7 @@ metadata:
   ms.author: riswinto
   ms.topic: module
   ms.service: purview
-  hidden: false
+  hidden: true
 title: Discover AI interactions with Microsoft Purview
 summary: Microsoft Purview helps organizations discover how Microsoft 365 Copilot and other AI tools interact with data. Using Data Security Posture Management (DSPM) for AI and Audit, security teams can detect AI activity, assess potential risks, and gather insights to support data protection and compliance strategies.
 abstract: |

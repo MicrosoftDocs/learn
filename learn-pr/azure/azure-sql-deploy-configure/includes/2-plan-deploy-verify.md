@@ -101,9 +101,6 @@ In Azure SQL Managed Instance, you can enable Microsoft Defender for Cloud on th
 
 On the **Review and create** pane, review your deployment selections and the Azure Marketplace terms.  
 
-> [!TIP]
-> You also have the **Download a template for automation** option, which provides an Azure Resource Manager template (ARM template) for configurable, repeatable deployments. This unit doesn't cover ARM templates. If you're interested, learn more about [template specs](/training/modules/arm-template-specs/).
-
 ## Key deployment implementation details
 
 Although Azure takes care of the deployment for you, there are some deployment implementation details of which you should be aware. All of the services are built on the Azure backbone known as *Azure Service Fabric*. Understanding the back end of how some of these services are deployed and scaled on Azure Service Fabric helps you understand various behaviors that you might see.

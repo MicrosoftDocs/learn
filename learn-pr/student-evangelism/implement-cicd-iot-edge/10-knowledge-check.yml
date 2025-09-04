@@ -5,8 +5,8 @@ metadata:
   title: Module assessment
   description: In this section, we create interactive questions that validate if the learner understands the learning objectives.
   ms.date: 08/18/2025
-  author: PatAltimore
-  ms.author: patricka
+  author: sethmanheim
+  ms.author: sethm
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 4

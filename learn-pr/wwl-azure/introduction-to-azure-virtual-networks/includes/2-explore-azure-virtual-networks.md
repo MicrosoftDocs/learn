@@ -1,5 +1,6 @@
 
 
+
 [Azure Virtual Networks (VNets)](/azure/virtual-network/virtual-networks-overview) are the fundamental building block of your private network in Azure. VNets enable you to build complex virtual networks that are similar to an on-premises network, with other benefits of Azure infrastructure such as scale, availability, and isolation.
 
 This video reviews the basics of IP addressing and subnetting. 
