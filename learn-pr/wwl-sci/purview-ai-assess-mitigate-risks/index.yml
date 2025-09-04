@@ -9,6 +9,7 @@ metadata:
   ms.topic: module
   ai-usage: ai-assisted
   ms.service: purview
+  hidden: true
 title: Assess and mitigate AI risks with Microsoft Purview
 summary: |
   Microsoft Purview includes tools that help detect risky activity and apply policy-based protections in AI environments. This includes detecting generative AI usage, assigning user risk levels, and adjusting enforcement actions based on those levels.

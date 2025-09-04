@@ -3,19 +3,19 @@ uid: learn.wwl.develop-unit-tests-using-github-copilot-tools.knowledge-check
 title: Module assessment
 metadata:
   hidden_question_numbers: ["170CED1A_10","170CED1A_14","170CED1A_2","170CED1A_26","170CED1A_6","170CED1A_51","170CED1A_55","170CED1A_59","170CED1A_63","170CED1A_67","170CED1A_83"]
-  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 06/02/2025
+  ms.date: 08/22/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
   ms.custom:
   - N/A
+  ai_generated_module_assessment: true
   module_assessment: true
 durationInMinutes: 7
 quiz:
-  title: "Check your knowledge" 
+  title: "Check your knowledge"
   questions:
   - content: "What is the role of GitHub Copilot Chat in generating unit test cases?"
     choices:

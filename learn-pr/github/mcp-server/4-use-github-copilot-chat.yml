@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.mcp-server.use-github-copilot-chat
+title: Using GitHub MCP Server with Copilot Chat
+metadata:
+  title: Using GitHub MCP Server with Copilot Chat
+  description: This content is a part of the Introduction to MCP Server.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 08/25/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-use-github-copilot-chat.md)]

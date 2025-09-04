@@ -3,7 +3,7 @@ uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric
 metadata:
   title: Secure a Microsoft Fabric data warehouse
   description: Learn the key concepts and strategies for protecting sensitive data in Microsoft Fabric data warehouses.
-  ms.date: 01/10/2025
+  ms.date: 09/3/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
@@ -41,4 +41,4 @@ units:
 - learn-wwl.secure-data-warehouse-in-microsoft-fabric.summary
 badge:
   uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.badge
-
+

@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.dpu.windows-autopilot
+title: Device deployment with Windows Autopilot
+metadata:
+  title: Device Deployment With Windows Autopilot
+  description: In this module, we review how you can use Windows Autopilot to deploy devices efficiently.
+  ms.date: 08/29/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-client
+  ms.subservice: autopilot
+  ms.custom: CC112124-1
+summary: >
+  In this module, we review how Windows Autopilot supports device deployment.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Apply Windows Autopilot to get devices up and running with minimal setup.
+  - Discover how Windows Autopilot streamlines IT tasks such as resetting, repurposing, and reassigning devices.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products: 
+  - windows-autopilot
+
+units:
+  - learn.dpu.windows-autopilot.introduction
+  - learn.dpu.windows-autopilot.windows-autopilot
+  - learn.dpu.windows-autopilot.deployment-process
+  - learn.dpu.windows-autopilot.other-capabilities
+  - learn.dpu.windows-autopilot.knowledge-check
+  - learn.dpu.windows-autopilot.summary
+badge:
+  uid: learn.dpu.windows-autopilot.badge
