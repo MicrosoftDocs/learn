@@ -26,7 +26,6 @@ products:
 subjects:
 - it-management-monitoring
 modules:
-- learn.design-monitoring-strategy-on-azure
 - learn.wwl.monitor-app-performance
 - learn.incident-response-with-alerting-on-azure
 
