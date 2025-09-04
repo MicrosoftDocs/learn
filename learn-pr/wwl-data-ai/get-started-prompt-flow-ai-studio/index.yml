@@ -5,9 +5,10 @@ metadata:
   description: Get started with prompt flow to develop language model apps in the Azure AI Foundry.
   author: madiepev
   ms.author: madiepev
-  ms.date: 08/01/2025
+  ms.date: 08/28/2025
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.custom: ai-learning-hub
   ms.collection:
     - wwl-ai-copilot
@@ -27,7 +28,7 @@ roles:
   - data-scientist
   - ai-engineer
 products: 
-  - ai-services
+  - azure-ai-foundry
 subjects: 
   - cloud-computing
   - artificial-intelligence

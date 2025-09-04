@@ -8,3 +8,4 @@ Now that you've completed this module, you can:
 - Submit classification tasks from your own app.
 
 To learn more about the Azure AI Language service, see the [Azure AI Language service documentation](/azure/ai-services/language-service/overview).
+

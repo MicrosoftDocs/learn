@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-business-snapdragon.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Surface Pro for Business with Snapdragon® X Elite and Plus processors" module.
+  ms.date: 08/22/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary function of the Neural Processing Unit (NPU) in Microsoft Surface Pro for Business?"
+    choices:
+        - content: "Rendering 3D graphics"
+          isCorrect: false
+          explanation: "Incorrect. This is the role of the Graphics Processing Unit (GPU)."
+        - content: "Running AI processes directly on hardware"
+          isCorrect: true
+          explanation: "Correct. The NPU is designed specifically for deep learning and AI tasks."
+        - content: "Managing system memory"
+          isCorrect: false
+          explanation: "Incorrect. The CPU and RAM typically handle memory management."
+        - content: "Controlling wireless connectivity"
+          isCorrect: false
+          explanation: "Incorrect. Wireless connectivity is managed by network interface components, not the NPU."
+  - content: "Which feature allows users to retrieve previously viewed content using contextual cues?"
+    choices:
+        - content: "Live Translate"
+          isCorrect: false
+          explanation: "Incorrect. Live Translate provides real-time spoken language translation."
+        - content: "Recall"
+          isCorrect: true
+          explanation: "Correct. Recall helps users locate previously accessed content using typed, spoken, or written input."
+        - content: "Windows Studio Effects"
+          isCorrect: false
+          explanation: "Incorrect. This feature enhances video call quality."
+        - content: "BitLocker"
+          isCorrect: false
+          explanation: "Incorrect. BitLocker is used for data encryption and security."
+  - content: "What is the maximum battery life offered by the Microsoft Surface Pro for mobile use cases?"
+    choices:
+        - content: "10 hours"
+          isCorrect: false
+          explanation: "Incorrect. The device offers more than 10 hours of battery life."
+        - content: "12 hours"
+          isCorrect: false
+          explanation: "Incorrect. The battery life exceeds 12 hours."
+        - content: "14 hours"
+          isCorrect: true
+          explanation: "Correct. Surface Pro provides up to 14 hours of battery life for mobile use cases."
+        - content: "16 hours"
+          isCorrect: false
+          explanation: "Incorrect. The specified maximum battery life is 14 hours."
+  - content: "Which security feature is unique to Surface devices and supports firmware protection?"
+    choices:
+        - content: "Microsoft Defender Antivirus"
+          isCorrect: false
+          explanation: "Incorrect. This is a general Windows security feature."
+        - content: "Microsoft UEFI"
+          isCorrect: true
+          explanation: "Correct. Microsoft UEFI is unique to Surface and supports firmware protection."
+        - content: "BitLocker"
+          isCorrect: false
+          explanation: "Incorrect. BitLocker is used for disk encryption."
+        - content: "Secure Boot"
+          isCorrect: false
+          explanation: "Incorrect. Secure Boot is a standard OS protection feature enabled by default."
+  - content: "What connectivity options does Surface Pro for Business support to enhance mobile productivity?"
+    choices:
+        - content: "Bluetooth 5.0 and Ethernet"
+          isCorrect: false
+          explanation: "Incorrect. These are common connectivity options but not highlighted in this module."
+        - content: "Wi-Fi 6 and NFC"
+          isCorrect: false
+          explanation: "Incorrect. The document specifies Wi-Fi 7 and 5G as key features."
+        - content: "5G and Wi-Fi 7"
+          isCorrect: true
+          explanation: "Correct. These options support high-speed performance and mobile productivity."
+        - content: "USB-A and HDMI"
+          isCorrect: false
+          explanation: "Incorrect. These ports aren't mentioned as key mobile productivity features."
+

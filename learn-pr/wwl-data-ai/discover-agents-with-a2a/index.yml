@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.discover-agents-with-a2a
+metadata:
+  title: Discover Azure AI Agents with A2A
+  description: Learn how to implement the A2A protocol to enable agent discovery, direct communication, and coordinated task execution across remote agents.
+  ms.date: 08/01/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: azure-ai-foundry
+title: Discover Azure AI Agents with A2A
+summary: Learn how to implement the A2A protocol to enable agent discovery, direct communication, and coordinated task execution across remote agents.
+abstract: |
+  After completing this module, you're able to:
+  - Understand the A2A protocol and its role in multi-agent orchestration.
+  - Design discoverable agents for modular, collaborative problem-solving.
+  - Implement A2A strategies to discover and invoke remote agents.
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience with deploying generative AI models in Azure AI Foundry.
+  - Programming experience.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products:
+  - ai-services
+subjects: 
+  - artificial-intelligence
+units:
+- learn.wwl.discover-agents-with-a2a.introduction
+- learn.wwl.discover-agents-with-a2a.define-a2a-agent
+- learn.wwl.discover-agents-with-a2a.implement-agent-executor
+- learn.wwl.discover-agents-with-a2a.host-a2a-agent-server
+- learn.wwl.discover-agents-with-a2a.connect-to-a2a-agent
+- learn.wwl.discover-agents-with-a2a.exercise
+- learn.wwl.discover-agents-with-a2a.knowledge-check
+- learn.wwl.discover-agents-with-a2a.summary
+badge:
+  uid: learn.wwl.discover-agents-with-a2a.badge
+

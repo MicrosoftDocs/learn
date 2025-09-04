@@ -1,23 +1,34 @@
+Real-time analytics is the practice of processing, analyzing, and acting on data as it's generated, typically within seconds to minutes of when events occur. Unlike traditional analytics that works with static snapshots of historical data stored in databases, real-time analytics operates on data that's actively flowing through your systems, enabling immediate insights and rapid responses to changing conditions. This approach is also known as *near* real-time analytics, since there's always some degree of processing and network latency involved.
 
-Real-time data analytics is commonly based on the ingestion and processing of a data *stream* that consists of a perpetual series of data, typically related to specific point-in-time events. For example, a stream of data might contain details of messages submitted to a social media micro-blogging site, or a series of environmental measurements recorded by an internet-connected weather sensor.
+## Understand events and streams
 
-The data in the stream can be used to create real-time visualizations of the data for monitoring purposes or to trigger automated actions if certain conditions occur. For example, a stream of data from an environmental control sensor in an office building might enable heating and air conditioning systems to be controlled dynamically to optimize comfort and cost. The data can also be persisted in a data store and queried later, enabling analysts to better understand change over time. For example, a marketing organization may perform sentiment analysis on social media messages to see if an advertising campaign results in more positive comments about the company or its products, or an agricultural business might monitor trends in temperature and rainfall to optimize irrigation and crop harvesting.
+**Events** are records of things that happen in a system. They capture moments when something occurs, changes, or is completed. Examples include website clicks, stock price changes, customer purchases, patient vital sign changes, or equipment sensor readings. Think of them as digital records or log entries that document activity across your systems.  
 
-Common goals for real-time analytics include
+A **stream** is essentially a sequence of events, typically ordered by the time an event occurred. Each event in the stream represents something that happened at a specific moment. Events flow through streams continuously as they occur. For example, a stream of equipment temperature sensor readings contains temperature readings over many points of time. This continuous flow of event information allows you to detect patterns over time, identify opportunities or risks, and take action immediately after something happens, or in *real-time*.
 
-- Continuously analyzing data to report issues or trends.
-- Understanding component or system behavior under various conditions to help plan future enhancements.
-- Triggering specific actions or alerts when certain events occur or thresholds are exceeded.
+Streams are the delivery mechanism that carries events from where they happen to where they need to be processed, analyzed, or acted upon.
 
-### Characteristics of real-time data analytics solutions
+## Components of real-time analytics solutions
 
-Stream processing solutions for real-time data analytics typically exhibit the following characteristics:
+To build real-time analytics solutions, you need several integrated capabilities working together:
 
-![Diagram showing a stream of data being processed, aggregated by day, and visualized and stored.](../media/stream-processing.png)
+**Real-time data ingestion:** Collect data from multiple sources simultaneously, as information is generated. For example: database changes from change data capture, sensors, applications, system logs, and APIs.
 
-1. A data stream is *unbounded* - data is added to the stream perpetually.
-2. Data records in the stream typically include *temporal* (time-based) data indicating when the event to which the record relates occurred (or was recorded).
-3. Aggregation of streaming data is often performed over temporal *windows* - for example, recording the number of social media posts per minute or the average rainfall per hour.
-4. The results of streaming data processing can be used to support real-time (or *near* real-time) automation or visualization, or persisted in an analytical store to be combined with other data for historical analysis. Many solutions combine these approaches to support both real-time and historical analytics.
+**Stream processing:** Transform and analyze data while it flows from sources to destinations. This includes filtering, aggregating, joining with other data sources, and detecting patterns with minimal latency.
 
-Microsoft Fabric's Real-Time Intelligence capabilities enable you to implement real-time analytics solutions that include the features described here with minimal (or no) coding effort and integration into the rest of the Microsoft Fabric ecosystem.
+**Low-latency storage:** Use specialized databases and storage systems designed to handle high-velocity data writes and provide fast query responses.
+
+**Interactive dashboards:** Create visualizations that update automatically as new data arrives, show current state and trends in real-time.
+
+**Automated decision making:** Set up event-driven rules and triggers that can initiate actions, send alerts, or start workflows based on real-time conditions.
+
+## Use real-time analytics
+
+To use real-time data effectively, information has to be ingested, processed, stored, analyzed, and presented to be actionable. Real-time analytics enables you to:
+
+- **Respond immediately** to opportunities or problems as they emerge
+- **Optimize operations** by adjusting resources and configurations based on current conditions  
+- **Enhance customer experiences** through personalized, contextual interactions
+- **Prevent issues** by detecting anomalies before they become critical problems
+
+Real-Time Intelligence in Microsoft Fabric brings all these capabilities together in a single platform. Through components like Eventstreams for data ingestion and transformation, Eventhouses for analytics-optimized storage, the Real-Time hub for data discovery, Real-Time dashboards for visualization, and Activator for automated alerts and actions, Real-Time Intelligence enables you to monitor critical events, trigger automated responses, track business processes, and analyze patterns in real-time, turning what happens in your systems into actionable insights.

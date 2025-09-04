@@ -6,8 +6,8 @@ metadata:
   title: Manage the GitHub Advanced Security features and alerts
   description: Overview of how to manage security alerts with the Security Overview and how to manage the GitHub Advanced Security features with the Advanced Security endpoints.
   ms.date: 06/10/2025
-  author: rmcmurray
-  ms.author: robmcm
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 5
 content: |
