@@ -34,8 +34,6 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - Design your [site recovery solution in Azure](/training/modules/design-your-site-recovery-solution-in-azure/). 
 
-- Design a [geographically distributed application](/training/modules/design-a-geographically-distributed-application/).
-
 - Explore [Microsoft Azure Well-Architected Framework - Reliability](/training/modules/azure-well-architected-reliability/).
 
 - Describe [high-availability and disaster-recovery strategies](/training/modules/describe-high-availability-disaster-recovery-strategies/).

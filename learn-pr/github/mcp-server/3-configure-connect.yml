@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.mcp-server.configure-connect
+title: Configure, connect, and use GitHub MCP Server in VS Code
+metadata:
+  title: Configure, Connect, and Use GitHub MCP Server in VS Code
+  description: This content is a part of the Introduction to MCP Server.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 08/25/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-configure-connect.md)]

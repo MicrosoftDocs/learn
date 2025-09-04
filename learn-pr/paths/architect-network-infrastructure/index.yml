@@ -30,15 +30,12 @@ subjects:
 - architecture
 modules:
 - learn.connect-on-premises-network-with-vpn-gateway
-- learn.connect-on-premises-network-with-expressroute
 - learn.secure-and-isolate-with-nsg-and-service-endpoints
 - learn.integrate-vnets-with-vnet-peering
-- learn.distribute-load-with-traffic-manager
 - learn.improve-app-scalability-resiliency-with-load-balancer
 - learn.load-balance-web-traffic-with-application-gateway
 - learn.control-network-traffic-flow-with-routes
 - learn.design-ip-addressing-for-azure
-- learn.hub-and-spoke-network-architecture
 - learn.troubleshoot-azure-network-infrastructure
 trophy:
   uid: learn.architect-network-infrastructure.trophy

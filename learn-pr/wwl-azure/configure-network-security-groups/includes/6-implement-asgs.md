@@ -32,9 +32,9 @@ For our scenario, we need to build the following configuration:
    
       Rule 1 has the lowest priority value, so it has precedence over the other rules in the group. Customer access to our online catalog is paramount in our design.
 
-   - **Rule 2**: Set **Priority** to 110. Allow access from the web servers to application servers over HTTPS port 1433.
+   - **Rule 2**: Set **Priority** to 110. Allow access from the web servers to application servers over SQL port 1433.
 
-   - **Rule 3**: Set **Priority** to 120. **Deny** access from anywhere to application server machines over HTTPS port 1433.
+   - **Rule 3**: Set **Priority** to 120. **Deny** access from anywhere to application server machines on the HTTP and HTTPS ports.
 
       The combination of Rule 2 and Rule 3 ensures that only our web servers can access our database servers. This security configuration protects our inventory databases from outside attack.
 

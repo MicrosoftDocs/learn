@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-workloads-with-databricks-workflows
 metadata:
-  title: "Deploy workloads with Azure Databricks Workflows"
-  description: "Learn how to deploy workloads with Azure Databricks Workflows"
-  ms.date: "07/29/2024"
-  author: wwlpublish
-  ms.author: jamesh
+  title: Deploy Workloads with Lakeflow Jobs
+  description: "Learn how to deploy workloads with Lakeflow Jobs"
+  ms.date: 09/03/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module-standard-task-based
   ms.service: azure-databricks
-title: Deploy workloads with Azure Databricks Workflows
-summary: "Deploying workloads with Azure Databricks Workflows involves orchestrating and automating complex data processing pipelines, machine learning workflows, and analytics tasks. In this module, you learn how to deploy workloads with Databricks Workflows."
+title: Deploy workloads with Lakeflow Jobs
+summary: "Deploying workloads with Lakeflow Jobs involves orchestrating and automating complex data processing pipelines, machine learning workflows, and analytics tasks. In this module, you learn how to deploy workloads with Databricks Lakeflow Jobs."
 abstract: |
   In this module, you learn:
-  - What Azure Databricks Workflows are
-  - The key components and benefits of Azure Databricks Workflows
-  - How to deploy workloads using Azure Databricks Workflows
+  - What Lakeflow Jobs are
+  - The key components and benefits of Lakeflow Jobs
+  - How to deploy workloads using  Lakeflow Jobs
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
