@@ -57070,11 +57070,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/design-a-geographically-distributed-application/index.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
       "redirect_document_id": false
