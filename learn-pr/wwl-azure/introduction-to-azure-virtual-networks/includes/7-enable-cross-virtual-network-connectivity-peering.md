@@ -1,5 +1,6 @@
 
 
+
 Organizations with large scale operations create connections between different parts of their virtual network infrastructure. Virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering). 
 
 
