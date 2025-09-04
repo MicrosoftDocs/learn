@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics
 metadata:
-  title: Plan hybrid transactional and analytical processing using Azure Synapse Analytics
+  title: Plan Hybrid Transactional and Analytical Processing Using Azure Synapse Analytics
   description: Plan hybrid transactional and analytical processing using Azure Synapse Analytics
-  ms.date: 06/26/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module
   ms.service: azure
 title: Plan hybrid transactional and analytical processing using Azure Synapse Analytics
@@ -34,4 +34,4 @@ units:
 - learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.summary
 badge:
   uid: learn.wwl.design-hybrid-transactional-analytical-processing.badge
-
+

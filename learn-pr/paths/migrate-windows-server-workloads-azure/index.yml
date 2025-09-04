@@ -31,7 +31,6 @@ subjects:
 modules:
 - learn-m365.m365-azure-migrate-introduction 
 - learn-m365.m365-azure-migrate-set-up 
-- learn-m365.m365-azure-migrate-discover-assess
 - learn.wwl.prepare-onpremises-workloads-migration-azure
 - learn.wwl.migrate-onpremises-workloads-azure
 - learn.deploy-azure-vmware-solution

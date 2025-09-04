@@ -21,5 +21,4 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 ## Learn more with self-paced training
 
 - [Introduction to Azure Load Balancer](/training/modules/intro-to-azure-load-balancer/). This module explains what Azure Load Balancer does, how it works, and when you should choose to use Load Balancer as a solution to meet your organization's needs.
-- [Troubleshoot inbound network connectivity for Azure Load Balancer](/training/modules/troubleshoot-inbound-connectivity-azure-load-balancer/). Review multidimensional metrics for the load balancer in Azure Monitor Metrics, and check health probe status for the load balancer.
 - [Improve application scalability and resiliency by using Azure Load Balancer](/training/modules/improve-app-scalability-resiliency-with-load-balancer/). Discuss the different load balancers in Azure and how to choose the right Azure load balancer solution to meet your requirements.

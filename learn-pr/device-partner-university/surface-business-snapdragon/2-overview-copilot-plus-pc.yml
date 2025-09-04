@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-business-snapdragon.overview-copilot-plus-pc
+title: Overview Copilot+ PC
+metadata:
+  title: Overview Copilot+ PC
+  description: This content is part of the "Surface Pro for Business with Snapdragon® X Elite and Plus processors" module.
+  ms.date: 08/22/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-overview-copilot-plus-pc.md)]

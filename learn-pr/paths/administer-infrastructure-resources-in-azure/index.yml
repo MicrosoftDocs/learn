@@ -33,7 +33,6 @@ modules:
 - learn.provision-linux-virtual-machine-in-azure
 - learn.create-a-windows-vm-in-azure
 - learn.manage-vms-with-azure-cli
-- learn.keep-your-virtual-machines-updated
 #- learn.scale-and-size-virtual-machines
 #- learn.make-your-virtual-machines-highly-available
 - learn.configure-the-network-for-your-virtual-machines
@@ -41,6 +40,7 @@ modules:
 - learn.add-and-size-disks-in-azure-virtual-machines
 - learn.caching-and-performance-azure-storage-and-disks
 - learn.azure.protect-vm-settings-with-dsc
+- learn.secure-your-azure-virtual-machine-disks
 - learn.azure.monitor-azure-vm-using-diagnostic-data
 trophy:
   uid: learn.administer-infrastructure-resources-in-azure.trophy

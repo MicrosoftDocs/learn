@@ -1,10 +1,12 @@
-Activator is a technology in Microsoft Fabric that enables automated processing of events that trigger actions. For example, you can use Activator to notify you by email when a value in an eventstream deviates from a specific range or to run a notebook to perform some Spark-based data processing logic when a real-time dashboard is updated.
+Activator is a technology in Microsoft Fabric that enables automated processing of events that trigger actions. For example, you can use Activator to notify you by email when a value in an Eventstream deviates from a specific range or to run a notebook to perform some Spark-based data processing logic when a real-time dashboard is updated.
 
-![Screenshot of an Activator alert in Microsoft Fabric.](../media/activator.png)
+:::image type="content" source="../media/activator.png" alt-text="Screenshot of an Activator alert in Microsoft Fabric." lightbox="../media/activator.png":::
+
+This image shows a rule configured to alert when package delivery failures happen, demonstrating how you can automate responses to specific business events.
 
 ## Understand Activator key concepts
 
-Activator operates based on four core concepts: *Events*, *Objects, *Properties*, and *Rules*.
+Activator operates based on four core concepts: *Events*, *Objects*, *Properties*, and *Rules*.
 
 - **Events** - Each record in a stream of data represents an *event* that has occurred at a specific point in time.
 - **Objects** - The data in an event record can be used to represent an *object*, such as a sales order, a sensor, or some other business entity.
@@ -13,7 +15,7 @@ Activator operates based on four core concepts: *Events*, *Objects, *Properties*
 
 ## Use cases for Activator
 
-Activator can help you in various scenarios, such as dynamic inventory management, real-time customer engagement, and effective resource allocation in cloud environments. It's a potent tool for any circumstance that requires real-time data analysis and actions.
+Activator can help you in various scenarios, such as dynamic inventory management, real-time customer engagement, and effective resource allocation in cloud environments. It's a powerful tool for any circumstance that requires real-time data analysis and automated actions.
 
 Use Activator to:
 

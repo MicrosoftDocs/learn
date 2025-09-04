@@ -2,12 +2,12 @@
 uid: learn.wwl.visualize-real-time-data-azure-stream-analytics-power-bi.power-bi-output
 title: Use a Power BI output in Azure Stream Analytics
 metadata:
-  title: Use a Power BI output in Azure Stream Analytics
+  title: Use a Power BI Output in Azure Stream Analytics
   description: "Use a Power BI output in Azure Stream Analytics"
-  ms.date: 12/30/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-power-bi-output.md)]
+  [!include[](includes/2-power-bi-output.md)]
