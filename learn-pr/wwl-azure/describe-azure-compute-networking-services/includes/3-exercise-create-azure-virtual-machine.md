@@ -35,7 +35,7 @@ In this instance, you're going to use the Azure CLI.
 ## Task 3: Install Nginx
 After your VM is created, you'll use a Custom Script Extension to install Nginx. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system after your VM is up and running.
 
-Run the following `az vm extension set` command to configure Nginx on your VM:
+1. Run the following `az vm extension set` command to configure Nginx on your VM:
     
     ```azurecli
     az vm extension set \
