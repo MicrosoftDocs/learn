@@ -14,7 +14,7 @@ In this procedure, you get the IP address for your VM and attempt to access your
 
 1.  Run the following `az vm list-ip-addresses` command to get your VM's IP address and store the result as a Bash variable:
     
-    ```azurecli
+    ```bash
     IPADDRESS="$(az vm list-ip-addresses \
       --resource-group "IntroAzureRG" \
       --name my-vm \
