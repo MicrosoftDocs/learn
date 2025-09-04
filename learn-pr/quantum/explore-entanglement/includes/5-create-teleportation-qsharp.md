@@ -1,18 +1,19 @@
 
-In the previous unit, you reviewed the steps of the quantum teleportation protocol. Now it's your turn to help Alice and Bob with their quantum teleportation experiment! 
+In the previous unit, you learned the steps of the quantum teleportation protocol. Now it's your turn to help Alice and Bob with their quantum teleportation experiment!
 
-In this unit, you'll create a quantum teleportation program in Q# that uses the quantum teleportation protocol to send the state of a qubit from Alice to Bob. 
+In this unit, you create a program in Q# that uses the quantum teleportation protocol to send the state of a message qubit from Alice to Bob. The program contains four operations that work together to perform teleportation.
 
 ## Create a quantum teleportation program in Q#
 
-1. Open Visual Studio Code.
-1. Select **File > New Text File** and save it as **Main.qs**.
-1. Select **View -> Command Palette** and type **Q#: Set the Azure Quantum QIR target profile**. Press **Enter**.
-1. Select **Q#: Unrestricted**.
+To get started with your teleportation program, follow these steps:
+
+1. Open Visual Studio Code (VS Code).
+1. Choose **File > New Text File**.
+1. Save the file as **Main.qs**.
 
 ### Import the required libraries
 
-First, you need to import the required libraries to use the Q# operations and functions. Copy and paste the following code into your **Main.qs** file.
+To import the libraries that contain the Q# operations and functions that you need to write your program, copy the following code into your **Main.qs** file:
 
 ```qsharp
 import Microsoft.Quantum.Diagnostics.*; // Aka Std.Diagnostics.*;
@@ -22,40 +23,44 @@ import Microsoft.Quantum.Measurement.*; // Aka Std.Measurement.*;
 
 ### Define the `Teleport` operation
 
-First, you need to define the `Teleport` operation that implements the quantum teleportation protocol. The operation takes two qubits as input: the `message` qubit that contains the quantum state to be teleported and the `bob` qubit that will receive the state. 
+Create an operation called `Teleport` that implements the quantum teleportation protocol. The operation takes two qubits as input: the `message` qubit that contains the teleported state and the `bob` qubit that receives the teleported state.
 
 ```qsharp
 operation Teleport(message : Qubit, bob : Qubit) : Unit {
-        // Allocate an alice qubit.
-        use alice = Qubit();
+    // Allocate an alice qubit.
+    use alice = Qubit();
 
-        // Create some entanglement that we can use to send our message.
-        H(alice);
-        CNOT(alice, bob);
+    // Create some entanglement that we can use to send our message.
+    H(alice);
+    CNOT(alice, bob);
 
-        // Encode the message into the entangled pair.
-        CNOT(message, alice);
-        H(message);
+    // Encode the message into the entangled pair.
+    CNOT(message, alice);
 
-        // Measure the qubits to extract the classical data we need to decode
-        // the message by applying the corrections on the bob qubit
-        // accordingly.
-        if M(message) == One {
-            Z(bob);
-        }
-        if M(alice) == One {
-            X(bob);
-        }
+    // Transform the Bell states into computational states for measurement
+    H(message);
 
-        // Reset alice qubit before releasing.
-        Reset(alice);
+    // Measure the qubits to extract the classical data we need to decode
+    // the message by applying the corrections on the bob qubit
+    // accordingly.
+    if M(message) == One {
+        Z(bob);
     }
+    if M(alice) == One {
+        X(bob);
+    }
+
+    // Reset alice qubit before releasing.
+    Reset(alice);
+}
 ```
 
-Let's break down the `Teleport` operation:
+Let's break down the steps in our `Teleport` operation:
 
-1. The operation uses the `alice` qubit and creates entanglement between `alice` and `bob` qubits. The `message` qubit is then entangled with the `alice` qubit, so the two qubits are entangled with the `bob` qubit, and the `message` is encoded.
-1. Then, you need to measure `alice` and `message` qubits in the Bell basis. How can you express a measurement in the Bell basis in Q#? You can't. Or at least not directly. In Q# you have the `M` operation, which performs a measurement in the $Z$-basis or computational basis. So to use the `M` operation correctly, you need to transform the Bell states into the computational basis states. You can do this by applying a `H` operation to the `message` qubit. The following table shows the correspondence between the Bell states and the computational basis states.
+1. Create an `alice` qubit. We now have the three qubits we need to perform quantum teleportation: `alice`, `bob`, and `message`.
+1. Entangle the `alice` and `bob` qubits. We do this in the usual way: apply a Hadamard gate to put the `alice` qubit into a superposition state, and then apply a CNOT gate with `alice` as the control qubit and `bob` as the target qubit.
+1. Encode the `message` qubit into the entangled pair of `alice` and `bob` qubits. To do this, we apply a CNOT gate with `message` as the control qubit and `alice` as the target qubit. The `alice` and `message` qubit states are now in the Bell basis.
+1. Transform the Bell states into computational states. We have to do this because, in Q#, we can't perform measurements directly on Bell states. Apply a Hadamard gate to the `message` qubit to transform the states into the computational basis. The following table relates the Bell states to their corresponding computational states:
 
     | Bell state | Computational basis state |
     |------------|---------------------------|
@@ -64,41 +69,36 @@ Let's break down the `Teleport` operation:
     | $\ket{\psi^+}$ | $\ket{10}$ |
     | $\ket{\psi^-}$ | $\ket{11}$ |
 
-    > [!TIP]
-    > A good exercise is to verify the equivalence of the Bell states and the computational basis states after applying the Hadamard operation to the first qubit. Good luck!
+1. Measure the `alice` and `message` qubits, and apply the appropriate gates to the `bob` qubit based on the measurement results. Use the `M` operation to first measure `message`, and then apply the $Z$ gate to `bob` if the measurement result was 1. Next, measure `alice` with the `M` operation, and then apply the $X$ gate to `bob` if the measurement result was 1.
 
-1. Finally, the `if` statements check the measurement results and apply corrections to the `bob` qubit accordingly. If the `message` qubit is measured in `One`, you apply the Z gate to the `bob` qubit. If the `alice` qubit is also measured in `One` you apply the X gate to the `bob` qubit. 
+After these steps, the initial state of the `message` qubit is teleported to the `bob` qubit.
 
 ### Define the `SetToPlus` and `SetToMinus` operations
 
-In case you'd like to teleport qubits in different states, such as |0⟩, |1⟩, |+⟩, and |−⟩, you have to define the initialized states. You already have the `Teleport` operation to teleport the qubit, but you need to prepare the qubit in the correct state before teleporting it.
+In a real life teleportation protocol, the message qubit can be in any superposition state. Neither Alice nor Bob know the state of the message qubit. The state is teleported from the message qubit to Bob's qubit even though the state isn't known. But in Q#, we have to set the state of the message qubit ahead of the teleportation protocol.
 
-You need to define two more operations, `SetToPlus` and `SetToMinus`, to set a qubit in state |0⟩ to |+⟩ and |−⟩, respectively.
+To test our teleportation protocol with the message qubit in different initial states, such as |0⟩, |1⟩, |+⟩, and |−⟩, we create the `SetToPlus` and `SetToMinus` operations. These operations put the message qubit in the desired initial state before we teleport it.
+
+Copy the following code for the `SetToPlus` and `SetToMinus` operations into your **Main.qs** file:
 
 ```qsharp
-    /// Sets a qubit in state |0⟩ to |+⟩.
-    operation SetToPlus(q : Qubit) : Unit is Adj + Ctl {
-        H(q);
-    }
+/// Sets a qubit in state |0⟩ to |+⟩.
+operation SetToPlus(q : Qubit) : Unit is Adj + Ctl {
+    H(q);
+}
 
-    /// Sets a qubit in state |0⟩ to |−⟩.
-    operation SetToMinus(q : Qubit) : Unit is Adj + Ctl {
-        X(q);
-        H(q);
-    }
+/// Sets a qubit in state |0⟩ to |−⟩.
+operation SetToMinus(q : Qubit) : Unit is Adj + Ctl {
+    X(q);
+    H(q);
+}
 ```
 
 ### Define the `Main` operation
 
-Every Q# program must have a `Main` operation that serves as the entry point for the program. The `Main` operation runs the teleportation protocol for different quantum states, $\ket{0}$, $\ket{1}$, $\ket{+}$, and $\ket{-}$. 
+Every Q# program must have a `Main` operation that serves as the entry point for the program. Here, our `Main` operation runs the teleportation protocol for different initial states of the message qubit, $\ket{0}$, $\ket{1}$, $\ket{+}$, and $\ket{-}$. If the protocol is successful, then Bob's qubit will end up in the same state that we set the message qubit to.
 
-Let's break down the `Main` operation:
-
-1. The operation allocates two qubits, `message` and `bob`.
-1. It defines a list of tuples that contain the quantum state, the initializer operation needed to initialize the qubit in such state, and the basis for the teleportation. The initializer operations are `I` for $\ket{0}$, `X` for $\ket{1}$, `SetToPlus` for $\ket{+}$, and `SetToMinus` for $\ket{-}$. The `SetToPlus` and `SetToMinus` operations are defined in the previous steps.
-1. The operation iterates over the list of tuples and initializes the `message` qubit in the corresponding state and uses `DumpMachine` to display the state. It then teleports the state of the `message` qubit to the `bob` qubit using the `Teleport` operation defined in the previous steps.
-1. After teleporting the state, the operation measures the `bob` qubit in the corresponding basis and resets the qubits to continue teleporting more messages.
-1. Finally, the operation returns the measurement results for each teleportation.
+Here's the `Main` operation for the quantum teleportation program:
 
 ```qsharp
 operation Main() : Result[] {
@@ -138,13 +138,23 @@ operation Main() : Result[] {
 }
 ```
 
+Let's break down the components of the `Main` operation:
+
+1. Allocate two qubits, `message` and `bob`.
+1. Create a list of tuples that contain the quantum state, the operation that initializes the `message` qubit into the desired state, and the basis for measurement. The initialization operations are `I` for $\ket{0}$, `X` for $\ket{1}$, `SetToPlus` for $\ket{+}$, and `SetToMinus` for $\ket{-}$.
+1. Iterate over the list of tuples to initialize the `message` qubit and display the initial state. Then, call the `Teleport` operation to teleport the state of the `message` qubit onto the `bob` qubit.
+1. Measure the `bob` qubit in the corresponding basis and reset the qubits so that you can reuse them for teleportation.
+1. Return the measurement results for each teleportation.
+
+If the protocol works correctly, then your measurement results for `bob` match the initialized states if `message`.
+
 ### Run the program
 
-Your quantum teleportation program is ready! You can run the program to see how quantum teleportation works for different quantum states. The program initializes the `message` qubit in different states and teleports the state to the `bob` qubit.
+Your quantum teleportation program is ready! You can run the program to see how quantum teleportation works for different initial states of the message qubit.
 
-The following code contains the `Teleport` operation, the `SetToPlus` and `SetToMinus` operations, and the `Main` operation that runs the teleportation protocol for different quantum states.
+The complete program contains the `Teleport` operation, the `SetToPlus` and `SetToMinus` operations, and the `Main` operation. To run your code and analyze the results, follow these steps:
 
-1. Your **Main.qs** file should look like this:
+1. Replace the contents of your **Main.qs** file with the following Q# code:
 
     ```qsharp
     /// This Q# program implements quantum teleportation.
@@ -189,7 +199,7 @@ The following code contains the `Teleport` operation, the `SetToPlus` and `SetTo
     }
 
     /// # Summary
-    /// Sends the state of one qubit to a bob qubit by using teleportation.
+    /// Sends the state of a message qubit to a bob qubit by teleportation.
     ///
     /// Notice that after calling Teleport, the state of `message` is collapsed.
     ///
@@ -239,21 +249,23 @@ The following code contains the `Teleport` operation, the `SetToPlus` and `SetTo
     }
     ```
 
-1. To run your program on the built-in simulator, click on **Run** above the `Main` operation or press **Ctrl+F5**. Your output will appear in the debug console.
-1. Check that the received states match the teleporting states. For example: 
+1. To run your program on the built-in simulator, choose the **Run** code lens above the `Main` operation. Or, press **Ctrl+F5**. Your output appears in the debug console.
+1. Check that the received states match the teleported states. For example:
 
     ```output
     Teleporting state |0〉
-    
-    DumpMachine:
-    
+
      Basis | Amplitude      | Probability | Phase
      -----------------------------------------------
       |00⟩ |  1.0000+0.0000𝑖 |   100.0000% |   0.0000
-    
+
     Received state |0〉
+
+     Basis | Amplitude      | Probability | Phase
+     -----------------------------------------------
+      |00⟩ |  1.0000+0.0000𝑖 |   100.0000% |   0.0000
     ```
 
-Congratulations! You successfully teleport the state of Alice's qubit to Bob's qubit using the quantum teleportation protocol. All thanks to quantum entanglement! 
+Congratulations! You successfully teleported the state of Alice's qubit to Bob's qubit through the quantum teleportation protocol. All thanks to quantum entanglement!
 
-In the next unit, you'll test your knowledge of quantum teleportation and entanglement.
+In the next unit, you test your knowledge of quantum teleportation and entanglement.

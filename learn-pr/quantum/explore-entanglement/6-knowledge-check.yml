@@ -7,7 +7,7 @@ metadata:
   author: azure-quantum-content
   ms.author: quantumdocwriters
   
-  ms.date: 01/22/2025
+  ms.date: 09/04/2025
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 6
@@ -19,15 +19,15 @@ quiz:
   questions:
   - content: What is the key feature of entangled qubits in quantum mechanics?
     choices:
-    - content: The states of entangled qubits can't be described independently but only as a whole system. Thus, when you measure one qubit, it affects the state of the other qubit, no matter how far apart they are.
+    - content: The states of entangled qubits can't be described independently but only as a whole system. Therefore, when you measure one qubit, it affects the state of the other qubit, no matter how far apart they are.
       isCorrect: true
       explanation: Correct. When qubits are entangled, they share information.
     - content: Entangled qubits don't share any information.
       isCorrect: false
       explanation: Incorrect. When qubits are entangled, information is shared between them.
-    - content: The states of entangled qubits can be described independently. Thus, when you measure one qubit, it doesn't affect the state of the other qubit.
+    - content: The states of entangled qubits can be described independently. Therefore, when you measure one qubit, it doesn't affect the state of the other qubit.
       isCorrect: false
-      explanation: Incorrect. When qubits are entangled, their states can' be described independently but only as a whole system.
+      explanation: Incorrect. When qubits are entangled, their states can't be described independently but only as a whole system.
 
   - content: What is the role of the CNOT operation in creating quantum entanglement?
     choices:
@@ -48,11 +48,11 @@ quiz:
     choices:
     - content: It allows the teleportation of information faster than the speed of light.
       isCorrect: false
-      explanation: Incorrect. The classical communication prevents the information to be teleported faster than the speed of light.
+      explanation: Incorrect. The classical communication prevents the information from being teleported faster than the speed of light.
     - content: It's used to physically move the qubit from one location to another.
       isCorrect: false
-      explanation: Incorrect. In quantum teleportation, the qubit itself isn't physically moved, but the information about its state.
+      explanation: Incorrect. In quantum teleportation, the qubit itself isn't physically moved, but the information about the qubit's state is.
     - content: It's used by the sender to communicate the results of their measurements to the receiver. By doing so, the receiver can apply the necessary operations to the qubit they have to recreate the message qubit.
       isCorrect: true
-      explanation: Correct. The sender communicates the results of their measurements to the receiver using classical communication. 
-
+      explanation: Correct. The sender communicates the results of their measurement to the receiver using classical communication. 
+
