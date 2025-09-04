@@ -1,37 +1,44 @@
-At their simplest, eventstreams capture real-time data from a source and load the captured data into a destination.
+Once you create an eventstream in Fabric, you can connect it to a wide range of data sources, optionally transform it, and route the transformed, or processed data to multiple destinations. In this unit, we'll review eventstream sources and destinations. 
 
 ## Eventstream sources
+You can stream data from Microsoft sources and also ingest data from non-Microsoft platforms including:
 
-Event sources in Fabric Real-Time Hub can include (among others):
+- **Microsoft sources**, like Azure Event Hubs, Azure IoT Hubs, Azure Service Bus, Change Data Capture (CDC) feeds in database services, and others.
+- **Azure events**, like Azure Blob Storage events.
+- **Fabric events**, such as changes to items in a Fabric workspace, data changes in OneLake data stores, and events associated with Fabric jobs.
+- **External sources**, such as Apache Kafka, Google Cloud Pub/Sub, and MQTT (Message Queuing Telemetry Transport)
 
-* **Azure Event Hub**: Azure Event Hubs is a source that allows you to get event data from an Azure event hub. You can specify the data format and the consumer group of your Azure event hub. You can also create a cloud connection to your Azure event hub with the appropriate authentication and privacy level.
-- **Azure IoT Hub**: An SaaS service used to connect, monitor, and manage millions of IoT assets with a no-code experience. 
-- **Azure SQL Database Change Data Capture (CDC)**: Software process that identifies and tracks changes to data in a database, enabling real-time or near-real-time data movement. 
-- **PostgreSQL Database CDC**: The PostgreSQL Database CDC (change data capture) connector for Microsoft Fabric Eventstreams captures a current snapshot and tracks future changes in a PostgreSQL database, allowing real-time processing and analysis of this data within Fabric.
-- **MySQL Database CDC**: The Azure MySQL Database CDC Source connector for Microsoft Fabric Eventstreams captures a snapshot of your MySQL database and tracks table changes, enabling real-time processing and analysis of this data in Fabric.
-- **Azure Cosmos DB CDC**: The Azure Cosmos DB CDC connector for Microsoft Fabric Eventstreams captures and tracks real-time data changes in Cosmos DB for analysis and processing within Fabric.
-- **Google Cloud Pub/Sub**: A messaging service for exchanging event data among applications and services.
-- **Amazon Kinesis Data Streams**: Collect, process, and analyze real-time, streaming data.
-- **Confluent Cloud Kafka**: A fully managed service based on Apache Kafka for stream processing.
-- **Fabric workspace events**: Fabric workspace events are events triggered by changes in your Fabric Workspace, such as creating, updating, or deleting items. With Fabric event streams, you can capture, transform, and route these events for in-depth analysis and monitoring within Fabric. This integration offers enhanced flexibility in tracking and understanding workspace activities.
-- **Azure blob storage events**: Azure Blob Storage events are system triggers for actions like creating, replacing, or deleting a blob. Microsoft Fabric eventstreams link these actions to Fabric events, allowing you to process Blob Storage events as continuous data streams for routing and analysis within Fabric. One unique trait of the Azure Blob Storage Events is their support for ***streamed*** or ***unstreamed*** events.
-- **Custom endpoint**: You can use the REST API or software development kits (SDKs) provided by Microsoft Fabric to send event data from your custom app to your eventstream. You can also specify the data format and the consumer group of your custom app.
-- **Sample data**: Sample data is a source that allows you to use the out-of-box sample data provided by Microsoft Fabric. You can choose from different sample data sets, such as IoT, Retail, or Finance. You can also adjust the frequency and duration of the sample data generation.
+## Configure eventstream sources
+
+After you create an eventstream, you can add data sources using the eventstream canvas. You can either create a new source or connect to an existing source from the Real-Time Hub:
+
+:::image type="content" source="../media/configure-sources.png" alt-text="Screenshot showing how to configure sources in eventstream canvas." lightbox="../media/configure-sources.png":::
 
 > [!TIP]
-> For more information about supported sources, see **[Supported sources for Fabric Real-Time hub](/fabric/real-time-hub/supported-sources)**.
+> To see all supported sources, see **[Add and manage eventstream sources](/fabric/real-time-intelligence/event-streams/add-manage-eventstream-sources?pivots=enhanced-capabilities&azure-portal=true#supported-sources)**.
 
 ## Eventstream destinations
 
-Microsoft Fabric event streams also supports the ability to send data to the following destinations in the enhanced mode.
-
-- **Eventhouse**: This destination offers the capability to funnel your real-time event data into a KQL database, enabling you to use Kusto Query Language (KQL) for data interrogation and analysis. Storing your data in a KQL database unlocks the potential for enhanced comprehension of your event data and the creation of comprehensive reports and dashboards.
-- **Lakehouse**: This destination empowers you to preprocess your real-time events before their ingestion into your lakehouse. The events are transformed into Delta Lake format and later stored in specific lakehouse tables, facilitating your data warehousing needs.
-- **Custom endpoint**: With this feature, you can seamlessly direct your real-time event traffic to a bespoke application. It enables the integration of your proprietary applications with the event stream, allowing for the immediate consumption of event data. This feature is advantageous when you aim to transfer real-time data to an independent system not hosted on the Microsoft Fabric.
-- **Derived Stream**: The derived stream is a specialized destination created post-application of stream operations like Filter or Manage Fields to an eventstream. It represents the altered default stream after processing, which can be routed to various destinations within Fabric and monitored in the Real-Time hub.
-- **Fabric Activator**: This destination enables you to use Fabric Activator to trigger automated actions based on values in your streaming data.
-
-> [!TIP]
-> For more information about supported sources, see **[Add and manage a destination in an eventstream](/fabric/real-time-intelligence/event-streams/add-manage-eventstream-destinations)**.
+Streaming data requires immediate processing and storage to retain its value. Destinations in an eventstream serve as endpoints where your processed data becomes available for queries, reports, dashboards, alerts, actions, or integration with other systems. You can load the data from your stream into the following destinations:
+- **Eventhouse**: This destination lets you ingest your real-time event data into an eventhouse, where you can use Kusto Query Language (KQL) to query and analyze the data.
+- **Lakehouse**: This destination gives you the ability to transform your real-time events before ingesting them into your lakehouse. Real-time events are converted into Delta Lake format and then stored in designated lakehouse tables.
+- **Derived stream**: You can think of derived streams as transformed versions of your original data stream that enable **content-based routing**. Derived streams let you route subsets of data from your *default* or original stream to different destinations based on the *content* of data. For example, you could filter IoT sensor data to send high-temperature alerts to Fabric Activator while routing hourly averages to a KQL database.
+- **Fabric Activator**: Directly connect your real-time event data to an event detection engine that automatically triggers actions when specific patterns or conditions are detected in your streaming data. When data reaches certain thresholds or matches patterns, Activator can send notifications, launch Power Automate workflows, or trigger other automated responses.
+- **Custom endpoint**: With this destination, you can route your real-time events to a custom endpoint. This destination is useful when you want to direct real-time data to an external system or custom application outside Microsoft Fabric.
 
 You can attach to multiple destinations within an event stream at the same time without impacting or colliding with each other.
+
+> [!TIP]
+> For more information about supported destinations, see **[Add and manage a destination in an eventstream](/fabric/real-time-intelligence/event-streams/add-manage-eventstream-destinations?azure-portal=true)**.
+
+## Configure eventstream destinations
+
+Eventstream destinations can be configured in the eventstream canvas. A destination can be specified after a datasource is connected or after optional transformations are applied.
+
+:::image type="content" source="../media/eventstream-destinations.png" alt-text="Screenshot showing how to configure destinations in eventstream canvas." lightbox="../media/eventstream-destinations.png":::
+
+The eventstream canvas in the image shows:
+
+- **Add destination dropdown**: for configuring new destinations
+- **Three configured destinations**: a derived stream, a Fabric Activator, and an Eventhouse  
+- **Content-based routing** where the output of the GroupByStreet transformation is routed to a derived stream that's then routed to both an Activator to check if there are bikes at every station and to an eventhouse to insert bike counts by street into a KQL database
