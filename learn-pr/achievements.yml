@@ -6835,3 +6835,18 @@ achievements:
   title: Intermediate Bicep
   summary: Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your deployments more consistent and repeatable.
   iconUrl: /training/achievements/bicep/intermediate-bicep.svg
+- uid: learn.connect-your-services-together.trophy
+  type: trophy
+  title: Connect your services together
+  summary: "Azure lets you create applications composed of various components: web site front-ends, back-end services, and triggered functions that perform compute-on-demand services. Azure also includes various communication strategies to let these various components pass data to each other. Learn how to use these communication services to create scalable, efficient solutions out of testable components. This learning path can help you prepare for the [Microsoft Certified: Azure Developer Associate certification](/certifications/azure-developer)."
+  iconUrl: /training/achievements/connect-your-services-together.svg
+- uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.badge
+  type: badge
+  title: Enable reliable messaging for Big Data applications using Azure Event Hubs
+  summary: Connect sending and receiving applications with Event Hubs so you can handle high loads without losing data.
+  iconUrl: /training/achievements/enable-reliable-messaging-for-big-data-apps-using-azure-event-hubs.svg
+- uid: learn.design-monitoring-strategy-on-azure.badge
+  type: badge
+  title: Design a full-stack monitoring strategy on Azure
+  summary: Use monitoring services on Azure to help bring operational excellence and security to your applications and infrastructure.
+  iconUrl: /training/achievements/design-monitoring-strategy-on-azure.svg

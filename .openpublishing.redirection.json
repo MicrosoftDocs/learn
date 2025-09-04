@@ -57068,6 +57068,96 @@
       "source_path": "learn-pr/azure/design-a-geographically-distributed-application/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/2-full-stack-monitoring.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/3-azure-monitoring-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/4-application-insights.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/5-analyze-resource-utilization.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/6-security-center.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/7-sentinel.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/2-create-an-event-hub-using-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/3-exercise-create-an-event-hub-using-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/4-configure-applications-to-send-or-receive-messages-through-an-event-hub.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/5-exercise-configure-applications-to-send-or-receive-messages-through-an-event-hub.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/6-evaluate-the-performance-of-the-deployed-event-hub-using-the-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/connect-your-services-together/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/messaging-services/",
+      "redirect_document_id": false
     }
   ]
 }
