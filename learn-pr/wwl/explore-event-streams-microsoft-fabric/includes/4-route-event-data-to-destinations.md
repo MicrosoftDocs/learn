@@ -8,7 +8,7 @@ Common transformation scenarios include:
 - **Aggregation and summarization**: Calculate running totals, averages, or counts over time windows for dashboard displays
 - **Format standardization**: Ensure consistent data structure across multiple data sources before combining streams
 
-## Eventstream transformations
+## Transform event data
 
 The eventstream canvas give you a way to create event data processing workflows. Eventstream provide several no-code transformations that you can drag onto the canvas:
 
