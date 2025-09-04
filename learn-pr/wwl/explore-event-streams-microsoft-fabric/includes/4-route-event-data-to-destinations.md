@@ -22,6 +22,4 @@ The eventstream canvas gives you a way to create event data processing workflows
 
 ## Create transformation workflows
 
-Transformations can be used together to create data processing pipelines. For example, if you had a stream of equipment temperature readings, you could start by using **filter** to remove sensor errors from incoming IoT data. Next, you might use **manage fields** to add a calculated "priority" column based on temperature thresholds. Then **group by** could calculate hourly averages by location.
-
-Finally, you'd route the processed data to appropriate destinations: temperature data to Fabric Activator for rule evaluation and hourly summaries to a Lakehouse for historical analysis.
+Transformations can be used together to create data processing pipelines. For example, if you had a stream of equipment temperature readings, you could start by using **filter** to remove sensor errors from incoming IoT data. Next, you might use **manage fields** to add a calculated "priority" column based on temperature thresholds. Then **group by** could calculate hourly averages by location. Finally, you'd route the processed data to appropriate destinations: temperature data to Fabric Activator for rule evaluation and hourly summaries to a Lakehouse for historical analysis.
