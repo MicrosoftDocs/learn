@@ -56673,6 +56673,11 @@
       "source_path": "learn-pr/azure/extend-share-capacity-with-azure-file-sync/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/files/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-azure-app-service/7-create-html-web-app.md",
+      "redirect_url": "/training/modules/introduction-to-azure-app-service/",
+      "redirect_document_id": false
     }
   ]
 }
