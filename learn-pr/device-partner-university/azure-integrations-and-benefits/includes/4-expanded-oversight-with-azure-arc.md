@@ -4,7 +4,7 @@ Azure Arc extends the capabilities of Windows Server 2025 to on-premises and mul
 
 ## Unified management of servers
 
-[Azure Arc-enabled Windows Servers](azure/azure-arc/servers/overview) allow IT teams to manage both virtual machines and physical servers from a single platform. This streamlines operations and reduces the complexity of maintaining multiple environments.
+[Azure Arc-enabled Windows Servers](/azure/azure-arc/servers/overview) allow IT teams to manage both virtual machines and physical servers from a single platform. This streamlines operations and reduces the complexity of maintaining multiple environments.
 
 ## Multi-OS monitoring
 
