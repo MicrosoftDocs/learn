@@ -1,6 +1,4 @@
-Characterize the types of IT environments and business needs that Windows Server 2025 is designed to support.
-
-Describe the core features of Windows Server 2025, including modular server roles, advanced security infrastructure, Hyper-V virtualization, resilient storage and networking, centralized management tools, and hybrid cloud integration.
+Learn about the core features of Windows Server 2025, including modular server roles, advanced security infrastructure, Hyper-V virtualization, resilient storage and networking, centralized management tools, and hybrid cloud integration.
 
 ## Learning objectives
 

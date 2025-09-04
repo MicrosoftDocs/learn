@@ -7,7 +7,7 @@ Windows Server 2025 is a server-specific operating system developed by Microsoft
 >- **Windows Server 2025 Standard**: Suitable for organizations with physical or lightly virtualized environments.
 >- **Windows Server 2025 Datacenter**: Intended for highly virtualized datacenters and hybrid cloud deployments.
 
-## Advanced security and resiliancy
+## Advanced security and resiliency
 
 Multi-layered security features in Windows Server 2025 are designed to address evolving cybersecurity threats while streamlining administrative management.
 
@@ -79,7 +79,7 @@ Windows Server 2025 supports comprehensive management of hybrid server environme
 - System Insights
 - Virtual machine protection
 - File server synchronization
-- Enhanced Active Directory (AD) authentication
+- Enhanced Active Directory authentication
 
 System Insights provides native predictive analytics capabilities for Windows Server, applicable to both on-premises and hybrid cloud deployments. These analytics deliver high-accuracy forecasts that assist in proactive resource management and cost reduction.
 
