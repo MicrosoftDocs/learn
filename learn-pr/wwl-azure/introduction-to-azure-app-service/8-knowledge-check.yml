@@ -16,3 +16,61 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following App Service plan categories provides the maximum scale-out capabilities?"
+    choices:
+    - content: "Dedicated compute"
+      isCorrect: false
+      explanation: "Incorrect. The Dedicated compute category does not provide the maximum scale-out capability."
+    - content: "Isolated"
+      isCorrect: true
+      explanation: "Correct. The Isolated category provides network and compute isolation, and has the maximum scale-out capability."
+    - content: "Shared compute"
+      isCorrect: false
+      explanation: "Incorrect. The Shared compute category does not provide the maximum scale-out capability."
+  - content: "Which of the following networking features of App Service can be used to control outbound network traffic?"
+    choices:
+    - content: "App-assigned address"
+      isCorrect: false
+      explanation: "Incorrect. App-assigned address is an inbound network feature."
+    - content: "Hybrid Connections"
+      isCorrect: true
+      explanation: "Correct. Hybrid Connections are an outbound network feature."
+    - content: "Service endpoints"
+      isCorrect: false
+      explanation: "Incorrect. Service endpoints are an inbound network feature."
+  - content: "What is the purpose of the Azure App Service Environment feature?"
+    choices:
+    - content: "It provides a shared infrastructure for running App Service apps."
+      isCorrect: false
+      explanation: "Incorrect. The Azure App Service Environment provides a fully isolated and dedicated environment, not a shared one."
+    - content: "It allows for the deployment and running of containerized web apps on Windows and Linux."
+      isCorrect: false
+      explanation: "Incorrect. While Azure App Service does support containerized web apps, this is not the specific purpose of the App Service Environment feature."
+    - content: "It provides a fully isolated and dedicated environment for running App Service apps with improved security at high scale."
+      isCorrect: true
+      explanation: "Correct. The Azure App Service Environment is designed to provide an isolated and dedicated environment for running App Service apps securely at high scale."
+  - content: "What determines the set of compute resources for a web app to run in Azure App Service?"
+    choices:
+    - content: "The geographical region where the app is deployed"
+      isCorrect: false
+      explanation: "Incorrect. While the geographical region does affect where the resources are created, it does not determine the set of compute resources for a web app."
+    - content: "The pricing tier of the app"
+      isCorrect: false
+      explanation: "Incorrect. The pricing tier affects the features and cost of the plan, but it does not directly determine the set of compute resources for a web app."
+    - content: "The App Service plan"
+      isCorrect: true
+      explanation: "Correct. The App Service plan defines the set of compute resources for a web app to run."
+  - content: "What is the purpose of using deployment slots in Azure App Service?"
+    choices:
+    - content: "To deploy an app to a staging environment and then swap staging and production slots, eliminating downtime"
+      isCorrect: true
+      explanation: "Correct. Deployment slots are used to deploy an app to a staging environment first and then swap it with the production slot, thus minimizing downtime."
+    - content: "To increase the storage capacity of the application"
+      isCorrect: false
+      explanation: "Incorrect. Deployment slots are not used to increase storage capacity, they are used for staging and production deployment."
+    - content: "To add up to nine sidecar containers for each sidecar-enabled custom container app"
+      isCorrect: false
+      explanation: "Incorrect. Sidecar containers are used to deploy extra services and features, not for staging and production deployment."

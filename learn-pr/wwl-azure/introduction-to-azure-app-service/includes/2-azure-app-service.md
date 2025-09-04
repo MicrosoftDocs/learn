@@ -12,7 +12,7 @@ With Azure App Service, you can deploy and run containerized web apps on Windows
 
 ## Continuous integration/deployment support
 
-The Azure portal provides out-of-the-box continuous integration and deployment with Azure DevOps Services, GitHub, Bitbucket, FTP, or a local Git repository on your development machine. Connect your web app with any of the above sources and App Service can automatically sync your code and apply changes as they’re pushed to the connected repository.. Continuous integration and deployment for containerized web apps is also supported using either Azure Container Registry or Docker Hub.
+The Azure portal provides out-of-the-box continuous integration and deployment with Azure DevOps Services, GitHub, Bitbucket, FTP, or a local Git repository on your development machine. Connect your web app with any of the above sources and App Service can automatically sync your code and apply changes as they’re pushed to the connected repository. Continuous integration and deployment for containerized web apps is also supported using either Azure Container Registry or Docker Hub.
 
 ## Deployment slots
 
@@ -34,7 +34,7 @@ App Service on Linux does have some limitations:
 
 * App Service on Linux isn't supported on Shared pricing tier.
 * The Azure portal shows only features that currently work for Linux apps. As features are enabled, they're activated on the portal.
-* When deployed to built-in images, your code and content are allocated a storage volume for web content, backed by Azure Storage. The disk latency of this volume is higher and more variable than the latency of the container filesystem. Apps that require heavy read-only access to content files might benefit from the custom container option, which places files in the container filesystem instead of on the content volume.
+* When deployed to built-in images, your code and content are allocated as a storage volume for web content, backed by Azure Storage. The disk latency of this volume is higher and more variable than the latency of the container filesystem. Apps that require heavy read-only access to content files might benefit from the custom container option, which places files in the container filesystem instead of on the content volume.
 
 ## App Service Environment
 
