@@ -1,29 +1,39 @@
 ### YamlMime:Module
 uid: learn.wwl.custom-text-classification
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a custom text classification solution
-  description: The Azure AI Language service enables processing of natural language to use in your own app. Learn how to build a custom text classification project.
+  description: "The Azure AI Language service enables processing of natural language to use in your own app. Learn how to build a custom text classification project."
+  ms.date: 09/04/2025
   author: ivorb
   ms.author: berryivor
-  ms.date: 08/28/2025
-  ms.service: azure-ai-language
   ms.topic: module-standard-task-based
-  ai-usage: ai-assisted
-  ms.collection:
-    - wwl-ai-copilot
-title: Create a custom text classification solution
+  ms.collection: wwl-ai-copilot
+  ms.custom:
+  - N/A
+  ms.service: azure-ai-language
+  ai-usage: human-only
+title: Create custom text classification solutions
 summary: The Azure AI Language service enables processing of natural language to use in your own app. Learn how to build a custom text classification project.
 abstract: |
   After completing this module, you'll be able to:
-  - Understand types of classification projects
-  - Build a custom text classification project
-  - Tag data, train, and deploy a model
-  - Submit classification tasks from your own app
+
+  -   Understand types of classification projects
+
+  -   Build a custom text classification project
+
+  -   Tag data, train, and deploy a model
+
+  -   Submit classification tasks from your own app
 prerequisites: |
   Before starting this module, you should be familiar with:
-  - The Azure portal
-  - Familiarity with Azure AI Services
-  - General programming techniques
+
+  -   The Azure portal
+
+  -   Familiarity with Azure AI Services
+
+  -   General programming techniques
 iconUrl: /training/achievements/1-create-custom-text-classification-solutions.svg
 levels:
 - intermediate
@@ -32,7 +42,6 @@ roles:
 - developer
 products:
 - ai-services
-- azure-ai-foundry
 subjects:
 - artificial-intelligence
 - classification-analysis
@@ -45,4 +54,3 @@ units:
 - learn.wwl.custom-text-classification.summary
 badge:
   uid: learn.wwl.custom-text-classification.badge
-
