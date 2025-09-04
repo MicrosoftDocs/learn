@@ -1,6 +1,6 @@
 Windows Server 2025 is designed to integrate with Azure, giving you flexibility to manage workloads on-premises, in Azure, or across multiple clouds. Azure Arc extends these capabilities by enabling a single management experience for all your servers and applications, regardless of where they run.
 
-Imagine your IT team manages servers in three different environments—on-premises, a private data center, and another cloud provider. Without Azure Arc, each environment requires its own tools. With Azure Arc, you can centralize management through the Azure Portal for consistent operations. See [Windows Server Management](/azure/azure-arc/servers/windows-server-management-overview) for an overview of Azure Arc-enabled Windows Server capabilities.
+Imagine your IT team manages servers in three different environments—on-premises, a private data center, and another cloud provider. Without Azure Arc, each environment requires its own tools. With Azure Arc, you can centralize management through the Azure portal for consistent operations. See [Windows Server Management](/azure/azure-arc/servers/windows-server-management-overview) for an overview of Azure Arc-enabled Windows Server capabilities.
 
 ## What is Microsoft Azure?
 
