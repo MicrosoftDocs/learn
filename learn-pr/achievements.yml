@@ -6835,3 +6835,13 @@ achievements:
   title: Intermediate Bicep
   summary: Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your deployments more consistent and repeatable.
   iconUrl: /training/achievements/bicep/intermediate-bicep.svg
+- uid: learn.choose-messaging-model.badge
+  type: badge
+  title: Choose a messaging model in Azure to loosely connect your services
+  summary: When you have an application that consists of components running on different computers, servers, and mobile devices, reliable communications between those components can be difficult and unreliable. Azure provides several technologies that you can use to communicate more reliably, including Storage queues, Event Hubs, Event Grid, and Service Bus. This module shows you how to choose the best technology for your communication task.
+  iconUrl: /training/achievements/choose-a-messaging-model-in-azure-to-connect-your-services.svg
+- uid: learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.badge
+  type: badge
+  title: Monitor Azure Arc-enabled SQL Managed Instance security performance
+  summary: Azure Arc-enabled SQL Managed Instance offers a secure and performant solution for deploying the SQL Server database engine in a wide range of hybrid scenarios.
+  iconUrl: /learn/achievements/generic-badge.svg
