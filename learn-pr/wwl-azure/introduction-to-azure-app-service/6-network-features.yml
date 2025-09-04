@@ -2,10 +2,12 @@
 uid: learn.wwl.introduction-to-azure-app-service.networking-features
 title: Discover App Service networking features
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover App Service networking features
   description: "Discover App Service networking features"
-  ms.date: 02/10/2025
-  author: wwlpublish
+  ms.date: 09/04/2025
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: unit
   ms.custom:
