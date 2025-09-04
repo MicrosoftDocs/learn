@@ -6835,3 +6835,18 @@ achievements:
   title: Intermediate Bicep
   summary: Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your deployments more consistent and repeatable.
   iconUrl: /training/achievements/bicep/intermediate-bicep.svg
+- uid: learn.azure-scale-azure-sql-dbs-elastic-pools.badge
+  type: badge
+  title: Scale multiple Azure SQL Databases with SQL elastic pools
+  summary: SQL elastic pools allow you to manage performance and cost for a collection of SQL databases.
+  iconUrl: /training/achievements/azure-scale-azure-sql-databases-elastic-pools.svg
+- uid: learn.provision-azure-sql-db.badge
+  type: badge
+  title: Provision an Azure SQL database to store application data
+  summary: Use the Azure portal and Cloud Shell to provision, connect, and manage Azure SQL databases.
+  iconUrl: /training/achievements/provision-azure-sql-db.svg
+- uid: learn.work-with-relational-data-in-azure.trophy
+  type: trophy
+  title: Work with relational data in Azure
+  summary: "Azure supports several popular SQL-based database solutions including SQL Server, PostgreSQL, and MySQL. Learn how to use these enterprise data solutions in Azure to store and retrieve your app's data in the cloud. This learning path can help you prepare for the [Microsoft Certified: Azure Developer Associate certification](/certifications/azure-developer)."
+  iconUrl: /training/achievements/work-with-relational-data-in-azure.svg
