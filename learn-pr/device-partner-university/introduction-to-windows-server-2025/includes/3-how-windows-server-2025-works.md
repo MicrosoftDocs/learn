@@ -1,4 +1,4 @@
-Windows Server 2025 is a modern, secure, and scalable operating system designed to support diverse workloads—from traditional on-premises infrastructure to hybrid cloud environments. This unit introduces the key components of Windows Server 2025 and explains how they work together to deliver reliable, high-performance services.
+This unit introduces the key components of Windows Server 2025 and explains how they work together to deliver reliable, high-performance services.
 
 ## Core components of Windows Server 2025
 

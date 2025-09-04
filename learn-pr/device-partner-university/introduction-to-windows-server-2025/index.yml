@@ -28,7 +28,7 @@ roles:
   - administrator
   - technology-manager
 products:
-  - windows-server
+  - windows-server-2025
 units:
   - learn.dpu.introduction-to-windows-server-2025.introduction
   - learn.dpu.introduction-to-windows-server-2025.what-is-windows-server-2025
