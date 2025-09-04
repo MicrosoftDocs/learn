@@ -56838,6 +56838,86 @@
       "source_path": "learn-pr/paths/aks-cluster-scalability/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/aks/concepts-scale",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/distribute-load-with-traffic-manager/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/traffic-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/distribute-load-with-traffic-manager/2-priority-routing.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/traffic-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/distribute-load-with-traffic-manager/3-exercise-priority-routing.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/traffic-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/distribute-load-with-traffic-manager/4-performance-routing.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/traffic-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/distribute-load-with-traffic-manager/5-exercise-performance-routing.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/traffic-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/distribute-load-with-traffic-manager/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/traffic-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/distribute-load-with-traffic-manager/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/traffic-manager/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/2-encryption-options-for-protecting-windows-and-linux-vms.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/3-encrypt-existing-vm-disks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/4-exercise-encrypt-existing-vm-disks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/5-automate-secure-vm-deployments-using-arm-templates.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/6-exercise-use-arm-template-to-decrypt-vm.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-your-azure-virtual-machine-disks/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
+      "redirect_document_id": false
     }
   ]
 }

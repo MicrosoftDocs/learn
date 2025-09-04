@@ -32,7 +32,6 @@ modules:
 - learn.connect-on-premises-network-with-vpn-gateway
 - learn.secure-and-isolate-with-nsg-and-service-endpoints
 - learn.integrate-vnets-with-vnet-peering
-- learn.distribute-load-with-traffic-manager
 - learn.improve-app-scalability-resiliency-with-load-balancer
 - learn.load-balance-web-traffic-with-application-gateway
 - learn.control-network-traffic-flow-with-routes
