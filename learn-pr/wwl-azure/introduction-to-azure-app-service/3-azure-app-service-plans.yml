@@ -2,10 +2,12 @@
 uid: learn.wwl.introduction-to-azure-app-service.azure-app-service-plans
 title: Examine Azure App Service plans
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Azure App Service plans
   description: "Examine Azure App Service plans"
-  ms.date: 02/10/2025
-  author: wwlpublish
+  ms.date: 09/04/2025
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: unit
   ms.custom:

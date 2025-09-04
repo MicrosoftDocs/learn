@@ -2,38 +2,17 @@
 uid: learn.wwl.introduction-to-azure-app-service.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/10/2025
-  author: wwlpublish
+  ms.date: 09/04/2025
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: unit
   ms.custom:
   - N/A
   module_assessment: true
 durationInMinutes: 3
-quiz:
-  title: "Check your knowledge"
-  questions:
-  - content: "Which of the following App Service plan categories provides the maximum scale-out capabilities?"
-    choices:
-    - content: "Dedicated compute"
-      isCorrect: false
-      explanation: "Incorrect. The Dedicated compute category does not provide the maximum scale-out capability."
-    - content: "Isolated"
-      isCorrect: true
-      explanation: "Correct. The Isolated category provides network and compute isolation, and has the maximum scale-out capability."
-    - content: "Shared compute"
-      isCorrect: false
-      explanation: "Incorrect. The Shared compute category does not provide the maximum scale-out capability."
-  - content: "Which of the following networking features of App Service can be used to control outbound network traffic?"
-    choices:
-    - content: "App-assigned address"
-      isCorrect: false
-      explanation: "Incorrect. App-assigned address is an inbound network feature."
-    - content: "Hybrid Connections"
-      isCorrect: true
-      explanation: "Correct. Hybrid Connections are an outbound network feature."
-    - content: "Service endpoints"
-      isCorrect: false
-      explanation: "Incorrect. Service endpoints are an inbound network feature."
+content: |
+  [!include[](includes/8-knowledge-check.md)]
