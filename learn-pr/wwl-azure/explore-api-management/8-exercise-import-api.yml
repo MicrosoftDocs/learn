@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Import and configure an API with Azure API Management
   description: "Exercise - Import and configure an API with Azure API Management"
-  ms.date: 06/25/2025
+  ms.date: 08/26/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit

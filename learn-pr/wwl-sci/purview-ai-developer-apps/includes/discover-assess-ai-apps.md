@@ -4,7 +4,7 @@ Microsoft Purview Data Security Posture Management (DSPM) for AI allows you to d
 
 ## Discover AI apps across Microsoft platforms
 
-DSPM for AI can surface apps and agents created across various services, including:
+Lack of visibility into AI apps makes it difficult to judge risk without a discovery process. DSPM for AI can surface apps and agents created across various services, including:
 
 - **Copilot Studio**: Agents created for Microsoft Teams or internal business processes
 - **Azure AI services**: Custom solutions that use Azure OpenAI or other large language models
@@ -19,7 +19,7 @@ Once discovered, apps and agents appear in the **Copilot experiences and agents*
 
 ## Review data risk in connected sources
 
-If AI apps reference content stored in SharePoint, it's important to understand whether that content is properly protected. The **Data risk assessments** tab in DSPM for AI allows you to scan SharePoint sites to identify potential issues such as:
+Even when you know what apps exist, they might connect to unprotected content, creating hidden exposure points. If AI apps reference content stored in SharePoint, it's important to understand whether that content is properly protected. The **Data risk assessments** tab in DSPM for AI allows you to scan SharePoint sites to identify potential issues such as:
 
 - Files that contain sensitive information types
 - Files that are unlabeled or haven't been scanned
@@ -31,7 +31,7 @@ You can use these results to apply file-level protections, restrict AI access to
 
 ## Follow recommendations related to developer AI apps
 
-The **Recommendations** tab in DSPM for AI includes guidance for apps and agents created using services like Copilot Studio, Fabric, Azure AI, and Microsoft Entra.
+Recommendations help translate discovery insights into actions, so you can reduce risk without manually inspecting every app. The **Recommendations** tab in DSPM for AI includes guidance for apps and agents created using services like Copilot Studio, Fabric, Azure AI, and Microsoft Entra.
 
 Some recommendations in DSPM for AI specifically address apps created in developer environments. For example:
 
@@ -45,11 +45,11 @@ Some recommendations guide you through creating or updating a DLP policy. Others
 
 ## Extend coverage with collection policies
 
-If your organization uses other services or needs to expand DSPM for AI coverage, you can configure collection policies to capture additional signals. These policies define which locations or activities should be tracked and can include:
+Some AI activity won't appear in default reports, so collection policies let you capture additional signals for full visibility. If your organization uses other services or needs to expand DSPM for AI coverage, you can configure collection policies to capture additional signals. These policies define which locations or activities should be tracked and can include:
 
-- Prompts and responses from browser-based Copilot interactions
-- Activity from apps deployed through Microsoft Entra
-- Interactions across Microsoft 365 workloads that aren't covered by default
+- **Prompts and responses** from browser-based Copilot interactions
+- **Activity** from apps deployed through Microsoft Entra
+- **Interactions** across Microsoft 365 workloads not covered by default
 
    :::image type="content" source="../media/collection-policies.png" alt-text="Screenshot showing a list of DSPM collection policies for AI interactions and sensitive info detection on the Collection policies page." lightbox="../media/collection-policies.png":::
 
@@ -57,7 +57,7 @@ Once collected, this activity appears in the **activity explorer**, where you ca
 
 ## Use DSPM for AI insights to guide protections
 
-DSPM for AI provides visibility and context, but it doesn't enforce controls. Instead, it helps you decide where to apply Microsoft Purview tools such as DLP, sensitivity labels, retention, or eDiscovery.
+DSPM for AI doesn't enforce protections directly, but it gives admins the visibility needed to decide where to apply Microsoft Purview controls.
 
 For example:
 

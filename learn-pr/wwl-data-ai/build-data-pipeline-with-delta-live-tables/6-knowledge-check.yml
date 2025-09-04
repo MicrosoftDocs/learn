@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 08/20/2025
+  ms.date: 09/03/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -14,25 +14,25 @@ labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "What is the primary benefit of using Delta Live Tables (DLT) in Azure Databricks for real-time data processing?"
+  - content: "What is the primary benefit of using Lakeflow Declarative Pipelines in Azure Databricks for real-time data processing?"
     choices:
     - content: "Reducing the cost of storage"
       isCorrect: false
       explanation: "Incorrect. Reducing the cost of storage isn't the primary benefit of using DLT in Azure Databricks for real-time processing."
     - content: "Automating data pipeline management"
       isCorrect: true
-      explanation: "Correct. Delta Live Tables is a framework that simplifies the management of data pipelines by automating complex tasks such as error handling, monitoring, and data pipeline lineage. This automation is valuable in real-time data processing, where managing data flows efficiently and reliably is critical."
+      explanation: "Correct. Lakeflow Declarative Pipelines is a framework that simplifies the management of data pipelines by automating complex tasks such as error handling, monitoring, and data pipeline lineage. This automation is valuable in real-time data processing, where managing data flows efficiently and reliably is critical."
     - content: "Increasing the latency of data processing."
       isCorrect: false
       explanation: "Incorrect. Increasing the latency of data processing isn't the primary benefit of using DLT in Azure Databricks for real-time processing."
-  - content: "Which feature of Delta Live Tables ensures data reliability and quality in real-time processing environments?"
+  - content: "Which feature of Lakeflow Declarative Pipelines ensures data reliability and quality in real-time processing environments?"
     choices:
     - content: "Live data"
       isCorrect: false
-      explanation: "Incorrect. You can receive live data with real-time data processing with Delta Live tables but this feature doesn't ensure data reliability and quality."
+      explanation: "Incorrect. You can receive live data with real-time data processing with Lakeflow Declarative Pipelines but this feature doesn't ensure data reliability and quality."
     - content: "ACID Transactions"
       isCorrect: true
-      explanation: "Correct. Delta Live Tables support ACID transactions, which are crucial for ensuring data integrity by making all operations atomic, consistent, isolated, and durable. This is important in real-time processing environments where concurrent data modifications can lead to inconsistencies without proper transaction controls."
+      explanation: "Correct. Lakeflow Declarative Pipelines support ACID transactions, which are crucial for ensuring data integrity by making all operations atomic, consistent, isolated, and durable. This is important in real-time processing environments where concurrent data modifications can lead to inconsistencies without proper transaction controls."
     - content: "Data Lake"
       isCorrect: false
       explanation: "Incorrect. A Data Lake is a centralized repository that houses vast volumes of structured and unstructured data from various sources but it doesn't ensure data reliability and quality."
