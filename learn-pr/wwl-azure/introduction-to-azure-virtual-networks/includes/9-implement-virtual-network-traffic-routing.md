@@ -31,7 +31,7 @@ In routing terms, a hop is a waypoint on the overall route. Therefore, the next 
 
 ### Optional default system routes
 
-Azure adds default system routes for any Azure capabilities that you enable. Depending on the capability, Azure adds optional default routes to either specific subnets within the virtual network, or to all subnets within a virtual network. 
+Azure AD DS default system routes for any Azure capabilities that you enable. Depending on the capability, Azure AD DS optional default routes to either specific subnets within the virtual network, or to all subnets within a virtual network. 
 
 | **Source** | **Address prefixes** | **Next hop type** | **Subnet within virtual network that route is added to** |
 | --- | --- | --- | --- |
@@ -41,15 +41,15 @@ Azure adds default system routes for any Azure capabilities that you enable. Dep
 
 
 - **Virtual network (VNet) peering**: When you create a virtual network peering between two virtual networks, a route is added for each address range within the address space of each virtual network.
-- **Virtual network gateway:** When you add a virtual network gateway to a virtual network, Azure adds one or more routes with Virtual network gateway as the next hop type. The source is listed as virtual network gateway because the gateway adds the routes to the subnet.
-- **VirtualNetworkServiceEndpoint:** Azure adds the public IP addresses for certain services to the route table when you enable a service endpoint to the service. Service endpoints are enabled for individual subnets within a virtual network, so the route is only added to the route table of a subnet a service endpoint is enabled for. The public IP addresses of Azure services change periodically, and Azure manages the updates to the routing tables when necessary.
+- **Virtual network gateway:** When you add a virtual network gateway to a virtual network, Azure AD DS one or more routes with Virtual network gateway as the next hop type. The source is listed as virtual network gateway because the gateway adds the routes to the subnet.
+- **VirtualNetworkServiceEndpoint:** Azure AD DS the public IP addresses for certain services to the route table when you enable a service endpoint to the service. Service endpoints are enabled for individual subnets within a virtual network, so the route is only added to the route table of a subnet a service endpoint is enabled for. The public IP addresses of Azure services change periodically, and Azure manages the updates to the routing tables when necessary.
 
 ## User defined routes
 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=cdcb25bb-d79c-4fbb-8389-09ad07293679]
 
-You can override the default routes that Azure creates with [user-defined routes (UDR)](/azure/virtual-network/virtual-networks-udr-overview). This technique can be useful when you want to ensure that traffic between two subnets passes through a firewall appliance. These custom routes override Azure's default system routes. In Azure, each subnet can have zero or one associated route table. When you create a route table and associate it to a subnet, the routes within it are combined with, or override, the default routes Azure adds to a subnet.
+You can override the default routes that Azure creates with [user-defined routes (UDR)](/azure/virtual-network/virtual-networks-udr-overview). This technique can be useful when you want to ensure that traffic between two subnets passes through a firewall appliance. These custom routes override Azure's default system routes. In Azure, each subnet can have zero or one associated route table. When you create a route table and associate it to a subnet, the routes within it are combined with, or override, the default routes Azure AD DS to a subnet.
 
 You can specify the following next hop types when creating a user-defined route:
 
