@@ -7,3 +7,4 @@ The role of Azure Database Administrator is just one of the roles that can be fi
 |**Azure Data Scientist** | Applies their knowledge of data science and machine learning to implement and run machine learning workloads on Azure; in particular, using Azure Machine Learning Service. |
 |**Azure Artificial Intelligence Engineer** | Use Cognitive Services, Machine Learning, and Knowledge Mining to architect and implement Microsoft AI solutions involving natural language processing, speech, computer vision, bots, and agents. |
 |**Azure Database Administrator** | Implements and manages the operational aspects of cloud-native and hybrid data platform solutions built on Microsoft Azure data services and Microsoft SQL Server. The Azure Database Administrator uses a variety of methods and tools to perform day-to-day operations, including applying knowledge of using T-SQL for administrative management purposes. |
+
