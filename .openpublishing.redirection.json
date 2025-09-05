@@ -57108,6 +57108,86 @@
       "source_path": "learn-pr/azure/design-a-geographically-distributed-application/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-infrastructure-with-site-recovery/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-infrastructure-with-site-recovery/2-what-is-site-recovery.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-infrastructure-with-site-recovery/3-site-recovery-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-infrastructure-with-site-recovery/4-exercise-site-recovery-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-infrastructure-with-site-recovery/5-run-disaster-recovery-drill.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-infrastructure-with-site-recovery/6-exercise-run-disaster-recovery-drill.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-infrastructure-with-site-recovery/7-failover-and-failback.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-infrastructure-with-site-recovery/8-exercise-failover-and-failback.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-infrastructure-with-site-recovery/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/protect-infrastructure-with-site-recovery/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-for-servers/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-for-servers/2-characteristics-azure-arc-enabled-servers.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-for-servers/3-capabilities-azure-arc-enabled-servers.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-for-servers/4-simplify-management-maintenance-azure-arc-servers.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-for-servers/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-for-servers/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
     }
   ]
 }

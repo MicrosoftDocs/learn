@@ -25,7 +25,6 @@ products:
 subjects:
 - infrastructure
 modules:
-- learn.azure.intro-to-azure-arc
 - learn.azure.intro-to-arc-for-servers
 - learn.azure.plan-deploy-azure-arc-enabled-servers
 - learn.azure.secure-azure-arc-enabled-servers
