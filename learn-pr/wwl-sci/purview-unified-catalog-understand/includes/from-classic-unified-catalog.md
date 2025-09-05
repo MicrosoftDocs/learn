@@ -4,9 +4,18 @@ The **Unified Catalog** keeps the Data Map as its foundation and extends it with
 
 ## Compare the classic and Unified Catalog experiences
 
-| Classic catalog  | Unified Catalog |
-|-----|-----|
-|:::image type="content" source="../media/classic-catalog.svg" alt-text="Diagram showing a central hub labeled Unified Catalog connected by solid lines to people, files, and cloud data, representing unified organization."  border="false" :::|:::image type="content" source="../media/unified-catalog.svg" alt-text="Diagram showing a central hub labeled Unified Catalog connected by solid lines to people, files, and cloud data, representing unified organization."  border="false" :::|
+While the classic catalog focused almost entirely on the Data Map, the Unified Catalog extends that foundation with governance, curated products, and collaboration.
+
+:::row:::
+   :::column span="1":::
+      :::image type="content" source="../media/classic-catalog.svg" alt-text="Diagram showing a single circle labeled Data Map, representing the classic catalog."  border="false" :::
+   :::column-end:::
+   :::column span="1":::
+      :::image type="content" source="../media/unified-catalog.svg" alt-text="Diagram showing Data Map at the center with surrounding circles for Collaboration, Governance, and Curated Products, representing the Unified Catalog."  border="false" :::
+   :::column-end:::
+:::row-end:::
+
+The table compares the classic and Unified Catalog experiences.
 
 | Classic catalog  | Unified Catalog |
 |-----|-----|
