@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.github.github-copilot-across-environments
 metadata:
-  title: "GitHub Copilot Across Environments: IDE, Chat, GitHub.com and Command Line Techniques"
-  description: "GitHub Copilot Across Environments: IDE, Chat, GitHub.com and Command Line Techniques explore the versatile integration of GitHub's AI-powered coding assistance. It covers effective use of Copilot's auto-suggestions and multiple panes in IDEs, using natural language interactions in Copilot Chat, and streamlining command-line workflows. The guide delves into optimizing prompts, understanding context-aware code generation, and customizing Copilot's behavior across different coding environments."
+  title: "GitHub Copilot Across Environments: IDE, Chat, GitHub.com, and Command Line Techniques"
+  description: "GitHub Copilot Across Environments: IDE, Chat, GitHub.com, and Command Line Techniques explore the versatile integration of GitHub's AI-powered coding assistance. It covers effective use of Copilot's auto-suggestions and multiple panes in IDEs, using natural language interactions in Copilot Chat, and streamlining command-line workflows. The guide delves into optimizing prompts, understanding context-aware code generation, and customizing Copilot's behavior across different coding environments."
   ms.date: 10/08/2024
   ms.update-cycle: 180-days
   author: a-a-ron
@@ -10,10 +10,10 @@ metadata:
   ms.topic: module
   ms.collection: github-ai-copilot
   ms.service: github-copilot
-title: "GitHub Copilot Across Environments: IDE, Chat, and Command Line Techniques"
+title: "GitHub Copilot Across Environments: IDE, Chat, GitHub.com, and Command Line Techniques"
 summary: Explore the multifaceted capabilities of GitHub Copilot across various development environments. Learn to harness AI-assisted coding in your IDE, engage in natural language conversations for complex tasks, and enhance your command-line productivity.
 abstract: |
-  At the end of this module, you are be able to: 
+  At the end of this module, you are able to: 
   -	Understand how to utilize GitHub Copilot's auto-suggestions, multiple suggestions pane, and its ability to adapt to different coding styles.
   -	Understand how to provide context to GitHub Copilot through inline comments, block comments, doc strings, and other types of comments to enhance code generation accuracy.
   -	Understand how to interact with GitHub Copilot through natural language conversations to generate complex code, debug issues, and obtain code explanations in real-time.
