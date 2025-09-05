@@ -10,6 +10,8 @@ This inventory layer is comprehensive. It represents the _entire_ data estate, n
 
 While the Data Map inventories everything, not all data is ready for broad consumption. **Data products** package related assets for a specific use case. For example, instead of a marketing analyst searching across multiple raw datasets, a steward can create a _Customer Insights_ product that combines customer records, transactions, and loyalty data into one governed, reliable source.
 
+:::image type="content" source="../media/unified-catalog-data-products.png" alt-text="Screenshot of Microsoft Purview Unified Catalog showing the Data products list with several example entries."  lightbox = "unified-catalog-data-products.png" :::
+
 ## Adding business context
 
 To make assets and data products meaningful, the Unified Catalog adds layers of context:

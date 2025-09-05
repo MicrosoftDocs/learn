@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="79.33123mm"
+   height="79.331223mm"
+   viewBox="0 0 79.33123 79.331223"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="fragmented-data.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="79.33123"
+       height="79.331223"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-98.617888,-89.11086)">
+    <g
+       transform="matrix(0.23610484,0,0,0.23610484,64.382692,40.001051)"
+       id="g5">
+      <path
+         d="m 145,376 c 0,-92.784 75.216,-168 168,-168 92.784,0 168,75.216 168,168 0,92.784 -75.216,168 -168,168 -92.784,0 -168,-75.216 -168,-168 z"
+         fill="#83caff"
+         fill-rule="evenodd"
+         id="path1" />
+      <text
+         font-family="'Segoe UI Semibold', 'Segoe UI Semibold_MSFontService', sans-serif"
+         font-weight="600"
+         font-size="37px"
+         transform="translate(229.71,322)"
+         id="text1">Data Map</text>
+      <g
+         id="g4">
+        <g
+           id="g3">
+          <g
+             id="g2">
+            <path
+               d="m 312.5,372.812 c -19.422,0 -34.062,7.324 -34.062,17.032 v 61.312 c 0,9.708 14.64,17.032 34.062,17.032 19.422,0 34.062,-7.324 34.062,-17.032 v -61.312 c 0,-9.708 -14.64,-17.032 -34.062,-17.032 z m 0,6.813 c 16.629,0 27.25,6.049 27.25,10.219 0,4.169 -10.621,10.218 -27.25,10.218 -16.629,0 -27.25,-6.049 -27.25,-10.218 0,-4.17 10.614,-10.219 27.25,-10.219 z m 0,81.75 c -16.636,0 -27.25,-6.056 -27.25,-10.219 v -20.185 c 6.111,4.04 15.859,6.56 27.25,6.56 11.391,0 21.139,-2.52 27.25,-6.56 v 20.185 c 0,4.163 -10.621,10.219 -27.25,10.219 z m 0,-30.656 c -16.636,0 -27.25,-6.05 -27.25,-10.219 v -20.294 c 8.27,4.755 17.719,7.064 27.25,6.669 9.531,0.395 18.98,-1.914 27.25,-6.669 V 420.5 c 0,4.169 -10.614,10.219 -27.25,10.219 z"
+               fill="#212121"
+               id="path2" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
