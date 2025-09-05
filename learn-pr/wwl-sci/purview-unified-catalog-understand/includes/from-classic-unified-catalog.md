@@ -7,6 +7,9 @@ The **Unified Catalog** keeps the Data Map as its foundation and extends it with
 | Classic catalog  | Unified Catalog |
 |-----|-----|
 |:::image type="content" source="../media/classic-catalog.svg" alt-text="Diagram showing a central hub labeled Unified Catalog connected by solid lines to people, files, and cloud data, representing unified organization."  border="false" :::|:::image type="content" source="../media/unified-catalog.svg" alt-text="Diagram showing a central hub labeled Unified Catalog connected by solid lines to people, files, and cloud data, representing unified organization."  border="false" :::|
+
+| Classic catalog  | Unified Catalog |
+|-----|-----|
 | **Data Map** provided discovery, classification, and lineage | **Data Map** remains the foundation and adds governance concepts, curated products, and health reporting |
 | **Metadata** focused mainly on technical details | **Metadata** enriched with business context |
 | **Governance features** were limited | **Governance features** expanded with access controls, objectives, and reporting  |
