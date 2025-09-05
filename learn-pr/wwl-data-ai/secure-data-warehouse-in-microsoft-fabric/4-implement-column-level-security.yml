@@ -4,10 +4,10 @@ title: Implement column-level security
 metadata:
   title: Implement column-level security
   description: "Learn the concept and how to implement column-level security in a data warehouse in Microsoft Fabric."
-  ms.date: 01/10/2025
+  ms.date: 09/3/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-implement-column-level-security.md)]
+  [!include[](includes/4-implement-column-level-security.md)]

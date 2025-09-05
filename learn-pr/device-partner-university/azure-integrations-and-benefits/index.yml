@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.azure-integrations-and-benefits-in-windows-server-2025
+title: Azure integrations and benefits in Windows Server 2025
+metadata:
+  title: Azure Integrations And Benefits In Windows Server 2025
+  description: In this module, you learn how Windows Server 2025 integrates with Azure services to provide unified management, consistent security, and scalable performance for hybrid and multicloud infrastructures.
+  ms.date: 09/03/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module
+  ms.service: windows-server
+  ms.custom: CS110724-3
+summary: >
+  Explore how Windows Server 2025 and Azure work together to deliver unified management, consistent security, and scalable performance for hybrid and multicloud infrastructures.
+abstract: |
+  By the end of this module, you're able to:
+  - Describe how Windows Server 2025 integrates with Azure services.
+  - Configure and manage Windows Server with Azure Arc.
+  - Apply Azure policies and security baselines to on-premises and cloud servers.
+  - Implement Hotpatching to minimize downtime during updates.
+  - Evaluate scenarios where hybrid management improves flexibility and scalability.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+  - network-engineer
+products:
+  - windows-server
+units:
+  - learn.dpu.azure-integrations-and-benefits-in-windows-server-2025.introduction
+  - learn.dpu.azure-integrations-and-benefits-in-windows-server-2025.windows-server-and-azure-hybrid-design
+  - learn.dpu.azure-integrations-and-benefits-in-windows-server-2025.manage-hybrid-environments-with-azure-arc
+  - learn.dpu.azure-integrations-and-benefits-in-windows-server-2025.expanded-oversight-with-azure-arc
+  - learn.dpu.azure-integrations-and-benefits-in-windows-server-2025.windows-server-2025-and-azure-better-together
+  - learn.dpu.azure-integrations-and-benefits-in-windows-server-2025.knowledge-check
+  - learn.dpu.azure-integrations-and-benefits-in-windows-server-2025.summary
+badge:
+  uid: learn.dpu.azure-integrations-and-benefits-in-windows-server-2025.badge

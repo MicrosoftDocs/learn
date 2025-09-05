@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-data-pipeline-with-delta-live-tables.exercise-data-pipeline
-title: Exercise - Create a data pipeline with Delta Live Tables
+title: Exercise - Create a Lakeflow Declarative Pipeline
 metadata:
-  title: Exercise - Create a Data Pipeline with Delta Live Tables
-  description: "Exercise - Create a data pipeline with Delta Live Tables"
-  ms.date: 08/20/2025
+  title: Exercise - Create a Lakeflow Declarative Pipeline
+  description: "Exercise - Create a Lakeflow Declarative Pipeline"
+  ms.date: 09/03/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

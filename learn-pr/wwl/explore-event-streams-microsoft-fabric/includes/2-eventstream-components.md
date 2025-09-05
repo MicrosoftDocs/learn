@@ -1,13 +1,13 @@
-Microsoft Fabric eventstreams work by creating a pipeline of events from multiple internal and external sources to different destinations. You can think of it as a conveyor belt that moves data from one place to another. You can also add some transformations to the data along the way, such as filtering, aggregating, or enriching.
+The eventstream feature in Fabric works by creating a pipeline that ingests events from streaming data sources, processes them through optional transformations, and delivers them to various destinations. Eventstream is the delivery mechanism that carries events from where they happen to where they need to be processed, analyzed, or acted upon.
 
-![Screenshot of an eventstream.](../media/real-time-intelligence-eventstream-workflow.png)
+You can use the eventstream canvas, which is a visual editor, to design your pipeline by dragging and dropping different nodes, such as sources, transformations and, destinations. You can also see the event data flowing through the pipeline in real-time. You don't need to write any code or manage any infrastructure to use eventstream.
 
-You can use the eventstream visual editor to design your pipeline by dragging and dropping different nodes, such as sources, destinations, and transformations. You can also see the event data flowing through the pipeline in real-time. Microsoft Fabric eventstream handles the scaling, reliability, and security of your event stream automatically. You don’t need to write any code or manage any infrastructure to use Microsoft Fabric Eventstream.
+:::image type="content" source="../media/real-time-intelligence-eventstream-workflow.png" alt-text="Screenshot of an eventstream." lightbox="../media/real-time-intelligence-eventstream-workflow.png":::
+
+This image shows the eventstream canvas. There's a real-time data source called **Bicycles**, which includes: city bike rental data including bike locations, bike station street names and more. **Bicycle-data** is an eventstream that ingests data from the **Bicycles** data source. The data is transformed by an operation named **GroupByStreet** that sums the number of bikes by bike station street name. This data is stored in a table in an eventhouse called **Bikes-by-street-table**.
 
 The main components of an eventstream are:
 
-* **Sources**: Sources are where your event data comes from. You can pick Azure Event Hubs, sample data, or custom app as your source type. You can also choose the data format and the consumer group of your source.
-- **Transformations**: You can add transformations that filter or aggregate the data as is processed from the stream. Transformations include common data operations such as filtering, joining, aggregating, and grouping as well as temporal windowing functions that enable you to analyze data events within discrete time periods.
-* **Destinations**: Destinations are where your transformed event data is stored. For example, you can store the results of your stream processing in a table in an eventhouse or a lakehouse, or you could redirect data to another eventstream for further processing or to an activator to trigger an action.
-
-You can use the eventstream editing canvas to add and manage your sources and destinations. You can also see the event data, check the data insights, and view logs for each source or destination.
+* **Sources**: Sources are where your event data comes from. You can stream data from Microsoft sources and also ingest data from non-Microsoft platforms.
+* **Transformations**: You can transform the data as it flows in an eventstream, enabling you to filter, summarize, and reshape it before storing it. Examples of available transformations include: SQL code, filter, manage fields, aggregate, group by, expand and join.
+* **Destinations**: Destinations are where your transformed event data goes for storage, further processing, alerts, or integration with other systems. You can route the data from your stream to various destinations such as tables in an eventhouse or lakehouse, custom endpoints, derived streams for more processing, or Fabric Activator to trigger actions.

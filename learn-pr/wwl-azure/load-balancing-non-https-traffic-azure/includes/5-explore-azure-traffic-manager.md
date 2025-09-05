@@ -51,7 +51,3 @@ Use the [**Performance** routing method](/azure/traffic-manager/traffic-manager-
 Use the [**Geographic** routing method](/azure/traffic-manager/traffic-manager-routing-methods#geographic-traffic-routing-method) to direct users to specific endpoints based on where their DNS queries originate from geographically. Good choice for regional compliance requirements. 
 
 :::image type="content" source="../media/routing-method-geographic-c04c1141.png" alt-text="Diagram that shows the 'Geographic' routing method.":::
-
-
-> [!TIP]
-> Learn more about Traffic Manager check out the [Enhance your service availability and data locality by using Azure Traffic Manager](/training/modules/distribute-load-with-traffic-manager/) module.
