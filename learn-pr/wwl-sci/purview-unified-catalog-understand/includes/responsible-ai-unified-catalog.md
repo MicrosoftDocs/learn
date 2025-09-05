@@ -6,6 +6,8 @@ AI is integrated into the catalog experience in several ways:
 
 - **Natural language search** lets users type queries in plain language to find data assets and products without knowing technical metadata.
 
+   :::image type="content" source="../media/data-products-natural-language-search.png" alt-text="Screenshot of Microsoft Purview Unified Catalog showing the Data products page with natural language search in preview." lightbox = "../media/data-products-natural-language-search.png" :::
+
 - **AI-suggested mappings** propose links between assets and glossary terms to speed up curation.
 
 - **AI-generated glossary terms** recommend new business terms based on patterns in the data estate.
