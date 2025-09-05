@@ -26,7 +26,6 @@ products:
 subjects:
 - data-analytics
 modules:
-- learn.azure-sql-intro
 - learn.azure-sql-deploy-configure
 trophy:
   uid: learn.azure-sql-fundamentals.trophy

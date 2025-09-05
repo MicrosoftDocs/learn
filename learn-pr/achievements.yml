@@ -6835,3 +6835,13 @@ achievements:
   title: Intermediate Bicep
   summary: Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your deployments more consistent and repeatable.
   iconUrl: /training/achievements/bicep/intermediate-bicep.svg
+- uid: learn.azure-sql-intro.badge
+  type: badge
+  title: Introduction to the Azure SQL family of products
+  summary: "Azure SQL is a family of managed, secure, and intelligent products in the Azure cloud that use the same SQL Database Engine as SQL Server. In this module, you'll learn about the benefits of moving to the cloud with the capabilities and technical characteristics of the three products in the Azure SQL family: Azure SQL Database, Azure SQL Managed Instance and SQL Server on Azure VMs."
+  iconUrl: /training/achievements/azure-sql-intro.svg
+- uid: learn.provision-azure-sql-db.badge
+  type: badge
+  title: Provision an Azure SQL database to store application data
+  summary: Use the Azure portal and Cloud Shell to provision, connect, and manage Azure SQL databases.
+  iconUrl: /training/achievements/provision-azure-sql-db.svg

@@ -57068,6 +57068,76 @@
       "source_path": "learn-pr/azure/design-a-geographically-distributed-application/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-azure-sql-db/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/single-database-create-quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-azure-sql-db/2-plan-your-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/single-database-create-quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-azure-sql-db/3-create-your-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/single-database-create-quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-azure-sql-db/4-connect-add-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/single-database-create-quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-azure-sql-db/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/single-database-create-quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-azure-sql-db/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/single-database-create-quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/2-azure-sql-history.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/3-deployment-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/3-features.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/4-purchasing-models-service-tiers.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/5-management-interfaces.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
     }
   ]
 }

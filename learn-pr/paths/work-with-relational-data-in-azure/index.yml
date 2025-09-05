@@ -26,7 +26,6 @@ products:
 subjects:
 - data-analytics
 modules:
-- learn.provision-azure-sql-db
 - learn-wwl.migrate-sql-workloads-azure-sql-databases
 - learn.azure-scale-azure-sql-dbs-elastic-pools
 # - learn.develop-app-that-queries-azure-sql
