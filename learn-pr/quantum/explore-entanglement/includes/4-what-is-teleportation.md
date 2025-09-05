@@ -15,7 +15,7 @@ Alice and Bob work together in the same company. Alice is based in Seattle, and 
 
 Alice and Bob each have a qubit that is part of an entangled pair that was previously prepared. The entangled pair is a Bell state, which is the state
 
-$$\ket{\phi}=\frac1{\sqrt2}(\ket{0_A 0_B} + \ket{1_A 1_B})$$
+:::no-loc text="\$\$\\ket\{\\phi\}\=\\frac1\{\\sqrt2\}\(\\ket\{0_A 0_B\} \+ \\ket{1_A 1_B\}\)\$\$":::
 
 Alice has an extra qubit – called the “message qubit” – and wants to send this qubit to Bob. The message qubit is in an unknown state that Alice wants to teleport to Bob. The state of the message qubit is
 
