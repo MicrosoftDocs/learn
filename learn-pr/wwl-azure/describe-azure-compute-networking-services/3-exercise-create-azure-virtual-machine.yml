@@ -10,8 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
-azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-azure-virtual-machine.md)]
-interactive: bash
+interactive: bash

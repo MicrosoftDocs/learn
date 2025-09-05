@@ -34,7 +34,6 @@ subjects:
 - cloud-computing
 - infrastructure
 modules:
-- learn.intro-to-hpc
 - learn.azure.azure-cyclecloud-high-performance-computing
 - learn.azure.customize-clusters-azure-cyclecloud
 - learn.azure.choose-service-level-azure-netapp-files-hpc-applications

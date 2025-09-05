@@ -30,7 +30,6 @@ modules:
 - learn.app-package-management-using-helm
 # - learn.aks-deployment-pipeline-github-actions
 - learn.aks-manage-application-state
-- learn.aks-optimize-compute-costs
 
 trophy:
   uid: learn.generic-trophy-2.trophy
