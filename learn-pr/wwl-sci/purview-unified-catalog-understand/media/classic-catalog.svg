@@ -2,14 +2,14 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="79.33123mm"
-   height="79.331223mm"
-   viewBox="0 0 79.33123 79.331223"
+   width="337"
+   height="337"
+   viewBox="0 0 89.164592 89.164583"
    version="1.1"
    id="svg1"
-   inkscape:export-filename="fragmented-data.svg"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
+   inkscape:export-filename="classic-catalog.svg"
+   inkscape:export-xdpi="96.285713"
+   inkscape:export-ydpi="96.285713"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,12 +23,21 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm">
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4378367"
+     inkscape:cx="368.26157"
+     inkscape:cy="134.57717"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="2392"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
     <inkscape:page
        x="0"
        y="0"
-       width="79.33123"
-       height="79.331223"
+       width="89.164589"
+       height="89.164581"
        id="page2"
        margin="0"
        bleed="0" />
@@ -38,10 +47,9 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-98.617888,-89.11086)">
+     id="layer1">
     <g
-       transform="matrix(0.23610484,0,0,0.23610484,64.382692,40.001051)"
+       transform="matrix(0.23555717,0,0,0.23555717,-28.321079,-44.384656)"
        id="g5">
       <path
          d="m 145,376 c 0,-92.784 75.216,-168 168,-168 92.784,0 168,75.216 168,168 0,92.784 -75.216,168 -168,168 -92.784,0 -168,-75.216 -168,-168 z"
