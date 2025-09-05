@@ -14,8 +14,6 @@ In this unit, we'll cover:
 
 Copilot is integrated throughout the GitHub web interface, appearing as a chat button or inline suggestions in various contexts. You can access Copilot features in several areas:
 
-:::image type="content" source="../media/copilot-github-interface.png" lightbox="../media/copilot-github-interface.png" alt-text="Screenshot showing GitHub Copilot integration in the GitHub.com web interface with chat button and various access points.":::
-
 - **Repository pages** - Get explanations of code, documentation, and project structure
 - **Issues and pull requests** - Generate summaries, suggest solutions, and draft responses  
 - **Discussions** - Help formulate responses and provide technical insights
@@ -51,7 +49,7 @@ Example: "Summarize the changes in this pull request and highlight any potential
 
 The results:
 
-:::image type="content" source="../media/copilot-pull-request-assistance2.png" lightbox="../media/copilot-pull-request-assistance2.png" alt-text="Screenshot of GitHub Copilot generating a pull request summary and providing review suggestions on a GitHub pull request page.":::
+:::image type="content" source="../media/copilot-pull-request-assistance-summary.png" lightbox="../media/copilot-pull-request-assistance-summary.png" alt-text="Screenshot of GitHub Copilot generating a pull request summary and providing review suggestions on a GitHub pull request page.":::
 
 ### Issue management
 
