@@ -38,8 +38,6 @@ subjects:
   - frontend-development
   - architecture
 modules:
-  - learn.store-data-azure-cosmos-aspire
   - learn.deploy-dotnet-aspire-app-azure
-  - learn.customize-dotnet-aspire-existing-resources
 trophy:
   uid: learn.dotnet-aspire-azure.trophy

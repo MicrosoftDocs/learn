@@ -69,3 +69,31 @@ quiz:
     - content: "gh copilot describe"
       isCorrect: false
       explanation: "Incorrect. 'describe' isn't a valid command in GitHub Copilot CLI."
+  - content: "Which of the following is NOT a common use case for GitHub Copilot agent tasks on GitHub.com?"
+    choices:
+    - content: "Generating pull request summaries"
+      isCorrect: false
+      explanation: "Incorrect. Generating PR summaries is a common use case for Copilot on GitHub.com."
+    - content: "Explaining repository code and structure"
+      isCorrect: false
+      explanation: "Incorrect. Repository exploration and code explanation are key features of Copilot on GitHub.com."
+    - content: "Compiling and deploying applications"
+      isCorrect: true
+      explanation: "Correct. Copilot on GitHub.com provides AI assistance for understanding and reviewing code, but doesn't compile or deploy applications."
+    - content: "Suggesting code review comments"
+      isCorrect: false
+      explanation: "Incorrect. Generating thoughtful code review comments is a common use case for Copilot on GitHub.com."
+  - content: "When using Copilot Code Review on GitHub.com, what important billing consideration should you be aware of?"
+    choices:
+    - content: "It's completely free with no usage limits"
+      isCorrect: false
+      explanation: "Incorrect. Copilot Code Review consumes Premium Request Units (PRUs) which have allowances and limits."
+    - content: "It consumes Premium Request Units (PRUs)"
+      isCorrect: true
+      explanation: "Correct. Copilot Code Review uses Premium Request Units (PRUs), and the consumption can vary. For current details on PRU allowances and limits, refer to the GitHub Docs on Requests in GitHub Copilot."
+    - content: "It only works with paid GitHub Enterprise accounts"
+      isCorrect: false
+      explanation: "Incorrect. While PRUs are involved, the availability isn't limited to Enterprise accounts only."
+    - content: "It requires a separate subscription beyond GitHub Copilot"
+      isCorrect: false
+      explanation: "Incorrect. Copilot Code Review is part of GitHub Copilot but uses PRUs from your allowance."
