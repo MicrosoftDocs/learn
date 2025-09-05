@@ -56723,7 +56723,47 @@
       "source_path": "learn-pr/azure/arm-template-whatif/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
       "redirect_document_id": false
-     },
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/store-data-azure-cosmos-aspire/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/dotnet-aspire-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/store-data-azure-cosmos-aspire/2-why-use-azure-cosmos.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/dotnet-aspire-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/store-data-azure-cosmos-aspire/3-using-azure-cosmos.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/dotnet-aspire-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/store-data-azure-cosmos-aspire/4-using-entity-framework-with-cosmos.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/dotnet-aspire-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/store-data-azure-cosmos-aspire/5-exercise-store-data-azure-cosmos.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/dotnet-aspire-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/store-data-azure-cosmos-aspire/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/dotnet-aspire-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/store-data-azure-cosmos-aspire/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/dotnet-aspire-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/store-data-azure-cosmos-aspire/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/dotnet-aspire-azure/",
+      "redirect_document_id": false
+    },
     {
       "source_path": "learn-pr/azure/deploy-vms-from-vhd-templates/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/",
