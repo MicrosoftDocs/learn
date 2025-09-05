@@ -57123,6 +57123,46 @@
       "source_path_from_root": "/learn-pr/github/github-copilot-across-environments/6-summary.yml",
       "redirect_url": "/training/modules/github-copilot-across-environments/7-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/deploy-dotnet-aspire-app-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-azure-app-service-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/deploy-dotnet-aspire-app-azure/2-deploy-azure-container-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-azure-app-service-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/deploy-dotnet-aspire-app-azure/3-deploy-azure-kubernetes-services.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-azure-app-service-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/deploy-dotnet-aspire-app-azure/4-exercise-deploy-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-azure-app-service-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/deploy-dotnet-aspire-app-azure/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-azure-app-service-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/deploy-dotnet-aspire-app-azure/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-azure-app-service-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/deploy-dotnet-aspire-app-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-azure-app-service-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/dotnet-aspire-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/create-azure-app-service-web-apps/",
+      "redirect_document_id": false
     }
   ]
 }
