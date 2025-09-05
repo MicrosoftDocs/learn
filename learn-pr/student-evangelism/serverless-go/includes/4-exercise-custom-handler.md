@@ -86,7 +86,7 @@ The next series of steps is about creating an app that can respond to an HTTP tr
    log.Fatal(http.ListenAndServe(":"+customHandlerPort, mux))
    ```
   
-1. Let's add the remaining code. First, localize the following line and uncomment it:
+1. Let's add the remaining code. First, locate the following line and uncomment it:
 
    ```go
    // mux.HandleFunc("/api/hello", helloHandler)
