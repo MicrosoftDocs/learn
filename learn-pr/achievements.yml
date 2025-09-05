@@ -6845,3 +6845,13 @@ achievements:
   title: Store data in Azure Cosmos DB with .NET Aspire
   summary: "Learn how to connect to the Azure Cosmos DB database from a cloud-native application by using .NET Aspire built-in integrations."
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.dotnet-aspire-azure.trophy
+  type: trophy
+  title: Use Azure services to build and deploy apps with .NET Aspire
+  summary: Learn how to use Azure services with .NET Aspire.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.deploy-dotnet-aspire-app-azure.badge
+  type: badge
+  title: Deploy a .NET Aspire solution to Azure
+  summary: Learn how to deploy a .NET Aspire solution to container host services, such as Azure Container Apps (ACA) and Azure Kubernetes Services (AKS). Integrate .NET Aspire solution deployment with Continuous Integration/Continuous Deployment (CI/CD) pipelines.
+  iconUrl: /learn/achievements/generic-badge.svg
