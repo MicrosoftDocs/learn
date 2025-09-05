@@ -7,10 +7,12 @@ The **Unified Catalog** keeps the Data Map as its foundation and extends it with
 While the classic catalog focused almost entirely on the Data Map, the Unified Catalog extends that foundation with governance, curated products, and collaboration.
 
 :::row:::
-   :::column span="1":::
+   :::column span="":::
+      ### Classic catalog
       :::image type="content" source="../media/classic-catalog.svg" alt-text="Diagram showing a single circle labeled Data Map, representing the classic catalog."  border="false" :::
    :::column-end:::
-   :::column span="1":::
+   :::column span="":::
+      ### Unified Catalog
       :::image type="content" source="../media/unified-catalog.svg" alt-text="Diagram showing Data Map at the center with surrounding circles for Collaboration, Governance, and Curated Products, representing the Unified Catalog."  border="false" :::
    :::column-end:::
 :::row-end:::
