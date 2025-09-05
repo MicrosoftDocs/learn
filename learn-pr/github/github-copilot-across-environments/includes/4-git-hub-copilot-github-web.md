@@ -45,7 +45,7 @@ Example: "Explain the main functionality of this repository and its key componen
 
 Example: "Summarize the changes in this pull request and highlight any potential concerns"
 
-:::image type="content" source="../media/copilot-pull-request-assistance.png" lightbox="../media/copilot-pull-request-assistance.png" alt-text="Screenshot of GitHub Copilot PR Summary Button .":::
+:::image type="content" source="../media/copilot-pull-request-assistance.png" lightbox="../media/copilot-pull-request-assistance.png" alt-text="Screenshot of GitHub Copilot PR Summary Button.":::
 
 The results:
 
