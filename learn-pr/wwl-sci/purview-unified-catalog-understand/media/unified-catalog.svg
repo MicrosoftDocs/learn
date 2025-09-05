@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="82.251144mm"
-   height="79.414909mm"
-   viewBox="0 0 82.251144 79.414909"
+   width="89.0597mm"
+   height="85.988678mm"
+   viewBox="0 0 89.0597 85.988678"
    version="1.1"
    id="svg1"
    inkscape:export-filename="fragmented-data.svg"
@@ -25,10 +25,10 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm">
     <inkscape:page
-       x="0"
-       y="8.9644316e-22"
-       width="82.251144"
-       height="79.414909"
+       x="-6.4974698e-14"
+       y="0"
+       width="89.059692"
+       height="85.988678"
        id="page2"
        margin="0"
        bleed="0" />
@@ -39,10 +39,13 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-28.310412,-74.347919)">
+     transform="translate(-28.310415,-74.347917)">
     <g
-       transform="matrix(0.14181232,0,0,0.14181232,-65.711154,62.29387)"
-       id="g13">
+       transform="matrix(0.1535512,0,0,0.1535512,-73.494031,61.296065)"
+       id="g13"
+       inkscape:export-filename="unified-catalog.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          d="m 796,421 c 0,-86.156 69.844,-156 156,-156 86.16,0 156,69.844 156,156 0,86.156 -69.84,156 -156,156 -86.156,0 -156,-69.844 -156,-156 z"
          fill="#83caff"
