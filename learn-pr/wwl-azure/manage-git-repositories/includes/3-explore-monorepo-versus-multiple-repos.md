@@ -1,23 +1,29 @@
-A repository is where your work history is stored, usually in a git subdirectory.
+A repository is where your work history is stored, usually in a .git folder.
 
-How should you organize your code repository? Development teams aim to separate concerns in their software and repositories. As time passes, it isn't unusual for code repositories to become cluttered with irrelevant code and artifacts.
+How should you organize your code repositories? Development teams want to keep different parts of their software separate and organized. Over time, code repositories can become messy with unrelated code and files.
 
-When it comes to organizing your repositories, there are two main philosophies: using a single repository (Monorepo) or multiple repositories.
+When organizing your repositories, there are two main approaches: using one repository (Monorepo) or multiple repositories.
 
- -  Monorepos is a source control pattern where all source code is kept in one repository. It's easy to give all employees access to everything at once. Clone it, and you're done.
- -  Organizing your projects into separate repositories is referred to as multiple repositories.
+- **Monorepo** - All source code is kept in one repository. It's easy to give all team members access to everything at once. Clone it, and you have everything.
+- **Multiple repositories** - Each project or component gets its own separate repository.
 
-The fundamental difference between mono repo and multiple repo philosophies is what enables teams to work together most efficiently. In an extreme scenario, the multiple repos view suggests that each subteam can work in its repository. It allows them to work in their respective areas using the libraries, tools, and development workflows that optimize their productivity.
+The main difference between these approaches is about how teams can work together most effectively. With multiple repositories, each subteam can work in their own repository. This lets them use the libraries, tools, and workflows that work best for them.
 
-The cost of consuming anything not developed within a given repository is equivalent to using a third-party library or service, even if it was written by someone sitting nearby.
+The downside is that using anything from another repository is like using a third-party library, even if someone on your team wrote it.
 
-If you come across a bug in your library, you should address it in the corresponding repository. Once you have published a new artifact, you can return to your repository and make the necessary code changes. However, if the bug is in a different code base or involves different libraries, tools, or workflows, you may need to seek assistance from the owner of that system and wait for their response.
+If you find a bug in a library from another repository, you need to:
 
-When using the mono repo view, managing complex dependency graphs can increase the difficulty of using a single repository. The benefits of allowing different teams to work independently aren't substantial. Some teams may find an efficient way of working, but this may not be true for all groups. Furthermore, other teams may choose a suboptimal approach, negating any benefits gained by others. Consolidating all your work in a mono repo lets you focus on closely monitoring this single repository.
+1. Fix it in that repository
+2. Publish a new version
+3. Return to your repository and update your code
 
-The hassle of making changes in other repos or waiting for teams to make changes for you is avoided in a mono repo where anyone can change anything.
+This can be slow, especially if the bug involves different code bases, libraries, tools, or workflows. You might need to ask the owner of that system for help and wait for their response.
 
-If you discover a bug in a library, fixing it's as easy as finding a bug in your own code.
+With a monorepo, managing complex dependency relationships can be harder, but the benefits of independent teams aren't as important. Some teams might work efficiently, but others might not. Having all your work in one repository lets you focus on managing just one place.
+
+In a monorepo, you avoid the hassle of making changes in other repositories or waiting for other teams to make changes for you. Anyone can change anything they need.
+
+If you find a bug in a library, fixing it is as easy as fixing a bug in your own code.
 
 > [!NOTE]
-> In Azure DevOps, it's common to use a separate repository for each associated solution within a project.
+> In Azure DevOps, it's common to use a separate repository for each solution within a project.

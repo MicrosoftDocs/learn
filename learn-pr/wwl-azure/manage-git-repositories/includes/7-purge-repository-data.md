@@ -1,12 +1,12 @@
-While one of the benefits of Git is its ability to hold long histories for repositories efficiently, there are times when you need to purge data.
+One of Git's benefits is its ability to efficiently store long histories for repositories. However, there are times when you need to clean up data.
 
-The most common situations are where you want to:
+The most common situations are when you want to:
 
- -  Significantly reduce the size of a repository by removing history.
- -  Remove a large file that was accidentally uploaded.
- -  Remove a sensitive file that shouldn't have been uploaded.
+- Make a repository much smaller by removing history
+- Remove a large file that was accidentally uploaded
+- Remove a sensitive file that shouldn't have been uploaded
 
-If you commit sensitive data (for example, password, key) to Git, it can be removed from history. Two tools are commonly used:
+If you commit sensitive data (like passwords or keys) to Git, you can remove it from history. Two tools are commonly used:
 
 ## git filter-repo tool
 
@@ -19,14 +19,14 @@ Its core filter-repo contains a library for creating history rewriting tools. Us
 
 ## BFG Repo-Cleaner
 
-BFG Repo-Cleaner is a commonly used open-source tool for deleting or "fixing" content in repositories. It's easier to use than the git filter-branch command. For a single file or set of files, use the **--delete-files** option:
+BFG Repo-Cleaner is a commonly used open-source tool for deleting or "fixing" content in repositories. It's easier to use than the `git filter-branch` command. For a single file or set of files, use the **--delete-files** option:
 
 ```Bash
 $ bfg --delete-files file_I_should_not_have_committed
 
 ```
 
-The following bash shows how to find all the places that a file called passwords.txt exists in the repository. Also, to replace all the text in it, you can execute the **--replace-text** option:
+The following example shows how to find all the places where a file called passwords.txt exists in the repository. To replace all the text in it, you can use the **--replace-text** option:
 
 ```Bash
 $ bfg --replace-text passwords.txt
@@ -35,10 +35,10 @@ $ bfg --replace-text passwords.txt
 
 For more information, see:
 
-[Quickly rewrite git repository history](https://github.com/newren/git-filter-repo/).
+[Quickly rewrite git repository history](https://github.com/newren/git-filter-repo/)
 
-[Removing files from Git Large File Storage](https://docs.github.com/repositories/working-with-files/managing-large-files/removing-files-from-git-large-file-storage).
+[Removing files from Git Large File Storage](https://docs.github.com/repositories/working-with-files/managing-large-files/removing-files-from-git-large-file-storage)
 
-[Removing sensitive data from a repository](https://docs.github.com/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
+[Removing sensitive data from a repository](https://docs.github.com/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
 
-[BFG Repo Cleaner](https://rtyley.github.io/bfg-repo-cleaner).
+[BFG Repo Cleaner](https://rtyley.github.io/bfg-repo-cleaner)
