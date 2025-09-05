@@ -1,0 +1,74 @@
+uid: learn.wwl.automate-identity-lifecycle-workflows.knowledge-check
+title: Module assessment
+metadata:
+  ai_generated_module_assessment: false
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 09/03/2022
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+  module_assessment: true
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+    - content: "What is the primary purpose of Joiner, Mover, and Leaver (JML) scenarios in identity lifecycle management?"
+      choices:
+        - content: "To ensure users have appropriate access throughout their lifecycle while minimizing risks."
+          isCorrect: true
+          explanation: "Correct. JML scenarios are designed to manage user identities effectively by granting, updating, or revoking access as needed, reducing risks associated with over-provisioning or outdated permissions."
+        - content: "To monitor user activity and generate security reports for compliance purposes."
+          isCorrect: false
+          explanation: "Incorrect. While monitoring and reporting are important, they aren't the primary focus of JML scenarios, which center on managing access during key identity lifecycle stages."
+        - content: "To create custom workflows for all organizational processes."
+          isCorrect: false
+          explanation: "Incorrect. JML scenarios use built-in templates for specific identity lifecycle tasks rather than creating custom workflows for all processes."
+    - content: "An organization wants to automate tasks for new hires before their official start date, such as generating a temporary access pass. Which Lifecycle Workflow template should they use?"
+      choices:
+        - content: "Onboard new hire employee"
+          isCorrect: false
+          explanation: "Incorrect. This template is used for tasks on the start date, such as enabling user accounts, not for pre-hire activities."
+        - content: "Onboard pre-hire employee"
+          isCorrect: true
+          explanation: "Correct. The 'Onboard pre-hire employee' template is designed to handle tasks before an employee's start date, including generating temporary access passes."
+        - content: "Post-Onboarding of an employee"
+          isCorrect: false
+          explanation: "Incorrect. This template handles tasks after the start date, such as adding users to specific teams, and isn't suitable for pre-hire tasks."
+    - content: "What is the primary purpose of lifecycle workflows in Microsoft Entra?"
+      choices:
+        - content: "To monitor user activity and generate security reports."
+          isCorrect: false
+          explanation: "Incorrect. While monitoring and reporting are important, they aren't the primary focus of lifecycle workflows."
+        - content: "To manage Azure subscriptions and billing for organizations."
+          isCorrect: false
+          explanation: "Incorrect. Azure subscription and billing management are unrelated to lifecycle workflows, which focus on user lifecycle automation."
+        - content: "To automate user lifecycle tasks such as onboarding and offboarding."
+          isCorrect: true
+          explanation: "Correct. Lifecycle workflows are designed to streamline identity and access management by automating tasks like onboarding, role changes, and offboarding."
+    - content: "An administrator wants to test a newly created workflow on a small group of users before deploying it organization-wide. What should they do first?"
+      choices:
+        - content: "Keep the workflow disabled and test it on a smaller audience."
+          isCorrect: true
+          explanation: "Correct. Newly created workflows are disabled by default, allowing administrators to test them on smaller audiences before full deployment."
+        - content: "Enable the workflow and apply it to specific users."
+          isCorrect: false
+          explanation: "Incorrect. Enabling the workflow and applying it skips the testing phase, which could lead to unintended consequences."
+        - content: "Delete the workflow and create a new one for testing."
+          isCorrect: false
+          explanation: "Incorrect. Deleting the workflow is unnecessary; administrators can test the existing workflow by keeping it disabled and applying it to a smaller audience."
+    - content: "An organization wants to notify an external system when an employee's job profile changes. Which type of custom task extension should they use?"
+      choices:
+        - content: "Sequential execution with response"
+          isCorrect: false
+          explanation: "Incorrect. This method requires the workflow to wait for a response, which is unnecessary for simply notifying an external system."
+        - content: "Fire-and-forget"
+          isCorrect: true
+          explanation: "Correct. The fire-and-forget method allows the Logic App to start and notify the external system without waiting for a response, making it suitable for this scenario."
+        - content: "External system integration"
+          isCorrect: false
+          explanation: "Incorrect. External system integration typically requires a response from the external system, which isn't needed in this case."
