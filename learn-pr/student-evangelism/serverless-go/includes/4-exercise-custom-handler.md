@@ -60,7 +60,7 @@ The next series of steps is about creating an app that can respond to an HTTP tr
    }
    ```
 
-   The `main()` function is invoked by itself. The first line of the code states how it will read from the `FUNCTIONS_CUSTOM_HANDLER_PORT` environment variable:
+   The `main()` function is invoked by itself. The first line of the code states how it reads from the `FUNCTIONS_CUSTOM_HANDLER_PORT` environment variable:
 
    ```go
    customHandlerPort, exists := os.LookupEnv("FUNCTIONS_CUSTOMHANDLER_PORT")
