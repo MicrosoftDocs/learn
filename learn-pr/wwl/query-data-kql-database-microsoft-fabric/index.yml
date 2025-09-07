@@ -3,7 +3,7 @@ uid: learn.wwl.query-data-kql-database-microsoft-fabric
 metadata:
   title: Work with real-time data in an eventhouse in Microsoft Fabric
   description: "Microsoft Fabric provides a scalable and flexible store for real-time data."
-  ms.date: 09/08/2025
+  ms.date: 09/07/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: module-standard-task-based

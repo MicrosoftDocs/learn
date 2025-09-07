@@ -1,6 +1,6 @@
 An eventhouse in Microsoft Fabric provides a data store for large volumes of data. It's a container that houses one or more KQL databases, each optimized for storing and analyzing real-time data that arrives continuously from various sources.
 
-You can load data into a KQL database in an eventhouse using an eventstream or you can directly ingest data into a KQL database.  Once you've ingested data, you can then:
+You can load data into a KQL database in an eventhouse using an eventstream or you can directly ingest data into a KQL database. Once you have ingested data, you can then:
 
 - Query the data using Kusto Query Language (KQL) or T-SQL in a KQL Queryset.
 - Use Real-Time Dashboards to visualize the data.
@@ -14,6 +14,6 @@ KQL databases automatically partition data by ingestion time, making recent data
 
 Think of it like a digital conveyor belt - events flow in continuously, get organized automatically by when they arrive, and are immediately available for analysis while the stream keeps flowing.
 
-This automatic time-based organization works because real-time data has a unique characteristic: it represents immutable events that happened at specific moments in time. *Immutable* means these events can't be changed once they've occurred - a temperature reading at 3:15 PM will always be that reading because it represents what actually happened at that moment. Since each event is permanently tied to when it happened, this creates what we call **time-series data** - data where the timestamp is often just as important as the event itself.
+This automatic time-based organization works because real-time data has a unique characteristic: it represents immutable events that happened at specific moments in time. *Immutable* means these events can't be changed once they've occurred - a temperature reading at 3:15 PM will always be that reading because it represents what actually happened at that moment. Since each event is permanently tied to when it happened, this creates what we call **time-series data** - data where the timestamp is often as important as the event itself.
 
 Time-series data follows an append-only pattern where new events are continuously added, and data is rarely updated or deleted because events represent what actually happened at specific moments. This is fundamentally different from traditional relational databases, where you typically update existing records and maintain relationships between different data tables.

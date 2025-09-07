@@ -7,4 +7,4 @@ To learn more about KQL, explore these resources:
 - **[Work with data in KQL](/training/modules/work-with-data-kusto-query-language/?azure-portal=true)**: Extract data from strings and create custom functions
 - **[Build multi-table statements](/training/modules/build-multi-table-statements-kusto-query-language/?azure-portal=true)**: Use `union` and `join` for complex queries
 - **[Analyze results with KQL](/training/modules/analyze-results-kusto-query-language/?azure-portal=true)**: Create visualizations and summaries
-- **[Kusto Query Language best practices](https://learn.microsoft.com/en-us/kusto/query/best-practices?view=microsoft-fabric&azure-portal=true)**: Detailed optimization guidance
+- **[Kusto Query Language best practices](/kusto/query/best-practices?view=microsoft-fabric&azure-portal=true)**: Detailed optimization guidance

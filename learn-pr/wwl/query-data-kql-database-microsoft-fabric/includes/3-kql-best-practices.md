@@ -14,7 +14,7 @@ The key principle is: the less data your query needs to process, the faster it r
 
 ### Filter data early and effectively
 
-**Why this matters**: Filtering reduces the amount of data that subsequent operations need to process. KQL databases use indexes and data organization techniques that make early filtering very efficient.
+**Why this matters**: Filtering reduces the amount of data that subsequent operations need to process. KQL databases use indexes and data organization techniques that make early filtering efficient.
 
 **Time-based filtering** is especially effective because eventhouses typically contain time-series data:
 
@@ -82,4 +82,4 @@ When writing KQL queries, use this checklist:
 5. **Put smaller tables first in joins** - Reduces resource requirements
 
 > [!TIP]
-> For more optimization techniques and detailed performance guidance, see [Best practices for Kusto Query Language queries](https://learn.microsoft.com/en-us/kusto/query/best-practices).
+> For more optimization techniques and detailed performance guidance, see [Best practices for Kusto Query Language queries](/kusto/query/best-practices).

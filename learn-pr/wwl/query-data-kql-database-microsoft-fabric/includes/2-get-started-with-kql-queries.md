@@ -1,6 +1,6 @@
-When you create an eventhouse, a default KQL database is automatically created with the same name. An eventhouse contains one or more KQL databases, where you can create tables, stored procedures, materialized views, functions, data streams and, shortcuts to manage your data. You can use the default KQL database or create additional KQL databases as needed.
+When you create an eventhouse, a default KQL database is automatically created with the same name. An eventhouse contains one or more KQL databases, where you can create tables, stored procedures, materialized views, functions, data streams and, shortcuts to manage your data. You can use the default KQL database or create other KQL databases as needed.
 
-![Screenshot of an eventhouse in Microsoft Fabric.](../media/eventhouse.png)
+:::image type="content" source="../media/eventhouse.png" alt-text="Screenshot of an eventhouse in Microsoft Fabric." lightbox="../media/eventhouse.png":::
 
 ## Working with data in your eventhouse
 
@@ -11,11 +11,11 @@ There are several ways to access and work with data in a KQL database within an 
 You can ingest data directly into your KQL database from various sources:
 
 - Local files, Azure storage, Amazon S3
-- Azure Event Hubs, Fabric eventstreams, Real-Time hub
+- Azure Event Hubs, Fabric Eventstream, Real-Time hub
 - OneLake, Data Factory copy, Dataflows  
-- Non-Microsoft streaming sources using connectors (Apache Kafka, Confluent Cloud Kafka, Apache Flink, MQTT, Amazon Kinesis, Google Cloud Pub/Sub)
+- Non-Microsoft streaming sources using connectors (Apache Kafka, Confluent Cloud Kafka, Apache Flink, MQTT (Message Queuing Telemetry Transport), Amazon Kinesis, Google Cloud Pub/Sub)
 
-![Screenshot of the Get Data menu for an eventhouse in Microsoft Fabric.](../media/get-data.png)
+:::image type="content" source="../media/get-data.png" alt-text="Screenshot of the Get Data menu for an eventhouse in Microsoft Fabric." lightbox="../media/get-data.png":::
 
 ### Database shortcuts
 
@@ -74,7 +74,7 @@ TaxiTrips
 This returns a summary table showing the total number of trips (`trip_count`) for each unique `taxi_id`, effectively counting how many trips each taxi has made.
 
 > [!TIP]
-> For comprehensive KQL learning resources, syntax reference, and advanced query techniques, see the [Kusto Query Language (KQL) overview](https://learn.microsoft.com/en-us/kusto/query/?view=microsoft-fabric&azure-portal=true)
+> For comprehensive KQL learning resources, syntax reference, and advanced query techniques, see the [Kusto Query Language (KQL) overview](/kusto/query/?view=microsoft-fabric&azure-portal=true)
 
 ## Analyze data with KQL queryset
 
@@ -82,12 +82,12 @@ KQL queryset provides a workspace for running and managing queries against KQL d
 
 You can also create data visualizations while exploring your data, rendering query results as charts, tables, and other visual formats.
 
-![Screenshot of a visualization in a queryset.](../media/queryset-visual.png)
+:::image type="content" source="../media/queryset-visual.png" alt-text="Screenshot of a visualization in a queryset." lightbox="../media/queryset-visual.png":::
 
 ## Use Copilot to assist with queries
 
 For AI-based assistance with KQL querying, you can use [Copilot for Real-Time Intelligence](/fabric/get-started/copilot-real-time-intelligence?azure-portal=true).
 
-When your administrator has enabled Copilot, you see the option in the queryset menu bar. Copilot opens as a pane to the side of the main query interface. When you ask a question about your data, Copilot generates the KQL code to answer your question.
+When your administrator enables Copilot, you see the option in the queryset menu bar. Copilot opens as a pane to the side of the main query interface. When you ask a question about your data, Copilot generates the KQL code to answer your question.
 
-![Screenshot of Copilot for Real-Time Intelligence.](../media/kql-copilot.png)
+:::image type="content" source="../media/kql-copilot.png" alt-text="Screenshot of Copilot for Real-Time Intelligence." lightbox="../media/kql-copilot.png":::
