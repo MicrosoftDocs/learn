@@ -71,9 +71,8 @@ At this point, you have an app skeleton. You're now ready to add code that can h
    package main
 
    import (
-     "encoding/json",
+     "encoding/json"
      "fmt"
-     "io/ioutil"
      "log"
      "net/http"
      "os"
@@ -148,7 +147,7 @@ At this point, you have an app skeleton. You're now ready to add code that can h
 1. In the _host.json_ file, find the `defaultExecutablePath` element and give it a value of `./server`.
 
    > [!NOTE]
-   > For Windows, you would use a value of `.\server.exe`. 
+   > For Windows, you would use a value of `.\\server.exe`. 
 
 1. Build the _server.go_ file by running `go build` at the project root:
 

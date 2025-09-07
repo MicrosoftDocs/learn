@@ -4,7 +4,7 @@ metadata:
   title: 'Develop message-based solutions'
   description: 'Learn how to build applications with message-based architectures by integrating Azure Service Bus and Azure Queue Storage in to your solution.'
   ms.date: 12/09/2021
-  author: wwlpublish
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: learning-path
 title: 'Develop message-based solutions'

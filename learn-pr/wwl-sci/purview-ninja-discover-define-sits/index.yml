@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ninja-discover-define-sits
+metadata:
+  title: Discover and Define Sensitive Information Types 
+  description: "Discover and define sensitive information types."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: module
+  ms.service: purview
+  ai-usage: human-only
+  hidden: true
+title: Discover and define sensitive information types
+summary: Microsoft Purview Data Loss Prevention (DLP) protects sensitive data by identifying and classifying confidential information across platforms like email, Teams, SharePoint, and OneDrive. In this module, you explore how DLP uses built-in Sensitive Information Types (SITs), custom SITs, exact data match (EDM), fingerprinting, and trainable classifiers, while learning to test and tune detection policies for optimal results. You also gain insight into strategies for continuous improvement, ensuring policies adapt to evolving organizational and regulatory needs.
+abstract: |
+  After completing this module, you'll be able to:
+  - Classify sensitive data using built-in and custom sensitive information types (SITs) in Microsoft Purview
+  - Define and test custom SITs using exact data match (EDM), fingerprinting, and classifiers
+  - Maintain SIT accuracy through regular reviews and updates
+prerequisites: |
+  - Have basic knowledge of data protection and compliance
+  - Are familiar with Microsoft Purview Information Protection and information systems
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+units:
+- learn.wwl.purview-ninja-discover-define-sits.introduction
+- learn.wwl.purview-ninja-discover-define-sits.built-in-sits
+- learn.wwl.purview-ninja-discover-define-sits.custom-sits
+- learn.wwl.purview-ninja-discover-define-sits.maintain-sits
+- learn.wwl.purview-ninja-discover-define-sits.knowledge-check
+- learn.wwl.purview-ninja-discover-define-sits.summary
+badge:
+  uid: learn.wwl.purview-ninja-discover-define-sits.badge

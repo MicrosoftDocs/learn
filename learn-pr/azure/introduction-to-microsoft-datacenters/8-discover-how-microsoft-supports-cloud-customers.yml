@@ -5,8 +5,8 @@ metadata:
   title: Discover how Microsoft supports cloud customers
   description: Describes the basics of Microsoft support operations for Azure datacenters.
   ms.date: 07/17/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: kiranchandratrey
+  ms.author: elenasim
   ms.topic: unit
 durationInMinutes: 7
 content: |
@@ -25,4 +25,3 @@ quiz:
     - content: "Basic customer support limits the number of support requests."
       isCorrect: true
       explanation: "Correct. Microsoft doesn't limit the number of support requests a customer can open to resolve issues."
-

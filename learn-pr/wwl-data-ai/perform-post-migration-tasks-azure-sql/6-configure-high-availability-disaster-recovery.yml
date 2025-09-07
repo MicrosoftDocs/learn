@@ -4,10 +4,10 @@ title: Configure high availability and disaster recovery
 metadata:
   title: Configure high availability and disaster recovery
   description: "Learn how to configure high availability and disaster recovery in Azure SQL."
-  ms.date: 09/14/2023
-  author: wwlpublish
+  ms.date: 8/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/6-configure-high-availability-disaster-recovery.md)]
+  [!include[](includes/6-configure-high-availability-disaster-recovery.md)]

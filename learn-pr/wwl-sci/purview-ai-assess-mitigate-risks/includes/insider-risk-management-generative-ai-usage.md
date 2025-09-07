@@ -7,7 +7,7 @@ As AI tools become more common in the workplace, new types of risk have emerged.
 Insider Risk Management includes two preview policy templates that help detect and respond to risky behavior related to AI usage:
 
 - **Risky browser usage (preview)**: Detects when users access known generative AI websites from supported browsers.
-- **Risky AI usage (preview)**: Detects sensitive prompts or AI-generated responses in tools like Microsoft 365 Copilot. Detection contributes to user risk scoring and supports adaptive protection.
+- **Risky AI usage**: Detects sensitive prompts or AI-generated responses in tools like Microsoft 365 Copilot. Detection contributes to user risk scoring and supports adaptive protection.
 
 These templates help you:
 
@@ -24,7 +24,7 @@ The Risky browser usage (preview) policy template in Microsoft Purview Insider R
 - Promote responsible use of devices and networks
 - Support compliance with acceptable use policies
 
-### Risky AI usage (preview) policy template
+### Risky AI usage policy template
 
 This policy detects risky interactions with AI tools, such as:
 
@@ -63,7 +63,7 @@ These requirements help ensure policies can detect activity related to AI usage,
 | Configure Chrome | Use basic, Intune, or Group Policy setup for deployment. |
 | Test signals | Create a policy and verify that indicators are triggered as expected. |
 
-### Additional recommendations for Risky AI usage (preview)
+### Additional recommendations for Risky AI usage
 
 | **Requirement** | **Description** |
 |-----------------|-----------------|
@@ -92,7 +92,7 @@ Use these steps to create a policy using either template.
 1. Choose default or custom thresholds.
 1. Review your settings and select **Submit** to activate the policy.
 
-### Create a policy using the Risky AI usage (preview) template
+### Create a policy using the Risky AI usage template
 
 You can create this policy in three ways: as a quick policy, a custom policy, or from a recommendation in DSPM for AI.
 
@@ -105,7 +105,7 @@ Creating the policy through DSPM for AI helps organizations prioritize AI-specif
 **As a quick policy**:
 
 1. In Microsoft Purview, go to **Solutions** > **Insider Risk Management** > **Policies**.
-1. Select **Create policy** > **Quick policy** > **Risky AI usage (preview)** and follow the prompts.
+1. Select **Create policy** > **Quick policy** > **Risky AI usage** and follow the prompts.
 
 **As a custom policy**:
 
@@ -116,7 +116,7 @@ Use these steps to configure the policy manually:
 1. Go to [Microsoft Purview](https://purview.microsoft.com/).
 1. Select **Solutions** > **Insider risk management** > **Policies**.
 1. Select **Create policy** > **Custom policy**.
-1. Choose the **Risky AI usage (preview)** template.
+1. Choose the **Risky AI usage** template.
 1. Name your policy and provide an optional description.
 1. Choose whether to apply the policy to all users or specific groups.
    - Applying to all users enables real-time analytics.

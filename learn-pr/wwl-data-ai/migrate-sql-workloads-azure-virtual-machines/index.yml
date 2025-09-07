@@ -2,9 +2,9 @@
 uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines
 metadata:
   title: Migrate SQL Server workloads to Azure Virtual Machine
-  description: "Discover the tools and features available to migrate SQL workloads from on-premises to Azure Virtual Machines (VMs), including the Azure SQL Migration extension for Azure Data Studio and Data Migration Assistant."
-  ms.date: 08/02/2024
-  author: wwlpublish
+  description: "Discover the tools and features available to migrate SQL workloads from on-premises to Azure Virtual Machines (VMs), including the Azure SQL Migration extension for Azure Data Studio."
+  ms.date: 08/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based
   ms.service: azure
@@ -36,7 +36,6 @@ units:
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.introduction
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.migration-strategies-and-options
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.explore-azure-sql-migration-extension-for-migration
-- learn-wwl.migrate-sql-workloads-azure-virtual-machines.review-data-migration-assistant
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.migrate-using-always-on-availability-groups
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.migrate-use-native-backup-restore
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.compare-additional-migration-methods
@@ -45,4 +44,4 @@ units:
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.summary
 badge:
   uid: learn-wwl.migrate-sql-workloads-to-azure-virtual-machines.badge
-
+

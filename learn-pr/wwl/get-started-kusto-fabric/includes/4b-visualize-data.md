@@ -11,7 +11,7 @@ You can create a real-time dashboard in a workspace and then configure its sourc
 
 Dashboards are composed of one or more *tiles*, each containing a visualization based on a KQL query expression. By default, the visualization shows the results of the query as a table; but you can edit the tile to customize how the data is displayed.
 
-When published, tiles let you to explore the data they contain interactively by drilling into the data and using a visual interface to filter and aggregate the data, and change the visualization type.
+When published, tiles let you explore the data they contain interactively by drilling into the data and using a visual interface to filter and aggregate the data, and change the visualization type.
 
 > [!TIP]
 > To learn more about real-time dashboards, see **[Create a Real-Time Dashboard](/fabric/real-time-intelligence/dashboard-real-time-create)**.

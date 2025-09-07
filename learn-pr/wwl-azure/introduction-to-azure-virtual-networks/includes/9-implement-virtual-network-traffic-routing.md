@@ -1,6 +1,7 @@
 
 
 
+
 Azure automatically creates a route table for each subnet within an Azure virtual network. The route table has the default system routes and any user defined routes you require. 
 
 ## System routes
@@ -16,6 +17,7 @@ Whenever a virtual network is created, Azure automatically creates the following
 | Default | Unique to the virtual network | Virtual network |
 | Default | 0.0.0.0/0 | Internet |
 | Default | 10.0.0.0/8 | None |
+| Default | 172.16.0.0/12 | None |
 | Default | 192.168.0.0/16 | None |
 | Default | 100.64.0.0/10 | None |
 
@@ -67,10 +69,10 @@ You can specify the following next hop types when creating a user-defined route:
 - You no longer need to update user defined routes manually whenever your NVA announces new routes or withdraws old ones.
 - You can peer multiple instances of your NVA with Azure Route Server. 
 - The interface between NVA and Azure Route Server is based on a common standard protocol. As long as your NVA supports BGP, you can peer it with Azure Route Server.
-- You can deploy Azure Route Server in any of your new or existing virtual network.
+- You can deploy Azure Route Server in any of your new or existing virtual networks.
 
 ## Troubleshoot with effective routes
 
-Imagine your attempts to connect to a specific virtual machine (VM) in your Azure virtual network consistently fail. You can diagnose a routing problem by viewing the effective for a virtual machine network interface. You can view the [effective routes](/azure/virtual-network/diagnose-network-routing-problem#diagnose-using-azure-portal) for each network interface by using the Azure portal.
+Imagine your attempts to connect to a specific virtual machine (VM) in your Azure virtual network consistently fail. You can diagnose a routing problem by viewing the effective routes for a virtual machine network interface. You can view the [effective routes](/azure/virtual-network/diagnose-network-routing-problem#diagnose-using-azure-portal) for each network interface by using the Azure portal.
 
 :::image type="content" source="../media/view-nics-a9fe039b.png" alt-text="Screenshot of the Azure portal NIC.":::

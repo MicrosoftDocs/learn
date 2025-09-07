@@ -2,12 +2,12 @@
 uid: learn.wwl.transform-data-spark-azure-synapse-analytics.exercise-transform-data-spark-azure-synapse-analytics
 title: 'Exercise: Transform data with Spark in Azure Synapse Analytics'
 metadata:
-  title: 'Exercise: Transform data with Spark in Azure Synapse Analytics'
+  title: 'Exercise: Transform Data With Spark in Azure Synapse Analytics'
   description: "Exercise: Transform data with Spark in Azure Synapse Analytics"
-  ms.date: 08/25/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/6-exercise-transform-data-spark-azure-synapse-analytics.md)]
+  [!include[](includes/6-exercise-transform-data-spark-azure-synapse-analytics.md)]

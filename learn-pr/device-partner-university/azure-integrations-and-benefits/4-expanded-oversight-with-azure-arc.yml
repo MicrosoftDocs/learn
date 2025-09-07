@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.azure-integrations-and-benefits-in-windows-server-2025.expanded-oversight-with-azure-arc
+title: Expanded oversight with Azure Arc
+metadata:
+  title: Expanded Oversight With Azure Arc
+  description: This content is part of the "Azure integrations and benefits in Windows Server 2025" module.
+  ms.date: 09/03/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-expanded-oversight-with-azure-arc.md)]
