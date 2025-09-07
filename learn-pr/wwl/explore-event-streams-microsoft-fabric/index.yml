@@ -2,7 +2,7 @@
 uid: learn.wwl.explore-event-streams-microsoft-fabric
 metadata:
   title: Use eventstream in Microsoft Fabric
-  description: "Eventstream in Real-Time Intelligence (RTI) enable you to ingest, transform, and route real-time data."
+  description: "Eventstream in Real-Time Intelligence (RTI) enables you to ingest, transform, and route real-time data."
   ms.date: 09/03/2025
   author: theresa-i
   ms.author: theresai
@@ -11,7 +11,7 @@ metadata:
   ms.subservice: rti-eventstream
   ai-usage: human-only
 title: Use eventstream in Microsoft Fabric
-summary: Eventstream in Real-Time Intelligence (RTI) enable you to ingest, transform, and route real-time data.
+summary: Eventstream in Real-Time Intelligence (RTI) enables you to ingest, transform, and route real-time data.
 abstract: |
   After completing this module, you'll be able to:
   - Establish source and destinations in eventstream in Microsoft Fabric.

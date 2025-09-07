@@ -6,8 +6,8 @@ metadata:
   title: Gain performance insights when you need it and accelerate performance with no code changes
   description: "Learn how to reduce time for query tuning and accelerate performance with no code changes"
   ms.date: 04/15/2025
-  author: vanto
-  ms.author: vanto
+  author: rgward
+  ms.author: bobward
   ms.reviewer: vanto
   ms.topic: unit
 durationInMinutes: 10

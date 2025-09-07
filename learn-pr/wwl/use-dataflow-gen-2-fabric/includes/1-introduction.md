@@ -3,7 +3,7 @@ ms.custom:
   - build-2023
 ---
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3c009694-5f3d-4649-9825-7acd7c2dc1e6]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2331876]
 
 Microsoft Fabric offers a unified solution for data engineering, integration, and analytics. A crucial step in end-to-end analytics is data ingestion. Dataflows Gen2 are used to ingest and transform data from multiple sources, and then land the cleansed data to another destination. They can be incorporated into data pipelines for more complex activity orchestration, and also used as a data source in Power BI.
 

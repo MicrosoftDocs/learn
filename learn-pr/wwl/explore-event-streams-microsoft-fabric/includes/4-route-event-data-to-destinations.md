@@ -10,7 +10,7 @@ Common transformation scenarios include:
 
 ## Transform event data
 
-The eventstream canvas give you a way to create event data processing workflows. Eventstream provide several no-code transformations that you can drag onto the canvas:
+The eventstream canvas gives you a way to create event data processing workflows. Eventstream provide several no-code transformations that you can drag onto the canvas:
 
 - **Filter**: Filter events based on the value of a field in the input. Keep only events that meet specific conditions. For example: temperature > 80°, status = "error", customer type = "premium".
 - **Manage fields**: This transformation allows you to add, remove, change data type, or rename fields coming in from an input or another transformation. Add calculated fields, remove unnecessary columns, rename fields, or change data types to match destination requirements.
@@ -22,6 +22,4 @@ The eventstream canvas give you a way to create event data processing workflows.
 
 ## Create transformation workflows
 
-Transformations can be used together to create data processing pipelines. For example, if you had a stream of equipment temperature readings, you could start by using **filter** to remove sensor errors from incoming IoT data. Next, you might use **manage fields** to add a calculated "priority" column based on temperature thresholds. Then **group by** could calculate hourly averages by location.
-
-Finally, you'd route the processed data to appropriate destinations: temperature data to Fabric Activator for rule evaluation and hourly summaries to a Lakehouse for historical analysis.
+Transformations can be used together to create data processing pipelines. For example, if you had a stream of equipment temperature readings, you could start by using **filter** to remove sensor errors from incoming IoT data. Next, you might use **manage fields** to add a calculated "priority" column based on temperature thresholds. Then **group by** could calculate hourly averages by location. Finally, you'd route the processed data to appropriate destinations: temperature data to Fabric Activator for rule evaluation and hourly summaries to a Lakehouse for historical analysis.

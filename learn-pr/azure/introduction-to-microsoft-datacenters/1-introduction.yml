@@ -5,10 +5,9 @@ metadata:
   title: Introduction
   description: Introduces the Introduction to Microsoft Datacenters module.
   ms.date: 07/17/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: kiranchandratrey
+  ms.author: elenasim
   ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-

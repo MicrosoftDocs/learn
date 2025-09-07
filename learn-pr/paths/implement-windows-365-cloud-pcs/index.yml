@@ -3,21 +3,21 @@ uid: learn.wwl.implement-windows-365-cloud-pcs
 metadata:
   title: MD-015 Implement Windows 365 Cloud PCs
   description: This learning path provides instruction on the implementation of Windows 365, including application management, and provisioning, deploying, and managing Windows 365 Cloud PCs.
-  ms.date: 01/03/2024
+  ms.date: 08/19/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: learning-path
 title: MD-015 Implement Windows 365 Cloud PCs
 prerequisites: |
-  - Proficient understanding of general IT practices.
-  - Basic understanding of on-premises computer networks and hardware concepts.
-  - Basic understanding of virtual machines and virtual networks.
-  - Basic understanding of Operating System and Application concepts.
-  - Familiarity with Microsoft Entra ID and Microsoft Intune.
-  - Experience using Windows 10 or later.
+  -   Proficient understanding of general IT practices.
+  -   Basic understanding of on-premises computer networks and hardware concepts.
+  -   Basic understanding of virtual machines and virtual networks.
+  -   Basic understanding of Operating System and Application concepts.
+  -   Familiarity with Microsoft Entra ID and Microsoft Intune.
+  -   Experience using Windows 10 or later.
 summary: |
   This learning path provides instruction on the implementation of Windows 365, including application management, and provisioning, deploying, and managing Windows 365 Cloud PCs.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/implement-windows-365-cloud-pcs.svg
 levels:
 - intermediate
 roles:

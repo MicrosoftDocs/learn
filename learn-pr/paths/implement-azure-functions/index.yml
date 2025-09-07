@@ -4,7 +4,7 @@ metadata:
   title: 'Implement Azure Functions'
   description: Learn how to create and deploy Azure Functions. Explore hosting options, bindings, and triggers.
   ms.date: 05/05/2023
-  author: wwlpublish
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: learning-path
 title: 'Implement Azure Functions'
