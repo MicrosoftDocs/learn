@@ -4,10 +4,10 @@ Successful software delivery depends on a branching strategy that balances speed
 
 An effective branching model must strike the right balance:
 
-- **Minimize process overhead** to accelerate time-to-market
-- **Maintain quality gates** to prevent defects from reaching production
-- **Enable parallel development** for team scalability
-- **Support rapid hotfix deployment** for critical issues
+- **Minimize process overhead** to accelerate time-to-market.
+- **Maintain quality gates** to prevent defects from reaching production.
+- **Enable parallel development** for team scalability.
+- **Support rapid hotfix deployment** for critical issues.
 
 While numerous Git branching strategies exist, the most effective approach combines proven patterns with your team's specific needs. Modern enterprise teams typically adopt a **lightweight, trunk-based development model** centered on feature branches and pull requests.
 
@@ -21,25 +21,25 @@ The following principles establish a robust foundation for continuous delivery:
 
 ### Main Branch Stability
 
-- **Single source of truth**: The main branch is the exclusive path for production releases
-- **Production readiness**: Main branch must always be in a deployable state
-- **Branch protection**: Implement comprehensive branch policies to prevent direct commits
-- **Gated changes**: All modifications flow through pull requests exclusively
-- **Release tracking**: Tag all production releases with semantic Git tags
+- **Single source of truth**: The main branch is the exclusive path for production releases.
+- **Production readiness**: Main branch must always be in a deployable state.
+- **Branch protection**: Implement comprehensive branch policies to prevent direct commits.
+- **Gated changes**: All modifications flow through pull requests exclusively.
+- **Release tracking**: Tag all production releases with semantic Git tags.
 
 ### Feature Branch Discipline
 
-- **Isolated development**: Create dedicated branches for all features and bug fixes
-- **Feature flag integration**: Manage long-running features with feature toggles to reduce branch lifetime
-- **Strategic naming**: Use descriptive naming conventions that reflect business value
-- **Pull request workflow**: Merge to main exclusively through reviewed pull requests
+- **Isolated development**: Create dedicated branches for all features and bug fixes.
+- **Feature flag integration**: Manage long-running features with feature toggles to reduce branch lifetime.
+- **Strategic naming**: Use descriptive naming conventions that reflect business value.
+- **Pull request workflow**: Merge to main exclusively through reviewed pull requests.
 
 ### Release Branch Strategy
 
-- **Dedicated preparation**: Create release branches from stable feature integration points
-- **Quality assurance**: Conduct thorough testing and stabilization on release branches
-- **Production hardening**: Apply final bug fixes and performance optimizations
-- **Milestone tracking**: Tag significant release milestones for traceability
+- **Dedicated preparation**: Create release branches from stable feature integration points.
+- **Quality assurance**: Conduct thorough testing and stabilization on release branches.
+- **Production hardening**: Apply final bug fixes and performance optimizations.
+- **Milestone tracking**: Tag significant release milestones for traceability.
 
 ### Naming Conventions for Scale
 
@@ -64,10 +64,10 @@ users/john-doe/experimental-caching
 
 ### Pull Request Management
 
-- **Mandatory code review**: No exceptions for direct merges to main
-- **Automated validation**: Integrate CI/CD pipelines for quality gates
-- **Performance metrics**: Track and optimize pull request completion time
-- **Knowledge sharing**: Use reviews for team learning and standards enforcement
+- **Mandatory code review**: No exceptions for direct merges to main.
+- **Automated validation**: Integrate CI/CD pipelines for quality gates.
+- **Performance metrics**: Track and optimize pull request completion time.
+- **Knowledge sharing**: Use reviews for team learning and standards enforcement.
 
 ## Prerequisites and Setup
 
@@ -75,8 +75,8 @@ users/john-doe/experimental-caching
 
 This practical exercise leverages Azure's comprehensive DevOps toolchain:
 
-- **[Azure CLI](/cli/azure/install-azure-cli)**: Cloud-native command-line interface for Azure services
-- **[Azure DevOps CLI](/azure/devops/cli)**: Specialized extension for seamless Git, CI/CD, and Agile tool integration across Windows, Linux, and macOS
+- **[Azure CLI](/cli/azure/install-azure-cli)**: Cloud-native command-line interface for Azure services.
+- **[Azure DevOps CLI](/azure/devops/cli)**: Specialized extension for seamless Git, CI/CD, and Agile tool integration across Windows, Linux, and macOS.
 
 ### Azure DevOps CLI Configuration
 
@@ -346,7 +346,7 @@ As significant milestones are reached during the release process, tag releases i
 git tag -a v1.1 -m "Release version 1.1"
 ```
 
-This command creates a tag named v1.1 to mark the release version 1.1 in the release branch.<br>
+This command creates a tag named v1.1 to mark the release version 1.1 in the release branch.
 
 ## How it works
 

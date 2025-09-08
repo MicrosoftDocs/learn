@@ -4,10 +4,10 @@ GitHub Flow represents the pinnacle of simplified, yet powerful branching strate
 
 GitHub Flow has emerged as the preferred workflow for organizations prioritizing:
 
-- **Rapid iteration cycles** with continuous integration
-- **Simplified branch management** reducing cognitive overhead
-- **Enhanced collaboration** through integrated pull requests
-- **Deployment flexibility** supporting both continuous deployment and scheduled releases
+- **Rapid iteration cycles** with continuous integration.
+- **Simplified branch management** reducing cognitive overhead.
+- **Enhanced collaboration** through integrated pull requests.
+- **Deployment flexibility** supporting both continuous deployment and scheduled releases.
 
 > [!NOTE]
 > **Prerequisites for Success**: To implement GitHub Flow effectively, you'll need a GitHub account and repository. See "[Signing up for GitHub](https://docs.github.com/en/github/getting-started-with-github/signing-up-for-github)" and "[Create a repo](https://docs.github.com/en/github/getting-started-with-github/create-a-repo)."
@@ -46,10 +46,10 @@ Reference: "[Creating a pull request](https://docs.github.com/en/articles/creati
 
 **Strategic Value**: Pull request reviews represent one of the highest-impact collaboration practices in modern development, enabling:
 
-- **Knowledge distribution** across team members
-- **Quality assurance** through peer review
-- **Architectural alignment** with project standards
-- **Mentoring opportunities** for junior developers
+- **Knowledge distribution** across team members.
+- **Quality assurance** through peer review.
+- **Architectural alignment** with project standards.
+- **Mentoring opportunities** for junior developers.
 
 :::image type="content" source="../media/open-pull-request-5c5ad0c7.png" alt-text="Screenshot of a branching model representing an open a pull request.":::
 
@@ -59,10 +59,10 @@ Reference: "[Creating a pull request](https://docs.github.com/en/articles/creati
 
 Transform your pull request descriptions into comprehensive documentation that reduces cognitive load for reviewers and serves as historical context for future developers. Include:
 
-- **Problem statement**: Clear articulation of the business need
-- **Solution approach**: Technical strategy and implementation decisions
-- **Testing evidence**: Validation methods and results
-- **Risk assessment**: Potential impacts and mitigation strategies
+- **Problem statement**: Clear articulation of the business need.
+- **Solution approach**: Technical strategy and implementation decisions.
+- **Testing evidence**: Validation methods and results.
+- **Risk assessment**: Potential impacts and mitigation strategies.
 
 Reference: "[Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)" and "[Linking a pull request to an issue](https://docs.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue)."
 
@@ -78,10 +78,10 @@ Leverage the comment system to provide context-specific guidance and facilitate 
 
 Modern enterprises implement sophisticated pull request workflows including:
 
-- **Automated review assignment** based on code ownership patterns
-- **Continuous integration validation** through status checks
-- **Security scanning** and compliance verification
-- **Performance impact assessment** for critical paths
+- **Automated review assignment** based on code ownership patterns.
+- **Continuous integration validation** through status checks.
+- **Security scanning** and compliance verification.
+- **Performance impact assessment** for critical paths.
 
 Reference: "[About status checks](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-status-checks)" and "[About protected branches](https://docs.github.com/en/github/administering-a-repository/about-protected-branches)."
 
