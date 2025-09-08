@@ -12,11 +12,10 @@ After completing this module, you're now able to:
 - Manage hybrid identity environments with accurate attribute mapping and governance strategies.  
 
 To learn more about Lifecycle Workflows:  
-- [Microsoft Entra Lifecycle Workflows Overview](/azure/active-directory/governance/lifecycle-workflows-overview)
-- [Plan and Deploy Lifecycle Workflows](/azure/active-directory/governance/lifecycle-workflows-plan-deploy)  
-- [Troubleshooting Lifecycle Workflows](/azure/active-directory/governance/lifecycle-workflows-troubleshoot)  
-- [Hybrid Identity Management with Microsoft Entra](/azure/active-directory/hybrid/whatis-hybrid-identity)  
-- [Lifecycle Workflows documentation](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
+- [Microsoft Entra Lifecycle Workflows Overview](/entra/id-governance/what-are-lifecycle-workflows)
+- [Plan and Deploy Lifecycle Workflows](/entra/id-governance/understanding-lifecycle-workflows)
+- [Auditing Lifecycle Workflows](/entra/id-governance/lifecycle-workflow-audits)  
+- [Hybrid Identity Management with Microsoft Entra](/entra/id-governance/lifecycle-workflow-on-premises)
+- [Lifecycle Workflows insights](/entra/id-governance/lifecycle-workflow-insights)
 - [Lifecycle Workflows templates and categories](/entra/id-governance/lifecycle-workflow-templates)
-- [Customize emails sent out by workflow tasks](/entra/id-governance/customize-workflow-email)
-- 
+- [Customize workflow tasks](/entra/id-governance/lifecycle-workflow-tasks)
