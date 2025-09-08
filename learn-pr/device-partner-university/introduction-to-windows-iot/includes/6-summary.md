@@ -2,4 +2,4 @@ In this module, you examined the challenges organizations encounter when deployi
 
 You reviewed how Windows IoT addresses these requirements by offering an enterprise-grade operating system with integrated security features, compatibility with device management platforms, and support for cloud-based services.
 
-Without Windows IoT, organizations may face fragmented device management workflows, increased exposure to security vulnerabilities, and limitations in scaling device deployments. By adopting Windows IoT, businesses can standardize device provisioning, enhance data protection, and enable centralized monitoring and analytics—contributing to improved operational efficiency and measurable business outcomes.
+Without Windows IoT, organizations might face fragmented device management workflows, increased exposure to security vulnerabilities, and limitations in scaling device deployments. By adopting Windows IoT, businesses can standardize device provisioning, enhance data protection, and enable centralized monitoring and analytics—contributing to improved operational efficiency and measurable business outcomes.

@@ -2,6 +2,8 @@ Imagine you’re working for a mid-sized manufacturing company. It wants to mode
 
 ## Why Windows IoT is a good fit
 
+Windows IoT offers a range of capabilities that align with the operational and technical needs of modern manufacturing environments. The following factors illustrate how it supports this scenario:
+
 - **Device variety:** The facility uses a mix of industrial PCs, touch-screen kiosks for operators, and edge gateways to collect sensor data. Depending on the device, they may require support for x64 or ARM64 architectures.
 - **Security requirements:** The company must protect sensitive production data and prevent unauthorized access to machinery. Windows IoT includes built-in security features such as BitLocker, Secure Boot, and lockdown modes.
 - **Centralized management:** IT staff need to deploy, configure, and update hundreds of devices across the facility. Windows IoT integrates with management tools like Windows Admin Center and Azure IoT Hub, enabling remote monitoring and updates.
@@ -10,6 +12,8 @@ Imagine you’re working for a mid-sized manufacturing company. It wants to mode
 - **Long-term support:** The company prioritizes stability and long-term support, which Windows IoT Enterprise offers to ensure devices remain secure and operational over extended periods.
 
 ## Why Windows IoT might not be a good fit
+
+While Windows IoT provides many benefits, there are scenarios where it may not meet specific technical or operational requirements. The following considerations highlight potential limitations:
 
 - **Resource requirements:** Windows IoT may be more resource-intensive than lightweight operating systems. Devices with limited processing power or storage may not run it efficiently.
 - **Hardware compatibility:** Not all industrial hardware supports Windows IoT. Compatibility issues may arise with specialized controllers or legacy equipment.

@@ -4,11 +4,11 @@ Windows IoT is an operating system designed for Internet of Things (IoT) devices
 
 Windows IoT is compatible with several device management platforms:
 
-**Windows Admin Center:** A web-based interface for configuring and monitoring Windows devices, including IoT endpoints.
+- **Windows Admin Center:** A web-based interface for configuring and monitoring Windows devices, including IoT endpoints.
 
-**Microsoft Endpoint Manager:** Provides centralized management capabilities such as policy enforcement, software updates, and security configuration.
+- **Microsoft Endpoint Manager:** Provides centralized management capabilities such as policy enforcement, software updates, and security configuration.
 
-**Azure IoT Hub:** A cloud-based service for connecting, monitoring, and managing IoT devices. It supports remote provisioning, firmware updates, and device health monitoring.
+- **Azure IoT Hub:** A cloud-based service for connecting, monitoring, and managing IoT devices. It supports remote provisioning, firmware updates, and device health monitoring.
 
 These tools enable IT administrators to deploy, configure, monitor, and update Windows IoT devices efficiently and at scale.
 
@@ -24,15 +24,15 @@ Securing IoT devices presents distinct challenges due to their operational chara
 
 Windows IoT includes integrated security features:
 
-**BitLocker:** Encrypts device data to prevent unauthorized access.
+- **BitLocker:** Encrypts device data to prevent unauthorized access.
 
-**Secure Boot:** Ensures only trusted software executes during startup.
+- **Secure Boot:** Ensures only trusted software executes during startup.
 
-**Device Guard:** Restricts execution to approved applications, reducing exposure to malicious software.
+- **Device Guard:** Restricts execution to approved applications, reducing exposure to malicious software.
 
-**Windows Defender:** Provides built-in antivirus and antimalware protection.
+- **Windows Defender:** Provides built-in antivirus and anti-malware protection.
 
-**Lockdown Modes:** Limits user access to system settings and functions to prevent misconfiguration.
+- **Lockdown Modes:** Limits user access to system settings and functions to prevent misconfiguration.
 
 These features collectively help protect data, maintain device integrity, and support compliance with industry standards.
 
@@ -43,7 +43,7 @@ Windows IoT supports integration with cloud platforms to enable centralized mana
 ### How cloud integration works
 
 - Devices connect to cloud services such as Microsoft Azure.
-- Data from devices (e.g., sensor readings, usage metrics, alerts) is transmitted to the cloud for storage, analysis, and processing.
+- Data from devices (such as sensor readings, usage metrics, alerts) is transmitted to the cloud for storage, analysis, and processing.
 - Administrators can remotely monitor device status, deploy updates, and manage configurations using cloud-based tools.
 
 ### Benefits of cloud integration
@@ -72,4 +72,4 @@ Many existing Windows applications are compatible with Windows IoT Enterprise, e
 
 **Integration with hardware:**
 
-Applications can interface with device hardware (e.g., sensors, actuators, displays) using standard Windows APIs or custom drivers, enabling real-time control and data acquisition.
+Applications can interface with device hardware (for example, sensors, actuators, displays) using standard Windows APIs or custom drivers, enabling real-time control and data acquisition.
