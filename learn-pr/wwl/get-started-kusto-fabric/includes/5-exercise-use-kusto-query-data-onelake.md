@@ -1,4 +1,4 @@
-Now it's time to try out Fabric Real-Time Intelligence for yourself.
+Now it's time to try out Fabric Real-Time Intelligence yourself.
 
 In this exercise, you'll ingest real-time data into Microsoft Fabric. You'll then query and visualize the data before defining an alert to automate an action based on a threshold value in the real-time data stream.
 

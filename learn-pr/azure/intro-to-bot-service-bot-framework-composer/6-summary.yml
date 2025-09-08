@@ -7,9 +7,8 @@ metadata:
   description: Summary
   ms.date: 04/15/2025
   author: jasonkellingtonwaypoint
-  ms.author: robmcm
+  ms.author: v-jasonkell
   ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
-

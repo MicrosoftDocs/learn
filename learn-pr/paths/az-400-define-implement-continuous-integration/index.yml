@@ -37,7 +37,6 @@ modules:
 - learn.azdo.run-functional-tests-azure-pipelines
 - learn.azdo.run-non-functional-tests-azure-pipelines
 - learn.azdo.manage-release-cadence
-- learn.azure.protect-vm-settings-with-dsc
 - learn.github.github-actions-ci
 trophy:
   uid: az-400-define-implement-continuous-integration.trophy

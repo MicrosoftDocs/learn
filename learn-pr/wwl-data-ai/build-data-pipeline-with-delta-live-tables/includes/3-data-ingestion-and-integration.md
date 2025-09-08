@@ -1,6 +1,6 @@
-Data ingestion and integration form the foundational layer for effective data processing in Delta Live Tables (DLT) within Azure Databricks. This ensures that data from various sources is accurately and efficiently loaded into the system for further analysis and processing. 
+Data ingestion and integration form the foundational layer for effective data processing in Lakeflow Declarative Pipelines within Azure Databricks. This ensures that data from various sources is accurately and efficiently loaded into the system for further analysis and processing. 
 
-DLT facilitates data ingestion and integration through:
+Lakeflow Declarative Pipelines facilitates data ingestion and integration through:
 
 - **Multi-source ingestion**: allows you to collect data from various sources.
 - **Stream and batch data processing**: enables you to process data either continuously or in grouped intervals.
@@ -11,99 +11,138 @@ DLT facilitates data ingestion and integration through:
 - **Performance optimization**: enhances your ability to process data quickly and effectively
 - **Monitoring and lineage tracking**: helps you track the data's journey and monitor its movement through the system.
 
-## Ingest and integrate data into Delta Lake
-To get started ingesting data into Delta Lake, the example below walks through ingesting and integrating data from a sample source into Delta Lake using DLT by:
+## Create a pipeline
 
-1. Setting up your Azure Databricks environment.
-1. Creating Delta tables.
-1. Ingesting data from CSV and JSON files.
-1. Transforming and integrating data.
-1. Querying integrated data.
+First, you create an ETL pipeline in Lakeflow Declarative Pipelines. Lakeflow Declarative Pipelines creates pipelines by resolving dependencies defined in notebooks or files (called source code) using Lakeflow Declarative Pipelines syntax. Each source code file can contain only one language, but you can add multiple language-specific notebooks or files in the pipeline. 
 
-### Setting up your Azure Databricks environment
-Ensure that your Azure Databricks environment is set up and configured to use Delta Live Tables. The setup involves preparing the appropriate clusters and ensuring that DLT is enabled in your workspace.
+In your workspace, you can create a new ETL Pipeline from the **Jobs & Pipelines** section in the sidebar. You should assign a **name** to the pipeline, configure a **notebook** or **files** that contain the source code, and set the **destination** storage location and schema. 
 
-### Creating the Delta Tables
-To create Delta Tables you can use the CREATE TABLE SQL statement, as shown in the following example.
+![Screenshot showing Databricks Create Pipeline option.](../media/create-pipeline.png)
+
+## Load from an existing table
+
+In your notebook, you can load data from any existing table in Databricks. You can transform the data using a query, or load the table for further processing in your pipeline.
 
 ```sql
--- Create Delta table for customer data
-CREATE TABLE customer_data (
-    customer_id INT,
-    customer_name STRING,
-    email STRING
-);
-
--- Create Delta table for transaction data
-CREATE TABLE transaction_data (
-    transaction_id INT,
-    customer_id INT,
-    transaction_date DATE,
-    amount DOUBLE
-);
+CREATE OR REFRESH MATERIALIZED VIEW top_baby_names_2021
+COMMENT "A table summarizing counts of the top baby names for New York for 2021."
+AS SELECT
+  First_Name,
+  SUM(Count) AS Total_Count
+FROM baby_names_prepared
+WHERE Year_Of_Birth = 2021
+GROUP BY First_Name
+ORDER BY Total_Count DESC
 ```
 
-### Ingesting data from CSV and JSON files
-You can use Databricks SQL to read data from a CSV file and a JSON file, and then insert it into Delta tables.
+## Load files from Databricks File System
+
+You can also load data into a materialized view by reading files from the Databricks File System (DBFS), and then further transform it in your pipeline.
+
+The following example command creates (or refreshes) a materialized view named raw_covid_data that contains COVID-19 case data, extracted from a CSV file stored in DBFS.
 
 ```sql
--- Load customer data from CSV
-CREATE OR REPLACE TEMPORARY VIEW customer_data_view AS
-SELECT * FROM csv.`/path/to/customer_data.csv`
-OPTIONS (header "true", inferSchema "true");
-
--- Insert data into customer Delta table
-INSERT INTO customer_data
-SELECT * FROM customer_data_view;
-
--- Load transaction data from JSON
-CREATE OR REPLACE TEMPORARY VIEW transaction_data_view AS
-SELECT * FROM json.`/path/to/transaction_data.json`;
-
--- Insert data into transaction Delta table
-INSERT INTO transaction_data
-SELECT * FROM transaction_data_view;
-```
-
-### Transforming and integrating data
-You can perform transformations and join data from multiple tables to create a unified view.
-
-```sql
--- Create a unified view of customer transactions
-CREATE OR REPLACE TEMPORARY VIEW customer_transactions AS
+CREATE OR REFRESH MATERIALIZED VIEW raw_covid_data
+COMMENT "COVID sample dataset. This data was ingested from the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University."
+AS
 SELECT
-    t.transaction_id,
-    t.customer_id,
-    c.customer_name,
-    c.email,
-    t.transaction_date,
-    t.amount
-FROM
-    transaction_data t
-JOIN
-    customer_data c
-ON
-    t.customer_id = c.customer_id;
-
--- Create a Delta table for the integrated data
-CREATE TABLE integrated_data USING DELTA AS
-SELECT * FROM customer_transactions;
+ Last_Update,
+ Country_Region,
+ Confirmed,
+ Deaths,
+ Recovered
+FROM read_files('dbfs:/delta_lab/covid_data.csv', format => 'csv', header => true)
 ```
 
-### Querying the integrated data
-Then, you can query the integrated data for analysis.
+## Manage data quality with pipeline expectations
+
+Optionally, you can use expectations to apply quality constraints that validate data as it flows through ETL pipelines. Expectations provide greater insight into data quality metrics and allow you to fail updates or drop records when detecting invalid records.
+
+![Diagram showing Lakeflow Declarative Pipelines expectations.](../media/expectations.png)
+
+Here's an example of a materialized view that defines a constraint clause. In this case, the constraint contains the actual logic for what is being validated: the Country_Region shouldn't be empty. When a record fails this condition, the expectation is triggered.
 
 ```sql
--- Query the integrated data
+CREATE OR REFRESH MATERIALIZED VIEW processed_covid_data (
+ CONSTRAINT valid_country_region EXPECT (Country_Region IS NOT NULL) ON VIOLATION FAIL UPDATE
+)
+COMMENT "Formatted and filtered data for analysis."
+AS
 SELECT
-    customer_name,
-    SUM(amount) AS total_spent
-FROM
-    integrated_data
-GROUP BY
-    customer_name
-ORDER BY
-    total_spent DESC;
+   TO_DATE(Last_Update, 'MM/dd/yyyy') as Report_Date,
+   Country_Region,
+   Confirmed,
+   Deaths,
+   Recovered
+FROM live.raw_covid_data;
 ```
 
-By following these steps, you can effectively ingest, transform, and integrate data from various sources in Azure Databricks using SQL. This process ensures that your data is stored in a structured and queryable format, enabling powerful data analysis and insights.
+Examples of constraints:
+
+```sql
+-- Simple constraint
+CONSTRAINT non_negative_price EXPECT (price >= 0) ON VIOLATION DROP ROW
+
+-- SQL functions
+CONSTRAINT valid_date EXPECT (year(transaction_date) >= 2020) ON VIOLATION FAIL UPDATE
+
+-- CASE statements
+CONSTRAINT valid_order_status EXPECT (
+  CASE
+    WHEN type = 'ORDER' THEN status IN ('PENDING', 'COMPLETED', 'CANCELLED')
+    WHEN type = 'REFUND' THEN status IN ('PENDING', 'APPROVED', 'REJECTED')
+    ELSE false
+  END
+)
+
+-- Multiple constraints
+CONSTRAINT non_negative_price EXPECT (price >= 0),
+CONSTRAINT valid_purchase_date EXPECT (date <= current_date())
+
+-- Complex business logic
+CONSTRAINT valid_subscription_dates EXPECT (
+  start_date <= end_date
+  AND end_date <= current_date()
+  AND start_date >= '2020-01-01'
+)
+
+-- Complex boolean logic
+CONSTRAINT valid_order_state EXPECT (
+  (status = 'ACTIVE' AND balance > 0)
+  OR (status = 'PENDING' AND created_date > current_date() - INTERVAL 7 DAYS)
+)
+```
+
+Retaining invalid records is the default behavior for expectations. Records that violate the expectation are added to the target dataset along with valid records. If you specify `ON VIOLATION DROP ROW`, then records that violate the expectation are dropped from the target dataset. Finally, if you specify `ON VIOLATION FAIL UPDATE`, then the system atomically rolls back the transaction.
+
+## Apply transformations
+
+You can transform the data using a query, just like with standard SQL commands. In the following example, we define another materialized view that aggregates data.
+
+```sql
+CREATE OR REFRESH MATERIALIZED VIEW aggregated_covid_data
+COMMENT "Aggregated daily data for the US with total counts."
+AS
+SELECT
+   Report_Date,
+   sum(Confirmed) as Total_Confirmed,
+   sum(Deaths) as Total_Deaths,
+   sum(Recovered) as Total_Recovered
+FROM live.processed_covid_data
+GROUP BY Report_Date;
+```
+
+## Execute and monitor the ETL pipeline
+
+After you defined the code in notebooks or source code files, you can start the ETL pipeline. There's a visual interface you can use to monitor the execution:
+
+![Screenshot showing Databricks Pipeline execution.](../media/monitor-pipeline.png)
+
+The pipeline graph appears as soon as an update to a pipeline has successfully started. Arrows represent dependencies between data sets in your pipeline. By default, the pipeline details page shows the most recent update for the table, but you can select older updates from a drop-down menu.
+
+Lakeflow Declarative Pipelines support tasks such as:
+
+- Observing the progress and status of pipeline updates.
+- Alerting on pipeline events such as the success or failure of pipeline updates. 
+- Viewing metrics for streaming sources like Apache Kafka and Auto Loader. 
+- Receiving email notifications when a pipeline update fails or completes successfully.

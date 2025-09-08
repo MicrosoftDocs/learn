@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-cost-management-concepts.finops-ai
+title: FinOps and AI Workloads
+metadata:
+  title: FinOps and AI Workloads
+  description: Understand FinOps and how it applies to AI workloads
+  ms.date: 08/20/2025
+  author: scuffy
+  ms.author: socuff
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-finops-ai.md)]
