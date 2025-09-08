@@ -4,7 +4,7 @@ This module introduces Windows IoT, a specialized version of the Windows operati
 
 Windows IoT provides features such as long-term support, secure device operation, centralized management tools, integration with cloud and AI services, and flexibility to run custom or standard Windows applications across various hardware platforms.
 
-## Learning Objectives
+## Learning objectives
 
 - Evaluate whether Windows IoT meets the requirements for device management, security, and integration in various scenarios.
 - Describe how the main components of Windows IoT function and interact, including the operating system, management tools, security features, cloud integration, and application support.

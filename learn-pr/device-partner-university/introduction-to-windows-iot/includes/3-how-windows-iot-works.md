@@ -62,14 +62,8 @@ Cloud connectivity enables:
 
 Windows IoT supports both custom-developed and standard Windows applications.
 
-**Custom applications:**
+**Custom applications:** Developers can build applications tailored to specific device functions, such as sensor monitoring, machinery control, or user interaction. Supported development frameworks include .NET, UWP, and Win32.
 
-Developers can build applications tailored to specific device functions, such as sensor monitoring, machinery control, or user interaction. Supported development frameworks include .NET, UWP, and Win32.
+**Standard Windows applications:** Many existing Windows applications are compatible with Windows IoT Enterprise, enabling reuse of software for tasks such as data processing, reporting, and device management.
 
-**Standard Windows applications:**
-
-Many existing Windows applications are compatible with Windows IoT Enterprise, enabling reuse of software for tasks such as data processing, reporting, and device management.
-
-**Integration with hardware:**
-
-Applications can interface with device hardware (for example, sensors, actuators, displays) using standard Windows APIs or custom drivers, enabling real-time control and data acquisition.
+**Integration with hardware:** Applications can interface with device hardware (for example, sensors, actuators, displays) using standard Windows APIs or custom drivers, enabling real-time control and data acquisition.
