@@ -107,7 +107,7 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
 
     Open your .gitignore, remove the file name from the path, and leave the folder with a slash, for example, \*.VS Code/\*\*.
 
-    :::image type="content" source="../media/gitignore-0eac5553-d1ca4ff7-3fd1e0b2.png" alt-text="Screenshot of add vscode folder to .gitignore action.":::
+    :::image type="content" source="../media/gitignore-0eac5553-d1ca4ff7-3fd1e0b2.png" alt-text="Screenshot of add VS Code folder to .gitignore action.":::
 
 6.  To stage and commit the newly created myWebApp project to your Git repository from Visual Studio Code, navigate the Git icon from the left panel. Add a commit comment and commit the changes by clicking the checkmark icon. It will stage and commit the changes in one operation:
 
