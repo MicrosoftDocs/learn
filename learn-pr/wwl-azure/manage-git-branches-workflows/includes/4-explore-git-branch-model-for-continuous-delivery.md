@@ -332,13 +332,13 @@ To resolve merge conflicts, you can use the Azure DevOps web interface or resolv
 
     With the conflicts resolved, the pull request can be completed successfully.
 
-At this point, you can create a release branch based on the critical bug fix implemented in the **fof/bug-1** branch and merged into master. Using the git checkout command, create a dedicated release branch from the master branch.
+At this point, you can create a release branch based on the critical bug fix implemented in the **fof/bug-1** branch and merged into main. Using the git checkout command, create a dedicated release branch from the main branch.
 
 ```CMD
 git checkout -b release/v1.1 main
 ```
 
-This command creates a new branch named release/v1.1 based on the master branch.
+This command creates a new branch named release/v1.1 based on the main branch.
 
 As significant milestones are reached during the release process, tag releases in the release branch using Git tags. Tags serve as markers to denote specific versions of the software.
 

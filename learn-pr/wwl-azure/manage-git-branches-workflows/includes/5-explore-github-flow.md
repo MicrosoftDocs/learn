@@ -9,9 +9,11 @@ GitHub Flow has emerged as the preferred workflow for organizations prioritizing
 - **Enhanced collaboration** through integrated pull requests
 - **Deployment flexibility** supporting both continuous deployment and scheduled releases
 
-> [!NOTE] > **Prerequisites for Success**: To implement GitHub Flow effectively, you'll need a GitHub account and repository. See "[Signing up for GitHub](https://docs.github.com/en/github/getting-started-with-github/signing-up-for-github)" and "[Create a repo](https://docs.github.com/en/github/getting-started-with-github/create-a-repo)."
+> [!NOTE]
+> **Prerequisites for Success**: To implement GitHub Flow effectively, you'll need a GitHub account and repository. See "[Signing up for GitHub](https://docs.github.com/en/github/getting-started-with-github/signing-up-for-github)" and "[Create a repo](https://docs.github.com/en/github/getting-started-with-github/create-a-repo)."
 
-> [!NOTE] > **Platform Flexibility**: GitHub Flow integrates seamlessly across development environments - web interface, command line, [GitHub CLI](https://cli.github.com/), or [GitHub Desktop](https://docs.github.com/en/free-pro-team@latest/desktop) - enabling teams to maintain consistency regardless of individual preferences.
+> [!NOTE]
+> **Platform Flexibility**: GitHub Flow integrates seamlessly across development environments - web interface, command line, [GitHub CLI](https://cli.github.com/), or [GitHub Desktop](https://docs.github.com/en/free-pro-team@latest/desktop) - enabling teams to maintain consistency regardless of individual preferences.
 
 ## The GitHub Flow Methodology: Six Strategic Steps
 
@@ -33,7 +35,8 @@ Each commit should represent a logical, complete change with descriptive messagi
 
 **Enterprise Best Practice**: Maintain atomic commits that can be easily reviewed, reverted, or cherry-picked across branches.
 
-> [!NOTE] > **Parallel Development Strategy**: Create separate branches for each distinct change to streamline review processes and enable independent deployment of features.
+> [!NOTE] 
+> **Parallel Development Strategy**: Create separate branches for each distinct change to streamline review processes and enable independent deployment of features.
 
 ### Step 4: Pull Request as Collaboration Gateway
 
@@ -96,7 +99,8 @@ Post-merge branch deletion isn't just housekeeping - it's a critical practice fo
 
 Reference: "[Deleting and restoring branches in a pull request](https://docs.github.com/en/github/administering-a-repository/deleting-and-restoring-branches-in-a-pull-request)."
 
-> [!NOTE] > **Historical Preservation**: GitHub maintains complete commit and merge history even after branch deletion, ensuring traceability and the ability to restore or revert changes when necessary.
+> [!NOTE] 
+> **Historical Preservation**: GitHub maintains complete commit and merge history even after branch deletion, ensuring traceability and the ability to restore or revert changes when necessary.
 
 ## GitHub Flow: Strategic Advantages for Enterprise Scale
 

@@ -61,7 +61,8 @@ Control repository history through selective merge type enablement:
 - **Emergency merge permissions**: Bypass policies for critical production fixes
 - **Administrative override**: Senior developer access for exceptional circumstances
 
-> [!IMPORTANT] > **Security Best Practice**: Limit bypass permissions to designated personnel who understand compliance implications and can exercise appropriate judgment during emergency situations.
+> [!IMPORTANT] 
+> **Security Best Practice**: Limit bypass permissions to designated personnel who understand compliance implications and can exercise appropriate judgment during emergency situations.
 
 ## GitHub: Advanced Branch Protection Rules
 
