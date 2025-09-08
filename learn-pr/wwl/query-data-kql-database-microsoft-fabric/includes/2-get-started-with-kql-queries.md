@@ -25,7 +25,7 @@ You can create **database shortcuts** to existing KQL databases in other eventho
 
 You can enable **OneLake availability** for individual KQL databases or tables, making your data accessible throughout the Fabric ecosystem for cross-workload integration with Power BI, Warehouse, Lakehouse, and other Fabric services.
 
-## Querying data in a KQL database
+## Query data in a KQL database
 
 To query data in a KQL database, you can use **Kusto Query Language (KQL)** or **T-SQL** in *KQL querysets*. When you create a KQL database, an attached KQL queryset is automatically created for running and saving queries.
 
@@ -64,7 +64,7 @@ TaxiTrips
 
 This returns the first 100 rows from the `TaxiTrips` table, which is useful for exploring data structure without processing the entire table.
 
-For more complex analysis, you can also aggregate data:
+You can also aggregate data:
 
 ```kql
 TaxiTrips
@@ -75,7 +75,7 @@ This returns a summary table showing the total number of trips (`trip_count`) fo
 
 ## Analyze data with KQL queryset
 
-KQL queryset provides a workspace for running and managing queries against KQL databases. The KQL queryset allows you to save queries for future use, organize multiple query tabs, and share queries with others for collaboration. The KQL queryset also supports T-SQL queries, allowing you to use familiar SQL syntax alongside KQL for data analysis.
+KQL queryset provides a workspace for running and managing queries against KQL databases. The KQL queryset allows you to save queries for future use, organize multiple query tabs, and share queries with others for collaboration. The KQL queryset also supports T-SQL queries, allowing you to use T-SQL syntax alongside KQL for data analysis.
 
 You can also create data visualizations while exploring your data, rendering query results as charts, tables, and other visual formats.
 
