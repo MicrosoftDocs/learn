@@ -57208,6 +57208,51 @@
       "source_path": "learn-pr/paths/dotnet-aspire-azure/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-azure-app-service-web-apps/",
       "redirect_document_id": false
+     },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/2-identify-incorrectly-assigned-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/3-exercise-identify-incorrectly-assigned-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/4-assess-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/5-validate-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/6-move-verify-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/7-exercise-move-verify-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
     }
   ]
 }

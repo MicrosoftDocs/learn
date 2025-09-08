@@ -6855,3 +6855,8 @@ achievements:
   title: Deploy a .NET Aspire solution to Azure
   summary: Learn how to deploy a .NET Aspire solution to container host services, such as Azure Container Apps (ACA) and Azure Kubernetes Services (AKS). Integrate .NET Aspire solution deployment with Continuous Integration/Continuous Deployment (CI/CD) pipelines.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.move-azure-resources-to-another-resource-group.badge
+  type: badge
+  title: Move Azure resources to another resource group
+  summary: Identify Azure resources that you can move to a different resource group. Use the Azure portal to move resources.
+  iconUrl: /training/achievements/move-azure-resources-another-resource-group.svg
