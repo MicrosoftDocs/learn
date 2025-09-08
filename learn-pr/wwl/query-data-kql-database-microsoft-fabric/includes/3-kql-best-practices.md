@@ -37,7 +37,7 @@ TaxiTrips
 
 ### Reduce columns early
 
-**Why this matters**: *Projecting* or selecting only the columns you need reduces resource usage. This is especially important when working with wide tables that have many columns.
+**Why this matters**: *Projecting* or selecting only the columns you need reduces resource usage. This is important when working with wide tables that have many columns.
 
 ```kql
 TaxiTrips
@@ -70,16 +70,5 @@ VendorInfo
 TaxiTrips         
 | join kind=inner VendorInfo on vendor_id
 ```
-
-## Query optimization checklist
-
-When writing KQL queries, use this checklist:
-
-1. **Filter by time range early** - Takes advantage of time-based indexing
-2. **Order filters by how much data they eliminate** - Most selective filters first  
-3. **Project only needed columns** - Reduces resource usage
-4. **Limit aggregation results when exploring** - Use `limit` to control output size
-5. **Put smaller tables first in joins** - Reduces resource requirements
-
 > [!TIP]
 > For more optimization techniques and detailed performance guidance, see [Best practices for Kusto Query Language queries](/kusto/query/best-practices).

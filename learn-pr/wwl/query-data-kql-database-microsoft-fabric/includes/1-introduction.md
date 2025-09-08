@@ -2,7 +2,7 @@ An eventhouse in Microsoft Fabric provides a data store for large volumes of dat
 
 You can load data into a KQL database in an eventhouse using an eventstream or you can directly ingest data into a KQL database. Once you have ingested data, you can then:
 
-- Query the data using Kusto Query Language (KQL) or T-SQL in a KQL Queryset.
+- Query the data using Kusto Query Language (KQL) or T-SQL in a KQL queryset.
 - Use Real-Time Dashboards to visualize the data.
 - Use Fabric Activator to automate actions based on the data.
 

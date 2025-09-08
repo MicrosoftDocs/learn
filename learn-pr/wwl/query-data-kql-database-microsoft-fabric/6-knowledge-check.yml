@@ -14,17 +14,17 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is an Eventhouse?"
+  - content: "What is an eventhouse?"
     choices:
     - content: "A table that tracks data load events in a data warehouse."
       isCorrect: false
-      explanation: "Incorrect. An Eventhouse isn't a table for tracking data warehouse load events."
+      explanation: "Incorrect. An eventhouse isn't a table for tracking data warehouse load events."
     - content: "A data store for real-time data in KQL databases."
       isCorrect: true
-      explanation: "Correct. An Eventhouse is a data store in Microsoft Fabric in which real-time data is stored in KQL databases."
+      explanation: "Correct. An eventhouse is a data store in Microsoft Fabric in which real-time data is stored in KQL databases."
     - content: "Another name for a lakehouse in Microsoft Fabric."
       isCorrect: false
-      explanation: "Incorrect. An Eventhouse isn't another name for a lakehouse in Microsoft Fabric."
+      explanation: "Incorrect. An eventhouse isn't another name for a lakehouse in Microsoft Fabric."
   - content: "What is the purpose of using the `project` operator in KQL (Kusto Query Language) queries?"
     choices:
     - content: "To apply aggregations such as `count`, `sum`, and `avg`."
