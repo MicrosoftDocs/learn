@@ -6855,3 +6855,8 @@ achievements:
   title: Deploy a .NET Aspire solution to Azure
   summary: Learn how to deploy a .NET Aspire solution to container host services, such as Azure Container Apps (ACA) and Azure Kubernetes Services (AKS). Integrate .NET Aspire solution deployment with Continuous Integration/Continuous Deployment (CI/CD) pipelines.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters.badge
+  type: badge
+  title: Select and customize architectures and hyperparameters using random forest
+  summary: Explore how altering the architecture of more complex models can bring about more effective results.
+  iconUrl: /training/achievements/machine-learning/machine-learning-architectures-and-hyperparameters.svg
