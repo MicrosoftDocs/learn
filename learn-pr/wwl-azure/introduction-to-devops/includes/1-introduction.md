@@ -121,7 +121,6 @@ Successful learners will have prior knowledge and understanding of the following
 If you're new to Azure and cloud computing, consider one of the following resources:
 
 - Free online: [Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/).
-- Instructor-led course: [AZ-900: Azure Fundamentals](/learn/certifications/courses/az-900t01).
 
 If you're new to Azure Administration, consider taking the:
 
