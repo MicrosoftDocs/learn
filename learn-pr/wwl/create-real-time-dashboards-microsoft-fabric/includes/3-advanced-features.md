@@ -2,7 +2,7 @@ Real-Time Dashboards include several features that help you organize and interac
 
 ## Pages
 
-By default, a real-time dashboard has one page. However, you can add more pages as containers for additional tiles. This helps you organize related content into logical groups. For example, you might create separate pages for different data sources, or subject areas.
+By default, a Real-Time Dashboard has one page. However, you can add more pages as containers for more tiles. This helps you organize related content into logical groups. For example, you might create separate pages for different data sources, or subject areas.
 
 ## Parameters
 
