@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/24/2024
-  author: wwlpublish
+  ms.date: 09/02/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   module_assessment: true
@@ -47,4 +47,4 @@ quiz:
       explanation: "Incorrect. Automated kanban with review is a supported template that cards automatically move between: To do, In progress, and Done columns, with extra triggers for pull request review status."
     - content: "Automated CMMI."
       isCorrect: true
-      explanation: "Correct. CMMI isn't a valid Project Boards template. The templates that can be automated and already configured are: Basic kanban, Automated kanban, Automated kanban with review, and Bug triage."
+      explanation: "Correct. CMMI isn't a valid Project Boards template. The templates that can be automated and already configured are: Basic kanban, Automated kanban, Automated kanban with review, and Bug triage."
