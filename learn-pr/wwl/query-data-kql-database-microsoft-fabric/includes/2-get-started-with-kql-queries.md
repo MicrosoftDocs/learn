@@ -2,7 +2,7 @@ When you create an eventhouse, a default KQL database is automatically created w
 
 :::image type="content" source="../media/eventhouse.png" alt-text="Screenshot of an eventhouse in Microsoft Fabric." lightbox="../media/eventhouse.png":::
 
-## Working with data in your eventhouse
+## Work with data in your eventhouse
 
 There are several ways to access and work with data in a KQL database within an eventhouse:
 
@@ -72,9 +72,6 @@ TaxiTrips
 ```
 
 This returns a summary table showing the total number of trips (`trip_count`) for each unique `taxi_id`, effectively counting how many trips each taxi has made.
-
-> [!TIP]
-> For comprehensive KQL learning resources, syntax reference, and advanced query techniques, see the [Kusto Query Language (KQL) overview](/kusto/query/?view=microsoft-fabric&azure-portal=true)
 
 ## Analyze data with KQL queryset
 
