@@ -57208,6 +57208,51 @@
       "source_path": "learn-pr/paths/dotnet-aspire-azure/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-azure-app-service-web-apps/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/2-what-is-minimal-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/3-exercise-create-minimal-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/4-advanced-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/5-exercise-advanced-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/aspnet-core-minimal-api/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
     }
   ]
 }
