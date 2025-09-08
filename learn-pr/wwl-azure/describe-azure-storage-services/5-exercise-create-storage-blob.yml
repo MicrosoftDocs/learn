@@ -10,7 +10,6 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
-azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-create-storage-blob.md)]

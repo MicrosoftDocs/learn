@@ -31,6 +31,5 @@ modules:
 - learn.azure.secure-azure-arc-enabled-servers
 - learn.azure.monitor-azure-arc-enabled-servers
 - learn.azure.govern-azure-arc-enabled-servers
-- learn.azure.intro-to-arc-enabled-kubernetes
 trophy:
   uid: learn.manage-hybrid-infrastructure-with-azure-arc.trophy
