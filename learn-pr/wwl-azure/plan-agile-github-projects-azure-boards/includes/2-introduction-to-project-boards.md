@@ -91,6 +91,5 @@ For more information about GitHub Projects, see:
 
 - [About projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects).
 - [Creating a project](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/creating-a-project).
-- [Managing iterations in projects](https://docs.github.com/issues/planning-and-tracking-with-projects/managing-iterations-in-projects).
 - [Customizing your project views](https://docs.github.com/issues/planning-and-tracking-with-projects/customizing-views-in-your-project).
 - [Automating your project](https://docs.github.com/issues/planning-and-tracking-with-projects/automating-your-project).

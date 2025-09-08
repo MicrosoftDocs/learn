@@ -156,5 +156,5 @@ Break Duration Guidelines:
 
 For more information about iterations, see:
 
-- [Managing iterations in projects (beta) - GitHub Docs](https://docs.github.com/issues/trying-out-the-new-projects-experience/managing-iterations).
-- [Best practices for managing projects (beta) - GitHub Docs](https://docs.github.com/issues/trying-out-the-new-projects-experience/best-practices-for-managing-projects).
+- [Managing iterations in projects - GitHub Docs](https://docs.github.com/issues/trying-out-the-new-projects-experience/managing-iterations).
+- [Best practices for managing projects - GitHub Docs](https://docs.github.com/issues/trying-out-the-new-projects-experience/best-practices-for-managing-projects).

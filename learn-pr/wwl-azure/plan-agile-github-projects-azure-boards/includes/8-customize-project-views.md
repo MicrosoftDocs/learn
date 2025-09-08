@@ -167,7 +167,7 @@ Examples:
 - **Training and adoption**: Provide guidance on optimal view usage for different roles
 - **Integration alignment**: Ensure views support broader project management workflows
 
-For more information about projects (beta), see:
+For more information about projects, see:
 
-- [About projects (beta)](https://docs.github.com/issues/trying-out-the-new-projects-experience/about-projects).
-- [Creating a project (beta)](https://docs.github.com/issues/trying-out-the-new-projects-experience/creating-a-project).
+- [About projects](https://docs.github.com/issues/trying-out-the-new-projects-experience/about-projects).
+- [Creating a project](https://docs.github.com/issues/trying-out-the-new-projects-experience/creating-a-project).
