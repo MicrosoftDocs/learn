@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-unified-catalog-understand
 metadata:
-  title: Understand how Microsoft Purview Unified Catalog unifies your data estate
+  title: Understand how Microsoft Purview Unified Catalog Unifies your Data Estate
   description: Understand how Microsoft Purview Unified Catalog unifies your data estate
   ms.date: 08/29/2025
   author: wwlpublish
@@ -11,13 +11,15 @@ metadata:
   ms.service: purview
 title: Understand how Microsoft Purview Unified Catalog unifies your data estate
 summary: |
-  Microsoft Purview retention helps organizations manage how long data is kept and when it can be deleted. Learn how to apply retention strategically to meet compliance requirements, reduce risk, and protect important information throughout its lifecycle.
+  Microsoft Purview Unified Catalog helps organizations overcome fragmented data estates by centralizing assets, adding business context, and applying consistent governance. Learn how unification supports trusted reporting, collaboration across roles, and confident decision-making at scale.
 abstract: |
   In this unit you learn how to:
-  - Identify common use cases for applying retention
-  - Explain how retention supports data protection alongside tools like data loss prevention
-  - Apply retention settings to specific users, sites, or content types
-  - Recognize what retention does and doesn't control
+  - Explain the challenges of fragmented data and how Unified Catalog solves them
+  - Identify the key elements of the Unified Catalog and their purpose
+  - Describe the roles and personas involved in data governance
+  - Apply responsible AI practices when using catalog features
+  - Compare the classic catalog with the Unified Catalog experience
+  - Summarize the benefits of unifying a data estate
 prerequisites: |
   None
 iconUrl: /training/achievements/generic-badge.svg
@@ -30,8 +32,7 @@ products:
 - microsoft-purview
 subjects:
 - data-management
-- data-engineering
-- security
+- compliance
 units:
 - learn.wwl.purview-unified-catalog-understand.introduction
 - learn.wwl.purview-unified-catalog-understand.fragmented-data-challenge
