@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-devops.design-license-management-strategy
-title: Design a license management strategy
+title: Design a License Management Strategy
 metadata:
-  title: Design a license management strategy
-  description: "Design a license management strategy"
-  ms.date: 05/29/2024
-  author: wwlpublish
+  title: Design a License Management Strategy
+  description: "Plan and implement licensing strategies for DevOps tools and platforms."
+  ms.date: 09/02/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/9-design-license-management-strategy.md)]
+  [!include[](includes/9-design-license-management-strategy.md)]

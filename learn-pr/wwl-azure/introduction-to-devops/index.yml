@@ -2,65 +2,68 @@
 uid: learn.wwl.introduction-to-devops
 metadata:
   title: Introduction to DevOps
-  description: "Introduction to DevOps"
-  ms.date: 05/29/2024
-  author: wwlpublish
+  description: "This foundational module provides a comprehensive overview of DevOps principles, practices, and transformation strategies. It covers what DevOps is, how organizations can begin their DevOps journey, and introduces key tools like Azure DevOps and GitHub."
+  ms.date: 09/02/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.service: azure
   ai-usage: human-only
 title: Introduction to DevOps
-summary: This module explores the key areas that organizations must apply to start their DevOps transformation Journey, change the team's mindset, and define timelines and goals.
+summary: This module explores the fundamental concepts organizations need to understand to start their DevOps transformation journey. Students learn to define DevOps as the union of people, process, and products for continuous value delivery. The content covers identifying transformation teams, establishing shared goals and timelines, understanding cycle time optimization, and implementing validated learning approaches. Key topics include Azure DevOps and GitHub platform introductions, source control fundamentals with Git, and practical strategies for organizational change management. The module emphasizes data-informed decision making, shortened cycle times, and continuous improvement practices that form the foundation of successful DevOps adoption.
 abstract: |
   By the end of this module, you'll be able to:
-
-  -   Understand what DevOps is and the steps to accomplish it
-
-  -   Identify teams to implement the process
-
-  -   Plan for the transformation with shared goals and timelines
-
-  -   Plan and define timelines for goals
+  - DevOps definition and core principles
+  - Organizational transformation planning
+  - Team structure and agile practices
+  - Azure DevOps and GitHub platform overview
+  - Source control and Git fundamentals
+  - License management strategies
+  - Cycle time optimization and validated learning
 prerequisites: None
 iconUrl: /training/achievements/1-introduction-to-devops.svg
 levels:
-- advanced
+  - beginner
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 subjects:
-- devops
+  - devops
 units:
-- learn.wwl.introduction-to-devops.introduction
-- learn.wwl.introduction-to-devops.what-is-devops
-- learn.wwl.introduction-to-devops.explore-devops-journey
-- learn.wwl.introduction-to-devops.identify-transformation-teams
-- learn.wwl.introduction-to-devops.define-organization-structure-agile-practices
-- learn.wwl.introduction-to-devops.explore-shared-goals-define-timelines
-- learn.wwl.introduction-to-devops.what-is-azure-devops
-- learn.wwl.introduction-to-devops.what-is-github
-- learn.wwl.introduction-to-devops.design-license-management-strategy
-- learn.wwl.introduction-to-devops.what-source-control
-- learn.wwl.introduction-to-devops.describe-working-git-locally
-- learn.wwl.introduction-to-devops.introduction-azure-repos
-- learn.wwl.introduction-to-devops.introduction-to-github
-- learn.wwl.introduction-to-devops.knowledge-check
-- learn.wwl.introduction-to-devops.summary
+  - learn.wwl.introduction-to-devops.introduction
+  - learn.wwl.introduction-to-devops.what-is-devops
+  - learn.wwl.introduction-to-devops.explore-devops-journey
+  - learn.wwl.introduction-to-devops.identify-transformation-teams
+  - learn.wwl.introduction-to-devops.define-organization-structure-agile-practices
+  - learn.wwl.introduction-to-devops.explore-shared-goals-define-timelines
+  - learn.wwl.introduction-to-devops.what-is-azure-devops
+  - learn.wwl.introduction-to-devops.what-is-github
+  - learn.wwl.introduction-to-devops.design-license-management-strategy
+  - learn.wwl.introduction-to-devops.what-source-control
+  - learn.wwl.introduction-to-devops.describe-working-git-locally
+  - learn.wwl.introduction-to-devops.introduction-azure-repos
+  - learn.wwl.introduction-to-devops.introduction-to-github
+  - learn.wwl.introduction-to-devops.knowledge-check
+  - learn.wwl.introduction-to-devops.summary
 badge:
-  uid: learn.wwl.introduction-to-devops.badge
+  uid: learn.wwl.introduction-to-devops.badge

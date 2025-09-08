@@ -1,27 +1,97 @@
-For most organizations, reorganizing to be agile is difficult. It requires a mind-shift and a culture-shift that challenges many existing policies and processes within the organization.
+For most organizations, reorganizing to be agile is challenging. It requires a fundamental mindset shift and cultural transformation that challenges many existing policies, processes, and power structures within the organization.
 
-Good governance in organizations, particularly in large organizations, often leads to many relatively rigid rules, operating structures, and methods. It also tends to avoid a broad delegation of authority.
+## The organizational transformation challenge
 
-While most large organizations haven't moved to an agile structure, most are now experimenting with doing so.
+Good governance in organizations, particularly large enterprises, often leads to:
 
-Their business environments are volatile and complex, and they have seen the limitations of their current systems, mainly an inability to cope with change quickly.
+- **Rigid hierarchical structures** that slow decision-making
+- **Process-heavy workflows** that prioritize compliance over speed
+- **Risk-averse cultures** that discourage experimentation
+- **Siloed departments** that optimize locally rather than globally
 
-They realize that it's common today for long-term established businesses and their industries to be disrupted by startups.
+While most large organizations haven't fully moved to agile structures, most are experimenting with hybrid approaches because:
 
-## Horizontal vs. vertical teams
+- **Business environments are increasingly volatile** and complex
+- **Traditional systems struggle** with rapid change requirements
+- **Startups regularly disrupt** established industries with agile approaches
+- **Customer expectations** demand faster innovation and response
 
-Traditionally, horizontal team structures divide teams according to the software architecture. In this example, the teams have been divided into the user interface, service-oriented architecture, and data teams:
+## Cultural transformation strategies
 
-:::image type="content" source="../media/devops-ds-image-101-cd10ac81-579ed473-4116f357.png" alt-text="Diagram of Teams has been divided into UI, SOA, and Data. Each team has Email, Voice, and TV.":::
+### From hierarchy to network
 
+**Traditional approach**: Top-down decision making with multiple approval layers
+**Agile approach**: Distributed decision making with clear accountability
 
-By comparison, vertical team structures span the architecture and are aligned with skillsets or disciplines:
+**Implementation steps:**
 
-:::image type="content" source="../media/devops-ds-image-103-b26487ac-24ceba66-43ffd70d.png" alt-text="Diagram of Teams has been divided into Email, Voice, and TV. Each team has UI, SOA, and Data.":::
+1. **Identify decision points** that can be pushed down to teams
+2. **Establish clear boundaries** for autonomous decision making
+3. **Create escalation paths** for decisions outside team authority
+4. **Train managers** to become coaches rather than controllers
 
+### From process to outcomes
 
-Vertical teams have been shown to provide more good outcomes in Agile projects. Each product must have an identified owner.
+**Traditional approach**: Following defined processes regardless of results
+**Agile approach**: Optimizing for outcomes while adapting processes
 
-Another key benefit of the vertical team structure is that scaling can occur by adding teams. In this example, feature teams have been created rather than just project teams:
+**Key changes:**
 
-:::image type="content" source="../media/devops-ds-image-102-2a966b63-ba75b645-2d2f4153.png" alt-text="Diagram of Vertical teams have been added for Customer Profile, Shopping Cart, Service Status, and Internet. Each team has UI, SOA, and Data.":::
+- Focus on business value delivery over task completion
+- Measure success by customer satisfaction and business metrics
+- Empower teams to modify processes that aren't working
+- Regular retrospectives to identify and implement improvements
+
+## Team structure models: Horizontal vs. Vertical
+
+### Horizontal teams (Traditional)
+
+Horizontal team structures divide teams according to technical layers or software architecture components. Teams are organized by technical specialty rather than business capability.
+
+**Example structure:**
+
+- **UI Team**: Frontend developers, UX designers
+- **Service Team**: Backend developers, API specialists
+- **Data Team**: Database administrators, data engineers
+
+**Challenges with horizontal teams:**
+
+- **Communication overhead**: Features require coordination across multiple teams
+- **Blame shifting**: Problems often fall "between" teams
+- **Slow delivery**: Dependencies create bottlenecks and delays
+- **Limited business context**: Teams focus on technical concerns over user value
+
+:::image type="content" source="../media/devops-ds-image-101-cd10ac81-579ed473-4116f357.png" alt-text="Diagram showing horizontal team organization where teams are divided by technical layers (UI, SOA, Data) with each team working on different products (Email, Voice, TV) creating cross-dependencies.":::
+
+### Vertical teams (Recommended)
+
+Vertical team structures span the entire technology stack and are aligned with business capabilities or customer value streams.
+
+**Example structure:**
+
+- **Email Team**: Full-stack developers, UX designer, data specialist
+- **Voice Team**: Full-stack developers, UX designer, infrastructure specialist
+- **TV Team**: Full-stack developers, UX designer, platform engineer
+
+**Benefits of vertical teams:**
+
+- **End-to-end ownership**: Teams can deliver complete features independently
+- **Faster delivery**: Reduced dependencies and handoffs
+- **Better accountability**: Clear ownership from idea to production
+- **Customer focus**: Teams understand business context and user needs
+- **Improved quality**: Teams are responsible for the entire user experience
+
+:::image type="content" source="../media/devops-ds-image-103-b26487ac-24ceba66-43ffd70d.png" alt-text="Diagram showing vertical team organization where teams are divided by business capability (Email, Voice, TV) with each team having all necessary technical skills (UI, SOA, Data) for complete ownership.":::
+
+### Scaling vertical teams
+
+Vertical teams scale more effectively because you can add entire teams rather than trying to coordinate across multiple horizontal teams. Instead of project teams, create feature teams with long-term ownership.
+
+**Scaling principles:**
+
+- **Team size**: Keep teams small (5-9 people) for effective communication
+- **Conway's Law**: Your software architecture will mirror your team structure
+- **Minimize handoffs**: Each team should be able to deliver independently
+- **Shared services**: Create platform teams to support feature teams with common needs
+
+:::image type="content" source="../media/devops-ds-image-102-2a966b63-ba75b645-2d2f4153.png" alt-text="Diagram showing scaled vertical teams with additional feature teams for Customer Profile, Shopping Cart, Service Status, and Internet, each with complete technical capability across UI, SOA, and Data layers.":::
