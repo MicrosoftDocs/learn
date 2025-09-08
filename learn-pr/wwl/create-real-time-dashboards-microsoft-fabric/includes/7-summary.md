@@ -1,5 +1,10 @@
-In this module, you learned about real-time dashboards in Microsoft Fabric. Together with other Real-Time Intelligence capabilities in Microsoft Fabric, real-time dashboards enable you to provide users with data visualizations that can help them gain insights and make time-sensitive decisions based on events as they happen.
+In this module, you learned how to create real-time dashboards in Microsoft Fabric and connect them to data sources. You also learned to add and configure tiles to visualize real-time data using KQL queries and organize dashboard content using multiple pages for logical grouping. 
 
-> [!TIP]
-> For more information about real-time dashboards, see **[Create a Real-Time Dashboard](/fabric/real-time-intelligence/dashboard-real-time-create)**.
+You also discovered how to add interactive parameters to dynamically filter dashboard data and configure auto refresh to keep data current automatically. Finally, you learned to use base queries to improve maintainability when multiple tiles share related data. Real-time dashboards are a key component of Microsoft Fabric's Real-Time Intelligence capabilities, enabling you to provide users with current data visualizations that support time-sensitive decision making as events happen.
+
+## Learn more
+
+- [Create a Real-Time Dashboard](/fabric/real-time-intelligence/dashboard-real-time-create?azure-portal=true)
+- [Real-time dashboards in Microsoft Fabric](/fabric/real-time-intelligence/dashboard-real-time-introduction?azure-portal=true)
+- [Add parameters to a Real-Time Dashboard](/fabric/real-time-intelligence/dashboard-real-time-create-parameters?azure-portal=true)
 
