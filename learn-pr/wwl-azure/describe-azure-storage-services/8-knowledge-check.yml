@@ -2,9 +2,11 @@
 uid: learn.wwl.describe-azure-storage-services.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/03/2025
+  ms.date: 09/09/2025
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
