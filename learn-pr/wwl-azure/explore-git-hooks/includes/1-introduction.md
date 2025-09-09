@@ -1,16 +1,16 @@
-Software development teams need to deliver code changes quickly and safely. This requires automation that works throughout the development process. Git hooks are a powerful tool that can help teams automatically check code quality, find security problems, and follow coding rules. Many teams don't use Git hooks enough, but they can make development much better.
+Software development teams need to deliver code changes quickly and safely. This requires automation that works throughout the development process. Git hooks are a powerful tool that can help teams automatically check code quality, find security problems, and follow coding rules. Many teams don't use Git hooks enough, but they can make development better.
 
 ## Why Git hooks are important
 
 Software development has many challenges. Teams must deal with security threats, follow company rules, maintain code quality, and deploy code quickly. Git hooks help solve these problems by adding automatic checks right where developers work - when they save changes to the code.
 
-**Automatic quality checks**: Git hooks can check code quality automatically. Instead of finding problems later in the process, hooks catch issues early when they are easier and cheaper to fix.
+**Automatic quality checks**: Git hooks can check code quality automatically. Instead of finding problems later in the process, hooks catch issues early when they're easier and cheaper to fix.
 
 **Security protection**: With more security threats every day, Git hooks act as the first line of defense. They can automatically prevent passwords, API keys, and other secrets from being saved in the code. They can also check for security problems.
 
 **Following company rules**: For companies that must follow strict rules (like banks or healthcare), Git hooks can automatically check that every code change meets company standards and legal requirements.
 
-**Faster development**: Good Git hooks create a system where problems are found immediately. This gives developers quick feedback, reduces waiting time, and makes the whole development process faster.
+**Faster development**: Good Git hooks create a system where problems are found immediately. It gives developers quick feedback, reduces waiting time, and makes the whole development process faster.
 
 ## How Git hooks work
 
@@ -30,7 +30,7 @@ Git hooks work at different levels in the development process, and each level ha
 
 ## Learning objectives
 
-After completing this module, you will know how to:
+After completing this module, you'll know how to:
 
 - **Plan Git hook strategy**: Design complete Git hooks plans that help large development teams while keeping developers productive and workflows efficient.
 - **Build advanced automation**: Create pre-commit, post-commit, and push hooks that automatically check quality, scan for security issues, and validate company rules.

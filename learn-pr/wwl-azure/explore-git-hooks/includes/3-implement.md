@@ -1,4 +1,4 @@
-This guide shows you how to create, deploy, and manage Git hooks for development teams. You'll learn modern cross-platform techniques, security-focused implementations, and strategies for scaling hooks across large development teams.
+This guide shows you how to create, deploy, and manage Git hooks for development teams. Learn modern cross-platform techniques, security-focused implementations, and strategies for scaling hooks across large development teams.
 
 ## Modern Git hooks setup
 
@@ -345,7 +345,7 @@ validate_commit_message "$@" || exit 1
 
 ### Server-side hook integration
 
-Leverage Azure DevOps service hooks for server-side automation:
+Use Azure DevOps service hooks for server-side automation:
 
 ```bash
 #!/usr/bin/env bash

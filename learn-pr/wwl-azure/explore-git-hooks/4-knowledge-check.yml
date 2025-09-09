@@ -24,10 +24,10 @@ quiz:
           explanation: "Incorrect. Using different scripts for each platform creates maintenance overhead and inconsistency. The `#!/usr/bin/env bash` shebang automatically finds the bash interpreter on any platform."
         - content: "Use `#!/usr/bin/env bash` at the start of hook scripts."
           isCorrect: true
-          explanation: "Correct. The `#!/usr/bin/env bash` shebang automatically finds the bash interpreter on any platform, so you don't need different paths for different operating systems. This ensures the hooks work the same way everywhere."
+          explanation: "Correct. The `#!/usr/bin/env bash` shebang automatically finds the bash interpreter on any platform, so you don't need different paths for different operating systems. It ensures the hooks work the same way everywhere."
         - content: "Make all developers use the same operating system."
           isCorrect: false
-          explanation: "Incorrect. Forcing all developers to use the same operating system is not practical in modern development teams. Cross-platform compatibility is the better approach."
+          explanation: "Incorrect. Forcing all developers to use the same operating system isn't practical in modern development teams. Cross-platform compatibility is the better approach."
     - content: "When creating pre-commit hooks to find passwords and secrets in code, which approach provides the best security coverage?"
       choices:
         - content: "Only check for the word 'password' in files."
@@ -39,11 +39,11 @@ quiz:
         - content: "Only use manual code review to find credentials."
           isCorrect: false
           explanation: "Incorrect. Manual review alone is error-prone and doesn't scale well. Automated detection should be the first line of defense, with manual review as a backup."
-    - content: "Your organization wants to make sure all commit messages follow the same standards across all development teams. Which Git hook is best for this?"
+    - content: "Your organization wants to make sure all commit messages follow the same standards across all development teams. Which Git hook is best for it?"
       choices:
         - content: "pre-commit"
           isCorrect: false
-          explanation: "Incorrect. The pre-commit hook runs before the commit message is created, so it cannot validate the commit message content."
+          explanation: "Incorrect. The pre-commit hook runs before the commit message is created, so it can't validate the commit message content."
         - content: "commit-msg"
           isCorrect: true
           explanation: "Correct. The commit-msg hook is designed specifically to check and enforce commit message standards. It runs after the commit message is created but before the commit is completed."
