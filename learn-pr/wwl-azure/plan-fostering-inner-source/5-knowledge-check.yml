@@ -36,7 +36,7 @@ quiz:
         - content: "Create a fork. Clone it locally. Make changes. Push to a branch. Create a pull request. Sync your fork"
           isCorrect: true
           explanation: "Yes! This is the complete fork workflow that keeps your copy updated."
-        - content: "1. Create a fork. Clone it locally. Make changes. Create a pull request. Push changes"
+        - content: "Create a fork. Clone it locally. Make changes. Create a pull request. Push changes"
           isCorrect: false
           explanation: "The steps are in the wrong order. You must push changes before creating a pull request."
     - content: "When should you use a single repository instead of forks?"
