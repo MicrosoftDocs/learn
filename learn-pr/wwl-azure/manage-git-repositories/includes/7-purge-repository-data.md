@@ -2,7 +2,7 @@ One of Git's benefits is its ability to efficiently store long histories for rep
 
 The most common situations are when you want to:
 
-- Make a repository much smaller by removing history
+- Make a repository smaller by removing history
 - Remove a large file that was accidentally uploaded
 - Remove a sensitive file that shouldn't have been uploaded
 

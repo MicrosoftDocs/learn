@@ -27,26 +27,26 @@ quiz:
           explanation: "Yes! Git LFS (Large File Storage) helps you work with large files that change frequently."
         - content: "Regular Git"
           isCorrect: false
-          explanation: "Regular Git can handle large files, but Git LFS is specifically designed for this purpose."
+          explanation: "Regular Git can handle large files, but Git LFS is designed for this purpose."
     - content: "When would you NOT need to clean up data from repositories?"
       choices:
-        - content: "When you need to make a repository much smaller by removing history"
+        - content: "When you need to make a repository smaller by removing history."
           isCorrect: false
-          explanation: "This is a common reason to clean up repository data."
-        - content: "When you need to remove a sensitive file that was accidentally uploaded"
+          explanation: "It's a common reason to clean up repository data."
+        - content: "When you need to remove a sensitive file that was accidentally uploaded."
           isCorrect: false
-          explanation: "This is a common reason to clean up repository data."
-        - content: "When you need to hide code and history without removing permissions"
+          explanation: "It's a common reason to clean up repository data."
+        - content: "When you need to hide code and history without removing permissions."
           isCorrect: true
           explanation: "Yes! You don't need to purge data to hide code. You can use permissions and access controls instead."
     - content: "What is the built-in Git command for removing files from repository history?"
       choices:
         - content: "git remove-branch command"
           isCorrect: false
-          explanation: "This is not a real Git command. The correct command is git filter-branch."
+          explanation: "Not a real Git command. The correct command is git filter-branch."
         - content: "git filter-branch command"
           isCorrect: true
           explanation: "Yes! The git filter-branch command can rewrite repository history to remove files."
         - content: "git purge-branch command"
           isCorrect: false
-          explanation: "This is not a real Git command. The correct command is git filter-branch."
+          explanation: "Not a real Git command. The correct command is git filter-branch."

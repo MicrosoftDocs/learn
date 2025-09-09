@@ -23,7 +23,7 @@ With a monorepo, managing complex dependency relationships can be harder, but th
 
 In a monorepo, you avoid the hassle of making changes in other repositories or waiting for other teams to make changes for you. Anyone can change anything they need.
 
-If you find a bug in a library, fixing it is as easy as fixing a bug in your own code.
+If you find a bug in a library, fixing it's as easy as fixing a bug in your own code.
 
 > [!NOTE]
 > In Azure DevOps, it's common to use a separate repository for each solution within a project.

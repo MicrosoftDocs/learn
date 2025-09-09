@@ -14,17 +14,17 @@ metadata:
 title: Manage and Configure Repositories
 summary: Learn how to work with large code repositories, clean up repository data, and manage releases using GitHub.
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you'll be able to:
 
-  -   Work with large Git repositories
+  -   Work with large Git repositories.
 
-  -   Use VFS for Git to improve performance
+  -   Use VFS for Git to improve performance.
 
-  -   Use Git Large File Storage (LFS) for big files
+  -   Use Git Large File Storage (LFS) for big files.
 
-  -   Clean up repository data
+  -   Clean up repository data.
 
-  -   Manage and automate release notes with GitHub
+  -   Manage and automate release notes with GitHub.
 prerequisites: None
 iconUrl: /training/achievements/6-manage-git-repositories.svg
 levels:

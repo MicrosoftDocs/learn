@@ -4,13 +4,13 @@ As software projects get bigger and more complex, normal Git workflows can run i
 
 Scalar is a Git virtual file system extension created by Microsoft. It makes large repositories work faster by speeding up cloning and checkout operations. It does this using caching and background maintenance.
 
-When you use Scalar to clone a Git repository, it saves the repository's metadata locally on your computer. This metadata includes information about branches, tags, and commit history. By saving this data, Scalar makes cloning much faster. Later Git operations can use this saved data, making them faster too.
+When you use Scalar to clone a Git repository, it saves the repository's metadata locally on your computer. This metadata includes information about branches, tags, and commit history. By saving this data, Scalar makes cloning faster. Later Git operations can use this saved data, making them faster too.
 
-Scalar also uses background maintenance to keep the saved metadata current. This means Scalar regularly checks for changes to the repository and updates the saved metadata. By doing this, Scalar makes sure the saved data is always accurate and current, which helps performance even more.
+Scalar also uses background maintenance to keep the saved metadata current. This means Scalar regularly checks for changes to the repository and updates the saved metadata. By doing it, Scalar makes sure the saved data is always accurate and current, which helps performance even more.
 
 ## Cross-repository sharing
 
-Cross-repository sharing means sharing code, dependencies, and resources across multiple Git repositories in your organization. This helps teams reuse code, collaborate better, and maintain their projects by using shared components and libraries across different projects.
+Cross-repository sharing means sharing code, dependencies, and resources across multiple Git repositories in your organization. It helps teams reuse code, collaborate better, and maintain their projects by using shared components and libraries across different projects.
 
 ## Scaling and optimizing Git repositories
 

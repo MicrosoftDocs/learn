@@ -1,8 +1,8 @@
-In this module, you'll learn how to manage code repositories effectively. You'll discover tools and techniques for working with large repositories and keeping your code organized.
+In this module, learn how to manage code repositories effectively. Discover tools and techniques for working with large repositories and keeping your code organized.
 
-## What you'll learn
+## Learning Objectives
 
-After completing this module, you will be able to:
+After completing this module, you'll be able to:
 
 - Work with large Git repositories
 - Use Git Virtual File System (GVFS) to improve performance
@@ -18,4 +18,4 @@ Before starting this module, it helps if you have:
 - Some experience with version control (helpful but not required)
 - Experience working in a team that creates software
 
-This module will help you manage repositories more efficiently, whether you work with small teams or large organizations.
+This module helps you manage repositories more efficiently, whether you work with small teams or large organizations.
