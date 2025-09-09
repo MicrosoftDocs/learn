@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-git-hooks.implement
-title: Implement Git hooks
+title: Implement git hooks
 metadata:
-  title: Implement Git hooks
-  description: "Implement Git hooks"
-  ms.date: 09/02/2025
+  title: Implement git hooks
+  description: "Implement git hooks"
+  ms.date: 09/09/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

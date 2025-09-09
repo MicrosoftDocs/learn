@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-git-hooks
 metadata:
-  title: Explore Git hooks
+  title: Explore git hooks
   description: "Learn how to create Git hooks that automatically check code quality, scan for security issues, and help teams follow coding rules."
-  ms.date: 09/02/2025
+  ms.date: 09/09/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module
@@ -52,6 +52,8 @@ products:
   - azure-repos
   - azure-test-plans
   - github
+subjects:
+  - devops
 units:
   - learn.wwl.explore-git-hooks.introduction
   - learn.wwl.explore-git-hooks.introduction-to
