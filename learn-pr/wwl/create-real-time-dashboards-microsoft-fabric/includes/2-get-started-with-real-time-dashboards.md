@@ -1,4 +1,4 @@
-Real-Time Dashboards in Microsoft Fabric are built on real-time streaming data sources, including tables in a KQL database, Azure Data Explorer clusters, and Azure Monitor services. Each dashboard consists of one or more *tiles*, each displaying a real-time data visualization.
+Real-Time Dashboards in Microsoft Fabric are built on real-time streaming data sources. Each dashboard consists of one or more *tiles*, each displaying a real-time data visualization.
 
 :::image type="content" source="../media/dashboard.png" alt-text="Screenshot of a Real-Time Dashboard." lightbox="../media/dashboard.png":::
 
