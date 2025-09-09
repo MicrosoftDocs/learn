@@ -77,7 +77,8 @@ Congratulations - you've completed this exercise. You created a storage account,
 ## Clean up
 
 To clean up the assets created in this exercise and avoid unnecessary costs, delete the resource group (and all associated resources).
-1. From the Azure home page, under Azure servces, select **Resource groups**.
+1. From the Azure home page, under Azure services, select **Resource groups**.
 1. Select the **IntroAzureRG** resource group.
 1. Select **Delete resource group**.
 1. Enter `IntroAzureRG` to confirm deletion of the resource group and select delete.
+
