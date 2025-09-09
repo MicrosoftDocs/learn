@@ -4,8 +4,8 @@ metadata:
   title: Workloads supported for protection with Azure Site Recovery
   description: Explore the application-level protection you can take advantage of to protect your company's different workloads.
   ms.date: 05/23/2025
-  author: jsuri
-  ms.author: jsuri
+  author: Rob-Barefoot
+  ms.author: robbarefoot
   ms.topic: unit
 title: Workloads supported for protection with Azure Site Recovery
 durationInMinutes: 6
