@@ -16,7 +16,7 @@ CosmosClient client = new CosmosClient(endpoint, key);
 
 ## Database examples
 
-### Create a databasep
+### Create a database
 
 The `CosmosClient.CreateDatabaseAsync` method throws an exception if a database with the same name already exists.
 
