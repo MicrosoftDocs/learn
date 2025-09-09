@@ -6855,3 +6855,8 @@ achievements:
   title: Deploy a .NET Aspire solution to Azure
   summary: Learn how to deploy a .NET Aspire solution to container host services, such as Azure Container Apps (ACA) and Azure Kubernetes Services (AKS). Integrate .NET Aspire solution deployment with Continuous Integration/Continuous Deployment (CI/CD) pipelines.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.cloud-scale-messaging-jms-service-bus.badge
+  type: badge
+  title: Enable asynchronous messaging in Java apps by using JMS and Azure Service Bus
+  summary: Send messages to and receive messages from Azure Service Bus with Spring Boot applications.
+  iconUrl: /training/achievements/cloud-scale-messaging-jms-service-bus.svg
