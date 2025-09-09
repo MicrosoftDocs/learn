@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-unified-catalog-understand
 metadata:
-  title: Understand how Microsoft Purview Unified Catalog Unifies your Data Estate
-  description: Understand how Microsoft Purview Unified Catalog unifies your data estate
-  ms.date: 08/29/2025
+  title: Understand How Microsoft Purview Unified Catalog Unifies Your Data Estate
+  description: Learn how Microsoft Purview Unified Catalog helps organizations overcome fragmented data estates by centralizing assets, adding business context, and applying consistent governance so teams can trust and use data with confidence.
+  ms.date: 09/09/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
