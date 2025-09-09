@@ -1,24 +1,30 @@
-In this exercise, you create an Azure virtual machine (VM) and install Nginx, a popular web server.
+In this exercise, you create an Azure virtual machine (VM) and install a web server (Nginx).
 
-You could use the Azure portal, the Azure CLI, Azure PowerShell, or an Azure Resource Manager (ARM) template.
+You could use the Azure portal, the Azure CLI, or an Azure Resource Manager (ARM) template.
 
 In this instance, you're going to use the Azure CLI.
 
 >[!IMPORTANT]
 >This exercise creates a VM that is used in a later exercise within this module. To avoid leaving a VM running for an extended period of time, it's recommended that you complete the full module in one sitting.
 
-## Task 1: Create a Linux virtual machine and install Nginx
-
+## Task 1: Create a resource group
 1. Log into the [Azure portal](https://portal.azure.com/?azure-portal=true).
 1. Select the Azure Cloud Shell icon to bring up Cloud Shell.
-1. Use the following Azure CLI commands to create a Linux VM and install Nginx. After your VM is created, you'll use the Custom Script Extension to install Nginx. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system after your VM is up and running.
+1. From the Azure CLI, create a resource group named **IntroAzureRG**.
+    ```azurecli
+    az group create --name IntroAzureRG --location eastus
+    ```
+
+## Task 2: Create a Linux virtual machine
+1. Use the following Azure CLI command to create a Linux VM.
 
 1.  From Cloud Shell, run the following `az vm create` command to create a Linux VM:
     
     ```azurecli
     az vm create \
-      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+      --resource-group "IntroAzureRG" \
       --name my-vm \
+      --size Standard_D2s_v5 \
       --public-ip-sku Standard \
       --image Ubuntu2204 \
       --admin-username azureuser \
@@ -26,11 +32,15 @@ In this instance, you're going to use the Azure CLI.
     ```
     
     Your VM takes a few moments to come up. You named the VM **my-vm**. You use this name to refer to the VM in later steps.
-2.  Run the following `az vm extension set` command to configure Nginx on your VM:
+
+## Task 3: Install Nginx
+After your VM is created, you'll use a Custom Script Extension to install Nginx. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system after your VM is up and running.
+
+1. Run the following `az vm extension set` command to configure Nginx on your VM:
     
     ```azurecli
     az vm extension set \
-      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+      --resource-group "IntroAzureRG" \
       --vm-name my-vm \
       --name customScript \
       --publisher Microsoft.Azure.Extensions \

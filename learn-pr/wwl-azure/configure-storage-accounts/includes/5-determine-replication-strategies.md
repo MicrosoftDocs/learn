@@ -53,7 +53,3 @@ Let's examine the scope of durability and availability for the different replica
 | Node in data center unavailable | Entire data center unavailable | Region-wide outage | Read access during region-wide outage | 
 | --- | --- | --- | --- |  
 | - **LRS** <br> - **ZRS** <br> - **GRS** <br> - **RA-GRS** <br> - **GZRS** <br> - **RA-GZRS** | - **ZRS** <br> - **GRS** <br> - **RA-GRS** <br> - **GZRS** <br> - **RA-GZRS** | - **GRS** <br> - **RA-GRS** <br> - **GZRS** <br> - **RA-GZRS** | - **RA-GRS** <br> - **RA-GZRS** |
-
-
-> [!TIP]
-> Extend your learning with the [*Make your application storage highly available with read-access geo-redundant storage*](/training/modules/ha-application-storage-with-grs/) training module. This module has a sandbox where you can practice. 
