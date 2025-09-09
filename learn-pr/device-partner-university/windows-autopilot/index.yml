@@ -19,7 +19,7 @@ abstract: |
   - Discover how Windows Autopilot streamlines IT tasks such as resetting, repurposing, and reassigning devices.
 prerequisites: |
   - None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/windows-autopilot.svg
 ratingEnabled: false
 levels:
   - beginner

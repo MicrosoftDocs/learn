@@ -38,8 +38,6 @@ modules:
 - learn.configure-the-network-for-your-virtual-machines
 - learn.azure.create-resource-manager-template-vs-code
 - learn.add-and-size-disks-in-azure-virtual-machines
-- learn.caching-and-performance-azure-storage-and-disks
-- learn.secure-your-azure-virtual-machine-disks
 - learn.azure.monitor-azure-vm-using-diagnostic-data
 trophy:
   uid: learn.administer-infrastructure-resources-in-azure.trophy

@@ -1,4 +1,6 @@
-Now it's your opportunity to create a real-time dashboard for yourself.
+Now it's your opportunity to create a Real-Time Dashboard using bike-sharing data from an eventstream. In this exercise, you build visualizations, configure parameters, and set up auto refresh functionality.
+
+
 
 This exercise takes approximately **30** minutes to complete.
 

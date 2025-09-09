@@ -1,6 +1,6 @@
-Now it's your chance to work with real-time data for yourself.
+Now it's your chance to work with real-time data.
 
-In this exercise, you use KQL and SQL to query taxi trip data in a KQL database.
+In this exercise, you use Kusto Query Language (KQL) and T-SQL to query bike-sharing data in a KQL database.
 
 This lab takes approximately **30** minutes to complete.
 

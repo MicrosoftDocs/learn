@@ -19,7 +19,7 @@ abstract: |
   - Discover how to configure Intune, enroll devices, deploy apps, and customize the user experience.
 prerequisites: |
   - None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/microsoft-intune.svg
 ratingEnabled: false
 levels:
   - intermediate

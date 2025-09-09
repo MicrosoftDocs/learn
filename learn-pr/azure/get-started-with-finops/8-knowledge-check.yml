@@ -5,8 +5,8 @@ metadata:
   title: Module assessment
   description: Test your knowledge.
   ms.date: 11/22/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: scuffy
+  ms.author: socuff
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 2
