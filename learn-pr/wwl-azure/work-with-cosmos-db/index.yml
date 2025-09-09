@@ -19,11 +19,11 @@ summary: Learn how to develop client and server-side programming solutions on Az
 abstract: |
   After completing this module, you'll be able to:
 
-  -   Identify classes and methods used to create resources
+  -   Identify classes and methods used to create resources.
 
-  -   Create resources in Azure Cosmos DB for NoSQL using .NET
+  -   Create resources in Azure Cosmos DB for NoSQL using .NET.
 
-  -   Write stored procedures, triggers, and user-defined functions by using JavaScript
+  -   Write stored procedures, triggers, and user-defined functions by using JavaScript.
 prerequisites: |
   -   You should be familiar with developer concepts and terminology.
 
