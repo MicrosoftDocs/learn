@@ -21,13 +21,13 @@ Your mission is to establish a pull request workflow that ensures security compl
 
 3. Locate the main branch (or your primary integration branch) and select **Branch policies** from the context menu:
 
-   :::image type="content" source="../media/open-branches-9ad34c7c.png" alt-text="Navigate to branch policies configuration.":::
+   :::image type="content" source="../media/open-branches-9ad34c7c.png" alt-text="Screenshot of navigating to branch policies configuration.":::
 
 ### Step 2: Configure Reviewer Requirements
 
 Configure **Minimum number of reviewers** with enterprise considerations:
 
-:::image type="content" source="../media/require-minimum-number-reviewers-4e4d2d64.png" alt-text="Configure minimum reviewer requirements.":::
+:::image type="content" source="../media/require-minimum-number-reviewers-4e4d2d64.png" alt-text="Screenshot of configuring minimum reviewer requirements.":::
 
 Apply these **Strategic Configuration** settings:
 
@@ -40,7 +40,7 @@ Apply these **Strategic Configuration** settings:
 
 Implement intelligent reviewer routing based on expertise and code areas:
 
-:::image type="content" source="../media/add-automatic-reviewers-528e31d0.png" alt-text="Configure automatic reviewer assignment.":::
+:::image type="content" source="../media/add-automatic-reviewers-528e31d0.png" alt-text="Screenshot of configuring automatic reviewer assignment.":::
 
 Configure your **Enterprise Reviewer Strategy**:
 
@@ -53,7 +53,7 @@ Configure your **Enterprise Reviewer Strategy**:
 
 Establish comprehensive quality gates through comment resolution requirements:
 
-:::image type="content" source="../media/check-comment-resolution-f4bb058c.png" alt-text="Enforce comment resolution requirements.":::
+:::image type="content" source="../media/check-comment-resolution-f4bb058c.png" alt-text="Screenshot of enforcing comment resolution requirements.":::
 
 This policy ensures that all review feedback is addressed, creating accountability and preventing oversight gaps that could impact production stability.
 
@@ -61,7 +61,7 @@ This policy ensures that all review feedback is addressed, creating accountabili
 
 Configure work item linking for regulatory compliance and project tracking:
 
-:::image type="content" source="../media/check-linked-work-items-9f9a5589.png" alt-text="Require work item linkage for traceability.":::
+:::image type="content" source="../media/check-linked-work-items-9f9a5589.png" alt-text="Screenshot of requiring work item linkage for traceability.":::
 
 This provides these **Compliance Benefits**:
 
@@ -74,7 +74,7 @@ This provides these **Compliance Benefits**:
 
 Create feature branches directly from work items to establish automatic linkage:
 
-:::image type="content" source="../media/create-branch-8f64a7d3.png" alt-text="Create branches from work items for automatic traceability.":::
+:::image type="content" source="../media/create-branch-8f64a7d3.png" alt-text="Screenshot of creating branches from work items for automatic traceability.":::
 
 Follow this **Enterprise Branch Naming Strategy**:
 
@@ -86,7 +86,7 @@ Follow this **Enterprise Branch Naming Strategy**:
 
 Implement changes using enterprise development practices:
 
-:::image type="content" source="../media/change-code-commit-84502261.png" alt-text="Implement changes with comprehensive commit practices.":::
+:::image type="content" source="../media/change-code-commit-84502261.png" alt-text="Screenshot of implementing changes with comprehensive commit practices.":::
 
 Follow these **Enterprise Commit Standards**:
 
@@ -99,7 +99,7 @@ Follow these **Enterprise Commit Standards**:
 
 Create pull requests that facilitate comprehensive review and collaboration:
 
-:::image type="content" source="../media/create-pull-request-af53d7fb.png" alt-text="Create comprehensive pull requests with rich context.":::
+:::image type="content" source="../media/create-pull-request-af53d7fb.png" alt-text="Screenshot of creating comprehensive pull requests with rich context.":::
 
 Apply these **Enterprise Pull Request Best Practices**:
 
@@ -112,7 +112,7 @@ Apply these **Enterprise Pull Request Best Practices**:
 
 Coordinate sophisticated review processes across multiple stakeholders:
 
-:::image type="content" source="../media/pull-request-comments-438950c3.png" alt-text="Manage comprehensive review discussions.":::
+:::image type="content" source="../media/pull-request-comments-438950c3.png" alt-text="Screenshot of managing comprehensive review discussions.":::
 
 Implement this **Multi-Stakeholder Review Strategy**:
 
