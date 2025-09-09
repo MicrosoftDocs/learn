@@ -28,15 +28,15 @@ quiz:
         - content: "A fork is a way to work with centralized version control."
           isCorrect: false
           explanation: "No. A fork is a copy of a repository that you can change."
-    - content: "What are the correct steps for the fork workflow?"
+    - content: "What are the correct steps for the fork workflow in the proper sequence?"
       choices:
-        - content: "1. Create a fork 2. Make changes locally 3. Push to a branch 4. Create a pull request"
+        - content: "Create a fork. Make changes locally. Push to a branch. Create a pull request"
           isCorrect: false
           explanation: "This is missing some important steps. You need to clone the fork locally and sync it with the original repository."
-        - content: "1. Create a fork 2. Clone it locally 3. Make changes 4. Push to a branch 5. Create a pull request 6. Sync your fork"
+        - content: "Create a fork. Clone it locally. Make changes. Push to a branch. Create a pull request. Sync your fork"
           isCorrect: true
           explanation: "Yes! This is the complete fork workflow that keeps your copy updated."
-        - content: "1. Create a fork 2. Clone it locally 3. Make changes 4. Create a pull request 5. Push changes"
+        - content: "1. Create a fork. Clone it locally. Make changes. Create a pull request. Push changes"
           isCorrect: false
           explanation: "The steps are in the wrong order. You must push changes before creating a pull request."
     - content: "When should you use a single repository instead of forks?"
