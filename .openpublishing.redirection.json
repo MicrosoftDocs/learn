@@ -57375,6 +57375,51 @@
       "redirect_document_id": false
      },
     {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/2-identify-incorrectly-assigned-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/3-exercise-identify-incorrectly-assigned-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/4-assess-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/5-validate-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/6-move-verify-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/7-exercise-move-verify-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/protect-infrastructure-with-site-recovery/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
       "redirect_document_id": false
