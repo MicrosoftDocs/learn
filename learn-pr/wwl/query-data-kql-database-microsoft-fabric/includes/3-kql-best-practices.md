@@ -70,5 +70,3 @@ VendorInfo
 TaxiTrips         
 | join kind=inner VendorInfo on vendor_id
 ```
-> [!TIP]
-> For more optimization techniques and detailed performance guidance, see [Best practices for Kusto Query Language queries](/kusto/query/best-practices).

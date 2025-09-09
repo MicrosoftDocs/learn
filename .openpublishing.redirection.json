@@ -57110,6 +57110,76 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/manage-linux-with-arc/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-linux-with-arc/2-describe-managing-linux-concepts.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-linux-with-arc/3-describe-using-ssh.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-linux-with-arc/4-options-for-managing-multiple-systems.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-linux-with-arc/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-linux-with-arc/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-linux-with-arc/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-arc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-your-site-recovery-solution-in-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-your-site-recovery-solution-in-azure/2-develop-bcdr-plan.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-your-site-recovery-solution-in-azure/3-use-azure-site-recovery.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-your-site-recovery-solution-in-azure/4-build-resilient-application-services.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-your-site-recovery-solution-in-azure/5-build-resilient-data-services.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-your-site-recovery-solution-in-azure/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-your-site-recovery-solution-in-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/site-recovery/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/aspnetcore/customize-dotnet-aspire-existing-resources/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-azure-app-service-web-apps/",
       "redirect_document_id": false
