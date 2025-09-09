@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.identify-technical-debt
 metadata:
-  title: Identify technical debt
+  title: Identify Technical Debt
   description: "Learn how to find and manage technical debt in your code, use code quality tools, and plan effective code reviews."
-  ms.date: 09/08/2025
+  ms.date: 09/09/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module
@@ -11,18 +11,18 @@ metadata:
     - N/A
   ms.service: azure
   ai-usage: human-only
-title: Identify technical debt
+title: Identify Technical Debt
 summary: Learn how to find and manage technical debt in your code, use code quality tools, and plan effective code reviews.
 abstract: |
   By the end of this module, you will be able to:
 
-  -   Find and manage technical debt in your code
+  -   Find and manage technical debt in your code.
 
-  -   Use code quality tools to improve your software
+  -   Use code quality tools to improve your software.
 
-  -   Plan effective code reviews for your team
+  -   Plan effective code reviews for your team.
 
-  -   Understand complexity and quality metrics
+  -   Understand complexity and quality metrics.
 prerequisites: None
 iconUrl: /training/achievements/6-identify-technical-debt.svg
 levels:

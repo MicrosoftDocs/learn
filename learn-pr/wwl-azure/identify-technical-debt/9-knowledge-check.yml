@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.identify-technical-debt.knowledge-check
-title: Module assessment
+title: Module Assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 09/08/2025
+  ms.date: 09/09/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
@@ -28,14 +28,14 @@ quiz:
         - content: "Code smell."
           isCorrect: true
           explanation: "Correct. Code smells are characteristics in your code that could be a problem. Code smells hint at more profound problems in the design or implementation of the code."
-    - content: "Which of the following choices can measure the probability that a system will run without failure over a specific period of operation?"
+    - content: "Which of the following choices can measure the probability that a system runs without failure over a specific period of operation?"
       choices:
         - content: "Maintainability"
           isCorrect: false
           explanation: "Incorrect. Maintainability measures how easily software can be maintained. It relates to the codebase's size, consistency, structure, and complexity. And ensuring maintainable source code relies on several factors, such as testability and understandability."
         - content: "Reliability"
           isCorrect: true
-          explanation: "Correct. Reliability measures the probability that a system will run without failure over a specific period of operation. It relates to the number of defects and availability of the software. Several defects can be measured by running a static analysis tool."
+          explanation: "Correct. Reliability measures the probability that a system runs without failure over a specific period of operation. It relates to the number of defects and availability of the software. Several defects can be measured by running a static analysis tool."
         - content: "Reusability"
           isCorrect: false
           explanation: "Incorrect. Reusability measures whether existing assets, such as code."
