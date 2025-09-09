@@ -47,3 +47,5 @@ quiz:
     - content: "Write a custom Python script and save it as a Spark job definition"
       isCorrect: false
       explanation: "Incorrect. A Spark job definition doesn't create a parameterized KQL query."
+
+      
