@@ -83,7 +83,7 @@ You can also create data visualizations while exploring your data, rendering que
 
 ## Use Copilot to assist with queries
 
-For AI-based assistance with KQL querying, you can use [Copilot for Real-Time Intelligence](/fabric/get-started/copilot-real-time-intelligence?azure-portal=true).
+For AI-based assistance with KQL querying, you can use Copilot for Real-Time Intelligence
 
 When your administrator enables Copilot, you see the option in the queryset menu bar. Copilot opens as a pane to the side of the main query interface. When you ask a question about your data, Copilot generates the KQL code to answer your question.
 

@@ -15,7 +15,7 @@ summary: An eventhouse in Microsoft Fabric is a container that houses one or mor
 abstract: |
   After completing this module, you'll be able to:
   - Create an eventhouse in Microsoft Fabric
-  - Write effective KQL queries using optimization techniques
+  - Write effective KQL queries
   - Create materialized views and stored functions in a KQL database
 
 prerequisites: Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
