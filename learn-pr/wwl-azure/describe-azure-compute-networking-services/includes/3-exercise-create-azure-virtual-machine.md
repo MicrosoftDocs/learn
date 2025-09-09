@@ -24,6 +24,7 @@ In this instance, you're going to use the Azure CLI.
     az vm create \
       --resource-group "IntroAzureRG" \
       --name my-vm \
+      --size Standard_D2s_v5 \
       --public-ip-sku Standard \
       --image Ubuntu2204 \
       --admin-username azureuser \
