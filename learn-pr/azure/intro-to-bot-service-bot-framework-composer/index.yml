@@ -4,11 +4,11 @@ metadata:
   moduleType: introduction
   title: Introduction to Azure Bot Service and Bot Framework Composer
   description: Introduction to Azure Bot Service and Bot Framework Composer
-  manager: mkluck
+  manager: luvel
   ms.collection: TBD
   ms.date: 04/15/2025
   author: jasonkellingtonwaypoint
-  ms.author: robmcm
+  ms.author: v-jasonkell
   ms.topic: module
   ms.service: azure-ai-bot-service
 title: Introduction to Azure Bot Service and Bot Framework Composer
@@ -48,4 +48,3 @@ units:
 - learn.azure.intro-to-bot-service-bot-framework-composer.6-summary
 badge:
   uid: learn.intro-to-bot-service-bot-framework-composer.badge
-
