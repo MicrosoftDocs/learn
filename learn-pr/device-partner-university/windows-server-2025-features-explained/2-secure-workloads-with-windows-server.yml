@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-server-2025-features-explained.secure-workloads-windows-server
+title: Secure workloads with Windows Server
+metadata:
+  title: Secure Workloads With Windows Server
+  description: This content is part of the "Key features and innovations in Windows Server 2025" module.
+  ms.date: 09/08/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-secure-workloads-with-windows-server.md)]
