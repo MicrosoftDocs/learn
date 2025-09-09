@@ -30,7 +30,7 @@ This architecture provides inherent security benefits, as contributors never req
 
 ### Canonical Repository Concept
 
-The "official" repository designation represents a organizational convention rather than a technical constraint. The canonical repository's authority derives from its role as the primary integration point managed by designated project maintainers, establishing it as the source of truth for production deployments.
+The "official" repository designation represents an organizational convention rather than a technical constraint. The canonical repository's authority derives from its role as the primary integration point managed by designated project maintainers, establishing it as the source of truth for production deployments.
 
 ## Enterprise Fork Workflow Implementation
 

@@ -4,11 +4,11 @@ Effective Git branching strategies are fundamental to successful software delive
 
 Modern software development teams require branching strategies that balance several critical concerns:
 
-**Development velocity**: Enable teams to work independently without blocking each other.
-**Quality assurance**: Maintain code quality through systematic review and testing processes.
-**Release management**: Support predictable, reliable software releases.
-**Risk mitigation**: Isolate experimental work and provide rollback capabilities.
-**Compliance requirements**: Meet audit and regulatory standards for change management.
+- **Development velocity**: Enable teams to work independently without blocking each other.
+- **Quality assurance**: Maintain code quality through systematic review and testing processes.
+- **Release management**: Support predictable, reliable software releases.
+- **Risk mitigation**: Isolate experimental work and provide rollback capabilities.
+- **Compliance requirements**: Meet audit and regulatory standards for change management.
 
 ### Enterprise branching strategy framework
 

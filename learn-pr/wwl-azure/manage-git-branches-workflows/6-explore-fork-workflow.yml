@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-git-branches-workflows.explore-fork-workflow
-title: Explore Fork Workflow
+title: Explore fork workflow
 metadata:
-  title: Explore Fork Workflow
-  description: "Explore Fork Workflow"
-  ms.date: 09/02/2025
+  title: Explore fork workflow
+  description: "Explore fork workflow"
+  ms.date: 09/09/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

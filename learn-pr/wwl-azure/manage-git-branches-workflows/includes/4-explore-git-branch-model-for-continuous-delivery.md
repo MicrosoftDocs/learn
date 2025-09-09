@@ -183,7 +183,7 @@ az repos pr create --title "Review Feature-1 before merging to main" --work-item
 --repository myWebApp --open
 ```
 
-Use the --open switch when raising the pull request to open it in a web browser after it has been created. The --deletesource-branch switch can be used to delete the branch after the pull request is complete. Also, consider using --auto-complete to complete automatically when all policies have passed, and the source branch can be merged into the target branch.
+Use the `--open` switch when raising the pull request to open it in a web browser after it has been created. The `--deletesource-branch` switch can be used to delete the branch after the pull request is complete. Also, consider using `--auto-complete` to complete automatically when all policies have passed, and the source branch can be merged into the target branch.
 
 > [!NOTE]
 > For more information about **az repos pr create** parameter, see [Create a pull request to review and merge code](/azure/devops/repos/git/pull-requests).
@@ -300,17 +300,17 @@ az repos pr create --title "Review Bug-1 before merging to main" --work-items 10
 --repository myWebApp --open
 ```
 
-    As part of the pull request, the branch is deleted. However, you can still reference the entire history using the tag.
+As part of the pull request, the branch is deleted. However, you can still reference the entire history using the tag.
 
-    With the critical bug fix out of the way, let's review the feature-2 pull request.
+With the critical bug fix out of the way, let's review the feature-2 pull request.
 
-    The branches page makes it clear that the feature/myFeature-2 branch is one change ahead of the main and two changes behind the main:
+The branches page makes it clear that the feature/myFeature-2 branch is one change ahead of the main and two changes behind the main:
 
-    :::image type="content" source="../media/branches-page-352f877b.png" alt-text="Screenshot of the branches page. The feature myFeature two branches are one change ahead of the main and two changes behind the main.":::
+:::image type="content" source="../media/branches-page-352f877b.png" alt-text="Screenshot of the branches page. The feature myFeature two branches are one change ahead of the main and two changes behind the main.":::
 
-    If you tried to approve the pull request, you'd see an error message informing you of a merge conflict:
+If you tried to approve the pull request, you'd see an error message informing you of a merge conflict:
 
-    :::image type="content" source="../media/merge-conflicts-pull-request-84cba5e1.png" alt-text="Screenshot of merge conflicts from pull request.":::
+:::image type="content" source="../media/merge-conflicts-pull-request-84cba5e1.png" alt-text="Screenshot of merge conflicts from pull request.":::
 
 ## Resolve merge conflicts
 
@@ -322,7 +322,7 @@ To resolve merge conflicts, you can use the Azure DevOps web interface or resolv
     git merge origin/main
     ```
 
-    Resolve the conflicts in your preferred editor, then complete the merge:
+Resolve the conflicts in your preferred editor, then complete the merge:
 
     ```CMD
     git add .
@@ -330,7 +330,7 @@ To resolve merge conflicts, you can use the Azure DevOps web interface or resolv
     git push origin feature/myFeature-2
     ```
 
-    With the conflicts resolved, the pull request can be completed successfully.
+With the conflicts resolved, the pull request can be completed successfully.
 
 At this point, you can create a release branch based on the critical bug fix implemented in the **fof/bug-1** branch and merged into main. Using the git checkout command, create a dedicated release branch from the main branch.
 

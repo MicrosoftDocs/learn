@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-git-branches-workflows.explore-git-branch-model-for-continuous-delivery
-title: Explore Git Branch Model For Continuous Delivery
+title: Explore git branch model for continuous delivery
 metadata:
-  title: Explore Git Branch Model For Continuous Delivery
-  description: "Explore Git Branch Model For Continuous Delivery"
-  ms.date: 09/02/2025
+  title: Explore git branch model for continuous delivery
+  description: "Explore git branch model for continuous delivery"
+  ms.date: 09/09/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

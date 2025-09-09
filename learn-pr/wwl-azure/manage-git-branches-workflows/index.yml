@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-git-branches-workflows
 metadata:
-  title: Design and Implement Branch Strategies and Workflows
-  description: Design and Implement Branch Strategies and Workflows
+  title: Design and implement branch strategies and workflows
+  description: This module explores Git branching types, concepts, and models for the continuous delivery process. It helps companies defining their branching strategy and organization.
   ms.date: 09/02/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ai-usage: human-only
   ms.service: azure-devops-repos
-title: Design and Implement Branch Strategies and Workflows
+title: Design and implement branch strategies and workflows
 summary: This module explores Git branching types, concepts, and models for the continuous delivery process. It helps companies defining their branching strategy and organization.
 abstract: |
   By the end of this module, you're able to:
