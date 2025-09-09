@@ -6855,6 +6855,16 @@ achievements:
   title: Store data in Azure Cosmos DB with .NET Aspire
   summary: "Learn how to connect to the Azure Cosmos DB database from a cloud-native application by using .NET Aspire built-in integrations."
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.intro-to-arc-for-servers.badge
+  type: badge
+  title: Introduction to Azure Arc-enabled servers
+  summary: This module introduces you to Azure Arc-enabled servers and describes its characteristics, capabilities, and use cases.
+  iconUrl: /training/achievements/intro-to-arc-for-servers.svg
+- uid: learn.protect-infrastructure-with-azure-site-recovery.badge
+  type: badge
+  title: Protect your Azure infrastructure with Azure Site Recovery
+  summary: In this module, you learn to provide disaster recovery for your Azure infrastructure by customizing replication, failover, and failback of Azure virtual machines with Azure Site Recovery.
+  iconUrl: /training/achievements/protect-infrastructure-with-azure-site-recovery.svg
 - uid: learn.dotnet-aspire-azure.trophy
   type: trophy
   title: Use Azure services to build and deploy apps with .NET Aspire
