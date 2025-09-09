@@ -71,7 +71,7 @@ private static async Task<ChangeFeedProcessor> StartChangeFeedProcessorAsync(
 }
 ```
 
-Where the first parameter is a distinct name that describes the goal of this processor and the second name is the delegate implementation that handles changes. Following is an example of a delegate:
+Where the first parameter is a distinct name that describes the goal of this processor and the second parameter is the delegate implementation that handles changes. Following is an example of a delegate:
 
 ```csharp
 /// <summary>
