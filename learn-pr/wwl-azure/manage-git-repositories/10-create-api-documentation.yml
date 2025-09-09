@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-git-repositories.create-api-documentation
-title: Create API documentation
+title: Create API Documentation
 metadata:
-  title: Create API documentation
+  title: Create API Documentation
   description: "Learn how to create and publish API documentation for your repositories"
-  ms.date: 09/05/2024
+  ms.date: 09/09/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

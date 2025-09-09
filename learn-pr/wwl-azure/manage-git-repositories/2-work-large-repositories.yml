@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-git-repositories.work-large-repositories
-title: Work with large repositories
+title: Work With Large Repositories
 metadata:
-  title: Work with large repositories
+  title: Work With Large Repositories
   description: "Learn how to handle large Git repositories using tools like Scalar and VFS for Git"
-  ms.date: 09/05/2024
+  ms.date: 09/09/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

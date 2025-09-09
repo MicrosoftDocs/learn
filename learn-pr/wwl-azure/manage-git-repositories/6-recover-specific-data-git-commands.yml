@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-git-repositories.recover-specific-data-git-commands
-title: Recover specific data by using git commands
+title: Recover Specific Data by Using Git Commands
 metadata:
-  title: Recover specific data by using git commands
-  description: "Recover specific data by using git commands"
-  ms.date: 09/05/2024
+  title: Recover Specific Data by Using Git Commands
+  description: "Learn how to recover lost data and restore files using various Git commands and techniques"
+  ms.date: 09/09/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

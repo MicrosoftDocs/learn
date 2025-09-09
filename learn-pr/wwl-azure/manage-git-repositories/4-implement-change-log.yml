@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-git-repositories.implement-change-log
-title: Implement a change log
+title: Implement a Change Log
 metadata:
-  title: Implement a change log
-  description: "Implement a change log"
-  ms.date: 09/05/2024
+  title: Implement a Change Log
+  description: "Learn how to create and maintain effective change logs for your repositories"
+  ms.date: 09/09/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-implement-change-log.md)]
