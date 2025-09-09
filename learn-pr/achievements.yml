@@ -6835,6 +6835,16 @@ achievements:
   title: Intermediate Bicep
   summary: Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your deployments more consistent and repeatable.
   iconUrl: /training/achievements/bicep/intermediate-bicep.svg
+- uid: learn.securing-you-basics-beyond.badge
+  type: badge
+  title: "Securing you: Basics and beyond"
+  summary: Security-related advice can be hard to understand and follow. Many people ask for a simple description of how to secure their computers and online accounts without needing in-depth training or hours of study. This module gives you simple advice you can follow, tools you can use, and pitfalls to avoid, to ensure that you can remain secure online.
+  iconUrl: /training/achievements/security/securing-you-basics-beyond.svg
+- uid: learn.azure.network-fundamentals-2.badge
+  type: badge
+  title: Fundamentals of Network Security
+  summary: Explore the fundamentals of computer networking security and monitoring.
+  iconUrl: /training/achievements/network-fundamentals-2.svg
 - uid: learn.design-your-site-recovery-solution-in-azure.badge
   type: badge
   title: Design your site recovery solution in Azure
