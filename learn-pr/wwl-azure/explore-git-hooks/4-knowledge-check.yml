@@ -41,13 +41,13 @@ quiz:
           explanation: "Incorrect. Manual review alone is error-prone and doesn't scale well. Automated detection should be the first line of defense, with manual review as a backup."
     - content: "Your organization wants to make sure all commit messages follow the same standards across all development teams. Which Git hook is best for it?"
       choices:
-        - content: "Pre-commit"
+        - content: "Pre-commit."
           isCorrect: false
           explanation: "Incorrect. The pre-commit hook runs before the commit message is created, so it can't validate the commit message content."
-        - content: "Commit-msg"
+        - content: "Commit-msg."
           isCorrect: true
           explanation: "Correct. The commit-msg hook is designed specifically to check and enforce commit message standards. It runs after the commit message is created but before the commit is completed."
-        - content: "Post-commit"
+        - content: "Post-commit."
           isCorrect: false
           explanation: "Incorrect. The post-commit hook runs after the commit is completed, so it's too late to validate or reject the commit message."
     - content: "For teams with many developers, what is the recommended way to deploy and manage Git hooks?"
