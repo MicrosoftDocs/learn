@@ -30,9 +30,9 @@ quiz:
           explanation: "Incorrect. Forcing all developers to use the same operating system isn't practical in modern development teams. Cross-platform compatibility is the better approach."
     - content: "When creating pre-commit hooks to find passwords and secrets in code, which approach provides the best security coverage?"
       choices:
-        - content: "Only check for the word "password" in files."
+        - content: "Only check for the word *password* in files."
           isCorrect: false
-          explanation: "Incorrect. Checking only for "password" is too limited. Modern applications use many types of credentials including API keys, tokens, and certificates that wouldn't be caught."
+          explanation: "Incorrect. Checking only for *password* is too limited. Modern applications use many types of credentials including API keys, tokens, and certificates that wouldn't be caught."
         - content: "Use pattern matching with regular expressions to find multiple types of credentials."
           isCorrect: true
           explanation: "Correct. Pattern matching with regular expressions allows you to find various types of credentials (API keys, tokens, certificates, connection strings) and provides better security coverage while reducing false alarms."
