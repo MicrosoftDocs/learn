@@ -30,7 +30,7 @@ Responsible use ensures that AI speeds up discovery and curation without reducin
 
 ## Microsoft's responsible AI guidance
 
-All AI-powered features in Unified Catalog follow [Microsoft's responsible AI principles](https://www.microsoft.com/ai/responsible-ai). These include transparency about when AI is used, safeguards against over-reliance, and clear options for users to accept or reject suggestions.
+All AI-powered features in Unified Catalog follow [Microsoft's responsible AI principles](https://www.microsoft.com/ai/responsible-ai?azure-portal=true). These include transparency about when AI is used, safeguards against over-reliance, and clear options for users to accept or reject suggestions.
 
 ## Balancing efficiency and trust
 
