@@ -19,7 +19,7 @@ Moving forward, you can immediately apply these capabilities to improve your dev
 - **Create feedback loops** that collect developer input and continuously improve hook effectiveness and usability
 - **Monitor hook performance** and impact on developer productivity to optimize automation strategies
 
-## Learn More
+## Learn more
 
 - [Azure DevOps Service Hooks Events Reference](/azure/devops/service-hooks/events) - Comprehensive guide to server-side automation integration
 - [Git Hooks Documentation](https://git-scm.com/docs/githooks) - Official reference for all available Git hook types and implementation patterns

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-git-hooks.knowledge-check
-title: Module Assessment
+title: Module assessment
 metadata:
-  title: Module Assessment
+  title: Module assessment
   description: "Knowledge Check"
-  ms.date: 09/09/2025
+  ms.date: 09/10/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
@@ -30,9 +30,9 @@ quiz:
           explanation: "Incorrect. Forcing all developers to use the same operating system isn't practical in modern development teams. Cross-platform compatibility is the better approach."
     - content: "When creating pre-commit hooks to find passwords and secrets in code, which approach provides the best security coverage?"
       choices:
-        - content: "Only check for the word 'password' in files."
+        - content: "Only check for the word password in files."
           isCorrect: false
-          explanation: "Incorrect. Checking only for 'password' is too limited. Modern applications use many types of credentials including API keys, tokens, and certificates that wouldn't be caught."
+          explanation: "Incorrect. Checking only for password is too limited. Modern applications use many types of credentials including API keys, tokens, and certificates that wouldn't be caught."
         - content: "Use pattern matching with regular expressions to find multiple types of credentials."
           isCorrect: true
           explanation: "Correct. Pattern matching with regular expressions allows you to find various types of credentials (API keys, tokens, certificates, connection strings) and provides better security coverage while reducing false alarms."
@@ -41,13 +41,13 @@ quiz:
           explanation: "Incorrect. Manual review alone is error-prone and doesn't scale well. Automated detection should be the first line of defense, with manual review as a backup."
     - content: "Your organization wants to make sure all commit messages follow the same standards across all development teams. Which Git hook is best for it?"
       choices:
-        - content: "pre-commit"
+        - content: "Pre-commit"
           isCorrect: false
           explanation: "Incorrect. The pre-commit hook runs before the commit message is created, so it can't validate the commit message content."
-        - content: "commit-msg"
+        - content: "Commit-msg"
           isCorrect: true
           explanation: "Correct. The commit-msg hook is designed specifically to check and enforce commit message standards. It runs after the commit message is created but before the commit is completed."
-        - content: "post-commit"
+        - content: "Post-commit"
           isCorrect: false
           explanation: "Incorrect. The post-commit hook runs after the commit is completed, so it's too late to validate or reject the commit message."
     - content: "For teams with many developers, what is the recommended way to deploy and manage Git hooks?"

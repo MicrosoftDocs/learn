@@ -230,7 +230,7 @@ execute_relevant_tests || exit 1
 
 ## Advanced commit message automation
 
-### prepare-commit-msg hook implementation
+### Prepare-commit-msg hook implementation
 
 Automate commit message generation to ensure consistency and include necessary metadata:
 

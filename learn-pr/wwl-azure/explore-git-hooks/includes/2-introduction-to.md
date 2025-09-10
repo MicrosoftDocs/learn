@@ -14,7 +14,7 @@ Modern software development needs automation that works precisely at every stage
 
 Client-side hooks run on each developer's computer. They provide immediate feedback and prevent bad code from entering shared code repositories.
 
-### pre-commit hook features
+### Pre-commit hook features
 
 **Code quality checks**: Automatically check code formatting, linting rules, and company coding standards before allowing commits.
 
@@ -30,7 +30,7 @@ Client-side hooks run on each developer's computer. They provide immediate feedb
 
 **commit-msg**: Check commit message format, enforce naming rules, and ensure proper links to work items or issue tracking systems.
 
-### post-commit integration features
+### Post-commit integration features
 
 **Notification automation**: Send automatic notifications to team members, project management systems, or collaboration platforms.
 
@@ -138,7 +138,8 @@ fi
 
 ### Pipeline integration automation
 
-[!NOTE] You need to install the Azure DevOps CLI extension to use these commands.
+> [!NOTE]
+> You need to install the Azure DevOps CLI extension to use these commands.
 
 **Build validation triggers**:
 
@@ -155,7 +156,7 @@ fi
 
 ### Quality gate automation
 
-**pre-commit quality gates**:
+**Pre-commit quality gates**:
 
 - Code formatting and style checking
 - Static analysis and linting
@@ -163,7 +164,7 @@ fi
 - Documentation completeness checking
 - Performance impact checking
 
-**pre-push validation**:
+**Pre-push validation**:
 
 - Integration test running
 - Security vulnerability scanning
