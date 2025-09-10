@@ -77,7 +77,7 @@ The confusion matrix for a multiclass classifier is similar to that of a binary 
 
 From this confusion matrix, we can determine the metrics for each individual class as follows:
 
-|Class|TP|TN|FP|FN|Accuracy|Recall|Precision|F1-Score|
+|Class|True Positive|True Negative|False Positive|False Negative|Accuracy|Recall|Precision|F1-Score|
 |-|-|-|-|-|-|-|-|-|
 |**0**|2|5|0|0|1.0|1.0|1.0|1.0|
 |**1**|2|4|1|0|0.86|1.0|0.67|0.8|

@@ -7,9 +7,8 @@ metadata:
   description: When to use the Azure Bot Service and Bot Framework
   ms.date: 04/15/2025
   author: jasonkellingtonwaypoint
-  ms.author: robmcm
+  ms.author: v-jasonkell
   ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/4-when-to-use-azure-bot-service.md)]
-

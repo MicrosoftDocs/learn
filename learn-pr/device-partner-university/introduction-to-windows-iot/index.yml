@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-to-windows-iot
+title: Introduction to Windows IoT
+metadata:
+  title: Introduction To Windows IoT
+  description: In this module, you'll learn the fundamentals of Windows IoT, including its architecture, key features, and operational components. You'll examine how Windows IoT enables organizations to deploy, manage, and secure dedicated devices across a variety of business environments. You'll also explore decision-making criteria for selecting Windows IoT and review the tools and integrations available for building modern IoT solutions.
+  ms.date: 09/08/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: module
+  ms.service: windows-iot
+  ms.custom: CI020124-1
+summary: >
+  Discover how Windows IoT enables organizations to deploy, manage, and secure dedicated devices across diverse business environments. This training explores key features such as enterprise-grade security, cloud integration, device management tools, and application support to help streamline operations and improve scalability.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Evaluate whether Windows IoT meets the requirements for device management, security, and integration in various scenarios.
+  - Describe how the main components of Windows IoT function and interact, including the operating system, management tools, security features, cloud integration, and application support.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - windows-iot
+units:
+  - learn.dpu.introduction-to-windows-iot.introduction
+  - learn.dpu.introduction-to-windows-iot.what-is-windows-iot
+  - learn.dpu.introduction-to-windows-iot.how-windows-iot-works
+  - learn.dpu.introduction-to-windows-iot.when-use-windows-iot
+  - learn.dpu.introduction-to-windows-iot.knowledge-check
+  - learn.dpu.introduction-to-windows-iot.summary
+badge:
+  uid: learn.dpu.introduction-to-windows-iot.badge

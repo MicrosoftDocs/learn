@@ -34,7 +34,6 @@ modules:
 - learn.azdo.manage-site-reliability
 - learn.cmu-cloud-admin.cmu-cloud-elasticity
 - learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud
-- troubleshoot-inbound-network-connectivity-azure-load-balancer
 - learn.azure.monitor-azure-vm-using-diagnostic-data
 trophy:
   uid: az-400-develop-sre-strategy.trophy

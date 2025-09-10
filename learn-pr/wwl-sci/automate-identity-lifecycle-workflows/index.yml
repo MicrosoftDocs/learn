@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.automate-identity-lifecycle-workflows
+metadata:
+  title: Automate Identity Lifecycle using Lifecycle Workflows in Microsoft Entra
+  description: "Explore the configuration and deployment of Microsoft Entra Lifecycle Workflows. Learn the purpose of lifecycle workflows, their components, and how to implement them effectively."
+  ms.date: 09/3/2025
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: module
+  ms.service: entra
+  ai-usage: ai-assisted
+title: Automate identity lifecycle using Lifecycle Workflows in Microsoft Entra
+summary: Explore the configuration and deployment of Microsoft Entra Lifecycle Workflows. Learn the purpose of lifecycle workflows, their components, and how to implement them effectively.
+abstract: |
+ After completing this module, you'll be able to:
+  - Explain the importance of identity lifecycle management and its role in identity governance.
+  - Configure and deploy Microsoft Entra Lifecycle Workflows for onboarding, role changes, and offboarding scenarios.
+  - Customize workflows using triggers, execution conditions, and tasks to meet organizational needs.
+  - Monitor and troubleshoot workflows using audit logs, workflow history, and task summaries to ensure optimal performance.
+prerequisites: |
+  Fundamental knowledge of Microsoft Entra and identity governance concepts is recommended.
+iconUrl: /training/achievements/entra-identity-lifecycle-workflows.svg
+levels:
+  - advanced
+roles:
+  - administrator
+  - identity-access-admin
+products:
+  - entra
+  - entra-identity-governance
+  - entra-id
+subjects:
+  - identity-access
+units:
+  - learn.wwl.automate-identity-lifecycle-workflows.introduction
+  - learn.wwl.automate-identity-lifecycle-workflows.describe-purpose-lifecycle-workflows
+  - learn.wwl.automate-identity-lifecycle-workflows.explore-scenarios-joiner-mover-leaver-workflows
+  - learn.wwl.automate-identity-lifecycle-workflows.configure-lifecycle-workflows-using-templates-triggers
+  - learn.wwl.automate-identity-lifecycle-workflows.deploy-lifecycle-workflows-your-environment
+  - learn.wwl.automate-identity-lifecycle-workflows.monitor-troubleshoot-workflows
+  - learn.wwl.automate-identity-lifecycle-workflows.plan-hybrid-advanced-scenarios
+  - learn.wwl.automate-identity-lifecycle-workflows.knowledge-check
+  - learn.wwl.automate-identity-lifecycle-workflows.summary
+badge:
+  uid: learn.wwl.automate-identity-lifecycle-workflows.badge
