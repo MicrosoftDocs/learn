@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-kusto-fabric
 metadata:
   title: Get started with Real-Time Intelligence in Microsoft Fabric
   description: "Real-Time Intelligence in Microsoft Fabric has capabilities that help you ingest, process, store, visualize, and act on data in motion to gain immediate insights from events as they happen."
-  ms.date: 08/28/2025
+  ms.date: 09/10/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: module-standard-task-based

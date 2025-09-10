@@ -29,4 +29,4 @@ Use Activator to:
 - Alert store managers to move food from failing grocery store freezers before it spoils.
 
 > [!TIP]
-> For more information about Activator, see **[What is Activator?](/fabric/real-time-intelligence/data-activator/activator-introduction)**.
+> For more information about Activator, see **[What is Activator?](/fabric/real-time-intelligence/data-activator/activator-introduction?azure-portal=true)**.
