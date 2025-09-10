@@ -1,49 +1,53 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-work-git-for-enterprise-devops
 metadata:
-  title: 'AZ-400: Development for enterprise DevOps'
-  description: 'AZ-400: Development for enterprise DevOps'
-  ms.date: 05/06/2024
-  author: wwlpublish
+  title: "AZ-400: Development for Enterprise DevOps"
+  description: "Learn Git features and DevOps practices that help organizations build better software together."
+  ms.date: 09/10/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: learning-path
-title: 'AZ-400: Development for enterprise DevOps'
+title: "AZ-400: Development for Enterprise DevOps"
 prerequisites: |
   None
 summary: |
-  This learning path examines the key Git features that organizations must plan for when designing their enterprise DevOps.
+  This learning path covers everything from managing repositories and branches to identifying technical debt and fostering inner source culture.
 iconUrl: /training/achievements/az-400-work-with-git-for-enterprise-devops.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 subjects:
-- devops
+  - devops
 modules:
-- learn.wwl.introduction-to-devops
-- learn.wwl.plan-agile-github-projects-azure-boards
-- learn.wwl.manage-git-branches-workflows
-- learn.wwl.collaborate-pull-requests-azure-repos
-- learn.wwl.explore-git-hooks
-- learn.wwl.plan-foster-inner-source
-- learn.wwl.manage-git-repositories
-- learn.wwl.identify-technical-debt
+  - learn.wwl.introduction-to-devops
+  - learn.wwl.plan-agile-github-projects-azure-boards
+  - learn.wwl.manage-git-branches-workflows
+  - learn.wwl.collaborate-pull-requests-azure-repos
+  - learn.wwl.explore-git-hooks
+  - learn.wwl.plan-foster-inner-source
+  - learn.wwl.manage-git-repositories
+  - learn.wwl.identify-technical-debt
 trophy:
   uid: learn.wwl.az-400-work-git-for-enterprise-devops.trophy
