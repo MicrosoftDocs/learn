@@ -55110,6 +55110,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/advocates/top-5-security-items-to-consider/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/top-5-security-items-to-consider/2-azure-security-center.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/top-5-security-items-to-consider/3-inputs-and-outputs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/top-5-security-items-to-consider/4-secrets-in-key-vault.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/top-5-security-items-to-consider/5-framework-updates.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/top-5-security-items-to-consider/6-safe-dependencies.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/top-5-security-items-to-consider/7-conclusion.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/top-5-security-items-to-consider/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/security/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/control-govern-azure-environment-deploying-infrastructure-code/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/",
       "redirect_document_id": false

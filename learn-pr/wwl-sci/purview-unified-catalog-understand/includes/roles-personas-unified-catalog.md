@@ -40,6 +40,8 @@ This shared workspace ensures that each role contributes to a governed outcome t
 
 - Consumers discover and use data products without piecing together raw assets.
 
+When data consumers request access to products, stewards can manage those requests directly in the catalog. Task management provides traceability, ensuring actions are assigned, completed, and reviewed as part of governance.
+
 ## Importance of defined roles
 
 Without defined roles, governance efforts can lose momentum. Assets might be inventoried without business meaning, or policies might be configured without connection to outcomes. The Unified Catalog addresses this by combining a technical platform with a framework for collaboration, so each persona understands their responsibilities and contributes to trusted results.
