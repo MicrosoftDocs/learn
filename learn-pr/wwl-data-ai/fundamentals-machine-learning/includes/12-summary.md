@@ -10,4 +10,4 @@ Machine learning is the foundation on which artificial intelligence is built. In
 
 ::: zone-end
 
-To learn more about how machine learning can help organizations get predictive insights from their data, see [What is machine learning?](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-machine-learning-platform/)
+To learn more about how machine learning can help organizations get predictive insights from their data, see [What is machine learning?](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-machine-learning-platform?azure-portal=true)

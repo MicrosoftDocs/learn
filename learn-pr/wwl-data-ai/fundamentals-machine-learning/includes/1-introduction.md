@@ -17,4 +17,4 @@ Machine learning has its origins in statistics and mathematical modeling of data
 ::: zone-end
 
 > [!NOTE]
-> We recognize that different people like to learn in different ways. You can choose to complete the course in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
