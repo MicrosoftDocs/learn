@@ -9,4 +9,4 @@ Azure Local offers capabilities such as resilient and scalable infrastructure, s
 - Evaluate whether Azure Local meets the requirements for centralized management, monitoring, and backup across different deployment scenarios.
 - Describe how the components of Azure Local function and interact, including virtualization, storage, networking, and Azure service integration.
 
-![A photograph of a barista taking orders on a tablet in a modern, tech-enabled café kitchen.](../media/cafe.png)
+![A photograph of a barista taking orders on a tablet in a modern, tech-enabled café kitchen.](../media/coffee.png)
