@@ -42,6 +42,6 @@ In addition to reporting, governance includes actively managing data quality. St
 
 ### Extended analytics
 
-For deeper analysis, Purview can send governance and quality metrics into Microsoft Fabric. This integration lets teams build custom dashboards that show trends such as where data quality issues occur or how many products belong to each domain.
+For deeper analysis, Microsoft Purview can send governance and quality metrics into Microsoft Fabric. This integration lets teams build custom dashboards that show trends such as where data quality issues occur or how many products belong to each domain.
 
 Together, these elements bridge the gap between raw data and business-ready insights. The Data Map inventories everything, data products make curated data accessible, and governance concepts provide the consistency needed to turn data into a trusted asset. With the building blocks in place, the next step is to see how different roles use them to turn raw data into business value
