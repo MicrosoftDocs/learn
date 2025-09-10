@@ -1,6 +1,6 @@
 When different departments define concepts like customer activity in conflicting ways, reports don't align and confidence in decisions suffers. Microsoft Purview Unified Catalog resolves this problem by centralizing assets, adding shared business context, and applying consistent governance across the estate.
 
-You learned how defined roles such as owners, stewards, experts, administrators, and consumers work together in the Unified Catalog. Their contributions include connecting sources, curating data, validating meaning, applying policies, and using data products. AI-powered features such as natural language search and suggested mappings can accelerate cataloging, but governance oversight remains essential to maintain trust.
+You learned how defined roles such as owners, stewards, experts, administrators, and consumers work together in the Unified Catalog. Their contributions include connecting sources, curating data, validating meaning, applying policies, and using data products. Stewards also manage requests for access to products and take actions generated from data quality rules, ensuring governance is both accountable and proactive.
 
 Compared to the classic catalog, the Unified Catalog extends the foundation of the Data Map with governance health reporting, curated products, collaboration features, and AI-assisted curation. The result is an environment where data is consistent, trusted, and scalable across the estate.
 
@@ -16,5 +16,5 @@ In this module you learned how to:
 
 ## Resources
 
-- [Learn about Microsoft Purview Unified Catalog](/purview/unified-catalog)
-- [Unified Catalog responsible AI FAQ](/purview/unified-catalog-responsible-ai-faq)
+- [Learn about Microsoft Purview Unified Catalog](/purview/unified-catalog?azure-portal=true)
+- [Unified Catalog responsible AI FAQ](/purview/unified-catalog-responsible-ai-faq?azure-portal=true)
