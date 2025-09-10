@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-git-repositories.implement-automation-git-history-documentation
-title: Implement Automation of Git History Documentation
+title: Implement automation of Git history documentation
 metadata:
-  title: Implement Automation of Git History Documentation
+  title: Implement Automation Of Git History Documentation
   description: "Learn how to automate the generation of documentation from Git commit history and project changes"
-  ms.date: 09/09/2025
+  ms.date: 09/10/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

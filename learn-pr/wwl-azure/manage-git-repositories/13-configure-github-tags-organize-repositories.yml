@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-git-repositories.configure-github-tags-organize-repositories
-title: Configure GitHub Tags to Organize Repositories
+title: Configure GitHub tags to organize repositories
 metadata:
-  title: Configure GitHub Tags to Organize Repositories
+  title: Configure GitHub Tags To Organize Repositories
   description: "Learn how to use GitHub tags to organize and track your project's development milestones"
-  ms.date: 09/09/2025
+  ms.date: 09/10/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

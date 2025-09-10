@@ -1,6 +1,6 @@
 In this module, learn how to manage code repositories effectively. Discover tools and techniques for working with large repositories and keeping your code organized.
 
-## Learning Objectives
+## Learning objectives
 
 After completing this module, you'll be able to:
 

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-git-repositories.purge-repository-data
-title: Clean Up Repository Data
+title: Clean up repository data
 metadata:
-  title: Clean Up Repository Data
-  description: "Learn how to clean up unwanted data from Git repositories"
-  ms.date: 09/09/2025
+  title: Purge Repository Data
+  description: "Learn how to safely remove sensitive data and clean up repository history"
+  ms.date: 09/10/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

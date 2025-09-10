@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-git-repositories.explore-monorepo-versus-multiple-repos
-title: Explore Monorepo Versus Multiple Repos
+title: Explore monorepo versus multiple repos
 metadata:
   title: Explore Monorepo Versus Multiple Repos
-  description: "Learn about different ways to organize your code repositories for better team collaboration"
-  ms.date: 09/09/2025
+  description: "Learn the differences between monorepo and multiple repository strategies and when to use each approach"
+  ms.date: 09/10/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

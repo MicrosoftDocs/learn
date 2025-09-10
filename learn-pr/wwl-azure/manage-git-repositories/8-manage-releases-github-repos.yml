@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-git-repositories.manage-releases-github-repos
-title: Manage Releases With GitHub Repos
+title: Manage releases with GitHub repos
 metadata:
   title: Manage Releases With GitHub Repos
   description: "Learn how to create, edit, and manage software releases using GitHub repositories"
-  ms.date: 09/09/2025
+  ms.date: 09/10/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
