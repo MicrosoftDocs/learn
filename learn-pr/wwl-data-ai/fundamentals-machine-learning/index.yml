@@ -20,11 +20,10 @@ abstract: |
   -   Describe core concepts of machine learning
   -   Identify different types of machine learning
   -   Describe considerations for training and evaluating machine learning models
-  -   Describe core concepts of deep learning and Transformers
+  -   Describe core concepts of deep learning
 prerequisites: |
   Before starting this module, you should have:
   - A basic knowledge of mathematics
-  - Familiarity with Microsoft Azure and cloud computing
 iconUrl: /training/achievements/fundamentals-of-machine-learning.svg
 levels:
 - beginner
