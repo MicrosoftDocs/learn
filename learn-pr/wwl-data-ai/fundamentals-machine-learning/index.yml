@@ -3,7 +3,7 @@ uid: learn.wwl.fundamentals-machine-learning
 metadata:
   title: Introduction to Machine Learning Concepts
   description: "Machine learning is the basis for most modern artificial intelligence solutions. A familiarity with the core concepts on which machine learning is based is an important foundation for understanding AI."
-  ms.date: 08/29/2025
+  ms.date: 09/10/2025
   ms.update-cycle: 180-days
   author: wwlpublish
   ms.author: gmalc
@@ -42,7 +42,6 @@ units:
 - learn.wwl.fundamentals-machine-learning.multiclass-classification
 - learn.wwl.fundamentals-machine-learning.clustering
 - learn.wwl.fundamentals-machine-learning.deep-learning
-- learn.wwl.fundamentals-machine-learning.transformers
 - learn.wwl.fundamentals-machine-learning.exercise
 - learn.wwl.fundamentals-machine-learning.knowledge-check
 - learn.wwl.fundamentals-machine-learning.summary
