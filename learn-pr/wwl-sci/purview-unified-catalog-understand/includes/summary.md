@@ -16,5 +16,5 @@ In this module you learned how to:
 
 ## Resources
 
-- [Learn about Microsoft Purview Unified Catalog](/purview/unified-catalog)
-- [Unified Catalog responsible AI FAQ](/purview/unified-catalog-responsible-ai-faq)
+- [Learn about Microsoft Purview Unified Catalog](/purview/unified-catalog?azure-portal=true)
+- [Unified Catalog responsible AI FAQ](/purview/unified-catalog-responsible-ai-faq?azure-portal=true)

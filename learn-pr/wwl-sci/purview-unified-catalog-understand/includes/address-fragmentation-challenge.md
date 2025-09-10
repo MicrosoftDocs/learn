@@ -2,7 +2,7 @@ Microsoft Purview Unified Catalog addresses fragmentation by giving organization
 
 To overcome these challenges, Unified Catalog provides capabilities that make data easier to manage, govern, and trust:
 
-- **Centralizing data assets** with the [Microsoft Purview Data Map](/purview/data-map), which inventories sources across cloud and on-premises to provide a complete view of what exists and where it lives.
+- **Centralizing data assets** with the [Microsoft Purview Data Map](/purview/data-map?azure-portal=true), which inventories sources across cloud and on-premises to provide a complete view of what exists and where it lives.
 - **Adding business context** with governance concepts such as glossary terms and domains, so definitions like _active customer_ are consistent across the organization.
 - **Supporting self-service discovery** with curated products that let analysts and developers find trusted information without piecing together raw sources.
 - **Applying consistent governance** by enforcing access, classification, and quality controls across the estate.
