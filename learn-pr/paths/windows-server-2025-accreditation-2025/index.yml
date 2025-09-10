@@ -25,6 +25,6 @@ products:
 modules:
   - learn.dpu.introduction-to-windows-server-2025
   - learn.dpu.windows-server-2025-features-explained
-  - learn.dpu.azure-integrations-and-benefits
+  - learn.dpu.azure-integrations-and-benefits-in-windows-server-2025
 trophy:
   uid: learn.dpu.windows-server-2025-accreditation-2025.trophy
