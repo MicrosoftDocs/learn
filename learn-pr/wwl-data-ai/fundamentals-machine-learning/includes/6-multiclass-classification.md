@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3bb4daf5-6b34-45d7-9c53-ede8ed6ea6db]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 *Multiclass classification* is used to predict to which of multiple possible classes an observation belongs. As a supervised machine learning technique, it follows the same iterative *train, validate, and evaluate* process as regression and binary classification in which a subset of the training data is held back to validate the trained model.
 
 ## Example - multiclass classification
@@ -92,3 +103,5 @@ To calculate the overall accuracy, recall, and precision metrics, you use the to
 The overall F1-score is calculated using the overall recall and precision metrics:
 
 - **Overall F1-score** = (2x0.86x0.86)&#247;(0.86+0.86) = **0.86**
+
+::: zone-end

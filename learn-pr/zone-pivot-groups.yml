@@ -484,3 +484,11 @@ groups:
       title: Android (Kotlin)
     - id: iosmacos
       title: iOS/macOS (Swift)
+- id: video-or-text
+  title: Video or Text
+  prompt: Choose your preferred content format
+  pivots:
+    - id: video
+      title: Video
+    - id: text
+      title: Text and images
