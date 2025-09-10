@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.identify-technical-debt.examine-complexity-quality-metrics
-title: Examine Complexity and Quality Metrics
+title: Examine complexity and quality metrics
 metadata:
-  title: Examine Complexity and Quality Metrics
+  title: Examine Complexity And Quality Metrics
   description: "Understand key metrics that help you measure code complexity and quality in your development process."
-  ms.date: 09/09/2025
+  ms.date: 09/10/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

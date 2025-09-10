@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.identify-technical-debt.measure-manage-technical-debt
-title: Measure and Manage Technical Debt
+title: Measure and manage technical debt
 metadata:
-  title: Measure and Manage Technical Debt
+  title: Measure And Manage Technical Debt
   description: "Set up automated quality checks in your pipelines to measure and manage technical debt effectively."
-  ms.date: 09/09/2025
+  ms.date: 09/10/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

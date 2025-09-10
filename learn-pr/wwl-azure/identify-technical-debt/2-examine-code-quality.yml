@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.identify-technical-debt.examine-code-quality
-title: Examine Code Quality
+title: Examine code quality
 metadata:
   title: Examine Code Quality
   description: "Learn what makes code high-quality and how to measure these characteristics in your projects."
-  ms.date: 09/09/2025
+  ms.date: 09/10/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

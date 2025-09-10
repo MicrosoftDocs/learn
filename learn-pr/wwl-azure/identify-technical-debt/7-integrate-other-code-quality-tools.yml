@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.identify-technical-debt.integrate-other-code-quality-tools
-title: Integrate Other Code Quality Tools
+title: Integrate other code quality tools
 metadata:
   title: Integrate Other Code Quality Tools
   description: "Explore different code quality tools and learn how to choose the right ones for your projects."
-  ms.date: 09/09/2025
+  ms.date: 09/10/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
