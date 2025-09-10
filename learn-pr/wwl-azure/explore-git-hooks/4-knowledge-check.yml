@@ -3,13 +3,13 @@ uid: learn.wwl.explore-git-hooks.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: "Knowledge check"
-  ms.date: 05/08/2024
-  author: wwlpublish
+  description: "Knowledge Check"
+  ms.date: 09/10/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
   module_assessment: true
 durationInMinutes: 5
 content: |
@@ -17,36 +17,58 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following choices isn't a Git hook event?"
-    choices:
-    - content: "Post-checkout."
-      isCorrect: false
-      explanation: "Incorrect. Hooks must be stored in the .git/hooks folder in the repo root, and they must be named to match the corresponding events like post-checkout, pre-commit, post-commit, update, and so on."
-    - content: "Pre-commit."
-      isCorrect: false
-      explanation: "Incorrect. Hooks must be stored in the .git/hooks folder in the repo root, and they must be named to match the corresponding events like post-checkout, pre-commit, post-commit, update, and so on."
-    - content: "After-commit."
-      isCorrect: true
-      explanation: "Correct. Hooks must be stored in the .git/hooks folder in the repo root, and they must be named to match the corresponding events like post-checkout, pre-commit, post-commit, update, and so on."
-  - content: "Which of the following choices is a practical use case for using Git hooks?"
-    choices:
-    - content: "Enforce preconditions for merging applying custom code with the event post-merge."
-      isCorrect: false
-      explanation: "Incorrect. There are some examples of where you can use hooks to enforce policies and one is sending notifications to your team’s chat room (Teams, Slack, HipChat, and so on)."
-    - content: "Send notifications to your team’s chat room."
-      isCorrect: true
-      explanation: "Correct. There are some examples of where you can use hooks to enforce policies and one is sending notifications to your team’s chat room (Teams, Slack, HipChat, and so on)."
-    - content: "Validate code and merge branches automatically using the commit-msg event."
-      isCorrect: false
-      explanation: "Incorrect. There are some examples of where you can use hooks to enforce policies and one is sending notifications to your team’s chat room (Teams, Slack, HipChat, and so on)."
-  - content: "Which of the following choices is a valid event to verify Work Item ID association in your commit message before commit?"
-    choices:
-    - content: "Commit-msg."
-      isCorrect: true
-      explanation: "Correct. For example, you could have a hook into the commit-msg event to validate that the commit message structure follows the recommended format, or it's associated with a work item."
-    - content: "Commit-msg-id."
-      isCorrect: false
-      explanation: "Incorrect. For example, you could have a hook into the commit-msg event to validate that the commit message structure follows the recommended format, or it's associated with a work item."
-    - content: "Msg-commit."
-      isCorrect: false
-      explanation: "Incorrect. For example, you could have a hook into the commit-msg event to validate that the commit message structure follows the recommended format, or it's associated with a work item."
+    - content: "Your development team works on Windows, macOS, and Linux computers. What is the best way to make sure Git hooks work the same on all platforms?"
+      choices:
+        - content: "Use different hook scripts for each operating system."
+          isCorrect: false
+          explanation: "Incorrect. Using different scripts for each platform creates maintenance overhead and inconsistency. The `#!/usr/bin/env bash` shebang automatically finds the bash interpreter on any platform."
+        - content: "Use `#!/usr/bin/env bash` at the start of hook scripts."
+          isCorrect: true
+          explanation: "Correct. The `#!/usr/bin/env bash` shebang automatically finds the bash interpreter on any platform, so you don't need different paths for different operating systems. It ensures the hooks work the same way everywhere."
+        - content: "Make all developers use the same operating system."
+          isCorrect: false
+          explanation: "Incorrect. Forcing all developers to use the same operating system isn't practical in modern development teams. Cross-platform compatibility is the better approach."
+    - content: "When creating pre-commit hooks to find passwords and secrets in code, which approach provides the best security coverage?"
+      choices:
+        - content: "Only check for the word *password* in files."
+          isCorrect: false
+          explanation: "Incorrect. Checking only for *password* is too limited. Modern applications use many types of credentials including API keys, tokens, and certificates that wouldn't be caught."
+        - content: "Use pattern matching with regular expressions to find multiple types of credentials."
+          isCorrect: true
+          explanation: "Correct. Pattern matching with regular expressions allows you to find various types of credentials (API keys, tokens, certificates, connection strings) and provides better security coverage while reducing false alarms."
+        - content: "Only use manual code review to find credentials."
+          isCorrect: false
+          explanation: "Incorrect. Manual review alone is error-prone and doesn't scale well. Automated detection should be the first line of defense, with manual review as a backup."
+    - content: "Your organization wants to make sure all commit messages follow the same standards across all development teams. Which Git hook is best for it?"
+      choices:
+        - content: "Pre-commit."
+          isCorrect: false
+          explanation: "Incorrect. The pre-commit hook runs before the commit message is created, so it can't validate the commit message content."
+        - content: "Commit-msg."
+          isCorrect: true
+          explanation: "Correct. The commit-msg hook is designed specifically to check and enforce commit message standards. It runs after the commit message is created but before the commit is completed."
+        - content: "Post-commit."
+          isCorrect: false
+          explanation: "Incorrect. The post-commit hook runs after the commit is completed, so it's too late to validate or reject the commit message."
+    - content: "For teams with many developers, what is the recommended way to deploy and manage Git hooks?"
+      choices:
+        - content: "Install hooks manually on each developer's computer."
+          isCorrect: false
+          explanation: "Incorrect. Manual installation doesn't scale well and can lead to inconsistencies. It's also difficult to update hooks across the team."
+        - content: "Use version-controlled hooks with central deployment strategies."
+          isCorrect: true
+          explanation: "Correct. Version-controlled hook management enables central deployment, automatic updates, consistent standards across teams, and simplified onboarding processes."
+        - content: "Let each developer configure hooks individually."
+          isCorrect: false
+          explanation: "Incorrect. Individual configuration leads to inconsistency and makes it difficult to enforce team-wide standards and policies."
+    - content: "Your pre-commit hooks are taking too long and slowing down the development workflow. Which optimization strategy would be most effective?"
+      choices:
+        - content: "Remove all validation checks to improve speed."
+          isCorrect: false
+          explanation: "Incorrect. Removing all validation defeats the purpose of having quality gates. The goal is to optimize performance while maintaining quality standards."
+        - content: "Only process files that have changed."
+          isCorrect: true
+          explanation: "Correct. Smart validation that focuses only on changed files significantly reduces processing time while maintaining quality standards. This approach optimizes performance without reducing validation coverage."
+        - content: "Run all validation checks on every commit regardless of changes."
+          isCorrect: false
+          explanation: "Incorrect. Running all checks on every commit, even for unchanged files, wastes time and resources. Selective processing is more efficient."

@@ -1,102 +1,423 @@
-Prioritizing code quality in the development process should start with local code development. It's important to identify opportunities for this practice even before starting pull requests to detect and rectify potential code quality issues.
+This guide shows you how to create, deploy, and manage Git hooks for development teams. Learn modern cross-platform techniques, security-focused implementations, and strategies for scaling hooks across large development teams.
 
-Git hooks offer a great opportunity. They serve as a mechanism for executing custom scripts in response to significant events within the Git lifecycle, such as commits, merges, and pushes. The scripts, located within the .git\\hooks directory of the repository, provide practically unlimited flexibility in automating software development tasks and enforcing development standards.<br>
+## Modern Git hooks setup
 
-## How to implement Git hooks
+Git hooks implementation requires careful thinking about cross-platform compatibility, maintainability, and team deployment strategies. Modern approaches focus on version-controlled hook management and automatic distribution rather than manual setup.
 
-Let's start by exploring client-side Git hooks. Navigate to the repo .git\\hooks directory – you find there many files with the extension `sample`. This extension not only indicates their purpose, but also effectively prevents them from running. The file names designate the Git actions that trigger their execution once you remove the `sample` extension.<br>
+### Cross-platform hook development
 
-:::image type="content" source="../media/git-hook-files-8bce9eb8.png" alt-text="Screenshot of Git hook files for automation.":::
+Modern development environments need Git hooks that work the same way across Windows, macOS, and Linux development environments.
 
+#### Universal implementation
 
-Rename the pre-commit `sample` file to pre-commit. As the name of the file indicates, the script it contains will run whenever you invoke the git commit action. The commit follows only if your pre-commit script exits with the 0 return value.
-
-However, it's important to note that, by default, this won't work as intended in any of the Windows operating systems. The commonly overlooked reason for this behavior is the first line of the script:<br>
-
-```Bash
-#!/bin/sh
+```bash
+#!/usr/bin/env bash
+# Cross-platform compatible shebang that automatically finds bash interpreter
+# Works consistently across Windows Git Bash, macOS, and Linux environments
 ```
 
-On Linux operating systems, the \#! prefix indicates to the program loader that the remainder of the file contains a script to be interpreted and /bin/sh is the full path to the interpreter that should be used.
+This approach removes the platform-specific path problems that cause issues with traditional implementations and ensures consistent behavior across different development environments.
 
-While Git for Windows supports Bash commands and shell scripts, it doesn't follow the same convention when designating file system paths. Instead, you need to provide full path to the sh.exe file, starting with the drive letter.
+#### Environment detection strategy
 
-However, there's an extra caveat, which results from the fact Git for Windows by default gets installed in the C:\\Program Files directory. Since this directory contains a space in its name, the resulting path to the sh.exe file would be interpreted as two separate paths, resulting in a failure. To avoid it, it's necessary to add a single backslash (\\) in front of the space to serve as an escape character. Effectively, when using the 64-bit version of Git for Windows, the first line of the script should have the following format:
-
-```Bash
-#!C:/Program\ Files/Git/usr/bin/sh.exe
+```bash
+#!/usr/bin/env bash
+# Smart environment detection for platform-specific optimizations
+detect_environment() {
+    if [[ "$OSTYPE" == "msys" ]] || [[ "$OSTYPE" == "win32" ]]; then
+        PLATFORM="windows"
+        PYTHON_CMD="python"
+    elif [[ "$OSTYPE" == "darwin"* ]]; then
+        PLATFORM="macos"
+        PYTHON_CMD="python3"
+    else
+        PLATFORM="linux"
+        PYTHON_CMD="python3"
+    fi
+}
 ```
 
-## How to do it
+## Enterprise pre-commit hook implementation
 
-How can you use the newly discovered functionality of Git pre-commit scripts? How about stopping you from accidentally leaking secrets to GitHub?
+### Security-focused credential detection
 
-Let's use the Git hook to scan the code being committed into your local repository for specific keywords. Replace the content of the pre-commit shell file with the following code:
+Implement sophisticated credential detection that goes beyond simple keyword matching:
 
-```Bash
-#!C:/Program\ Files/Git/usr/bin/sh.exe
-matches=$(git diff-index --patch HEAD | grep '^+' | grep -Pi 'password|secret')
-if [ ! -z "$matches" ]
-then
-  cat <<\EOT
-Error: Words from the blocked list were present in the diff:
-EOT
-echo $matches
-exit 1
-fi
+```bash
+#!/usr/bin/env bash
+# Advanced credential detection with pattern recognition
+
+check_credentials() {
+    local staged_files=$(git diff --cached --name-only)
+    local violations=""
+
+    # Define comprehensive credential patterns
+    local patterns=(
+        "password\s*[=:]\s*['\"][^'\"]{8,}"
+        "api[_-]?key\s*[=:]\s*['\"][^'\"]{20,}"
+        "secret\s*[=:]\s*['\"][^'\"]{16,}"
+        "token\s*[=:]\s*['\"][^'\"]{24,}"
+        "-----BEGIN\s+(RSA\s+)?PRIVATE\s+KEY-----"
+        "mysql://.*:.*@"
+        "postgresql://.*:.*@"
+    )
+
+    for file in $staged_files; do
+        if [ -f "$file" ]; then
+            for pattern in "${patterns[@]}"; do
+                if git show ":$file" | grep -qiE "$pattern"; then
+                    violations+="Potential credential detected in $file\n"
+                fi
+            done
+        fi
+    done
+
+    if [ ! -z "$violations" ]; then
+        echo -e "Security Alert: Credential Detection\n"
+        echo -e "$violations"
+        echo -e "Please remove sensitive information before committing\n"
+        return 1
+    fi
+
+    return 0
+}
+
+# Execute security validation
+check_credentials || exit 1
 ```
 
-This example is meant to illustrate the concept rather than a full-fledged solution, so the keyword list is intentionally trivial. By using regular expressions, you can significantly extend it scope and flexibility. You also have the option of referencing an external file, which would considerably simplify ongoing maintenance.
+### Comprehensive code quality validation
 
-## How It Works
+Implement multi-language code quality enforcement that adapts to your technology stack:
 
-Once invoked, the pre-commit hook script uses the git diff and grep commands to identify keywords or patterns within the incremental changes to the code that are being committed. If any matches are detected, the script generates an error message and prevents the commit from taking place.
+```bash
+#!/usr/bin/env bash
+# Enterprise code quality validation framework
 
-## There's More:
+validate_code_quality() {
+    local staged_files=$(git diff --cached --name-only --diff-filter=ACM)
+    local quality_violations=0
 
-Other, common use cases of pre-commit hook scripts include code formatting, linting, or running custom tests to ensure the commit adheres to project standards. Prepare-commit-msg runs before the commit message editor is launched. It allows for dynamic generation of commit messages in order to enforce naming conventions, such as the use of designated prefixes (for example, feat: for features or fix: for bug fixes).
+    echo "Performing code quality validation..."
 
-For example, the following prepare-commit-msg script automatically prepends the current branch name to the commit message when creating a new commit. It modifies the commit message file ($1) by adding the branch name followed by a colon and space at the beginning of the file.
+    for file in $staged_files; do
+        case "$file" in
+            *.js|*.jsx|*.ts|*.tsx)
+                if command -v npx >/dev/null 2>&1; then
+                    echo "Linting JavaScript/TypeScript: $file"
+                    npx eslint "$file" || ((quality_violations++))
 
-```Bash
-#!C:/Program\ Files/Git/usr/bin/sh.exe
-# Get the current branch name
-branch_name=$(git branch --show-current)
-# Check if the commit message file exists
-if [[ -f "$1" ]]; then
-  # Prepend the branch name to the commit message
-  sed -i "1s/^/$branch_name: /" "$1"
-fi
+                    if [[ "$file" =~ \.(ts|tsx)$ ]]; then
+                        echo "Type checking: $file"
+                        npx tsc --noEmit --skipLibCheck "$file" || ((quality_violations++))
+                    fi
+                fi
+                ;;
+            *.py)
+                if command -v python3 >/dev/null 2>&1; then
+                    echo "Linting Python: $file"
+                    python3 -m flake8 "$file" || ((quality_violations++))
+
+                    if command -v mypy >/dev/null 2>&1; then
+                        echo "Type checking Python: $file"
+                        python3 -m mypy "$file" || ((quality_violations++))
+                    fi
+                fi
+                ;;
+            *.cs)
+                if command -v dotnet >/dev/null 2>&1; then
+                    echo "Formatting C#: $file"
+                    dotnet format --verify-no-changes --include "$file" || ((quality_violations++))
+                fi
+                ;;
+            *.go)
+                if command -v go >/dev/null 2>&1; then
+                    echo "Formatting Go: $file"
+                    if ! gofmt -l "$file" | grep -q .; then
+                        gofmt -w "$file"
+                        git add "$file"
+                    fi
+
+                    echo "Linting Go: $file"
+                    golint "$file" || ((quality_violations++))
+                fi
+                ;;
+        esac
+    done
+
+    if [ $quality_violations -gt 0 ]; then
+        echo "Code quality validation failed with $quality_violations violations"
+        echo "Please fix the issues above before committing"
+        return 1
+    fi
+
+    echo "Code quality validation passed"
+    return 0
+}
+
+# Execute quality validation
+validate_code_quality || exit 1
 ```
 
-Post-commit scripts executes after a commit completes. It can be used to trigger notifications or generate documentation.
+### Intelligent test execution strategy
 
-For example, the following script sends an email notification to a designated recipient after each commit. The script can be customized by modifying the recipient email address, SMTP server, and subject and body of the email. Additionally, you may need to configure your system to send emails using the Send-MailMessage PowerShell cmdlet or use a different method to send notifications, depending on your environment and requirements.
+Implement smart test execution that runs only relevant tests based on changed code:
 
-```Bash
-#!C:/Program\ Files/Git/usr/bin/sh.exe
-# Set the recipient email address
-$recipient="your@email.com"
-# Set the subject of the email
-$subject="Git Commit Notification"
-# Set the body of the email
-$body="A new commit has been made to the repository."
-# Send the email notification
-Send-MailMessage -To $recipient -Subject $subject -Body $body -SmtpServer "your.smtp.server"
+```bash
+#!/usr/bin/env bash
+# Intelligent test execution based on change impact
+
+execute_relevant_tests() {
+    local changed_files=$(git diff --cached --name-only)
+    local test_failures=0
+
+    echo "Analyzing test requirements for changed files..."
+
+    # Check if source code changes require testing
+    if echo "$changed_files" | grep -qE "\.(js|jsx|ts|tsx|py|cs|go)$"; then
+        echo "Source code changes detected, running relevant tests..."
+
+        # JavaScript/TypeScript projects
+        if [ -f "package.json" ] && command -v npm >/dev/null 2>&1; then
+            if echo "$changed_files" | grep -qE "\.(js|jsx|ts|tsx)$"; then
+                echo "Running JavaScript/TypeScript tests..."
+                npm test -- --findRelatedTests $changed_files --passWithNoTests || ((test_failures++))
+            fi
+        fi
+
+        # Python projects
+        if [ -f "requirements.txt" ] || [ -f "pyproject.toml" ]; then
+            if echo "$changed_files" | grep -qE "\.py$"; then
+                echo "Running Python tests..."
+                if command -v pytest >/dev/null 2>&1; then
+                    pytest --tb=short || ((test_failures++))
+                elif command -v python3 >/dev/null 2>&1; then
+                    python3 -m unittest discover || ((test_failures++))
+                fi
+            fi
+        fi
+
+        # .NET projects
+        if find . -name "*.csproj" -o -name "*.sln" | grep -q .; then
+            if echo "$changed_files" | grep -qE "\.cs$"; then
+                echo "Running .NET tests..."
+                dotnet test --no-build --verbosity minimal || ((test_failures++))
+            fi
+        fi
+
+        # Go projects
+        if [ -f "go.mod" ]; then
+            if echo "$changed_files" | grep -qE "\.go$"; then
+                echo "Running Go tests..."
+                go test ./... || ((test_failures++))
+            fi
+        fi
+    fi
+
+    if [ $test_failures -gt 0 ]; then
+        echo "Test execution failed"
+        echo "Please fix failing tests before committing"
+        return 1
+    fi
+
+    echo "All relevant tests passed"
+    return 0
+}
+
+# Execute intelligent testing
+execute_relevant_tests || exit 1
 ```
 
-It's worth noting that the repo .git\\hooks folder isn't committed into source control. You may wonder whether there's a way to share the scripts you developed with other member of your development team. The good news is that, starting with Git version 2.9, you can map Git hooks to a folder that can be committed into source control. You could do that by updating the global settings configuration for your Git repository:
+## Advanced commit message automation
 
-```Bash
-Git config --global core.hooksPath '~/.githooks'
+### Prepare-commit-msg hook implementation
+
+Automate commit message generation to ensure consistency and include necessary metadata:
+
+```bash
+#!/usr/bin/env bash
+# Automated commit message enhancement with Azure DevOps integration
+
+enhance_commit_message() {
+    local commit_msg_file="$1"
+    local commit_source="$2"
+    local sha="$3"
+
+    # Skip automation for merge commits, amend commits, etc.
+    if [ -n "$commit_source" ]; then
+        return 0
+    fi
+
+    # Get current branch information
+    local current_branch=$(git branch --show-current)
+    local branch_prefix=""
+
+    # Extract work item ID from branch name if present
+    if [[ "$current_branch" =~ ^(feature|bugfix|hotfix)/([0-9]+) ]]; then
+        local work_item_id="${BASH_REMATCH[2]}"
+        branch_prefix="AB#$work_item_id: "
+    elif [[ "$current_branch" =~ ^(feature|bugfix|hotfix)/(.+)$ ]]; then
+        local feature_name="${BASH_REMATCH[2]}"
+        branch_prefix="[$feature_name] "
+    fi
+
+    # Read existing commit message
+    local existing_message=$(cat "$commit_msg_file")
+
+    # Only add prefix if not already present
+    if [ ! -z "$branch_prefix" ] && ! echo "$existing_message" | grep -q "^$branch_prefix"; then
+        # Create enhanced commit message
+        echo "${branch_prefix}${existing_message}" > "$commit_msg_file"
+    fi
+
+    # Add commit template if message is empty
+    if [ -z "$existing_message" ] || [ "$existing_message" = "" ]; then
+        cat >> "$commit_msg_file" << EOF
+${branch_prefix}Brief description of changes
+
+# Detailed explanation of what and why changes were made
+#
+# Include:
+# - What problem this solves
+# - Why this approach was chosen
+# - Any breaking changes or migration notes
+#
+# Link to work items: AB#1234
+EOF
+    fi
+}
+
+enhance_commit_message "$@"
 ```
 
-If you ever need to overwrite the Git hooks you have set up on the client-side, you can do so by using the no-verify switch:
+### Commit message validation hook
 
-```Bash
-Git commit --no-verify
+Ensure commit messages meet organizational standards:
+
+```bash
+#!/usr/bin/env bash
+# Comprehensive commit message validation
+
+validate_commit_message() {
+    local commit_msg_file="$1"
+    local commit_message=$(cat "$commit_msg_file")
+
+    # Remove comment lines for validation
+    local clean_message=$(echo "$commit_message" | grep -v '^#' | sed '/^$/d')
+
+    # Check minimum length
+    if [ ${#clean_message} -lt 10 ]; then
+        echo "Commit message too short (minimum 10 characters)"
+        return 1
+    fi
+
+    # Check maximum length for first line
+    local first_line=$(echo "$clean_message" | head -n1)
+    if [ ${#first_line} -gt 72 ]; then
+        echo "Commit message first line too long (maximum 72 characters)"
+        echo "Current length: ${#first_line}"
+        return 1
+    fi
+
+    # Check for work item reference in enterprise environments
+    if ! echo "$clean_message" | grep -qE "(AB#[0-9]+|#[0-9]+|closes #[0-9]+|fixes #[0-9]+)"; then
+        echo "Commit message should reference a work item (e.g., AB#1234 or #1234)"
+        echo "Continue anyway? (y/N)"
+        read -r response
+        if [[ ! "$response" =~ ^[Yy]$ ]]; then
+            return 1
+        fi
+    fi
+
+    # Check for conventional commit format (optional)
+    if echo "$first_line" | grep -qE "^(feat|fix|docs|style|refactor|test|chore)(\(.+\))?: "; then
+        echo "Conventional commit format detected"
+    fi
+
+    echo "Commit message validation passed"
+    return 0
+}
+
+validate_commit_message "$@" || exit 1
 ```
 
-### Server-Side Hooks
+## Azure DevOps integration
 
-While client-side Git hooks offer robust capabilities for enhancing the development workflow, Azure Repos also provides server-side hooks to further augment the development process, including support for creating pull requests. For more information, see the Azure Repos [Service hooks events](/azure/devops/service-hooks/events) reference.<br>
+### Server-side hook integration
+
+Use Azure DevOps service hooks for server-side automation:
+
+```bash
+#!/usr/bin/env bash
+# Azure DevOps webhook integration for advanced workflows
+
+trigger_azure_validation() {
+    local branch_name=$(git branch --show-current)
+    local commit_sha=$(git rev-parse HEAD)
+
+    # Trigger Azure Pipelines validation build
+    if command -v az >/dev/null 2>&1; then
+        echo "Triggering Azure DevOps validation pipeline..."
+
+        az pipelines build queue \
+            --definition-name "PR-Validation" \
+            --branch "$branch_name" \
+            --commit-id "$commit_sha" \
+            --output table
+    fi
+}
+
+# Integration with Azure Boards
+update_work_item() {
+    local commit_message="$1"
+
+    # Extract work item ID from commit message
+    if [[ "$commit_message" =~ AB#([0-9]+) ]]; then
+        local work_item_id="${BASH_REMATCH[1]}"
+
+        echo "Updating Azure Boards work item #$work_item_id..."
+
+        # Add commit information to work item
+        az boards work-item update \
+            --id "$work_item_id" \
+            --discussion "Commit $(git rev-parse --short HEAD): $(echo "$commit_message" | head -n1)"
+    fi
+}
+```
+
+## Performance optimization and best practices
+
+### Hook performance guidelines
+
+Implement performance optimizations to maintain developer productivity:
+
+```bash
+#!/usr/bin/env bash
+# Performance-optimized hook implementation
+
+optimize_hook_performance() {
+    # Cache expensive operations
+    local cache_dir=".git/hooks-cache"
+    mkdir -p "$cache_dir"
+
+    # Only run expensive checks on changed files
+    local changed_files=$(git diff --cached --name-only)
+
+    # Implement timeout protection
+    timeout 30s expensive_operation || {
+        echo "Hook operation timed out, skipping..."
+        return 0
+    }
+
+    # Provide progress feedback for long operations
+    echo "Running validation (this may take a moment)..."
+}
+
+# Implement graceful degradation
+fallback_validation() {
+    echo "Primary validation failed, running minimal checks..."
+    # Implement basic validation as fallback
+}
+```
+
+This comprehensive implementation guide provides the foundation for sophisticated enterprise Git hooks that enhance security, quality, and compliance while maintaining developer productivity and workflow efficiency.
