@@ -21,7 +21,7 @@ abstract: |
   - Evaluate scenarios where hybrid management improves flexibility and scalability.
 prerequisites: |
   - None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-integrations-and-benefits.svg
 ratingEnabled: false
 levels:
   - beginner
