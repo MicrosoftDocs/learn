@@ -3,8 +3,8 @@ uid: learn.quantum.estimate-resources-quantum-algorithms.resource-estimation-in-
 title: Why is resource estimation important?
 metadata:
   title: Why is resource estimation important in quantum computing?
-  description: Learn what resource estimation is and why it is important in quantum computing.
-  ms.date: 01/22/2025
+  description: Learn what resource estimation is and why it's important in quantum computing.
+  ms.date: 09/08/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-resource-estimation-in-quantum-computing.md)]
-
+

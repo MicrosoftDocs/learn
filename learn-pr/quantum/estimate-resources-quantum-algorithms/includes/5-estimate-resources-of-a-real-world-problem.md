@@ -1,24 +1,29 @@
-In the previous unit, you learned the basic concepts of the Azure Quantum Resource Estimator and how to use it. 
+In the previous unit, you learned how to use the Azure Quantum Resource Estimator and how to understand its output.
 
-In this unit, you'll estimate the resources required to factor a 2,048-bit integer using Shor's algorithm. Shor's factoring algorithm is one of the most well-known quantum algorithms. It offers an exponential speedup over any known classical factoring algorithm.
+In this unit, you estimate the resources required to factor a 2,048-bit integer with Shor's algorithm. Shor's factoring algorithm is one of the most well-known quantum algorithms. It offers an exponential speedup over any known classical factoring algorithm.
 
-Classic cryptography uses physical or mathematical means, like computational difficulty, to accomplish a task. A popular cryptographic protocol is the [Rivest–Shamir–Adleman (RSA) scheme](https://wikipedia.org/wiki/RSA_(cryptosystem)), which is based on the assumption of the difficulty of factoring prime numbers by using a classical computer.
+Classic cryptography uses physical or mathematical methods, like computational difficulty, to accomplish a task. A popular cryptographic protocol is the [Rivest–Shamir–Adleman (RSA) scheme](https://wikipedia.org/wiki/RSA_(cryptosystem)), which is based on the assumption that it's difficult to find the prime number factors of a very large integer on a classical computer.
 
-The Shor's algorithm implies that sufficiently large quantum computers can break public-key cryptography. Estimating the resources required for Shor’s algorithm is important to assess the vulnerability of these types of cryptographic schemes.
+Shor's algorithm implies that sufficiently large quantum computers can break public-key cryptography. To assess the vulnerability of public-key cryptography, it's important to estimate the resources required to run Shor's algorithm.
 
-In the following exercise, you'll calculate the resource estimates for the factoring of a 2,048-bit integer. For this application, you'll compute the physical resource estimates directly from precomputed logical resource estimates. For the error budget, you'll use $\epsilon = 1/3$.
+In the following exercise, you calculate the resource estimates for Shor's algorithm to factor a 2,048-bit integer. For this application, you compute the physical resource estimates directly from precomputed logical resource estimates. For the error budget, you use $\epsilon = 1/3$.
 
-## Write the Shor's algorithm
+## Write Shor's algorithm
 
-1. In Visual Studio Code, select **View > Command palette** and select **Create: New Jupyter Notebook**.
+Before you can estimate the resource requirements, you need a quantum program to pass to the Resource Estimator. To create Shor's algorithm in Q#, follow these steps:
+
+1. Open Visual Studio Code (VS Code).
+1. Choose **View > Command palette**.
+1. In the input box, enter and choose **Create: New Jupyter Notebook**.
 1. Save the notebook as **ShorRE.ipynb**.
-1. In the first cell, import the `qsharp` package:
+1. In the first cell, import the `qsharp` package and the `EstimateDetails` function:
 
     ```python
     import qsharp
+    from qsharp_widgets import EstimateDetails
     ```
 
-1. Add a new cell and copy and paste the following code:
+1. Add a new cell, and then copy the following Shor's algorithm code into that cell:
 
     ```qsharp
     %%qsharp
@@ -383,52 +388,55 @@ In the following exercise, you'll calculate the resource estimates for the facto
     }
     ```
 
-## Estimate the Shor's algorithm
+## Estimate the resource requirements for Shor's algorithm
 
-Now, estimate the physical resources for the `RunProgram` operation using the default assumptions. Add a new cell and copy and paste the following code:
+You now have code for Shor's algorithm. Even if you don't understand exactly how the code works, you can still pass the algorithm to the Resource Estimator to see how viable it is to run on a quantum computer.
+
+To begin, estimate the physical resources required to run the `RunProgram` operation with the default values for all Resource Estimator parameters. Add a new cell, and then copy and run the following code in that cell:
 
 ```python
 result = qsharp.estimate("RunProgram()")
-result
+
+EstimateDetails(result)
 ```
 
-The `qsharp.estimate` function creates a result object you can use to display a table with the overall physical resource counts. You can inspect cost details by collapsing the groups, which have more information.
+The `qsharp.estimate` function creates a result object that contains information from the Resource Estimator. We pass `result` to the `EstimateDetails` function, which displays a set of tables in dropdowns that contain the output from the Resource Estimator.
 
-For example, collapse the **Logical qubit parameters** group to see that the code distance is 21 and the number of physical qubits is 882.
+For example, expand the **Logical qubit parameters** group to see that the code distance is 21 and the number of physical qubits is 882.
 
-|Logical qubit parameter| Value |
-|----|---|
-|QEC scheme                                                |                           surface_code |
-|Code distance                                                                       |            21 |
-|Physical qubits                                                                   |            882 |
-|Logical cycle time                                                                   |   8 milisecs |
-|Logical qubit error rate                                                            |     3.00E-13 |
-|Crossing prefactor                                                                    |       0.03|
-|Error correction threshold                                                             |      0.01|
-|Logical cycle time formula    | (4 * `twoQubitGateTime` + 2 * `oneQubitMeasurementTime`) * `codeDistance`|
-|Physical qubits formula     |                                      2 * `codeDistance` * `codeDistance`|
-
-> [!TIP]
-> For a more compact version of the output table, you can use `result.summary`.
+| Logical qubit parameter    | Value                                                                     |
+|----------------------------|---------------------------------------------------------------------------|
+| QEC scheme                 | surface_code                                                              |
+| Code distance              | 21                                                                        |
+| Physical qubits            | 882                                                                       |
+| Logical cycle time         | 8 microsecs                                                               |
+| Logical qubit error rate   | 3.00e-13                                                                  |
+| Crossing prefactor         | 0.03                                                                      |
+| Error correction threshold | 0.01                                                                      |
+| Logical cycle time formula | (4 * `twoQubitGateTime` + 2 * `oneQubitMeasurementTime`) * `codeDistance` |
+| Physical qubits formula    | 2 * `codeDistance` * `codeDistance`                                       |
 
 ### Visualize the space diagram
 
-The distribution of physical qubits used for the algorithm and the T factories is a factor which might impact your algorithm's design. You can use the `qsharp-widgets` package to visualize this distribution to better understand the algorithm's estimated space requirements.
+Some resource considerations that might affect your algorithm design include the distribution of physical qubits and the number of qubits needed for T factories. You can use the `qsharp-widgets` package to visualize this distribution and better understand the algorithm's estimated space requirements.
+
+Add a new cell, and then copy and run the following code in that cell:
 
 ```python
 from qsharp_widgets import SpaceChart
+
 SpaceChart(result)
 ```
 
-In this example, the number of physical qubits required to run the algorithm is 829766, 196686 of which are algorithm qubits and 633080 of which are T factory qubits.
+This implementation of Shor's algorithm requires a total of 829,766 physical qubits to run, 196,686 of which are algorithm qubits and 633,080 of which are T factory qubits.
 
 :::image type="content" source="../media/resource-estimator-diagram-jupyter.png" alt-text="Screenshot showing the space diagram of the Resource Estimator.":::
 
-## Compare the resource estimates for different qubit technologies
+## Compare resource estimates for different qubit technologies
 
 The Azure Quantum Resource Estimator allows you to run multiple configurations of target parameters and compare the results. This is useful when you want to compare the cost of different qubit models, QEC schemes, or error budgets.
 
-You can also construct a list of estimation parameters using the `EstimatorParams` object.
+You can also construct a list of estimation parameters using the `EstimatorParams` object. To compare estimates, add a new cell and then copy and run the following code in that cell:
 
 ```python
 from qsharp.estimator import EstimatorParams, QubitParams, QECScheme, LogicalCounts
@@ -449,20 +457,22 @@ params.items[5].qec_scheme.name = QECScheme.FLOQUET_CODE
 qsharp.estimate("RunProgram()", params=params).summary_data_frame(labels=labels)
 ```
 
-|Qubit model|Logical qubits|	Logical depth|	T states|	Code distance|	T factories|	T factory fraction|	Physical qubits	|Physical runtime|
-|----|----|----|----|----|----|----|----|----|
-|Gate-based µs, 10⁻³| 223 |3.64M|	4.70M|	17|	13	|40.54 %	|216.77k|		10 hours|
-|Gate-based µs, 10⁻⁴	|223	|3.64M	|4.70M|	9|	14|	43.17 %|	63.57k|	5 hours|
-|Gate-based ns, 10⁻³|	223|	3.64M|	4.70M|	17|	16|	69.08 %	|416.89k|	25 secs|
-|Gate-based ns, 10⁻⁴|	223|	3.64M	|4.70M|	9|	14|	43.17 %|	63.57k|	13 secs|
-|Majorana ns, 10⁻⁴|	223|3.64M|	4.70M|	9|	19|	82.75 %	|501.48k	|10 secs|
-|Majorana ns, 10⁻⁶|	223|3.64M|	4.70M|	5|	13|	31.47 %|	42.96k	|5 secs|
+You get a table as output that contains the resource estimates for each model:
+
+| Qubit model         | Logical qubits | Logical depth | T states | Code distance | T factories | T factory fraction | Physical qubits | Physical runtime |
+|---------------------|----------------|---------------|----------|---------------|-------------|--------------------|-----------------|------------------|
+| Gate-based µs, 10⁻³ | 223            | 3.64M         | 4.70M    | 17            | 13          | 40.54 %            | 216.77k         | 10 hours         |
+| Gate-based µs, 10⁻⁴ | 223            | 3.64M         | 4.70M    | 9             | 14          | 43.17 %            | 63.57k          | 5 hours          |
+| Gate-based ns, 10⁻³ | 223            | 3.64M         | 4.70M    | 17            | 16          | 69.08 %            | 416.89k         | 25 secs          |
+| Gate-based ns, 10⁻⁴ | 223            | 3.64M         | 4.70M    | 9             | 14          | 43.17 %            | 63.57k          | 13 secs          |
+| Majorana ns, 10⁻⁴   | 223            | 3.64M         | 4.70M    | 9             | 19          | 82.75 %            | 501.48k         | 10 secs          |
+| Majorana ns, 10⁻⁶   | 223            | 3.64M         | 4.70M    | 5             | 13          | 31.47 %            | 42.96k          | 5 secs           |
 
 ## Extract resource estimates from logical resource counts
 
-If you already know some estimates for an operation, the Resource Estimator allows you to incorporate the known estimates into the overall program cost to reduce the execution time. You can use the `LogicalCounts` class to extract the logical resource estimates from precalculated resource estimation values.
+If you already know some estimates for an operation, the Resource Estimator allows you to incorporate the known estimates into the overall program cost, which reduces the run time of the Resource Estimator. Use the `LogicalCounts` class to extract the logical resource estimates from precalculated resource estimation values.
 
-Select **Code** to add a new cell, and then enter and run the following code:
+Add a new cell, and then copy and run the following code in that cell:
 
 ```python
 logical_counts = LogicalCounts({
@@ -476,21 +486,21 @@ logical_counts = LogicalCounts({
 logical_counts.estimate(params).summary_data_frame(labels=labels)
 ```
 
-|Qubit model|Logical qubits|	Logical depth|	T states|	Code distance |	T factories	| T factory fraction| Physical qubits |	Physical runtime|
-|---|---|---|---|---|---|---|---|---|
-|Gate-based µs, 10⁻³|	25481|	1.2e+10|	1.5e+10	|27|	13|	0.6%|	37.38M|	6 years|
-|Gate-based µs, 10⁻⁴|	25481|	1.2e+10|	1.5e+10	|13|	14|	0.8%|	8.68M|	3 years|
-|Gate-based ns, 10⁻³|	25481| 1.2e+10 | 1.5e+10	|27|	15|	1.3%|	37.65M|	2 days|
-|Gate-based ns, 10⁻⁴|	25481|	1.2e+10	|1.5e+10	|13	|18|	1.2%|	8.72M|	18 hours|
-|Majorana ns, 10⁻⁴	|   25481|	1.2e+10	|1.5e+10	|15	|15|	1.3%|	26.11M|	15 hours|
-|Majorana ns, 10⁻⁶	|   25481|	1.2e+10	|1.5e+10	|7	|13	|0.5%|	6.25M|	7 hours|
+The values in the new comparison table are affected by the constraints that you passed to `LogicalCounts`.
+
+| Qubit model         | Logical qubits | Logical depth | T states | Code distance | T factories | T factory fraction | Physical qubits | Physical runtime |
+|---------------------|----------------|---------------|----------|---------------|-------------|--------------------|-----------------|------------------|
+| Gate-based µs, 10⁻³ | 25481          | 1.2e+10       | 1.5e+10  | 27            | 13          | 0.6%               | 37.38M          | 6 years          |
+| Gate-based µs, 10⁻⁴ | 25481          | 1.2e+10       | 1.5e+10  | 13            | 14          | 0.8%               | 8.68M           | 3 years          |
+| Gate-based ns, 10⁻³ | 25481          | 1.2e+10       | 1.5e+10  | 27            | 15          | 1.3%               | 37.65M          | 2 days           |
+| Gate-based ns, 10⁻⁴ | 25481          | 1.2e+10       | 1.5e+10  | 13            | 18          | 1.2%               | 8.72M           | 18 hours         |
+| Majorana ns, 10⁻⁴   | 25481          | 1.2e+10       | 1.5e+10  | 15            | 15          | 1.3%               | 26.11M          | 15 hours         |
+| Majorana ns, 10⁻⁶   | 25481          | 1.2e+10       | 1.5e+10  | 7             | 13          | 0.5%               | 6.25M           | 7 hours          |
 
 ## Conclusion
 
-In the worst scenario, a quantum computer using gate-based µs qubits (qubits that have operation times in the nanosecond regime, such as superconducting qubits) and a surface QEC code would need six years and 37.38 millions of qubits to factor a 2,048-bit integer by using Shor's algorithm.
+In the worst scenario, a quantum computer that uses gate-based µs qubits (qubits that have operation times in the microsecond regime, such as superconducting qubits) and a surface QEC code would need six years and 37.38 million qubits to factor a 2,048-bit integer with Shor's algorithm.
 
-If you use a different qubit technology—for example, gate-based ns ion qubits—and the same surface code, the number of qubits doesn't change much, but the runtime becomes two days in the worst case and 18 hours in the optimistic case. If you change the qubit technology and the QEC code—for example, by using Majorana-based qubits—factoring a 2,048-bit integer by using Shor’s algorithm could be done in hours with an array of 6.25 millions of qubits in the best-case scenario.
+If you use a different qubit technology, for example gate-based ns ion qubits, and the same surface code, the number of qubits doesn't change much, but the runtime becomes two days in the worst case and 18 hours in the optimistic case. If you change the qubit technology and the QEC code, for example Majorana-based qubits, you can factor a 2,048-bit integer with Shor’s algorithm in hours with an array of 6.25 millions of qubits in the best-case scenario.
 
-From your experiment, you can conclude that using Majorana qubits and a Floquet QEC code is the best choice to execute Shor's algorithm and factor a 2,048-bit integer.
-
-
+From your experiment, it appears that a quantum computer with Majorana qubits and a Floquet QEC code is the best choice to run Shor's algorithm to factor a 2,048-bit integer.

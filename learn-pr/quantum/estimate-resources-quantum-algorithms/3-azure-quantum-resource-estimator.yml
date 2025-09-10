@@ -4,7 +4,7 @@ title: The Azure Quantum Resource Estimator
 metadata:
   title: The Azure Quantum Resource Estimator
   description: Learn how to use the Azure Quantum Resource Estimator.
-  ms.date: 01/22/2025
+  ms.date: 09/09/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-azure-quantum-resource-estimator.md)]
-
+
