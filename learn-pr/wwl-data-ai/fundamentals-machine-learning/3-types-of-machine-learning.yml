@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-machine-learning.types-of-machine-learning
-title: Types of machine learning
+title: Types of machine learning model
 metadata:
-  title: Types of machine learning
-  description: "Types of machine learning"
+  title: Types of machine learning model
+  description: "Compare types of machine learning"
   ms.date: 09/10/2025
   author: wwlpublish
   ms.author: gmalc

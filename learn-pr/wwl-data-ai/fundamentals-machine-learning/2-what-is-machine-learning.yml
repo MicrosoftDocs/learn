@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-machine-learning.what-is-machine-learning
-title: What is machine learning?
+title: Machine learning models
 metadata:
-  title: What is machine learning?
-  description: "What is machine learning?"
+  title: Machine learning models
+  description: "What are machine learning models?"
   ms.date: 09/10/2025
   author: wwlpublish
   ms.author: gmalc
