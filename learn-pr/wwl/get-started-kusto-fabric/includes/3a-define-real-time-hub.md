@@ -14,7 +14,7 @@ Next, let's review each component of an Eventstream.
 
 ## Data sources for eventstreams
 
-Once you create an eventstream in Fabric, you can connect it to a wide range of data sources. You can stream data from Microsoft sources and also ingest data from third-party platforms including:
+Once you create an eventstream in Fabric, you can connect it to a wide range of data sources. You can stream data from Microsoft sources and also ingest data from non-Microsoft platforms including:
 
 - **Microsoft sources**, like Azure Event Hubs, Azure IoT Hubs, Azure Service Bus, Change Data Capture (CDC) feeds in database services, and others.
 - **Azure events**, like Azure Blob Storage events.

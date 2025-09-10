@@ -47,7 +47,7 @@ Beyond basic querying, you can automate data processing through **management com
 
 ### Using SQL
 
-KQL databases in Eventhouses also support a subset of common SQL expressions for data professionals already familiar with SQL syntax. For example:
+KQL databases in Eventhouses also support a subset of common T-SQL expressions for data professionals already familiar with T-SQL syntax. For example:
 
 ```sql
 SELECT TOP 10 * FROM stock;

@@ -8,6 +8,6 @@ metadata:
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 8
 content: |
   [!include[](includes/3-describe-kusto-databases-tables.md)]
