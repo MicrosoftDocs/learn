@@ -29,7 +29,6 @@ products:
 subjects:
 - cloud-security
 modules:
-- learn.top-5-security-items-to-consider
 - learn.azure.secure-azure-storage-account
 - learn.azure-security.configure-and-manage-azure-key-vault
 - learn.secure-azure-resources-with-rbac

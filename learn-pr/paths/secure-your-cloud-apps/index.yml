@@ -31,7 +31,6 @@ subjects:
 - cloud-security
 modules:
 - learn.azure-well-architected-security
-- learn.top-5-security-items-to-consider
 - learn.azure-security.create-security-baselines
 - learn.manage-secrets-with-azure-key-vault
 #- learn.secure-access-azure-ad-multi-factor-authentication
