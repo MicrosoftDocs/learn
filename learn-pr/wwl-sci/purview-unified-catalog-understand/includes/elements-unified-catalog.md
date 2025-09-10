@@ -10,17 +10,17 @@ This inventory layer is comprehensive. It represents the _entire_ data estate, n
 
 While the Data Map inventories everything, not all data is ready for broad consumption. **Data products** package related assets for a specific use case. For example, instead of a marketing analyst searching across multiple raw datasets, a steward can create a _Customer Insights_ product that combines customer records, transactions, and loyalty data into one governed, reliable source.
 
-:::image type="content" source="../media/unified-catalog-data-products.png" alt-text="Screenshot of Microsoft Purview Unified Catalog showing the Data products list with several example entries."  lightbox = "../media/unified-catalog-data-products.png" :::
+:::image type="content" source="../media/unified-catalog-data-products.png" alt-text="Screenshot of Microsoft Purview Unified Catalog showing the Data products list with several example entries." lightbox = "../media/unified-catalog-data-products.png" :::
 
 ## Adding business context
 
 To make assets and data products meaningful, the Unified Catalog adds layers of context:
 
-- **[Glossary terms](/purview/unified-catalog-glossary-terms)** define business language consistently so terms like _customer_ or _account_ mean the same across departments.
+- **[Glossary terms](/purview/unified-catalog-glossary-terms?azure-portal=true)** define business language consistently so terms like _customer_ or _account_ mean the same across departments.
 
-- **[Governance domains](/purview/unified-catalog-governance-domains)** group assets into business areas such as finance, HR, or sales, helping users navigate by topic.
+- **[Governance domains](/purview/unified-catalog-governance-domains?azure-portal=true)** group assets into business areas such as finance, HR, or sales, helping users navigate by topic.
 
-- **[Critical data elements (preview)](/purview/unified-catalog-critical-data-elements)** highlight high-value fields like _customer ID_ or _account number_ that require extra oversight.
+- **[Critical data elements (preview)](/purview/unified-catalog-critical-data-elements?azure-portal=true)** highlight high-value fields like _customer ID_ or _account number_ that require extra oversight.
 
 These layers of context reduce confusion, reinforce consistent usage, and help both governance teams and business users understand not just where data lives, but what it represents.
 
@@ -28,12 +28,20 @@ These layers of context reduce confusion, reinforce consistent usage, and help b
 
 Controls in the Unified Catalog ensure that data is both cataloged and governed:
 
-- **[Access policies](/purview/unified-catalog-data-product-access-policies)** manage who can use data products and concepts such as domains or glossary terms.
+- **[Access policies](/purview/unified-catalog-data-product-access-policies?azure-portal=true)** manage who can use data products and concepts such as domains or glossary terms.
 
-- **[Objectives and key results (OKRs)](/purview/unified-catalog-okrs)** connect governance activities to measurable business goals.
+- **[Objectives and key results (OKRs)](/purview/unified-catalog-okrs?azure-portal=true)** connect governance activities to measurable business goals.
 
-- **[Data quality health report](/purview/unified-catalog-reports-data-quality-health)** shows whether data meets standards for accuracy, completeness, and reliability.
+- **[Data quality health report](/purview/unified-catalog-reports-data-quality-health?azure-portal=true)** shows whether data meets standards for accuracy, completeness, and reliability.
 
-- **[Data governance health report (preview)](/purview/unified-catalog-reports-data-governance)** shows the overall state of governance across domains and highlights areas that need attention.
+- **[Data governance health report (preview)](/purview/unified-catalog-reports-data-governance?azure-portal=true)** shows the overall state of governance across domains and highlights areas that need attention.
+
+### Active data quality management
+
+In addition to reporting, governance includes actively managing data quality. Stewards and administrators can define rules, run scheduled scans, and review quality scores that measure whether data meets agreed standards. If thresholds are breached, actions are generated to address issues before they spread.  
+
+### Extended analytics
+
+For deeper analysis, Purview can send governance and quality metrics into Microsoft Fabric. This integration lets teams build custom dashboards that show trends such as where data quality issues occur or how many products belong to each domain.
 
 Together, these elements bridge the gap between raw data and business-ready insights. The Data Map inventories everything, data products make curated data accessible, and governance concepts provide the consistency needed to turn data into a trusted asset. With the building blocks in place, the next step is to see how different roles use them to turn raw data into business value
