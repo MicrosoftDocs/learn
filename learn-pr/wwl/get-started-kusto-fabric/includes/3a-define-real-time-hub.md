@@ -22,7 +22,7 @@ Once you create an eventstream in Fabric, you can connect it to a wide range of 
 - **External sources**, such as Apache Kafka, Google Cloud Pub/Sub, and MQTT (Message Queuing Telemetry Transport) (in preview)
 
 > [!TIP]
-> To see all supported data sources for an eventstream, see **[Supported sources](/fabric/real-time-intelligence/event-streams/add-manage-eventstream-sources?pivots=enhanced-capabilities&azure-portal=true#supported-sources)**.
+> To see all supported sources, see **[Supported sources](/fabric/real-time-intelligence/event-streams/add-manage-eventstream-sources?pivots=enhanced-capabilities&azure-portal=true#supported-sources)**.
 
 ## Event transformations in eventstreams
 
@@ -33,7 +33,7 @@ Raw data from a source system is rarely in the exact format you need for analysi
 
 ## Data destinations in eventstreams
 
-Streaming data flows continuously and is temporary by nature. Without capturing it, this data would be lost. The destination in an eventstream is what makes your real-time data processing actionable. It's where your processed data becomes available for queries, reports, dashboards, alerts, actions, or integration with other systems. You can load the data from your stream into the following destinations: a KQL database in an Eventhouse, Lakehouse, a derived stream, Fabric Activator, or a custom endpoint.
+Streaming data flows continuously and is temporary by nature. It requires immediate processing and storage to retain its value. The destination in an eventstream is what makes your real-time data processing actionable. It's where your processed data becomes available for queries, reports, dashboards, alerts, actions, or integration with other systems. You can load the data from your stream into the following destinations: a KQL database in an Eventhouse, Lakehouse, a derived stream, Fabric Activator, or a custom endpoint.
 
 > [!TIP]
 > For more information about supported destinations, see **[Add and manage a destination in an eventstream](/fabric/real-time-intelligence/event-streams/add-manage-eventstream-destinations?azure-portal=true)**.

@@ -16,7 +16,7 @@ abstract: |
   - Understand Real-Time Intelligence components in Fabric.
   - Ingest data and transform data in motion.
   - Store and query data in KQL databases.
-  - Visualize steaming data with Real-Time Dashboards.
+  - Visualize streaming data with Real-Time Dashboards.
   - Automate actions with Activator.
 prerequisites: |
   Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
