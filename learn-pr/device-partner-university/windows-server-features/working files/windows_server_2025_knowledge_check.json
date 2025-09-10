@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "question": "Which feature in Windows Server 2025 helps protect hardware, firmware, and the operating system from tampering and unauthorized access?",
+      "choices": [
+        "Secured-core server",
+        "Storage replication",
+        "GPU partitioning",
+        "Hotpatching"
+      ],
+      "correct_choice": "Secured-core server",
+      "explanations": {
+        "Secured-core server": "Correct. Secured-core solutions help protect hardware, firmware, and the operating system from tampering and unauthorized access.",
+        "Storage replication": "Incorrect. Storage replication helps with data redundancy and disaster recovery, not with hardware or firmware protection.",
+        "GPU partitioning": "Incorrect. GPU partitioning is used for AI and machine learning workloads, not for hardware or firmware protection.",
+        "Hotpatching": "Incorrect. Hotpatching reduces downtime by applying updates without requiring a reboot."
+      }
+    },
+    {
+      "question": "What is a benefit of hybrid features in Windows Server 2025?",
+      "choices": [
+        "Integration of cloud advancements into existing server environments",
+        "Limiting virtualization to only two virtual machines",
+        "Eliminating the need for on-premises infrastructure",
+        "Disabling remote access capabilities"
+      ],
+      "correct_choice": "Integration of cloud advancements into existing server environments",
+      "explanations": {
+        "Integration of cloud advancements into existing server environments": "Correct. Hybrid features enable integration of cloud advancements into existing server environments, supporting adaptability and cloud-readiness.",
+        "Limiting virtualization to only two virtual machines": "Incorrect. The Datacenter edition supports unlimited virtual machines.",
+        "Eliminating the need for on-premises infrastructure": "Incorrect. Windows Server 2025 is optimized for on-premises infrastructure and hybrid setups.",
+        "Disabling remote access capabilities": "Incorrect. Windows Server 2025 supports secure remote work, not disables it."
+      }
+    },
+    {
+      "question": "How does Windows Server 2025 help IT teams save time and effort?",
+      "choices": [
+        "By providing centralized and unified management tools",
+        "By requiring manual updates for all servers",
+        "By removing support for hybrid environments",
+        "By limiting automation of routine tasks"
+      ],
+      "correct_choice": "By providing centralized and unified management tools",
+      "explanations": {
+        "By providing centralized and unified management tools": "Correct. Centralized and unified management tools make it easier to oversee both on-premises and hybrid environments, saving IT teams time and effort.",
+        "By requiring manual updates for all servers": "Incorrect. Windows Server 2025 includes automated patching to reduce manual effort.",
+        "By removing support for hybrid environments": "Incorrect. The platform supports hybrid environments to increase flexibility.",
+        "By limiting automation of routine tasks": "Incorrect. Windows Server 2025 automates routine tasks to help IT administrators focus on strategic projects."
+      }
+    },
+    {
+      "question": "Which capability in Windows Server 2025 supports AI and machine learning workloads?",
+      "choices": [
+        "GPU partitioning",
+        "Secured-core server",
+        "Automated patching",
+        "Role-based access controls"
+      ],
+      "correct_choice": "GPU partitioning",
+      "explanations": {
+        "GPU partitioning": "Correct. GPU partitioning enables support for AI and machine learning workloads.",
+        "Secured-core server": "Incorrect. Secured-core server is focused on security, not AI workload support.",
+        "Automated patching": "Incorrect. Automated patching is for reducing downtime and improving productivity.",
+        "Role-based access controls": "Incorrect. Role-based access controls are for secure remote work, not AI workloads."
+      }
+    },
+    {
+      "question": "What do software-defined datacenter technologies in Windows Server 2025 improve?",
+      "choices": [
+        "Resource allocation and server efficiency",
+        "Print queue management",
+        "Limitation of cloud integration",
+        "Reduction of virtualization capabilities"
+      ],
+      "correct_choice": "Resource allocation and server efficiency",
+      "explanations": {
+        "Resource allocation and server efficiency": "Correct. Software-defined datacenter technologies improve resource allocation and server efficiency, resulting in enhanced performance and reduced operational costs.",
+        "Print queue management": "Incorrect. Software-defined datacenter technologies are focused on virtualization, compute, storage, and network efficiency—not print services.",
+        "Limitation of cloud integration": "Incorrect. Windows Server 2025 supports cloud integration through hybrid features.",
+        "Reduction of virtualization capabilities": "Incorrect. The platform supports efficient virtualization solutions."
+      }
+    }
+  ]
+}
