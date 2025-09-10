@@ -6,10 +6,10 @@ This workflow isn't just for open source: forks also help support inner source w
 
 Before forks, you could contribute to a project using Pull Requests. The workflow is simple:
 
-1. Push a new branch to your repository
-1. Open a pull request to get a code review from your team
-1. Have Azure Repos check your branch policies
-1. Click one button to merge your pull request into main and deploy when your code is approved
+1. Push a new branch to your repository.
+1. Open a pull request to get a code review from your team.
+1. Have Azure Repos check your branch policies.
+1. Click one button to merge your pull request into main and deploy when your code is approved.
 
 This workflow is great for working on your projects with your team. But what if you notice a simple bug in a different project within your company and you want to fix it yourself? What if you want to add a feature to a project that you use, but another team develops?
 
@@ -23,11 +23,11 @@ Inner source opens your software development processes so that your developers c
 
 ### Benefits of inner source
 
-**Cross-Team Collaboration**: Teams can work together on projects even if they don't normally collaborate.
-**Knowledge Sharing**: Developers can learn from code written by other teams and apply those lessons to their own work.
-**Code Reuse**: Instead of building the same functionality multiple times, teams can build on existing work.
-**Quality Improvement**: More people reviewing and contributing to code typically leads to better quality software.
-**Faster Innovation**: Teams can move faster by building on existing solutions rather than starting from scratch.
+- **Cross-Team Collaboration**: Teams can work together on projects even if they don't normally collaborate.
+- **Knowledge Sharing**: Developers can learn from code written by other teams and apply those lessons to their own work.
+- **Code Reuse**: Instead of building the same functionality multiple times, teams can build on existing work.
+- **Quality Improvement**: More people reviewing and contributing to code typically leads to better quality software.
+- **Faster Innovation**: Teams can move faster by building on existing solutions rather than starting from scratch.
 
 ## Microsoft's inner source journey
 
@@ -37,9 +37,9 @@ Microsoft uses the inner source approach heavily. As part of efforts to create o
 
 Before moving to inner source, Microsoft was "siloed":
 
-- Only engineers working on Windows could read the Windows source code
-- Only developers working on Office could look at the Office source code
-- If you were an engineer working on Visual Studio and found a bug in Windows or Office – or wanted to add a new feature – you were out of luck
+- Only engineers working on Windows could read the Windows source code.
+- Only developers working on Office could look at the Office source code.
+- If you were an engineer working on Visual Studio and found a bug in Windows or Office – or wanted to add a new feature – you were out of luck.
 
 ### After inner source
 
@@ -47,7 +47,7 @@ By moving to inner source throughout the company, powered by Azure Repos, it's e
 
 This approach has enabled:
 
-- Better collaboration across teams
-- Faster bug fixes and feature development
-- Improved code quality through broader review
-- Reduced duplication of effort across projects
+- Better collaboration across teams.
+- Faster bug fixes and feature development.
+- Improved code quality through broader review.
+- Reduced duplication of effort across projects.

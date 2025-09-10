@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-foster-inner-source
 metadata:
-  title: Plan foster inner source
+  title: Plan to foster inner source
   description: "Learn how to use Git to foster inner source development across your organization and implement fork workflows."
-  ms.date: 09/09/2025
+  ms.date: 09/10/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module
@@ -11,18 +11,18 @@ metadata:
     - N/A
   ms.service: azure
   ai-usage: human-only
-title: Plan foster inner source
+title: Plan to foster inner source
 summary: Learn how to use Git to foster inner source development across your organization and implement fork workflows.
 abstract: |
   By the end of this module, you can:
 
-  -   Use Git to foster inner source development across your organization
+  -   Use Git to foster inner source development across your organization.
 
-  -   Implement fork workflow for collaborative development
+  -   Implement fork workflow for collaborative development.
 
-  -   Choose between branches and forks for different scenarios
+  -   Choose between branches and forks for different scenarios.
 
-  -   Share code between forks effectively
+  -   Share code between forks effectively.
 prerequisites: Basic understanding of Git version control and collaborative development concepts
 iconUrl: /training/achievements/5-plan-fostering-inner-source.svg
 levels:

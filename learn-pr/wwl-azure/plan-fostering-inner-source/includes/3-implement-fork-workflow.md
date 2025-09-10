@@ -12,9 +12,9 @@ A fork starts with all the contents of its upstream (original) repository. You c
 
 **Important notes:**
 
-- None of the permissions, policies, or build pipelines are copied
-- The new fork acts as if someone cloned the original repository, then pushed it to a new, empty repository
-- After a fork has been created, new files, folders, and branches aren't shared between the repositories unless a Pull Request carries them along
+- None of the permissions, policies, or build pipelines are copied.
+- The new fork acts as if someone cloned the original repository, then pushed it to a new, empty repository.
+- After a fork has been created, new files, folders, and branches aren't shared between the repositories unless a Pull Request carries them along.
 
 ## Sharing code between forks
 
@@ -24,33 +24,32 @@ The destination repository's permissions, policies, builds, and work items will 
 
 ## Choosing between branches and forks
 
-**Small Teams (2-5 developers)**: We recommend working in a single repository. Everyone should work in a topic branch, and the main branch should be protected with branch policies.
+- **Small Teams (2-5 developers)**: We recommend working in a single repository. Everyone should work in a topic branch, and the main branch should be protected with branch policies.
+- **Larger Teams**: As your team grows, you may find yourself outgrowing this arrangement and prefer to switch to a forking workflow.
 
-**Larger Teams**: As your team grows, you may find yourself outgrowing this arrangement and prefer to switch to a forking workflow.
+- **When to Use Forks:**
 
-**When to Use Forks:**
-
-- Your repository has many casual or infrequent contributors (like an open-source project)
-- Only core contributors have direct commit rights into your repository
-- You want collaborators from outside the core team to work from a fork
-- You want to isolate changes until you've had a chance to review the work
+  - Your repository has many casual or infrequent contributors (like an open-source project).
+  - Only core contributors have direct commit rights into your repository.
+  - You want collaborators from outside the core team to work from a fork.
+  - You want to isolate changes until you've had a chance to review the work.
 
 ## The forking workflow
 
 Here are the basic steps for the forking workflow:
 
-1. Create a fork
-1. Clone it locally
-1. Make your changes locally and push them to a branch
-1. Create and complete a pull request to upstream
-1. Sync your fork to the latest from upstream
+1. Create a fork.
+1. Clone it locally.
+1. Make your changes locally and push them to a branch.
+1. Create and complete a pull request to upstream.
+1. Sync your fork to the latest from upstream.
 
 ## Step 1: Create the fork
 
-1. Navigate to the repository you want to fork and choose "Fork"
-1. Specify a name and choose the project where you want the fork to be created
-1. If the repository contains many topic branches, we recommend you fork only the default branch
-1. Choose the ellipsis, then "Fork" to create the fork
+1. Navigate to the repository you want to fork and choose "Fork".
+1. Specify a name and choose the project where you want the fork to be created.
+1. If the repository contains many topic branches, we recommend you fork only the default branch.
+1. Choose the ellipsis, then "Fork" to create the fork.
 
 :::image type="content" source="../media/fork-fabrikam-83eccc3a.png" alt-text="Diagram showing Create the fork.":::
 
@@ -73,8 +72,8 @@ git remote add upstream {upstream_url}
 
 It's possible to work directly in main - after all, this fork is your copy of the repo. However, we recommend you still work in a topic branch because:
 
-- It allows you to maintain multiple independent workstreams at the same time
-- It reduces confusion later when you want to sync changes into your fork
+- It allows you to maintain multiple independent workstreams at the same time.
+- It reduces confusion later when you want to sync changes into your fork.
 
 Make and commit your changes as you normally would. When you're done with the changes, push them to origin (your fork).
 
@@ -105,7 +104,7 @@ The forking workflow lets you isolate changes from the main repository until you
 
 This approach provides:
 
-- **Safety**: Changes are isolated until reviewed
-- **Collaboration**: Multiple people can work on different features simultaneously
-- **Quality**: All changes go through the same review process
-- **Flexibility**: Contributors don't need write access to the main repository
+- **Safety**: Changes are isolated until reviewed.
+- **Collaboration**: Multiple people can work on different features simultaneously.
+- **Quality**: All changes go through the same review process.
+- **Flexibility**: Contributors don't need write access to the main repository.
