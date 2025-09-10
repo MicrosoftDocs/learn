@@ -59,7 +59,7 @@ Meeting evolving business needs often requires scaling compute and storage capab
 
 By leveraging these improvements, IT professionals can ensure workloads remain responsive and cost-efficient, even as demand grows.
 
-:::image type="content" source="../media/azure-retail-employee.png" alt-text="A photograph of a person sitting at a desk, working on a computer.They are wearing headphones around their neck and typing on a keyboard. Two monitors are visible—one displaying lines of code and the other showing graphs or charts. Office supplies like a mouse and notepads are also present on the desk.":::
+:::image type="content" source="../media/azure-retail-employee.png" alt-text="A photograph of a person at a desk with two monitors showing code and charts, wearing headphones around their neck.":::
 
 ## How to optimize networking and datacenter efficiency
 

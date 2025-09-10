@@ -1,6 +1,6 @@
 Modern businesses rely on both cloud and on-premises infrastructure. Windows Server 2025 provides hybrid capabilities that extend Azure innovation to your data center, giving IT professionals greater flexibility and agility.
 
-:::image type="content" source="../media/azure-computer-illustration.png" alt-text="A photograph of a digital illustration depicting cloud computing. The image shows a desktop computer with an upload icon on the screen, a smartphone displaying a password input, and several server racks inside an outlined cloud shape in the background. The color scheme is primarily blue and pink, giving it a modern and futuristic look.":::
+:::image type="content" source="../media/azure-computer-illustration.png" alt-text="A digital illustration depicting cloud computing. The image shows a desktop computer with an upload icon on the screen, a smartphone displaying a password input, and several server racks inside an outlined cloud shape in the background.":::
 
 ## How to centralize management with Azure Arc
 
