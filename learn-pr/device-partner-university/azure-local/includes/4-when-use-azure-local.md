@@ -2,7 +2,7 @@ Imagine you're working for a regional healthcare provider with multiple hospital
 
 Your organization’s goals are to improve infrastructure reliability, simplify virtualization management, support edge and hybrid scenarios, and maintain compliance with healthcare regulations.
 
-![Healthcare worker reviews a patient X-ray on a digital tablet.](media/healthcare.png)
+![A photograph of a healthcare worker reviewing a patient X-ray on a digital tablet.](../media/healthcare.png)
 
 ## Why Azure Local is a good fit
 

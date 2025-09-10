@@ -13,6 +13,8 @@ Azure Local offers deep integration with Azure, extending cloud capabilities to 
 - Scalable operations for growing infrastructure.
 - Hybrid cloud flexibility, allowing workloads to run where they perform best.
 
+![A photograph of a person organizing furniture in a storage room or stockroom.](../media/cloud.png)
+
 ## Application Support
 
 Azure Local supports both traditional and modern workloads:

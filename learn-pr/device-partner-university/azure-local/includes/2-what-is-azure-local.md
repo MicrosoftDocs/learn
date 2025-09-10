@@ -32,7 +32,7 @@ Azure Local can be managed both on-premises and from the cloud, giving you flexi
 
 Imagine a retail company with dozens of branch offices. Each location needs to run local applications (like point-of-sale systems) but also wants central IT to monitor system health, apply security policies, and back up data.
 
-![Shop owner updates inventory using a laptop in a pottery studio.](media/store.png)
+![Shop owner updates inventory using a laptop in a pottery studio.](../media/store.png)
 
 With Azure Local:
 
