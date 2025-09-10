@@ -4,12 +4,12 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/08/2024
-  author: wwlpublish
+  ms.date: 09/10/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
   module_assessment: true
 durationInMinutes: 5
 content: |
@@ -17,36 +17,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following is a correct statement about a fork?"
-    choices:
-    - content: "A fork is a copy of a repository."
-      isCorrect: true
-      explanation: "Correct. A fork is a copy of a repository."
-    - content: "A fork is a branch for future development."
-      isCorrect: false
-      explanation: "Incorrect. A fork is a copy of a repository."
-    - content: "A fork is a branching strategy when working with centralized version control."
-      isCorrect: false
-      explanation: "Incorrect. A fork is a copy of a repository."
-  - content: "Which of the following choices are the correct-forking workflow steps?"
-    choices:
-    - content: "Create a fork, make your changes locally and push them to a branch, create and complete a PR to the upstream."
-      isCorrect: false
-      explanation: "Incorrect. The forking workflow is to create a fork, clone it locally, make your changes locally, push them to a branch, create and complete a PR to the upstream, and sync your fork to the latest from upstream."
-    - content: "Create a fork, clone it locally, make your changes locally, push them to a branch, create and complete a PR to the upstream, and sync your fork to the latest from upstream."
-      isCorrect: true
-      explanation: "Correct. The forking workflow is to create a fork, clone it locally, make your changes locally, push them to a branch, create and complete a PR to the upstream, and sync your fork to the latest from upstream."
-    - content: "Create a fork, clone it locally, make your changes locally, create and complete a PR to the upstream, push the changes to a branch."
-      isCorrect: false
-      explanation: "Incorrect. The forking workflow is to create a fork, clone it locally, make your changes locally, push them to a branch, create and complete a PR to the upstream, and sync your fork to the latest from upstream."
-  - content: "Which of the following choices is the recommended team size to use a single repo instead of fork workflow?"
-    choices:
-    - content: "Large teams."
-      isCorrect: false
-      explanation: "Incorrect. For a small team (2-5 developers), we recommend working in a single repo."
-    - content: "10-20 developers."
-      isCorrect: false
-      explanation: "Incorrect. For a small team (2-5 developers), we recommend working in a single repo."
-    - content: "2-5 developers."
-      isCorrect: true
-      explanation: "Correct. For a small team (2-5 developers), we recommend working in a single repo."
+    - content: "What is a fork?"
+      choices:
+        - content: "A fork is a copy of a code repository."
+          isCorrect: true
+          explanation: "Yes! A fork creates your own copy of someone else's repository."
+        - content: "A fork is a branch for future work."
+          isCorrect: false
+          explanation: "No. A fork is a copy of a repository, not a branch."
+        - content: "A fork is a way to work with centralized version control."
+          isCorrect: false
+          explanation: "No. A fork is a copy of a repository that you can change."
+    - content: "What are the correct steps for the fork workflow in the proper sequence?"
+      choices:
+        - content: "Create a fork. Make changes locally. Push to a branch. Create a pull request."
+          isCorrect: false
+          explanation: "This is missing some important steps. You need to clone the fork locally and sync it with the original repository."
+        - content: "Create a fork. Clone it locally. Make changes. Push to a branch. Create a pull request. Sync your fork."
+          isCorrect: true
+          explanation: "Yes! This is the complete fork workflow that keeps your copy updated."
+        - content: "Create a fork. Clone it locally. Make changes. Create a pull request. Push changes."
+          isCorrect: false
+          explanation: "The steps are in the wrong order. You must push changes before creating a pull request."
+    - content: "When should you use a single repository instead of forks?"
+      choices:
+        - content: "For large teams with many developers."
+          isCorrect: false
+          explanation: "Large teams usually benefit from using forks to manage contributions better."
+        - content: "For teams with 10-20 developers."
+          isCorrect: false
+          explanation: "Teams this size often work better with forks to avoid conflicts."
+        - content: "For small teams with 2-5 developers."
+          isCorrect: true
+          explanation: "Yes! Small teams can work directly in one repository without needing forks."
