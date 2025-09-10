@@ -69,4 +69,4 @@ VendorInfo
 // Avoid: Large taxi table first
 TaxiTrips         
 | join kind=inner VendorInfo on vendor_id
-```
+``` 

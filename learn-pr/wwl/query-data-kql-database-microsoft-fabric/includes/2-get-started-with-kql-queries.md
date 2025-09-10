@@ -87,4 +87,4 @@ For AI-based assistance with KQL querying, you can use Copilot for Real-Time Int
 
 When your administrator enables Copilot, you see the option in the queryset menu bar. Copilot opens as a pane to the side of the main query interface. When you ask a question about your data, Copilot generates the KQL code to answer your question.
 
-:::image type="content" source="../media/kql-copilot.png" alt-text="Screenshot of Copilot for Real-Time Intelligence." lightbox="../media/kql-copilot.png":::
+:::image type="content" source="../media/kql-copilot.png" alt-text="Screenshot of Copilot for Real-Time Intelligence." lightbox="../media/kql-copilot.png"::: 
