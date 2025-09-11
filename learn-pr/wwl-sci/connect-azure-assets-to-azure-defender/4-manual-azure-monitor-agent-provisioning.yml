@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-azure-assets-to-azure-defender.manual-azure-monitor-agent-provisioning
+title: Manual agent provisioning
+metadata:
+  title: Manual agent provisioning
+  description: "Manual agent provisioning"
+  ms.date: 09/11/2025
+  author: KenMAG
+  ms.author: kelawson
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-manual-log-analytics-agent-provisioning.md)]
