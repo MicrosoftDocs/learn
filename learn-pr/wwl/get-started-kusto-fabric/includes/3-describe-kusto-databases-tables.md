@@ -22,27 +22,27 @@ The diagram shows how Real-Time Intelligence components work together for end-to
 
 ## Ingest and process data in motion with Eventstreams
 
-Data ingestion and processing can happen through Eventstreams, which capture streaming data from various sources and apply real-time transformations as data flows through the system. Eventstreams can filter, enrich, and transform your data and route it to different destinations.
+Data ingestion and processing can happen through **Eventstreams**, which capture streaming data from various sources and apply real-time transformations as data flows through the system. Eventstreams can filter, enrich, and transform your data and route it to different destinations.
 
 ## Store real-time data in an Eventhouse
 
-Real-Time Intelligence stores data in KQL (Kusto Query Language) databases in Eventhouses. These databases are designed for time-series data and fast ingestion of streaming data. The storage integrates with OneLake, making your data available to other Fabric tools.
+Real-Time Intelligence stores data in KQL (Kusto Query Language) databases in **Eventhouses**. These databases are designed for time-series data and fast ingestion of streaming data. The storage integrates with OneLake, making your data available to other Fabric tools.
 
 ## Analyze data with KQL Queryset
 
-KQL Queryset provides a workspace for running and managing queries against KQL databases. The KQL Queryset allows you to save queries for future use, organize multiple query tabs, and share queries with others for collaboration. The KQL Queryset also supports T-SQL queries, allowing you to use familiar SQL syntax alongside KQL for data analysis.
+**KQL Queryset** provides a workspace for running and managing queries against KQL databases. The KQL Queryset allows you to save queries for future use, organize multiple query tabs, and share queries with others for collaboration. The KQL Queryset also supports T-SQL queries, allowing you to use familiar SQL syntax alongside KQL for data analysis.
 
 ## Visualize insights with Real-Time Dashboard
 
-Real-Time Dashboards connect directly to KQL databases and refresh automatically as new data arrives. These dashboards let you explore data interactively and monitor both current conditions and historical trends.
+**Real-Time Dashboards** connect directly to KQL databases and refresh automatically as new data arrives. These dashboards let you explore data interactively and monitor both current conditions and historical trends.
 
 ## Act on data with Activator
 
 Automated actions can be configured with **Activator**, which continuously monitors streaming data against user-defined rules and thresholds. When conditions are met, Activator can send notifications, trigger workflows in Power Automate, execute Fabric data pipelines or notebooks, creating event-driven automation that responds to real-time conditions.
 
-## Discover streaming data with the Real-Time Hub
+## Discover streaming data with the Real-Time hub
 
-The Fabric Real-Time hub is a central location where you can discover and manage all of the data-in-motion that you have access to. It gives you a way to ingest streaming data from Azure and from external sources and it lets you subscribe to Azure and Fabric events.
+The Fabric **Real-Time hub** is a central location where you can discover and manage all of the data-in-motion that you have access to. It gives you a way to ingest streaming data from Azure and from external sources and it lets you subscribe to Azure and Fabric events.
 
 Think of the Real-Time hub as your streaming data catalog where you can see what's happening in near real-time across your organization. There are connectors you can use to ingest data into Microsoft Fabric from various sources. For example, you might connect to IoT sensor streams through Azure Event Hubs, subscribe to Azure Blob Storage events, use Change Data Capture (CDC) to stream database changes, or monitor Fabric workspace events.
 

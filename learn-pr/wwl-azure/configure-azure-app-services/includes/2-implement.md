@@ -19,4 +19,4 @@ There are many advantages to using App Service to develop and deploy your web, m
 | **Application templates** | Choose from an extensive list of application templates in Azure Marketplace, such as WordPress, Joomla, and Drupal.
 | **Visual Studio integration** | App Service offers dedicated tools in Visual Studio to help streamline the work of creating, deploying, and debugging. |
 | **API and mobile features** | App Service provides turn-key CORS support for RESTful API scenarios. You can simplify your mobile app scenarios by enabling authentication, offline data sync, push notifications, and more. |
-| **Serverless code** | App Service lets you run a code snippet or script on-demand without having to explicitly provision or manage infrastructure. You pay only for the compute time your code actually uses. |
+
