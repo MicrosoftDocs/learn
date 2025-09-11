@@ -9,4 +9,4 @@ This lab takes approximately **30** minutes to complete.
 
 Launch the exercise and follow the instructions.
 
-[![Icon of Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2259794?azure-portal=true)
+[![Icon of Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2335175&azure-portal=true)
