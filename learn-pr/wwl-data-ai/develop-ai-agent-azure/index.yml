@@ -5,9 +5,10 @@ metadata:
   description: Learn how to start using Azure AI Foundry Agent Service.
   author: ivorb
   ms.author: berryivor
-  ms.date: 05/23/2025
-  ms.service: azure-ai-openai
+  ms.date: 08/28/2025
+  ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
 title: Develop an AI agent with Azure AI Foundry Agent Service
 summary: This module provides engineers with the skills to begin building agents with Azure AI Foundry Agent Service.
 abstract: |
@@ -28,10 +29,11 @@ roles:
   - solution-architect
   - student
 products: 
-  - azure-openai
-  - azure
+  - azure-ai-foundry
+  - azure-ai-foundry-agent-service
+  - azure-ai-foundry-sdk
 subjects: 
-  - cloud-computing
+  - artificial-intelligence
 units:
 - learn.wwl.develop-ai-agent-azure.introduction
 - learn.wwl.develop-ai-agent-azure.what-is-ai-agent

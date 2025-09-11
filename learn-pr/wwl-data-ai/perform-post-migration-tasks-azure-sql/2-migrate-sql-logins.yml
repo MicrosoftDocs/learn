@@ -4,10 +4,10 @@ title: Migrate SQL logins and groups
 metadata:
   title: Migrate SQL logins and groups
   description: "Learn how to migrate SQL logins and groups using the tools available."
-  ms.date: 09/14/2023
-  author: wwlpublish
+  ms.date: 8/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-migrate-sql-logins.md)]
+  [!include[](includes/2-migrate-sql-logins.md)]

@@ -4,6 +4,7 @@ metadata:
   ms.author: viniap
   author: Orin-Thomas
   ms.date: 06/26/2025
+  ms.update-cycle: 180-days
   title: Govern AI Services with Azure Policy
   description: Learn how to govern AI services using Azure Policy.
   ms.service: azure-policy

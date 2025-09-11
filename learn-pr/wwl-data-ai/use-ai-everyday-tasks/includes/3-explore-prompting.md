@@ -8,7 +8,7 @@ An effective prompt should be clear, specific, contextual, and goal oriented. By
 
 A prompt can be simple or detailed, but you must have a clear goal. If you want to be more specific, add additional information. Often, you need more than just a goal to achieve the results you want. The following video describes the four elements of a good prompt: Goal, Context, Sources, and Expectations.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=44e3d1fb-b9a0-4f63-be7d-59f89a3676d5]
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2331992]
 
 Here are some tips to keep in mind when writing a prompt:
 

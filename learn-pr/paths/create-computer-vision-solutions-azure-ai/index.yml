@@ -3,7 +3,7 @@ uid: learn.wwl.create-computer-vision-solutions-azure-ai
 metadata:
   title: Develop computer vision solutions in Azure
   description: Learn how to develop computer vision solutions in Azure
-  ms.date: 05/05/2025
+  ms.date: 08/28/2025
   author: wwlpublish
   ms.author: berryivor
   ms.topic: learning-path
@@ -25,6 +25,7 @@ products:
 - azure-computer-vision
 - azure-face
 - azure-video-indexer
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 modules:

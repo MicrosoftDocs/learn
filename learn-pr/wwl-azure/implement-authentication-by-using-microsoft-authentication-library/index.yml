@@ -1,10 +1,10 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-authentication-by-using-microsoft-authentication-library
 metadata:
-  title: Implement authentication by using the Microsoft Authentication Library
+  title: Implement Authentication by Using the Microsoft Authentication Library
   description: "Implement authentication by using the Microsoft Authentication Library"
   ms.date: 07/09/2025
-  author: wwlpublish
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: module
   ms.collection: N/A

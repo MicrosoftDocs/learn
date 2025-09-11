@@ -4,6 +4,7 @@ metadata:
   title: Use AI responsibly with Azure AI Foundry Content Safety
   description: As the amount of user-generated online content increases, so does the need to ensure harmful material is moderated effectively. Azure AI Foundry Content Safety resource includes features to help organizations moderate and manage both user-generated and AI-generated content.
   ms.date: 05/16/2025
+  ms.update-cycle: 180-days
   author: ivorb
   ms.author: berryivor
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics

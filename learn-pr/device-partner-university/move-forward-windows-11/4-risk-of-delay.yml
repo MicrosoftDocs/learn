@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.move-forward-windows-11.risk-of-delay
+title: Risk of delay
+metadata:
+  title: Risk of delay
+  description: This content is part of the "Move forward with Windows 11 Pro before Windows 10 EOS" module.
+  ms.date: 07/29/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-risk-of-delay.md)]

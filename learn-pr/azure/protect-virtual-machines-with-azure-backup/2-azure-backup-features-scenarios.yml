@@ -4,8 +4,8 @@ metadata:
   title: Azure Backup features and scenarios
   description: Learn how Azure Backup works, and some of the supported use cases for it.
   ms.date: 09/05/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: AbhishekMallick-MS
+  ms.author: v-mallicka
   ms.topic: unit
 title: Azure Backup features and scenarios
 durationInMinutes: 5

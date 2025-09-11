@@ -3,10 +3,10 @@ uid: learn.wwl.get-started-generative-ai-azure
 metadata:
   title: Get started with generative AI in Azure
   description: "Learn how you can build generative AI applications in Azure AI Foundry portal. Understand how to use Azure AI Foundry portal’s extensive model marketplace, playgrounds, and evolving features."
-  ms.date: 05/26/2025
+  ms.date: 08/28/2025
   author: wwlpublish
   ms.author: sheryang
-  ms.service: azure-ai-services
+  ms.service: azure-ai-foundry
   ms.topic: module
   ai-usage: ai-assisted
 title: Get started with generative AI in Azure
@@ -23,7 +23,7 @@ roles:
 - solution-architect
 - student
 products:
-- ai-services
+- azure-ai-foundry
 units:
 - learn.wwl.get-started-generative-ai-azure.introduction
 - learn.wwl.get-started-generative-ai-azure.generative-ai

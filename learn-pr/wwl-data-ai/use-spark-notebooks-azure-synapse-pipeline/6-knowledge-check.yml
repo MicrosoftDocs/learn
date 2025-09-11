@@ -2,16 +2,15 @@
 uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 02/07/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3
 quiz:
-  title: "Check your knowledge"
   questions:
   - content: "What kind of pool is required to run a Synapse notebook in a pipeline?"
     choices:
@@ -45,4 +44,4 @@ quiz:
       explanation: "Correct: Toggle the Parameters cell option to use variables as parameters."
     - content: "Use the *var* keyword for each variable declaration"
       isCorrect: false
-      explanation: "Incorrect: The var keyword is used to declare variables in Scala."
+      explanation: "Incorrect: The var keyword is used to declare variables in Scala."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-agents-with-a2a.host-a2a-agent-server
+title: Host an A2A server
+metadata:
+  title: Host an A2A Server
+  description: "Learn how to host your Azure AI Agent over an A2A (Agent-to-Agent) server"
+  ms.date: 08/01/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-host-a2a-agent-server.md)]

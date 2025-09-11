@@ -4,6 +4,7 @@ metadata:
   title: Developer use cases for AI with GitHub Copilot
   description: Developer Uses Cases for AI with GitHub Copilot explores ways developers can apply AI using GitHub Copilot to enhance productivity, ultimately enabling teams to save time, improve code quality, and boost developer satisfaction.
   ms.date: 10/09/2024
+  ms.update-cycle: 180-days
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module

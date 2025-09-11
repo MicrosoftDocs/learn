@@ -6,10 +6,10 @@ metadata:
   description: "Application security groups"
   ms.date: 06/12/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-application-security-groups.md)]
+  [!include[](includes/5-application-security-groups.md)]

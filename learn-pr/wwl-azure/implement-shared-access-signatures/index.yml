@@ -1,10 +1,10 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-shared-access-signatures
 metadata:
-  title: Implement shared access signatures
+  title: Implement Shared Access Signatures
   description: Implement shared access signatures
   ms.date: 11/13/2024
-  author: wwlpublish
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: module
   ms.custom:
@@ -39,4 +39,4 @@ units:
 - learn.wwl.implement-shared-access-signatures.summary
 badge:
   uid: learn.wwl.implement-shared-access-signatures.badge
-
+

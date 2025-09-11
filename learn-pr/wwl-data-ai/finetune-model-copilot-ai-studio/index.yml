@@ -5,9 +5,10 @@ metadata:
   description: When you want to maximize the consistency in the responses of your language model, you can fine-tune a base model before integrating the model into your chat application. Learn how to fine-tune a language model and then integrate the model with Azure AI Foundry.
   author: madiepev
   ms.author: madiepev
-  ms.date: 07/15/2025
-  ms.service: azure-ai-services
+  ms.date: 08/28/2025
+  ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.custom: ai-learning-hub
   ms.collection:
     - wwl-ai-copilot
@@ -19,7 +20,7 @@ abstract: |
     - Prepare your data to fine-tune a chat completion model.
     - Fine-tune a base model in the Azure AI Foundry portal.
 prerequisites: |
-  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. Consider completing the [Get started with artificial intelligence](/training/paths/get-started-with-artificial-intelligence-on-azure) learning path first.
+  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate
@@ -27,10 +28,8 @@ roles:
   - data-scientist
   - ai-engineer
 products: 
-  - azure
-  - ai-services
+  - azure-ai-foundry
 subjects: 
-  - cloud-computing
   - artificial-intelligence
   - machine-learning
   - natural-language-processing

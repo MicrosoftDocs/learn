@@ -2,11 +2,11 @@
 uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 12/19/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
@@ -68,4 +68,4 @@ quiz:
       explanation: "Incorrect. While `ROW` is a valid SQL function, it isn't used to query external data."
     - content: "`OPENROWSET`"
       isCorrect: true
-      explanation: "Correct. `OPENROWSET` is used to query external data, including analytical stores in Cosmos DB."
+      explanation: "Correct. `OPENROWSET` is used to query external data, including analytical stores in Cosmos DB."
