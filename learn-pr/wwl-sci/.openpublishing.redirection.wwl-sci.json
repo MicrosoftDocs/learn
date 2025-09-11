@@ -373,7 +373,7 @@
         "redirect_document_id": false
       },
       {
-        "source_path_from_root": "/learn-pr/wwl.connect-azure-assets-to-azure-defender/4-manual-log-analytics-agent-provisioning.yml",
+        "source_path_from_root": "/learn-pr/wwl-sci/connect-azure-assets-to-azure-defender/4-manual-log-analytics-agent-provisioning.yml",
         "redirect_url": "https://learn.microsoft.com/training/modules/connect-azure-assets-to-azure-defender/4-manual-azure-monitor-agent-provisioning/",
         "redirect_document_id": false
       },
