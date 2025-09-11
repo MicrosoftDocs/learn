@@ -57608,6 +57608,91 @@
       "source_path": "learn-pr/wwl-data-ai/fundamentals-machine-learning/8a-transformers.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/3a-transformers",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/2-what-is-azure-private-5g-core.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/3-benefits-usage-scenarios.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/4-structure-components.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/5-key-features.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/2-deployment-methods.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/3-prerequisites-of-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/4-deploy-private-mobile-network.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/5-deploy-site.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/6-deploy-using-arm-templates.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
     }
   ]
 }

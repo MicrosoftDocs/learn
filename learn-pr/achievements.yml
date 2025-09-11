@@ -6905,3 +6905,13 @@ achievements:
   title: Move Azure resources to another resource group
   summary: Identify Azure resources that you can move to a different resource group. Use the Azure portal to move resources.
   iconUrl: /training/achievements/move-azure-resources-another-resource-group.svg
+- uid: learn.deploy-azure-private-5g-core.badge
+  type: badge
+  title: Deploy an Azure Private 5G Core service
+  summary: Describes Azure Private 5G Core deployment tasks, including prerequisites, deployment methods, and creating mobile network and site.
+  iconUrl: /learn/achievements/deploy-azure-private-5g-core.svg
+- uid: learn.intro-to-azure-private-5g-core.badge
+  type: badge
+  title: Introduction to Azure Private 5G Core
+  summary: Introduces Azure Private 5G Core, which provides 5G core network functions as part of an on-premises private mobile network for enterprises.
+  iconUrl: /learn/achievements/intro-to-azure-private-5g-core.svg
