@@ -5,6 +5,4 @@ You also discovered how to add interactive parameters to dynamically filter dash
 ## Learn more
 
 - [Create a Real-Time Dashboard](/fabric/real-time-intelligence/dashboard-real-time-create?azure-portal=true)
-- [Real-Time Dashboards in Microsoft Fabric](/fabric/real-time-intelligence/dashboard-real-time-introduction?azure-portal=true)
-- [Add parameters to a Real-Time Dashboard](/fabric/real-time-intelligence/dashboard-real-time-create-parameters?azure-portal=true)
-
+- [Add parameters to a Real-Time Dashboard](/fabric/real-time-intelligence/dashboard-parameters?azure-portal=true)

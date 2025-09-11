@@ -1,4 +1,4 @@
-Understanding how to write efficient KQL queries is essential for getting good performance when working with eventhouses. This unit covers key optimization techniques and explains why they matter for your queries.
+Understanding how to write efficient KQL queries is essential for getting good performance when working with Eventhouses. This unit covers key optimization techniques and explains why they matter for your queries.
 
 ## Why query optimization matters
 
@@ -14,9 +14,9 @@ The key principle is: the less data your query needs to process, the faster it r
 
 ### Filter data early and effectively
 
-**Why this matters**: Filtering reduces the amount of data that subsequent operations need to process. KQL databases use indexes and data organization techniques that make early filtering efficient.
+Filtering reduces the amount of data that subsequent operations need to process, and KQL databases use indexes and data organization techniques that make early filtering especially efficient.
 
-**Time-based filtering** is especially effective because eventhouses typically contain time-series data:
+**Time-based filtering** is effective because Eventhouses typically contain time-series data:
 
 ```kql
 TaxiTrips
@@ -37,7 +37,7 @@ TaxiTrips
 
 ### Reduce columns early
 
-**Why this matters**: *Projecting* or selecting only the columns you need reduces resource usage. This is important when working with wide tables that have many columns.
+*Projecting* or selecting only the columns you need reduces resource usage. This is especially important when working with wide tables that have many columns.
 
 ```kql
 TaxiTrips
@@ -48,7 +48,7 @@ TaxiTrips
 
 ### Optimize aggregations and joins
 
-**Why this matters**: Aggregations and joins are resource-intensive operations because they need to process and combine large amounts of data. How you structure them can significantly affect query performance.
+Aggregations and joins are resource-intensive operations because they need to process and combine large amounts of data. How you structure them can significantly affect query performance.
 
 **For aggregations, limit results when exploring data**:
 
@@ -69,4 +69,4 @@ VendorInfo
 // Avoid: Large taxi table first
 TaxiTrips         
 | join kind=inner VendorInfo on vendor_id
-```
+``` 
