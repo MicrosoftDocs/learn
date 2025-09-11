@@ -4,4 +4,4 @@ To learn more about KQL, explore these resources:
 
 - [Kusto Query Language (KQL) overview](/kusto/query/?azure-portal=true)
 - [Kusto Query Language best practices](/kusto/query/best-practices?azure-portal=true)
-- [Copilot for Real-Time Intelligence](/fabric/get-started/copilot-real-time-intelligence?azure-portal=true)
+- [Copilot for Real-Time Intelligence](/fabric/get-started/copilot-real-time-intelligence?azure-portal=true) 
