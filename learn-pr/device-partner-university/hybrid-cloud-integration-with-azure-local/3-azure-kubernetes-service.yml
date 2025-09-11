@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.hybrid-cloud-integration-with-azure-local.azure-kubernetes-service
+title: Azure Kubernetes Service enabled by Azure Arc
+metadata:
+  title: Azure Kubernetes Service Enabled by Azure Arc
+  description: This content is part of the "Hybrid cloud integration with Azure Local" module.
+  ms.date: 09/11/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-azure-kubernetes-service.md)]
+
