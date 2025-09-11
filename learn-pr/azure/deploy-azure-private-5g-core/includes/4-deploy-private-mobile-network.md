@@ -50,7 +50,7 @@ This section helps you create the mobile networks resource representing your pri
    :::image type="content" source="../media/basics-configuration-tab.png" alt-text="This screen displays the basics configuration tab.":::
 
 1. On the **SIMs** configuration tab, select your chosen input method by selecting the appropriate option next to **How would you like to input the SIMs information?**. You can then input the information you collected in [Collect SIM and SIM Group values](/azure/private-5g-core/collect-required-information-for-private-mobile-network).
-   - If you decide not to provision any SIMs at this point, select **Add SIMs later**. Then, you can add SIMS later while managing your mobile networks. For more information, see the [Management](/training/modules/manage-azure-private-5g-core/) module.
+   - If you decide not to provision any SIMs at this point, select **Add SIMs later**. Then, you can add SIMS later while managing your mobile networks. 
 
      :::image type="content" source="../media/sim-configuration-tab.png" alt-text="This screen displays the SIM configuration tab.":::
 

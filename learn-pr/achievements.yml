@@ -6905,3 +6905,18 @@ achievements:
   title: Move Azure resources to another resource group
   summary: Identify Azure resources that you can move to a different resource group. Use the Azure portal to move resources.
   iconUrl: /training/achievements/move-azure-resources-another-resource-group.svg
+- uid: learn.get-started-with-azure-private-5g-core.trophy
+  type: trophy
+  title: Get started with Azure Private 5G Core
+  summary: Azure Private 5G Core offers simple, scalable, and secure deployment of private 5G core networks on an Azure Arc-managed edge platform within the Azure private multi-access edge compute solution. The network functions provided by the service connect with standard radio access networks to provide high performance, low latency, and secure connectivity for 4G and 5G enabled devices. From the modules in this learning path, you can learn about Azure Private 5G Core basics, as well as ways to deploy, monitor, and manage a private mobile network.
+  iconUrl: /training/achievements/get-started-with-azure-private-5g-core.svg
+- uid: learn.manage-azure-private-5g-core.badge
+  type: badge
+  title: Manage the Azure Private 5G Core service
+  summary: Describes Azure Private 5G Core routine management tasks, including site management, SIM management, and system upgrading tasks.
+  iconUrl: /learn/achievements/manage-azure-private-5g-core.svg
+- uid: learn.monitor-azure-private-5g-core-service.badge
+  type: badge
+  title: Monitor the Azure Private 5G Core service
+  summary: Learn about the network monitoring capabilities of Azure Private 5G Core. Particularly, the use of relevant monitoring tools and the techniques for troubleshooting and resolving network issues.
+  iconUrl: /learn/achievements/monitor-azure-private-5g-core-service.svg

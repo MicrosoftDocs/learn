@@ -1,7 +1,5 @@
 In this module, we introduced the perquisites, methods, and procedures for deploying a private mobile network. You can now create a mobile network or a site resource using the Azure portal or ARM templates.
 
-If you want to learn about service and SIM policy configuration, check the [Management](/training/modules/manage-azure-private-5g-core/) module.
-
 ## References
 
 - [Azure Private 5G Core documentation](/azure/private-5g-core/)

@@ -90,10 +90,7 @@ The services represent a particular set of QoS information that you want to offe
 
 You can also use services to block specific traffic types or traffic from specific sources. For more information, see [Policy control](/azure/private-5g-core/policy-control).
 
-For instructions on configuring a service and SIM policies, see the [Management](/training/modules/manage-azure-private-5g-core/) module.
-
 For instructions on how to configure SIM policies using Azure portal, see [Configure a SIM policy - Azure Private 5G Core](/azure/private-5g-core/configure-sim-policy-azure-portal).
 
 > [!NOTE]
 > Provisioning SIM and creating SIM policies can be done as part of deployment. However, if you want to provision SIMs and create SIM policies later, select **No** to complete these tasks as part of managing the Azure Private 5G Core networks.
-> For more information, see the [Management](/training/modules/manage-azure-private-5g-core/) module.
