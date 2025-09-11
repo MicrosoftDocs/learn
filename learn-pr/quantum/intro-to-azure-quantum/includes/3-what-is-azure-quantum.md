@@ -6,7 +6,7 @@ With Azure Quantum and the Azure Quantum Development Kit, you can program your q
 
 Quantum programming is a distinct art from classical programming because of the peculiar nature of qubits. Quantum algorithms require tools and ways of thinking that differ from classical algorithms. The Azure Quantum Development Kit (QDK) is a free open-source software development kit that's built specifically to write and run quantum programs.
 
-The QDK includes Q#, a high-level quantum programming language. The Q# language is designed to address the challenges of quantum information processing, and is a wholistic tool to write entire quantum algorithms, not just quantum circuits.
+The QDK includes Q#, a high-level quantum programming language. The Q# language is designed to address the challenges of quantum information processing and is a holistic tool to write entire quantum algorithms, not just quantum circuits.
 
 As a quantum programming language, Q# provides the following benefits for quantum algorithm design and implementation:
 
