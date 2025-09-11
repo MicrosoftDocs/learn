@@ -38,7 +38,7 @@ Settings are accessible from the gear icon at the top of the page. Here, you can
 - **Language and time zone**: Align with your local preferences  
 - **Password and contact preferences**: Manage security and communication options
 
-:::image type="content" source="../media/priva-settings.png" alt-text="Screenshot showing the settings from the Priva home page." lightbox=" ../media/priva-settings.png":::
+   :::image type="content" source="../media/priva-settings.png" alt-text="Screenshot showing the settings from the Priva home page." lightbox=" ../media/priva-settings.png":::
 
 These settings personalize the experience, while specific tools like Privacy Risk Management and Subject Rights Requests also include their own configurations.
 
