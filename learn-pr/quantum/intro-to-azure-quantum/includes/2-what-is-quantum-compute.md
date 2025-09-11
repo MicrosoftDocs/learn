@@ -1,4 +1,4 @@
-Quantum computers introduce new concepts to traditional programming methods by using the special rules of quantum physics to do calculations.
+Quantum computers introduce new concepts to traditional programming methods through the special rules of quantum physics to do calculations.
 
 Let's see how quantum computing differs from classical computing and how to build a quantum computer.
 
@@ -6,17 +6,17 @@ Let's see how quantum computing differs from classical computing and how to buil
 
 Quantum systems, such as atoms and molecules, can be difficult or impossible to simulate on a classical computer. In the 1980s, Richard Feynman and Yuri Manin suggested that hardware based on quantum phenomena might be more efficient for the simulation of quantum systems than conventional computers.
 
-There are several reasons why quantum systems are difficult to simulate on regular computers. One big reason is that matter, at a quantum level, is described as a combination of multiple configurations (known as states) at the same time.
+There are several reasons why quantum systems are difficult to simulate on regular computers. One main reason is that matter, at a quantum level, is described as a combination of multiple configurations (known as states) at the same time.
 
 ### Quantum systems grow exponentially
 
-Consider a system of quantum particles, for example electrons, and $40$ possible locations where the electrons can exist. The system could be in any of $2^{40}$ unique configurations because each location can either have or not have an electron. It would take more than $130$ GB of memory to store the quantum state of this system on a conventional computer! If we add another location to the system so that the electrons can exist in $41$ locations, then the number of unique configurations of the system doubles as $2^{41}$. It would take more than $260$ GB of memory to store that quantum state.
+Consider a system of particles, and 40 possible locations where those particle can exist. The system could be in any of $2^{40}$ unique states because each location can either have or not have a particle. If these are classical particles, then the system is always in only one of the $2^{40}$ states, so a classical computer needs only 40 bits to describe the state of the system. But if these are quantum particles, then the system exists in a combination of all $2^{40}$ states. A classical computer needs to store $2^{40}$ numbers to describe the quantum system, which requires over 130 GB of memory. However, a quantum computer needs only 40 quantum bits to describe this quantum system.
 
-We can't play this game of increasing the number of locations forever. To store the state on a conventional computer, you quickly exceed the memory capacities of the world's most powerful machines. At a few hundred electrons, the memory required to store the system exceeds the number of particles in the universe. There's no hope with our conventional computers to completely simulate quantum dynamics for larger systems.
+If we add another location to the system so that the electrons can exist in 41 locations, then the number of unique configurations of the system doubles to $2^{41}$. It would take more than 260 GB of memory to store that quantum state on a classical computer. We can't play this game of increasing the number of locations forever. To store a quantum state on a conventional computer, you quickly exceed the memory capacities of the world's most powerful machines. At a few hundred electrons, the memory required to store the system exceeds the number of particles in the universe. There's no hope with our conventional computers to completely simulate quantum dynamics for larger systems!
 
 ### Turning difficulty into opportunity
 
-The observation of this exponential growth posed a powerful question: is it possible to turn this difficulty into an opportunity? If quantum systems are difficult to simulate on regular computers, what would happen if we build a machine that uses quantum effects for their fundamental operations? Could we simulate quantum systems with a machine that exploits exactly the same laws of physics? And could we use that machine to investigate other important problems outside of quantum mechanics? These are the kinds of questions that gave rise to the fields of quantum information and quantum computing.
+The observation of this exponential growth posed a powerful question: is it possible to turn this difficulty into an opportunity? If quantum systems are difficult to simulate on regular computers, what would happen if we build a machine that uses quantum effects for its fundamental operations? Could we simulate quantum systems with a machine that exploits exactly the same laws of physics? And could we use that machine to investigate other important problems outside of quantum mechanics? These are the kinds of questions that gave rise to the fields of quantum information and quantum computing.
 
 In 1985, David Deutsch showed that a quantum computer could efficiently simulate the behavior of any physical system. This discovery was the first indication that quantum computers could be used to solve problems that are too difficult to solve on classical computers.
 
@@ -34,11 +34,11 @@ In quantum computing, information is encoded in superpositions of the states 0 a
 
 ## How to build a quantum computer
 
-A quantum computer uses quantum systems and the properties of quantum mechanics to solve computational problems. The quantum systems in a quantum computer consist of the qubits, the interactions between qubits, and operations on the qubits to store and compute information. We can use quantum computers to program effects like quantum entanglement and quantum interference to solve problems faster or better than on classical computers.
+A quantum computer uses quantum systems and the properties of quantum mechanics to solve computational problems. The systems in a quantum computer consist of the qubits, the interactions between qubits, and operations on the qubits to store and compute information. We can use quantum computers to program effects like quantum entanglement and quantum interference to accurately solve certain problems faster than on classical computers.
 
 To build a quantum computer, we need to consider how to create and store the qubits. We also need to think about how to manipulate the qubits and how to measure the results of our computations.
 
-The most popular qubit technologies are trapped-ion qubits, superconducting qubits, and topological qubits. For some methods of qubit storage, the unit that houses the qubits must be kept at a temperature near to absolute zero to maximize their coherence and reduce interference. Other types of qubit housing use a vacuum chamber to help minimize vibrations and stabilize the qubits. Signals can be sent to the qubits through various methods, such as microwaves, lasers, and voltages.
+Popular qubit technologies include trapped-ion qubits, superconducting qubits, and topological qubits. For some methods of qubit storage, the unit that houses the qubits must be kept at a temperature near absolute zero to maximize their coherence and reduce interference. Other types of qubit housing use a vacuum chamber to help minimize vibrations and stabilize the qubits. Signals can be sent to the qubits through various methods, such as microwaves, lasers, or voltages.
 
 ### The five criteria for a quantum computer
 
@@ -52,4 +52,4 @@ A good quantum computer should have these five features:
 
 These five criteria are often known as the DiVincenzo criteria for quantum computation.
 
-Building a device that meets all five criteria is one of the most demanding engineering challenges of our time. Microsoft is partnering with some of the best-in-class quantum-computer manufacturers around the world to give you access to the latest quantum computing solutions through Azure Quantum.
+Building a device that meets all five criteria is one of the most demanding engineering challenges of our time. Microsoft is partnering with some of the best-in-class quantum computer manufacturers around the world to give you access to the latest quantum computing solutions through Azure Quantum.
