@@ -2,6 +2,7 @@
 uid: learn.wwl.query-data-kql-database-microsoft-fabric.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["D436630C_14","D436630C_34","D436630C_55","D436630C_75","D436630C_79","D436630C_83","D436630C_132","D436630C_140","D436630C_144","D436630C_164","D436630C_168","D436630C_172"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
