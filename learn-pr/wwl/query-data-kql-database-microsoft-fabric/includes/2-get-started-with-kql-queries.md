@@ -1,10 +1,10 @@
-When you create an eventhouse, a default KQL database is automatically created with the same name. An eventhouse contains one or more KQL databases, where you can create tables, stored procedures, materialized views, functions, data streams and, shortcuts to manage your data. You can use the default KQL database or create other KQL databases as needed.
+When you create an Eventhouse, a default KQL database is automatically created with the same name. An Eventhouse contains one or more KQL databases, where you can create tables, stored procedures, materialized views, functions, data streams, and shortcuts to manage your data. You can use the default KQL database or create other KQL databases as needed.
 
-:::image type="content" source="../media/eventhouse.png" alt-text="Screenshot of an eventhouse in Microsoft Fabric." lightbox="../media/eventhouse.png":::
+:::image type="content" source="../media/eventhouse.png" alt-text="Screenshot of an Eventhouse in Microsoft Fabric." lightbox="../media/eventhouse.png":::
 
-## Work with data in your eventhouse
+## Work with data in your Eventhouse
 
-There are several ways to access and work with data in a KQL database within an eventhouse:
+There are several ways to access and work with data in a KQL database within an Eventhouse:
 
 ### Data ingestion
 
@@ -13,7 +13,7 @@ You can ingest data directly into your KQL database from various sources:
 - Local files, Azure storage, Amazon S3
 - Azure Event Hubs, Fabric Eventstream, Real-Time hub
 - OneLake, Data Factory copy, Dataflows  
-- Non-Microsoft streaming sources using connectors (Apache Kafka, Confluent Cloud Kafka, Apache Flink, MQTT (Message Queuing Telemetry Transport), Amazon Kinesis, Google Cloud Pub/Sub)
+- Connectors to sources such as Apache Kafka, Confluent Cloud Kafka, Apache Flink, MQTT (Message Queuing Telemetry Transport), Amazon Kinesis, Google Cloud Pub/Sub
 
 :::image type="content" source="../media/get-data.png" alt-text="Screenshot of the Get Data menu for an eventhouse in Microsoft Fabric." lightbox="../media/get-data.png":::
 
@@ -27,7 +27,7 @@ You can enable **OneLake availability** for individual KQL databases or tables, 
 
 ## Query data in a KQL database
 
-To query data in a KQL database, you can use **Kusto Query Language (KQL)** or **T-SQL** in *KQL querysets*. When you create a KQL database, an attached KQL queryset is automatically created for running and saving queries.
+To query data in a KQL database, you can use **KQL** or **T-SQL** in *KQL querysets*. When you create a KQL database, an attached KQL queryset is automatically created for running and saving queries.
 
 ### Basic KQL syntax
 
@@ -87,4 +87,4 @@ For AI-based assistance with KQL querying, you can use Copilot for Real-Time Int
 
 When your administrator enables Copilot, you see the option in the queryset menu bar. Copilot opens as a pane to the side of the main query interface. When you ask a question about your data, Copilot generates the KQL code to answer your question.
 
-:::image type="content" source="../media/kql-copilot.png" alt-text="Screenshot of Copilot for Real-Time Intelligence." lightbox="../media/kql-copilot.png":::
+:::image type="content" source="../media/kql-copilot.png" alt-text="Screenshot of Copilot for Real-Time Intelligence." lightbox="../media/kql-copilot.png"::: 

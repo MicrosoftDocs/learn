@@ -29,10 +29,9 @@ bikes
 | order by Neighbourhood asc
 ```
 
-> [!TIP]
-> The query in the example retrieves the most recent observation (the latest record ingested into the source table) within the last 30 minutes for each neighborhood.
+The query in the example retrieves the most recent observation (the latest record ingested into the source table) within the last 30 minutes for each neighborhood.
 
-Initially, the tile displays the results of the query as a table.
+Initially, the tile displays the results of the query as a table as shown in the following image.
 
 :::image type="content" source="../media/tile-table.png" alt-text="Screenshot of a dashboard with a tile containing a table." lightbox="../media/tile-table.png":::
 
