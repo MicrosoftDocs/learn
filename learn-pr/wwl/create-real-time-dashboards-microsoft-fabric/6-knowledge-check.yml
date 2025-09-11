@@ -2,6 +2,8 @@
 uid: learn.wwl.create-real-time-dashboards-microsoft-fabric.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["2F0B032A_2","2F0B032A_26","2F0B032A_34","2F0B032A_38","2F0B032A_6","2F0B032A_51","2F0B032A_55","2F0B032A_63","2F0B032A_67","2F0B032A_75","2F0B032A_83","2F0B032A_87","2F0B032A_95","2F0B032A_104","2F0B032A_108","2F0B032A_120","2F0B032A_128","2F0B032A_140"]
+  module_assessment_regen_label: regen-1757542483821
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"

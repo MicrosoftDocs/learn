@@ -4,10 +4,10 @@ title: Visualize real-time data
 metadata:
   title: Visualize real-time data
   description: "Visualize real-time data"
-  ms.date: 08/28/2025
+  ms.date: 09/10/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
   [!include[](includes/4b-visualize-data.md)]
