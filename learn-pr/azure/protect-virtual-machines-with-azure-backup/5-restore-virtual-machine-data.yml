@@ -4,8 +4,8 @@ metadata:
   title: Restore virtual machine data
   description: Learn about the different options for restoring an Azure virtual machine (VM) from a previous backup.
   ms.date: 09/05/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: AbhishekMallick-MS
+  ms.author: v-mallicka
   ms.topic: unit
 title: Restore virtual machine data
 durationInMinutes: 5

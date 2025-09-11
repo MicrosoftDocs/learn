@@ -8,6 +8,6 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
-durationInMinutes: 9
+durationInMinutes: 6
 content: |
   [!include[](includes/3-git-hub-copilot-chat.md)]

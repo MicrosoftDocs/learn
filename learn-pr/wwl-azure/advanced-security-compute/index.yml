@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.advanced-security-compute
 metadata:
-  title: Plan and implement advanced security for compute
+  title: Plan and Implement Advanced Security for Compute
   description: "This module is designed to provide administrators with the knowledge and skills needed to plan and implement advanced security measures for Azure compute resources, safeguarding applications and data against evolving security threats."
   ms.date: 06/10/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: module-intro-to-product
   ms.custom:
   - N/A
@@ -18,7 +18,7 @@ abstract: |
 
   -   Enhance Azure compute resources' security against vulnerabilities and attacks with advanced measures.
 
-  -   Secure remote access via Azure Bastion and JIT VM access, and implement network isolation for AKS.
+  -   Secure remote access via Azure Bastion and Just-in-Time (JIT) VM access, and implement network isolation for AKS.
 
   -   Strengthen AKS clusters' security, monitor Azure Container Instances and Apps, and manage access to Azure Container Registry.
 
@@ -54,4 +54,4 @@ units:
 - learn.wwl.advanced-security-compute.knowledge-check
 - learn.wwl.advanced-security-compute.summary
 badge:
-  uid: learn.wwl.advanced-security-compute.badge
+  uid: learn.wwl.advanced-security-compute.badge

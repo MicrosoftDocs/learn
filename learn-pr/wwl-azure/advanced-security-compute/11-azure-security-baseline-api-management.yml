@@ -6,10 +6,10 @@ metadata:
   description: "Service supports its own native backup capability (if not using Azure Backup)."
   ms.date: 06/10/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/11-azure-security-baseline-api-management.md)]
+  [!include[](includes/11-azure-security-baseline-api-management.md)]

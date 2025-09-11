@@ -17,4 +17,4 @@ This exercise is a challenge based on content covered in this module, and there 
 When you finish the exercise in GitHub, return here for your next unit.
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/skills/secure-repository-supply-chain)
+> [Start the exercise on GitHub](https://github.com/skills-dev/secure-repository-supply-chain)

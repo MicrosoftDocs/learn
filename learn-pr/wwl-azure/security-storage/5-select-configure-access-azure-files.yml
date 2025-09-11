@@ -6,10 +6,10 @@ metadata:
   description: "Select and configure an appropriate method for access to Azure Files"
   ms.date: 06/25/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-select-configure-access-azure-files.md)]
+  [!include[](includes/5-select-configure-access-azure-files.md)]

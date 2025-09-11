@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.intro-entra-external-native-auth
 metadata:
-  ms.author: joylynnkirui
+  ms.author: orthomas
   author: S2FrdQ
   ms.date: 04/10/2025
   title: Guided project - Add sign-up in an Android mobile app and iOS/macOS app using native authentication

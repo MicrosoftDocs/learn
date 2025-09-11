@@ -1,6 +1,7 @@
 
 
 
+
 Globally, IPv4 address ranges are in short supply, and can be an expensive way to grant access to Internet resources. [Azure Network Address Translation (NAT)](/azure/nat-gateway/nat-overview) lets internal resources on a private network to share routable IPv4 addresses. Rather than purchasing an IPv4 address for each resource that requires internet access, you can use a NAT service to map outgoing requests from internal resources to an external IP address.
 
 The following diagram shows outbound traffic flow from Subnet 1 through the NAT gateway to be mapped to a Public IP address or a Public IP prefix.
@@ -17,9 +18,6 @@ NAT scales automatically to support dynamic workloads. NAT can support up to 16 
 
 ## Limitations of NAT
 
-- Basic resources (for example basic load balancer) and any products derived from them aren't compatible with NAT. Basic resources must be placed on a subnet not configured with NAT.
 - Only the IPv4 address family is supported. NAT doesn't interact with IPv6 address family. 
 - NAT can't span multiple virtual networks.
 - IP fragmentation isn't supported.
-
-Choose the best response for each question.

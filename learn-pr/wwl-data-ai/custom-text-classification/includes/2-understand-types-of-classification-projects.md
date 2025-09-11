@@ -94,7 +94,7 @@ Single label classification models specify a project type of `customSingleLabelC
 }
 ```
 
-Multiple label classification models specify a project type of `CustomMultiLabelClassification`
+Multiple label classification models specify a project type of `customMultiLabelClassification`
 
 ```json
 {
@@ -147,3 +147,4 @@ Multiple label classification models specify a project type of `CustomMultiLabel
   }
 }
 ```
+

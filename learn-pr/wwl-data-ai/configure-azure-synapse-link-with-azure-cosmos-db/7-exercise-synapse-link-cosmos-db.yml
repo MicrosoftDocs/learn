@@ -4,12 +4,12 @@ title: Exercise - Implement Azure Synapse Link for Cosmos DB
 metadata:
   title: Exercise - Implement Azure Synapse Link for Cosmos DB
   description: "Exercise - Implement Azure Synapse Link for Cosmos DB"
-  ms.date: 12/19/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 35
 content: |
-  [!include[](includes/7-exercise-synapse-link-cosmos-db.md)]
+  [!include[](includes/7-exercise-synapse-link-cosmos-db.md)]

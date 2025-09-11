@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Create triggers and user-defined functions
   description: "Create triggers and user-defined functions"
-  ms.date: 06/26/2025
-  author: wwlpublish
+  ms.date: 09/09/2025
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: unit
   ms.custom:

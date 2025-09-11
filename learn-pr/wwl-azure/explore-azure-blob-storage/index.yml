@@ -1,10 +1,10 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-blob-storage
 metadata:
-  title: Explore Azure Blob storage
+  title: Explore Azure Blob Storage
   description: "Learn the core features and functionality of Azure Blob storage."
   ms.date: 07/12/2024
-  author: wwlpublish
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: module
   ms.service: azure-blob-storage
@@ -42,4 +42,4 @@ units:
 - learn.wwl.explore-azure-blob-storage.knowledge-check
 - learn.wwl.explore-azure-blob-storage.summary
 badge:
-  uid: learn.wwl.explore-azure-blob-storage.badge
+  uid: learn.wwl.explore-azure-blob-storage.badge

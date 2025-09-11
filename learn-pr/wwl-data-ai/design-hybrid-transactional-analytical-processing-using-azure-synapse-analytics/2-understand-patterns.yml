@@ -2,14 +2,14 @@
 uid: learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.understand-patterns
 title: Understand hybrid transactional and analytical processing patterns
 metadata:
-  title: Understand hybrid transactional and analytical processing patterns
+  title: Understand Hybrid Transactional and Analytical Processing Patterns
   description: "Understand hybrid transactional and analytical processing patterns"
-  ms.date: 06/26/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-understand-patterns.md)]
+  [!include[](includes/2-understand-patterns.md)]

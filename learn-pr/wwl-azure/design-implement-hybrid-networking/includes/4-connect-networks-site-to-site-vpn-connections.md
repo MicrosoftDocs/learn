@@ -1,7 +1,6 @@
 
-A [site-to-site (S2S) VPN gateway](/azure/vpn-gateway/design#s2smulti) lets you create a secure connection to your virtual network from another virtual network or a physical network. 
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cce9cc6b-a7b7-4b5b-9661-b5c666ce1bd7]
+A [site-to-site (S2S) VPN gateway](/azure/vpn-gateway/design#s2smulti) lets you create a secure connection to your virtual network from another virtual network or a physical network. 
 
 The following diagram illustrates how you would connect an on-premises network to the Azure platform. The internet connection uses an IPsec VPN tunnel.
 

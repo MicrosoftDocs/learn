@@ -4,8 +4,8 @@ title: Exercise - Scaffolding a voice calling web app
 metadata:
   title: Exercise - Scaffolding a voice calling web app
   description: Creating the scaffolding for an Azure Communication Services calling web app.
-  author: rmcmurray
-  ms.author: robmcm
+  author: sloanster
+  ms.author: micahvivion
   ms.date: 07/26/2024
   ms.topic: unit
   ms.custom:
@@ -13,4 +13,3 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/3-exercise-create-app.md)]
-

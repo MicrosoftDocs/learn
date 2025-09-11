@@ -2,14 +2,14 @@
 uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-files
 title: Query files using a serverless SQL pool
 metadata:
-  title: Query files using a serverless SQL pool
+  title: Query Files Using a Serverless SQL Pool
   description: "Query files using a serverless SQL pool"
-  ms.date: 09/07/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-query-files.md)]
+  [!include[](includes/3-query-files.md)]

@@ -1,10 +1,10 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-blob-storage-lifecycle
 metadata:
-  title: Manage the Azure Blob storage lifecycle
+  title: Manage the Azure Blob Storage Lifecycle
   description: "Learn how to manage data availability throughout the Azure Blob storage lifecycle."
   ms.date: 07/12/2024
-  author: wwlpublish
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: module
   ms.custom:
@@ -46,4 +46,4 @@ units:
 - learn.wwl.manage-azure-blob-storage-lifecycle.knowledge-check
 - learn.wwl.manage-azure-blob-storage-lifecycle.summary
 badge:
-  uid: learn.wwl.manage-azure-blob-storage-lifecycle.badge
+  uid: learn.wwl.manage-azure-blob-storage-lifecycle.badge
