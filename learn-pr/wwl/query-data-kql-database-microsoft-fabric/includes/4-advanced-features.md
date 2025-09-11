@@ -61,4 +61,4 @@ To call the function, use it like a table. In this example, the **trips_by_min_p
 ```kql
 trips_by_min_passenger_count(3)
 | take 10
-```
+``` 
