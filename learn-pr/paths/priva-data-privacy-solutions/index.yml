@@ -2,7 +2,7 @@
 uid: learn.wwl.priva-data-privacy-solutions
 metadata:
   title: 'Implement and Manage Data Privacy with Microsoft Priva'
-  description: 'Implement Microsoft Priva to help your organization manage personal data responsibly and meet compliance requirements. Use privacy risk management to identify and mitigate potential risks, and manage subject rights requests to respond accurately and on time. With Microsoft Priva, you can build a structured approach to data privacy that supports compliance and strengthens trust with employees and customers.'
+  description: 'Implement Microsoft Priva to help your organization manage personal data responsibly and meet compliance requirements. Use Privacy Risk Management to identify and mitigate potential risks, and manage subject rights requests to respond accurately and on time. With Microsoft Priva, you can build a structured approach to data privacy that supports compliance and strengthens trust with employees and customers.'
   ms.date: 09/12/2025
   author: wwlpublish
   ms.author: riswinto
@@ -12,7 +12,7 @@ prerequisites: |
   - Familiarity with Microsoft Purview data governance solutions
   - Basic understanding of data privacy and protection concepts
 summary: |
-  Implement Microsoft Priva to help your organization manage personal data responsibly and meet compliance requirements. Use privacy risk management to identify and mitigate potential risks, and manage subject rights requests to respond accurately and on time. With Microsoft Priva, you can build a structured approach to data privacy that supports compliance and strengthens trust with employees and customers.
+  Implement Microsoft Priva to help your organization manage personal data responsibly and meet compliance requirements. Use Privacy Risk Management to identify and mitigate potential risks, and manage subject rights requests to respond accurately and on time. With Microsoft Priva, you can build a structured approach to data privacy that supports compliance and strengthens trust with employees and customers.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
