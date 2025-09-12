@@ -51,10 +51,26 @@ To run this exercise, ensure you follow these steps before proceeding:
 ### Prerequisites
 
 - SQL Server 2022 with the latest [**AdventureWorks**](/sql/samples/adventureworks-install-configure) database. 
-- Once the database has been restored, run the following command:
+- Once the database has been restored, run the following commands to create additional objects for the assessment:
     
     ```sql
-    USE [AdventureWorks]
+    -- Create LogDB database
+    CREATE DATABASE LogDB;
+    GO
+    
+    USE LogDB;
+    GO
+    
+    -- Create Logs table
+    CREATE TABLE Logs (
+        DataCreated DATETIME2 DEFAULT GETDATE(),
+        UserID INT,
+        ActionID INT
+    );
+    GO
+       
+    -- Now modify AdventureWorks database
+    USE [AdventureWorks];
     GO    
 
     ALTER TABLE [Person].[Person] ADD [Next] VARCHAR(5);
