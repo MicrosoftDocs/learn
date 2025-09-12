@@ -3,12 +3,12 @@ uid: learn.wwl.priva-tracker-scanning
 metadata:
   title: Use Microsoft Priva Tracker Scanning for web tracking compliance
   description: "Use Microsoft Priva Tracker Scanning for web tracking compliance."
-  ms.date: 01/24/2025
+  ms.date: 09/12/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ms.service: purview
-  hidden: false
+  hidden: true
 title: Use Microsoft Priva Tracker Scanning for web tracking compliance
 summary: Microsoft Priva Tracker Scanning helps organizations identify, categorize, and manage web tracking technologies to ensure compliance and transparency. Learn how to configure Tracker Scanning, create and manage tracker categories, run scans to detect tracking technologies, and support responsible data practices aligned with user expectations.
 abstract: |
