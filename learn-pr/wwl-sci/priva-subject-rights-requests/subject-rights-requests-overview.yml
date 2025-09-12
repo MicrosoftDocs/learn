@@ -4,12 +4,12 @@ title: Understand subject rights requests in Microsoft 365
 metadata:
   title: Understand Subject Rights Requests in Microsoft 365
   description: "Understand subject rights requests in Microsoft 365"
-  ms.date: 01/24/2025
+  ms.date: 09/11/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/subject-rights-requests-overview.md)]

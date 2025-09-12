@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-subject-rights-requests.subject-rights-request-reports
+title: Complete and report on subject rights requests
+metadata:
+  title: Complete and report on subject rights requests
+  description: "Complete and report on subject rights requests"
+  ms.date: 09/11/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/subject-rights-request-reports.md)]
