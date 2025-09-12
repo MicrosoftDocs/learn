@@ -1,153 +1,56 @@
-The **Review data** stage is a key part of subject rights requests. This step involves evaluating content items collected during the data retrieval process. Collaborators refine the dataset to ensure only relevant and accurate information is included in the final report. A dedicated Microsoft Teams channel is created automatically to facilitate collaboration during this stage.
+When a request reaches the review stage, the collected data is rarely neat. Messages, forms, and shared project files might all appear together, even if only some are relevant. The review step provides structure: decide what to include, exclude unrelated or non-Microsoft information, and record choices so the final package is accurate and defensible.
 
-## Key tasks in the review process
+Before you begin, make a quick plan. Start with any priority items, apply filters to narrow the list, and preview files so you're not reviewing content at random.
 
-During this stage, you perform these tasks:
+## Plan the review
 
-- Import other files
-- Start with priority items
-- Filter the item list
-- Mark items as Include or Exclude
-- Identify duplicates
-- Download files
-- Apply data review tags
-- Redact content
-- Enter notes about a file
+Open the request and go to **Data collected**. Prioritize any items flagged for potential conflicts, apply filters such as **Keywords**, **Tags**, or **Location** to focus the work, and preview files before deciding. If a file doesn't render, you can download it. Keep an eye out for duplicates by name, size, or version to avoid reviewing the same content twice.
 
-## Import files
+## Decide what belongs in the response
 
-If relevant content resides outside Microsoft 365 or was missed during the automated search, you can manually import files into the **Data collected** tab. Imported files are added to the same Azure Blob Storage container as other collected items.
+Give each item a clear status so the output is accurate:
 
-1. In the **Data collected** tab, select **List actions** (paper and pencil icon) from the command bar.
-1. Under **Import files**, select **Choose files** and upload the desired items.
-1. Confirm the files in the **Import files** box, then select **Import**.
+- **Include**: the item is relevant to the data subject and should be returned.
+- **Exclude**: the item isn't relevant. Add a short note to record why.
+- **Not a match**: the item was returned by search but doesn't relate to the request.
 
-**Details**:
+Only items marked **Include** are packaged for the final response. If you mark an item for deletion but it has a retention setting, record the conflict. Retention takes precedence, and the deletion will be blocked later.
 
-- Maximum file size is 500 MB.
-- Imported files might take up to 20 minutes to process.
-- Multiple users can upload files simultaneously, but this might affect upload times.
+## Use tags and notes to organize work
 
-## Start with priority items
+Tags and notes help reviewers coordinate without extra spreadsheets:
 
-The **Priority items to review** tile on the request's overview page highlights flagged content items, such as those with conflicts. Start your review here to address critical issues early, like items marked for deletion but blocked by retention labels. Selecting these items provides more context and guidance for resolving conflicts.
+- **Tags**: apply tags like _Follow-up_ or _Update_ to group items for a second review or specialist input.
+- **Notes**: capture reviewer context or rationale. Notes are internal and aren't shared with the data subject.
 
-## Filter the item list
+You can apply tags and notes to single items or to a selection.
 
-Filters help manage large datasets by narrowing results. Microsoft Priva offers:
+## Redact sensitive or unrelated content
 
-- **Basic filters**: Quickly sort items by properties like content type, location, and date.
-- **Advanced filters (preview)**: Build complex queries using metadata, sensitive info types, and classification labels.
+Before finalizing, remove content that shouldn't be shared. Use the **Redact** tools to block specific text or regions. Redaction creates a separate version for the package and leaves the original file unchanged. Keep redactions targeted, removing only information that's unrelated to the request or belongs to other individuals. Always confirm redactions in the export preview to make sure they appear as expected.
 
-**Steps for basic filters**:
+## Import files when needed
 
-1. In the **Data collected** tab, select **Filter**.
-1. Choose from available options, such as **Content Type** or **Date Range**.
-1. Apply filters and review the results.
+If relevant items live outside the collected locations, use **Import files** so they appear with the rest of the content. This keeps review and packaging in one place.
 
-**Steps for advanced filters**:
+## Collaborate with the right people
 
-1. Toggle to **Advanced filter**.
-1. Build queries using operators and parameters.
-1. Save queries for reuse.
-
-## Mark items as Include or Exclude
-
-Review items on the **Data collected** tab to determine relevance. For each item:
-
-- Select **Include** to add it to the final report.
-- Select **Exclude** if it's irrelevant; you must provide a note justifying the exclusion.
-- Select **Not a match** for false positives, then confirm in the flyout pane.
-
-By default, only included items are part of the final reports.
-
-## Identify duplicates
-
-Streamline the review process by identifying duplicate items. Priva allows you to:
-
-- **Detect duplicates**: Use the **List actions** command to start the identification process. This can take several minutes to complete.
-- **View duplicates**: Items marked as duplicates are flagged in a new **Duplicates** column.
-- **Hide duplicates**: Filter the item list to focus on unique content.
-- **Apply actions in bulk**: Mark all duplicates of a representative item with the same status (for example, Include or Exclude).
-
-Applying actions in bulk ensures efficiency by reducing repetitive reviews for identical content.
-
-### Important considerations for hidden duplicates
-
-When duplicates are hidden, any actions you take, such as **Include**, **Exclude**, or redaction on a representative item might not reflect the corresponding duplicates in the hidden view. This could lead to inconsistent decisions or incomplete processing of items.
-
-To avoid this issue:
-
-- Identify and review duplicates before taking any actions on the representative items. This ensures all duplicates are visible and can be reviewed consistently.
-- If duplicates are already hidden, review the representative item carefully. Use the **Duplicates** column to view and apply actions to all associated duplicates in bulk.
-
-By planning your review process around duplicates, you can maintain accuracy and streamline decision-making for the entire dataset.
-
-## Download files
-
-For items that can't be reviewed within the content area, you can download them for offline examination or redaction:
-
-1. Select the item from the list.
-1. Choose **Download** from the command bar.
-1. Make necessary changes locally, then reimport the file if needed.
-
-> [!NOTE]
-> Changes made locally don't automatically sync with the request. Files must be reimported to reflect updates.
-
-## Apply data review tags
-
-Tags help organize items and communicate with collaborators. Priva provides:
-
-- **Default tags**: Two preconfigured tags (Follow-up and Update).
-- **Custom tags**: Up to 21 extra tags you can define.
-
-To apply tags:
-
-1. Select an item or multiple items.
-1. Choose **Apply tags** from the command bar.
-1. Select or create tags in the flyout pane, then save your changes.
-
-Tags don't initiate actions but serve as markers to flag items for further attention or categorization.
-
-## Redact content
-
-Redactions ensure sensitive or irrelevant information is removed before providing data to the subject. Use the **Redact** tab for:
-
-- **Assisted redaction (preview)**: Highlights recommended redactions based on personal data types unrelated to the subject.
-- **Search and redact (preview)**: Find specific terms or values to redact across the content.
-- **Manual redaction**: Use annotation tools to block content directly.
-
-Redactions create a PDF version of the item, preserving the original file. Annotate redacted areas with custom text if needed.
-
-## Enter notes about a file
-
-Add contextual notes for items or the overall request:
-
-- **File notes**: Add comments specific to an item.
-- **Case notes**: Provide general notes about the request.
-
-Notes are visible to collaborators but not included in the final report.
-
-## Collaboration for data review
-
-When a request is created, a Teams channel is automatically set up for collaboration. Administrators can:
-
-- Add collaborators: Assign users to the request via the **Collaborators** tab. Share the request link with them directly.
-- Communicate in Teams: Use the **Chat with collaborators** feature to discuss the request.
-- Manage roles: Collaborators are assigned the **Privacy Management Contributors** role, allowing them to assist with the request.
-- Remove collaborators: Remove users via the **Collaborators** tab, except for the request creator.
-
-The Teams integration enables seamless communication and task delegation among stakeholders.
+Subject rights requests often involve multiple reviewers. Use a private Teams channel to coordinate discussion and decisions, and add collaborators who need to review or provide input. They'll see the same items and status. For delete requests, assign an approver since items marked for deletion must be approved before any action occurs.
 
 ## Complete the review
 
-Once all items are reviewed and marked, complete the process:
+When decisions are recorded and redactions are complete:
 
-1. Select **Complete review** in the upper-right corner.
-1. Add internal notes as needed.
-1. Confirm the completion to prepare the request for final reporting.
+1. Select **Complete review**.
+1. Confirm the summary and save any final notes for internal records.
 
-By following these steps, you can ensure a thorough and compliant review process for subject rights requests.
+The request is now ready for the next stage: generating reports and, if applicable, processing deletions.
+
+## What happens next
+
+- **Access or export**: generate the final package and retain audit logs.
+- **Tagged list for follow-up**: share internally so teams can act.
+- **Delete**: approved items proceed to deletion. Retention policies are respected, and blocked items are listed in reports.
 
 ## Legal disclaimer
 
