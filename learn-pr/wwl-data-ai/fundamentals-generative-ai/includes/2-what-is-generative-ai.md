@@ -1,7 +1,5 @@
 Artificial Intelligence (AI) imitates human behavior by using machine learning to interact with the environment and execute tasks without explicit directions on what to output.
 
-## What is generative AI?
-
 *Generative* AI describes a category of capabilities within AI that create original content. These capabilities include taking in natural language input, and returning appropriate responses in a variety of formats such as natural language, images, code, and more. Let's take a look at a couple of examples: 
 
 #### Natural language generation

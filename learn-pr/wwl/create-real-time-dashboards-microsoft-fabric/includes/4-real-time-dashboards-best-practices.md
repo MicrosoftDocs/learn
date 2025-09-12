@@ -5,7 +5,7 @@ Base queries help you avoid duplicating the same logic across multiple tiles. In
 For example, in a bike rental dashboard, you could create a base query through the dashboard's **Base queries** menu. When creating the base query, you would:
 
 1. Assign it the variable name `_base_bike_data`
-2. Define the query that returns all data fields in each neighborhood within the last 30 minutes:
+2. Define a query that returns all data fields in each neighborhood within the last 30 minutes:
 
 ```kql
 bikes

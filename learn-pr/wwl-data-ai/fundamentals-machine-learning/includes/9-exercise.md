@@ -1,4 +1,4 @@
-Now it's your chance to see for yourself the kind of solution that machine learning makes possible.
+Now it's your chance to see for yourself the kind of solution that machine learning makes possible. In this exercise, you'll explore applications that predict unknown values.
 
 Launch the exercise and follow the instructions.
 

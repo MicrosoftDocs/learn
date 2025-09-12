@@ -8,7 +8,7 @@ Data is collected using:
 
 - **Microsoft Defender for Endpoint** - Provides advanced threat protection capabilities and endpoint detection and response.
 
-- **Log Analytics agent** - Legacy agent still supported for specific scenarios, but Azure Monitor Agent is the preferred option for new deployments.
+- **Log Analytics agent** - This agent is officially retired (August of 2024), and is no longer supported. [Migrate to the Azure Monitor Agent](/azure/azure-monitor/agents/azure-monitor-agent-migration) for new deployments.
 
 - Security extensions, such as the Azure Policy Add-on for Kubernetes, which can also provide data to Security Center regarding specialized resource types.
 
@@ -40,15 +40,54 @@ Defender for Endpoint integration is enabled by default when you enable a Defend
     Onboarding might take up to an hour. Defender for Cloud detects any previous Defender for Endpoint installations and reconfigures them to integrate with Defender for Cloud.
 
 > [!NOTE]
-> For Azure VMs created from generalized OS images, MDE won't be automatically provisioned via this setting; however, you can manually enable the MDE agent and extension using Azure CLI, REST API, or Azure Policy.
+> For Azure VMs created from generalized OS images, Microsoft Defender for Endpoint (MDE) won't be automatically provisioned via this setting; however, you can manually enable the MDE agent and extension using Azure CLI, REST API, or Azure Policy.
+
+## Direct onboarding with Microsoft Defender for Endpoint
+
+For non-Azure servers (on-premises and multicloud environments), you can use direct onboarding to connect your machines to Microsoft Defender for Cloud through the Defender for Endpoint agent. This approach provides a seamless integration without requiring Azure Arc or extra software deployment.
+
+### How direct onboarding works
+
+Direct onboarding creates a unified protection experience by:
+
+- Automatically showing your non-Azure servers onboarded to Defender for Endpoint in Defender for Cloud under a designated Azure subscription
+- Providing licensing, billing, alerts, and security insights through the Azure subscription
+- Integrating vulnerability data and software inventory with Defender for Cloud
+
+> [!IMPORTANT]
+> Direct onboarding doesn't provide server management capabilities like Azure Policy, Extensions, or Guest configuration. You must use other tools such as Defender for Endpoint security settings management, Configuration Manager, Group Policy, or PowerShell to manage security settings.
+
+### Enable direct onboarding
+
+To enable direct onboarding:
+
+1. In Defender for Cloud, go to **Environment Settings** > **Direct onboarding**.
+
+1. Switch the **Direct onboarding** toggle to **On**.
+
+1. Select the subscription you want to use for servers onboarded directly with Defender for Endpoint.
+
+1. Select **Save**.
+
+After enabling direct onboarding for the first time, it might take up to 24 hours to see your non-Azure servers in your designated subscription.
+
+### Deploy Defender for Endpoint on your servers
+
+Once direct onboarding is enabled, deploy the Defender for Endpoint agent on your on-premises Windows and Linux servers using the standard Defender for Endpoint onboarding process. The deployment method is the same whether you use direct onboarding or not.
+
+### Limitations
+
+- **Plan support**: Direct onboarding provides access to all Defender for Servers Plan 1 features. For Plan 2 features, certain capabilities still require Azure Arc on non-Azure machines.
+- **Multicloud support**: You can directly onboard AWS and GCP VMs, but if you plan to use multicloud connectors simultaneously, Azure Arc is still recommended.
+- **Agent versions**: Ensure your Defender for Endpoint agent meets minimum version requirements to avoid limitations with simultaneous onboarding methods.
 
 ### Information for Microsoft Sentinel users
 
 Users of Microsoft Sentinel: note that security events collection within the context of a single workspace can be configured from either Microsoft Defender for Cloud or Microsoft Sentinel, but not both. If you're planning to add Microsoft Sentinel to a workspace that is already getting alerts from Microsoft Defender for Cloud, and it's set to collect Security Events, you have two options:
 
-- Leave the Security Events collection in Defender for Cloud as is. You are able to query and analyze these events in Microsoft Sentinel and Defender for Cloud. However, you won't be able to monitor the connector's connectivity status or change its configuration in Microsoft Sentinel. If monitoring or customizing the connector is important to you, consider the second option.
+- Leave the Security Events collection in Defender for Cloud as is. You're able to query and analyze these events in Microsoft Sentinel and Defender for Cloud. However, you won't be able to monitor the connector's connectivity status or change its configuration in Microsoft Sentinel. If monitoring or customizing the connector is important to you, consider the second option.
 
-- Disable Security Events collection in Defender for Cloud (by setting Windows security events to None in the configuration of your Log Analytics agent). Then add the Security Events connector in Microsoft Sentinel. As with the first option, you are able to query and analyze events in both Microsoft Sentinel and Defender for Cloud, but you'll now be able to monitor the connector's connectivity status or change its configuration in - and only in - Microsoft Sentinel.
+- Disable Security Events collection in Defender for Cloud (by setting Windows security events to None in the configuration of your Log Analytics agent). Then add the Security Events connector in Microsoft Sentinel. As with the first option, you're able to query and analyze events in both Microsoft Sentinel and Defender for Cloud, and you're able to monitor the connector's connectivity status or change its configuration in - and only in - Microsoft Sentinel.
 
 ### What event types are stored for "Common" and "Minimal"?
 
