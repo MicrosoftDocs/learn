@@ -4,7 +4,7 @@ title: 'Exercise: Identify compatibility issues'
 metadata:
   title: 'Exercise: Identify compatibility issues'
   description: "Learn to assess a legacy SQL Server database for migration to Azure SQL Database by identifying compatibility issues, necessary changes, unsupported features, configurations, and reviewing the database schema."
-  ms.date: 08/26/2025
+  ms.date: 9/12/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
