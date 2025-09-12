@@ -409,12 +409,12 @@
     },
     {
       "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/configure-prerequisites-beyond-m365.md",
-      "redirect_url": "/training/modules/priva-subject-rights-requests",
+      "redirect_url": "https://learn.microsoft.com/training/modules/priva-subject-rights-requests/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/create-subject-rights-request-beyond-m365.md",
-      "redirect_url": "/training/modules/priva-subject-rights-requests",
+      "redirect_url": "https://learn.microsoft.com/training/modules/priva-subject-rights-requests/",
       "redirect_document_id": false
     }
     ]
