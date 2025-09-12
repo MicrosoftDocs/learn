@@ -36,7 +36,7 @@ Here’s what happens when you implement this in Databricks:
 
 - Once all executors finish their part of the work, Spark collects the results, combines them, and gives you back a clean DataFrame showing the top product categories.
 
-![Diagram showing the Spark Architecture](../media/spark-architecture.png)
+![Diagram showing the Spark Architecture.](../media/spark-architecture.png)
 
 From your perspective as a data engineer, you’re just writing familiar DataFrame code in your Databricks notebook. Spark takes care of distributing the data, parallelizing the computation, and retrying tasks if something fails in the cluster. This design makes Spark feel approachable—almost like you’re working with local data tools—but under the hood it’s orchestrating a highly parallel, fault-tolerant computation across potentially hundreds of machines.
 
@@ -46,7 +46,7 @@ One of Spark’s most important design choices is **lazy evaluation**. Unlike to
 
 Behind the scenes, Spark builds a **Directed Acyclic Graph (DAG)** of operations. Each node in the graph represents a dataset, and each edge represents a transformation applied to that dataset. Because the graph is acyclic, it flows in one direction—from your raw input data to the final result—without looping back on itself. Spark’s optimizer analyzes this DAG to combine steps, minimize data movement, and determine the best execution strategy across the cluster.
 
-![Diagram showing a Spark Directed Acyclic Graph (DAG)](../media/spark-directed-acyclic-graph-example.png)
+![Diagram showing a Spark Directed Acyclic Graph (DAG).](../media/spark-directed-acyclic-graph-example.png)
 
 Execution only begins when you perform an **action**, such as collecting results to the driver, writing data to storage, or counting rows. At that point, Spark submits the optimized DAG as a series of tasks to the cluster manager, which distributes them across executors. This design helps Spark achieve high performance: it avoids unnecessary computations, reduces shuffling of data between nodes, and ensures that the cluster resources are used as efficiently as possible.
 
