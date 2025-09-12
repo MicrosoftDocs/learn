@@ -5,8 +5,8 @@ metadata:
   description: Use the Azure AI Content Understanding REST API for multimodal content analysis and information extraction.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 05/15/2025
-  ms.service: azure-ai-services
+  ms.date: 08/28/2025
+  ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
   ms.collection:
@@ -29,6 +29,7 @@ roles:
 - developer
 products:
 - ai-services
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 units:

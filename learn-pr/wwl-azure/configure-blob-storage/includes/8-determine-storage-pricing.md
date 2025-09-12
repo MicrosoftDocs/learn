@@ -4,7 +4,7 @@ Understanding your access patterns and correlating them with your durability and
 - Quantity and types of operations performed, along with any data transfer costs.
 - Data redundancy option selected.
 
-You can use the Azure Pricing Calculator to estimate you storage costs.
+You can use the Azure Pricing Calculator to estimate your storage costs.
 
 :::image type="content" source="../media/blob-pricing.png" alt-text="Screenshot of the Azure Pricing Calculator with storage highlighted." border="false":::
 
@@ -24,8 +24,3 @@ Review the following billing considerations for an Azure storage account and Blo
 - **Outbound data transfer costs**. Outbound data transfers incur billing for bandwidth usage on a per-gigabyte basis. This billing is consistent with general-purpose Azure storage accounts.
 
 - **Changes to the storage tier**. If you change the account storage tier from Cool to Hot, you incur a charge equal to reading all the data existing in the storage account. Changing the account storage tier from Hot to Cool incurs a charge equal to writing all the data into the Cool tier (GPv2 accounts only).
-
-
-> [!TIP]
-> Read more about how to [*Optimize your cost with Azure Blob Storage*](/training/modules/optimize-your-cost-azure-blob-storage/). 
-

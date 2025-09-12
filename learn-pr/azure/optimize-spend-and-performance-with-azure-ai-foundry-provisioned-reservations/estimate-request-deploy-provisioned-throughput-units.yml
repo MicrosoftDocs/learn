@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations.estimate-request-deploy-provisioned-throughput-units
+title: Estimate, request, and deploy provisioned throughput units
+metadata:
+  title: Estimate, Request, and Deploy Provisioned Throughput Units
+  description: Describe how to estimate, request, and deploy PTUs in Azure AI Foundry.
+  ms.date: 08/01/2025
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/estimate-request-deploy-provisioned-throughput-units.md)]

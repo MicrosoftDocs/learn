@@ -3,7 +3,7 @@ uid: learn.wwl.develop-language-solutions-azure-ai
 metadata:
   title: Develop natural language solutions in Azure
   description: Develop natural language solutions in Azure
-  ms.date: 06/09/2025
+  ms.date: 08/28/2025
   author: ivorb
   ms.author: berryivor
   ms.topic: learning-path
@@ -22,6 +22,7 @@ roles:
 - developer
 products:
 - ai-services
+- azure-ai-foundry
 subjects:
 - natural-language-processing
 modules:

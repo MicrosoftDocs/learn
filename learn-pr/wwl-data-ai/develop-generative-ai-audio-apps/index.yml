@@ -3,11 +3,12 @@ uid: learn.wwl.develop-generative-ai-audio-apps
 metadata:
   title: Develop an audio-enabled generative AI application
   description: A voice carries meaning beyond words, and audio-enabled generative AI models can interpret spoken input to understand tone, intent, and language. Learn how to build audio-enabled chat apps that listen and respond to audio.
-  ms.date: 05/6/2025
+  ms.date: 08/28/2025
   author: buzahid
   ms.author: buzahid
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
-  ms.service: azure-ai-services
+  ai-usage: ai-assisted
+  ms.service: azure-ai-foundry
 title: Develop an audio-enabled generative AI application
 summary: A voice carries meaning beyond words, and audio-enabled generative AI models can interpret spoken input to understand tone, intent, and language. Learn how to build audio-enabled chat apps that listen and respond to audio.
 abstract: |
@@ -24,8 +25,8 @@ levels:
 roles: 
   - ai-engineer
 products: 
-  - azure
-  - ai-services
+  - azure-ai-foundry
+  - azure-ai-foundry-sdk
 subjects: 
   - artificial-intelligence
 units:

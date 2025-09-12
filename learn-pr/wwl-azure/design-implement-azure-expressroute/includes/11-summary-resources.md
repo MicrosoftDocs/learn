@@ -21,7 +21,4 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 
 - [Introduction to Azure ExpressRoute](/training/modules/intro-to-azure-expressroute/). This module explains what Azure ExpressRoute does, how it works, and when you should choose to use Azure ExpressRoute as a solution.
 
-- [Connect your on-premises network to the Microsoft global network by using ExpressRoute](/training/modules/connect-on-premises-network-with-expressroute/). Learn how to connect your on-premises systems and users to Azure and Office 365 by using ExpressRoute for private, dedicated, and guaranteed throughput connectivity.
-
 - [Troubleshoot virtual network connectivity in Microsoft Azure](/training/modules/cloud-hybrid-connectivity/4-troubleshoot-virtual-network-connectivity). This module enables you to manage and troubleshoot different network configurations to support your organization’s needs.
-

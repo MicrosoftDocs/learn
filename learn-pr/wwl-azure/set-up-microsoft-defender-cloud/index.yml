@@ -5,7 +5,7 @@ metadata:
   description: "Discover how to leverage Microsoft Defender for Cloud through the Azure portal to ensure the security of your Azure services and workloads, offering continuous threat detection and prevention."
   ms.date: 04/24/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
@@ -77,4 +77,4 @@ units:
 - learn.wwl.set-up-microsoft-defender-cloud.knowledge-check
 - learn.wwl.set-up-microsoft-defender-cloud.summary
 badge:
-  uid: learn.wwl.set-up-microsoft-defender-cloud.badge
+  uid: learn.wwl.set-up-microsoft-defender-cloud.badge

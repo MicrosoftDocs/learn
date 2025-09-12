@@ -3,11 +3,11 @@ uid: learn.wwl.get-started-kusto-fabric.define-real-time-hub
 title: Ingest and transform real-time data
 metadata:
   title: Ingest and transform real-time data
-  description: "Understand features and capabilities of eventstreams, and how they ingest data in a Fabric real-time hub."
-  ms.date: 12/03/2024
-  author: wwlpublish
-  ms.author: jamesh
+  description: "Ingest and transform real-time data"
+  ms.date: 09/10/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-durationInMinutes: 15
+durationInMinutes: 6
 content: |
   [!include[](includes/3a-define-real-time-hub.md)]

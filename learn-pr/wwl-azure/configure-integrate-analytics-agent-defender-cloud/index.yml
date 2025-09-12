@@ -5,7 +5,7 @@ metadata:
   description: "Discover how to set up and integrate a Log Analytics agent with a workspace in Defender for Cloud using the Azure portal, enhancing security data analysis capabilities."
   ms.date: 11/14/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: module-standard-task-based
   ms.collection: N/A
   ms.custom:

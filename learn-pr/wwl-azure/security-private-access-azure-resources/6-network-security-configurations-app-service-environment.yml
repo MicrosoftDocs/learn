@@ -6,10 +6,10 @@ metadata:
   description: "Plan and implement network security configurations for an App Service Environment (ASE)"
   ms.date: 10/03/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom:
   - references_regions
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-network-security-configurations-app-service-environment.md)]
+  [!include[](includes/6-network-security-configurations-app-service-environment.md)]

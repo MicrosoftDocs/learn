@@ -6,10 +6,10 @@ metadata:
   description: "Configure security for Azure Container Instances (ACIs)"
   ms.date: 06/10/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: unit
   ms.custom: N/A, devx-track-azurecli
 durationInMinutes: 7
 content: |
   [!include[](includes/7-monitor-container-resources-azure-container-instances.md)]
-
+

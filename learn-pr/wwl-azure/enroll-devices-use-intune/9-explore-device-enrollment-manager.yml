@@ -4,13 +4,12 @@ title: Explore device enrollment manager
 metadata:
   title: Explore device enrollment manager
   description: "Explore device enrollment manager"
-  ms.date: 04/16/2025
+  ms.date: 08/01/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: unit
   ms.custom:
-    - sfi-ga-nochange
-    - N/A
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/9-explore-device-enrollment-manager.md)]
