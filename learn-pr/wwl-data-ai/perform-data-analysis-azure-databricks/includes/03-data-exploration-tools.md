@@ -10,7 +10,7 @@ You can use **notebooks** in Azure Databricks to write Python, SQL, Scala, or R 
 
 You can use the built-in **visualizations** to quickly understand data distributions, trends, and patterns. Next to the built-in features, Azure Databricks allows you to integrate with commonly used open-source libraries like Matplotlib, Seaborn, or D3.js for more complex visualizations.
 
-![Screenshot of an Azure Databricks Notebook Chart](../media/series-selection.gif)
+![Screenshot of an Azure Databricks Notebook Chart.](../media/series-selection.gif)
 
 ## Work with Spark DataFrames
 

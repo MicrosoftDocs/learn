@@ -79,7 +79,7 @@ You can also manage data quality with pipeline expectations, which allow you to 
 
 Here's an example of a declarative pipeline:
 
-![Architecture Diagram showing a Lakeflow Declarative Pipelines](../media/build-declarative-pipelines.png)
+![Architecture Diagram showing a Lakeflow Declarative Pipelines.](../media/build-declarative-pipelines.png)
 
 In this example, data first lands in the **Bronze** layer in raw form for lineage and safe reprocessing, then progresses to the **Silver** layer, where it's cleaned, enriched, validated with inline quality checks, and processed at scale with Spark, before reaching the **Gold** layer, which delivers curated, business-ready datasets for BI, machine learning, and advanced use cases like historical tracking.
 
@@ -91,7 +91,7 @@ The data movement is orchestrated by invoking your Databricks cluster to handle 
 
 The following screenshot shows Azure Data Factory Copy Data Tool, connecting to Azure Databricks Delta Lake to fetch some source tables:
 
-![Screenshot of Azure Data Factory Copy Data Tool connecting to Databricks](../media/azure-data-factory.png)
+![Screenshot of Azure Data Factory Copy Data Tool connecting to Databricks.](../media/azure-data-factory.png)
 
 In addition, ADF’s **Mapping Data Flows** offer a code-free ETL experience: they can source from and sink to Delta-format data on Azure Storage, enabling transformations without writing code, running on managed Azure Integration Runtime.
   
