@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-delta-lake-azure-databricks.manage-acid-transactions
-title: Create Delta Tables
+title: Create Delta tables
 metadata:
   title: Create Delta Tables
   description: "Create Delta Tables"

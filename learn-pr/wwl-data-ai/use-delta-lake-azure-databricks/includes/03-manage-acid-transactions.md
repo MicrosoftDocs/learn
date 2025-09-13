@@ -135,7 +135,7 @@ WHEN NOT MATCHED THEN INSERT *;
 
 The **transaction log** (often called the DeltaLog) is a core component of Delta Lake that records every change ever made to a table—inserts, updates, deletes, metadata changes, schema updates, etc. It lives in a `_delta_log` directory alongside the table’s data files, with each atomic commit stored as a JSON file (for example, `000000.json`, `000001.json`, ...) capturing actions like "add file," "remove file," "update metadata," "commit info," among others. Periodically, Delta Lake creates checkpoints (Parquet format files) so that to compute the current state of the table, it doesn’t have to replay all JSON commits from the beginning; it can start from the latest checkpoint and then apply only more recent commits.
 
-![Diagram showing the delta log organization](../media/delta-log.png)
+![Diagram showing the delta log organization.](../media/delta-log.png)
 
 Because the transaction log is the single source of truth, it supports Delta Lake’s ACID guarantees. For **atomicity**, no change is considered valid unless its full commit appears in the log. For **isolation** and **consistency**, when multiple users or jobs read/write concurrently, the log helps coordinate via optimistic concurrency control: Spark checks the transaction log version, and commits are ordered to avoid conflicting changes. The log’s history also enables features like *time travel* (you can query older versions of the table) and *auditability*, because you can track exactly which operation changed what, and when.
 
