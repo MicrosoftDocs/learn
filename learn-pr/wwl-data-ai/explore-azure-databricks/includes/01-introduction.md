@@ -1,6 +1,6 @@
 Azure Databricks is a cloud-based data platform that brings together the best of **data engineering, data science, and machine learning** in a single, unified workspace. Built on top of **Apache Spark**, it allows organizations to easily process, analyze, and visualize massive amounts of data in real time.
 
-![Diagram showing an Overview of Azure Databricks](../media/databricks-overview.png)
+![Diagram showing an Overview of Azure Databricks.](../media/databricks-overview.png)
 
 By connecting to a wide range of **data sources**—from cloud providers like Azure SQL Database, Amazon S3 and Google Cloud Storage, to enterprise systems such as SAP and Oracle—Azure Databricks makes it easy to integrate and transform data from anywhere.
 

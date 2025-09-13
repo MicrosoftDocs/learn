@@ -16,7 +16,7 @@ Azure Databricks, combined with Unity Catalog and Microsoft Purview, provides a 
 
 Unity Catalog provides a centralized way to manage access, discovery, lineage, audit logs, and quality monitoring across data and AI assets within Azure Databricks. It applies consistently across all workspaces in a region.
 
-![Unity Catalog](../media/06-azure-databricks-with-unity-catalog.png)
+![Diagram of the Unity Catalog components.](../media/06-azure-databricks-with-unity-catalog.png)
 
 The **metastore** is the top-level metadata container; it holds information about data assets and the permissions that govern them. You typically have one metastore per region, and multiple workspaces can share that metastore.
 
@@ -59,6 +59,6 @@ With this integration, you can:
 - Get detailed visibility into the **data lineage**, showing how data is transformed and moved across different systems and processes, including within Azure Databricks.
 - Run the scan **on-demand** or on a daily/weekly/monthly recurring **schedule**.
 
-![Screenshot of Microsoft Purview showing an Azure Databricks Table Metadata](../media/purview-databricks.png)
+![Screenshot of Microsoft Purview showing an Azure Databricks Table Metadata.](../media/purview-databricks.png)
 
 In addition, Microsoft Purview can scan the workspace-level **Hive metastore** in Azure Databricks.

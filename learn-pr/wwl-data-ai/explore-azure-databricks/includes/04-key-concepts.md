@@ -4,9 +4,9 @@ Azure Databricks is a single service platform with multiple technologies that en
 
 A **workspace** in Azure Databricks is a secure, collaborative environment where your can access and organize all Databricks assets, such as notebooks, clusters, jobs, libraries, dashboards, and experiments. 
 
-You can open an Azure Databricks Workspace from the Azure Portal, by selecting **Launch Workspace**.
+You can open an Azure Databricks Workspace from the Azure portal, by selecting **Launch Workspace**.
 
-:::image type="content" source="../media/azure-databricks-portal-launch.png" alt-text="Screenshot of the Azure Portal showing the Azure Databricks Landing Page." lightbox="../media/azure-databricks-portal-launch.png":::
+:::image type="content" source="../media/azure-databricks-portal-launch.png" alt-text="Screenshot of the Azure portal showing the Azure Databricks Landing Page." lightbox="../media/azure-databricks-portal-launch.png":::
 
 It provides a web-based **user interface (UI)** as well as REST APIs for managing resources and workflows. Workspaces can be structured into folders to organize projects, data pipelines, or team assets, and permissions can be applied at different levels to control access. They support **collaboration** by allowing multiple users—such as data engineers, analysts, and data scientists—to work together on shared notebooks, track experiments, and manage dependencies. 
 
@@ -87,7 +87,7 @@ On top of this foundation, **Delta tables** provide a familiar table abstraction
 
 Databricks SQL is available only in the **Premium tier** of Azure Databricks. It includes:
 
-- An **SQL editor** for writing and running queries.
+- A **SQL editor** for writing and running queries.
 - **Dashboards and visualization tools** for sharing insights.
 - Integration with external BI and analytics tools.
 

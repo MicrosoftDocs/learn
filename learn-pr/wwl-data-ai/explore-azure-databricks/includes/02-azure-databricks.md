@@ -17,7 +17,7 @@ When you create a workspace, you must specify:
   - **Trial** - A 14-day free trial of a premium-level workspace
 - **Managed Resource Group name** (optional): an automatically created resource group where Azure provisions and manages the infrastructure resources needed for your Databricks workspace.
 
-![Azure Databricks](../media/01-azure-databricks.png)
+![Screenshot of Azure Databricks in the Azure Portal.](../media/01-azure-databricks.png)
 
 If you decide to create an Azure Databricks deployment using the Azure CLI, this would be the [az databricks workspace](/cli/azure/ext/databricks/databricks/workspace) command to remember:
 
@@ -39,7 +39,7 @@ New-AzDatabricksWorkspace -Name mydatabricksws -ResourceGroupName myresourcegrou
 
 After you provision an Azure Databricks workspace, you can use the workspace UI to work with data and compute resources. The workspace UI is a web-based user interface where you can create and manage workspace resources, such as Spark clusters, and use notebooks and queries to work with data in files and tables.
 
-![Azure Databricks Workspace UI](../media/02-azure-databricks-portal.png)
+![Screenshot of the Azure Databricks Workspace user interface.](../media/02-azure-databricks-portal.png)
 
 The homepage provides shortcuts to common tasks and workspace objects to you help you get started. You can import data, create a notebook, create a query and configure an AutoML experiment.
 
@@ -62,7 +62,7 @@ The workspace is available in **multiple languages.** To change the workspace la
 
 **Databricks Assistant** is an AI-powered pair programmer and support tool that helps you work more efficiently in Databricks by generating, explaining, and fixing code or queries directly in notebooks, dashboards, and files. 
 
-![Azure Databricks Assistant](../media/databricks-assistant.png)
+![Screenshot of the Azure Databricks Assistant.](../media/databricks-assistant.png)
 
 It can assist with a wide range of tasks, including identifying and correcting errors, creating data visualizations, diagnosing job issues, and filtering or analyzing data using natural language prompts. The Assistant can surface relevant guidance from the Azure Databricks documentation. 
 
