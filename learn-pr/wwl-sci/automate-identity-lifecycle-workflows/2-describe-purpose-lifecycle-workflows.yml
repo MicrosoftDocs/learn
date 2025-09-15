@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-identity-lifecycle-workflows.describe-purpose-lifecycle-workflows
+title: Describe the purpose of lifecycle workflows
+metadata:
+  title: Describe the purpose of lifecycle workflows
+  description: "Explore the purpose of lifecycle management in identity governance, ensuring that user access and permissions are managed effectively throughout their journey within an organization."
+  ms.date: 09/3/2025
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-describe-purpose-lifecycle-workflows.md)]

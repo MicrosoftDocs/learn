@@ -3,7 +3,7 @@ uid: learn.wwl.build-data-pipeline-with-delta-live-tables
 metadata:
   title: Build Lakeflow Declarative Pipelines
   description: "Learn how to build Lakeflow Declarative Pipelines in Azure Databricks"
-  ms.date: 09/03/2025
+  ms.date: 09/12/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: module-standard-task-based

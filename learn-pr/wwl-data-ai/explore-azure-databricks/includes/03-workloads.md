@@ -14,6 +14,9 @@ Azure Databricks supports building, training, and deploying machine learning mod
 
 ## SQL
 
-Data analysts who primarily interact with data through SQL can use SQL warehouses in Azure Databricks. The Azure Databricks portal provides a familiar SQL editor, dashboards, and automatic visualization tools to analyze and visualize data directly within Azure Databricks. This workload is ideal for running quick ad-hoc queries and creating reports from large datasets.
+Data analysts who primarily interact with data through SQL can use SQL warehouses in Azure Databricks. The Azure Databricks Workspace UI provides a familiar SQL editor, dashboards, and automatic visualization tools to analyze and visualize data directly within Azure Databricks. This workload is ideal for running quick ad-hoc queries and creating reports from large datasets.
 
 :::image type="content" source="../media/05-azure-databricks-sql.png" alt-text="Diagram of DatabricksSQL Editor screen." lightbox="../media/05-azure-databricks-sql.png":::
+
+> [!NOTE]
+> SQL warehouses are included in the Premium (or higher) tier. Standard workspace doesn't provide SQL warehouses. 

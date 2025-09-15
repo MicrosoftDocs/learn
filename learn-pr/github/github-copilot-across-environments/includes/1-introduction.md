@@ -10,5 +10,6 @@ In this module you’ll learn about:
 - How to provide context to GitHub Copilot through inline comments, block comments, docstrings, and other types of comments to enhance code generation accuracy.
 - Interacting with GitHub Copilot through natural language conversations to generate complex code, debug issues, and obtain code explanations in real-time.
 - How to improve the relevance of GitHub Copilot Chat’s suggestions by using scope referencing, slash commands, and agents
+- Leveraging GitHub Copilot on GitHub.com for repository exploration, pull request assistance, agent tasks and collaborative code review.
 - How to interact with GitHub Copilot in CLI to get command explanations, suggestions, and even execute commands based on specific needs.
 - How to set up GitHub Copilot CLI configurations, aliases, and manage privacy settings, including opting out of usage data collection.

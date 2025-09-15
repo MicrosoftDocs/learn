@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-to-windows-server-2025
+title: Introduction to Windows Server 2025
+metadata:
+  title: Introduction To Windows Server 2025
+  description: Characterize the types of IT environments and business needs that Windows Server 2025 is designed to support. Describe the core features of Windows Server 2025, including modular server roles, advanced security infrastructure, Hyper-V virtualization, resilient storage and networking, centralized management tools, and hybrid cloud integration.
+  ms.date: 08/27/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: module
+  ms.service: windows-server
+  ms.custom: CS110724-1
+summary: >
+  Windows Server 2025 is a secure and scalable operating system designed to support the management of complex IT environments. It includes advanced security configurations, centralized management tools, hybrid cloud integration capabilities, and comprehensive virtualization and storage features. These capabilities enable organizations to optimize operational workflows, strengthen security posture, and support both legacy and modern workloads efficiently.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Evaluate whether Windows Server 2025 is appropriate for your organization's IT environment and business needs.
+  - Describe how the core features of Windows Server 2025—including modular server roles, advanced security, virtualization, storage, networking, management tools, and hybrid integration—work together to support modern workloads.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/introduction-to-windows-server-2025.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - windows-server
+units:
+  - learn.dpu.introduction-to-windows-server-2025.introduction
+  - learn.dpu.introduction-to-windows-server-2025.what-is-windows-server-2025
+  - learn.dpu.introduction-to-windows-server-2025.how-windows-server-2025-works
+  - learn.dpu.introduction-to-windows-server-2025.when-to-use-windows-server-2025
+  - learn.dpu.introduction-to-windows-server-2025.knowledge-check
+  - learn.dpu.introduction-to-windows-server-2025.summary
+badge:
+  uid: learn.dpu.introduction-to-windows-server-2025.badge
