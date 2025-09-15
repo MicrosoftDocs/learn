@@ -25,7 +25,7 @@ The Azure portal allows you to manage your quantum workspace. You can view the d
 
 ### Retrieve your workspace details
 
-For certain tasks in the Azure portal, you might need details about your quantum workspace, such as the resource ID and Azure region. To view get details about your quantum workspace, follow these steps:
+For certain tasks in the Azure portal, you might need details about your quantum workspace, such as the resource ID and Azure region. To get details about your quantum workspace, follow these steps:
 
 1. Select your Azure Quantum workspace in the [Azure portal](https://portal.azure.com).
 1. Log in to the [Azure portal](https://portal.azure.com), and navigate to your quantum workspace.
@@ -35,3 +35,10 @@ For certain tasks in the Azure portal, you might need details about your quantum
     :::image type="content" source="../media/azure-portal-workspace-overview.png" alt-text="Screenshot of Azure portal showing how to review your workspace details.":::
 
 ### Manage your quantum jobs
+
+To manage your quantum jobs in the Azure portal, follow these steps:
+
+1. Go to your quantum workspace in the Azure portal.
+1. Expand the **Operations** dropdown.
+1. Choose **Job management**. A table appears that lists all the jobs you've submitted to Azure Quantum.
+1. Choose a job to access job information such as the job ID, job state, submission and completion time, and provider.

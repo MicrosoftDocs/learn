@@ -6,7 +6,7 @@ metadata:
   description: Check your understanding so far.
   author: azure-quantum-content
   ms.author: quantumdocwriters
-  ms.date: 07/29/2025
+  ms.date: 09/15/2025
   ms.topic: unit
   show_latex: true
   module_assessment: true
@@ -29,7 +29,7 @@ quiz:
       isCorrect: false
       explanation: "To access the Azure portal and manage your jobs, you need to have an Azure account."
 
-  - content: 'Although anyone can install the QDK extension for VS Code, choose which of these users is is best suited to use the QDK for their quantum solutions.'
+  - content: 'Although anyone can install the QDK extension for VS Code, choose which of these users is best suited to use the QDK for their quantum solutions.'
     choices:
     - content: 'A professor who wants to host a quantum hackathon for their students.'
       isCorrect: false
@@ -41,14 +41,14 @@ quiz:
       isCorrect: false
       explanation: "This user might benefit more from the Microsoft Quantum website because it provides tutorials with the Quantum Katas, and the user can ask Copilot to explain quantum concepts."
 
-  - content: "Which service should you use if you want to manage your subscription, workspaces, jobs, and such?"
+  - content: "What service should you use if you want to manage your Azure subscription, quantum workspaces, jobs, and more?"
     choices:
     - content: "You can manage Azure Quantum from any of the development options: Microsoft Quantum website, Azure portal, and QDK in VS Code."
       isCorrect: false
-      explanation: "You can manage Azure Quantum from only the Azure portal."
+      explanation: "You can manage Azure Quantum only from the Azure portal."
     - content: 'You can manage Azure Quantum from the Azure portal and the QDK in VS Code.'
       isCorrect: false
-      explanation: "You can manage Azure Quantum from only the Azure portal."
-    - content: "You can manage Azure Quantum from only the Azure portal."
+      explanation: "You can manage Azure Quantum only from the Azure portal."
+    - content: "You can manage Azure Quantum only from the Azure portal."
       isCorrect: true
       explanation: "From the Azure portal you can manage your subscriptions, workspaces, quantum jobs, quotas, and grant a group of users access to a workspace."
