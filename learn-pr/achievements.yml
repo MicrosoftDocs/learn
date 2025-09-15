@@ -6905,3 +6905,13 @@ achievements:
   title: Move Azure resources to another resource group
   summary: Identify Azure resources that you can move to a different resource group. Use the Azure portal to move resources.
   iconUrl: /training/achievements/move-azure-resources-another-resource-group.svg
+- uid: learn.azdo.create-release-pipeline.badge
+  type: badge
+  title: Create a release pipeline in Azure Pipelines
+  summary: Set up a continuous delivery (CD) pipeline that automates the process of deploying your application.
+  iconUrl: /training/achievements/azure-devops/create-a-release-pipeline-with-azure-pipelines.svg
+- uid: learn.azdo.create-a-build-pipeline.badge
+  type: badge
+  title: Create a build pipeline with Azure Pipelines
+  summary: In this module, you'll learn to set up a continuous integration (CI) pipeline that automates the process of building your application.
+  iconUrl: /training/achievements/azure-devops/create-a-build-pipeline-azure-pipelines.svg

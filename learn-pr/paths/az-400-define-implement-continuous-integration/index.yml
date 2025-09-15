@@ -28,11 +28,9 @@ products:
 subjects:
 - data-engineering
 modules:
-- learn.azdo.create-a-build-pipeline
 - learn.azdo.run-quality-tests-build-pipeline
 - learn.azdo.manage-build-dependencies
 - learn.azdo.host-build-agent
-- learn.azdo.create-release-pipeline
 - learn.azdo.create-multi-stage-pipeline
 - learn.azdo.run-functional-tests-azure-pipelines
 - learn.azdo.run-non-functional-tests-azure-pipelines
