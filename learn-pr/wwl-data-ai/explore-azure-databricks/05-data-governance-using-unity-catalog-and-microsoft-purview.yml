@@ -4,12 +4,12 @@ title: Data governance using Unity Catalog and Microsoft Purview
 metadata:
   title: Data Governance Using Unity Catalog and Microsoft Purview
   description: "Data governance using Unity Catalog and Microsoft Purview"
-  ms.date: 08/20/2025
+  ms.date: 09/12/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/05-data-governance-using-unity-catalog-and-microsoft-purview.md)]
