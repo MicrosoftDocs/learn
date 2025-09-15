@@ -4,16 +4,13 @@ The Lakeflow Jobs are deeply integrated with Azure's cloud infrastructure, benef
 
 ![Diagram showing an example of a Lakeflow Job. The diagram shows order and clickstream data going into a Delta Live Tables pipeline, then being prepared and joined and then used to train models.](../media/azure-databricks-workflows.png)
 
-Some components of Lakeflow Jobs are:
+Triggers determine when a Job is run. The following table shows the different trigger types, when each is useful, and what constraints to watch out for:
 
-- **Control flow:** Lets you orchestrate task execution—sequentially or in parallel—with branching (via conditional and if/else tasks), looping (For each), and retry logic to manage dependencies and error handling.
+| Trigger Type              | Use Case Examples                                      | Benefits                                                                 | Limitations / Things to Watch                                                                 |
+|----------------------------|--------------------------------------------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| **Scheduled (time-based)** | Nightly ETL, report generation at fixed times           | Predictable, easy to manage, integrates with time logic, well supported  | May lead to idle compute if no new data; rigid schedule; delay until next run if failures occur |
+| **File Arrival**           | Processing incoming data as soon as it drops into storage (e.g. logs, uploads) | More responsive; compute used only when needed; reduces lag              | File listing overhead; detection latency; requires Unity Catalog external locations; limits on triggers |
+| **Continuous**             | Stream-like jobs, always-on pipelines, constantly processing as earlier run finishes | Low latency; automatic restarting; ideal for streaming workloads         | Not supported on all compute types; limited dependency/retry options; careful overlap handling needed |
+| **Manual / External**      | Ad hoc runs; triggered by API or orchestrator when upstream is ready | Flexible; good for testing, backfills, integration                        | Less predictable; requires external logic; more potential for human error; weaker monitoring if unmanaged |
 
-- **Job Scheduling:** You can schedule jobs to run automatically at defined intervals, handling dependencies between tasks and retrying failed tasks, ensuring robust data processing routines.
-
-- **Workflow Automation:** By automating Lakeflow Jobs, you can streamline the execution of complex data tasks, reducing manual intervention and the potential for errors.
-
-- **Scalability and Performance:** Lakeflow Jobs are designed to efficiently manage resources, scaling up, or down based on workload demands,   ensuring you only use and pay for the resources you need.
-
-- **Collaboration and Version Control:** The platform supports collaboration among your team members and integrates with version control systems to manage and deploy stable, reproducible data pipelines.
-
-Lakeflow Jobs simplify complex data operations, making it easier for your organization to deploy, monitor, and manage big data applications and machine learning workflows with enhanced security and compliance.
+Lakeflow Jobs simplify complex data operations, making it easier for your organization to deploy, monitor, and manage big data applications.

@@ -35,23 +35,55 @@ GROUP BY First_Name
 ORDER BY Total_Count DESC
 ```
 
-## Load files from Databricks File System
+## Load files from cloud object storage
 
-You can also load data into a materialized view by reading files from the Databricks File System (DBFS), and then further transform it in your pipeline.
+Databricks recommends using **Auto Loader** with Lakeflow Declarative Pipelines for most data ingestion tasks from cloud object storage or from files in a Unity Catalog volume. Auto Loader and Lakeflow Declarative Pipelines are designed to incrementally and idempotently load ever-growing data as it arrives in cloud storage.
 
-The following example command creates (or refreshes) a materialized view named raw_covid_data that contains COVID-19 case data, extracted from a CSV file stored in DBFS.
+Auto Loader can ingest `JSON`, `CSV`, `XML`, `PARQUET`, `AVRO`, `ORC`, `TEXT`, and `BINARYFILE` file formats.
+
+The following SQL example reads data from cloud storage using Auto Loader:
 
 ```sql
-CREATE OR REFRESH MATERIALIZED VIEW raw_covid_data
-COMMENT "COVID sample dataset. This data was ingested from the COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University."
-AS
+CREATE OR REFRESH STREAMING TABLE sales
+  AS SELECT *
+  FROM STREAM read_files(
+    'abfss://myContainer@myStorageAccount.dfs.core.windows.net/analysis/*/*/*.json',
+    format => "json"
+  );
+```
+
+The following SQL example use Auto Loader to create datasets from CSV files in a Unity Catalog volume:
+
+```sql
+CREATE OR REFRESH STREAMING TABLE customers
+AS SELECT * FROM STREAM read_files(
+  "/Volumes/my_catalog/retail_org/customers/",
+  format => "csv"
+)
+```
+
+## Parsing JSON
+
+In Lakeflow Declarative Pipelines, when you parse JSON data using the function `from_json`, you can let the system automatically figure out the JSON schema (inference) and adjust it over time (evolution) rather than hardcoding a schema upfront. This is useful when schemas aren't known ahead of time or when they change often.
+
+Each `from_json` expression, when set up for inference + evolution, needs a unique identifier called the `schemaLocationKey`. It lets the system keep track of which JSON schema belongs to which parsing expression. If you have multiple JSON parsing expressions in your pipeline, each must use a distinct schemaLocationKey. Also, the key must be unique in the context of a given pipeline.
+
+Here's an example using SQL syntax demonstrating setting the schema argument to NULL, signaling that schema should be inferred rather than fixed:
+
+```sql
 SELECT
- Last_Update,
- Country_Region,
- Confirmed,
- Deaths,
- Recovered
-FROM read_files('dbfs:/delta_lab/covid_data.csv', format => 'csv', header => true)
+  value,
+  from_json(value, NULL, map('schemaLocationKey', 'keyX')) parsedX,
+  from_json(value, NULL, map('schemaLocationKey', 'keyY')) parsedY,
+FROM STREAM READ_FILES('/databricks-datasets/nyctaxi/sample/json/', format => 'text')
+```
+
+You have the option instead to use a fixed schema with `from_json(jsonStr, schema, ...)`. If you choose fixed schema, then inference & evolution aren't used. Also, schema hints are useful when you want fixed schema but also want to anticipate or handle schema drift.
+
+Here's an example in SQL where the query takes a JSON string containing two fields, a and b, and parses it into a structured object using the schema specified in the second argument. Here, the schema declares a as an integer and b as a double, so the result is a `STRUCT<a: INT, b: DOUBLE>`
+
+```sql
+SELECT from_json('{"a":1, "b":0.8}', 'a INT, b DOUBLE');
 ```
 
 ## Manage data quality with pipeline expectations
