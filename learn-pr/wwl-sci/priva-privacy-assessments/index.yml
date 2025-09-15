@@ -3,12 +3,12 @@ uid: learn.wwl.priva-privacy-assessments
 metadata:
   title: Automate privacy assessments to ensure compliance
   description: "Automate privacy assessments to ensure compliance."
-  ms.date: 01/24/2025
+  ms.date: 09/12/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ms.service: purview
-  hidden: false
+  hidden: true
 title: Automate privacy assessments to ensure compliance
 summary: Microsoft Priva Privacy Assessments (preview) helps organizations track and document how personal data is used across business operations. Automating privacy assessments reduces manual effort, ensures compliance records stay accurate, and enables privacy teams to evaluate data processing activities in real time. Learn how to configure business assets, create assessments, define privacy rules, and assess privacy risks based on structured responses.
 abstract: |
