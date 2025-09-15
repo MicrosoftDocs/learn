@@ -57145,6 +57145,126 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/2-exercise-connect-to-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/3-dashboards.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/4-exercise-create-dashboard-from-query.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/5-exercise-add-new-tile.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/6-dashboard-parameters.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/7-exercise-create-parameter.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/8-exercise-cross-filter.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/9-share-dashboard.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/2-plan-deploy-verify.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/3-exercise-deploy-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/4-exercise-verify-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/5-configure-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/6-exercise-configure-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/7-load-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/8-exercise-load-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/data-analysis-data-explorer-kusto-query-language/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-sql-fundamentals/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/intro-to-hpc/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/batch/",
       "redirect_document_id": false
