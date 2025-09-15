@@ -4,12 +4,12 @@ title: Exercise - Explore Azure Databricks
 metadata:
   title: Exercise - Explore Azure Databricks
   description: "Exercise - Explore Azure Databricks"
-  ms.date: 08/20/2025
+  ms.date: 09/12/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 30
+durationInMinutes: 45
 content: |
   [!include[](includes/06-exercise-explore-databricks.md)]
