@@ -3,15 +3,19 @@ uid: learn.wwl.data-engineer-azure-databricks
 metadata:
   title: Implement a Data Lakehouse Analytics Solution with Azure Databricks
   description: Implement a data lakehouse analytics solution with Azure Databricks. (DP-3011)
-  ms.date: 08/30/2024
-  author: theresa-i
-  ms.author: theresai
+  ms.date: 09/12/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: learning-path
 title: Implement a data lakehouse analytics solution with Azure Databricks
 prerequisites: |
-  None
+  Before starting this learning path, you should already be comfortable with the fundamentals of Python and SQL. This includes being able to write simple Python scripts and work with common data structures, as well as writing SQL queries to filter, join, and aggregate data. A basic understanding of common file formats such as CSV, JSON, or Parquet will also help when working with datasets.
+
+  In addition, familiarity with the Azure portal and core services like Azure Storage is important, along with a general awareness of data concepts such as batch versus streaming processing and structured versus unstructured data. While not mandatory, prior exposure to big data frameworks like Spark, and experience working with Jupyter notebooks, can make the transition to Databricks smoother.
 summary: |
-  Learn how to harness the power of Apache Spark and powerful clusters running on the Azure Databricks platform to run large data engineering workloads in the cloud.
+  By the end of this learning path, you'll have built solid intermediate to advanced skills in both Databricks and Spark on Azure. You're able to ingest, transform, and analyze large-scale datasets using Spark DataFrames, Spark SQL, and PySpark, giving you confidence in working with distributed data processing. Within Databricks, you know how to navigate the workspace, manage clusters, and build and maintain Delta tables.
+
+  You'll also be capable of designing and running ETL pipelines, optimizing Delta tables, managing schema changes, and applying data quality rules. In addition, you learn how to orchestrate workloads with Lakeflow Jobs and pipelines, enabling you to move from exploration to automated workflows. Finally, you gain familiarity with governance and security features, including Unity Catalog, Purview integration, and access management, preparing you to operate effectively in production-ready data environments.
 iconUrl: /training/achievements/data-engineer-azure-databricks.svg
 levels:
 - intermediate

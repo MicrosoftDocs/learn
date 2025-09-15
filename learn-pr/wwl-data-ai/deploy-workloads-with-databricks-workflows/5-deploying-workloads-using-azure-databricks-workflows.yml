@@ -4,10 +4,10 @@ title: Deploy workloads using Lakeflow Jobs
 metadata:
   title: Deploy Workloads using Lakeflow Jobs
   description: "Deploy workloads using Lakeflow Jobs"
-  ms.date: 09/03/2025
+  ms.date: 09/12/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
   [!include[](includes/5-deploy-workloads-using-azure-databricks-workflows.md)]
