@@ -6,6 +6,28 @@ When you display a dataframe or run a SQL query in a Spark notebook in Azure Dat
 
 ![A screenshot of a notebook displaying a visualization of product counts by category.](../media/notebook-chart.png)
 
+### Visualization Types
+
+These are the different kinds of visualizations you can make in Databricks, each good for certain kinds of data-insights. Key points:
+
+- **Bar charts / Line charts / Area charts**: for showing trends over time, categorical comparisons, or both. Useful to see how metrics evolve.
+
+- **Pie charts**: good for showing proportional parts of a whole (but not for time-series).
+
+- **Histogram**: to see distribution of numeric data (how values are spread, clustered).
+
+- **Heatmap**: useful for visualizing two categorical axes and coloring by a numeric value, helps see patterns across groups.
+
+- **Scatter / Bubble charts**: show relationship between two (or more) numeric variables; bubbles allow using size or color as a third dimension.
+
+- **Box plot**: to compare distributions (spread, quartiles, outliers) across categories.
+
+- **Combo chart**: mix of lines and bars in the same chart, helpful where you want to compare different metrics with different scales.
+
+- **Pivot table**: lets you reshape and aggregate data in table form (like SQL PIVOT/GROUP BY), helpful for cross-tab analyses.
+
+- **Special types**: cohort analysis (tracking groups over time), counter display (highlighting a single summary metric, maybe against target), funnel, map visualizations (choropleth, marker), word cloud, etc. These are more specialized.
+
 The built-in visualization functionality in notebooks is useful when you want to quickly summarize the data visually. When you want to have more control over how the data is formatted, or to display values that you have already aggregated in a query, you should consider using a graphics package to create your own visualizations.
 
 ## Using graphics packages in code
@@ -52,4 +74,4 @@ The chart produced by the code would look similar to the following image:
 You can use the Matplotlib library to create many kinds of chart; or if preferred, you can use other libraries such as **Seaborn** to create highly customized charts.
 
 > [!NOTE]
-> The Matplotlib and Seaborn libraries may already be installed on Databricks clusters, depending on the Databricks Runtime for the cluster. If not, or if you want to use a different library that is not already installed, you can add it to the cluster. See [Cluster Libraries](/azure/databricks/libraries/cluster-libraries) in the Azure Databricks documentation for details.
+> The Matplotlib and Seaborn libraries may already be installed on Databricks clusters, depending on the Databricks Runtime for the cluster. If not, or if you want to use a different library that isn't already installed, you can add it to the cluster. See [Cluster Libraries](/azure/databricks/libraries/cluster-libraries) in the Azure Databricks documentation for details.
