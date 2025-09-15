@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-identity-lifecycle-workflows.plan-hybrid-advanced-scenarios
+title: Plan hybrid and advanced scenarios
+metadata:
+  title: Plan hybrid and advanced scenarios
+  description: "Design and manage lifecycle workflows and attribute mappings in hybrid identity environments."
+  ms.date: 09/3/2025
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-plan-hybrid-advanced-scenarios.md)]

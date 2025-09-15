@@ -3,12 +3,12 @@ uid: learn.wwl.priva-consent-management
 metadata:
   title: Manage user consent across digital platforms
   description: "Manage user consent across digital platforms."
-  ms.date: 01/24/2025
+  ms.date: 09/12/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ms.service: purview
-  hidden: false
+  hidden: true
 title: Manage user consent across digital platforms
 summary: Microsoft Priva Consent Management helps organizations manage user consent preferences, ensuring transparency and alignment with privacy expectations. Learn how to configure consent models, set up prerequisites, deploy publishing profiles, and manage consent across digital platforms.
 abstract: |

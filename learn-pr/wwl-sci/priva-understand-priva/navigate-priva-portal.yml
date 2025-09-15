@@ -2,14 +2,14 @@
 uid: learn.wwl.priva-understand-microsoft-priva.navigate-priva-portal
 title: Navigate the Microsoft Priva portal
 metadata:
-  title: Navigate the Microsoft Priva portal
+  title: Navigate the Microsoft Priva Portal
   description: "Navigate the Microsoft Priva portal"
-  ms.date: 01/17/2025
+  ms.date: 09/10/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/navigate-priva-portal.md)]
