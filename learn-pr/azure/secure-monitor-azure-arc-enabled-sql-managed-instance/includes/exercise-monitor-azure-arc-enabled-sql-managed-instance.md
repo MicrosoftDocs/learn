@@ -2,9 +2,6 @@ An Azure Arc-enabled SQL Managed Instance deployment provides the ability to mon
 
 Utilizing the Grafana dashboards locally in your Arc-enabled SQL Managed Instance environment provides you with insights into the infrastructure (Kubernetes Cluster) as well as the performance of the Arc-enabled SQL Managed Instance.
 
-> [!IMPORTANT]
-> The modules in this learning path form a progression. To complete this exercise, you need to first complete the [preceding modules in this path](/training/paths/get-started-azure-arc-sql-managed-instance/).
-
 1. Open Azure Data Studio.
 1. Expand the **Connections** Tab.
 1. Expand **Azure Arc Controllers**.
