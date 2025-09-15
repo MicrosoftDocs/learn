@@ -57145,6 +57145,126 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/2-exercise-connect-to-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/3-dashboards.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/4-exercise-create-dashboard-from-query.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/5-exercise-add-new-tile.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/6-dashboard-parameters.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/7-exercise-create-parameter.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/8-exercise-cross-filter.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/9-share-dashboard.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-dashboards-azure-data-explorer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/azure-data-explorer-dashboards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/2-plan-deploy-verify.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/3-exercise-deploy-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/4-exercise-verify-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/5-configure-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/6-exercise-configure-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/7-load-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/8-exercise-load-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-deploy-configure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/data-analysis-data-explorer-kusto-query-language/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/data-explorer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-sql-fundamentals/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/intro-to-hpc/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/batch/",
       "redirect_document_id": false
@@ -57212,6 +57332,106 @@
     {
       "source_path": "learn-pr/azure/design-a-geographically-distributed-application/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-enabled-sql-managed-instance/2-what-is-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-enabled-sql-managed-instance/3-deploy-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-enabled-sql-managed-instance/4-exercise-deploy-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-enabled-sql-managed-instance/5-manage-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-enabled-sql-managed-instance/6-exercise-restore-azure-arc-enabled-sql-managed-instance-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-enabled-sql-managed-instance/7-exercise-manage-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-enabled-sql-managed-instance/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-enabled-sql-managed-instance/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-enabled-sql-managed-instance/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-sql-managed-instance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-data-controller/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-data-controller-direct-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-data-controller/2-prepare-for-arc-enabled-data-services.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-data-controller-direct-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-data-controller/3-deploy-azure-arc-data-controller.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-data-controller-direct-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-data-controller/4-exercise-deploy-azure-arc-data-controller.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-data-controller-direct-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-data-controller/5-manage-azure-arc-data-controller.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-data-controller-direct-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-data-controller/6-exercise-manage-azure-arc-data-controller.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-data-controller-direct-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-data-controller/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-data-controller-direct-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-data-controller/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-data-controller-direct-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-data-controller/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-data-controller-direct-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/get-started-azure-arc-sql-managed-instance/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/managed-instance/",
       "redirect_document_id": false
     },
     {
@@ -57607,6 +57827,171 @@
     {
       "source_path": "learn-pr/wwl-data-ai/fundamentals-machine-learning/8a-transformers.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/3a-transformers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/2-what-is-azure-private-5g-core.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/3-benefits-usage-scenarios.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/4-structure-components.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/5-key-features.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-private-5g-core/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/2-deployment-methods.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/3-prerequisites-of-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/4-deploy-private-mobile-network.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/5-deploy-site.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/6-deploy-using-arm-templates.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-private-5g-core/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+        },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-private-5g-core-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-private-5g-core-service/2-platform-dashboards-and-app-integration.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-private-5g-core-service/3-packet-core-dashboards.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-private-5g-core-service/4-issue-diagnosis.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-private-5g-core-service/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-private-5g-core-service/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/monitor-azure-private-5g-core-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-private-5g-core/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-private-5g-core/2-network-and-site-management.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-private-5g-core/3-policy-control.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-private-5g-core/4-sim-management.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-private-5g-core/5-system-upgrade.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-private-5g-core/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-private-5g-core/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-private-5g-core/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/get-started-with-azure-private-5g-core/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
       "redirect_document_id": false
     }
   ]
