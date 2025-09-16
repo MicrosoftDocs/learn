@@ -4,7 +4,7 @@ title: Exercise Part 2 - Create a quantum random number generator
 metadata:
   title: Exercise - Create a quantum random number generator
   description: Write Q# code to extend your random bit program to generate larger numbers.
-  ms.date: 08/04/2025
+  ms.date: 09/16/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   

@@ -1,11 +1,14 @@
 In the previous unit, you learned about the basic building blocks of a Q# program. Now, you're ready to write your first quantum program. In this unit, you write a quantum program that generates a truly random bit.
 
-You'll build your quantum random number generator in two steps. This unit is the first step, which is to generate a single random bit. To generate a random bit, you allocate a qubit in the $\ket{0}$ state, put that qubit into a superposition state, and then measure the qubit to produce a random bit value of either 0 or 1.
+You build your quantum random number generator in two steps. This unit is the first step, which is to generate a single random bit. To generate a random bit, you allocate a qubit in the $\ket{0}$ state, put that qubit into a superposition state, and then measure the qubit to produce a random bit value of either 0 or 1.
 
 ## Create the Q# program file
 
-1. Open Visual Studio Code and choose **File > New Text File** to create a new file.
-1. Save the file as `Main.qs`. Write your Q# code for the random bit generator in this file.
+1. Open Visual Studio Code.
+1. Open the **File** menu, and then choose **New Text File** to create a new file.
+1. Save the file as `Main.qs`.
+
+Write your Q# code for the random bit generator in the `Main.qs` file.
 
 ## Define the `Main` operation
 
@@ -83,7 +86,7 @@ operation Main(): Result{
 
 ## Return the measurement result
 
-Finally, return the measurement result with the `return` statement. This result is a random bit, either 0 or 1, with equal probability. Copy the following code in your `Main.qs` file:
+Finally, return the measurement result with the `return` statement. This result is a random bit, either 0 or 1 with equal probability. Copy the following code in your `Main.qs` file:
 
 ```qsharp
 operation Main(): Result{
@@ -98,7 +101,7 @@ operation Main(): Result{
 
 ## Run your random bit generator program
 
-You created a Q# program called `Main.qs` that allocates a qubit, puts the qubit into an equal superposition state, measures the qubit, resets the qubit, and then returns the measurement result. Here's a recap of the Q# code that you wrote:
+You created a Q# program called `Main.qs` that allocates a qubit, puts the qubit into an equal superposition state, measures the qubit, resets the qubit, and then returns the measurement result. Here's a recap of your Q# code:
 
 ```qsharp
 operation Main() : Result {
@@ -120,10 +123,10 @@ operation Main() : Result {
 ```
 
 > [!NOTE]
-> The `//` symbol represents optional comments to explain each step of the program.
+> The `//` symbol represents optional comments that explain each step of the program. Comments are ignored by the compiler.
 
-To run your program on the built-in simulator, choose the **Run** code lens above the `Main` operation, or press **Ctrl+F5**. Your output appears on the debug console in the terminal.
+To run your program on the built-in simulator, choose the **Run** code lens above the `Main` operation, or press **Ctrl + F5**. Your output appears on the debug console in the terminal.
 
-The result is either `Zero` or `One`, each with a 50% chance. The measurement value of this bit is truly random. Run the program multiple times to see for yourself how the result changes.
+The result is either `Zero` or `One`, each with a 50% chance. The measurement value of this bit on a quantum computer is truly random. Run the program multiple times to see for yourself how the result changes.
 
 In the next unit, you combine multiple random bits to implement the second part of your quantum random number generator.

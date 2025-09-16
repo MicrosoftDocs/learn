@@ -1,11 +1,11 @@
 
 Before you write your own quantum programs, it's important to understand the structure and components of the Q# programming language.
 
-In this unit, you review common components of a Q# program.
+In this unit, you learn about the basic components of a Q# program.
 
 ## The `Main` operation
 
-Every Q# program must contain at least one operation. The Q# compiler starts to run a program from the entry point operation, which is the `Main` operation by default. For example, the following Q# program calls an operation named `Main` that creates a qubit and returns a measurement of the qubit's state:
+Every Q# program must contain at least one operation. The Q# compiler begins to run a program from the entry point operation, which is the `Main` operation by default. For example, the following Q# program contains an operation called `Main` that creates a qubit and returns a measurement of the qubit's state:
 
 ```qsharp
 // This operation is the entry point to your program because it's name is Main
@@ -28,13 +28,13 @@ operation MeasureOneQubit() : Result {
 
 ## Types
 
-Q# provides many built-in types that you might already be familiar with, such as `Int`, `Double`, `Bool`, and `String`. Q# also provides types that are specific to quantum computing, such as `Qubit` and `Result`.
+Q# provides many built-in data types that you might already be familiar with, such as `Int`, `Double`, `Bool`, and `String`. Q# also provides types that are specific to quantum computing, such as `Qubit` and `Result`.
 
 For example, the `MeasureOneQubit` operation returns a `Result` type value. The `Result` type represents the state of a qubit when the qubit is measured, and can have a value of either `Zero` or `One`.
 
 ## Quantum libraries
 
-Q# comes with several libraries that contain functions and operations to help you write quantum programs. To call a function or operation from a library, use the `import` keyword and specify the library's namespace. For example, to use the `Message` function from the `Microsoft.Quantum.Intrinsic` namespace in the standard quantum library, use the following code to import all of the functions from that namespace:
+Q# comes with several libraries that contain functions and operations to help you write quantum programs. To call a function or operation from a library, use the `import` keyword and specify the library's namespace. For example, to use the `Message` function from the `Microsoft.Quantum.Intrinsic` namespace in the standard quantum library, use the following code:
 
 ```qsharp
 // import all functions and operations from Microsoft.Quantum.Intrinsic 
@@ -46,7 +46,7 @@ operation Main() : Unit {
 }
 ```
 
-Alternatively, you can import only the `Message` function:
+The asterisk means that you import all of the functions from the `Microsoft.Quantum.Intrinsic` namespace. Alternatively, you can import only the `Message` function:
 
 ```qsharp
 // import only the Message function from Microsoft.Quantum.Intrinsic 
@@ -59,7 +59,7 @@ operation Main() : Unit {
 ```
 
 > [!NOTE]
-> In Q#, the `Unit` type means that the function or operation doesn't return a value. For more information on types in Q#, see [Type System](xref:microsoft.quantum.qsharp.typesystem-overview).
+> In Q#, the `Unit` type means that the function or operation doesn't return a value. For more information about types in Q#, see [Type System](xref:microsoft.quantum.qsharp.typesystem-overview).
 
 You can import namespaces in the standard library with `Std` instead of `Microsoft.Quantum`. For example, the following code imports all functions and operations from the `Microsoft.Quantum.Intrinsic` namespace:
 
@@ -79,7 +79,7 @@ To explore the Q# standard library, see the [API reference](https://learn.micros
 
 To allocate a qubit in Q#, use the `use` keyword and the `Qubit` type. Qubits that you allocate with the `use` keyword always start in the $\ket{0}$ state.
 
-You can allocate a single qubit or multiple qubits in a qubit array. Here's an example that allocates a single qubit in the variable `q1` and an array of five qubits in `q5`:
+You can allocate a single qubit, or multiple qubits in a qubit array. Here's an example that allocates a single qubit in the variable `q1` and an array of five qubits in `q5`:
 
 ```qsharp
 use q1 = Qubit();  // Allocate one qubit

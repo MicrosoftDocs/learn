@@ -7,7 +7,7 @@ metadata:
   author: azure-quantum-content
   ms.author: quantumdocwriters
   
-  ms.date: 08/05/2025
+  ms.date: 09/16/2025
   ms.topic: unit
   ai-usage: ai-assisted
   module_assessment: true
@@ -23,7 +23,7 @@ quiz:
     choices:
     - content: "The quantum random number generator takes the current time from the CPU's clock as a seed to generate random numbers."
       isCorrect: false
-      explanation: "The quantum random number generator doesn't use the CPU's clock to generate random numbers. A classical pseudo-random number generator would do that."
+      explanation: "The quantum random number generator doesn't use the CPU's clock to generate random numbers. A classical pseudorandom number generator does that."
     - content: "The quantum random number generator creates one qubit, measures it, and the result of the measurement is a random decimal number."
       isCorrect: false
       explanation: "The result of the measurement of a qubit is a random bit, not a random decimal number. This answer doesn't describe the logic behind the random number generator that you built in this module."
@@ -41,7 +41,7 @@ quiz:
       explanation: "Every Q# program must have an entry point, which is the `Main` operation by default, so the Q# compiler knows where to start the program."
     - content: "To run successfully, a Q# program must have an entry point and at least one allocated qubit."
       isCorrect: false
-      explanation: "You can write Q# programs that don't have qubits. A Q# program without an allocated qubit can run successfully."
+      explanation: "You can write Q# programs that don't have qubits. A Q# program with no allocated qubits can run successfully as long as the program has an entrypoint operation."
 
   - content: "Consider a quantum operation `A` that acts on a single qubit. If you want to write a Q# program that applies `A` to a qubit `q`, which of the following statements is true?"
     choices:
