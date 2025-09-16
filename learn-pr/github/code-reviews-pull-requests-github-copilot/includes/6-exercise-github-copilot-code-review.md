@@ -9,10 +9,10 @@ In this exercise, you will:
 
 When you select the Start the exercise on GitHub button below, you're navigated to a public GitHub template repository that prompts you to complete a series of small challenges.
 
-When you've finished the exercise in GitHub, return here for:
+When you finish the exercise in GitHub, return here for:
 
 - A quick knowledge check.
-- A summary of what you've learned.
+- A summary of what you learned.
 - A badge for completing this module.
 
 [Start the exercise on GitHub ](https://github.com/skills/copilot-code-review)
