@@ -3,11 +3,11 @@ uid: learn.wwl.get-started-kusto-fabric.activator
 title: Automate actions
 metadata:
   title: Automate actions
-  description: "Understand features and capabilities of Activator."
-  ms.date: 12/03/2024
-  author: wwlpublish
-  ms.author: gmalc
+  description: "Automate actions"
+  ms.date: 09/10/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/4c-activator.md)]

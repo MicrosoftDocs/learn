@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-updates.view-update-assessments
 title: View update assessments
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: View update assessments
   description: "View update assessments"
   ms.date: 09/24/2020
@@ -27,4 +25,4 @@ quiz:
       explanation: "That's incorrect. You will need a Log Analytics workspace, but this is not the first step."
     - content: "Create an Automation Account."
       isCorrect: true
-      explanation: "That's correct. This is the first step. You can configure everything else within the context of this account."
+      explanation: "That's correct. This is the first step. You can configure everything else within the context of this account."

@@ -14,7 +14,7 @@ You want to get notified by the system in real time. By implementing a successfu
 
 However, when you define alerts, you need to be careful. When you get alerts for every single event that happens in the system, your mailbox will quickly be flooded with numerous alerts.
 
-The more alerts you get that aren't relevant, the more significant the change that people will never look at the alerts and notifications and will miss the important ones.
+The more alerts you get that aren't relevant, the more significant the chance that people will never look at the alerts and notifications and will miss the important ones.
 
 ## Target audience and delivery mechanism
 

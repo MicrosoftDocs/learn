@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.purview-implement-manage-dlp
 metadata:
-  title: 'Implement and manage data loss prevention (SC-401)'
+  title: 'Implement and manage Microsoft Purview Data Loss Prevention (SC-401)'
   description: 'Organizations need to prevent data loss and safeguard sensitive information to meet security and compliance goals. Microsoft Purview provides DLP capabilities to detect and respond to risky activities across cloud and endpoint environments. Learn how to design, configure, and manage DLP policies using Microsoft Purview. This learning path aligns with exam SC-401: Microsoft Information Security Administrator.'
   ms.date: 03/14/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: learning-path
-title: 'Implement and manage data loss prevention'
+title: 'Implement and manage Microsoft Purview Data Loss Prevention'
 prerequisites: |
   - Foundational knowledge of Microsoft security and compliance technologies
   - Basic knowledge of information protection concepts
@@ -28,6 +28,7 @@ modules:
 - learn-m365.m365-compliance-information-prevent-data-loss
 - learn-m365.purview-implement-endpoint-dlp
 - learn.wwl.create-configure-data-loss-prevention-policies
+- learn.wwl.purview-data-loss-prevention-alerts
 
 trophy:
   uid: learn.wwl.purview-implement-manage-dlp.trophy

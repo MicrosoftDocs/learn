@@ -6,7 +6,7 @@ Microsoft Defender offers workload protections for multiple Azure workloads, suc
 
 ## Defender for Storage
 
-**Microsoft Defender for Storage** is an Azure-native layer of security intelligence that detects unusual and potentially harmful attempts to access or exploit your storage accounts. It uses advanced threat detection capabilities and [Microsoft Threat Intelligence](https://go.microsoft.com/fwlink/?linkid=2128684) data to provide contextual security alerts. Those alerts also include steps to mitigate the detected threats and prevent future attacks.
+**Microsoft Defender for Storage** is an Azure-native layer of security intelligence that detects unusual and potentially harmful attempts to access or exploit your storage accounts. It uses advanced threat detection capabilities and [Microsoft Threat Intelligence](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-threat-intelligence) data to provide contextual security alerts. Those alerts also include steps to mitigate the detected threats and prevent future attacks.
 
 You can [enable Microsoft Defender for Storage](/azure/storage/common/azure-defender-storage-configure) at either the subscription level (recommended) or the resource level.
 
@@ -80,7 +80,7 @@ You can review and manage your current security alerts from Microsoft Defender f
 
 ### Limitations of hash reputation analysis
 
--   **Hash reputation isn't deep file inspection** - Microsoft Defender for Storage uses hash reputation analysis supported by [Microsoft Threat Intelligence](https://go.microsoft.com/fwlink/?linkid=2128684) to determine whether an uploaded file is suspicious. The threat protection tools don’t scan the uploaded files; rather they analyze the telemetry generated from the Blobs Storage and Files services. Defender for Storage then compares the hashes of newly uploaded files with hashes of known viruses, trojans, spyware, and ransomware.
+-   **Hash reputation isn't deep file inspection** - Microsoft Defender for Storage uses hash reputation analysis supported by [Microsoft Threat Intelligence](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-threat-intelligence) to determine whether an uploaded file is suspicious. The threat protection tools don’t scan the uploaded files; rather they analyze the telemetry generated from the Blobs Storage and Files services. Defender for Storage then compares the hashes of newly uploaded files with hashes of known viruses, trojans, spyware, and ransomware.
     
 -   **Hash reputation analysis isn't supported for all files protocols and operation types** - Some, but not all, of the telemetry logs contain the hash value of the related blob or file. In some cases, the telemetry doesn't contain a hash value. As a result, some operations can't be monitored for known malware uploads. Examples of such unsupported use cases include SMB file-shares and when a blob is created using [Put Block](/rest/api/storageservices/put-block) and [Put Block List](/rest/api/storageservices/put-block-list).
 
@@ -128,7 +128,7 @@ Defender for Cloud detects anomalous activities indicating unusual and potential
 
 Microsoft Defender for Azure Cosmos DB detects potential SQL injections, known bad actors based on Microsoft Threat Intelligence, suspicious access patterns, and potential exploitation of your database through compromised identities, or malicious insiders.
 
-Defender for Azure Cosmos DB uses advanced threat detection capabilities, and [Microsoft Threat Intelligence](https://www.microsoft.com/insidetrack/microsoft-uses-threat-intelligence-to-protect-detect-and-respond-to-threats) data to provide contextual security alerts. Those alerts also include steps to mitigate the detected threats and prevent future attacks.
+Defender for Azure Cosmos DB uses advanced threat detection capabilities, and [Microsoft Threat Intelligence](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-threat-intelligence) data to provide contextual security alerts. Those alerts also include steps to mitigate the detected threats and prevent future attacks.
 
 You can [enable protection for all your databases](/azure/defender-for-cloud/quickstart-enable-database-protections) (recommended), or [enable Microsoft Defender for Azure Cosmos DB](/azure/defender-for-cloud/quickstart-enable-database-protections) at either the subscription level, or the resource level.
 

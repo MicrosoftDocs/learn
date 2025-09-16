@@ -2,8 +2,6 @@
 uid: learn.azure-mission-critical.exercise-one
 title: Exercise - Add web application health checks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Add web application health checks
   description: Implement a dedicated health check endpoint on the application, which reports the health status of the API at regular intervals. 
@@ -39,4 +37,4 @@ quiz:
       explanation: "The health check probe request from the platform is done behind the Authentication service and accesses your health check endpoint anonymously, bypassing the Authorization service. Requests originating from outside the service don't bypass the Authorization service and must be able to generate credentials for the request. External monitoring is encouraged, as it can also help in detecting App Service Authentication service faults."
     - content: "Yes. You can configure Azure App Service to acquire the necessary access tokens to send with health probes."
       isCorrect: false
-      explanation: "App Service Health Check only supports calling anonymous endpoints, and doesn't have a way to generate authentication tokens."
+      explanation: "App Service Health Check only supports calling anonymous endpoints, and doesn't have a way to generate authentication tokens."

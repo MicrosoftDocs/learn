@@ -2,11 +2,9 @@
 uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.receiver-operator-characteristic-curve
 title: Analyze classification with receiver operator characteristic curves
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Analyze classification with receiver operator characteristic curves
+  title: Analyze Classification with Receiver Operator Characteristic Curves
   description: Conceptual unit introducing ROC curves in machine learning
-  ms.date: 07/20/2024
+  ms.date: 04/03/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit

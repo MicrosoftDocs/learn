@@ -2,8 +2,6 @@
 uid: learn.azure.secure-azure-storage-account.storage-security-features
 title: Explore Azure Storage security features
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Storage security features
   description: "Explore Azure Storage security features"
   ms.date: 09/02/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-storage-security-features.md)]
+  [!include[](includes/2-storage-security-features.md)]

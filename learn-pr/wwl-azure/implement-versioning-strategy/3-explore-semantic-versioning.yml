@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-versioning-strategy.explore-semantic-versioning
 title: Explore semantic versioning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore semantic versioning
   description: "Explore semantic versioning"
   ms.date: 05/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-explore-semantic-versioning.md)]
+  [!include[](includes/3-explore-semantic-versioning.md)]

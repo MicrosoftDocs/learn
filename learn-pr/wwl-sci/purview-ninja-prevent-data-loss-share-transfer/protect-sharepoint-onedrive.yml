@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ninja-prevent-data-loss-share-transfer.protect-sharepoint-onedrive
+title: Protect sensitive files in SharePoint and OneDrive
+metadata:
+  title: Protect Sensitive Files in SharePoint and OneDrive
+  description: "Protect sensitive files in SharePoint and OneDrive."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/protect-sharepoint-onedrive.md)]

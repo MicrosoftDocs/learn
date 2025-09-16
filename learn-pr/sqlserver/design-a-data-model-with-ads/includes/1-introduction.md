@@ -19,4 +19,4 @@ In this module, the task is to create a data model containing a set of tables th
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to create a data model containing database tables for your applications while taking into consideration what data needs to be stored, how to build relationships between tables, and methods to ensure only the data you want is allowed.
+By the end of this session, you'll be able to create a data model containing database tables for your applications. You'll take into consideration what data needs to be stored, how to build relationships between tables, and methods to ensure only the data you want is allowed.

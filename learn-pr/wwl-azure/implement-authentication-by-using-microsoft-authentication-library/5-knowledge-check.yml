@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-authentication-by-using-microsoft-authentication-library.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 07/16/2024
+  ms.date: 07/09/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -18,21 +18,21 @@ quiz:
     choices:
     - content: "MSAL Node"
       isCorrect: false
-      explanation: "Incorrect. MSAL Node does not support single-page web apps."
+      explanation: "Incorrect. MSAL Node doesn't support single-page web apps."
     - content: "MSAL.js"
       isCorrect: true
       explanation: "Correct. MSAL.js supports single-page applications."
     - content: "MSAL.NET"
       isCorrect: false
-      explanation: "Incorrect. MSAL.NET does not support single-page web apps."
+      explanation: "Incorrect. MSAL.NET doesn't support single-page web apps."
   - content: "What is the purpose of using `PublicClientApplicationBuilder` class in MSAL.NET?"
     choices:
-    - content: "Creates a new Azure account."
+    - content: "The class creates a new Azure account."
       isCorrect: false
       explanation: "Incorrect. `PublicClientApplicationBuilder` class isn't used to create a new Azure account."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+    - content: "To configure and instantiate a public client application that can acquire tokens and authenticate users against the Microsoft identity platform."
       isCorrect: true
-      explanation: "Correct. `PublicClientApplicationBuilder` class is used to build out the authorization context for interactive authentication in a console application."
+      explanation: "Correct. `PublicClientApplicationBuilder` class is used to build out the authorization context for interactive authentication."
     - content: "Adds a new API permission to the registered app."
       isCorrect: false
       explanation: "Incorrect. `PublicClientApplicationBuilder` class isn't used to add a new API permission to the registered app."

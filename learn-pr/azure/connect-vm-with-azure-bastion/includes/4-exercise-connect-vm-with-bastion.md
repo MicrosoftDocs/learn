@@ -42,7 +42,7 @@ Create a Linux VM that's not exposed to the internet.
     | **Instance details** |
     |Virtual machine name  |   internalappvm       |
     |Region    | Choose a region near you         |
-    |Image     |  Ubuntu Server 20.04 LTS - x64 Gen2       |
+    |Image     |  Ubuntu Server 24.04 LTS - x64 Gen2       |
     | **Administrator account** |
     |Username    | azureuser     |
     |SSH public key source    |  Generate new key pair     |
@@ -76,7 +76,7 @@ Before you can use Azure Bastion, you need to create a subnet on the virtual net
 
 1. Select **learn-bastion-rg**.
 
-1. From the list of resources, select the virtual network **learn bastion-rg-vnet**.
+1. From the list of resources, select the virtual network **internalappvm-vnet**.
 
 1. In the left menu pane, under **Settings**, select **Subnets**.
 
@@ -86,14 +86,14 @@ Before you can use Azure Bastion, you need to create a subnet on the virtual net
 
     |Field  |Name |
     |---------|---------|
-    |Name    |  AzureBastionSubnet       |
-    |Subnet address range     | Enter an address space with a subnet mask that's /26 or larger, like /26, /25, and so on. An example is 10.0.1.0/24. |
+    |Subnet purpose    |  **Azure Bastion**      |
+    |Size     | Select an address space with a subnet mask that's /26 or larger, like /26, /25, and so on. An example is **/24 (256 addresses)**. |
 
    Use the default values for the rest of the fields.
 
     :::image type="content" source="../media/4-add-bastion-subnet.png" alt-text="Screenshot of the Add subnet page where the subnet name is AzureBastionSubnet.":::
 
-1. Select **Save**.
+1. Select **Add**.
 
 ## Deploy Azure Bastion
 
@@ -101,7 +101,7 @@ Before you can use Azure Bastion, you need to create a subnet on the virtual net
 
 1. Select the virtual machine **internalappvm**.
 
-1. Select **Connect** > **Bastion** > **Deploy Bastion**.
+1. Select **Connect** > **Connect via Bastion** > **Deploy Bastion**.
 
    :::image type="content" source="../media/4-connect-bastion.png" alt-text="Screenshot of the Connect page and Bastion tab, with the Create Azure Bastion using defaults button.":::
 
@@ -123,12 +123,12 @@ Wait a few minutes for the Azure Bastion resource to be created.
 
 1. In the remote shell, enter Linux commands like the following command that updates the system.
 
-   :::image type="content" source="../media/4-ubuntu-session.png" alt-text="Screenshot of a browser that shows an Ubuntu terminal session.":::
-
    ```bash
    sudo apt-get -y update
    ```
 
+   :::image type="content" source="../media/4-ubuntu-session.png" alt-text="Screenshot of a browser that shows an Ubuntu terminal session.":::
+
 1. When you're finished, enter `exit`.
 
-The next time you want to connect to the internal app VM, go to the virtual machine, select **Bastion**, and enter your credentials.
+The next time you want to connect to the internal app VM, go to the virtual machine, select **Bastion** and enter your credentials.

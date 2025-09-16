@@ -2,13 +2,11 @@
 uid: learn.wwl.use-delta-lake-azure-synapse-analytics.delta-with-sql
 title: Use Delta Lake in a SQL pool
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Use Delta Lake in a SQL pool
+  title: Use Delta Lake in a SQL Pool
   description: "Use Delta Lake in a SQL pool"
-  ms.date: 10/11/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ms.custom:
   - N/A

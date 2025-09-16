@@ -1,12 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-a-data-model-with-ads.exercise-create-tables-with-ads
-title: Create tables with Azure Data Studio
+title: Create tables with Visual Studio Code
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Create tables with Azure Data Studio
-  description: "Create a data model for an application that includes tables and data types using Table Designer in Azure Data Studio"
-  ms.date: 03/05/2024
+  title: Create tables with Visual Studio Code
+  description: "Create a data model for an application that includes tables and data types using Table Designer in Visual Studio Code"
+  ms.date: 07/17/2025
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: unit

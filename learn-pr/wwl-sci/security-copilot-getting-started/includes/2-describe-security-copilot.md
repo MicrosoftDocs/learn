@@ -26,7 +26,7 @@ These use cases represent just a few of the capabilities that Copilot delivers a
 
 You can experience Copilot through the dedicated site, also referred to as the standalone experience. Users interact with Copilot through the prompt bar. In the prompt bar, users make requests in natural language and receive response outputs as text, images, or documents.
 
-:::image type="content" source="../media/copilot-landing-page-prompt-bar.png" lightbox="../media/copilot-landing-page-prompt-bar.png" alt-text="Screenshot that shows the landing page for the Security Copilot standalone experience. The prompt bar is at the bottom center of the page.":::
+:::image type="content" source="../media/copilot-new-landing-page.png" lightbox="../media/copilot-new-landing-page.png" alt-text="Screenshot that shows the landing page for the Security Copilot standalone experience. The prompt bar is at the bottom center of the page.":::
 
 Additionally, some Microsoft security products embed Copilot capabilities directly within the products’ user interface. This experience is referred to as the embedded experience. Microsoft Defender XDR, for example, enables Copilot capabilities including summarizing incidents, analyzing scripts, generating KQL queries, and more.
 
@@ -50,6 +50,6 @@ Copilot combines powerful LLMs with security-specific sources from Microsoft. Th
 
 The information you give Copilot will only be accessible to your organization. Your data is your data, and it's protected by comprehensive enterprise compliance and security controls. Your data isn't used to train the foundation AI models.
 
-:::image type="content" source="../media/security-copilot-v2.png" lightbox="../media/security-copilot-v2.png" alt-text="Diagram showing key attributes of Security Copilot, including hyperscale AI infrastructure, security specific orchestrator,evergreen threat intelligence, and cyber skills and promptbooks.":::
+:::image type="content" source="../media/security-copilot-stack.png" lightbox="../media/security-copilot-stack.png" alt-text="Diagram showing key attributes of Security Copilot, including hyperscale AI infrastructure, security specific orchestrator,evergreen threat intelligence, and cyber skills and promptbooks.":::
 
 Microsoft Security Copilot is the first security product to enable defenders to move at the speed and scale of AI.

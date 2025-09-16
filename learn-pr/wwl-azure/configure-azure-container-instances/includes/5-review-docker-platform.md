@@ -1,4 +1,6 @@
-There are many options for teams to build and deploy cloud native and containerized applications on Azure. Let's understand which scenarios and use cases are best suited for Azure Container Apps and how it compares to other container options on Azure.
+There are many options for teams to build and deploy cloud native and containerized applications on Azure. Let's understand which scenarios and use cases are best suited for Azure Container Apps and how it compares to other container options on Azure. Listen to a developer's view of Azure Container Instances. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f33ea4b6-2c00-4b85-8875-e7193921f8cd]
 
 ### Things to know about Azure Container Apps
 
@@ -28,7 +30,7 @@ Azure Container Apps enables you to build serverless microservices and jobs base
 - Enables event-driven application architectures by supporting scale based on traffic and pulling from event sources like queues, including scale to zero.
 - Supports running on demand, scheduled, and event-driven jobs.
 
-Azure Container Apps doesn't provide direct access to the underlying Kubernetes APIs. If you would like to build Kubernetes-style applications and don't require direct access to all the native Kubernetes APIs and cluster management, Container Apps provides a fully managed experience based on best-practices. For these reasons, many teams may prefer to start building container microservices with Azure Container Apps.
+Azure Container Apps doesn't provide direct access to the underlying Kubernetes APIs. If you would like to build Kubernetes-style applications and don't require direct access to all the native Kubernetes APIs and cluster management, Container Apps provides a fully managed experience based on best-practices. For these reasons, many teams prefer to start building container microservices with Azure Container Apps.
 
 #### Compare container management solutions
 

@@ -1,6 +1,9 @@
-Azure offers several networking services with capabilities that can be used together or separately to support workload requirements. You can [**connect Azure resources and on-premises resources**](/azure/networking/fundamentals/networking-overview#connect), [**protect your applications**](/azure/networking/fundamentals/networking-overview#protect), and [**deliver your applications**](/azure/networking/fundamentals/networking-overview#deliver).
+
+Azure offers several AI-ready [networking services](/azure/networking/fundamentals/networking-overview#connect) with capabilities that can be used together or separately to support workload requirements. You can connect Azure resources and on-premises resources, protect your applications, and deliver your applications.
 
 Tailwind Traders is currently running its workloads on-premises in its datacenter. In your strategy for migrating some of the company workloads to Azure, you need to make networking design decisions to properly support the workloads and services. In order to recommend a network architecture, you need to consider how workload requirements translate to network requirements. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0bf58d01-023f-4ffb-abc8-ee52d5c8741f]
 
 ### Things to know about network requirements 
 
@@ -22,15 +25,13 @@ As you plan your networking solution, there are several requirements you need to
 
 There are many considerations to review as you plan your network according to the workload requirements for Tailwind Traders.
 
-- **Consider segmentation options for your virtual networks**. Each subnet must have a unique address range, specified in CIDR format, within the address space of the virtual network. The address range can't overlap with other subnets in the virtual network.
-   
-   - **Subnets segmented based on application layer**. The following table shows how to segment a virtual network with an address space of 10.245.16.0/20 into subnets based on a three-tiered application.
+- **Consider segmentation options for your virtual networks**. Each subnet must have a unique address range, specified in CIDR format, within the address space of the virtual network. The address range can't overlap with other subnets in the virtual network. The following table shows how to segment a virtual network with an address space of 10.245.16.0/20 into subnets based on a three-tiered application.
 
-      | Subnet | CIDR | Addresses | Usage |
-      | --- | --- | --- | --- |
-      | DEV-FE-EUS2  | 10.245.16.0/22 | 1019 | Front-end or web-tier virtual machines |
-      | DEV-APP-EUS2 | 10.245.20.0/22 | 1019 | Application-tier virtual machines |
-      | DEV-DB-EUS2  | 10.245.24.0/23 |  507 | Database virtual machines |
+   | Subnet | CIDR | Addresses | Usage |
+    --- | --- | --- | --- |
+    DEV-FE-EUS2  | 10.245.16.0/22 | 1019 | Front-end or web-tier virtual machines |
+    DEV-APP-EUS2 | 10.245.20.0/22 | 1019 | Application-tier virtual machines |
+    DEV-DB-EUS2  | 10.245.24.0/23 |  507 | Database virtual machines |
 
 - **Consider required interfaces and IP addresses**. Identify how many network interfaces and private IP addresses you require in your virtual network. There are limits to the number of network interfaces and private IP addresses that you can have within a virtual network.
 

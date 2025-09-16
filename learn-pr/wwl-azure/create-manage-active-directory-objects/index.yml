@@ -5,9 +5,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Create and manage Active Directory objects
   description: "This module focuses on the tasks associated with managing Active Directory objects and AD domain services domain controllers."
-  ms.date: 10/22/2024
+  ms.date: 08/12/2025
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.collection: N/A
   ms.custom:

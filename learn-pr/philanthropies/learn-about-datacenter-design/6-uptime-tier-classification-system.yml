@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.learn-about-datacenter-design.uptime-tier-classification-system
+title: Uptime and tier classification system
+metadata:
+  title: Uptime and Tier Classification System
+  description: This content is a part of the "Learn about datacenter design, architecture, and infrastructure management" module.
+  ms.date: 05/08/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+ [!include[](includes/6-uptime-tier-classification-system.md)]

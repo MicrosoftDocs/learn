@@ -1,3 +1,5 @@
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2331685]
+
 Data is a collection of facts such as numbers, descriptions, and observations used to record information. Data structures in which this data is organized often represent *entities* that are important to an organization (such as customers, products, sales orders, and so on). Each entity typically has one or more *attributes*, or characteristics (for example, a customer might have a name, an address, a phone number, and so on).
 
 You can classify data as *structured*, *semi-structured*, or *unstructured*.

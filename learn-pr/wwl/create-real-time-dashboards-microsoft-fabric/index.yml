@@ -2,10 +2,10 @@
 uid: learn.wwl.create-real-time-dashboards-microsoft-fabric
 metadata:
   title: Create real-time dashboards with Microsoft Fabric
-  description: "Real-time Dashboard is a Real-Time Intelligence capability in Microsoft Fabric that you can use to create real-time data visualizations."
-  ms.date: 12/12/2024
-  author: wwlpublish
-  ms.author: gmalc
+  description: "Real-Time Dashboard is a capability in Microsoft Fabric that you can use to create interactive data visualizations."
+  ms.date: 09/10/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: module
   ms.collection: N/A
   ms.custom:
@@ -13,15 +13,12 @@ metadata:
   ms.service: azure
   ai-usage: human-only
 title: Create Real-Time Dashboards with Microsoft Fabric
-summary: Real-time Dashboard is a Real-Time Intelligence capability in Microsoft Fabric that you can use to create real-time data visualizations.
+summary: Real-Time Dashboard is a capability in Microsoft Fabric that you can use to create interactive data visualizations.
 abstract: |
   By the end of this module, you're able to:
-
-  -   Create a real-time dashboard in Microsoft Fabric.
-
-  -   Use advanced feature of real-time dashboards.
-
-  -   Apply best practices for real-time dashboards.
+  -   Create a real-time dashboard in Microsoft Fabric
+  -   Organize and filter dashboard data.
+  -   Apply dashboard management techniques.
 prerequisites: Before starting this module, you should be familiar with Real-Time Intelligence capabilities in Microsoft Fabric.
 iconUrl: /training/achievements/create-real-time-dashboards-microsoft-fabric.svg
 levels:

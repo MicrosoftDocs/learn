@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-hybrid-workloads-with-azure-arc.use-to-manage-windows-server-instances
 title: Use Azure Arc to manage Windows Server instances
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Azure Arc to manage Windows Server instances
   description: "Use Azure Arc to manage Windows Server instances"
   ms.date: 01/15/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 12
 content: |
-  [!include[](includes/5-use-manage-windows-server-instances.md)]
+  [!include[](includes/5-use-manage-windows-server-instances.md)]

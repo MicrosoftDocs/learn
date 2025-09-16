@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.security-monitoring-and-governance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Security Monitoring and Governance
   description: "Security Monitoring and Governance"
   ms.date: 05/13/2024
@@ -65,4 +63,4 @@ units:
 - learn.wwl.security-monitoring-and-governance.knowledge-check
 - learn.wwl.security-monitoring-and-governance.summary
 badge:
-  uid: learn.wwl.security-monitoring-and-governance.badge
+  uid: learn.wwl.security-monitoring-and-governance.badge

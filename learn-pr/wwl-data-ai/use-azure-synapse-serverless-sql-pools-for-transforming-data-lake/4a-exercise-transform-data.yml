@@ -2,13 +2,11 @@
 uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.exercise-transform-data
 title: Exercise - Transform files using a serverless SQL pool
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Exercise - Transform files using a serverless SQL pool
+  title: Exercise - Transform Files Using a Serverless SQL Pool
   description: "Exercise - Transform files using a serverless SQL pool"
-  ms.date: 11/16/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

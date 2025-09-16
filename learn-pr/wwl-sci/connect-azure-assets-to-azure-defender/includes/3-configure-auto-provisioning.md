@@ -1,80 +1,93 @@
 Microsoft Defender for Cloud collects data from your Azure virtual machines (VMs), virtual machine scale sets, IaaS containers, and non-Azure (including on-premises) machines to monitor for security vulnerabilities and threats.
 
-Data collection is required to provide visibility into missing updates, misconfigured OS security settings, endpoint protection status, and health and threat protection. Data collection is only needed for compute resources (VMs, virtual machine scale sets, IaaS containers, and non-Azure computers). You can benefit from Defender for Cloud even if you don’t provision agents. However, you'll have limited security, and the capabilities listed above aren't supported.
+Data collection is required to provide visibility into missing updates, misconfigured OS security settings, endpoint protection status, and health and threat protection. Data collection is only needed for compute resources (VMs, virtual machine scale sets, IaaS containers, and non-Azure computers). You can benefit from Defender for Cloud even if you don’t provision agents. However, you have limited security, and the capabilities listed above aren't supported.
 
 Data is collected using:
 
-- The Log Analytics agent, which reads various security-related configurations and event logs from the machine and copies the data to your workspace for analysis. Examples of such data are operating system type and version, operating system logs (Windows event logs), running processes, machine name, IP addresses, and logged in user.
+- **Azure Monitor Agent (AMA)** - The recommended modern agent that collects security-related configurations and event logs from machines and copies the data to your workspace for analysis.
+
+- **Microsoft Defender for Endpoint** - Provides advanced threat protection capabilities and endpoint detection and response.
+
+- **Log Analytics agent** - This agent is officially retired (August of 2024), and is no longer supported. [Migrate to the Azure Monitor Agent](/azure/azure-monitor/agents/azure-monitor-agent-migration) for new deployments.
 
 - Security extensions, such as the Azure Policy Add-on for Kubernetes, which can also provide data to Security Center regarding specialized resource types.
 
-:::image type="content" source="../media/auto-provisioning-options.png" alt-text="Screenshot of Auto provisioning settings.":::
+> [!NOTE]
+> Auto provisioning is now done on the **Settings & monitoring** page.
+
+:::image type="content" source="../media/auto-provisioning-options.png" alt-text="Screenshot of Auto provisioning settings." lightbox="../media/auto-provisioning-options.png":::
+
 ## Why use auto provisioning?
 
 Any of the agents and extensions described on this page can be installed manually. However, auto provisioning reduces management overhead by installing all required agents and extensions on existing - and new - machines to ensure faster security coverage for all supported resources.
 
 ## How does auto provisioning work?
 
-Defender for Clouds's auto provisioning settings has a toggle for each type of supported extension. When you enable auto provisioning of an extension, you assign the appropriate Deploy if not exists policy to ensure that the extension is provisioned on all existing and future resources of that type.
+Defender for Clouds's auto provisioning settings has a toggle for each type of supported extension. When you enable auto provisioning of an extension, you assign the appropriate *Deploy if not exists* policy to ensure that the extension is provisioned on all existing and future resources of that type.
 
-## Enable auto provisioning of the Log Analytics agent
+## Enabling auto provisioning for the Defender for Endpoint sensor
 
-When automatic provisioning is on for the Log Analytics agent, Defender for Cloud deploys the agent on all supported Azure VMs and any new ones created.
+Defender for Endpoint integration is enabled by default when you enable a Defender for Servers plan. If you turn off the Defender for Endpoint integration on a subscription, you can turn it on again manually when necessary using these instructions.
 
-To enable auto provisioning of the Log Analytics agent:
+1. In Defender for Cloud, select **Environment settings** and select the subscription containing the machines on which you want to deploy the Defender for Endpoint integration.
 
-1. From Defender for Clouds's menu, select **Environment settings**.
+1. In **Settings and monitoring** > **Endpoint protection**, toggle the **Status** column settings to **On**.
 
-1. Select the relevant subscription.
+1. Select **Continue** and **Save** to save your settings.
 
-1. In the **Auto provisioning** page, set the status of auto provisioning for the Log Analytics agent to **On**.
+1. The Defender for Endpoint sensor is deployed to all Windows and Linux machines in the selected subscription.
 
-1. From the configuration options pane, define the workspace to use.
+    Onboarding might take up to an hour. Defender for Cloud detects any previous Defender for Endpoint installations and reconfigures them to integrate with Defender for Cloud.
 
-Connect Azure VMs to the default workspace(s) created by Defender for Cloud - Defender for Cloud creates a new resource group and default workspace in the same geolocation and connects the agent to that workspace. If a subscription contains VMs from multiple geolocations, Defender for Cloud creates multiple workspaces to ensure compliance with data privacy requirements.
+> [!NOTE]
+> For Azure VMs created from generalized OS images, Microsoft Defender for Endpoint (MDE) won't be automatically provisioned via this setting; however, you can manually enable the MDE agent and extension using Azure CLI, REST API, or Azure Policy.
 
-The naming convention for the workspace and resource group is:
+## Direct onboarding with Microsoft Defender for Endpoint
 
-- Workspace: DefaultWorkspace-[subscription-ID]-[geo]
-- Resource Group: DefaultResourceGroup-[geo]
+For non-Azure servers (on-premises and multicloud environments), you can use direct onboarding to connect your machines to Microsoft Defender for Cloud through the Defender for Endpoint agent. This approach provides a seamless integration without requiring Azure Arc or extra software deployment.
 
-Defender for Cloud automatically enables Defender for Cloud solution(s) on the workspace per the pricing tier set for the subscription.
+### How direct onboarding works
 
-Connect Azure VMs to a different workspace - From the dropdown list, select the workspace to store collected data. The dropdown list includes all workspaces across all of your subscriptions. You can use this option to collect data from virtual machines running in different subscriptions and store it all in your selected workspace.
+Direct onboarding creates a unified protection experience by:
 
-If you already have an existing Log Analytics workspace, you might want to use the same workspace (requires read and write permissions on the workspace). This option is useful if you're using a centralized workspace in your organization and want to use it for security data collection. Learn more in Manage access to log data and workspaces in Azure Monitor.
+- Automatically showing your non-Azure servers onboarded to Defender for Endpoint in Defender for Cloud under a designated Azure subscription
+- Providing licensing, billing, alerts, and security insights through the Azure subscription
+- Integrating vulnerability data and software inventory with Defender for Cloud
 
-If your selected workspace already has a Security or Defender for Cloud Free solution enabled, the pricing will be set automatically. If not, install a Defender for Cloud solution on the workspace.
+> [!IMPORTANT]
+> Direct onboarding doesn't provide server management capabilities like Azure Policy, Extensions, or Guest configuration. You must use other tools such as Defender for Endpoint security settings management, Configuration Manager, Group Policy, or PowerShell to manage security settings.
 
-## Enable auto provisioning of extensions
+### Enable direct onboarding
 
-To enable automatic provisioning of an extension other than the Log Analytics agent:
+To enable direct onboarding:
 
-1. From Defender for Clouds's menu in the Azure portal, select **Environment settings**.
+1. In Defender for Cloud, go to **Environment Settings** > **Direct onboarding**.
 
-1. Select the relevant subscription.
+1. Switch the **Direct onboarding** toggle to **On**.
 
-1. Select **Auto provisioning**.
+1. Select the subscription you want to use for servers onboarded directly with Defender for Endpoint.
 
-1. If you're enabling auto provisioning for the **Microsoft Dependency agent**, ensure the Log Analytics agent is set to auto deploy too.
+1. Select **Save**.
 
-1. Toggle the status to On for the relevant extension.
+After enabling direct onboarding for the first time, it might take up to 24 hours to see your non-Azure servers in your designated subscription.
 
-1. Select **Save**. The Azure policy is assigned, and a remediation task is created.
+### Deploy Defender for Endpoint on your servers
 
-## Windows security event options for the Log Analytics agent
+Once direct onboarding is enabled, deploy the Defender for Endpoint agent on your on-premises Windows and Linux servers using the standard Defender for Endpoint onboarding process. The deployment method is the same whether you use direct onboarding or not.
 
-Selecting a data collection tier in Defender for Cloud only affects the storage of security events in your Log Analytics workspace. The Log Analytics agent will still collect and analyze the security events required for Defender for Clouds’s threat protection, regardless of the level of security events you choose to store in your workspace. Choosing to store security events enables investigation, search, and auditing of those events in your workspace.
+### Limitations
 
-Defender for Cloud is required for storing Windows security event data.  Storing data in Log Analytics might incur more charges for data storage.
+- **Plan support**: Direct onboarding provides access to all Defender for Servers Plan 1 features. For Plan 2 features, certain capabilities still require Azure Arc on non-Azure machines.
+- **Multicloud support**: You can directly onboard AWS and GCP VMs, but if you plan to use multicloud connectors simultaneously, Azure Arc is still recommended.
+- **Agent versions**: Ensure your Defender for Endpoint agent meets minimum version requirements to avoid limitations with simultaneous onboarding methods.
 
 ### Information for Microsoft Sentinel users
 
-Users of Microsoft Sentinel: note that security events collection within the context of a single workspace can be configured from either Microsoft Defender for Cloud or Microsoft Sentinel, but not both. If you're planning to add Microsoft Sentinel to a workspace that is already getting alerts from Microsoft Defender for Cloud, and its set to collect Security Events, you have two options:
+Users of Microsoft Sentinel: note that security events collection within the context of a single workspace can be configured from either Microsoft Defender for Cloud or Microsoft Sentinel, but not both. If you're planning to add Microsoft Sentinel to a workspace that is already getting alerts from Microsoft Defender for Cloud, and it's set to collect Security Events, you have two options:
 
-- Leave the Security Events collection in Defender for Cloud as is. You'll be able to query and analyze these events in Microsoft Sentinel and Defender for Cloud. However, you won't be able to monitor the connector's connectivity status or change its configuration in Microsoft Sentinel. If monitoring or customizing the connector is important to you, consider the second option.
+- Leave the Security Events collection in Defender for Cloud as is. You're able to query and analyze these events in Microsoft Sentinel and Defender for Cloud. However, you won't be able to monitor the connector's connectivity status or change its configuration in Microsoft Sentinel. If monitoring or customizing the connector is important to you, consider the second option.
 
-- Disable Security Events collection in Defender for Cloud (by setting Windows security events to None in the configuration of your Log Analytics agent). Then add the Security Events connector in Microsoft Sentinel. As with the first option, you'll be able to query and analyze events in both Microsoft Sentinel and Defender for Cloud, but you'll now be able to monitor the connector's connectivity status or change its configuration in - and only in - Microsoft Sentinel.
+- Disable Security Events collection in Defender for Cloud (by setting Windows security events to None in the configuration of your Log Analytics agent). Then add the Security Events connector in Microsoft Sentinel. As with the first option, you're able to query and analyze events in both Microsoft Sentinel and Defender for Cloud, and you're able to monitor the connector's connectivity status or change its configuration in - and only in - Microsoft Sentinel.
 
 ### What event types are stored for "Common" and "Minimal"?
 

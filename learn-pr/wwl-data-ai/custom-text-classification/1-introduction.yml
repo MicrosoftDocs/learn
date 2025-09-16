@@ -5,16 +5,13 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Introduction
-  description: Introduction
-  author: wwlpublish
+  description: "Introduction"
+  ms.date: 09/04/2025
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/31/2023
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-

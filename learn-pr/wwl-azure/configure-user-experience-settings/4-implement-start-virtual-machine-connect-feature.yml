@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-user-experience-settings.implement-start-virtual-machine-connect-feature
 title: Implement the Start Virtual Machine on Connect feature
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement the Start Virtual Machine on Connect feature
   description: "Implement the Start Virtual Machine on Connect feature"
   ms.date: 08/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-implement-start-virtual-machine-connect-feature.md)]
+  [!include[](includes/4-implement-start-virtual-machine-connect-feature.md)]

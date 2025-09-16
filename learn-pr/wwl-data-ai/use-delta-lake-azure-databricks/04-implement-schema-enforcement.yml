@@ -2,13 +2,11 @@
 uid: learn.wwl.use-delta-lake-azure-databricks.implement-schema-enforcement
 title: Implement schema enforcement
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Implement schema enforcement
+  title: Implement Schema Enforcement
   description: "Implement schema enforcement"
-  ms.date: 08/07/2024
-  author: wwlpublish
-  ms.author: theresai
+  ms.date: 09/12/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

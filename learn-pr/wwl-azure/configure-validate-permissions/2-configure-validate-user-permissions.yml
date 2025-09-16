@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-validate-permissions.configure-validate-user-permissions
 title: Configure and validate user permissions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure and validate user permissions
   description: "Configure and validate user permissions."
   ms.date: 1/25/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-configure-validate-user-permissions.md)]
+  [!include[](includes/2-configure-validate-user-permissions.md)]

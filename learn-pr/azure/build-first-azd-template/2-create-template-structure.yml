@@ -2,8 +2,6 @@
 uid: learn.azure.build-first-azure-developer-cli-template.create-template-structure
 title: Create the template structure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Create the template structure
   description: Create the template structure
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-create-template-structure.md)]
-
+

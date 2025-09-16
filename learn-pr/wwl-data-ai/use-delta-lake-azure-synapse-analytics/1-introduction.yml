@@ -2,13 +2,11 @@
 uid: learn.wwl.use-delta-lake-azure-synapse-analytics.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 10/11/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ms.custom:
   - N/A

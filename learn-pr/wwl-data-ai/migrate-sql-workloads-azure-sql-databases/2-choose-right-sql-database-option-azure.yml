@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Choose the right Azure SQL Database feature
   description: "Learn the essentials of Azure SQL Database deployment planning and migration. Explore its benefits, exclusive features, and migration options while optimizing performance and application connections for a smooth transition to the cloud."
-  ms.date: 10/31/2023
-  author: wwlpublish
+  ms.date: 08/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
   ms.custom:

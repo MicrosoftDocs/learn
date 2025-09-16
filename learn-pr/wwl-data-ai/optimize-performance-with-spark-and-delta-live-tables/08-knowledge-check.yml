@@ -1,51 +1,50 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/06/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/22/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "What is the primary purpose of implementing version control in Azure Databricks?"
+  - content: "What is the primary benefit of combining serverless compute with Delta Live Tables (DLT) in Azure Databricks for large-scale data pipelines?"
     choices:
-    - content: "To increase the processing speed of data pipelines."
+    - content: "Manual control over fixed cluster sizes for predictable capacity."
       isCorrect: false
-      explanation: "Incorrect. While efficient code management can indirectly improve performance, the primary purpose of version control isn't to increase processing speed."
-    - content: "To enhance the visual appeal of the Databricks interface."
-      isCorrect: false
-      explanation: "Incorrect. The implementation of version control doesn't directly affect the visual appeal of the Databricks interface."
-    - content: "To manage code changes, collaborate with team members, and maintain the integrity of data pipelines and machine learning models."
+      explanation: "Incorrect. Serverless removes most manual provisioning and fixed sizing."
+    - content: "Elastic scaling with reduced infrastructure management and parallel execution of transformations."
       isCorrect: true
-      explanation: "Correct. Implementing version control allows for effective code management, collaboration, and maintenance of data pipelines and machine learning models."
-  - content: "What is the purpose of unit testing in Azure Databricks?"
+      explanation: "Correct. Serverless adds elastic, pay-as-you-go scaling while DLT orchestrates parallel transformations, improving performance and reducing ops overhead."
+    - content: "Improved user interface customization options for notebooks."
+      isCorrect: false
+      explanation: "Incorrect. UI customization isn't the focus of serverless or DLT."
+  - content: "Which action best enables cost-based optimization (CBO) to choose efficient query plans in Azure Databricks?"
     choices:
-    - content: "To validate individual components or functions of the codebase in isolation."
+    - content: "Run ANALYZE TABLE to refresh table and column statistics regularly."
       isCorrect: true
-      explanation: "Correct. Unit testing focuses on validating individual components or functions of the codebase in isolation."
-    - content: "To verify the interactions between different modules and services."
+      explanation: "Correct. Up-to-date statistics guide the optimizer to better execution plans."
+    - content: "Disable data partitioning to avoid data skew."
       isCorrect: false
-      explanation: "Incorrect. This is the purpose of integration testing, not unit testing."
-    - content: "To simulate data ingestion, transformation, and storage."
+      explanation: "Incorrect. Partitioning often improves performance by pruning irrelevant data."
+    - content: "Turn off caching to ensure queries always read from disk."
       isCorrect: false
-      explanation: "Incorrect. This is an example of a process that might be tested, not the purpose of unit testing."
-  - content: "What is the role of init scripts in configuration management in Azure Databricks?"
+      explanation: "Incorrect. Caching can speed up repeated queries by avoiding disk I/O."
+  - content: "In a Delta Live Tables (DLT) pipeline implementing Change Data Capture (CDC), which pattern should you use to synchronize source changes into a target Delta table?"
     choices:
-    - content: "Init scripts are used to manage user access and permissions in Azure Databricks."
+    - content: "Overwrite the entire target table on each run to guarantee freshness."
       isCorrect: false
-      explanation: "Incorrect. Init scripts don't manage user access or permissions. They're used for installing necessary libraries, configuring system settings, or setting environment variables."
-    - content: "Init scripts are used to integrate Azure Databricks with version control systems like Git."
-      isCorrect: false
-      explanation: "Incorrect. Init scripts don't handle integration with version control systems. They're used for installing necessary libraries, configuring system settings, or setting environment variables."
-    - content: "Init scripts are used for installing necessary libraries, configuring system settings, or setting environment variables."
+      explanation: "Incorrect. Full overwrites are inefficient and unnecessary for CDC."
+    - content: "Use a MERGE operation on a business key with whenMatchedUpdateAll and whenNotMatchedInsertAll."
       isCorrect: true
-      explanation: "Correct. Init scripts run on each node of the cluster before the Spark driver or worker starts, ensuring consistent cluster configurations and reducing runtime errors due to misconfigurations."
+      explanation: "Correct. MERGE applies inserts/updates efficiently, keeping the target in sync with the source."
+    - content: "Apply a cross join to replicate rows across all partitions."
+      isCorrect: false
+      explanation: "Incorrect. Cross joins don't capture row-level changes and are inefficient."
 

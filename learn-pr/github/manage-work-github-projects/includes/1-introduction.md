@@ -11,6 +11,8 @@ Learning objectives:
 - Understand how to organize your Project
 - Gain insight on how to edit the visibility, access, and management of your Project
 - Know how to develop automation and insights from your Project
+- Understand project layout options such as boards, lists, and timeline views
+- Learn how to convert checklist items into sub-issues
 
 Prerequisites:
 

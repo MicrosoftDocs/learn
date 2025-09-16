@@ -21,11 +21,11 @@ ExpressRoute has the following networking and routing requirements:
 
 You can use two different peering schemes with ExpressRoute:
 
-- **Private peering**: Private peering allows you to connect on premises hosts with Azure IaaS and PaaS services configured to work with Azure virtual networks. All resources must be located in Azure virtual networks and allocated IP addresses in a private address space that doesn't overlap with your on-premises address space. You can’t connect to an Azure resource’s public IP address, such as an IaaS VM’s public IP address through private peering.
+- **Private peering**: Private peering allows you to connect on premises hosts with Azure IaaS and PaaS services configured to work with Azure virtual networks. All resources must be located in Azure virtual networks and allocated IP addresses in a private address space that doesn't overlap with your on-premises address space. You can’t connect to an Azure resource’s public IP address, such as an IaaS virtual machine’s public IP address through private peering.
 - **Microsoft peering**: Microsoft peering allows you to connect over ExpressRoute with Azure PaaS services, Microsoft 365 services, and Dynamics 365. If you're using Microsoft peering and you want to have resources in Azure connect to hosts on-premises, you need to reserve an extra IP address block.
 
 :::image type="content" source="../images/expressroute-circuit-peerings.png" alt-text="Diagram that shows the circuit peerings in Azure ExpressRoute.":::
 
 ## ExpressRoute high availability and failover
 
-Each ExpressRoute circuit has two connections from the connectivity provider to two separate edge routers at Microsoft. These connections provide ExpressRoute availability for a single location. If you want a higher degree of availability, you can configure ExpressRoute circuits in different peering locations. Adding different locations protects your ExpressRoute connection from regional outages. Another option is to have multiple ExpressRoute circuits configured through different providers, so that should one provider suffer an outage, you can fail over to a second provider.
+Each ExpressRoute circuit has two connections from the connectivity provider to two separate edge routers at Microsoft. These connections provide ExpressRoute availability for a single location. If you want a higher degree of availability, you can configure ExpressRoute circuits in different peering locations. Adding different locations protects your ExpressRoute connection from regional outages. Another option is to have multiple ExpressRoute circuits configured through different providers, so that should one provider suffer an outage you can fail over to a second provider.

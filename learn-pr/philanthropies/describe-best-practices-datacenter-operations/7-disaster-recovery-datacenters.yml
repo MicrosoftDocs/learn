@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.describe-best-practices-datacenter-operations.disaster-recovery-datacenters
+title: Disaster recovery in datacenters
+metadata:
+  title: Disaster recovery in datacenters
+  description: This content is a part of the Describe the best practices for datacenter operations.
+  ms.date: 05/07/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-disaster-recovery-datacenters.md)]

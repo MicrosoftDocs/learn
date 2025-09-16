@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-experiences.independent-software-vendors
+title: Independent Software Vendors
+metadata:
+  title: Independent Software Vendors
+  description: This content is part of the "A new generation of Windows experiences" module.
+  ms.date: 07/18/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+ [!include[](includes/7-independent-software-vendors.md)]

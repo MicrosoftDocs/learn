@@ -3,10 +3,11 @@ uid: learn.wwl.review-windows-powershell
 metadata:
   title: Review Windows PowerShell
   description: "Review Windows PowerShell"
-  ms.date: 04/15/2024
+  ms.date: 08/20/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module-standard-task-based
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: powershell

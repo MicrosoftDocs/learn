@@ -1,3 +1,4 @@
+
 As system administrator at Contoso, you must ensure that any services hosted in Microsoft Azure with IaaS meet the company's stringent security requirements. To properly secure network traffic, you can set up NSGs.
 
 ## Network security groups

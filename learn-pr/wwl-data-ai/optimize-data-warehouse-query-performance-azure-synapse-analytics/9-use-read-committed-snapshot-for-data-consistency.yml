@@ -2,8 +2,6 @@
 uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.use-read-committed-snapshot-for-data-consistency
 title: Use read committed snapshot for data consistency
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use read committed snapshot for data consistency
   description: "Use read committed snapshot for data consistency"
   ms.date: 08/05/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/9-use-read-committed-snapshot-for-data-consistency.md)]
+  [!include[](includes/9-use-read-committed-snapshot-for-data-consistency.md)]

@@ -50,6 +50,6 @@ Consider using this type of alert when you need to add a level of tolerance to t
 
 As you can see, metric measurements greatly reduce the volume of alerts that are produced. Still, give careful consideration when you're setting the threshold parameters to avoid missing critical alerts.
 
-## Stateless nature of log search alerts
+## Log search alerts and state
 
-One of the primary considerations when you're evaluating the use of log search alerts is that they're stateless (stateful log search alerts are [currently in preview](/azure/azure-monitor/alerts/alerts-types#log-alerts)). A stateless log search alert generates new alerts every time the rule criteria are triggered, regardless of whether the alert was previously recorded.
+Alerts can be [stateful or stateless](/azure/azure-monitor/alerts/alerts-types#log-alerts). Stateless alerts fire each time the condition is met, even if fired previously. Stateful alerts fire when the rule conditions are met, and will not fire again or trigger any more actions until the conditions are resolved.

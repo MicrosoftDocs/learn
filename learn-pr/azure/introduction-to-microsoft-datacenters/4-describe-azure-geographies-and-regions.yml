@@ -2,13 +2,11 @@
 uid: learn.introduction-to-microsoft-datacenters.describe-azure-geographies-and-regions
 title: Describe Azure geographies and regions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Azure geographies and regions
   description: Describes the Microsoft Cloud hierarchy consisting of Azure geographies and regions. 
   ms.date: 07/17/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: kiranchandratrey
+  ms.author: elenasim
   ms.topic: unit
 durationInMinutes: 4
 content: |
@@ -30,4 +28,3 @@ quiz:
     - content: "A geography always includes more than one region."
       isCorrect: false
       explanation: "Incorrect. In some cases, a geography contains a single region."
-

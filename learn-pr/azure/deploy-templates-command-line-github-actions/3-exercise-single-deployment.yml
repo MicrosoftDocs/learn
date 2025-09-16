@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-templates-command-line-github-actions.3-exercise-single-deployment
 title: Exercise - Deploy your ARM templates
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy your Azure Manager Resource templates
   description: Walk-through of deploying your ARM templates
   ms.date: 03/13/2024
@@ -20,4 +18,4 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-single-deployment.md)]
-
+

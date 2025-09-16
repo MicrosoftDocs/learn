@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.tracing-generative-ai-app.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge Check
+  description: Test your knowledge.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 08/06/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What is the main difference between monitoring and tracing in generative AI applications?"
+    choices:
+    - content: "Monitoring alerts you when something goes wrong, while tracing helps you understand what happened and where it happened."
+      isCorrect: true
+      explanation: "Correct. Monitoring tells you that issues exist, but tracing provides the detailed flow of execution to help you understand the root cause."
+    - content: "Monitoring is for production environments, while tracing is only for development."
+      isCorrect: false
+      explanation: "Incorrect. Both monitoring and tracing are valuable throughout the entire lifecycle: development, deployment, and post-deployment."
+    - content: "Monitoring tracks performance metrics, while tracing only captures errors."
+      isCorrect: false
+      explanation: "Incorrect. Tracing captures both successful operations and errors, providing insights into the complete flow of execution."
+  - content: "In OpenTelemetry tracing, what represents a specific unit of work or operation within a trace?"
+    choices:
+    - content: "Attribute"
+      isCorrect: false
+      explanation: "Incorrect. Attributes are metadata associated with spans that provide extra details about operations."
+    - content: "Span"
+      isCorrect: true
+      explanation: "Correct. A span represents a single operation within a trace, such as an HTTP request or model inference call, and includes timing information."
+    - content: "Trace"
+      isCorrect: false
+      explanation: "Incorrect. A trace represents the entire journey of a request from start to finish and encompasses multiple spans."
+  - content: "Which Python packages are required to implement tracing in Azure AI Foundry applications?"
+    choices:
+    - content: "`azure-ai-projects`, `azure-monitor-opentelemetry`, and `opentelemetry-instrumentation-openai-v2`"
+      isCorrect: true
+      explanation: "Correct. These packages provide project connectivity, Azure Application Insights integration, and automatic OpenAI SDK tracing."
+    - content: "`azure-ai-inference`, `azure-monitor`, and `opentelemetry-sdk`"
+      isCorrect: false
+      explanation: "Incorrect. While these packages are valid Azure packages, they don't provide the specific tracing capabilities needed for AI applications."
+    - content: "`azure-openai`, `azure-monitor-opentelemetry`, and `opentelemetry-api`"
+      isCorrect: false
+      explanation: "Incorrect. This combination lacks the `azure-ai-projects` package needed for Azure AI Foundry integration."

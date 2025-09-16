@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.implement-containerized-windows-workloads
 title: Implement containerized Windows workloads
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement containerized Windows workloads
   description: "Implement containerized Windows workloads"
   ms.date: 06/09/2021
@@ -27,4 +25,4 @@ quiz:
       explanation: "Incorrect. This functionality does not depend in any way on CredSSP being enabled."
     - content: "Join the Kubernetes cluster Windows Server nodes to the AD DS domain."
       isCorrect: true
-      explanation: "Correct. To provide the ability for pods to use gMSA for authentication, you must first join to an AD DS domain all of the Windows Server-based Kubernetes worker nodes that will host these pods."
+      explanation: "Correct. To provide the ability for pods to use gMSA for authentication, you must first join to an AD DS domain all of the Windows Server-based Kubernetes worker nodes that will host these pods."

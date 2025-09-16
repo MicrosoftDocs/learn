@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.create-your-first-app-with-azure-maps.exercise-create-your-route-finding-app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   description: Using HTML and JavaScript, build an app to find the best cross-country routes across the USA. 
   ms.date: 08/13/2024
   author: PeterTurcan
@@ -14,4 +12,4 @@ title: Exercise - create your route finding app
 durationInMinutes: 12
 content: |
   [!include[](includes/4-exercise-create-your-route-finding-app.md)]
-
+

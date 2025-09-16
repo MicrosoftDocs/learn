@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.create-personalized-savings-plan.developing-practical-saving-skills
+title: Developing practical saving skills
+metadata:
+  title: Developing Practical Saving Skills
+  description: This content is a part of the Create a personalized savings plan to work toward a financial goal.
+  ms.date: 04/02/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-developing-practical-saving-skills.md)]

@@ -1,22 +1,21 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.delegates-events-exceptions
 metadata:
-  title: Delegates events exceptions
-  description: This lesson is on the use of delegates and events.
-  ms.date: 01/29/2024
+  title: Implement Delegates and Events
+  description: Learn how to implement late binding using delegates, how to notify other classes or objects when something of interest occurs using events, and how to manage event publishers and subscribers in a C# application.
+  ms.date: 04/25/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: learning-path
-title: Delegates events exceptions
+title: Implement delegates and events
 prerequisites: |
-  - Installation of Visual Studio Code that's configured for C# application development, including C# Dev Kit.
-  - Experience with the VS Code editor.
-  - Ability to develop C# console applications that implement business logic using loops, if statements, properties, and methods.
-  - Experience with basic C# syntax rules.
+  -   An installation of Visual Studio Code with the C# Dev Kit extension installed.
+  -   The ability to develop object-oriented programs in C# that implement classes, interfaces, class inheritance, and polymorphic behavior.
+  -   The ability to manage collections, structs, records, generics, dates and times, and anonymous types.
+  -   A basic understanding of file IO, JSON serialization, and asynchronous programming.
 summary: |
-  In this module you learned about delegates and event handlers, and how they're used. You learned about what are events and delegates and how to implement event handler stub methods.
+  Learn how to implement late binding using delegates, how to notify other classes or objects when something of interest occurs using events, and how to manage event publishers and subscribers in a C# application.
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
 levels:
 - beginner
 roles:
@@ -27,7 +26,11 @@ roles:
 products:
 - dotnet
 - vs-code
+subjects:
+- app-development
+- custom-app-development
 modules:
-- learn.wwl.guided-project-implement-events
+- learn.wwl.get-started-delegates
+- learn.wwl.create-manage-events
 trophy:
   uid: learn.wwl.delegates-events-exceptions.trophy

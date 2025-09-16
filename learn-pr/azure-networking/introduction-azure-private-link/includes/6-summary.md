@@ -16,4 +16,4 @@ Here are some links to more information about Private Link:
 - [Azure Private Link pricing](https://azure.microsoft.com/pricing/details/private-link?azure-portal=true)
 - [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=private-link&regions=all)
 - [Azure updates](https://azure.microsoft.com/updates/?product=private-link)
-- [SLA for Azure Private Link](https://azure.microsoft.com/support/legal/sla/private-link/v1_0/)
+- [Service Level Agreements (SLA) for Online Services (Search on Private Link)](https://azure.microsoft.com/support/legal/sla/)

@@ -34,14 +34,8 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 ## Learn more with self-paced training
 
-- Secure [data at rest on Azure](/training/modules/secure-data-at-rest/).
-
 - Work with [Azure Cosmos DB](/training/modules/work-with-cosmos-db/).
 
 - Explore [Azure database and analytics services](/training/modules/azure-database-fundamentals/).
 
 - Explore [relational database services in Azure](/training/modules/explore-provision-deploy-relational-database-offerings-azure/).
-
-## Learn more with optional hands-on exercises
-
-- Create and query a [SQL database in Azure (sandbox)](/training/modules/azure-database-fundamentals/exercise-create-sql-database).

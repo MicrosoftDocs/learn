@@ -12,7 +12,7 @@ To improve performance and reduce cost, you've been asked to add a content deliv
 
 :::image type="content" source="../media/1-architecture-diagram.png" alt-text="Architecture diagram that shows two variants: one with traffic flowing from the internet to the app through a CDN, and another without a CDN." border="false" :::
 
-## What will we be doing?
+## What will we learn?
 
 In this module, you'll create a set of Bicep modules to deploy your website and CDN. Then, you'll create a template that uses those modules together.
 

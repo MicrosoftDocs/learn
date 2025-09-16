@@ -5,6 +5,91 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.analyze-logs-with-kql.badge
+  type: badge
+  title: Guided project - Analyze logs in Azure Monitor with KQL
+  summary: Write log queries to find answers to operational and business questions. Use Kusto Query Language (KQL) to extract insights from logs in Azure Monitor.
+  iconUrl: /training/achievements/analyze-logs-with-kql.svg
+- uid: learn.azure.explore-fundamentals-kql.badge
+  type: badge
+  title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)
+  summary: Learn about the basics of Kusto Query Language (KQL), and the various Microsoft products that use it.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.gain-insights-data-kql.badge
+  type: badge
+  title: Gain insights from your data by using Kusto Query Language
+  summary: Write advanced queries in Kusto Query Language to help you gain insights from your data. 
+  iconUrl: /training/achievements/gain-insights-in-your-data-using-kusto-query-language.svg
+- uid: learn.azure.characterize-dataset-azure-data-explorer.badge
+  type: badge
+  title: Characterize an unfamiliar dataset with Azure Data Explorer
+  summary: Learn how to characterize an unfamiliar dataset using Azure Data Explorer. 
+  iconUrl: /training/achievements/azure-data-explore-web.svg
+- uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.badge
+  type: badge
+  title: Implement high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance
+  summary: In this module, you'll learn to describe high-availability and disaster-recovery options for Azure Arc-enabled SQL Managed Instance.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.intro-to-arc-enabled-data-services.badge
+  type: badge
+  title: Introduction to Azure Arc-enabled data services
+  summary: In this module, you learn the fundamentals of hybrid computing and Azure Arc.
+  iconUrl: /training/achievements/intro-to-arc-enabled-data-services.svg
+- uid: learn.implement-message-workflows-with-service-bus.badge
+  type: badge
+  title: Implement message-based communication workflows with Azure Service Bus
+  summary: Write C# code in a custom application that sends and receives messages using Azure Service Bus topics and queues.
+  iconUrl: /training/achievements/implement-message-workflows-with-service-bus.svg
+- uid: learn.intro-to-azure-data-explorer.badge
+  type: badge
+  title: Introduction to Azure Data Explorer
+  summary: Learn to describe the ingestion, query, visualization, and data management features that Azure Data Explorer provides to help you make sense of the data flowing into your business.
+  iconUrl: /training/achievements/intro-to-azure-data-explorer.svg
+- uid: learn.azure.intro-to-azure-monitor.badge
+  type: badge
+  title: Introduction to Azure Monitor
+  summary: Learn how to use Azure Monitor to provide insights into your Azure resource performance and operations.
+  iconUrl: /training/achievements/intro-to-azure-monitor.svg
+- uid: learn.visualize-data-workbooks.badge
+  type: badge
+  title: Visualize data combined from multiple data sources by using Azure Monitor Workbooks
+  summary: Use Azure Workbooks to query data from multiple data sources and use visualizations such as graphs, charts, and grids to build visual reports for data analysis and reporting.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure-security.configure-security-policies-to-manage-data.badge
+  type: badge
+  title: Configure security policies to manage data
+  summary: Learn how to configure security policies to manage data. 
+  iconUrl: /training/achievements/configure-security-policies-to-manage-data.svg
+- uid: learn.sql-server-2022-performance-enhancements.badge
+  type: badge
+  title: Understand the built-in query intelligence enhancements of SQL Server 2022
+  summary: Learn about and use the Intelligent Query Processing feature enhancements in SQL Server 2022.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.secure-your-azure-sql-database.badge
+  type: badge
+  title: Secure your Azure SQL Database
+  summary: Secure an Azure SQL database to keep the information safe and diagnose potential security concerns as they happen.
+  iconUrl: /training/achievements/secure-your-azure-sql-database.svg
+- uid: learn.react-to-state-changes-using-event-grid.badge
+  type: badge
+  title: React to state changes in your Azure services by using Event Grid
+  summary: Build a serverless application architecture, automate your operations, and integrate applications by handling Azure events with Event Grid.
+  iconUrl: /training/achievements/react-to-state-changes-using-event-grid.svg
+- uid: learn.azure-sql-case-studies.badge
+  type: badge
+  title: Putting it all together with Azure SQL
+  summary: In this learning path, you've deployed and configured a secure, performant, and highly available solution by using Azure SQL. There are many elements in a single solution. In this module, you'll learn how to take the business scenario and determine the best resources and processes to satisfy requirements while considering the constraints within the scenario. You'll also learn what else you should consider with Azure SQL and opportunities in the cloud.
+  iconUrl: /training/achievements/azure-sql-case-studies.svg
+- uid: learn.multi-table-queries-with-kusto-query-language.badge
+  type: badge
+  title: Write multi-table queries by using Kusto Query Language
+  summary: Write advanced queries in Kusto Query Language and gain deeper insights by combining data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, and `materialize`, and the new aggregation functions `arg_min` and `arg_max`. Also, learn how to communicate these results visually in charts.
+  iconUrl: /training/achievements/multi-table-queries-with-kusto-query-language.svg
+- uid: learn.write-first-query-kusto-query-language.badge
+  type: badge
+  title: Write your first query with Kusto Query Language
+  summary: Learn how to write simple queries in Kusto Query Language (KQL) by using the operators take, project, count, where, and sort. 
+  iconUrl: /training/achievements/write-first-query-kusto-query-language.svg 
 - uid: learn.send-crop-weather-alerts.badge
   type: badge
   title: Use Twilio and Azure Maps to receive text message weather alerts 
@@ -25,6 +110,46 @@ achievements:
   title: Make your virtual machines highly available
   summary: Make your virtual machines highly available
   iconUrl: /training/achievements/make-your-virtual-machines-highly-available.svg
+- uid: learn.cloud-adoption-framework-strategy.badge
+  type: badge
+  title: Develop a cloud adoption strategy by using the Cloud Adoption Framework
+  summary: The Cloud Adoption Framework for Azure consists of eight methodologies. This module focuses on the [Strategy methodology](/azure/cloud-adoption-framework/strategy/). It provides guidance about how to assess your existing strategy and identify ways to improve it before you adopt and integrate cloud technologies. The next methodology is the [Plan methodology](/azure/cloud-adoption-framework/plan/), where you create an actionable plan to implement your cloud adoption strategy.
+  iconUrl: /training/achievements/cloud-adoption-framework-strategy.svg
+- uid: learn.azure.cloud-adoption-framework-ready.badge
+  type: badge
+  title: Choose the best Azure landing zone to support your requirements for cloud operations
+  summary: Azure landing zones can accelerate configuration of your cloud environment. This module will help you choose and get started with the best landing zone option for your needs.
+  iconUrl: /training/achievements/cloud-adoption-framework-ready.svg
+- uid: learn.cloud-adoption-framework-migrate.badge
+  type: badge
+  title: Use the Cloud Adoption Framework Migrate methodology to migrate your workload to the cloud
+  summary: Learn how to use the four stages of the Cloud Adoption Framework Migrate methodology to migrate your workload to the cloud.
+  iconUrl: /training/achievements/cloud-adoption-framework-migrate.svg
+- uid: learn.azure.cloud-adoption-framework-govern.badge
+  type: badge
+  title: Address tangible risks with the Govern methodology of the Cloud Adoption Framework for Azure
+  summary: Without proper governance, it can be difficult and laborious to maintain consistent control across a portfolio of workloads. Fortunately, cloud-native tools like Azure Policy provide convenient means to establish those controls. The Govern methodology helps you evaluate and establish corporate policies and disciplines to mitigate tangible risks.
+  iconUrl: /training/achievements/address-risks-caf-govern.svg
+- uid: learn.cloud-adoption-framework-manage.badge
+  type: badge
+  title: Ensure stable operations and optimization across all supported workloads deployed to the cloud
+  summary: As workloads are deployed to the cloud, operations are critical to success. In this learn module, you learn how to deploy an operations baseline to manage workloads in your environment. The module also covers how to enhance the baseline, both for workloads and for platforms.
+  iconUrl: /training/achievements/cloud-adoption-framework-manage.svg
+- uid: learn.innovate-applications-azure-cloud-technologies.badge
+  type: badge
+  title: Innovate applications by using Azure cloud technologies
+  summary: Innovation is a complex subject that encompasses many disciplines. The agility of the public cloud allows to quicker innovation cycles and quicker hypothesis verification. Learn how to use Azure cloud technologies to sustain your organization's innovation requirements.
+  iconUrl: /training/achievements/innovate-applications-azure-cloud-technologies.svg
+- uid: learn.azure.cloud-adoption-framework-security.badge
+  type: badge
+  title: Strengthen cloud security by using the Cloud Adoption Framework
+  summary: Organizations that move to the cloud often find that they need to modernize security practices and tooling to keep up with continuous changes in cloud platforms, business requirements, and security threats. The Cloud Adoption Framework for Azure consists of eight methodologies. This module focuses on the Secure methodology, which provides guidance for the security modernization journey.
+  iconUrl: /training/achievements/cloud-adoption-framework-security.svg
+- uid: learn.cloud-adoption-framework.trophy
+  type: trophy
+  title: Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure
+  summary: Do you need a clear path forward for your cloud journey? This learning path includes best practice guidance to help you create a cloud strategy, define a cloud adoption plan, prepare your cloud environment with proper governance, and implement cloud operations in alignment with your organizational needs. Cloud architects and IT professionals will learn and engage with the proven best practices, tools, and documentation in the Cloud Adoption Framework for Azure to build the technical knowledge needed to help your organization successfully adopt the cloud and meet business goals.
+  iconUrl: /training/achievements/cloud-adoption-framework.svg
 - uid: learn.scale-and-size-virtual-machines.badge
   type: badge
   title: Scale and size Virtual Machines in Azure
@@ -50,6 +175,16 @@ achievements:
   title: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
   summary: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
   iconUrl: /training/achievements/iot/manage-monitor-devices-iot-hub-azure-monitor.svg
+- uid: learn.kusto-query-language.trophy.trophy
+  type: trophy
+  title: Data analysis with Kusto Query Language
+  summary: In this learning path, students learn how to analyze data in various environments using the Kusto Query Language.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.analyze-monitoring-data-with-kql.trophy
+  type: trophy
+  title: Analyze monitoring data with Kusto Query Language
+  summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
+  iconUrl: /training/achievements/generic-trophy.svg
 - uid: learn.wwl.explore-iot-hub-monitoring.badge
   type: badge
   title: Guided project - Explore Azure IoT Hub monitoring
@@ -777,6 +912,11 @@ achievements:
   title: Use containers for your Language Understanding Intelligent Service (LUIS) Apps
   summary: Use containers for your Language Understanding Intelligent Service (LUIS) Apps
   iconUrl: /training/achievements/use-containers-for-your-language-understanding-intelligent-service-luis-apps.svg
+- uid: learn.wwl.classify-images-custom-vision.badge
+  type: badge 
+  title: Classify images with Azure AI Custom Vision
+  summary: Explore Azure AI Custom Vision's classification capabilities
+  iconUrl: /training/achievements/classify-images-custom-vision.svg
 - uid: learn.wwl.process-classify-images-with-azure-cognitive-vision-services.trophy
   type: trophy
   title: Process and classify images with the Azure cognitive vision services
@@ -5565,6 +5705,11 @@ achievements:
   title: Use tools to optimize Power BI performance
   summary: Use tools to develop, manage, and optimize Power BI data model and DAX query performance.
   iconUrl: /training/achievements/use-tools-optimize-power-bi-performance.svg
+- uid: learn.introduction-to-azure-purview.badge
+  type: badge
+  title: Introduction to Microsoft Purview
+  summary: In this module, you'll evaluate whether Microsoft Purview is the right choice for your data discovery and governance needs.
+  iconUrl: /training/achievements/introduction-to-azure-purview.svg
 - uid: learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.badge
   type: badge
   title: Improve the developer experience of an API with Swagger documentation
@@ -5620,3 +5765,1203 @@ achievements:
   title: Guided project langstons ant
   summary: This module will guide you through the steps required to develop your own Langston's Ant project. Your code will use interfaces to represent the functions the ants can perform.
   iconUrl: /training/achievements/guided-project-langstons-ant.svg
+- uid: learn.permissions-management.intro-to-entra-permissions-management.badge
+  type: badge
+  title: Introduction to Microsoft Entra Permissions Management 
+  summary: Microsoft Entra Permissions Management gives security operation administrators insight into over-privileged workload and user identities, actions, and resources across multicloud infrastructures.
+  iconUrl: /training/achievements/1-intro-to-entra-permissions-management.svg
+- uid: learn.permissions-management.explore-features-of-permissions-management.badge
+  type: badge
+  title: Explore the many features of Microsoft Entra Permissions Management
+  summary: While diving deeper into the features of Microsoft Entra Permissions Management, we use the framework of discover, remediate, monitor as a guide to help walkthrough how the Permissions Management features set can benefit your organization.
+  iconUrl: /training/achievements/2-explore-features-of-permissions-management.svg
+- uid: learn.cosmos-db-java-app.badge
+  type: badge
+  title: Build a Java app with cloud-scale NoSQL Cosmos DB
+  summary: Learn how to build a Java-language database app to store and query data in Azure Cosmos DB.
+  iconUrl: /training/achievements/cosmos-db-java-app.svg
+- uid: learn.azure-sql-high-availability.badge
+  type: badge
+  title: Deploy highly available solutions by using Azure SQL
+  summary: Whatever SLA, RTO, and RPO your business requires, Azure SQL has the options and built-in capabilities to meet that availability. In this module, you'll learn how to translate your knowledge of backup and restore, failover cluster instances, and Always On availability groups to the options for business continuity in Azure SQL. You'll also peek under the hood at the architectures and how they affect availability.
+  iconUrl: /training/achievements/azure-sql-high-availability.svg
+- uid: learn.azure-sql-performance.badge
+  type: badge
+  title: Deliver consistent performance with Azure SQL
+  summary: Azure SQL has the capabilities and tools to allow you to deliver consistent performance for your application. In this module, you will learn key aspects of configuration, monitoring, and intelligent performance for Azure SQL.
+  iconUrl: /training/achievements/azure-sql-performance.svg
+- uid: learn.azure-sql-secure-data.badge
+  type: badge
+  title: Secure your data with Azure SQL
+  summary: Ensuring the security and compliance of data is always a top priority. In this module, you learn how to use Azure SQL to secure your data, configure logins and users, use tools and techniques for monitoring security, ensure that your data meets industry and regulatory compliance standards, and take advantage of the extra benefits and intelligence that Azure provides. We also cover some of the networking considerations for securing SQL.
+  iconUrl: /training/achievements/azure-sql-secure-data.svg
+- uid: learn.wwl.custom-model-ai-vision-image-classification.badge
+  type: badge
+  title: Image classification with custom Azure AI Vision models
+  summary: Classify images by training a custom model with Azure AI Vision.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.governance-security.badge
+  type: badge
+  title: Plan, implement, and manage governance for security
+  summary: This module focuses on enabling administrators to effectively plan, implement, and manage security governance in Azure, ensuring compliance with organizational policies and best practices.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-authentication-microsoft-entra-id.badge
+  type: badge
+  title: Manage authentication by using Microsoft Entra ID
+  summary: This module is designed to provide administrators with the knowledge and skills needed to manage authentication effectively using Microsoft Entra ID, ensuring secure access to resources and enhancing user experience.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-authorization-microsoft-entra-id.badge
+  type: badge
+  title: Manage authorization by using Microsoft Entra ID
+  summary: This module is designed to provide administrators with the knowledge and skills required to effectively manage authorization using Microsoft Entra ID, ensuring that users have the appropriate access to resources and data.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-identities-microsoft-entra-id.badge
+  type: badge
+  title: Manage identities in Microsoft Entra ID
+  summary: This module focuses on effectively managing identities and enhancing security in Microsoft Entra ID, ensuring that users, groups, and external identities are protected against security threats and unauthorized access.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-identity-access-new.trophy
+  type: trophy
+  title: 'AZ-500: Manage identity and access'
+  summary: Master identity and access management in Microsoft Entra ID, securing users, groups, and external identities, implementing authentication and authorization controls, and managing application access and security.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.manage-security-operations-new.trophy
+  type: trophy
+  title: 'AZ-500: Manage security operations'
+  summary: Master the art of managing security operations in Azure, from governance and policy creation to infrastructure security, key management, security posture, threat protection, and advanced security monitoring and automation.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.az-204-integrate-caching-content-delivery-within-solutions.trophy
+  type: trophy
+  title: 'AZ-204: Implement caching for solutions'
+  summary: Learn how to improve the performance and scalability of your applications by integrating Azure Cache for Redis and Azure Content Delivery Network in to your solution.
+  iconUrl: /training/achievements/integrate-content-delivery.svg
+- uid: learn.wwl.develop-for-azure-cache-for-redis.badge
+  type: badge
+  title: Develop for Azure Cache for Redis
+  summary: Learn how to configure Azure Cache for Redis, interact with the cache, and connect an application to Azure Cache for Redis by using .NET.
+  iconUrl: /training/achievements/azure-cache-redis.svg
+- uid: learn.wwl.develop-for-storage-cdns.badge
+  type: badge
+  title: Develop for storage on CDNs
+  summary: Learn how the Azure Content Delivery Network (CDN) functions, how to control cache behavior, and how to perform actions by using .NET.
+  iconUrl: /training/achievements/cdn-develop-storage.svg
+- uid: learn.backup-restore-azure-sql.badge
+  type: badge
+  title: Back up and restore your Azure SQL database
+  summary: Protect the data in your Azure SQL database and recover from data loss or corruption with backup and restore.
+  iconUrl: /training/achievements/backup-restore-azure-sql.svg
+- uid: learn.azure.create-foundation-modern-apps.badge
+  type: badge
+  title: Architect modern applications using Azure SQL Database
+  summary: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
+  iconUrl: /training/achievements/create-foundation-modern-apps.svg
+- uid: learn-sqlserver.use-sql-server-query-tuning-assistant.badge
+  type: badge
+  title: Use the SQL Server Query Tuning Assistant
+  summary: Learn how the Query Tuning Assistant (QTA) works alongside the Query Store to compare query performance statistics and find queries that are regressing due to changing compatibility levels.
+  iconUrl: /training/achievements/sqlserver/using-the-sql-server-query-tuning-assistant.svg
+- uid: learn.azure-sql-replication.badge
+  type: badge
+  title: Data tracking and synchronization with Azure SQL Database
+  summary: "This module introduces you to several data tracking, loading, and streaming tools that you can use to track or synchronize data changes from your Azure SQL Database to other destinations. More specifically, we cover: change data capture (CDC) and change tracking."
+  iconUrl: /training/achievements/learn-azure-sql-replication.svg
+- uid: learn.make-recommendations-ai-personalizer.badge
+  type: badge
+  title: Make recommendations with Azure AI Personalizer
+  summary: Learn how to use Azure AI Personalizer to empower your apps with smarter decision making through improved recommendations.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.apply-prompt-engineering-azure-openai.badge
+  type: badge
+  title: Apply prompt engineering with Azure OpenAI Service
+  summary: Prompt engineering in Azure OpenAI is a technique that involves designing prompts for natural language processing models. This process improves accuracy and relevancy in responses, optimizing the performance of the model.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.build-language-solution-azure-openai.badge
+  type: badge
+  title: Build natural language solutions with Azure OpenAI Service
+  summary: This module provides engineers with the skills to begin building apps that integrate with the Azure OpenAI Service.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.generate-code-azure-openai.badge
+  type: badge
+  title: Generate code with Azure OpenAI Service
+  summary: This module shows engineers how to use the Azure OpenAI Service to generate and improve code.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.cloud-adoption-framework-plan.badge
+  type: badge
+  title: Prepare for cloud adoption with a data-driven plan
+  summary: Adopting the cloud might depend on many moving parts. Starting with a sound plan built by experts creates clarity. Integrating data about your current environment and long-term objectives refines the plan to reflect realistic expectations and assignments.
+  iconUrl: /training/achievements/cloud-adoption-framework-plan.svg
+- uid: learn.azure.create-content-delivery-network-azure-cdn-blob-services.badge
+  type: badge
+  title: Create a Content Delivery Network for your Website with Azure CDN and Blob Services
+  summary: You learned how to publish static web content using an Azure Content Delivery Network (CDN) and Azure Blob Services.
+  iconUrl: /training/achievements/create-cdn-static-resources-blob-storage.svg
+- uid: learn.design-a-hybrid-network-architecture.badge
+  type: badge
+  title: Design a hybrid network architecture on Azure
+  summary: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
+  iconUrl: /training/achievements/design-a-hybrid-network-architecture.svg
+- uid: learn.monitor-authentication-methods.badge
+  type: badge
+  title: Monitor and report on authentication methods used in Microsoft Entra ID
+  summary: This module teaches you how to create a Microsoft Entra workbook that helps you to create a report of the authentication methods used in your tenant.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.student-evangelism.practice-active-listening.badge
+  type: badge
+  title: Work with others by practicing active listening
+  summary: Learn how to work with others by practicing active listening.
+  iconUrl: /training/achievements/tech-resilience/practice-active-listening.svg
+- uid: learn.student-evangelism.communicate-strategically-mirror-coach.badge
+  type: badge
+  title: Communicate with others strategically through mirroring and coaching
+  summary: Learn how to communicate with others strategically through mirroring and coaching.
+  iconUrl: /training/achievements/tech-resilience/communicate-strategically.svg
+- uid: learn.student-evangelism.self-regulation-work-strategically.badge
+  type: badge
+  title: Use self-regulation to work strategically
+  summary: In this module, you'll learn about using self-regulation to respond effectively to challenges. You'll also use goal-orientation theory to diagnose what motivates you to learn.
+  iconUrl: /training/achievements/tech-resilience/self-regulation.svg
+- uid: learn.student-evangelism.grow-cognitive-flexibility.badge
+  type: badge
+  title: Grow your cognitive flexibility
+  summary: In this module, you'll learn about the importance of cognitive flexibility in the field of technology. You'll learn about the benefits of stepping back and expanding your outlook and using feedback effectively. Finally, you'll learn how to reorient and persist in challenging situations.
+  iconUrl: /training/achievements/tech-resilience/grow-cognitive-flexibility.svg
+- uid: learn.student-evangelism.give-receive-effective-feedback.badge
+  type: badge
+  title: Give and receive effective feedback
+  summary: In this module, you'll learn how to give and receive effective feedback.
+  iconUrl: /training/achievements/tech-resilience/give-receive-feedback.svg
+- uid: learn.student-evangelism.exercise-your-emotional-intelligence.badge
+  type: badge
+  title: Exercise your emotional intelligence
+  summary: Learn how to use your emotional intelligence to help your peers.
+  iconUrl: /training/achievements/tech-resilience/exercise-emotional-intelligence.svg
+- uid: learn.student-evangelism.cultivate-culture-belong-tech.badge
+  type: badge
+  title: Cultivate a culture of belongingness in tech
+  summary: Explore what belonging is, why it matters, and how to recognize it. Learn about historical and current challenges to belonging in tech, and understand what contributes to a climate of belonging, including strategies to build inclusive environments.
+  iconUrl: /training/achievements/tech-resilience/culture-belonging.svg
+- uid: learn.student-evangelism.enhance-self-efficacy.badge
+  type: badge
+  title: Enhance your self-efficacy
+  summary: Develop a mindset that will set you up for success in technology.
+  iconUrl: /training/achievements/tech-resilience/enhance-self-efficacy.svg
+- uid: learn.student-evangelism.tech-resilience.trophy
+  type: trophy
+  title: Build your tech resilience
+  summary: Far too many talented people avoid choosing or actively decide to leave tech because it can be unwelcoming. Our mission? To help build a more inclusive future for the tech industry by fostering confidence, a growth mindset, resilience, and a sense of belonging. Start here to grow more as an individual and team and learn useful strategies that have a strong research base of evidence for improving effectiveness in the workplace. By the end of this series, we hope you have a new way of taking ownership over your problem-solving process, which you can apply when debugging code or when working with a team under a tight deadline.
+  iconUrl: /training/achievements/tech-resilience/path.svg
+- uid: learn.student-evangelism.develop-growth-mindset.badge
+  type: badge
+  title: Develop a growth mindset
+  summary: "In this module, you'll learn to distinguish between two mindsets: a growth mindset and a fixed mindset. When you adopt a growth mindset, you set yourself up for success and are able to take on new challenges."
+  iconUrl: /training/achievements/tech-resilience/develop-growth-mindset.svg
+- uid: learn.career-interview.badge
+  type: badge
+  title: Successful interviewing
+  summary: In this module, you'll learn how to prepare for technical and nontechnical interviews. You'll also get recommendations on how to best carry out an interview.
+  iconUrl: /training/achievements/student-evangelism/career-interview.svg
+- uid: learn.career-growth.badge
+  type: badge
+  title: From intern to full-time position
+  summary: You've landed your first job in tech as an intern, so now what? Learn strategies to growth-hack your career to ensure that you'll get an offer to join the company full-time after the internship is over.
+  iconUrl: /training/achievements/student-evangelism/career-growth.svg
+- uid: learn.start-career-in-tech.trophy
+  type: trophy
+  title: Start in tech as an intern
+  summary: A great way to start in tech is by landing a position as an intern. But how do you that? To get there, you need to consider things like, crafting a resume and passing an intern interview. Once an intern, you want to make sure that position turns into a full-time position in tech.
+  iconUrl: /training/achievements/start-career-in-tech.svg
+- uid: learn.career-get-noticed.badge
+  type: badge
+  title: How to get noticed
+  summary: Getting noticed by prospective employers is the first step toward landing a job in tech. This module offers plenty of helpful tips and strategies.
+  iconUrl: /training/achievements/student-evangelism/career-get-noticed.svg
+- uid: learn.student-evangelism.use-apis-discover-museum-art.badge
+  type: badge
+  title: Explore the art world by using RESTful APIs
+  summary: Learn about how to build a basic API, how to query APIs, and authentication strategies in Python and JavaScript while discovering unique art by using museum APIs.
+  iconUrl: /training/achievements/use-apis-discover-museum-art.svg
+- uid: learn.advocates.create-web-app-with-refreshable-models.badge
+  type: badge
+  title: Build a Web App with Refreshable Machine Learning Models
+  summary: Build a web app powered by machine learning models trained using Custom Vision AI service, and learn how to refresh them with GitHub Actions.
+  iconUrl: /training/achievements/advocates/create-web-app-with-refreshable-models.svg
+- uid: learn.language.react-work-with-components-and-data.badge
+  type: badge
+  title: Working with data and properties in React components
+  summary: The goal of React components is to create reusable blocks of code and UI. To support reusability, you can pass data into components through the use of properties. We will see how to add properties to a component, and work with complex data types such as arrays.
+  iconUrl: /training/achievements/react/react-components-data.svg
+- uid: learn.language.react-states-events.badge
+  type: badge
+  title: React state and events
+  summary: Applications typically involve data that will be changed by user interactions. These changes are often managed through some form of state and events. In this module, we explore the concepts of state and events. We also look at the tools React provides for management.
+  iconUrl: /training/achievements/react/react-state-events.svg
+- uid: learn.react.trophy
+  type: trophy
+  title: Creating your first web apps with React
+  summary: React.js is the most popular front-end JavaScript framework. Through JSX, a combination of HTML and JavaScript, developers are able to create views in a natural fashion. Developers can also create components for reusable blocks across their applications. This learning path will introduce you to React, and the core skills you need as a developer to use this powerful framework.
+  iconUrl: /training/achievements/react/react-path.svg
+- uid: learn.language.react-get-started.badge
+  type: badge
+  title: Get started with React
+  summary: React.js is the most popular front-end JavaScript framework. Developers use JSX, a combination of HTML and JavaScript, to create views in a natural way. Developers can also create components for blocks that can be reused across their applications. This module introduces React and the core skills developers need to use this powerful framework.
+  iconUrl: /training/achievements/react/react-get-started.svg
+- uid: learn.sports-machine-learning.use-mixed-reality-toolkit.badge
+  type: badge
+  title: Create a mixed reality basketball player lineup with the Mixed Reality Toolkit
+  summary: "Use C#, Visual Studio, Unity, and the Mixed Reality Toolkit to create an interactive virtual reality experience compatible with the HoloLens. Inspired by *Space Jam: A New Legacy*, you create an experience for coaches and fans to learn more about the Tune Squad."
+  iconUrl: /training/achievements/student-evangelism/create-mixed-reality-basketball-lineup-mixed-reality-toolkit.svg
+- uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.badge
+  type: badge
+  title: Create a web app that uses data to make decisions on the basketball court
+  summary: "Use JavaScript, Azure, GitHub, and Visual Studio Code to write a web app that helps the Tune Squad coach make data-based decisions on the basketball court, inspired by SPACE JAM: A NEW LEGACY."
+  iconUrl: /training/achievements/student-evangelism/optimize-basketball-player-rest-breaks.svg
+- uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.badge
+  type: badge
+  title: Predict basketball player efficiency ratings by using machine learning and Visual Studio Code
+  summary: "By using anonymized data from real and animated basketball players in the upcoming film *Space Jam: A New Legacy*, create a machine learning model to cleanse data to be used during games. Also explore bimodal data distributions by using Python in Visual Studio Code."
+  iconUrl: /training/achievements/student-evangelism/predict-basketball-player-efficiency-ratings.svg
+- uid: learn.optimize-basketball-games-with-machine-learning.trophy
+  type: trophy
+  title: "Use basketball stats to optimize game play with Visual Studio Code, inspired by SPACE JAM: A NEW LEGACY"
+  summary: "Inspired by the new film _Space Jam: A New Legacy_, this learning path shows basketball fans how an understanding of data science and coding can support their passions, create opportunities, and even open doors to possible careers. Develop skills in Visual Studio Code, Azure, GitHub, JavaScript, and Python, to gain insights into how individual moments throughout a player's history can lead to a critical game decision in the finals."
+  iconUrl: /training/achievements/student-evangelism/optimize-basketball-games-with-machine-learning.svg
+- uid: learn.sports-machine-learning.mixed-reality-for-sports-fans.badge
+  type: badge
+  title: Prepare to bring the basketball court into a Mixed Reality space
+  summary: "Discover the fundamentals of Mixed Reality and prepare the resources you need to create an interactive experience for basketball fans and coaches inspired by *Space Jam: A New Legacy*."
+  iconUrl: /training/achievements/mixed-reality-for-sports-fans.svg
+- uid: learn.machine-learning.predictive-maintenance-model-builder.badge
+  type: badge
+  title: Train a machine learning model for predictive maintenance by using ML.NET Model Builder
+  summary: Train a machine learning model in Visual Studio with ML.NET by using Model Builder, which uses sensor data to detect whether a manufacturing device is broken.
+  iconUrl: /training/achievements/machine-learning/predictive-maintenance-model-builder.svg
+- uid: learn.machine-learning.introduction-clustering-models.badge
+  type: badge
+  title: Introduction to clustering models by using R and tidymodels
+  summary: Get an introduction to clustering models. Clustering is the process of grouping objects with similar objects.
+  iconUrl: /training/achievements/machine-learning/introduction-clustering-models.svg
+- uid: learn.machine-learning.introduction-regression-models.badge
+  type: badge
+  title: Introduction to regression models by using R and tidymodels
+  summary: Get an introduction to regression models. In machine learning, the goal of regression is to create a model that can predict a numeric, quantifiable value.
+  iconUrl: /training/achievements/machine-learning/introduction-regression-models.svg
+- uid: learn.machine-learning.introduction-classification-models.badge
+  type: badge
+  title: Introduction to classification models by using R and tidymodels
+  summary: Classification is a form of machine learning in which you train a classification model to predict which category an item belongs to. In this module, you learn how to use the R programming language and tidymodels framework to train classification models.
+  iconUrl: /training/achievements/machine-learning/introduction-classification-models.svg
+- uid: learn.machine-learning.machine-learning-with-r.trophy
+  type: trophy
+  title: Create machine learning models with R and tidymodels
+  summary: Learn how to explore and analyze data by using R. Get an introduction to regression models, classification models, and clustering models by using tidymodels and R.
+  iconUrl: /training/achievements/machine-learning/machine-learning-with-r.svg
+- uid: learn.machine-learning.explore-analyze-data-r.badge
+  type: badge
+  title: Explore and analyze data with R
+  summary: In this module, you explore, analyze, and visualize data by using the R programming language.
+  iconUrl: /training/achievements/machine-learning/explore-analyze-data-r.svg
+- uid: learn.advocates.cv-classify-bird-species.badge
+  type: badge
+  title: Classify endangered bird species with Custom Vision
+  summary: As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitat. Your work often involves surveying, recording, and reporting on bird activity. You want to build a machine learning model that will identify a bird in an image by species, to help with gathering data. In this module, you use Azure AI Custom Vision to create a model to identify species of birds!
+  iconUrl: /training/achievements/advocates/cv-classify-bird-species.svg
+- uid: learn.orleans-product-introduction.badge
+  type: badge
+  title: Introduction to Orleans
+  summary: Learn what Orleans is and when you might want to use it.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.intro-to-azure-cache-for-redis.badge
+  type: badge
+  title: Introduction to Azure Cache for Redis
+  summary: Microsoft Azure Cache for Redis brings a critical low-latency and high-throughput data storage solution to modern applications. This solution can help improve the performance and scalability of your apps that rely heavily on backend data stores.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.secure-aspnet-core-identity.badge
+  type: badge
+  title: Secure a .NET web app with the ASP.NET Core Identity framework
+  summary: Add authentication and authorization to a web app using ASP.NET Core Identity, ASP.NET Core's native security framework.
+  iconUrl: /training/achievements/aspnetcore/secure-aspnet-core-identity.svg
+- uid: learn.aspnet-core-signalr-polling-fix.badge
+  type: badge
+  title: Replace client-side polling with ASP.NET Core SignalR
+  summary: In this module, you use ASP.NET Core SignalR to replace client-side polling functionality in an existing web app.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.dotnet-debug-visual-studio-app-service.badge
+  type: badge
+  title: Remotely debug ASP.NET Core apps hosted on Azure App Service using Visual Studio
+  summary: Learn how to remotely debug your ASP.NET Core apps on Azure App Service directly using Visual Studio 2022.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.persist-data-ef-core.badge
+  type: badge
+  title: Persist and retrieve relational data by using Entity Framework Core
+  summary: Query and manage relational data in an Entity Framework Core (EF Core) app by using an object-relational mapper (ORM).
+  iconUrl: /training/achievements/aspnetcore/persist-data-ef-core.svg
+- uid: learn.aspnet-core-signalr.badge
+  type: badge
+  title: Introduction to ASP.NET Core SignalR
+  summary: In this introductory module, you'll learn what ASP.NET Core SignalR is, how it works, and when to use it.
+  iconUrl: /training/achievements/aspnetcore/aspnet-core-signalr.svg
+- uid: learn.azure.create-your-first-text-to-speech-app.badge
+  type: badge
+  title: Create your first Azure AI services text to speech application
+  summary: Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure's text to speech features. In this module, you'll learn how to use Azure AI services to create a text to speech application that uses both plain text and Speech Synthesis Markup Language (SSML) to create audio files.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.create-your-first-speech-to-text-app.badge
+  type: badge
+  title: Create your first Azure AI speech to text application
+  summary: Microsoft's Azure AI services provide developers with APIs to create applications that take advantage of Azure's speech to text features. In this module, you'll learn how to use Azure AI services to create a speech to text application that converts a sample WAVE file into text.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.orleans-build-first-app.badge
+  type: badge
+  title: Build your first Orleans app with ASP.NET Core 8.0
+  summary: Learn how to build cloud-native, distributed apps with Orleans.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.windows.windows-best-app-framework.badge
+  type: badge
+  title: Choose the best UI framework for a native Windows development project
+  summary: Windows developers have various options for creating applications that run on Windows. This module introduces the native Windows UI frameworks that are available for Windows development. It also provides guidance on how to choose the best framework for your application.
+  iconUrl: /learn/achievements/windows-best-app-framework.svg
+- uid: learn.wwl.detect-analyze-faces.badge
+  type: badge
+  title: Fundamentals of Facial Recognition
+  summary: Face detection and analysis are important capabilities for artificial intelligence (AI) solutions. Azure AI Face service makes it easy integrate these capabilities into your applications.
+  iconUrl: /learn/achievements/detect-analyze-faces.svg
+- uid: learn.wwl.document-intelligence-knowledge-mining.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Document Intelligence and Knowledge Mining'
+  summary: 'Explore two AI workloads: document intelligence and knowledge mining.'
+  iconUrl: /training/achievements/document-intelligence-knowledge-mining.svg
+- uid: learn.wwl.explore-computer-vision-microsoft-azure.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Computer Vision'
+  summary: Computer vision is an area of artificial intelligence (AI) in which software systems are designed to perceive the world visually, through cameras, images, and video. There are multiple specific types of computer vision problem that AI engineers and data scientists can solve using a mix of custom machine learning models and platform-as-a-service (PaaS) solutions - including many AI services in Microsoft Azure.
+  iconUrl: /learn/achievements/explore-computer-vision-microsoft-azure.svg
+- uid: learn.wwl.get-started-with-artificial-intelligence-on-azure.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: AI Overview'
+  summary: Artificial Intelligence (AI) empowers amazing new solutions and experiences; and Microsoft Azure provides easy to use services to help you get started.
+  iconUrl: /learn/achievements/get-started-with-artificial-intelligence-on-azure.svg
+- uid: learn.azure-introduction-to-azure-search.badge
+  type: badge
+  title: Fundamentals of Knowledge Mining and Azure AI Search
+  summary: Use Azure AI Search to make your data searchable.
+  iconUrl: /training/achievements/azure-introduction-to-azure-search.svg
+- uid: learn.wwl.analyze-images-computer-vision.badge
+  type: badge
+  title: Fundamentals of Computer Vision
+  summary: Azure AI Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios.
+  iconUrl: /training/achievements/analyze-images-computer-vision.svg
+- uid: learn.wwl.analyze-receipts-form-recognizer.badge
+  type: badge
+  title: Fundamentals of Azure AI Document Intelligence
+  summary: Document processing is a common task in many business scenarios. Organizations can use Azure AI Document Intelligence to automate data extraction across document types, such as receipts, invoices, and more.
+  iconUrl: /training/achievements/analyze-receipts-form-recognizer.svg
+- uid: learn.wwl.read-text-computer-vision.badge
+  type: badge
+  title: Fundamentals of optical character recognition
+  summary: Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.
+  iconUrl: /training/achievements/read-text-computer-vision.svg
+- uid: learn.azure.introduction-to-azure-api-management.badge
+  type: badge
+  title: Introduction to Azure API Management
+  summary: Learn how Azure API Management can help reduce API complexity in your organization. Determine the types of deployments for which Azure API Management is a good API lifecycle management solution.
+  iconUrl: /training/achievements/introduction-to-azure-api-management.svg
+- uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.badge
+  type: badge
+  title: Accelerate a Spring Boot application with Azure Cache for Redis
+  summary: Learn how to use Azure Cache for Redis to cache business data and HTTP session data in a Java Spring Boot application, then publish the application to the cloud.
+  iconUrl: /training/achievements/accelerate-scale-spring-boot-application-azure-cache-redis.svg
+- uid: learn.intro-generative-ai.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Generative AI'
+  summary: "Generative AI is a form of artificial intelligence in which models are trained to generate new original content based on natural language input. In other words, you can describe a desired output in normal everyday language, and the model can respond by creating appropriate text, image, code, and more. \n\nTake this learning path to get started with generative AI. In it, you'll learn how to:\n- Understand core concepts of generative AI\n- Prepare for an AI development project\n- Describe considerations and practices for responsible generative AI\n- Build an AI agent using Azure AI Foundry"
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.advocates.azure-functions-and-signalr.badge
+  type: trophy
+  title: Enable real-time updates in a web application using Azure Functions and SignalR Service
+  summary: Change a JavaScript web app update mechanism from polling to push-based architecture with SignalR Service, Azure Cosmos DB, and Azure Functions.
+  iconUrl: /training/achievements/advocates/enable-automatic-updates-in-a-web-app-using-azure-functions-and-signalr.svg
+- uid: learn.azure.publish-static-web-app-authentication.badge
+  type: trophy
+  title: Authenticate users with Azure Static Web Apps
+  summary: Publish an Angular, React, Svelte, or Vue JavaScript app with API and authentication using Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
+  iconUrl: /training/achievements/publish-static-web-app-authentication.svg
+- uid: learn.app-service-autoscale-rules.badge
+  type: trophy
+  title: Dynamically meet changing web app performance requirements with autoscale rules
+  summary: Respond to periods of high activity by incrementally adding resources, and then removing these resources when activity drops, to reduce costs.
+  iconUrl: /training/achievements/app-service-autoscale-rules.svg
+- uid: learn.wwl.bring-ai-to-business-users-your-organization.trophy
+  type: trophy
+  title: Bring AI to business users in your organization
+  summary: To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
+  iconUrl: /training/achievements/bring-ai-to-business-users-your-organization.svg
+- uid: learn.wwl.introduction-ai-for-business-users.trophy
+  type: trophy
+  title: Introduction to AI for business users
+  summary: To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
+  iconUrl: /training/achievements/introduction-ai-for-business-users.svg
+- uid: learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.badge
+  type: badge
+  title: Investigate threats with Content search in Microsoft Purview
+  summary: This module examines how to search for content in the Microsoft Purview portal using Content Search functionality, including how to view and export the search results, and configure search permissions filtering.
+  iconUrl: /training/achievements/m365-content-compliance.svg
+- uid: learn.azdo.evolve-your-devops-practices.trophy
+  type: trophy
+  title: Get started with Azure DevOps
+  summary: DevOps is the union of people, process, and products to enable continuous delivery of value to your end users. Azure DevOps is a set of services that gives you the tools you need to do just that. With Azure DevOps, you can build, test, and deploy any application, either to the cloud or on premises. DevOps practices that enable transparency, cooperation, continuous delivery and continuous deployment become embedded in your software development lifecycle.
+  iconUrl: /training/achievements/azure-devops/evolve-your-devops-practices.svg
+- uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.badge
+  type: badge
+  title: Create and implement application allowlists with adaptive application control
+  summary: You're able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs.
+  iconUrl: /training/achievements/create-and-implement-application-allowlists-with-adaptive-application-control.svg
+- uid: learn.azdo.choose-an-agile-approach.badge
+  type: badge
+  title: Choose an Agile approach to software development
+  summary: Learn to foster the DevOps values of transparency and team cooperation with Azure Boards.
+  iconUrl: /training/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
+- uid: learn.azdo.manage-delivery-plans.badge
+  type: badge
+  title: Manage Agile software delivery plans across teams
+  summary: Learn how to optimize delivery efficiency by improving work plan visibility across teams.
+  iconUrl: /training/achievements/azure-devops/manage-agile-software-delivery-plans-across-teams.svg
+- uid: learn.get-started-with-devops.badge
+  type: badge
+  title: Introduction to Azure DevOps
+  summary: Explore what DevOps is (and isn't) and learn how to get started with Azure DevOps.
+  iconUrl: /training/achievements/azure-devops/get-started-with-devops.svg
+- uid: learn.azdo.assess-your-development-process.badge
+  type: badge
+  title: Assess your existing software development process
+  summary: Use a value stream map to help you examine your existing processes and technologies.
+  iconUrl: /training/achievements/azure-devops/assess-your-software-development-process.svg
+- uid: learn.wwl.analyze-text-with-text-analytics-service.badge
+  type: badge
+  title: Fundamentals of Text Analysis with the Language Service
+  summary: Explore Azure AI Language's natural language processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
+  iconUrl: /learn/achievements/analyze-text-with-text-analytics-service.svg
+- uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.badge
+  type: badge
+  title: Fundamentals of question answering with the Language Service
+  summary: Create a custom question answering knowledge base with Azure AI Language.
+  iconUrl: /learn/achievements/build-faq-chatbot-qna-maker-azure-bot-service.svg
+- uid: learn.wwl.create-language-model-with-luis.badge
+  type: badge
+  title: Fundamentals of conversational language understanding
+  summary: In this module, we introduce you to conversational language understanding, and show how to create applications that understand language with Azure AI Language.
+  iconUrl: /training/achievements/create-publish-luis-model.svg
+- uid: learn.wwl.explore-natural-language-processing.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Natural Language Processing'
+  summary: Natural language processing supports applications that can see, hear, speak with, and understand users. Using text analytics, translation, and language understanding services, Microsoft Azure makes it easy to build applications that support natural language.
+  iconUrl: /learn/achievements/explore-natural-language-processing.svg
+- uid: learn.wwl.fundamentals-azure-ai-services.badge
+  type: badge
+  title: Fundamentals of Azure AI services
+  summary: In this module, you learn the fundamentals of how Azure AI services can be used to build applications.
+  iconUrl: /training/achievements/fundamentals-azure-ai-services.svg
+- uid: learn.wwl.translate-text-with-translation-service.badge
+  type: badge
+  title: Fundamentals of language translation
+  summary: Automated translation capabilities in an AI solution enable closer collaboration by removing language barriers.
+  iconUrl: /training/achievements/translate-text-with-translation-service.svg
+- uid: learn.azure.deploy-run-container-app-service.badge
+  type: badge
+  title: Deploy and run a containerized web app with Azure App Service
+  summary: Create a Docker image and store it in a repository in Azure Container Registry. Use Azure App Service to deploy a web application based on the Docker image. Configure continuous deployment for the web app by using a webhook that monitors the Docker image for changes.
+  iconUrl: /training/achievements/deploy-run-container-app-service.svg
+- uid: learn.execute-azure-function-with-triggers.badge
+  type: badge
+  title: Execute an Azure Function with triggers
+  summary: A trigger is responsible for executing an Azure function and there are dozens of triggers to choose from. This module shows you some of the most common types of triggers and how to configure them to execute your logic.
+  iconUrl: /training/achievements/execute-azure-function-with-triggers.svg
+- uid: learn.visual-studio-test-concepts.badge
+  type: badge
+  title: Introduction to software testing concepts
+  summary: Describe the common best practices, theory, and patterns of writing tests. Characterize the types of problems that testing can solve for your repository.
+  iconUrl: /training/achievements/visual-studio-test-concepts.svg
+- uid: learn.visual-studio.visual-studio-test-tools.badge
+  type: badge
+  title: C# testing in Visual Studio
+  summary: Start testing your C# apps by using the testing tools in Visual Studio.
+  iconUrl: /training/achievements/visual-studio/visual-studio-test-tools.svg
+- uid: learn.visual-studio.visual-studio-test.trophy
+  type: trophy
+  title: Use Visual Studio for modern development
+  summary: Want to learn more about using Visual Studio to develop and test apps, but don't know where to start? Start here!
+  iconUrl: /training/achievements/visual-studio/visual-studio-test.svg
+- uid: learn.azure.logic-apps-and-arm-templates.badge
+  type: badge
+  title: Create and deploy an Azure Logic Apps workflow using Azure Resource Manager templates
+  summary: In this module, you'll define an Azure Logic Apps workflow declaratively as a Resource Manager template and deploy the app using the Azure Command Line Interface (CLI).
+  iconUrl: /training/achievements/logic-apps-and-arm-templates.svg
+- uid: learn.azure-storage-dotnet-aspire-app.badge
+  type: badge
+  title: Use Azure Storage with .NET Aspire
+  summary: Learn how to access and use Azure Storage accounts from .NET Aspire solutions for file storage, data storage, and message queuing.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.develop-ai-solutions-azure-openai.trophy
+  type: trophy
+  title: Develop Generative AI solutions with Azure OpenAI in Foundry Models
+  summary: Azure OpenAI in Foundry Models provides access to OpenAI's powerful large language models such as GPT and Embeddings models. These models enable various natural language processing (NLP) solutions to understand, converse, and generate content. Users can access the service through REST APIs, SDKs, and Azure AI Foundry.
+  iconUrl: /training/achievements/develop-ai-solutions-azure-openai.svg
+- uid: learn.send-messages-rabbitmq-dotnet-aspire-app.badge
+  type: badge
+  title: Send messages with RabbitMQ in a .NET Aspire project
+  summary: Learn how to use message queues on RabbitMQ exchange servers to decouple microservices and manage communications in a cloud-native application built with .NET Aspire.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.improve-performance-cache-aspire.badge
+  type: badge
+  title: Improve performance with a cache in a .NET Aspire project
+  summary: Learn about using Redis caching to increase performance in a cloud-native application. You'll also discover how .NET Aspire makes it easy to access Redis caching services from your microservices.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.use-databases-dotnet-aspire-app.badge
+  type: badge
+  title: Use databases in a .NET Aspire project
+  summary: Learn about the database systems that .NET Aspire can connect to using built-in integrations. Then see how to configure connections to, and store data in, relational and nonrelational databases.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.use-telemetry-dotnet-aspire.badge
+  type: badge
+  title: Use telemetry in a .NET Aspire project
+  summary: Learn how to use telemetry in a .NET Aspire project to log data and examine the behavior of a cloud-native application.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.create-aspire-application.badge
+  type: badge
+  title: Create a .NET Aspire project
+  summary: Learn how to create cloud-native applications from scratch or add orchestration to an existing app by using the .NET Aspire stack in .NET 8.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.dotnet-aspire.trophy
+  type: trophy
+  title: Build distributed apps with .NET Aspire
+  summary: Learn how to build observable, production ready, distributed applications with .NET Aspire. 
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.introduction-dotnet-aspire.badge
+  type: badge
+  title: Introduction to .NET Aspire
+  summary: Learn about the .NET Aspire stack in .NET 8 and how you can use it to ease and accelerate the development of cloud-native web applications. 
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.iot.run-iot-edge-device-restricted-network-offline.badge
+  type: badge
+  title: Run an IoT Edge device in a restricted network and offline
+  summary: This module is theoretical and will walk you through how an IoT Edge device can be harnessed as a gateway to child devices and can store captured information if connectivity is unavailable.
+  iconUrl: /training/achievements/run-iot-edge-device-restricted-network-offline.svg
+- uid: learn.wwl.create-composed-form-recognizer-model.badge
+  type: badge
+  title: Create a composed Document intelligence model
+  summary: Learn how to assemble custom models into composed solutions that can analyze different types of your own documents.
+  iconUrl: /training/achievements/create-composed-form-recognizer-model.svg
+- uid: learn.wwl.get-started-azure-ai.trophy
+  type: trophy
+  title: Get started with Azure AI Services
+  summary: Azure AI Services is a collection of services that are building blocks of AI functionality you can integrate into your applications. In this learning path, you'll learn how to provision, secure, monitor, and deploy Azure AI Services resources and use them to build intelligent solutions.
+  iconUrl: /training/achievements/provision-and-manage-azure-cognitive-services.svg
+- uid: learn.wwl.plan-form-recognizer-solution.badge
+  type: badge
+  title: Plan an Azure AI Document Intelligence solution
+  summary: Learn how to use Azure AI Document Intelligence to build solutions that analyze forms and output data for storage or further processing.
+  iconUrl: /training/achievements/plan-form-recognizer-solution.svg
+- uid: learn.wwl.create-manage-ai-services.badge
+  type: badge
+  title: Create and consume Azure AI services
+  summary: Azure AI services enable developers to easily add AI capabilities into their applications. Learn how to create and consume these services.
+  iconUrl: /training/achievements/create-and-manage-cognitive-services.svg
+- uid: learn.wwl.investigate-container-for-use-with-ai-services.badge
+  type: badge
+  title: Deploy Azure AI services in containers
+  summary: Learn about Container support in Azure AI services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
+  iconUrl: /training/achievements/investigate-container-for-use-with-cognitive-services.svg
+- uid: learn.wwl.monitor-ai-services.badge
+  type: badge
+  title: Monitor Azure AI services
+  summary: Azure AI services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Azure AI Services in order to track utilization, determine trends, and detect and troubleshoot issues.
+  iconUrl: /learn/achievements/monitor-cognitive-services.svg
+- uid: learn.wwl.secure-ai-services.badge
+  type: badge
+  title: Secure Azure AI services
+  summary: Securing Azure AI services can help prevent data loss and privacy violations for user data that may be a part of the solution.
+  iconUrl: /training/achievements/secure-cognitive-services.svg
+- uid: implement-information-protection.trophy
+  type: trophy
+  title: 'SC-400: Implement Information Protection in Microsoft 365'
+  summary: 'Organizations require information protection solutions to protect their data against theft and accidental loss. Learn how to protect your sensitive information. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.'
+  iconUrl: /training/achievements/implement-information-protection.svg
+- uid: learn.azure.intro-to-migrating-aspnet-apps-azure.badge
+  type: badge
+  title: Introduction to migrating ASP.NET apps to Azure
+  summary: Evaluate the process of migrating an ASP.NET application from on-premises to Azure, along with a supporting Azure SQL database. Identify the benefits and challenges of the migration process.
+  iconUrl: /training/achievements/intro-to-migrating-aspnet-apps-azure.svg
+- uid: learn.azure.publish-reusable-bicep-code-using-azure-pipelines.badge
+  type: badge
+  title: Publish reusable Bicep code by using Azure Pipelines
+  summary: Publish Azure template specs and Bicep modules by using a deployment pipeline. Automatically validate and add versioning to your reusable Bicep code.
+  iconUrl: /training/achievements/bicep/publish-reusable-bicep-code-using-azure-pipelines.svg
+- uid: learn.azure.deploy-azure-managed-lustre-file-system.badge
+  type: badge
+  title: Accelerate HPC and AI workloads with Azure Managed Lustre
+  summary: Deploy an Azure Managed Lustre file system, integrate the file system with Azure Blob Storage, and connect clients to the file system.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions.badge
+  type: badge
+  title: Manage end-to-end deployment scenarios by using Bicep and GitHub Actions
+  summary: Create a unified workflow to deploy your entire environment. You'll add build jobs to your workflow, and use workflow artifacts and Bicep outputs to publish applications, databases, and blobs.
+  iconUrl: /training/achievements/bicep/manage-end-end-deployment-scenarios-using-bicep-github-actions.svg
+- uid: learn.azure.intro-to-confidential-computing-with-azure-virtual-machines-badge
+  type: badge
+  title: Intro to confidential computing with Azure Virtual Machines
+  summary: This module helps you understand Microsoft Azure confidential computing concepts for virtual machines, including confidential virtual machines and application enclaves, and which approach to use.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.publish-reusable-bicep-code-using-github-actions.badge
+  type: badge
+  title: Publish reusable Bicep code by using GitHub Actions
+  summary: Publish Azure template specs and Bicep modules by using a deployment workflow. Automatically validate and add versioning to your reusable Bicep code.
+  iconUrl: /training/achievements/bicep/publish-reusable-bicep-code-using-github-actions.svg
+- uid: learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.badge
+  type: badge
+  title: Automate Azure infrastructure change reviews by using Bicep and GitHub
+  summary: Add checks to pull requests that run automatically during your code reviews. Run the Bicep linter on your code, and deploy the resources to a temporary environment to enable further automated and manual testing.
+  iconUrl: /training/achievements/bicep/automate-azure-infrastructure-change-reviews-using-bicep-github.svg
+- uid: learn.azure.migrate-oracle-workload-azure-iaas.badge
+  type: badge
+  title: Migrate Oracle workloads to Azure IaaS virtual machines
+  summary: This module describes the process of moving an existing application and Oracle database to Azure-hosted virtual machines (VMs). This approach helps minimize refactoring, development, and configuration.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.introduction-to-azure-compute-gallery-badge
+  type: badge
+  title: Introduction to Azure Compute Gallery
+  summary: Learn what Azure Compute Gallery is, how it works, and when to use it.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.migrate-oracle-application-azure-paas.badge
+  type: badge
+  title: Migrate Oracle-powered applications by using Azure PaaS database services
+  summary: This module describes the process of modernizing an existing Oracle-powered workload to simplify management by refactoring the database to a fully managed cloud-native Azure database service.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.intro-to-azure-dedicated-hosts.badge
+  type: badge
+  title: Introduction to Azure dedicated hosts
+  summary: Learn about what Azure dedicated hosts is, how it works, and when you should choose to use a dedicated host as a solution to meet your organization's needs.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.introduction-to-azure-image-builder.badge
+  type: badge
+  title: Introduction to Azure Image Builder
+  summary: Learn about what Azure Image Builder is, how it works, and when you should choose to use a dedicated host as a solution to meet your organization's needs.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.badge
+  type: badge
+  title: Optimize AI training workloads using Azure CycleCloud and Slurm
+  summary: Azure AI training workloads are crucial for achieving optimal model performance that enables enhance of your AI training workflows.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.cna-set-up-apps-use-scale.badge
+  type: badge
+  title: Authenticate and authorize multi-tenant apps using Microsoft Entra ID
+  summary: Microsoft Entra ID enables you to improve the functionality of cloud-native apps in multitenant scenarios.
+  iconUrl: /training/achievements/cna-set-up-azure-ad-use-scale.svg
+- uid: learn.azure.test-bicep-code-using-github-actions.badge
+  type: badge
+  title: Test your Bicep code by using GitHub Actions
+  summary: Validate and test your Bicep code in your deployment workflow. You'll use linting, preflight validation, and the what-if operation to validate your Azure changes before you deploy, and you'll test your resources after each deployment.
+  iconUrl: /training/achievements/bicep/test-bicep-code-using-github-actions.svg
+- uid: learn.azure.create-batch-account-using-azure-portal.badge
+  type: badge
+  title: Create an Azure Batch account by using the Azure portal
+  summary: Azure Batch is a service that enables you to run large-scale parallel and high-performance computing (HPC) applications efficiently in the cloud. There's no need to manage or configure infrastructure. Just schedule the job, allocate the resources you need, and let Batch take care of the rest.
+  iconUrl: /training/achievements/create-batch-account-using-azure-portal.svg
+- uid: learn.azure.share-bicep-modules-using-private-registries.badge
+  type: badge
+  title: Share Bicep modules by using private registries
+  summary: Reuse Bicep modules to reduce code duplication and increase the quality of your deployments. Create a private registry for your organization. Publish shared modules to the registry, and consume them in multiple deployments.
+  iconUrl: /training/achievements/bicep/share-bicep-modules-using-private-registries.svg
+- uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code.badge
+  type: badge
+  title: Control and govern your Azure environment by deploying your infrastructure as code
+  summary: Plan how to harden and help secure your Azure environment, along with the controls to apply to your configuration changes and deployments.
+  iconUrl: /training/achievements/bicep/control-govern-azure-environment-deploying-infrastructure-code.svg
+- uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.badge
+  type: badge
+  title: Review Azure infrastructure changes by using Bicep and pull requests
+  summary: Avoid unintended changes and poorly written Bicep code by using pull requests. Use branching strategies to protect your main branch from accidental changes. Understand what you should look for when you review Bicep code.
+  iconUrl: /training/achievements/bicep/review-azure-infrastructure-changes-using-bicep-pull-requests.svg
+- uid: learn.azure.optimize-your-cost-azure-blob-storage.badge
+  type: badge
+  title: Optimize your cost with Azure Blob Storage
+  summary: In this module, you learn how to optimize your cost with Azure Blob Storage.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.move-data-with-azure-data-box.badge
+  type: badge
+  title: Move large amounts of data to the cloud by using Azure Data Box family
+  summary: Evaluate Azure Data Box family to import terabytes (TBs) of data from a local computer to Azure Blob storage. Order disks. Copy data to disks and return them. Verify that the data is uploaded to Azure.
+  iconUrl: /training/achievements/move-data-with-azure-data-box.svg
+- uid: learn.azure.manage-multiple-environments-using-bicep-github-actions.badge
+  type: badge
+  title: Manage multiple environments by using Bicep and GitHub Actions
+  summary: Deploy your Bicep code to multiple environments to improve the quality of your deployments. Use reusable workflows to reduce code duplication, and set parameter values for each environment.
+  iconUrl: /training/achievements/bicep/manage-multiple-environments-using-bicep-github-actions.svg
+- uid: learn.aks-cluster-autoscaling.badge
+  type: badge
+  title: Automatically scale your AKS clusters with the cluster autoscaler
+  summary: Learn how to configure automatic scaling for your AKS clusters using the cluster autoscaler.
+  iconUrl: /training/achievements/aks-cluster-autoscaling.svg
+- uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.badge
+  type: badge
+  title: Manage end-to-end deployment scenarios by using Bicep and Azure Pipelines
+  summary: Create a unified pipeline to deploy your entire environment. You add a build stage to your pipeline, and use pipeline artifacts and Bicep outputs to publish applications, databases, and blobs.
+  iconUrl: /training/achievements/bicep/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.svg
+- uid: implement-data-loss-prevention.trophy
+  type: trophy
+  title: 'SC-400: Implement Data Loss Prevention'
+  summary: 'In this learning plan we discuss how to implement data loss prevention techniques to secure your Microsoft 365 data. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.'
+  iconUrl: /training/achievements/implement-data-loss-prevention.svg
+- uid: implement-information-governance.trophy
+  type: trophy
+  title: 'SC-400: Implement Data Lifecycle and Records Management'
+  summary: 'Learn how to plan and implement data lifecycle and records management strategies for an organization. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.'
+  iconUrl: /training/achievements/implement-information-governance.svg
+- uid: learn.wwl.manage-data-loss-prevention-polices.badge
+  type: badge
+  title: Manage data loss prevention policies and reports in Microsoft 365
+  summary: Learn how to manage data loss prevention policies and mitigate data loss prevention policy violations.
+  iconUrl: /learn/achievements/manage-data-loss-prevention-polices.svg
+- uid: learn.wwl.manage-data-retention-microsoft-365.badge
+  type: badge
+  title: Manage data retention and deletion in Microsoft 365 workloads
+  summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
+  iconUrl: /training/achievements/manage-data-retention-in-microsoft-365.svg
+- uid: learn.azure.threat-modeling-secured-environment.badge
+  type: badge
+  title: Choose a client application to use in a Privileged Access Workstation (PAW) with threat modeling
+  summary: Learn how to use the foundation of threat modeling to assess a client application for security risks. Find ways to reduce or eliminate risks before installing an application into a privileged environment.
+  iconUrl: /training/achievements/threat-modeling-secured-environment.svg
+- uid: learn.azure.intro-cloud-everyone.badge
+  type: badge
+  title: Introduction to Cloud for Everyone
+  summary: In this module, you'll learn about Cloud for Everyone.
+  iconUrl: /training/achievements/intro-cloud-everyone.svg
+- uid: learn.design-geographically-distributed-application.badge
+  type: badge
+  title: Design a geographically distributed application
+  summary: Build an application that spans multiple geographic locations for high availability and resiliency.
+  iconUrl: /training/achievements/design-geographically-distributed-application-social.png
+- uid: learn.intro-to-hpc.badge
+  type: badge
+  title: Introduction to high-performance computing (HPC) on Azure
+  summary: Discover the services available on Azure for your high-performance computing workloads.
+  iconUrl: /training/achievements/intro-to-hpc.svg
+- uid: learn.secure-your-azure-virtual-machine-disks.badge
+  type: badge
+  title: Secure your Azure virtual machine disks
+  summary: Use Azure Disk Encryption (ADE) to encrypt OS and data disks on existing and new virtual machines (VMs).
+  iconUrl: /training/achievements/secure-your-azure-virtual-machine-disks.svg
+- uid: learn.distribute-load-with-traffic-manager.badge
+  type: badge
+  title: Enhance your service availability and data locality by using Azure Traffic Manager
+  summary: Azure Traffic Manager provides DNS load balancing to your application, so you improve your ability to distribute your application around the world. Use Traffic Manager to improve the performance and availability of your application.
+  iconUrl: /training/achievements/distribute-load-with-traffic-manager.svg
+- uid: learn.optimize-operations-with-automanage.badge
+  type: badge
+  title: Optimizing IT operations and management with Azure Automanage
+  summary: In this module, you discover how to optimize IT operations and management with Azure Automanage.
+  iconUrl: /learn/achievements/optimize-operations-with-automanage.svg
+- uid: learn.connect-on-premises-network-with-expressroute.badge
+  type: badge
+  title: Connect your on-premises network to the Microsoft global network by using ExpressRoute
+  summary: Connect your on-premises systems and users to Azure and Office 365 by using ExpressRoute for private, dedicated, and guaranteed throughput connectivity.
+  iconUrl: /training/achievements/connect-on-premises-network-with-expressroute.svg
+- uid: learn.aks-optimize-compute-costs.badge
+  type: badge
+  title: Optimize compute costs on Azure Kubernetes Service (AKS)
+  summary: Explore cost-optimization strategies to use on Azure for your cloud-native application-development process. Azure Kubernetes Service (AKS) offers features that you can use to manage compute costs on your AKS cluster. These features include node autoscaling, AKS spot node pools, and Azure Policy.
+  iconUrl: /training/achievements/optimize-compute-costs-on-azure-kubernetes-service.svg
+- uid: learn.caching-and-performance-azure-storage-and-disks.badge
+  type: badge
+  title: Caching and performance in Azure storage disks
+  summary: Moving data as fast as possible is good for business. Learn about disk performance in Azure, how caching can help optimize read and write access to storage, and how to enable caching to help optimize the performance of Azure VM disks.
+  iconUrl: /training/achievements/caching-and-performance-azure-storage-and-disks.svg
+- uid: learn.aks-cluster-scalability.trophy
+  type: trophy
+  title: Azure Kubernetes Service (AKS) application and cluster scalability
+  summary: In this learning path, you'll understand how autoscaling of your AKS workloads can be achieved and how workload scale changes drive how your cluster scales to meet workload needs.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.end-to-end-encryption-with-app-gateway.badge
+  type: badge
+  title: Encrypt network traffic end to end with Azure Application Gateway
+  summary: Secure the traffic from your users all the way to your web servers by enabling TLS encryption on Application Gateway.
+  iconUrl: /training/achievements/end-to-end-encryption-with-app-gateway.svg
+- uid: learn.introduction-azure-ddos-protection.badge
+  type: badge
+  title: Introduction to Azure DDoS Protection
+  summary: Learn how to guard your Azure services from a denial of service attack using Azure DDoS Protection.
+  iconUrl: /training/achievements/introduction-to-azure-ddos-protection.svg
+- uid: learn.azure.extend-share-capacity-with-azure-file-sync.badge
+  type: badge
+  title: Extend your on-premises file share capacity using Azure File Sync
+  summary: Evaluate the requirements for Azure File Sync. Deploy the Storage Sync Service to replicate files from Windows Server to the Azure file share. Test file sync between the file shares.
+  iconUrl: /training/achievements/extend-share-capacity-with-azure-file-sync.svg
+- uid: learn.deploy-vms-from-vhd-templates.badge
+  type: badge
+  title: Deploy Azure virtual machines from VHD templates
+  summary: Standardize and automate your virtual machine deployments to minimize manual configuration, variance, and errors.
+  iconUrl: /training/achievements/deploy-vms-from-vhd-templates.svg
+- uid: learn.arm-template-whatif.badge
+  type: badge
+  title: Preview Azure deployment changes by using what-if
+  summary: Preview the effects of your deployments. Understand the types of changes detected by the what-if operation. Deploy your templates using incremental and complete mode.
+  iconUrl: /training/achievements/bicep/arm-template-whatif.svg
+- uid: learn.choose-the-right-disk-storage-for-vm-workload.badge
+  type: badge
+  title: Choose the right disk storage for your virtual machine workload
+  summary: Azure provides various disk storage options for virtual machine workloads. Identify the features of capabilities of each type to ensure your application performs optimally.
+  iconUrl: /training/achievements/choose-the-right-disk-storage-for-vm-workload.svg
+- uid: learn.keep-your-virtual-machines-updated.badge
+  type: badge
+  title: Keep your virtual machines updated
+  summary: Deploy the Azure Update Management solution to update virtual machines in your cloud environment.
+  iconUrl: /training/achievements/keep-your-virtual-machines-updated.svg
+- uid: learn.choose-best-networking-plugin-for-aks.badge
+  type: badge
+  title: Choose the best networking plugin for AKS
+  summary: Understand the key differences and considerations when selecting between Azure CNI and kubenet, two networking plugin options for an Azure Kubernetes Service cluster.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.aks-cluster-architecture.trophy
+  type: trophy
+  title: Azure Kubernetes Service (AKS) cluster architecture and operations
+  summary: In this learning path, you'll understand some of the fundamental cluster architecture decisions you'll be faced with and be given the tools to help you make decisions for them.  You'll also learn about some of the governance and operations features available to AKS clusters.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.create-first-azure-front-door.badge
+  type: badge
+  title: Load balance your web service traffic with Front Door
+  summary: Accelerate the delivery and maintain high availability of web applications by distributing web traffic across multiple web servers. Secure your web applications from intruders and malicious attacks with managed and unmanaged rules.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.ha-application-storage-with-grs.badge
+  type: badge
+  title: Make your application storage highly available with read-access geo-redundant storage
+  summary: In this module, you learn how to make your application storage highly available by ensuring that you can fail over resources if there's an Azure region failure.
+  iconUrl: /training/achievements/ha-application-storage-with-grs.svg
+- uid: learn.azure.deploy-resources-different-scopes.badge
+  type: badge
+  title: Deploy resources to subscriptions, management groups, and tenants by using Bicep
+  summary: Deploy Azure resources at the subscription, management group, and tenant scope. Understand how Azure resources are deployed at different scopes, why this is important, and how to create Bicep code to deploy them. Create a single set of Bicep files that you can deploy across multiple scopes in one operation.
+  iconUrl: /training/achievements/bicep/deploy-resources-scopes-bicep.svg
+- uid: learn.azure.protect-vm-settings-with-dsc.badge
+  type: badge
+  title: Protect your virtual machine settings with Azure Automation State Configuration
+  summary: Create a desired state configuration script that checks that IIS is installed. Onboard virtual machines (VMs) for management by Azure Automation. Automatically install IIS on the VMs where that feature is missing.
+  iconUrl: /training/achievements/protect-vm-settings-with-dsc.svg
+- uid: learn.advanced-bicep.trophy
+  type: trophy
+  title: Advanced Bicep
+  summary: Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your deployments more consistent and repeatable.
+  iconUrl: /training/achievements/bicep/advanced-bicep.svg
+- uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.badge
+  type: badge
+  title: Run parallel tasks in Azure Batch with the Azure CLI
+  summary: Azure Batch is an Azure service that enables you to run large-scale parallel and high-performance computing (HPC) applications efficiently in the cloud. There's no need to manage or configure infrastructure. Just schedule the job, allocate the resources you need, and let Batch take care of the rest.
+  iconUrl: /training/achievements/run-parallel-tasks-in-azure-batch-with-the-azure-cli.svg
+- uid: learn.azure.structure-bicep-code-collaboration.badge
+  type: badge
+  title: Structure your Bicep code for collaboration
+  summary: Build Bicep files that support collaborative development and follow best practices. Plan your parameters to make your templates easy to deploy. Use a consistent style, clear structure, and comments to make your Bicep code easy to understand, use, and modify.
+  iconUrl: /training/achievements/bicep/structure-bicep-code-collaboration.svg
+- uid: learn.intro-to-azure-service-fabric.badge
+  type: badge
+  title: Introduction to Azure Service Fabric
+  summary: This module describes the features of Azure Service Fabric, such as Azure service integration, stateless and stateful service support, and automatic scaling.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.badge
+  type: badge
+  title: Manage multiple environments by using Bicep and Azure Pipelines
+  summary: Deploy your Bicep code to multiple environments to improve the quality of your deployments. Use pipeline templates to reduce code duplication, and set parameter values for each environment.
+  iconUrl: /training/achievements/bicep/manage-multiple-environments-using-bicep-azure-pipelines.svg
+- uid: learn.hub-and-spoke-network-architecture.badge
+  type: badge
+  title: Centralize your core services by using hub and spoke Azure virtual network architecture
+  summary: Design a network architecture in Azure that allows for growth and flexibility, secure isolation of critical resources, low administrative overhead, and communication with on-premises network resources.
+  iconUrl: /training/achievements/hub-and-spoke-network-architecture.svg
+- uid: learn.choose-compute-provisioning.badge
+  type: badge
+  title: Choose a compute provisioning solution for your application
+  summary: Discover the services and tools available to automate the deployment and configuration of your Azure infrastructure.
+  iconUrl: /training/achievements/choose-compute-provisioning.svg
+- uid: learn.azure.provide-disaster-recovery-replicate-storage-data.badge
+  type: badge
+  title: Provide disaster recovery by replicating storage data across regions and failing over to a secondary location
+  summary: In this module, you'll learn to evaluate and choose a redundancy option for Azure Storage. You'll create a storage account and blob container to demonstrate replication. You'll also initiate storage account failover to the secondary region.
+  iconUrl: /training/achievements/provide-disaster-recovery-replicate-storage-data.svg
+- uid: learn.intro-to-azure-lighthouse.badge
+  type: badge
+  title: Introduction to Azure Lighthouse
+  summary: Characterize the types of scenarios where Azure Lighthouse can be used by a service provider to access customers' Azure environments. Describe how Azure Lighthouse enables multitenant management with enhanced automation, scalability, and governance across resources and tenants.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure-command-line-tools-intro.badge
+  type: badge
+  title: Choose the best Azure command-line tools for managing and provisioning your cloud infrastructure
+  summary: Learn the basic concepts of infrastructure as code, explore the key differences between the Azure CLI, Azure PowerShell, Bicep, and Terraform, and decide which command-line tools best meet your organization's needs.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.intro-to-azure-nat-gateway.badge
+  type: badge
+  title: Introduction to Azure NAT Gateway
+  summary: Describe the Microsoft Azure NAT Gateway service, discuss scenarios of usage, learn how it works, and explore basic steps for its deployment and configuration.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.aks-secrets-configure-app.badge
+  type: badge
+  title: Manage application configuration and secrets in Azure Kubernetes Service (AKS)
+  summary: Learn how to securely store application secrets and configurations using native Kubernetes resources in Azure Kubernetes Service (AKS). Deploy a complete application using Secrets and ConfigMaps to store relevant data.
+  iconUrl: /training/achievements/aks-secrets-configure-app.svg
+- uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.badge
+  type: badge
+  title: Build your first Bicep deployment workflow by using GitHub Actions
+  summary: In this module, you'll create an automated workflow in GitHub Actions that securely deploys resources to Azure from Bicep code. You'll also learn to configure your workflow to run on a schedule or when your configuration changes.
+  iconUrl: /training/achievements/bicep/build-first-bicep-deployment-workflow-using-github-actions.svg
+- uid: learn.bicep-pipelines-github-actions.trophy
+  type: trophy
+  title: Deploy Azure resources by using Bicep and GitHub Actions
+  summary: Gain all of the benefits of infrastructure as code by using an automated workflow to deploy your Bicep templates, and integrate other deployment activities with your workflows. You'll build workflows using GitHub Actions.
+  iconUrl: /training/achievements/bicep/bicep-github-actions.svg
+- uid: learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.badge
+  type: badge
+  title: Troubleshoot inbound network connectivity for Azure Load Balancer
+  summary: Review multidimensional metrics for the load balancer in Azure Monitor Metrics, and check health probe status for the load balancer.
+  iconUrl: /training/achievements/troubleshoot-inbound-connectivity-azure-load-balancer.svg
+- uid: learn.azure.arm-template-specs.badge
+  type: badge
+  title: Publish libraries of reusable infrastructure code by using template specs
+  summary: Reuse and share your ARM templates across your organization. Publish template specs that deploy resources preconfigured for your organization's requirements. Control access and safely update template specs by using versions.
+  iconUrl: /training/achievements/bicep/arm-template-specs.svg
+- uid: learn.azure.intro-to-arc-enabled-kubernetes.badge
+  type: badge
+  title: Introduction to Azure Arc-enabled Kubernetes
+  summary: Learn about Azure Arc-enabled Kubernetes and how it can help organizations optimize and simplify their hybrid cloud environments.
+  iconUrl: /training/achievements/intro-to-arc-enabled-kubernetes.svg
+- uid: learn.azure.manage-changes-bicep-code-git.badge
+  type: badge
+  title: Manage changes to your Bicep code by using Git
+  summary: Track changes to your Bicep code and view the history of the files you've changed. Use branches to develop multiple versions of your code at the same time. Publish your repository to support collaboration.
+  iconUrl: /training/achievements/manage-changes-bicep-code-git.svg
+- uid: learn.hpc-storage-considerations.badge
+  type: badge
+  title: Understand factors that influence HPC storage selection in Azure
+  summary: This module covers various factors that influence HPC storage selection in Azure. We review NFS, file access, directory services, parallel file systems, and hybrid file-access considerations.
+  iconUrl: /training/achievements/hpc-storage-considerations.svg
+- uid: learn.azure.migrate-azure-resources-bicep.badge
+  type: badge
+  title: Migrate Azure resources and JSON ARM templates to use Bicep
+  summary: Export and convert your Azure resources to Bicep files, and migrate your JSON Azure Resource Manager templates (ARM templates) to Bicep. Refactor your Bicep files to follow best practices. Test your Bicep files and deploy them to production.
+  iconUrl: /training/achievements/bicep/migrate-azure-resources-and-json-templates-bicep.svg
+- uid: learn.aks-network-design-azure-container-network-interface.badge
+  type: badge
+  title: Configure Azure CNI networking in Azure Kubernetes Service (AKS)
+  summary: This module introduces Azure CNI networking and how to configure it in Azure Kubernetes Service (AKS). We cover some Kubernetes networking basics. Including, how certain resource types use IP addresses, how to size a cluster for a workload, and how to design a network for an AKS cluster using Azure CNI.
+  iconUrl: /training/achievements/aks-network-design-azure-container-network-interface.svg
+- uid: learn.azure.intro-to-azure-route-server.badge
+  type: badge
+  title: Introduction to Azure Route Server
+  summary: Describe Microsoft Azure Route Server, discuss scenarios of usage, learn how it works, and explore basic steps for its deployment and configuration.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.secure-data-at-rest.badge
+  type: badge
+  title: Introduction to securing data at rest on Azure
+  summary: Identify the data in your organization and store it on Azure. Store secrets securely, and use client-side encryption and Storage Service Encryption to help protect your data.
+  iconUrl: /training/achievements/secure-data-at-rest.svg
+- uid: learn.aks-cluster-upgrades-patches.badge
+  type: badge
+  title: Apply cluster upgrades and security patches with Azure Kubernetes Service
+  summary: Learn more about why you need to upgrade your existing Azure Kubernetes Service clusters.
+  iconUrl: /training/achievements/aks-cluster-upgrades-patches.svg
+- uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities.badge
+  type: badge
+  title: Authenticate your Azure deployment workflow by using workload identities
+  summary: Workload identities enable your deployment workflows to authenticate securely with Azure without you managing any passwords, keys, or secrets. In this module, you'll learn what workload identities are, how they work, and how to create them. You'll also learn how to grant them permission to your Azure resources so that your workflows can deploy your Bicep files.
+  iconUrl: /training/achievements/bicep/authenticate-azure-deployment-workflow-workload-identities.svg
+- uid: learn.aks-application-autoscaling-native.badge
+  type: badge
+  title: Application scalability on AKS with HorizontalPodAutoscalers
+  summary: Scale your applications to match your load by using native scalability features present in Kubernetes.
+  iconUrl: /training/achievements/aks-application-autoscaling-native.svg
+- uid: learn.azure.export-data-with-azure-import-export.badge
+  type: badge
+  title: Export large amounts of data from Azure by using Azure Import/Export
+  summary: Evaluate Azure Import/Export to copy data from Azure Blob storage to an on-premises server. Create an export job in your Azure Storage account. Get the BitLocker keys to unlock the drives that you receive.
+  iconUrl: /training/achievements/export-data-with-azure-import-export.svg
+- uid: deploy-disaster-recovery-vmware-srm-azure-vmware-solution.badge
+  type: badge
+  title: Deploy disaster recovery using VMware Site Recovery Manager and Azure VMware Solution
+  summary: You can use VMware SRM and vSphere Replication with Azure VMware Solution for disaster recovery of VMware virtual machines (VMs).
+  iconUrl: /training/achievements/deploy-disaster-recovery-vmware-srm-azure-vmware-solution.svg
+- uid: learn.azure.migrate-oracle-workloads-to-azure.trophy
+  type: trophy
+  title: Migrate Oracle workloads to Azure
+  summary: In this learning path, you'll learn about three ways you can move Oracle workloads to Azure. Based on your business needs, you might rehost Oracle databases and applications in Azure IaaS virtual machines,  migrate Oracle Exadata databases to Oracle Database@Azure, or modernize Oracle databases to Azure PaaS database services. You'll gain an overview of each approach across the three modules.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.azure.migrate-oracle-workload-azure-odaa.badge
+  type: badge
+  title: Migrate Oracle workloads to Oracle Database@Azure
+  summary: This module describes the process of migrating business-critical Oracle Exadata workloads to Azure without refactoring, by taking advantage of Oracle infrastructure in Azure datacenters via Oracle Database@Azure.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.automate-virtual-machine-software-installation-configuration.badge
+  type: badge
+  title: Automate the installation and configuration of software in your Virtual Machines
+  summary: Learn how to use the cross-platform Azure CLI to create a virtual machine in Azure, and use a custom script to install and configure a web server. Automate the installation of PHP and the creation of a dynamic home page, then use a web browser to test your installation.
+  iconUrl: /training/achievements/automate-virtual-machine-software-installation-configuration.svg
+- uid: learn.azure.introduction-to-red-hat-azure.badge
+  type: badge
+  title: Introduction to Red Hat on Azure
+  summary: This module provides an introduction to using Red Hat solutions in Azure cloud environments. It covers key topics such as Red Hat Enterprise Linux (RHEL), Azure Red Hat OpenShift (ARO), and JBoss, guiding you through the process of migrating and modernizing your Linux workloads.
+  iconUrl: /training/achievements/introduction-to-red-hat-azure.svg
+- uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.badge
+  type: badge
+  title: Create an app to run parallel compute jobs in Azure Batch
+  summary: Azure Batch is a Platform as a Service (PaaS) provided by Microsoft to run large-scale parallel, high performant, computing applications in Azure. In this module you'll write a .NET Core console app to perform video transcoding, in parallel, with Azure Batch services.
+  iconUrl: /training/achievements/create-an-app-to-run-parallel-compute-jobs-in-azure-batch.svg
+- uid: learn.azure.optimize-performance-and-costs-using-azure-disk-storage.badge
+  type: badge
+  title: Optimize performance and costs by using Azure Disk Storage
+  summary: Azure Disk Storage offers a range of disk types and capabilities that you can use to optimize application performance and costs in specific scenarios. In this module, you learn more about how disk performance works and identify Azure Disk Storage capabilities and performance-scaling options.
+  iconUrl: /training/achievements/optimize-performance-and-costs-using-azure-disk-storage.svg
+- uid: learn.intro-to-azure-routing-preference.badge
+  type: badge
+  title: Introduction to Azure routing preference
+  summary: This module explains how you can use routing preference in Azure to control traffic to the public internet. You'll also learn how to decide which routing preference option is appropriate for your application or service.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.badge
+  type: badge
+  title: Monitor, diagnose, and troubleshoot your Azure Storage
+  summary: Discover the tools available to detect and correct problems with your Azure Storage, so you can enable your cloud storage infrastructure to operate at peak performance.
+  iconUrl: /training/achievements/monitor-diagnose-and-troubleshoot-azure-storage.svg
+- uid: learn.azure.child-extension-bicep-templates.badge
+  type: badge
+  title: Deploy child and extension resources by using Bicep
+  summary: Deploy various Azure resources in your Bicep code. Define and use child and extension resources. Work with resources that you created outside of a Bicep template or module.
+  iconUrl: /training/achievements/bicep/child-extension-bicep-templates.svg
+- uid: learn.bicep-collaborate.trophy
+  type: trophy
+  title: Intermediate Bicep
+  summary: Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your deployments more consistent and repeatable.
+  iconUrl: /training/achievements/bicep/intermediate-bicep.svg
+- uid: learn.get-started-azure-arc-sql-managed-instance.trophy
+  type: trophy
+  title: Implement Azure Arc-enabled SQL Managed Instance in your hybrid environment
+  summary: Learn how to work with Azure Arc enabled servers, data services and Kubernetes.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.azure.deploy-manage-azure-arc-data-controller.badge
+  type: badge
+  title: Deploy and manage Azure Arc data controller
+  summary: Azure Arc-enabled data controller serves as the basis for deployment of Azure Arc-enabled data services.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.badge
+  type: badge
+  title: Deploy and manage an Azure Arc-enabled SQL Managed Instance
+  summary: Describe an Azure Arc-enabled SQL Managed Instance and how to connect to it to restore a SQL Server database backup and run queries. Use the instance to deploy, configure, and apply service updates.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure-sql-deploy-configure.badge
+  type: badge
+  title: Deploy and configure servers, instances, and databases for Azure SQL
+  summary: In this module, you learn about the process of deploying and configuring Azure SQL. Through hands-on exercises, you deploy and configure Azure SQL Database specifically. You also see comparisons to both Azure SQL Managed Instance and SQL Server. In addition to the Azure portal, work with SSMS, Azure Data Studio including SQL notebooks, and the Azure CLI.
+  iconUrl: /training/achievements/azure-sql-deploy-configure.svg
+- uid: learn.create-dashboards-azure-data-explorer.badge
+  type: badge
+  title: Create dashboards in Azure Data Explorer
+  summary: Learn how to create dashboards in Azure Data Explorer. You add tiles and visualizations, and then share the dashboard with others.
+  iconUrl: /training/achievements/azure-data-explorer-create-dashboards.svg
+- uid: learn.data-analysis-data-explorer-kusto-query-language.trophy
+  type: trophy
+  title: Data analysis in Azure Data Explorer with Kusto Query Language
+  summary: In this learning path, students will learn how to analyze data in Azure Data Explorer using the Kusto Query Language.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.azure-sql-fundamentals.trophy
+  type: trophy
+  title: Azure SQL fundamentals
+  summary: Learn how to translate your existing SQL Server expertise to Azure SQL including Azure SQL Database and Azure SQL managed instance. After completing this learning path, you will have a foundational knowledge of what to use when, as well as how to configure, secure, monitor, and troubleshoot Azure SQL.
+  iconUrl: /training/achievements/azure-sql-fundamentals.svg
+- uid: learn.top-5-security-items-to-consider.badge
+  type: badge
+  title: Top 5 security items to consider before pushing to production
+  summary: Secure your web applications on Azure and protect your apps against the most common and dangerous web application attacks.
+  iconUrl: /training/achievements/top-5-security-items-to-consider.svg
+- uid: learn.securing-you-basics-beyond.badge
+  type: badge
+  title: "Securing you: Basics and beyond"
+  summary: Security-related advice can be hard to understand and follow. Many people ask for a simple description of how to secure their computers and online accounts without needing in-depth training or hours of study. This module gives you simple advice you can follow, tools you can use, and pitfalls to avoid, to ensure that you can remain secure online.
+  iconUrl: /training/achievements/security/securing-you-basics-beyond.svg
+- uid: learn.azure.network-fundamentals-2.badge
+  type: badge
+  title: Fundamentals of Network Security
+  summary: Explore the fundamentals of computer networking security and monitoring.
+  iconUrl: /training/achievements/network-fundamentals-2.svg
+- uid: learn.design-your-site-recovery-solution-in-azure.badge
+  type: badge
+  title: Design your site recovery solution in Azure
+  summary: Help protect your applications and data from disasters with a well-designed site recovery solution.
+  iconUrl: /training/achievements/design-your-site-recovery-solution-on-azure.svg
+- uid: learn.manage-linux-with-arc.badge
+  type: badge
+  title: Manage Linux with Arc
+  summary: In this module, you discover how to manage Linux machines and systems using Azure Arc-enabled servers.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.customize-dotnet-aspire-existing-resources.badge
+  type: badge
+  title: Customize a .NET Aspire app to use existing Azure resources
+  summary: Learn how to increase the scalability and manageability of a deployed .NET Aspire application by migrating resources from within containers to Azure services.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.store-data-azure-cosmos-aspire.badge
+  type: badge
+  title: Store data in Azure Cosmos DB with .NET Aspire
+  summary: "Learn how to connect to the Azure Cosmos DB database from a cloud-native application by using .NET Aspire built-in integrations."
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.cna-stream-iot-data.badge
+  type: badge
+  title: Stream internet-of-things (IoT) data to a cloud-native app with IoT Central
+  summary: Describes how Azure IoT Central facilitates the design, testing, and implementation of distributed applications that process IoT telemetry data generated by smart devices. When designing cloud-native applications, you can leverage Azure IoT Central to deliver a comprehensive set of features that help with design, testing, and implementation of distributed applications that rely on IoT telemetry.
+  iconUrl: /training/achievements/cna-stream-iot-data.svg
+- uid: learn.azure.cna-build-iot-service.badge
+  type: badge
+  title: Build an IoT service for your cloud-native apps by using IoT Central
+  summary: Extend your cloud-native application to provide IoT functionality by integrating its components with Azure IoT services and by using Cosmos DB to provide a persistent data store.
+  iconUrl: /training/achievements/cna-build-iot-service.svg
+- uid: learn.azure.intro-to-arc-for-servers.badge
+  type: badge
+  title: Introduction to Azure Arc-enabled servers
+  summary: This module introduces you to Azure Arc-enabled servers and describes its characteristics, capabilities, and use cases.
+  iconUrl: /training/achievements/intro-to-arc-for-servers.svg
+- uid: learn.protect-infrastructure-with-azure-site-recovery.badge
+  type: badge
+  title: Protect your Azure infrastructure with Azure Site Recovery
+  summary: In this module, you learn to provide disaster recovery for your Azure infrastructure by customizing replication, failover, and failback of Azure virtual machines with Azure Site Recovery.
+  iconUrl: /training/achievements/protect-infrastructure-with-azure-site-recovery.svg
+- uid: learn.dotnet-aspire-azure.trophy
+  type: trophy
+  title: Use Azure services to build and deploy apps with .NET Aspire
+  summary: Learn how to use Azure services with .NET Aspire.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.deploy-dotnet-aspire-app-azure.badge
+  type: badge
+  title: Deploy a .NET Aspire solution to Azure
+  summary: Learn how to deploy a .NET Aspire solution to container host services, such as Azure Container Apps (ACA) and Azure Kubernetes Services (AKS). Integrate .NET Aspire solution deployment with Continuous Integration/Continuous Deployment (CI/CD) pipelines.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.move-azure-resources-to-another-resource-group.badge
+  type: badge
+  title: Move Azure resources to another resource group
+  summary: Identify Azure resources that you can move to a different resource group. Use the Azure portal to move resources.
+  iconUrl: /training/achievements/move-azure-resources-another-resource-group.svg
+- uid: learn.get-started-with-azure-private-5g-core.trophy
+  type: trophy
+  title: Get started with Azure Private 5G Core
+  summary: Azure Private 5G Core offers simple, scalable, and secure deployment of private 5G core networks on an Azure Arc-managed edge platform within the Azure private multi-access edge compute solution. The network functions provided by the service connect with standard radio access networks to provide high performance, low latency, and secure connectivity for 4G and 5G enabled devices. From the modules in this learning path, you can learn about Azure Private 5G Core basics, as well as ways to deploy, monitor, and manage a private mobile network.
+  iconUrl: /training/achievements/get-started-with-azure-private-5g-core.svg
+- uid: learn.manage-azure-private-5g-core.badge
+  type: badge
+  title: Manage the Azure Private 5G Core service
+  summary: Describes Azure Private 5G Core routine management tasks, including site management, SIM management, and system upgrading tasks.
+  iconUrl: /learn/achievements/manage-azure-private-5g-core.svg
+- uid: learn.monitor-azure-private-5g-core-service.badge
+  type: badge
+  title: Monitor the Azure Private 5G Core service
+  summary: Learn about the network monitoring capabilities of Azure Private 5G Core. Particularly, the use of relevant monitoring tools and the techniques for troubleshooting and resolving network issues.
+  iconUrl: /learn/achievements/monitor-azure-private-5g-core-service.svg
+- uid: learn.deploy-azure-private-5g-core.badge
+  type: badge
+  title: Deploy an Azure Private 5G Core service
+  summary: Describes Azure Private 5G Core deployment tasks, including prerequisites, deployment methods, and creating mobile network and site.
+  iconUrl: /learn/achievements/deploy-azure-private-5g-core.svg
+- uid: learn.intro-to-azure-private-5g-core.badge
+  type: badge
+  title: Introduction to Azure Private 5G Core
+  summary: Introduces Azure Private 5G Core, which provides 5G core network functions as part of an on-premises private mobile network for enterprises.
+  iconUrl: /learn/achievements/intro-to-azure-private-5g-core.svg

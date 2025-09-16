@@ -1,13 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-kusto-fabric.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  hidden_question_numbers: ["1A709C42_34","1A709C42_38","1A709C42_6","1A709C42_47","1A709C42_75","1A709C42_104","1A709C42_120","1A709C42_128","1A709C42_136"]
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 12/03/2024
-  author: wwlpublish
-  ms.author: gmalc
+  ms.date: 09/10/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: ""

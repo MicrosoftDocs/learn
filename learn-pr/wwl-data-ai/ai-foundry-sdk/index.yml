@@ -1,15 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.ai-foundry-sdk
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Develop an AI app with the Azure AI Foundry SDK
   description: Use the Azure AI Foundry SDK to develop AI applications with Azure AI Foundry projects.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 02/05/2025
-  ms.service: azure-ai-services
+  ms.date: 08/28/2025
+  ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
 title: Develop an AI app with the Azure AI Foundry SDK
@@ -22,7 +21,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should:
   - Be familiar with Azure services and the Azure portal.
-  - Have some programming experience with Python or C#.
+  - Have some programming experience.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -30,7 +29,8 @@ roles:
 - ai-engineer
 - developer
 products:
-- ai-services
+- azure-ai-foundry
+- azure-ai-foundry-sdk
 subjects:
 - artificial-intelligence
 units:

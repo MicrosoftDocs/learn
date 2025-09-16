@@ -25,7 +25,7 @@ To clean up your resource group:
     When prompted, to confirm the operation, enter `y`.
 
     > [!NOTE]
-    > If you are still signed in to SSH in Cloud Shell window from the previous step, run the `exit` command to exit SSH, then run the `az delete` command.
+    > If you're still signed in to SSH in Cloud Shell window from the previous step, run the `exit` command to exit SSH, then run the `az group delete` command.
 
 1. As an optional step, after the previous command finishes, run the following `az group list` command:
 
@@ -33,7 +33,7 @@ To clean up your resource group:
     az group list --output table
     ```
 
-    You'll see that the resource group `tailspin-space-game-rg` no longer exists.
+    You should see that the resource group `tailspin-space-game-rg` no longer exists.
 
 ## Disable the pipeline or delete your project
 

@@ -2,12 +2,10 @@
 uid: learn.azure.test-bicep-code-using-azure-pipelines.exercise-set-up-environment
 title: Exercise - Set up your environment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Set up your environment
-  description: Configure your environment to add tests to your Bicep deployment pipeline.
-  ms.date: 10/31/2022
+  description: Configure your environment so you can add tests to your Bicep deployment pipeline.
+  ms.date: 05/29/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit

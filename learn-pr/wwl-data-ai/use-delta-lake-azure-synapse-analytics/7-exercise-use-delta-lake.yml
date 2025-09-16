@@ -2,13 +2,11 @@
 uid: learn.wwl.use-delta-lake-azure-synapse-analytics.exercise-use-delta-lake
 title: Exercise - Use Delta Lake in Azure Synapse Analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Use Delta Lake in Azure Synapse Analytics
   description: "Exercise - Use Delta Lake in Azure Synapse Analytics"
-  ms.date: 10/11/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ms.custom:
   - N/A

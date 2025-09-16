@@ -2,13 +2,11 @@
 uid: learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.use-lake-database
 title: Use a lake database
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Use a lake database
+  title: Use a Lake Database
   description: "Use a lake database"
-  ms.date: 07/25/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

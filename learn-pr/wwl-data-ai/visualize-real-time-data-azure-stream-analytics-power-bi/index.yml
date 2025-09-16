@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.visualize-real-time-data-azure-stream-analytics-power-bi
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Visualize real-time data with Azure Stream Analytics and Power BI
+  title: Visualize Real-Time Data With Azure Stream Analytics and Power BI
   description: "By combining the stream processing capabilities of Azure Stream Analytics and the data visualization capabilities of Microsoft Power BI, you can create real-time data dashboards."
-  ms.date: 12/30/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module-standard-task-based
   ms.service: azure-stream-analytics
 title: Visualize real-time data with Azure Stream Analytics and Power BI

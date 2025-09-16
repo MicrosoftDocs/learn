@@ -5,25 +5,33 @@ metadata:
   prefetch-feature-rollout: true
   title: Migrate SQL Server workloads to Azure SQL Database
   description: "Learn the essentials of Azure SQL Database deployment and migration. Explore its benefits, exclusive features, and migration options while optimizing performance and application connections for a smooth transition to the cloud."
-  ms.date: 10/31/2023
-  author: wwlpublish
+  ms.date: 08/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Migrate SQL Server workloads to Azure SQL Database
 summary: You will explore different migration tools and migrate SQL Server databases to Azure SQL Database.
 abstract: |
   In this module, you'll:
-  - Explore the advantages, capabilities, and migration possibilities offered by Azure SQL Database.
-  - Migrate databases using Azure SQL Migration extension for Azure Data Studio and tracking database migration activities.
-  - Use transactional replication as an online method to migrate to Azure SQL Database.
-  - Explore several other methods for migrating SQL Server databases to Azure SQL Database.
+
+  -   Explore the advantages, capabilities, and migration possibilities offered by Azure SQL Database.
+
+  -   Migrate databases using Azure SQL Migration extension for Azure Data Studio and tracking database migration activities.
+
+  -   Use transactional replication as an online method to migrate to Azure SQL Database.
+
+  -   Explore several other methods for migrating SQL Server databases to Azure SQL Database.
 prerequisites: |
-  - Experience in administering SQL Server databases.
-  - Knowledge of SQL Server editions and versions.
-  - Knowledge of basic T-SQL.
+  -   Experience in administering SQL Server databases.
+
+  -   Knowledge of SQL Server editions and versions.
+
+  -   Knowledge of basic T-SQL.
 iconUrl: /training/achievements/migrate-sql-workloads-to-azure-sql-databases.svg
 levels:
 - intermediate
@@ -40,7 +48,6 @@ units:
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.introduction
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.choose-right-sql-database-option-azure
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-using-azure-migration-extension
-- learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-using-data-migration-assistant
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-using-bacpac
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-sql-server-azure-sql-database-online
 - learn-wwl.migrate-sql-workloads-azure-sql-databases.move-data-sql-database

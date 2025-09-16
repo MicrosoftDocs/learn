@@ -4,6 +4,7 @@ metadata:
   ms.author: sayoung
   author: sarah-yo
   ms.date: 11/11/2024
+  ms.update-cycle: 180-days
   title: Introduction to Azure OpenAI Managed Identity Authentication with Python
   description: Learn about Azure OpenAI managed identity authentication with Python.
   ms.topic: module

@@ -29,18 +29,6 @@ quiz:
       isCorrect: false
       explanation: 'Because (especially when scaling out) there are more moving parts, it may not be easier to troubleshoot.'
 
-  - content: 'Making your application or service more scalable can also make it:'
-    choices:
-    - content: 'less complex'
-      isCorrect: false
-      explanation: "With scaling, especially when scaling out, there's often an increase in complexity."
-    - content: 'more reliable'
-      isCorrect: true
-      explanation: 'Correct.'
-    - content: 'easier to troubleshoot'
-      isCorrect: false
-      explanation: 'Because (especially when scaling out) there are more moving parts, it may not be easier to troubleshoot.'
-
   - content: 'Adding more components or resources to spread the load over a distributed architecture is referred to as:'
     choices:
     - content: 'scaling up'

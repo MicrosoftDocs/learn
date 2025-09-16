@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-agents.explore-conditional-access-optimization-agent
+title: Explore the Conditional Access Optimization Agent
+metadata:
+  title: Explore the Conditional Access Optimization Agent
+  description: Explore the Conditional Access Optimization Agent.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 06/27/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/4a-explore-conditional-access-optimization-agent.md)]

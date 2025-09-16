@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-explore-azure-sap-workloads.explore-options-sap-azure
 title: Explore your options with SAP on Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore your options with SAP on Azure
   description: "Explore your options with SAP on Azure"
   ms.date: 01/08/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-explore-options-sap-azure.md)]
+  [!include[](includes/3-explore-options-sap-azure.md)]

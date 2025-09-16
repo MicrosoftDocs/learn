@@ -1,10 +1,10 @@
-The SQL Server Query Store is a per-database feature that automatically captures a history of queries, plans, and runtime statistics to simplify performance troubleshooting and query tuning. It also provides insight into database usage patterns and resource consumption. 
+The SQL Server Query Store is a per-database feature that automatically captures a history of queries, plans, and runtime statistics, simplifying performance troubleshooting and query tuning. It also provides insights into database usage patterns and resource consumption.
 
-In total, the Query Store contains three stores: 
+The Query Store consists of three stores:
 
-- Plan store - used for storing estimated execution plan information
-- Runtime stats store - used for storing execution statistics information
-- Wait stats store - for persisting wait statistics information
+- **Plan store**: Stores estimated execution plan information.
+- **Runtime stats store**: Stores execution statistics information.
+- **Wait stats store**: Persists wait statistics information.
 
 :::image type="content" source="../media/module-55-optimize-queries-final-09.png" alt-text="Screenshot of the Query Store components.":::
 
@@ -22,11 +22,11 @@ ALTER DATABASE <database_name> SET QUERY_STORE = ON;
 
 ## How the Query Store collects data
 
-The Query Store integrates with the query processing pipeline at many stages. Within each integration point, data is collected in memory and written to disk asynchronously to minimize I/O overhead. The integration points are as follows:
+The Query Store integrates with the query processing pipeline at multiple stages. At each integration point, data is collected in memory and written to disk asynchronously to minimize I/O overhead. The integration points are as follows:
 
 1. When a query executes for the first time, its query text and initial estimated execution plan are sent to the Query Store and persisted.
 
-2. The plan updates in the Query Store when a query recompiles. If the recompile results in a newly generated execution plan, it also persists in the Query Store to augment the previous plans. In addition, the Query Store keeps track of the execution statistics for each query plan for comparison purposes.
+2. The plan updates in the Query Store when a query recompile. If the recompile results in a newly generated execution plan, it also persists in the Query Store to augment the previous plans. Additionally, the Query Store keeps track of the execution statistics for each query plan for comparison purposes.
 
 3. During the compile and check for recompile phases, the Query Store identifies if there's a forced plan for the query to be executed. The query is recompiled if the Query Store provides a forced plan different from the plan in the procedure cache.
 
@@ -38,25 +38,17 @@ To learn more about how Query Store collects data, see [How Query Store collects
 
 ## Common scenarios
 
-The SQL Server Query Store provides valuable insight into the performance of the operations performed in a database. The most common scenarios include:
+The SQL Server Query Store provides valuable insights into the performance of database operations. Common scenarios include:
 
-- Identifying and fixing performance regression due to inferior query execution plan selection
-
-- Identifying and tuning the highest resource consumption queries
-
-- A/B testing to evaluate the impacts of database and application changes
-
-- Ensuring performance stability after SQL Server upgrades
-
-- Determining the most frequently used queries
-
-- Audit the history of query plans for a query
-
-- Identifying and improving ad hoc workloads
-
-- Understand the prevalent wait categories of a database and the contributing queries and plans affecting wait times
-
-- Analyze database usage patterns over time as it applies to resource consumption (CPU, I/O, Memory)
+- Identifying and fixing performance regressions due to inferior query execution plan selection.
+- Identifying and tuning the highest resource consumption queries.
+- A/B testing to evaluate the impacts of database and application changes.
+- Ensuring performance stability after SQL Server upgrades.
+- Determining the most frequently used queries.
+- Auditing the history of query plans for a query.
+- Identifying and improving unplanned workloads.
+- Understanding the prevalent wait categories of a database and the contributing queries and plans affecting wait times.
+- Analyzing database usage patterns over time in terms of resource consumption (CPU, I/O, Memory).
 
 ## Discover the Query Store views
 
@@ -66,11 +58,11 @@ Once Query Store is enabled on a database, the Query Store folder is visible for
 
 ### Regressed Queries
 
-A regressed query is a query that is experiencing performance degradation over time due to execution plan changes. Estimated execution plans change due to many factors, including schema changes, statistics changes, and index changes. The first instinct may be to investigate the procedure cache, but the problem with the procedure cache is that it only stores the latest execution plan for a query; even then, plans are evicted based on the memory demands of the system. However, the Query Store persists several execution plans stored for each query, thus providing the flexibility to choose a specific plan in a concept known as *plan forcing* to solve the issue of a query performance regression caused by a plan change.
+A regressed query experiences performance degradation over time due to execution plan changes. Estimated execution plans can change due to various factors, including schema changes, statistics changes, and index changes. Investigating the procedure cache might be the first instinct, but it only stores the latest execution plan for a query, and plans can be evicted based on the system's memory demands. The Query Store, however, persists multiple execution plans for each query, allowing the flexibility to choose a specific plan through *plan forcing* to address query performance regression caused by plan changes.
 
-The **Regressed Queries** view can pinpoint queries whose execution metrics are regressing due to execution plan changes over a specified timeframe. The Regressed Queries view allows filtering based on selecting a metric (such as duration, CPU time, row count, and more) and a statistic (total, average, min, max, or standard deviation). Then, the view lists the top 25 regressed queries based on the filter provided. A graphical bar chart view of the queries displays by default, but you can optionally view the queries in a grid format.
+The **Regressed Queries** view can pinpoint queries whose execution metrics are regressing due to execution plan changes over a specified timeframe. This view allows filtering based on a selected metric (such as duration, CPU time, row count, and more) and a statistic (total, average, min, max, or standard deviation). It then lists the top 25 regressed queries based on the provided filter. By default, a graphical bar chart view of the queries is displayed, but you can optionally view the queries in a grid format.
 
-The plan summary pane displays the persisted query plans associated with the query over time after selecting a query from the top-left query pane. You'll see a graphical query plan in the bottom pane by selecting a query plan in the Plan Summary pane. In addition, toolbar buttons are available in both the plan summary pane and graphical query plan pane to force the selected plan for the selected query. This pane structure and behavior is consistently used across all SQL Query views.
+After selecting a query from the top-left query pane, the plan summary pane displays the persisted query plans associated with the query over time. Selecting a query plan in the Plan Summary pane shows a graphical query plan in the bottom pane. Toolbar buttons in both the plan summary pane and graphical query plan pane allow you to force the selected plan for the selected query. This pane structure and behavior are consistently used across all SQL Query views.
 
 :::image type="content" source="../media/module-55-optimize-queries-final-12.png" alt-text="Screenshot of the Query Store Regressed Queries view displaying each of the different panes.":::
 
@@ -96,7 +88,7 @@ The **Top Resource Consuming Queries** view is similar to the details drill down
 
 :::image type="content" source="../media/module-55-optimize-queries-final-15.png" alt-text="Screenshot of the top resource consuming queries view for the database.":::
 
-The Top Resource Consuming Queries view provides the first indication of the ad hoc nature of the workload when identifying and improving ad hoc workloads. For example, in the following image, the *Execution Count* metric and the *Total* statistic are selected to unveil that approximately 90% of the top resource-consuming queries are only executed once.
+The **Top Resource Consuming Queries** view provides the first indication of the unplanned nature of the workload when identifying and improving unplanned workloads. For example, in the following image, the *Execution Count* metric and the *Total* statistic are selected to unveil that approximately 90% of the top resource-consuming queries are only executed once.
 
 :::image type="content" source="../media/module-55-optimize-queries-final-16.png" alt-text="Screenshot of the top resource consuming queries filtered by execution count.":::
 
@@ -128,7 +120,7 @@ The **Tracking Query** view allows analyzing a specific query based on an entere
 
 ## Using the Query Store to find query waits
 
-When the performance of a system begins to degrade, it makes sense to consult query wait statistics to potentially identify a cause. In addition to identifying queries that need tuning, it can also shed light on potential infrastructure upgrades that would be beneficial.
+When the performance of a system begins to degrade, it makes sense to consult query wait statistics to potentially identify a cause. In addition to identifying queries that need to tune, it can also shed light on potential infrastructure upgrades that would be beneficial.
 
 The SQL Query Store provides the **Query Wait Statistics** view to provide insight into the top wait categories for the database. Currently, there are [23 wait categories](/sql/relational-databases/system-catalog-views/sys-query-store-wait-stats-transact-sql).
 
@@ -136,6 +128,14 @@ A bar chart displays the most impactful wait categories for the database when yo
 
 :::image type="content" source="../media/module-55-optimize-queries-final-21.png" alt-text="Screenshot of the Query Wait Statistics view displaying the most impactful categories as a bar chart.":::
 
-Selecting a wait category will drill through to the details of the queries that contribute to that wait category. From this view, you have the ability to investigate individual queries that are the most impactful. You can access the persisted estimated execution plans display in the Plan summary pane by selecting a query in the query pane. Selecting a query plan from the Plan summary pane will display the graphical query plan in the bottom pane. From this view, you have the ability to force or unforce a query plan for the query to improve performance.
+Selecting a wait category drills through to the details of the queries that contribute to that wait category. From this view, you have the ability to investigate individual queries that are the most impactful. You can access the persisted estimated execution plans display in the Plan summary pane by selecting a query in the query pane. Selecting a query plan from the Plan summary pane displays the graphical query plan in the bottom pane. From this view, you have the ability to force or unforce a query plan for the query to improve performance.
 
 :::image type="content" source="../media/module-55-optimize-queries-final-22.png" alt-text="Screenshot of the Query Wait Statistics view displaying the most impactful queries for the wait category." lightbox="../media/module-55-optimize-queries-final-22.png":::
+
+## Automatic plan correction
+
+SQL Server 2017 and Azure SQL Database introduced the concept of automatic plan correction by analyzing data in the Query Store. When you enable the Query Store with a database in SQL Server 2017 (or later) and in Azure SQL Database, the SQL Server engine looks for query plan regressions and provides recommendations. You can see these recommendations in the `sys.dm_db_tuning_recommendations` dynamic management view (DMV). These recommendations include T-SQL statements to manually force a query plan when performance was in a good state.
+
+If you gain confidence in these recommendations, you can enable SQL Server to force plans automatically when regressions are encountered. Enable automatic plan correction by using `ALTER DATABASE` and the `AUTOMATIC_TUNING` argument.
+
+For Azure SQL Database, you can also enable automatic plan correction through automatic tuning options in the Azure portal or REST APIs. Automatic plan correction recommendations are always enabled for any database where Query Store is enabled (which is the default for Azure SQL Database and Azure SQL Managed Instance). For new databases, automatic plan correction (`FORCE_PLAN`) is enabled by default for Azure SQL Database.

@@ -5,10 +5,10 @@ You first learned the similarities and differences of SQL Server 2022 from previ
 In this module, you also learned how SQL Server 2022 solves challenges for data professionals in the following areas:
 
 - **Cloud connected**: You learned how to connect SQL Server 2022 to Azure for managed disaster recovery, near real-time analytics, security, and new licensing options.
-- **Built-in query intelligence**: You learned how to take advantage of the Query Store to reduce time for query tuning and how to accelerate performance with no code changes using the next generation of Intelligent Query Processing capabilities.
+- **Built-in query intelligence**: You learned how to take advantage of the Query Store to reduce time for query tuning. You also learned how to accelerate performance with no code changes by using the next generation of Intelligent Query Processing capabilities.
 - **Security, scalability, and availability**: You learned about new core engine features like Ledger for SQL Server, hands-free tempdb, and contained availability groups.
-- **Data virtualization**: You learned how to access data lakes of parquet and delta tables with new REST API connectors to Azure Blob Storage, Azure Data Lake Storage, and S3 compatible object storage providers.
-- **T-SQL language enhancements**: You learned about new and enhanced T-SQL functions and statements to process JSON data, to enable new core engine scenarios, and to process time series data.
+- **Data virtualization**: You learned how to access data lakes of parquet and delta tables with new REST API connectors. These new connectors give you access to Azure Blob Storage, Azure Data Lake Storage, and S3 compatible object storage providers.
+- **T-SQL language enhancements**: You learned about new and enhanced T-SQL functions and statements to process JSON data. These T-SQL enhancements enable new core engine scenarios, and allow you to process time series data.
 
 ## Learn more
 

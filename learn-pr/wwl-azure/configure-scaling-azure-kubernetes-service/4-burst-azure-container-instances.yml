@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-scaling-azure-kubernetes-service.burst-azure-container-instances
 title: Burst to Azure Container Instances
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Burst to Azure Container Instances
   description: "Burst to Azure Container Instances"
   ms.date: 10/25/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-burst-azure-container-instances.md)]
+  [!include[](includes/4-burst-azure-container-instances.md)]

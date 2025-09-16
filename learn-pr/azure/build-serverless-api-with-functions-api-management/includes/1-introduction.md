@@ -6,7 +6,7 @@ In this module, you learn how to use API Management to assemble multiple microse
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Identify the value of Azure API Management in a serverless application.
 - Import an Azure Function App as an API in Azure API Management.

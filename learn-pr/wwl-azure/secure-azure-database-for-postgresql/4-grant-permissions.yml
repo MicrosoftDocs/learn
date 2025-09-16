@@ -2,8 +2,6 @@
 uid: learn.wwl.secure-azure-database-for-postgresql.grant-permissions
 title: Grant permissions in Azure SQL Database for PostgreSQL
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Grant permissions in Azure SQL Database for PostgreSQL
   description: "Grant permissions in Azure SQL Database for PostgreSQL."
   ms.date: 05/10/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-grant-permissions.md)]
+  [!include[](includes/4-grant-permissions.md)]

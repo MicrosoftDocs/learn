@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b485720c-8027-4124-920c-323597115a8d]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 *Clustering* is a form of unsupervised machine learning in which observations are grouped into clusters based on similarities in their data values, or features. This kind of machine learning is considered unsupervised because it doesn't make use of previously known label values to train a model. In a clustering model, the label is the cluster to which the observation is assigned, based only on its features.
 
 ## Example - clustering
@@ -45,3 +56,5 @@ There are multiple metrics that you can use to evaluate cluster separation, incl
 - **Average distance to other center**: How close, on average, each point in the cluster is to the centroid of all other clusters.
 - **Maximum distance to cluster center**: The furthest distance between a point in the cluster and its centroid.
 - **Silhouette**: A value between -1 and 1 that summarizes the ratio of distance between points in the same cluster and points in different clusters (The closer to 1, the better the cluster separation).
+
+::: zone-end

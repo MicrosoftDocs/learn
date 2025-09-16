@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-release-strategy-recommendations.explore-release-gates
 title: Explore release gates
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore release gates
   description: "Explore release gates"
   ms.date: 05/21/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-explore-release-gates.md)]
+  [!include[](includes/4-explore-release-gates.md)]

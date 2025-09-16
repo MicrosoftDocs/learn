@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-package-management.consume-packages
 title: Consume packages
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Consume packages
   description: "Consume packages"
   ms.date: 05/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-consume-packages.md)]
+  [!include[](includes/7-consume-packages.md)]

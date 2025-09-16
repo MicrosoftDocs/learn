@@ -2,8 +2,6 @@
 uid: learn.wwl.create-azure-cognitive-search-solution.apply-filtering-sorting
 title: Apply filtering and sorting
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Apply filtering and sorting
   description: Apply filtering and sorting
   author: ivorb
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/6-apply-filtering-sorting.md)]
-
+

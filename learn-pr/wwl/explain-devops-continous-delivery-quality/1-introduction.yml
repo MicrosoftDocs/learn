@@ -2,8 +2,6 @@
 uid: learn.wwl.explain-devops-continous-delivery-quality.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 09/20/2020
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

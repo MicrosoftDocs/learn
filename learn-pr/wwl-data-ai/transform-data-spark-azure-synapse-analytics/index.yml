@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.transform-data-spark-azure-synapse-analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Transform data with Spark in Azure Synapse Analytics
+  title: Transform Data With Spark in Azure Synapse Analytics
   description: "Learn how to use Apache Spark pools in Azure Synapse Analytics to transform data."
-  ms.date: 08/25/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module-standard-task-based
   ms.service: azure-synapse-analytics
 title: Transform data with Spark in Azure Synapse Analytics

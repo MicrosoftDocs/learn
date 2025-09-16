@@ -2,13 +2,11 @@
 uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.get-to-know-spark
 title: Get to know Apache Spark
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Get to know Apache Spark
+  title: Get to Know Apache Spark
   description: "Get to know Apache Spark"
-  ms.date: 05/25/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

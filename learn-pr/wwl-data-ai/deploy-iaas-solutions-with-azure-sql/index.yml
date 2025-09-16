@@ -5,23 +5,33 @@ metadata:
   prefetch-feature-rollout: true
   title: Deploy IaaS solutions with Azure SQL
   description: "Deploy IaaS solutions with Azure SQL"
-  ms.date: 02/18/2025
+  ms.date: 9/12/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: azure-sql
+  ai-usage: human-only
 title: Deploy IaaS solutions with Azure SQL
 summary: Configure virtual machine sizing, storage, and networking options to ensure adequate performance for your database workloads. Choose and configure appropriate high availability options.
 abstract: |
   After completing this module, you will be able to:
-  - Explore the basics of SQL Server in an Infrastructure as a Service (IaaS) offering
-  - Learn the available options for provisioning and deployment
-  - Deploy SQL Server into an Azure Virtual Machine
+
+  -   Explore the basics of SQL Server in an Infrastructure as a Service (IaaS) offering
+
+  -   Learn the available options for provisioning and deployment
+
+  -   Deploy SQL Server into an Azure Virtual Machine
 prerequisites: |
-  - Familiarity with on-premises virtualization technologies, including: VMs, virtual networking, and virtual hard disks.
-  - Familiarity with network configuration, including TCP/IP, Domain Name System (DNS), virtual private networks (VPNs), firewalls, and encryption technologies.
-  - Ability to create an on-premises SQL Server database, including the configuration  of data files and log files.
-  - Experience creating and configuring resources using the Azure portal.
+  -   Familiarity with on-premises virtualization technologies, including: VMs, virtual networking, and virtual hard disks.
+
+  -   Familiarity with network configuration, including TCP/IP, Domain Name System (DNS), virtual private networks (VPNs), firewalls, and encryption technologies.
+
+  -   Ability to create an on-premises SQL Server database, including the configuration  of data files and log files.
+
+  -   Experience creating and configuring resources using the Azure portal.
 iconUrl: /training/achievements/deploy-sql-server-in-a-virtual-machine.svg
 levels:
 - intermediate

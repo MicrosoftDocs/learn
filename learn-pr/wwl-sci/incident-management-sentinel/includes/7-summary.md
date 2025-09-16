@@ -1,5 +1,4 @@
 
-In this module, you learned about using Microsoft Sentinel to detect and investigate security threats in an environment. You practiced using rules and alerts to investigate and identify anomalies in Contoso's Azure Activity log.
+In this module, you learned about using Microsoft Sentinel to detect and investigate security threats in your Microsoft Azure environment. You also practiced using rules and alerts to investigate and identify anomalies in Contoso's Azure Activity log, and how to use Kusto Query Language (KQL) to summarize and visualize data, which is essential for creating custom analytics rules and workbooks in Microsoft Sentinel. And, you learned how to investigate consolidated incidents in the Microsoft Defender portal.
 
 You can now lead the IT team in helping Contoso protect its security environment by managing incidents with Microsoft Sentinel. Ongoing activities might include creating custom analytics rules, using playbooks for automated responses, and using workbooks to provide dashboards and visualizations.
-

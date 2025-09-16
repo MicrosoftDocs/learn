@@ -2,13 +2,11 @@
 uid: learn.wwl.implement-synapse-link-for-sql.exercise-synapse-link-sql
 title: Exercise - Implement Azure Synapse Link for SQL
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Implement Azure Synapse Link for SQL
   description: "Exercise - Implement Azure Synapse Link for SQL"
-  ms.date: 02/10/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

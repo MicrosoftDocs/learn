@@ -2,14 +2,13 @@
 uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.implement-encryption
 title: Implement encryption in Azure Synapse Analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Implement encryption in Azure Synapse Analytics
+  title: Implement Encryption in Azure Synapse Analytics
   description: "Implement encryption in Azure Synapse Analytics"
-  ms.date: 07/04/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
+  ms.custom: sfi-ropc-nochange
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

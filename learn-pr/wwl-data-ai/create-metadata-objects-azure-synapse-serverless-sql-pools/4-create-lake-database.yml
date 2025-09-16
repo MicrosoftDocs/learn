@@ -2,13 +2,11 @@
 uid: learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.create-lake-database
 title: Create a lake database
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Create a lake database
+  title: Create a Lake Database
   description: "Create a lake database"
-  ms.date: 07/25/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

@@ -2,8 +2,6 @@
 uid: learn.wwl.design-container-build-strategy.examine-multi-stage-dockerfiles
 title: Examine multi-stage dockerfiles
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine multi-stage dockerfiles
   description: "Examine multi-stage dockerfiles"
   ms.date: 05/25/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-examine-multi-stage-dockerfiles.md)]
+  [!include[](includes/5-examine-multi-stage-dockerfiles.md)]

@@ -1,12 +1,8 @@
----
-ms.custom:
-  - build-2023
----
 To edit and run Spark code in Microsoft Fabric, you can use *notebooks*, or you can define a *Spark job*.
 
 ## Notebooks
 
-When you want to use Spark to explore and analyze data interactively, use a notebook. Notebooks enable you to combine text, images, and code written in multiple languages to create an interactive item that you can share with others and collaborate.
+When you want to use Spark to explore and analyze data interactively, use a notebook. Notebooks enable you to combine text, images, and code written in multiple languages to create an interactive item that you can share with others and collaborate on.
 
 ![Screenshot of a notebook in Microsoft Fabric.](../media/notebook.png)
 

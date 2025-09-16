@@ -2,8 +2,6 @@
 uid: learn.wwl.work-environments-azure-machine-learning.exercise
 title: Exercise - Work with environments
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Work with environments
   description: Exercise - Work with environments
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise.md)]
-
+

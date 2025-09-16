@@ -8,7 +8,7 @@ The *Dev*, *Test*, and *Staging* stages each deploy the build artifact to their 
 
 - When a change is pushed to GitHub, a *trigger* causes the *Build* stage to run. The *Build* stage produces a build artifact as its output.
 - The *Dev* stage runs only when the change happens in the *release* branch. You use a *condition* to specify this requirement.
-- The *Test* stage runs at 3 A.M. each morning. This stage runs only when the *release* branch contains changes since the last run. You use a *scheduled trigger* to specify when the *Test* stage runs.
+- The *Test* stage runs at 3 A.M. each day. This stage runs only when the *release* branch contains changes since the last run. You use a *scheduled trigger* to specify when the *Test* stage runs.
 - The *Staging* stage runs only after you approve the changes in the *Test* stage. You add a *release approval* to the **staging** environment to pause the pipeline until you approve or reject the change.
 
 This pipeline satisfies the requirements of the Tailspin team. Your pipeline's shape and how changes flow through it depend on the needs of your team, and of the apps and services that you build.
@@ -19,6 +19,6 @@ Although the team is improving their release cadence, there's room for more impr
 
 In this module, you worked with conditions, triggers, and approvals. To learn more, explore these resources.
 
-* [Conditions](/azure/devops/pipelines/process/conditions?azure-portal=true&tabs=yaml)
-* [Build pipeline triggers](/azure/devops/pipelines/build/triggers?azure-portal=true&tabs=yaml)
-* [Approvals and other checks](/azure/devops/pipelines/process/approvals?azure-portal=true)
+- [Conditions](/azure/devops/pipelines/process/conditions?azure-portal=true&tabs=yaml)
+- [Build pipeline triggers](/azure/devops/pipelines/build/triggers?azure-portal=true&tabs=yaml)
+- [Approvals and other checks](/azure/devops/pipelines/process/approvals?azure-portal=true)

@@ -2,14 +2,12 @@
 uid: learn.azure.intro-to-azure-communication-services.what-is-it
 title: What is Azure Communication Services?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Azure Communication Services?
   description: "Describes Azure Communication Services' key features and services."
   ms.date: 04/17/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: sloanster
+  ms.author: micahvivion
   ms.topic: unit
 durationInMinutes: 5
 content: |

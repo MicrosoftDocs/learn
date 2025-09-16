@@ -2,8 +2,6 @@
 uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.knowledge-check-2
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
   ms.date: 07/10/2024
@@ -48,4 +46,4 @@ quiz:
     - content: "You create a Cognitive service account that will generate an API key that can be used to access to service API"
       isCorrect: true
       explanation: "You do need an API key to access the cognitive service API in the function"
-
+

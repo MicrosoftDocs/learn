@@ -1,0 +1,145 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Test your knowledge.
+  ms.date: 08/01/2025
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which tool can you use to deploy AI models and deploy them for public consumption in software applications?"
+    choices:
+    - content: "Azure AI Foundry"
+      isCorrect: true
+      explanation: "Correct. You can use Azure AI Foundry to deploy AI models and deploy them for public consumption in software applications."
+    - content: "Azure subscriptions"
+      isCorrect: false
+      explanation: "Incorrect. You can't use Azure subscriptions to deploy AI models and deploy them for public consumption in software applications."
+    - content: "Azure AI services"
+      isCorrect: false
+      explanation: "Incorrect. You can't use Azure AI services to deploy AI models and deploy them for public consumption in software applications."
+  - content: "How does Azure AI Foundry Models process text?"
+    choices:
+     - content: "It converts text to hexadecimal format."
+       isCorrect: false
+       explanation: "Incorrect. Azure AI processes text by breaking it down into tokens."
+     - content: "By breaking it down into tokens"
+       isCorrect: true
+       explanation: "Correct. Azure AI processes text by breaking it down into tokens."
+     - content: "By converting it into squares"
+       isCorrect: false
+       explanation: "Incorrect. Azure AI processes text by breaking it down into tokens."
+  - content: "What kind of billing do Standard deployments provide for Azure AI Foundry?"
+    choices:
+    - content: "Pay-per-token billing model"
+      isCorrect: true
+      explanation: "Correct. Standard deployments provide the pay-per-token billing model for Azure AI."
+    - content: "Prepaid billing model"
+      isCorrect: false
+      explanation: "Incorrect. Standard deployments provide the pay-per-token billing model for Azure AI Foundry."
+    - content: "Provisioned billing model"
+      isCorrect: false
+      explanation: "Incorrect. Standard deployments provide the pay-per-token billing model for Azure AI Foundry."
+  - content: "You have a workload that needs to run through Azure AI Foundry. The workload isn't latency-sensitive or time-sensitive. Which type of deployment is appropriate for this scenario, cost-wise?"
+    choices:
+    - content: "Global-Batch"
+      isCorrect: true
+      explanation: "Correct. The Global-Batch deployment type would be appropriate for a workload that isn't sensitive to latency or time."
+    - content: "Global-Standard"
+      isCorrect: false
+      explanation: "Incorrect. The Global-Batch deployment type would be appropriate for a workload that isn't sensitive to latency or time."
+    - content: "Provisioned"
+      isCorrect: false
+      explanation: "Incorrect. The Global-Batch deployment type would be appropriate for a workload that isn't sensitive to latency or time."
+  - content: "What's the unit for sizing provisioned throughput deployments?"
+    choices:
+    - content: "Tokens-per-minute (TPM)"
+      isCorrect: false
+      explanation: "Incorrect. A provisioned throughput unit (PTU) is the unit for sizing provisioned throughput deployments."
+    - content: "Provisioned throughput unit (PTU)"
+      isCorrect: true
+      explanation: "Correct. A provisioned throughput unit (PTU) is the unit for sizing provisioned throughput deployments."
+    - content: "Requests-per-minute (RPM)"
+      isCorrect: false
+      explanation: "Incorrect. A provisioned throughput unit (PTU) is the unit for sizing provisioned throughput deployments."
+  - content: "What must you have in each region where you intend to create a provisioned Azure AI Foundry deployment?"
+    choices:
+    - content: "Azure AI Foundry resource"
+      isCorrect: true
+      explanation: "Correct. You must have an Azure AI resource in each region where you intend to create a provisioned Azure AI Foundry deployment."
+    - content: "Azure AI Foundry Service"
+      isCorrect: false
+      explanation: "Incorrect. You must have an Azure AI resource in each region where you intend to create a provisioned Azure AI Foundry deployment."
+    - content: "Azure AI Foundry model"
+      isCorrect: false
+      explanation: "Incorrect. You must have an Azure AI resource in each region where you intend to create a provisioned Azure AI Foundry deployment."
+  - content: "By default, on what basis are you charged when deploying Azure AI Foundry provisioned?"
+    choices:
+    - content: "Daily"
+      isCorrect: false
+      explanation: "Incorrect. By default, you're charged on an hourly basis when deploying Azure AI Foundry provisioned."
+    - content: "Hourly"
+      isCorrect: true
+      explanation: "Correct. By default, you're charged on an hourly basis when deploying Azure AI Foundry provisioned."
+    - content: "Monthly"
+      isCorrect: false
+      explanation: "Incorrect. By default, you are charged on an hourly basis when deploying Azure AI Foundry provisioned."
+  - content: "When purchasing Azure Reservation for Azure AI Foundry Provisioned, what's the minimum period of time for which you can purchase a reservation?"
+    choices:
+    - content: "One day"
+      isCorrect: false
+      explanation: "Incorrect. You must purchase an Azure Reservation for Azure AI Foundry Provisioned for a minimum period of one month."
+    - content: "One month"
+      isCorrect: true
+      explanation: "Correct. You must purchase an Azure Reservation for Azure AI Foundry Provisioned for a minimum period of one month."
+    - content: "One year"
+      isCorrect: false
+      explanation: "Incorrect. You must purchase an Azure Reservation for Azure AI Foundry Provisioned for a minimum period of one month."
+  - content: "What happens with Azure AI Foundry deployments when Azure reservation expires?"
+    choices:
+    - content: "Azure AI Foundry deployments continue to run but are billed at the hourly rate."
+      isCorrect: true
+      explanation: "Correct. Azure AI Foundry deployments continue to run but are billed at the hourly rate when Azure reservation expires."
+    - content: "Azure AI Foundry deployments stop."
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Foundry deployments continue to run but are billed at the hourly rate when Azure reservation expires."
+    - content: "Azure AI Foundry deployments continue to run but are billed at the monthly rate."
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Foundry deployments continue to run but are billed at the hourly rate when Azure reservation expires."
+  - content: "Do I need to commit to a model type when I purchase Azure AI Foundry Provisioned Throughput reservations?"
+    choices:
+    - content: "Yes"
+      isCorrect: false
+      explanation: "Incorrect. You don't need to commit to a model type when you purchase Azure AI Foundry Provisioned Throughput reservations."
+    - content: "No"
+      isCorrect: true
+      explanation: "Correct. You don't need to commit to a model type when you purchase Azure AI Foundry Provisioned Throughput reservations."
+  - content: "Is it possible to update the reservation scope from a shared scope to a single subscription, resource group, or vice-versa after the purchase of reservation?"
+    choices:
+    - content: "Yes"
+      isCorrect: true
+      explanation: "Correct. You can update the reservation scope from a shared scope to a single subscription, resource group, or vice-versa after the purchase of reservation."
+    - content: "No"
+      isCorrect: false
+      explanation: "Incorrect. You can update the reservation scope from a shared scope to a single subscription, resource group, or vice-versa after the purchase of reservation."
+  - content: "Can you exchange Azure AI Foundry Provisioned Throughput reservations?"
+    choices:
+    - content: "Yes"
+      isCorrect: true
+      explanation: "Correct. You can exchange Azure AI Foundry Provisioned Throughput reservations."
+    - content: "No"
+      isCorrect: false
+      explanation: "Incorrect. You can exchange Azure AI Foundry Provisioned Throughput reservations."
+  - content: "You need to know the monetary value of reservation consumption by an Azure subscription. Which cost data should you look for?"
+    choices:
+    - content: " Actual cost data"
+      isCorrect: false
+      explanation: "Incorrect. You should review the amortized cost data to know the monetary value of reservation consumption by an Azure subscription."
+    - content: "Amortized cost data"
+      isCorrect: true
+      explanation: "Correct. You should review the amortized cost data to know the monetary value of reservation consumption by an Azure subscription."

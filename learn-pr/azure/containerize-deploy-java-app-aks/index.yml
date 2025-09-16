@@ -1,15 +1,12 @@
 ### YamlMime:Module
 uid: learn.containerize-deploy-java-app-aks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Containerize and deploy a Java app to Azure
   description: Containerize a Java app, push the container image to Azure Container Registry, and then deploy to Azure Kubernetes Service.
   ms.date: 02/12/2025
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: yoterada
+  author: yoshioterada
+  ms.author: yoterada
   ms.topic: module
   ms.service: azure-java
 title: Containerize and deploy a Java app to Azure
@@ -48,4 +45,3 @@ units:
 
 badge:
   uid: learn.containerize-deploy-java-app-aks.badge
-

@@ -2,8 +2,6 @@
 uid: learn.wwl.project-deploy-applications-azure-kubernetes-service.exercise---provision-azure-container-registry-and-azure-kubernetes
 title: Exercise - Provision Azure Container Registry and Azure Kubernetes Service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Provision Azure Container Registry and Azure Kubernetes Service
   description: "Exercise - Provision Azure Container Registry and Azure Kubernetes Service"
   ms.date: 03/05/2025
