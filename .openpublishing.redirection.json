@@ -57998,6 +57998,11 @@
       "source_path": "learn-pr/wwl-sci/priva-consent-management/index.md",
       "redirect_url": "/training/paths/priva-data-privacy-solutions/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-consent-management/consent-management-overview.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
     }
   ]
 }
