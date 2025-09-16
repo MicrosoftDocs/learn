@@ -9,7 +9,7 @@ metadata:
   ms.topic: learning-path
 title: Implement Real-Time Intelligence with Microsoft Fabric
 prerequisites: |
-  The student should be familiar with Microsoft Fabric and SQL, basic knowledge of KQL is helpful.
+  Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
 summary: |
   Ingest, transform, and analyze streaming data with Microsoft Fabric.
   
@@ -27,5 +27,6 @@ modules:
 - learn.wwl.explore-event-streams-microsoft-fabric
 - learn.wwl.query-data-kql-database-microsoft-fabric
 - learn.wwl.create-real-time-dashboards-microsoft-fabric
+- learn.wwl.use-fabric-activator
 trophy:
   uid: learn.wwl.explore-real-time-analytics-microsoft-fabric.trophy

@@ -46,6 +46,5 @@ modules:
 # - learn.capture-page-load-times-application-insights
 # - learn.instrument-web-app-code-with-application-insights
 - learn.cmu-cloud-admin.cmu-monitor-cloud-resources
-- learn.design-monitoring-strategy-on-azure
 trophy:
   uid: az-400-develop-instrumentation-strategy.trophy
