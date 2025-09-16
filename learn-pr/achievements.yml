@@ -6835,6 +6835,31 @@ achievements:
   title: Intermediate Bicep
   summary: Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your deployments more consistent and repeatable.
   iconUrl: /training/achievements/bicep/intermediate-bicep.svg
+- uid: learn.choose-messaging-model.badge
+  type: badge
+  title: Choose a messaging model in Azure to loosely connect your services
+  summary: When you have an application that consists of components running on different computers, servers, and mobile devices, reliable communications between those components can be difficult and unreliable. Azure provides several technologies that you can use to communicate more reliably, including Storage queues, Event Hubs, Event Grid, and Service Bus. This module shows you how to choose the best technology for your communication task.
+  iconUrl: /training/achievements/choose-a-messaging-model-in-azure-to-connect-your-services.svg
+- uid: learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.badge
+  type: badge
+  title: Monitor Azure Arc-enabled SQL Managed Instance security performance
+  summary: Azure Arc-enabled SQL Managed Instance offers a secure and performant solution for deploying the SQL Server database engine in a wide range of hybrid scenarios.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.connect-your-services-together.trophy
+  type: trophy
+  title: Connect your services together
+  summary: "Azure lets you create applications composed of various components: web site front-ends, back-end services, and triggered functions that perform compute-on-demand services. Azure also includes various communication strategies to let these various components pass data to each other. Learn how to use these communication services to create scalable, efficient solutions out of testable components. This learning path can help you prepare for the [Microsoft Certified: Azure Developer Associate certification](/certifications/azure-developer)."
+  iconUrl: /training/achievements/connect-your-services-together.svg
+- uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.badge
+  type: badge
+  title: Enable reliable messaging for Big Data applications using Azure Event Hubs
+  summary: Connect sending and receiving applications with Event Hubs so you can handle high loads without losing data.
+  iconUrl: /training/achievements/enable-reliable-messaging-for-big-data-apps-using-azure-event-hubs.svg
+- uid: learn.design-monitoring-strategy-on-azure.badge
+  type: badge
+  title: Design a full-stack monitoring strategy on Azure
+  summary: Use monitoring services on Azure to help bring operational excellence and security to your applications and infrastructure.
+  iconUrl: /training/achievements/design-monitoring-strategy-on-azure.svg
 - uid: learn.get-started-azure-arc-sql-managed-instance.trophy
   type: trophy
   title: Implement Azure Arc-enabled SQL Managed Instance in your hybrid environment
@@ -6965,3 +6990,18 @@ achievements:
   title: Introduction to Azure Private 5G Core
   summary: Introduces Azure Private 5G Core, which provides 5G core network functions as part of an on-premises private mobile network for enterprises.
   iconUrl: /learn/achievements/intro-to-azure-private-5g-core.svg
+- uid: learn.wwl.priva-consent-management.badge
+  type: badge
+  title: Manage user consent across digital platforms
+  summary: Microsoft Priva Consent Management helps organizations manage user consent preferences, ensuring transparency and alignment with privacy expectations. Learn how to configure consent models, set up prerequisites, deploy publishing profiles, and manage consent across digital platforms.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.priva-privacy-assessments.badge
+  type: badge
+  title: Automate privacy assessments to ensure compliance
+  summary: Microsoft Priva Privacy Assessments (preview) helps organizations track and document how personal data is used across business operations. Automating privacy assessments reduces manual effort, ensures compliance records stay accurate, and enables privacy teams to evaluate data processing activities in real time. Learn how to configure business assets, create assessments, define privacy rules, and assess privacy risks based on structured responses.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.priva-tracker-scanning.badge
+  type: badge
+  title: Use Microsoft Priva Tracker Scanning for web tracking compliance
+  summary: Microsoft Priva Tracker Scanning helps organizations identify, categorize, and manage web tracking technologies to ensure compliance and transparency. Learn how to configure Tracker Scanning, create and manage tracker categories, run scans to detect tracking technologies, and support responsible data practices aligned with user expectations.
+  iconUrl: /training/achievements/generic-badge.svg
