@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-event-streams-microsoft-fabric.exercise
-title: Exercise - Ingest real-time data with eventstream in Microsoft Fabric
+title: Exercise - Ingest real-time data with Eventstream in Microsoft Fabric
 metadata:
-  title: Ingest real-time data with eventstream in Microsoft Fabric
-  description: "Try Microsoft Fabric eventstream for yourself."
-  ms.date: 09/03/2025
+  title: Ingest real-time data with Eventstream in Microsoft Fabric
+  description: "Try Microsoft Fabric Eventstream for yourself."
+  ms.date: 09/10/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: unit

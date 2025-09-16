@@ -2,11 +2,11 @@
 uid: learn.wwl.get-started-kusto-fabric.knowledge-check
 title: Module assessment
 metadata:
-  hidden_question_numbers: ["BA62E8ED_30","BA62E8ED_38","BA62E8ED_6"]
+  hidden_question_numbers: ["1A709C42_34","1A709C42_38","1A709C42_6","1A709C42_47","1A709C42_75","1A709C42_104","1A709C42_120","1A709C42_128","1A709C42_136"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/28/2025
+  ms.date: 09/10/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: unit

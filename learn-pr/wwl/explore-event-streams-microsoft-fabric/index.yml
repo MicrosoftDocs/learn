@@ -1,21 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-event-streams-microsoft-fabric
 metadata:
-  title: Use eventstream in Microsoft Fabric
+  title: Use Eventstream in Microsoft Fabric
   description: "Eventstream in Real-Time Intelligence (RTI) enables you to ingest, transform, and route real-time data."
-  ms.date: 09/03/2025
+  ms.date: 09/10/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: module-standard-task-based
   ms.service: fabric
   ms.subservice: rti-eventstream
   ai-usage: human-only
-title: Use eventstream in Microsoft Fabric
+title: Use Eventstream in Microsoft Fabric
 summary: Eventstream in Real-Time Intelligence (RTI) enables you to ingest, transform, and route real-time data.
 abstract: |
   After completing this module, you'll be able to:
-  - Establish source and destinations in eventstream in Microsoft Fabric.
-  - Capture, transform, and route data using eventstream in Microsoft Fabric.
+  - Explain the components of Eventstream
+  - Establish sources and destinations in Eventstream
+  - Capture, transform, and route data using Eventstream
 prerequisites: Before starting this module, you should be familiar with Microsoft Fabric and real-time data concepts.
 iconUrl: /training/achievements/explore-event-streams-in-microsoft-fabric.svg
 levels:

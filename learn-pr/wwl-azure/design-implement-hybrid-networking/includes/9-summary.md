@@ -6,7 +6,7 @@ In this module, you learned about the Azure VPN gateway. The Azure VPN gateway e
 + Most VPN gateways are route-based. Route-based gateways use dynamic routing. 
 + There are several high availability options for VPN connections. The default option is active-standby but you can also configure active-active. 
 + A site-to-site VPN gateway uses IPsec tunnels to secure connections between virtual and physical networks. 
-+ A point-to-point VPN gateway creates a secure connection to your virtual network from an individual client computer. Several authentication methods are available including Microsoft Entra ID and Active Directory Domain Services.
++ A point-to-site VPN gateway creates a secure connection to your virtual network from an individual client computer. Several authentication methods are available including Microsoft Entra ID and Active Directory Domain Services.
 + Network virtual appliances support connecting many different technologies. You can deploy partner solutions from the Microsoft Azure Marketplace.
 
 ### Learn more with Copilot
