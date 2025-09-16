@@ -6970,3 +6970,8 @@ achievements:
   title: Manage user consent across digital platforms
   summary: Microsoft Priva Consent Management helps organizations manage user consent preferences, ensuring transparency and alignment with privacy expectations. Learn how to configure consent models, set up prerequisites, deploy publishing profiles, and manage consent across digital platforms.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.priva-privacy-assessments.badge
+  type: badge
+  title: Automate privacy assessments to ensure compliance
+  summary: Microsoft Priva Privacy Assessments (preview) helps organizations track and document how personal data is used across business operations. Automating privacy assessments reduces manual effort, ensures compliance records stay accurate, and enables privacy teams to evaluate data processing activities in real time. Learn how to configure business assets, create assessments, define privacy rules, and assess privacy risks based on structured responses.
+  iconUrl: /training/achievements/generic-badge.svg
