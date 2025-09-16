@@ -58088,6 +58088,11 @@
       "source_path": "learn-pr/wwl-sci/priva-tracker-scanning/create-manage-trackers.md",
       "redirect_url": "/training/paths/priva-data-privacy-solutions/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-tracker-scanning/introduction.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
     }
   ]
 }
