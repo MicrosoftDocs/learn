@@ -57972,7 +57972,47 @@
       "source_path": "learn-pr/paths/dotnet-aspire-azure/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-azure-app-service-web-apps/",
       "redirect_document_id": false
-     },
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/2-create-your-service-bus-premium-namespace.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/3-messaging-with-jms-and-service-bus.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/4-send-messages-to-service-bus.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/5-receive-messages-from-service-bus.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
     {
       "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
