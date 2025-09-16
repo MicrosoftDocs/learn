@@ -58058,6 +58058,11 @@
       "source_path": "learn-pr/wwl-sci/priva-privacy-assessments/introduction.md",
       "redirect_url": "/training/paths/priva-data-privacy-solutions/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-privacy-assessments/knowledge-check.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
     }
   ]
 }
