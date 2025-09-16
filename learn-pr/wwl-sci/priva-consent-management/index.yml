@@ -37,7 +37,6 @@ subjects:
 - compliance
 - security
 units:
-- learn.wwl.priva-consent-management.knowledge-check
 - learn.wwl.priva-consent-management.summary
 
 badge:
