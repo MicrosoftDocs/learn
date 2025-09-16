@@ -104,4 +104,4 @@ Writing PR descriptions is often the last step in the process and can feel like 
 
 Sometimes you may be unfamiliar with the code in a pull request. Instead of struggling through it, you can ask Copilot to explain the changes. Copilot can also run an initial review of your own PRs before you request feedback from teammates. This helps catch smaller issues, validates best practices, and gives you more confidence in the quality of your submission.
 
-You now know what Copilot is capable of when it comes to code reviews. Next, let's see how to use Copilot reviews directly on [GitHub.com](http://github.com).
+You now know what Copilot is capable of when it comes to code reviews. Next, let's see how to use Copilot reviews directly on [GitHub.com](https://github.com/).
