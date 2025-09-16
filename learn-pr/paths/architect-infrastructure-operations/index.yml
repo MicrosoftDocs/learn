@@ -26,7 +26,6 @@ subjects:
 - infrastructure
 modules:
 - learn.control-and-organize-with-resource-manager
-- learn.design-monitoring-strategy-on-azure
 - learn.incident-response-with-alerting-on-azure
 trophy:
   uid: learn.architect-infrastructure-operations.trophy
