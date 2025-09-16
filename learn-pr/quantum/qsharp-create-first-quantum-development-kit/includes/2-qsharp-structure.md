@@ -59,7 +59,7 @@ operation Main() : Unit {
 ```
 
 > [!NOTE]
-> In Q#, the `Unit` type means that the function or operation doesn't return a value. For more information about types in Q#, see [Type System](xref:microsoft.quantum.qsharp.typesystem-overview).
+> In Q#, the `Unit` type means that the function or operation doesn't return a value. For more information about types in Q#, see [Type System](https://learn.microsoft.com/azure/quantum/user-guide/language/typesystem/).
 
 You can import namespaces in the standard library with `Std` instead of `Microsoft.Quantum`. For example, the following code imports all functions and operations from the `Microsoft.Quantum.Intrinsic` namespace:
 
