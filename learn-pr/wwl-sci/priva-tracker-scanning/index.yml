@@ -39,7 +39,6 @@ subjects:
 units:
 - learn.wwl.priva-tracker-scanning.tracker-scanning-overview
 - learn.wwl.priva-tracker-scanning.view-scan-results
-- learn.wwl.priva-tracker-scanning.summary
 
 badge:
   uid: learn.wwl.priva-tracker-scanning.badge
