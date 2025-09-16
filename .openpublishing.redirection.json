@@ -57335,6 +57335,76 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/2-explore-security-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/3-monitor-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/4-exercise-monitor-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/index.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-a-messaging-model-in-azure-to-connect-your-services/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/messaging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-a-messaging-model-in-azure-to-connect-your-services/2-choose-whether-to-use-message-queues-or-events.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/messaging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-a-messaging-model-in-azure-to-connect-your-services/3-choose-azure-storage-queues.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/messaging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-a-messaging-model-in-azure-to-connect-your-services/4-choose-event-grid.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/messaging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-a-messaging-model-in-azure-to-connect-your-services/5-choose-azure-event-hubs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/messaging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-a-messaging-model-in-azure-to-connect-your-services/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/messaging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-a-messaging-model-in-azure-to-connect-your-services/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/messaging",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
       "redirect_document_id": false
