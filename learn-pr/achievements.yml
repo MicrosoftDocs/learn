@@ -6965,3 +6965,8 @@ achievements:
   title: Introduction to Azure Private 5G Core
   summary: Introduces Azure Private 5G Core, which provides 5G core network functions as part of an on-premises private mobile network for enterprises.
   iconUrl: /learn/achievements/intro-to-azure-private-5g-core.svg
+- uid: learn.wwl.priva-consent-management.badge
+  type: badge
+  title: Manage user consent across digital platforms
+  summary: Microsoft Priva Consent Management helps organizations manage user consent preferences, ensuring transparency and alignment with privacy expectations. Learn how to configure consent models, set up prerequisites, deploy publishing profiles, and manage consent across digital platforms.
+  iconUrl: /training/achievements/generic-badge.svg
