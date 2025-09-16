@@ -38,7 +38,6 @@ subjects:
 - security
 units:
 - learn.wwl.priva-consent-management.introduction
-- learn.wwl.priva-consent-management.create-package-publish-profile
 - learn.wwl.priva-consent-management.knowledge-check
 - learn.wwl.priva-consent-management.summary
 
