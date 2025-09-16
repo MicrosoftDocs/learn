@@ -19,7 +19,7 @@ abstract: |
   - Simplify device and user management across cloud and hybrid environments with Entra join and Conditional Access.
 prerequisites: |
   - None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/introduction-to-entra-id.svg
 ratingEnabled: false
 levels:
   - intermediate

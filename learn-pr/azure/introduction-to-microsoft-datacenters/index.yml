@@ -2,10 +2,10 @@
 uid: learn.discover-how-microsoft-datacenters-work
 metadata:
   title: Introduction to Microsoft Datacenters
-  description: TBD
+  description: Describes the physical infrastructure of the Microsoft Cloud and its datacenters.
   ms.date: 07/17/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: kiranchandratrey
+  ms.author: elenasim
   ms.topic: module
   ms.service: azure-cloud-services-classic
 title: Introduction to Microsoft Datacenters
@@ -42,4 +42,3 @@ units:
 - learn.introduction-to-microsoft-datacenters.summary
 badge:
   uid: learn.discover-how-microsoft-datacenters-work-badge
-

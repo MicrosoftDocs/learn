@@ -4,10 +4,10 @@ title: Automate actions
 metadata:
   title: Automate actions
   description: "Automate actions"
-  ms.date: 08/28/2025
+  ms.date: 09/10/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/4c-activator.md)]

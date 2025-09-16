@@ -9,7 +9,7 @@ Within an eventhouse, you can create:
 
 ## Understand the power of Kusto Query Language (KQL)
 
-To query data in a table in a KQL database, you can use the **Kusto Query Language (KQL)**. KQL is specifically designed for analyzing large volumes of structured, semi-structured, and unstructured data with exceptional performance. KQL databases are optimized for time-series data and index incoming data by ingestion time and partition it for optimal query performance. KQL is the same language used in Azure Data Explorer, Azure Monitor Log Analytics, Microsoft Sentinel, and in Microsoft Fabric.
+To query data in a table in a KQL database, you can use the **KQL**. KQL is specifically designed for analyzing large volumes of structured, semi-structured, and unstructured data with exceptional performance. KQL databases are optimized for time-series data and index incoming data by ingestion time and partition it for optimal query performance. KQL is the same language used in Azure Data Explorer, Azure Monitor Log Analytics, Microsoft Sentinel, and in Microsoft Fabric.
 
 ## Get familiar with KQL syntax
 
@@ -30,7 +30,7 @@ stock
 ```
 
 > [!TIP]
-> To learn more about KQL, see **[Kusto Query Language (KQL) overview](/kusto/query/)**.
+> To learn more about KQL, see **[Kusto Query Language (KQL) overview](/kusto/query/?azure-portal=true)**.
 
 ## Automate data processing with management commands
 
@@ -41,13 +41,13 @@ Beyond basic querying, you can automate data processing through **management com
 - **Stored functions**: Save frequently used query logic that you can reuse across multiple queries.
 
 > [!TIP]
-> For more information about working with KQL databases, including detailed examples of update policies, materialized views, and stored functions, see **[Work with real-time data in a Microsoft Fabric Eventhouse](/training/modules/query-data-kql-database-microsoft-fabric/)**.
+> For more information about working with KQL databases, including detailed examples of update policies, materialized views, and stored functions, see **[Work with real-time data in a Microsoft Fabric Eventhouse](/training/modules/query-data-kql-database-microsoft-fabric/?azure-portal=true)**.
 
 ## Other query options
 
 ### Using SQL
 
-KQL databases in Eventhouses also support a subset of common SQL expressions for data professionals already familiar with SQL syntax. For example:
+KQL databases in Eventhouses also support a subset of common T-SQL expressions for data professionals already familiar with T-SQL syntax. For example:
 
 ```sql
 SELECT TOP 10 * FROM stock;
@@ -58,4 +58,4 @@ SELECT TOP 10 * FROM stock;
 Microsoft Fabric includes Copilot for Real-Time Intelligence, which can help you write queries to extract insights from your Eventhouse data. Copilot uses AI to understand what you're looking for and can generate the required query code.
 
 > [!TIP]
-> To learn more about Copilot for Real-Time Intelligence, see **[Copilot for Real-Time Intelligence](/fabric/real-time-intelligence/copilot-writing-queries)**.
+> To learn more about Copilot for Real-Time Intelligence, see **[Copilot for Real-Time Intelligence](/fabric/real-time-intelligence/copilot-writing-queries?azure-portal=true)**.
