@@ -57365,6 +57365,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/azure-sql-intro/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/2-azure-sql-history.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/3-deployment-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/3-features.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/4-purchasing-models-service-tiers.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/5-management-interfaces.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/scale-sql-databases-elastic-pools/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/elastic-pool-overview",
       "redirect_document_id": false
