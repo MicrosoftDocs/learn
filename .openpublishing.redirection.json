@@ -57335,6 +57335,121 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/provision-azure-sql-db/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/single-database-create-quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-azure-sql-db/2-plan-your-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/single-database-create-quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-azure-sql-db/3-create-your-database.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/single-database-create-quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-azure-sql-db/4-connect-add-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/single-database-create-quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-azure-sql-db/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/single-database-create-quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/provision-azure-sql-db/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/single-database-create-quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/2-azure-sql-history.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/3-deployment-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/3-features.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/4-purchasing-models-service-tiers.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/5-management-interfaces.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-intro/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/scale-sql-databases-elastic-pools/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/elastic-pool-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/scale-sql-databases-elastic-pools/2-create-elastic-pool.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/elastic-pool-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/scale-sql-databases-elastic-pools/3-exercise-create-elastic-pool.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/elastic-pool-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/scale-sql-databases-elastic-pools/4-manage-elastic-pools.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/elastic-pool-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/scale-sql-databases-elastic-pools/5-exercise-manage-elastic-pools.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/elastic-pool-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/scale-sql-databases-elastic-pools/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/elastic-pool-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/scale-sql-databases-elastic-pools/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/elastic-pool-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/scale-sql-databases-elastic-pools/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/elastic-pool-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/work-with-relational-data-in-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-data-fundamentals-explore-relational-data/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
       "redirect_document_id": false
@@ -57857,7 +57972,47 @@
       "source_path": "learn-pr/paths/dotnet-aspire-azure/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-azure-app-service-web-apps/",
       "redirect_document_id": false
-     },
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/2-create-your-service-bus-premium-namespace.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/3-messaging-with-jms-and-service-bus.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/4-send-messages-to-service-bus.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/5-receive-messages-from-service-bus.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-scale-messaging-with-jms-service-bus/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/jms-developer-guide",
+      "redirect_document_id": false
+    },
     {
       "source_path": "learn-pr/azure/move-azure-resources-another-resource-group/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/resource-mover/",
