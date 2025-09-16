@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.priva-understand-microsoft-priva.configure-priva-settings
-title: Microsoft Priva prerequisites
+title: Configure Microsoft Priva settings
 metadata:
-  title: Microsoft Priva prerequisites
-  description: "Microsoft Priva prerequisites"
-  ms.date: 01/17/2025
+  title: Configure Microsoft Priva Settings
+  description: "Configure Microsoft Priva settings"
+  ms.date: 09/10/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/configure-priva-settings.md)]

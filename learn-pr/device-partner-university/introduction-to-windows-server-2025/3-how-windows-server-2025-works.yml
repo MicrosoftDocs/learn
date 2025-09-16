@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-windows-server-2025.how-windows-server-2025-works
+title: How Windows Server 2025 works
+metadata:
+  title: How Windows Server 2025 Works
+  description: This content is part of the "Introduction to Windows Server 2025" module.
+  ms.date: 08/27/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-how-windows-server-2025-works.md)]

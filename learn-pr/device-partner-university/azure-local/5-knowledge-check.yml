@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.azure-local.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Azure Local" module.
+  ms.date: 09/10/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary purpose of Azure Local?"
+    choices:
+        - content: "To replace Azure cloud services entirely"
+          isCorrect: false
+          explanation: "Incorrect. Azure Local complements Azure cloud services, not replaces them."
+        - content: "To run virtual machines and services on-premises with Azure integration"
+          isCorrect: true
+          explanation: "Correct. Azure Local enables on-premises workloads while integrating with Azure for centralized management."
+        - content: "To provide internet connectivity to remote offices"
+          isCorrect: false
+          explanation: "Incorrect. Azure Local doesn't function as a network provider."
+        - content: "To manage only cloud-native applications"
+          isCorrect: false
+          explanation: "Incorrect. Azure Local supports both traditional and modern workloads, not just cloud-native ones."
+  - content: "Which component of Azure Local ensures workloads continue running during hardware failure?"
+    choices:
+        - content: "Software-defined networking"
+          isCorrect: false
+          explanation: "Incorrect. This manages virtual networks and security policies, not workload continuity."
+        - content: "Windows Admin Center"
+          isCorrect: false
+          explanation: "Incorrect. It provides management and monitoring, but not fault tolerance."
+        - content: "Failover clustering"
+          isCorrect: true
+          explanation: "Correct. It ensures workloads continue running even if a server fails."
+        - content: "Azure Monitor"
+          isCorrect: false
+          explanation: "Incorrect. It collects performance metrics but doesn't handle failover."
+  - content: "What tool allows centralized policy enforcement and backup from the cloud in Azure Local?"
+    choices:
+        - content: "Windows Admin Center"
+          isCorrect: false
+          explanation: "Incorrect. It's used for local management, not cloud-based policy enforcement."
+        - content: "Azure Arc"
+          isCorrect: true
+          explanation: "Correct. Azure Arc connects on-premises environments to Azure for centralized management and backup."
+        - content: "Hyper-V"
+          isCorrect: false
+          explanation: "Incorrect. Hyper-V is the virtualization engine, not a management tool."
+        - content: "BitLocker"
+          isCorrect: false
+          explanation: "Incorrect. BitLocker encrypts data at rest but doesn't manage policies or backups."
+  - content: "Which feature of Azure Local helps protect data during disk or server failure?"
+    choices:
+        - content: "Secure Boot"
+          isCorrect: false
+          explanation: "Incorrect. Secure Boot ensures only trusted software runs, not data protection during failure."
+        - content: "Storage mirroring"
+          isCorrect: true
+          explanation: "Correct. It protects against disk or server failure by duplicating data."
+        - content: "Azure Site Recovery"
+          isCorrect: false
+          explanation: "Incorrect. It provides disaster recovery but not local mirroring."
+        - content: "Shielded virtual machines"
+          isCorrect: false
+          explanation: "Incorrect. They enhance security but don't mirror storage."
+  - content: "Why might Azure Local not be a good fit for some organizations?"
+    choices:
+        - content: "It requires cloud integration to unlock full benefits"
+          isCorrect: true
+          explanation: "Correct. Organizations avoiding cloud connectivity might miss key advantages."
+        - content: "It supports only containerized workloads"
+          isCorrect: false
+          explanation: "Incorrect. Azure Local supports both virtual machines and containers."
+        - content: "It eliminates the need for virtualization"
+          isCorrect: false
+          explanation: "Incorrect. Virtualization is a core component of Azure Local."
+        - content: "It runs on any hardware configuration"
+          isCorrect: false
+          explanation: "Incorrect. Azure Local must run on validated hardware from approved vendors."

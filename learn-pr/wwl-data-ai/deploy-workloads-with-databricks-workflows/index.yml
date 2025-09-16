@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-workloads-with-databricks-workflows
 metadata:
   title: Deploy Workloads with Lakeflow Jobs
   description: "Learn how to deploy workloads with Lakeflow Jobs"
-  ms.date: 09/03/2025
+  ms.date: 09/12/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: module-standard-task-based
