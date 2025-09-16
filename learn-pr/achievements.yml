@@ -6975,3 +6975,8 @@ achievements:
   title: Automate privacy assessments to ensure compliance
   summary: Microsoft Priva Privacy Assessments (preview) helps organizations track and document how personal data is used across business operations. Automating privacy assessments reduces manual effort, ensures compliance records stay accurate, and enables privacy teams to evaluate data processing activities in real time. Learn how to configure business assets, create assessments, define privacy rules, and assess privacy risks based on structured responses.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.priva-tracker-scanning.badge
+  type: badge
+  title: Use Microsoft Priva Tracker Scanning for web tracking compliance
+  summary: Microsoft Priva Tracker Scanning helps organizations identify, categorize, and manage web tracking technologies to ensure compliance and transparency. Learn how to configure Tracker Scanning, create and manage tracker categories, run scans to detect tracking technologies, and support responsible data practices aligned with user expectations.
+  iconUrl: /training/achievements/generic-badge.svg
