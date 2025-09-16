@@ -1,87 +1,109 @@
 
-Before you start writing quantum programs, it's important to understand the structure and components of a Q# program.
+Before you write your own quantum programs, it's important to understand the structure and components of the Q# programming language.
 
-In this unit, you review the main components of a Q# program.
+In this unit, you learn about the basic components of a Q# program.
 
 ## The `Main` operation
 
-Every Q# program must contain at least one operation, which is usually the `Main` operation. The `Main` operation is the entry point of your program. By default, the Q# compiler starts executing a program from the `Main()` operation. Optionally, you can use the `@EntryPoint()` attribute to specify any operation in the program as the point of execution.
-
-For example, the following code defines an entry point operation, `MeasureOneQubit`:
+Every Q# program must contain at least one operation. The Q# compiler begins to run a program from the entry point operation, which is the `Main` operation by default. For example, the following Q# program contains an operation called `Main` that creates a qubit and returns a measurement of the qubit's state:
 
 ```qsharp
-@EntryPoint()
-operation MeasureOneQubit() : Result {
-    ...
+// This operation is the entry point to your program because it's name is Main
+operation Main() : Result {
+    use q = Qubit();
+    return M(q);
 }
 ```
 
-However, you can also write that code without the `@EntryPoint()` attribute by renaming the `MeasureOneQubit()` operation to `Main()`:
+Your Q# code can't run without an entrypoint operation. If you want to use an operation other than `Main` as your entry point, then use the `@EntryPoint()` attribute. For example, the following code gives the preceding operation a more descriptive name, `MeasureOneQubit`, and defines that operation as the entry point to your Q# program:
 
 ```qsharp
-// The Q# compiler automatically detects the Main() operation as the entry point. 
-operation Main() : Result {
-    ...
+// The @EntryPoint() attribute tells the compiler to start running your code from this operation
+@EntryPoint()
+operation MeasureOneQubit() : Result {
+    use q = Qubit();
+    return M(q);
 }
 ```
 
 ## Types
 
-Q# provides many built-in types you might be already familiar with, including `Int`, `Double`, `Bool`, and `String`. Q# also provides types specific to quantum computing, such as `Qubit` and `Result`.
+Q# provides many built-in data types that you might already be familiar with, such as `Int`, `Double`, `Bool`, and `String`. Q# also provides types that are specific to quantum computing, such as `Qubit` and `Result`.
 
-In this example, the `MeasureOneQubit` operation returns a `Result` type. A `Result` type is the result of measuring a qubit and can be either `One` or `Zero`.
-
-```qsharp
-operation MeasureOneQubit() : Result {
-    ...
-}
-```
+For example, the `MeasureOneQubit` operation returns a `Result` type value. The `Result` type represents the state of a qubit when the qubit is measured, and can have a value of either `Zero` or `One`.
 
 ## Quantum libraries
 
-The Q# libraries contain functions and operations that you can use in quantum programs. When you call a function or operation from a library, you use the `import` directive and specify the library's namespace. For example, to use the `Message` function from the `Microsoft.Quantum.Intrinsic` namespace in the Standard quantum library, you use the following code:
+Q# comes with several libraries that contain functions and operations to help you write quantum programs. To call a function or operation from a library, use the `import` keyword and specify the library's namespace. For example, to use the `Message` function from the `Microsoft.Quantum.Intrinsic` namespace in the standard quantum library, use the following code:
 
 ```qsharp
-// imports all functions and operations from Microsoft.Quantum.Intrinsic 
+// import all functions and operations from Microsoft.Quantum.Intrinsic 
 import Microsoft.Quantum.Intrinsic.*;
+
+operation Main() : Unit {
+    // call the Message function from Microsoft.Quantum.Intrinsic
     Message("Hello quantum world!");
+}
+```
 
+The asterisk means that you import all of the functions from the `Microsoft.Quantum.Intrinsic` namespace. Alternatively, you can import only the `Message` function:
 
-// imports just the `Message` function from Microsoft.Quantum.Intrinsic
+```qsharp
+// import only the Message function from Microsoft.Quantum.Intrinsic 
 import Microsoft.Quantum.Intrinsic.Message;
+
+operation Main() : Unit {
+    // call the Message function from Microsoft.Quantum.Intrinsic
     Message("Hello quantum world!");
+}
 ```
 
-Namespaces in the Standard library can be imported using `Std` instead of `Microsoft.Quantum`. For example:
+> [!NOTE]
+> In Q#, the `Unit` type means that the function or operation doesn't return a value. For more information about types in Q#, see [Type System](https://learn.microsoft.com/azure/quantum/user-guide/language/typesystem/).
+
+You can import namespaces in the standard library with `Std` instead of `Microsoft.Quantum`. For example, the following code imports all functions and operations from the `Microsoft.Quantum.Intrinsic` namespace:
 
 ```qsharp
-// imports all functions and operations from Microsoft.Quantum.Intrinsic == Std.Intrinsic
+// import everything from Std.Intrinsic (Microsoft.Quantum.Intrinsic)
 import Std.Intrinsic.*;
+
+operation Main() : Unit {
+    // call the Message function from Std.Intrinsic
     Message("Hello quantum world!");
+}
 ```
 
-## Allocating qubits
+To explore the Q# standard library, see the [API reference](https://learn.microsoft.com/qsharp/api/qsharp-lang/).
 
-In Q#, to allocate a qubit, you use the `use` keyword and the `Qubit` type. Every qubit you allocate with the `use` keyword starts in the $\ket{0}$ state.
+## Qubit allocation
 
-You can allocate one or many qubits at a time. Here's an example that allocates one and five qubits:
+To allocate a qubit in Q#, use the `use` keyword and the `Qubit` type. Qubits that you allocate with the `use` keyword always start in the $\ket{0}$ state.
+
+You can allocate a single qubit, or multiple qubits in a qubit array. Here's an example that allocates a single qubit in the variable `q1` and an array of five qubits in `q5`:
 
 ```qsharp
-use q1 = Qubit(); // Allocate one qubit
+use q1 = Qubit();  // Allocate one qubit
 use q5 = Qubit[5]; // Allocate five qubits
 ```
 
-## Measuring qubits
+## Qubit measurement
 
-In Q#, the `Measure` operation performs a joint measurement of one or more qubits in the specified Pauli bases, which can be `PauliX`, `PauliY`, or `PauliZ`. The `Measure` operation returns a `Result` type that is either `One` or `Zero`.
+In Q#, the `Measure` operation performs a joint measurement of one or more qubits in the specified Pauli bases, which can be `PauliX`, `PauliY`, or `PauliZ`. The `Measure` operation returns a `Result` type that has a value of either `Zero` or `One`.
 
-To implement a measurement in the computational basis $\lbrace\ket{0},\ket{1}\rbrace$ you can also use the `M` operation, which performs a measurement in the Pauli Z-basis. Thus, the `M` operation is equivalent to applying `Measure([PauliZ], [qubit])`.
+To perform a measurement in the computational basis $\lbrace\ket{0},\ket{1}\rbrace$, you can also use the `M` operation. The `M` operation is equivalent to the `Measure` operation in the Pauli-Z basis, so `M([qubit])` behaves exactly the same as `Measure([PauliZ], [qubit])`. However, the `M` operation accepts only single qubits as input, not qubit arrays.
 
-## Resetting qubits
+## Reset qubits
 
-In Q#, qubits must be in the $\ket{0}$ state by the time they're released. When you finish using a qubit, you use the `Reset` operation to reset the qubit to the $\ket{0}$ state.
+In Q#, qubits must be in the $\ket{0}$ state to release them. When you finish using a qubit, call the `Reset` operation to reset the qubit to the $\ket{0}$ state. For example, the following code allocates a qubit, measures the qubit's state, and then resets the qubit:
 
 ```qsharp
-    // Reset the qubit so it can be safely released.
-    Reset(qubit);
+operation Main() : Result {
+    use q = Qubit();
+    let result = M(q);
+
+    // Reset the qubit so that you can release it
+    Reset(q);
+
+    return result;
+    }
 ```
