@@ -1,6 +1,6 @@
 In this exercise, you will:
 
-- Use GitHub Copilot to review code directly in VSCode for immediate feedback
+- Use GitHub Copilot to review code directly in VS Code for immediate feedback
 - Request Copilot code reviews on pull requests
 - Customize Copilot's review considerations with repository-specific instructions
 - Configure automatic code reviews using repository rulesets

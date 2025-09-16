@@ -32,7 +32,7 @@ Without Copilot, a PR might include vague comments from a reviewer like *"Fix se
 
 And it provides the code fix inline.
 
-## 5 different ways Copilot review helps developers
+## Five different ways Copilot review helps developers
 
 Next up we'll review how Copilot review can help you work smarter with:
 

@@ -38,21 +38,21 @@ You can use path-specific custom instructions to guide Copilot code review or th
    
     *Example - apply to Ruby models:*
     
-    ---
-    applyTo: `"app/models/**/*.rb"`
-    ---
+    ```
+    applyTo: "app/models/**/*.rb"
+    ```
 
     *Example - apply to TypeScript files:*
     
-    ---
-    applyTo: `"**/*.ts,**/*.tsx"`
-    ---
+    ```
+    applyTo: "**/*.ts,**/*.tsx"
+    ```
     
     To apply to all files in the repository, use:
     
-    ---
-    applyTo: `"**"`
-    ---
+    ```
+    applyTo: "**"
+    ```
 
 1. **Write your custom guidance**
 
@@ -130,26 +130,24 @@ Now every PR targeting the chosen branches will automatically include Copilot's 
 
 For larger teams, you can scale this approach across multiple repositories at once. Organization owners can create rulesets that apply to selected repositories, based on name patterns or inclusion/exclusion rules.
 
-**Steps:**
+1. In the upper-right corner of GitHub, click your profile picture, then select Your organizations.
 
-- In the upper-right corner of GitHub, click your profile picture, then select Your organizations.
+1. Choose the organization, then go to Settings.
 
-- Choose the organization, then go to Settings.
-
-- In the sidebar, select Repository → Rulesets.
+1. In the sidebar, select Repository → Rulesets.
 
   :::image type="content" source="../media/organization-settings-rulesets.png" alt-text="Screenshot of the GitHub organization settings menu highlighting the Rulesets option under Repository." lightbox="../media/organization-settings-rulesets.png":::
 
-- Click New ruleset → New branch ruleset.
+1. Click New ruleset → New branch ruleset.
 
-- Provide a ruleset name and set Enforcement status to Active.
+1. Provide a ruleset name and set Enforcement status to Active.
 
-- Add target repositories by specifying inclusion or exclusion patterns (e.g., *service to match all service repos).
+1. Add target repositories by specifying inclusion or exclusion patterns (e.g., *service to match all service repos).
 
-- Define target branches.
+1. Define target branches.
 
-- Enable Require a pull request before merging, then check Request pull request review from Copilot.
+1. Enable Require a pull request before merging, then check Request pull request review from Copilot.
 
-- Save by clicking Create.
+1. Save by clicking Create.
 
 This ensures consistent standards and reduces review times across the whole organization.
