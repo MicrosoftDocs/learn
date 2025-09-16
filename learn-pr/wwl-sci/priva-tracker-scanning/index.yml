@@ -38,7 +38,6 @@ subjects:
 - security
 units:
 - learn.wwl.priva-tracker-scanning.tracker-scanning-overview
-- learn.wwl.priva-tracker-scanning.run-a-scan
 - learn.wwl.priva-tracker-scanning.view-scan-results
 - learn.wwl.priva-tracker-scanning.summary
 
