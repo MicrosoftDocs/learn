@@ -37,7 +37,6 @@ subjects:
 - compliance
 - security
 units:
-- learn.wwl.priva-tracker-scanning.view-scan-results
 
 badge:
   uid: learn.wwl.priva-tracker-scanning.badge
