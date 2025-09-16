@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-delta-lake-azure-databricks.manage-acid-transactions
-title: Manage ACID transactions
+title: Create Delta tables
 metadata:
-  title: Manage ACID transactions
-  description: "Manage ACID transactions"
-  ms.date: 08/26/2022
-  author: wwlpublish
-  ms.author: jamesh
+  title: Create Delta Tables
+  description: "Create Delta Tables"
+  ms.date: 09/12/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
-  [!include[](includes/03-manage-acid-transactions.md)]
+  [!include[](includes/03-manage-acid-transactions.md)]

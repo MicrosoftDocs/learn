@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-workloads-with-databricks-workflows.benefits-of-azure-databricks-workflows
-title: Explore the benefits of Azure Databricks Workflows
+title: Explore the benefits of Lakeflow Jobs
 metadata:
-  title: Explore the benefits of Azure Databricks Workflows
-  description: "Explore the benefits of Azure Databricks Workflows"
-  ms.date: 07/29/2024
-  author: wwlpublish
-  ms.author: jamesh
+  title: Explore the Benefits of Lakeflow Jobs
+  description: "Explore the benefits of Lakeflow Jobs"
+  ms.date: 09/12/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
   [!include[](includes/4-benefits-of-azure-databricks-workflows.md)]

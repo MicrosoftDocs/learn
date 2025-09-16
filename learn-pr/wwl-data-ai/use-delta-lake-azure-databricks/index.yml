@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.use-delta-lake-azure-databricks
 metadata:
-  title: Manage data with Delta Lake
+  title: Manage Data with Delta Lake
   description: "Manage data with Delta Lake"
-  ms.date: 08/06/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 09/12/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module-standard-task-based
   ms.service: azure-databricks
 title: Manage data with Delta Lake
@@ -13,7 +13,7 @@ summary: Delta Lake is a data management solution in Azure Databricks providing 
 abstract: |
   In this module, you learn:
   - What Delta Lake is
-  - How to manage ACID transactions using Delta Lake
+  - How to create Delta Tables
   - How to use schema versioning and time travel in Delta Lake
   - How to maintain data integrity with Delta Lake
 prerequisites: |

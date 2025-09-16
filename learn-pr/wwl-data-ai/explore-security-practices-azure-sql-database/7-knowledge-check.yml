@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 09/24/2024
-  author: jupadrao
+  ms.date: 08/06/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
   module_assessment: true
@@ -45,4 +45,4 @@ quiz:
       explanation: Incorrect. Users are prompted to create a firewall rule only if no matching rule exists.
     - content: It only checks the server-level IP firewall rules.
       isCorrect: false
-      explanation: Incorrect. Azure SQL Database checks both database-level and server-level firewall rules.
+      explanation: Incorrect. Azure SQL Database checks both database-level and server-level firewall rules.

@@ -24,9 +24,9 @@ quiz:
     - content: "The allowed rule takes precedence."
       isCorrect: false
       explanation: "Incorrect. Rules are processed according to the specified priority."
-    - content: "The deny rule takes precedence."
+    - content: "The lowest priority rule takes precedence."
       isCorrect: true
-      explanation: "Correct. The deny rule takes precedence. The deny rule is processed first. The rule with priority 150 is processed before the rule with priority 200."
+      explanation: "Correct. The lowest priority rule takes precedence. The rule with priority 150 is processed before the rule with priority 200."
     - content: "The rule that was created first takes precedence."
       isCorrect: false
       explanation: "Incorrect. Rules are processed according to the specified priority."

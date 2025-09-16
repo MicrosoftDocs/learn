@@ -2,11 +2,11 @@
 uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 07/04/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
@@ -36,4 +36,4 @@ quiz:
     - content: "Managed identities."
       isCorrect: true
       explanation: "Correct. Managed identities provide Azure services with an automatically managed identity in Microsoft Entra ID. You can use the Managed Identity capability to authenticate to any service that support Microsoft Entra authentication."
-
+

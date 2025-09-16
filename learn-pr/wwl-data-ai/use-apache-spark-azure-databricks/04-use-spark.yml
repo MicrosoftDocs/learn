@@ -2,11 +2,11 @@
 uid: learn.wwl.use-apache-spark-azure-databricks.use-spark-notebooks
 title: Use Spark in notebooks
 metadata:
-  title: Use Spark in notebooks
+  title: Use Spark in Notebooks
   description: "Use Spark in notebooks"
-  ms.date: 12/12/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 09/12/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

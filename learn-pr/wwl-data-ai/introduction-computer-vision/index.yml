@@ -5,7 +5,7 @@ metadata:
   description: Introduction to computer vision concepts
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 5/20/2025
+  ms.date: 5/29/2025
   ms.service: azure
   ai-usage: ai-assisted
   ms.topic: module
@@ -34,6 +34,7 @@ units:
 - learn.wwl.introduction-computer-vision.understand-image-processing
 - learn.wwl.introduction-computer-vision.computer-vision-models
 - learn.wwl.introduction-computer-vision.modern-vision-models
+- learn.wwl.introduction-computer-vision.exercise
 - learn.wwl.introduction-computer-vision.knowledge-check
 - learn.wwl.introduction-computer-vision.summary
 badge:

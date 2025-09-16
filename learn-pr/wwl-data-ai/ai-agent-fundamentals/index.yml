@@ -5,9 +5,10 @@ metadata:
   description: AI agents represent the next generation of intelligent applications. Learn how they can be developed and used on Microsoft Azure.
   author: ivorb
   ms.author: berryivor
-  ms.date: 08/01/2025
+  ms.date: 08/28/2025
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
   ms.custom: ai-learning-hub
@@ -27,7 +28,8 @@ roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/me
   - ai-engineer
   - data-scientist
 products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-  - ai-services
+  - azure-ai-foundry
+  - azure-ai-foundry-agent-service
 subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - artificial-intelligence
 units:

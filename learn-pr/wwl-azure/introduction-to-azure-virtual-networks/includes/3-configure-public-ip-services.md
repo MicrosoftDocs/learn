@@ -1,6 +1,7 @@
 
 
 
+
 Public networks like the Internet communicate by using public IP addresses. Private networks like your Azure Virtual Network use private IP addresses, which aren't routable on public networks. To support a network that exists both in Azure and on-premises, you must configure IP addressing for both types of networks.
 
 Public IP addresses enable Internet resources to communicate with Azure resources and enable Azure resources to communicate outbound with Internet and public-facing Azure services. A public IP address in Azure is dedicated to a specific resource. A resource without a public IP assigned can communicate outbound through network address translation services, where Azure dynamically assigns an available IP address that isn't dedicated to the resource.
@@ -29,7 +30,9 @@ Public IP addresses are created with an IPv4 or IPv6 address, which can be eithe
 
 ## Choose the appropriate SKU for a public IP address
 
-Public IP addresses are created with one of the following SKUs:
+> [!IMPORTANT]
+>
+> On September 30, 2025, Basic SKU public IPs will be retired. If you are currently using Basic SKU public IPs, make sure to upgrade to Standard SKU public IPs prior to the retirement date. For guidance on upgrading, visit [Upgrading a basic public IP address to Standard SKU](/azure/virtual-network/ip-services/public-ip-basic-upgrade-guidance).
 
 | Public IP address | **Standard** | **Basic**|
 | --- | --- |--- |
