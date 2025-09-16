@@ -10,9 +10,12 @@ Consider a scenario where three virtual networks in the same region are connecte
 
 
 
-The Azure portal doesn't specifically mention *gateway transit* and *connectivity*. Instead, you have choices for allowing and forwarding network traffic. Can you tell the differences in the selections?
+The Azure portal doesn't specifically mention *gateway transit* and *connectivity*. Instead, you have choices for allowing and forwarding network traffic. 
 
 :::image type="content" source="../media/peering-settings.png" alt-text="Screenshot of the peering options in the portal." border="false":::
+
+> [!TIP]
+> Use the **Ask Learn** icon (top right) to learn more about *Azure gateway transit*. 
 
 ### Things to know about Azure VPN Gateway
 
