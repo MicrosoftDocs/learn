@@ -29,8 +29,6 @@ subjects:
 modules:
 - learn.create-serverless-logic-with-functions
 - learn.azure.route-and-process-data-logic-apps
-- learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs
-- learn.choose-messaging-model
 #- learn.expose-hybrid-services-with-azure-relay
 trophy:
   uid: learn.architect-messaging-serverless.trophy
