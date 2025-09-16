@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dpu.hybrid-cloud-integration-with-azure-local
+title: Hybrid cloud integration with Azure Local
+metadata:
+  title: Hybrid Cloud Integration With Azure Local
+  description: In this module, you'll learn how Azure Local enables organizations to run virtual machines, containers, and cloud services on-premises while integrating with Azure for centralized management and security. You'll explore technical features such as hybrid cloud connectivity, resource organization, automated updates, container orchestration with AKS, and multi-layered security protections.
+  ms.date: 09/11/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: module
+  ms.service: azure-local
+  ms.custom: CA090123-3
+summary: >
+  Discover how Azure Local extends your on-premises infrastructure into the cloud, enabling unified management, monitoring, and policy enforcement through Azure Arc and integrated Azure services. In this module, you'll learn how to deploy, organize, and operate hybrid workloads using familiar tools and best practices for security and compliance.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe how Azure Local facilitates hybrid cloud integration and provides centralized management capabilities for on-premises infrastructure.
+  - Explain the functions of Azure Arc and Azure Kubernetes Service (AKS) in extending Azure services to edge and multicloud environments.
+  - Identify the layered security mechanisms in Azure Local that support regulatory compliance and safeguard sensitive data.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - intermediate
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - azure-local
+units:
+  - learn.dpu.hybrid-cloud-integration-with-azure-local.introduction
+  - learn.dpu.hybrid-cloud-integration-with-azure-local.what-is-azure-local
+  - learn.dpu.hybrid-cloud-integration-with-azure-local.azure-kubernetes-service
+  - learn.dpu.hybrid-cloud-integration-with-azure-local.security-protection
+  - learn.dpu.hybrid-cloud-integration-with-azure-local.knowledge-check
+  - learn.dpu.hybrid-cloud-integration-with-azure-local.summary
+badge:
+  uid: learn.dpu.hybrid-cloud-integration-with-azure-local.badge

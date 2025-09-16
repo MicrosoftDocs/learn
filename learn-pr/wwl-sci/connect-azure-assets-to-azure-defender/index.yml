@@ -3,7 +3,7 @@ uid: learn.wwl.connect-azure-assets-to-azure-defender
 metadata:
   title: Connect Azure Assets to Microsoft Defender for Cloud
   description: "Connect Azure assets to Microsoft Defender for Cloud"
-  ms.date: 07/30/2025
+  ms.date: 09/11/2025
   author: KenMAG
   ms.author: kelawson
   ms.topic: module
@@ -35,7 +35,7 @@ units:
 - learn.wwl.connect-azure-assets-to-azure-defender.introduction
 - learn.wwl.connect-azure-assets-to-azure-defender.explore-manage-your-resources-with-asset-inventory
 - learn.wwl.connect-azure-assets-to-azure-defender.configure-auto-provisioning
-- learn.wwl.connect-azure-assets-to-azure-defender.manual-log-analytics-agent-provisioning
+- learn.wwl.connect-azure-assets-to-azure-defender.manual-azure-monitor-agent-provisioning
 - learn.wwl.connect-azure-assets-to-azure-defender.knowledge-check
 - learn.wwl.connect-azure-assets-to-azure-defender.summary-resources
 badge:
