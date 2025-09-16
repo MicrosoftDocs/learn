@@ -58098,6 +58098,11 @@
       "source_path": "learn-pr/wwl-sci/priva-tracker-scanning/knowledge-check.md",
       "redirect_url": "/training/paths/priva-data-privacy-solutions/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-tracker-scanning/run-a-scan.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
     }
   ]
 }
