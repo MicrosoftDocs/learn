@@ -1,15 +1,18 @@
-In the previous unit, you learned about the basic building blocks of a Q# program. Now, you're ready to write your first quantum program: a quantum program to generate truly random numbers.
+In the previous unit, you learned about the basic building blocks of a Q# program. Now, you're ready to write your first quantum program. In this unit, you write a quantum program that generates a truly random bit.
 
-You build out your quantum random number generator in two phases. In this unit, you build out the first phase, which is to generate a single random bit.
+You build your quantum random number generator in two steps. This unit is the first step, which is to generate a single random bit. To generate a random bit, you allocate a qubit in the $\ket{0}$ state, put that qubit into a superposition state, and then measure the qubit to produce a random bit value of either 0 or 1.
 
-## Create the Q# program
+## Create the Q# program file
 
-1. Open Visual Studio Code and select **File > New Text File** to create a new file.
-1. Save the file as `Main.qs`. This file contains the Q# code for your program.
+1. Open Visual Studio Code.
+1. Open the **File** menu, and then choose **New Text File** to create a new file.
+1. Save the file as `Main.qs`.
+
+Write your Q# code for the random bit generator in the `Main.qs` file.
 
 ## Define the `Main` operation
 
-The `Main` operation is the entry point of your program.
+The `Main` operation is the entry point of your program. Copy the following code into your `Main.qs` file:
 
 ```qsharp
 operation Main(): Result{
@@ -21,24 +24,25 @@ operation Main(): Result{
 
 ## Allocate a qubit
 
-You start by allocating one qubit with the `use` keyword. In Q#, every qubit you allocate starts in the $\ket{0}$ state by default.
+To start, allocate one qubit with the `use` statement. In Q#, every qubit that you allocate with `use` starts in the $\ket{0}$ state by default. To allocate a single qubit, copy the following code into your program:
 
 ```qsharp
 operation Main(): Result{
 
     // Allocate a qubit
     use q = Qubit();
-
 }
 ```
 
-## Put the qubit into superposition
+## Put the qubit into a superposition state
 
-The qubit is in the $\ket{0}$ state, which isn't useful for generating random numbers. You need to put the qubit into superposition. To do this, you apply the **Hadamard operation**, `H`, to the qubit. The Hadamard operation changes the state of the qubit and puts it into an equal superposition of $\ket{0}$ and $\ket{1}$.
+At this point, you can't generate a random bit from the qubit because the qubit is in the $\ket{0}$ state. If you measure the state of this qubit, the measurement will return a bit value of 0 every time.
+
+To generate a random bit from the qubit measurement, you first need to put the qubit into a superposition of the $\ket{0}$ state and the $\ket{1}$ state. To put the qubit into a superposition state, apply a Hadamard operation to the qubit. The Hadamard operation transforms the qubit from the $\ket{0}$ state to an equal superposition of the $\ket{0}$ and $\ket{1}$ states.
 
 $$ H \ket{0} = \frac{1}{\sqrt{2}} (\ket{0} + \ket{1}) $$
 
-Because the qubit is in an equal superposition, when you measure it, you have a 50% chance of getting 0 and a 50% chance of getting 1.
+To apply a Hadamard operation to your qubit in Q#, use the `H` operation:
 
 ```qsharp
 operation Main(): Result{
@@ -48,11 +52,14 @@ operation Main(): Result{
 }
 ```
 
+> [!NOTE]
+> When you apply a quantum operation to a qubit in Q#, the operation doesn't return a value. Instead, operations affect the state of the qubit.
+
 ## Measure the qubit
 
-At this point, the qubit `q` has 50% chance of being measured in the |0〉 state and 50% chance of being measured in the |1〉 state. Thus, if you measure the qubit, you get a random bit, either 0 or 1, with equal 50% probability. The value of this bit is truly random, there's no way of knowing in advance the result of the measurement.
+Because the qubit is now in an equal superposition state, when you measure the qubit you have a 50% chance that the measurement returns a 0 and a 50% chance that the measurement returns a 1.
 
-To measure the qubit value, use the `M` operation and store the measurement value in the `result` variable.
+To measure the qubit value in Q#, use the `M` operation and store the measurement value in the `result` variable:
 
 ```qsharp
 operation Main(): Result{
@@ -65,7 +72,7 @@ operation Main(): Result{
 
 ## Reset the qubit
 
-In Q#, every qubit must be in the $\ket{0}$ state by the time they're released. You use `Reset(q)` to reset the qubit to the zero state.
+In Q#, a qubit must be in the $\ket{0}$ state before you can release the qubit. Use the `Reset` operation to reset the qubit to the $\ket{0}$ state.
 
 ```qsharp
 operation Main(): Result{
@@ -79,7 +86,7 @@ operation Main(): Result{
 
 ## Return the measurement result
 
-Finally, you return the measurement result with the `return` keyword. This result is a random bit, either 0 or 1, with equal probability.
+Finally, return the measurement result with the `return` statement. This result is a random bit, either 0 or 1 with equal probability. Copy the following code in your `Main.qs` file:
 
 ```qsharp
 operation Main(): Result{
@@ -92,15 +99,11 @@ operation Main(): Result{
 }
 ```
 
-## Final program
+## Run your random bit generator program
 
-Your `Main.qs` file should look like this. The program allocates a qubit, puts it into superposition, measures the qubit, resets the qubit, and returns the measurement result.
-
-> [!NOTE]
-> The `//` symbol represents optional comments to explain each step of the program.
+You created a Q# program called `Main.qs` that allocates a qubit, puts the qubit into an equal superposition state, measures the qubit, resets the qubit, and then returns the measurement result. Here's a recap of your Q# code:
 
 ```qsharp
-
 operation Main() : Result {
     // Allocate a qubit.
     use q = Qubit();
@@ -119,10 +122,11 @@ operation Main() : Result {
 }
 ```
 
-## Run the program
+> [!NOTE]
+> The `//` symbol represents optional comments that explain each step of the program. Comments are ignored by the compiler.
 
-To run your program on the built-in simulator, select **Run** above the `Main` operation or press **Ctrl+F5**. Your output appears in the debug console in the terminal.
+To run your program on the built-in simulator, choose the **Run** code lens above the `Main` operation, or press **Ctrl + F5**. Your output appears on the debug console in the terminal.
 
-The result is either `One` or `Zero`, which represents a truly random bit. You can run the program again to see a different result.
+The result is either `Zero` or `One`, each with a 50% chance. The measurement value of this bit on a quantum computer is truly random. Run the program multiple times to see for yourself how the result changes.
 
-In the next unit, you'll implement the second phase of your quantum random number generator: combining multiple random bits to form a larger number.
+In the next unit, you combine multiple random bits to implement the second part of your quantum random number generator.
