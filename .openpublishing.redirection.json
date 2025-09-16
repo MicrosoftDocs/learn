@@ -57335,7 +57335,166 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/deploy-manage-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
+      "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/2-explore-security-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/3-monitor-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/4-exercise-monitor-azure-arc-enabled-sql-managed-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-monitor-azure-arc-enabled-sql-managed-instance/index.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/sql-server/azure-arc/sql-monitoring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-a-messaging-model-in-azure-to-connect-your-services/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/messaging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-a-messaging-model-in-azure-to-connect-your-services/2-choose-whether-to-use-message-queues-or-events.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/messaging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-a-messaging-model-in-azure-to-connect-your-services/3-choose-azure-storage-queues.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/messaging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-a-messaging-model-in-azure-to-connect-your-services/4-choose-event-grid.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/messaging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-a-messaging-model-in-azure-to-connect-your-services/5-choose-azure-event-hubs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/messaging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-a-messaging-model-in-azure-to-connect-your-services/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/messaging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-a-messaging-model-in-azure-to-connect-your-services/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/technology-choices/messaging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/2-full-stack-monitoring.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/3-azure-monitoring-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/4-application-insights.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/5-analyze-resource-utilization.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/6-security-center.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/7-sentinel.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/platform/monitor-azure-resource",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/2-create-an-event-hub-using-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/3-exercise-create-an-event-hub-using-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/4-configure-applications-to-send-or-receive-messages-through-an-event-hub.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/5-exercise-configure-applications-to-send-or-receive-messages-through-an-event-hub.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/6-evaluate-the-performance-of-the-deployed-event-hub-using-the-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/service-bus-messaging/compare-messaging-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/connect-your-services-together/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/messaging-services/",
+      "redirect_document_id": false
+    },
+    { "source_path": "learn-pr/azure/deploy-manage-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-sql-managed-instance",
       "redirect_document_id": false
     },
@@ -57992,6 +58151,131 @@
     {
       "source_path": "learn-pr/paths/get-started-with-azure-private-5g-core/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-consent-management/index.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-consent-management/consent-management-overview.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-consent-management/consent-management-prerequisites.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-consent-management/create-consent-model.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-consent-management/create-package-publish-profile.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-consent-management/introduction.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-consent-management/knowledge-check.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-consent-management/summary.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-privacy-assessments/index.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-privacy-assessments/configure-metamodel-register-assets.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-privacy-assessments/create-manage-privacy-assessments.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-privacy-assessments/create-privacy-rules.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-privacy-assessments/introduction.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-privacy-assessments/knowledge-check.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-privacy-assessments/privacy-assessments-overview.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-privacy-assessments/summary.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-tracker-scanning/index.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-tracker-scanning/configure-tracker-scanning.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-tracker-scanning/create-manage-trackers.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-tracker-scanning/introduction.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-tracker-scanning/knowledge-check.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-tracker-scanning/run-a-scan.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-tracker-scanning/summary.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-tracker-scanning/tracker-scanning-overview.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-tracker-scanning/view-scan-results.md",
+      "redirect_url": "/training/paths/priva-data-privacy-solutions/",
       "redirect_document_id": false
     }
   ]
