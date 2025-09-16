@@ -1,5 +1,11 @@
 
-Microsoft Security Copilot is embedded in Microsoft Defender XDR to enable security teams to quickly and efficiently investigate and respond to incidents. Security Copilot capabilities embedded in Microsoft Defender XDR include:
+Microsoft Security Copilot is embedded in Microsoft Defender XDR to enable security teams to quickly and efficiently investigate and respond to incidents. 
+
+The brief video that follows shows a few of the Copilot capabilities embedded in Microsoft Defender and how they can help security analysts be more productive.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=34619a9e-4d95-46c4-8114-2320e0626962]
+
+Security Copilot capabilities embedded in Microsoft Defender XDR include:
 
 - Summarize incidents
 - Guided responses

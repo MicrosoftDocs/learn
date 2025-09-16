@@ -20,7 +20,7 @@ After you create an eventstream, you can add data sources using the eventstream 
 ## Eventstream destinations
 
 Streaming data requires immediate processing and storage to retain its value. Destinations in an eventstream serve as endpoints where your processed data becomes available for queries, reports, dashboards, alerts, actions, or integration with other systems. You can load the data from your stream into the following destinations:
-- **Eventhouse**: This destination lets you ingest your real-time event data into an eventhouse, where you can use Kusto Query Language (KQL) to query and analyze the data.
+- **Eventhouse**: This destination lets you ingest your real-time event data into an Eventhouse, where you can use Kusto Query Language (KQL) to query and analyze the data.
 - **Lakehouse**: This destination gives you the ability to transform your real-time events before ingesting them into your lakehouse. Real-time events are converted into Delta Lake format and then stored in designated lakehouse tables.
 - **Derived stream**: You can think of derived streams as transformed versions of your original data stream that enable **content-based routing**. Derived streams let you route subsets of data from your *default* or original stream to different destinations based on the *content* of data. For example, you could filter IoT sensor data to send high-temperature alerts to Fabric Activator while routing hourly averages to a KQL database.
 - **Fabric Activator**: Directly connect your real-time event data to an event detection engine that automatically triggers actions when specific patterns or conditions are detected in your streaming data. When data reaches certain thresholds or matches patterns, Activator can send notifications, launch Power Automate workflows, or trigger other automated responses.
@@ -41,4 +41,4 @@ The eventstream canvas in the image shows:
 
 - **Add destination dropdown**: for configuring new destinations
 - **Three configured destinations**: a derived stream, a Fabric Activator, and an Eventhouse  
-- **Content-based routing** where the output of the GroupByStreet transformation is routed to a derived stream that's then routed to both an Activator to check if there are bikes at every station and to an eventhouse to insert bike counts by street into a KQL database
+- **Content-based routing** where the output of the GroupByStreet transformation is routed to a derived stream that's then routed to both an Activator to check if there are bikes at every station and to an Eventhouse to insert bike counts by street into a KQL database
