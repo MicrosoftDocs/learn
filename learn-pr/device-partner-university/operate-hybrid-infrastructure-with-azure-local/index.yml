@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.dpu.operate-hybrid-infrastructure-with-azure-local
+title: Operate hybrid infrastructure with Azure Local
+metadata:
+  title: Operate Hybrid Infrastructure With Azure Local
+  description: Learn how to manage and operate hybrid infrastructure using Azure Local with familiar tools like Windows Admin Center, PowerShell, and Azure Arc.
+  ms.date: 09/16/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module
+  ms.service: azure-local
+  ms.custom: CA090123-4
+summary: >
+  Learn how to manage and operate hybrid infrastructure using Azure Local with familiar tools like Windows Admin Center, PowerShell, and Azure Arc.
+abstract: |2+
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - intermediate
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - azure-local
+units:
+  - learn.dpu.operate-hybrid-infrastructure-with-azure-local.introduction
+  - learn.dpu.operate-hybrid-infrastructure-with-azure-local.what-is-azure-local
+  - learn.dpu.operate-hybrid-infrastructure-with-azure-local.familiar-tools-for-it-management
+  - learn.dpu.operate-hybrid-infrastructure-with-azure-local.security-and-compliance
+  - learn.dpu.operate-hybrid-infrastructure-with-azure-local.apply-azure-local-real-world-industries
+  - learn.dpu.operate-hybrid-infrastructure-with-azure-local.knowledge-check
+  - learn.dpu.operate-hybrid-infrastructure-with-azure-local.summary
+badge:
+  uid: learn.dpu.operate-hybrid-infrastructure-with-azure-local.badge

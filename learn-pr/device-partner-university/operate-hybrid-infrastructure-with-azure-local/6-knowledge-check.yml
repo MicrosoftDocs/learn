@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.operate-hybrid-infrastructure-with-azure-local.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Operate hybrid infrastructure with Azure Local" module.
+  ms.date: 09/16/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is a key benefit of using Azure Local in hybrid environments?"
+    choices:
+        - content: "It eliminates the need for on-premises hardware."
+          isCorrect: false
+          explanation: "Incorrect. Azure Local supports running workloads on-premises."
+        - content: "It allows local workloads with cloud-based management."
+          isCorrect: true
+          explanation: "Correct. Azure Local enables local operations with Azure services for management."
+        - content: "It requires third-party monitoring tools."
+          isCorrect: false
+          explanation: "Incorrect. Azure Monitor is built-in and does not require third-party tools."
+        - content: "It replaces all existing IT tools."
+          isCorrect: false
+          explanation: "Incorrect. Azure Local works with familiar tools like PowerShell and Windows Admin Center."
+  - content: "Which tool is best for automating repeatable tasks in Azure Local?"
+    choices:
+        - content: "Windows Admin Center"
+          isCorrect: false
+          explanation: "Incorrect. WAC is used for visual server and workload management."
+        - content: "PowerShell"
+          isCorrect: true
+          explanation: "Correct. PowerShell is used to automate tasks like provisioning and patching."
+        - content: "Azure Monitor"
+          isCorrect: false
+          explanation: "Incorrect. Azure Monitor is used for performance and health monitoring."
+        - content: "Azure Arc"
+          isCorrect: false
+          explanation: "Incorrect. Azure Arc is used for managing VMs across environments."
+  - content: "When should you choose integrated systems for Azure Local deployment?"
+    choices:
+        - content: "When you want full control over hardware selection."
+          isCorrect: false
+          explanation: "Incorrect. That applies to validated nodes."
+        - content: "When you need to reuse existing hardware."
+          isCorrect: false
+          explanation: "Incorrect. That applies to the existing hardware option."
+        - content: "When you want fast deployment with minimal setup."
+          isCorrect: true
+          explanation: "Correct. Integrated systems come pre-installed for quick rollout."
+        - content: "When you require disconnected operations."
+          isCorrect: false
+          explanation: "Incorrect. Disconnected operations are supported separately for compliance."
+  - content: "What does Azure Arc enable in a hybrid Azure Local environment?"
+    choices:
+        - content: "Real-time threat detection"
+          isCorrect: false
+          explanation: "Incorrect. This is handled by Microsoft Defender for Kubernetes."
+        - content: "Automated patching"
+          isCorrect: false
+          explanation: "Incorrect. Patch automation is a separate operational feature."
+        - content: "VM management from the Azure Portal"
+          isCorrect: true
+          explanation: "Correct. Azure Arc allows managing local VMs like cloud VMs."
+        - content: "Hardware validation"
+          isCorrect: false
+          explanation: "Incorrect. Hardware validation is part of deployment options, not Arc."
+  - content: "How does Azure Local help manage infrastructure costs?"
+    choices:
+        - content: "Requires upfront capital investment only"
+          isCorrect: false
+          explanation: "Incorrect. Azure Local supports both OpEx and CapEx models."
+        - content: "Charges flat monthly fees"
+          isCorrect: false
+          explanation: "Incorrect. Azure Local uses flexible billing based on usage."
+        - content: "Supports pay-as-you-go billing and automation"
+          isCorrect: true
+          explanation: "Correct. Azure Local aligns costs with usage and reduces overhead."
+        - content: "Limits use of existing licenses"
+          isCorrect: false
+          explanation: "Incorrect. Azure Local allows use of existing SQL Server licenses."
