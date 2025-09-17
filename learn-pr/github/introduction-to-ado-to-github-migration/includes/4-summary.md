@@ -19,4 +19,4 @@ Module 4: Post migration activities and troubleshooting guide
 - [GitHub Enterprise documentation](https://docs.github.com/en/enterprise-cloud@latest)
 - [Azure DevOps to GitHub migration guide](https://docs.github.com/en/enterprise-cloud@latest/migrations)
 - [GitHub Enterprise Importer documentation](https://docs.github.com/en/migrations/using-github-enterprise-importer)
-- [GitHub Well-Architected Framework](https://docs.github.com/en/early-access/github-team/github-well-architected-framework)
+- [GitHub Well-Architected Framework](https://wellarchitected.github.com/)
