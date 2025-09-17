@@ -15,7 +15,7 @@ For apps that use data sources outside Microsoft 365, such as files stored in Az
 Once onboarded, apps become visible in DSPM for AI reports and can be included in policy scopes for DLP and other Microsoft Purview tools.
 
 > [!NOTE]
-> To view or manage onboarding in DSPM for AI, users need the correct Microsoft Purview or Microsoft Entra permissions. For details, see [Permissions for Data Security Posture Management for AI](/purview/dspm-ai-permissions?azure-portal=true).
+> To view or manage onboarding in DSPM for AI, users need the correct Microsoft Purview or Microsoft Entra permissions. For details, see [Permissions for Data Security Posture Management for AI](/purview/ai-microsoft-purview-permissions).
 
 ## Apply DLP policies to Azure AI apps
 
