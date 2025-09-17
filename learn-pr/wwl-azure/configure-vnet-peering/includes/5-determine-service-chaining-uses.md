@@ -19,4 +19,7 @@ The following diagram shows a hub and spoke virtual network with an NVA and VPN 
 
 :::image type="content" source="../media/service-chains-5c9286d1.png" alt-text="Diagram that shows a hub virtual network with an NVA and VPN gateway that are accessible to other virtual networks." border="false":::
 
+> [!TIP]
+> Use the **Ask Learn** icon (top right) to learn more about *service chaining and user-defined routes*. 
+
 
