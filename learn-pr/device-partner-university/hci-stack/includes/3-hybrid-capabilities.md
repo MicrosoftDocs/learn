@@ -14,7 +14,7 @@ These integrations extend cloud service benefits to on-premises infrastructure.
 
 ## Centralized management and updates
 
-Azure Local allows for centralized virtual machine and cluster management through the Azure Portal, simplifying administration of hybrid environments.
+Azure Local allows for centralized virtual machine and cluster management through the Azure portal, simplifying administration of hybrid environments.
 
 - Regular updates are delivered to ensure that the HCI platform remains secure, stable, and optimized.
 

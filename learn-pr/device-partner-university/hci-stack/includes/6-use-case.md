@@ -20,7 +20,7 @@ Azure Local is purpose-built for hybrid environments, offering the flexibility o
 
 - **Security and compliance**: Integrate with Azure Arc to enforce cloud policies and use Defender for endpoint protection—even on local servers.
 
-- **Centralized management**: IT admins can manage clusters using Windows Admin Center or the Azure Portal. This simplifies updates, monitoring, and configuration across multiple sites.
+- **Centralized management**: IT admins can manage clusters using Windows Admin Center or the Azure portal. This simplifies updates, monitoring, and configuration across multiple sites.
 
 - **Application flexibility**: Supports a mix of workloads—from legacy Windows Server apps to containerized microservices using Azure Kubernetes Service on-premises. This allows gradual modernization without disrupting operations.
 

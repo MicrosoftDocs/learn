@@ -24,7 +24,7 @@ It fits the definition of an HCI stack because it provides:
 | **Compute**    | Virtual machines (VMs) running on local hosts       |
 | **Storage**    | Software-defined storage pooled from local disks   |
 | **Networking** | Virtual networking managed within the HCI environment |
-| **Management** | Azure Arc + Azure Portal + Windows Admin Center     |
+| **Management** | Azure Arc + Azure portal + Windows Admin Center     |
 
 ## Hybrid cloud capabilities
 
