@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.code-reviews-pull-requests-github-copilot.github-copilot-review-process
+title: What GitHub Copilot adds to the review process
+metadata:
+  title: What GitHub Copilot Adds to the Review Process
+  description: This content is a part of the Leveling up code reviews and pull requests with GitHub Copilot.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 09/16/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-github-copilot-review-process.md)]
