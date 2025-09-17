@@ -6,7 +6,7 @@ You don’t have to learn everything from scratch. Azure Local works with tools 
 - **[PowerShell](/powershell/scripting/overview):** Automate tasks with scripts—perfect for repeatable actions like provisioning or patching.  
 - **[Azure Portal](/azure/azure-portal/azure-portal-overview):** A single place to manage both cloud and local resources, with dashboards, alerts, and access controls.  
 
-Let’s say your team is rolling out a new branch office. With WAC, you can deploy and configure the local infrastructure quickly. Then use PowerShell to automate updates across all locations. And with Azure Portal, you can monitor everything from one place—even if the branch is halfway across the country/region. Automation and centralized visibility reduce the risk of human error and simplify cross-team coordination.
+Let’s say your team is rolling out a new branch office. With WAC, you can deploy and configure the local infrastructure quickly. Then use PowerShell to automate updates across all locations. And with Azure portal, you can monitor everything from one place—even if the branch is halfway across the country/region. Automation and centralized visibility reduce the risk of human error and simplify cross-team coordination.
 
 :::image type="content" border="true" source="../media/it-worker-at-desk.png" alt-text="A photograph of an IT professional using a white laptop at a wooden table with documents and a notebook.":::
 
@@ -24,15 +24,15 @@ Azure Local helps you standardize operations. You use the same tools and workflo
 - Apply consistent policies across environments  
 
 > [!TIP]
-> Azure Arc lets you manage virtual machines and resources across both local and cloud environments—all from the Azure Portal.
+> Azure Arc lets you manage virtual machines and resources across both local and cloud environments—all from the Azure portal.
 
 ## Streamlined infrastructure
 
 Azure Local is built on three pillars:
 
-1. **Hyperconverged infrastructure** – Combines compute, storage, and networking into one system.  
-2. **Azure hybrid service** – Connects your local workloads to Azure for management and visibility.  
-3. **Familiar tools** – Uses the same tools IT pros already know and trust.  
+- **Hyperconverged infrastructure** – Combines compute, storage, and networking into one system.  
+- **Azure hybrid service** – Connects your local workloads to Azure for management and visibility.  
+- **Familiar tools** – Uses the same tools IT pros already know and trust.  
 
 This means you can modernize your infrastructure without abandoning your existing skill set. You get the benefits of the cloud while keeping control of your local environment. Streamlined workflows allow IT teams to focus on strategic projects rather than repetitive maintenance.
 
@@ -43,7 +43,7 @@ Azure Arc brings cloud-style management to your local infrastructure. You can ma
 
 ### Features
 
-- Provision and manage Windows/Linux VMs from Azure Portal  
+- Provision and manage Windows/Linux VMs from Azure portal  
 - Consistent experience across environments  
 - Role-based access control (RBAC)  
 - Self-service provisioning without host access  
@@ -64,6 +64,6 @@ Azure Local makes it easy to grow your infrastructure when you need to, and scal
 - Use Arc to manage hybrid resources  
 - Apply predictive scaling and workload forecasting to avoid over- or under-provisioning  
 
-Imagine a media company scales up during live events, then scales down afterward. Azure Local helps them manage resources efficiently. Using telemetry data, IT teams can forecast demand in advance and pre-allocate resources, ensuring a smoother experience during traffic spikes. Azure Local uses subscription-based billing, so you only pay for what you use.
+Imagine a media company scales up during live events, then scales down afterward. Azure Local helps them manage resources efficiently. Using telemetry data, IT teams can forecast demand in advance and preallocate resources, ensuring a smoother experience during traffic spikes. Azure Local uses subscription-based billing, so you only pay for what you use.
 
 Scaling adds flexibility, but it also introduces new financial and security considerations. Let’s start with security—built into Azure Local from the ground up.

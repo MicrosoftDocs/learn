@@ -29,7 +29,7 @@ From encryption and threat detection to role-based access controls and complianc
 Beyond built-in protections, Azure Local also supports operational security measures that IT teams can implement day to day:  
 
 - **Patch automation:** Use update rings to automatically roll out patches in waves, minimizing disruption.  
-- **Log monitoring:** Centralize logs in Azure Monitor or Sentinel for continuous visibility and threat hunting.  
+- **Log monitoring:** Centralize logs in Azure Monitor or Microsoft Sentinel for continuous visibility and threat hunting.  
 - **Access auditing:** Regularly review role assignments and conditional access policies to ensure least-privilege principles are followed.  
 
 ## Real-world example
@@ -56,7 +56,7 @@ IT budgets are tight, and infrastructure decisions need to reflect both technica
 ### Leverage existing infrastructure
 
 - Use existing SQL Server licenses with Arc-enabled data services  
-- Manage on-prem SQL instances in Azure Portal  
+- Manage on-premises SQL instances in Azure portal  
 
 > [!TIP]
 > Use Azure Cost Management to track spending and find ways to save.

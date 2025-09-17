@@ -16,7 +16,7 @@ Retailers need fast, reliable infrastructure for point-of-sale systems, inventor
 
 Contoso Retail uses Azure Local to run POS systems in stores. During holiday sales, they scale up resources to handle peak traffic and monitor performance centrally using Azure Monitor. After the busy period, clusters are scaled down to optimize costs. 
 
-**Try it yourself**: Use Azure Portal to increase cluster capacity and monitor performance using Azure Monitor Workbooks.
+**Try it yourself**: Use Azure portal to increase cluster capacity and monitor performance using Azure Monitor Workbooks.
 
 ## Healthcare
 

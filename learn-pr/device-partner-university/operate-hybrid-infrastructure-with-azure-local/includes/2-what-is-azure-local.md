@@ -76,8 +76,8 @@ Once Azure Local is deployed, you’ll want to keep an eye on performance, healt
 > [!TIP]
 > Customize your dashboards to show what matters most to you and your team.
 
-A logistics company monitors clusters across multiple warehouses. Azure Monitor helps them detect issues early and keep operations running smoothly. Monitoring keeps infrastructure healthy, but workloads need attention too. This is where Azure Arc extends VM management into the Azure Portal, providing a consistent hybrid experience.
+A logistics company monitors clusters across multiple warehouses. Azure Monitor helps them detect issues early and keep operations running smoothly. Monitoring keeps infrastructure healthy, but workloads need attention too. This is where Azure Arc extends VM management into the Azure portal, providing a consistent hybrid experience.
 
-Now that you understand what Azure Local is and how it fits into hybrid infrastructure, let’s look at how you can manage it using tools you already know. Azure Local was built with IT pros in mind—so instead of learning a whole new system, you can use familiar tools like Windows Admin Center, PowerShell, and the Azure Portal to deploy, monitor, and operate your environment with confidence. 
+Now that you understand what Azure Local is and how it fits into hybrid infrastructure, let’s look at how you can manage it using tools you already know. Azure Local was built with IT pros in mind—so instead of learning a whole new system, you can use familiar tools like Windows Admin Center, PowerShell, and the Azure portal to deploy, monitor, and operate your environment with confidence. 
 
 Now that you understand what Azure Local is and how it fits into hybrid infrastructure, let’s look at how you can manage it using tools you already know.
