@@ -3,7 +3,7 @@ uid: learn.dpu.hci-stack
 title: Hyperconverged Infrastructure (HCI) Stack
 metadata:
   title: Hyperconverged Infrastructure (HCI) Stack
-  description: In this module, you'll learn how Azure Local functions, how it integrates with hybrid environments, and how deployment and management works using standard tools.
+  description: In this module, you'll learn how Azure Local functions, how it integrates with hybrid environments, and how deployment and management work using standard tools.
   ms.date: 09/16/2025
   author: Stephanie-Rosenzweig
   ms.author: v-stephanier
