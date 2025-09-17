@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-microsoft-365-business-standard.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Microsoft 365 Business Standard" module.
+  ms.date: 09/16/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does Microsoft 365 Business Standard include for email and calendar management?"
+    choices:
+        - content: "Microsoft Teams"
+          isCorrect: false
+          explanation: "Incorrect. Teams is used for communication and collaboration."
+        - content: "OneDrive"
+          isCorrect: false
+          explanation: "Incorrect. OneDrive provides cloud storage, not email or calendar services."
+        - content: "Exchange Online"
+          isCorrect: true
+          explanation: "Correct. Exchange Online offers hosted email and calendar management."
+        - content: "SharePoint"
+          isCorrect: false
+          explanation: "Incorrect. SharePoint is used for document management and intranet sites."
+  - content: "Which app in Microsoft 365 Business Standard supports real-time document coauthoring?"
+    choices:
+        - content: "Outlook"
+          isCorrect: false
+          explanation: "Incorrect. Outlook is used for email and calendar, not document editing."
+        - content: "PowerPoint"
+          isCorrect: false
+          explanation: "Incorrect. PowerPoint supports collaboration but not real-time coauthoring."
+        - content: "Word"
+          isCorrect: true
+          explanation: "Correct. Word allows simultaneous editing and tracked changes for coauthoring."
+        - content: "Access"
+          isCorrect: false
+          explanation: "Incorrect. Access is for database management, not document collaboration."
+  - content: "Your team is distributed and needs to collaborate on a client proposal. Which Microsoft 365 tools best support this scenario?"
+    choices:
+        - content: "Access and Publisher"
+          isCorrect: false
+          explanation: "Incorrect. These are for database and publishing, not collaboration."
+        - content: "Teams, Word, and OneDrive"
+          isCorrect: true
+          explanation: "Correct. These tools support meetings, document editing, and file sharing."
+        - content: "Excel and Bookings"
+          isCorrect: false
+          explanation: "Incorrect. Excel is for data analysis; Bookings is for scheduling."
+        - content: "Outlook and Forms"
+          isCorrect: false
+          explanation: "Incorrect. Outlook handles communication; Forms is for surveys."
+  - content: "A manager wants to track project tasks and progress. Which Microsoft 365 tool should they use?"
+    choices:
+        - content: "Word"
+          isCorrect: false
+          explanation: "Incorrect. Word is for document creation, not task tracking."
+        - content: "OneDrive"
+          isCorrect: false
+          explanation: "Incorrect. OneDrive stores files but doesn’t manage tasks."
+        - content: "Planner"
+          isCorrect: true
+          explanation: "Correct. Planner is designed for task management and progress tracking."
+        - content: "PowerPoint"
+          isCorrect: false
+          explanation: "Incorrect. PowerPoint is used for presentations, not task tracking."
+  - content: "Your organization needs cloud-based collaboration and shared calendars. Is Microsoft 365 Business Standard a good fit?"
+    choices:
+        - content: "No, it lacks cloud services"
+          isCorrect: false
+          explanation: "Incorrect. Business Standard includes cloud-based tools."
+        - content: "No, it only supports desktop apps"
+          isCorrect: false
+          explanation: "Incorrect. It supports desktop, web, and mobile apps."
+        - content: "Yes, it includes Teams and Exchange Online"
+          isCorrect: true
+          explanation: "Correct. These tools support collaboration and calendaring."
+        - content: "Yes, but only for large enterprises"
+          isCorrect: false
+          explanation: "Incorrect. Business Standard is designed for small to medium-sized businesses."

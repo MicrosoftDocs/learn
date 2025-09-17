@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.dpu.hci-stack
+title: Hyperconverged Infrastructure (HCI) Stack
+metadata:
+  title: Hyperconverged Infrastructure (HCI) Stack
+  description: In this module, you'll learn how Azure Local functions, how it integrates with hybrid environments, and how deployment and management works using standard tools.
+  ms.date: 09/16/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: azure
+  ms.custom: CA090123-2
+summary: >
+  In this module, you learn how hyperconverged infrastructure in Azure Local delivers scalable, virtualized, and hybrid solutions for on-premises environments.
+abstract: |
+  By completing this module, you can:
+  - Learn how hyperconverged infrastructure in Azure Local consolidates compute, storage, and networking to streamline datacenter operations.
+  - Discover how Azure Arc, Azure Monitor, and other hybrid services support unified management of on-premises and cloud resources.
+  - Discover scalable deployment options and tools that automate infrastructure management.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - intermediate
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - azure
+units:
+  - learn.dpu.hci-stack.introduction
+  - learn.dpu.hci-stack.azure-local
+  - learn.dpu.hci-stack.hybrid-capabilities
+  - learn.dpu.hci-stack.security-features
+  - learn.dpu.hci-stack.system-management
+  - learn.dpu.hci-stack.use-case
+  - learn.dpu.hci-stack.knowledge-check
+  - learn.dpu.hci-stack.summary
+badge:
+  uid: learn.dpu.hci-stack.badge
