@@ -6,7 +6,7 @@ You don’t have to learn everything from scratch. Azure Local works with tools 
 - **[PowerShell](/powershell/scripting/overview):** Automate tasks with scripts—perfect for repeatable actions like provisioning or patching.  
 - **[Azure Portal](/azure/azure-portal/azure-portal-overview):** A single place to manage both cloud and local resources, with dashboards, alerts, and access controls.  
 
-Let’s say your team is rolling out a new branch office. With WAC, you can deploy and configure the local infrastructure quickly. Then use PowerShell to automate updates across all locations. And with Azure Portal, you can monitor everything from one place—even if the branch is halfway across the country. Automation and centralized visibility reduce the risk of human error and simplify cross-team coordination.
+Let’s say your team is rolling out a new branch office. With WAC, you can deploy and configure the local infrastructure quickly. Then use PowerShell to automate updates across all locations. And with Azure Portal, you can monitor everything from one place—even if the branch is halfway across the country/region. Automation and centralized visibility reduce the risk of human error and simplify cross-team coordination.
 
 :::image type="content" border="true" source="../media/it-worker-at-desk.png" alt-text="A photograph of an IT professional using a white laptop at a wooden table with documents and a notebook.":::
 

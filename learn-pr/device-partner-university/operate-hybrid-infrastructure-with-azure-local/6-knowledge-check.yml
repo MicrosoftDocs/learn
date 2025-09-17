@@ -22,7 +22,7 @@ quiz:
           explanation: "Correct. Azure Local enables local operations with Azure services for management."
         - content: "It requires third-party monitoring tools."
           isCorrect: false
-          explanation: "Incorrect. Azure Monitor is built-in and does not require third-party tools."
+          explanation: "Incorrect. Azure Monitor is built in and doesn't require third-party tools."
         - content: "It replaces all existing IT tools."
           isCorrect: false
           explanation: "Incorrect. Azure Local works with familiar tools like PowerShell and Windows Admin Center."
@@ -50,7 +50,7 @@ quiz:
           explanation: "Incorrect. That applies to the existing hardware option."
         - content: "When you want fast deployment with minimal setup."
           isCorrect: true
-          explanation: "Correct. Integrated systems come pre-installed for quick rollout."
+          explanation: "Correct. Integrated systems come preinstalled for quick rollout."
         - content: "When you require disconnected operations."
           isCorrect: false
           explanation: "Incorrect. Disconnected operations are supported separately for compliance."
@@ -62,7 +62,7 @@ quiz:
         - content: "Automated patching"
           isCorrect: false
           explanation: "Incorrect. Patch automation is a separate operational feature."
-        - content: "VM management from the Azure Portal"
+        - content: "VM management from the Azure portal"
           isCorrect: true
           explanation: "Correct. Azure Arc allows managing local VMs like cloud VMs."
         - content: "Hardware validation"
