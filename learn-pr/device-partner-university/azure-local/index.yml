@@ -18,7 +18,7 @@ abstract: |
 
 prerequisites: |
   - None
-iconUrl: /training/achievements/intro-to-azure-local.svg
+iconUrl: /training/achievements/azure-local.svg
 ratingEnabled: false
 levels:
   - beginner
