@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn.quantum.explore-entanglement
 metadata:
-  title: Teleport a qubit using entanglement and the Quantum Development Kit
-  description: Teleport a qubit using entanglement and the Quantum Development Kit
-  ms.date: 09/04/2025
+  title: Teleport entangled qubits with Q#
+  description: Teleport entangled qubits with Q#
+  ms.date: 09/18/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   
   ms.topic: module
   ms.service: azure-quantum
   ms.subservice: qdk
-title: Teleport a qubit using entanglement and the Quantum Development Kit
-summary: Learn how to create entanglement with Q# and the Quantum Development Kit, and help Alice and Bob teleport a qubit.
+title: Teleport entangled qubits with Q#
+summary: Learn how to create entangled qubits with Q#, and help Alice and Bob teleport a qubit.
 abstract: |
   By the end of this module, you can:
   - Describe the concept of quantum entanglement.
@@ -19,9 +19,9 @@ abstract: |
   - Apply single-qubit and multi-qubit operations in Q#.
   - Create entangled qubits in Q#.
   
-  During this module, you will:
+  During this module, you'll:
   - Learn what entanglement is and how to describe it. 
-  - Create entanglement between two qubits in Q#.
+  - Create entangled states between two qubits in Q#.
   - Review the quantum teleportation protocol.
   - Implement the quantum teleportation protocol in Q#.
 
