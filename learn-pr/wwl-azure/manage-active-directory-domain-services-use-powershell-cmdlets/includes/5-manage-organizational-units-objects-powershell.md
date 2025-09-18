@@ -1,6 +1,6 @@
 Windows PowerShell provides cmdlets that you can use to create, modify, and delete Active Directory Domain Services (AD DS) Organizational Units (OUs). Like the cmdlets for users, groups, and computers, you can use these cmdlets for individual operations or as part of a script to perform bulk operations. OU management cmdlets have the text “organizationalunit” in the name.
 
-The following table lists cmdlets that you can use to manage OUs.
+The following table lists cmdlets that you can use to manage OUs. 
 
 *Table 1: Cmdlets for OU management*
 
@@ -21,9 +21,9 @@ The following table lists common parameters for the **New‑ADOrganizationalUnit
 
 | Parameter               | Description                                                  |
 | ---------------------------- | ------------------------------------------------------------ |
-| ‑Name                           | Defines the name of a new OU                             |
-| ‑Path                           | Defines the location of a new OU                             |
-| ‑ProtectedFromAccidentalDeletion | Prevents anyone from accidentally deleting an OU; the default value is `$true` |
+| :::no-loc text="‑Name":::                            | Defines the name of a new OU                             |
+| :::no-loc text="‑Path":::                            | Defines the location of a new OU                             |
+| :::no-loc text="‑ProtectedFromAccidentalDeletion"::: | Prevents anyone from accidentally deleting an OU; the default value is `$true` |
 
 The following example is a command to create a new OU:
 
@@ -61,10 +61,10 @@ The following table lists common parameters for **New‑ADObject**.
 
 | Parameter               | Description                                                  |
 | ---------------------------- | ------------------------------------------------------------ |
-| ‑Name            | Defines the name of an object                                |
-| ‑Type            | Defines the LDAP type of an object                           |
-| ‑OtherAttributes | Defines properties of an object that isn't accessible from other parameters |
-| ‑Path | Defines the container in which an object is created |
+| :::no-loc text="‑Name":::            | Defines the name of an object                                |
+| :::no-loc text="‑Type":::            | Defines the LDAP type of an object                           |
+| :::no-loc text="‑OtherAttributes"::: | Defines properties of an object that isn't accessible from other parameters |
+| :::no-loc text="‑Path"::: | Defines the container in which an object is created |
 
 The following command creates a new contact object:
 
