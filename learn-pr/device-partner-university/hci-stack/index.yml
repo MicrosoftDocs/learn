@@ -8,7 +8,7 @@ metadata:
   author: Stephanie-Rosenzweig
   ms.author: v-stephanier
   ms.topic: module
-  ms.service: azure
+  ms.service: azure-local
   ms.custom: CA090123-2
 summary: >
   In this module, you learn how hyperconverged infrastructure in Azure Local delivers scalable, virtualized, and hybrid solutions for on-premises environments.
@@ -19,7 +19,7 @@ abstract: |
   - Discover scalable deployment options and tools that automate infrastructure management.
 prerequisites: |
   - None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/hci-stack.svg
 ratingEnabled: false
 levels:
   - intermediate
