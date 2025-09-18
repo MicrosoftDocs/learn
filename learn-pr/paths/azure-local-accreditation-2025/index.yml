@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.dpu.azure-local-accreditation-2025
+title: Azure Local Accreditation 2025
+metadata:
+  title: Azure Local Accreditation 2025
+  description: This Learning Path introduces Azure Local, beginning with foundational concepts and progressing into the core technical principles of hyperconverged infrastructure. You’ll explore how Azure Local enables organizations to run virtualized workloads on-premises using tools and technologies that are familiar to IT professionals. This Learning Path also highlights key capabilities and deployment considerations to help you better understand how Azure Local fits into modern hybrid infrastructure strategies.
+  ms.date: 09/18/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: learning-path
+  ms.custom: CA090123
+summary: >
+  Discover how Azure Local enables you to run virtualized workloads on-premises using familiar tools and hyperconverged infrastructure.
+prerequisites: None
+iconUrl: /training/achievements/azure-local-accreditation-2025.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - technology-manager
+products:
+  - azure-local
+modules:
+  - learn.dpu.azure-local
+  - learn.dpu.hci-stack
+  - learn.dpu.hybrid-cloud-integration-with-azure-local
+  - learn.dpu.operate-hybrid-infrastructure-with-azure-local
+trophy:
+  uid: learn.dpu.azure-local-accreditation-2025.trophy
