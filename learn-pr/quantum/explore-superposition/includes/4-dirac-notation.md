@@ -1,4 +1,4 @@
-In the previous unit, you learned how to represent superposition for a single qubit on a Bloch sphere. But quantum computing requires systems of many qubits to be useful, so we need a better way to represent superposition states in larger quanatum systems. In practice, use the laws of quantum mechanics and the language of linear algebra to describe quantum states in general.
+In the previous unit, you learned how to represent superposition states for a single qubit on a Bloch sphere. But quantum computing requires systems of many qubits to be useful, so we need a better way to represent superposition states in larger quantum systems. In practice, use the laws of quantum mechanics and the language of linear algebra to describe quantum states in general.
 
 In this unit, you learn how to express quantum states in Dirac bra-ket notation, and use that notation to simplify the linear algebra calculations that form the foundation of quantum mechanics and quantum computing.
 
@@ -20,18 +20,18 @@ In quantum computing, quantum states are manipulated over time to perform comput
 
 $$X |0\rangle = |1\rangle$$
 
-The `X` operator is also called the Pauli-X gate. It's a fundamental quantum operation that flips the state of a qubit. There are three Pauli gates: `X`, `Y`, and `Z`. Each gate or operator has a specific effect on the qubit state.
+The `X` operator is also called the Pauli-X gate. It's a fundamental quantum operation that flips the state of a qubit. There are three Pauli gates: `X`, `Y`, and `Z`. Each gate, or operator, has a specific effect on the qubit state.
 
-| Operator | Effect on $\ket{0}$ | Effect on $\ket{1}$ |
-|----------|-----------------------|-----------------------|
-| X        | $X \ket{0} = \ket{1}$           |$X\ket{1} = \ket{0}$|
-| Y        | $Y\ket{0}=i\ket{1}$         | $Y\ket{1}=-i\ket{0}$         |
-| Z        | $Z\ket{0}=\ket{0}$          | $Z\ket{1}=-\ket{1}$          |
+| Operator | Effect on $\ket{0}$   | Effect on $\ket{1}$  |
+|----------|-----------------------|----------------------|
+| X        | $X \ket{0} = \ket{1}$ | $X\ket{1} = \ket{0}$ |
+| Y        | $Y\ket{0}=i\ket{1}$   | $Y\ket{1}=-i\ket{0}$ |
+| Z        | $Z\ket{0}=\ket{0}$    | $Z\ket{1}=-\ket{1}$  |
 
 > [!NOTE]
-> Quantum operations are often referred to as quantum gates in the context of quantum computing. The term quantum gate is an analogy to logic gates in classical computer circuits. The term is rooted in the early days of quantum computing when quantum algorithms were visualized as diagrams similar to circuit diagrams in classical computing.
+> Quantum operations are often referred to as gates in the context of quantum computing. The term quantum gate is an analogy to logic gates in classical computer circuits. The term is rooted in the early days of quantum computing when quantum algorithms were visualized as diagrams similar to circuit diagrams in classical computing.
 
-You can also use an operator to put a qubit into a superposition. The Hadamard operator, `H`, puts a qubit in a Hadamard state, which is an equal superposition of the $|0\rangle$ state and the $|1\rangle$ state:
+You can also use an operator to put a qubit into a superposition state. The Hadamard operator, `H`, puts a qubit into a Hadamard state, which is an equal superposition of the $|0\rangle$ state and the $|1\rangle$ state:
 
 $$  H |0\rangle = \frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$$
 $$  H |1\rangle = \frac1{\sqrt2} |0\rangle - \frac1{\sqrt2} |1\rangle$$
@@ -40,8 +40,8 @@ When you measure a qubit in a Hadamard state, you have a 50% chance to observe 0
 
 ## What does it mean to do a measurement?
 
-In the classical world, we think of measurements as separate from the system that we measure. For example, a radar beam that measures the speed of a baseball doesn't affect the baseball in any meaningful way. But in the quantum world, measurements affect the systems that we measure. When he hit an electron with a photon to measure the electron, it fundamentally changes the nature of the electron.
+In the classical world, we think of measurements as separate from the system that we measure. For example, a radar beam that measures the speed of a baseball doesn't affect the baseball in any meaningful way. But in the quantum world, measurements affect the systems that we measure. When we hit an electron with a photon to take a measurement, it has a fundamental effect on the state of the electron.
 
-In quantum computing, a measurement irreversibly converts a qubit to one of its possible states irreversibly. In the Hadamard state example, if we measure the qubit and find that it's in the 0 state, then every subsequent measurement of that qubit will always give 0.
+In quantum computing, a measurement irreversibly puts a qubit into one of its possible states, 0 or 1. In the Hadamard state example, if we measure the qubit and find that it's in the 0 state, then every subsequent measurement of that qubit will always give 0.
 
 To learn more about measurement in the context of quantum mechanics, see the Wikipedia article about the [Measurement problem](https://wikipedia.org/wiki/Measurement_problem).

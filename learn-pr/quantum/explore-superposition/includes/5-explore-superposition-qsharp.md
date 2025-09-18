@@ -6,18 +6,17 @@ In this unit, you create quantum superposition states in Q# and explore the role
 ## Create a new Q# file
 
 1. Open Visual Studio Code (VS Code).
-1. In VS Code, choose open the **File** menu, choose **New Text File**, and then save the file as **Main.qs**.
-1. Open the VS Code **View** menu, choose **Command Palette**, and then type and choose **QDK: Set the Azure Quantum QIR target profile**.
-1. Choose **QIR unrestricted**.
+1. Open the **File** menu, and then choose **New Text File** to create a new file.
+1. Save the file as **Main.qs**.
 
 ## Get started with superposition
 
-Let's start with a simple Q# program uses a qubits in a superposition state to generate a random bit value, 0 or 1. In our code, we use the `DumpMachine` function to see the state of the qubit at different points in the program.
+Let's start with a simple Q# program that uses a qubit in a superposition state to generate a random bit value, 0 or 1. In our code, we use the `DumpMachine` function to see the state of the qubit at different points in the program.
 
-1. Copy and paste the following code to the **Main.qs** file:
+1. Copy and paste the following code into the **Main.qs** file:
 
     ```qsharp
-    import Microsoft.Quantum.Diagnostics.*;
+    import Std.Diagnostics.*;
     
     operation Main() : Result {
         use q = Qubit();
@@ -40,10 +39,10 @@ Let's start with a simple Q# program uses a qubits in a superposition state to g
     }
     ```
 
-1. To run your program on the built-in simulator, choose the **Run** code lens above the `Main` operation or press **Ctrl+F5**. Your output appears in the debug console.
+1. To run your program on the built-in simulator, choose the **Run** code lens above the `Main` operation or press **Ctrl + F5**. Your output appears in the debug console.
 1. Examine the debug console to find the result of your measurement, either `Zero` or `One`.
 
-The `DumpMachine` function creates a table of information that describes the state of the quantum system, which in this case is a ingle qubit. Information from `DumpMachine` includes the probability amplitude, the measurement probability, and the phase in radians for each basis state.
+The `DumpMachine` function creates a table of information that describes the state of the quantum system, which in this case is a single qubit. Information from `DumpMachine` includes the probability amplitude, the measurement probability, and the phase in radians for each basis state.
 
 Your code calls the `DumpMachine` function four times:
 
@@ -64,7 +63,7 @@ Let's examine the output from each call to `DumpMachine`:
        |0⟩ |  1.0000+0.0000𝑖 |   100.0000% |   0.0000
     ```
 
-- **Qubit after applying H:** After you apply the `H` operation, the qubit is in an equal superposition state of $|0\rangle$ and $|1\rangle$, $|\psi\rangle=\frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$.
+- **Qubit after applying H:** After you apply the `H` operation, the qubit is in an equal superposition state, $|\psi\rangle=\frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$.
 
     ```output
     Qubit after applying H:
@@ -87,9 +86,9 @@ Let's examine the output from each call to `DumpMachine`:
     ```
 
     > [!NOTE]
-    > Your output from `DumpMachine` after measurement might differ from the example output because you have a 50% to measure each state. While the probabilities of the outcomes are deterministic, the result of an individual measurement is not.
+    > Your output from `DumpMachine` after measurement might differ from the example output because you have a 50% chance to measure each state. The probabilities of the outcomes are deterministic, but the result of an individual measurement is not.
 
-- **Qubit after resetting:** The `Reset` operation resets the qubit to the state $|0\rangle$. To perform operations on a qubit again after you measure it in Q#, you must always reset the measured qubit back to the $|0\rangle$ state.
+- **Qubit after resetting:** The `Reset` operation resets the qubit to the state $|0\rangle$ so that it can be used again for future computations.
 
     ```output
     Qubit after resetting:
@@ -99,9 +98,9 @@ Let's examine the output from each call to `DumpMachine`:
        |0⟩ |  1.0000+0.0000𝑖 |   100.0000% |   0.0000
     ```
 
-## Explore other types of superposition states
+## Explore other superposition states
 
-Now that you know how to inspect the state of a qubit system, let's explore other operations that put the system into different kinds of superposition states.
+Now that you know how to inspect the state of a qubit system with `DumpMachine`, let's explore other operations that put the system into different kinds of superposition states.
 
 The current random bit generator produces either `Zero` or `One` with a 50% probability. In the next example, the probabilities aren't equal.
 
@@ -113,9 +112,9 @@ For example, you want the outcome `Zero` with probability $P$ and the outcome `O
 
 $$|\psi\rangle=\sqrt{P}|0\rangle+\sqrt{1 - P}|1\rangle$$
 
-For this state $|\psi\rangle$, $\alpha=\sqrt{P}$ and $\beta=\sqrt{1 - P}$ are the amplitudes of the basis states $|0\rangle$ and $|1\rangle$, respectively.
+For this state $|\psi\rangle$, $\alpha=\sqrt{P}$ and $\beta=\sqrt{1 - P}$ are the probability amplitudes of the basis states $|0\rangle$ and $|1\rangle$, respectively.
 
-To obtain this state, you can sequentially apply the operator $R_y(2\arccos\sqrt{P})$ to a qubit that starts in the $|0\rangle$ state. To achieve this result in Q#, use the [`Ry`](/qsharp/api/qsharp/microsoft.quantum.intrinsic.Ry?azure-portal=true) from the standard library.
+To obtain this state, you can sequentially apply the operator $R_y(2\cos^{-1}\sqrt{P})$ to a qubit that starts in the $|0\rangle$ state. To achieve this result in Q#, use the [`Ry`](/qsharp/api/qsharp/microsoft.quantum.intrinsic.Ry?azure-portal=true) from the standard library.
 
 > [!TIP]
 > To learn more about the math behind single-qubit operations, check out the
@@ -123,11 +122,11 @@ To obtain this state, you can sequentially apply the operator $R_y(2\arccos\sqrt
 
 To create a skewed superposition state in Q#, follow these steps:
 
-1. Replace all the code in **Main.qs** with the following example, and then save the file. This example chooses $\alpha$ to be about $\frac13$.
+1. Replace all the code in **Main.qs** with the following example, and then save the file. This example chooses $\alpha$ to be approximately $\frac13$.
 
     ```qsharp
-    import Microsoft.Quantum.Diagnostics.*;
-    import Microsoft.Quantum.Math.*;
+    import Std.Diagnostics.*;
+    import Std.Math.*;
 
     operation Main() : Result {
         use q = Qubit();
@@ -142,7 +141,7 @@ To create a skewed superposition state in Q#, follow these steps:
     }
     ```
 
-1. To run your program on the built-in simulator, choose the **Run** code lens above the `Main` operation or press **Ctrl+F5**. Your output appears in the debug console.
+1. To run your program on the built-in simulator, choose the **Run** code lens above the `Main` operation or press **Ctrl + F5**. Your output appears in the debug console.
 1. Examine the output from `DumpMachine` and the result of your measurement. For example, the output is similar to the following:
 
     ```output
@@ -161,17 +160,17 @@ To create a skewed superposition state in Q#, follow these steps:
 Notice that the probability of a `Zero` measurement result is about 33.33% and the probability of a `One` result is about 66.67%. This random bit generator is skewed towards `One`.
 
 > [!NOTE]
-> Your measurement result output might differ from the example output because the random bit generator is probabilistic. While the probabilities of the outcomes are deterministic, the result of an individual measurement is not.
+> Your measurement result output might differ from the example output because the random bit generator is probabilistic. The probabilities of the outcomes are deterministic, but the result of an individual measurement is not.
 
 ### Multiple-qubit superposition
 
-So far, we've only considered single-qubit systems. But a good quantum computer needs a lot of qubits to perform useful calculations. How do quantum states and superposition work when our system has more than one qubit?
+So far, we've considered only single-qubit systems. But a good quantum computer needs a lot of qubits to perform useful calculations. How do quantum states and superposition work when our system has more than one qubit?
 
-As an example, consider a system of three qubits. Each qubit can have a value of 0 or 1 when you measure the qubits, so there are eight possible states that you can find the system to be in:
+As an example, consider a system of three qubits. Each qubit can have a value of 0 or 1 when you measure them, so there are eight possible states that you can find the system to be in:
 
 $$|000\rangle,|001\rangle,|010\rangle,|011\rangle,|100\rangle,|101\rangle, |110\rangle,|111\rangle $$
 
-There are eight states for this system because each qubit can independently be either a 0 or 1 state when we take a measurement. In general, the number of possible states is equal to $2^n$, where $n$ is the number of qubits.
+There are eight possible states for this system because each qubit can independently be either a 0 or 1 state when we take a measurement. In general, the number of possible states is equal to $2^n$, where $n$ is the number of qubits.
 
 Just like with a single qubit, an arbitrary superposition state for the 3-qubit system is represented as a weighted sum of these eight states, where the weights are the probability amplitudes:
 
@@ -181,44 +180,42 @@ Once again, the amplitudes $\alpha_i$ are complex numbers that satisfy the condi
 
 For example, you can place qubits in a uniform superposition by applying `H` to each qubit. You can then use this uniform superposition to create a quantum random number generator that generates three-bit numbers instead of one-bit numbers:
 
-|Basis state|Number|
-|---|---|
-|$\ket{000}$|0|
-|$\ket{001}$|4|
-|$\ket{010}$|2|
-|$\ket{011}$|6|
-|$\ket{100}$|1|
-|$\ket{101}$|5|
-|$\ket{110}$|3|
-|$\ket{111}$|7|
+| Basis state |Number|
+|-------------|------|
+| $\ket{000}$ | 0    |
+| $\ket{001}$ | 4    |
+| $\ket{010}$ | 2    |
+| $\ket{011}$ | 6    |
+| $\ket{100}$ | 1    |
+| $\ket{101}$ | 5    |
+| $\ket{110}$ | 3    |
+| $\ket{111}$ | 7    |
 
 > [!NOTE]
-> The standard way to write bit strings is to have the smallest digit on the right and the largest digit on the left, just like with regular decimal numbers. In Q# (and many other quantum programming languages), the order is reversed so that the smallest digit is on the left and the largest digit is on the right. Because the `DumpMachine` function displays the quantum states in the standard order, the decimal integers that the states correspond to aren't ordered sequentially from 0 to $n-1$.
+> The standard way to write bit strings is to have the smallest digit on the right and the largest digit on the left, just like with regular decimal numbers. In Q# (and many other quantum programming languages), the order is reversed so that the smallest digit is on the left and the largest digit is on the right. Because the `DumpMachine` function displays quantum states in the standard order, the decimal integers that the states correspond to aren't ordered sequentially from 0 to $n-1$.
 
 To create this kind of random number generator, follow these steps:
 
 1. Replace your code in **Main.qs** with the following example, and then save the file:
 
     ```qsharp
-    import Microsoft.Quantum.Diagnostics.*;
-    import Microsoft.Quantum.Math.*;
-    import Microsoft.Quantum.Convert.*;
-    import Microsoft.Quantum.Arrays.*;
-
+    import Std.Diagnostics.*;
+    import Std.Convert.*;
+    
     operation Main() : Int {
         use qubits = Qubit[3];
         ApplyToEach(H, qubits);
         Message("The qubit register in a uniform superposition: ");
         DumpMachine();
-        let result = ForEach(M, qubits);
+        let result = MeasureEachZ(qubits);
         Message("Measuring the qubits collapses the superposition to a basis state.");
         DumpMachine();
         ResetAll(qubits);
-        return BoolArrayAsInt(ResultArrayAsBoolArray(result));
+        return ResultArrayAsInt(result);
     }
     ```
 
-1. To run your program on the built-in simulator, choose the **Run** code lens above the `Main` operation or press **Ctrl+F5**. Your output appears in the debug console.
+1. To run your program on the built-in simulator, choose the **Run** code lens above the `Main` operation or press **Ctrl + F5**. Your output appears in the debug console.
 1. Examine the output from `DumpMachine` and the result of your measurement. For example, the output is similar to the following:
 
     ```output
@@ -245,45 +242,42 @@ To create this kind of random number generator, follow these steps:
     ```
 
     > [!NOTE]
-    > Your output probably has a different result than the example output because the random number generator is probabilistic. While the probabilities of the outcomes are deterministic, the result of an individual measurement is not.
+    > Your output probably has a different result than the example output because the random number generator is probabilistic. The probabilities of the outcomes are deterministic, but the result of an individual measurement is not.
 
 To work with multiple qubits, your Q# code has the following modifications:
 
 - The `qubits` variable now represents a `Qubit` array that has a length of three.
-- The operations `ApplyToEach` and `ForEach` apply quantum operations to multiple qubits with just one line of code. The Q# libraries offer many functions and operations that simplify quantum programming for you.
-- The functions `BoolArrayAsInt` and `ResultArrayAsBoolArray` from the `Microsoft.Quantum.Convert` library transform the binary `Result` array into a decimal integer.
+- The operations `ApplyToEach` and `MeasureEachZ` apply quantum operations to multiple qubits with just one line of code. The Q# libraries offer many functions and operations that simplify quantum programming for you.
+- The function `ResultArrayAsInt` from the `Std.Convert` library transforms the binary `Result` array into a decimal integer.
 
 The output from `DumpMachine` shows that the act of measurement collapses the superposition state into one of the eight possible basis states, just like with a single qubit. For example, if you get the result `6`, then it means that the state of the system collapsed to $|011\rangle$.
 
-Now let's take a deeper look at how the system changes as we measure each qubit. The preceding code used the `ForEach` operation to measure all three qubits at once. Instead, let's use a `for` loop to measure the qubits one at a time, and use `DumpMachine` to view the state of the system after each measurement.
+Now let's take a deeper look at how the system changes as we measure each qubit. The preceding code used the `MeasureEachZ` operation to measure all three qubits at once. Instead, let's use a `for` loop to measure the qubits one at a time, and use `DumpMachine` to view the state of the system after each measurement.
 
 1. Replace the code in **Main.qs** with the following example, and then save the file:
 
     ```qsharp
-    import Microsoft.Quantum.Diagnostics.*;
-    import Microsoft.Quantum.Measurement.*;
-    import Microsoft.Quantum.Math.*;
-    import Microsoft.Quantum.Convert.*;
-
+    import Std.Diagnostics.*;
+    import Std.Convert.*;
+    
     operation Main() : Int {
         use qubits = Qubit[3];
         ApplyToEach(H, qubits);
-        Message("The qubit register in a uniform superposition: ");
+        Message("The qubit register is in a uniform superposition: ");
         DumpMachine();
         mutable results = [];
         for q in qubits {
             Message(" ");
-            set results += [M(q)];
+            results += [M(q)];
             DumpMachine();
         }
-        Message(" ");
-        Message("Your random number is: ");
         ResetAll(qubits);
-        return BoolArrayAsInt(ResultArrayAsBoolArray(results));
+        Message("Your random number is: ");
+        return ResultArrayAsInt(results);
     }
     ```
 
-1. To run your program on the built-in simulator, choose the **Run** code lens above the `Main` operation or press **Ctrl+F5**. Your output appears in the debug console.
+1. To run your program on the built-in simulator, choose the **Run** code lens above the `Main` operation or press **Ctrl + F5**. Your output appears in the debug console.
 1. Examine the output from `DumpMachine` and the result of your measurement.
 
 The output shows how each consecutive measurement changes the quantum state and therefore the probabilities to obtain each outcome. For example, let's examine each part of the output in the case that your result is `5`:
@@ -291,7 +285,7 @@ The output shows how each consecutive measurement changes the quantum state and 
 - **State preparation**: The system is in an equal superposition state after you apply `H` to each qubit.
 
     ```output
-    The qubit register in a uniform superposition: 
+    The qubit register is in a uniform superposition: 
 
      Basis | Amplitude      | Probability | Phase
      -----------------------------------------------
@@ -305,7 +299,7 @@ The output shows how each consecutive measurement changes the quantum state and 
      |111⟩ |  0.3536+0.0000𝑖 |    12.5000% |   0.0000
     ```
 
-- **First measurement**: The result is `One` for the first measurement, so now the only possible states that the system can end up in are the states where the leftmost bit is 1. The amplitudes of the states where leftmost qubit is 0 have disappeared, and the probabilities of the remaining possible states increase from 12.5% to 25.0% so that the sum of probabilities remains 100%.
+- **First measurement**: The result is `One` for the first measurement, so now the only possible states that the system can end up in are the states where the leftmost bit is 1. The amplitudes of the states where the leftmost qubit is 0 have disappeared, and the probabilities of the remaining possible states increase from 12.5% to 25.0% so that the sum of probabilities remains 100%.
 
     ```output
      Basis | Amplitude      | Probability | Phase
@@ -332,9 +326,9 @@ The output shows how each consecutive measurement changes the quantum state and 
      -----------------------------------------------
      |101⟩ |  1.0000+0.0000𝑖 |   100.0000% |   0.0000
 
- 
-
     Your random number is: 
 
     5
     ```
+
+With Q#, you can create a system of qubits, put the qubits into a superposition state, and examine how the system changes as you apply quantum operations or take measurements.
