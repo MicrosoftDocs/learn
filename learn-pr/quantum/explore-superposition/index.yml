@@ -2,8 +2,8 @@
 uid: learn.quantum.explore-superposition
 metadata:
   title: Explore quantum superposition with Q#
-  description: Learn one of the fundamental concepts of quantum computing, superposition, how to represent superposition of qubit using the Bloch sphere, and how to create and analyze superposition states with Q#.
-  ms.date: 01/22/2025
+  description: Learn about the concept of superposition in quantum computing, how to represent superposition states for a single qubit with the Bloch sphere, and how to create and analyze superposition states with Q#.
+  ms.date: 09/18/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   
@@ -11,19 +11,19 @@ metadata:
   ms.service: azure-quantum
   ms.subservice: qdk
 title: Explore quantum superposition with Q#
-summary: Learn one of the fundamental concepts of quantum computing, superposition, how to represent superposition of qubit using the Bloch sphere, and how to create and analyze superposition states with Q#.
+summary: Learn about the concept of superposition in quantum computing, how to represent superposition states for a single qubit with the Bloch sphere, and how to create and analyze superposition states with Q#.
 abstract: |
-  By the end of this module, you will be able to:
-  - Define the concepts of quantum superposition, probabilities, and Bloch sphere.
+  By the end of this module, you can:
+  - Define the concepts of quantum superposition, probabilities, and the Bloch sphere.
   - Understand Dirac notation.
-  - Use Q# to apply operations and create superposition states.
-  - Use Q# to inspect the current state of a qubit.
+  - Use Q# to apply quantum operations and create superposition states.
+  - Use Q# to inspect the current state of a qubit system.
 
-  In this module, you will:
-  - Learn what superposition and probability mean in quantum computing.
+  In this module, you'll:
+  - Learn about the role of superposition and probability in quantum computing.
   - Learn what the Bloch sphere is and how it represents a qubit.
-  - Learn Dirac notation and quantum operators.
-  - Create and analyze different superposition states with Q# and the Q# libraries.
+  - Learn about Dirac notation and quantum operators.
+  - Create and analyze different superposition states with Q#.
 prerequisites: |
   - Basic knowledge of linear algebra and complex numbers.
   - The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code on the Web](https://vscode.dev/).
@@ -48,4 +48,4 @@ units:
 - learn.quantum.explore-superposition.summary
 badge:
   uid: learn.quantum.explore-superposition.badge
-
+
