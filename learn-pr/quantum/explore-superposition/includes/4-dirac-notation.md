@@ -42,6 +42,6 @@ When you measure a qubit in a Hadamard state, you have a 50% chance to observe 0
 
 In the classical world, we think of measurements as separate from the system that we measure. For example, a radar beam that measures the speed of a baseball doesn't affect the baseball in any meaningful way. But in the quantum world, measurements affect the systems that we measure. When we hit an electron with a photon to take a measurement, it has a fundamental effect on the state of the electron.
 
-In quantum computing, a measurement irreversibly puts a qubit into one of its possible states, 0 or 1. In the Hadamard state example, if we measure the qubit and find that it's in the 0 state, then every subsequent measurement of that qubit will always give 0.
+In quantum computing, a measurement irreversibly puts a qubit into one of its possible states, 0 or 1. In the Hadamard state example, if we measure the qubit and find that it's in the 0 state, then every subsequent measurement of that qubit always gives 0.
 
 To learn more about measurement in the context of quantum mechanics, see the Wikipedia article about the [Measurement problem](https://wikipedia.org/wiki/Measurement_problem).

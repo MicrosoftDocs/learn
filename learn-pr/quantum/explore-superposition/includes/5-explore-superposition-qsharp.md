@@ -46,7 +46,7 @@ The `DumpMachine` function creates a table of information that describes the sta
 
 Your code calls the `DumpMachine` function four times:
 
-- After you allocate the qubit.
+- After you allocate the qubit
 - After you put the qubit into a superposition state
 - After you measure the qubit's state
 - After you reset the qubit

@@ -15,9 +15,9 @@ Let's say that there are six possible configurations:
 1. The cat in front of the box
 1. The cat behind the box
 
-Other configurations, like the box inside the cat, aren't physically possible, so we won't consider those configurations.
+Other configurations, like the box inside the cat, aren't physically possible, so we don't consider those configurations.
 
-These six configurations are the possible distinct states that we can find the cat-and-box system to be in. But because this is a quantum cat-and-box system, we can't accurately predict which of the six states that the system will be in when we take a look. How, then, do we describe the state of this system before we take a look at it?
+These six configurations are the possible distinct states that we can find the cat-and-box system to be in. But because this is a quantum cat-and-box system, we can't accurately predict which of the six states that the system will be in when we take a look. How then do we describe the state of this system before we take a look at it?
 
 Well, we describe the system as a superposition of all six possible states at the same time. In mathematical terms, the superposition state is a sum, or linear combination, of all six distinct states. It's a bit silly, but here's what a superposition of our cat-and-box system looks like:
 
