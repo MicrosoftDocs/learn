@@ -6,8 +6,8 @@ metadata:
   title: Module assessment
   description: "Review concepts around using Azure Communication Services to create a voice calling web application."
   ms.date: 07/26/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: sloanster
+  ms.author: micahvivion
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 5
@@ -37,4 +37,3 @@ quiz:
     - content: "The user's Azure Communication Services user ID"
       isCorrect: true
       explanation: 'To make a non-PSTN voice call, you only need to know the user ID of the user you want to call.'
-

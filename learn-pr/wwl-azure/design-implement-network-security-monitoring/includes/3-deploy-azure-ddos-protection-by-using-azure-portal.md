@@ -44,8 +44,3 @@ Some of Azure DDoS protection features include:
 - **Attack metrics and alerts**. Summarized metrics from each attack are accessible through Azure Monitor. Alerts can be configured at the start and stop of an attack, and over the attack's duration, using built-in attack metrics.
 
 - **Multi-layered protection**. When deployed with a WAF, DDoS Protection protects both at the network layer and the application layer.
-
-
-
-> [!TIP]
-> Learn more about DDoS with the [Introduction to Azure DDoS Protection](/training/modules/introduction-azure-ddos-protection/) module.

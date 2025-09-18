@@ -2,11 +2,11 @@
 uid: learn.wwl.use-delta-lake-azure-databricks.data-versioning-and-time-travel
 title: Data versioning and time travel in Delta Lake
 metadata:
-  title: Data versioning and time travel in Delta Lake
+  title: Data Versioning and Time Travel in Delta Lake
   description: "Data versioning and time travel in Delta Lake"
-  ms.date: 08/08/2024
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 09/12/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false

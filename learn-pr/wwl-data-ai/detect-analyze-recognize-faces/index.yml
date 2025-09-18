@@ -5,7 +5,7 @@ metadata:
   description: Detect, analyze, and recognize faces
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 05/03/2025
+  ms.date: 08/28/2025
   ms.service: azure
   ms.topic: module
   ms.collection:
@@ -32,6 +32,7 @@ roles:
 products:
 - azure-computer-vision
 - azure-face
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 units:

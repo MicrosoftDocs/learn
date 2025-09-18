@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.operate-hybrid-infrastructure-with-azure-local.familiar-tools-for-it-management
+title: Familiar tools for IT management
+metadata:
+  title: Familiar Tools For IT Management
+  description: This content is part of the "Operate hybrid infrastructure with Azure Local" module.
+  ms.date: 09/16/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-familiar-tools-for-it-management.md)]

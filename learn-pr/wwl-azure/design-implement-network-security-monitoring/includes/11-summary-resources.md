@@ -24,8 +24,6 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 
 ## Learn more with self-paced training
 
-- [Introduction to Azure DDoS Protection](/training/modules/introduction-azure-ddos-protection/). Learn how to guard your Azure services from a denial of service attack using Azure DDoS Protection.
-
 - [Configure network security groups](/training/modules/configure-network-security-groups/). Learn how to implement network security groups, and ensure network security group rules are correctly applied.
 
 - [Introduction to Azure Firewall](/training/modules/introduction-azure-firewall/). Describe how Azure Firewall protects Azure virtual network resources. Topics include features, rules, and deployment options.

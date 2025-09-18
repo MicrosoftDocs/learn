@@ -5,9 +5,10 @@ metadata:
   description: Translate speech with the Azure AI Speech service
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 12/13/2024
+  ms.date: 08/28/2025
   ms.service: azure-ai-speech
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
 title: Translate speech with the Azure AI Speech service
@@ -32,6 +33,7 @@ roles:
 - student
 products:
 - ai-services
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 units:

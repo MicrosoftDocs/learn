@@ -3,10 +3,11 @@ uid: learn.wwl.evaluate-models-azure-ai-studio
 metadata:
   title: Evaluate generative AI performance in Azure AI Foundry portal
   description: Evaluating copilots is essential to ensure your generative AI applications meet user needs, provide accurate responses, and continuously improve over time. Discover how to assess and optimize the performance of your generative AI applications using the tools and features available in the Azure AI Studio.
-  ms.date: 08/01/2025
+  ms.date: 08/28/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
   ms.service: azure-ai-foundry
 title: Evaluate generative AI performance in Azure AI Foundry portal
 summary: Evaluating copilots is essential to ensure your generative AI applications meet user needs, provide accurate responses, and continuously improve over time. Discover how to assess and optimize the performance of your generative AI applications using the tools and features available in the Azure AI Studio.
@@ -17,7 +18,7 @@ abstract: |
     - Assess your generative AI apps with AI-assisted metrics.
     - Configure evaluation flows in the Azure AI Foundry portal.
 prerequisites: |
-  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. Consider completing the [Get started with artificial intelligence](/training/paths/get-started-with-artificial-intelligence-on-azure) learning path first.
+  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate
@@ -25,7 +26,7 @@ roles:
   - data-scientist
   - ai-engineer
 products: 
-  - ai-services
+  - azure-ai-foundry
 subjects: 
   - artificial-intelligence
   - machine-learning

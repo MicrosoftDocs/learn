@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.build-data-pipeline-with-delta-live-tables
 metadata:
-  title: "Build data pipelines with Delta Live Tables"
-  description: "Learn how to build data pipelines with Delta Live Tables in Azure Databricks"
-  ms.date: "07/23/2024"
-  author: wwlpublish
-  ms.author: jamesh
+  title: Build Lakeflow Declarative Pipelines
+  description: "Learn how to build Lakeflow Declarative Pipelines in Azure Databricks"
+  ms.date: 09/12/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module-standard-task-based
   ms.service: azure-databricks
-title: Build data pipelines with Delta Live Tables
-summary: "Building data pipelines with Delta Live Tables enables real-time, scalable, and reliable data processing using Delta Lake's advanced features in Azure Databricks"
+title: Build Lakeflow Declarative Pipelines
+summary: "Building Lakeflow Declarative Pipelines enables real-time, scalable, and reliable data processing using Delta Lake's advanced features in Azure Databricks"
 abstract: |
   In this module, you'll learn how to:
-  - Describe Delta Live Tables
-  - Ingest data into Delta Live Tables
-  - Use Data Pipelines for real time data processing
+  - Describe Lakeflow Declarative Pipelines
+  - Ingest data into Lakeflow Declarative Pipelines
+  - Use Lakeflow Declarative Pipelines for real time data processing
 prerequisites: |
   Before starting this module, you should be familiar the concept of a data pipeline.
 iconUrl: /training/achievements/generic-badge.svg

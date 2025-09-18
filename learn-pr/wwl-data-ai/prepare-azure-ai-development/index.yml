@@ -5,9 +5,10 @@ metadata:
   description: Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Proper planning and preparation involves identifying the services you'll use and creating an optimal working environment for your development team.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 08/01/2025
+  ms.date: 08/28/2025
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
   ms.custom: ai-learning-hub
@@ -32,6 +33,7 @@ roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/me
   - ai-engineer
 products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
   - ai-services
+  - azure-ai-foundry
 subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - artificial-intelligence
   - app-development

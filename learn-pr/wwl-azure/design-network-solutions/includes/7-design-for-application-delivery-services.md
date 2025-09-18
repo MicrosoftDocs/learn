@@ -42,10 +42,6 @@ The different load balancers can work together in your networking architecture.
 - Combine hybrid applications.
 - Distribute traffic for complex deployments.
 
-> [!Tip]
-> Learn more with the [Enhance your service availability and data locality by using Azure Traffic Manager](/training/modules/distribute-load-with-traffic-manager/) training module. 
-
-
 ### Azure Load Balancer
 
 [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) provides high-performance, low-latency Layer 4 load-balancing for all UDP and TCP protocols.

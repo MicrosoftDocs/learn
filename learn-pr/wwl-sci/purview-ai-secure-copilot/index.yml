@@ -1,0 +1,58 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ai-secure-copilot
+metadata:
+  title: Secure Microsoft 365 Copilot Interactions with Microsoft Purview
+  description: AI tools like Microsoft 365 Copilot create new ways to interact with sensitive data, but they also introduce new risks. Learn how Microsoft Purview helps you apply security and compliance controls that protect data, manage AI activity, and support responsible use at scale.
+  ms.date: 08/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Secure Microsoft 365 Copilot interactions with Microsoft Purview
+summary: |
+  AI tools like Microsoft 365 Copilot create new ways to interact with sensitive data, but they also introduce new risks. Learn how Microsoft Purview helps you apply security and compliance controls that protect data, manage AI activity, and support responsible use at scale.
+abstract: |
+  In this module you learn how to:
+  - Control Copilot's access to sensitive content with sensitivity labels
+  - Prevent data exposure in Copilot interactions using data loss prevention policies
+  - Retain and audit Copilot prompts and responses with retention and audit
+  - Investigate Copilot activity using eDiscovery
+  - Detect risky or inappropriate Copilot usage with Communication Compliance
+  - Assess AI compliance using Compliance Manager
+prerequisites: |
+  - Familiarity with Microsoft 365 Copilot
+  - Basic knowledge of Microsoft Purview
+  - Understanding of compliance and data protection concepts
+  - Experience with Microsoft 365 roles and permissions
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- auditor
+- ip-admin
+- risk-practitioner
+products:
+- m365
+- microsoft-purview
+- microsoft-365-copilot
+subjects:
+- security
+- compliance
+- information-protection-governance
+
+units:
+- learn.wwl.purview-ai-secure-copilot.introduction
+- learn.wwl.purview-ai-secure-copilot.understand-copilot-protection-needs
+- learn.wwl.purview-ai-secure-copilot.compliance-manager-copilot
+- learn.wwl.purview-ai-secure-copilot.audit-copilot
+- learn.wwl.purview-ai-secure-copilot.communication-compliance-copilot
+- learn.wwl.purview-ai-secure-copilot.sensitivity-labels-copilot
+- learn.wwl.purview-ai-secure-copilot.data-loss-prevention-copilot
+- learn.wwl.purview-ai-secure-copilot.retention-copilot
+- learn.wwl.purview-ai-secure-copilot.ediscovery-copilot
+- learn.wwl.purview-ai-secure-copilot.knowledge-check
+- learn.wwl.purview-ai-secure-copilot.summary
+badge:
+  uid: learn.wwl.purview-ai-secure-copilot.badge

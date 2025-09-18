@@ -26,14 +26,14 @@ quiz:
     - content: "User delegation SAS"
       isCorrect: true
       explanation: "Correct. A user delegation SAS applies to Blob storage only."
-  - content: "Which of the following best practices provides the most flexible and secure way to use a service or account shared access signature (SAS)?"
+  - content: "Which of the following best practices provides the most flexible and secure way to use a service shared access signature (SAS)?"
     choices:
     - content: "Associate SAS tokens with a stored access policy."
       isCorrect: true
-      explanation: "Correct. The most flexible and secure way to use a service or account SAS is to associate the SAS tokens with a stored access policy."
+      explanation: "Correct. The most flexible and secure way to use a service SAS is to associate the SAS tokens with a stored access policy."
     - content: "Always use HTTPS"
       isCorrect: false
       explanation: "Incorrect. Using HTTPS prevents man-in-the-middle attacks but isn't the most flexible and secure practice."
     - content: "Implement a user delegation SAS"
       isCorrect: false
-      explanation: "Incorrect. A user delegation SAS is the most secure SAS."
+      explanation: "Incorrect. A user delegation SAS is the most secure SAS."

@@ -155,6 +155,5 @@ Identify the subtasks of *module title*
 Related modules:
 
 - [Introduction to Azure Firewall](https://learn.microsoft.com/training/modules/introduction-azure-firewall/3-how-azure-firewall-works)
-- https://learn.microsoft.com/training/modules/hub-and-spoke-network-architecture/
 - https://learn.microsoft.com/training/modules/intro-to-azure-networking/
-- https://learn.microsoft.com/training/modules/network-fundamentals-2/4-firewalls-network-security
+

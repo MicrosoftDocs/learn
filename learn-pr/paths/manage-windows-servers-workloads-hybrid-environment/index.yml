@@ -34,7 +34,6 @@ modules:
 - learn.wwl.perform-post-installation-configuration-of-windows-server
 - learn.wwl.administer-manage-windows-server-iaas-vm-remotely
 - learn.wwl.manage-hybrid-workloads-with-azure-arc
-- learn.optimize-operations-with-automanage
 - learn.wwl.just-enough-administration-windows-server
 trophy:
   uid: learn.wwl.manage-windows-servers-workloads-hybrid-environment.trophy
