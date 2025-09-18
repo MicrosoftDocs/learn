@@ -1,4 +1,3 @@
-
 In the previous units, you learned about superposition and Dirac notation. That's enough theory for now! Let's write some code to explore superposition in Q#.
 
 In this unit, you create quantum superposition states in Q# and explore the role of probability in measurement results. You also use the `DumpMachine` function in Q# to examine how the state of a system changes during a quantum computation.

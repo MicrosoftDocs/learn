@@ -4,7 +4,7 @@ In this unit, you learn how to express quantum states in Dirac bra-ket notation,
 
 ## Dirac bra-ket notation
 
-Dirac bra-ket notation, or Dirac notation for short, is a shorthand notation that makes it much easier to write out quantum states and perform linear algebra computations. In Dirac notation, the possible states of a quantum system are described by symbols called kets, which look like this: $|\,\,\rangle$.
+Dirac bra-ket notation, or Dirac notation for short, is a shorthand notation that makes it much easier to write out quantum states and perform linear algebra computations. In Dirac notation, the possible states of a quantum system are described by symbols called kets, which look like this: $|\rangle$.
 
 For example, $|0\rangle$ and $|1\rangle$ represent the 0 and 1 states of a qubit, respectively. In general, we represent the state of a qubit as $|\psi\rangle$, where $|\psi\rangle$ is a weighted sum (or linear combination) of the two states $|0\rangle$ and $|1\rangle$:
 
