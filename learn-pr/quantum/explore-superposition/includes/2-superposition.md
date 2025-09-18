@@ -8,12 +8,12 @@ Imagine that you have a cat and a box, and you want to describe the possible con
 
 Let's say that there are six possible configurations:
 
-1. The cat on top of the box
-1. The cat inside the box
-1. The cat under the box
-1. The cat next to the box
-1. The cat in front of the box
-1. The cat behind the box
+- The cat on top of the box
+- The cat inside the box
+- The cat under the box
+- The cat next to the box
+- The cat in front of the box
+- The cat behind the box
 
 Other configurations, like the box inside the cat, aren't physically possible, so we don't consider those configurations.
 
