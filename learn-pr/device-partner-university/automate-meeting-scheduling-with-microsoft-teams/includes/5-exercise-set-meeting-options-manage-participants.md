@@ -38,7 +38,7 @@ Managing how participants join and interact in a meeting is key to running effec
    1. Use the participant panel to spotlight a presenter, mute attendees, or admit people from the lobby.
    1. Change participant roles if needed (for example, promote an attendee to presenter).
 
-   :::image type="content" border="true" source="../media/during-meeting.png" alt-text="Screenshot showing some of the options available to meeting organizers during a Teams meeting." lightbox="../media/during-meeting-expanded.png":::
+   :::image type="content" border="true" source="../media/during-meeting.png" alt-text="Screenshot showing some of the options available to meeting organizers during a Teams meeting.":::
 
    >[!NOTE]
    > Some features (like **Spotlight for everyone**) may be limited by meeting size or type.
