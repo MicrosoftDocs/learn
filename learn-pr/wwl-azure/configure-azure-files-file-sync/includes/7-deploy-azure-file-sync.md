@@ -22,6 +22,9 @@ Cloud tiering is an optional feature of Azure File Sync. Frequently accessed fil
 
 - Cloud tiering files have greyed icons with an offline `O` file attribute to let the user know when the file is only in Azure.
 
+> [!TIP]
+> Use the **Ask Learn** icon (top right) to learn more about *File Sync and cloud tiering*. 
+
 ### Things to consider when using Azure File Sync
 
 There are many advantages to using Azure File Sync. Consider the following scenarios, and think about how you can use Azure File Sync with your Azure Files shares.
