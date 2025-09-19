@@ -8,13 +8,13 @@ Managing how participants join and interact in a meeting is key to running effec
    1. If you only need to change the meeting options for the selected date and time, move onto the next step.
    1. If you want to change meeting options moving forward, select **Edit series** (this will apply the changes retroactively) or **Edit this and all following events** (this will apply the changes to the current meeting and all future ones.)
 
-   :::image type="content" border="true" source="../media/change-series.jpeg" alt-text="Screenshot showing where to select in order to change meeting options for a series, not a single occurrence.":::
+   :::image type="content" border="true" source="../media/change-series.png" alt-text="Screenshot showing where to select in order to change meeting options for a series, not a single occurrence." lightbox="../media/change-series-expanded.png":::
 
 1. Access meeting options.
    1. At the bottom of the window, find the link that says **For organizers: Meeting options.**
    1. This opens the meeting options in a new browser window.
 
-   :::image type="content" border="true" source="../media/meeting-options-link.jpg" alt-text="A screenshot showing the location of the Meeting options link." lightbox="../media/meeting-options-link-expanded.jpg":::
+   :::image type="content" border="true" source="../media/meeting-options-link.png" alt-text="A screenshot showing the location of the Meeting options link." lightbox="../media/meeting-options-link-expanded.png":::
 
 1. Adjust who can bypass the lobby.
    1. Choose whether everyone, only people in your organization, or only you can join the meeting directly.
@@ -30,7 +30,7 @@ Managing how participants join and interact in a meeting is key to running effec
    >[!NOTE]
    >Some organizations may have custom policies that affect which options are available.
 
-   :::image type="content" border="true" source="../media/meeting-options-page.jpg" alt-text="Screenshot showing the Microsoft Teams meeting options page" lightbox="../media/meeting-options-page-expanded.jpg":::
+   :::image type="content" border="true" source="../media/meeting-options-page.png" alt-text="Screenshot showing the Microsoft Teams meeting options page." lightbox="../media/meeting-options-page-expanded.png":::
 
 1. Select **Save** to confirm your meeting options and apply the settings.
 
@@ -38,7 +38,7 @@ Managing how participants join and interact in a meeting is key to running effec
    1. Use the participant panel to spotlight a presenter, mute attendees, or admit people from the lobby.
    1. Change participant roles if needed (for example, promote an attendee to presenter).
 
-   :::image type="content" border="true" source="../media/during-meeting.jpeg" alt-text="Screenshot showing some of the options available to meeting organizers during a Teams meeting":::
+   :::image type="content" border="true" source="../media/during-meeting.png" alt-text="Screenshot showing some of the options available to meeting organizers during a Teams meeting." lightbox="../media/during-meeting-expanded.png:::
 
    >[!NOTE]
    > Some features (like **Spotlight for everyone**) may be limited by meeting size or type.

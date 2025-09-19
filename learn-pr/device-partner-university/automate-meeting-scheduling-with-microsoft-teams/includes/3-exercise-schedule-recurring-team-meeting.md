@@ -4,19 +4,19 @@ Coordinating regular meetings is essential for keeping your team aligned and inf
 > These directions were written for the new Calendar view on Teams. The experience differs if you're using the classic Calendar view.
 > To change between views, toggle **New Calendar** in the Microsoft Teams Calendar view.
 >
-> :::image type="content" border="true" source="../media/new-calendar-toggle.png" alt-text="Screenshot showing the New Calendar toggle on the classic Microsoft Teams Calendar view":::
+> :::image type="content" border="true" source="../media/new-calendar-toggle.png" alt-text="Screenshot showing the New Calendar toggle on the classic Microsoft Teams Calendar view.":::
 >
 > To change back, you can access the same toggle under the ellipses menu in the New Calendar view.
 >
-> :::image type="content" border="true" source="../media/new-calendar-toggle-revert.png" alt-text="Screenshot showing the New Calendar toggle on the new Microsoft Teams Calendar view":::
+> :::image type="content" border="true" source="../media/new-calendar-toggle-revert.png" alt-text="Screenshot showing the New Calendar toggle on the new Microsoft Teams Calendar view.":::
 
 1. Open Microsoft Teams and select **Calendar** in the left sidebar to open your calendar.
 
-   :::image type="content" border="true" source="../media/view-calendar.jpg" alt-text="Screenshot showing the location of the Calendar app in Microsoft Teams" lightbox="../media/view-calendar-expanded.jpg":::
+   :::image type="content" border="true" source="../media/view-calendar.png" alt-text="Screenshot showing the location of the Calendar app in Microsoft Teams." lightbox="../media/view-calendar-expanded.png":::
 
 1. Select **New event** in the upper right corner to open the meeting creation window.
 
-   :::image type="content" border="true" source="../media/create-new-event.jpg" alt-text="Screenshot showing the location of the New event button in Microsoft Teams" lightbox="../media/create-new-event-expanded.jpg":::
+   :::image type="content" border="true" source="../media/create-new-event.png" alt-text="Screenshot showing the location of the New event button in Microsoft Teams." lightbox="../media/create-new-event-expanded.png":::
 
    >[!IMPORTANT]
    > The classic calendar view allows you to assign a channel to a meeting from within this window. However, the new calendar view requires channel meetings to be created from within the channel.
@@ -36,11 +36,11 @@ Coordinating regular meetings is essential for keeping your team aligned and inf
    1. Select the time and date field.
    1. Select **Series** to create a recurring meeting.
 
-   :::image type="content" border="true" source="../media/make-series.jpg" alt-text="Screenshot showing the location of the Series button on Microsoft Teams" lightbox="../media/make-series-expanded.jpg":::
+   :::image type="content" border="true" source="../media/make-series.png" alt-text="Screenshot showing the location of the Series button on Microsoft Teams." lightbox="../media/make-series-expanded.png":::
 
 1. Change recurrence details. Indicate how often the meeting should repeat (for example, weekly or biweekly). Select the days of the week the meeting should be held on. Input the date of the final meeting occurrence.
 
-   :::image type="content" border="true" source="../media/recurrence-details.jpg" alt-text="Screenshot showing where to change details for a meeting series." lightbox="../media/recurrence-details-expanded.jpg":::
+   :::image type="content" border="true" source="../media/recurrence-details.png" alt-text="Screenshot showing where to change details for a meeting series." lightbox="../media/recurrence-details-expanded.png":::
 
 1. Add required and optional attendees. Enter the names or email addresses of team members who should attend.
    1. Use the **Optional** field for those who can join if available.
@@ -53,10 +53,12 @@ Coordinating regular meetings is essential for keeping your team aligned and inf
   
 1. Review all meeting details. Double-check the date, time, recurrence, attendees, and description.
 
-   :::image type="content" border="true" source="../media/finalize-meeting.jpg" alt-text="Screenshot of a New event window in Microsoft Teams, with recurrence, attendees, date, time, and description filled out." lightbox="../media/finalize-meeting-expanded.jpg":::
+   :::image type="content" border="true" source="../media/finalize-meeting.png" alt-text="Screenshot of a New event window in Microsoft Teams, with recurrence, attendees, date, time, and description filled out." lightbox="../media/finalize-meeting-expanded.png":::
 
 1. Select **Send** to schedule the meeting and send the meeting invite to all participants.
 
 1. Verify the meeting appears in both Teams and Outlook calendars.
 
-   :::image type="content" border="true" source="../media/two-calendar-views.png" alt-text="Screenshots showing the same meeting appearing in both the Teams and Outlook calendar views":::
+   :::image type="content" border="true" source="../media/outlook-view.png" alt-text="Screenshot showing a meeting in Outlook's calendar." lightbox="../media/outlook-view-expanded.png":::
+
+   :::image type="content" border="true" source="../media/teams-view.png" alt-text="Screenshot showing a meeting in Teams' calendar." lightbox="../media/teams-view-expanded.png":::

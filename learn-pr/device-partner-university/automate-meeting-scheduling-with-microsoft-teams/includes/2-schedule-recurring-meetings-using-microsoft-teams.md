@@ -25,7 +25,7 @@ Keep these best practices in mind for successful meetings.
   >
   >Note that permissions may be restricted by tenant admin settings in some organizations.
   >
-  > :::image type="content" border="true" source="../media/add-an-agenda.png" alt-text="Screenshot showing the location of ‘Add an agenda’ on a Microsoft Teams meeting":::
+  > :::image type="content" border="true" source="../media/add-agenda.png" alt-text="Screenshot showing the location of ‘Add an agenda’ on a Microsoft Teams meeting." lightbox="../media/add-agenda-expanded.png":::
 
 - **Review recurrence settings:** Make sure the pattern matches your team’s needs.
 - **Include all necessary participants:** Add required and optional attendees.
