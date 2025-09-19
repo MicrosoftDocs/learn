@@ -19,7 +19,7 @@ abstract: |
   - Identify the layered security mechanisms in Azure Local that support regulatory compliance and safeguard sensitive data.
 prerequisites: |
   - None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/hybrid-cloud-integration-with-azure-local-integ.svg
 ratingEnabled: false
 levels:
   - intermediate
