@@ -16,7 +16,7 @@ abstract: |2+
 
 prerequisites: |
   - None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/operate-hybrid-infrastructure.svg
 ratingEnabled: false
 levels:
   - intermediate
