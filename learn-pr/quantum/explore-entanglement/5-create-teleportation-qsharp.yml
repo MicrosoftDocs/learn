@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.explore-entanglement.create-teleportation-qsharp
-title: Exercise - Use entanglement to teleport with Q#
+title: Exercise - Use entanglement for teleportation with Q#
 metadata:
-  title: Exercise - Use entanglement to teleport with Q#
-  description: Create teleportation with Q#
-  ms.date: 09/02/2025
+  title: Exercise - Use entanglement for teleportation with Q#
+  description: Teleport the state of a qubit with Q#
+  ms.date: 09/19/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   

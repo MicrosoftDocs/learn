@@ -1,6 +1,6 @@
-Quantum entanglement is a quantum phenomenon where the the states of different qubits depend on each other in such a way that the individual qubits can't be described independently. Quantum entanglement is a fundamental concept and a powerful tool in quantum computing.
+Entanglement is a quantum phenomenon where the the states of different qubits depend on each other in such a way that the individual qubits can't be described independently. Quantum entanglement is a fundamental concept and a powerful tool in quantum computing.
 
-In this module, you use the Azure Quantum Development Kit (QDK) and Q# to create and manipulate entangled qubits. You transfer the state of a qubit from one location to another without physically moving the qubit itself. This process is known as quantum teleportation. To perform the teleportation, you use operations like Controlled-NOT (CNOT), Hadamard (H), and Pauli X and Z to create entangled Bell states.
+In this module, you write Q# code to create and manipulate entangled qubits. You transfer the state of a qubit from one location to another without physically moving the qubit itself. This process is known as quantum teleportation. To perform the teleportation, you use operations like Controlled-NOT (CNOT), Hadamard (H), and Pauli X and Z to create entangled Bell states.
 
 By the end of this module, you can:
 

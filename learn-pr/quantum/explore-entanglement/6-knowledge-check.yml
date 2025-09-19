@@ -7,7 +7,7 @@ metadata:
   author: azure-quantum-content
   ms.author: quantumdocwriters
   
-  ms.date: 09/04/2025
+  ms.date: 09/19/2025
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 6
@@ -31,16 +31,13 @@ quiz:
 
   - content: What is the role of the CNOT operation in creating quantum entanglement?
     choices:
-    - content: >-
-        It flips the state of the second qubit (the target qubit) if, and only if, the state of the first qubit (the control qubit) is $\ket{1}$.
+    - content: It flips the state of the second qubit (the target qubit) only if the state of the first qubit (the control qubit) is $\ket{1}$.
       isCorrect: true
       explanation: Correct. The CNOT operation is a multiqubit operation that entangles two qubits by flipping the state of the target qubit based on the state of the control qubit.
     - content: It flips the state of both qubits regardless of their initial states.
       isCorrect: false
-      explanation: >-
-        Incorrect. The CNOT operation only flips the state of the target qubit if the control qubit is in the state $\ket{1}$.
-    - content: >-
-        It flips the state of the first qubit (the control qubit) if and only if the state of the second qubit (the target qubit) is $\ket{1}$.
+      explanation: Incorrect. The CNOT operation only flips the state of the target qubit if the control qubit is in the state $\ket{1}$.
+    - content: It flips the state of the first qubit (the control qubit) only if the state of the second qubit (the target qubit) is $\ket{1}$.
       isCorrect: false
       explanation: Incorrect. The CNOT operation flips the state of the target qubit, not the control qubit, based on the state of the control qubit.
 
@@ -51,8 +48,8 @@ quiz:
       explanation: Incorrect. The classical communication prevents the information from being teleported faster than the speed of light.
     - content: It's used to physically move the qubit from one location to another.
       isCorrect: false
-      explanation: Incorrect. In quantum teleportation, the qubit itself isn't physically moved, but the information about the qubit's state is.
-    - content: It's used by the sender to communicate the results of their measurements to the receiver. By doing so, the receiver can apply the necessary operations to the qubit they have to recreate the message qubit.
+      explanation: Incorrect. In quantum teleportation, the qubit itself doesn't physically move, but the state of the qubit is transferred.
+    - content: It's used by the sender to communicate the results of their measurements to the receiver. By doing so, the receiver can apply the necessary operations to their qubit to recreate the message qubit's state.
       isCorrect: true
       explanation: Correct. The sender communicates the results of their measurement to the receiver using classical communication. 
 

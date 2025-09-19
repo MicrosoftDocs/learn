@@ -1,32 +1,32 @@
 In the previous unit, you learned about the concept of quantum entanglement and Bell states.
 
-In this unit, you use the Quantum Development Kit (QDK) to write Q# code that creates Bell states between two qubits, which are entangled states. To create your first Bell state, you apply two quantum operations: the Hadamard operation and the Controlled-NOT (CNOT) operation.
+In this unit, you use the Azure Quantum Development Kit (QDK) to write Q# code that creates entangled Bell states between two qubits. To create your first Bell state, you apply two quantum operations: the Hadamard operation and the Controlled-NOT (CNOT) operation.
 
-First, let's understand how these operations work and how they create entangled states.
+First, let's understand how these operations work and why they create entangled states.
 
-## The Hadamard (CNOT) operation
+## The Hadamard operation
 
-Recall that the Hadamard, or H, operation, puts a qubit that's in a pure $|0\rangle$ or $|1\rangle$ into an equal superposition state.
+Recall that the Hadamard, or H, operation, puts a qubit that's in a pure $|0\rangle$ state or $|1\rangle$ state into an equal superposition state.
 
 $$ H |0\rangle = \frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$$
 $$ H |1\rangle = \frac1{\sqrt2} |0\rangle - \frac1{\sqrt2} |1\rangle$$
 
-The first step to create a Bell state is to perform a Hadamard operation on one of the qubits.
+The first step to create your Bell state is to perform a Hadamard operation on one of the qubits.
 
 ## The Controlled-NOT (CNOT) operation
 
 When two qubits are entangled, the state of one qubit is dependent on the state of the other qubit. Therefore, to entangle two qubits you need an operation that acts on both qubits at the same time. This is called a multi-qubit operation. The Controlled-NOT, or CNOT, operation is a multi-qubit operation that helps create entanglement.
 
-The CNOT operation takes two qubits as input. One of the qubits is called the control qubit and the other one is called the target qubit. If the control qubit is in the $|1\rangle$ state, then the CNOT operation flips the state of the target qubit. Otherwise, CNOT does nothing.
+The CNOT operation takes two qubits as input. One of the qubits is called the control qubit and the other qubit is called the target qubit. If the control qubit is in the $|1\rangle$ state, then the CNOT operation flips the state of the target qubit. Otherwise, CNOT does nothing.
 
 For example, in the following two-qubit states, the control qubit is the leftmost qubit and the target qubit is the rightmost qubit.
 
-|Input to `CNOT`|Output from `CNOT`|
-|-|-|
-|$\ket{00}$|$\ket{00}$|
-|$\ket{01}$|$\ket{01}$|
-|$\ket{10}$|$\ket{11}$|
-|$\ket{11}$|$\ket{10}$|
+| Input to `CNOT` | Output from `CNOT` |
+|-----------------|--------------------|
+| $\ket{00}$      | $\ket{00}$         |
+| $\ket{01}$      | $\ket{01}$         |
+| $\ket{10}$      | $\ket{11}$         |
+| $\ket{11}$      | $\ket{10}$         |
 
 In Q#, the `CNOT` operation acts on an array of two qubits, and it flips the second qubit only if the first qubit is `One`.
 
@@ -64,15 +64,14 @@ The state $\frac{1}{\sqrt2}(\ket{0_c 0_t}+\ket{1_c 1_t})$ is entangled. This par
 To create a Bell state with Q# code, follow these steps in Visual Studio Code (VS Code):
 
 1. Open VS Code.
-1. Choose **File > New Text File**, and save the file as **Main.qs**.
-1. Choose **View -> Command Palette**, then enter **QDK: Set the Azure Quantum QIR target profile**.
-1. Choose **QIR unrestricted**.
+1. Open the **File** menu, and then choose **New Text File** to create a new file.
+1. Save the file as Main.qs.
 
 ### Create the Bell state $\ket{\phi^+}$
 
-To create the Bell state $\ket{\phi^+}$ in your code, follow these steps:
+To create the Bell state $\ket{\phi^+}$ in Q#, follow these steps:
 
-1. Import the `Microsoft.Quantum.Diagnostics` namespace from the Q# standard library so that you can use the `DumpMachine` function. This function shows the state of the qubits at the point in the program where you call the function. To import the namespace, copy the following Q# code into your **Main.qs** file:
+1. Import the `Microsoft.Quantum.Diagnostics` namespace from the Q# standard library so that you can use the `DumpMachine` function. This function shows information about the qubit states when you call the function in your code. To import the namespace, copy the following Q# code into your **Main.qs** file:
 
     ```qsharp
     import Microsoft.Quantum.Diagnostics.*; // Aka Std.Diagnostics.*;
@@ -114,7 +113,7 @@ To create the Bell state $\ket{\phi^+}$ in your code, follow these steps:
     }
     ```
 
-1. Use the `DumpMachine` function to display the state of the qubits after you entangle them. Note that `DumpMachine` doesn't perform a measurement on the qubits, so `DumpMachine` doesn't affect qubit states.
+1. Use the `DumpMachine` function to display the state of the qubits after you entangle them. Note that `DumpMachine` doesn't perform a measurement on the qubits, so `DumpMachine` doesn't affect the qubit states.
 
     ```qsharp
     import Microsoft.Quantum.Diagnostics.*; // Aka Std.Diagnostics.*;
@@ -129,7 +128,7 @@ To create the Bell state $\ket{\phi^+}$ in your code, follow these steps:
     }
     ```
 
-1. Use the `M` operation to measure the qubits, and store the results in `m1` and `m2`. Then use the `Reset` operation to reset the qubits. In Q#, you must always reset qubits to the $|0\rangle$ state after you measure them.
+1. Use the `M` operation to measure the qubits, and store the results in `m1` and `m2`. Then use the `Reset` operation to reset the qubits.
 
     ```qsharp
     import Microsoft.Quantum.Diagnostics.*; // Aka Std.Diagnostics.*;
@@ -149,7 +148,7 @@ To create the Bell state $\ket{\phi^+}$ in your code, follow these steps:
     }
     ```
 
-1. Return the measurement results of the qubits with the `return` statement. Copy the following final program into your  **Main.qs** file:
+1. Return the measurement results of the qubits with the `return` statement. Here is final program in your **Main.qs** file:
 
     ```qsharp
     import Microsoft.Quantum.Diagnostics.*; // Aka Std.Diagnostics.*;
@@ -170,22 +169,22 @@ To create the Bell state $\ket{\phi^+}$ in your code, follow these steps:
     }
     ```
 
-1. To run your program on the built-in simulator, choose the **Run** code lens above the `Main` operation, or press **Ctrl+F5**. Your output appears in the debug console.
+1. To run your program on the built-in simulator, choose the **Run** code lens above the `Main` operation, or press **Ctrl + F5**. Your output appears in the debug console.
 1. The measurement outcomes are correlated, so at the end of the program you get a result of `(Zero, Zero)` or `(One, One)` with equal probability. Rerun the program multiple times and observe the output to convince yourself of the correlation.
-1. You can visualize the circuit diagram by clicking on **Circuit** from the list of commands above the `Main` operation. The circuit diagram shows the Hadamard gate applied to the first qubit and the CNOT gate applied to both qubits.
+1. To visualize the circuit diagram, choose the **Circuit** code lens above the `Main` operation. The circuit diagram shows the Hadamard gate applied to the first qubit and the CNOT gate applied to both qubits.
 
-    :::image type="content" source="../media/circuit-bellstates.png" alt-text="Screenshot of the circuit of the Bell state.":::
+    :::image type="content" source="../media/circuit-bellstates.png" alt-text="Screenshot of the circuit that creates the Bell state.":::
 
 ## Create other Bell states
 
-To create other Bell states, you need to apply additional Pauli $X$ and $Z$ operations to the qubits.
+To create other Bell states, apply additional Pauli $X$ or $Z$ operations to the qubits.
 
 For example, to create the Bell state $\ket{\phi^-}=\frac1{\sqrt2}(|00\rangle-|11\rangle)$, apply the Pauli $Z$ operation to the control qubit after you apply the Hadamard gate, but before you apply CNOT. The $Z$ operation flips the state $\ket{+}$ to $\ket{-}$.
 
 > [!NOTE]
 > The states $\frac{1}{\sqrt{2}}(|0\rangle+|1\rangle)$ and $\frac{1}{\sqrt{2}}(|0\rangle -|1\rangle)$ are also known as $\ket{+}$ and $\ket{-}$, respectively.
 
-Here's how to create to create the $\ket{\phi^-}$ state:
+Here's how to create the $\ket{\phi^-}$ state:
 
 1. Create two qubits in the state $|00\rangle$.
 1. Put the control qubit into a superposition state with the $H$ operation:
@@ -196,7 +195,7 @@ Here's how to create to create the $\ket{\phi^-}$ state:
 
     $$Z \frac{1}{\sqrt{2}}(|0_c\rangle+|1_c\rangle)= \frac{1}{\sqrt{2}}(|0_c\rangle-|1_c\rangle)= \ket{-}_c$$
 
-1. Apply the $CNOT$ operation to the control qubit and the target qubit, which is in the state $|0_t\rangle$.
+1. Apply the $CNOT$ operation to the control qubit and the target qubit, which is in the $|0_t\rangle$ state.
 
     $$
     \begin{align*}
@@ -206,7 +205,7 @@ Here's how to create to create the $\ket{\phi^-}$ state:
     \end{align*}
     $$
 
-To create the $\ket{\phi^-}$ Bell state with Q# code, replace the code in the your **Main.qs** with the following code:
+To create the $\ket{\phi^-}$ Bell state in Q#, replace the code in the your **Main.qs** with the following code:
 
 ```qsharp
 import Microsoft.Quantum.Diagnostics.*; // Aka Std.Diagnostics.*;
