@@ -44,6 +44,16 @@ The message qubit is in the unknown state $\alpha \ket{0}_m + \beta \ket{1}_m$, 
 
 $$\ket{\text{System}} = \frac1{2}  \ket{\phi^+}_\text{mA} (\alpha\ket{0}_B + \beta\ket{1}_B) + \frac1{2}  \ket{\phi^-}_\text{mA} (\alpha\ket{0}_B - \beta\ket{1}_B) + \frac1{2}  \ket{\psi^+}_\text{mA} (\alpha\ket{1}_B + \beta\ket{0}_B) + \frac1{2}  \ket{\psi^-}_\text{mA} (\alpha\ket{1}_B - \beta\ket{0}_B)$$
 
+$$ \ket{\text{Global}} = \frac1{2} \ket{\phi^+}_\text{mA} (\alpha\ket{0}_B + \beta\ket{1}_B) + $$
+$$ \frac1{2}  \ket{\phi^-}_\text{mA} (\alpha\ket{0}_B - \beta\ket{1}_B) + $$
+$$ \frac1{2}  \ket{\psi^+}_\text{mA} (\alpha\ket{1}_B + \beta\ket{0}_B) + $$
+$$ \frac1{2}  \ket{\psi^-}_\text{mA} (\alpha\ket{1}_B - \beta\ket{0}_B) $$
+
+$$ \ket{\text{Global}} = \frac1{2} \ket{\phi^+}_\text{mA} (\alpha\ket{0}_B + \beta\ket{1}_B) $$
+$$ + \frac1{2}  \ket{\phi^-}_\text{mA} (\alpha\ket{0}_B - \beta\ket{1}_B) $$
+$$ + \frac1{2}  \ket{\psi^+}_\text{mA} (\alpha\ket{1}_B + \beta\ket{0}_B) $$
+$$ + \frac1{2}  \ket{\psi^-}_\text{mA} (\alpha\ket{1}_B - \beta\ket{0}_B) $$
+
 The three-qubit state of Alice and Bob's qubits is an equal superposition of four possible states.
 
 ### Alice measures her qubits
