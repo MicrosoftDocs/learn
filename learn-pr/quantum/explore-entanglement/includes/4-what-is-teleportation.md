@@ -29,7 +29,7 @@ The whole system consists of the entangled qubits, $A$ and $B$, and the message 
 
 $$\ket{\text{System}} = (\alpha\ket{0}_m + \beta\ket{1}_m) \otimes \frac1{\sqrt2}(\ket{0_A 0_B}+ \ket{1_A 1_B}) $$
 
-:::image type="content" source="../media/teleportation-step-1.png" alt-text="Diagram showing two face emojis of a woman and a man representing Alice and Bob. Alice owns two qubits, one of them is entangled with Bob's qubits. The entangled qubits are the same color, representing they're entangled. The message qubit is a different color.":::
+:::image type="content" source="../media/teleportation-step-1.png" alt-text="Diagram showing two face emojis of a woman and a man representing Alice and Bob. Alice owns two qubits, one is entangled with Bob's qubit. The entangled qubits are the same color. The message qubit is a different color.":::
 
 > [!NOTE]
 > The symbol $\otimes$ means that we take the tensor product of the kets on the left with the kets on the right.
@@ -38,18 +38,14 @@ $$\ket{\text{System}} = (\alpha\ket{0}_m + \beta\ket{1}_m) \otimes \frac1{\sqrt2
 
 Alice uses a CNOT gate to entangle the message qubit, $m$, with her other qubit, $A$. The message qubit is the control qubit, and Alice's other qubit is the target qubit. This creates a three-qubit entangled state.
 
-:::image type="content" source="../media/teleportation-step-1-b.png" alt-text="Diagram showing two face emojis of a woman and a man representing Alice and Bob, and a hammer emoji representing that Alice manipulates her qubits. The three qubits are the same color, representing that they're entangled. ":::
+:::image type="content" source="../media/teleportation-step-1-b.png" alt-text="Diagram showing two face emojis of a woman and a man representing Alice and Bob, and a hammer emoji representing that Alice manipulates her qubits. The three qubits are the same color, representing that they're entangled.":::
 
-The message qubit is in the unknown state $\alpha \ket{0}_m + \beta \ket{1}_m$, so after Alice applies the CNOT gate, her qubits are in a superposition of the four Bell states. Here's he overall state of the three qubits:
+The message qubit is in the unknown state $\alpha \ket{0}_m + \beta \ket{1}_m$, so after Alice applies the CNOT gate, her qubits are in a superposition of the four Bell states. Here's the overall state of the three qubits:
 
-$$
-\begin{align*}
-\ket{\text{System}} &= \frac1{2}  \ket{\phi^+}_\text{mA} (\alpha\ket{0}_B + \beta\ket{1}_B) \\
-                    &+ \frac1{2}  \ket{\phi^-}_\text{mA} (\alpha\ket{0}_B - \beta\ket{1}_B) \\
-                    &+ \frac1{2}  \ket{\psi^+}_\text{mA} (\alpha\ket{1}_B + \beta\ket{0}_B) \\
-                    &+ \frac1{2}  \ket{\psi^-}_\text{mA} (\alpha\ket{1}_B - \beta\ket{0}_B)
-\end{align*}
-$$
+$$\ket{\text{System}} = \frac1{2}  \ket{\phi^+}_\text{mA} (\alpha\ket{0}_B + \beta\ket{1}_B)$$
+$$\qquad\qquad + \frac1{2}  \ket{\phi^-}_\text{mA} (\alpha\ket{0}_B - \beta\ket{1}_B)$$
+$$\qquad\qquad + \frac1{2}  \ket{\psi^+}_\text{mA} (\alpha\ket{1}_B + \beta\ket{0}_B)$$
+$$\qquad\qquad + \frac1{2}  \ket{\psi^-}_\text{mA} (\alpha\ket{1}_B - \beta\ket{0}_B)$$
 
 The three-qubit state of Alice and Bob's qubits is an equal superposition of four possible states.
 
