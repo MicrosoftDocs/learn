@@ -81,6 +81,27 @@ Slash commands in GitHub Copilot Chat allow you to quickly specify the intent of
 
   :::image type="content" source="../media/tests-slash-commands.png" lightbox="../media/tests-slash-commands.png" alt-text="Screenshot of /tests slash commands.":::
 
+### Model selection and premium features
+
+GitHub Copilot Chat offers different AI models to optimize your development workflow. Some environments provide model selection options that let you choose between different capability levels based on your specific needs:
+
+**Standard models (GPT-4o):**
+- Provide fast, reliable responses for most development tasks
+- Consume 1 PRU per request
+- Ideal for routine coding assistance, code explanations, and basic debugging
+- Examples: Simple function generation, syntax help, basic refactoring suggestions
+
+**Premium models (o1-preview, o1-mini):**
+- Offer enhanced reasoning capabilities for complex problems
+- Consume 2 PRUs per request (double the standard rate)
+- Better suited for sophisticated analysis, complex algorithms, and architectural decisions
+- Examples: Advanced debugging of multi-threaded code, complex algorithm design, security analysis
+
+When working on challenging problems that require deep reasoning, premium models can provide more thorough analysis and comprehensive solutions. However, consider your PRU usage when selecting models for different types of tasks.
+
+> [!NOTE]
+> Using premium models (o1-preview, o1-mini) consumes 2 PRUs instead of 1 for the same request. Monitor your monthly allowances and choose the appropriate model based on task complexity. For current details on PRU consumption and limits, refer to the [Requests in GitHub Copilot documentation](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+
 ### Copilot agents
 
 GitHub Copilot agents are custom tools that you can build and integrate with GitHub Copilot Chat to provide additional functionalities tailored to your specific needs. In addition to slash commands, you can use specific agents within Copilot Chat in your IDE to handle different tasks:
@@ -106,6 +127,9 @@ GitHub Copilot agents are custom tools that you can build and integrate with Git
   :::image type="content" source="../media/vscode-agent-command.png" lightbox="../media/vscode-agent-command.png" alt-text="Screenshot of `@vscode` agent command.":::
 
   By effectively utilizing these tools and techniques, you can significantly improve the quality of responses you receive from GitHub Copilot Chat, making your coding experience more efficient and productive.
+
+> [!NOTE]
+> Advanced agents like @workspace and complex operations may consume additional Premium Request Units (PRUs). Simple queries typically use 1 PRU, while complex workspace analysis or project generation can use 2-5 PRUs. For current details on PRU consumption, monthly allowances, and rate limits, refer to the [Requests in GitHub Copilot documentation](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
 
 ### Sharing feedback on GitHub Copilot Chat
 Most IDEs with Copilot Chat integration have built-in feedback mechanisms. For example, in VS Code, you can find feedback options at the beginning of GitHub Copilot Chat's suggestions. Hover over a suggestion, and you should see thumbs up and thumbs down buttons. 
