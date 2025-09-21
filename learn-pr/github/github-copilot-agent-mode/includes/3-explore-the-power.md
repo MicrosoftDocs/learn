@@ -44,7 +44,7 @@ Agent Mode can coordinate with other AI capabilities to create comprehensive dev
 This coordinated approach ensures that code meets quality standards before human review, significantly reducing iteration cycles and accelerating pull request velocity.
 
 > [!NOTE]
-> Each handoff consumes ~1 PRU. A 2-agent draft–review flow typically uses 2–3 PRUs.
+> Each handoff consumes ~1 PRU. A 2-agent draft–review flow typically uses 2–3 PRUs. Learn more about [Premium Request Units](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
 
 #### Pull request optimization
 
@@ -78,7 +78,7 @@ For sophisticated development challenges, Agent Mode can leverage premium reason
 - **Multi-file coordination:** Orchestrate changes across numerous files while maintaining consistency
 
 > [!NOTE]
-> Premium runs add more context and reasoning but often double PRU consumption (~4+ per request).
+> Premium runs add more context and reasoning but often double PRU consumption (~4+ per request). Learn more about [Premium Request Units](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
 
 ### Multi-step task example
 
