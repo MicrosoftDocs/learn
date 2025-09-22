@@ -51,32 +51,17 @@ $$ + \frac1{2} \ket{\psi^-}\_\text{mA} (\alpha\ket{1}\_B - \beta\ket{0}\_B) $$
 
 NEW 2
 
-$$\ket{\text{Global}}=\frac1{2}\ket{\phi^+}_\text{mA}(\alpha\ket{0}\_B+\beta\ket{1}\_B)$$
-$$+\frac1{2}\ket{\phi^-}_\text{mA}(\alpha\ket{0}\_B-\beta\ket{1}\_B)$$
-$$+\frac1{2}\ket{\psi^+}_\text{mA}(\alpha\ket{1}\_B+\beta\ket{0}\_B)$$
-$$+\frac1{2}\ket{\psi^-}_\text{mA}(\alpha\ket{1}\_B-\beta\ket{0}\_B)$$
+$$ \ket{\text{System}} = \frac1{2} \ket{\phi^+}\_\text{mA} (\alpha\ket{0}\_B + \beta\ket{1}\_B) $$
+$$\qquad + \frac1{2} \ket{\phi^-}\_\text{mA} (\alpha\ket{0}\_B - \beta\ket{1}\_B) $$
+$$\qquad + \frac1{2} \ket{\psi^+}\_\text{mA} (\alpha\ket{1}\_B + \beta\ket{0}\_B) $$
+$$\qquad + \frac1{2} \ket{\psi^-}\_\text{mA} (\alpha\ket{1}\_B - \beta\ket{0}\_B) $$
 
 NEW 3
 
-$$
-\begin{align*}
-\ket{\text{System}} &= \frac1{2} \ket{\phi^+}\_\text{mA} (\alpha\ket{0}\_B + \beta\ket{1}\_B) \\
-&+ \frac1{2} \ket{\phi^-}\_\text{mA} (\alpha\ket{0}\_B - \beta\ket{1}\_B) \\
-&+ \frac1{2} \ket{\psi^+}\_\text{mA} (\alpha\ket{1}\_B + \beta\ket{0}\_B) \\
-&+ \frac1{2} \ket{\psi^-}\_\text{mA} (\alpha\ket{1}\_B - \beta\ket{0}\_B)
-\end{align*}
-$$
-
-NEW 4
-
-$$
-\begin{align*}
-\ket{\text{System}}&=\frac1{2}\ket{\phi^+}_\text{mA}(\alpha\ket{0}\\_B+\beta\ket{1}\\_B)\\
-&+\frac1{2}\ket{\phi^-}_\text{mA}(\alpha\ket{0}\\_B-\beta\ket{1}\\_B)\\
-&+\frac1{2}\ket{\psi^+}_\text{mA}(\alpha\ket{1}\\_B+\beta\ket{0}\\_B)\\
-&+\frac1{2}\ket{\psi^-}_\text{mA}(\alpha\ket{1}\\_B-\beta\ket{0}\\_B)
-\end{align*}
-$$
+$$ \ket{\text{System}} = \frac1{2} \ket{\phi^+}\_\text{mA} (\alpha\ket{0}\_B + \beta\ket{1}\_B) $$
+$$\qquad\qquad + \frac1{2} \ket{\phi^-}\_\text{mA} (\alpha\ket{0}\_B - \beta\ket{1}\_B) $$
+$$\qquad\qquad + \frac1{2} \ket{\psi^+}\_\text{mA} (\alpha\ket{1}\_B + \beta\ket{0}\_B) $$
+$$\qquad\qquad + \frac1{2} \ket{\psi^-}\_\text{mA} (\alpha\ket{1}\_B - \beta\ket{0}\_B) $$
 
 The three-qubit state of Alice and Bob's qubits is an equal superposition of four possible states.
 
