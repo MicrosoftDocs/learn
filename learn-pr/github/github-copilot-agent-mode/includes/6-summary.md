@@ -15,3 +15,4 @@ Now that you completed this module, you should be able to:
 - [GitHub Copilot: The Agent Awakens](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens)
 - [Introducing GitHub Copilot Agent Mode (preview)](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode)
 - [Developing in Visual Studio Code](https://code.visualstudio.com/docs)
+- [Premium Request Units (PRUs) - GitHub Documentation](https://docs.github.com/en/copilot/concepts/billing/copilot-requests)

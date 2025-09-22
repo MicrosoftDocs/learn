@@ -21,7 +21,7 @@ Although highly autonomous, Agent Mode provides developers with complete transpa
 
 Going beyond simple code suggestions, Agent Mode excels in breaking down complex tasks into structured, sequential actions. This capability significantly reduces manual workload and speeds up complex project operations.
 
-### Example
+### Multi-step task example
 
 **Task:** Integrate a new database into an existing application.
 
@@ -35,11 +35,81 @@ Going beyond simple code suggestions, Agent Mode excels in breaking down complex
 
 This systematic approach streamlines intricate development tasks.
 
+## Multi-step orchestration workflows
+
+Agent Mode excels at coordinating complex development processes through intelligent orchestration. Rather than requiring manual intervention at each step, Agent Mode can draft, review, and refine code in a seamless workflow that accelerates development cycles.
+
+### Draft-review-accept workflow
+
+Consider how Agent Mode handles feature development through an integrated approach:
+
+**Scenario:** Adding user authentication to an application
+
+1. **Draft phase:** Agent Mode analyzes the requirements and generates:
+   - Authentication middleware (`middleware/auth.js`)
+   - User login routes (`routes/auth.js`)
+   - Password hashing utilities (`utils/password.js`)
+   - Basic frontend login form (`views/login.html`)
+
+2. **Review phase:** Agent Mode immediately evaluates its own draft:
+   - Identifies potential security vulnerabilities in password handling
+   - Suggests improvements to error handling patterns
+   - Recommends additional validation for edge cases
+   - Proposes unit tests for critical authentication functions
+
+3. **Accept phase:** Learner reviews the refined, PR-ready implementation:
+   - Complete feature with built-in security best practices
+   - Comprehensive error handling and validation
+   - Ready-to-merge code that follows project conventions
+   - Documentation and tests included from the start
+
+This orchestrated approach eliminates traditional back-and-forth review cycles, enabling faster delivery of production-ready features.
+
+> [!NOTE]
+> Each handoff in Agent Mode consumes ~1 PRU. A 2-step draft–review sequence typically uses 2–3 PRUs.
+> For more details, see [GitHub Copilot billing and requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+
+### Automated foundation building
+
+Agent Mode shines when handling repetitive setup tasks, allowing developers to focus on core business logic rather than boilerplate implementation:
+
+**Scenario:** Setting up a new microservice
+
+**Agent Mode automatically generates:**
+
+- Project structure with standard directories (`src/`, `tests/`, `config/`)
+- Package configuration (`package.json`, `Dockerfile`, `.gitignore`)
+- Testing framework setup (`jest.config.js`, sample test files)
+- CI/CD pipeline configuration (`.github/workflows/test.yml`)
+- Environment configuration templates (`.env.example`, `config/default.js`)
+- Basic monitoring and logging setup (`utils/logger.js`, health check endpoints)
+
+**Developer focuses on:**
+
+- Implementing specific business logic and domain models
+- Customizing the generated foundation for unique requirements
+- Adding specialized integrations and custom workflows
+
+This division of labor maximizes developer productivity by automating standard setup while preserving creative control over core functionality.
+
+### Advanced reasoning capabilities
+
+For complex scenarios requiring deeper analysis, Agent Mode can leverage premium reasoning to provide more sophisticated solutions:
+
+- **Architectural decision analysis:** Evaluate trade-offs between different implementation approaches
+- **Cross-system impact assessment:** Understand how changes affect multiple components
+- **Performance optimization strategies:** Identify bottlenecks and suggest improvements
+- **Security vulnerability analysis:** Detect and propose fixes for potential security issues
+
+> [!NOTE]
+> Premium reasoning (using more advanced models) provides richer context and deeper analysis, but it often doubles PRU consumption. A single request may use ~4+ PRUs compared to ~2 with the standard model.
+> For more details, see [GitHub Copilot billing and requests](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+
 ## Using intelligent tools and context awareness
 
 To effectively complete tasks, Agent Mode uses context from your project's files, dependencies, and prior actions. By analyzing existing project structure and context, it offers accurate and contextually relevant outputs.
 
-### Example
+### Context-aware deployment example
 
 **Scenario:** Deploying a React application.
 
@@ -55,7 +125,7 @@ Providing clear and complete context ensures better, more precise results.
 
 One of Copilot Agent Mode's core strengths is its iterative problem-solving capability. If an error occurs, Agent Mode autonomously detects, corrects, and revalidates its solutions, significantly minimizing manual debugging effort.
 
-### Example
+### Self-healing example
 
 **Issue:** Generated unit tests initially fail due to a syntax error.
 
@@ -71,7 +141,7 @@ This iterative process enhances code reliability and accelerates issue resolutio
 
 Despite its autonomy, Agent Mode keeps developers fully in control. Every action proposed by Agent Mode can be reviewed, adjusted, or reverted at any time, ensuring alignment with project standards.
 
-### Example
+### Developer control example
 
 **Situation:** Agent Mode proposes extensive changes to authentication logic.
 
@@ -87,7 +157,7 @@ This ensures a productive balance between AI-driven efficiency and human judgmen
 
 While powerful, Agent Mode does have limitations. It may struggle with specialized domain logic, nuanced business rules, or when critical project context is missing.
 
-### Example
+### Limitation example
 
 **Limitation:** Poorly documented custom business logic.
 
