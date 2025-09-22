@@ -1,4 +1,4 @@
-GitHub Copilot Chat is an advanced feature of the GitHub Copilot ecosystem, designed to provide developers with an interactive, conversational AI assistant directly within their development environment.It allows developers to have natural language conversations about their code, ask questions, and receive intelligent responses and suggestions in real-time.
+GitHub Copilot Chat is an advanced feature of the GitHub Copilot ecosystem, designed to provide developers with an interactive, conversational AI assistant directly within their development environment. It allows developers to have natural language conversations about their code, ask questions, and receive intelligent responses and suggestions in real-time.
 In this unit, we cover:
 
 - How to generate code using GitHub Copilot Chat.
@@ -110,7 +110,7 @@ GitHub Copilot agents are custom tools that you can build and integrate with Git
 
   :::image type="content" source="../media/workspace-agent-command.png" lightbox="../media/workspace-agent-command.png" alt-text="Screenshot of `@workspace` agent command.":::
 
-  You can also use the “@workspace /new” smart action, which allows you  to generate a completely new project from scratch based on your requirements. For example, “@workspace /new generate new html file pages and javascript for advanced calculations“
+  You can also use the “@workspace /new” smart action, which allows you  to generate a completely new project from scratch based on your requirements. For example, “@workspace /new generate new html file pages and JavaScript for advanced calculations“
 
   :::image type="content" source="../media/workspace-new-agent-command.png" lightbox="../media/workspace-new-agent-command.png" alt-text="Screenshot of  `@workspace \new` agent command.":::
 
