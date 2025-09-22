@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-to-office-home-and-business-2024
+title: Introduction to Office Home & Business 2024
+metadata:
+  title: Introduction To Office Home & Business 2024
+  description: ''
+  ms.date: 09/22/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module
+  ms.service: office
+summary: >2+
+
+abstract: |2+
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - office
+units:
+  - learn.dpu.introduction-to-office-home-and-business-2024.introduction
+  - learn.dpu.introduction-to-office-home-and-business-2024.what-is-microsoft-office-home-and-business-2024
+  - learn.dpu.introduction-to-office-home-and-business-2024.how-microsoft-office-home-and-business-2024-works
+  - learn.dpu.introduction-to-office-home-and-business-2024.when-to-use-office-home-and-business-2024
+  - learn.dpu.introduction-to-office-home-and-business-2024.knowledge-check
+  - learn.dpu.introduction-to-office-home-and-business-2024.summary
+badge:
+  uid: learn.dpu.introduction-to-office-home-and-business-2024.badge

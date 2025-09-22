@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-office-home-and-business-2024.what-is-microsoft-office-home-and-business-2024
+title: What is Microsoft office home and business 2024
+metadata:
+  title: What Is Microsoft Office Home And Business 2024
+  description: This content is part of the "Introduction to Office Home & Business 2024" module.
+  ms.date: 09/22/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-what-is-microsoft-office-home-and-business-2024.md)]
