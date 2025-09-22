@@ -3,8 +3,8 @@ uid: learn.quantum.estimate-resources-quantum-algorithms.get-started-with-azure-
 title: Exercise - Get started with the Azure Quantum Resource Estimator
 metadata:
   title: Exercise - Get started with the Azure Quantum Resource Estimator
-  description: Learn to use the Azure Quantum Resource Estimator and how to submit a job.
-  ms.date: 09/09/2025
+  description: Learn how to use the Azure Quantum Resource Estimator and how to submit a job.
+  ms.date: 09/22/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   

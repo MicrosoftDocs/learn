@@ -1,25 +1,25 @@
-In the previous unit, you learned that the Azure Quantum Resource Estimator take three main input parameters: the physical qubit parameters, the quantum error correction (QEC) scheme, and the error budget.
+In the previous unit, you learned that the Azure Quantum Resource Estimator takes three main input parameters: the physical qubit parameters, the quantum error correction (QEC) scheme, and the error budget.
 
-Now let's get some practice with the Azure Quantum Resource Estimator. In this unit, you use the Resource Estimator to estimate the physical resources required by a simple quantum program.
+Now let's get some practice with the Resource Estimator. In this unit, you use the Resource Estimator to estimate the physical resources requirements for a simple quantum program.
 
 ## Install the required packages
 
-To use the Resource Estimator, install the latest Azure Quantum `qsharp` and `qsharp-widgets` Python packages.  
+To use the Resource Estimator, install the latest `qsharp` and `qsharp-widgets` Python packages from the Azure Quantum Development Kit (QDK).  
 
 ```bash
 python -m pip install --upgrade qsharp qsharp-widgets
 ```
 
-If you haven't already installed the Quantum Development Kit (QDK) extension for Visual Studio Code (VS Code), see [Install the QDK Extension](/azure/quantum/install-overview-qdk#install-the-qdk-extension).
+If you haven't already installed the QDK extension for Visual Studio Code (VS Code), then see [Install the QDK Extension](/azure/quantum/install-overview-qdk#install-the-qdk-extension).
 
 ## Create the quantum algorithm in a Jupyter notebook
 
-Write your quantum algorithm in a Jupyter notebook. To create a Jupyter notebook with the QDK in VS Code, follow these steps:
+Let's write the quantum algorithm in a Jupyter notebook. To create a Jupyter notebook with the QDK in VS Code, follow these steps:
 
 1. Open VS Code.
-1. Choose **View > Command palette**.
+1. COpen the **View** menu, and then choose **Command Palette**. An input box appears.
 1. In the input box, enter and choose **Create: New Jupyter Notebook**.
-1. In the notebook's first cell, import the `qsharp` package:
+1. In the notebook's first cell, import the `qsharp` package and the `EstimateDetails` function:
 
     ```python
     import qsharp
@@ -27,7 +27,7 @@ Write your quantum algorithm in a Jupyter notebook. To create a Jupyter notebook
     ```
 
 1. Choose the **＋ Code** button to add a new cell.
-1. Copy the following code to the new cell:
+1. Copy the following `RandomBit` code to the new cell:
 
     ```qsharp
     %%qsharp
@@ -76,7 +76,7 @@ To run the Resource Estimator, follow these steps:
    ```
 
    The `qsharp.estimate` function creates a result object that contains information from the Resource Estimator. We pass `result` to the `EstimateDetails` function, which displays a set of tables in dropdowns that contain the output from the Resource Estimator.
-1. Expand the first table, called **Physical resource estimates**. This table shows the runtime, reliable quantum operations per second, and the number of qubits required to run the algorithm.
+1. Expand the first table, called **Physical resource estimates**. This table shows the runtime, the reliable quantum operations per second, and the number of qubits required to run the algorithm.
 
    | Physical resource estimate | Value       |
    | ---------------------------|-------------|
@@ -87,7 +87,7 @@ To run the Resource Estimator, follow these steps:
    The `RandomBit` operation requires 300 physical qubits and takes two microseconds to run.
 
 1. Choose the **Physical resource estimates** dropdown again to collapse the table.
-1. To inspect the other tables, choose a dropdown to to expand the corresponding table. For example, choose the **Logical qubit parameters** dropdown. This table shows that the code distance is 5, and that there's 50 physical qubits per logical qubit.
+1. To inspect the other tables, choose a dropdown to expand the corresponding table. For example, choose the **Logical qubit parameters** dropdown. This table shows that the code distance is 5, and that there's 50 physical qubits per logical qubit.
 
     | Logical qubit parameter    | Value                                                                     |
     |----------------------------|---------------------------------------------------------------------------|
@@ -101,7 +101,7 @@ To run the Resource Estimator, follow these steps:
     | Logical cycle time formula | (4 * `twoQubitGateTime` + 2 * `oneQubitMeasurementTime`) * `codeDistance` |
     | Physical qubits formula    | 2 * `codeDistance` * `codeDistance`                                       |
 
-1. Use the `jobParams` field to access all the target parameters that you can pass to the job, and see the default values for parameters that you don't specify. Create a new cell and copy that following code to that cell:
+1. Use the `jobParams` field to access all the target parameters that you can pass to the job, and to examine the default values for parameters that you don't specify. Create a new cell and copy the following code to that cell:
 
     ```python
     result['jobParams']
@@ -133,15 +133,15 @@ To run the Resource Estimator, follow these steps:
      'estimateType': 'singlePoint'}
      ```
 
-For your algorithm, the Resource Estimator uses the `qubit_gate_ns_e3` qubit model, the `surface_code` error correction code, and 0.001 for the error budget. These are the default values for these parameters because you didn't specify their values when you called the Resource Estimator.
+For this algorithm, the Resource Estimator uses the `qubit_gate_ns_e3` qubit model, the `surface_code` error correction code, and 0.001 for the error budget. These are the default values for these parameters because you didn't specify their values when you called the Resource Estimator.
 
-## Change the default values and estimate the algorithm
+## Change the default values and estimate the resources again
 
-If you don't want to use the default values, then you can specify values for parameters when you call the Resource Estimator. Let's change the qubit model, the QEC scheme, and the error budget.
+To run the Estimator with parameter values other than the defaults, specify other values for parameters when you call the Resource Estimator. Let's change the qubit model, the QEC scheme, and the error budget.
 
 ### Change the qubit model
 
-Estimate the cost to run the same algorithm on a Majorana-based qubit machine. To do this, pass the `qubitParams` parameter with the `name` field set to `qubit_maj_ns_e6` when you call the Resource Estimator.
+Estimate the cost to run the same algorithm on a Majorana machine. To do this, pass the `qubitParams` parameter with the `name` field set to `qubit_maj_ns_e6` when you call the Resource Estimator.
 
 In a new cell, copy and run the following code:
 
@@ -154,11 +154,11 @@ result_maj = qsharp.estimate("RandomBit()", params={
 EstimateDetails(result_maj)
 ```
 
-Expand the dropdowns in output to inspect how the resource costs differ for the Majorana-based machine compared to the gate-based that you viewed before.
+Expand the dropdowns in the output to explore how the resource costs differ for the Majorana machine compared to the gate-based machine.
 
 ### Change the QEC scheme
 
-Now estimate the cost for the same algorithm on a Majorana-based qubit machine, but with a Floquet QEC scheme. To do this, pass the `qecScheme` parameter with the `name` field set to `floquet_code` when you call the Resource Estimator.
+Next, estimate the cost for the same algorithm on a Majorana machine with a Floquet QEC scheme. To do this, pass the `qecScheme` parameter with the `name` field set to `floquet_code` when you call the Resource Estimator.
 
 In a new cell, copy and run the following code:
 
@@ -174,11 +174,11 @@ result_maj = qsharp.estimate("RandomBit()", params={
 EstimateDetails(result_maj)
 ```
 
-Expand the dropdowns in the output to inspect how the resource costs differ for the Floquet QEC scheme compared to the surface code scheme from before.
+Expand the dropdowns in the output to explore how the resource costs differ for the Floquet QEC scheme compared to the surface code scheme.
 
 ### Change the error budget
 
-Next, estimate the cost for the same parameters as your previous estimate, but increase the error budget to 10%. To do this, pass the `errorBudget` parameter with the value set to 0.1 when you call the Resource Estimator.
+Finally, estimate the cost for the same parameters as your previous estimate, but increase the error budget to 10%. To do this, pass the `errorBudget` parameter with the value set to 0.1 when you call the Resource Estimator.
 
 In a new cell, copy and run the following code:
 
@@ -195,6 +195,6 @@ result_maj = qsharp.estimate("RandomBit()", params={
 EstimateDetails(result_maj)
 ```
 
-Congratulations! You successfully used the Azure Quantum Resource Estimator to estimate the physical resources required to run a simple quantum algorithm. And you customized the parameters to see how they affect the resource estimates.
+Congratulations! You successfully used the Resource Estimator to estimate the physical resources required to run a simple quantum algorithm. You also customized the parameters to see how they affect the resource estimates.
 
 In the next unit, you estimate the resources needed for a much more complex quantum program: Shor's algorithm.
