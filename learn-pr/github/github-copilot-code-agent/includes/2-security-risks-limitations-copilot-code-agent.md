@@ -14,8 +14,8 @@ Security is foundational to the Copilot coding agent. It respects your existing 
 - **Restricted environment** - The agent runs inside a sandbox on GitHub Actions with firewalled internet access and read-only access to your repository.
 - **Branch limits** - It can only create and push to branches beginning with copilot/, and all branch protections and required checks still apply.
 - **Permission-aware** - The agent only responds to users with write permission. Comments from others are ignored.
-- **Outside-collaborator rules** - Draft PRs from the agent require approval by a user with write permission before Actions run. The person who requested the PR cannot approve it.
-- **Compliance and attribution** - All commits are co-authored with the developer who assigned the task or requested the PR, so attribution is clear. Existing "required approvals" rules remain intact.
+- **Outside-collaborator rules** - Draft PRs from the agent require approval by a user with write permission before Actions run. The person who requested the PR can't approve it.
+- **Compliance and attribution** - All commits are coauthored with the developer who assigned the task or requested the PR, so attribution is clear. Existing "required approvals" rules remain intact.
 
 ### Risks and mitigations
 
@@ -23,7 +23,7 @@ Although the Copilot coding agent is built with security in mind, there are stil
 
 - **Risk: Agent pushes code**
 
-  **Mitigations:** Only users with write access can trigger agent work. Pushes are restricted to `copilot`/ branches (not main/master). The agent's credentials allow simple push only (no direct `git push`). GitHub Actions workflows won't run until a write-permission user clicks "**Approve and run workflows"**. The requestor cannot approve the agent's PR, maintaining required approvals.
+  **Mitigations:** Only users with write access can trigger agent work. Pushes are restricted to `copilot`/ branches (not main/master). The agent's credentials allow simple push only (no direct `git push`). GitHub Actions workflows won't run until a write-permission user clicks "**Approve and run workflows"**. The requestor can't approve the agent's PR, maintaining required approvals.
 
 - **Risk: Access to sensitive information**
 
@@ -33,7 +33,7 @@ Although the Copilot coding agent is built with security in mind, there are stil
 
   **Mitigation:** Hidden characters (such as HTML comments) are filtered before passing user input to the agent. This reduces the chance of hidden harmful instructions in comments or issues.
 
-These controls give you a secure baseline for using the agent, but you should still review outputs carefully-just as you would code written by any team member.
+These controls give you a secure baseline for using the agent, but you should still review outputs carefully just as you would code written by any team member.
 
 ### Known limitations
 
@@ -42,16 +42,16 @@ These controls give you a secure baseline for using the agent, but you should st
 - Can only make changes in the same repository as the assigned issue or PR.
 - Context scope is limited to the assigned repository by default (can be broadened via MCP).
 - Opens exactly one pull request per task.
-- Cannot modify an existing PR it didn't create (add it as a reviewer if you need feedback instead by leveraging [GitHub Copilot code review](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review)). 
+- Can't modify an existing PR it didn't create (add it as a reviewer if you need feedback instead by leveraging [GitHub Copilot code review](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review)). 
 
 **Compatibility limitations**
 
-- Does not sign commits. If you require signed commits, you must rewrite the commit history before merging.
+- Doesn't sign commits. If you require signed commits, you must rewrite the commit history before merging.
 - Requires GitHub-hosted Ubuntu x64 runners. Self-hosted runners are not supported.
 - Not available for personal repositories owned by managed user accounts (runners unavailable).
-- Does not honor content exclusions; the agent can see and update excluded files.
+- Doesn't honor content exclusions; the agent can see and update excluded files.
 - The "Suggestions matching public code" policy isn't enforced by the agent; references may not be provided.
 - Works only with GitHub-hosted repositories.
-- You cannot change the AI model used by the agent; it's selected by GitHub.
+- You can't change the AI model used by the agent; it's selected by GitHub.
 
-With guardrails and boundaries clear, you're ready to start delegating work, following progress, and iterating on results using your standard PR workflow.
+With guardrails and boundaries clear, you're ready to start delegating work, follow progress, and iterate on results using your standard PR workflow.

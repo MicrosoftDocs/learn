@@ -1,4 +1,4 @@
-GitHub Copilot coding agent runs inside a secure, ephemeral GitHub Actions environment. With a few configuration steps you can pre-seed this environment to improve reliability and speed, extend the agent's capabilities with external tools through the Model Context Protocol (MCP), and apply best practices to test and validate the agent's output before merging.
+GitHub Copilot coding agent runs inside a secure, ephemeral GitHub Actions environment. With a few configuration steps you can preseed this environment to improve reliability and speed, extend the agent's capabilities with external tools through the Model Context Protocol (MCP), and apply best practices to test and validate the agent's output before merging.
 
 By the end of this unit, you will be able to:
 
@@ -6,7 +6,7 @@ By the end of this unit, you will be able to:
 - Extend the agent's capabilities using the Model Context Protocol (MCP).
 - Test and validate agent output effectively before merging changes.
 
-## Pre-seeding the development environment
+## Preseeding the development environment
 
 **Preinstall tools & dependencies with** **`copilot-setup-steps.yml`** 
 
@@ -49,7 +49,7 @@ Allowed configuration keys for the `copilot-setup-steps` job: `steps, permission
 
 - Add larger runners first 
 - In `copilot-setup-steps.yml`, set `runs-on` to the label/group (for example, `ubuntu-4-core`).
-- Only Ubuntu x64 runners are supported; self-hosted runners are not supported.
+- Only Ubuntu x64 runners are supported; self-hosted runners aren't supported.
 
 **Git LFS**
 
@@ -75,7 +75,7 @@ Default internet access is limited to reduce exfiltration risk. You can customiz
 
 MCP is an open standard for connecting LLMs to tools and data. The agent can use **tools** provided by local or remote MCP servers to expand its capabilities.
 
-Note: Copilot coding agent supports MCP tools only (not resources or prompts). Remote MCP servers that require OAuth are not supported.
+Note: Copilot coding agent supports MCP tools only (not resources or prompts). Remote MCP servers that require OAuth aren't supported.
 
 **Default MCP servers**
 
@@ -108,4 +108,4 @@ You remain accountable for quality and security:
 
 Leverage PRUs for deeper validation tasks such as test coverage expansion, audits across directories, or risky area scans. Lightweight checks consume fewer PRUs, so apply them intentionally to maximize value.
 
-With configuration, extensions, and validation practices in place, the final step is to use the agent responsibly-scoping tasks well, safeguarding environments, and continuously reviewing outcomes.
+With configuration, extensions, and validation practices in place, the final step is to use the agent responsibly scoping tasks well, safeguarding environments, and continuously reviewing outcomes.

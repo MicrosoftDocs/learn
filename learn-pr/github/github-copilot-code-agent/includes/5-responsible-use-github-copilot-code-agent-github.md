@@ -30,7 +30,7 @@ While working on your task, the agent has access to its own ephemeral developmen
 
 - **Output formatting** 
   
-  Once the agent completes its first run, it will update the pull request description with the changes it made. The agent may include supplemental information about resources it could not access and provide suggestions on the steps to resolve.
+  Once the agent completes its first run, it will update the pull request description with the changes it made. The agent may include supplemental information about resources it couldn't access and provide suggestions on the steps to resolve.
   
   You may provide feedback to the agent by commenting within the pull request or explicitly mentioning the agent (**@copilot**). The agent will then resubmit that feedback to the language model for further analysis. Once the agent completes changes based on feedback, it will respond to your comment with updated changes.
 
@@ -42,7 +42,7 @@ Copilot is intended to provide you with the most relevant solution for task reso
 - **Documentation:** Updating and creating new documentation.
 - **Feature development:** Implementing incremental feature requests.
 - **Improving test coverage:** Developing additional test suites for quality management.
-- **Prototyping new projects:** Greenfielding new concepts.
+- **Prototyping new projects:** Green fielding new concepts.
 
 ## Improving performance for Copilot coding agent
 
@@ -56,7 +56,7 @@ To enhance performance and address limitations, use these measures:
 
 **Customize your experience with additional context** 
 
-Copilot coding agent leverages your prompt, comments and the repository's code as context when generating suggested changes. Improve results by adding **custom Copilot instructions** so the agent understands how to build, test and validate its changes.
+Copilot coding agent leverages your prompt, comments, and the repository's code as context when generating suggested changes. Improve results by adding **custom Copilot instructions** so the agent understands how to build, test, and validate its changes.
 
 Other helpful customizations:
 
