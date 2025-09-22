@@ -42,22 +42,6 @@ Alice uses a CNOT gate to entangle the message qubit, $m$, with her other qubit,
 
 The message qubit is in the unknown state $\alpha \ket{0}_m + \beta \ket{1}_m$, so after Alice applies the CNOT gate, her qubits are in a superposition of the four Bell states. Here's the overall state of the three qubits:
 
-NEW 1
-
-$$ \ket{\text{System}} = \frac1{2} \ket{\phi^+}\_\text{mA} (\alpha\ket{0}\_B + \beta\ket{1}\_B) $$
-$$ + \frac1{2} \ket{\phi^-}\_\text{mA} (\alpha\ket{0}\_B - \beta\ket{1}\_B) $$
-$$ + \frac1{2} \ket{\psi^+}\_\text{mA} (\alpha\ket{1}\_B + \beta\ket{0}\_B) $$
-$$ + \frac1{2} \ket{\psi^-}\_\text{mA} (\alpha\ket{1}\_B - \beta\ket{0}\_B) $$
-
-NEW 2
-
-$$ \ket{\text{System}} = \frac1{2} \ket{\phi^+}\_\text{mA} (\alpha\ket{0}\_B + \beta\ket{1}\_B) $$
-$$\qquad + \frac1{2} \ket{\phi^-}\_\text{mA} (\alpha\ket{0}\_B - \beta\ket{1}\_B) $$
-$$\qquad + \frac1{2} \ket{\psi^+}\_\text{mA} (\alpha\ket{1}\_B + \beta\ket{0}\_B) $$
-$$\qquad + \frac1{2} \ket{\psi^-}\_\text{mA} (\alpha\ket{1}\_B - \beta\ket{0}\_B) $$
-
-NEW 3
-
 $$ \ket{\text{System}} = \frac1{2} \ket{\phi^+}\_\text{mA} (\alpha\ket{0}\_B + \beta\ket{1}\_B) $$
 $$\qquad\qquad + \frac1{2} \ket{\phi^-}\_\text{mA} (\alpha\ket{0}\_B - \beta\ket{1}\_B) $$
 $$\qquad\qquad + \frac1{2} \ket{\psi^+}\_\text{mA} (\alpha\ket{1}\_B + \beta\ket{0}\_B) $$
