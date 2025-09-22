@@ -62,7 +62,7 @@ This section describes the table types you can manage in the Defender portal.
 
 | Table type                      | Description                                                                                                    | Examples                                             | Is in Microsoft Sentinel workspace?         |
 |----------------------------------|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------|----------------------------------|
-| **Microsoft Sentinel**    | Built-in tables, including:<br>- Azure tables, such as AzureDiagnostics and SigninLogs.<br>- Microsoft Sentinel tables.<br>- [Supported Defender XDR advanced hunting tables](#preview-limitations), which are created in your Microsoft Sentinel workspace when you increase the retention period beyond 30 days. See the **XDR** table type for Defender XDR tables that are currently unsupported.             | - Azure tables: `AzureDiagnostics`, `SigninLogs`<br>- Microsoft Sentinel tables: `AWSCloudTrail`, `SecurityAlert`<br>- XDR tables: `DeviceEvents`,<br>`AlertInfo`                 | Yes                              |
+| **Microsoft Sentinel**    | Built-in tables, including:- Azure tables, such as AzureDiagnostics and SigninLogs. Microsoft Sentinel tables. Supported Defender XDR advanced hunting tables, which are created in your Microsoft Sentinel workspace when you increase the retention period beyond 30 days. See the **XDR** table type for Defender XDR tables that are currently unsupported.             | - Azure tables: `AzureDiagnostics`, `SigninLogs`- Microsoft Sentinel tables: `AWSCloudTrail`, `SecurityAlert`- XDR tables: `DeviceEvents`,`AlertInfo`                 | Yes                              |
 | **Custom**                | Tables you create manually or through jobs in your Microsoft Sentinel workspace, including summary rule and search job results tables, and custom data source tables. | Tables with `_CL` or `_SRCH` suffixes.                                                      | Yes                              |
 | **XDR**| Tables in the XDR default tier, which have 30 days of analytics retention by default. You can view these tables, but you can't manage them from the Defender portal.                                                                       | `IdentityInfo` | No |
 
@@ -93,7 +93,7 @@ To view and manage table settings in the Microsoft Defender portal:
 
     The **Manage table** screen lets you modify the table's retention settings in the current tier, and change the storage tier, if necessary.
 
-    :::image type="content" source="../media/manage-data-overview/manage-table-settings-microsoft-defender-portal.png" lightbox="../media/manage-data-overview/manage-table-settings-microsoft-defender-portal.png" alt-text="Screenshot that shows the Manage table screen for the CommonSecurityLog table in the Defender portal.":::
+    :::image type="content" source="../media/manage-table-settings-microsoft-defender-portal.png" lightbox="../media/manage-table-settings-microsoft-defender-portal.png" alt-text="Screenshot that shows the Manage table screen for the CommonSecurityLog table in the Defender portal.":::
 
     - **Analytics tier retention settings**:
       - **Analytics retention**: 30 days to two years.
