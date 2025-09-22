@@ -22,10 +22,10 @@ quiz:
           explanation: "Correct. It uses a device-based, perpetual licensing model."
         - content: "Office Home & Business supports real-time collaboration."
           isCorrect: false
-          explanation: "Incorrect. It does not include cloud services for coauthoring."
+          explanation: "Incorrect. It doesn't include cloud services for coauthoring."
         - content: "Office Home & Business includes Teams and OneDrive."
           isCorrect: false
-          explanation: "Incorrect. These cloud services are not part of the suite."
+          explanation: "Incorrect. These cloud services aren't part of the suite."
   - content: "Which application in Office Home & Business 2024 is used for data analysis?"
     choices:
         - content: "Word"
@@ -44,24 +44,24 @@ quiz:
     choices:
         - content: "A subscription plan"
           isCorrect: false
-          explanation: "Incorrect. Office Home & Business 2024 is not subscription-based."
+          explanation: "Incorrect. Office Home & Business 2024 isn't subscription-based."
         - content: "A cloud storage account"
           isCorrect: false
-          explanation: "Incorrect. Cloud services are not required for activation."
+          explanation: "Incorrect. Cloud services aren't required for activation."
         - content: "A Microsoft Account"
           isCorrect: true
           explanation: "Correct. Activation and license management require a Microsoft Account."
         - content: "A company domain"
           isCorrect: false
-          explanation: "Incorrect. Activation does not depend on domain setup."
+          explanation: "Incorrect. Activation doesn't depend on domain setup."
   - content: "Which feature improves accessibility in Office Home & Business 2024?"
     choices:
         - content: "Real-time coauthoring"
           isCorrect: false
-          explanation: "Incorrect. This feature is not available in Office Home & Business 2024."
+          explanation: "Incorrect. This feature isn't available in Office Home & Business 2024."
         - content: "Cloud file sync"
           isCorrect: false
-          explanation: "Incorrect. The suite does not support cloud-based syncing."
+          explanation: "Incorrect. The suite doesn't support cloud-based syncing."
         - content: "Screen reader support"
           isCorrect: true
           explanation: "Correct. It enhances usability for users with low vision."

@@ -1,6 +1,6 @@
 Microsoft Office Home & Business 2024 is a one-time purchase productivity suite designed for users who prioritize offline reliability, predictable costs, and core Office functionality. While it doesn’t include cloud services or advanced collaboration tools, it delivers meaningful enhancements across performance, productivity, and accessibility.  
 
-By combining core apps—Word, Excel, PowerPoint, Outlook, and OneNote—with performance and accessibility improvements, it enables professionals to stay productive without requiring cloud infrastructure. However, it is best suited to scenarios where collaboration and advanced security are not primary requirements.  
+By combining core apps—Word, Excel, PowerPoint, Outlook, and OneNote—with performance and accessibility improvements, it enables professionals to stay productive without requiring cloud infrastructure. However, it's best suited to scenarios where collaboration and advanced security aren't primary requirements.  
 
 You’re now equipped to:  
 
