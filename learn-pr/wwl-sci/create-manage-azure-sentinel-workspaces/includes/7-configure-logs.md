@@ -1,33 +1,135 @@
-There are three primary log types in Microsoft Sentinel:
+## Configure logs in Microsoft Sentinel workspaces
 
-- Analytics Logs
-- Basic Logs
-- Auxiliary Logs (Preview)
+When configuring your Microsoft Sentinel workspaces, you have to plan for the two data states, the three table plans, and the two primary log tiers.
 
-Data in each table in a Log Analytics workspace is retained for a specified period of time after which it's either removed or archived with a reduced retention fee. Set the retention time to balance your requirement for having data available with reducing your cost for data retention.
+The two data states are:
 
-To access archived data, you must first retrieve data from it in an Analytics Logs table using one of the following methods:
+- Analytics retention: For monitoring, troubleshooting, and near-real-time analytics
+- Long-term retention: A low-cost state, not available in all table plans, but can be accessed through search jobs and restores
 
-- Search Jobs
-- Restore
+:::image type="content" source="../media/interactive-auxiliary-retention-log-analytics-workspace.png" lightbox="../media/interactive-auxiliary-retention-log-analytics-workspace.png" alt-text="Diagram that shows analytics and long-term retention in Azure Monitor Logs.":::
 
-:::image type="content" source="../media/workspace-plan-overview.png" alt-text="Diagram of different Workspace Log Types.":::
+Table plans in a Log Analytics workspace determine the features available for each table and the cost of storing data in that table. You can configure different tables in a workspace to use different plans.
 
-## Analytical Logs
+There are three plans in a Log Analytics workspace:
 
-By default, all tables in a workspace are of type Analytics Logs, which are available to all features of a Log Analytics workspace and any other services that use the workspace.
+- The **Analytics** plan is suited for continuous monitoring, real-time detection, and performance analytics. This plan makes log data available for interactive multi-table queries and use by features and services for 30 days to two years.  
+- The **Basic** plan is suited for troubleshooting and incident response. This plan offers discounted ingestion and optimized single-table queries for 30 days.
+- The **Auxiliary** plan is suited for low-touch data, such as verbose logs, and data required for auditing and compliance. This plan offers low-cost ingestion and unoptimized single-table queries for 30 days.
 
-## Basic Logs
+:::image type="content" source="../media/workspace-plan-overview.png" alt-text="Diagram of different Workspace Tier Types.":::
 
- You can configure certain tables as **Basic Logs** to reduce the cost of storing high-volume verbose logs you use for debugging, troubleshooting and auditing, but not for analytics and alerts. Tables configured for Basic Logs have a lower ingestion cost in exchange for reduced features. Basic logs are only **retained for 8 days**.
+### Log retention plans in Microsoft Sentinel
 
-## Auxiliary Logs (Preview)
+For Microsoft Sentinel workspaces connected to Defender, tiering and retention management must be done from the new table management experience in the Defender portal. If you have Basic logs in your workspace, convert them to analytics tier first from Log Analytics Tables experience before you can change tiering or retention from the Defender’s new table management experience.
 
-Auxiliary Logs are suited for low-touch data, such as verbose logs, and data required for auditing and compliance. This plan offers low-cost ingestion and unoptimized single-table queries for 30 days.
+> [!IMPORTANT]
+> We recommend that users consider Microsoft Sentinel data lake as the preferred solution for storing secondary and long-term data. Microsoft Sentinel data lake is designed to offer enhanced scalability, flexibility, and integration capabilities for advanced security and compliance scenarios.
+> Microsoft Sentinel data lake is currently in public preview and not yet generally available. We advise users to monitor updates and announcements regarding its availability status.
 
-### KQL language limits
+### Manage data tiers in Microsoft Sentinel
 
-Queries against Basic Logs are optimized for simple data retrieval using a subset of KQL language, including the following operators:
+There are two primary tiers in Microsoft Sentinel and a default XDR tier:
+
+- Analytics Tier
+- Data lake Tier
+- XDR default tier
+
+### Analytics tier
+
+This tier makes data available for alerting, hunting, workbooks, and all Microsoft Sentinel features. It retains data in two states:
+
+- **Analytics retention**: In this "hot" state, data is fully available for real-time analytics - including high-performance queries and analytics rules - and threat hunting. By default, Microsoft Sentinel and Microsoft Defender XDR retain data in this tier for 30 days. You can extend the retention period of all tables to up to two years at a prorated monthly long-term retention charge. You can extend the retention period of Microsoft Sentinel solution tables to 90 days for free. 
+- **Total retention**: By default, all data in the analytics tier is mirrored to the data lake for the same retention period. You can extend the retention of your data in the lake beyond the analytics retention, for up to 12 years of total retention at a low cost.
+
+### Data lake tier
+
+In this low-cost "cold" tier, Microsoft Sentinel retains your data in the lake only. Data in the data lake tier isn't available for real-time analytics features and threat hunting. However, you can access data in the lake whenever you need it through KQL jobs, analyze trends over time by running scheduled KQL or Spark jobs, and aggregate insights from incoming data at a regular cadence by using summary rules
+
+### XDR default tier
+
+By default, Microsoft Defender XDR retains threat hunting data in the XDR default tier, which includes 30 days of analytics retention, included in the XDR license. This data isn't ingested into the analytics or data lake tiers. You can extend the retention period of supported Defender XDR tables beyond 30 days and ingest the data into the analytics tier.
+
+This diagram shows the retention components of the analytics, data lake, and XDR default tiers, and which table types apply to each tier:
+
+:::image type="content" source="../media/tiers-retention-defender-portal.png" lightbox="../media/tiers-retention-defender-portal.png" alt-text="Diagram that depicts the analytics and data lake tiers in the Microsoft Defender portal.":::
+
+### Which tables can you manage in the Defender portal?
+
+This section describes the table types you can manage in the Defender portal.
+
+:::image type="content" source="../media/view-table-properties-microsoft-defender-portal.png" lightbox="../media/view-table-properties-microsoft-defender-portal.png" alt-text="Screenshot that shows the Table Management screen in the Defender portal.":::
+
+| Table type                      | Description                                                                                                    | Examples                                             | Is in Microsoft Sentinel workspace?         |
+|----------------------------------|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------|----------------------------------|
+| **Microsoft Sentinel**    | Built-in tables, including:<br>- Azure tables, such as AzureDiagnostics and SigninLogs.<br>- Microsoft Sentinel tables.<br>- [Supported Defender XDR advanced hunting tables](#preview-limitations), which are created in your Microsoft Sentinel workspace when you increase the retention period beyond 30 days. See the **XDR** table type for Defender XDR tables that are currently unsupported.             | - Azure tables: `AzureDiagnostics`, `SigninLogs`<br>- Microsoft Sentinel tables: `AWSCloudTrail`, `SecurityAlert`<br>- XDR tables: `DeviceEvents`,<br>`AlertInfo`                 | Yes                              |
+| **Custom**                | Tables you create manually or through jobs in your Microsoft Sentinel workspace, including summary rule and search job results tables, and custom data source tables. | Tables with `_CL` or `_SRCH` suffixes.                                                      | Yes                              |
+| **XDR**| Tables in the XDR default tier, which have 30 days of analytics retention by default. You can view these tables, but you can't manage them from the Defender portal.                                                                       | `IdentityInfo` | No |
+
+> [!NOTE]
+> You can view Basic logs tables in your Microsoft Sentinel workspace from the Defender portal, but you can only currently manage them from your Log Analytics workspace. To manage these tables from the Defender portal, change the table plan from basic to analytics in your Microsoft Sentinel workspace.
+
+### Manage table settings
+
+To view and manage table settings in the Microsoft Defender portal:
+
+1. Select **Microsoft Sentinel** > **Configuration** > **Tables** from the left navigation pane.
+
+    The **Table** screen lists all the tables you can manage in the Microsoft Defender portal and the settings of each table. 
+
+    :::image type="content" source="../media/view-table-properties-microsoft-defender-portal.png" lightbox="../media/view-table-properties-microsoft-defender-portal.png" alt-text="Screenshot that shows the Tables screen in the Defender portal.":::
+
+    The workspace column shows the Microsoft Sentinel workspace in which a Microsoft Sentinel or custom table is stored. 
+
+1. To manage Microsoft Sentinel and custom tables in a different Microsoft Sentinel workspace, select the workspace name at the top left corner of the screen to switch between workspaces.
+
+1. Select a table on the **Tables** screen.
+
+    This opens the table details side panel with more information about the table, including the table description, tier, and retention details.
+
+    :::image type="content" source="../media/table-management-microsoft-defender-portal.png" lightbox="../media/table-management-microsoft-defender-portal.png" alt-text="Screenshot that shows the table details side panel for the CommonSecurityLog table on the Table Management screen in the Defender portal.":::
+
+1. Select **Manage table**.
+
+    The **Manage table** screen lets you modify the table's retention settings in the current tier, and change the storage tier, if necessary.
+
+    :::image type="content" source="../media/manage-data-overview/manage-table-settings-microsoft-defender-portal.png" lightbox="../media/manage-data-overview/manage-table-settings-microsoft-defender-portal.png" alt-text="Screenshot that shows the Manage table screen for the CommonSecurityLog table in the Defender portal.":::
+
+    - **Analytics tier retention settings**:
+      - **Analytics retention**: 30 days to two years.
+      - **Total retention**: Up to 12 years of long-term storage in the data lake. By default, total retention is equal to analytics retention, which means long-term retention isn't applied. To enable long-term retention, set the total retention to a value greater than analytics retention. 
+
+        Example: To retain six months of data in long-term retention total and 90 days of data in analytics retention, set **Analytics retention** to 90 days and **Total retention** to 180 days.
+    - **Data lake tier retention settings**: Set **Retention** to a value between 30 days and 12 years.  
+    - **Tier changes**: If necessary, you can change tiers at any time based on your cost management and data usage needs.
+
+      > [!NOTE]
+      > Tier changes aren't available for all tables. For example, XDR and Microsoft Sentinel solution tables must be available in the analytics tier because Microsoft security services require the data in these tables for near-real-time analytics. 
+
+1. Review warnings and messages. These messages help you understand important implications of changing table settings. 
+
+    For example:
+    - Increased retention is likely to lead to increased data cost.
+    - Changing from the analytics to the data lake tier causes features that rely on analytics data to stop functioning such as:
+      - Alerting
+      - Advanced hunting
+      - Analytics rules
+      - Custom detection rules
+
+1. Select **Save** to apply the new settings.
+
+### Table support for Basic Logs & KQL language limits
+
+All tables in your Log Analytics are Analytics tables, by default. You can configure particular tables to use Basic Logs. You can't configure a table for Basic Logs if Azure Monitor relies on that table for specific features.
+
+You can currently configure the following tables for Basic Logs:
+
+- All tables created with the Data Collection Rule (DCR)-based custom logs API.
+- ContainerLogV2, which Container Insights uses and which include verbose text-based log records.
+- AppTraces, which contain freeform log records for application traces in Application Insights.
+
+Queries against Basic Logs are optimized for simple data retrieval using a subset of KQL language, including the following
+operators:
 
 - where
 - extend
@@ -45,44 +147,6 @@ The following KQL isn't supported:
 - union
 - aggregates (summarize)
 
-### Table support Basic Logs
 
-All tables in your Log Analytics are Analytics tables, by default. You can configure particular tables to use Basic Logs. You can't configure a table for Basic Logs if Azure Monitor relies on that table for specific features.
 
-You can currently configure the following tables for Basic Logs:
 
-- All tables created with the Data Collection Rule (DCR)-based custom logs API.
-- ContainerLogV2, which Container Insights uses and which include verbose text-based log records.
-- AppTraces, which contain freeform log records for application traces in Application Insights.
-
-### Configure log type
-
-To adjust the log type for an **eligible** table, select the workspace settings in the Microsoft Sentinel Settings area.  
-The next screen is in the Log Analytics portal.
-
-1. Select the "Tables" tab.  
-1. Select the table then **...** at the end of the row.
-1. Select Manage table
-1. Change the *Table plan*.
-1. Select **Save**
-
-## Long-term retention
-
-By default, all tables in a Log Analytics workspace retain data for 30 days, except for log tables with 90-day default retention. During this period - the interactive retention period - you can retrieve the data from the table through queries, and the data is available for visualizations, alerts, and other features and services, based on the table plan.
-
-You can extend the interactive retention period of tables with the Analytics plan to up to two years. The Basic and Auxiliary plans have a fixed interactive retention period of 30 days.  
-
-:::image type="content" source="../media/retention-long-term.png" alt-text="Diagram of the Retention archive process.":::
-
-To retain data in the same table beyond the interactive retention period, extend the table's total retention to up to 12 years. At the end of the interactive retention period, the data stays in the table for the remainder of the total retention period you configure. During this period - the long-term retention period - run a search job to retrieve the specific data you need from the table and make it available for interactive queries in a search results table.
-
-### Configure table retention
-
-To adjust the retention days for a table, select the workspace settings in the Microsoft Sentinel Settings area.  
-The next screen is in the Log Analytics portal.
-  
-1. Select the "Tables" tab.  
-1. Select the table then **...** at the end of the row.
-1. Select Manage table
-1. Change the *Total retention period*.
-1. Select **Save**
