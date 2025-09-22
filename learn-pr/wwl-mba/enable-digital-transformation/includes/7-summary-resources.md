@@ -33,5 +33,5 @@ Use these resources to discover more.
 - See an overview of [Digital Transformation](https://www.microsoft.com/enterprise/digital-transformation).
 - Learn more about [Microsoft Dynamics 365](https://dynamics.microsoft.com/).
 - Read a blog about [AI and digital feedback loops](https://blogs.msdn.microsoft.com/stevengu/2018/07/18/ai-and-digital-feedback-loops/).
-- Learn more about [The Carlsberg Group](https://customers.microsoft.com/story/carlsberg-consumer-goods-azure).
+- Learn more about [The Carlsberg Group](https://www.microsoft.com/customers/story/1599508437483565948-carlsberg-consumer-goods-microsoft-365-en-denmark).
 

@@ -36,7 +36,7 @@ Module 3 Demos
 
 Module 3 Labs
 
-- Lab 3.1: [Configure retention policies](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_03_Lab1_Ex1_retention_policies.md)
-- Lab 3.2: [Implement retention labels](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_03_Lab1_Ex2_retention_labels.md)
-- Lab 3.3: [Configure service-based retention](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_03_Lab1_Ex4_service_based_retention.md)
-- Lab 3.4: [Configure event-based retention](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_03_Lab1_Ex3_event_based_retention.md)
+- Lab 3.1: Configure retention policies
+- Lab 3.2: Implement retention labels
+- Lab 3.3: Configure service-based retention
+- Lab 3.4: Configure event-based retention
