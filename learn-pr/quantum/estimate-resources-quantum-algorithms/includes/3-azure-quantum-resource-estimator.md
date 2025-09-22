@@ -1,7 +1,8 @@
 
 The Azure Quantum Resource Estimator is a resource-estimation tool that computes and displays the resources that are required to run a quantum algorithm. The Resource Estimator assumes that the algorithm is run on a fault-tolerant, large-scale quantum computer.
 
-You can use the Resource Estimator to assess architectural decisions, compare qubit technologies, and determine the resources requirements for specific hardware. Information from the Resource Estimator includes the total number of physical qubits, the algorithm runtime, and the required computational resources. The Resource Estimator also explains the formulas and values that is uses to calculate each estimate.
+You can use the Resource Estimator to assess architectural decisions, compare qubit technologies, and determine the resource requirements for specific hardware. Information from the Resource Estimator includes the total number of physical qubits, the algorithm runtime, and the required computational resources. The Resource Estimator also explains the formulas and values that are used to calculate each estimate.
+
 
 In this unit, you learn how to customize the Resource Estimator with different parameters settings.
 

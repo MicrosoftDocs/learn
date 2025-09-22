@@ -17,7 +17,8 @@ If you haven't already installed the QDK extension for Visual Studio Code (VS Co
 Let's write the quantum algorithm in a Jupyter notebook. To create a Jupyter notebook with the QDK in VS Code, follow these steps:
 
 1. Open VS Code.
-1. COpen the **View** menu, and then choose **Command Palette**. An input box appears.
+1. Open the **View** menu and then choose **Command Palette**. An input box appears.
+
 1. In the input box, enter and choose **Create: New Jupyter Notebook**.
 1. In the notebook's first cell, import the `qsharp` package and the `EstimateDetails` function:
 

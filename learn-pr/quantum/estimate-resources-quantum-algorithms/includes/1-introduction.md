@@ -8,7 +8,8 @@ By the end of this module, you can:
 
 - Explain what the Azure Quantum Resource Estimator is.
 - Define the target parameters of the Resource Estimator.
-- Use the Resource Estimator to estimate the resources needed to to run a quantum algorithm.
+- Use the Resource Estimator to estimate the resources needed to run a quantum algorithm.
+
 
 ## Prerequisites
 
