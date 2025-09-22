@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.data-engineer-azure-databricks
 metadata:
-  title: Implement a Data Lakehouse Analytics Solution with Azure Databricks
-  description: Implement a data lakehouse analytics solution with Azure Databricks. (DP-3011)
+  title: Implement a Data Analytics Solution with Azure Databricks
+  description: Implement a Data Analytics Solution with Azure Databricks. (DP-3011)
   ms.date: 09/12/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: learning-path
-title: Implement a data lakehouse analytics solution with Azure Databricks
+title: Implement a Data Analytics Solution with Azure Databricks
 prerequisites: |
   Before starting this learning path, you should already be comfortable with the fundamentals of Python and SQL. This includes being able to write simple Python scripts and work with common data structures, as well as writing SQL queries to filter, join, and aggregate data. A basic understanding of common file formats such as CSV, JSON, or Parquet will also help when working with datasets.
 
