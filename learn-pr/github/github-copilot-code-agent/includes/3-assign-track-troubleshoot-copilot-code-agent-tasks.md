@@ -37,7 +37,7 @@ query {
 
 ```
 
-### Get repository id
+### Get repository ID
 
 ```
 query {
