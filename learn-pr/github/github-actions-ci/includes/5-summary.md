@@ -22,7 +22,6 @@ Here are some links to more information on the subjects described in this module
 - [actions/checkout@v3](https://github.com/actions/checkout?azure-portal=true)
 - [actions/upload-artifact](https://github.com/actions/upload-artifact?azure-portal=true)
 - [actions/download-artifact](https://github.com/actions/download-artifact?azure-portal=true)
-- [pullreminders/label-when-approved-action](https://github.com/pullreminders/label-when-approved-action?azure-portal=true)
 - [Metadata syntax for GitHub Actions](https://docs.github.com/actions/creating-actions/metadata-syntax-for-github-actions?azure-portal=true)
 - [Workflow syntax for GitHub Actions](https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions?azure-portal=true)
 - [Events that trigger workflows](https://help.github.com/articles/events-that-trigger-workflows?azure-portal=true)
