@@ -4,10 +4,10 @@ title: Ingest and transform real-time data
 metadata:
   title: Ingest and transform real-time data
   description: "Ingest and transform real-time data"
-  ms.date: 08/28/2025
+  ms.date: 09/10/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 6
 content: |
   [!include[](includes/3a-define-real-time-hub.md)]

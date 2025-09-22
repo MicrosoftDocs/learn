@@ -4,5 +4,5 @@ Additional Reading:
 
 - [Azure Databricks Delta Lake](/azure/databricks/delta/)
 - [ACID guarantees on Azure Databricks](/azure/databricks/lakehouse/acid)
-- [Schema Evolution and Enforcement](https://www.databricks.com/blog/2019/09/24/diving-into-delta-lake-schema-enforcement-evolution.html)
-- [Delta Lake Time Travel](https://www.databricks.com/blog/2019/02/04/introducing-delta-time-travel-for-large-scale-data-lakes.html)
+- [Schema Evolution and Enforcement](/azure/databricks/tables/schema-enforcement)
+- [Delta Lake Time Travel](/azure/databricks/delta/history)
