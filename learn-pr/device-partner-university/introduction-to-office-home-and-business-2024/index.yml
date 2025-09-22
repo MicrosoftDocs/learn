@@ -3,18 +3,20 @@ uid: learn.dpu.introduction-to-office-home-and-business-2024
 title: Introduction to Office Home & Business 2024
 metadata:
   title: Introduction To Office Home & Business 2024
-  description: ''
+  description: Learn how Microsoft Office Home & Business 2024 supports small businesses, educators, and professionals with essential productivity tools—without requiring a subscription or cloud services.
   ms.date: 09/22/2025
   author: hhreyes21
   ms.author: v-homerreyes
   ms.topic: module
   ms.service: office
-summary: >2+
-
-abstract: |2+
-
+summary: >
+ This module introduces Microsoft Office Home & Business 2024, a one-time purchase suite designed for users who prioritize offline reliability and predictable costs. Explore included applications like Word, Excel, PowerPoint, Outlook, and OneNote, and discover performance, productivity, and accessibility enhancements. Learn how this edition compares to Microsoft 365 subscriptions and when it's the best fit for your organization.
+abstract: |
+ By the end of this module, you'll be able to:
+ - Evaluate whether Office Home & Business 2024 meets the productivity needs of small businesses and individual professionals.
+ - Describe how the included applications support common business tasks such as document creation, data analysis, and communication.
 prerequisites: |
-  - None
+  - None 
 iconUrl: /training/achievements/generic-badge.svg
 ratingEnabled: false
 levels:
