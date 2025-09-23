@@ -17,7 +17,7 @@ When you enable the Defender for Servers plan in Defender for Cloud, Defender fo
 
 ## Add non-Azure machines with Azure Arc
 
-Next, you need to connect your non-Azure machines to Azure using Azure Arc by deploying the Azure Connected Machine agent. This connection can be accomplished using different methods, depending on your requirements and the tools you prefer to use. For more information, see [Azure Connected Machine agent deployment options](s/azure/azure-arc/servers/deployment-options).
+Next, you need to connect your non-Azure machines to Azure using Azure Arc by deploying the Azure Connected Machine agent. This connection can be accomplished using different methods, depending on your requirements and the tools you prefer to use. For more information, see [Azure Connected Machine agent deployment options](/azure/azure-arc/servers/deployment-options).
 
 Connecting a machine to Azure through Azure Arc-enabled servers creates an Azure resource for the hybrid machine. If the Azure subscription with your Arc-enabled servers has Defender for Servers enabled, the Azure resource appears in Defender for Cloud. Just like your other Azure resources, the Arc-enabled server can also have security recommendations, surface alerts, and be captured in your secure score.
 
