@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check.
-  ms.date: 01/31/2024
+  ms.date: 09/23/2025
   author: halkazwini
   ms.author: halkazwini
   ms.topic: unit
@@ -49,4 +49,4 @@ quiz:
           isCorrect: true
           explanation: Correct. VPN troubleshoot allows you to troubleshoot virtual network gateways and their connections.
           
-
+
