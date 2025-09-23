@@ -7,7 +7,7 @@ In this unit, we will cover:
 
 It's a dedicated Copilot chat grounded in a curated set of context you choose. The Space is itself like a LLM and you can feed it GitHub files, issues, pull requests, and your own free‑text instructions to provide context to your specific topic.
 
-:::image type="content" source="../media/copilot-chat.png" alt-text="Screenshot shows a dedicated Copilot chat grounded in a curated set of context you choose." lightbox="../media/3-add-user.png":::
+:::image type="content" source="../media/copilot-chat.png" alt-text="Screenshot shows a dedicated Copilot chat grounded in a curated set of context you choose." lightbox="../media/copilot-chat.png":::
 
 ## Setting Context for Copilot Spaces
 

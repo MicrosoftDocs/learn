@@ -22,25 +22,25 @@ quiz:
       explanation: "Correct: Spaces trade breadth for depth to produce predictable, grounded answers on a narrow domain."
     - content: "When you want Copilot to automatically discover any relevant content in your org"
       isCorrect: false
-      explanation: "Incorrect: Spaces do not auto-discover content; they use only the context you attach."
+      explanation: "Incorrect: Spaces don't autodiscover content; they use only the context you attach."
     - content: "When you have no specific task or domain in mind"
       isCorrect: false
       explanation: "Incorrect: Spaces work best when the job/domain is clearly defined."
   - content: "Which statement about Space ownership and description is true?"
     choices:
-    - content: "A Space must be organization-owned; personal Spaces are not supported"
+    - content: "A Space must be organization-owned; personal Spaces aren't supported"
       isCorrect: false
       explanation: "Incorrect: Both personal and organization ownership can be used, depending on your environment."
     - content: "The description changes Copilot's answers in the Space"
       isCorrect: false
-      explanation: "Incorrect: Descriptions are for human readers and do not affect model responses."
+      explanation: "Incorrect: Descriptions are for human readers and don't affect model responses."
     - content: "You can choose personal or organization ownership (where available), and the description is for human readers"
       isCorrect: true
       explanation: "Correct: Ownership can be personal or org; the description aids discoverability but doesn't change answers."
-    - content: "Ownership cannot be changed once set, and descriptions affect answer quality"
+    - content: "Ownership can't be changed once set, and descriptions affect answer quality"
       isCorrect: false
       explanation: "Incorrect: The statement mixes inaccuracies; descriptions don't affect answer quality."
-  - content: "Which action will NOT add usable context for Copilot in a Space?"
+  - content: "Which action does NOT add usable context for Copilot in a Space?"
     choices:
     - content: "Attaching files or folders from a GitHub repository"
       isCorrect: false
@@ -53,7 +53,7 @@ quiz:
       explanation: "Incorrect: Uploads are supported and can be used as context."
     - content: "@-mentioning a Copilot extension so it can run in Space chat"
       isCorrect: true
-      explanation: "Correct: Mentions don't notify anyone, and extensions cannot be invoked from Space chats."
+      explanation: "Correct: Mentions don't notify anyone, and extensions can't be invoked from Space chats."
   - content: "How do Spaces handle security and access to linked items?"
     choices:
     - content: "A Space grants temporary read access to all linked private repositories"
@@ -64,10 +64,10 @@ quiz:
       explanation: "Correct: Spaces inherit repo/issue/PR permissions; they don't grant new access."
     - content: "A Space creates a copy of private content that anyone with the link can access"
       isCorrect: false
-      explanation: "Incorrect: Spaces do not copy or expose private content beyond entitlements."
-    - content: "A Space requires repo admins to whitelist each viewer manually"
+      explanation: "Incorrect: Spaces don't copy or expose private content beyond entitlements."
+    - content: "A Space requires repo admins to approved list each viewer manually"
       isCorrect: false
-      explanation: "Incorrect: Manual whitelisting in Spaces is not required; permissions are inherited."
+      explanation: "Incorrect: Manual approved list in Spaces isn't required; permissions are inherited."
   - content: "You need branch-specific guidance or a historical snapshot in a Space. What should you do?"
     choices:
     - content: "Change the repository's default branch to lock Space answers to that branch"
@@ -75,7 +75,7 @@ quiz:
       explanation: "Incorrect: Changing the default branch isn't recommended as a Space tactic."
     - content: "Rely on general chat to retrieve older versions automatically"
       isCorrect: false
-      explanation: "Incorrect: Spaces do not auto-discover older content; they use the context you attach."
+      explanation: "Incorrect: Spaces don't autodiscover older content; they use the context you attach."
     - content: "Narrow references to relevant files and add a brief example, or attach a text file with the exact content"
       isCorrect: true
       explanation: "Correct: This is the recommended approach for branch-specific guidance or historical snapshots."
