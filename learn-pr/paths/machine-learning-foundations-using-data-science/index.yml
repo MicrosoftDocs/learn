@@ -51,7 +51,6 @@ modules:
 - learn.machinelearning.test-machine-learning-models
 - learn.wwl.train-evaluate-regression-models
 - learn.machinelearning.understand-classification-machine-learning
-- learn.machinelearning.machine-learning-architectures-and-hyperparameters
 - learn.machinelearning.evaluate-real-world-models
 - learn.machinelearning.optimize-model-performance-roc-auc-dropout
 - learn.wwl.train-evaluate-classification-models

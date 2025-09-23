@@ -55740,6 +55740,61 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/2-design-front-end.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/3-exercise-create-front-end.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/4-design-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/5-exercise-create-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/6-design-style.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/7-exercise-use-design-system.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/8-cleanup.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/aks-cluster-upgrades-patches/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/aks/upgrade",
       "redirect_document_id": false
@@ -57971,6 +58026,101 @@
     {
       "source_path": "learn-pr/paths/dotnet-aspire-azure/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-azure-app-service-web-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/machine-learning-architectures-and-hyperparameters/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/machine-learning-foundations-using-data-science/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/machine-learning-architectures-and-hyperparameters/2-decision-trees.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/machine-learning-foundations-using-data-science/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/machine-learning-architectures-and-hyperparameters/3-exercise-decision-trees.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/machine-learning-foundations-using-data-science/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/machine-learning-architectures-and-hyperparameters/4-random-forests.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/machine-learning-foundations-using-data-science/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/machine-learning-architectures-and-hyperparameters/5-exercise-random-forests.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/machine-learning-foundations-using-data-science/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/machine-learning-architectures-and-hyperparameters/6-hyperparameters.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/machine-learning-foundations-using-data-science/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/machine-learning-architectures-and-hyperparameters/7-exercise-hyperparameters-tuning.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/machine-learning-foundations-using-data-science/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/machine-learning-architectures-and-hyperparameters/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/machine-learning-foundations-using-data-science/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/machine-learning-architectures-and-hyperparameters/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/machine-learning-foundations-using-data-science/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/machine-learning-architectures-and-hyperparameters/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/machine-learning-foundations-using-data-science/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/2-what-is-minimal-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/3-exercise-create-minimal-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/4-advanced-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/5-exercise-advanced-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-api/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/aspnet-core-minimal-api/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/aspnet-core-web-app/",
       "redirect_document_id": false
     },
     {
