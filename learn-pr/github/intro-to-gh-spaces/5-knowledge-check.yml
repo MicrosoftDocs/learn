@@ -1,0 +1,112 @@
+### YamlMime:ModuleUnit
+uid: learn.github.copilot-spaces.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Test your knowledge of GitHub Copilot Spaces.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 09/23/2025
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "When is a GitHub Copilot Space the better choice than general or repo-wide chat?"
+    choices:
+    - content: "When you need broad discovery across many repositories"
+      isCorrect: false
+      explanation: "Incorrect: Broad discovery is better served by general or repo-wide chat."
+    - content: "When you want consistent, reproducible answers on a tightly scoped topic"
+      isCorrect: true
+      explanation: "Correct: Spaces trade breadth for depth to produce predictable, grounded answers on a narrow domain."
+    - content: "When you want Copilot to automatically discover any relevant content in your org"
+      isCorrect: false
+      explanation: "Incorrect: Spaces do not auto-discover content; they use only the context you attach."
+    - content: "When you have no specific task or domain in mind"
+      isCorrect: false
+      explanation: "Incorrect: Spaces work best when the job/domain is clearly defined."
+  - content: "Which statement about Space ownership and description is true?"
+    choices:
+    - content: "A Space must be organization-owned; personal Spaces are not supported"
+      isCorrect: false
+      explanation: "Incorrect: Both personal and organization ownership can be used, depending on your environment."
+    - content: "The description changes Copilot's answers in the Space"
+      isCorrect: false
+      explanation: "Incorrect: Descriptions are for human readers and do not affect model responses."
+    - content: "You can choose personal or organization ownership (where available), and the description is for human readers"
+      isCorrect: true
+      explanation: "Correct: Ownership can be personal or org; the description aids discoverability but doesn't change answers."
+    - content: "Ownership cannot be changed once set, and descriptions affect answer quality"
+      isCorrect: false
+      explanation: "Incorrect: The statement mixes inaccuracies; descriptions don't affect answer quality."
+  - content: "Which action will NOT add usable context for Copilot in a Space?"
+    choices:
+    - content: "Attaching files or folders from a GitHub repository"
+      isCorrect: false
+      explanation: "Incorrect: Attached repo files/folders are valid context."
+    - content: "Pasting URLs of GitHub issues and pull requests"
+      isCorrect: false
+      explanation: "Incorrect: Linked issues and PRs provide context and stay fresh as they change."
+    - content: "Uploading a local file (for example, a text document or spreadsheet)"
+      isCorrect: false
+      explanation: "Incorrect: Uploads are supported and can be used as context."
+    - content: "@-mentioning a Copilot extension so it can run in Space chat"
+      isCorrect: true
+      explanation: "Correct: Mentions don't notify anyone, and extensions cannot be invoked from Space chats."
+  - content: "How do Spaces handle security and access to linked items?"
+    choices:
+    - content: "A Space grants temporary read access to all linked private repositories"
+      isCorrect: false
+      explanation: "Incorrect: Spaces never broaden access beyond existing GitHub permissions."
+    - content: "A Space mirrors GitHub permissions and surfaces only what a viewer can already see"
+      isCorrect: true
+      explanation: "Correct: Spaces inherit repo/issue/PR permissions; they don't grant new access."
+    - content: "A Space creates a copy of private content that anyone with the link can access"
+      isCorrect: false
+      explanation: "Incorrect: Spaces do not copy or expose private content beyond entitlements."
+    - content: "A Space requires repo admins to whitelist each viewer manually"
+      isCorrect: false
+      explanation: "Incorrect: Manual whitelisting in Spaces is not required; permissions are inherited."
+  - content: "You need branch-specific guidance or a historical snapshot in a Space. What should you do?"
+    choices:
+    - content: "Change the repository's default branch to lock Space answers to that branch"
+      isCorrect: false
+      explanation: "Incorrect: Changing the default branch isn't recommended as a Space tactic."
+    - content: "Rely on general chat to retrieve older versions automatically"
+      isCorrect: false
+      explanation: "Incorrect: Spaces do not auto-discover older content; they use the context you attach."
+    - content: "Narrow references to relevant files and add a brief example, or attach a text file with the exact content"
+      isCorrect: true
+      explanation: "Correct: This is the recommended approach for branch-specific guidance or historical snapshots."
+    - content: "Paste the sensitive historical content into free-text notes for convenience"
+      isCorrect: false
+      explanation: "Incorrect: Avoid pasting sensitive data into notes; prefer version-controlled links or safe uploads."
+  - content: "Which prompting pattern best supports runnable, verifiable outputs in a Space?"
+    choices:
+    - content: "Ask for a summary without constraints to keep the model creative"
+      isCorrect: false
+      explanation: "Incorrect: Vague prompts increase drift and reduce precision."
+    - content: "Confirm intent, add concrete constraints (formats, ranges, file paths), and request executable outputs with references"
+      isCorrect: true
+      explanation: "Correct: This pattern aligns with guidance for grounded, testable results with traceability."
+    - content: "Use many broad instructions to widen the context as much as possible"
+      isCorrect: false
+      explanation: "Incorrect: Overly broad instructions decrease predictability."
+    - content: "Avoid referencing attached sources to prevent overfitting"
+      isCorrect: false
+      explanation: "Incorrect: Referencing attached sources improves grounding and traceability."
+  - content: "You notice size warnings and increasingly vague answers from your Space. What's the best next step?"
+    choices:
+    - content: "Add more examples to increase context so the model has more to learn from"
+      isCorrect: false
+      explanation: "Incorrect: More examples can worsen context-size issues."
+    - content: "Reduce sources or split the Space into smaller, single-job Spaces"
+      isCorrect: true
+      explanation: "Correct: Reducing or splitting restores precision and avoids degraded answers."
+    - content: "Start @-mentioning people to pull in their expertise"
+      isCorrect: false
+      explanation: "Incorrect: Mentions don't notify people and don't add usable context."
+    - content: "Turn off repository linking so the Space doesn't change"
+      isCorrect: false
+      explanation: "Incorrect: Disabling repo linking hurts freshness and doesn't address sprawl."
