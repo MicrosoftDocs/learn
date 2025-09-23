@@ -4,7 +4,7 @@ title: Summary
 metadata:
   title: Summary
   description: Summary.
-  ms.date: 01/22/2025
+  ms.date: 09/22/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   
@@ -13,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/summary.md)]
-
+

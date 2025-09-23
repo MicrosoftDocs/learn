@@ -1,26 +1,26 @@
 ### YamlMime:Module
 uid: learn.quantum.estimate-resources-quantum-algorithms
 metadata:
-  title: Estimate physical resources for quantum algorithms by using the Azure Quantum Resource Estimator
+  title: Estimate physical resource requirements for quantum algorithms with the Azure Quantum Resource Estimator
   description: Learn how to get started with Azure Quantum Resource Estimator.
-  ms.date: 01/22/2025
+  ms.date: 09/22/2025
   author: azure-quantum-content
   ms.author: quantumdocwriters
   
   ms.topic: module
   ms.service: azure-quantum
   ms.subservice: qdk
-title: Estimate physical resources for quantum algorithms by using the Azure Quantum Resource Estimator
+title: Estimate physical resource requirements for quantum algorithms with the Azure Quantum Resource Estimator
 summary: Learn why resource estimation is crucial in the development of quantum computing, and learn how to use the Azure Quantum Resource Estimator. 
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you can:
   - Explain what the Azure Quantum Resource Estimator is.
-  - Define the target parameters of the Azure Quantum Resource Estimator.
-  - Estimate the resources of a quantum algorithm using the Azure Quantum Resource Estimator.
-  In this module, you'll:
+  - Define the target parameters of the Resource Estimator.
+  - Use the Resource Estimator to estimate the resource requirements to run a quantum algorithm.
+  In this module, you:
   - Learn what resource estimation is and why it's important.
   - Explore the Azure Quantum Resource Estimator.
-  - Estimate the resources of an algorithm for practical quantum advantage.
+  - Estimate the resources requirements to run an algorithm for practical quantum advantage.
 prerequisites: |
   - The latest version of [Visual Studio Code](https://code.visualstudio.com/download) or open [VS Code on the Web](https://vscode.dev/)
   - The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension
@@ -46,4 +46,4 @@ units:
 - learn.quantum.estimate-resources-quantum-algorithms.summary
 badge:
   uid: learn.quantum.estimate-resources-quantum-algorithms.badge
-
+
