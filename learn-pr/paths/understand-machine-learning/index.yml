@@ -46,7 +46,6 @@ modules:
 - learn.machinelearning.understand-regression-machine-learning
 - learn.machinelearning.test-machine-learning-models
 - learn.machinelearning.understand-classification-machine-learning
-- learn.machinelearning.machine-learning-architectures-and-hyperparameters
 - learn.machinelearning.evaluate-real-world-models
 - learn.machinelearning.optimize-model-performance-roc-auc-dropout
 trophy:
