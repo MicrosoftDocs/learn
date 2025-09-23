@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.dpu.automate-meeting-scheduling
+title: Automate meeting scheduling with Microsoft Teams
+metadata:
+  title: Automate Meeting Scheduling With Microsoft Teams
+  description: "In this module, you’ll learn how to:\n\n- Use Microsoft Teams’ calendar integration to schedule meetings.\n- Set up recurring and channel meetings.\n- Configure meeting options, including participant roles and permissions.\n- Manage meeting settings before and during meetings."
+  ms.date: 09/18/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: module
+  ms.service: microsoft-365-business
+summary: >
+  Discover how to streamline your team’s collaboration by exploring Microsoft Teams’ automated meeting scheduling and management features. This module guides you through setting up recurring meetings, configuring participant roles, and managing meeting options to save time and ensure every session runs smoothly.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Schedule recurring meetings faster using the New Calendar view in Microsoft Teams.
+  - Set clear roles and permissions to keep meetings organized and secure.
+  - Manage meeting settings before and during sessions to stay in control.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - m365-business
+  - office-teams
+units:
+  - learn.dpu.automate-meeting-scheduling.introduction
+  - learn.dpu.automate-meeting-scheduling.schedule-recurring-meetings-using-microsoft-teams
+  - learn.dpu.automate-meeting-scheduling.exercise-schedule-recurring-team-meeting
+  - learn.dpu.automate-meeting-scheduling.configure-meeting-options-manage-participant-roles
+  - learn.dpu.automate-meeting-scheduling.exercise-set-meeting-options-manage-participants
+  - learn.dpu.automate-meeting-scheduling.knowledge-check
+  - learn.dpu.automate-meeting-scheduling.summary
+badge:
+  uid: learn.dpu.automate-meeting-scheduling.badge

@@ -289,7 +289,7 @@ In addition to starting a workflow via GitHub events like `push` and `pull-reque
 
 You might want a workflow to run only after a user completes a specific action, such as after a reviewer approves a pull request. For this scenario, you can trigger on `pull-request-review`.
 
-Another action you can take is to add a label to the pull request. In this case, use the [pullreminders/label-when-approved-action](https://github.com/pullreminders/label-when-approved-action?azure-portal=true) action.
+Another action you can take is to add a label to the pull request. In this case, use the pullreminders/label-when-approved-action action.
 
 For example:
 

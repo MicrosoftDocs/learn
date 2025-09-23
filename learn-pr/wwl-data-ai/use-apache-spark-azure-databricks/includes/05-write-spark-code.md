@@ -1,13 +1,16 @@
-One of the benefits of using Spark is that you can write and run code in various programming languages, enabling you to use the programming skills you already have and to use the most appropriate language for a given task. The default language in a new Azure Databricks Spark notebook is *PySpark* - a Spark-optimized version of Python, which is commonly used by data scientists and analysts due to its strong support for data manipulation and visualization. Additionally, you can use languages such as *Scala* (a Java-derived language that can be used interactively) and *SQL* (a variant of the commonly used SQL language included in the *Spark SQL* library to work with relational data structures). Software engineers can also create compiled solutions that run on Spark using frameworks such as *Java*.
+After setting up a notebook and attaching it to a cluster, you can use Spark to read and process data files. Spark supports a wide range of formats—such as CSV, JSON, Parquet, ORC, Avro, and Delta—and Databricks provides built-in connectors to access files stored in the workspace, in Azure Data Lake or Blob Storage, or in other external systems.
 
-## Exploring data with dataframes
+The workflow usually follows three steps:
 
-Natively, Spark uses a data structure called a *resilient distributed dataset* (RDD); but while you *can* write code that works directly with RDDs, the most commonly used data structure for working with structured data in Spark is the *dataframe*, which is provided as part of the *Spark SQL* library. Dataframes in Spark are similar to those in the ubiquitous *Pandas* Python library, but optimized to work in Spark's distributed processing environment.
+1. **Read** a file into a Spark DataFrame using spark.read with the correct format and path. When reading raw text formats like CSV or JSON, Spark can infer the schema (column names and data types), but this is sometimes slow or unreliable. A better practice in production is to define the schema explicitly so that the data is loaded consistently and efficiently.
+   
+2. **Explore and transform** the DataFrame using SQL or DataFrame operations (for example, filtering rows, selecting columns, aggregating values).
+   
+3. **Write** the results back to storage in a chosen format.
 
-> [!NOTE]
-> In addition to the Dataframe API, Spark SQL provides a strongly-typed *Dataset* API that is supported in Java and Scala. We'll focus on the Dataframe API in this module.
+Working with files in Spark is designed to be consistent across small and large datasets. The same code used to test a small CSV file will also work on much larger datasets, since Spark distributes the work across the cluster. This makes it easier to scale up from quick exploration to more complex data processing.
 
-### Loading data into a dataframe
+## Loading data into a dataframe
 
 Let's explore a hypothetical example to see how you can use a dataframe to work with data. Suppose you have the following data in a comma-delimited text file named **products.csv** in the **data** folder in your Databricks File System (DBFS) storage:
 
@@ -52,7 +55,7 @@ Both of the examples shown previously would produce output like this:
 | 773 | Mountain-100 Silver, 44 |Mountain Bikes | 3399.9900 |
 | ... | ... | ... | ... |
 
-### Specifying a dataframe schema
+## Specifying a dataframe schema
 
 In the previous example, the first row of the CSV file contained the column names, and Spark was able to infer the data type of each column from the data it contains. You can also specify an explicit schema for the data, which is useful when the column names aren't included in the data file, like this CSV example:
 
@@ -94,7 +97,7 @@ The results would once again be similar to:
 
 ## Filtering and grouping dataframes
 
-You can use the methods of the Dataframe class to filter, sort, group, and otherwise manipulate the data it contains. For example, the following code example uses the **select** method to retrieve the **ProductName** and **ListPrice** columns from the **df** dataframe containing product data in the previous example:
+You can use the methods of the Dataframe class to filter, sort, group, and otherwise manipulate the data it contains. For example, the following code example uses the `select` method to retrieve the **ProductName** and **ListPrice** columns from the **df** dataframe containing product data in the previous example:
 
 ```python
 pricelist_df = df.select("ProductID", "ListPrice")
@@ -109,14 +112,14 @@ The results from this code example would look something like this:
 | 773 | 3399.9900 |
 | ... | ... |
 
-In common with most data manipulation methods, **select** returns a new dataframe object.
+In common with most data manipulation methods, `select` returns a new dataframe object.
 
 > [!TIP]
 > Selecting a subset of columns from a dataframe is a common operation, which can also be achieved by using the following shorter syntax:
 >
 > `pricelist_df = df["ProductID", "ListPrice"]`
 
-You can "chain" methods together to perform a series of manipulations that results in a transformed dataframe. For example, this example code chains the **select** and **where** methods to create a new dataframe containing the **ProductName** and **ListPrice** columns for products with a category of **Mountain Bikes** or **Road Bikes**:
+You can "chain" methods together to perform a series of manipulations that results in a transformed dataframe. For example, this example code chains the `select` and `where` methods to create a new dataframe containing the **ProductName** and **ListPrice** columns for products with a category of **Mountain Bikes** or **Road Bikes**:
 
 ```python
 bikes_df = df.select("ProductName", "ListPrice").where((df["Category"]=="Mountain Bikes") | (df["Category"]=="Road Bikes"))
@@ -131,7 +134,7 @@ The results from this code example would look something like this:
 | Road-750 Black, 52 | 539.9900 |
 | ... | ... |
 
-To group and aggregate data, you can use the **groupBy** method and aggregate functions. For example, the following PySpark code counts the number of products for each category:
+To group and aggregate data, you can use the `groupby` method and aggregate functions. For example, the following PySpark code counts the number of products for each category:
 
 ```python
 counts_df = df.select("ProductID", "Category").groupBy("Category").count()
@@ -146,6 +149,10 @@ The results from this code example would look something like this:
 | Wheels | 14 |
 | Mountain Bikes | 32 |
 | ... | ... |
+
+
+> [!NOTE]
+> Spark DataFrames are **declarative and immutable**. Each transformation (like `select`, `filter`, or `groupBy`) creates a new DataFrame that represents what you want, not how it runs. This makes code reusable, optimizable, and free of side effects. But none of these transformations actually execute until you trigger an **action** (for example, `display`, `collect`, `write`), at which point Spark runs the full optimized plan.
 
 ## Using SQL expressions in Spark
 
@@ -168,7 +175,7 @@ A *view* is temporary, meaning that it's automatically deleted at the end of the
 > 
 > - You can create an empty table by using the `spark.catalog.createTable` method. Tables are metadata structures that store their underlying data in the storage location associated with the catalog. Deleting a table also deletes its underlying data.
 > - You can save a dataframe as a table by using its `saveAsTable` method.
-> - You can create an *external* table by using the `spark.catalog.createExternalTable` method. External tables define metadata in the catalog but get their underlying data from an external storage location; typically a folder in a data lake. Deleting an external table does not delete the underlying data.
+> - You can create an *external* table by using the `spark.catalog.createExternalTable` method. External tables define metadata in the catalog but get their underlying data from an external storage location; typically a folder in a data lake. Deleting an external table doesn't delete the underlying data.
 
 ### Using the Spark SQL API to query data
 
