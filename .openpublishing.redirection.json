@@ -58432,6 +58432,51 @@
       "source_path": "learn-pr/wwl-sci/priva-tracker-scanning/view-scan-results.md",
       "redirect_url": "/training/paths/priva-data-privacy-solutions/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-visual-studio/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/debugger/remote-debugging-azure-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-visual-studio/2-install-the-necessary-workloads.yml",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/debugger/remote-debugging-azure-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-visual-studio/3-exercise-create-a-new-aspnet-app.yml",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/debugger/remote-debugging-azure-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-visual-studio/4-explore-the-azure-app-service.yml",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/debugger/remote-debugging-azure-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-visual-studio/5-exercise-publish-an-asp.net-app-from-visual-studio.yml",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/debugger/remote-debugging-azure-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-visual-studio/6-explore-your-visual-studio-app-project.yml",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/debugger/remote-debugging-azure-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-visual-studio/7-exercise-publish-an-update-to-your-site.yml",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/debugger/remote-debugging-azure-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-visual-studio/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/debugger/remote-debugging-azure-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-azure-web-app-with-visual-studio/index.yml",
+      "redirect_url": "https://learn.microsoft.com/visualstudio/debugger/remote-debugging-azure-app-service",
+      "redirect_document_id": false
     }
   ]
 }
