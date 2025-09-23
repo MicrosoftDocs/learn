@@ -5,7 +5,7 @@ metadata:
   title: Introduction to Azure Network Watcher
   description: This module explains what Azure Network Watcher does, how it works, and when you should choose to use Network Watcher as a solution to meet your organization's needs.
   manager: kumud
-  ms.date: 01/31/2024
+  ms.date: 09/23/2025
   author: halkazwini
   ms.author: halkazwini
   ms.topic: module-intro-to-product
@@ -38,4 +38,4 @@ units:
   - learn.azure.intro-to-azure-network-watcher.summary
 badge:
   uid: learn.azure.intro-to-azure-network-watcher.badge
-
+

@@ -32,6 +32,17 @@ GitHub Copilot can significantly streamline the testing process:
 - **Edge case identification:** Suggest test scenarios that cover edge cases, improving the robustness of tests.
 - **Assertion suggestions:** Propose appropriate assertions based on the expected behavior of the code being tested.
 
+#### Automated testing workflows
+
+GitHub Copilot can orchestrate comprehensive testing strategies that go beyond individual test creation:
+
+- **Test suite architecture:** Design complete testing frameworks that include unit tests, integration tests, and end-to-end testing scenarios for complex features.
+- **Test automation pipelines:** Generate test configuration files and CI/CD integration that automatically runs appropriate test suites based on code changes.
+- **Quality gates:** Create automated quality checks that ensure code meets standards before progression through the development pipeline.
+- **Performance testing:** Generate performance benchmarks and load testing scenarios to validate system behavior under various conditions.
+
+This automated approach ensures that quality assurance becomes an integrated part of the development process rather than a separate phase, enabling faster delivery with maintained quality standards.
+
 ### Deployment
 
 While not directly involved in deployment processes, GitHub Copilot can assist in related tasks:
@@ -49,6 +60,55 @@ GitHub Copilot proves valuable in ongoing maintenance tasks:
 - **Documentation updates:** Assist in keeping code comments and documentation in sync with changes.
 - **Legacy code understanding:** Help developers understand and work with unfamiliar or legacy code by providing explanations and modern equivalents.
 
-By involving GitHub Copilot throughout the SDLC, development teams can experience improved efficiency, consistency, and code quality across all stages of software development. This AI-assisted approach allows developers to focus more on creative problem-solving and less on repetitive coding tasks, potentially leading to faster development cycles and higher-quality software products.
+## Building with orchestrated AI workflows
 
-In the next unit, we'll explore the limitations of GitHub Copilot and discuss how to measure its impact on development productivity.
+Modern software development increasingly benefits from coordinated AI assistance where multiple AI capabilities work together to handle complex development tasks. This orchestrated approach combines the strengths of different AI agents to deliver comprehensive solutions.
+
+### Simple agent orchestration patterns
+
+Consider a basic two-agent workflow for feature development:
+
+1. **Draft agent (GitHub Copilot):** Analyzes feature requirements and generates initial implementation including:
+   - Core functionality with proper error handling
+   - Basic unit tests covering main scenarios
+   - Inline documentation explaining the implementation
+   - Integration points with existing code
+
+2. **Review agent:** Analyzes the draft code and provides:
+   - Code quality assessment against project standards
+   - Security vulnerability identification
+   - Performance optimization suggestions
+   - Architectural pattern compliance review
+
+This coordinated approach ensures that code meets quality standards before human review, significantly reducing the number of review iterations needed.
+
+> [!NOTE]
+> Each handoff consumes ~1 PRU. A 2-agent draft–review flow typically uses 2–3 PRUs.
+
+### Advanced orchestration capabilities
+
+For complex development scenarios, multi-agent workflows can handle sophisticated requirements:
+
+#### Premium reasoning integration
+
+Advanced AI reasoning provides deeper analysis for complex development challenges:
+
+- **Architectural decision support:** Analyze trade-offs between different implementation approaches considering scalability, maintainability, and performance.
+- **Cross-system impact analysis:** Understand how changes in one component affect other parts of a distributed system.
+- **Complex refactoring coordination:** Orchestrate changes across multiple files and modules while preserving system functionality and performance.
+- **Integration pattern optimization:** Suggest optimal patterns for connecting new features with existing system architecture.
+
+> [!NOTE]
+> Premium runs add more context and reasoning but often double PRU consumption (~4+ per request).
+
+#### Comprehensive feature delivery workflows
+
+Orchestrated AI can handle complete feature delivery from requirements to deployment:
+
+1. **Analysis phase:** Parse user stories and technical requirements to create implementation plans
+2. **Implementation phase:** Generate complete feature code including all necessary components
+3. **Quality assurance phase:** Create comprehensive test suites and quality checks
+4. **Documentation phase:** Generate user documentation, API docs, and maintenance guides
+5. **Deployment phase:** Create deployment scripts and monitoring configurations
+
+This end-to-end automation enables teams to deliver features faster while maintaining high quality standards across all aspects of development.

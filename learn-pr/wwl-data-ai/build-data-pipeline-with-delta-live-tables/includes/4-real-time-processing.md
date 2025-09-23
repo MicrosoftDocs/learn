@@ -1,6 +1,6 @@
-A streaming table is a Delta table that includes support for streaming and incremental data processing. Unlike traditional tables, a streaming table is designed to continuously accept data as it arrives. It is updated by flows within a pipeline and is particularly useful for scenarios where new data must be ingested or transformed on an ongoing basis.
+A streaming table is a Delta table that includes support for streaming and incremental data processing. Unlike traditional tables, a streaming table is designed to continuously accept data as it arrives. It's updated by flows within a pipeline and is useful for scenarios where new data must be ingested or transformed on an ongoing basis.
 
-Streaming tables are especially useful for data ingestion because they process each input row only once, which matches the vast majority of ingestion workloads. They're capable of handling large volumes of append-only data efficiently. They're also valuable in low-latency transformations because they can process data over rows and windows of time, manage high volumes of input, and deliver results with minimal delay.
+Streaming tables are especially useful for data ingestion because they process each input row only once, which matches most ingestion workloads. They're capable of handling large volumes of append-only data efficiently. They're also valuable in low-latency transformations because they can process data over rows and windows of time, manage high volumes of input, and deliver results with minimal delay.
 
 ## How Streaming tables work
 

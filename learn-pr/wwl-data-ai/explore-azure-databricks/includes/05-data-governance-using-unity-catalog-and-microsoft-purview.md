@@ -1,48 +1,64 @@
-Data governance is critical for ensuring that data within an organization is managed securely, efficiently, and in compliance with regulations. Azure Databricks, combined with Unity Catalog and Microsoft Purview, provides a robust solution for managing and governing data effectively. 
+Data governance is critical for ensuring that data within an organization is managed securely, efficiently, and in compliance with regulations. 
 
-## Data Governance Tools
-An overview of how data governance can be implemented using Unity Catalog and Microsoft Purview follows.
+In many organizations, data is distributed across databases, data warehouses, data lakes, and even multiple catalogs. It also exists in diverse formats like Parquet, CSV, and Delta Lake. Beyond structured data in tables, there’s also unstructured data in files, along with other assets such as machine learning models, notebooks, and dashboards that require management and governance. This fragmentation creates silos across sources, formats, and asset types.
 
-### Unity Catalog 
+These governance challenges directly affect the value organizations can derive from data and AI:
 
-Unity Catalog is a feature within Azure Databricks that offers a unified governance solution for all data and AI assets. It provides a centralized metastore that manages data objects across all workspaces in an organization.
+- Fragmented governance increases compliance, security, and data quality risks, while also creating operational inefficiencies as teams struggle to maintain a consistent view of their data and AI environments.
 
-![Unity Catalog](../media/06-azure-databricks-with-unity-catalog.png)
+- Limited connectivity can result in vendor lock-in and make it harder to adopt new technologies as requirements change. Poor interoperability also complicates collaboration and scaling, often leading to higher costs from using multiple tools and duplicating data across systems.
 
-### Microsoft Purview
+- A lack of built-in intelligence restricts broader use of data and AI platforms, particularly for nontechnical users. This slows down innovation, delays decision-making, and prevents organizations from fully realizing the benefits of their data and AI investments.
 
-Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, multicloud, and software-as-a-service (SaaS) data. It provides capabilities like data discovery, data classification, data lineage, and data access governance.
+Azure Databricks, combined with Unity Catalog and Microsoft Purview, provides a robust solution for managing and governing data effectively. 
 
-![Microsoft Purview](../media/07-azure-databricks-purview-areas.png)
+## Unity Catalog 
 
-## Overview of Unity Catalog
+Unity Catalog provides a centralized way to manage access, discovery, lineage, audit logs, and quality monitoring across data and AI assets within Azure Databricks. It applies consistently across all workspaces in a region.
 
-Unity Catalog in Azure Databricks is a centralized metastore that manages metadata for all data assets and AI assets across Databricks workspaces. It enables fine-grained security controls and governance policies at scale, making it easier to manage data across multiple teams and projects securely.
+![Diagram of the Unity Catalog components.](../media/06-azure-databricks-with-unity-catalog.png)
 
-### Key Features of Unity Catalog
+The **metastore** is the top-level metadata container; it holds information about data assets and the permissions that govern them. You typically have one metastore per region, and multiple workspaces can share that metastore.
 
-- **Unified Namespace:** Unity Catalog offers a single namespace for datasets, files, and machine learning models across all workspaces, making it easier to manage and discover assets.
+Unity Catalog organizes data assets using a structured **three-level hierarchy**:
 
-- **Fine-grained Access Control:** It allows administrators to set precise access controls on data using standard SQL GRANT and REVOKE statements, aligning with the principle of least privilege.
+```sql
+catalog.schema.table_or_other_object
+```
 
-- **Data Lineage:** Unity Catalog captures and displays data lineage, which is critical for tracking the flow of data and understanding its transformations over time.
+- **Catalogs** group assets typically aligned to teams or environments.
+- **Schemas** (also known as databases) are subdivisions within catalogs, organizing assets more granularly—for example by project or use case.
+- **Objects** in schemas include tables (managed or external), views, volumes, functions, and models.
 
-- **Centralized Metadata Management:** Manages all metadata centrally, ensuring that definitions, descriptions, and other metadata are consistent across projects and workspaces.
+Tables can be either managed or external. With **managed tables**, Unity Catalog handles both governance and storage (always Delta Lake format). With **external tables**, Unity Catalog manages access from Databricks, but data lifecycle/storage is managed externally. This supports multiple formats (Delta, CSV, JSON, Parquet, etc.)
 
-- **Integration with Databricks SQL:** Unity Catalog is fully integrated with Databricks SQL, allowing for seamless querying and management of data assets without moving data out of the platform.
+Unity Catalog implements **fine-grained access control** via ANSI SQL commands across multiple levels—metastore, catalog, schema, down to rows and columns. For example, the following command gives the 'finance-team' user group the permission to create new tables in the 'myschema' within the 'mycatalog' database.
 
-## Overview of Microsoft Purview
+```sql
+GRANT CREATE TABLE ON SCHEMA mycatalog.myschema TO `finance-team`;
+```
 
-Microsoft Purview offers a suite of data governance tools designed to provide visibility, control, and insights into data usage across an organization. It helps you discover, classify, protect, and monitor data, no matter where it resides.
+Exploring data assets in Unity Catalog is straightforward. You can use the **Catalog Explorer** and a search interface to find what you need. To help you, assets have tags, comments, and even AI-generated descriptions. Once you find a data asset, you can use features like **lineage**, table insights, and Entity Relationship diagrams to get a better understanding of it.
 
-### Key Features of Microsoft Purview for Azure Databricks
+Unity Catalog provides a complete picture of your data's history. It logs access, audit trails, and lineage—right down to the column level.
 
-- **Data Discovery and Classification:** Automatically scan and classify data across your Azure Databricks environment using built-in classifiers and also create custom classifiers.
+In most accounts, Unity Catalog is enabled by default when you create a workspace. You can get started using Unity Catalog with the default settings. There are optional configurations that you might want to enable, however. 
 
-- **Data Lineage:** Provides detailed visibility into the data lineage, showing how data is transformed and moved across different systems and processes, including  within Azure Databricks.
+## Microsoft Purview
 
-- **Data Map:** Aggregates metadata from various data sources into a searchable catalog, allowing users to understand the data landscape and its relationships.
+Microsoft Purview is a data governance service that lets you manage and oversee data across on-premises systems, multiple clouds, and SaaS platforms. It includes features such as data discovery, classification, lineage tracking, and access governance.
 
-- **Access and Policy Management:** Allows for the creation of governance policies that enforce how data is accessed and used within Azure Databricks and other integrated systems.
+When integrated with Azure Databricks and Unity Catalog, Purview can discover Lakehouse data and ingest its metadata into the Data Map. This allows you to apply consistent governance across your entire data environment, while acting as a central catalog that brings together metadata from different sources.
 
-- **Insights and Reporting:** Offers detailed reports on data discovery, sensitivity classification, and access analytics, helping to ensure compliance and optimize data governance strategies.
+With this integration, you can:
+
+- **Scan** Azure Databricks in both public and private networks, powered by the fully managed Microsoft Purview integration runtime.
+- Scan the entire **Unity Catalog metastore** or choose to scan only selective catalogs.
+- Extract a comprehensive set of Unity Catalog metadata, including details of metastore, catalogs, schemas, tables/views, and columns, etc.
+- Automatically **classify** the data based on built-in system classification rules or user-defined custom classification rules to identify sensitive data.
+- Get detailed visibility into the **data lineage**, showing how data is transformed and moved across different systems and processes, including within Azure Databricks.
+- Run the scan **on-demand** or on a daily/weekly/monthly recurring **schedule**.
+
+![Screenshot of Microsoft Purview showing an Azure Databricks Table Metadata.](../media/purview-databricks.png)
+
+In addition, Microsoft Purview can scan the workspace-level **Hive metastore** in Azure Databricks.
