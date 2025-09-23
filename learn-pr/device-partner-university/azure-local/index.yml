@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.dpu.azure-local
+title: Introduction to Azure Local
+metadata:
+  title: Introduction To Azure Local
+  description: In this module, you’ll learn how Azure Local helps you run virtual machines on-premises using hyperconverged infrastructure. You’ll also discover how you can use Azure services for centralized management, monitoring, and backup.
+  ms.date: 09/10/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: azure-local
+summary: >
+  This module explores how Azure Local lets you run virtual machines and workloads right on your own hardware, while still taking advantage of Azure’s cloud tools.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Evaluate whether Azure Local meets the requirements for centralized management, monitoring, and backup across different deployment scenarios.
+  - Describe how the components of Azure Local function and interact, including virtualization, storage, networking, and Azure service integration.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/azure-local.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - azure-local
+units:
+  - learn.dpu.azure-local.introduction
+  - learn.dpu.azure-local.what-is-azure-local
+  - learn.dpu.azure-local.cloud-integration
+  - learn.dpu.azure-local.when-use-azure-local
+  - learn.dpu.azure-local.knowledge-check
+  - learn.dpu.azure-local.summary
+badge:
+  uid: learn.dpu.azure-local.badge

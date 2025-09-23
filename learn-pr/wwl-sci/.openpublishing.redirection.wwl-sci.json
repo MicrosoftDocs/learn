@@ -373,6 +373,11 @@
         "redirect_document_id": false
       },
       {
+        "source_path_from_root": "/learn-pr/wwl-sci/connect-azure-assets-to-azure-defender/4-manual-log-analytics-agent-provisioning.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/connect-azure-assets-to-azure-defender/4-manual-azure-monitor-agent-provisioning/",
+        "redirect_document_id": false
+      },
+      {
         "source_path_from_root": "/learn-pr/wwl-sci/configure-siem-security-operations-using-microsoft-sentinel/6-summary.yml",
         "redirect_url": "https://learn.microsoft.com/training/modules/configure-siem-security-operations-using-microsoft-sentinel/7-summary/",
         "redirect_document_id": false
@@ -400,6 +405,16 @@
     {
       "source_path": "learn-pr/wwl-azure/purview-implement-manage-retention/disposition-review.md",
       "redirect_url": "/training/modules/purview-manage-records/disposition-review",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/configure-prerequisites-beyond-m365.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/priva-subject-rights-requests/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/create-subject-rights-request-beyond-m365.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/priva-subject-rights-requests/",
       "redirect_document_id": false
     }
     ]

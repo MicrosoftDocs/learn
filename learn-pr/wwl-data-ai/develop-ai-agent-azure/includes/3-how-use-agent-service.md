@@ -21,7 +21,7 @@ Foundry Agent Service offers several key features:
 - **Automatic tool calling**: The service handles the entire tool-calling lifecycle, including running the model, invoking tools, and returning results.
 - **Securely managed data**: Conversation states are securely managed using threads, eliminating the need for developers to handle this manually.
 - **Out-of-the-box tools**: The service includes tools for file retrieval, code interpretation, and interaction with data sources like Bing, Azure AI Search, and Azure Functions.
-- **Flexible model selection**: Developers can choose from various models, including Azure OpenAI models and others like Llama 3, Mistral, and Cohere.
+- **Model selection**: Developers can choose from [various Azure OpenAI models](/azure/ai-foundry/agents/concepts/model-region-support?tabs=global-standard#available-models).
 - **Enterprise-grade security**: The service ensures data privacy and compliance with secure data handling and keyless authentication.
 - **Customizable storage solutions**: Developers can use either platform-managed storage or bring their own Azure Blob storage for full visibility and control.
 
