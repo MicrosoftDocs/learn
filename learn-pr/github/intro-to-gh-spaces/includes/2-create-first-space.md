@@ -5,7 +5,8 @@
 1. Choose whether the space is owned by you or by an organization you belong to. Organization-owned Spaces can be shared using GitHub's built-in permission model.
 1. Optionally, add a description. This doesn't affect the responses Copilot gives in the space, but it can help others understand the context of the space.
 
-    Note You can change the name and description of your space at any time by clicking  Edit in the top right corner of the space.
+    >[!NOTE]
+    >You can change the name and description of your space at any time by clicking  Edit in the top right corner of the space.
 
 1. Click Save in the top right corner of the page.
 
