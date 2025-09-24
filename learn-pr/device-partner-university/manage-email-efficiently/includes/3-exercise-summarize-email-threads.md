@@ -26,7 +26,7 @@ Chat Assisted Scheduling in Outlook allows users to schedule meetings and block 
 
 Start by entering the meeting participant details in the chat or using the forward slash (/) to search for a specific person using the Context IQ feature. Specify the time range, and Copilot finds available times for the meeting. You can also include the meeting duration and title. For example, *"Schedule time to meet with Derek next week about the quarterly report."*
 
-[![A screenshot of a Copilot Chat search for a specific person using the Context IQ feature in Microsoft Outlook.](media/slash-name-inline.png)](media/slash-name-expanded.png")
+[![A screenshot of a Copilot Chat search for a specific person using the Context IQ feature in Microsoft Outlook.](../media/slash-name-inline.png)](../media/slash-name-expanded.png")
 
 For larger meetings, Copilot​​​​​​​ guides you to complete the scheduling in the event form, prepopulating the details and suggested time slots that work best for you.​​​​​
 
