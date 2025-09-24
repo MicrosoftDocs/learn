@@ -2,7 +2,7 @@ In this module, you learned about service endpoints, private endpoints, private 
 
 **The main takeaways from this module are:**
 - **Service Endpoints** limit the Azure service's access to the allowed virtual network and subnet. Service endpoints provide network-level security and isolation of the Azure service traffic.
-- **Service Endpoint policies** allow you to filter egress virtual network trafficto the Service Endpoint. Policies 
+- **Service Endpoint policies** allow you to filter virtual network traffic to the Service Endpoint.  
 - **Azure Private Link** enables you to access Azure PaaS Services and Azure hosted customer-owned/partner services over a Private Endpoint in your virtual network. Private Link is designed to eliminate security risks by removing the public part of the connection.
 - **Azure private endpoint** is the key technology behind private link. Private endpoint is a network interface that enables a private and secure connection between your virtual network and an Azure service. 
 - **Azure Private Link service** lets you offer Private Link connections to your custom Azure services. Consumers of your custom services can then access those services privately—that is, without using the internet—from their own Azure virtual networks.
