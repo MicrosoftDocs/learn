@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.manage-email-efficiently.sumarize-email-threads
-title: Summarize email threads with Copilot Chat in Outlook
+uid: learn.dpu.manage-email-efficiently.create-replies
+title: Draft reply emails using Copilot Chat
 metadata:
-  title: Summarize Email Threads With Copilot Chat In Outlook
+  title: Draft Reply Emails Using Copilot Chat
   description: This content is part of the "Manage email efficiently with Microsoft Outlook and Copilot Chat" module.
   ms.date: 09/24/2025
   author: Stephanie-Rosenzweig
   ms.author: v-stephanier
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 1
 content: |
-  [!include[](includes/2-sumarize-email-threads.md)]
+  [!include[](includes/4-create-replies.md)]

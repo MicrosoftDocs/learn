@@ -31,12 +31,12 @@ products:
   - microsoft-365-copilot
 units:
   - learn.dpu.manage-email-efficiently.introduction
-  - learn.dpu.manage-email-efficiently.sumarize-email-threads
-  - learn.dpu.manage-email-efficiently.exercise-summarize-email-threads
-  - learn.dpu.manage-email-efficiently.draft-reply-emails-using-copilot-chat
-  - learn.dpu.manage-email-efficiently.exercise-draft-replies-with-Copilot-Chat
-  - learn.dpu.manage-email-efficiently.create-inbox-rules
-  - learn.dpu.manage-email-efficiently.exercise-create-a-rule
+  - learn.dpu.manage-email-efficiently.summarize-email
+  - learn.dpu.manage-email-efficiently.exercise-summarize-email
+  - learn.dpu.manage-email-efficiently.create-replies
+  - learn.dpu.manage-email-efficiently.exercise-create-replies
+  - learn.dpu.manage-email-efficiently.create-rules
+  - learn.dpu.manage-email-efficiently.exercise-create-rules
   - learn.dpu.manage-email-efficiently.knowledge-check
   - learn.dpu.manage-email-efficiently.summary
 badge:

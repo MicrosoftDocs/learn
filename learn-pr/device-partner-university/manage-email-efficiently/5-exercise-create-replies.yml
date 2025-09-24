@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.manage-email-efficiently.create-inbox-rules
-title: Create inbox rules using Copilot Chat in Outlook
+uid: learn.dpu.manage-email-efficiently.exercise-create-replies
+title: Exercise-draft a reply email
 metadata:
-  title: Create Inbox Rules Using Copilot Chat In Outlook
+  title: Exercise-Draft A Reply Email
   description: This content is part of the "Manage email efficiently with Microsoft Outlook and Copilot Chat" module.
   ms.date: 09/24/2025
   author: Stephanie-Rosenzweig
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-create-inbox-rules.md)]
+  [!include[](includes/5-exercise-create-replies.md)]

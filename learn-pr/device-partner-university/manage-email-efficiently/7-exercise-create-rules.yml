@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.manage-email-efficiently.exercise-create-a-rule
+uid: learn.dpu.manage-email-efficiently.exercise-create-rules
 title: Exercise-create an inbox rule
 metadata:
   title: Exercise-Create An Inbox Rule
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-exercise-create-a-rule.md)]
+  [!include[](includes/7-exercise-create-rules.md)]
