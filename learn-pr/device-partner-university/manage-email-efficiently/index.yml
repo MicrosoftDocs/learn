@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.dpu.manage-email-efficiently
+title: Manage email efficiently with Microsoft Outlook and Copilot Chat
+metadata:
+  title: Manage Email Efficiently With Microsoft Outlook And Copilot Chat
+  description: In this module, you’ll explore how to work more productively with Microsoft Outlook and Copilot Chat.
+  ms.date: 09/24/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: microsoft-365-copilot
+summary: >
+  Discover how business professionals can streamline communication and save time using Microsoft Outlook and Copilot Chat.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Organize your inbox to focus on high-priority messages.
+  - Summarize email threads efficiently using Copilot Chat.
+  - Draft professional email replies with the help of Copilot Chat.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/manage-email-efficiently.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - microsoft-365-copilot
+units:
+  - learn.dpu.manage-email-efficiently.introduction
+  - learn.dpu.manage-email-efficiently.sumarize-email-threads
+  - learn.dpu.manage-email-efficiently.exercise-summarize-email-threads
+  - learn.dpu.manage-email-efficiently.draft-reply-emails-using-copilot-chat
+  - learn.dpu.manage-email-efficiently.exercise-draft-replies-with-Copilot-Chat
+  - learn.dpu.manage-email-efficiently.create-inbox-rules
+  - learn.dpu.manage-email-efficiently.exercise-create-a-rule
+  - learn.dpu.manage-email-efficiently.knowledge-check
+  - learn.dpu.manage-email-efficiently.summary
+badge:
+  uid: learn.dpu.manage-email-efficiently.badge

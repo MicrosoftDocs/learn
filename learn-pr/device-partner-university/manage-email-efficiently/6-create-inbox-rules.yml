@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.manage-email-efficiently.create-inbox-rules
+title: Create inbox rules using Copilot Chat in Outlook
+metadata:
+  title: Create Inbox Rules Using Copilot Chat In Outlook
+  description: This content is part of the "Manage email efficiently with Microsoft Outlook and Copilot Chat" module.
+  ms.date: 09/24/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-create-inbox-rules.md)]
