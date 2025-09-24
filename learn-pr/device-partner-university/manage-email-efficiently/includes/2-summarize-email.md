@@ -25,7 +25,7 @@ Microsoft Outlook includes Copilot Chat, an AI assistant that helps you quickly 
 >
 > *"Create a welcome email to a new hire, including details on what they should do in their first four weeks."*
 >
->[![A screenshot of a Copilot Chat prompt in Microsoft Outlook.](../media/prompt-inline.png)](../media/prompt-expanded.png")
+>[![A screenshot of a Copilot Chat prompt in Microsoft Outlook.](../media/prompt-inline.png)](../media/prompt-expanded.png)
 
 ## How Copilot Chat summarizes emails
 

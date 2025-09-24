@@ -4,7 +4,7 @@ Managing your inbox efficiently ensures that important messages don’t get lost
 
 1. Open Outlook and select Copilot Chat from the ribbon.
 
-[![A screenshot of the Copilot Chat icon in the ribbon on Outlook.](../media/button-inline.png)](../media/button-expanded.png")
+[![A screenshot of the Copilot Chat icon in the ribbon on Outlook.](../media/button-inline.png)](../media/button-expanded.png)
 
 2. In the chat box, type a prompt describing the rule you want to create. For example:
 
