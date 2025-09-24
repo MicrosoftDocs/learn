@@ -4,11 +4,11 @@ title: Onboard Azure Arc-enabled servers to Microsoft Sentinel
 metadata:
   title: Onboard Azure Arc-enabled servers to Microsoft Sentinel
   description: Learn how to onboard Azure Arc-enabled servers to Microsoft Sentinel.
-  ms.date: 04/24/2024
+  ms.date: 09/23/2025
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/6-onboard-azure-arc-enabled-servers-to-microsoft-sentinel.md)]
-
+
