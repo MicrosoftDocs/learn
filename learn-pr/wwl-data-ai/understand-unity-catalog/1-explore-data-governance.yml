@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-unity-catalog.explore-data-governance
+metadata:
+  title: Explore data governance using Unity Catalog
+  description: "Learn about fundamental data governance challenges and how Unity Catalog provides a unified solution for modern data management across multiple platforms and clouds."
+  ms.date: 09/24/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+title: Explore data governance using Unity Catalog
+durationInMinutes: 7
+content: |
+  [!include[](includes/1-explore-data-governance.md)]

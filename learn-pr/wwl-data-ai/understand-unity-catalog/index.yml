@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.understand-unity-catalog
+metadata:
+  title: Understand Unity Catalog
+  description: "Learn fundamental data governance concepts using Unity Catalog in Azure Databricks. Explore metastore architecture, external storage integration, and federation capabilities to implement robust data governance strategies."
+  ms.date: 09/24/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: module
+  ms.service: azure
+title: Understand Unity Catalog
+summary: |
+  Discover how Unity Catalog provides unified data governance across your Azure Databricks lakehouse architecture. Learn to analyze governance challenges, explore metastore components, and implement external storage integration while establishing foundational concepts for enterprise-grade data management.
+abstract: |
+  In this module, you learn how to:
+  - Assess data governance challenges and evaluate Unity Catalog as a unified solution
+  - Analyze Unity Catalog metastore architecture and three-level namespace structure  
+  - Explore external storage integration and Lakehouse Federation capabilities
+  - Navigate Unity Catalog components and create basic data objects in Azure Databricks
+prerequisites: |
+  Before starting this module, you should have:
+  - Familiarity with Azure Databricks workspace and basic concepts
+  - Understanding of data governance fundamentals and challenges
+  - Basic knowledge of SQL concepts such as tables, views, and schemas
+  - Experience with Azure storage services and cloud computing concepts
+iconUrl: /training/achievements/data-ai-cert/unity-catalog-fundamentals.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- data-architect
+products:
+- azure-databricks
+subjects:
+- data-governance
+units:
+- learn.wwl.understand-unity-catalog.introduction
+- learn.wwl.understand-unity-catalog.explore-data-governance
+- learn.wwl.understand-unity-catalog.analyze-architecture
+- learn.wwl.understand-unity-catalog.explore-external-storage-federation
+- learn.wwl.understand-unity-catalog.exercise-create-navigate-metastore
+- learn.wwl.understand-unity-catalog.knowledge-check
+- learn.wwl.understand-unity-catalog.summary
+badge:
+  uid: learn.wwl.understand-unity-catalog.badge

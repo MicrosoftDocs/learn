@@ -26,3 +26,6 @@ Thumbs.db
 *.iws
 *.ipr
 *.ids
+
+# Copilot instructions (local only)
+copilot-instructions.md
