@@ -1,5 +1,7 @@
 Microsoft Outlook includes Copilot Chat, an AI assistant that helps you quickly understand and act on your emails. You can use it to summarize long email threads, highlight key decisions, and identify action items—so you spend less time scrolling and more time getting work done.
 
+>[![A screenshot of the Copilot Chat sidebar in Microsoft Outlook.](../media/sidebar-inline.png)](../media/sidebar-expanded.png)
+
 ## Copilot Chat in Outlook can:
 
 - Summarize long email threads
