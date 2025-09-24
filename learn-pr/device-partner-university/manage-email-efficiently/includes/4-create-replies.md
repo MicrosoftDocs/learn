@@ -18,7 +18,7 @@ When you use Copilot Chat to draft a reply:
 
 - **Use the draft as a starting point**: Copilot speeds up drafting, but you have full control over the final message.
 
-[![A screenshot of a Copilot Chat draft reply in Microsoft Outlook showing suggested edits to adjust the message tone and content.](manage-email-efficiently/media/adjust-inline.png)](manage-email-efficiently/media/adjust-expanded.png")
+[![A screenshot of a Copilot Chat draft reply in Microsoft Outlook showing suggested edits to adjust the message tone and content.](../media/adjust-inline.png)](../media/adjust-expanded.png")
 
 > [!TIP]
 > Heading out on vacation or have an appointment where you won't be available?

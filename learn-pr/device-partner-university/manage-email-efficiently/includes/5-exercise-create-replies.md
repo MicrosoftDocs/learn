@@ -18,7 +18,7 @@ Responding to emails quickly and professionally is essential for keeping project
 
 6. Send the email when you're satisfied with the content.
 
-[![A screenshot of a Copilot Chat drafted reply in Microsoft Outlook, showing the generated message ready for review.](manage-email-efficiently/media/reply-inline.png)](manage-email-efficiently/media/reply-expanded.png")
+[![A screenshot of a Copilot Chat drafted reply in Microsoft Outlook, showing the generated message ready for review.](../media/reply-inline.png)](../media/reply-expanded.png")
 
 > [!TIP]
 >
