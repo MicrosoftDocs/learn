@@ -26,7 +26,7 @@ When you store your presentation in OneDrive or SharePoint, you:
 
 ## Share your presentation with others
 
-:::image type="content" border="true" source="../media/powerpoint-illustration-2.png" alt-text="An illustration showing PowerPoint interface showing a sharing dialog for “Presentation.pptx,” with options to email the file or copy a link. Slide thumbnails are visible in the background":::
+:::image type="content" border="true" source="../media/powerpoint-illustration-2.png" alt-text="An illustration of a PowerPoint slide showing an event schedule with a comment tagging Elvia. The schedule includes sessions on design technology, Q&A, and an art camp.":::
 
 Once your file is in the cloud, sharing is simple:  
 
