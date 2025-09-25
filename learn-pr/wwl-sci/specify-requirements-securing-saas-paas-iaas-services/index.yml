@@ -2,8 +2,8 @@
 uid: learn.wwl.specify-requirements-secure-saas-paas-iaas-services
 metadata:
   title: Specify requirements for securing SaaS, PaaS, and IaaS services
-  description: "You learn how to analyze security requirements for different cloud offerings (SaaS, PaaS, and IaaS), IoT workloads, web workloads and containers."
-  ms.date: 09/09/2024
+  description: "You learn how to analyze security requirements for different cloud offerings (SaaS, PaaS, and IaaS), IoT workloads, web workloads, and containers."
+  ms.date: 09/25/2025
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
@@ -11,9 +11,9 @@ metadata:
   ai-usage: ai-assisted
 title: Specify requirements for securing SaaS, PaaS, and IaaS services
 summary: |
-  You learn how to analyze security requirements for different cloud offerings (SaaS, PaaS, and IaaS), IoT workloads, web workloads and containers.
+  You learn how to analyze security requirements for different cloud offerings (SaaS, PaaS, and IaaS), IoT workloads, web workloads, and containers.
 abstract: |
-  By the end of this module, you are able to:
+  By the end of this module, you're able to:
     - Specify security baselines for SaaS, PaaS, and IaaS services
     - Specify security requirements for IoT workloads
     - Specify security requirements for web workloads
