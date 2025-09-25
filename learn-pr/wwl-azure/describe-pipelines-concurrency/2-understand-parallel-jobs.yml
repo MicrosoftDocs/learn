@@ -2,14 +2,14 @@
 uid: learn.wwl.describe-pipelines-concurrency.understand-parallel-jobs
 title: Understand parallel jobs
 metadata:
-  title: Understand parallel jobs
-  description: "Understand parallel jobs"
-  ms.date: 05/23/2024
-  author: wwlpublish
+  title: Understand Parallel Jobs
+  description: "Learn how parallel jobs work in Azure Pipelines and how they enable concurrent execution of multiple pipeline tasks."
+  ms.date: 09/25/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-understand-parallel-jobs.md)]
+  [!include[](includes/2-understand-parallel-jobs.md)]

@@ -1,31 +1,32 @@
-## How a parallel job is consumed by a build or release
-
-Consider an organization that has only one Microsoft-hosted parallel job.
-
-This job allows users in that organization to collectively run only one build or release job at a time.
-
-When more jobs are triggered, they're queued and will wait for the previous job to finish.
+Parallel jobs represent the number of jobs your organization can run simultaneously. If you have one parallel job, only one pipeline job runs at a time. Additional jobs wait in a queue until the running job finishes.
 
 :::image type="content" source="../media/parallel-job-consumption-8af32918.png" alt-text="Screenshot of Parallel job consumption.":::
 
+## How parallel jobs work
 
-A release consumes a parallel job only when it's being actively deployed to a stage.
+When you run a pipeline:
+- Each job consumes one parallel job slot
+- Jobs run on available agents (Microsoft-hosted or self-hosted)
+- If no parallel jobs are available, new jobs wait in queue
+- Jobs release their slot when they complete
 
-While the release is waiting for approval or manual intervention, it doesn't consume a parallel job.
+## Parallel job consumption example
 
-## A simple example of parallel jobs
+Here's how parallel jobs work in practice:
 
- -  FabrikamFiber CI Build 102 (main branch) starts first.
- -  Deployment of FabrikamFiber Release 11 is triggered by the completion of FabrikamFiber CI Build 102.
- -  FabrikamFiber CI Build 101 (feature branch) is triggered. The build can't start yet because Release 11's deployment is active. So, the build stays queued.
- -  Release 11 waits for approvals. Fabrikam CI Build 101 starts because a release waiting for approvals doesn't consume a parallel job.
- -  Release 11 is approved. It resumes only after Fabrikam CI Build 101 is completed.
+1. **Build starts**: FabrikamFiber CI Build 102 (main branch) begins - uses 1 parallel job
+2. **Release triggered**: FabrikamFiber Release 11 starts deployment - uses 1 parallel job  
+3. **Build queued**: FabrikamFiber CI Build 101 (feature branch) waits because no parallel jobs available
+4. **Waiting for approval**: Release 11 pauses for approval - releases parallel job, Build 101 starts
+5. **Release approved**: Release 11 waits for Build 101 to finish before resuming
 
-## Relationship between jobs and parallel jobs
+## Key concepts
 
-The term job can refer to multiple concepts, and its meaning depends on the context:
+**Pipeline jobs vs parallel jobs**:
+- **Pipeline jobs**: Individual work units within your pipeline (build, test, deploy)
+- **Parallel jobs**: Capacity to run pipeline jobs simultaneously across your organization
 
- -  When you define a build or release, you can define it as a collection of jobs. When a build or release runs, you can run multiple jobs as part of that build or release.
- -  Each job consumes a parallel job that runs on an agent. When there aren't enough parallel jobs available for your organization, then the jobs are queued up and run one after the other.
-
-You don't consume any parallel jobs when you run a server job or deploy to a deployment group.
+**Jobs that don't use parallel jobs**:
+- Server jobs (jobs without agents)
+- Deployment group jobs
+- Jobs waiting for manual approval

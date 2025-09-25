@@ -1,16 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-pipelines-concurrency
 metadata:
-  title: Describe pipelines and concurrency
-  description: "Describe pipelines and concurrency"
-  ms.date: 05/23/2024
-  author: wwlpublish
+  title: Describe Pipelines And Concurrency
+  description: "Learn about Azure Pipelines parallel jobs, concurrency management, Visual Designer, and YAML pipeline configurations for efficient CI/CD workflows."
+  ms.date: 09/25/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.custom:
   - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Describe pipelines and concurrency
 summary: This module describes parallel jobs and how to estimate their usage. Also, it presents Azure Pipelines for open-source projects, explores Visual Designer and YAML pipelines.
 abstract: |
@@ -29,12 +29,16 @@ levels:
 - advanced
 roles:
 - administrator
+- ai-engineer
+- data-engineer
 - developer
 - devops-engineer
+- platform-engineer
 - security-engineer
 - security-operations-analyst
 - service-adoption-specialist
 - solution-architect
+- startup-founder
 - technology-manager
 products:
 - azure
@@ -59,4 +63,4 @@ units:
 - learn.wwl.describe-pipelines-concurrency.knowledge-check
 - learn.wwl.describe-pipelines-concurrency.summary
 badge:
-  uid: learn.wwl.describe-pipelines-concurrency.badge
+  uid: learn.wwl.describe-pipelines-concurrency.badge
