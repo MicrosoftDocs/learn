@@ -1,3 +1,12 @@
+Creating a Space is simple but powerful—once named and configured, it becomes a reusable workspace where Copilot operates within a clearly defined scope. In this unit, you’ll walk through how to create your first Space, decide on ownership and visibility, and populate it with meaningful context. You'll also explore different ways of adding files, issues, and free-text notes to support precise, grounded interactions.
+
+In this unit, you’ll learn:
+- How to create a Space and name it clearly for discoverability
+- The difference between personal and organization-owned Spaces
+- How to add and structure context through attachments and instructions
+- Why organization and clarity improve Copilot’s responses
+
+
 ## Creating a space
 
 1. To create a space, go to <https://github.com/copilot/spaces>, and click Create space.

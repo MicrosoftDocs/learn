@@ -1,3 +1,12 @@
+To ensure your Space delivers lasting value, it must be easy to find, securely shared, and well-maintained. This unit focuses on how to manage visibility, follow GitHub permissions, and keep content fresh as your codebase evolves. You'll also learn lightweight governance strategies—from assigning ownership and adding usage guidance to setting up a review cadence—to ensure your Space remains accurate, discoverable, and aligned with team needs.
+
+In this unit, you’ll learn:
+- How to manage visibility and sharing within your organization
+- How GitHub permissions secure and govern access to linked content
+- Why naming conventions and descriptions boost discoverability
+- Best practices for Space ownership, freshness, and review cycles
+
+
 ## Visibility and sharing
 
 Successful Spaces are easy to find, safe to share, and clearly "owned." When you create a Space, set visibility according to how broadly you intend others to use it. Depending on your environment, options may include keeping it under your personal ownership or making it visible to your organization.

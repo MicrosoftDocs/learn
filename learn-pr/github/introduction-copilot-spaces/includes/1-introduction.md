@@ -1,15 +1,23 @@
-In this unit, we will cover:
+GitHub Copilot Spaces provides a new way to work with AI by anchoring its responses in a carefully curated context. Unlike general Copilot Chat, which surfaces broad suggestions, a Space allows you to focus the model on specific files, issues, pull requests, and tailored instructions. This unit introduces what a Space is, how it works, and why narrowing the context leads to more consistent, reproducible answers. You'll also learn how to set effective context using attachments and free-text instructions, and when it's best to use Spaces over general chat.
 
-- What is a GitHub Copilot Space?
-- When to use Spaces
+In this unit, you’ll learn:
+- What GitHub Copilot Spaces are and how they differ from general Copilot Chat 
+- Why tightly scoped context improves answer quality and consistency
+- How to attach files, issues, and instructions to guide the model
+- When to create a Space for repeatable, domain-specific tasks
 
-## Let's start with what is a GitHub Copilot Space?
 
-It's a dedicated Copilot chat grounded in a curated set of context you choose. The Space is itself like an LLM and you can feed it GitHub files, issues, pull requests, and your own free‑text instructions to provide context to your specific topic.
+## What is a GitHub Copilot Space?
 
-:::image type="content" source="../media/copilot-chat.png" alt-text="Screenshot shows a dedicated Copilot chat grounded in a curated set of context you choose." lightbox="../media/copilot-chat.png":::
+:::image type="content" source="../media/copilot-space.png" alt-text="Screenshot shows what an example spaces page looks like for a travel app." lightbox="../media/copilot-space.png":::
+
+It’s a dedicated Copilot chat grounded in a curated set of context you choose. The Space is itself like a LLM and you can feed it GitHub files, issues, pull requests, and your own free‑text instructions to provide context to your specific topic. 
+
+
 
 ## Setting Context for Copilot Spaces
+
+:::image type="content" source="../media/copilot-chat.png" alt-text="Screenshot shows a dedicated Copilot chat grounded in a curated set of context you choose." lightbox="../media/copilot-chat.png":::
 
 The effectiveness of a Copilot Space depends on the context you provide. You can attach specific files (such as scripts, configuration, or documentation), relevant issues or pull requests, and tailored instructions. By curating this input, you help Copilot focus on the information that matters most for your scenario. The context order matters: leading with the most critical files or instructions helps drive more accurate and relevant responses.
 
@@ -22,6 +30,8 @@ The effectiveness of a Copilot Space depends on the context you provide. You can
 - If allowed by your workspace settings, you may also upload files directly (such as images or datasets) from your local machine for non-repo context.
 
 **Adding Instructions:**
+
+:::image type="content" source="../media/adding-instructions.png" alt-text="Screenshot shows instructions icon and options to add instructions to spaces." lightbox="../media/adding-instructions.png":::
 
 - Use the "Instructions" section to provide specific guidance to Copilot. This can include goals ("Summarize the onboarding process"), style preferences ("Write in a formal tone"), or canonical examples ("Sample output should look like…").
 - Keep instructions brief, focused, and actionable. If your Space serves a workflow or troubleshooting guide, include step-by-step tasks or sample prompts.
