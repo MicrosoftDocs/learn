@@ -1,7 +1,7 @@
 GitHub Copilot Spaces provides a new way to work with AI by anchoring its responses in a carefully curated context. Unlike general Copilot Chat, which surfaces broad suggestions, a Space allows you to focus the model on specific files, issues, pull requests, and tailored instructions. This unit introduces what a Space is, how it works, and why narrowing the context leads to more consistent, reproducible answers. You'll also learn how to set effective context using attachments and free-text instructions, and when it's best to use Spaces over general chat.
 
 In this unit, you’ll learn:
-- What GitHub Copilot Spaces are and how they differ from general Copilot Chat
+- What GitHub Copilot Spaces are and how they differ from general Copilot Chat 
 - Why tightly scoped context improves answer quality and consistency
 - How to attach files, issues, and instructions to guide the model
 - When to create a Space for repeatable, domain-specific tasks
