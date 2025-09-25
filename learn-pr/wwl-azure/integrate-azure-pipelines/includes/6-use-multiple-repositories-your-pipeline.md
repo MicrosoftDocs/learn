@@ -14,11 +14,11 @@ Repositories can be specified as a repository resource or in line with the check
 
 The following combinations of checkout steps are supported.
 
- -  If there are no **checkout** steps, the default behavior is checkout: self is the first step.
- -  If there's a single **checkout: none** step, no repositories are synced or checked out.
- -  If there's a single **checkout: self** step, the current repository is checked out.
- -  If there's a single **checkout** step that isn't **self** or **none**, that repository is checked out instead of self.
- -  If there are multiple **checkout** steps, each named repository is checked out to a folder named after the repository. Unless a different path is specified in the checkout step, use **checkout: self** as one of the **checkout** steps.
+- If there are no **checkout** steps, the default behavior is checkout: self is the first step.
+- If there's a single **checkout: none** step, no repositories are synced or checked out.
+- If there's a single **checkout: self** step, the current repository is checked out.
+- If there's a single **checkout** step that isn't **self** or **none**, that repository is checked out instead of self.
+- If there are multiple **checkout** steps, each named repository is checked out to a folder named after the repository. Unless a different path is specified in the checkout step, use **checkout: self** as one of the **checkout** steps.
 
 ## Repository resource - How to do it?
 
@@ -104,9 +104,9 @@ Azure Pipelines must be granted access to your repositories to trigger their bui
 
 There are three authentication types for granting Azure Pipelines access to your GitHub repositories while creating a pipeline.
 
- -  GitHub App.
- -  OAuth.
- -  Personal access token (PAT).
+- GitHub App.
+- OAuth.
+- Personal access token (PAT).
 
 You can create a continuous integration (CI) trigger to run a pipeline whenever you push an update to the specified branches or push selected tags.
 
@@ -126,7 +126,7 @@ You can configure complex triggers that use **exclude** or **batch**.
 trigger:
     branches:
         include:
-            - master
+            - main
             - releases/*
         exclude:
             - releases/old*
@@ -149,4 +149,4 @@ You can specify the full name of the branch or a wildcard.
 
 For more information and guidance about GitHub integration, see:
 
- -  [Build GitHub repositories](/azure/devops/pipelines/repos/github).
+- [Build GitHub repositories](/azure/devops/pipelines/repos/github).
