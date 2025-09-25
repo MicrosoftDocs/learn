@@ -3,19 +3,19 @@ uid: learn.dpu.collaborate-on-presentations-using-powerpoint
 title: Collaborate on presentations using PowerPoint
 metadata:
   title: Collaborate On Presentations Using PowerPoint
-  description: In this module, you’ll learn how to collaborate in PowerPoint by sharing files, co-authoring slides in real time, and using comments to organize and resolve feedback
+  description: In this module, you learn how to collaborate in PowerPoint by sharing files, coauthoring slides in real time, and using comments to organize and resolve feedback
   ms.date: 09/25/2025
   author: hhreyes21
   ms.author: v-homerreyes
   ms.topic: module
   ms.service: microsoft-365-business
 summary: >
-  Learn how to collaborate effectively in Microsoft PowerPoint by sharing presentations through OneDrive or SharePoint, co-authoring slides in real time, and using comments to provide and resolve feedback. This module helps teams streamline their workflow, reduce version confusion, and deliver polished presentations together.
+  Learn how to collaborate effectively in Microsoft PowerPoint by sharing presentations through OneDrive or SharePoint, coauthoring slides in real time, and using comments to provide and resolve feedback. This module helps teams streamline their workflow, reduce version confusion, and deliver polished presentations together.
 abstract: |
- By the end of this module, you'll be able to:
+ By the end of this module, you're able to:
 
  - Share a PowerPoint presentation for collaboration  
- - Co-author slides with others in real time  
+ - Coauthor slides with others in real time  
  - Use comments and track changes to review feedback
 prerequisites: |
   - None

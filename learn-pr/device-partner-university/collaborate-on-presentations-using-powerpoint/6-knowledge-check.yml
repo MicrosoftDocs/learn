@@ -14,7 +14,7 @@ quiz:
   questions:
   - content: "What is the first step to enable collaboration in PowerPoint?"
     choices:
-        - content: "Click the Share button"
+        - content: "Select the Share button"
           isCorrect: false
           explanation: "Incorrect. Sharing comes after saving to the cloud."
         - content: "Invite collaborators"
@@ -70,10 +70,10 @@ quiz:
           explanation: "Incorrect. It initiates sharing, not live activity."
   - content: "What happens when you resolve a comment in PowerPoint?"
     choices:
-        - content: "It is deleted permanently"
+        - content: "It's deleted permanently"
           isCorrect: false
-          explanation: "Incorrect. Resolved comments are not deleted."
-        - content: "It is emailed to all collaborators"
+          explanation: "Incorrect. Resolved comments aren't deleted."
+        - content: "It's emailed to all collaborators"
           isCorrect: false
           explanation: "Incorrect. Comments stay within the file."
         - content: "It remains visible and can be reopened"
@@ -81,4 +81,4 @@ quiz:
           explanation: "Correct. This maintains a clear record."
         - content: "It locks the slide from further edits"
           isCorrect: false
-          explanation: "Incorrect. Resolving comments does not affect editing."
+          explanation: "Incorrect. Resolving comments doesn't affect editing."
