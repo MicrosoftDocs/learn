@@ -10,6 +10,9 @@ Let's examine how to implement application security groups by creating a configu
 
 :::image type="content" source="../media/application-security-groups.png" alt-text="Diagram that shows how application security groups combine with network security groups to protect applications." border="false":::
 
+> [!NOTE]
+> In the diagram, the application servers are handing SQL Server requests.  
+
 #### Scenario requirements
 
 Here are the scenario requirements for our example configuration:
