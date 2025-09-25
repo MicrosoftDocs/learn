@@ -50,15 +50,15 @@ Monitor and restrict VM direct internet connectivity. Attackers constantly scan 
 
 One of the five essential characteristics of cloud computing is broad network access, which makes network-centric thinking less relevant. The goal of much of cloud computing is to allow users to access resources regardless of location. For most users, their location is going to be somewhere on the Internet.
 
-The following figure shows how the security perimeter has evolved from a network perimeter to an identity perimeter. Security becomes less about defending your network and more about defending your data, as well as managing the security of your apps and users. The key difference is that you want to push security closer to what's important to your company.
+The following figure shows how the security perimeter has evolved from a network perimeter to an identity perimeter. Security becomes less about defending your network and more about defending your data, as well as managing the security of your apps and users. The key difference is that you want to push security closer to what's important to your company. Treat identity as the primary security perimeter
 
 ![Diagram showing identity as the new security perimeter.](../media/identity-perimeter.png)
 
 Initially, Azure PaaS services (for example, web roles and Azure SQL) provided little or no traditional network perimeter defenses. It was understood that the element's purpose was to be exposed to the Internet (web role) and that authentication provides the new perimeter (for example, BLOB or Azure SQL).
 
-Modern security practices assume that the adversary has breached the network perimeter. Therefore, modern defense practices have moved to identity. Organizations must establish an identity-based security perimeter with strong authentication and authorization hygiene (best practices).
+Modern security practices assume that the adversary has breached the network perimeter. Therefore, modern defense practices have moved to identity. Organizations must establish an identity-based security perimeter with strong authentication and authorization hygiene (best practices).  This includes requiring Microsoft Entra Conditional Access for administrative and sensitive workloads, enforcing multifactor authentication and passwordless methods for high-privilege roles, and enabling Privileged Identity Management (PIM) to reduce standing privileges.
 
-Principles and patterns for the network perimeter have been available for decades. In contrast, the industry has relatively less experience with using identity as the primary security perimeter. With that said, we have accumulated enough experience to provide some general recommendations that are proven in the field and apply to almost all PaaS services.
+Other general, security recommendations that are proven in the field and apply to almost all PaaS services are described in the sections that follow.
 
 ### Develop on Azure App Service
 
