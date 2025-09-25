@@ -1,22 +1,17 @@
-In Azure DevOps, there are four types of jobs available:
-
- -  Agent pool jobs.
- -  Container jobs.
- -  Deployment group jobs.
- -  Agentless jobs.
+Azure DevOps supports four types of jobs to handle different execution scenarios:
 
 ## Agent pool jobs
 
-The most common types of jobs. The jobs run on an agent that is part of an agent pool.
+The most common type of job. These jobs run on an agent that's part of an agent pool. Use these for standard build and deployment tasks that require an execution environment.
 
 ## Container jobs
 
-Similar jobs to Agent Pool Jobs run in a container on an agent part of an agent pool.
+Similar to agent pool jobs but run inside a container on an agent. This provides consistency and isolation by packaging your job environment with all its dependencies.
 
 ## Deployment group jobs
 
-Jobs that run on systems in a deployment group.
+Jobs that run on systems in a deployment group. These are useful when you need to deploy to multiple target machines simultaneously, such as web servers in a farm.
 
 ## Agentless jobs
 
-Jobs that run directly on the Azure DevOps. They don't require an agent for execution. It's also-often-called Server Jobs.
+Jobs that run directly on Azure DevOps servers without requiring an agent. Also called server jobs, these are useful for tasks like approvals, REST API calls, or Azure Function executions that don't need a build environment.

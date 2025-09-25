@@ -1,16 +1,17 @@
-This module explores the differences between Microsoft-hosted and self-hosted agents, detail job types, and introduces agent pool configuration. Understand typical situations to use agent pools and how to manage their security.
+This module explores the differences between Microsoft-hosted and self-hosted agents, details job types, and introduces agent pool configuration. You'll understand typical situations to use agent pools and how to manage their security.
 
 ## Learning objectives
 
-After completing this module, students and professionals can:
+After completing this module, you'll be able to:
 
- -  Choose between Microsoft-hosted and self-hosted agents.
- -  Install and configure Azure Pipelines Agents.
- -  Configure agent pools.
- -  Make the agents and pools secure.
+- Choose between Microsoft-hosted and self-hosted agents.
+- Install and configure Azure Pipelines agents.
+- Configure agent pools.
+- Secure agents and pools.
+- Explore communication for deploying with Azure Pipelines.
 
 ## Prerequisites
 
- -  Understanding of what DevOps is and its concepts.
- -  Familiarity with version control principles is helpful but isn't necessary.
- -  Beneficial to have experience in an organization that delivers software.
+- Understanding of DevOps concepts.
+- Familiarity with version control principles (helpful but not required).
+- Experience working in an organization that delivers software (beneficial).

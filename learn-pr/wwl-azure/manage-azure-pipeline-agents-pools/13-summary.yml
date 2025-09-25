@@ -3,13 +3,13 @@ uid: learn.wwl.manage-azure-pipeline-agents-pools.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary"
-  ms.date: 05/07/2024
-  author: wwlpublish
+  description: "Review key concepts and takeaways for managing Azure Pipeline agents and pools in your DevOps workflows."
+  ms.date: 09/25/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/13-summary.md)]
+  [!include[](includes/13-summary.md)]
