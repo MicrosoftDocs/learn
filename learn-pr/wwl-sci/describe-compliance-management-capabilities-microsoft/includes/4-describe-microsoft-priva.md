@@ -32,8 +32,8 @@ In accordance with certain privacy regulations around the world, individuals (or
 
 Microsoft Priva can help you handle these inquiries through the Subject Rights Requests solution, which can address subject rights request for data within your organization's Microsoft 365 environment. The solution provides automation, insights, and workflows to help organizations fulfill requests more confidently and efficiently.
 
-### Priva portal (preview)
+### Priva portal
 
-The Priva portal has a unified experience that streamlines navigation for all Priva solutions and provides a single-entry point for settings, search, and roles and permissions management.
+The Priva portal has a unified experience that streamlines navigation for all Priva solutions.
 
 
