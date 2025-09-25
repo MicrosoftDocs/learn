@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.collaborate-on-presentations-using-powerpoint.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Collaborate on presentations using PowerPoint" module.
+  ms.date: 09/25/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the first step to enable collaboration in PowerPoint?"
+    choices:
+        - content: "Click the Share button"
+          isCorrect: false
+          explanation: "Incorrect. Sharing comes after saving to the cloud."
+        - content: "Invite collaborators"
+          isCorrect: false
+          explanation: "Incorrect. You must first save the file to the cloud."
+        - content: "Save the file to OneDrive or SharePoint"
+          isCorrect: true
+          explanation: "Correct. This enables real-time collaboration."
+        - content: "Set permissions"
+          isCorrect: false
+          explanation: "Incorrect. Permissions are set after the file is shared."
+  - content: "What does PowerPoint’s version history feature allow you to do?"
+    choices:
+        - content: "Add comments to slides"
+          isCorrect: false
+          explanation: "Incorrect. This is done using the commenting tool."
+        - content: "Tag teammates with @mentions"
+          isCorrect: false
+          explanation: "Incorrect. This is part of the comments feature."
+        - content: "View who is editing in real time"
+          isCorrect: false
+          explanation: "Incorrect. Presence indicators show this."
+        - content: "Restore earlier versions of the presentation"
+          isCorrect: true
+          explanation: "Correct. Version history allows this."
+  - content: "What is the purpose of @mentions in PowerPoint comments?"
+    choices:
+        - content: "Highlight slide changes"
+          isCorrect: false
+          explanation: "Incorrect. Comments clarify feedback, not highlight changes."
+        - content: "Assign tasks to specific collaborators"
+          isCorrect: true
+          explanation: "Correct. @mentions notify and assign tasks."
+        - content: "Resolve comments automatically"
+          isCorrect: false
+          explanation: "Incorrect. Resolution must be done manually."
+        - content: "Save the presentation to the cloud"
+          isCorrect: false
+          explanation: "Incorrect. This is unrelated to @mentions."
+  - content: "Which feature shows who is currently editing a shared PowerPoint file?"
+    choices:
+        - content: "Comment threads"
+          isCorrect: false
+          explanation: "Incorrect. These show feedback discussions."
+        - content: "Version history"
+          isCorrect: false
+          explanation: "Incorrect. This tracks past changes, not current activity."
+        - content: "Presence indicators"
+          isCorrect: true
+          explanation: "Correct. They show who is viewing or editing."
+        - content: "Share button"
+          isCorrect: false
+          explanation: "Incorrect. It initiates sharing, not live activity."
+  - content: "What happens when you resolve a comment in PowerPoint?"
+    choices:
+        - content: "It is deleted permanently"
+          isCorrect: false
+          explanation: "Incorrect. Resolved comments are not deleted."
+        - content: "It is emailed to all collaborators"
+          isCorrect: false
+          explanation: "Incorrect. Comments stay within the file."
+        - content: "It remains visible and can be reopened"
+          isCorrect: true
+          explanation: "Correct. This maintains a clear record."
+        - content: "It locks the slide from further edits"
+          isCorrect: false
+          explanation: "Incorrect. Resolving comments does not affect editing."

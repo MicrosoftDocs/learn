@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.dpu.collaborate-on-presentations-using-powerpoint
+title: Collaborate on presentations using PowerPoint
+metadata:
+  title: Collaborate On Presentations Using PowerPoint
+  description: In this module, you’ll learn how to collaborate in PowerPoint by sharing files, co-authoring slides in real time, and using comments to organize and resolve feedback
+  ms.date: 09/25/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module
+  ms.service: microsoft-365-business
+summary: >
+  Learn how to collaborate effectively in Microsoft PowerPoint by sharing presentations through OneDrive or SharePoint, co-authoring slides in real time, and using comments to provide and resolve feedback. This module helps teams streamline their workflow, reduce version confusion, and deliver polished presentations together.
+abstract: |
+ By the end of this module, you'll be able to:
+
+ - Share a PowerPoint presentation for collaboration  
+ - Co-author slides with others in real time  
+ - Use comments and track changes to review feedback
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - m365-business
+units:
+  - learn.dpu.collaborate-on-presentations-using-powerpoint.introduction
+  - learn.dpu.collaborate-on-presentations-using-powerpoint.share-your-presentation-for-collaboration
+  - learn.dpu.collaborate-on-presentations-using-powerpoint.exercise-share-a-presentation-and-track-changes
+  - learn.dpu.collaborate-on-presentations-using-powerpoint.review-and-provide-feedback-with-comments
+  - learn.dpu.collaborate-on-presentations-using-powerpoint.exercise-add-comments-and-resolve-feedback
+  - learn.dpu.collaborate-on-presentations-using-powerpoint.knowledge-check
+  - learn.dpu.collaborate-on-presentations-using-powerpoint.summary
+badge:
+  uid: learn.dpu.collaborate-on-presentations-using-powerpoint.badge
