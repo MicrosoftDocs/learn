@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.github.github-copilot-code-agent
+title: Accelerate development with GitHub Copilot coding agent
+metadata:
+  title: Accelerate development with GitHub Copilot coding agent
+  description: This module introduces GitHub Copilot coding agent, showing how it automates routine tasks, manages pull requests, and integrates into your development workflow.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 09/22/2025
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: This module explains how to use Copilot coding agent to assign tasks, streamline development, and combine automation with your team's expertise for faster, higher-quality outcomes.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain what the Copilot coding agent is, how it differs from IDE assistants, and how to enable and budget for it.
+  - Describe the agent's built-in protections, main risks, mitigations, and its workflow and compatibility limits.
+  - Assign issues to Copilot, track its pull-request sessions, iterate with @copilot comments, and troubleshoot problems.
+  - Preconfigure the agent's environment, extend its capabilities with MCP, and test and validate its output before merging.
+  - Apply responsible-use practices, scope tasks effectively, secure environments, and improve performance.
+
+prerequisites: |
+  - GitHub account with Copilot Pro, Copilot Pro+, Copilot Business, or Copilot Enterprise
+  - Repositories hosted on GitHub (agent does not work on non-GitHub hosts)
+  - Basic familiarity with issues, pull requests, Actions, and repository rulesets
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+units:
+  - learn.github.github-copilot-code-agent.understand-enable-github-copilot-code-agent
+  - learn.github.github-copilot-code-agent.security-risks-limitations-copilot-code-agent
+  - learn.github.github-copilot-code-agent.assign-track-troubleshoot-copilot-code-agent-tasks
+  - learn.github.github-copilot-code-agent.customize-extend-validate-copilot-code-agent
+  - learn.github.github-copilot-code-agent.responsible-use-github-copilot-code-agent-github
+  - learn.github.github-copilot-code-agent.exercise-expand-team-copilot-code-agent
+  - learn.github.github-copilot-code-agent.summary
+badge:
+  uid: learn.github.github-copilot-code-agent.badge
