@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.github.copilot-spaces
-title: Introductions to Copilot Spaces
+title: Introduction to Copilot Spaces
 metadata:
-  title: Introductions to Copilot Spaces
+  title: Introduction to Copilot Spaces
   description: Learn how to use GitHub Copilot Spaces to get context-aware, reliable answers, configure custom instructions, and optimize interactions for repositories, issues, and pull requests.
   author: camihmerhar
   ms.author: camhernandez
