@@ -228,6 +228,11 @@
         "redirect_document_id": false
       },
       {
+        "source_path_from_root": "/learn-pr/wwl-sci/implement-access-management-for-azure-resources/9-explore-entra-permissions-management-cloudknox.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/implement-access-management-for-azure-resources/1-introduction/",
+        "redirect_document_id": false
+      },
+      {
         "source_path_from_root": "/learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft-365/4-describe-compliance-score.md",
         "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/4-describe-compliance-manager/",
         "redirect_document_id": false

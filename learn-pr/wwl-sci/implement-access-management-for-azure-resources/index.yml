@@ -17,7 +17,7 @@ metadata:
 title: Implement access management for Azure resources
 summary: Explore how to use built-in Azure roles, managed identities, and RBAC-policy to control access to Azure resources. Identity is the key to secure solutions.
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you'll be able to:
 
   -   Configure and use Azure roles within Microsoft Entra ID
 
@@ -51,7 +51,6 @@ units:
 - learn.wwl.implement-access-management-for-azure-resources.analyze-azure-role-permissions
 - learn.wwl.implement-access-management-for-azure-resources.configure-azure-key-vault-rbac-policies
 - learn.wwl.implement-access-management-for-azure-resources.retrieve-objects-from-azure-key-vault
-- learn.wwl.implement-access-management-for-azure-resources.explore-entra-permissions-management-cloudknox
 - learn.wwl.implement-access-management-for-azure-resources.knowledge-check
 - learn.wwl.implement-access-management-for-azure-resources.summary-resources
 badge:
