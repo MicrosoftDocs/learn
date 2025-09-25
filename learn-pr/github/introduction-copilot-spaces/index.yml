@@ -35,6 +35,7 @@ units:
   - learn.github.copilot-spaces.create-first-space
   - learn.github.copilot-spaces.share-discover-govern
   - learn.github.copilot-spaces.working-in-space
+  - learn.github.copilot-spaces.skills-exercise
   - learn.github.copilot-spaces.knowledge-check
   - learn.github.copilot-spaces.summary
 badge:
