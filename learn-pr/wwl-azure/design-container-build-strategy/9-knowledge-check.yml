@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/13/2025
+  ms.date: 09/26/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
@@ -25,7 +25,7 @@ quiz:
           explanation: "Incorrect. It's docker pull. You retrieve the image, likely from a container registry."
         - content: "Docker pull."
           isCorrect: true
-          explanation: "Correct. It's docker pull. You retrieve the image, likely from a container registry."
+          explanation: "Correct. Docker pull downloads images from container registries to the local Docker daemon."
         - content: "Docker build."
           isCorrect: false
           explanation: "Incorrect. It's docker pull. You retrieve the image, likely from a container registry."
@@ -39,12 +39,12 @@ quiz:
           explanation: "Incorrect. Azure provides a wide range of services that help you to work with containers such as Azure App Service and Azure Container Instances."
         - content: "Azure Virtual Machine Scale Sets."
           isCorrect: true
-          explanation: "Correct. Azure provides a wide range of services that help you to work with containers such as Azure App Service and Azure Container Instances."
+          explanation: "Correct. VM Scale Sets manage virtual machines, not containers. Azure container services include ACI, AKS, Container Apps, and App Service."
     - content: "Which of the following choices creates an instance of the image?"
       choices:
         - content: "Docker run."
           isCorrect: true
-          explanation: "Correct. It's docker run. You execute the container. An instance is created of the image."
+          explanation: "Correct. Docker run creates and starts a new container instance from an image."
         - content: "Docker build."
           isCorrect: false
           explanation: "Incorrect. It's docker run. You execute the container. An instance is created of the image."

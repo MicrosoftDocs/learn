@@ -1,6 +1,6 @@
-Dockerfiles are text files that contain the commands needed by **docker build** to assemble an image.
+Dockerfiles are text-based instruction files that define how to build container images. They contain a series of commands that Docker executes sequentially to create layered images.
 
-Here's an example of a basic Dockerfile:
+Example Dockerfile structure:
 
 ```
 FROM ubuntu
@@ -11,26 +11,22 @@ echo $HOME'
 CMD ["echo", "Hello World from within the container"]
 ```
 
-The first line refers to the parent image based on which this new image will be based.
+## Key Dockerfile Instructions
 
-Generally, all images will be based on another existing image. In this case, the Ubuntu image would be retrieved from either a local cache or from DockerHub.
+**FROM** - Specifies the base image for the new container image. Most images inherit from existing base images; use `FROM scratch` for base images without parents.
 
-An image that doesn't have a parent is called a **base** image. In that rare case, the FROM line can be omitted, or **FROM scratch** can be used instead.
+**LABEL** - Adds metadata to images, including maintainer information. This instruction replaced the deprecated MAINTAINER command.
 
-The second line indicates the email address of the person who maintains this file. Previously, there was a MAINTAINER command, but that has been deprecated and replaced by a label.
+**ADD** - Copies files, directories, or URLs from the build context into the image filesystem. Can extract compressed archives automatically.
 
-The third line adds a file to the root folder of the image. It can also add an executable.
-
-The fourth and fifth lines are part of a RUN command. Note the use of the backslash to continue the fourth line onto the fifth line for readability. It's equivalent to having written it instead:
+**RUN** - Executes commands during image build time to install packages, create directories, or configure the environment. Use backslashes for multi-line commands:
 
 ```
 RUN /bin/bash -c 'source $HOME/.bashrc; echo $HOME'
 
 ```
 
-The RUN command is run when the docker build creates the image. It's used to configure items within the image.
-
-By comparison, the last line represents a command that will be executed when a new container is created from the image; it's run after container creation.
+**CMD** - Defines the default command executed when starting a container from the image. Unlike RUN commands that execute during build time, CMD executes at container runtime.
 
 For more information, you can see:
 
