@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dpu.work-smarter-excel
+title: Work smarter in Excel with Copilot Chat
+metadata:
+  title: Work Smarter In Excel With Copilot Chat
+  description: Learn how business professionals can use Copilot Chat in Excel to generate formulas, analyze data, and create visualizations efficiently.
+  ms.date: 09/26/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: microsoft-365-business
+summary: >
+  In this module, you’ll learn how to use Copilot Chat in Microsoft Excel to quickly generate formulas, summarize data, and create visualizations. You’ll explore real-world scenarios to work more efficiently and produce accurate insights.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Generate formulas that calculate results quickly and accurately.
+  - Summarize data and create visualizations that highlight key insights.
+  - Automate routine Excel tasks to save time and reduce errors.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/"C:\Github\learn-pr\learn-pr\achievements\work-smarter-excel.svg".svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - m365-business
+units:
+  - learn.dpu.work-smarter-excel.introduction
+  - learn.dpu.work-smarter-excel.formulas
+  - learn.dpu.work-smarter-excel.exercise-generate-formulas
+  - learn.dpu.work-smarter-excel.data
+  - learn.dpu.work-smarter-excel.exercise-visualize-data
+  - learn.dpu.work-smarter-excel.knowledge-check
+  - learn.dpu.work-smarter-excel.summary
+badge:
+  uid: learn.dpu.work-smarter-excel.badge
