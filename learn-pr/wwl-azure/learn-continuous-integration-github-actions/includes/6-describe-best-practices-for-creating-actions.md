@@ -182,14 +182,6 @@ This action implements security best practices:
 - Minimal base image recommendations
 - Security report generation
 
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
-
-## License
-
-This action is licensed under the MIT License - see [LICENSE](LICENSE) file.
-
 ````
 
 ## Version management and release strategy
