@@ -1,47 +1,51 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-implement-ci-azure-pipelines-github-actions
 metadata:
-  title: 'AZ-400: Implement CI with Azure Pipelines and GitHub Actions'
-  description: 'AZ-400: Implement CI with Azure Pipelines and GitHub Actions'
-  ms.date: 05/06/2024
-  author: wwlpublish
+  title: "AZ-400: Implement CI with Azure Pipelines and GitHub Actions"
+  description: "AZ-400: Implement CI with Azure Pipelines and GitHub Actions"
+  ms.date: 09/29/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: learning-path
-title: 'AZ-400: Implement CI with Azure Pipelines and GitHub Actions'
+title: "AZ-400: Implement CI with Azure Pipelines and GitHub Actions"
 prerequisites: |
   None
 summary: |
-  This learning path introduces the continuous integration concept using Azure Pipelines and GitHub Actions and provides instruction on configuring those services and building applications.
+  Learn continuous integration fundamentals with Azure Pipelines and GitHub Actions. Develop expertise in pipeline configuration, agent management, and container build strategies for modern DevOps workflows.
 iconUrl: /learn/achievements/az-400-implement-ci-with-azure-pipelines-and-github-actions.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 modules:
-- learn.wwl.explore-azure-pipelines
-- learn.wwl.manage-azure-pipeline-agents-pools
-- learn.wwl.describe-pipelines-concurrency
-- learn.wwl.implement-pipeline-strategy
-- learn.wwl.integrate-azure-pipelines
-- learn.wwl.introduction-to-github-actions
-- learn.wwl.learn-continuous-integration-github-actions
-- learn.wwl.design-container-build-strategy
+  - learn.wwl.explore-azure-pipelines
+  - learn.wwl.manage-azure-pipeline-agents-pools
+  - learn.wwl.describe-pipelines-concurrency
+  - learn.wwl.implement-pipeline-strategy
+  - learn.wwl.integrate-azure-pipelines
+  - learn.wwl.introduction-to-github-actions
+  - learn.wwl.learn-continuous-integration-github-actions
+  - learn.wwl.design-container-build-strategy
 trophy:
   uid: learn.wwl.az-400-implement-ci-azure-pipelines-github-actions.trophy
