@@ -20,9 +20,9 @@ It's not limited to the software environment; you're likely to come across issue
 
 A container consists of an entire runtime environment:
 
- -  An application, plus all its dependencies.
- -  Libraries and other binaries.
- -  Configuration files needed to run it, bundled into one package.
+- An application, plus all its dependencies.
+- Libraries and other binaries.
+- Configuration files needed to run it, bundled into one package.
 
 You can resolve it by containerizing the application platform and its dependencies. Also, differences in OS distributions and underlying infrastructure are abstracted.
 
@@ -30,11 +30,11 @@ You can resolve it by containerizing the application platform and its dependenci
 
 Containers and VMs are similar in their goals: to isolate an application and its dependencies into a self-contained unit that can run anywhere. They remove the need for physical hardware, allowing for:
 
- -  More efficient use of computing resources.
- -  Energy consumption.
- -  Cost-effectiveness.
+- More efficient use of computing resources.
+- Energy consumption.
+- Cost-effectiveness.
 
-The main difference between containers and VMs is in their architectural approach. Let's take a closer look.
+The main difference between containers and VMs is in their architectural approach. Here's a detailed comparison.
 
 ### Virtual Machines
 
@@ -43,7 +43,6 @@ A VM is essentially an emulation of a real computer that executes programs like 
 As you can see in the diagram, VMs package up the virtual hardware, a kernel (OS), and user space for each new VM.
 
 :::image type="content" source="../media/virtual-machine-hypervisor-architecture-1a5d17c1.png" alt-text="Diagram that shows a VM Hypervisor architecture.":::
-
 
 ### Container
 

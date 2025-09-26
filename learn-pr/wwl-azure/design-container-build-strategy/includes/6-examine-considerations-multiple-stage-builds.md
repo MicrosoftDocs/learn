@@ -1,31 +1,25 @@
-## Adopt container modularity
+## Container Design Principles
 
-Try to avoid creating overly complex container images that couple together several applications.
+**Single Responsibility**: Design containers with single-purpose applications to maximize reusability and maintainability.
 
-Instead, use multiple containers and try to keep each container to a single purpose.
+**Service Separation**: Deploy application tiers (web servers, databases, caches) in separate containers to enable independent scaling and updates.
 
-The website and the database for a web application should likely be in separate containers.
+**Horizontal Scaling**: Separate containers enable selective scaling of application components based on demand patterns.
 
-There are always exceptions to any rule but breaking up application components into separate containers increases the chances of reusing containers.
+## Image Optimization
 
-It also makes it more likely that you could scale the application.
+**Minimal Dependencies**: Include only verified required packages to reduce image size, attack surface, and build times.
 
-For example, in the web application mentioned, you might want to add replicas of the website container but not for the database container.
+**Lean Base Images**: Select minimal base images like Alpine Linux or distroless images when appropriate for your application runtime.
 
-## Avoid unnecessary packages
+## Base Image Selection
 
-To help minimize image sizes, it's also essential to avoid including packages that you suspect might be needed but aren't yet sure if they're required.
+Choose base images that match your application requirements without excess components. Consider official images, security update frequency, and size optimization for production deployments.
 
-Only include them when they're required.
+## Data Management
 
-## Choose an appropriate base
+**External Storage**: Use Docker volumes or bind mounts for persistent data to maintain container immutability and enable data persistence beyond container lifecycle.
 
-While optimizing the contents of your Dockerfiles is essential, it's also crucial to choose the appropriate parent (base) image. Start with an image that only contains packages that are required.
-
-## Avoid including application data
-
-While application data can be stored in the container, it will make your images more prominent.
-
-It would be best to consider using **docker volume** support to maintain the isolation of your application and its data. Volumes are persistent storage mechanisms that exist outside the lifespan of a container.
+**Stateless Design**: Design containers as stateless when possible, storing state in external databases or storage services.
 
 For more information, see [Use multiple-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/).

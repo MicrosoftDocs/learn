@@ -1,13 +1,11 @@
 ## Container Lifecycle
 
-The standard steps when working with containers are:
+The standard Docker workflow involves these core operations:
 
-**Docker build** \- You create an image by executing a Dockerfile.
+**Docker build** - Creates an image by executing a Dockerfile that defines the container configuration and dependencies.
 
-**Docker pull** \- You retrieve the image, likely from a container registry.
+**Docker pull** - Downloads images from container registries like Docker Hub or Azure Container Registry.
 
-**Docker run** \- You execute the container. An instance is created of the image.
+**Docker run** - Instantiates and executes a container from an image, creating a running instance.
 
-You can often execute the docker run without needing first to do the docker pull.
-
-In that case, Docker will pull the image and then run it. Next time, it won't need to pull it again.
+When executing `docker run`, Docker automatically pulls missing images from the registry before starting the container, eliminating the need for explicit pull commands in most scenarios.
