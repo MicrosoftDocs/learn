@@ -10,7 +10,7 @@ There's also a use case for not checking out any repository in the pipeline. It 
 
 ## Specify multiple repositories
 
-Repositories can be specified as a repository resource or in line with the checkout step. Supported repositories are Azure Repos Git, GitHub, and BitBucket Cloud.
+Repositories can be specified as a repository resource or in line with the checkout step. Supported repositories are Azure Repos Git, GitHub, and Azure DevOps repositories from other projects or organizations.
 
 The following combinations of checkout steps are supported.
 
@@ -39,10 +39,10 @@ resources:
     endpoint: MyGitHubServiceConnection
     name: MyGitHubOrgOrUser/MyGitHubRepo
 
-  - repository: MyBitBucketRepo
-    type: bitbucket
-    endpoint: MyBitBucketServiceConnection
-    name: MyBitBucketOrgOrUser/MyBitBucketRepo
+  - repository: MyExternalAzureRepo
+    type: git
+    endpoint: MyExternalAzureDevOpsServiceConnection
+    name: ExternalProject/SharedUtilities
 
   - repository: MyAzureReposGitRepository
     type: git
@@ -59,7 +59,7 @@ steps:
 
 - checkout: self
 - checkout: MyGitHubRepo
-- checkout: MyBitBucketRepo
+- checkout: MyExternalAzureRepo
 - checkout: MyAzureReposGitRepository
 
 
@@ -67,7 +67,7 @@ steps:
 
 ```
 
-If the self-repository is named CurrentRepo, the script command produces the following output: CurrentRepo MyAzureReposGitRepo MyBitBucketRepo MyGitHubRepo.
+If the self-repository is named CurrentRepo, the script command produces the following output: CurrentRepo MyAzureReposGitRepo MyExternalAzureRepo MyGitHubRepo.
 
 In this example, the repositories' names are used for the folders because no path is specified in the checkout step.
 
