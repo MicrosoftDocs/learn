@@ -39,4 +39,5 @@ The Azure Pipelines Visual Designer (also called "Classic Pipelines") provides a
 - Want quick pipeline setup
 - Need simple, straightforward workflows
 
-**Note**: Microsoft recommends YAML pipelines for new projects due to version control benefits and modern DevOps practices. However, Visual Designer remains valuable for learning and simpler scenarios.
+>[!Note]
+> Microsoft recommends YAML pipelines for new projects due to version control benefits and modern DevOps practices. However, Visual Designer remains valuable for learning and simpler scenarios.

@@ -20,9 +20,9 @@ When queues become too long, consider purchasing additional parallel jobs.
 
 To view your parallel job limits and usage:
 
-1. Navigate to **Organization settings** > **Pipelines** > **Parallel jobs**
-2. Or visit: `https://{your_organization}/_settings/buildqueue?_a=concurrentJobs`
-3. Select **View in-progress jobs** to see active and queued jobs
+1. Navigate to **Organization settings** > **Pipelines** > **Parallel jobs**.
+2. Or visit: `https://{your_organization}/_settings/buildqueue?_a=concurrentJobs`.
+3. Select **View in-progress jobs** to see active and queued jobs.
 
 :::image type="content" source="../media/parallel-jobs-organization-settings-679bb5c6.png" alt-text="Screenshot of parallel jobs in organization settings.":::
 

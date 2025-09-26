@@ -33,8 +33,8 @@ This transparency helps community members:
 
 You automatically qualify for free Azure Pipelines parallel jobs for public projects when:
 
-1. Your pipeline runs in an Azure DevOps public project
-2. Your pipeline builds a public repository (GitHub or Azure DevOps)
+- Your pipeline runs in an Azure DevOps public project
+- Your pipeline builds a public repository (GitHub or Azure DevOps)
 
 **Free tier includes**:
 
