@@ -2,9 +2,6 @@ Developers often face many challenging tasks and decisions when building apps fo
 
 The [Azure Developer CLI](/azure/developer/azure-developer-cli/overview) (`azd`) reduces and streamlines these responsibilities to help the developer on their journey from a local development environment to an application successfully deployed on Azure. The tool is designed around a powerful template system that can automate provisioning cloud infrastructure and deploying application code. In the units ahead, you'll learn how to build a new `azd` template from scratch that accomplishes these goals.
 
-> [!NOTE]
-> Before working through this module, it's recommended that you have basic working knowledge of the Azure Developer CLI or have completed the [Introduction to Azure Developer CLI](/training/modules/introduction-to-azure-developer-cli/) training module.
-
 ## Example scenario
 
 Suppose you work at a startup company that is building a new cloud native e-commerce platform. The app requires a front-end shopping UI and various backend services to process orders. You plan to host the app using Azure services such as App Service, Storage, NoSQL databases and more. As your team grows and experiments with different cloud architectures, you'd like to solve the following project challenges:
@@ -27,7 +24,6 @@ In this module, you will:
 ## Prerequisites
 
 - [Installed the Azure Developer CLI](/azure/developer/azure-developer-cli/install-azd?tabs=winget-windows%2Cbrew-mac%2Cscript-linux&pivots=os-windows) locally
-- Completed the [Introduction to Azure Developer CLI](/training/modules/introduction-to-azure-developer-cli/) training module
 - Basic knowledge of software development workflows, such as packaging, provisioning, and deploying resources
 
 ## What is the main goal?

@@ -58627,6 +58627,46 @@
       "source_path": "learn-pr/azure/publish-azure-web-app-with-visual-studio/index.yml",
       "redirect_url": "https://learn.microsoft.com/visualstudio/debugger/remote-debugging-azure-app-service",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/2-what-is-azure-developer-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/2-what-is-azure-developer-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/3-how-azure-developer-cli-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/4-when-to-use-azure-developer-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
     }
   ]
 }
