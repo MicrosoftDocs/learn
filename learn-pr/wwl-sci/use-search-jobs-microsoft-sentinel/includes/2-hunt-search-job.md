@@ -42,7 +42,7 @@ Go to Microsoft Sentinel in the Azure portal, or in the Microsoft Defender porta
 
    ### [Defender portal](#tab/defender-portal)
 
-   :::image type="content" source="../media/search-job-defender-portal.png" alt-text="Screenshot of search page with search criteria of administrator, time range last 90 days, and table selected." lightbox="../media/search-jobs/search-job-defender-portal.png":::
+   :::image type="content" source="../media/search-job-defender-portal.png" alt-text="Screenshot of search page with search criteria of administrator, time range last 90 days, and table selected." lightbox="../media/search-job-defender-portal.png":::
 
    ### [Azure portal](#tab/azure-portal)
 
@@ -92,7 +92,7 @@ View the status and results of your search job by going to the **Saved Searches*
 
 1. This takes you to the Advanced Hunting page with the KQL query prepopulated.
 
-   :::image type="content" source="../media/search-results-hunting-page.png" alt-text="Screenshot that shows search results displayed in the Advanced Hunting page." lightbox="../media/search-jobs/search-results-hunting-page.png":::
+   :::image type="content" source="../media/search-results-hunting-page.png" alt-text="Screenshot that shows search results displayed in the Advanced Hunting page." lightbox="../media/search-results-hunting-page.png":::
 
 1. Select **Run query** to see all the results that match your original search criteria.
 

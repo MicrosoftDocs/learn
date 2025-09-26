@@ -33,7 +33,7 @@ Restore archived data directly from search or from a saved search.
 
    - Select **Saved searches**, locate the search results you want to restore, and then select **Restore**. If you have multiple tables, select the one you want to restore and then select **Actions > Restore** in the side pane. For example:
 
-      :::image type="content" source="../media/restore-defender-saved.png" alt-text="Screenshot of restoring a specific site search.":::
+      :::image type="content" source="../media/restore-defender-saved.png" alt-text="Screenshot of restoring a saved search in the Defender portal.":::
 
 1. Wait for the log data to be restored. View the status of your restoration job by selecting on the **Restoration** tab.
 
