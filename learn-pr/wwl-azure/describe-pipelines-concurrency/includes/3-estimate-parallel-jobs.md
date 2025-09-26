@@ -12,7 +12,7 @@ When queues become too long, consider purchasing additional parallel jobs.
 **Detailed analysis** - You may need more parallel jobs if you have:
 
 - **Multiple teams**: Each team doing continuous integration may need dedicated capacity
-- **Multiple branches**: Active branches with CI triggers require separate job slots  
+- **Multiple branches**: Active branches with CI triggers require separate job slots
 - **Multiple applications**: Simultaneous deployments across different applications
 - **Complex workflows**: Pipelines with multiple stages running in parallel
 
@@ -31,6 +31,7 @@ To view your parallel job limits and usage:
 **Organization-level resource**: Parallel jobs belong to your entire organization, not individual projects.
 
 **Shared capacity**: All projects compete for the same parallel job pool. For example:
+
 - Organization has 2 parallel jobs
 - Project A starts 2 pipelines (uses both slots)
 - Project B's pipeline waits until Project A's jobs complete

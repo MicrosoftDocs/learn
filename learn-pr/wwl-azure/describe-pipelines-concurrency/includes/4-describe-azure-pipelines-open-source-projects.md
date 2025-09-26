@@ -3,12 +3,14 @@ Azure DevOps provides powerful DevOps capabilities including source control, pla
 ## Public vs private projects
 
 **Public projects** allow anonymous users to:
-- View source code, commits, branches, and pull requests  
+
+- View source code, commits, branches, and pull requests
 - Browse work items and project dashboards
 - Access project wikis
 - Search code and work items (read-only access)
 
 **Private projects** require:
+
 - User authentication and project access permissions
 - Signed-in users to access any services
 
@@ -21,8 +23,9 @@ Public projects are ideal for open-source development. Consider this scenario:
 **With public projects**: Anyone can view build results, understand failures, and contribute fixes through pull requests.
 
 This transparency helps community members:
+
 - Debug build issues
-- Contribute improvements  
+- Contribute improvements
 - Understand project health
 - Learn from CI/CD practices
 
@@ -34,6 +37,7 @@ You automatically qualify for free Azure Pipelines parallel jobs for public proj
 2. Your pipeline builds a public repository (GitHub or Azure DevOps)
 
 **Free tier includes**:
+
 - **Public projects**: 10 parallel jobs for Microsoft-hosted agents (unlimited minutes)
 - **Private projects**: 1 parallel job (60 minutes max, 1,800 minutes/month)
 

@@ -3,16 +3,19 @@ You've explored key concepts for managing Azure Pipelines concurrency and pipeli
 ## Key takeaways
 
 **Parallel job management**:
+
 - Understand how parallel jobs limit concurrent pipeline execution
 - Estimate parallel job needs based on team size and workflow complexity
 - Monitor usage to optimize costs and performance
 
 **Project accessibility**:
+
 - Leverage public projects for open-source development with free parallel jobs
 - Configure private projects with appropriate access controls
 - Choose the right project type for your collaboration needs
 
 **Pipeline creation approaches**:
+
 - Use Visual Designer for quick setup and learning
 - Adopt YAML pipelines for version-controlled, scalable CI/CD
 - Enable continuous integration with automated build validation
