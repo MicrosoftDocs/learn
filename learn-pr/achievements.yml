@@ -7055,3 +7055,13 @@ achievements:
   title: Publish a web app to Azure with Visual Studio
   summary: Use the publishing features of Visual Studio 2022 to deploy and manage an ASP.NET Core web application hosted on Azure.
   iconUrl: /training/achievements/publish-azure-web-app-with-visual-studio.svg
+- uid: learn.azure-developer-cli.trophy
+  type: trophy
+  title: Build and deploy applications with the Azure Developer CLI
+  summary: The Azure Developer CLI (azd) is an open-source tool that accelerates the time it takes for you to get your application from a local development environment to Azure. Explore how to use the Azure Developer CLI and its template system to build, configure and deploy applications.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.deploy-configure-azure-developer-cli-templates.badge
+  type: badge
+  title: Deploy and configure Azure Developer CLI templates
+  summary: In this module, you'll learn how to deploy, configure, and perform common tasks with Azure Developer CLI templates.
+  iconUrl: /training/achievements/generic-badge.svg
