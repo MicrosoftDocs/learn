@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-pipeline-agents-pools
 metadata:
-  title: Manage Azure Pipeline agents And pools
+  title: Manage Azure Pipeline agents and pools
   description: "Learn to configure and manage Azure Pipeline agents and pools, including Microsoft-hosted and self-hosted options, security considerations, and deployment strategies."
   ms.date: 09/26/2025
   author: LuizMacedo
