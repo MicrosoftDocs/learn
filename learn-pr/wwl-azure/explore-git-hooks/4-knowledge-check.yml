@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/08/2024
-  author: wwlpublish
+  ms.date: 09/26/2024
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
@@ -49,4 +49,4 @@ quiz:
       explanation: "Incorrect. For example, you could have a hook into the commit-msg event to validate that the commit message structure follows the recommended format, or it's associated with a work item."
     - content: "Msg-commit."
       isCorrect: false
-      explanation: "Incorrect. For example, you could have a hook into the commit-msg event to validate that the commit message structure follows the recommended format, or it's associated with a work item."
+      explanation: "Incorrect. For example, you could have a hook into the commit-msg event to validate that the commit message structure follows the recommended format, or it's associated with a work item."

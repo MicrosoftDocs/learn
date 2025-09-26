@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-pipelines
 metadata:
   title: Explore Azure Pipelines
   description: "Learn how Azure Pipelines helps you automate building, testing, and deploying your applications."
-  ms.date: 09/11/2025
+  ms.date: 09/26/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module

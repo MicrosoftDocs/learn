@@ -4,7 +4,7 @@ title: Understand Azure Pipelines Key Terms
 metadata:
   title: Understand Azure Pipelines Key Terms
   description: "Learn essential Azure Pipelines terminology including pipelines, stages, jobs, tasks, and agents."
-  ms.date: 09/11/2025
+  ms.date: 09/26/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
