@@ -2,61 +2,65 @@
 uid: learn.wwl.introduction-to-github-actions
 metadata:
   title: Introduction to GitHub Actions
-  description: "Introduction to GitHub Actions"
-  ms.date: 05/08/2024
-  author: wwlpublish
+  description: "Learn GitHub Actions fundamentals including workflows, events, jobs, and runners to automate your development processes"
+  ms.date: 09/26/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
-  ms.custom:
-  - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Introduction to GitHub Actions
-summary: In this module, you learn what GitHub Actions, action flow, and its elements are. Understand what events are, explore jobs and runners, and how to read console output from actions.
+summary: Learn GitHub Actions fundamentals including workflows, events, jobs, and runners. Discover how to automate your development processes and read console output from actions.
 abstract: |
-  By the end of this module, you're able to:
+  By the end of this module, you'll be able to:
 
-  -   Explain GitHub Actions and workflows
+  -   Understand GitHub Actions and workflows
 
-  -   Create and work with GitHub Actions and Workflows
+  -   Create and work with GitHub Actions and workflows
 
-  -   Describe Events, Jobs and Runners
+  -   Work with events, jobs, and runners
 
-  -   Examine output and release management for actions
+  -   Read output and manage releases for actions
 prerequisites: None
 iconUrl: /training/achievements/7-introduction-to-github-actions.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
+subjects:
+  - devops
 units:
-- learn.wwl.introduction-to-github-actions.introduction
-- learn.wwl.introduction-to-github-actions.what-are-actions
-- learn.wwl.introduction-to-github-actions.explore-actions-flow
-- learn.wwl.introduction-to-github-actions.understand-workflows
-- learn.wwl.introduction-to-github-actions.describe-standard-workflow-syntax-elements
-- learn.wwl.introduction-to-github-actions.explore-events
-- learn.wwl.introduction-to-github-actions.explore-jobs
-- learn.wwl.introduction-to-github-actions.explore-runners
-- learn.wwl.introduction-to-github-actions.examine-release-test-action
-- learn.wwl.introduction-to-github-actions.knowledge-check
-- learn.wwl.introduction-to-github-actions.summary
+  - learn.wwl.introduction-to-github-actions.introduction
+  - learn.wwl.introduction-to-github-actions.what-are-actions
+  - learn.wwl.introduction-to-github-actions.explore-actions-flow
+  - learn.wwl.introduction-to-github-actions.understand-workflows
+  - learn.wwl.introduction-to-github-actions.describe-standard-workflow-syntax-elements
+  - learn.wwl.introduction-to-github-actions.explore-events
+  - learn.wwl.introduction-to-github-actions.explore-jobs
+  - learn.wwl.introduction-to-github-actions.explore-runners
+  - learn.wwl.introduction-to-github-actions.examine-release-test-action
+  - learn.wwl.introduction-to-github-actions.knowledge-check
+  - learn.wwl.introduction-to-github-actions.summary
 badge:
-  uid: learn.wwl.introduction-to-github-actions.badge
+  uid: learn.wwl.introduction-to-github-actions.badge
