@@ -58627,6 +58627,56 @@
       "source_path": "learn-pr/azure/publish-azure-web-app-with-visual-studio/index.yml",
       "redirect_url": "https://learn.microsoft.com/visualstudio/debugger/remote-debugging-azure-app-service",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-azd-template/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-azd-template/2-create-template-structure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-azd-template/3-add-source-code.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-azd-template/4-create-infrastructure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-azd-template/5-update-azure-file.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-azd-template/6-provision-deploy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-azd-template/7-configure-cicd.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-azd-template/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-azd-template/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-first-azd-template/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
     }
   ]
 }
