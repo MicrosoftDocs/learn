@@ -58639,11 +58639,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/2-what-is-azure-developer-cli.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/3-how-azure-developer-cli-works.yml",
       "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
       "redirect_document_id": false
