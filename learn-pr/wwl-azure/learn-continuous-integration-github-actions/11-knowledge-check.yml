@@ -3,8 +3,8 @@ uid: learn.wwl.learn-continuous-integration-github-actions.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: "Knowledge check"
-  ms.date: 06/23/2025
+  description: "Test your understanding of continuous integration concepts and GitHub Actions implementation."
+  ms.date: 09/26/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
@@ -15,36 +15,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following choices is where the database passwords that are needed in a CI pipeline should be stored?"
-    choices:
-    - content: "Repo."
-      isCorrect: false
-      explanation: "Incorrect. Secrets are similar to environment variables but encrypted."
-    - content: "action.yml."
-      isCorrect: false
-      explanation: "Incorrect. Secrets are similar to environment variables but encrypted."
-    - content: "Encrypted Secrets."
-      isCorrect: true
-      explanation: "Correct. Secrets are similar to environment variables but encrypted."
-  - content: "Which of the following files is the metadata for an action held?"
-    choices:
-    - content: "workflow.yml."
-      isCorrect: false
-      explanation: "Incorrect. Add details action.yml metadata. At the root of your action, you'll have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
-    - content: "action.yml."
-      isCorrect: true
-      explanation: "Correct. Add details action.yml metadata. At the root of your action, you'll have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
-    - content: "meta.yml."
-      isCorrect: false
-      explanation: "Incorrect. Add details action.yml metadata. At the root of your action, you'll have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
-  - content: "Which of the following choices is how can the status of a workflow be shown in a repository?"
-    choices:
-    - content: "Using Badges."
-      isCorrect: true
-      explanation: "Correct. Badges can be used to show the status of a workflow within a repository."
-    - content: "Status Files."
-      isCorrect: false
-      explanation: "Incorrect. Badges can be used to show the status of a workflow within a repository."
-    - content: "Conversation Tab."
-      isCorrect: false
-      explanation: "Incorrect. Badges can be used to show the status of a workflow within a repository."
+    - content: "Which of the following choices is where the database passwords that are needed in a CI pipeline should be stored?"
+      choices:
+        - content: "Repo."
+          isCorrect: false
+          explanation: "Incorrect. Secrets are similar to environment variables but encrypted."
+        - content: "action.yml."
+          isCorrect: false
+          explanation: "Incorrect. Secrets are similar to environment variables but encrypted."
+        - content: "Encrypted Secrets."
+          isCorrect: true
+          explanation: "Correct. Secrets are similar to environment variables but encrypted."
+    - content: "Which of the following files is the metadata for an action held?"
+      choices:
+        - content: "workflow.yml."
+          isCorrect: false
+          explanation: "Incorrect. Add details action.yml metadata. At the root of your action, you'll have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
+        - content: "action.yml."
+          isCorrect: true
+          explanation: "Correct. Add details action.yml metadata. At the root of your action, you'll have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
+        - content: "meta.yml."
+          isCorrect: false
+          explanation: "Incorrect. Add details action.yml metadata. At the root of your action, you'll have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
+    - content: "Which of the following choices is how can the status of a workflow be shown in a repository?"
+      choices:
+        - content: "Using Badges."
+          isCorrect: true
+          explanation: "Correct. Badges can be used to show the status of a workflow within a repository."
+        - content: "Status Files."
+          isCorrect: false
+          explanation: "Incorrect. Badges can be used to show the status of a workflow within a repository."
+        - content: "Conversation Tab."
+          isCorrect: false
+          explanation: "Incorrect. Badges can be used to show the status of a workflow within a repository."

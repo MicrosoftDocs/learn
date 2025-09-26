@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.learn-continuous-integration-github-actions.mark-releases-git-tags
-title: Mark releases with Git tags
+title: Mark Releases With Git Tags
 metadata:
-  title: Mark releases with Git tags
-  description: "Mark releases with Git tags"
-  ms.date: 06/23/2025
+  title: Mark Releases With Git Tags
+  description: "Learn how to use Git tags to mark releases and automate version management in your CI/CD workflows."
+  ms.date: 09/26/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
