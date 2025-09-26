@@ -12,7 +12,7 @@ In this exercise, you’ll practice using PowerPoint’s commenting tools to lea
    1. Type your feedback in the comment box.  
    1. Alternatively, right-click on the slide element and choose **New Comment** from the context menu.
     
-   :::image type="content" border="true" source="../media/new-comment.png" alt-text="Screenshot showing the location of the New comment button in Microsoft Powerpoint" lightbox="../media/new-comment-expanded.png":::  
+   :::image type="content" border="true" source="../media/new-comment.png" alt-text="Screenshot showing the location of the New comment button in Microsoft Powerpoint." lightbox="../media/new-comment-expanded.png":::  
 
    > [!NOTE]  
    > Comments are attached to specific elements, making it easy to identify what the feedback refers to.
@@ -31,7 +31,7 @@ In this exercise, you’ll practice using PowerPoint’s commenting tools to lea
    1. Once the issue is addressed, click **Resolve** to close the comment.  
    1. If further discussion is needed, reopen the comment by selecting **Reopen**.
 
-   :::image type="content" border="true" source="../media/resolve-comments.png" alt-text="Screenshot showing the location of the Resolved comment button in Microsoft Powerpoint" lightbox="../media/resolve-comments-expanded.png"::: 
+   :::image type="content" border="true" source="../media/resolve-comments.png" alt-text="Screenshot showing the location of the Resolved comment button in Microsoft Powerpoint." lightbox="../media/resolve-comments-expanded.png"::: 
 
    > [!NOTE]  
    > Resolved comments remain visible and can be reopened at any time to maintain a clear record of decisions.

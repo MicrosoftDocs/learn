@@ -12,7 +12,7 @@ Collaborating on a PowerPoint presentation is most effective when everyone can a
 2. Click the Share button. 
    1. In the top-right corner of PowerPoint, select the **Share** button.  
 
-   :::image type="content" border="true" source="../media/share-button.png" alt-text="Screenshot showing the location of the Share button in Microsoft Powerpoint" lightbox="../media/share-button-expanded.png":::
+   :::image type="content" border="true" source="../media/share-button.png" alt-text="Screenshot showing the location of the Share button in Microsoft Powerpoint." lightbox="../media/share-button-expanded.png":::
 
 3. Invite collaborators and set permissions.  
    1. Enter the email addresses of your teammates or generate a sharing link.
@@ -40,7 +40,7 @@ Collaborating on a PowerPoint presentation is most effective when everyone can a
    1. Select **Version History** from the dropdown menu.
    1. Browse previous versions, compare changes, or restore an earlier version if needed.
 
- :::image type="content" border="true" source="../media/version-history.png" alt-text="Screenshot showing the location of the Verison History in Microsoft Powerpoint" lightbox="../media/version-history-expanded.png":::  
+ :::image type="content" border="true" source="../media/version-history.png" alt-text="Screenshot showing the location of the Version History in Microsoft Powerpoint." lightbox="../media/version-history-expanded.png":::  
 
    > [!IMPORTANT]  
    > Version history helps you recover from mistakes or unwanted changes, giving you confidence to collaborate freely.  
