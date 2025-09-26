@@ -4,7 +4,7 @@ title: Understand the Pipeline Structure
 metadata:
   title: Understand the Pipeline Structure
   description: "Learn how to organize pipeline components effectively using stages, jobs, and dependencies to create maintainable and scalable CI/CD workflows."
-  ms.date: 09/25/2025
+  ms.date: 09/26/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

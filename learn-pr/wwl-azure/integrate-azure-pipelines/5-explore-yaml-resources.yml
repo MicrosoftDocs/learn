@@ -4,7 +4,7 @@ title: Explore YAML Resources
 metadata:
   title: Explore YAML Resources
   description: "Learn how to define and use YAML resources in Azure Pipelines to manage external dependencies, repositories, and shared components efficiently."
-  ms.date: 09/25/2025
+  ms.date: 09/26/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

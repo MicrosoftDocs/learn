@@ -3,7 +3,7 @@ uid: learn.wwl.integrate-azure-pipelines
 metadata:
   title: Integrate with Azure Pipelines
   description: "Learn Azure Pipelines integration by exploring advanced pipeline anatomy, structure, templates, YAML resources, and multi-repository workflows for comprehensive CI/CD solutions."
-  ms.date: 09/25/2025
+  ms.date: 09/26/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module
