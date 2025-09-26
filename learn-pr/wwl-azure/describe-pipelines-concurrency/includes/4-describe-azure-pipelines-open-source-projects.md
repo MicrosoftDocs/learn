@@ -1,72 +1,52 @@
-Azure DevOps offers developers a suite of DevOps capabilities, including Source control, Agile planning, Build, Release, Test, and more.
+Azure DevOps provides powerful DevOps capabilities including source control, planning, builds, releases, and testing. While these features typically require user authentication, public projects enable broader community collaboration.
 
-But to use Azure DevOps features requires the user to first sign in using a Microsoft or GitHub Account.
+## Public vs private projects
 
-However, this blocks many engaging scenarios where you want to publicly share your code and artifacts or provide a wiki library or build status page for unauthenticated users.
+**Public projects** allow anonymous users to:
 
-With public projects, users can mark an Azure DevOps Team Project as public.
+- View source code, commits, branches, and pull requests
+- Browse work items and project dashboards
+- Access project wikis
+- Search code and work items (read-only access)
 
-This will enable anonymous users to view the contents of that project in a read-only state enabling collaboration with anonymous (unauthenticated) users that wasn't possible before.
+**Private projects** require:
 
-Anonymous users will essentially see the same views as authenticated users, with non-public functionality such as settings or actions (such as queue build) hidden or disabled.
+- User authentication and project access permissions
+- Signed-in users to access any services
 
-## Public versus private projects
+## Open-source benefits
 
-Projects in Azure DevOps provide a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions.
+Public projects are ideal for open-source development. Consider this scenario:
 
-One or more projects can be defined within an organization in Azure DevOps.
+**Before public projects**: A popular open-source library has build badges in their README, but clicking them shows "access denied" unless you're a project maintainer.
 
-Users that aren't signed into the service have read-only access to public projects on Azure DevOps.
+**With public projects**: Anyone can view build results, understand failures, and contribute fixes through pull requests.
 
-Private projects require users to be granted access to the project and signed in to access the services.
+This transparency helps community members:
 
-## Supported services
+- Debug build issues
+- Contribute improvements
+- Understand project health
+- Learn from CI/CD practices
 
-Non-members of a public project will have read-only access to a limited set of services, precisely:
+## Free tier eligibility for public projects
 
- -  Browse the code base, download code, view commits, branches, and pull requests.
- -  View and filter work items.
- -  View a project page or dashboard.
- -  View the project Wiki.
- -  Do a semantic search of the code or work items.
+You automatically qualify for free Azure Pipelines parallel jobs for public projects when:
 
-For more information, see [Differences and limitations for non-members of a public project](/azure/devops/organizations/public/feature-differences).
+- Your pipeline runs in an Azure DevOps public project
+- Your pipeline builds a public repository (GitHub or Azure DevOps)
 
-## A practical example: .NET Core CLI
+**Free tier includes**:
 
-Supporting open-source development is one of the most compelling scenarios for public projects. A good example is the .NET Core CLI.
+- **Public projects**: 10 parallel jobs for Microsoft-hosted agents (unlimited minutes)
+- **Private projects**: 1 parallel job (60 minutes max, 1,800 minutes/month)
 
-Their source is hosted on GitHub, and they use Azure DevOps for their CI builds.
+## Common questions
 
-However, if you click on the build badges in their readme, you'll not see the build results unless you were one of the project's maintainers.
+**User limits**: Azure Pipelines has no per-user charges. Unlimited users can create builds and releases with basic or stakeholder access.
 
-Since this is an open-source project, everybody should view the full results to see why a build failed and maybe even send a pull request to help fix it.
+**Pipeline limits**: Create unlimited build and release pipelines at no cost. Register unlimited self-hosted agents for free.
 
-Thanks to public projects capabilities, the team will enable just that experience. Everyone in the community will have access to the same build results, whether they are a maintainer on the project.
+**Visual Studio Enterprise**: Subscribers get one additional self-hosted parallel job per organization.
 
-## How do I qualify for the free tier of Azure Pipelines for public projects?
-
-Microsoft will automatically apply the free tier limits for public projects if you meet both conditions:
-
- -  Your pipeline is part of an Azure Pipelines public project.
- -  Your pipeline builds a public repository from GitHub or the same public project in your Azure DevOps organization.
-
-## Are there limits on who can use Azure Pipelines?
-
-You can have as many users as you want when you're using Azure Pipelines. There's no per-user charge for using Azure Pipelines.
-
-Users with both basic and stakeholder access can author as many builds and releases as they want.
-
-## Are there any limits on the number of builds and release pipelines that I can create?
-
-No. You can create hundreds or even thousands of definitions for no charge. You can register any number of self-hosted agents for no cost.
-
-## As a Visual Studio Enterprise subscriber, do I get more parallel jobs for Azure Pipelines?
-
-Yes. Visual Studio Enterprise subscribers get one self-hosted parallel job in each Azure DevOps Services organization where they're a member.
-
-## When you're using the per-minute plan, you can run only one job at a time.
-
-If you run builds for more than 14 paid hours in a month, the per-minute plan might be less cost-effective than the parallel jobs model.
-
-See [Azure DevOps Services Pricing \| Microsoft Azure](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) for current pricing.
+**Pricing**: For current pricing and detailed comparisons, visit [Azure DevOps Services Pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).

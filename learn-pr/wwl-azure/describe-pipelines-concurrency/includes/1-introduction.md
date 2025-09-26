@@ -1,16 +1,17 @@
-This module describes parallel jobs and how to estimate their usage. Also, it presents Azure DevOps for open-source projects, explores Visual Designer and YAML pipelines.
+This module explores Azure Pipelines concurrency and parallel jobs. You'll learn how to manage pipeline resources, estimate parallel job needs, and choose between Visual Designer and YAML approaches for your CI/CD workflows.
 
 ## Learning objectives
 
-After completing this module, students and professionals can:
+After completing this module, you can:
 
- -  Use and estimate parallel jobs.
- -  Use Azure Pipelines for open-source or private projects.
- -  Use Visual Designer.
- -  Work with Azure Pipelines and YAML.
+- Understand and estimate parallel jobs for your organization
+- Use Azure Pipelines for both open-source and private projects
+- Work with Visual Designer to create pipelines graphically
+- Create and manage pipelines using YAML configuration
+- Enable continuous integration workflows with Azure Pipelines
 
 ## Prerequisites
 
- -  Understanding of what DevOps is and its concepts.
- -  Familiarity with version control principles is helpful but is not necessary.
- -  Beneficial to have experience in an organization that delivers software.
+- Basic understanding of DevOps concepts
+- Familiarity with version control is helpful
+- Experience with software development workflows is beneficial

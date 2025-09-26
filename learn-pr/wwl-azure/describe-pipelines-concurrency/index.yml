@@ -1,16 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-pipelines-concurrency
 metadata:
-  title: Describe pipelines and concurrency
-  description: "Describe pipelines and concurrency"
-  ms.date: 05/23/2024
-  author: wwlpublish
+  title: Describe Pipelines And Concurrency
+  description: "Learn about Azure Pipelines parallel jobs, concurrency management, Visual Designer, and YAML pipeline configurations for efficient CI/CD workflows."
+  ms.date: 09/26/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.custom:
-  - N/A
+    - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Describe pipelines and concurrency
 summary: This module describes parallel jobs and how to estimate their usage. Also, it presents Azure Pipelines for open-source projects, explores Visual Designer and YAML pipelines.
 abstract: |
@@ -26,37 +26,41 @@ abstract: |
 prerequisites: None
 iconUrl: /training/achievements/3-describe-pipelines-and-concurrency.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 subjects:
-- devops
+  - devops
 units:
-- learn.wwl.describe-pipelines-concurrency.introduction
-- learn.wwl.describe-pipelines-concurrency.understand-parallel-jobs
-- learn.wwl.describe-pipelines-concurrency.estimate-parallel-jobs
-- learn.wwl.describe-pipelines-concurrency.describe-azure-pipelines-open-source-projects
-- learn.wwl.describe-pipelines-concurrency.explore-azure-pipelines-visual-designer
-- learn.wwl.describe-pipelines-concurrency.describe-azure-pipelines-yaml
-- learn.wwl.describe-pipelines-concurrency.enable-continuous-integration-azure-pipelines
-- learn.wwl.describe-pipelines-concurrency.knowledge-check
-- learn.wwl.describe-pipelines-concurrency.summary
+  - learn.wwl.describe-pipelines-concurrency.introduction
+  - learn.wwl.describe-pipelines-concurrency.understand-parallel-jobs
+  - learn.wwl.describe-pipelines-concurrency.estimate-parallel-jobs
+  - learn.wwl.describe-pipelines-concurrency.describe-azure-pipelines-open-source-projects
+  - learn.wwl.describe-pipelines-concurrency.explore-azure-pipelines-visual-designer
+  - learn.wwl.describe-pipelines-concurrency.describe-azure-pipelines-yaml
+  - learn.wwl.describe-pipelines-concurrency.enable-continuous-integration-azure-pipelines
+  - learn.wwl.describe-pipelines-concurrency.knowledge-check
+  - learn.wwl.describe-pipelines-concurrency.summary
 badge:
-  uid: learn.wwl.describe-pipelines-concurrency.badge
+  uid: learn.wwl.describe-pipelines-concurrency.badge

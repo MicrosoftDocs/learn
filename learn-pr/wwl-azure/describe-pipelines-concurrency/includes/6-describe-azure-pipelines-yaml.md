@@ -1,33 +1,49 @@
-Mirroring the rise of interest in infrastructure as code, there has been considerable interest in defining pipelines as code. However, pipeline as code doesn't mean executing a script that's stored in source control.
+YAML pipelines represent the "infrastructure as code" approach for CI/CD. Instead of clicking through a visual interface, you define your entire pipeline in a YAML file stored with your source code.
 
-Codified pipelines use their programming model to simplify the setup and maximize reuse.
+## Why use YAML?
 
-A typical microservice architecture will require many deployment pipelines that are identical. It's tedious to craft these pipelines via a user interface or SDK.
+**Modern microservice architectures** often need many similar deployment pipelines. Creating these manually through a UI becomes tedious and error-prone. YAML enables:
 
-The ability to define the pipeline and the code helps apply all principles of code sharing, reuse, templatization, and code reviews. Azure DevOps offers you both experiences. You can either use YAML to define your pipelines or use the visual designer to do the same. You will, however, find that more product-level investments are being made to enhance the YAML pipeline experience.
+- **Code reuse**: Share pipeline templates across projects
+- **Version control**: Pipeline changes follow the same review process as code
+- **Consistency**: Identical setups across multiple services
+- **Collaboration**: Team members can contribute pipeline improvements
 
-When you use YAML, you define your pipeline mostly in code (a YAML file) alongside the rest of the code for your app. When using the visual designer, you define a build pipeline to build and test your code and publish artifacts.
+## How YAML pipelines work
 
-You also specify a release pipeline to consume and deploy those artifacts to deployment targets.
+1. **Create YAML file**: Define your pipeline in `azure-pipelines.yml` in your repository
+2. **Connect repository**: Link Azure Pipelines to your Git repository
+3. **Push changes**: Code and pipeline changes trigger builds automatically
+4. **Monitor results**: Track build and deployment progress
 
-## Use Azure Pipelines with YAML
+:::image type="content" source="../media/flowchart-edit-code-yaml-1e1c3048.png" alt-text="Screenshot of Flowchart with edit code, edit YAML file, push to code repo, Azure Pipelines, and deploy to target.":::
 
-You can configure your pipelines in a YAML file that exists alongside your code.
+## YAML pipeline benefits
 
-1.  Configure Azure Pipelines to use your Git repo.
-2.  Edit your azure-pipelines.yml file to define your build.
-3.  Push your code to your version control repository. This action kicks off the default trigger to build and deploy and then monitor the results.
-4.  Your code is now updated, built, tested, and packaged. It can be deployed to any target.
+**Version control integration**:
 
-    :::image type="content" source="../media/flowchart-edit-code-yaml-1e1c3048.png" alt-text="Screenshot of Flowchart with edit code, edit YAML file, push to code repo, Azure Pipelines, and deploy to target.":::
+- Pipeline definitions live alongside your code
+- Changes follow the same branching strategy as your application
+- Pull request reviews include both code and pipeline changes
 
+**Branch flexibility**:
 
-## Benefits of using YAML
+- Each branch can customize its build process
+- Feature branches can test pipeline changes safely
+- Merge conflicts help identify pipeline incompatibilities
 
- -  The pipeline is versioned with your code and follows the same branching structure. You get validation of your changes through code reviews in pull requests and branch build policies.
- -  Every branch you use can modify the build policy by adjusting the azure-pipelines.yml file.
- -  A change to the build process might cause a break or result in an unexpected outcome. Because the change is in version control with the rest of your codebase, you can more easily identify the issue.
+**Better troubleshooting**:
 
-If you think the YAML workflow is best for you, create your first pipeline by using [YAML](/azure/devops/pipelines/get-started-yaml).
+- Pipeline changes are tracked in version history
+- Easier to identify when pipeline modifications cause issues
+- Rollback pipeline changes like any other code change
 
-While there's a slightly higher learning curve and a higher degree of code orientation when defining pipelines with YAML, it's now the preferred method.
+**Enhanced security**:
+
+- Pipeline configurations are reviewed like code
+- Branch policies protect production pipeline definitions
+- Approvals and checks provide additional safety layers
+
+## Getting started
+
+YAML has a steeper learning curve but offers more power and flexibility. Microsoft now recommends YAML for new pipelines due to its modern DevOps benefits and active feature development.
