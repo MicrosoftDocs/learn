@@ -4,7 +4,7 @@ title: Implement Multi-Job Builds
 metadata:
   title: Implement Multi-Job Builds
   description: "Learn how to implement multi-job builds to create efficient and parallelized CI/CD workflows with proper job dependencies and coordination."
-  ms.date: 09/25/2025
+  ms.date: 09/26/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

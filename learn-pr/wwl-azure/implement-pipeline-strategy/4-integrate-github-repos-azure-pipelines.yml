@@ -4,7 +4,7 @@ title: Integrate GitHub Repositories with Azure Pipelines
 metadata:
   title: Integrate GitHub Repositories with Azure Pipelines
   description: "Learn how to connect GitHub repositories with Azure Pipelines to enable continuous integration and deployment workflows."
-  ms.date: 09/25/2025
+  ms.date: 09/26/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

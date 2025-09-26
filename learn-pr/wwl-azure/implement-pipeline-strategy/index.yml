@@ -3,7 +3,7 @@ uid: learn.wwl.implement-pipeline-strategy
 metadata:
   title: Design and Implement a Pipeline Strategy
   description: "Learn how to design and implement effective pipeline strategies using Azure Pipelines, including multi-agent builds, source control integration, and comprehensive testing approaches."
-  ms.date: 09/25/2025
+  ms.date: 09/26/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module
