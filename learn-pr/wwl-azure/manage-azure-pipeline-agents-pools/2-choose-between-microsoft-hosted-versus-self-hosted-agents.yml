@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-azure-pipeline-agents-pools.choose-between-microsoft-hosted-versus-self-hosted-agents
-title: Choose Between Microsoft-Hosted Versus Self-Hosted Agents
+title: Choose between Microsoft-hosted versus self-hosted agents
 metadata:
   title: Choose Between Microsoft-Hosted Versus Self-Hosted Agents
   description: "Compare Microsoft-hosted and self-hosted agents to determine the best option for your pipeline requirements and infrastructure needs."
