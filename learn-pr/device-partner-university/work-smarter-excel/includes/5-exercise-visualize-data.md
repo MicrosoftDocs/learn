@@ -2,7 +2,7 @@ In this exercise, you’ll practice using Copilot Chat to summarize data and cre
 
 ## Steps
 
-**1. Open your workbook**
+1. Open your workbook
 
 Open the Excel workbook containing the sales dataset you used in Exercise 1. Make sure it includes columns for **Product**, **Region**, **Quarter**, **Quantity**, and **Revenue**. If needed, you can copy the table provided:
 
@@ -21,11 +21,11 @@ Open the Excel workbook containing the sales dataset you used in Exercise 1. Mak
 | Lambda   | East   | Q3      | 9        | 35         | 315     |
 | Mu       | West   | Q3      | 18       | 15         | 270     |
 
-**2. Open Copilot Chat**
+2. Open Copilot Chat
 
 Access Copilot Chat from the Excel ribbon, sidebar, or sparkle icon by a selected cell.
 
-**3. Generate a pivot table**
+3. Generate a pivot table
 
 In the chat box, type:
 
@@ -34,7 +34,7 @@ Copilot generates the pivot table and provide it to you. You can then copy and p
 
 [![A screenshot of a pivot table request in Copilot Chat and the pivot table generated in Excel.](../media/table-inline.png)](../media/table-expanded.png#lightbox)
 
-**4. Create a chart**
+4. Create a chart
 
 With the pivot table selected, ask Copilot:
 
@@ -43,7 +43,7 @@ Copilot provides a column chart for you to copy and paste. You can move or resiz
 
 [![A screenshot of a bar chart request in Copilot Chat and the chart generated in Excel.](../media/lines-inline.png)](../media/lines-expanded.png#lightbox)
 
-**5. Refine the visualization**
+5. Refine the visualization
 
 Ask Copilot follow-up questions to improve clarity:
 
@@ -55,7 +55,7 @@ Ask Copilot follow-up questions to improve clarity:
 
 [![A screenshot of a bar chart filtered in Copilot Chat to show only the top five products provided in the table.](../media/narrow-inline.png)](../media/narrow-expanded.png#lightbox)
 
-**6. Generate a text-based summary**
+6. Generate a text-based summary
 
 Ask Copilot:
 

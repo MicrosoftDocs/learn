@@ -18,7 +18,7 @@ abstract: |
   - Automate routine Excel tasks to save time and reduce errors.
 prerequisites: |
   - None
-iconUrl: /training/achievements/"C:\Github\learn-pr\learn-pr\achievements\work-smarter-excel.svg".svg
+iconUrl: training/achievements/work-smarter-excel.svg
 ratingEnabled: false
 levels:
   - beginner

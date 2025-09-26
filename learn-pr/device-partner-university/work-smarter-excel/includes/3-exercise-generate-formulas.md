@@ -7,7 +7,7 @@ In this exercise, you’ll practice using Copilot Chat to create formulas that p
 
 ## Steps
 
-**1. Open your workbook**
+1. Open your workbook
 
 Open a new Excel workbook. Enter the following data manually into the blank Excel worksheet. Leave the **Revenue** column blank so you can practice using Copilot Chat to create formulas.
 
@@ -29,11 +29,11 @@ Open a new Excel workbook. Enter the following data manually into the blank Exce
 > [!IMPORTANT]
 > Keep the workbook you created in this exercise—we'll use it again in the next exercise.
 
-**2. Open Copilot Chat**
+2. Open Copilot Chat
 
 Access Copilot Chat from the Excel ribbon, sidebar, or sparkle icon. A chat window appears where you can type instructions.
 
-**3. Ask Copilot to create a formula**
+3. Ask Copilot to create a formula
 
 In the chat box, type:
 
@@ -45,20 +45,20 @@ Copilot generates the formula, for example, =Quantity*UnitPrice, which you can t
 > [!TIP]
 > **Experiment with variations**. Try asking Copilot for multiple approaches to the same calculation to see different formulas and decide which works best for your scenario.
 
-**4. Apply the formula to multiple rows**
+4. Apply the formula to multiple rows
 
 Drag the fill handle down the column to apply the formula to all relevant rows. Verify that the results are correct for each row.
 
 [![A screenshot of the Revenue column, showing the formula applied to all rows by dragging the fill handle down.](../media/column-inline.png)](../media/column-expanded.png#lightbox)
 
-**5. Test with a conditional formula**
+5. Test with a conditional formula
 
 Ask Copilot:
 
 *"Calculate total revenue only for Product A."*
 Copilot might generate a formula using SUMIF or similar. Insert the formula in a new cell and confirm the result matches your expected calculation.
 
-**6. Refine the formula**
+6. Refine the formula
 
 If your dataset contains blank or missing values, you can ask Copilot to:
 
