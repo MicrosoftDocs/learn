@@ -6,20 +6,20 @@ Copilot Chat in Excel helps overcome these challenges by translating natural lan
 
 For example, consider a dataset of sales transactions with columns for Product, Quantity, Unit Price, and Revenue. Instead of manually writing a formula for Revenue as *=Quantity*UnitPrice* and dragging it down thousands of rows, you can ask Copilot Chat:
 
-- *“Calculate total revenue for each row by multiplying quantity by unit price.”*
+- *"Calculate total revenue for each row by multiplying quantity by unit price."*
 
 Copilot responds with the correct formula and inserts it in your workbook, saving time and reducing the risk of errors.
 
 > [!IMPORTANT]
-> For Copilot to read your data correctly, make sure it is formatted as a table or in a supported range. This ensures that formulas, summaries, and visualizations work as expected.
+> For Copilot to read your data correctly, make sure it's formatted as a table or in a supported range. This ensures that formulas, summaries, and visualizations work as expected.
 
-Copilot Chat is not limited to simple arithmetic. You can generate more advanced formulas, including:
+Copilot Chat isn't limited to simple arithmetic. You can generate more advanced formulas, including:
 
-- **Conditional calculations**: Use functions like IF, SUMIF, or AVERAGEIF to calculate results based on specific conditions. Example: **“Calculate total sales only for Product A.”*
+- **Conditional calculations**: Use functions like IF, SUMIF, or AVERAGEIF to calculate results based on specific conditions. Example: *"Calculate total sales only for Product A."*
 
-- **Text manipulation**: Concatenate strings, extract substrings, or clean up text using functions like CONCAT, LEFT, RIGHT, or TRIM. Example: *“Combine first and last names into a full name column.”*
+- **Text manipulation**: Concatenate strings, extract substrings, or clean up text using functions like CONCAT, LEFT, RIGHT, or TRIM. Example: *"Combine first and family names into a full name column."*
 
-- **Date and time calculations**: Compute differences between dates, extract month or year values, or calculate deadlines using functions like DATEDIF, YEAR, or WORKDAY. Example: *“Calculate the number of business days between order date and delivery date.”*
+- **Date and time calculations**: Compute differences between dates, extract month or year values, or calculate deadlines using functions like DATEDIF, YEAR, or WORKDAY. Example: *"Calculate the number of business days between order date and delivery date."*
 
 By understanding these types of formulas conceptually, you’ll be able to guide Copilot Chat more effectively and make informed decisions about which formulas best suit your scenario.
 
@@ -31,6 +31,6 @@ By understanding these types of formulas conceptually, you’ll be able to guide
 >
 > - **Review the formula before applying it** across your dataset to ensure it matches your intended calculation.
 >
-> - **Use follow-up questions to refine the formula**, for example: *“Adjust the formula to ignore blank cells.”*
+> - **Use follow-up questions to refine the formula**, for example: *"Adjust the formula to ignore blank cells."*
 >
 > Using Copilot Chat in this way turns formula creation from a trial-and-error process into a faster, more reliable workflow, helping you focus on analyzing results rather than troubleshooting syntax errors.

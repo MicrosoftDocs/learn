@@ -19,13 +19,13 @@ quiz:
           explanation: "Correct. Copilot Chat can turn your instructions into fully working Excel formulas."
         - content: "By automatically formatting your workbook with themes."
           isCorrect: false
-          explanation: "Incorrect. Copilot Chat does not format workbooks automatically."
+          explanation: "Incorrect. Copilot Chat doesn't format workbooks automatically."
         - content: "By exporting data directly to PowerPoint slides."
           isCorrect: false
-          explanation: "Incorrect. Copilot Chat does not export data directly to PowerPoint."
+          explanation: "Incorrect. Copilot Chat doesn't export data directly to PowerPoint."
         - content: "By suggesting colors for charts."
           isCorrect: false
-          explanation: "Incorrect. Copilot Chat does not suggest chart colors."
+          explanation: "Incorrect. Copilot Chat doesn't suggest chart colors."
   - content: "Which of the following is a best practice when generating formulas with Copilot Chat?"
     choices:
         - content: "Type unclear instructions to see what Copilot suggests."
@@ -44,16 +44,16 @@ quiz:
     choices:
         - content: "Pivot tables, column charts, line graphs, pie charts."
           isCorrect: true
-          explanation: "Correct. Copilot Chat can assist in creating pivot tables and various chart types."
+          explanation: "Correct. Copilot Chat can help create pivot tables and various chart types."
         - content: "Video tutorials embedded in Excel."
           isCorrect: false
-          explanation: "Incorrect. Copilot Chat does not create video tutorials."
+          explanation: "Incorrect. Copilot Chat doesn't create video tutorials."
         - content: "Word document summaries only."
           isCorrect: false
-          explanation: "Incorrect. Copilot Chat does not generate Word summaries."
+          explanation: "Incorrect. Copilot Chat doesn't generate Word summaries."
         - content: "Custom Excel macros automatically."
           isCorrect: false
-          explanation: "Incorrect. Copilot Chat does not automatically create macros."
+          explanation: "Incorrect. Copilot Chat doesn't automatically create macros."
   - content: "How can you refine a Copilot-generated pivot table or chart?"
     choices:
         - content: "Adjust fields, filters, chart types, and labels using follow-up questions."
@@ -61,11 +61,11 @@ quiz:
           explanation: "Correct. You can refine pivot tables and charts by using follow-up questions with Copilot."
         - content: "Only by deleting it and creating a new one manually."
           isCorrect: false
-          explanation: "Incorrect. Deleting and recreating is not necessary."
+          explanation: "Incorrect. Deleting and recreating isn't necessary."
         - content: "By changing Excel’s default theme settings."
           isCorrect: false
-          explanation: "Incorrect. Theme changes do not refine the content of tables or charts."
+          explanation: "Incorrect. Theme changes don't refine the content of tables or charts."
         - content: "By restarting Excel."
           isCorrect: false
-          explanation: "Incorrect. Restarting the application does not modify pivot tables or charts."
+          explanation: "Incorrect. Restarting the application doesn't modify pivot tables or charts."
 

@@ -10,15 +10,15 @@ For example, imagine your dataset contains sales information for multiple produc
 
 Traditionally, you would need to create a pivot table, select the correct rows, columns, and values, and apply filters to focus on specific metrics. Then, you would choose an appropriate chart type and manually format it for clarity. Copilot Chat simplifies this workflow. By asking Copilot to summarize or visualize your data, you can generate pivot tables, charts, and summary tables quickly.
 
-Copilot Chat can help you create a variety of visualizations and summaries, and it can also highlight, sort, and filter your data based on your instructions. For example, you could ask Copilot to highlight cells with numbers greater than five or filter your dataset to focus on specific metrics.
+Copilot Chat can help you create various visualizations and summaries, and it can also highlight, sort, and filter your data based on your instructions. For example, you could ask Copilot to highlight cells with numbers greater than five or filter your dataset to focus on specific metrics.
 
 Copilot Chat can create:
 
-- **Pivot tables**: Summarize data by categories, regions, or time periods, and calculate totals, averages, or counts. Example: *“Create a pivot table showing total revenue by product and quarter.”*
+- **Pivot tables**: Summarize data by categories, regions, or time periods, and calculate totals, averages, or counts. Example: *"Create a pivot table showing total revenue by product and quarter."*
 
-- **Charts**: Generate bar charts, line graphs, pie charts, or scatter plots to visualize trends and comparisons. Example: *“Create a line chart comparing revenue across all quarters.”*
+- **Charts**: Generate bar charts, line graphs, pie charts, or scatter plots to visualize trends and comparisons. Example: *"Create a line chart comparing revenue across all quarters."*
 
-- **Data summaries**: Produce text-based summaries of top-performing products or key metrics. Example: *“Summarize the top three products by total sales.”*
+- **Data summaries**: Produce text-based summaries of top-performing products or key metrics. Example: *"Summarize the top three products by total sales."*
 
 [![A screenshot of Copilot Chat in Excel generating a pivot table from a selected dataset.](../media/pivot-inline.png)](../media/pivot-expanded.png#lightbox)
 
@@ -38,4 +38,4 @@ Using Copilot Chat for summarization and visualization offers several advantages
 >
 > - Ask follow-up questions to refine summaries or visualizations, such as changing the chart type, adjusting labels, or filtering specific data.
 >
-> By leveraging Copilot Chat, you can focus on interpreting the results and making data-driven decisions rather than spending time building and formatting summaries manually.
+> By using Copilot Chat, you can focus on interpreting the results and making data-driven decisions rather than spending time building and formatting summaries manually.

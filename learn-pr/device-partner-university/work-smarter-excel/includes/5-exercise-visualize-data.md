@@ -4,7 +4,7 @@ In this exercise, you’ll practice using Copilot Chat to summarize data and cre
 
 **1. Open your workbook**
 
-Open the Excel workbook containing the sales dataset you used in Exercise 1. Make sure it includes columns for **Product**, **Region**, **Quarter**, **Quantity**, and **Revenue**. If needed, you can copy the table below:
+Open the Excel workbook containing the sales dataset you used in Exercise 1. Make sure it includes columns for **Product**, **Region**, **Quarter**, **Quantity**, and **Revenue**. If needed, you can copy the table provided:
 
 | Product  | Region | Quarter | Quantity | Unit Price | Revenue |
 |----------|--------|---------|----------|------------|---------|
@@ -30,7 +30,7 @@ Access Copilot Chat from the Excel ribbon, sidebar, or sparkle icon by a selecte
 In the chat box, type:
 
 *"Create a pivot table showing total revenue by product and quarter."*
-Copilot will generate the pivot table and provide it to you. You can then copy and paste it into a worksheet. Check that the pivot table lists the correct products, quarters, and revenue values.
+Copilot generates the pivot table and provide it to you. You can then copy and paste it into a worksheet. Check that the pivot table lists the correct products, quarters, and revenue values.
 
 [![A screenshot of a pivot table request in Copilot Chat and the pivot table generated in Excel.](../media/table-inline.png)](../media/table-expanded.png#lightbox)
 
@@ -39,7 +39,7 @@ Copilot will generate the pivot table and provide it to you. You can then copy a
 With the pivot table selected, ask Copilot:
 
 *"Create a column chart comparing total revenue for each product across all quarters."*
-Copilot will provide a column chart for you to copy and paste. You can move or resize it as needed.
+Copilot provides a column chart for you to copy and paste. You can move or resize it as needed.
 
 [![A screenshot of a bar chart request in Copilot Chat and the chart generated in Excel.](../media/lines-inline.png)](../media/lines-expanded.png#lightbox)
 
@@ -47,11 +47,11 @@ Copilot will provide a column chart for you to copy and paste. You can move or r
 
 Ask Copilot follow-up questions to improve clarity:
 
-- *“Add data labels to the chart.”*
+- *"Add data labels to the chart."*
 
-- *“Change the bar chart colors to match my theme.”*
+- *"Change the bar chart colors to match my theme."*
 
-- *“Filter the bar chart to show only the top five products.”*
+- *"Filter the bar chart to show only the top five products."*
 
 [![A screenshot of a bar chart filtered in Copilot Chat to show only the top five products provided in the table.](../media/narrow-inline.png)](../media/narrow-expanded.png#lightbox)
 
@@ -60,13 +60,13 @@ Ask Copilot follow-up questions to improve clarity:
 Ask Copilot:
 
 *"Summarize the top three products by total sales and highlight any trends."*
-Copilot will provide a concise written summary that you can insert into your report.
+Copilot provides a concise written summary that you can insert into your report.
 
 [![A screenshot of Copilot Chat showing a summary of the top three products by total sales, highlighting trends in the data.](../media/analysis-inline.png)](../media/analysis-expanded.png#lightbox)
 
 ### Bonus exercises
 
-Use our example dataset to explore additional ways to summarize and visualize data with Copilot Chat:
+Use our example dataset to explore other ways to summarize and visualize data with Copilot Chat:
 
 - Generate a line chart showing Revenue trends by Region over time.
 - Create a pivot table summarizing average Quantity sold by Product or by Region.

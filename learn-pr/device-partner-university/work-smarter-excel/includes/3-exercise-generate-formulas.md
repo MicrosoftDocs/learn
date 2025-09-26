@@ -1,7 +1,7 @@
-In this exercise, you’ll practice using Copilot Chat to create formulas that perform calculations automatically. By the end, you’ll be able to generate formulas for a variety of scenarios, test them, and refine them using follow-up instructions.
+In this exercise, you’ll practice using Copilot Chat to create formulas that perform calculations automatically. By the end, you’ll be able to generate formulas for various scenarios, test them, and refine them using follow-up instructions.
 
 > [!NOTE]
-> You can access Copilot Chat in Excel either by selecting the Copilot icon in the ribbon or by selecting the sparkle icon that appears when you select a specific cell.
+> You can access Copilot Chat in Excel by selecting the Copilot icon in the ribbon. You can also select the sparkle icon that appears when you select a specific cell.
 >
 > [![A screenshot showing the Copilot sparkle icon on a selected Excel cell, with a dropdown menu displaying the “Chat with Copilot” option.](../media/sparkle-inline.png)](../media/sparkle-expanded.png#lightbox)
 
@@ -27,7 +27,7 @@ Open a new Excel workbook. Enter the following data manually into the blank Exce
 | Mu       | West   | Q3      | 18       | 15         |         |
 
 > [!IMPORTANT]
-> Keep the workbook you created in this exercise — we'll use it again in the next exercise.
+> Keep the workbook you created in this exercise—we'll use it again in the next exercise.
 
 **2. Open Copilot Chat**
 
@@ -38,7 +38,7 @@ Access Copilot Chat from the Excel ribbon, sidebar, or sparkle icon. A chat wind
 In the chat box, type:
 
 *"Calculate total revenue for each row by multiplying quantity by unit price."*
-Copilot will generate the formula, for example, =Quantity*UnitPrice, which you can then copy and paste into any cell where you want the calculation.
+Copilot generates the formula, for example, =Quantity*UnitPrice, which you can then copy and paste into any cell where you want the calculation.
 
 [![A screenshot of Copilot Chat in Excel showing the instruction to calculate total revenue and the formula =Quantity*UnitPrice.](../media/formula-inline.png)](../media/formula-expanded.png#lightbox)
 
@@ -56,20 +56,20 @@ Drag the fill handle down the column to apply the formula to all relevant rows. 
 Ask Copilot:
 
 *"Calculate total revenue only for Product A."*
-Copilot may generate a formula using SUMIF or similar. Insert the formula in a new cell and confirm the result matches your expected calculation.
+Copilot might generate a formula using SUMIF or similar. Insert the formula in a new cell and confirm the result matches your expected calculation.
 
 **6. Refine the formula**
 
 If your dataset contains blank or missing values, you can ask Copilot to:
 
 *"Adjust the formula to ignore blank cells."*
-Copilot will suggest modifications such as using IF or IFERROR to handle exceptions.
+Copilot suggests modifications such as using IF or IFERROR to handle exceptions.
 
 ### Bonus exercises
 
 Use our example dataset to practice these exercises with Copilot Chat:
 
-- Combine Product and Region into a single column (Example: “Alpha – North”).
+- Combine Product and Region into a single column (Example: "Alpha – North").
 - Calculate total Revenue only for Q1 using SUMIF or a similar formula.
 - Create a column that flags high-value transactions, such as Revenue greater than 300.
 - Generate a formula with Copilot and ask it to explain how it works.
@@ -77,4 +77,4 @@ Use our example dataset to practice these exercises with Copilot Chat:
 - Combine multiple functions, such as IF and SUMIF, to calculate conditional totals.
 - Create a new column to calculate average Unit Price by Region using a formula.
 
-These extra exercises will help you practice using Copilot Chat to build and adjust formulas, so working with Copilot Chat in Excel feels faster and simpler.
+These extra exercises help you practice using Copilot Chat to build and adjust formulas, so working with Copilot Chat in Excel feels faster and simpler.
