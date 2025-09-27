@@ -25,7 +25,7 @@ Restore archived data directly from search or from a saved search.
 
 ### [Defender portal](#tab/defender-portal)
 
-1. 1. Restore log data using one of the following methods:
+1. Restore log data using one of the following methods:
 
    - Select :::image type="icon" source="../media/restore-button.png" border="false"::: **Restore** at the top of the page. In the **Restoration** pane on the side, select the table and time range you want to restore, and then select **Restore at the bottom of the pane**.
 
@@ -77,4 +77,4 @@ To save costs, we recommend you delete the restored table when you no longer nee
 
 For example:
 
-   :::image type="content" source="../media/delete-restore.png" alt-text="Screenshot that shows the delete restored table page in the Defender portal.":::
+   :::image type="content" source="../media/delete-restore.png" alt-text="Screenshot that shows the delete restored table page in the Defender portal." lightbox="../media/delete-restore.png":::
