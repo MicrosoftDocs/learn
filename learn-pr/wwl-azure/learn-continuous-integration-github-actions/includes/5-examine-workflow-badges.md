@@ -74,7 +74,7 @@ A description of your project...
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ```
 
-:::image type="content" source="../media/badge-failing-12fd7192.png" alt-text="Example of a failing workflow badge showing red status indicating build failure.":::
+:::image type="content" source="../media/badge-failing-12fd7192.png" alt-text="Screenshot of a failing workflow badge showing red status indicating build failure.":::
 
 ## Workflow badge best practices
 

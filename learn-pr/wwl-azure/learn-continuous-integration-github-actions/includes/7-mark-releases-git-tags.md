@@ -6,8 +6,8 @@ Git tags are references that point to specific commits in your repository's hist
 
 **Two types of Git tags:**
 
-1. **Lightweight tags**: Simple pointers to specific commits
-2. **Annotated tags**: Full objects with metadata (recommended for releases)
+- **Lightweight tags**: Simple pointers to specific commits
+- **Annotated tags**: Full objects with metadata (recommended for releases)
 
 ## Creating and managing Git tags
 

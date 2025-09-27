@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.learn-continuous-integration-github-actions.describe-continuous-integration-with-actions
-title: Describe Continuous Integration With Actions
+title: Describe Continuous Integration with Actions
 metadata:
   title: Describe Continuous Integration With Actions
   description: "Learn how GitHub Actions enable continuous integration practices and automated testing workflows."
