@@ -48,7 +48,7 @@ Go to Microsoft Sentinel in the Azure portal, or in the Microsoft Defender porta
 
    :::image type="content" source="../media/search-job-criteria.png" alt-text="Screenshot of search page with search criteria of administrator, time range last 90 days, and table selected." lightbox="../media/search-job-criteria.png":::
 
-   ---
+    ---
 
 1. Enter a **keyword** for your search.
 
