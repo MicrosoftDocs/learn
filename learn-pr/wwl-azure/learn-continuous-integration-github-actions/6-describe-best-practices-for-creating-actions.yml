@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.learn-continuous-integration-github-actions.describe-best-practices-for-creating-actions
-title: Describe best practices for creating actions
+title: Describe Best Practices for Creating Actions
 metadata:
-  title: Describe best practices for creating actions
-  description: "Describe best practices for creating actions"
-  ms.date: 06/23/2025
+  title: Describe Best Practices for Creating Actions
+  description: "Learn industry best practices for developing maintainable and secure GitHub Actions."
+  ms.date: 09/26/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.learn-continuous-integration-github-actions.examine-environment-variables
-title: Examine environment variables
+title: Examine Environment Variables
 metadata:
-  title: Examine environment variables
-  description: "Examine environment variables"
-  ms.date: 06/23/2025
+  title: Examine Environment Variables
+  description: "Learn how to configure and use environment variables in GitHub Actions workflows effectively."
+  ms.date: 09/26/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
