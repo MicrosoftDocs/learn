@@ -1,36 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.unlock-insights-microsoft-copilot-security
 metadata:
-  title: Unlock Insights with Microsoft Copilot for Security
-  description: This module introduces Microsoft Copilot for Security, an AI-powered security solution designed to enhance the efficiency of security professionals. It offers a natural language, assistive copilot experience for scenarios like incident response, threat hunting, and posture management.
+  title: Unlock Insights with Microsoft Security Copilot
+  description: This module introduces Microsoft Security Copilot, an AI-powered security solution designed to enhance the efficiency of security professionals. It offers a natural language, assistive copilot experience for scenarios like incident response, threat hunting, and posture management.
   author: wwlpublish
-  ms.author: rstearman
+  ms.author: dahans
   ms.date: 06/19/2024
   ms.service: copilot-for-service
   ai-usage: ai-assisted
   ms.topic: module
   ms.collection:
     - wwl-ai-copilot
-title: Unlock Insights with Microsoft Copilot for Security
-summary: This module introduces Microsoft Copilot for Security, an AI-powered security solution designed to enhance the efficiency of security professionals.&nbsp;
+title: Unlock Insights with Microsoft Security Copilot
+summary: This module introduces Microsoft Security Copilot, an AI-powered security solution designed to enhance the efficiency of security professionals.&nbsp;
 abstract: |
   The topics covered in this module include:
 
-  - Exploring Microsoft Copilot for Security: Features, Integration, and Use Cases
+  - Exploring Microsoft Security Copilot: Features, Integration, and Use Cases
 
-  - Exploring the Functionality and Integration of Microsoft Copilot for Security
+  - Exploring the Functionality and Integration of Microsoft Security Copilot
 
-  - Understanding Microsoft Copilot for Security: Standalone and Embedded Experiences
+  - Understanding Microsoft Security Copilot: Standalone and Embedded Experiences
 
-  - Deploying and Setting Up Microsoft Copilot for Security
+  - Deploying and Setting Up Microsoft Security Copilot
 
-  - Using and Creating Effective Prompts in Microsoft Copilot for Security
+  - Using and Creating Effective Prompts in Microsoft Security Copilot
 
-  - Using Promptbooks in Microsoft Copilot for Security
+  - Using Promptbooks in Microsoft Security Copilot
 
-  - New Features and Enhancements in Copilot for Security - May 2024
-
-  - Understanding Responsible AI Principles in Microsoft Copilot for Security
+  - Understanding Responsible AI Principles in Microsoft Security Copilot
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
