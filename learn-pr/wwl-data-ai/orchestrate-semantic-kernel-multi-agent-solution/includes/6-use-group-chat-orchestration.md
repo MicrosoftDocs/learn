@@ -2,7 +2,7 @@
 
 ![Diagram that shows group chat orchestration where multiple agents participate in a managed conversation. A central chat manager coordinates the discussion flow.](../media/multi-agent-group-chat.png)
 
-The group chat pattern works well for scenarios where group discussion or iterative collaboration is key to reaching decisions. It supports different interaction styles, from free-flowing ideation to formal workflows with defined roles and approval steps. Group chat orchestration is also great for human-in-the-loop setups where a human may guide or intervene in the conversation. Typically, agents in this pattern do not directly change running systems—they mainly contribute to the conversation.
+The group chat pattern works well for scenarios where group discussion or iterative collaboration is key to reaching decisions. It supports different interaction styles, from free-flowing ideation to formal workflows with defined roles and approval steps. Group chat orchestration is also great for human-in-the-loop setups where a human may guide or intervene in the conversation. Typically, agents in this pattern don't directly change running systems—they mainly contribute to the conversation.
 
 ## When to use group chat orchestration
 
@@ -28,12 +28,12 @@ Avoid this pattern when:
 - Simple task delegation or straightforward linear pipelines suffice  
 - Real-time speed requirements make discussion overhead impractical  
 - Hierarchical or deterministic workflows are needed without discussion  
-- The chat manager cannot clearly determine when the task is complete  
+- The chat manager can't clearly determine when the task is complete  
 - Managing conversation flow becomes too complex, especially with many agents (limit to three or fewer for easier control)
 
 ## Maker-checker loops
 
-A common special case is the maker-checker loop. Here, one agent (the maker) proposes content or solutions, and another agent (the checker) reviews and critiques them. The checker can send feedback back to the maker, and this cycle repeats until the result is satisfactory. This requires a turn-based sequence managed by the chat manager.
+A common special case is the maker-checker loop. Here, one agent (the maker) proposes content or solutions, and another agent (the checker) reviews and critiques them. The checker can send feedback back to the maker, and this cycle repeats until the result is satisfactory. This process requires a turn-based sequence managed by the chat manager.
 
 ## Implement group chat orchestration
 
@@ -59,7 +59,7 @@ Implement the group chat orchestration pattern with the Microsoft Agent Framewor
 
 ## Customizing the group chat manager
 
-You can create a custom group chat manager by extending the base `GroupChatManager` class. This lets you control:
+You can create a custom group chat manager by extending the base `GroupChatManager` class. This approach lets you control:
 
 - How conversation results are filtered or summarized  
 - How the next agent is selected  
@@ -73,7 +73,7 @@ Custom managers let you implement specialized logic tailored to your use case.
 During each round of the conversation, the chat manager calls methods in this order:
 
 1. `should_request_user_input` - Checks if human input is needed before the next agent responds.  
-1. `should_terminate` - Determines if the conversation should end (e.g., max rounds reached).  
+1. `should_terminate` - Determines if the conversation should end (for example, max rounds reached).  
 1. `filter_results` - If ending, summarizes or processes the final conversation.  
 1. `select_next_agent` - If continuing, chooses the next agent to speak.
 

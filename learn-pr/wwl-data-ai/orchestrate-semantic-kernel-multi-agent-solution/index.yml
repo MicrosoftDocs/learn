@@ -9,10 +9,10 @@ metadata:
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
 title: Orchestrate a multi-agent solution using the Microsoft Agent Framework
-summary: Learn how to use the the Microsoft Agent Framework SDK to develop your own AI agents that can collaborate for a multi-agent solution.
+summary: Learn how to use the Microsoft Agent Framework SDK to develop your own AI agents that can collaborate for a multi-agent solution.
 abstract: |
   By the end of this module, you'll be able to:
-  - Build AI agents using the the Microsoft Agent Framework SDK
+  - Build AI agents using the Microsoft Agent Framework SDK
   - Understand how and when to use different orchestration patterns
   - Develop multi-agent solutions
 prerequisites: |

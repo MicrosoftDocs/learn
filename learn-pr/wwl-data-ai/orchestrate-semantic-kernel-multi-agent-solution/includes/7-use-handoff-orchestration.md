@@ -25,12 +25,12 @@ You may want to avoid using the handoff orchestration pattern in these scenarios
 
 ## Implementing handoff orchestration
 
-The handoff orchestration pattern can be implemented in the Microsoft Agent Framework SDK using control workflows. In a control workflow, each agent processes the task in sequence, and based on its output, the workflow decides which agent to call next. This is done using a switch-case structure that routes the task to different agents based on classification results.
+The handoff orchestration pattern can be implemented in the Microsoft Agent Framework SDK using control workflows. In a control workflow, each agent processes the task in sequence, and based on its output, the workflow decides which agent to call next. This routing is done using a switch-case structure that routes the task to different agents based on classification results.
 
 1. **Set up data models and chat client**
    - Create your chat client for connecting to AI services
    - Define Pydantic models for AI agents' structured JSON responses
-   - Create simple dataclasses for passing information between workflow steps
+   - Create simple data classes for passing information between workflow steps
    - Configure agents with specific instructions and `response_format` parameter for structured JSON output
 
 1. **Create specialized executor functions**

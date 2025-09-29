@@ -19,7 +19,7 @@ Consider using the sequential orchestration pattern when your workflow has:
 Avoid this pattern when:
 
 - Stages can be run independently and in parallel without affecting quality.
-- The entire task can be done effectively by a single agent.
+- A single agent can perform the entire task effectively.
 - Early stages may fail or produce poor output, and there's no way to stop or correct downstream processing based on errors.
 - Agents need to collaborate dynamically rather than hand off work sequentially.
 - The workflow requires iteration, backtracking, or dynamic routing based on intermediate results.
@@ -41,7 +41,7 @@ Implement the sequential orchestration pattern with the Microsoft Agent Framewor
    Call the workflow's `run_stream` method with the task or input you want the agents to work on. The workflow processes the task through all agents sequentially, with each agent's output becoming input for the next.
 
 5. **Process the workflow events**  
-   Iterate through the workflow events using an async loop. Look for `WorkflowOutputEvent` instances which contain the results from the sequential processing.
+   Iterate through the workflow events using an async loop. Look for `WorkflowOutputEvent` instances, which contain the results from the sequential processing.
 
 6. **Extract the final conversation**  
    Collect the final conversation from the workflow outputs. The result contains the complete conversation history showing how each agent in the sequence contributed to the final outcome.

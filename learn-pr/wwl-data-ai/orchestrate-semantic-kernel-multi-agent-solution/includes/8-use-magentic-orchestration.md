@@ -1,8 +1,8 @@
-**Magentic orchestration** is a flexible, general-purpose multi-agent pattern designed for complex, open-ended tasks that require dynamic collaboration.This pattern uses a dedicated Magentic manager to coordinate a team of specialized agents. The manager decides which agent should act next based on the evolving context, task progress, and agent capabilities.
+**Magentic orchestration** is a flexible, general-purpose multi-agent pattern designed for complex, open-ended tasks that require dynamic collaboration. This pattern uses a dedicated Magentic manager to coordinate a team of specialized agents. The manager decides which agent should act next based on the evolving context, task progress, and agent capabilities.
 
 ![Diagram of Magentic orchestration flow.](../media/multi-agent-magnetic.png)
 
-The Magentic manager maintains a shared context, tracks progress, and adapts the workflow in real time. This allows the system to break down complex problems, assign subtasks, and iteratively refine solutions. The process focuses as much on building and documenting the approach as it does on delivering the final solution. A dynamic task ledger is built and refined as the workflow progresses, recording goals, subgoals, and execution plans. 
+The Magentic manager maintains a shared context, tracks progress, and adapts the workflow in real time. This approach allows the system to break down complex problems, assign subtasks, and iteratively refine solutions. The process focuses as much on building and documenting the approach as it does on delivering the final solution. A dynamic task ledger is built and refined as the workflow progresses, recording goals, subgoals, and execution plans. 
 
 ## When to use Magentic orchestration
 
@@ -41,10 +41,10 @@ Implement the Magentic orchestration pattern with the Microsoft Agent Framework:
    The standard manager coordinates agent collaboration using a chat client for planning and progress tracking. Configure parameters like maximum round count, stall count, and reset count to control the orchestration behavior.
 
 5. **Run the workflow**  
-   Call the workflow's `run_stream` method with your complex task. The workflow will dynamically plan, delegate work to appropriate agents, and coordinate their collaboration to solve the problem.
+   Call the workflow's `run_stream` method with your complex task. The workflow dynamically plans, delegates work to appropriate agents, and coordinates their collaboration to solve the problem.
 
 6. **Process workflow events**  
-   Iterate through the workflow events using an async loop. Handle different event types including `WorkflowOutputEvent` which contains the final results from the orchestration.
+   Iterate through the workflow events using an async loop. Handle different event types including `WorkflowOutputEvent`, which contains the final results from the orchestration.
 
 7. **Extract the final result**  
    Collect the final output from the workflow events. The result contains the complete solution developed through the collaborative effort of all participating agents.
