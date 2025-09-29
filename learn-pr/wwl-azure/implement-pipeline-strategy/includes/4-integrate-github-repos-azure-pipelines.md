@@ -13,7 +13,7 @@ Establish consistent naming patterns between GitHub repositories and Azure Pipel
 - GitHub organization: `contoso`
 - Azure DevOps organization: `https://dev.azure.com/contoso`
 
-**Project naming**: Create Azure DevOps projects that match your GitHub repository names. For example:
+**Project naming**: Create Azure DevOps Projects that match your GitHub repository names. For example:
 
 - GitHub repository: `contoso/webapp`
 - Azure DevOps project: `https://dev.azure.com/contoso/webapp`
@@ -84,4 +84,5 @@ When creating your pipeline:
 2. Choose a YAML file from the repository (the repository containing the YAML file becomes the "self" repository)
 3. Configure additional repositories if needed
 
-**Important limitation**: When multiple Azure DevOps organizations access the same GitHub repository, only the first pipeline can use automatic triggers. Additional pipelines require manual or scheduled triggers.
+> [!IMPORTANT]
+> When multiple Azure DevOps organizations access the same GitHub repository, only the first pipeline can use automatic triggers. Additional pipelines require manual or scheduled triggers.
