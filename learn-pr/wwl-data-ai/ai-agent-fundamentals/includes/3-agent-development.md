@@ -27,7 +27,7 @@ AutoGen is an open-source framework for developing agents rapidly. It's useful a
 
 ## Microsoft 365 Agents SDK
 
-Developers can create self-hosted agents for delivery through a wide range of channels by using the Microsoft 365 Agents SDK. Despite the name, agents built using this SDK are not limited to Microsoft 365, but can be delivered through channels like Slack or Messenger.
+Developers can create self-hosted agents for delivery through a wide range of channels by using the Microsoft 365 Agents SDK. Despite the name, agents built using this SDK aren't limited to Microsoft 365, but can be delivered through channels like Slack or Messenger.
 
 > [!TIP]
 > For more information about Microsoft 365 Agents SDK, see the **[Microsoft 365 Agents SDK documentation](/microsoft-365/agents-sdk/)**.
