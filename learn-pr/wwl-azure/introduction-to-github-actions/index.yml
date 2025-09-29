@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-github-actions
 metadata:
   title: Introduction to GitHub Actions
   description: "Learn GitHub Actions fundamentals including workflows, events, jobs, and runners to automate your development processes"
-  ms.date: 09/26/2025
+  ms.date: 09/29/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module

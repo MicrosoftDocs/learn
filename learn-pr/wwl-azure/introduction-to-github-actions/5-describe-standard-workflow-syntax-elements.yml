@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-github-actions.describe-standard-workflow-syntax-elements
-title: Describe Standard Workflow Syntax Elements
+title: Describe standard workflow syntax elements
 metadata:
-  title: Describe Standard Workflow Syntax Elements
+  title: Describe standard workflow syntax elements
   description: "Learn the essential YAML syntax elements and structure for creating effective GitHub Actions workflows."
-  ms.date: 09/26/2025
+  ms.date: 09/29/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-github-actions.understand-workflows
-title: Understand Workflows
+title: Understand workflows
 metadata:
-  title: Understand Workflows
+  title: Understand workflows
   description: "Learn how to create and configure workflows in GitHub Actions"
-  ms.date: 09/26/2025
+  ms.date: 09/29/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

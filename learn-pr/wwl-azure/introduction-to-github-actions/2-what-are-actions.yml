@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-github-actions.what-are-actions
-title: What Are Actions?
+title: What are actions?
 metadata:
-  title: What Are Actions?
+  title: What are actions?
   description: "Learn what GitHub Actions are and how they help automate development tasks"
-  ms.date: 09/26/2025
+  ms.date: 09/29/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

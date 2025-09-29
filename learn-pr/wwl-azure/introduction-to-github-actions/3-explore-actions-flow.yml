@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-github-actions.explore-actions-flow
-title: Explore Actions Flow
+title: Explore actions flow
 metadata:
-  title: Explore Actions Flow
+  title: Explore actions flow
   description: "Understand how GitHub Actions workflow execution flows from trigger to completion, including event handling and job orchestration."
-  ms.date: 09/26/2025
+  ms.date: 09/29/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

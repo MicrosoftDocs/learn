@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-github-actions.examine-release-test-action
-title: Examine Release and Test an Action
+title: Examine release and test an action
 metadata:
-  title: Examine Release and Test an Action
+  title: Examine release and test an action
   description: "Learn how to release and test GitHub Actions effectively"
-  ms.date: 09/26/2025
+  ms.date: 09/29/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

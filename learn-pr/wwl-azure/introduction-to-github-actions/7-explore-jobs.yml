@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-github-actions.explore-jobs
-title: Explore Jobs
+title: Explore jobs
 metadata:
-  title: Explore Jobs
+  title: Explore jobs
   description: "Understand how jobs work in GitHub Actions workflows"
-  ms.date: 09/26/2025
+  ms.date: 09/29/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
