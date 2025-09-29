@@ -4,7 +4,7 @@ metadata:
   title: Optimize Microsoft Intune for Microsoft Security Copilot Integration
   description: Learn about Microsoft Security Copilot and Intune for securing corporate IT. Enhance security operations, get contextual responses, and improve incident response. Implement naming conventions and manage devices efficiently.
   author: wwlpublish
-  ms.author: rstearman
+  ms.author: dahans
   ms.date: 06/21/2024
   ms.service: microsoft-copilot
   ai-usage: ai-assisted
