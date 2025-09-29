@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.unlock-insights-microsoft-copilot-security.explore-microsoft-copilot-security-experiences
-title: Explore Microsoft Copilot for Security Experiences
+title: Explore Microsoft Security Copilot Experiences
 metadata:
-  title: Explore Microsoft Copilot for Security Experiences
-  description: Explore Microsoft Copilot for Security Experiences
+  title: Explore Microsoft Security Copilot Experiences
+  description: Explore Microsoft Security Copilot Experiences
   author: wwlpublish
-  ms.author: rstearman
+  ms.author: dahans
   ms.date: 06/19/2024
   ms.topic: unit
   ms.collection:
