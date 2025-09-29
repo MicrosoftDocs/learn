@@ -5,7 +5,7 @@ metadata:
   description: This learning path will teach you the essentials of Microsoft Intune, advanced threat detection and response with Microsoft Security Copilot, and how to optimize the integration between Intune and Copilot. You'll gain skills in device management, threat protection, and policy enforcement. (MD-4011)
   ms.date: 06/27/2024
   author: wwlpublish
-  ms.author: rstearman
+  ms.author: dahans
   ms.topic: learning-path
 title: Enhance endpoint security with Microsoft Intune and Microsoft Security Copilot
 prerequisites: |
