@@ -14,12 +14,9 @@ The OpenAI Assistants API provides a subset of the features in Foundry Agent Ser
 > [!TIP]
 > For more information about using the OpenAI Assistants API in Azure, see **[Getting started with Azure OpenAI Assistants](/azure/ai-services/openai/how-to/assistant)**.
 
-## Semantic Kernel
+## Microsoft Agent Framework
 
-Semantic Kernel is a lightweight, open-source development kit that you can use to build AI agents and orchestrate multi-agent solutions. The core Semantic Kernel SDK is designed for all kinds of generative AI development, while the *Semantic Kernel Agent Framework* is a platform specifically optimized for creating agents and implementing agentic solution patterns.
-
-> [!TIP]
-> For more information about the Semantic Kernel Agent Framework, see **[Semantic Kernel Agent Framework](/semantic-kernel/frameworks/agent/)**.
+The Microsoft Agent Framework is a lightweight development kit that you can use to build AI agents and orchestrate multi-agent solutions. The framework serves as a platform specifically optimized for creating agents and implementing agentic solution patterns.
 
 ## AutoGen
 
@@ -30,7 +27,7 @@ AutoGen is an open-source framework for developing agents rapidly. It's useful a
 
 ## Microsoft 365 Agents SDK
 
-Developers can create self-hosted agents for delivery through a wide range of channels by using the Microsoft 365 Agents SDK. Despite the name, agents built using this SDK are not limited to Microsoft 365, but can be delivered through channels like Slack or Messenger.
+Developers can create self-hosted agents for delivery through a wide range of channels by using the Microsoft 365 Agents SDK. Despite the name, agents built using this SDK aren't limited to Microsoft 365, but can be delivered through channels like Slack or Messenger.
 
 > [!TIP]
 > For more information about Microsoft 365 Agents SDK, see the **[Microsoft 365 Agents SDK documentation](/microsoft-365/agents-sdk/)**.
@@ -57,7 +54,7 @@ With such a wide range of available tools and frameworks, it can be challenging 
 - If business users have sufficient technical skills to build low-code solutions using Microsoft Power Platform technologies, Copilot Studio enables them to combine those skills with their business domain knowledge and build agent solutions that extend the capabilities of Microsoft 365 Copilot or add agentic functionality to common channels like Microsoft Teams, Slack, or Messenger.
 - When an organization needs more complex extensions to Microsoft 365 Copilot capabilities, professional developers can use the Microsoft 365 Agents SDK to build agents that target the same channels as Copilot Studio.
 - To develop agentic solutions that use Azure back-end services with a wide choice of models, custom storage and search services, and integration with Azure AI services, professional developers should use Foundry Agent Service.
-- Start with Foundry Agent Service to develop single, standalone agents. When you need to build multi-agent solutions, use Semantic Kernel to orchestrate the agents in your solution.
+- Use the Microsoft Agent Framework to develop single, standalone agents or build multi-agent solutions that use different orchestration patterns.
 
 > [!NOTE]
 > There's overlap between the capabilities of each agent development solution, and in some cases factors like existing familiarity with tools, programming language preferences, and other considerations will influence the decision.
