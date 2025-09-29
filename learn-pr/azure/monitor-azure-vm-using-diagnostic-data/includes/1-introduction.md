@@ -9,7 +9,7 @@ Azure Monitor provides built-in and customizable monitoring abilities. You can u
 To complete this module, you need the following prerequisites:
 
 - Familiarity with virtualization, Azure portal navigation, and Azure VMs.
-- Access to an Azure subscription with at least **Contributor** role. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) and add a subscription before you begin. If you're a student, you can take advantage of the [Azure for students](https://azure.microsoft.com/free/students/?azure-portal=true) offer.
+- Access to an Azure subscription with at least **Contributor** role. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) and add a subscription before you begin. If you're a student, you can take advantage of the [Azure for students](https://azure.microsoft.com/free/students/?azure-portal=true) offer.
 
 ## Learning objectives
 

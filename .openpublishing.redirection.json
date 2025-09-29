@@ -6190,15 +6190,15 @@
     },
     {
       "source_path_from_root": "/learn-pr/azure/create-an-azure-account/1-introduction.yml",
-      "redirect_url": "https://azure.microsoft.com/free/"
+      "redirect_url": "https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn"
     },
     {
       "source_path_from_root": "/learn-pr/azure/create-an-azure-account/2-azure-accounts-and-subscriptions.yml",
-      "redirect_url": "https://azure.microsoft.com/free/"
+      "redirect_url": "https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn"
     },
     {
       "source_path_from_root": "/learn-pr/azure/create-an-azure-account/3-exercise-create-an-azure-account.yml",
-      "redirect_url": "https://azure.microsoft.com/free/"
+      "redirect_url": "https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn"
     },
     {
       "source_path_from_root": "/learn-pr/azure/create-an-azure-account/3a-multiple-subscriptions.md",
@@ -6214,15 +6214,15 @@
     },
     {
       "source_path_from_root": "/learn-pr/azure/create-an-azure-account/4-multiple-subscriptions.yml",
-      "redirect_url": "https://azure.microsoft.com/free/"
+      "redirect_url": "https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn"
     },
     {
       "source_path_from_root": "/learn-pr/azure/create-an-azure-account/5-support-options.yml",
-      "redirect_url": "https://azure.microsoft.com/free/"
+      "redirect_url": "https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn"
     },
     {
       "source_path_from_root": "/learn-pr/azure/create-an-azure-account/6-knowledge-check.yml",
-      "redirect_url": "https://azure.microsoft.com/free/"
+      "redirect_url": "https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn"
     },
     {
       "source_path_from_root": "/learn-pr/azure/create-an-azure-account/6-support-options.md",
@@ -6230,11 +6230,11 @@
     },
     {
       "source_path_from_root": "/learn-pr/azure/create-an-azure-account/7-summary.yml",
-      "redirect_url": "https://azure.microsoft.com/free/"
+      "redirect_url": "https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn"
     },
     {
       "source_path_from_root": "/learn-pr/azure/create-an-azure-account/index.yml",
-      "redirect_url": "https://azure.microsoft.com/free/"
+      "redirect_url": "https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn"
     },
     {
       "source_path_from_root": "/learn-pr/azure/create-azure-active-directory-test-environment/1-introduction.yml",
