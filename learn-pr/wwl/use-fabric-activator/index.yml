@@ -8,6 +8,7 @@ metadata:
   ms.author: theresai
   ms.topic: module
   ms.service: fabric
+  ms.subservice: rti-core
 title: Use Activator in Microsoft Fabric
 summary: Fabric Activator is an event detection engine that automatically triggers actions when specific patterns or conditions are detected in data sources.
 abstract: |
