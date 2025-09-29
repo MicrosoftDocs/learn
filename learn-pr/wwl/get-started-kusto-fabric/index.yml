@@ -8,6 +8,7 @@ metadata:
   ms.author: theresai
   ms.topic: module-standard-task-based
   ms.service: fabric
+  ms.subservice: rti-core
 title: Get started with Real-Time Intelligence in Microsoft Fabric
 summary: Real-Time Intelligence in Microsoft Fabric helps you ingest, process, store, visualize, and act on data in motion to get insights from events as they happen.
 abstract: |
