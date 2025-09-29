@@ -8,7 +8,8 @@ metadata:
   ms.author: theresai
   ms.topic: module-standard-task-based
   ms.custom:
-  ms.service: azure
+  ms.service: fabric
+  ms.subservice: rti-core
   ai-usage: human-only
 title: Work with real-time data in an Eventhouse in Microsoft Fabric
 summary: An eventhouse in Microsoft Fabric is a container that houses one or more KQL databases for storing and analyzing real-time data.
