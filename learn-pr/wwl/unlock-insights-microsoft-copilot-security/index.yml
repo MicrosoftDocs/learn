@@ -4,7 +4,7 @@ metadata:
   title: Unlock Insights with Microsoft Security Copilot
   description: This module introduces Microsoft Security Copilot, an AI-powered security solution designed to enhance the efficiency of security professionals. It offers a natural language, assistive copilot experience for scenarios like incident response, threat hunting, and posture management.
   author: wwlpublish
-  ms.author: rstearman
+  ms.author: dahans
   ms.date: 06/19/2024
   ms.service: copilot-for-service
   ai-usage: ai-assisted
