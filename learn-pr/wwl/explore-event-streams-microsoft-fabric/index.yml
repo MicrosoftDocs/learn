@@ -8,7 +8,7 @@ metadata:
   ms.author: theresai
   ms.topic: module-standard-task-based
   ms.service: fabric
-  ms.subservice: rti-eventstream
+  ms.subservice: rti-core
   ai-usage: human-only
 title: Use Eventstream in Microsoft Fabric
 summary: Eventstream in Real-Time Intelligence (RTI) enables you to ingest, transform, and route real-time data.
