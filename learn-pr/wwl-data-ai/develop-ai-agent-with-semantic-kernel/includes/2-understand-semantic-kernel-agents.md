@@ -8,9 +8,9 @@ The Microsoft Agent Framework offers different components that can be used indiv
 
 - **Chat clients** - provide abstractions for connecting to AI services from different providers under a common interface. Supported providers include Azure OpenAI, OpenAI, Anthropic, and more through the `BaseChatClient` abstraction.
 
-- **Function tools** - containers for custom functions that extend agent capabilities. Functions can be invoked automatically by agents to integrate with external APIs and services.
+- **Function tools** - containers for custom functions that extend agent capabilities. Agents can automaticallly invoke functions to integrate with external APIs and services.
 
-- **Built-in tools** - pre-built capabilities including Code Interpreter for Python execution, File Search for document analysis, and Web Search for internet access.
+- **Built-in tools** - prebuilt capabilities including Code Interpreter for Python execution, File Search for document analysis, and Web Search for internet access.
 
 - **Conversation management** - structured message system with roles (USER, ASSISTANT, SYSTEM, TOOL) and `AgentThread` for persistent conversation context across interactions.
 
@@ -30,7 +30,7 @@ Azure AI Foundry Agents provide enterprise-level capabilities using the Azure AI
 
 - **Secure enterprise integration** – Enables secure and compliant AI agent development with Azure CLI authentication, RBAC, and customizable storage options.
 
-When you use Azure AI Foundry Agents, you get the full power of enterprise Azure capabilities combined with the features of the Microsoft Agent Framework. This creates robust AI-driven workflows that can scale efficiently across business applications.
+When you use Azure AI Foundry Agents, you get the full power of enterprise Azure capabilities combined with the features of the Microsoft Agent Framework. These features can help you create robust AI-driven workflows that can scale efficiently across business applications.
 
 ### Agent framework core concepts
 
@@ -48,4 +48,4 @@ When you use Azure AI Foundry Agents, you get the full power of enterprise Azure
 
 - **Authentication methods** - supports multiple authentication methods including Azure CLI credentials, API keys, MSAL for Microsoft business authentication, and role-based access control.
 
-This framework supports autonomous, multi-agent AI behaviors while maintaining a flexible architecture that lets you to mix and match agents, tools, and workflows as needed. The provider-agnostic design enables switching between OpenAI, Azure OpenAI, Anthropic, and other providers without changing your code, making it perfect for building smart, adaptable AI systems from simple chatbots to complex business solutions.
+This framework supports autonomous, multi-agent AI behaviors while maintaining a flexible architecture that lets you mix and match agents, tools, and workflows as needed. The design lets you switch between OpenAI, Azure OpenAI, Anthropic, and other providers without changing your code, making it easy to build AI systems—from simple chatbots to complex business solutions.
