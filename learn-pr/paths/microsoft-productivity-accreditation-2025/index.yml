@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.dpu.microsoft-productivity-accreditation-2025
+title: Microsoft Productivity Accreditation 2025
+metadata:
+  title: Microsoft Productivity Accreditation 2025
+  description: This Learning Path introduces business professionals to Outlook, Teams, PowerPoint, and Excel in Microsoft 365 Business Standard and Office 2024 Home and Business. The modules guide learners through key features in each tool to save time and streamline everyday tasks. By completing this path, learners gain practical skills to boost productivity and work more efficiently.
+  ms.date: 09/26/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: learning-path
+  ms.custom: C361225
+summary: >
+  Discover how to use Outlook, Teams, PowerPoint, and Excel in Microsoft 365 Business Standard and Office 2024 Home and Business to save time, work smarter, and boost productivity.
+prerequisites: None
+iconUrl: /training/achievements/microsoft-productivity-accreditation-2025.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - m365-business
+modules:
+  - learn.dpu.introduction-to-microsoft-365-business-standard
+  - learn.dpu.introduction-to-office-home-and-business-2024
+  - learn.dpu.manage-email-efficiently
+  - learn.dpu.automate-meeting-scheduling
+  - learn.dpu.work-smarter-excel
+  - learn.dpu.collaborate-on-presentations-using-powerpoint
+trophy:
+  uid: learn.dpu.microsoft-productivity-accreditation-2025.trophy
