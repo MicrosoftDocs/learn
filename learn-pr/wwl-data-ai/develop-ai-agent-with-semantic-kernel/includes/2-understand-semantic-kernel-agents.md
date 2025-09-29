@@ -8,7 +8,7 @@ The Microsoft Agent Framework offers different components that can be used indiv
 
 - **Chat clients** - provide abstractions for connecting to AI services from different providers under a common interface. Supported providers include Azure OpenAI, OpenAI, Anthropic, and more through the `BaseChatClient` abstraction.
 
-- **Function tools** - containers for custom functions that extend agent capabilities. Agents can automaticallly invoke functions to integrate with external APIs and services.
+- **Function tools** - containers for custom functions that extend agent capabilities. Agents can automatically invoke functions to integrate with external APIs and services.
 
 - **Built-in tools** - prebuilt capabilities including Code Interpreter for Python execution, File Search for document analysis, and Web Search for internet access.
 
