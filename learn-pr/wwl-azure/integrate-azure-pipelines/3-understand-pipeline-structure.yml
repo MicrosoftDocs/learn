@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.integrate-azure-pipelines.understand-pipeline-structure
-title: Understand the Pipeline Structure
+title: Understand the pipeline structure
 metadata:
-  title: Understand the Pipeline Structure
+  title: Understand the pipeline structure
   description: "Learn how to organize pipeline components effectively using stages, jobs, and dependencies to create maintainable and scalable CI/CD workflows."
-  ms.date: 09/26/2025
+  ms.date: 09/29/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.integrate-azure-pipelines.detail-templates
-title: Detail Templates
+title: Detail templates
 metadata:
-  title: Detail Templates
+  title: Detail templates
   description: "Detail templates"
-  ms.date: 09/26/2025
+  ms.date: 09/29/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

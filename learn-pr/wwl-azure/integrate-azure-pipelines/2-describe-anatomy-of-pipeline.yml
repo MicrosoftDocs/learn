@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.integrate-azure-pipelines.describe-anatomy-of-pipeline
-title: Describe the Anatomy of a Pipeline
+title: Describe the anatomy of a pipeline
 metadata:
-  title: Describe the Anatomy of a Pipeline
+  title: Describe the anatomy of a pipeline
   description: "Understand the core components and structure of Azure Pipelines, including triggers, stages, jobs, and steps that form the foundation of CI/CD workflows."
-  ms.date: 09/26/2025
+  ms.date: 09/29/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit

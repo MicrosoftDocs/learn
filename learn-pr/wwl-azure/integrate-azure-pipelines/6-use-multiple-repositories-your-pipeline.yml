@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.integrate-azure-pipelines.use-multiple-repositories-your-pipeline
-title: Use Multiple Repositories in Your Pipeline
+title: Use multiple repositories in your pipeline
 metadata:
-  title: Use Multiple Repositories in Your Pipeline
+  title: Use multiple repositories in your pipeline
   description: "Learn how to configure and manage multiple repositories in Azure Pipelines to support complex projects with distributed codebases and shared components."
-  ms.date: 09/26/2025
+  ms.date: 09/29/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
