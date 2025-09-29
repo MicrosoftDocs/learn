@@ -36,7 +36,7 @@ Onboarding to Security Copilot is a two-step process:
 
 You can choose from the following options to provision capacity:
 
-- [Option 1 (Recommended): Provision capacity within Security Copilot](#option-1-recommended-provision-capacity-through-copilot-for-security)
+- [Option 1 (Recommended): Provision capacity within Security Copilot](#option-1-recommended-provision-capacity-through-security-copilot)
 - [Option 2: Provision capacity through Azure](#option-2-provision-capacity-in-azure)
 
 
