@@ -37,25 +37,25 @@ A common special case is the maker-checker loop. Here, one agent (the maker) pro
 
 ## Implement group chat orchestration
 
-Implement the group chat orchestration pattern with the Semantic Kernel SDK:
+Implement the group chat orchestration pattern with the Microsoft Agent Framework SDK:
 
-1. **Define your agents**  
-   Create agent instances (for example, `ChatCompletionAgent`) with specific instructions and AI services. Each agent should have a specific role.
+1. **Create your chat client**  
+   Set up a chat client (for example, `AzureOpenAIChatClient`) with appropriate credentials to connect to your AI service provider.
 
-2. **Set up the group chat orchestration**  
-   Create a `GroupChatOrchestration` object with your agents and a chat manager (e.g., `RoundRobinGroupChatManager`) that controls the conversation flow. You can also add a callback to observe agent responses.
+2. **Define your agents**  
+   Create agent instances using the chat client's `create_agent` method. Each agent should have specific instructions and a name that defines its role and expertise area.
 
-3. **Start the runtime**  
-   Initialize and start an `InProcessRuntime` to manage agent execution.
+3. **Build the group chat workflow**  
+   Use the `GroupChatBuilder` class to create a workflow that can run multiple agents in parallel. Add your agent instances as participants using the `participants()` method, then call `build()` to create the workflow.
 
-4. **Invoke the orchestration**  
-   Call the orchestration's `invoke` method to start the conversation. Agents will take turns responding according to the chat manager's rules.
+4. **Run the workflow**  
+   Call the workflow's `run` method with the task or input you want the agents to work on. The workflow runs all agents concurrently and returns events containing the results.
 
-5. **Collect results**  
-   Await the final conversation output after all rounds are complete.
+5. **Process the results**  
+   Extract the outputs from the workflow events using `get_outputs()`. The results contain the combined conversations from all agents, with each agent's response included in the final output.
 
-6. **Stop the runtime (optional)**  
-   After processing, cleanly shut down the runtime to free resources.
+6. **Handle the aggregated responses**  
+   Process the aggregated messages from all agents. Each message includes the author name and content, allowing you to identify which agent provided each response.
 
 ## Customizing the group chat manager
 
@@ -79,4 +79,4 @@ During each round of the conversation, the chat manager calls methods in this or
 
 This ensures user input and termination conditions are handled before moving the conversation forward. Override these methods in your custom manager to change behavior.
 
-Group chat orchestration enables multiple AI agents—and optionally humans—to collaborate through guided conversation and iterative feedback. It's ideal for complex tasks that benefit from diverse expertise and dynamic interaction. While it requires careful management, this pattern offers transparency and flexibility in decision-making and creative workflows. The Semantic Kernel Python SDK makes it easy to implement and customize group chat orchestration for your needs.
+Group chat orchestration enables multiple AI agents—and optionally humans—to collaborate through guided conversation and iterative feedback. It's ideal for complex tasks that benefit from diverse expertise and dynamic interaction. While it requires careful management, this pattern offers transparency and flexibility in decision-making and creative workflows. The Microsoft Agent Framework SDK makes it easy to implement and customize group chat orchestration for your needs.

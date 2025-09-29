@@ -26,30 +26,27 @@ You may want to avoid this pattern when:
 
 ## Implementing Magentic orchestration
 
-Implement the Magentic orchestration pattern with the Semantic Kernel SDK:
+Implement the Magentic orchestration pattern with the Microsoft Agent Framework:
 
 1. **Define specialized agents**  
-   Create agent instances (for example, `ChatCompletionAgent`) with specific instructions and AI services. Each agent should have a specialized role.
+   Create agent instances (for example, `ChatAgent`) with specific instructions and chat clients. Each agent should have a specialized role and capabilities suited for different aspects of the complex task.
 
-1. **Set up the Magentic manager**  
-   The `StandardMagenticManager` coordinates agent collaboration, plans workflows, and tracks progress.
+2. **Set up event handling callback**  
+   Define an async callback function to handle different types of events during orchestration, including orchestrator messages, agent streaming updates, agent messages, and final results.
 
-1. **Add optional response observation**  
-   Define a callback to monitor and log agent messages in real time.
+3. **Build the Magentic workflow**  
+   Use the `MagenticBuilder` class to create the orchestration. Add your agent instances as participants, configure the event callback with streaming mode, and set up the standard manager with appropriate parameters like max round count and stall limits.
 
-1. **Create the orchestration**  
-   Combine agents and the manager in a `MagenticOrchestration` object.
+4. **Configure the standard manager**  
+   The standard manager coordinates agent collaboration using a chat client for planning and progress tracking. Configure parameters like maximum round count, stall count, and reset count to control the orchestration behavior.
 
-1. **Start the runtime**  
-   Use `InProcessRuntime` to manage execution.
+5. **Run the workflow**  
+   Call the workflow's `run_stream` method with your complex task. The workflow will dynamically plan, delegate work to appropriate agents, and coordinate their collaboration to solve the problem.
 
-1. **Invoke the orchestration**  
-   Invoke the orchestration with your complex task. The manager plans, delegates, and coordinates the agents to solve the problem.
+6. **Process workflow events**  
+   Iterate through the workflow events using an async loop. Handle different event types including `WorkflowOutputEvent` which contains the final results from the orchestration.
 
-1. **Collect and process results**  
-   Wait for orchestration completion, then output the final report.
+7. **Extract the final result**  
+   Collect the final output from the workflow events. The result contains the complete solution developed through the collaborative effort of all participating agents.
 
-1. **Stop the runtime (optional)**  
-   Cleanly shut down to free resources.
-
-Magentic orchestration excels at solving complex, evolving problems that require real-time coordination between specialized agents. It's ideal for tasks where the plan can't be defined in advance and must adapt as new information emerges. Using the Semantic Kernel Python SDK, you can build systems that dynamically design, refine, and execute solution paths.
+Magentic orchestration excels at solving complex, evolving problems that require real-time coordination between specialized agents. It's ideal for tasks where the plan can't be defined in advance and must adapt as new information emerges. Using the Microsoft Agent Framework, you can build systems that dynamically design, refine, and execute solution paths through intelligent agent collaboration.

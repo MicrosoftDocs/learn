@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.wwl.orchestrate-sk-multi-agent-solution
 metadata:
-  title: Orchestrate a multi-agent solution using Semantic Kernel
-  description: Learn how to design multi-agent solutions with Semantic Kernel and Azure AI Foundry
+  title: Orchestrate a multi-agent solution using the Microsoft Agent Framework
+  description: Learn how to design multi-agent solutions with the Microsoft Agent Framework SDK
   author: buzahid
   ms.author: buzahid
-  ms.date: 08/14/2025
+  ms.date: 09/26/2025
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
-title: Orchestrate a multi-agent solution using Semantic Kernel
-summary: Learn how to use the Semantic Kernel SDK to develop your own AI agents that can collaborate for a multi-agent solution.
+title: Orchestrate a multi-agent solution using the Microsoft Agent Framework
+summary: Learn how to use the the Microsoft Agent Framework SDK to develop your own AI agents that can collaborate for a multi-agent solution.
 abstract: |
   By the end of this module, you'll be able to:
-  - Build AI agents using the Semantic Kernel SDK
+  - Build AI agents using the the Microsoft Agent Framework SDK
   - Understand how and when to use different orchestration patterns
   - Develop multi-agent solutions
 prerequisites: |
@@ -39,7 +39,6 @@ units:
 - learn.wwl.orchestrate-sk-multi-agent-solution.use-group-chat-orchestration
 - learn.wwl.orchestrate-sk-multi-agent-solution.use-handoff-orchestration
 - learn.wwl.orchestrate-sk-multi-agent-solution.use-magentic-orchestration
-- learn.wwl.orchestrate-sk-multi-agent-solution.manage-orchestration-runtime-lifecycles
 - learn.wwl.orchestrate-sk-multi-agent-solution.exercise
 - learn.wwl.orchestrate-sk-multi-agent-solution.knowledge-check
 - learn.wwl.orchestrate-sk-multi-agent-solution.summary
