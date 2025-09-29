@@ -18,7 +18,7 @@ Azure AI Speech is the back-end engine that completes the solution you're buildi
 Go to the [Microsoft Azure portal](https://portal.azure.com) and follow the steps to create a Speech resource. This process gives you access to your keys, locations/regions, and endpoints. You need these details before you can consume the service in Power Apps.
 
 > [!NOTE]
-> You need an active Microsoft Azure subscription to carry out this exercise. If you're a student you can benefit from a [free Azure for Students subscription](https://azure.microsoft.com/free/students/?cid=msft_learn&WT.mc_id=academic-114984-somelezediko). If you're not a student, you can still sign up for a [free Azure trial](https://azure.microsoft.com/free/?WT.mc_id=academic-114984-somelezediko).
+> You need an active Microsoft Azure subscription to carry out this exercise. If you're a student you can benefit from a [free Azure for Students subscription](https://azure.microsoft.com/free/students/?cid=msft_learn&WT.mc_id=academic-114984-somelezediko). If you're not a student, you can still sign up for a [free Azure trial](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn&WT.mc_id=academic-114984-somelezediko).
 
 ## About Microsoft Azure Blob Storage
 
