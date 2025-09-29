@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration
 metadata:
-  title: Optimize Microsoft Intune for Microsoft Copilot for Security Integration
+  title: Optimize Microsoft Intune for Microsoft Security Copilot Integration
   description: Learn about Microsoft Security Copilot and Intune for securing corporate IT. Enhance security operations, get contextual responses, and improve incident response. Implement naming conventions and manage devices efficiently.
   author: wwlpublish
   ms.author: rstearman
@@ -11,12 +11,12 @@ metadata:
   ms.topic: module
   ms.collection:
     - wwl-ai-copilot
-title: Optimize Microsoft Intune for Microsoft Copilot for Security Integration
+title: Optimize Microsoft Intune for Microsoft Security Copilot Integration
 summary: Learn about Microsoft Security Copilot and Intune for securing corporate IT. Enhance security operations, get contextual responses, and improve incident response. Implement naming conventions and manage devices efficiently.
 abstract: |
   After completing this module, you'll be able to:
 
-  - Use Microsoft Copilot for Security and Intune for Enhanced Endpoint Management and Security.
+  - Use Microsoft Security Copilot and Intune for Enhanced Endpoint Management and Security.
 
   - Understand and Implement Effective Device Naming Conventions.
 
@@ -24,7 +24,7 @@ abstract: |
 
   - Create and Manage Groups in Microsoft Intune.
 
-  - Understand Authentication and Role Assignment in Microsoft Copilot for Security.
+  - Understand Authentication and Role Assignment in Microsoft Security Copilot.
 
   - Integrate and Use Microsoft Security Copilot with Microsoft Intune.
 
