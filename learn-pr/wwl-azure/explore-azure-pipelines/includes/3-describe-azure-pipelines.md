@@ -136,8 +136,8 @@ Azure Pipelines offers unique advantages:
 
 Ready to try Azure Pipelines? Here's what you need:
 
-1. **Source code in Git** - Your project in any supported Git repository.
-2. **Azure DevOps account** - Free account includes generous build minutes.
-3. **A simple pipeline definition** - YAML file describing your build and deployment process.
+- **Source code in Git** - Your project in any supported Git repository.
+- **Azure DevOps account** - Free account includes generous build minutes.
+- **A simple pipeline definition** - YAML file describing your build and deployment process.
 
 The next section will introduce you to the key terms and concepts you'll encounter when working with Azure Pipelines.

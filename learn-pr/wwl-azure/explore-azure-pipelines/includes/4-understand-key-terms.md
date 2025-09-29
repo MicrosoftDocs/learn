@@ -101,29 +101,29 @@ Understanding these key terms will help you work confidently with Azure Pipeline
 - **What it is**: The practice of automatically building and testing your code whenever changes are made.
 - **Why it matters**: Catches problems early when they're easier and cheaper to fix.
 - **What happens**:
-  1. Developer commits code changes
-  2. Pipeline automatically builds the application
-  3. Automated tests run to check for problems
-  4. Team gets immediate feedback about code quality
+  - Developer commits code changes
+  - Pipeline automatically builds the application
+  - Automated tests run to check for problems
+  - Team gets immediate feedback about code quality
 
 ### Continuous Delivery (CD)
 
 - **What it is**: The practice of automatically deploying tested code to different environments.
 - **Why it matters**: Gets new features to users faster with less risk.
 - **What happens**:
-  1. Code passes all CI checks
-  2. Application is automatically deployed to test environments
-  3. Further testing happens in production-like conditions
-  4. When ready, code is deployed to production
+  - Code passes all CI checks
+  - Application is automatically deployed to test environments
+  - Further testing happens in production-like conditions
+  - When ready, code is deployed to production
 
 ## How these concepts work together
 
-1. **Developer commits code** → **Trigger** fires
-2. **Pipeline** starts and runs through each **Stage**
-3. **Agents** execute **Jobs** containing multiple **Tasks**
-4. **Build** completes and produces **Artifacts**
-5. **Artifacts** get deployed to **Deployment targets**
-6. Process repeats with each code change
+- **Developer commits code** → **Trigger** fires
+- **Pipeline** starts and runs through each **Stage**
+- **Agents** execute **Jobs** containing multiple **Tasks**
+- **Build** completes and produces **Artifacts**
+- **Artifacts** get deployed to **Deployment targets**
+- Process repeats with each code change
 
 Understanding these terms helps you:
 
