@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-security-unity-catalog
 metadata:
-  title: Implement Security and Access Control in Unity Catalog
-  description: "Learn about security and access control in Unity Catalog"
+  title: Implement Security and Access Control in Azure Databricks Unity Catalog
+  description: "Learn about security and access control in Azure Databricks Unity Catalog"
   ms.date: 09/30/2025
   author: weslbo
   ms.author: wedebols
@@ -19,7 +19,7 @@ abstract: |
   * Apply a repeatable pattern for granting and auditing access.
 prerequisites: |
   * Basic understanding of data lakehouse concepts (catalogs, schemas, tables, views).
-  * Familiarity with Databricks workspace navigation (clusters, SQL warehouses, notebooks).
+  * Familiarity with Azure Databricks workspace navigation (clusters, SQL warehouses, notebooks).
   * Introductory knowledge of SQL (running queries, creating tables, granting permissions).
 iconUrl: /training/achievements/data-engineer-azure-databricks.svg
 levels:

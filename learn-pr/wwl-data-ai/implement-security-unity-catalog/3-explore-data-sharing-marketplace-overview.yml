@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-security-unity-catalog.explore-data-sharing-marketplace
-title: Explore Databricks Marketplace and Delta Sharing
+title: Explore Azure Databricks Marketplace and Delta Sharing
 metadata:
-  title: Explore Databricks Marketplace and Delta Sharing
-  description: "Explore Databricks Marketplace and Delta Sharing"
+  title: Explore Azure Databricks Marketplace and Delta Sharing
+  description: "Explore Azure Databricks Marketplace and Delta Sharing"
   ms.date: 09/30/2025
   author: weslbo
   ms.author: wedebols

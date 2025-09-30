@@ -40,7 +40,7 @@ Once credentials are validated, Unity Catalog generates a **scoped temporary acc
 The compute resource (cluster or SQL warehouse) uses the token and URL provided by Unity Catalog to request data directly from the underlying ADLS Gen2 endpoints (via `abfss://` or `dfs.core.windows.net` URL)
 
 > ![NOTE]
-> If your ADLS account has firewall or virtual network restrictions, you must explicitly allow the Databricks access connector / managed identity to access the storage (in addition to allowing the compute nodes). If the storage account is locked down, even a valid token may be rejected if the identity is not allowed via firewall rules.
+> If your ADLS account has firewall or virtual network restrictions, you must explicitly allow the Azure Databricks access connector / managed identity to access the storage (in addition to allowing the compute nodes). If the storage account is locked down, even a valid token may be rejected if the identity is not allowed via firewall rules.
 
 ### Step 6: Data transfer
 

@@ -1,4 +1,4 @@
-The Databricks Marketplace is a platform for discovering and sharing data, analytics, and AI products. It enables both providers and consumers to exchange assets such as datasets, notebooks, dashboards, and machine learning models. The marketplace is powered by the open-source **Delta Sharing** standard, which allows data products to be accessed and used across different platforms, even outside of Databricks.
+The Databricks Marketplace is a platform for discovering and sharing data, analytics, and AI products. It enables both providers and consumers to exchange assets such as datasets, notebooks, dashboards, and machine learning models. The marketplace is powered by the open-source **Delta Sharing** standard, which allows data products to be accessed and used across different platforms, even outside of Azure Databricks.
 
 By removing vendor lock-in, the marketplace promotes openness and flexibility. Providers can distribute and monetize their data assets, while consumers can quickly evaluate and use external resources within their own workflows. This streamlined exchange supports faster progress in analytics and AI initiatives.
 
@@ -14,9 +14,9 @@ The marketplace contains a wide range of assets:
 
 These assets might be available for free or at a set price, depending on the provider. You can browse, preview, and, if appropriate, download the resources into their environment.
 
-## Navigating the Marketplace in Databricks
+## Navigating the Marketplace in Azure Databricks
 
-Inside the Databricks workspace, the **Marketplace** appears alongside other key features such as Partner Connect. The interface highlights featured providers, staff picks, and popular resources. Assets are organized into categories such as financial data, healthcare, media, and life sciences.
+Inside the Azure Databricks workspace, the **Marketplace** appears alongside other key features such as Partner Connect. The interface highlights featured providers, staff picks, and popular resources. Assets are organized into categories such as financial data, healthcare, media, and life sciences.
 
 ![Screenshot of Azure Databricks Marketplace (with content).](../media/market-place-with-content.png)
 
@@ -48,7 +48,7 @@ Within the catalog, you can open tables and create visualizations and build dash
 
 ## About Delta Sharing
 
-Delta Sharing is an **open protocol for sharing data securely** between different organizations and platforms. It was developed by Databricks but is open source, which means it can be used outside of Databricks as well. The protocol is designed to make it easier to exchange data without moving large files or setting up custom connections for each partner.
+Delta Sharing is an **open protocol for sharing data securely** between different organizations and platforms. It was developed by Databricks but is open source, which means it can be used outside of Azure Databricks as well. The protocol is designed to make it easier to exchange data without moving large files or setting up custom connections for each partner.
 
 ![Diagram showing the concept of Delta Sharing.](../media/delta-sharing.png)
 
@@ -58,4 +58,4 @@ Delta Sharing works across **multiple clouds and tools**, including Azure, AWS, 
 
 The process is straightforward. Providers select tables to share, generate a profile with access details, and distribute it to consumers. Consumers then connect through a compatible client and query the data directly, without needing to copy it into their own systems.
 
-In the **Databricks Marketplace**, Delta Sharing is the method used to deliver datasets and other assets. When a user selects an item, it appears as a shared catalog in their workspace, ready for analysis. Because the protocol is open, the same data can also be accessed from outside Databricks using supported tools.
+In the **Databricks Marketplace**, Delta Sharing is the method used to deliver datasets and other assets. When a user selects an item, it appears as a shared catalog in their workspace, ready for analysis. Because the protocol is open, the same data can also be accessed from outside Azure Databricks using supported tools.
