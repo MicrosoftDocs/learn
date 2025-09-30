@@ -1,56 +1,135 @@
-Understanding the basic terms and parts of Azure Pipelines helps you further explore how it can help you deliver better code more efficiently and reliably.
+Understanding these key terms will help you work confidently with Azure Pipelines and communicate effectively with your team.
 
-:::image type="content" source="../media/key-pipeline-concepts-overview-ca80c85c.png" alt-text="Diagram showing Key pipeline terms with a trigger action, starting the pipeline with multiple stages, using various jobs and tasks to create a build artifact, and start the deployment.":::
+:::image type="content" source="../media/key-pipeline-concepts-overview-ca80c85c.png" alt-text="Diagram that shows key pipeline terms with a trigger action, starting the pipeline with multiple stages, using various jobs and tasks to create a build artifact, and start the deployment.":::
 
+## Core building blocks
 
-## Agent
+### Pipeline
 
-When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs a build or deployment job.
+- **What it is**: A pipeline is like a recipe that describes exactly how to build, test, and deploy your application.
+- **Think of it as**: A step-by-step instruction manual that tells Azure Pipelines what to do with your code.
+- **Example**: "First build the app, then run tests, then deploy to staging, finally deploy to production."
 
-## Artifact
+### Stage
 
-An artifact is a collection of files or packages published by a build. Artifacts are made available for the tasks, such as distribution or deployment.
+- **What it is**: Stages are the major phases of your pipeline. Each stage represents a logical boundary in your process.
+- **Think of it as**: Chapters in your instruction manual, each focusing on a different goal.
+- **Common examples**:
+  - **Build stage** - "Compile the code and create the application."
+  - **Test stage** - "Run all automated tests to verify quality."
+  - **Deploy stage** - "Release the application to users."
 
-## Build
+### Job
 
-A build represents one execution of a pipeline. It collects the logs associated with running the steps and the test results.
+- **What it is**: A job is a collection of related tasks that run together on the same computer (agent).
+- **Think of it as**: A set of related steps that need to happen in the same place.
+- **Example**: One job might compile your code and run unit tests, while another job runs security scans.
 
-## Continuous delivery
+### Task
 
-Continuous delivery (CD) (also known as Continuous Deployment) is a process by which code is built, tested, and deployed to one or more test and production stages. Deploying and testing in multiple stages helps drive quality. Continuous integration systems produce deployable artifacts, which include infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fix existing systems. Monitoring and alerting systems constantly run to drive visibility into the entire CD process. This process ensures that errors are caught often and early.
+- **What it is**: A task is a single action or step in your pipeline.
+- **Think of it as**: Individual instructions like "compile code," "run tests," or "copy files."
+- **Examples**:
+  - Build a .NET application.
+  - Run JavaScript tests.
+  - Deploy to Azure App Service.
+  - Send a notification email.
 
-## Continuous integration
+## Execution and automation
 
-Continuous integration (CI) is the practice used by development teams to simplify the testing and building of code. CI helps to catch bugs or problems early in the development cycle, making them more accessible and faster to fix. Automated tests and builds are run as part of the CI process. The process can run on a schedule, whenever code is pushed, or both. Items known as artifacts are produced from CI systems. The continuous delivery release pipelines use them to drive automatic deployments.
+### Agent
 
-## Deployment target
+- **What it is**: An agent is a computer (virtual or physical) that actually runs your pipeline tasks.
+- **Think of it as**: The worker that follows your pipeline instructions and does the actual work.
+- **Types**:
+  - **Microsoft-hosted agents** - Microsoft provides and maintains these (easiest option).
+  - **Self-hosted agents** - You provide and maintain your own computers.
 
-A deployment target is a virtual machine, container, web app, or any service used to host the developed application. A pipeline might deploy the app to one or more deployment targets after the build is completed and tests are run.
+### Build
 
-## Job
+- **What it is**: A build is one complete run of your pipeline from start to finish.
+- **Think of it as**: One execution of your recipe, producing a specific result.
+- **What it includes**:
+  - All the logs showing what happened
+  - Test results and reports
+  - Any files or packages that were created
 
-A build contains one or more jobs. Most jobs run on an agent. A job represents an execution boundary of a set of steps. All the steps run together on the same agent.
+### Trigger
 
-For example, you might build two configurations - x86 and x64. In this case, you have one build and two jobs.
+- **What it is**: A trigger tells Azure Pipelines when to start running your pipeline.
+- **Think of it as**: The event that kicks off your automated process.
+- **Common triggers**:
+  - **Code changes** - Run when someone commits code
+  - **Schedule** - Run at specific times (like every night)
+  - **Manual** - Run when someone clicks a button
+  - **Other pipelines** - Run when another pipeline completes
 
-## Pipeline
+## Outputs and deployment
 
-A pipeline defines the continuous integration and deployment process for your app. It's made up of steps called tasks.
+### Artifact
 
-It can be thought of as a script that describes how your test, build, and deployment steps are run.
+- **What it is**: An artifact is a collection of files produced by your pipeline that other processes can use.
+- **Think of it as**: The finished products from your pipeline that you want to keep or deploy.
+- **Examples**:
+  - Compiled application files ready for deployment
+  - Test reports showing what passed or failed
+  - Documentation generated from your code
+  - Container images ready for deployment
 
-## Release
+### Deployment target
 
-When you use the visual designer, you can create a release or a build pipeline. A release is a term used to describe one execution of a release pipeline. It's made up of deployments to multiple stages.
+- **What it is**: A deployment target is where your application will actually run for users.
+- **Think of it as**: The destination where your finished application goes to serve real users.
+- **Examples**:
+  - Azure App Service for web applications
+  - Virtual machines in the cloud
+  - Kubernetes clusters for containerized apps
+  - Azure Functions for serverless code
 
-## Stage
+### Release
 
-Stages are the primary divisions in a pipeline: "build the app," "run integration tests," and "deploy to user acceptance testing" are good examples of stages.
+**What it is**: A release represents deploying your application to one or more environments.
+**Think of it as**: The process of taking your finished application and making it available to users.
 
-## Task
+> [!NOTE]
+> In modern Azure Pipelines, releases are often handled within the same pipeline rather than separate release pipelines.
 
-A task is the building block of a pipeline. For example, a build pipeline might consist of build and test tasks. A release pipeline consists of deployment tasks. Each task runs a specific job in the pipeline.
+## Process concepts
 
-## Trigger
+### Continuous Integration (CI)
 
-A trigger is set up to tell the pipeline when to run. You can configure a pipeline to run upon a push to a repository at scheduled times or upon completing another build. All these actions are known as triggers.
+- **What it is**: The practice of automatically building and testing your code whenever changes are made.
+- **Why it matters**: Catches problems early when they're easier and cheaper to fix.
+- **What happens**:
+  - Developer commits code changes
+  - Pipeline automatically builds the application
+  - Automated tests run to check for problems
+  - Team gets immediate feedback about code quality
+
+### Continuous Delivery (CD)
+
+- **What it is**: The practice of automatically deploying tested code to different environments.
+- **Why it matters**: Gets new features to users faster with less risk.
+- **What happens**:
+  - Code passes all CI checks
+  - Application is automatically deployed to test environments
+  - Further testing happens in production-like conditions
+  - When ready, code is deployed to production
+
+## How these concepts work together
+
+- **Developer commits code** → **Trigger** fires
+- **Pipeline** starts and runs through each **Stage**
+- **Agents** execute **Jobs** containing multiple **Tasks**
+- **Build** completes and produces **Artifacts**
+- **Artifacts** get deployed to **Deployment targets**
+- Process repeats with each code change
+
+Understanding these terms helps you:
+
+- **Plan your pipeline strategy** more effectively
+- **Communicate clearly** with team members and stakeholders
+- **Troubleshoot problems** when they occur
+- **Optimize your process** over time
+
+In the next section, we'll test your understanding of these concepts with a knowledge check.
