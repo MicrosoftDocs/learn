@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-ai-agent-with-semantic-kernel
 metadata:
-  title: Develop an AI agent with Microsoft Agent Framework
-  description: Learn how to start building agents with Microsoft Agent Framework
+  title: Develop an AI agent with Semantic Kernel
+  description: Learn how to start building agents with Semantic Kernel
   author: buzahid
   ms.author: buzahid
-  ms.date: 09/26/2025
+  ms.date: 08/28/2025
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
-title: Develop an AI agent with Microsoft Agent Framework
-summary: This module provides engineers with the skills to begin building Azure AI Foundry Agent Service agents with Microsoft Agent Framework.
+title: Develop an AI agent with Semantic Kernel
+summary: This module provides engineers with the skills to begin building Azure AI Foundry Agent Service agents with Semantic Kernel.
 abstract: |
   By the end of this module, you'll be able to:
-  - Use Microsoft Agent Framework to connect to an Azure AI Foundry project
-  - Create Azure AI Foundry Agent Service agents using the Microsoft Agent Framework SDK
+  - Use Semantic Kernel to connect to an Azure AI Foundry project
+  - Create Azure AI Foundry Agent Service agents using the Semantic Kernel SDK
   - Integrate plugin functions with your AI agent
 prerequisites: |
   - Familiarity with Azure and the Azure portal.
