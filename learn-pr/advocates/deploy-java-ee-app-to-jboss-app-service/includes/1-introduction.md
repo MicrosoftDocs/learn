@@ -18,7 +18,7 @@ By the end of this module, you'll be able to complete the following tasks:
 
 ## Prerequisites
 
-- An Azure subscription. [Create one for free.](https://azure.microsoft.com/free/)
+- An Azure subscription. [Create one for free.](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
 - [Azure CLI](/cli/azure/install-azure-cli)
 - [Java SE 17 or later](/java/openjdk/download#openjdk-17)
 - [Git](https://git-scm.com/downloads)
