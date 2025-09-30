@@ -3,7 +3,7 @@ Use this Try-This exercise to gain some hands-on experience with Azure Kubernete
 This exercise you enable Azure Policy add on for an Azure Kubernetes Service cluster and verify the assignment is being enforced.
 
 > [!NOTE]
-> To complete this exercise you'll need an [Azure Subscription](https://azure.microsoft.com/free/).
+> To complete this exercise you'll need an [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/).
 2.  Select the Kubernetes cluster.

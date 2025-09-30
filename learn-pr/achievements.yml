@@ -7060,3 +7060,13 @@ achievements:
   title: Migrate an on-premises web application to Azure App Service
   summary: Use the Azure App Service Migration Assistant to assess the readiness of a web app to be deployed on App Service, and perform the migration.
   iconUrl: /training/achievements/migrate-app-service-migration-assistant.svg
+- uid: learn.wwl.extract-data-from-forms-document-intelligence.trophy
+  type: trophy
+  title: Develop solutions with Azure AI Document Intelligence
+  summary: In this learning path, discover how Azure AI Document Intelligence solutions can enable you to capture data from typed or hand-written forms. Learn how to build a solution for your custom form types and integrate that solution into an Azure Cognitive Search pipeline.
+  iconUrl: /training/achievements/extract-data-from-forms-use-form-recognizer.svg
+- uid: learn.azure.intro-to-form-recognizer.badge
+  type: badge
+  title: Introduction to Azure AI Document Intelligence
+  summary: Azure AI Document Intelligence enables automated data identification and extraction from your documents. You can use a programming language SDK or the REST API to easily retrieve and utilize your data.
+  iconUrl: /training/achievements/intro-to-form-recognizer.svg

@@ -26,7 +26,7 @@ prerequisites: |
     - The latest version of the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest&preserve-view=true)
     - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azure-cli-latest&preserve-view=true)
   - A [GitHub](https://github.com?azure-portal=true) account
-  - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
+  - An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
 iconUrl: /training/achievements/deploy-templates-command-line-github-actions.svg
 ratingEnabled: true
 levels:
@@ -51,4 +51,4 @@ units:
 - learn.azure.deploy-templates-command-line-github-actions.9-summary
 badge:
   uid: learn.azure.deploy-templates-command-line-github-actions.badge
-
+
