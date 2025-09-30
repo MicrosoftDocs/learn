@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-pipeline-strategy.implement-code-coverage-show-pipeline
-title: Implement code coverage and show in the pipeline
+title: Implement Code Coverage and Show in the Pipeline
 metadata:
-  title: Implement code coverage and show in the pipeline
-  description: "Implement code coverage and show in the pipeline"
-  ms.date: 05/26/2024
-  author: wwlpublish
+  title: Implement Code Coverage and Show in the Pipeline
+  description: "Learn how to implement code coverage metrics and display them in your Azure Pipelines to track test effectiveness and code quality."
+  ms.date: 09/26/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-implement-code-coverage-show-pipeline.md)]
+  [!include[](includes/6-implement-code-coverage-show-pipeline.md)]

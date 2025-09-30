@@ -1,16 +1,19 @@
-This module describes pipeline strategies, configuration, implementation of multi-agent builds, and what source controls Azure Pipelines supports.
+This module explores how to design and implement effective pipeline strategies using Azure Pipelines. You'll learn about agent management, multi-configuration builds, source control integration, testing strategies, and code coverage implementation for modern CI/CD workflows.
 
 ## Learning objectives
 
-After completing this module, students and professionals can:
+After completing this module, you can:
 
- -  Define a build strategy.
- -  Explain and configure demands.
- -  Implement multi-agent builds.
- -  Use different source control types available in Azure Pipelines.
+- Design and implement effective build strategies
+- Configure and manage agent demands
+- Implement multi-configuration and multi-agent builds
+- Integrate GitHub repositories with Azure Pipelines
+- Design comprehensive testing strategies
+- Implement code coverage in pipeline workflows
+- Use different source control types available in Azure Pipelines
 
 ## Prerequisites
 
- -  Understanding of what DevOps is and its concepts.
- -  Familiarity with version control principles is helpful but isn't necessary.
- -  Beneficial to have experience in an organization that delivers software.
+- Understanding of DevOps concepts and practices
+- Familiarity with version control principles is helpful but not required
+- Experience with software development workflows is beneficial
