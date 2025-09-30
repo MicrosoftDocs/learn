@@ -34,7 +34,6 @@ subjects:
 - cloud-computing
 modules:
 - learn.host-a-web-application-with-azure-web-apps
-# - learn.azure.migrate-app-service-migration-assistant
 - learn-wwl.migrate-sql-workloads-azure-sql-databases
 # - learn.azure.deploy-aspnet-apps-azure-app-service-pipelines
 trophy:
