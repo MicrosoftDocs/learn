@@ -9,7 +9,7 @@ During the process, you'll:
 > * Securely handle the key.
 > * Verify that the service principal works by signing in to Azure by using its credentials.
 
-This exercise requires that you have permission to create applications and service principals in your Microsoft Entra directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant. Alternatively, you can skip this exercise.
+This exercise requires that you have permission to create applications and service principals in your Microsoft Entra directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) and create a new Azure subscription and tenant. Alternatively, you can skip this exercise.
 
 ## Sign in to Azure
 
