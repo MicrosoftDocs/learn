@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-unity-catalog.implement-access-control-strategies
+title: Implement Access Control Strategies
+metadata:
+  title: Implement Access Control Strategies
+  description: "Implement Access Control Strategies"
+  ms.date: 09/30/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/1-introduction.md)]

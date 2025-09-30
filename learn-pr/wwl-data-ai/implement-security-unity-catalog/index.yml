@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.implement-security-unity-catalog
+metadata:
+  title: Implement Security and Access Control in Unity Catalog
+  description: "Learn about security and access control in Unity Catalog"
+  ms.date: 09/30/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module-standard-task-based
+  ms.service: azure
+title: Implement Security and Access Control in Unity Catalog
+summary: You explore different features and tools to help you implement security and access control in Unity Catalog.
+abstract: |
+  At the end of this module, you're able to:
+  * Describe the Unity Catalog query lifecycle and where access checks occur.
+  * Distinguish explicit grants from inherited privileges and state when each is appropriate.
+  * Identify the minimum privileges required for common tasks (querying, creating tables).
+  * Compare Unity Catalog authorization to a legacy Hive metastore approach.
+  * Apply a repeatable pattern for granting and auditing access.
+prerequisites: |
+  * Basic understanding of data lakehouse concepts (catalogs, schemas, tables, views).
+  * Familiarity with Databricks workspace navigation (clusters, SQL warehouses, notebooks).
+  * Introductory knowledge of SQL (running queries, creating tables, granting permissions).
+iconUrl: /training/achievements/data-engineer-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- administrator
+products:
+- azure-databricks
+units:
+- learn.wwl.implement-security-unity-catalog.introduction
+- learn.wwl.implement-security-unity-catalog.understand-query-lifecycle
+- learn.wwl.implement-security-unity-catalog.explore-data-sharing-marketplace
+- learn.wwl.implement-security-unity-catalog.implement-access-control-strategies
+- learn.wwl.implement-security-unity-catalog.excercise-secure-data-access
+- learn.wwl.implement-security-unity-catalog.knowledge-check
+- learn.wwl.implement-security-unity-catalog.summary
+badge:
+  uid: learn.wwl.implement-security-unity-catalog.badge
+
