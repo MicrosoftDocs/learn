@@ -13,7 +13,7 @@ To accomplish these goals, you:
 
 ## Add a user to Azure DevOps
 
-To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
+To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). You can get started with Azure for free.
 
 You don't need an Azure subscription to use Azure DevOps, but here you use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 

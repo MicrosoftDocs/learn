@@ -28,7 +28,7 @@ The Azure free student account offer includes:
  -  A credit to use in the first 12 months.
  -  Free access to certain software developer tools.
 
-The [Azure free student account](https://azure.microsoft.com/free/students/?azure-portal=true) is an offer for students that gives $100 credit and free developer tools. Also, you can sign up without a credit card.
+The [Azure free student account](https://azure.microsoft.com/free/students/?cid=msft_learn) is an offer for students that gives $100 credit and free developer tools. Also, you can sign up without a credit card.
 
 Most of the exercises in the Introduction to Azure learning paths and modules are bring your own subscription (BYOS). BYOS requires you to have a subscription to complete the exercise.
 
