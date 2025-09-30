@@ -28,7 +28,7 @@ To follow along with the exercises in the module, you'll need:
 
 - An Azure account, with the ability to create resource groups and to create Microsoft Entra applications and service principals.
   > [!TIP]
-  > If you can't meet these requirements with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
+  > If you can't meet these requirements with your current Azure account, you can get a [free trial](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) and create a new Azure subscription and tenant.
 - [Visual Studio Code](https://code.visualstudio.com), installed locally.  
 - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
 - Either:
