@@ -13,6 +13,6 @@ After you complete this module, you can:
 ## Prerequisites
 
 - Basic knowledge of cloud computing and the Azure ecosystem.
-- An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=academic-15963-cxa) before you begin.
+- An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn&?WT.mc_id=academic-15963-cxa) before you begin.
 - The latest version of [Visual Studio Code](https://code.visualstudio.com/download).
 - The latest version of the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension. Or, use [Visual Studio Code on the Web](https://vscode.dev/quantum), which already includes the Quantum Development Kit extension.
