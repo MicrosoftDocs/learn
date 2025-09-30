@@ -4,11 +4,10 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 07/08/2025
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
-
