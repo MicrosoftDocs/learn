@@ -21,7 +21,7 @@ abstract:  |
   - Choose the appropriate metrics based on your AI system use case
   - Understand how to interpret evaluation results
 prerequisites: |
-  - An Azure subscription – [Create one for free](https://azure.microsoft.com/free/cognitive-services/)
+  - An Azure subscription – [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
   - Familiarity with Azure and the Azure portal
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

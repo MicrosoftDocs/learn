@@ -20,6 +20,6 @@ Now that you understand resource estimation, you can do experiments to deepen yo
 
 To learn more about the Resource Estimator, check out these resources:
 
-- The [Resource Estimator sample gallery](https://github.com/microsoft/qsharp/tree/main/samples/estimation) for more resource estimation sample notebooks
+- The [Resource Estimator sample gallery](https://github.com/microsoft/qdk/tree/main/samples/estimation) for more resource estimation sample notebooks
 - [Introduction to the Azure Quantum Resource Estimator](/azure/quantum/intro-to-resource-estimation)
 - [How to run multiple configurations of target parameters with the Resource Estimator](/azure/quantum/resource-estimator-batching).

@@ -6,7 +6,7 @@ A partial list of the fully managed databases available on Azure includes:
 
 - [Azure Database for PostgreSQL](https://azure.microsoft.com/products/postgresql)
 
-- [Azure Database for MySQL](https://azure.microsoft.com/free/mysql/)
+- [Azure Database for MySQL](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
 
 - [Azure Cosmos DB](https://azure.microsoft.com/products/cosmos-db)
 
