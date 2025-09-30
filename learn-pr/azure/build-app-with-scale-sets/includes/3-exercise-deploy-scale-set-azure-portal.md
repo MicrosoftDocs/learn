@@ -5,7 +5,7 @@ Your first task is to create a scale set. Configure it to run a web server, in t
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to use the REST API to retrieve metrics.
 >
-> If you want to complete this exercise, but you don't have an Azure subscription or prefer not to use your own account, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+> If you want to complete this exercise, but you don't have an Azure subscription or prefer not to use your own account, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 ## Deploy a Virtual Machine Scale Set
 
