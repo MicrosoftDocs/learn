@@ -4,11 +4,10 @@ metadata:
   title: Analyze an application and identify decomposition boundaries
   description: Analyze an application and identify decomposition boundaries
   ms.date: 07/08/2025
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: unit
 title: Analyze an application and identify decomposition boundaries
 durationInMinutes: 10
 content: |
   [!include[](includes/5-analyze-decompose.md)]
-

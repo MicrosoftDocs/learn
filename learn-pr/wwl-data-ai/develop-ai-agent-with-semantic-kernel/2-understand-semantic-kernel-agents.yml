@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-ai-agent-with-semantic-kernel.understand-semantic-kernel-agents
-title: Understand Microsoft Agent Framework AI agents
+title: Understand Semantic Kernel AI agents
 metadata:
-  title: Understand Microsoft Agent Framework AI agents
-  description: This unit explains the Microsoft Agent Framework SDK.
+  title: Understand Semantic Kernel AI agents
+  description: This unit explains the Semantic Kernel SDK and Agent Framework.
   author: buzahid
   ms.author: buzahid
-  ms.date: 09/26/2025
+  ms.date: 05/16/2025
   ms.topic: unit
 durationInMinutes: 6
 content: |
