@@ -6,13 +6,13 @@ metadata:
   description: This unit contains a knowledge check, which can help learners reinforce their understanding of the material.
   author: buzahid
   ms.author: buzahid
-  ms.date: 09/26/2025
+  ms.date: 08/14/2025
   ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What's the first step in the Microsoft Agent Framework's unified orchestration workflow?"  
+  - content: "What's the first step in the Semantic Kernel SDK's unified orchestration workflow?"  
     choices:  
     - content: "Select and create an orchestration pattern"  
       isCorrect: false  
