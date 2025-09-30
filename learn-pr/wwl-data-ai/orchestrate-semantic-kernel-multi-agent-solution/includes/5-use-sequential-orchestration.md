@@ -19,31 +19,31 @@ Consider using the sequential orchestration pattern when your workflow has:
 Avoid this pattern when:
 
 - Stages can be run independently and in parallel without affecting quality.
-- A single agent can perform the entire task effectively.
+- The entire task can be done effectively by a single agent.
 - Early stages may fail or produce poor output, and there's no way to stop or correct downstream processing based on errors.
 - Agents need to collaborate dynamically rather than hand off work sequentially.
 - The workflow requires iteration, backtracking, or dynamic routing based on intermediate results.
 
 ## Implement sequential orchestration
 
-Implement the sequential orchestration pattern with the Microsoft Agent Framework  SDK:
+Implement the sequential orchestration pattern with the Semantic Kernel Python SDK:
 
-1. **Create your chat client**  
-   Set up a chat client (for example, `AzureOpenAIChatClient`) with appropriate credentials to connect to your AI service provider.
+1. **Define your agents**  
+    Create agent instances (for example, `ChatCompletionAgent`) with specific instructions and AI services. Each agent should have a clear responsibility.
 
-2. **Define your agents**  
-   Create agent instances using the chat client's `create_agent` method. Each agent should have specific instructions and a name that defines its role and expertise area in the pipeline.
+1. **Set up the sequential orchestration**  
+   Use the `SequentialOrchestration` class to create an orchestration pipeline that executes agents one after another, and pass your agent instances to the object. Optionally, add callbacks to observe agent outputs during the sequence.
 
-3. **Build the sequential workflow**  
-   Use the `SequentialBuilder` class to create a workflow that executes agents one after another. Add your agent instances as participants using the `participants()` method, then call `build()` to create the workflow.
+1. **Start the runtime**  
+   Initialize and start an `InProcessRuntime` object to manage agent execution.
 
-4. **Run the workflow**  
-   Call the workflow's `run_stream` method with the task or input you want the agents to work on. The workflow processes the task through all agents sequentially, with each agent's output becoming input for the next.
+1. **Invoke the orchestration**  
+   Call the orchestration's `invoke` method with the task or input you want the agents to work on. The orchestration processes the task through all agents sequentially. 
 
-5. **Process the workflow events**  
-   Iterate through the workflow events using an async loop. Look for `WorkflowOutputEvent` instances, which contain the results from the sequential processing.
+1. **Collect the final result**  
+   Await and retrieve the final output after all agents have completed their steps.
 
-6. **Extract the final conversation**  
-   Collect the final conversation from the workflow outputs. The result contains the complete conversation history showing how each agent in the sequence contributed to the final outcome.
+1. **Stop the runtime (optional)**  
+   After processing, cleanly shut down the runtime to free resources.
 
-Sequential orchestration is ideal when your task requires clear, ordered steps where each agent builds on the previous one's output. This pattern helps improve output quality through stepwise refinement and ensures predictable workflows. When applied thoughtfully with the Microsoft Agent Framework SDK, it enables powerful multi-agent pipelines for complex tasks like content creation, data processing, and more.
+Sequential orchestration is ideal when your task requires clear, ordered steps where each agent builds on the previous one's output. This pattern helps improve output quality through stepwise refinement and ensures predictable workflows. When applied thoughtfully with the Semantic Kernel SDK, it enables powerful multi-agent pipelines for complex tasks like content creation, data processing, and more.
