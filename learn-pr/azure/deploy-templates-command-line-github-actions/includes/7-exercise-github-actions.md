@@ -1,7 +1,7 @@
 Here you deploy an Azure Resource Manager (ARM) template from a GitHub Actions workflow.
 
 > [!IMPORTANT]
-> You perform this exercise outside the Microsoft Learn environment. This exercise requires you to have your own Azure subscription, and you might incur charges. This is required because you'll need to create a service principal, which is *not* supported in the sandbox subscription. If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+> You perform this exercise outside the Microsoft Learn environment. This exercise requires you to have your own Azure subscription, and you might incur charges. This is required because you'll need to create a service principal, which is *not* supported in the sandbox subscription. If you don't already have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 ## Create your GitHub account and repository
 
