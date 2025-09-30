@@ -58672,6 +58672,51 @@
       "source_path": "learn-pr/azure/migrate-app-service-migration-assistant/8-summary.yml",
       "redirect_url": "/azure/app-service/overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/extract-data-from-forms-document-intelligence/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/ai-3002",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-form-recognizer/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/ai-3002",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-form-recognizer/2-what-is-form-recognizer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/ai-3002",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-form-recognizer/3-how-form-recognizer-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/ai-3002",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-form-recognizer/4-when-to-use-form-recognizer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/ai-3002",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-form-recognizer/5-use-form-recognizer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/ai-3002",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-form-recognizer/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/ai-3002",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-form-recognizer/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/ai-3002",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-form-recognizer/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/ai-3002",
+      "redirect_document_id": false
     }
   ]
 }
