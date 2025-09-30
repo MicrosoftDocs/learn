@@ -1,47 +1,170 @@
-Workflows contain one or more jobs. A job is a set of steps that will be run in order on a runner.
+Jobs are the building blocks of GitHub Actions workflows. Each job is a collection of steps that run sequentially on the same runner, sharing the filesystem and environment variables.
 
-Steps within a job execute on the same runner and share the same filesystem.
+## Understanding job execution
 
-The logs produced by jobs are searchable, and artifacts produced can be saved.
+### Key characteristics of jobs:
 
-## Jobs with dependencies
+- **Sequential steps**: Steps within a job run one after another
+- **Shared environment**: All steps share the same runner and filesystem
+- **Isolated execution**: Each job gets a fresh virtual environment
+- **Searchable logs**: Job outputs are automatically captured and searchable
+- **Artifact support**: Jobs can save and share files between workflow runs
 
-By default, if a workflow contains multiple jobs, they run in parallel.
+### Basic job structure
 
-```YAML
+```yaml
 jobs:
-  startup:
+  build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - run: ./setup_server_configuration.sh
-  build:
-    steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
-      - run: ./build_new_server.sh
+      - name: Install dependencies
+        run: npm ci
 
+      - name: Run tests
+        run: npm test
 ```
 
-Sometimes you might need one job to wait for another job to complete.
+## Parallel vs. sequential execution
 
-You can do that by defining dependencies between the jobs.
+### Parallel execution (default)
 
-```YAML
+By default, multiple jobs run simultaneously to minimize workflow duration:
+
+```yaml
 jobs:
-  startup:
+  lint:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run linter
+        run: npm run lint
 
-      - run: ./setup_server_configuration.sh
-  build:
-    needs: startup
+  test:
+    runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run tests
+        run: npm test
 
-      - run: ./build_new_server.sh
-
+  # Both lint and test jobs run simultaneously
 ```
 
-> [!NOTE]
-> If the startup job in the example above fails, the build job won't execute.
+### Sequential execution with dependencies
 
-For more information on job dependencies, see the section **Creating Dependent Jobs** at [Managing complex workflows](https://docs.github.com/actions/learn-github-actions/managing-complex-workflows).
+Use the `needs` keyword to create job dependencies:
+
+```yaml
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build application
+        run: ./build.sh
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run integration tests
+        run: ./test.sh
+
+  deploy:
+    needs: [build, test] # Waits for multiple jobs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to production
+        run: ./deploy.sh
+```
+
+## Advanced job patterns
+
+### Matrix strategy for multiple configurations
+
+Run jobs across multiple environments simultaneously:
+
+```yaml
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node-version: [18, 20, 22]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm test
+```
+
+### Conditional job execution
+
+Run jobs only when specific conditions are met:
+
+```yaml
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to production
+        run: echo "Deploying to production"
+
+  notify:
+    needs: deploy
+    if: failure() # Only runs if deploy job fails
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send failure notification
+        run: echo "Deployment failed!"
+```
+
+## Job failure handling
+
+### Default behavior
+
+- If any step fails, the entire job fails
+- Dependent jobs won't run if their prerequisites fail
+- The workflow is marked as failed
+
+### Controlling failure behavior
+
+```yaml
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run tests (continue on error)
+        run: npm test
+        continue-on-error: true
+
+      - name: Upload test results
+        if: always() # Runs regardless of previous step outcome
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: test-results.xml
+```
+
+## Best practices for jobs
+
+1. **Keep jobs focused**: Each job should have a single responsibility
+2. **Use descriptive names**: Make job purposes clear in the workflow UI
+3. **Optimize dependencies**: Only create dependencies when truly necessary
+4. **Choose appropriate runners**: Match runner OS to your application needs
+5. **Handle failures gracefully**: Use conditional execution and continue-on-error strategically
+6. **Share data efficiently**: Use artifacts or outputs to pass data between jobs
+
+For comprehensive job configuration options, see [Using jobs in a workflow](https://docs.github.com/actions/using-jobs).
