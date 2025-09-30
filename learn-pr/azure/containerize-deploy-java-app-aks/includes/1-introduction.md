@@ -10,7 +10,7 @@ After you containerize the app, you construct a Dockerfile and write the Docker 
 
 By the end of this module, you'll be able to containerize a Java app, push the container image to Azure Container Registry, and then deploy to Azure Kubernetes Service.
 
-You use your own Azure subscription - with access to create, update, and remove resources - to deploy the resources in this module. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/java/?azure-portal=true&WT.mc_id=java-10785-chtrembl) before you begin.
+You use your own Azure subscription - with access to create, update, and remove resources - to deploy the resources in this module. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn&WT.mc_id=java-10785-chtrembl) before you begin.
 
 > [!IMPORTANT]
 > To avoid unnecessary charges in your Azure subscription, remember to deprovision your Azure resources when you finish this module.
