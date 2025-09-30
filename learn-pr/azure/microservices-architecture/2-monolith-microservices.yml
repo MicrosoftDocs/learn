@@ -4,11 +4,10 @@ metadata:
   title: Monolithic and microservice architectures
   description: Monolithic and microservice architectures
   ms.date: 07/08/2025
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: unit
 title: Monolithic and microservice architectures
 durationInMinutes: 10
 content: |
   [!include[](includes/2-monolith-microservices.md)]
-
