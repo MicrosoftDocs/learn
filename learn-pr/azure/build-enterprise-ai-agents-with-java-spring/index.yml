@@ -31,7 +31,7 @@ products:
   - azure-container-apps
   - azure-database-postgresql
 prerequisites: |
-  - An Azure subscription. [Create one for free.](https://azure.microsoft.com/free/)
+  - An Azure subscription. [Create one for free.](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
   - Basic familiarity with Java and Spring Boot.
   - Experience with Git and Maven.
   - [Java 17 or later](/java/openjdk/download#openjdk-17).
