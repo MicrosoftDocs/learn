@@ -58787,6 +58787,41 @@
       "source_path": "learn-pr/wwl-azure/design-data-storage-solution-for-relational-data/9-design-for-azure-cosmos.md",
       "redirect_url": "/training/modules/design-data-storage-solution-for-relational-data/8-design-for-azure-cosmos",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/2-what-is-azure-developer-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/3-how-azure-developer-cli-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/4-when-to-use-azure-developer-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
     }
   ]
 }

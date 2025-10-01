@@ -25,7 +25,6 @@ products:
 subjects:
 - cloud-computing
 modules:
-- learn.azure.introduction-to-azure-developer-cli
 - learn.azure.deploy-configure-azure-developer-cli-templates
 trophy:
   uid: learn.azure-developer-cli.trophy
