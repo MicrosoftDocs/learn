@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.custom:
     - N/A
-  ai-usage: human-only
+  ai-usage: ai-assisted
   ms.service: azure-devops-pipelines
 title: Explore Release Strategy Recommendations
 summary: Learn critical release strategy recommendations for automated deployments. Understand release pipeline components, artifact sources, approval workflows, and release gate configurations.
