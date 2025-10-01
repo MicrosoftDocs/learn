@@ -1,53 +1,51 @@
-An AI agent is a program that uses generative AI to interpret data, make decisions, and perform tasks on behalf of users or other applications. AI agents rely on large language models to perform their tasks. Unlike conventional programs, AI agents can function autonomously, handling complex workflows and automating processes without requiring continuous human oversight.
+An AI agent is a program that uses generative AI to interpret data, make decisions, and perform tasks on behalf of users or other applications. AI agents rely on large language models to perform their tasks. Unlike traditional programs, AI agents can function autonomously, handling complex workflows and automating processes without requiring continuous human oversight.
 
-AI Agents can be developed using many different tools and platforms, including the Semantic Kernel SDK. Semantic Kernel is an open-source SDK that enables developers to easily integrate the latest AI models into their applications. Part of that SDK includes the *Semantic Kernel Agent Framework*, which allows developers to quickly create functional agents that can use natural language processing to complete tasks. 
+AI Agents can be developed using many different tools and platforms, including the Microsoft Agent Framework. The Microsoft Agent Framework is an open-source SDK that enables developers to easily integrate the latest AI models into their applications. This framework provides a comprehensive foundation for creating functional agents that can use natural language processing to complete tasks and collaborate with other agents.
 
-## Semantic Kernel core components
+## Microsoft Agent Framework core components
 
-The Semantic Kernel offers different components that can be used individually or combined.
+The Microsoft Agent Framework offers different components that can be used individually or combined.
 
-- **AI service connectors** - connect the code to AI services from different providers under a common interface. Supported services include Chat Completion, Text Generation, and more.
+- **Chat clients** - provide abstractions for connecting to AI services from different providers under a common interface. Supported providers include Azure OpenAI, OpenAI, Anthropic, and more through the `BaseChatClient` abstraction.
 
-- **Memory connectors** - expose vector stores from other providers under a common interface.
+- **Function tools** - containers for custom functions that extend agent capabilities. Agents can automatically invoke functions to integrate with external APIs and services.
 
-- **Functions and plugins** - containers for functions that are registered with the kernel. Once registered, functions can be invoked by the AI or through prompt templates.
+- **Built-in tools** - prebuilt capabilities including Code Interpreter for Python execution, File Search for document analysis, and Web Search for internet access.
 
-- **Prompt templates** - combine instructions, user input, and function outputs into a reusable format. Prompt templates allow AI models to execute predefined steps dynamically.
+- **Conversation management** - structured message system with roles (USER, ASSISTANT, SYSTEM, TOOL) and `AgentThread` for persistent conversation context across interactions.
 
-- **Filters** - allow custom actions to be performed before and after a function or prompt is invoked. When registered, function filters act as outer layers and prompt filters as inner layers.
+- **Workflow orchestration** - supports sequential workflows, concurrent execution, group chat, and handoff patterns for complex multi-agent collaboration.
 
-## Agent framework components
+The Microsoft Agent Framework helps streamline the creation of agents and allows multiple agents to work together in conversations while including human input. The framework supports different types of agents from multiple providers, including Azure AI Foundry, Azure OpenAI, OpenAI, Microsoft Copilot Studio, and Anthropic agents.
 
-The Agent Framework within Semantic Kernel helps streamline the creation of agents and enables multi-agent collaboration in conversations while integrating human input. The framework supports different types of agents, including `ChatCompletionAgent`, `OpenAIAssistantAgent`, and `AzureAIAgent`. 
+### What is an Azure AI Foundry Agent?
 
-### What is an Azure AI Agent?
+Azure AI Foundry Agents provide enterprise-level capabilities using the Azure AI Foundry Agent Service. These agents offer advanced features for complex enterprise scenarios. Key benefits include:
 
-The `AzureAIAgent` class provides a seamless way to build and interact with AI agents using the Foundry Agent Service. It abstracts the complexity of managing AI agents by offering a more structured and intuitive interface within the Semantic Kernel Agent Framework. Key benefits include:
+- **Enterprise-level capabilities** – Built for Azure environments with advanced AI features including code interpreter, function tools integration, and Model Context Protocol (MCP) support.
 
-- Simplified agent creation – The AzureAIAgent class allows developers to define AI agents with minimal configuration, leveraging the power of Foundry Agent Service without managing the underlying infrastructure.
+- **Automatic tool invocation** – Agents can automatically call and execute tools, integrating seamlessly with Azure AI Search, Azure Functions, and other Azure services.
 
-- Automatic tool invocation – The agent can automatically call and execute tools, integrating seamlessly with Azure AI Search, Bing, Azure Functions, and more.
+- **Thread and conversation management** – Provides built-in mechanisms for managing persistent conversation states across sessions, ensuring smooth multi-agent interactions.
 
-- Thread and conversation management – Provides built-in mechanisms for managing conversation states, ensuring smooth multi-agent interactions.
+- **Secure enterprise integration** – Enables secure and compliant AI agent development with Azure CLI authentication, RBAC, and customizable storage options.
 
-- Secure enterprise integration – Enables secure and compliant AI agent development with keyless authentication and customizable storage options.
-
-By using the `AzureAIAgent` class, developers can take full advantage of Foundry Agent Service while taking advantage of the features offered by the Semantic Kernel SDK. This allows for robust AI-driven workflows that scale efficiently across enterprise applications.
+When you use Azure AI Foundry Agents, you get the full power of enterprise Azure capabilities combined with the features of the Microsoft Agent Framework. These features can help you create robust AI-driven workflows that can scale efficiently across business applications.
 
 ### Agent framework core concepts
 
-- **Agent** - abstraction for AI agents, with specialized subclasses like AzureAIAgent, allowing for task completion and human interaction in conversations.
+- **BaseAgent** - the foundation for all agents with consistent methods, providing a unified interface across all agent types.
 
-- **Agent threads** - manage conversation state and stores conversations.
+- **Agent threads** - manage persistent conversation context and store conversation history across sessions using the `AgentThread` class.
 
-- **Agent chat** - the foundation for multi-agent interactions, allows for structured conversations and collaboration.
+- **Chat messages** - organized structure for agent communication using role-based messaging (USER, ASSISTANT, SYSTEM, TOOL) that enables smooth communication and integration.
 
-- **Agent channel** - used for custom agent development, allows different types of agents to participate in AgentChat.
+- **Workflow orchestration** - supports sequential workflows, running multiple agents in parallel, group conversations between agents, and transferring control between specialized agents.
 
-- **Agent messages** - a unified structure for agent communication, provides seamless communication and integration with existing AI workflows.
+- **Multi-modal support** - allows agents to work with text, images, and structured outputs, including vision capabilities and type-safe response generation.
 
-- **Templating** - like Semantic Kernel prompt templates, templates use dynamic prompt configurations to shape agent behavior.
+- **Function tools** - let you add custom capabilities to agents by including custom functions with automatic schema generation from Python functions.
 
-- **Functions and plugins** - like Semantic Kernel plugins, agent plugin functions allow developers to extend agent capabilities by incorporating custom functions.
+- **Authentication methods** - supports multiple authentication methods including Azure CLI credentials, API keys, MSAL for Microsoft business authentication, and role-based access control.
 
-This framework supports autonomous, multi-agent AI behaviors while maintaining consistency with Semantic Kernel's design, allowing developers to build intelligent, adaptable AI systems.
+This framework supports autonomous, multi-agent AI behaviors while maintaining a flexible architecture that lets you mix and match agents, tools, and workflows as needed. The design lets you switch between OpenAI, Azure OpenAI, Anthropic, and other providers without changing your code, making it easy to build AI systems—from simple chatbots to complex business solutions.
