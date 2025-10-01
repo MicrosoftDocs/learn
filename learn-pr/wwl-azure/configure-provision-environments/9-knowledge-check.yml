@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/06/2024
-  author: wwlpublish
+  ms.date: 10/01/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
@@ -49,4 +49,4 @@ quiz:
       explanation: "Incorrect. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a safe way to connect from the pipeline."
     - content: "Service Principal."
       isCorrect: true
-      explanation: "Correct. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a safe way to connect from the pipeline."
+      explanation: "Correct. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a safe way to connect from the pipeline."
