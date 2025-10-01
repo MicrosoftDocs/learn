@@ -13,14 +13,14 @@ For example, a rural law office with five staff uses Office Home & Business for 
 - **Limited internet environments**: Connectivity is unreliable or unavailable.
 - **Basic productivity needs**: Focused on Word, Excel, PowerPoint, Outlook, and OneNote.
 
-## Good Fit
+## Good fit
 
 - Budget-conscious freelancers  
 - Single-location offices with in-person collaboration  
 - Areas with poor internet connectivity  
 - Schools with limited IT budgets  
 
-## Not Ideal For
+## Not ideal for
 
 - Distributed teams needing cloud file sync  
 - Organizations in regulated industries requiring advanced compliance  
