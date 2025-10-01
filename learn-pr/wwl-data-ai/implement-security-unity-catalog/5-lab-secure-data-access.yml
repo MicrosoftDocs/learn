@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-unity-catalog.exercise-secure-data-access
+title: 'Exercise: Secure data access'
+metadata:
+  title: 'Exercise: Secure data access'
+  description: "Exercise: Secure data access"
+  ms.date: 09/30/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/5-lab-secure-data-access.md)]
