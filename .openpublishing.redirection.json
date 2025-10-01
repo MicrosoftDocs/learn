@@ -58822,6 +58822,56 @@
       "source_path": "learn-pr/azure/introduction-to-azure-developer-cli/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-developer-cli/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-developer-cli-template/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-developer-cli-template/2-install-azure-developer-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-developer-cli-template/3-deploy-first-template.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-developer-cli-template/4-update-template.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-developer-cli-template/5-configure-pipeline.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-developer-cli-template/6-clean-up-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-developer-cli-template/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-developer-cli-template/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-configure-azure-developer-cli-template/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
+      "redirect_document_id": false
     }
   ]
 }
