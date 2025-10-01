@@ -27,8 +27,6 @@ To set up Windows Hello follow these steps:
 
 ## Using AI features on Surface Laptop 13-inch
 
-:::image type="content" border="true" source="../media/surface-laptop-ai-features.png" alt-text="Photograph of young adult female hand pressing Copilot key on Surface Laptop with Copilot app on screen.":::
-
 As a Copilot+ PC, Surface Laptop 13-inch enables on-device AI experiences that help complete repeated tasks quicker. Let’s learn how to utilize some of these experiences.
 
 **Live Captions:** Live Captions is an accessibility feature that helps users understand audio by providing automatic transcription. Using the NPU (Neural Processing Unit) on Surface Laptop 13-inch, any audio that passes through the device will be transcribed instantly. This works for both live or prerecorded video in any app or video platform from over 40 languages into English. There are many ways to turn on this feature on your Surface Laptop 13-inch:

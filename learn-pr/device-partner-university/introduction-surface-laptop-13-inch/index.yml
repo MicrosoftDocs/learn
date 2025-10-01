@@ -9,9 +9,11 @@ metadata:
   ms.author: v-zahranomar
   ms.topic: module
   ms.service: surface
-summary: >2+
+summary: Explore the Microsoft Surface Laptop 13-inch, a Copilot+ PC optimized for AI-driven productivity, secure enterprise deployment, and flexible hardware-software integration for modern IT environments.
 
-abstract: |2+
+abstract:
+  - Evaluate whether Microsoft Surface Laptop 13-inch is appropriate for your business.
+  - Describe how the software and hardware features of Microsoft Surface Laptop 13-inch work to complete more tasks.
 
 prerequisites: |
   - None

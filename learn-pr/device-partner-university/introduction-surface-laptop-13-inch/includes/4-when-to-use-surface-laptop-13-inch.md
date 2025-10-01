@@ -1,5 +1,3 @@
-:::image type="content" border="true" source="../media/surface-laptop-13-interaction.png" alt-text="Photograph of two male executives in an office holding a Surface Laptop.":::
-
 Surface Laptop 13-inch offers flexibility, manageability, and performance for modern business users. This device is ideal for information workers and those in the education sector (specifically those in higher education).
 
 - **Information Workers:** Imagine you're a consultant, often visiting different clients and collaborating with partners from various locations. Performance, portability, and battery life are essential to get your work done. Surface Laptop 13-inch meets these requirements, offering AI-powered communication tools like Windows Studio Effects for better collaboration and efficient communication. Users also benefit from flexible connectivity options, allowing them to get work done across various travel scenarios.
