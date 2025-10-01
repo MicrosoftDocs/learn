@@ -16,7 +16,7 @@ After completing this lab, you can:
 
 ## Requirements
 
-- Azure subscription - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/).
+- Azure subscription - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - Basic knowledge of Azure services and Azure CLI.
 - Visual Studio Code installed with the Bicep extension.
 - Azure CLI installed and configured on your local machine.

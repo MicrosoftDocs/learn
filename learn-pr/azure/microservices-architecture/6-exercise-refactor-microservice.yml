@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Refactor a service within the monolith as a microservice
   description: Exercise - Refactor a service within the monolith as a microservice
   ms.date: 07/08/2025
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli
@@ -15,4 +15,3 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/6-exercise-refactor-microservice.md)]
-

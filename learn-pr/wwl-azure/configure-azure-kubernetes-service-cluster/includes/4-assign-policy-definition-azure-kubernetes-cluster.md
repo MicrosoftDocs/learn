@@ -5,7 +5,7 @@ To assign a policy definition to your Kubernetes cluster, you must be assigned t
 Find the built-in policy definitions for managing your cluster using the Azure portal with the following steps. If using a custom policy definition, search for it by name or the category that you created it with.
 
 > [!NOTE]
-> To complete this exercise you'll need an [Azure Subscription](https://azure.microsoft.com/free/).
+> To complete this exercise you'll need an [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 1.  Select in the left pane and then search for and select **Policy**.
 2.  In the left pane of the Azure Policy page, select **Definitions**. :::image type="content" source="../media/policy-definitions-list-392fc18a.png" alt-text="Screenshot of the Azure Policy definitions.":::
