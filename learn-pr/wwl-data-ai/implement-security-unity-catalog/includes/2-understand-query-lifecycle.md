@@ -28,7 +28,7 @@ For every object referenced in the query, Unity Catalog assumes the appropriate 
 * For **managed tables**, the credential typically points to the cloud storage tied to the Unity Catalog metastore.
 * For **external tables or files**, the credential corresponds to an external location governed by a defined storage credential.
 
-> ![NOTE]
+> [!NOTE]
 > In Azure, the preferred way to grant Unity Catalog access to Azure Data Lake Storage (ADLS Gen2) is via a **Managed Identity + Access Connector** (versus relying purely on service principals). They have the benefit of allowing Unity Catalog to access storage accounts protected by network rules, which isn’t possible using service principals, and they remove the need to manage and rotate secrets.
 
 ### Step 4: Issuing scoped tokens
@@ -39,7 +39,7 @@ Once credentials are validated, Unity Catalog generates a **scoped temporary acc
 
 The compute resource (cluster or SQL warehouse) uses the token and URL provided by Unity Catalog to request data directly from the underlying ADLS Gen2 endpoints (via `abfss://` or `dfs.core.windows.net` URL)
 
-> ![NOTE]
+> [!NOTE]
 > If your ADLS account has firewall or virtual network restrictions, you must explicitly allow the Azure Databricks access connector / managed identity to access the storage (in addition to allowing the compute nodes). If the storage account is locked down, even a valid token may be rejected if the identity is not allowed via firewall rules.
 
 ### Step 6: Data transfer

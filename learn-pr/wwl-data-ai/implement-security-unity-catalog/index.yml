@@ -21,7 +21,7 @@ prerequisites: |
   * Basic understanding of data lakehouse concepts (catalogs, schemas, tables, views).
   * Familiarity with Azure Databricks workspace navigation (clusters, SQL warehouses, notebooks).
   * Introductory knowledge of SQL (running queries, creating tables, granting permissions).
-iconUrl: /training/achievements/data-engineer-azure-databricks.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
@@ -34,7 +34,7 @@ units:
 - learn.wwl.implement-security-unity-catalog.understand-query-lifecycle
 - learn.wwl.implement-security-unity-catalog.explore-data-sharing-marketplace
 - learn.wwl.implement-security-unity-catalog.implement-access-control-strategies
-- learn.wwl.implement-security-unity-catalog.excercise-secure-data-access
+- learn.wwl.implement-security-unity-catalog.exercise-secure-data-access
 - learn.wwl.implement-security-unity-catalog.knowledge-check
 - learn.wwl.implement-security-unity-catalog.summary
 badge:

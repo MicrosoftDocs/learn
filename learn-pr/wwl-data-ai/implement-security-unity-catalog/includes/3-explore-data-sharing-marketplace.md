@@ -18,7 +18,7 @@ These assets might be available for free or at a set price, depending on the pro
 
 Inside the Azure Databricks workspace, the **Marketplace** appears alongside other key features such as Partner Connect. The interface highlights featured providers, staff picks, and popular resources. Assets are organized into categories such as financial data, healthcare, media, and life sciences.
 
-![Screenshot of Azure Databricks Marketplace (with content).](../media/market-place-with-content.png)
+![Screenshot of Azure Databricks Marketplace (with content).](../media/market-place-no-content.png)
 
 Users can search for specific topics. For example, searching for "COVID" may return datasets and models related to pandemic research, prediction models, or healthcare analytics. Each listing typically includes metadata describing the dataset or model, as well as preview options for associated notebooks.
 
@@ -50,7 +50,7 @@ Within the catalog, you can open tables and create visualizations and build dash
 
 Delta Sharing is an **open protocol for sharing data securely** between different organizations and platforms. It was developed by Databricks but is open source, which means it can be used outside of Azure Databricks as well. The protocol is designed to make it easier to exchange data without moving large files or setting up custom connections for each partner.
 
-![Diagram showing the concept of Delta Sharing.](../media/delta-sharing.png)
+![Diagram showing the concept of Delta Sharing.](../media/delta-sharing-no-logo.png)
 
 One important aspect of Delta Sharing is that it provides access to **current data** rather than fixed snapshots. This allows consumers to work with the most recent version of a dataset, while providers keep control over what is made available. Access is managed with authentication and permissions, so only authorized users can view or query the shared data.
 
