@@ -7060,3 +7060,43 @@ achievements:
   title: Introduction to Azure Developer CLI
   summary: Learn how the Azure Developer CLI can accelerate the time it takes for you to get your application from local development environment to Azure.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.build-first-azure-developer-cli-template.badge
+  type: badge
+  title: Build your first Azure Developer CLI template
+  summary: Learn how to build your own Azure Developer CLI templates.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.migrate-app-service-migration-assistant.badge
+  type: badge
+  title: Migrate an on-premises web application to Azure App Service
+  summary: Use the Azure App Service Migration Assistant to assess the readiness of a web app to be deployed on App Service, and perform the migration.
+  iconUrl: /training/achievements/migrate-app-service-migration-assistant.svg
+- uid: learn.wwl.extract-data-from-forms-document-intelligence.trophy
+  type: trophy
+  title: Develop solutions with Azure AI Document Intelligence
+  summary: In this learning path, discover how Azure AI Document Intelligence solutions can enable you to capture data from typed or hand-written forms. Learn how to build a solution for your custom form types and integrate that solution into an Azure Cognitive Search pipeline.
+  iconUrl: /training/achievements/extract-data-from-forms-use-form-recognizer.svg
+- uid: learn.azure.intro-to-form-recognizer.badge
+  type: badge
+  title: Introduction to Azure AI Document Intelligence
+  summary: Azure AI Document Intelligence enables automated data identification and extraction from your documents. You can use a programming language SDK or the REST API to easily retrieve and utilize your data.
+  iconUrl: /training/achievements/intro-to-form-recognizer.svg
+- uid: learn.wwl.case-study-design-solutions-security-best-practices-priorities.badge
+  type: badge
+  title: "Case study: Design solutions that align with security best practices and priorities"
+  summary: Apply your cybersecurity architect skills on a real business scenario in the area of security best practices. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs.
+  iconUrl: /training/achievements/case-study-design-solutions-security-best-practices-priorities.svg
+- uid: learn.wwl.case-study-design-security-operations-identity-compliance-capabilities.badge
+  type: badge
+  title: "Case Study: Design Security Operations, Identity, and Compliance Capabilities"
+  summary: Apply your cybersecurity architect skills on a real business scenario in the area of security operations, identity, and compliance. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs.
+  iconUrl: /training/achievements/case-study-design-security-operations-identity-compliance-capabilities.svg
+- uid: learn.wwl.case-study-design-security-solutions-applications-data.badge
+  type: badge
+  title: "Case study: Design security solutions for applications and data"
+  summary: Apply your cybersecurity architect skills on a real business scenario in the area of securing applications and data. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs.
+  iconUrl: /training/achievements/case-study-design-security-solutions-applications-data.svg
+- uid: learn.wwl.case-study-design-security-solutions-infrastructure.badge
+  type: badge
+  title: "Case Study: Design Security Solutions for Infrastructure"
+  summary: Apply your cybersecurity architect skills on a real business scenario in the area of infrastructure security. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs.
+  iconUrl: /training/achievements/case-study-design-security-solutions-infrastructure.svg
