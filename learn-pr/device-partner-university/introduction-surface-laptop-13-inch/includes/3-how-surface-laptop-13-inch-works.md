@@ -18,16 +18,16 @@ After your account is synchronized, you'll have the option to set up biometric u
 
 To set up Windows Hello follow these steps:
 
-- Open **Settings**
-- Then select **Accounts**
-- Choose **Sign-in options**
-- Select **Fingerprint recognition (Windows Hello)**
-- **Set up**
-- Follow on-screen instructions to register fingerprints
+1. Open **Settings**.
+2. Then select **Accounts**.
+3. Choose **Sign-in options**.
+4. Select **Fingerprint recognition (Windows Hello)**.
+5. Select **Set up**.
+6. Follow on-screen instructions to register fingerprints.
 
 ## Using AI features on Surface Laptop 13-inch
 
-:::image type="content" border="true" source="../media/surface-laptop-ai-features.png" alt-text="Photograph of young adult female hand pressing Copilot key on Surface Laptop with Copilot app on screen":::
+:::image type="content" border="true" source="../media/surface-laptop-ai-features.png" alt-text="Photograph of young adult female hand pressing Copilot key on Surface Laptop with Copilot app on screen.":::
 
 As a Copilot+ PC, Surface Laptop 13-inch enables on-device AI experiences that help complete repeated tasks quicker. Let’s learn how to utilize some of these experiences.
 
@@ -52,30 +52,30 @@ When you turn on Live Captions for the first time, you'll be asked for your cons
 - Enter Click to Do with a press of the **Windows key and a mouse click** or the **Windows key + Q**. (Alternatively, you can search for *Click to Do* from **Windows Search** to launch the feature).
 - When launching Click to Do for the first time, you are offered a quick interactive tutorial that shows you how to accomplish tasks faster. You can revisit the tutorial at any time by selecting **…**, then **Start tutorial**.
 - Highlight text with Click to Do, and the following options are available to you:
-  - **Copy:** Copies the selected text to the clipboard
-  - **Open with:** Opens the selected text in a text editor like Notepad
-  - **Search the web:** Does a search for the selected text using Microsoft Edge and Bing
+  - **Copy:** Copies the selected text to the clipboard.
+  - **Open with:** Opens the selected text in a text editor like Notepad.
+  - **Search the web:** Does a search for the selected text using Microsoft Edge and Bing.
 - When highlighting text that is an email address, you can either copy the text or:
-  - **Send email:** Uses your default email app to open a new email to the selected email address
-  - **Send a message with Teams:** Opens a Teams message using the selected email address as the recipient
+  - **Send email:** Uses your default email app to open a new email to the selected email address.
+  - **Send a message with Teams:** Opens a Teams message using the selected email address as the recipient.
   - **Schedule a meeting with Teams:** Opens a new Teams calendar invite with the selected email address as an attendee.
 - More intelligent text actions are available when your default language is set to English, at least 10 words are selected, and you’re signed in with either a Microsoft account or Microsoft Entra account. These actions include:
-  - **Summarize:** Briefly outlines the main points of the selected text
-  - **Create a bulleted list:** Creates a bulleted list of key details from the selected text
-  - **Rewrite:** Revises the selected text using either a casual tone, formal tone, or by making grammatical improvements
-  - **Draft with Copilot in Word:** sends the selected text to Copilot in Word
+  - **Summarize:** Briefly outlines the main points of the selected text.
+  - **Create a bulleted list:** Creates a bulleted list of key details from the selected text.
+  - **Rewrite:** Revises the selected text using either a casual tone, formal tone, or by making grammatical improvements.
+  - **Draft with Copilot in Word:** sends the selected text to Copilot in Word.
 - If you select an image in Click to Do, you’re given the following options:
-  - **Copy:** Copies the image to the clipboard
-  - **Save as:** Save the image to a specified location
-  - **Share:** Opens the share files option for the image file
-  - **Open with:** Open the image with an app such as Photos, Snipping Tool, or Paint
-  - **Visual search with Bing:** Does a visual search using Bing using your default web browser
-  - **Blur background with Photos:** Blur the background with the Photos app
-  - **Erase objects with Photos:** Erase unwanted objects in the image with the Photos app
-  - **Remove background with Paint:** Remove the background of the image with Paint
+  - **Copy:** Copies the image to the clipboard.
+  - **Save as:** Save the image to a specified location.
+  - **Share:** Opens the share files option for the image file.
+  - **Open with:** Open the image with an app such as Photos, Snipping Tool, or Paint.
+  - **Visual search with Bing:** Does a visual search using Bing using your default web browser.
+  - **Blur background with Photos:** Blur the background with the Photos app.
+  - **Erase objects with Photos:** Erase unwanted objects in the image with the Photos app.
+  - **Remove background with Paint:** Remove the background of the image with Paint.
 - Click to Do is enabled by default on Surface Laptop 13-inch. If you don't want to use this feature, this is how to disable it:
   - Open **Settings**, then go to **Privacy & security** > **Click to Do**
-  - Set the Click to Do setting to **Off** to disable the feature
+  - Set the Click to Do setting to **Off** to disable the feature.
 
 ## Interacting with Surface Laptop 13-inch
 
@@ -85,12 +85,12 @@ Surface Laptop 13-inch features multiple ways to interact with the device, allow
 
 **Touchpad:** Surface Laptop 13-inch features a precision touchpad that uses two buttons to be used as a mouse and gestures to interact with your Surface. Let’s go over some of those gestures and what they can do:
 
-- Press down on the left side of your touchpad > Press to click or select an item
-- Press down on the right side of your touchpad > Press to right-click or open commands in Windows apps or a context menu in desktop apps
-- Swipe three fingers on the touchpad > Display your virtual desktop
-- Slide two fingers horizontally or vertically > Scroll through a screen or document
-- Pinch your thumb and forefinger together or move them apart > Zoom in or out
+- Press down on the left side of your touchpad > Press to click or select an item.
+- Press down on the right side of your touchpad > Press to right-click or open commands in Windows apps or a context menu in desktop apps.
+- Swipe three fingers on the touchpad > Display your virtual desktop.
+- Slide two fingers horizontally or vertically > Scroll through a screen or document.
+- Pinch your thumb and forefinger together or move them apart > Zoom in or out.
 
-You can easily adjust touchpad settings to customize gestures, adjust cursor speed, and scrolling direction. To access these settings, go to **Start** > **Settings** > **Bluetooth & devices** > **Touchpad**
+You can easily adjust touchpad settings to customize gestures, adjust cursor speed, and scrolling direction. To access these settings, go to **Start** > **Settings** > **Bluetooth & devices** > **Touchpad**.
 
 **Keyboard:** Surface Laptop 13-inch features a full-size backlit keyboard with full travel, providing a comfortable typing experience. The keyboard features backlit keys to better support typing in low-light conditions. The keyboard also features a Copilot key, allowing you to utilize AI features quicker. Pressing the Copilot key launches the Copilot app interface where you can chat with Copilot to assist you with your tasks.
