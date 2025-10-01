@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/9-design-for-azure-cosmos.md)]
+  [!include[](includes/8-design-for-azure-cosmos.md)]
