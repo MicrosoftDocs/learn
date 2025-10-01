@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-surface-laptop-13-inch.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Microsoft Surface Laptop 13-inch" module.
+  ms.date: 09/29/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What processor powers the Surface Laptop 13-inch?"
+    choices:
+        - content: "Intel Core i7"
+          isCorrect: false
+          explanation: "Incorrect. The Surface Laptop 13-inch uses a Qualcomm processor."
+        - content: "AMD Ryzen 7"
+          isCorrect: false
+          explanation: "Incorrect. This processor isn't used in the Surface Laptop 13-inch."
+        - content: "Qualcomm Snapdragon X Plus (8-core)"
+          isCorrect: true
+          explanation: "Correct. This is the processor used in the Surface Laptop 13-inch."
+        - content: "Apple M2"
+          isCorrect: false
+          explanation: "Incorrect. Apple processors aren't used in Microsoft Surface devices."
+  - content: "Which feature helps transcribe audio into English captions on the Surface Laptop 13-inch?"
+    choices:
+        - content: "Windows Studio Effects"
+          isCorrect: false
+          explanation: "Incorrect. This feature enhances video calls, not transcription."
+        - content: "Click to Do"
+          isCorrect: false
+          explanation: "Incorrect. This analyzes screen content for actions, not audio transcription."
+        - content: "Live Captions"
+          isCorrect: true
+          explanation: "Correct. This feature transcribes audio into English captions."
+        - content: "Cortana"
+          isCorrect: false
+          explanation: "Incorrect. Cortana is a voice assistant, not a transcription tool."
+  - content: "What is the purpose of the Microsoft Pluton chip in the Surface Laptop 13-inch?"
+    choices:
+        - content: "Enhancing display resolution"
+          isCorrect: false
+          explanation: "Incorrect. Display resolution is managed by the PixelSense display."
+        - content: "Improving battery life"
+          isCorrect: false
+          explanation: "Incorrect. Battery life is influenced by hardware and usage, not Pluton."
+        - content: "Providing hardware-based security"
+          isCorrect: true
+          explanation: "Correct. Pluton is a security processor integrated into the CPU."
+        - content: "Boosting Wi-Fi speed"
+          isCorrect: false
+          explanation: "Incorrect. Wi-Fi performance is unrelated to the Pluton chip."
+  - content: "Which port on the Surface Laptop 13-inch supports fast charging?"
+    choices:
+        - content: "USB-A 3.1"
+          isCorrect: false
+          explanation: "Incorrect. This port doesn't support charging."
+        - content: "USB-C"
+          isCorrect: true
+          explanation: "Correct. USB-C ports support fast charging at 60 W."
+        - content: "HDMI"
+          isCorrect: false
+          explanation: "Incorrect. The device doesn't include an HDMI port."
+        - content: "Ethernet"
+          isCorrect: false
+          explanation: "Incorrect. The Surface Laptop 13-inch doesn't have an Ethernet port."
+  - content: "What does the Copilot key on the Surface Laptop 13-inch do?"
+    choices:
+        - content: "Opens system settings"
+          isCorrect: false
+          explanation: "Incorrect. The Copilot key doesn't open system settings."
+        - content: "Launches Microsoft Teams"
+          isCorrect: false
+          explanation: "Incorrect. Teams isn't launched by the Copilot key."
+        - content: "Opens the Copilot app interface"
+          isCorrect: true
+          explanation: "Correct. The key launches the Copilot interface for AI assistance."
+        - content: "Activates voice assistant"
+          isCorrect: false
+          explanation: "Incorrect. The Copilot key isn't linked to voice assistant activation."
