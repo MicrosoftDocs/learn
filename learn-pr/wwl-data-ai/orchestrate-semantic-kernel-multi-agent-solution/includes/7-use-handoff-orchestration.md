@@ -25,30 +25,29 @@ You may want to avoid using the handoff orchestration pattern in these scenarios
 
 ## Implementing handoff orchestration
 
-Implement the handoff orchestration pattern with the Semantic Kernel SDK:
+The handoff orchestration pattern can be implemented in the Microsoft Agent Framework SDK using control workflows. In a control workflow, each agent processes the task in sequence, and based on its output, the workflow decides which agent to call next. This routing is done using a switch-case structure that routes the task to different agents based on classification results.
 
-1. **Create specialized agents**  
-   Create agent instances (for example, `ChatCompletionAgent`) with specific instructions and AI services. These agents can use plugins containing domain-specific logic.
+1. **Set up data models and chat client**
+   - Create your chat client for connecting to AI services
+   - Define Pydantic models for AI agents' structured JSON responses
+   - Create simple data classes for passing information between workflow steps
+   - Configure agents with specific instructions and `response_format` parameter for structured JSON output
 
-2. **Define handoff relationships**  
-   Use `OrchestrationHandoffs` to define which agents can hand off tasks to which others, and under what conditions. This class controls dynamic routing between agents.
+1. **Create specialized executor functions**
+   - **Input storage executor** - saves incoming data to shared state and forwards to classification agent
+   - **Transformation executor** - converts agent's JSON response into typed routing object
+   - **Handler executors** - separate executors for each classification outcome with guard conditions to verify correct message processing
 
-3. **Add human-in-the-loop support**  
-   Optionally, provide a callback to include human input during the conversation, allowing a user to participate whenever needed.
+1. **Build routing logic**
+   - Create factory functions that generate condition checkers for each classification value
+   - Design conditions to examine incoming messages and return true for specific classification results
+   - Use conditions with Case objects in switch-case edge groups
+   - Always include a Default case as fallback for unexpected scenarios
 
-4. **Create the handoff orchestration**  
-   Instantiate s `HandoffOrchestration` object with your agents, handoff rules, and callbacks to observe agent responses and handle human input.
+1. **Assemble the workflow**
+   - Use WorkflowBuilder to connect executors with regular edges
+   - Add switch-case edge group for routing based on classification results
+   - Configure workflow to follow first matching case or fall back to default
+   - Set up terminal executor to yield final output
 
-5. **Start the runtime**  
-   Initialize and start an `InProcessRuntime` to manage the orchestration execution.
-
-6. **Invoke the orchestration**  
-   Run the orchestration with an initial task input. Agents will handle the conversation and route control based on the defined handoff rules.
-
-7. **Collect the results**  
-   Await the completion of the orchestration and collect the final output.
-
-8. **Stop the runtime (optional)**  
-   Cleanly stop the runtime after processing to release resources.
-
-Handoff orchestration provides a flexible way to route tasks dynamically among specialized AI agents, ensuring that each part of a workflow is handled by the best-suited expert. It works well for complex, evolving tasks like customer support or multi-domain problem solving where expertise needs change during the conversation. By leveraging the Semantic Kernel Python SDK, you can build adaptable systems that seamlessly transfer control between agents—and include human input when needed—for smooth and efficient task completion.
+Handoff orchestration provides a flexible way to route tasks dynamically among specialized AI agents, ensuring that each part of a workflow is handled by the best-suited expert. It works well for complex, evolving tasks like customer support or multi-domain problem solving where expertise needs change during the conversation. When you use the Microsoft Agent Framework SDK, you can build adaptable systems that seamlessly transfer control between agents—and include human input when needed—for smooth and efficient task completion.
