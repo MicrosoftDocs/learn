@@ -8,6 +8,6 @@ metadata:
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 9
 content: |
   [!include[](includes/4-implement-access-control-strategies.md)]
