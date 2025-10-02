@@ -1,32 +1,36 @@
-One of the first requests many people have when working in a system that does asynchronous actions is to get notifications or alerts. Why?
+Asynchronous system operations necessitate proactive notification frameworks to eliminate continuous manual monitoring and reduce cognitive overhead for development teams.
 
-Because they don't want to open the application, log in and see if things changed repeatedly.
+Manual application monitoring creates inefficient workflows that require repeated authentication and status checking cycles, impacting productivity and delaying response times.
 
-The ability to receive Alerts and notifications is a powerful mechanism to get notified about certain events in your system when they happen.
+Event-driven notification systems provide immediate awareness of system state changes, enabling rapid response to critical events without constant interface monitoring.
 
-For example, when a build takes a while to complete, you probably don't want to stare at the screen until it has finished. But you want to know when it does.
+Extended build processes exemplify scenarios where passive monitoring becomes impractical, requiring automated notification delivery upon completion for efficient resource allocation.
 
-Getting an email or another kind of notification instead is powerful and convenient. Another example is a system that needs to be monitored.
+Real-time notification delivery through email, messaging platforms, and integrated alerts enables immediate awareness of system events and status changes.
 
-You want to get notified by the system in real time. By implementing a successful alert mechanism, you can use alerts to react to situations proactively before anybody is bothered by them.
+Comprehensive monitoring systems leverage automated alerting to enable proactive incident response, preventing user-facing disruptions through early warning capabilities and rapid intervention.
 
 ## Alerts
 
-However, when you define alerts, you need to be careful. When you get alerts for every single event that happens in the system, your mailbox will quickly be flooded with numerous alerts.
+Alert configuration requires strategic filtering to prevent notification overload and maintain stakeholder engagement with critical communications.
 
-The more alerts you get that aren't relevant, the more significant the chance that people will never look at the alerts and notifications and will miss the important ones.
+Indiscriminate event notification generates excessive message volume that desensitizes recipients to important alerts, reducing overall effectiveness of notification systems.
+
+Alert fatigue occurs when recipients receive numerous irrelevant notifications, leading to decreased attention and potential oversight of critical system events requiring immediate response.
 
 ## Target audience and delivery mechanism
 
-When defining alerts or notifications, you need to think about the target audience. Who needs to react to the alerts? Don't send messages to people for information only. They'll stop looking at it quickly.
+Alert configuration requires audience analysis to identify stakeholders requiring actionable notification versus informational awareness, ensuring appropriate routing and response expectations.
 
-Another thing to consider when defining alerts is the mechanism to deliver them. Do you want to send an email, or do you like to send a message in Slack for your team? Or do you want to call another system to do a particular action?
+Notification recipients should possess decision-making authority or remediation capabilities for triggered events. Informational-only notifications reduce engagement and effectiveness over time.
 
-Within Azure DevOps, there are multiple ways to define your alerts. By using query and filter mechanisms, you can filter out specific alerts. For example, you only want to get notified for failed releases and not for successful ones.
+Delivery mechanism selection encompasses email systems, team messaging platforms (Slack, Microsoft Teams), mobile push notifications, and automated system integrations based on urgency and audience preferences.
 
-Almost every action in the system raises an event to which you can subscribe. A subscription is personal or for your whole team. When you have made a subscription, you can select how you want the notification to be delivered.
+Azure DevOps provides comprehensive alert definition capabilities through query and filtering mechanisms, enabling precise event targeting such as failure-specific notifications while excluding routine success events.
+
+Event subscription architecture generates notifications for virtually all system actions, supporting both individual and team-wide subscription models with customizable delivery preferences and notification formatting.
 
 For more information, see also:
 
- -  [About notifications](/azure/devops/notifications/index).
- -  [Events, subscriptions, and notifications](/azure/devops/notifications/concepts-events-and-notifications).
+- [About notifications](/azure/devops/notifications/index).
+- [Events, subscriptions, and notifications](/azure/devops/notifications/concepts-events-and-notifications).

@@ -1,45 +1,42 @@
-When you deploy a new release to a customer or install new software on your server, and you want to communicate what has been released to your customer, the usual way is to use release notes.
+Release communication strategies require comprehensive documentation frameworks that effectively convey feature updates, system modifications, and deployment changes to stakeholders through structured release notes.
 
-But where do the release notes come from? There are different ways to store your release notes.
+Release notes generation employs multiple storage architectures and content management approaches designed to optimize information delivery and maintain traceability with release artifacts.
 
-### Document store
+### Document Storage Systems
 
-An often-used way of storing release notes is by creating text files or documents in some document store. This way, the release notes are stored together with other documents.
+Centralized document repositories provide traditional release notes storage through structured file systems and content management platforms. Documentation consolidation enables organizational knowledge management while maintaining separation from release management workflows.
 
-The downside of this approach is that there's no direct connection between the release in the release management tool and the release notes that belong to this release.
+Implementation limitations include disconnected release management tool integration, requiring manual correlation between release artifacts and corresponding documentation assets.
 
-### Wiki
+### Wiki-Based Documentation
 
-The most used way for customers is to store the release notes in a Wiki. For example:
+Collaborative wiki platforms deliver modern release notes management through hyperlinked content structures and integrated version control. Popular wiki implementations include:
 
- -  Confluence from Atlassian
- -  SharePoint Wiki
- -  SlimWiki
- -  Wiki in Azure DevOps
+- **Atlassian Confluence:** Enterprise-grade collaborative documentation platform.
+- **SharePoint Wiki:** Microsoft-integrated organizational wiki system.
+- **SlimWiki:** Lightweight wiki implementation for streamlined documentation.
+- **Azure DevOps Wiki:** Integrated DevOps platform wiki solution.
 
-Release notes are created as a page in the wiki and by using hyperlinks. Relations can be associated with the build, the release, and the artifacts.
+Wiki architectures enable dynamic cross-referencing between build artifacts, release packages, and deployment documentation through hyperlink associations and automated content generation.
 
-### In the codebase
+### Repository-Integrated Documentation
 
-When you look at it, release notes belong strictly to the release of the features you implemented and your code. In that case, the best option might be to store release notes as part of your code repository.
+Source code repository integration provides optimal release notes management by maintaining strict alignment between feature implementations and corresponding documentation. Codebase-integrated documentation ensures synchronized version control and automated change tracking.
 
-Once the team completes a feature, they or the product owner also write the release notes and save them alongside the code. This way, it becomes living documentation because the notes change with the rest of the code.
+Development workflow integration enables feature completion documentation through collaborative authoring between development teams and product ownership, creating living documentation that evolves synchronously with code modifications.
 
-### In a work item
+### Work Item Documentation
 
-Another option is to store your release notes as part of your work items. Work items can be Bugs, Tasks, Product Backlog Items, or User Stories.
+Agile work item integration enables release notes management through structured work tracking systems including Bugs, Tasks, Product Backlog Items, and User Stories. Dedicated release notes fields within work items provide customer-facing communication content.
 
-You can create or use a different field within the work item to save release notes in work items. In this field, you type the publicly available release notes that will be communicated to the customer.
-
-With a script or specific task in your build and release pipeline, you can generate the release notes and store them as artifacts or publish them to an internal or external website.
+Automated release notes generation leverages build and release pipeline scripting to extract work item documentation, generating comprehensive release artifacts for internal knowledge management and external website publication.
 
 :::image type="content" source="../media/release-notes-24b86315.png" alt-text="Screenshot of a release notes field in a feature work item.":::
 
-
- -  [Generate Release Notes Build Task](https://marketplace.visualstudio.com/items?itemName=richardfennellBM.BM-VSTS-XplatGenerateReleaseNotes).
- -  [Wiki Updater Tasks](https://marketplace.visualstudio.com/items?itemName=richardfennellBM.BM-VSTS-WIKIUpdater-Tasks).
- -  [Atlassian Confluence](https://www.atlassian.com/software/confluence).
- -  [Azure DevOps Wiki](https://azure.microsoft.com/services/devops/wiki/).
+- [Generate Release Notes Build Task](https://marketplace.visualstudio.com/items?itemName=richardfennellBM.BM-VSTS-XplatGenerateReleaseNotes).
+- [Wiki Updater Tasks](https://marketplace.visualstudio.com/items?itemName=richardfennellBM.BM-VSTS-WIKIUpdater-Tasks).
+- [Atlassian Confluence](https://www.atlassian.com/software/confluence).
+- [Azure DevOps Wiki](https://azure.microsoft.com/services/devops/wiki/).
 
 There's a difference between functional and technical documentation. Also, a difference between documentation designing the product, primarily written upfront, and documentation describing the product afterward, like manuals or help files.
 
