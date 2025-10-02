@@ -12,6 +12,6 @@ After completing this module, students and professionals can:
 ## Prerequisites
 
 - Comprehensive understanding of DevOps principles, practices, and continuous integration/continuous deployment workflows
-- Experience with Azure DevOps pipelines, release management, and project administration
+- Experience with Azure Pipelines, release management, and project administration
 - Familiarity with GitHub workflows, notifications, and repository management
 - Active Azure DevOps organization with team project access for hands-on configuration exercises. Reference: [Create an organization - Azure DevOps](/azure/devops/organizations/accounts/create-organization)

@@ -1,4 +1,4 @@
-Service hooks enable automated task execution across external services triggered by Azure DevOps project events, facilitating cross-platform workflow automation and real-time integration capabilities.
+Service hooks enable automated task execution across external services triggered by Azure DevOps project events, facilitating cross-platform workflow automation, and real-time integration capabilities.
 
 Integration scenarios include work item synchronization with project management platforms (Trello card creation upon work item creation), team communication automation (mobile push notifications for build failures), and custom application event processing.
 
