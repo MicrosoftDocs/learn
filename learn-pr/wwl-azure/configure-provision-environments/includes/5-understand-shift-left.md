@@ -1,34 +1,32 @@
-The goal for shifting left is to move quality upstream by performing tests early in the pipeline. It represents the phrase "fail fast, fail often" combining test and process improvements reduces the time it takes for tests to be run and the impact of failures later on.
+Shift-left testing strategies move quality assurance activities earlier in the development lifecycle through proactive validation and early feedback mechanisms. This approach embodies "fail fast, fail often" principles, combining testing and process improvements to reduce execution time and minimize downstream failure impact.
 
-The idea is to ensure that most of the testing is complete before merging a change into the main branch.
+Quality integration ensures comprehensive testing completion before code merge operations, preventing defect propagation into main development branches.
 
 :::image type="content" source="../media/shift-left-cba6e08e.png" alt-text="Screenshot of the shift-left representation image showing Unit Tests and Functional Tests during the pipeline lifecycle.":::
 
+Development teams frequently encounter test execution bottlenecks that impede development velocity and feedback loops.
 
-Many teams find their test takes too long to run during the development lifecycle.
+Project scaling results in exponential test suite growth, extending execution times from minutes to hours or days for comprehensive validation.
 
-As projects scale, the number and nature of tests will grow substantially, taking hours or days to run the complete test.
+Delayed test execution forces quality gates to the end of development cycles, eliminating the intended benefits of early defect detection and continuous validation.
 
-They get pushed further until they're run at the last possible moment, and the benefits intended to be gained from building those tests aren't realized until long after the code has been committed.
-
-There are several essential principles that DevOps teams should adhere to in implementing any quality vision.
+DevOps teams must implement quality vision principles that enable sustainable testing practices and maintain rapid feedback cycles.
 
 :::image type="content" source="../media/shift-left-quality-vision-fe308ed2.png" alt-text="Screenshot of the quality vision principles current and future test portfolio.":::
 
+Critical testing characteristics for effective shift-left implementation:
 
-Other important characteristics to take into consideration:
-
- -  **Unit tests:** These tests need to be fast and reliable.
-     -  One team at Microsoft runs over 60,000 unit tests in parallel in less than 6 minutes, intending to get down to less than a minute.
- -  **Functional tests:** Must be independent.
- -  **Defining a test taxonomy** is an essential aspect of DevOps. The developers should understand the suitable types of tests in different scenarios.
-     -  **L0** tests are a broad class of fast in-memory unit tests. It's a test that depends on code in the assembly under test and nothing else.
-     -  **L1** tests might require assembly plus SQL or the file system.
-     -  **L2** tests are functional tests run against testable service deployments. It's a functional test category requiring a service deployment but may have critical service dependencies stubbed out.
-     -  **L3** tests are a restricted class of integration tests that run against production. They require a complete product deployment.
+- **Unit tests:** Require fast execution and reliable results to support continuous integration workflows
+  - Microsoft teams execute over 60,000 unit tests in parallel within 6 minutes, targeting sub-minute execution times
+- **Functional tests:** Must maintain independence to enable parallel execution and isolated failure analysis
+- **Test taxonomy definition:** Essential DevOps practice enabling developers to select appropriate testing approaches for specific scenarios
+  - **L0 tests:** In-memory unit tests with isolated code dependencies, providing fastest feedback cycles
+  - **L1 tests:** Assembly-dependent tests requiring external resources like databases or file systems
+  - **L2 tests:** Functional tests executing against deployed services with stubbed critical dependencies
+  - **L3 tests:** Integration tests requiring complete production deployments and full system connectivity
 
 Check the case study in shifting left at Microsoft: [Shift left to make testing fast and reliable](/devops/develop/shift-left-make-testing-fast-reliable).
 
 For more information, see:
 
- -  [Shift right to test in production](/devops/deliver/shift-right-test-production).
+- [Shift right to test in production](/devops/deliver/shift-right-test-production).
