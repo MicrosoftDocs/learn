@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.migrate-oracle-workload-azure-odaa.knowledge-check
+uid: learn.azure.oracle-workload-azure-odaa.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
   description: Test your knowledge.
   ms.date: 05/01/2024
-  author: jjaygbay1
-  ms.author: jacobjaygbay
+  author: Randall-Knapp
+  ms.author: cynthist
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 2
@@ -48,4 +48,4 @@ quiz:
     - content: "The total number of CPUs and storage capacity to make available."
       isCorrect: true
       explanation: "Correct!"
-
+
