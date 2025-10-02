@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-modularize-tasks-templates.examine-task-groups
-title: Examine task groups
+title: Examine Task Groups
 metadata:
-  title: Examine task groups
-  description: "Examine task groups"
-  ms.date: 05/21/2024
-  author: wwlpublish
+  title: Examine Task Groups
+  description: "Learn how to create and manage task groups for reusable pipeline components and modular DevOps workflows"
+  ms.date: 10/01/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-examine-task-groups.md)]
+  [!include[](includes/2-examine-task-groups.md)]

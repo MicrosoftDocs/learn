@@ -1,58 +1,64 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-modularize-tasks-templates
 metadata:
-  title: Manage and modularize tasks and templates
-  description: "Manage and modularize tasks and templates"
-  ms.date: 05/21/2024
-  author: wwlpublish
+  title: Manage and Modularize Tasks and Templates
+  description: "Learn to create and manage task groups, variable groups, and custom build and release tasks for modular Azure DevOps pipelines"
+  ms.date: 10/01/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.custom:
-  - N/A
+    - N/A
   ms.service: azure
-  ai-usage: human-only
-title: Manage and modularize tasks and templates
-summary: This module describes the creation of task and variable groups and using release variables and stage variables in your pipeline.
+  ai-usage: ai-assisted
+title: Manage and Modularize Tasks and Templates
+summary: This module explores task group creation, variable group management, and custom build and release task development for scalable pipeline architectures.
 abstract: |
   By the end of this module, you're able to:
 
-  -   Use and manage task and variable groups.
+  -   Create and manage task groups for reusable pipeline components.
 
-  -   Use release variables and stage variables in your release pipeline.
+  -   Implement variable groups for centralized configuration management.
 
-  -   Use variables in release pipelines.
+  -   Configure release variables and stage variables for environment-specific deployments.
+
+  -   Develop custom build and release tasks for specialized pipeline requirements.
 prerequisites: None
 iconUrl: /training/achievements/3-manage-and-modularize-tasks-and-templates.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 subjects:
-- cloud-computing
-- devops
+  - devops
+  - cloud-computing
 units:
-- learn.wwl.manage-modularize-tasks-templates.introduction
-- learn.wwl.manage-modularize-tasks-templates.examine-task-groups
-- learn.wwl.manage-modularize-tasks-templates.explore-variables-release-pipelines
-- learn.wwl.manage-modularize-tasks-templates.exercise-create-manage-variable-groups
-- learn.wwl.manage-modularize-tasks-templates.knowledge-check
-- learn.wwl.manage-modularize-tasks-templates.summary
+  - learn.wwl.manage-modularize-tasks-templates.introduction
+  - learn.wwl.manage-modularize-tasks-templates.examine-task-groups
+  - learn.wwl.manage-modularize-tasks-templates.explore-variables-release-pipelines
+  - learn.wwl.manage-modularize-tasks-templates.exercise-create-manage-variable-groups
+  - learn.wwl.manage-modularize-tasks-templates.knowledge-check
+  - learn.wwl.manage-modularize-tasks-templates.summary
 badge:
-  uid: learn.wwl.manage-modularize-tasks-templates.badge
+  uid: learn.wwl.manage-modularize-tasks-templates.badge
