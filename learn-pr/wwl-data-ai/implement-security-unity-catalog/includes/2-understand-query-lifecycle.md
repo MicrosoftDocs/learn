@@ -52,26 +52,9 @@ Unity Catalog enables partition-level access, but **final row- and column-level 
 
 - **Partition-level filtering** is enforced during query planning. Unity Catalog determines which partitions of a table a principal is allowed to access and prunes away the rest before data is retrieved from storage. This means that only the authorized portions of data are even scanned, improving both security and performance.
 
-- **Row-level filtering** introduces conditions that are evaluated at query execution time inside the compute engine. Even though the underlying storage system may return a broader dataset, Unity Catalog ensures that only the rows matching the defined conditions are made visible to the requesting principal. This allows multiple users to query the same table but each receive a personalized, restricted view of the data. A row filter function is basically a predicate (a SQL expression or user-defined function) that is evaluated during query execution. In the following example, a row filter function is defined so that only members of the admin group can see all rows, while everyone else is restricted to rows where the region is `US`, and this filter is applied to the `sales` table:
+- **Row-level filtering** introduces conditions that are evaluated at query execution time inside the compute engine. Even though the underlying storage system may return a broader dataset, Unity Catalog ensures that only the rows matching the defined conditions are made visible to the requesting principal. This allows multiple users to query the same table but each receive a personalized, restricted view of the data. A row filter function is basically a predicate (a SQL expression or user-defined function) that is evaluated during query execution. 
 
-```sql
-CREATE FUNCTION us_filter(region STRING)
-RETURN IF(IS_ACCOUNT_GROUP_MEMBER('admin'), true, region='US');
-
-CREATE TABLE sales (region STRING, id INT)
-WITH ROW FILTER us_filter ON (region);
-```
-
-- **Column-level filtering** operates similarly but at the attribute level. Specific columns can be masked or transformed so that sensitive information is hidden or anonymized, depending on the privileges of the principal. This makes it possible to share datasets broadly while ensuring that confidential fields are only fully visible to those with appropriate authorization. In the following example, a masking function is defined to hide Social Security numbers from anyone outside the HumanResourceDept group, and the function is applied to the `ssn` column of the `users` table so that unauthorized users only see masked values.
-
-```sql
-CREATE FUNCTION ssn_mask(ssn STRING)
-  RETURN CASE WHEN IS_ACCOUNT_GROUP_MEMBER('HumanResourceDept') THEN ssn ELSE '***-**-****' END;
-
-CREATE TABLE users (
-  name STRING,
-  ssn STRING MASK ssn_mask);
-```
+- **Column-level filtering** operates similarly but at the attribute level. Specific columns can be masked or transformed so that sensitive information is hidden or anonymized, depending on the privileges of the principal. This makes it possible to share datasets broadly while ensuring that confidential fields are only fully visible to those with appropriate authorization. 
 
 ### Step 8: Returning the result
 
