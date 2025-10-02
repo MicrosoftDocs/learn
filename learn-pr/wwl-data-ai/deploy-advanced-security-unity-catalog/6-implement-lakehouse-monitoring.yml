@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-advanced-security-unity-catalog.implement-lakehouse-monitoring
+title: 'Implement Lakehouse Monitoring'
+metadata:
+  title: 'Implement Lakehouse Monitoring'
+  description: "Implement Lakehouse Monitoring"
+  ms.date: 10/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/6-implement-lakehouse-monitoring.md)]

@@ -26,10 +26,11 @@ products:
 - azure-databricks
 units:
 - learn.wwl.deploy-advanced-security-unity-catalog.introduction
-- learn.wwl.deploy-advanced-security-unity-catalog.understand-query-lifecycle
-- learn.wwl.deploy-advanced-security-unity-catalog.explore-data-sharing-marketplace
-- learn.wwl.deploy-advanced-security-unity-catalog.implement-access-control-strategies
+- learn.wwl.deploy-advanced-security-unity-catalog.understand-fine-grained-access-control
+- learn.wwl.deploy-advanced-security-unity-catalog.implement-row-filtering-and-column-masking
 - learn.wwl.deploy-advanced-security-unity-catalog.exercise-secure-data-access
+- learn.wwl.deploy-advanced-security-unity-catalog.understand-lakehouse-monitoring
+- learn.wwl.deploy-advanced-security-unity-catalog.implement-lakehouse-monitoring
 - learn.wwl.deploy-advanced-security-unity-catalog.knowledge-check
 - learn.wwl.deploy-advanced-security-unity-catalog.summary
 badge:
