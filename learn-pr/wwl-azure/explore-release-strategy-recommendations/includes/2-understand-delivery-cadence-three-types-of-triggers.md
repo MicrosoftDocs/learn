@@ -1,17 +1,17 @@
-Release and stages make use of triggers. There are three types of triggers we recognize.
+Release pipelines and stages utilize triggers to initiate deployment processes. Three primary trigger types control release automation.
 
 ## Continuous deployment trigger
 
-You can set up this trigger on your release pipeline. Once you do that, your release pipeline will trigger every time a build completes and creates a new release.
+Continuous deployment triggers automatically initiate releases when build completion creates new artifacts. This trigger enables immediate deployment upon successful build completion.
 
 ## Scheduled triggers
 
-It allows you to set up a time-based manner to start a new release—for example, every night at 3:00 AM or 12:00 PM. You can have one or multiple daily schedules, but it will always run at this specific time.
+Scheduled triggers enable time-based release automation. Configure specific times for release initiation, such as daily deployments at 3:00 AM or 12:00 PM. Multiple daily schedules can be configured to run at predetermined intervals.
 
 ## Manual trigger
 
-With a manual trigger, a person or system triggers the release based on a specific event. When it's a person, it probably uses some UI to start a new release. When it's an automated process, some events will likely occur. You can trigger the release from another system using the automation engine, which is usually part of the release management tool.
+Manual triggers require explicit human or system intervention to initiate releases. Users can start releases through the interface, while automated systems can trigger releases through API calls or automation engines integrated with release management tools.
 
 For more information, see also:
 
- -  [Release and Stage triggers](/azure/devops/pipelines/release/triggers).
+- [Release and Stage triggers](/azure/devops/pipelines/release/triggers).

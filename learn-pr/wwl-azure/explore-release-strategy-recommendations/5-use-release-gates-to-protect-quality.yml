@@ -3,13 +3,13 @@ uid: learn.wwl.explore-release-strategy-recommendations.use-release-gates-to-pro
 title: Use release gates to protect quality
 metadata:
   title: Use release gates to protect quality
-  description: "Use release gates to protect quality"
-  ms.date: 05/21/2024
-  author: wwlpublish
+  description: "Implement release gates to enforce quality controls and automated validation in deployment processes."
+  ms.date: 10/01/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-use-release-gates-to-protect-quality.md)]
+  [!include[](includes/5-use-release-gates-to-protect-quality.md)]
