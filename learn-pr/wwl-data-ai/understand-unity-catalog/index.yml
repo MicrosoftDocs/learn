@@ -36,7 +36,7 @@ subjects:
 units:
 - learn.wwl.understand-unity-catalog.introduction
 - learn.wwl.understand-unity-catalog.explore-data-governance
-- learn.wwl.understand-unity-catalog.analyze-architecture
+- learn.wwl.understand-unity-catalog.analyze-unity-catalog-architecture
 - learn.wwl.understand-unity-catalog.explore-external-storage-federation
 - learn.wwl.understand-unity-catalog.exercise-create-workspace-navigate-metastore
 - learn.wwl.understand-unity-catalog.knowledge-check
