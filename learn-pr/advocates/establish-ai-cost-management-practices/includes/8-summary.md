@@ -4,11 +4,11 @@ By applying these practices, you can ensure that your AI investments remain tran
 
 ## Learn more
 
-- FinOps Foundation's FinOps Framework: <https://www.finops.org/framework/>
-- Jtokkit Java Tokenizer Kit - <https://github.com/knuddelsgmbh/jtokkit>
-- Python tiktoken tokenizer - <https://pypi.org/project/tiktoken/>
-- Token emit metric with Azure API Management Gateway - https://www.youtube.com/watch?v=2pW6Z2VwHmQ&t=118s
-- Sample: Manage your Azure OpenAI APIs with Azure API Management - <https://aka.ms/genai-apim>
+- [FinOps Foundation's FinOps Framework](https://www.finops.org/framework/)
+- [Jtokkit Java Tokenizer Kit](https://github.com/knuddelsgmbh/jtokkit)
+- [Python tiktoken tokenizer](https://pypi.org/project/tiktoken/)
+- [Token emit metric with Azure API Management Gateway](https://www.youtube.com/watch?v=2pW6Z2VwHmQ&t=118s)
+- [Sample: Manage your Azure OpenAI APIs with Azure API Management](https://aka.ms/genai-apim)
 - [Tag support for resources](/azure/azure-resource-manager/management/tag-support)
 - [Cost Management automation overview (APIs)](/azure/cost-management-billing/automate/automation-overview)
 - [Import data into Power BI Desktop with the Cost Management data connector](/training/modules/optimize-costs-data-analysis-powerbi/5-data-connector-power-bi)

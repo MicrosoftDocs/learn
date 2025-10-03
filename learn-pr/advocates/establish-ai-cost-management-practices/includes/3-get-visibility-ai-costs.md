@@ -4,9 +4,9 @@ Remember, usage, and cost are related, but they're two different things. Usage i
 
 ## Resource groups
 
-In Microsoft Azure, a resource group is like a folder where you can store different types of resources. All of the resources required for an application can be created in the same resource group. Resource groups can be found in the Azure portal and can be acted on by CLI commands including Azure PowerShell. They can also be used as a billing filter, giving you only the costs of the resources contained in that group, using Microsoft  Cost Analysis, Budgets, and via the Azure Cost Management Query API. 
+In Microsoft Azure, a resource group is like a folder where you can store different types of resources. All of the resources required for an application can be created in the same resource group. Resource groups can be found in the Azure portal and can be acted on by CLI commands including Azure PowerShell. They can also be used as a billing filter, giving you only the costs of the resources contained in that group, using Microsoft  Cost Analysis, Budgets, and via the Microsoft Cost Management Query API. 
 
-If you want to easily view the cost data of your entire AI application, use its resource group.   
+If you want to easily view the cost data of your entire AI application, use its resource group.
 
 ## Tagging
 
@@ -16,7 +16,7 @@ Another billing filter available in Microsoft Azure is tagging. Tagging enables 
 
 Each resource in Microsoft Azure has Meters associated with it, that capture usage. You can use these as filters in Microsoft Cost Management + Billing's cost analysis reports. For example, grouping your subscription's cost data by Meter can show you which models & token types are costing you the most alongside other resource meters:
 
-[![A report showing workload cost analysis.](../media/cost-analysis.png)](../media/cost-analysis-big.png#lightbox)
+[![Screenshot showing a workload cost analysis report.](../media/cost-analysis.png)](../media/cost-analysis-big.png#lightbox)
 
 You can then select a meter, like "gpt 40 1120 inp glbl Tokens" and sort by resource to find which resources this cost is associated with. 
 
@@ -24,13 +24,13 @@ You can then select a meter, like "gpt 40 1120 inp glbl Tokens" and sort by reso
 
 Microsoft Cost Management + Billing's cost analysis includes a prebuilt smart view for Azure OpenAI, filtered to only Azure OpenAI resources. You can expand your resource to see the input, output, and cached token cost across your deployed models.
 
-[![A report breaking down AI resource costs.](../media/cost-analysis-table.png)](../media/cost-analysis-table-big.png#lightbox)
+[![Screenshot showing an AI resource cost report.](../media/cost-analysis-table.png)](../media/cost-analysis-table-big.png#lightbox)
 
 ## Cost analysis - filtering
 
 Another way to break down your costs is with a prebuilt view in cost analysis, like Accumulated costs, then use the filters. This example displays the monthly costs to date for the AI + Machine Learning services, grouped by resource. You can select a resource then group by Meter to show the models' input, output, and cached token costs.
 
-[![A report showing accumulated AI costs.](../media/cost-analysis-chart.png)](../media/cost-analysis-chart-big.png#lightbox)
+[![Screenshot showing an accumulated AI cost report.](../media/cost-analysis-chart.png)](../media/cost-analysis-chart-big.png#lightbox)
 
 ## Other methods for accessing cost data
 
