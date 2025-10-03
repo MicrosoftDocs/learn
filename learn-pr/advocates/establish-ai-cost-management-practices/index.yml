@@ -32,7 +32,7 @@ roles:
 products:
 - azure
 units:
-- learn.establish-ai-cost-management-practices.estimating-ai-costs
+- learn.establish-ai-cost-management-practices.estimate-ai-costs
 - learn.establish-ai-cost-management-practices.estimate-costs-azure-pricing-calculator
 - learn.establish-ai-cost-management-practices.get-visibility-ai-costs
 - learn.establish-ai-cost-management-practices.tracking-allocating-ai-costs
