@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-advanced-security-unity-catalog.understand-fine-grained-access-control
+title: Understand Fine-Grained Access Control
+metadata:
+  title: Understand Fine-Grained Access Control
+  description: "Understand Fine-Grained Access Control"
+  ms.date: 10/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-understand-fine-grained-access-control.md)]
