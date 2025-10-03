@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.establish-ai-cost-management-practices.estimate-costs-azure-pricing-calculator
+title: Estimate costs Azure Pricing Calculator
+metadata:
+  title: Estimate Costs Azure Pricing Calculator
+  description: TBD
+  ms.date: 10/03/2025
+  author: Orin-Thomas
+  ms.author: socuff
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-estimate-costs-azure-pricing-calculator.md)]
