@@ -6420,7 +6420,7 @@ achievements:
   title: Automate Azure infrastructure change reviews by using Bicep and GitHub
   summary: Add checks to pull requests that run automatically during your code reviews. Run the Bicep linter on your code, and deploy the resources to a temporary environment to enable further automated and manual testing.
   iconUrl: /training/achievements/bicep/automate-azure-infrastructure-change-reviews-using-bicep-github.svg
-- uid: learn.azure.oracle-workload-azure-iaas.badge
+- uid: learn.azure.migrate-oracle-workload-azure-iaas.badge
   type: badge
   title: Migrate Oracle workloads to Azure IaaS virtual machines
   summary: This module describes the process of moving an existing application and Oracle database to Azure-hosted virtual machines (VMs). This approach helps minimize refactoring, development, and configuration.
@@ -6430,7 +6430,7 @@ achievements:
   title: Introduction to Azure Compute Gallery
   summary: Learn what Azure Compute Gallery is, how it works, and when to use it.
   iconUrl: /training/achievements/generic-badge.svg
-- uid: learn.azure.oracle-application-azure-paas.badge
+- uid: learn.azure.migrate-oracle-application-azure-paas.badge
   type: badge
   title: Migrate Oracle-powered applications by using Azure PaaS database services
   summary: This module describes the process of modernizing an existing Oracle-powered workload to simplify management by refactoring the database to a fully managed cloud-native Azure database service.
@@ -6785,12 +6785,12 @@ achievements:
   title: Deploy disaster recovery using VMware Site Recovery Manager and Azure VMware Solution
   summary: You can use VMware SRM and vSphere Replication with Azure VMware Solution for disaster recovery of VMware virtual machines (VMs).
   iconUrl: /training/achievements/deploy-disaster-recovery-vmware-srm-azure-vmware-solution.svg
-- uid: learn.azure.oracle-workloads-to-azure.trophy
+- uid: learn.azure.migrate-oracle-workloads-to-azure.trophy
   type: trophy
   title: Migrate Oracle workloads to Azure
   summary: In this learning path, you'll learn about three ways you can move Oracle workloads to Azure. Based on your business needs, you might rehost Oracle databases and applications in Azure IaaS virtual machines,  migrate Oracle Exadata databases to Oracle Database@Azure, or modernize Oracle databases to Azure PaaS database services. You'll gain an overview of each approach across the three modules.
   iconUrl: /training/achievements/generic-trophy.svg
-- uid: learn.azure.oracle-workload-azure-odaa.badge
+- uid: learn.azure.migrate-oracle-workload-azure-odaa.badge
   type: badge
   title: Migrate Oracle workloads to Oracle Database@Azure
   summary: This module describes the process of migrating business-critical Oracle Exadata workloads to Azure without refactoring, by taking advantage of Oracle infrastructure in Azure datacenters via Oracle Database@Azure.
