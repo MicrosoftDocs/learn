@@ -3,7 +3,7 @@ In the previous module, you looked at granting or denying access to entire table
 - **Row and Column Security**: the preferred, modern method, composed of column masking and row filtering.
 - **Dynamic Views**: the earlier pattern that still has valid use cases. 
 
-![Diagram illustrating the two approaches to fine grained access control.](../media/fine-grained-access-conrol-two-approaches.png)
+![Diagram illustrating the two approaches to fine grained access control.](../media/fine-grained-access-control-two-approaches.png)
 
 In this unit, you'll learn what each approach is, when to use it, and why one is generally favored today. You'll explore the specific SQL syntax in the next unit, so here we stay at the conceptual level.
 

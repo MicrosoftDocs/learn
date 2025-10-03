@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn.wwl.deploy-advanced-security-unity-catalog
+uid: learn.wwl.implement-advanced-security-unity-catalog
 metadata:
   title: Implement Advanced Security and Data Management in Unity Catalog
   description: "Implement Advanced Security and Data Management in Unity Catalog"
-  ms.date: 10/04/2025
+  ms.date: 10/03/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: module-standard-task-based
@@ -28,14 +28,14 @@ roles:
 products:
 - azure-databricks
 units:
-- learn.wwl.deploy-advanced-security-unity-catalog.introduction
-- learn.wwl.deploy-advanced-security-unity-catalog.understand-fine-grained-access-control
-- learn.wwl.deploy-advanced-security-unity-catalog.implement-row-filtering-and-column-masking
-- learn.wwl.deploy-advanced-security-unity-catalog.exercise-secure-data-access
-- learn.wwl.deploy-advanced-security-unity-catalog.understand-lakehouse-monitoring
-- learn.wwl.deploy-advanced-security-unity-catalog.implement-lakehouse-monitoring
-- learn.wwl.deploy-advanced-security-unity-catalog.interpret-data-quality-dashboard
-- learn.wwl.deploy-advanced-security-unity-catalog.knowledge-check
-- learn.wwl.deploy-advanced-security-unity-catalog.summary
+- learn.wwl.implement-advanced-security-unity-catalog.introduction
+- learn.wwl.implement-advanced-security-unity-catalog.understand-fine-grained-access-control
+- learn.wwl.implement-advanced-security-unity-catalog.implement-row-filtering-column-masking
+- learn.wwl.implement-advanced-security-unity-catalog.exercise-secure-data-access
+- learn.wwl.implement-advanced-security-unity-catalog.understand-lakehouse-monitoring
+- learn.wwl.implement-advanced-security-unity-catalog.implement-lakehouse-monitoring
+- learn.wwl.implement-advanced-security-unity-catalog.interpret-data-quality-dashboard
+- learn.wwl.implement-advanced-security-unity-catalog.knowledge-check
+- learn.wwl.implement-advanced-security-unity-catalog.summary
 badge:
-  uid: learn.wwl.deploy-advanced-security-unity-catalog.badge
+  uid: learn.wwl.implement-advanced-security-unity-catalog.badge

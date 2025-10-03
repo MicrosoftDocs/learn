@@ -24,7 +24,7 @@ As data engineers, we **want to ensure the quality of this data over time**. Imp
 
 To monitor a Delta table like `heart_rate_measurements`, you need to **create a monitor** and attach it to that table. Databricks makes this easy through the Unity Catalog Data Explorer UI: 
 
-![Screenshot of the Azure Databricks Catalog Explorer, highlighting the quality menu option.](../media/catalog-exporer-quality-menu.png)
+![Screenshot of the Azure Databricks Catalog Explorer, highlighting the quality menu option.](../media/catalog-explorer-quality-menu.png)
 
 1. Open the Table in Data Explorer: Navigate to the table (for example, via the Catalog explorer). Go to the **Quality** tab for the table. If no monitor exists yet, you'll see an option to **"Get Started"** with Lakehouse Monitoring.
 

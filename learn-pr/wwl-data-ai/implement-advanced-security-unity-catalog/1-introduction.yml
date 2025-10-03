@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.deploy-advanced-security-unity-catalog.introduction
+uid: learn.wwl.implement-advanced-security-unity-catalog.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 10/04/2025
+  ms.date: 10/03/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
