@@ -37,7 +37,8 @@ INSERT INTO heart_rate_measurements VALUES
   (37, '65300842', 'Samuel Hughes', '2025-10-01T12:05:00+00:00', 1000052.1354);
 ```
 
-*(The above are just two sample rows to illustrate; in practice, imagine ~30 new rows were ingested, with several zeros and NULL names.)*
+>[!Note]
+>The above are just two sample rows to illustrate; in practice, imagine ~30 new rows were ingested, with several zeros and NULL names.
 
 After this data load, the table now contains these anomalies. Without monitoring, we might not notice these issues until someone queries the data or a downstream process fails. But with Lakehouse Monitoring, we can **trigger a refresh** of the monitor to profile the updated table (or wait for the next scheduled run).
 

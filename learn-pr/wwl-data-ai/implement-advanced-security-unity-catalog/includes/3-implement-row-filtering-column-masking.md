@@ -47,7 +47,7 @@ ALTER TABLE customers
 SET ROW FILTER nation_filter ON (c_nationkey);
 ```
 
-this ensures that non-admins only see rows where `c_nationkey = 21`. Admin users continue to see all rows.
+This ensures that non-admins only see rows where `c_nationkey = 21`. Admin users continue to see all rows.
 
 Together, column masking and row filtering provide a way to enforce restrictions directly on the base table.
 
