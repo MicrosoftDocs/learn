@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.establish-ai-cost-management-practices
+metadata:
+  ms.author: socuff
+  author: Orin-Thomas
+  ms.date: 10/03/2025
+  title: Establishing Cost Management Practices for AI
+  description: Learn about estimating AI costs, allocating costs, configuring alerting and detecting cost abnormalities.
+  ms.topic: module
+  ms.service: artificial-intelligence
+  ms.collection: ce-advocates-ai-copilot
+title: Establishing cost management practices for AI
+summary: By completing this module, you learn about establishing cost management practices for AI workloads.
+abstract: |
+  Managing the cost of AI workloads should happen throughout the entire application lifecycle, from concept to decommissioning. There can be multiple roles or people inside your organization who need to be involved with, or have visibility of, cost data and processes.
+  In this module you learn:
+  - Estimating AI costs that come from Large Language Models (LLMs).
+  - Establishing visibility of AI costs to ensure the right people have the right access to the right cost data in a timely manner.
+  - Allocating AI costs when you need to show or cross-charge portions of incurred costs to specific applications, departments, or cost centers. 
+  - Configuring alerting specific to the AI services in your application, and across the entire workload. 
+  - Detecting AI usage anomalies when your costs are outside your regular trends or expectations.
+prerequisites:  |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  -	Microsoft Azure and cloud services
+  -	AI concepts
+  - Architecture concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.establish-ai-cost-management-practices.estimating-ai-costs
+- learn.establish-ai-cost-management-practices.estimate-costs-azure-pricing-calculator
+- learn.establish-ai-cost-management-practices.get-visibility-ai-costs
+- learn.establish-ai-cost-management-practices.tracking-allocating-ai-costs
+- learn.establish-ai-cost-management-practices.advanced-token-metric-data
+- learn.establish-ai-cost-management-practices.detect-ai-usage-anomalies
+- learn.establish-ai-cost-management-practices.knowledge-check
+- learn.establish-ai-cost-management-practices.summary
+badge:
+  uid: learn.establish-ai-cost-management-practices-badge
