@@ -39,7 +39,7 @@ units:
 - learn.azure.oracle-application-azure-paas.introduction
 - learn.azure.oracle-application-azure-paas.azure-cloud-native-services-modernize-database-workloads
 - learn.azure.oracle-application-azure-paas.create-application-migration-plan
-- learn.azure.oracle-application-azure-paas.convert-oracle-database
+- learn.azure.oracle-application-azure-paas.convert-migrate-oracle-database
 - learn.azure.oracle-application-azure-paas.migrate-applications-to-azure
 - learn.azure.oracle-application-azure-paas.management-cost-optimization-considerations
 - learn.azure.oracle-application-azure-paas.knowledge-check
