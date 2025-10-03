@@ -26,7 +26,7 @@ Billing and payment for Oracle Database@Azure is handled through Azure. Payment 
 
 Just as important as addressing and accommodating your organization's wider cloud adoption plans is learning how to optimize the cost of your Azure resources. Azure offers many potential cost benefits over traditional on-premises hosting, but to make the most of these benefits, be sure to proactively [plan how to manage Azure costs](/azure/cost-management-billing/understand/plan-manage-costs).
 
-![Screen UI of example cost analysis in Azure.](../media/7-cost-optimization.png)
+![Screenshot of example cost analysis UI in Azure.](../media/7-cost-optimization.png)
 
 Cost optimization includes ensuring that the size and scale of your compute or storage usage is appropriate to your needs. For example, you may find that the VM sizes you chose for your app migration are larger than needed or that the VM instance count you're running to handle peak demand is much higher than during low-demand periods. Achieve savings by resizing your VMs to better match your needs or setting up scaling rules to add or remove instances on demand. Azure tools can help:
 
