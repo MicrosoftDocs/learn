@@ -1,46 +1,50 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-design-implement-release-strategy
 metadata:
-  title: 'AZ-400: Design and implement a release strategy'
-  description: 'AZ-400: Design and implement a release strategy'
-  ms.date: 05/06/2024
-  author: wwlpublish
+  title: "AZ-400: Design and Implement a Release Strategy"
+  description: "Learn advanced release strategy design and implementation through comprehensive continuous delivery frameworks, deployment orchestration, and automated quality assurance methodologies"
+  ms.date: 10/01/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: learning-path
-title: 'AZ-400: Design and implement a release strategy'
+title: "AZ-400: Design and Implement a Release Strategy"
 prerequisites: |
   None
 summary: |
-  This learning path explains the concepts of continuous delivery and releases strategy considerations for setting up deployment stages and your delivery and deployment cadence, and lastly, setting up your release approvals.
+  This comprehensive learning path delivers advanced methodologies for continuous delivery architecture design, release strategy optimization, and deployment orchestration frameworks. Learn enterprise-grade deployment pipeline configuration, automated quality assurance systems, and sophisticated approval workflow implementation for scalable DevOps excellence.
 iconUrl: /learn/achievements/az-400-design-and-implement-a-release-strategy.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 subjects:
-- change-management
+  - devops
 modules:
-- learn.wwl.create-release-pipeline
-- learn.wwl.explore-release-strategy-recommendations
-- learn.wwl.configure-provision-environments
-- learn.wwl.manage-modularize-tasks-templates
-- learn.wwl.automate-inspection-of-health
+  - learn.wwl.create-release-pipeline
+  - learn.wwl.explore-release-strategy-recommendations
+  - learn.wwl.configure-provision-environments
+  - learn.wwl.manage-modularize-tasks-templates
+  - learn.wwl.automate-inspection-of-health
 trophy:
   uid: learn.wwl.az-400-design-implement-release-strategy.trophy
