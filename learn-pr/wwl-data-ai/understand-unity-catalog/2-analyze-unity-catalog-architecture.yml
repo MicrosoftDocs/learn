@@ -8,6 +8,6 @@ metadata:
   ms.author: theresai
   ms.topic: unit
 title: Analyze Unity Catalog architecture
-durationInMinutes: 9
+durationInMinutes: 7
 content: |
   [!include[](includes/2-analyze-unity-catalog-architecture.md)]
