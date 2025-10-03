@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-advanced-security-unity-catalog
 metadata:
-  title: Deploy Advanced Security and Data Management in Unity Catalog
-  description: "Deploy Advanced Security and Data Management in Unity Catalog"
+  title: Implement Advanced Security and Data Management in Unity Catalog
+  description: "Implement Advanced Security and Data Management in Unity Catalog"
   ms.date: 10/04/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: module-standard-task-based
   ms.service: azure
-title: Deploy Advanced Security and Data Management in Unity Catalog
-summary: You explore different features and tools to help you deploy advanced security and data management in Unity Catalog.
+title: Implement Advanced Security and Data Management in Unity Catalog
+summary: You explore different features and tools to help you implement advanced security and data management in Unity Catalog.
 abstract: |
   At the end of this module, you're able to:
   *	Explain the importance of fine-grained access control and distinguish between Row and Column Security and Dynamic Views.
