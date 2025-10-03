@@ -3,6 +3,8 @@ In the previous module, you looked at granting or denying access to entire table
 - **Row and Column Security**: the preferred, modern method, composed of column masking and row filtering.
 - **Dynamic Views**: the earlier pattern that still has valid use cases. 
 
+![Diagram illustrating the two approaches to fine grained access control.](../media/fine-grained-access-conrol-two-approaches.png)
+
 In this unit, you'll learn what each approach is, when to use it, and why one is generally favored today. You'll explore the specific SQL syntax in the next unit, so here we stay at the conceptual level.
 
 ## Why Fine-Grained Control Matters
@@ -14,6 +16,8 @@ Typical objectives you'll address:
 - **Column masking**: Show a column's presence but hide (or transform) its sensitive values for most users.
 - **Row filtering**: Suppress entire records that a user or group shouldn't see.
 - **Partial transformation**: Preserve analytical utility (for example, last two digits, domain of an email) without exposing full identifiers.
+
+![Diagram illustrating commun use cases for fine-grained access control.](../media/fine-grained-access-control-common-use-cases.png)
 
 ## Row and Column Security
 
@@ -35,6 +39,8 @@ Key characteristics you should internalize:
 ## Dynamic Views
 
 Dynamic Views predate Row and Column Security. These have been with Databricks for some time, and though they're no longer the preferred method for controlling access to rows and columns, they still have their place. You define a view that selects from one or more underlying tables and encodes conditional logic: CASE expressions to mask sensitive columns, predicates to exclude rows, or transformations that partially obfuscate values. Any user with permission on the view can query it without having direct access to the underlying tables, assuming the view owner has that access. This separation lets you shield source objects while presenting a curated projection.
+
+![Diagram illustrating the concept of a dynamic view.](../media/dynamic-views.png)
 
 You might create multiple dynamic views over the same table to serve different user cohorts (for example, a support view with partially masked identifiers and an analyst view with additional fields). Each view becomes its own securable object with its own ownership and grants.
 

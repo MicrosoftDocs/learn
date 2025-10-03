@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-advanced-security-unity-catalog.interpret-data-quality-dashboard
+title: 'Interpret Data Quality Dashboard'
+metadata:
+  title: 'Interpret Data Quality Dashboard'
+  description: "Interpret Data Quality Dashboard"
+  ms.date: 10/04/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-interpret-data-quality-dashboard.md)]

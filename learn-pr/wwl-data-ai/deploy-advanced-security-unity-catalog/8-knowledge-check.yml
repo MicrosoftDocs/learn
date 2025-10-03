@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-advanced-security-unity-catalog.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge check"
+  ms.date: 10/04/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  module_assessment: true
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Why is fine-grained access control important in modern data platforms?"
+    choices:
+    - content: "Because it allows you to grant or deny access to entire tables without needing any additional rules."
+      isCorrect: false
+      explanation: "Incorrect. Granting or denying access to entire tables is too coarse-grained for most real scenarios."
+    - content: "Because it helps expose only the necessary parts of datasets to different users while protecting sensitive data."
+      isCorrect: true
+      explanation: "Correct. Fine-grained access control lets you tailor what users see at the row and column level, reducing duplication and improving security."
+    - content: "Because it automatically removes all sensitive data from the dataset."
+      isCorrect: false
+      explanation: "Incorrect. Fine-grained access control doesn't remove data—it controls how and to whom it's exposed."
+
+  - content: "What is the main reason **Row and Column Security** is preferred over **Dynamic Views**?"
+    choices:
+    - content: "It completely replaces the need for group-based access checks."
+      isCorrect: false
+      explanation: "Incorrect. Both approaches rely on group membership or similar checks to enforce access rules."
+    - content: "It centralizes masking and filtering logic at the table level, reducing object sprawl, and improving governance."
+      isCorrect: true
+      explanation: "Correct. Row and Column Security keeps rules close to the data, simplifying maintenance and improving performance."
+    - content: "It allows creating multiple separate views for each user group."
+      isCorrect: false
+      explanation: "Incorrect. That is actually one of the downsides of using views, not a feature of Row and Column Security."
+
+  - content: "How does **Lakehouse Monitoring** help maintain data quality over time?"
+    choices:
+    - content: "By automatically deleting rows with anomalies."
+      isCorrect: false
+      explanation: "Incorrect. Lakehouse Monitoring doesn't modify data; it tracks metrics and detects issues."
+    - content: "By replacing dashboards with automated reports."
+      isCorrect: false
+      explanation: "Incorrect. Dashboards are a key part of Lakehouse Monitoring and aren't replaced."
+    - content: "By profiling tables, tracking metrics like null percentages and value distributions, and detecting drift over time."
+      isCorrect: true
+      explanation: "Correct. Lakehouse Monitoring provides visibility into data quality trends and alerts teams to potential problems."

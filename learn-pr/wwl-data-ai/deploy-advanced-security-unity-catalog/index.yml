@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-advanced-security-unity-catalog
 metadata:
   title: Deploy Advanced Security and Data Management in Unity Catalog
   description: "Deploy Advanced Security and Data Management in Unity Catalog"
-  ms.date: 10/03/2025
+  ms.date: 10/04/2025
   author: weslbo
   ms.author: wedebols
   ms.topic: module-standard-task-based
@@ -12,6 +12,9 @@ title: Deploy Advanced Security and Data Management in Unity Catalog
 summary: You explore different features and tools to help you deploy advanced security and data management in Unity Catalog.
 abstract: |
   At the end of this module, you're able to:
+  *	Explain the importance of fine-grained access control and distinguish between Row and Column Security and Dynamic Views.
+  *	Implement masking and filtering rules at the table level using Row and Column Security, and identify scenarios where Dynamic Views are appropriate.
+  *	Use Lakehouse Monitoring to profile data, detect anomalies such as nulls, zeros, and outliers, and interpret quality and drift metrics over time.
 prerequisites: |
   * Basic understanding of data lakehouse concepts (catalogs, schemas, tables, views).
   * Familiarity with Azure Databricks workspace navigation (clusters, SQL warehouses, notebooks).
@@ -31,6 +34,7 @@ units:
 - learn.wwl.deploy-advanced-security-unity-catalog.exercise-secure-data-access
 - learn.wwl.deploy-advanced-security-unity-catalog.understand-lakehouse-monitoring
 - learn.wwl.deploy-advanced-security-unity-catalog.implement-lakehouse-monitoring
+- learn.wwl.deploy-advanced-security-unity-catalog.interpret-data-quality-dashboard
 - learn.wwl.deploy-advanced-security-unity-catalog.knowledge-check
 - learn.wwl.deploy-advanced-security-unity-catalog.summary
 badge:

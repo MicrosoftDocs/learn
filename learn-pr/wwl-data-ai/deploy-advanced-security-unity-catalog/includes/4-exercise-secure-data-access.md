@@ -5,7 +5,7 @@ Now it's your opportunity to Secure Data in Azure Databricks Unity Catalog. In t
 - **Dynamic Views**: Create intelligent views that automatically adjust what data users can see based on their group memberships and access levels
 
 > [!NOTE]
-> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
+> To complete this lab, you'll need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
 
 Launch the exercise and follow the instructions.
 
