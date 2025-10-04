@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-unity-catalog.explore-external-storage-federation
+metadata:
+  title: Explore external storage and federation
+  description: "Explore Unity Catalog external storage management: storage credentials, external locations, lakehouse federation, foreign catalogs, connections, and Delta Sharing for cross-platform data access."
+  ms.date: 10/03/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+title: Explore external storage and federation
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-explore-external-storage-federation.md)]

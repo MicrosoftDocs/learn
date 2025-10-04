@@ -1,4 +1,5 @@
-﻿In this exercise, you'll get hands-on experience with Unity Catalog by creating data objects and exploring the metastore structure. You'll learn to populate the metastore using the three-level namespace concept and navigate through catalogs, schemas, tables, views, and user-defined functions using both SQL commands and the Catalog Explorer interface.
+﻿<!-- markdownlint-disable MD041 -->
+In this exercise, you'll get hands-on experience with Unity Catalog by creating data objects and exploring the metastore structure. You'll learn to populate the metastore using the three-level namespace concept and navigate through catalogs, schemas, tables, views, and user-defined functions using both SQL commands and the Catalog Explorer interface.
 
 ## Provision an Azure Databricks workspace
 

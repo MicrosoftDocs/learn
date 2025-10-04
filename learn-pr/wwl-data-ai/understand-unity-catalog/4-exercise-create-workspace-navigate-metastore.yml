@@ -3,7 +3,7 @@ uid: learn.wwl.understand-unity-catalog.exercise-create-workspace-navigate-metas
 metadata:
   title: "Exercise: Create a workspace and navigate the metastore"
   description: "In this hands-on exercise, you'll create Unity Catalog objects and explore the metastore structure using both SQL commands and the Catalog Explorer interface."
-  ms.date: 09/25/2024
+  ms.date: 09/25/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: interactive-tutorial
