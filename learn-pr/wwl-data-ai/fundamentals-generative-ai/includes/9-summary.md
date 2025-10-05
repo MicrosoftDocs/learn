@@ -14,7 +14,7 @@ Generative AI is a rapidly developing field of AI that supports new language gen
 ::: zone-end
 
 > [!TIP]
-> For more information abut some of the concepts discussed in this module, take a look at the following links:
+> For more information about some of the concepts discussed in this module, take a look at the following links:
 > 
 > - [What are large language models (LLMs)?](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-are-large-language-models-llms?azure-portal=true)
 > - [What is retrieval-augmented generation (RAG)?](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-retrieval-augmented-generation-rag?azure-portal=true)
