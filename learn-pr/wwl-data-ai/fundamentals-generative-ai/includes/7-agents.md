@@ -11,7 +11,7 @@
 
 Imagine having a digital assistant that doesn’t just answer questions, but actually gets things done! Welcome to the world of AI agents.
 
-Agents are software applications built on generative AI, that can reason over and generate natural language, automate tasks by using tools, and respond to contextual conditions to take appropriate action.
+Agents are software applications built on generative AI that can reason over and generate natural language, automate tasks by using tools, and respond to contextual conditions to take appropriate action.
 
 ## Components of an AI agent
 
@@ -23,7 +23,7 @@ AI agents have three key elements:
 - **Instructions**: A system prompt that defines the agent’s role and behavior. Think of it as the agent’s job description.
 - **Tools**: These are what the agent uses to interact with the world. Tools can include:
     - *Knowledge* tools that provide access to information, like search engines or databases.
-    - *Action* tools that enable the agent to perform tasks, like sending emails, updating calendars, or controlling devices.
+    - *Action* tools that enable the agent to perform tasks, such as sending emails, updating calendars, or controlling devices.
 
 With these capabilities, AI agents can take on the role of digital assistants that intelligently automate tasks and collaborate with you to work smarter and more efficiently.
 
@@ -33,7 +33,7 @@ Agents can also work with one another, in multi-agent systems. Instead of one ag
 
 ![Diagram of a multi-agent system.](../media/multiple-agents.png)
 
-Agents communicate with each other through prompts, leveraging generative AI to determine what tasks are required and which agents are responsible for completing them.
+Agents communicate with each other through prompts, using generative AI to determine what tasks are required and which agents are responsible for completing them.
 
 Agentic AI is set to be the next advance in how we use technology to find information and get work done. 
 
