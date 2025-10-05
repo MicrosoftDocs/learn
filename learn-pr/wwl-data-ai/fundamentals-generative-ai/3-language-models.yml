@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-generative-ai.language-models
-title: How do language models work? 
+title: Large language models (LLMs)
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: How do language models work?
-  description: Learn about some core concepts that shape language models. Explore the first deep learning techniques used for natural language processing (NLP).
-  author: madiepev
-  ms.author: madiepev
-  ms.date: 11/26/2024
+  title: Large language models (LLMs)
+  description: Large language models (LLMs) are are the foundation of generative AI. Let's explore how they work.
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 10/04/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 8
+  zone_pivot_groups: video-or-text
+durationInMinutes: 5
 content: |
   [!include[](includes/3-language-models.md)]
-

@@ -1,4 +1,21 @@
-Generative AI is a rapidly developing field of AI that supports new language generation, code development, image creation, and more. You learned about advancements in natural language processing (NLP), the creation of large language models (LLMs), and key concepts such as tokenization, word embeddings, and adding memory to language models. The module introduced the transformer architecture, which revolutionized text understanding and generation. 
+::: zone pivot="video"
 
-You also learned about the two categories of language models: Large Language Models (LLMs) and Small Language Models (SLMs), their differences, and their deployment. The module also emphasized the influence of user prompts on the effectiveness of generative AI assistants and the concept of 'prompt engineering'. Lastly, you learned about the mechanisms used to enhance generative AI models, the four-stage process for responsible generative AI use, and the six principles of responsible AI.
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6ee42a95-da4a-46bf-9cad-0ef84acf8922]
 
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
+Generative AI is a rapidly developing field of AI that supports new language generation, code development, image creation, and more. In this module, you've explored how generative AI uses large language models to make sense of language, and how you can interact with these models using prompts. You've also learned how AI agents, built on generative AI, can act as digital assistants that collaborate with you to find information and accomplish tasks.
+
+::: zone-end
+
+> [!TIP]
+> For more information abut some of the concepts discussed in this module, take a look at the following links:
+> 
+> - [What are large language models (LLMs)?](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-are-large-language-models-llms?azure-portal=true)
+> - [What is retrieval-augmented generation (RAG)?](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-retrieval-augmented-generation-rag?azure-portal=true)
+> - [Agent Factory: The new era of agentic AI—common use cases and design patterns](https://azure.microsoft.com/blog/agent-factory-the-new-era-of-agentic-ai-common-use-cases-and-design-patterns?azure-portal=true)
