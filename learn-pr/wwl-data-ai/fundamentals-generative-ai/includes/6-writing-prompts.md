@@ -24,7 +24,7 @@ Usually, the system prompt is set by the application that uses the model. User p
 
 ## Conversation history
 
-To keep a conversation consistent and relevant, generative AI apps often keep track of the conversation history; and include summarized versions of it in subsequent prompts. This means ensures there’s an ongoing context for the conversation that the model can build on.
+To keep a conversation consistent and relevant, generative AI apps often keep track of the conversation history; and include summarized versions of it in subsequent prompts. This ensures there’s an ongoing context for the conversation that the model can build on.
 
 ![Diagram of a conversation with multiple prompts and completions.](../media/conversation-history.png)
 
