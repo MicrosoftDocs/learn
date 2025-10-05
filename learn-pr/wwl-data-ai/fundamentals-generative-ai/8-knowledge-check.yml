@@ -24,7 +24,7 @@ quiz:
       explanation: "Correct! A large language model (LLM) is designed to generate human-like text based on the input it receives."
     - content: "A model that only processes images, not text."
       isCorrect: false
-      explanation: "Incorrect. LLMs are specifically designed for text processing."
+      explanation: "Incorrect. LLMs are designed for text processing."
     - content: "A small, efficient model for mobile devices."
       isCorrect: false
       explanation: "Incorrect. LLMs are typically large and require significant computational resources."
@@ -32,21 +32,21 @@ quiz:
     choices:
     - content: "To sort the words in a sentence alphabetically"
       isCorrect: false
-      explanation: "Incorrect. Tokenization is not about sorting words alphabetically."
+      explanation: "Incorrect. Tokenization isn't about sorting words alphabetically."
     - content: "To break down text into smaller units."
       isCorrect: true 
       explanation: "Correct! Tokenization is the process of converting text into individual tokens; which can be words, sub-words, or other meaningful elements."
     - content: "To convert text into binary code for processing by computers."
       isCorrect: false
-      explanation: "Incorrect. Tokenization is not about converting text into binary code."
+      explanation: "Incorrect. Tokenization isn't about converting text into binary code."
   - content: "What are *embeddings*?"
     choices:
-    - content: "Additional words added by a transformer model to enhance text generation."
+    - content: "Extra words added by a transformer model to enhance text generation."
       isCorrect: false
-      explanation: "Incorrect. Embeddings are not additional words added by the transformer model."
+      explanation: "Incorrect. Embeddings aren't extra words added by the transformer model."
     - content: "Small language models used for specific tasks."
       isCorrect: false
-      explanation: "Incorrect. Embeddings are not small language models."
+      explanation: "Incorrect. Embeddings aren't small language models."
     - content: "Vector-based representations of tokens that capture their semantic meaning."
       isCorrect: true
       explanation: "Correct! Embeddings are vector-based representations of tokens that capture their semantic meaning."
@@ -54,13 +54,13 @@ quiz:
     choices:
     - content: "Removes irrelevant words from the input text."
       isCorrect: false
-      explanation: "Incorrect. Attention layers do not remove irrelevant words."
+      explanation: "Incorrect. Attention layers don't remove irrelevant words."
     - content: "Examines the relationships between each token and the tokens around it."
       isCorrect: true
       explanation: "Correct! Attention layers examine the relationships between each token and the tokens around it."
     - content: "Flags inappropriate content in the generated text."
       isCorrect: false
-      explanation: "Incorrect. Attention layers do not flag inappropriate content."
+      explanation: "Incorrect. Attention layers don't flag inappropriate content."
   - content: "What is the purpose of a *system prompt*?"
     choices:
     - content: "To provide context and instructions to the AI model."
@@ -68,10 +68,10 @@ quiz:
       explanation: "Correct! A system prompt is used to give context and instructions to the AI model, guiding its responses."
     - content: "To configure a generative AI model to run on a particular operating system."
       isCorrect: false
-      explanation: "Incorrect. A system prompt is not related to the operating system configuration."
+      explanation: "Incorrect. A system prompt isn't related to the operating system configuration."
     - content: "To store user preferences for future interactions."
       isCorrect: false
-      explanation: "Incorrect. A system prompt does not store user preferences."
+      explanation: "Incorrect. A system prompt doesn't store user preferences."
   - content: "What is an *agent* in the context of AI?"
     choices:
     - content: "An AI system that can perform tasks on behalf of a user."
@@ -79,7 +79,7 @@ quiz:
       explanation: "Correct! An agent in AI is a system that can autonomously perform tasks or make decisions on behalf of a user."
     - content: "A generative AI model that operates in secret."
       isCorrect: false
-      explanation: "Incorrect. An agent is not defined by its operational transparency."
+      explanation: "Incorrect. An agent isn't defined by its operational transparency."
     - content: "A human operator to whom generative AI models escalate requests they can't handle."
       isCorrect: false
-      explanation: "Incorrect. An agent is not a human operator."
+      explanation: "Incorrect. An agent isn't a human operator."

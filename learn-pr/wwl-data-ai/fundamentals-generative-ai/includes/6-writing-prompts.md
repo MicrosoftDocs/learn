@@ -30,14 +30,14 @@ To keep a conversation consistent and relevant, generative AI apps often keep tr
 
 For example, suppose the model responds to the system and user prompts described previously with the following completion:
 
-    *Key considerations for adopting Generative AI include:*
-    
-    - *Establish Clear Governance and Responsible AI Policies*
-    - *Prioritize High-Value Use Cases Across Corporate Functions*
-    - *Mitigate Risks Around Privacy, Security, and Compliance*
-    - *Foster Organizational Readiness and Cultural Adaptation*
-    - *Measure Impact and Build Accountability*
-    - *Stay Ahead of Strategic and Competitive Shifts*
+> *Key considerations for adopting Generative AI include:*
+>
+> - *Establish Clear Governance and Responsible AI Policies*
+> - *Prioritize High-Value Use Cases Across Corporate Functions*
+> - *Mitigate Risks Around Privacy, Security, and Compliance*
+> - *Foster Organizational Readiness and Cultural Adaptation*
+> - *Measure Impact and Build Accountability*
+> - *Stay Ahead of Strategic and Competitive Shifts*
 
 You could respond with a follow-up question, such as "*What are common privacy-related risks?*. The prompt would include the new question, but also the previous prompts and responses; providing context to the model so that it understands the question in relation to Generative AI adoption.
 
@@ -55,7 +55,7 @@ The quality of responses from generative AI assistants not only depends on the l
 
 ![Diagram of a clear and specific prompt with context, examples, and a request for structure.](../media/writing-prompts.png)
 
-To get better results from your prompts
+To get better results from your prompts:
 
 - Be **clear** and **specific** – prompts with explicit instructions or questions work better than vague language.
 - Add **context** - mention the topic, audience, or format you want.

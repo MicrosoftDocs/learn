@@ -15,7 +15,7 @@ Fundamentally, LLMs are trained to generate *completions* based on *prompts*. Th
 
 For example, consider the following sentence:
 
-    I heard a dog bark loudly at a cat
+> *I heard a dog bark loudly at a cat*
 
 Now, suppose you only heard the first few words: *"I heard a dog ..."*. You know that some of these words are more helpful clues as to what the next word might be than others. You know that "heard" and "dog" are strong indicators of what comes next, and that helps you narrow down the probabilities. You know that there's a good chance the sentence will continue as *"I <u>heard</u> a <u>dog</u> **bark**"*.
 
@@ -54,7 +54,7 @@ As you add more training data, more tokens will be added to the vocabulary and a
 
 ## Transforming tokens with a *transformer*
 
-Now that we have a set of tokens with unique IDs, we need to find a way to relate them to one another. To do this, we assign each token a *vector* (an array of multiple numeric values, like [1, 23, 45]). Each vector has multiple numeric *elements* or *dimensions*, and we can use these to encode linguistic and semantic attributes of the token to help provide a lot of information about what the token *means* and how it relates to other tokens, in an efficient format.
+Now that we have a set of tokens with unique IDs, we need to find a way to relate them to one another. To do this, we assign each token a *vector* (an array of multiple numeric values, like [1, 23, 45]). Each vector has multiple numeric *elements* or *dimensions*, and we can use these to encode linguistic and semantic attributes of the token to help provide a great deal of information about what the token *means* and how it relates to other tokens, in an efficient format.
 
 We need to transform the initial vector representations of the tokens into new vectors with linguistic and semantic characteristics embedded in them, based on the contexts in which they appear in the training data. Because the new vectors have semantic values embedded in them, we call them *embeddings*.
 
@@ -73,7 +73,7 @@ To accomplish this task, we use a *transformer* model. This kind of model consis
 Initially, the token vector values are assigned randomly, before being fed through the transformer to create embedding vectors. The token vectors are fed into the transformer along with a *positional encoding* that indicates where the token appears in the sequence of training text (we need to do this because the order in which tokens appear in the sequence is relevant to how they relate to one another). For example, our tokens might start off looking like this:
 
 |Token | Token ID | Position | Vector |
-| -- |--| -- |--|
+|--|--|--|--|
 | I | 1 | 1 | [3, 7, 10] |
 | heard | 2 | 2 | [2, 15, 1] |
 | a | 3 | 3 | [9, 11, 1] |
@@ -100,7 +100,7 @@ Initially, the model doesn't "know" which tokens influence others; but as it's e
 The result of the encoding process is a set of embeddings; vectors that include contextual information about how the tokens in the vocabulary relate to one another. A real transformer produces embeddings that include thousands of elements, but  to keep things simple, let's stick to vectors with only three vectors in our example. The result of the encoding process for our vocabulary might look something like this:
 
 |Token | Token ID | Embedding |
-|--| -- |--|
+|--|--|--|
 | I | 1 | [2, 0, -1 ] |
 | heard | 2 | [-2, 2, 4 ] |
 | a | 3 | [-3, 5, 5 ] |
@@ -114,7 +114,7 @@ The result of the encoding process is a set of embeddings; vectors that include 
 | skateboard | 129 | [-3, -2, 2 ] |
 | bark | 203 | [2, -2, 3 ] |
 
-If you're observant, you may have spotted that our results include two embeddings for the token "bark". It's important to understand that the embeddings represent a token within a particular *context*; and some tokens may be used to mean multiple things. For example, the *bark* of a *dog* is different from the *bark* of a *tree*! Tokens that are commonly used in multiple contexts may produce multiple embeddings.
+If you're observant, you might have spotted that our results include two embeddings for the token "bark". It's important to understand that the embeddings represent a token within a particular *context*; and some tokens might be used to mean multiple things. For example, the *bark* of a *dog* is different from the *bark* of a *tree*! Tokens that are commonly used in multiple contexts can produce multiple embeddings.
 
 We can think of the elements of the embeddings as dimensions in a multi-dimensional vector-space. In our simple example, our embeddings only have three elements, so we can visualize them as vectors in three-dimensional space, like this:
 
@@ -126,7 +126,7 @@ Because the dimensions are calculated based on how the tokens relate linguistica
 
 Now that we have a set of embeddings that encapsulate the contextual relationship between tokens, we can use the *decoder* block of a transformer to iteratively predict the next word in a sequence based on a starting *prompt*.
 
-Once again, *attention* is used to consider each token in context; but this time the context to be considered can only include the tokens that *precede* the token we're trying to predict. The decoder model is trained, using data for which we already have the full sequence, by applying a technique called *masked attention*; in which the tokens after the current token are ignored. Since we already know the next token during training,  the transformer can compare it to the predicted token and adjust the learned weights in subsequent training iterations to reduce the error in the model.
+Once again, *attention* is used to consider each token in context; but this time the context to be considered can only include the tokens that *precede* the token we're trying to predict. The decoder model is trained, using data for which we already have the full sequence, by applying a technique called *masked attention*; in which the tokens after the current token are ignored. Since we already know the next token during training,  the transformer can compare it to the predicted token and adjust the learned weights in later training iterations to reduce the error in the model.
 
 When predicting a new completion, for which the next tokens are unknown, the attention layers calculate possible vectors for the next token and the feed-forward network is used to help determine the most probable candidate. The predicted value is then added to the sequence, and the whole process repeats to predict the *next* token; and so on, until the decoder predicts that the sequence has ended.
 
