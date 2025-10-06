@@ -1,27 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.defender-for-cloud-ai-understand-protections
 metadata:
-  title: Understand How Microsoft Purview Unified Catalog Unifies Your Data Estate
-  description: Learn how Microsoft Purview Unified Catalog helps organizations overcome fragmented data estates by centralizing assets, adding business context, and applying consistent governance so teams can trust and use data with confidence.
+  title: Understand how Microsoft Defender for Cloud supports AI security and governance in Azure
+  description: Understand how Microsoft Defender for Cloud strengthens AI security in Azure through posture management and integration with key governance and identity services.
   ms.date: 10/10/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ai-usage: ai-assisted
   ms.service: purview
-title: Understand how Microsoft Purview Unified Catalog unifies your data estate
+title: Understand how Microsoft Defender for Cloud supports AI security and governance in Azure
+
 summary: |
-  Microsoft Purview Unified Catalog helps organizations overcome fragmented data estates by centralizing assets, adding business context, and applying consistent governance. Learn how unification supports trusted reporting, collaboration across roles, and confident decision-making at scale.
+  Microsoft Defender for Cloud plays a central role in securing AI workloads across Azure. Learn how Microsoft Defender for Cloud supports AI security across Azure. Explore the layers of an AI workload, the unique risks AI systems introduce, and the guardrails that protect model inputs and outputs. See how Microsoft Purview, Microsoft Entra ID, and Azure AI Foundry work together to support a unified security and governance strategy.
+
 abstract: |
-  In this unit you learn how to:
-  - Explain the challenges of fragmented data and how Unified Catalog solves them
-  - Identify the key elements of the Unified Catalog and their purpose
-  - Describe the roles and personas involved in data governance
-  - Apply responsible AI practices when using catalog features
-  - Compare the classic catalog with the Unified Catalog experience
-  - Summarize the benefits of unifying a data estate
+  In this module, you learn to:
+  - Identify the layers that make up AI workloads in Azure
+  - Recognize security risks unique to AI, including prompt injection, data leakage, and model misuse
+  - Explain how Azure AI Foundry provides guardrails and observability for AI models
+  - Describe how Microsoft Defender for Cloud, Microsoft Purview, and Microsoft Entra ID work together to secure and govern AI workloads
+  - Summarize how these services align to create a unified, defense-in-depth strategy for AI security in Azure
+
 prerequisites: |
-  None
+  Before starting, you should have:
+  - Experience securing workloads and data in Azure  
+  - Familiarity with concepts such as identity and access management, network isolation, and cloud security posture management (CSPM)  
+  - Basic understanding of how AI workloads use Azure services such as Azure OpenAI or Azure AI Search  
+
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
