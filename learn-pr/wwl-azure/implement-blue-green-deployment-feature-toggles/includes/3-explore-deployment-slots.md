@@ -1,15 +1,17 @@
-When using a cloud platform like Azure, doing blue-green deployments is relatively easy. You don't need to write your code or set up infrastructure. You can use an out-of-the-box feature called deployment slots when using web apps.
+Azure cloud platform integration simplifies blue-green deployment implementation through managed infrastructure services that eliminate custom code development and manual environment configuration requirements. Azure App Service provides native deployment slot functionality for web application blue-green deployment patterns.
 
-Deployment slots are a feature of Azure App Service. They're live apps with their hostnames. You can create different slots for your application (for example, Dev, Test, or Stage). The production slot is the slot where your live app stays. You can validate app changes in staging with deployment slots before swapping them with your production slot.
+Deployment slots constitute Azure App Service features implementing isolated live application instances with dedicated hostnames supporting independent configuration management. Multiple slot configurations enable environment-specific deployments including Development, Testing, and Staging environments alongside the production slot hosting live application traffic.
 
-You can use a deployment slot to set up a new version of your application, and when ready, swap the production environment with the new staging environment. It's done by an internal swapping of the IP addresses of both slots.
+Production slot designation identifies the primary environment serving active user requests. Staging deployment slots enable comprehensive validation and testing before production promotion through slot swap operations.
 
-## Swap
+New application version deployment utilizes staging slots for complete validation prior to production cutover. Environment swap operations execute through internal IP address exchange between slots, enabling seamless traffic transition.
 
-The swap eliminates downtime when you deploy your app with seamless traffic redirection, and no requests are dropped because of swap operations.
+## Swap Operations
+
+Slot swap functionality delivers zero-downtime deployment capabilities through seamless traffic redirection mechanisms that preserve all active requests without connection drops during swap operation execution.
 
 To learn more about Deployment slots and swap, see also:
 
- -  [Set up Staging Environments in Azure App Service](/azure/app-service/deploy-staging-slots).
- -  [Considerations on using Deployment Slots in your DevOps Pipeline](https://blogs.msdn.microsoft.com/devops/2017/04/10/considerations-on-using-deployment-slots-in-your-devops-pipeline/).
- -  [What happens during a swap.](/azure/app-service/deploy-staging-slots)
+- [Set up Staging Environments in Azure App Service](/azure/app-service/deploy-staging-slots).
+- [Considerations on using Deployment Slots in your DevOps Pipeline](https://blogs.msdn.microsoft.com/devops/2017/04/10/considerations-on-using-deployment-slots-in-your-devops-pipeline/).
+- [What happens during a swap.](/azure/app-service/deploy-staging-slots)
