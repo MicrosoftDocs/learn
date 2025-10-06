@@ -5,8 +5,8 @@ metadata:
   title: Introduction to TensorFlow using Keras
   description: Learn how to build a TensorFlow machine learning model using the Keras API.
   ms.date: 06/23/2025
-  author: robmcm
-  ms.author: robmcm
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: bstollnitz-08202021
