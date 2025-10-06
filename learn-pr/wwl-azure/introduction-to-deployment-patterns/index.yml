@@ -10,7 +10,7 @@ metadata:
   ms.custom:
     - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Introduction to Deployment Patterns
 summary: This module delivers comprehensive deployment pattern analysis through microservices architecture exploration, classical deployment methodology examination, and modern continuous delivery strategy implementation for optimized release cycle management.
 abstract: |
