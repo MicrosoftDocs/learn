@@ -12,9 +12,11 @@ These categories are broad, but they capture the main ways AI workloads differ f
 
 ## How these risks surface in Azure workloads
 
-AI risks appear in Azure through common design patterns. For example, a chatbot that uses **Azure OpenAI** for model responses and **Azure AI Search** for retrieval could be manipulated through crafted prompts. If retrieved content includes untrusted documents, indirect prompt injection becomes a realistic threat. Outputs might also surface sensitive data pulled from internal knowledge bases or cached conversations.
+AI risks appear in Azure through common design patterns, such as:
 
-In another example, a model exposed through a public API could be targeted to generate abusive or fraudulent content. Even if the underlying infrastructure is secure, the model's responses can create new liabilities for the organization.
+- A chatbot that uses **Azure OpenAI** for model responses and **Azure AI Search** for retrieval, which could be manipulated through crafted prompts. If retrieved content includes untrusted documents, indirect prompt injection becomes a realistic threat. Outputs might also surface sensitive data pulled from internal knowledge bases or cached conversations.
+
+- A model exposed through a public API, which could be targeted to generate abusive or fraudulent content. Even if the underlying infrastructure is secure, the model's responses can create new liabilities for the organization.
 
 ## Implications for security
 
