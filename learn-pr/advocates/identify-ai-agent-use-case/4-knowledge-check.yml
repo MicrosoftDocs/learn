@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.identify-ai-agent-use-case.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "This knowledge check assesses your understanding of best practices for empowering AI agent efficiency, including the AI Center of Excellence, FinOps, GenAI Ops, the Cloud Adoption Framework, and the Well-Architected Framework. Successfully completing this assessment demonstrates your grasp of key concepts and strategies essential for optimizing AI agent deployments in an enterprise setting."
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Why are existing use cases important when researching the cost efficiency of AI agents?"
+    choices:
+    - content: "They eliminate the need for financial justification."
+      isCorrect: false
+      explanation: "Financial justification is always required."
+    - content: "They focus solely on automation rates."
+      isCorrect: false
+      explanation: "Use cases don't focus solely on automation rates."
+    - content: "They offer concrete examples of AI deployment outcomes."
+      isCorrect: true
+      explanation: "Existing use cases offer concrete examples of how AI agents have been deployed, providing a reliable benchmark for ROI evaluation."
+  - content: "Which of the following is an example of a cost-effective AI use case?"
+    choices:
+    - content: "A predictive AI system to manage stock levels for a small bookstore with 500 titles."
+      isCorrect: false
+      explanation: "The predictive AI system for a small bookstore isn't cost-effective due to high development costs and low ROI."
+    - content: "An e-commerce chatbot that handles FAQs, order tracking, and returns for a mid-sized online retailer."
+      isCorrect: true
+      explanation: "The e-commerce chatbot is cost-effective because it has low operational costs, 24/7 availability, quick ROI, and scalability."
+    - content: "A monolithic AI agent designed to handle all tasks in a large organization."
+      isCorrect: false
+      explanation: "The monolithic AI agent isn't cost effective because it's expensive and inflexible."
+  - content: "What is a key benefit of targeting AI agent use cases with short time-to-value?" 
+    choices: 
+    - content: "They require extensive customization." 
+      isCorrect: false 
+      explanation: "Short time-to-value use cases rely on minimal customization." 
+    - content: "They deliver measurable results within a few months." 
+      isCorrect: true 
+      explanation: "Quick wins are achieved by deploying solutions that show results rapidly." 
+    - content: "They depend on building new data pipelines." 
+      isCorrect: false 
+      explanation: "New data pipelines increase complexity and delay value realization." 
+
