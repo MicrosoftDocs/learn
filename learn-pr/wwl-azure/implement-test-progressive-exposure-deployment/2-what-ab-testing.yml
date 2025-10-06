@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-testing-progressive-exposure-deployment.what-ab-testing
-title: What is A/B testing?
+title: What is A/B Testing?
 metadata:
-  title: What is A/B testing?
-  description: "What is A/B testing?"
-  ms.date: 05/27/2024
-  author: wwlpublish
+  title: What is A/B Testing?
+  description: "Implement A/B testing frameworks for statistical variant comparison, conversion optimization, and data-driven feature decisions"
+  ms.date: 10/06/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
-durationInMinutes: 2
+    - N/A
+durationInMinutes: 3
 content: |
-  [!include[](includes/2-what-ab-testing.md)]
+  [!include[](includes/2-what-ab-testing.md)]
