@@ -58872,6 +58872,26 @@
       "source_path": "learn-pr/azure/deploy-configure-azure-developer-cli-template/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/developer/azure-developer-cli/overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-generative-ai/2-what-is-generative-ai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-generative-ai/3a-transformers.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-generative-ai/3b-use-language-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-generative-ai/6c-responsible-ai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/7-responsible-ai",
+      "redirect_document_id": false
     }
   ]
 }
