@@ -5,11 +5,13 @@ AI workloads rely on more than one service for security, governance, and access 
 AI workloads in Azure benefit from a connected ecosystem of security and governance tools:
 
 - **Microsoft Defender for Cloud** provides posture management and workload protection. It identifies configuration gaps, applies policies, and detects threats across the services that support AI applications.
-- **Azure AI Foundry** introduces model-level guardrails and observability. It lets you apply controls such as **Prompt Shields** and **Content Safety**, then track usage, prompt activity, and system behavior to maintain safe model operations.
+- **Azure AI Foundry** introduces model-level guardrails and observability. It lets you apply controls like **Prompt Shields** and **Content Safety**, then track usage, prompt activity, and system behavior to maintain safe model operations.
 - **Microsoft Purview** supports data protection and governance. It discovers and classifies sensitive data used for training, retrieval, or evaluation. This process ensures that regulated or confidential content is properly managed throughout the AI lifecycle.
 - **Microsoft Entra ID** secures identity and access. It provides role-based access control (RBAC), conditional access, and identity protection for users, apps, and services that interact with AI workloads.
 
-Each tool serves a distinct purpose, but together they form a comprehensive security framework for AI solutions.
+Together, these tools not only secure infrastructure and data but also reinforce **responsible AI principles** like transparency and accountability. **Microsoft Purview** provides lineage, classification, and access controls that document how sensitive data is used, while **Azure AI Foundry** adds guardrails and observability that make model operations traceable and reviewable. This combination helps teams demonstrate that model behavior is both governed and auditable.
+
+Each tool serves a distinct purpose, and together they form a comprehensive security framework for AI solutions.
 
 ## How these tools complement each other
 

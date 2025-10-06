@@ -36,17 +36,9 @@ subjects:
 units:
 - learn.wwl.defender-for-cloud-ai-understand-protections.introduction
 - learn.wwl.defender-for-cloud-ai-understand-protections.understand-ai-services-azure
-
-
-
-
-
-- learn.wwl.defender-for-cloud-ai-understand-protections.address-fragmentation-challenge
-- learn.wwl.defender-for-cloud-ai-understand-protections.elements-unified-catalog
-- learn.wwl.defender-for-cloud-ai-understand-protections.roles-personas-unified-catalog
-- learn.wwl.defender-for-cloud-ai-understand-protections.responsible-ai-unified-catalog
-- learn.wwl.defender-for-cloud-ai-understand-protections.from-classic-unified-catalog
-- learn.wwl.defender-for-cloud-ai-understand-protections.unified-catalog-importance
+- learn.wwl.defender-for-cloud-ai-understand-protections.understand-ai-security-risks
+- learn.wwl.defender-for-cloud-ai-understand-protections.guardrails-protections-azure
+- learn.wwl.defender-for-cloud-ai-understand-protections.azure-security-governance-ai-workloads
 - learn.wwl.defender-for-cloud-ai-understand-protections.knowledge-check
 - learn.wwl.defender-for-cloud-ai-understand-protections.summary
 badge:

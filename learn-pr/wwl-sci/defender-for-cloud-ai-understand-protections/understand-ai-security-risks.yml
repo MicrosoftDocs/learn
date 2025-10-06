@@ -1,1 +1,15 @@
-Understand AI security risks in Azure
+### YamlMime:ModuleUnit
+uid: learn.wwl.defender-for-cloud-ai-understand-protections.understand-ai-security-risks
+title: Understand AI security risks in Azure
+metadata:
+  title: Understand AI security risks in Azure
+  description: "Understand AI security risks in Azure."
+  ms.date: 10/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/understand-ai-security-risks.md)]

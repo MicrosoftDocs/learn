@@ -24,3 +24,5 @@ Understanding guardrails at this conceptual level is important before configurin
 
 - **Traditional protections** secure the infrastructure and services.
 - **AI-specific guardrails** address risks that emerge from model behavior itself.
+
+These guardrails also support responsible AI goals by reducing harmful or ungrounded outputs and enabling policy enforcement on model responses.

@@ -23,3 +23,12 @@ AI risks appear in Azure through common design patterns, such as:
 The presence of these risks doesn't replace the need for traditional cloud protections. Identity, secrets, networks, and posture remain central. What is different is that AI workloads require **guardrails around inputs and outputs** to address risks that emerge from model behavior itself.
 
 Understanding these risk categories and how they map to Azure workloads sets the stage for evaluating the guardrails and protections available in the platform.
+
+### Threat modeling for AI workloads
+
+Extending threat modeling to AI helps capture risks that traditional analysis might miss. Security teams should consider:
+
+- **Model behavior**: how prompts and responses could be manipulated or misused
+- **Data exposure points**: where sensitive information might appear in logs, caches, or retrieval systems
+
+Identifying misuse scenarios like prompt injection or unsafe output propagation allows teams to map mitigations to existing controls like identity protection, network isolation, **Prompt Shields**, and **Content Safety**.
