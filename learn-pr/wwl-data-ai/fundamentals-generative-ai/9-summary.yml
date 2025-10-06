@@ -5,13 +5,14 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Summary
-  description: This unit is a summary of the concepts covered in Introduction to generative AI.
+  description: Let's review what you've learned in this module.
   author: sherzyang
   ms.author: sheryang
-  ms.date: 11/26/2024
+  ms.date: 10/5/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  zone_pivot_groups: video-or-text
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
