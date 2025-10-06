@@ -2,28 +2,30 @@
 uid: learn.introduction-to-sql-server-2022
 metadata:
   moduleType: build-your-first-using-product
-  title: Introduction to SQL Server 2022      
-  description: "Training module to learn about new major capabilities of SQL Server 2022 from cloud connected features to core engine capabilities."
-  ms.date: 04/15/2025
-  author: rgward
-  ms.author: bobward
+  title: Introduction to SQL Server 2025      
+  description: "Learn about SQL Server 2025's new capabilities including AI integration, analytics improvements, developer features, and performance enhancements."
+  ms.date: 10/06/2025
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.reviewer: vanto
   ms.topic: module
   ms.service: sql
-title: Introduction to SQL Server 2022
+title: Introduction to SQL Server 2025
 summary: |
-  Learn about new major capabilities of SQL Server 2022 from cloud connected features to core engine capabilities.
+  Learn about SQL Server 2025's major capabilities including AI features, analytics improvements, developer tools, and performance optimization.
 abstract: |
   By the end of this module, you're able to:
-  - Describe the innovations introduced in SQL Server 2022.
-  - Determine if SQL Server 2022 can help modernize your data estate, while reducing the cost of ownership, and accelerating the performance of your applications.
-  - Apply new security capabilities in SQL Server 2022 to protect your data, and use cryptographic attestations that your data wasn't tampered with.
-  - Connect your data to Azure and data lakes.
+  - Implement AI capabilities and vector search in SQL Server 2025
+  - Configure Microsoft Fabric mirroring and analytics features
+  - Use new developer tools including JSON, REST APIs, and RegEx
+  - Optimize performance with intelligent query processing
+  - Apply security enhancements and scalability features
 prerequisites: |
-  - Basic working knowledge of SQL Server, including deployment, security, query processing, and high availability
-  - Fundamental knowledge of the T-SQL language
-  - Basic knowledge of Azure concepts, including subscriptions, resource groups, Infrastructure-as-a-Service, and Platform-as-a-Service.
-iconUrl: /training/achievements/sqlserver/introduction-to-sql-server-2022.svg
+  - Basic working knowledge of SQL Server, including deployment, security, and query processing
+  - Fundamental knowledge of T-SQL and database concepts
+  - Basic understanding of AI and machine learning concepts
+  - Familiarity with Microsoft Azure services and cloud computing
+iconUrl: /training/achievements/sqlserver/introduction-to-sql-server-2025.svg
 levels:
   - beginner
 roles:
@@ -33,13 +35,14 @@ products:
 subjects:
   - databases
 units:
-- learn.introduction-to-sql-server-2022.introduction
-- learn.introduction-to-sql-server-2022.deploy-and-feature-difference
-- learn.introduction-to-sql-server-2022.cloud-connected
-- learn.introduction-to-sql-server-2022.built-in-query-intelligence
-- learn.introduction-to-sql-server-2022.security-scalability-availability
-- learn.introduction-to-sql-server-2022.data-virtualization-object-storage
-- learn.introduction-to-sql-server-2022.sql-language-enhancements
-- learn.introduction-to-sql-server-2022.summary
+- learn.introduction-to-sql-server-2022.1-introduction
+- learn.introduction-to-sql-server-2022.2-deploy-and-feature-difference
+- learn.introduction-to-sql-server-2022.3-ai-powered
+- learn.introduction-to-sql-server-2022.4-analytics
+- learn.introduction-to-sql-server-2022.5-developers
+- learn.introduction-to-sql-server-2022.6-performance
+- learn.introduction-to-sql-server-2022.7-security-scalability
+- learn.introduction-to-sql-server-2022.8-knowledge-check
+- learn.introduction-to-sql-server-2022.9-summary
 badge:
   uid: learn.introduction-to-sql-server-2022.badge

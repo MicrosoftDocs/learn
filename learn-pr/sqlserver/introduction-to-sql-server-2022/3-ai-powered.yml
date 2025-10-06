@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-sql-server-2022.ai-powered
+title: Explore AI-powered features in SQL Server 2025
+metadata:
+  unitType: learning-content
+  title: Explore AI-powered features in SQL Server 2025
+  description: "Discover SQL Server 2025's native AI capabilities including vector search, model management, and integration with Azure AI Foundry, OpenAI, and other AI services through T-SQL"
+  ms.date: 10/06/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-ai-powered.md)]

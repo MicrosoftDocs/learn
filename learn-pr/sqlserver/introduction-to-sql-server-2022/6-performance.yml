@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-sql-server-2022.performance
+title: Performance improvements in SQL Server 2025
+metadata:
+  unitType: learning-content
+  title: Performance improvements in SQL Server 2025
+  description: "Discover SQL Server 2025's intelligent query processing features, including AI-driven query optimization, Parameter Sensitive Plan improvements, enhanced Query Store capabilities, and advanced resource governance"
+  ms.date: 10/06/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-performance.md)]
