@@ -5,8 +5,8 @@ metadata:
   title: Neural network architecture
   description: Learn how to create a neural network using Keras and TensorFlow.
   ms.date: 06/23/2025
-  author: robmcm
-  ms.author: robmcm
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.product: learning-tensorflow
   ms.contributors:
