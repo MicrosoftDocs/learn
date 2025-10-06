@@ -54,7 +54,7 @@ This method is perfect for security professionals who want to quickly prototype 
 
 ---
 
-## Agent Builder Interface
+## Agent Builder interface
 
 The Agent Builder provides a comprehensive form-based experience for creating agents from scratch using the Security Copilot platform's graphical interface.
 
@@ -91,7 +91,7 @@ The Agent Builder is ideal for users who want granular control over their agent 
 
 ---
 
-## YAML Upload Method
+## YAML Upload method
 
 If you prefer not to use natural language prompts or the form-based Agent builder, you can define your agent by uploading a YAML manifest. This approach gives developers the flexibility to build the agent YAML in their development environment of choice. The YAML Upload method caters to developers who prefer working with code and want to define their agents programmatically using YAML manifest files.
 
@@ -121,7 +121,7 @@ This approach is best suited for developers familiar with YAML syntax and those 
 
 ---
 
-## Model Context Protocol (MCP) Tools
+## Model Context Protocol (MCP) tools
 
 The Model Context Protocol (MCP) enables building Security Copilot agents directly within development environments like Visual Studio Code with GitHub Copilot. MCP is an open protocol that standardizes integrations between AI applications and external tools, allowing developers to create sophisticated security agents using familiar IDE environments.
 
