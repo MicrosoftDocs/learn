@@ -1,47 +1,48 @@
-In the previous module, we saw how Deployment slots in Azure Web Apps enable you to swap between two different versions of your application quickly.
+Azure Web App deployment slot functionality enables rapid version switching through seamless swap operations, providing foundational blue-green deployment capabilities.
 
-Suppose you want more control over the traffic that flows to your other versions. Deployment slots alone aren't enough.
+Advanced traffic distribution requirements demand granular control beyond basic slot swapping, necessitating sophisticated traffic management solutions for progressive rollout strategies.
 
-To control traffic in Azure, you can use a component called Azure Traffic Manager.
+Azure Traffic Manager delivers enterprise-grade traffic orchestration capabilities enabling fine-grained distribution control across deployment targets.
 
 ## Azure Traffic Manager
 
-Azure Traffic Manager is a DNS-based traffic load balancer that enables you to distribute traffic optimally to services across global Azure regions while providing high availability and responsiveness.
+Azure Traffic Manager implements DNS-based traffic load balancing delivering optimal service distribution across global Azure regions through intelligent routing algorithms that maximize availability and minimize latency.
 
-Traffic Manager uses DNS to direct client requests to the most appropriate service endpoint based on a traffic-routing method and the health of the endpoints.
+DNS-layer traffic direction enables client request routing to optimal service endpoints based on configurable traffic-routing methodologies and continuous endpoint health validation.
 
-An endpoint is an Internet-facing service hosted inside or outside of Azure.
+Endpoint definitions encompass internet-accessible services hosted within Azure infrastructure or external platforms, providing deployment flexibility and hybrid architecture support.
 
-Traffic Manager provides a range of traffic-routing methods and endpoint monitoring options to suit different application needs and automatic failover models.
+Comprehensive traffic-routing methodology portfolio and endpoint monitoring frameworks support diverse application requirements including automatic failover orchestration and disaster recovery scenarios.
 
-Traffic Manager is resilient to failure, including the breakdown of an entire Azure region.
+Regional failure resilience ensures continued operation during catastrophic events including complete Azure region outages through intelligent endpoint failover and geographic redundancy.
 
-While the available options can change over time, the Traffic Manager currently provides six options to distribute traffic:
+Traffic Manager provides six traffic distribution methodologies supporting diverse architectural requirements and operational patterns:\*\*
 
- -  **Priority**: Select Priority when you want to use a primary service endpoint for all traffic and provide backups if the primary or the backup endpoints are unavailable.
- -  **Weighted**: Select Weighted when you want to distribute traffic across a set of endpoints, either evenly or according to weights, which you define.
- -  **Performance**: Select Performance when you have endpoints in different geographic locations, and you want end users to use the "closest" endpoint for the lowest network latency.
- -  **Geographic**: Select Geographic so that users are directed to specific endpoints (Azure, External, or Nested) based on which geographic location their DNS query originates from. It empowers Traffic Manager customers to enable scenarios where knowing a user's geographic region and routing them based on that is necessary. Examples include following data sovereignty mandates, localization of content & user experience, and measuring traffic from different regions.
- -  **Multivalue**: Select MultiValue for Traffic Manager profiles that can only have IPv4/IPv6 addresses as endpoints. When a query is received for this profile, all healthy endpoints are returned.
- -  **Subnet**: Select the Subnet traffic-routing method to map sets of end-user IP address ranges to a specific endpoint within a Traffic Manager profile. The endpoint returned will be mapped for that request's source IP address when a request is received.
+- **Priority routing:** Primary endpoint traffic concentration with automatic failover to backup endpoints during unavailability events
+- **Weighted distribution:** Configurable proportional traffic allocation across endpoint sets enabling gradual rollout and A/B testing scenarios
+- **Performance-based routing:** Geographic proximity optimization directing users to lowest-latency endpoints for optimal response times
+- **Geographic routing:** DNS query origin-based endpoint selection supporting data sovereignty compliance, content localization, and regional traffic analytics
+- **MultiValue responses:** IPv4/IPv6 endpoint aggregation returning all healthy endpoints for client-side selection strategies
+- **Subnet-based routing:** Source IP address range mapping to specific endpoints enabling network topology-aware traffic distribution
 
-When we look at the options the Traffic Manager offers, the most used option for Continuous Delivery is routing traffic based on weights.
+Weighted distribution methodology predominates in Continuous Delivery implementations, enabling percentage-based traffic allocation essential for canary releases and progressive rollout strategies.
 
 > [!NOTE]
-> Traffic is only routed to endpoints that are currently available.
+> Traffic routing exclusively targets available endpoints, automatically excluding unhealthy or unreachable services from distribution algorithms.
 
-For more information, see also:
+For comprehensive Traffic Manager documentation:
 
- -  [What is Traffic Manager?](/azure/traffic-manager/traffic-manager-overview)
- -  [How Traffic Manager works](/azure/traffic-manager/traffic-manager-how-it-works)
- -  [Traffic Manager Routing Methods](/azure/traffic-manager/traffic-manager-routing-methods)
+- [What is Traffic Manager?](/azure/traffic-manager/traffic-manager-overview)
+- [How Traffic Manager works](/azure/traffic-manager/traffic-manager-how-it-works)
+- [Traffic Manager Routing Methods](/azure/traffic-manager/traffic-manager-routing-methods)
 
-## Controlling your canary release
+## Controlling Your Canary Release
 
-Using a combination of feature toggles, deployment slots, and Traffic Manager, you can achieve complete control over the traffic flow and enable your canary release.
+Integrated feature toggle, deployment slot, and Traffic Manager orchestration delivers comprehensive traffic flow control enabling sophisticated canary release implementations.
 
-You deploy the new feature to the new deployment slot or a new instance of an application, and you enable the feature after verifying the deployment was successful.
+Deployment workflow sequences:\*\*
 
-Next, you set the traffic to be distributed to a small percentage of the users.
-
-You carefully watch the application's behavior, for example, by using application insights to monitor the performance and stability of the application.
+1. **Feature deployment:** New functionality deployment to isolated deployment slots or dedicated application instances
+2. **Validation gate:** Deployment verification confirming successful artifact installation before activation
+3. **Traffic allocation:** Percentage-based traffic distribution configuration targeting minimal user cohort exposure
+4. **Behavioral monitoring:** Application Insights integration enabling comprehensive performance and stability telemetry collection

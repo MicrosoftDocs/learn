@@ -3,13 +3,13 @@ uid: learn.wwl.implement-canary-releases-dark-launching.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: "Knowledge check"
-  ms.date: 05/06/2024
-  author: wwlpublish
+  description: "Validate understanding of canary releases, Traffic Manager configuration, and dark launching strategies"
+  ms.date: 10/06/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
   module_assessment: true
 durationInMinutes: 5
 content: |
@@ -17,36 +17,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following choices is an Azure-based tool can you use to divert a percentage of your web traffic to a newer version of an Azure website?"
-    choices:
-    - content: "Load Balancer."
-      isCorrect: false
-      explanation: "Incorrect. You set the traffic to be distributed to a small percentage of the users, and you carefully watch the application's behavior."
-    - content: "Application Gateway."
-      isCorrect: false
-      explanation: "Incorrect. You set the traffic to be distributed to a small percentage of the users, and you carefully watch the application's behavior."
-    - content: "Traffic Manager."
-      isCorrect: true
-      explanation: "Correct. You set the traffic to be distributed to a small percentage of the users, and you carefully watch the application's behavior."
-  - content: "Which of the following choices is a characteristic that makes users suitable for working with Canary deployments?"
-    choices:
-    - content: "Uses the app irregularly."
-      isCorrect: false
-      explanation: "Incorrect. It's a high tolerance for issues."
-    - content: "High tolerance for issues."
-      isCorrect: true
-      explanation: "Correct. It's a high tolerance for issues."
-    - content: "It depends highly on the app working all the time."
-      isCorrect: false
-      explanation: "Incorrect. It's a high tolerance for issues."
-  - content: "Which of the following choices describes the difference Dark Launching has from Canary releases?"
-    choices:
-    - content: "You're looking to assess users' responses to new features in your frontend rather than testing the performance of the backend."
-      isCorrect: true
-      explanation: "Correct. You are looking to assess users' responses to new features in your frontend rather than testing the performance of the backend."
-    - content: "You're looking to assess users' responses to new features in your backend and frontend."
-      isCorrect: false
-      explanation: "Incorrect. You are looking to assess users' responses to new features in your frontend rather than testing the performance of the backend."
-    - content: "You're looking to assess users' responses to new features in your backend rather than testing the performance of the frontend."
-      isCorrect: false
-      explanation: "Incorrect. You are looking to assess users' responses to new features in your frontend rather than testing the performance of the backend."
+    - content: "Which of the following choices is an Azure-based tool can you use to divert a percentage of your web traffic to a newer version of an Azure website?"
+      choices:
+        - content: "Load Balancer."
+          isCorrect: false
+          explanation: "Incorrect. You set the traffic to be distributed to a small percentage of the users, and you carefully watch the application's behavior."
+        - content: "Application Gateway."
+          isCorrect: false
+          explanation: "Incorrect. You set the traffic to be distributed to a small percentage of the users, and you carefully watch the application's behavior."
+        - content: "Traffic Manager."
+          isCorrect: true
+          explanation: "Correct. You set the traffic to be distributed to a small percentage of the users, and you carefully watch the application's behavior."
+    - content: "Which of the following choices is a characteristic that makes users suitable for working with Canary deployments?"
+      choices:
+        - content: "Uses the app irregularly."
+          isCorrect: false
+          explanation: "Incorrect. It's a high tolerance for issues."
+        - content: "High tolerance for issues."
+          isCorrect: true
+          explanation: "Correct. It's a high tolerance for issues."
+        - content: "It depends highly on the app working all the time."
+          isCorrect: false
+          explanation: "Incorrect. It's a high tolerance for issues."
+    - content: "Which of the following choices describes the difference Dark Launching has from Canary releases?"
+      choices:
+        - content: "You're looking to assess users' responses to new features in your frontend rather than testing the performance of the backend."
+          isCorrect: true
+          explanation: "Correct. You are looking to assess users' responses to new features in your frontend rather than testing the performance of the backend."
+        - content: "You're looking to assess users' responses to new features in your backend and frontend."
+          isCorrect: false
+          explanation: "Incorrect. You are looking to assess users' responses to new features in your frontend rather than testing the performance of the backend."
+        - content: "You're looking to assess users' responses to new features in your backend rather than testing the performance of the frontend."
+          isCorrect: false
+          explanation: "Incorrect. You are looking to assess users' responses to new features in your frontend rather than testing the performance of the backend."

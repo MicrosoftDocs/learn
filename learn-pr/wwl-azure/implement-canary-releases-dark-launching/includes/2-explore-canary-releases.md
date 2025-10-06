@@ -1,23 +1,20 @@
-The term canary release comes from the days that miners took a canary with them into the coal mines.
+Canary release terminology originates from historical mining practices where canaries served as early warning systems for toxic gas detection in coal mines.
 
-The purpose of the canary was to identify the existence of toxic gasses.
+Canaries demonstrated heightened sensitivity to hazardous atmospheric conditions, succumbing to toxic exposure before human miners, providing critical escape time from lethal environments.
 
-The canary would die much sooner than the miner, giving them enough time to escape the potentially lethal environment.
+Canary release methodology applies this early detection principle to software deployment, enabling problem identification through limited user exposure before comprehensive rollout.
 
-A canary release is a way to identify potential problems without exposing all your end users to the issue at once.
+Progressive exposure strategies deploy new functionality to minimal user cohorts, constraining potential impact scope during initial validation phases.
 
-The idea is that you tell a new feature only to a minimal subset of users.
+Comprehensive monitoring of canary user interactions generates actionable telemetry enabling data-driven continuation or rollback decisions based on observed behavior patterns and performance metrics.
 
-By closely monitoring what happens when you enable the feature, you can get relevant information from this set of users and either continue or rollback (disable the feature).
+Performance degradation or scalability constraint detection triggers remediation development and isolated canary environment validation before broader deployment consideration.
 
-If the canary release shows potential performance or scalability problems, you can build a fix for that and apply that in the canary environment.
-
-After the canary release has proven to be stable, you can move the canary release to the actual production environment.
+Canary stability validation through extended monitoring periods authorizes production environment promotion, expanding feature availability to complete user population.
 
 :::image type="content" source="../media/canary-release-47d754eb.png" alt-text="Screenshot of Canary Release.":::
 
+Canary release implementation leverages integrated deployment mechanisms combining feature toggles, intelligent traffic routing, and deployment slot orchestration:\*\*
 
-Canary releases can be implemented using a combination of feature toggles, traffic routing, and deployment slots.
-
- -  You can route a percentage of traffic to a deployment slot with the new feature enabled.
- -  You can target a specific user segment by using feature toggles.
+- **Percentage-based traffic routing:** Deployment slot configuration enables controlled traffic distribution directing specified percentages to new feature implementations
+- **Segment-specific targeting:** Feature toggle frameworks enable precise user cohort targeting for granular exposure control
