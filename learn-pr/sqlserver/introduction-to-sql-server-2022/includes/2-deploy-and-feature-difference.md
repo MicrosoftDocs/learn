@@ -15,9 +15,6 @@ SQL Server 2025 is supported on the latest versions of Windows and Linux, and is
 
 ## Compare editions of SQL Server 2025
 
-> [!NOTE]
-> Before choosing an edition, carefully evaluate your workload requirements, including memory, CPU cores, and specific feature needs.
-
 SQL Server 2025 offers editions to meet different requirements, with updates to support new features and deployment models:
 
 | Edition | Purpose | Key Limitations | Production Use |
@@ -36,9 +33,6 @@ For a full list of capabilities for each edition, see [What's new in SQL Server 
 SQL Server 2025 paid editions are licensed per core, with options for Software Assurance (SA), and expanded support for pay-as-you-go and consumption-based models in Azure and hybrid environments.
 
 ## Identify feature differences from previous releases
-
-> [!TIP]
-> Review the [SQL Server feature comparison](/sql/sql-server/editions-and-components-of-sql-server-2025) documentation to understand detailed capabilities of each feature across editions.
 
 SQL Server 2025 includes these key changes from previous releases:
 
@@ -62,11 +56,14 @@ The following features are deprecated in SQL Server 2025:
 - Stretch Database (deprecated, to be removed in a future version)
 - Some legacy security and management features replaced by new unified management and compliance tools
 
-## Enable preview features
+> [!TIP]
+> Review the [SQL Server feature comparison](/sql/sql-server/editions-and-components-of-sql-server-2025) documentation to understand detailed capabilities of each feature across editions.
 
-> [!IMPORTANT]
-> Preview features are not intended for production environments and may change before final release. Use them only in development or test environments.
+## Enable preview features
 
 SQL Server 2025 provides a preview feature option to test upcoming capabilities before they become generally available. By enabling this option, you can experiment with innovations like vector indexing, enhanced text chunking, and change event streaming—without affecting your production workloads. This approach gives you the flexibility to test and evaluate new features in a safe, isolated way, bringing agility to your on-premises environment.
 
 Unlike traditional trace flags, which are mainly for debugging and affect the whole server, the preview feature switch is set at the database level. This means you can enable preview features for specific databases, allowing targeted experimentation while keeping the rest of your environment stable. Preview features are intended for evaluation and shouldn't be used in production, but the core database remains fully supported and stable even when preview features are enabled.
+
+> [!IMPORTANT]
+> Preview features are not intended for production environments and may change before final release. Use them only in development or test environments.
