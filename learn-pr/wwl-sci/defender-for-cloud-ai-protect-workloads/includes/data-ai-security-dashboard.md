@@ -1,6 +1,4 @@
-## Review insights in the Data & AI security dashboard
-
-The **Data & AI security** view serves as the main workspace for assessing AI and data posture. It consolidates security findings, alerts, and attack paths so you can evaluate protection coverage at a glance.
+After enabling the AI workloads plan, Defender for Cloud begins discovering AI resources and assessing their configurations. The results appear in the **Data & AI security** dashboard, which provides a centralized view of your organization's AI posture and risks.
 
 - **Overview** shows all data and AI resources by cloud and protection status, whether fully, partially, or not protected.
 - **Top issues** lists the most critical recommendations, alerts, and attack paths that need attention.
@@ -20,4 +18,4 @@ With discovery complete, focus on a few key checks before moving on:
 
 By enabling the AI workloads plan and reviewing insights in the Data & AI dashboard, you now have visibility into where AI resources exist, how they're protected, and which configuration issues present the highest risk.
 
-Now that you know how to enable the AI workloads plan and interpret the insights in the Data & AI dashboard, you can use these findings to identify and remediate configuration risks that affect your organization’s AI security posture.
+Reviewing these insights helps you pinpoint which areas of your AI environment need attention. From here, you can use Defender for Cloud's posture and workload protection tools to remediate configuration issues and strengthen your overall AI security.
