@@ -22,7 +22,7 @@ Here’s how Copilot can assist at each stage of brief creation:
 Be specific with your Copilot prompts for the best results.
 
 | Prompt Style | Example |
-| :---: | :---: |
+| :--- | :--- |
 | Goal-based | Create a campaign brief to promote our new CRM tool to small business owners. |
 | Audience-specific | Target IT managers in healthcare. |
 | Tone adjustment | Rewrite this section to sound more executive-friendly. |

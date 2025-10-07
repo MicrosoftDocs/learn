@@ -1,7 +1,7 @@
 You’re a marketer at a company launching a new productivity app for small business owners. Your company’s goal is to increase sign-ups by 15% over the next 60 days through a digital campaign. You need to create a campaign brief to align your team.
 
 >[!IMPORTANT]
-> In order to complete this exercise, an eligible Microsoft 365 subscription and/or Microsoft 365 Copilot license is required.
+> In order to complete this exercise, an eligible Microsoft 365 subscription and Microsoft 365 Copilot license is required.
 
 ## Gather your information
 
@@ -31,7 +31,9 @@ There are many places you can interact with Copilot in Word.
 In the Copilot prompt box above the document, use natural language to ask Copilot to write a campaign brief for a new product. You can use <kbd>ALT</kbd>+<kbd>ENTER</kbd> to add a new line, and you can copy and paste your information about the product into the prompt.
 
 ```copilot-prompt
-Create a campaign brief for a new application. Details are as follows.•Product name: Your choice
+Create a campaign brief for a new application. Details are as follows.
+
+- Product name: Your choice
 
 - Product description: A time-blocking and task management application
 

@@ -30,7 +30,7 @@ Well-written campaign briefs offer many benefits to marketers and their teams.
 While there’s no one standard format for a campaign brief, most share many of the same core components.
 
 | Section | Description |
-| :---: | :---: |
+| :--- | :--- |
 | Campaign objective | What are you trying to achieve? (for example:  brand awareness, new sign-ups, lead generation) |
 | Target audience | Who are you speaking to? Include demographics, psychographics, and pain points. |
 | Key message | What is the main idea or value proposition? |
@@ -42,7 +42,7 @@ While there’s no one standard format for a campaign brief, most share many of 
 To see this in context, take a look at these examples of each element. Notice how the effective campaign brief keeps things specific and actionable.
 
 | Element | Effective campaign brief | Ineffective campaign brief |
-| :---: | :---: | :---: |
+| :--- | :--- | :--- |
 | Campaign objective | Increase qualified leads by 20% in Q4 through a targeted email campaign. | Get more attention for our product. |
 | Target audience | Mid-level IT managers at mid-sized U.S. companies, aged 30–45, who are evaluating cloud migration. | Anyone interested in tech. |
 | Key message | Our platform reduces cloud migration time by 40%—saving IT teams weeks of work. | We’re the best in the business. |

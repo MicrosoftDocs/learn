@@ -1,5 +1,3 @@
-# Introduction
-
 Marketing professionals often need to create campaign briefs that clearly communicate strategy, goals, and execution plans—and Copilot in Word can help streamline this process.
 
 Imagine this: You’ve been asked to write a campaign brief for a new product launch. However, the deadline is sooner than expected. You need a way to create a compelling brief that aligns with all your stakeholders’ requirements—and you need to have it done as soon as possible.
