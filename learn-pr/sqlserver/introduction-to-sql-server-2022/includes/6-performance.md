@@ -14,7 +14,7 @@ The query processor optimizes execution plans based on workload patterns and sys
 | Adaptive execution | Runtime plan adjustments | Optimal performance for varying data |
 | [Optional Parameter Plan Optimization (OPPO)](/sql/relational-databases/performance/optional-parameter-optimization) | Chooses optimal plan at runtime based on NULL vs. NOT NULL parameters | Improves performance for queries with optional parameters |
 | [Cardinality Estimation (CE) feedback for expressions](/sql/relational-databases/performance/intelligent-query-processing-ce-feedback-for-expressions) | Learns from previous executions to refine cardinality estimates for repeated expressions | More accurate estimates, better plan selection |
-| [`OPTIMIZED_SP_EXECUTESQL`](/sql/relational-databases/system-stored-procedures/sp-executesql-transact-sql) | Reduces compilation storms by treating sp_executesql like stored procedures for compilation | Improves stability and performance under heavy query loads| 
+| `OPTIMIZED_SP_EXECUTESQL` | Reduces compilation storms by treating sp_executesql like stored procedures for compilation | Improves stability and performance under heavy query loads| 
 
 ## Monitor performance with Query Store
 

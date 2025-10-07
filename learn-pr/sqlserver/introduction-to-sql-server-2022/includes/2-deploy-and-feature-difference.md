@@ -1,5 +1,4 @@
-
-[SQL Server 2025](/sql/sql-server/sql-server-2025) introduces deployment, edition, and licensing options that support hybrid, cloud-native, and AI scenarios. This unit explores deployment methods, containerization features, and differences from earlier versions.
+SQL Server 2025 introduces deployment, edition, and licensing options that support hybrid, cloud-native, and AI scenarios. This unit explores deployment methods, containerization features, and differences from earlier versions.
 
 ## Choose deployment options for SQL Server 2025
 
@@ -66,7 +65,7 @@ The following features are deprecated in SQL Server 2025:
 ## Enable preview features
 
 > [!IMPORTANT]
-> Preview features aren't supported in production environments and may change before final release. Use them only in development or test environments.
+> Preview features are not intended for production environments and may change before final release. Use them only in development or test environments.
 
 SQL Server 2025 provides a preview feature option to test upcoming capabilities before they become generally available. By enabling this option, you can experiment with innovations like vector indexing, enhanced text chunking, and change event streaming—without affecting your production workloads. This approach gives you the flexibility to test and evaluate new features in a safe, isolated way, bringing agility to your on-premises environment.
 

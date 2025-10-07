@@ -9,13 +9,13 @@ SQL Server 2025 significantly improves data enrichment capabilities with several
 
 SQL Server 2025 offers improved native JSON support, letting you store, query, and manipulate JSON directly in T-SQL. New functions like `JSON_OBJECT` and `JSON_VALUE` simplify working with semi-structured data, while enhanced indexing boosts performance for JSON queries. This makes blending relational and hierarchical data easier for modern applications.
 
-[JSON](/sql/relational-databases/json/json-data-sql-server) support in SQL Server lets you store and work with JSON data natively. You can:
+[JSON](/sql/relational-databases/json/json-data-sql-server) support in SQL Server lets you store and work with JSON data natively. 
 
-Process JSON documents directly in SQL Server
-Query and update JSON using T-SQL
-Index JSON properties for faster performance
-Validate JSON at the database level
-Use the JSON data type for strict type enforcement
+- Process JSON documents directly in SQL Server
+- Query and update JSON using T-SQL
+- Index JSON properties for faster performance
+- Validate JSON at the database level
+- Use the JSON data type for strict type enforcement
 
 The following example shows how SQL Server 2025 uses the new JSON data type with automatic validation and dot notation, allowing you to store JSON in a column and query properties like name and price directly in T-SQL without extra functions.
 
@@ -39,13 +39,13 @@ FROM Products;
 ```
 
 > [!TIP]
-Use the `ISJSON()` function to validate JSON data before storing it in the database.
+> Use the `ISJSON()` function to validate JSON data before storing it in the database.
 
 ### Integrate REST APIs
 
 SQL Server 2025 introduces built-in REST API support, enabling direct interaction with database objects over HTTP without extra middleware. Developers can expose tables, views, and stored procedures as RESTful endpoints, making it easier to integrate SQL Server with modern web and mobile applications. The feature supports secure authentication, JSON payloads for input and output, and fine-grained control over which operations are exposed. This simplifies building lightweight services and microservices that use SQL Server as a backend while reducing development overhead.
 
-The [REST API](/sql/connect/rest/sql-server-rest-api) operations are executed in-database, improving security and reducing external dependencies.
+The [REST API](/sql/relational-databases/system-stored-procedures/sp-invoke-external-rest-endpoint-transact-sql) operations are executed in-database, improving security and reducing external dependencies.
 
 | Feature | Description | Example Use Case |
 |---------|-------------|----------------|
@@ -58,7 +58,7 @@ The [REST API](/sql/connect/rest/sql-server-rest-api) operations are executed in
 
 SQL Server 2025 adds native support for regular expressions (RegEx) in T-SQL, enabling powerful pattern matching and text manipulation directly within queries. With new functions like [`REGEXP_MATCHES`](/sql/t-sql/functions/regexp-matches-transact-sql), [`REGEXP_REPLACE`](/sql/t-sql/functions/regexp-replace-transact-sql), and [`REGEXP_LIKE`](/sql/t-sql/functions/regexp-like-transact-sql), developers can validate input, extract complex patterns, and perform advanced string transformations without relying on CLR (Common Language Runtime) or external scripts. This feature simplifies tasks such as data cleansing, format validation, and searching for dynamic patterns, making SQL Server more versatile for modern data processing scenarios.
 
-[Regular expression support](/sql/t-sql/functions/regex-functions) adds pattern matching capabilities:
+[Regular expression support](/sql/t-sql/functions/regular-expressions-functions-transact-sql) adds pattern matching capabilities:
 
 | Function | Purpose | Example |
 |----------|---------|----------|

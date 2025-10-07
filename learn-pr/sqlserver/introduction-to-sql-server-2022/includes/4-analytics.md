@@ -62,9 +62,9 @@ The following table outlines key reporting capabilities in Power BI Report Serve
 
 | Feature | Description | Documentation |
 |---------|-------------|---------------|
-| Unified reporting | Create and manage paginated and interactive reports in one platform | [Report types](/power-bi/report-server/reporting-roadmap) |
+| Unified reporting | Create and manage paginated and interactive reports in one platform | [Paginated reports](/power-bi/paginated-reports/paginated-reports-report-builder-power-bi) |
 | Data modeling | Build reusable semantic models for consistent reporting | [Data modeling guide](/power-bi/transform-model/desktop-modeling-view) |
-| Power BI integration | Use Power BI features including visualizations and AI capabilities | [Power BI integration](/power-bi/report-server/connect-data-source) |
+| Power BI integration | Use Power BI features including visualizations and AI capabilities | [Prepare your data for AI](/power-bi/create-reports/copilot-prepare-data-ai) |
 | Cloud migration | Migrate to cloud services while preserving existing reports | [Migration guide](/power-bi/report-server/migrate-report-server) |
 
 > [!NOTE]
@@ -77,7 +77,7 @@ For organizations currently using SQL Server Reporting Services (SSRS), Microsof
 
 ## Optimize Analysis Services performance
 
-[SQL Server Analysis Services (SSAS)](/sql/analysis-services/analysis-services-overview) provides enterprise-grade semantic data models for business intelligence and data analytics applications. It processes data from multiple data sources into a highly optimized data model, enabling fast analysis of large datasets and complex calculations. Whether you're analyzing financial data, sales metrics, or operational KPIs, SSAS provides the tools to create sophisticated data models that support both traditional reporting and advanced analytics scenarios.
+[SQL Server Analysis Services (SSAS)](/analysis-services/ssas-overview) provides enterprise-grade semantic data models for business intelligence and data analytics applications. It processes data from multiple data sources into a highly optimized data model, enabling fast analysis of large datasets and complex calculations. Whether you're analyzing financial data, sales metrics, or operational KPIs, SSAS provides the tools to create sophisticated data models that support both traditional reporting and advanced analytics scenarios.
 
 SQL Server 2025 Analysis Services includes these performance and scalability enhancements:
 

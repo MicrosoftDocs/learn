@@ -21,13 +21,12 @@ Here are resources to help you learn more about SQL Server 2025:
 
 - [SQL Server 2025 overview](https://aka.ms/sqlserver2025)
 - [SQL Server 2025 technical documentation](/sql/sql-server)
-- [Download SQL Server 2025 preview](https://aka.ms/sqlserver2025-preview)
+- [Download SQL Server 2025 preview](https://www.microsoft.com/sql-server/sql-server-downloads)
 - [Microsoft Fabric mirroring guide](/fabric/database/mirrored-database/overview)
-- [AI features in SQL Server 2025](/sql/ai-features)
-- [Developer guide for SQL Server 2025](/sql/sql-server/dev-get-started)
-- [Security and compliance documentation](/sql/security)
-- [Performance tuning guide](/sql/performance)
-- [Join the SQL Server community](/sql/community)
+- [AI features in SQL Server 2025](/sql/sql-server/ai/artificial-intelligence-intelligent-applications)
+- [Security and compliance documentation](/sql/relational-databases/security/security-center-for-sql-server-database-engine-and-azure-sql-database)
+- [Performance tuning documentation](/sql/relational-databases/automatic-tuning/automatic-tuning)
+- [Join the SQL Server community](https://techcommunity.microsoft.com/category/sql-server/discussions/sql_server)
 
 ## Next steps
 

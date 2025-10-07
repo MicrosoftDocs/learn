@@ -1,8 +1,8 @@
-[SQL Server 2025](/sql/relational-databases/security/security-center-for-sql-server-database-engine-and-azure-sql-database) provides security features for data protection, identity management, and compliance. This unit covers security improvements and scalability enhancements.
+SQL Server 2025 provides security features for data protection, identity management, and compliance. This unit covers security improvements and scalability enhancements.
 
 ## Configure security cache
 
-[SQL Server security](/sql/relational-databases/security/authentication-access/database-level-roles) includes optimizations to the security cache, reducing authentication latency and improving scalability for environments with many users or frequent permission changes. These improvements help ensure that access checks remain fast and reliable, even as your database grows.
+[SQL Server security](/sql/relational-databases/security/security-center-for-sql-server-database-engine-and-azure-sql-database) includes optimizations to the security cache, reducing authentication latency and improving scalability for environments with many users or frequent permission changes. These improvements help ensure that access checks remain fast and reliable, even as your database grows.
 
 ## Implement encryption and password protection
 
@@ -10,7 +10,9 @@
 
 ## Use managed identities
 
-[Managed identities](/azure/active-directory/managed-identities-azure-resources/overview)  simplify secure connections to Azure services by eliminating the need for manual credential management. You can now authenticate to SQL Server using system-assigned managed identities, simplifying access control for applications running in Azure. Managed identities are also supported for:
+SQL Server 2025 adds support for Microsoft Entra [managed identities](/sql/sql-server/azure-arc/managed-identity), making it easier to connect securely to Azure services without storing or managing credentials. Managed identities are automatically handled by Azure and can authenticate to any service that supports Microsoft Entra authentication. With this release, SQL Server can use managed identities for both inbound connections and outbound calls to Azure resources. When your SQL Server instance is onboarded to Azure Arc, a system-assigned managed identity is created for the server. After creation, you need to link the identity to the SQL Server instance and your Microsoft Entra tenant by updating the registry settings.
+
+Managed identities are also supported for:
 
 - Backing up databases to URL destinations
 - Using Extensible Key Management (EKM) modules
@@ -20,7 +22,7 @@ These enhancements reduce the need for hard-coded secrets and manual credential 
 
 ## Set up flexible authentication and login options
 
-[Microsoft Entra authentication](/sql/relational-databases/security/authentication-access/authentication-microsoft-entra-id) in SQL Server 2025 supports logins with nonunique display names, making it easier to manage users in large organizations. On Linux, you can now define custom password policies, allowing you to enforce organization-specific complexity and rotation requirements for local SQL logins.
+[Microsoft Entra authentication](/sql/relational-databases/security/authentication-access/azure-ad-authentication-sql-server-overview) in SQL Server 2025 supports logins with nonunique display names, making it easier to manage users in large organizations. On Linux, you can now define custom password policies, allowing you to enforce organization-specific complexity and rotation requirements for local SQL logins.
 
 ## Enable modern protocols
 
@@ -28,11 +30,11 @@ These enhancements reduce the need for hard-coded secrets and manual credential 
 
 ## Monitor security and compliance
 
-[SQL Server Audit](/sql/relational-databases/security/auditing/sql-server-audit-database-engine) SQL Server 2025 includes these security monitoring capabilities:
+[SQL Server Audit](/sql/relational-databases/security/auditing/sql-server-audit-database-engine) provides comprehensive monitoring capabilities. SQL Server 2025 enhances these security monitoring features:
 
 | Feature | Purpose | Documentation |
 |---------|----------|--------------|
-| Extended Events | Track security-related events | [Extended Events](/sql/relational-databases/extended-events/extended-events) |
-| Threat Detection | Identify potential security threats | [Advanced Threat Protection](/sql/relational-databases/security/sql-advanced-threat-protection) |
-| Compliance Tools | Meet regulatory requirements | [Compliance Guide](/sql/relational-databases/security/compliance-guide) |
-| Activity Monitoring | Track user and system actions | [Activity Monitoring](/sql/relational-databases/security/monitoring-activity) |
+| Server Audit | Track server-level actions and changes | [Server Audit Specification](/sql/t-sql/statements/create-server-audit-specification-transact-sql) |
+| Database Audit | Monitor database-level events | [Database Audit Specification](/sql/t-sql/statements/create-database-audit-specification-transact-sql) |
+| Extended Events | Capture detailed audit data | [Extended events](/sql/relational-databases/extended-events/quick-start-extended-events-in-sql-server) |
+| Audit Log Management | Configure audit log storage and retention | [View audit logs](/sql/relational-databases/security/auditing/view-a-sql-server-audit-log) |

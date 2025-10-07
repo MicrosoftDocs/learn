@@ -12,7 +12,6 @@ durationInMinutes: 3
 content: |
   Answer the following questions to test your knowledge of SQL Server 2025 features.
 quiz:
-  title: Knowledge check
   questions:
   - content: "Which feature in SQL Server 2025 enables semantic search and similarity matching using vector embeddings?"
     choices:
