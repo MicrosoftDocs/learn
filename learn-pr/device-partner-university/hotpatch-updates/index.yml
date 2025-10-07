@@ -35,7 +35,7 @@ units:
   - learn.dpu.hotpatch-updates.introduction
   - learn.dpu.hotpatch-updates.protection-with-less-disruption
   - learn.dpu.hotpatch-updates.update-schedules
-  - learn.dpu.hotpatch-updates.hotpatch-arm64-devices
+  - learn.dpu.hotpatch-updates.hotpatch-devices
   - learn.dpu.hotpatch-updates.summary
 badge:
   uid: learn.dpu.hotpatch-updates.badge
