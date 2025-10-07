@@ -1,36 +1,43 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-infrastructure-as-code-configuration-management
 metadata:
-  title: Explore infrastructure as code and configuration management
-  description: Explore infrastructure as code and configuration management
-  ms.date: 05/08/2024
-  author: wwlpublish
+  title: Explore Infrastructure as Code and Configuration Management
+  description: Learn Infrastructure as Code (IaC) foundational concepts, environment deployment strategies, configuration management approaches, and idempotent configuration principles for automated infrastructure operations.
+  ms.date: 10/07/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.custom:
     - N/A
   ms.service: azure
   ai-usage: ai-assisted
-title: Explore infrastructure as code and configuration management
-summary: This module describes key concepts of infrastructure as code and environment deployment creation and configuration. Also, understand the imperative, declarative, and idempotent configuration and how it applies to your company.
+title: Explore Infrastructure as Code and Configuration Management
+summary: This module examines Infrastructure as Code (IaC) foundational concepts encompassing environment deployment provisioning and configuration management methodologies. Content explores imperative versus declarative configuration approaches, idempotent configuration principles, and organizational implementation strategies enabling automated infrastructure operations with version control, consistency, and reproducibility.
 abstract: |
   By the end of this module, you're able to:
-  - Understand how to deploy your environment.
-  - Plan your environment configuration.
-  - Choose between imperative versus declarative configuration.
-  - Explain idempotent configuration.
-prerequisites: None
+  - Implement environment deployment automation strategies using Infrastructure as Code
+  - Design environment configuration management approaches with version control
+  - Differentiate between imperative and declarative configuration methodologies
+  - Apply idempotent configuration principles ensuring consistent infrastructure operations
+prerequisites: |
+  - Understanding of DevOps principles and practices
+  - Familiarity with version control systems
+  - Basic knowledge of cloud computing concepts
 iconUrl: /training/achievements/1-explore-infrastructure-as-code-and-configuration-management.svg
 levels:
   - advanced
 roles:
   - administrator
+  - ai-engineer
+  - data-engineer
   - developer
   - devops-engineer
+  - platform-engineer
   - security-engineer
   - security-operations-analyst
   - service-adoption-specialist
   - solution-architect
+  - startup-founder
   - technology-manager
 products:
   - azure
@@ -42,6 +49,8 @@ products:
   - azure-repos
   - azure-test-plans
   - github
+subjects:
+  - devops
 units:
   - learn.wwl.explore-infrastructure-as-code-configuration-management.introduction
   - learn.wwl.explore-infrastructure-as-code-configuration-management.explore-environment-deployment
@@ -51,4 +60,4 @@ units:
   - learn.wwl.explore-infrastructure-as-code-configuration-management.knowledge-check
   - learn.wwl.explore-infrastructure-as-code-configuration-management.summary
 badge:
-  uid: learn.wwl.explore-infrastructure-as-code-configuration-management.badge
+  uid: learn.wwl.explore-infrastructure-as-code-configuration-management.badge

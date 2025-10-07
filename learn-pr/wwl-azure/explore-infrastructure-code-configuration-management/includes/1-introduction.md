@@ -1,30 +1,29 @@
-Infrastructure as code (IaC) doesn't quite trip off the tongue, and its meaning isn't always straightforward.
+**Infrastructure as Code (IaC)** represents a foundational DevOps methodology that enables teams to manage infrastructure through code rather than manual processes. This approach has become essential for modern software delivery—many experts consider IaC a prerequisite for successful DevOps implementation.
 
-But IaC has been with us since the beginning of DevOps—and some experts say DevOps wouldn't be possible without it.
+Instead of manually configuring servers or using one-off scripts, **IaC treats infrastructure the same way developers treat application code.** This means your networks, servers, and other resources are defined in version-controlled files that can be reviewed, tested, and deployed consistently.
 
-As the name suggests, infrastructure as code is the concept of managing your operations environment like you do applications or other code for general release.
+**Key IaC principles include:**
 
-Rather than manually making configuration changes or using one-off scripts to make infrastructure changes, the operations infrastructure is managed instead using the same rules and strictures that govern code development—particularly when new server instances are spun up.
+- **Version control:** Infrastructure definitions stored in Git or other version control systems
+- **Automated testing:** Infrastructure changes validated before deployment
+- **Continuous monitoring:** Infrastructure state tracked and managed
+- **Reproducibility:** Same configuration produces identical results every time
 
-That means that the core best practices of DevOps—like version control, virtualized tests, and continuous monitoring—are applied to the underlying code that governs the creation and management of your infrastructure.
+Modern cloud platforms like Azure, AWS, and Google Cloud provide elastic, on-demand resources. To fully leverage this flexibility, organizations must adopt IaC practices across their entire infrastructure portfolio. Tools like **Azure Resource Manager (ARM) templates, Terraform, Bicep, and Ansible** enable teams to provision and configure infrastructure programmatically.
 
-In other words, your infrastructure is treated the same way that any other code would be.
-
-The elasticity of the cloud paradigm and the disposability of cloud machines can only be used by applying the principles of Infrastructure as Code to all your infrastructure.
-
-This module describes key concepts of infrastructure as code and environment deployment creation and configuration. Also, understand the imperative, declarative, and idempotent configuration and how it applies to your company.<br>
+This module explores IaC foundational concepts, environment deployment strategies, and configuration management approaches. You'll learn about **imperative versus declarative** configuration styles and **idempotent** operations that ensure consistent outcomes.
 
 ## Learning objectives
 
-After completing this module, students and professionals can:
+After completing this module, you'll be able to:
 
- -  Understand how to deploy your environment.
- -  Plan your environment configuration.
- -  Choose between imperative versus declarative configuration.
- -  Explain idempotent configuration.
+- Implement environment deployment automation using Infrastructure as Code
+- Design configuration management strategies with version control
+- Choose between imperative and declarative configuration approaches
+- Apply idempotent configuration principles for consistent infrastructure
 
 ## Prerequisites
 
- -  Understanding of what DevOps is and its concepts.
- -  Familiarity with version control principles is helpful but isn't necessary.
- -  Beneficial to have experience in an organization that delivers software.
+- Understanding of DevOps principles and practices
+- Familiarity with version control systems (helpful but not required)
+- Basic knowledge of cloud computing concepts

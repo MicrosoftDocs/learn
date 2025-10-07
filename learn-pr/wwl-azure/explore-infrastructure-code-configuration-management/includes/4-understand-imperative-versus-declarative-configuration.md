@@ -1,27 +1,117 @@
-There are a few different approaches that you can adopt to implement Infrastructure as Code and Configuration as Code.
+When implementing Infrastructure as Code and Configuration as Code, you can choose between two fundamental approaches: **declarative** and **imperative**. Understanding the difference helps you select the right tools and strategies.
 
-Two of the main methods of approach are:
+## Declarative approach (functional)
 
- -  **Declarative** (functional). The declarative approach states *what* the final state should be. When run, the script or definition will initialize or configure the machine to have the finished state declared without defining *how* that final state should be achieved.
+**Declarative configuration describes _what_ you want, not _how_ to get there.**
+
+You specify the desired end state, and the system figures out how to achieve it. Think of it like ordering food at a restaurant—you say "I want a cheeseburger" without explaining how to cook it.
+
+**Example (declarative):**
+
+```
+resource "virtual_machine" "web_server" {
+  name     = "web-vm-01"
+  size     = "Standard_D2s_v3"
+  location = "East US"
+}
+```
+
+This code declares: "I want a virtual machine with these properties." The IaC tool determines what actions are needed to create it.
 
 :::image type="content" source="../media/declarative-703bb981.png" alt-text="An arrow points from a script icon to an icon of two cogs representing coding procedures.":::
 
+**Popular declarative tools:**
 
- -  **Imperative** (procedural). In the imperative approach, the script states the *how* for the final state of the machine by executing the steps to get to the finished state. It defines what the final state needs to be but also includes how to achieve that final state. It also can consist of coding concepts such as *for*, *if-then*, *loops*, and matrices.
+- Azure Resource Manager (ARM) templates
+- Bicep
+- Terraform
+- Kubernetes manifests
+
+## Imperative approach (procedural)
+
+**Imperative configuration describes _how_ to achieve the desired state.**
+
+You specify step-by-step instructions. It's like following a recipe—do step 1, then step 2, then step 3.
+
+**Example (imperative):**
+
+```
+az vm create --name web-vm-01 --size Standard_D2s_v3 --location eastus
+az vm extension set --vm-name web-vm-01 --name IIS
+az network nsg rule create --name AllowHTTP --priority 100
+```
+
+This code explicitly tells the system: "First create the VM, then install IIS, then configure the firewall rule."
 
 :::image type="content" source="../media/imperative-a9e6a2ad.png" alt-text="An arrow points from a script icon to an icon of two cogs representing coding procedures, followed by another arrow pointing to an image representing an application in its final state.":::
 
+**Imperative approaches often include:**
 
-## Best practices
+- For loops and conditionals (if-then statements)
+- Explicit ordering of operations
+- Error handling logic
+- More procedural programming concepts
 
-The **declarative** approach abstracts away the methodology of how a state is achieved. As such, it can be easier to read and understand what is being done.
+**Popular imperative tools:**
 
-It also makes it easier to write and define. Declarative approaches also separate the final desired state and the coding required to achieve that state.
+- PowerShell scripts
+- Azure CLI scripts
+- Ansible playbooks (can be used declaratively or imperatively)
+- Python/Bash scripts
 
-So, it doesn't force you to use a particular approach, allowing for optimization.
+## Choosing the right approach
 
-A **declarative** approach would generally be the preferred option where ease of use is the primary goal. Azure Resource Manager template files are an example of a declarative automation approach.
+**When to use declarative:**
 
-An **imperative** approach may have some advantages in complex scenarios where changes in the environment occur relatively frequently, which need to be accounted for in your code.
+**Advantages:**
 
-There's no absolute on which is the best approach to take, and individual tools may be used in either *declarative* or *imperative* forms. The best approach for you to take will depend on your needs.
+- **Easier to read and understand:** You see _what_ infrastructure exists, not implementation details
+- **Idempotent by design:** Run the same template repeatedly—it creates resources that don't exist and ignores ones that do
+- **Order-independent:** The tool figures out dependencies and correct ordering
+- **Less code:** Shorter, more maintainable definitions
+- **Better for teams:** Easier for team members to review and understand
+
+**Best for:**
+
+- Provisioning cloud infrastructure (VMs, networks, storage)
+- Deploying containerized applications to Kubernetes
+- Teams new to IaC
+- Infrastructure that changes infrequently
+
+**Example tools:** Azure Resource Manager templates, Bicep, Terraform, CloudFormation
+
+---
+
+**When to use imperative:**
+
+**Advantages:**
+
+- **Fine-grained control:** Specify exactly how things should happen
+- **Easier for complex logic:** If you need loops, conditions, and complex workflows
+- **Familiar to developers:** Looks like regular programming
+- **Better for dynamic scenarios:** When you need to make decisions based on current state
+
+**Best for:**
+
+- Complex configuration workflows with conditional logic
+- Migrating existing scripts to IaC
+- Situations requiring precise control over execution order
+- Integration with external systems and APIs
+
+**Example tools:** PowerShell, Azure CLI, Python scripts, Ansible
+
+---
+
+**Hybrid approach:**
+
+Many organizations use **both approaches together:**
+
+- **Declarative for infrastructure provisioning** (creating VMs, networks, storage)
+- **Imperative for configuration management** (installing software, configuring applications)
+
+For example:
+
+1. Use Terraform (declarative) to create Azure resources
+2. Use Ansible or PowerShell (imperative) to configure those resources
+
+**There's no single "best" approach**—choose based on your team's skills, project complexity, and organizational needs. Many modern tools support both styles, giving you flexibility.

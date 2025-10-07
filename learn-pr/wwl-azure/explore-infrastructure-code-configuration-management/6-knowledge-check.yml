@@ -3,9 +3,9 @@ uid: learn.wwl.explore-infrastructure-as-code-configuration-management.knowledge
 title: Module assessment
 metadata:
   title: Module assessment
-  description: "Knowledge check"
-  ms.date: 12/12/2024
-  author: wwlpublish
+  description: "Assessment questions covering Infrastructure as Code concepts, idempotency principles, and configuration management benefits."
+  ms.date: 10/07/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
@@ -49,4 +49,4 @@ quiz:
           explanation: Incorrect. Idempotency does not prevent scaling, but rather ensures consistent results despite scaling.
         - content: It allows for operations to be applied against a resource multiple times, resulting in the same outcome.
           isCorrect: true
-          explanation: Correct. Idempotency ensures that regardless of how many times an operation is applied, the outcome remains the same.
+          explanation: Correct. Idempotency ensures that regardless of how many times an operation is applied, the outcome remains the same.
