@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.adopt-ai-agent-best-practice.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Module summary.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
