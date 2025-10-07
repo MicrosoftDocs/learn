@@ -7,7 +7,7 @@ You've gained insights into key frameworks such as the AI Center of Excellence (
 For more information, see:
 
 - [Build the AI CoE team](/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence)
-- [Advance your maturity level for Generative Artificial Intelligence Operations](/azure/machine-learning/prompt-flow/concept-llmops-maturity?view=azureml-api-2)
+- [Advance your maturity level for Generative Artificial Intelligence Operations](/azure/machine-learning/prompt-flow/concept-llmops-maturity)
 - [AI adoption](/azure/cloud-adoption-framework/scenarios/ai/)
 - [FinOps Foundation](https://www.finops.org)
 - [Well Architected Framework for AI](/azure/well-architected/ai/)

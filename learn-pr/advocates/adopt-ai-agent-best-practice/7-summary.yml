@@ -8,7 +8,6 @@ metadata:
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
-  ms.service: azure-ai-foundry; azure-ai-services
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

@@ -7,7 +7,7 @@ metadata:
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module-standard-task-based
-  ms.service: azure-ai-foundry; azure-ai-services
+  ms.service: artificial-intelligence
 title: Implement best practices to empower AI agent efficiency and ensure long-term success
 summary: Learn how to implement best practices to empower AI agent efficiency and ensure long-term success by leveraging frameworks like AI Center of Excellence, FinOps, GenAI Ops, Cloud Adoption Framework, and Well-Architected Framework.
 abstract: |
