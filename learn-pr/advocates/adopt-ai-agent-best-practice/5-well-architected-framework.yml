@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.adopt-ai-agent-best-practice.well-architected-framework
+title: Microsoft Azure Well-Architected Framework
+metadata:
+  title: Microsoft Azure Well-Architected Framework
+  description: Learn about the Microsoft Azure Well-Architected Framework and how it applies to AI agents.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-well-architected-framework.md)]
