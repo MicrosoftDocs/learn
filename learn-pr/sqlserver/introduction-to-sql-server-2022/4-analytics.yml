@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-sql-server-2022.analytics
-title: Expand analytics capabilities with SQL Server 2025
+title: Unlock advanced analytics capabilities for your organization
 metadata:
-  title: Expand analytics capabilities with SQL Server 2025
+  title: Unlock advanced analytics capabilities for your organization
   description: "Explore SQL Server 2025's analytics capabilities including Microsoft Fabric integration, advanced mirroring, Power BI Report Server integration, and improved resource governance for analytics workloads"
   ms.date: 10/06/2025
   author: JulianePadrao

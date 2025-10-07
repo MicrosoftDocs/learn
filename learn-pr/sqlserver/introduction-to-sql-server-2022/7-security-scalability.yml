@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-sql-server-2022.security-scalability
-title: Secure and scale applications with SQL Server 2025
+title: Secure and scale modern applications
 metadata:
-  title: Secure and scale applications with SQL Server 2025
+  title: Secure and scale modern applications
   description: "Explore SQL Server 2025's enhanced security features including optimized security cache, OAEP encryption support, managed identity integration, modern protocol support, and advanced authentication options"
   ms.date: 10/06/2025
   author: JulianePadrao
