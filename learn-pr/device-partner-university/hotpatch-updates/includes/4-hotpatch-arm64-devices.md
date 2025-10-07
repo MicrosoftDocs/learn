@@ -13,7 +13,7 @@ To ensure that hotpatch updates are applied correctly on ARM64 devices, CHPE mus
 >
 > ARM stands for Advanced RISC Machines—a family of processors built on Reduced Instruction Set Computing (RISC). RISC uses a simplified set of instructions that can be executed quickly, making ARM processors especially well-suited for portable and embedded systems.
 
-![Executive sitting at desk using laptop in an office with a panoramic view.](../media/executive.png)
+![Photograph of executive sitting at desk using laptop in an office with a panoramic view.](../media/executive.png)
 
 ## Enabling hotpatch updates
 

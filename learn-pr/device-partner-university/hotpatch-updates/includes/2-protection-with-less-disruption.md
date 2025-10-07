@@ -13,7 +13,7 @@ Key benefits of hotpatching include:
 > [!TIP]
 > Operating system features, firmware, and/or application updates might still require a restart.
 
-![Person using a laptop at a wooden desk with a glass of water nearby.](../media/admin.png)
+![Photograph of a person using a laptop at a wooden desk with a glass of water nearby.](../media/admin.png)
 
 ## How does hotpatching work?
 

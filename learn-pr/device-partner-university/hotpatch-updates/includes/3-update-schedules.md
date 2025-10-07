@@ -15,7 +15,7 @@ In January, April, July, and October, devices install the monthly fixed security
 
 Devices receive hotpatch updates containing only security fixes, without requiring a restart. Feature and enhancement updates are deferred to the next cumulative baseline month (quarterly).
 
-![Two people talking in an office setting, with one person seated at a desk using a laptop.](../media/talk.png)
+![Photograph of two people talking in an office setting, with one person seated at a desk using a laptop.](../media/talk.png)
 
 ## Prerequisites
 
