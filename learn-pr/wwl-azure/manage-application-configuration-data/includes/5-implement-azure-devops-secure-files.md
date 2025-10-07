@@ -1,38 +1,39 @@
-Azure DevOps secure files allow you to securely store sensitive files, such as code signing certificates, SSH keys, or third party provisioning profiles within your Azure DevOps organization. These files are encrypted at rest with a 2048-bit RSA key and, as an Azure DevOps protected resource, can only be accessed by authorized users and pipelines. The key is stored in Azure Key Vault maintained internally by Azure DevOps.
+Azure DevOps secure files implement encrypted storage infrastructure for sensitive file assets including code signing certificates, SSH keys, and third-party provisioning profiles within Azure DevOps organizational boundaries. Files receive at-rest encryption utilizing 2048-bit RSA keys with Azure DevOps protected resource designation restricting access to authorized users and pipelines exclusively. Encryption keys persist within Azure Key Vault infrastructure managed internally by Azure DevOps platform operations.
 
-They're tightly integrated with Azure DevOps and provide a convenient way to consume sensitive files directly within CI/CD workflows. Access to secure files is managed within Azure DevOps, supporting fine-grained control over who can upload, download, and use them in pipelines and releases.
+Secure files integration with Azure DevOps CI/CD workflows enables direct sensitive file consumption within pipeline execution contexts. Access control mechanisms within Azure DevOps support fine-grained permission management governing secure file upload, download, and pipeline utilization capabilities.
 
 ## Implementation
 
-Implementing secure files involves uploading the sensitive files to Azure DevOps and then referencing them in your pipelines or releases.
+Secure file implementation encompasses sensitive file upload to Azure DevOps followed by pipeline or release definition referencing.
 
-Use the following sequence of steps to upload a file to secure files:
+**Secure file upload workflow:**
 
-1.  In the Azure DevOps web portal, navigate to your Azure DevOps project.
-2.  Navigate to the Pipelines or Releases tab, depending on where you intend to use the secure files.
-3.  Select Library from the left-side navigational menu.
-4.  Select Secure files followed by + Secure file to upload a secure file.
-5.  Select the file you want to upload and provide a descriptive name.
+1.  Navigate to Azure DevOps project within web portal interface
+2.  Select Pipelines or Releases tab aligned with intended secure file utilization context
+3.  Access Library from left-side navigational menu
+4.  Select Secure files followed by + Secure file initiating upload workflow
+5.  Select target file and assign descriptive identifier
 
-Use the following sequence of steps to grant pipeline permissions to the newly created secure file.
+**Pipeline permission grant workflow:**
 
-1.  Select the newly created secure file.
-2.  On the page displaying the properties of the secure file, select Pipeline permissions from the toolbar.
-3.  In the Configure secure file pane, select the Add pipeline (+) button.
-4.  In the list of the pipelines in the current project, select the pipeline or pipelines that should have access to the secure file.
+1.  Select newly provisioned secure file
+2.  Navigate Pipeline permissions from secure file properties toolbar
+3.  Select Add pipeline (+) button within Configure secure file pane
+4.  Select authorized pipeline(s) from current project pipeline inventory granting secure file access
 
-To reference the secure file in a YAML pipeline, you can use the DownloadSecureFile@1 task, as in the following example, which illustrates how to download a secure file storing a certificate and installs it on a Linux system:
+**YAML pipeline secure file reference implementation:**
+
+Secure file consumption within YAML pipelines utilizes DownloadSecureFile@1 task. The following example demonstrates certificate secure file download and Linux system installation:
 
 ```YAML
 - task: DownloadSecureFile@1
-name: caCertificate
-displayName: 'Download CA certificate'
-inputs:
-secureFile: 'myCACertificate.pem'
+  name: caCertificate
+  displayName: 'Download CA certificate'
+  inputs:
+    secureFile: 'myCACertificate.pem'
 - script: |
-echo Installing $(caCertificate.secureFilePath)
-sudo chown root:root $(caCertificate.secureFilePath)
-sudo chmod a+r $(caCertificate.secureFilePath)
-sudo ln -s -t /etc/ssl/certs/ $(caCertificate.secureFilePath)
-
+    echo Installing $(caCertificate.secureFilePath)
+    sudo chown root:root $(caCertificate.secureFilePath)
+    sudo chmod a+r $(caCertificate.secureFilePath)
+    sudo ln -s -t /etc/ssl/certs/ $(caCertificate.secureFilePath)
 ```

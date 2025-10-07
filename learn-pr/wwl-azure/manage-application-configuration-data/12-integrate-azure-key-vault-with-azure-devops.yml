@@ -3,12 +3,12 @@ uid: learn.wwl.manage-application-configuration-data.integrate-azure-key-vault-w
 title: Integrate Azure Key Vault with Azure DevOps
 metadata:
   title: Integrate Azure Key Vault with Azure DevOps
-  description: "Integrate Azure Key Vault with Azure DevOps"
-  ms.date: 05/28/2024
-  author: wwlpublish
+  description: "Hands-on lab implementing Azure Key Vault integration with Azure DevOps pipelines for secure secret management in CI/CD workflows"
+  ms.date: 10/06/2025
+  author: 10/07/2025
   ms.author: lumac
   ms.topic: unit
   ms.custom: sfi-ga-nochange
 durationInMinutes: 40
 content: |
-  [!include[](includes/12-integrate-azure-key-vault-with-azure-devops.md)]
+  [!include[](includes/12-integrate-azure-key-vault-with-azure-devops.md)]

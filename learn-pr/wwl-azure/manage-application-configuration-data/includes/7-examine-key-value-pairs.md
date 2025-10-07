@@ -1,97 +1,93 @@
-Azure App Configuration stores configuration data as key-value pairs.
+Azure App Configuration implements key-value pair storage architecture for configuration data persistence.
 
 ## Keys
 
-Keys serve as the name for key-value pairs and are used to store and retrieve corresponding values.
+Keys constitute identifiers for key-value pairs enabling corresponding value storage and retrieval operations.
 
-It's common to organize keys into a hierarchical namespace by using a character delimiter, such as `/` or `:`. Use a convention that's best suited for your application.
+Hierarchical key namespace organization utilizing character delimiters (`/` or `:`) represents common practice aligned with application-specific conventions.
 
-App Configuration treats keys as a whole. It doesn't parse keys to figure out how their names are structured or enforce any rule on them.
+App Configuration implements atomic key treatment without key name structure parsing or rule enforcement beyond reserved character constraints.
 
-Keys stored in App Configuration are case-sensitive, Unicode-based strings.
+App Configuration keys implement case-sensitive Unicode string representation.
 
-The keys *app1* and *App1* are distinct in an App Configuration store.
+Keys _app1_ and _App1_ constitute distinct entries within App Configuration store inventories.
 
-When you use configuration settings within an application, keep it in mind because some frameworks handle configuration keys case-insensitively.
+Application configuration consumption requires awareness that certain frameworks implement case-insensitive configuration key handling introducing potential inconsistencies.
 
-You can use any Unicode character in key names entered into App Configuration except for `*`, `,`, and `\`.
+Unicode character utilization within key names supports comprehensive internationalization excluding reserved characters (`*`, `,`, `\`).
 
-These characters are reserved. If you need to include a reserved character, you must escape it by using `\{Reserved Character}`.
+Reserved character inclusion requires escape sequence notation `\{Reserved Character}`.
 
-There's a combined size limit of 10,000 characters on a key-value pair.
+Key-value pair combined size constraints impose 10,000 character limits encompassing key, value, and associated optional attribute content.
 
-This limit includes all characters in the key, its value, and all associated optional attributes.
-
-Within this limit, you can have many hierarchical levels for keys.
+Size limit constraints permit extensive hierarchical key level implementations within aggregate character boundaries.
 
 ### Design key namespaces
 
-There are two general approaches to naming keys used for configuration data: flat or hierarchical.
+Configuration data key naming strategies encompass flat and hierarchical approaches.
 
-These methods are similar from an application usage standpoint, but hierarchical naming offers several advantages:
+Application usage perspectives demonstrate functional equivalence, while hierarchical naming confers operational advantages:
 
- -  Easier to read. Instead of one long sequence of characters, delimiters in a hierarchical key name function as spaces in a sentence.
- -  Easier to manage. A key name hierarchy represents logical groups of configuration data.
- -  Easier to use. It's simpler to write a query that pattern-matches keys in a hierarchical structure and retrieves only a portion of configuration data.
+- **Enhanced readability:** Delimiter-based hierarchical structure replaces monolithic character sequences with semantic segmentation improving human comprehension
+- **Simplified management:** Hierarchical key nomenclature represents logical configuration data groupings facilitating organizational workflows
+- **Optimized query operations:** Pattern-matching query construction targeting hierarchical structures enables selective configuration data retrieval
 
-Below are some examples of how you can structure your key names into a hierarchy:
+**Hierarchical key structure examples:**
 
- -  Based on component services
-    
-    ```
-    AppName:Service1:ApiEndpoint
-    AppName:Service2:ApiEndpoint
-    
-    ```
- -  Based on deployment regions
-    
-    ```
-    AppName:Region1:DbEndpoint
-    AppName:Region2:DbEndpoint
-    
-    ```
+- **Component service-based organization:**
+
+  ```
+  AppName:Service1:ApiEndpoint
+  AppName:Service2:ApiEndpoint
+  ```
+
+- **Deployment region-based organization:**
+
+  ```
+  AppName:Region1:DbEndpoint
+  AppName:Region2:DbEndpoint
+  ```
 
 ### Label keys
 
-Key values in App Configuration can optionally have a label attribute.
+App Configuration key values support optional label attribute specification enabling key differentiation.
 
-Labels are used to differentiate key values with the same key.
+Labels facilitate identical key identifier differentiation through variant designation.
 
-A key *app1* with labels *A* and *B* forms two separate keys in an App Configuration store.
+Key _app1_ with labels _A_ and _B_ constitutes two distinct entries within App Configuration stores.
 
-By default, the label for a key value is empty or null.
+Label attribute defaults specify empty or null values.
 
-Label provides a convenient way to create variants of a key. A common use of labels is to specify multiple environments for the same key:
+Labels provide convenient key variant creation mechanisms. Environmental configuration differentiation represents common label application patterns:
 
 ```
 Key = AppName:DbEndpoint & Label = Test
 Key = AppName:DbEndpoint & Label = Staging
 Key = AppName:DbEndpoint & Label = Production
-
 ```
 
 ### Version key values
 
-App Configuration doesn't version key values automatically as they're modified.
+App Configuration omits automatic key value versioning during modification operations.
 
-Use labels as a way to create multiple versions of a key value.
+Labels enable multiple key value version creation methodologies.
 
-For example, you can input an application version number or a Git commit ID in labels to identify key values associated with a particular software build.
+Application version numbers or Git commit identifiers embedded within labels facilitate key value association with specific software build artifacts.
 
 ### Query key values
 
-Each key value is uniquely identified by its key plus a label that can be `null`. You query an App Configuration store for key values by specifying a pattern.
+Key values maintain unique identification through key and label combinations supporting `null` label specifications. App Configuration store query operations employ pattern specification methodologies for key value retrieval.
 
-The App Configuration store returns all key values that match the pattern and their corresponding values and attributes.
+App Configuration stores return pattern-matching key values with corresponding values and attributes.
 
 ## Values
 
-Values assigned to keys are also Unicode strings. You can use all Unicode characters for values.
+Key-assigned values constitute Unicode strings supporting comprehensive Unicode character utilization.
 
-There's an optional user-defined content type associated with each value.
+Optional user-defined content type attributes associate with individual values.
 
-Use this attribute to store information, for example, an encoding scheme, about a value that helps your application process it properly.
+Content type attributes facilitate value metadata storage including encoding schemes enabling appropriate application processing.
 
-Configuration data stored in an App Configuration store, which includes all keys and values, is encrypted at rest and in transit.
+App Configuration store persisted configuration data including keys and values maintains encryption at rest and in transit.
 
-App Configuration isn't a replacement solution for Azure Key Vault. Don't store application secrets in it.
+**App Configuration doesn't constitute Azure Key Vault replacement solutions.** Application secret storage requires dedicated Key Vault services.

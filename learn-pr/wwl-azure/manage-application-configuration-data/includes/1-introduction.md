@@ -1,16 +1,17 @@
-This module explores ways to rethink application configuration data and the separation of concerns method. It helps you understand configuration patterns and how to integrate Azure Key Vault with Azure Pipelines.
+This module establishes comprehensive application configuration management strategies encompassing externalized configuration patterns, separation of concerns architectures, and secure secret management through Azure Key Vault integration with Azure Pipelines.
 
 ## Learning objectives
 
-After completing this module, students and professionals can:
+After completing this module, you'll be able to:
 
- -  Rethink application configuration data.
- -  Understand separation of concerns.
- -  Integrate Azure Key Vault with Azure Pipelines.
- -  Manage secrets, tokens, and certificates.
+- Design externalized configuration architectures implementing separation of concerns principles
+- Implement Azure App Configuration with key-value pair management strategies
+- Integrate Azure Key Vault with Azure Pipelines for secure secret management
+- Configure feature flags and dynamic configuration patterns
+- Manage secrets, tokens, and certificates following DevOps security best practices
 
 ## Prerequisites
 
- -  Understanding of what DevOps is and its concepts.
- -  Familiarity with version control principles is helpful but isn't necessary.
- -  Beneficial to have experience in an organization that delivers software.
+- Foundational understanding of DevOps principles and continuous delivery concepts
+- Familiarity with Azure services and cloud-native application architectures
+- Experience with application deployment and configuration management practices

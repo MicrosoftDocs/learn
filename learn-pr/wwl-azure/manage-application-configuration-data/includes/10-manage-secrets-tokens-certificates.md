@@ -1,83 +1,82 @@
-Azure Key Vault helps solve the following problems:
+Azure Key Vault addresses critical security challenges:
 
- -  **Secrets management** \- Azure Key Vault can be used to store securely and tightly control access to tokens, passwords, certificates, API keys, and other secrets.
- -  **Key management** \- Azure Key Vault can also be used as a key management solution. Azure Key Vault makes it easy to create and control the encryption keys used to encrypt your data.
- -  **Certificate management** \- Azure Key Vault is also a service that lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with Azure. And your internal connected resources.
- -  **Store secrets backed by hardware security modules** \- The secrets and keys can be protected by software or FIPS 140-2 Level 2 validates HSMs.
+- **Secrets management:** Secure storage with granular access control for tokens, passwords, certificates, API keys, and credential material
+- **Key management:** Comprehensive encryption key creation and control capabilities facilitating data protection operations
+- **Certificate management:** Streamlined provisioning, management, and deployment of public and private SSL/TLS certificates for Azure and internal connected resources
+- **Hardware security module backing:** Secret and key protection through software implementations or FIPS 140-2 Level 2 validated HSMs
 
-    :::image type="content" source="../media/use-azure-key-vault-a9cc1c77.png" alt-text="Diagram of using Azure Key Vault.":::
-
+  :::image type="content" source="../media/use-azure-key-vault-a9cc1c77.png" alt-text="Diagram of using Azure Key Vault.":::
 
 ## Why use Azure Key Vault?
 
 ## Centralize application secrets
 
-Centralizing the storage of application secrets in Azure Key Vault allows you to control their distribution.
+Azure Key Vault centralized secret storage enables controlled distribution architectures.
 
-Key Vault dramatically reduces the chances that secrets may be accidentally leaked.
+Key Vault substantially reduces accidental secret disclosure risks.
 
-When using Key Vault, application developers no longer need to store security information in their applications. It eliminates the need to make this information part of the code.
+Key Vault adoption eliminates application-embedded security information requirements removing code-level credential storage necessities.
 
-For example, an application may need to connect to a database. Instead of storing the connection string in the app codes, store it securely in Key Vault.
+Database connection scenarios demonstrate practical implementations: connection strings persisted in Key Vault replace application code storage patterns.
 
-Your applications can securely access the information they need by using URIs that allow them to retrieve specific versions of a secret after the application's key or secret is stored in Azure Key Vault.
+Applications access required information through URI-based retrieval operations supporting specific secret version specifications following Azure Key Vault storage.
 
-It happens without having to write custom code to protect any of the secret information.
+Secret protection operations proceed without custom code implementation requirements.
 
 ## Securely store secrets and keys
 
-Secrets and keys are safeguarded by Azure, using industry-standard algorithms, key lengths, and hardware security modules (HSMs).
+Azure safeguards secrets and keys employing industry-standard algorithms, key lengths, and hardware security modules (HSMs).
 
-The HSMs used are Federal Information Processing Standards (FIPS) 140-2 Level 2 validated.
+HSM implementations maintain Federal Information Processing Standards (FIPS) 140-2 Level 2 validation.
 
-Access to a key vault requires proper authentication and authorization before a caller (user or application) can get access.
+Key vault access requires authentication and authorization completion before caller (user or application) access grants.
 
-Authentication establishes the identity of the caller, while authorization determines the operations that they can do.
+Authentication establishes caller identity while authorization determines permitted operations.
 
-Authentication is done via Azure Active Directory. Authorization may be done via role-based access control (RBAC) or Key Vault access policy.
+Azure Active Directory provides authentication mechanisms. Authorization employs role-based access control (RBAC) or Key Vault access policies.
 
-RBAC is used when dealing with the management of the vaults, and a key vault access policy is used when attempting to access data stored in a vault.
+RBAC governs vault management operations while Key Vault access policies control vault-stored data access attempts.
 
-Azure Key Vaults may be either software- or hardware-HSM protected.
+Azure Key Vaults support software-protected or hardware-HSM protected configurations.
 
-You can import or generate keys in hardware security modules (HSMs) that never leave the HSM boundary when you require added assurance.
+Enhanced assurance requirements enable HSM-based key import or generation maintaining HSM boundary containment.
 
-Microsoft uses Thales hardware security modules. You can use Thales tools to move a key from your HSM to Azure Key Vault.
+Microsoft employs Thales hardware security modules. Thales tools facilitate key migration from organizational HSMs to Azure Key Vault.
 
-Finally, Azure Key Vault is designed so that Microsoft doesn't see or extract your data.
+Azure Key Vault architecture ensures Microsoft data visibility and extraction prevention.
 
 ## Monitor access and use
 
-Once you've created a couple of Key Vaults, you'll want to monitor how and when your keys and secrets are accessed.
+Key Vault deployment scenarios necessitate key and secret access monitoring operations.
 
-You can do it by enabling logging for Key Vault. You can configure Azure Key Vault to:
+Logging enablement facilitates monitoring implementations. Azure Key Vault configuration options include:
 
- -  Archive to a storage account.
- -  Stream to an Event Hubs.
- -  Send the logs to Log Analytics.
+- Storage account archival
+- Event Hubs streaming
+- Log Analytics transmission
 
-You have control over your logs, and you may secure them by restricting access, and you may also delete logs that you no longer need.
+Log ownership provides control mechanisms enabling access restriction implementations and obsolete log deletion operations.
 
 ## Simplified administration of application secrets
 
-When storing valuable data, you must take several steps. Security information must be secured. It must follow a lifecycle. It must be highly available.
+Valuable data storage requires security measures, lifecycle management, and high availability guarantees.
 
-Azure Key Vault simplifies it by:
+Azure Key Vault simplification capabilities:
 
- -  Removing the need for in-house knowledge of Hardware Security Modules.
- -  Scaling up on short notice to meet your organization's usage spikes.
- -  Replicating the contents of your Key Vault within a region and to a secondary region. It ensures high availability and takes away the need for any action from the administrator to trigger the failover.
- -  Providing standard Azure administration options via the portal, Azure CLI and PowerShell.
- -  Automating specific tasks on certificates that you purchase from Public CAs, such as enrollment and renewal.
+- Hardware Security Module expertise elimination from organizational requirements
+- Rapid scaling supporting organizational usage spike accommodations
+- Regional and secondary region content replication ensuring high availability with automated failover eliminating administrator intervention
+- Standard Azure administration interfaces through portal, Azure CLI, and PowerShell
+- Public CA certificate task automation including enrollment and renewal operations
 
-Also, Azure Key Vaults allow you to segregate application secrets.
+Azure Key Vaults enable application secret segregation.
 
-Applications may access only the vault they can access, and they can only do specific operations.
+Applications access authorized vaults exclusively performing permitted operations only.
 
-You can create an Azure Key Vault per application and restrict the secrets stored in a Key Vault to a particular application and team of developers.
+Per-application Azure Key Vault creation facilitates secret restriction to specific applications and development teams.
 
 ## Integrate with other Azure services
 
-As a secure store in Azure, Key Vault has been used to simplify scenarios like Azure Disk Encryption, the always encrypted functionality in SQL Server and Azure SQL Database, Azure web apps.
+Azure secure storage positioning enables Key Vault scenario simplification including Azure Disk Encryption, SQL Server and Azure SQL Database always encrypted functionality, and Azure web applications.
 
-Key Vault itself can integrate with storage accounts, Event Hubs, and log analytics.
+Key Vault native integration capabilities encompass storage accounts, Event Hubs, and log analytics services.

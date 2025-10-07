@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-application-configuration-data.understand-external-configuration-store-patterns
-title: Understand external configuration store patterns
+title: Understand External Configuration Store Patterns
 metadata:
-  title: Understand external configuration store patterns
-  description: "Understand external configuration store patterns"
-  ms.date: 05/28/2024
-  author: wwlpublish
+  title: Understand External Configuration Store Patterns
+  description: "Examine cloud-based configuration store patterns with caching strategies, versioning support, and cross-application configuration sharing architectures"
+  ms.date: 10/07/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-understand-external-configuration-store-patterns.md)]
+  [!include[](includes/4-understand-external-configuration-store-patterns.md)]

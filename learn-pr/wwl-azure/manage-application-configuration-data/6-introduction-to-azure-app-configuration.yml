@@ -3,11 +3,11 @@ uid: learn.wwl.manage-application-configuration-data.introduction-to-azure-app-c
 title: Introduction to Azure App Configuration
 metadata:
   title: Introduction to Azure App Configuration
-  description: "Introduction to Azure App Configuration"
-  ms.date: 05/28/2024
-  author: wwlpublish
+  description: "Explore Azure App Configuration service for centralized configuration management with dynamic refresh, feature flags, and Key Vault integration"
+  ms.date: 10/07/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-introduction-to-azure-app-configuration.md)]
+  [!include[](includes/6-introduction-to-azure-app-configuration.md)]

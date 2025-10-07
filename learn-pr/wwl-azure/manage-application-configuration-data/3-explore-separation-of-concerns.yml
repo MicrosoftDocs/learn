@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-application-configuration-data.explore-separation-of-concerns
-title: Explore separation of concerns
+title: Explore Separation of Concerns
 metadata:
-  title: Explore separation of concerns
-  description: "Explore separation of concerns"
-  ms.date: 05/28/2024
-  author: wwlpublish
+  title: Explore Separation of Concerns
+  description: "Examine role-based configuration management defining configuration custodians, consumers, and distinct configuration versus secret store architectures"
+  ms.date: 10/07/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom: sfi-ropc-nochange
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
-  [!include[](includes/3-explore-separation-of-concerns.md)]
+  [!include[](includes/3-explore-separation-of-concerns.md)]

@@ -3,11 +3,11 @@ uid: learn.wwl.manage-application-configuration-data.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 05/28/2024
-  author: wwlpublish
+  description: "Introduction to externalized configuration patterns, Azure App Configuration, and Key Vault integration for secure application settings management"
+  ms.date: 10/07/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]
