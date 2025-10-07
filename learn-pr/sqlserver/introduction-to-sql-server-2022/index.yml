@@ -34,14 +34,14 @@ products:
 subjects:
   - databases
 units:
-- learn.introduction-to-sql-server-2022.1-introduction
-- learn.introduction-to-sql-server-2022.2-deploy-and-feature-difference
-- learn.introduction-to-sql-server-2022.3-ai-powered
-- learn.introduction-to-sql-server-2022.4-analytics
-- learn.introduction-to-sql-server-2022.5-developers
-- learn.introduction-to-sql-server-2022.6-performance
-- learn.introduction-to-sql-server-2022.7-security-scalability
-- learn.introduction-to-sql-server-2022.8-knowledge-check
-- learn.introduction-to-sql-server-2022.9-summary
+- learn.introduction-to-sql-server-2022.introduction
+- learn.introduction-to-sql-server-2022.deploy-and-feature-difference
+- learn.introduction-to-sql-server-2022.ai-powered
+- learn.introduction-to-sql-server-2022.analytics
+- learn.introduction-to-sql-server-2022.developers
+- learn.introduction-to-sql-server-2022.performance
+- learn.introduction-to-sql-server-2022.security-scalability
+- learn.introduction-to-sql-server-2022.knowledge-check
+- learn.introduction-to-sql-server-2022.summary
 badge:
   uid: learn.introduction-to-sql-server-2022.badge
