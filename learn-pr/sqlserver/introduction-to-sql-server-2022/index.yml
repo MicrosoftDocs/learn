@@ -2,14 +2,14 @@
 uid: learn.introduction-to-sql-server-2022
 metadata:
   moduleType: build-your-first-using-product
-  title: Introduction to SQL Server 2025      
+  title: Get Started with SQL Server 2025
   description: "Learn about SQL Server 2025's new capabilities including AI integration, analytics improvements, developer features, and performance enhancements."
   ms.date: 10/06/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
   ms.service: sql
-title: Introduction to SQL Server 2025
+title: Get Started with SQL Server 2025
 summary: |
   Learn about SQL Server 2025's major capabilities including AI features, analytics improvements, developer tools, and performance optimization.
 abstract: |
