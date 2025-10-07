@@ -22,8 +22,8 @@ Devices receive hotpatch updates containing only security fixes, without requiri
 To benefit from Hotpatch updates, Windows client devices must meet the following requirements:
 
 - **Eligible license**: Windows 11 Enterprise E3 or E5, Microsoft 365 F3, Windows 11 Education A3 or A5, Microsoft 365 Business Premium, or Windows 365 Enterprise.  
-- **Operating system**: Windows 11 version 24H2 or later. Devices must also be on the latest baseline release version to qualify for Hotpatch updates. Microsoft releases baseline updates quarterly as standard cumulative updates. For details, see [Release notes for Hotpatch](/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates).  
-- **CPU**: x64 processors (AMD64 or Intel). Hotpatching is also available for 64-bit ARM devices. [Learn more.](https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatching-now-available-for-64-bit-arm-architecture/4430949) for details.  
+- **Operating system**: Windows 11 version 24H2 or later. Devices must also be on the latest baseline release version to qualify for Hotpatch updates. Microsoft releases baseline updates quarterly as standard cumulative updates. For details, check [Release notes for Hotpatch](/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates).  
+- **CPU**: x64 processors (AMD64 or Intel). Hotpatching is also available for 64-bit ARM devices. [Learn more.](https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatching-now-available-for-64-bit-arm-architecture/4430949)
 - **Management**: Microsoft Intune to deploy hotpatch updates using a Windows quality update policy with hotpatch enabled.  
 - **Security**: Virtualization-based Security (VBS) must be enabled on the device.
 
