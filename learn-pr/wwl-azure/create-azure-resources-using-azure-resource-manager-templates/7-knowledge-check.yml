@@ -3,13 +3,13 @@ uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates.kno
 title: Module assessment
 metadata:
   title: Module assessment
-  description: "Knowledge check"
-  ms.date: 05/22/2024
-  author: wwlpublish
+  description: "Test your understanding of ARM templates, deployment modes, template components, and dependency management."
+  ms.date: 10/07/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
   module_assessment: true
 durationInMinutes: 5
 content: |
@@ -17,36 +17,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following choices are the deployment modes available when using Azure Resource Manager templates?"
-    choices:
-    - content: "Transactional, Complete."
-      isCorrect: false
-      explanation: "Incorrect. When deploying your resources using templates, you have three options: validate, incremental mode (default), and complete mode."
-    - content: "Incremental, Complete."
-      isCorrect: true
-      explanation: "Correct. When deploying your resources using templates, you have three options: validate, incremental mode (default), and complete mode."
-    - content: "Differential, Validate."
-      isCorrect: false
-      explanation: "Incorrect. When deploying your resources using templates, you have three options: validate, incremental mode (default), and complete mode."
-  - content: "Which of the following choices isn't a component or section of an Azure Resource Manager template?"
-    choices:
-    - content: "Outputs."
-      isCorrect: false
-      explanation: "Incorrect. A Resource Manager template can contain sections like Parameters, Variables, Functions, Resources, Outputs."
-    - content: "Functions."
-      isCorrect: false
-      explanation: "Incorrect. A Resource Manager template can contain sections like Parameters, Variables, Functions, Resources, Outputs."
-    - content: "Secrets."
-      isCorrect: true
-      explanation: "Correct. A Resource Manager template can contain sections like Parameters, Variables, Functions, Resources, Outputs."
-  - content: "Which of the following choices is an element that enables you to define one resource as dependent on one or more other resources?"
-    choices:
-    - content: "template."
-      isCorrect: false
-      explanation: "Incorrect. The dependsOn element enables you to define one resource as dependent on one or more other resources."
-    - content: "properties."
-      isCorrect: false
-      explanation: "Incorrect. The dependsOn element enables you to define one resource as dependent on one or more other resources."
-    - content: "dependsOn."
-      isCorrect: true
-      explanation: "Correct. The dependsOn element enables you to define one resource as dependent on one or more other resources."
+    - content: "Which of the following choices are the deployment modes available when using Azure Resource Manager templates?"
+      choices:
+        - content: "Transactional, Complete."
+          isCorrect: false
+          explanation: "Incorrect. When deploying your resources using templates, you have three options: validate, incremental mode (default), and complete mode."
+        - content: "Incremental, Complete."
+          isCorrect: true
+          explanation: "Correct. When deploying your resources using templates, you have three options: validate, incremental mode (default), and complete mode."
+        - content: "Differential, Validate."
+          isCorrect: false
+          explanation: "Incorrect. When deploying your resources using templates, you have three options: validate, incremental mode (default), and complete mode."
+    - content: "Which of the following choices isn't a component or section of an Azure Resource Manager template?"
+      choices:
+        - content: "Outputs."
+          isCorrect: false
+          explanation: "Incorrect. A Resource Manager template can contain sections like Parameters, Variables, Functions, Resources, Outputs."
+        - content: "Functions."
+          isCorrect: false
+          explanation: "Incorrect. A Resource Manager template can contain sections like Parameters, Variables, Functions, Resources, Outputs."
+        - content: "Secrets."
+          isCorrect: true
+          explanation: "Correct. A Resource Manager template can contain sections like Parameters, Variables, Functions, Resources, Outputs."
+    - content: "Which of the following choices is an element that enables you to define one resource as dependent on one or more other resources?"
+      choices:
+        - content: "template."
+          isCorrect: false
+          explanation: "Incorrect. The dependsOn element enables you to define one resource as dependent on one or more other resources."
+        - content: "properties."
+          isCorrect: false
+          explanation: "Incorrect. The dependsOn element enables you to define one resource as dependent on one or more other resources."
+        - content: "dependsOn."
+          isCorrect: true
+          explanation: "Correct. The dependsOn element enables you to define one resource as dependent on one or more other resources."

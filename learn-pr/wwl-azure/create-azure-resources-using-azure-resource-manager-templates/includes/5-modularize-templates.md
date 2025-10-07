@@ -1,54 +1,137 @@
-When using Azure Resource Manager templates, it's best to modularize them by breaking them into individual components.
+**Template modularization** is a best practice that breaks large, complex templates into smaller, reusable components. This approach improves maintainability, promotes reusability, and makes templates easier to test and understand.
 
-The primary methodology to use is by using linked templates.
+## Why modularize templates?
 
-It allows you to break the solution into targeted components and reuse those various elements across different deployments.
+**Benefits of modularization:**
 
-## Linked template
+- **Reusability:** Create a networking template once and use it across multiple projects.
+- **Maintainability:** Update one module instead of modifying multiple large templates.
+- **Team collaboration:** Different teams can own different modules (networking, security, compute).
+- **Testing:** Test individual modules in isolation before composing them.
+- **Separation of concerns:** Each template focuses on a specific infrastructure domain.
+- **Version control:** Track changes to individual components independently.
 
-Add a deployment resource to your main template to link one template to another.
+**Real-world example:** Create separate templates for:
 
-```JSON
+- **Networking module:** Virtual networks, subnets, NSGs, route tables
+- **Storage module:** Storage accounts, blob containers, file shares
+- **Compute module:** Virtual machines, availability sets, load balancers
+- **Security module:** Key Vault, managed identities, RBAC assignments
+
+## Linked templates
+
+**Linked templates** allow you to reference external template files from a main template. This is the primary methodology for creating modular ARM template architectures.
+
+**How it works:**
+
+1. Store child templates in accessible locations (Azure Storage, GitHub, etc.)
+2. Main template references external templates via URI
+3. Resource Manager downloads and executes linked templates during deployment
+
+**Syntax:** Add a deployment resource to your main template:
+
+```json
 "resources": [
   {
-      "apiVersion": "2017-05-10",
-      "name": "linkedTemplate",
-      "type": "Microsoft.Resources/deployments",
-      "properties": {
-          "mode": "Incremental",
-          <link-to-external-template>
+    "apiVersion": "2022-09-01",
+    "name": "linkedTemplate",
+    "type": "Microsoft.Resources/deployments",
+    "properties": {
+      "mode": "Incremental",
+      "templateLink": {
+        "uri": "https://mystorageaccount.blob.core.windows.net/templates/networking.json",
+        "contentVersion": "1.0.0.0"
+      },
+      "parameters": {
+        "vnetName": {
+          "value": "[parameters('virtualNetworkName')]"
+        },
+        "location": {
+          "value": "[parameters('location')]"
+        }
       }
+    }
   }
 ]
-
-
 ```
 
-## Nested template
+**Key properties:**
 
-You can also nest a template within the main template, use the template property, and specify the template syntax.
+- **type:** `Microsoft.Resources/deployments` indicates a nested or linked deployment.
+- **mode:** Deployment mode (Incremental or Complete).
+- **templateLink:** Points to the external template URI.
+- **parameters:** Values passed to the linked template.
 
-It does somewhat aid modularization, but dividing up the various components can result in a sizeable main file, as all the elements are within that single file.
+**Complete example with multiple linked templates:**
 
-```JSON
+```json
 "resources": [
   {
-    "apiVersion": "2017-05-10",
-    "name": "nestedTemplate",
+    "name": "networkingDeployment",
+    "type": "Microsoft.Resources/deployments",
+    "apiVersion": "2022-09-01",
+    "properties": {
+      "mode": "Incremental",
+      "templateLink": {
+        "uri": "[concat(parameters('templateBaseUrl'), '/networking.json')]"
+      },
+      "parameters": {
+        "vnetName": { "value": "[parameters('vnetName')]" }
+      }
+    }
+  },
+  {
+    "name": "storageDeployment",
+    "type": "Microsoft.Resources/deployments",
+    "apiVersion": "2022-09-01",
+    "dependsOn": [
+      "[resourceId('Microsoft.Resources/deployments', 'networkingDeployment')]"
+    ],
+    "properties": {
+      "mode": "Incremental",
+      "templateLink": {
+        "uri": "[concat(parameters('templateBaseUrl'), '/storage.json')]"
+      }
+    }
+  }
+]
+```
+
+## Nested templates
+
+**Nested templates** allow you to embed a complete template directly within the main template using the `template` property instead of `templateLink`.
+
+**When to use nested templates:**
+
+- **Simple scenarios:** Small, self-contained components that don't need external files.
+- **Private logic:** Template logic you don't want to expose externally.
+- **Dynamic generation:** Build template content programmatically during deployment.
+
+**Drawback:** Nesting large components creates a sizeable main file, making it harder to maintain and read.
+
+```json
+"resources": [
+  {
+    "apiVersion": "2022-09-01",
+    "name": "nestedStorageTemplate",
     "type": "Microsoft.Resources/deployments",
     "properties": {
       "mode": "Incremental",
       "template": {
-        "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+        "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
         "contentVersion": "1.0.0.0",
         "resources": [
           {
             "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2023-01-01",
             "name": "[variables('storageName')]",
-            "apiVersion": "2015-06-15",
-            "location": "West US",
+            "location": "[parameters('location')]",
+            "sku": {
+              "name": "Standard_LRS"
+            },
+            "kind": "StorageV2",
             "properties": {
-              "accountType": "Standard_LRS"
+              "supportsHttpsTrafficOnly": true
             }
           }
         ]
@@ -56,75 +139,315 @@ It does somewhat aid modularization, but dividing up the various components can 
     }
   }
 ]
-
 ```
 
-> [!NOTE]
-> You can't use parameters or variables defined within the nested template itself for nested templates. You can only use parameters and variables from the main template.
+**Important limitations:**
 
-The properties you provide for the deployment resource will vary based on linking to an external template or nesting an inline template within the main template.
+> [!NOTE] > **Nested template scope:** Nested templates can only use parameters and variables from the main template. You cannot define new parameters or variables within the nested template itself.
 
-## Deployments modes
+**Linked vs. Nested templates:**
 
-When deploying your resources using templates, you have three options:
+| Feature             | Linked Templates                 | Nested Templates                   |
+| ------------------- | -------------------------------- | ---------------------------------- |
+| **Location**        | External file (URI)              | Inline within main template        |
+| **Reusability**     | High - use across projects       | Low - tied to main template        |
+| **Maintainability** | Easy - separate files            | Harder - embedded in main file     |
+| **Parameters**      | Can define own parameters        | Uses main template parameters only |
+| **Variables**       | Can define own variables         | Uses main template variables only  |
+| **Size**            | No impact on main template       | Increases main template size       |
+| **Best for**        | Production modular architectures | Simple, one-off components         |
 
- -  **validate**. This option compiles the templates, validates the deployment, ensures the template is functional (for example, no circular dependencies), and correct syntax.
- -  **incremental mode (default)**. This option only deploys whatever is defined in the template. It doesn't remove or modify any resources that aren't defined in the template. For example, if you've deployed a VM via template and then renamed the VM in the template, the first VM deployed will remain after the template is rerun. It's the default mode.
- -  **complete mode**: Resource Manager deletes resources that exist in the resource group but isn't specified in the template. For example, only resources defined in the template will be present in the resource group after the template deploys. As a best practice, use this mode for production environments to achieve idempotency in your deployment templates.
+**Recommendation:** Use **linked templates** for production scenarios and **nested templates** only for simple, non-reusable components.
 
-When deploying with PowerShell, to set the deployment mode use the *Mode* parameter, as per the nested template example earlier in this topic.
+## Deployment modes
 
-> [!NOTE]
-> As a best practice, use one resource group per deployment.
+When deploying templates, you must choose a **deployment mode** that determines how Resource Manager handles existing resources in the target resource group.
 
-> [!NOTE]
-> You can only use `incremental` deployment mode for both linked and nested templates.
+### Three deployment options
 
-## External template and external parameters
+1. **Validate mode**
 
-To link to an external template and parameter file, use **templateLink** and **parametersLink**.
+**Purpose:** Test template without making changes.
 
-When linking to a template, ensure that the Resource Manager service can access it.
+**What it does:**
 
-For example, you can't specify a local file or a file only available on your local network.
+- Compiles the template and checks JSON syntax.
+- Validates deployment logic (no circular dependencies).
+- Ensures all resource types and API versions are valid.
+- **Does not deploy** any resources.
 
-You can only provide a Uniform Resource Identifier (URI) value that includes HTTP or HTTPS.
+**When to use:** Before production deployments to catch errors early.
 
-One option is to place your linked template in a storage account and use the URI for that item.
+**Command example:**
 
-You can also provide the parameter inline. However, you can't use both inline parameters and a link to a parameter file.
+```bash
+az deployment group validate \
+  --resource-group myResourceGroup \
+  --template-file main.json \
+  --parameters @parameters.json
+```
 
-The following example uses the *templateLink* parameter:
+2. **Incremental mode (default)**
 
-```JSON
-  "resources": [
-    {
-      "name": "linkedTemplate",
-      "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2018-05-01",
-      "properties": {
-          "mode": "Incremental",
-          "templateLink": {
-              "uri":"https://linkedtemplateek1store.blob.core.windows.net/linkedtemplates/linkedStorageAccount.json?sv=2018-03-28&sr=b&sig=dO9p7XnbhGq56BO%2BSW3o9tX7E2WUdIk%2BpF1MTK2eFfs%3D&se=2018-12-31T14%3A32%3A29Z&sp=r"
-          },
-          "parameters": {
-              "storageAccountName":{"value": "[variables('storageAccountName')]"},
-              "location":{"value": "[parameters('location')]"}
-          }
+**Purpose:** Add or update resources without affecting existing ones.
+
+**What it does:**
+
+- **Deploys resources** defined in the template.
+- **Leaves unchanged** resources not defined in the template.
+- **Updates** resources if configurations change.
+
+**Example scenario:**
+
+- Template defines VM1, VM2, Storage1
+- Resource group has VM1, VM3, Storage1
+- **After deployment:** VM1 (updated), VM2 (added), VM3 (unchanged), Storage1 (updated)
+
+**When to use:**
+
+- Adding new resources to existing environments.
+- Updating specific resources without risk to others.
+- Development and testing environments.
+
+3. **Complete mode**
+
+**Purpose:** Ensure resource group matches template exactly (idempotency).
+
+**What it does:**
+
+- **Deploys resources** defined in the template.
+- **Deletes resources** not defined in the template.
+- Resource group contains ONLY what's in the template.
+
+**Example scenario:**
+
+- Template defines VM1, VM2, Storage1
+- Resource group has VM1, VM3, Storage1, VM4
+- **After deployment:** VM1 (updated), VM2 (added), Storage1 (updated), VM3 (deleted), VM4 (deleted)
+
+**When to use:**
+
+- Production environments requiring strict state control.
+- Achieving idempotency (same deployment result every time).
+- Removing unwanted or manual resources.
+
+**⚠️ Warning:** Complete mode can delete resources. Test thoroughly before using in production!
+
+### Setting deployment mode
+
+**Azure CLI:**
+
+```bash
+# Incremental (default)
+az deployment group create \
+  --resource-group myResourceGroup \
+  --template-file main.json \
+  --mode Incremental
+
+# Complete
+az deployment group create \
+  --resource-group myResourceGroup \
+  --template-file main.json \
+  --mode Complete
+```
+
+**PowerShell:**
+
+```powershell
+# Incremental
+New-AzResourceGroupDeployment `
+  -ResourceGroupName myResourceGroup `
+  -TemplateFile main.json `
+  -Mode Incremental
+
+# Complete
+New-AzResourceGroupDeployment `
+  -ResourceGroupName myResourceGroup `
+  -TemplateFile main.json `
+  -Mode Complete
+```
+
+### Best practices
+
+> [!NOTE] > **One resource group per deployment:** Use dedicated resource groups for each logical application or environment to simplify management and avoid accidental deletions.
+
+> [!NOTE] > **Linked/nested templates limitation:** You can only use **incremental mode** for both linked and nested templates. Complete mode is not supported for child deployments.
+
+**Recommendations:**
+
+- **Development:** Use Incremental mode for flexibility and faster iteration.
+- **Production:** Use Complete mode with CI/CD pipelines to ensure consistent state.
+- **Before Complete mode:** Always validate first and test in non-production environments.
+- **Resource locks:** Apply locks to critical resources to prevent accidental deletion.
+
+## External templates and parameters
+
+**External templates** provide the foundation for truly modular ARM template architectures. You store child templates in accessible locations and reference them via URI.
+
+### Template accessibility requirements
+
+**Resource Manager must be able to access linked templates** during deployment:
+
+**What works:**
+
+- ✅ **Azure Blob Storage:** Public or private with SAS tokens
+- ✅ **GitHub:** Public repositories or private with access tokens
+- ✅ **HTTPS endpoints:** Any publicly accessible HTTPS URL
+- ✅ **Azure Container Instances:** Hosting template files in containers
+
+**What doesn't work:**
+
+- ❌ **Local files:** Files on your computer or local network
+- ❌ **File:// protocol:** Local file system paths
+- ❌ **HTTP (non-secure):** Only HTTPS is supported
+
+### Using templateLink and parametersLink
+
+**templateLink:** References an external template file.
+
+**parametersLink:** References an external parameter file (alternative to inline parameters).
+
+**Important:** You cannot use both inline parameters and parametersLink simultaneously. Choose one approach.
+
+**Complete example with templateLink:**
+
+```json
+"resources": [
+  {
+    "name": "linkedStorageDeployment",
+    "type": "Microsoft.Resources/deployments",
+    "apiVersion": "2022-09-01",
+    "properties": {
+      "mode": "Incremental",
+      "templateLink": {
+        "uri": "https://mystorageaccount.blob.core.windows.net/templates/storage.json?sv=2021-06-08&sr=b&sig=ABC123...&se=2025-12-31T23:59:59Z&sp=r",
+        "contentVersion": "1.0.0.0"
+      },
+      "parameters": {
+        "storageAccountName": {
+          "value": "[variables('storageAccountName')]"
+        },
+        "location": {
+          "value": "[parameters('location')]"
+        },
+        "sku": {
+          "value": "Standard_GRS"
+        }
       }
-    },
-
-
+    }
+  }
+]
 ```
 
-## Securing an external template
+**Key components:**
 
-Although the linked template must be available externally, it doesn't need to be made available to the public.
+- **uri:** Full HTTPS URL to the linked template (includes SAS token if using private storage).
+- **contentVersion:** Version of the linked template (must match what's in the linked template file).
+- **parameters:** Values passed to the linked template (can reference main template parameters/variables).
 
-Instead, you can add your template to a private storage account accessible to only the storage account owner, creating shared access signature (SAS) tokens to enable access during deployment.
+### Using external parameter files
 
-You add that SAS token to the URI for the linked template.
+**Alternative to inline parameters:**
 
-Even though the token is passed in as a secure string, the linked template's URI, including the SAS token, is logged in the deployment operations.
+```json
+{
+  "name": "linkedDeployment",
+  "type": "Microsoft.Resources/deployments",
+  "apiVersion": "2022-09-01",
+  "properties": {
+    "mode": "Incremental",
+    "templateLink": {
+      "uri": "https://mystorageaccount.blob.core.windows.net/templates/main.json"
+    },
+    "parametersLink": {
+      "uri": "https://mystorageaccount.blob.core.windows.net/parameters/prod.json"
+    }
+  }
+}
+```
 
-To limit exposure, you can also set an expiration date for the token.
+**Benefits:**
+
+- Separate parameter files per environment (dev.json, staging.json, prod.json).
+- Sensitive parameters stored securely in parameter files.
+- Easier to manage multi-environment deployments.
+
+## Securing external templates
+
+**External templates don't need to be public.** You can store them in private storage accounts and use **Shared Access Signature (SAS) tokens** for secure access.
+
+### Steps to secure templates
+
+1. **Store templates in private Azure Blob Storage:**
+
+```bash
+# Create storage account and container
+az storage account create \
+  --name mytemplatestorage \
+  --resource-group myResourceGroup \
+  --location eastus \
+  --sku Standard_LRS
+
+az storage container create \
+  --name templates \
+  --account-name mytemplatestorage \
+  --public-access off
+```
+
+2. **Upload template files:**
+
+```bash
+az storage blob upload \
+  --account-name mytemplatestorage \
+  --container-name templates \
+  --name networking.json \
+  --file ./templates/networking.json
+```
+
+3. **Generate SAS token with expiration:**
+
+```bash
+# Create SAS token valid for 30 days
+az storage blob generate-sas \
+  --account-name mytemplatestorage \
+  --container-name templates \
+  --name networking.json \
+  --permissions r \
+  --expiry 2025-12-31T23:59:59Z \
+  --https-only \
+  --output tsv
+```
+
+4. **Use SAS token in templateLink URI:**
+
+```json
+"templateLink": {
+  "uri": "https://mytemplatestorage.blob.core.windows.net/templates/networking.json?sv=2021-06-08&sr=b&sig=ABC123...&se=2025-12-31T23:59:59Z&sp=r"
+}
+```
+
+### Security considerations
+
+**SAS token logging:**
+
+- Even though the token is passed securely, the URI (including SAS token) is **logged in deployment operations**.
+- Deployment logs are visible to anyone with read access to the resource group.
+
+**Best practices for security:**
+
+- **Set expiration dates:** Create time-limited SAS tokens (30-90 days).
+- **Use read-only permissions:** SAS tokens should only grant read (`r`) permission.
+- **Rotate tokens regularly:** Generate new tokens and update templates periodically.
+- **Use Azure Key Vault:** Store SAS tokens in Key Vault and reference them in templates.
+- **Managed identities:** Consider using managed identities for template access instead of SAS tokens.
+- **Private endpoints:** Use Azure Storage private endpoints for additional network security.
+
+**Example with Key Vault reference:**
+
+```json
+"templateLink": {
+  "uri": "[concat('https://mytemplatestorage.blob.core.windows.net/templates/networking.json', reference(resourceId('Microsoft.KeyVault/vaults/secrets', parameters('keyVaultName'), 'storageAccountSasToken')).secretValue)]"
+}
+```
+
+This approach keeps SAS tokens out of your template code and deployment logs.
