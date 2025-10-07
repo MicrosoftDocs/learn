@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.draft-a-campaign-brief
+title: Draft a campaign brief using Copilot in Word
+metadata:
+  title: Draft A Campaign Brief Using Copilot In Word
+  description: In this module, you’ll discover how Microsoft 365 Copilot and Copilot in Word can help you quickly create a campaign brief. We’ll practice using an example application, but the fundamental skills can be used to create briefs for any product.
+  ms.date: 10/07/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: module
+  ms.service: microsoft-365-business
+  ms.custom: CW062625-1
+summary: >
+  Discover how to use Copilot in Word to generate and revise a campaign brief efficiently. Explore how AI assistance can support structured planning, reduce manual edits, and improve team coordination.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Write a complete campaign brief faster using Copilot in Word.
+  - Understand what goes into a strong campaign brief, including goals, audience, messaging, and how success is measured.
+  - Use Copilot to organize and improve your writing, like adjusting tone, adding missing details, or pulling in data from other documents.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+  - business-leader
+products:
+  - m365-business
+  - microsoft-365-copilot
+  - office-word
+units:
+  - learn.dpu.draft-a-campaign-brief.introduction
+  - learn.dpu.draft-a-campaign-brief.understand-structure-purpose-of-a-campaign-brief
+  - learn.dpu.draft-a-campaign-brief.accelerate-campaign-brief-creation
+  - learn.dpu.draft-a-campaign-brief.create-a-campaign-brief
+  - learn.dpu.draft-a-campaign-brief.knowledge-check
+  - learn.dpu.draft-a-campaign-brief.summary
+badge:
+  uid: learn.dpu.draft-a-campaign-brief.badge
