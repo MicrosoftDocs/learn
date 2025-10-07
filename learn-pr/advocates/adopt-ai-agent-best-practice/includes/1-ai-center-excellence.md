@@ -15,7 +15,7 @@ An AI CoE can support agent projects in the following ways:
 
 An AI CoE team helps ensure consistent AI adoption across your organization. The CoE brings together cross-functional expertise including data scientists, engineers, business leaders, and ethicists. To be effective, the AI CoE needs the right leadership, expertise, and organizational alignment. To build your team, follow these steps:
 
-[![A diagram showing facets of an AI CoE team.](../media/build-ai-coe-team.png)](../media/build-ai-coe-team-big.png#lightbox)
+[![A diagram showing facets of an AI CoE team.](../media/build-ai-excellence-team.png)](../media/build-ai-excellence-team-big.png#lightbox)
 
 1. **Secure executive sponsorship** Executive sponsorship provides the budget, authority, and organizational     credibility that the AI CoE needs to succeed.
 1. **Appoint an AI CoE leader** Assign a dedicated leader who drives AI initiatives and acts as the single point of contact for AI strategy implementation.
