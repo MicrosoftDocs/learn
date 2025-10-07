@@ -2,7 +2,6 @@
 uid: learn.introduction-to-sql-server-2022.analytics
 title: Analytics improvements in SQL Server 2025
 metadata:
-  unitType: learning-content
   title: Analytics improvements in SQL Server 2025
   description: "Explore SQL Server 2025's analytics capabilities including Microsoft Fabric integration, advanced mirroring, Power BI Report Server integration, and improved resource governance for analytics workloads"
   ms.date: 10/06/2025

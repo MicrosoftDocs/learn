@@ -121,9 +121,7 @@ Change event streaming provides:
 - Enable real-time data replication
 - Support event-driven architectures
 
-:::image type="content" source="../media/event-streaming.png" alt-text="Diagram showing the flow of change events from SQL Server 2025 directly to Azure Event Hubs, with AI agents processing the stream in real-time." :::
-
-Key benefits of change event streaming:
+Some of the key benefits of change event streaming include:
 
 1. **Reduced latency**: Direct streaming from transaction logs eliminates the need for intermediate storage
 2. **Lower resource usage**: Optimized I/O operations compared to CDC

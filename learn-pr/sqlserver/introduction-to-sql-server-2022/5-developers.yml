@@ -2,7 +2,6 @@
 uid: learn.introduction-to-sql-server-2022.developers
 title: Developer features and improvements in SQL Server 2025
 metadata:
-  unitType: learning-content
   title: Developer features and improvements in SQL Server 2025
   description: "Learn about SQL Server 2025's developer enhancements including native JSON support, REST API integration, real-time event streaming, new Python driver, and AI-powered development with GitHub Copilot"
   ms.date: 10/06/2025

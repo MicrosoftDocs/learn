@@ -2,9 +2,8 @@
 uid: learn.introduction-to-sql-server-2022.introduction
 title: Introduction
 metadata:
-  unitType: introduction
   title: Introduction
-  description: "Learn about SQL Server 2025's new features including AI integration, advanced analytics, improved security, and enhanced developer tools."
+  description: "Learn about SQL Server 2022's new features including AI integration, advanced analytics, improved security, and enhanced developer tools."
   ms.date: 10/06/2025
   author: JulianePadrao
   ms.author: jupadrao
