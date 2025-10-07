@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.adopt-ai-agent-best-practice.ai-center-excellence
+title: AI Center of Excellence
+metadata:
+  title: AI Center of Excellence
+  description: Learn about an AI Center of Excellence and how it applies to AI agents.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-ai-center-excellence.md)]
