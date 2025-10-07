@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.adopt-ai-agent-best-practice.{{unitName}}
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge of best practices for adopting AI agents using frameworks like AI Center of Excellence, FinOps, GenAI Ops, Cloud Adoption Framework, and Well-Architected Framework.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+quiz:
+  questions:
+  - content: "Which of the following is a critical first step when building an AI Center of Excellence (CoE) team?"
+    choices:
+    - content: "Secure executive sponsorship to provide budget, authority, and organizational credibility."
+      isCorrect: true
+      explanation: "Executive sponsorship is essential to ensure the CoE has the resources and support needed to succeed across the organization."
+    - content: "Deploy AI agents across all business units before forming the CoE team."
+      isCorrect: false
+      explanation: "AI deployment should follow the establishment of a well-supported CoE team."
+    - content: "Assign data scientists to manage compliance and governance independently."
+      isCorrect: false
+      explanation: "Compliance and governance should be addressed by a multidisciplinary CoE team, not delegated to a single role."
+  - content: "How does a FinOps framework enhance the cost-effectiveness of AI agents?"
+    choices:
+    - content: "By embedding financial accountability and operational transparency across the AI lifecycle."
+      isCorrect: true
+      explanation: "FinOps enables cross-functional collaboration, cost tracking, and resource optimization, helping organizations reduce spend and improve ROI."
+    - content: "By automating all AI agent decisions without human oversight."
+      isCorrect: false
+      explanation: "FinOps supports informed decision-making, not full automation without oversight."
+    - content: "By eliminating the need for budget forecasting and performance benchmarking."
+      isCorrect: false
+      explanation: "FinOps relies on principles like budget forecasting and performance-to-cost benchmarking to optimize resource use."
+  - content: "What is a key characteristic of an organization at Level 3 ('Managed') in the GenAIOps maturity model?"
+    choices:
+    - content: "It proactively monitors and manages advanced LLM workflows with structured deployment strategies."
+      isCorrect: true
+      explanation: "Level 3 organizations have moved beyond experimentation and are implementing structured, monitored workflows to approach operational excellence."
+    - content: "It's just beginning to explore LLM capabilities and lacks systematic practices."
+      isCorrect: false
+      explanation: "This describes Level 1 ('Initial'), not Level 3."
+    - content: "It has fully optimized LLM operations and maintains a cutting-edge position by tracking the latest advancements."
+      isCorrect: false
+      explanation: "This describes Level 4 ('Optimized'), which is the highest maturity level."
+  - content: "What is the purpose of the AI checklists in the Cloud Adoption Framework (CAF) for AI?"
+    choices:
+    - content: "To provide a practical roadmap for adopting and managing AI, tailored to both startups and enterprises."
+      isCorrect: true
+      explanation: "The AI checklists guide organizations through strategy, planning, readiness, governance, management, and security, with tailored paths for different organizational sizes."
+    - content: "To automate the deployment of AI models without human intervention."
+      isCorrect: false
+      explanation: "The checklists support structured planning and governance, not full automation."
+    - content: "To replace existing cloud infrastructure with new AI-specific hardware."
+      isCorrect: false
+      explanation: "CAF focuses on process and operational guidance, not hardware replacement."
+  - content: "Which of the following pillars is part of the Azure Well-Architected Framework and focuses on scaling, testing, and monitoring AI workloads?"
+    choices:
+    - content: "Performance Efficiency"
+      isCorrect: true
+      explanation: "Performance Efficiency emphasizes horizontal scaling, early testing, and health monitoring to ensure AI workloads meet performance goals."
+    - content: "Operational Excellence"
+      isCorrect: false
+      explanation: "Operational Excellence focuses on streamlining operations, monitoring, and safe deployment—not specifically on scaling and performance."
+    - content: "Security"
+      isCorrect: false
+      explanation: "Security addresses confidentiality, integrity, and availability, but not performance-related concerns."
