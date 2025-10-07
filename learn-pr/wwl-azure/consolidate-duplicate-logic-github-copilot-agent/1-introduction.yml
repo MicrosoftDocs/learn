@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.consolidate-duplicate-logic-github-copilot-agent.introduction
+title: Introduction
+metadata:
+  title: introduction
+  description: "Introduction"
+  ms.date: 10/7/2025
+  author: cahowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

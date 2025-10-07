@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.consolidate-duplicate-logic-github-copilot-agent
+metadata:
+  title: Consolidate Duplicate Logic using GitHub Copilot Agent
+  description: "This module teaches you how to identify and consolidate duplicate logic in your codebase using GitHub Copilot Agent. You'll learn best practices for refactoring duplicate code and improving code quality."
+  ms.date: 10/7/2025
+  author: cahowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: github-copilot
+title: consolidate-duplicate-logic-github-copilot-agent
+summary: "This module covers the identification and consolidation of duplicate logic in codebases using GitHub Copilot Agent, focusing on best practices for refactoring and code quality improvement."
+abstract: |
+  By the end of this module, you'll be able to:
+    - "Explain the negative effects of redundant/duplicate code and the benefits of consolidation."
+    - "Describe common refactoring patterns that are used to consolidate redundant/duplicate code."
+    - "Use GitHub Copilot’s Ask mode to explain a codebase and identify redundant/duplicate code."
+    - "Use GitHub Copilot’s Agent mode to consolidate redundant/duplicate code."
+prerequisites: |
+  - "Experience using GitHub Copilot in Visual Studio Code."
+  - "Experience developing C# applications."
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles: 
+  - developer
+products: 
+  - github
+  - vs-code
+subjects: 
+  - app-development
+  - productivity
+units:
+- learn.consolidate-duplicate-logic-github-copilot-agent.introduction
+- learn.consolidate-duplicate-logic-github-copilot-agent.learning-content #TODO: Update filename when content is ready
+- learn.consolidate-duplicate-logic-github-copilot-agent.learning-content #TODO: Update filename when content is ready
+- learn.consolidate-duplicate-logic-github-copilot-agent.learning-content #TODO: Update filename when content is ready
+- learn.consolidate-duplicate-logic-github-copilot-agent.exercise #TODO: Update filename when content is ready
+- learn.consolidate-duplicate-logic-github-copilot-agent.knowledge-check
+- learn.consolidate-duplicate-logic-github-copilot-agent.summary
+badge:
+  uid: learn.consolidate-duplicate-logic-github-copilot-agent.badge
