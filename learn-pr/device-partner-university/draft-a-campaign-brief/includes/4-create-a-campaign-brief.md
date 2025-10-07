@@ -107,10 +107,10 @@ When the prompt appears, use natural language to tell Copilot what you want to a
 
 You can ask Copilot to:
 
-- Add a new section with the heading "Key imagery"
-- Create a bulleted list to summarize this section
-- Add more detail about this topic
-- Provide more examples of key messages
+- Add a new section with the heading Key Imagery.
+- Create a bulleted list to summarize this section.
+- Add more detail about this topic.
+- Provide more examples of key messages.
 
 :::image type="content" border="true" source="../media/adding-content-to-document-with-copilot.gif" alt-text="Animated GIF showing how to add new content to a document in Microsoft Word with Copilot in Word.":::
 
