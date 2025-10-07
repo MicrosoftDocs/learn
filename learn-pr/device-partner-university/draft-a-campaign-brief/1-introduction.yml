@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.draft-a-campaign-brief.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is part of the "Draft a campaign brief using Copilot in Word" module.
+  ms.date: 10/07/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
