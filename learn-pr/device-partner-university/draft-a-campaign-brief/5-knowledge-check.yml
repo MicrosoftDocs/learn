@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.draft-a-campaign-brief.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Draft a campaign brief using Copilot in Word" module.
+  ms.date: 10/07/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary purpose of a campaign brief?"
+    choices:
+        - content: "To design visual assets for a campaign"
+          isCorrect: false
+          explanation: "Incorrect. Visual design is part of a creative concept plan, not the campaign brief."
+        - content: "To align stakeholders and guide marketing decisions"
+          isCorrect: true
+          explanation: "Correct. A campaign brief outlines strategy and ensures team alignment."
+        - content: "To write press releases and blog posts"
+          isCorrect: false
+          explanation: "Incorrect. These are execution elements, not the purpose of the brief."
+        - content: "To manage campaign budgets and timelines"
+          isCorrect: false
+          explanation: "Incorrect. While included, they're components—not the main purpose."
+  - content: "How can Copilot in Word assist in campaign brief creation?"
+    choices:
+        - content: "By scheduling campaign launch dates"
+          isCorrect: false
+          explanation: "Incorrect. Copilot doesn't handle scheduling."
+        - content: "By generating and refining brief content"
+          isCorrect: true
+          explanation: "Correct. Copilot helps draft, organize, and improve writing."
+        - content: "By approving budget allocations"
+          isCorrect: false
+          explanation: "Incorrect. Budget decisions are made by stakeholders, not Copilot."
+        - content: "By designing campaign visuals"
+          isCorrect: false
+          explanation: "Incorrect. While Microsoft 365 Copilot can create images, campaign visual design is usually outside the scope of a campaign brief."
+  - content: "What does the Channels section of a campaign brief describe?"
+    choices:
+        - content: "The team members involved"
+          isCorrect: false
+          explanation: "Incorrect. This isn't covered in the channels section."
+        - content: "The campaign’s visual style"
+          isCorrect: false
+          explanation: "Incorrect. That belongs in creative planning."
+        - content: "Where the campaign will run"
+          isCorrect: true
+          explanation: "Correct. Channels include platforms like email or LinkedIn."
+        - content: "The campaign’s tone of voice"
+          isCorrect: false
+          explanation: "Incorrect. Tone is part of messaging, not channels."
+  - content: "What makes a campaign brief actionable?"
+    choices:
+        - content: "It includes vague goals and flexible timelines"
+          isCorrect: false
+          explanation: "Incorrect. Specificity is key to actionability."
+        - content: "It focuses only on creative execution"
+          isCorrect: false
+          explanation: "Incorrect. A campaign brief covers strategy, not just visuals."
+        - content: "It provides enough detail to guide execution without micromanaging"
+          isCorrect: true
+          explanation: "Correct. Actionable briefs balance clarity and flexibility."
+        - content: "It avoids specifying channels and Key Performance Indicators"
+          isCorrect: false
+          explanation: "Incorrect. These are essential for execution and measurement."
+  - content: "What is a recommended prompt style when using Copilot in Word?"
+    choices:
+        - content: "Use generic phrases like 'make this better'"
+          isCorrect: false
+          explanation: "Incorrect. Specific prompts yield better results."
+        - content: "Be specific, such as 'Organize this into standard campaign brief sections'"
+          isCorrect: true
+          explanation: "Correct. Specific prompts help Copilot deliver relevant output."
+        - content: "Ask Copilot to write a novel"
+          isCorrect: false
+          explanation: "Incorrect. Copilot is designed for business writing tasks."
+        - content: "Request Copilot to change fonts and colors"
+          isCorrect: false
+          explanation: "Incorrect. Formatting isn't Copilot’s primary function."
