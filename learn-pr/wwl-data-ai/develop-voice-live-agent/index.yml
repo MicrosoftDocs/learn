@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.develop-voice-live-agent
+metadata:
+  title: Develop an Azure AI Voice Live Agent
+  description: "Learn how to develop an Azure AI Voice Live Agent using the Voice Live API and SDK."
+  ms.date: 10/7/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-ai-speech
+title: Develop an Azure AI Voice Live Agent
+summary: "Learn how to develop an Azure AI Voice Live agent using the Voice Live API and SDK. This module covers the fundamentals of the Voice Live platform, including API integration, SDK usage, and building conversational AI agents."
+abstract: |
+  After completing this module, you'll be able to: 
+    - "Implement the Azure AI Voice Live API to enable real-time, bidirectional communication."
+    - "Set up and configure the agent session."
+    - "Develop and manage event handlers to create dynamic and interactive user experiences."
+    - "Build and deploy a Python-based web app with real-time voice interaction capabilities to Azure."
+prerequisites: |
+  Before beginning this module, you should have:
+  - "Programming experience with languages such as Python, JavaScript, or C#."
+  - "Familiarity with RESTful APIs and webhooks."
+  - "Basic understanding of Azure services and cloud computing concepts."
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - developer
+products: 
+- azure-ai-foundry
+- ai-services
+subjects: 
+  - artificial-intelligence
+units:
+- learn.wwl.develop-voice-live-agent.introduction
+- learn.wwl.develop-voice-live-agent.voice-live-api
+- learn.wwl.develop-voice-live-agent.voice-live-sdk
+- learn.wwl.develop-voice-live-agent.exercise-develop-agent
+- learn.wwl.develop-voice-live-agent.knowledge-check
+- learn.wwl.develop-voice-live-agent.summary
+badge:
+  uid: learn.wwl.develop-voice-live-agent.badge

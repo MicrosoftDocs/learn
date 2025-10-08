@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-voice-live-agent.voice-live-api
+title: Explore the Azure Voice Live API
+metadata:
+  title: Explore the Azure Voice Live API
+  description: Explore the Azure Voice Live API
+  ms.date: 10/7/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-voice-live-api.md)]

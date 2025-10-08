@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-voice-live-agent.knowledge-check
+
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 10/7/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What are the two authentication methods supported by the Voice Live API?"
+    choices:
+    - content: "OAuth 2.0 and JWT (JSON Web Tokens)"
+      isCorrect: false
+      explanation: "OAuth 2.0 and JWT tokens aren't supported authentication methods for the Voice Live API."
+    - content: "Basic authentication and API keys"
+      isCorrect: false
+      explanation: "API keys are supported, but basic authentication isn't a supported authentication method for the Voice Live API."
+    - content: "Microsoft Entra (keyless) and API key"
+      isCorrect: true
+      explanation: "Microsoft Entra (keyless) and API key are both supported authentication methods for the Voice Live API."
+  - content: "Which scope is required when generating a token for Microsoft Entra authentication?"
+    choices:
+    - content: "https://cognitiveservices.azure.com/.default"
+      isCorrect: true
+      explanation: "The scope `https://cognitiveservices.azure.com/.default`, or `https://ai.azure.com/.default`, is required for Microsoft Entra authentication."
+    - content: "https://management.azure.com/.default"
+      isCorrect: false
+      explanation: "This is the Azure Resource Manager scope, not for AI services"
+    - content: "https://graph.microsoft.com/.default"
+      isCorrect: false
+      explanation: "This is the Microsoft Graph API scope, not for AI services"
+  - content: "Which protocol is used for avatar streaming integration in Voice Live API?"
+    choices:
+    - content: "HTTP/2"
+      isCorrect: false
+      explanation: "HTTP/2 is used for standard web communication."
+    - content: "WebRTC"
+      isCorrect: true
+      explanation: "The Voice live API supports WebRTC-based avatar streaming for interactive applications"
+    - content: "gRPC"
+      isCorrect: false
+      explanation: "gRPC is used to enable communication between microservices by using HTTP/2."
+  - content: "Which event should be handled to stop audio playback when a user interrupts the voice agent?"
+    choices:
+    - content: "ServerEventType.RESPONSE_AUDIO_DELTA"
+      isCorrect: false
+      explanation: "This event is for receiving audio chunks to play, not for stopping playback"
+    - content: "ServerEventType.INPUT_AUDIO_BUFFER_SPEECH_STARTED"
+      isCorrect: true
+      explanation: "This event can be used to stop audio playback, and cancel any current response."
+    - content: "ServerEventType.SESSION_UPDATED"
+      isCorrect: false
+      explanation: "This event indicates session readiness, not user speech interruption."
+  - content: "What is the recommended authentication method for production applications using the SDK?"
+    choices:
+    - content: " API key authentication"
+      isCorrect: false
+      explanation: "API key authentication isn't recommended for production applications."
+    - content: "Microsoft Entra authentication with DefaultAzureCredential"
+      isCorrect: true
+      explanation: "Microsoft Entra authentication with DefaultAzureCredential is the recommended approach for production applications."
+    - content: "Basic username/password authentication"
+      isCorrect: false
+      explanation: "Basic username/password authentication isn't a supported authentication method."
