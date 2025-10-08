@@ -1,4 +1,4 @@
-While Cloud Security Posture Management (CSPM) helps prevent issues through configuration hardening, runtime protection is equally critical once workloads are active. Defender for Cloud's **Cloud Workload Protection (CWP)** capabilities provide continuous detection and response for AI workloads, containers, and compute resources that support your models and data pipelines.
+Configuration hardening reduces risk before deployment, but active workloads need continuous protection. **Cloud Workload Protection (CWP)** in Microsoft Defender for Cloud detects and responds to threats across AI workloads, containers, and compute resources that power your models and data pipelines.
 
 CWP helps identify and respond to threats such as malicious prompt injections, data exfiltration attempts, or compromised containers. These threats can manipulate AI models or expose sensitive data. It complements the AI workloads plan by protecting the operational layer of your AI ecosystem.
 
@@ -44,7 +44,8 @@ The **Alert details** page shows:
 
 - A **description** of the detected behavior and why it's considered suspicious
 - **Impacted resources**, such as model endpoints, containers, or storage accounts
-- **Evidence** gathered from logs and detection data
+- **Evidence** gathered from logs, detection data, and related entities such as accounts, Azure resources, and IP addresses
+- **Supporting evidence events (Preview)**, which might include a **Prompt Suspicious Segment** showing the portion of input or API call that triggered the detection
 - **Recommended actions** for mitigation and follow-up investigation
 
    :::image type="content" source="../media/alert-detail-page.png" alt-text="Screenshot showing the Alert details page in Defender for Cloud for an AI phishing attempt, including model name, malicious URL, and investigation steps." lightbox="../media/alert-detail-page.png":::

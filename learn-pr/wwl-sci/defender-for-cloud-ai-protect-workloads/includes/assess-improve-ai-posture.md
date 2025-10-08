@@ -1,4 +1,4 @@
-As your AI environment expands, different services, models, and data sources can introduce configuration risks. Defender for Cloud's **Cloud Security Posture Management (CSPM)** plan helps identify those risks by analyzing your AI workloads, connected data, and network dependencies. It provides visibility into how your AI resources are configured and highlights areas that need improvement.
+As your AI environment grows, new models, data connections, and services increase the chance of misconfiguration. With **Cloud Security Posture Management (CSPM)** in Microsoft Defender for Cloud, you can assess these risks across your AI workloads and dependencies, ensuring that each resource follows security best practices.
 
 The AI workloads plan you enabled earlier feeds its discovery results into CSPM. From there, you can use tools like **Cloud Security Explorer** and **attack path analysis** to locate misconfigurations that could expose sensitive data or disrupt model performance.
 
