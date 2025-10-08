@@ -1,24 +1,24 @@
 <!-- markdownlint-disable MD041 -->
 
-In this module you learned to choose an environment, install the Azure CLI, execute Azure CLI commands interactively, and create a Bash script. Let's take our learning one step further and focus on how to use the Azure CLI successfully. This unit teaches you how the Azure CLI works behind the command line, and give you tips for troubleshooting.
+In this module, you learned to choose an environment, install **Azure CLI**, execute **Azure CLI** commands interactively, and create a **Bash** script. Let's take our learning one step further and focus on how to use **Azure CLI** successfully. This unit teaches you how **Azure CLI** works behind the command line and gives you tips for troubleshooting.
 
 > [!TIP]
-> This module is an advanced-level course, and this unit is taking you deep into Azure CLI. If you're new to command-line programming, focus on the concepts. The details become easier to understand as you gain experience. Don't give up!
+> This module is an advanced-level course, and this unit takes you deep into **Azure CLI**. If you're new to command-line programming, focus on the concepts. The details become easier to understand as you gain experience. Don't give up!
 
 ## Understand Azure CLI API calls
 
-Executing behind the Azure portal's graphical user interface and the Azure CLI's command line are API calls. You can expose the Azure CLI's API calls by using the `--debug` parameter. Here's what happens when you create a new resource group:
+Executing behind the **Azure portal's** graphical user interface and **Azure CLI's** command line are **API calls**. You can expose **Azure CLI's** **API calls** by using the `--debug` parameter. Here's what happens when you create a new **resource group**:
 
 ```azurecli
-az group create --location westus1 --name myResourceGroupName --debug
+az group create --location westus2 --name myResourceGroupName --debug
 ```
 
-Here's the terminal output from Azure Cloud Shell with some lines omitted for brevity. Notice this important output:
+Here's the terminal output from **Azure Cloud Shell** with some lines omitted for brevity. Notice this important output:
 
-- **Command arguments**: It's the scripting language, not the Azure CLI, that parses command arguments (parameters). _This output property is first place to look when a command is resulting in an error._
-- **azlogging**: This path is where your log file is stored.
-- **Request headers**: These headers are the parameter values passed by the PUT command.
-- **Response content**: This output is what is returned to the console without the full `--debug` output.
+- **Command arguments:** It's the scripting language, not **Azure CLI**, that parses command arguments (parameters). _This output property is the first place to look when a command results in an error._
+- **azlogging:** This path is where your log file is stored.
+- **Request headers:** These headers are the parameter values passed by the **PUT** command.
+- **Response content:** This output is what is returned to the console without the full `--debug` output.
 
 ```output
 cli.knack.cli: Command arguments: ['group', 'create', '--location', 'westus2', '--name', 'myResourceGroupName', '--debug']
@@ -32,7 +32,7 @@ cli.azure.cli.core: Loaded 53 groups, 233 commands.
 cli.azure.cli.core: Found a match in the command table.
 cli.azure.cli.core: Raw command  : group create
 ...
-cli.azure.cli.core.azlogging: metadata file logging enabled - writing logs to '/home/myName/.azure/commands/2025-02-17.21-47-27.group_create.5217.log'.
+cli.azure.cli.core.azlogging: metadata file logging enabled - writing logs to '/home/myName/.azure/commands/2025-10-08.21-47-27.group_create.5217.log'.
 ...
 cli.azure.cli.core.sdk.policies: Request URL: 'https://management.azure.com/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourcegroups/myResourceGroupName?api-version=2022-09-01'
 cli.azure.cli.core.sdk.policies: Request method: 'PUT'
@@ -63,33 +63,40 @@ az_command_data_logger: exit code: 0
 ...
 ```
 
-Some Azure CLI commands perform multiple actions. Use `--debug` to see each command Azure CLI is executing. Even more useful, use `--debug` to troubleshoot why an Azure CLI script is producing unexpected results.
+### Key insights from debug output
 
-## Troubleshooting
+- **Command parsing:** The **scripting language** (not **Azure CLI**) parses arguments. Look here first when troubleshooting.
+- **Log file location:** Find detailed logs at the path shown in `azlogging` for post-mortem analysis.
+- **API details:** See the actual **REST API** call being made, including the **HTTP method** (`PUT`, `GET`, etc.).
+- **Exit code:** A value of `0` indicates success; non-zero values indicate errors.
 
-How many times as a developer have you thought, "This task should be so simple! Why isn't my script working?" When you receive unexpected results from Azure CLI commands, the `--debug` parameter is your friend! Let's work through an example of a company with 100 Azure storage accounts. You need to find those accounts where blob public access is enabled.
+Some **Azure CLI** commands perform multiple actions. Use `--debug` to see each command **Azure CLI** is executing. Even more useful, use `--debug` to troubleshoot why an **Azure CLI** script is producing unexpected results.
+
+## Troubleshooting with --debug
+
+How many times as a developer have you thought, "This task should be so simple! Why isn't my script working?" When you receive unexpected results from **Azure CLI** commands, the `--debug` parameter is your friend! Let's work through an example of a company with 100 **Azure storage accounts**. You need to find those accounts where **blob public access** is enabled.
 
 ```azurecli
-# Bash script
+# Bash script - INCORRECT
 resourceGroup="msdocs-rg-00000000"
 az storage account list --resource-group $resourceGroup --query "[?allowBlobPublicAccess == `true`].id"
 ```
 
-When a parameter value isn't formatted correctly _for the scripting language that is parsing the value_, you receive an `invalid jmespath_type value` error.
- 
+When a parameter value isn't formatted correctly _for the scripting language that is parsing the value_, you receive an `invalid jmespath_type value` error:
+
 ```output
-cli.knack.cli: Command arguments: ['storage', 'account', 'list', '--resource-group', 'msdocs-tutorial-rg-69794242', '--query', '[?allowBlobPublicAccess == ].id', '--debug']
+cli.knack.cli: Command arguments: ['storage', 'account', 'list', '--resource-group', 'msdocs-rg-00000000', '--query', '[?allowBlobPublicAccess == ].id', '--debug']
 ...
 cli.azure.cli.core.azclierror: argument --query: invalid jmespath_type value: '[?allowBlobPublicAccess == ].id'
 az_command_data_logger: argument --query: invalid jmespath_type value: '[?allowBlobPublicAccess == ].id'
 ```
 
-Look at the variable value Bash is passing for `allowBlobPublicAccess`? In fact, where is the value? Why is it missing?
+Look at the variable value **Bash** is passing for `allowBlobPublicAccess`. In fact, where is the value? Why is it missing?
 
-Remember, it's the environment, also referred to as "scripting language," that parses Azure CLI variable values. Each scripting language, _and even versions of the same scripting language_, can produce different results. Here's the correct way to pass a boolean parameter value in Bash:
+Remember, it's the **environment** (also referred to as "**scripting language**") that parses **Azure CLI** variable values. Each scripting language, _and even versions of the same scripting language_, can produce different results. Here's the correct way to pass a **boolean** parameter value in **Bash**:
 
 ```azurecli
-# Bash script
+# Bash script - CORRECT
 resourceGroup="msdocs-rg-00000000"
 az storage account list --resource-group $resourceGroup --query "[?allowBlobPublicAccess == \`true\`].id" --debug
 ```
@@ -102,11 +109,14 @@ cli.knack.cli: Command arguments: ['storage', 'account', 'list', '--resource-gro
 ]
 ```
 
-Grasp the important concept of `--debug` and you are on your way to using the Azure CLI successfully in your environment of choice.
+> [!TIP]
+> The key difference is escaping the backticks with `\`true\`` so **Bash** doesn't interpret them as command substitution.
+
+Grasp the important concept of `--debug`, and you are on your way to using **Azure CLI** successfully in your environment of choice.
 
 ## Scripting language syntax differences
 
-As we just finished talking about `--debug`, the next step is to be aware of what causes most scripting errors A script written in Bash will need to be modified to execute successfully in PowerShell or cmd.exe if your script contains one of these constructs:
+As we just finished talking about `--debug`, the next step is to be aware of what causes most scripting errors. A script written in **Bash** needs to be modified to execute successfully in **PowerShell** or **cmd.exe** if your script contains one of these constructs:
 
 - Line continuation characters
 - Variables
@@ -116,66 +126,73 @@ As we just finished talking about `--debug`, the next step is to be aware of wha
 
 Here are some examples:
 
-| Syntax | Bash | PowerShell | cmd.exe |
-|-|-|-|-|
-| **Line continuation characters** | Backslash (`\`) | Backtick (`` ` ``) | Carrot (`^`) |
-| **Variable naming** | variableName=varValue | $variableName="varValue" | set variableName=varValue |
-| **Number as string** | \\\`50\\\` | \`\`50\`\` | \`50\` |
-| **Boolean as string** |\\\`true\\\` | \`\`false\`\` | \'true\' |
-| **Random ID** | let "randomIdentifier=\$RANDOM*$RANDOM" | $randomIdentifier = (New-Guid).ToString().Substring(0,8) | set randomIdentifier=%RANDOM% |
-| **Looping** | `until`, `while`, or `for` | `for`, `Foreach`, `while`, `do-while`, `do-until` | `for-[...]` |
-| **Write to console** | echo | write-host (preferred) or echo | echo |
+| Syntax                           | Bash                                     | PowerShell                                                 | cmd.exe                         |
+| -------------------------------- | ---------------------------------------- | ---------------------------------------------------------- | ------------------------------- |
+| **Line continuation characters** | Backslash (`\`)                          | Backtick (`` ` ``)                                         | Caret (`^`)                     |
+| **Variable naming**              | `variableName=varValue`                  | `$variableName="varValue"`                                 | `set variableName=varValue`     |
+| **Number as string**             | `\`50\``                                 | `` `50` ``                                                 | `` `50` ``                      |
+| **Boolean as string**            | `\`true\``                               | `` `false` ``                                              | `'true'`                        |
+| **Random ID**                    | `let "randomIdentifier=$RANDOM*$RANDOM"` | `$randomIdentifier = (New-Guid).ToString().Substring(0,8)` | `set randomIdentifier=%RANDOM%` |
+| **Looping**                      | `until`, `while`, `for`                  | `for`, `foreach`, `while`, `do-while`, `do-until`          | `for`                           |
+| **Write to console**             | `echo`                                   | `Write-Host` (preferred) or `echo`                         | `echo`                          |
 
-This example table isn't all-inclusive. What's important to understand when receiving an Azure CLI error, consider first that there might be a syntax problem for your environment. Test this possibility by **copying and pasting your script into another scripting language**, like Azure Cloud Shell. Use `--debug` in both environments and note the differences in the `command arguments` property of the output.
+### Common pitfalls
+
+This example table isn't all-inclusive. What's important to understand when receiving an **Azure CLI** error is to consider first that there might be a syntax problem for your environment. Test this possibility by **copying and pasting your script into another scripting language**, like **Azure Cloud Shell**. Use `--debug` in both environments and note the differences in the `command arguments` property of the output.
 
 > [!IMPORTANT]
-> When copying code blocks from Microsoft articles, be aware that most Azure CLI documentation at Microsoft is written for Bash and tested in Azure Cloud Shell.
+> When copying code blocks from **Microsoft** articles, be aware that most **Azure CLI** documentation at **Microsoft** is written for **Bash** and tested in **Azure Cloud Shell**.
 
 ## More ways to get help
 
-### `az find` command
+### Use az find
 
-Take a quick tour of Azure CLI commands by following these examples:
+Take a quick tour of **Azure CLI** commands by following these examples:
 
-- Find the most popular commands related to the word **blob**:
-
-   ```azurecli
-   az find blob
-   ```
-
-- Show the most popular commands for an Azure CLI command group, such as `az storage`:
-
-   ```azurecli
-   az find "az storage"
-   ```
-
-- Show the most popular parameters and subcommands for an Azure CLI command:
-
-   ```azurecli
-   az find "az storage account create"
-   ```
-
-### `--help` parameter
-
-If you already know the name of the command you want, the `--help` argument for that command gets you more detailed information on the command and a list of the available subcommands for a command group. Continuing with our Azure storage examples, here's how you can get a list of the subgroups and commands for managing a storage account's blob service:
+Find the most popular commands related to the word **blob**:
 
 ```azurecli
-az account blob-service-properties --help
+az find blob
 ```
 
-### A to Z indexes
+Show the most popular commands for an **Azure CLI** command group, such as `az storage`:
 
-To find examples for Azure CLI reference commands, use one of several A to Z indexes.
+```azurecli
+az find "az storage"
+```
 
-- The [Reference index](/cli/azure/reference-index) for Azure CLI provides and A to Z list of all reference groups. Expand the left navigation bar for subgroups.
+Show the most popular parameters and subcommands for an **Azure CLI** command:
 
-- The [Azure CLI conceptual article list](/cli/azure/reference-docs-index) provides an A to Z list of quickstarts, how to guides, tutorials and learn modules that explain how to use Azure CLI reference commands in real world scenarios. The article list groups articles by Azure CLI command group, like `az account`, then `az acr` etc.  Use **CTRL + F** in Windows (**Command + F** in macOS) to quickly jump to the command group of your choice.
+```azurecli
+az find "az storage account create"
+```
 
-- The [Azure CLI sample scripts](/cli/azure/samples-index) index has three tabs:
-  - [List by subject area](/cli/azure/samples-index?tabs=service): Use this tab to find samples for an Azure service.
-  - [List by reference group](/cli/azure/samples-index?tabs=command): Use this tab to find samples for a reference command group.
-  - [Azure CLI samples GitHub repository](/cli/azure/samples-index?tabs=github): Use this tab to find samples in the Azure CLI samples GitHub repository.
+### Use --help
 
-### Copilot
+If you already know the name of the command you want, the `--help` argument for that command gets you more detailed information on the command and a list of the available subcommands for a command group. Continuing with our **Azure storage** examples, here's how you can get a list of the subgroups and commands for managing a **storage account's blob service**:
 
-Both the Azure portal and Microsoft Edge offer Copilot experiences that return information on Azure CLI reference commands, samples and published articles. Copilot also provides links to related Stack Overflow questions. When you have a difficult job to be done with multiple scripting steps, Copilot is helpful in compiling multiple sources of information to answer your question.
+```azurecli
+az storage account blob-service-properties --help
+```
+
+> [!TIP]
+> Use `--help` with any command or subcommand to get detailed usage information without leaving the terminal.
+
+### A to Z documentation indexes
+
+To find examples for **Azure CLI** reference commands, use one of several A to Z indexes:
+
+- **[Reference index](/cli/azure/reference-index):** Provides an A to Z list of all reference groups. Expand the left navigation bar for subgroups.
+
+- **[Azure CLI conceptual article list](/cli/azure/reference-docs-index):** Provides an A to Z list of quickstarts, how-to guides, tutorials, and learn modules that explain how to use **Azure CLI** reference commands in real-world scenarios. The article list groups articles by **Azure CLI** command group, like `az account`, then `az acr`, etc. Use **Ctrl+F** in Windows (**Cmd+F** in macOS) to quickly jump to the command group of your choice.
+
+- **[Azure CLI sample scripts](/cli/azure/samples-index):** The index has three tabs:
+  - **[List by subject area](/cli/azure/samples-index?tabs=service):** Find samples for an **Azure service**.
+  - **[List by reference group](/cli/azure/samples-index?tabs=command):** Find samples for a reference command group.
+  - **[Azure CLI samples GitHub repository](/cli/azure/samples-index?tabs=github):** Find samples in the **Azure CLI** samples **GitHub** repository.
+
+### Use Copilot
+
+Both the **Azure portal** and **Microsoft Edge** offer **Copilot** experiences that return information on **Azure CLI** reference commands, samples, and published articles. **Copilot** also provides links to related **Stack Overflow** questions. When you have a difficult job to be done with multiple scripting steps, **Copilot** is helpful in compiling multiple sources of information to answer your question.
+
+> [!NOTE] > **GitHub Copilot** can also help you write **Azure CLI** scripts directly in your code editor, providing intelligent code completion and suggestions.

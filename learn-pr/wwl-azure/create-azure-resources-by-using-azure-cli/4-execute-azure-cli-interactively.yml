@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-azure-resources-by-using-azure-cli.execute-azure-cli-interactively
-title: Execute Azure CLI commands interactively
+title: Execute Azure CLI Commands Interactively
 metadata:
-  title: Execute Azure CLI commands interactively
-  description: "Execute Azure CLI commands interactively."
-  ms.date: 02/17/2025
-  author: wwlpublish
+  title: Execute Azure CLI Commands Interactively
+  description: "Learn to create Azure resources interactively using Azure CLI with practical examples for resource groups, storage accounts, and resource verification."
+  ms.date: 10/08/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom: devx-track-azurecli
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/4-execute-azure-cli-interactively.md)]
-
