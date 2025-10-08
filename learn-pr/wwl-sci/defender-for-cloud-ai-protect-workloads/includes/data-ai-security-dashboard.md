@@ -18,6 +18,8 @@ After enabling the AI workloads plan, Defender for Cloud begins discovering AI r
 
 Each section provides entry points for investigation. For example, selecting an attack path opens contextual details that show how a misconfigured storage account could expose grounding data to the internet.
 
+Imagine you notice an exposed storage account in the Top issues section. You can trace how the exposure occurred, identify which AI service depends on it, and use the linked recommendation to remediate the issue.
+
 ## Use initial findings to strengthen AI security posture
 
 With discovery complete, focus on a few key checks before moving on:

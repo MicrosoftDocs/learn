@@ -46,9 +46,6 @@ units:
 - learn.wwl.defender-for-cloud-ai-understand-protections.assess-improve-ai-posture
 - learn.wwl.defender-for-cloud-ai-understand-protections.detect-ai-threats
 - learn.wwl.defender-for-cloud-ai-understand-protections.investigate-ai-alerts-xdr
-
-- learn.wwl.defender-for-cloud-ai-understand-protections.guardrails-protections-azure
-- learn.wwl.defender-for-cloud-ai-understand-protections.azure-security-governance-ai-workloads
 - learn.wwl.defender-for-cloud-ai-understand-protections.knowledge-check
 - learn.wwl.defender-for-cloud-ai-understand-protections.summary
 badge:

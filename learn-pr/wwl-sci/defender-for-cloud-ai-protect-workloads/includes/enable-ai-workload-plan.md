@@ -6,6 +6,8 @@ The **AI workloads plan** in Microsoft Defender for Cloud automatically identifi
 
 Defender for Cloud aligns protections across the full lifecycle of an AI workload. Cloud Ops Security addresses risks during development, Cloud Security Posture Management (CSPM) focuses on configuration and posture, and Cloud Workload Protection (CWPP) detects runtime threats.
 
+Enabling the AI workloads plan is the first step in protecting AI environments. Turning it on allows Defender for Cloud to discover AI resources across clouds and begin building the inventory that later supports posture management and threat detection.
+
 ## Turn on the AI workloads plan
 
 Before you can review AI-specific insights in Defender for Cloud, you need to make sure the **AI workloads** plan is enabled for each subscription that contains AI resources.

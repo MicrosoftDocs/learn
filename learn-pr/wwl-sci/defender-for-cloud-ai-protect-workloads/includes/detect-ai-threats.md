@@ -1,6 +1,6 @@
 Configuration hardening reduces risk before deployment, but active workloads need continuous protection. **Cloud Workload Protection (CWP)** in Microsoft Defender for Cloud detects and responds to threats across AI workloads, containers, and compute resources that power your models and data pipelines.
 
-CWP helps identify and respond to threats such as malicious prompt injections, data exfiltration attempts, or compromised containers. These threats can manipulate AI models or expose sensitive data. It complements the AI workloads plan by protecting the operational layer of your AI ecosystem.
+CWP helps identify and respond to threats such as malicious prompt injections, data exfiltration attempts, or compromised containers. These threats can manipulate AI models or expose sensitive data. It complements the AI workloads plan by protecting the operational layer of your AI ecosystem. For example, if a malicious prompt or injected command targets an AI model, CWP can detect the behavior in real time and generate an alert with details about the affected resource.
 
 ## Detect threats in AI environments
 

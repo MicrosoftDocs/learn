@@ -34,10 +34,12 @@ Attack paths help you focus on the issues that matter most by showing how indivi
 
 CSPM generates security recommendations that identify configuration weaknesses and remediation steps. Key recommendation categories include:
 
-- **Identity and access**: Require managed identities for AI services instead of static keys.
-- **Network exposure**: Restrict public endpoints and use private links where possible.
-- **Data protection**: Enable encryption at rest for all storage and datasets.
-- **Dependencies**: Update vulnerable AI frameworks or libraries.
+| Risk area | Recommended action |
+|-----|-----|
+| **Identity and access** | Require managed identities for AI services instead of static keys. |
+| **Network exposure** | Restrict public endpoints and use private links where possible. |
+| **Data protection** | Enable encryption at rest for all storage and datasets.|
+| **Dependencies**  | Update vulnerable AI frameworks or libraries. |
 
 Remediating these findings improves the overall security posture of your AI workloads and reduces exposure risk across your environment.
 
