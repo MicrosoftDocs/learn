@@ -1,14 +1,18 @@
-This module described Desired State Configuration (DSC) and its components for implementation. You exercised how to import, compile and automate your environment creation, and use DSC for Linux automation on Azure.
+This module described **Desired State Configuration (DSC)** and its components for implementation with **Azure Automation**. You learned how to manage configuration drift, create DSC configurations, implement DSC for **Linux** environments, and plan for hybrid management.
 
-You learned how to describe the benefits and usage of:
+## Learning objectives summary
 
- -  Implement Desired State Configuration (DSC).
- -  Describe Azure Automation State Configuration.
- -  Implement DSC and Linux Automation on Azure.
- -  Plan for hybrid management.
+You learned how to:
 
-## Learn more
+- **Understand configuration drift:** Identify how infrastructure configurations change over time, the concept of snowflake configurations, and the security implications of configuration drift.
+- **Implement Desired State Configuration (DSC):** Use **PowerShell DSC** with configurations, resources, and **Local Configuration Manager (LCM)** to define and enforce desired states.
+- **Describe Azure Automation State Configuration:** Use **Azure Automation** as a centralized **DSC pull server** with built-in management, compilation, and monitoring capabilities.
+- **Create DSC configuration files:** Write **PowerShell** scripts with configuration blocks, node blocks, and resource blocks to define infrastructure state.
+- **Implement DSC for Linux:** Apply **DSC** to **Linux** environments on **Azure** using **DSC for Linux** resources and **Azure Automation State Configuration**.
+- **Plan for hybrid management:** Manage both **Azure** and on-premises resources with **DSC** for consistent configuration across hybrid environments.
 
- -  [Building a pipeline with DSC - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/release/dsc-cicd?view=azure-devops).
- -  [Azure Automation State Configuration overview \| Microsoft Learn](/azure/automation/automation-dsc-overview).
- -  [Desired State Configuration for Azure overview - Azure Virtual Machines \| Microsoft Learn](/azure/virtual-machines/extensions/dsc-overview).
+## Additional resources
+
+- [Building a pipeline with DSC - Azure Pipelines](/azure/devops/pipelines/release/dsc-cicd?view=azure-devops)
+- [Azure Automation State Configuration overview](/azure/automation/automation-dsc-overview)
+- [Desired State Configuration for Azure overview](/azure/virtual-machines/extensions/dsc-overview)
