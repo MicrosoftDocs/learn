@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-bicep.exercise-create-bicep-templates
-title: Exercise - Create Bicep templates
+title: Exercise - Create Bicep Templates
 metadata:
-  title: Exercise - Create Bicep templates
-  description: "Exercise - Create Bicep templates"
-  ms.date: 05/23/2024
-  author: wwlpublish
+  title: Exercise - Create Bicep Templates
+  description: "Hands-on exercise to create your first Bicep template, define resources, and deploy to Azure using Azure CLI."
+  ms.date: 10/08/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom: N/A, devx-track-bicep
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/4-exercise-create-bicep-templates.md)]
-
