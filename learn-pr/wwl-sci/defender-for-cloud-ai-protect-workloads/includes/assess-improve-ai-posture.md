@@ -1,4 +1,4 @@
-As your AI environment expands, different services, models, and data sources can introduce configuration risks. Defender for Cloud's **Cloud Security Posture Management (CSPM)** plan helps identify those risks by analyzing your AI workloads, connected data, and network dependencies. It provides a clear view of how your AI resources are configured and where improvements are needed.
+As your AI environment expands, different services, models, and data sources can introduce configuration risks. Defender for Cloud's **Cloud Security Posture Management (CSPM)** plan helps identify those risks by analyzing your AI workloads, connected data, and network dependencies. It provides visibility into how your AI resources are configured and highlights areas that need improvement.
 
 The AI workloads plan you enabled earlier feeds its discovery results into CSPM. From there, you can use tools like **Cloud Security Explorer** and **attack path analysis** to locate misconfigurations that could expose sensitive data or disrupt model performance.
 
@@ -16,17 +16,17 @@ To view AI workloads in your environment:
 
    :::image type="content" source="../media/ai-workload-query.png" alt-text="Screenshot showing the AI workloads and models in use query template in Cloud Security Explorer." lightbox="../media/ai-workload-query.png":::
 
-Each result represents a discovered AI workload, including details about its model, data source, and resource group. Selecting a result opens a detailed view with model metadata and configuration context.
+   Each result represents a discovered AI workload, including details about its model, data source, and resource group. Selecting a result opens a detailed view with model metadata and configuration context.
 
-:::image type="content" source="../media/result-details.png" alt-text="Screenshot showing AI workload results with one workload selected and details displayed." lightbox="../media/result-details.png":::
+   :::image type="content" source="../media/result-details.png" alt-text="Screenshot showing AI workload results with one workload selected and details displayed." lightbox="../media/result-details.png":::
 
-These details help you verify that sensitive or regulated data isn't exposed through public access or unsecured endpoints.
+Use these details to confirm that sensitive or regulated data isn't exposed through public access or unsecured endpoints.
 
 ## Investigate risks and attack paths
 
-Defender for Cloud uses **attack path analysis** to connect related configuration risks across resources. This feature visualizes potential routes an attacker could exploit to reach sensitive AI data or services. For example, an exposed storage account that contains grounding data could create a path to a fine-tuned AI model using that data.
+Defender for Cloud uses **attack path analysis** to connect related configuration risks across resources. This feature visualizes potential routes an attacker could exploit to reach sensitive AI data or services, like exposed storage accounts or unprotected endpoints that feed AI models.
 
-:::image type="content" source="../media/attack-path-example.png" alt-text="Screenshot showing an example of an attack path highlighting connected AI and data resources with configuration risks." lightbox="../media/attack-path-example.png":::
+:::image type="content" source="../media/attack-path-diagram.png" alt-text="Diagram showing connected resources with internet exposure and storage accounts containing sensitive data, representing an attack path to AI workloads." lightbox="../media/attack-path-diagram.png":::
 
 Attack paths help you focus on the issues that matter most by showing how individual misconfigurations are linked.
 
