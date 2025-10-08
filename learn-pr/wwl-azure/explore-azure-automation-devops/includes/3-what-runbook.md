@@ -1,60 +1,69 @@
-**Runbooks** serve as repositories for your custom scripts and workflows.
+**Runbooks** serve as repositories for your custom scripts and workflows. They typically reference **Automation shared resources** such as **credentials**, **variables**, **connections**, and **certificates**.
 
-They also typically reference Automation shared resources such as credentials, variables, connections, and certificates.
-
-Runbooks can also contain other runbooks, allowing you to build more complex workflows.
-
-You can invoke and run runbooks on-demand or according to a schedule using Automation Schedule assets.
+**Runbooks** can also contain other runbooks, allowing you to build more complex workflows. You can invoke and run runbooks on-demand or according to a schedule using **Automation Schedule** assets.
 
 :::image type="content" source="../media/create-runbook-81c5672e.png" alt-text="Screenshot of the Add Runbook window. In the left pane, Quick Create, create a new runbook is selected. In the right pane, the runbook type dropdown menu displays options such as PowerShell, Python 2, Graphical, and Other. Under Other is PowerShell Workflow, and Graphical PowerShell workflow.":::
 
-
 ## Creating runbooks
 
-When creating runbooks, you have two options. You can either:
+When creating **runbooks**, you have two options:
 
- -  Create your runbook and import it. For more information about creating or importing a runbook in Azure Automation, go to [Start a runbook in Azure Automation](/azure/automation/start-runbooks).
- -  Modify runbooks from the runbook gallery. It provides a rich ecosystem of runbooks that are available for your requirements. Visit [Runbook and module galleries for Azure Automation](/azure/automation/automation-runbook-gallery) for more information.
+- **Create your runbook and import it:** For more information about creating or importing a runbook in **Azure Automation**, go to [Start a runbook in Azure Automation](/azure/automation/start-runbooks).
+- **Modify runbooks from the runbook gallery:** Provides a rich ecosystem of runbooks that are available for your requirements. Visit [Runbook and module galleries for Azure Automation](/azure/automation/automation-runbook-gallery) for more information.
 
-A vibrant open-source community also creates runbooks you can apply directly to your use cases.
+An open-source community also creates runbooks you can apply directly to your use cases.
 
-You can choose from different runbook types based on your requirements and Windows PowerShell experience.
+## Choosing a runbook type
 
-If you prefer to work directly with Windows PowerShell code, you can use a PowerShell runbook or a PowerShell Workflow runbook.
+You can choose from different runbook types based on your requirements and **Windows PowerShell** experience:
 
-You can edit offline or with the textual editor in the Azure portal using either of these.
+- **PowerShell runbooks:** If you prefer to work directly with **Windows PowerShell** code.
+- **PowerShell Workflow runbooks:** For workflows that require checkpoints and parallel processing.
+- **Graphical runbooks:** If you prefer to edit without exposure to the underlying code using the **Azure portal's** graphical editor.
 
-If you prefer to edit a runbook without exposure to the underlying code, you can create a graphical runbook using the Azure portal's graphic editor.
+## Runbook types
 
-## Graphical runbooks
+### Graphical runbooks
 
-Graphical runbooks and Graphical PowerShell Workflow runbooks are created and edited with the graphic editor in the Azure portal.
+**Graphical runbooks** and **Graphical PowerShell Workflow runbooks** are created and edited with the graphical editor in the **Azure portal**. You can export them to a file and import them into another automation account, but you can't create or edit them with another tool.
 
-You can export them to a file and import them into another automation account, but you can't create or edit them with another tool.
+**Key characteristics:**
 
-## PowerShell runbooks
+- Visual design without code exposure
+- Drag-and-drop interface in **Azure portal**
+- Ideal for users without scripting experience
 
-PowerShell runbooks are based on Windows PowerShell. You edit the runbook code directly using the text editor in the Azure portal.
+### PowerShell runbooks
 
-You can also use any offline text editor and import the runbook into Azure Automation. PowerShell runbooks don't use parallel processing.
+**PowerShell runbooks** are based on **Windows PowerShell**. You edit the runbook code directly using the text editor in the **Azure portal**. You can also use any offline text editor and import the runbook into **Azure Automation**.
 
-## PowerShell Workflow runbooks
+**Key characteristics:**
 
-PowerShell Workflow runbooks are text runbooks based on Windows PowerShell Workflow.
+- Based on **PowerShell** scripting language
+- Don't use parallel processing
+- Execute commands sequentially
+- Faster startup time compared to **PowerShell Workflow runbooks**
 
-You directly edit the runbook code using the text editor in the Azure portal.
+### PowerShell Workflow runbooks
 
-You can also use any offline text editor and import the runbook into Azure Automation.
+**PowerShell Workflow runbooks** are text runbooks based on **Windows PowerShell Workflow**. You directly edit the runbook code using the text editor in the **Azure portal**. You can also use any offline text editor and import the runbook into **Azure Automation**.
 
-PowerShell Workflow runbooks use parallel processing to allow for the simultaneous completion of multiple tasks.
+**Key characteristics:**
 
-Workflow runbooks take longer to start than PowerShell runbooks because they must be compiled before running.
+- Use parallel processing for simultaneous task completion
+- Support checkpoints for workflow resilience
+- Take longer to start than **PowerShell runbooks** because they must be compiled before running
+- Ideal for long-running operations that need to resume after interruption
 
-## Python runbooks
+### Python runbooks
 
-You can directly edit the code of the runbook using the text editor in the Azure portal, or you can use any offline text editor and import the runbook into Azure Automation.<br>
+You can directly edit the code of the runbook using the text editor in the **Azure portal**, or you can use any offline text editor and import the runbook into **Azure Automation**.
 
-You can also use Python libraries. You must first import the package into the Automation Account to use third-party libraries.
+**Key characteristics:**
+
+- Support **Python** libraries
+- Must import third-party packages into the **Automation Account** before use
+- Useful for integrating with **Python**-based tools and services
 
 > [!NOTE]
 > You can't convert runbooks from graphical to textual type and vice versa.
