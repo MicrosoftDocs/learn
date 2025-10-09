@@ -21,4 +21,4 @@ After completing this module, you're able to:
   - The latest version of the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest&preserve-view=true)
   - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azure-cli-latest&preserve-view=true)
 - A [GitHub](https://github.com?azure-portal=true) account
-- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
+- An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)

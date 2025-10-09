@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-to-microsoft-365-business-standard
+title: Introduction to Microsoft 365 Business Standard
+metadata:
+  title: Introduction To Microsoft 365 Business Standard
+  description: In this module, you'll learn about the components and features of Microsoft 365 Business Standard, including its productivity applications, cloud-based collaboration tools, and integrated solutions for communication and project management.
+  ms.date: 09/11/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: module
+  ms.service: microsoft-365-business
+  ms.custom: C361225-1
+summary: >
+  Explore the core components and features of Microsoft 365 Business Standard, including productivity applications, cloud collaboration tools, and integrated solutions for communication and project management.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Evaluate whether Microsoft 365 Business Standard provides the necessary tools and services to meet specific organizational requirements.
+  - Describe how the included applications and services function together in a distributed work environment.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/introduction-to-microsoft-365-business-standard.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - m365-business
+units:
+  - learn.dpu.introduction-to-microsoft-365-business-standard.introduction
+  - learn.dpu.introduction-to-microsoft-365-business-standard.what-is-microsoft-365-business-standard
+  - learn.dpu.introduction-to-microsoft-365-business-standard.how-microsoft-365-business-standard-works
+  - learn.dpu.introduction-to-microsoft-365-business-standard.when-to-use-microsoft-365-business-standard
+  - learn.dpu.introduction-to-microsoft-365-business-standard.knowledge-check
+  - learn.dpu.introduction-to-microsoft-365-business-standard.summary
+badge:
+  uid: learn.dpu.introduction-to-microsoft-365-business-standard.badge

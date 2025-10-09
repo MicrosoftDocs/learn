@@ -71,7 +71,6 @@ products:
 modules:
 - learn.azure-spring-cloud-workshop
 - learn.azure.deploy-java-ee-app-to-app-service
-- learn.azure.cloud-scale-messaging-jms-service-bus
 # Kafka
 - learn.azure.azure-java-app-enable-authentication-authorization
 - learn.store-app-data-with-azure-blob-storage

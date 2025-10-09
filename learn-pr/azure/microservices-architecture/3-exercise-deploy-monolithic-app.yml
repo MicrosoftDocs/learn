@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Deploy a monolithic application on App Service
   description: Exercise - Deploy a monolithic application on App Service
   ms.date: 07/08/2025
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: unit
 title: Exercise - Deploy a monolithic application on App Service
 durationInMinutes: 10
@@ -13,4 +13,3 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-deploy-monolithic-app.md)]
-

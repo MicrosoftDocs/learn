@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.establish-ai-cost-management-practices.advanced-token-metric-data
+title: Advanced token metric data with Azure API Management Gateway
+metadata:
+  title: Advanced Token Metric Data with Azure API Management Gateway
+  description: Learn how to use Azure API Management Gateway to collect advanced token metric data for AI services.
+  ms.date: 10/03/2025
+  author: Orin-Thomas
+  ms.author: socuff
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-advanced-token-metric-data.md)]

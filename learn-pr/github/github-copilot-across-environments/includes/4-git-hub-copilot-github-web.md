@@ -39,15 +39,23 @@ Example: "Explain the main functionality of this repository and its key componen
 
 ### Pull request assistance
 
-- **PR summaries**: Generate comprehensive summaries of changes made in a pull request
-- **Review suggestions**: Get recommendations for code improvements and potential issues
-- **Merge conflict resolution**: Receive guidance on resolving conflicts between branches
+GitHub Copilot on GitHub.com significantly accelerates your pull request workflow by automating many time-consuming review and documentation tasks:
+
+- **PR summaries**: Generate comprehensive summaries of changes made in a pull request, helping reviewers quickly understand the scope and impact of modifications
+- **Review suggestions**: Get recommendations for code improvements and potential issues before formal review, reducing review cycles
+- **Merge conflict resolution**: Receive guidance on resolving conflicts between branches, streamlining the merge process
+- **Documentation updates**: Automatically suggest updates to README files, changelogs, and other documentation based on code changes
+
+These features help maintain development velocity by reducing the manual effort required to prepare and review pull requests, allowing teams to focus on code quality rather than administrative tasks.
+
+> [!NOTE]
+> PR summary generation and advanced pull request assistance features consume Premium Request Units (PRUs). Typically, generating a PR summary uses 1-2 PRUs depending on the complexity and size of the changes. Monitor your usage to stay within monthly allowances. For current details on PRU consumption and limits, refer to the [Requests in GitHub Copilot documentation](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
 
 Example: "Summarize the changes in this pull request and highlight any potential concerns"
 
 :::image type="content" source="../media/copilot-pull-request-assistance.png" lightbox="../media/copilot-pull-request-assistance.png" alt-text="Screenshot of GitHub Copilot PR Summary Button.":::
 
-The results:
+The results show how Copilot can quickly generate comprehensive PR summaries that would typically take several minutes to write manually:
 
 :::image type="content" source="../media/copilot-pull-request-assistance-summary.png" lightbox="../media/copilot-pull-request-assistance-summary.png" alt-text="Screenshot of GitHub Copilot generating a pull request summary and providing review suggestions on a GitHub pull request page.":::
 
@@ -69,7 +77,8 @@ GitHub Copilot enhances your code review process by providing intelligent insigh
 - **Security analysis**: Identify potential security vulnerabilities or best practice violations
 - **Performance optimization**: Suggest improvements for code efficiency and performance
 
-These code review features use Premium Request Units (PRUs) as part of Copilot's advanced capabilities. For details on PRU consumption, monthly allowances, and rate limits, see the [Requests in GitHub Copilot documentation](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+> [!NOTE]
+> Code review features consume Premium Request Units (PRUs) as part of Copilot's advanced capabilities. Each code review request typically uses 1-3 PRUs depending on the scope and complexity of the analysis. For details on PRU consumption, monthly allowances, and rate limits, see the [Requests in GitHub Copilot documentation](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
 
 Example: "Review this code change and provide feedback on security and performance considerations"
 

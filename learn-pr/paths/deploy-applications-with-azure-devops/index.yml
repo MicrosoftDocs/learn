@@ -43,7 +43,7 @@ summary: |
 prerequisites: |
   - [Get started with Azure DevOps](../evolve-your-devops-practices/index.yml)
   - [Build applications with Azure DevOps](../build-applications-with-azure-devops/index.yml)
-  - An [Azure subscription](https://azure.microsoft.com/free/)
+  - An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
 iconUrl: /training/achievements/azure-devops/deploy-applications-with-azure-devops.svg
 levels:
 - intermediate

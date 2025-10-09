@@ -70,7 +70,7 @@ The Microsoft.Graph module creates cmdlets for the available Microsoft Graph opt
 > [!NOTE]
 > Cmdlets provided by the Microsoft.Graph module have **Mg** in the name of the cmdlet. For example, **Get-MgUser**.
 
-> **Additional reading:** The remainder of this module focuses on using the AzureAD and Azure Active Directory module for Windows PowerShell modules. For more information about using the Microsoft.Graph module, refer to [Get started with the Microsoft Graph PowerShell SDK](https://aka.ms/get-started-with-the-Microsoft-Graph-PowerShell-SDK).
+> **Additional reading:** The remainder of this module focuses on using the AzureAD and Azure Active Directory module for Windows PowerShell modules. For more information about using the Microsoft.Graph module, refer to [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
 
 ## Azure Cloud Shell
 

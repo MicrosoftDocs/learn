@@ -4,11 +4,11 @@ title: Onboard Azure Arc-enabled servers to Microsoft Defender for Cloud
 metadata:
   title: Onboard Azure Arc-enabled servers to Microsoft Defender for Cloud
   description: Learn how to onboard your Azure Arc-enabled servers to Microsoft Defender for Cloud by enabling Log Analytics.
-  ms.date: 04/24/2024
+  ms.date: 09/23/2025
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-onboard-azure-arc-enabled-servers-to-microsoft-defender-for-cloud.md)]
-
+

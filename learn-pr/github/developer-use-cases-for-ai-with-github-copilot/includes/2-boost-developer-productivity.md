@@ -63,6 +63,109 @@ You can accelerate your development process by using GitHub Copilot to generate 
 
 :::image type="content" source="../media/automate-boring-stuff.gif" alt-text="Screenshot of Automating the boring stuff.":::
 
+#### Advanced boilerplate automation scenarios
+
+GitHub Copilot can handle more sophisticated automation tasks that would typically require significant manual effort:
+
+- **Database schema and ORM setup:** Generate complete database models, migration files, and ORM configurations based on simple entity descriptions.
+- **API endpoint scaffolding:** Create entire REST API endpoints with proper error handling, validation, and documentation comments.
+- **Configuration management:** Generate configuration files for different environments (development, staging, production) with appropriate settings.
+- **Test infrastructure:** Set up complete testing frameworks including mock data, fixtures, and helper functions for complex testing scenarios.
+
+For example, when building a new microservice, Copilot can generate the entire project structure including Docker configurations, CI/CD pipeline files, and basic monitoring setup based on a few descriptive comments about your service requirements.
+
+> [!NOTE]
+> Complex multi-file generations consume more PRUs (~3–5 PRUs for complete project scaffolding). Simple boilerplate tasks typically use 1–2 PRUs. Learn more about [Premium Request Units](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+
+#### Story-driven development automation
+
+GitHub Copilot excels at transforming simple user stories and feature requirements directly into complete, production-ready implementations:
+
+- **Feature scaffolding:** Convert high-level feature descriptions into complete code structures with proper separation of concerns, including database models, API endpoints, and frontend components.
+- **Business logic implementation:** Generate core functionality based on business rules described in plain language, automatically handling common patterns like validation, data transformation, and workflow logic.
+- **Integration patterns:** Create standardized patterns for connecting different parts of your application ecosystem, including authentication, logging, and external service integration.
+- **End-to-end automation:** From a single user story, generate the complete feature stack including backend logic, database changes, API documentation, and basic frontend implementation.
+- **Quality built-in:** Automatically include error handling, input validation, logging, and basic security considerations as part of the initial implementation.
+
+This approach enables rapid iteration from concept to working prototype, allowing teams to validate ideas quickly and gather feedback early in the development process.
+
+### Accelerating pull request workflows
+
+GitHub Copilot transforms the pull request process by generating changes that are review-ready and reducing the time from development to deployment:
+
+#### PR-ready code generation
+
+When working on features or bug fixes, Copilot helps create comprehensive changes that minimize review cycles:
+
+- **Complete implementations:** Generate full feature implementations with proper error handling, logging, and edge case coverage.
+- **Consistent code patterns:** Ensure new code follows established project conventions and architectural patterns.
+- **Documentation integration:** Include inline comments, function documentation, and README updates as part of the initial code generation.
+- **Test coverage:** Generate corresponding unit tests, integration tests, and example usage alongside new functionality.
+
+#### Intelligent code review assistance
+
+Copilot can help prepare code for review and even assist during the review process itself:
+
+- **Pre-submission quality checks:** Before creating a PR, use Copilot to identify potential issues, suggest improvements, and ensure code quality standards are met.
+- **Review comment drafting:** Generate constructive, specific review comments that explain issues clearly and suggest concrete improvements with code examples.
+- **Rapid iteration:** When reviewers request changes, Copilot can immediately generate multiple implementation alternatives, allowing authors to choose the best approach without extensive rewriting.
+- **Documentation refinement:** Automatically improve code comments and documentation based on reviewer questions and feedback, ensuring clarity for future maintainers.
+- **Conflict resolution:** Assist in resolving merge conflicts by understanding the intent of both code branches and suggesting optimal integration approaches.
+
+This streamlined approach significantly reduces the number of review rounds required, enabling faster feature delivery while maintaining high code quality standards.
+
+> [!NOTE]
+> Asking Copilot for multiple refactor drafts in a PR can consume 2–3 PRUs per draft. Learn more about [Premium Request Units](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+
+#### Collaborative development workflows
+
+Copilot enhances team collaboration by ensuring consistency and quality across different developers' contributions:
+
+- **Code standardization:** Help maintain consistent coding styles and patterns across team members.
+- **Knowledge sharing:** Generate code that follows team best practices, helping junior developers learn from senior patterns.
+- **Context preservation:** When taking over someone else's work, Copilot can help understand existing code and continue development in the same style.
+- **Merge conflict resolution:** Assist in resolving complex merge conflicts by understanding the intent of both code branches.
+
+### Orchestrated AI workflows
+
+Modern development increasingly benefits from coordinated AI assistance across different aspects of the development process. GitHub Copilot can work as part of orchestrated workflows where multiple AI capabilities complement each other:
+
+#### Multi-agent development patterns
+
+Consider a workflow where different AI agents handle distinct aspects of feature development:
+
+1. **Draft agent:** Copilot generates initial code implementations based on feature requirements
+2. **Review agent:** A secondary AI reviews the draft for code quality, security issues, and adherence to project standards
+3. **Documentation agent:** Automatically generates or updates documentation based on the code changes
+4. **Test agent:** Creates comprehensive test suites for the new functionality
+
+This orchestrated approach ensures comprehensive coverage of development tasks while maintaining high quality standards. Each agent brings specialized focus to its domain, resulting in more thorough and production-ready code.
+
+> [!NOTE]
+> Each handoff consumes ~1 PRU. A 2-agent draft–review flow typically uses 2–3 PRUs.
+
+#### Advanced reasoning capabilities
+
+For complex development scenarios, GitHub Copilot offers premium reasoning modes that provide deeper analysis and more sophisticated code generation:
+
+- **Enhanced context understanding:** Analyzes larger codebases and more complex relationships between components
+- **Advanced architectural suggestions:** Provides recommendations for system design and integration patterns
+- **Complex refactoring assistance:** Handles sophisticated code transformations while preserving functionality
+- **Multi-file coordination:** Orchestrates changes across multiple files while maintaining consistency
+
+> [!NOTE]
+> Premium runs add more context and reasoning but often double PRU consumption (~4+ per request).
+
+#### Automated story completion workflows
+
+GitHub Copilot can transform user stories and requirements into complete, deployable features through automated workflows:
+
+- **Requirements parsing:** Analyze user stories and acceptance criteria to generate implementation plans
+- **Feature scaffolding:** Create complete feature structures including controllers, services, models, and tests
+- **Integration setup:** Generate the necessary code to integrate new features with existing system components
+- **Quality assurance automation:** Include comprehensive error handling, logging, and monitoring for new features
+
+This approach enables rapid progression from concept to working software, significantly reducing the time between idea and implementation.
 
 ### Personalized code completion
 

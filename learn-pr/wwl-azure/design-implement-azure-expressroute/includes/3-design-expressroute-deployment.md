@@ -16,7 +16,7 @@ This table highlights the key differences between ExpressRoute Direct and the Se
 | Usage cases | Small to medium sized business looking for a simple setup with managed services | Large enterprises with mission-critical applications requiring high-performance connectivity |
 | Connectivity | Connection via a service provider's infrastructure | Direct connection to Microsoft's network through dual 10-Gbps or 100-Gbps ports |
 | Circuit SKUs |                             Ranges from 50 Mbps to 10 Gbps                             | 10-Gbps: 1, 2, 5, 10 Gbps; 100-Gbps: 5, 10, 40, 100 Gbps |
-| Optimization | Optimized for single tenant with multiple business units | Optimized for a single tenant |
+| Optimization | Optimized for single tenant | Optimized for a single tenant with multiple business units |
 
 Azure ExpressRoute offers different [SKUs](/azure/expressroute/expressroute-faqs#expressroute-premium) to cater to various connectivity needs and performance requirements. Each SKU has different pricing and features, such as varying limits on the number of virtual networks you can connect to and the bandwidth options available. When choosing a SKU, consider your organization's geographic footprint, latency requirements, and budget constraints.
 
