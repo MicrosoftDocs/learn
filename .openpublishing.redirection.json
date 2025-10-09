@@ -58892,6 +58892,56 @@
       "source_path": "learn-pr/wwl-data-ai/fundamentals-generative-ai/6c-responsible-ai.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/7-responsible-ai",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/2-what-is-automated-testing.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/3-set-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/4-add-unit-tests.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/5-add-dashboard-widget.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/6-perform-code-coverage.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/7-fix-failed-test.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/8-clean-up-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/run-quality-tests-build-pipeline/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/courses/gh-200t00",
+      "redirect_document_id": false
     }
   ]
 }
