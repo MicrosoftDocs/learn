@@ -94,9 +94,9 @@ The extract method technique provides the following benefits:
 
 Static helper classes provide a home for utility functions that don't naturally belong to any specific object. This technique works well for:
 
-- **Stateless operations**: Functions that don't require instance data
-- **Cross-cutting concerns**: Logging, validation, formatting, or calculation utilities
-- **Pure functions**: Methods that always return the same output for the same input
+- **Stateless operations**: Functions that don't require instance data.
+- **Cross-cutting concerns**: Logging, validation, formatting, or calculation utilities.
+- **Pure functions**: Methods that always return the same output for the same input.
 
 #### Structure characteristics
 
@@ -112,7 +112,7 @@ Choose this approach when the duplicate code represents utility functions that m
 
 Inheritance allows you to consolidate duplicate code when multiple classes share common behavior and have a natural "is-a" relationship.
 
-The following approach can be used to consolidate code with base classes and inheritance
+The following approach can be used to consolidate code with base classes and inheritance:
 
 - Create an abstract base class containing the shared methods.
 - Move common code to the base class.
@@ -131,18 +131,18 @@ Composition involves creating separate service classes that encapsulate specific
 
 **Implementation approach**:
 
-- Extract duplicate functionality into dedicated service classes
-- Inject or reference these services in classes that need the functionality
-- Each service class has a single, well-defined responsibility
+- Extract duplicate functionality into dedicated service classes.
+- Inject or reference these services in classes that need the functionality.
+- Each service class has a single, well-defined responsibility.
 
 For example, consider the following scenario. Multiple processors need shipping calculation logic. Instead of duplicating this code, create a `ShippingCalculatorService` that each processor can use.
 
 The Composition and shared services approach provides the following advantages:
 
-- Promotes loose coupling between components
-- Enables easier unit testing through dependency injection
-- Supports the Single Responsibility Principle
-- Facilitates code reuse across different parts of the application
+- Promotes loose coupling between components.
+- Enables easier unit testing through dependency injection.
+- Supports the Single Responsibility Principle.
+- Facilitates code reuse across different parts of the application.
 
 ### Choosing the right technique
 
@@ -156,24 +156,24 @@ The choice between these consolidation methods depends on several factors:
 
 **Key decision criteria**:
 
-- **Complexity**: Simple functions → static helpers; complex behavior → services or inheritance
-- **Relationships**: Related classes → inheritance; unrelated classes → composition
-- **Testing needs**: Services are easier to mock and test in isolation
-- **Future extensibility**: Composition provides more flexibility for future changes
+- **Complexity**: Simple functions → static helpers; complex behavior → services or inheritance.
+- **Relationships**: Related classes → inheritance; unrelated classes → composition.
+- **Testing needs**: Services are easier to mock and test in isolation.
+- **Future extensibility**: Composition provides more flexibility for future changes.
 
 The goal is always to reduce duplication while keeping the code understandable, maintainable, and appropriate to your application's architecture.
 
 ## Project integration best practices
 
-When integrating consolidated code into an existing project, follow these organizational principles to maintain code quality and discoverability:
+When integrating consolidated code into an existing project, follow these organizational principles to maintain code quality and discoverability.
 
 ### Namespace organization
 
 **Create logical namespaces** for your consolidated code:
 
-- **Utility classes**: Place in a `.Utils` or `.Helpers` sub-namespace (e.g., `MyProject.Utils.StringHelper`)
-- **Shared services**: Use descriptive namespaces like `.Services` or `.Common` (e.g., `MyProject.Services.ValidationService`)
-- **Domain-specific helpers**: Group within relevant business domains (e.g., `MyProject.Orders.OrderCalculations`)
+- **Utility classes**: Place in a `.Utils` or `.Helpers` sub-namespace (e.g., `MyProject.Utils.StringHelper`).
+- **Shared services**: Use descriptive namespaces like `.Services` or `.Common` (e.g., `MyProject.Services.ValidationService`).
+- **Domain-specific helpers**: Group within relevant business domains (e.g., `MyProject.Orders.OrderCalculations`).
 
 ### File and folder structure
 
@@ -196,19 +196,19 @@ When integrating consolidated code into an existing project, follow these organi
 
 **Design for appropriate access levels**:
 
-- Make methods `public` when used across different assemblies or projects
-- Use `internal` for helpers used only within the same assembly
-- Consider `static` classes for stateless utility functions
-- Implement proper interfaces for services that need dependency injection
+- Make methods `public` when used across different assemblies or projects.
+- Use `internal` for helpers used only within the same assembly.
+- Consider `static` classes for stateless utility functions.
+- Implement proper interfaces for services that need dependency injection.
 
 ### Documentation and communication
 
 **Update documentation when refactoring**:
 
-- Add XML comments explaining the purpose and usage of new helper methods
-- Update existing class comments to reference where logic has moved
-- Consider adding inline comments like `// Validation logic moved to ValidationService.ValidateEmail()`
-- Update any architectural documentation or coding standards
+- Add XML comments explaining the purpose and usage of new helper methods.
+- Update existing class comments to reference where logic has moved.
+- Consider adding inline comments like `// Validation logic moved to ValidationService.ValidateEmail()`.
+- Update any architectural documentation or coding standards.
 
 **Remember**: Code refactoring is iterative. You might start with a simple helper function, then later realize it belongs in a more structured service class as the project grows. The goal is continuous improvement, not perfection on the first attempt.
 
@@ -267,15 +267,15 @@ Be alert to these indicators of problematic consolidation:
 
 **Automated monitoring**:
 
-- Configure static analysis tools to track duplication metrics
-- Set up quality gates in CI/CD pipelines
-- Monitor technical debt trends
+- Configure static analysis tools to track duplication metrics.
+- Set up quality gates in CI/CD pipelines.
+- Monitor technical debt trends.
 
 **Team practices**:
 
-- Schedule regular refactoring reviews
-- Document why certain duplications weren't consolidated
-- Establish clear guidelines for acceptable duplication levels
+- Schedule regular refactoring reviews.
+- Document why certain duplications weren't consolidated.
+- Establish clear guidelines for acceptable duplication levels.
 
 Remember: The goal isn't zero duplication, but maintainable, understandable code. Sometimes a small amount of duplication is preferable to a complex abstraction. Successful consolidation makes your codebase easier to work with, not just shorter.
 
