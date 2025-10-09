@@ -123,10 +123,10 @@ Change event streaming provides:
 
 Some of the key benefits of change event streaming include:
 
-1. **Reduced latency**: Direct streaming from transaction logs eliminates the need for intermediate storage
-2. **Lower resource usage**: Optimized I/O operations compared to CDC
-3. **Real-time AI integration**: Enable AI agents to process and react to data changes instantly
-4. **Scalable architecture**: Built to handle high-volume transaction environments
+- **Reduced latency**: Direct streaming from transaction logs eliminates the need for intermediate storage
+- **Lower resource usage**: Optimized I/O operations compared to CDC
+- **Real-time AI integration**: Enable AI agents to process and react to data changes instantly
+- **Scalable architecture**: Built to handle high-volume transaction environments
 
 ## Use developer tools and languages
 
@@ -144,7 +144,7 @@ The new Python driver for SQL Server 2025 offers:
 - Type hints for better IDE integration
 - Comprehensive error handling
 
-The following Python snippet shows how to perform an asynchronous query against a SQL Server database using Python. It uses the `mssql.async` library to establish a nonblocking connection with `connect('connection_string')`, ensuring efficient resource management with async with. Inside the connection, it creates a cursor, executes a SQL query using `SELECT TOP 10 * FROM Customers` asynchronously with `await cursor.execute()`, and retrieves all results using `await cursor.fetchall()`.
+The following Python snippet shows how to perform an asynchronous query against a SQL Server database using Python. It uses the `mssql.async` library to establish a nonblocking connection with `connect('connection_string')`, ensuring efficient resource management with async. Inside the connection, it creates a cursor, executes a SQL query using `SELECT TOP 10 * FROM Customers` asynchronously with `await cursor.execute()`, and retrieves all results using `await cursor.fetchall()`.
 
 ```python
 from mssql.async import connect
@@ -159,22 +159,22 @@ async with connect('connection_string') as conn:
 
 The [MSSQL extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql) now includes AI-powered features through GitHub Copilot integration:
 
-1. **Intelligent SQL generation**:
+- **Intelligent SQL generation**:
    - Complete SQL queries based on natural language descriptions
    - Suggest optimized query patterns
    - Generate database schema modifications
 
-2. **Smart schema exploration**:
+- **Smart schema exploration**:
    - AI-powered schema recommendations
    - Automatic relationship detection
    - Impact analysis for schema changes
 
-3. **Query optimization**:
+- **Query optimization**:
    - Performance improvement suggestions
    - Index recommendations
    - Execution plan analysis
 
-4. **ORM support**:
+- **ORM support**:
    - Generate Entity Framework migrations
    - Suggest model changes based on database schema
    - Create data access layer code

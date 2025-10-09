@@ -28,7 +28,7 @@ SQL Server 2025 offers editions to meet different requirements, with updates to 
 
 For a full list of capabilities for each edition, see [What's new in SQL Server 2025](/sql/sql-server/what-s-new-in-sql-server-2025).
 
-## Understand licensing for sql server 2025
+## Understand licensing for SQL Server 2025
 
 SQL Server 2025 paid editions are licensed per core, with options for Software Assurance (SA), and expanded support for pay-as-you-go and consumption-based models in Azure and hybrid environments.
 
