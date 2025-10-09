@@ -130,8 +130,6 @@ Before you can set up and run your pipeline, you need to give the Build service 
 
 ## Create the pipeline in Azure Pipelines
 
-You learned how to set up Azure Pipelines in an earlier module. If you need a refresher, head over to [Create a build pipeline with Azure Pipelines](/training/modules/create-a-build-pipeline?azure-portal=true).
-
 Here's how to set up a second pipeline to build the package, and upload that package to Azure Artifacts.
 
 1. From Azure DevOps, go to the **Space Game - web - Dependencies** project.

@@ -1,7 +1,5 @@
 In this unit, you'll practice the process of submitting a pull request and merging your changes into the `main` branch so that everyone can benefit from your work.
 
-In [Create a build pipeline with Azure Pipelines](/training/modules/create-a-build-pipeline?azure-portal=true), you created a Git branch named `build-pipeline`, where you defined a basic build pipeline for the *Space Game* website. Recall that your build definition is in a file named *azure-pipelines.yml*.
-
 Although your branch produces a build artifact, that work exists only on the `build-pipeline` branch. You need to merge your branch into the `main` branch.
 
 Recall that a *pull request* tells the other developers that you have code ready to review, if necessary, and you want your changes merged into another branch, such as the `main` branch.

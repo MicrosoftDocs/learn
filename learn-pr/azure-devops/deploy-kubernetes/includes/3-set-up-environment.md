@@ -84,8 +84,6 @@ Assigning work items provides you with a checklist to work from and gives other 
 
 In this step, you create the necessary Azure Kubernetes Service resources to deploy the new container version of the website.
 
-In the previous module, [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you used the Azure portal to create Azure resources. While the portal is useful for exploring Azure capabilities and performing basic tasks, creating components like Azure Kubernetes Service can be a time-consuming process.
-
 In this module, you use the Azure CLI to create the resources required to deploy and run your application on Azure Kubernetes Service. The Azure CLI can be accessed from a terminal or through Visual Studio Code. However, in this module, you access the Azure CLI from Azure Cloud Shell. Cloud Shell is a browser-based shell experience hosted in the cloud, which comes preconfigured with the Azure CLI for use with your Azure subscription.
 
 > [!IMPORTANT]

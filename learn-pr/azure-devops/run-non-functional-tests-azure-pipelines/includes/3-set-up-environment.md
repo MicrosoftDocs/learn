@@ -200,8 +200,6 @@ To add the variables:
 
 1. In Azure DevOps, go to your **Space Game - web - Nonfunctional tests** project.
 1. Under **Pipelines**, select **Library**.
-
-    :::image type="content" source="../../create-release-pipeline/media/5-pipelines-library.png" alt-text="Screenshot of Azure Pipelines, showing the Library menu option.":::
 1. Select **+ Variable group**.
 1. For the variable group name, under **Properties**, enter *Release*.
 1. Under **Variables**, select **+ Add**.
