@@ -56,7 +56,6 @@ subjects:
 modules:
 - learn.azdo.create-a-build-pipeline
 - learn.azdo.implement-code-workflow
-- learn.azdo.run-quality-tests-build-pipeline
 - learn.azdo.manage-build-dependencies
 - learn.azdo.host-build-agent
 trophy:
