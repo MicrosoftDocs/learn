@@ -3,18 +3,36 @@ In this exercise, you'll get hands-on experience with Unity Catalog by creating 
 
 ## Provision an Azure Databricks workspace
 
-> **Note**: If you already have an Azure Databricks workspace, you can skip this task and use your existing workspace.
+> **Tip**: If you already have an Azure Databricks workspace, you can skip this procedure and use your existing workspace.
 
-This exercise requires an Azure Databricks workspace in a subscription with sufficient quota for a single-node cluster and Unity Catalog enabled.
+This exercise includes a script to provision a new Azure Databricks workspace. The script attempts to create a Premium tier Azure Databricks workspace resource in a region in which your Azure subscription has sufficient quota for the compute cores required in this exercise; and assumes your user account has sufficient permissions in the subscription to create an Azure Databricks workspace resource.
 
-1. In the [Azure portal](https://portal.azure.com), create a new **Azure Databricks** resource with the following settings:
-   - **Subscription**: *Your Azure subscription*
-   - **Resource group**: *Create a new resource group*
-   - **Region**: *Any available region*
-   - **Name**: *A unique name for your workspace*
-   - **Pricing tier**: *Premium (required for Unity Catalog)*
+If the script fails due to insufficient quota or permissions, you can try to [create an Azure Databricks workspace interactively in the Azure portal](https://learn.microsoft.com/azure/databricks/getting-started/#--create-an-azure-databricks-workspace).
 
-2. When deployment is complete, go to your Azure Databricks resource and select **Launch Workspace**.
+1. In a web browser, sign into the [Azure portal](https://portal.azure.com) at `https://portal.azure.com`.
+2. Use the **[>_]** button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a **PowerShell** environment. The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
+
+    ![Azure portal with a cloud shell pane](https://microsoftlearning.github.io/mslearn-databricks/Instructions/Exercises/images/cloud-shell.png)
+
+    > **Note**: If you have previously created a cloud shell that uses a *Bash* environment, switch it to ***PowerShell***.
+
+3. Note that you can resize the cloud shell by dragging the separator bar at the top of the pane, or by using the **&#8212;**, **&#9723;**, and **X** icons at the top right of the pane to minimize, maximize, and close the pane. For more information about using the Azure Cloud Shell, see the [Azure Cloud Shell documentation](https://docs.microsoft.com/azure/cloud-shell/overview).
+
+4. In the PowerShell pane, enter the following commands to clone this repo:
+
+    ```
+    rm -r mslearn-databricks -f
+    git clone https://github.com/MicrosoftLearning/mslearn-databricks
+    ```
+
+5. After the repo has been cloned, enter the following command to run the **setup.ps1** script, which provisions an Azure Databricks workspace in an available region:
+
+    ```
+    ./mslearn-databricks/setup.ps1
+    ```
+
+6. If prompted, choose which subscription you want to use (this will only happen if you have access to multiple Azure subscriptions).
+7. Wait for the script to complete - this typically takes around 5 minutes, but in some cases may take longer. While you are waiting, review the [Implement Security and Access Control in Unity Catalog](https://learn.microsoft.com/training/modules/implement-security-unity-catalog) learn module in the Microsoft Learn.
 
 ## Create a cluster
 
@@ -38,17 +56,37 @@ Azure Databricks is a distributed processing platform that uses Apache Spark *cl
 
 > **Note**: If your cluster fails to start, your subscription may have insufficient quota in the region where your Azure Databricks workspace is provisioned. See [CPU core limit prevents cluster creation](https://docs.microsoft.com/azure/databricks/kb/clusters/azure-core-limit) for details. If this happens, you can try deleting your workspace and creating a new one in a different region.
 
-## Create a notebook
+## Create a Catalog
 
-You'll run code that uses the Spark MLlib library to train a machine learning model, so the first step is to create a new notebook in your workspace.
+1. Log in to a workspace that is linked to the metastore.
+2. Select **Catalog** from the left menu.
+3. Select **Catalogs** below **Quick access**.
+4. Select **Create catalog**.
+5. On the **Create a new catalog** dialog, enter a **Catalog name** and select the catalog **Type** that you want to create: **Standard catalog**.
+6. Specify a managed **Storage location**.
+
+## Create a Notebook
 
 1. In the sidebar, use the **(+) New** link to create a **Notebook**.
 
 2. Change the default notebook name (**Untitled Notebook *[date]***) to **Unity Catalog Lab** and in the **Connect** drop-down list, select your cluster if it is not already selected. If the cluster is not running, it may take a minute or so to start.
 
-## Task 1: Create and manage catalogs
+3. Copy and run the following code to a new cell in your notebook, in order to configure your working environment for this course. It will also set your default catalog to your specific catalog and the schema to the schema name shown below using the `USE` statements.
 
-In this task, you'll create a catalog and learn to work with the three-level namespace structure that Unity Catalog provides.
+    ```sql
+    USE CATALOG `<your catalog>`;
+    USE SCHEMA `default`;
+    ```
+
+4. Run the code below and confirm that your current catalog is set to your unique catalog name and that the current schema is default.
+
+    ```sql
+    SELECT current_catalog(), current_schema()
+    ```
+
+## Create and manage catalogs
+
+In this section, you'll create a catalog and learn to work with the three-level namespace structure that Unity Catalog provides.
 
 1. In the first cell of the notebook, enter the following code to create a new catalog:
 
@@ -59,7 +97,7 @@ In this task, you'll create a catalog and learn to work with the three-level nam
     COMMENT 'Catalog for Unity Catalog lab exercises';
     ```
 
-2. Run the cell using the **â–·** button to the left of the cell, or press **SHIFT + ENTER**.
+2. Run the cell using the **▷** button to the left of the cell, or press **SHIFT + ENTER**.
 
 3. Add a new cell and run the following code to set the catalog as your default:
 
@@ -79,7 +117,7 @@ In this task, you'll create a catalog and learn to work with the three-level nam
 
 5. Run the cell to confirm you're now using your new catalog.
 
-## Task 2: Create and manage schemas
+## Create and manage schemas
 
 Now you'll create schemas (databases) within your catalog to organize your data objects.
 
@@ -108,7 +146,7 @@ Now you'll create schemas (databases) within your catalog to organize your data 
     SELECT CURRENT_CATALOG() as current_catalog, CURRENT_SCHEMA() as current_schema;
     ```
 
-## Task 3: Create and populate data objects
+## Create and populate data objects
 
 You'll now create tables and populate them with sample data to demonstrate the three-level namespace.
 
@@ -160,7 +198,7 @@ You'll now create tables and populate them with sample data to demonstrate the t
     ORDER BY customer_count DESC;
     ```
 
-## Task 4: Create and work with views
+## Create and work with views
 
 Views in Unity Catalog work similarly to traditional SQL views but benefit from the unified governance model.
 
@@ -184,7 +222,7 @@ Views in Unity Catalog work similarly to traditional SQL views but benefit from 
     SELECT * FROM european_customers;
     ```
 
-## Task 5: Create user-defined functions
+## Create user-defined functions
 
 Unity Catalog also supports user-defined functions (UDFs) that can be shared across your organization.
 
@@ -212,7 +250,7 @@ Unity Catalog also supports user-defined functions (UDFs) that can be shared acr
     ORDER BY customer_id;
     ```
 
-## Task 6: Navigate the metastore with SQL commands
+## Navigate the metastore with SQL commands
 
 Unity Catalog provides powerful SQL commands to explore and understand your metastore structure.
 
@@ -264,7 +302,7 @@ Unity Catalog provides powerful SQL commands to explore and understand your meta
     DESCRIBE FUNCTION unity_lab_catalog.sales_data.format_customer_name;
     ```
 
-## Task 7: Explore system catalogs and information schema
+## Explore system catalogs and information schema
 
 Unity Catalog includes system catalogs that provide metadata about your entire metastore.
 
@@ -299,7 +337,7 @@ Unity Catalog includes system catalogs that provide metadata about your entire m
     AND schema_name = 'sales_data';
     ```
 
-## Task 8: Use the Catalog Explorer interface
+## Use the Catalog Explorer interface
 
 Unity Catalog also provides a graphical interface for exploring your metastore structure.
 
@@ -321,7 +359,7 @@ Unity Catalog also provides a graphical interface for exploring your metastore s
 
 7. Use the search functionality at the top of the Catalog Explorer to search for "customer" and see how Unity Catalog helps with data discovery.
 
-## Task 9: Understand data lineage (optional)
+## Understand data lineage (optional)
 
 If data lineage is available in your environment, you can explore how Unity Catalog tracks data relationships.
 
