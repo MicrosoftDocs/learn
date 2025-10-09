@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-10-eos-calculator-usage-guide.exercise-set-timeline-customize-results
+title: Exercise – set timeline and customize results
+metadata:
+  title: Exercise – Set Timeline And Customize Results
+  description: This content is part of the "Windows 10 EOS Calculator usage guide" module.
+  ms.date: 10/08/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-exercise-set-timeline-customize-results.md)]

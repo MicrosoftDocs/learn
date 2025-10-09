@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dpu.windows-10-eos-calculator-usage-guide
+title: Windows 10 EOS Calculator usage guide
+metadata:
+  title: Windows 10 EOS Calculator Usage Guide
+  description: Use the Windows 10 EOS Calculator to assess post-EOS exposure, test phased vs. accelerated timelines, and generate a clear plan for Windows 11
+  ms.date: 10/08/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module
+  ms.service: windows
+  ms.custom: CW110724-1
+summary: >
+  Use the Windows 10 EOS Calculator to assess post-EOS exposure, test phased vs. accelerated timelines, and generate a clear plan for Windows 11
+abstract: |2+
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+  - business-leader
+products:
+  - windows-10
+  - windows-11
+units:
+  - learn.dpu.windows-10-eos-calculator-usage-guide.introduction
+  - learn.dpu.windows-10-eos-calculator-usage-guide.assess-impact-windows-10-end-of-support-with-the-calculator
+  - learn.dpu.windows-10-eos-calculator-usage-guide.exercise-how-input-key-data-into-calculator
+  - learn.dpu.windows-10-eos-calculator-usage-guide.plan-customize-your-modernization-timeline
+  - learn.dpu.windows-10-eos-calculator-usage-guide.exercise-set-timeline-customize-results
+  - learn.dpu.windows-10-eos-calculator-usage-guide.knowledge-check
+  - learn.dpu.windows-10-eos-calculator-usage-guide.summary
+badge:
+  uid: learn.dpu.windows-10-eos-calculator-usage-guide.badge
