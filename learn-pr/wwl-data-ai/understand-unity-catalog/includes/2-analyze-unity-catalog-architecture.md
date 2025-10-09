@@ -1,4 +1,12 @@
-<!-- Intentionally no top-level heading (module include file). MD041 suppressed by design. -->
+<!-- Intentionally no toFor backward compatibility, each workspace still exposes its old Hive metThis makes it clear whether you're working in dev, staging, or prod, and avoids ambiguity.
+
+## Apply inheritance and security
+
+One of Unity Catalog's biggest advantages is **privilege inheritance**. Instead of setting permissions object by object, you assign them once at a higher level and Unity Catalog cascades them down:e as a special catalog called `hive_metastore`.
+
+## Explore the three-level namespace
+
+Traditional SQL environments expose two logical address components: `schema.object`. Unity Catalog inserts a third, higher organizational layer so every securable can be fully qualified as:el heading (module include file). MD041 suppressed by design. -->
 Unity Catalog is Azure Databricks' unified system for organizing, securing, and governing all of your data and AI assets.
 
 A useful way to think about it is like an address system. To reliably locate something, you use country, state, city, and street. Unity Catalog uses a similar idea with a three-level namespace that tells you exactly where a data or AI object lives and how it’s governed:
@@ -9,9 +17,9 @@ catalog.schema.object
 
 At the very top is the **metastore**, which defines the governance boundary for a region (one per Azure Databricks account per Azure region). Inside it are **catalogs**, then **schemas**, and finally your governed data and AI assets (tables, views, volumes, functions, and models).
 
-## Why the Metastore Matters
+## Understand metastore fundamentals
 
-Before Unity Catalog, each workspace in Databricks had its own Hive metastore, and permissions had to be managed separately. 
+Before Unity Catalog, each workspace in Databricks had its own Hive metastore, and permissions had to be managed separately.
 
 With Unity Catalog, you get a **shared metastore per Azure region**. This design centralizes governance while still respecting regional data residency rules (for example, all East US workspaces share one metastore, all West Europe workspaces share another).
 
@@ -24,7 +32,7 @@ The metastore plays four key roles:
 
 For backward compatibility, each workspace still exposes its old Hive metastore as a special catalog called `hive_metastore`.
 
-## Exploring the Three-Level Namespace
+## Explore the three-level namespace
 
 Traditional SQL environments expose two logical address components: `schema.object`. Unity Catalog inserts a third, higher organizational layer so every securable can be fully qualified as:
 
@@ -43,7 +51,7 @@ Metastore (region-level container)
 
 :::image type="content" source="../media/unity-catalog-object-model.png" alt-text="Unity Catalog object model showing metastore, catalogs, schemas, and governed objects" lightbox="../media/unity-catalog-object-model.png":::
 
-## Breaking Down the Levels
+## Break down the levels
 
 ### Catalogs
 
@@ -76,7 +84,7 @@ Objects are the assets inside schemas. Unity Catalog governs:
 
 Each layer refines governance scope: catalogs for broad domains or boundaries, schemas for logical groupings, and objects for the actual governed assets.
 
-## Working with Unity Catalog
+## Work with Unity Catalog
 
 You can set your working context by choosing a scope:
 
@@ -93,7 +101,7 @@ SELECT * FROM production.sales.customer_data;
 
 This makes it clear whether you’re working in dev, staging, or prod, and avoids ambiguity.
 
-## Inheritance and Security
+## Inheritance and security
 
 One of Unity Catalog’s biggest advantages is **privilege inheritance**. Instead of setting permissions object by object, you assign them once at a higher level and Unity Catalog cascades them down:
 

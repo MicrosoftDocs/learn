@@ -8,6 +8,6 @@ metadata:
   ms.author: theresai
   ms.topic: unit
 title: Explore data governance using Unity Catalog
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/1-explore-data-governance.md)]

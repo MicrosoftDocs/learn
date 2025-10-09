@@ -1,6 +1,6 @@
-Connecting to external storage and databases is a core capability that extends Unity Catalog's governance beyond your Databricks environment. Rather than copying data from Azure Data Lake Storage or Azure SQL Database into Unity Catalog, you can create governed connections that provide secure, auditable access to data in its original location. Unity Catalog serves as the foundation for all of these external connectivity capabilities. In this unit, we'll walk through four essential concepts: storage credentials, lakehouse federation, foreign catalogs & connections, and Delta Sharing.
+Connecting to external storage and databases is a core capability that extends Unity Catalog's governance beyond your Databricks environment. Rather than copying data into Unity Catalog, you can create governed connections that provide secure, auditable access to data in its original location. Unity Catalog supports connections to various external sources including cloud storage like Azure Data Lake Storage, relational databases such as Azure SQL Database, PostgreSQL, MySQL, and others, and some data platforms outside Azure. Unity Catalog serves as the foundation for all of these external connectivity capabilities. In this unit, we'll walk through four essential concepts: storage credentials, lakehouse federation, foreign catalogs & connections, and Delta Sharing.
 
-## Storage Credentials and External Locations
+## Explore storage credentials and external locations
 
 When Databricks interacts with cloud storage, it needs two things: a way to authenticate, and a definition of where the data lives. Storage credentials answer the how, by describing the authentication method Databricks should use. This could be an Azure Managed Identity, a service principal, or another supported mechanism. External locations answer the where, by linking a cloud storage path to a credential.
 
@@ -17,7 +17,7 @@ URL 'abfss://finance@mydatalake.dfs.core.windows.net/'
 WITH CREDENTIAL finance_cred;
 ```
 
-## Lakehouse Federation
+## Understand Lakehouse Federation
 
 Lakehouse Federation allows Databricks to query data where it already resides, without copying it into the lakehouse first. This is especially valuable when operational systems like Azure SQL Database contain important datasets that need to be combined with Delta tables in Databricks.
 
