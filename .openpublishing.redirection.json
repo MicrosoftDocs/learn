@@ -58295,102 +58295,102 @@
     },
     {
       "source_path": "learn-pr/azure-devops/create-a-build-pipeline/1-introduction.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/build/ci-build-git",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-a-build-pipeline/2-what-is-azure-pipelines.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/build/ci-build-git",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-a-build-pipeline/3-build-locally.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/build/ci-build-git",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-a-build-pipeline/4-plan-build-tasks.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/build/ci-build-git",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-a-build-pipeline/5-set-up-environment.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/build/ci-build-git",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-a-build-pipeline/6-create-the-pipeline.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/build/ci-build-git",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-a-build-pipeline/7-publish-build-result.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/build/ci-build-git",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-a-build-pipeline/8-build-multiple-configurations.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/build/ci-build-git",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-a-build-pipeline/9-clean-up-environment.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/build/ci-build-git",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-a-build-pipeline/10-summary.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/build/ci-build-git",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-a-build-pipeline/index.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/build/ci-build-git",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/build/ci-build-git",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-release-pipeline/1-introduction.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-release-pipeline/2-what-is-cd.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-release-pipeline/3-plan-release-pipeline.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-release-pipeline/4-set-up-environment.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-release-pipeline/5-deploy-to-appservice.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-release-pipeline/6-monitor-pipeline-health.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-release-pipeline/7-clean-up-environment.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-release-pipeline/8-summary.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure-devops/create-release-pipeline/index.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/release/define-multistage-release-process",
       "redirect_document_id": false
     },
     {
