@@ -1,8 +1,7 @@
 ### YamlMime:Module
 uid: learn.introduction-to-sql-server-2022
 metadata:
-  moduleType: build-your-first-using-product
-  title: Get Started with SQL Server 2025
+  title: Get started with SQL Server 2025
   description: "Learn about SQL Server 2025's new capabilities including AI integration, analytics improvements, developer features, and performance enhancements."
   ms.date: 10/06/2025
   author: JulianePadrao
