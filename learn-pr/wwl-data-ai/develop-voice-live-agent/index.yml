@@ -3,7 +3,7 @@ uid: learn.wwl.develop-voice-live-agent
 metadata:
   title: Develop an Azure AI Voice Live Agent
   description: "Learn how to develop an Azure AI Voice Live Agent using the Voice Live API and SDK."
-  ms.date: 10/7/2025
+  ms.date: 10/9/2025
   author: jeffkoms
   ms.author: jeffko
   ms.topic: module-standard-task-based

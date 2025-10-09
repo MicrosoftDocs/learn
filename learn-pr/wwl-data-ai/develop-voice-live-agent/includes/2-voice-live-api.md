@@ -52,7 +52,7 @@ Server events provide feedback and status updates:
 - `response.done`: Indicate response generation completion.
 - `conversation.item.created`: Notify when a new conversation item is added.
 
-For a full list of client/server events, visit [Voice live API Reference](/azure/ai-services/speech-service/voice-live-api-reference)
+For a full list of client/server events, visit [Voice live API Reference](/azure/ai-services/speech-service/voice-live-api-reference).
 
 > [!NOTE]
 > Proper handling of events ensures seamless interaction between client and server.
