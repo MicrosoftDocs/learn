@@ -1,7 +1,7 @@
 ### YamlMime:Module
-uid: learn.wwl.defender-for-cloud-ai-understand-protections
+uid: learn.wwl.defender-for-cloud-ai-protect-workloads
 metadata:
-  title: Understand how Microsoft Defender for Cloud supports AI security and governance in Azure
+  title: Protect AI workloads with Microsoft Defender for Cloud
   description: Understand how Microsoft Defender for Cloud strengthens AI security in Azure through posture management and integration with key governance and identity services.
   ms.date: 10/10/2025
   author: wwlpublish
@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ai-usage: ai-assisted
   ms.service: purview
-title: Understand how Microsoft Defender for Cloud supports AI security and governance in Azure
+title: Protect AI workloads with Microsoft Defender for Cloud
 
 summary: |
   Microsoft Defender for Cloud plays a central role in securing AI workloads across Azure. Learn how Microsoft Defender for Cloud supports AI security across Azure. Explore the layers of an AI workload, the unique risks AI systems introduce, and the guardrails that protect model inputs and outputs. See how Microsoft Purview, Microsoft Entra ID, and Azure AI Foundry work together to support a unified security and governance strategy.
@@ -40,13 +40,13 @@ subjects:
 - data-management
 - compliance
 units:
-- learn.wwl.defender-for-cloud-ai-understand-protections.introduction
-- learn.wwl.defender-for-cloud-ai-understand-protections.enable-ai-workload-plan
-- learn.wwl.defender-for-cloud-ai-understand-protections.data-ai-security-dashboard
-- learn.wwl.defender-for-cloud-ai-understand-protections.assess-improve-ai-posture
-- learn.wwl.defender-for-cloud-ai-understand-protections.detect-ai-threats
-- learn.wwl.defender-for-cloud-ai-understand-protections.investigate-ai-alerts-xdr
-- learn.wwl.defender-for-cloud-ai-understand-protections.knowledge-check
-- learn.wwl.defender-for-cloud-ai-understand-protections.summary
+- learn.wwl.defender-for-cloud-ai-protect-workloads.introduction
+- learn.wwl.defender-for-cloud-ai-protect-workloads.enable-ai-workload-plan
+- learn.wwl.defender-for-cloud-ai-protect-workloads.data-ai-security-dashboard
+- learn.wwl.defender-for-cloud-ai-protect-workloads.assess-improve-ai-posture
+- learn.wwl.defender-for-cloud-ai-protect-workloads.detect-ai-threats
+- learn.wwl.defender-for-cloud-ai-protect-workloads.investigate-ai-alerts-xdr
+- learn.wwl.defender-for-cloud-ai-protect-workloads.knowledge-check
+- learn.wwl.defender-for-cloud-ai-protect-workloads.summary
 badge:
-  uid: learn.wwl.defender-for-cloud-ai-understand-protections.badge
+  uid: learn.wwl.defender-for-cloud-ai-protect-workloads.badge

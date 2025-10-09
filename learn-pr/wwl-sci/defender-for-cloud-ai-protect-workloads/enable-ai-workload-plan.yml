@@ -1,1 +1,15 @@
-Enable the AI workloads plan
+### YamlMime:ModuleUnit
+uid: learn.wwl.defender-for-cloud-ai-protect-workloads.enable-ai-workload-plan
+title: Enable the AI workloads plan
+metadata:
+  title: Enable the AI workloads plan
+  description: "Enable the AI workloads plan."
+  ms.date: 10/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/enable-ai-workload-plan.md)]

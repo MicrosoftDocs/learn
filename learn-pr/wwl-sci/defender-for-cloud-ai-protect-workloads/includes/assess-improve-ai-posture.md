@@ -12,13 +12,16 @@ To view AI workloads in your environment:
 1. Search for and select **Microsoft Defender for Cloud**.
 1. Under **General**, select **Cloud Security Explorer**.
 1. Select **AI workloads and models in use** query template, then select **Open query**.
-1. Select **Search** to run the query and view the results.
 
    :::image type="content" source="../media/ai-workload-query.png" alt-text="Screenshot showing the AI workloads and models in use query template in Cloud Security Explorer." lightbox="../media/ai-workload-query.png":::
 
-   Each result represents a discovered AI workload, including details about its model, data source, and resource group. Selecting a result opens a detailed view with model metadata and configuration context.
+1. Select **Search** to run the query and view the results.
 
    :::image type="content" source="../media/result-details.png" alt-text="Screenshot showing AI workload results with one workload selected and details displayed." lightbox="../media/result-details.png":::
+
+Each result represents a discovered AI workload, including details about its model, data source, and resource group. Selecting a result opens a detailed view with model metadata and configuration context.
+
+You can also use other AI-related query templates to identify risks earlier in the development process. For example, **Generative AI vulnerable code repositories that provision Azure OpenAI** helps you find code repositories with known vulnerabilities that could expose model configurations or API keys. Together, these queries give you visibility into both deployed AI workloads and the code that supports them.
 
 Use these details to confirm that sensitive or regulated data isn't exposed through public access or unsecured endpoints.
 
@@ -39,8 +42,8 @@ CSPM generates security recommendations that identify configuration weaknesses a
 | **Identity and access** | Require managed identities for AI services instead of static keys. |
 | **Network exposure** | Restrict public endpoints and use private links where possible. |
 | **Data protection** | Enable encryption at rest for all storage and datasets.|
-| **Dependencies**  | Update vulnerable AI frameworks or libraries. |
+| **Dependencies** | Update vulnerable AI frameworks or libraries. |
 
 Remediating these findings improves the overall security posture of your AI workloads and reduces exposure risk across your environment.
 
-CSPM connects discovery to action. It gives you visibility into your deployed AI workloads, highlights where configuration issues exist, and provides guidance for correcting them. By applying these recommendations, you can strengthen how your organization secures and manages its AI resources before moving on to runtime threat protection.
+CSPM connects discovery to action. It gives you visibility into your deployed AI workloads, highlights where configuration issues exist, and provides guidance for correcting them. By applying these recommendations, you’ve addressed configuration risks and improved your AI posture. The next step is protecting workloads while they’re active with **Cloud Workload Protection (CWP)**.

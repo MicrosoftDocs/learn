@@ -1,1 +1,15 @@
-Review (or interpret) insights in the Data & AI security dashboard - 4
+### YamlMime:ModuleUnit
+uid: learn.wwl.defender-for-cloud-ai-protect-workloads.data-ai-security-dashboard
+title: Review insights in the Data & AI security dashboard
+metadata:
+  title: Review insights in the Data & AI security dashboard
+  description: "Review insights in the Data & AI security dashboard."
+  ms.date: 10/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/data-ai-security-dashboard.md)]

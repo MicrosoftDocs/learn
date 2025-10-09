@@ -50,9 +50,9 @@ The **Alert details** page shows:
 
    :::image type="content" source="../media/alert-detail-page.png" alt-text="Screenshot showing the Alert details page in Defender for Cloud for an AI phishing attempt, including model name, malicious URL, and investigation steps." lightbox="../media/alert-detail-page.png":::
 
-   Use the **Take action** menu to start guided response steps, such as changing an alert's status, creating an automation rule, or triggering a Logic App playbook for remediation. Playbooks can automatically quarantine affected resources, disable compromised credentials, or send notifications in Microsoft Teams or ServiceNow.
+Use the **Take action** menu to start guided response steps, such as changing an alert's status, creating an automation rule, or triggering a Logic App playbook for remediation. Playbooks can automatically quarantine affected resources, disable compromised credentials, or send notifications in Microsoft Teams or ServiceNow.
 
-   :::image type="content" source="../media/take-action-menu.png" alt-text="Screenshot of the Take action tab in Defender for Cloud showing options to inspect logs, mitigate the threat, prevent future attacks, trigger a Logic App, and suppress similar alerts." lightbox="../media/take-action-menu.png":::
+:::image type="content" source="../media/take-action-menu.png" alt-text="Screenshot of the Take action tab in Defender for Cloud showing options to inspect logs, mitigate the threat, prevent future attacks, trigger a Logic App, and suppress similar alerts." lightbox="../media/take-action-menu.png":::
 
 ## Strengthen AI runtime protections
 
@@ -63,4 +63,4 @@ To improve threat coverage and reduce false positives, verify that the following
 - **Defender for Storage**: Detects malware or suspicious access in model and dataset repositories.
 - **Microsoft Defender XDR integration**: Correlates AI-specific alerts with other incidents for unified investigation.
 
-These integrations help Defender for Cloud detect suspicious activity across compute, data, and model services, providing the context needed to contain and remediate threats before they affect production workloads.
+These integrations help Defender for Cloud detect suspicious activity across compute, data, and model services, providing the context needed to contain and remediate threats before they affect production workloads. Once threats are detected, you can investigate them in **Microsoft Defender XDR** to trace related activity and coordinate response actions.
