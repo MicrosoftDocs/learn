@@ -60,7 +60,7 @@ quiz:
       explanation: "This event indicates session readiness, not user speech interruption."
   - content: "What is the recommended authentication method for production applications using the SDK?"
     choices:
-    - content: " API key authentication"
+    - content: "API key authentication"
       isCorrect: false
       explanation: "API key authentication isn't recommended for production applications."
     - content: "Microsoft Entra authentication with DefaultAzureCredential"
