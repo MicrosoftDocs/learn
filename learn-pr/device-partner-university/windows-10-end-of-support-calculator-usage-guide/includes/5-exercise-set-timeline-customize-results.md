@@ -47,11 +47,11 @@ In this exercise, you’ll practice setting your upgrade cadence, customizing sc
 1. Expand data and download your personalized report  
    1. Select **See full analysis** to review a dynamic summary of **Key Statistics** (ROI, payback, benefits, costs, NPV), **Cash Flows by quarter**, **Benefits & Costs breakdowns**, plus your **orgranziations characteristics** and **upgrade cadence** tables.
    
-   :::image type="content" border="true" source="../media/select-see-full-analysis.png" alt-text="Screenshot showing the real time data results with the additional options in Microsoft Windows 10 EOS Calculator.":::  
+   :::image type="content" border="true" source="../media/select-see-full-analysis.png" alt-text="Screenshot showing the see full anyalysis button in the Microsoft Windows 10 EOS Calculator.":::  
 
    1. Use **Download personalized analysis (PDF)** to export charts, tables, and side-by-side scenario comparisons for stakeholders.
     
-   :::image type="content" border="true" source="../media/full-analysis.png" alt-text="Screenshot of the full analysis screen of the Microsoft Windows 10 EOS Calculator with the options to selected the Download personalized analysis button, also showing examples datas and graphs." lightbox="../media/afull-analysis-expanded.png":::
+   :::image type="content" border="true" source="../media/full-analysis.png" alt-text="Screenshot of the full analysis screen of the Microsoft Windows 10 EOS Calculator with the options to selected the Download personalized analysis button, also showing examples datas and graphs." lightbox="../media/full-analysis-expanded.png":::
 
 > [!TIP]  
 > Use the **Update inputs** button to refine your data and regenerate the report. This makes it easy to iterate and align with changing assumptions or stakeholder feedback.

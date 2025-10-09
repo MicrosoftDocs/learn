@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.windows-10-eos-calculator-usage-guide.knowledge-check
+uid: learn.dpu.windows-10-end-of-support-calculator-usage-guide.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge Check
@@ -16,13 +16,13 @@ quiz:
     choices:
         - content: "Purchase Extended Security Updates for Windows 10"
           isCorrect: false
-          explanation: "Incorrect. The calculator helps assess ESU costs but does not facilitate purchases."
+          explanation: "Incorrect. The calculator helps assess ESU costs but doesn't facilitate purchases."
         - content: "Estimate costs, risks, and benefits of upgrading to Windows 11"
           isCorrect: true
           explanation: "Correct. It models financial and operational impacts of modernization."
         - content: "Install Windows 11 on unsupported devices"
           isCorrect: false
-          explanation: "Incorrect. The calculator does not perform installations or bypass hardware limitations."
+          explanation: "Incorrect. The calculator doesn't perform installations or bypass hardware limitations."
         - content: "Replace outdated hardware automatically"
           isCorrect: false
           explanation: "Incorrect. Hardware replacement decisions are informed by the tool but not executed by it."
@@ -44,13 +44,13 @@ quiz:
     choices:
         - content: "Reduced cloud storage"
           isCorrect: false
-          explanation: "Incorrect. Cloud storage is not impacted by upgrade delays."
+          explanation: "Incorrect. Cloud storage isn't impacted by upgrade delays."
         - content: "Increasing ESU costs year over year"
           isCorrect: true
           explanation: "Correct. ESU prices double annually and are cumulative."
         - content: "Free device replacements"
           isCorrect: false
-          explanation: "Incorrect. Device upgrades incur costs and are not free."
+          explanation: "Incorrect. Device upgrades incur costs and aren't free."
         - content: "Lower employee salaries"
           isCorrect: false
           explanation: "Incorrect. Salaries are used in modeling but not affected by upgrade timing."
@@ -58,7 +58,7 @@ quiz:
     choices:
         - content: "Real-time device diagnostics"
           isCorrect: false
-          explanation: "Incorrect. The calculator does not analyze device performance directly."
+          explanation: "Incorrect. The calculator doesn't analyze device performance directly."
         - content: "User reviews and feedback"
           isCorrect: false
           explanation: "Incorrect. It relies on structured research, not anecdotal input."
@@ -67,7 +67,7 @@ quiz:
           explanation: "Correct. Estimates are based on TEI methodology and organizational inputs."
         - content: "Microsoft’s internal upgrade logs"
           isCorrect: false
-          explanation: "Incorrect. Internal logs are not part of the calculator’s data sources."
+          explanation: "Incorrect. Internal logs aren't part of the calculator’s data sources."
   - content: "What is one benefit of upgrading to Windows 11 Pro?"
     choices:
         - content: "Free access to all Microsoft apps"
@@ -81,4 +81,4 @@ quiz:
           explanation: "Correct. Windows 11 Pro includes modern security enhancements."
         - content: "Guaranteed 10-year support"
           isCorrect: false
-          explanation: "Incorrect. Support timelines vary and are not guaranteed for 10 years."
+          explanation: "Incorrect. Support timelines vary and aren't guaranteed for 10 years."

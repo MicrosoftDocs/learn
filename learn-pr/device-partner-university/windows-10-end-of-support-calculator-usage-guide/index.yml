@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.dpu.windows-10-eos-calculator-usage-guide
+uid: learn.dpu.windows-10-end-of-support-calculator-usage-guide
 title: Windows 10 EOS Calculator usage guide
 metadata:
   title: Windows 10 EOS Calculator Usage Guide
@@ -30,12 +30,12 @@ products:
   - windows-10
   - windows-11
 units:
-  - learn.dpu.windows-10-eos-calculator-usage-guide.introduction
-  - learn.dpu.windows-10-eos-calculator-usage-guide.assess-impact-windows-10-end-of-support-with-the-calculator
-  - learn.dpu.windows-10-eos-calculator-usage-guide.exercise-how-input-key-data-into-calculator
-  - learn.dpu.windows-10-eos-calculator-usage-guide.plan-customize-your-modernization-timeline
-  - learn.dpu.windows-10-eos-calculator-usage-guide.exercise-set-timeline-customize-results
-  - learn.dpu.windows-10-eos-calculator-usage-guide.knowledge-check
-  - learn.dpu.windows-10-eos-calculator-usage-guide.summary
+  - learn.dpu.windows-10-end-of-support-calculator-usage-guide.introduction
+  - learn.dpu.windows-10-end-of-support-calculator-usage-guide.assess-impact-windows-10-end-of-support-with-the-calculator
+  - learn.dpu.windows-10-end-of-support-calculator-usage-guide.exercise-how-input-key-data-into-calculator
+  - learn.dpu.windows-10-end-of-support-calculator-usage-guide.plan-customize-your-modernization-timeline
+  - learn.dpu.windows-10-end-of-support-calculator-usage-guide.exercise-set-timeline-customize-results
+  - learn.dpu.windows-10-end-of-support-calculator-usage-guide.knowledge-check
+  - learn.dpu.windows-10-end-of-support-calculator-usage-guide.summary
 badge:
-  uid: learn.dpu.windows-10-eos-calculator-usage-guide.badge
+  uid: learn.dpu.windows-10-end-of-support-calculator-usage-guide.badge
