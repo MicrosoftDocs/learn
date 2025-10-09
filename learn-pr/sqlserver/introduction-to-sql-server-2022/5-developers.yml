@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-sql-server-2022.developers
+title: Elevate developer productivity with tools and integrated services
+metadata:
+  title: Elevate developer productivity with tools and integrated services
+  description: "Learn about SQL Server 2025's developer enhancements including native JSON support, REST API integration, real-time event streaming, new Python driver, and AI-powered development with GitHub Copilot"
+  ms.date: 10/06/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-developers.md)]
