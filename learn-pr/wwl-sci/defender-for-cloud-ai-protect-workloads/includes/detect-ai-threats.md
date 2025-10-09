@@ -2,6 +2,10 @@ Configuration hardening reduces risk before deployment, but active workloads nee
 
 CWP helps identify and respond to threats such as malicious prompt injections, data exfiltration attempts, or compromised containers. These threats can manipulate AI models or expose sensitive data. It complements the AI workloads plan by protecting the operational layer of your AI ecosystem. For example, if a malicious prompt or injected command targets an AI model, CWP can detect the behavior in real time and generate an alert with details about the affected resource.
 
+:::image type="content" source="../media/threat-protection-ai.png" alt-text="Diagram showing how Defender for Cloud enables, detects, and responds to AI-specific attacks such as prompt injection, data exfiltration, and model hijacking, with alerts investigated in Microsoft XDR." lightbox="../media/threat-protection-ai.png":::
+
+Defender for Cloud provides built-in AI threat protection that detects prompt injection, data exfiltration, and model hijacking attempts, and integrates with Microsoft XDR for investigation.
+
 ## Detect threats in AI environments
 
 CWP continuously analyzes runtime signals from virtual machines, containers, and managed AI services. For AI workloads, it correlates these signals with AI-specific threat intelligence to identify suspicious behavior, including:

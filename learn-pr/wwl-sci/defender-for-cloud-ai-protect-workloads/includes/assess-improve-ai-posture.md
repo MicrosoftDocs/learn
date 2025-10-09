@@ -2,6 +2,12 @@ As your AI environment grows, new models, data connections, and services increas
 
 The AI workloads plan you enabled earlier feeds its discovery results into CSPM. From there, you can use tools like **Cloud Security Explorer** and **attack path analysis** to locate misconfigurations that could expose sensitive data or disrupt model performance.
 
+The diagram illustrates where Cloud Security Posture Management fits within Defender for Cloud's lifecycle coverage, linking development and runtime protection.
+
+:::image type="content" source="../media/defender-cloud-ai-lifecycle.png" alt-text="Diagram showing how Microsoft Defender for Cloud aligns protections across the AI development lifecycle and runtime through Cloud Ops Security (DevOps), Cloud Security Posture Management (CSPM), and Cloud Threat Protection (CWP).":::
+
+Defender for Cloud connects development, posture, and runtime protection to provide end-to-end coverage for AI workloads.
+
 ## Discover AI workloads and assess posture
 
 CSPM automatically builds an **AI Bill of Materials (AI BOM)** that maps deployed AI models, datasets, and related services. This inventory lets you confirm where AI workloads are running and whether they align with your organization's security requirements.
@@ -29,6 +35,8 @@ Use these details to confirm that sensitive or regulated data isn't exposed thro
 
 Defender for Cloud uses **attack path analysis** to connect related configuration risks across resources. This feature visualizes potential routes an attacker could exploit to reach sensitive AI data or services, like exposed storage accounts or unprotected endpoints that feed AI models.
 
+The diagram illustrates where Cloud Security Posture Management fits within Defender for Cloud's lifecycle coverage, linking development and runtime protection.
+
 :::image type="content" source="../media/attack-path-diagram.png" alt-text="Diagram showing connected resources with internet exposure and storage accounts containing sensitive data, representing an attack path to AI workloads." lightbox="../media/attack-path-diagram.png":::
 
 Attack paths help you focus on the issues that matter most by showing how individual misconfigurations are linked.
@@ -46,4 +54,4 @@ CSPM generates security recommendations that identify configuration weaknesses a
 
 Remediating these findings improves the overall security posture of your AI workloads and reduces exposure risk across your environment.
 
-CSPM connects discovery to action. It gives you visibility into your deployed AI workloads, highlights where configuration issues exist, and provides guidance for correcting them. By applying these recommendations, you’ve addressed configuration risks and improved your AI posture. The next step is protecting workloads while they’re active with **Cloud Workload Protection (CWP)**.
+CSPM connects discovery to action. It gives you visibility into your deployed AI workloads, highlights where configuration issues exist, and provides guidance for correcting them. By applying these recommendations, you've addressed configuration risks and improved your AI posture. The next step is protecting workloads while they're active with **Cloud Workload Protection (CWP)**.

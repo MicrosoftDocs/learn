@@ -2,11 +2,13 @@ AI workloads often rely on multiple connected services, including models in Azur
 
 The **AI workloads plan** in Microsoft Defender for Cloud automatically identifies AI assets across your cloud environments and builds an inventory that shows how data, models, and services connect. This discovery process creates the foundation for assessing and protecting your AI environment.
 
-:::image type="content" source="../media/defender-cloud-ai-lifecycle.png" alt-text="Diagram showing the Defender for Cloud protection model across the development lifecycle and runtime protection. It includes Cloud Ops Security (DevOps), Cloud Security Posture Management (CSPM), and Cloud Workload Protection (CWPP).":::
+Defender for Cloud extends protection across the AI lifecycle. It helps you:
 
-Defender for Cloud aligns protections across the full lifecycle of an AI workload. Cloud Ops Security addresses risks during development, Cloud Security Posture Management (CSPM) focuses on configuration and posture, and Cloud Workload Protection (CWPP) detects runtime threats.
+- Address risks during development
+- Evaluate configuration and posture
+- Detect runtime threats through integrated security capabilities
 
-Enabling the AI workloads plan is the first step in protecting AI environments. Turning it on allows Defender for Cloud to discover AI resources across clouds and begin building the inventory that later supports posture management and threat detection.
+Enabling the AI workloads plan is the first step in protecting AI environments. Once it's turned on, Defender for Cloud begins discovering AI resources and building the inventory that supports posture management and threat detection.
 
 ## Turn on the AI workloads plan
 
