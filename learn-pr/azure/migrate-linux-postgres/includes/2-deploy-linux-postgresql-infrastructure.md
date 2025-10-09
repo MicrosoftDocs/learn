@@ -20,7 +20,7 @@ The Bicep template in this module utilizes [Azure Verified Modules (AVM)](https:
 
 ## Ensure that you have an Azure subscription and the Azure CLI
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 This module requires Azure CLI version 2.0.30 or later. Find the version by using the following command:
 
