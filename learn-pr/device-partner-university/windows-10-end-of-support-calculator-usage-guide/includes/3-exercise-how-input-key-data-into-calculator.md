@@ -10,7 +10,7 @@ The interface is split into two sections:
 1. Access the calculator 
    1. Visit **[Windows 10 EOS Calculator](https://tei.forrester.com/go/microsoft/windows10eos/)**.  
    
-   :::image type="content" border="true" source="../media/windows-10-eos-calculator.png" alt-text="Screenshot of the interactive Microsoft Windows 10 EOS Calculator showing examples and input fields and comparative results for upgrade timelines." lightbox="../media/windows-10-eos-calculator-expanded.png":::
+   :::image type="content" border="true" source="../media/windows-10-end-of-support-calculator.png" alt-text="Screenshot of the interactive Microsoft Windows 10 EOS Calculator showing examples and input fields and comparative results for upgrade timelines." lightbox="../media/windows-10-end-of-support-calculator-expanded.png":::
 
 2. Select your organization’s currency 
    1. In the **select currency** button choose USD, EUR, GBP, or another currency so local values are reflected. The calculator handles exchange rates automatically.
@@ -35,7 +35,7 @@ The interface is split into two sections:
 6. Review initial results  
    1. The right pane updates with projected ROI, estimated ESU costs, and potential savings from upgrading.
    
-   :::image type="content" border="true" source="../media/review-intial-results.png" alt-text="Screenshot showing the real time date of results entered into the Microsoft Windows 10 EOS Calculator.":::
+   :::image type="content" border="true" source="../media/review-initial-results.png" alt-text="Screenshot showing the real time date of results entered into the Microsoft Windows 10 EOS Calculator.":::
 
 > [!TIP]
 > If you don’t have an exact device count, start with a conservative estimate. You can refine values later and compare the differences.

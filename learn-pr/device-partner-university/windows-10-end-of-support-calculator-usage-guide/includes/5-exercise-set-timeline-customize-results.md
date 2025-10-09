@@ -28,7 +28,7 @@ In this exercise, you’ll practice setting your upgrade cadence, customizing sc
       - Whether updates are managed with a Microsoft cloud solution
    1. Review and adjust any default values to match your organization for more accurate results.
    
-      :::image type="content" border="true" source="../media/additonal-options-opened.png" alt-text="Screenshot of the Microsoft Windows 10 EOS Calculator with the additonal options selected showing examples and input fields and comparative results for upgrade timelines." lightbox="../media/additonal-options-opened-expanded.png":::
+      :::image type="content" border="true" source="../media/additional-options-opened.png" alt-text="Screenshot of the Microsoft Windows 10 EOS Calculator with the additonal options selected showing examples and input fields and comparative results for upgrade timelines." lightbox="../media/additional-options-opened-expanded.png":::
 
    > [!TIP]
    > If you have both cloud-managed and on-premises devices, model them separately for more precise insights.
