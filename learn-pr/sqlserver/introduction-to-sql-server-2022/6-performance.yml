@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-sql-server-2022.performance
+title: Maximize performance to drive speed and efficiency
+metadata:
+  title: Maximize performance to drive speed and efficiency
+  description: "Discover SQL Server 2025's intelligent query processing features, including AI-driven query optimization, Parameter Sensitive Plan improvements, enhanced Query Store capabilities, and advanced resource governance"
+  ms.date: 10/06/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-performance.md)]
