@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
   ms.service: azure-ai-speech
-title: Develop an Azure AI Voice Live Agent
+title: Develop an Azure AI Voice Live agent
 summary: "Learn how to develop an Azure AI Voice Live agent using the Voice Live API and SDK. This module covers the fundamentals of the Voice Live platform, including API integration, SDK usage, and building conversational AI agents."
 abstract: |
   After completing this module, you'll be able to: 
