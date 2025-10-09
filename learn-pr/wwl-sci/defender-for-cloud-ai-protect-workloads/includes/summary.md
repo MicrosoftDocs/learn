@@ -8,4 +8,6 @@ In this module, you learned how to:
 - Detect runtime threats such as prompt injections or data exfiltration with CWP
 - Investigate AI-related alerts and incidents in Microsoft Defender XDR
 
-Through posture management, runtime detection, and investigation capabilities, Defender for Cloud gives you the visibility and control to identify, contain, and resolve AI security issues quickly. The next time a developer leaves a model endpoint exposed, you’ll have the tools to detect it, understand the risk, and respond effectively.
+Through posture management, runtime detection, and investigation capabilities, Defender for Cloud gives you the visibility and control to identify, contain, and resolve AI security issues quickly. The next time a developer leaves a model endpoint exposed, you'll have the tools to detect it, understand the risk, and respond effectively.
+
+## Resources

@@ -2,7 +2,7 @@
 uid: learn.wwl.defender-for-cloud-ai-protect-workloads
 metadata:
   title: Protect AI workloads with Microsoft Defender for Cloud
-  description: Understand how Microsoft Defender for Cloud strengthens AI security in Azure through posture management and integration with key governance and identity services.
+  description: Learn how Microsoft Defender for Cloud extends protection to AI workloads across Azure. See how it discovers AI resources, assesses configuration risks, detects active threats, and integrates with Microsoft Defender XDR for unified investigation and response.
   ms.date: 10/10/2025
   author: wwlpublish
   ms.author: riswinto
@@ -12,21 +12,23 @@ metadata:
 title: Protect AI workloads with Microsoft Defender for Cloud
 
 summary: |
-  Microsoft Defender for Cloud plays a central role in securing AI workloads across Azure. Learn how Microsoft Defender for Cloud supports AI security across Azure. Explore the layers of an AI workload, the unique risks AI systems introduce, and the guardrails that protect model inputs and outputs. See how Microsoft Purview, Microsoft Entra ID, and Azure AI Foundry work together to support a unified security and governance strategy.
+  Microsoft Defender for Cloud helps secure AI workloads by combining discovery, posture management, and runtime protection in one platform.
+  You'll learn how to enable the AI workloads plan, review insights in the Data & AI security dashboard, assess posture using Cloud Security Posture Management (CSPM), detect runtime threats with Cloud Workload Protection (CWP), and investigate incidents in Microsoft Defender XDR.
+  These capabilities work together to identify configuration gaps, detect suspicious behavior, and provide end-to-end visibility across your AI environments.
 
 abstract: |
   In this module, you learn to:
-  - Identify the layers that make up AI workloads in Azure
-  - Recognize security risks unique to AI, including prompt injection, data leakage, and model misuse
-  - Explain how Azure AI Foundry provides guardrails and observability for AI models
-  - Describe how Microsoft Defender for Cloud, Microsoft Purview, and Microsoft Entra ID work together to secure and govern AI workloads
-  - Summarize how these services align to create a unified, defense-in-depth strategy for AI security in Azure
+  - Enable and configure the AI workloads plan in Microsoft Defender for Cloud
+  - Review AI resource insights in the Data & AI security dashboard
+  - Assess and improve AI posture with Cloud Security Posture Management (CSPM)
+  - Detect and respond to runtime threats using Cloud Workload Protection (CWP)
+  - Investigate AI-related alerts and incidents in Microsoft Defender XDR
 
 prerequisites: |
   Before starting, you should have:
-  - Experience securing workloads and data in Azure  
-  - Familiarity with concepts such as identity and access management, network isolation, and cloud security posture management (CSPM)  
-  - Basic understanding of how AI workloads use Azure services such as Azure OpenAI or Azure AI Search  
+  - Experience managing Microsoft Defender for Cloud plans and Azure configurations
+  - Familiarity with Azure AI services such as Azure AI Foundry, Azure OpenAI, or Azure Machine Learning
+  - Basic understanding of threat detection, incident response, and cloud security posture management (CSPM)
 
 iconUrl: /training/achievements/generic-badge.svg
 levels:

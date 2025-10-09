@@ -1,0 +1,93 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.defender-for-cloud-ai-protect-workloads.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check."
+  ms.date: 10/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "After discovering that an AI model endpoint was left publicly accessible, what's the first step the Contoso security team should take to begin assessing AI-related risks in Microsoft Defender for Cloud?"
+    choices:
+    - content: "Enable the AI workloads plan to discover AI services and configurations across the environment."
+      isCorrect: true
+      explanation: "Correct: Enabling the AI workloads plan allows Defender for Cloud to automatically discover AI resources and build the foundation for posture assessment and threat detection."
+    - content: "Enable Defender for Storage to scan data repositories for malware."
+      isCorrect: false
+      explanation: "Incorrect: Defender for Storage protects data storage but doesn't provide visibility into overall AI workload configuration."
+    - content: "Use Cloud Workload Protection (CWP) to detect runtime threats."
+      isCorrect: false
+      explanation: "Incorrect: CWP focuses on detecting runtime threats after workloads are active. Discovery and posture assessment begin with the AI workloads plan."
+    - content: "Create an automation rule in Microsoft Defender XDR to handle alerts."
+      isCorrect: false
+      explanation: "Incorrect: Automation rules in Defender XDR help with response, not discovery or posture management."
+
+  - content: "After enabling the AI workloads plan, the team reviews the **Data & AI security** dashboard and sees an exposed storage account linked to the AI model. Which Defender for Cloud feature should they use next to analyze and fix configuration issues?"
+    choices:
+    - content: "Cloud Workload Protection (CWP)"
+      isCorrect: false
+      explanation: "Incorrect: CWP detects runtime threats, not configuration risks."
+    - content: "Cloud Security Posture Management (CSPM)"
+      isCorrect: true
+      explanation: "Correct: CSPM provides recommendations and attack path analysis to identify and remediate misconfigurations such as public endpoints or exposed storage accounts."
+    - content: "Azure Policy"
+      isCorrect: false
+      explanation: "Incorrect: Azure Policy enforces configuration standards but doesn't perform the posture assessments CSPM provides."
+    - content: "Microsoft Defender XDR"
+      isCorrect: false
+      explanation: "Incorrect: Defender XDR aggregates alerts from multiple sources but doesn't assess resource posture."
+
+  - content: "While reviewing CSPM findings, the team wants to understand how exposed storage accounts and unsecured endpoints could be exploited together. Which Defender for Cloud capability provides this visualization?"
+    choices:
+    - content: "AI closer look"
+      isCorrect: false
+      explanation: "Incorrect: The AI closer look section summarizes AI discovery results but doesn't show attack path relationships."
+    - content: "Top issues panel"
+      isCorrect: false
+      explanation: "Incorrect: The Top issues panel summarizes key findings but doesn't visualize relationships between risks."
+    - content: "Attack path analysis"
+      isCorrect: true
+      explanation: "Correct: Attack path analysis connects related configuration risks across resources and shows potential routes attackers could take to reach sensitive AI assets."
+    - content: "Cloud Security Explorer"
+      isCorrect: false
+      explanation: "Incorrect: Cloud Security Explorer helps query data but doesn't map connected attack paths."
+
+  - content: "Later, Defender for Cloud detects suspicious behavior in the AI container and generates an alert for a possible prompt injection attempt. Which Defender for Cloud capability provides this detection?"
+    choices:
+    - content: "Microsoft Purview"
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Purview focuses on data governance and classification, not runtime detection."
+    - content: "Cloud Workload Protection (CWP)"
+      isCorrect: true
+      explanation: "Correct: CWP analyzes runtime activity and detects threats such as prompt injections, data exfiltration, or compromised containers affecting AI workloads."
+    - content: "Cloud Security Posture Management (CSPM)"
+      isCorrect: false
+      explanation: "Incorrect: CSPM identifies configuration risks, not runtime threats."
+    - content: "Data & AI security dashboard"
+      isCorrect: false
+      explanation: "Incorrect: The dashboard displays insights and findings but doesn't provide real-time threat detection."
+
+  - content: "The alert is correlated with other activity and surfaces as an incident in Microsoft Defender XDR. The team wants to confirm what triggered the alert. Where can they view the captured portion of the suspicious prompt?"
+    choices:
+    - content: "In Cloud Security Explorer"
+      isCorrect: false
+      explanation: "Incorrect: Cloud Security Explorer is used for querying configurations, not viewing alert evidence."
+    - content: "In Azure Policy"
+      isCorrect: false
+      explanation: "Incorrect: Azure Policy applies compliance rules but doesn't display evidence from security alerts."
+    - content: "In the Data & AI security dashboard"
+      isCorrect: false
+      explanation: "Incorrect: The dashboard summarizes posture findings but doesn't include captured prompt evidence."
+    - content: "In Microsoft Defender XDR under the Prompt Suspicious Segment field"
+      isCorrect: true
+      explanation: "Correct: Defender XDR displays the captured prompt segment from AI-related alerts, helping analysts identify malicious or manipulated inputs."
