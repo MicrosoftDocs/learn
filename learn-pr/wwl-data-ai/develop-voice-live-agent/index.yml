@@ -18,10 +18,9 @@ abstract: |
     - Develop and manage event handlers to create dynamic and interactive user experiences.
     - Build and deploy a Python-based web app with real-time voice interaction capabilities to Azure.
 prerequisites: |
-  Before beginning this module, you should have:
-    - Programming experience with languages such as Python, JavaScript, or C#.
-    - Familiarity with RESTful APIs and webhooks.
-    - Basic understanding of Azure services and cloud computing concepts.
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Familiarity with RESTful APIs and webhooks.
+  - Basic understanding of Azure services and cloud computing concepts.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate
