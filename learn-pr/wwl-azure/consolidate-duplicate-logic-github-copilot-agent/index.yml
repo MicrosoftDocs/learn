@@ -3,7 +3,7 @@ uid: learn.consolidate-duplicate-logic-github-copilot-agent
 metadata:
   title: Consolidate Duplicate Logic using GitHub Copilot Agent
   description: "This module teaches you how to identify and consolidate duplicate logic in your codebase using GitHub Copilot Agent. You'll learn best practices for refactoring duplicate code and improving code quality."
-  ms.date: 10/7/2025
+  ms.date: 10/17/2025
   author: cahowd
   ms.author: cahowd
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
@@ -31,12 +31,13 @@ subjects:
   - app-development
   - productivity
 units:
-- learn.consolidate-duplicate-logic-github-copilot-agent.introduction
-- learn.consolidate-duplicate-logic-github-copilot-agent.learning-content #TODO: Update filename when content is ready
-- learn.consolidate-duplicate-logic-github-copilot-agent.learning-content #TODO: Update filename when content is ready
-- learn.consolidate-duplicate-logic-github-copilot-agent.learning-content #TODO: Update filename when content is ready
-- learn.consolidate-duplicate-logic-github-copilot-agent.exercise #TODO: Update filename when content is ready
-- learn.consolidate-duplicate-logic-github-copilot-agent.knowledge-check
-- learn.consolidate-duplicate-logic-github-copilot-agent.summary
+  - learn.consolidate-duplicate-logic-github-copilot-agent.introduction
+  - learn.consolidate-duplicate-logic-github-copilot-agent.examine-negative-effects-code-duplication
+  - learn.consolidate-duplicate-logic-github-copilot-agent.examine-code-extraction-refactoring-techniques
+  - learn.consolidate-duplicate-logic-github-copilot-agent.identify-duplicate-code-github-copilot
+  - learn.consolidate-duplicate-logic-github-copilot-agent.refactor-duplicate-code-github-copilot-agent
+  - learn.consolidate-duplicate-logic-github-copilot-agent.exercise-consolidate-duplicate-code-github-copilot
+  - learn.consolidate-duplicate-logic-github-copilot-agent.knowledge-check
+  - learn.consolidate-duplicate-logic-github-copilot-agent.summary
 badge:
   uid: learn.consolidate-duplicate-logic-github-copilot-agent.badge

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.consolidate-duplicate-logic-github-copilot-agent.exercise-consolidate-duplicate-code-github-copilot
+title: Exercise - Consolidate duplicate code using GitHub Copilot
+metadata:
+  title: Exercise - Consolidate Duplicate Code using GitHub Copilot
+  description: "This exercise guides learners through the process of consolidating duplicate code logic in a C# codebase using GitHub Copilot's Ask and Agent modes."
+  ms.date: 10/17/2025
+  author: cahowd
+  ms.author: cahowd
+  ms.topic: unit
+  ms.service: github-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-exercise-consolidate-duplicate-code-github-copilot.md)]
