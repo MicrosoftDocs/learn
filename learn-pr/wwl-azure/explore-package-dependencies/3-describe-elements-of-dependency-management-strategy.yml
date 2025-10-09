@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-package-dependencies.describe-elements-of-dependency-management-strategy
-title: Describe elements of a dependency management strategy
+title: Describe Elements of a Dependency Management Strategy
 metadata:
-  title: Describe elements of a dependency management strategy
-  description: "Describe elements of a dependency management strategy"
-  ms.date: 05/07/2024
-  author: wwlpublish
+  title: Describe Elements of a Dependency Management Strategy
+  description: "Understand the key elements of a dependency management strategy including standardization, package formats, versioning, and source control integration."
+  ms.date: 10/09/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
-  [!include[](includes/3-describe-elements-of-dependency-management-strategy.md)]
+  [!include[](includes/3-describe-elements-of-dependency-management-strategy.md)]

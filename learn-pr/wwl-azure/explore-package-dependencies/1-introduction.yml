@@ -3,11 +3,11 @@ uid: learn.wwl.explore-package-dependencies.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction"
-  ms.date: 05/07/2024
-  author: wwlpublish
+  description: "Introduction to dependency management concepts, identifying dependencies, and understanding package componentization in modern software development."
+  ms.date: 10/09/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]
