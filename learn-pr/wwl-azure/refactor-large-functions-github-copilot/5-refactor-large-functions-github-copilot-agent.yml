@@ -9,6 +9,6 @@ metadata:
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot
-durationInMinutes: 8
+durationInMinutes: 7
 content: |
   [!include[](includes/4-learning-content.md)]
