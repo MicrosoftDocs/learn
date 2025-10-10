@@ -1,8 +1,6 @@
-A “large function” (or **Long Method**) is a function or method that tries to do too much. It often spans many lines of code and handles multiple tasks or concerns at once. In code smell terminology, it’s a bloater that usually violates the Single Responsibility Principle.
+A "large function" (or "long method") is a function or method that tries to do too much. It often spans many lines of code and handles multiple tasks or concerns at once.
 
-There’s no strict line count definition, but a common guideline is: **If a function exceeds ~20 lines, it’s a candidate for refactoring.**  
-
-Many teams set an even lower bar (e.g. 10 lines) as a rule of thumb for code reviews. Length correlates with complexity and maintainability issues.
+There’s no strict line count definition for a long method. The most common guidelines suggest using 40-50 lines as a threshold where you should consider scrutinizing. However, there are also guidelines that suggest a threshold of 20 lines.
 
 ## Why are large functions bad?
 
@@ -28,9 +26,6 @@ Large functions crop up in all kinds of applications. An expert developer will n
 
 Regardless of whether the function is in a UI layer, business logic layer, or a utility class, the problems of maintainability and readability persist.
 
-> **NOTE:**
-> The presence of comments or region blocks inside a function is a red flag. If you see a function with comments like `// validate inputs`, `// do X`, `// clean up`, etc., it’s a sign the function has multiple distinct sections of logic. Each of those sections could probably be a function of its own.
-
 ## Summary
 
-Large functions are not just an aesthetic issue – they slow down development and increase risk. In the next unit, we’ll learn how to recognize these monsters in your codebase (sometimes they hide in plain sight).
+Large functions are not just an aesthetic issue – they slow down development and increase risk. Large functions make it harder to understand, maintain, test, and reuse logic. By recognizing the signs of large functions and understanding their impact, developers can take steps to refactor them into smaller, single-purpose functions that are easier to work with.

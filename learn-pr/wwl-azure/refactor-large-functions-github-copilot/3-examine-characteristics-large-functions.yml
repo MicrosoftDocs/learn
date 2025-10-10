@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.refactor-large-functions-github-copilot.examine-characteristics-large-functions
+title: Examine the characteristics of large functions
+metadata:
+  title: Examine the Characteristics of Large Functions
+  description: "This unit covers the key characteristics of large functions, including code smells, common patterns, and metrics for identifying them. Understanding these aspects is crucial for effective refactoring and improving code quality."
+  ms.date: 10/17/2025
+  author: cahowd
+  ms.author: cahowd
+  ms.topic: unit
+  ms.service: github-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-examine-characteristics-large-functions.md)]

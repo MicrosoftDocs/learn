@@ -5,7 +5,7 @@
 
 ---
 
-# Unit 1: Understanding the Problem – Large Functions in Different Apps
+# Unit 1: Examine the impact of large functions
 
 ## What is a “large function”?
 
@@ -48,7 +48,7 @@ Large functions are not just an aesthetic issue – they slow down development a
 
 ---
 
-## Unit 2: Recognizing Large Functions (Manually)
+## Unit 2: Recognize Large Functions (Manually)
 
 ## Why manual recognition matters
 
