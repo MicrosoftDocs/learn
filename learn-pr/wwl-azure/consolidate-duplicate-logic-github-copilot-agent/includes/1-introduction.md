@@ -1,62 +1,20 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+GitHub Copilot can help developers consolidate duplicate logic in their code to improve maintainability and reduce redundancy. By identifying repeated patterns and suggesting refactoring opportunities, GitHub Copilot enables you to create cleaner, more efficient codebases.
 
-    Goal: orient the learner to the area covered in this module
+In this module, you learn how to use GitHub Copilot to identify and consolidate duplicate logic in your code. You explore techniques for recognizing code duplication patterns, extracting common functionality, and implementing DRY (Don't Repeat Yourself) principles with AI assistance.
 
-    Heading: none
+Imagine you're a software developer working on a large application that has evolved over time. Your codebase contains multiple instances of similar logic scattered across different files and modules. You need to refactor this duplicate code to improve maintainability, reduce bugs, and make future updates easier. You decide to use GitHub Copilot to help identify these duplications and suggest consolidated solutions.
 
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
+## Learning objectives
 
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
+By the end of this module, you'll be able to:
 
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
+- Identify duplicate logic patterns in code using GitHub Copilot.
+- Extract common functionality into reusable components with AI assistance.
+- Refactor duplicate code using GitHub Copilot's suggestions.
+- Apply DRY principles effectively with GitHub Copilot guidance.
+- Validate refactored code to ensure functionality is preserved.
 
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
+## Prerequisites
 
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
-
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main#images)
-
-    Optional: a "scenario video" that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
-## Example scenario
-TODO: add your scenario
-TODO: add a visual element
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
-
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
-## What will we be doing?
-TODO: add your activities
-
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
-
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
-## What is the main goal?
-By the end of this session, you'll be able to (TODO)
-
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+- Experience developing C# applications.
+- Experience using GitHub Copilot in Visual Studio Code.
