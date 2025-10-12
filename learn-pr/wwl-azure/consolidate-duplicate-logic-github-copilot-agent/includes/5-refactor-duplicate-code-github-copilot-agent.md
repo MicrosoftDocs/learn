@@ -1,10 +1,10 @@
-Agent Mode is a feature of GitHub Copilot Chat that allows developers to perform refactorings and code modifications with the assistance of AI. In Agent Mode, Copilot Chat can suggest code changes, automate repetitive tasks, and provide guidance for improving code quality. By leveraging Agent Mode, developers can streamline their refactoring process and enhance productivity.
+Agent Mode is a feature of GitHub Copilot Chat that allows developers to perform refactorings and code modifications with the assistance of AI. In Agent Mode, Copilot Chat can suggest code changes, automate repetitive tasks, and provide guidance for improving code quality. By using Agent Mode, developers can streamline their refactoring process and enhance productivity.
 
 ## Compare Ask and Agent modes
 
-While Ask mode focuses on analyzing code and providing insights, Agent Mode goes a step further by suggesting and performing code modifications. In Ask mode, developers can ask questions and receive answers, whereas in Agent Mode, developers can receive code suggestions and automate refactoring tasks. Both modes complement each other and can be used together to improve code quality.
+While Ask mode focuses on analyzing code and providing insights, Agent mode goes a step further by performing tasks that modify code autonomously. The two modes complement each other and can be used together to accelerate development and improve code quality.
 
-| Ask Mode (Q&A) | Agent Mode (Action) |
+| Ask mode (explanations) | Agent mode (actions) |
 |----------------|---------------------|
 | **Goal:** Answer questions, explain, advise. | **Goal:** Execute tasks (write code, refactor, etc.). |
 | **Scope:** Uses context from open files or provided text. No changes made. | **Scope:** Can access the whole workspace and make multiple changes across files. |
@@ -13,24 +13,22 @@ While Ask mode focuses on analyzing code and providing insights, Agent Mode goes
 
 ## Effective prompts for Agent mode
 
-To make the most of Agent Mode, developers should provide clear and specific prompts. For example, they can ask Agent Mode to "Consolidate duplicate code in this file" or "Refactor this function to improve readability." By providing detailed instructions, developers can guide Agent Mode to perform the desired refactorings and achieve the desired code quality improvements.
+To make the most of Agent mode, developers should provide clear and specific prompts. For example: "Extract the duplicate email validation logic from the UserService.ValidateEmail() and OrderService.ValidateCustomerEmail() methods. Create a shared EmailValidator.IsValid() method in a new EmailValidator class. Refactor the existing methods to use the new validator." By providing detailed instructions, developers can guide Agent mode to perform the desired refactorings and achieve the desired code quality improvements.
 
-Here is a list of best practices:
+Here's a list of best practices:
 
-- Be Specific: Tell it what to do and sometimes even how. e.g., “Create a new static class X with method Y that does Z.” The more precise your request, the closer the result will match your intention. Vague: “refactor duplicates” vs. Specific: “replace duplicate methods with calls to a new helper function.”
-- One Step at a Time: Although Agent can plan multi-step solutions, as learners it’s best to break tasks down. E.g., first create the helper, then separately remove duplicate code. This not only yields better control but also helps them digest changes incrementally.
-- Verify after Each Step: Encourage them to check the Diff or changes Copilot made. In VS Code, Copilot will often show the diff or list file changes in the chat. Review those like a code review. If something’s off, they can Undo (Ctrl+Z) or instruct Copilot to correct it.
-- Use Comments in Prompts: If needed, they can write a comment in code like // TODO: use OrderHelper here and then ask Copilot to help fix that TODO. Sometimes anchoring instructions in the code helps contextualize the change.
-- Limit Scope if Necessary: If the project were huge, you might open only certain folders or mention specific file names in the prompt to avoid undesired widespread changes. (Our case is small, so not an issue, but this is a pro tip for real scenarios.)
+- Be specific: Clearly specify what you need the agent to do. If you have a specific approach that you want the agent to use, describe it. Precisely phrased tasks generate better results.
 
-## Example refactoring walkthrough
+- One step at a time: GitHub Copilot Agent can plan multi-phase implementations for assigned tasks. However, breaking down large and complex tasks into smaller, more manageable tasks is a better approach. For example, rather than asking the agent to refactor an entire module, you can ask it to create a helper function in one task, then ask it to remove duplicate code and refactor the original methods in a subsequent task. Smaller tasks yield better control and help developers manage changes incrementally.
 
-Here's a walk through of a simple scenario to illustrate the flow of using Agent Mode for refactoring. Suppose you have a codebase with multiple instances of duplicate code for calculating discounts. In Agent Mode, you can ask Copilot Chat to identify and consolidate the duplicate code. Copilot Chat will analyze the code, suggest a refactored version, and provide step-by-step instructions for integrating the changes. By following the suggestions, developers can eliminate duplicate code and improve code maintainability.
+- Use comments in prompts: If needed, include comments in code like `// TODO: use OrderHelper here` and then ask Copilot to help fix that TODO. Sometimes anchoring instructions in the code helps contextualize the change.
+
+- Monitor progress and verify results: Monitor the agent's progress in the chat panel. If necessary, you can cancel the task. Once the agent completes the task, use the code editor to review each edit individually. GitHub Copilot displays a list of each updated file in the chat panel. Be sure to open each file and review the updates. Treat this process like a code review. If something’s off, you can ask the agent to fix it or make the changes manually. If the results aren't what you expected, you can always revert the changes and try again with a more specific prompt.
 
 ## When not to use Agent mode
 
-While Agent Mode is a powerful tool, there are situations where it is better to perform tasks manually. For complex refactorings or critical code changes, developers should rely on their expertise and judgment. Agent Mode is best suited for repetitive and straightforward refactoring tasks, where automation can save time and effort. By understanding the limitations of Agent Mode, developers can make informed decisions about when to use it and when to rely on manual refactoring.
+GitHub Copilot's Agent mode is a powerful tool that can accelerate your development process. However, there are situations where it's better to perform tasks manually. For complex refactorings or critical code changes, developers might find that they need to rely on their own expertise and judgment. Agent mode is best suited for repetitive and straightforward refactoring tasks, where automation can save time and effort. Understanding the limitations of Agent mode helps developers make informed decisions about when to use it and when to rely on their own expertise.
 
-## Reaping the benefits
+## Summary
 
-Using Agent Mode for refactoring offers several benefits. It saves time and effort by automating repetitive tasks, improves code quality by suggesting best practices, and enhances productivity by streamlining the refactoring process. By leveraging Agent Mode, developers can create cleaner, more maintainable code and focus on higher-level tasks that require their expertise.
+Using Agent mode for refactoring offers several benefits. It saves time and effort by automating repetitive tasks, improves code quality by suggesting best practices, and enhances productivity by streamlining the refactoring process. By using Agent mode, developers can create cleaner, more maintainable code and focus on higher-level tasks that require their expertise.

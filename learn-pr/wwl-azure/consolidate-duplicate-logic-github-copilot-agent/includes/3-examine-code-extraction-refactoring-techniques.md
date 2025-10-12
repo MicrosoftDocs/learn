@@ -9,15 +9,15 @@ When you refactor a codebase, it still produces the same result that it produced
 Duplicate code is one of the most common "code smells" that indicates refactoring is needed. When the same logic appears in multiple places:
 
 - **Maintenance becomes harder**: A bug fix or feature change must be applied in multiple locations.
-- **Inconsistency creeps in**: Similar code might evolve differently over time, creating subtle bugs.
+- **Inconsistency can arise**: Similar code might evolve differently over time, creating subtle bugs.
 - **Testing multiplies**: You need to test the same logic in multiple contexts.
-- **Code bloat increases**: The codebase becomes unnecessarily large and complex.
+- **Code bloat increases**: The size and complexity of the codebase increases unnecessarily.
 
-Consolidating duplicate code into a single, reusable location is a perfect example of refactoring because:
+There are several benefits to consolidating duplicate code into a single, reusable location:
 
-- The external behavior remains identical.
 - The internal structure becomes cleaner and more maintainable.
 - Future changes only need to be made in one place.
+- The external behavior remains identical.
 
 ## Code refactoring process
 
@@ -29,9 +29,9 @@ Effective refactoring follows these principles:
 
 1. **Make one change at a time**: Don't try to fix everything at once. Extract one piece of duplicate code, test it, then move to the next.
 
-1. **Test after each change**: Run your tests (or manually verify functionality) after every small refactoring step. This ensures you haven't accidentally broken anything.
+1. **Test after each change**: Run your tests (or manually verify functionality) after every small refactoring step. Incremental testing ensures that you catch issues early.
 
-1. **Keep the same behavior**: If the code behaved differently after your change, you've introduced a bug, not completed a refactoring.
+1. **Keep the same behavior**: Code behavior should remain unchanged. Changes to code behavior indicate a bug, not a successful code refactoring.
 
 1. **Use version control**: Commit your code after successful refactoring so you can easily roll back if something goes wrong.
 
@@ -53,7 +53,7 @@ Consider the following approach to consolidating duplicate code:
 
 1. **Replace remaining instances**: One by one, update other locations to use the helper.
 
-1. **Test after each replacement**: Don't skip this - it catches integration issues early.
+1. **Test after each replacement**: Don't skip incremental testing - it catches integration issues early.
 
 1. **Clean up**: Remove any unused code or imports.
 
@@ -63,15 +63,15 @@ This methodical approach might feel slow at first, but it builds confidence and 
 
 Consider the following example that compares "risky" and "safe" approaches to refactoring:
 
-- **Risky approach**: "I'll extract all this duplicate validation logic into a new ValidationHelper class and update all five places that use it at once."
+- **Risky approach**: "Extract all this duplicate validation logic into a new ValidationHelper class and update all five places that use it at once."
 
-- **Safe approach**: "I'll extract the email validation logic to a helper method, test it, replace it in the User class, test again, then replace it in the Customer class, test again, and so on."
+- **Safe approach**: "Extract the email validation logic to a helper method, test it, replace it in the User class, test again, then replace it in the Customer class, test again, and so on."
 
 The safe approach takes a few more minutes but prevents the frustration of debugging multiple changes when something breaks.
 
 ## Code consolidation techniques
 
-When you've identified duplicate code in your application, you have several proven techniques to consolidate it effectively. Each approach has its strengths and is suited to different scenarios.
+When you identify duplicate code in your application, you have several proven techniques to consolidate it effectively. Each approach has its strengths and is suited to different scenarios.
 
 ### Extract method technique
 
@@ -116,7 +116,7 @@ The following approach can be used to consolidate code with base classes and inh
 
 - Create an abstract base class containing the shared methods.
 - Move common code to the base class.
-- Have related classes inherit from the base class.
+- Update related classes to inherit from the base class.
 - Override or extend functionality in derived classes as needed.
 
 Consider the following important considerations:
@@ -135,7 +135,7 @@ Composition involves creating separate service classes that encapsulate specific
 - Inject or reference these services in classes that need the functionality.
 - Each service class has a single, well-defined responsibility.
 
-For example, consider the following scenario. Multiple processors need shipping calculation logic. Instead of duplicating this code, create a `ShippingCalculatorService` that each processor can use.
+For example, consider the following scenario. Multiple processors need to ship calculation logic. Instead of duplicating this code, create a `ShippingCalculatorService` that each processor can use.
 
 The Composition and shared services approach provides the following advantages:
 
@@ -171,9 +171,9 @@ When integrating consolidated code into an existing project, follow these organi
 
 **Create logical namespaces** for your consolidated code:
 
-- **Utility classes**: Place in a `.Utils` or `.Helpers` sub-namespace (e.g., `MyProject.Utils.StringHelper`).
-- **Shared services**: Use descriptive namespaces like `.Services` or `.Common` (e.g., `MyProject.Services.ValidationService`).
-- **Domain-specific helpers**: Group within relevant business domains (e.g., `MyProject.Orders.OrderCalculations`).
+- **Utility classes**: Place in a `.Utils` or `.Helpers` subnamespace (for example, `MyProject.Utils.StringHelper`).
+- **Shared services**: Use descriptive namespaces like `.Services` or `.Common` (for example, `MyProject.Services.ValidationService`).
+- **Domain-specific helpers**: Group within relevant business domains (for example, `MyProject.Orders.OrderCalculations`).
 
 ### File and folder structure
 
@@ -206,7 +206,7 @@ When integrating consolidated code into an existing project, follow these organi
 **Update documentation when refactoring**:
 
 - Add XML comments explaining the purpose and usage of new helper methods.
-- Update existing class comments to reference where logic has moved.
+- Update existing class comments to reference the updated location of code logic.
 - Consider adding inline comments like `// Validation logic moved to ValidationService.ValidateEmail()`.
 - Update any architectural documentation or coding standards.
 
@@ -214,7 +214,7 @@ When integrating consolidated code into an existing project, follow these organi
 
 ## Ensure code quality improvements
 
-After consolidating duplicate code, it's important to verify that the refactoring process has led to code quality improvements. After refactoring, the code should be easier to understand, maintain, and extend.
+After consolidating duplicate code, it's important to verify that the refactoring process improves code quality. After refactoring, the code should be easier to understand, maintain, and extend.
 
 ### Measuring refactoring success
 
@@ -257,7 +257,7 @@ Be alert to these indicators of problematic consolidation:
 
 1. **Over-abstraction**: The consolidated code is harder to understand than the original duplication.
 
-1. **Performance degradation**: Critical paths have slowed due to generalization.
+1. **Performance degradation**: Critical paths are slower due to generalization.
 
 1. **Loss of context**: Generic names like `ProcessData()` lose business meaning.
 
