@@ -13,7 +13,7 @@ The topics covered in this module include:
 - Maintaining functionality while improving code structure.
 - Testing refactored code to ensure correctness.
 
-By the end of this module, you'll be able to:
+By the end of this module, you're able to:
 
 - Identify large functions that would benefit from refactoring.
 - Use GitHub Copilot to analyze function complexity and suggest refactoring opportunities.

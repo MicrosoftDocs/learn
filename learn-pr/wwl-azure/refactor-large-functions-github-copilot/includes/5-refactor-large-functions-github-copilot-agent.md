@@ -1,6 +1,6 @@
 Using GitHub Copilot's Agent mode is like having an assistant who's always there to help you develop and maintain your code.
 
-In Agent mode, you assign tasks to GitHub Copilot using natural language prompts in the chat panel. GitHub Copilot begins by analyzing your codebase, using the assigned task to establish the necessary context. The agent generates a plan for accomplishing the task and displays the list of subtasks that it will implement. It then opens and edits the associated files in the code editor. All of this is completed autonomously by the agent, which provides a running commentary in the chat panel so that you can monitor its progress. If necessary, the agent will ask for clarification, additional information, or permission to proceed with a specific action. Once the agent has completed the task, you can review the edits and approve (or reject) the individual changes. You remain in control throughout the process.
+In Agent mode, you assign tasks to GitHub Copilot using natural language prompts in the chat panel. GitHub Copilot begins by analyzing your codebase, using the assigned task to establish the necessary context. The agent generates a plan for accomplishing the task and displays the list of the required subtasks. It then opens and edits the associated files in the code editor. The agent completes the analysis, planning, and implementation autonomously and provides a running commentary in the chat panel so that you can monitor its progress. If necessary, the agent asks for clarification, additional information, or permission to proceed with a specific action. Once the agent completes the task, you can review the edits and approve (or reject) the individual changes. You remain in control throughout the process.
 
 ## Best practices
 
@@ -10,20 +10,20 @@ In Agent mode, you assign tasks to GitHub Copilot using natural language prompts
 
 ## Common refactoring commands
 
-- “Extract this code into a new private method named `ValidateOrder` that returns a bool.”
-- “Replace repeated tax calculation logic with a helper method `CalculateTax`.”
-- “Refactor this `if/else` chain into a switch expression.”
-- “Move the pricing calculations into a new method `ComputeTotals(order)`.”
+- "Extract this code into a new private method named `ValidateOrder` that returns a bool."
+- "Replace repeated tax calculation logic with a helper method `CalculateTax`."
+- "Refactor this `if/else` chain into a switch expression."
+- "Move the pricing calculations into a new method `ComputeTotals(order)`."
 
 ## Example workflow
 
 1. Extract the first segment
 
-    “Extract the input validation at the top of `ProcessOrder` into a new method `ValidateOrder(order)` returning bool.”
+    "Extract the input validation at the top of `ProcessOrder` into a new method `ValidateOrder(order)` returning bool."
 
 1. Extract the second segment
 
-    “Move the pricing calculations into a new method `ComputeTotals(order)` that updates `order.Total`.”
+    "Move the pricing calculations into a new method `ComputeTotals(order)` that updates `order.Total`."
 
 1. Handle remaining logic
 
@@ -33,7 +33,7 @@ In Agent mode, you assign tasks to GitHub Copilot using natural language prompts
 
     Rename variables, remove unused code, and ensure consistency.
 
-## Leveraging Ask mode suggestions
+## Apply Ask mode suggestions
 
 Use Ask Mode’s breakdown to guide Agent mode:
 
@@ -47,7 +47,7 @@ Use Ask Mode’s breakdown to guide Agent mode:
 ## What to watch for
 
 - **Logic preservation:** Ensure no behavior is changed.
-- **Parameter handling:** Copilot may forget to pass a needed variable.
+- **Parameter handling:** Copilot might forget to pass a needed variable.
 - **Naming and access modifiers:** Confirm they match your codebase style.
 - **Missed lines:** If Copilot skips a line, manually move it or ask again.
 
@@ -82,10 +82,9 @@ public void ProcessOrder(Order order) {
 
 ```
 
-Each helper method contains what was once a section of the big function.
+Each helper method contains what was once a section of the large function.
 The main function now reads like a high-level outline.
 
 ## Summary
 
-Agent Mode helps you execute your refactoring plan quickly and safely.
-Use it step-by-step, guided by Ask Mode’s analysis.
+Using GitHub Copilot's Agent mode can significantly streamline the process of refactoring large functions. By breaking down the task into manageable steps and using natural language prompts, you can maintain control while allowing the agent to handle the heavy lifting. Always review changes carefully to ensure code quality and logic integrity.

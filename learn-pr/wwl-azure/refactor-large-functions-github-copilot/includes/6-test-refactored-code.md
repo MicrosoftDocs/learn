@@ -4,17 +4,17 @@ Code reviews and testing are integral to the refactoring process for large funct
 
 Testing drives the refactoring process, providing continuous validation as you break down large functions into smaller, focused methods. Each extraction should be immediately tested before proceeding to the next refactoring step.
 
-### Leverage GitHub Copilot for test generation
+### Use GitHub Copilot for test generation
 
 Use GitHub Copilot to create tests throughout the refactoring process:
 
-Here are some example prompts you can use to generate unit tests:
+Here are some examples prompts you can use to generate unit tests:
 
 - `@workspace /tests Generate unit tests for the ValidateOrderItems method I'm about to extract`
 - `Create parameterized tests for CalculateDiscounts with edge cases`
 - `Generate test cases for all public methods in the refactored OrderProcessor class`
 
-Here are some example prompts you can use to generate integration tests:
+Here are some examples prompts you can use to generate integration tests:
 
 - `@workspace Generate integration tests for the refactored ProcessOrder method that verify all helper methods are called in the correct sequence`
 - `Create integration tests for the OrderProcessor class focusing on the interaction between ValidateOrder, CalculateTotal, and ApplyDiscounts methods`
@@ -80,7 +80,7 @@ Avoid these mistakes while testing throughout the refactoring process:
 
 1. **Testing implementation instead of behavior**: Focus on what the code accomplishes, not the specific implementation details. Tests should remain valid as internal structure changes.
 
-2. **Ignoring integration points**: Individual methods may work perfectly in isolation but fail when integrated. Test the complete workflow after each extraction.
+2. **Ignoring integration points**: Individual methods might work perfectly in isolation but fail when integrated. Test the complete workflow after each extraction.
 
 3. **Delaying performance validation**: Measure performance impact immediately after each change to catch regressions early.
 
@@ -106,4 +106,4 @@ Remember: Comprehensive testing during refactoring is an investment in code qual
 
 ## Summary
 
-Incorporating thorough testing and validation into the refactoring of large functions is essential for maintaining code quality. By leveraging GitHub Copilot to assist with test generation and coverage analysis, developers can streamline the testing process while ensuring comprehensive validation. Continuous performance monitoring and adherence to a structured testing strategy help ensure that refactoring efforts lead to more maintainable code without sacrificing functionality or efficiency. Following best practices and avoiding common pitfalls during testing will result in a successful refactoring process that enhances both code quality and developer confidence.
+Incorporating thorough testing and validation into the refactoring of large functions is essential for maintaining code quality. By using GitHub Copilot to assist with test generation and coverage analysis, developers can streamline the testing process while ensuring comprehensive validation. Continuous performance monitoring and adherence to a structured testing strategy help ensure that refactoring efforts lead to more maintainable code without sacrificing functionality or efficiency. Following best practices and avoiding common pitfalls during testing results in a successful refactoring process that enhances both code quality and developer confidence.
