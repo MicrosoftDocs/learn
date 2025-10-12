@@ -14,3 +14,80 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
+  - content: "What is the primary hidden cost of duplicate code in software development?"
+    choices:
+    - content: "Increased storage requirements for the codebase."
+      isCorrect: false
+      explanation: "Incorrect. While duplicate code does increase file size, the primary cost is maintenance overhead, not storage."
+    - content: "Maintenance overhead requiring updates in multiple locations when bugs are found or features change."
+      isCorrect: true
+      explanation: "Correct. Every time a bug is found or feature changes, all instances of duplicated code must be manually updated, increasing risk and development time."
+    - content: "Slower compilation times due to repeated code parsing."
+      isCorrect: false
+      explanation: "Incorrect. While compilation might be slightly affected, the main cost is the ongoing maintenance burden throughout the software lifecycle."
+  - content: "Which principle guides developers to avoid repeating logic across their codebase?"
+    choices:
+    - content: "Single Responsibility Principle (SRP)"
+      isCorrect: false
+      explanation: "Incorrect. SRP focuses on classes having one reason to change, not on avoiding duplication."
+    - content: "Don't Repeat Yourself (DRY)"
+      isCorrect: true
+      explanation: "Correct. DRY means avoiding repetition of the same logic, rule, or idea in multiple places to maintain a single source of truth."
+    - content: "Open/Closed Principle (OCP)"
+      isCorrect: false
+      explanation: "Incorrect. OCP is about being open for extension but closed for modification, not about avoiding code duplication."
+  - content: "What is the most fundamental refactoring technique for consolidating duplicate code?"
+    choices:
+    - content: "Create static helper classes for all shared functionality."
+      isCorrect: false
+      explanation: "Incorrect. While static helper classes are useful, the extract method technique is the most fundamental approach to consolidating duplicate code."
+    - content: "Extract Method technique"
+      isCorrect: true
+      explanation: "Correct. The Extract Method technique involves identifying common code blocks, creating a new method with the shared logic, and replacing duplicates with calls to the new method."
+    - content: "Implement inheritance hierarchies to share common code."
+      isCorrect: false
+      explanation: "Incorrect. Inheritance can help with code reuse but is not the most fundamental technique for consolidating existing duplicate code."
+  - content: "What is the golden rule for safe code refactoring when consolidating duplicate code?"
+    choices:
+    - content: "Complete all refactoring changes at once for efficiency."
+      isCorrect: false
+      explanation: "Incorrect. Making all changes at once increases risk and makes it harder to identify where issues occur."
+    - content: "Make small, safe steps with testing after each change."
+      isCorrect: true
+      explanation: "Correct. Small, incremental changes with testing after each step prevent refactoring disasters and build confidence in the process."
+    - content: "Focus on performance optimization before consolidating duplicate code."
+      isCorrect: false
+      explanation: "Incorrect. The golden rule is about the methodical approach of small steps and testing, not performance optimization."
+  - content: "What is the primary purpose of GitHub Copilot's Ask mode when identifying duplicate code?"
+    choices:
+    - content: "To automatically refactor duplicate code across the entire codebase."
+      isCorrect: false
+      explanation: "Incorrect. Ask mode analyzes and explains code without making changes. Agent mode performs the actual refactoring."
+    - content: "To analyze code and identify potential duplication without altering the code."
+      isCorrect: true
+      explanation: "Correct. Ask mode is designed for querying and understanding code, helping developers identify duplicate code patterns without making modifications."
+    - content: "To generate new code that replaces all duplicate logic."
+      isCorrect: false
+      explanation: "Incorrect. Ask mode is read-only and doesn't generate or modify code; it only provides analysis and insights."
+  - content: "What key difference distinguishes Agent mode from Ask mode in GitHub Copilot?"
+    choices:
+    - content: "Agent mode can access more files in the workspace than Ask mode."
+      isCorrect: false
+      explanation: "Incorrect. Both modes can access workspace files, but the key difference is that Agent mode can modify code while Ask mode cannot."
+    - content: "Agent mode can modify code across multiple files while Ask mode only provides analysis."
+      isCorrect: true
+      explanation: "Correct. Agent mode executes tasks that modify code autonomously across the workspace, while Ask mode focuses on analysis and insights without making changes."
+    - content: "Agent mode works faster than Ask mode for code analysis."
+      isCorrect: false
+      explanation: "Incorrect. The speed difference isn't the distinguishing factor; the key difference is Agent mode's ability to make code modifications."
+  - content: "What is a best practice when creating prompts for GitHub Copilot Agent mode to consolidate duplicate code?"
+    choices:
+    - content: "Use vague references like 'this file' and 'this function' to let the agent decide."
+      isCorrect: false
+      explanation: "Incorrect. Vague references create ambiguity. Effective prompts should be specific and clearly identify the target code elements."
+    - content: "Be specific and clearly identify the methods, classes, and desired outcome."
+      isCorrect: true
+      explanation: "Correct. Specific prompts that clearly identify target methods, desired structures, and expected outcomes generate better results from Agent mode."
+    - content: "Request all refactoring changes to be completed in a single large operation."
+      isCorrect: false
+      explanation: "Incorrect. Breaking down complex tasks into smaller, manageable steps yields better control and results."
