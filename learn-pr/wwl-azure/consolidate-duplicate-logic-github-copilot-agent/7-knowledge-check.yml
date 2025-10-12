@@ -9,7 +9,7 @@ metadata:
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot
-  module_assessment: true  
+  module_assessment: true
 durationInMinutes: 5
 quiz:
   title: Check your knowledge
@@ -46,7 +46,7 @@ quiz:
       explanation: "Correct. The Extract Method technique involves identifying common code blocks, creating a new method with the shared logic, and replacing duplicates with calls to the new method."
     - content: "Implement inheritance hierarchies to share common code."
       isCorrect: false
-      explanation: "Incorrect. Inheritance can help with code reuse but is not the most fundamental technique for consolidating existing duplicate code."
+      explanation: "Incorrect. Inheritance can help with code reuse but isn't the most fundamental technique for consolidating existing duplicate code."
   - content: "What is the golden rule for safe code refactoring when consolidating duplicate code?"
     choices:
     - content: "Complete all refactoring changes at once for efficiency."
@@ -73,7 +73,7 @@ quiz:
     choices:
     - content: "Agent mode can access more files in the workspace than Ask mode."
       isCorrect: false
-      explanation: "Incorrect. Both modes can access workspace files, but the key difference is that Agent mode can modify code while Ask mode cannot."
+      explanation: "Incorrect. Both modes can access workspace files, but the key difference is that Agent mode can modify code while Ask mode can't."
     - content: "Agent mode can modify code across multiple files while Ask mode only provides analysis."
       isCorrect: true
       explanation: "Correct. Agent mode executes tasks that modify code autonomously across the workspace, while Ask mode focuses on analysis and insights without making changes."
