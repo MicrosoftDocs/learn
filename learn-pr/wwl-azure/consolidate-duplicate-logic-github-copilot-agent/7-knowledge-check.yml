@@ -2,17 +2,15 @@
 uid: learn.consolidate-duplicate-logic-github-copilot-agent.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
-  description: This content is part of the "Consolidate Duplicate Logic using GitHub Copilot Agent" module.
-  ms.date: 10/17/2025
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 10/14/2025
   author: cahowd
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot
-  module_assessment: true
 durationInMinutes: 5
 quiz:
-  title: Check your knowledge
   questions:
   - content: "What is the primary hidden cost of duplicate code in software development?"
     choices:

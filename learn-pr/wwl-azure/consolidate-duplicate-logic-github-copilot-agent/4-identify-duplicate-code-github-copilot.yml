@@ -3,8 +3,8 @@ uid: learn.consolidate-duplicate-logic-github-copilot-agent.identify-duplicate-c
 title: Identify duplicate code using GitHub Copilot
 metadata:
   title: Identify Duplicate Code using GitHub Copilot
-  description: "In this unit, you will learn how to use GitHub Copilot's Ask mode to identify duplicate code in your C# codebase. You will explore techniques for recognizing patterns of duplication and understanding the context in which they occur."
-  ms.date: 10/17/2025
+  description: Identify duplicate code using GitHub Copilot
+  ms.date: 10/14/2025
   author: cahowd
   ms.author: cahowd
   ms.topic: unit

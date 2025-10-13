@@ -3,8 +3,8 @@ uid: learn.consolidate-duplicate-logic-github-copilot-agent.examine-code-extract
 title: Examine code extraction and refactoring techniques
 metadata:
   title: Examine Code Extraction and Refactoring Techniques
-  description: "This unit explores various code extraction and refactoring techniques that can be employed to consolidate duplicate code."
-  ms.date: 10/17/2025
+  description: Examine code extraction and refactoring techniques
+  ms.date: 10/14/2025
   author: cahowd
   ms.author: cahowd
   ms.topic: unit

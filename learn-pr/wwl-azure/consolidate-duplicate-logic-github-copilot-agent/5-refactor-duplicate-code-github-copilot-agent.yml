@@ -3,8 +3,8 @@ uid: learn.consolidate-duplicate-logic-github-copilot-agent.refactor-duplicate-c
 title: Refactor duplicate code using GitHub Copilot Agent
 metadata:
   title: Refactor Duplicate Code using GitHub Copilot Agent
-  description: "In this unit, you will learn how to use GitHub Copilot's Agent mode to refactor duplicate code in your C# codebase. You will explore techniques for applying refactoring patterns and improving code quality."
-  ms.date: 10/17/2025
+  description: Refactor duplicate code using GitHub Copilot Agent
+  ms.date: 10/14/2025
   author: cahowd
   ms.author: cahowd
   ms.topic: unit
