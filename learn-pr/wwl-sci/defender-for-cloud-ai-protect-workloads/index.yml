@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.defender-for-cloud-ai-protect-workloads
+metadata:
+  title: Protect AI workloads with Microsoft Defender for Cloud
+  description: Learn how Microsoft Defender for Cloud extends protection to AI workloads across Azure. See how it discovers AI resources, assesses configuration risks, detects active threats, and integrates with Microsoft Defender XDR for unified investigation and response.
+  ms.date: 10/13/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: microsoft-defender
+title: Protect AI workloads with Microsoft Defender for Cloud
+
+summary: |
+  Microsoft Defender for Cloud helps secure AI workloads by combining discovery, posture management, and runtime protection in one platform.
+  You'll learn how to enable the AI workloads plan, review insights in the Data & AI security dashboard, assess posture using Cloud Security Posture Management (CSPM), detect runtime threats with Cloud Workload Protection (CWP), and investigate incidents in Microsoft Defender XDR.
+  These capabilities work together to identify configuration gaps, detect suspicious behavior, and provide end-to-end visibility across your AI environments.
+
+abstract: |
+  In this module, you learn to:
+  - Enable and configure the AI workloads plan in Microsoft Defender for Cloud
+  - Review AI resource insights in the Data & AI security dashboard
+  - Assess and improve AI posture with Cloud Security Posture Management (CSPM)
+  - Detect and respond to runtime threats using Cloud Workload Protection (CWP)
+  - Investigate AI-related alerts and incidents in Microsoft Defender XDR
+
+prerequisites: |
+  Before starting, you should have:
+  - Experience managing Microsoft Defender for Cloud plans and Azure configurations
+  - Familiarity with Azure AI services such as Azure AI Foundry, Azure OpenAI, or Azure Machine Learning
+  - Basic understanding of threat detection, incident response, and cloud security posture management (CSPM)
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure
+- azure-ai-foundry
+- defender-for-cloud
+- entra-id
+- defender-xdr
+subjects:
+- cloud-security
+units:
+- learn.wwl.defender-for-cloud-ai-protect-workloads.introduction
+- learn.wwl.defender-for-cloud-ai-protect-workloads.enable-ai-workload-plan
+- learn.wwl.defender-for-cloud-ai-protect-workloads.data-ai-security-dashboard
+- learn.wwl.defender-for-cloud-ai-protect-workloads.assess-improve-ai-posture
+- learn.wwl.defender-for-cloud-ai-protect-workloads.detect-ai-threats
+- learn.wwl.defender-for-cloud-ai-protect-workloads.investigate-ai-alerts-xdr
+- learn.wwl.defender-for-cloud-ai-protect-workloads.knowledge-check
+- learn.wwl.defender-for-cloud-ai-protect-workloads.summary
+badge:
+  uid: learn.wwl.defender-for-cloud-ai-protect-workloads.badge
