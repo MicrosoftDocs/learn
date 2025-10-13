@@ -32,7 +32,7 @@ After turning on the AI Services plan, select **Settings** under **Monitoring co
 - **Suspicious prompt evidence** captures short, redacted snippets of AI prompts that triggered security alerts. These appear in Microsoft Defender XDR during alert investigations.
 - **Data security for AI interactions** integrates with Microsoft Purview to classify and protect prompt and response data for compliance and data security outcomes.
 
-   :::image type="content" source="../media/defender-ai-services-settings.png" alt-text="Screenshot showing the Settings and monitoring page for AI Services in Defender for Cloud with options to enable suspicious prompt evidence and data security for AI interactions." lightbox="../media/defender-ai-services-settings.png":::
+   :::image type="content" source="../media/defender-ai-services-settings.png" alt-text="Screenshot showing AI Services settings with prompt evidence and data security in Defender for Cloud." lightbox="../media/defender-ai-services-settings.png":::
 
 These extensions aren't required for the AI workloads plan to function, but turning them on provides deeper visibility and investigation capabilities across Defender and Purview.
 
