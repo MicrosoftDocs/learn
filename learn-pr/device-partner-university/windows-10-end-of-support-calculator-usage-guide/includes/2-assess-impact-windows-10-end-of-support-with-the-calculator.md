@@ -46,7 +46,7 @@ Organizations that elect to continue using Windows 10 after support ends on **Oc
 | 3    | $244                           | $2,440                          | $4,270                                                      |
 
 > [!IMPORTANT]  
-> Prices double each year (maxium three years) and ESUs are cumulative. Starting in Year 2 requires paying for Year 1 as well. Use this to know when to use Windows 10 Extended Security Updates.
+> Prices double each year (maximum three years) and ESUs are cumulative. Starting in Year 2 requires paying for Year 1 as well. Use this to know when to use Windows 10 Extended Security Updates.
 
 These benefits inform the calculator’s methodology and underscore the business case for modernization.
 
