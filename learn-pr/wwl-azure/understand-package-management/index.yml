@@ -1,60 +1,70 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-package-management
 metadata:
-  title: Understand package management
-  description: Understand package management
-  ms.date: 05/07/2024
-  author: wwlpublish
+  title: Understand Package Management
+  description: Learn package management concepts including package feeds, feed managers, public and private sources, and how to consume, create, and publish packages using Azure Artifacts.
+  ms.date: 10/13/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.custom:
-  - N/A
-  ai-usage: human-only
+    - N/A
+  ai-usage: ai-assisted
   ms.service: azure-devops-artifacts
-title: Understand package management
-summary: This module describes package feeds, common public package sources, and how to create and publish packages.
+title: Understand Package Management
+summary: This module describes package management fundamentals including package feeds, package feed managers, common public package sources, self-hosted and SaaS-based solutions, and practical guidance for consuming, creating, and publishing packages using Azure Artifacts and other package management tools.
 abstract: |
   By the end of this module, you're able to:
-  -   Implement package management
-  -   Manage package feed
-  -   Consume and create packages
-  -   Publish packages
-prerequisites: None
+  -   Understand packages and package management concepts
+  -   Implement and manage package feeds with public and private sources
+  -   Explore package feed managers and hosting options
+  -   Consume packages from various sources in your projects
+  -   Create and publish packages to Azure Artifacts and other feeds
+prerequisites: |
+  -   Basic understanding of software development and dependencies
+  -   Familiarity with version control systems
+  -   General knowledge of build and deployment processes
+  -   Access to an Azure DevOps organization (recommended for hands-on practice)
 iconUrl: /training/achievements/2-understand-package-management.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
+subjects:
+  - devops
 units:
-- learn.wwl.understand-package-management.introduction
-- learn.wwl.understand-package-management.explore-packages
-- learn.wwl.understand-package-management.understand-package-feeds
-- learn.wwl.understand-package-management.explore-package-feed-managers
-- learn.wwl.understand-package-management.explore-common-public-package-sources
-- learn.wwl.understand-package-management.explore-self-hosted-saas-based-package-sources
-- learn.wwl.understand-package-management.consume-packages
-- learn.wwl.understand-package-management.introduction-to-azure-artifacts
-- learn.wwl.understand-package-management.publish-packages
-- learn.wwl.understand-package-management.package-management-azure-artifacts
-- learn.wwl.understand-package-management.knowledge-check
-- learn.wwl.understand-package-management.summary
+  - learn.wwl.understand-package-management.introduction
+  - learn.wwl.understand-package-management.explore-packages
+  - learn.wwl.understand-package-management.understand-package-feeds
+  - learn.wwl.understand-package-management.explore-package-feed-managers
+  - learn.wwl.understand-package-management.explore-common-public-package-sources
+  - learn.wwl.understand-package-management.explore-self-hosted-saas-based-package-sources
+  - learn.wwl.understand-package-management.consume-packages
+  - learn.wwl.understand-package-management.introduction-to-azure-artifacts
+  - learn.wwl.understand-package-management.publish-packages
+  - learn.wwl.understand-package-management.package-management-azure-artifacts
+  - learn.wwl.understand-package-management.knowledge-check
+  - learn.wwl.understand-package-management.summary
 badge:
   uid: learn.wwl.understand-package-management.badge
-

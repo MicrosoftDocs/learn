@@ -2,16 +2,17 @@
 uid: learn.wwl.understand-package-management.knowledge-check
 title: Module assessment
 metadata:
-  hidden_question_numbers: ["36170A3A_18","36170A3A_63","36170A3A_71","36170A3A_79","36170A3A_116"]
+  hidden_question_numbers:
+    ["36170A3A_18", "36170A3A_63", "36170A3A_71", "36170A3A_79", "36170A3A_116"]
   ai_generated_module_assessment: true
   title: Module assessment
-  description: "Knowledge check"
-  ms.date: 05/07/2024
-  author: wwlpublish
+  description: "Test your understanding of package management concepts including package feeds, visibility options, hosting solutions, and Azure Artifacts capabilities."
+  ms.date: 10/13/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
   module_assessment: true
 durationInMinutes: 5
 content: |
@@ -19,36 +20,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following visibility should you choose if you create a feed that will allow yourself and the users you invite to publish?"
-    choices:
-    - content: "Private."
-      isCorrect: true
-      explanation: "Correct. It's private. Private feeds can only be consumed by users who are allowed access."
-    - content: "Public."
-      isCorrect: false
-      explanation: "Incorrect. It's private. Private feeds can only be consumed by users who are allowed access."
-    - content: "Local."
-      isCorrect: false
-      explanation: "Incorrect. It's private. Private feeds can only be consumed by users who are allowed access."
-  - content: "Which of the following choices isn't an option for private feeds?"
-    choices:
-    - content: "Self-hosting."
-      isCorrect: false
-      explanation: "Incorrect. There are two options for private feeds, which are Self-hosting (NuGet Server, Nexus) and SaaS Services (Azure Artifacts, MyGet)."
-    - content: "Database hosting."
-      isCorrect: true
-      explanation: "Correct. There are two options for private feeds, which are Self-hosting (NuGet Server, Nexus) and SaaS Services (Azure Artifacts, MyGet)."
-    - content: "SaaS services."
-      isCorrect: false
-      explanation: "Incorrect. There are two options for private feeds, which are Self-hosting (NuGet Server, Nexus) and SaaS Services (Azure Artifacts, MyGet)."
-  - content: "Which of the following choices isn't a package type supported by Azure DevOps?"
-    choices:
-    - content: "PHP."
-      isCorrect: true
-      explanation: "Correct. Azure Artifacts currently supports feeds that can store five different package types such as NuGet packages, npm packages, Maven, Universal packages, and Python."
-    - content: "npm."
-      isCorrect: false
-      explanation: "Incorrect. Azure Artifacts currently supports feeds that can store five different package types such as NuGet packages, npm packages, Maven, Universal packages, and Python."
-    - content: "Python."
-      isCorrect: false
-      explanation: "Incorrect. Azure Artifacts currently supports feeds that can store five different package types such as NuGet packages, npm packages, Maven, Universal packages, and Python."
+    - content: "Which of the following visibility should you choose if you create a feed that will allow yourself and the users you invite to publish?"
+      choices:
+        - content: "Private."
+          isCorrect: true
+          explanation: "Correct. It's private. Private feeds can only be consumed by users who are allowed access."
+        - content: "Public."
+          isCorrect: false
+          explanation: "Incorrect. It's private. Private feeds can only be consumed by users who are allowed access."
+        - content: "Local."
+          isCorrect: false
+          explanation: "Incorrect. It's private. Private feeds can only be consumed by users who are allowed access."
+    - content: "Which of the following choices isn't an option for private feeds?"
+      choices:
+        - content: "Self-hosting."
+          isCorrect: false
+          explanation: "Incorrect. There are two options for private feeds, which are Self-hosting (NuGet Server, Nexus) and SaaS Services (Azure Artifacts, MyGet)."
+        - content: "Database hosting."
+          isCorrect: true
+          explanation: "Correct. There are two options for private feeds, which are Self-hosting (NuGet Server, Nexus) and SaaS Services (Azure Artifacts, MyGet)."
+        - content: "SaaS services."
+          isCorrect: false
+          explanation: "Incorrect. There are two options for private feeds, which are Self-hosting (NuGet Server, Nexus) and SaaS Services (Azure Artifacts, MyGet)."
+    - content: "Which of the following choices isn't a package type supported by Azure DevOps?"
+      choices:
+        - content: "PHP."
+          isCorrect: true
+          explanation: "Correct. Azure Artifacts currently supports feeds that can store five different package types such as NuGet packages, npm packages, Maven, Universal packages, and Python."
+        - content: "npm."
+          isCorrect: false
+          explanation: "Incorrect. Azure Artifacts currently supports feeds that can store five different package types such as NuGet packages, npm packages, Maven, Universal packages, and Python."
+        - content: "Python."
+          isCorrect: false
+          explanation: "Incorrect. Azure Artifacts currently supports feeds that can store five different package types such as NuGet packages, npm packages, Maven, Universal packages, and Python."

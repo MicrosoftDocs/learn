@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-package-management.package-management-azure-artifacts
-title: Package management with Azure Artifacts
+title: Package Management With Azure Artifacts
 metadata:
-  title: Package management with Azure Artifacts
-  description: "Package management with Azure Artifacts"
-  ms.date: 05/07/2024
-  author: wwlpublish
+  title: Package Management With Azure Artifacts
+  description: "Hands-on exercise demonstrating package management with Azure Artifacts including creating feeds, publishing packages, and consuming packages in projects."
+  ms.date: 10/13/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
 durationInMinutes: 40
 content: |
-  [!include[](includes/10-package-management-azure-artifacts.md)]
+  [!include[](includes/10-package-management-azure-artifacts.md)]
