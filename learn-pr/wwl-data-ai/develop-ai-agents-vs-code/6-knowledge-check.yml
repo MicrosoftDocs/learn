@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agents-vs-code.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Test your knowledge of developing AI agents using the Azure AI Foundry extension in Visual Studio Code.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 10/06/2025
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "When you create a new agent in the Azure AI Foundry extension, what two views are automatically opened?"
+    choices:
+    - content: "The YAML file and the Playground view"
+      isCorrect: false
+      explanation: "Incorrect. The Playground is used for testing agents after they're configured, not during initial creation."
+    - content: "The YAML file and the Designer view"
+      isCorrect: true
+      explanation: "Correct. When you create an agent, the extension opens both the agent YAML file and the Designer view, providing both a visual interface and direct access to the configuration file."
+    - content: "The Designer view and the Code Generation view"
+      isCorrect: false
+      explanation: "Incorrect. Code generation is available after deployment, not during initial agent creation."
+ - content: "What is a key benefit of using Model Context Protocol (MCP) servers for agent tools?"
+    choices:
+    - content: "They only work with Microsoft-built tools"
+      isCorrect: false
+      explanation: "Incorrect. MCP is an open protocol that supports community-driven tools and third-party implementations."
+    - content: "They provide reusable components that work across different agents"
+      isCorrect: true
+      explanation: "Correct. MCP servers provide standardized interfaces that create reusable components, enabling tools to work across different agent implementations and leverage community-driven solutions."
+    - content: "They replace the need for all built-in tools"
+      isCorrect: false
+      explanation: "Incorrect. MCP servers complement built-in tools rather than replacing them, providing additional standardized tool options."
+  - content: "How does the Azure AI Foundry Agent Service manage conversation sessions when users interact with deployed agents?"
+  choices:
+  - content: "The system creates individual threads for each conversation to manage context and message history"
+    isCorrect: true
+    explanation: "Correct. When users interact with deployed agents, the system creates threads (conversation sessions) that store messages and maintain context throughout the conversation, with individual messages and runs managed within those threads."
+  - content: "Each message is processed independently with no conversation history"
+    isCorrect: false
+    explanation: "Incorrect. The system maintains conversation context through threads that store message history and context."
+  - content: "All user conversations are combined into one shared global session"
+    isCorrect: false
+    explanation: "Incorrect. Each conversation gets its own separate thread to maintain individual context and message history."

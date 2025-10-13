@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agents-vs-code.exercise
+title: Exercise - Build an AI agent using the Azure AI Foundry extension
+metadata:
+  title: Exercise - Build an AI Agent using the Azure AI Foundry Extension
+  description: In this exercise, you'll build an AI agent using the Azure AI Foundry extension in Visual Studio Code.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 10/06/2025
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise.md)]
+
