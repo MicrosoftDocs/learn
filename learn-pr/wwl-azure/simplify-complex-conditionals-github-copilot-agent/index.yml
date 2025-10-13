@@ -2,40 +2,41 @@
 uid: learn.simplify-complex-conditionals-github-copilot-agent
 metadata:
   title: Simplify complex conditionals using GitHub Copilot Agent
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  description: "Simplify complex conditionals using GitHub Copilot Agent"
   ms.date: 10/17/2025
   author: cahowd
   ms.author: cahowd
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: github-copilot
 title: Simplify complex conditionals using GitHub Copilot Agent
-summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+summary: "This module covers the use of GitHub Copilot's Agent mode to simplify complex conditional statements in code. It provides practical examples and exercises to enhance coding efficiency."
 abstract: |
   By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+    - "Describe how complex conditional evolve over time and the problems associated with complex and deeply nested conditional code."
+    - "Describe the tools, techniques, and processes used to refactor complex and deeply nested conditional code."
+    - "Use GitHub Copilot’s Ask mode to explain a codebase and identify opportunities to simplify complex and deeply nested conditional code."
+    - "Use GitHub Copilot’s Agent mode to refactor complex and deeply nested conditional code."
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+  - "Experience using GitHub Copilot in Visual Studio Code."
+  - "Experience developing C# applications."
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
-  - TODO
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
-  - TODO
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-  {{products}}
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
-  - TODO
+levels:
+  - intermediate
+roles:
+  - developer
+products:
+  github
+  vs-code
+subjects:
+  - github-copilot
 units:
 - learn.simplify-complex-conditionals-github-copilot-agent.introduction
-- learn.simplify-complex-conditionals-github-copilot-agent.learning-content
-- learn.simplify-complex-conditionals-github-copilot-agent.learning-content
-- learn.simplify-complex-conditionals-github-copilot-agent.learning-content
-- learn.simplify-complex-conditionals-github-copilot-agent.learning-content
-- learn.simplify-complex-conditionals-github-copilot-agent.learning-content
-- learn.simplify-complex-conditionals-github-copilot-agent.exercise
+- learn.simplify-complex-conditionals-github-copilot-agent.review-impact-complex-conditionals
+- learn.simplify-complex-conditionals-github-copilot-agent.examine-characteristics-complex-conditionals
+- learn.simplify-complex-conditionals-github-copilot-agent.examine-techniques-simplify-complex-conditionals
+- learn.simplify-complex-conditionals-github-copilot-agent.analyze-complex-logic-github-copilot-ask
+- learn.simplify-complex-conditionals-github-copilot-agent.refactor-complex-conditionals-github-copilot-agent
+- learn.simplify-complex-conditionals-github-copilot-agent.exercise-simplify-complex-conditionals-github-copilot
 - learn.simplify-complex-conditionals-github-copilot-agent.knowledge-check
 - learn.simplify-complex-conditionals-github-copilot-agent.summary
 badge:
