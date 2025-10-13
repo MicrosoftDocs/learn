@@ -1,61 +1,66 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-versioning-strategy
 metadata:
-  title: Implement a versioning strategy
-  description: "Implement a versioning strategy"
-  ms.date: 05/24/2024
-  author: wwlpublish
+  title: Implement a Versioning Strategy
+  description: "Learn to implement effective versioning strategies for packages using semantic versioning, package promotion workflows, and Azure Artifacts views to manage package quality and lifecycle."
+  ms.date: 10/13/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
-  ms.custom:
-  - N/A
   ms.service: azure
-  ai-usage: human-only
-title: Implement a versioning strategy
-summary: This module explains versioning strategies for packaging, best practices for versioning, and package promotion.
+  ai-usage: ai-assisted
+title: Implement a Versioning Strategy
+summary: This module explains versioning strategies for packaging, semantic versioning principles, package promotion workflows, and best practices for managing package versions throughout the software development lifecycle. Learn to use Azure Artifacts views to indicate package quality and implement automated versioning in CI/CD pipelines.
 abstract: |
   By the end of this module, you're able to:
 
-  -   Implement a versioning strategy
-
-  -   Promote packages
-
-  -   Push packages from pipeline
-
-  -   Describe semantic and explore best practices for versioning
-prerequisites: None
+  -   Understand the importance of versioning for package management and dependency tracking
+  -   Implement semantic versioning (SemVer 2.0) for consistent version numbering
+  -   Use Azure Artifacts views (@Local, @Prerelease, @Release) to manage package quality
+  -   Promote packages through different views based on quality levels
+  -   Push packages from build pipelines with appropriate version numbers
+  -   Apply best practices for versioning strategies in DevOps workflows
+prerequisites: |
+  -   Basic understanding of DevOps concepts and CI/CD pipelines
+  -   Familiarity with package management and dependency management principles
+  -   Experience with Azure DevOps or similar CI/CD platforms
+  -   Knowledge of software versioning concepts is beneficial
 iconUrl: /training/achievements/4-implement-a-versioning-strategy.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 subjects:
-- architecture
+  - devops
 units:
-- learn.wwl.implement-versioning-strategy.introduction
-- learn.wwl.implement-versioning-strategy.understand-versioning-of-artifacts
-- learn.wwl.implement-versioning-strategy.explore-semantic-versioning
-- learn.wwl.implement-versioning-strategy.examine-release-views
-- learn.wwl.implement-versioning-strategy.promote-packages
-- learn.wwl.implement-versioning-strategy.explore-best-practices-for-versioning
-- learn.wwl.implement-versioning-strategy.knowledge-check
-- learn.wwl.implement-versioning-strategy.summary
+  - learn.wwl.implement-versioning-strategy.introduction
+  - learn.wwl.implement-versioning-strategy.understand-versioning-of-artifacts
+  - learn.wwl.implement-versioning-strategy.explore-semantic-versioning
+  - learn.wwl.implement-versioning-strategy.examine-release-views
+  - learn.wwl.implement-versioning-strategy.promote-packages
+  - learn.wwl.implement-versioning-strategy.explore-best-practices-for-versioning
+  - learn.wwl.implement-versioning-strategy.knowledge-check
+  - learn.wwl.implement-versioning-strategy.summary
 badge:
-  uid: learn.wwl.implement-versioning-strategy.badge
+  uid: learn.wwl.implement-versioning-strategy.badge
