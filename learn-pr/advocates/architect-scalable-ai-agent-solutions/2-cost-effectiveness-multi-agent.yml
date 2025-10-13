@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.aarchitect-scalable-efficient-ai-agent-solutions.cost-effectiveness-multi-agent
+title: The cost perspective of multi-agent intelligence, a strategic lens for enterprise AI
+metadata:
+  title: The Cost Perspective of Multi-Agent Intelligence, a Strategic Lens for Enterprise AI
+  description: Learn whether to scale with monolithic single-agent architectures or embrace modular, multi-agent intelligence.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-cost-effectiveness-multi-agent.md)]

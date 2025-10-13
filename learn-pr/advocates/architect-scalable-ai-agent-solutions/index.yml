@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.architect-scalable-efficient-ai-agent-solutions
+metadata:
+  title: Architect scalable and cost-efficient AI agent solutions on Azure
+  description: This module guides learners through designing AI agent architectures that scale with business demand, provide deep visibility into cost drivers, and support long-term governance. Participants explore reference architectures, orchestration patterns, and financial design principles that ensure operational efficiency, cost control, and strategic alignment.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-task-based
+  ms.service: artificial-intelligence
+title: Architect scalable and cost-efficient AI agent solutions on Azure
+summary: "This module guides learners through designing AI agent architectures that scale with business demand, provide deep visibility into cost drivers, and support long-term governance. Participants explore reference architectures, orchestration patterns, and financial design principles that ensure operational efficiency, cost control, and strategic alignment."
+abstract: |
+  In this module, you learn how to design AI agent architectures that scale with business demand, provide deep visibility into cost drivers, and support long-term governance. You explore reference architectures, best practices, multi-agent design options, and financial design principles that ensure operational efficiency, cost control, and strategic alignment.
+  By the end of this module, you're able to:
+    - Leverage reference architectures and orchestration patterns for scalable AI agent solutions.
+    - Describe cost-effectiveness strategies for multi-agent systems.
+    - Apply design principles and strategies for cost-efficient AI agent deployments.
+    - Align AI agent architecture with business strategy and financial goals.
+prerequisites: |
+  - Basic understanding of AI and large language models (LLMs)
+  - Familiarity with cloud platforms and software lifecycle concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - developer
+products: 
+  - azure-ai-foundry
+  - ai-services
+  - azure-openai
+  - ms-copilot
+subjects: 
+  - artificial-intelligence
+units:
+- learn.architect-scalable-efficient-ai-agent-solutions.cost-effectiveness-multi-agent
+- learn.architect-scalable-efficient-ai-agent-solutions.reference-architecture
+- learn.architect-scalable-efficient-ai-agent-solutions.design-principles
+- learn.architect-scalable-efficient-ai-agent-solutions.knowledge-check
+- learn.architect-scalable-efficient-ai-agent-solutions.summary
+badge:
+  uid: learn.architect-scalable-efficient-ai-agent-solutions.badge
