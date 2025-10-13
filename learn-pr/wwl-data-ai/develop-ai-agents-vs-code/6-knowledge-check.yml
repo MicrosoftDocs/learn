@@ -36,13 +36,13 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. MCP servers complement built-in tools rather than replacing them, providing additional standardized tool options."
   - content: "How does the Azure AI Foundry Agent Service manage conversation sessions when users interact with deployed agents?"
-  choices:
-  - content: "The system creates individual threads for each conversation to manage context and message history"
-    isCorrect: true
-    explanation: "Correct. When users interact with deployed agents, the system creates threads (conversation sessions) that store messages and maintain context throughout the conversation, with individual messages and runs managed within those threads."
-  - content: "Each message is processed independently with no conversation history"
-    isCorrect: false
-    explanation: "Incorrect. The system maintains conversation context through threads that store message history and context."
-  - content: "All user conversations are combined into one shared global session"
-    isCorrect: false
-    explanation: "Incorrect. Each conversation gets its own separate thread to maintain individual context and message history."
+    choices:
+    - content: "The system creates individual threads for each conversation to manage context and message history"
+      isCorrect: true
+      explanation: "Correct. When users interact with deployed agents, the system creates threads (conversation sessions) that store messages and maintain context throughout the conversation, with individual messages and runs managed within those threads."
+    - content: "Each message is processed independently with no conversation history"
+      isCorrect: false
+      explanation: "Incorrect. The system maintains conversation context through threads that store message history and context."
+    - content: "All user conversations are combined into one shared global session"
+      isCorrect: false
+      explanation: "Incorrect. Each conversation gets its own separate thread to maintain individual context and message history."
