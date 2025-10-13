@@ -34,9 +34,9 @@ units:
   - learn.refactor-large-functions-github-copilot.introduction
   - learn.refactor-large-functions-github-copilot.examine-impact-large-multipurpose-functions
   - learn.refactor-large-functions-github-copilot.examine-characteristics-large-functions
-  - learn.refactor-large-functions-github-copilot.TBD
-  - learn.refactor-large-functions-github-copilot.TBD
-  - learn.refactor-large-functions-github-copilot.TBD
+  - learn.refactor-large-functions-github-copilot.identify-evaluate-large-functions-github-copilot-ask
+  - learn.refactor-large-functions-github-copilot.refactor-large-functions-github-copilot-agent
+  - learn.refactor-large-functions-github-copilot.test-refactored-code
   - learn.refactor-large-functions-github-copilot.TBD
   - learn.refactor-large-functions-github-copilot.knowledge-check
   - learn.refactor-large-functions-github-copilot.summary
