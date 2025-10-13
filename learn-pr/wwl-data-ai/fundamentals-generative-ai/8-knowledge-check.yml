@@ -5,50 +5,81 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Module assessment
-  description: This knowledge check is based on content about generative AI and language models.
+  description: Check your understanding of the concepts covered in this module.
   author: sherzyang
   ms.author: sheryang
-  ms.date: 11/26/2024
+  ms.date: 10/5/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
   module_assessment: true
-durationInMinutes: 4
+durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "What are two key components of transformer architecture that support today's generative AI?"
+  - content: "What is a *large language model* (LLM)?"
     choices:
-    - content: "Recurrent Neural Networks (RNNs) and memory retention"
-      isCorrect: false
-      explanation: "RNNs were developed before transformer architecture. Transformer architecture is able to overcome challenges with RNNs."
-    - content: "Attention and positional encoding"
-      isCorrect: true 
-      explanation: "The most important innovations presented in the transformer architecture were *positional encoding* and *multi-head attention*."
-    - content: "Prompt engineering and groundedness"
-      isCorrect: false
-      explanation: Prompt engineering describes the process of prompt improvement, and while important, isn't a key component of transformer architecture. Groundedness is a metric that measures response quality.     
-  - content: "What is the main difference between Large Language Models and Small Language Models?"
-    choices:
-    - content: "Large Language Models are trained with vast quantities of text. The text represents a wide range of general subject matter, while Small Language Models are trained with smaller, more subject-focused datasets."
-      isCorrect: true 
-      explanation: "Large Language Models are trained with vast quantities of text and have many parameters, while Small Language Models are trained with smaller datasets and have fewer parameters."
-    - content: "Large Language Models are trained to include an understanding of context, while Small Language Models aren't."
-      isCorrect: false
-      explanation: "Both large language models (LLMs) and small language models (SLMs) are trained to take into account context."
-    - content: "Large Language Models have fewer parameters than Small Language Models."
-      isCorrect: false
-      explanation: "Incorrect. Large Language Models have many billions (even trillions) of parameters, which is more than Small Language Models."
-  - content: "What are the four stages in the process of developing and implementing a plan for responsible AI when using generative models according to Microsoft's guidance?"
-    choices:
-    - content: "Identify potential benefits, Measure the benefits, Enhance the benefits, Operate the solution responsibly"
-      isCorrect: false
-      explanation: "While it's important to identify and enhance benefits, the focus should be on identifying, measuring, and mitigating potential harms."
-    - content: "Identify potential harms, Measure these harms, Mitigate the harms, Operate the solution responsibly"
+    - content: "A type of AI model designed to generate human-like text."
       isCorrect: true
-      explanation: "These stages are the four stages in the process of developing and implementing a plan for responsible AI when using generative models."
-    - content: "Define the problem, Design the solution, Develop the solution, Deploy the solution"
+      explanation: "Correct! A large language model (LLM) is designed to generate human-like text based on the input it receives."
+    - content: "A model that only processes images, not text."
       isCorrect: false
-      explanation: "These stages are general stages of software development, not specific to responsible AI development."
-  
-
+      explanation: "Incorrect. LLMs are designed for text processing."
+    - content: "A small, efficient model for mobile devices."
+      isCorrect: false
+      explanation: "Incorrect. LLMs are typically large and require significant computational resources."
+  - content: "What is the purpose of *tokenization*?"
+    choices:
+    - content: "To sort the words in a sentence alphabetically"
+      isCorrect: false
+      explanation: "Incorrect. Tokenization isn't about sorting words alphabetically."
+    - content: "To break down text into smaller units."
+      isCorrect: true 
+      explanation: "Correct! Tokenization is the process of converting text into individual tokens; which can be words, sub-words, or other meaningful elements."
+    - content: "To convert text into binary code for processing by computers."
+      isCorrect: false
+      explanation: "Incorrect. Tokenization isn't about converting text into binary code."
+  - content: "What are *embeddings*?"
+    choices:
+    - content: "Extra words added by a transformer model to enhance text generation."
+      isCorrect: false
+      explanation: "Incorrect. Embeddings aren't extra words added by the transformer model."
+    - content: "Small language models used for specific tasks."
+      isCorrect: false
+      explanation: "Incorrect. Embeddings aren't small language models."
+    - content: "Vector-based representations of tokens that capture their semantic meaning."
+      isCorrect: true
+      explanation: "Correct! Embeddings are vector-based representations of tokens that capture their semantic meaning."
+  - content: "What does an *attention* layer do in a transformer model?"
+    choices:
+    - content: "Removes irrelevant words from the input text."
+      isCorrect: false
+      explanation: "Incorrect. Attention layers don't remove irrelevant words."
+    - content: "Examines the relationships between each token and the tokens around it."
+      isCorrect: true
+      explanation: "Correct! Attention layers examine the relationships between each token and the tokens around it."
+    - content: "Flags inappropriate content in the generated text."
+      isCorrect: false
+      explanation: "Incorrect. Attention layers don't flag inappropriate content."
+  - content: "What is the purpose of a *system prompt*?"
+    choices:
+    - content: "To provide context and instructions to the AI model."
+      isCorrect: true
+      explanation: "Correct! A system prompt is used to give context and instructions to the AI model, guiding its responses."
+    - content: "To configure a generative AI model to run on a particular operating system."
+      isCorrect: false
+      explanation: "Incorrect. A system prompt isn't related to the operating system configuration."
+    - content: "To store user preferences for future interactions."
+      isCorrect: false
+      explanation: "Incorrect. A system prompt doesn't store user preferences."
+  - content: "What is an *agent* in the context of AI?"
+    choices:
+    - content: "An AI system that can perform tasks on behalf of a user."
+      isCorrect: true
+      explanation: "Correct! An agent in AI is a system that can autonomously perform tasks or make decisions on behalf of a user."
+    - content: "A generative AI model that operates in secret."
+      isCorrect: false
+      explanation: "Incorrect. An agent isn't defined by its operational transparency."
+    - content: "A human operator to whom generative AI models escalate requests they can't handle."
+      isCorrect: false
+      explanation: "Incorrect. An agent isn't a human operator."

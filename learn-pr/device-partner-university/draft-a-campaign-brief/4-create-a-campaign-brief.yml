@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.draft-a-campaign-brief.create-a-campaign-brief
+title: Use Copilot in Word to create a campaign brief
+metadata:
+  title: Use Copilot In Word To Create A Campaign Brief
+  description: This content is part of the "Draft a campaign brief using Copilot in Word" module.
+  ms.date: 10/07/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-create-a-campaign-brief.md)]
