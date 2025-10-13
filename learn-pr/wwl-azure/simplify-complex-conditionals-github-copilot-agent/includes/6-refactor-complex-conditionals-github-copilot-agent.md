@@ -1,10 +1,10 @@
-# Unit 5: Refactoring Complex Conditionals with GitHub Copilot Chat (Agent Mode)
+# Unit 5: Refactor Complex Conditionals using GitHub Copilot's Agent Mode
 
 After analyzing the code and formulating a plan in Ask mode, the next step is to implement the refactoring. This is where GitHub Copilot Chat’s Agent mode comes into play. Agent mode allows Copilot to act on your behalf inside the IDE – it can edit files, apply changes, and even run commands as instructed. Essentially, it’s like a junior developer you can ask to carry out the refactoring steps, while you supervise the changes.
 
 ## What is Agent Mode?
 
-In Agent mode, Copilot can modify your actual codebase. It has access to your workspace and can open files, refactor code, and even execute build or test commands, depending on your prompts. It “reasons” across your project, meaning it can see multiple files if needed and ensure consistency (for example, if you rename a function, Agent mode can update all references to it). Unlike Ask mode’s one-shot Q&A, Agent mode can perform multi-step tasks autonomously: it plans out a series of edits and executes them, only pausing if it needs clarification or confirmation for something potentially risky. It’s powerful, but with that power comes the need for careful instructions and validation.
+In Agent mode, Copilot can modify your actual codebase. It has access to your workspace and can open files, refactor code, and even execute build or test commands, depending on your prompts. It "reasons" across your project, meaning it can see multiple files if needed and ensure consistency (for example, if you rename a function, Agent mode can update all references to it). Unlike Ask mode’s one-shot Q&A, Agent mode can perform multi-step tasks autonomously: it plans out a series of edits and executes them, only pausing if it needs clarification or confirmation for something potentially risky. It’s powerful, but with that power comes the need for careful instructions and validation.
 
 ## Using Agent Mode to Apply the Refactor
 
@@ -12,7 +12,7 @@ Building on the discount calculation example from Unit 4, let’s walk through a
 
 ### Switch to Agent Mode in Copilot Chat
 
-In your IDE (such as VS Code), change the Copilot Chat mode to “Agent”. You might see a note indicating that the agent can now run commands and edit files. Ensure you’ve saved your work or are using version control, so you can track changes.
+In your IDE (such as VS Code), change the Copilot Chat mode to "Agent". You might see a note indicating that the agent can now run commands and edit files. Ensure you’ve saved your work or are using version control, so you can track changes.
 
 ### Prepare Your Refactoring Instructions
 
@@ -29,15 +29,15 @@ You can choose to give these instructions one at a time or as a batch. Agent mod
 
 You could try a comprehensive prompt like:
 
-> “Copilot, refactor the `CalculateDiscount` method as follows:  
+> "Copilot, refactor the `CalculateDiscount` method as follows:  
 > - Add early returns at the top for any conditions that should short-circuit (like if `order` is null or `coupon` is invalid).  
 > - Extract the code that validates and applies the coupon into a new function `ApplyCouponDiscount(Order order, Coupon coupon)` and call that from `CalculateDiscount`.  
 > - Ensure that premium members have their discount applied in one place (currently it’s scattered).  
 > - Simplify any nested ifs related to holiday sales into clearer logic.  
-> Please preserve the method’s behavior and outputs.”
+> Please preserve the method’s behavior and outputs."
 
 Copilot’s agent will parse this and likely break it into sub-tasks. It might respond in the chat with something like:  
-> “Understood. I will 1) open the file containing CalculateDiscount, 2) add guard clauses for null order and invalid coupon, 3) create a new method ApplyCouponDiscount and move relevant logic there, 4) adjust premium member discount logic, 5) simplify holiday sale logic.”
+> "Understood. I will 1) open the file containing CalculateDiscount, 2) add guard clauses for null order and invalid coupon, 3) create a new method ApplyCouponDiscount and move relevant logic there, 4) adjust premium member discount logic, 5) simplify holiday sale logic."
 
 Then it will start executing.
 
@@ -79,7 +79,7 @@ Treat Copilot as an assistant – you can keep refining until the code is both c
 
 ### Finalize and Commit the Changes
 
-Once satisfied, make sure to save all changes and commit them to version control with an appropriate message (e.g., “Refactored CalculateDiscount for clarity – no logic change”).
+Once satisfied, make sure to save all changes and commit them to version control with an appropriate message (e.g., "Refactored CalculateDiscount for clarity – no logic change").
 
 ## Leveraging Ask Mode Insights
 

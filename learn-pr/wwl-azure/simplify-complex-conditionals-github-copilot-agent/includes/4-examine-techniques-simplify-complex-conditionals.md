@@ -1,14 +1,14 @@
-# Unit 3: Techniques to Simplify Complex Conditionals
+# Unit 3: Examine the techniques used to simplify complex conditionals
 
-Refactoring complex conditionals means applying structured techniques to make the code simpler and flatter without altering its behavior. There are several time-tested approaches to achieve this. As an experienced developer might say: “We want to tame the complexity, one step at a time.” Below are key techniques to simplify nested or convoluted conditional logic, along with how they help.
+Refactoring complex conditionals means applying structured techniques to make the code simpler and flatter without altering its behavior. There are several time-tested approaches to achieve this. As an experienced developer might say: "We want to tame the complexity, one step at a time." Below are key techniques to simplify nested or convoluted conditional logic, along with how they help.
 
 ## Use Guard Clauses (Early Returns) to Flatten Nesting
 
 **What it is:**  
-A guard clause is a conditional check that immediately exits the function (or otherwise prevents further execution) if a certain condition is met, rather than wrapping the main logic inside an `if`. By handling edge cases or invalid conditions upfront, you avoid deep nesting and make the code’s “happy path” more prominent.
+A guard clause is a conditional check that immediately exits the function (or otherwise prevents further execution) if a certain condition is met, rather than wrapping the main logic inside an `if`. By handling edge cases or invalid conditions upfront, you avoid deep nesting and make the code’s "happy path" more prominent.
 
 **How it helps:**  
-Guard clauses reduce indentation levels dramatically. Instead of code that says “if X is true, then inside that if Y is true, then inside that if Z is true, do something,” you invert the logic: check for the opposite of X, Y, or Z and bail out early. The result is a series of simple one-level checks. This improves readability because the normal flow of the function isn’t buried in many layers of braces. It also aligns with the fail-fast principle – error or stop conditions are handled immediately, so the rest of the function can assume those conditions are false and focus on the main task.
+Guard clauses reduce indentation levels dramatically. Instead of code that says "if X is true, then inside that if Y is true, then inside that if Z is true, do something," you invert the logic: check for the opposite of X, Y, or Z and bail out early. The result is a series of simple one-level checks. This improves readability because the normal flow of the function isn’t buried in many layers of braces. It also aligns with the fail-fast principle – error or stop conditions are handled immediately, so the rest of the function can assume those conditions are false and focus on the main task.
 
 **Example (Before and After):**
 
@@ -48,7 +48,7 @@ void ProcessOrder(Order order) {
 }
 ```
 
-In the refactored version, each `if` handles a bad-case scenario and returns early. Now the “happy path” (where the order is non-null, valid, and not expired) is at the bottom, with minimal indentation. Each condition is checked sequentially and independently, and the outcome for each failed check is immediately clear. This approach eliminated multiple levels of braces and made the function’s purpose more obvious.
+In the refactored version, each `if` handles a bad-case scenario and returns early. Now the "happy path" (where the order is non-null, valid, and not expired) is at the bottom, with minimal indentation. Each condition is checked sequentially and independently, and the outcome for each failed check is immediately clear. This approach eliminated multiple levels of braces and made the function’s purpose more obvious.
 
 Guard clauses are especially useful for input validation and error handling. One consideration: ensure that returning early (or throwing an exception early) is acceptable in your context. Embracing multiple return points can feel odd if you were taught to have a single return at function end, but modern best practices favor clarity over a single exit point.
 
@@ -81,7 +81,7 @@ Even without pattern matching, using a `switch` or dictionary for multiple discr
 
 ## Decompose and Encapsulate Complex Conditions
 
-**What it is:** This involves breaking down a complicated conditional into smaller pieces – either by extracting parts of the logic into helper functions (methods) or by using intermediate boolean variables with meaningful names. The idea is to give a name to a sub-condition or to separate the “decision” from the “action” for clarity.
+**What it is:** This involves breaking down a complicated conditional into smaller pieces – either by extracting parts of the logic into helper functions (methods) or by using intermediate boolean variables with meaningful names. The idea is to give a name to a sub-condition or to separate the "decision" from the "action" for clarity.
 
 **How it helps:** Decomposing improves readability and reuse. By moving a logical check into a function with a clear name, the `if` statement becomes self-explanatory.
 
@@ -118,7 +118,7 @@ This conveys meaning without you having to parse the logic all at once.
 
 In summary, divide and conquer the conditional: each piece should do one thing. The result is code that is easier to read, maintain, and test.
 
-## Consolidate Redundant Logic and Remove “Control Flag” Variables
+## Consolidate Redundant Logic and Remove "Control Flag" Variables
 
 **What it is:** This step is about cleaning up any duplication or unnecessary state in your conditional logic. Consolidation means if the same condition or computation is performed in multiple places, do it once in one place. Removing control flags means eliminating variables that are used to steer complex flows when they aren’t truly needed.
 

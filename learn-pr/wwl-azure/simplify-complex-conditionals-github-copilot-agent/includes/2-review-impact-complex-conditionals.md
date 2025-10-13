@@ -1,6 +1,6 @@
-# Unit 1: Why Complex Conditionals Are a Problem
+# Unit 1: Review the impact of complex conditionals
 
-Complex conditionals arise when decision logic in code becomes complicated – for example, deeply nested `if` statements or large compound `if` conditions with many `&&` and `||` parts. Such code might function correctly, but it poses several significant problems.
+Code containing complex conditionals might function correctly, but it poses several problems.
 
 ## Problems associated with complex conditionals
 
@@ -12,7 +12,7 @@ Complex conditionals arise when decision logic in code becomes complicated – f
 
 - Testing Challenges: The more branches and nesting, the more test cases are needed to cover all paths. Thoroughly testing a function with many conditional branches is time-consuming, and it’s easy to miss some logic paths. For example, consider a five-level nested `if`: for full coverage you must trigger every branch at each level – an exponential explosion of test cases. If testing is incomplete, bugs linger. Moreover, when you refactor or extend such code, you must re-run a large battery of tests to ensure nothing broke. Complex conditionals thus reduce confidence in code changes because verifying correctness is harder.
 
-- Poor Team Agility: In a team setting, if one module of code is known to have an overly complex decision logic, new team members struggle to understand it, and even experienced members might tread carefully. Code reviews for such modules are longer and more contentious (“Are we sure we handled all cases here?”). This slows down development and can delay feature releases. It’s not uncommon to see comment blocks or documentation trying to explain a convoluted `if/else` chain – a red flag that the code itself isn’t clear.
+- Poor Team Agility: In a team setting, if one module of code is known to have an overly complex decision logic, new team members struggle to understand it, and even experienced members might tread carefully. Code reviews for such modules are longer and more contentious ("Are we sure we handled all cases here?"). This slows down development and can delay feature releases. It’s not uncommon to see comment blocks or documentation trying to explain a convoluted `if/else` chain – a red flag that the code itself isn’t clear.
 
 Consider the following "arrow code" example:
 
@@ -37,9 +37,8 @@ if (user != null) {
 }
 ```
 
-As a reader, it’s hard to quickly tell what conditions lead to “Access granted” versus various denial messages. The nesting pushes the important logic to the far right, creating an “arrowhead” shape. You have to mentally invert the structure to understand it: first check user not null, then active, then role, then permission – all in reverse due to nesting. This example exhibits all the issues above: it’s tedious to read and reason about, adding a new access rule would require touching multiple places, and you’d need many tests (null user, inactive user, non-admin user, admin without permission, admin with permission, etc.) to cover it all.
+When you review this code sample for the first time, it takes a minute to determine the conditions that lead to "Access granted" versus the various denial messages. The nesting pushes the important logic to the far right, creating an "arrowhead" shape. You have to mentally invert the structure to understand it: first check user not null, then active, then role, then permission – all in reverse due to nesting. This example exhibits all the issues above: it’s tedious to read and reason about, adding a new access rule would require touching multiple places, and you’d need many tests (null user, inactive user, non-admin user, admin without permission, admin with permission, etc.) to cover it all.
 
 ## Summary of Issues
 
-Complex conditionals decrease code quality by making code less readable, harder to modify, and more error-prone. They often indicate that a function is doing too much or that logic is not well-structured. Recognizing these problems is the first step; whenever you notice code that is difficult to understand due to nested or elaborate conditionals, it’s a sign that refactoring might be needed.
-
+Complex conditionals decrease code quality by making code less readable, harder to modify, and more error-prone. Complex conditionals often indicate that a function is doing too much or that logic is not well-structured. Recognizing these problems is the first step; whenever you notice code that is difficult to understand due to nested or elaborate conditionals, it’s a sign that refactoring might be needed.

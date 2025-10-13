@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.simplify-complex-conditionals-github-copilot-agent.review-impact-complex-conditionals
+title: Review the impact of complex conditionals
+metadata:
+  title: Review the Impact of Complex Conditionals
+  description: "Review the impact of complex conditionals on code quality, maintainability, and readability. Understand why simplifying complex conditionals is important for effective coding practices."
+  ms.date: 10/17/2025
+  author: cahowd
+  ms.author: cahowd
+  ms.topic: unit
+  ms.service: github-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-review-impact-complex-conditionals.md)]
