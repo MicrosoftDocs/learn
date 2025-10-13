@@ -3,12 +3,12 @@ uid: learn.wwl.defender-for-cloud-ai-protect-workloads
 metadata:
   title: Protect AI workloads with Microsoft Defender for Cloud
   description: Learn how Microsoft Defender for Cloud extends protection to AI workloads across Azure. See how it discovers AI resources, assesses configuration risks, detects active threats, and integrates with Microsoft Defender XDR for unified investigation and response.
-  ms.date: 10/10/2025
+  ms.date: 10/13/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ai-usage: ai-assisted
-  ms.service: purview
+  ms.service: microsoft-defender
 title: Protect AI workloads with Microsoft Defender for Cloud
 
 summary: |
@@ -34,13 +34,15 @@ iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
-- data-engineer
-- data-analyst
+- security-engineer
 products:
-- microsoft-purview
+- azure
+- azure-ai-foundry
+- defender-for-cloud
+- entra-id
+- defender-xdr
 subjects:
-- data-management
-- compliance
+- cloud-security
 units:
 - learn.wwl.defender-for-cloud-ai-protect-workloads.introduction
 - learn.wwl.defender-for-cloud-ai-protect-workloads.enable-ai-workload-plan
