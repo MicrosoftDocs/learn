@@ -1,78 +1,45 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+# Unit 1: Why Complex Conditionals Are a Problem
 
-    Goal: briefly summarize the key skill this unit will teach
+Complex conditionals arise when decision logic in code becomes complicated – for example, deeply nested `if` statements or large compound `if` conditions with many `&&` and `||` parts. Such code might function correctly, but it poses several significant problems.
 
-    Heading: none
+## Problems associated with complex conditionals
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+- Reduced Readability: Deep nesting makes code hard to follow at a glance. You often have to scroll horizontally or match many braces to understand the flow. Multiple layers of conditions increase cognitive load, meaning a developer must hold several state checks in mind at once. The intent of the code gets obscured by the complexity of its structure.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+- Difficult Maintenance: Code with lots of intertwined conditions is brittle. When requirements change or a bug surfaces, modifying that code is risky and error-prone. A maintainer might introduce a new condition hoping to fix one case, only to break another because the interactions aren’t obvious. Complex conditional logic often violates clean code principles like single responsibility (one function now handles many decision paths) and obscures the intended behavior. As a result, developers may avoid changing it, leading to stagnation or awkward workarounds elsewhere.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+- Higher Error Frequency: There is a known correlation between a program’s complexity (measured by metrics like cyclomatic complexity) and its bug rates. Every additional conditional branch creates new pathways through the code that need to be handled correctly. A function with a high cyclomatic complexity (lots of independent paths) is statistically more likely to contain errors or unanticipated edge cases. In other words, complex conditionals tend to be fragile – they might work for the scenarios the original developer thought of, but unexpected combinations of inputs can slip through the cracks.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+- Testing Challenges: The more branches and nesting, the more test cases are needed to cover all paths. Thoroughly testing a function with many conditional branches is time-consuming, and it’s easy to miss some logic paths. For example, consider a five-level nested `if`: for full coverage you must trigger every branch at each level – an exponential explosion of test cases. If testing is incomplete, bugs linger. Moreover, when you refactor or extend such code, you must re-run a large battery of tests to ensure nothing broke. Complex conditionals thus reduce confidence in code changes because verifying correctness is harder.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+- Poor Team Agility: In a team setting, if one module of code is known to have an overly complex decision logic, new team members struggle to understand it, and even experienced members might tread carefully. Code reviews for such modules are longer and more contentious (“Are we sure we handled all cases here?”). This slows down development and can delay feature releases. It’s not uncommon to see comment blocks or documentation trying to explain a convoluted `if/else` chain – a red flag that the code itself isn’t clear.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+Consider the following "arrow code" example:
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+```csharp
+// Pseudocode example of deeply nested conditionals ("arrow code")
+if (user != null) {
+    if (user.IsActive) {
+        if (user.Role == "Admin") {
+            if (user.HasPermission("View")) {
+                Console.WriteLine("Access granted");
+            } else {
+                Console.WriteLine("Permission denied");
+            }
+        } else {
+            Console.WriteLine("Role not authorized");
+        }
+    } else {
+        Console.WriteLine("User is not active");
+    }
+} else {
+    Console.WriteLine("User not found");
+}
+```
 
-    Goal: State concisely what's covered in this unit
+As a reader, it’s hard to quickly tell what conditions lead to “Access granted” versus various denial messages. The nesting pushes the important logic to the far right, creating an “arrowhead” shape. You have to mentally invert the structure to understand it: first check user not null, then active, then role, then permission – all in reverse due to nesting. This example exhibits all the issues above: it’s tedious to read and reason about, adding a new access rule would require touching multiple places, and you’d need many tests (null user, inactive user, non-admin user, admin without permission, admin with permission, etc.) to cover it all.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## Summary of Issues
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+Complex conditionals decrease code quality by making code less readable, harder to modify, and more error-prone. They often indicate that a function is doing too much or that logic is not well-structured. Recognizing these problems is the first step; whenever you notice code that is difficult to understand due to nested or elaborate conditionals, it’s a sign that refactoring might be needed.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->

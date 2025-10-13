@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.simplify-complex-conditionals-github-copilot-agent.{{unitName}}
-title: Enter exercise title
+title: Summary
 metadata:
-  title: exercise
+  title: summary
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 10/13/2025
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  ms.date: 10/17/2025
+  author: cahowd
+  ms.author: cahowd
   ms.topic: unit
 ###########################################################################
 ###
@@ -23,4 +23,4 @@ metadata:
   ms.service: TODO
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-exercise.md)]
+  [!include[](includes/7-summary.md)]

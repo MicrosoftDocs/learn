@@ -11,4 +11,4 @@ metadata:
   ms.service: github-copilot
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-learning-content.md)]
+  [!include[](includes/5-learning-content.md)]

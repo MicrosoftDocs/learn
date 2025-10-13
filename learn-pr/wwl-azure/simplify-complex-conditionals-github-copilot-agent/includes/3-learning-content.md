@@ -1,104 +1,47 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+# Unit 2: How Complex Conditionals Emerge (and How to Recognize Them)
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+Rarely does a developer set out to write a convoluted tangle of `if` statements from scratch. Instead, complex conditionals accumulate gradually as a codebase evolves. Understanding this evolutionary process can help you identify these patterns in your own projects (and ideally prevent them early).
 
-    Heading: none
+- **Incremental Feature Additions**  
+  The code often begins with a straightforward decision structure for a simple scenario. Over time, new features or requirements are added. Each time, instead of redesigning the logic, a developer may choose the path of least resistance: just add another `if` or extend the existing conditional. For example, an order processing routine might start by checking `if (order.Total > 100) { applyDiscount(); }`. Later, a special discount for VIP customers gets added as another condition, then a holiday promotion as a nested condition inside that, and so on. Each individual change seems small, but they compound into a complex net of conditions.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+- **Edge Case Bug Fixes**  
+  Another common source is quick patches for bugs. Suppose QA finds that “if the user’s account is locked and they try a password reset, the system behaves incorrectly.” A developer might address this by inserting a targeted conditional check in the code (“if accountLocked and passwordReset then do X”). This fix works and passes tests. However, it adds another branch to the logic. Over the project’s life, many such edge-case fixes might be piled on, each one adding a bit more nesting or complexity. What started as a simple `if/else` can turn into a multi-branched tree as special cases are bolted on without refactoring.
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+- **Evolving Requirements**  
+  Requirements often grow beyond the original design of the code. Consider a loan approval system that initially checks a few basics (credit score and income) to make a decision. As the business expands, they introduce more rules: special handling for first-time borrowers, conditional approval with collateral, different rules for various loan types, regulatory checks, etc. If the original code isn’t restructured, the natural implementation is to nest more `if` statements: e.g., inside the `if (creditOK)` block, add `if (hasCollateral) ... else ...`, and within that, perhaps another `if` for a regulatory flag. Each new rule increases the nesting or adds new branches at the same level. Over months or years, the loan approval function morphs into a giant method hundreds of lines long, with a tangle of conditions covering every scenario the business has encountered.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+- **Lack of Periodic Refactoring**  
+  The crucial factor is that these incremental additions aren’t accompanied by cleaning up the code structure. It’s common in fast-paced development to de-prioritize refactoring (“it works, let’s not touch it”). As a result, conditional logic that should perhaps have been redesigned (split into smaller functions, or turned into a configuration table, etc.) remains in an increasingly ungainly form. By the time someone notices how unwieldy it’s become, the function is so fragile that people are reluctant to refactor it – a classic accumulation of technical debt.
 
-    Goal: Describe the part of the scenario covered in this exercise
+## Signs of Overly Complex Conditionals
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+As a developer, you should be on the lookout for red flags in code that suggest conditional complexity has gotten out of hand:
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+- **Deep nesting levels**  
+  Functions with more than 2–3 levels of nested `if` statements (especially with interleaved `else` blocks) are strong candidates. Visually, the code forms an indented arrow shape to the right, making it hard to align the logic in your mind. If you find yourself counting braces or indentations to figure out which `else` pairs with which `if`, that’s a bad sign.
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+- **Long chains of else-if or switch cases**  
+  A series of `else if (...) { ... } else if (...) { ... } ...` that goes on for dozens of lines may indicate the code is handling many variants in one place. Sometimes a long `switch` statement with many cases can be equivalent. These can often be simplified or broken into smaller pieces (or data-driven mappings) if they represent a lot of static conditions.
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+- **Complex boolean expressions**  
+  Conditionals that combine many terms, for example:  
+  `if ((A && B && !C) || (D && (E || !F))) { ... }`  
+  such expressions are hard to read and even harder to get right. If you see conditional logic with multiple `&&` and `||` operators mixed with `!` negations, it might benefit from simplification (for instance, by splitting into clearer sub-conditions or using explanatory variables).
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+- **Repeated checks and code duplication**  
+  A subtle indicator is if the same condition or similar code appears in multiple branches. For instance, if you see `if (user.IsAdmin)` in two different parts of an `if/else` ladder, the logic might be restructured to check that once. Or if two branches of a conditional contain a lot of duplicate code with slight differences, that’s a clue the conditional could be refactored to avoid repeating yourself (DRY principle).
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+- **Use of “flag” variables to control flow**  
+  Sometimes developers introduce temporary flags as a workaround for complex logic (e.g., `bool isValid = false; ... if (condition) { isValid = true; } ... if (isValid) { ... }`). While not an `if` nesting per se, it’s often a response to complexity – the code couldn’t easily do what it needed in one pass, so it sets a flag to be checked later. Such patterns can often be eliminated by restructuring conditionals or using early returns.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+## Recognizing Complexity in Real Projects
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+To illustrate, let’s revisit our example scenarios and how they might look in a messy codebase:
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+- The order processing function might have begun with one discount rule; now it has multiple nested `if` blocks, each adding a layer (member discount, then inside that holiday discount, then inside that free shipping conditions, etc.). If you open that function and see indent after indent with business rules buried deep, you’ve hit a complex conditional structure.
 
-    Goal: List the steps they'll do to complete the exercise.
+- The loan approval function might read like a checklist that’s been encoded as code, but without any abstraction: one long method with `if` after `if` checking every criterion in sequence, with nested blocks for combinations of criteria. If printed out, it could run several pages, with lots of opportunities to miss an `else` pairing or a condition that got added in the wrong place.
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+Recognizing these symptoms in code is crucial. Whenever you encounter them, it’s a prompt to step back and consider refactoring. In the next unit, we’ll discuss concrete approaches to transform these complex, hard-to-manage conditionals into cleaner, simpler structures. Remember, the goal of refactoring is not to change what the code does (its external behavior) but to change how the code is organized internally to make it more understandable and maintainable.
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
-
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
