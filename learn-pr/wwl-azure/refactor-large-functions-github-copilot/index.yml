@@ -26,9 +26,10 @@ roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/met
   - developer
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
   - github
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
-  - github-copilot
   - vs-code
+subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - app-development
+  - product
 units:
   - learn.refactor-large-functions-github-copilot.introduction
   - learn.refactor-large-functions-github-copilot.examine-impact-large-multipurpose-functions
