@@ -1,4 +1,4 @@
-One of the most powerful features of AI agents is their ability to use tools that extend their capabilities beyond simple text generation. The Azure AI Foundry for Visual Studio Code extension provides comprehensive support for adding and configuring various types of tools that enable your agents to perform actions, access data, and integrate with external systems.
+One of the most powerful features of AI agents is their ability to use tools that extend their capabilities beyond simple text generation. TThe Azure AI Foundry for Visual Studio Code extension makes it easy to add and configure tools for your agents. These tools enable agents to perform actions, access data, and integrate with external systems.
 
 ## Understanding agent tools
 
@@ -30,7 +30,7 @@ When you add a tool, you can also add any new assets it needs. For example, if y
 
 ## Model Context Protocol (MCP) servers
 
-MCP servers provide a standardized way to add tools to your agents using an open protocol. This approach enables you to leverage community-built tools and create reusable components that work across different agent implementations.
+MCP servers provide a standardized way to add tools to your agents using an open protocol. This approach enables you to use community-built tools and create reusable components that work across different agent implementations.
 
 Key benefits include:
 - **Standardized protocol** for consistent tool communication

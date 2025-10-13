@@ -7,7 +7,7 @@ Azure AI Foundry Agent Service is a managed service in Azure designed to provide
 - **Expanded model choice** - Support for multiple AI models beyond OpenAI
 - **Enterprise security** - Built-in security features for production environments
 - **Advanced data integration** - Seamless connection to Azure data services
-- **Tooling ecosystem** - Access to a variety of built-in and custom tools
+- **Tooling ecosystem** - Access to a various built-in and custom tools
 
 The Visual Studio Code extension provides direct access to these capabilities through an intuitive interface that simplifies the agent development process.
 
@@ -21,9 +21,9 @@ Before creating an agent, complete the following steps:
 
 1. Complete the extension setup and sign in to your Azure account
 1. Create a default Azure AI Foundry project, or select an existing one
-1. Select and deploy the model your agent will use, or use an existing deployment 
+1. Select and deploy the model for your agent to use, or use an existing deployment 
 
-![Screenshot of deploying a model in the Azure AI Foundry VS Code extension.](../media/vs-code-deploy-model.gif)
+![Screenshot of deploying a model in the Azure AI Foundry Visual Studio Code extension.](../media/vs-code-deploy-model.gif)
 
 ### Creating a new agent
 
@@ -40,7 +40,7 @@ When you create an agent, the extension opens both the agent .yaml file and the 
 
 ## Configuring agent properties
 
-Once you've created an agent, the extension provides comprehensive configuration options to define how your agent behaves and interacts with users. The Agent Designer provides an intuitive interface for setting up these properties.
+Once you create an agent, the extension provides comprehensive configuration options to define how your agent behaves and interacts with users. The Agent Designer provides an intuitive interface for setting up these properties.
 
 ### Basic Configuration
 
@@ -103,7 +103,7 @@ For a customer service agent, effective instructions might include:
 
 ## Deploying agents
 
-Once you've configured your agent, you can deploy it to Azure AI Foundry.
+Once you configure your agent, you can deploy it to Azure AI Foundry.
 
 ### Deployment process
 
@@ -111,7 +111,7 @@ To deploy your agent:
 
 1. **Select the "Create on Azure AI Foundry" button** in the bottom-left of the Designer
 2. **Wait for deployment completion** - The extension handles the deployment process
-3. **Refresh the Azure Resources view** in the VS Code navbar
+3. **Refresh the Azure Resources view** in the Visual Studio Code navbar
 4. **Verify deployment** - The deployed agent appears under the Agents subsection
 
 ### Managing deployed agents
@@ -144,4 +144,4 @@ When you interact with deployed agents, the system creates threads to manage con
 
 You can view and manage these threads through the Azure Resources view in the extension.
 
-Creating and configuring AI agents with the Azure AI Foundry Visual Studio Code extension provides a powerful yet accessible approach to agent development. The combination of visual design tools, direct YAML editing, comprehensive configuration options, and integrated testing capabilities enables developers to rapidly prototype and deploy sophisticated AI agents that can handle complex real-world scenarios.
+Creating and configuring AI agents with the Azure AI Foundry Visual Studio Code extension provides a powerful yet accessible approach to agent development. The extension provides visual design tools, direct YAML editing, comprehensive configuration options, and integrated testing capabilities. These features enable developers to rapidly prototype and deploy sophisticated AI agents that can handle complex real-world scenarios.

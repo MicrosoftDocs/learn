@@ -24,7 +24,7 @@ quiz:
     - content: "The Designer view and the Code Generation view"
       isCorrect: false
       explanation: "Incorrect. Code generation is available after deployment, not during initial agent creation."
- - content: "What is a key benefit of using Model Context Protocol (MCP) servers for agent tools?"
+  - content: "What is a key benefit of using Model Context Protocol (MCP) servers for agent tools?"
     choices:
     - content: "They only work with Microsoft-built tools"
       isCorrect: false
