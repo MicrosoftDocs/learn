@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-consolidating-secure-artifacts.migrate-integrating-artifact-repositories
-title: Migrate and integrating artifact repositories
+title: Migrate and Integrate Artifact Repositories
 metadata:
-  title: Migrate and integrating artifact repositories
-  description: "Migrate and integrating artifact repositories"
-  ms.date: 05/08/2024
-  author: wwlpublish
+  title: Migrate and Integrate Artifact Repositories
+  description: "Explore migration strategies and integration approaches for consolidating artifact repositories into Azure Artifacts, including upstream sources and gradual migration patterns."
+  ms.date: 10/13/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
-durationInMinutes: 2
+    - N/A
+durationInMinutes: 4
 content: |
-  [!include[](includes/3-migrate-integrating-artifact-repositories.md)]
+  [!include[](includes/3-migrate-integrating-artifact-repositories.md)]

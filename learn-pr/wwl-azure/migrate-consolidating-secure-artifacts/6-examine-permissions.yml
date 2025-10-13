@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-consolidating-secure-artifacts.examine-permissions
-title: Examine permissions
+title: Examine Permissions
 metadata:
-  title: Examine permissions
-  description: "Examine permissions"
-  ms.date: 05/08/2024
-  author: wwlpublish
+  title: Examine Permissions
+  description: "Explore granular permissions in Azure Artifacts including feed-level and organization-level permissions, and how to assign them to users, teams, and groups."
+  ms.date: 10/13/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
-durationInMinutes: 3
+    - N/A
+durationInMinutes: 6
 content: |
-  [!include[](includes/6-examine-permissions.md)]
+  [!include[](includes/6-examine-permissions.md)]
