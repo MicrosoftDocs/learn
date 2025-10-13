@@ -3,15 +3,15 @@ uid: learn.refactor-large-functions-github-copilot
 metadata:
   title: Refactor large functions using GitHub Copilot Agent
   description: "Learn how to identify large multi-purpose functions and how to refactor large functions into smaller helper classes and static methods by using GitHub Copilot in Visual Studio Code."
-  ms.date: 10/17/2025
-  author: cahowd
+  ms.date: 10/14/2025
+  author: chrishowd
   ms.author: cahowd
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: github-copilot
 title: Refactor large functions using GitHub Copilot Agent
 summary: "This module covers the identification and refactoring of large functions into smaller, more manageable components using GitHub Copilot in Visual Studio Code."
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - "Describe the problems introduced by large, multi-purpose functions and the benefits provided by small, single-purpose functions."
     - "Describe the tools, techniques, and processes used to refactor large functions into smaller functions."
     - "Use GitHub Copilot’s Ask mode to explain a codebase and identify opportunities to convert large functions into smaller, single-purpose functions."
@@ -37,7 +37,7 @@ units:
   - learn.refactor-large-functions-github-copilot.identify-evaluate-large-functions-github-copilot-ask
   - learn.refactor-large-functions-github-copilot.refactor-large-functions-github-copilot-agent
   - learn.refactor-large-functions-github-copilot.test-refactored-code
-  - learn.refactor-large-functions-github-copilot.TBD
+  - learn.refactor-large-functions-github-copilot.exercise-refactor-large-functions-github-copilot
   - learn.refactor-large-functions-github-copilot.knowledge-check
   - learn.refactor-large-functions-github-copilot.summary
 badge:

@@ -3,9 +3,9 @@ uid: learn.refactor-large-functions-github-copilot.examine-impact-large-multipur
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction to refactoring large functions with GitHub Copilot."
-  ms.date: 10/17/2025
-  author: cahowd
+  description: Introduction
+  ms.date: 10/14/2025
+  author: chrishowd
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot

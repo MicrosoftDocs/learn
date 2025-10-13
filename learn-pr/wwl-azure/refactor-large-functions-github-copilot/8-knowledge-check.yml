@@ -1,96 +1,103 @@
 ### YamlMime:ModuleUnit
 uid: learn.refactor-large-functions-github-copilot.{{unitName}}
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 10/9/2025
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  title: Module Assessment
+  description: Module assessment.
+  ms.date: 10/14/2025
+  author: chrishowd
+  ms.author: cahowd
   ms.topic: unit
-###########################################################################
-###
-### If your content is related to a product or service, apply one value from
-### the ms.service allowlist.
-###
-### If your content isn't about a product or service, you can omit the ms.service field.
-###
-### For the list of approved ms.service values, go to
-### https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice.
-###
-### To request new values, go to
-### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
-  ms.service: TODO
-durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.learn.microsoft.com/help/learn/id-guidance-knowledge-check?branch=main)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
+  ms.service: github-copilot
+durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "What is the primary problem with large, multi-purpose functions according to software development best practices?"
     choices:
-    - content: ""
+    - content: "They execute too slowly and consume excessive memory."
+      isCorrect: false
+      explanation: "Incorrect. While performance can be affected, the primary problems are related to code maintainability, readability, and testing rather than execution speed."
+    - content: "They violate the Single Responsibility Principle and are difficult to read, maintain, and test."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Large functions typically handle multiple concerns at once, making them harder to understand, maintain, reuse, and test effectively."
+    - content: "They require more advanced programming languages to implement properly."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. The problems with large functions exist regardless of the programming language used and are related to code structure rather than language complexity."
+  - content: "What is a common threshold guideline for considering a function too large and in need of refactoring?"
     choices:
-    - content: ""
+    - content: "Functions with more than 10 lines of code."
+      isCorrect: false
+      explanation: "Incorrect. While brevity is good, a threshold that specifies 10 lines of code is too restrictive and many perfectly reasonable functions exceed this length."
+    - content: "Functions with 40-50 lines of code or more should be scrutinized for refactoring opportunities."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Most guidelines suggest 40-50 lines as a threshold where you should consider whether the function is doing too much and could benefit from refactoring."
+    - content: "Only functions with more than 200 lines need to be refactored."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. A threshold of 200 lines is too high. Functions should be checked for refactoring long before reaching 200 lines."
+  - content: "Which of the following answer choices is a key indicator that a function violates the Single Responsibility Principle?"
     choices:
-    - content: ""
+    - content: "The function returns a complex data type."
+      isCorrect: false
+      explanation: "Incorrect. Returning complex data types doesn't necessarily indicate multiple responsibilities; it depends on what the function does."
+    - content: "The function contains multiple levels of nested loops and conditional statements."
+      isCorrect: false
+      explanation: "Incorrect. While deep nesting can indicate complexity, it doesn't necessarily mean the function has multiple responsibilities."
+    - content: "The function contains commented sections like '// Step 1', '// Step 2' that suggest multiple distinct responsibilities."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Correct. Comments that divide a function into steps or sections often indicate that the function is handling multiple distinct tasks that could be extracted into separate methods."
+  - content: "What is cyclomatic complexity and why is it important for identifying large functions?"
     choices:
-    - content: ""
+    - content: "It measures the physical lines of code in a function."
+      isCorrect: false
+      explanation: "Incorrect. Cyclomatic complexity measures the number of independent paths through code, not the physical line count."
+    - content: "It measures the number of independent paths through a function's code, with higher values indicating more complex logic that's harder to test."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Cyclomatic complexity counts decision points and paths through code. Higher complexity (typically over 10-15) indicates functions that are harder to understand, test, and maintain."
+    - content: "It measures how many times a function is called throughout the application."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. Cyclomatic complexity is about internal code paths within a function, not how frequently the function is used."
+  - content: "When using GitHub Copilot's Ask mode to analyze large functions, what is the most effective approach?"
     choices:
-    - content: ""
+    - content: "Ask generic questions like 'Is this code good?' without providing specific context."
+      isCorrect: false
+      explanation: "Incorrect. Generic questions without context don't provide actionable insights. Specific, targeted questions yield better analysis."
+    - content: "Ask specific, targeted questions like 'Can you summarize what this function does?' and 'List the distinct tasks this function performs.'"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Specific questions help GitHub Copilot provide detailed analysis that can guide refactoring decisions and identify distinct responsibilities within the function."
+    - content: "Only ask about syntax errors and code formatting issues."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. While syntax and formatting are important, Ask mode is most valuable for understanding functionality, identifying responsibilities, and planning refactoring strategies."
+  - content: "What is the primary advantage of using GitHub Copilot's Agent mode for refactoring large functions?"
+    choices:
+    - content: "It automatically identifies all bugs in the original function."
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. Agent mode focuses on refactoring structure and organization rather than bug detection, though it might help improve code quality."
+    - content: "It can autonomously analyze, plan, and implement refactoring tasks while allowing you to review and approve changes."
+      isCorrect: true
+      explanation: "Correct. Agent mode provides end-to-end assistance by creating a plan, making the necessary code changes, and allowing you to maintain control through review and approval of each change."
+    - content: "It eliminates the need for any testing after refactoring is complete."
+      isCorrect: false
+      explanation: "Incorrect. Testing remains crucial after refactoring to ensure functionality is preserved and that the refactored code works correctly."
+  - content: "What should you do immediately after extracting a method from a large function during refactoring?"
+    choices:
+    - content: "Continue extracting the next method without testing the current extraction."
+      isCorrect: false
+      explanation: "Incorrect. Testing each extraction immediately ensures that functionality is preserved and helps identify issues early in the refactoring process."
+    - content: "Test the extracted method to verify that functionality remains intact before proceeding to the next refactoring step."
+      isCorrect: true
+      explanation: "Correct. Immediate testing after each extraction validates that the refactoring preserves the original behavior and catches any issues before they compound."
+    - content: "Wait until all extractions are complete before running any tests."
+      isCorrect: false
+      explanation: "Incorrect. Testing only at the end makes it difficult to identify which specific change introduced any problems and increases debugging complexity."
+  - content: "When using GitHub Copilot Agent mode to refactor large functions, what is the most effective strategy?"
+    choices:
+    - content: "Ask GitHub Copilot to refactor the entire function in a single command to save time."
+      isCorrect: false
+      explanation: "Incorrect. Large, complex refactoring requests can lead to errors and make it difficult to review changes. Breaking the work into smaller steps is more effective."
+    - content: "Break the refactoring into small, specific steps and review each change carefully before proceeding."
+      isCorrect: true
+      explanation: "Correct. Small, incremental changes are easier to review, validate, and debug if issues arise. This approach maintains control and ensures quality throughout the refactoring process."
+    - content: "Let the agent make all decisions without any human review or intervention."
+      isCorrect: false
+      explanation: "Incorrect. Human oversight is essential to ensure that business logic is preserved, naming conventions are followed, and the refactoring aligns with project requirements."

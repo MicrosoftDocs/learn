@@ -3,9 +3,9 @@ uid: learn.refactor-large-functions-github-copilot.identify-evaluate-large-funct
 title: Identify and evaluate large functions using GitHub Copilot's Ask mode
 metadata:
   title: Identify and Evaluate Large Functions using GitHub Copilot's Ask Mode
-  description: "Learn how to identify and evaluate large functions in your codebase using GitHub Copilot's Ask mode. This unit covers techniques for analyzing function complexity, understanding functionality, and planning effective refactoring strategies."
-  ms.date: 10/17/2025
-  author: cahowd
+  description: Identify and evaluate large functions using GitHub Copilot's Ask mode.
+  ms.date: 10/14/2025
+  author: chrishowd
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.refactor-large-functions-github-copilot.exercise-refactor-large-functions-github-copilot
+title: Exercise - Refactor large functions using GitHub Copilot
+metadata:
+  title: Exercise - Refactor Large Functions using GitHub Copilot
+  description: Exercise - Refactor large functions using GitHub Copilot
+  ms.date: 10/14/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ms.service: github-copilot
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-refactor-large-functions-github-copilot.md)]

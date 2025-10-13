@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.refactor-large-functions-github-copilot.{{unitName}}
-title: Enter learning content title
+uid: learn.refactor-large-functions-github-copilot.refactor-large-functions-github-copilot-agent
+title: Refactor large functions using GitHub Copilot's Agent mode
 metadata:
-  title: learning-content
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 10/17/2025
-  author: cahowd
+  title: Refactor Large Functions using GitHub Copilot's Agent Mode
+  description: Refactor large functions using GitHub Copilot's Agent mode.
+  ms.date: 10/14/2025
+  author: chrishowd
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-learning-content.md)]
+  [!include[](includes/5-refactor-large-functions-github-copilot-agent.md)]

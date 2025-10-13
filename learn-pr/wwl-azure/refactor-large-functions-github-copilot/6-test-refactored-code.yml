@@ -3,9 +3,9 @@ uid: learn.refactor-large-functions-github-copilot.test-refactored-code
 title: Test refactored code
 metadata:
   title: Test Refactored Code
-  description: "This unit covers the importance of testing after refactoring code, including strategies for ensuring the refactored code works as intended."
-  ms.date: 10/17/2025
-  author: cahowd
+  description: Test refactored code.
+  ms.date: 10/14/2025
+  author: chrishowd
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot

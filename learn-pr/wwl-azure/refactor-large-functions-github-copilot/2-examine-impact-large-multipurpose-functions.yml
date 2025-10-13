@@ -3,9 +3,9 @@ uid: learn.refactor-large-functions-github-copilot.examine-impact-large-multipur
 title: Examine the impact of large multipurpose functions
 metadata:
   title: Examine the Impact of Large Multipurpose Functions
-  description: "This unit examines the impact of large multipurpose functions on code quality and maintainability. It discusses the characteristics of large functions, the problems they cause, and real-world scenarios where they commonly occur."
-  ms.date: 10/17/2025
-  author: cahowd
+  description: Examine the impact of large multipurpose functions
+  ms.date: 10/14/2025
+  author: chrishowd
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot
