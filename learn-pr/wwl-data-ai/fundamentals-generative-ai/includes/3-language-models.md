@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=4ff2cc55-eb14-46c8-8c86-cfae01f88c53]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fdb3cc8e-1efb-4d2e-8c63-06048ecdbdfb]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -130,6 +130,6 @@ Once again, *attention* is used to consider each token in context; but this time
 
 When predicting a new completion, for which the next tokens are unknown, the attention layers calculate possible vectors for the next token and the feed-forward network is used to help determine the most probable candidate. The predicted value is then added to the sequence, and the whole process repeats to predict the *next* token; and so on, until the decoder predicts that the sequence has ended.
 
-For example, given the sequence "*When my dog was ...*", the model will evaluate the tokens in the sequence so far, use *attention* to assign weights, and predict that the next most probable token is "*puppy*" rather than, say, "*cat*" or "*skateboard*".  
+For example, given the sequence "*When my dog was a ...*", the model will evaluate the tokens in the sequence so far, use *attention* to assign weights, and predict that the next most probable token is "*puppy*" rather than, say, "*cat*" or "*skateboard*".  
 
 ::: zone-end
