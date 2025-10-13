@@ -4,7 +4,7 @@ The AI workloads plan you enabled earlier feeds its discovery results into CSPM.
 
 The diagram illustrates where Cloud Security Posture Management fits within Defender for Cloud's lifecycle coverage, linking development and runtime protection.
 
-:::image type="content" source="../media/defender-cloud-ai-lifecycle.png" alt-text="Diagram showing how Microsoft Defender for Cloud aligns protections across the AI development lifecycle and runtime through Cloud Ops Security (DevOps), Cloud Security Posture Management (CSPM), and Cloud Threat Protection (CWP).":::
+:::image type="content" source="../media/defender-cloud-ai-lifecycle.png" alt-text="Diagram showing how Microsoft Defender for Cloud protects AI workloads across DevOps, CSPM, and CWP.":::
 
 Defender for Cloud connects development, posture, and runtime protection to provide end-to-end coverage for AI workloads.
 
