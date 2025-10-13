@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.summarize-sales-data.exercise-summarize-visualize-sales-data
+title: Exercise – Summarize and visualize sales data with Copilot
+metadata:
+  title: Exercise – Summarize And Visualize Sales Data With Copilot
+  description: This content is part of the "Summarize sales data using Copilot in Excel" module.
+  ms.date: 10/10/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-summarize-visualize-sales-data.md)]
