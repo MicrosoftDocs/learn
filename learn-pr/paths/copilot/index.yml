@@ -44,6 +44,7 @@ modules:
 - learn.github.responsible-ai-with-github-copilot
 - learn.github.introduction-to-github-copilot
 - learn.github.introduction-prompt-engineering-with-github-copilot
+- learn.github.copilot-spaces
 - learn.advanced-github-copilot
 - learn.github.github-copilot-across-environments
 - learn.github.github-copilot-management-and-customizations
