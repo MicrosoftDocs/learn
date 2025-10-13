@@ -29,7 +29,7 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - vs-code
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - app-development
-  - product
+  - productivity
 units:
   - learn.refactor-large-functions-github-copilot.introduction
   - learn.refactor-large-functions-github-copilot.examine-impact-large-multipurpose-functions
