@@ -1,0 +1,93 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.defender-for-cloud-ai-understand-protections.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check."
+  ms.date: 10/13/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which layer of an AI workload handles user input, connects it to the model, and returns responses?"
+    choices:
+    - content: "Application layer"
+      isCorrect: true
+      explanation: "Correct: The application layer manages user interaction, routes prompts to the model, and delivers responses. In AI workloads, this layer often integrates APIs or copilots that connect to model endpoints."
+    - content: "Retrieval layer"
+      isCorrect: false
+      explanation: "Incorrect: The retrieval layer provides context for model responses but doesn't handle user input directly."
+    - content: "Orchestration layer"
+      isCorrect: false
+      explanation: "Incorrect: The orchestration layer manages workflows and automation, not user input."
+    - content: "Data layer"
+      isCorrect: false
+      explanation: "Incorrect: The data layer stores prompts, logs, and training datasets rather than handling interaction."
+
+  - content: "Which type of risk occurs when attackers manipulate a model through crafted inputs or malicious documents?"
+    choices:
+    - content: "Data exfiltration"
+      isCorrect: false
+      explanation: "Incorrect: Data exfiltration involves unauthorized data transfer rather than prompt manipulation."
+    - content: "Prompt injection"
+      isCorrect: true
+      explanation: "Correct: Prompt injection is an attempt to alter a model's instructions directly or indirectly through malicious input. Security engineers should account for this in their threat models."
+    - content: "Model drift"
+      isCorrect: false
+      explanation: "Incorrect: Model drift refers to performance degradation over time, not malicious manipulation."
+    - content: "Model overfitting"
+      isCorrect: false
+      explanation: "Incorrect: Overfitting occurs during model training, not during inference or prompting."
+
+  - content: "Contoso wants to prevent its AI assistant from producing harmful or ungrounded responses. Which Azure control addresses this concern?"
+    choices:
+    - content: "Content Safety"
+      isCorrect: true
+      explanation: "Correct: Content Safety evaluates model outputs and filters harmful, ungrounded, or sensitive responses before delivery. It complements infrastructure controls like network isolation and access management."
+    - content: "Prompt Shields"
+      isCorrect: false
+      explanation: "Incorrect: Prompt Shields focus on detecting malicious or manipulated inputs, not outputs."
+    - content: "Network isolation"
+      isCorrect: false
+      explanation: "Incorrect: Network isolation limits communication paths but doesn't evaluate model responses."
+    - content: "Azure Policy"
+      isCorrect: false
+      explanation: "Incorrect: Azure Policy applies configuration and compliance rules, not model-level content filtering."
+
+  - content: "Which Azure service helps the cloud security engineer identify misconfigurations and threats across the AI infrastructure?"
+    choices:
+    - content: "Microsoft Entra ID"
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Entra ID manages identity and access but doesn't provide posture assessments."
+    - content: "Microsoft Defender for Cloud"
+      isCorrect: true
+      explanation: "Correct: Microsoft Defender for Cloud provides cloud security posture management (CSPM) and workload protection. It helps engineers assess AI infrastructure, detect threats, and align configurations with best practices."
+    - content: "Azure AI Foundry"
+      isCorrect: false
+      explanation: "Incorrect: Azure AI Foundry provides guardrails and observability for model operations, not infrastructure posture management."
+    - content: "Microsoft Purview"
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Purview focuses on data discovery and classification, not workload posture or threat detection."
+
+  - content: "To achieve a complete protection strategy for Contoso's AI assistant, which combination of tools should the engineer use?"
+    choices:
+    - content: "Azure AI Foundry and Microsoft Defender for Cloud"
+      isCorrect: false
+      explanation: "Incorrect: These tools protect model behavior and infrastructure but not data governance or access."
+    - content: "Microsoft Purview and Microsoft Entra ID"
+      isCorrect: false
+      explanation: "Incorrect: These services address data governance and access control but not workload or model protection."
+    - content: "Azure AI Foundry and Azure AI Search"
+      isCorrect: false
+      explanation: "Incorrect: Azure AI Search provides retrieval for contextual responses but not security or governance controls."
+    - content: "Microsoft Purview, Azure AI Foundry, Microsoft Defender for Cloud, and Microsoft Entra ID"
+      isCorrect: true
+      explanation: "Correct: Together, these tools provide unified coverage across data governance, model guardrails, workload posture, and identity protection. Microsoft Entra ID enforces access through RBAC and conditional access, while Defender for Cloud extends CSPM to AI workloads."
