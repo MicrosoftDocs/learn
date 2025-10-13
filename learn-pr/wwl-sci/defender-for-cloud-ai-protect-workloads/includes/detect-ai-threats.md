@@ -22,12 +22,12 @@ When a threat is detected, Defender for Cloud generates an alert that includes a
 1. Select **Add filter**, then choose **Product Component Name**.
 1. In the **Value** list, select **AI** and **AIServices**, then select **OK**.
 
-   :::image type="content" source="../media/product-component-name-ai.png" alt-text="Screenshot showing Product Component Name filter in Defender for Cloud with AI and AIServices selected to view AI-related alerts." lightbox="../media/product-component-name-ai.png":::
+   :::image type="content" source="../media/product-component-name-ai.png" alt-text="Screenshot showing Product Component Name filter in Defender for Cloud with AI and AIServices selected." lightbox="../media/product-component-name-ai.png":::
 
 1. Review the filtered list to see alerts related to AI workloads and services.
 1. Select an alert to view details such as affected resources, detection source, evidence, and recommended actions.
 
-   :::image type="content" source="../media/ai-alert-list.png" alt-text="Screenshot showing Product Component Name filter in Defender for Cloud with AI and AIServices selected to view AI-related alerts." lightbox="../media/ai-alert-list.png":::
+   :::image type="content" source="../media/ai-alert-list.png" alt-text="Screenshot showing Defender for Cloud Security alerts filtered by AI and AIServices with high-severity alerts listed." lightbox="../media/ai-alert-list.png":::
 
 > [!TIP]
 > You can also access the same alerts by selecting **Workload protections** under **Cloud Security**, then clicking anywhere in the **Security alerts** chart. Both paths open the same alert list.
