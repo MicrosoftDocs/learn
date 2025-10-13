@@ -303,7 +303,7 @@ include:
 - **Streamlined billing** with automatic application of discounts to
   matching deployments.
 
-[![Graphic showing that savings with reservations increase over time.](../media/ptu-reservation.jpg)](../media/ptu-reservation-big.jpg#lightbox)
+[![Graphic showing that savings with reservations increase over time.](../media/azure-reservation.jpg)](../media/azure-reservation-big.jpg#lightbox)
 
 Reservations are scoped by deployment type (Global, Data Zone, Regional) and region, but are model-agnostic, offering flexibility across AI workloads.
 
