@@ -31,7 +31,7 @@ In Defender XDR:
 1. In the alert details, under the **Activities** section, select **Related activities**.
 1. Choose an event, then review the **Prompt Suspicious Segment** field in the **Related activity event details** pane.
 
-   :::image type="content" source="../media/xdr-prompt-suspicious-segment.png" alt-text="Screenshot showing the Related activity event details pane in Microsoft Defender XDR with a Prompt Suspicious Segment field displaying captured prompt text from an AI alert." lightbox="../media/xdr-prompt-suspicious-segment.png":::
+   :::image type="content" source="../media/xdr-prompt-suspicious-segment.png" alt-text="Screenshot showing Prompt Suspicious Segment field with captured prompt text in Defender XDR." lightbox="../media/xdr-prompt-suspicious-segment.png":::
 
    This view displays the captured prompt text or API payload that led to the detection. Use it to confirm whether a model received a malicious prompt, an unexpected API request, or an attempt to extract sensitive data.
 
