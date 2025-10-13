@@ -5,4 +5,4 @@ If you have an Azure subscription, you can explore the Azure AI Foundry Extensio
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2303870&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2338348&azure-portal=true)
