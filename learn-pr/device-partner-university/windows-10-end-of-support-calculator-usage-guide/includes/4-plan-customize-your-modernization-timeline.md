@@ -21,7 +21,7 @@ Open the calculator’s **Additional options** section and enter:
 - **Whether updates are managed with a Microsoft cloud solution**
 
 > [!TIP]
-> If compensation ranges aren’t available, use conservative medians. Re-run the model with HR-provided figures later and compare the deltas in the PDF export.
+> If compensation ranges aren’t available, use conservative medians. Rerun the model with HR-provided figures later and compare the deltas in the PDF export.
 
 ## Testing different scenarios
 
@@ -35,7 +35,8 @@ Running at least two timelines creates a side-by-side comparison that often clar
 
 ### Example scenario (organizations)
 
-Contoso Services operates **350 Windows 10 devices**, with **25% not eligible** for Windows 11. IT manages updates through a **hybrid model** (Intune + on-premius tools).  
+Contoso Services operates **350 Windows 10 devices**, with **25% not eligible** for Windows 11. IT manages updates through a **hybrid model** (Intune + on-premises tools).
+ 
 They test two timelines in the calculator:
 
 - **Phased (40/40/20 over 3 years):** spreads CAPEX, allows app remediation, but prolongs ESU exposure and legacy support effort.  
@@ -64,4 +65,4 @@ Turn the outputs into a simple, reusable plan:
 - **Risks & mitigations**  
 - **Dependencies**
 
-Ready to put your planning into action? In this exercise, you’ll define your upgrade cadence, adjust key assumptions, and compare side-by-side scenarios. The goal is to generate a personalized report that supports executive decision-making and helps align your modernization strategy with business priorities.
+Ready to put your planning into action? In this exercise, you define your upgrade cadence, adjust key assumptions, and compare side-by-side scenarios. The goal is to generate a personalized report that supports executive decision-making and helps align your modernization strategy with business priorities.
