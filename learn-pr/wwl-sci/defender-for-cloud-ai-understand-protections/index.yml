@@ -3,12 +3,12 @@ uid: learn.wwl.defender-for-cloud-ai-understand-protections
 metadata:
   title: Understand how Microsoft Defender for Cloud supports AI security and governance in Azure
   description: Understand how Microsoft Defender for Cloud strengthens AI security in Azure through posture management and integration with key governance and identity services.
-  ms.date: 10/10/2025
+  ms.date: 10/13/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ai-usage: ai-assisted
-  ms.service: purview
+  ms.service: microsoft-defender
 title: Understand how Microsoft Defender for Cloud supports AI security and governance in Azure
 
 summary: |
@@ -32,13 +32,14 @@ iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
-- data-engineer
-- data-analyst
+- security-engineer
 products:
-- microsoft-purview
+- azure
+- azure-ai-foundry
+- defender-for-cloud
+- entra-id
 subjects:
-- data-management
-- compliance
+- cloud-security
 units:
 - learn.wwl.defender-for-cloud-ai-understand-protections.introduction
 - learn.wwl.defender-for-cloud-ai-understand-protections.understand-ai-services-azure
