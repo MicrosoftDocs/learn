@@ -2,7 +2,7 @@ Configuration hardening reduces risk before deployment, but active workloads nee
 
 CWP helps identify and respond to threats such as malicious prompt injections, data exfiltration attempts, or compromised containers. These threats can manipulate AI models or expose sensitive data. It complements the AI workloads plan by protecting the operational layer of your AI ecosystem. For example, if a malicious prompt or injected command targets an AI model, CWP can detect the behavior in real time and generate an alert with details about the affected resource.
 
-:::image type="content" source="../media/threat-protection-ai.png" alt-text="Diagram showing how Defender for Cloud enables, detects, and responds to AI-specific attacks such as prompt injection, data exfiltration, and model hijacking, with alerts investigated in Microsoft XDR." lightbox="../media/threat-protection-ai.png":::
+:::image type="content" source="../media/threat-protection-ai.png" alt-text="Diagram showing Defender for Cloud detecting and responding to AI threats like prompt injection and data exfiltration." lightbox="../media/threat-protection-ai.png":::
 
 Defender for Cloud provides built-in AI threat protection that detects prompt injection, data exfiltration, and model hijacking attempts, and integrates with Microsoft XDR for investigation.
 
@@ -56,7 +56,7 @@ The **Alert details** page shows:
 
 Use the **Take action** menu to start guided response steps, such as changing an alert's status, creating an automation rule, or triggering a Logic App playbook for remediation. Playbooks can automatically quarantine affected resources, disable compromised credentials, or send notifications in Microsoft Teams or ServiceNow.
 
-:::image type="content" source="../media/take-action-menu.png" alt-text="Screenshot of the Take action tab in Defender for Cloud showing options to inspect logs, mitigate the threat, prevent future attacks, trigger a Logic App, and suppress similar alerts." lightbox="../media/take-action-menu.png":::
+:::image type="content" source="../media/take-action-menu.png" alt-text="Screenshot showing Defender for Cloud Take action tab with options to inspect logs, mitigate, and suppress alerts." lightbox="../media/take-action-menu.png":::
 
 ## Strengthen AI runtime protections
 
