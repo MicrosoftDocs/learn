@@ -111,7 +111,7 @@ An Azure landing zone implements eight design areas, shown in the diagram:
 - **Platform automation and DevOps:** Recommendations in this design
   area emphasize automating infrastructure deployments, continuous
   integration/continuous deployment (CI/CD) pipelines, and
-  Infrastructure as Code (IaC). For example, you should consider a roll  back strategy to mitigate the impact of erroneously deployed bugs. In
+  Infrastructure as Code (IaC). For example, you should consider a rollback strategy to mitigate the impact of erroneously deployed bugs. In
   the diagram, this area corresponds to the label **I**.
 
 The conceptual architecture organizes subscriptions (show as yellow
