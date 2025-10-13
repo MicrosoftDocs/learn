@@ -86,26 +86,26 @@ embed cost-awareness directly into your governance boundaries.
 Azure Policy enables automated rule enforcement across your environment.
 For cost governance, consider the following strategies:
 
-- Restrict high-cost SKUs
+- Restrict high-cost SKUs.
   - Deny or audit use of premium VM sizes, GPU instances, or
     high-throughput storage.
   - Example: Use the "Not allowed resource types" policy to block
     costly SKUs in dev/test.
-- Enforce budget tags
+- Enforce budget tags.
   - Require tagging of resources with cost center, environment, or owner
     metadata.
   - Enables granular cost reporting and accountability.
-- Limit Resource Locations
+- Limit Resource Locations.
   - Restrict deployments to cost-optimized regions or those with
     reserved capacity.
   - This reduces pricing variability and avoids quota-related
     escalations.
-- Control AI Service usage
+- Control AI Service usage.
   - Apply policies to Azure AI Foundry, Azure OpenAI, and Azure AI
     Search.
   - Limit usage to approved models or endpoints to prevent uncontrolled
     consumption.
-- Use Azure Landing Zones
+- Use Azure Landing Zones.
   - Use governance, automation, and standardized deployment practices.
 
 ### AI-specific policy examples
@@ -157,7 +157,7 @@ governance.
 
 ### Key tagging strategies for cost transparency
 
-1. **Enforce mandatory cost tags**
+#### Enforce mandatory cost tags
 
 Use Azure Policy to require tags such as:
 
@@ -169,14 +169,14 @@ Use Azure Policy to require tags such as:
 This ensures every resource is traceable to a responsible entity and
 aligns with organizational budgeting structures.
 
-2. **Apply tag inheritance**
+#### Apply tag inheritance
 
 Enable tag inheritance in Microsoft Cost Management to automatically apply
 subscription, resource group, or billing account tags to child
 resources. This reduces manual tagging errors and ensures consistent
 attribution across nested resources.
 
-3. **Standardize tag formats**
+#### Standardize tag formats
 
 Define and enforce naming conventions for tag values to support
 automated reporting. For example:
@@ -222,27 +222,27 @@ Reducing unnecessary data movement is a direct lever for cost savings.
 
 ### Key strategies to minimize data movement
 
-1. **Place data close to its users**
-    - Deploy data storage in the same region as the consuming application or
+- **Place data close to its users.**
+  - Deploy data storage in the same region as the consuming application or
   user base.
-    - Reduces latency and avoids cross-region egress fees.
-    - Ideal for inference workloads, dashboards, and real-time analytics.
-1. **Use caching and content delivery networks (CDNs)**
-    - Cache frequently accessed static data near users.
-    - CDNs reduce repeated long-distance transfers and offload bandwidth
+  - Reduces latency and avoids cross-region egress fees.
+  - Ideal for inference workloads, dashboards, and real-time analytics.
+- **Use caching and content delivery networks (CDNs).**
+  - Cache frequently accessed static data near users.
+  - CDNs reduce repeated long-distance transfers and offload bandwidth
   usage.
-    - Useful for read-heavy workloads and public-facing AI
+  - Useful for read-heavy workloads and public-facing AI
   services.
-1. **Consolidate workloads regionally**
-    - Colocate compute, storage, and AI services within the same region.
-    - Avoid fragmented deployments that trigger inter-region traffic.
-    - Use Azure Resource Graph or Microsoft Purview to audit resource
+- **Consolidate workloads regionally.**
+  - Colocate compute, storage, and AI services within the same region.
+  - Avoid fragmented deployments that trigger inter-region traffic.
+  - Use Azure Resource Graph or Microsoft Purview to audit resource
   distribution.
-1. **Optimize replication and backup strategies**
-    - Evaluate whether cross-region replication is necessary for all
+- **Optimize replication and backup strategies.**
+  - Evaluate whether cross-region replication is necessary for all
   workloads.
-    - Use zonal redundancy when regional replication isn't required.
-    - Apply compression and deduplication to reduce replication volume.
+  - Use zonal redundancy when regional replication isn't required.
+  - Apply compression and deduplication to reduce replication volume.
 
 ### Data management best practices
 
@@ -302,8 +302,6 @@ include:
   financial planning.
 - **Streamlined billing** with automatic application of discounts to
   matching deployments.
-
-[![Graphic showing that savings with reservations increase over time.](../media/azure-reservation.jpg)](../media/azure-reservation-big.jpg#lightbox)
 
 Reservations are scoped by deployment type (Global, Data Zone, Regional) and region, but are model-agnostic, offering flexibility across AI workloads.
 

@@ -64,7 +64,3 @@ Multi-agent intelligence enables:
 - New business models (for example, tenant-specific agents for MSSPs)  
 
 These outcomes shift the cost conversation from “how much does it cost?” to “how much value does it unlock?”, a framing essential for executive buy-in and strategic alignment.
-
-# The cost perspective of multi-agent intelligence: A strategic lens for enterprise AI
-
-As generative AI evolves from proof-of-concept to production-grade systems, enterprises face a pivotal decision: whether to scale with monolithic single-agent architectures or embrace modular, multi-agent intelligence. While the latter offers clear advantages in flexibility, specialization, and resilience, it also introduces new cost dynamics—some explicit, others hidden. Understanding these costs is essential for defensible AI investment and long-term operational sustainability.

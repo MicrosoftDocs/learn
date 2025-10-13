@@ -5,7 +5,7 @@ architectures, best practices, multi-agent design options, and financial
 design principles that ensure operational efficiency, cost control, and
 strategic alignment.
 
-**Learn more**
+## Learn more
 
 - [AI architecture design](/azure/architecture/ai-ml/#agent-based-architecture)
 - [What is an Azure landing zone?](/azure/cloud-adoption-framework/ready/landing-zone/)

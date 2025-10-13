@@ -87,7 +87,7 @@ An Azure landing zone implements eight design areas, shown in the diagram:
   encryption, identity protection, threat detection, vulnerability
   management, and security monitoring to protect resources and data. For
   example, you should consider using Entra Connect cloud synchronization
-  to provide Single Sign-On (SSO) for your Active Directory users. In
+  to provide single sign-on (SSO) for your Active Directory users. In
   the diagram, this area corresponds to the label **F**.
 
 - **Management:** Recommendations in this design area create a
@@ -111,8 +111,7 @@ An Azure landing zone implements eight design areas, shown in the diagram:
 - **Platform automation and DevOps:** Recommendations in this design
   area emphasize automating infrastructure deployments, continuous
   integration/continuous deployment (CI/CD) pipelines, and
-  Infrastructure as Code (IaC). For example, you should consider a roll
-  back strategy to mitigate the impact of erroneously deployed bugs. In
+  Infrastructure as Code (IaC). For example, you should consider a roll  back strategy to mitigate the impact of erroneously deployed bugs. In
   the diagram, this area corresponds to the label **I**.
 
 The conceptual architecture organizes subscriptions (show as yellow
@@ -192,4 +191,4 @@ deployed to the Azure App Service.
 The following diagram shows the Azure AI Foundry chat reference
 conceptual architecture.
 
-[![A Architecture diagram of the workload, including select platform subscription resources.](../media/chat-agent-reference-architecture.png)](../media/chat-agent-reference-architecture-big.png#lightbox)
+[![An Architecture diagram of the workload, including select platform subscription resources.](../media/chat-agent-reference-architecture.png)](../media/chat-agent-reference-architecture-big.png#lightbox)
