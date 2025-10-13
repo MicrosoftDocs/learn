@@ -28,7 +28,8 @@ products:
   github
   vs-code
 subjects:
-  - github-copilot
+  - app-development
+  - productivity
 units:
 - learn.simplify-complex-conditionals-github-copilot-agent.introduction
 - learn.simplify-complex-conditionals-github-copilot-agent.review-impact-complex-conditionals
