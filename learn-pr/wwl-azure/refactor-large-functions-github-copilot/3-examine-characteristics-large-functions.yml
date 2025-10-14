@@ -8,7 +8,6 @@ metadata:
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-  ms.service: github-copilot
 durationInMinutes: 8
 content: |
   [!include[](includes/3-examine-characteristics-large-functions.md)]

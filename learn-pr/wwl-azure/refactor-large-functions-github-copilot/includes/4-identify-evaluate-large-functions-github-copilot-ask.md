@@ -44,8 +44,9 @@ Here’s a high-level process that uses GitHub Copilot to identify and analyze l
 
     1. **Review GitHub Copilot’s response** in the chat panel:
 
-        a. Apply your understanding of the codebase and applicable business rules. Use your own knowledge to verify GitHub Copilot’s analysis.
-        b. Look for actionable insights in the response. For example, you might find specific tasks or code sections that could be extracted into separate functions.
+        1. Apply your understanding of the codebase and applicable business rules. Use your own knowledge to verify GitHub Copilot’s analysis.
+
+        1. Look for actionable insights in the response. For example, you might find specific tasks or code sections that could be extracted into separate functions.
 
     1. **Ask follow-ups:**
 
@@ -55,8 +56,9 @@ Here’s a high-level process that uses GitHub Copilot to identify and analyze l
 
     1. **Plan your refactor:**
 
-        a. Use the insights to outline a refactoring strategy.
-        b. Decide which parts to extract into separate functions or classes.
+        1. Use the insights to outline a refactoring strategy.
+
+        1. Decide which parts to extract into separate functions or classes.
 
 ## Tips for using Ask mode effectively
 

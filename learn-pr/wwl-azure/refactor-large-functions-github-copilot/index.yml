@@ -12,10 +12,10 @@ title: Refactor large functions using GitHub Copilot Agent
 summary: "This module covers the identification and refactoring of large functions into smaller, more manageable components using GitHub Copilot in Visual Studio Code."
 abstract: |
   By the end of this module, you're able to:
-    - "Describe the problems introduced by large, multi-purpose functions and the benefits provided by small, single-purpose functions."
-    - "Describe the tools, techniques, and processes used to refactor large functions into smaller functions."
-    - "Use GitHub Copilot’s Ask mode to explain a codebase and identify opportunities to convert large functions into smaller, single-purpose functions."
-    - "Use GitHub Copilot’s Agent mode to refactor large functions into smaller helper functions and static methods."
+    - Describe the problems introduced by large, multi-purpose functions and the benefits provided by small, single-purpose functions.
+    - Describe the tools, techniques, and processes used to refactor large functions into smaller functions.
+    - Use GitHub Copilot’s Ask mode to explain a codebase and identify opportunities to convert large functions into smaller, single-purpose functions.
+    - Use GitHub Copilot’s Agent mode to refactor large functions into smaller helper functions and static methods.
 prerequisites: |
   - "Experience using GitHub Copilot in Visual Studio Code."
   - "Experience developing C# applications."

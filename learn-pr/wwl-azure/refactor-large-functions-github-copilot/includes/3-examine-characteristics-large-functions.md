@@ -16,7 +16,7 @@ Here are common indicators that a function is too large or doing too much:
 - **Commented sections:** Comments like `// Step 1`, `// Step 2` suggest multiple responsibilities.
 - **Repetition of code patterns:** Duplicate logic or repeated blocks that could be extracted.
 
-> **NOTE:**
+> [!NOTE]
 > The presence of comments or region blocks inside a function is a red flag. If you see a function that includes a series of comments like `// validate inputs`, `// do X`, `// clean up`, etc., it’s a sign the function has multiple distinct sections of logic. Each of those sections could probably be a function of its own.
 
 ## Tools and approaches for finding large functions
@@ -41,7 +41,7 @@ Large functions often follow certain patterns. Here are some common "shapes" to 
 - **Helper-heavy logic:** Contains chunks that could be helper methods.
 - **Repeated blocks:** Similar logic repeated for different data sets or conditions.
 
-> **NOTE:**
+> [!NOTE]
 > Use the “extraction imagination” test: If you can name a block of code as a function, it probably should be one.
 
 ## Metrics to watch
@@ -93,17 +93,17 @@ Cyclomatic complexity is useful because it's objective and measurable, making it
 
 There are several strategies to reduce the complexity of large functions:
 
-1. **Extract methods**: Break complex logic into smaller functions.
-1. **Use polymorphism**: Replace complex conditionals with strategy patterns.
-1. **Early returns**: Exit early instead of deep nesting.
-1. **Simplify conditions**: Extract complex boolean logic to well-named variables.
-1. **Remove flag arguments**: Split functions that behave differently based on flags.
+- **Extract methods**: Break complex logic into smaller functions.
+- **Use polymorphism**: Replace complex conditionals with strategy patterns.
+- **Early returns**: Exit early instead of deep nesting.
+- **Simplify conditions**: Extract complex boolean logic to well-named variables.
+- **Remove flag arguments**: Split functions that behave differently based on flags.
 
 ## Not all large functions are evil
 
 Some large functions are acceptable in specific contexts (for example, performance-critical code). Use judgment. The goal is to make code easier to work with.
 
-> **NOTE:**
+> [!NOTE]
 > If a function is hard to split because everything is tightly interwoven, that’s a sign of high coupling. Copilot’s Ask Mode can help untangle it.
 
 ## Summary

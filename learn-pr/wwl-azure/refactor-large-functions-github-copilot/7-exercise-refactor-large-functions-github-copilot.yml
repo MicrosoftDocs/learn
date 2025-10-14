@@ -8,7 +8,6 @@ metadata:
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-  ms.service: github-copilot
 durationInMinutes: 30
 content: |
   [!include[](includes/7-exercise-refactor-large-functions-github-copilot.md)]
