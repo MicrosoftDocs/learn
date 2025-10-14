@@ -58923,6 +58923,86 @@
       "source_path": "learn-pr/wwl-data-ai/fundamentals-generative-ai/6c-responsible-ai.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/7-responsible-ai",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/2-create-your-azure-maps-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/3-learn-about-azure-maps-route-finding.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/4-exercise-create-your-route-finding-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/5-exercise-test-your-route-finding-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/connect.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/create.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/data-science-virtual-machine.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/exercise-connect.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/exercise-create.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/exercise-preinstalled-tools.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/index.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/introduction.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/summary.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
     }
   ]
 }
