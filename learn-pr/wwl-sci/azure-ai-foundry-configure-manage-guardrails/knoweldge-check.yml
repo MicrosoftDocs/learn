@@ -1,0 +1,93 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-ai-foundry-configure-manage-guardrails.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check."
+  ms.date: 10/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "The administrator wants to see how Azure AI Foundry's built-in protections handle potentially harmful or ungrounded content before creating custom configurations. Which workspace feature should they use?"
+    choices:
+    - content: "Model catalog"
+      isCorrect: false
+      explanation: "Incorrect: The model catalog lists available models but doesn't evaluate input or output content."
+    - content: "Try it out"
+      isCorrect: true
+      explanation: "Correct: The Try it out page in the Guardrails + controls workspace lets you test built-in moderation, Prompt Shields, groundedness, and protected-material detection before creating custom guardrails."
+    - content: "Deployments"
+      isCorrect: false
+      explanation: "Incorrect: The Deployments section is used to manage model endpoints, not test guardrail behavior."
+    - content: "Activity log"
+      isCorrect: false
+      explanation: "Incorrect: The activity log records events but can't simulate guardrail performance."
+
+  - content: "During testing, the administrator notices that users occasionally include internal code names and credentials in prompts. Which feature can block these terms before they reach the model?"
+    choices:
+    - content: "Groundedness detection"
+      isCorrect: false
+      explanation: "Incorrect: Groundedness detection evaluates whether responses align with verified data sources."
+    - content: "Content filter"
+      isCorrect: false
+      explanation: "Incorrect: Content filters moderate harm categories such as hate or self-harm, not internal terms or tokens."
+    - content: "Blocklist"
+      isCorrect: true
+      explanation: "Correct: Blocklists restrict sensitive or restricted terms such as project names or credentials from being used in prompts or model outputs."
+    - content: "Protected-material detection"
+      isCorrect: false
+      explanation: "Incorrect: Protected-material detection identifies proprietary or copyrighted content in model outputs, not user input."
+
+  - content: "After deployment, the administrator wants to ensure that the model doesn't return copyrighted or non-Microsoft code. Which control should be enabled in the output filter?"
+    choices:
+    - content: "Prompt Shields"
+      isCorrect: false
+      explanation: "Incorrect: Prompt Shields protect against malicious or manipulated prompts, not copyrighted output."
+    - content: "Blocklist"
+      isCorrect: false
+      explanation: "Incorrect: Blocklists target specific terms or patterns rather than detecting reused or copyrighted material."
+    - content: "Moderation categories"
+      isCorrect: false
+      explanation: "Incorrect: Moderation categories detect harmful content but not intellectual property issues."
+    - content: "Protected-material detection"
+      isCorrect: true
+      explanation: "Correct: Protected-material detection scans model outputs for proprietary or non-Microsoft content and can annotate or block those results."
+
+  - content: "The administrator receives feedback that some harmless prompts are being blocked. To improve usability, what is the best way to adjust enforcement?"
+    choices:
+    - content: "Disable the content filter to collect unrestricted results"
+      isCorrect: false
+      explanation: "Incorrect: Disabling the content filter removes important safety protections and shouldn't be used for usability testing."
+    - content: "Remove Prompt Shields to reduce interference with prompts"
+      isCorrect: false
+      explanation: "Incorrect: Prompt Shields should remain active to prevent prompt injection and jailbreak attempts."
+    - content: "Start with moderate thresholds and use annotation before blocking"
+      isCorrect: true
+      explanation: "Correct: Using moderate thresholds and annotation first allows teams to observe false positives and tune enforcement without interrupting productivity."
+    - content: "Increase all harm category thresholds to maximum blocking"
+      isCorrect: false
+      explanation: "Incorrect: Maximum blocking can overrestrict valid content and cause unnecessary interruptions."
+
+  - content: "After the guardrails are active, the administrator wants to confirm that they continue working as intended and remain aligned with organizational policy. Which action supports continuous assurance?"
+    choices:
+    - content: "Rely solely on Defender for Cloud recommendations"
+      isCorrect: false
+      explanation: "Incorrect: Defender for Cloud addresses infrastructure posture, not model-level guardrail performance."
+    - content: "Disable existing guardrails during compliance reviews"
+      isCorrect: false
+      explanation: "Incorrect: Guardrails should remain active while reviews occur to maintain continuous protection."
+    - content: "Review logs and detections in the Guardrails + controls workspace"
+      isCorrect: true
+      explanation: "Correct: Reviewing logs and detections verifies how often guardrails trigger and helps refine configurations to match policy and reduce false positives."
+    - content: "Delete and recreate all filters each month"
+      isCorrect: false
+      explanation: "Incorrect: Regular reviews and adjustments are sufficient; filters don't need to be recreated."

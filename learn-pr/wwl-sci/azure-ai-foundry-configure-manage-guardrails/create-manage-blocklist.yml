@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-ai-foundry-configure-manage-guardrails.create-manage-blocklist
+title: Create and manage blocklists in Azure AI Foundry
+metadata:
+  title: Create and manage blocklists in Azure AI Foundry
+  description: "Create and manage blocklists in Azure AI Foundry."
+  ms.date: 10/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/create-manage-blocklist.md)]

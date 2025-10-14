@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-ai-foundry-configure-manage-guardrails.configure-content-filter
+title: Configure and apply guardrails in Azure AI Foundry
+metadata:
+  title: Configure and apply guardrails in Azure AI Foundry
+  description: "Configure and apply guardrails in Azure AI Foundry."
+  ms.date: 10/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/configure-content-filter.md)]

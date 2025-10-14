@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-ai-foundry-configure-manage-guardrails.understand-guardrails
+title: Understand guardrails and Azure AI Content Safety
+metadata:
+  title: Understand guardrails and Azure AI Content Safety
+  description: "Understand guardrails and Azure AI Content Safety."
+  ms.date: 10/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/understand-guardrails.md)]

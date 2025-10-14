@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-ai-foundry-configure-manage-guardrails.choose-refine-guardrails
+title: Choose and refine the right guardrails for your AI workloads
+metadata:
+  title: Choose and refine the right guardrails for your AI workloads
+  description: "Choose and refine the right guardrails for your AI workloads."
+  ms.date: 10/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/choose-refine-guardrails.md)]
