@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.move-forward-windows-11.benefits-of-upgrade
-title: Benefits of upgrade
+uid: learn.dpu.move-forward-windows-11.respond-to-windows-10-end-of-support
+title: Responding to Windows 10 end of support
 metadata:
-  title: Benefits of upgrade
+  title: Responding To Windows 10 End Of Support
   description: This content is part of the "Move forward with Windows 11 Pro post Windows 10 end of support" module.
   ms.date: 07/29/2025
   author: hhreyes21
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-benefits-of-upgrade.md)]
+  [!include[](includes/2-respond-to-windows-10-end-of-support.md)]
