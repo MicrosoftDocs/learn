@@ -3,9 +3,9 @@ uid: learn.tensorflow.intro-machine-learning-tensorflow
 metadata:
   title: "Go beyond Keras: Customize with TensorFlow"
   description: Learn how to build a machine learning model using lower-level TensorFlow concepts.
-  ms.date: 07/24/2023
-  author: bstollnitz
-  ms.author: bstollnitz
+  ms.date: 10/10/2025
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: bstollnitz-08202021

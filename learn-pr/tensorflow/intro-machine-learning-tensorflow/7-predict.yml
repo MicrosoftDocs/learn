@@ -4,9 +4,9 @@ title: Make a prediction
 metadata:
   title: Make a prediction
   description: Learn how to make a prediction using your trained neural network using TensorFlow.
-  ms.date: 07/24/2023
-  author: bstollnitz
-  ms.author: bstollnitz
+  ms.date: 10/10/2025
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.product: learning-tensorflow
   ms.contributors: bstollnitz-08202021
