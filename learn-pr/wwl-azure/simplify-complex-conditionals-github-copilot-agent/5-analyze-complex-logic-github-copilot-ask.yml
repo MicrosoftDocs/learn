@@ -5,7 +5,7 @@ metadata:
   title: Analyze Complex Logic using GitHub Copilot's Ask Mode
   description: "Use GitHub Copilot's Ask mode to investigate options for simplifying complex conditional code. Learn to ask the right questions and get actionable insights for refactoring."
   ms.date: 10/17/2025
-  author: cahowd
+  author: chrishowd
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot

@@ -5,7 +5,7 @@ metadata:
   title: Examine the Techniques used to Simplify Complex Conditionals
   description: "Explore various techniques that can be employed to simplify complex conditional statements in code. Understand the benefits of each technique and when to apply them for optimal code clarity and maintainability."
   ms.date: 10/17/2025
-  author: cahowd
+  author: chrishowd
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot

@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Simplify Complex Conditionals using GitHub Copilot
   description: "In this exercise, you use GitHub Copilot's Ask mode to analyze complex conditionals and GitHub Copilot's Agent mode to refactor and simplify the conditional logic. You learn how to effectively use AI assistance to refactor and improve code quality."
   ms.date: 10/17/2025
-  author: cahowd
+  author: chrishowd
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot

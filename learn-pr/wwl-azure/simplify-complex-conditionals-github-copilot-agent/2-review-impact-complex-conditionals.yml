@@ -5,7 +5,7 @@ metadata:
   title: Review the Impact of Complex Conditionals
   description: "Review the impact of complex conditionals on code quality, maintainability, and readability. Understand why simplifying complex conditionals is important for effective coding practices."
   ms.date: 10/17/2025
-  author: cahowd
+  author: chrishowd
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot

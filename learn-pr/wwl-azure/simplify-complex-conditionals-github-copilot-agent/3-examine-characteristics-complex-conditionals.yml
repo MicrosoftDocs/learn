@@ -5,7 +5,7 @@ metadata:
   title: Examine the Characteristics of Complex Conditionals
   description: "Explore the key characteristics that define complex conditionals in code. Understand how these characteristics impact code readability, maintainability, and overall quality."
   ms.date: 10/17/2025
-  author: cahowd
+  author: chrishowd
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot

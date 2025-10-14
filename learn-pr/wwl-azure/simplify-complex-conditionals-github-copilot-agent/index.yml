@@ -4,7 +4,7 @@ metadata:
   title: Simplify complex conditionals using GitHub Copilot Agent
   description: "Simplify complex conditionals using GitHub Copilot Agent"
   ms.date: 10/17/2025
-  author: cahowd
+  author: chrishowd
   ms.author: cahowd
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: github-copilot

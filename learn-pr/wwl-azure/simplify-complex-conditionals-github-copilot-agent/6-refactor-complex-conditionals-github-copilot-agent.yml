@@ -5,7 +5,7 @@ metadata:
   title: Refactor Complex Conditionals using GitHub Copilot's Agent Mode
   description: "Use GitHub Copilot's Agent mode to automate the refactoring of complex conditional logic in your codebase. Learn how to leverage AI assistance for efficient code transformation."
   ms.date: 10/17/2025
-  author: cahowd
+  author: chrishowd
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot
