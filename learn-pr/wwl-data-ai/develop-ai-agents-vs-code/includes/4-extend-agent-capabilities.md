@@ -1,4 +1,4 @@
-One of the most powerful features of AI agents is their ability to use tools that extend their capabilities beyond simple text generation. TThe Azure AI Foundry for Visual Studio Code extension makes it easy to add and configure tools for your agents. These tools enable agents to perform actions, access data, and integrate with external systems.
+One of the most powerful features of AI agents is their ability to use tools that extend their capabilities beyond simple text generation. The Azure AI Foundry for Visual Studio Code extension makes it easy to add and configure tools for your agents. These tools enable agents to perform actions, access data, and integrate with external systems.
 
 ## Understanding agent tools
 
