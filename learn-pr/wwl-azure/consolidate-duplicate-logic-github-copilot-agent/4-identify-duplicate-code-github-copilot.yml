@@ -5,7 +5,7 @@ metadata:
   title: Identify Duplicate Code using GitHub Copilot
   description: Identify duplicate code using GitHub Copilot
   ms.date: 10/14/2025
-  author: cahowd
+  author: chrishowd
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot
