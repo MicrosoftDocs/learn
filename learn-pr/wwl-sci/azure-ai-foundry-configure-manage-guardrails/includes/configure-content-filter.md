@@ -10,9 +10,9 @@ Start by naming your content filter. A clear, descriptive name makes it easy to 
 
 - Keep naming conventions consistent so configurations can be tracked and updated easily.
 
-Naming with purpose helps ensure the right protections are applied in the right environments.
+   :::image type="content" source="../media/basic-information.png" alt-text="Screenshot showing the Basic information page in Azure AI Foundry with a guardrail name entered." lightbox="../media/basic-information.png":::
 
-:::image type="content" source="../media/basic-information.png" alt-text="Screenshot showing the Basic information page in Azure AI Foundry with a guardrail name entered." lightbox="../media/basic-information.png":::
+Naming with purpose helps ensure the right protections are applied in the right environments.
 
 ## Step 2: Define input filters
 
@@ -22,7 +22,7 @@ Input filters evaluate prompts before they reach the model. These settings form 
 - **Prompt Shields** detect jailbreak or indirect prompt-injection attempts. You can choose to annotate only, annotate and block, or turn them off depending on enforcement needs.
 - **Blocklists** restrict sensitive phrases, code names, or internal identifiers. Applying a blocklist here helps reduce the risk of data leakage and enforces internal handling rules.
 
-:::image type="content" source="../media/set-input-filter.png" alt-text="Screenshot showing the Input filter page with harm categories, prompt shields, and a selected RestrictedTermsList." lightbox="../media/set-input-filter.png":::
+   :::image type="content" source="../media/set-input-filter.png" alt-text="Screenshot showing the Input filter page with harm categories, prompt shields, and a selected RestrictedTermsList." lightbox="../media/set-input-filter.png":::
 
 Input filters are especially valuable for protecting shared or externally accessible workloads where prompts can vary widely in quality and intent.
 
@@ -34,7 +34,7 @@ Output filters review model responses before they're delivered to users. They pr
 - **Protected material detection** identifies proprietary or non-Microsoft content in text or code and can either annotate or block it.
 - **Groundedness detection** (preview) evaluates whether responses are supported by source data to improve reliability and reduce unsupported statements.
 
-:::image type="content" source="../media/set-output-filter.png" alt-text="Screenshot showing the Output filter page with harm thresholds, protected material detection, and groundedness options." lightbox="../media/set-output-filter.png":::
+   :::image type="content" source="../media/set-output-filter.png" alt-text="Screenshot showing the Output filter page with harm thresholds, protected material detection, and groundedness options." lightbox="../media/set-output-filter.png":::
 
 You can mirror the input settings or adjust thresholds for outbound content. For example, internal workloads might allow more flexibility than customer-facing deployments.
 
@@ -46,7 +46,7 @@ Once your filters are configured, link them to the model deployments where they 
 - Use shared configurations for similar workloads to maintain predictable safety behavior.
 - Periodically review connections to ensure all active models remain protected.
 
-:::image type="content" source="../media/apply-filter-deployments.png" alt-text="Screenshot showing the Connection page with a content filter applied to the Contoso Customer Support model deployment." lightbox="../media/apply-filter-deployments.png":::
+   :::image type="content" source="../media/apply-filter-deployments.png" alt-text="Screenshot showing the Connection page with a content filter applied to the Contoso Customer Support model deployment." lightbox="../media/apply-filter-deployments.png":::
 
 Taking the time to review deployment connections helps you avoid gaps where a model might run without the intended guardrails in place.
 
@@ -58,7 +58,7 @@ Before saving, verify that your configuration aligns with your organization's sa
 - Confirm that both input and output filters reflect your intended protection level.
 - Save the configuration once you're confident it's ready for use.
 
-:::image type="content" source="../media/review-filter.png" alt-text="Screenshot showing the Review page summarizing input, output, and blocklist settings before creating the guardrail." lightbox="../media/review-filter.png":::
+   :::image type="content" source="../media/review-filter.png" alt-text="Screenshot showing the Review page summarizing input, output, and blocklist settings before creating the guardrail." lightbox="../media/review-filter.png":::
 
 Each content filter you create becomes a reusable policy component that can be duplicated, modified, or extended as organizational requirements evolve.
 
@@ -70,7 +70,7 @@ After configuration, validation ensures your filters behave as intended. Use the
 - Record results to identify where thresholds or actions like _annotate only_ vs. _annotate and block_, might need adjustment.
 - Confirm that detections appear in logs or activity details to verify audit visibility and traceability.
 
-:::image type="content" source="../media/test-content-filter.png" alt-text="Screenshot showing the Try it out page in Azure AI Foundry with a built-in sample prompt triggering the Self-harm and Violence categories." lightbox="../media/test-content-filter.png":::
+   :::image type="content" source="../media/test-content-filter.png" alt-text="Screenshot showing the Try it out page in Azure AI Foundry with a built-in sample prompt triggering the Self-harm and Violence categories." lightbox="../media/test-content-filter.png":::
 
 Validation helps fine-tune protections, catch configuration gaps, and build assurance that your AI workloads will respond safely under real-world conditions.
 
