@@ -23,7 +23,7 @@ Before creating an agent, complete the following steps:
 1. Create a default Azure AI Foundry project, or select an existing one
 1. Select and deploy the model for your agent to use, or use an existing deployment 
 
-![Screenshot of deploying a model in the Azure AI Foundry Visual Studio Code extension.](../media/vs-code-deploy-model.gif)
+![A GIF of deploying a model in the Azure AI Foundry Visual Studio Code extension.](../media/vs-code-deploy-model.gif)
 
 ### Creating a new agent
 
