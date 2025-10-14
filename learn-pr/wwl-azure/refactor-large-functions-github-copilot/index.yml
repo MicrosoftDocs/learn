@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.refactor-large-functions-github-copilot
 metadata:
-  title: Refactor large functions using GitHub Copilot Agent
+  title: Refactor Large Functions using GitHub Copilot Agent
   description: "Learn how to identify large multi-purpose functions and how to refactor large functions into smaller helper classes and static methods by using GitHub Copilot in Visual Studio Code."
   ms.date: 10/14/2025
   author: chrishowd

@@ -1,10 +1,10 @@
-Using GitHub Copilot's Ask mode in Visual Studio Code is like having a knowledgeable colleague who can answer questions about your codebase, the environment, .NET and external libraries, and best practices. The Ask mode doesn't modify your code directly, but it does provide explanations, insights, and suggestions that you can use to improve your code.
+Using GitHub Copilot's Ask mode is like having a knowledgeable colleague who's always available to answer your questions. GitHub Copilot can answer questions about your codebase, code libraries, best practices, and your development environment. The Ask mode doesn't modify your code directly, but it does provide explanations, insights, and suggestions that you can use to improve your code.
 
-GitHub Copilot's Ask mode is useful when dealing with large functions that are complex and hard to understand. By asking targeted questions, you can break down the function into manageable parts, identify areas for improvement, and plan your code refactoring efforts effectively.
+GitHub Copilot's Ask mode is useful when dealing with large functions that are complex and hard to understand. By asking targeted questions, you can break down a large function into manageable parts, identify areas for improvement, and plan your code refactoring efforts effectively.
 
 ## General use cases for GitHub Copilot's Ask mode
 
-GitHub Copilot's Ask mode is integrated into Visual Studio Code through the GitHub Copilot Chat extension. You can activate Ask mode by opening the chat panel and typing your questions in natural language. Here are some common use cases for Ask mode:
+GitHub Copilot's Ask mode is integrated into Visual Studio Code through the GitHub Copilot Chat extension. You can start a conversation in the Ask mode by opening the chat panel and typing your questions in natural language. Here are some common use cases for Ask mode:
 
 - **Explain/summarize code:** Generate a natural language breakdown of what the code does. You can ask GitHub Copilot to summarize an entire codebase or any class, method, or code block.
 - **Identify logical sections:** Often returns a numbered list of distinct tasks or steps the code performs.
@@ -34,26 +34,29 @@ Here’s a high-level process that uses GitHub Copilot to identify and analyze l
 
     1. **Ask a question** using a natural language prompt, such as:
 
-        - "Can you summarize what this function does?"
-        - "List the distinct tasks this function performs."
-        - "How can I refactor this function to be shorter?"
-        - "How can I reduce the cyclomatic complexity of this function?"
+        - "Analyze the selected function and provide a high-level summary of its purpose and main responsibilities. Include any concerns about complexity or maintainability that you notice."
+        - "Break down the selected function into its distinct logical tasks or responsibilities. For each task, indicate which lines of code are involved and whether each task could be extracted into a separate function."
+        - "Identify specific refactoring opportunities in the selected function. Suggest which code blocks could be extracted into separate methods, what those methods should be named, and what parameters they would need."
+        - "Analyze the cyclomatic complexity of the selected function. Identify the decision points (if statements, loops, switch cases) that contribute most to complexity and suggest specific strategies to reduce it, such as guard clauses, early returns, or strategy patterns."
+        - "Evaluate the selected function against SOLID principles. Which principles does it violate and how?"
+        - "Identify any code smells in the selected function, such as long parameter lists, nested conditionals, or repeated code patterns. Provide specific examples."
+        - "Suggest a step-by-step refactoring plan for the selected function, prioritizing the changes that would have the most impact on readability and maintainability."
 
     1. **Review GitHub Copilot’s response** in the chat panel:
 
-        - Apply your understanding of the codebase and applicable business rules. Use your own knowledge to verify GitHub Copilot’s analysis.
-        - Look for actionable insights in the response. For example, you might find specific tasks or code sections that could be extracted into separate functions.
+        a. Apply your understanding of the codebase and applicable business rules. Use your own knowledge to verify GitHub Copilot’s analysis.
+        b. Look for actionable insights in the response. For example, you might find specific tasks or code sections that could be extracted into separate functions.
 
     1. **Ask follow-ups:**
 
-        - "Explain the error handling in more detail."
-        - "Is this function following the single responsibility principle?"
-        - "How can I reduce the cyclomatic complexity of this function?"
+        - "Review the error handling patterns in the selected function. Are there opportunities to consolidate error handling, improve error messages, or extract error handling into reusable components?"
+        - "Assess the selected function against the Single Responsibility Principle. If it has multiple responsibilities, identify each one and suggest how they could be separated into focused, single-purpose functions."
+        - "Review the suggested refactoring plan for the selected function. Are there any security, performance, or maintainability implications that I need to consider? Explain."
 
     1. **Plan your refactor:**
 
-        - Use the insights to outline a refactoring strategy.
-        - Decide which parts to extract into separate functions or classes.
+        a. Use the insights to outline a refactoring strategy.
+        b. Decide which parts to extract into separate functions or classes.
 
 ## Tips for using Ask mode effectively
 

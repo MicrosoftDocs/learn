@@ -1,15 +1,15 @@
-The ability to recognize large functions is a critical skill for developers aiming to maintain high code quality. Large functions can lead to various issues, including poor readability, difficulty in maintenance, low reusability, and challenges in testing. By identifying these functions, developers can take proactive steps to refactor them into smaller, more manageable pieces.
+The ability to recognize large functions is an important skill for developers aiming to maintain high code quality. Large functions can lead to various issues, including poor readability, difficulty in maintenance, low reusability, and challenges in testing. Developers who are able to identify functions that exhibit these characteristics can take proactive steps to refactor them into smaller, more manageable components.
 
 > [!NOTE]
 > It's important for developers to understand how to spot large functions manually rather than relying exclusively on artificial intelligence tools. Knowing the characteristics of large functions that make them problematic helps developers make informed decisions about when and how to refactor code effectively.
 
 ## Code smells and symptoms
 
-Code smell is a term for patterns in code that indicate deeper problems. In code smell terminology, a large function is a bloater that usually violates the Single Responsibility Principle. Large functions are a classic code smell.
+Code "smell" is a term for patterns in code that indicate deeper problems. In code smell terminology, a large function is a "bloater" that usually violates the Single Responsibility Principle. Large functions are a classic code smell.
 
 Here are common indicators that a function is too large or doing too much:
 
-- **Excessive length:** Over 30 lines is a smell. Over 80 lines are almost always too long.
+- **Excessive length:** A line count of over 30 is a smell. A line count of over 80 is almost always too long.
 - **Deep nesting:** Multiple levels of indentation (loops within loops, nested `if`/`else`/`try` blocks).
 - **Too many parameters:** More than 5–6 parameters might indicate the function is aggregating too much logic.
 - **Mixed abstraction levels:** High-level operations and low-level details interwoven.
@@ -29,7 +29,7 @@ There are several ways to identify large functions in a codebase:
 - **Static analysis tools:** Linters or analyzers (for example, StyleCop, Roslyn).
 - **Artificial intelligence tools:** Tools that use artificial intelligence, such as GitHub Copilot, can help identify large functions and suggest refactoring opportunities.
 - **Code review feedback:** Look for past comments about complexity or maintainability.
-- **Metrics:** Cyclomatic complexity over 10-15 is a red flag.
+- **Metrics:** Code metrics, such as cyclomatic complexity and lines of code, can help identify large functions.
 - **Code coverage reports:** Large functions are often hard to cover fully with tests.
 
 ## Common "shapes" of large functions
@@ -108,4 +108,4 @@ Some large functions are acceptable in specific contexts (for example, performan
 
 ## Summary
 
-Large functions aren't just an aesthetic issue – they slow down development and increase risk. Large functions make it harder to understand, maintain, test, and reuse logic. By recognizing the signs of large functions and understanding their impact, developers can take steps to refactor them into smaller, single-purpose functions that are easier to work with.
+Large functions can hinder the development process by introducing various challenges. They often lead to decreased readability, increased complexity, and higher maintenance costs. By recognizing the signs of large functions and understanding their impact, developers can take proactive steps to refactor them into smaller, single-purpose functions that are easier to work with.
