@@ -1,4 +1,4 @@
-Agent Mode is a feature of GitHub Copilot Chat that allows developers to perform refactorings and code modifications with the assistance of AI. In Agent Mode, Copilot Chat can suggest code changes, automate repetitive tasks, and provide guidance for improving code quality. By using Agent Mode, developers can streamline their refactoring process and enhance productivity.
+Agent Mode is a feature of GitHub Copilot that allows developers to perform refactorings and code modifications with the assistance of AI. In Agent Mode, Copilot Chat can suggest code changes, automate repetitive tasks, and provide guidance for improving code quality. By using Agent Mode, developers can streamline their refactoring process and enhance productivity.
 
 ## Compare Ask and Agent modes
 

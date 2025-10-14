@@ -8,7 +8,7 @@ metadata:
   ms.author: cahowd
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: github-copilot
-title: consolidate-duplicate-logic-github-copilot-agent
+title: Consolidate duplicate logic using GitHub Copilot Agent
 summary: "This module covers the identification and consolidation of duplicate logic in codebases using GitHub Copilot Agent, focusing on best practices for refactoring and code quality improvement."
 abstract: |
   By the end of this module, you're able to:

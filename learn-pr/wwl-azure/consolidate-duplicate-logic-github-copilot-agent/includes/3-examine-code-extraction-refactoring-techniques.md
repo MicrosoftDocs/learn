@@ -27,13 +27,13 @@ The golden rule for code refactoring is small, safe steps.
 
 Effective refactoring follows these principles:
 
-1. **Make one change at a time**: Don't try to fix everything at once. Extract one piece of duplicate code, test it, then move to the next.
+- **Make one change at a time**: Don't try to fix everything at once. Extract one piece of duplicate code, test it, then move to the next.
 
-1. **Test after each change**: Run your tests (or manually verify functionality) after every small refactoring step. Incremental testing ensures that you catch issues early.
+- **Test after each change**: Run your tests (or manually verify functionality) after every small refactoring step. Incremental testing ensures that you catch issues early.
 
-1. **Keep the same behavior**: Code behavior should remain unchanged. Changes to code behavior indicate a bug, not a successful code refactoring.
+- **Keep the same behavior**: Code behavior should remain unchanged. Changes to code behavior indicate a bug, not a successful code refactoring.
 
-1. **Use version control**: Commit your code after successful refactoring so you can easily roll back if something goes wrong.
+- **Use version control**: Commit your code after successful refactoring so you can easily roll back if something goes wrong.
 
 ### Step-by-step refactoring approach
 
@@ -114,10 +114,10 @@ Inheritance allows you to consolidate duplicate code when multiple classes share
 
 The following approach can be used to consolidate code with base classes and inheritance:
 
-- Create an abstract base class containing the shared methods.
-- Move common code to the base class.
-- Update related classes to inherit from the base class.
-- Override or extend functionality in derived classes as needed.
+1. Create an abstract base class containing the shared methods.
+1. Move common code to the base class.
+1. Update related classes to inherit from the base class.
+1. Override or extend functionality in derived classes as needed.
 
 Consider the following important considerations:
 
@@ -131,9 +131,9 @@ Composition involves creating separate service classes that encapsulate specific
 
 **Implementation approach**:
 
-- Extract duplicate functionality into dedicated service classes.
-- Inject or reference these services in classes that need the functionality.
-- Each service class has a single, well-defined responsibility.
+1. Extract duplicate functionality into dedicated service classes.
+1. Inject or reference these services in classes that need the functionality.
+1. Each service class has a single, well-defined responsibility.
 
 For example, consider the following scenario. Multiple processors need to ship calculation logic. Instead of duplicating this code, create a `ShippingCalculatorService` that each processor can use.
 
@@ -220,26 +220,26 @@ After consolidating duplicate code, it's important to verify that the refactorin
 
 Track these key metrics to validate your consolidation efforts:
 
-1. **Code reduction**: Effective consolidation typically reduces code volume by 20-40% in areas with heavy duplication.
+- **Code reduction**: Effective consolidation typically reduces code volume by 20-40% in areas with heavy duplication.
 
-1. **Maintenance efficiency**: A single update replacing multiple modifications indicates successful consolidation.
+- **Maintenance efficiency**: A single update replacing multiple modifications indicates successful consolidation.
 
-1. **Test coverage**: One comprehensive test suite for a helper method replaces multiple redundant test sets.
+- **Test coverage**: One comprehensive test suite for a helper method replaces multiple redundant test sets.
 
-1. **Behavioral consistency**: All code paths using the consolidated logic must behave identically.
+- **Behavioral consistency**: All code paths using the consolidated logic must behave identically.
 
 ### Quality verification approach
 
 **Before consolidation**:
 
-- Document current metrics: duplicate instances, lines of code, test coverage.
-- Note pain points and capture performance benchmarks.
+1. Document current metrics: duplicate instances, lines of code, test coverage.
+1. Note pain points and capture performance benchmarks.
 
 **After consolidation**:
 
-- Compare metrics: reduced line count, improved coverage, decreased complexity.
-- Verify all tests pass and performance remains acceptable.
-- Confirm code is more self-documenting and intent is clearer.
+1. Compare metrics: reduced line count, improved coverage, decreased complexity.
+1. Verify all tests pass and performance remains acceptable.
+1. Confirm code is more self-documenting and intent is clearer.
 
 ### Positive indicators
 
@@ -255,30 +255,34 @@ Look for these signs of successful refactoring:
 
 Be alert to these indicators of problematic consolidation:
 
-1. **Over-abstraction**: The consolidated code is harder to understand than the original duplication.
+- **Over-abstraction**: The consolidated code is harder to understand than the original duplication.
 
-1. **Performance degradation**: Critical paths are slower due to generalization.
+- **Performance degradation**: Critical paths are slower due to generalization.
 
-1. **Loss of context**: Generic names like `ProcessData()` lose business meaning.
+- **Loss of context**: Generic names like `ProcessData()` lose business meaning.
 
-1. **Single responsibility violations**: Helpers trying to do too much become maintenance burdens.
+- **Single responsibility violations**: Helpers trying to do too much become maintenance burdens.
 
 ### Maintaining quality over time
 
 **Automated monitoring**:
 
-- Configure static analysis tools to track duplication metrics.
-- Set up quality gates in CI/CD pipelines.
-- Monitor technical debt trends.
+1. Configure static analysis tools to track duplication metrics.
+1. Set up quality gates in CI/CD pipelines.
+1. Monitor technical debt trends.
 
 **Team practices**:
 
-- Schedule regular refactoring reviews.
-- Document why certain duplications weren't consolidated.
-- Establish clear guidelines for acceptable duplication levels.
+1. Schedule regular refactoring reviews.
+1. Document why certain duplications weren't consolidated.
+1. Establish clear guidelines for acceptable duplication levels.
 
 Remember: The goal isn't zero duplication, but maintainable, understandable code. Sometimes a small amount of duplication is preferable to a complex abstraction. Successful consolidation makes your codebase easier to work with, not just shorter.
 
 ## Advanced design patterns
 
 In addition to basic refactoring techniques, there are advanced design patterns that can help avoid duplication. Patterns like Strategy, Template Method, and Helper/Utility classes provide formalized ways to encapsulate common functionality and promote code reuse. These patterns offer more sophisticated solutions for managing duplicate code and improving software design.
+
+## Summary
+
+Refactoring is the disciplined practice of restructuring code without changing its external behavior. Consolidating duplicate code improves maintainability, reduces bugs, and enhances readability. Effective refactoring follows small, safe steps with incremental testing.
