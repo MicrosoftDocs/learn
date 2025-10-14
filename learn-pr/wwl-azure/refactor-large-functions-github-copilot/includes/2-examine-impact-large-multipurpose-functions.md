@@ -1,10 +1,10 @@
-A "large function" (or "long method") is a function or method that tries to do too much. It often spans many lines of code and handles multiple tasks or concerns at once.
+A "large function" (or "long method") is a function or method that tries to do too much. Large functions often require scrolling to view the code and handle multiple tasks or concerns.
 
-There’s no strict line count definition for a long method. The most common guidelines suggest using 40-50 lines as a threshold where you should consider scrutinizing. However, there are also guidelines that suggest a threshold of 20 lines.
+There’s no strict line count definition for a large function. The most common guidelines suggest using 40-50 lines as a threshold where you should consider scrutinizing. However, there are also guidelines that suggest a threshold of 20 lines.
 
 ## Why are large functions bad?
 
-- **Poor readability:** You can’t quickly grasp what a long function is doing because multiple concerns are interwoven.
+- **Poor readability:** You can’t quickly grasp what a large function is doing because multiple concerns are interwoven.
 - **Difficult to maintain:** A change in one part of a large function can unexpectedly affect other parts, leading to bugs.
 - **Low reuse:** Useful bits of logic inside a large function can’t be reused elsewhere easily.
 - **Hard to test:** Writing unit tests for a 100-line function is tricky. You have to set up all its prerequisites, and you might only be able to test the end result.
@@ -14,17 +14,19 @@ There’s no strict line count definition for a long method. The most common gui
 
 Large functions crop up in all kinds of applications. An expert developer might notice the same pattern in many forms:
 
-- Monolithic Web Handlers: In web apps, a single controller action or API endpoint might handle validation, business logic, and database calls all together.
-
-- "God" Event Handlers: In desktop or mobile UIs, an event handler (like selecting a button) might accumulate functionality over time.
-
-- All-in-One Scripts: Console applications or scripts often have a `Main` or a single function that performs a sequence of steps in one block.
-
-- Complex Algorithms in One Go: Sometimes developers write a complex algorithm as one large function – perhaps parsing a file format or computing a result with many steps.
+- **Monolithic web handlers**: In web apps, a single controller action or API endpoint might handle validation, business logic, and database calls all together.
+- **"God" event handlers**: In desktop or mobile UIs, an event handler (like selecting a button) might accumulate functionality over time.
+- **All-in-one scripts**: Console applications or scripts often have a `Main` or a single function that performs a sequence of steps in one block.
+- **Complex algorithms in one go**: Sometimes developers write a complex algorithm as one large function – perhaps parsing a file format or computing a result with many steps.
 
 ## Problems across types
 
-Regardless of whether the function is in a UI layer, business logic layer, or a utility class, the problems of maintainability and readability persist.
+Regardless of whether the function is in a UI layer, business logic layer, or a utility class, the problems of maintainability and readability persist. Large functions in any layer can lead to:
+
+- **Tight coupling:** Changes in one part of the function can affect other parts, making it hard to isolate changes.
+- **Reduced cohesion:** The function tries to do too many things, making it hard to understand its purpose.
+- **Increased complexity:** The more logic packed into a single function, the harder it is to follow the flow of execution.
+- **Testing challenges:** Unit tests become more complex and less effective when trying to cover all the functionality in a large function.
 
 ## Summary
 
