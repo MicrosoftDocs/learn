@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.consolidate-duplicate-logic-github-copilot-agent.identify-duplicate-code-github-copilot
+title: Identify duplicate code using GitHub Copilot
+metadata:
+  title: Identify Duplicate Code using GitHub Copilot
+  description: Identify duplicate code using GitHub Copilot
+  ms.date: 10/14/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ms.service: github-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-identify-duplicate-code-github-copilot.md)]
