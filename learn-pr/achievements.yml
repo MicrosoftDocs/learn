@@ -7110,3 +7110,13 @@ achievements:
   title: "Case Study: Design Security Solutions for Infrastructure"
   summary: Apply your cybersecurity architect skills on a real business scenario in the area of infrastructure security. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs.
   iconUrl: /training/achievements/case-study-design-security-solutions-infrastructure.svg
+- uid: learn-sqlserver.introduction-sql-server-linux.badge
+  type: badge
+  title: Introduction to SQL Server on Linux
+  summary: Learn the benefits of installing SQL Server on Linux.
+  iconUrl: /training/achievements/sqlserver/introduction-to-sql-server-on-linux.svg
+- uid: learn-sqlserver.sql-server-2017-on-linux.trophy
+  type: trophy
+  title: SQL Server on Linux
+  summary: SQL Server now runs  on your choice of operating system. In this learning path, you'll discover the fundamentals of SQL Server on Linux, before discovering how to run SQL Server on Linux containers and deploy SQL Server on Linux. You'll then learn how to automatically tune your SQL Server on Linux deployment.
+  iconUrl: /training/achievements/sqlserver/sql-server-2017-on-linux.svg
