@@ -59023,6 +59023,16 @@
       "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/architect-infrastructure-operations/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/design-principles/design-for-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/monitor-usage-performance-availability-resources-azure-monitor/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/",
+      "redirect_document_id": false
     }
   ]
 }
