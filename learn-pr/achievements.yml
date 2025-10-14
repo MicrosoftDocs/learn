@@ -7110,3 +7110,13 @@ achievements:
   title: "Case Study: Design Security Solutions for Infrastructure"
   summary: Apply your cybersecurity architect skills on a real business scenario in the area of infrastructure security. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs.
   iconUrl: /training/achievements/case-study-design-security-solutions-infrastructure.svg
+- uid: learn.advanced-pybryt.badge
+  type: badge
+  title: Advanced PyBryt for Classroom Auto-assessment
+  summary: Learn advanced patterns in PyBryt, an open-source auto-assessment tool for creating assignments with targeted feedback and generalizable grading.
+  iconUrl: /training/achievements/student-evangelism/advanced-pybryt.svg
+- uid: learn.intro-to-pybryt.badge
+  type: badge
+  title: Introduction to PyBryt for Classroom Auto-assessment
+  summary: Learn how to use PyBryt, an open-source auto-assessment tool, to create assignments with targeted feedback and generalizable grading.
+  iconUrl: /training/achievements/student-evangelism/introduction-pybryt.svg

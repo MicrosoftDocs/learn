@@ -58923,6 +58923,76 @@
       "source_path": "learn-pr/wwl-data-ai/fundamentals-generative-ai/6c-responsible-ai.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/7-responsible-ai",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-pybryt/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-pybryt/2-high-level.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-pybryt/3-annotations.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-pybryt/4-reference-implementations.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-pybryt/5-reference-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-pybryt/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-pybryt/index.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/advanced-pybryt/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/advanced-pybryt/2-annotation-options.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/advanced-pybryt/3-relational-annotations.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/advanced-pybryt/4-complexity-annotations.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/advanced-pybryt/5-grading-pipelines.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/advanced-pybryt/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/advanced-pybryt/index.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
     }
   ]
 }
