@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.refactor-large-functions-github-copilot.examine-impact-large-multipurpose-functions
+uid: learn.refactor-large-functions-github-copilot.introduction
 title: Introduction
 metadata:
   title: Introduction
@@ -9,6 +9,6 @@ metadata:
   ms.author: cahowd
   ms.topic: unit
   ms.service: github-copilot
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

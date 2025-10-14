@@ -25,7 +25,7 @@ Regardless of whether the function is in a UI layer, business logic layer, or a 
 
 - **Tight coupling:** Changes in one part of the function can affect other parts, making it hard to isolate changes.
 - **Reduced cohesion:** The function tries to do too many things, making it hard to understand its purpose.
-- **Increased complexity:** The more logic packed into a single function, the harder it is to follow the flow of execution.
+- **Increased complexity:** The more logic packed into a single function, the harder it's to follow the flow of execution.
 - **Testing challenges:** Unit tests become more complex and less effective when trying to cover all the functionality in a large function.
 
 ## Summary
