@@ -3,7 +3,7 @@ uid: learn.wwl.azure-ai-foundry-configure-manage-guardrails
 metadata:
   title: Configure and manage guardrails in Azure AI Foundry 
   description: Safeguard your AI workloads with Azure AI Foundry guardrails. Discover how to configure and validate content filters, blocklists, and Prompt Shields to protect sensitive data, ensure responsible model behavior, and continuously improve AI safety.
-  ms.date: 10/15/2025
+  ms.date: 10/14/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
