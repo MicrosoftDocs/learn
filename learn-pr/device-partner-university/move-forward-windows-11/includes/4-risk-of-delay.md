@@ -1,7 +1,6 @@
 Modern work deserves modern protection—and now that Windows 10 has reached End of Support, waiting to upgrade introduces unnecessary risk.
 
-While Windows 10 devices may still function, they **no longer receive essential security updates, technical support, or compatibility enhancements** available on modern Windows 11 Pro devices.  
-This ongoing gap creates growing exposure to threats like malware, phishing, and operational disruptions.
+While Windows 10 devices may still function, they **no longer receive essential security updates, technical support, or compatibility enhancements** available on modern Windows 11 Pro devices. This ongoing gap creates growing exposure to threats like malware, phishing, and operational disruptions.
 
 ## Outdated PCs, higher risks
 

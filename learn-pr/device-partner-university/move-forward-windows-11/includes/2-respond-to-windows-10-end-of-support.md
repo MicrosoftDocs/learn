@@ -8,6 +8,7 @@ Let’s take a closer look at what’s at stake—and what you gain by moving fo
 ## Why upgrade now
 
 With Windows 10 support ended, continuing to use legacy devices increases exposure to security risks and system instability.  
+
 By moving to Windows 11 Pro, organizations can reduce risk and modernize their environment.
 
 | **Windows 10 (Post-EOS)** | **Windows 11 Pro (Next Step)** |

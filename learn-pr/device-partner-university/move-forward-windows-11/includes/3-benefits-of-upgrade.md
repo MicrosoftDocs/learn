@@ -14,7 +14,8 @@ According to a Forrester Total Economic Impact™ study, organizations that upgr
 
 ## Consider what’s at stake
 
-While the benefits of Windows 11 Pro speak for themselves, it’s equally important to understand what your organization risks by staying on Windows 10 post-EOS.  
+While the benefits of Windows 11 Pro speak for themselves, it’s equally important to understand what your organization risks by staying on Windows 10 post-EOS.
+  
 Without regular updates and security patches, devices face higher exposure to vulnerabilities and rising long-term maintenance costs.
 
 > [!TIP]

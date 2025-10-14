@@ -13,7 +13,7 @@ Modern businesses demand more from their technology—and Windows 11 Pro deliver
 - **Rapid performance**: Work faster and smarter with Windows 11 Pro devices, including AI-optimized PCs powered by built-in Neural Processing Units (NPUs) that deliver enhanced efficiency and flexibility.  
 
 > [!TIP]
-> For IT profesionals Windows 11 Pro integrates seamlessly with Microsoft Endpoint Manager, Windows Autopilot, and Azure Active Directory—enabling centralized device deployment, policy management, and security compliance from day one.
+> For IT professionals Windows 11 Pro integrates seamlessly with Microsoft Endpoint Manager, Windows Autopilot, and Azure Active Directory—enabling centralized device deployment, policy management, and security compliance from day one.
 
 ## Empower with Microsoft Copilot
 
