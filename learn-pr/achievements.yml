@@ -7110,6 +7110,26 @@ achievements:
   title: "Case Study: Design Security Solutions for Infrastructure"
   summary: Apply your cybersecurity architect skills on a real business scenario in the area of infrastructure security. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs.
   iconUrl: /training/achievements/case-study-design-security-solutions-infrastructure.svg
+- uid: learn.design-a-data-model-with-ads.badge
+  type: badge
+  title: Design a Performant Data Model in Azure SQL Database with Visual Studio Code
+  summary: "In this module, you'll learn how to create a data model with Visual Studio Code. You'll create indexes and tables and use data types to help develop your applications."
+  iconUrl: /training/achievements/design-a-data-model-with-ads.svg
+- uid: learn.incident-response-with-alerting-on-azure.badge
+  type: badge
+  title: Improve incident response with Azure Monitor alerts
+  summary: Respond to incidents and activities in your infrastructure through alerting capabilities in Azure Monitor.
+  iconUrl: /training/achievements/incident-response-with-alerting-on-azure.svg
+- uid: learn.architect-infrastructure-operations.trophy
+  type: trophy
+  title: Architect infrastructure operations in Azure
+  summary: Learn how to monitor, analyze, and manage the ongoing operation of your infrastructure in Azure.
+  iconUrl: /training/achievements/architect-infrastructure-operations.svg
+- uid: learn.monitor-resources-with-azure-monitor.trophy
+  type: trophy
+  title: Azure Monitor fundamentals
+  summary: Learn how to monitor the usage, performance, and availability of resources using Azure Monitor.
+  iconUrl: /training/achievements/monitor-usage-performance-availability-resources-azure-monitor.svg
 - uid: learn.advanced-pybryt.badge
   type: badge
   title: Advanced PyBryt for Classroom Auto-assessment

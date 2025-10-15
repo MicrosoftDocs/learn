@@ -58925,6 +58925,116 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/2-explore-azure-monitor-alert-types.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/3-metric-alerts.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/4-exercise-metric-alerts.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/5-log-alerts.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/6-activity-log-alerts.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/7-actions-and-alert-processing-rules.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/8-exercise-activity-log-alerts.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/2-analyze-the-structure-of-a-database-table.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/3-exercise-create-connect-azure-sql-db.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/4-exercise-create-tables-with-ads.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/5-table-constraints.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/6-table-indexes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/7-exercise-create-table-constraints-and-indexes-with-ads.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/8-exercise-work-with-data-in-ads.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/architect-infrastructure-operations/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/design-principles/design-for-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/monitor-usage-performance-availability-resources-azure-monitor/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/student-evangelism/introduction-pybryt/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/",
       "redirect_document_id": false
