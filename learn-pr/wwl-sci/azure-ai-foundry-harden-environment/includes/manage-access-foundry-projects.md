@@ -1,8 +1,8 @@
-Configuring RBAC in Microsoft Entra ID defines who can manage your Azure AI Foundry environment, but project access requires a more granular approach. Each Foundry project includes its own set of roles and permissions that govern who can view data, deploy models, and modify guardrails. Managing these roles independently ensures that access remains aligned with responsibility across teams.
+Configuring role-based access control (RBAC) in Microsoft Entra ID defines who can manage your Azure AI Foundry environment, but project access requires a more granular approach. Each Foundry project includes its own set of roles and permissions that govern who can view data, deploy models, and modify guardrails. Managing these roles independently ensures that access remains aligned with responsibility across teams.
 
 In the **Azure AI Foundry portal**, you'll find **Users** listed twice in the **Management center**, once under the Resource section for workspace access and again under each Project for project-level access.
 
-- The **Resource-level Users** view reflects Azure RBAC assignments and controls who can access or manage the Foundry workspace itself.
+- The **Resource-level Users** view reflects role assignments managed through Azure role-based access control (RBAC), which determine who can access or manage the Foundry workspace itself.
 
 - The **Project-level Users** view defines who can work inside a specific project and which in-portal permissions they have.
 
