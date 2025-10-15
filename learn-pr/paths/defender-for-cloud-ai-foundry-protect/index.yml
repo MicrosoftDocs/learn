@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.wwl.defender-for-cloud-ai-foundry-protect
+metadata:
+  title: 'Protect Azure AI Foundry solutions by using Microsoft Defender for Cloud'
+  description: 'Learn how to secure Azure AI Foundry workloads by using Microsoft Defender for Cloud. Discover AI resources across Azure, assess their security posture, protect against runtime threats, and configure model guardrails in Azure AI Foundry to prevent unsafe or policy-violating content.'
+  ms.date: 10/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: learning-path
+title: 'Protect Azure AI Foundry solutions by using Microsoft Defender for Cloud'
+prerequisites: |
+  - Experience managing Azure subscriptions, workloads, and Defender for Cloud plans
+  - Familiarity with Azure AI Foundry and how AI workloads are deployed in Azure
+  - Understanding of basic cloud security principles, including posture management, access control, and incident investigation
+summary: |
+  As AI workloads become central to business operations, they introduce new security challenges that traditional cloud tools do not fully address. 
+  
+  In this learning path, you learn how to:
+  - Understand AI workload risks and how Microsoft Defender for Cloud identifies and protects AI assets
+  - Enable the AI Workloads plan and use Cloud Security Posture Management (CSPM) to discover and remediate misconfigurations
+  - Use Cloud Workload Protection (CWP) to detect runtime threats targeting AI components
+  - Investigate AI security alerts in Microsoft Defender XDR
+  - Configure and manage guardrails in Azure AI Foundry to prevent unsafe or policy-violating model behavior
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+- ai-engineer
+- developer
+products:
+- defender-for-cloud
+- azure
+- azure-ai-foundry
+- entra-id
+subjects:
+- security
+- cloud-security
+- threat-protection
+modules:
+- learn.wwl.defender-for-cloud-ai-understand-protections
+- learn.wwl.defender-for-cloud-ai-protect-workloads
+- learn.wwl.azure-ai-foundry-configure-manage-guardrails
+trophy:
+  uid: learn.wwl.defender-for-cloud-ai-foundry-protect.trophy
