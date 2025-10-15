@@ -24,7 +24,7 @@ abstract: |
 
   By the end of this guided exercise, you gain hands-on experience in creating and configuring these services in Azure.
 prerequisites: None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/kubernetes-module.svg
 levels:
 - intermediate
 roles:
