@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.refactor-large-functions-github-copilot.refactor-large-functions-github-copilot-agent
+title: Refactor large functions using GitHub Copilot's Agent mode
+metadata:
+  title: Refactor Large Functions using GitHub Copilot's Agent Mode
+  description: Refactor large functions using GitHub Copilot's Agent mode.
+  ms.date: 10/14/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-refactor-large-functions-github-copilot-agent.md)]
