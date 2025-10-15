@@ -24,7 +24,7 @@ Although Microsoft 365 apps will still run on Windows 10 for a limited time, the
 
 Extended Security Updates (ESUs) for Windows 10 offer critical security patches beyond the official end-of-support date, helping organizations reduce risk while transitioning to newer systems. However, ESUs don't extend the full support lifecycle—they only cover essential security fixes, not feature updates or technical support.
 
-Even with ESUs applied, Microsoft 365 apps on Windows 10 are not fully supported. They receive security updates but lack full feature support, bug reporting, and technical assistance. This means organizations may face compliance issues, reduced functionality, and lack of access to new Microsoft 365 innovations.
+Even with ESUs applied, Microsoft 365 apps on Windows 10 aren't fully supported. They receive security updates but lack full feature support, bug reporting, and technical assistance. This means organizations might face compliance issues, reduced functionality, and lack of access to new Microsoft 365 innovations.
 
 Think of ESUs as a temporary safety net, not a long-term solution. They're designed to buy time for migration—not to maintain parity with Windows 11 environments, which continue to receive full support, feature updates, and AI-driven enhancements.
 
@@ -36,5 +36,5 @@ Running Microsoft 365 on a supported operating system provides several advantage
 | :--- | :--- |
 | **Security** | Hardware-based isolation, TPM 2.0, and virtualization-based protection help safeguard Microsoft 365 data. |
 | **Performance** | Optimized for modern hardware and APIs, delivering better reliability and responsiveness. |
-| **Access to new features** | Capabilities like Snap Layouts and Snap Groups equire Windows 11. |
+| **Access to new features** | Capabilities like Snap Layouts and Snap Groups require Windows 11. |
 | **Ongoing support** | Regular feature, quality, and security updates for both operating system and apps. |

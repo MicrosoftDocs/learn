@@ -30,13 +30,13 @@ quiz:
     choices:
         - content: "Use Windows 10 with ESUs"
           isCorrect: false
-          explanation: "Incorrect. ESUs only provide security fixes and do not ensure full compliance."
+          explanation: "Incorrect. ESUs only provide security fixes and don't ensure full compliance."
         - content: "Install updates, meet system requirements, and maintain a valid license"
           isCorrect: true
           explanation: "Correct. These are the key requirements for compliance."
         - content: "Submit bug reports regularly"
           isCorrect: false
-          explanation: "Incorrect. Bug reporting is not a compliance requirement."
+          explanation: "Incorrect. Bug reporting isn't a compliance requirement."
         - content: "Avoid automatic updates"
           isCorrect: false
           explanation: "Incorrect. Microsoft recommends enabling automatic updates for compliance."
@@ -47,7 +47,7 @@ quiz:
           explanation: "Incorrect. Feature updates end earlier, not after this date."
         - content: "They stop working entirely"
           isCorrect: false
-          explanation: "Incorrect. Apps may still run but without updates or support."
+          explanation: "Incorrect. Apps might still run but without updates or support."
         - content: "They get full technical support"
           isCorrect: false
           explanation: "Incorrect. Full support ends with Windows 10 support."
@@ -72,10 +72,10 @@ quiz:
     choices:
         - content: "Provide full feature updates"
           isCorrect: false
-          explanation: "Incorrect. ESUs do not include feature updates."
+          explanation: "Incorrect. ESUs don't include feature updates."
         - content: "Extend Modern Lifecycle Policy"
           isCorrect: false
-          explanation: "Incorrect. ESUs do not extend full support or lifecycle compliance."
+          explanation: "Incorrect. ESUs don't extend full support or lifecycle compliance."
         - content: "Offer critical security patches temporarily"
           isCorrect: true
           explanation: "Correct. ESUs provide limited security fixes during transition."
