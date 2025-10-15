@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.dpu.keep-microsof-365-secure
+uid: learn.dpu.keep-microsoft-365-secure
 title: Keep Microsoft 365 secure after Windows 10 end of support
 metadata:
   title: Keep Microsoft 365 Secure After Windows 10 End Of Support
@@ -19,7 +19,7 @@ abstract: |
   - Evaluate available paths—upgrading to Windows 11, purchasing new devices, or adopting Windows 365 Cloud PCs—to maintain compliance and security.
 prerequisites: |
   - None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/keep-microsoft-365-secure.svg
 ratingEnabled: false
 levels:
   - beginner
@@ -31,11 +31,11 @@ roles:
 products:
   - m365-business
 units:
-  - learn.dpu.keep-microsof-365-secure.introduction
-  - learn.dpu.keep-microsof-365-secure.understand-support-requirements-microsoft-365-apps
-  - learn.dpu.keep-microsof-365-secure.assess-impact-windows-10-end-support
-  - learn.dpu.keep-microsof-365-secure.plan-your-organizations-path-forward
-  - learn.dpu.keep-microsof-365-secure.knowledge-check
-  - learn.dpu.keep-microsof-365-secure.summary
+  - learn.dpu.keep-microsoft-365-secure.introduction
+  - learn.dpu.keep-microsoft-365-secure.understand-support-requirements-microsoft-365-apps
+  - learn.dpu.keep-microsoft-365-secure.assess-impact-windows-10-end-support
+  - learn.dpu.keep-microsoft-365-secure.plan-your-organizations-path-forward
+  - learn.dpu.keep-microsoft-365-secure.knowledge-check
+  - learn.dpu.keep-microsoft-365-secure.summary
 badge:
-  uid: learn.dpu.keep-microsof-365-secure.badge
+  uid: learn.dpu.keep-microsoft-365-secure.badge
