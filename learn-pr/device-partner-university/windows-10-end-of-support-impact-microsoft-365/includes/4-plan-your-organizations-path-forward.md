@@ -33,7 +33,7 @@ Modern PCs are designed for Windows 11 and include hardware-level protection fea
 They're also optimized for modern productivity experiences, including **Copilot in Windows**, which integrates AI assistance directly into workflows.
 
 | **Benefit** | **Description** |
-| :---: | :---: |
+| :--- | :--- |
 | **Security** | Hardware-based security is enabled by default. |
 | **Performance** | Faster startup, better power management, and support for AI-accelerated workloads. |
 | **Manageability** | Simplified deployment with Intune and Autopilot. |
@@ -51,9 +51,11 @@ Each Cloud PC includes access to Microsoft 365 apps in a managed, up-to-date env
 ## Compare your options
 
 | **Path** | **Description** | **When to choose it** |
-| :---: | :---: | :---: |
+| :--- | :--- | :--- |
 | **Upgrade in place** | Move existing supported devices to Windows 11. | Devices meet TPM 2.0 and CPU requirements. |
 | **Replace devices** | Purchase new Windows 11 PCs for users. | Hardware is outdated or fails compatibility checks. |
 | **Adopt Windows 365** | Run Windows 11 in the cloud. | Ideal for hybrid work or when hardware refresh cycles are delayed. |
+
+This diagram can help you understand your options.
 
 :::image type="content" border="true" source="../media/windows-10-to-windows-11-flowchart.png" alt-text="Flowchart diagram showcasing the various options for moving from Windows 10 to Windows 11":::

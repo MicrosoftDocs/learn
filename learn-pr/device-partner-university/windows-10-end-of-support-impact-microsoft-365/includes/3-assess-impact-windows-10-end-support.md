@@ -33,7 +33,7 @@ Think of ESUs as a temporary safety net, not a long-term solution. They're desig
 Running Microsoft 365 on a supported operating system provides several advantages beyond compliance.
 
 | **Area** | **Benefit of Windows 11** |
-| :---: | :---: |
+| :--- | :--- |
 | **Security** | Hardware-based isolation, TPM 2.0, and virtualization-based protection help safeguard Microsoft 365 data. |
 | **Performance** | Optimized for modern hardware and APIs, delivering better reliability and responsiveness. |
 | **Access to new features** | Capabilities like Snap Layouts and Snap Groups equire Windows 11. |

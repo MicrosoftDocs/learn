@@ -1,12 +1,10 @@
-# Introduction
-
-Understand how Windows 10 end of support affects Microsoft 365 apps
-
 Support for Windows 10 ended on October 14, 2025.
 
 After this date, devices running Windows 10 no longer receive security updates or technical support from Microsoft.
 
-Microsoft 365 apps will continue to run on Windows 10 for a limited time. While Windows 10 is no longer supported, Microsoft 365 apps will receive security updates until October 10, 2028. They are not fully supported under the Modern Lifecycle Policy.
+Windows 10 end of support impacts more than Windows 10—it also impacts Microsoft 365.
+
+In this module, you'll learn how Microsoft 365 is affected by Windows 10 reaching end of support—and what you and your organization can do to reduce your risk and navigate upgrading to Windows 11.
 
 ## Learning objectives
 

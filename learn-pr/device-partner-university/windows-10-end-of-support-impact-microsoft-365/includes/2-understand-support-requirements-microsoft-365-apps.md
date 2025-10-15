@@ -1,4 +1,4 @@
-Microsoft 365 apps are governed by the **Modern Lifecycle Policy**, which ensures that customers remain protected and up to date through regular servicing and system requirements.
+Microsoft 365 apps are governed by the Modern Lifecycle Policy, which ensures that customers remain protected and up to date through regular servicing and system requirements.
 
 To stay supported, all of the following conditions must be met:
 
