@@ -3,12 +3,11 @@ uid: learn.simplify-complex-conditionals-github-copilot-agent.analyze-complex-lo
 title: Analyze complex logic using GitHub Copilot's Ask mode
 metadata:
   title: Analyze Complex Logic using GitHub Copilot's Ask Mode
-  description: "Use GitHub Copilot's Ask mode to investigate options for simplifying complex conditional code. Learn to ask the right questions and get actionable insights for refactoring."
+  description: "Analyze complex logic using GitHub Copilot's Ask mode."
   ms.date: 10/17/2025
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-  ms.service: github-copilot
 durationInMinutes: 8
 content: |
   [!include[](includes/5-analyze-complex-logic-github-copilot-ask.md)]

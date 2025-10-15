@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.simplify-complex-conditionals-github-copilot-agent
 metadata:
-  title: Simplify complex conditionals using GitHub Copilot Agent
-  description: "Simplify complex conditionals using GitHub Copilot Agent"
+  title: Simplify Complex Conditionals using GitHub Copilot Agent
+  description: "This module covers the use of GitHub Copilot's Agent mode to simplify complex conditional statements in code. It provides practical examples and exercises to enhance coding efficiency."
   ms.date: 10/17/2025
   author: chrishowd
   ms.author: cahowd
@@ -12,21 +12,21 @@ title: Simplify complex conditionals using GitHub Copilot Agent
 summary: "This module covers the use of GitHub Copilot's Agent mode to simplify complex conditional statements in code. It provides practical examples and exercises to enhance coding efficiency."
 abstract: |
   By the end of this module, you'll be able to:
-    - "Describe how complex conditional evolve over time and the problems associated with complex and deeply nested conditional code."
-    - "Describe the tools, techniques, and processes used to refactor complex and deeply nested conditional code."
-    - "Use GitHub Copilot’s Ask mode to explain a codebase and identify opportunities to simplify complex and deeply nested conditional code."
-    - "Use GitHub Copilot’s Agent mode to refactor complex and deeply nested conditional code."
+    - Describe how complex conditional evolve over time and the problems associated with complex and deeply nested conditional code.
+    - Describe the tools, techniques, and processes used to refactor complex and deeply nested conditional code.
+    - Use GitHub Copilot’s Ask mode to explain a codebase and identify opportunities to simplify complex and deeply nested conditional code.
+    - Use GitHub Copilot’s Agent mode to refactor complex and deeply nested conditional code.
 prerequisites: |
-  - "Experience using GitHub Copilot in Visual Studio Code."
-  - "Experience developing C# applications."
+  - Experience using GitHub Copilot in Visual Studio Code.
+  - Experience developing C# applications.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate
 roles:
   - developer
 products:
-  github
-  vs-code
+  - github
+  - vs-code
 subjects:
   - app-development
   - productivity
