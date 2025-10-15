@@ -17,8 +17,8 @@ abstract: |
     - Use GitHub Copilot’s Ask mode to explain a codebase and identify opportunities to convert large functions into smaller, single-purpose functions.
     - Use GitHub Copilot’s Agent mode to refactor large functions into smaller helper functions and static methods.
 prerequisites: |
-  - "Experience using GitHub Copilot in Visual Studio Code."
-  - "Experience developing C# applications."
+  - Experience using GitHub Copilot in Visual Studio Code.
+  - Experience developing C# applications.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - intermediate
