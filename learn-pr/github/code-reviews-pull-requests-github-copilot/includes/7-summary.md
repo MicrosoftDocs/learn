@@ -25,7 +25,7 @@ With these practices, your team can transform code reviews from bottlenecks into
 
 To deepen your understanding of GitHub Copilot code review and related workflows, check out the following resources:
 
-- [About GitHub Copilot Code Review](https://docs.github.com/en/copilot/using-github-copilot/code-review/about-github-copilot-code-review)
+- [About GitHub Copilot Code Review](https://docs.github.com/copilot/concepts/agents/code-review)
 
 - [Using GitHub Copilot code review](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review)
 
@@ -33,10 +33,8 @@ To deepen your understanding of GitHub Copilot code review and related workflows
 
 - [Approving a Pull Request with Required Reviews](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/approving-a-pull-request-with-required-reviews)
 
-- [Adding Repository Custom Instructions for GitHub Copilot](https://docs.github.com/en/copilot/using-github-copilot/configuring-and-managing-github-copilot/adding-repository-custom-instructions-for-github-copilot)
+- [Adding Repository Custom Instructions for GitHub Copilot](https://docs.github.com/copilot/how-tos/configure-custom-instructions/add-repository-instructions)
 
-- [Configuring Automatic Code Review by GitHub Copilot](https://docs.github.com/en/copilot/using-github-copilot/code-review/configuring-automatic-code-review-by-github-copilot)
+- [Configuring Automatic Code Review by GitHub Copilot](https://docs.github.com/copilot/how-tos/use-copilot-agents/request-a-code-review/configure-automatic-review)
 
-- [Configuring Coding Guidelines for GitHub Copilot Code Review](https://docs.github.com/en/copilot/using-github-copilot/code-review/configuring-coding-guidelines-for-github-copilot-code-review)
-
-- [GitHub Copilot in Pull Requests](https://github.blog/changelog/2024-04-23-github-copilot-in-pull-requests-generally-available)
+- [Configuring Coding Guidelines for GitHub Copilot Code Review](https://docs.github.com/copilot/how-tos/configure-custom-instructions/add-repository-instructions)
