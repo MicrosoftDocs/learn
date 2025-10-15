@@ -46,7 +46,7 @@ You can use the [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2)
 
 ### Azure Web App for Container task
 
-The [Azure Web App for Container task](//azure/devops/pipelines/tasks/reference/azure-web-app-container-v1?azure-portal=true) is designed to deploy Docker containers to Azure App Service. Replace the entire **Deploy** stage with the YAML snippet below.
+The [Azure Web App for Container task](/azure/devops/pipelines/tasks/reference/azure-web-app-container-v1) is designed to deploy Docker containers to Azure App Service. Replace the entire **Deploy** stage with the YAML snippet below.
 
 * **appName**: Specifies the name of an existing Azure App Service.
 * **azureSubscription**: Specifies the name of the Azure Resource Manager subscription for the deployment.
