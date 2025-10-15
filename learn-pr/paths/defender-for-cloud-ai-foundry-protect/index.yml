@@ -21,8 +21,6 @@ summary: |
   - Use Cloud Workload Protection (CWP) to detect runtime threats targeting AI components
   - Investigate AI security alerts in Microsoft Defender XDR
   - Configure and manage guardrails in Azure AI Foundry to prevent unsafe or policy-violating model behavior
-
-  Together, these capabilities help cloud and security engineers safeguard AI workloads from data leakage, model abuse, and evolving threats.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
