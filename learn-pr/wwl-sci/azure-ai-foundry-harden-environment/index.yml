@@ -1,0 +1,62 @@
+### YamlMime:Module
+uid: learn.wwl.azure-ai-foundry-harden-environment
+metadata:
+  title: Configure and manage guardrails in Azure AI Foundry 
+  description: Safeguard your AI workloads with Azure AI Foundry guardrails. Discover how to configure and validate content filters, blocklists, and Prompt Shields to protect sensitive data, ensure responsible model behavior, and continuously improve AI safety.
+  ms.date: 10/14/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: azure-ai-foundry
+title: Configure and manage guardrails in Azure AI Foundry 
+summary: |
+  Azure AI Foundry guardrails help secure AI workloads by applying configurable safety controls that evaluate both prompts and responses.
+  You'll learn how to understand built-in safety models, test and refine guardrails, create blocklists, configure content filters, and validate that protections work as intended.
+  These capabilities help organizations prevent unsafe or policy-violating interactions, protect sensitive data, and maintain trust in AI-assisted applications.
+abstract: |
+  In this module, you learn to:
+  - Explain how guardrails secure model interactions in Azure AI Foundry
+  - Describe safety controls such as content filters, blocklists, and Prompt Shields
+  - Configure and validate custom guardrails for different workload types
+  - Evaluate guardrail effectiveness and refine configurations for continuous assurance
+prerequisites: |
+  Before starting, you should have:
+  - Experience managing Azure AI or cloud-based workloads
+  - Familiarity with AI model deployment and data security concepts
+  - Awareness of organizational policy or compliance requirements related to AI use
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+- developer
+products:
+- azure
+- azure-ai-foundry
+- defender-for-cloud
+subjects:
+- security
+- cloud-security
+units:
+- learn.wwl.azure-ai-foundry-harden-environment.introduction
+- learn.wwl.azure-ai-foundry-harden-environment.control-access-azure-ai-foundry
+- learn.wwl.azure-ai-foundry-harden-environment.manage-access-foundry-projects
+
+
+
+
+
+
+
+
+
+- learn.wwl.azure-ai-foundry-harden-environment.understand-safety-controls
+- learn.wwl.azure-ai-foundry-harden-environment.try-guardrails
+- learn.wwl.azure-ai-foundry-harden-environment.create-manage-blocklist
+- learn.wwl.azure-ai-foundry-harden-environment.configure-content-filter
+- learn.wwl.azure-ai-foundry-harden-environment.choose-refine-guardrails
+- learn.wwl.azure-ai-foundry-harden-environment.knowledge-check
+- learn.wwl.azure-ai-foundry-harden-environment.summary
+badge:
+  uid: learn.wwl.azure-ai-foundry-harden-environment.badge
