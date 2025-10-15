@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.keep-microsof-365-secure.understand-support-requirements-microsoft-365-apps
+title: Understand support requirements for Microsoft 365 apps
+metadata:
+  title: Understand Support Requirements For Microsoft 365 Apps
+  description: This content is part of the "Keep Microsoft 365 secure after Windows 10 end of support" module.
+  ms.date: 10/15/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-understand-support-requirements-microsoft-365-apps.md)]

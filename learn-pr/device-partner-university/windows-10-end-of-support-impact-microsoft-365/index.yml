@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dpu.keep-microsof-365-secure
+title: Keep Microsoft 365 secure after Windows 10 end of support
+metadata:
+  title: Keep Microsoft 365 Secure After Windows 10 End Of Support
+  description: In this module, you'll learn how Windows 10 end of support affects Microsoft 365 apps, what it means to stay compliant, and how to plan a smooth transition to Windows 11 or Windows 365 Cloud PCs.
+  ms.date: 10/15/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: module
+  ms.service: microsoft-365-business
+  ms.custom: CW062025-2
+summary: >
+  Explore how Windows 10 end of support affects Microsoft 365 apps and learn what steps to take to maintain security, compliance, and full functionality.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain how the end of support for Windows 10 affects Microsoft 365 apps under the Modern Lifecycle Policy.
+  - Identify the support limitations, update timelines, and risks of continuing to use Microsoft 365 on Windows 10.
+  - Evaluate available paths—upgrading to Windows 11, purchasing new devices, or adopting Windows 365 Cloud PCs—to maintain compliance and security.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - m365-business
+units:
+  - learn.dpu.keep-microsof-365-secure.introduction
+  - learn.dpu.keep-microsof-365-secure.understand-support-requirements-microsoft-365-apps
+  - learn.dpu.keep-microsof-365-secure.assess-impact-windows-10-end-support
+  - learn.dpu.keep-microsof-365-secure.plan-your-organizations-path-forward
+  - learn.dpu.keep-microsof-365-secure.knowledge-check
+  - learn.dpu.keep-microsof-365-secure.summary
+badge:
+  uid: learn.dpu.keep-microsof-365-secure.badge
