@@ -4,11 +4,11 @@ title: What is clustering?
 metadata:
   title: What is clustering?
   description: Review what clustering is and different examples of it
-  ms.date: 09/07/2023
+  ms.date: 10/14/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-what-is-clustering.md)]
+  [!include[](includes/2-what-is-clustering.md)]
