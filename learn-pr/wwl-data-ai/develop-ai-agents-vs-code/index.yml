@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.develop-ai-agents-vs-code
+metadata:
+  title: Develop AI agents with the Azure AI Foundry extension in Visual Studio Code
+  description: Learn how to build, test, and deploy AI agents using the Azure AI Foundry extension in Visual Studio Code.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 10/06/2025
+  ms.service: azure-ai-foundry
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.custom: ai-learning-hub
+title: Develop AI agents with the Azure AI Foundry extension in Visual Studio Code
+summary: "Learn how to build, test, and deploy AI agents using the Azure AI Foundry extension in Visual Studio Code."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Configure and deploy AI agents using the agent designer
+    - Add tools and capabilities to extend your agents' functionality
+    - Test agents using the integrated playground
+    - Generate sample code to integrate agents into applications
+prerequisites: |
+  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - ai-engineer
+  - data-scientist
+products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - azure-ai-foundry
+  - azure-ai-foundry-agent-service
+subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - artificial-intelligence
+units:
+- learn.wwl.develop-ai-agents-vs-code.introduction
+- learn.wwl.develop-ai-agents-vs-code.get-started-with-extension
+- learn.wwl.develop-ai-agents-vs-code.agent-development
+- learn.wwl.develop-ai-agents-vs-code.extend-agent-capabilities
+- learn.wwl.develop-ai-agents-vs-code.exercise
+- learn.wwl.develop-ai-agents-vs-code.knowledge-check
+- learn.wwl.develop-ai-agents-vs-code.summary
+badge:
+  uid: learn.wwl.develop-ai-agents-vs-code.badge
+
