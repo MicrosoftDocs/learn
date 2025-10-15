@@ -4,11 +4,11 @@ title: What is classification?
 metadata:
   title: What is classification?
   description: An overview of classification and some examples
-  ms.date: 08/25/2024
+  ms.date: 10/14/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-what-is-classification.md)]
+  [!include[](includes/2-what-is-classification.md)]

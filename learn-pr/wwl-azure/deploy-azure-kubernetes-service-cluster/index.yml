@@ -20,7 +20,7 @@ abstract: |
   * Configure Azure Active Directory Integration.
   * Monitor an Azure Kubernetes Service cluster.
 prerequisites: None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/kubernetes-module.svg
 levels:
 - intermediate
 roles:
@@ -41,4 +41,4 @@ units:
 - learn.wwl.deploy-azure-kubernetes-service-cluster.summary
 badge:
   uid: learn.wwl.deploy-azure-kubernetes-service-cluster.badge
-
+
