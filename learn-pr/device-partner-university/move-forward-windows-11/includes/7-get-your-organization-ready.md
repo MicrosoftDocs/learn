@@ -8,7 +8,7 @@ Upgrading to Windows 11 Pro delivers immediate advantages, including:
 
 ## Unlock the full potential
 
-With the right tools and strategies, transitioning to Windows 11 Pro is smoother and more efficient than ever.  Modern deployment options like Windows Autopilot, Microsoft Intune, and Copilot+ PCs simplify upgrades and keep devices ready for the future.
+With the right tools and strategies, transitioning to Windows 11 Pro is smoother and more efficient than ever. Modern deployment options like Windows Autopilot, Microsoft Intune, and Copilot+ PCs simplify upgrades and keep devices ready for the future.
 
 By moving forward now, your organization stays protected, modern, and AI-ready—positioned to take advantage of new innovations as they arrive.
 
