@@ -59011,17 +59011,17 @@
     },
     {
       "source_path": "learn-pr/machine-learning/3-exercise-train-deep-neural-network.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/training/modules/train-evaluate-deep-learn-models/",
+      "redirect_url": "/training/modules/train-evaluate-deep-learn-models/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/machine-learning/learn-pr/machine-learning/train-evaluate-deep-learn-models/5-exercise-train-convolutional-neural-network.yml",
-      "redirect_url": "https://learn.microsoft.com/en-us/training/modules/train-evaluate-deep-learn-models/",
+      "redirect_url": "/training/modules/train-evaluate-deep-learn-models/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/machine-learning/learn-pr/machine-learning/train-evaluate-deep-learn-models/5c-use-transfer-learning",
-      "redirect_url": "https://learn.microsoft.com/en-us/training/modules/train-evaluate-deep-learn-models/",
+      "redirect_url": "/training/modules/train-evaluate-deep-learn-models/",
       "redirect_document_id": false
     }
   ]
