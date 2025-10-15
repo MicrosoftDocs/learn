@@ -200,6 +200,37 @@
       "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
       "redirect_document_id": false
     },
+
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/introduction-to-sql-server-2022/3-cloud-connected.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-sql-server-2022-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/introduction-to-sql-server-2022/4-built-in-query-intelligence.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-sql-server-2022-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/introduction-to-sql-server-2022/5-security-scalability-availability.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-sql-server-2022-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/introduction-to-sql-server-2022/6-data-virtualization-object-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-sql-server-2022-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/introduction-to-sql-server-2022/7-sql-language-enhancements.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-sql-server-2022-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/introduction-to-sql-server-2022/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-sql-server-2022-capabilities",
+      "redirect_document_id": false
+    },
     {
       "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
@@ -58891,6 +58922,106 @@
     {
       "source_path": "learn-pr/wwl-data-ai/fundamentals-generative-ai/6c-responsible-ai.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/7-responsible-ai",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/2-create-your-azure-maps-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/3-learn-about-azure-maps-route-finding.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/4-exercise-create-your-route-finding-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/5-exercise-test-your-route-finding-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/connect.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/create.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/data-science-virtual-machine.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/exercise-connect.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/exercise-create.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/exercise-preinstalled-tools.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/index.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/introduction.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/summary.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/device-partner-university/move-forward-windows-11/2-countdown-to-windows-10-end-of-support.yml",
+      "redirect_url": "/training/modules/move-forward-windows-11/2-respond-to-windows-10-end-of-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/train-evaluate-deep-learn-models/3-exercise-train-deep-neural-network.yml",
+      "redirect_url": "/training/modules/train-evaluate-deep-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/train-evaluate-deep-learn-models/5-exercise-train-convolutional-neural-network.yml",
+      "redirect_url": "/training/modules/train-evaluate-deep-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/train-evaluate-deep-learn-models/5c-use-transfer-learning.yml",
+      "redirect_url": "/training/modules/train-evaluate-deep-learn-models/",
       "redirect_document_id": false
     }
   ]

@@ -3,12 +3,13 @@ uid: learn.tensorflow.intro-machine-learning-tensorflow
 metadata:
   title: "Go beyond Keras: Customize with TensorFlow"
   description: Learn how to build a machine learning model using lower-level TensorFlow concepts.
-  ms.date: 07/24/2023
-  author: bstollnitz
-  ms.author: bstollnitz
+  ms.date: 10/10/2025
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: bstollnitz-08202021
+  ms.service: azure-machine-learning
 title: "Go beyond Keras: Customize with TensorFlow"
 summary: If you've completed the first module and realized that you need extra flexibility to build or debug your model, then this module is for you. We'll show how you can create a simple neural network for image classification, but this time we'll use lower-level TensorFlow code and explain the foundational concepts needed to understand it. 
 abstract: |
