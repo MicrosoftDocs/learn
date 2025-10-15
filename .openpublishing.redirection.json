@@ -58925,6 +58925,91 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/connect-azure-database-mysql.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/deploy-azure-database-mysql.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/how-deploy-connect-azure-database-mysql.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/what-azure-database-mysql.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/2-connect-to-mysql-from-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/3-choose-app-hosting-option.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/4-deploy-app-on-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/5-exercise-app-service-mysql.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/6-implement-best-practices.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
       "redirect_document_id": false

@@ -7110,6 +7110,16 @@ achievements:
   title: "Case Study: Design Security Solutions for Infrastructure"
   summary: Apply your cybersecurity architect skills on a real business scenario in the area of infrastructure security. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs.
   iconUrl: /training/achievements/case-study-design-security-solutions-infrastructure.svg
+- uid: learn.develop-apps-with-azure-database-mysql.badge
+  type: badge
+  title: Develop apps with Azure Database for MySQL - Flexible Server
+  summary: Learn to create apps that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy intelligent apps faster by integrating with Azure App Service, Azure Kubernetes Service, Azure AI Search, Azure OpenAI, Azure DevOps, or GitHub.
+  iconUrl: /training/achievements/mysql/build-apps-with-azure-database-for-mysql.svg
+- uid: learn.deploy-azure-database-for-mysql.badge
+  type: badge
+  title: Deploy your first Azure Database for MySQL flexible server
+  summary: In this module, you'll learn how you can use Azure Database for MySQL - Flexible Server to accommodate the scalability and resiliency requirements of your LAMP (Linux, Apache, MySQL, PHP/Perl/Python) based applications. You'll also learn how to create an Azure Database for MySQL flexible server.
+  iconUrl: /training/achievements/mysql/create-azure-database-for-mysql.svg
 - uid: learn.design-a-data-model-with-ads.badge
   type: badge
   title: Design a Performant Data Model in Azure SQL Database with Visual Studio Code
