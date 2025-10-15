@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.refactor-large-functions-github-copilot.test-refactored-code
+title: Test refactored code
+metadata:
+  title: Test Refactored Code
+  description: Test refactored code.
+  ms.date: 10/14/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-test-refactored-code.md)]
