@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.refactor-large-functions-github-copilot
+metadata:
+  title: Refactor Large Functions using GitHub Copilot Agent
+  description: "Learn how to identify large multi-purpose functions and how to refactor large functions into smaller helper classes and static methods by using GitHub Copilot in Visual Studio Code."
+  ms.date: 10/14/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: github-copilot
+title: Refactor large functions using GitHub Copilot Agent
+summary: "This module covers the identification and refactoring of large functions into smaller, more manageable components using GitHub Copilot in Visual Studio Code."
+abstract: |
+  By the end of this module, you're able to:
+    - Describe the problems introduced by large, multi-purpose functions and the benefits provided by small, single-purpose functions.
+    - Describe the tools, techniques, and processes used to refactor large functions into smaller functions.
+    - Use GitHub Copilot’s Ask mode to explain a codebase and identify opportunities to convert large functions into smaller, single-purpose functions.
+    - Use GitHub Copilot’s Agent mode to refactor large functions into smaller helper functions and static methods.
+prerequisites: |
+  - Experience using GitHub Copilot in Visual Studio Code.
+  - Experience developing C# applications.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+  - intermediate
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - developer
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - github
+  - vs-code
+subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - app-development
+  - productivity
+units:
+  - learn.refactor-large-functions-github-copilot.introduction
+  - learn.refactor-large-functions-github-copilot.examine-impact-large-multipurpose-functions
+  - learn.refactor-large-functions-github-copilot.examine-characteristics-large-functions
+  - learn.refactor-large-functions-github-copilot.identify-evaluate-large-functions-github-copilot-ask
+  - learn.refactor-large-functions-github-copilot.refactor-large-functions-github-copilot-agent
+  - learn.refactor-large-functions-github-copilot.test-refactored-code
+  - learn.refactor-large-functions-github-copilot.exercise-refactor-large-functions-github-copilot
+  - learn.refactor-large-functions-github-copilot.knowledge-check
+  - learn.refactor-large-functions-github-copilot.summary
+badge:
+  uid: learn.refactor-large-functions-github-copilot.badge

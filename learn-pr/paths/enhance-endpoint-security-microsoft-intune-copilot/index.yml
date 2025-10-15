@@ -16,7 +16,7 @@ prerequisites: |
   - Access to Microsoft Intune and Copilot for Security tools for hands-on practice.
 summary: |
   This learning path will teach you the essentials of Microsoft Intune, advanced threat detection and response with Microsoft Security Copilot, and how to optimize the integration between Intune and Copilot.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/copilot-learning-path.svg
 levels:
 - beginner
 roles:
