@@ -4,13 +4,13 @@ title: Exercise - Visualize data with Matplotlib
 metadata:
   title: Exercise - Visualize data with Matplotlib
   description: "Exercise - Visualize data with Matplotlib"
-  ms.date: 08/01/2024
+  ms.date: 10/14/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
   ms.custom:
     - devx-track-python
-durationInMinutes: 10
-sandbox: true
-notebook: notebooks/02-visualize-data.ipynb
-
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-visualize-data.md)]
+
