@@ -59010,17 +59010,17 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/machine-learning/3-exercise-train-deep-neural-network.yml",
+      "source_path": "learn-pr/machine-learning/train-evaluate-deep-learn-models/3-exercise-train-deep-neural-network.yml",
       "redirect_url": "/training/modules/train-evaluate-deep-learn-models/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/machine-learning/learn-pr/machine-learning/train-evaluate-deep-learn-models/5-exercise-train-convolutional-neural-network.yml",
+      "source_path": "learn-pr/machine-learning/train-evaluate-deep-learn-models/5-exercise-train-convolutional-neural-network.yml",
       "redirect_url": "/training/modules/train-evaluate-deep-learn-models/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/machine-learning/learn-pr/machine-learning/train-evaluate-deep-learn-models/5c-use-transfer-learning",
+      "source_path": "learn-pr/machine-learning/train-evaluate-deep-learn-models/5c-use-transfer-learning.yml",
       "redirect_url": "/training/modules/train-evaluate-deep-learn-models/",
       "redirect_document_id": false
     }
