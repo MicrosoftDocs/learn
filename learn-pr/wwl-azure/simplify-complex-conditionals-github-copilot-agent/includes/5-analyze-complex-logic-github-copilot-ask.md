@@ -2,23 +2,23 @@
 
 Identifying and planning a refactor is often half the battle. GitHub Copilot Chat’s Ask mode can help you examine a piece of complex code and figure out how to simplify it. Ask mode is a conversational Q&A interface with AI: you ask questions or request suggestions, and Copilot answers using the context you provide, without directly modifying your code. It’s like having a knowledgeable colleague who can read your code and give advice.
 
-## What is Ask Mode?
+## What is Ask mode?
 
 In Ask mode, Copilot Chat does not make changes to your files. It can read the code you’ve selected or that’s visible in the editor and respond with explanations, insights, or code examples in text form. Think of it as a smart mentor: you highlight a confusing function or a giant `if` statement and ask, "How can I simplify this?" Copilot will analyze that code and come back with suggestions. It might propose refactoring steps (e.g., "introduce an early return here" or "extract this block into a function"), or point out redundancies. Importantly, it’s focused on answering your question without doing anything itself to the codebase. This makes it a safe way to explore ideas because you retain full control – you can ask "what if we did X?" and see the answer before deciding to implement anything.
 
-## Using Ask Mode to Plan a Refactor
+## Using Ask mode to plan a refactor
 
 Here’s a typical workflow for using Ask mode on a complex conditional:
 
-### Open the Problematic Code
+### Open the problematic code
 
 Navigate to the file and function that contains the complex conditional logic you intend to refactor. For example, suppose you have a method `CalculateDiscount()` that has grown huge with many nested conditions.
 
-### Highlight or Select the Relevant Code (Optional but Helpful)
+### Highlight or select the relevant code (optional but helpful)
 
 By selecting the specific block of code (the nested `if` statements, for instance), you give Copilot a clear focus. Copilot will use this selection as context for answering.
 
-### Ask for an Explanation of the Code
+### Ask for an explanation of the code
 
 Start simple. For instance:  
 > "Copilot, can you explain what this `CalculateDiscount` method is doing?"
@@ -28,7 +28,7 @@ In Ask mode, Copilot will read through the code and produce an explanation in pl
 
 Seeing this summary confirms the code’s intent and may already highlight where the logic is convoluted.
 
-### 4. Ask Pointed Questions About Complexity
+### Ask pointed questions about complexity
 
 Now you can get analytical. Some useful questions:
 
@@ -40,7 +40,7 @@ Now you can get analytical. Some useful questions:
 Copilot could point out, for example:  
 > "The nested `if` inside the coupon section adds complexity. Also, there is an `if` five levels deep for holiday sales – consider simplifying that."
 
-### Ask for Refactoring Suggestions
+### Ask for refactoring suggestions
 
 Now the key question:  
 > "How can I simplify or refactor this conditional logic?"
@@ -54,7 +54,7 @@ Copilot, in Ask mode, might respond with a list of suggestions. For example:
 
 It might even sketch out brief pseudo-code or show how a piece of the code would look after applying these ideas.
 
-### Iterate with Follow-Up Questions
+### Iterate with follow-up questions
 
 You can drill down on any suggestion:
 
@@ -71,7 +71,7 @@ Through this dialogue, Copilot helps form a refactoring plan. By the end of the 
 
 This plan outlines how to apply the techniques from Unit 3 to your particular code.
 
-## Treat Suggestions as Guidance
+## Treat suggestions as guidance
 
 While Copilot’s suggestions are often good, they’re not infallible. Treat them as guidance, not absolute truth. For instance, Copilot might suggest a change that would slightly alter behavior if it misinterpreted the code. Always double-check any critical logic changes.
 

@@ -30,7 +30,7 @@ As a developer, you should be on the lookout for red flags in code that suggest 
 
 - **Use of "flag" variables to control flow**: Sometimes developers introduce temporary flags as a workaround for complex logic (e.g., `bool isValid = false; ... if (condition) { isValid = true; } ... if (isValid) { ... }`). While not an `if` nesting per se, it’s often a response to complexity – the code couldn’t easily do what it needed in one pass, so it sets a flag to be checked later. Such patterns can often be eliminated by restructuring conditionals or using early returns.
 
-## Recognizing Complexity in Real Projects
+## Recognizing Complexity in real projects
 
 To illustrate, let’s revisit our example scenarios and how they might look in a messy codebase:
 

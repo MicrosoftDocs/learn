@@ -39,6 +39,6 @@ if (user != null) {
 
 When you review this code sample for the first time, it takes a minute to determine the conditions that lead to "Access granted" versus the various denial messages. The nesting pushes the important logic to the far right, creating an "arrowhead" shape. You have to mentally invert the structure to understand it: first check user not null, then active, then role, then permission – all in reverse due to nesting. This example exhibits all the issues above: it’s tedious to read and reason about, adding a new access rule would require touching multiple places, and you’d need many tests (null user, inactive user, non-admin user, admin without permission, admin with permission, etc.) to cover it all.
 
-## Summary of Issues
+## Summary
 
 Complex conditionals decrease code quality by making code less readable, harder to modify, and more error-prone. Complex conditionals often indicate that a function is doing too much or that logic is not well-structured. Recognizing these problems is the first step; whenever you notice code that is difficult to understand due to nested or elaborate conditionals, it’s a sign that refactoring might be needed.
