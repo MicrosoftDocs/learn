@@ -24,7 +24,7 @@ abstract: |
 
   -   Clustering of virtual or on-premises machines called nodes that share compute, network, and storage resources.
 prerequisites: None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/kubernetes-module.svg
 levels:
 - intermediate
 roles:

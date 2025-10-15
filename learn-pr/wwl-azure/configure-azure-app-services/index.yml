@@ -42,7 +42,7 @@ levels:
 roles:
 - administrator
 products:
-- dynamics-365
+- azure-app-service
 units:
 - learn.wwl.configure-azure-app-services.introduction
 - learn.wwl.configure-azure-app-services.implement
