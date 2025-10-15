@@ -70,7 +70,7 @@ After configuration, validation ensures your filters behave as intended. Use the
 - Record results to identify where thresholds or actions like _annotate only_ vs. _annotate and block_, might need adjustment.
 - Confirm that detections appear in logs or activity details to verify audit visibility and traceability.
 
-   :::image type="content" source="../media/test-content-filter.png" alt-text="Screenshot showing the Try it out page in Azure AI Foundry with a built-in sample prompt triggering the Self-harm and Violence categories." lightbox="../media/test-content-filter.png":::
+   :::image type="content" source="../media/test-content-filter.png" alt-text="Screenshot showing the Try it out page in Azure AI Foundry with configured harm category thresholds and a test result marked as allowed." lightbox="../media/test-content-filter.png":::
 
 Validation helps fine-tune protections, catch configuration gaps, and build assurance that your AI workloads will respond safely under real-world conditions.
 
