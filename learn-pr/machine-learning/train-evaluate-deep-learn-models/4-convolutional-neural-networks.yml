@@ -4,11 +4,11 @@ title: Convolutional neural networks
 metadata:
   title: Convolutional neural networks
   description: "Convolutional neural networks"
-  ms.date: 07/10/2024
+  ms.date: 10/14/2025
   author: wwlpublish
   ms.author: gmalc
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-convolutional-neural-networks.md)]
+  [!include[](includes/4-convolutional-neural-networks.md)]
