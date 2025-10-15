@@ -8,5 +8,5 @@ In this module, you learned how to:
 
 ## Learn more
 
-- [Lakeflow Declarative Pipelines](/azure/databricks/ddlt/)
+- [Lakeflow Declarative Pipelines](/azure/databricks/ldp/concepts)
 - [Load data with Lakeflow Declarative Pipelines](https://docs.databricks.com/aws/en/dlt/load)
