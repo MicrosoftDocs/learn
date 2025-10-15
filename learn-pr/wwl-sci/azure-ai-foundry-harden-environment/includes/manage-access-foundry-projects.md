@@ -18,7 +18,7 @@ Apply the same least-privilege approach you used at the Azure layer:
 
 The **Inherited access** list shows identities and service accounts that already have permissions from Azure RBAC assignments at higher levels, like the subscription or resource group. These permissions flow down automatically and can't be changed within the Foundry portal because they're managed in Microsoft Entra ID or the Azure portal.
 
-:::image type="content" source="../media/foundry-inherited-access.png" alt-text="Screenshot showing the Inherited access tab in Azure AI Foundry listing system-assigned roles with read and scanner permissions." lightbox="../media/ffoundry-inherited-access.png":::
+:::image type="content" source="../media/foundry-inherited-access.png" alt-text="Screenshot showing the Inherited access tab in Azure AI Foundry listing system-assigned roles with read and scanner permissions." lightbox="../media/foundry-inherited-access.png":::
 
 A common setup might give developers Contributor access within a specific Foundry project while reserving project ownership for a smaller operations group that manages guardrails, diagnostics, and integrations with Defender for Cloud. This separation of duties keeps administrative control aligned with accountability.
 
