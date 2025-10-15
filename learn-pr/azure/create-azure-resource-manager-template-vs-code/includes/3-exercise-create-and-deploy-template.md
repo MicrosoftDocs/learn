@@ -1,21 +1,10 @@
-> [!NOTE]
-> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to a special subscription named Concierge Subscription.
-
 In this exercise, you create an Azure Resource Manager (ARM) template, deploy it to Azure, and then update that ARM template to add parameters and outputs.
-
-This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code before starting the exercise.
 
 ## Create an ARM template
 
 1. Open Visual Studio Code and create a new file called *azuredeploy.json*.
 
-1. The Visual Studio Code ARM template extension comes configured with snippets to help you develop templates. Let's start by adding a blank template. On line 1 of the file, enter *arm*.
-
-1. Visual Studio Code automatically displays several potential choices that start with **arm!**. Select the **Azure Resource Manager (ARM) template**. Visual Studio Code automatically processes the schemas and languages for your template.
-
-    :::image type="content" source="../media/3-arm-snippet.png" alt-text="Visual Studio Code azuredeploy.json file showing the snippet choices for Azure Resource Manager templates." border="true":::
-
-    Your file now looks like this:
+1. Copy and paste the following code into the file.
 
     ```json
     {
@@ -37,7 +26,7 @@ This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https:/
 
 ::: zone pivot="cli"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli) tools installed, and sign in with the same account you used to activate the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli) tools installed.
 
 1. Select **Terminal > New Terminal** to open a terminal window.
 
@@ -55,44 +44,29 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Sign in to Azure
 
-1. In the terminal window, run this command to sign in to Azure.
-
-    ```azurecli
-    az login
-    ```
-
-1. In the browser window that opens, sign in to your account. After you sign in, a list of the subscriptions associated with this account displays in the terminal. If you activated the sandbox, you should see one called *Concierge Subscription*. Use this one for the rest of the exercise.
-
-1. In the bash shell, run the following command to set the default subscription for all of the Azure CLI commands you run in this session.
-
-    ```azurecli
-    az account set --subscription "Concierge Subscription"
-    ```
-
-   If you used more than one sandbox recently, more than one *Concierge Subscription* might be listed. If so, use the next two steps to identify and set the default subscription.
-
-    1. Run the following command to obtain the *Concierge Subscription* IDs.
-
-   ```azurecli
-    az account list \
-      --refresh \
-      --query "[?contains(name, 'Concierge Subscription')].id" \
-      --output table
-    ```
-
-    1. Set the default subscription by running the following command, replacing *{your subscription ID}* with the latest Concierge Subscription ID.
-
-    ```azurecli
-    az account set --subscription {your subscription ID}
-    ```
-
-### Set the default resource group
-
-By setting the default resource group to the one created when you activated the sandbox, you can omit that parameter from the Azure CLI commands in this exercise. To set the resource group, run the following command.
+In the terminal window, run this command to sign in to Azure.
 
 ```azurecli
-az configure --defaults group="<rgn>[sandbox resource group name]</rgn>"
+az login
 ```
+
+In the browser window that opens, sign in to your account. After you sign in, a list of the subscriptions associated with this account displays in the terminal. The default subscription is marked with an asterisk (*). If you have multiple subscriptions, select the subscription you want to use for this exercise.
+
+### Create and set the default resource group
+
+```azurecli
+az group create --name <resource-group-name> --location <location>
+```
+
+Replace *<resource-group-name>* with a unique name for your resource group. Replace *<location>* with the Azure region closest to you. For example, use *eastus* for East US.
+
+By setting the default resource group, you can omit that parameter from the Azure CLI commands in this exercise. To set the resource group, run the following command.
+
+```azurecli
+az configure --defaults group="<resource-group-name>"
+```
+
+Replace *<resource-group-name>* with your resource group name.
 
 ### Deploy the template to Azure
 
@@ -116,7 +90,7 @@ You should see ```Running...``` in the terminal.
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure that Azure PowerShell Tools are installed from the Visual Studio Code Extensions, and sign in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure that Azure PowerShell Tools are installed from the Visual Studio Code Extensions.
 
 1. In the command bar, select **Terminal > New Terminal** to open a PowerShell window.
 
@@ -134,37 +108,13 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Sign in to Azure by using Azure PowerShell
 
-1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. A browser opens so you can sign in to your account.
+From the terminal in Visual Studio Code, run the following command to sign in to Azure. A browser opens so you can sign in to your account.
 
-    ```azurepowershell
-    Connect-AzAccount
-    ```
+  ```azurepowershell
+  Connect-AzAccount
+  ```
 
-    > [!TIP]
-    > The [Az PowerShell module](/powershell/azure/new-azureps-module-az) is the replacement of AzureRM and is the recommended version to use for interacting with Azure.
-
-1. Sign in using the account you used to activate the sandbox. After you sign in, Visual Studio Code lists the subscriptions associated with your account in the terminal window. If you activated the sandbox, you see a code block that contains `"name": "Concierge Subscription"`. You use this subscription for the rest of the exercise.
-
-### Set the default subscription for all PowerShell commands in this session
-
-1. Run the following command to obtain your subscription(s) and their ID(s). The subscription ID is the second column. Look for *Concierge Subscription*, and copy the value in the second column. It looks something like *aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e*:
-
-    ```azurepowershell
-    Get-AzSubscription
-    ```
-
-1. Run the following command, replacing *{Your subscription ID}* with the one you copied in the previous step. This command changes your active subscription to the Concierge Subscription.
-
-    ```azurepowershell
-    $context = Get-AzSubscription -SubscriptionId {Your subscription ID}
-    Set-AzContext $context
-    ```
-
-1. Run the following command to let the default resource group be the resource group created for you in the sandbox environment. This action lets you omit that parameter from the rest of the Azure PowerShell commands in this exercise.
-
-    ```azurepowershell
-    Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
-    ```
+In the browser window that opens (the browser window could be opened behind the current window), sign in to your account. After you sign in, a list of the subscriptions associated with this account displays in the terminal. The default subscription is marked with an asterisk (*). If you have multiple subscriptions, select the subscription you want to use for this exercise.
 
 ### Deploy the template to Azure
 
@@ -183,11 +133,11 @@ The top section of the preceding code sets Azure PowerShell variables, which inc
 
 ::: zone-end
 
-When you deploy your ARM template to Azure, go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription. To do that, select your avatar in the upper-right corner of the page. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+When you deploy your ARM template to Azure, go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. In the resource menu, select **Resource groups**.
 
-1. Select the *<rgn>[sandbox resource group name]</rgn>* resource group.
+1. Select the resource group you created in this exercise.
 
 1. On the **Overview** pane, you see that one deployment succeeded.
 
@@ -205,27 +155,13 @@ When you deploy your ARM template to Azure, go to the [Azure portal](https://por
 
 ## Add a resource to the ARM template
 
-In the previous task, you learned how to create a blank template and deploy it. Now, you're ready to deploy an actual resource. In this task, you add an Azure storage account resource to the ARM template, by using a snippet from the Azure Resource Manager Tools extension for Visual Studio Code.
+In the previous task, you learned how to create a blank template and deploy it. Now, you're ready to deploy an actual resource. In this task, you add an Azure storage account resource to the ARM template.
 
-1. In the *azuredeploy.json* file in Visual Studio Code, place your cursor inside the brackets in the resources block ```"resources":[],```.
-
-1. Enter *storage* inside the brackets. A list of related snippets appears. Select **arm-storage**.
-
-    :::image type="content" source="../media/3-arm-storage.png" alt-text="Visual Studio Code azure Resource Manager-storage snippet shown under the typed word storage.":::
-
-    Your file looks like this:
+1. In the *azuredeploy.json* file in Visual Studio Code, update the file so it looks like:
 
     [!code-json[](code/parameter1.json)]
 
-      Values that you should edit are highlighted in the new section of your file, and you can navigate them by pressing the <kbd>Tab</kbd> key.
-
-    Notice the ```tags``` and ```location``` attributes are filled in. The ```location``` attribute uses a function to set the location of the resource to the location of the resource group. You'll learn about tags and functions in the next module.
-
 1. Change the values of the resource *name* and *displayName* to something unique (for example, **learnexercise12321**). This name must be unique across all of Azure, so choose something unique to you.
-
-1. Change the value of the sku *name* from **Premium_LRS** to **Standard_LRS**. Change the value of *tier* to **Standard**. Notice that Visual Studio Code gives you the proper choices for your attribute values in IntelliSense. Delete the default value including the quotation marks, and enter quotation marks to see this work.
-
-    :::image type="content" source="../media/3-vs-code-intellisense.png" alt-text="Screenshot of Visual Studio Code showing the IntelliSense choices for the name attribute of the storage SKU.":::
 
 1. The resource location is set to the same location as the resource group where the resource is deployed. Leave the default here.
 
