@@ -7110,3 +7110,63 @@ achievements:
   title: "Case Study: Design Security Solutions for Infrastructure"
   summary: Apply your cybersecurity architect skills on a real business scenario in the area of infrastructure security. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs.
   iconUrl: /training/achievements/case-study-design-security-solutions-infrastructure.svg
+- uid: learn-sqlserver.introduction-sql-server-linux.badge
+  type: badge
+  title: Introduction to SQL Server on Linux
+  summary: Learn the benefits of installing SQL Server on Linux.
+  iconUrl: /training/achievements/sqlserver/introduction-to-sql-server-on-linux.svg
+- uid: learn-sqlserver.sql-server-2017-on-linux.trophy
+  type: trophy
+  title: SQL Server on Linux
+  summary: SQL Server now runs  on your choice of operating system. In this learning path, you'll discover the fundamentals of SQL Server on Linux, before discovering how to run SQL Server on Linux containers and deploy SQL Server on Linux. You'll then learn how to automatically tune your SQL Server on Linux deployment.
+  iconUrl: /training/achievements/sqlserver/sql-server-2017-on-linux.svg
+- uid: learn.develop-apps-with-azure-database-mysql.badge
+  type: badge
+  title: Develop apps with Azure Database for MySQL - Flexible Server
+  summary: Learn to create apps that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy intelligent apps faster by integrating with Azure App Service, Azure Kubernetes Service, Azure AI Search, Azure OpenAI, Azure DevOps, or GitHub.
+  iconUrl: /training/achievements/mysql/build-apps-with-azure-database-for-mysql.svg
+- uid: learn.deploy-azure-database-for-mysql.badge
+  type: badge
+  title: Deploy your first Azure Database for MySQL flexible server
+  summary: In this module, you'll learn how you can use Azure Database for MySQL - Flexible Server to accommodate the scalability and resiliency requirements of your LAMP (Linux, Apache, MySQL, PHP/Perl/Python) based applications. You'll also learn how to create an Azure Database for MySQL flexible server.
+  iconUrl: /training/achievements/mysql/create-azure-database-for-mysql.svg
+- uid: learn.design-a-data-model-with-ads.badge
+  type: badge
+  title: Design a Performant Data Model in Azure SQL Database with Visual Studio Code
+  summary: "In this module, you'll learn how to create a data model with Visual Studio Code. You'll create indexes and tables and use data types to help develop your applications."
+  iconUrl: /training/achievements/design-a-data-model-with-ads.svg
+- uid: learn.incident-response-with-alerting-on-azure.badge
+  type: badge
+  title: Improve incident response with Azure Monitor alerts
+  summary: Respond to incidents and activities in your infrastructure through alerting capabilities in Azure Monitor.
+  iconUrl: /training/achievements/incident-response-with-alerting-on-azure.svg
+- uid: learn.architect-infrastructure-operations.trophy
+  type: trophy
+  title: Architect infrastructure operations in Azure
+  summary: Learn how to monitor, analyze, and manage the ongoing operation of your infrastructure in Azure.
+  iconUrl: /training/achievements/architect-infrastructure-operations.svg
+- uid: learn.monitor-resources-with-azure-monitor.trophy
+  type: trophy
+  title: Azure Monitor fundamentals
+  summary: Learn how to monitor the usage, performance, and availability of resources using Azure Monitor.
+  iconUrl: /training/achievements/monitor-usage-performance-availability-resources-azure-monitor.svg
+- uid: learn.advanced-pybryt.badge
+  type: badge
+  title: Advanced PyBryt for Classroom Auto-assessment
+  summary: Learn advanced patterns in PyBryt, an open-source auto-assessment tool for creating assignments with targeted feedback and generalizable grading.
+  iconUrl: /training/achievements/student-evangelism/advanced-pybryt.svg
+- uid: learn.intro-to-pybryt.badge
+  type: badge
+  title: Introduction to PyBryt for Classroom Auto-assessment
+  summary: Learn how to use PyBryt, an open-source auto-assessment tool, to create assignments with targeted feedback and generalizable grading.
+  iconUrl: /training/achievements/student-evangelism/introduction-pybryt.svg
+- uid: learn.azure.intro-to-data-science-virtual-machine.badge
+  type: badge
+  title: Create and connect to a Data Science Virtual Machine
+  summary: Create, connect to, and share data among users on a Data Science Virtual Machine (DSVM) that's preloaded with data science and machine learning tools.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.iot.create-your-first-app-with-azure-maps.badge
+  type: badge
+  title: Create your first route finding app with Azure Maps
+  summary: Learn about writing code to interact with Azure Maps. Develop and test a fun app to find the best route for a truck, car, or bicycle. The route is from the west coast of the USA, to the east coast. You can see how routes change based on vehicle. And, for trucks, how routes vary if the contents are hazardous. You get the chance to add in your own locations.
+  iconUrl: /training/achievements/iot/create-your-first-app-with-azure-maps.svg

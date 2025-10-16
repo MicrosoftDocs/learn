@@ -4,13 +4,13 @@ title: Exercise - Examine real world data
 metadata:
   title: Exercise - Examine real world data
   description: "Exercise - Examine real world data"
-  ms.date: 08/01/2024
+  ms.date: 10/14/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
   ms.custom:
     - devx-track-python
-durationInMinutes: 12
-sandbox: true
-notebook: notebooks/03-real-world-data.ipynb
-
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-exercise-real-world-data.md)]
+
