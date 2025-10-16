@@ -32,15 +32,15 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 1. If the command bar of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
 
-1. If not, select the drop-down and choose **Select Default Profile**.
+    1. If not, select the drop-down and choose **Select Default Profile**.
+    
+          :::image type="content" source="../media/3-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window with bash in the drop-down.":::
+    
+    1. Select **Git Bash**.
+    
+          :::image type="content" source="../media/3-select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window showing the select shell drop-down.":::
 
-      :::image type="content" source="../media/3-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window with bash in the drop-down.":::
-
-1. Select **Git Bash**.
-
-      :::image type="content" source="../media/3-select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window showing the select shell drop-down.":::
-
-1. Select **Terminal > New Terminal** to open a bash shell terminal window.
+1. Change directory to the folder containing your ARM template file.
 
 ### Sign in to Azure
 
@@ -58,7 +58,7 @@ In the browser window that opens, sign in to your account. After you sign in, a 
 az group create --name <resource-group-name> --location <location>
 ```
 
-Replace *<resource-group-name>* with a unique name for your resource group. Replace *<location>* with the Azure region closest to you. For example, use *eastus* for East US.
+Replace *\<resource-group-name>* with a unique name for your resource group. Replace *\<location>* with the Azure region closest to you. For example, use *eastus* for East US.
 
 By setting the default resource group, you can omit that parameter from the Azure CLI commands in this exercise. To set the resource group, run the following command.
 
@@ -66,7 +66,7 @@ By setting the default resource group, you can omit that parameter from the Azur
 az configure --defaults group="<resource-group-name>"
 ```
 
-Replace *<resource-group-name>* with your resource group name.
+Replace *\<resource-group-name>* with your resource group name.
 
 ### Deploy the template to Azure
 
@@ -104,7 +104,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
           :::image type="content" source="../media/3-select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window showing the select shell drop-down.":::
 
-    1. Select **Terminal > New Terminal** to open a PowerShell terminal window.
+1. Change directory to the folder containing your ARM template files.
 
 ### Sign in to Azure by using Azure PowerShell
 
@@ -114,9 +114,23 @@ From the terminal in Visual Studio Code, run the following command to sign in to
   Connect-AzAccount
   ```
 
-In the browser window that opens (the browser window could be opened behind the current window), sign in to your account. After you sign in, a list of the subscriptions associated with this account displays in the terminal. The default subscription is marked with an asterisk (*). If you have multiple subscriptions, select the subscription you want to use for this exercise.
+In the browser window that opens (the browser window could be opened behind the current window, minimize the current window to see it), sign in to your account. After you sign in, a list of the subscriptions associated with this account displays in the terminal. The default subscription is marked with an asterisk (*). If you have multiple subscriptions, select the subscription you want to use for this exercise.
 
 ### Deploy the template to Azure
+
+```azurepowershell
+New-AzResourceGroup -Name <ResourceGroupName> -Location <Location>
+```
+
+Replace with a unique name for your resource group. Replace with the Azure region closest to you. For example, use eastus for East US.
+
+By setting the default resource group, you can omit that parameter from the Azure CLI commands in this exercise. To set the resource group, run the following command.
+
+```azurepowershell
+Set-AzDefault -ResourceGroupName [sandbox resource group name]
+```
+
+replace *[sandbox resource group name]* with your resource group name.
 
 Deploy the template to Azure by running the following commands. The ARM template doesn't have any resources yet, so there aren't any resources created.
 
