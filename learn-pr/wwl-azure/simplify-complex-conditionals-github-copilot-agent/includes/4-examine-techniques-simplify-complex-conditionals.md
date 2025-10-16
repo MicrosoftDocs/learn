@@ -1,5 +1,3 @@
-# Unit 3: Examine the techniques used to simplify complex conditionals
-
 Refactoring complex conditionals means applying structured techniques to make the code simpler and flatter without altering its behavior. There are several time-tested approaches for simplifying complex conditionals.
 
 ## Use guard clauses (early returns) to flatten nesting

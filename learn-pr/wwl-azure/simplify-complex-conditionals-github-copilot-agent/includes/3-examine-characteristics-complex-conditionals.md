@@ -1,5 +1,3 @@
-# Unit 2: Examine the characteristics of complex conditionals
-
 Developers don't set out to write a convoluted tangle of `if` statements from scratch. Instead, complex conditionals accumulate gradually as a codebase evolves. Understanding this evolutionary process can help you identify these patterns in your own projects (and ideally prevent them early).
 
 ## How complex conditionals emerge

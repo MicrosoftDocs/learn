@@ -1,5 +1,3 @@
-# Unit 5: Refactor Complex Conditionals using GitHub Copilot's Agent Mode
-
 Developers can use GitHub Copilot's Agent mode to safely refactor complex conditionals while ensuring functionality is preserved and code quality is improved.
 
 > [!NOTE]

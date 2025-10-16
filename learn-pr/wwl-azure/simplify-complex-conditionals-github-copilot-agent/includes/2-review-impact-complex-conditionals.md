@@ -1,6 +1,4 @@
-# Unit 1: Review the impact of complex conditionals
-
-Code containing complex conditionals might function correctly, but it poses several problems.
+A codebase that contains complex conditionals might function correctly, but problems often hide just beneath the surface.
 
 ## Problems associated with complex conditionals
 
@@ -41,4 +39,4 @@ When you review this code sample for the first time, it takes a minute to determ
 
 ## Summary
 
-Complex conditionals decrease code quality by making code less readable, harder to modify, and more error-prone. Complex conditionals often indicate that a function is doing too much or that logic isn't well-structured. Recognizing these problems is the first step; whenever you notice code that's difficult to understand due to nested or elaborate conditionals, it’s a sign that refactoring might be needed.
+Complex conditionals are a common source of technical debt. They reduce readability, complicate maintenance, increase error rates, challenge testing, and hinder team agility. Refactoring complex conditionals can yield significant long-term benefits, making the codebase easier to understand, modify, and trust.

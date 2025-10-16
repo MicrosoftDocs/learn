@@ -1,5 +1,3 @@
-# Unit 4: Analyze Complex Logic using GitHub Copilot's Ask Mode
-
 Identifying complex conditionals that can and should be simplified isn't always easy. Planning how to refactor your code can be even more difficult.
 
 Developers can use GitHub Copilot’s Ask mode to refactor complex conditionals and improve code quality.
