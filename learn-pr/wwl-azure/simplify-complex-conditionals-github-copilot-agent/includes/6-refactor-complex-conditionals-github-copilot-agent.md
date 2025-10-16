@@ -1,116 +1,191 @@
 # Unit 5: Refactor Complex Conditionals using GitHub Copilot's Agent Mode
 
-After analyzing the code and formulating a plan in Ask mode, the next step is to implement the refactoring. This is where GitHub Copilot Chat’s Agent mode comes into play. Agent mode allows Copilot to act on your behalf inside the IDE – it can edit files, apply changes, and even run commands as instructed. Essentially, it’s like a junior developer you can ask to carry out the refactoring steps, while you supervise the changes.
+Developers can use GitHub Copilot's Agent mode to safely refactor complex conditionals while ensuring functionality is preserved and code quality is improved.
+
+> [!NOTE]
+> Use GitHub Copilot's Ask mode to analyze complex conditionals and formulate a refactoring plan before using Agent mode to implement changes. This approach ensures that refactoring is done thoughtfully and safely.
 
 ## What is Agent mode?
 
-In Agent mode, Copilot can modify your actual codebase. It has access to your workspace and can open files, refactor code, and even execute build or test commands, depending on your prompts. It "reasons" across your project, meaning it can see multiple files if needed and ensure consistency (for example, if you rename a function, Agent mode can update all references to it). Unlike Ask mode’s one-shot Q&A, Agent mode can perform multi-step tasks autonomously: it plans out a series of edits and executes them, only pausing if it needs clarification or confirmation for something potentially risky. It’s powerful, but with that power comes the need for careful instructions and validation.
+GitHub Copilot's Agent mode works autonomously to execute complex refactoring tasks across your codebase. Unlike Ask mode, which provides guidance and suggestions in the chat panel, Agent mode implements suggested updates as edits directly in your code files.
 
-## Using Agent mode to apply the refactor
+Agent mode can edit files, apply changes, run tests, and execute commands based on your instructions. It understands project context and can maintain consistency across multiple files, ensuring that refactoring changes don't break existing functionality.
 
-Building on the discount calculation example from Unit 4, let’s walk through a typical usage of Agent mode to actually refactor the code. We’ll incorporate the suggestions we got from Ask mode.
+Agent mode is ideal for implementing multi-step refactoring strategies that require careful handling of dependencies, edge cases, and testing. Agent mode automatically defines the required context and executes the necessary steps to achieve your refactoring goals.
 
-### Switch to Agent mode in Copilot Chat
+## Refactor complex conditionals using Agent mode
 
-In your IDE (such as VS Code), change the Copilot Chat mode to "Agent". You might see a note indicating that the agent can now run commands and edit files. Ensure you’ve saved your work or are using version control, so you can track changes.
+You can use Agent mode to implement the refactoring strategies identified during your Ask mode analysis. Agent mode can execute multiple refactoring steps automatically while preserving the original functionality and improving code quality.
 
-### Prepare your refactoring instructions
+### Strategies for refactoring complex conditionals
 
-Before telling the agent what to do, take a moment to outline the changes (the plan from Ask mode). For our example, let’s say the plan is:
+Here are key strategies for using Agent mode to refactor complex conditionals:
 
-- Introduce guard clauses for invalid states (null order, invalid coupon).
-- Extract a method `ApplyCouponDiscount`.
-- Simplify the premium member check.
-- Remove duplicate logic around holiday sales.
+- **Apply guard clauses**: Instruct Agent mode to add early returns that handle edge cases and invalid states, reducing nesting levels.
 
-You can choose to give these instructions one at a time or as a batch. Agent mode can handle fairly complex prompts, even with multiple steps, but sometimes doing it step-by-step gives you more oversight.
+- **Extract methods**: Have Agent mode break down complex conditionals into smaller, focused methods with descriptive names.
 
-### Issue a high-level refactoring prompt
+- **Eliminate duplication**: Use Agent mode to identify and consolidate repeated conditional logic into reusable components.
 
-You could try a comprehensive prompt like:
+- **Simplify boolean expressions**: Let Agent mode refactor complex boolean conditions using mathematical logic principles (such as "De Morgan's laws") and logical simplification.
 
-```plaintext
-Copilot, I need you to refactor the `CalculateDiscount` method in order to simplify complex conditionals. Refactoring should improve readability and maintainability. Consider the following steps:
-- Add early returns at the top for any conditions that should short-circuit (like if `order` is null or `coupon` is invalid).  
-- Extract the code that validates and applies the coupon into a new function `ApplyCouponDiscount(Order order, Coupon coupon)` and call that from `CalculateDiscount`.  
-- Ensure that premium members have their discount applied in one place (currently it’s scattered).  
-- Simplify any nested ifs related to holiday sales into clearer logic.  
+- **Replace conditional chains**: Have Agent mode convert complex if-else chains into more maintainable patterns like strategy or state patterns.
 
-Please preserve the method’s behavior and outputs.
-```
+- **Ensure security**: Instruct Agent mode to validate that refactoring doesn't introduce security vulnerabilities or bypass existing security checks.
 
-Copilot’s agent will parse this and likely break it into sub-tasks. It might respond in the chat with something like:
+- **Maintain performance**: Use Agent mode to preserve or improve performance characteristics during refactoring.
 
-```plaintext
-Understood. I will:
+### Agent mode prompts for refactoring complex conditionals
 
-1. Open the file containing CalculateDiscount.
-2. Add guard clauses for null order and invalid coupon.
-3. Create a new method ApplyCouponDiscount and move relevant logic there.
-4. Adjust premium member discount logic.
-5. Simplify holiday sale logic.
-```
+When using Agent mode to refactor complex conditionals, your prompts should be specific, actionable, and include safety considerations. Here are some examples of natural language text that you can include in your prompt when refactoring complex conditionals:
 
-Then it will start executing.
+#### Preparation and safety
 
-### Allow the Agent to make changes
+- "Before refactoring, create unit tests that verify the current behavior of the selected conditional logic."
+- "Analyze the selected conditional for security implications and ensure refactoring maintains all security checks."
+- "Create a backup branch and run existing tests before making any changes to the selected conditional."
 
-Copilot Agent will begin editing your code. You’ll see it opening the `CalculateDiscount` function and making the changes:
+#### Basic refactoring operations
 
-- It writes the guard clauses: e.g., at the top, insert `if (order == null) return 0;` and similarly for invalid coupon.
-- It creates a new function `ApplyCouponDiscount` either above or below, with the code that was previously nested under coupon handling.
-- It finds where premium member discount was applied and consolidates it.
-- It refactors the holiday sale logic, possibly converting nested `if` statements into a flatter structure.
+- "Refactor the selected conditional using guard clauses to reduce nesting and improve readability."
+- "Extract the complex conditional logic into separate, well-named methods."
+- "Simplify the selected boolean expression while preserving the exact same logical behavior."
+- "Replace the selected nested if-else chain with a more maintainable pattern."
 
-Throughout, it may occasionally ask for confirmation. For instance, if there’s ambiguity about how to handle a certain case, it might ask for clarification.
+#### Advanced refactoring patterns
 
-### Review the changes
+- "Refactor the selected conditional using the strategy pattern to eliminate multiple if-else branches."
+- "Convert the selected complex state checking logic into a state machine pattern."
+- "Replace the selected conditional chain with a lookup table or dictionary-based approach."
+- "Refactor the selected conditional to use polymorphism instead of type checking."
 
-Once the agent believes it’s done (or it stops after each major step), carefully review the modified code. Check that:
+#### Quality and validation
 
-- The guard clauses make sense and aren’t changing functionality.
-- The extracted `ApplyCouponDiscount` function has all the necessary logic and is called correctly.
-- The premium logic still gives the same outcome as before.
-- The structure is indeed simpler (fewer nested ifs, clearer flow).
+- "After refactoring, run all tests and verify that behavior is identical to the original code."
+- "Ensure the refactored conditional follows Microsoft's C# coding conventions."
+- "Validate that the refactored code maintains the same performance characteristics."
+- "Create additional test cases to cover edge cases exposed during refactoring."
 
-Copilot’s changes are usually correct if the prompt was clear, but you are the final judge. If something isn’t right, you can either undo that part or instruct the agent further.
+## Agent mode workflow for refactoring complex conditionals
 
-### Test the refactored code
+The following workflow demonstrates how to use Agent mode to safely refactor complex conditionals:
 
-Now that the code is changed, it’s crucial to test it to ensure that behavior remains consistent. Ideally, you have unit tests for `CalculateDiscount()`. If so, run them. You can even ask Copilot (in Agent mode) to run a test command.
+1. **Prepare your workspace**
 
-If tests pass, that’s great validation that your refactor didn’t break anything. If a test fails, examine the failure – it might indicate a subtle change in logic or a scenario you missed.
+    Ensure you're working in a clean git branch and any existing work is committed. Working in a clean branch allows you to easily revert changes if needed. Navigate to the file containing the complex conditional that you analyzed in Ask mode.
 
-If you don’t have automated tests, you should do some manual testing. Try a few scenarios that the code covers: e.g., premium member with valid coupon, non-premium without coupon, etc.
+1. **Set up safety measures**
 
-### Iterate if needed
+    Before making changes, ask Agent mode to create or run existing unit tests:
 
-If any issues are found in testing, you can use Agent mode to address them. For instance, if you discovered that the refactored code forgot to apply a particular condition, you can prompt Copilot to add it. Or if the new function needs a tweak, ask Copilot to modify it.
+    "Create comprehensive unit tests for the `CalculateDiscount` method to verify current behavior before refactoring."
 
-Treat Copilot as an assistant – you can keep refining until the code is both clean and correct.
+    This step ensures you have a safety net to verify that your refactoring preserves functionality.
 
-### Finalize and commit the changes
+1. **Start with simple refactoring steps**
 
-Once satisfied, make sure to save all changes and commit them to version control with an appropriate message (e.g., "Refactored CalculateDiscount for clarity – no logic change").
+    Begin with low-risk changes like adding guard clauses:
 
-## Leveraging Ask mode insights
+    "Refactor the `CalculateDiscount` method by adding guard clauses for null order and invalid coupon at the beginning of the method."
 
-Throughout the Agent mode process, you leveraged the analysis from Ask mode. The suggestions we got earlier essentially became the to-do list for the agent. You might even copy-paste some of those suggestions into the Agent prompt to ensure they’re followed.
+    Agent mode analyzes the code and adds appropriate early returns, reducing the complexity of the remaining logic.
 
-This is a great one-two punch: Ask mode for brainstorming and plan, Agent mode for execution. Microsoft’s own guidance suggests starting with Ask mode for understanding, then switching to Agent when you’re ready to make broad changes.
+1. **Extract complex logic into methods**
 
-## Benefits of using Agent mode for refactoring
+    Continue with method extraction:
 
-- It can do mechanical but tedious tasks very quickly.
-- It updates all references consistently.
-- It follows your high-level intent.
+    "Extract the coupon validation and discount calculation logic into a separate `ApplyCouponDiscount` method. Ensure all edge cases are properly handled."
 
-## Be cautious and review
+    Agent mode creates the new method, moves the relevant code, and updates the original method to call the extracted logic.
 
-Because Agent mode can make sweeping changes, always review what it does. If you spot something, you can ask Copilot in Ask mode about it. If it realizes it made a mistake, you can reintroduce it or fix it manually.
+1. **Consolidate and simplify**
 
-Once the refactoring is done and tested, step back and admire the cleaner code. Your function might now be shorter, more linear, and easier to maintain.
+    Address duplication and complex boolean logic:
+
+    "Consolidate the premium member discount logic so that the logic is applied in one place, and simplify any complex boolean expressions."
+
+    Agent mode identifies scattered logic and consolidates it while maintaining the same behavior.
+
+1. **Validate changes**
+
+    After each major refactoring step, validate the changes:
+
+    "Run all unit tests and verify that the refactored code produces identical results to the original implementation."
+
+    Agent mode can execute tests and report any failures that need to be addressed.
+
+1. **Review and iterate**
+
+    If issues are found, provide specific instructions for fixes:
+
+    "The test for holiday discounts is failing. Review the refactored logic and ensure that holiday multipliers are applied correctly."
+
+    Agent mode analyzes the failing test and make necessary corrections.
+
+This structured approach ensures that refactoring is done safely and systematically, with validation at each step.
+
+## Security and quality considerations
+
+When using Agent mode for refactoring, always consider security and quality implications:
+
+### Security best practices
+
+Consider the following security practices when refactoring conditionals:
+
+- **Validate input handling**: Ensure that refactored conditionals don't bypass input validation or introduce injection vulnerabilities.
+
+- **Preserve authorization checks**: Verify that security-related conditionals aren't accidentally removed or weakened during refactoring.
+
+- **Maintain audit trails**: Ensure that logging and monitoring logic within conditionals is preserved.
+
+### Code quality standards
+
+Businesses generally adopt a specific set of coding standards. If you don't have guidelines, Microsoft publishes recommendations for C# coding conventions that you can follow.
+
+Maintain high code quality by following these guidelines:
+
+- **Follow established patterns**: Ensure refactored code follows your team's coding standards and architectural patterns.
+
+- **Maintain readability**: Verify that the refactored code is more readable and maintainable than the original.
+
+- **Preserve performance**: Ensure that refactoring doesn't introduce performance regressions.
+
+## Agent mode safety guidelines
+
+Agent mode is powerful but requires careful oversight:
+
+### Before refactoring
+
+- Always work in a feature branch.
+- Ensure comprehensive test coverage exists.
+- Review the refactoring plan from Ask mode analysis.
+- Understand the business logic and edge cases.
+
+### During refactoring
+
+- Make incremental changes rather than large transformations.
+- Validate each step before proceeding to the next.
+- Review generated code for correctness and style.
+- Test frequently to catch issues early.
+
+### After refactoring
+
+- Run comprehensive tests including edge cases.
+- Perform code review with team members.
+- Validate performance and security characteristics.
+- Update documentation if necessary.
+
+## Treat Agent mode as a powerful assistant
+
+While Agent mode can perform complex refactoring tasks, it requires human oversight:
+
+- Review all changes before accepting them.
+- Validate that business logic is preserved.
+- Ensure security and performance requirements are met.
+- Test thoroughly to catch subtle behavioral changes.
+
+Agent mode accelerates refactoring but doesn't replace the need for careful review and testing.
 
 ## Summary
 
-This unit showed how to turn a plan into action using Copilot Chat’s Agent mode. By combining your understanding of best practices with Copilot’s automation, you can significantly speed up the refactoring of complex conditionals. It’s like having a capable assistant who can execute the repetitive parts of code cleanup while you make the high-level decisions.
+Using GitHub Copilot's Agent mode enables developers to efficiently refactor complex conditionals while maintaining code quality and functionality. By combining the analytical insights from Ask mode with Agent mode's execution capabilities, you can systematically improve code maintainability, readability, and performance. The key to success is providing clear instructions, maintaining safety practices, and thoroughly validating all changes.

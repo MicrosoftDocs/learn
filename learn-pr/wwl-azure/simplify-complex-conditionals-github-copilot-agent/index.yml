@@ -11,7 +11,7 @@ metadata:
 title: Simplify complex conditionals using GitHub Copilot Agent
 summary: "This module covers the use of GitHub Copilot's Agent mode to simplify complex conditional statements in code. It provides practical examples and exercises to enhance coding efficiency."
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Describe how complex conditional evolve over time and the problems associated with complex and deeply nested conditional code.
     - Describe the tools, techniques, and processes used to refactor complex and deeply nested conditional code.
     - Use GitHub Copilot’s Ask mode to explain a codebase and identify opportunities to simplify complex and deeply nested conditional code.
