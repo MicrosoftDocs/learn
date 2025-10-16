@@ -19,9 +19,5 @@ Learning Path 2 Tips and Tricks
 - Use real-life applications as examples where possible
 - Prepare the Face and OCR demos in advance
 
-Learning Path 2 Demos
-- [Demo 01: Detect faces in Vision Studio](https://aka.ms/ai900-face)
-- [Demo 02: Read text in Vision Studio](https://aka.ms/ai900-ocr)
-
 Learning Path 2 Exercise
-- [Exercise 01: Analyze images in Vision Studio](https://aka.ms/ai900-image-analysis)
+- [Exercise 01: Analyze images in Vision Studio](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Exercises/05-image-analysis.html)
