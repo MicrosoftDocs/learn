@@ -7170,3 +7170,8 @@ achievements:
   title: Create your first route finding app with Azure Maps
   summary: Learn about writing code to interact with Azure Maps. Develop and test a fun app to find the best route for a truck, car, or bicycle. The route is from the west coast of the USA, to the east coast. You can see how routes change based on vehicle. And, for trucks, how routes vary if the contents are hazardous. You get the chance to add in your own locations.
   iconUrl: /training/achievements/iot/create-your-first-app-with-azure-maps.svg
+- uid: learn.app-package-management-using-helm.badge
+  type: badge
+  title: Application and package management using Helm
+  summary: Helm is an application package manager for Kubernetes that you use to standardize and simplify the deployment of cloud-native applications on Kubernetes. Here, you learn how to install third-party packages, called Helm charts, and how to create and install Helm charts for the workloads your teams develop.
+  iconUrl: /training/achievements/app-package-management-using-helm.svg

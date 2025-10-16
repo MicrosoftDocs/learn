@@ -59328,6 +59328,46 @@
       "source_path": "learn-pr/machine-learning/train-evaluate-deep-learn-models/5c-use-transfer-learning.yml",
       "redirect_url": "/training/modules/train-evaluate-deep-learn-models/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-app-package-management-using-helm/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/quickstart-helm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-app-package-management-using-helm/2-what-is-helm.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/quickstart-helm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-app-package-management-using-helm/3-exercise-set-up-the-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/quickstart-helm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-app-package-management-using-helm/4-create-install-helm-chart.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/quickstart-helm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-app-package-management-using-helm/5-exercise-install-helm-chart.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/quickstart-helm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-app-package-management-using-helm/6-manage-helm-release.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/quickstart-helm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-app-package-management-using-helm/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/quickstart-helm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aks-app-package-management-using-helm/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/aks/quickstart-helm",
+      "redirect_document_id": false
     }
   ]
 }

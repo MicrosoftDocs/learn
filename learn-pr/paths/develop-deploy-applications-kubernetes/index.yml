@@ -27,7 +27,6 @@ subjects:
 - containers
 modules:
 - learn.aks-deploy-container-app
-- learn.app-package-management-using-helm
 # - learn.aks-deployment-pipeline-github-actions
 - learn.aks-manage-application-state
 
