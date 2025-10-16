@@ -4,22 +4,7 @@ In this exercise, you add a parameter to define the Azure storage account name d
 
 Here, you make your ARM template more flexible by adding parameters that can be set at runtime. Create a parameter for the ```storageName``` value.
 
-1. In the *azuredeploy.json* file in Visual Studio Code, place your cursor inside the braces in the *parameters* attribute. It looks like this: ```"parameters":{},```
-1. Select <kbd>Enter</kbd>, and then enter **par**. You see a list of related snippets. Choose **new-parameter**, which adds a generic parameter to the template. It looks like this example:
-
-    ```json
-     "parameters": {
-        "parameter1": {
-        "type": "string",
-        "metadata": {
-            "description": "description"
-        }
-      }
-    },
-    ```
-
-1. Change the parameter from **parameter1** to **storageName** and leave the type as a string. Add a **minLength** value of **3** and a **maxLength** value of **24**. Add a description value of **The name of the Azure storage resource**.
-1. The parameter block should now look like this example:
+1. In the *azuredeploy.json* file in Visual Studio Code, update ```"parameters":{},```, so it looks like:
 
     ```json
     "parameters": {
@@ -89,13 +74,10 @@ New-AzResourceGroupDeployment `
 
 Here, you use parameters to limit the values allowed for a parameter.
 
-1. Place your cursor after the closing brace for the ```storageName```parameter. Add a comma, and select <kbd>Enter</kbd>.
-
-1. Again, enter **par**, and select **new-parameter**.
-
-1. Change the new generic parameter to the following code:
+1. Add a new parameter named ```storageSKU``` to the ```parameters``` section of the *azuredeploy.json* file. 
 
     ```json
+    // This is the allowed values for an Azure storage account
     "storageSKU": {
        "type": "string",
        "defaultValue": "Standard_LRS",
@@ -111,12 +93,6 @@ Here, you use parameters to limit the values allowed for a parameter.
        ]
      }
     ```
-
-      Here, you're listing the values that this parameter allows. If the template runs with a value that isn't allowed, the deployment fails.
-
-1. Add a comment to this parameter.
-
-    :::image type="content" source="../media/5-add-comments.png" alt-text="Screenshot of the azuredeploy.json file showing the comment This is the allowed values for an Azure storage account in the line preceding the storageSKU parameter." border="true":::
 
     ARM templates support ```//``` and ```/* */``` comments.
 
@@ -212,19 +188,7 @@ Here, you deploy successfully by using a ```storageSKU``` parameter that's in th
 
 Here, you add to the ```outputs``` section of the ARM template to output the endpoints for the storage account resource.
 
-1. In the *azuredeploy.json* file in Visual Studio Code, place your cursor inside the braces in the outputs attribute ```"outputs":{},```.
-
-1. Press <kbd>Enter</kbd>, and then enter *out*. You get a list of related snippets. Select **new-output**. It adds a generic output to the template that looks like this example:
-
-    ```json
-    "outputs": {
-      "output1": {
-        "type": "string",
-        "value": "value"
-      }
-    ```
-
-1. Change **"output1"** to **"storageEndpoint"**, then change the value of ```type``` to **"object"**. Change the value of ```value``` to **"[reference(parameters('storageName')).primaryEndpoints]"**. This expression is the one we described in the previous unit that gets the endpoint data. Because we specified *object* as the type, it returns the object in JSON format.
+1. In the *azuredeploy.json* file in Visual Studio Code, update ```"outputs":{},``` so it looks like:
 
     ```json
     "outputs": {
@@ -232,6 +196,7 @@ Here, you add to the ```outputs``` section of the ARM template to output the end
         "type": "object",
         "value": "[reference(parameters('storageName')).primaryEndpoints]"
       }
+    }
     ```
 
 1. Save the file.
