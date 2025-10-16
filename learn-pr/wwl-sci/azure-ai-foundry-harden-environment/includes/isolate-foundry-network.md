@@ -1,5 +1,3 @@
-# Isolate networks with managed virtual network and Private Link
-
 AI workloads in Azure often depend on multiple connected services: storage accounts, compute clusters, data sources, and model endpoints. Without clear network boundaries, these services can be exposed to the public internet, increasing the risk of unauthorized access or data exfiltration. Network isolation ensures that traffic between components stays private and controlled.
 
 **Azure AI Foundry** supports network isolation through **managed virtual networks** and **Private Link**. Together, these features keep data and model communication paths secure while maintaining connectivity to essential Azure services.
