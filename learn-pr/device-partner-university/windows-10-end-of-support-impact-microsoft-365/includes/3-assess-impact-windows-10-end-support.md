@@ -5,7 +5,7 @@ Windows 10 end of support affects how Microsoft 365 apps behave, receive updates
 Although Microsoft 365 apps will still run on Windows 10 for a limited time, their behavior and support status have changed significantly. The following table summarizes key areas affected by the end of support.
 
 | **Area** | **Behavior after October 14, 2025** |
-| :---: | :---: |
+| :--- | :--- |
 | **App access** | Apps like Word, Excel, and Outlook continue to work with an active Microsoft 365 subscription. |
 | **Feature updates** | Feature updates will continue until late 2026 or early 2027 depending on update channel. After that, apps will remain on Version 2608. |
 | **Security updates** | Updates continue through **October 10, 2028**, after which they end permanently. |
