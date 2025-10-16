@@ -1,1 +1,15 @@
-Control access to Azure AI Foundry with Microsoft Entra ID
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-ai-foundry-harden-environment.control-access-azure-ai-foundry
+title: Control access to Azure AI Foundry with Microsoft Entra ID
+metadata:
+  title: Control access to Azure AI Foundry with Microsoft Entra ID
+  description: "Control access to Azure AI Foundry with Microsoft Entra ID."
+  ms.date: 10/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/control-access-azure-ai-foundry.md)]

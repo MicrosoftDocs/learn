@@ -43,18 +43,9 @@ units:
 - learn.wwl.azure-ai-foundry-harden-environment.control-access-azure-ai-foundry
 - learn.wwl.azure-ai-foundry-harden-environment.manage-access-foundry-projects
 - learn.wwl.azure-ai-foundry-harden-environment.secure-ai-foundry-secrets
+- learn.wwl.azure-ai-foundry-harden-environment.isolate-foundry-network
 
 
-
-
-
-
-
-- learn.wwl.azure-ai-foundry-harden-environment.understand-safety-controls
-- learn.wwl.azure-ai-foundry-harden-environment.try-guardrails
-- learn.wwl.azure-ai-foundry-harden-environment.create-manage-blocklist
-- learn.wwl.azure-ai-foundry-harden-environment.configure-content-filter
-- learn.wwl.azure-ai-foundry-harden-environment.choose-refine-guardrails
 - learn.wwl.azure-ai-foundry-harden-environment.knowledge-check
 - learn.wwl.azure-ai-foundry-harden-environment.summary
 badge:
