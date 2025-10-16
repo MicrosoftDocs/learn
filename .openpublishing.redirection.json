@@ -58925,6 +58925,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-linux/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-linux/2-what-sql-server-linux.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-linux/3-sql-server-linux-features.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-linux/4-tools-sql-server-linux.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-linux/5-containers.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-linux/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-linux/index.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/sql-server-2017-on-linux/index.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/connect-azure-database-mysql.yml",
       "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
       "redirect_document_id": false
