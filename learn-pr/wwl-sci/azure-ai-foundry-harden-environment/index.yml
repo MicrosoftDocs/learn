@@ -42,8 +42,7 @@ units:
 - learn.wwl.azure-ai-foundry-harden-environment.introduction
 - learn.wwl.azure-ai-foundry-harden-environment.control-access-azure-ai-foundry
 - learn.wwl.azure-ai-foundry-harden-environment.manage-access-foundry-projects
-
-
+- learn.wwl.azure-ai-foundry-harden-environment.secure-ai-foundry-secrets
 
 
 
