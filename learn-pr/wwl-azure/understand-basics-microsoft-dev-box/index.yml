@@ -25,7 +25,7 @@ abstract: |
 
   -   Detail out network connectivity, Intune integration, identity service, and user connectivity for the service.
 prerequisites: '-   You should be familiar with basic cloud computing concepts and terminology.'
-iconUrl: /training/achievements/understand-basics-microsoft-dev-box.svg
+iconUrl: /training/achievements/xplore-microsoft-dev-box-deployment-guidelines-best-practices.svg
 levels:
 - intermediate
 roles:
