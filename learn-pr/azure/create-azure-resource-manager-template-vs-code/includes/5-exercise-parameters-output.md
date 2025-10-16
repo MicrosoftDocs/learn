@@ -96,7 +96,7 @@ Here, you use parameters to limit the values allowed for a parameter.
      }
     ```
 
-    ARM templates support ```//``` and ```/* */``` comments.
+    The first line is a comment. ARM templates support ```//``` and ```/* */``` comments.
 
 1. Update **resources** to use the ```storageSKU``` parameter. If you take advantage of IntelliSense in Visual Studio Code, it makes this step easier.
 

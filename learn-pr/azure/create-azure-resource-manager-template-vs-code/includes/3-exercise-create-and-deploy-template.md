@@ -38,7 +38,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     
     1. Select **Git Bash**.
     
-          :::image type="content" source="../media/3-select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window showing the select shell drop-down.":::
+          :::image type="content" source="../media/3-select-shell-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window showing the select shell drop-down.":::
 
 1. Change directory to the folder containing your ARM template file.
 
@@ -102,7 +102,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
     1. In the input field, scroll down and select **PowerShell**.
 
-          :::image type="content" source="../media/3-select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window showing the select shell drop-down.":::
+          :::image type="content" source="../media/3-select-shell-powershell.png" alt-text="Screenshot of the Visual Studio Code terminal window showing the select shell drop-down.":::
 
 1. Change directory to the folder containing your ARM template files.
 
@@ -127,10 +127,10 @@ Replace with a unique name for your resource group. Replace with the Azure regio
 By setting the default resource group, you can omit that parameter from the Azure CLI commands in this exercise. To set the resource group, run the following command.
 
 ```azurepowershell
-Set-AzDefault -ResourceGroupName [sandbox resource group name]
+Set-AzDefault -ResourceGroupName [resource group name]
 ```
 
-replace *[sandbox resource group name]* with your resource group name.
+replace *[resource group name]* with your resource group name.
 
 Deploy the template to Azure by running the following commands. The ARM template doesn't have any resources yet, so there aren't any resources created.
 
