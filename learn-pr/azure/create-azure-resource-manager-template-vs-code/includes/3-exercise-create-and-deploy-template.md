@@ -175,7 +175,7 @@ In the previous task, you learned how to create a blank template and deploy it. 
 
     [!code-json[](code/parameter1.json)]
 
-1. Change the values of the resource *name* and *displayName* to something unique (for example, **learnexercise12321**). This name must be unique across all of Azure, so choose something unique to you.
+1. Change the values of the resource *name* and *displayName* to something unique (for example, **learnexercise12321**). This name must be globally unique across Azure, contain 3 to 24 characters, and include only lowercase letters, numbers, and hyphens. 
 
 1. The resource location is set to the same location as the resource group where the resource is deployed. Leave the default here.
 
