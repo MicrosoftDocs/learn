@@ -53,35 +53,35 @@ When using Ask mode, it's important to provide sufficient context for GitHub Cop
 
 Here are some examples of natural language text that you can include in your prompt when analyzing complex conditionals:
 
-#### Understanding and Analysis
+#### Understanding and analysis
 
 - "Analyze the selected conditional logic and explain what each branch does."
 - "What is the cyclomatic complexity of the selected conditional block and why?"
 - "Review the selected conditional and identify the main conditions being evaluated and their relationships"
 - "What business rules or requirements does the selected conditional logic implement?"
 
-#### Quality Assessment
+#### Quality assessment
 
 - "Evaluate the selected conditional for potential maintainability issues."
 - "Are there any code smells or anti-patterns in the selected conditional logic?"
 - "Review the selected conditional and identify the edge cases or error conditions that might not be properly handled."
 - "Does the selected conditional follow SOLID principles? If not, how could it be improved?"
 
-#### Refactoring Opportunities
+#### Refactoring opportunities
 
 - "Suggest specific refactoring techniques to simplify the selected conditional (guard clauses, polymorphism, strategy pattern, etc.)"
 - "How could I break the selected complex conditional into smaller, more focused functions?"
 - "What design patterns could help eliminate or reduce the complexity of the selected conditional?"
 - "Show me how to apply the 'fail fast' principle to the selected conditional logic."
 
-#### Testing and Risk Assessment
+#### Testing and risk assessment
 
 - "What test cases would I need to ensure the selected conditional logic works correctly after refactoring?"
 - "What are the risks of refactoring the selected conditional, and how can I mitigate them?"
 - "How can I verify that refactored code maintains the same behavior as the original?"
 - "Review your suggested approaches for refactoring the selected conditional. What are performance implications associated with each of the suggested approaches?"
 
-#### Best Practices Application
+#### Best practices application
 
 - "Does the selected conditional follow Microsoft's C# coding conventions? What improvements are needed?"
 - "How can I make the selected conditional more readable and self-documenting?"

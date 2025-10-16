@@ -67,7 +67,7 @@ Guard clauses are often useful for input validation and error handling. One cons
 
 Guard clauses create cleaner, more linear code by handling the exceptional scenarios at the beginning of the function. Implementing early returns simplifies the remaining logic and makes it easier to follow.
 
-## Simplify with Switch statements or pattern matching
+## Simplify with switch statements or pattern matching
 
 Many languages, including C#, offer `switch` statements (and newer pattern matching capabilities) that can replace certain chains of `if/else` with a cleaner declarative structure. A switch/case is often easier to read when you’re checking one variable or expression against many possible values. Pattern matching enables developers to handle complex conditions using a switch-like expression.
 
