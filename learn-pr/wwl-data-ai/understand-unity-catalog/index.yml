@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-unity-catalog
 metadata:
-  title: Understand Unity Catalog
+  title: Establish Unity Catalog fundamentals
   description: "Learn fundamental data governance concepts using Unity Catalog in Azure Databricks. Explore metastore architecture, external storage integration, and federation capabilities."
   ms.date: 09/24/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: module
   ms.service: azure
-title: Understand Unity Catalog
+title: Establish Unity Catalog fundamentals
 summary: |
   Discover how Unity Catalog provides unified data governance across your Azure Databricks lakehouse architecture. Learn about governance challenges, explore metastore components, and implement external storage integration to establish a robust foundation for data management.
 abstract: |
