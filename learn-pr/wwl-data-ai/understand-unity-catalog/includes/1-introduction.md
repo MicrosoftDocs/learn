@@ -1,6 +1,4 @@
-# Introduction
-
-You're a data engineer building a customer analytics pipeline in Azure Databricks. Your raw data—sales transactions, customer profiles, and web clickstreams—lives in Azure Data Lake Storage Gen2. You transform this data in notebooks and load it into Delta tables that analysts query daily.
+Imagine you're a data engineer building a customer analytics pipeline in Azure Databricks. Your raw data including sales transactions, customer profiles, and web clickstreams lives in Azure Data Lake Storage Gen2. You transform this data in notebooks and load it into Delta tables that analysts query daily.
 
 As your data platform grows, you start seeing familiar challenges. An analyst notices different customer counts between workspaces because a team created their own copy of the data for a dashboard. When you need to grant the marketing team access to a specific table, you realize you also need to coordinate file-level permissions in the storage account with a different team. Your compliance officer asks for an audit trail showing who accessed customer data last month, and you discover there's no single place to see access across notebooks, SQL queries, and file reads.
 

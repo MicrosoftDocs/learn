@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-unity-catalog.exercise-create-workspace-navigate-metastore
+metadata:
+  title: "Exercise: Populate the metastore in Unity Catalog"
+  description: "In this hands-on exercise, you'll create catalogs using Catalog Explorer, populate schemas and tables using SQL commands, then navigate the hierarchy using both SQL queries and the Catalog Explorer interface."
+  ms.date: 09/25/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: interactive-tutorial
+  ms.service: azure-databricks
+title: "Exercise: Populate and navigate the metastore"
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise.md)]

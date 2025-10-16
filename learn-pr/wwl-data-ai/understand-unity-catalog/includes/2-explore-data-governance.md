@@ -1,8 +1,4 @@
-﻿# Data Governance in Azure Databricks
-
-## What Is Data Governance?
-
-Data governance is the discipline of ensuring that data is secure, trustworthy, and usable while meeting compliance requirements. It ensures data is available to the right people and protected from unauthorized use.  
+﻿Data governance is the discipline of ensuring that data is secure, trustworthy, and usable while meeting compliance requirements. It ensures data is available to the right people and protected from unauthorized use.  
 
 In practice, governance involves four major capabilities:
 

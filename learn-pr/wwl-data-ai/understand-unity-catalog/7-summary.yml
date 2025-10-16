@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: "Summary of Unity Catalog governance in Azure Databricks"
   ms.date: 10/13/2025
-  author: wwlpublish
-  ms.author: jamesh
+  author: theresa-i
+  ms.author: theresai
   ms.topic: module-summary-unit
   ms.service: azure-databricks
 durationInMinutes: 2

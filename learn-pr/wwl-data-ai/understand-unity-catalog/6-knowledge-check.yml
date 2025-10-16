@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-unity-catalog.knowledge-check
+title: Module assessment
+metadata:
+  ai_generated_module_assessment: true
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 10/13/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary purpose of Unity Catalog in Azure Databricks?"
+    choices:
+    - content: "To provide distributed computing for big data processing"
+      isCorrect: false
+      explanation: "Incorrect. Unity Catalog is not used for distributed computing; that's the role of Apache Spark in Databricks."
+    - content: "To provide unified data governance across all workspaces"
+      isCorrect: true
+      explanation: "Correct. Unity Catalog provides a centralized governance layer that spans all Azure Databricks workspaces, enabling consistent permissions, auditing, and data management."
+    - content: "To visualize data in dashboards and reports"
+      isCorrect: false
+      explanation: "Incorrect. While Unity Catalog governs access to data used in dashboards, it doesn't create visualizations."
+    - content: "To optimize query performance automatically"
+      isCorrect: false
+      explanation: "Incorrect. Unity Catalog focuses on governance, not query optimization."

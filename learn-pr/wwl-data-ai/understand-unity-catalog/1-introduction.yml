@@ -5,10 +5,10 @@ metadata:
   title: Introduction
   description: "Introduction to Unity Catalog governance in Azure Databricks"
   ms.date: 10/13/2025
-  author: wwlpublish
-  ms.author: jamesh
+  author: theresa-i
+  ms.author: theresai
   ms.topic: module-intro-unit
   ms.service: azure-databricks
 durationInMinutes: 3
 content: |
-  [!include[](includes/0-introduction.md)]
+  [!include[](includes/1-introduction.md)]
