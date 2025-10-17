@@ -99,7 +99,7 @@ Support: #github-migration | Weekly office hours Wed 10:00-10:30
 
 - Update onboarding docs: cloning, PR flow, CODEOWNERS, branch strategy
 - Provide short videos or GIFs for PR/review basics
-- Publish a FAQ: "Why can't I push to main?", "How do I link AB# work items?"
+- Publish an FAQ: "Why can't I push to main?", "How do I link AB# work items?"
 
 ### Training plan (lightweight)
 

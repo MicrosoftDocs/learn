@@ -33,7 +33,6 @@ In this module, you learned how to:
 - [Best practices for enterprises](https://docs.github.com/enterprise-cloud@latest/admin/overview/best-practices-for-enterprises)
 - [About organizations](https://docs.github.com/enterprise-cloud@latest/organizations/collaborating-with-groups-in-organizations/about-organizations)
 - [SAML/SCIM for EMU](https://docs.github.com/enterprise-cloud@latest/admin/identity-and-access-management/using-enterprise-managed-users-for-iam)
-- [Autolink references](https://docs.github.com/enterprise-cloud@latest/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/defining-autolinks-to-reference-external-resources)
 - [Branch protection and rulesets](https://docs.github.com/enterprise-cloud@latest/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
 - [Secret scanning and Dependabot](https://docs.github.com/enterprise-cloud@latest/code-security)
 

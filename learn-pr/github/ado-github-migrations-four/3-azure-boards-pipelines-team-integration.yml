@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.ado-github-migrations-four.azure-boards-pipelines-team-integration
-title: Validate integrations (Azure Boards and Pipelines) and enable teams
+title: Validate integrations (Azure boards and pipelines) and enable teams
 metadata:
   title: Validate integrations (Azure Boards and Pipelines) and enable teams
   description: This content is a part of the Azure DevOps to GitHub Enterprise Migrations Part IV.

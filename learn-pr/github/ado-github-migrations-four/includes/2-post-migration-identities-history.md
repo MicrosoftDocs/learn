@@ -59,7 +59,7 @@ The GitHub migration tools can generate a mannequin mapping CSV at the **organiz
 * By default, reclaiming **sends an attribution invitation** to the target user; the mannequin is not reattributed until the user accepts.
 * For **Enterprise Managed Users (EMU)**, you can skip the invitation and immediately reattribute by adding `--skip-invitation` to the reclaim command (CLI only).
 
-### Important constraints & caveats
+### Important constraints and caveats
 
 * You **cannot reclaim mannequins after a repository has been transferred** to another organization. Reclaim mannequins **before** any repo transfers.
 * You can only target **existing organization members**. Ensure target users are added to the org before running reclaim.
