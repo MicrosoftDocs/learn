@@ -44,7 +44,7 @@ quiz:
     choices:
     - content: "Public"
       isCorrect: false
-      explanation: "Incorrect. Public visibility exposes repositories outside the organization, which is usually not desired for enterprise migrations."
+      explanation: "Incorrect. Public visibility exposes repositories outside the organization, which isn't desired for enterprise migrations."
     - content: "Internal"
       isCorrect: false
       explanation: "Incorrect. While Internal visibility is good for shared libraries, Private is safer as the default for migrated repositories."
@@ -53,12 +53,12 @@ quiz:
       explanation: "Correct! Private visibility is the safest default, allowing you to selectively open access as needed rather than accidentally exposing sensitive code."
     - content: "Fork-only"
       isCorrect: false
-      explanation: "Incorrect. Fork-only is not a standard repository visibility setting in GitHub."
-  - content: "What does the Azure Boards 'integrate-boards' command provide that 'configure-autolink' does not?"
+      explanation: "Incorrect. Fork-only isn't a standard repository visibility setting in GitHub."
+  - content: "What does the Azure Boards 'integrate-boards' command provide that 'configure-autolink' doesn't?"
     choices:
     - content: "GitHub repository autolinks to Azure DevOps work items"
       isCorrect: false
-      explanation: "Incorrect. Both commands can create autolinks, but integrate-boards provides additional capabilities."
+      explanation: "Incorrect. Both commands can create autolinks, but integrate-boards provides extra capabilities."
     - content: "Azure DevOps service connection and bidirectional work item linking"
       isCorrect: true
       explanation: "Correct! The integrate-boards command creates service connections and enables full bidirectional linking and synchronization between GitHub and Azure Boards."
