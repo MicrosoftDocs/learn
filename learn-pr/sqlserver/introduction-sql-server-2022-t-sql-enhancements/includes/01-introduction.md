@@ -1,5 +1,3 @@
-# Introduction
-
 SQL Server 2025 introduces a range of new T‑SQL features and enhancements that support modern workloads while keeping queries clear and maintainable. This module focuses on language additions for AI and vectors, pattern matching, JSON output, string processing, and improved date and numeric operations.
 
 In this module, we cover the following topics:

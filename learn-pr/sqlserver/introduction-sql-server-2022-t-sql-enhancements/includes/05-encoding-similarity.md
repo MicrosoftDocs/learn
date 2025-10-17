@@ -1,5 +1,3 @@
-# Encoding and Similarity Functions in SQL Server 2025
-
 SQL Server 2025 introduces new functions for string encoding and similarity measurement. These features support secure data transformation, fuzzy matching, and natural-language comparisons directly within T-SQL.  
 They make it easier to detect duplicates, standardize records, or find near matches without relying on external tools or user-defined functions.
 

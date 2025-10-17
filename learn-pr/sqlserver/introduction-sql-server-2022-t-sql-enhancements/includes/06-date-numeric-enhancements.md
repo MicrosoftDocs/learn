@@ -1,5 +1,3 @@
-# Date and Numeric Enhancements in SQL Server 2025
-
 SQL Server 2025 introduces several improvements to date and numeric functions that simplify time-based logic and aggregate calculations.  
 These updates simplify everyday development, help avoid conversion issues, and make working with dates and numeric values more practical in analytics and reporting scenarios.
 

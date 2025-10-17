@@ -1,5 +1,3 @@
-# AI Integration in SQL Server 2025
-
 SQL Server 2025 introduces a new set of AI and vector functions that enable database developers to integrate AI-powered capabilities directly into T-SQL. These new capabilities make it possible to generate embeddings, calculate vector similarity, and search across AI-enriched data without leaving SQL Server. This level of integration reduces the need for external services, simplifies application architecture, and supports real-time intelligent workloads.
 
 ## AI and Vector Functions Overview

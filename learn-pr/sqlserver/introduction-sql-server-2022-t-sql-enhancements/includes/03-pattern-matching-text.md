@@ -1,5 +1,3 @@
-# Pattern Matching and Text Extraction in SQL Server 2025
-
 SQL Server 2025 adds new regular expression (REGEXP) functions and enhances the `SUBSTRING` function to simplify working with structured text. These additions allow developers to perform flexible text searches, extract complex patterns, and clean or transform data directly in T-SQL without relying on client-side scripting or CLR functions.
 
 ## Overview of Pattern Matching and Text Extraction Functions

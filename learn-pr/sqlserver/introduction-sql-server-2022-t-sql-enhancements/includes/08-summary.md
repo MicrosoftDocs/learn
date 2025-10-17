@@ -1,5 +1,3 @@
-# Summary
-
 In this module, you explored the language features introduced in SQL Server 2025 and how they improve day‑to‑day development and analytics.
 
 In this module, you learned about the following areas:

@@ -1,5 +1,3 @@
-# JSON and String Aggregation in SQL Server 2025
-
 SQL Server 2025 introduces new aggregation functions for building JSON arrays, JSON objects, and delimited strings. These additions make it easier to generate structured output such as API responses, reports, or log exports directly from T-SQL queries. The new functions let you move data formatting into the database layer, reducing the need for complex client-side transformation.
 
 ## Overview of JSON and String Aggregation Functions
