@@ -7170,3 +7170,8 @@ achievements:
   title: Create your first route finding app with Azure Maps
   summary: Learn about writing code to interact with Azure Maps. Develop and test a fun app to find the best route for a truck, car, or bicycle. The route is from the west coast of the USA, to the east coast. You can see how routes change based on vehicle. And, for trucks, how routes vary if the contents are hazardous. You get the chance to add in your own locations.
   iconUrl: /training/achievements/iot/create-your-first-app-with-azure-maps.svg
+- uid: learn.azure.deploy-templates-command-line-github-actions.badge
+  type: badge
+  title: Automate the deployment of JSON ARM templates by using GitHub Actions
+  summary: Learn how to deploy JSON Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and GitHub Actions. Use linked templates to break down complex templates into templates that are more modular.
+  iconUrl: /training/achievements/deploy-templates-command-line-github-actions.svg
