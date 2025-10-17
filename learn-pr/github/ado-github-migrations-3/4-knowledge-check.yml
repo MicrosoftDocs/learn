@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.github.azure-devops-to-github-enterprise-migrations-part-iii-migration-testing-and-production-migration.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge check
+  description: Test your understanding of migration testing and production execution strategies.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 10/17/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Which test set best represents a sound Phase 3 testing plan?"
+    choices:
+    - content: "Three small repositories only"
+      isCorrect: false
+      explanation: "Incorrect. Testing only small repositories doesn't provide confidence for larger, more complex migrations."
+    - content: "One large repository only"
+      isCorrect: false
+      explanation: "Incorrect. Testing only one repository type doesn't validate the migration process across different scenarios."
+    - content: "Small, medium, and large repositories with defined pass/fail criteria"
+      isCorrect: true
+      explanation: "Correct! A comprehensive testing strategy includes repositories of different sizes and complexities with clear success criteria for validation."
+    - content: "Any two random repositories"
+      isCorrect: false
+      explanation: "Incorrect. Random selection doesn't ensure representative testing across different repository types and use cases."
+  - content: "After a test migration, which evidence increases confidence most for production readiness?"
+    choices:
+    - content: "The repository appears in GitHub Enterprise"
+      isCorrect: false
+      explanation: "Incorrect. Simply appearing in GitHub doesn't validate data integrity or workflow functionality."
+    - content: "The default branch name is 'main'"
+      isCorrect: false
+      explanation: "Incorrect. Branch naming is a minor configuration detail that doesn't validate migration completeness."
+    - content: "Documented validation showing commits, branches, tags, and workflow behavior"
+      isCorrect: true
+      explanation: "Correct! Comprehensive validation documentation proving data integrity and workflow functionality provides the highest confidence for production migration."
+    - content: "Verbal confirmation from a developer"
+      isCorrect: false
+      explanation: "Incorrect. Verbal confirmations are not sufficient evidence for production migration readiness."
+  - content: "Which is NOT a recommended production migration order strategy?"
+    choices:
+    - content: "Low-risk repositories first"
+      isCorrect: false
+      explanation: "Incorrect. Starting with low-risk repositories is a recommended strategy to minimize potential impact."
+    - content: "Team-based batches"
+      isCorrect: false
+      explanation: "Incorrect. Organizing migrations by teams is a valid strategy for coordination and support."
+    - content: "Random selection"
+      isCorrect: true
+      explanation: "Correct! Random selection is NOT recommended as it doesn't consider risk, dependencies, or coordination needs."
+    - content: "Size-based sequence"
+      isCorrect: false
+      explanation: "Incorrect. Organizing by repository size is a valid strategy for managing migration complexity."
+  - content: "What is the primary benefit of real-time monitoring during production migration?"
+    choices:
+    - content: "Replaces migration logs entirely"
+      isCorrect: false
+      explanation: "Incorrect. Monitoring complements but doesn't replace detailed migration logs."
+    - content: "Provides real-time visibility into progress and issues"
+      isCorrect: true
+      explanation: "Correct! Real-time monitoring enables immediate awareness of migration status and rapid response to issues."
+    - content: "Creates automatic backups"
+      isCorrect: false
+      explanation: "Incorrect. Monitoring tracks progress but doesn't create backups."
+    - content: "Guarantees faster migrations"
+      isCorrect: false
+      explanation: "Incorrect. Monitoring provides visibility but doesn't directly affect migration speed."

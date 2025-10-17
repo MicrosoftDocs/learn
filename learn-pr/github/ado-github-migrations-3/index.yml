@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.github.azure-devops-to-github-enterprise-migrations-part-iii-migration-testing-and-production-migration
+title: Azure Devops to GitHub Enterprise Migrations Part III - Migration Testing and Production Migration
+metadata:
+  title: Azure Devops to GitHub Enterprise Migrations Part III - Migration Testing and Production Migration
+  description: Learn how to complete the final stages of your Azure DevOps to GitHub Enterprise migration. This module guides you through validating your migration plan with real repositories and executing a smooth production migration while maintaining data integrity, stakeholder communication, and business continuity.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 10/17/2025
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: In this module, you'll move from testing to production migration, validating identity mappings, workflows, and integrations before going live. You'll also explore practical runbooks and best practices designed to minimize risk and ensure a confident, successful transition to GitHub Enterprise.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Design a representative testing strategy (small, medium, large repos) and define clear pass/fail criteria.
+  - Execute test migrations with ADO2GH and validate results across data, identity, governance, and integrations.
+  - Prepare for go-live with a rigorous pre-migration checklist, freeze plan, and stakeholder communication cadence.
+  - Select and justify a production migration order (low-risk first, high-value first, size-based, or team-based).
+  - Run batch migrations at scale, monitor progress in real time, and apply baseline governance post-create.
+  - Perform post-migration validation and guide teams through UAT, cutover, and early stabilization.
+  - Recognize when and how to rollback, and how to communicate issues transparently and confidently.
+prerequisites: |
+  Before starting, ensure you have:
+  - Completed Phases 1-3: discovery and planning, source assessment, target setup
+  - Valid Azure DevOps and GitHub personal access tokens with required scopes
+  - GitHub CLI (`gh`) and `ADO2GH` extension installed and configured
+  - Test GitHub organization and Azure DevOps scope selected for Phase 4 testing
+  - Stakeholder alignment on test goals, success criteria, and acceptance thresholds
+  - Draft communication and rollback plans ready for refinement
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+units:
+  - learn.github.azure-devops-to-github-enterprise-migrations-part-iii-migration-testing-and-production-migration.introduction
+  - learn.github.azure-devops-to-github-enterprise-migrations-part-iii-migration-testing-and-production-migration.migration-testing
+  - learn.github.azure-devops-to-github-enterprise-migrations-part-iii-migration-testing-and-production-migration.production-migration
+  - learn.github.azure-devops-to-github-enterprise-migrations-part-iii-migration-testing-and-production-migration.knowledge-check
+  - learn.github.azure-devops-to-github-enterprise-migrations-part-iii-migration-testing-and-production-migration.summary
+badge:
+  uid: learn.github.azure-devops-to-github-enterprise-migrations-part-iii-migration-testing-and-production-migration.badge
