@@ -59328,6 +59328,56 @@
       "source_path": "learn-pr/machine-learning/train-evaluate-deep-learn-models/5c-use-transfer-learning.yml",
       "redirect_url": "/training/modules/train-evaluate-deep-learn-models/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/2-single-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/3-exercise-single-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/4-linked-templates.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/5-exercise-linked-templates.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/6-github-actions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/7-exercise-github-actions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
     }
   ]
 }
