@@ -17,6 +17,7 @@ abstract: |
   - Articulate how testing models can both improve and harm training.
 prerequisites: Familiarity with machine-learning models
 iconUrl: /training/achievements/machine-learning/test-machine-learning-models.svg
+hidden: true
 levels: 
 - beginner
 roles: 

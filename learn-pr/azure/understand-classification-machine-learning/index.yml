@@ -21,6 +21,7 @@ abstract: |
   - Explore how to assess and improve classification models.
 prerequisites: Familiarity with machine-learning models
 iconUrl: /training/achievements/machine-learning/understand-classification-machine-learning.svg
+hidden: true
 levels: 
 - beginner
 roles: 

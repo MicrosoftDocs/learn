@@ -21,6 +21,7 @@ abstract: |
   - Practice fine-tuning a model using characteristics plotted on ROC curves.
 prerequisites: Familiarity with machine learning models
 iconUrl: /training/achievements/machine-learning/optimize-model-performance-roc-auc.svg
+hidden: true
 levels: 
 - beginner
 roles: 

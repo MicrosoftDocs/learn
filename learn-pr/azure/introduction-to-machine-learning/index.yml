@@ -21,6 +21,7 @@ abstract: |
   - Load a model and use it with new data
 prerequisites: None
 iconUrl: /training/achievements/machine-learning/introduction-to-machine-learning.svg
+hidden: true
 levels: 
 - beginner
 roles: 
@@ -44,4 +45,4 @@ units:
 - learn.machinelearning.introduction-to-machine-learning.summary
 badge: 
   uid: learn.machinelearning.introduction-to-machine-learning.badge
-
+

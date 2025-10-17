@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-ai-foundry-secure-environment.isolate-foundry-network
+title: Isolate networks with managed virtual network and Private Link
+metadata:
+  title: Isolate networks with managed virtual network and Private Link
+  description: "Isolate networks with managed virtual network and Private Link."
+  ms.date: 10/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/isolate-foundry-network.md)]
