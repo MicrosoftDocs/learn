@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-code-performance-github-copilot-agent.refactor-low-performance-code-github-copilot-agent
+title: Refactor low performance code using GitHub Copilot's Agent mode
+metadata:
+  title: Refactor Low Performance Code using GitHub Copilot's Agent Mode
+  description: Test refactored code.
+  ms.date: 10/20/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-refactor-low-performance-code-github-copilot-agent.md)]

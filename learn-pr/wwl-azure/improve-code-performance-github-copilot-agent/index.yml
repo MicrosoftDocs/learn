@@ -1,51 +1,44 @@
 ### YamlMime:Module
 uid: learn.improve-code-performance-github-copilot-agent
 metadata:
-  title: Improve code performance using GitHub Copilot Agent
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
-  ms.date: 10/17/2025
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  title: Improve Code Performance using GitHub Copilot Agent
+  description: "Learn how to identify performance bottlenecks in code and how to optimize code for better performance by using GitHub Copilot in Visual Studio Code."
+  ms.date: 10/20/2025
+  author: chrishowd
+  ms.author: cahowd
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
-###########################################################################
-###
-### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
-### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
-###
-### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
-###
-### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
-### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
-### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.prod: TODO
-  ms.service: TODO
+  ms.service: github-copilot
 title: Improve code performance using GitHub Copilot Agent
-summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+summary: "This module examines how to effectively profile .NET applications, identify performance issues, and optimize code by using GitHub Copilot in Visual Studio Code."
 abstract: |
-  By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+  By the end of this module, you're able to:
+    - Describe what code profiling is and how improving code efficiency benefits users and businesses.
+    - Describe the tools, techniques, and processes used to implement profiling, locate bottlenecks, and improve code performance.
+    - Use GitHub Copilot’s Ask mode to explain a codebase, suggest opportunities to improve code efficiency, and identify the risks associated with suggested performance optimizations.
+    - Use GitHub Copilot’s Agent mode to refactor low performance code without negatively impacting code quality or code security.
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+  - Experience using GitHub Copilot in Visual Studio Code.
+  - Experience developing C# applications.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
-  - TODO
+  - intermediate
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
-  - TODO
+  - developer
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-  {{products}}
+  - github
+  - vs-code
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
-  - TODO
+  - app-development
+  - productivity
 units:
-- learn.improve-code-performance-github-copilot-agen.introduction
-- learn.improve-code-performance-github-copilot-agen.learning-content
-- learn.improve-code-performance-github-copilot-agen.exercise
-- learn.improve-code-performance-github-copilot-agen.learning-content
-- learn.improve-code-performance-github-copilot-agen.exercise
-- learn.improve-code-performance-github-copilot-agen.knowledge-check
-- learn.improve-code-performance-github-copilot-agen.summary
+  - learn.improve-code-performance-github-copilot-agent.introduction
+  - learn.improve-code-performance-github-copilot-agent.examine-performance-profiling-code-efficiency
+  - learn.improve-code-performance-github-copilot-agent.write-efficient-readable-code
+  - learn.improve-code-performance-github-copilot-agent.measure-code-performance-establish-baselines
+  - learn.improve-code-performance-github-copilot-agent.identify-bottlenecks-github-copilot-ask
+  - learn.improve-code-performance-github-copilot-agent.refactor-low-performance-code-github-copilot-agent
+  - learn.improve-code-performance-github-copilot-agent.exercise-implement-performance-profiling-github-copilot
+  - learn.improve-code-performance-github-copilot-agent.knowledge-check
+  - learn.improve-code-performance-github-copilot-agent.summary
 badge:
   uid: learn.improve-code-performance-github-copilot-agent.badge
