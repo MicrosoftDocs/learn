@@ -4,13 +4,10 @@ title: Introduction
 metadata:
   title: introduction
   description: "Introduction"
-  ms.date: 02/27/2024
+  ms.date: 10/14/2025
   author: MScalopez
   ms.author: calopez
-  ms.reviewer: vanto
   ms.topic: unit
-  ms.custom:
-    - build-2023
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/01-introduction.md)]
