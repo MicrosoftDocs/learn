@@ -17,14 +17,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A cloud security engineer needs to control who can create or modify Azure AI Foundry workspaces. Which configuration establishes these permissions?"
+  - content: "A cloud security engineer needs to control who can create or modify Azure AI Foundry resources. Which configuration establishes these permissions?"
     choices:
     - content: "Microsoft Entra ID role-based access control (RBAC)"
       isCorrect: true
-      explanation: "Correct: Microsoft Entra ID RBAC defines Azure resource-level permissions, including who can create, configure, or delete Foundry workspaces."
+      explanation: "Correct: Microsoft Entra ID RBAC defines Azure resource-level permissions, including who can create, configure, or delete Foundry resources."
     - content: "Project-level roles in the Foundry portal"
       isCorrect: false
-      explanation: "Incorrect: Project roles define in-portal access for collaboration but don't control workspace creation or management."
+      explanation: "Incorrect: Project roles define in-portal access for collaboration but don't control resource creation or management."
     - content: "Azure Policy initiatives"
       isCorrect: false
       explanation: "Incorrect: Azure Policy enforces configuration standards but doesn't assign permissions."
@@ -32,20 +32,20 @@ quiz:
       isCorrect: false
       explanation: "Incorrect: Private Link restricts network access paths, not resource management permissions."
 
-  - content: "An engineer wants developers to deploy models in a Foundry project but prevent them from modifying resource settings or access assignments. Which role assignment meets this requirement?"
+  - content: "An engineer wants developers to deploy models in a Foundry project but prevent them from modifying project settings or user access. Which role assignment meets this requirement?"
     choices:
-    - content: "Contributor"
+    - content: "Azure AI Project Manager"
       isCorrect: true
-      explanation: "Correct: Contributors can deploy and manage models without changing access or role assignments."
-    - content: "Owner"
+      explanation: "Correct: Azure AI Project Managers can create and deploy models but can't modify access assignments or project-level settings."
+    - content: "Azure AI Account Owner"
       isCorrect: false
-      explanation: "Incorrect: The Owner role grants full control, including management of access permissions."
+      explanation: "Incorrect: Account Owners have full management rights, including access assignments."
+    - content: "Azure AI User"
+      isCorrect: false
+      explanation: "Incorrect: Azure AI Users have read and data access only and can't deploy models."
     - content: "Key Vault Administrator"
       isCorrect: false
       explanation: "Incorrect: That role applies to Key Vault resources, not Foundry project access."
-    - content: "Reader"
-      isCorrect: false
-      explanation: "Incorrect: Readers have view-only permissions and can't deploy or modify resources."
 
   - content: "To prevent credentials from being stored in code or configuration files, what should the engineering team implement?"
     choices:

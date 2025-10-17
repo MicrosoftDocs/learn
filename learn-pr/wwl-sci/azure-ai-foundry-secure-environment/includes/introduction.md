@@ -4,7 +4,7 @@ As Azure AI Foundry environments grow, different teams often share access to the
 
 In this module, you learn to:
 
-- Define access boundaries using Entra ID and RBAC
+- Define access boundaries using Microsoft Entra ID and role-based access control (RBAC)
 - Manage project-level access within shared environments
 - Secure secrets with Key Vault and managed identities
 - Isolate workloads with virtual networks and Private Link
@@ -15,5 +15,5 @@ In this module, you learn to:
 Before starting, you should have:
 
 - Experience using Azure portal and core services
-- Familiarity with Entra ID, RBAC, and conditional access
+- Familiarity with Microsoft Entra ID, RBAC, and conditional access
 - Basic understanding of network security and log analysis

@@ -2,7 +2,7 @@ AI workloads in Azure often rely on multiple connected services like storage acc
 
 **Azure AI Foundry** supports network isolation through **managed virtual networks** and **Private Link**. Together, these features protect data and model traffic while maintaining connectivity to the Azure services your workloads depend on.
 
-Azure AI Foundry runs in a Microsoft-managed network. You don't need to build a custom network to use the service, but you can still control who can access the workspace and how it connects to other resources. Most organizations focus first on isolating dependent services like **Azure Key Vault** and **Azure Storage**, where model data and secrets are stored and accessed.
+Azure AI Foundry runs in a Microsoft-managed network. You don't need to build a custom network to use the service, but you can still control who can access the Foundry resource and how it connects to other resources. Most organizations focus first on isolating dependent services like **Azure Key Vault** and **Azure Storage**, where model data and secrets are stored and accessed.
 
 ## Secure AI workloads through network isolation
 
@@ -20,17 +20,17 @@ In short, managed virtual networks define who can reach your service, and Privat
 
 ## Configure managed virtual networks
 
-You can configure **Networking** settings in your Azure AI services resource to specify which virtual networks can call the Foundry service. The workspace itself stays in a Microsoft-managed virtual network that can't be joined to your own. These settings define who can reach the Foundry workspace and which networks are allowed to connect to it.
+You can configure **Networking** settings in your Azure AI services resource to specify which virtual networks can call the Foundry service. The Foundry resource itself stays in a Microsoft-managed virtual network that can't be joined to your own. These settings define who can reach the Foundry resource and which networks are allowed to connect to it.
 
 Isolation for data paths happens at the resource level. For example, your **Storage** and **Key Vault** resources should use private endpoints to keep traffic on Azure's private backbone instead of the public internet.
 
 When you secure access with virtual network rules and private endpoints:
 
-- Traffic between Foundry and protected resources uses **Azure Private Link** once a private endpoint and DNS are configured.
+- Traffic between Foundry and protected resources uses **Azure Private Link** once a private endpoint and Domain Name System (DNS) are configured.
 - Network rules and security groups on your virtual networks restrict access to approved services.
-- Data movement to or from your workloads should use **Private Link** or **ExpressRoute** instead of public endpoints. **Service endpoints** are supported but less secure because traffic might still traverse public IP space.
+- Data movement to or from your workloads should use **Private Link** or **ExpressRoute** instead of public endpoints. **Service endpoints** also keep traffic on the Azure backbone but still rely on a public endpoint on the target service. **Private Link** assigns a private IP within your virtual network and is the preferred option for sensitive workloads.
 
-Managed virtual networks and private endpoints reduce exposure without requiring you to create custom networking inside the Foundry service. You can connect Foundry to your enterprise hub-and-spoke design by using private endpoints instead of direct peering with Foundry's managed network.
+Managed virtual networks and private endpoints reduce exposure without requiring custom networking inside the Foundry service. For hub-based projects, you can enable a managed network to isolate compute in a Microsoft-managed virtual network and connect to dependent resources, such as Storage or Key Vault, through private endpoints. Use Private Link to secure inbound access to the Foundry project itself.
 
 > [!TIP]
 > Always configure DNS for your private endpoints so the Foundry service resolves the private IPs correctly.
@@ -74,7 +74,7 @@ Managed virtual networks and Private Link work best when used together. The mana
 
 A secure configuration might include:
 
-- A managed virtual network for each Foundry workspace to contain data and compute resources
+- A managed virtual network for each Foundry project to contain data and compute resources
 - Private endpoints to Azure Storage, Key Vault, and selected external APIs
 - Security groups that restrict outbound traffic to approved Azure service tags
 - Diagnostic settings enabled on private endpoints and connected resources for auditing and visibility

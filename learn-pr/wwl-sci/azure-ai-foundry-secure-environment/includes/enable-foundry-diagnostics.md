@@ -17,22 +17,25 @@ Logs form the evidence base for both proactive monitoring and post-incident inve
 
 ## Enable diagnostic settings for Azure AI Foundry
 
-You can configure diagnostic settings at the **workspace** level in Azure AI Foundry. Workspace-level diagnostics capture **management operations** such as configuration changes, access actions, and service health events.
+You can configure diagnostic settings at the **resource** level in Azure AI Foundry. Resource-level diagnostics capture **management operations** such as configuration changes, access actions, and service health events.
 
-Some operational logs, like inference requests, come from underlying **Azure Cognitive Services** resources connected to your workspace. To get full visibility, enable diagnostics both at the workspace level and on those connected services.
+Some operational logs, like inference requests, come from underlying **Azure Cognitive Services** resources connected to your resource. To get full visibility, enable diagnostics both at the resource level and on those connected services.
 
-1. In the **Azure portal**, open your **Azure AI Foundry** workspace.
+1. In the **Azure portal**, open your **Azure AI Foundry** resource.
 1. Select **Diagnostic settings** under **Monitoring**.
 1. Choose **+ Add diagnostic setting**.
 1. Give the setting a clear name, like _FoundryActivityLogs_.
-1. Select the log categories you want to capture, such as **AuditLogs**, **OperationLogs**, and **Requests**.
+1. Select the log categories available for your resource, such as **Audit**, **RequestResponse**, or **AllMetrics**.
+
+   Category names can vary by service, so use the portal list as the source of truth.
+
 1. Choose one or more destinations:
 
    - **Log Analytics workspace** for querying and analysis
    - **Storage account** for long-term retention
    - **Event Hub** for streaming to external SIEM tools
 
-   :::image type="content" source="../media/foundry-diagnostic-logging-diagram.png" alt-text="Diagram showing Azure AI Foundry workspace sending diagnostic logs to Storage, Log Analytics, and Event Hub for centralized analysis." border="false" lightbox="../media/foundry-diagnostic-logging-diagram.png":::
+   :::image type="content" source="../media/foundry-diagnostic-logging-diagram.png" alt-text="Diagram showing Azure AI Foundry resource sending diagnostic logs to Storage, Log Analytics, and Event Hubs for centralized analysis." border="false" lightbox="../media/foundry-diagnostic-logging-diagram.png":::
 
 Make sure the destination resource is in a region that meets your organization's data residency and retention policies.
 
@@ -44,12 +47,12 @@ Azure AI Foundry depends on several connected services, including **Key Vault**,
 
 Enable diagnostic settings on connected resources to build a complete view of your AI environment:
 
-- **Azure Key Vault:** capture access events and policy changes
-- **Azure Storage:** collect read, write, and delete operations
-- **Private endpoints:** enable **NSG flow logs** for the subnets hosting private endpoints to analyze traffic patterns
-- **Virtual networks:** capture network activity and investigate connection behavior
+- **Azure Key Vault** captures access events and policy changes.
+- **Azure Storage** collects read, write, and delete operations.
+- **Private endpoints** capture **NSG flow logs** for the subnets hosting private endpoints to analyze traffic patterns.
+- **Virtual networks** capture network activity and help investigate connection behavior.
 
-Workspace-level diagnostics show management activity, while these connected resource logs capture data and inference operations. Together, they provide full coverage of your AI environment.
+Resource-level diagnostics show management activity, while these connected resource logs capture data and inference operations. Together, they provide full coverage of your AI environment.
 
 ## Route and analyze logs centrally
 
@@ -72,7 +75,7 @@ Integrating diagnostics with these tools helps keep your AI workloads observable
 
 Diagnostics are only valuable if the data remains complete, retained, and secure. Use these practices to maintain a reliable log management process:
 
-- Use **Azure Policy** to enforce diagnostic settings across new Foundry workspaces and connected resources
+- Use **Azure Policy** to enforce diagnostic settings across new Foundry resources and connected resources
 - Set retention periods in **Log Analytics** or **Storage** that align with compliance requirements
 - Restrict access to log data using **Microsoft Entra ID** roles and least privilege
 - Enable **NSG flow logs** to maintain visibility into private endpoint and subnet traffic

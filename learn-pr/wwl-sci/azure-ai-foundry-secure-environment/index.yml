@@ -2,7 +2,7 @@
 uid: learn.wwl.azure-ai-foundry-secure-environment
 metadata:
   title: Secure Azure AI Foundry environments
-  description: Safeguard your AI workloads with Azure AI Foundry guardrails. Discover how to configure and validate content filters, blocklists, and Prompt Shields to protect sensitive data, ensure responsible model behavior, and continuously improve AI safety.
+  description: Secure Azure AI Foundry environments by applying layered protections across identity, secrets, networks, and diagnostics. This module explains how to manage access with Microsoft Entra ID and project roles, protect credentials with Key Vault, and isolate workloads through private network connections. It also covers enabling diagnostic logging to strengthen visibility and auditing. These practices help you build trusted, compliant AI environments that support collaboration safely.
   ms.date: 10/17/2025
   author: wwlpublish
   ms.author: riswinto
@@ -11,20 +11,21 @@ metadata:
   ms.service: azure-ai-foundry
 title: Secure Azure AI Foundry environments
 summary: |
-  Azure AI Foundry guardrails help secure AI workloads by applying configurable safety controls that evaluate both prompts and responses.
-  You'll learn how to understand built-in safety models, test and refine guardrails, create blocklists, configure content filters, and validate that protections work as intended.
-  These capabilities help organizations prevent unsafe or policy-violating interactions, protect sensitive data, and maintain trust in AI-assisted applications.
+  To secure Azure AI Foundry environments requires layered protections that control access, safeguard credentials, isolate network communication, and maintain visibility across connected resources.
+  The approach includes defining access boundaries with Microsoft Entra ID and project roles, and integrating Key Vault for secret management. It also uses managed virtual networks, Private Link, and diagnostic logging to maintain privacy, visibility, and compliance.
+  These practices create secure, traceable AI environments that support collaboration without compromising protection.
 abstract: |
   In this module, you learn to:
-  - Explain how guardrails secure model interactions in Azure AI Foundry
-  - Describe safety controls such as content filters, blocklists, and Prompt Shields
-  - Configure and validate custom guardrails for different workload types
-  - Evaluate guardrail effectiveness and refine configurations for continuous assurance
+  - Define access boundaries using Microsoft Entra ID and role-based access control (RBAC)
+  - Manage project-level permissions within shared environments
+  - Secure secrets with Key Vault and managed identities
+  - Isolate workloads with managed virtual networks and Private Link
+  - Enable diagnostic logging for centralized visibility and investigation
 prerequisites: |
   Before starting, you should have:
-  - Experience managing Azure AI or cloud-based workloads
-  - Familiarity with AI model deployment and data security concepts
-  - Awareness of organizational policy or compliance requirements related to AI use
+  - Experience using Azure portal and core services
+  - Familiarity with Microsoft Entra ID, RBAC, and conditional access
+  - Basic understanding of network security, logging, and cloud compliance concepts
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -44,6 +45,7 @@ units:
 - learn.wwl.azure-ai-foundry-secure-environment.manage-access-foundry-projects
 - learn.wwl.azure-ai-foundry-secure-environment.secure-ai-foundry-secrets
 - learn.wwl.azure-ai-foundry-secure-environment.isolate-foundry-network
+- learn.wwl.azure-ai-foundry-secure-environment.enable-foundry-diagnostics
 - learn.wwl.azure-ai-foundry-secure-environment.knowledge-check
 - learn.wwl.azure-ai-foundry-secure-environment.summary
 badge:

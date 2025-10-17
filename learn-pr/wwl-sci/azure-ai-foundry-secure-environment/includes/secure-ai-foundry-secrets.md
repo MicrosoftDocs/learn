@@ -17,13 +17,13 @@ Centralized secret management creates one control point for both operational sec
 
 ## Store and control access to secrets
 
-Each Foundry workspace can connect to one or more Key Vault instances. Grant access only to the identities that need it.
+Each Azure AI Foundry resource supports a single Key Vault connection across the resource and its associated projects. The connection is currently in preview and can only be created when no existing Key Vault connection is active.
 
-- Assign the **Key Vault Administrator** role to trusted operators who manage vault configuration.
-- Use the **Key Vault Secrets Officer** or **Reader** role for users or service principals that need to retrieve specific secrets.
+- Use the **Key Vault Secrets User** role for identities that need to retrieve specific secrets.
+- Assign the **Key Vault Administrator** role only to trusted operators who manage vault configuration.
 - Enable **managed identities** for Foundry services and pipelines that require secret access to avoid storing credentials in code or configuration files.
 
-Apply least privilege by limiting access to *Get* and *List* operations unless broader permissions are required. When temporary administrative access is needed, use **Privileged Identity Management (PIM)** for time-bound elevation.
+Apply least privilege by limiting access to _Get_ and _List_ operations unless broader permissions are required. When temporary administrative access is needed, use **Privileged Identity Management (PIM)** for time-bound elevation.
 
 For guidance on assigning roles, see [Assign Azure role-based access control (RBAC) roles for Key Vault](/azure/key-vault/general/rbac-guide?azure-portal=true).
 
@@ -40,7 +40,7 @@ The diagram shows how Azure AI Foundry retrieves secrets from Azure Key Vault th
 A typical configuration might include:
 
 - A Foundry project linked to a Key Vault that stores API keys and data source connections
-- Managed identities assigned to the Foundry workspace and compute resources for automatic secret retrieval
+- Managed identities assigned to the Foundry resource and compute resources for automatic secret retrieval
 - Secret rotation enforced through Azure Policy or Defender for Cloud recommendations
 
 ## Monitor and maintain Key Vault security
@@ -66,7 +66,7 @@ Test your Key Vault integration in a development environment to see how secret m
 > [!TIP]
 > If you'd like to follow along with the exercises, you can use your own development environment or create a free **[Azure trial account](https://azure.microsoft.com/free)** to test the configurations safely.
 
-Your organization's Azure AI Foundry workspace already connects to several data sources. You've been asked to secure the connection strings and API keys used by model deployments.
+Your organization's Azure AI Foundry resource already connects to several data sources. You've been asked to secure the connection strings and API keys used by model deployments.
 
 1. In the **[Azure portal](https://portal.azure.com/)**, create or select a **Key Vault**.
 
@@ -78,7 +78,7 @@ Your organization's Azure AI Foundry workspace already connects to several data 
 
 1. On the **Review + assign** tab, review your settings, then select **Review + assign**.
 
-   :::image type="content" source="../media/review-assign-identity-key-vault.png" alt-text="Screenshot showing a Key Vault role assignment granting the Azure AI Foundry workspace the Key Vault Secrets User role." lightbox="../media/review-assign-identity-key-vault.png":::
+   :::image type="content" source="../media/review-assign-identity-key-vault.png" alt-text="Screenshot showing a Key Vault role assignment granting the Azure AI Foundry resource the Key Vault Secrets User role." lightbox="../media/review-assign-identity-key-vault.png":::
 
 1. In the **[Azure AI Foundry portal](https://ai.azure.com/)**, open **Management center** > **Connected resources**, select **+ New connection**, and choose **Azure Key Vault**.
 
@@ -87,7 +87,7 @@ Your organization's Azure AI Foundry workspace already connects to several data 
    :::image type="content" source="../media/foundry-connect-key-vault.png" alt-text="Screenshot showing the Add an Azure Key Vault page with a selected vault, managed identity, and Add connection button." lightbox="../media/foundry-connect-key-vault.png":::
 
 > [!NOTE]
-> If the **Add connection** button is unavailable, confirm that no existing Key Vault connection is active. Each workspace supports only one Key Vault connection at a time.
+> If the **Add connection** button is unavailable, confirm that no existing Key Vault connection is active. Each resource supports only one Key Vault connection at a time.
 
 Confirm that your Foundry project retrieves secrets from Key Vault and that no credentials appear in configuration files or logs.
 
