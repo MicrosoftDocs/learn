@@ -22,16 +22,18 @@ For backward compatibility, each workspace still exposes its old Hive metastore 
 
 You can think of the metastore as a **logical construct** for organizing metadata and linking it to storage—not as a physical container.
 
-If we were to "open it up," we'd see two main parts:
+If we "opened it up," we'd see two main parts:
 
 - **Metadata in the control plane** – Information about objects, such as table names, columns, and permissions, is stored in the control plane. This is what ties a metastore to a specific Azure region.
 - **Data in the data plane** – The actual files and tables governed by the metastore reside in an Azure Data Lake Storage container in the same region.
 
-:::image type="content" source="../media/metastore.png" alt-text="Diagram showing Unity Catalog metastore architecture with metadata stored in the control plane and data files stored in Azure Data Lake Storage in the data plane. Multiple Azure Databricks workspaces connect to the same metastore for centralized governance." lightbox="../media/metastore.png":::
-
 The metastore doesn't hold your data directly. Instead, it acts like a **reference card**—it knows what the data is, where it lives, and who is allowed to use it.
 
 The metastore sits at the regional level, with multiple Azure Databricks workspaces connected to it. Each workspace accesses the same governed data through the metastore, while the underlying data files remain in the associated cloud storage container within that same region. This architecture enables centralized governance while maintaining data residency compliance.
+
+:::image type="content" source="../media/metastore.png" alt-text="Diagram showing Unity Catalog metastore architecture." lightbox="../media/metastore.png":::
+
+The diagram shows how workspaces are assigned to the metastore, the Azure Data Lake Storage Gen 2 storage location where managed data is stored, and the Azure region that defines the governance boundary.
 
 ## Explore the three-level namespace
 
@@ -41,25 +43,25 @@ A full Unity Catalog reference looks like this:`catalog.schema.object`.
 
 The hierarchy can be visualized like this:
 
+Metastore (region-level governance boundary)  
+└─ Catalogs  
+&nbsp;&nbsp;&nbsp;&nbsp;└─ Schemas  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ Objects (tables, views, volumes, functions, models)
+
 :::image type="content" source="../media/namespace.png" alt-text="Diagram showing Unity Catalog's three-level namespace hierarchy with metastore at the top containing catalogs, which contain schemas, which contain objects like tables, views, volumes, functions, and models." lightbox="../media/namespace.png":::
 
-```text
-Metastore (region-level governance boundary)
-└─ Catalogs
-  └─ Schemas
-    └─ Objects (tables, views, volumes, functions, models)
-```
+This screenshot from the Catalog Explorer shows the three-level namespace in action: the `production` catalog contains the `customers` schema, which contains the `customer_data` table object and its columns.
 
 ## Examine each level
 
 ### Catalogs
 
 Catalogs are the highest-level containers inside a metastore.
-They are often used to separate:
+They're often used to separate:
 
-- Environments (e.g., `dev`, `staging`, `prod`)
-- Departments (e.g., `finance`, `marketing`)
-- Projects (e.g., `fraud_detection`, `customer_analytics`)
+- Environments (for example, `dev`, `staging`, `prod`)
+- Departments (for example, `finance`, `marketing`)
+- Projects (for example, `fraud_detection`, `customer_analytics`)
 
 ### Schemas
 
@@ -77,7 +79,7 @@ Objects are the assets inside schemas. Unity Catalog governs:
   - **Managed tables:** Data files are stored in the cloud storage container associated with the metastore. Dropping a managed table deletes both the metadata and the data files.
   - **External tables:** Data files remain in your own cloud storage location. Dropping an external table deletes only the metadata and the data files remain intact.
 - **Views**: Saved SQL queries that return dynamic results.
-- **Volumes**: For non-tabular files like JSON, images, or documents (managed or external).
+- **Volumes**: For nontabular files like JSON, images, or documents (managed or external).
 - **Functions**: User-defined SQL functions to reuse logic.
 - **Models**: MLflow machine learning models with versioning and access control.
 
@@ -97,8 +99,6 @@ SELECT * FROM customer_data;
 -- Full path
 SELECT * FROM production.sales.customer_data;
 ```
-
-This makes it clear whether you're working in dev, staging, or prod, and avoids ambiguity.
 
 ## Inheritance and security
 

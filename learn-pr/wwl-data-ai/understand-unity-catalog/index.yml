@@ -10,11 +10,11 @@ metadata:
   ms.service: azure
 title: Establish Unity Catalog fundamentals
 summary: |
-  Discover how Unity Catalog provides unified data governance across your Azure Databricks lakehouse architecture. Learn about governance challenges, explore metastore components, and implement external storage integration to establish a robust foundation for data management.
+  Discover how Unity Catalog provides unified data governance across your Azure Databricks lakehouse architecture. Learn about governance challenges, explore metastore components, and implement external storage integration.
 abstract: |
   In this module, you learn how to:
   - Assess data governance challenges and evaluate Unity Catalog as a solution
-  - Analyze Unity Catalog metastore architecture and three-level namespace structure
+  - Analyze the Unity Catalog metastore architecture and three-level namespace structure
   - Explore external storage integration and Lakehouse Federation capabilities
 prerequisites: |
   Before starting this module, you should have:

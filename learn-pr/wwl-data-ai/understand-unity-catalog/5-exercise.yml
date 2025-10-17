@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure-databricks
 title: "Exercise: Populate and navigate the metastore"
-durationInMinutes: 10
+durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise.md)]

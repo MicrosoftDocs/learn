@@ -7,9 +7,7 @@ In practice, governance involves four major capabilities:
 - **Lineage**: tracing how data flows and transforms through systems.  
 - **Discovery**: making datasets searchable and understandable, so duplication is minimized.  
 
-## Explore Unity Catalog's governance capabilities
-
-Unity Catalog is the central governance layer in Azure Databricks. Instead of managing separate permissions for each workspace or tool, Unity Catalog provides a single, consistent model that spans all workspaces in a region.  
+Unity Catalog is the central governance layer in Azure Databricks. Instead of managing separate permissions for each workspace or tool, Unity Catalog provides a single, consistent model that spans all workspaces in a region. The governance capabilities include:
 
 ### Unified permission model
 
@@ -19,11 +17,11 @@ Metastore → Catalog → Schema → Objects (tables, views, functions, models, 
 
 ### Fine-grained security
 
-Permissions can be applied at the catalog, schema, table, view, or column level. Row-level access control can also be enforced using dynamic views or policy-based filters. These mechanisms allow administrators to restrict data visibility so that users only see the rows they are authorized to access, without restructuring the underlying data.
+Permissions can be applied at the catalog, schema, table, view, or column level. Row-level access control can also be enforced using dynamic views or policy-based filters. These mechanisms allow administrators to restrict data visibility so that users only see the rows they're authorized to access, without restructuring the underlying data.
 
 ### Centralized management
 
-All securable objects are managed in one place, including tables, views, models, volumes, external locations, and storage credentials. This ensures governance applies consistently, whether data is in ADLS, registered as a Delta table, or coming from an external database.
+All securable objects are managed in one place, including tables, views, models, volumes, external locations, and storage credentials. This ensures governance applies consistently, whether data is in Azure Data Lake Storage Gen 2, registered as a Delta table, or coming from an external database.
 
 ### Built-in auditing and lineage
 
