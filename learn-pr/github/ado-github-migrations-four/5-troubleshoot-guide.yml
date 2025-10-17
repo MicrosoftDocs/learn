@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.ado-github-migrations-four.troubleshoot-guide
+title: Troubleshooting Guide
+metadata:
+  title: Troubleshooting Guide
+  description: This content is a part of the Azure DevOps to GitHub Enterprise Migrations Part IV.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 10/17/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-troubleshoot-guide.md)]

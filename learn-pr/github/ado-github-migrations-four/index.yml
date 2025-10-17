@@ -1,0 +1,59 @@
+### YamlMime:Module
+uid: learn.github.ado-github-migrations-four
+title: Azure DevOps to GitHub Enterprise Migrations Part IV - Post-Migration Stabilization, Enablement, and Operations
+metadata:
+  title: Azure DevOps to GitHub Enterprise Migrations Part IV - Post-Migration Stabilization, Enablement, and Operations
+  description: Transition from a completed migration to a sustainable developer platform by resolving identity mismatches, enforcing governance, validating integrations, enabling adoption, and retiring Azure DevOps.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 10/17/2025
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: This module introduces the post-migration phase of your GitHub Enterprise Cloud journey, focusing on stabilizing, governing, and fully operationalizing your new environment.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Resolve mannequin accounts to preserve contributor attribution and PR ownership
+  - Apply and verify governance across your GitHub organization, including branch protections, rulesets, and security features
+  - Validate Azure Boards and Azure Pipelines integrations to maintain traceability and delivery continuity
+  - Provide teams with the checklists, scripts, and communications they need to be productive immediately
+  - Plan and execute a phased retirement of ADO while preserving data for audits
+  - Implement operational health checks and KPIs to sustain your GitHub environment
+
+prerequisites: |
+  **Access**
+  - **GHEC**: Enterprise Owner or Organization Owner (or delegated admin)  
+  - **ADO**: Organization Admin for integrations and exports  
+  - **IdP**: SAML/SCIM admin if EMU or group sync changes are needed  
+
+  **Tokens and Tools**
+  - **GitHub PAT** with `repo`, `admin:repo_hook`, `read:org` (and `admin:org` if required), `workflow` (for Actions)  
+  - **ADO PAT** with “All organizations” scope and relevant permissions for Boards, Pipelines, Code, and Work items  
+  - **GitHub CLI (gh)** with ADO2GH extension installed  
+
+  **Migration State**
+  - All target repositories migrated to GHEC  
+  - Authentication validated in Phase 3  
+  - Pilot teams ready to test workflows  
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+units:
+  - learn.github.code-reviews-pull-requests-github-copilot.introduction
+  - learn.github.code-reviews-pull-requests-github-copilot.post-migration-identities-history
+  - learn.github.code-reviews-pull-requests-github-copilot.azure-boards-pipelines-team-integration
+  - learn.github.code-reviews-pull-requests-github-copilot.retire-azure-devops-operations
+  - learn.github.code-reviews-pull-requests-github-copilot.troubleshoot-guide
+  - learn.github.code-reviews-pull-requests-github-copilot.knowledge-check
+  - learn.github.code-reviews-pull-requests-github-copilot.summary
+badge:
+  uid: learn.github.ado-github-migrations-four.badge

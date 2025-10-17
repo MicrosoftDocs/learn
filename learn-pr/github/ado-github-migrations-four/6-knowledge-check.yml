@@ -1,0 +1,89 @@
+### YamlMime:ModuleUnit
+uid: learn.github.ado-github-migrations-four.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned about post-migration stabilization, enablement, and operations.
+  ms.date: 10/17/2025
+  author: camihmerhar
+  ms.author: camihmerhar
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+
+content: |
+  Test your understanding of Phase 6 post-migration activities.
+quiz:
+  title: Check your knowledge
+
+  questions:
+  - content: "What is the primary purpose of reclaiming mannequins after migration?"
+    choices:
+    - content: "To enable Git LFS"
+      isCorrect: false
+      explanation: "Git LFS is unrelated to mannequin accounts. Mannequins are placeholder accounts for Git commit authors."
+    - content: "To preserve contributor attribution and PR ownership"
+      isCorrect: true
+      explanation: "Correct! Mannequins appear when Git commit authors don't map to GitHub users. Reclaiming them preserves contributor attribution, PR ownership, and audit integrity."
+    - content: "To convert classic pipelines to YAML"
+      isCorrect: false
+      explanation: "Pipeline conversion is separate from mannequin resolution. Mannequins are about Git commit attribution."
+    - content: "To enforce branch protection"
+      isCorrect: false
+      explanation: "Branch protection is a governance feature, not related to mannequin accounts."
+  - content: "Which of the following is a minimum baseline for repository governance post-migration?"
+    choices:
+    - content: "Enable wiki and allow merge commits by default"
+      isCorrect: false
+      explanation: "This configuration doesn't provide security governance. Wikis and merge commits are workflow preferences, not security baselines."
+    - content: "Disable Dependabot updates across all repos"
+      isCorrect: false
+      explanation: "Disabling Dependabot reduces security by preventing automated dependency updates."
+    - content: "Require status checks and CODEOWNER reviews on mainline branches"
+      isCorrect: true
+      explanation: "Correct! Branch protection with required status checks and CODEOWNER reviews is a fundamental governance baseline that ensures code quality and proper review processes."
+    - content: "Make all repos internal"
+      isCorrect: false
+      explanation: "Repository visibility should match business requirements, not be uniformly internal."
+  - content: "If AB# references do not render as links in GitHub, what should you verify first?"
+    choices:
+    - content: "Autolink configuration or full Boards integration"
+      isCorrect: true
+      explanation: "Correct! AB# references need either autolink configuration or full Azure Boards integration with webhooks to render as clickable links in GitHub."
+    - content: "Git LFS filters"
+      isCorrect: false
+      explanation: "Git LFS is for large file handling and doesn't affect work item linking."
+    - content: "CODEOWNERS syntax"
+      isCorrect: false
+      explanation: "CODEOWNERS is for review assignments, not work item linking."
+    - content: "Default branch name"
+      isCorrect: false
+      explanation: "Default branch name doesn't affect work item reference linking."
+  - content: "Which metric best indicates adoption in the first 30 days post-migration?"
+    choices:
+    - content: "Number of archived repositories"
+      isCorrect: false
+      explanation: "Archived repositories indicate cleanup, not active adoption of the platform."
+    - content: "Percentage of developers pushing to GitHub"
+      isCorrect: true
+      explanation: "Correct! The percentage of active developers pushing to GitHub within 30 days directly measures platform adoption and usage."
+    - content: "Average repository size"
+      isCorrect: false
+      explanation: "Repository size is a technical metric, not an adoption indicator."
+    - content: "Count of CODEOWNERS files"
+      isCorrect: false
+      explanation: "CODEOWNERS files indicate governance setup, not user adoption."
+  - content: "During ADO retirement, which step helps ensure traceability and audit readiness?"
+    choices:
+    - content: "Enable Git LFS on all repositories"
+      isCorrect: false
+      explanation: "Git LFS is for large file management and doesn't provide audit traceability for ADO retirement."
+    - content: "Disable SSO temporarily to avoid login issues"
+      isCorrect: false
+      explanation: "Disabling SSO reduces security and doesn't help with audit readiness."
+    - content: "Rename all repositories during cutover"
+      isCorrect: false
+      explanation: "Repository renaming doesn't provide audit traceability and could cause confusion."
+    - content: "Export Azure DevOps work items and build definitions to a central archive"
+      isCorrect: true
+      explanation: "Correct! Exporting ADO work items and build definitions creates audit-ready archives that preserve historical data and maintain traceability for compliance requirements."
