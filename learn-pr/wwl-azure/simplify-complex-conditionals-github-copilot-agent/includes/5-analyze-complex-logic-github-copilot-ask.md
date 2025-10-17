@@ -57,7 +57,7 @@ Here are some examples of natural language text that you can include in your pro
 
 - "Analyze the selected conditional logic and explain what each branch does."
 - "What is the cyclomatic complexity of the selected conditional block and why?"
-- "Review the selected conditional and identify the main conditions being evaluated and their relationships"
+- "Review the selected conditional and identify the main conditions being evaluated and their relationships."
 - "What business rules or requirements does the selected conditional logic implement?"
 
 #### Quality assessment
@@ -69,7 +69,7 @@ Here are some examples of natural language text that you can include in your pro
 
 #### Refactoring opportunities
 
-- "Suggest specific refactoring techniques to simplify the selected conditional (guard clauses, polymorphism, strategy pattern, etc.)"
+- "Suggest specific refactoring techniques to simplify the selected conditional (guard clauses, polymorphism, strategy pattern, etc.)."
 - "How could I break the selected complex conditional into smaller, more focused functions?"
 - "What design patterns could help eliminate or reduce the complexity of the selected conditional?"
 - "Show me how to apply the 'fail fast' principle to the selected conditional logic."
