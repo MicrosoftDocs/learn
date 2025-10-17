@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-sql-server-2022-t-sql-enhancements.pattern-matching-text-extraction
+title: Pattern Matching and Text Extraction
+metadata:
+  title: Pattern Matching and Text Extraction
+  description: "Use REGEXP and SUBSTRING to find, extract, and manipulate text patterns in T-SQL."
+  ms.date: 10/14/2025
+  author: MScalopez
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/03-pattern-matching-text.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-sql-server-2022-t-sql-enhancements.encoding-similarity
+title: Encoding and Similarity Functions
+metadata:
+  title: Encoding and Similarity Functions
+  description: "Encode data with Base64 and compare text using new string similarity functions."
+  ms.date: 10/14/2025
+  author: MScalopez
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/05-encoding-similarity.md)]

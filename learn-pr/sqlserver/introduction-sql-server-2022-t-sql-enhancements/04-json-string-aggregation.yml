@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-sql-server-2022-t-sql-enhancements.json-string-aggregation
+title: JSON and String Aggregation
+metadata:
+  title: JSON and String Aggregation
+  description: "Create JSON arrays, objects, and delimited strings with new T-SQL aggregation functions."
+  ms.date: 10/14/2025
+  author: MScalopez
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/04-json-string-aggregation.md)]

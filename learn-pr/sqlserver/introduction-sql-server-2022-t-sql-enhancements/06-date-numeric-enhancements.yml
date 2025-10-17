@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-sql-server-2022-t-sql-enhancements.date-numeric-enhancements
+title: Date and Numeric Enhancements
+metadata:
+  title: Date and Numeric Enhancements
+  description: "Work with CURRENT_DATE, bigint DATEADD, and PRODUCT() for precise date and math operations."
+  ms.date: 10/14/2025
+  author: MScalopez
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/06-date-numeric-enhancements.md)]
