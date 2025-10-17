@@ -200,6 +200,37 @@
       "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
       "redirect_document_id": false
     },
+
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/introduction-to-sql-server-2022/3-cloud-connected.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-sql-server-2022-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/introduction-to-sql-server-2022/4-built-in-query-intelligence.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-sql-server-2022-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/introduction-to-sql-server-2022/5-security-scalability-availability.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-sql-server-2022-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/introduction-to-sql-server-2022/6-data-virtualization-object-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-sql-server-2022-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/introduction-to-sql-server-2022/7-sql-language-enhancements.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-sql-server-2022-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/sqlserver/introduction-to-sql-server-2022/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/explore-sql-server-2022-capabilities",
+      "redirect_document_id": false
+    },
     {
       "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
@@ -58891,6 +58922,461 @@
     {
       "source_path": "learn-pr/wwl-data-ai/fundamentals-generative-ai/6c-responsible-ai.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-ai-fundamentals/7-responsible-ai",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-linux/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-linux/2-what-sql-server-linux.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-linux/3-sql-server-linux-features.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-linux/4-tools-sql-server-linux.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-linux/5-containers.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-linux/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-linux/index.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/sql-server-2017-on-linux/index.yml",
+      "redirect_url": "https://learn.microsoft.com/sql/linux/sql-server-linux-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/connect-azure-database-mysql.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/deploy-azure-database-mysql.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/how-deploy-connect-azure-database-mysql.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-database-for-mysql/what-azure-database-mysql.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/quickstart-create-server-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/2-connect-to-mysql-from-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/3-choose-app-hosting-option.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/4-deploy-app-on-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/5-exercise-app-service-mysql.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/6-implement-best-practices.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-apps-with-azure-database-mysql/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/mysql/flexible-server/tutorial-deploy-springboot-on-aks-vnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/2-explore-azure-monitor-alert-types.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/3-metric-alerts.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/4-exercise-metric-alerts.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/5-log-alerts.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/6-activity-log-alerts.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/7-actions-and-alert-processing-rules.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/8-exercise-activity-log-alerts.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/alerts/alerts-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/2-analyze-the-structure-of-a-database-table.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/3-exercise-create-connect-azure-sql-db.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/4-exercise-create-tables-with-ads.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/5-table-constraints.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/6-table-indexes.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/7-exercise-create-table-constraints-and-indexes-with-ads.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/8-exercise-work-with-data-in-ads.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/design-a-data-model-with-ads/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql/database/connect-query-vscode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/architect-infrastructure-operations/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/architecture/guide/design-principles/design-for-operations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/monitor-usage-performance-availability-resources-azure-monitor/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-pybryt/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-pybryt/2-high-level.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-pybryt/3-annotations.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-pybryt/4-reference-implementations.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-pybryt/5-reference-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-pybryt/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-pybryt/index.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/advanced-pybryt/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/advanced-pybryt/2-annotation-options.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/advanced-pybryt/3-relational-annotations.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/advanced-pybryt/4-complexity-annotations.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/advanced-pybryt/5-grading-pipelines.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/advanced-pybryt/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/advanced-pybryt/index.yml",
+      "redirect_url": "https://learn.microsoft.com/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/2-create-your-azure-maps-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/3-learn-about-azure-maps-route-finding.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/4-exercise-create-your-route-finding-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/5-exercise-test-your-route-finding-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-your-first-app-with-azure-maps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-maps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/connect.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/create.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/data-science-virtual-machine.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/exercise-connect.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/exercise-create.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/exercise-preinstalled-tools.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/index.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/introduction.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-data-science-virtual-machine/summary.yml",
+      "redirect_url": "https://azure.microsoft.com/products/virtual-machines/data-science-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/device-partner-university/move-forward-windows-11/2-countdown-to-windows-10-end-of-support.yml",
+      "redirect_url": "/training/modules/move-forward-windows-11/2-respond-to-windows-10-end-of-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/train-evaluate-deep-learn-models/3-exercise-train-deep-neural-network.yml",
+      "redirect_url": "/training/modules/train-evaluate-deep-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/train-evaluate-deep-learn-models/5-exercise-train-convolutional-neural-network.yml",
+      "redirect_url": "/training/modules/train-evaluate-deep-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/machine-learning/train-evaluate-deep-learn-models/5c-use-transfer-learning.yml",
+      "redirect_url": "/training/modules/train-evaluate-deep-learn-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/2-single-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/3-exercise-single-deployment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/4-linked-templates.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/5-exercise-linked-templates.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/6-github-actions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/7-exercise-github-actions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
       "redirect_document_id": false
     }
   ]

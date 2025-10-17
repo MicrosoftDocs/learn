@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.defender-for-cloud-ai-understand-protections.guardrails-protections-azure
+title: AI guardrails and protections in Azure
+metadata:
+  title: AI guardrails and protections in Azure
+  description: "AI guardrails and protections in Azure."
+  ms.date: 10/13/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/guardrails-protections-azure.md)]
