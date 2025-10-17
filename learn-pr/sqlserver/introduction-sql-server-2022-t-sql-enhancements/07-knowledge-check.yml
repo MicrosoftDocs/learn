@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-sql-server-2022-t-sql-enhancements.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 10/14/2025
+  author: MScalopez
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Descriptions contain codes like AB12345 embedded in text. The result must return the matched code text per row. Which option fits?
+    choices:
+    - content: REGEXP_SUBSTR
+      isCorrect: true
+      explanation: Returns the substring that matches the pattern, producing the code text directly.
+    - content: REGEXP_INSTR
+      isCorrect: false
+      explanation: Returns the starting position of the match, not the matched text.
+    - content: REGEXP_MATCHES
+      isCorrect: false
+      explanation: Returns all matches as a rowset; use when multiple rows of matches are needed.
+  - content: A report needs one JSON field per customer listing all product IDs in order. Which option aligns with that output?
+    choices:
+    - content: JSON_OBJECTAGG
+      isCorrect: false
+      explanation: Produces key-value objects, not arrays of values.
+    - content: STRING_CONCAT_WS
+      isCorrect: false
+      explanation: Creates delimited text, not structured JSON.
+    - content: JSON_ARRAYAGG
+      isCorrect: true
+      explanation: Aggregates values into a JSON array while preserving order.
+  - content: Similarity scores fluctuate across rows because vector magnitudes vary. The pipeline must make scores comparable across rows. What helps?
+    choices:
+    - content: VECTOR_NORMALIZE
+      isCorrect: true
+      explanation: Normalizes each vector to unit length so similarity is magnitude-invariant.
+    - content: VECTOR_DISTANCE
+      isCorrect: false
+      explanation: Computes distance; doesn't standardize magnitude.
+    - content: CREATE VECTOR INDEX
+      isCorrect: false
+      explanation: Speeds up search but doesn’t change score scaling.
+  - content: A nightly job must store the current date as a partition key with no time component. Which choice avoids manual truncation?
+    choices:
+    - content: GETDATE
+      isCorrect: false
+      explanation: Includes time, which complicates partition matching.
+    - content: CURRENT_DATE
+      isCorrect: true
+      explanation: Returns the date only, suitable for date-based partitions.
+    - content: SYSDATETIME
+      isCorrect: false
+      explanation: Returns higher-precision datetime, not date-onl

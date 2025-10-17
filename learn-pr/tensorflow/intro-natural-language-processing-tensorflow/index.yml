@@ -17,6 +17,7 @@ abstract: |
   - Learn about Attention Mechanisms
   - Learn how to build text classification models  
 iconUrl: /training/achievements/tensor-natural-language-processing.svg
+hidden: true
 levels:
 - beginner
 roles:

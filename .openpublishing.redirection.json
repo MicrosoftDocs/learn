@@ -59378,6 +59378,56 @@
       "source_path": "learn-pr/azure/deploy-templates-command-line-github-actions/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions?tabs=openid",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/1-introduction.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/2-resumable-constraints-and-wait-low-priority-index.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/3-select-window.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/4-is-not-distinct-from.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/5-time-and-series-functions.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/6-string-and-other-functions.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/7-process-json-data.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/8-aggregate-functions.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/9-bit-manipulation.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/10-summary.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
+      "redirect_document_id": false
     }
   ]
 }
