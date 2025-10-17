@@ -5,7 +5,7 @@ metadata:
   description: "This module discusses the fundamentals of the Microsoft dev Box, its key concepts, and architecture."
   ms.date: 05/12/2025
   author: wwlpublish
-  ms.author: fkhan
+  ms.author: rknapp
   ms.topic: module
   ms.collection: N/A
   ms.custom:
@@ -25,7 +25,7 @@ abstract: |
 
   -   Detail out network connectivity, Intune integration, identity service, and user connectivity for the service.
 prerequisites: '-   You should be familiar with basic cloud computing concepts and terminology.'
-iconUrl: /training/achievements/understand-basics-microsoft-dev-box.svg
+iconUrl: /training/achievements/explore-microsoft-dev-box-deployment-guidelines-best-practices.svg
 levels:
 - intermediate
 roles:
