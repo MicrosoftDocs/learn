@@ -30,6 +30,7 @@ subjects:
 modules:
 - learn.wwl.ai-agent-fundamentals
 - learn.wwl.develop-ai-agent-azure
+- learn.wwl.develop-ai-agents-vs-code
 - learn.wwl.build-agent-with-custom-tools
 - learn.wwl.develop-multi-agent-azure-ai-foundry
 - learn.wwl.connect-agent-to-mcp-tools
