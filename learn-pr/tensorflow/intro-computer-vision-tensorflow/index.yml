@@ -21,6 +21,7 @@ abstract: |
   - Learn how to represent images as tensors
   - Learn how to build Dense Neural Networks and Convolutional Neural Networks
 iconUrl: /training/achievements/tensor-computer-vision.svg
+hidden: true
 levels:
 - beginner
 roles:
@@ -43,4 +44,4 @@ units:
 - learn.tensorflow.intro-computer-vision.summary
 badge:
   uid: learn.tensorflow.intro-computer-vision.badge
-
+

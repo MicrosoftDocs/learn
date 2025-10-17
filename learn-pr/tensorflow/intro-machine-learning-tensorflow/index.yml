@@ -18,6 +18,7 @@ abstract: |
   - Learn the difference between eager and graph execution.
   - Reimplement the train, test, and prediction phases of an existing Keras project using TensorFlow. 
 iconUrl: /training/achievements/tensor-intro.svg
+hidden: true
 levels:
 - beginner
 roles:
