@@ -32,6 +32,8 @@ Some operational logs, like inference requests, come from underlying **Azure Cog
    - **Storage account** for long-term retention
    - **Event Hub** for streaming to external SIEM tools
 
+   :::image type="content" source="../media/foundry-diagnostic-logging-diagram.png" alt-text="Diagram showing Azure AI Foundry workspace sending diagnostic logs to Storage, Log Analytics, and Event Hub for centralized analysis." border="false" lightbox="../media/foundry-diagnostic-logging-diagram.png":::
+
 Make sure the destination resource is in a region that meets your organization's data residency and retention policies.
 
 For configuration details, see [Create diagnostic settings in the Azure portal](/azure/azure-monitor/essentials/diagnostic-settings?azure-portal=true).
