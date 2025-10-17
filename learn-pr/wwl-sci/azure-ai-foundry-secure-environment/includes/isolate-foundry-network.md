@@ -35,7 +35,7 @@ Managed virtual networks and private endpoints reduce exposure without requiring
 > [!TIP]
 > Always configure DNS for your private endpoints so the Foundry service resolves the private IPs correctly.
 
-For configuration guidance, see [Configure Azure AI services virtual networks](/azure/ai-services/cognitive-services-virtual-networks).
+For configuration guidance, see [Configure Azure AI services virtual networks](/azure/ai-services/cognitive-services-virtual-networks?azure-portal=true).
 
 ## Configure secure connections with Private Link
 

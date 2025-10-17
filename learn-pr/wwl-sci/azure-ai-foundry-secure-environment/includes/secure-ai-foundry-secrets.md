@@ -64,11 +64,11 @@ When secrets are centralized in Azure Key Vault and retrieved using managed iden
 Test your Key Vault integration in a development environment to see how secret management works in practice.
 
 > [!TIP]
-> If you'd like to follow along with the exercises, you can use your own development environment or create a free **[Azure trial account](https://azure.microsoft.com/free)** to test the configurations safely.
+> If you'd like to follow along with the exercises, you can use your own development environment or create a free **[Azure trial account](https://azure.microsoft.com/free?azure-portal=true)** to test the configurations safely.
 
 Your organization's Azure AI Foundry resource already connects to several data sources. You've been asked to secure the connection strings and API keys used by model deployments.
 
-1. In the **[Azure portal](https://portal.azure.com/)**, create or select a **Key Vault**.
+1. In the **[Azure portal](https://portal.azure.com/?azure-portal=true)**, create or select a **Key Vault**.
 
 1. In **Key Vault**, go to **Access control (IAM)**, then select **Add** > **Add role assignment**.
 
@@ -80,7 +80,7 @@ Your organization's Azure AI Foundry resource already connects to several data s
 
    :::image type="content" source="../media/review-assign-identity-key-vault.png" alt-text="Screenshot showing a Key Vault role assignment granting the Azure AI Foundry resource the Key Vault Secrets User role." lightbox="../media/review-assign-identity-key-vault.png":::
 
-1. In the **[Azure AI Foundry portal](https://ai.azure.com/)**, open **Management center** > **Connected resources**, select **+ New connection**, and choose **Azure Key Vault**.
+1. In the **[Azure AI Foundry portal](https://ai.azure.com/?azure-portal=true)**, open **Management center** > **Connected resources**, select **+ New connection**, and choose **Azure Key Vault**.
 
 1. Select the vault and managed identity you configured, then select **Add connection**.
 

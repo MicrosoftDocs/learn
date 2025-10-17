@@ -11,6 +11,8 @@ These practices create a secure and transparent foundation for developing and op
 
 ## Resources
 
-- [Role-based access control for Azure AI Foundry](/azure/ai-foundry/concepts/rbac-azure-ai-foundry)
-- [Set up an Azure Key Vault connection in Azure AI Foundry (Preview)](/azure/ai-foundry/how-to/set-up-key-vault-connection)
-- [How to set up a managed network for Azure AI Foundry hubs](/azure/ai-foundry/how-to/configure-managed-network?tabs=portal)
+- [Role-based access control for Azure AI Foundry](/azure/ai-foundry/concepts/rbac-azure-ai-foundry?azure-portal=true)
+- [Set up an Azure Key Vault connection in Azure AI Foundry (Preview)](/azure/ai-foundry/how-to/set-up-key-vault-connection?azure-portal=true)
+- [How to set up a managed network for Azure AI Foundry hubs](/azure/ai-foundry/how-to/configure-managed-network?azure-portal=true)
+- [How to configure a private link for Azure AI Foundry (Foundry projects)](/azure/ai-foundry/how-to/configure-private-link?azure-portal=true)
+- [Enable diagnostic logging for Azure AI services](/azure/ai-services/diagnostic-logging?azure-portal=true)
