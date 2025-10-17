@@ -48,12 +48,12 @@ roles:
 products:
   - github
 units:
-  - learn.github.code-reviews-pull-requests-github-copilot.introduction
-  - learn.github.code-reviews-pull-requests-github-copilot.post-migration-identities-history
-  - learn.github.code-reviews-pull-requests-github-copilot.azure-boards-pipelines-team-integration
-  - learn.github.code-reviews-pull-requests-github-copilot.retire-azure-devops-operations
-  - learn.github.code-reviews-pull-requests-github-copilot.troubleshoot-guide
-  - learn.github.code-reviews-pull-requests-github-copilot.knowledge-check
-  - learn.github.code-reviews-pull-requests-github-copilot.summary
+  - learn.github.ado-github-migrations-four.introduction
+  - learn.github.ado-github-migrations-four.post-migration-identities-history
+  - learn.github.ado-github-migrations-four.azure-boards-pipelines-team-integration
+  - learn.github.ado-github-migrations-four.retire-azure-devops-operations
+  - learn.github.ado-github-migrations-four.troubleshoot-guide
+  - learn.github.ado-github-migrations-four.knowledge-check
+  - learn.github.ado-github-migrations-four.summary
 badge:
   uid: learn.github.ado-github-migrations-four.badge

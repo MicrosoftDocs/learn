@@ -6,7 +6,7 @@ metadata:
   description: Check what you've learned about post-migration stabilization, enablement, and operations.
   ms.date: 10/17/2025
   author: camihmerhar
-  ms.author: camihmerhar
+  ms.author: camhernandez
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 5
