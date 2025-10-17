@@ -39,4 +39,4 @@ In this module, you learned how to:
 
 **Azure DevOps Documentation**
 
-- [REST APIs and az devops CLI for exports](https://learn.microsoft.com/azure/devops/cli/)
+- [REST APIs and az devops CLI for exports](/azure/devops/cli/)
