@@ -19,6 +19,7 @@ abstract: |
   - Learn to train a neural network.
   - Learn how to use a neural network to make a prediction.
 iconUrl: /training/achievements/keras-intro.svg
+hidden: true
 levels:
 - beginner
 roles:
