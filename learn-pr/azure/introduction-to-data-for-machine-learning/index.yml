@@ -21,6 +21,7 @@ abstract: |
   - Predict unknown values using numeric and categorical data.
 prerequisites: Some familiarity with machine learning concepts - for example, models and cost - is helpful, but not essential
 iconUrl: /training/achievements/machine-learning/introduction-to-data-for-machine-learning.svg
+hidden: true
 levels: 
 - beginner
 roles: 
