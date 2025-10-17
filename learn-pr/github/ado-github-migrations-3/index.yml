@@ -10,16 +10,16 @@ metadata:
   ms.update-cycle: 180-days
   ms.service: github
   ms.topic: module
-summary: In this module, you'll move from testing to production migration, validating identity mappings, workflows, and integrations before going live. You'll also explore practical runbooks and best practices designed to minimize risk and ensure a confident, successful transition to GitHub Enterprise.
+summary: In this module, you move from testing to production migration, validating identity mappings, workflows, and integrations before going live. You also explore practical runbooks and best practices that minimize risk and ensure a confident, successful transition to GitHub Enterprise.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you are able to:
   - Design a representative testing strategy (small, medium, large repos) and define clear pass/fail criteria.
   - Execute test migrations with ADO2GH and validate results across data, identity, governance, and integrations.
   - Prepare for go-live with a rigorous pre-migration checklist, freeze plan, and stakeholder communication cadence.
   - Select and justify a production migration order (low-risk first, high-value first, size-based, or team-based).
   - Run batch migrations at scale, monitor progress in real time, and apply baseline governance post-create.
   - Perform post-migration validation and guide teams through UAT, cutover, and early stabilization.
-  - Recognize when and how to rollback, and how to communicate issues transparently and confidently.
+  - Recognize when and how to roll back, and how to communicate issues transparently and confidently.
 prerequisites: |
   Before starting, ensure you have:
   - Completed Phases 1-3: discovery and planning, source assessment, target setup
