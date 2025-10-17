@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/25/2025
   author: theresa-i
   ms.author: theresai
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.topic: unit
 title: "Exercise: Populate and navigate the metastore"
 durationInMinutes: 30
 content: |

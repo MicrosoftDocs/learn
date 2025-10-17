@@ -2,7 +2,7 @@
 uid: learn.wwl.understand-unity-catalog.analyze-unity-catalog-architecture
 metadata:
   title: Analyze Unity Catalog architecture
-  description: "Analyze Unity Catalog architecture: metastore fundamentals, three-level namespace, governed object types, managed vs external design decisions, best practices, and privilege layering."
+  description: "Analyze Unity Catalog architecture: metastore fundamentals, three-level namespace, governed object types, and managed and external tables."
   ms.date: 09/24/2025
   author: theresa-i
   ms.author: theresai

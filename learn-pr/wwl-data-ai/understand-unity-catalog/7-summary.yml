@@ -3,12 +3,11 @@ uid: learn.wwl.understand-unity-catalog.summary
 title: Summary
 metadata:
   title: Summary
-  description: "Summary of Unity Catalog governance in Azure Databricks"
+  description: "Summary of Unity Catalog in Azure Databricks"
   ms.date: 10/13/2025
   author: theresa-i
   ms.author: theresai
-  ms.topic: module-summary-unit
-  ms.service: azure-databricks
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]

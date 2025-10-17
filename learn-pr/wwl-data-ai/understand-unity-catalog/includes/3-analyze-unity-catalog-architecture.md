@@ -1,4 +1,4 @@
-A helpful way to think about Unity Catalog's architecture is like an address system. To reliably locate something, you use country, state, city, and street. Unity Catalog applies a similar idea with a **three-level namespace** that tells you exactly where a data object lives and how it's governed: `catalog.schema.object`
+A helpful way to think about Unity Catalog's architecture is like an address system. To reliably locate something, you use country/region, state, city, and street. Unity Catalog applies a similar idea with a **three-level namespace** that tells you exactly where a data object lives and how it's governed: `catalog.schema.object`
 
 Above this structure sits the **metastore**, which isn't part of the namespace itself but defines the **Azure regional governance boundary** that contains it.
 

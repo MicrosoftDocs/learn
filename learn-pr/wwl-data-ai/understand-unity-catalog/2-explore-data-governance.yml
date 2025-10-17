@@ -7,7 +7,6 @@ metadata:
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
-  ms.service: azure-databricks
 title: Explore data governance using Unity Catalog
 durationInMinutes: 4
 content: |
