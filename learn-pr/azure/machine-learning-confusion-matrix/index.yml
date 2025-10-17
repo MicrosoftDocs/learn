@@ -21,6 +21,7 @@ abstract: |
   - Mitigate performance issues from data imbalances.
 prerequisites: Basic familiarity with classification models
 iconUrl: /training/achievements/machine-learning/machine-learning-confusion-matrix.svg
+hidden: true
 levels: 
 - beginner
 roles: 
@@ -43,4 +44,4 @@ units:
 - learn.machinelearning.evaluate-real-world-models.summary
 badge: 
   uid: learn.machinelearning.evaluate-real-world-models.badge #add the uid for your achievement badge.
-
+
