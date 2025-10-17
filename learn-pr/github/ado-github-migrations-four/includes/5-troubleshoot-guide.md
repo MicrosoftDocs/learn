@@ -59,7 +59,7 @@ curl -u :$ADO_PAT "https://dev.azure.com/$ADO_ORG/_apis/projects?api-version=6.0
 
 ### Mannequin resolution
 
-** Symptoms**
+**Symptoms**
 
 - PRs/commits attributed to "Mannequin"
 
