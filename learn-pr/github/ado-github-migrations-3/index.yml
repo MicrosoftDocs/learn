@@ -3,7 +3,7 @@ uid: learn.github.azure-devops-to-github-enterprise-migrations-part-iii-migratio
 title: Azure Devops to GitHub Enterprise Migrations Part III - Migration Testing and Production Migration
 metadata:
   title: Azure Devops to GitHub Enterprise Migrations Part III - Migration Testing and Production Migration
-  description: Learn how to complete the final stages of your Azure DevOps to GitHub Enterprise migration. This module guides you through validating your migration plan with real repositories and executing a smooth production migration while maintaining data integrity, stakeholder communication, and business continuity.
+  description: Learn how to complete the final stages of your Azure DevOps to GitHub Enterprise migration. This module helps you test your migration plan with real repositories and carry out a smooth production migration while keeping your data, communication, and business running safely.
   author: camihmerhar
   ms.author: camhernandez
   ms.date: 10/17/2025
@@ -12,13 +12,13 @@ metadata:
   ms.topic: module
 summary: In this module, you move from testing to production migration, validating identity mappings, workflows, and integrations before going live. You also explore practical runbooks and best practices that minimize risk and ensure a confident, successful transition to GitHub Enterprise.
 abstract: |
-  By the end of this module, you are able to:
+  By the end of this module, you're able to:
   - Design a representative testing strategy (small, medium, large repos) and define clear pass/fail criteria.
   - Execute test migrations with ADO2GH and validate results across data, identity, governance, and integrations.
   - Prepare for go-live with a rigorous pre-migration checklist, freeze plan, and stakeholder communication cadence.
   - Select and justify a production migration order (low-risk first, high-value first, size-based, or team-based).
   - Run batch migrations at scale, monitor progress in real time, and apply baseline governance post-create.
-  - Perform post-migration validation and guide teams through UAT, cutover, and early stabilization.
+  - Perform post-migration validation and guide teams through User Acceptance Testing (UAT), cutover, and early stabilization.
   - Recognize when and how to roll back, and how to communicate issues transparently and confidently.
 prerequisites: |
   Before starting, ensure you have:
