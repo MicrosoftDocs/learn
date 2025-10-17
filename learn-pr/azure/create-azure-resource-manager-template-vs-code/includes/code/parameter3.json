@@ -30,7 +30,7 @@
   "resources": [
     {
       "type": "Microsoft.Storage/storageAccounts",
-      "apiVersion": "2023-05-01",
+      "apiVersion": "2025-01-01",
       "name": "[parameters('storageName')]",
       "tags": {
         "displayName": "[parameters('storageName')]"
