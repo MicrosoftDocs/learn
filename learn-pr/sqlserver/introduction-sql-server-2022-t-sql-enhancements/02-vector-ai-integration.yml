@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-sql-server-2022-t-sql-enhancements.vector-ai-integration
-title: AI and Vector Integration
+title: AI and vector integration
 metadata:
-  title: AI and Vector Integration
+  title: AI and vector integration
   description: "Explore AI and vector features for embeddings, search, and external model integration."
   ms.date: 10/14/2025
   author: MScalopez
