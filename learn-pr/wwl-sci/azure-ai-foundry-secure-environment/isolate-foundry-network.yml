@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.azure-ai-foundry-harden-environment.isolate-foundry-network
+uid: learn.wwl.azure-ai-foundry-secure-environment.isolate-foundry-network
 title: Isolate networks with managed virtual network and Private Link
 metadata:
   title: Isolate networks with managed virtual network and Private Link

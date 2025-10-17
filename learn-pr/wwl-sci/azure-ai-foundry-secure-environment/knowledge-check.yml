@@ -1,0 +1,93 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-ai-foundry-secure-environment.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check."
+  ms.date: 10/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A cloud security engineer needs to control who can create or modify Azure AI Foundry workspaces. Which configuration establishes these permissions?"
+    choices:
+    - content: "Microsoft Entra ID role-based access control (RBAC)"
+      isCorrect: true
+      explanation: "Correct: Microsoft Entra ID RBAC defines Azure resource-level permissions, including who can create, configure, or delete Foundry workspaces."
+    - content: "Project-level roles in the Foundry portal"
+      isCorrect: false
+      explanation: "Incorrect: Project roles define in-portal access for collaboration but don't control workspace creation or management."
+    - content: "Azure Policy initiatives"
+      isCorrect: false
+      explanation: "Incorrect: Azure Policy enforces configuration standards but doesn't assign permissions."
+    - content: "Private Link connections"
+      isCorrect: false
+      explanation: "Incorrect: Private Link restricts network access paths, not resource management permissions."
+
+  - content: "An engineer wants developers to deploy models in a Foundry project but prevent them from modifying resource settings or access assignments. Which role assignment meets this requirement?"
+    choices:
+    - content: "Contributor"
+      isCorrect: true
+      explanation: "Correct: Contributors can deploy and manage models without changing access or role assignments."
+    - content: "Owner"
+      isCorrect: false
+      explanation: "Incorrect: The Owner role grants full control, including management of access permissions."
+    - content: "Key Vault Administrator"
+      isCorrect: false
+      explanation: "Incorrect: That role applies to Key Vault resources, not Foundry project access."
+    - content: "Reader"
+      isCorrect: false
+      explanation: "Incorrect: Readers have view-only permissions and can't deploy or modify resources."
+
+  - content: "To prevent credentials from being stored in code or configuration files, what should the engineering team implement?"
+    choices:
+    - content: "Private Link connections only"
+      isCorrect: false
+      explanation: "Incorrect: Private Link secures network paths but doesn't handle secret storage."
+    - content: "User-assigned access keys in storage accounts"
+      isCorrect: false
+      explanation: "Incorrect: Manually assigned access keys can be exposed and are difficult to manage securely."
+    - content: "Custom environment variables in project settings"
+      isCorrect: false
+      explanation: "Incorrect: Environment variables can expose credentials if not protected by Key Vault."
+    - content: "Azure Key Vault with managed identities"
+      isCorrect: true
+      explanation: "Correct: Key Vault stores secrets securely, and managed identities allow Foundry workloads to retrieve them without embedding credentials."
+
+  - content: "The team wants all traffic between Foundry and connected Azure services to stay on the private Azure backbone. Which approach achieves this?"
+    choices:
+    - content: "Service endpoints with firewall rules"
+      isCorrect: false
+      explanation: "Incorrect: Service endpoints might still route traffic through public IP space."
+    - content: "Managed virtual networks with Private Link"
+      isCorrect: true
+      explanation: "Correct: Managed virtual networks define who can access the service, and Private Link keeps communication private within Azure's backbone."
+    - content: "Network Security Groups (NSGs) only"
+      isCorrect: false
+      explanation: "Incorrect: NSGs control inbound and outbound rules but don't provide private connectivity."
+    - content: "ExpressRoute without private endpoints"
+      isCorrect: false
+      explanation: "Incorrect: ExpressRoute provides connectivity but doesn't isolate Foundry traffic without Private Link."
+
+  - content: "After configuration is complete, the team needs visibility into access events and configuration changes across Foundry and connected resources. What should they enable?"
+    choices:
+    - content: "Microsoft Sentinel analytic rules"
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Sentinel analyzes log data, but logs must first be collected through diagnostic settings."
+    - content: "Diagnostic logging"
+      isCorrect: true
+      explanation: "Correct: Diagnostic logging records management actions, access events, and service health data for auditing and investigation."
+    - content: "Defender for Cloud AI workloads plan"
+      isCorrect: false
+      explanation: "Incorrect: Defender for Cloud surfaces recommendations but doesn't log detailed operational events."
+    - content: "Azure Policy compliance reports"
+      isCorrect: false
+      explanation: "Incorrect: Policy compliance reports show configuration status, not event activity."
