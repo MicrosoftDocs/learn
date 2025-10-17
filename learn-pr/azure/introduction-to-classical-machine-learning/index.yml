@@ -23,6 +23,7 @@ abstract: |
   - Experiment with learning rates, and see how they can affect training.
 prerequisites: A basic familiarity with inputs, outputs, and models
 iconUrl: /training/achievements/machine-learning/introduction-to-classical-machine-learning.svg
+hidden: true
 levels: 
 - beginner
 roles: 
@@ -46,4 +47,4 @@ units:
 - learn.machinelearning.introduction-to-classical-machine-learning.summary
 badge: 
   uid: learn.machinelearning.introduction-to-classical-machine-learning.badge #add the uid for your achievement badge.
-
+
