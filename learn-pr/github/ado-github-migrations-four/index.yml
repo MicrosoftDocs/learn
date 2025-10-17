@@ -28,8 +28,8 @@ prerequisites: |
   - **IdP**: SAML/SCIM admin if EMU or group sync changes are needed  
 
   **Tokens and Tools**
-  - **GitHub PAT** with `repo`, `admin:repo_hook`, `read:org` (and `admin:org` if required), `workflow` (for Actions)  
-  - **ADO PAT** with “All organizations” scope and relevant permissions for Boards, Pipelines, Code, and Work items  
+  - **GitHub PAT** with `repo`, `admin:repo_hook`, `read:org` (and `admin:org` if necessary), `workflow` (for Actions)  
+  - **ADO PAT** with "All organizations" scope and relevant permissions for Boards, Pipelines, Code, and Work items  
   - **GitHub CLI (gh)** with ADO2GH extension installed  
 
   **Migration State**
