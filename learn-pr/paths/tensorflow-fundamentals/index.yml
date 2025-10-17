@@ -18,6 +18,7 @@ prerequisites: |
   - Basic knowledge about how to use Jupyter Notebooks
   - Basic understanding of machine learning
 iconUrl: /training/achievements/tensor-intro-trophy.svg
+hidden: true
 levels:
 - beginner
 - intermediate

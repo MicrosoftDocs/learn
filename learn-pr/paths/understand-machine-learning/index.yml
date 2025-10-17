@@ -28,6 +28,7 @@ summary: |
 
 prerequisites: None
 iconUrl: /training/achievements/machine-learning/machine-learning-essentials.svg
+hidden: true
 levels:
 - beginner
 roles:
