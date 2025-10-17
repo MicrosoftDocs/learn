@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.simplify-complex-conditionals-github-copilot-agent.examine-techniques-simplify-complex-conditionals
+title: Examine the techniques used to simplify complex conditionals
+metadata:
+  title: Examine the Techniques used to Simplify Complex Conditionals
+  description: "Examine the techniques used to simplify complex conditionals."
+  ms.date: 10/16/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-examine-techniques-simplify-complex-conditionals.md)]
