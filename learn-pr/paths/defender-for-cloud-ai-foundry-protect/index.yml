@@ -41,5 +41,6 @@ modules:
 - learn.wwl.defender-for-cloud-ai-understand-protections
 - learn.wwl.defender-for-cloud-ai-protect-workloads
 - learn.wwl.azure-ai-foundry-configure-manage-guardrails
+- learn.wwl.defender-for-cloud-ai-understand-protections
 trophy:
   uid: learn.wwl.defender-for-cloud-ai-foundry-protect.trophy
