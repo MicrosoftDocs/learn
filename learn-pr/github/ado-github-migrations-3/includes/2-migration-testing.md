@@ -108,13 +108,13 @@ gh pr create --title "Test PR" --body "Testing workflow"
 
 Approach:
 
-- Invite a small pilot team to validate daily workflows for 24–48 hours
-- Collect feedback on developer ergonomics (PRs, reviews, required checks)
-- Confirm integration behaviors in real usage
-- Record gaps and remediation steps; adjust production plan (Phase 5)
+1. Invite a small pilot team to validate daily workflows for 24–48 hours
+1. Collect feedback on developer ergonomics (PRs, reviews, required checks)
+1. Confirm integration behaviors in real usage
+1. Record gaps and remediation steps; adjust production plan (Phase 5)
 
 "Definition of Ready" for Phase 5:
 
-- Test objectives met or conscious exceptions documented with mitigation
-- Stakeholders agree on production order and freeze windows
-- Rollback plan rehearsed on a test repo
+1. Test objectives met or conscious exceptions documented with mitigation
+1. Stakeholders agree on production order and freeze windows
+1. Rollback plan rehearsed on a test repo
