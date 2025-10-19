@@ -2,6 +2,11 @@ You created virtual networks and ran virtual machines (VMs) within them. However
 
 To enable communication, you need to create peering connections for the virtual networks. To satisfy your company's requirements, you configure a hub and spoke topology and permit virtual network access when you create the peering connections.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+
 ## Create virtual network peering connections
 
 Follow these steps to create connections between the virtual networks and to configure the behavior of each connection.
@@ -12,7 +17,7 @@ Follow these steps to create connections between the virtual networks and to con
     az network vnet peering create \
         --name SalesVNet-To-MarketingVNet \
         --remote-vnet MarketingVNet \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name SalesVNet \
         --allow-vnet-access
     ```
@@ -23,7 +28,7 @@ Follow these steps to create connections between the virtual networks and to con
     az network vnet peering create \
         --name MarketingVNet-To-SalesVNet \
         --remote-vnet SalesVNet \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name MarketingVNet \
         --allow-vnet-access
     ```
@@ -36,7 +41,7 @@ Now that you have connections between Sales and Marketing, create connections be
     az network vnet peering create \
         --name MarketingVNet-To-ResearchVNet \
         --remote-vnet ResearchVNet \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name MarketingVNet \
         --allow-vnet-access
     ```
@@ -47,7 +52,7 @@ Now that you have connections between Sales and Marketing, create connections be
     az network vnet peering create \
         --name ResearchVNet-To-MarketingVNet \
         --remote-vnet MarketingVNet \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name ResearchVNet \
         --allow-vnet-access
     ```
@@ -60,7 +65,7 @@ Now that the peering connections between the virtual networks are created, make 
 
     ```azurecli
     az network vnet peering list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name SalesVNet \
         --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
         --output table
@@ -72,7 +77,7 @@ Now that the peering connections between the virtual networks are created, make 
 
     ```azurecli
     az network vnet peering list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name ResearchVNet \
         --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
         --output table
@@ -84,7 +89,7 @@ Now that the peering connections between the virtual networks are created, make 
 
     ```azurecli
     az network vnet peering list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --vnet-name MarketingVNet \
         --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
         --output table
@@ -104,7 +109,7 @@ You can further check the peering connection by looking at the routes that apply
 
     ```azurecli
     az network nic show-effective-route-table \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name SalesVMVMNic \
         --output table
     ```
@@ -126,7 +131,7 @@ You can further check the peering connection by looking at the routes that apply
 
     ```azurecli
     az network nic show-effective-route-table \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name MarketingVMVMNic \
         --output table
     ```
@@ -149,7 +154,7 @@ You can further check the peering connection by looking at the routes that apply
 
     ```azurecli
     az network nic show-effective-route-table \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name ResearchVMVMNic \
         --output table
     ```
