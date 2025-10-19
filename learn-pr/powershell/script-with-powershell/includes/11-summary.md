@@ -7,3 +7,5 @@ You then learned about flow control, and how you can use it to control how a scr
 Finally, you were introduced to error handling. You learned how to differentiate between non-terminating and terminating errors and how to manage both.
 
 You should now have a good understanding of how to write and run scripts. You should also be able to use various PowerShell constructs to improve a script's flexibility and robustness.
+
+[!INCLUDE [](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
