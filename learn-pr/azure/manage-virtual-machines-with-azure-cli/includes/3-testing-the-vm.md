@@ -9,6 +9,10 @@ When you create a virtual machine, it's assigned a public IP address that's reac
 }
 ```
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
+
 ## Connecting to the VM with SSH
 
 We can quickly test that the Linux VM is up and running by using the public IP address in the Secure Shell (`ssh`) tool. Remember that we set our admin name to `azureuser`, so we need specify that. Make sure to use the public IP address from *your* running instance.
