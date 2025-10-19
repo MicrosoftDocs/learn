@@ -4,32 +4,28 @@ In the original scenario, you must create virtual machines (VMs) to test your Cu
 
 Let's try the commands to create a VM.
 
-## Exercise - Create a Linux VM with Azure CLI
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
 
-Since you're using the Azure sandbox, you don't need to create a resource group. Instead, use the
-existing sandbox resource group **<rgn>[sandbox resource group name]</rgn>**. Be aware of the
-location restrictions.
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
+## Exercise - Create a Linux VM with Azure CLI
 
 Here's how to create a new Azure VM with Azure CLI:
 
+1. Open Azure Cloud Shell through the Azure portal or by using the **Open Cloud Shell** button located in the top right corner of many Azure CLI code blocks.
+
 1. Use the `az vm create` command to create the VM.
-   - Use the `az group list` command to get the name of the sandbox resource group.
+   - Specify the name of the your resource group. Replace **myResourceGroupName** in the following example with the name of an existing resource group, or the name of the resource group that you created for this exercise.
    - Assign a name to the VM following your organization's naming standards.
-   - Choose a location close to you from the list of available Azure sandbox locations:
-
-     [!include[](../../../includes/azure-sandbox-regions-note.md)]
-
+   - Choose a location close to you from the list of available Azure locations.
    - Use the Linux image: `Ubuntu2204`.
    - Assign an administrator username following your organization's naming standards.
 
    ```azurecli
    #!/bin/bash
 
-   # Get the single resource group name created by the sandbox.
-   rgName=$(az group list --query "[].{Name:name}" --output tsv)
-   echo $rgName
-
-   # Create additional variables with values of your choice.
+   # Create variables with values of your choice.
+   rgName="myResourceGroupName"
    vmName="msdocs-vm-01"
    vmLocation="westus"
    vmImage="Ubuntu2204"
@@ -51,7 +47,7 @@ Here's how to create a new Azure VM with Azure CLI:
    >
    > To paste in Azure Cloud Shell, right-click on a new line in the Cloud Shell terminal and select Paste, or use the Shift+Insert keyboard shortcut (⌘+V on macOS).
 
-   If your script didn't copy correctly and the sandbox terminal is waiting for addition input, use **CTRL + Z** to return to a prompt and try again.
+   If your script didn't copy correctly and the Cloud Shell terminal is waiting for addition input, use **CTRL + Z** to return to a prompt and try again.
 
 1. Wait for the Linux VM creation:
 
@@ -105,7 +101,7 @@ Here's how to create a new Azure VM with Azure CLI:
    echo $publicIP
    ```
 
-1. Connect to the VM.**
+1. Connect to the VM.
   
    ```azurecli
    #!/bin/bash
@@ -148,7 +144,7 @@ When working with Azure resources at the command-line, you aren't using the Azur
    az vm list-vm-resize-options --resource-group $rgName --name $vmName --output table
    ```
 
-1. Show details for all VMs in a resource group.**
+1. Show details for all VMs in a resource group.
 
    If you have chosen to work in your local environment and have multiple VMs in your subscription, query for VMs that meet a filter criteria.
 
