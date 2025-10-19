@@ -24,7 +24,7 @@ Each is evaluated using:
 Example:
 
 
-|  |Use case 1  |Use case 2  |Use case 3  |
+|Cost component  |Use case 1  |Use case 2  |Use case 3  |
 |---------|---------|---------|---------|
 |Cost to achieve     |$60,000         |$90,000         |$100,000         |
 |Cost to maintain (5 yrs)     |$45,000         |$60,000         |$50,000         |
