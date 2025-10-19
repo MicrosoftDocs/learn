@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.administer-unity-catalog-isolation-access
+metadata:
+  title: "Structure Unity Catalog for governance"
+  description: "Structure Unity Catalog deployments using isolation strategies, workspace organization, lineage visibility, and gradual migration from the Hive Metastore."
+  ms.date: 12/05/2024
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: module
+  ms.custom: wwl-data-ai
+title: "Structure Unity Catalog for governance"
+summary: "Structure Unity Catalog using isolation methods, workspace organization, lineage for impact analysis, and phased migration from legacy Hive Metastore tables."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Implement three Unity Catalog isolation methods (catalog, workspace binding, storage separation)
+  - Configure workspace access patterns and limit catalog visibility through binding
+  - Use automatic data lineage for impact analysis and safe change planning
+  - Transition from the Hive Metastore using a phased migration strategy
+  - Apply governance and organization best practices across multiple workspaces
+prerequisites: |
+  - Experience with Databricks workspace administration
+  - Understanding of Unity Catalog basic concepts and architecture
+  - Familiarity with organizational data governance requirements
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- administrator
+products:
+- azure-databricks
+subjects:
+- data-management
+units:
+- learn.wwl.administer-unity-catalog-isolation-access.introduction
+- learn.wwl.administer-unity-catalog-isolation-access.implement-isolation-methods
+- learn.wwl.administer-unity-catalog-isolation-access.explore-lineage
+- learn.wwl.administer-unity-catalog-isolation-access.transition-from-hive-metastore
+- learn.wwl.administer-unity-catalog-isolation-access.knowledge-check
+- learn.wwl.administer-unity-catalog-isolation-access.exercise
+- learn.wwl.administer-unity-catalog-isolation-access.summary
+badge:
+  uid: learn.wwl.administer-unity-catalog-isolation-access.badge

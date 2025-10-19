@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.administer-unity-catalog-isolation-access.explore-lineage
+metadata:
+  title: Explore lineage
+  description: "Learn to view and interpret Unity Catalog's automatic data lineage tracking for tables and dependencies."
+  ms.date: 12/05/2024
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+title: Explore lineage
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-explore-lineage.md)]

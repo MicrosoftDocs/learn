@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.administer-unity-catalog-isolation-access.exercise
+title: "Exercise - Configure isolation methods"
+metadata:
+  title: "Exercise - Configure isolation methods"
+  description: "Practice implementing Unity Catalog isolation methods through hands-on configuration tasks."
+  ms.date: 12/05/2024
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise.md)]

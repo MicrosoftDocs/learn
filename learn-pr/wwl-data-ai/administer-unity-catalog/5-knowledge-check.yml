@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.administer-unity-catalog-isolation-access.knowledge-check
+title: Module assessment
+metadata:
+  ai_generated_module_assessment: true
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 12/05/2024
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Unity Catalog isolation method provides the strongest separation for sensitive data requiring complete governance independence?"
+    choices:
+    - content: "Catalog-level isolation"
+      isCorrect: false
+      explanation: "Incorrect. Catalog-level isolation provides logical separation within a single metastore but shares the same governance hierarchy."
+    - content: "Storage-level isolation"
+      isCorrect: true
+      explanation: "Correct. Storage-level isolation using separate storage credentials and external locations provides the strongest data separation, ensuring different teams cannot access each other's underlying data files."
+    - content: "Workspace-level isolation with catalog binding"
+      isCorrect: false
+      explanation: "Incorrect. Workspace isolation controls which catalogs are visible but doesn't prevent access if a user has permissions through another workspace."
+    - content: "Schema-level isolation"
+      isCorrect: false
+      explanation: "Incorrect. Schema-level isolation is the weakest form of separation and doesn't provide complete governance independence."
+
+  - content: "You need to access a legacy Hive metastore table after enabling Unity Catalog. What is the correct SQL syntax?"
+    choices:
+    - content: "SELECT * FROM legacy.default.customer_data"
+      isCorrect: false
+      explanation: "Incorrect. The Hive metastore catalog is called 'hive_metastore', not 'legacy'."
+    - content: "SELECT * FROM hive_metastore.default.customer_data"
+      isCorrect: true
+      explanation: "Correct. After Unity Catalog is enabled, Hive metastore tables are accessed through the special 'hive_metastore' catalog using three-level namespace syntax."
+    - content: "SELECT * FROM default.customer_data"
+      isCorrect: false
+      explanation: "Incorrect. You must specify the hive_metastore catalog name unless you've explicitly set it as your default catalog."
+    - content: "SELECT * FROM customer_data"
+      isCorrect: false
+      explanation: "Incorrect. Unity Catalog requires at least two-level namespace (schema.table) and Hive tables require the hive_metastore catalog prefix."
+
+  - content: "Where do you view the lineage graph for a Unity Catalog table?"
+    choices:
+    - content: "In the SQL query history under the Performance tab"
+      isCorrect: false
+      explanation: "Incorrect. Query history shows execution details, not data lineage."
+    - content: "In Catalog Explorer by selecting the table and clicking the Lineage tab"
+      isCorrect: true
+      explanation: "Correct. You access lineage by navigating to the table in Catalog Explorer and selecting the Lineage tab to view upstream sources and downstream dependencies."
+    - content: "In the Databricks workspace settings under Data Governance"
+      isCorrect: false
+      explanation: "Incorrect. Workspace settings don't display table-level lineage graphs."
+    - content: "In the notebook execution results after running a query"
+      isCorrect: false
+      explanation: "Incorrect. Lineage is viewed in Catalog Explorer, not in notebook execution results."
