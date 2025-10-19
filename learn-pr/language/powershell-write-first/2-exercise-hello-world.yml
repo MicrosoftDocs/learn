@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom:
 durationInMinutes: 5
-azureSandbox: true
-interactive: powershell
+#azureSandbox: true
+#interactive: powershell
 content: |
   [!include[](includes/2-exercise-hello-world.md)]
