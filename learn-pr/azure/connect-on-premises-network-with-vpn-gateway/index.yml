@@ -18,6 +18,9 @@ abstract: |
   - Provision site-to-site VPN gateways.
 prerequisites: | 
   - Familiarity with Azure virtual networking
+
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 iconUrl: /training/achievements/connect-on-premises-network-with-vpn-gateway.svg
 levels:
 - beginner
