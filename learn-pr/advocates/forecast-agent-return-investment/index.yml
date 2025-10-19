@@ -6,10 +6,10 @@ metadata:
   ms.date: 10/1/2025
   author: Orin-Thomas
   ms.author: orthomas
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.topic: module-standard-task-based 
   ms.service: artificial-intelligence
 title: Calculate and communicate the return on investment (ROI) of AI agents
-summary: "This module introduces you to practical frameworks for quantifying and communicating the ROI of AI agents, even if you don’t have a background in finance. Business leaders learn how to evaluate both quantified financial impact and strategic/intangible value, and how to apply these insights to prioritize use cases, build compelling business cases, and guide investment decisions."
+summary: "This module introduces you to practical frameworks for quantifying and communicating the ROI of AI agents, even if you don't have a background in finance. Business leaders learn how to evaluate both quantified financial impact and strategic/intangible value, and how to apply these insights to prioritize use cases, build compelling business cases, and guide investment decisions."
 abstract: |
   AI agents are rapidly transforming how organizations operate, automating tasks, enhancing decision-making, and improving customer experiences. But to scale adoption and secure stakeholder buy-in, it's not enough to showcase innovation; leaders must clearly demonstrate the business value these agents deliver.
   
@@ -38,8 +38,8 @@ subjects:
   - artificial-intelligence
 units:
 - learn.forcast-agent-return-investment.convert-agents-business-impact
-- learn.forcast-agent-return-investment.forecasting-return-investment
-- learn.forcast-agent-return-investment.applying-return-investment-analysis
+- learn.forcast-agent-return-investment.forecast-return-investment
+- learn.forcast-agent-return-investment.apply-return-investment-analysis
 - learn.forcast-agent-return-investment.knowledge-check
 - learn.forcast-agent-return-investment.summary
 badge:

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.forcast-agent-return-investmen.forecasting-return-investment
+uid: learn.forcast-agent-return-investment.forecast-return-investment
 title: Essentials for forecasting return on investment for AI agents
 metadata:
   title: Essentials for Forecasting Return on Investment for AI agents
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-forecasting-return-investment.md)]
+  [!include[](includes/2-forecast-return-investment.md)]
