@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.forcast-agent-return-investmen.applying-return-investment-analysis
+title: Applying return on investment (ROI) analysis to real AI use cases
+metadata:
+  title: Applying Return on Investment (ROI) Analysis to Real AI Use Cases
+  description: Understand how to apply return on investment concepts to AI use cases.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-applying-return-investment-analysis.md)]
