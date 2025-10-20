@@ -15,7 +15,7 @@ Upgrading from older devices gives you a boost in speed and responsiveness that 
 ### 🚀 Quick to deploy, easy to integrate  
 Windows 11 Pro is designed to work with the tech you already use, making it easier to upgrade without disrupting your workflow.
 
-With end of support around the corner, quicker deployment means less downtime—and a smoother move to a modern, secure environment.
+With end of support behind us, quicker deployment means less downtime—and a smoother move to a modern, secure environment.
 
 ### ⚙️ Performance that powers what’s next  
 Get the speed and flexibility you need with modern Windows 11 Pro devices, especially Copilot+ PCs powered by Neural Processing Units (NPUs) for fast, on-device AI experiences.
@@ -24,9 +24,10 @@ Copilot+ PCs are up to 5x faster than 5-year-old Windows PCs\*. If you're ready 
 
 ---
 Upgrading isn’t just about avoiding risk—it’s about unlocking what’s next. Windows 11 Pro sets the foundation for secure, AI-powered work today.
+
 And with Copilot+ PCs, you can go even further—transforming how work gets done through next-gen performance and built-in AI acceleration.
 
-#### Disclaimers 
+#### Disclaimers
 
 1. *Performance claims are based on benchmarks comparing Copilot+ PCs to older Windows devices. For more details, visit https://www.microsoft.com/windows/copilot-plus-pcs?r=1#faq1.*
 
