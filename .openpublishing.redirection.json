@@ -59433,6 +59433,11 @@
       "source_path": "learn-pr/azure/tour-azure-portal/index.md",
       "redirect_url": "/azure/azure-portal/azure-portal-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/1-introduction.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
     }
   ]
 }
