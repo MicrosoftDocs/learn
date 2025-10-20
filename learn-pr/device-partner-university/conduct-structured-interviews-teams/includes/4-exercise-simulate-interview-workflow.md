@@ -16,11 +16,11 @@ You're preparing to interview a candidate for a marketing analyst role. You use 
 > These directions were written for the **new Calendar view** in Microsoft Teams.  
 > Experience may differ if you're using the **classic Calendar view**.  
 > To switch views, toggle **“New Calendar”** in the Teams Calendar interface.
->    :::image type="content" border="true" source="../media/new-calendar-option.png" alt-text="Screenshot showing the location of the Calendar app in Microsoft Teams" lightbox="../media/new-calendar-option-expanded.png":::
+>    :::image type="content" border="true" source="../media/new-calendar-option.png" alt-text="Screenshot showing the location of the Calendar view in Microsoft Teams" lightbox="../media/new-calendar-option-expanded.png":::
 
 1. Open **Microsoft Teams** and go to the **Calendar** tab.
 
-   :::image type="content" border="true" source="../media/view-calendar-tab.png" alt-text="Screenshot showing the location of the Calendar app in Microsoft Teams" lightbox="../media/view-calendar-tab-expanded.png":::
+   :::image type="content" border="true" source="../media/view-calendar-tab.png" alt-text="Screenshot showing the location of the Calendar tab in Microsoft Teams" lightbox="../media/view-calendar-tab-expanded.png":::
 
 1. Select **New Event** in the upper right corner to open the meeting creation window.
 
@@ -63,7 +63,7 @@ You're preparing to interview a candidate for a marketing analyst role. You use 
    - “Highlight strengths and areas for improvement.”  
    - “List next steps discussed by the panel.”
 
-   :::image type="content" border="true" source="../media/meeting-copilot.png" alt-text="Screenshots showing meeting options durning a live Teams meeting":::
+   :::image type="content" border="true" source="../media/meeting-copilot.png" alt-text="Screenshots showing the copilot options durning a live Teams meeting":::
  
 1. Keep the conversation natural—Copilot captures themes and action items automatically.  
 1. If someone joins late, use **Copilot Catch-up** to review what’s already been discussed.
