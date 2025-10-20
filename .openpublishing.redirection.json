@@ -59428,6 +59428,56 @@
       "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/10-summary.yml",
       "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/index.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/1-introduction.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/2-azure-management.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/3-navigate-the-portal.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/4-exercise-work-with-blades.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/5-exercise-navigate-the-portal.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/6-customize-the-dashboard.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/7-exercise-customize-the-dashboard.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/8-preview-features.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/9-summary.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
     }
   ]
 }
