@@ -1,40 +1,61 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-monitor-status-dashboards
 metadata:
-  title: Develop monitor and status dashboards
-  description: "Develop monitor and status dashboards"
-  ms.date: 05/08/2024
-  author: wwlpublish
+  title: Develop Monitor and Status Dashboards
+  description: "Learn to create comprehensive monitoring dashboards using Azure Dashboards, Azure Monitor Workbooks, Power BI, and GitHub monitoring tools. Track pipeline health metrics including failure rates, duration, and flaky tests. Optimize pipeline performance for cost and reliability. Explore visualization strategies and custom application development for DevOps monitoring at scale."
+  ms.date: 10/20/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module
   ms.custom:
     - N/A
   ms.service: azure
   ai-usage: ai-assisted
-title: Develop monitor and status dashboards
-summary: This module explains steps to develop monitoring with Azure Dashboards, work with View Designer and Azure Monitor, and create Azure Monitor Workbooks. Also, explore tools to supports monitoring with Power BI.
+title: Develop Monitor and Status Dashboards
+summary: This comprehensive module teaches you to develop effective monitoring and status dashboards for modern DevOps environments. You'll learn to use Azure Dashboards for integrated visualizations, Azure Monitor Workbooks for interactive reporting, and Power BI for advanced analytics. Learn to configure GitHub monitoring, track critical pipeline health metrics (failure rates, duration, flaky tests), and optimize pipeline performance for cost, time, and reliability. Discover strategies for building custom monitoring applications and implementing concurrency optimization to maximize throughput while controlling costs.
 abstract: |
   By the end of this module, you'll be able to:
 
-  -   Configure Azure Dashboards
+  -   Configure comprehensive monitoring in GitHub with status badges, insights, and Actions analytics
 
-  -   Work with View Designer in Azure Monitor
+  -   Create and customize Azure Dashboards with pinned visualizations from multiple Azure services
 
-  -   Create Azure Monitor Workbooks
+  -   Develop interactive Azure Monitor Workbooks with parameters, queries, and custom visualizations
 
-  -   Monitor with Power BI
-prerequisites: None
+  -   Implement Power BI dashboards for advanced DevOps analytics and business intelligence
+
+  -   Build custom monitoring applications using Azure DevOps REST APIs and Application Insights SDKs
+
+  -   Monitor pipeline health metrics including failure rates, execution duration, and flaky test detection
+
+  -   Optimize pipelines for cost, time, performance, and reliability using data-driven strategies
+
+  -   Implement pipeline concurrency optimization to balance throughput performance with infrastructure costs
+
+  -   Design effective visualization strategies that communicate system health to diverse stakeholders
+
+  -   Establish alerting and notification systems based on dashboard metrics and threshold violations
+prerequisites: |
+  - Fundamental understanding of Azure DevOps or GitHub workflows and CI/CD concepts
+  - Basic familiarity with Azure portal navigation and Azure Monitor fundamentals
+  - Experience with build and release pipelines in either Azure Pipelines or GitHub Actions
+  - Understanding of common DevOps metrics (build success rate, deployment frequency, lead time)
+  - Recommended: Completion of "Implement tools to track usage and flow" module for monitoring foundation
 iconUrl: /training/achievements/3-develop-monitoring-and-status-dashboards.svg
 levels:
   - advanced
 roles:
   - administrator
+  - ai-engineer
+  - data-engineer
   - developer
   - devops-engineer
+  - platform-engineer
   - security-engineer
   - security-operations-analyst
   - service-adoption-specialist
   - solution-architect
+  - startup-founder
   - technology-manager
 products:
   - azure
@@ -47,6 +68,7 @@ products:
   - azure-test-plans
   - github
 subjects:
+  - devops
   - it-management-monitoring
 units:
   - learn.wwl.develop-monitor-status-dashboards.introduction
@@ -61,4 +83,4 @@ units:
   - learn.wwl.develop-monitor-status-dashboards.knowledge-check
   - learn.wwl.develop-monitor-status-dashboards.summary
 badge:
-  uid: learn.wwl.develop-monitor-status-dashboards.badge
+  uid: learn.wwl.develop-monitor-status-dashboards.badge
