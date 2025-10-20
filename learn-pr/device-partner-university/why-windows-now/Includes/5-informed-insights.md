@@ -2,9 +2,9 @@
 
 Windows 11 Pro PCs empower commercial users to achieve their goals at any stage of their technology journey. Let’s explore the benefits they offer in each of these key scenarios.
 
-- _Windows 10 EOS_: Users with many outdated Windows 10 devices should consider upgrading to Windows 11 for several key reasons.
+- _Post-Windows 10 EOS_: Users with many outdated Windows 10 devices should consider upgrading to Windows 11 for several key reasons.
 
-  - **Security**: Ensure up-to-date protection before Windows 10 reaches its end of support.
+  - **Security**: Protect devices and data now that Windows 10 no longer receives updates.
 
   - **Efficiency**: Boost productivity by replacing outdated devices that might limit business growth.
 
@@ -22,7 +22,7 @@ Windows 11 Pro PCs empower commercial users to achieve their goals at any stage 
 
   - **Competitive edge**: New devices, including Copilot+ PCs, ensure that organizations stay ahead by meeting the diverse needs of their employees.
 
-- _Copilot+ PC_: For users who are adopting Windows 11 at a high rate and are eager to apply AI, new devices provide: 
+- _Copilot+ PC_: For users who are adopting Windows 11 at a high rate and are eager to apply AI, new devices provide:
 
   - **Superior performance**: More NPU (Neural Processing Unit) power than alternative options, along with long battery life for fewer interruptions.
 
