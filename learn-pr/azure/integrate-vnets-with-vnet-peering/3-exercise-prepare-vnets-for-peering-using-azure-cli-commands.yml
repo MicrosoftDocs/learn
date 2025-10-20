@@ -11,8 +11,8 @@ metadata:
   ms.custom:
     - devx-track-azurecli
 durationInMinutes: 10
-azureSandbox: true
-interactive: bash
+#azureSandbox: true
+#interactive: bash
 content: |
   [!include[](includes/3-exercise-prepare-vnets-for-peering-using-azure-cli-commands.md)]
 
