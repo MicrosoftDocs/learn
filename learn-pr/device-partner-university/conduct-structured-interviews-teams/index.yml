@@ -12,8 +12,12 @@ metadata:
   ms.custom: CW062025-3
 summary: >
   Learn how to schedule and run a candidate interview using Microsoft Teams and Copilot to capture insights and streamline feedback.
-abstract: |2+
+abstract: |
+ By the end of this module, you're able to:
 
+ - Explain how Microsoft Teams supports professional and structured interview experiences.  
+ - Describe how Copilot assists with note-taking, summarization, and post-interview feedback.  
+ - Apply these tools together to plan and document interviews in a streamlined workflow.
 prerequisites: |
   - None
 iconUrl: /training/achievements/generic-badge.svg

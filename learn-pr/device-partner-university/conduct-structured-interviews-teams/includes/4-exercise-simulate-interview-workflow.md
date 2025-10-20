@@ -1,4 +1,4 @@
-Now that you understand how Teams and Copilot work together during the interview process, it’s time to apply what you’ve learned. In this hands-on exercise, you’ll simulate a full interview experience—from setup to summary—using Microsoft Teams and Microsoft 365 Copilot.
+Now that you understand how Teams and Copilot work together during the interview process, it’s time to apply what you’ve learned. In this hands-on exercise, you simulate a full interview experience—from setup to summary—using Microsoft Teams and Microsoft 365 Copilot.
 
 > [!IMPORTANT]  
 > To use Copilot in Teams, you need:  
@@ -8,7 +8,7 @@ Now that you understand how Teams and Copilot work together during the interview
 
 ## Interviewing a candidate with Microsoft Teams
 
-You're preparing to interview a candidate for a marketing analyst role. You'll use **Microsoft Teams** to host the meeting and **Copilot** to help capture notes, summarize responses, and generate feedback.
+You're preparing to interview a candidate for a marketing analyst role. You use **Microsoft Teams** to host the meeting and **Copilot** to help capture notes, summarize responses, and generate feedback.
 
 ## Schedule the interview in Teams
 
@@ -16,7 +16,7 @@ You're preparing to interview a candidate for a marketing analyst role. You'll u
 > These directions were written for the **new Calendar view** in Microsoft Teams.  
 > Experience may differ if you're using the **classic Calendar view**.  
 > To switch views, toggle **“New Calendar”** in the Teams Calendar interface.
->    :::image type="content" border="true" source="../media/new-calendar-option.png" alt-text="Screenshot showing the location of the Calendar app in Microsoft Teams" lightbox="../media/  new-calendar-option-expanded.png":::
+>    :::image type="content" border="true" source="../media/new-calendar-option.png" alt-text="Screenshot showing the location of the Calendar app in Microsoft Teams" lightbox="../media/new-calendar-option-expanded.png":::
 
 1. Open **Microsoft Teams** and go to the **Calendar** tab.
 
@@ -33,15 +33,15 @@ You're preparing to interview a candidate for a marketing analyst role. You'll u
  
    :::image type="content" border="true" source="../media/meeting-details.png" alt-text="Screenshot of a New event window in Microsoft Teams, with recurrence, attendees, date, time, and description filled options." lightbox="../media/meeting-details-expanded.png":::
 
-1. Before sending, select **Meeting options** and confirm the follow settings are enabled. 
+1. Before sending, select **Meeting options** and confirm the followed settings are enabled. 
  
-   :::image type="content" border="true" source="../media/meeting-details.png" alt-text="Screenshots showing the same meeting options icon in Microsoft Teams event window." lightbox="../media/meeting-details-expanded.png":::
+   :::image type="content" border="true" source="../media/meeting-window-options.png" alt-text="Screenshots showing the same meeting options icon in Microsoft Teams event window." lightbox="../media/meeting-window-options-expanded.png":::
 
-   1. On the left side of the Meeting options menu go to the **Recording & transcription** tab and toggola on record and transcribe automaticly.
+   1. On the left side of the Meeting options menu go to the **Recording & transcription** tab and toggle on record and transcribe automatically.
    
       :::image type="content" border="true" source="../media/meeting-options-1.png" alt-text="Screenshots showing meeting options Recording & transcription in Microsoft Teams event window":::
    
-   1. Next on the Meeting options menu select the **Copilot and other AI** tab and ensure its set to *During and after the meeting* (requires transcription)
+   1. Next on the Meeting options menus click the **Copilot and other AI** tab and ensure it's set to *During and after the meeting* (requires transcription)
 
       :::image type="content" border="true" source="../media/meeting-options-2.png" alt-text="Screenshots showing meeting options Copilot and other AI in Microsoft Teams event window":::
 
@@ -50,7 +50,7 @@ You're preparing to interview a candidate for a marketing analyst role. You'll u
 
 ## Conduct the interview using Copilot
 
-1.  Start the meeting — **transcription will begin automatically** if it was enabled when the meeting was scheduled.
+1.  Start the meeting—transcription begins automatically** if it was enabled when the meeting was scheduled.
  
 > [!NOTE]
 > Transcription will **not** start automatically unless it was turned on in the meeting options when the event was scheduled.  

@@ -2,7 +2,7 @@ Copilot in Teams is an AI-powered meeting assistant designed to help you focus o
 During a Teams meeting, Copilot uses the meeting transcript, chat, and contextual signals to identify key themes, decisions, and action items—then summarizes them in clear, natural language.  
 
 For HR professionals, this means less manual typing and more meaningful engagement with candidates.  
-Instead of scrambling to capture every response, you can concentrate on evaluating soft skills, tone, and culture fit while Copilot tracks what’s said and who said it.
+Instead of scrambling to capture every response, you can concentrate on evaluating soft skills, tone, and culture fit while Copilot tracks what’s is being said and who said it.
 
 Copilot integrates directly into the Teams meeting window. Once transcription is enabled, you can open Copilot through the **meeting toolbar** to start asking real-time questions such as:
 
@@ -22,12 +22,12 @@ To use Copilot in Microsoft Teams meetings, you need:
 
 ## How Copilot works behind the scenes  
 
-Copilot in Teams uses large language models to analyze meeting data securely within your organization’s Microsoft 365 tenant.  
-It doesn’t share content externally or store it outside of your organization’s compliance boundaries.  
+Copilot in Teams uses large language models to analyze meeting data securely within your organization’s Microsoft 365 tenant. It doesn’t share content externally or stores it outside of your organization’s compliance boundaries.  
 
 When you enable transcription, Copilot can interpret context such as who’s speaking, which topics are discussed, and how ideas relate to your organization’s documents—like a candidate résumé stored in OneDrive or questions shared in Outlook.  
 
-After the meeting, Copilot organizes this data into structured summaries accessible through the meeting chat or the **Recap** tab.  
+After the meeting, Copilot organizes this data into structured summaries accessible through the meeting chat or the **Recap** tab. 
+ 
 You can continue interacting with Copilot afterward by prompting it with questions or requests like:
 
 - “Summarize key takeaways from this interview.”  

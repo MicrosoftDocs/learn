@@ -34,7 +34,7 @@ While every interview may differ slightly, most Teams-based sessions share the s
 | Component | Purpose | Example |
 |:---|:---|:---|
 | Meeting or webinar type | Defines how participants interact (interactive vs. structured). | A one-on-one meeting for a technical screen vs. a webinar for a panel presentation. |
-| Organizer and presenters | Control meeting options and manage the flow. | Recruiter as organizer; hiring manager as co-presenter. |
+| Organizer and presenters | Control meeting options and manage the flow. | Recruiter as organizer; hiring manager as copresenter. |
 | Participants | Attendees such as the candidate or HR observers. | Candidate plus panel members. |
 | Agenda and materials | Provide structure and reference documents. | Résumé, job description, interview questions. |
 | Permissions and privacy | Ensure only authorized users can join or access files. | Lobby enabled; recording restricted to organizer. |
