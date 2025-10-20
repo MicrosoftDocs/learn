@@ -3,7 +3,7 @@ uid: learn.wwl.administer-unity-catalog-isolation-access.transition-from-hive-me
 metadata:
   title: Transition from the Hive Metastore
   description: "Learn to work with legacy Hive metastore tables during Unity Catalog adoption and plan gradual migration strategies."
-  ms.date: 12/05/2024
+  ms.date: 10/19/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: unit

@@ -3,7 +3,7 @@ uid: learn.wwl.administer-unity-catalog-isolation-access.explore-lineage
 metadata:
   title: Explore lineage
   description: "Learn to view and interpret Unity Catalog's automatic data lineage tracking for tables and dependencies."
-  ms.date: 12/05/2024
+  ms.date: 10/19/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
