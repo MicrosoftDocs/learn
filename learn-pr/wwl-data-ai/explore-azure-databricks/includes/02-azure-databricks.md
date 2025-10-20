@@ -10,7 +10,7 @@ You can create an Azure Databricks workspace by:
 When you create a workspace, you must specify:
 
 - A **workspace name**.
-- Select an available **region**. For available regions, see [Azure services available by region](/explore/global-infrastructure/products-by-region/table).
+- Select an available **region**. For available regions, see [Azure services available by region](https://azure.microsoft.com/explore/global-infrastructure).
 - A **pricing tier**:
   - **Standard** - Core Apache Spark capabilities with Microsoft Entra ID integration.
   - **Premium** - Role-based access controls and other enterprise-level features.
