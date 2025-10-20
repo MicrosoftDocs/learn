@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.dpu.conduct-structured-interviews-teams
+title: Conduct structured interviews using Microsoft Teams and Copilot
+metadata:
+  title: Conduct Structured Interviews Using Microsoft Teams And Copilot
+  description: Learn how to schedule and run a candidate interview using Microsoft Teams and Copilot to capture insights and streamline feedback.
+  ms.date: 10/20/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module
+  ms.service: microsoft-365
+  ms.custom: CW062025-3
+summary: >
+  Learn how to schedule and run a candidate interview using Microsoft Teams and Copilot to capture insights and streamline feedback.
+abstract: |2+
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - m365-business
+units:
+  - learn.dpu.conduct-structured-interviews-teams.introduction
+  - learn.dpu.conduct-structured-interviews-teams.set-up-interview-teams
+  - learn.dpu.conduct-structured-interviews-teams.use-copilot-interview
+  - learn.dpu.conduct-structured-interviews-teams.exercise-simulate-interview-workflow
+  - learn.dpu.conduct-structured-interviews-teams.knowledge-check
+  - learn.dpu.conduct-structured-interviews-teams.summary
+badge:
+  uid: learn.dpu.conduct-structured-interviews-teams.badge
