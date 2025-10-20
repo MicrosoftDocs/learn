@@ -14,12 +14,9 @@ To deepen your understanding of AI-powered solutions with SQL Server 2025, explo
 
 - [Download SQL Server 2025 from the Microsoft Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-sql-server-2025)
 - [What's new in SQL Server 2025](/sql/sql-server/what-s-new-in-sql-server-2025?azure-portal=true)
-- [Vector data type in SQL Server](/sql/t-sql/data-types/vector-transact-sql?azure-portal=true)
-- [AI capabilities in SQL Server 2025](/sql/sql-server/ai-capabilities-sql-server-2025?azure-portal=true)
+- [Vector data type in SQL Server](/sql/t-sql/data-types/vector-data-type?azure-portal=true)
 - [`CREATE EXTERNAL MODEL (Transact-SQL`)](/sql/t-sql/statements/create-external-model-transact-sql?azure-portal=true)
 - [`VECTOR_DISTANCE (Transact-SQL)`](/sql/t-sql/functions/vector-distance-transact-sql?azure-portal=true)
 - [`VECTOR_SEARCH (Transact-SQL)`](/sql/t-sql/functions/vector-search-transact-sql?azure-portal=true)
-- [Change Event Streaming in SQL Server 2025](/sql/relational-databases/change-event-streaming/change-event-streaming-overview?azure-portal=true)
 - [Microsoft Fabric mirroring for SQL Server](/fabric/database/mirrored-database/overview?azure-portal=true)
 - [Azure OpenAI Service documentation](/azure/ai-services/openai/?azure-portal=true)
-- [Microsoft Copilot in SQL Server Management Studio](/sql/ssms/copilot/copilot-overview?azure-portal=true)

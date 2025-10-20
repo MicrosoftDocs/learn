@@ -1,4 +1,4 @@
-[Microsoft Copilot](/sql/ssms/copilot/copilot-in-ssms?azure-portal=true) in [SQL Server Management Studio (SSMS)](/sql/ssms/sql-server-management-studio-ssms?azure-portal=true) provides AI-powered assistance for database development tasks. By integrating directly into your workflow, Copilot helps you write, optimize, and troubleshoot [T-SQL](/sql/t-sql/language-reference?azure-portal=true) queries using natural language.
+[Microsoft Copilot](/ssms/copilot/copilot-in-ssms-overview?azure-portal=true) in [SQL Server Management Studio (SSMS)](/sql/ssms/sql-server-management-studio-ssms?azure-portal=true) provides AI-powered assistance for database development tasks. By integrating directly into your workflow, Copilot helps you write, optimize, and troubleshoot [T-SQL](/sql/t-sql/language-reference?azure-portal=true) queries using natural language.
 
 Copilot in SSMS uses large language models combined with your database context—including schema, indexes, and statistics—to provide contextually aware assistance. This allows you to focus on solving business problems rather than remembering exact syntax or navigating documentation.
 
@@ -80,7 +80,7 @@ Copilot requires authentication:
 4. Verify your Copilot subscription or trial status
 
 > [!NOTE]
-> Copilot in SSMS requires authentication with a [Microsoft account](/entra/fundamentals/create-users-microsoft-account?azure-portal=true) that has Copilot access. Check with your organization about Copilot availability, or visit the [Microsoft Copilot website](https://www.microsoft.com/microsoft-copilot) for licensing information.
+> Copilot in SSMS requires authentication with a Microsoft account that has Copilot access. Check with your organization about Copilot availability, or visit the [Microsoft Copilot website](https://www.microsoft.com/microsoft-copilot) for licensing information.
 
 ## Write queries with natural language
 
@@ -591,7 +591,7 @@ Microsoft Copilot in SSMS is purpose-built for SQL Server database development:
 [GitHub Copilot](https://github.com/features/copilot?azure-portal=true) is a general-purpose coding assistant that supports multiple languages:
 
 - **Multi-language:** Supports T-SQL along with Python, JavaScript, C#, and many other languages
-- **IDE-agnostic:** Works across [Visual Studio Code](/visualstudio/subscriptions/vs-vscode?azure-portal=true), [Visual Studio](/visualstudio/ide/visual-studio-ide?azure-portal=true), JetBrains IDEs, and other editors
+- **IDE-agnostic:** Works across Visual Studio Code, Visual Studio, JetBrains IDEs, and other editors
 - **Code patterns:** Provides suggestions based on common coding patterns and examples from public code
 - **No database context:** Doesn't have access to your specific database schema or metadata
 - **Requires:** GitHub Copilot subscription (separate from Microsoft Copilot)

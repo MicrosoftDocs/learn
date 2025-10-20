@@ -64,7 +64,7 @@ This code converts a vector back to readable formats. The `CAST` to `NVARCHAR(MA
 
 Exact nearest neighbor (k-NN) search involves calculating the distance between a query vector and all vectors in your dataset, then returning the k closest matches. This method guarantees precise results but can be computationally intensive for large datasets.
 
-### Use the VECTOR_DISTANCE function
+### Use the `VECTOR_DISTANCE` function
 
 The `VECTOR_DISTANCE` function measures the similarity between two vectors using a specified distance metric:
 
@@ -125,9 +125,9 @@ Vector indexes in SQL Server 2025:
 - Balance disk I/O, memory usage, and query performance
 - Automatically update as data changes
 
-### Use the VECTOR_SEARCH function
+### Use the `VECTOR_SEARCH` function
 
-The `VECTOR_SEARCH` function performs approximate nearest neighbor searches:
+The [`VECTOR_SEARCH`](/sql/t-sql/functions/vector-search-transact-sql?azure-portal=true) function performs approximate nearest neighbor searches:
 
 ```sql
 DECLARE @query_vector VECTOR(1536) = AI_GENERATE_EMBEDDINGS(
@@ -150,7 +150,7 @@ FROM
 ORDER BY s.distance;
 ```
 
-This query performs an approximate nearest neighbor search using the vector index created earlier. The [`VECTOR_SEARCH`](/sql/t-sql/queries/vector-search-transact-sql?azure-portal=true) function uses the DiskANN algorithm to find the 10 most similar products without scanning all vectors, providing performance improvements for large datasets while maintaining high accuracy.
+This query performs an approximate nearest neighbor search using the vector index created earlier. The [`VECTOR_SEARCH`](/sql/t-sql/functions/vector-search-transact-sql?azure-portal=true) function uses the DiskANN algorithm to find the 10 most similar products without scanning all vectors, providing performance improvements for large datasets while maintaining high accuracy.
 
 ### Consider performance benefits
 

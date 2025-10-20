@@ -345,7 +345,7 @@ Performance is critical for production AI applications.
 
 Use query hints and index optimization:
 
-Optimizing [vector search](/sql/t-sql/queries/vector-search-transact-sql?azure-portal=true) performance is critical for production AI applications where response time directly impacts user experience. 
+Optimizing vector search performance is critical for production AI applications where response time directly impacts user experience. 
 
 The following example demonstrates two key optimization techniques: creating filtered [vector indexes](/sql/t-sql/statements/create-vector-index-transact-sql?azure-portal=true) that target specific data subsets (like product categories), and using [query hints](/sql/t-sql/queries/hints-transact-sql-query?azure-portal=true) to control execution behavior. 
 

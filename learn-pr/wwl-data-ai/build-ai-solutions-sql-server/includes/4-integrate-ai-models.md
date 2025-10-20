@@ -126,7 +126,7 @@ SQL Server 2025 integrates with the full suite of [Azure AI services](/azure/ai-
 
 ### Connect to Azure OpenAI Service
 
-[Azure OpenAI](/azure/ai-services/openai/overview?azure-portal=true) provides access to language models like [GPT-4](/azure/ai-services/openai/concepts/models?azure-portal=true), GPT-3.5, and embedding models:
+[Azure OpenAI](/azure/ai-services/openai/overview?azure-portal=true) provides access to language models like GPT-4, GPT-3.5, and embedding models:
 
 ```sql
 -- Create a model for GPT-4
