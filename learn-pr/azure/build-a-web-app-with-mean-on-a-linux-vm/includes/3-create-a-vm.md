@@ -2,12 +2,13 @@ Like most application frameworks, you can run your MEAN stack application in man
 
 Here you run your application on a virtual machine (VM) running on Azure. MEAN supports many different operating systems. For learning purposes, we use Ubuntu Linux here.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
 ## Create an Ubuntu Linux VM
 
-Normally, you create a *resource group* before you create other resources on Azure. A resource group is a container that holds the resources that are related for an Azure solution. For this exercise, the Azure sandbox provides a resource group for you. However, when working in your own Azure subscription, you'd run the following command to create a resource group in a location near you.
-
-> [!NOTE]
-> The following `az group create` code sample is for you to run with your own account, not this sandbox!
+Normally, you create a *resource group* before you create other resources on Azure. A resource group is a container that holds the resources that are related for an Azure solution. If you haven't already created a resource group, you can run the following command to create a resource group in a location near you.
 
 ```azurecli
 az group create \
@@ -15,13 +16,13 @@ az group create \
   --location <resource-group-location>
 ```
 
-1. In the Cloud Shell window on the right side of the screen, select **Settings** > **Go to Classic version**.
+1. Open the [Azure Cloud Shell](https://shell.azure.com/), then select **Settings** > **Go to Classic version**.
 
-1. From Cloud Shell, run the `az vm create` command to create an Ubuntu VM:
+1. From Cloud Shell, run the `az vm create` command to create an Ubuntu VM. Replace **myResourceGroupName** in the following example with the name of an existing resource group, or the name of the resource group that you created for this exercise.
 
     ```azurecli
     az vm create \
-      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+      --resource-group "myResourceGroupName" \
       --name MeanStack \
       --image Canonical:0001-com-ubuntu-server-focal:20_04-lts:latest \
       --admin-username azureuser \
@@ -34,13 +35,13 @@ az group create \
     (Output Example)
     {
       "fqdns": "",
-      "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/MeanStack",
+      "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/myResourceGroupName/providers/Microsoft.Compute/virtualMachines/MeanStack",
       "location": "eastus",
       "macAddress": "00-0D-3A-1E-1B-3B",
       "powerState": "VM running",
       "privateIpAddress": "10.0.0.5",
       "publicIpAddress": "104.211.9.245",
-      "resourceGroup": "<rgn>[sandbox resource group name]</rgn>",
+      "resourceGroup": "myResourceGroupName",
       "zones": ""
     }
     ```
@@ -52,7 +53,7 @@ az group create \
     ```azurecli
     az vm open-port \
       --port 80 \
-      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+      --resource-group "myResourceGroupName" \
       --name MeanStack
     ```
 
@@ -65,7 +66,7 @@ az group create \
     ```azurecli
     ipaddress=$(az vm show \
       --name MeanStack \
-      --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+      --resource-group "myResourceGroupName" \
       --show-details \
       --query [publicIps] \
       --output tsv)
