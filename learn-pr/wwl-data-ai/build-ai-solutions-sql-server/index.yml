@@ -7,7 +7,7 @@ metadata:
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
-  ms.service: sql-server
+  ms.service: sql
 title: Build AI-powered solutions using SQL Server 2025
 summary: Learn how to build intelligent AI-powered applications using SQL Server 2025's native vector support, embedding generation, semantic search, and integration with Azure OpenAI and AI frameworks.
 abstract: |

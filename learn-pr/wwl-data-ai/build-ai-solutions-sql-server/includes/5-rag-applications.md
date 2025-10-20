@@ -12,7 +12,7 @@ The RAG pattern follows a systematic workflow that combines traditional database
 
 The RAG pattern orchestrates interaction between your database, AI models, and application users. Understanding this workflow is important for building AI-powered applications that deliver accurate, contextually relevant responses. The following diagram from Microsoft's Azure OpenAI documentation illustrates how the different components of a RAG system work together:
 
-:::image type="content" source="https://learn.microsoft.com/en-us/azure/ai-foundry/openai/media/use-your-data/workflow-diagram.png" alt-text="Diagram illustrating the Retrieval Augmented Generation workflow showing data ingestion, development, and inference phases." lightbox="https://learn.microsoft.com/en-us/azure/ai-foundry/openai/media/use-your-data/workflow-diagram.png" border="false":::
+:::image type="content" source="https://learn.microsoft.com/azure/ai-foundry/openai/media/use-your-data/workflow-diagram.png" alt-text="Diagram illustrating the Retrieval Augmented Generation workflow showing data ingestion, development, and inference phases." lightbox="https://learn.microsoft.com/azure/ai-foundry/openai/media/use-your-data/workflow-diagram.png" border="false":::
 
 The diagram shows the three-phase RAG workflow: **Ingest** (uploading and embedding data into searchable indexes), **Develop** (creating applications with prompts and search intents), and **Inference** (processing user prompts through intent generation, retrieval, filtration/reranking, and response generation). 
 
