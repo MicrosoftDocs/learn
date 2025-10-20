@@ -59443,6 +59443,11 @@
       "source_path": "learn-pr/azure/tour-azure-portal/2-azure-management.md",
       "redirect_url": "/azure/azure-portal/azure-portal-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/3-navigate-the-portal.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
     }
   ]
 }
