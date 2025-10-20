@@ -59428,6 +59428,11 @@
       "source_path": "learn-pr/sqlserver/introduction-sql-server-2022-t-sql-enhancements/10-summary.yml",
       "redirect_url": "/training/modules/introduction-sql-server-2022-t-sql-enhancements",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/index.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
     }
   ]
 }
