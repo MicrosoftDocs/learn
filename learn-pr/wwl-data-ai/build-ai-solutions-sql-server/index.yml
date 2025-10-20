@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn-wwl.build-ai-solutions-sql-server
+metadata:
+  title: Build AI-powered solutions using SQL Server 2025
+  description: "Build AI-powered solutions using SQL Server 2025"
+  ms.date: 10/20/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: module
+  ms.service: sql-server
+title: Build AI-powered solutions using SQL Server 2025
+summary: Learn how to build intelligent AI-powered applications using SQL Server 2025's native vector support, embedding generation, semantic search, and integration with Azure OpenAI and AI frameworks.
+abstract: |
+  In this module, you'll:
+  - Understand the AI-ready evolution of SQL Server 2025, including vector data types, embeddings, and Retrieval Augmented Generation (RAG).
+  - Implement vector data types and perform semantic search using `VECTOR_DISTANCE` and `VECTOR_SEARCH` functions.
+  - Integrate AI models securely with SQL Server using `CREATE EXTERNAL MODEL`, managed identities, and Azure OpenAI.
+  - Build RAG applications using T-SQL, LangChain, and Semantic Kernel frameworks.
+  - Develop intelligent applications with Change Event Streaming, conversational AI, and Microsoft Fabric integration.
+  - Use Microsoft Copilot in SQL Server Management Studio for AI-assisted database development.
+prerequisites: |
+  - Experience with SQL Server database development and T-SQL programming.
+  - Basic understanding of AI concepts such as embeddings and language models.
+  - Familiarity with Azure services (Azure OpenAI, Azure AI Foundry) is helpful but not required.
+  - Understanding of REST APIs and JSON data formats.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- data-engineer
+- solution-architect
+products:
+- sql-server
+units:
+- learn-wwl.build-ai-solutions-sql-server.introduction
+- learn-wwl.build-ai-solutions-sql-server.copilot
+- learn-wwl.build-ai-solutions-sql-server.implement-vector
+- learn-wwl.build-ai-solutions-sql-server.integrate-ai-models
+- learn-wwl.build-ai-solutions-sql-server.rag-applications
+- learn-wwl.build-ai-solutions-sql-server.develop-intelligent-application
+- learn-wwl.build-ai-solutions-sql-server.knowledge-check
+- learn-wwl.build-ai-solutions-sql-server.summary
+badge:
+  uid: learn-wwl.build-ai-solutions-sql-server.badge
+

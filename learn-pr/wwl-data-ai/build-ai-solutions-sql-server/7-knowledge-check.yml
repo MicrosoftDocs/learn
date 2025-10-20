@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.build-ai-solutions-sql-server.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 10/20/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  module_assessment: true
+durationInMinutes: 8
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which function should you use to perform exact nearest neighbor (k-NN) search on vector embeddings in SQL Server 2025?"
+    choices:
+    - content: "`VECTOR_SEARCH`"
+      isCorrect: false
+      explanation: "Incorrect. `VECTOR_SEARCH` is used for approximate nearest neighbor (ANN) search using DiskANN indexes, not exact k-NN search."
+    - content: "`VECTOR_DISTANCE`"
+      isCorrect: true
+      explanation: "Correct. `VECTOR_DISTANCE` calculates the distance between two vectors using a specified metric (cosine, euclidean, or dot product) and is used for exact k-NN search by comparing the query vector against all vectors in the dataset."
+    - content: "`AI_GENERATE_EMBEDDINGS`"
+      isCorrect: false
+      explanation: "Incorrect. `AI_GENERATE_EMBEDDINGS` is used to generate vector embeddings from text using external AI models, not for searching vectors."
+  - content: "What is the primary purpose of Retrieval Augmented Generation (RAG) in SQL Server 2025?"
+    choices:
+    - content: "To replace large language models with database queries"
+      isCorrect: false
+      explanation: "Incorrect. RAG doesn't replace language models; it augments them by providing relevant data from the database as context."
+    - content: "To dynamically retrieve relevant information from the database and provide it as context to AI models"
+      isCorrect: true
+      explanation: "Correct. RAG applications dynamically retrieve relevant information from the database using vector search and provide it as context to language models, ensuring responses are grounded in current, accurate data."
+    - content: "To store large language models directly in SQL Server tables"
+      isCorrect: false
+      explanation: "Incorrect. RAG doesn't store language models in SQL Server; it retrieves data from the database to provide context to external AI models."
+  - content: "Which authentication method eliminates the need to store API keys when connecting SQL Server 2025 to Azure OpenAI?"
+    choices:
+    - content: "Database-scoped credentials with `HTTPEndpointHeaders`"
+      isCorrect: false
+      explanation: "Incorrect. Database-scoped credentials with `HTTPEndpointHeaders` still require storing API keys in the SECRET parameter."
+    - content: "Managed identities with SQL Server enabled by Azure Arc"
+      isCorrect: true
+      explanation: "Correct. Managed identities eliminate the need to store credentials by using Azure's identity infrastructure. With SQL Server enabled by Azure Arc, the Azure platform handles credential rotation and access management automatically."
+    - content: "Windows Authentication"
+      isCorrect: false
+      explanation: "Incorrect. Windows Authentication is used for SQL Server authentication, not for connecting to external AI services like Azure OpenAI."
+  - content: "What is the recommended approach when implementing safety guardrails for AI-generated SQL queries in conversational interfaces?"
+    choices:
+    - content: "Allow all generated queries to execute without validation"
+      isCorrect: false
+      explanation: "Incorrect. Allowing all queries without validation could result in destructive operations like deleting or modifying data."
+    - content: "Validate generated SQL to ensure only read-only operations are permitted"
+      isCorrect: true
+      explanation: "Correct. Safety guardrails should validate AI-generated SQL queries to prevent operations like DROP, DELETE, UPDATE, INSERT, ALTER, and CREATE, ensuring users can only query data, not modify it."
+    - content: "Execute all queries in a separate database to prevent data loss"
+      isCorrect: false
+      explanation: "Incorrect. While this might prevent data loss in the production database, it doesn't address the root issue of validating that AI-generated queries are safe and appropriate."
+
