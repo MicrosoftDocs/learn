@@ -1,5 +1,7 @@
 In some scenarios, you'll need to manage processes on a machine. If you need to stop some of the processes, you might want to track what processes are running, how many resources they're using, and their process IDs. 
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Discover an object by using Get-Member
 
 You know that the `Get-Process` cmdlet lists information about processes. Now, you want to find what other cmdlets work with processes and what a process consists of.
