@@ -3,7 +3,7 @@
 
 :::image type="content" source="../media/platform.png" alt-text="Diagram showing SQL Server 2025 as a platform with integrated AI capabilities, vector search, and connections to Azure services." lightbox="../media/platform.png" border="false":::
 
-SQL Server 2025 supports deployment both on-premises and in the cloud. Features include [Fabric mirroring](/fabric/database/mirrored-database/overview?azure-portal=true), [managed identities](/sql/sql-server/azure-arc/managed-identity?view=sql-server-ver17&tabs=portal?azure-portal=true), and encryption capabilities. Organizations can use these features to build generative AI applications while maintaining their existing SQL Server infrastructure.
+SQL Server 2025 supports deployment both on-premises and in the cloud. Features include [Fabric mirroring](/fabric/database/mirrored-database/overview?azure-portal=true), [managed identities](/sql/sql-server/azure-arc/managed-identity?azure-portal=true), and encryption capabilities. Organizations can use these features to build generative AI applications while maintaining their existing SQL Server infrastructure.
 
 > [!NOTE]
 > You can download SQL Server 2025 from the [Microsoft Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-sql-server-2025?azure-portal=true).
