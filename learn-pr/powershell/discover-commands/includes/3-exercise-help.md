@@ -1,5 +1,7 @@
 After you find a cmdlet you want to use, you can learn more about it. For example, you can learn about the different ways to call it, what parameters you can use, and example use cases. 
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Use Get-Help to discover commands
 
 Use the `Get-Help` cmdlet to learn about cmdlets.
