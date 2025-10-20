@@ -54,11 +54,11 @@ You can also request actionable recommendations with a prompt like:
 
 Use this checklist to ensure your investigation is complete. Did you complete all the steps listed?
 
-- [ ] Alert details summarized clearly.
-- [ ] Related activity gathered and correlated.
-- [ ] Findings documented with supporting evidence.
-- [ ] Recommendations for remediation, monitoring, or escalation provided.
-- [ ] Investigation structured and ready for handoff or reporting.
+- Alert details summarized clearly.
+- Related activity gathered and correlated.
+- Findings documented with supporting evidence.
+- Recommendations for remediation, monitoring, or escalation provided.
+- Investigation structured and ready for handoff or reporting.
 
 > [!TIP]
 > - **False positives**: Investigate whether the alert is caused by legitimate activity, such as the user connecting through a VPN, roaming on a mobile network, or traveling for work.
