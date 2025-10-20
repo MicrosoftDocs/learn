@@ -2,6 +2,8 @@ Many applications require a database. Here you install MongoDB, the "M" in the M
 
 MongoDB stores its data in JSON-like documents that don't require rigid data structures. You interact with MongoDB using queries and commands sent using JavaScript Object Notation, or JSON.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## What MongoDB editions are available?
 
 MongoDB provides two editions:
