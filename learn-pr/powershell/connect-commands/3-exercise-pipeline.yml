@@ -9,8 +9,8 @@ metadata:
   ms.date: 12/09/2022
   ms.topic: unit
   ms.custom: team=nextgen
-azureSandbox: true
-interactive: powershell
+#azureSandbox: true
+#interactive: powershell
 durationInMinutes: 1
 content: |
   [!include[](includes/3-exercise-pipeline.md)]
