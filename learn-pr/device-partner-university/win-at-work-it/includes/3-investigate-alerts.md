@@ -3,7 +3,7 @@ Microsoft Security Copilot is an AI-powered assistant that helps SOC analysts in
 > [!IMPORTANT]
 > To use Microsoft Security Copilot, you need an eligible Microsoft 365 subscription and access to Copilot features in Microsoft Security. How Copilot functions might depend on your license and permissions.
 
-For the content in this module, an eligible Microsoft 365 Copilot subscription is required. Copilot can pull context from organizational data sources such as Azure AD sign-ins, Defender alerts, and related device logs (permissions allowing).
+For the content in this module, an eligible Microsoft 365 Copilot subscription is required. Copilot can pull context from organizational data sources such as Microsoft Entra ID sign-ins, Defender alerts, and related device logs (permissions allowing).
 
 ## How Copilot can help
 
