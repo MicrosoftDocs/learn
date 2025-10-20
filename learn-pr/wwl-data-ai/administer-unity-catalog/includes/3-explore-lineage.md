@@ -1,54 +1,59 @@
-# Implement data lineage in Unity Catalog
-
-## Introduction
-
 As your data platform grows, it becomes harder to keep track of where data comes from and what depends on it. Unity Catalog in Azure Databricks automatically captures data lineage — the flow of data across tables, views, notebooks, and pipelines.  
 
 Lineage helps you answer key governance questions such as:
+
 - Where did this data originate?
 - Which reports or models depend on it?
 - What will break if I change this table?
 
 In this unit, you'll explore how to view lineage in Unity Catalog, understand what metadata it captures, and use lineage insights to plan safe changes to your data environment.
 
----
+## View and use lineage for impact analysis
 
-## View table lineage
+Unity Catalog automatically tracks relationships between data assets. Let's walk through a practical scenario using the lineage graph to understand dependencies and plan safe changes.
 
-Unity Catalog automatically tracks relationships between data assets. You can visualize these relationships directly from the Databricks workspace.
+### Follow along: Analyze the customer_silver table
 
-### Scenario
-
-You need to understand the dependencies for a table before changing its schema or transformation logic.
-
-### Steps
+Imagine you're a data engineer who needs to add a new column to the `customer_silver` table in a medallion architecture. Before making changes, you want to understand what depends on this table.
 
 1. In your Databricks workspace, open **Catalog Explorer**.  
-2. Navigate to your catalog (for example, `analytics_catalog`).  
-3. Select a schema (for example, `sales`).  
-4. Choose a table (for example, `customer_silver`).  
-5. Select the **Lineage** tab.  
+2. Navigate to your catalog and schema.  
+3. Select the `customer_silver` table.  
+4. Select the **Lineage** tab, then **See lineage graph**.
+5. The following graph appears.  
 
-🟦 **UI image suggestion:** Add a screenshot of the **Lineage** tab in Catalog Explorer showing the table’s upstream and downstream objects.
+:::image type="content" source="../media/data-lineage-graph.png" alt-text="Lineage graph showing upstream and downstream dependencies for a Unity Catalog table." lightbox="../media/data-lineage-graph.png":::
 
-:::image type="content" source="../media/lineage-graph.png" alt-text="Lineage graph showing upstream and downstream dependencies for a Unity Catalog table." lightbox="../media/lineage-graph.png":::
+### What the lineage graph tells you
 
-### What you’ll see
+Looking at the lineage visualization above, you can see the complete data flow for `customer_silver`:
 
-- **Upstream tables** – Sources feeding into this table (for example, `customer_bronze_clean`).  
-- **Downstream objects** – Tables, views, or dashboards that depend on this table (for example, `customers_count_per_state`).  
-- **Connection lines** – Arrows showing the flow of data between objects.  
+**Upstream dependency:**
 
-Understanding these dependencies helps you avoid breaking downstream pipelines when making changes.
+- `customer_bronze_clean` → Feeds raw customer data into your table (columns: customer_id, name, state)
+
+**Downstream consumers:**
+
+- `customer_count_per_state` → A view that counts customers by state (columns: state, customer_count)
+
+**Data flow direction:** Arrows show data flows from left to right: bronze → silver → analytics view
+
+### Your impact analysis
+
+Based on this lineage, here's what adding a column to `customer_silver` affects:
+
+1. **Safe change** – Adding a column won't break the existing `customer_count_per_state` view since it only uses the `state` column for aggregation.
+2. **Upstream compatibility** – Ensure the transformation from `customer_bronze_clean` can populate the new column.
+3. **Downstream opportunities** – Consider if the `customer_count_per_state` view could benefit from the new column for additional analytics.
 
 > [!NOTE]
-> Lineage is only available for Unity Catalog–managed tables. Legacy Hive metastore tables don’t support lineage tracking.
+> Lineage is only available for Unity Catalog–managed tables. Legacy Hive metastore tables don't support lineage tracking.
 
 ---
 
 ## Understand what lineage captures
 
-Unity Catalog automatically captures lineage for multiple asset types, providing full visibility into how data moves through your environment.
+Now that you've seen how to use lineage for a table, let's explore the full range of assets that Unity Catalog tracks automatically.
 
 | **Asset type** | **What lineage captures** |
 |----------------|----------------------------|
@@ -59,50 +64,4 @@ Unity Catalog automatically captures lineage for multiple asset types, providing
 | External data sources | Tables imported through Lakehouse Federation |
 | Machine learning models | Training data sources used by models |
 
-🟦 **UI image suggestion:** Add a diagram or screenshot showing the lineage overview page, highlighting the toggle between *table*, *column*, and *asset* views.
-
-The key benefit: you don’t have to manually document these relationships. Lineage is captured automatically as you query, transform, and visualize data.
-
----
-
-## Use lineage for impact analysis
-
-Lineage isn’t just for documentation — it’s a tool for safe change management.
-
-### Scenario
-
-You’re planning to rename a column in the `customer_silver` table and need to know which downstream objects will be affected.
-
-### Steps
-
-1. Open **Catalog Explorer** and navigate to the `customer_silver` table.  
-2. Select the **Lineage** tab.  
-3. Review all **downstream dependencies**.  
-
-The lineage graph shows two dependent views:
-- `customers_count_per_state` – Aggregates the column you plan to rename.  
-- `email_updates` – References the column in a filter condition.  
-
->Insert image: screenshot of zoomed lineage view highlighting dependent objects after selecting a table
-
-### Action plan
-
-Update both downstream views when renaming the column, or create a compatibility view to preserve existing references.
-
-> [!TIP]
-> Always review lineage before schema or logic changes. It helps identify all affected assets — preventing broken pipelines, dashboards, and reports.
-
-🟦 **UI image suggestion:** Add a screenshot zoomed in on a lineage graph highlighting downstream dependencies for a single column.
-
----
-
-## Summary
-
-Unity Catalog’s lineage tracking gives you visibility into how data flows through your lakehouse.  
-By reviewing lineage before making changes, you can:
-- Trace data origin and transformations.  
-- Understand dependencies between datasets and analytics assets.  
-- Prevent breaking downstream jobs or reports.  
-
-Lineage turns your data estate from a black box into a transparent, maintainable system — a key foundation for secure and governed analytics.
-
+The key benefit is that you don't have to manually document these relationships. Lineage is captured automatically as you query, transform, and visualize data.

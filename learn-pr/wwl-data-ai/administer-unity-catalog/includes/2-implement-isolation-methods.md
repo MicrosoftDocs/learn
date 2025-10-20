@@ -1,14 +1,6 @@
-# Understand Unity Catalog isolation methods
+Unity Catalog helps your organization implement secure and scalable data governance across multiple workspaces. As your platform grows, different teams, regions, or projects often need their own administrative boundaries, compute environments, and storage locations. Isolation in Unity Catalog provides the flexibility to meet these requirements while maintaining consistent governance.  
 
-## Introduction
-
-Unity Catalog helps organizations implement secure and scalable data governance across multiple workspaces.  
-As your platform grows, different teams, regions, or projects often need their own administrative boundaries, compute environments, and storage locations.
-
-Isolation in Unity Catalog provides the flexibility to meet these requirements while maintaining consistent governance.  
 In this unit, you’ll learn how Unity Catalog enforces isolation at the **administrative**, **workspace**, and **storage** levels, and how to combine these layers for effective delegation and control.
-
----
 
 ## Administrative roles and isolation boundaries
 
@@ -19,17 +11,13 @@ Unity Catalog separates governance responsibilities through two main administrat
 | **Account Admin** | Manages workspaces, users, and Unity Catalog metastores. | Entire Databricks account |
 | **Metastore Admin** | Manages catalogs, schemas, and data objects within a single metastore. | Specific metastore |
 
-Administrative isolation ensures that no single person or workspace has unrestricted access to all governed data.  
-Instead, privileges are assigned where needed, promoting accountability and compliance.
+Administrative isolation ensures that no single person or workspace has unrestricted access to all governed data. Instead, privileges are assigned where needed, promoting accountability and compliance.
 
 > 🟦 **Consider adding a UI image:** Screenshot of **Account Console → Data → Metastore settings** view, showing admin assignments and roles.
 
----
-
 ## Explore isolation boundary types
 
-Unity Catalog implements isolation at three key boundaries.  
-Each boundary provides a different level of control and serves a different purpose.
+Unity Catalog implements isolation at three key boundaries. Each boundary provides a different level of control and serves a different purpose.
 
 ---
 
