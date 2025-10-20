@@ -2,5 +2,4 @@ In this module, you learned how to use peering to connect virtual networks in a 
 
 Now that you understand how to peer virtual networks together, you can use this secure and cost-effective method in your Azure network infrastructure. The method enables low-latency communication between resources in virtual networks. It supports scenarios where resources are in different regions or subscriptions. Virtual network peering should be your first choice when you need to connect virtual networks.
 
-<!-- Cleanup sandbox -->
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+[!INCLUDE [](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
