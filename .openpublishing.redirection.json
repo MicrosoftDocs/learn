@@ -59458,6 +59458,11 @@
       "source_path": "learn-pr/azure/tour-azure-portal/5-exercise-navigate-the-portal.md",
       "redirect_url": "/azure/azure-portal/azure-portal-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/6-customize-the-dashboard.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
     }
   ]
 }
