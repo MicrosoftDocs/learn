@@ -9,6 +9,6 @@ metadata:
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
-durationInMinutes: 6
+durationInMinutes: 9
 content: |
   [!include[](includes/4-integrate-ai-models.md)]

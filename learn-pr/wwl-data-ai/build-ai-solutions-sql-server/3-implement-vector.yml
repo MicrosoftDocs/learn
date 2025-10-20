@@ -9,6 +9,6 @@ metadata:
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/3-implement-vector.md)]
