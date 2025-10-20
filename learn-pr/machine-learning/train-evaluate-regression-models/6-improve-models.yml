@@ -4,11 +4,11 @@ title: Improve models with hyperparameters
 metadata:
   title: Improve models with hyperparameters
   description: Improve regression models with hyperparameters
-  ms.date: 08/10/2024
+  ms.date: 10/14/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-improve-models.md)]
+  [!include[](includes/6-improve-models.md)]

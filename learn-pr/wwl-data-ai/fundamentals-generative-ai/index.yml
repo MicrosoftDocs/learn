@@ -3,27 +3,29 @@ uid: learn.wwl.fundamentals-generative-ai
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Introduction to generative AI concepts
-  description: Learn about how language models using transformer architecture form the foundation of generative AI applications.
+  title: Introduction to generative AI and agents
+  description: Ever wondered how AI can create content, answer questions, and assist with tasks? This module introduces you to the world of generative AI and agents.
   author: sherzyang
   ms.author: sheryang
-  ms.date: 08/29/2025
+  ms.date: 10/04/2025
   ms.service: azure-ai-openai
   ms.topic: module-intro-to-product
   ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
   ms.custom: copilot-learning-hub, ai-learning-hub
-title: Introduction to generative AI concepts
-summary: "In this module, you explore the way in which language models enable AI applications and services to generate original content based on natural language input."
+title: Introduction to generative AI and agents
+summary: "Generative AI powers applications that can create content, answer questions, and assist with tasks. In this module, you'll explore the fundamentals of generative AI, including large language models (LLMs), prompts, and AI agents."
 abstract: |
-  By the end of this module, you are able to:
-  - Understand what generative AI can do and how it appears in today's applications.
-  - Understand how language models can understand and generate language. 
-  - Describe ways you can engineer good prompts and quality responses. 
-  - Describe responsible generative AI concepts.
+  By the end of this module, you'll be able to:
+  - Describe core concepts of generative AI.
+  - Explain how large language models (LLMs) work.
+  - Consider how to create effective prompts for LLMs.
+  - Describe core concepts of agents and agentic AI solutions.
 prerequisites: |
-  - Familiarity with Azure and the Azure portal.
+  Before starting this module, you should have:
+  - Familiarity with AI concepts and terminology
+  - Basic understanding of machine learning principles.
 iconUrl: /training/achievements/fundamentals-generative-ai.svg
 levels:
   - beginner
@@ -35,15 +37,12 @@ roles:
 products: 
   - azure-ai-foundry
 subjects: 
-  - cloud-computing
+  - artificial-intelligence
 units:
 - learn.wwl.fundamentals-generative-ai.introduction
-- learn.wwl.fundamentals-generative-ai.what-is-generative-ai
 - learn.wwl.fundamentals-generative-ai.language-models
-- learn.wwl.fundamentals-generative-ai.transformers
-- learn.wwl.fundamentals-generative-ai.use-language-models
 - learn.wwl.fundamentals-generative-ai.writing-prompts
-- learn.wwl.fundamentals-generative-ai.responsible-generative-ai
+- learn.wwl.fundamentals-generative-ai.agents
 - learn.wwl.fundamentals-generative-ai.exercise-ai-agent
 - learn.wwl.fundamentals-generative-ai.knowledge-check
 - learn.wwl.fundamentals-generative-ai.summary

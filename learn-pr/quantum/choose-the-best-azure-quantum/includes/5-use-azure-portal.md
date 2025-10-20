@@ -2,7 +2,7 @@ In this unit, you learn how to use the Azure portal to manage your quantum works
 
 ## Create an Azure subscription
 
-To access the Azure portal, you need an Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=academic-15963-cxa) before you begin.
+To access the Azure portal, you need an Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn&?WT.mc_id=academic-15963-cxa) before you begin.
 
 ## Create a quantum workspace
 

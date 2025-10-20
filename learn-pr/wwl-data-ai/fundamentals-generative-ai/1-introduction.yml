@@ -8,10 +8,11 @@ metadata:
   description: Introduction to generative AI concepts. 
   author: sherzyang
   ms.author: sheryang
-  ms.date: 03/21/2025
+  ms.date: 10/04/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  zone_pivot_groups: video-or-text
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.dpu.move-forward-windows-11
-title: Move forward with Windows 11 Pro before Windows 10 EOS
+title: Move forward with Windows 11 Pro post Windows 10 end of support
 metadata:
-  title: Move forward with Windows 11 Pro before Windows 10 EOS
-  description: In this module, you’ll explore what Windows 10 end of support (EOS) means for your organization, why upgrading now is critical, and the key benefits of moving to Windows 11 Pro.
+  title: Move forward with Windows 11 Pro Post Windows 10 End Of Support
+  description: In this module, you learn how to respond now that Windows 10 support is ended and move forward securely with Windows 11 Pro. Discover why upgrading now is essential, explore the productivity and security benefits of Windows 11 Pro, and find tools to simplify deployment.
   ms.date: 07/29/2025
   author: hhreyes21
   ms.author: v-homerreyes
@@ -11,10 +11,10 @@ metadata:
   ms.service: windows-11
   ms.custom: CW013025-2
 summary: >
-    Prepare your organization for Windows 10 end of support by upgrading to Windows 11 Pro. This module explores the business value, security enhancements, deployment strategies, and productivity tools that make Windows 11 Pro a smart move.  Prepare your organization for Windows 10 end of support by upgrading to Windows 11 Pro. This module explores the business value, security enhancements, deployment strategies, and productivity tools that make Windows 11 Pro a smart move.
+    Windows 10 has reached end of support. Devices running Windows 10 no longer receive security updates, nonsecurity fixes, or technical support. This module explores what end of support means for your organization, the ongoing business and security value of Windows 11 Pro, and how to move forward confidently with modern devices and deployment tools.
 abstract: |
   By the end of this module, you'll be able to:
-  - Understand the implications of Windows 10 EOS
+  - Understand the implications of Windows 10 end of support
   - Identify the benefits of Windows 11 Pro for your organization
   - Discover tools that simplify deployment and device management
   - Plan a smooth upgrade path using available Microsoft resources
@@ -34,7 +34,7 @@ products:
   - windows-10
 units:
   - learn.dpu.move-forward-windows-11.introduction
-  - learn.dpu.move-forward-windows-11.countdown-to-windows-10-end-of-support
+  - learn.dpu.move-forward-windows-11.respond-to-windows-10-end-of-support
   - learn.dpu.move-forward-windows-11.benefits-of-upgrade
   - learn.dpu.move-forward-windows-11.risk-of-delay
   - learn.dpu.move-forward-windows-11.stay-secure-with-windows-11

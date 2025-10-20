@@ -33,7 +33,7 @@ The Azure portal has information on configuring and troubleshooting ExpressRoute
 
 :::image type="content" source="../media/portal-connectivity-issues.png" alt-text="Screenshot of the Azure portal to diagnose and solve problems.":::
 
-When you need assistance from Microsoft or from an ExpressRoute partner, you must provide the ExoressRoute Service Key. The Service Key uniquely identifies your circuit.
+When you need assistance from Microsoft or from an ExpressRoute partner, you must provide the ExpressRoute Service Key. The Service Key uniquely identifies your circuit.
 
 > [!TIP]
 > Learn more about ExpressRoute troubleshooting in the [Troubleshoot virtual network connectivity in Microsoft Azure](/training/modules/cloud-hybrid-connectivity/) module.

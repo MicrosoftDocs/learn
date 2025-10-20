@@ -11,7 +11,7 @@ metadata:
 summary: >
   Explore concepts and methodologies for evaluating generative AI applications. Through code-first exercises and real-world scenarios, you'll learn to analyze and assess output quality, evaluate output using custom evaluators, and generate synthetic datasets.
 prerequisites: |
-  - An Azure subscription – [Create one for free](https://azure.microsoft.com/free/cognitive-services/)
+  - An Azure subscription – [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
   - Familiarity with Azure and the Azure portal
   - Ability to understand Python at a beginner level
   - Developing in browser:

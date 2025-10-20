@@ -23,7 +23,7 @@ You should be familiar with:
 
 To follow along with the exercises in the module, you need:
 
-- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
+- An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
 - Either:
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.

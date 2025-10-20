@@ -10,8 +10,6 @@ Here's some additional information that might be helpful:
 
 - [Introduction to Azure Service Health - Training](/training/modules/intro-to-azure-service-health/)
 
-- [Improve incident response with alerting on Azure - Training](/training/modules/incident-response-with-alerting-on-azure/?source=recommendations)
-
 - [Is Azure up? Outages, resilience, and Azure Service Health alerts](https://youtu.be/7bDR7xjrN2w)
 
 - [Microsoft Azure incident readiness](/services-hub/unified/health/ir-azure)

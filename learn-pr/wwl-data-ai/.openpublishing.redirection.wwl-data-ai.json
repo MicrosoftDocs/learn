@@ -5096,6 +5096,22 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/connect-agent-to-mcp-tools/6-summary.yml",
       "redirect_url": "/training/modules/connect-agent-to-mcp-tools/7-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/10-exercise.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/9-exercise"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/11-knowledge-check.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/10-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/12-summary.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/11-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/9-manage-orchestration-runtime-lifecycles.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution"
     }
   ]
 }

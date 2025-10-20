@@ -7,7 +7,6 @@ Ensuring that your development and operations teams have access to the same tele
 For a more hands-on approach to Azure Monitor and Application Insights, you have many options. Check out these modules to learn more:
 
 * [Analyze your Azure infrastructure by using Azure Monitor logs](/training/modules/analyze-infrastructure-with-azure-monitor-logs?azure-portal=true)
-* [Improve incident response with alerting on Azure](/training/modules/incident-response-with-alerting-on-azure?azure-portal=true)
 * [Monitor the health of your Azure virtual machine by collecting and analyzing diagnostic data](/training/modules/monitor-azure-vm-using-diagnostic-data?azure-portal=true)
 * [Capture Web Application Logs with App Service Diagnostics Logging](/training/modules/capture-application-logs-app-service?azure-portal=true)
 * [Instrument server-side web application code with Application Insights](/training/modules/instrument-web-app-code-with-application-insights?azure-portal=true)

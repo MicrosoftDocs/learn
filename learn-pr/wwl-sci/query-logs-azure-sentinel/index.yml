@@ -3,7 +3,7 @@ uid: learn.wwl.query-logs-azure-sentinel
 metadata:
   title: Query logs in Microsoft Sentinel
   description: "Query logs in Microsoft Sentinel"
-  ms.date: 05/06/2025
+  ms.date: 10/01/2025
   author: KenMAG
   ms.author: kelawson
   ms.topic: module

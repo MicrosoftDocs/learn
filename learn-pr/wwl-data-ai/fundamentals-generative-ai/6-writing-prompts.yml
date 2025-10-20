@@ -1,18 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-generative-ai.writing-prompts
-title: Improve prompt results
+title: Prompts
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Improve prompt results
-  description: Understand how submitting clear, specific prompts produces better generative AI results. See examples of best practices for prompt engineering.
+  title: Prompts
+  description: Submitting clear, specific prompts produces better generative AI results.
   author: sherzyang
   ms.author: sheryang
-  ms.date: 11/26/2024
+  ms.date: 10/04/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 3
+  zone_pivot_groups: video-or-text
+durationInMinutes: 5
 content: |
   [!include[](includes/6-writing-prompts.md)]
 

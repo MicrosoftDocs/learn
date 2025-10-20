@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-sk-multi-agent-solution.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This unit contains a knowledge check, which can help learners reinforce their understanding of the material.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 09/26/2025
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What's the first step in the Microsoft Agent Framework's unified orchestration workflow?"  
+    choices:  
+    - content: "Select and create an orchestration pattern"  
+      isCorrect: false  
+      explanation: "Incorrect. Selecting and creating an orchestration comes after defining the agents."  
+    - content: "Define your agents and describe their capabilities"  
+      isCorrect: true  
+      explanation: "Correct. The workflow begins by defining each agent and specifying what it can do."  
+    - content: "Start a runtime to manage execution"  
+      isCorrect: false  
+      explanation: "Incorrect. Starting a runtime happens later in the workflow, after defining agents and orchestration."
+  - content: "For brainstorming and collaborative problem solving among multiple agents, which orchestration pattern is most suitable?"  
+    choices:  
+    - content: "Group Chat"  
+      isCorrect: true  
+      explanation: "Correct. Group Chat coordinates multiple agents in a shared conversation for collaboration and consensus."  
+    - content: "Magentic"  
+      isCorrect: false  
+      explanation: "Incorrect. Magentic is for complex multi-agent problem solving across domains, not focused specifically on collaborative brainstorming."  
+    - content: "Sequential"  
+      isCorrect: false  
+      explanation: "Incorrect. Sequential is for stepwise processing, not collaborative discussion."  
+  - content: "Which pattern dynamically transfers control between agents based on context or rules?"  
+    choices:  
+    - content: "Handoff"  
+      isCorrect: true  
+      explanation: "Correct. Handoff allows tasks to move between agents depending on context, rules, or expertise."  
+    - content: "Concurrent"  
+      isCorrect: false  
+      explanation: "Incorrect. Concurrent runs tasks independently in parallel, not dynamically based on context."  
+    - content: "Sequential"  
+      isCorrect: false  
+      explanation: "Incorrect. Sequential follows a fixed order and doesn't dynamically change control between agents."  

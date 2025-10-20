@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dpu.hotpatch-updates
+title: Hotpatch updates for Windows client devices
+metadata:
+  title: Hotpatch Updates For Windows Client Devices
+  description: In this module, you’ll explore how Windows hotpatching operates within the broader update ecosystem. You’ll review the configuration steps for enabling hotpatch updates, examine eligibility requirements for x64 and ARM64 devices, and see how ring deployment helps IT admins manage updates safely and efficiently.
+  ms.date: 10/07/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+  ms.custom: CW051525-3
+summary: >
+  This story introduces how Windows hotpatching streamlines the update process by applying security patches without requiring a reboot. It explains how you can configure, deploy, and manage hotpatch updates to keep devices secure with minimal disruption.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Configure a Windows quality update policy to enable hotpatching through Windows Autopatch
+  - Identify prerequisites and device requirements for hotpatching
+  - Describe what hotpatch updates are and how they function
+prerequisites: |
+  - None
+iconUrl: /training/achievements/hotpatch-updates.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - intune
+  - windows-11
+units:
+  - learn.dpu.hotpatch-updates.introduction
+  - learn.dpu.hotpatch-updates.protection-with-less-disruption
+  - learn.dpu.hotpatch-updates.update-schedules
+  - learn.dpu.hotpatch-updates.hotpatch-devices
+  - learn.dpu.hotpatch-updates.summary
+badge:
+  uid: learn.dpu.hotpatch-updates.badge

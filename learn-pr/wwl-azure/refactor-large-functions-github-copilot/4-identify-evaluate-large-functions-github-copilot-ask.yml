@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.refactor-large-functions-github-copilot.identify-evaluate-large-functions-github-copilot-ask
+title: Identify and evaluate large functions using GitHub Copilot's Ask mode
+metadata:
+  title: Identify and Evaluate Large Functions using GitHub Copilot's Ask Mode
+  description: Identify and evaluate large functions using GitHub Copilot's Ask mode.
+  ms.date: 10/14/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-identify-evaluate-large-functions-github-copilot-ask.md)]

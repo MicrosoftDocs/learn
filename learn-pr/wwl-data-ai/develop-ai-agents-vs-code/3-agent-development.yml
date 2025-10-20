@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agents-vs-code.agent-development
+title: Develop AI agents in Visual Studio Code
+metadata:
+  title: Develop AI Agents in Visual Studio Code
+  description: Learn how to develop AI agents using the Azure AI Foundry extension in Visual Studio Code.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 10/06/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-agent-development.md)]
+

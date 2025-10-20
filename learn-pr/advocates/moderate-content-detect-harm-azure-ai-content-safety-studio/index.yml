@@ -24,7 +24,7 @@ abstract: |
   - Mitigate direct and indirect prompt injections.
   - Send filter configurations as output to code.
 prerequisites: |
-  - An Azure subscription. [Create one for free](https://azure.microsoft.com/free/).
+  - An Azure subscription. [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
   - Familiarity with Azure and the Azure portal.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

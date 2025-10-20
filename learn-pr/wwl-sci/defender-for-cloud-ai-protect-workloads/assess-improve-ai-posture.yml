@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.defender-for-cloud-ai-protect-workloads.assess-improve-ai-posture
+title: Assess and improve AI security posture with Cloud Security Posture Management (CSPM)
+metadata:
+  title: Assess and improve AI security posture with Cloud Security Posture Management (CSPM)
+  description: "Assess and improve AI security posture with Cloud Security Posture Management (CSPM)."
+  ms.date: 10/13/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/assess-improve-ai-posture.md)]

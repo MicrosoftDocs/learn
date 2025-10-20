@@ -1,77 +1,68 @@
-**AzureAIAgent** is a specialized agent within the Semantic Kernel framework, designed to provide advanced conversational capabilities with seamless tool integration. It automates tool calling, eliminating the need for manual parsing and invocation. The agent also securely manages conversation history using threads, reducing the overhead of maintaining state. The AzureAIAgent class supports many built-in tools, including file retrieval, code execution, and data interaction via Bing, Azure AI Search, Azure Functions, and OpenAPI.
+**Azure AI Foundry Agent** is a specialized agent within the Microsoft Agent Framework, designed to provide enterprise-level conversational capabilities with seamless tool integration. It automatically handles tool calling, so you don't need to manually parse and invoke functions. The agent also securely manages conversation history using threads, which reduces the work of maintaining state. The Azure AI Foundry Agent supports many built-in tools, including code interpreter, file search, and web search. It also provides integration capabilities for Azure AI Search, Azure Functions, and other Azure services.
 
-## Creating an AzureAIAgent
+## Creating an Azure AI Foundry Agent
 
-An AzureAIAgent object encapsulates all the core capabilities you typically use the Kernel for, like function execution, planning, and memory access. This object acts as a self-contained agent runtime.
+An Azure AI Foundry Agent includes all the core capabilities you typically need for enterprise AI applications, like function execution, planning, and memory access. This agent acts as a self-contained runtime with enterprise-level features.
 
-To use an AzureAIAgent:
+To use an Azure AI Foundry Agent:
 1. Create an Azure AI Foundry project.
-1. Add the project connection string to your Semantic Kernel application code.
-1. Create an AzureAIAgentSettings object.
-1. Create an AzureAIAgent client.
-1. Create an agent definition on the agent service provided by the client.
-1. Create an agent based on the definition.
+1. Add the project connection string to your Microsoft Agent Framework application code.
+1. Set up authentication credentials.
+1. Create a `ChatAgent` with an `AzureAIAgentClient`.
+1. Define tools and instructions for your agent.
 
-Here's the code that illustrates how to create an AzureAIAgent:
+Here's the code that shows how to create an Azure AI Foundry Agent:
 
 ```python
-from azure.identity.aio import DefaultAzureCredential
-from semantic_kernel.agents import AzureAIAgent, AzureAIAgentThread, AzureAIAgentSettings
+from agent_framework import AgentThread, ChatAgent
+from agent_framework.azure import AzureAIAgentClient
+from azure.identity.aio import AzureCliCredential
 
-# Create an AzureAIAgentSettings object
-ai_agent_settings = AzureAIAgentSettings()
+def get_weather(
+    location: Annotated[str, Field(description="The location to get the weather for.")],
+) -> str:
+    """Get the weather for a given location."""
+    return f"The weather in {location} is sunny with a high of 25°C."
 
-# Create an AzureAIAgent client
-async with (@
-    DefaultAzureCredential() as creds,
-    AzureAIAgent.create_client(credential=creds) as client,
+# Create a ChatAgent with Azure AI client
+async with (
+    AzureCliCredential() as credential,
+    ChatAgent(
+        chat_client=AzureAIAgentClient(async_credential=credential),
+        instructions="You are a helpful weather agent.",
+        tools=get_weather,
+    ) as agent,
 ):
-    # Create an agent definition on the agent service provided by the client
-    agent_definition = await client.agents.create_agent(
-        model=ai_agent_settings.model_deployment_name,
-        name="<name>",
-        instructions="<instructions>",
-    )
-
-    # Create the AI agent based on the agent definition
-    agent = AzureAIAgent(
-        client=client,
-        definition=agent_definition,
-    )
+    # Agent is now ready to use
 ```
 
-Once your agent is defined, you can create a thread to interact with your agent and invoke responses for inputs. For example:
+Once your agent is created, you can create a thread to interact with your agent and get responses to your questions. For example:
 
 ```python
-# Create the agent thread
-thread: AzureAIAgentThread = AzureAIAgentThread(client=client)
+# Create the agent thread for ongoing conversation
+thread = agent.get_new_thread()
 
-try:
-    # Create prompts 
-    prompt_messages = ["What are the largest semiconductor manufacturing companies?"]
-
-    # Invoke a response from the agent
-    response = await agent.get_response(messages=prompt_messages, thread_id=thread.id)
-
-    # View the response
-    print(response)
-finally:
-    # Clean up the thread
-    await thread.delete() if thread else None
+# Ask questions and get responses
+first_query = "What's the weather like in Seattle?"
+print(f"User: {first_query}")
+first_result = await agent.run(first_query, thread=thread)
+print(f"Agent: {first_result.text}")
 ```
 
-### AzureAIAgent key components
+### Azure AI Foundry Agent key components
 
-The Semantic Kernel AzureAIAgent object relies on the following components to function:
+The Microsoft Agent Framework Azure AI Foundry Agent uses the following components to work:
 
-- **AzureAISAgentSettings** - an object that automatically includes the Azure AI Agent settings from the environment configuration. These settings will be used by the AzureAIAgents you create.
+- **AzureAIAgentClient** - manages the connection to your Azure AI Foundry project. This client lets you access the services and models associated with your project and provides enterprise-level authentication and security features.
 
-- **AzureAIAgent client** - an object that manages the connection to your Azure AI Foundry project. This object allows you to access the services and models associated with your project. 
+- **ChatAgent** - the main agent class that combines the client, instructions, and tools to create a working AI agent that can handle conversations and complete tasks.
 
-- **Agent service** - the AzureAIAgent client also contains an agent operations service. This service helps streamline the process of creating, managing, and running the agents for your project.
+- **AgentThread** - automatically keeps track of conversation history between agents and users, and manages the conversation state. You can create new threads or reuse existing ones to maintain context across interactions.
 
-- **Agent definition** - the AzureAI Agent model created via the AzureAI Project client. This definition specifies the AI deployment model that should be used, and the name and instructions for the agent.
+- **Tools integration** - support for custom functions that extend agent capabilities. Functions are automatically registered and can be called by agents to connect with external APIs and services.
 
-- **AzureAIAgentThread** - automatically maintains the conversation history between agents and users, and the state. You can add messages to a thread and use the agent to invoke a response from the LLM.
+- **Authentication credentials** - supports Azure CLI credentials, service principal authentication, and other Azure identity options for secure access to Azure AI services.
 
-These components work together to allow you to create an agent with instructions to define its purpose and invoke responses from the AI model.
+- **Thread management** - provides flexible options for thread creation, including automatic thread creation for simple scenarios and explicit thread management for ongoing conversations.
+
+These components work together to let you create enterprise-level agents with instructions to define their purpose and get responses from AI models while maintaining security, scalability, and conversation context for business applications.

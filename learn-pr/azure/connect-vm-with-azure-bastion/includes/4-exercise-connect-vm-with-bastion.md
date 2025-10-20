@@ -1,6 +1,6 @@
 In this unit, you'll create a virtual machine (VM) to act as your internal app VM and deploy Azure Bastion to connect to it.
 
-This exercise is optional. To complete it, you need access to an Azure subscription where you have permissions to create resources like a VM. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+This exercise is optional. To complete it, you need access to an Azure subscription where you have permissions to create resources like a VM. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 ## Create a resource group
 

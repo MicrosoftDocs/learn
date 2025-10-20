@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.identify-ai-agent-use-case
+metadata:
+  title: Identify and Prioritize High-Impact AI Agent Use Cases
+  description: Uncover and evaluate AI agent use cases that deliver measurable business value with financial efficiency.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.service: artificial-intelligence
+title: Identify and Prioritize High-Impact AI Agent Use Cases
+summary: Learn how to uncover and evaluate AI agent use cases that deliver measurable business impact while being optimized for minimal costs.
+abstract: |
+ In this module, you learn how to uncover and evaluate AI agent use cases that deliver measurable business value with financial efficiency.
+ This module guides you through a structured process to research relevant applications, assess feasibility, and prioritize initiatives based on their potential to reduce overhead, streamline resource allocation, and improve scalability.
+  By the end of this module, you are able to:
+    - Research existing use cases.
+    - Identify business needs & define AI use cases and KPIs.
+    -	Identify use cases, which are quick wins.
+prerequisites: |
+  - Basic understanding of AI and large language models (LLMs)
+  - Familiarity with cloud platforms and software lifecycle concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - developer
+products:
+  - azure-ai-foundry
+  - ai-services
+  - azure-openai
+  - ms-copilot
+subjects:
+  - artificial-intelligence
+units:
+- learn.identify-ai-agent-use-case.research-use-cases
+- learn.identify-ai-agent-use-case.identify-business-needs-define-ai-use-cases
+- learn.identify-ai-agent-use-case.identify-quick-wins
+- learn.identify-ai-agent-use-case.knowledge-check
+- learn.identify-ai-agent-use-case.summary
+badge:
+  uid: learn.identify-ai-agent-use-case.badge

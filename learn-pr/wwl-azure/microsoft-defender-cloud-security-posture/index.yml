@@ -25,7 +25,7 @@ abstract: |
 
   -   Connect hybrid and multicloud environments to Microsoft Defender for Cloud for centralized security management, and monitor external assets to safeguard against external threats.
 prerequisites: None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/microsoft-defender-module.svg
 levels:
 - intermediate
 roles:

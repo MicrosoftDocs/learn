@@ -5,8 +5,8 @@ metadata:
   title: Training and testing the neural network
   description: Learn how to train your neural network using the training data, and how to evaluate it using the test data.
   ms.date: 06/23/2025
-  author: robmcm
-  ms.author: robmcm
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.product: learning-tensorflow
   ms.contributors:

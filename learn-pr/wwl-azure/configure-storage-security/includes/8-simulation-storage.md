@@ -17,7 +17,7 @@ In this lab, you learn to create storage accounts for Azure blobs and Azure file
 
 > [!NOTE]
 > Estimated timing: 50 minutes. 
-> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 

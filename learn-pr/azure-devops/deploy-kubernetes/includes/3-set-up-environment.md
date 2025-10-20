@@ -13,7 +13,7 @@ To achieve these objectives, you will:
 
 ## Add a user to your organization
 
-To complete this module, an [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) is required. You can get started with Azure for free.
+To complete this module, an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) is required. You can get started with Azure for free.
 
 Although not necessary to work with Azure DevOps, an Azure subscription is necessary to deploy to Azure resources via Azure DevOps. To make the process more straightforward, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 

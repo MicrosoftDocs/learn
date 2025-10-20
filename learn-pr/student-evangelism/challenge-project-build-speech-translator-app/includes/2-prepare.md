@@ -25,4 +25,4 @@ To get started, you need:
 - A Microsoft Azure account.
 
 > [!NOTE]
-> If you're a student you can benefit from a [free Azure for Students subscription](https://azure.microsoft.com/free/students/?WT.mc_id=academic-114984-somelezediko) with credit to spend on Azure services. If you're not a student, you can still sign up for a [free Azure trial](https://azure.microsoft.com/free/?WT.mc_id=academic-114984-somelezediko).
+> If you're a student you can benefit from a [free Azure for Students subscription](https://azure.microsoft.com/free/students/?cid=msft_learn&WT.mc_id=academic-114984-somelezediko) with credit to spend on Azure services. If you're not a student, you can still sign up for a [free Azure trial](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn&WT.mc_id=academic-114984-somelezediko).

@@ -1,0 +1,64 @@
+### YamlMime:Module
+uid: learn.adopt-ai-agent-best-practice
+metadata:
+  title: Implement best practices to empower AI agent efficiency and ensure long-term success
+  description: Learn how to implement best practices for AI agent workloads by leveraging frameworks like AI Center of Excellence, FinOps, GenAI Ops, Cloud Adoption Framework, and Well-Architected Framework.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-task-based
+  ms.service: artificial-intelligence
+title: Implement best practices to empower AI agent efficiency and ensure long-term success
+summary: Learn how to implement best practices to empower AI agent efficiency and ensure long-term success by leveraging frameworks like AI Center of Excellence, FinOps, GenAI Ops, Cloud Adoption Framework, and Well-Architected Framework.
+abstract: |
+  In this module, you explore essential best practices that empower
+  your organization to drive cost-efficiency, strengthen governance, scale
+  AI capabilities, and foster consistency and knowledge sharing. These
+  practices are key to delivering high-quality AI agents across the
+  enterprise.
+
+  You gain insights into key frameworks such as the AI Center of
+  Excellence (CoE), FinOps, GenAI Ops, the Cloud Adoption Framework (CAF),
+  and the Well-Architected Framework (WAF). Each of these frameworks
+  offers unique approaches to accelerate adoption, optimize resources, and
+  align AI initiatives with strategic business outcomes.
+
+  While each framework brings distinct value, organizations aren't
+  expected to adopt them all. Instead, you can selectively apply the
+  frameworks, or specific best practices within them, that best support
+  your goals, operational context, and maturity level. This module
+  provides a high-level overview of each framework to help guide informed
+  decisions on which approaches are most relevant to your organization's
+  needs.
+  
+  By the end of this module, you are able to:
+    - "Understand the role of an AI Center of Excellence (CoE) in managing AI agents."
+    - "Describe the FinOps Framework and its relevance to AI agents."
+    - "Explain the principles of GenAI Ops and their application in managing AI agents."
+    - "Understand the Cloud Adoption Framework and its role in AI agent deployment."
+    - "Apply the Well-Architected Framework to ensure AI agent efficiency and reliability."
+prerequisites: |
+  - "Basic understanding of AI and large language models (LLMs)"
+  - "Familiarity with cloud platforms and software lifecycle concepts"
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - developer
+products: 
+  - azure-ai-foundry
+  - ai-services
+  - azure-openai
+  - ms-copilot
+subjects: 
+  - artificial-intelligence
+units:
+- learn.adopt-ai-agent-best-practice.ai-center-excellence
+- learn.adopt-ai-agent-best-practice.finops-framework
+- learn.adopt-ai-agent-best-practice.genai-ops
+- learn.adopt-ai-agent-best-practice.cloud-adoption-framework
+- learn.adopt-ai-agent-best-practice.well-architected-framework
+- learn.adopt-ai-agent-best-practice.knowledge-check
+- learn.adopt-ai-agent-best-practice.summary
+badge:
+  uid: learn.adopt-ai-agent-best-practice.badge

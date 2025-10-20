@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.establish-ai-cost-management-practices.detect-ai-usage-anomalies
+title: Detect AI usage anomalies
+metadata:
+  title: Detect AI usage anomalies
+  description: Learn how to detect AI usage anomalies to manage costs effectively.
+  ms.date: 10/03/2025
+  author: Orin-Thomas
+  ms.author: socuff
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-detect-ai-usage-anomalies.md)]

@@ -44,8 +44,12 @@ modules:
 - learn.github.responsible-ai-with-github-copilot
 - learn.github.introduction-to-github-copilot
 - learn.github.introduction-prompt-engineering-with-github-copilot
+- learn.github.copilot-spaces
 - learn.advanced-github-copilot
 - learn.github.github-copilot-across-environments
 - learn.github.github-copilot-management-and-customizations
+- learn.github.developer-use-cases-for-ai-with-github-copilot
+- learn.wwl.develop-unit-tests-using-github-copilot-tools
+
 trophy:
   uid: generic-badge-social.trophy

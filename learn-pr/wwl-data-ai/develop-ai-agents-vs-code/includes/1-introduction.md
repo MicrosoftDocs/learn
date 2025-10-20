@@ -1,0 +1,5 @@
+As generative AI models become more powerful and accessible, developers are moving beyond simple chat applications to build intelligent agents that can automate complex tasks. These AI agents combine large language models with specialized tools to access data, perform actions, and complete entire workflows with minimal human intervention.
+
+Visual Studio Code is a powerful platform for AI agent development, especially with the Azure AI Foundry extension. This extension brings enterprise-grade AI capabilities directly into your development environment. With the Azure AI Foundry for Visual Studio Code extension, you can discover and deploy models, create and configure agents, and test them in interactive playgrounds—all without leaving your code editor.
+
+This module introduces the core concepts of AI agent development and shows you how to use the Azure AI Foundry extension for Visual Studio Code to build, test, and deploy intelligent agents. You'll learn how to use Azure AI Foundry's Agent Service to create agents that can handle complex tasks, use various tools, and integrate with your existing applications.

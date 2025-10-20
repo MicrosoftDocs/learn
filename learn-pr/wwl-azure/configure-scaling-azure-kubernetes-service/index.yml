@@ -18,7 +18,7 @@ abstract: |
   * Integrating with Azure Container Instances (ACI)
 prerequisites: |
   None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/kubernetes-module.svg
 levels:
 - intermediate
 roles:
@@ -38,4 +38,4 @@ units:
 - learn.wwl.configure-scaling-azure-kubernetes-service.summary
 badge:
   uid: learn.wwl.configure-scaling-azure-kubernetes-service.badge
-
+
