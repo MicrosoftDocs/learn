@@ -1,11 +1,11 @@
-In this unit, you use Azure Cloud Shell as a Linux terminal. You also can access Cloud Shell through the Azure portal or at [Cloud Shell sign-in](https://shell.azure.com). You don't need to install anything on your PC or laptop to use Cloud Shell. 
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
 
 > [!NOTE]
-> In this module, you're using the Azure Cloud Shell on the right-hand side of the screen, but in real-world situations, you can also use the integrated Terminal in Visual Studio Code by selecting **Terminal** > **New Terminal**, then selecting **Powershell** in the drop-down in the top-left of the Terminal window.
+> In this module, you're using the Azure Cloud Shell, but you can also use the integrated Terminal in Visual Studio Code by selecting **Terminal** > **New Terminal**, then selecting **Powershell** in the drop-down in the top-left of the Terminal window.
 
-Before beginning this exercise, be sure to activate the sandbox.
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
 
-1. In the Azure Cloud Shell on the right-hand side of the screen, select **Switch to PowerShell** and then select **Confirm**.
+1. Open the [Azure Cloud Shell](https://shell.azure.com/). If it isn't already using PowerShell, select **PowerShell** from the drop-down menu, and then select **Confirm**.
 
 1. Run the following command in Cloud Shell, and then press <kbd>Enter</kbd> to verify that your system is set up to use PowerShell. The `$PSVersionTable` verifies your installation.
 
