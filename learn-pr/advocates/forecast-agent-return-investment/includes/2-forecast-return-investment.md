@@ -14,7 +14,15 @@ $$
 
 This formula accounts for both the initial investment and ongoing operational costs, giving a more realistic view of long-term returns.
 
-![A diagram listing components and drivers for Return on Investment (ROI).](../media/components-drivers.png)
+| Category          | Components                                        | Drivers |
+|-------------------|---------------------------------------------------|---------|
+| Benefits          | Business growth                                   | • Additional revenue from increased volume (existing products)<br>• Additional revenue from new products |
+| Benefits          | Cost savings                                      | • Non-IT cost savings from spending optimization<br>• IT cost savings from retired legacy technology |
+| Benefits          | Productivity improvement                          | • Application users’ productivity from manual process automation<br>• Data scientists and Machine Learning engineers' productivity |
+| Cost to achieve   | Implementation and application building           | • Upfront internal labor costs<br>• Upfront external costs |
+| Cost to achieve   | Training and change management                    | • Upfront internal labor costs (users and engineers)<br>• Upfront external costs |
+| Cost to maintain  | Cloud consumption and software licenses           | • Ongoing costs resulting from cloud consumption<br>• Ongoing costs from software licenses |
+| Cost to maintain  | Models/applications’ management and quality assurance | • Ongoing internal labor costs (data scientists and engineers)<br>• Ongoing internal labor costs (quality assurance) |
 
 ## Step-by-Step Guide to Forecast ROI for AI Agent Investments
 
@@ -101,11 +109,16 @@ To calculate NPV, you need:
 
 The formula is:
 
-![A diagram showing Net Present Value (NPV) formula.](../media/net-present-value.png)
+$$
+NPV = \sum_{t=1}^{n} \frac{CF_t}{(1 + r)^t} - I
+$$
 
 Where:
 
-![A diagram showing Net Present Value (NPV) conditions.](../media/net-present-value-conditions.png)
+- *CF*<sub>*t*</sub> = cash flow in year *t*
+- *r* = discount rate
+- *n* = number of years
+- *I* = initial investment
 
 ### Step 4: Run an Example
 

@@ -34,10 +34,9 @@ Example:
 |ROI (%)     |25%         |39%         |3%         |
 |Strategic value (1-10)     |7.5         |9.0         |6.5         |
 
-**Use Case Comparison Table Explained**
-
-In the comparison table, we estimated the cost to achieve and cost to maintain each AI use case based on typical implementation and operational expenses. For example, the "use case 1" has lower upfront costs due to simpler integration, while the "use case 2" requires more
-customization and training. The total benefits were forecasted by estimating the value of time saved, increased revenue, and reduced errors over a 5-year period. These values were then plugged into the basic ROI formula:
+> [!NOTE]
+> In the comparison table, we estimated the cost to achieve and cost to maintain each AI use case based on typical implementation and operational expenses. For example, the "use case 1" has lower upfront costs due to simpler integration, while the "use case 2" requires more
+> customization and training. The total benefits were forecasted by estimating the value of time saved, increased revenue, and reduced errors over a 5-year period. These values were then plugged into the basic ROI formula:
 
 **ROI (%) = (Total Benefits - Total Costs) / Total Costs × 100**
 
@@ -68,4 +67,4 @@ This helps illustrate how risk and uncertainty can affect the outcome, and why i
 ### Step 4: Interpret the Results
 
 - Use case 2 shows non-negative financial outcome (NPV) even in a conservative scenario.
-- If we believe its development cost will be $90,000, use case 2 needs to generate at least $200,000 in benefits over 5 years to result in a positive financial outcome (NPV).
+- If use case 2 has a development cost will be $90,000, it will need to generate at least $200,000 in benefits over 5 years to result in a positive financial outcome (NPV).
