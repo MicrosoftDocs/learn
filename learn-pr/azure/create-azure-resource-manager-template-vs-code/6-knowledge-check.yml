@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Check your knowledge.
-  ms.date: 10/29/2024
+  ms.date: 10/20/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -48,4 +48,4 @@ quiz:
     - content: "Azure Resource Manager deletes the previously deployed resources and redeploys them."
       isCorrect: false
       explanation: "If the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property changes, the resource is updated. If the resource doesn't exist, the resource is created."
-
+
