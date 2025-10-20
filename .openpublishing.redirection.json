@@ -59473,6 +59473,11 @@
       "source_path": "learn-pr/azure/tour-azure-portal/8-preview-features.md",
       "redirect_url": "/azure/azure-portal/azure-portal-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/tour-azure-portal/9-summary.md",
+      "redirect_url": "/azure/azure-portal/azure-portal-overview",
+      "redirect_document_id": false
     }
   ]
 }
