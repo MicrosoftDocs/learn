@@ -2,6 +2,8 @@ In this unit, you use Azure Cloud Shell as your Linux terminal. Azure Cloud Shel
 
 Here you'll run commands to construct powerful statements that pipe cmdlets together. You'll run helper cmdlets and formatting cmdlets to filter for the data you need and to ensure that the result is usable.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Discover the most-used processes on your machine
 
 To manage your machine, you sometimes need to discover what processes run on it and how much memory and CPU they consume. This information tells you what the machine spends its resources on. You can use this information to decide whether to introduce new processes on your machine, to leave the machine as it is, or to free resources by closing resource-intensive processes. The more you know about the processes that run on your machine, the better.

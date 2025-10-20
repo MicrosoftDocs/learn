@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.forcast-agent-return-investment
+metadata:
+  title: Calculate and communicate the return on investment (ROI) of AI agents
+  description: "AI agents are rapidly transforming how organizations operate, automating tasks, enhancing decision-making, and improving customer experiences. But to scale adoption and secure stakeholder buy-in, it's not enough to showcase innovation; leaders must clearly demonstrate the business value these agents deliver."
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-task-based 
+  ms.service: artificial-intelligence
+title: Calculate and communicate the return on investment (ROI) of AI agents
+summary: "This module introduces you to practical frameworks for quantifying and communicating the ROI of AI agents, even if you don't have a background in finance. Business leaders learn how to evaluate both quantified financial impact and strategic/intangible value, and how to apply these insights to prioritize use cases, build compelling business cases, and guide investment decisions."
+abstract: |
+  AI agents are rapidly transforming how organizations operate, automating tasks, enhancing decision-making, and improving customer experiences. But to scale adoption and secure stakeholder buy-in, it's not enough to showcase innovation; leaders must clearly demonstrate the business value these agents deliver.
+  
+  This module introduces you to practical frameworks for quantifying and communicating the ROI of AI agents, even if you don't have a background in finance. Business leaders learn how to evaluate both quantified financial impact and strategic/intangible value, and how to apply these insights to prioritize use cases, build compelling business cases, and guide investment decisions.
+  
+  By the end of this module, you are able to:
+  - Quantify the financial impact of AI agents using ROI and net present value (NPV) frameworks.
+  - Describe the essentials for forecasting ROI across short- and long-term horizons.
+  - Prioritize AI use cases based on financial and strategic value.
+  - Apply sensitivity analysis to assess risk and variability in outcomes.
+  - Build and communicate a business case for AI agent investments.
+prerequisites: |
+  - "Basic understanding of AI and large language models (LLMs)"
+  - "Familiarity with cloud platforms and software lifecycle concepts"
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - developer
+products: 
+  - azure-ai-foundry
+  - ai-services
+  - azure-openai
+  - ms-copilot
+subjects: 
+  - artificial-intelligence
+units:
+- learn.forcast-agent-return-investment.convert-agents-business-impact
+- learn.forcast-agent-return-investment.forecast-return-investment
+- learn.forcast-agent-return-investment.apply-return-investment-analysis
+- learn.forcast-agent-return-investment.knowledge-check
+- learn.forcast-agent-return-investment.summary
+badge:
+  uid: learn.forcast-agent-return-investment.badge
