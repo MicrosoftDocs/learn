@@ -5,12 +5,12 @@ With hardware-backed protection, integrated access to Microsoft 365 Copilot, and
 ### 🔐 Protection against evolving threats  
 Windows 11 Pro devices are built with advanced protections designed to reduce security incidents and help you guard against modern threats—right out of the box.
 
-As Windows 10 support ends, this built-in protection helps you reduce risk and safeguard data without the need for added tools or processes.
+With Windows 10 support ended, these built-in protections help reduce risk and safeguard data without the need for extra tools or processes.
 
 ### ⚡ Supercharged efficiency with AI  
 Windows 11 Pro unlocks AI-powered workflows, helping you work smarter and get more done—without extra effort.
 
-If you're still using older devices, upgrading gives you a boost in speed and responsiveness that makes everyday tasks easier and faster to complete.
+Upgrading from older devices gives you a boost in speed and responsiveness that makes everyday tasks easier and faster to complete.
 
 ### 🚀 Quick to deploy, easy to integrate  
 Windows 11 Pro is designed to work with the tech you already use, making it easier to upgrade without disrupting your workflow.
