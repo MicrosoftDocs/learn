@@ -151,7 +151,8 @@ New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 1. Sign in to the [Azure portal](https://portal.azure.com) and make sure you're using the appropriate subscription:
 
    1. Select your avatar in the upper-right corner of the page.
-   1. Select **Switch directory**. In the list, choose the the appropriate directory.
+   1. Select **Switch directory**. In the list, choose the appropriate directory.
+
 
 1. On the left-side panel, select **Resource groups**.
 
