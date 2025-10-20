@@ -7,3 +7,4 @@ After completing this module, you'll be able to:
 * Utilize Azure Container Apps built-in authentication and authorization
 * Create revisions and implement app secrets
 
+

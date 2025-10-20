@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-event-driven-real-time.8-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 03/05/2025
   author: SandraAhlgrimm
@@ -12,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: sakriema-03012021
+  module_assessment: true
 durationInMinutes: 2
 quiz:
   questions:
@@ -51,4 +50,4 @@ quiz:
     - content: "Events should always follow a naming convention."
       isCorrect: false
       explanation: "Naming conventions might be helpful, but for the overall event, building other things are more important."
-
+

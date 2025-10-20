@@ -10,3 +10,4 @@ You learned about using semantic search in Azure Database for PostgreSQL Flexibl
 Without semantic search, queries such as "sunny" don't match products called "bright natural light" even though it's an intended match. While this issue could be solved by adding extra product keywords, this process creates a problem when creating new property listings. The product could be undiscoverable without an exact keyword match if the keywords aren't added.
 
 Listings that are hard to find are hard to book. Irrelevant search results degrade the user experience, and manual keyword maintenance increases human costs. On the other hand, Azure OpenAI automates synonym matching by generating embedding vectors, and Azure Database for PostgreSQL does the vector query heavy lifting. This combination provides a rich & relevant search experience without tedious keyword optimization.
+

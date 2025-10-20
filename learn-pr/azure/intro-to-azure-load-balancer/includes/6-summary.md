@@ -3,7 +3,7 @@ In this module, you learned about Azure Load Balancer. An Azure service that all
 ## Learn more
 
 - [What is Azure Load Balancer?](/azure/load-balancer/load-balancer-overview?azure-portal=true)
-- [Understand Azure load balancing](/azure/architecture/guide/technology-choices/load-balancing-overview?azure-portal=true)
+- [Load-balancing options](/azure/architecture/guide/technology-choices/load-balancing-overview?azure-portal=true)
 - [Azure Load Balancer components](/azure/load-balancer/components?azure-portal=true)
-- [Configure Azure Load Balancer](/training/modules/configure-azure-load-balancer/)
-- [Improve application scalability and resiliency by using Azure Load Balancer](/training/modules/improve-app-scalability-resiliency-with-load-balancer/)
+- [Module: Introduction to Azure Load Balancer](/training/modules/intro-to-azure-load-balancer/)
+- [Module: Improve application scalability and resiliency by using Azure Load Balancer](/training/modules/improve-app-scalability-resiliency-with-load-balancer/)

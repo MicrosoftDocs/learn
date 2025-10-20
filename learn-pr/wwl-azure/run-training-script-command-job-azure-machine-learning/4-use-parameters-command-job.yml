@@ -2,8 +2,6 @@
 uid: learn.wwl.run-training-script-command-job-azure-machine-learning.use-parameters-command-job
 title: Use parameters in a command job
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use parameters in a command job
   description: Learn how to use parameters in a command job.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-use-parameters-command-job.md)]
-
+

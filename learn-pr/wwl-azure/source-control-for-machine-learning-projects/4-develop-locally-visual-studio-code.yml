@@ -2,8 +2,6 @@
 uid: learn.wwl.source-control-for-machine-learning-projects.develop-locally-visual-studio-code
 title: Develop locally with Visual Studio Code
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Develop locally with Visual Studio Code
   description: Develop locally with Visual Studio Code
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/4-develop-locally-visual-studio-code.md)]
-
+

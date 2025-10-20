@@ -44,7 +44,7 @@ Some prefixes changed from previous version of SQL Server for compatibility reas
 
 ## Supported file formats for PolyBase
 
-SQL Server 2022 supports the following file formats:
+SQL Server 2025 supports the following file formats:
 
 - CSV
 - Parquet

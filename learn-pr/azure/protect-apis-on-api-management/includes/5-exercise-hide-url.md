@@ -1,4 +1,4 @@
-If you host an API that includes its original URL in responses, clients may be able to bypass your API Management policies by connecting directly to the API. You can prevent that by masking the original URL in API responses.
+If you host an API that includes its original URL in responses, clients might be able to bypass your API Management policies by connecting directly to the API. You can prevent that by masking the original URL in API responses.
 
 The Census API example includes its URL in this way. You want to make sure that all requests go through API Management.
 
@@ -38,6 +38,6 @@ We can use the **Test** tool in the Azure portal to check that the policy behave
 
    :::image type="content" source="../media/5-test-mask-url.png" alt-text="Screenshot of the test screen for the GetLatestCensus operation of the Census Data API. The Send button is  highlighted.":::
 
-You should now see how the **Mask URL** transformation policy has altered the links within the response body to the API Management endpoints. You should see the name of your API Management instance in the URL.
+You should now see how the **Mask URL** transformation policy alters the links within the response body to the API Management endpoints. You should see the name of your API Management instance in the URL.
 
-:::image type="content" source="../media/5-test-results.png" alt-text="Screenshot of an HTTP response with the href value highlighted, showing that the URL has been masked.":::
+:::image type="content" source="../media/5-test-results.png" alt-text="Screenshot of an HTTP response with the href value highlighted, showing that the URL is masked.":::

@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-identity-governance
 title: Describe Microsoft Entra ID Governance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Microsoft Entra ID Governance
   description: "Describe Microsoft Entra ID Governance"
   ms.date: 08/02/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-describe-identity-governance.md)]
+  [!include[](includes/2-describe-identity-governance.md)]

@@ -5,7 +5,7 @@ metadata:
   description: "Learn how to connect your Azure subscriptions to Microsoft Defender for Cloud, enabling enhanced security monitoring, compliance management, and the implementation of best practices for threat protection."
   ms.date: 10/21/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: module
   ms.custom:
   - N/A

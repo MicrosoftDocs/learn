@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-generative-ai-app.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge Check
+  description: Test your knowledge.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 04/30/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What serves as the foundation of continuous monitoring for generative AI applications?"
+    choices:
+    - content: "Online Evaluation"
+      isCorrect: false
+      explanation: "Incorrect. Online Evaluations is an extension of tracing."
+    - content: "Tracing"
+      isCorrect: true
+      explanation: "Correct. Tracing captures the core telemetry data that enables all other monitoring and evaluation."
+    - content: "Application Insights "
+      isCorrect: false
+      explanation: "Incorrect. Application Insights displays trace data but does not generate it."
+  - content: "What does Azure AI Online Evaluation help assess in real time?"
+    choices:
+    - content: "The latency of AI responses."
+      isCorrect: false
+      explanation: "Incorrect. Latency is measured through tracing, not online evaluation."
+    - content: "The quality of AI-generated outputs."
+      isCorrect: true
+      explanation: "Correct. Online evaluation assesses response quality, safety, and relevance in real-time."
+    - content: "The token cost of model deployments."
+      isCorrect: false
+      explanation: "Incorrect. Token usage is tracked via tracing, not part of Online Evaluations."
+  - content: "Which component provides advanced observability tools including custom dashboards and configurable alerting mechanisms?"
+    choices:
+    - content: "Azure Monitor"
+      isCorrect: true
+      explanation: "Correct. Azure Monitor provides dashboards, alerts, and analytics for end-to-end observability."
+    - content: "Azure AI Inference SDK"
+      isCorrect: false
+      explanation: "Incorrect. The Inference SDK is used to run model operations, not for monitoring or observability."
+    - content: "Azure AI Foundry SDK"
+      isCorrect: false
+      explanation: "Incorrect. The Azure AI Foundry SDK manages projects and deployments but doesn’t offer observability tools."
+

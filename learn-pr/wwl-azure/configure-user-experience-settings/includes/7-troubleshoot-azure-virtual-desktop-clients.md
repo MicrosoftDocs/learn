@@ -39,8 +39,8 @@ You might need the client logs when investigating a problem.
 To retrieve the client logs:
 
 1.  Ensure no sessions are active and the client process isn't running in the background by right-clicking on the **Remote Desktop** icon in the system tray and selecting **Disconnect all sessions**.
-2.  Open **File Explorer**.
-3.  Navigate to the **%temp%\\DiagOutputDir\\RdClientAutoTrace** folder.
+1.  Open **File Explorer**.
+1.  Navigate to the **%temp%\\DiagOutputDir\\RdClientAutoTrace** folder.
 
 The logs are in the.ETL file format. You can convert to .CSV or .XML to make them easily readable by using the `tracerpt` command. Find the name of the file you want to convert and make a note of it.
 
@@ -69,14 +69,14 @@ If the Remote Desktop client for Windows or Azure Virtual Desktop Store app for 
 To reset user data from the client:
 
 1.  Open the **Remote Desktop** app on your device.
-2.  Select the three dots at the top right-hand corner to show the menu, then select **About**.
-3.  In the section **Reset user data**, select **Reset**. To confirm you want to reset your user data, select **Continue**.
+1.  Select the three dots at the top right-hand corner to show the menu, then select **About**.
+1.  In the section **Reset user data**, select **Reset**. To confirm you want to reset your user data, select **Continue**.
 
 To reset user data from the command line:
 
 1.  Open PowerShell.
-2.  Change the directory to where the Remote Desktop client is installed, by default is `C:\Program Files\Remote Desktop`.
-3.  Run the following command to reset user data. You'll be prompted to confirm you want to reset your user data.
+1.  Change the directory to where the Remote Desktop client is installed, by default is `C:\Program Files\Remote Desktop`.
+1.  Run the following command to reset user data. You'll be prompted to confirm you want to reset your user data.
     
     ```powershell
     .\msrdcw.exe /reset
@@ -93,14 +93,14 @@ To configure the policy to enable users to connect again depending on whether yo
 For Group Policy:
 
 1.  Open the **Group Policy Management Console (GPMC)** for session hosts managed with Active Directory or the **Local Group Policy Editor console** and edit the policy that targets your session hosts.
-2.  Browse to **Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Remote Desktop Services &gt; Remote Desktop Session Host &gt; Connections**
-3.  Set the policy setting **Allow users to connect remotely using Remote Desktop Services** to **Enabled**.
+1.  Browse to **Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Remote Desktop Services &gt; Remote Desktop Session Host &gt; Connections**
+1.  Set the policy setting **Allow users to connect remotely using Remote Desktop Services** to **Enabled**.
 
 For Intune:
 
 1.  Open the **Settings catalog**.
-2.  Browse to **Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Remote Desktop Services &gt; Remote Desktop Session Host &gt; Connections**
-3.  Set the policy setting **Allow users to connect remotely using Remote Desktop Services** to **Enabled**.
+1.  Browse to **Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Remote Desktop Services &gt; Remote Desktop Session Host &gt; Connections**
+1.  Set the policy setting **Allow users to connect remotely using Remote Desktop Services** to **Enabled**.
 
 ## Authentication and identity
 
@@ -128,4 +128,4 @@ Authentication issues can happen because you're using an *N* SKU of Windows on y
 
 ## Issue isn't listed here
 
-If your issue isn't listed here, see [Troubleshooting overview, feedback, and support for Azure Virtual Desktop](/azure/virtual-desktop/troubleshoot-set-up-overview) for information about how to open an Azure support case for Azure Virtual Desktop.
+If your issue isn't listed here, see [Troubleshooting overview, feedback, and support for Azure Virtual Desktop](/troubleshoot/azure/virtual-desktop/troubleshoot-set-up-overview) for information about how to open an Azure support case for Azure Virtual Desktop.

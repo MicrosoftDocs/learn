@@ -5,7 +5,7 @@ metadata:
   description: Explore network traffic filtering with Network Security Group, set up Microsoft Defender for Cloud, create a Log Analytics workspace, configure Log Analytics agent integration, Azure Key Vault networking, and connect an Azure SQL server using Azure Private Endpoint in the Azure portal. Enhance cloud security effectively. (SC-5002)
   ms.date: 06/06/2024
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: learning-path
 title: Secure Azure services and workloads with Microsoft Defender for Cloud regulatory compliance controls
 prerequisites: |

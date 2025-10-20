@@ -1,51 +1,23 @@
-Organizations need tools to prevent sensitive data from being exposed, whether through accidental sharing, poor security practices, or intentional misuse. Without strong protections, organizations face compliance risks, financial losses, and reputational damage.
+Sensitive data is exposed in many ways, whether through mistakes or intentional actions. Contoso needs policies that reduce the risk of sensitive information being shared, accessed, or used improperly. Data loss prevention and insider risk management help control data movement and detect activities that could lead to data exposure.
 
-## Common risks
+## Data loss prevention policies
 
-Sensitive data can be leaked or exposed in various ways. Organizations must identify these risks to implement effective security measures.
+Data loss prevention (DLP) policies help prevent accidental or unauthorized sharing of sensitive information. DLP works by inspecting content and applying policy actions based on conditions such as data type, destination, and user activity.
 
-- **Unauthorized sharing**: Employees might unintentionally send sensitive documents outside the organization, leading to potential data exposure.
-- **Data stored in unprotected locations**: Files saved to personal devices, unmanaged cloud apps, or external storage increase security risks.
-- **Malicious insiders**: Employees with access to sensitive data might misuse their privileges for financial gain, competitive advantage, or other malicious purposes.
+- **Detect sensitive information**: DLP policies use classification, sensitivity labels, and built-in sensitive information types to identify content that requires protection.
+- **Apply policy rules**: DLP evaluates conditions like content type, sharing location, and recipient to determine whether to allow, block, or warn users about an action.
+- **Protect data across services**: DLP policies apply to email, Teams chats and meetings, SharePoint, OneDrive, endpoints, and AI-powered services such as Microsoft 365 Copilot.
 
-## Mitigation strategies
+DLP policies reduce accidental exposure and help enforce compliance without blocking productivity.
 
-Organizations need tools to prevent data from being exposed, both accidentally and intentionally. Whether caused by human error, compromised accounts, or malicious actions, data leaks pose significant security and compliance risks. A structured approach to risk detection and policy enforcement helps reduce these risks while maintaining business productivity.
+## Insider risk management
 
-### Apply Insider Risk Management tools
+Insider risk management helps identify activities that could lead to intentional or accidental data exposure. These risks include data theft, unauthorized sharing, or risky behaviors involving sensitive information.
 
-Not all data threats come from external attackers. Insider risks, whether accidental or intentional, pose a serious security challenge. Organizations need tools to monitor activity, detect risks, and respond before data is compromised.
+Insider risk management policies allow organizations to:
 
-Microsoft Purview Insider Risk Management helps organizations:
+- Define risk indicators based on user activities, such as mass downloads, unusual sharing, or transferring data to unmanaged devices.
+- Detect patterns that might suggest data misuse without monitoring individual users directly.
+- Prioritize alerts based on risk levels to help security teams investigate potential issues.
 
-- Detect unusual file access, data transfers, and security violations.
-- Identify risky behavior while maintaining user privacy.
-- Automate risk alerts and investigations to reduce response times.
-
-By detecting potentially risky behavior early, organizations can take action before it results in data exposure.
-
-### Implement DLP policies
-
-Data loss prevention (DLP) policies help prevent sensitive data from being shared inappropriately. Organizations can define policies that automatically block or restrict sharing based on data sensitivity.
-
-With Microsoft Purview DLP, organizations can:
-
-- Prevent data leaks across email, cloud services, and endpoints.
-- Enforce restrictions on copying, pasting, or transferring sensitive files.
-- Apply policies dynamically to protect regulated data and intellectual property.
-
-DLP ensures that sensitive data isn't accidentally or deliberately exposed, while still allowing secure collaboration.
-
-### Use Adaptive Protection
-
-Static security policies might not be enough to address evolving threats. Adaptive protection adjusts security controls based on real-time risk insights from insider risk management, ensuring that sensitive data is only accessible under safe conditions.
-
-Microsoft Purview uses Adaptive Protection to:
-
-- Assess user activity and apply security policies dynamically.
-- Restrict data access for users exhibiting risky behavior based on Insider Risk Management signals.
-- Reduce unnecessary security friction for trusted users.
-
-By integrating insider risk insights with DLP enforcement, adaptive protection ensures that security adapts to user behavior, strengthening protection for high-risk users while minimizing disruptions for low-risk users.
-
-By proactively identifying risks and applying the right mitigation strategies, organizations can protect sensitive data while enabling secure collaboration.
+By using insider risk management, Contoso can reduce the chance of data leaks while respecting user privacy and maintaining compliance.

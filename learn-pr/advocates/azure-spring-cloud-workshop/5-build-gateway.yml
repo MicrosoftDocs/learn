@@ -2,8 +2,6 @@
 uid: learn.azure-spring-cloud-workshop.5-build-gateway
 title: Build a Spring Cloud Gateway
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Build a Spring Cloud Gateway
   description: Learn how to build a Spring Cloud Gateway.
   author: judubois
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/5-build-gateway.md)]
-
+

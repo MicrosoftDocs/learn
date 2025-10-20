@@ -1,4 +1,4 @@
-In this exercise, you'll create a modal dialog in a Razor class library that you can reuse in the default Blazor template application.
+In this exercise, you create a modal dialog in a Razor class library that you can reuse in the default Blazor template application.
 
 ![Screenshot of the modal dialog to be created in the standard Blazor template application.](../media/first-modal.png)
 
@@ -162,7 +162,7 @@ With the modal component now residing in the *FirstClassLibrary* project, add a 
     dotnet new blazor -o MyBlazorApp -f net8.0
     ```
 
-1. In the *MyBlazorApp* project, add a reference to the *FirstClassLibrary* project either by using the Visual Studio Add Reference feature or by running the following command from the *MyBlazorApp* folder:
+1. Add a reference to the *FirstClassLibrary* project in the *MyBlazorApp* project, either by using the Visual Studio Add Reference feature or by running the following command from the *MyBlazorApp* folder:
 
     ```dotnetcli
     dotnet add reference ../FirstClassLibrary

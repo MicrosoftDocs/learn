@@ -32,7 +32,7 @@ Azure SQL Managed Instance, as a PaaS service, inherently provides high availabi
 
 Azure SQL Managed Instance offers auto-failover groups for disaster recovery, protecting the entire managed instance and all its databases. This feature asynchronously replicates data from the primary Azure SQL Managed Instance to a secondary instance, but it's currently limited to the paired Azure region of the primary instance, with only one replica allowed.
 
-Similar to Azure SQL Database, auto-failover groups provide read-write and read-only listener endpoints, simplifying connection string management. If there's a failover, the application connection strings are automatically routed to the appropriate instance. However, these endpoints follow a slightly different format: `<fog-name>.zone_id.database.windows.net` for SQL Managed Instance, compared to `<fog-name>.zone_id.database.windows.net whereas Azure SQL Database is in the <fog-name>.secondary.database.windows.net` for Azure SQL Database.
+Similar to Azure SQL Database, auto-failover groups provide read-write and read-only listener endpoints, simplifying connection string management. If there's a failover, the application connection strings are automatically routed to the appropriate instance. However, these endpoints follow a slightly different format: `<fog-name>.zone_id.database.windows.net` for SQL Managed Instance, compared to `<fog-name>.zone_id.database.windows.net` whereas Azure SQL Database is in the `<fog-name>.secondary.database.windows.net` for Azure SQL Database.
 
 Both the primary and secondary managed instances must be within the same DNS zone. This ensures that the same multi-domain certificate can be used for client connection authentication between the instances in the failover group. You can specify a “DNS Zone Partner” through the Azure portal, PowerShell, or Azure CLI.
 
@@ -63,3 +63,4 @@ As with Azure SQL Database, you can't restore over an existing database. You nee
 By default, databases in a managed instance are encrypted using [Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?azure-portal=true) with a Microsoft-managed key. To take a user-initiated copy-only backup, you must disable TDE for the specific database. If a database is encrypted, you can restore it, but you need access to either the certificate or asymmetric key used for encryption. Without these, you can't restore the database to a SQL Managed Instance.
 
 To learn the new features for Azure SQL Managed Instance, see [What's new in Azure SQL Managed Instance?](/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new?azure-portal=true).
+

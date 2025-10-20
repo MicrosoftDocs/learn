@@ -2,8 +2,6 @@
 uid: learn.azure.azure.use-slurm-hpc-azure-cyclecloud
 title: Use Slurm for HPC on Azure CycleCloud
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Slurm for HPC on Azure CycleCloud
   description: Learn how to use the Slurm job scheduler with Azure CycleCloud.
   ms.date: 08/18/2024
@@ -40,4 +38,4 @@ units:
   - learn.azure.use-slurm-hpc-azure-cyclecloud.summary
 badge:
   uid: learn.azure.use-slurm-hpc-azure-cyclecloud.badge
-
+

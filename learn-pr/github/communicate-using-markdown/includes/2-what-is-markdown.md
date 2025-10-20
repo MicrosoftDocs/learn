@@ -1,6 +1,6 @@
-Markdown is a markup language that offers a lean approach to content editing by shielding content creators from the overhead of HTML. While HTML is great for rendering content exactly how it was intended, it takes up a lot of space and can be unwieldy to work with, even in small doses. Markdown offers a great compromise between the power of HTML for content description and the ease of plain text for editing.
+Markdown is a markup language that offers a lean approach to content editing by shielding content creators from the overhead of HTML. While HTML is great for rendering content exactly how it was intended, it takes up a lot of space and can be unwieldy to work with, even in small doses. Markdown offers an effective compromise between the power of HTML for content description and the ease of plain text for editing.
 
-In this unit, we'll discuss Markdown's structure and syntax. We'll also cover features of GitHub-Flavored Markdown (GFM), which are syntax extensions that allow you to integrate GitHub features into content.
+In this unit, we'll discuss Markdown's structure and syntax. We'll also cover features of GitHub-Flavored Markdown (GFM), including extensions for integrating GitHub features into your content.
 
 > [!NOTE]
 > This unit is intended to give you a taste of what Markdown is about. For a more in-depth review, reference the **Markdown syntax description** and **GitHub-Flavored Markdown Spec** articles in this module's Summary unit.
@@ -9,7 +9,7 @@ In this unit, we'll discuss Markdown's structure and syntax. We'll also cover fe
 
 The most important part of any communication on GitHub is usually the text itself, but how do you show that some parts of the text are more important than others?
 
-Using italics in text is as easy as surrounding the target text with single asterisks (`*`) or single underscores (`_`). Just be sure to close an emphasis with the same character with which you opened it. Be observant of how you combine the use of asterisks and underscores. Here are several examples:
+Using italics in text is as easy as surrounding the target text with single asterisks (`*`) or single underscores (`_`). Just be sure to close an emphasis with the same character you used to open it. Pay attention to consistency when combining asterisks and underscores. Here are several examples:
 
 ```markdown
 This is *italic* text.
@@ -39,7 +39,7 @@ __This is bold and *italic* text__ using double underscores for bold and single 
 >_This is **italic and bold** text_ using a single underscore for italic and double asterisks for bold.
 > __This is bold and *italic* text__ using double underscores for bold and single asterisks for italic.
 
-To use a literal asterisk, precede it with an escape character; in GFM, that's a backslash (`\`). This example results in the underscores and asterisks being shown in the output.
+To use a literal asterisk, precede it with an escape character; in GFM, that's a backslash (`\`). This displays the underscores and asterisks as plain text.
 
 ```markdown
 \_This is all \*\*plain\*\* text\_.
@@ -59,7 +59,7 @@ HTML provides content headings such as the `<h1>` tag. In Markdown, this is supp
 
 ## Link to images and sites
 
-Image and site links use a similar syntax.
+Image and site links follow a similar structure.
 
 ```markdown
 ![Link an image.](/learn/azure-devops/shared/media/mara.png)
@@ -75,7 +75,7 @@ Image and site links use a similar syntax.
 
 ## Make lists
 
-You can define ordered or unordered lists. You can also define nested items through indentation.
+You can define ordered or unordered lists. You can also create nested items through indentation.
 
 * Ordered lists start with numbers.
 * Unordered lists can use asterisks or dashes (`-`).
@@ -146,7 +146,7 @@ Here is a<br />line break
 
 ## Work with code
 
-Markdown provides default behavior for working with inline code blocks delimited by the backtick (\`) character. When decorating text with this character, it's rendered as code.
+Markdown provides default behavior for working with inline code blocks delimited by the backtick (\`) character. Wrapping text in backticks renders it as code.
 
 ```markdown
 This is `code`.
@@ -209,7 +209,7 @@ You can link to a commit by either pasting in its ID or simply using its secure 
 
 ## Mention users and teams
 
-Typing an `@` symbol followed by a GitHub username sends a notification to that person about the comment. This is called an "@mention", because you're mentioning the individual. You can also `@mention` teams within an organization.
+Typing an `@` symbol followed by a GitHub username sends a notification to that person about the comment. This is called an "@mention", and highlights the user or team.
 
 ```markdown
 @githubteacher
@@ -231,9 +231,9 @@ You can create task lists within issues or pull requests using the following syn
 
 ## Slash commands
 
-Slash commands can save you time by reducing the typing required to create complex Markdown.
+Slash commands can save you time by reducing the typing required to create structured content.
 
-You can use slash commands in any description or comment field in issues, pull requests, or discussions where that slash command is supported.
+You can use slash commands in any description or comment field in issues, pull requests, or discussions where supported.
 
 | Command | Description |
 | -------------- | ------------- |

@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-versioning-strategy.examine-release-views
 title: Examine release views
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine release views
   description: "Examine release views"
   ms.date: 05/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-examine-release-views.md)]
+  [!include[](includes/4-examine-release-views.md)]

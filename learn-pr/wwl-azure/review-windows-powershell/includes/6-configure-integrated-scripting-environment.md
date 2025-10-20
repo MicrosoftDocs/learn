@@ -15,4 +15,7 @@ Other ISE features include:
 - Integration with Windows PowerShell’s debugging capabilities.
 
 > [!NOTE]
-> The Windows PowerShell ISE is available on Windows OS, but it won't work with PowerShell 6 and newer. For a similar experience, you can use Visual Studio Code (VS Code) with the PowerShell extension. You will learn more about it in the next unit of this module. 
+> The PowerShell ISE is no longer in active feature development. As a shipping component of Windows, it continues to be officially supported for security and high-priority servicing fixes. We currently have no plans to remove the ISE from Windows.
+Windows PowerShell ISE won't work with PowerShell 6 and newer. For a similar experience, you can use Visual Studio Code (VS Code) with the PowerShell extension. You will learn more about it in the next unit of this module. 
+
+

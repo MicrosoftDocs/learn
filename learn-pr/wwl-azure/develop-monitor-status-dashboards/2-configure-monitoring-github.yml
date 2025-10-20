@@ -2,8 +2,6 @@
 uid: learn.wwl.develop-monitor-status-dashboards.configure-monitoring-github
 title: Configure monitoring in GitHub
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure monitoring in GitHub
   description: "Configure monitoring in GitHub"
   ms.date: 05/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-configure-monitoring-github.md)]
+  [!include[](includes/2-configure-monitoring-github.md)]

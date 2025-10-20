@@ -9,29 +9,22 @@ The Azure AI Speech service supports multiple output formats for the audio strea
 - Sample-rate
 - Bit-depth
 
-The supported formats are indicated in the SDK using the **SpeechSynthesisOutputFormat** enumeration. For example, `SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm`.
+For example, the following Python code sets the speech output format for a previously defined **SpeechConfig** object named *speech_config*:
 
-To specify the required output format, use the **SetSpeechSynthesisOutputFormat** method of the **SpeechConfig** object:
-
-```csharp
-speechConfig.SetSpeechSynthesisOutputFormat(SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm);
+```python
+speech_config.set_speech_synthesis_output_format(SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm)
 ```
 
-For a full list of supported formats and their enumeration values, see the [Azure AI Speech SDK documentation](/dotnet/api/microsoft.cognitiveservices.speech.speechsynthesisoutputformat).
+For a full list of supported formats and their enumeration values, see the [Azure AI Speech SDK documentation](/python/api/azure-cognitiveservices-speech/azure.cognitiveservices.speech.speechsynthesisoutputformat).
 
 ## Voices
 
-The Azure AI Speech service provides multiple voices that you can use to personalize your speech-enabled applications. There are two kinds of voice that you can use:
+The Azure AI Speech service provides multiple voices that you can use to personalize your speech-enabled applications. Voices are identified by names that indicate a locale and a person's name - for example `en-GB-George`.
 
-- *Standard voices* - synthetic voices created from audio samples.
-- *Neural voices* - more natural sounding voices created using deep neural networks.
+The following Python example code sets the voice to be used
 
-Voices are identified by names that indicate a locale and a person's name - for example `en-GB-George`.
-
-To specify a voice for speech synthesis in the **SpeechConfig**, set its **SpeechSynthesisVoiceName** property to the voice you want to use:
-
-```csharp
-speechConfig.SpeechSynthesisVoiceName = "en-GB-George";
+```python
+speech_config.speech_synthesis_voice_name = "en-GB-George"
 ```
 
 For information about voices, see the [Azure AI Speech SDK documentation](/azure/ai-services/speech-service/language-support?tabs=tts).

@@ -17,3 +17,7 @@ Let's look at some of the properties you need to specify to create your security
 - **Priority**: Assigns the priority order value for the security rule. Rules are processed according to the priority order of all rules for a network security group, including a subnet and network interface. The lower the priority value, the higher priority for the rule.
 
    :::image type="content" source="../media/security-priority.png" alt-text="Screenshot that shows how to set the priority value for a security rule in the Azure portal.":::
+
+
+> [!TIP]
+> Expand your learning with the [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/) training module. This module includes a sandbox where you can practice. 

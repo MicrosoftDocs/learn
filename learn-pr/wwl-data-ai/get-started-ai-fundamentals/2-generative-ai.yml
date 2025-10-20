@@ -3,8 +3,6 @@
 uid: learn.wwl.get-started-ai-fundamentals.generative-ai
 title: Generative AI
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Generative AI
   description: "Generative AI is a subset of AI that focuses on creating new content, such as text, images, and music, using algorithms and models."
   ms.date: 02/24/2025
@@ -15,4 +13,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-generative-ai.md)]
+  [!include[](includes/2-generative-ai.md)]

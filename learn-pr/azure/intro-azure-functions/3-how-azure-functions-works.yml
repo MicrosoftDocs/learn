@@ -2,8 +2,6 @@
 uid: learn.intro-azure-functions.how-azure-functions-works
 title: How Azure Functions works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How Azure Functions works
   description: In this unit, you learn about how Azure Functions works along with some foundational concepts.
   author: ggailey777
@@ -27,4 +25,4 @@ quiz:
         - content: "An Azure Function can have multiple triggers."
           isCorrect: false
           explanation: "Incorrect! An Azure Function must have exactly one trigger."
-
+

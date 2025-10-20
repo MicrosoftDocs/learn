@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-development-operations-principles-for-machine-learn.integrate-azure-devops-tools
 title: Integrate Azure Machine Learning with DevOps tools
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Integrate Azure Machine Learning with DevOps tools
   description: Integrate Azure Machine Learning with DevOps tools
   author: wwlpublish
@@ -20,4 +18,4 @@ labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/4-integrate-azure-development-operations-tools.md)]
-
+

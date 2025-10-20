@@ -2,13 +2,12 @@
 uid: learn.tensorflow.intro-computer-vision.train-dense-neural-networks
 title: Training a dense neural network
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Training a dense neural network
   description: Learn how to classify images using one-layer dense neural network
   author: shwars
   ms.author: chnoring
   ms.date: 07/07/2021
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot
@@ -58,4 +57,4 @@ quiz:
     - content: "Options (b) and (c)"
       isCorrect: false
       explanation: "Metrics are specified during model compilation phase"
-
+

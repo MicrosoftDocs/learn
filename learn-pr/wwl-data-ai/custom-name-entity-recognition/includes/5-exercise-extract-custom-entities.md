@@ -1,8 +1,11 @@
-To complete the exercise for this module, launch the VM and follow the instructions.
+In this exercise, you use Azure AI Language to build a custom named entity recognition model.
 
-[!INCLUDE [Lab note](../../../includes/wwl/launch-exercise-note.md)]
+> [!NOTE]
+> To complete this lab, you need an **[Azure subscription](https://azure.microsoft.com/free?azure-portal=true)**.
 
-If you'd like to follow these instructions on your own computer, you can follow the [exercise instructions here](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/05-extract-custom-entities.html?azure-portal=true)
+Launch the exercise and follow the instructions.
+
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Labs/05-extract-custom-entities.html?azure-portal=true)
 
 > [!TIP]
-> After completing the exercise, if you've finished exploring Azure AI Services, delete the Azure resources that you created during the exercise.
+> After completing the exercise, if you've finished exploring Azure AI services, delete the Azure resources that you created during the exercise.

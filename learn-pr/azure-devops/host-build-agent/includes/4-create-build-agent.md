@@ -1,4 +1,4 @@
-In this unit, to configure a build agent that you can use in Microsoft Azure Pipelines, you'll use a virtual machine that runs on Microsoft Azure. We provide a virtual machine that you can use for the duration of this module.
+In this unit, you'll use a virtual machine that runs on Microsoft Azure to configure a build agent that you can use in Microsoft Azure Pipelines. We provide a virtual machine that you can use for the duration of this module.
 
 In this unit, you will:
 
@@ -18,7 +18,7 @@ To configure your VM, you have several choices:
 * You can automate the deployment by using an ARM template, Bicep, or other automated provisioning tool.
 * If you need to deploy many build agents, you can create a VM image that has all the software pre-installed.
 
-Configuring a system interactively is a good way to get started because it helps you understand the process and what's needed. To simplify the process, connect to your Ubuntu VM over SSH and run shell scripts to set up your build agent.
+Configuring a system interactively is a good way to get started, because it helps you understand the process and what's needed. To simplify the process, connect to your Ubuntu VM over SSH and run shell scripts to set up your build agent.
 
 > [!NOTE]
 > If you're unfamiliar with connecting to or configuring Linux systems, just follow along. You can apply the same concepts to Windows build agents.
@@ -86,7 +86,7 @@ To create your VM, run the following `az vm create` command:
 az vm create \
     --name MyLinuxAgent \
     --resource-group tailspin-space-game-rg \
-    --image canonical:0001-com-ubuntu-server-focal:20_04-lts:latest \
+    --image canonical:ubuntu-24_04-lts:server:latest \
     --size Standard_DS2_v2 \
     --admin-username azureuser \
     --generate-ssh-keys
@@ -94,9 +94,9 @@ az vm create \
 
 Your VM will take a few minutes to come up.
 
-[Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series) specifies the VM's size. A VM's size defines its processor speed, amount of memory, initial amount of storage, and expected network bandwidth. This is the same size that's provided by Microsoft-hosted agents. In practice, you can choose a size that provides more computing power or additional capabilities, such as graphics processing.
+[Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series) specifies the VM's size. A VM's size defines its processor speed, amount of memory, initial amount of storage, and expected network bandwidth. This is the same size that's provided by Microsoft-hosted agents. In practice, you can choose a size that provides more computing power or additional capabilities, such as graphics processing.
 
-The `--resource-group` argument specifies the _resource group_ that holds all the things that we need to create. A resource group enables you to administer all the VMs, disks, network interfaces, and other elements that make up our solution as a unit.
+The `--resource-group` argument specifies the _resource group_ that holds all the things that we need to create. A resource group allows you to administer all the VMs, disks, network interfaces, and other elements that make up our solution as a unit.
 
 ## Create the agent pool
 

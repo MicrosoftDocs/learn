@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets.provision
 title: Create an Azure Machine Learning workspace
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create an Azure Machine Learning workspace
   description: Create an Azure Machine Learning workspace
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-provision.md)]
-
+

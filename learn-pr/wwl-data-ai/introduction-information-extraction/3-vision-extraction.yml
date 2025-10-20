@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-information-extraction.vision-extraction
+title: Understand the extraction of data from images  
+metadata:
+  title: Understand the extraction of data from images    
+  description: "Understand how machine learning enables the extraction of data from images."
+  ms.date: 5/9/2025
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-vision-extraction.md)]

@@ -1,4 +1,4 @@
-By completing this module, you've learned to:
+By completing this module, you learned to:
 
 - Use Azure AI Language to enrich Azure AI Search indexes.
 - Enrich an AI Search index with custom classes.

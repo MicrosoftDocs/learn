@@ -1,8 +1,8 @@
-Now that your app is connected to a database, it's time to add the ability to order and configure a customer's pizza.
+Now that your app is connected to a database, it's time to add the ability for customers to configure and order a pizza.
 
-Blazing Pizza wants you to build the ability for customers to change the size of their special pizzas. You need to store the order, and you've chosen to store the application state in a container service.
+Blazing Pizza wants you to build the ability for customers to change the size of their special pizzas. You need to store the order, and you want to store the application state in a container service.
 
-In this exercise, you'll pass data to a new order configuration component and see how to store the app's state in an OrderState scoped service.
+In this exercise, you pass data to a new order configuration component and see how to store the app's state in an OrderState scoped service.
 
 ## Add a new order configuration dialog
 
@@ -61,24 +61,24 @@ When a customer selects a pizza, the dialog should allow them to change the size
 1. Add this code in the `@code` block under the `List<PizzaSpecial>` variable:
 
     ```csharp
-        Pizza configuringPizza;
-        bool showingConfigureDialog;
+    Pizza configuringPizza;
+    bool showingConfigureDialog;
     ```
 
 1. Add this code to create a pizza under the `OnInitializedAsync()` method:
 
     ```csharp
-        void ShowConfigurePizzaDialog(PizzaSpecial special)
+    void ShowConfigurePizzaDialog(PizzaSpecial special)
+    {
+        configuringPizza = new Pizza()
         {
-            configuringPizza = new Pizza()
-            {
-                Special = special,
-                SpecialId = special.Id,
-                Size = Pizza.DefaultSize
-            };
+            Special = special,
+            SpecialId = special.Id,
+            Size = Pizza.DefaultSize
+        };
         
-            showingConfigureDialog = true;
-        }
+        showingConfigureDialog = true;
+    }
     ```
 
 1. Allow the webpage to call the server-side `ShowConfigurePizzaDialog` method by allowing customers to select a pizza's `<li>` tag. Replace the `<li>` line with this code:
@@ -101,56 +101,56 @@ When a customer selects a pizza, the dialog should allow them to change the size
     The whole `index.razor` file should now look like this example:
 
     ```razor
-        @page "/"
-        @inject HttpClient HttpClient
-        @inject NavigationManager NavigationManager
+    @page "/"
+    @inject HttpClient HttpClient
+    @inject NavigationManager NavigationManager
         
-        <div class="main">
-          <h1>Blazing Pizzas</h1>
-          <ul class="pizza-cards">
-            @if (specials != null)
-            {
-              @foreach (var special in specials)
-              {
-                <li @onclick="@(() => ShowConfigurePizzaDialog(special))" style="background-image: url('@special.ImageUrl')">
-                  <div class="pizza-info">
-                  <span class="title">@special.Name</span>
-                  @special.Description
-                  <span class="price">@special.GetFormattedBasePrice()</span>
-                  </div>
-                </li>
-              }
-            }
-          </ul>
-        </div>
-        
-        @if (showingConfigureDialog)
+    <div class="main">
+        <h1>Blazing Pizzas</h1>
+        <ul class="pizza-cards">
+        @if (specials != null)
         {
-            <ConfigurePizzaDialog Pizza="configuringPizza" />
+            @foreach (var special in specials)
+            {
+              <li @onclick="@(() => ShowConfigurePizzaDialog(special))" style="background-image: url('@special.ImageUrl')">
+                <div class="pizza-info">
+                <span class="title">@special.Name</span>
+                @special.Description
+                <span class="price">@special.GetFormattedBasePrice()</span>
+                </div>
+              </li>
+            }
         }
+        </ul>
+    </div>
         
-        @code {
-          List<PizzaSpecial> specials = new();
-          Pizza configuringPizza;
-          bool showingConfigureDialog;
+    @if (showingConfigureDialog)
+    {
+        <ConfigurePizzaDialog Pizza="configuringPizza" />
+    }
+        
+    @code {
+        List<PizzaSpecial> specials = new();
+        Pizza configuringPizza;
+        bool showingConfigureDialog;
 
-          protected override async Task OnInitializedAsync()
-          {
-              specials = await HttpClient.GetFromJsonAsync<List<PizzaSpecial>>(NavigationManager.BaseUri + "specials");
-          }
-
-          void ShowConfigurePizzaDialog(PizzaSpecial special)
-          {
-              configuringPizza = new Pizza()
-              {
-                  Special = special,
-                  SpecialId = special.Id,
-                  Size = Pizza.DefaultSize
-              };
-          
-              showingConfigureDialog = true;
-          }
+        protected override async Task OnInitializedAsync()
+        {
+            specials = await HttpClient.GetFromJsonAsync<List<PizzaSpecial>>(NavigationManager.BaseUri + "specials");
         }
+
+        void ShowConfigurePizzaDialog(PizzaSpecial special)
+        {
+            configuringPizza = new Pizza()
+            {
+                Special = special,
+                SpecialId = special.Id,
+                Size = Pizza.DefaultSize
+            };
+          
+            showingConfigureDialog = true;
+        }
+    }
     ```
 
 1. Select <kbd>F5</kbd> or select **Run**. Then select **Start Debugging**.
@@ -160,7 +160,7 @@ When a customer selects a pizza, the dialog should allow them to change the size
 
 ## Handle the state of an order
 
-At the moment, the app shows the configuration dialog but doesn't allow you to cancel or move on to ordering the pizza. To manage the state of the order, you'll add a new order state container service.
+At the moment, the app shows the configuration dialog but doesn't allow you to cancel or move on to ordering the pizza. To manage the state of the order, you add a new order state container service.
 
 1. Stop the app if it's still running.
 1. Create a new folder in the *BlazingPizza* folder. Name it *Services*.
@@ -206,7 +206,7 @@ At the moment, the app shows the configuration dialog but doesn't allow you to c
     }
     ```
 
-    You'll see that there's code currently in the **index.razor** component that we can move into the new class. The next step is to make this service available in the app.
+    You notice that there's code currently in the **index.razor** component that we can move into the new class. The next step is to make this service available in the app.
 
 1. In the file explorer, select **Program.cs**.
 1. In the part of the file with the lines that start with `builder.Services.`, add this line:
@@ -217,7 +217,7 @@ At the moment, the app shows the configuration dialog but doesn't allow you to c
 
     From the previous exercise, we added our database context here. This code adds the new `OrderState` service. With this code in place, we can now use it in the `index.razor` component.
 
-1. Add the following `using` directive to the top of the file to resolve the `OrderState` class:
+1. Add the following `using` directive to the top of the file. This directive resolves any references to the `OrderState` class:
 
     ```csharp
     using BlazingPizza.Services;
@@ -244,7 +244,7 @@ At the moment, the app shows the configuration dialog but doesn't allow you to c
     }
     ```
 
-    There are now errors where all the code references what's been deleted.
+    There are now errors wherever the code references the elements you deleted.
 
 1. Change the call to `ShowConfigurePizzaDialog(special))` to use the OrderState version:
 
@@ -266,44 +266,44 @@ At the moment, the app shows the configuration dialog but doesn't allow you to c
 
 1. Select <kbd>F5</kbd> or select **Run**. Then select **Start Debugging**.
 
-    If everything is correct, you won't see any difference. The dialog displays as it did before.
+    If everything is correct, you shouldn't see any difference. The dialog displays as it did before.
 
 ## Cancel and make pizza orders
 
-You might have noticed in the OrderState class two methods that we haven't used yet. The `CancelConfigurePizzaDialog` and `ConfirmConfigurePizzaDialog` methods close the dialog, and add the pizza to an `Order` object if the customer has confirmed the order. Let's connect these methods to the configuration dialog buttons.
+You might notice that there are two methods in the OrderState class that aren't used yet. The `CancelConfigurePizzaDialog` and `ConfirmConfigurePizzaDialog` methods close the dialog, and add the pizza to an `Order` object once the customer confirms the order. Let's connect these methods to the configuration dialog buttons.
 
 1. Stop the app if it's still running.
 1. In the file explorer, expand **Shared**. Then select **ConfigurePizzaDialog.razor**.
 1. In the `@code` block, add two new parameters:
 
     ```razor
-      @code {
-        [Parameter] public Pizza Pizza { get; set; }
-        [Parameter] public EventCallback OnCancel { get; set; }
-        [Parameter] public EventCallback OnConfirm { get; set; }
-      }
-    ```
+    @code {
+       [Parameter] public Pizza Pizza { get; set; }
+       [Parameter] public EventCallback OnCancel { get; set; }
+       [Parameter] public EventCallback OnConfirm { get; set; }
+    }
+    `` `
 
 1. The buttons can now have `@onclick` directives added. Change the current code for the dialog buttons to this markup:
 
     ```razor
-      <div class="dialog-buttons">
-          <button class="btn btn-secondary mr-auto" @onclick="OnCancel">Cancel</button>
-          <span class="mr-center">
-              Price: <span class="price">@(Pizza.GetFormattedTotalPrice())</span>
-          </span>
-          <button class="btn btn-success ml-auto" @onclick="OnConfirm">Order ></button>
-      </div>
+    <div class="dialog-buttons">
+        <button class="btn btn-secondary mr-auto" @onclick="OnCancel">Cancel</button>
+        <span class="mr-center">
+            Price: <span class="price">@(Pizza.GetFormattedTotalPrice())</span>
+        </span>
+        <button class="btn btn-success ml-auto" @onclick="OnConfirm">Order ></button>
+    </div>
     ```
 
 1. The last step is to pass the `OrderState` methods for canceling and confirming orders. In the file explorer, expand **Pages**. Then select **Index.razor**.
 1. Change the code for the call to the `ConfigurePizzaDialog` component:
 
     ```razor
-        <ConfigurePizzaDialog
-          Pizza="OrderState.ConfiguringPizza"
-          OnCancel="OrderState.CancelConfigurePizzaDialog"
-          OnConfirm="OrderState.ConfirmConfigurePizzaDialog" />
+    <ConfigurePizzaDialog
+        Pizza="OrderState.ConfiguringPizza"
+        OnCancel="OrderState.CancelConfigurePizzaDialog"
+        OnConfirm="OrderState.ConfirmConfigurePizzaDialog" />
     ```
 
 1. Select <kbd>F5</kbd> or select **Run**. Then select **Start Debugging**.

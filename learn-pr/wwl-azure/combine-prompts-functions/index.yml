@@ -39,9 +39,8 @@ products:
 units:
 - learn.wwl.combine-prompts-functions.introduction
 - learn.wwl.combine-prompts-functions.understand-prompt-injections
-- learn.wwl.combine-prompts-functions.exercise-apply-trust-filters
 - learn.wwl.combine-prompts-functions.filter-invoked-functions
-- learn.wwl.combine-prompts-functions.exercise-add-filter-service-to-kernel
+- learn.wwl.combine-prompts-functions.exercise-apply-function-filters
 - learn.wwl.combine-prompts-functions.knowledge-check
 - learn.wwl.combine-prompts-functions.summary
 badge:

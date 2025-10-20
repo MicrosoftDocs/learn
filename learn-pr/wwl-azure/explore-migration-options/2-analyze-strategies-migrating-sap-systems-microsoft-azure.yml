@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-migration-options.analyze-strategies-migrating-sap-systems-microsoft-azure
 title: Analyze strategies for migrating SAP systems to Microsoft Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Analyze strategies for migrating SAP systems to Microsoft Azure
   description: "Analyze strategies for migrating existing on-premises SAP implementations to Microsoft Azure."
   ms.date: 08/01/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-analyze-strategies-migrating-sap-systems-microsoft-azure.md)]
+  [!include[](includes/2-analyze-strategies-migrating-sap-systems-microsoft-azure.md)]

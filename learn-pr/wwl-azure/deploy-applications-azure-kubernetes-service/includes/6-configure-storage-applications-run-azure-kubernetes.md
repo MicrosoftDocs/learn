@@ -1,7 +1,7 @@
 In this exercise, you step through the process of configuring a persistent volume for a pod on an AKS cluster. You use the AKS cluster provisioned in the first exercise of this module.
 
 > [!NOTE]
-> To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/free/).<br>
+> To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).<br>
 
 ### Create a custom storage class in an AKS cluster
 

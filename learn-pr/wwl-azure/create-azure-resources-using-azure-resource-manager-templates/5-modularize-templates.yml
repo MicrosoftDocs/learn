@@ -2,8 +2,6 @@
 uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates.modularize-templates
 title: Modularize templates
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Modularize templates
   description: "Modularize templates"
   ms.date: 05/22/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-modularize-templates.md)]
+  [!include[](includes/5-modularize-templates.md)]

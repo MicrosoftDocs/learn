@@ -4,8 +4,8 @@ metadata:
   title: View and manage reservations
   description: Learn how to view and manage reserved instances by using the Azure portal.
   ms.date: 10/24/2024
-  author: bandersmsft
-  ms.author: banders
+  author: tonyafehr
+  ms.author: tfehr
   ms.topic: unit
 title: View and manage reservations
 durationInMinutes: 5

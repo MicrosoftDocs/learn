@@ -2,8 +2,6 @@
 uid: learn.automate-azure-tasks-with-powershell.6-exercise-create-resource-interactively
 title: Exercise - Create an Azure Resource interactively with Azure PowerShell
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create an Azure Resource interactively with Azure PowerShell
   description: Exercise - Create an Azure Resource interactively with Azure PowerShell
   ms.date: 06/07/2024
@@ -16,4 +14,4 @@ interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/6-exercise-create-resource-interactively.md)]
-
+

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.automate-meeting-scheduling.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Automate meeting scheduling with Microsoft Teams" module.
+  ms.date: 09/18/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

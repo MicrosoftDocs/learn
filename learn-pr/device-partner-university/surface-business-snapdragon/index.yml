@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.dpu.surface-business-snapdragon
+title: Surface Pro for Business with Snapdragon® X Elite and Plus processors
+metadata:
+  title: Surface Pro For Business With Snapdragon® X Elite And Plus Processors
+  description: In this module, you'll learn about Surface Pro for Business with Snapdragon® X Elite and Plus processors.  
+  ms.date: 08/22/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: surface
+  ms.custom: CB052024-1
+summary: >
+  Learn how you can enhance productivity with Surface Pro for Business with Snapdragon® X Elite and Plus processors.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Leverage key features of Microsoft Surface Pro for Business to improve efficiency.
+  - Discover how AI-powered devices can enhance your productivity.
+  - Discover the benefits of Microsoft Surface Pro for Business for enhanced workflow.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.surface-business-snapdragon.introduction
+  - learn.dpu.surface-business-snapdragon.overview-copilot-plus-pc
+  - learn.dpu.surface-business-snapdragon.future-ai-computing
+  - learn.dpu.surface-business-snapdragon.data-privacy-and-control
+  - learn.dpu.surface-business-snapdragon.optimize-critical-software
+  - learn.dpu.surface-business-snapdragon.knowledge-check
+  - learn.dpu.surface-business-snapdragon.summary
+badge:
+  uid: learn.dpu.surface-business-snapdragon.badge

@@ -38,7 +38,7 @@ Someone who boarded at Queenstown would have a **1** in the second column:
 |---|---|---|
 |0|1|0|
 
-Someone who boarded at Southampton would have a **1** in the third column
+Someone who boarded at Southampton would have a **1** in the third column:
 
 |Port_Cherbourg|Port_Queenstown|Port_Southampton|
 |---|---|---|

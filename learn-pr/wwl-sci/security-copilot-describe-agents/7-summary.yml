@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-agents.summary
+title: Summary and resources
+metadata:
+  title: Summary and resources
+  description: Summary and resources for the module titled, Describe Microsoft Security Copilot agents.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 05/08/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
+
+
+

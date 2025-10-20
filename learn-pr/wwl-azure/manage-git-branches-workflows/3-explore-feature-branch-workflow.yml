@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-git-branches-workflows.explore-feature-branch-workflow
 title: Explore feature branch workflow
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore feature branch workflow
   description: "Explore feature branch workflow"
   ms.date: 05/24/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-explore-feature-branch-workflow.md)]
+  [!include[](includes/3-explore-feature-branch-workflow.md)]

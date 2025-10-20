@@ -2,12 +2,10 @@
 uid: learn.wwl.fine-tune-azure-databricks.how-to-fine-tune
 title: Fine-tune an Azure OpenAI model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Fine-tune an Azure OpenAI model
   description: "Fine-tune an Azure OpenAI model"
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/09/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 azureSandbox: false

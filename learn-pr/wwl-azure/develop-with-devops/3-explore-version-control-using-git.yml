@@ -2,8 +2,6 @@
 uid: learn.wwl.develop-with-devops.explore-version-control-using-git
 title: 'Explore version control using Git'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Explore version control using Git'
   description: "In this unit, explore Git as the preferred version control system for our organization's DevOps transition to GitHub."
   ms.date: 02/06/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-explore-version-control-using-git.md)]
-
+

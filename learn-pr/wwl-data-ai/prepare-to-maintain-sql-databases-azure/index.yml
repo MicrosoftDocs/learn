@@ -3,24 +3,33 @@ uid: learn.wwl.prepare-to-maintain-sql-databases-azure
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Prepare to maintain SQL databases on Azure
-  description: "Prepare to maintain SQL databases on Azure"
-  ms.date: 2/12/2025
+  title: Prepare to maintain SQL Server-based databases on Azure
+  description: "Prepare to maintain SQL Server-based databases on Azure"
+  ms.date: 09/04/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: azure-sql-database
-title: Prepare to maintain SQL databases on Azure
+  ai-usage: human-only
+title: Prepare to maintain SQL Server-based databases on Azure
 summary: Explore the role of a database administrator on Azure. Describe SQL Server-based offerings on Azure.
 abstract: |
   At the end of this module, you will be able to:
-  *   Understand the role of Azure Database Administrator as it fits in with other data platform roles.
-  *   Describe the key differences between the SQL Server-based database options in Azure.
-  *   Describe other features for Azure SQL platforms available.
+
+  -   Understand the role of Azure Database Administrator as it fits in with other data platform roles.
+
+  -   Describe the key differences between the SQL Server-based database options in Azure.
+
+  -   Describe other features for Azure SQL platforms available.
 prerequisites: |
-  *   Ability to navigate the Azure the portal.
-  *   Understanding of the traditional Database Administration role.
-  *   Experience with T-SQL programing language at a basic level.
+  -   Ability to navigate the Azure the portal.
+
+  -   Understanding of the traditional Database Administration role.
+
+  -   Experience with T-SQL programing language at a basic level.
 iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
 levels:
 - intermediate

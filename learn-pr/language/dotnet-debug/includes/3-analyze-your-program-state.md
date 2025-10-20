@@ -59,9 +59,9 @@ When you analyze a program defect's cause, watch your variables state to look fo
 
 Your variables are shown organized by scope:
 
-- **Local variables** are accessible in the current scope, usually the current function.
-- **Global variables** are accessible from everywhere in your program. System objects from the JavaScript runtime are also included, so don't be surprised if you see a lot of stuff in there.
-- **Closure variables** are accessible from the current closure, if any. A closure combines the local scope of a function with the scope from the outer function it belongs to.
+- **Local variables**: Accessible in the current scope, usually the current function.
+- **Global variables**: Accessible from everywhere in your program. System objects from the JavaScript runtime are also included, so don't be surprised if you see a lot of stuff in there.
+- **Closure variables**: Accessible from the current closure, if any. A closure combines the local scope of a function with the scope from the outer function it belongs to.
 
 You can unfold scopes and variables by selecting the arrow. When you unfold objects, you can see all the properties defined in the object.
 

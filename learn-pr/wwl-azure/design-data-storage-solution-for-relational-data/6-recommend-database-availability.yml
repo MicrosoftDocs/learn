@@ -2,9 +2,11 @@
 uid: learn.wwl.design-data-storage-solution-for-relational-data.design-for-azure-table-storage
 title: Recommend a solution for database availability
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recommend a solution for database availability
   description: "Recommend a solution for database availability"
-  ms.date: 12/10/2024
+  ms.date: 05/16/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

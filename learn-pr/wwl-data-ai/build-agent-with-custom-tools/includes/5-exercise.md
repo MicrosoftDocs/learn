@@ -1,4 +1,4 @@
-Now it's your opportunity to build an agent with custom tools. In this exercise, you create an agent in code and connect the tool definition to a custom developed tool.
+Now it's your opportunity to build an agent with custom tools. In this exercise, you create an agent in code and connect the tool definition to a custom tool function.
 
 > [!NOTE]
 > If you don't have an Azure subscription, and you want to explore Azure AI Foundry, you can [sign up for an account](https://azure.microsoft.com/free?azure-portal=true), which includes credits for the first 30 days.

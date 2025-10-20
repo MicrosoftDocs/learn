@@ -3,7 +3,7 @@ uid: learn.enable-windows-server-extended-security-updates-using-azure-arc
 metadata:
   ms.author: orthomas
   author: Orin-Thomas
-  ms.date: 01/03/2024
+  ms.date: 05/20/2025
   title: Enable Windows Server Extended Security Updates by using Azure Arc
   description: Use Azure Arc to enable Windows Server Extended Security Updates.
   ms.topic: module

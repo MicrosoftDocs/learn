@@ -2,8 +2,6 @@
 uid: learn.app-package-management-using-helm.create-install-helm-chart
 title: Create and install a Helm chart
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   description: Explore how a Helm chart defines an application's deployment information and install a chart from a Helm repository.
   title: Create and install a Helm chart
   author: schaffererin
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-create-install-helm-chart.md)]
-
+

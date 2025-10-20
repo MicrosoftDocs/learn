@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-provision-environments.exercise-set-up-service-connections
 title: Exercise - set up service connections
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - set up service connections
   description: "Exercise - set up service connections"
   ms.date: 05/06/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 30
 content: |
-  [!include[](includes/3-exercise-set-up-service-connections.md)]
+  [!include[](includes/3-exercise-set-up-service-connections.md)]

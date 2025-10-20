@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-pipelines-concurrency.enable-continuous-integration-azure-pipelines
 title: Enable Continuous Integration with Azure Pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable Continuous Integration with Azure Pipelines
   description: "Enable Continuous Integration with Azure Pipelines"
   ms.date: 05/23/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 45
 content: |
-  [!include[](includes/7-enable-continuous-integration-azure-pipelines.md)]
+  [!include[](includes/7-enable-continuous-integration-azure-pipelines.md)]

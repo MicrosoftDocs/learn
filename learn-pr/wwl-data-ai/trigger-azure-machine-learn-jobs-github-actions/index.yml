@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.trigger-azure-machine-learn-jobs-github-actions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Trigger Azure Machine Learning jobs with GitHub Actions
   description: MLOps, machine learning operations
   author: wwlpublish
@@ -45,4 +43,4 @@ units:
 - learn.wwl.trigger-azure-machine-learn-jobs-github-actions.summary
 badge:
   uid: learn.wwl.trigger-azure-machine-learning-jobs-github-actions.badge
-
+

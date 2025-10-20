@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-package-management.package-management-azure-artifacts
 title: Package management with Azure Artifacts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Package management with Azure Artifacts
   description: "Package management with Azure Artifacts"
   ms.date: 05/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 40
 content: |
-  [!include[](includes/10-package-management-azure-artifacts.md)]
+  [!include[](includes/10-package-management-azure-artifacts.md)]

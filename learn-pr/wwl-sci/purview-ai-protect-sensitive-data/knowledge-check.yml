@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-protect-sensitive-data.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your knowledge."
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How do sensitivity labels help protect content accessed by Copilot?"
+    choices:
+    - content: "By blocking users from opening labeled files in Microsoft 365 apps."
+      isCorrect: false
+      explanation: "Incorrect: Sensitivity labels don't block users from opening files in Microsoft 365 apps unless specific access restrictions are configured."
+    - content: "By enforcing encryption and access controls that Copilot must follow."
+      isCorrect: true
+      explanation: "Correct: Sensitivity labels enforce protection settings that Copilot respects, such as encryption and user permissions."
+    - content: "By requiring multi-factor authentication before users can view labeled content."
+      isCorrect: false
+      explanation: "Incorrect: Sensitivity labels don't enforce multi-factor authentication directly. That control is managed through identity and access policies."
+
+  - content: "How does Microsoft Purview Endpoint DLP help protect sensitive data when users interact with generative AI websites?"
+    choices:
+    - content: "By improving the accuracy of AI-generated summaries."
+      isCorrect: false
+      explanation: "Incorrect: Endpoint DLP doesn't influence content quality or accuracy."
+    - content: "By blocking users from pasting sensitive content into web forms on external sites."
+      isCorrect: true
+      explanation: "Correct: Endpoint DLP can block pasting into browsers to prevent data exposure."
+    - content: "By detecting and deleting AI-generated files stored in SharePoint."
+      isCorrect: false
+      explanation: "Incorrect: Endpoint DLP doesn't delete files or focus on storage cleanup."

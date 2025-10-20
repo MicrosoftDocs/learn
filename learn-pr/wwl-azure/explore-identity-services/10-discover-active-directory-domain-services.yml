@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-identity-services.discover-active-directory-domain-services-ad-ds
 title: Discover Active Directory Domain Services (AD DS)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Discover Active Directory Domain Services (AD DS)
   description: "Implement an identity and access management solution for on-premises, independently managed, isolated environments, with Active Directory Domain Services (AD DS)."
   ms.date: 08/01/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/10-discover-active-directory-domain-services.md)]
+  [!include[](includes/10-discover-active-directory-domain-services.md)]

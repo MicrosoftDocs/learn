@@ -2,8 +2,6 @@
 uid: learn.finetune-foundation-model-with-azure-machine-learning.evaluate-model
 title: Evaluate, deploy, and test a fine-tuned foundation model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Evaluate, deploy, and test a fine-tuned foundation model
   description: "Evaluate, deploy, and test a fine-tuned foundation model using the Azure Machine Learning studio."
   ms.date: 07/25/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-evaluate-model.md)]
+  [!include[](includes/4-evaluate-model.md)]

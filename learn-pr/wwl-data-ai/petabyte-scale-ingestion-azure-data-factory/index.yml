@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Petabyte-scale ingestion with Azure Data Factory
   description: "Petabyte-scale ingestion with Azure Data Factory or Azure Synapse Pipeline"
   ms.date: 02/13/2024
@@ -50,4 +48,4 @@ units:
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory.summary
 badge:
   uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory.badge
-
+

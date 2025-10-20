@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-hybrid-file-server-infrastructure.implement-azure-file-sync
 title: Implement Azure File Sync
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement Azure File Sync
   description: "Implement Azure File Sync"
   ms.date: 01/01/2025
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 11
 content: |
-  [!include[](includes/6-implement-azure-file-synchronization.md)]
+  [!include[](includes/6-implement-azure-file-synchronization.md)]

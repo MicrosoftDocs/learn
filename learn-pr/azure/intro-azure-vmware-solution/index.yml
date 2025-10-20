@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-azure-vmware-solution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure VMware Solution
   description: Learn about Azure VMware Solution to host your VMware workloads in Azure.
   ms.date: 10/23/2024
@@ -41,4 +39,4 @@ units:
 - learn.azure.intro-azure-vmware-solution.summary
 badge:
   uid: intro-azure-vmware-solution.badge
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-secure-access-pipeline-resources.understand-secure-files
 title: Understand secure files
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand secure files
   description: "Understand secure files."
   ms.date: 1/25/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-understand-secure-files.md)]
+  [!include[](includes/4-understand-secure-files.md)]

@@ -59,4 +59,4 @@ You can also use Python libraries. You must first import the package into the Au
 > [!NOTE]
 > You can't convert runbooks from graphical to textual type and vice versa.
 
-For more information on the different types of runbooks, visit [Azure Automation runbook types](https://azure.microsoft.com/documentation/articles/automation-runbook-types).
+For more information on the different types of runbooks, visit [Azure Automation runbook types](/azure/automation/automation-runbook-types).

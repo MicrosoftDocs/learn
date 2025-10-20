@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-pipeline-agents-pools.introduction-to-agent-pools
 title: Introduction to agent pools
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to agent pools
   description: "Introduction to agent pools"
   ms.date: 05/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-introduction-to-agent-pools.md)]
+  [!include[](includes/4-introduction-to-agent-pools.md)]

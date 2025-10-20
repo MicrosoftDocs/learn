@@ -5,8 +5,9 @@ metadata:
   title: Exercise - Use Visual Studio Code and GitHub Copilot suggestions to develop with Python
   description: Enable the GitHub Copilot service and install the extension in Visual Studio Code.
   author: abrilurena
-  ms.author: abrilu
+  ms.author: orthomas
   ms.date: 09/30/2024
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot

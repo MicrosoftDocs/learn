@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-devops.describe-working-git-locally
 title: Describe working with Git locally
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe working with Git locally
   description: "Describe working with Git locally"
   ms.date: 05/29/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/11-describe-working-git-locally.md)]
+  [!include[](includes/11-describe-working-git-locally.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-development-operations-principles-for-machine-learn.devops
 title: DevOps for machine learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: DevOps for machine learning
   description: DevOps for machine learning
   author: wwlpublish
@@ -20,4 +18,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-development-operations.md)]
-
+

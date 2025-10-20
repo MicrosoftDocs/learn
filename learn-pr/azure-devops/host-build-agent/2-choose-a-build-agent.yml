@@ -2,12 +2,10 @@
 uid: learn.azdo.host-build-agent.2-choose-a-build-agent
 title: Choose a Microsoft-hosted or self-hosted build agent
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Choose a Microsoft-hosted or self-hosted build agent
   description: Learn about some of the factors to consider when you choose a build agent.
   ms.custom: devdivchpfy22
-  ms.date: 04/02/2024
+  ms.date: 05/08/2025
   author: steved0x
   ms.author: sdanie
   ms.topic: unit

@@ -2,8 +2,6 @@
 uid: learn.wwl.design-container-build-strategy.work-docker-containers
 title: Work with Docker containers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Work with Docker containers
   description: "Work with Docker containers"
   ms.date: 05/25/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-work-docker-containers.md)]
+  [!include[](includes/3-work-docker-containers.md)]

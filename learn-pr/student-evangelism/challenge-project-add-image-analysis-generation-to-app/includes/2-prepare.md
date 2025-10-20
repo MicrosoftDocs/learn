@@ -13,7 +13,7 @@ You need an Azure subscription with Azure OpenAI enabled to complete this challe
 Not sure what's the difference between the two services? Learn more [here](https://learn.microsoft.com/azure/cognitive-services/openai/overview#comparing-azure-openai-and-openai/?WT.mc_id=academic-105496-cacaste).
 
 ### Prerequisites
-1. Create an Azure subscription. If you're a student you can benefit from a [free Azure for students subscription](https://azure.microsoft.com/free/students/?WT.mc_id=academic-105496-cacaste). If you're not a student, you can still sign up for a [free Azure trial](https://azure.microsoft.com/free/?WT.mc_id=academic-105496-cacaste). 
+1. Create an Azure subscription. If you're a student you can benefit from a [free Azure for students subscription](https://azure.microsoft.com/free/students/?cid=msft_learn&WT.mc_id=academic-105496-cacaste). If you're not a student, you can still sign up for a [free Azure trial](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn&WT.mc_id=academic-105496-cacaste). 
 2. Install [Visual Studio Code](https://code.visualstudio.com/), [Node.js and npm](https://nodejs.org/) to develop and run your application locally.
 3. Install [Azure Static Web Apps VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps&WT.mc_id=academic-105496-cacaste) and create a [GitHub account](https://github.com/) to deploy your application to Azure Static Web Apps and set up a CI/CD pipeline.
 

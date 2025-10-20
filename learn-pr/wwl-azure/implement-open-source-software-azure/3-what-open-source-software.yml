@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-open-source-software-azure.what-open-source-software
 title: What is open-source software?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is open-source software?
   description: "What is open-source software?"
   ms.date: 05/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-what-open-source-software.md)]
+  [!include[](includes/3-what-open-source-software.md)]

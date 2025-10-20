@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-manage-data-sources-holds.identify-report-mailbox-holds
+title: Identify and report on mailbox holds
+metadata:
+  title: Identify and report on mailbox holds
+  description: "Identify and report on mailbox holds"
+  ms.date: 05/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/identify-report-mailbox-holds.md)]

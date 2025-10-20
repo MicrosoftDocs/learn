@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-plugins-semantic-kernel.exercise-run-semantic-kernel-prompts
+title: Exercise - Run Semantic Kernel prompts
+metadata:
+  title: Exercise - Run Semantic Kernel prompts
+  description: "Exercise - Run Semantic Kernel prompts"
+  ms.date: 05/27/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-run-semantic-kernel-prompts.md)]

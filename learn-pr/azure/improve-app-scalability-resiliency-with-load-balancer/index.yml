@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.improve-app-scalability-resiliency-with-load-balancer
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Improve application scalability and resiliency by using Azure Load Balancer
   description: In this module, you learn how to use Azure Load Balancer to distribute traffic between multiple virtual servers or services.
   manager: kumud
@@ -41,4 +39,4 @@ units:
 - learn.improve-app-scalability-resiliency-with-load-balancer.6-summary
 badge:
   uid: learn.improve-app-scalability-resiliency-with-load-balancer.badge
-
+

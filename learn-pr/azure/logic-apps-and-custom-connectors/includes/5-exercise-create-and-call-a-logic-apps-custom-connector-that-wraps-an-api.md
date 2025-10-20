@@ -31,7 +31,7 @@ In this exercise, you'll create a custom connector for the Print Framer API and 
 
    The Azure portal shows a gallery with frequently used triggers and workflow patterns.
 
-1. Select **Logic app designer** in the left menu, then select **Add a trigger**.
+1. Under **Development Tools**, select **Logic app designer** in the left menu, and then select **Add a trigger**.
 1. Search for and select **When an HTTP request is received**.
 
    The workflow designer now displays the trigger you selected.
@@ -66,8 +66,6 @@ We now have a basic logic app workflow. Let's add a custom connector so that we 
    | **Instance details** |
    | Custom connector name | PrintFramerConnector |
    | Region | Select a region that's near you and also supported by the sandbox. |
-   | Associate with integration service environment | Leave unselected |
-   | | |
 
 1. Select **Review + create**. After validation succeeds, select **Create**.
 
@@ -109,7 +107,7 @@ The OpenAPI file tells the custom connector about the operations that are availa
 
 Now, you can use the custom connector in your logic app workflow.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) or from the **Home** page, under **Azure resources**, select **All resources**, and then select the logic app resource that you created in unit 3.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) or from the **Home** page, under **Azure resources**, select **All resources**, and then select the logic app resource that you created.
 
 1. In the logic app resource menu, select **Overview**. On the **Overview** pane toolbar, select **Edit**.
 

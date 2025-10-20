@@ -2,8 +2,6 @@
 uid: learn.wwl.identify-technical-debt.integrate-other-code-quality-tools
 title: Integrate other code quality tools
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Integrate other code quality tools
   description: "Integrate other code quality tools"
   ms.date: 05/06/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/7-integrate-other-code-quality-tools.md)]
+  [!include[](includes/7-integrate-other-code-quality-tools.md)]

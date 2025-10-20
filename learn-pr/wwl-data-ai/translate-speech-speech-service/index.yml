@@ -1,15 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.translate-speech-speech-service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Translate speech with the Azure AI Speech service
   description: Translate speech with the Azure AI Speech service
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 12/13/2024
+  ms.date: 08/28/2025
   ms.service: azure-ai-speech
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
 title: Translate speech with the Azure AI Speech service
@@ -20,10 +19,10 @@ abstract: |
   - Generate text translation from speech.
   - Synthesize spoken translations.
 prerequisites: |
-  Before starting this module, you should:
-  - Be familiar with Azure services and the Azure portal.
-  - Have experience programming with C# or Python.
-  - Have experience of using the Azure AI Speech service to transcribe speech to text.
+  Before starting this module, you should have:
+  - Familiarity with Azure services and the Azure portal.
+  - Programming experience.
+  - Experience of using the Azure AI Speech service to transcribe speech to text.
 iconUrl: /training/achievements/translate-speech-speech-service.svg
 levels:
 - intermediate
@@ -34,6 +33,7 @@ roles:
 - student
 products:
 - ai-services
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 units:

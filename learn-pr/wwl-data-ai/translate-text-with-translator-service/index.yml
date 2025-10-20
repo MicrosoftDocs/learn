@@ -1,15 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.translate-text-with-translator-service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Translate text with the Translator service
   description: Translate text with the Translator service
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 12/05/2023
+  ms.date: 08/28/2025
   ms.service: azure-ai-translator
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
 title: Translate text with Azure AI Translator service
@@ -23,7 +22,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you need
   - Familiarity with Microsoft Azure and the Azure portal.
-  - Experience programming with C# or Python.
+  - Programming experience.
 iconUrl: /training/achievements/translate-text-with-the-translator-service.svg
 levels:
 - intermediate
@@ -32,6 +31,7 @@ roles:
 - developer
 products:
 - ai-services
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 units:

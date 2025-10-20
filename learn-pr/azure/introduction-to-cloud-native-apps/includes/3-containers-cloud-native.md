@@ -26,7 +26,7 @@ Containers are easy to use with cloud services. They ensure that, once tested, y
 
 Kubernetes, often abbreviated as K8s, is a technology that manages multiple containers for you. You can connect containers so your database can talk to a backend, scale resources, and automate application deployment, backups, and maintenance.
 
-One of the key benefits of Kubernetes is the ability to restore applications to the exact instance that has been tested and saved, otherwise known as **self-healing**. As containers can be saved and replicated, Kubernetes can check on the health of a container and replace it with an original copy if necessary.
+One of the key benefits of Kubernetes is the ability to restore applications to the exact instance that was tested and saved, otherwise known as **self-healing**. As containers can be saved and replicated, Kubernetes can check on the health of a container and replace it with an original copy if necessary.
 
 Kubernetes can also automatically increase or decrease the number of containers if demand changes. If traffic to a container is high, Kubernetes can load balance and distribute the network traffic so that the deployment is stable.
 
@@ -38,6 +38,6 @@ Kubernetes can also automatically increase or decrease the number of containers 
 :::column-end:::
 :::row-end:::
 
-Additionally, one of the main benefits of using a Kubernetes service is simplified security configuration management. Many have built in authentication services, allowing the services to provide compliance offerings for most countries/regions and industries.
+Additionally, one of the main benefits of using a Kubernetes service is simplified security configuration management. Many have built-in authentication services, allowing the services to provide compliance offerings for most countries/regions and industries.
 
-Further, when a component is updated, you can automate Kubernetes to create new containers for your deployment, remove existing containers, and adopt all their resources to the new containers. Kubernetes services, such as AKS, simplify container management and can provide massive savings in development time, cost, and security obligations. Continuous integration and continuous delivery (CI/CD), allow Kubernetes services to optimize development pipelines and application deployment.
+Further, when a component is updated, you can automate Kubernetes to create new containers for your deployment, remove existing containers, and adopt all their resources to the new containers. Kubernetes services, such as Azure Kubernetes Service (AKS), simplify container management and can provide massive savings in development time, cost, and security obligations. Continuous integration and continuous delivery (CI/CD), allow Kubernetes services to optimize development pipelines and application deployment.

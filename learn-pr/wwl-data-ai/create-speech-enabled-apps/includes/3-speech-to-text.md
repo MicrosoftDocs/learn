@@ -1,12 +1,10 @@
 
-The Azure AI Speech service supports speech recognition through two REST APIs:
+The Azure AI Speech service supports speech recognition through the following features:
 
-- The **Speech to text** API, which is the primary way to perform speech recognition.
-- The **Speech to text Short Audio** API, which is optimized for short streams of audio (up to 60 seconds).
-
-You can use either API for interactive speech recognition, depending on the expected length of the spoken input. You can also use the **Speech to text** API for *batch transcription*, transcribing multiple audio files to text as a batch operation.
-
-You can learn more about the REST APIs in the [Speech to text REST API documentation](/azure/ai-services/speech-service/rest-speech-to-text). In practice, most interactive speech-enabled applications use the Speech service through a (programming) language-specific SDK.
+- **Real-time transcription**: Instant transcription with intermediate results for live audio inputs.
+- **Fast transcription**: Fastest synchronous output for situations with predictable latency.
+- **Batch transcription**: Efficient processing for large volumes of prerecorded audio.
+- **Custom speech**: Models with enhanced accuracy for specific domains and conditions.
 
 ## Using the Azure AI Speech SDK
 

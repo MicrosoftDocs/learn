@@ -1,6 +1,6 @@
-The Azure security baseline for API Management applies guidance from Microsoft's Cloud Security Benchmark version 1.0 to API Management. The Microsoft cloud security benchmark provides recommendations on how you can secure your cloud solutions on Azure. The content is grouped by the security controls defined by the Microsoft cloud security benchmark and the related guidance applicable to API Management.
+The Azure security baseline for API Management applies guidance from Microsoft's Cloud Security Benchmark version 1.0 to API Management. The Microsoft cloud security benchmark provides recommendations on how you can secure your cloud solutions on Azure. Microsoft cloud security benchmark controls organize content, with related guidance for API Management.
 
-You can monitor this security baseline and its recommendations using Microsoft Defender for Cloud. Azure Policy definitions will be listed in the Regulatory Compliance section of the Microsoft Defender for Cloud portal page.<br>
+You can monitor this security baseline and its recommendations using Microsoft Defender for Cloud. Azure Policy definitions are listed in the Regulatory Compliance section of the Microsoft Defender for Cloud portal page.<br>
 
 When a feature has relevant Azure Policy Definitions, they're listed in this baseline to help you measure compliance with the Microsoft cloud security benchmark controls and recommendations. Some recommendations might require a paid Microsoft Defender plan to enable certain security scenarios.
 
@@ -23,10 +23,10 @@ Feature: Network Security Group Support
 
 Description: Service network traffic respects Network Security Groups rule assignment on its subnets.
 
-Configuration Guidance: Deploy network security groups (NSG) to your API Management subnets to restrict or monitor traffic by port, protocol, source IP address, or destination IP address. Create NSG rules to restrict your service's open ports (such as preventing management ports from being accessed from untrusted networks). Be aware that by default, NSGs deny all inbound traffic but allow traffic from virtual network and Azure Load Balancers.
+Configuration Guidance: Deploy network security groups (NSG) to your API Management subnets to restrict or monitor traffic by port, protocol, source IP address, or destination IP address. Create NSG rules to restrict your service's open ports (such as preventing management ports from being accessed from untrusted networks). By default, NSGs deny all inbound traffic but allow traffic from virtual network and Azure Load Balancers.
 
 > [!CAUTION]
-> When configuring an NSG on the API Management subnet, there is a set of ports that are required to be open. If any of these ports are unavailable, API Management might not operate properly and might become inaccessible.
+> When configuring an NSG on the API Management subnet, there's a set of ports that are required to be open. If any of these ports are unavailable, API Management might not operate properly and might become inaccessible.
 
 ### **NS-2**: **Secure cloud services with network controls**
 
@@ -46,7 +46,7 @@ Description: Service supports disabling public network access either through usi
 Configuration Guidance: Disable public network access either using the IP ACL filtering rule on the NSGs assigned to the service's subnets or a toggling switch for public network access.
 
 > [!NOTE]
-> API Management supports deployments into a virtual network, as well as locking down non-network-based deployments with a private endpoint and disabling public network access.<br>
+> API Management supports deployments into a virtual network, and locking down non-network-based deployments with a private endpoint and disabling public network access.<br>
 
 **Feature**: Microsoft Defender for Cloud monitoring
 
@@ -55,11 +55,11 @@ Azure Policy built-in definitions - Microsoft.ApiManagement:
 | Name<br>(Azure portal)                                                                     | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | **Effect(s)**              | Version<br>(GitHub) |
 | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------- |
 | API Management services should use a virtual network                                       | Azure Virtual Network deployment provides enhanced security, isolation and allows you to place your API Management service in a non-internet routable network that you control access to. These networks can then be connected to your on-premises networks using various VPN technologies, which enables access to your backend services within the network and/or on-premises. The developer portal and API gateway can be configured to be accessible either from the Internet or only within the virtual network. | Audit, Deny, Disabled      | 1.0.2               |
-| API Management should disable public network access to the service configuration endpoints | To improve the security of API Management services, restrict connectivity to service configuration endpoints, like direct access management API, Git configuration management endpoint, or self-hosted gateways configuration endpoint.                                                                                                                                                                                                                                                                               | AuditIfNotExists, Disabled | 1.0.1               |
+| API Management should disable public network access to the service configuration endpoints | To secure API Management services, restrict access to configuration endpoints like the management API, Git config, and self-hosted gateway setup.                                                                                                                                                                                                                                                                              | AuditIfNotExists, Disabled | 1.0.1               |
 
  **NS-6**: **Deploy web application firewall**
 
-Other guidance for NS-6: To protect critical Web/HTTP APIs configure API Management within a Virtual Network (VNET) in internal mode and configure an Azure Application Gateway. Application Gateway is a PaaS service. It acts as a reverse-proxy and provides L7 load balancing, routing, web application firewall (WAF), and other services. Learn more.
+Other guidance for NS-6: To protect critical Web/HTTP APIs, configure API Management within a Virtual Network (VNET) in internal mode and configure an Azure Application Gateway. Application Gateway is a PaaS service. It acts as a reverse-proxy and provides L7 load balancing, routing, web application firewall (WAF), and other services. Learn more.
 
 Combining API Management provisioned in an internal VNET with the Application Gateway frontend enables the following scenarios:<br>
 
@@ -71,26 +71,26 @@ Combining API Management provisioned in an internal VNET with the Application Ga
 
 ### IM-1: Use centralized identity and authentication system
 
-Feature: Azure AD Authentication Required for Data Plane Access
+Feature: Microsoft Entra ID Authentication Required for Data Plane Access
 
-Description: Service supports using Azure AD authentication for data plane access.
+Description: Service supports using Microsoft Entra ID authentication for data plane access.
 
-Configuration Guidance: Use Azure Active Directory (Azure AD) as the default authentication method for API Management where possible.
+Configuration Guidance: Use Microsoft Entra ID as the default authentication method for API Management where possible.
 
- -  Configure your Azure API Management Developer Portal to authenticate developer accounts by using Azure AD.<br>
- -  Configure your Azure API Management instance to protect your APIs by using the OAuth 2.0 protocol with Azure AD.
+ -  Configure your Azure API Management Developer Portal to authenticate developer accounts by using Microsoft Entra ID.<br>
+ -  Configure your Azure API Management instance to protect your APIs by using the OAuth 2.0 protocol with Microsoft Entra ID.
 
 Feature: Local Authentication Methods for Data Plane Access
 
 Description: Local authentications methods supported for data plane access, such as a local username and password.
 
-Feature notes: Avoid the usage of local authentication methods or accounts, these should be disabled wherever possible. Instead use Azure AD to authenticate where possible.
+Feature notes: Avoid the usage of local authentication methods or accounts, these should be disabled wherever possible. Instead use Microsoft Entra ID to authenticate where possible.
 
 Configuration Guidance: Restrict the use of local authentication methods for data plane access, maintain inventory of API Management user accounts and reconcile access as needed. In API Management, developers are the consumers of the APIs that exposed with API Management. By default, newly created developer accounts are Active, and associated with the Developers group. Developer accounts that are in an active state can be used to access all of the APIs for which they have subscriptions.<br>
 
-Also, Azure API Management subscriptions are one means of securing access to APIs and come with a pair of generated subscription keys which support rotation.<br>
+Also, Azure API Management subscriptions are one means of securing access to APIs and come with a pair of generated subscription keys, which support rotation.<br>
 
-Instead of using other auth methods, where possible use Azure Active Directory (Azure AD) as the default authentication method to control your data plane access.<br>
+Instead of using other auth methods, where possible use Microsoft Entra ID as the default authentication method to control your data plane access.<br>
 
 ### IM-3: Manage application identities securely and automatically
 
@@ -98,17 +98,17 @@ Feature: Managed Identities
 
 Description: Data plane actions support authentication using managed identities.
 
-Configuration Guidance: Use a Managed Service Identity generated by Azure Active Directory (Azure AD) to allow your API Management instance to easily and securely access other Azure AD-protected resources, such as Azure Key Vault instead of using service principals. Managed identity credentials are fully managed, rotated, and protected by the platform, avoiding hard-coded credentials in source code or configuration files.
+Configuration Guidance: Use a Managed Service Identity generated by Microsoft Entra ID to allow your API Management instance to easily and securely access other Microsoft Entra protected resources, such as Azure Key Vault instead of using service principals. Managed identity credentials are fully managed, rotated, and protected on the platform, avoiding hard-coded credentials in source code or configuration files.
 
 Feature: Service Principals
 
 Description: Data plane supports authentication using service principals.
 
-Configuration Guidance: There's no current Microsoft guidance for this feature configuration. Please review and determine if your organization wants to configure this security feature.
+Configuration Guidance: There's no current Microsoft guidance for this feature configuration. Review and determine if your organization wants to configure this security feature.
 
 ### IM-5: Use single sign-on (SSO) for application access
 
-Other guidance for IM-5: Azure API Management can be configured to leverage Azure Active Directory (Azure AD) as an identity provider for authenticating users on the Developer Portal in order to benefit from the SSO capabilities offered by Azure AD. Once configured, new Developer Portal users can choose to follow the out-of-the-box sign-up process by first authenticating through Azure AD and then completing the sign-up process on the portal once authenticated.
+Other guidance for IM-5: Azure API Management can be configured to use Microsoft Entra ID as an identity provider for authenticating users on the Developer Portal in order to benefit from the SSO capabilities offered by Microsoft Entra ID. Once configured, new Developer Portal users can choose to follow the out-of-the-box sign-up process by first authenticating through Microsoft Entra ID and then completing the sign-up process on the portal once authenticated.
 
 Alternatively, the sign-in/sign-up process can be further customized through delegation. Delegation allows you to use your existing website for handling developer sign in/sign up and subscription to products, as opposed to using the built-in functionality in the developer portal. It enables your website to own the user data and perform the validation of these steps in a custom way.<br>
 
@@ -116,7 +116,7 @@ Alternatively, the sign-in/sign-up process can be further customized through del
 
 Features: Conditional Access for Data Plane
 
-Description: Data plane access can be controlled using Azure AD Conditional Access Policies.
+Description: Data plane access can be controlled using Microsoft Entra Conditional Access policies.
 
 Configuration Guidance: This feature isn't supported to secure this service.
 
@@ -126,7 +126,7 @@ Feature: Service Credential and Secrets Support Integration and Storage in Azure
 
 Description: Data plane supports native use of Azure Key Vault for credential and secrets store.
 
-Configuration Guidance: Set up integration of API Management with Azure Key Vault. Ensure that secrets for API Management (Named values) are stored an Azure Key Vault so they can be securely accessed and updated.
+Configuration Guidance: Set up integration of API Management with Azure Key Vault. Ensure that secrets for API Management (Named values) are stored in Azure Key Vault so they can be securely accessed and updated.
 
 ## Privileged access
 
@@ -136,20 +136,20 @@ Configuration Guidance: Set up integration of API Management with Azure Key Vaul
 
 Description: Service has the concept of a local administrative account.
 
-Feature notes: Avoid the usage of local authentication methods or accounts, these should be disabled wherever possible. Instead use Azure AD to authenticate where possible.
+Feature notes: Avoid the usage of local authentication methods or accounts, these should be disabled wherever possible. Instead use Microsoft Entra ID to authenticate where possible.
 
 Configuration Guidance: If not required for routine administrative operations, disable or restrict any local admin accounts for only emergency use.<br>
 
 > [!NOTE]
-> API Management allows creation of local user account. Instead of creating these local accounts, enable Azure Active Directory (Azure AD) authentication only, and assign permissions to these Azure AD accounts.
+> API Management allows creation of local user account. Instead of creating these local accounts, enable Microsoft Entra ID authentication only, and assign permissions to these Microsoft Entra accounts.
 
 ### PA-7: Follow just enough administration (least privilege) principle
 
 Feature: Azure RBAC for Data Plane
 
-Description: Azure Role-Based Access Control (Azure RBAC) can be used to managed access to service's data plane actions.
+Description: Azure Role-Based Access Control (RBAC) can be used to managed access to service's data plane actions.
 
-Configuration Guidance: Use Azure role-based access control (Azure RBAC) for controlling access to Azure API Management. Azure API Management relies on Azure role-based access control to enable fine-grained access management for API Management services and entities (for example, APIs and policies).
+Configuration Guidance: Use Azure role-based access control (RBAC) for controlling access to Azure API Management. Azure API Management relies on Azure role-based access control to enable fine-grained access management for API Management services and entities (for example, APIs and policies).
 
 ### PA-8: Determine access process for cloud provider support
 

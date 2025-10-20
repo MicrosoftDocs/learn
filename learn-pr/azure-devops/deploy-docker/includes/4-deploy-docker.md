@@ -27,7 +27,7 @@ Here, you'll add a new pipeline variable to your existing YAML pipeline defined 
 
 ### Docker task
 
-You can use the [Docker task](/azure/devops/pipelines/tasks/build/docker?azure-portal=true) to build and deploy Docker images. Replace the entire **Build** stage with the YAML snippet below.
+You can use the [Docker task](/azure/devops/pipelines/tasks/reference/docker-v2) to build and deploy Docker images. Replace the entire **Build** stage with the YAML snippet below.
 
 * **command**: Specifies the Docker command to run.
 * **buildContext**: Specifies the path to the build context.
@@ -46,7 +46,7 @@ You can use the [Docker task](/azure/devops/pipelines/tasks/build/docker?azure-p
 
 ### Azure Web App for Container task
 
-The [Azure Web App for Container task](/azure/devops/pipelines/tasks/deploy/azure-rm-web-app-containers?azure-portal=true) is designed to deploy Docker containers to Azure App Service. Replace the entire **Deploy** stage with the YAML snippet below.
+The [Azure Web App for Container task](//azure/devops/pipelines/tasks/reference/azure-web-app-container-v1?azure-portal=true) is designed to deploy Docker containers to Azure App Service. Replace the entire **Deploy** stage with the YAML snippet below.
 
 * **appName**: Specifies the name of an existing Azure App Service.
 * **azureSubscription**: Specifies the name of the Azure Resource Manager subscription for the deployment.
@@ -56,7 +56,7 @@ The [Azure Web App for Container task](/azure/devops/pipelines/tasks/deploy/azur
 
 ## Save the pipeline to trigger a build and release
 
-1. Select **Save** from the top-right corner of the page. Type your commit message and select **Save** to confirm.
+1. Select **Validate and Save** from the top-right corner of the page. Type your commit message and select **Save** to confirm.
 1. Select **Run**, and make sure your branch is set to *main*. Select **Run** when you're done.
 1. Select your pipeline to view the logs. After the build has succeeded, select the *AzureWebAppContainer* task and then select the *App Service Application URL* to view your deployed web app.
 

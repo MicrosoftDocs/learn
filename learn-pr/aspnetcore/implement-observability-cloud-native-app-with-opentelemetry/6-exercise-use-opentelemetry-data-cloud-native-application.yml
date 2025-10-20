@@ -4,7 +4,7 @@ title: Exercise - Use OpenTelemetry data in a cloud-native application
 metadata:
   title: Exercise - Use OpenTelemetry data in a cloud-native application
   description: "Exercise to add Prometheus, Grafana, Zipkin, and Application Insights to a cloud-native application to view telemetry data."
-  ms.date: 12/20/2023
+  ms.date: 05/27/2025
   author: codemillmatt  
   ms.author: masoucou
   ms.topic: unit

@@ -2,11 +2,9 @@
 uid: learn.wwl.design-data-partitioning-strategy.denormalize-aggregates-same-container
 title: Denormalize aggregates in the same container
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Denormalize aggregates in the same container
   description: "Denormalize aggregates in the same container"
-  ms.date: 04/16/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

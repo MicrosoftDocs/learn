@@ -2,8 +2,6 @@
 uid: learn.align-requirements-in-azure.4-iaas
 title: Infrastructure as a service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: IaaS
   description: Learn about infrastructure as a service and if it might be the right choice for your application.
   ms.date: 12/06/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-iaas.md)]
+  [!include[](includes/4-iaas.md)]

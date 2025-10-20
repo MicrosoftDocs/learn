@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.exercise-run-sweep-job
 title: Exercise - Run a sweep job
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Run a sweep job
   description: Exercise - Run a sweep job
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-run-sweep-job.md)]
-
+

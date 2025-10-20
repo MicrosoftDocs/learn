@@ -1,14 +1,8 @@
-Azure Storage offers four data services that can be accessed by using an Azure storage account:
-
-- **Azure Blob Storage (containers)**: A massively scalable object store for text and binary data.
-
-- **Azure Files**: Managed file shares for cloud or on-premises deployments.
-
-- **Azure Queue Storage**: A messaging store for reliable messaging between application components.
-
-- **Azure Table Storage**: A service that stores nonrelational structured data (also known as structured NoSQL data).
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cce31ece-07bd-4cba-b6e6-59af6a6ae1c0]
 
 Let's examine the details of these services.
+
+:::image type="content" source="../media/explore-storage-services.png" alt-text="Diagram showing the four main types of Azure storage.":::
 
 ### Azure Blob Storage 
 

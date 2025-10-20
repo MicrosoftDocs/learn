@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-updates.manage-updates-for-your-azure-vms
 title: Manage updates for your Azure Virtual Machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage updates for your Azure Virtual Machines
   description: "Manage updates for your Azure Virtual Machines"
   ms.date: 09/24/2020
@@ -27,4 +25,4 @@ quiz:
       explanation: "That's correct. An alert rule can monitor update deployments"
     - content: "An alert rule can create update deployments."
       isCorrect: false
-      explanation: "That's incorrect. An alert rule monitors update deployments."
+      explanation: "That's incorrect. An alert rule monitors update deployments."

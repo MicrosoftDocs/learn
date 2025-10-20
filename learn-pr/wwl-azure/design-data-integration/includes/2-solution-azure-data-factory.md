@@ -1,5 +1,7 @@
 [Azure Data Factory](/azure/data-factory/introduction) is a cloud-based data integration service that can help you create and schedule data-driven workflows. You can use Azure Data Factory to orchestrate data movement and transform data at scale. The data-driven workflows, or *pipelines*, ingest data from disparate data stores. Azure Data Factory is an ETL data integration process, which stands for extract, transform, and load. This integration process combines data from multiple data sources into a single data store.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b3963d84-6dfc-489d-9c05-140ac540eff7]
+
 ### Things to know about Azure Data Factory
 
 There are four major steps to create and implement a data-driven workflow in the Azure Data Factory architecture:

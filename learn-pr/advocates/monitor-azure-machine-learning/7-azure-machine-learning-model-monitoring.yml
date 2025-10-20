@@ -2,8 +2,8 @@
 uid: learn.introduction-to-azure-machine-learning-monitoring.azure-machine-learning-model-monitoring
 title: Azure Machine Learning model monitoring
 metadata:
-  title: Azure Machine Learning model monitoring
-  description: Learn how to monitor Azure Machine Learning models
+  title: Azure Machine Learning Model Monitoring
+  description: Learn how to monitor Azure Machine Learning models.
   ms.date: 03/15/2025
   author: Orin-Thomas
   ms.author: viniap

@@ -24,13 +24,13 @@ Azure AI capabilities include: vision, language, speech, document intelligence, 
 
 * **Azure AI Language**: focuses on processing and analyzing text. They're trained to understand natural language and extract insights. For example, models recognize language, intent, entities, and sentiment in a text. Besides, they can find answers to the questions put to them.
 
-* **Azure AI Speech**: provide models that deal with oral conversation. They can transform speech to text and vice-versa. It's also possible to translate what the speaker says and identifying each speaker. Models can even suggest pronunciation corrections to the speakers.
+* **Azure AI Speech**: provides models that deal with oral conversation. They can transform speech to text and vice-versa. It's also possible to translate what the speaker says and identify each speaker. Models can even suggest pronunciation corrections to the speakers.
 
 * **Azure AI Document Intelligence**: incorporates OCR and text analytics models to extract data from invoices, receipts, and other documents. Document intelligence relies on machine learning models that are trained to recognize data in text.
 
 * **Azure AI Search**: provides secure information retrieval at scale over user-owned content in traditional and generative AI search applications. Azure AI Search can index unstructured, typed, image-based, or hand-written media. The indexes can be used for internal only use, or to enable searchable content on public-facing internet assets.
 
-* **Azure OpenAI Service**: enables users to leverage generative AI models via *Azure AI Services*. In other words, it allows you to access OpenAI models directly from Azure, instead of the public API. Keep in mind that Azure OpenAI Service isn't the only Microsoft product delivering  this kind of models to users. In previous units, we've already discussed generative AI included in Microsoft Copilot for Microsoft 365 and Copilot in Power Platform. These copilot features are powered by GPT, an OpenAI model for text generation.
+* **Azure OpenAI Service**: enables users to leverage generative AI models via *Azure AI Services*. In other words, it allows you to access OpenAI models directly from Azure instead of the public API. Keep in mind that Azure OpenAI Service isn't the only Microsoft product delivering  this kind of models to users. In previous units, we've already discussed generative AI included in Microsoft Copilot for Microsoft 365 and Copilot in Power Platform. These copilot features are powered by GPT, an OpenAI model for text generation.
 
 * **Azure AI Foundry**: a Microsoft cloud platform that brings together multiple Azure AI-related services into a single, unified development environment. Developers can use these services to build end-to-end AI solutions. Specifically, Azure AI Foundry combines:
     - The model catalog and prompt flow development capabilities of Azure Machine Learning service.

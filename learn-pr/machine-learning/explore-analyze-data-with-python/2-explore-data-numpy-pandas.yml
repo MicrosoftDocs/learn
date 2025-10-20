@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-analyze-data-with-python.explore-data-numpy-pandas
 title: Explore data with NumPy and Pandas
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore data with NumPy and Pandas
   description: Explore data with NumPy and Pandas
-  ms.date: 08/01/2024
+  ms.date: 10/14/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

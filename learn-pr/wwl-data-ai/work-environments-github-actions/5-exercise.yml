@@ -2,8 +2,6 @@
 uid: learn.wwl.work-environments-github-actions.exercise
 title: Exercise
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise
   description: "Exercise"
   ms.date: 07/10/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-exercise.md)]
+  [!include[](includes/5-exercise.md)]

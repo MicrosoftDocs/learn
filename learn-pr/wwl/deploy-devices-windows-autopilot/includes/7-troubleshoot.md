@@ -1,9 +1,9 @@
 When troubleshooting Windows Autopilot, it's important to verify the following key factors:
 
- -  **Configuration:** Has Azure AD and Microsoft Intune (or an equivalent MDM service) been configured as specified in Windows Autopilot configuration requirements?
+ -  **Configuration:** Has Entra ID and Microsoft Intune (or an equivalent MDM service) been configured as specified in Windows Autopilot configuration requirements?
  -  **Network connectivity:** Can the device access the services described in Windows Autopilot networking requirements?
- -  **Autopilot OOBE behavior:** Where only the expected out-of-box experience screens displayed? Was the Azure AD credentials page customized with organization-specific details as expected?
- -  **Azure AD join issues:** Was the device able to join Azure AD?
+ -  **Autopilot OOBE behavior:** Where only the expected out-of-box experience screens displayed? Was the Entra ID credentials page customized with organization-specific details as expected?
+ -  **Entra ID join issues:** Was the device able to join Entra ID?
  -  **MDM enrollment issues:** Was the device able to enroll in Microsoft Intune (or an equivalent MDM service)?
 
 ### Troubleshoot Autopilot OOBE issues
@@ -36,11 +36,11 @@ Get-AutoPilotDiagnostics -Online
 
 Once connected to the tenant with an account that has appropriate credentials, through the GraphAPI extensions for Intune, a list of policies, apps, and status is displayed.
 
-### Troubleshoot Azure AD join issues
+### Troubleshoot Entra ID join issues
 
-The most common issue joining a device to Azure AD is related to Azure AD permissions. Ensure the correct configuration is in place to allow users to join devices to Azure AD. Errors can also happen if the user has exceeded the number of devices that they're allowed to join, as configured in Azure AD.
+The most common issue joining a device to Entra ID is related to Entra ID permissions. Ensure the correct configuration is in place to allow users to join devices to Entra ID. Errors can also happen if the user has exceeded the number of devices that they're allowed to join, as configured in Entra ID.
 
-Typically displayed on a "Something went wrong" error page, the error code 801C0003 signifies that the attempt to join Azure AD was unsuccessful.
+Typically displayed on a "Something went wrong" error page, the error code 801C0003 signifies that the attempt to join Entra ID was unsuccessful.
 
 ### Troubleshoot Intune enrollment issues
 
@@ -53,3 +53,4 @@ When encountering the error code 80180018, it's accompanied by an error page tit
 If you experience a scenario where importing a device CSV file results in no action and a *'400' error appears in network trace with error body "Cannot convert the literal '\[DEVICEHASH\]' to the expected type 'Edm.Binary'* error appears, the device hash within the file is either corrupted or the hash might not be properly padded in the file. To resolve this issue, a minor edit to the file might be necessary to ensure the device hash is in the correct format.
 
 For more information, see [Troubleshooting Windows Autopilot (level100/200)](https://aka.ms/AA6d57a) and [Troubleshooting Windows Autopilot](https://aka.ms/AA80h34).
+

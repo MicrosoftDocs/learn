@@ -19,4 +19,4 @@ When you finish the exercise in GitHub, return here to:
 > You don't need to modify any of the workflow files to complete this exercise. **Altering this workflow's contents can break the exercise's ability to validate your actions, provide feedback, or grade the results**.
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/skills/communicate-using-markdown?azure-portal=true)
+> [Start the exercise on GitHub](https://github.com/skills-dev/communicate-using-markdown?azure-portal=true)

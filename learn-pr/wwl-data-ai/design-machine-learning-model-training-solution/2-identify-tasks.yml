@@ -2,13 +2,11 @@
 uid: learn.wwl.design-machine-learning-model-training-solution.identify-tasks
 title: Define the problem
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Define the problem
   description: Define the problem
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 01/20/2025
+  ms.date: 05/28/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

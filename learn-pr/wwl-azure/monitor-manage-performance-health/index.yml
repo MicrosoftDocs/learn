@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-manage-performance-health
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor and manage performance and health
   description: "Monitor and manage performance and health"
   ms.date: 08/13/2024
@@ -51,4 +49,4 @@ units:
 - learn.wwl.monitor-manage-performance-health.knowledge-check
 - learn.wwl.monitor-manage-performance-health.summary
 badge:
-  uid: learn.wwl.monitor-manage-performance-health.badge
+  uid: learn.wwl.monitor-manage-performance-health.badge

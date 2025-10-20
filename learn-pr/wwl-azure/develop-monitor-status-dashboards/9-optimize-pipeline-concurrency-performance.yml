@@ -2,8 +2,6 @@
 uid: learn.wwl.develop-monitor-status-dashboards.optimize-pipeline-concurrency-performance
 title: Optimize pipeline concurrency for performance and cost
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Optimize pipeline concurrency for performance and cost
   description: "Optimize pipeline concurrency for performance and cost"
   ms.date: 05/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/9-optimize-pipeline-concurrency-performance.md)]
+  [!include[](includes/9-optimize-pipeline-concurrency-performance.md)]

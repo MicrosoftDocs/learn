@@ -1,18 +1,18 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.describe-azure-management-governance
 metadata:
-  title: 'Microsoft Azure Fundamentals: Describe Azure management and governance'
+  title: 'Introduction to Microsoft Azure: Describe Azure Management and Governance'
   description: 'Microsoft Azure Fundamentals: Describe Azure management and governance'
   ms.date: 08/16/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: learning-path
-title: 'Microsoft Azure Fundamentals: Describe Azure management and governance'
+title: 'Introduction to Microsoft Azure: Describe Azure management and governance'
 prerequisites: |
   * Basic familiarity with IT terms and concepts
 summary: |
-  New to the cloud? Microsoft Azure fundamentals is a three-part series that teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free. Complete all of the learning paths in the series if you are preparing for Exam AZ-900: Microsoft Azure Fundamentals.
-  This is the third learning path in the series, **Azure Fundamentals: Describe Azure management and governance**. The other learning paths in the series are [**Part 1: Describe cloud concepts**](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/) and [**Part 2: Describe Azure architecture and services**](/training/paths/azure-fundamentals-describe-azure-architecture-services/).
+  New to the cloud? Introduction to Microsoft Azure is a three-part series that teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free. Complete all of the learning paths in the series if you are preparing for Exam AZ-900: Microsoft Azure Fundamentals.
+  This is the third learning path in the series, **Introduction to Microsoft Azure: Describe Azure management and governance**. The other learning paths in the series are [**Part 1: Describe cloud concepts**](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/) and [**Part 2: Describe Azure architecture and services**](/training/paths/azure-fundamentals-describe-azure-architecture-services/).
 iconUrl: /training/achievements/describe-azure-management-governance.svg
 levels:
 - beginner

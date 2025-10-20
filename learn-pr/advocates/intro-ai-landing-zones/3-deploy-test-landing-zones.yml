@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-ai-landing-zones.deploy-test-landing-zones
+title: Deploy and Test Landing Zones
+metadata:
+  title: Deploy and Test Landing Zones
+  description: How to deploy and test landing zones using the Azure CLI and Bicep.
+  ms.date: 05/01/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-deploy-test-landing-zones.md)]

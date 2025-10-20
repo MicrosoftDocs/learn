@@ -1,0 +1,77 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-understand.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 05/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A legal investigator at your organization needs to find emails and files related to a specific employee as part of an internal case. Which feature in Microsoft Purview should they use to organize searches, holds, and review actions?"
+    choices:
+    - content: "eDiscovery case"
+      isCorrect: true
+      explanation: "Correct: An eDiscovery case helps organize searches, holds, review sets, and permissions for a specific investigation."
+    - content: "Content Explorer"
+      isCorrect: false
+      explanation: "Incorrect: Content Explorer shows labeled data but isn't used to manage legal investigations."
+    - content: "Microsoft Purview Audit"
+      isCorrect: false
+      explanation: "Incorrect: Audit logs track user activity but aren't used to run searches or manage investigations."
+
+  - content: "Your organization is deciding whether to use the classic or new eDiscovery experience. They want to take advantage of automatic indexing and review sets. Which experience should they use?"
+    choices:
+    - content: "Classic eDiscovery"
+      isCorrect: false
+      explanation: "Incorrect: The classic experience doesn't support automatic indexing or review sets."
+    - content: "New eDiscovery"
+      isCorrect: true
+      explanation: "Correct: The new eDiscovery experience includes automatic indexing and supports review sets for deeper analysis."
+    - content: "Microsoft Purview Audit"
+      isCorrect: false
+      explanation: "Incorrect: Audit isn't one of the eDiscovery experiences."
+
+  - content: "A compliance officer needs to preserve all mailbox content for specific users while an investigation is ongoing. What should they do in Microsoft Purview?"
+    choices:
+    - content: "Export the content immediately"
+      isCorrect: false
+      explanation: "Incorrect: Exporting content doesn't prevent it from being deleted or changed."
+    - content: "Add a legal hold"
+      isCorrect: true
+      explanation: "Correct: A legal hold ensures relevant content is preserved and not modified or deleted."
+    - content: "Tag content in a review set"
+      isCorrect: false
+      explanation: "Incorrect: Tagging content helps organize results but doesn't preserve data."
+
+  - content: "A user in the eDiscovery Manager role group can't access a specific eDiscovery case. What is the most likely reason?"
+    choices:
+    - content: "They aren't part of the Microsoft Purview portal"
+      isCorrect: false
+      explanation: "Incorrect: Being part of the portal doesn't determine access to individual cases."
+    - content: "They haven't been added to the case"
+      isCorrect: true
+      explanation: "Correct: eDiscovery access is scoped per case. Even if someone has the eDiscovery Manager role, they must be explicitly added to each case to access it."
+    - content: "They don't have a Microsoft Entra ID"
+      isCorrect: false
+      explanation: "Incorrect: All users in Microsoft 365 have a Microsoft Entra ID. Access depends on role and case membership."
+
+
+  - content: "Your organization uses Microsoft 365 E3 licensing. What eDiscovery capability would require an upgrade to E5 or an equivalent add-on?"
+    choices:
+    - content: "Running keyword searches across mailboxes"
+      isCorrect: false
+      explanation: "Incorrect: Keyword search is available in both standard and premium eDiscovery."
+    - content: "Using review sets to tag and filter content"
+      isCorrect: true
+      explanation: "Correct: Review sets are a premium capability and require E5 or an equivalent add-on."
+    - content: "Creating and managing cases"
+      isCorrect: false
+      explanation: "Incorrect: Basic case management is available in the standard eDiscovery feature set."
+

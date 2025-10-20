@@ -21,7 +21,7 @@ Congratulations! You completed this comprehensive module on building AI-powered 
 Use the following links to continue your learning journey:
 
 - The following articles explore advanced topics:
-   - [Function calling with Spring AI](https://docs.spring.io/spring-ai/reference/api/chat/functions/openai-chat-functions.html)
+   - [Function calling with Spring AI](https://docs.spring.io/spring-ai/reference/api/chat/openai-chat.html#_function_calling)
    - [Observability in Spring AI](https://docs.spring.io/spring-ai/reference/observability/index.html)
    - [Customize a model with fine-tuning](/azure/ai-services/openai/how-to/fine-tuning?tabs=azure-openai)
 

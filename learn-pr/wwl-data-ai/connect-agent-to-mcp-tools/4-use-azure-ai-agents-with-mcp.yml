@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-agent-to-mcp-tools.use-azure-ai-agents-with-mcp
+title: Use Azure AI agents with MCP servers
+metadata:
+  title: Use Azure AI agents with MCP servers
+  description: "Learn how to connect your Azure AI Agent to remote Model Context Protocol (MCP) servers"
+  ms.date: 07/21/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-use-azure-ai-agents-with-mcp.md)]

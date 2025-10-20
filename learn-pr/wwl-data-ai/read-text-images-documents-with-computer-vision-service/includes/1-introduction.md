@@ -1,13 +1,11 @@
-Suppose you are given thousands of images and asked to transfer the text on the images to a computer database. The scanned images have text organized in different formats and contain multiple languages. What are some ways you could complete the project in a reasonable time frame and make sure the data is entered with a high degree of accuracy? 
+We live in a digital world, in which data is increasingly captured as images. Often, those images contain text, which you need to be able to extract from their pixelated format in the image for processing, indexing, and other tasks. Everyday examples include:
 
-Companies around the world are tackling similar scenarios every day. Without AI services, it would be challenging to complete the project, especially if it were to change in scale.
+- Meeting a new business associate and taking a photograph of their business card to store their contact details digitally.
+- Scanning a document or ID card to include in an application for a government or commercial service.
+- Taking a photo of a menu or recipe to store it in a digital notebook.
+- Photographing street signs or store fronts so you can submit the text they contain to a translation app.
+- Digitizing handwritten notes using a cellphone camera.
 
-Using AI services, we can treat this project as an Azure AI Vision scenario and apply Optical Character Recognition (OCR). OCR allows you to extract text from images, such as photos of street signs and products, as well as from documents — such as handwritten or unstructured documents.
+![Diagram of an image containing text being read by the Azure AI Vision image analysis service.](../media/optical-character-recognition.png)
 
-To build an automated AI solution, you need to train machine learning models to cover many use cases. Azure AI Vision service gives access to advanced algorithms for processing images and returns data to secure storage.
-
-In this module, you'll learn how to:
-
-- Identify how the Azure AI Vision service enables you to read text from images
-- Use the Azure AI Vision service with SDKs and the REST API
-- Develop an application that can read printed and handwritten text
+In this module, we'll explore the *optical character recognition* (OCR) capabilities of the Azure AI Vision *Image Analysis* API, which makes these scenarios, and more, possible.

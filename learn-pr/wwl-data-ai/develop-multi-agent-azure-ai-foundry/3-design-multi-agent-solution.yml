@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-multi-agent-azure-ai-foundry.design-multi-agent-solution
+title: Design a multi-agent solution with connected agents
+metadata:
+  title: Design a multi-agent solution with connected agents
+  description: "Learn how to create a multi-agent solution using Azure AI Foundry Agent Service."
+  ms.date: 06/13/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-design-multi-agent-solution.md)]

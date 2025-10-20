@@ -30,7 +30,7 @@ To learn more about build agents and agent pools, see the following articles:
 * [Self-hosted macOS agents](/azure/devops/pipelines/agents/osx-agent?azure-portal=true)
 * [Self-hosted Windows agents](/azure/devops/pipelines/agents/windows-agent?azure-portal=true)
 * [Container jobs](/azure/devops/pipelines/process/container-phases?azure-portal=true&tabs=yaml)
-* [Pool](/azure/devops/pipelines/yaml-schema?tabs=schema#pool) (YAML schema)
+* [Pool](/azure/devops/pipelines/yaml-schema/pool) (YAML schema)
 * [Build on multiple platforms](/azure/devops/pipelines/yaml-schema/jobs-job-strategy#examples)
 
 ### Configure release pipelines

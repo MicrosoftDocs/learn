@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.develop-just-culture
 title: Develop a just culture
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Develop a just culture
   description: "Develop a just culture"
   ms.date: 05/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/9-develop-just-culture.md)]
+  [!include[](includes/9-develop-just-culture.md)]

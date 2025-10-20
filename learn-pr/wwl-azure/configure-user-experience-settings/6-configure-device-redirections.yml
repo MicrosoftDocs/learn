@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-user-experience-settings.configure-device-redirections
 title: Configure device redirections
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure device redirections
   description: "Configure device redirections"
   ms.date: 08/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 9
 content: |
-  [!include[](includes/6-configure-device-redirections.md)]
+  [!include[](includes/6-configure-device-redirections.md)]

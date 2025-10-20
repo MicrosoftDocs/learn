@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.learn-contributing-local-economies-through-datacenters.cloud-infrastructure-solutions-services
+title: Cloud infrastructure solutions and services jobs
+metadata:
+  title: Cloud infrastructure solutions and services jobs
+  description: This content is a part of the Learn about contributing to local economies through datacenters.
+  ms.date: 05/08/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-cloud-infrastructure-solutions-services.md)]

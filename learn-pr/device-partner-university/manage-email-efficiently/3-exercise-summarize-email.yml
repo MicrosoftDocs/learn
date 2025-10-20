@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.manage-email-efficiently.exercise-summarize-email
+title: Exercise-summarize an email thread
+metadata:
+  title: Exercise-Summarize An Email Thread
+  description: This content is part of the "Manage email efficiently with Microsoft Outlook and Copilot Chat" module.
+  ms.date: 09/24/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-exercise-summarize-email.md)]

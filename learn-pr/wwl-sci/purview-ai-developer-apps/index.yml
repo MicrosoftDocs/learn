@@ -1,0 +1,60 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ai-developer-apps
+metadata:
+  title: Secure Developer AI Environments with Microsoft Purview
+  description: Microsoft Purview provides tools to secure developer AI environments by discovering apps, assessing data access, and applying appropriate protections. This includes detecting generative AI usage, assigning user risk levels, and applying dynamic enforcement based on user behavior and data sensitivity.
+  ms.date: 08/26/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Secure developer AI environments with Microsoft Purview
+summary: |
+  Microsoft Purview provides tools to secure developer AI environments by discovering apps, assessing data access, and applying appropriate protections. This includes detecting generative AI usage, assigning user risk levels, and applying dynamic enforcement based on user behavior and data sensitivity.
+abstract: |
+  In this module you learn how to:
+  - Discover developer AI apps and assess their access to sensitive data
+  - Enforce protections for Azure AI services and Entra-registered apps
+  - Govern AI agents built in Copilot Studio
+  - Retain and classify prompt and response content
+  - Investigate risky AI usage with Insider Risk Management, Communication Compliance, and Audit
+  - Apply dynamic protections using Adaptive Protection and risk-based policies
+prerequisites: |
+  To get the most from this module, you should have:
+  - A basic understanding of Microsoft Purview features, like sensitivity labels, data loss prevention, and retention
+  - A general understanding of Microsoft Entra app registration and identity management
+  - Familiarity with how Microsoft 365 Copilot and AI services access organizational data
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- auditor
+products:
+- m365
+- microsoft-purview
+- entra
+- microsoft-copilot-studio
+- fabric
+- ai-services
+subjects:
+- security
+- generative-ai
+- insider-risk
+- compliance
+units:
+- learn.wwl.purview-ai-developer-apps.introduction
+- learn.wwl.purview-ai-developer-apps.understand-developer-ai-risks
+- learn.wwl.purview-ai-developer-apps.discover-assess-ai-apps
+- learn.wwl.purview-ai-developer-apps.classify-protect-retain-ai-prompt-data
+- learn.wwl.purview-ai-developer-apps.azure-ai-services-protections
+- learn.wwl.purview-ai-developer-apps.entra-ai-apps
+- learn.wwl.purview-ai-developer-apps.secure-copilot-studio
+- learn.wwl.purview-ai-developer-apps.manage-copilot-fabric-risks
+- learn.wwl.purview-ai-developer-apps.investigate-respond-ai-activity
+- learn.wwl.purview-ai-developer-apps.knowledge-check
+- learn.wwl.purview-ai-developer-apps.summary
+badge:
+  uid: learn.wwl.purview-ai-developer-apps.badge

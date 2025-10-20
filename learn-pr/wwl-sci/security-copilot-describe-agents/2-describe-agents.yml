@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-agents.describe-agents
+title: Describe Microsoft Security Copilot agents
+metadata:
+  title: Describe Microsoft Security Copilot agents
+  description: Describe Microsoft Security Copilot agents.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 05/08/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-describe-agents.md)]

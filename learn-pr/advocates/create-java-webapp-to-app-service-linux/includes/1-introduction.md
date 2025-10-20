@@ -12,7 +12,7 @@ By the end of this module, you'll be able to do the following things:
 
 ## Prerequisites
 
-- Your own Azure subscription. [Create one for free.](https://azure.microsoft.com/free/).
+- Your own Azure subscription. [Create one for free.](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - [Azure CLI](/cli/azure/install-azure-cli)
 - [JDK 17](https://www.oracle.com/java/technologies/downloads/)
 - [Apache Tomcat 10.1.x](https://tomcat.apache.org/download-10.cgi)

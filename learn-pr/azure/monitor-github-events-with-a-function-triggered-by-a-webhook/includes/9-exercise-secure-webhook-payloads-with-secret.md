@@ -2,11 +2,11 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
 ## Get a key for your Azure Function
 
-1. In the Azure portal, return to the Function App that you created in the first exercise in the module.
+1. In the Azure portal, go to the Function App that you created earlier.
 
-1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
+1. On the **Function App** pane, select your Function App under **Functions** in the center pane.
 
-1. Select the HttpTrigger1 you created. The **HtttpTrigger1** pane appears for your *Function*.
+1. Select the **HttpTrigger1** you created. The **HtttpTrigger1** pane appears for your *Function*.
 
 1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your *Function*.
 
@@ -128,7 +128,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
 1. In the **Secret** text box, enter the default key from your function that you previously saved in this exercise.
 
-1. Scroll down to the bottom of the page, and select **Update webhook**. The **Webhooks/Manage webhooks** pane appears.
+1. Scroll down to the bottom of the page and select **Update webhook**. The **Webhooks/Manage webhooks** pane appears.
 
 ## Test the webhook and the Azure Function
 
@@ -157,11 +157,11 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
 ## Test an invalid signature
 
-1. In the GitHub portal, on the webhooks page, select the **Settings** tab.
+1. In the GitHub portal, on the webhooks page, select the **Edit** button for your webhook.
 
-1. In the **Secret** test box, select **Change Secret**.
+1. In the **Secret** box, select **Change Secret**.
 
-1. Enter a random string, scroll down, and then select **Update webhook**.
+1. Enter a random string, scroll down, and select **Update webhook**.
 
     The key used by the webhook should no longer match that expected by the Azure function.
 

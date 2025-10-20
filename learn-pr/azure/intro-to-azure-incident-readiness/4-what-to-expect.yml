@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-incident-readiness.what-to-expect
 title: Understand where to go and what to expect during an incident
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand where to go and what to expect during an incident
   description: "In this unit, you'll gain a clear understanding of how Microsoft and Azure communicate incident details and to where, a focus on transparency, regular updates, and accessing support when needed, enabling you to effectively manage incidents that may impact you."
   ms.date: 6/25/2023
@@ -37,4 +35,4 @@ quiz:
       isCorrect: false
     - content: "False"
       isCorrect: true
-
+

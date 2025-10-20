@@ -5,9 +5,8 @@ metadata:
   title: Knowledge Check
   description: Check your knowledge of creating and deploying Java web apps to Azure App Service.
   ms.date: 02/20/2025
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: ayangupta
+  author: ayangupt
+  ms.author: ayangupta
   ms.topic: unit
   ms.custom: team=cloud_advocates, devx-track-extended-java, devx-track-java, linux-related-content
 durationInMinutes: 5

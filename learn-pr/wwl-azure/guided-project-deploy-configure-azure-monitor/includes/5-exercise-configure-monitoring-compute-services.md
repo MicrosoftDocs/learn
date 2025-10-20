@@ -1,4 +1,3 @@
-
 This guided project consists of the four exercises:
 
 - Exercise 1: Deploy Log Analytics
@@ -18,4 +17,4 @@ You create a data collection endpoint and a data collection rule to collect Wind
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
 
 [:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
-](https://microsoftlearning.github.io/APL-1004-deploy-configure-azure-monitor/Instructions/Labs/LAB_04_exercise_configure_monitoring_compute_services.html)
+](https://microsoftlearning.github.io/AZ-1004-deploy-configure-azure-monitor/Instructions/Labs/LAB_04_exercise_configure_monitoring_compute_services.html)

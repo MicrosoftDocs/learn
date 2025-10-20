@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.create-azure-storage-account
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create an Azure Storage account
   description: Discover ways to use an Azure Storage account to manage your data for billing, access, and storage location of your blobs, files, queues, and tables.
   manager: akashdubey
@@ -47,4 +45,4 @@ units:
 - learn.create-azure-storage-account.7-summary
 badge:
   uid: learn.create-azure-storage-account.badge
-
+

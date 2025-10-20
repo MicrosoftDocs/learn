@@ -3,8 +3,6 @@
 uid: learn.wwl.get-started-ai-fundamentals.computer-vision
 title: Computer vision
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Computer vision
   description: "Computer vision is a field of AI that enables machines to interpret and understand visual information from the world, such as images and videos."
   ms.date: 02/24/2025
@@ -15,4 +13,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-computer-vision.md)]
+  [!include[](includes/3-computer-vision.md)]

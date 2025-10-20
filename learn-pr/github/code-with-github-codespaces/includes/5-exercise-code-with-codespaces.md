@@ -2,7 +2,7 @@ Now that you understand the Codespaces lifecycle and processes, it's time to pra
 
 ## Instructions
 
-1. Right-click the [GitHub exercise](https://github.com/skills/code-with-codespaces) link to open it in a new tab.
+1. Right-click the [GitHub exercise](https://github.com/skills-dev/code-with-codespaces) link to open it in a new tab.
 1. On the GitHub Exercise Welcome page, right-click the **Start course** button to open it in a new tab.
    - In the new tab, most of the prompts automatically fill-in for you.
    - For owner, choose your personal account or an organization to host the repository.

@@ -4,7 +4,7 @@ Supplemental Resources:
 
 - [Microsoft Technical Documentation](https://aka.ms/docs) 
 
-- [Customer and Partner Success Stories](https://aka.ms/customerstories) 
+- [Customer and Partner Success Stories](https://azure.microsoft.com/resources/customer-stories/) 
 
 - [Azure Blog and Updates ](https://azure.microsoft.com/blog/)
 

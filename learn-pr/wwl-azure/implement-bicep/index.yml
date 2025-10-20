@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-bicep
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement Bicep
   description: "Implement Bicep"
   ms.date: 05/23/2024
@@ -60,4 +58,4 @@ units:
 - learn.wwl.implement-bicep.knowledge-check
 - learn.wwl.implement-bicep.summary
 badge:
-  uid: learn.wwl.implement-bicep.badge
+  uid: learn.wwl.implement-bicep.badge

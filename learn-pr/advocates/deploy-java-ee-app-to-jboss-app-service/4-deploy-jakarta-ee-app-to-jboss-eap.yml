@@ -4,9 +4,8 @@ title: Deploy a Jakarta EE application to JBoss EAP on Azure App Service
 metadata:
   title: Deploy a Jakarta EE Application to JBoss EAP on Azure App Service
   description: Shows you how to create a Java application that connects to Azure Database for MySQL and deploy it to JBoss EAP on Azure App Service.
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: yoshioterada
+  author: yoshioterada
+  ms.author: yoterada
   ms.date: 03/16/2025
   ms.topic: unit
   ms.custom:

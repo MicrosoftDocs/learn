@@ -1,115 +1,80 @@
-In this exercise, you explore the Learn sandbox. You can interact with the Learn sandbox in three different ways. During exercises, you'll be provided for instructions for at least one of the methods below.
+In this exercise, you explore ways to interact with Microsoft Azure. You can interact with Azure in different ways, including through the web portal or using the Azure command line interface (CLI) with PowerShell or Bash commands.
 
-You start by activating the Learn sandbox. Then, you’ll investigate each of the methods to work in the Learn sandbox.
+## Access the Azure Portal
 
-## Activate the Learn Sandbox
+The Azure portal provides a graphic user interface (GUI) to interact with Azure services. You can navigate to different service areas, manage subscriptions and accounts, search for specific services or settings, and so on.
 
-If you haven’t already, use the Activate sandbox button above to activate the Learn sandbox.
+The Azure portal is accessed at [https://portal.azure.com](https://portal.azure.com/?azure-portal=true)
 
-If you receive a notice saying Microsoft Learn needs your permission to create Azure resource, use the Review permission button to review and accept the permissions. Once you approve the permissions, it may take a few minutes for the sandbox to activate.
+Once you're logged into the portal, you can navigate around Azure using the interface, or you can use the command line interface with PowerShell and BASH commands.
 
-## Task 1: Use the PowerShell CLI
+## Use the command line interface
 
-Once the sandbox launches, half the screen will be in PowerShell command line interface (CLI) mode. If you’re familiar with PowerShell, you can manage your Azure environment using PowerShell commands.
+You can use the CLI from within the Azure portal. Once logged into Azure, access the CLI by selecting the Cloud Shell icon. Launching Cloud Shell brings up a CLI window in PowerShell or BASH mode. If you’re familiar with PowerShell, you can manage your Azure environment using PowerShell commands.
 
-:::image type="content" source="../media/sandbox-powershell-11569b2c-7a9a0db5.png" alt-text="Screenshot of the Azure PowerShell CLI at initial launch.":::
+To access CloudShell from the Azure portal, select the CloudShell icon.
+:::image type="content" source="../media/open-cloudshell.png" alt-text="Screenshot of the Azure Portal action area with the CloudShell icon pointed out.":::
 
+You can quickly change between PowerShell and BASH in the CLI by selecting the **Switch to ...** button or entering `BASH` or `PWSH`.
+
+:::image type="content" source="../media/switch-button.png" alt-text="Screenshot of the Switch to button in the Azure command line interface.":::
 
 > [!TIP]
-> You can tell you're in PowerShell mode by the PS before your directory on the command line.
+> When in PowerShell mode, the command line starts with PS. When in BASH mode, the command line starts with your user name@azure.
+>
+> :::image type="content" source="../media/sandbox-powershell-11569b2c-7a9a0db5.png" alt-text="Screenshot of the Azure PowerShell CLI at initial launch.":::
 
-Use the PowerShell Get-date command to get the current date and time.
+### Use PowerShell in the CLI
 
-```powershell
-Get-date
-```
+Use the PowerShell `Get-date` command to get the current date and time.
 
-Most Azure specific commands will start with the letters az. The Get-date command you just ran is a PowerShell specific command. Let's try an Azure command to check what version of the CLI you're using right now.
+The Get-date command is a PowerShell specific command. Most Azure specific commands start with the letters **az**. Let's try an Azure command to check what version of the CLI you're using right now.
 
 ```powershell
 az version
 ```
 
-## Task 2: Use the BASH CLI
+### Use BASH in the CLI
 
-If you’re more familiar with BASH, you can use BASH command instead by shifting to the BASH CLI.
+If you’re more familiar with BASH, you can use BASH commands instead by shifting to the BASH CLI.
 
-Enter bash to switch to the BASH CLI.
-
-```powershell
-bash
-```
+Enter `bash` to switch to the BASH CLI.
 
 :::image type="content" source="../media/sandbox-bash-363cf104-9c91b89d.png" alt-text="Screenshot of the Azure BASH CLI at initial launch.":::
 
-
 > [!TIP]
-> You can tell you're in BASH mode by the username displayed on the command line. It will be your username@azure.
+> You can tell you're in BASH mode by the username displayed on the command line, your username@azure.
 
-Again, use the Get-date command to get the current date and time.
-
-```azurecli
-Get-date
-```
+Again, use the `Get-date` command to get the current date and time.
 
 You received an error because Get-date is a PowerShell specific command.
 
 :::image type="content" source="../media/sandbox-bash-date-8b20e391-afa1b510.png" alt-text="Screenshot of BASH error message get-date command not found.":::
 
 
-Use the date command to get the current date and time.
+Use the `date` command to get the current date and time.
 
-```azurecli
-date
-```
+Just like in the PowerShell mode of the CLI, use the letters az to start an Azure command in the BASH mode. Try to run an update to the CLI with `az upgrade`.
 
-Just like in the PowerShell mode of the CLI, you can use the letters az to start an Azure command in the BASH mode. Try to run an update to the CLI with az upgrade.
-
-```azurecli
-az upgrade
-```
 
 You can change back to PowerShell mode by entering pwsh on the BASH command line.
 
-## Task 3: Use Azure CLI interactive mode
+## Use Azure CLI interactive mode
 
 Another way to interact is using the Azure CLI interactive mode. This changes CLI behavior to more closely resemble an integrated development environment (IDE). Interactive mode provides autocompletion, command descriptions, and even examples. If you’re unfamiliar with BASH and PowerShell, but want to use the command line, interactive mode may help you.
 
-Enter az interactive to enter interactive mode.
+Enter `az interactive` to enter interactive mode.
 
-```azurecli
-az interactive
-```
+Decide whether you wish to send telemetry data and enter `YES` or `NO`.
 
-Decide whether you wish to send telemetry data and enter YES or NO.
-
-You may have to wait a minute or two to allow the interactive mode to fully initialize. Then, enter the letter “a” and auto-completion should start to work. If auto-completion isn’t working, erase what you’ve entered, wait a bit longer, and try again.
+You may have to wait a minute or two to allow the interactive mode to fully initialize. Then, enter the letter “a” and auto-completion should start to work. If auto-completion isn’t working, wait a bit longer and try again.
 
 :::image type="content" source="../media/azure-interactive-mode-c8421a2d-3c3d662b.png" alt-text="Screenshot of interactive mode with autocompletion providing commands that start with A.":::
 
+Once initialized, you can use the arrow keys or tab to help complete your commands. Interactive mode is set up specifically for Azure, so you don't need to enter az to start a command. Try the `upgrade` or `version` commands again, but this time without az in front.
 
-Once initialized, you can use the arrow keys or tab to help complete your commands. Interactive mode is set up specifically for Azure, so you don't need to enter az to start a command (but you can if you want to or are used to it). Try the upgrade or version commands again, but this time without az in front.
-
-```azurecli
-version
-```
-
-```azurecli
-upgrade
-```
-
-The commands should have worked the same as before, and given you the same results. Use the exit command to leave interactive mode.
-
-```azurecli
-exit
-```
-
-## Task 4: Use the Azure portal
-
-You’ll also have the option of using the Azure portal during sandbox exercises. You need to use the link provided in the exercise to access the Azure portal. Using the provided link, instead of opening the portal yourself, ensures the correct subscription is used and the exercise remains free for you to complete.
-
-Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to check out the Azure web interface. Once in the portal, you can see all the services Azure has to offer as well as look around at resource groups and so on.
+The commands should have worked the same as before, and given you the same results. Use the `exit` command to leave interactive mode.
 
 ## Continue
 
-You're all set for now. We'll come back to this sandbox later in this module and actually create an Azure resource!
+You're all set. Continue on with the training.

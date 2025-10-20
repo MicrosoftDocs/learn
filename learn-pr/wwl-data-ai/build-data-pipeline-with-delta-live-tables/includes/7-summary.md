@@ -1,13 +1,12 @@
-Delta Live Tables (DLT) are a powerful framework provided by Databricks that simplifies the construction and management of reliable data pipelines for big data and machine learning applications. Utilizing DLT, developers can define data transformations declaratively in Python or SQL, which the system automatically orchestrates and manages.
+Lakeflow Declarative Pipelines are a powerful framework provided by Databricks that simplifies the construction and management of reliable data pipelines for big data and machine learning applications. Utilizing Lakeflow Declarative Pipelines, developers can define data transformations declaratively in Python or SQL, which the system automatically orchestrates and manages.
 
 In this module, you learned how to:
 
-- Describe Delta Live Tables
-- Ingest data into Delta Live Tables
-- Use Data Pipelines for Real time Data Processing
+- Describe Lakeflow Declarative Pipelines
+- Ingest data into materialized views and streaming tables
+- Use Lakeflow Declarative Pipelines for Real time Data Processing
 
-Additional reading
+## Learn more
 
-- [Delta Live Tables](/azure/databricks/delta-live-tables/)
-- [Loading data with Delta Live Tables](https://docs.databricks.com/en/delta-live-tables/load.html)
-- [How to accelerate your ETL pipelines from 18 hours to as fast as 5 minutes with Azure Databricks](https://www.databricks.com/blog/2020/08/18/how-to-accelerate-your-etl-pipelines-from-18-hours-to-as-fast-as-5-minutes-with-azure-databricks.html)
+- [Lakeflow Declarative Pipelines](/azure/databricks/ddlt/)
+- [Load data with Lakeflow Declarative Pipelines](https://docs.databricks.com/aws/en/dlt/load)

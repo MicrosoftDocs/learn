@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-blue-green-deployment-feature-toggles.explore-deployment-slots
 title: Explore deployment slots
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore deployment slots
   description: "Explore deployment slots"
   ms.date: 05/27/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-explore-deployment-slots.md)]
+  [!include[](includes/3-explore-deployment-slots.md)]

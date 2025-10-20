@@ -1,12 +1,12 @@
 You can use API Management policies to control the behavior of a deployed API without rewriting its code.
 
-In your board game company, you have a set of APIs that enable partner organizations to obtain price estimates, staff members to check stock levels, and customers to place orders. You want to address a particular issue with performance and investigate what else you can achieve with policies.
+In your board game company, your APIs enable partner organizations to obtain price estimates, staff members to check stock levels, and customers to place orders. You want to address a particular issue with performance and investigate what else you can achieve with policies.
 
 First, let's look at what you can use policies to do.
 
 ## What are policies?
 
-In Azure API Management, administrators can use policies to alter the behavior of APIs through configuration. The primary functionality and behavior of an API is designed by the developers who write the code. However, administrators can use policies to set limits, convert response formats, or enforce security requirements. In this module, we'll concentrate on using policies to set up and control a cache.
+In Azure API Management, administrators can use policies to alter the behavior of APIs through configuration. Developers design the primary functionality and behavior of an API by writing code. However, administrators can use policies to set limits, convert response formats, or enforce security requirements. In this module, we concentrate on using policies to set up and control a cache.
 
 Policies are made up of individual statements, which are executed in order. The policy documents are XML structures, which contain elements that you can use to control the behavior of the API.
 
@@ -47,7 +47,7 @@ This policy also translates any outbound responses in JSON format into XML.
 
 ## Policy scopes
 
-A policy's scope determines how broadly it will be applied. The following are policy scopes from which you can choose:
+A policy scope determines how broadly the policy is applied. You can choose from the following policy scopes:
 
 - Global
 - Product
@@ -84,7 +84,7 @@ Policies applied at the API scope affect only a single API. To set a policy at t
 
 ### Operation
 
-Policies applied at the operation scope affect only one operation within the API. In the example below, the administrator has selected the **GetSpeaker** operation within the **Demo Conference API** and can set inbound, outbound, or backend policies that apply only to that operation:
+Policies applied at the operation scope affect only one operation within the API. In the following example, the administrator selects the **GetSpeaker** operation within the **Demo Conference API** and can set inbound, outbound, or backend policies that apply only to that operation:
 
 :::image type="content" source="../media/2-operation-scope.png" alt-text="Screenshot of the operation scope in the portal.":::
 
@@ -105,7 +105,7 @@ Because the `<base>` tag appears above the `<find-and-replace>` tag, Azure API M
 
 ## Commonly used policies
 
-Let's examine some things you can do with policies in API Management. We'll introduce some of the most commonly used policies, and you can visit the API Management documentation for a complete list and examples.
+Let's examine some things you can do with policies in API Management. Here, we introduce you to some of the most commonly used policies, and you can visit the API Management documentation for a complete list and examples.
 
 
 ### Policies for restricting access
@@ -124,7 +124,7 @@ To allow or deny calls from specific IP addresses or ranges of IP addresses, use
 
 Several policies enable you to control authentication. For example:
 
-Use the **Authenticate with Basic** policy to enable authentication in plain text. This form of authentication is broadly supported, but remember that you should protect it with SSL encryption; otherwise, a malicious attack can intercept the credentials as they cross the network.
+Use the **Authenticate with Basic** policy to enable authentication in plain text. This form of authentication is broadly supported, but remember that you should protect it with Transport Layer Security (TLS) encryption. Otherwise, a malicious attack can intercept the credentials as they cross the network.
 
 Use the **Authenticate with client certificate** policy to enable clients to authenticate by supplying a client certificate.
 
@@ -134,7 +134,7 @@ Cross-domain requests are considered a security threat and denied by browsers an
 
 Use the **Allow cross-domain calls** policy to permit calls from Adobe Flash and Silverlight. If your API or client apps rely on Cross-Origin Resource Sharing (CORS), use the **CORS** policy to permit them.
 
-Some AJAX code, which runs on the browser, uses JSON with padding to make cross-domain calls securely. Use the **JSONP** policy to permit clients to use this technique.
+Some Asynchronous JavaScript and XML (AJAX) code, which runs on the browser, uses JSON with padding to make cross-domain calls securely. Use the **JSONP** policy to permit clients to use this technique.
 
 ### Transformation policies
 
@@ -144,23 +144,23 @@ To convert to and from JSON and XML, use the **Convert JSON to XML** and **Conve
 
 Sometimes you want to keep a response in XML, but alter its schema. In such cases, use the **Transform XML** policy to apply an XSLT template.
 
-Use **Find and replace string in body** to execute a string substitution. For example, if a brand name has changed, you could use this policy to ensure that the change is reflected in all responses, even if the underlying data still includes references to the old name.
+Use **Find and replace string in body** to execute a string substitution. For example, if a brand name changes, you could use this policy to ensure that the change is reflected in all responses. Even if the underlying data still includes references to the old name.
 
-The **Mask URLs in content** policy can rewrite any links in the response body so that they point to a different location. This policy is useful when a website or web API has moved.
+The **Mask URLs in content** policy can rewrite any links in the response body so that they point to a different location. This policy is useful when a website or web API moves.
 
 Use the **Set body** policy to set the message text for incoming and outgoing requests.
 
-If you want to modify an incoming HTTP request or outgoing response, you can use several different policies. To add items to an existing response or request header, use the **Set HTTP header** policy. If you need to modify the query strings, which appear after the question mark in the URL, use the **Set query string parameter** policy. If a public URL, which a user has requested, must be mapped to a different internal destination, the **Rewrite URL** policy can perform the conversion both inbound and outbound.
+If you want to modify an incoming HTTP request or outgoing response, you can use several different policies. To add items to an existing response or request header, use the **Set HTTP header** policy. If you need to modify the query strings, which appear after the question mark in the URL, use the **Set query string parameter** policy. If a user requests a public URL that must be mapped to a different internal destination, the **Rewrite URL** policy can perform the conversion both inbound and outbound.
 
 ### Advanced policies
 
-These policies can be of use in scenarios when you want non-standard behavior.
+These policies can be of use in scenarios when you want nonstandard behavior.
 
 For example, if you want to apply a policy only when the response passes a specific test, use the **Control flow** policy.
 
 Use the **Forward request** policy to forward a request to a backend server.
 
-To control what happens when an action fails, use the **Retry** policy. Policy statements enclosed in **Retry** will execute repeatedly until a condition is met. Execution will repeat at the specified time intervals up until the retry count value is reached.
+To control what happens when an action fails, use the **Retry** policy. Policy statements that are enclosed in **Retry**, execute repeatedly until a condition is met. Execution repeats at the specified time intervals up until the retry count value is reached.
 
 The **Send one-way request** policy can send a request to a URL without waiting for a response.
 

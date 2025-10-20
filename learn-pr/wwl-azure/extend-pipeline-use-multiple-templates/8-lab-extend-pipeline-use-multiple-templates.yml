@@ -2,8 +2,6 @@
 uid: learn.wwl.extend-pipeline-use-multiple-templates.lab-extend-pipeline-use-multiple-templates
 title: Lab - Extend a pipeline to use multiple templates
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Lab - Extend a pipeline to use multiple templates
   description: "This unit contains a hands-on exercise. Learners can use the exercise to extend a pipeline to use multiple templates."
   ms.date: 6/14/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 20
 content: |
-  [!include[](includes/8-lab-extend-pipeline-use-multiple-templates.md)]
+  [!include[](includes/8-lab-extend-pipeline-use-multiple-templates.md)]

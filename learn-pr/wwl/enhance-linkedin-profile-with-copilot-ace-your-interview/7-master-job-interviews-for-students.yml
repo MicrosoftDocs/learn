@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.master-job-interviews-for-students
+title: Master job interviews for students
+metadata:
+  title: Master Job Interviews for Students
+  description: Master job interviews for students with Microsoft Copilot
+  ms.date: 05/09/2025
+  author: andrewbettany
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-master-job-interviews-for-students.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.microsoft-intune.intune-plans
+title: Intune plans
+metadata:
+  title: Intune Plans
+  description: This content is part of the "Device management with Microsoft Intune" module.
+  ms.date: 09/03/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-intune-plans.md)]

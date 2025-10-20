@@ -2,8 +2,6 @@
 uid: learn.wwl.work-environments-azure-machine-learning.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: In this module, you've learned when to use curated or custom environments, how to create them, and how to use them in jobs.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
-
+

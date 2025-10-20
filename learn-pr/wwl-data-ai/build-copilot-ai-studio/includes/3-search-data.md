@@ -30,7 +30,7 @@ When you want to be able to use vector search to search your data, you need to c
 ![Diagram showing a vector index that contains embeddings.](../media/vector-index.png)
 
 > [!Tip]
-> Learn more about [embeddings in the Azure OpenAI Service](/azure/ai-services/openai/concepts/understand-embeddings?azure-portal=true).
+> Learn more about [embeddings in the Azure OpenAI in Foundry Models](/azure/ai-services/openai/concepts/understand-embeddings?azure-portal=true).
 
 ## Creating a search index
 

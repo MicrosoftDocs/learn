@@ -15,33 +15,25 @@ Within Azure, there are several services available for training machine learning
 |![Icon of Microsoft Fabric.](../media/fabric.png)| **Microsoft Fabric** is an integrated analytics platform designed to streamline data workflows between data analysts, data engineers, and data scientists. With Microsoft Fabric, you can prepare data, train a model, use the trained model to generate predictions, and visualize the data in Power BI reports. Learn more about [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview?azure-portal=true), and specifically about [the data science features in Microsoft Fabric](/fabric/data-science/?azure-portal=true).|
 |![Icon of Azure AI Services.](../media/03-01-cognitive-services.png)| **Azure AI Services** is a collection of prebuilt machine learning models you can use for common machine learning tasks such as object detection in images. The models are offered as an application programming interface (API), so you can easily integrate a model with your application. Some models can be customized with your own training data, saving time and resources to train a new model from scratch. Learn more about [Azure AI Services](/azure/cognitive-services/what-are-cognitive-services?azure-portal=true).|
 
-## Understand the difference between services
+## Features and capabilities of Azure Machine Learning
 
-Choosing a service to use for training your machine learning models can be challenging. Often, multiple services would fit your scenario. There are some general guidelines to help you:
+Let's focus on **Azure Machine Learning**. Microsoft Azure Machine Learning is a cloud service for training, deploying, and managing machine learning models. It's designed to be used by data scientists, software engineers, devops professionals, and others to manage the end-to-end lifecycle of machine learning projects. 
 
-- Use Azure AI Services whenever one of the customizable prebuilt models suits your requirements, to **save time and effort**.
-- Use Microsoft Fabric or Azure Databricks if you want to **keep all data-related** (data analytics, data engineering, and data science) **projects within the same service**.
-- Use Microsoft Fabric or Azure Databricks if you need **distributed compute** for working with large datasets (datasets are large when you experience capacity constraints with standard compute). You need to work with [PySpark](https://spark.apache.org/docs/latest/api/python?azure-portal=true) to use the distributed compute.
-- Use Azure Machine Learning or Azure Databricks when you want **full control** over model training and management.
-- Use Azure Machine Learning when **Python** is your preferred programming language.
-- Use Azure Machine Learning when you want an **intuitive user interface** to manage your machine learning lifecycle.
+Azure Machine Learning supports tasks including:
 
-> [!Important]
-> There are many factors which may influence your choice of service. Ultimately, it is up to you and your organization to decide what’s the best fit. These are simply guidelines to help you understand how to differentiate between services.
+- Exploring data and preparing it for modeling.
+- Training and evaluating machine learning models.
+- Registering and managing trained models.
+- Deploying trained models for use by applications and services.
+- Reviewing and applying responsible AI principles and practices.
 
-## Decide between compute options
+Azure Machine Learning provides the following features and capabilities to support machine learning workloads:
 
-Every time you train a model, you should monitor how long it takes to train the model and how much compute is used to execute your code. By monitoring the compute utilization, you know whether to scale your compute up or down.
+- Centralized storage and management of datasets for model training and evaluation.
+- On-demand compute resources on which you can run machine learning jobs, such as training a model.
+- Automated machine learning (AutoML), which makes it easy to run multiple training jobs with different algorithms and parameters to find the best model for your data.
+- Visual tools to define orchestrated *pipelines* for processes such as model training or inferencing.
+- Integration with common machine learning frameworks such as MLflow, which make it easier to manage model training, evaluation, and deployment at scale.
+- Built-in support for visualizing and evaluating metrics for responsible AI, including model explainability, fairness assessment, and others.
 
-When you choose to work with Azure instead of training a model on a local device, you have access to scalable and cost-effective compute.
-
-| Compute options | Considerations |
-|---|---|
-| **Central Processing Unit** (**CPU**) or a **Graphics Processing Unit** (**GPU**) | For smaller tabular datasets, a CPU is sufficient and cost-effective. For unstructured data like images or text, GPUs are more powerful and efficient. GPUs can also be used for larger tabular datasets, if CPU compute is proving to be insufficient.|
-| **General purpose** or **memory optimized** | Use general purpose to have a balanced CPU-to-memory ratio, which is ideal for testing and development with smaller datasets. Use memory optimized to have a high memory-to-CPU ratio. Great for in-memory analytics, which is ideal when you have larger datasets or when you're working in notebooks. |
-| **Spark** | A Spark cluster consists of a driver node and worker nodes. Your code initially communicates with the driver node. The work is then distributed across the worker nodes. When you use a service, like Azure Databricks, that distributes the work, parts of the workload can be executed in parallel, reducing the processing time.|
-
-> [!Important]
-> To make optimal use of a Spark cluster, your code needs to be written in a Spark-friendly language like Scala, SQL, RSpark, or PySpark in order to distribute the workload. If you write in Python, you only use the driver node and leave the worker nodes unused.
-
-Which compute options best fit your needs is often a case of trial and error. When running code, you should monitor the compute utilization to understand how much compute resources you're using. If training your model takes too long, even with the largest compute size, you can use GPUs instead of CPUs. Alternatively, you can choose to distribute model training by using Spark compute which require you to rewrite your training scripts.
+Next, let's see how we can get started with Azure Machine Learning in a user interface.

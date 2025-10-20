@@ -7,18 +7,18 @@ In this lab, you create a virtual network gateway for ExpressRoute.
 :::image type="content" source="../media/4-exercise-configure-expressroute-gateway.png" alt-text="Diagram of virtual network gateway.":::
 
 
-## Objectives
+## Job skills
 
- -  Task 1: Create the virtual network and gateway subnet
- -  Task 2: Create the virtual network gateway
+ - Create the virtual network and gateway subnet.
+ - Create the virtual network gateway.
 
 
-> [!NOTE]
-> Select the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
 
-> [!NOTE]
->You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+> [!IMPORTANT]
+> Estimated time: 60 minutes.
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
-[![Screenshot of the simulation page.](../media/simulation-expressroute-gateway-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Configure%20an%20ExpressRoute%20gateway)
+Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 
-  
+
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M03-Unit%204%20Configure%20an%20ExpressRoute%20Gateway.html)

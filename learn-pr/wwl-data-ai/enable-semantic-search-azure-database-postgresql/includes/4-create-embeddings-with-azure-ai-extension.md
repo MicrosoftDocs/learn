@@ -61,3 +61,4 @@ The `<=>` operator calculates the *cosine distance* between the two vectors, the
 The `::vector` operator converts the generated embeddings to PostgreSQL vector arrays.
 
 The query returns the top three listing IDs and descriptions, ranked from less to more different (more to less similar).
+

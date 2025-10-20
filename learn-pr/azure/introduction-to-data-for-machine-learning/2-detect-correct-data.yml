@@ -2,11 +2,9 @@
 uid: learn.machinelearning.introduction-to-data-for-machine-learning.detect-correct-data
 title: Good, bad, and missing data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Good, bad, and missing data
   description: Conceptual unit introducing types of data in machine learning
-  ms.date: 10/10/2024
+  ms.date: 05/21/2025
   author: fbsolo-ms1
   ms.author: franksolomon
   ms.reviewer: franksolomon

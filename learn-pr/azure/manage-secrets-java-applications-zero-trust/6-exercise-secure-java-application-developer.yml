@@ -9,8 +9,9 @@ metadata:
   ms.date: 05/28/2024
   ms.topic: unit
   ms.custom:
-    - team=cloud_advocates
+    - sfi-ropc-blocked
     - devx-track-extended-java
+    - team=cloud_advocates
   ms.contributors:
   - judubois-12292021
 durationInMinutes: 6

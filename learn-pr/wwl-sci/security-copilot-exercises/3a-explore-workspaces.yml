@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-exercises.explore-workspaces
+title: Explore Security Copilot workspaces
+metadata:
+  title: Explore Security Copilot workspaces
+  description: Explore Security Copilot workspaces.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 04/29/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 15
+content: |
+  [!include[](includes/3a-explore-workspaces.md)]

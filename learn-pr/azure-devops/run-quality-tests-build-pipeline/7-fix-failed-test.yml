@@ -2,8 +2,6 @@
 uid: learn.azdo.run-quality-tests-build-pipeline.7-fix-failed-test
 title: Exercise - Fix a failed test
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Fix a failed test
   description: See how a failed test can help uncover defects before the build reaches others.
   ms.custom: devdivchpfy22
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/7-fix-failed-test.md)]
-
+

@@ -1,4 +1,4 @@
-Regression is a simple, common, and highly useful data analysis technique, often colloquially referred to as "fitting a line." In its simplest form, regression fits a straight line between a one variable (feature) and another (label). In more complicated forms, regression can find non-linear relationships between a single label and multiple features.
+Regression is a simple, common, and highly useful data-analysis technique, often colloquially referred to as "fitting a line." In its simplest form, regression fits a straight line between a one variable (feature) and another (label). In more complicated forms, regression can find non-linear relationships between a single label and multiple features.
 
 ## Simple linear regression
 
@@ -14,7 +14,7 @@ y=mx+c
 
 Where *y* is your label and *x* is your feature.
 
-For example, in our scenario, if we were to try to predict which patients will have a fever-elevated body temperature-based on their age, we would have the model:
+For example, in our scenario, if we were to try to predict which patients will have a fever—elevated body temperature—based on their age, we would have the model:
 
 temperature=m*age+c
 
@@ -26,7 +26,7 @@ This would mean that every year of age is associated with body temperature incre
 
 ## Fitting linear regression
 
-We normally use existing libraries to fit regression models for us. Regression typically aims to find the line that produces the least amount of error, where error here means the difference between the actual data-point value and the predicted value. For example, in the following image, the black line indicates the error between the prediction, the red line, and one actual value: the dot.
+We normally use existing libraries to fit regression models for us. Regression typically aims to find the line that produces the least amount of error, where error here means the difference between the actual data-point value and the predicted value. For example, in the following image, the black line indicates the error between the prediction (the red line) and one actual value (the dot).
 
 ![Diagram showing fitting a linear regression graph with plot points and a black line to indicate error.](../media/2-fitting-linear-regression.png)
 
@@ -58,4 +58,4 @@ Regressions make it easy to extrapolate; to make predictions for values outside 
 
 ### Optimal fitting is usually guaranteed
 
-Most machine learning models use gradient descent to fit models, which involves tuning the gradient descent algorithm and provides no guarantee that an optimal solution will be found. By contrast, linear regression that uses the sum of squares as a cost function doesn't actually need an iterative gradient-descent procedure. Instead, clever mathematics can be used to calculate the optimal location for the line to be placed. The mathematics are outside the scope of this module, but it's useful to know that (so long as the sample size isn't too large) linear regression doesn't need special attention to be paid to the fitting process, and the optimal solution is guaranteed.
+Most machine learning models use gradient descent to fit models, which involves tuning the gradient-descent algorithm and provides no guarantee that an optimal solution will be found. By contrast, linear regression that uses the sum of squares as a cost function doesn't actually need an iterative gradient-descent procedure. Instead, we can use clever mathematics to calculate the optimal location for the line to be placed. The mathematics are outside the scope of this module, but it's useful to know that (so long as the sample size isn't too large) linear regression doesn't need special attention to be paid to the fitting process, and the optimal solution is guaranteed.

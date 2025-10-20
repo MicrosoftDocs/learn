@@ -54,11 +54,11 @@ Tactical DDD is when you define your domain models with more precision. The tact
 
 There are several tactical DDD patterns to consider:
 
-- **Entities:** An entity is an object with a unique identity that persists over time. For example, in a banking application, customers and accounts are entities.
-- **Value objects:** A value object has no identity. The values of its attributes define it, and it's immutable. Typical examples of value objects include colors, dates and times, and currency values.
-- **Aggregates:** An aggregate defines a consistency boundary around one or more entities. The purpose of an aggregate is to model transactional invariants. Things in the real world have complex webs of relationships. Customers create orders, orders contain products, products have suppliers, and so on. If the application modifies several related objects, how does it guarantee consistency? How do we keep track of invariants and enforce them?
-- **Domain and application services:** In DDD terminology, a service is an object that implements some logic without holding any state. Evans distinguishes between domain services, which encapsulate domain logic, and application services, which provide technical functionality. Application services typically include technical functionality such as user authentication or sending an SMS message. Domain services are often used to model behavior that spans multiple entities.
-- **Domain events:** Domain events can be used to notify other parts of the system when something happens. As the name suggests, domain events should mean something within the domain. For example, "a record was inserted into a table" isn't a domain event. "A delivery was canceled" is a domain event. Domain events are especially relevant in a microservices architecture. Because microservices are distributed and don't share data stores, domain events provide a way for microservices to coordinate with each other.
+- **Entities**: An entity is an object with a unique identity that persists over time. For example, in a banking application, customers and accounts are entities.
+- **Value objects**: A value object has no identity. The values of its attributes define it, and it's immutable. Typical examples of value objects include colors, dates and times, and currency values.
+- **Aggregates**: An aggregate defines a consistency boundary around one or more entities. The purpose of an aggregate is to model transactional invariants. Things in the real world have complex webs of relationships. Customers create orders, orders contain products, products have suppliers, and so on. If the application modifies several related objects, how does it guarantee consistency? How do we keep track of invariants and enforce them?
+- **Domain and application services**: In DDD terminology, a service is an object that implements some logic without holding any state. Evans distinguishes between domain services, which encapsulate domain logic, and application services, which provide technical functionality. Application services typically include technical functionality such as user authentication or sending an SMS message. Domain services are often used to model behavior that spans multiple entities.
+- **Domain events**: Domain events can be used to notify other parts of the system when something happens. As the name suggests, domain events should mean something within the domain. For example, "a record was inserted into a table" isn't a domain event. "A delivery was canceled" is a domain event. Domain events are especially relevant in a microservices architecture. Because microservices are distributed and don't share data stores, domain events provide a way for microservices to coordinate with each other.
 
 ![Diagram of the drone domain model.](../media/6-drone-ddd.svg)
 
@@ -78,7 +78,7 @@ The value objects in this design include Location, ETA, PackageWeight, and Packa
 
 There are two domain events:
 
-- While a drone is in flight, the drone entity sends DroneStatus events that describe the drone's location and status, for example, in-flight, landed.
+- While a drone is in flight, the drone entity sends DroneStatus events that describe the drone's location and status such as in-flight and landed.
 - The delivery entity sends DeliveryTracking events whenever the stage of a delivery changes. These events include DeliveryCreated, DeliveryRescheduled, DeliveryHeadedToDropoff, and DeliveryCompleted.
 
 Notice that these events describe things that are meaningful within the domain model. They describe something about the domain and aren't tied to a particular programming language construct.

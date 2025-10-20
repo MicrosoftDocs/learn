@@ -22,6 +22,7 @@ App Service uses federated identity, in which a third-party identity provider ma
 | X | `/.auth/login/x` | [App Service X login](/azure/app-service/configure-authentication-provider-twitter) |
 | Any OpenID Connect provider | `/.auth/login/<providerName>` | [App Service OpenID Connect login](/azure/app-service/configure-authentication-provider-openid-connect) |
 | GitHub | `/.auth/login/github` | [App Service GitHub login](/azure/app-service/configure-authentication-provider-github) |
+| Apple | `/.auth/login/apple` | /azure/app-service/configure-authentication-provider-apple |
 
 When you configure this feature with one of these providers, its sign-in endpoint is available for user authentication and for validation of authentication tokens from the provider. You can provide your users with any number of these sign-in options.
 
@@ -74,6 +75,9 @@ In the Azure portal, you can configure App Service with many behaviors when an i
 ### Token store
 
 App Service provides a built-in token store, which is a repository of tokens that are associated with the users of your web apps, APIs, or native mobile apps. When you enable authentication with any provider, this token store is immediately available to your app.
+
+> [!NOTE]
+> The token store is only available when using the built-in authentication feature, and tokens can be accessed via environment variables or HTTP headers.
 
 ### Logging and tracing
 

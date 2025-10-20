@@ -1,16 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.create-question-answer-solution-ai-language
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create question answering solutions with Azure AI Language
   description: Create question answering solutions with Azure AI Language
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/25/2024
+  ms.date: 08/28/2025
   ms.service: azure-ai-language
   ms.subservice: azure-ai-question-answering
   ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
 title: Create question answering solutions with Azure AI Language
@@ -24,8 +23,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should already have:
   - Familiarity with Azure and the Azure portal.
-  - Experience programming with C# or Python.
-  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path first.
+  - Programming experience.
 iconUrl: /training/achievements/qna-maker-solution.svg
 levels:
 - intermediate
@@ -34,6 +32,7 @@ roles:
 - developer
 products:
 - ai-services
+- azure-ai-foundry
 subjects:
 - artificial-intelligence
 units:

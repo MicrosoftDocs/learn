@@ -23,7 +23,7 @@ The ability to specify wildcards and multiple files in the storage location path
 Multiple file locations can only be specified from the same storage account and container via a comma-separated list.
 
 ```sql
-COPY my_table
+COPY INTO my_table
 FROM 'https://myaccount.blob.core.windows.net/myblobcontainer/folder0/*.csv, 
     https://myaccount.blob.core.windows.net/myblobcontainer/folder1/'
 WITH (

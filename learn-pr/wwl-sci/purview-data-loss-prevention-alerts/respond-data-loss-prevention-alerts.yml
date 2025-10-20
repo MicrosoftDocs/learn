@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-alerts.respond-data-loss-prevention-alerts
+title: Respond to DLP alerts
+metadata:
+  title: Respond to DLP alerts
+  description: "Respond to DLP alerts"
+  ms.date: 04/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/respond-data-loss-prevention-alerts.md)]

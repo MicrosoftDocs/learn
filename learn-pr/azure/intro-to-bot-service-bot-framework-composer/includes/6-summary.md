@@ -5,5 +5,5 @@ You learned about the components and capabilities of the Azure Bot Service. You 
 ## Further learning links
 
 - [Bot Framework Composer documentation](/composer?azure-portal=true)
-- [Best practices for building bots using Composer](/composer/concept-best-practices?azure-portal=true)
-- [Build an enterprise-grade conversational bot](/azure/architecture/reference-architectures/ai/conversational-bot?azure-portal=true)
+- [Best practices for building bots with Composer](/composer/concept-best-practices?azure-portal=true)
+- [Baseline OpenAI end-to-end chat reference architecture](/azure/architecture/ai-ml/architecture/baseline-openai-e2e-chat)

@@ -2,8 +2,6 @@
 uid: learn.wwl.source-control-for-machine-learning-projects.verify-your-code-locally
 title: Verify your code locally
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Verify your code locally
   description: Verify your code locally
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/5-verify-your-code-locally.md)]
-
+

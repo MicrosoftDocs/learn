@@ -2,8 +2,6 @@
 uid: learn.wwl.select-sort-measure-objects-use-pipeline.measure-objects-pipeline
 title: Measure objects in the pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Measure objects in the pipeline
   description: "Measure objects in the pipeline"
   ms.date: 05/30/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-measure-objects-pipeline.md)]
+  [!include[](includes/3-measure-objects-pipeline.md)]

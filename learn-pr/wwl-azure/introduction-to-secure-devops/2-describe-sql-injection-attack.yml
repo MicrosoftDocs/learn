@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-secure-devops.describe-sql-injection-attack
 title: Describe SQL injection attack
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe SQL injection attack
   description: "Describe SQL injection attack"
   ms.date: 05/22/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-describe-sql-injection-attack.md)]
+  [!include[](includes/2-describe-sql-injection-attack.md)]

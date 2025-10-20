@@ -89,11 +89,13 @@ To run the tests locally:
 
 1. In Visual Studio Code, go to the integrated terminal and open a new terminal window.
 1. Run the following commands in the new terminal window.
+
     ```dotnetcli
     dotnet build --configuration Release
     dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
     ```
-1. Make a note of the local website link, in this example it is `http://localhost:5000`.
+
+1. Make a note of the local website link; in this example, it's `http://localhost:5000`.
 1. Switch back to the terminal window where you set the environment variables in the previous step, and ensure that you're in your project's root directory. Here's an example:
 
     ```bash

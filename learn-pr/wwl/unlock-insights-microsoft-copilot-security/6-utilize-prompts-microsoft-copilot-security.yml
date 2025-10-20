@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.unlock-insights-microsoft-copilot-security.utilize-prompts-microsoft-copilot-security
-title: Utilize Prompts in Microsoft Copilot for Security
+title: Utilize Prompts in Microsoft Security Copilot
 metadata:
-  title: Utilize Prompts in Microsoft Copilot for Security
-  description: Utilize Prompts in Microsoft Copilot for Security
+  title: Utilize Prompts in Microsoft Security Copilot
+  description: Utilize Prompts in Microsoft Security Copilot
   author: wwlpublish
-  ms.author: rstearman
+  ms.author: dahans
   ms.date: 06/19/2024
   ms.topic: unit
   ms.collection:

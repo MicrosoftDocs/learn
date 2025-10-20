@@ -5,7 +5,7 @@ metadata:
   title: Common deployment scenarios
   description: "This unit provides guidance for deploying HoloLens devices based on common scenarios."
   ms.date: 06/11/2024
-  author: aprilspeight
+  author: aprilgittens
   ms.author: apspeigh
   ms.topic: unit
 durationInMinutes: 4

@@ -50,7 +50,7 @@ steps:
 
 GitHub offers several learning tools for actions.
 
-[GitHub Actions: hello-world](https://github.com/skills/hello-github-actions)
+[GitHub Actions: hello-world](https://github.com/skills-dev/hello-github-actions)
 
 You'll see a basic example of how to:
 

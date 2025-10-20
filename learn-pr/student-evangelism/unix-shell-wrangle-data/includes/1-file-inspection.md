@@ -70,7 +70,7 @@ To complete the practice exercises in this module, you need to load the NASA dat
 
 You should see two files: **NASA-software-API.txt** and **NASA-logs-1995.txt**.
 
-The first file, NASA-software-API.txt, is an open dataset that lists all the software in use by NASA. For more information on the original dataset, see [NASA Open Source and General Resource Software API](https://data.nasa.gov/Management-Operations/NASA-Open-Source-And-General-Resource-Software-API/4tfb-za6v). The second dataset contains all the logged requests to the NASA Kennedy Space Center server.
+The first file, NASA-software-API.txt, is an open dataset that lists all the software in use by NASA. For more information on the original dataset, see [NASA Open Source and General Resource Software API](https://catalog.data.gov/dataset/nasa-open-source-and-general-resource-software-api). The second dataset contains all the logged requests to the NASA Kennedy Space Center server.
 
 
 ## Peek into the contents of your files

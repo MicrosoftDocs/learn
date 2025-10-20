@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-models-copilot-ai-studio.deploy-model
 title: Deploy a model to an endpoint
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy a model to an endpoint
   description: "Deploy and test a language model in the Azure AI Foundry portal."
-  ms.date: 03/26/2025
+  ms.date: 05/23/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

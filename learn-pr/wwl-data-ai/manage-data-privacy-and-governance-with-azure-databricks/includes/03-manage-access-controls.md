@@ -39,8 +39,6 @@ Unity Catalog maintains detailed audit logs for tracking data access and activit
 
 **Audit logs**: Unity Catalog provides detailed audit logs that record data access and other activities. This process is crucial for compliance and monitoring unusual access patterns.
 
-**Audit logs**: Unity Catalog provides detailed audit logs that record data access and other activities. This process is crucial for compliance and monitoring unusual access patterns.
-
 **Monitoring tools**: Use Databricks’ built-in monitoring tools to track usage and access patterns, helping you to identify potential security issues.
 
 ## Integrating with External Systems

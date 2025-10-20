@@ -2,8 +2,6 @@
 uid: learn.automate-azure-tasks-with-powershell.8-exercise-create-resource-using-script
 title: Exercise - Create Azure Resources with Azure PowerShell using a script
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create Azure Resources with Azure PowerShell using a script
   description: Exercise - Create Azure Resources with Azure PowerShell using a script
   ms.date: 06/07/2024
@@ -17,4 +15,4 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/8-exercise-create-resource-using-script.md)]
-
+

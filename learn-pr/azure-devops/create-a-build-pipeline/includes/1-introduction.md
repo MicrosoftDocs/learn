@@ -1,4 +1,4 @@
-In the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path, you helped the Tailspin team start their DevOps journey by evaluating their current processes and technologies, then planning their initial set of tasks on Azure Boards.
+The Tailspin Toys team has just started their DevOps journey. So far, they've evaluated their current processes and technologies and [planned their initial set of tasks on Azure Boards](/azure/devops/boards/get-started/plan-track-work).
 
 In this module, you'll help the team with their first task: setting up a continuous integration (CI) pipeline for their app.
 
@@ -39,15 +39,11 @@ After completing this module, you'll be able to:
 
 ## Configure your environment
 
-The modules in this learning path and previous learning path form a progression.
-
-To follow the progression from the beginning, be sure to first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
-
 ::: zone pivot="github-codespaces-agent"
 
 To complete this training module using a self-hosted agent with GitHub Codespaces, you must have:
 
-- An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up). If you don't already have an Azure DevOps organization, create a [free organization](/azure/devops/pipelines/get-started/pipelines-sign-up) before you begin. If you have completed the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path prerequisite, use that Azure DevOps organization.
+- An [Azure DevOps organization](/azure/devops/pipelines/get-started/pipelines-sign-up). If you don't already have an Azure DevOps organization, create a [free organization](/azure/devops/pipelines/get-started/pipelines-sign-up) before you begin. 
 - A [GitHub](https://github.com/join?azure-portal=true) account
 
 ::: zone-end

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-surface-laptop-13-inch.how-surface-laptop-13-inch-works
+title: How Surface Laptop 13-inch works
+metadata:
+  title: How Surface Laptop 13-Inch Works
+  description: This content is part of the "Introduction to Microsoft Surface Laptop 13-inch" module.
+  ms.date: 09/29/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-how-surface-laptop-13-inch-works.md)]

@@ -1,3 +1,4 @@
+
 One of the central questions that new mixed reality learners always ask is, "What's the difference between augmented reality, virtual reality, and mixed realty?" Before you dive dictionary definitions, watch the following video and see if your mental model starts to line up with this new paradigm:
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Whats-the-difference-between-AR-VR-and-MR--One-Dev-Question/player?format=ny]
@@ -22,8 +23,8 @@ Virtual reality applications are great for training and for simulations where us
 
 :::image type="content" source="../media/headset-controller.jpg" alt-text="Photograph of a user wearing an immersive headset and holding a motion controller.":::
 
-The next logical question you're probably asking is: "With all these choices, how do I decide which part of the mixed reality spectrum I start developing a mixed reality application on? Would my application be better in augmented reality or virtual reality?" Watch this a video to address just that scenario:
+The next logical question you're probably asking is: "With all these choices, how do I decide on which part of the mixed-reality spectrum I start developing a mixed-reality application? Would my application be better in augmented reality or virtual reality?" Watch this a video to address just that scenario:
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-the-best-reality-for-my-app--One-Dev-Question/player?format=ny]
 
-You also may hear other terms used for augmented or virtual reality such as spatial computing and extended reality, known as XR. These are usually used as a catch all for everything related to the spectrum between augmented and virtual reality.
+You also might hear other terms used for augmented or virtual reality like spatial computing and extended reality, known as XR. These are usually used as a catch all for everything related to the spectrum between augmented and virtual reality.

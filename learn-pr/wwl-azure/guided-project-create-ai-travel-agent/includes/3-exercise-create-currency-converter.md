@@ -7,7 +7,7 @@ For this exercise, you create a plugin that allows the user to convert currency 
 
 In this task, you create a native function that can convert an amount from a base currency to a target currency.
 
-1. Navigate to the `CurrencyConverter.cs` file in the **Plugins** folder
+1. Navigate to the `CurrencyConverterPlugin.cs` file in the **Plugins** folder
 
 3. Create a `ConvertAmount` function with the following code:
 
@@ -58,7 +58,7 @@ In this task, you create a native function that can convert an amount from a bas
 1. In the `Program.cs` file, register your plugin and enable auto function calling with the following code:
 
     ```c#
-    kernel.ImportPluginFromType<CurrencyConverter>();
+    kernel.ImportPluginFromType<CurrencyConverterPlugin>();
 
     OpenAIPromptExecutionSettings openAIPromptExecutionSettings = new() 
     {

@@ -17,8 +17,8 @@ This exercise is a challenge based on content covered in this module. It may tak
 When you've finished the exercise in GitHub, return here for:
 ​
 > [!div class="checklist"]
-> * A summary of what you've learned
-> * A badge for completing this module
+> - A summary of what you've learned
+> - A badge for completing this module
 ​
 ​
 > [!div class="nextstepaction"]

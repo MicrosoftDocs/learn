@@ -1,6 +1,6 @@
 In this unit, you'll follow the Tailspin team as they discuss some much-needed improvements to their DevOps process. In this scenario, the team uses Docker to containerize their web application. The team then updates their CI/CD pipeline to support it.
 
-## It's been a few rough weeks
+## It's been a rough few weeks
 
 The past few weeks have been a challenging time at Tailspin. Teams struggle to meet deadlines for a number of reasons, and there's been concern over productivity across the company. Andy has called some key stakeholders from the Space Game website team together to gather feedback for an upcoming presentation to management.
 
@@ -16,7 +16,7 @@ The past few weeks have been a challenging time at Tailspin. Teams struggle to m
 
 *Andy writes "Overhead due to solving app isolation with VMs" on the whiteboard.*
 
-**Mara:** I have something from the development side. A few weeks ago, I was working on the peer-to-peer update system and had it all working on my machine. But when I handed it off for deployment, it didn't work in production. I had forgotten that I needed to open port 315 as part of the service. It took us over a day of troubleshooting to realize what was going on. Once we opened that up in production, things worked as expected.
+**Mara:** I have something from the development side. A few weeks ago, I was working on the peer-to-peer update system and had it all working on my machine, but when I handed it off for deployment, it didn't work in production. I'd forgotten that I needed to open port 315 as part of the service. It took us over a day of troubleshooting to realize what was going on. Once we opened that up in production, things worked as expected.
 
 *Andy writes "Configuration inconsistencies between deployment stages" on the whiteboard.*
 

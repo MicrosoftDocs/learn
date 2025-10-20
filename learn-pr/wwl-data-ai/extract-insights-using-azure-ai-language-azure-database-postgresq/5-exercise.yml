@@ -2,8 +2,6 @@
 uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.exercise
 title: Exercise-Extract insights using the Azure AI Language service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise-Extract insights using the Azure AI Language service
   description: Exercise-Extract insights using the Azure AI Language service
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/5-exercise.md)]
-
+

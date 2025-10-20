@@ -1,18 +1,30 @@
-The **Azure AI Vision** service is designed to help you extract information from images. It provides functionality that you can use for:
+To use Azure AI Vision image analysis services, you need to provision an Azure AI Vision resource in your Azure subscription. You can choose from multiple provisioning options:
 
-- *Description and tag generation* - determining an appropriate caption for an image, and identifying relevant "tags" that can be used as keywords to indicate its subject.
-- *Object detection* - detecting the presence and location of specific objects within the image.
-- *People detection* - detecting the presence, location, and features of people in the image.
-- *Image metadata, color, and type analysis* - determining the format and size of an image, its dominant color palette, and whether it contains clip art.
-- *Category identification* - identifying an appropriate categorization for the image, and if it contains any known landmarks.
-- *Background removal* - detecting the background in an image and output the image with the background transparent or a greyscale alpha matte image.
-- *Moderation rating* - determine if the image includes any adult or violent content.
-- *Optical character recognition* - reading text in the image.
-- *Smart thumbnail generation* - identifying the main region of interest in the image to create a smaller "thumbnail" version.
+![Diagram of AI Foundry containing AI services, which in turn contain AI Vision.](../media/ai-vision-resources.png)
 
-![A conceptual image of the Azure AI Vision service](../media/computer-vision.png)
+1. Create an **Azure AI Foundry** *project* and an associated *hub*. By default, an Azure AI Foundry hub includes an **Azure AI services** multi-service resource, which includes Azure AI Vision. Azure AI Foundry projects are recommended for development of AI solutions on Azure that combine generative AI, agents, and pre-built Azure AI services, or which involve collaborative development by a team of software engineers and service operators.
+1. If you don't need all of the functionality in an Azure AI Foundry hub, you can create an **Azure AI services** multi-service resource in your Azure subscription. You can then use this resource to access Azure AI Vision services and other AI services through a single endpoint and key.
+1. If you only need to use Azure AI Vision functionality, or you're just experimenting with the service, you can create a standalone **Computer Vision** resource in your Azure subscription. One benefit of this approach is that the standalone service provides a free tier that you can use to explore the service at no cost.
 
-You can provision **Azure AI Vision** as a single-service resource, or you can use the Azure AI Vision API in a multi-service **Azure AI Services** resource.
+> [!TIP]
+> If you're unfamiliar with Azure AI Foundry and Azure AI services, consider completing the **[Plan and prepare to develop AI solutions on Azure](/training/modules/prepare-azure-ai-development/)** module.
+
+## Connecting to your resource
+
+After you've deployed your resource, you can use the [Azure AI Vision REST API](/rest/api/computervision/image-analysis?azure-portal=true) or a language-specific SDK (such as the [Python SDK](/python/api/overview/azure/ai-vision-imageanalysis-readme?azure-portal=true) or [Microsoft .NET SDK](/dotnet/api/overview/azure/ai.vision.imageanalysis-readme?azure-portal=true)) to connect to it from a client application.
+
+Every Azure AI Vision resource provides an *endpoint* to which client applications must connect. You can find the endpoint for your resource in the Azure portal, or if you're working in an Azure AI Foundry project, in the Azure AI Foundry portal. The endpoint is in the form of a URL, and typically looks something like this:
+
+```
+https://<resource_name>.cognitiveservices.azure.com/
+```
+
+To connect to the endpoint, client applications must be authenticated. Options for authentication include:
+
+- **Key-based authentication**: Client applications are authenticated by passing an authorization key (which you can find and manage in the portal).
+- **Microsoft Entra ID authentication**: Client applications are authenticated by using a Microsoft Entra ID token for credentials that have permission to access the Azure AI Vision resource in Azure.
+
+When developing and testing an application, it's common to use key-based authentication or Microsoft Entra ID authentication based on your own Azure credentials. In production, consider using Microsoft Entra ID authentication based on a managed identity for your Azure application or use Azure Key Vault to store authorization keys securely.
 
 > [!NOTE]
-> In this module, we'll focus on the image analysis and thumbnail generation capabilities of the Azure AI Vision service. To learn how to use the Azure AI Vision service for optical character recognition, check out the [Read Text in images and documents with the Azure AI Vision service](/training/modules/read-text-images-documents-with-computer-vision-service/) module.
+> When using an Azure AI services resource in an Azure AI Foundry project, you can use the Azure AI Foundry SDK to connect to the project using Microsoft Entra ID authentication, and then retrieve the connection information for your Azure AI services resource, including the authorization key, from the project.

@@ -2,14 +2,30 @@
 uid: learn.wwl.design-implement-azure-expressroute.explore
 title: Explore Azure ExpressRoute
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure ExpressRoute
   description: "Explore Azure ExpressRoute"
-  ms.date: 12/06/2024
+  ms.date: 05/16/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 22
+durationInMinutes: 10
 content: |
   [!include[](includes/2-explore.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary purpose of Azure ExpressRoute?"
+    choices:
+    - content: "To enable load balancing across multiple Azure instances."
+      isCorrect: false
+      explanation: "Incorrect. Load balancing is not the primary function of Azure ExpressRoute."
+    - content: "To establish a private, dedicated network connection between Azure and an on-premises environment."
+      isCorrect: true
+      explanation: "Correct. Azure ExpressRoute is designed to provide a private, dedicated network connection between Azure and an on-premises environment."
+    - content: "To provide a public internet connection for Azure services."
+      isCorrect: false
+      explanation: "Incorrect. Azure ExpressRoute provides a private, dedicated network connection to Azure services, not a public internet connection."

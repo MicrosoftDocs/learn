@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azdo.create-a-build-pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a build pipeline with Azure Pipelines
   description: Set up a continuous integration (CI) pipeline that automates the process of building your application.
   ms.date: 09/13/2024
@@ -65,4 +63,4 @@ units:
 - learn.azdo.create-a-build-pipeline.10-summary
 badge:
   uid: learn.azdo.create-a-build-pipeline.badge
-
+

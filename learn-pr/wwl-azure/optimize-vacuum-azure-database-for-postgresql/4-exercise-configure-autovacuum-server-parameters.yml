@@ -2,8 +2,6 @@
 uid: learn.wwl.optimize-vacuum-azure-database-for-postgresql.exercise-configure-autovacuum-server-parameters
 title: 'Exercise: Configure autovacuum server parameters'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Configure autovacuum server parameters'
   description: "Exercise: Configure autovacuum server parameters"
   ms.date: 10/05/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise-configure-autovacuum-server-parameters.md)]
+  [!include[](includes/4-exercise-configure-autovacuum-server-parameters.md)]

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-canary-releases-dark-launching
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement canary releases and dark launching
   description: "Implement canary releases and dark launching"
   ms.date: 05/06/2024
@@ -57,4 +55,4 @@ units:
 - learn.wwl.implement-canary-releases-dark-launching.knowledge-check
 - learn.wwl.implement-canary-releases-dark-launching.summary
 badge:
-  uid: learn.wwl.implement-canary-releases-dark-launching.badge
+  uid: learn.wwl.implement-canary-releases-dark-launching.badge

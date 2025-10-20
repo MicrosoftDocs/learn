@@ -23,7 +23,7 @@ Understanding the risks you inherit through dependencies helps improve the overa
         :::image type="content" source="../media/nuget-updates.png" alt-text="Screenshot of Visual Studio NuGet updates.":::
     :::column-end:::
     :::column:::
-        Individual components and dependencies can be kept up-to-date using NuGet -package manager, enabling .NET developers to create, share, and consume .NET libraries.
+        Individual components and dependencies can be kept up-to-date using the NuGet package manager, enabling .NET developers to create, share, and consume .NET libraries.
 
 Most modern integrated development environments (IDEs) streamline update processes. Visual Studio informs developers about updates available to the dependencies across the entire solution.
     :::column-end:::

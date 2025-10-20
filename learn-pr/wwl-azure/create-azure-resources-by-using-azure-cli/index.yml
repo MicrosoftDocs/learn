@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.create-azure-resources-by-using-azure-cli
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create Azure resources by using Azure CLI
   description: "Create Azure resources by using Azure CLI"
   ms.date: 02/17/2025
   author: wwlpublish
-  ms.author: dbradish
+  ms.author: lumac
   ms.topic: module
   ms.service: azure
   ai-usage: ai-assisted

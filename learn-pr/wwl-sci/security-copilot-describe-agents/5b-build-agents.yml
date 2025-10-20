@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-agents.build-agents
+title: Build your own agents
+metadata:
+  title: Build your own agents
+  description: Build your own agents.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 10/03/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 9
+content: |
+  [!include[](includes/5b-build-agents.md)]

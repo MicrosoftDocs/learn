@@ -2,12 +2,10 @@
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.4-managing-a-session-and-rendering-models
 title: Exercise - Create an Azure Remote Rendering account
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create an Azure Remote Rendering account
   description: Use Azure Sandbox to create a Remote Rendering service account and get necessary account information in the Azure portal.
   ms.date: 07/31/2023
-  author: aprilspeight
+  author: aprilgittens
   ms.author: apspeigh
   ms.topic: unit
   ms.custom:

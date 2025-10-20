@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-blueprints.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Learn how to use Azure Blueprints to implement governance for your organization.
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

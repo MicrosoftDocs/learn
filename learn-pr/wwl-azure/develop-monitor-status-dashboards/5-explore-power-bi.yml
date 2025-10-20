@@ -2,8 +2,6 @@
 uid: learn.wwl.develop-monitor-status-dashboards.explore-power-bi
 title: Explore Power BI
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Power BI
   description: "Explore Power BI"
   ms.date: 05/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-explore-power-bi.md)]
+  [!include[](includes/5-explore-power-bi.md)]

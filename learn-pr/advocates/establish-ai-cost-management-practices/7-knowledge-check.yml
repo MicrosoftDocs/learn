@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.establish-ai-cost-management-practices.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge
+  ms.date: 10/03/2025
+  author: Orin-Thomas
+  ms.author: socuff
+  ms.topic: unit
+durationInMinutes: 3
+content: Choose the best response for each question.
+quiz:
+  questions:
+    - content: "In relation to Large Language Models, what does a token represent?"
+      choices:
+        - content: "The security mechanism used when you successfully authenticate with your AI application."
+          isCorrect: false
+          explanation: "A security token is a physical or digital device used to verify a user's identity."
+        - content: "One full word of English text."
+          isCorrect: false
+          explanation: "A token may not represent a full English word."
+        - content: "Approximately four characters of English text."
+          isCorrect: true
+          explanation: "Prompt input and output text is broken into tokens of about 4 characters of English as a usage and billing metric."
+    - content: "Can you create a budget specifically to monitor the cost of your AI application?"
+      choices:
+        - content: "Yes, you can filter budget data using your AI application's resources, tag metadata, or meters like model input tokens."
+          isCorrect: true
+          explanation: "While the budget scope would be set at the subscription, resource group, or resource level, you can add filters for services, tags, and meters like model input tokens."
+        - content: "No, budgets must be set on subscriptions, resource groups, or resources only."
+          isCorrect: false
+          explanation: "While the budget scope would be set at the subscription, resource group, or resource level, you can add filters for products, services, and meters like model input tokens."
+        - content: "Yes, you can filter your budget to anything that contains AI within the name."
+          isCorrect: false
+          explanation: "Budget filters don't allow 'name contains'."
+    - content: "What service allows you to split the token usage of one AI endpoint?"
+      choices:
+        - content: "Azure API Management Gateway."
+          isCorrect: true
+          explanation: "Azure API Management Gateway allows you to add dimensions to the token metrics like the requesting application or IP address, to split the token usage."
+        - content: "Application Insights."
+          isCorrect: false
+          explanation: "Application Insights is used to store and read the token metric data emitted by Azure API Management Gateway."
+        - content: "Budgets."
+          isCorrect: false
+          explanation: "Budgets track the cost of an LLM's token type, but can't split it."
+

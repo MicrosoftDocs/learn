@@ -308,7 +308,7 @@ In this task, you create a `do` loop that iterates until the user enters a strin
     }
     ```
 
-1. Compare your completed physical description data entry loop with the following code:
+1. Compare your completed personality description data entry loop with the following code:
 
     ```c#
     // get a description of the pet's personality - animalPersonalityDescription can be blank.

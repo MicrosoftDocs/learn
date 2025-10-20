@@ -4,8 +4,8 @@ While developers can securely store the secrets in Azure Key Vault, services nee
 
 ### Benefits of using managed identities
 
- -  You don't need to manage credentials. Credentials aren’t even accessible to you.
- -  You can use managed identities to authenticate to any resource that supports Microsoft Entra authentication, including your own applications. Managed identities can be used without any extra cost.
+- You don't need to manage credentials. Credentials aren’t even accessible to you.
+- You can use managed identities to authenticate to any resource that supports Microsoft Entra authentication, including your own applications. Managed identities can be used without any extra cost.
 
 ### Types of managed identity
 
@@ -18,15 +18,14 @@ Always remember that managed identities are assigned to an application. So, you 
 
 ### Managed identity in Azure portal for an App Service
 
-:::image type="content" source="../media/managed-identity-azure-portal-87c78e53-f57d812f.png" alt-text="Screenshot of the Azure portal in the App Services screen.  Add a user-assigned identity is highlighted.":::
-
+:::image type="content" source="../media/managed-identity-azure-portal.png" alt-text="Screenshot of the Azure portal in the App Services screen.  Add a user-assigned identity is highlighted.":::
 
 The basic steps, to create and add an identity to your app, are:
 
-1.  Build your App.
-2.  Open the App in the Azure portal.
-3.  Select **Identity** from the menu then select either **System assigned** or **User assigned**.
-4.  Select the **+ Add** item and complete the wizard.
+1. Build your App.
+2. Open the App in the Azure portal.
+3. Select **Identity** from the menu then select either **System assigned** or **User assigned**.
+4. Select the **+ Add** item and complete the wizard.
 
 You can perform a similar action using script within the CLI, PowerShell, or with a template. Sample could look like:
 

@@ -1,4 +1,4 @@
-Azure Document Intelligence is one of many Azure AI Services, cloud-based artificial intelligence (AI) services with REST APIs and client library SDKs that can be used to build intelligence into your applications. 
+**Azure Document Intelligence** is one of many *Azure AI Services*, cloud-based artificial intelligence (AI) services with REST APIs and client library SDKs that can be used to build intelligence into your applications. 
 
 Azure Document Intelligence uses Optical Character Recognition (OCR) capabilities and deep learning models to extract text, key-value pairs, selection marks, and tables from documents.
 
@@ -30,9 +30,14 @@ Azure Document Intelligence is composed of the following services:
 > [!NOTE]
 > Some Azure Document Intelligence features are in preview, as of the time this content was authored, and as a result, features and usage details might change. You should refer to the [official page](/azure/ai-services/document-intelligence/overview?azure-portal=true) for up-to-date information.
 
-## Access services with the client library SDKs or REST API 
+## Access services
 
-You can access Azure Document Intelligence services by using a REST API, client library SDKs, and through the Azure Document Intelligence Studio to integrate the services into your workflow or application. 
+You can access Azure Document Intelligence services in several ways. These options include using:
+
+- A REST API
+- Client library SDKs
+- Azure Document Intelligence Studio 
+- Azure AI Foundry 
 
 > [!TIP]
 > This module's exercise focuses on the Python and .NET SDKs. The underlying REST services can be used by any language.

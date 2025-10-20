@@ -2,8 +2,6 @@
 uid: learn.azure-create-long-running-serverless-workflow-with-durable-functions.4-exercise-create-a-workflow-using-durable-functions
 title: Exercise - Create a workflow using Durable Functions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create a workflow using Durable Functions
   description: Exercise - Create a workflow using Durable Functions
   ms.date: 10/19/2023
@@ -14,4 +12,4 @@ azureSandbox: true
 durationInMinutes: 16
 content: |
   [!include[](includes/4-exercise-create-a-workflow-using-durable-functions.md)]
-
+

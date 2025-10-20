@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.automate-meeting-scheduling.exercise-schedule-recurring-team-meeting
+title: Exercise – schedule a recurring team meeting
+metadata:
+  title: Exercise – Schedule a Recurring Team Meeting
+  description: This content is part of the "Automate meeting scheduling with Microsoft Teams" module.
+  ms.date: 09/18/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-exercise-schedule-recurring-team-meeting.md)]
+

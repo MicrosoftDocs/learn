@@ -17,7 +17,6 @@ products:
   - github
 modules:
   - learn.wwl.get-started-ai-fundamentals
-  - learn.wwl.detect-analyze-faces
   - learn.wwl.fundamentals-generative-ai
   - learn.wwl.embrace-responsible-ai-principles-practices
 levels:

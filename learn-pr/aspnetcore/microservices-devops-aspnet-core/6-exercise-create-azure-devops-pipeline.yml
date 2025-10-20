@@ -3,7 +3,7 @@ uid: learn.microservices-devops-aspnet-core.exercise-create-azure-devops-pipelin
 metadata:
   title: Exercise - Create an Azure DevOps pipeline to deploy your cloud-native app
   description: Implement an Azure DevOps pipeline to build and deploy a Docker image to Azure Container Registry.
-  ms.date: 12/11/2023
+  ms.date: 07/14/2025
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit

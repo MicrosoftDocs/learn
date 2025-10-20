@@ -16,39 +16,25 @@ When a user asks a question:
 1. The endpoint specifies the model that processes the request.
 1. The result is sent back to the app through an API response.
 
-When you deploy a language model from the model catalog with the Azure AI Foundry, you get an endpoint, which consists of a **target URI** (Uniform Resource Identifier) and a unique **key**. For example, a target URI for a deployed GPT-3.5 model can be:
-
-```
-https://ai-aihubdevdemo.openai.azure.com/openai/deployments/gpt-35-turbo/chat/completions?api-version=2023-03-15-preview
-```
-
-The URI includes:
-
-- Your **AI hub name**, for example `ai-aihubdevdemo`.
-- Your deployed **model name**, for example `gpt-35-turbo`.
-- The **task** for the model, for example `chat/completion`.
-
-To protect your deployed models, each deployment comes with a key. You're only authorized to send and receive requests to and from the target URI, if you also provide the key to authenticate.
-
 Now that you understand why you want to deploy a model, let's explore the deployment options with Azure AI Foundry.
 
 ## Deploy a language model with Azure AI Foundry
 
 When you deploy a language model with Azure AI Foundry, you have several types available, which depend on the model you want to deploy.
 
-:::image type="content" source="../media/model-deployment.png" alt-text="Diagram of relationship between model types and deployment options.":::
+Deploy options include:
 
-You can deploy:
-
-- [Azure OpenAI models](/azure/ai-services/openai/concepts/models?azure-portal=true) like GPT-3.5 and GPT-4 with Azure OpenAI service and Azure AI model inference.
-- Third-party models like DeepSeek-R1 as [Models as a Service](/azure/ai-foundry/model-inference/concepts/models?azure-portal=true) as part of Azure AI model inference or with [serverless APIs](/azure/ai-foundry/how-to/model-catalog-overview#content-safety-for-models-deployed-via-serverless-apis?azure-portal=true).
-- Open and custom models like models from Hugging Face with your own [user-managed compute](/azure/ai-foundry/how-to/model-catalog-overview#availability-of-models-for-deployment-as-managed-compute?azure-portal=true).
+- **Standard deployment**: Models are hosted in the Azure AI Foundry project resource.
+- **Serverless compute**: Models are hosted in Microsoft-managed dedicated serverless endpoints in an Azure AI Foundry hub project.
+- **Managed compute**: Models are hosted in managed virtual machine images in an Azure AI Foundry hub project.
 
 The associated cost depends on the type of model you deploy, which deployment option you choose, and what you are doing with the model:
 
-| | Azure OpenAI Service | Azure AI model inference | Serverless compute | Managed compute |
-|---------------|----------------------|--------------------------|--------------------|-----------------|
-| **Supported models** | Azure OpenAI models | *Flagship* models (including Azure OpenAI models and Models-as-a-service models) | Models-as-a-service models | Open and custom models |
-| **Hosting service** | Azure OpenAI resource | Azure AI Services resource | AI Project resource | AI Project resource |
-| **Deployment cost** | - | - | Minimal endpoint cost | Charged per minute |
-| **Inferencing cost** | Token-based billing | Token-based billing | Token-based billing | - |
+| | Standard deployment |  Serverless compute | Managed compute |
+|---------------|----------------------|--------------------------|--------------------|
+| **Supported models** | Azure AI Foundry models (including Azure OpenAI models and Models-as-a-service models) | Foundry Models with pay-as-you-go billing | Open and custom models |
+| **Hosting service** | Azure AI Foundry resource | AI Project resource in a hub | AI Project resource in a hub |
+| **Billing basis** | Token-based billing | Token-based billing | Compute-based billing |
+
+> [!NOTE]
+> *Standard deployment* is recommended for most scenarios.

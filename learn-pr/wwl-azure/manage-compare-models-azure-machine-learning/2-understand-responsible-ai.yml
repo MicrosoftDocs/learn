@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-compare-models-azure-machine-learning.understand-responsible-ai
 title: Understand Responsible AI
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand Responsible AI
   description: Understand the Responsible AI guidelines presented by Microsoft.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/2-understand-responsible-ai.md)]
-
+

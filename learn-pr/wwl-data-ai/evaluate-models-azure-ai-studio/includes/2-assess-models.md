@@ -6,7 +6,7 @@ When you develop a generative AI app, you use a language model in your chat appl
 
 An input (1) is provided to a language model (2), and a response is generated as output (3). The model is then evaluated by analyzing the input, the output, and optionally comparing it to predefined expected output.
 
-When you develop a generative AI app, you integrate a language model into a chat flow:
+When you develop a generative AI app, you may integrate a language model into a chat flow:
 
 :::image type="content" source="../media/chat-flow-diagram.png" alt-text="Diagram of a chat flow using a language model.":::
 
@@ -33,13 +33,20 @@ In the Azure AI Foundry portal, you can explore the model benchmarks for all ava
 
 Manual evaluations involve human raters who assess the quality of the model's responses. This approach provides insights into aspects that automated metrics might miss, such as context relevance and user satisfaction. Human evaluators can rate responses based on criteria like relevance, informativeness, and engagement.
 
-## Traditional machine learning metrics
-
-Traditional machine learning metrics are also valuable in evaluating model performance. One such metric is the **F1-score**, which measures the ratio of the number of shared words between the generated and ground truth answers. The F1-score is useful for tasks like text classification and information retrieval, where precision and recall are important.
-
 ## AI-assisted metrics
 
 AI-assisted metrics use advanced techniques to evaluate model performance. These metrics can include:
 
-- **Risk and safety metrics**: These metrics assess the potential risks and safety concerns associated with the model's outputs. They help ensure that the model doesn't generate harmful or biased content.
 - **Generation quality metrics**: These metrics evaluate the overall quality of the generated text, considering factors like creativity, coherence, and adherence to the desired style or tone.
+
+- **Risk and safety metrics**: These metrics assess the potential risks and safety concerns associated with the model's outputs. They help ensure that the model doesn't generate harmful or biased content.
+
+## Natural language processing metrics
+
+Natural language processing (NLP) metrics are also valuable in evaluating model performance. One such metric is the **F1-score**, which measures the ratio of the number of shared words between the generated and ground truth answers. The F1-score is useful for tasks like text classification and information retrieval, where precision and recall are important. Other common NLP metrics include:
+
+- **BLEU**: Bilingual Evaluation Understudy metric
+- **METEOR**: Metric for Evaluation of Translation with Explicit Ordering
+- **ROUGE**: Recall-Oriented Understudy for Gisting Evaluation
+
+All of these metrics are used to quantify the level of overlap in the model-generated response and the ground truth (expected response).

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-and-copilot-agents.summary
+title: Unlock the power of AI
+metadata:
+  title: Unlock the Power of AI
+  description: This content is a recap of what was covered in this module.
+  ms.date: 06/26/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

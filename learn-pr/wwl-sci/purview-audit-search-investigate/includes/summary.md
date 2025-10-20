@@ -1,4 +1,4 @@
-In today's digital world, it's critical to secure sensitive data and comply with data protection laws. We focused on using Microsoft Purview Audit to identify unusual access patterns and maintain compliance.
+Securing sensitive data and meeting compliance requirements demands clear visibility into user and admin activity. In this module, you learned how Microsoft Purview Audit can help identify unusual access patterns and maintain regulatory compliance.
 
 Here's what you learned:
 
@@ -8,9 +8,7 @@ Here's what you learned:
 - Investigated unusual access patterns using advanced tools in Purview Audit (Premium) and PowerShell, enhancing your understanding of potential security risks.
 - Ensured regulatory compliance with proactive data management strategies, safeguarding sensitive information.
 
-Without Microsoft Purview Audit, managing and analyzing extensive audit data would be challenging. Manual processes and complex configurations could overlook security violations and compliance failures.
-
-Implementing Microsoft Purview Audit boosts your security and compliance efforts, reduces the risk of data breaches, and supports thorough investigations, ensuring the integrity of your organization and the security of data.
+Without Microsoft Purview Audit, managing audit data at this scale would be time-consuming and prone to gaps, increasing the risk of missed incidents. Implementing it streamlines investigations, strengthens data protection, and supports compliance across your organization.
 
 ## Resources
 

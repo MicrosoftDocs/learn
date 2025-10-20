@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.implement-fabric-data-agents
+metadata:
+  title: Implement Microsoft Fabric Data Agents
+  description: Implement Microsoft Fabric Data Agents (chat with your data)
+  ms.date: 08/18/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-assisted
+title: Implement Microsoft Fabric Data Agents (chat with your data)
+summary: "Enable secure conversational access to enterprise data with Fabric data agents—design, configure, govern, and integrate AI-powered Q&A experiences across OneLake sources."
+abstract: |
+  In this module, you learn how to:
+    - Design and configure Fabric data agents that enable secure conversational access to enterprise data.
+    - Curate and optimize data sources, instructions, and example queries for accurate and relevant responses.
+    - Publish, operationalize, and integrate Fabric data agents with downstream experiences like Azure AI Foundry, Power BI, and custom apps.
+    - Apply governance, permission, and prompting best practices that improve reliability and safeguard data.
+prerequisites: |
+  You should be familiar with data analytics and engineering concepts and terminology.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-analyst
+  - data-engineer
+products: 
+  - fabric
+subjects:
+  - data-analytics
+  - data-engineering
+  - data-integration
+units:
+- learn.wwl.implement-fabric-data-agents.introduction
+- learn.wwl.implement-fabric-data-agents.data-agent-capabilities
+- learn.wwl.implement-fabric-data-agents.end-to-end-scenario
+- learn.wwl.implement-fabric-data-agents.azure-ai-foundry
+- learn.wwl.implement-fabric-data-agents.power-bi
+- learn.wwl.implement-fabric-data-agents.exercise-copilot-fabric-data-agents
+- learn.wwl.implement-fabric-data-agents.knowledge-check
+- learn.wwl.implement-fabric-data-agents.summary
+badge: 
+  uid: learn.wwl.implement-fabric-data-agents.badge 

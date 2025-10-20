@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create Azure resources using Azure Resource Manager templates
   description: Create Azure resources using Azure Resource Manager templates
   ms.date: 05/22/2024
@@ -57,4 +55,4 @@ units:
 - learn.wwl.create-azure-resources-using-azure-resource-manager-templates.summary
 badge:
   uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates.badge
-
+

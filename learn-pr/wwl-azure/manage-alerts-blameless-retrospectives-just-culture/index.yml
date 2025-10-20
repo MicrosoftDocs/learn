@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage alerts, blameless retrospectives and a just culture
   description: Manage alerts, blameless retrospectives and a just culture
   ms.date: 05/08/2024
@@ -60,4 +58,4 @@ units:
 - learn.wwl.manage-alerts-blameless-retrospectives-just-culture.summary
 badge:
   uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.badge
-
+

@@ -3,7 +3,7 @@ uid: learn.wwl.sc-100-design-operations-identity-compliance-capabilities
 metadata:
   title: 'SC-100: Design security operations, identity, and compliance capabilities'
   description: 'SC-100: Design security operations, identity, and compliance capabilities'
-  ms.date: 09/25/2024
+  ms.date: 08/26/2025
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: learning-path
@@ -56,6 +56,8 @@ modules:
 - learn.wwl.design-solutions-identity-access-management
 - learn.wwl.design-solutions-secure-privileged-access
 - learn.wwl.design-solutions-security-operations
-- learn.wwl.case-study-design-security-operations-identity-compliance-capabilities
+- learn.case-study-identity-data-security
+- learn.case-study-access-control-threat-resilience
+
 trophy:
   uid: learn.wwl.sc-100-design-operations-identity-compliance-capabilities.trophy

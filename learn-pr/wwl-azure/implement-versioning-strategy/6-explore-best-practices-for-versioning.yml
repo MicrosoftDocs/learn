@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-versioning-strategy.explore-best-practices-for-versioning
 title: Explore best practices for versioning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore best practices for versioning
   description: "Explore best practices for versioning"
   ms.date: 05/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-explore-best-practices-for-versioning.md)]
+  [!include[](includes/6-explore-best-practices-for-versioning.md)]

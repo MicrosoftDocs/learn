@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-computer-vision.azure-ai-vision
+title: Understand Azure AI services for computer vision
+metadata:
+  title: Understand Azure AI services for computer vision
+  description: Azure AI services for computer vision
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 05/22/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-azure-ai-vision.md)]
+

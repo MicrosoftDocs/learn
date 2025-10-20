@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-security.configure-and-manage-azure-key-vault
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure and manage secrets in Azure Key Vault
   description: Configure and manage secrets in Azure Key Vault
   ms.date: 03/19/2025
@@ -40,4 +38,4 @@ units:
 - learn.azure-security.configure-and-manage-azure-key-vault.summary
 badge:
   uid: learn.azure-security.configure-and-manage-azure-key-vault.badge
-
+

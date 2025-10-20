@@ -1,16 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.test-python-with-pytest.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge about testing functions and classes with Pytest
-  ms.date: 12/08/2023
+  ms.date: 05/27/2025
   author: alfredodeza
   ms.author: alfredodeza
   ms.custom:
     - team=nextgen
     - devx-track-python
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 1
 content: |
 quiz:
@@ -19,14 +20,14 @@ quiz:
     choices:
     - content: "It makes tests perform faster."
       isCorrect: false
-      explanation: "Incorrect. Tests don’t perform faster when using plain assert statements."
+      explanation: "Incorrect. Tests don't perform faster when using plain assert statements."
     - content: "It allows you to use Python operators for any comparison."
       isCorrect: true
       explanation: "Correct. By using the plain assert statement, you can take advantage of using Python operators for all comparisons."
     - content: "It allows tests to be executed in parallel."
       isCorrect: false
       explanation: "Incorrect. Using plain assert statements aren't required for parallel testing."
-  - content: "What is one reason to group tests in a test class?"
+  - content: "What's one reason to group tests in a test class?"
     choices:
     - content: "So that tests can benefit from a common setup or cleanup."
       isCorrect: true

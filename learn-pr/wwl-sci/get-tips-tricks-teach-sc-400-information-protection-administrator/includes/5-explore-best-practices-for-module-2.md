@@ -32,6 +32,6 @@ Module 2 Demos
 
 Module 2 Labs
 
-- Lab 2.1: [Manage DLP policies](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_02_Lab1_Ex1_DLP_policies.md)
-- Lab 2.2: [Manage Endpoint DLP](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_02_Lab1_Ex2_Endpoint_DLP.md)
-- Lab 2.3: [Manage DLP Reports](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_02_Lab1_Ex3_DLP_reports.md)
+- Lab 2.1: Manage DLP policies
+- Lab 2.2: Manage Endpoint DLP
+- Lab 2.3: Manage DLP Reports

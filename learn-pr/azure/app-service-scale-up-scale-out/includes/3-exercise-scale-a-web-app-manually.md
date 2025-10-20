@@ -31,7 +31,7 @@ The exercise also runs a client app that simulates several users issuing POST an
     | **Instance Details** |        |
     | Name                 | *See Note before table.* Enter a unique name that you can remember for later in this exercise |
     | Publish              | Code |
-    | Runtime stack        | .NET 6 (LTS)|
+    | Runtime stack        | .NET 9 (LTS)|
     | Operating System     | Windows |
     | Region               | Accept *default* |
     | **App Service Plan** |         |

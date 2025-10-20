@@ -12,25 +12,25 @@ To access Microsoft Intune data in Security Copilot, you need:
 - Properly configured Intune policies and security settings.
 - RBAC roles and Intune scope tag assigned to you.
 
-## Open Copilot for Security and enable Intune
+## Open Security Copilot and enable Intune
 
-To use the Intune capabilities in Copilot for Security, enable the Intune plugin.
+To use the Intune capabilities in Security Copilot, enable the Intune plugin.
 
-1. Go to [Microsoft Copilot for Security](https://go.microsoft.com/fwlink/?linkid=2247989) and sign in with your credentials.
+1. Go to [Microsoft Security Copilot](https://go.microsoft.com/fwlink/?linkid=2247989) and sign in with your credentials.
 2. In the prompt bar, select **Sources** (right corner).
 
-    :::image type="content" source="../media/security-copilot-sources.png" alt-text="Screenshot that shows the plugin sources that are available, enabled, and disabled in Microsoft Copilot for Security.":::
+    :::image type="content" source="../media/security-copilot-sources.png" alt-text="Screenshot that shows the plugin sources that are available, enabled, and disabled in Microsoft Security Copilot.":::
 
 3. In **Manage sources**, turn on Microsoft Intune:
 
-    :::image type="content" source="../media/intune-plugin-enabled.png" alt-text="Screenshot that shows the Microsoft Intune plugin source is enabled in Microsoft Copilot for Security.":::
+    :::image type="content" source="../media/intune-plugin-enabled.png" alt-text="Screenshot that shows the Microsoft Intune plugin source is enabled in Microsoft Security Copilot.":::
 
 > [!NOTE]
-> Some roles can enable or disable plugins. For more information, go to [Manage plugins in Microsoft Copilot for Security](/security-copilot/manage-plugins).
+> Some roles can enable or disable plugins. For more information, go to [Manage plugins in Microsoft Security Copilot](/security-copilot/manage-plugins).
 
 ## Use the built-in features
 
-In Copilot for Security, there are built in system features that are helpful for Intune admins. For a walkthrough of Copilot for Security, go to [Navigating Microsoft Copilot for Security](/security-copilot/navigating-security-copilot).
+In Security Copilot, there are built in system features that are helpful for Intune admins. For a walkthrough of Security Copilot, go to [Navigating Microsoft Security Copilot](/security-copilot/navigating-security-copilot).
 
 This section describes some of the features that are helpful for Intune admins.
 
@@ -40,26 +40,26 @@ Capabilities are built-in features that can get data from the different plugins 
 
 To view the list of Intune built-in system capabilities for Intune, use the following steps:
 
-1. In the [Copilot for Security portal](https://go.microsoft.com/fwlink/?linkid=2247989) prompt bar, select the Copilot prompts icon > **See all system capabilities**.
+1. In the [Security Copilot portal](https://go.microsoft.com/fwlink/?linkid=2247989) prompt bar, select the Copilot prompts icon > **See all system capabilities**.
 
-    :::image type="content" source="../media/security-copilot-system-capabilities.png" alt-text="Screenshot that shows how to select the prompts icon and system capabilities in Microsoft Copilot for Security.":::
+    :::image type="content" source="../media/security-copilot-system-capabilities.png" alt-text="Screenshot that shows how to select the prompts icon and system capabilities in Microsoft Security Copilot.":::
 
 2. In the Microsoft Intune section, there's a list of all the built-in capabilities for Intune. You can select any of the capabilities and get more information about that capability.
 
 ### Sessions
 
-When you use prompts in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) or in the Copilot for Security portal, the sessions are saved. To see the saved sessions, use the following steps:
+When you use prompts in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) or in the Security Copilot portal, the sessions are saved. To see the saved sessions, use the following steps:
 
-1. In the [Copilot for Security portal](https://go.microsoft.com/fwlink/?linkid=2247989), go to the menu > **My sessions**.
+1. In the [Security Copilot portal](https://go.microsoft.com/fwlink/?linkid=2247989), go to the menu > **My sessions**.
 
-    :::image type="content" source="../media/security-copilot-menu-my-sessions.png" alt-text="Screenshot that shows the Microsoft Copilot for Security menu and My sessions with previous sessions in Copilot for Security portal.":::
+    :::image type="content" source="../media/security-copilot-menu-my-sessions.png" alt-text="Screenshot that shows the Microsoft Security Copilot menu and My sessions with previous sessions in Security Copilot portal.":::
 
 2. When you select a session, your previous prompts and results are shown. Every session also has a session ID in the URL. You can share this session ID with others to review the same prompt session.
 
 ## Provide feedback
 
-Your feedback on the Intune integration with Copilot for Security helps with development. To provide feedback, in Copilot for Security, use the feedback buttons at the bottom of each completed prompt.
+Your feedback on the Intune integration with Security Copilot helps with development. To provide feedback, in Security Copilot, use the feedback buttons at the bottom of each completed prompt.
 
-:::image type="content" source="../media/security-copilot-prompt-feedback.png" alt-text="Screenshot that shows how to submit feedback on the prompt results in Microsoft Copilot for Security.":::
+:::image type="content" source="../media/security-copilot-prompt-feedback.png" alt-text="Screenshot that shows how to submit feedback on the prompt results in Microsoft Security Copilot.":::
 
 Whenever possible, and when the result isn't what you expect, write a few words explaining what can be done to improve the outcome. If you entered Intune-specific prompts and the results aren't Intune related, then include that information.

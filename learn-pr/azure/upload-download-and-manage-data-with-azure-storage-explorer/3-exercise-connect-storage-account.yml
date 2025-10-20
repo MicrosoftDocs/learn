@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.upload-download-and-manage-data-with-azure-storage-explorer.3-exercise-connect-storage-account
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Connect Azure Storage Explorer to a storage account
   description: Exercise - Connect Azure Storage Explorer to a storage account
   ms.date: 09/19/2024
@@ -15,4 +13,4 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-connect-storage-account.md)]
-
+

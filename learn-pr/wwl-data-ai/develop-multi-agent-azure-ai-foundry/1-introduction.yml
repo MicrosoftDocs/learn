@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-multi-agent-azure-ai-foundry.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Get started with multi-agent systems using Azure AI Foundry Agent Service."
+  ms.date: 06/13/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

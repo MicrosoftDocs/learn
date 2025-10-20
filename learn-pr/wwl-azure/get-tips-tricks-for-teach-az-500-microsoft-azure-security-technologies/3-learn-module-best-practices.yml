@@ -2,8 +2,6 @@
 uid: learn.wwl.get-tips-tricks-for-teach-az-500-microsoft-azure-security-technologies.learn-module-best-practices
 title: Learn module best practices
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Learn module best practices
   description: "Learn module best practices"
   ms.date: 11/15/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-learn-module-best-practices.md)]
+  [!include[](includes/3-learn-module-best-practices.md)]

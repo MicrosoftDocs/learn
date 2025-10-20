@@ -3,26 +3,30 @@ uid: learn.wwl.fundamentals-generative-ai
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Fundamentals of Generative AI
-  description: Learn about how large language models form the foundation of generative AI applications and understand how to work with Microsoft Copilot and agents.
+  title: Introduction to generative AI and agents
+  description: Ever wondered how AI can create content, answer questions, and assist with tasks? This module introduces you to the world of generative AI and agents.
   author: sherzyang
   ms.author: sheryang
-  ms.date: 11/26/2024
+  ms.date: 10/04/2025
   ms.service: azure-ai-openai
   ms.topic: module-intro-to-product
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
   ms.custom: copilot-learning-hub, ai-learning-hub
-title: Fundamentals of Generative AI
-summary: "In this module, you explore the way in which language models enable AI applications and services to generate original content based on natural language input. You also learn how generative AI enables the creation of agents that can assist humans in creative tasks."
+title: Introduction to generative AI and agents
+summary: "Generative AI powers applications that can create content, answer questions, and assist with tasks. In this module, you'll explore the fundamentals of generative AI, including large language models (LLMs), prompts, and AI agents."
 abstract: |
-  By the end of this module, you are able to:
-  - Understand generative AI's place in the development of artificial intelligence.
-  - Understand language models and their role in intelligent applications. 
-  - Describe examples of Microsoft Copilot, agents, and good prompts. 
+  By the end of this module, you'll be able to:
+  - Describe core concepts of generative AI.
+  - Explain how large language models (LLMs) work.
+  - Consider how to create effective prompts for LLMs.
+  - Describe core concepts of agents and agentic AI solutions.
 prerequisites: |
-  - Familiarity with Azure and the Azure portal.
-iconUrl: /learn/achievements/generic-badge.svg
+  Before starting this module, you should have:
+  - Familiarity with AI concepts and terminology
+  - Basic understanding of machine learning principles.
+iconUrl: /training/achievements/fundamentals-generative-ai.svg
 levels:
   - beginner
 roles: 
@@ -31,20 +35,15 @@ roles:
   - solution-architect
   - student
 products: 
-  - azure-openai
-  - azure
+  - azure-ai-foundry
 subjects: 
-  - cloud-computing
+  - artificial-intelligence
 units:
 - learn.wwl.fundamentals-generative-ai.introduction
-- learn.wwl.fundamentals-generative-ai.what-is-generative-ai
 - learn.wwl.fundamentals-generative-ai.language-models
-- learn.wwl.fundamentals-generative-ai.azure-openai
-- learn.wwl.fundamentals-generative-ai.copilots
-- learn.wwl.fundamentals-generative-ai.microsoft-copilot
 - learn.wwl.fundamentals-generative-ai.writing-prompts
-- learn.wwl.fundamentals-generative-ai.building-custom-copilots
-- learn.wwl.fundamentals-generative-ai.exercise
+- learn.wwl.fundamentals-generative-ai.agents
+- learn.wwl.fundamentals-generative-ai.exercise-ai-agent
 - learn.wwl.fundamentals-generative-ai.knowledge-check
 - learn.wwl.fundamentals-generative-ai.summary
 badge:

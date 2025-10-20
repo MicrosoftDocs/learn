@@ -2,8 +2,6 @@
 uid: learn.wwl.create-azure-cognitive-search-solution.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   author: ivorb
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/11-summary.md)]
-
+

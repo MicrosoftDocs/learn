@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-compare-models-azure-machine-learning.exercise-explore-responsible-dashboard
 title: Exercise - Explore the Responsible AI dashboard
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Explore the Responsible AI dashboard
   description: Learn how to create and explore the Responsible AI dashboard in Azure Machine Learning.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-explore-responsible-dashboard.md)]
-
+

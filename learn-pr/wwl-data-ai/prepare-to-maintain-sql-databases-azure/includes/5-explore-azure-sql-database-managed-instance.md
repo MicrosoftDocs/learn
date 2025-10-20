@@ -100,3 +100,4 @@ The command above allows the execution of external scripts in your managed insta
 > SQL Database doesn't support Machine Learning Services feature.
 
 For more information about Machine Learning Services, see [Machine Learning Services in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/machine-learning-services-overview).
+

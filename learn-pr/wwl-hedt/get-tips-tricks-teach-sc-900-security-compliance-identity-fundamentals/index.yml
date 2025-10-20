@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Get tips and tricks for teaching SC-900: Microsoft Security, Compliance, and Identity Fundamentals'
   description: 'Get tips and tricks for teaching SC-900: Microsoft Security, Compliance, and Identity Fundamentals'
   ms.date: 04/07/2023
@@ -47,4 +45,4 @@ units:
 - learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals.summary
 badge:
   uid: learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals.badge
-
+

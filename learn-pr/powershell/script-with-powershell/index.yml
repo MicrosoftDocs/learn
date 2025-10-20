@@ -4,8 +4,8 @@ metadata:
   title: Introduction to scripting in PowerShell
   description: Learn how to script by using PowerShell.
   ms.date: 02/04/2021
-  author: softchris
-  ms.author: chnoring
+  author: sdwheeler
+  ms.author: sewhee
   ms.topic: module
   ms.custom: team=nextgen
 title: Introduction to scripting in PowerShell

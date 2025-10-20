@@ -2,8 +2,6 @@
 uid: learn.wwl.azure-stack-hub.compare-azure-stack-hci-azure-stack-edge
 title: Compare Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Compare Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge
   description: "Compare Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge"
   ms.date: 08/05/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-compare-azure-stack-hub.md)]
+  [!include[](includes/3-compare-azure-stack-hub.md)]

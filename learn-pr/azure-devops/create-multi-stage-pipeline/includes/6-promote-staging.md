@@ -26,10 +26,7 @@ To create the **staging** environment:
 1. Under **Name**, enter *staging*.
 1. Leave the remaining fields at their default values.
 1. Select **Create**.
-1. On the **staging** environment page, open the dropdown, and then select **Approvals and checks**.
-
-    :::image type="content" source="../../shared/media/pipeline-add-check-to-environment.png" alt-text="A screenshot of Azure Pipelines, showing the location of the approvals and checks menu item.":::
-
+1. On the **staging** environment page, select the **Approvals and checks** tab.
 1. Select **Approvals**.
 1. Under **Approvers**, select **Add users and groups**, and then select your account.
 1. Under **Instructions to approvers**, enter *Approve this change when it's ready for staging*.
@@ -91,6 +88,6 @@ The Tailspin team gathers to discuss their progress. Amita approves changes in t
 
 **Tim:** To tell you the truth, at first I was a little nervous about automated release pipelines. But I really like this now that I see it working. Each stage can have its own environment, associated tests, and approvers. The pipeline automates many things that we had to do manually. But we still have control where we need it.
 
-**Amita:** I could imagine us doing something similar to promote changes from *Staging* to *Production*. Speaking of...when do we add a **production** environment?
+**Amita:** I could imagine us doing something similar to promote changes from *Staging* to *Production*. Speaking of, when do we add a **production** environment?
 
 **Andy:** Shortly. I think we still need to fill in a few pieces here first before we add that.

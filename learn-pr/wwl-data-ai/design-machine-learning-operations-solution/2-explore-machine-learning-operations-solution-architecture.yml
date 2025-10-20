@@ -2,8 +2,6 @@
 uid: learn.wwl.design-machine-learning-operations-solution.explore-machine-learning-operations-solution-architecture
 title: Explore an MLOps architecture
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore an MLOps architecture
   description: Explore how to prepare a machine learning model for production through an MLOps architecture.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-explore-machine-learning-operations-solution-architecture.md)]
-
+

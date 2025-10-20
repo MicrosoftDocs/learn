@@ -2,11 +2,9 @@
 uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.configure-function-bindings
 title: Configure function bindings
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure function bindings
   description: "Configure function bindings"
-  ms.date: 12/20/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

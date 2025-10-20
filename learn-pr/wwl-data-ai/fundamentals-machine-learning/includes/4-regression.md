@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ead5dd72-0a6b-41f9-a4d6-147a093d105a]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Regression models are trained to predict numeric label values based on training data that includes both features and known labels. The process for training a regression model (or indeed, any supervised machine learning model) involves multiple iterations in which you use an appropriate algorithm (usually with some parameterized settings) to train a model, evaluate the model's predictive performance, and refine the model by repeating the training process with different algorithms and parameters until you achieve an acceptable level of predictive accuracy.
 
 ![Diagram showing the process of training an evaluating a supervised model.](../media/supervised-training.png)
@@ -135,3 +146,5 @@ The metrics described above are commonly used to evaluate a regression model. In
 - Algorithm parameters (numeric settings to control algorithm behavior, more accurately called *hyperparameters* to differentiate them from the ***x*** and ***y*** parameters).
 
 After multiple iterations, the model that results in the best evaluation metric that's acceptable for the specific scenario is selected.
+
+::: zone-end

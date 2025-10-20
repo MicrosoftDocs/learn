@@ -4,10 +4,10 @@
 
 1. Browse to the [Microsoft Entra admin center](https://entra.microsoft.com/).
 2. In the left navigation, under **Identity**, select **Users**.
-3. In the **Users** list, select the check box for a user that will be deleted. For example, select **Chris Green**.
+3. In the **Users** list, select the check box for a user to delete. For example, select **Chris Green**.
     
    > [!TIP]
-   > Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s page, you will only be managing that individual user.
+   > Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s page, you'll only be managing that individual user.
    
    :::image type="content" source="../media/remove-user.png" alt-text="Screenshot of Microsoft Entra ID all users' list with one user check box selected.":::
     
@@ -27,4 +27,4 @@ You can see all the users that were deleted less than 30 days ago. These users c
 3. On the menu, select **Restore user**.
 4. Review the dialog box and then select **OK**.
 5. In the left navigation, select **All users**.
-6. Verify the user has been restored.
+6. Verify the user was restored.

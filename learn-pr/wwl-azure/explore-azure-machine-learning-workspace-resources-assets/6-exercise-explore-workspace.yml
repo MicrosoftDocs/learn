@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets.exercise-explore-workspace
 title: Exercise - Explore the workspace
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Explore the workspace
   description: Exercise - Explore the workspace
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-explore-workspace.md)]
-
+

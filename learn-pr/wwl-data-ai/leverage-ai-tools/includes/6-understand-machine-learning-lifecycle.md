@@ -1,6 +1,6 @@
 The availability of sophisticated AI models can help organizations reduce significantly the intimidating amount of resources a data science project can require. Let's see how organizations can tackle machine learning challenges and operations with Azure Machine Learning.
 
-## Machine learning challenges and need of machine learning operations
+## Machine learning challenges and machine learning operations
 
 Maintaining AI solutions typically requires machine learning lifecycle management to document and manage data, code, model environments, and the machine learning models themselves. You need to establish processes for developing, packaging, and deploying models, as well as monitoring their performance and occasionally retraining them. And most organizations are managing multiple models in production at the same time, adding to the complexity.
 
@@ -20,7 +20,7 @@ Azure Machine Learning supports end-to-end machine learning lifecycle management
 
 The classic approach covers all the usual steps of a data science project. 
 
-1. **Prepare dataset**. AI starts at data. First, data scientists need to prepare data with which to train the model. Data preparation is often the biggest time commitment in the lifecycle. This task involves finding or building your own dataset and cleaning it so it's easily readable by machines. You want to make sure the data is a representative sample, that your variables are pertinent for your goal, and so on.
+1. **Prepare dataset**. AI starts with data. First, data scientists need to prepare data with which to train the model. Data preparation is often the biggest time commitment in the lifecycle. This task involves finding or building your own dataset and cleaning it so it's easily readable by machines. You want to make sure the data is a representative sample, that your variables are pertinent for your goal, and so on.
 2. **Train and test**.  Next, data scientists apply algorithms to the data to train a machine learning model. Then they test it with new data to see how accurate its predictions are.
 3. **Package**. A model can't be directly put into an app. It needs to be containerized, so it can run with all the tools and frameworks its built on.
 4. **Validate**. At this point, the team evaluates how model performance compares to their business goals. Testing may return good enough metrics, but still the model may not work as expected when used in a real business scenario.

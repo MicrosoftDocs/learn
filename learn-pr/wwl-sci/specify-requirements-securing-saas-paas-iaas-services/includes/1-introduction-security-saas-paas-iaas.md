@@ -19,19 +19,16 @@ The content in the module helps you prepare for the certification exam SC-100: M
 
 ## Shared responsibility in the cloud
 
-As you consider and evaluate public cloud services, it’s critical to understand the shared responsibility model and which security tasks are handled by the cloud provider and which tasks are handled by you. The workload responsibilities vary depending on whether the workload is hosted on Software as a Service (SaaS), Platform as a Service (PaaS), Infrastructure as a Service (IaaS), or in an on-premises datacenter
+As you consider and evaluate public cloud services, it’s critical to understand the shared responsibility model and which security tasks are handled by the cloud provider and which tasks are handled by you (the customer). The workload responsibilities vary depending on whether the workload is hosted on Software as a Service (SaaS), Platform as a Service (PaaS), Infrastructure as a Service (IaaS), or in an on-premises datacenter.
 
-## Division of responsibility
+### Division of responsibility
 
 In an on-premises datacenter, you own the whole stack. As you move to the cloud some responsibilities transfer to Microsoft. The following diagram illustrates the areas of responsibility between you and Microsoft, according to the type of deployment of your stack.
 
+- For SaaS, Microsoft operates the application stack while you retain responsibility for data, user identities, access management, and tenant configuration. 
+- For PaaS, Microsoft manages the platform and infrastructure; you manage application configuration, data, identity, and runtime permissions. 
+- For IaaS, you manage the operating system, application software, data, and most network controls.
+
+For all cloud deployment types, you (customer) always own your data, devices, and identities. You're responsible for protecting the security of your data and identities, on-premises resources, and the cloud components you control (which varies by service type).
+
 ![Diagram showing responsibility zones.](../media/shared-responsibility.png)
-
-For all cloud deployment types, you own your data and identities. You're responsible for protecting the security of your data and identities, on-premises resources, and the cloud components you control (which varies by service type).
-
-Regardless of the type of deployment, the following responsibilities are always retained by you:
-
--   Data
--   Endpoints
--   Account
--   Access management

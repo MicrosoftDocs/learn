@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-pc-business-users.early-adopters
+title: Early adopters
+metadata:
+  title: Early Adopters
+  description: This content is part of the "Introducing Copilot+ PC business users" module.
+  ms.date: 08/04/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-early-adopters.md)]

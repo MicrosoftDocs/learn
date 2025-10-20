@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.connect-on-premises-machines-azure-portal
 title: Connect on-premises machines by using the Azure portal
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Connect on-premises machines by using the Azure portal
   description: "Connect on-premises machines by using the Azure portal"
   ms.date: 06/11/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 8
 content: |
-  [!include[](includes/7-connect-on-premises-machines-azure-portal.md)]
+  [!include[](includes/7-connect-on-premises-machines-azure-portal.md)]

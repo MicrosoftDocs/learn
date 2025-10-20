@@ -3,8 +3,6 @@ uid: learn.intro-to-azure-kubernetes-service.summary
 title: Summary
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 11/26/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
-
+

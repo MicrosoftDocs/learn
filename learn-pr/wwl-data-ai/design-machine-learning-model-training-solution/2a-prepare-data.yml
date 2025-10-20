@@ -2,13 +2,11 @@
 uid: learn.wwl.design-machine-learning-model-training-solution.prepare-data
 title: Get and prepare data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Get and prepare data
   description: Get and prepare data
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 01/20/2025
+  ms.date: 05/28/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

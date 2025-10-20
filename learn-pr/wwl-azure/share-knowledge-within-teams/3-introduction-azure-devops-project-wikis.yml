@@ -2,8 +2,6 @@
 uid: learn.wwl.share-knowledge-within-teams.introduction-azure-devops-project-wikis
 title: Introduction to Azure DevOps project wikis
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure DevOps project wikis
   description: "Introduction to Azure DevOps project wikis"
   ms.date: 05/24/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-introduction-azure-devops-project-wikis.md)]
+  [!include[](includes/3-introduction-azure-devops-project-wikis.md)]

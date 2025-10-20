@@ -5,5 +5,8 @@ Generative AI requires a responsible approach to prevent or mitigate the generat
 1. Implement mitigation of harmful content generation at multiple levels of your solution.
 1. Deploy your solution with adequate plans and preparations for responsible operation.
 
-> [!TIP]
-> To learn more about responsible AI considerations for generative AI solutions based on Azure OpenAI Service, see [Overview of Responsible AI practices for Azure OpenAI models](/legal/cognitive-services/openai/overview) in the Azure OpenAI Service documentation.
+### Learn more
+
+- [Overview of Responsible AI practices for Azure OpenAI models](/legal/cognitive-services/openai/overview)
+- [Azure AI Foundry Discord](https://aka.ms/azureaifoundry/discord)
+- [Azure AI Foundry Developer Forum](https://aka.ms/azureaifoundry/forum)

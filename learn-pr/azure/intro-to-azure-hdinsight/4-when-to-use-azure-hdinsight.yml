@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-hdinsight.4-when-to-use-azure-hdinsight  
 title: When to use Azure HDInsight  
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content  
   title: When to use Azure HDInsight
   description: When to use Azure HDInsight
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-when-to-use-azure-hdinsight.md)]
-
+

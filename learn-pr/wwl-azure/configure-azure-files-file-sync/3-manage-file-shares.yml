@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Manage Azure file shares
   description: "Manage Azure file shares"
-  ms.date: 01/10/2025
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/3-manage-file-shares.md)]

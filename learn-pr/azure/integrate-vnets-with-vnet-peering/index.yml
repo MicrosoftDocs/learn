@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.integrate-vnets-with-vnet-peering
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Distribute your services across Azure virtual networks and integrate them by using virtual network peering
   description: Use virtual network peering to enable communication across virtual networks in a way that's secure and cost-effective.
   ms.service: azure-virtual-network
@@ -42,4 +40,4 @@ units:
 - learn.integrate-vnets-with-vnet-peering.6-summary
 badge:
   uid: learn.integrate-vnets-with-vnet-peering.badge
-
+

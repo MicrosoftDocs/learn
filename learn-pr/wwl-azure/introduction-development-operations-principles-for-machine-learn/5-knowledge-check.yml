@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-development-operations-principles-for-machine-learn.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
@@ -15,6 +13,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -42,4 +41,4 @@ quiz:
     - content: "Planning"
       isCorrect: false
       explanation: "Incorrect. Planning should occur before working on the code."
-
+

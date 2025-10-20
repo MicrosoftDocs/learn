@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-vibe-coding.customize-github-copilot-responses
+title: Customize GitHub Copilot Chat responses
+metadata:
+  title: Customize GitHub Copilot Chat Responses
+  description: "Brief description of the instructions file"
+  ms.date: 07/24/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-customize-github-copilot-responses.md)]

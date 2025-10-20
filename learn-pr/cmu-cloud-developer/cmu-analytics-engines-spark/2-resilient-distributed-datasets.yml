@@ -2,8 +2,6 @@
 uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.2-resilient-distributed-datasets
 title: Resilient distributed datasets
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Resilient distributed datasets
   description: Resilient distributed datasets
   ms.date: 03/09/2022
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 16
 content: |
   [!include[](includes/2-resilient-distributed-datasets.md)]
-
+

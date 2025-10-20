@@ -5,7 +5,7 @@ metadata:
   description: 'AZ-500: Secure Azure using Microsoft Defender for Cloud and Microsoft Sentinel'
   ms.date: 02/12/2025
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: learning-path
 title: 'AZ-500: Secure Azure using Microsoft Defender for Cloud and Microsoft Sentinel'
 prerequisites: |

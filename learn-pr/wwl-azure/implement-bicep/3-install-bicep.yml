@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-bicep.install-bicep
 title: Install Bicep
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Install Bicep
   description: "Install Bicep"
   ms.date: 05/23/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/3-install-bicep.md)]
-
+

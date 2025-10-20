@@ -2,8 +2,6 @@
 uid: learn.wwl.software-composition-analysis.explore-software-composition-analysis
 title: Explore software composition analysis (SCA)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore software composition analysis (SCA)
   description: "Explore software composition analysis (SCA)"
   ms.date: 05/13/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-explore-software-composition-analysis.md)]
+  [!include[](includes/3-explore-software-composition-analysis.md)]

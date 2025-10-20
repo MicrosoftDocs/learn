@@ -1,10 +1,11 @@
-To complete the exercise for this module, launch the VM and follow the instructions.
+In this exercise, you use the Azure AI Language SDK to develop a client application that analyzes text.
 
-[!INCLUDE [Lab note](../../../includes/wwl/launch-exercise-note.md)]
+> [!NOTE]
+> To complete this lab, you need an **[Azure subscription](https://azure.microsoft.com/free?azure-portal=true)** in which you have administrative access.
 
-If you'd like to follow these instructions on your own computer, you can follow the [exercise instructions here](https://microsoftlearning.github.io/mslearn-ai-language/Instructions/Exercises/01-analyze-text.html?azure-portal=true).
+Launch the exercise and follow the instructions.
 
-When you finish the exercise, end the lab to close the VM. Don't forget to come back and complete the knowledge check to earn points for completing this module!
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2320757&azure-portal=true)
 
 > [!TIP]
-> After completing the exercise, if you've finished exploring Azure AI Services, delete the Azure resources that you created during the exercise.
+> After completing the exercise, if you've finished exploring Azure AI services, delete the Azure resources that you created during the exercise.

@@ -17,7 +17,7 @@ Here are important points to keep in mind while you're working with CodeQL and t
 
 - CodeQL predicates and classes are evaluated to database tables. Large predicates generate large tables with many rows, so they're expensive to compute.
 - The QL language is implemented through standard database operations and relational algebra, such as join, projection, and union.
-- Queries are evaluated *bottom up*, which means that a predicate is not evaluated until all of the predicates that it depends on are evaluated.
+- Queries are evaluated *bottom up*, which means that a predicate isn't evaluated until all of the predicates that it depends on are evaluated.
 
 ### Debug artifacts
 
@@ -41,7 +41,7 @@ If a workflow run for code scanning fails because of a server error, a transient
 
 ### Error: "Out of disk" or "Out of memory"
 
-CodeQL might run out of disk or memory on the runner for very large projects. If it's a hosted GitHub Actions runner, contact GitHub support to investigate the problem. If it's a self-hosted runner, you might need to make adjustments to the server's specifications. For more information, see the [CodeQL documentation about recommended hardware for running CodeQL](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/recommended-hardware-resources-for-running-codeql).
+CodeQL might run out of disk or memory on the runner for projects that are too large. If it's a hosted GitHub Actions runner, contact GitHub support to investigate the problem. If it's a self-hosted runner, you might need to make adjustments to the server's specifications. For more information, see the [CodeQL documentation about recommended hardware for running CodeQL](https://docs.github.com/en/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/recommended-hardware-resources-for-running-codeql).
 
 ### Error: 403 "Resource not accessible by integration" when using Dependabot
 
@@ -64,7 +64,7 @@ on:
 
 ### Error: "SARIF Upload Rejected Because of Default Setup"
 
-You get an error if a process tries to upload a SARIF file that contains results of CodeQL analysis to a repository where CodeQL default setup is enabled. This issue includes uploads through the REST API and the CodeQL CLI. SARIF uploads are blocked when CodeQL default setup is enabled, to reduce the potential for user confusion when multiple systems generate similar code-scanning alerts.
+SARIF uploads are blocked when the CodeQL default setup is enabled. This error occurs when a process tries to upload a SARIF file containing CodeQL analysis results to a repository with default setup enabled. The error also occurs if the upload is done through the REST API and the CodeQL CLI. This block is in place to reduce the potential for user confusion when multiple systems generate similar code-scanning alerts.
 
 This error occurs only for SARIF files that contain results that you create by using CodeQL. To fix this error, disable CodeQL in the repository and then retry uploading the SARIF file.
 

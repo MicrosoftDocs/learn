@@ -2,8 +2,6 @@
 uid: learn.oxford.intro-to-iot-hub.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: In this section, we help the learner to decide if the product will meet their needs by explaining when to use the product and how it works.
   ms.date: 07/20/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 3 # dummy number at present
 content: |
   [!include[](includes/1-introduction.md)]
-
+

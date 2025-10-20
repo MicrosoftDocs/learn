@@ -267,3 +267,4 @@ Submit a **GET** request to the endpoint from the previous request, with the sam
 ```
 
 The classification result is within the items array's `results` object, for each document submitted.
+

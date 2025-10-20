@@ -19,6 +19,17 @@ To install the migration extension, follow these steps:
 
     ![Animated GIF of the Azure migration extension for Azure Data Studio installation.](../media/4-install-migration-extension-data-studio.gif)
 
+It's recommended to test the assessment process in your development or test environments before running it against production databases.
+
+## Performance and sizing recommendations
+
+Beyond compatibility, the extension provides:
+
+- Performance baseline analysis
+- Sizing recommendations for target Azure resources
+- Cost estimation for different deployment options
+- Right-sizing guidance based on current workload patterns
+
 ## Assess database readiness
 
 The migration extension performs detailed evaluation of the source SQL Server instance by executing multiple rules to identify critical issues that must be addressed before migrating your SQL Server database to Azure SQL.
@@ -31,7 +42,7 @@ As we can see, several Azure SQL targets are available for selection, and the re
 
 You can also save the assessment report, this generates a JSON file containing all the main properties about your database, and also the assessment results. Additionally, you can use the JSON file to programmatically extract specific data or information for further analysis or processing.
 
-## Right-sized SKU recommendations (Preview)
+## Right-sized SKU recommendations
 
 The extension also provides recommended compute and storage configuration for your Azure SQL target based on the performance data collected from your source SQL instance, whether it's on-premises or in another cloud environment. This feature helps ensure that the Azure SQL target meets the needs of your workload.
 

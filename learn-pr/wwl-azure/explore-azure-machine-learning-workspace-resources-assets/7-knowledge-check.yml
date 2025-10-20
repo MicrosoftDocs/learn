@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
@@ -12,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: ""
@@ -38,4 +37,4 @@ quiz:
     - content: "Sweep"
       isCorrect: false
       explanation: "Incorrect. A sweep job is used for hyperparameter tuning."
-
+

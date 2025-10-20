@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.use-sweep-job-hyperparameter-tuning
 title: Use a sweep job for hyperparameter tuning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use a sweep job for hyperparameter tuning
   description: Use a sweep job for hyperparameter tuning
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/5-use-sweep-job-hyperparameter-tuning.md)]
-
+

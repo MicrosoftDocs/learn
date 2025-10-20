@@ -4,9 +4,10 @@ metadata:
   title: Build Enterprise AI Agents with Java and Spring
   description: Learn how to build and deploy an AI-powered Java application and AI agents using Spring AI, Azure OpenAI, and Azure Container Apps with PostgreSQL vector storage.
   ms.date: 03/16/2025
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: jbalderas, gok
+  ms.update-cycle: 180-days
+  author: yortch
+  ms.author: jbalderas
+  ms.reviewer: thegovind
   ms.topic: module
   ms.custom: team=cloud_advocates, devx-track-java
   ms.service: azure-container-apps
@@ -30,7 +31,7 @@ products:
   - azure-container-apps
   - azure-database-postgresql
 prerequisites: |
-  - An Azure subscription. [Create one for free.](https://azure.microsoft.com/free/)
+  - An Azure subscription. [Create one for free.](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
   - Basic familiarity with Java and Spring Boot.
   - Experience with Git and Maven.
   - [Java 17 or later](/java/openjdk/download#openjdk-17).

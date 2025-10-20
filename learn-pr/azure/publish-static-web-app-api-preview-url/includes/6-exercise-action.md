@@ -31,7 +31,7 @@ Your GitHub Action is now triggered.
 
 ## Watch the GitHub Action build and publish
 
-You can stay in your browser on your repository and watch the GitHub Action's progress. Follow these steps to view the progress:
+You can stay in your browser on your repository and watch the GitHub Action's progress. View the progress by following these steps:
 
 1. Select the **Actions** menu
 1. Under the Workflows menu, select the **Azure Static Web Apps CI/CD** workflow item

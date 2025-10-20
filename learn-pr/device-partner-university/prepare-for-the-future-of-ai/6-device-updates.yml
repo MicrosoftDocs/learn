@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.prepare-for-the-future-of-ai.device-updates
+title: Device updates
+metadata:
+  title: Device Updates
+  description: This content is part of the "Prepare for the future of AI with Copilot+ PCs" module.
+  ms.date: 07/29/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-device-updates.md)]

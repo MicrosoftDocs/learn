@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.design-vision.exercise
+
+title: Exercise - create an AI-assisted music video concept
+metadata:
+  title: Exercise - Create an AI-Assisted Music Video Concept
+  description: "Use Microsoft Copilot and Designer to brainstorm, script, and storyboard an AI-assisted music video concept based on a selected song. Keywords: AI music video concept, Microsoft Copilot, Microsoft Designer, storyboarding with AI, creative pre-production."
+  ms.date: 3/20/2025
+  author: kariannab-ms
+  ms.author: kbarreto
+  ms.topic: unit
+  
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise.md)]

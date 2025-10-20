@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-release-strategy-recommendations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore release recommendations
   description: Explore release recommendations
   ms.date: 05/21/2024
@@ -58,4 +56,4 @@ units:
 - learn.wwl.explore-release-strategy-recommendations.summary
 badge:
   uid: learn.wwl.explore-release-strategy-recommendations.badge
-
+

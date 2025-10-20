@@ -2,8 +2,6 @@
 uid: learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.2-mongodb
 title: MongoDB
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: MongoDB
   description: MongoDB
   ms.date: 03/09/2022
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/2-mongodb.md)]
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.secure-and-isolate-with-nsg-and-service-endpoints
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Secure and isolate access to Azure resources by using network security groups and service endpoints
   description: Find out how Azure network security groups and service endpoints help you secure your virtual machines and Azure services from unauthorized network access.
   ms.service: azure-virtual-network
@@ -46,4 +44,4 @@ units:
 - learn.secure-and-isolate-with-nsg-and-service-endpoints.6-summary
 badge:
   uid: learn.secure-and-isolate-with-nsg-and-service-endpoints.badge
-
+

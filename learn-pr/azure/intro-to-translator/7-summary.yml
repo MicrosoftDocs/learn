@@ -2,13 +2,12 @@
 uid: learn.azure.intro-to-translator.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   author: laujan
   ms.author: lajanuar
-  ms.date: 02/06/2024
+  ms.date: 06/27/2025
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot

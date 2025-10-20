@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-language.exercise
+title: Exercise - Explore a natural language processing scenario
+metadata:
+  title: Exercise - Explore a natural language processing scenario
+  description: Explore a natural language processing scenario.
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 08/29/2025
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4b-exercise.md)]
+

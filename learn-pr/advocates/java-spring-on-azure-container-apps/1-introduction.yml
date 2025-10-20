@@ -4,9 +4,8 @@ title: Introduction
 metadata:
   title: Introduction
   description: This unit introduces how to deploy a Spring Boot app to Azure Container Apps.
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: hangwan
+  author: hangwan97
+  ms.author: hangwan
   ms.date: 02/18/2025
   ms.topic: unit
   ms.custom:

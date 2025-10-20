@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.give-your-ai-agent-skills.configure-function-choices
+title: Configure function choices
+metadata:
+  title: Configure function choices
+  description: "Configure function choices"
+  ms.date: 05/27/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-configure-function-choices.md)]

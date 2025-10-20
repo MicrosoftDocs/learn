@@ -1,4 +1,4 @@
-In this exercise, you will examine the analytics features that Azure Pipelines provide.
+In this exercise, you examine the analytics features that Azure Pipelines provide.
 
 Irwin asked the Tailspin team on how they can release faster. Building an automated release pipeline is a great step toward releasing quickly and reliably. As you release more often and more rapidly, it's important to understand the health and history of your releases. Looking at health trends regularly can help you diagnose potential problems before they become critical.
 
@@ -46,7 +46,7 @@ You can filter the results to focus on a specific time period or on the overall 
 
 ## Explore your pipeline's analytics
 
-1. In Azure DevOps, select **Pipelines** and then select your pipeline.
+1. In Azure DevOps, select **Pipelines**, then select your pipeline.
 
 1. Select the **Analytics** tab.
 

@@ -2,13 +2,13 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
 ## Create a Function App
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MS Learn account.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your Microsoft Learn account.
 
 1. Select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, under **Categories**, select **Compute**, and in the *Search services and marketplace* search box, search for and select **Function App**. The **Function App** pane appears.
+1. In the left menu pane, under **Categories**, select **Compute**, and in the *Search services and marketplace* search box, search for and select **Function App**. The **Function App** pane appears. Select **Create**.
 
-1. Select **Create**. The **Create Function App** pane appears.
+1. Select **Consumption**, then select the **Select** button. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -17,27 +17,23 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
     | Setting  | Value  |
     |---|---|
-    | **Project Details** |
+    | **Project Details** | |
     | Subscription | Concierge Subscription  |
     | Resource Group | From the dropdown list, select the sandbox resource group, _<rgn>[sandbox resource group name]</rgn>_. |
-    | **Instance Details** |
+    | **Instance Details** | |
     | Function App Name | *\<your-functionapp-name\>* |
-    | Publish | Code |
+    | Operating System | Windows |
     | Runtime stack | Node.js |
     | Version | Accept default |
     | Region | Choose the nearest location to you that is also one of the allowed *Sandbox regions*. |
-    | **Operating system** |
-    | Operating System | Windows |
-    | **Hosting** |
-    | Hosting options and plans | Consumption (Serverless)  |
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **Next : Storage** to open the **Storage** tab. Enter the following values for each setting.
 
     | Setting  | Value  |
-    | --- | ---| 
-    | **Storage** |
+    | --- | ---|
+    | **Storage** | |
     | Storage account | (New), and accept the default name. |
 
 1. Select **Review + create**.
@@ -48,13 +44,15 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
 1. When your deployment is complete, select **Go to resource**. The **Overview** pane appears for your *Function App*.
 
-1. Under **Functions**, select **Create in Azure portal**. 
+1. Under **Functions** in the center pane, select **Create function** under **Create in Azure portal**.
 
 1. The **Create function** pane appears.
 
-1. Under **Select a template**, select **HTTP trigger**, and then select **Create**. The **HttpTrigger1** pane appears for your *Function*, displaying essentials for your new trigger.
+1. Under **Select a template**, select **HTTP trigger**, and then select **Next**.
 
-1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your *Function*, displaying the JavaScript file that was created from the template. It should look like the following code.
+1. Accept the default **Function name** and **Authorization level**. Select **Create**. The **HttpTrigger1** pane appears for your *Function*, displaying essentials for your new trigger.
+
+1. Select **Code + Test** at the top of the window. The **Code + Test** pane appears for your *Function*, displaying the JavaScript file that was created from the template. It should look like the following code.
 
     ```JavaScript
     module.exports = async function (context, req) {
@@ -104,13 +102,13 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
 1. In the top menu bar, select **Get function URL**.
 
-1. In the **Get function URL** dialog box, in the **Key** dropdown list, under **Function key**, select **default**. In the **URL** field,  select the **Copy to clipboard** icon. The URL will look something like this:
+1. In the **Get function URL** dialog box, select the **Copy to clipboard** icon in the **default (Function key)** field. The URL will look something like this:
 
     ```text
     https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ==
     ```
 
-1. Paste this URL into a browser, and at the end of URL, append the query string parameter: &name=*\<yourname\>*, for example &name=Dick and Jane.
+1. Paste this URL into a browser, and at the end of URL, append the query string parameter: &name=*\<yourname\>*; for example; **&name=Dick and Jane**.
 
 1. To run the request, press <kbd>Enter</kbd>. The response returned by the function appears in the browser. It will look something like this:
 

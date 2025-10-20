@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.azure-netapp-files-data-protection
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Understand data protection and resiliency in Azure NetApp Files   
   description: This module teaches you about data protection options in Azure NetApp Files to help you improve the resiliency of your data.       
@@ -44,4 +42,4 @@ units:
 - learn.azure.azure-netapp-files-data-protection.summary
 badge:
   uid: learn.azure.azure-netapp-files-data-protection.badge
-
+

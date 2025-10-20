@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-enterprise-security-in-hdinsight.implement-network-security
 title: Implement Network security
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement Network security
   description: "Implement Network security"
   ms.date: 04/07/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-implement-network-security.md)]
+  [!include[](includes/3-implement-network-security.md)]

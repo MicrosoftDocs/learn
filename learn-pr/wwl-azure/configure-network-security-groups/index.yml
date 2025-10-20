@@ -3,9 +3,9 @@ uid: learn.wwl.configure-network-security-groups
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Configure network security groups
+  title: Configure Network Security Groups
   description: "Learn how to implement network security groups, and ensure network security group rules are correctly applied."
-  ms.date: 02/12/2025
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module

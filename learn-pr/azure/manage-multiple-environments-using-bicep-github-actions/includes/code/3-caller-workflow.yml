@@ -1,6 +1,0 @@
-on: 
-  workflow_dispatch:
-
-jobs:
-  job:
-    uses: ./.github/workflows/script.yml

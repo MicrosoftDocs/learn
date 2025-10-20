@@ -2,8 +2,6 @@
 uid: learn.azure.secure-azure-arc-enabled-servers.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Learn about the security capabilities of Azure Arc-enabled servers.
   ms.date: 04/24/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
-
+

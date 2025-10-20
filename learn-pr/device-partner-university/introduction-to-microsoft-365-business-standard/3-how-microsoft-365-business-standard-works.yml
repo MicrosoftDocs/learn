@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-microsoft-365-business-standard.how-microsoft-365-business-standard-works
+title: How Microsoft 365 Business Standard works
+metadata:
+  title: How Microsoft 365 Business Standard Works
+  description: This content is part of the "Introduction to Microsoft 365 Business Standard" module.
+  ms.date: 09/16/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-how-microsoft-365-business-standard-works.md)]
+

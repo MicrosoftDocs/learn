@@ -2,8 +2,6 @@
 uid: learn.publish-manage-apis-with-azure-api-management.2-create-an-api-gateway
 title: Create an API gateway
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create an API gateway
   description: Create an API gateway
   ms.date: 12/05/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-create-an-api-gateway.md)]
-
+

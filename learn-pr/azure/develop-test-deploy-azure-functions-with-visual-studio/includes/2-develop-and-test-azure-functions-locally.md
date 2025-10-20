@@ -1,4 +1,4 @@
-Users can write, debug, and deploy an Azure Function from within the Azure portal. However, writing functions directly in a production, staging, or test environment might not be suitable. For example, writing automated unit tests for Azure Functions, or using on-demand deployment of Azure Functions to Function Apps in Azure. Usually, developers prefer to use a code editor and development tools rather than the environment provided by the Azure portal. Visual Studio enables you to develop and manage Azure Functions code using other code and services in a single project.
+Users can write, debug, and deploy an Azure Function from within the Azure portal. However, writing functions directly in a production, staging, or test environment might not be suitable. For example, writing automated unit tests for Azure Functions, or using on-demand deployment of Azure Functions to Function Apps in Azure. Usually, developers prefer to use a code editor and development tools rather than the environment provided by the Azure portal. Visual Studio enables you to develop and manage Azure Functions code by using other code and services in a single project.
 
 In the online luxury watch scenario, developers are already familiar with Visual Studio 2022. So, you decide to use Visual Studio as the primary development environment for creating Azure Functions. Additionally, Visual Studio provides an excellent environment for testing your functions locally before deploying them to Azure.
 
@@ -36,7 +36,7 @@ A function app hosts one or more functions. It provides the environment and runt
 A function is triggered by an event rather than being called directly from an app. You specify the type of event that triggers each function in your Azure Function App. The events available include:
 
 - **Blob trigger**. This type of function runs when a file is uploaded or modified in Azure Blob storage.
-- **Event Hub trigger**. An Event Hubs trigger runs the function when an event hub receives a message.
+- **Event Hub trigger**. This trigger runs the function when an event hub receives a message.
 - **Azure Cosmos DB trigger**. This trigger runs when a document is added to, or modified in an Azure Cosmos DB database. You can use this trigger to integrate Azure Cosmos DB with other services. For example, if a document representing a customer's order is added to a database, you could use a trigger to send a copy of the order to a queue for processing.
 - **Http trigger**. An HTTP trigger runs the function when an HTTP request occurs in a web app. You can also use this trigger to respond to webhooks. A webhook is a callback that occurs when an item hosted by a website is modified. For example, you can create a function triggered by a webhook from a GitHub repository when an item in the repository changes.
 - **Queue trigger**. This trigger starts the function when a new item is added to an Azure Storage Queue.
@@ -109,7 +109,7 @@ public static class Function2
 }
 ```
 
-In all cases, a function is passed an *ILogger* parameter. The function can use this parameter to write log messages, which the function app writes to storage for later analysis.
+In all cases, a function is passed an `ILogger` parameter. The function can use this parameter to write log messages, which the function app writes to storage for later analysis.
 
 A function also contains metadata that specifies the type of the trigger, security requirements, and any other specific information requirements. You can modify metadata using the *HttpTrigger*, *BlobTrigger*, or other trigger attributes, as shown in the examples. The *FunctionName* attribute that precedes a function is an identifier for the function used by the Function App. This name doesn't have to be the same as the name of the function, but it's good practice to keep them synchronized to avoid confusion.
 

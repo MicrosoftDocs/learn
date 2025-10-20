@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-knowledge-mining.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 05/16/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
+

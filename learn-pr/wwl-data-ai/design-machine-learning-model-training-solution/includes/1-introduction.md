@@ -1,6 +1,6 @@
 Thoughtfully designed machine learning solutions form the foundation of today's AI applications. From predictive analytics to personalized recommendations and beyond, machine learning solutions support the latest technological advances in society by using existing data to produce new insights. 
 
-As a data scientist, you can make decisions to tackle machine learning problems in different ways. The decisions you make affect the cost, speed, quality, and longevity of the solution.
+Data scientists make decisions to tackle machine learning problems in different ways. The decisions they make affect the cost, speed, quality, and longevity of the solution.
 
 In this module, you learn how to design an end-to-end machine learning solution with Microsoft Azure that can be used in an enterprise setting. Using the following six steps as a framework, we explore how to plan, train, deploy, and monitor machine learning solutions.
 
@@ -15,3 +15,5 @@ In this module, you learn how to design an end-to-end machine learning solution 
 
 > [!Note]
 > The diagram is a simplified representation of the machine learning process. Typically, the process is iterative and continuous. For example, when monitoring the model you may decide to go back and retrain the model.
+
+Next, let's look at how we can get started on a machine learning solution by defining the problem.

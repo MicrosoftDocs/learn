@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-validate-permissions.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check."
   ms.date: 1/25/2023
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
 quiz:
@@ -46,4 +45,4 @@ quiz:
       explanation: "Incorrect. It doesn't prevent unauthorized access to pipeline data or ensures that only authorized users can change pipelines."
     - content: "Allow anyone to access pipeline data without permission to delete it."
       isCorrect: false
-      explanation: "Incorrect. It doesn't prevent unauthorized access to pipeline data or ensures that only authorized users can change pipelines."
+      explanation: "Incorrect. It doesn't prevent unauthorized access to pipeline data or ensures that only authorized users can change pipelines."

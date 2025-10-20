@@ -2,12 +2,10 @@
 uid: learn.communication-services-voice-calling-webapp.exercise-calling-code
 title: Exercise - Add Voice Calling code
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Add Voice Calling code
   description: Adding code to provide voice calling with Azure Communication Services.
-  author: rmcmurray
-  ms.author: robmcm
+  author: sloanster
+  ms.author: micahvivion
   ms.date: 07/26/2024
   ms.topic: unit
 durationInMinutes: 3

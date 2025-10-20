@@ -4,8 +4,8 @@ title: Flow control
 metadata:
   title: Flow control
   description: This unit teaches you the various constructs that you can use to express conditional logic.
-  author: softchris
-  ms.author: chnoring
+  author: sdwheeler
+  ms.author: sewhee
   ms.date: 02/04/2021
   ms.topic: unit
   ms.custom: team=nextgen

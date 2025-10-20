@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-fabric-activator.configure-activator
+title: Configure Activator for your data
+metadata:
+  title: Configure Activator for your data
+  description: Configure Activator for your data
+  ms.date: 09/12/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-configure-activator.md)]

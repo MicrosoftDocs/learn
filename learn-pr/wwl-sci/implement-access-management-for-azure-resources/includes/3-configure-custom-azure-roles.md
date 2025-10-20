@@ -2,15 +2,14 @@ If the Azure built-in roles don't meet the specific needs of your organization, 
 
 ### Create the custom role from the user interface
 
-:::image type="content" source="../media/new-custom-role-9290de44-312b4a00.png" alt-text="Screenshot of the Microsoft Entra ID screen with a new custom role dialog. Select the attributes you want to role to have.":::
-
+:::image type="content" source="../media/new-custom-role.png" alt-text="Screenshot of the Microsoft Entra ID screen with a new custom role dialog. Select the attributes you want to role to have.":::
 
 You would assign a custom role to a user, group, or other resource the same as you do for built-in. Your admin gets to control exactly with capabilities the custom role has access to. The principle of least privilege let's you pick just the capabilities you need. To create the custom role:
 
-1.  Open Microsoft Entra admin center.
-2.  From the **Identity** menu, Select **Roles and administration**.
-3.  Select **+ New custom role**.
-4.  Then name and assign the capabilities needed.
+1. Open Microsoft Entra admin center.
+2. From the **Identity** menu, Select **Roles and administration**.
+3. Select **+ New custom role**.
+4. Then name and assign the capabilities needed.
 
 ### Create a custom role from a JSON template
 

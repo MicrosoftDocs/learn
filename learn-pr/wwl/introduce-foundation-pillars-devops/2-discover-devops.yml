@@ -2,8 +2,6 @@
 uid: learn.wwl.introduce-foundation-pillars-devops.discover-devops
 title: Discover DevOps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Discover DevOps
   description: "Discover DevOps"
   ms.date: 09/20/2020
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-discover-devops.md)]
+  [!include[](includes/2-discover-devops.md)]

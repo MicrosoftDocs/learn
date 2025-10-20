@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Use pages, routing, and layouts to improve Blazor navigation
   description: Learn how to optimize your app's navigation, use parameters from the URL, and create reusable layouts in a Blazor web app.
-  ms.date: 11/15/2024
+  ms.date: 07/17/2025
   author: csharpfritz
   ms.author: jefritz
   manager: coxford
