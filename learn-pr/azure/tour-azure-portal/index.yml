@@ -34,7 +34,6 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.tour-azure-portal-features.3-navigate-the-portal
 - learn.tour-azure-portal-features.4-exercise-work-with-blades
 - learn.tour-azure-portal-features.5-exercise-navigate-the-portal
 - learn.tour-azure-portal-features.6-customize-the-dashboard
