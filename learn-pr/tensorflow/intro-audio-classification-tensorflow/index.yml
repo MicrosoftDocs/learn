@@ -4,8 +4,8 @@ metadata:
   title: Introduction to audio classification with TensorFlow
   description: Learn how to do audio classification with TensorFlow.
   ms.date: 08/03/2021
-  author: cassiebreviu
-  ms.author: chnoring
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=nextgen
 title: Introduction to audio classification with TensorFlow
