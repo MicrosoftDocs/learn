@@ -10,6 +10,8 @@ There's also an evaluation order that reveals how the input is analyzed for vali
 
 Finally, you learned about filtering and formatting. The _filtering left_ concept is important because it dictates that you should filter as close to the data source as possible. That is, it should be input as far left, or early, in the statement as possible. This placement is especially important when you work on large data stores and you need data to be returned over the network. _Formatting right_ means that any output formatting should be placed as far to the right, or late, in the statement as possible.
 
+[!INCLUDE [](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
+
 ## Additional resources
 
 - [About pipelines](/powershell/module/microsoft.powershell.core/about/about_pipelines?preserve-view=true&view=powershell-7.1&WT.mc_id=academic-16634-chnoring)

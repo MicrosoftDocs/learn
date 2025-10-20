@@ -1,6 +1,8 @@
-In this unit, you use the Azure Cloud Shell on the right-hand side as your Linux terminal. You can access Cloud Shell through the Azure portal or the [Cloud Shell sign-in](https://shell.azure.com). You don't have to install anything on your PC or laptop to use it.
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
 
 Here, you run commands that help you learn more about PowerShell. PowerShell isn't something you learn overnight; it's learned command by command. You can speed up your learning by effectively using the core cmdlets.
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
 
 ## Locate a command
 
