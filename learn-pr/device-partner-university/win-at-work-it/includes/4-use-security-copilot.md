@@ -19,7 +19,7 @@ Before opening Security Copilot, ensure you have the relevant information availa
 - Appropriate permissions (typically *Security Administrator* or *Global Administrator*).
 
 > [!TIP]
-> Security compute units are the required units of resources that are needed for dependable and consistent performance of Microsoft Security Copilot. [Learn more](https://learn.microsoft.com/copilot/security/get-started-security-copilot#security-compute-units).
+> Security compute units are the required units of resources that are needed for dependable and consistent performance of Microsoft Security Copilot. [Learn more](/copilot/security/get-started-security-copilot#security-compute-units).
 
 ## Step 2: Prepare the workspace
 
