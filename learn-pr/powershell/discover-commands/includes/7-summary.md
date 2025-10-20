@@ -4,6 +4,8 @@ You also looked at inspecting what a command returns. PowerShell commands return
 
 You'll learn how to use object type information in later modules that look at pipelines and combining multiple commands in a single command.
 
+[!INCLUDE [](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
+
 ## Resources
 
 - [Core cmdlets and using the help system](/powershell/scripting/learn/ps101/02-help-system?preserve-view=true&view=powershell-7.1&WT.mc_id=academic-16634-chnoring)
