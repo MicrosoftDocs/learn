@@ -16,7 +16,8 @@ abstract: |
   - Compile a checklist for creating a virtual machine
   - Describe the options to create and manage virtual machines
   - Describe the additional services available to administer virtual machines
-prerequisites: None
+prerequisites: |
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
 iconUrl: /training/achievements/intro-to-azure-virtual-machines.svg
 levels:
 - beginner
