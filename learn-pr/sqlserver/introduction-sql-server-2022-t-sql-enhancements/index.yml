@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.introduction-sql-server-2022-t-sql-enhancements
 metadata:
-  title: What's new in T-SQL for SQL Server 2025
+  title: Transform development workflows with T-SQL in SQL Server 2025
   description: "Explore the new T-SQL enhancements in SQL Server 2025, including AI integration, pattern matching, JSON aggregation, and more."
   ms.date: 10/14/2025
   author: MScalopez
