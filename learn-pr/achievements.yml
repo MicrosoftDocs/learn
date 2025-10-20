@@ -7175,3 +7175,8 @@ achievements:
   title: Automate the deployment of JSON ARM templates by using GitHub Actions
   summary: Learn how to deploy JSON Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and GitHub Actions. Use linked templates to break down complex templates into templates that are more modular.
   iconUrl: /training/achievements/deploy-templates-command-line-github-actions.svg
+- uid: learn.tour-azure-portal-features.badge
+  type: badge
+  title: Manage services with the Azure portal
+  summary: Explore the Azure portal features and services, and customize your portal.
+  iconUrl: /training/achievements/tour-azure-portal-features.svg
