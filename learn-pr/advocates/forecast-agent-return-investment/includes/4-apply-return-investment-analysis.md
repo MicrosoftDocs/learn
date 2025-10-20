@@ -66,4 +66,4 @@ This helps illustrate how risk and uncertainty can affect the outcome, and why i
 
 ### Step 4: Interpret the Results
 
-Use case 2 shows non-negative financial outcome (NPV) even in a conservative scenario. To achieve a possitive financial outcome given a development cost of \$90,000, use case 2 will need to generate at least \$200,000 in benefits over 5 years.
+Use case 2 shows non-negative financial outcome (NPV) even in a conservative scenario. To achieve a possitive financial outcome given a development cost of 90,000 dollars, use case 2 will need to generate at least 200,000 dollars in benefits over 5 years.
