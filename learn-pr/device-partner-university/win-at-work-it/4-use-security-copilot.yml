@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-at-work-elevate-it-teams-with-windows-11-pro.use-security-copilot
+title: Use security Copilot
+metadata:
+  title: Use Security Copilot
+  description: 'This content is part of the "Windows at work: Elevate IT teams with Windows 11 Pro" module.'
+  ms.date: 10/20/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-use-security-copilot.md)]
