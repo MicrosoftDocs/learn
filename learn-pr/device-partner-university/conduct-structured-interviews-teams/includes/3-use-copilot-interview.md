@@ -1,8 +1,6 @@
-Copilot in Teams is an AI-powered meeting assistant designed to help you focus on conversation instead of documentation.  
-During a Teams meeting, Copilot uses the meeting transcript, chat, and contextual signals to identify key themes, decisions, and action items—then summarizes them in clear, natural language.  
+Copilot in Microsoft Teams is an AI-powered meeting assistant designed to help you focus on conversation instead of documentation. During a Teams meeting, Copilot uses the meeting transcript, chat, and contextual signals to identify key themes, decisions, and action items—then summarizes them in clear, natural language.  
 
-For HR professionals, this means less manual typing and more meaningful engagement with candidates.  
-Instead of scrambling to capture every response, you can concentrate on evaluating soft skills, tone, and culture fit while Copilot tracks what’s is being said and who said it.
+For HR professionals, this means less manual typing and more meaningful engagement with candidates. Instead of scrambling to capture every response, you can concentrate on evaluating soft skills, tone, and culture fit while Copilot tracks what’s is being said and who said it.
 
 Copilot integrates directly into the Teams meeting window. Once transcription is enabled, you can open Copilot through the **meeting toolbar** to start asking real-time questions such as:
 
