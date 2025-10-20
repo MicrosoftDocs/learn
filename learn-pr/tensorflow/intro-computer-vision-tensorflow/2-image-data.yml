@@ -22,7 +22,7 @@ quiz:
     choices:
     - content: "32x32 tensor of floats in the range 0..1"
       isCorrect: false
-      explanation: "Do not forget to take into account that the image has color"
+      explanation: "Don't forget to take into account that the image has color"
     - content: "32x32x3 tensor of floats in the range 0..1"
       isCorrect: true
       explanation: "Correct. We have 3 color channels, and each channel is normalized to the range of 0..1"

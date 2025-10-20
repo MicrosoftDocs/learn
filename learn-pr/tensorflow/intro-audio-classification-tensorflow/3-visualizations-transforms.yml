@@ -20,12 +20,12 @@ notebook: notebooks/3-visualizations-transforms.ipynb
 quiz:
   title: Check your knowledge
   questions:
-    - content: "When you resample the audio you are..."
+    - content: "When you resample the audio, you are..."
       choices:
-        - content: "increasing the size."
+        - content: "Increasing the size."
           isCorrect: false
           explanation: "Incorrect."
-        - content: "reducing the size."
+        - content: "Reducing the size."
           isCorrect: true
           explanation: "Correct! We can reduce the size of the file by reducing the sample rate for the audio track."
     - content: "What is a spectrogram?"
@@ -43,7 +43,7 @@ quiz:
       choices:
         - content: "True"
           isCorrect: False
-          explanation: "Incorrect. There is more than one way to build audio classification models."
+          explanation: "Incorrect. There's more than one way to build audio classification models."
         - content: "False"
           isCorrect: True
-          explanation: "Correct! There is more than one way to build audio classification models."
+          explanation: "Correct! There's more than one way to build audio classification models."

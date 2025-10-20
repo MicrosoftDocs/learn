@@ -3,7 +3,7 @@ uid: learn.tensorflow.intro-computer-vision.transfer-learning
 title: Pretrained models and transfer learning
 metadata:
   title: Pretrained models and transfer learning
-  description: Learn how to use models pre-trained on large datasets, and how to train our own models using them.
+  description: Learn how to use models pretrained on large datasets, and how to train our own models using them.
   author: Orin-Thomas
   ms.author: orthomas
   ms.date: 07/07/2021
@@ -18,19 +18,19 @@ notebook: notebooks/6-transfer-learning.ipynb
 quiz:
   title: Check your knowledge
   questions:
-    - content: "For transfer learning, we are using a VGG-16 network pre-trained on 1000 classes. What is the number of classes we can have in our network?"
+    - content: "For transfer learning, we're using a VGG-16 network pretrained on 1000 classes. What is the number of classes we can have in our network?"
       choices:
         - content: "Any"
           isCorrect: true
-          explanation: "Number of classes in pre-trained network is not important since we are training our own final classifier"
+          explanation: "Number of classes in pretrained network isn't important since we're training our own final classifier"
         - content: "1000"
           isCorrect: false
-          explanation: "Number of classes in pre-trained network is not important since we are training our own final classifier"
+          explanation: "Number of classes in pretrained network isn't important since we're training our own final classifier"
         - content: "2"
           isCorrect: false
-          explanation: "Number of classes in pre-trained network is not important since we are training our own final classifier"
-        - content: "less than 1000"
+          explanation: "Number of classes in pretrained network isn't important since we're training our own final classifier"
+        - content: "Less than 1000"
           isCorrect: false
-          explanation: "Number of classes in pre-trained network is not important since we are training our own final classifier"
+          explanation: "Number of classes in pretrained network isn't important since we're training our own final classifier"
 
 

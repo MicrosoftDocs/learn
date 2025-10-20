@@ -3,7 +3,7 @@ uid: learn.tensorflow.intro-natural-language-processing.representing-text
 title: Representing text as Tensors
 metadata:
   title: Representing text as Tensors
-  description: In this unit, we will discuss different ways text can be represented as tensors and solve a simple text classification problem.
+  description: In this unit, we discuss different ways text can be represented as tensors and solve a simple text classification problem.
   author: Orin-Thomas
   ms.author: orthomas
   ms.date: 07/07/2021
