@@ -59,7 +59,7 @@ Now that you've seen how to use lineage for a table, let's explore the full rang
 | Columns | Transformations and column-level dependencies (available in detailed view) |
 | Notebooks and workflows | Which notebooks or jobs read from or write to tables |
 | Dashboards and reports | Dependencies between tables and Power BI or Databricks dashboards |
-| External data sources | Tables imported through Lakehouse Federation |
+| External data sources | Data connections from systems outside Azure Databricks |
 | Machine learning models | Training data sources used by models |
 
 Lineage is captured automatically as you query, transform, and visualize data. You don't have to manually document these relationships.
