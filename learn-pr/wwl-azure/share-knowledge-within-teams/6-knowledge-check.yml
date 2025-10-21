@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.share-knowledge-within-teams.knowledge-check
-title: Module assessment
+title: Module Assessment
 metadata:
-  title: Module assessment
-  description: "Knowledge check"
-  ms.date: 05/24/2024
-  author: wwlpublish
+  title: Module Assessment
+  description: "Test your knowledge of sharing knowledge within teams, Azure DevOps Wikis, Markdown documentation, Mermaid diagrams, and Microsoft Teams integration with GitHub and Azure DevOps for effective collaboration and knowledge preservation."
+  ms.date: 10/21/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   module_assessment: true
@@ -15,36 +15,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following choices is the minimum permission or group to add or edit Wiki pages?"
-    choices:
-    - content: "Project Administrator."
-      isCorrect: false
-      explanation: "Incorrect. To add or edit wiki pages, you should be a member of the Contributors group."
-    - content: "Contributors."
-      isCorrect: true
-      explanation: "Correct. To add or edit wiki pages, you should be a member of the Contributors group."
-    - content: "Stakeholders."
-      isCorrect: false
-      explanation: "Incorrect. To add or edit wiki pages, you should be a member of the Contributors group."
-  - content: "Which of the following choices is a functionality that allows you to easily create work items in Azure DevOps that have relevant Application Insights data embedded?"
-    choices:
-    - content: "Work item integration."
-      isCorrect: true
-      explanation: "Correct. Work item integration functionality allows you to easily create work items in Azure DevOps that have relevant Application Insights data embedded in them."
-    - content: "Azure DevOps Wiki."
-      isCorrect: false
-      explanation: "Incorrect. Work item integration functionality allows you to easily create work items in Azure DevOps that have relevant Application Insights data embedded in them."
-    - content: "App Stream."
-      isCorrect: false
-      explanation: "Incorrect. Work item integration functionality allows you to easily create work items in Azure DevOps that have relevant Application Insights data embedded in them."
-  - content: "Which of the following commands can you perform with the Azure Pipelines with Microsoft Teams integration?"
-    choices:
-    - content: "Subscribe."
-      isCorrect: true
-      explanation: "Correct. You can run the @azure pipelines subscribe [pipeline url] command to subscribe to an Azure Pipeline. Create and Unlink only works with the Azure Boards integration."
-    - content: "Create."
-      isCorrect: false
-      explanation: "Incorrect. You can use Create with the Azure Boards integration to create a work item."
-    - content: "Unlink."
-      isCorrect: false
-      explanation: "Incorrect. You can use Unlink with the Azure Boards integration to unlink a project from the channel."
+    - content: "Which of the following choices is the minimum permission or group to add or edit Wiki pages?"
+      choices:
+        - content: "Project Administrator."
+          isCorrect: false
+          explanation: "Incorrect. To add or edit wiki pages, you should be a member of the Contributors group."
+        - content: "Contributors."
+          isCorrect: true
+          explanation: "Correct. To add or edit wiki pages, you should be a member of the Contributors group."
+        - content: "Stakeholders."
+          isCorrect: false
+          explanation: "Incorrect. To add or edit wiki pages, you should be a member of the Contributors group."
+    - content: "Which of the following choices is a functionality that allows you to easily create work items in Azure DevOps that have relevant Application Insights data embedded?"
+      choices:
+        - content: "Work item integration."
+          isCorrect: true
+          explanation: "Correct. Work item integration functionality allows you to easily create work items in Azure DevOps that have relevant Application Insights data embedded in them."
+        - content: "Azure DevOps Wiki."
+          isCorrect: false
+          explanation: "Incorrect. Work item integration functionality allows you to easily create work items in Azure DevOps that have relevant Application Insights data embedded in them."
+        - content: "App Stream."
+          isCorrect: false
+          explanation: "Incorrect. Work item integration functionality allows you to easily create work items in Azure DevOps that have relevant Application Insights data embedded in them."
+    - content: "Which of the following commands can you perform with the Azure Pipelines with Microsoft Teams integration?"
+      choices:
+        - content: "Subscribe."
+          isCorrect: true
+          explanation: "Correct. You can run the @azure pipelines subscribe [pipeline url] command to subscribe to an Azure Pipeline. Create and Unlink only works with the Azure Boards integration."
+        - content: "Create."
+          isCorrect: false
+          explanation: "Incorrect. You can use Create with the Azure Boards integration to create a work item."
+        - content: "Unlink."
+          isCorrect: false
+          explanation: "Incorrect. You can use Unlink with the Azure Boards integration to unlink a project from the channel."
