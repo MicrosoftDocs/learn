@@ -120,4 +120,4 @@ To create a queue in your storage account:
 
     ![Screenshot that shows the content and details of the new myblob blob container.](../media/3-storage-explorer-create-queue-view.png)
 
-    From this view, you can manage the queue's content. If our application used this queue and experienced an issue with processing a message, you could connect to the queue and view the message contents to determine the issue.
+    From this view, you can manage the queue's content. If your application used this queue and experienced an issue with processing a message, you could connect to the queue and view the message contents to determine the issue.
