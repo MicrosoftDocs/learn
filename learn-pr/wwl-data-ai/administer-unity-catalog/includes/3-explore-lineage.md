@@ -1,4 +1,4 @@
-As your data platform grows, it becomes harder to keep track of where data comes from and what depends on it. Unity Catalog in Azure Databricks automatically captures data lineage — the flow of data across tables, views, notebooks, and pipelines.  
+As your data platform grows, it becomes harder to keep track of where data comes from and what depends on it. Unity Catalog in Azure Databricks automatically captures data lineage—the flow of data across tables, views, notebooks, and pipelines.  
 
 Lineage helps you answer key governance questions such as:
 
@@ -6,9 +6,9 @@ Lineage helps you answer key governance questions such as:
 - Which reports or models depend on it?
 - What will break if I change this table?
 
-In this unit, you'll explore how to view lineage in Unity Catalog, understand what metadata it captures, and use lineage insights to plan safe changes to your data environment.
+In this unit, you explore how to view lineage in Unity Catalog, understand what metadata it captures, and use lineage insights to plan safe changes to your data environment.
 
-## View and use lineage for impact analysis
+## View and use lineage for change analysis
 
 Unity Catalog automatically tracks relationships between data assets. Let's walk through a practical scenario using the lineage graph to understand dependencies and plan safe changes.
 

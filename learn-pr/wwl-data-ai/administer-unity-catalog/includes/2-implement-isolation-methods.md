@@ -1,6 +1,6 @@
 As your Databricks platform grows, different teams, regions, or projects often need their own administrative boundaries, compute environments, and storage locations. Isolation in Unity Catalog provides the flexibility to meet these requirements while maintaining consistent governance.
 
-In this unit, you’ll learn how Unity Catalog enforces isolation at the administrative, workspace, and storage levels, and how to combine these layers for effective delegation and control.
+In this unit, you learn how Unity Catalog enforces isolation at the administrative, workspace, and storage levels, and how to combine these layers for effective delegation and control.
 
 ## Administrative roles and isolation boundaries
 
@@ -15,7 +15,7 @@ Administrative isolation ensures that no single person or workspace has unrestri
 
 ## Explore isolation boundary types
 
-Unity Catalog implements these isolation controls through three key boundaries, each shown in a different section of the following diagram.
+Unity Catalog implements isolation controls through three key boundaries, each shown in a different section of the following diagram.
 
 :::image type="content" source="../media/isolation-features.png" alt-text="Diagram showing Unity Catalog isolation features including administrative roles, workspace boundaries, and storage locations." lightbox="../media/isolation-features.png":::
 
@@ -33,10 +33,10 @@ Workspace-to-catalog binding **controls where data is used** by restricting cata
 
 **To implement workspace-to-catalog binding:**
 
-1. In the Databricks workspace, click **Catalog**.
+1. In the Databricks workspace, select **Catalog**.
 2. In the **Catalog** pane, select the catalog you want to bind.
 3. On the **Workspaces** tab, clear the **All workspaces have access** checkbox.
-4. Click **Assign to workspaces** and select the specific workspaces that should have access.
+4. Select **Assign to workspaces** and select the specific workspaces that should have access.
 
 ### 3. Storage isolation
 
