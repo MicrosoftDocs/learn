@@ -35,7 +35,7 @@ The Azure Import/Export service is ideal for uploading and downloading large amo
 
 [Azure Data Box](/azure/databox/) provides a quick, reliable, and inexpensive method for moving large volumes of data to Azure. By using Data Box, you can send terabytes of data into and out of Azure. The solution is based on a secure storage device shipped to your organization. Your Data Box can include various devices, such as disks, ruggedized server chassis, or mobile disks. 
 
-Azure offers several products to fit different scenarios: [Data Box](/azure/databox/data-box-overview), [Data Box Disk](/azure/databox/data-box-disk-overview), and [Data Box Heavy](/azure/databox/data-box-heavy-overview). The configuration process is basically the same across all the products. 
+Azure offers several products to fit different scenarios. The configuration process is basically the same across all the products. 
 
 After you receive your storage device, you can quickly set it up by using the local web-based management interface. If you're exporting data to Azure, copy the required data to the storage device, and then return it to Azure.
 
