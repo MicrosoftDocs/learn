@@ -6,6 +6,10 @@ The typical workflow for apps that use Azure Blob storage is as follows:
 
 1. **Use**: To operate on containers and blobs, make API calls by using the client library.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
+
 ## Configure your connection string
 
 Before you run your app, get the connection string for the storage account you use. You can use any Azure management interface to get it, including the Azure portal, the Azure CLI, and Azure PowerShell. When you set up the web app to run your code near the end of this module, use the Azure CLI to get the connection string for the storage account that you created earlier.
