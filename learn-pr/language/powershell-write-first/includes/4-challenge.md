@@ -1,5 +1,7 @@
 Code challenges throughout these modules reinforce your learning, and help you gain confidence before you move on to the next lesson.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ### Step 1: Close any open files in the Cloud Shell code editor
 
 To close any open files in the Azure Cloud Shell code editor, use the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>Q</kbd> in Windows (or <kbd>⌘</kbd>+<kbd>Q</kbd> on macOS).
