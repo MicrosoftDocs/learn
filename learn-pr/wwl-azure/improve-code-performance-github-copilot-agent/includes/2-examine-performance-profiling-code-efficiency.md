@@ -79,7 +79,7 @@ Write your code clearly and efficiently during initial development. Don't premat
 
 ### Code testing and profiling phase
 
-When your code or feature is functional, measure its performance. Establish a baseline (how fast is it? how much memory does it use?). If it meets your goals (for example, a report generates in under 2 seconds, or usage stays under 1 GB of memory), great. If not, use profiling to investigate.
+When your code or feature is functional, measure its performance. Establish a baseline (how fast is it? How much memory does it use?) If it meets your goals (for example, a report generates in under 2 seconds, or usage stays under 1 GB of memory), great. If not, use profiling to investigate.
 
 ### Optimization and iteration
 
