@@ -19,6 +19,9 @@ abstract: |
 prerequisites: |
   - Experience with the Azure portal
   - Familiarity with the Azure data services Blobs, Files, Queues, and Tables
+
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 iconUrl: /training/achievements/create-azure-storage-account.svg
 levels: 
 - beginner
