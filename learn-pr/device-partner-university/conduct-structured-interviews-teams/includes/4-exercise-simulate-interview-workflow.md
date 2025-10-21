@@ -39,7 +39,7 @@ You're preparing to interview a candidate for a marketing analyst role. You use 
 
    1. On the left side of the Meeting options menu go to the **Recording & transcription** tab and toggle on record and transcribe automatically.
 
-      :::image type="content" border="true" source="../media/meeting-options-1.png" alt-text="Screenshot showing the same meeting options icon in Microsoft Teams event window." lightbox="../media/meeting-options-1-expanded.png":::
+      :::image type="content" border="true" source="../media/meeting-options-1.png" alt-text="Screenshot showing meeting options Recording & transcription in Microsoft Teams event window." lightbox="../media/meeting-options-1-expanded.png":::
    
    1. Next on the Meeting options menus click the **Copilot and other AI** tab. Ensure it's set to *During and after the meeting* (requires transcription).
    
