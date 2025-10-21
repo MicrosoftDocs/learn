@@ -5,8 +5,8 @@ metadata:
   title: Challenge
   description: Use what you just learned about PowerShell to print messages to output.
   ms.date: 10/07/2024
-  author: michaeltlombardi
-  ms.author: mlombardi
+  author: sdwheeler
+  ms.author: sewhee
   ms.topic: unit
   ms.custom:
 durationInMinutes: 3
