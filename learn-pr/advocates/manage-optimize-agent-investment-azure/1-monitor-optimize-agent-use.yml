@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.manage-optimize-agent-investment-azur.monitor-optimize-agent-use
+uid: learn.manage-optimize-agent-investment-azure.monitor-optimize-agent-use
 title: Monitor and analyze AI Agent usage and performance
 metadata:
   title: Monitor and Analyze AI Agent Usage and Performance
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 12
 content: |
-  [!include[](includes/2-monitor-optimize-agent-use.md)]
+  [!include[](includes/1-monitor-optimize-agent-use.md)]
