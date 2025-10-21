@@ -21,7 +21,7 @@ prerequisites: |
   - Basic understanding of data lakehouse concepts
   - Familiarity with Azure Databricks workspace navigation
   - Introductory knowledge of SQL
-iconUrl: /training/achievements/data-ai-cert/unity-catalog-fundamentals.svg
+iconUrl: /training/achievements/generic-badge.svg 
 levels:
 - intermediate
 roles:
