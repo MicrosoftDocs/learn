@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.reduce-meaningless-non-actionable-alerts
-title: Reduce meaningless and non-actionable alerts
+title: Reduce Meaningless and Non-actionable Alerts
 metadata:
-  title: Reduce meaningless and non-actionable alerts
-  description: "Reduce meaningless and non-actionable alerts"
-  ms.date: 05/08/2024
-  author: wwlpublish
+  title: Reduce Meaningless and Non-actionable Alerts
+  description: "Learn principles for creating actionable alerts that are urgent, important, and real. Understand the difference between alerting on symptoms versus causes, properly classify problems, and manage different urgency levels to prevent alert fatigue."
+  ms.date: 10/21/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
-durationInMinutes: 2
+    - N/A
+durationInMinutes: 6
 content: |
-  [!include[](includes/7-reduce-meaningless-non-actionable-alerts.md)]
+  [!include[](includes/7-reduce-meaningless-non-actionable-alerts.md)]
