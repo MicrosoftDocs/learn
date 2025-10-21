@@ -1,5 +1,7 @@
 To help you understand how code works, we need to talk about what a *program* is. We also need to explain what a *programming language* is, and how that language communicates commands to your computer.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## What is a program?
 
 A program is a set of instructions that complete computing tasks. The instructions are compiled into a format the computer can understand and then run by a *user*. A *user* can be a person or another program. The computer executes the instructions in order, one line at a time, until there are no more lines to execute or the program is explicitly told to stop.
