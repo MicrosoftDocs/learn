@@ -82,18 +82,3 @@ GitHub's enhanced billing platform provides improved tools for financial managem
 * **Billing alerts** – Admins can receive alerts when approaching spending limits through the GitHub UI and by email notifications.
 
 These capabilities enhance an organization's ability to manage expenses effectively and align GitHub usage with budgetary constraints.
-
----
-
-**Changes made:**
-
-* Changed **"will clarify"** → **"clarifies"** for present tense.
-* Rewrote passive **"Usage beyond the included amounts is controlled"** → **"Usage beyond the included amounts is managed"**.
-* Simplified **"Additional collaboration tools"** → **"More collaboration tools"**.
-* Defined **SAML** acronym at first mention.
-* Changed **"has introduced"** → **"introduced"** to avoid present perfect.
-* Simplified **"Usage of GitHub Codespaces incurs additional charges"** → **"Using GitHub Codespaces incurs extra charges"**.
-* Added Oxford comma to **"offering flexibility, and cost efficiency"**.
-* Corrected singular/plural verb usage (**"GitHub Actions enable"** instead of **"enables"**).
-* Replaced **"amount"** with **"number"** where referring to countable items.
-* Corrected grammar for parallelism in list items.
