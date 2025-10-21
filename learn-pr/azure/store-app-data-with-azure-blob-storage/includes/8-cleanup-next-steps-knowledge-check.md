@@ -12,7 +12,7 @@ In this module, you learned how to use Azure Blob Storage to store web app data.
 
 1. You deployed the app to Azure App Service.
 
-## Further Reading
+## Further reading
 
 - [Index data from Azure Blob Storage](/azure/search/search-howto-indexing-azure-blob-storage)
 - [Naming and Referencing Containers, Blobs, and Metadata](/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata)
@@ -21,3 +21,4 @@ In this module, you learned how to use Azure Blob Storage to store web app data.
 - [Deploy and configure a Tomcat, JBoss, or Java SE app in Azure App Service](/azure/app-service/configure-language-java-deploy-run)
 
 [!include[](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
+
