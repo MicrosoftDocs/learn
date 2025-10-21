@@ -12,7 +12,7 @@ A well-structured interview space in Teams is:
 
 > [!NOTE]  
 > When scheduling an interview in Teams, organizers can choose between a **Meeting**—ideal for one-on-one or small-panel interviews—and a **Webinar**, which supports structured sessions with registration, multiple presenters, and audience controls.  
-> For more information, see [Schedule a webinar in Microsoft Teams](https://support.microsoft.com/en-us/office/schedule-a-webinar-10b2e2a2-c6e7-4905-9c2d-648e26c957ea).
+> For more information, see [Schedule a webinar in Microsoft Teams](https://support.microsoft.com/office/schedule-a-webinar-10b2e2a2-c6e7-4905-9c2d-648e26c957ea).
 
 ## Why setting up the interview space matters  
 

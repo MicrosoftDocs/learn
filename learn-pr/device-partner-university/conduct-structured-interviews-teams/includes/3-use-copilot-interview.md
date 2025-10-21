@@ -16,7 +16,7 @@ To use Copilot in Microsoft Teams meetings, you need:
 - Admin permissions to manage meeting settings.
 
 > [!IMPORTANT]
-> For details on Copilot availability and licensing, see [Microsoft’s FAQ on Copilot subscriptions](https://support.microsoft.com/en-us/office/frequently-asked-questions-about-copilot-in-microsoft-365-subscriptions-bda0d6e8-346d-41ce-ab1e-f6af6229c462).
+> For details on Copilot availability and licensing, see [Microsoft’s FAQ on Copilot subscriptions](https://support.microsoft.com/office/frequently-asked-questions-about-copilot-in-microsoft-365-subscriptions-bda0d6e8-346d-41ce-ab1e-f6af6229c462).
 
 ## How Copilot works behind the scenes  
 
@@ -34,7 +34,7 @@ You can continue interacting with Copilot afterward by prompting it with questio
 
 This workflow ensures your hiring team walks away with accurate, shareable notes that reflect the entire conversation—not just what someone managed to type manually.
 
-## Why use Copilot during the interview process  
+## Why use Copilot during the interview process?  
 
 The traditional interview process often relies on scattered notes or individual impressions. Copilot helps standardize and streamline that process.  
 
