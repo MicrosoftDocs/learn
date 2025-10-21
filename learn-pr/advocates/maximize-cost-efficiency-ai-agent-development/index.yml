@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.maximize-cost-efficiency-ai-agent-development
+metadata:
+  title: Maximize Cost Efficiency by Choosing the Right AI Agent Development Approach on Azure
+  description: "Evaluate when to develop custom AI agents tailored to your needs and when to deploy prebuilt solutions from trusted platforms. Learn how to assess trade-offs in time-to-value, complexity, customization, and operational cost. This module also guides you in selecting the right models for your AI agents, from lightweight task-specific agents to advanced multi-modal agents."
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: artificial-intelligence
+title: Maximize cost efficiency by choosing the right AI agent development approach on Azure
+summary: "In this module, you'll evaluate when to develop custom AI agents tailored to your needs and when to deploy prebuilt solutions from trusted platforms. Learn how to assess trade-offs in time-to-value, complexity, customization, and operational cost. This module also guides you in selecting the right models for your AI agents, from lightweight task-specific agents to advanced multi-modal agents."
+abstract: |
+  In this module, you'll evaluate when to develop custom AI agents tailored to your needs and when to deploy prebuilt solutions from trusted platforms. Learn how to assess trade-offs in time-to-value, complexity, customization, and operational cost. This module also guides you in selecting the right models for your AI agents, from lightweight
+  task-specific agents to advanced multi-modal agents.
+
+  By the end of this module, you are able to:
+
+  - Select the appropriate AI hosting platform.
+  - Build agents, your way.
+  - Understand the trade-offs between Copilot and Pro-Code.
+
+prerequisites: |
+  - "Basic understanding of AI and large language models (LLMs)"
+  - "Familiarity with cloud platforms and software lifecycle concepts"
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - developer
+products: 
+  - azure-ai-foundry
+  - ai-services
+  - azure-openai
+  - ms-copilot
+subjects: 
+  - artificial-intelligence
+units:
+- learn.maximize-cost-efficiency-ai-agent-development.select-ai-service-host-platform
+- learn.maximize-cost-efficiency-ai-agent-development.custom-built-ai-agents
+- learn.maximize-cost-efficiency-ai-agent-development.evaluate-trade-offs
+- learn.maximize-cost-efficiency-ai-agent-development.knowledge-check
+- learn.maximize-cost-efficiency-ai-agent-development.summary
+badge:
+  uid: learn.maximize-cost-efficiency-ai-agent-development.badge

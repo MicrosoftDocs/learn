@@ -5,12 +5,12 @@ metadata:
   title: Exercise - "Hello World!"
   description: Write your first PowerShell code to output a message to a console window.
   ms.date: 10/07/2024
-  author: michaeltlombardi
-  ms.author: mlombardi
+  author: sdwheeler
+  ms.author: sewhee
   ms.topic: unit
   ms.custom:
 durationInMinutes: 5
-azureSandbox: true
-interactive: powershell
+#azureSandbox: true
+#interactive: powershell
 content: |
   [!include[](includes/2-exercise-hello-world.md)]
