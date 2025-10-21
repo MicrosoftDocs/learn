@@ -58,8 +58,6 @@ Now that you've seen how to use lineage for a table, let's explore the full rang
 | Tables and views | Relationships created through SQL queries and Delta Live Tables |
 | Columns | Transformations and column-level dependencies (available in detailed view) |
 | Notebooks and workflows | Which notebooks or jobs read from or write to tables |
-| Dashboards and reports | Dependencies between tables and Power BI or Databricks dashboards |
-| External data sources | Data connections from systems outside Azure Databricks |
-| Machine learning models | Training data sources used by models |
+| Dashboards | Dependencies between tables and Databricks dashboards |
 
 Lineage is captured automatically as you query, transform, and visualize data. You don't have to manually document these relationships.
