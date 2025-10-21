@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-optimize-agent-investment-azure.budgeting
+title: Create budgets, quotas, and alerts
+metadata:
+  title: Create Budgets, Quotas, and Alerts
+  description: This unit delves into the process of setting up budgets, quotas, and alerts within Azure AI Foundry, empowering organizations to control spending, prevent cost overruns, and ensure that AI agent deployments remain financially sustainable. 
+  ms.date: 8/11/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-budgeting.md)]
