@@ -49,8 +49,6 @@ Based on this lineage, here's what adding a column to `customer_silver` affects:
 > [!NOTE]
 > Lineage is only available for Unity Catalog–managed tables. Legacy Hive metastore tables don't support lineage tracking.
 
----
-
 ## Understand what lineage captures
 
 Now that you've seen how to use lineage for a table, let's explore the full range of assets that Unity Catalog tracks automatically.
