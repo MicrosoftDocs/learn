@@ -25,7 +25,7 @@ quiz:
       explanation: "Incorrect. `VECTOR_SEARCH` is used for approximate nearest neighbor (ANN) search using DiskANN indexes, not exact k-NN search."
     - content: "`VECTOR_DISTANCE`"
       isCorrect: true
-      explanation: "Correct. `VECTOR_DISTANCE` calculates the distance between two vectors using a specified metric (cosine, euclidean, or dot product) and is used for exact k-NN search by comparing the query vector against all vectors in the dataset."
+      explanation: "Correct. `VECTOR_DISTANCE` calculates the distance between two vectors using a specified metric (cosine, Euclidean, or dot product) and is used for exact k-NN search by comparing the query vector against all vectors in the dataset."
   - content: "What is the primary purpose of Retrieval Augmented Generation (RAG) in SQL Server 2025?"
     choices:
     - content: "To replace large language models with database queries"
