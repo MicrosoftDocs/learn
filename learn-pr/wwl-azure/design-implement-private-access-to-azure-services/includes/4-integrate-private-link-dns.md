@@ -12,7 +12,7 @@ Azure Private Link service is the reference to your own service that is powered 
 
 ## Private link and DNS integration for hub-spoke networks
 
-The following diagram shows a typical high-level architecture for enterprise environments with central DNS resolution. The network architecture is hub-spoke network with Private Link resources and Azure Private DNS.
+The following diagram shows a typical [high-level architecture](/azure/architecture/networking/guide/private-link-hub-spoke-network#azure-hub-and-spoke-topologies) for enterprise environments with central DNS resolution. The network architecture is hub-spoke network with Private Link resources and Azure Private DNS.
 
 :::image type="content" source="../media/private-link-example-central-dns-73e26cad.png" alt-text="Diagram of high-level workflow of enterprise environments with central DNS resolution.":::
 

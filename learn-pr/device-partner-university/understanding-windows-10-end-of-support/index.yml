@@ -11,13 +11,13 @@ metadata:
   ms.service: windows
   ms.custom: CW052925-1
 summary: >
-  Learn how to prepare for Windows 10 end of support by understanding key deadlines, device requirements, and upgrade options. Explore how Windows 11 Pro and Copilot+ PCs can help you stay secure, productive, and future-ready.
+  Learn how to respond to Windows 10 end of support by understanding device requirements and upgrade options. Explore how Windows 11 Pro and Copilot+ PCs help you stay secure, productive, and future-ready.
 abstract: |
   By the end of this module, you'll be able to:
   - Explain the difference between Windows 10 end of support and end of service
   - Identify whether your current device meets the requirements for Windows 11
   - Describe the benefits of upgrading to Windows 11 Pro and Copilot+ PCs
-  - Evaluate your options for staying secure after Windows 10 support ends
+  - Evaluate your options for staying secure now that Windows 10 support has ended
 
 prerequisites: |
   - None
