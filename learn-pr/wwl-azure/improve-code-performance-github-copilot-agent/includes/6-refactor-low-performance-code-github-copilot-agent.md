@@ -124,9 +124,13 @@ This structured approach ensures that performance optimization is done safely an
 
 ## Common scenarios for refactoring low-performance code
 
-### Scenario 1: Optimize data access patterns (eliminate N+1 queries)
+Reviewing common scenarios can help you understand how to effectively use Agent mode for performance refactoring.
 
-**Before:**
+### Optimize data access patterns (eliminate N+1 queries)
+
+Data access patterns that result in N+1 queries can severely degrade performance. Refactoring to batch data retrieval can significantly improve efficiency.
+
+This scenario can be illustrated using the following code snippet:
 
 ```csharp
 foreach (var order in orders)
@@ -136,11 +140,19 @@ foreach (var order in orders)
 }
 ```
 
-Profiling analysis shows `GetProductPrice` (which queries a database) is a bottleneck when processing many orders.
+Profiling analysis shows that `GetProductPrice` (which queries a database) is a bottleneck when processing large orders.
 
-**Agent mode prompt:** "Optimize this code to eliminate N+1 query pattern by batching product price lookups."
+You can use Agent mode to refactor the code by batching product price lookups. For example:
 
-**Expected GitHub Copilot action:**
+Agent mode prompt: "Optimize this code to eliminate N+1 query pattern by batching product price lookups."
+
+The agent refactors the code as follows:
+
+1. Collect all unique product IDs.
+1. Fetch the prices in a single database call.
+1. Map prices back to orders.
+
+The refactored code should look similar to the following code snippet:
 
 ```csharp
 var productIds = orders.Select(o => o.ProductId).Distinct().ToList();
@@ -155,17 +167,17 @@ foreach (var order in orders)
 }
 ```
 
-Verify the refactoring:
+Notice the following improvements:
 
-- The logic batches all required price lookups into a single database call.
+- The updated code batches all required price lookups into a single database call.
 - Error handling for missing products is properly maintained.
 - The code maintains the same business logic while dramatically improving performance.
 
-### Scenario 2: Replace inefficient algorithms
+### Replace inefficient algorithms
 
 Replacing linear search with optimized data structures for better performance.
 
-**Before:**
+This scenario can be illustrated using the following code snippet:
 
 ```csharp
 public Product FindProductByName(string name)
@@ -181,9 +193,16 @@ public Product FindProductByName(string name)
 }
 ```
 
-**Agent mode prompt:** "Optimize product lookups by using a dictionary-based approach for O(1) performance."
+You can use Agent mode to refactor the code by using a dictionary for O(1) lookups. For example:
 
-**GitHub Copilot's refactor:**
+Agent mode prompt: "Optimize product lookups by using a dictionary-based approach for O(1) performance."
+
+The agent refactors the code as follows:
+
+1. Initialize a dictionary mapping product names to product objects.
+1. Use the dictionary for lookups.
+
+The refactored code should look similar to the following code snippet:
 
 ```csharp
 private readonly Dictionary<string, Product> _productsByName = 
@@ -196,17 +215,17 @@ public Product FindProductByName(string name)
 }
 ```
 
-Validate the optimization:
+Notice the following improvements:
 
 - The lookup time complexity improves from O(n) to O(1).
 - String comparison logic is preserved using the appropriate comparer.
 - The initialization cost is amortized over multiple lookup operations.
 
-### Scenario 3: Implement asynchronous processing
+### Implement asynchronous processing
 
-Converting blocking operations to async patterns for better scalability.
+Converting blocking operations to async patterns for better scalability. Refactoring synchronous code to use asynchronous programming can improve responsiveness and scalability.
 
-**Before:**
+This scenario can be illustrated using the following code snippet:
 
 ```csharp
 public void ProcessOrderNotification(Order order)
@@ -217,9 +236,16 @@ public void ProcessOrderNotification(Order order)
 }
 ```
 
-**Agent mode prompt:** "Convert this synchronous email processing to asynchronous to improve scalability and responsiveness."
+You can use Agent mode to refactor the code by converting it to an asynchronous pattern. For example:
 
-**GitHub Copilot's refactor:**
+Agent mode prompt: "Convert this synchronous email processing to asynchronous to improve scalability and responsiveness."
+
+The agent refactors the code as follows:
+
+1. Make the method async.
+1. Use `await` for asynchronous operations.
+
+The refactored code should look similar to the following code snippet:
 
 ```csharp
 public async Task ProcessOrderNotificationAsync(Order order)
@@ -230,7 +256,7 @@ public async Task ProcessOrderNotificationAsync(Order order)
 }
 ```
 
-Ensure proper async implementation:
+Notice the following improvements:
 
 - All callers are updated to await the async method.
 - The async pattern is consistently applied throughout the call chain.

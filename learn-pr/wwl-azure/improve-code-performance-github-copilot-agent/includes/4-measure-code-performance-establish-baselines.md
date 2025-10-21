@@ -2,7 +2,7 @@ Measuring code performance and establishing baselines is a critical step in the 
 
 ## Establish a performance baseline
 
-A **performance baseline** is a set of measurements that captures how the code performs before you make any changes. It's your point of reference. Without a baseline for comparison, you don't know whether your updates improve code performance or make things worse.
+A performance baseline is a set of measurements that captures how the code performs before you make any changes. It's your point of reference. Without a baseline for comparison, you don't know whether your updates improve code performance or make things worse.
 
 Here are some key aspects to measure in a baseline:
 
@@ -73,10 +73,10 @@ Understanding performance requires both measurement and analysis of algorithmic 
 
 **Time complexity** describes how an algorithm's runtime grows as input size increases, typically expressed using Big O notation:
 
-- **O(1)** - Constant time: Performance doesn't change with input size (for example, dictionary lookups)
-- **O(n)** - Linear time: Performance grows proportionally with input (for example, iterating through a list once)
-- **O(n²)** - Quadratic time: Performance grows with the square of input size (for example, nested loops)
-- **O(log n)** - Logarithmic time: Performance grows slowly as input increases (for example, binary search)
+- **O(1)** - Constant time: Performance doesn't change with input size (for example, dictionary lookups).
+- **O(n)** - Linear time: Performance grows proportionally with input (for example, iterating through a list once).
+- **O(n²)** - Quadratic time: Performance grows with the square of input size (for example, nested loops).
+- **O(log n)** - Logarithmic time: Performance grows slowly as input increases (for example, binary search).
 
 **Space complexity** measures how memory usage grows with input size, using the same Big O notation. Understanding these concepts helps identify why certain code patterns become bottlenecks at scale.
 
@@ -84,10 +84,10 @@ Understanding performance requires both measurement and analysis of algorithmic 
 
 Common performance anti-patterns include:
 
-- **N+1 query problems**: Making one query to get a list, then N more queries for related data
-- **Inefficient data structures**: Using lists for frequent lookups instead of dictionaries or hash sets
-- **Premature string concatenation**: Building large strings using `+=` instead of `StringBuilder`
-- **Synchronous operations**: Blocking threads with synchronous I/O when asynchronous operations would be better
+- **N+1 query problems**: Making one query to get a list, then N more queries for related data.
+- **Inefficient data structures**: Using lists for frequent lookups instead of dictionaries or hash sets.
+- **Premature string concatenation**: Building large strings using `+=` instead of `StringBuilder`.
+- **Synchronous operations**: Blocking threads with synchronous I/O when asynchronous operations would be better.
 
 **Caching strategies** can dramatically improve performance by storing frequently accessed data in memory, avoiding expensive recomputation or I/O operations.
 
@@ -105,10 +105,10 @@ Logging is ad-hoc but accessible and often sufficient for a first investigation.
 
 Adding strategic logging can reveal performance patterns and help identify bottlenecks:
 
-- **Operation counts**: Log how many items were processed, database queries executed, or cache hits/misses occurred
-- **Timing breakdowns**: Measure different phases of operations (for example, "Database query: 50 milliseconds, Processing: 20 milliseconds, Serialization: 10 milliseconds")
-- **Resource utilization**: Track memory allocations, thread pool usage, or connection pool metrics
-- **Performance metrics**: Monitor latency (response time), throughput (operations per second), and scalability characteristics
+- **Operation counts**: Log how many items were processed, database queries executed, or cache hits/misses occurred.
+- **Timing breakdowns**: Measure different phases of operations (for example, "Database query: 50 milliseconds, Processing: 20 milliseconds, Serialization: 10 milliseconds").
+- **Resource utilization**: Track memory allocations, thread pool usage, or connection pool metrics.
+- **Performance metrics**: Monitor latency (response time), throughput (operations per second), and scalability characteristics.
 
 For instance, if your log shows "Fetched 1000 records from database" when you expected to see 100 records, the discrepancy might indicate an N+1 query problem or inefficient query logic. Similarly, logging cache hit rates can help evaluate caching strategy effectiveness.
 
@@ -118,15 +118,17 @@ Visual Studio (Enterprise edition, and to some extent Community) has profiling t
 
 - The CPU profiler typically produces a call tree, where you can see which methods consumed the most CPU time.
 - The memory profiler can take snapshots to show how memory usage grows, and what types of objects are taking space.
-- Using a profiler is often as simple as clicking "Start Diagnostic" and choosing the kind of profile.
 
-### .NET CLI Tools
+Using a profiler is often as simple as clicking "Start Diagnostic" and choosing the kind of profile.
+
+### .NET CLI tools
 
 For .NET Core and .NET 5+, Microsoft provides command-line tools like `dotnet-counters`, `dotnet-trace`, `dotnet-dump`, `dotnet-gcdump`.
 
 - `dotnet-counters` can display real-time performance metrics of a running app (GC collections, exceptions, thread pool usage, etc.).
 - `dotnet-trace` can collect a trace of an app's execution, which one can analyze to see which methods were running.
-- These tools are more advanced, but invaluable for deep dives or production profiling where you can't attach a GUI profiler.
+
+These tools are more advanced, but invaluable for deep dives or production profiling where you can't attach a GUI profiler.
 
 ### Microbenchmarking libraries
 
@@ -165,7 +167,7 @@ Here are some recommended guidelines for this process:
 
 - **Check for side effects:** Side effects can include unexpected correctness or performance issues. For example, you might optimize CPU performance but witness a large increase in memory usage. Is that side effect acceptable?
 
-A common technique is writing performance unit tests or benchmarks that run before and after changes to automatically compare. While not every team writes performance tests, it's not a bad idea to have a small suite of performance tests (especially for critical paths) that ensure new changes don't drastically slow things down.
+- **Automate regression detection:** Writing performance unit tests or benchmarks that run before and after changes is a common technique for regression detection. While not every team writes performance tests, it's not a bad idea to have a small suite of performance tests (especially for critical paths) that ensure new changes don't drastically slow things down.
 
 ## Use GitHub Copilot to assist with measurements
 
