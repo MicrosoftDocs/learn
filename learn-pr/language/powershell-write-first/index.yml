@@ -6,8 +6,8 @@ metadata:
   ms.service: powershell
   manager: jasongroce
   ms.date: 10/07/2024
-  author: michaeltlombardi
-  ms.author: mlombardi
+  author: sdwheeler
+  ms.author: sewhee
   ms.topic: module
 title: Write your first PowerShell code
 summary: In this module, you begin learning the basics of programming by writing and running code in PowerShell.
@@ -16,7 +16,8 @@ abstract: |
   - Manage PowerShell inputs and outputs.
   - Diagnose errors when you type code incorrectly.
   - Identify PowerShell elements such as cmdlets, parameters, inputs, and outputs.
-prerequisites: None
+prerequisites: |
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
 ratingEnabled: true
 iconUrl: /training/achievements/powershell/powershell-write-first-code.svg
 levels:
