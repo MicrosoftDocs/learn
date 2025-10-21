@@ -2,12 +2,21 @@ In this exercise, you add tags to help organize and track your Microsoft Azure r
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-cloud-shell-terminal-note.md)]
+
+> [!NOTE]
+> Throughout this exercise, replace **myResourceGroupName** in the examples with the name of an existing resource group, or the name of the resource group that you created for this exercise.
+
 ## Create a tag to track the resource deployment environment and project
 
 First, you create a parameter to use as a resource tag in your template.
 
 1. In Visual Studio Code, in the **azuredeploy.json** file, place your cursor after the closing brace for the `storageSKU` parameter. Add a comma and press <kbd>Enter</kbd>.
+
 1. Type **par**. You see a list of related snippets.
+
 1. Select **arm-param**. Remember, this action adds a generic parameter to the template. It looks like this code:
 
     ```json
@@ -19,6 +28,7 @@ First, you create a parameter to use as a resource tag in your template.
     ```
 
 1. Change `parameter1` to **resourceTags** and change the value of ```"type":``` to **object**. Remember that parameters can have string, secureString, int, bool, object, secureObject, and array data types. A link to example syntax for these parameter types is in the summary of this module.
+
 1. Add an attribute called **defaultValue:** and set the value to **{"Environment": "Dev", "Project": "Tutorial"}**.
 
    The parameter block should look like this code:
@@ -104,7 +114,8 @@ First, you create a parameter to use as a resource tag in your template.
 
 ### Verify that the new tags are in the deployment
 
-1. In Azure, select the <rgn>[sandbox resource group name]</rgn> resource group, then select the storage account you deployed.
+1. In Azure, select the **myResourceGroupName** resource group, then select the storage account you deployed.
+
 1. Notice the **Environment : Dev** and **Project : Tutorial** tags:
 
     :::image type="content" source="../media/7-tags.png" alt-text="Screenshot of the Azure portal that shows the selected tags in the Storage account Overview page." border="true":::
@@ -114,6 +125,7 @@ First, you create a parameter to use as a resource tag in your template.
 There are currently three parameters to fill in each time you deploy this template. Each user of the template can create a file to hold their parameter values. Here, you create a parameter file to use with your template.
 
 1. In Visual Studio Code, create another file. Call it **azuredeploy.parameters.dev.json**.
+
 1. In this file, you add the values for the template parameters that you want to have input into the template for the development environment. Change a tag value to see that the deployment makes a change. For example, you could change `projectName` to **Learn**:
 
     ```json
@@ -138,6 +150,7 @@ There are currently three parameters to fill in each time you deploy this templa
     ```
 
 1. Be sure to replace `{unique-prefix}` with your unique prefix.
+
 1. Save the file.
 
 ## Deploy the template with the parameter file
