@@ -53,7 +53,7 @@ You're preparing to interview a candidate for a marketing analyst role. You use 
 > [!NOTE]
 > Transcription will **not** start automatically unless it was turned on in the meeting options when the event was scheduled.  
 > You can still manually start transcription once the meeting begins by selecting **More (⋯)** and **Start transcription** from the meeting toolbar.
-> :::image type="content" border="true" source="../media/meeting-session-more.png" alt-text="Screenshot showing meeting options durning a live Teams meeting.":::
+> :::image type="content" border="true" source="../media/meeting-session-more.png" alt-text="Screenshot showing meeting options during a live Teams meeting.":::
 
 1. Start the meeting—**transcription begins automatically** if it was enabled when the meeting was scheduled.
 
