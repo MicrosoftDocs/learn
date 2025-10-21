@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.maximize-cost-efficiency-ai-agent-development.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Your team has limited technical expertise, wants rapid deployment, and plans to use mostly business data from Microsoft 365. Which AI service model should you choose?"
+    choices:
+    - content: "Software as a Service (SaaS)"
+      isCorrect: true
+      explanation: "SaaS is ideal for teams with limited technical skills who need rapid deployment and plan to use business data. It includes prebuilt AI tools like Microsoft 365 Copilot and requires minimal setup."
+    - content: "Platform as a Service (PaaS)"
+      isCorrect: false
+      explanation: "PaaS is better suited for teams with development and data science skills who want to build and fine-tune custom AI models. It requires more technical expertise and infrastructure management."
+    - content: "Infrastructure as a Service (IaaS)"
+      isCorrect: false
+      explanation: "IaaS provides full control over the AI stack and is best for advanced teams in regulated industries. It requires significant infrastructure and orchestration skills, which this team lacks."
+  - content: "Your team wants to build custom AI agents that can autonomously write code, submit pull requests, and adapt to your existing modular codebase. You also want to maintain oversight and guide the agent during development. Which GitHub Copilot feature best supports this workflow?"
+    choices:
+    - content: "Coding agent with human-in-the-loop collaboration"
+      isCorrect: true
+      explanation: "The coding agent can autonomously write code and submit pull requests, while human-in-the-loop collaboration allows developers to guide and review the agent’s output, maintaining oversight and control."
+    - content: "Agent mode for real-time code suggestions"
+      isCorrect: false
+      explanation: "Agent mode provides real-time code suggestions during development, but it doesn't autonomously execute tasks or submit pull requests."
+    - content: "Ripple-aware code editing"
+      isCorrect: false
+      explanation: "Ripple-aware editing helps maintain consistency across modular codebases, but it doesn't support autonomous task execution or human-in-the-loop collaboration."
+  - content: "Your organization needs to quickly deploy AI agents for customer support and IT helpdesk tasks. The team has limited AI development resources and prefers a low-code approach with built-in security and governance. Which Azure AI Foundry feature best meets these needs?"
+    choices:
+    - content: "Prebuilt AI agents"
+      isCorrect: true
+      explanation: "Prebuilt AI agents are ideal for straightforward use cases like customer support and IT helpdesk. They offer low-code customization, rapid deployment, and built-in security and governance features."
+    - content: "Azure AI Foundry SDK client libraries"
+      isCorrect: false
+      explanation: "The SDK client libraries are designed for programmatic development and integration, which may require more technical expertise than the team possesses."
+    - content: "Model catalog access"
+      isCorrect: false
+      explanation: "Model catalog access allows selection of top-tier LLMs, but it doesn't directly address the need for low-code deployment or built-in orchestration for specific tasks."
