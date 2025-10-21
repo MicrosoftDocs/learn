@@ -13,8 +13,8 @@ summary: "Configure Unity Catalog isolation boundaries, leverage automatic linea
 abstract: |
   By the end of this module, you'll be able to:
   - Configure Unity Catalog isolation
-  - Use automatic lineage tracking to analyze data flow and plan safe changes
-  - Migrate tables from Hive metastore to Unity Catalog
+  - Use automatic lineage tracking to analyze data flow and plan changes
+  - Migrate tables from the Hive metastore to Unity Catalog
 prerequisites: |
   - Basic understanding of data lakehouse concepts
   - Familiarity with Azure Databricks workspace navigation

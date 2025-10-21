@@ -1,4 +1,4 @@
-As your data platform grows, it becomes harder to keep track of where data comes from and what depends on it. Unity Catalog in Azure Databricks automatically captures data lineage—the flow of data across tables, views, notebooks, and pipelines.  
+Unity Catalog in Azure Databricks automatically captures data lineage—the flow of data across tables, views, notebooks, and pipelines. This allows you to track where data comes from and what depends on it.  
 
 Lineage helps you answer key governance questions such as:
 
@@ -38,7 +38,7 @@ Looking at the lineage visualization above, you can see the complete data flow f
 
 **Data flow direction:** Arrows show data flows from left to right: bronze → silver → analytics view
 
-### Your impact analysis
+### An impact analysis
 
 Based on this lineage, here's what adding a column to `customer_silver` affects:
 
@@ -64,4 +64,4 @@ Now that you've seen how to use lineage for a table, let's explore the full rang
 | External data sources | Tables imported through Lakehouse Federation |
 | Machine learning models | Training data sources used by models |
 
-The key benefit is that you don't have to manually document these relationships. Lineage is captured automatically as you query, transform, and visualize data.
+Lineage is captured automatically as you query, transform, and visualize data. You don't have to manually document these relationships.

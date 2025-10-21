@@ -2,7 +2,7 @@
 uid: learn.wwl.secure-unity-catalog-for-governance.knowledge-check
 title: Module assessment
 metadata:
-  ai_generated_module_assessment: true
+  ai_generated_module_assessment: false
   title: Module assessment
   description: "Knowledge check"
   ms.date: 10/21/2025
@@ -25,6 +25,25 @@ quiz:
     - content: "Schema-level permissions and metastore admin roles"
       isCorrect: false
       explanation: "Incorrect. Schema-level permissions don't provide workspace isolation, and metastore admin roles are for overall governance, not team-specific access control."
-    - content: "Storage credentials and external locations only"
+  - content: "You're planning to add a new column to the customer_silver table in your medallion architecture. How should you use Unity Catalog's automatic lineage tracking to assess the impact?"
+    choices:
+    - content: "Check the table's schema definition in Catalog Explorer"
       isCorrect: false
-      explanation: "Incorrect. While this provides storage separation, it doesn't control which workspaces can access the catalogs."
+      explanation: "Incorrect. The schema definition shows table structure but doesn't reveal downstream dependencies for impact assessment."
+    - content: "Review the Lineage tab to identify upstream sources and downstream consumers"
+      isCorrect: true
+      explanation: "Correct. The Lineage tab displays both data sources feeding into the table and all downstream jobs, notebooks, and tables that consume it, enabling comprehensive impact analysis."
+    - content: "Run a SELECT query on the table to see current data"
+      isCorrect: false
+      explanation: "Incorrect. Querying shows data content but provides no information about which processes depend on the table structure."
+  - content: "After enabling Unity Catalog, your existing Hive metastore tables are still needed for production reports while you gradually migrate to Unity Catalog. What is the recommended approach?"
+    choices:
+    - content: "Immediately migrate all tables to avoid conflicts between systems"
+      isCorrect: false
+      explanation: "Incorrect. Immediate migration risks disrupting production systems and doesn't allow for a controlled transition process."
+    - content: "Use the hive_metastore catalog to access legacy tables while building new tables in Unity Catalog"
+      isCorrect: true
+      explanation: "Correct. The hive_metastore catalog provides continued access to existing Hive tables during migration, allowing you to gradually build governed tables in Unity Catalog without disrupting production."
+    - content: "Disable the Hive metastore to prevent confusion"
+      isCorrect: false
+      explanation: "Incorrect. Disabling the Hive metastore would break access to production tables that haven't been migrated yet."
